@@ -1,0 +1,876 @@
+<title>YNB Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+:root{
+  color-scheme: dark;
+  --ground:#0B0B0C;
+  --panel:#121214;
+  --rise:#17171A;
+  --hair:#26262B;
+  --hair-soft:#1C1C20;
+  --silver:#9BA0A8;
+  --mute:#6E737C;
+  --bright:#ECEDEF;
+  --platinum:#D6D9DE;
+
+  --crit:#C2513F;
+  --warn:#C9973F;
+  --good:#5E9C7B;
+  --wait:#7E828B;
+
+  --bar-lo:#3A3D43;
+  --bar-mid:#6E737C;
+  --bar-hi:#D6D9DE;
+
+  --cal-make:#F5511D;
+  --cal-people:#039BE5;
+  --cal-anchor:#0B8043;
+  --cal-body:#E67C73;
+  --cal-rec:#8E9199;
+
+  --u1:4px; --u2:8px; --u3:12px; --u4:16px; --u5:24px; --u6:32px; --u7:48px;
+  --maxw:720px;
+}
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--bright);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--u4) var(--u7);}
+
+/* ─── masthead: engraved metal ─────────────────────────── */
+.masthead{
+  position:relative;
+  background:
+    repeating-linear-gradient(90deg,
+      rgba(255,255,255,.020) 0px, rgba(255,255,255,.020) 1px,
+      rgba(0,0,0,.020) 1px, rgba(0,0,0,.020) 2px),
+    linear-gradient(180deg,#1E1F22 0%, #141517 42%, #0E0F11 72%, #17181B 100%);
+  border-bottom:1px solid var(--hair);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.055), inset 0 -1px 0 rgba(0,0,0,.55);
+  padding:var(--u5) 0 var(--u4);
+}
+.masthead::after{
+  content:"";position:absolute;inset:7px 12px auto 12px;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(214,217,222,.16) 22%,rgba(214,217,222,.16) 78%,transparent);
+}
+.brandline{display:flex;align-items:baseline;justify-content:space-between;gap:var(--u3);flex-wrap:wrap;}
+.brand{
+  font-family:Jost,system-ui,sans-serif;font-weight:300;
+  font-size:clamp(21px,5.4vw,29px);letter-spacing:.30em;
+  text-transform:uppercase;color:var(--platinum);margin:0;
+  text-shadow:0 1px 0 rgba(0,0,0,.85), 0 -1px 0 rgba(255,255,255,.06);
+}
+.byline{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--mute);white-space:nowrap;
+}
+.stamp{
+  margin-top:var(--u2);font-family:"IBM Plex Mono",monospace;
+  font-size:11px;letter-spacing:.09em;color:var(--silver);
+  font-variant-numeric:tabular-nums;
+}
+
+/* ─── tabs ─────────────────────────────────────────────── */
+.tabrail{
+  position:sticky;top:0;z-index:20;
+  background:rgba(11,11,12,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--hair);
+}
+.tabs{
+  max-width:var(--maxw);margin:0 auto;padding:0 var(--u4);
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.tab{
+  appearance:none;background:none;border:0;cursor:pointer;
+  padding:var(--u3) 2px calc(var(--u3) - 2px);
+  font-family:Jost,sans-serif;font-weight:400;font-size:12px;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--mute);
+  border-bottom:2px solid transparent;transition:color .18s ease,border-color .18s ease;
+}
+.tab:hover{color:var(--silver);}
+.tab[aria-selected="true"]{color:var(--platinum);border-bottom-color:var(--platinum);}
+.tab:focus-visible{outline:2px solid var(--platinum);outline-offset:-4px;border-radius:2px;}
+.panel[hidden]{display:none;}
+
+/* ─── type ─────────────────────────────────────────────── */
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.19em;
+  text-transform:uppercase;color:var(--mute);
+  margin:var(--u6) 0 var(--u3);display:flex;align-items:center;gap:var(--u3);
+}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--hair);}
+.eyebrow:first-of-type{margin-top:var(--u5);}
+h2{font-family:Jost,sans-serif;font-weight:400;font-size:19px;letter-spacing:.02em;margin:0 0 var(--u2);text-wrap:balance;}
+p{margin:0 0 var(--u3);}
+.lede{font-size:16.5px;line-height:1.5;color:var(--bright);text-wrap:balance;}
+.dim{color:var(--silver);}
+.tiny{font-size:12.5px;color:var(--mute);}
+.mono{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;}
+a{color:var(--platinum);text-underline-offset:3px;text-decoration-color:var(--hair);}
+a:hover{text-decoration-color:var(--platinum);}
+
+/* ─── greeting + right now ─────────────────────────────── */
+.greet{padding:var(--u5) 0 var(--u2);}
+.greet p{font-size:17px;line-height:1.45;text-wrap:balance;margin-bottom:var(--u2);}
+
+.rightnow{
+  background:var(--panel);border:1px solid var(--hair);
+  border-left:2px solid var(--platinum);
+  padding:var(--u4);margin-bottom:var(--u5);
+}
+.rightnow .eyebrow{margin:0 0 var(--u2);}
+.rightnow .eyebrow::after{display:none;}
+.rightnow h2{font-size:20px;margin-bottom:var(--u2);}
+.rightnow .why{color:var(--silver);font-size:14px;margin-bottom:var(--u3);}
+
+/* ─── rows ─────────────────────────────────────────────── */
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--hair-soft);}
+.row{
+  display:grid;grid-template-columns:22px 1fr auto;gap:var(--u3);
+  align-items:start;padding:var(--u3) var(--u3) var(--u3) var(--u2);
+  border-bottom:1px solid var(--hair-soft);background:var(--panel);
+  border-left:2px solid transparent;
+}
+.row.s-crit{border-left-color:var(--crit);}
+.row.s-warn{border-left-color:var(--warn);}
+.row.s-wait{border-left-color:var(--wait);}
+.row-b{font-size:14.5px;line-height:1.4;}
+.row-b .who{color:var(--bright);font-weight:500;}
+.row-sub{display:block;color:var(--mute);font-size:12.5px;margin-top:2px;line-height:1.45;}
+.age{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.04em;
+  color:var(--mute);white-space:nowrap;padding-top:2px;font-variant-numeric:tabular-nums;
+}
+.age.hot{color:var(--crit);}
+.age.warm{color:var(--warn);}
+
+input[type="checkbox"]{
+  appearance:none;width:17px;height:17px;margin:2px 0 0;flex:none;
+  border:1px solid var(--mute);background:var(--rise);cursor:pointer;
+  display:grid;place-content:center;transition:border-color .15s,background .15s;
+}
+input[type="checkbox"]:hover{border-color:var(--platinum);}
+input[type="checkbox"]:focus-visible{outline:2px solid var(--platinum);outline-offset:2px;}
+input[type="checkbox"]::before{
+  content:"";width:9px;height:9px;transform:scale(0);transition:transform .12s ease-in-out;
+  background:var(--good);clip-path:polygon(14% 44%,0 60%,39% 100%,100% 22%,85% 7%,37% 68%);
+}
+input[type="checkbox"]:checked::before{transform:scale(1);}
+input[type="checkbox"]:checked{border-color:var(--good);}
+.row:has(input:checked) .row-b{color:var(--mute);text-decoration:line-through;text-decoration-color:var(--hair);}
+.row:has(input:checked){border-left-color:transparent;}
+
+/* ─── momentum ─────────────────────────────────────────── */
+.momentum{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair);margin:var(--u5) 0;}
+.stat{background:var(--panel);padding:var(--u4) var(--u3);text-align:center;}
+.stat-n{font-family:Jost,sans-serif;font-weight:200;font-size:34px;line-height:1;color:var(--platinum);font-variant-numeric:tabular-nums;}
+.stat-l{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mute);margin-top:var(--u2);line-height:1.4;}
+
+/* ─── cleared ──────────────────────────────────────────── */
+details.cleared{border:1px solid var(--hair);background:var(--panel);padding:var(--u3) var(--u4);}
+details.cleared summary{
+  cursor:pointer;list-style:none;font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--good);
+}
+details.cleared summary::-webkit-details-marker{display:none;}
+details.cleared summary::after{content:" ▾";color:var(--mute);}
+details.cleared[open] summary::after{content:" ▴";}
+.won{list-style:none;margin:var(--u3) 0 0;padding:0;}
+.won li{
+  color:var(--mute);font-size:13.5px;padding:var(--u2) 0;
+  border-top:1px solid var(--hair-soft);text-decoration:line-through;
+  text-decoration-color:var(--hair);
+}
+
+.checkin{
+  border:1px solid var(--hair);border-top:2px solid var(--hair);
+  background:var(--panel);padding:var(--u4);margin-top:var(--u5);
+}
+.checkin p{margin:0;color:var(--silver);font-size:14.5px;text-wrap:balance;}
+.checkin .ask{color:var(--bright);}
+
+/* ─── week chart ───────────────────────────────────────── */
+.chart{margin:var(--u3) 0 var(--u5);}
+.daybar{display:grid;grid-template-columns:44px 1fr 46px;gap:var(--u3);align-items:center;padding:7px 0;}
+.daybar .d{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.07em;color:var(--silver);text-transform:uppercase;}
+.daybar.is-today .d{color:var(--platinum);}
+.track{position:relative;height:20px;background:var(--rise);border:1px solid var(--hair-soft);}
+.fill{position:absolute;left:0;top:0;bottom:0;border-radius:0 3px 3px 0;background:var(--bar-mid);}
+.fill.lo{background:var(--bar-lo);}
+.fill.hi{background:var(--bar-hi);}
+.hrs{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--silver);text-align:right;font-variant-numeric:tabular-nums;}
+.daybar.over .hrs{color:var(--crit);}
+.ribbon{grid-column:2;display:flex;gap:2px;height:4px;margin-top:-4px;}
+.ribbon span{flex:1 1 auto;min-width:3px;}
+.ribbon-key{display:flex;flex-wrap:wrap;gap:var(--u3) var(--u4);margin-top:var(--u3);padding-top:var(--u3);border-top:1px solid var(--hair-soft);}
+.key{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--mute);}
+.key i{width:10px;height:10px;display:block;flex:none;}
+.axis-note{font-size:11.5px;color:var(--mute);margin-top:var(--u3);}
+
+/* ─── proposals ────────────────────────────────────────── */
+.props{list-style:none;margin:0;padding:0;}
+.prop{background:var(--panel);border:1px solid var(--hair);padding:var(--u4);margin-bottom:var(--u3);}
+.prop h3{font-family:Jost,sans-serif;font-weight:400;font-size:16px;margin:0 0 var(--u1);letter-spacing:.01em;}
+.prop .when{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--silver);letter-spacing:.05em;}
+.prop .why{color:var(--mute);font-size:13.5px;margin:var(--u2) 0 var(--u3);}
+.btn{
+  display:inline-block;font-family:Jost,sans-serif;font-size:12px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ground);background:var(--platinum);
+  border:1px solid var(--platinum);padding:9px 16px;text-decoration:none;
+  transition:background .15s,color .15s;
+}
+.btn:hover{background:var(--bright);}
+.btn.ghost{background:transparent;color:var(--platinum);}
+.btn.ghost:hover{background:rgba(214,217,222,.09);}
+.btn:focus-visible{outline:2px solid var(--platinum);outline-offset:2px;}
+
+/* ─── projects ─────────────────────────────────────────── */
+.proj{background:var(--panel);border:1px solid var(--hair);padding:var(--u4);margin-bottom:var(--u3);}
+.proj-h{display:flex;justify-content:space-between;align-items:baseline;gap:var(--u3);margin-bottom:var(--u3);}
+.proj-h h3{font-family:Jost,sans-serif;font-weight:400;font-size:17px;margin:0;letter-spacing:.02em;}
+.pct{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--mute);white-space:nowrap;font-variant-numeric:tabular-nums;}
+.pill{height:3px;background:var(--rise);margin-bottom:var(--u3);overflow:hidden;}
+.pill i{display:block;height:100%;background:var(--platinum);transition:width .28s ease;}
+.proj .rows{border-top:0;}
+.proj .row{background:transparent;padding-left:0;border-left:0;}
+.proj .row:last-child{border-bottom:0;}
+
+/* ─── inbox ────────────────────────────────────────────── */
+.draftrow{display:grid;grid-template-columns:1fr auto;gap:var(--u3);padding:var(--u3) 0;border-bottom:1px solid var(--hair-soft);align-items:baseline;}
+.draftrow .t{font-size:14px;}
+.draftrow .to{display:block;color:var(--mute);font-size:12px;margin-top:2px;}
+.draftbox{
+  background:var(--rise);border:1px solid var(--hair);padding:var(--u4);
+  margin-top:var(--u3);font-size:13.5px;line-height:1.6;color:var(--silver);
+  white-space:pre-wrap;overflow-x:auto;
+}
+.copywrap{display:flex;gap:var(--u3);align-items:center;margin-top:var(--u3);flex-wrap:wrap;}
+.copied{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--good);opacity:0;transition:opacity .2s;}
+.copied.on{opacity:1;}
+
+.foot{margin-top:var(--u7);padding-top:var(--u4);border-top:1px solid var(--hair);}
+.foot p{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.09em;color:var(--mute);margin:0 0 var(--u2);}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}
+@media (max-width:420px){
+  .momentum{grid-template-columns:1fr;}
+  .stat{display:flex;align-items:baseline;justify-content:space-between;text-align:left;padding:var(--u3) var(--u4);}
+  .stat-l{margin-top:0;}
+}
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="brandline">
+      <h1 class="brand">Command Center</h1>
+      <span class="byline">Alfred · for YNB</span>
+    </div>
+    <div class="stamp" id="stamp">—</div>
+  </div>
+</header>
+
+<div class="tabrail">
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true"  aria-controls="p-today"    id="t-today">Today</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="p-week"     id="t-week">The Week</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="p-projects" id="t-projects">Projects</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="p-inbox"    id="t-inbox">Inbox</button>
+  </div>
+</div>
+
+<main class="wrap">
+
+<!-- ══════════ TODAY ══════════ -->
+<section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
+
+  <div class="greet">
+    <p class="lede">MagicMonday went to Eben Britton and a workshop. The essay didn't happen — that's a trade you made on purpose, and it was probably the right one.</p>
+    <p class="tiny">Two recordings still land this week. The deep work has to go somewhere real, not somewhere aspirational.</p>
+  </div>
+
+  <div class="rightnow">
+    <div class="eyebrow">Right now</div>
+    <h2>Answer Nadim.</h2>
+    <p class="why">He's been waiting eight days on one thing: what your thumbnails should look like. He asked for references after you told him the first pass was amateur. Until he has them he can't work, and you're paying for a stalled channel. The reply is drafted on the Inbox tab — it's a two-minute send, not a work block.</p>
+    <a class="btn ghost" href="#" data-goto="inbox">Read the draft</a>
+  </div>
+
+  <div class="eyebrow">Still open</div>
+  <ul class="rows" id="today-rows">
+
+    <li class="row s-crit">
+      <input type="checkbox" data-item="nadim-thumbnails" aria-label="Nadim thumbnail direction">
+      <span class="row-b"><span class="who">Nadim</span> — send thumbnail direction + 3 references
+        <span class="row-sub">Blocked since 16 Aug. Draft ready on Inbox.</span></span>
+      <span class="age hot">8d</span>
+    </li>
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="fri-collision" aria-label="Friday collision">
+      <span class="row-b"><span class="who">Friday 9:00</span> — Cal Callahan and Padel are on top of each other
+        <span class="row-sub">Both booked today, different calendars. One has to move. Cal is the harder one to rebook.</span></span>
+      <span class="age warm">Fri</span>
+    </li>
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="rsvp-jpr" aria-label="RSVP JPR Studios">
+      <span class="row-b"><span class="who">RSVP</span> — JPR Studios hold, Wed 11:00
+        <span class="row-sub">Still needsAction. It's the room for the Sutcliffe recording.</span></span>
+      <span class="age warm">Wed</span>
+    </li>
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="yt-academy-clash" aria-label="YT Academy clash">
+      <span class="row-b"><span class="who">Wednesday</span> — YT Academy runs 30 min into the Sutcliffe recording
+        <span class="row-sub">10:00–11:30 against an 11:00 studio start. Move the Academy earlier or drop it this week.</span></span>
+      <span class="age warm">Wed</span>
+    </li>
+
+    <li class="row s-wait">
+      <input type="checkbox" data-item="rsvp-gevity" aria-label="RSVP Gevity huddle">
+      <span class="row-b"><span class="who">RSVP</span> — Gevity Huddle Room, Thu 12:00
+        <span class="row-sub">Two hours held, no agenda attached. Worth checking it's still real.</span></span>
+      <span class="age">Thu</span>
+    </li>
+
+    <li class="row s-crit">
+      <input type="checkbox" data-item="matt-boulder" aria-label="Matt Boulder or Austin">
+      <span class="row-b"><span class="who">Matt</span> (Another Way) — Boulder in August is dying
+        <span class="row-sub">Silent since your 13 Aug nudge. August has six days left; either kill Boulder and lock September in Austin, or call it.</span></span>
+      <span class="age hot">11d</span>
+    </li>
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="mcconaughey-bounce" aria-label="McConaughey bounced">
+      <span class="row-b"><span class="who">Matthew (JK Livin)</span> — your pitch never arrived
+        <span class="row-sub">Hard bounce on 18 Aug. The email you wrote was never read. Needs a different route in, not a follow-up.</span></span>
+      <span class="age warm">6d</span>
+    </li>
+
+    <li class="row s-wait">
+      <input type="checkbox" data-item="ethan-coffee" aria-label="Ethan coffee">
+      <span class="row-b"><span class="who">Ethan</span> (Austin Business Review) — "Listening now", 22 Aug
+        <span class="row-sub">Coffee was floated on the 15th and never landed. He's warm and he opened the door twice.</span></span>
+      <span class="age">2d</span>
+    </li>
+
+    <li class="row s-wait">
+      <input type="checkbox" data-item="ian-scottsdale" aria-label="Ian Scottsdale">
+      <span class="row-b"><span class="who">Ian Gardner</span> — Scottsdale vs. your 15 Sep Austin offer
+        <span class="row-sub">He lands back from Japan on the 26th. His move, not yours — don't chase before Thursday.</span></span>
+      <span class="age">Wed</span>
+    </li>
+
+    <li class="row s-wait">
+      <input type="checkbox" data-item="mediapouch-hiss" aria-label="Media Pouch hiss">
+      <span class="row-b"><span class="who">Media Pouch</span> — background hiss on the 17 Aug master
+        <span class="row-sub">"Still looking into this" as of today. Theirs to fix. Chase Thursday if it's quiet.</span></span>
+      <span class="age">—</span>
+    </li>
+
+    <li class="row s-wait">
+      <input type="checkbox" data-item="virginactive-glasses" aria-label="Virgin Active glasses">
+      <span class="row-b"><span class="who">Virgin Active</span> — glasses claim, no reply since 21 Jul
+        <span class="row-sub">Five weeks of silence after two escalations. This is now a decision about whether to keep spending attention on it.</span></span>
+      <span class="age hot">34d</span>
+    </li>
+
+  </ul>
+
+  <div class="momentum">
+    <div class="stat"><div class="stat-n mono" id="m-open">—</div><div class="stat-l">Genuinely open</div></div>
+    <div class="stat"><div class="stat-n mono">3</div><div class="stat-l">Recordings this week</div></div>
+    <div class="stat"><div class="stat-n mono" id="m-hours">—</div><div class="stat-l">Hours spoken for</div></div>
+  </div>
+
+  <details class="cleared">
+    <summary>Recently cleared</summary>
+    <ul class="won">
+      <li>Eben Britton recorded — Man's Search for Meaning, in the can today</li>
+      <li>Cal Callahan booked — Friday walk, off a cold intro through Sutcliffe</li>
+      <li>Kyle Kingsbury booked — Monday 31st, invite out</li>
+      <li>David Sutcliffe booked — Wednesday at Just Push Record</li>
+      <li>Trans Surgery launched on YouTube — Sunday</li>
+      <li>Danny Miranda episode reviewed</li>
+    </ul>
+  </details>
+
+  <div class="checkin">
+    <p><span class="ask">You've booked four recordings in eight days.</span> That's the best stretch you've had since starting. Worth asking what the editing and publishing side looks like once all four land — the backlog is where this gets heavy, not the booking.</p>
+  </div>
+</section>
+
+<!-- ══════════ THE WEEK ══════════ -->
+<section class="panel" id="p-week" role="tabpanel" aria-labelledby="t-week" hidden>
+
+  <div class="eyebrow">Committed hours</div>
+  <p class="tiny">Time already spoken for on both calendars. Overlaps are counted once. The strip under each bar is your actual calendar colours, in order through the day.</p>
+
+  <div class="chart" id="chart"></div>
+
+  <div class="ribbon-key">
+    <span class="key"><i style="background:var(--cal-rec)"></i>Recording</span>
+    <span class="key"><i style="background:var(--cal-make)"></i>Making</span>
+    <span class="key"><i style="background:var(--cal-people)"></i>People &amp; rooms</span>
+    <span class="key"><i style="background:var(--cal-body)"></i>Body</span>
+    <span class="key"><i style="background:var(--cal-anchor)"></i>Anchors</span>
+  </div>
+  <p class="axis-note">Colours are the event colours you set in Google Calendar. Recording shows lighter than Graphite does on your phone — Graphite disappears on this ground.</p>
+
+  <div class="eyebrow">Days worth watching</div>
+  <ul class="rows">
+    <li class="row s-crit">
+      <input type="checkbox" data-item="sunday-restday" aria-label="Sunday overloaded">
+      <span class="row-b"><span class="who">Sunday 30th</span> — labelled Rest Day <em>and</em> Silent Day, carrying nine hours
+        <span class="row-sub">Nine things: Monatsrückblick, Reverse Brain Rot, dog walking, pickleball, the Porn Pandemic shoot, ClassPass, Artist Date and the N26 claim, six of them overlapping. This is the one to fix. Silent Day is the thing you'd regret losing.</span></span>
+      <span class="age hot">Sun</span>
+    </li>
+    <li class="row s-warn">
+      <input type="checkbox" data-item="wed-stacked" aria-label="Wednesday stacked">
+      <span class="row-b"><span class="who">Wednesday 26th</span> — seven and a half hours, and the day's two anchors collide
+        <span class="row-sub">YT Academy 10:00–11:30 against the Sutcliffe recording at 11:00. Recording wins; the Academy moves.</span></span>
+      <span class="age warm">Wed</span>
+    </li>
+    <li class="row s-warn">
+      <input type="checkbox" data-item="tue-gym-substack" aria-label="Tuesday gym substack">
+      <span class="row-b"><span class="who">Tuesday 25th</span> — the Substack block sits on top of the gym
+        <span class="row-sub">Both 15:30. The writing is 30 minutes; the gym is an hour. Substack goes to 09:00 next to Nelson's Drift, where the writing head already is.</span></span>
+      <span class="age warm">Tue</span>
+    </li>
+    <li class="row s-wait">
+      <input type="checkbox" data-item="magicmonday-drift" aria-label="MagicMonday drift">
+      <span class="row-b"><span class="who">Monday 31st</span> — MagicMonday is a recording day again
+        <span class="row-sub">Kyle Kingsbury 10:00, Gonzo mentoring 12:45. That's twice. Not a pattern yet — I'll say something if it happens a third time.</span></span>
+      <span class="age">Mon</span>
+    </li>
+  </ul>
+
+  <div class="eyebrow">Suggested blocks</div>
+  <p class="tiny">Nothing lands until you press the button.</p>
+  <ul class="props" id="props">
+
+    <li class="prop"
+        data-summary="Essay: deep work"
+        data-start="2026-08-28T10:00:00-05:00"
+        data-end="2026-08-28T12:00:00-05:00"
+        data-desc="The MagicMonday essay, displaced by the Eben Britton recording. Friday morning is the soonest genuinely open stretch — after Cal Callahan, before the weekend. Two hours, offline.">
+      <h3>Essay — the block Monday owed you</h3>
+      <div class="when">Fri 28 Aug · 10:00–12:00</div>
+      <p class="why">MagicMonday went to a guest and next Monday is booked too. Friday morning is the soonest stretch that's genuinely open — not the next scheduled writing day, the next real one. After Cal, before the weekend.</p>
+      <a class="btn" href="#" data-cal>Add to calendar</a>
+    </li>
+
+    <li class="prop"
+        data-summary="Follow-ups: Matt, Evan, Ethan"
+        data-start="2026-08-25T11:00:00-05:00"
+        data-end="2026-08-25T11:45:00-05:00"
+        data-desc="Three threads going cold. Matt (Another Way): kill Boulder, lock September in Austin. Evan (Art of Mondays): sent 19 Aug, no reply. Ethan (Austin Business Review): he said 'listening now' on the 22nd — name a coffee time instead of leaving it open.">
+      <h3>Three threads before they go cold</h3>
+      <div class="when">Tue 25 Aug · 11:00–11:45</div>
+      <p class="why">Matt, Evan and Ethan are all waiting on you, and all three warm up again with one short message each. Tuesday morning is open before the Luis call. Follow-ups don't wait for a follow-up day.</p>
+      <a class="btn" href="#" data-cal>Add to calendar</a>
+    </li>
+
+    <li class="prop"
+        data-summary="Substack: Post"
+        data-start="2026-08-25T09:00:00-05:00"
+        data-end="2026-08-25T09:30:00-05:00"
+        data-desc="Moved off the 15:30 gym collision. Sits next to Writing: Nelson's Drift so the writing batches instead of scattering.">
+      <h3>Substack, moved off the gym</h3>
+      <div class="when">Tue 25 Aug · 09:00–09:30</div>
+      <p class="why">Half an hour of writing currently sits inside a gym session. Put it beside Nelson's Drift and the writing batches instead of interrupting the one recovery block Tuesday has. Delete the 15:30 one after.</p>
+      <a class="btn" href="#" data-cal>Add to calendar</a>
+    </li>
+
+  </ul>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section class="panel" id="p-projects" role="tabpanel" aria-labelledby="t-projects" hidden>
+  <p class="tiny" style="margin-top:var(--u5)">The full roster. Ticking anything here ticks it everywhere else too.</p>
+
+  <article class="proj" data-proj="msfm">
+    <div class="proj-h"><h3>Man's Search for Meaning</h3><span class="pct mono">—</span></div>
+    <div class="pill"><i></i></div>
+    <ul class="rows">
+      <li class="row"><input type="checkbox" data-item="msfm-eben" checked aria-label="Eben recorded"><span class="row-b">Eben Britton — recorded 24 Aug<span class="row-sub">Needs an edit slot</span></span><span class="age">done</span></li>
+      <li class="row"><input type="checkbox" data-item="msfm-sutcliffe" aria-label="Sutcliffe"><span class="row-b">David Sutcliffe — Wed 26 Aug, JPR<span class="row-sub">Room hold still unconfirmed</span></span><span class="age">Wed</span></li>
+      <li class="row"><input type="checkbox" data-item="msfm-kyle" aria-label="Kyle"><span class="row-b">Kyle Kingsbury — Mon 31 Aug<span class="row-sub">Awaiting his accept</span></span><span class="age">Mon</span></li>
+      <li class="row"><input type="checkbox" data-item="msfm-cal" aria-label="Cal walk"><span class="row-b">Cal Callahan — walk Fri 28 Aug<span class="row-sub">Courting, not booked. Ask on the walk.</span></span><span class="age">Fri</span></li>
+      <li class="row s-crit"><input type="checkbox" data-item="matt-boulder" aria-label="Matt"><span class="row-b">Matt — Boulder or Austin, undecided<span class="row-sub">Silent 11 days</span></span><span class="age hot">11d</span></li>
+      <li class="row s-wait"><input type="checkbox" data-item="ian-scottsdale" aria-label="Ian"><span class="row-b">Ian Gardner — Scottsdale vs 15 Sep Austin<span class="row-sub">Back from Japan the 26th</span></span><span class="age">Wed</span></li>
+      <li class="row s-warn"><input type="checkbox" data-item="mcconaughey-bounce" aria-label="McConaughey"><span class="row-b">Matthew (JK Livin) — pitch bounced<span class="row-sub">Needs a route in, not a resend</span></span><span class="age warm">6d</span></li>
+      <li class="row"><input type="checkbox" data-item="msfm-danny" checked aria-label="Danny"><span class="row-b">Danny Miranda — reviewed 23 Aug</span><span class="age">done</span></li>
+    </ul>
+  </article>
+
+  <article class="proj" data-proj="youtube">
+    <div class="proj-h"><h3>YouTube</h3><span class="pct mono">—</span></div>
+    <div class="pill"><i></i></div>
+    <ul class="rows">
+      <li class="row"><input type="checkbox" data-item="yt-trans" checked aria-label="Trans surgery launched"><span class="row-b">Trans Surgery — launched 23 Aug</span><span class="age">done</span></li>
+      <li class="row s-crit"><input type="checkbox" data-item="nadim-thumbnails" aria-label="Nadim"><span class="row-b">Nadim — thumbnail direction<span class="row-sub">Whole optimisation track is blocked on this</span></span><span class="age hot">8d</span></li>
+      <li class="row"><input type="checkbox" data-item="yt-porn" aria-label="Porn pandemic"><span class="row-b">Porn Pandemic — filming Sun 30 Aug<span class="row-sub">On a day already carrying 11 hours</span></span><span class="age">Sun</span></li>
+      <li class="row"><input type="checkbox" data-item="yt-howto" aria-label="How-to"><span class="row-b">How-To — parked since 23 Aug</span><span class="age">—</span></li>
+    </ul>
+  </article>
+
+  <article class="proj" data-proj="writing">
+    <div class="proj-h"><h3>Writing &amp; Substack</h3><span class="pct mono">—</span></div>
+    <div class="pill"><i></i></div>
+    <ul class="rows">
+      <li class="row"><input type="checkbox" data-item="sub-meaninglessness" aria-label="In Times of Meaninglessness"><span class="row-b">In Times of Meaninglessness — Sat 29 Aug</span><span class="age">Sat</span></li>
+      <li class="row"><input type="checkbox" data-item="nelsons-drift" aria-label="Nelson's Drift"><span class="row-b">Nelson's Drift — Tue 09:00</span><span class="age">Tue</span></li>
+      <li class="row s-warn"><input type="checkbox" data-item="magicmonday-essay" aria-label="Essay"><span class="row-b">The MagicMonday essay<span class="row-sub">Displaced twice. Proposed for Friday 10:00.</span></span><span class="age warm">Fri</span></li>
+    </ul>
+  </article>
+
+  <article class="proj" data-proj="clients">
+    <div class="proj-h"><h3>Clients &amp; income</h3><span class="pct mono">—</span></div>
+    <div class="pill"><i></i></div>
+    <ul class="rows">
+      <li class="row"><input type="checkbox" data-item="luis-call" aria-label="Luis call"><span class="row-b">Brandlift — call Tue 12:30<span class="row-sub">First real conversation since the Isabelle intro</span></span><span class="age">Tue</span></li>
+      <li class="row"><input type="checkbox" data-item="gonzo-mentoring" aria-label="Gonzo"><span class="row-b">Gonzo — mentoring Mon 31 Aug</span><span class="age">Mon</span></li>
+      <li class="row s-wait"><input type="checkbox" data-item="ethan-coffee" aria-label="Ethan"><span class="row-b">Ethan — coffee never landed</span><span class="age">2d</span></li>
+      <li class="row s-wait"><input type="checkbox" data-item="evan-aom" aria-label="Evan"><span class="row-b">Evan (Art of Mondays) — sent 19 Aug, quiet</span><span class="age">5d</span></li>
+    </ul>
+  </article>
+
+  <article class="proj" data-proj="admin">
+    <div class="proj-h"><h3>Admin</h3><span class="pct mono">—</span></div>
+    <div class="pill"><i></i></div>
+    <ul class="rows">
+      <li class="row s-wait"><input type="checkbox" data-item="mediapouch-hiss" aria-label="Media Pouch"><span class="row-b">Media Pouch — audio hiss<span class="row-sub">Theirs to fix</span></span><span class="age">—</span></li>
+      <li class="row s-crit"><input type="checkbox" data-item="virginactive-glasses" aria-label="Glasses"><span class="row-b">Virgin Active — glasses claim<span class="row-sub">34 days silent</span></span><span class="age hot">34d</span></li>
+      <li class="row"><input type="checkbox" data-item="n26-bali" aria-label="N26"><span class="row-b">N26 Bali claim — Sun 30 Aug<span class="row-sub">Scheduled onto a Rest Day</span></span><span class="age">Sun</span></li>
+    </ul>
+  </article>
+</section>
+
+<!-- ══════════ INBOX ══════════ -->
+<section class="panel" id="p-inbox" role="tabpanel" aria-labelledby="t-inbox" hidden>
+
+  <div class="eyebrow">Waiting on you</div>
+  <ul class="rows">
+    <li class="row s-crit"><input type="checkbox" data-item="nadim-thumbnails" aria-label="Nadim"><span class="row-b"><span class="who">Nadim Hassan</span> — "Hello waiting for your response"<span class="row-sub">16 Aug. He asked for brand references after the first thumbnail pass.</span></span><span class="age hot">8d</span></li>
+    <li class="row s-warn"><input type="checkbox" data-item="ethan-coffee" aria-label="Ethan"><span class="row-b"><span class="who">Ethan Brooks</span> — "Listening now - pretty wild stuff!"<span class="row-sub">22 Aug, starred, unread. Name a time.</span></span><span class="age warm">2d</span></li>
+    <li class="row s-warn"><input type="checkbox" data-item="matt-boulder" aria-label="Matt"><span class="row-b"><span class="who">Matt</span> — your 13 Aug nudge went unanswered<span class="row-sub">Boulder in August is six days from impossible.</span></span><span class="age warm">11d</span></li>
+    <li class="row s-wait"><input type="checkbox" data-item="evan-aom" aria-label="Evan"><span class="row-b"><span class="who">Evan</span> (Art of Mondays) — sent 19 Aug<span class="row-sub">No reply. Low stakes, long game.</span></span><span class="age">5d</span></li>
+  </ul>
+
+  <div class="eyebrow">The draft you need</div>
+  <div class="prop">
+    <h3>To Nadim — thumbnail direction</h3>
+    <div class="when">Re: Work Progress Update — First Video Optimization</div>
+    <p class="why">He can't guess your taste, and the last exchange ended with you calling the work amateur and him asking, reasonably, for references. This gives him something to build against.</p>
+    <div class="draftbox" id="nadim-draft">Nadim,
+
+Fair enough — I gave you a reaction, not a direction. Here's the direction.
+
+What I want: a face, one clear emotion, and nothing else competing. Big
+readable text, three or four words maximum. High contrast so it survives
+being 200 pixels wide on a phone. It should look like a documentary still,
+not a course ad.
+
+What I don't want: floating icons, glowing outlines, arrows, red circles,
+gradient backgrounds, stock imagery, or anything that reads as generic
+AI output.
+
+Three references to work against:
+1. Chris Williamson / Modern Wisdom — face, cropped tight, plain type
+2. Rich Roll — muted colour, calm, lets the guest carry it
+3. Diary of a CEO — high contrast, one line of text, no ornament
+
+The show is called Man's Search for Meaning. The guests are people who
+walked away from something. The thumbnails should feel like that, not
+like marketing.
+
+Send me three concepts for the Eben Britton episode against this brief
+before you build anything out.
+
+Yannick</div>
+    <div class="copywrap">
+      <button class="btn ghost" id="copy-nadim" type="button">Copy draft</button>
+      <span class="copied" id="copied-nadim">Copied</span>
+    </div>
+  </div>
+
+  <div class="eyebrow">Stale drafts, oldest first</div>
+  <p class="tiny">Eight drafts, never sent. The top two are two years old and are almost certainly dead — the interesting one is Flightstory.</p>
+  <div id="drafts">
+    <div class="draftrow"><span class="t">Online-Marketing-Manager PSYCHOLOGIE HEUTE<span class="to">kontakt@doerrich-kleinhans.de</span></span><span class="age mono">26 mo</span></div>
+    <div class="draftrow"><span class="t">Re: Yannick x Perspective<span class="to">polina@perspective.co</span></span><span class="age mono">25 mo</span></div>
+    <div class="draftrow"><span class="t">Re: RE 09/25 YNB Copywriting<span class="to">invoicestfw@younity.team</span></span><span class="age mono">8 mo</span></div>
+    <div class="draftrow"><span class="t">Re: RE 01/26 YNB Copywriting<span class="to">invoicestfw@younity.team</span></span><span class="age mono">6 mo</span></div>
+    <div class="draftrow"><span class="t">Re: A New Escaper for TNE?<span class="to">michelle@thenomadescape.com · 5,300 words written</span></span><span class="age mono warm">5 mo</span></div>
+    <div class="draftrow"><span class="t">Invite: Man's Search for Meaning<span class="to">no recipient · the guest-invite template</span></span><span class="age mono warm">3 mo</span></div>
+    <div class="draftrow"><span class="t">You Inspired Me<span class="to">harri@flightstory.com · Steven Bartlett's company</span></span><span class="age mono hot">2 mo</span></div>
+    <div class="draftrow"><span class="t">RE 06/26 YNB Copywriting<span class="to">no recipient · unsent invoice</span></span><span class="age mono">1 mo</span></div>
+  </div>
+  <div class="checkin" style="margin-top:var(--u4)">
+    <p><span class="ask">The Flightstory draft has sat for two months.</span> You wrote it, so you wanted to send it. Either send it this week or delete it — it's costing you something either way. Same question for the unsent June invoice, which is just money you haven't asked for.</p>
+  </div>
+
+  <div class="eyebrow">Needs nothing from you</div>
+  <ul class="rows">
+    <li class="row s-wait"><input type="checkbox" data-item="mediapouch-hiss" aria-label="Media Pouch"><span class="row-b"><span class="who">Media Pouch</span> — "we're still looking into this"<span class="row-sub">Today. Chase Thursday if it stays quiet.</span></span><span class="age">—</span></li>
+    <li class="row s-wait"><input type="checkbox" data-item="ian-scottsdale" aria-label="Ian"><span class="row-b"><span class="who">Ian Gardner</span> — travelling until the 26th</span><span class="age">Wed</span></li>
+    <li class="row s-wait"><input type="checkbox" data-item="kyle-accept" aria-label="Kyle accept"><span class="row-b"><span class="who">Kyle Kingsbury</span> — invite sent, awaiting accept</span><span class="age">Mon</span></li>
+  </ul>
+</section>
+
+<footer class="wrap foot">
+  <p id="foot-stamp">—</p>
+  <p>Alfred sweeps hourly. Drop a note in [Alfred] Inbox on Drive and it gets read, acted on, and deleted next pass.</p>
+</footer>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  var TZ = "America/Chicago";
+
+  /* ── week data: local Austin times, both calendars ────── */
+  var DAYS = [
+    { key:"mon", label:"Mon 24", date:"2026/8/24" },
+    { key:"tue", label:"Tue 25", date:"2026/8/25" },
+    { key:"wed", label:"Wed 26", date:"2026/8/26" },
+    { key:"thu", label:"Thu 27", date:"2026/8/27" },
+    { key:"fri", label:"Fri 28", date:"2026/8/28" },
+    { key:"sat", label:"Sat 29", date:"2026/8/29" },
+    { key:"sun", label:"Sun 30", date:"2026/8/30" }
+  ];
+
+  // [day, startHour, endHour, bucket, title]
+  var EV = [
+    ["mon",8,8.75,"body","Yoga"],["mon",9,9.75,"anchor","Morning Routine"],
+    ["mon",10,11,"make","Prep: Eben Britton"],["mon",12,14,"rec","MSFM: Eben Britton"],
+    ["mon",15.5,17,"people","Claude AI workshop"],["mon",19.5,20.25,"anchor","Accountability"],
+
+    ["tue",7.5,8.5,"anchor","Morning Routine"],["tue",9,10,"make","Writing: Nelson's Drift"],
+    ["tue",12.5,13.25,"people","Yannick / Luis"],["tue",15.5,16,"make","Substack: Post"],
+    ["tue",15.5,16.5,"body","Gym"],["tue",16.75,17.75,"people","Maya & Laura"],
+    ["tue",18,20,"make","Evening Writing Session"],
+
+    ["wed",7.5,8.5,"anchor","Morning Routine"],["wed",10,11.5,"make","YT Academy"],
+    ["wed",11,13,"rec","MSFM: David Sutcliffe"],["wed",15.5,16,"make","Substack: Post"],
+    ["wed",16.5,17.5,"body","Gym"],["wed",18,20,"people","Bradley?"],
+
+    ["thu",7.5,8.5,"anchor","Morning Routine"],["thu",12,14,"people","Gevity Huddle Room"],
+    ["thu",15.5,16,"make","Substack: Post"],["thu",16.5,17.5,"body","Gym"],
+    ["thu",19.5,21,"people","Logan"],
+
+    ["fri",7.5,8.5,"anchor","Morning Routine"],["fri",9,10,"people","Cal Callahan"],
+    ["fri",9,10,"body","Padel"],
+
+    ["sat",7.5,8.5,"anchor","Morning Routine"],["sat",10,11.5,"body","Class"],
+    ["sat",15,17,"people","Timeleft"],
+
+    ["sun",7.5,8.5,"anchor","Morning Routine"],["sun",8,10,"anchor","Monatsrückblick"],
+    ["sun",9,11.5,"make","Reverse Brain Rot"],["sun",10,12,"people","Vegan Dog Walking"],
+    ["sun",12,13,"body","Pickleball"],["sun",13,14.5,"make","YouTube: Porn Pandemic"],
+    ["sun",14.75,15.25,"anchor","ClassPass"],["sun",15,17,"anchor","Artist Date"],
+    ["sun",15.25,15.75,"anchor","N26: Bali Claim"]
+  ];
+
+  var BUCKET_VAR = { rec:"--cal-rec", make:"--cal-make", people:"--cal-people", body:"--cal-body", anchor:"--cal-anchor" };
+
+  /* union of intervals so overlaps count once */
+  function unionHours(list) {
+    if (!list.length) return 0;
+    var iv = list.map(function (e) { return [e[1], e[2]]; })
+                 .sort(function (a, b) { return a[0] - b[0]; });
+    var total = 0, s = iv[0][0], e = iv[0][1];
+    for (var i = 1; i < iv.length; i++) {
+      if (iv[i][0] <= e) { e = Math.max(e, iv[i][1]); }
+      else { total += e - s; s = iv[i][0]; e = iv[i][1]; }
+    }
+    return total + (e - s);
+  }
+
+  function buildChart() {
+    var host = document.getElementById("chart");
+    if (!host) return 0;
+    var totals = DAYS.map(function (d) {
+      return unionHours(EV.filter(function (e) { return e[0] === d.key; }));
+    });
+    var max = Math.max.apply(null, totals) || 1;
+    var grand = 0;
+    var todayKey = "mon";
+
+    DAYS.forEach(function (d, i) {
+      var hrs = totals[i];
+      grand += hrs;
+      var row = document.createElement("div");
+      row.className = "daybar" + (hrs >= 9 ? " over" : "") + (d.key === todayKey ? " is-today" : "");
+
+      var pctW = Math.round((hrs / max) * 100);
+      var weight = hrs >= 9 ? "hi" : (hrs <= 4.5 ? "lo" : "");
+
+      var evs = EV.filter(function (e) { return e[0] === d.key; })
+                  .sort(function (a, b) { return a[1] - b[1]; });
+      var ribbon = evs.map(function (e) {
+        return '<span style="background:var(' + BUCKET_VAR[e[3]] + ')" title="' +
+               e[4].replace(/"/g, "&quot;") + '"></span>';
+      }).join("");
+
+      row.innerHTML =
+        '<span class="d">' + d.label + '</span>' +
+        '<span class="track"><span class="fill ' + weight + '" style="width:' + pctW + '%"></span></span>' +
+        '<span class="hrs">' + hrs.toFixed(hrs % 1 ? 1 : 0) + 'h</span>' +
+        '<span class="ribbon">' + ribbon + '</span>';
+
+      var link = document.createElement("a");
+      link.href = "https://calendar.google.com/calendar/u/0/r/day/" + d.date.replace(/\//g, "/");
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.style.cssText = "display:block;text-decoration:none;color:inherit;";
+      link.appendChild(row);
+      host.appendChild(link);
+    });
+    return grand;
+  }
+
+  var GRAND = buildChart();
+
+  /* ── tabs ─────────────────────────────────────────────── */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+  function show(id) {
+    tabs.forEach(function (t) {
+      var on = t.getAttribute("aria-controls") === id;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      var p = document.getElementById(t.getAttribute("aria-controls"));
+      if (p) p.hidden = !on;
+    });
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener("click", function () { show(t.getAttribute("aria-controls")); });
+  });
+  document.querySelectorAll("[data-goto]").forEach(function (a) {
+    a.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      show("p-" + a.getAttribute("data-goto"));
+    });
+  });
+
+  /* ── cross-tab checkbox state ─────────────────────────── */
+  var KEY = "ynb-command-center-v1";
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('input[type="checkbox"][data-item]'));
+
+  function load() {
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) { saved = null; }
+    if (!saved) return;
+    boxes.forEach(function (b) {
+      var k = b.getAttribute("data-item");
+      if (Object.prototype.hasOwnProperty.call(saved, k)) b.checked = !!saved[k];
+    });
+  }
+  function persist() {
+    var out = {};
+    boxes.forEach(function (b) { out[b.getAttribute("data-item")] = b.checked; });
+    try { localStorage.setItem(KEY, JSON.stringify(out)); } catch (e) { /* private mode */ }
+  }
+
+  function recount() {
+    document.querySelectorAll(".proj").forEach(function (p) {
+      var bs = Array.prototype.slice.call(p.querySelectorAll('input[type="checkbox"]'));
+      var done = bs.filter(function (b) { return b.checked; }).length;
+      var pct = bs.length ? Math.round((done / bs.length) * 100) : 0;
+      var bar = p.querySelector(".pill i");
+      var lab = p.querySelector(".pct");
+      if (bar) bar.style.width = pct + "%";
+      if (lab) lab.textContent = done + "/" + bs.length + " · " + pct + "%";
+    });
+
+    var seen = {};
+    boxes.forEach(function (b) {
+      var k = b.getAttribute("data-item");
+      if (!(k in seen)) seen[k] = b.checked;
+    });
+    var openRows = document.querySelectorAll("#today-rows input[type=checkbox]");
+    var stillOpen = Array.prototype.slice.call(openRows).filter(function (b) { return !b.checked; }).length;
+
+    var mo = document.getElementById("m-open");
+    var mh = document.getElementById("m-hours");
+    if (mo) mo.textContent = stillOpen;
+    if (mh) mh.textContent = Math.round(GRAND);
+  }
+
+  boxes.forEach(function (b) {
+    b.addEventListener("change", function () {
+      var k = b.getAttribute("data-item");
+      boxes.forEach(function (o) {
+        if (o !== b && o.getAttribute("data-item") === k) o.checked = b.checked;
+      });
+      recount();
+      persist();
+    });
+  });
+
+  load();
+  recount();
+
+  /* ── calendar proposal buttons ────────────────────────── */
+  function gcalStamp(iso) {
+    // "2026-08-28T10:00:00-05:00" -> "20260828T150000Z"
+    var d = new Date(iso);
+    return d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+  }
+  document.querySelectorAll("[data-cal]").forEach(function (btn) {
+    var li = btn.closest(".prop");
+    if (!li) return;
+    var url = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+      "&text=" + encodeURIComponent(li.getAttribute("data-summary") || "") +
+      "&dates=" + gcalStamp(li.getAttribute("data-start")) + "/" + gcalStamp(li.getAttribute("data-end")) +
+      "&details=" + encodeURIComponent(li.getAttribute("data-desc") || "");
+    btn.setAttribute("href", url);
+    btn.setAttribute("target", "_blank");
+    btn.setAttribute("rel", "noopener");
+  });
+
+  /* ── copy draft ───────────────────────────────────────── */
+  var cbtn = document.getElementById("copy-nadim");
+  if (cbtn) {
+    cbtn.addEventListener("click", function () {
+      var txt = document.getElementById("nadim-draft").textContent;
+      var flag = document.getElementById("copied-nadim");
+      function ok() { if (flag) { flag.classList.add("on"); setTimeout(function () { flag.classList.remove("on"); }, 1600); } }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(txt).then(ok, function () {});
+      } else {
+        var ta = document.createElement("textarea");
+        ta.value = txt; document.body.appendChild(ta); ta.select();
+        try { document.execCommand("copy"); ok(); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+    });
+  }
+
+  /* ── timestamps, always Austin ────────────────────────── */
+  var SWEPT = new Date("2026-08-24T16:30:00-05:00");
+  function fmt(d, opts) {
+    return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
+  }
+  var head = fmt(SWEPT, { weekday: "long", day: "numeric", month: "long" }) +
+             " · " + fmt(SWEPT, { hour: "2-digit", minute: "2-digit", hour12: false });
+  var s = document.getElementById("stamp");
+  if (s) s.textContent = head;
+  var fs = document.getElementById("foot-stamp");
+  if (fs) fs.textContent = "Last swept " + head + " (Austin)";
+})();
+</script>
