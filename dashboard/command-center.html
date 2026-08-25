@@ -297,13 +297,13 @@ details.cleared[open] summary::after{content:" ▴";}
 
   <div class="greet">
     <p class="lede">Eight hours committed, one recording banked, three collisions cleared. Monday did what Monday was going to do.</p>
-    <p class="tiny">Nadim didn't go out. That's the only thing today didn't close.</p>
+    <p class="tiny">Nadim didn't go out. Just Push Record sent the first edited pod file at 21:45 — it's waiting for you, not urgent tonight.</p>
   </div>
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Stop. It goes out at 10:00 tomorrow.</h2>
-    <p class="why">The day is finished. Nadim has waited eight days; one more night changes nothing, and starting a client conversation at seven in the evening after a two-hour recording is how you end up sending something worse than what's already drafted. It is now first in tomorrow's 10:00 block, ahead of Matt.</p>
+    <h2>Stop. It goes out Tuesday at 10:00.</h2>
+    <p class="why">The day is finished. Nadim has waited eight days; one more night changes nothing, and starting a client conversation at seven in the evening after a two-hour recording is how you end up sending something worse than what's already drafted. It is first in Tuesday's 10:00 block, ahead of Matt.</p>
     <a class="btn ghost" href="#" data-goto="week">See tomorrow</a>
   </div>
 
@@ -315,6 +315,13 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="row-b"><span class="who">Nadim</span> — send thumbnail direction + 3 references
         <span class="row-sub">Blocked since 16 Aug. Draft ready on Inbox, queued first for tomorrow 10:00.</span></span>
       <span class="age hot">8d</span>
+    </li>
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="jpr-edit-review" aria-label="Review JPR edit">
+      <span class="row-b"><span class="who">Just Push Record</span> — first edited pod file delivered
+        <span class="row-sub">Landed 21:45 tonight. They're waiting on your notes before the next one. Block proposed for Tue 11:00.</span></span>
+      <span class="age warm">Tue</span>
     </li>
 
     <li class="row s-warn">
@@ -458,6 +465,17 @@ details.cleared[open] summary::after{content:" ▴";}
   <ul class="props" id="props">
 
     <li class="prop"
+        data-summary="Review: JPR edit"
+        data-start="2026-08-25T11:00:00-05:00"
+        data-end="2026-08-25T12:30:00-05:00"
+        data-desc="First edited pod file from Just Push Record, delivered 24 Aug 21:45. Listen through, send notes back. Drive folder is in the thread from team@justpushrecord.com.">
+      <h3>Review the first edit</h3>
+      <div class="when">Tue 25 Aug · 11:00–12:30</div>
+      <p class="why">The studio turned this around in nine hours and is waiting on notes before the next one. Tuesday 11:00 is the only clear stretch before the Sutcliffe recording on Wednesday, and notes are worth more to them before they cut the second episode than after.</p>
+      <a class="btn" href="#" data-cal>Add to calendar</a>
+    </li>
+
+    <li class="prop"
         data-summary="Follow-ups: Nadim, Matt, Ethan, Evan"
         data-start="2026-08-25T10:00:00-05:00"
         data-end="2026-08-25T11:00:00-05:00"
@@ -501,7 +519,8 @@ details.cleared[open] summary::after{content:" ▴";}
     <div class="proj-h"><h3>Man's Search for Meaning</h3><span class="pct mono">—</span></div>
     <div class="pill"><i></i></div>
     <ul class="rows">
-      <li class="row"><input type="checkbox" data-item="msfm-eben" checked aria-label="Eben recorded"><span class="row-b">Eben Britton — recorded 24 Aug<span class="row-sub">Needs an edit slot</span></span><span class="age">done</span></li>
+      <li class="row"><input type="checkbox" data-item="msfm-eben" checked aria-label="Eben recorded"><span class="row-b">Eben Britton — recorded 24 Aug<span class="row-sub">Edit delivered same night, unreviewed</span></span><span class="age">done</span></li>
+      <li class="row s-warn"><input type="checkbox" data-item="jpr-edit-review" aria-label="Review edit"><span class="row-b">Review the JPR edit<span class="row-sub">Studio waiting on notes</span></span><span class="age warm">Tue</span></li>
       <li class="row"><input type="checkbox" data-item="msfm-sutcliffe" aria-label="Sutcliffe"><span class="row-b">David Sutcliffe — Wed 26 Aug, JPR<span class="row-sub">Prep block set for 09:00</span></span><span class="age">Wed</span></li>
       <li class="row"><input type="checkbox" data-item="msfm-kyle" aria-label="Kyle"><span class="row-b">Kyle Kingsbury — Mon 31 Aug<span class="row-sub">Awaiting his accept</span></span><span class="age">Mon</span></li>
       <li class="row"><input type="checkbox" data-item="msfm-cal" aria-label="Cal walk"><span class="row-b">Cal Callahan — walk Fri 28 Aug<span class="row-sub">Courting, not booked. Ask on the walk.</span></span><span class="age">Fri</span></li>
@@ -860,7 +879,7 @@ Yannick</div>
   }
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-24T21:09:00-05:00");
+  var SWEPT = new Date("2026-08-24T22:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
