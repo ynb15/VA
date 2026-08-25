@@ -112,7 +112,12 @@ is not another card on the board; it is placing a calendar slot for the send.
    Read each note, act on it, delete it. The actuals log does not live there and
    is never deleted.
 3. Pull what's changed:
-   - Calendar: list calendars FIRST, then events on EVERY one, merged. All-day
+   - Calendar: list calendars FIRST, then events on EVERY one, merged. Query the
+     WHOLE remaining horizon (today through next Monday), never a window that
+     stops at midnight tonight. On 25 Aug a window ending at Tue midnight missed
+     a Wed 09:00 prep block, and a duplicate got reported to Yannick as a move.
+     Before saying "you moved X", confirm X does not still exist where it was.
+     All-day
      "free" events (MagicMonday, Rest Day, Silent Day, Substack titles) are
      labels, not commitments — don't count them as hours. If he moved something
      himself, reflect it and stop asking.
