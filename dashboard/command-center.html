@@ -302,9 +302,9 @@ details.cleared[open] summary::after{content:" ▴";}
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>The window is open. Nadim first.</h2>
-    <p class="why">Reading: DMT is done and nothing is committed until Luis at 12:30. The draft is on the Inbox tab — copy, send, done. Then the edit. And before 12:30, decline the Gevity walk: it is sitting on the Luis call and it takes one tap.</p>
-    <a class="btn ghost" href="#" data-goto="inbox">Read the draft</a>
+    <h2>Decline the walk. Luis is in 75 minutes.</h2>
+    <p class="why">The Gevity Walk + Talk is still sitting unanswered on top of the Brandlift call. One tap. After that, an hour of the window is left — enough for Nadim, who is at nine days and already written.</p>
+    <a class="btn ghost" href="https://calendar.google.com/calendar/u/0/r/day/2026/8/25" target="_blank" rel="noopener">Open today</a>
   </div>
 
   <div class="eyebrow">Still open</div>
@@ -315,6 +315,13 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="row-b"><span class="who">Today 12:30</span> — Gevity Walk + Talk landed on the Luis call
         <span class="row-sub">Invite arrived 08:02 this morning. Luis is the Brandlift conversation you chased for a link. The walk is the one that moves.</span></span>
       <span class="age hot">4h</span>
+    </li>
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="prep-sutcliffe-clash" aria-label="Prep inside Maya and Laura">
+      <span class="row-b"><span class="who">Tonight 17:00</span> — Sutcliffe prep now sits inside drinks with Maya &amp; Laura
+        <span class="row-sub">You moved it off Wednesday an hour ago. It landed at 17:00–17:30, inside 16:45–17:45. Wednesday 09:00 is empty now and the recording is at 11:00.</span></span>
+      <span class="age warm">6h</span>
     </li>
 
     <li class="row s-crit">
@@ -456,6 +463,17 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Suggested blocks</div>
   <p class="tiny">Nothing lands until you press the button.</p>
   <ul class="props" id="props">
+
+    <li class="prop"
+        data-summary="Prep: David Sutcliffe"
+        data-start="2026-08-26T09:00:00-05:00"
+        data-end="2026-08-26T10:00:00-05:00"
+        data-desc="Moved off Tue 17:00-17:30, which sat inside Maya and Laura 16:45-17:45. Wednesday 09:00 is clear and the recording is at 11:00, so the prep lands an hour before you walk into the studio. Delete the Tuesday copy once this exists.">
+      <h3>Prep where it can actually happen</h3>
+      <div class="when">Wed 26 Aug · 09:00–10:00</div>
+      <p class="why">Half an hour of prep inside a social block is half an hour of prep that won't happen. Wednesday morning is empty again and puts it an hour before the studio. Delete the 17:00 copy after.</p>
+      <a class="btn" href="#" data-cal>Add to calendar</a>
+    </li>
 
     <li class="prop"
         data-summary="Follow-ups: Nadim, Matt, Ethan, Evan"
@@ -671,10 +689,10 @@ Yannick</div>
 
     ["tue",7.5,8.5,"anchor","Morning Routine"],["tue",9.5,10,"make","Reading: DMT"],
     ["tue",12.5,13.25,"people","Yannick / Luis"],["tue",15.5,16,"make","Substack: Post"],
-    ["tue",16.75,17.75,"people","Maya & Laura"],
-    ["tue",18,20,"make","Evening Writing Session - Substack: The Meaning Crisis"],
+    ["tue",16.75,17.75,"people","Maya & Laura"],["tue",17,17.5,"make","Prep: David Sutcliffe"],
+    ["tue",18,20,"make","Evening Writing Session - Substack: The Meaning Crisis"],["tue",21,21.5,"anchor","Accountability"],
 
-    ["wed",7,8,"anchor","Morning Routine"],["wed",9,10,"make","Prep: David Sutcliffe"],
+    ["wed",7,8,"anchor","Morning Routine"],
     ["wed",11,13,"rec","MSFM: David Sutcliffe"],["wed",15.5,16,"make","Substack: Post"],
     ["wed",16.5,17.5,"body","Gym"],["wed",18,19.5,"people","Bradley?"],
 
@@ -872,7 +890,7 @@ Yannick</div>
   }
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-25T10:09:00-05:00");
+  var SWEPT = new Date("2026-08-25T11:13:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
