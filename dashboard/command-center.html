@@ -297,18 +297,25 @@ details.cleared[open] summary::after{content:" ▴";}
 
   <div class="greet">
     <p class="lede">Tuesday is the emptiest day you have this week and the only one with a clean two-and-a-half hour stretch in it. Everything that's been waiting fits inside it.</p>
-    <p class="tiny">You cleared Thursday overnight. It landed on Friday, which is now carrying three blocks on top of each other.</p>
+    <p class="tiny">Two things to unpick: a walk invite that landed on the Luis call at 12:30, and Friday, which is carrying three blocks on top of each other.</p>
   </div>
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>10:00 to 12:30 is the whole day.</h2>
-    <p class="why">Nothing is committed between Reading: DMT and the Luis call. Nadim goes first — nine days, draft already written, two minutes. Then the Just Push Record edit, which the studio is waiting on before they cut Sutcliffe tomorrow. If only one of those happens, make it Nadim.</p>
-    <a class="btn ghost" href="#" data-goto="inbox">Read the draft</a>
+    <h2>12:30 is double-booked. Kill one.</h2>
+    <p class="why">Gevity sent a Walk + Talk invite for 12:30–13:00 this morning. Luis and Brandlift are already at 12:30 — the call you chased twice for a link. Decline the walk. Thirty seconds, and it protects the only revenue conversation on your week. Then 10:00 to 12:30 is clear for Nadim and the edit.</p>
+    <a class="btn ghost" href="https://calendar.google.com/calendar/u/0/r/day/2026/8/25" target="_blank" rel="noopener">Open today</a>
   </div>
 
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
+
+    <li class="row s-crit">
+      <input type="checkbox" data-item="gevity-luis-clash" aria-label="Gevity walk clashes with Luis">
+      <span class="row-b"><span class="who">Today 12:30</span> — Gevity Walk + Talk landed on the Luis call
+        <span class="row-sub">Invite arrived 08:02 this morning. Luis is the Brandlift conversation you chased for a link. The walk is the one that moves.</span></span>
+      <span class="age hot">4h</span>
+    </li>
 
     <li class="row s-crit">
       <input type="checkbox" data-item="nadim-thumbnails" aria-label="Nadim thumbnail direction">
@@ -479,7 +486,7 @@ details.cleared[open] summary::after{content:" ▴";}
         data-desc="Rescheduled from Fri 11:00-12:30 to clear a three-way overlap with Gym 10:30-11:30 and YouTube: Fundraiser 11:45-12:45. Delete the 11:00 copy once this exists. If you would rather keep the morning for writing, move the Fundraiser to 14:45 instead and leave this where it was.">
       <h3>Unstack Friday</h3>
       <div class="when">Fri 28 Aug · 14:45–16:15</div>
-      <p class="why">Moving Nelson's Drift is the single change that clears all three overlaps. Delete the 11:00 copy after. I would have made this move myself, but calendar write access expired overnight.</p>
+      <p class="why">Moving Nelson's Drift is the single change that clears all three overlaps. Delete the 11:00 copy after. I would make this move myself, but calendar write access is expired — reads work, writes are refused.</p>
       <a class="btn" href="#" data-cal>Add to calendar</a>
     </li>
 
@@ -865,7 +872,7 @@ Yannick</div>
   }
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-25T07:11:00-05:00");
+  var SWEPT = new Date("2026-08-25T08:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
