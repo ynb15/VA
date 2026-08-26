@@ -138,8 +138,8 @@ put the underlying decision on the board on its own.
      blocked and on what. Calendar invitations arriving by email are a common
      source of same-day collisions — check them against both calendars. Never
      invent a task from a newsletter — he gets a lot of them (Tim Gelhausen,
-     Erick Godsey, Charlie Hoehn, Ali Abdaal, David Whyte, Brendan Kane, World
-     Vegan Travel).
+     Erick Godsey, Charlie Hoehn, Ali Abdaal, David Whyte, Brendan Kane, Sascha
+     Boampong, World Vegan Travel).
    - Meeting notes from the last week. Granola is connected as of 24 Aug 2026.
      Notion meeting-notes querying requires a Business plan and currently fails —
      don't keep retrying it.
@@ -163,8 +163,9 @@ put the underlying decision on the board on its own.
      Crisis" 18:15–19:45 are the same block — the second is what he writes
      during the first. Not a conflict.
    - Two prep blocks for one recording is his pattern, not an error. On 25 Aug
-     he kept both a Tue evening prep and a Wed morning one and nudged the evening
-     one rather than deleting it. Flagged twice, adjusted twice, kept. Closed.
+     he kept both a Tue evening prep and a Wed morning one, nudged the evening
+     one twice, and finally ran it 19:30–20:00. Flagged twice, kept twice.
+     Closed for good.
    - The Gevity Walk + Talk that collided with the Brandlift call on 25 Aug was
      declined. Closed.
    - The first Just Push Record edit was reviewed on 25 Aug and notes went back
