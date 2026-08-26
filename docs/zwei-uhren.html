@@ -1,0 +1,389 @@
+<title>Zwei Uhren</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+:root{
+  color-scheme: dark;
+
+  --ground:#0A0C10;
+  --panel:#11141A;
+  --rise:#171B23;
+  --rule:#1E232C;
+  --rule-soft:#171A21;
+
+  --ink:#E8EAEE;
+  --silver:#969CA8;
+  --mute:#666C78;
+
+  --burn:#C0873E;
+  --burn-dim:#7A5527;
+  --steady:#5F9C7F;
+  --steady-dim:#3A6250;
+
+  --u1:4px; --u2:8px; --u3:12px; --u4:18px; --u5:26px; --u6:38px; --u7:56px; --u8:80px;
+  --maxw:660px;
+}
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+.sheet{max-width:var(--maxw);margin:0 auto;padding:0 var(--u4) var(--u8);}
+
+/* ── masthead: a ledger page ───────────────────────────── */
+.top{
+  position:relative;
+  border-bottom:1px solid var(--rule);
+  background:
+    repeating-linear-gradient(180deg,
+      transparent 0px, transparent 27px,
+      var(--rule-soft) 27px, var(--rule-soft) 28px),
+    linear-gradient(180deg,#141821 0%, #0C0F14 100%);
+  padding:var(--u7) 0 var(--u6);
+}
+.top .sheet{padding-bottom:0;}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--mute);margin:0 0 var(--u4);
+}
+h1{
+  font-family:Fraunces,Georgia,serif;
+  font-optical-sizing:auto;
+  font-weight:300;
+  font-size:clamp(38px,9vw,62px);
+  line-height:1.02;
+  letter-spacing:-.015em;
+  margin:0 0 var(--u4);
+  text-wrap:balance;
+}
+h1 em{font-style:normal;color:var(--burn);}
+.standfirst{
+  font-size:17px;line-height:1.5;color:var(--silver);
+  max-width:52ch;margin:0;text-wrap:balance;
+}
+
+/* ── the two clocks ────────────────────────────────────── */
+.clocks{
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:var(--rule);border:1px solid var(--rule);
+  margin:var(--u7) 0 var(--u6);
+}
+@media (max-width:560px){.clocks{grid-template-columns:1fr;}}
+.clock{background:var(--panel);padding:var(--u5) var(--u4);position:relative;}
+.clock::before{
+  content:"";position:absolute;inset:0 0 auto 0;height:2px;
+}
+.clock.c-burn::before{background:var(--burn);}
+.clock.c-steady::before{background:var(--steady);}
+.clock .lab{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--mute);margin-bottom:var(--u3);
+}
+.clock .fig{
+  font-family:Fraunces,Georgia,serif;font-weight:300;
+  font-size:44px;line-height:1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;
+  margin-bottom:var(--u2);
+}
+.c-burn .fig{color:var(--burn);}
+.c-steady .fig{color:var(--steady);}
+.clock .unit{
+  font-family:"IBM Plex Sans",sans-serif;font-size:13px;
+  color:var(--silver);display:block;margin-bottom:var(--u3);
+}
+.clock p{font-size:13.5px;line-height:1.5;color:var(--mute);margin:0;}
+
+/* ── body type ─────────────────────────────────────────── */
+h2{
+  font-family:Fraunces,Georgia,serif;font-weight:400;
+  font-size:26px;line-height:1.15;letter-spacing:-.01em;
+  margin:var(--u7) 0 var(--u4);text-wrap:balance;
+}
+h3{
+  font-family:"IBM Plex Sans",sans-serif;font-weight:600;
+  font-size:16px;letter-spacing:.005em;margin:0 0 var(--u2);
+}
+p{margin:0 0 var(--u4);}
+p.lead{font-size:17.5px;line-height:1.55;}
+strong{font-weight:600;color:#F3F4F6;}
+.dim{color:var(--silver);}
+.mono{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;}
+
+.rulebreak{border:0;border-top:1px solid var(--rule);margin:var(--u7) 0 0;}
+
+/* ── evidence: the ledger rows ─────────────────────────── */
+.ledger{
+  border:1px solid var(--rule);background:var(--panel);
+  margin:0 0 var(--u4);
+}
+.lrow{
+  display:grid;grid-template-columns:1fr auto;gap:var(--u4);
+  align-items:baseline;
+  padding:var(--u3) var(--u4);
+  border-bottom:1px solid var(--rule-soft);
+}
+.lrow:last-child{border-bottom:0;}
+.lrow .what{font-size:14.5px;line-height:1.4;}
+.lrow .what span{display:block;color:var(--mute);font-size:12.5px;margin-top:2px;}
+.lrow .age{
+  font-family:"IBM Plex Mono",monospace;font-size:12px;
+  color:var(--burn);white-space:nowrap;font-variant-numeric:tabular-nums;
+}
+.lfoot{
+  padding:var(--u3) var(--u4);
+  border-top:1px solid var(--rule);
+  font-size:13px;color:var(--silver);background:var(--rise);
+}
+
+/* ── takeover blocks ───────────────────────────────────── */
+.takes{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);}
+.take{background:var(--panel);padding:var(--u5) var(--u4);}
+.take .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:10px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--mute);
+  margin-bottom:var(--u3);
+}
+.take p{font-size:14.5px;line-height:1.55;color:var(--silver);margin:0 0 var(--u3);}
+.take p:last-child{margin-bottom:0;}
+.take .now{
+  font-size:13px;color:var(--mute);border-left:2px solid var(--rule);
+  padding-left:var(--u3);margin:0;
+}
+.take .now b{color:var(--silver);font-weight:500;}
+
+/* ── the 18 days ───────────────────────────────────────── */
+.days{list-style:none;margin:0;padding:0;position:relative;}
+.days::before{
+  content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;
+  background:linear-gradient(180deg,var(--steady-dim),var(--burn-dim));
+}
+.day{
+  position:relative;padding:0 0 var(--u5) var(--u5);
+}
+.day::before{
+  content:"";position:absolute;left:0;top:7px;
+  width:11px;height:11px;border-radius:50%;
+  background:var(--ground);border:2px solid var(--rule);
+}
+.day.hot::before{border-color:var(--burn);background:var(--burn);}
+.day.warm::before{border-color:var(--burn-dim);}
+.day .when{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--mute);
+  margin-bottom:2px;
+}
+.day .what{font-size:15px;line-height:1.45;}
+.day .what span{display:block;color:var(--mute);font-size:13px;margin-top:3px;}
+
+/* ── asks ──────────────────────────────────────────────── */
+.asks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--u4);}
+.ask{
+  display:grid;grid-template-columns:auto 1fr;gap:var(--u3);align-items:start;
+}
+.ask .n{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--burn);
+  padding-top:4px;font-variant-numeric:tabular-nums;
+}
+.ask .t{font-size:15px;line-height:1.5;}
+.ask .t span{display:block;color:var(--mute);font-size:13px;margin-top:3px;}
+
+.close{
+  margin-top:var(--u7);padding:var(--u5) var(--u4);
+  background:var(--panel);border:1px solid var(--rule);
+  border-left:2px solid var(--burn);
+}
+.close p{margin:0;font-size:15.5px;line-height:1.55;}
+.close p + p{margin-top:var(--u3);}
+
+.sig{
+  margin-top:var(--u6);padding-top:var(--u4);border-top:1px solid var(--rule);
+  font-family:"IBM Plex Mono",monospace;font-size:11px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--mute);
+}
+</style>
+
+<div class="top">
+  <div class="sheet">
+    <p class="eyebrow">Vorschlag · 26. August 2026</p>
+    <h1>Zwei Uhren<br><em>laufen unterschiedlich schnell</em></h1>
+    <p class="standfirst">Du hast nach Impact gefragt. Die Uhr, die darüber entscheidet, ob der Impact überhaupt eine Chance bekommt, ist die andere.</p>
+  </div>
+</div>
+
+<div class="sheet">
+
+  <div class="clocks">
+    <div class="clock c-burn">
+      <div class="lab">Runway</div>
+      <div class="fig">18</div>
+      <span class="unit">Tage bis Austin, 13. September</span>
+      <p>Ersparnisse gehen zu Ende — deine Worte. Der Podcast verdient bisher nichts. Brandlift ist seit heute die einzige neue Einnahme.</p>
+    </div>
+    <div class="clock c-steady">
+      <div class="lab">Impact</div>
+      <div class="fig">4</div>
+      <span class="unit">Aufnahmen in zwölf Tagen</span>
+      <p>Eben, Sutcliffe, Kyle am 31., Matt Defina am 4. Ein kalter Pitch an Marc Gafni bekam innerhalb eines Tages ein persönliches Ja.</p>
+    </div>
+  </div>
+
+  <p class="lead">Die Impact-Uhr läuft richtig. Vier Aufnahmen in zwölf Tagen, Kyle Kingsbury als Türöffner für Gafni und Cal Callahan, ein Format, das Menschen sofort verstehen. Da ist nichts kaputt.</p>
+
+  <p>Kaputt ist die andere Seite. Der Podcast ist gerade ein Kostenträger mit Reichweitenpotenzial, und die Sache, die ihn finanzieren müsste, läuft nebenher ohne System. Das ist keine Motivationsfrage. Das ist eine Buchhaltungsfrage, und Buchhaltung ist genau die Art Arbeit, die ich dir abnehmen kann.</p>
+
+  <h2>Was seit Wochen in deinem Entwurfsordner liegt</h2>
+
+  <div class="ledger">
+    <div class="lrow">
+      <div class="what">RE 06/26 YNB Copywriting
+        <span>Rechnung geschrieben, kein Empfänger eingetragen, nie gesendet</span></div>
+      <div class="age">3. Juli</div>
+    </div>
+    <div class="lrow">
+      <div class="what">You Inspired Me — harri@flightstory.com
+        <span>Steven Bartletts Firma. Du hast es geschrieben, also wolltest du es senden.</span></div>
+      <div class="age">27. Juni</div>
+    </div>
+    <div class="lrow">
+      <div class="what">RE 01/26 YNB Copywriting — younity.team
+        <span>Entwurf, nie raus</span></div>
+      <div class="age">17. Feb</div>
+    </div>
+    <div class="lrow">
+      <div class="what">Re: A New Escaper for TNE? — The Nomad Escape
+        <span>5.300 Wörter geschrieben. Fünf Monate ungesendet.</span></div>
+      <div class="age">24. März</div>
+    </div>
+    <div class="lrow">
+      <div class="what">RE 09/25 YNB Copywriting — younity.team
+        <span>Entwurf, nie raus</span></div>
+      <div class="age">16. Dez</div>
+    </div>
+    <div class="lfoot">Acht Entwürfe insgesamt. Drei davon sind Rechnungen. Ich kenne die Beträge nicht — das ist eines der Dinge, die ich von dir brauche.</div>
+  </div>
+
+  <p>Ich sage das einmal und dann nie wieder in diesem Ton: <strong>du hast Arbeit gemacht und nicht danach gefragt, während dein Konto leerläuft.</strong> Das ist die billigste Verlängerung deines Runways, die es gibt, und sie kostet dich zwanzig Minuten.</p>
+
+  <hr class="rulebreak">
+
+  <h2>Was ich ab jetzt übernehme</h2>
+
+  <p class="dim">Vier Bereiche. In jedem davon arbeite ich vor, du entscheidest und drückst ab. Senden darf ich nicht — das ist bewusst so eingestellt und ich würde es auch nicht ändern wollen.</p>
+
+  <div class="takes">
+
+    <div class="take">
+      <div class="tag">Geld</div>
+      <h3>Ich führe das Buch, nicht du</h3>
+      <p>Jede Rechnung, die rausgehen muss, jeder offene Betrag, jede Zahlung, die zu lange dauert. Ich schreibe die Rechnungsmails fertig, inklusive Nachfassen nach vierzehn Tagen, und lege sie dir zum Absenden hin. Offene Posten stehen ab sofort auf dem Board, nicht in einem Entwurfsordner.</p>
+      <p class="now"><b>Heute:</b> drei ungesendete Rechnungen, älteste vom Dezember. Keine davon steht irgendwo, wo du sie siehst.</p>
+    </div>
+
+    <div class="take">
+      <div class="tag">Gäste</div>
+      <h3>Die Pitch-Maschine, rückwärts konstruiert</h3>
+      <p>Dein Gafni-Pitch hat funktioniert: die erste Zeile beschreibt den Menschen so, wie er sich selbst kaum zu beschreiben traut, dann deine eigene Geschichte als Beleg, dann drei Fragen, die kein anderer Host stellen würde. Das ist eine Formel und ich kann sie bedienen. Ich recherchiere Kandidaten, schreibe den Pitch in deiner Stimme, du liest und schickst.</p>
+      <p class="now"><b>Kyle ist der Hebel.</b> Gafni und Cal kamen beide über ihn. Am 31. sitzt du zwei Stunden mit ihm im Raum — geh mit einer Liste rein, nicht mit Dankbarkeit.</p>
+    </div>
+
+    <div class="take">
+      <div class="tag">Nach der Aufnahme</div>
+      <h3>Jede Folge produziert dieselben sieben Dinge</h3>
+      <p>Schnittnotizen, Thumbnail-Briefing, Titel, Beschreibung, Kapitel, Clips, Substack-Stück. Heute machst du das jedes Mal neu und von Hand. Ab jetzt liegt das Paket fertig auf dem Board, sobald eine Aufnahme im Kalender abgehakt ist. Du korrigierst, statt zu erfinden.</p>
+      <p class="now"><b>Nadim blockiert seit dem 16. August</b> die gesamte Thumbnail-Strecke. Ein sauberes Briefing löst das oder beweist, dass er der Falsche ist.</p>
+    </div>
+
+    <div class="take">
+      <div class="tag">Brandlift</div>
+      <h3>Der Auftrag, der den Runway verlängert</h3>
+      <p>Gottfried Prinz ist ab heute bezahlte Arbeit mit hartem Termin. Ich lese mit, halte die Deadlines, schreibe die Follow-up-Sequenzen vor und sorge dafür, dass die Abnahmeschleifen über Lukas und Luis nicht an dir hängenbleiben.</p>
+      <p class="now"><b>Workshop am 10. September, 19:00.</b> Du fliegst am 13. Für die Woche 36 steht bisher keine einzige Stunde Brandlift im Kalender.</p>
+    </div>
+
+  </div>
+
+  <h2>Die achtzehn Tage</h2>
+
+  <p class="dim">Das ist keine Wunschliste. Das steht so im Kalender oder ergibt sich zwingend daraus.</p>
+
+  <ul class="days">
+    <li class="day warm">
+      <div class="when">Do 27. — Fr 28. August</div>
+      <div class="what">Cal Callahan am Donnerstag, Fundraiser-Dreh und YT Academy am Freitag
+        <span>Freitagabend 16:00–20:00 ist der einzige Vier-Stunden-Block dieser Woche. Da gehört der Essay hin, der seit Montag zweimal verschoben wurde.</span></div>
+    </li>
+    <li class="day">
+      <div class="when">So 30. August</div>
+      <div class="what">Danny Miranda erscheint, Porn Pandemic wird gefilmt
+        <span>Rest Day und Silent Day tragen trotzdem acht Stunden. Das ist der dritte Sonntag in Folge.</span></div>
+    </li>
+    <li class="day warm">
+      <div class="when">Mo 31. August</div>
+      <div class="what">Kyle Kingsbury, 10:00, Just Push Record
+        <span>MagicMonday geht zum zweiten Mal an einen Gast. Der wichtigste Raum des Monats — Kyle ist die Quelle deiner besten Kontakte.</span></div>
+    </li>
+    <li class="day hot">
+      <div class="when">Di 1. — Do 3. September</div>
+      <div class="what">Woche 36. Brandlift liefert oder liefert nicht.
+        <span>Buch, kompletter Funnel als Nutzer, Copy-Overwork, drei Mailstrecken. Vorgeschlagen: Dienstag und Donnerstag, je vier Stunden. Beide Buttons liegen auf dem Board.</span></div>
+    </li>
+    <li class="day">
+      <div class="when">Fr 4. September</div>
+      <div class="what">Matt Defina, 10:00, Just Push Record
+        <span>Seit dem 14. August bestätigt. Nelson's Drift liegt momentan mitten drin.</span></div>
+    </li>
+    <li class="day hot">
+      <div class="when">Do 10. September, 19:00</div>
+      <div class="what">Live-Workshop 1 — das 9-Dimensionen-Modell
+        <span>Der harte Termin. Alles davor ist Vorbereitung darauf.</span></div>
+    </li>
+    <li class="day hot">
+      <div class="when">So 13. September</div>
+      <div class="what">Austin ist vorbei
+        <span>Danach ändert sich deine Zeitzone, und jeder Gast, der in Austin sitzt, wird wieder teuer.</span></div>
+    </li>
+  </ul>
+
+  <hr class="rulebreak">
+
+  <h2>Was ich von dir brauche</h2>
+
+  <ul class="asks">
+    <li class="ask">
+      <div class="n">01</div>
+      <div class="t">Die Beträge und die Empfänger der drei offenen Rechnungen.
+        <span>Ohne die kann ich sie nicht fertig schreiben. Mit denen liegen sie morgen früh zum Absenden bereit.</span></div>
+    </li>
+    <li class="ask">
+      <div class="n">02</div>
+      <div class="t">Google Kalender neu verbinden.
+        <span>Schreibzugriff ist seit zwei Tagen abgelaufen. Deshalb bekommst du Buttons statt fertiger Einträge. Lesen funktioniert, verschieben nicht.</span></div>
+    </li>
+    <li class="ask">
+      <div class="n">03</div>
+      <div class="t">Was verdient der Podcast in sechs Monaten?
+        <span>Werbung, Sponsoren, ein eigenes Produkt, oder ist er der Kanal für alles andere? Die Antwort ändert, welche Gäste ich dir suche. Ein Format für Reichweite ist ein anderes als ein Format, das Kunden bringt.</span></div>
+    </li>
+  </ul>
+
+  <div class="close">
+    <p>Der Podcast wird groß. Nach zwölf Tagen Datenlage sage ich das ohne Einschränkung — die Antwortquote auf deine kalten Pitches ist nicht normal.</p>
+    <p><strong>Er wird nur groß, wenn du lange genug durchhältst, um ihn groß werden zu lassen.</strong> Meine Aufgabe ist es, dir dafür Zeit und Geld zurückzuholen. Fang mit den Rechnungen an.</p>
+  </div>
+
+  <p class="sig">Alfred · 26. August 2026, 16:40 Uhr Austin</p>
+
+</div>
