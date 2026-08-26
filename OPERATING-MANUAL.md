@@ -169,7 +169,12 @@ recording is the moment to ask Kyle for a direct introduction.
    - EMAIL BECOMES TASKS. A real ask, a deadline, a blocked collaborator, or a
      decision only he can make becomes a task in the same sweep. Name who is
      blocked and on what. Calendar invitations arriving by email are a common
-     source of same-day collisions — check them against both calendars. Never
+     source of same-day collisions — check them against both calendars. THE
+     GEVITY CONCIERGE IS THE REPEAT OFFENDER: three invites so far, each landing
+     on something already booked (Walk + Talk on the Brandlift call 25 Aug; a
+     second Huddle Room 1 on Fri 28 Aug 12:00-14:00 over the Fundraiser shoot
+     and YT Academy, invited 09:15 on 26 Aug). Check every concierge@livegevity
+     invite against both calendars the moment it arrives. Never
      invent a task from a newsletter — he gets a lot of them (Tim Gelhausen,
      Erick Godsey, Charlie Hoehn, Ali Abdaal, David Whyte, Brendan Kane, Sascha
      Boampong, Freedom Founder, World Vegan Travel).
