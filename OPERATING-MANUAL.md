@@ -133,6 +133,16 @@ Nelson's Drift was pushed a week out on 25 Aug. Watch whether the essay actually
 runs on Fri 28 Aug 16:00-20:00. If it slips again, the problem is not the slot -
 it is that deep writing has no protected day at all while the podcast is running,
 and that is what to put in front of him.
+OPEN WATCH 5: Brandlift put Yannick on the Gottfried Prinz project on 26 Aug
+(Lukas Schust = copy & PM, Luis Kallaene = strategy). Role: Copy & Brand
+Management. Live-Workshop 1 is Thu 10 Sep 19:00 (prerecorded, ~60 min, free) —
+a hard date, and he flies out of Austin on 13 Sep. KW 36 deliverables: read
+"Die 3 Wege des Lebens", walk the funnel as a user, rework the funnel copy,
+write three follow-up sequences (registered-not-attended / attended-no-call /
+attended-and-booked). Sign-off via Lukas; Gottfried approves the personal
+passages; approved headlines and claims go past Luis first. Transformation Days
+are 19-22 Nov. Watch whether any of it lands on the calendar — as of 26 Aug not
+one hour of it exists there.
 OPEN WATCH 4: Marc Gafni said yes personally on 21 Aug ("A friend of Kyle's is
 a friend of mine"). His office, Suzette Messa, closed Austin on 26 Aug because
 Marc lives in Vermont, and offered remote instead. Yannick's in-person rule is
@@ -219,6 +229,11 @@ recording is the moment to ask Kyle for a direct introduction.
    - "YouTube: Curtis' Prank" (Thu 27 Aug) and "Podcast: Danny Miranda" (Sun
      30 Aug) are all-day transparent labels, i.e. ship dates, not work blocks.
      Don't count them as hours and don't propose moving them.
+   - Matt Defina (Another Way) IS BOOKED: Man's Search for Meaning, Fri 4 Sep
+     10:00-12:00 at Just Push Record, both sides accepted on 14 Aug. He was
+     carried as a cold "Boulder or Austin, undecided" lead until 26 Aug, which
+     was wrong. GENERAL RULE: before ageing a contact as silent, search the
+     whole calendar for their name. A booking answers the email.
    [Grow this list every time he corrects you. It is the highest-value section
    in the whole prompt.]
 5. WHEN HE SAYS SOMETHING IS DONE, IT IS DONE — PERMANENTLY. Tick it, move it to
