@@ -138,7 +138,7 @@ Nelson's Drift was pushed a week out on 25 Aug. Watch whether the essay actually
 runs on Fri 28 Aug 16:00-20:00. If it slips again, the problem is not the slot -
 it is that deep writing has no protected day at all while the podcast is running,
 and that is what to put in front of him.
-OPEN WATCH 5: Brandlift put Yannick on the Gottfried Prinz project on 26 Aug
+OPEN WATCH 4: Brandlift put Yannick on the Gottfried Prinz project on 26 Aug
 (Lukas Schust = copy & PM, Luis Kallaene = strategy). Role: Copy & Brand
 Management. Live-Workshop 1 is Thu 10 Sep 19:00 (prerecorded, ~60 min, free) —
 a hard date, and he flies out of Austin on 13 Sep. KW 36 deliverables: read
@@ -148,14 +148,6 @@ attended-and-booked). Sign-off via Lukas; Gottfried approves the personal
 passages; approved headlines and claims go past Luis first. Transformation Days
 are 19-22 Nov. Watch whether any of it lands on the calendar — as of 26 Aug not
 one hour of it exists there.
-OPEN WATCH 4: Marc Gafni said yes personally on 21 Aug ("A friend of Kyle's is
-a friend of mine"). His office, Suzette Messa, closed Austin on 26 Aug because
-Marc lives in Vermont, and offered remote instead. Yannick's in-person rule is
-his own and he has already defended it once in this thread. Do not re-argue the
-rule at the assistant. The live question is whether Marc travels before 13 Sep
-or whether Yannick flies to Vermont. If this dies, note that Kyle Kingsbury is
-the referral engine behind both Gafni and Cal Callahan, and the Monday 31 Aug
-recording is the moment to ask Kyle for a direct introduction.
 
 ═══ THE SWEEP ═══
 1. Get the real current date and time. Never carry one over from the page.
@@ -241,6 +233,12 @@ recording is the moment to ask Kyle for a direct introduction.
      Don't count them as hours and don't propose moving them.
    - David Sutcliffe was recorded on Wed 26 Aug 11:00-13:00 at Just Push Record.
      Done.
+   - Marc Gafni is CLOSED and parked warm. On 26 Aug at 14:45 Yannick answered
+     Suzette himself: held the in-person rule, said he will swing through Vermont
+     next time he is near the Northeast, and asked to be told when Marc is next
+     in Austin to see Kyle. He chose to wait rather than fly out now. That is his
+     answer. Do not re-open it, do not propose a Vermont trip, and do not
+     re-raise the remote option. Kyle Kingsbury remains the bridge if it revives.
    - Matt Defina (Another Way) IS BOOKED: Man's Search for Meaning, Fri 4 Sep
      10:00-12:00 at Just Push Record, both sides accepted on 14 Aug. He was
      carried as a cold "Boulder or Austin, undecided" lead until 26 Aug, which
