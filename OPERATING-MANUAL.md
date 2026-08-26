@@ -37,6 +37,22 @@ https://claude.ai/code/artifact/dfbfca53-bfa9-41e9-a81a-00e6b20837a9):
    corrects rather than invents.
 4. BRANDLIFT. The paid work that extends the runway. Hold the deadlines, draft
    the sequences, keep the sign-off loops off him.
+   HARD FACTS read 26 Aug (sheet dated 11.08.2026). Webinar Thu 10 Sep 19:00,
+   60-75 min, prerecorded but hosted "as live" via EverWebinar. Targets: 1,000
+   registrations, 300-500 live, 30-50 calls, 15-25 participants. Backend is
+   Transformation Days 19-22 Nov at 3,490 EUR net; upsell 3-Monatsprogramm
+   5,790 EUR, bundle 7,890 EUR; revenue target 50-150k.
+   THEIR TIMELINE, AND THE CONFLICT: LP + thank-you page + reminder sequence
+   were due live by 25 Aug (Korbinian/Bonny); the briefing Yannick got on 26 Aug
+   still shows the live URL as a placeholder. Lead acquisition starts Thu 27 Aug
+   with the ad budget. Yannick's funnel rework is KW 36 — i.e. paid traffic hits
+   the copy before the copywriter touches it. Flagged to him 26 Aug 18:15 and
+   written into the Lukas draft as a question, not a correction.
+   ALSO: the sheet contradicts itself on spend — Key Facts say 6,000-10,000 EUR
+   at CPL 6-10 for 1,000 registrations; "To be discussed" says 2-3k at CPL 4-6
+   for 300-500. Two different campaigns in one document.
+   Team: Korbinian (web), Lukas (copy/PM), Bonny (design), Philipp (paid),
+   Ambre (content/organic), Moritz (calls), Gottfried (content owner).
 
 OUTSTANDING FROM HIM (asked 26 Aug 16:45): amounts and recipients for the open
 invoices; the Google Calendar reconnection; and what the podcast should earn in
