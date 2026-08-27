@@ -29,6 +29,24 @@ THE COLD PITCH HAS SEVEN BEATS AND HE NEVER REORDERS THEM:
   6. VERBATIM, never rewritten: "I committed to depth over quantity. In-person only. Every guest I invite is meaningful to me. You're one of them."
   7. Place, window, offer. Then "Dreaming Big," — full name plus YNB Ventures LLC if they don't know him, just "YNB" if they do.
 A FOLLOW-UP IS NOT THE SEVEN-BEAT PITCH. Observed 27 Aug on the Joe Hudson thread, where he took a draft of mine and made it his in four minutes. The shape: greeting first, no cold open. Then the reason for writing as news, not as an ask ("because I got some crazy news to share:"). Then the roster, refreshed, each name still carrying its occupational twist. ONE line in bold, and it names the person, not the show. Then the deeper-layer questions in italics, carried over from the original pitch almost word for word — he does not rewrite them. Then the window, "I'll come to wherever whenever it'd suit best", and "It would be a genuine honour." Signs off "Dreaming Big," + first name only, because they have met the full signature already. He also cuts: guests whose episode has not shipped, and any parenthetical aside written for a different recipient.
+FAMILY IS OFF-LIMITS IN A COLD PITCH. Corrected by Yannick 27 Aug: "wenn mir
+ein Fremder über meine Elternbeziehung was schreiben würde, dann wär das schon
+sehr komisch." Parents, siblings, a bereavement, a marriage — even when the
+person has published every word of it themselves, and even framed as
+recognition, a stranger does not open there. Those are earned in the room. The
+cold open works on what the person BUILT, SAID ABOUT THEIR OWN WORK, or is
+trying to do next. The depth still goes in — through the work, not the family.
+
+FIND THE GUEST'S LIVE CENTRE OF GRAVITY, NOT MINE. Same correction, same day: I
+built the Chase Reeves pitch entirely on psychedelics because that was the
+bridge I already had language for, and ignored men's work completely — which is
+the thing he actually says he wants to spend his life on. "Du musst dich gar
+nicht auf die Ketamintherapie limitieren. Ich würd das Ganze erweitern." Before
+drafting, ask what this person is burning on RIGHT NOW, not what is easiest to
+connect to Yannick's existing material. Half his roster comes out of the
+men's-work world — Sutcliffe, Cal Callahan, Eben Britton, Kyle Kingsbury, Logan
+Gonzalez — and that is a broader, truer bridge than any single modality.
+
 THE COLD OPEN IS RECOGNITION, NEVER DIAGNOSIS. Corrected by Yannick 27 Aug on
 the Chase Reeves draft: "das greift ihn irgendwie so subtil an, nicht sehr
 appropriate für einen Podcast-Outreach von einem Stranger." Beat 1 names what
