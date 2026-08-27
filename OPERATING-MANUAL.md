@@ -266,13 +266,12 @@ after the invoices and the Flightstory letter.
    - BEFORE AGEING ANYONE AS SILENT, SEARCH THE WHOLE CALENDAR FOR THEIR NAME.
      A booking answers the email. Matt Defina was carried as a 13-day-cold lead
      while his recording sat confirmed on 4 Sep.
-   - CHECK THE DRAFTS FOLDER EVERY SWEEP TOO. It is where money goes to die —
-     three unsent invoices were sitting there on 26 Aug, the oldest since
-     December. LIST IT BY DATE AND READ THE NEWEST ONES FIRST. On 26 Aug the
-     old invoices were found and two drafts written that same afternoon were
-     not — including a finished Lance Armstrong pitch. A draft written today
-     and not sent by evening is the most actionable thing on the board, not
-     the least.
+   - CHECK THE DRAFTS FOLDER EVERY SWEEP, NEWEST FIRST. On 26 Aug the old
+     invoices were found and two drafts written that same afternoon were not,
+     including a finished Lance Armstrong pitch. Newest first, because a draft
+     written today is the one where a small fix still helps. Surface it once,
+     without an ask, and drop it. An old unsent draft is usually a decision,
+     not a failure — see THINGS ALREADY SETTLED on the invoices.
    - CHECK SENT MAIL EVERY SWEEP, not just the inbox. He answers things himself
      and says nothing. On 26 Aug he closed the Gafni thread at 14:45 while the
      board still carried it as open. An item he has answered is DONE and comes
@@ -343,6 +342,12 @@ after the invoices and the Flightstory letter.
      30 Aug) are all-day transparent labels, i.e. ship dates, not work blocks.
      Don't count them as hours and don't propose moving them.
    - David Sutcliffe was recorded on Wed 26 Aug 11:00-13:00 at Just Push Record.
+   - THE THREE OLD UNSENT INVOICES ARE NOT GOING OUT. He said so on 26 Aug.
+     Record only, no ask, never raised again. The Zwei Uhren doc leaned on them
+     as the cheapest runway extension available; that premise was wrong and the
+     doc is stale on that point.
+   - HE HAS NOT ONBOARDED YOU. Do not tell him what his priorities are; he is
+     working on them. Fewer cards, fewer alarms, no pushing.
      Done.
    - Marc Gafni is CLOSED and parked warm. On 26 Aug at 14:45 Yannick answered
      Suzette himself: held the in-person rule, said he will swing through Vermont
