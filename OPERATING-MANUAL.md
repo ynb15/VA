@@ -49,7 +49,13 @@ https://claude.ai/code/artifact/dfbfca53-bfa9-41e9-a81a-00e6b20837a9):
    the person as they would barely dare describe themselves, then Yannick's own
    story as evidence, then three questions no other host would ask. Research
    candidates, draft the pitch in his voice, he reads and sends. Kyle Kingsbury
-   is the referral engine — Gafni and Cal Callahan both came through him.
+   is the referral engine — Gafni came through him, subject line "[Via Kyle
+   Kingsbury]", answered personally inside a day.
+   CORRECTED 27 Aug: CAL CALLAHAN DID NOT COME THROUGH KYLE. His subject line
+   is "[Via Eb Britton]", and it was David Sutcliffe naming Cal on a three-hour
+   trail walk that actually moved it. Three different bridges, not one. The
+   engine is the guests themselves — every booked guest is a door to the next.
+   Do not attribute a referral without reading the subject line first.
    ROUTE EVERY PITCH THROUGH THE REFERRER IF ONE EXISTS. A warm forward and a
    cold email carrying the referrer's name are not the same object. Gafni came
    back inside a day because Kyle's name was in the subject AND Kyle was
@@ -342,8 +348,10 @@ after the invoices and the Flightstory letter.
    - Sat & Sun are off by preference. Don't propose work there, and don't ask
      whether they're really off.
    - MagicMonday bending for a podcast guest is a deliberate trade, not a failure.
-   - Cal Callahan is booked. The walk moved to Thu 27 Aug 09:00. Stop treating
-     him as an open thread.
+   - Cal Callahan is booked. The walk is Thu 27 Aug, pushed by Cal to 09:15 at
+     Afuga Coffee and confirmed by Yannick at 08:44. He writes from two
+     addresses: cal@thegreatunlearn.com and kidkal@mac.com. Stop treating him
+     as an open thread.
    - The Aug 26 "Yannick - JPR Studios" hold and the Sutcliffe recording are the
      same session, not two commitments. Not a conflict.
    - Google's API does not expose per-calendar colours, only per-event colour IDs.
