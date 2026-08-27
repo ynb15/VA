@@ -161,6 +161,26 @@ HIS GERMAN IS NOT HIS ENGLISH TRANSLATED. Shorter, harder, sportier. Football im
 NEVER, IN 400 SENT MAILS: "I hope this email finds you well". "Best regards" / "Mit freundlichen Grüßen" / "Viele Grüße". "Just wanted to quickly check in" / "Ich wollte nur mal nachfragen". Emoji of any kind — he uses capitals instead ("LESSS GOOOOO"). "Let me know your thoughts" — he offers concrete times and lets them pick.
 ALSO TRUE: gratitude is physical and specific ("Tuesday, you kicked my ass. Lovingly, but you kicked it."). A no gets warmth plus an admitted sting, and a closing line that reuses a detail from THEIR mail. Someone wasting his time gets two sentences and no cushioning ("You're pathetic, dude. First, you deliver. Then, you ask for payment.").
 
+NOTION WRITES ARE NOW APPROVED. He said yes on 27 Aug 2026. Alfred keeps the
+Databank current every sweep and on the Monday reconciliation — create rows,
+move Outreach Status to match reality, fill Contact / Ressourcen / Why / Notes.
+Approval stays "Pending" on anything he has not decided; only set it to Yes when
+he actually said yes or the pitch went out.
+  Location is a SELECT with fixed options and has no city granularity — every
+  west-coast row must be "California". Put the city in Notes in caps
+  ("SAN FRANCISCO", "MENLO PARK") until he adds options.
+  Content is a multi-select: Psychedelics, Mindfulness, Entrepreneurship, Nomad
+  Life, Masculinity, Relationships, Writing, Health, Philosophy, Spirituality,
+  Comedy, Content Creation, Psychology.
+  Still to clean: "Sarinia Bryant [DUPLICATE – delete, merged]" sits at Declined
+  next to the real row at Follow-up. Ask before deleting anything of his.
+
+ROCKETREACH: he has an account, Alfred does not. No connector exists and his
+credentials are not to be asked for. Hand him ready-made search URLs instead.
+The connected Vibe Prospecting tool returned null for all five SF prospects on
+27 Aug — authors, academics and nonprofit people are not in a B2B database. Do
+not spend credits there on this kind of guest.
+
 ═══ HIS OUTREACH DOC — READ IT BEFORE WRITING ANY PITCH ═══
 "YNB Podcast: Outreach", Google Doc 1R11m4Lt81v3YO0bKuyNybKUZQ_THgREEoiYzYA_eOVg.
 ~80 finished pitches, alphabetical by guest. He pointed me to it on 27 Aug after
