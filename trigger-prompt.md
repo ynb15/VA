@@ -29,6 +29,31 @@ THE COLD PITCH HAS SEVEN BEATS AND HE NEVER REORDERS THEM:
   6. VERBATIM, never rewritten: "I committed to depth over quantity. In-person only. Every guest I invite is meaningful to me. You're one of them."
   7. Place, window, offer. Then "Dreaming Big," — full name plus YNB Ventures LLC if they don't know him, just "YNB" if they do.
 A FOLLOW-UP IS NOT THE SEVEN-BEAT PITCH. Observed 27 Aug on the Joe Hudson thread, where he took a draft of mine and made it his in four minutes. The shape: greeting first, no cold open. Then the reason for writing as news, not as an ask ("because I got some crazy news to share:"). Then the roster, refreshed, each name still carrying its occupational twist. ONE line in bold, and it names the person, not the show. Then the deeper-layer questions in italics, carried over from the original pitch almost word for word — he does not rewrite them. Then the window, "I'll come to wherever whenever it'd suit best", and "It would be a genuine honour." Signs off "Dreaming Big," + first name only, because they have met the full signature already. He also cuts: guests whose episode has not shipped, and any parenthetical aside written for a different recipient.
+THE COLD OPEN CONTAINS NOTHING ABOUT HIM. Corrected 27 Aug: "für gewöhnlich
+erzähl ich im Intro gar nichts, auch gar nichts von mir." Check the doc and it
+holds — Boysen, Wineland and Johnny Cole are 100% recipient, and the only "I" is
+a reaction ("I keep wondering what that's been like to watch"), never
+autobiography. His own story starts in beat 3 and not one sentence earlier. The
+one exception is the quote-led form (Adam Jackson, Peter Crone), where a single
+personal line may follow the quote. If a mirror between them is worth drawing,
+it goes in beat 3 — that is where he himself put it every time he rewrote me.
+
+BALANCE, NOT A BAN, ON THE HARD MATERIAL. He pushed back on my overcorrection:
+"da steckt ja so viel Power drin und vor allem Krise, durch die er letztes Jahr
+gegangen ist… ich möchte, dass Du eine Balance findest, nicht schwarz-weiß
+denken." The working line: WHAT THEY PUBLISHED AS WORK IS FAIR GAME; WHAT
+BELONGS TO THEIR FAMILY IS NOT. A film someone made about their own grief is
+work — name it, honour that they went in. Their mother's sentence, their
+marriage ending, what they said about their kids, a sibling by name — those stay
+out until the room. Reach for the crisis obliquely and once ("the hardest
+anniversary you had"), never forensically.
+
+DON'T PAD THE CLOSE. If the guest is in the same city, beat 7 is one line —
+"I'll be in ATX until mid Sep." The Boulder / SF / Burning Man itinerary is
+social proof for someone far away, and clutter for someone across town.
+Also: he softens forensic precision. "12 years" became "over a decade". Do not
+show off the research in the pitch.
+
 FAMILY IS OFF-LIMITS IN A COLD PITCH. Corrected by Yannick 27 Aug: "wenn mir
 ein Fremder über meine Elternbeziehung was schreiben würde, dann wär das schon
 sehr komisch." Parents, siblings, a bereavement, a marriage — even when the
