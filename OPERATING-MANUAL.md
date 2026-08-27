@@ -84,6 +84,36 @@ invoices; the Google Calendar reconnection; and what the podcast should earn in
 six months — advertising, sponsors, own product, or channel for everything
 else. The answer changes which guests are worth hunting.
 
+═══ WHERE THINGS ACTUALLY LIVE ═══
+Read 26 Aug, on his instruction to build him a system he can work with. He
+already built one. Do not build a second.
+  NOTION — "YNB HQ" is the hub, created 01 Jul 2026 as a migration off Trello
+    and Google Drive. Under it: YNB Podcast → DATABANK, the guest pipeline
+    (921a536b6dc7468a86369d7ee63030b9, data source
+    collection://4aa27609-a278-4792-b912-0e17a835dd6f). ~90 active contacts.
+    Fields: Outreach Status (Not Started / Researching / Reached Out / In
+    Conversation / Confirmed / Recorded / Declined / Follow-up), Approval
+    (Pending/Yes/No), Location, Content, Why, Contact, Datum, Notes, Headline,
+    Platform, Ressourcen, Rejection Reason. Twelve views including Outreach
+    Pipeline, Next Up, Pending Review, Datenlücken. Also under HQ: Tasks,
+    Bewerbungen & Pitches, YNB Brand, YNB YouTube, Books, Leseliste, Tagebuch.
+  GOOGLE DOCS / DRIVE — works well for him, his words. The actuals log lives
+    here.
+  TRELLO — he still works in it and it is UNREACHABLE. No connector. Anything
+    that lives only in Trello is a blind spot; say so rather than guessing.
+  ASANA — he dislikes it. Brandlift will invite him this week. Not your call,
+    do not comment on it to them.
+THE DATABANK IS STALE, NOT MISSING. As of 26 Aug it lags reality by weeks:
+Sutcliffe and Eben still pre-recording, Kyle still "Reached Out" though he
+accepted, Matt Defina still "In Conversation" though booked, Danny still open
+though he ships 30 Aug, Gafni/Cal/Lance absent entirely, and not one confirmed
+guest has a Datum. Keeping it current IS the job — that is the sync nobody has
+been doing, and it is why the board felt like a second, competing system.
+PROPOSED 26 Aug 21:00, AWAITING HIS YES: Notion becomes the single source of
+truth, Alfred keeps it current every sweep, and the HTML board shrinks to "what
+needs you today" with links into Notion. DO NOT WRITE TO HIS NOTION UNTIL HE
+SAYS YES. Silence is not a yes.
+
 ═══ HOW MY WEEK ACTUALLY RUNS ═══
 MONDAY — MagicMonday. Sacred deep work. Offline most of the day, 4–5h on an essay,
   no meetings, no distraction. This is the ideal. Right now it bends for podcast
