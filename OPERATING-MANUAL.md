@@ -671,3 +671,28 @@ writes German, answer in German, and write German drafts in German.
 
 WHEN HE PUSHES BACK, the correction is permanent. Add it to "THINGS ALREADY
 SETTLED" above, not just to today's board.
+
+   CHASE REEVES IS A CONFIRMED TARGET, decided by Yannick 27 Aug after watching
+   two long interviews and a documentary. THE BRIDGE IS CAL CALLAHAN: Cal hosts
+   the podcast Chase appeared on, they are in the same men's group, and Yannick
+   walked with Cal that same morning. Chase also sat in David Sutcliffe's men's
+   retreat, and Sutcliffe is already on the roster. NO EMAIL ADDRESS EXISTS in
+   any source — he gives out Instagram (Chase W. Reeves) and YouTube only. Ask
+   Cal to forward; do not guess an address.
+   His material, all from his own published words: 12 years an evangelical
+   worship leader, BS in Biblical Studies at Westmont, deconstructed ("Jesus and
+   I are seeing other people"); his faith was "an old stone castle" he could
+   still grab the silverware from. His brother Chris died last year on a mix of
+   kratom and a benzo, accidental, 500 at the celebration of life. A son, Rowan,
+   lost at full term about ten years ago. Separated from his wife Melissa after
+   ~20 years, two living kids, 10 days off / 4-5 days on, "this nagging guilt".
+   In Sutcliffe's retreat he said out loud the thing he did not want to say, then
+   lay on a mattress and called out for his dad; he opened his eyes and every man
+   in the room was weeping. The sentence that surfaced: "I miss my dad." His
+   father, 69: "You're all we have now." His mother, the night before his
+   ketamine session: "you were this tough little guy and then Chris came along
+   and got all the love from everybody." His own hardest line, from the ketamine
+   film: "I wonder often if there's some great sadness down in me that I'm just
+   terrified to touch, because the truth that it comes with is unsurmountable."
+   He did that session at Kuya in South Austin on 20 March, the one-year
+   anniversary of Chris's death.
