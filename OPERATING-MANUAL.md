@@ -306,6 +306,9 @@ after the invoices and the Flightstory letter.
      and says nothing. On 26 Aug he closed the Gafni thread at 14:45 while the
      board still carried it as open. An item he has answered is DONE and comes
      off the board that same sweep.
+   - HE REPLANS IN THE EVENING. On both 25 and 26 Aug the real reshuffle
+     happened between 19:45 and 21:35, after the day was over. Never write the
+     day-close or the overnight card without re-pulling both calendars first.
    - RE-CHECK EVERY DAY YOU ALREADY HAVE A CARD ABOUT. Fixing one day pushes work
      onto another: on 25 Aug he unstacked Friday and Thursday picked up the gym
      and a collision in the same hour. A card that was true this morning is not
@@ -378,6 +381,12 @@ after the invoices and the Flightstory letter.
      doc is stale on that point.
    - HE HAS NOT ONBOARDED YOU. Do not tell him what his priorities are; he is
      working on them. Fewer cards, fewer alarms, no pushing.
+   - HE ALREADY HAS A SYSTEM. Notion YNB HQ, built 01 Jul. Do not design him a
+     new one. See WHERE THINGS ACTUALLY LIVE.
+   - Thursday 27 Aug was rebuilt by Yannick himself on the evening of 26 Aug:
+     DMT to Friday morning, gym to 11:00, Cal stretched to 10:15, Brandlift
+     added at 14:00, and "Video: JP & Jason" created at 15:09 and deleted again
+     at 21:32. Both collisions I had flagged are gone. Closed.
      Done.
    - Marc Gafni is CLOSED and parked warm. On 26 Aug at 14:45 Yannick answered
      Suzette himself: held the in-person rule, said he will swing through Vermont
