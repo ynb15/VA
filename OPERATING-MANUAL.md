@@ -391,6 +391,11 @@ after the invoices and the Flightstory letter.
      working on them. Fewer cards, fewer alarms, no pushing.
    - HE ALREADY HAS A SYSTEM. Notion YNB HQ, built 01 Jul. Do not design him a
      new one. See WHERE THINGS ACTUALLY LIVE.
+   - ISABELLE SEMLER IS HIS PARTNER, not a contact. She played 1½ years in
+     Brandlift's team and is the reason he got that project at all — his
+     pitch subject line was "[Via Isabelle Semler]". Forwarding her a
+     Brandlift document is not a confidentiality question, and raising it as
+     one on 26 Aug was officious. Do not do it again.
    - LUKAS IS ANSWERED. On 26 Aug at 22:13 Yannick replied himself, four
      minutes after the last sweep: email address given, read-in promised for
      Thursday night, follow-up promised by the weekend. He did NOT raise the
@@ -481,6 +486,48 @@ data-copy="<id>" and data-flag="<flag-id>". The handler is generic; add drafts,
 don't rewire it.
 Rejected by name: warm cream paper grounds, terracotta, purple-blue gradients,
 emoji section markers, rounded cards with accent rails, everything centred.
+
+═══ HIS VOICE, WHEN DRAFTING FOR HIM ═══
+Built 27 Aug from 30+ of his own sent threads, both languages, Mar-Aug 2026.
+Full document: https://claude.ai/code/artifact/9e287c5f-82af-4c56-9ff4-ca798ba31776
+THE COLD PITCH HAS SEVEN BEATS AND HE NEVER REORDERS THEM:
+  1. Cold open, no greeting — an observation about the recipient he would
+     barely dare make about himself. Ends on an ellipsis, never a full stop.
+  2. "Cheers [First], my name is Yannick – host of Man's Search for Meaning,
+     a podcast about humans who've walked through the fire and came out
+     different." Word for word, every time, with the playlist link.
+  3. The one thing from his own life that entitles him to THIS guest.
+  4. "With you, I'm not here for another [obvious topic]. What interests me
+     more is the deeper layer:" then 3-4 questions as one dense block, each
+     opening Why / What / Whether.
+  5. "I know I don't have the biggest reach yet. But…" + the guest list, each
+     name with an occupational twist, + "…so you'd be in good company."
+  6. VERBATIM, never rewritten: "I committed to depth over quantity.
+     In-person only. Every guest I invite is meaningful to me. You're one of
+     them."
+  7. Place, window, offer. Then "Dreaming Big," — full name plus YNB Ventures
+     LLC if they don't know him, just "YNB" if they do.
+GREETINGS GO BY CLOSENESS, NOT LANGUAGE. Cheers [Name] is the default (EN,
+cold to warm). Howdy [Name] for warm service relationships. Hey [Name] for
+German and for slightly irritated. Servus [Name]! for German mates. Hey ihr
+Lieben for German invoicing. Yo my man for friends. TWO RECIPIENTS GET TWO
+GREETINGS: "Cheers Marc, Cheers Suzette," / "Servus Espoir, Howdy Connor,".
+PUNCTUATION IS THE RHYTHM. Spaced en dash " – ", never a long em dash.
+Ellipses as a curtain. A colon right before the real thing ("Just one ask:",
+"long Story short:"). Rhetorical question then a fragment ("Und seitdem?
+Fast zwei Wochen Funkstille. Nichts.") — that one is almost only German.
+HIS GERMAN IS NOT HIS ENGLISH TRANSLATED. Shorter, harder, sportier; football
+imagery (Spielmacher, Tribüne, auf den Platz); English words dropped in
+freely (Bock, A-Player, Solo-Game). Replies run two to four lines with no
+frame and no closing paragraph.
+NEVER, IN 400 SENT MAILS: "I hope this email finds you well". "Best regards"
+or "Mit freundlichen Grüßen". "Just wanted to quickly check in". Emoji — he
+uses capitals instead ("LESSS GOOOOO"). "Let me know your thoughts" — he
+offers concrete times and lets them pick.
+ALSO TRUE: gratitude is physical and specific ("Tuesday, you kicked my ass.
+Lovingly, but you kicked it."). A no gets warmth plus an admitted sting, and
+a closing line that reuses a detail from THEIR mail. Someone wasting his time
+gets two sentences and no cushioning ("You're pathetic, dude.").
 
 ═══ VOICE ═══
 Coach. Read the pattern underneath and name it. Fewer facts, more call.

@@ -1,0 +1,473 @@
+<title>Dreaming Big</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400;1,6..72,600&family=Karla:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap">
+
+<style>
+:root{
+  --paper:#E7EAEE;
+  --sheet:#F2F4F6;
+  --ink:#14171C;
+  --graphite:#5A616C;
+  --faint:#8A919C;
+  --rule:#C6CCD4;
+  --pencil:#3E6488;
+  --pencil-wash:#3E64881A;
+  --correct:#A83B30;
+  --correct-wash:#A83B301A;
+  --shadow:0 1px 0 #FFFFFF80, 0 2px 14px -8px #14171C40;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#101318;
+    --sheet:#171B21;
+    --ink:#E6E9ED;
+    --graphite:#9AA2AE;
+    --faint:#6B7381;
+    --rule:#272D36;
+    --pencil:#7FA9D0;
+    --pencil-wash:#7FA9D01F;
+    --correct:#D2716A;
+    --correct-wash:#D2716A1F;
+    --shadow:0 1px 0 #FFFFFF08, 0 2px 14px -8px #000000;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#101318;
+  --sheet:#171B21;
+  --ink:#E6E9ED;
+  --graphite:#9AA2AE;
+  --faint:#6B7381;
+  --rule:#272D36;
+  --pencil:#7FA9D0;
+  --pencil-wash:#7FA9D01F;
+  --correct:#D2716A;
+  --correct-wash:#D2716A1F;
+  --shadow:0 1px 0 #FFFFFF08, 0 2px 14px -8px #000000;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Karla","Helvetica Neue",Arial,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:clamp(28px,5vw,72px) clamp(18px,4vw,44px) 96px}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:2px solid var(--ink);padding-bottom:22px;margin-bottom:8px}
+.kicker{
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--pencil);margin:0 0 18px
+}
+h1{
+  font-family:"Newsreader",Georgia,serif;
+  font-weight:600;font-style:italic;
+  font-size:clamp(46px,9vw,92px);
+  line-height:.94;letter-spacing:-.02em;
+  margin:0;text-wrap:balance;
+}
+.deck{
+  font-family:"Newsreader",Georgia,serif;
+  font-size:clamp(17px,2.2vw,21px);line-height:1.5;
+  color:var(--graphite);max-width:58ch;margin:20px 0 0
+}
+.source{
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:11.5px;line-height:1.7;color:var(--faint);
+  margin:26px 0 0;padding-top:14px;border-top:1px solid var(--rule);
+  display:flex;flex-wrap:wrap;gap:6px 26px
+}
+
+/* ---------- sections ---------- */
+section{margin-top:clamp(48px,7vw,88px)}
+h2{
+  font-family:"Newsreader",Georgia,serif;
+  font-weight:600;font-size:clamp(26px,3.6vw,36px);
+  line-height:1.15;letter-spacing:-.015em;margin:0 0 6px;text-wrap:balance
+}
+.sub{color:var(--graphite);font-size:15px;max-width:62ch;margin:0 0 30px}
+
+/* ---------- the annotated grid ---------- */
+.rowset{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--rule)}
+.row{
+  display:grid;grid-template-columns:150px minmax(0,1fr);gap:0 30px;
+  padding:20px 0;border-bottom:1px solid var(--rule);align-items:start
+}
+.tag{
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--pencil);padding-top:5px;line-height:1.5
+}
+.tag .n{color:var(--faint);display:block;font-size:10px;letter-spacing:.14em}
+.spec{
+  font-family:"Newsreader",Georgia,serif;
+  font-size:19px;line-height:1.5;
+  border-left:2px solid var(--pencil);padding-left:18px;
+  margin:0 0 10px;color:var(--ink)
+}
+.spec em{font-style:italic}
+.note{font-size:14.5px;color:var(--graphite);margin:0;max-width:60ch}
+.note b{color:var(--ink);font-weight:700}
+
+/* ---------- register table ---------- */
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);background:var(--sheet);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{text-align:left;padding:13px 18px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--pencil);font-weight:400;white-space:nowrap
+}
+tbody tr:last-child td{border-bottom:none}
+td.phrase{font-family:"Newsreader",Georgia,serif;font-size:18px;white-space:nowrap}
+td.who{font-size:14px;color:var(--graphite)}
+
+/* ---------- pull ---------- */
+.pull{
+  background:var(--pencil-wash);border-left:3px solid var(--pencil);
+  padding:22px 26px;margin:34px 0 0
+}
+.pull p{margin:0;font-family:"Newsreader",Georgia,serif;font-size:20px;line-height:1.45}
+.pull .attr{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--pencil);margin-top:12px
+}
+
+/* ---------- never ---------- */
+.never{border-top:1px solid var(--correct)}
+.never .row{border-bottom:1px solid var(--correct-wash)}
+.never .tag{color:var(--correct)}
+.never .spec{
+  border-left-color:var(--correct);color:var(--faint);
+  text-decoration:line-through;text-decoration-color:var(--correct);
+  text-decoration-thickness:1px
+}
+
+/* ---------- ab test ---------- */
+.ab{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--rule);background:var(--sheet);box-shadow:var(--shadow)}
+@media(min-width:760px){.ab{grid-template-columns:1fr 1fr}}
+.ab > div{padding:24px 26px}
+.ab .bad{border-bottom:1px solid var(--rule)}
+@media(min-width:760px){.ab .bad{border-bottom:none;border-right:1px solid var(--rule)}}
+.ablabel{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:10.5px;
+  letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px
+}
+.bad .ablabel{color:var(--correct)}
+.good .ablabel{color:var(--pencil)}
+.abtext{font-family:"Newsreader",Georgia,serif;font-size:17.5px;line-height:1.55;margin:0;white-space:pre-line}
+.bad .abtext{color:var(--faint)}
+
+/* ---------- checklist ---------- */
+.check{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}
+.check li{
+  display:grid;grid-template-columns:26px 1fr;gap:14px;
+  padding:14px 0;border-bottom:1px solid var(--rule);font-size:15.5px
+}
+.check li::before{
+  content:"✓";font-family:"JetBrains Mono",monospace;color:var(--pencil);
+  font-size:14px;padding-top:2px
+}
+.check li:last-child{border-bottom:none}
+
+footer{
+  margin-top:80px;padding-top:20px;border-top:2px solid var(--ink);
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:11px;letter-spacing:.08em;color:var(--faint);
+  display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between
+}
+
+@media(max-width:640px){
+  .row{grid-template-columns:1fr;gap:10px}
+  .tag{padding-top:0}
+}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="kicker">Stimmprofil · aus 30+ gesendeten Threads</p>
+  <h1>Dreaming&nbsp;Big</h1>
+  <p class="deck">Wie du schreibst, wenn niemand dir sagt, wie du schreiben sollst. Herausgezogen aus deinem eigenen Postausgang — nicht aus dem, was reinkommt.</p>
+  <p class="source">
+    <span>Quelle: SENT, 13.03.–27.08.2026</span>
+    <span>Beide Sprachen</span>
+    <span>Kaltpitches, Absagen, Rechnungen, Freunde, Streit</span>
+  </p>
+</header>
+
+<section>
+  <h2>Der Kaltpitch hat sieben Takte</h2>
+  <p class="sub">Du variierst den Inhalt, nie die Reihenfolge. Wineland, Andy Weir, McConaughey, Codie Sanchez, Gafni, Cal — identische Architektur. Das ist kein Zufall, das ist eine Form. Deshalb nummeriert.</p>
+
+  <div class="rowset">
+
+    <div class="row">
+      <div class="tag"><span class="n">Takt 1</span>Kalter Einstieg</div>
+      <div>
+        <p class="spec">„Your heroes are always the same underneath: one ordinary person, alone, out of options, who decides that panicking is optional and gets to work…"</p>
+        <p class="note">Keine Anrede. Du beginnst <b>mitten in ihm drin</b> — eine Beobachtung über den Menschen, die er über sich selbst kaum zu sagen wagt. Endet immer auf drei Punkte, nie auf einen Punkt. Der Leser fällt in den nächsten Absatz.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag"><span class="n">Takt 2</span>Erst jetzt du</div>
+      <div>
+        <p class="spec">„Cheers John, my name is Yannick – host of Man's Search for Meaning, a podcast about humans who've walked through the fire and came out different."</p>
+        <p class="note">Wortgleich in jeder Mail. Ein Satz, ein Link, fertig. Du stellst dich nie vor, bevor du bewiesen hast, dass du ihn gelesen hast.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag"><span class="n">Takt 3</span>Deine Geschichte als Beleg</div>
+      <div>
+        <p class="spec">„I grew up without a dad, without any real male role models really – so I was the epitome of the global masculinity crisis you devote your work to."</p>
+        <p class="note">Kein Lebenslauf. Du erzählst die eine Sache aus deinem Leben, die dich <b>zu diesem einen Gast</b> berechtigt. Bei jedem Empfänger eine andere.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag"><span class="n">Takt 4</span>Die Absage ans Naheliegende</div>
+      <div>
+        <p class="spec">„With you, I'm not here for another polarity-and-attraction breakdown. What interests me more is the deeper layer:"</p>
+        <p class="note">Du sagst zuerst, worüber du <b>nicht</b> reden willst. Dann drei bis vier Fragen, als ein dichter Block, nicht als Liste. Jede beginnt mit Why / What / Whether — nie mit „Can you tell me about".</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag"><span class="n">Takt 5</span>Die Schwäche zuerst</div>
+      <div>
+        <p class="spec">„I know I don't have the biggest reach yet. But I've already had some extraordinary people on the show, such as… …so you'd be in good company."</p>
+        <p class="note">Du nimmst dem Gegenüber das Argument aus der Hand, bevor er es benutzen kann. Dann die Gästeliste, jeder mit einem Berufs-Twist („ex-Federal Reserve banker turned Indian Tantra teacher"). Nie ein nackter Name.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag"><span class="n">Takt 6</span>Das Gesetz</div>
+      <div>
+        <p class="spec">„I committed to depth over quantity. In-person only. Every guest I invite is meaningful to me. You're one of them."</p>
+        <p class="note">Vier Fragmente. Kein Verbindungswort. Das ist die härteste Passage im ganzen Brief und die einzige, die du nie umschreibst.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag"><span class="n">Takt 7</span>Logistik, dann weg</div>
+      <div>
+        <p class="spec">„If you've got an hour or two for a conversation that matters across borders – I'd truly mean the world to me.<br>Dreaming Big,"</p>
+        <p class="note">Ort, Zeitfenster, Angebot. Nie ein „Let me know your thoughts". Nie ein Call-to-Action mit Fragezeichen.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Anreden sind nach Nähe sortiert, nicht nach Sprache</h2>
+  <p class="sub">Du wechselst die Anrede sauber mit dem Verhältnis. Bei zwei Empfängern grüßt du beide einzeln — auch wenn sie in derselben Zeile stehen.</p>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>Anrede</th><th>Register</th><th>Belegt bei</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="phrase">Cheers Marc,</td><td class="who">Standard. Kalt bis warm, EN</td><td class="who">Gafni, Cal, Andy Weir, Kat, JPR</td></tr>
+        <tr><td class="phrase">Howdy Ellie,</td><td class="who">Warm, amerikanisch, Dienstleister</td><td class="who">Media Pouch, Gevity, WiFi Tribe, Luis</td></tr>
+        <tr><td class="phrase">Hey Flo,</td><td class="who">Deutsch, sachlich, oft leicht genervt</td><td class="who">Stadtmobil, Hannes, GoFundMe</td></tr>
+        <tr><td class="phrase">Servus Luis!</td><td class="who">Deutsch, kumpelhaft, mit Ausrufezeichen</td><td class="who">Brandlift, Gevity-Doppelanrede</td></tr>
+        <tr><td class="phrase">Hey ihr Lieben,</td><td class="who">Deutsche Firmen, Rechnungen</td><td class="who">Breuninger, happybrush, koawach</td></tr>
+        <tr><td class="phrase">Yo my man,</td><td class="who">Freunde</td><td class="who">Evan / Art of Mondays</td></tr>
+        <tr><td class="phrase">Cheers Marc, Cheers Suzette,</td><td class="who">Zwei Empfänger, beide einzeln</td><td class="who">Gafni-Thread</td></tr>
+        <tr><td class="phrase">Servus Espoir, Howdy Connor,</td><td class="who">Zwei Empfänger, zwei Register</td><td class="who">Gevity</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pull">
+    <p>„Dreaming Big," — mit vollem Namen und <em>YNB Ventures LLC</em>, wenn er dich nicht kennt. Nur „YNB", wenn er dich kennt.</p>
+    <p class="attr">Deine Signatur. Kein „Best regards" in 400 Mails.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Der Takt kommt aus vier Satzzeichen</h2>
+  <p class="sub">Deine Sätze klingen gesprochen, weil du interpunktierst wie jemand, der atmet.</p>
+  <div class="rowset">
+
+    <div class="row">
+      <div class="tag">Halbgeviert</div>
+      <div>
+        <p class="spec">„No chosen one, no destiny – just a human being who refuses to quit on the universe."</p>
+        <p class="note">Der Gedankenstrich mit Leerzeichen, <b>nie</b> der lange Em-Dash. Er dreht den Satz um, statt ihn zu unterbrechen.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag">Auslassung</div>
+      <div>
+        <p class="spec">„…so you'd be in good company." / „Der ‚Zufall' mal wieder…"</p>
+        <p class="note">Nicht Unentschlossenheit, sondern ein Vorhang. Du lässt den Leser den Satz zu Ende denken.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag">Doppelpunkt</div>
+      <div>
+        <p class="spec">„Here it is, straight up:" / „long Story short:" / „Just one thing:"</p>
+        <p class="note">Immer direkt vor der eigentlichen Sache. Du kündigst Klartext an, dann lieferst du ihn.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag">Frage → Schlag</div>
+      <div>
+        <p class="spec">„Und seitdem? Fast zwei Wochen Funkstille. Nichts."</p>
+        <p class="note">Rhetorische Frage, dann ein Fragment als Antwort. Dein schärfstes Werkzeug, und du nutzt es fast nur auf Deutsch.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Drei Register, die man nicht raten kann</h2>
+  <p class="sub">Das Kaltpitch-Handwerk kann man imitieren. Diese drei sind der Teil, an dem eine Fälschung auffliegt.</p>
+  <div class="rowset">
+
+    <div class="row">
+      <div class="tag">Dankbarkeit</div>
+      <div>
+        <p class="spec">„Tuesday, you kicked my ass. Lovingly, but you kicked it. You saw the potential and you showed me exactly where I…"</p>
+        <p class="note">Körperlich und konkret. Du bedankst dich nie für „die Zeit" — immer für die eine Sache, die jemand getan hat.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag">Eine Absage</div>
+      <div>
+        <p class="spec">„Won't lie, it stings a little… But the door stays wide open. Take care of the little astronaut."</p>
+        <p class="note">Du gibst zu, dass es weh tut, und lässt die Tür trotzdem offen. Der Schlusssatz greift ein Detail aus <b>seiner</b> Mail auf — sein Kleinkind wird zum „little astronaut", weil er Science-Fiction schreibt.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag">Wenn jemand dir die Zeit stiehlt</div>
+      <div>
+        <p class="spec">„You're pathetic, dude. First, you deliver. Then, you ask for payment."</p>
+        <p class="note">Kein Aufwärmen, keine Höflichkeitsformel. Zwei Sätze, Punkt. Diese Stimme benutzt du selten — aber wenn, dann ohne Abfederung.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Dein Deutsch ist nicht dein Englisch übersetzt</h2>
+  <p class="sub">Im Deutschen wirst du schneller, härter und sportlicher. Englisch ist deine Erzählsprache, Deutsch deine Verhandlungssprache.</p>
+  <div class="rowset">
+
+    <div class="row">
+      <div class="tag">Bildsprache</div>
+      <div>
+        <p class="spec">„Damals saßen wir zusammen auf der Tribüne. Jetzt will ich mit euch auf den Platz. Als euer neuer Spielmacher im Marketing."</p>
+        <p class="note">Fußball. Im Englischen greifst du zu Feuer und Reise, im Deutschen zum Spielfeld. Das ist die Mail, die dir Brandlift eingebracht hat.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag">Anglizismen</div>
+      <div>
+        <p class="spec">„Ich hab Bock!" · „A-Player" · „Full-Stack Marketing-Stratege" · „Das Solo-Game hab ich einmal komplett durchgespielt"</p>
+        <p class="note">Du mischst ungeniert. Aber nie im Kaltpitch-Englischen andersherum — dort bleibt Deutsch draußen, außer als ausgewiesenes Zitat: <em>„short and crunchy (German saying)"</em>.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tag">Kürze</div>
+      <div>
+        <p class="spec">„Servus Luis! Hab noch keine Einladung bekommen. Magst mir einmal fix den Gmeet/Zoom-Link schicken?"</p>
+        <p class="note">Deutsche Antworten sind zwei bis vier Zeilen. Kein Rahmen, kein Abschluss-Absatz. „fix", „magst", „einmal" — gesprochene Partikel.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Was du nie schreibst</h2>
+  <p class="sub">In 400 gesendeten Mails kein einziges Mal. Wenn eines dieser Dinge in einem Entwurf von mir auftaucht, ist der Entwurf falsch.</p>
+  <div class="rowset never">
+    <div class="row">
+      <div class="tag">Floskel</div>
+      <div><p class="spec">I hope this email finds you well</p><p class="note">Du steigst immer mit dem Empfänger ein, nie mit einer Höflichkeitsformel.</p></div>
+    </div>
+    <div class="row">
+      <div class="tag">Abschied</div>
+      <div><p class="spec">Best regards / Mit freundlichen Grüßen / Viele Grüße</p><p class="note">Ausnahmslos „Dreaming Big" oder ein ortsgebundener Gruß: <em>„Beste Grüße aus Austin nach Berlin"</em>.</p></div>
+    </div>
+    <div class="row">
+      <div class="tag">Weichmacher</div>
+      <div><p class="spec">Just wanted to quickly check in / Ich wollte nur mal nachfragen</p><p class="note">Du fragst direkt oder gar nicht. „Just one thing:" ist eine Ankündigung, kein Weichmacher.</p></div>
+    </div>
+    <div class="row">
+      <div class="tag">Emoji</div>
+      <div><p class="spec">🙏 ✨ 🚀</p><p class="note">Null in deinen eigenen Mails. Deine Empfänger nutzen sie, du nicht. Emphase machst du mit Großbuchstaben: <em>„LESSS GOOOOO"</em>.</p></div>
+    </div>
+    <div class="row">
+      <div class="tag">Bitte um Meinung</div>
+      <div><p class="spec">Let me know your thoughts / Freue mich auf dein Feedback</p><p class="note">Du machst ein konkretes Angebot mit Uhrzeiten und lässt den anderen wählen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Der Test</h2>
+  <p class="sub">Dieselbe Nachricht — ein Studio soll dein Logo in künftige Schnitte setzen. Links, was jeder schreiben würde. Rechts, was du tatsächlich geschrieben hast.</p>
+  <div class="ab">
+    <div class="bad">
+      <p class="ablabel">Nicht deine Stimme</p>
+      <p class="abtext">Hi Cory,
+
+I hope you're doing well. Thank you so much for sending over the first edit — I really appreciate the quick turnaround.
+
+I just wanted to quickly check whether it would be possible to add my logo to future edits? Please let me know your thoughts.
+
+Best regards,
+Yannick</p>
+    </div>
+    <div class="good">
+      <p class="ablabel">Deine Stimme</p>
+      <p class="abtext">Cheers Cory,
+
+Thanks for sending this through. Just one ask: could you guys add my logo in the left-hand corner for future edits? Here's the file.
+
+Dreaming Big,
+YNB</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Woran ich mich ab jetzt halte</h2>
+  <p class="sub">Wenn ich dir einen Entwurf hinlege, prüfe ich vorher diese sechs Punkte.</p>
+  <ul class="check">
+    <li>Anrede nach Nähe wählen, nicht nach Sprache. Zwei Empfänger heißt zwei Anreden.</li>
+    <li>Gedankenstrich mit Leerzeichen, nie der lange Em-Dash. Ellipsen statt Ausrufezeichen.</li>
+    <li>Bei Kaltpitches die sieben Takte in genau dieser Reihenfolge, Takt 6 wortgleich.</li>
+    <li>Antworten bleiben unter fünf Zeilen. Kein Rahmen, kein Abschluss-Absatz.</li>
+    <li>Deutsch wird kürzer und sportlicher, nicht höflicher.</li>
+    <li>Kein Emoji, kein „Best regards", kein „Let me know your thoughts".</li>
+  </ul>
+</section>
+
+<footer>
+  <span>Erstellt 27.08.2026 · aus deinem Postausgang</span>
+  <span>Ich verschicke weiterhin nichts. Nur Entwürfe.</span>
+</footer>
+
+</div>
