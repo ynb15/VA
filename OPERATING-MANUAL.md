@@ -575,6 +575,26 @@ honour." Signs off "Dreaming Big," + first name only, because they have met the
 full signature already. He also cuts: guests whose episode has not shipped, and
 any parenthetical aside written for a different recipient.
 
+THE COLD OPEN IS RECOGNITION, NEVER DIAGNOSIS. Corrected by Yannick 27 Aug on
+the Chase Reeves draft: "das greift ihn irgendwie so subtil an, nicht sehr
+appropriate für einen Podcast-Outreach von einem Stranger." Beat 1 names what
+the recipient SURVIVED and honours it — Lance got "Most men don't survive
+either." It never tells a stranger what he could not say, could not face, or is
+still avoiding. Same facts, opposite posture: admiration, not a read.
+AND WHEN A REFERRER EXISTS, HIS OWN OPENING MOVE IS THE LANDING PLUS THE NAME,
+in this shape, which he wrote himself: "I just landed in Austin coming all the
+way from South Africa. Cal Callahan told me if there's one person I should go
+all in to get on the pod while I'm here, it's you." Landing first, referrer
+second, and the referrer's endorsement stated as a fact he was told.
+
+FORMATTING IS PART OF THE VOICE — he has asked for it twice. In a COLD PITCH:
+the deeper-layer question block is BOLD, as one paragraph. "You're one of them."
+is bold, and nothing else in beat 6 is. "Man's Search for Meaning" is italic and
+carries the YouTube playlist link. Publication names and foreign words are
+italic (*Psychedelics Today*, *lekker*). In a FOLLOW-UP the question block turns
+ITALIC instead, and the one bold line names the person. Never hand him plain
+text and expect him to add the marks.
+
 WHAT HE CHANGES WHEN HE EDITS MY DRAFTS. Measured 27 Aug on two drafts he
 rewrote and sent within the hour — the Joe Hudson follow-up and the Joe Moore
 studio mail. These are the deltas. Apply them BEFORE handing anything over.
