@@ -523,6 +523,14 @@ never invent around them:
     South Africa, and one with his 77 y/o therapist and techno icon Rob Bennett.
   - The proof link he drops: [*Snippet: Forget The Manosphere – This Is Real
     Men's Work*](https://youtu.be/W15kCW9OHI0?si=Gs98iJyf8fnpW6WU)
+  - A FOURTH TERRITORY, added 27 Aug: FAITH. He writes about God, the sacred and
+    what survives losing a religion, and he wants it braided with men's work and
+    psychedelics rather than kept separate. His own line, from the Adam Jackson
+    pitch: "Men were the last place I'd have gone looking for God. Then I went
+    through the immersion with Peter in Cape Town last year, and a room full of
+    them held me." And from the Eamon Armstrong pitch, the phrase for a guest who
+    spans several of these worlds: "We've been circling the same fires from
+    opposite ends of the earth: plant medicine, festivals, men's work."
   - The disclaimer beat for this world: "With you, I'm not interested in another
     'what is men's work' 101."
   - Elsewhere he also writes plainly about growing up with violence at home. That
