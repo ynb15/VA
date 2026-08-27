@@ -205,14 +205,14 @@ it is that deep writing has no protected day at all while the podcast is running
 and that is what to put in front of him.
 OPEN WATCH 4: Brandlift put Yannick on the Gottfried Prinz project on 26 Aug
 (Lukas Schust = copy & PM, Luis Kallaene = strategy). Role: Copy & Brand
-Management. Live-Workshop 1 is Thu 10 Sep 19:00 (prerecorded, ~60 min, free) —
-a hard date, and he flies out of Austin on 13 Sep. KW 36 deliverables: read
-"Die 3 Wege des Lebens", walk the funnel as a user, rework the funnel copy,
-write three follow-up sequences (registered-not-attended / attended-no-call /
-attended-and-booked). Sign-off via Lukas; Gottfried approves the personal
-passages; approved headlines and claims go past Luis first. Transformation Days
-are 19-22 Nov. Watch whether any of it lands on the calendar — as of 26 Aug not
-one hour of it exists there.
+Management. Live-Workshop 1 is Thu 10 Sep 19:00 (prerecorded, 60-75 min,
+free) — a hard date, and he flies out of Austin on 13 Sep. KW 36 deliverables:
+read "Die 3 Wege des Lebens", walk the funnel as a user, rework the funnel
+copy, write three follow-up sequences (registered-not-attended /
+attended-no-call / attended-and-booked). Sign-off via Lukas; Gottfried
+approves the personal passages; approved headlines and claims go past Luis
+first. Transformation Days are 19-22 Nov. Watch whether any of it lands on the
+calendar — as of 26 Aug not one hour of it exists there.
 
 ═══ THE SWEEP ═══
 1. Get the real current date and time. Never carry one over from the page.
