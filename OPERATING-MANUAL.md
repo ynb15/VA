@@ -345,6 +345,20 @@ after the invoices and the Flightstory letter.
      Notion meeting-notes querying requires a Business plan and currently fails —
      don't keep retrying it.
 4. THINGS ALREADY SETTLED — never raise again:
+   - BURNING MAN. He is invited to the Burning Man HQ in San Francisco at the end
+     of September TO RECORD A PODCAST WITH THEIR CEO. Learned 27 Aug from his own
+     sent mail to Joe Hudson, nowhere else. It is a guest, a trip and the reason
+     for the whole California leg, and as of 27 Aug it is on no calendar and in no
+     Databank row. Ask for the dates once; do not invent them.
+   - JOE HUDSON IS FOLLOWED UP. Sent 27 Aug 14:05 into the July thread, addressed
+     to Micah with Joe on it. Nine names, the in-person rule, the SF trip as the
+     reason to write. Do not draft a second one.
+   - CAL'S ESSAY IS ANSWERED. He read "The Siren's Song" and wrote back at 13:22
+     on 27 Aug, and told Cal he is set up to record with the founder of Cape
+     Town's ketamine clinic — a lead that exists nowhere else yet.
+   - THERE IS ONLY ONE GEVITY HUDDLE, Fri 28 Aug 12:00–14:00, still needsAction.
+     The board claimed it was booked twice, Thursday and Friday. No Thursday
+     booking exists on either calendar. Corrected 27 Aug.
    - Sat & Sun are off by preference. Don't propose work there, and don't ask
      whether they're really off.
    - MagicMonday bending for a podcast guest is a deliberate trade, not a failure.
@@ -549,6 +563,18 @@ THE COLD PITCH HAS SEVEN BEATS AND HE NEVER REORDERS THEM:
      them."
   7. Place, window, offer. Then "Dreaming Big," — full name plus YNB Ventures
      LLC if they don't know him, just "YNB" if they do.
+A FOLLOW-UP IS NOT THE SEVEN-BEAT PITCH. Observed 27 Aug on the Joe Hudson
+thread, where he took a draft of mine and made it his in four minutes. The shape:
+greeting first, no cold open. Then the reason for writing as news, not as an ask
+("because I got some crazy news to share:"). Then the roster, refreshed, each name
+still carrying its occupational twist. ONE line in bold, and it names the person,
+not the show. Then the deeper-layer questions in italics, carried over from the
+original pitch almost word for word — he does not rewrite them. Then the window,
+"I'll come to wherever whenever it'd suit best", and "It would be a genuine
+honour." Signs off "Dreaming Big," + first name only, because they have met the
+full signature already. He also cuts: guests whose episode has not shipped, and
+any parenthetical aside written for a different recipient.
+
 GREETINGS GO BY CLOSENESS, NOT LANGUAGE. Cheers [Name] is the default (EN,
 cold to warm). Howdy [Name] for warm service relationships. Hey [Name] for
 German and for slightly irritated. Servus [Name]! for German mates. Hey ihr
