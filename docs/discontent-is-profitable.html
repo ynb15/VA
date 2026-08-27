@@ -1,0 +1,388 @@
+<title>Discontent Is Profitable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=Courier+Prime:wght@400;700&display=swap">
+
+<style>
+:root{
+  --ground:#14110F;
+  --panel:#1C1815;
+  --raised:#221D19;
+  --rule:#302923;
+  --ink:#F1EBE4;
+  --second:#A89D93;
+  --muted:#6E655D;
+  --ember:#D4703A;
+  --ember-wash:#D4703A1A;
+  --machine:#6E8496;
+  --machine-wash:#6E84961A;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --ground:#F4F0EB;
+    --panel:#FFFFFF;
+    --raised:#EDE7E0;
+    --rule:#DAD2C8;
+    --ink:#191512;
+    --second:#5C534B;
+    --muted:#8A8078;
+    --ember:#B0521E;
+    --ember-wash:#B0521E14;
+    --machine:#4C6274;
+    --machine-wash:#4C627414;
+  }
+}
+:root[data-theme="light"]{
+  --ground:#F4F0EB;
+  --panel:#FFFFFF;
+  --raised:#EDE7E0;
+  --rule:#DAD2C8;
+  --ink:#191512;
+  --second:#5C534B;
+  --muted:#8A8078;
+  --ember:#B0521E;
+  --ember-wash:#B0521E14;
+  --machine:#4C6274;
+  --machine-wash:#4C627414;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:"Spectral",Georgia,serif;font-weight:300;
+  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px;margin:0 auto;padding:clamp(30px,5vw,76px) clamp(18px,4vw,48px) 110px}
+
+.lbl{
+  font-family:"Courier Prime",ui-monospace,monospace;
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ember);margin:0
+}
+
+/* masthead */
+.mast{padding-bottom:30px;border-bottom:1px solid var(--rule)}
+h1{
+  font-family:"Bodoni Moda",Didot,Georgia,serif;font-weight:700;
+  font-size:clamp(44px,10vw,116px);line-height:.92;letter-spacing:-.02em;
+  margin:22px 0 0;text-wrap:balance
+}
+h1 em{font-style:italic;font-weight:400;color:var(--ember)}
+.deck{
+  font-size:clamp(17px,2.1vw,21px);line-height:1.55;color:var(--second);
+  max-width:60ch;margin:22px 0 0;font-weight:300
+}
+.meta{
+  font-family:"Courier Prime",ui-monospace,monospace;font-size:11.5px;
+  color:var(--muted);margin:26px 0 0;display:flex;flex-wrap:wrap;gap:6px 28px;line-height:1.7
+}
+
+section{margin-top:clamp(52px,7vw,96px)}
+h2{
+  font-family:"Bodoni Moda",Didot,Georgia,serif;font-weight:700;
+  font-size:clamp(28px,4vw,42px);line-height:1.1;letter-spacing:-.015em;
+  margin:10px 0 8px;text-wrap:balance
+}
+.sub{color:var(--second);max-width:64ch;margin:0 0 34px;font-size:16.5px}
+
+/* movements — the anatomy of a piece */
+.mv{display:grid;grid-template-columns:minmax(0,1fr);gap:0;border-top:1px solid var(--rule)}
+.move{
+  display:grid;grid-template-columns:60px minmax(0,1fr);gap:0 26px;
+  padding:26px 0;border-bottom:1px solid var(--rule)
+}
+.num{
+  font-family:"Bodoni Moda",Didot,serif;font-size:34px;line-height:1;
+  color:var(--ember);font-weight:400;font-style:italic;padding-top:2px
+}
+.move h3{
+  font-family:"Spectral",Georgia,serif;font-weight:600;font-size:19px;
+  margin:0 0 12px;letter-spacing:-.005em
+}
+.quote{
+  font-family:"Spectral",Georgia,serif;font-style:italic;font-weight:400;
+  font-size:19px;line-height:1.5;color:var(--ink);
+  border-left:2px solid var(--ember);padding-left:18px;margin:0 0 12px
+}
+.gloss{color:var(--second);font-size:16px;margin:0;max-width:62ch}
+.gloss b{color:var(--ink);font-weight:600}
+.src{
+  font-family:"Courier Prime",ui-monospace,monospace;font-size:11px;
+  color:var(--muted);letter-spacing:.04em;margin-top:8px;display:block
+}
+
+/* territories */
+.terr{display:grid;grid-template-columns:1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media(min-width:720px){.terr{grid-template-columns:1fr 1fr}}
+.t{background:var(--panel);padding:26px 26px 24px}
+.t .lbl{color:var(--machine)}
+.t h3{
+  font-family:"Bodoni Moda",Didot,serif;font-weight:700;font-size:23px;
+  margin:12px 0 10px;line-height:1.15
+}
+.t p{margin:0 0 14px;font-size:15.5px;color:var(--second)}
+.t ul{margin:0;padding-left:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.t li{
+  font-family:"Courier Prime",ui-monospace,monospace;font-size:11px;
+  color:var(--muted);border:1px solid var(--rule);padding:3px 8px;white-space:nowrap
+}
+
+/* big pull */
+.thesis{
+  margin:0;padding:clamp(28px,5vw,52px);background:var(--ember-wash);
+  border-top:2px solid var(--ember);border-bottom:1px solid var(--rule)
+}
+.thesis p{
+  font-family:"Bodoni Moda",Didot,serif;font-size:clamp(24px,4.2vw,42px);
+  line-height:1.16;margin:0;font-weight:400;text-wrap:balance
+}
+.thesis .who{
+  font-family:"Courier Prime",ui-monospace,monospace;font-size:11px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ember);margin:20px 0 0
+}
+
+/* devices */
+.dev{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--rule)}
+.d{display:grid;grid-template-columns:170px minmax(0,1fr);gap:0 28px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.d .name{font-family:"Courier Prime",ui-monospace,monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);padding-top:4px}
+.d .ex{font-family:"Spectral",Georgia,serif;font-size:17px;margin:0 0 8px;font-style:italic}
+.d .why{color:var(--second);font-size:15px;margin:0}
+@media(max-width:640px){.d{grid-template-columns:1fr;gap:8px}.d .name{padding-top:0}}
+
+/* pipeline */
+.pipe{border:1px solid var(--rule);background:var(--panel)}
+.prow{display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+@media(min-width:720px){.prow{grid-template-columns:1.1fr 1fr}}
+.prow > div{padding:24px 26px}
+.prow .left{border-bottom:1px solid var(--rule)}
+@media(min-width:720px){.prow .left{border-bottom:none;border-right:1px solid var(--rule)}}
+.stat{font-family:"Bodoni Moda",Didot,serif;font-size:52px;line-height:1;color:var(--ember);font-variant-numeric:tabular-nums}
+.statl{font-family:"Courier Prime",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+
+.note{border-left:2px solid var(--machine);background:var(--machine-wash);padding:20px 24px;margin-top:30px}
+.note p{margin:0;font-size:15.5px;color:var(--second)}
+.note b{color:var(--ink);font-weight:600}
+
+footer{
+  margin-top:86px;padding-top:22px;border-top:1px solid var(--rule);
+  font-family:"Courier Prime",ui-monospace,monospace;font-size:11px;
+  color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between
+}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="lbl">Content-Analyse · 20 Essays aus deinem Drive</p>
+  <h1>Discontent<br>Is <em>Profitable</em></h1>
+  <p class="deck">Dein eigener Satz aus „I Quit". Er ist die These unter allem, was du schreibst — und der Grund, warum deine Essays funktionieren: Du greifst die Optimierungsindustrie an und warst selbst darin.</p>
+  <p class="meta">
+    <span>Quelle: Drive-Ordner „YNB Substack"</span>
+    <span>00–09 plus 11 unnummerierte</span>
+    <span>Dez 2025 – 25. Aug 2026</span>
+  </p>
+</header>
+
+<div class="thesis" style="margin-top:52px">
+  <p>„Wir sind dazu verpflichtet, uns mangelhaft zu fühlen. <em>Discontent is profitable.</em> Es hält die Räder am Laufen."</p>
+  <p class="who">I Quit — A Homage to The Boring Virtue of Contentment</p>
+</div>
+
+<section>
+  <h2>Fünf Bewegungen, in fast jedem Stück</h2>
+  <p class="sub">Ich habe drei fertige Essays vollständig gelesen — „I Quit", „Why Boys Need To Break Up With Their Mothers", „The Craziest Therapist Alive". Sie behandeln völlig verschiedene Themen und laufen trotzdem durch dieselben fünf Bewegungen. Nummeriert, weil sie eine Reihenfolge sind.</p>
+
+  <div class="mv">
+
+    <div class="move">
+      <div class="num">I</div>
+      <div>
+        <h3>Weit weg anfangen</h3>
+        <p class="quote">„Vor Tausenden von Jahren, in einer Region zwischen zwei Flüssen…"</p>
+        <p class="gloss">Nie mit dir. Nie mit einer These. Du steigst ein bei einem Wort („Contentment – a word so rare…"), einem Datum („January 2023, the bottom point of my life"), oder viertausend Jahren Abstand. Der Leser muss erst reisen, bevor er ankommt.<span class="src">Tiamat / Mesopotamien · Why Boys Need To Break Up</span></p>
+      </div>
+    </div>
+
+    <div class="move">
+      <div class="num">II</div>
+      <div>
+        <h3>Die Diagnose in drei Schlägen</h3>
+        <p class="quote">„Burned out. Bankrupt. Deeply depressed."</p>
+        <p class="gloss">Dein Signatur-Rhythmus. Drei Fragmente, kein Verb, fett gesetzt. Kommt in jedem Text mindestens einmal: <b>„77 years old. Therapist. Yogi. Raver. Rebel."</b> — <b>„More output. More speed. More experiences."</b> Du diagnostizierst nie in Sätzen, du diagnostizierst in Schlägen.<span class="src">The Craziest Therapist Alive</span></p>
+      </div>
+    </div>
+
+    <div class="move">
+      <div class="num">III</div>
+      <div>
+        <h3>Das Geständnis — und das ist der Motor</h3>
+        <p class="quote">„I used to pull the strings behind the scenes. As a marketer, I employed every psychological trick in the book to sell people all kinds of pseudospiritual bullshit."</p>
+        <p class="gloss">Das ist die Stelle, an der dein Schreiben sich von jedem anderen Meaning-Newsletter trennt. Du kritisierst die Branche nicht von außen. Du hast die Funnels geschrieben. <b>Erst nach dem Schuldeingeständnis darfst du anklagen</b> — und der Leser lässt es dir durchgehen, weil du dich zuerst selbst drangenommen hast.<span class="src">I Quit</span></p>
+      </div>
+    </div>
+
+    <div class="move">
+      <div class="num">IV</div>
+      <div>
+        <h3>Die Frage, kursiv und fett, allein auf einer Zeile</h3>
+        <p class="quote">„What if the real flex isn't in how much you have – but how little you crave?"</p>
+        <p class="gloss">Jeder Essay dreht sich um eine einzige Frage, die du nicht beantwortest, sondern hinstellst. Typografisch immer gleich behandelt: eigene Zeile, kursiv, fett. Der Leser soll dort anhalten.<span class="src">I Quit</span></p>
+      </div>
+    </div>
+
+    <div class="move">
+      <div class="num">V</div>
+      <div>
+        <h3>Ausatmen, nicht auflösen</h3>
+        <p class="quote">„P.S. Alright folks, after writing this essay, I'm off to make myself a sexy-ass cup of coffee. […] Just a normal f*cking coffee."</p>
+        <p class="gloss">Du endest nie mit einem Fazit und nie mit einem Call-to-Action. Du endest mit einer kleinen, körperlichen Handlung — Kaffee kochen, „Happy 77th, Rob. Thank you for staying." Der Schluss ist immer wärmer und konkreter als der Text davor.<span class="src">I Quit · The Craziest Therapist Alive</span></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Fünf Reviere, und alle handeln vom selben</h2>
+  <p class="sub">Zwanzig Dokumente lassen sich sauber in fünf Cluster sortieren. Jedes ist eine Variation derselben These: Mehr ist nicht die Antwort — und ich weiß es, weil ich dir das Mehr verkauft habe.</p>
+  <div class="terr">
+
+    <div class="t">
+      <p class="lbl">Revier 01</p>
+      <h3>Männer, Väter, das Fehlen</h3>
+      <p>Dein dichtestes Feld und das persönlichste. Mythos als Werkzeug: Tiamat, Hänsel und Gretel, die Odyssee — um über Ablösung, Überbehütung und Vaterlosigkeit zu schreiben, ohne therapeutisch zu klingen.</p>
+      <ul><li>Why Boys Need To Break Up</li><li>The Crisis of Men</li><li>Fatherless</li><li>The Porn Pandemic</li></ul>
+    </div>
+
+    <div class="t">
+      <p class="lbl">Revier 02</p>
+      <h3>Die Branche, von innen</h3>
+      <p>Der Whistleblower-Modus. Funnels, Gurus, Monk Mode, Hormozi und Robbins. Nur du kannst diese Texte schreiben, weil du die Copy geliefert hast, die du jetzt sezierst.</p>
+      <ul><li>I Quit</li><li>Gurus don't exist</li><li>The Dark Side of Monk Mode</li><li>The Wolf of Copywriting</li><li>Hormozi/Robbins</li></ul>
+    </div>
+
+    <div class="t">
+      <p class="lbl">Revier 03</p>
+      <h3>Porträts lebender Menschen</h3>
+      <p>Deine stärkste Form — und du weißt es selbst: „The Craziest Therapist Alive" ist der Text, den du bei Rosedale Press eingereicht hast. Hier verschwindest du und lässt jemand anderen das Subjekt sein. Genau das, was der Podcast auch tut.</p>
+      <ul><li>The Craziest Therapist Alive</li><li>Feynman's Love Letter</li><li>Mark Manson</li><li>Nelson's Drift</li><li>AfrikaBurn</li></ul>
+    </div>
+
+    <div class="t">
+      <p class="lbl">Revier 04</p>
+      <h3>Sinn und sein Ausbleiben</h3>
+      <p>Das Dach über allem. Hier laufen Podcast und Substack unter demselben Titel — dieselbe Frage, zwei Oberflächen.</p>
+      <ul><li>The Meaning Crisis</li><li>In Times of Meaninglessness</li><li>Life Is A Game</li><li>Shadow Artists</li></ul>
+    </div>
+
+    <div class="t">
+      <p class="lbl">Revier 05</p>
+      <h3>Langsamkeit gegen Optimierung</h3>
+      <p>Der ruhigste Cluster und der am wenigsten ausgeschriebene. Fast alles hier ist noch Skizze — drei Kilobyte, ein paar Zeilen, ein Zitat.</p>
+      <ul><li>The Art of Living Slowly</li><li>Roadtrip/Offline</li><li>Play</li><li>AI won't kill you</li><li>1.000 Podcasts</li><li>The Lost Art of Traveling</li></ul>
+    </div>
+
+    <div class="t" style="background:var(--raised)">
+      <p class="lbl" style="color:var(--ember)">Der gemeinsame Nenner</p>
+      <h3>Du schreibst gegen Optimierung — aus dem Inneren der Optimierungsindustrie</h3>
+      <p>Das ist keine Themensammlung, das ist eine Position. Und sie ist verteidigbar, weil sie biografisch gedeckt ist. Kein anderer in diesem Feld kann Schritt 1 bis 5 eines Funnels aufschreiben, weil er sie selbst gebaut hat.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Dein Werkzeugkasten</h2>
+  <p class="sub">Wiederkehrende formale Griffe. Sie sind so konsistent, dass sie als Stilsignatur durchgehen.</p>
+  <div class="dev">
+
+    <div class="d">
+      <div class="name">Spott-Versalien</div>
+      <div>
+        <p class="ex">pRoDuCtIvE · FuNNeLs · LiFe CoAcHiNg · eNeRgY eXcHaNgE</p>
+        <p class="why">Nur für das, was du verachtest. Ein typografisches Augenrollen — und es ersetzt einen ganzen Absatz Polemik.</p>
+      </div>
+    </div>
+
+    <div class="d">
+      <div class="name">Zentriertes Zitatfeld</div>
+      <div>
+        <p class="ex">„Yes, humans are full of shit – and they are also full of love."</p>
+        <p class="why">Ein Satz pro Essay bekommt eine eigene, mittige Tabelle. Immer der Satz, der überleben soll, wenn der Leser alles andere vergisst.</p>
+      </div>
+    </div>
+
+    <div class="d">
+      <div class="name">Hoch neben tief</div>
+      <div>
+        <p class="ex">Tiamat neben Tinder · Jung neben Hafermilch · Neumann neben Bora Bora</p>
+        <p class="why">Du stellst 4.000 Jahre alte Mythologie direkt neben die Kaffeebestellung. Das ist der Trick, der deine Essays gleichzeitig ernst und lesbar macht.</p>
+      </div>
+    </div>
+
+    <div class="d">
+      <div class="name">Der satirische Funnel</div>
+      <div>
+        <p class="ex">Step 1: $997. Step 2: $5.000. […] Step 5: Pilze mit Richard Branson.</p>
+        <p class="why">Nummerierte Eskalation als Waffe. Am Ende steht immer ein absurdes, aber wahres Detail — „(Yes. This is a real-life experience of mine…)".</p>
+      </div>
+    </div>
+
+    <div class="d">
+      <div class="name">Deine Quellen</div>
+      <div>
+        <p class="ex">Jung · Erich Neumann · Jordan Peterson · Chris Williamson · Mythos · dein eigenes Leben</p>
+        <p class="why">Immer dieselbe Mischung: ein Tiefenpsychologe, ein zeitgenössischer Podcaster, ein Mythos, eine eigene Narbe. Nie Studien, nie Statistik.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Wie du tatsächlich arbeitest</h2>
+  <p class="sub">Das Interessanteste steht ganz unten in deinen Dokumenten.</p>
+
+  <div class="pipe">
+    <div class="prow">
+      <div class="left">
+        <p class="lbl">Der Braindump</p>
+        <h3 style="font-family:'Bodoni Moda',serif;font-size:24px;margin:12px 0 12px;line-height:1.2">Jedes fertige Dokument hat unten einen Rohhaufen — und du löschst ihn nie.</h3>
+        <p style="color:var(--second);font-size:15.5px;margin:0">Zitatfetzen, deutsche Notizen mitten im englischen Text, Quellenlinks, halbe Sätze, Danksagungen an Freunde („Joshua: Danke für die Inspo bre"). Darüber wächst dann die saubere Fassung. Du schreibst von unten nach oben. Das ist kein Chaos, das ist deine Methode — und sie ist in <b>jedem</b> Dokument identisch.</p>
+      </div>
+      <div>
+        <p class="lbl">Der Zustand des Ordners</p>
+        <div style="display:flex;gap:34px;flex-wrap:wrap;margin-top:16px">
+          <div><div class="stat">10</div><div class="statl">nummeriert, 00–09</div></div>
+          <div><div class="stat">11</div><div class="statl">unnummeriert</div></div>
+          <div><div class="stat">6</div><div class="statl">unter 7 KB — Skizzen</div></div>
+        </div>
+        <p style="color:var(--second);font-size:15px;margin:22px 0 0">Die nummerierte Serie lief Januar bis Juli. Danach hört das Nummerieren auf. Zuletzt angefasst: „The Porn Pandemic" am 25. August — und dafür steht am Sonntag ein YouTube-Dreh im Kalender. Essay und Video entstehen als Paar.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <p><b>Eine Sache lasse ich bewusst aus.</b> Im Ordner liegt ein unfertiges Stück über Vaterlosigkeit, dessen Braindump sehr persönliche Dinge über deine Familie enthält. Ich habe es gelesen, um dein Themenfeld zu verstehen, und zitiere daraus nichts. Wenn du willst, dass ich damit arbeite, sag es mir — von allein fasse ich es nicht an.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Woran ich mich ab jetzt halte</h2>
+  <p class="sub">Wenn ich dir einen Essay-Entwurf, ein Outline oder eine Überschrift hinlege.</p>
+  <div class="dev">
+    <div class="d"><div class="name">Einstieg</div><div><p class="why" style="font-size:16px;color:var(--ink)">Weit weg beginnen — ein Wort, ein Datum, ein Mythos. Nie mit dir und nie mit der These.</p></div></div>
+    <div class="d"><div class="name">Titel</div><div><p class="why" style="font-size:16px;color:var(--ink)">Drei Etagen: kurzer Haken, These, dann eine Unterzeile mit konkreten Substantiven, die neugierig macht („Über Sir Richard Branson, Magic Mushrooms und Contentment").</p></div></div>
+    <div class="d"><div class="name">Das Geständnis</div><div><p class="why" style="font-size:16px;color:var(--ink)">Wenn der Text jemanden angreift, kommt vorher deine eigene Beteiligung. Ohne die trägt der Text nicht.</p></div></div>
+    <div class="d"><div class="name">Rhythmus</div><div><p class="why" style="font-size:16px;color:var(--ink)">Dreier-Fragmente für Diagnosen. Eine kursiv-fette Frage, allein auf einer Zeile. Ein zentriertes Zitat pro Stück.</p></div></div>
+    <div class="d"><div class="name">Schluss</div><div><p class="why" style="font-size:16px;color:var(--ink)">Ausatmen, nicht zusammenfassen. Eine kleine körperliche Handlung. Nie ein Call-to-Action.</p></div></div>
+    <div class="d"><div class="name">Und nie</div><div><p class="why" style="font-size:16px;color:var(--ink)">Studien, Statistik, Listicles, „5 Lessons I Learned". Deine Belege sind Mythos und Narbe.</p></div></div>
+  </div>
+</section>
+
+<footer>
+  <span>Erstellt 27.08.2026 · aus 20 Dokumenten im Ordner „YNB Substack"</span>
+  <span>Substack.com selbst ist aus dieser Umgebung nicht erreichbar</span>
+</footer>
+
+</div>

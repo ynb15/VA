@@ -487,6 +487,48 @@ don't rewire it.
 Rejected by name: warm cream paper grounds, terracotta, purple-blue gradients,
 emoji section markers, rounded cards with accent rails, everything centred.
 
+═══ HIS ESSAYS — SUBSTACK ═══
+Analysed 27 Aug on his request. SUBSTACK.COM IS BLOCKED BY THIS CONTAINER'S
+EGRESS PROXY — profile, archive and subdomain all refused. Do not retry; work
+from the Drive corpus instead. Full analysis:
+https://claude.ai/code/artifact/ae8c4ab5-a454-471f-892d-e5f611ff7b64
+THE CORPUS lives in Drive, folder "YNB Substack" (1zd-wlZ8YW7FnB7u_F6FeaU2NIdCYw75C),
+with "YNB Substack: 2026" (1gOkHqjZz8SMk4HvT45P4BdFSzjZ24oYL) inside it, plus
+subfolders Feedback, Welcome, Trolling, Value. Ten numbered pieces 00-09 written
+Jan-Jul, eleven unnumbered, six of them under 7 KB and still sketches. Last
+touched: "The Porn Pandemic", 25 Aug — and the YouTube shoot for it is Sun 30
+Aug, so essay and video are made as a pair.
+FIVE MOVEMENTS, in nearly every finished piece:
+  1. Start far away — a word, a date, four thousand years. Never with himself,
+     never with the thesis.
+  2. Diagnosis in three beats, no verb, bold: "Burned out. Bankrupt. Deeply
+     depressed." / "77 years old. Therapist. Yogi. Raver. Rebel."
+  3. THE CONFESSION, and it is the engine: he names his own complicity before
+     he attacks anyone. "I used to pull the strings behind the scenes." Without
+     it the piece does not carry.
+  4. One question per essay, italic and bold, alone on its line, unanswered.
+  5. Exhale, don't resolve. A small physical act — making coffee, "Happy 77th,
+     Rob." Never a conclusion, never a call to action.
+FIVE TERRITORIES: men/fathers/absence; the industry seen from inside; portraits
+of living people; meaning and its absence; slowness against optimisation. All
+five are one position — HE WRITES AGAINST OPTIMISATION FROM INSIDE THE
+OPTIMISATION INDUSTRY, and it is defensible because it is biographical.
+HIS STRONGEST FORM IS THE PORTRAIT, and he knows it: "The Craziest Therapist
+Alive" is what he submitted to Rosedale Press. It is also the mode where he
+disappears and lets someone else be the subject — the same thing the podcast does.
+DEVICES: mocking caps for what he despises (pRoDuCtIvE, FuNNeLs, eNeRgY
+eXcHaNgE); one centred quote-table per essay for the line that must survive;
+high next to low (Tiamat beside Tinder, Jung beside oat milk); the satirical
+numbered funnel ending in a true absurd detail. Sources are Jung, Neumann,
+Peterson, Chris Williamson, myth and his own scars — never studies, never
+statistics, never listicles.
+HIS METHOD: every finished document carries a "Braindump" at the bottom that he
+never deletes — quote fragments, German notes inside English text, thanks to
+friends. The clean version grows above it. He writes bottom-up.
+HANDLE WITH CARE: the unfinished "Fatherless" piece has a braindump containing
+very personal family material. It was read to understand the territory and is
+not quoted anywhere. Do not use it, or refer to its content, unless he raises it.
+
 ═══ HIS VOICE, WHEN DRAFTING FOR HIM ═══
 Built 27 Aug from 30+ of his own sent threads, both languages, Mar-Aug 2026.
 Full document: https://claude.ai/code/artifact/9e287c5f-82af-4c56-9ff4-ca798ba31776
