@@ -501,6 +501,53 @@ don't rewire it.
 Rejected by name: warm cream paper grounds, terracotta, purple-blue gradients,
 emoji section markers, rounded cards with accent rails, everything centred.
 
+═══ HIS OUTREACH DOC — READ IT BEFORE WRITING ANY PITCH ═══
+"YNB Podcast: Outreach", Google Doc 1R11m4Lt81v3YO0bKuyNybKUZQ_THgREEoiYzYA_eOVg.
+~80 finished pitches, alphabetical by guest. He pointed me to it on 27 Aug after
+three failed drafts, because I was inventing his credentials instead of using
+his. NEVER DRAFT A PITCH WITHOUT PULLING THE NEAREST TWO OR THREE FROM THIS DOC
+FIRST. The men's-work ones are Boysen Hodgson, John Wineland, Johnny Cole, David
+Sutcliffe, Adam Jackson, Cal Callahan.
+
+HIS ACTUAL MEN'S-WORK CREDENTIALS, verbatim from that doc — never paraphrase,
+never invent around them:
+  - "Men's work has been at the center of my life for years: life-changing
+    immersions with *Sacred Sons* and *ManKindProject*, my own brotherhood
+    *Brothers Rising* in Cape Town and now on the mic."
+  - He went through the NWT (New Warrior Training) — as of that draft, 3 months
+    prior. Also "a life-changing immersion with Peter last year in Cape Town."
+  - "I grew up without a dad, without any real male role models" — and the turn:
+    "men were the last place I'd have looked for anything sacred, until a circle
+    of them finally held me…"
+  - He published a 2.5h conversation with Craig Makhosi, one of MKP's leaders in
+    South Africa, and one with his 77 y/o therapist and techno icon Rob Bennett.
+  - The proof link he drops: [*Snippet: Forget The Manosphere – This Is Real
+    Men's Work*](https://youtu.be/W15kCW9OHI0?si=Gs98iJyf8fnpW6WU)
+  - The disclaimer beat for this world: "With you, I'm not interested in another
+    'what is men's work' 101."
+  - Elsewhere he also writes plainly about growing up with violence at home. That
+    is HIS to deploy about himself; never write it for him unprompted.
+
+TWO COLD-OPEN SHAPES, both fully italic, both ending on an ellipsis:
+  A. THE HARDER THING. Name what they built, then the harder turn they made.
+     "You grew up in a house where being a man meant fists and fear. Most men who
+     come from that carry it forward. You did the harder thing and turned toward
+     it…" The "most men…" clause is the engine.
+  B. THEIR OWN LINE. Their quote in bold italic, then his reflection in italic.
+     Used for Adam Jackson and Peter Crone.
+
+THE REFERRAL OPENER, when someone sent him: "I'm writing straight off a call
+with Boysen Hodgson who told me I had to reach out to you asap. So I spent the
+last few hours deep in your story, and I was shaken by how much of it mirrors
+mine."
+
+THE CURRENT BEAT 7, as of the newest pitches: "I just landed in Austin coming
+all the way from South Africa and I'll be in Boulder next month, then San
+Francisco invited to the Burning Man HQ to do a podcast with their CEO. If
+there's any chance our paths cross while I'm in the US and you've got an hour or
+two for a conversation that matters across borders – I'd be honored to make it
+happen."
+
 ═══ HIS ESSAYS — SUBSTACK ═══
 Analysed 27 Aug on his request. SUBSTACK.COM IS BLOCKED BY THIS CONTAINER'S
 EGRESS PROXY — profile, archive and subdomain all refused. Do not retry; work

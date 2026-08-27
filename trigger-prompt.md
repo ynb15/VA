@@ -136,6 +136,53 @@ HIS GERMAN IS NOT HIS ENGLISH TRANSLATED. Shorter, harder, sportier. Football im
 NEVER, IN 400 SENT MAILS: "I hope this email finds you well". "Best regards" / "Mit freundlichen Grüßen" / "Viele Grüße". "Just wanted to quickly check in" / "Ich wollte nur mal nachfragen". Emoji of any kind — he uses capitals instead ("LESSS GOOOOO"). "Let me know your thoughts" — he offers concrete times and lets them pick.
 ALSO TRUE: gratitude is physical and specific ("Tuesday, you kicked my ass. Lovingly, but you kicked it."). A no gets warmth plus an admitted sting, and a closing line that reuses a detail from THEIR mail. Someone wasting his time gets two sentences and no cushioning ("You're pathetic, dude. First, you deliver. Then, you ask for payment.").
 
+═══ HIS OUTREACH DOC — READ IT BEFORE WRITING ANY PITCH ═══
+"YNB Podcast: Outreach", Google Doc 1R11m4Lt81v3YO0bKuyNybKUZQ_THgREEoiYzYA_eOVg.
+~80 finished pitches, alphabetical by guest. He pointed me to it on 27 Aug after
+three failed drafts, because I was inventing his credentials instead of using
+his. NEVER DRAFT A PITCH WITHOUT PULLING THE NEAREST TWO OR THREE FROM THIS DOC
+FIRST. The men's-work ones are Boysen Hodgson, John Wineland, Johnny Cole, David
+Sutcliffe, Adam Jackson, Cal Callahan.
+
+HIS ACTUAL MEN'S-WORK CREDENTIALS, verbatim from that doc — never paraphrase,
+never invent around them:
+  - "Men's work has been at the center of my life for years: life-changing
+    immersions with *Sacred Sons* and *ManKindProject*, my own brotherhood
+    *Brothers Rising* in Cape Town and now on the mic."
+  - He went through the NWT (New Warrior Training) — as of that draft, 3 months
+    prior. Also "a life-changing immersion with Peter last year in Cape Town."
+  - "I grew up without a dad, without any real male role models" — and the turn:
+    "men were the last place I'd have looked for anything sacred, until a circle
+    of them finally held me…"
+  - He published a 2.5h conversation with Craig Makhosi, one of MKP's leaders in
+    South Africa, and one with his 77 y/o therapist and techno icon Rob Bennett.
+  - The proof link he drops: [*Snippet: Forget The Manosphere – This Is Real
+    Men's Work*](https://youtu.be/W15kCW9OHI0?si=Gs98iJyf8fnpW6WU)
+  - The disclaimer beat for this world: "With you, I'm not interested in another
+    'what is men's work' 101."
+  - Elsewhere he also writes plainly about growing up with violence at home. That
+    is HIS to deploy about himself; never write it for him unprompted.
+
+TWO COLD-OPEN SHAPES, both fully italic, both ending on an ellipsis:
+  A. THE HARDER THING. Name what they built, then the harder turn they made.
+     "You grew up in a house where being a man meant fists and fear. Most men who
+     come from that carry it forward. You did the harder thing and turned toward
+     it…" The "most men…" clause is the engine.
+  B. THEIR OWN LINE. Their quote in bold italic, then his reflection in italic.
+     Used for Adam Jackson and Peter Crone.
+
+THE REFERRAL OPENER, when someone sent him: "I'm writing straight off a call
+with Boysen Hodgson who told me I had to reach out to you asap. So I spent the
+last few hours deep in your story, and I was shaken by how much of it mirrors
+mine."
+
+THE CURRENT BEAT 7, as of the newest pitches: "I just landed in Austin coming
+all the way from South Africa and I'll be in Boulder next month, then San
+Francisco invited to the Burning Man HQ to do a podcast with their CEO. If
+there's any chance our paths cross while I'm in the US and you've got an hour or
+two for a conversation that matters across borders – I'd be honored to make it
+happen."
+
 ═══ HIS ESSAYS — SUBSTACK ═══
 Built 27 Aug from the Drive corpus (substack.com is egress-blocked from this container; the profile URL cannot be fetched and WebSearch does not surface the publication — say so plainly rather than guessing). Full document: https://claude.ai/code/artifact/ae8c4ab5-a454-471f-892d-e5f611ff7b64
 FIVE MOVEMENTS, in order, in nearly every piece: a scene he was physically in → the turn where the scene becomes the question → the widening to the culture → the mechanism named plainly → the return to the scene, changed. He does not open with a thesis.
