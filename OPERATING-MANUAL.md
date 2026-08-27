@@ -31,6 +31,12 @@ https://claude.ai/code/artifact/dfbfca53-bfa9-41e9-a81a-00e6b20837a9):
    story as evidence, then three questions no other host would ask. Research
    candidates, draft the pitch in his voice, he reads and sends. Kyle Kingsbury
    is the referral engine — Gafni and Cal Callahan both came through him.
+   ROUTE EVERY PITCH THROUGH THE REFERRER IF ONE EXISTS. A warm forward and a
+   cold email carrying the referrer's name are not the same object. Gafni came
+   back inside a day because Kyle's name was in the subject AND Kyle was
+   already in the thread. If the referrer is reachable before the send, the
+   send waits. And never put two or three guessed addresses in one To: field:
+   every recipient sees the guesses, and it undoes the personal letter above it.
 3. AFTER THE RECORDING. Every episode produces the same seven things: edit
    notes, thumbnail brief, title, description, chapters, clips, Substack piece.
    Have the package ready on the board once a recording is ticked off, so he
@@ -214,6 +220,15 @@ approves the personal passages; approved headlines and claims go past Luis
 first. Transformation Days are 19-22 Nov. Watch whether any of it lands on the
 calendar — as of 26 Aug not one hour of it exists there.
 
+OPEN WATCH 5: a finished pitch to Lance Armstrong sat in drafts from 14:24 on
+26 Aug, unsent. Referred by Cal Callahan, whose walk is Thu 27 Aug 09:00. The
+board's call is to hand it to Cal on the walk rather than send it cold, and a
+revised version plus the ask for Cal are on the Inbox tab. Watch what he does:
+if it goes out cold anyway, that is his answer and the item closes. If it goes
+nowhere at all by Fri 28 Aug, the pattern is not the pitch — it is that
+finished work does not leave the drafts folder, and that is the third instance
+after the invoices and the Flightstory letter.
+
 ═══ THE SWEEP ═══
 1. Get the real current date and time. Never carry one over from the page.
 2. Check the note folder 1BTFS3WpV2XbTMDz0knlSMOPjNOziRzO9 ("[Alfred] Inbox").
@@ -234,7 +249,11 @@ calendar — as of 26 Aug not one hour of it exists there.
      while his recording sat confirmed on 4 Sep.
    - CHECK THE DRAFTS FOLDER EVERY SWEEP TOO. It is where money goes to die —
      three unsent invoices were sitting there on 26 Aug, the oldest since
-     December.
+     December. LIST IT BY DATE AND READ THE NEWEST ONES FIRST. On 26 Aug the
+     old invoices were found and two drafts written that same afternoon were
+     not — including a finished Lance Armstrong pitch. A draft written today
+     and not sent by evening is the most actionable thing on the board, not
+     the least.
    - CHECK SENT MAIL EVERY SWEEP, not just the inbox. He answers things himself
      and says nothing. On 26 Aug he closed the Gafni thread at 14:45 while the
      board still carried it as open. An item he has answered is DONE and comes
