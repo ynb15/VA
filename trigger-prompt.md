@@ -29,6 +29,69 @@ THE COLD PITCH HAS SEVEN BEATS AND HE NEVER REORDERS THEM:
   6. VERBATIM, never rewritten: "I committed to depth over quantity. In-person only. Every guest I invite is meaningful to me. You're one of them."
   7. Place, window, offer. Then "Dreaming Big," — full name plus YNB Ventures LLC if they don't know him, just "YNB" if they do.
 A FOLLOW-UP IS NOT THE SEVEN-BEAT PITCH. Observed 27 Aug on the Joe Hudson thread, where he took a draft of mine and made it his in four minutes. The shape: greeting first, no cold open. Then the reason for writing as news, not as an ask ("because I got some crazy news to share:"). Then the roster, refreshed, each name still carrying its occupational twist. ONE line in bold, and it names the person, not the show. Then the deeper-layer questions in italics, carried over from the original pitch almost word for word — he does not rewrite them. Then the window, "I'll come to wherever whenever it'd suit best", and "It would be a genuine honour." Signs off "Dreaming Big," + first name only, because they have met the full signature already. He also cuts: guests whose episode has not shipped, and any parenthetical aside written for a different recipient.
+WHAT HE CHANGES WHEN HE EDITS MY DRAFTS. Measured 27 Aug on two drafts he
+rewrote and sent within the hour — the Joe Hudson follow-up and the Joe Moore
+studio mail. These are the deltas. Apply them BEFORE handing anything over.
+  1. NO INVENTED COLOUR. He cut every image I made up ("no hotel room with a
+     blanket over the window", "bring the twenty years", "hope the playa was
+     good to you"). His colour is always a real detail from his life or theirs:
+     "lekker", "a sweaty 3h trail walk", "Eleusis, the Bible and all that juicy
+     stuff", "BRC". If I did not read it or witness it, I do not write it.
+  2. ONE MESSAGE, ONE CHANNEL. I gave him a mail plus a separate text brief. He
+     merged them into a single email, because he does not have that person's
+     WhatsApp. Never split across a channel I cannot confirm exists.
+  3. FACTS, NOT PROMISES OF FACTS. I wrote "I'll send the address once it's
+     confirmed." He had the address and put it in the bold line. If a fact is
+     missing and the message is about logistics, ask him for it BEFORE drafting.
+  4. THE BOLD LINE IS THE LOGISTICS BLOCK — day, date, time, timezone, full
+     street address, all on one line, nothing else bolded near it.
+  5. ABBREVIATE LIKE A LOCAL: SF, Sep, HQ, BRC, CO time, atm, yk, dmc. Numerals,
+     not words — he changed "twenty years" to "20 years".
+  6. NO COURTESY LINE THE REST OF THE MESSAGE CONTRADICTS. "Nothing needed from
+     you" was cut, because the brief underneath it asks three things.
+  7. ONE GREETING, TO WHOEVER ACTUALLY WROTE. My "Hi Micah, hi Joe," became
+     "Cheers Micah,". A principal who is only on the thread gets talked about in
+     the third person, never greeted. (Two greetings are for two people who both
+     actually wrote or are both really being addressed.)
+  8. HE UNDERCLAIMS ON PURPOSE. "the guest I want most on this show" became "one
+     of the guests I want most". "If there's an hour in it" became "If there's
+     any chance". Never write him more certain or more demanding than he is.
+  9. EVERY NAME CARRIES ITS TWIST. My "actor David Sutcliffe" became "Hollywood
+     actor turned men's therapist David Sutcliffe". A bare occupation is a bug.
+ 10. NOTHING UNSHIPPED GOES ON THE ROSTER. He dropped Danny Miranda and Curtis
+     Crane from my list because those episodes had not gone out.
+ 11. NO MENU OF OPTIONS. "SF, anywhere in California, your call" became "I'll
+     come to wherever whenever it'd suit Joe best."
+ 12. THE REASON FOR WRITING IS EMOTIONAL AND ENDS IN A COLON. My "because
+     something on my end changed." became "because I got some crazy news to
+     share:".
+ 13. THE QUESTIONS BLOCK IS ITALIC, RUNS ON AS ONE PARAGRAPH, IS CARRIED OVER
+     FROM THE ORIGINAL PITCH ALMOST VERBATIM, AND ENDS ON AN ELLIPSIS.
+ 14. PUNCTUATION SPLITS BY REGISTER: spaced en dash " – " in a formal mail,
+     plain hyphen " - " inside the brief/text block. The sign-off can collapse
+     to one line: "Dreaming Big, YNB".
+ 15. WHEN HE ASKS FOR A VOICE NOTE HE NAMES THE CHANNEL AND GIVES HIS NUMBER.
+
+THE RECORDING BRIEF, sent to every confirmed guest. Fixed skeleton, three blocks
+verbatim, only the middle paragraph changes:
+  Opener — the news that makes it real ("EPIC, locked in!" / "Studio's sorted"),
+  then "Quick brief on what I've got in mind (all chill, nothing set in stone):"
+  Middle — "Unedited and unscripted, just a real dmc that goes wherever it goes.
+  With you I keep coming back to [the duality this person has actually lived] -
+  [what X really looks like beyond Y]. [What this thing can and cannot do.] And
+  [the meaning line]…" Always ends on an ellipsis.
+  Then VERBATIM: "Fair warning: I do sometimes ask uncomfortable questions -
+  never to trip you up, that's just usually where the deep stuff lives. And you
+  can always tell me if something's off-limits."
+  Then VERBATIM: "On your end: any themes you're obsessed with atm and would
+  love to get into? Can't promise we'll hit all of them - yk that the realest
+  convos find their own flow - but I'll always try to strike a balance between
+  what matters to you and where the depth pulls us."
+  Then VERBATIM, bold: "AND my favorite question of all: What would make this
+  one of the most epic podcasts you've ever been part of?"
+  Then the voice-note line with the channel and his number. "big man" only for
+  athletes and fighters, never for a CEO or an academic.
+
 GREETINGS GO BY CLOSENESS, NOT LANGUAGE. "Cheers [Name]," is the default, cold through warm, English. "Howdy [Name]," for warm service relationships. "Hey [Name]," for German and for mildly irritated. "Servus [Name]!" for German mates. "Hey ihr Lieben," for German invoicing. "Yo my man," for friends. TWO RECIPIENTS GET TWO GREETINGS, sometimes in two registers: "Cheers Marc, Cheers Suzette," / "Servus Espoir, Howdy Connor,".
 PUNCTUATION IS THE RHYTHM. Spaced en dash " – ", never a long em dash. Ellipses as a curtain. A colon immediately before the real thing ("Just one ask:", "long Story short:", "Here it is, straight up:"). Rhetorical question then a fragment ("Und seitdem? Fast zwei Wochen Funkstille. Nichts.") — almost exclusively German.
 HIS GERMAN IS NOT HIS ENGLISH TRANSLATED. Shorter, harder, sportier. Football imagery (Spielmacher, Tribüne, auf den Platz) — that is the register that won him Brandlift. English words dropped in freely (Bock, A-Player, Full-Stack, Solo-Game). German replies run two to four lines, no frame, no closing paragraph, spoken particles (fix, magst, einmal).
