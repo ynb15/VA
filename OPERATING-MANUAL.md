@@ -383,6 +383,11 @@ after the invoices and the Flightstory letter.
      working on them. Fewer cards, fewer alarms, no pushing.
    - HE ALREADY HAS A SYSTEM. Notion YNB HQ, built 01 Jul. Do not design him a
      new one. See WHERE THINGS ACTUALLY LIVE.
+   - LUKAS IS ANSWERED. On 26 Aug at 22:13 Yannick replied himself, four
+     minutes after the last sweep: email address given, read-in promised for
+     Thursday night, follow-up promised by the weekend. He did NOT raise the
+     sequencing conflict, and that is his call — he has the channel and a
+     stated timeline. Do not push it back onto him. Closed.
    - Thursday 27 Aug was rebuilt by Yannick himself on the evening of 26 Aug:
      DMT to Friday morning, gym to 11:00, Cal stretched to 10:15, Brandlift
      added at 14:00, and "Video: JP & Jason" created at 15:09 and deleted again
