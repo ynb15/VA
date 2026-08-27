@@ -410,6 +410,11 @@ after the invoices and the Flightstory letter.
      pitch subject line was "[Via Isabelle Semler]". Forwarding her a
      Brandlift document is not a confidentiality question, and raising it as
      one on 26 Aug was officious. Do not do it again.
+   - THE LUKAS READ-IN IS BOOKED. He moved the Brandlift block from Thu 27 Aug
+     14:45 to 20:30-21:30 the same evening, at 16:02, which means the call did
+     NOT happen that afternoon — the board said it did and that was wrong.
+     Week-36 Brandlift work now has real calendar time for the first time. Do not
+     ask again whether it will land on the calendar.
    - LUKAS IS ANSWERED. On 26 Aug at 22:13 Yannick replied himself, four
      minutes after the last sweep: email address given, read-in promised for
      Thursday night, follow-up promised by the weekend. He did NOT raise the
