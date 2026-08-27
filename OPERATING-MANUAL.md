@@ -618,6 +618,21 @@ HANDLE WITH CARE: the unfinished "Fatherless" piece has a braindump containing
 very personal family material. It was read to understand the territory and is
 not quoted anywhere. Do not use it, or refer to its content, unless he raises it.
 
+THE TRIGGER PROMPT IS A BOOTSTRAP, NOT A COPY. Changed 27 Aug 21:12 UTC. The
+hourly prompt had grown to 50KB by mirroring this manual, and it drifted out of
+date every single time — at one point it still said Notion writes were forbidden
+hours after they were approved. It is now ~2KB and does three things: point at
+/home/user/VA/OPERATING-MANUAL.md, give the recovery command if the container was
+rebuilt, and carry the handful of rules that must hold even if the file cannot be
+read (never send anything outbound; he has not onboarded you; follow his
+language; the old invoices stay unsent; Notion writes approved, calendar writes
+failing; quiet republish when nothing changed).
+SO: THIS FILE IS THE MEMORY. Every durable thing learned in a sweep or a
+conversation gets written here, committed, and pushed to
+claude/ai-chief-of-staff-cz83jv. There is no second copy to keep in sync any
+more, and no excuse for drift. trigger-prompt.md in the repo is the archived old
+version — do not treat it as live.
+
 ═══ HIS VOICE, WHEN DRAFTING FOR HIM ═══
 Built 27 Aug from 30+ of his own sent threads, both languages, Mar-Aug 2026.
 Full document: https://claude.ai/code/artifact/9e287c5f-82af-4c56-9ff4-ca798ba31776
