@@ -698,6 +698,75 @@ claude/ai-chief-of-staff-cz83jv. There is no second copy to keep in sync any
 more, and no excuse for drift. trigger-prompt.md in the repo is the archived old
 version — do not treat it as live.
 
+═══ THE WEEKLY SENT-MAIL PATTERN PASS — HIS STANDING ORDER, 28 AUG ═══
+"Ich würd dich bitten, dass Du mir einmal wöchentlich meine gesendeten
+E-Mail-Nachrichten durchgehst und dir die Pattern analysis and the learnings
+rausschreibst, damit Du immer weiter optimierst, immer mehr lernst, wie ich
+kommuniziere und das dann auch eigenständig anwenden kannst."
+
+Every Monday, alongside the guest reconciliation:
+  1. Gmail `in:sent newer_than:8d`, read every thread HE wrote in full — not
+     the search previews, which only show the ~5 oldest messages.
+  2. Split by language and by register. His English cold pitch is one
+     instrument; his German working mail is a different one; his German at
+     escalation (Stadtmobil, Hannes) is a third.
+  3. Diff any message where he rewrote a draft of mine against my draft, and
+     record the delta as a rule, not as an anecdote.
+  4. Write findings into voice/german-register.md (German) or the VOICE section
+     of this file (English), commit, push. Never let a finding live only in a
+     chat reply — the chat is gone next week.
+
+THE ROOT CAUSE THIS PASS EXISTS TO FIX: the original voice profile was built
+almost entirely from his English cold pitches — his most composed register —
+and then applied to German working mail, which is a different language of him
+entirely. That is why the Brandlift message took four rounds.
+
+READ voice/german-register.md BEFORE DRAFTING ANYTHING IN GERMAN. It is built
+from his real sent mail and it carries the anreden, the sign-offs, the sentence
+shapes, the length ceiling and the four rules from the Brandlift message.
+
+THE ONE THAT CORRECTS ME: he said "wir sollten auf jeden Fall mit 'ner Frage
+abschließen" — and then his own final version closed with a hope, not a
+question. A question belongs in a mail that opens or pushes something. In a
+mail that TAKES SOMETHING BACK, a question is a second ball the other person
+has to catch on top of the bad news. HIS STATED RULE AND HIS ACTUAL PRACTICE
+CAN DIVERGE. THE PRACTICE IS THE TRUTH. Check the sent folder before treating
+anything he said in passing as a law.
+
+═══ YOUTUBE — HIS SECOND GAME, 28 AUG ═══
+"Ich möchte dich ja auch in meinen Youtube Game mit reinnehmen."
+
+Knowledge base: youtube/README.md. His whole Drive folder tree is mapped there
+along with the scripts that already exist.
+
+THE ACADEMY: he has a membership in Ali Abdaal's YouTube Academy and asked
+whether I can go in and save all the learnings. I CANNOT — it is behind a
+membership login on a course platform, I have no browser session as him, no
+connector, and I never ask for his credentials. Do not fudge this or claim
+partial access.
+
+WHAT WORKS INSTEAD, and it uses machinery that already runs: he drops exports,
+transcripts, screenshots or copied lesson text into the Drive folder
+"[Alfred] Inbox" (1BTFS3WpV2XbTMDz0knlSMOPjNOziRzO9). Every sweep already reads
+and clears that folder. Distil whatever lands there into youtube/README.md
+under Learnings, then delete the raw file like any other note. Most course
+platforms let members download transcripts and handouts — one bulk download
+into that folder unlocks the whole thing in a single move.
+
+Ali Abdaal's public material (videos, blog, Feel-Good Productivity) needs no
+login and can be mined any time. Offered; awaiting his word before spending a
+sweep on it.
+
+═══ JAMIE ELKON — LEAD FROM THE CAL CALLAHAN THREAD ═══
+Founder of Cape Town's ketamine clinic. Yannick is set up to record with him
+on returning to South Africa. Surfaced 27 Aug in his own reply to Cal. Not in
+the Databank yet — put it there on the next Notion pass, Location South Africa,
+status matching whatever the thread actually shows.
+
+Same thread, worth knowing before it gets quoted back at anyone: Cal wrote that
+he "pulled together the ketamine-induced psychosis piece through my Claude
+code" — that essay was AI-assisted, not straight from his own pen.
+
 ═══ HIS VOICE, WHEN DRAFTING FOR HIM ═══
 Built 27 Aug from 30+ of his own sent threads, both languages, Mar-Aug 2026.
 Full document: https://claude.ai/code/artifact/9e287c5f-82af-4c56-9ff4-ca798ba31776
