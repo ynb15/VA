@@ -138,29 +138,47 @@ competing with unwritten work. Propose less, and say what it displaces.
 ALSO: every confirmed recording carries prep he wants to do, and his pattern is
 two prep blocks per guest. Two guests in a week is not two blocks, it is six.
 
-═══ THE ROUTE, AUG-OCT 2026 ═══
-Given by him 27 Aug so Alfred can plan against it. Cities are firm, exact dates
-mostly are not — ask for dates per leg, do not invent them.
-  Now - 13 Sep   AUSTIN. Recording in person only, Just Push Record or Media
-                 Pouch. Kyle Kingsbury Mon 31 Aug, Matt Defina Fri 4 Sep, Logan
-                 Gonzalez Wed 9 Sep (still a "?"), Brandlift workshop Thu 10 Sep
-                 19:00.
-  13 Sep         ROADTRIP BEGINS — New Mexico, Arizona, Colorado.
-                 ALBUQUERQUE: one podcast.
-                 SCOTTSDALE: one podcast. NOTE: Ian Gardner offered Scottsdale
-                 against a 15 Sep Austin slot — that is no longer a compromise,
-                 it is on the route.
-                 BOULDER: at least two. Joe Moore is locked for Tue 22 Sep
-                 10:00-12:00 CO time at Let's Do Podcast, 2027 Broadway.
-  End of Sep     SAN FRANCISCO. Burning Man HQ, recording with their CEO
-                 (Marian Goodell, already "In Conversation" in the Databank).
-                 The five Bay Area prospects researched 27 Aug hang off this leg:
-                 Erik Davis, James Fadiman, Françoise Bourzat, Stanislav Grof,
-                 The Last Mile. Dean Karnazes is Bay Area too.
-  Early-mid Oct  BACK TO SOUTH AFRICA.
-Every pitch's beat 7 should use the leg that fits the recipient's city, and every
-new guest west of Texas should be checked against this route before anything is
-proposed.
+PULL THE WHOLE TRAVEL HORIZON, NOT ONE WEEK. On 27 Aug he asked "Ian Gardner
+ist doch schon lange bestätigt?" — and he was right. Ian confirmed on 13 Aug
+("Cool, I'm flexible on both days, 17th is better. Let's do it!"), dinner and
+recording both accepted, both on the calendar since 18/19 Aug. I had been
+carrying him for days as "Scottsdale vs 15 Sep Austin, his move, chase Thursday
+if he's quiet", and an hour earlier I had told him Scottsdale "stops being a
+compromise and becomes the route" as though it were news. It was booked before
+any of that.
+THE ROOT CAUSE: I only ever queried the calendar a week out. The entire roadtrip
+was already in it. Same shape as the Matt Defina error — a horizon that stops too
+early, then reasoning from the gap. So: when travel or anything beyond next week
+is in play, pull the FULL horizon to the end of the trip, on both calendars.
+AND: a confirmation lives in the MAIL before it reaches the CALENDAR, and in the
+calendar long before it reaches the DATABANK. Check all three, newest first,
+before calling anyone open, silent or undecided.
+
+═══ THE SEPTEMBER TRIP — ALREADY BOOKED, NOT A PLAN ═══
+Verified against both calendars 27 Aug. Everything below has both sides accepted
+unless marked otherwise.
+  Mon 31 Aug  Kyle Kingsbury, Austin, 10:00–12:00. Gonzo 12:45.
+  Fri 4 Sep   Matt Defina, Just Push Record Austin, 09:00–11:00.
+  Sat 5 Sep   JPR studio held 10:00–12:00 with NO GUEST attached — ask.
+  Fri 11 Sep  Logan Gonzalez, JPR Austin, 10:00–11:30, still a "?". He moved it
+              off Wed 9 Sep himself minutes after the board flagged the YT
+              Academy clash.
+  Thu 10 Sep  Brandlift Live-Workshop 1, 19:00. He flies out on the 13th.
+  Tue 15 Sep  RICK STRASSMAN, Albuquerque, 11:30–13:30. Accepted.
+  Wed 16 Sep  Dinner with Ian Gardner, Scottsdale, 20:00. He asked for the
+              invite and accepted it.
+  Thu 17 Sep  IAN GARDNER, Just Push Record PHX, 112 N Central Ave #M18,
+              Phoenix AZ, 12:00–14:00 CT. Studio booked and confirmed.
+  Sun 20 Sep  Whitney Wheelock? (high) 10:00–12:00 — she is already marked
+              Recorded in the Databank, so this is either a second sitting or a
+              stale hold. Ask.
+  Mon 21 Sep  YouTube: Tantra (Filmen) 12:30–14:30.
+  Tue 22 Sep  JOE MOORE, Let's Do Podcast, 2027 Broadway Boulder, 10:00–12:00 CO
+              time. Accepted.
+  End of Sep  San Francisco — Burning Man HQ, recording with their CEO. NO DATES
+              YET. This is the one leg with nothing on the calendar, and the five
+              Bay Area prospects plus Dean Karnazes all hang off it.
+  Early-mid Oct  Back to South Africa.
 
 ═══ HOW MY WEEK ACTUALLY RUNS ═══
 MONDAY — MagicMonday. Sacred deep work. Offline most of the day, 4–5h on an essay,
