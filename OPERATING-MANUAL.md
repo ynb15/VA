@@ -730,6 +730,22 @@ honour." Signs off "Dreaming Big," + first name only, because they have met the
 full signature already. He also cuts: guests whose episode has not shipped, and
 any parenthetical aside written for a different recipient.
 
+HIS GERMAN BUSINESS MAIL WANTS AIR AND A STORY, not just brevity. Refined
+27 Aug after the short version came back as "liest sich noch nicht ganz nach
+mir": short does not mean clipped. Give the reader the WHY as a small story he
+actually lived — where he is going, what it is for, what is at stake — then the
+turn. Roughly twelve to sixteen lines for something substantial.
+THE FOOTBALL REGISTER BELONGS TO BRANDLIFT. Spielmacher, auf den Platz, zwei
+Plätze gleichzeitig — that is the language that won him this client in the first
+place, so it is at home in any mail to them.
+AND REUSE HIS OWN WORDS BACK. He closed his yes to Lukas with "Ich hab Bock!" —
+echoing that in the message that walks it back ("Bock hab ich nach wie vor, nur
+eben ab Oktober") ties the two together and is exactly his habit of closing on a
+detail from earlier in the thread.
+ALSO: he often does not want concrete dates in a message like this. "Im
+September durch fünf Bundesstaaten" carries more than "ab dem 13." and commits
+him to nothing.
+
 HE DOES NOT WRITE ROMANE. Corrected 27 Aug: "das ist viel zu lang, viel zu viel
 zu lang. Ich möchte, dass Du dir abspeicherst, dass ich keine solche Romane
 schreibe." His German mails run TWO TO FOUR LINES for a reply and rarely more
