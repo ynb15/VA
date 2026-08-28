@@ -296,14 +296,14 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede">Luis answered at 02:46. They are not walking away — they're asking for a smaller version.</p>
-    <p class="tiny">"Wäre großartig, wenn wir zumindest mit einem Ausschnitt starten könnten - zB. Email only - von dort aus können wir dann nach und nach aufbauen. Meinst du das ist denkbar?" Plus: let's talk soon. The thing you were afraid of — that they'd drop the whole thing — did not happen.</p>
+    <p class="lede">You rebuilt the afternoon at 12:51 and the Gevity huddle is off the calendar. That collision is closed.</p>
+    <p class="tiny">The Meaning Crisis stretched to 10:30–13:00, the Fundraiser shoot moved to 13:30–14:30, and a new half hour went in behind it: Chris Will, Video, 14:30–15:00. Then Substack: Post at 15:30, Gym at 16:00, The Big Leap at 17:30, Padel at 20:00.</p>
   </div>
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>One question decides the Brandlift reply.</h2>
-    <p class="why">Does "Email only" fit inside a September that's already five states — or is it the same commitment in a smaller box? That's yours to answer, not mine. Say which way and the reply is written in five minutes. Correcting myself: YT Academy is off today's calendar, so the Gevity huddle at 12:00 only lands on the Fundraiser shoot at 11:45, not on two things.</p>
+    <h2>Brandlift is the one still waiting on you.</h2>
+    <p class="why">Luis asked this morning whether an Email-only slice is thinkable. Does that fit a September of five states, or is it the same commitment in a smaller box? Say which way and the reply is written. Everything else today is placed.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
@@ -360,11 +360,11 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="age">13:04</span>
     </li>
 
-    <li class="row s-crit">
-      <input type="checkbox" data-item="fri-huddle" aria-label="Friday huddle collision">
-      <span class="row-b"><span class="who">Friday 12:00</span> — the Gevity huddle lands on two blocks
-        <span class="row-sub">Invite arrived yesterday, still needsAction. It sits over the Fundraiser shoot 11:45–12:45 and YT Academy 13:00–14:30. Correcting myself: I had it down as booked twice, Thursday and Friday. There is only the Friday one on the calendar. Two collisions, one answer.</span></span>
-      <span class="age hot">Fri</span>
+    <li class="row s-ok">
+      <input type="checkbox" data-item="fri-huddle" checked aria-label="Friday huddle cleared">
+      <span class="row-b"><span class="who">Gevity huddle</span> — off the calendar, 12:51
+        <span class="row-sub">It sat unanswered from Wednesday over the Fundraiser shoot. You cleared it and rebuilt the afternoon around it in the same pass.</span></span>
+      <span class="age">done</span>
     </li>
 
     <li class="row s-warn">
@@ -492,12 +492,13 @@ details.cleared[open] summary::after{content:" ▴";}
 
   <div class="eyebrow">Days worth watching</div>
   <ul class="rows">
-    <li class="row s-crit">
-      <input type="checkbox" data-item="fri-huddle" aria-label="Friday huddle">
-      <span class="row-b"><span class="who">Friday 28th</span> — Gevity booked the room again, this time over your work
-        <span class="row-sub">Huddle Room 1, 12:00–14:00, invited yesterday and still unanswered. Underneath it: YouTube: Fundraiser 11:45–12:45 and YT Academy 13:00–14:30. This is not the stack you cleared on Monday — it is new, and it came from outside. Correcting myself: there is no matching Thursday booking on the calendar, so this is one invite, not two.</span></span>
-      <span class="age hot">Fri</span>
+    <li class="row s-ok">
+      <input type="checkbox" data-item="fri-huddle-cal" checked aria-label="Friday cleared">
+      <span class="row-b"><span class="who">Friday 28th</span> — cleared, and the afternoon rebuilt around it
+        <span class="row-sub">Gevity's Huddle Room 1 invite is gone. The Meaning Crisis now runs 10:30–13:00, the Fundraiser shoot 13:30–14:30, then Chris Will: Video 14:30–15:00. Correcting myself again: YT Academy was already off Friday before any of this.</span></span>
+      <span class="age">done</span>
     </li>
+
     <li class="row s-warn">
       <input type="checkbox" data-item="thu-cal-dmt" aria-label="Thursday overlap">
       <span class="row-b"><span class="who">Friday 28th</span> — The Big Leap moved here from Thursday, and Padel is already at 20:00
@@ -766,9 +767,9 @@ Yannick</div>
     ["thu",16,17,"body","Gym (Viktor)"],["thu",18,19.5,"people","Logan Gonzalez"],
 
     ["fri",7.5,8.5,"anchor","Morning Routine"],["fri",9,9.5,"make","Reading: DMT"],
-    ["fri",9.5,11,"make","Substack: The Meaning Crisis"],
-    ["fri",11.75,12.75,"make","YouTube: Fundraiser"],["fri",12,14,"people","Gevity Huddle Room"],
-    ["fri",13,14.5,"make","YT Academy"],
+    ["fri",10.5,13,"make","Substack: The Meaning Crisis"],
+    ["fri",13.5,14.5,"make","YouTube: Fundraiser"],["fri",14.5,15,"people","Chris Will: Video"],
+    
     ["fri",15.5,16,"make","Substack: Post"],["fri",16,17,"body","Gym"],
     ["fri",17.5,19,"people","The Big Leap"],["fri",20,21,"body","Padel"],
 
@@ -960,7 +961,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-28T12:12:00-05:00");
+  var SWEPT = new Date("2026-08-28T13:12:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
