@@ -733,6 +733,12 @@ has to catch on top of the bad news. HIS STATED RULE AND HIS ACTUAL PRACTICE
 CAN DIVERGE. THE PRACTICE IS THE TRUTH. Check the sent folder before treating
 anything he said in passing as a law.
 
+═══ CHECK FOR A ROW BEFORE ADDING ONE ═══
+On 28 Aug I added a Sunday-collision row that already existed under a different
+data-item id, so the board carried the same fact twice. Before writing a new row,
+grep the board for the people and the date already in it. Duplicated rows read as
+two problems and cost him twice the attention — the opposite of the job.
+
 ═══ BRANDLIFT — WHERE IT ACTUALLY STANDS, 28 AUG ═══
 He sent the September withdrawal at 01:13 Austin. Luis answered at 02:46,
 cc Lukas: takes the point, but asks to start with a slice instead — "zumindest
