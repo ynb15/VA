@@ -730,6 +730,25 @@ honour." Signs off "Dreaming Big," + first name only, because they have met the
 full signature already. He also cuts: guests whose episode has not shipped, and
 any parenthetical aside written for a different recipient.
 
+HE DOES NOT WRITE ROMANE. Corrected 27 Aug: "das ist viel zu lang, viel zu viel
+zu lang. Ich möchte, dass Du dir abspeicherst, dass ich keine solche Romane
+schreibe." His German mails run TWO TO FOUR LINES for a reply and rarely more
+than ten for something substantial. No section headings, no bolded subheads, no
+three-paragraph build-up. If a draft has more than one bold line or reads like a
+memo, it is already wrong. The cold pitch is the ONE long form he uses — every
+other message is short. Write the whole thing, then cut it in half.
+
+WHO HOLDS THE LEVER MATTERS. Same correction: "lass uns das Ganze weniger direkt
+formulieren, als wär ich der Typ, der am Hebel sitzt… ich hab die Befürchtung,
+dass sie sagen, wenn der Typ jetzt im September nicht am Start ist, lassen wir
+das Ganze komplett." When he is stepping back from something he still wants,
+the message must not read as a verdict handed down. Announcements
+("Ich steige aus") become proposals ("Wär das für euch eine Option?"). And the
+close asks a question rather than closing the file — "Wie seht ihr das?" — so
+the other side stays in the conversation instead of being handed an exit.
+ALWAYS ASK WHAT HE FEARS THE READER WILL DO, not just what he wants to say. That
+fear is usually the real brief.
+
 THE COLD OPEN CONTAINS NOTHING ABOUT HIM. Corrected 27 Aug: "für gewöhnlich
 erzähl ich im Intro gar nichts, auch gar nichts von mir." Check the doc and it
 holds — Boysen, Wineland and Johnny Cole are 100% recipient, and the only "I" is
