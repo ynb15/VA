@@ -120,6 +120,48 @@ truth, Alfred keeps it current every sweep, and the HTML board shrinks to "what
 needs you today" with links into Notion. DO NOT WRITE TO HIS NOTION UNTIL HE
 SAYS YES. Silence is not a yes.
 
+═══ HOW TO READ HIS CALENDAR — THE ONE THING I GOT WRONG ═══
+Told to me 27 Aug 21:15, after I computed his Brandlift capacity from calendar
+gaps: "ich plane meine Woche meistens on the go. Die Termine, die eingetragen
+sind, das sind in der Regel die festen Termine mit anderen Personen… die freien
+Tage, die Du da siehst, die sind einfach noch nicht gefüllt."
+THE CALENDAR IS NOT A MODEL OF HIS CAPACITY. It holds fixed commitments with
+OTHER PEOPLE. An empty Tuesday is an unplanned Tuesday, not a free one. He has
+been running 40 to 60 hours a week for weeks, and most of that never appears as
+an event.
+SO: NEVER COMPUTE AVAILABLE CAPACITY FROM CALENDAR GAPS. Committed hours are a
+floor, never a total, and the board should say so. When the question is "does he
+have room for X", the honest answer is built from what X actually costs, what is
+already promised, and what he says his load feels like — not from white space.
+The corollary: a proposal that lands in a gap is not landing in free time, it is
+competing with unwritten work. Propose less, and say what it displaces.
+ALSO: every confirmed recording carries prep he wants to do, and his pattern is
+two prep blocks per guest. Two guests in a week is not two blocks, it is six.
+
+═══ THE ROUTE, AUG-OCT 2026 ═══
+Given by him 27 Aug so Alfred can plan against it. Cities are firm, exact dates
+mostly are not — ask for dates per leg, do not invent them.
+  Now - 13 Sep   AUSTIN. Recording in person only, Just Push Record or Media
+                 Pouch. Kyle Kingsbury Mon 31 Aug, Matt Defina Fri 4 Sep, Logan
+                 Gonzalez Wed 9 Sep (still a "?"), Brandlift workshop Thu 10 Sep
+                 19:00.
+  13 Sep         ROADTRIP BEGINS — New Mexico, Arizona, Colorado.
+                 ALBUQUERQUE: one podcast.
+                 SCOTTSDALE: one podcast. NOTE: Ian Gardner offered Scottsdale
+                 against a 15 Sep Austin slot — that is no longer a compromise,
+                 it is on the route.
+                 BOULDER: at least two. Joe Moore is locked for Tue 22 Sep
+                 10:00-12:00 CO time at Let's Do Podcast, 2027 Broadway.
+  End of Sep     SAN FRANCISCO. Burning Man HQ, recording with their CEO
+                 (Marian Goodell, already "In Conversation" in the Databank).
+                 The five Bay Area prospects researched 27 Aug hang off this leg:
+                 Erik Davis, James Fadiman, Françoise Bourzat, Stanislav Grof,
+                 The Last Mile. Dean Karnazes is Bay Area too.
+  Early-mid Oct  BACK TO SOUTH AFRICA.
+Every pitch's beat 7 should use the leg that fits the recipient's city, and every
+new guest west of Texas should be checked against this route before anything is
+proposed.
+
 ═══ HOW MY WEEK ACTUALLY RUNS ═══
 MONDAY — MagicMonday. Sacred deep work. Offline most of the day, 4–5h on an essay,
   no meetings, no distraction. This is the ideal. Right now it bends for podcast
