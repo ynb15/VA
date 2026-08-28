@@ -733,6 +733,25 @@ has to catch on top of the bad news. HIS STATED RULE AND HIS ACTUAL PRACTICE
 CAN DIVERGE. THE PRACTICE IS THE TRUTH. Check the sent folder before treating
 anything he said in passing as a law.
 
+═══ BRANDLIFT — WHERE IT ACTUALLY STANDS, 28 AUG ═══
+He sent the September withdrawal at 01:13 Austin. Luis answered at 02:46,
+cc Lukas: takes the point, but asks to start with a slice instead — "zumindest
+mit einem Ausschnitt starten könnten - zB. Email only - von dort aus können wir
+dann nach und nach aufbauen. Meinst du das ist denkbar?" — plus a short call.
+
+THE FEAR DID NOT MATERIALISE. He was worried that withdrawing from September
+would make them drop the whole thing. They want him; they want less of him.
+
+The open question is HIS, not mine: does Email-only fit inside a September
+that is already five states, or is it the same commitment in a smaller box.
+Do not answer it for him. Surface it, offer the draft, wait.
+
+Overnight either side of his message: Lukas shared the folder
+"1_Webinar_2026_09_10" (00:17 Austin), Luis shared BUCH_Gottfried_PRINT_low.pdf
+(01:39). Onboarding continued regardless.
+
+The fee is still unknown. It is the number that decides October.
+
 ═══ YOUTUBE — HIS SECOND GAME, 28 AUG ═══
 "Ich möchte dich ja auch in meinen Youtube Game mit reinnehmen."
 
