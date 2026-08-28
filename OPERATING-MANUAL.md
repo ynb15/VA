@@ -746,6 +746,14 @@ ALSO: he often does not want concrete dates in a message like this. "Im
 September durch fünf Bundesstaaten" carries more than "ab dem 13." and commits
 him to nothing.
 
+ALWAYS CLOSE ON A QUESTION. Corrected 27 Aug: "wir sollten auf jeden Fall mit
+'ner Frage abschließen." A self-scheduled follow-up ("ich meld mich Anfang
+Oktober") is a fade-out — in his words, "das geht verloren." A question forces a
+reply and keeps him in the conversation. And the question he reaches for puts him
+in SERVICE of the other side, not in negotiation with them: "Was braucht ihr
+jetzt von mir, damit das für euch aufgeht?" Never close on "ich hoffe, das passt"
+— that hands them the role of judging him.
+
 HE DOES NOT WRITE ROMANE. Corrected 27 Aug: "das ist viel zu lang, viel zu viel
 zu lang. Ich möchte, dass Du dir abspeicherst, dass ich keine solche Romane
 schreibe." His German mails run TWO TO FOUR LINES for a reply and rarely more
