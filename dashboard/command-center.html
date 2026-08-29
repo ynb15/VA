@@ -318,11 +318,11 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="age hot">02:46</span>
     </li>
 
-    <li class="row s-warn">
-      <input type="checkbox" data-item="gfm-payouts" aria-label="GoFundMe payouts paused">
-      <span class="row-b"><span class="who">GoFundMe</span> — payouts are paused until you verify, and there's a balance sitting there
-        <span class="row-sub">Two notices this morning, 08:29 and 09:07. The payment processor wants more information to verify you; until then nothing pays out. The hard deadline is far off — 13 April 2027, after which remaining donations may be refunded — so this is blocking, not burning. Separate from the August rewards flag you already cleared with support. You have the Fundraiser block at 11:45 anyway.</span></span>
-      <span class="age">09:07</span>
+    <li class="row s-ok">
+      <input type="checkbox" data-item="gfm-payouts" checked aria-label="GoFundMe routed via Isabelle">
+      <span class="row-b"><span class="who">GoFundMe</span> — you routed round the verification block, 07:19
+        <span class="row-sub">Isabelle joined as co-organizer at 07:19 and accepted as beneficiary two minutes later, so the withdrawal is set up in her name rather than yours. The sign-in alert at 07:47, macOS and Safari, matches you doing exactly that. Nothing left on this unless her setup stalls.</span></span>
+      <span class="age">07:21</span>
     </li>
 
     <li class="row s-wait">
@@ -961,7 +961,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-29T07:12:00-05:00");
+  var SWEPT = new Date("2026-08-29T08:12:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
