@@ -267,6 +267,20 @@ This is the IDEAL. Real life bends it, and that is fine.
 Every list on the board runs in date order, soonest first. Never by severity,
 never by the order you thought of them.
 
+═══ THE ACTUALS LOG NOW HAS TWO HALVES, 28 AUG ═══
+The Google Doc "Alfred — Actuals Log" is still the canonical, shareable record.
+But appending to it means rewriting the entire document — read whole, rebuild
+whole, create a new file with the same title and parent, trash the old one, all
+in one pass or duplicates accumulate. Doing that every single night is expensive
+and every rewrite is a chance to lose the file.
+
+SO: the day-close entry is now written to actuals/YYYY-MM-DD.md in the repo on
+the last sweep of the day — cheap, diffable, backed by git — and the Doc is
+rebuilt on the MONDAY reconciliation pass, folding in that week's entries in
+date order. If a rebuild ever drops content, the repo files are the recovery
+source. actuals/README.md carries the mechanics; the entry format and the
+pattern rule are unchanged.
+
 ═══ THE ACTUALS LOG ═══
 Document: "Alfred — Actuals Log", in the "YNB x Claude" folder
 (1ioemsCTuhs-mdrRMdEWC1CHFzQCdI9dq). Deliberately NOT in the note folder, which
