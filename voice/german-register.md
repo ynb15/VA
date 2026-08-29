@@ -137,3 +137,47 @@ Nachtschicht · asap · notfalls · v.a. · Anyways · Kurzes Lebenszeichen ·
 
 Und wenn er jemanden mag, wird er verspielt:
 > "jedes Jahr ein inneres Blumenpflücken mit dir" (an seinen Steuerberater)
+
+---
+
+## NACHTRAG 29. AUG — EINE REGEL AUS SEINEM ENGLISCHEN, DIE FÜR BEIDE SPRACHEN GILT
+
+Cal Callahan bot ihm die Intro zu Chase Reeves an. Mein Entwurf ging in drei
+Zeilen direkt aufs Ja. Seine eigene Antwort, 42 Minuten später:
+
+> Lekker, Cal!
+>
+> Just got back from another sweaty 3h walk with Sutcliffe, would love to have
+> you with us next weekend if you're keen to carry your body through 100 degrees
+> without any hydration on a Saturday afternoon haha
+>
+> Actually listened to your pod with Chase yesterday and was impressed by the
+> realness and rawness of it once again – especially Chase being so radically
+> honest about his marriage and his family relationships. Also got fascinated by
+> the parallels between him and me: marketing, shadow brotherhood and ofc the
+> deep commitment to men's work.
+>
+> So yeah, would love the intro! Coffee, a walk, a pod, whatever it turns into.
+> Please connect us.
+>
+> Appreciate you,
+> YNB
+
+**Er gibt zuerst, beweist dann Aufmerksamkeit, und fragt erst danach.**
+Drei Bewegungen, immer in dieser Reihenfolge:
+
+1. **Eine Einladung, bevor eine Bitte kommt** — und mit Selbstironie
+   entschärft ("100 degrees without any hydration ... haha").
+2. **Der Beleg, dass er wirklich hingehört hat** — nicht "danke für den
+   Hinweis", sondern: er hat Cals Podcast mit Chase am Vortag gehört und sagt
+   genau, was ihn getroffen hat. Das ist die Währung, nicht die Höflichkeit.
+3. **Erst dann das Ja** — und zwar offen gehalten: "Coffee, a walk, a pod,
+   whatever it turns into." Wieder die Dreierreihe. Dann ein direkter
+   Imperativ: "Please connect us."
+
+MEIN FEHLER, DEN ICH WIEDERHOLE: Meine Entwürfe gehen sofort auf die
+Transaktion. Seine gehen erst durch die Beziehung. Wenn ich für ihn an jemanden
+schreibe, mit dem er eine echte Verbindung hat, muss vor der Bitte etwas
+stehen, das er gibt — und etwas, das beweist, dass er zugehört hat.
+
+Neuer Abschied fürs Archiv: **"Appreciate you, YNB"**.
