@@ -302,8 +302,8 @@ details.cleared[open] summary::after{content:" ▴";}
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Noon is double-booked, and today is marked Rest Day.</h2>
-    <p class="why">Maya &amp; Laura and pickleball with Curtis, Ben, Danny, Ian and Andrew both sit at 12:00. Before that: Reverse Brain Rot at Barton Springs 09:00–11:30, no screens. After: ClassPass 14:45, Artist Date 15:00–17:00, the N26 Bali claim at 15:15, Yoga at 19:00. Seven blocks on a day labelled Rest Day and Silent Day — that's your call, I'm only saying what's on it.</p>
+    <h2>The noon collision is gone. So is most of Sunday.</h2>
+    <p class="why">Correcting myself: Maya &amp; Laura, pickleball and Reverse Brain Rot all came off the calendar overnight. What's left is Gym at 14:00, the N26 Bali claim at 15:15 and Artist Date 17:00–19:00, on a day marked Rest Day and Silent Day. The Danny Miranda podcast still sits on it as an all-day. Nothing here needs you before two.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
@@ -405,11 +405,11 @@ details.cleared[open] summary::after{content:" ▴";}
     </li>
 
 
-    <li class="row s-warn">
-      <input type="checkbox" data-item="sun-maya-pickle" aria-label="Sunday collision">
-      <span class="row-b"><span class="who">Sunday 12:00</span> — Maya &amp; Laura and pickleball are the same hour
-        <span class="row-sub">Both landed on the calendar this afternoon, half an hour apart. Curtis, Ben, Danny, Ian and Andrew are on the pickleball invite; Maya and Laura are not. One of them is getting stood up.</span></span>
-      <span class="age">Sun</span>
+    <li class="row s-ok">
+      <input type="checkbox" data-item="sun-maya-pickle" checked aria-label="Sunday collision gone">
+      <span class="row-b"><span class="who">Sunday 12:00</span> — cleared itself overnight
+        <span class="row-sub">Maya &amp; Laura and the pickleball invite both came off the calendar, along with Reverse Brain Rot at Barton Springs. Nothing to decide.</span></span>
+      <span class="age">done</span>
     </li>
 
     <li class="row s-wait">
@@ -975,7 +975,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-29T22:10:00-05:00");
+  var SWEPT = new Date("2026-08-30T07:12:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
