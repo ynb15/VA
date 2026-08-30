@@ -267,6 +267,19 @@ This is the IDEAL. Real life bends it, and that is fine.
 Every list on the board runs in date order, soonest first. Never by severity,
 never by the order you thought of them.
 
+═══ READ TRASH, AND READ THE TIMEZONE FIELD ═══
+Gmail auto-trashes a calendar invite once the event lands on the calendar, so a
+real booking confirmation can exist with no inbox trace at all. On 29 Aug two
+Boulder studio invites — one of them a paid room for a confirmed guest — were
+only visible because the sweep searched `in:anywhere`. Never sweep with
+`in:inbox` alone.
+
+AND: compare the timeZone field, not the clock time. The studio booked
+11:00 America/Denver; his own event for the same recording says
+11:00 America/Chicago. Same number, one hour apart on the ground. Whenever an
+event sits in a city he is travelling to, check which zone each side wrote it
+in before assuming they agree.
+
 ═══ THE ACTUALS LOG NOW HAS TWO HALVES, 28 AUG ═══
 The Google Doc "Alfred — Actuals Log" is still the canonical, shareable record.
 But appending to it means rewriting the entire document — read whole, rebuild

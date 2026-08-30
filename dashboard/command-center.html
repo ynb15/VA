@@ -302,12 +302,26 @@ details.cleared[open] summary::after{content:" ▴";}
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Chase is Cal's to move now. Gym at 15:00.</h2>
-    <p class="why">"Please connect us" — nothing left on your side until Cal sends it. And the "David Sutcliffe?" block resolved itself: it was another three-hour walk, not a recording. Substack: Post at 16:30 closes the day.</p>
+    <h2>Boulder sent two invites, and one of them is an hour off yours.</h2>
+    <p class="why">Let's Do Podcast booked the room for 22 Sep 11:00–13:00 <em>Denver</em> time. Your own "Man's Search for Meaning: Joe Moore" — the one Joe accepted — is 11:00–13:00 <em>Chicago</em> time, which is 10:00 in Boulder. An hour apart on the ground. My inference from the timezone fields, not something anyone said; you know which time you agreed with Joe. Both invites are still unanswered.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
+
+    <li class="row s-crit">
+      <input type="checkbox" data-item="boulder-tz" aria-label="Boulder timezone mismatch">
+      <span class="row-b"><span class="who">22 Sep, Boulder</span> — the studio's hour and yours don't match
+        <span class="row-sub">Their invite: 11:00–13:00 America/Denver, $250 room rental, arrived 18:15. Your event with Joe: 11:00–13:00 America/Chicago, and Joe has accepted that one. In Boulder local time that is 10:00 against 11:00. Worth one message to the studio or to Joe before it becomes a guest standing in an empty room.</span></span>
+      <span class="age hot">18:15</span>
+    </li>
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="boulder-second" aria-label="Second Boulder booking">
+      <span class="row-b"><span class="who">Let's Do Podcast</span> — a second session the same day you hadn't mentioned
+        <span class="row-sub">"Yannick x Austin", 22 Sep 13:30–14:30 Denver, straight after Joe, with their Denver address on it. Their note: "May be in town for a longer period and want to book in with other pod hosts at our location. Will find out more in coming weeks!" Both invites sit at needsAction.</span></span>
+      <span class="age hot">18:18</span>
+    </li>
 
 
 
@@ -961,7 +975,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-29T18:10:00-05:00");
+  var SWEPT = new Date("2026-08-29T19:12:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
