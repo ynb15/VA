@@ -433,11 +433,11 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="age">Sat</span>
     </li>
 
-    <li class="row s-wait">
-      <input type="checkbox" data-item="mediapouch-hiss" aria-label="Media Pouch hiss">
-      <span class="row-b"><span class="who">Media Pouch</span> — background hiss on the 17 Aug master
-        <span class="row-sub">Theirs to fix. Chase Thursday if it stays quiet.</span></span>
-      <span class="age">—</span>
+    <li class="row s-ok">
+      <input type="checkbox" data-item="mediapouch-hiss" checked aria-label="Media Pouch closed">
+      <span class="row-b"><span class="who">Media Pouch</span> — closed at 15:19, with a free session banked
+        <span class="row-sub">They traced the hiss to a piece of hardware, re-delivered the file and offered a free booking. You took it graciously — "Shit happens. Appreciate the accountability" — and parked the credit for the next guest. That credit is real money; it should get used before you leave Austin.</span></span>
+      <span class="age">done</span>
     </li>
 
     <li class="row s-crit">
@@ -982,7 +982,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-30T15:10:00-05:00");
+  var SWEPT = new Date("2026-08-30T16:11:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

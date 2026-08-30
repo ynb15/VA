@@ -181,3 +181,11 @@ schreibe, mit dem er eine echte Verbindung hat, muss vor der Bitte etwas
 stehen, das er gibt — und etwas, das beweist, dass er zugehört hat.
 
 Neuer Abschied fürs Archiv: **"Appreciate you, YNB"**.
+
+**Weitere Abschiede aus dem Archiv:** `Gg,` (30. Aug, an Media Pouch) ·
+`Appreciate you, YNB` (29. Aug, an Cal).
+
+**Und eine Haltung, die in beiden Sprachen gleich ist:** Wer einen Fehler
+einräumt, bekommt Nachsicht und sonst nichts — keine Belehrung, kein
+Ausnutzen der Lage. *"Shit happens. Appreciate the accountability."* Derselbe
+Reflex wie in der Brandlift-Mail: den Fehler klar benennen, dann nach vorne.
