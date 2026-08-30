@@ -309,6 +309,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-wait">
+      <input type="checkbox" data-item="joe-hudson-micah" aria-label="Micah replied">
+      <span class="row-b"><span class="who">Joe Hudson / AOA</span> — Micah answered in three lines, 11:38
+        <span class="row-sub">"Congrats - I'll ping the team again, and they will reach out if they are feeling its a fit." Read plainly: the same hand-off as July, one step warmer because he now has a reason to congratulate you. It moves to their team, not to Joe. Nothing to send back — a chase this week would spend the goodwill the Burning Man line just bought.</span></span>
+      <span class="age">11:38</span>
+    </li>
+
     <li class="row s-crit">
       <input type="checkbox" data-item="boulder-tz" aria-label="Boulder timezone mismatch">
       <span class="row-b"><span class="who">22 Sep, Boulder</span> — the studio's hour and yours don't match
@@ -975,7 +982,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-30T11:12:00-05:00");
+  var SWEPT = new Date("2026-08-30T12:12:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
