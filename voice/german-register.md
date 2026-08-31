@@ -189,3 +189,42 @@ Neuer Abschied fürs Archiv: **"Appreciate you, YNB"**.
 einräumt, bekommt Nachsicht und sonst nichts — keine Belehrung, kein
 Ausnutzen der Lage. *"Shit happens. Appreciate the accountability."* Derselbe
 Reflex wie in der Brandlift-Mail: den Fehler klar benennen, dann nach vorne.
+
+---
+
+## WOCHEN-PASS 31. AUG — DER FUND, DER ALLES ZUSAMMENZIEHT
+
+Über die ganze Woche gelesen — Brandlift, Cal (zweimal), Media Pouch, Just Push
+Record, Joe Hudson, drei Cold Pitches — steht **derselbe erste Satz** in drei
+verschiedenen Registern:
+
+> "1 Uhr nachts hier in Texas, deshalb mach ich's kurz und ehrlich" (deutsch, Rückzug)
+> "Just got back from another sweaty 3h walk with Sutcliffe" (englisch, Freund)
+> "I just landed in Austin coming all the way from South Africa" (englisch, Cold Pitch)
+
+**Er verortet sich zuerst körperlich. Erst dann kommt die Sache.**
+Nicht als Einleitung, nicht als Höflichkeit — als Standortbestimmung. Der andere
+soll wissen, wo dieser Mensch gerade steht, bevor er hört, was er will.
+
+Ich hatte das dreimal einzeln notiert ("Ort und Uhrzeit als Lizenz für Kürze",
+"erst geben, dann zuhören zeigen, dann fragen"). Es ist eine Bewegung, nicht drei.
+
+**MEINE ENTWÜRFE FANGEN BEIM EMPFÄNGER ODER BEIM ANLIEGEN AN. SEINE FANGEN BEI
+IHM SELBST AN — und zwar bei seinem Körper an einem Ort zu einer Uhrzeit.**
+
+### Und eine Beobachtung zur Antwortzeit
+
+Sie ist zweigipflig, und sie sagt mehr über Priorität als jede Aussage:
+
+| | |
+|---|---|
+| Cals Intro-Angebot | **42 Minuten** |
+| Gafnis Absage | 13 Stunden |
+| Brandlift-Briefing | zugesagt "morgen Nacht", geliefert wurde stattdessen der Rückzug |
+| Media Pouch | 5 Tage |
+| JPR-Logo, je Runde | 3 Tage |
+
+Alles, was mit *Menschen und Beziehungen* zu tun hat, geht in Stunden raus.
+Alles, was *Dienstleister und Abwicklung* ist, in Tagen. Das ist keine
+Nachlässigkeit — das ist eine Rangordnung. Ein unbeantworteter Lieferanten-Thread
+ist bei ihm kein Rückstand, sondern eine Einordnung.

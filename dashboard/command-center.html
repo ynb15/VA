@@ -309,6 +309,20 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-warn">
+      <input type="checkbox" data-item="mountain-time" aria-label="Mountain Time on the road trip">
+      <span class="row-b"><span class="who">The road trip</span> — two recordings sit in Mountain Time, stored like Central
+        <span class="row-sub">Joe Moore, 22 Sep Boulder: the studio booked 11:00 Denver, your entry says 11:00 Chicago. Strassman, 15 Sep Albuquerque: also Mountain Time, and the entry reads 11:30 Chicago — which would be 10:30 on the ground. Same class of error, second instance. Worth checking both against what you actually agreed, not against the clock.</span></span>
+      <span class="age warm">Sep</span>
+    </li>
+
+    <li class="row s-wait">
+      <input type="checkbox" data-item="whitney-contradiction" aria-label="Whitney Wheelock contradiction">
+      <span class="row-b"><span class="who">Whitney Wheelock</span> — Recorded in the Databank, but blocked for 20 Sep
+        <span class="row-sub">"Man's Search for Meaning: Whitney Wheelock? (high)", Sun 20 Sep 10:00–12:00, with your own question mark. One of the two is wrong and I can't tell which from here.</span></span>
+      <span class="age">Sep</span>
+    </li>
+
     <li class="row s-crit">
       <input type="checkbox" data-item="virginactive-pays" aria-label="Virgin Active will pay">
       <span class="row-b"><span class="who">Virgin Active</span> — the insurers approved. They want to pay you back, 02:20
@@ -996,7 +1010,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-31T08:13:00-05:00");
+  var SWEPT = new Date("2026-08-31T08:22:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

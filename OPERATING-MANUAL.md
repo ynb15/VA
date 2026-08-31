@@ -291,19 +291,21 @@ AND: compare the timeZone field, not the clock time. The studio booked
 event sits in a city he is travelling to, check which zone each side wrote it
 in before assuming they agree.
 
-═══ THE ACTUALS LOG NOW HAS TWO HALVES, 28 AUG ═══
-The Google Doc "Alfred — Actuals Log" is still the canonical, shareable record.
-But appending to it means rewriting the entire document — read whole, rebuild
-whole, create a new file with the same title and parent, trash the old one, all
-in one pass or duplicates accumulate. Doing that every single night is expensive
-and every rewrite is a chance to lose the file.
+═══ THE ACTUALS LOG — REPO IS CANONICAL, DRIVE GETS A WEEKLY DOCUMENT ═══
+actuals/YYYY-MM-DD.md in the repo is the log. Written on the last sweep of each
+day, committed, pushed. Verbatim and backed by git history.
 
-SO: the day-close entry is now written to actuals/YYYY-MM-DD.md in the repo on
-the last sweep of the day — cheap, diffable, backed by git — and the Doc is
-rebuilt on the MONDAY reconciliation pass, folding in that week's entries in
-date order. If a rebuild ever drops content, the repo files are the recovery
-source. actuals/README.md carries the mechanics; the entry format and the
-pattern rule are unchanged.
+Drive gets a NEW document each Monday in the folder YNB x Claude
+(1ioemsCTuhs-mdrRMdEWC1CHFzQCdI9dq): a readable digest of the week — what moved,
+what was learned, what stays open — pointing back to the repo for the full text.
+NOTHING IN DRIVE IS EVER OVERWRITTEN OR TRASHED. Each week is its own file and
+the folder reads chronologically.
+
+Correcting myself, 31 Aug: on 28 Aug I designed this as a weekly full rebuild of
+the one Doc — read it whole, recreate it, trash the old. Drive cannot append, so
+that is the only way to edit in place, and it puts history that has no other copy
+at risk every single time. Replaced before it ever ran. actuals/README.md carries
+the mechanics; the entry format and the pattern rule are unchanged.
 
 ═══ THE ACTUALS LOG ═══
 Document: "Alfred — Actuals Log", in the "YNB x Claude" folder
