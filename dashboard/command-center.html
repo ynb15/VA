@@ -310,6 +310,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <ul class="rows" id="today-rows">
 
     <li class="row s-wait">
+      <input type="checkbox" data-item="meet-ken" aria-label="Meet Ken TikTok Live">
+      <span class="row-b"><span class="who">Meet Ken</span> — you booked a TikTok Live for Friday 16:10. Ten minutes.
+        <span class="row-sub">Matt Dalley's slot, Ken Stern, hosted on Dan's channel. It is on the calendar, accepted, Central — and you moved the gym to 15:00 a minute after it landed, so the slot is clear. One thing can't be fixed on Friday at 16:05: it runs on TikTok Live, and the account needs Live access. Open the app, hit the plus, check the word "Live" is there, and go live once for thirty seconds to prove the camera works. The instructions are in <a href="https://docs.google.com/document/d/1vEwRYvWkqiqWXjWKnQMs_nB_4buoGro65TeJ_9ft4cc/edit?usp=sharing">Matt's doc</a>.</span></span>
+      <span class="age hot">16:48</span>
+    </li>
+
+    <li class="row s-wait">
       <input type="checkbox" data-item="fundraiser-live" aria-label="Fundraiser activity">
       <span class="row-b"><span class="who">The fundraiser</span> — a donation and a blocked file, twenty minutes apart
         <span class="row-sub">08:31: Raffael gave $57. 08:52: Christoph Hoffarth is asking for access to "YNB Podcast Fundraiser.mp4" — he can't watch it, which means anyone else you sent it to probably can't either. One permission change may be worth more than the donation.</span></span>
@@ -1017,7 +1024,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-31T16:12:00-05:00");
+  var SWEPT = new Date("2026-08-31T17:11:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
