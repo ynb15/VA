@@ -267,6 +267,17 @@ This is the IDEAL. Real life bends it, and that is fine.
 Every list on the board runs in date order, soonest first. Never by severity,
 never by the order you thought of them.
 
+═══ READ THE DAY'S MAIL AS A SET, NOT A QUEUE ═══
+31 Aug: Virgin Active's insurers approved a refund and asked for a credit card
+to pay onto; three hours later Webflow warned that yannickbernard.com is at
+risk of being unpublished after repeated failed charges on the card on file.
+Separately, each is a small row. Together they are one question — is it the
+same card — and that question is the whole value.
+
+So: before writing rows, look across everything that came in since the last
+sweep and ask what any two of them mean together. A queue-reader files them
+apart and gives him two chores instead of one insight.
+
 ═══ READ TRASH, AND READ THE TIMEZONE FIELD ═══
 Gmail auto-trashes a calendar invite once the event lands on the calendar, so a
 real booking confirmation can exist with no inbox trace at all. On 29 Aug two

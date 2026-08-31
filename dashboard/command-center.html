@@ -309,6 +309,20 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-crit">
+      <input type="checkbox" data-item="virginactive-pays" aria-label="Virgin Active will pay">
+      <span class="row-b"><span class="who">Virgin Active</span> — the insurers approved. They want to pay you back, 02:20
+        <span class="row-sub">Mathew: "I have feedback from our insurers and to get the money paid back into a foreign account will take some time, do you perhaps have a credit card detail that we can use." Three months of chasing since 10 June, and it landed. It needs a reply from you — and card details, so send them the way you'd send anything sensitive, not in a plain mail thread that already has escalations@ on it.</span></span>
+      <span class="age hot">02:20</span>
+    </li>
+
+    <li class="row s-crit">
+      <input type="checkbox" data-item="webflow-billing" aria-label="Webflow billing failed">
+      <span class="row-b"><span class="who">Webflow</span> — yannickbernard.com is at risk of being unpublished, 05:35
+        <span class="row-sub">Repeated failed charges on the card on file. Worth noticing next to the message above: if a card is failing at Webflow, that may be the same card you're about to hand Virgin Active. One check answers both.</span></span>
+      <span class="age hot">05:35</span>
+    </li>
+
     <li class="row s-wait">
       <input type="checkbox" data-item="joe-hudson-micah" aria-label="Micah replied">
       <span class="row-b"><span class="who">Joe Hudson / AOA</span> — Micah answered in three lines, 11:38
@@ -982,7 +996,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-30T22:10:00-05:00");
+  var SWEPT = new Date("2026-08-31T07:12:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
