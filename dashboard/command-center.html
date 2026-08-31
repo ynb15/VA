@@ -309,6 +309,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-wait">
+      <input type="checkbox" data-item="fundraiser-live" aria-label="Fundraiser activity">
+      <span class="row-b"><span class="who">The fundraiser</span> — a donation and a blocked file, twenty minutes apart
+        <span class="row-sub">08:31: Raffael gave $57. 08:52: Christoph Hoffarth is asking for access to "YNB Podcast Fundraiser.mp4" — he can't watch it, which means anyone else you sent it to probably can't either. One permission change may be worth more than the donation.</span></span>
+      <span class="age">08:52</span>
+    </li>
+
     <li class="row s-warn">
       <input type="checkbox" data-item="mountain-time" aria-label="Mountain Time on the road trip">
       <span class="row-b"><span class="who">The road trip</span> — two recordings sit in Mountain Time, stored like Central
@@ -1010,7 +1017,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-08-31T08:22:00-05:00");
+  var SWEPT = new Date("2026-08-31T09:12:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
