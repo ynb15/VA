@@ -228,3 +228,25 @@ Alles, was mit *Menschen und Beziehungen* zu tun hat, geht in Stunden raus.
 Alles, was *Dienstleister und Abwicklung* ist, in Tagen. Das ist keine
 Nachlässigkeit — das ist eine Rangordnung. Ein unbeantworteter Lieferanten-Thread
 ist bei ihm kein Rückstand, sondern eine Einordnung.
+
+## Nachtrag 01.09.2026 — die Latenz-Rangliste hat eine dritte Stufe
+
+Am 31.08. hatte ich notiert: Menschen in Stunden, Lieferanten in Tagen. Zu
+grob. Evan Bryce (Art of Mondays) schrieb am 24. August, er antwortete am
+1. September — acht Tage. Cal bekam 42 Minuten.
+
+Der Unterschied ist nicht Nähe, sondern ob gerade etwas auf dem Spiel steht.
+Cal trug eine Intro. Evan fragte freundlich nach, wie er Jibran kennengelernt
+hat — nichts hängt daran. Also:
+
+- etwas hängt dran → Stunden
+- warm, aber nichts hängt dran → Tage bis Wochen, und er antwortet trotzdem,
+  ausführlich, ohne sich zu entschuldigen
+- Lieferanten → Tage, mit Druck in der Sprache
+
+Die dritte Zeile ist die, die ich falsch hatte. Er lässt warme Fäden liegen und
+nimmt sie später ganz auf, statt schnell und knapp zu antworten. Das ist keine
+Nachlässigkeit, das ist seine Portionierung.
+
+Und: **"Howdy Chase"** — 01.09., 14:21. Das Howdy ist nicht auf deutsche
+Adressaten beschränkt. Es ist seine Grundanrede, in beiden Sprachen.

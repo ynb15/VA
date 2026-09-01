@@ -1091,3 +1091,17 @@ SETTLED" above, not just to today's board.
    terrified to touch, because the truth that it comes with is unsurmountable."
    He did that session at Kuya in South Austin on 20 March, the one-year
    anniversary of Chris's death.
+
+═══ A "NO REPLY" ROW IS A CLAIM, AND CLAIMS GO STALE ═══
+
+01.09.2026. Das Board führte Evan Bryce (Art of Mondays) als "sent 19 Aug, no
+reply, 7d". Evan hatte am 24. August geantwortet. Ich habe es nie gesehen, weil
+`search_threads` nur die ältesten Nachrichten eines Threads zeigt — genau die
+Falle, die oben schon steht, hier aber in ihrer teuersten Form: sie erzeugt
+keine Lücke, sondern eine falsche Behauptung. Eine Zeile, die "keine Antwort"
+sagt, behauptet etwas über einen Menschen. Wenn sie falsch ist, sieht er jemanden
+als still, der geschrieben hat.
+
+Regel: Bevor eine Zeile mit "no reply" / "ghosted" / "keine Antwort" stehen
+bleibt oder ihr Alter hochzählt, den Thread einmal per `get_thread` in voller
+Länge lesen. Kein Alterszähler ohne Vollprüfung.
