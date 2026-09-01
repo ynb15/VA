@@ -309,6 +309,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-warn">
+      <input type="checkbox" data-item="roundly-audio" aria-label="Roundly audio unusable">
+      <span class="row-b"><span class="who">Roundly, Cape Town</span> — the May recording is unusable. You told Maddy at 15:53.
+        <span class="row-sub">"The audio keeps dropping out throughout, to the point where it's basically unusable as is." Recorded end of May, paid, and it took until 3 August and four follow-ups to get the files at all. Now the files are bad. No reply yet. Noting one thing and then leaving it: this and the Just Push Record exchange happened six minutes apart, both about a studio's deliverable — I don't think you had them side by side.</span></span>
+      <span class="age hot">15:53</span>
+    </li>
+
     <li class="row s-wait">
       <input type="checkbox" data-item="attia-pitch" aria-label="Peter Attia pitch">
       <span class="row-b"><span class="who">Peter Attia</span> — pitched 13:55, one day after Kyle. The office address auto-replied at 13:58.
@@ -404,9 +411,9 @@ details.cleared[open] summary::after{content:" ▴";}
 
     <li class="row s-warn">
       <input type="checkbox" data-item="jpr-relogo" aria-label="JPR declined the Eben re-edit">
-      <span class="row-b"><span class="who">Just Push Record</span> — Sutcliffe fixed, Eben not, 12:15
-        <span class="row-sub">"We re-uploaded 08/26 but 08/24 would have had to be a full re-edit so it wasn't re-uploaded." So the Eben Britton recording keeps the framing you called completely screwed and the logo in the wrong corner. Going forward they'll always put it bottom left. Eben was your first guest here — whether that edit is good enough to publish is yours to say, and it's the only thing left in this thread.</span></span>
-      <span class="age">12:15</span>
+      <span class="row-b"><span class="who">Just Push Record</span> — it turned into a disagreement this afternoon, 15:59
+        <span class="row-sub">You pushed back on the 08/24 logo at 15:46. Cory answered at 15:50: "we're already giving you a big discount on editing and have uploaded this episode twice already," and quoted your first mail back at you — "just one ask: could you guys add my logo in the left-hand corner." You replied nine minutes later that you had included a reference showing exactly where. It sits there. One thing worth knowing rather than deciding: you record Matt Defina in their room Friday at 09:00.</span></span>
+      <span class="age hot">15:59</span>
     </li>
 
     <li class="row s-warn">
@@ -667,7 +674,7 @@ details.cleared[open] summary::after{content:" ▴";}
       <li class="row s-wait"><input type="checkbox" data-item="chase-reeves" aria-label="Chase Reeves"><span class="row-b">Chase Reeves — sent 27 Aug, 15:58<span class="row-sub">Austin. Cal hosts him and they share a men's group; he sat in Sutcliffe's retreat. Went to chase@matterful.co and chasereeves@gmail.com, no bounce. Cal is still the warm route if it goes quiet.</span></span><span class="age">sent</span></li>
       <li class="row s-wait"><input type="checkbox" data-item="joe-hudson" aria-label="Joe Hudson"><span class="row-b">Joe Hudson (AOA) — follow-up sent 27 Aug, 14:05<span class="row-sub">Micah gatekept it in July; you went back to the principal's inbox with the SF trip as the reason. Nine names, the in-person rule, no ask beyond an hour.</span></span><span class="age">sent</span></li>
       <li class="row s-warn"><input type="checkbox" data-item="burning-man" aria-label="Burning Man CEO"><span class="row-b">Burning Man CEO — end of September, at their HQ<span class="row-sub">You told Joe you're invited to record there. No date on the calendar, nothing in the Databank, and it anchors the whole California leg.</span></span><span class="age hot">Sep</span></li>
-      <li class="row"><input type="checkbox" data-item="msfm-matt" aria-label="Matt Defina"><span class="row-b">Matt Defina — Fri 4 Sep, 10:00, JPR<span class="row-sub">Accepted 14 Aug. Booked all along.</span></span><span class="age">4 Sep</span></li>
+      <li class="row"><input type="checkbox" data-item="msfm-matt" aria-label="Matt Defina"><span class="row-b">Matt Defina — Fri 4 Sep, 09:00–11:00, JPR<span class="row-sub">Accepted 14 Aug. Booked all along.</span></span><span class="age">4 Sep</span></li>
       <li class="row"><input type="checkbox" data-item="ian-scottsdale" checked aria-label="Ian"><span class="row-b">Ian Gardner — confirmed since 13 Aug<span class="row-sub">Dinner Wed 16 Sep in Scottsdale, recording Thu 17 Sep 12:00–14:00 at Just Push Record Phoenix. Both accepted by him. I carried this as undecided for days; it was never open.</span></span><span class="age">17 Sep</span></li>
       <li class="row s-warn"><input type="checkbox" data-item="mcconaughey-bounce" aria-label="McConaughey"><span class="row-b">Matthew (JK Livin) — pitch bounced<span class="row-sub">Needs a route in, not a resend</span></span><span class="age warm">8d</span></li>
       <li class="row"><input type="checkbox" data-item="msfm-danny" checked aria-label="Danny"><span class="row-b">Danny Miranda — reviewed 23 Aug, publishing Sun 30 Aug</span><span class="age">done</span></li>
@@ -1031,7 +1038,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-01T15:10:00-05:00");
+  var SWEPT = new Date("2026-09-01T16:12:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
