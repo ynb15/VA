@@ -309,6 +309,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-wait">
+      <input type="checkbox" data-item="rob-paddock-bump" aria-label="Rob Paddock bumped">
+      <span class="row-b"><span class="who">Rob Paddock</span> (Valenture) — you forwarded your own 15 Aug mail back to him, 21:09
+        <span class="row-sub">Seventeen days without an answer, so you bumped it by re-sending the original rather than writing a new one — the same move you made on Chase this afternoon. Nothing to do; it is here so the silence gets counted if it keeps going.</span></span>
+      <span class="age">21:09</span>
+    </li>
+
     <li class="row s-warn">
       <input type="checkbox" data-item="roundly-audio" aria-label="Roundly audio unusable">
       <span class="row-b"><span class="who">Roundly, Cape Town</span> — the May recording is unusable. You told Maddy at 15:53.
@@ -1038,7 +1045,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-01T20:10:00-05:00");
+  var SWEPT = new Date("2026-09-01T21:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
