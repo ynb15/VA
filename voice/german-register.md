@@ -250,3 +250,34 @@ Nachlässigkeit, das ist seine Portionierung.
 
 Und: **"Howdy Chase"** — 01.09., 14:21. Das Howdy ist nicht auf deutsche
 Adressaten beschränkt. Es ist seine Grundanrede, in beiden Sprachen.
+
+## Nachtrag 02.09.2026 — der englische Lieferanten-Erstkontakt, und eine Anrede, die gefehlt hat
+
+**Die Studio-Anfrage (Katharsis Media, 14:38) ist die beste Probe, die ich für
+seinen englischen Kaltkontakt habe.** Reihenfolge, streng:
+
+1. `Howdy y'all!` — auch an ein unpersönliches Postfach. Die Gruppenanrede ist
+   nicht auf Gruppen beschränkt.
+2. Der Podcast in einem Satz, mit seiner eigenen Rechtschreibung: *"wyld
+   stories"*. Er poliert nicht.
+3. **Namen als Beleg, nie Zahlen.** Britton, Sutcliffe, Aaronson, Kingsbury,
+   Goodell. Keine Downloads, keine Reichweite.
+4. Der Rahmen ist die Reise, nicht das Geschäft: *"a lil podcast roadtrip
+   through NM, AZ, CO"*. Verkleinerung als Understatement.
+5. Die Bitte exakt und **als Frage** — Datum, Uhrzeit, Zeitzone, dann *"does
+   that slot work on your end?"*
+6. Eine zweite, weichere Bitte **mit Begründung**: Fotos, *"just wanna make sure
+   the design fits the vibe before we lock it in."* Die Begründung macht die
+   Bitte klein.
+7. **Kein Preis im Erstkontakt.** Das ist die Regel, die ich falsch hatte: ich
+   hatte ihm einen Entwurf gebaut, der mit dem All-in-Preis aufmacht. Er fragt
+   nicht danach, solange der Slot nicht steht.
+
+Bestätigt außerdem den 31.08.-Befund von der anderen Seite: er verortet sich
+zuerst — hier räumlich *und* als Reisender, bevor irgendeine Bitte kommt.
+
+**`Lieber Francisco,`** — 02.09., 14:11, an Francisco Medina. Die Anreden-Tabelle
+hatte kein "Lieber". Es gehört auch nicht ins Arbeitsregister: das ist die
+Dankes-/Rückblicksmail, die mit Jahr und Ort öffnet (*"2013, Berlin, 'Sport
+gegen Gewalt'"*) und dann sagt, was der andere für ihn war. Eigenes Register,
+eigene Anrede. Nicht mit `Howdy` verwechseln.
