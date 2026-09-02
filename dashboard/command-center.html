@@ -310,6 +310,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <ul class="rows" id="today-rows">
 
     <li class="row s-wait">
+      <input type="checkbox" data-item="abq-studios" aria-label="Albuquerque studio shortlist">
+      <span class="row-b"><span class="who">Albuquerque studios</span> — three to call for 15 Sep
+        <span class="row-sub"><strong>Albuquerque Podcast Studio</strong>, 201 Eubank Blvd NE Ste B1 · (505) 584-7400 · contact@albuquerquepodcast.studio — multi-camera, 4.6★ from 11 reviews, but their standard session is 1.5h, so two hours needs asking. <strong>The Podcast Studio NM</strong>, 1330 San Pedro NE · (505) 933-5282 · info@thepodcaststudionm.com. <strong>ABQ Castle Studios</strong> (L.A. Castle Studios' New Mexico arm) · 818-934-3775 — broadcast sets and a crew, no public ABQ street address. I could not open any of their booking pages: the studio and marketplace sites are blocked from here, so none of the rates are verified. Every number above comes from search listings, not from the studios themselves.</span></span>
+      <span class="age">15 Sep</span>
+    </li>
+
+    <li class="row s-wait">
       <input type="checkbox" data-item="yestheory-four" aria-label="Yes Theory pitch">
       <span class="row-b"><span class="who">Yes Theory</span> — one mail to all four founders, 13:25
         <span class="row-sub">"Inspired by Seek Discomfort: Man's Search for Meaning," to Staffan, Thomas, Ammar and td@ at once, addressed to "you four." Ammar had the same pitch on 24 July and never answered — this time he gets it with three people watching. Databank updated: Ammar's row now records the second approach, three new rows for the others. I could not find a name behind td@, so that row says so.</span></span>
@@ -353,8 +360,8 @@ details.cleared[open] summary::after{content:" ▴";}
 
     <li class="row s-warn">
       <input type="checkbox" data-item="mountain-time" aria-label="Mountain Time on the road trip">
-      <span class="row-b"><span class="who">The road trip</span> — two recordings sit in Mountain Time, stored like Central
-        <span class="row-sub">Joe Moore, 22 Sep Boulder: the studio booked 11:00 Denver, your entry says 11:00 Chicago. Strassman, 15 Sep Albuquerque: also Mountain Time, and the entry reads 11:30 Chicago — which would be 10:30 on the ground. Same class of error, second instance. Worth checking both against what you actually agreed, not against the clock.</span></span>
+      <span class="row-b"><span class="who">The road trip</span> — Strassman is now a concrete half-hour, Boulder still open
+        <span class="row-sub">You told me Strassman is 10:00–12:00 local. The calendar says 11:30–13:30 America/Chicago, which is 10:30–12:30 in Albuquerque — half an hour off what you just said, and <strong>Strassman has already accepted that entry</strong>. So whichever way it goes, he has to hear about it before a studio gets booked around it. Joe Moore, 22 Sep Boulder, is the same class and still unresolved: studio booked 11:00 Denver, your entry 11:00 Chicago.</span></span>
       <span class="age warm">Sep</span>
     </li>
 
@@ -1052,7 +1059,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-02T14:11:00-05:00");
+  var SWEPT = new Date("2026-09-02T14:35:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
