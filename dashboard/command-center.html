@@ -296,18 +296,25 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede">Good morning. Yesterday you wrote to four people and got into two arguments.</p>
-    <p class="tiny">Out: Chase, Evan, Peter Attia via Kyle, and Rob Paddock — the last two by re-sending the original rather than writing a new one. In: Virgin Active's release letter, already signed by their legal. And two studios pushed back within six minutes of each other, Just Push Record on the logo and Roundly on audio you told them is unusable. Meaning Crisis moved off yesterday onto this morning.</p>
+    <p class="lede">Good morning. You closed Brandlift at 23:39 — the oldest thing on this board.</p>
+    <p class="tiny">You held mid-October, turned down Email-only, and named your own six days of silence in the first line. Yesterday also: Yes Theory got one mail to all four founders, and you wrote your own studio enquiry to Katharsis Media in Albuquerque before I had finished my shortlist. Drew sent a calendar invite at 21:29 for Monday.</p>
   </div>
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Reading: DMT 09:30, then Meaning Crisis 10:00–11:00.</h2>
-    <p class="why">Morning Routine 07:30 first. Two Substack: Post blocks back to back at 15:00 and 15:30, gym 16:30, Drew at 20:00. The three that will not move themselves: the Virgin Active letter and which number is on it; TikTok Live access before Friday; and Friday 09:00 is in Just Push Record's room, where the logo thread is still open. Everything else is on the rows.</p>
+    <h2>A soft day: gym 15:00, Boozyless 16:30, Men Circle 19:00.</h2>
+    <p class="why">Morning Routine 07:30. Substack: Post at 15:30 sits inside the gym hour — thirty minutes of overlap, yours to resolve or ignore. Boozyless is the Andy Wolfe discussion at The Red Fridge Society, happy hour 16:30 and the talk at 17:15; Men Circle at Amala Sanctuary runs to 21:30. Tomorrow is the loaded one: Matt Defina 09:00 at Just Push Record, then Meet Ken 16:10 on TikTok Live — and that account still needs Live access.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="drew-garden" aria-label="Drew Korf invite">
+      <span class="row-b"><span class="who">Drew Korf</span> — "The Garden", Mon 7 Sep 13:00–15:00, unanswered
+        <span class="row-sub">Sent 21:29 last night, Google Meet, and it sits at needsAction. Two hours in the middle of MagicMonday. You had a Drew block on your own calendar last night at 20:00, so this looks like the follow-up to that — inference, not something the invite says.</span></span>
+      <span class="age">7 Sep</span>
+    </li>
 
     <li class="row s-wait">
       <input type="checkbox" data-item="abq-studios" aria-label="Albuquerque studio shortlist">
@@ -1066,7 +1073,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-02T21:09:00-05:00");
+  var SWEPT = new Date("2026-09-02T22:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
