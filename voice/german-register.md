@@ -316,3 +316,20 @@ zusammenfassen lässt, nicht einfach Claude hochlädt - sondern wirklich
 durcharbeitet."* Dreifache Negation, dann das Positive. Erst danach kommt
 *"Diesen Monat pack ich das schlicht nicht."* Die Absage ist die Konsequenz
 eines Anspruchs, nie ein Mangel.
+
+## Nachtrag 03.09.2026 — er erfindet die Gruppe, die er anspricht
+
+Drei Belege, drei Sprachen von Nähe:
+
+- `Hey Männer,` — Brandlift, 28.08.
+- `Howdy y'all!` — Katharsis Media, 02.09.
+- **`Howdy Albuquerqueans,`** — Stadt Albuquerque, 03.09. 15:53, an
+  `govtv@cabq.gov` und `CultureABQ@cabq.gov`.
+
+Das dritte ist das aufschlussreichste: es gibt kein Wort "Albuquerqueans" in
+seiner Mail-Historie, er hat es aus dem Ortsnamen gebaut. Wenn er keine
+Gruppenbezeichnung hat, macht er eine — aus dem Ort. Das ist dieselbe Bewegung
+wie die Verortung zuerst, nur auf den Adressaten angewendet statt auf sich.
+
+Für Entwürfe an mehrere Empfänger: nie "Hallo zusammen", nie "Dear all". Eine
+Anrede finden, die genau diese Leute meint, notfalls neu gebildet.
