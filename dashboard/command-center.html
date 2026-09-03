@@ -309,6 +309,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-wait">
+      <input type="checkbox" data-item="sponsors-out" aria-label="Sponsorship pitches">
+      <span class="row-b"><span class="who">Sponsoren</span> — LMNT 14:39, Momentous 14:44. A new kind of mail.
+        <span class="row-sub">"LMNT x MSFM: Fueling The Fire" to Luis, Robb, James and Nicki; "Momentous x MSFM" to Erica and Jeff five minutes later. Same opening line in both, adapted at the noun. This is the first outreach I have seen from you that asks for money rather than for a person, so I am tracking it separately. Six contacts, none of them in the Databank — that table is built for guests, and I did not want to reshape it without asking. Say the word and they go in.</span></span>
+      <span class="age">14:44</span>
+    </li>
+
     <li class="row s-crit">
       <input type="checkbox" data-item="angie-bounce" aria-label="Angie Lee bounced">
       <span class="row-b"><span class="who">Soul CBD</span> — half your pitch never arrived, 03:55
@@ -319,7 +326,7 @@ details.cleared[open] summary::after{content:" ▴";}
     <li class="row s-wait">
       <input type="checkbox" data-item="ai-editor" aria-label="AI editor question for Cory">
       <span class="row-b"><span class="who">The AI editor</span> — one question to Cory decides which route
-        <span class="row-sub">AutoPod ($29/mo) can do the multicam cut that JPR does today, but only with an isolated audio track per speaker and the separate camera files. JPR hands you a finished edit. So: will they release the raw material? Yes → AutoPod + Opus Clip, about $38/mo with Premiere. No → Gling + Opus Clip, $29/mo in the browser. The research is in the repo at youtube/ai-editor.md.</span></span>
+        <span class="row-sub">AutoPod ($29/mo) can do the multicam cut that JPR does today, but only with an isolated audio track per speaker and the separate camera files. <strong>Kyle just sent exactly that, at 14:59 — C0105.MP4 plus ZOOM0314_Tr1.WAV and Tr2.WAV, one track per mic.</strong> So for his episode the precondition is already met, and it came from the guest, not the studio. The open half is whether JPR will release the same for the ones they shoot. Yes → AutoPod + Opus Clip, about $38/mo with Premiere. No → Gling + Opus Clip, $29/mo in the browser. Research in the repo at youtube/ai-editor.md.</span></span>
       <span class="age">offen</span>
     </li>
 
@@ -1087,7 +1094,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-03T14:09:00-05:00");
+  var SWEPT = new Date("2026-09-03T15:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
