@@ -409,11 +409,18 @@ details.cleared[open] summary::after{content:" ▴";}
 
 
 
-    <li class="row s-crit">
-      <input type="checkbox" data-item="gp-sequencing" aria-label="Brandlift counter-offer">
-      <span class="row-b"><span class="who">Brandlift</span> — they countered: a slice of the scope, not none of it
-        <span class="row-sub">Luis, 02:46, cc Lukas. He takes the point ("verstehe auch den Punkt gut - im Zweifel müssen wir es so machen") and then asks for Email only as a starting cut, building up from there, and a short call. Note what else came in overnight: Lukas shared the Webinar 10.09. folder at 00:17 and Luis the Gottfried book PDF at 01:39 — they kept onboarding you either side of your message. The fee is still a number I have never seen.</span></span>
-      <span class="age hot">02:46</span>
+    <li class="row s-ok">
+      <input type="checkbox" data-item="gp-sequencing" checked aria-label="Brandlift counter-offer">
+      <span class="row-b"><span class="who">Brandlift</span> — answered 23:39. You held mid-October and turned down Email-only.
+        <span class="row-sub">Six days after Luis asked, and you named the six days yourself in the first line. The reason you gave is the book: you read it rather than summarise it or hand it to Claude, and anything less would be worth neither Gottfried nor your own standard. Then the concrete detail you did not have to give — eighty-hour weeks and two books a week for podcast research. This has been the oldest thing on the board and it is closed.</span></span>
+      <span class="age">23:39</span>
+    </li>
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="gp-fee" aria-label="Brandlift fee">
+      <span class="row-b"><span class="who">Brandlift</span> — the fee is still a number nobody has said
+        <span class="row-sub">Onboarding, briefing, book, workshop folder, a counter-offer, and now a start date — and across all of it no one has named what the work pays. October is booked on it either way. This is the only Brandlift item left open.</span></span>
+      <span class="age warm">Okt</span>
     </li>
 
     <li class="row s-ok">
@@ -1059,7 +1066,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-02T20:09:00-05:00");
+  var SWEPT = new Date("2026-09-02T21:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

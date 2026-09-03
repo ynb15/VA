@@ -281,3 +281,38 @@ hatte kein "Lieber". Es gehört auch nicht ins Arbeitsregister: das ist die
 Dankes-/Rückblicksmail, die mit Jahr und Ort öffnet (*"2013, Berlin, 'Sport
 gegen Gewalt'"*) und dann sagt, was der andere für ihn war. Eigenes Register,
 eigene Anrede. Nicht mit `Howdy` verwechseln.
+
+## Nachtrag 03.09.2026 — die Luis-Absage bestätigt vier Befunde und widerlegt einen fünften ein drittes Mal
+
+23:39 Austin, `Howdy Luis,` … `Gg,` — Anrede und Signatur wie in der Tabelle.
+
+Bestätigt:
+
+- **Die Zeitarithmetik als Eröffnung**, diesmal gegen sich selbst gerichtet:
+  *"Ich hatte das hier seit Freitag jeden Tag im Kopf, am Wochenende auch
+  nochmal intensivst drüber nachgedacht und wollte mich seit Sonntag
+  zurückmelden."* Er benennt die eigene Verzögerung, bevor jemand sie benennen
+  kann. Dieselbe Bewegung wie *"Du hast mir Freitag geschrieben, heute ist
+  Montag"* — nur nach innen.
+- **Die Ortsangabe zuerst**, hier als Uhrzeit: *"Jetzt komm ich endlich dazu,
+  wieder kurz vor Mitternacht."* Zum zweiten Mal in diesem Thread; am 28.08.
+  war es *"1 Uhr nachts hier in Texas"*.
+- **Das unbequeme Konkrete als Vertrauensmechanik.** Am 28.08. war es Ritalin,
+  jetzt: *"seit Wochen schon auf 80 Stunden"* und *"jede Woche zwei Bücher"*.
+  Er gibt eine Zahl her, die ihn schlecht aussehen lassen könnte, statt eine
+  glatte Ausrede.
+- **Der Dreiklang, verkürzt.** 28.08.: *"fester Alltag, feste Ort, feste
+  Zeiten"*. Jetzt: *"fester Alltag, voller Fokus"*. Zweigliedrig, gleiche Figur.
+
+Widerlegt, zum dritten Mal: **er schließt nicht mit einer Frage.** *"Ich hoffe
+ihr könnt das nachvollziehen."* — wie am 28.08. (*"Hoffe auf euer
+Verständnis"*). Seine ausgesprochene Regel bleibt Regel, seine Praxis bleibt
+Hoffnung. Die Praxis ist die Wahrheit; ich schreibe Entwürfe künftig so.
+
+**Und die Begründungsfigur, die ich noch nicht hatte:** er sagt nicht "ich habe
+keine Zeit", sondern beschreibt erst den Standard und lässt die Absage daraus
+folgen. *"Ich bin jemand, der Gottfrieds Buch liest - nicht überfliegt, nicht
+zusammenfassen lässt, nicht einfach Claude hochlädt - sondern wirklich
+durcharbeitet."* Dreifache Negation, dann das Positive. Erst danach kommt
+*"Diesen Monat pack ich das schlicht nicht."* Die Absage ist die Konsequenz
+eines Anspruchs, nie ein Mangel.
