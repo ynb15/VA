@@ -1105,3 +1105,21 @@ als still, der geschrieben hat.
 Regel: Bevor eine Zeile mit "no reply" / "ghosted" / "keine Antwort" stehen
 bleibt oder ihr Alter hochzählt, den Thread einmal per `get_thread` in voller
 Länge lesen. Kein Alterszähler ohne Vollprüfung.
+
+═══ SHORTS — WO DIE ELEMENTE LIEGEN ═══
+
+03.09.2026. Er will, dass ich seine Lieblings-Shorts analysiere, die Elemente
+abspeichere und künftig Content danach baue. Datei: `youtube/shorts-elements.md`.
+
+Harte Grenze, die dort oben steht und hier auch stehen muss: **ich kann kein
+Video anschauen**, und youtube.com, youtu.be, tiktok.com und instagram.com sind
+für die Session am Egress-Proxy gesperrt (mit curl gegengeprüft). Nicht
+drumherum routen — melden. Was reingeht, geht als Text oder Screenshot über
+`[Alfred] Inbox` (`1BTFS3WpV2XbTMDz0knlSMOPjNOziRzO9`).
+
+Ohne ein einziges Video gesehen zu haben, steht dort schon ein belastbarer
+Befund aus Dateinamen: seine zwei Titelformate — `Name: Buchtitel` und
+`YNB + Ortsname` — wiederholen exakt die zwei Bewegungen aus seiner
+Korrespondenz (Namen als Beleg, Verortung zuerst). Mail-Stimme und Kamera-Stimme
+sind dieselbe. Bis ein Transkript mich korrigiert, darf ich Short-Skripte auf
+`voice/german-register.md` stützen.
