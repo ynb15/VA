@@ -1123,3 +1123,20 @@ Befund aus Dateinamen: seine zwei Titelformate — `Name: Buchtitel` und
 Korrespondenz (Namen als Beleg, Verortung zuerst). Mail-Stimme und Kamera-Stimme
 sind dieselbe. Bis ein Transkript mich korrigiert, darf ich Short-Skripte auf
 `voice/german-register.md` stützen.
+
+═══ ER RÄUMT SELBST VOR — WARTE MIT DER ZEILE, BIS DU NACHGESEHEN HAST ═══
+
+Zweimal am 4. Sep, beide Male ohne dass irgendjemand etwas gemeldet hätte:
+
+- **13:53** — Huddle Room 2 bei Gevity gebucht, 16:00–16:30, was Meet Ken
+  (16:10–16:20, TikTok Live) exakt einklammert. Ich hätte das um ein Haar als
+  Kollision auf die Zeile geschrieben.
+- **14:51** — an Kyle Kingsbury: *"Any chance you also got the recording from the
+  camera that was aimed at you?"* Damit holt er die zweite Kameradatei. Zusammen
+  mit ZOOM0314_Tr1/Tr2 ist das die vollständige AutoPod-Voraussetzung. Ich hatte
+  die Recherche im Repo liegen, er war schneller.
+
+Die Regel daraus: **bevor eine Zeile ein Problem behauptet, sieh nach, ob er es
+schon gelöst hat.** Kalender und SENT zuerst, dann die Zeile. Eine Warnung, die
+er vor einer Stunde selbst erledigt hat, kostet mehr Vertrauen als eine Zeile,
+die eine Stunde später kommt.
