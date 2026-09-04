@@ -518,9 +518,16 @@ details.cleared[open] summary::after{content:" ▴";}
 
     <li class="row s-warn">
       <input type="checkbox" data-item="ethan-coffee" aria-label="Ethan coffee">
-      <span class="row-b"><span class="who">Ethan</span> (Austin Business Review) — "Listening now", 22 Aug
-        <span class="row-sub">He opened the door twice. Name a time rather than leaving it open again.</span></span>
-      <span class="age warm">4d</span>
+      <span class="row-b"><span class="who">Ethan Brooks</span> — er sagt ab und stellt eine Frage, die noch steht
+        <span class="row-sub">Du hattest ihm gestern 15:06 das Ersatzticket für Chris Williamsons Show am Montagabend angeboten. Heute 12:37 sagt er ab — und hängt <strong>"What kind of surprise?"</strong> dran. Die Frage ist unbeantwortet. Davor lag schon "Listening now" vom 22. Aug ohne Termin. Zweimal offene Tür, zweimal keine Uhrzeit.</span></span>
+      <span class="age warm">12:37</span>
+    </li>
+
+    <li class="row s-ok">
+      <input type="checkbox" data-item="williamson-ticket" aria-label="Williamson ticket re-offered">
+      <span class="row-b"><span class="who">Das Williamson-Ticket</span> — vier Stunden frei, dann weitergegeben
+        <span class="row-sub">Ethan sagt um 12:37 ab, um <strong>16:46 liegt es bei Chase Reeves</strong>: "one last try… I've got a spare ticket to Chris' show Monday eve - and a little surprise planned for him too… No pressure. If you're not feeling it, all good." Dritter Anlauf bei Chase, seit dem 27. Aug, und der erste, der ihm nichts abverlangt. Nichts für Dich zu tun — die Zeile steht hier, damit das Ticket nicht zweimal vergeben wird.</span></span>
+      <span class="age">16:46</span>
     </li>
 
 
@@ -1094,7 +1101,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-04T16:09:00-05:00");
+  var SWEPT = new Date("2026-09-04T17:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

@@ -361,3 +361,26 @@ Was das an bisherigen Befunden ändert:
 - Struktur bleibt: Dank → die Sache in einem Satz, klein gehalten (*"pretty
   basic"*) → weiche zweite Bitte mit Grund → `Cheers,`. Kein Fragezeichen am
   Schluss. (Vierter Beleg gegen "close on a question".)
+
+## Nachtrag 04.09. — der dritte Anlauf verlangt nichts (Chase Reeves, 16:46)
+
+Drei Anläufe bei derselben Person, in absteigender Forderung:
+
+1. **27.08.** — voller Pitch. Podcast, Gästeliste als Beleg, vier Fragen im
+   Kursiv-Block, *"You're one of them."*
+2. **01.09.** — nach Cals Intro noch einmal, mit dem alten Pitch darunter
+   gepastet. Die Bitte schon kleiner: *"Podcast or not, I'd love to invite you
+   for a lunch or coffee & trail walk if you're keen."*
+3. **04.09.** — gar keine Bitte mehr. Ein Ticket, das der andere ohnehin haben
+   könnte (*"You prob could roll into any of his shows anyway"*), angeboten mit
+   ausgesprochenem Grund (*"a chance to connect before I leave ATX"*) und einem
+   ausdrücklichen Ausstieg: *"No pressure. If you're not feeling it, all good."*
+
+**Regel: je später der Anlauf, desto weniger wird verlangt.** Nicht mehr Druck,
+sondern weniger. Wer für ihn nachfasst, darf einen dritten Entwurf nie schärfer
+schreiben als den ersten. Er markiert es auch selbst — *"one last try"* — und
+gibt dem anderen die Erlaubnis, Nein zu sagen, im selben Absatz.
+
+Sign-offs, gesammelt: `Cheers,` (Lieferanten, Sachliches) · `GG,` ·
+`Dreaming Big, YNB` (warm, an Leute, die er persönlich will) · `Much love` nur
+gelesen, nicht von ihm.
