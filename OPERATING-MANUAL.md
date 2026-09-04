@@ -1140,3 +1140,20 @@ Die Regel daraus: **bevor eine Zeile ein Problem behauptet, sieh nach, ob er es
 schon gelöst hat.** Kalender und SENT zuerst, dann die Zeile. Eine Warnung, die
 er vor einer Stunde selbst erledigt hat, kostet mehr Vertrauen als eine Zeile,
 die eine Stunde später kommt.
+
+═══ PREIS KOMMT NICHT PER MAIL ═══
+
+Korrektur einer eigenen Regel, 04.09. Ich hatte notiert: "kein Preis im
+Erstkontakt, der Preis kommt, wenn der Slot steht." Zu schwach. The Podcast
+Studio NM hatte den Slot um 12:11 bestätigt — in seiner Antwort um 15:39 fragt
+er trotzdem nicht danach. Dasselbe bei Katharsis.
+
+**In keinen Entwurf eine Preisfrage schreiben, in keiner Runde**, außer er sagt
+es ausdrücklich. Was stattdessen in die zweite Runde gehört: die technischen
+Anforderungen klein gehalten ("pretty basic: three cameras and two mics") und
+**Fotos vom Setup**, mit der ausgesprochenen Begründung *"just wanna make sure
+the design fits the vibe before we lock it in."* Das ist sein Auswahlkriterium,
+nicht der Preis.
+
+Anrede: `Howdy <Vorname>,` gilt auch an eine Einzelperson, nicht nur als
+Gruppenanrede. Details in voice/german-register.md.

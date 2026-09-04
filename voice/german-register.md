@@ -333,3 +333,31 @@ wie die Verortung zuerst, nur auf den Adressaten angewendet statt auf sich.
 
 Für Entwürfe an mehrere Empfänger: nie "Hallo zusammen", nie "Dear all". Eine
 Anrede finden, die genau diese Leute meint, notfalls neu gebildet.
+
+## Nachtrag 04.09. — Studio-Anfrage, zweite Runde (Nick, The Podcast Studio NM, 15:39)
+
+Voller Text:
+
+> Howdy Nick,
+>
+> Thanks for getting back to me! Production needs are pretty basic: three cameras and two mics. And if you could send over a few photos of your setup, that'd be perfect - just wanna make sure the design fits the vibe before we lock it in.
+>
+> Cheers,
+> Yannick
+
+Was das an bisherigen Befunden ändert:
+
+- **"Kein Preis im Erstkontakt" ist zu schwach formuliert.** Auch in der zweiten
+  Runde, mit bestätigtem Slot, fragt er nicht nach dem Preis. Richtige Regel:
+  **Preis kommt nicht per Mail.** In keinen Entwurf schreiben, egal in welcher
+  Runde, außer er sagt es ausdrücklich.
+- **Fotos vom Setup sind ein wiederkehrender Baustein, kein Einfall.** Zweimal in
+  drei Tagen (Katharsis Di, Nick heute), beide Male mit ausgesprochener
+  Begründung: *"make sure the design fits the vibe before we lock it in."* Gehört
+  in jede Studio-Anfrage.
+- **`Howdy` + Vorname an eine Einzelperson.** Bisher nur als Gruppenanrede belegt.
+  Damit gilt: `Howdy <Name>,` ist die normale Anrede an Lieferanten, egal ob einer
+  oder viele.
+- Struktur bleibt: Dank → die Sache in einem Satz, klein gehalten (*"pretty
+  basic"*) → weiche zweite Bitte mit Grund → `Cheers,`. Kein Fragezeichen am
+  Schluss. (Vierter Beleg gegen "close on a question".)

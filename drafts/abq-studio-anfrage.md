@@ -22,8 +22,11 @@ Was er tatsächlich macht:
    does that slot work on your end?"*
 5. **Eine zweite, weichere Bitte mit Begründung:** Fotos vom Setup, *"just wanna
    make sure the design fits the vibe before we lock it in."*
-6. **Kein Wort über Preis.** Nicht vergessen — er fragt im Erstkontakt nicht
-   danach. Der Preis kommt, wenn der Slot steht.
+6. **Kein Wort über Preis — auch nicht in der zweiten Runde.** Korrigiert am
+   04.09.: Nick von The Podcast Studio NM hatte den Slot um 12:11 bestätigt, und
+   in der Antwort um 15:39 fragt Yannick immer noch nicht nach dem Preis. Meine
+   frühere Formulierung ("kommt, wenn der Slot steht") war zu schwach. Richtig
+   ist: **Preis kommt nicht per Mail**, außer er sagt es ausdrücklich.
 7. `Cheers,` und die Signatur.
 
 Die Vorlage unten ist jetzt seine, nicht meine.
@@ -75,8 +78,10 @@ yannick-noah.com
 
 ---
 
-## Falls Du den Preis doch früher wissen willst
+## Falls Du den Preis doch schriftlich willst
 
-Ein Satz, hinter die Slot-Frage gehängt, ohne den Ton zu brechen:
+Ich lasse den Satz hier stehen, aber nur als Baustein, den Du selbst einsetzt —
+nicht als Teil der Vorlage. Zweimal bestätigt (Katharsis 02.09., Nick 04.09.),
+dass Du auch mit bestätigtem Slot nicht danach fragst:
 
 > And what's your all-in for those two hours?
