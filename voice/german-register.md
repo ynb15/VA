@@ -414,3 +414,23 @@ Ken 05.09.) mit derselben Reihenfolge. Das ist kein Stil mehr, das ist eine Form
 
 **Wer für ihn einen Pitch entwirft, baut ihn in dieser Reihenfolge.** Punkt 6 ist
 wörtlich zu übernehmen; das ist sein Satz, nicht meiner.
+
+## Nachtrag 05.09. — der Pitch geht an den Vermittler, adressiert ist er an den Gast
+
+Zweimal belegt:
+
+- **31.08. Cal → Chase.** Cal stellt vor, Yannick schreibt an Chase.
+- **05.09. Matt Dalley → Ken Stern.** Der volle Pitch ist an Ken adressiert
+  (*"Cheers Ken, it's Yannick here again"*), zugestellt an mattjdalley@gmail.com,
+  **ohne ein Wort an Matt.** Matt antwortet zwei Stunden später: *"Hey Yannick -
+  happy to connect you with Ken here!"* und setzt Ken ins CC.
+
+**Das ist kein Versehen, sondern die Methode.** Der Vermittler bekommt keinen
+Begleitbrief und keine Bitte um Weiterleitung — er bekommt den fertigen Pitch und
+entscheidet selbst, ob er ihn durchreicht. Das macht das Weiterleiten zur
+einfachsten Handlung, die dem Vermittler offensteht.
+
+Für mich: **eine an X adressierte Mail im Postfach von Y ist bei ihm kein Fehler,
+bevor ich nicht das Gegenteil weiß.** Ich hatte das am 05.09. als mögliche
+Fehladressierung auf die Zeile geschrieben; die Frage war zulässig, die
+Vermutung war falsch.

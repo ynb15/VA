@@ -379,11 +379,11 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="age">done</span>
     </li>
 
-    <li class="row s-warn">
-      <input type="checkbox" data-item="ken-pitch-address" aria-label="Ken-Pitch an Matt Dalley">
-      <span class="row-b"><span class="who">Der Ken-Pitch, 11:08</span> — die Mail redet mit Ken und liegt in Matts Postfach
-        <span class="row-sub">Betreff "From South Africa to Austin", Anrede <strong>"Cheers Ken"</strong>, durchgehend an Ken geschrieben — <strong>zugestellt an mattjdalley@gmail.com</strong>, und kein Wort an Matt darüber. Zwei Lesarten, und ich kann von hier aus nicht entscheiden welche: entweder gewollt, weil Matt der Booker ist und weiterleitet — oder die falsche Adresse gegriffen. Wenn es die zweite ist, ist das in den nächsten Minuten billig zu heilen und später nicht mehr. <strong>Das ist meine Frage, nicht Deine Aussage.</strong><br>Zwei Kleinigkeiten im selben Text, falls Du ihn noch einmal anfasst: <em>"roadtrip through NN, AZ &amp; CO"</em> — in der Chase-Mail steht dort NM. Und <em>"a conversation that matters cross borders"</em>, wo <em>across</em> hingehört. Beides ändert nichts an der Wirkung, ich sage es nur, weil der Rest der Mail sehr präzise ist.</span></span>
-      <span class="age hot">11:08</span>
+    <li class="row s-ok">
+      <input type="checkbox" data-item="ken-pitch-address" checked aria-label="Ken-Pitch weitergeleitet">
+      <span class="row-b"><span class="who">Der Ken-Pitch</span> — meine Frage von heute Mittag ist beantwortet, und zwar gegen mich
+        <span class="row-sub">Ich hatte gefragt, ob die an Ken adressierte Mail versehentlich in Matt Dalleys Postfach gelandet ist. War sie nicht. <strong>Matt hat um 16:17 geantwortet: "Hey Yannick - happy to connect you with Ken here!" — und Ken direkt ins CC gesetzt, kenneth.stern@palisadesmv.com.</strong> Der Weg war der Punkt: den Text an den Zielgast schreiben, an den Vermittler schicken, der stellt vor. Genau die Form, die bei Cal → Chase funktioniert hat. Nichts zu tun; der Ball liegt bei Ken.</span></span>
+      <span class="age">16:17</span>
     </li>
 
     <li class="row s-warn">
@@ -1114,7 +1114,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-05T16:09:00-05:00");
+  var SWEPT = new Date("2026-09-05T17:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

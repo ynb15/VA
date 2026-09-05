@@ -1189,3 +1189,15 @@ derselben achtteiligen Reihenfolge, mit wörtlich gleichen Modulen. Aufgeschrieb
 in voice/german-register.md unter "Nachtrag 05.09.". **Vor jedem Pitch-Entwurf
 dort nachlesen** — die Gästeliste und der Satz "You're one of them." sind wörtlich
 zu übernehmen.
+
+═══ DER PITCH AN DEN VERMITTLER IST KEIN VERSEHEN ═══
+
+05.09.: Der volle Ken-Stern-Pitch war an Ken adressiert und ging an Matt Dalley,
+ohne ein Wort an Matt. Ich hatte das als mögliche Fehladressierung markiert.
+Matt hat zwei Stunden später weitergeleitet und Ken ins CC gesetzt — es war die
+Methode, nicht der Fehler. Zweiter Beleg nach Cal → Chase.
+
+**Regel: eine an X adressierte Mail in Ys Postfach ist bei ihm zuerst ein
+Vermittlungsweg, nicht ein Vergriff.** Wenn ich es trotzdem anspreche, dann als
+Frage und mit dieser Möglichkeit ausdrücklich daneben. Details in
+voice/german-register.md.
