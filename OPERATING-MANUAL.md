@@ -1169,3 +1169,23 @@ Regel: **wenn eine Korrektur eine Uhrzeit oder ein Datum betrifft, grep über da
 ganze Board nach demselben Ort, derselben Uhrzeit und demselben Namen**, bevor
 die Korrektur als erledigt gilt. Eine falsche Uhrzeit erzeugt fast immer mehr als
 eine falsche Zeile.
+
+═══ EIN POSTFACH IST FÜR MICH GESPERRT ═══
+
+05.09.: `get_thread` auf einen Thread an **info@yannickbernard.com** antwortet
+"The caller does not have permission". Mein Zugang reicht nur für
+ynb@yannick-noah.com; Mails an info@ tauchen zwar in der Suche mit Betreff und
+Snippet auf, aber der Text ist nicht lesbar.
+
+Folge: **Über eine Mail an info@ darf ich nur behaupten, was in der Betreffzeile
+steht.** Nie den Inhalt erschließen und als Tatsache auf die Zeile schreiben.
+Betroffen sind unter anderem Rechnungen und Zahlungsbestätigungen (Anthropic,
+Wise), also genau die Sachen, bei denen eine falsche Zeile teuer wäre.
+
+═══ DER PITCH-BAUKASTEN ═══
+
+Drei vollständige Pitches (Chase 27.08., Attia 03.09., Ken Stern 05.09.) folgen
+derselben achtteiligen Reihenfolge, mit wörtlich gleichen Modulen. Aufgeschrieben
+in voice/german-register.md unter "Nachtrag 05.09.". **Vor jedem Pitch-Entwurf
+dort nachlesen** — die Gästeliste und der Satz "You're one of them." sind wörtlich
+zu übernehmen.

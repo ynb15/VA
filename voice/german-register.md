@@ -384,3 +384,33 @@ gibt dem anderen die Erlaubnis, Nein zu sagen, im selben Absatz.
 Sign-offs, gesammelt: `Cheers,` (Lieferanten, Sachliches) · `GG,` ·
 `Dreaming Big, YNB` (warm, an Leute, die er persönlich will) · `Much love` nur
 gelesen, nicht von ihm.
+
+## Nachtrag 05.09. — der Pitch-Baukasten steht jetzt fest (Ken Stern, 11:08)
+
+Dritter vollständiger Pitch innerhalb von zehn Tagen (Chase 27.08., Attia 03.09.,
+Ken 05.09.) mit derselben Reihenfolge. Das ist kein Stil mehr, das ist eine Form:
+
+1. **Kursiver Aufhänger, ohne Anrede davor, in Du-Form, und immer eine Umkehr in
+   der Biografie des anderen.** *"You ran the country's most liberal media
+   platform. Then did the thing almost no one in your world dares…"* /
+   *"You led worship for over a decade, then took the whole thing apart…"*
+2. **Anrede + Selbstvorstellung mit Link auf die Playlist**, ein Satz, was die
+   Show ist: *"a podcast about humans who've walked through the fire and came out
+   different."* Wortgleich in allen drei.
+3. **Der Spiegel**: seine eigene Parallele, konkret und mit Verlust benannt.
+   *"I burned down my 'safe, successful' career and crossed the world on my last
+   savings."*
+4. **Die Abgrenzung**: *"With you, I'm not interested in another
+   partisan-politics episode / another men's work 101."* Immer dieselbe
+   Konstruktion.
+5. **Der Fragenblock, kursiv, drei bis vier Fragen**, jede in der Tiefe unter dem
+   offensichtlichen Thema.
+6. **Das Reichweiten-Zugeständnis + Gästeliste + `You're one of them.`** —
+   wortgleich in allen drei. Rob Paddock, Scott Aaronson, Whitney Wheelock,
+   Francis Chouler, Rob Bennett.
+7. **Der Zeitrahmen als Grund**, warum jetzt: die Abreise, der Roadtrip.
+8. Sign-off. Bei Ken erstmals mit voller Firmierung: `Dreaming Big, Yannick N.
+   Bernard, YNB Ventures LLC, yannick-noah.com`.
+
+**Wer für ihn einen Pitch entwirft, baut ihn in dieser Reihenfolge.** Punkt 6 ist
+wörtlich zu übernehmen; das ist sein Satz, nicht meiner.

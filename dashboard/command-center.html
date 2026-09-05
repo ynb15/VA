@@ -374,9 +374,23 @@ details.cleared[open] summary::after{content:" ▴";}
 
     <li class="row s-wait">
       <input type="checkbox" data-item="meet-ken" aria-label="Meet Ken TikTok Live">
-      <span class="row-b"><span class="who">Meet Ken</span> — gestern 16:10 gelaufen, und ich weiß nicht, wie es ausging
-        <span class="row-sub">Zehn Minuten auf Dans Kanal, Matt Dalleys Slot, Ken Stern. Den ruhigen Raum hattest Du selbst gebucht: <strong>Huddle Room 2 bei Gevity, 16:00–16:30</strong>. Seitdem ist nichts eingegangen — weder von Matt Dalley noch aus Dans Richtung. <strong>Dass keine Mail kam, heißt nicht, dass es gut lief, und nicht, dass es schieflief.</strong> Ich lasse die Zeile offen, bis etwas kommt oder Du es mir sagst. <a href="https://docs.google.com/document/d/1vEwRYvWkqiqWXjWKnQMs_nB_4buoGro65TeJ_9ft4cc/edit?usp=sharing">Matts Doc</a>.</span></span>
-      <span class="age">gestern</span>
+      <span class="row-b"><span class="who">Meet Ken</span> — hat stattgefunden, und Du hast heute den Pitch nachgelegt
+        <span class="row-sub">Die Frage von gestern ist beantwortet, von Dir selbst: um 11:08 schreibst Du <em>"After our 10 minutes yesterday, I couldn't stop thinking about the long version…"</em> Also lief es, und es lief gut genug für einen vollen Gast-Pitch an Ken Stern. Zeile geschlossen.</span></span>
+      <span class="age">done</span>
+    </li>
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="ken-pitch-address" aria-label="Ken-Pitch an Matt Dalley">
+      <span class="row-b"><span class="who">Der Ken-Pitch, 11:08</span> — die Mail redet mit Ken und liegt in Matts Postfach
+        <span class="row-sub">Betreff "From South Africa to Austin", Anrede <strong>"Cheers Ken"</strong>, durchgehend an Ken geschrieben — <strong>zugestellt an mattjdalley@gmail.com</strong>, und kein Wort an Matt darüber. Zwei Lesarten, und ich kann von hier aus nicht entscheiden welche: entweder gewollt, weil Matt der Booker ist und weiterleitet — oder die falsche Adresse gegriffen. Wenn es die zweite ist, ist das in den nächsten Minuten billig zu heilen und später nicht mehr. <strong>Das ist meine Frage, nicht Deine Aussage.</strong><br>Zwei Kleinigkeiten im selben Text, falls Du ihn noch einmal anfasst: <em>"roadtrip through NN, AZ &amp; CO"</em> — in der Chase-Mail steht dort NM. Und <em>"a conversation that matters cross borders"</em>, wo <em>across</em> hingehört. Beides ändert nichts an der Wirkung, ich sage es nur, weil der Rest der Mail sehr präzise ist.</span></span>
+      <span class="age hot">11:08</span>
+    </li>
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="anthropic-billing" aria-label="Anthropic Zahlung fehlgeschlagen">
+      <span class="row-b"><span class="who">Anthropic</span> — Zahlung geplatzt, Zugang pausiert, eine halbe Stunde später eine Quittung
+        <span class="row-sub">10:36: <em>"$100.00 payment to Anthropic, PBC was unsuccessful"</em>, direkt danach <em>"Dein Abonnementzugang wurde pausiert"</em>. 11:01 eine Wise-Überweisung raus, 11:06 eine Anthropic-Quittung rein. Das liest sich, als hättest Du es selbst repariert — <strong>ich kann es nicht bestätigen: die Quittung ging an info@yannickbernard.com, und dieses Postfach ist für mich gesperrt.</strong> Ich sehe nur die Betreffzeilen. Der Punkt, der bleibt: das ist innerhalb einer Woche die <strong>dritte</strong> fehlgeschlagene Abbuchung — Webflow, Google Workspace, jetzt Anthropic. Drei Anbieter, ein Zahlungsmittel.</span></span>
+      <span class="age hot">10:36</span>
     </li>
 
     <li class="row s-wait">
@@ -1100,7 +1114,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-05T10:09:00-05:00");
+  var SWEPT = new Date("2026-09-05T11:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
