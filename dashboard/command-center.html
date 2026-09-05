@@ -547,8 +547,8 @@ details.cleared[open] summary::after{content:" ▴";}
 
     <li class="row s-wait">
       <input type="checkbox" data-item="sat-sutcliffe" aria-label="Saturday Sutcliffe">
-      <span class="row-b"><span class="who">Saturday 12:00</span> — "David Sutcliffe?", two and a half hours
-        <span class="row-sub">You put it there this afternoon with a question mark. If it holds, that's a working Saturday. The flip rule says a weekday comes off; it hasn't yet.</span></span>
+      <span class="row-b"><span class="who">Samstag</span> — drei Blöcke, und zwei davon stoßen ohne Lücke aneinander
+        <span class="row-sub"><strong>10:00–12:00 Members Writing Session</strong> der ATX Writing Club bei Stargazer, 979 Springdale Rd — von Dir zugesagt, mit Ticket im Anhang. <strong>12:00–14:30 "David Sutcliffe?"</strong>, das Fragezeichen ist Deins und steht seit Montag. <strong>16:00–18:00 Eben Britton Review.</strong> Springdale Rd ist East Austin; zwischen Ende der Schreibsession und Beginn des Sutcliffe-Blocks liegt keine Minute Fahrzeit, und beim Sutcliffe-Block steht kein Ort. Das ist die einzige Stelle, die morgen früh eine Entscheidung braucht — welche der beiden zuerst nachgibt, ist Deine.</span></span>
       <span class="age">Sat</span>
     </li>
 
@@ -659,9 +659,9 @@ details.cleared[open] summary::after{content:" ▴";}
     </li>
     <li class="row s-wait">
       <input type="checkbox" data-item="sep5-studio" aria-label="5 Sep studio hold">
-      <span class="row-b"><span class="who">Saturday 5 September</span> — a studio booked with nobody in it
-        <span class="row-sub">Just Push Record, 10:00–12:00, confirmed on both sides. No guest on the calendar for it. Either someone is coming who isn't written down, or that's a Saturday you can have back.</span></span>
-      <span class="age">5 Sep</span>
+      <span class="row-b"><span class="who">Saturday 5 September</span> — die Studio-Zeile war falsch, ich nehme sie zurück
+        <span class="row-sub">Ich hatte hier stehen: "Just Push Record, 10:00–12:00, confirmed on both sides, kein Gast." <strong>Das Studio ist am Samstag gar nicht gebucht.</strong> Die Calendly-Buchung war Freitag 09:00–11:00 — Matt Defina, mit Gast, und die hat heute Morgen stattgefunden. Es ist derselbe Lesefehler wie bei Matts Uhrzeit, den ich an zwei Stellen hatte und nur an einer korrigiert habe. Was am Samstag wirklich steht, liegt eine Zeile weiter.</span></span>
+      <span class="age">korrigiert</span>
     </li>
     <li class="row s-wait">
       <input type="checkbox" data-item="magicmonday-drift" aria-label="MagicMonday drift">
@@ -1101,7 +1101,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-04T19:09:00-05:00");
+  var SWEPT = new Date("2026-09-04T20:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

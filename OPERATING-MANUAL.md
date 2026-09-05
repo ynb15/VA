@@ -1157,3 +1157,15 @@ nicht der Preis.
 
 Anrede: `Howdy <Vorname>,` gilt auch an eine Einzelperson, nicht nur als
 Gruppenanrede. Details in voice/german-register.md.
+
+═══ EIN LESEFEHLER SITZT MEIST AN ZWEI STELLEN ═══
+
+04.09.: Matt Definas Zeit stand falsch auf dem Board (10:00 statt 09:00–11:00).
+Ich habe die Zeile korrigiert — und die **zweite** Zeile übersehen, die aus
+derselben Fehllesung gebaut war ("Samstag 5. Sep, Just Push Record 10:00–12:00,
+kein Gast"). Die Studio-Buchung war Freitag, nicht Samstag, und hatte einen Gast.
+
+Regel: **wenn eine Korrektur eine Uhrzeit oder ein Datum betrifft, grep über das
+ganze Board nach demselben Ort, derselben Uhrzeit und demselben Namen**, bevor
+die Korrektur als erledigt gilt. Eine falsche Uhrzeit erzeugt fast immer mehr als
+eine falsche Zeile.
