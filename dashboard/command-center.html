@@ -646,11 +646,11 @@ details.cleared[open] summary::after{content:" ▴";}
 
   <div class="eyebrow">Days worth watching</div>
   <ul class="rows">
-    <li class="row s-crit">
+    <li class="row s-wait">
       <input type="checkbox" data-item="sat-collision" aria-label="Samstag Kollision">
-      <span class="row-b"><span class="who">Samstag 5.</span> — 12:00 endet die Schreibsession, 12:00 beginnt Sutcliffe
-        <span class="row-sub">Members Writing Session 10:00–12:00 bei Stargazer, 979 Springdale Rd, East Austin, von Dir zugesagt. "David Sutcliffe?" 12:00–14:30, ohne Ort, mit Deinem Fragezeichen seit Montag. Keine Fahrzeit dazwischen. Danach 16:00–18:00 Eben-Review. Sechseinhalb Stunden Kalender an einem Samstag.</span></span>
-      <span class="age hot">Sat</span>
+      <span class="row-b"><span class="who">Samstag 5.</span> — die 12:00-Stelle liegt hinter Dir, der Abendblock nicht
+        <span class="row-sub">Schreibsession 10:00–12:00 bei Stargazer und "David Sutcliffe?" 12:00–14:30 stießen ohne Fahrzeit aneinander. Wie Du das gelöst hast, weiß ich nicht: beide Blöcke stehen unverändert im Kalender, und daraus lässt sich nicht ablesen, was tatsächlich stattgefunden hat. <strong>Noch offen heute: 16:00–18:00 Eben Britton (Review).</strong> Das Fragezeichen hinter Sutcliffe steht weiter da.</span></span>
+      <span class="age">16:00</span>
     </li>
 
     <li class="row s-crit">
@@ -1114,7 +1114,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-05T14:08:00-05:00");
+  var SWEPT = new Date("2026-09-05T15:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
