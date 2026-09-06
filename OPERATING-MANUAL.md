@@ -1250,3 +1250,23 @@ nie mehr "keine Antwort" oder "still seit X Tagen" behaupten. Stille auf einem
 Kanal, den ich nicht sehe, ist keine Stille.
 
 Betroffen bisher: Chase Reeves (SMS, 06.09.).
+
+═══ GUATEMALA HAT KEINE SOMMERZEIT ═══
+
+06.09.: Termin mit Casa Buho in Antigua vorgeschlagen, "1-3 your time".
+**Guatemala liegt ganzjährig auf UTC−6.** Austin ist von März bis November auf
+UTC−5, danach auf UTC−6. Also: **jetzt eine Stunde Unterschied (Guatemala 13:00 =
+Austin 14:00), ab November keine.** Wenn ein Guatemala-Termin über den
+Zeitumstellungstermin hinausreicht, neu rechnen.
+
+═══ ES GIBT DINGE, DIE NUR IN SEINEN MAILS EXISTIEREN ═══
+
+06.09.: In der Mail an Ethan erwähnt er zum ersten Mal eine **Abschiedsparty am
+Freitagabend in seinem Cherrywood-Hinterhof**. Kein Kalenderblock, keine
+Einladung, keine Gästeliste — nichts, was ich ohne diese eine Mail je gesehen
+hätte.
+
+**Regel: ein Termin, den er in einer Mail beschreibt, ist ein echter Termin, auch
+wenn der Kalender leer ist.** Auf die Zeile damit, mit dem ausdrücklichen
+Hinweis, dass ich den Rest nicht sehe. Nicht anlegen, nicht nachfragen, nicht
+drängen — nur sichtbar machen, dass es existiert.

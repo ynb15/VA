@@ -474,9 +474,9 @@ details.cleared[open] summary::after{content:" ▴";}
 
     <li class="row s-wait">
       <input type="checkbox" data-item="casabuho" aria-label="Casa Buho interview">
-      <span class="row-b"><span class="who">Casa Buho, Antigua</span> — Lars wants to interview you next week
-        <span class="row-sub">"We received an application from you for the Community Manager position. Would you be available for an interview next week at some point." Came in at 10:14 to the info@ address. Next week is the two podcast preps and Kyle on Monday; the week after is the road trip. Whether this is still live is yours to say — I only know the application exists.</span></span>
-      <span class="age">10:14</span>
+      <span class="row-b"><span class="who">Casa Buho, Antigua</span> — Du hast nach neun Tagen geantwortet und Donnerstag vorgeschlagen
+        <span class="row-sub">Heute 14:45 an Lars: <em>"how about this upcoming Thursday sometime between 1-3 your time?"</em> <strong>Guatemala liegt ganzjährig auf UTC−6, Austin gerade auf UTC−5 — 13:00–15:00 dort sind also 14:00–16:00 hier.</strong> Zwei Dinge dazu: der Termin steht noch nirgends im Kalender, und in dem Fenster liegt bereits <strong>Substack: Post, 15:30–16:00</strong>. Wenn Lars zusagt, ist das die Stelle, die nachgibt. Sobald es fest ist, lege ich den Block an — Kalenderschreiben scheitert im Moment noch am Token.</span></span>
+      <span class="age hot">Do</span>
     </li>
 
     <li class="row s-warn">
@@ -530,11 +530,18 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="age warm">8d</span>
     </li>
 
+    <li class="row s-ok">
+      <input type="checkbox" data-item="ethan-coffee" checked aria-label="Ethan coffee">
+      <span class="row-b"><span class="who">Ethan Brooks</span> — beantwortet, und Du hast ihm stattdessen etwas Größeres angeboten
+        <span class="row-sub">Seine Frage <em>"What kind of surprise?"</em> hast Du heute 14:38 beantwortet, ohne sie zu beantworten: <em>"You know I can't spoil it haha — only the people in the room Monday get to see that one."</em> Und dann der eigentliche Zug: <strong>eine Einladung zu Deiner Abschiedsparty am Freitagabend im Cherrywood-Hinterhof.</strong> Dieselbe Bewegung wie bei Chase — der Anlauf, der nichts verlangt, ist der, der ankommt. Zeile geschlossen; die Party steht separat.</span></span>
+      <span class="age">14:38</span>
+    </li>
+
     <li class="row s-warn">
-      <input type="checkbox" data-item="ethan-coffee" aria-label="Ethan coffee">
-      <span class="row-b"><span class="who">Ethan Brooks</span> — er sagt ab und stellt eine Frage, die noch steht
-        <span class="row-sub">Du hattest ihm gestern 15:06 das Ersatzticket für Chris Williamsons Show am Montagabend angeboten. Heute 12:37 sagt er ab — und hängt <strong>"What kind of surprise?"</strong> dran. Die Frage ist unbeantwortet. Davor lag schon "Listening now" vom 22. Aug ohne Termin. Zweimal offene Tür, zweimal keine Uhrzeit.</span></span>
-      <span class="age warm">12:37</span>
+      <input type="checkbox" data-item="goodbye-party" aria-label="Abschiedsparty Freitag">
+      <span class="row-b"><span class="who">Deine Abschiedsparty</span> — Freitagabend, Cherrywood-Hinterhof, und nichts davon steht im Kalender
+        <span class="row-sub">Heute erstmals erwähnt, in der Mail an Ethan: <em>"I'm throwing a little goodbye party or rather see-you-soon-party this Friday eve in my Cherrywood backyard, with the craziest and most inspiring Austinites I've met these last three months."</em> <strong>Im Kalender steht für Freitagabend nichts</strong> — kein Block, keine Einladung, keine Gästeliste, die ich sehen kann. Ich weiß nicht, wen Du außer Ethan schon eingeladen hast, und ob das absichtlich mündlich läuft. Nur damit es einmal irgendwo steht, drei Tage vorher.</span></span>
+      <span class="age hot">Fr</span>
     </li>
 
     <li class="row s-ok">
@@ -1114,7 +1121,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-06T14:08:00-05:00");
+  var SWEPT = new Date("2026-09-06T15:08:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
