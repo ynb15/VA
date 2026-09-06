@@ -1201,3 +1201,21 @@ Methode, nicht der Fehler. Zweiter Beleg nach Cal → Chase.
 Vermittlungsweg, nicht ein Vergriff.** Wenn ich es trotzdem anspreche, dann als
 Frage und mit dieser Möglichkeit ausdrücklich daneben. Details in
 voice/german-register.md.
+
+═══ EIN STILLER SWEEP IST TROTZDEM EIN SWEEP ═══
+
+05.09., 18:00–21:00: vier Trigger entgegengenommen, jedes Mal die Mail geprüft,
+kein einziges Mal den Zeitstempel gesetzt und veröffentlicht. Der Posteingang war
+leer, es ging nichts verloren — aber das Board stand vier Stunden auf 17:09 und
+behauptete damit eine Frische, die es nicht hatte. **Der Zeitstempel ist die
+einzige Zusage, die das Board von sich aus macht: "bis hierher habe ich
+nachgesehen." Er wird bei jedem Sweep gesetzt und veröffentlicht, gerade wenn
+nichts passiert ist** — sonst ist Stille auf dem Board nicht mehr von einem
+ausgefallenen Alfred zu unterscheiden.
+
+═══ IN EINE DATENBANKZEILE NUR, WAS BELEGT IST ═══
+
+05.09.: In der neuen Ken-Stern-Zeile stand "Ehemaliger CEO von NPR". Das kam aus
+meinem Vorwissen, nicht aus einer Mail. Ersetzt durch Yannicks eigene Formulierung
+plus einen ausdrücklichen Herkunftshinweis. Notion ist für ihn eine Quelle, kein
+Notizzettel — was dort steht, liest er später als Tatsache.
