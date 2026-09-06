@@ -1219,3 +1219,22 @@ ausgefallenen Alfred zu unterscheiden.
 meinem Vorwissen, nicht aus einer Mail. Ersetzt durch Yannicks eigene Formulierung
 plus einen ausdrücklichen Herkunftshinweis. Notion ist für ihn eine Quelle, kein
 Notizzettel — was dort steht, liest er später als Tatsache.
+
+═══ BEI HONORAR IST ER DER LIEFERANT — DIE PREISREGEL GREIFT ANDERSHERUM ═══
+
+Die Regel "Preis kommt nicht per Mail" gilt für seine Anfragen **an** Lieferanten
+(Studios, Editoren). Bei Brandlift steht er auf der anderen Seite: Onboarding,
+Briefing, Buch, Gegenangebot, Starttermin, drei Kick-Off-Slots — und niemand hat
+je gesagt, was die Arbeit zahlt. Da darf die Frage vorkommen, und ein bestätigter
+Termin ist die natürliche Stelle dafür.
+
+**Beim Vorschlagen immer dazusagen, dass es mein Vorschlag ist und nicht seine
+Gewohnheit.** Er hat die Frage in sechs Wochen nicht gestellt; das kann Absicht
+sein.
+
+═══ 15./16.10. BERLIN ↔ SÜDAFRIKA: KEINE VERSCHIEBUNG ═══
+
+Bis zum 25.10. liegen CEST (Berlin) und SAST (Südafrika) beide auf UTC+2. Ein
+Termin an diesen Tagen hat auf beiden Seiten dieselbe Uhrzeit. **Ab 26.10. nicht
+mehr** — dann fällt Berlin auf UTC+1 und Südafrika liegt eine Stunde vor.
+Trotzdem bei jeder Einladung das `timeZone`-Feld prüfen, nicht die angezeigte Uhr.
