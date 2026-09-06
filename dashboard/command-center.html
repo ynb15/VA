@@ -379,11 +379,11 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="age">done</span>
     </li>
 
-    <li class="row s-ok">
-      <input type="checkbox" data-item="ken-pitch-address" checked aria-label="Ken-Pitch weitergeleitet">
-      <span class="row-b"><span class="who">Der Ken-Pitch</span> — meine Frage von heute Mittag ist beantwortet, und zwar gegen mich
-        <span class="row-sub">Ich hatte gefragt, ob die an Ken adressierte Mail versehentlich in Matt Dalleys Postfach gelandet ist. War sie nicht. <strong>Matt hat um 16:17 geantwortet: "Hey Yannick - happy to connect you with Ken here!" — und Ken direkt ins CC gesetzt, kenneth.stern@palisadesmv.com.</strong> Der Weg war der Punkt: den Text an den Zielgast schreiben, an den Vermittler schicken, der stellt vor. Genau die Form, die bei Cal → Chase funktioniert hat. Nichts zu tun; der Ball liegt bei Ken.</span></span>
-      <span class="age">16:17</span>
+    <li class="row s-wait">
+      <input type="checkbox" data-item="ken-pitch-address" aria-label="Ken-Pitch weitergeleitet">
+      <span class="row-b"><span class="who">Ken Stern</span> — heute 12:57 direkt an ihn, wortgleich
+        <span class="row-sub">Matt hatte Samstag 16:17 vorgestellt (<em>"happy to connect you with Ken here!"</em>) und Ken ins CC gesetzt. Heute schickst Du den Pitch <strong>Wort für Wort noch einmal, diesmal nur an kenneth.stern@palisadesmv.com</strong>, Matt raus. Derselbe Zug wie bei Rob Paddock und Chase: nachfassen heißt bei Dir, das Original noch einmal zu schicken, nicht etwas Neues zu schreiben. Dritter Beleg.<br>Eine Kleinigkeit, einmal gesagt und dann nicht mehr: der Satz <em>"I roll out Sunday"</em> stand am Samstag für nächsten Sonntag. Heute <em>ist</em> Sonntag — für Ken liest sich das jetzt so, als wärst Du schon weg. Auch <em>"NN, AZ &amp; CO"</em> und <em>"cross borders"</em> sind mitgereist. Nichts davon kippt die Mail; ich sage es, weil der Rest sehr genau ist.</span></span>
+      <span class="age">12:57</span>
     </li>
 
     <li class="row s-warn">
@@ -1114,7 +1114,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-06T12:08:00-05:00");
+  var SWEPT = new Date("2026-09-06T13:08:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

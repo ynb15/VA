@@ -434,3 +434,19 @@ Für mich: **eine an X adressierte Mail im Postfach von Y ist bei ihm kein Fehle
 bevor ich nicht das Gegenteil weiß.** Ich hatte das am 05.09. als mögliche
 Fehladressierung auf die Zeile geschrieben; die Frage war zulässig, die
 Vermutung war falsch.
+
+## Nachtrag 06.09. — nachfassen heißt: dasselbe noch einmal schicken
+
+Drei Belege in acht Tagen:
+
+- **04.09. Rob Paddock** — er leitet seine eigene Mail vom 15.08. an ihn zurück.
+- **01.09. Chase Reeves** — nach Cals Intro pastet er den kompletten Pitch vom
+  27.08. unter zwei neue Sätze.
+- **06.09. Ken Stern** — wortgleicher Versand des Samstags-Pitches, diesmal direkt
+  an Ken statt an den Vermittler.
+
+**Er schreibt nicht neu. Er schickt noch einmal.** Wer für ihn ein Follow-up
+entwirft, formuliert also keine neue Fassung, sondern höchstens zwei Sätze davor
+— und lässt das Original stehen. Die einzige Ausnahme bisher ist der dritte
+Anlauf bei Chase (04.09.), der gar keinen Pitch mehr enthielt, sondern nur ein
+Angebot.
