@@ -1238,3 +1238,15 @@ Bis zum 25.10. liegen CEST (Berlin) und SAST (Südafrika) beide auf UTC+2. Ein
 Termin an diesen Tagen hat auf beiden Seiten dieselbe Uhrzeit. **Ab 26.10. nicht
 mehr** — dann fällt Berlin auf UTC+1 und Südafrika liegt eine Stunde vor.
 Trotzdem bei jeder Einladung das `timeZone`-Feld prüfen, nicht die angezeigte Uhr.
+
+═══ WENN EIN FADEN AUF SMS WANDERT, ENDET MEINE SICHT ═══
+
+06.09.: Chase Reeves beendet den Mailwechsel mit "Shoot me a text: 503-704-6809.
+We'll figure something out via text." Ab da sehe ich nichts mehr.
+
+**Regel: sobald jemand auf einen Kanal wechselt, den ich nicht lese (SMS,
+WhatsApp, Telefon, DM), gehört das auf die Zeile** — und die Zeile darf danach
+nie mehr "keine Antwort" oder "still seit X Tagen" behaupten. Stille auf einem
+Kanal, den ich nicht sehe, ist keine Stille.
+
+Betroffen bisher: Chase Reeves (SMS, 06.09.).

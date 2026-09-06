@@ -539,9 +539,9 @@ details.cleared[open] summary::after{content:" ▴";}
 
     <li class="row s-ok">
       <input type="checkbox" data-item="williamson-ticket" aria-label="Williamson ticket re-offered">
-      <span class="row-b"><span class="who">Das Williamson-Ticket</span> — vier Stunden frei, dann weitergegeben
-        <span class="row-sub">Ethan sagt um 12:37 ab, um <strong>16:46 liegt es bei Chase Reeves</strong>: "one last try… I've got a spare ticket to Chris' show Monday eve - and a little surprise planned for him too… No pressure. If you're not feeling it, all good." Dritter Anlauf bei Chase, seit dem 27. Aug, und der erste, der ihm nichts abverlangt. Nichts für Dich zu tun — die Zeile steht hier, damit das Ticket nicht zweimal vergeben wird.</span></span>
-      <span class="age">16:46</span>
+      <span class="row-b"><span class="who">Das Williamson-Ticket</span> — zweimal abgesagt, und die Show ist morgen Abend
+        <span class="row-sub">Ethan am Freitag 12:37, jetzt Chase heute 11:26: <em>"I've got my kiddos currently so would be hard to get away for monday evening, but very grateful for the invite."</em> Beide sagen dankend ab, beide aus Gründen, die nichts mit Dir zu tun haben. <strong>Das Ticket ist wieder frei, und die Show läuft morgen Abend.</strong> Ob Du es noch einmal anbietest oder verfallen lässt, ist Deine Sache — ich sage nur, dass die Uhr jetzt läuft.</span></span>
+      <span class="age hot">Mo</span>
     </li>
 
 
@@ -745,7 +745,7 @@ details.cleared[open] summary::after{content:" ▴";}
       <li class="row"><input type="checkbox" data-item="msfm-cal" aria-label="Cal walk"><span class="row-b">Cal Callahan — walked this morning, essay read and answered by 13:22<span class="row-sub">"The Siren's Song", on ketamine-induced psychosis. Still not booked as a guest, and you didn't ask. Via Eb Britton with a nudge from Sutcliffe, not via Kyle.</span></span><span class="age">answered</span></li>
       <li class="row s-warn"><input type="checkbox" data-item="lance-pitch" aria-label="Lance"><span class="row-b">Lance Armstrong — sent 27 Aug, 13:04<span class="row-sub">Live at lance@nextventures.com. Both Transcarent addresses bounced on arrival.</span></span><span class="age">sent</span></li>
       <li class="row s-wait"><input type="checkbox" data-item="dean-karnazes" aria-label="Dean Karnazes"><span class="row-b">Dean Karnazes — pitch sent 27 Aug, 14:59<span class="row-sub">One address, dkarnazes@yahoo.com, no bounce. He's Bay Area, so the SF trip is the whole argument. Kyle on Monday is the warm route if this one goes quiet.</span></span><span class="age">sent</span></li>
-      <li class="row s-wait"><input type="checkbox" data-item="chase-reeves" aria-label="Chase Reeves"><span class="row-b">Chase Reeves — sent 27 Aug, 15:58<span class="row-sub">Austin. Cal hosts him and they share a men's group; he sat in Sutcliffe's retreat. Went to chase@matterful.co and chasereeves@gmail.com, no bounce. Cal is still the warm route if it goes quiet.</span></span><span class="age">sent</span></li>
+      <li class="row s-ok"><input type="checkbox" data-item="chase-reeves" checked aria-label="Chase Reeves"><span class="row-b">Chase Reeves — antwortet, und sagt ja<span class="row-sub"><strong>Heute 11:26, nach drei Anläufen:</strong> "Sir Yannick! Apologies for the delay. Shoot me a text: 503-704-6809. Yea, let's do a hang or a call or something." Montagabend geht nicht, er hat die Kinder. Angekommen ist der dritte Anlauf — der, der nichts verlangt hat. <strong>Ab jetzt läuft es per SMS, also außerhalb meiner Sicht</strong>; was dort verabredet wird, erfahre ich nur von Dir.</span></span><span class="age">✓</span></li>
       <li class="row s-wait"><input type="checkbox" data-item="joe-hudson" aria-label="Joe Hudson"><span class="row-b">Joe Hudson (AOA) — follow-up sent 27 Aug, 14:05<span class="row-sub">Micah gatekept it in July; you went back to the principal's inbox with the SF trip as the reason. Nine names, the in-person rule, no ask beyond an hour.</span></span><span class="age">sent</span></li>
       <li class="row s-warn"><input type="checkbox" data-item="burning-man" aria-label="Burning Man CEO"><span class="row-b">Burning Man CEO — end of September, at their HQ<span class="row-sub">You told Joe you're invited to record there. No date on the calendar, nothing in the Databank, and it anchors the whole California leg.</span></span><span class="age hot">Sep</span></li>
       <li class="row"><input type="checkbox" data-item="msfm-matt" aria-label="Matt Defina"><span class="row-b">Matt Defina — Fri 4 Sep, 09:00–11:00, JPR<span class="row-sub">Accepted 14 Aug. Booked all along.</span></span><span class="age">4 Sep</span></li>
@@ -1114,7 +1114,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-06T11:09:00-05:00");
+  var SWEPT = new Date("2026-09-06T12:08:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
