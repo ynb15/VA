@@ -492,3 +492,23 @@ bleibt die Stelle leer und er füllt sie.
 
 Sign-off in beiden: `Dreaming Big, Yannick N. Bernard, YNB Ventures LLC,
 yannick-noah.com` — die volle Firmierung, wie beim Ken-Pitch.
+
+## Nachtrag 07.09. — das fünfte Register: die Bitte am Tag selbst
+
+16:30 an Chris Williamson und zwei Team-Adressen, für einen Abend, der in Stunden
+beginnt. **Fünf Sätze, das Kürzeste, was ich von ihm kenne.**
+
+Aufbau:
+1. **Entschuldigung für die Störung, mit dem Grund im Nebensatz:** *"I know you've
+   got a show to prep for, (I flew here all the way from South Africa to attend
+   it) so I'll make it short"* — die Anreise steht in Klammern, nicht als Anspruch.
+2. **Die Gemeinsamkeit in einem Halbsatz:** *"I, like you, came to America to build
+   an impactful podcast"*.
+3. **Das Geschenk**, ohne es zu benennen.
+4. **Die Bitte, klein und beziffert:** *"If you have 3min"*.
+5. **Die Handynummer.** Er macht sich erreichbar, statt einen Termin zu wollen.
+
+**Regel: je näher der Termin, desto kürzer die Mail und desto kleiner die Bitte.**
+Wer für ihn kurzfristig anfragt, lässt Gästeliste, Reichweite und Fragenblock
+komplett weg — die gehören zum Pitch mit Vorlauf, nicht zur Bitte am selben Tag.
+Und er nennt eine Zahl: drei Minuten, nicht "kurz".
