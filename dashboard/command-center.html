@@ -423,8 +423,8 @@ details.cleared[open] summary::after{content:" ▴";}
 
     <li class="row s-crit">
       <input type="checkbox" data-item="webflow-billing" aria-label="Webflow billing failed">
-      <span class="row-b"><span class="who">Webflow</span> — yannickbernard.com is at risk of being unpublished, 05:35
-        <span class="row-sub">Repeated failed charges on the card on file, still unresolved five days on. Today at 10:48 the Google Workspace invoice for yannick-noah.com arrived, set to auto-charge. I don't know whether that is the same card — if it is, this one fails too and takes your mail domain with it. That is inference, not something either of them said.</span></span>
+      <span class="row-b"><span class="who">Webflow</span> — es ist passiert: der Plan ist gekündigt, heute 05:35
+        <span class="row-sub">Betreff: <strong>"Your Site plans CMS Hosting Plan plan has been canceled."</strong> Aus der Warnung von letzter Woche ist eine Tatsache geworden. <strong>Die Mail ging an info@yannickbernard.com, und dieses Postfach kann ich nicht öffnen — ich habe nur die Betreffzeile</strong>, nicht die Frist, nicht ob die Seite schon offline ist, nicht was das Reaktivieren kostet. Das steht auf yannickbernard.com. Vorgeschichte: mehrfach fehlgeschlagene Abbuchungen auf derselben Karte, dazu die geplatzte Anthropic-Zahlung am Samstag und die Google-Workspace-Rechnung mit Auto-Abbuchung. <strong>Drei Anbieter, ein Zahlungsmittel</strong> — meine Schlussfolgerung, nicht deren Aussage.</span></span>
       <span class="age hot">05:35</span>
     </li>
 
@@ -472,11 +472,11 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="age">07:21</span>
     </li>
 
-    <li class="row s-wait">
+    <li class="row s-warn">
       <input type="checkbox" data-item="casabuho" aria-label="Casa Buho interview">
-      <span class="row-b"><span class="who">Casa Buho, Antigua</span> — Du hast nach neun Tagen geantwortet und Donnerstag vorgeschlagen
-        <span class="row-sub">Heute 14:45 an Lars: <em>"how about this upcoming Thursday sometime between 1-3 your time?"</em> <strong>Guatemala liegt ganzjährig auf UTC−6, Austin gerade auf UTC−5 — 13:00–15:00 dort sind also 14:00–16:00 hier.</strong> Zwei Dinge dazu: der Termin steht noch nirgends im Kalender, und in dem Fenster liegt bereits <strong>Substack: Post, 15:30–16:00</strong>. Wenn Lars zusagt, ist das die Stelle, die nachgibt. Sobald es fest ist, lege ich den Block an — Kalenderschreiben scheitert im Moment noch am Token.</span></span>
-      <span class="age hot">Do</span>
+      <span class="row-b"><span class="who">Casa Buho, Antigua</span> — Lars verschiebt, und die Stelle ist eine andere geworden
+        <span class="row-sub">Heute 03:15: Donnerstag geht nicht, er ist selbst im Ausland und terminlich fremdbestimmt — <em>"Do you think you could make it sometime the week after this one?"</em> Das wäre die Woche ab dem 14., also mitten im Roadtrip: Strassman am 15. in Albuquerque, Ian am 16./17. in Scottsdale. Machbar, aber eng.<br><strong>Wichtiger als der Termin: die Stelle hat sich verschoben.</strong> Seine erste Mail sagte "October throughout March". Jetzt schreibt er: <em>"We are looking for someone to cover for us from mid December to mid 2027 so any 2 or months that you see that you could fill in during that time would be great."</em> Also nicht mehr ab Oktober, sondern <strong>ab Mitte Dezember</strong>, und in Zwei-Monats-Blöcken. Daneben gelegt, ohne Rat: ab Mitte Oktober startest Du Brandlift, Luis' Kick-Off-Termine liegen am 15./16.10.</span></span>
+      <span class="age hot">03:15</span>
     </li>
 
     <li class="row s-warn">
@@ -1135,7 +1135,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-06T22:09:00-05:00");
+  var SWEPT = new Date("2026-09-07T07:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
