@@ -537,6 +537,13 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="age">14:38</span>
     </li>
 
+    <li class="row s-wait">
+      <input type="checkbox" data-item="rosedale" aria-label="Rosedale Press Absage">
+      <span class="row-b"><span class="who">Rosedale Press</span> — Absage, 19:57, und ich wusste nicht, dass Du eingereicht hast
+        <span class="row-sub">"We will not be moving forward with your submission" für Volume One, Formbrief, per BCC an einen Verteiler. Nichts zu tun und nichts zu antworten. Ich schreibe es hin, weil es zwischen den Newslettern untergeht und weil es das zweite Mal an einem Tag ist, dass etwas in Deinem Leben auftaucht, von dem ich vorher nichts wusste — nach der Abschiedsparty. Kein Vorwurf, nur eine Standortbestimmung, was ich sehe und was nicht.</span></span>
+      <span class="age">19:57</span>
+    </li>
+
     <li class="row s-warn">
       <input type="checkbox" data-item="goodbye-party" aria-label="Abschiedsparty Freitag">
       <span class="row-b"><span class="who">Deine Abschiedsparty</span> — Freitagabend, Cherrywood-Hinterhof, und nichts davon steht im Kalender
@@ -1121,7 +1128,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-06T19:10:00-05:00");
+  var SWEPT = new Date("2026-09-06T20:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
