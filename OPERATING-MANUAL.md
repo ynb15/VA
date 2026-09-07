@@ -1270,3 +1270,25 @@ hätte.
 wenn der Kalender leer ist.** Auf die Zeile damit, mit dem ausdrücklichen
 Hinweis, dass ich den Rest nicht sehe. Nicht anlegen, nicht nachfragen, nicht
 drängen — nur sichtbar machen, dass es existiert.
+
+═══ VIER REGISTER, NICHT DREI ═══
+
+Der Sponsoring-Pitch ist ein eigenes Instrument, nicht eine Variante des
+Gast-Pitches. Belegt am 03.09. mit LMNT und Momentous. Vollständige Analyse und
+der Diff zwischen beiden Fassungen in voice/german-register.md unter
+"Wochenabgleich 07.09.".
+
+Das Wichtigste in einem Satz: **beim Gast verschweigt er seine Zahlen, beim
+Sponsor legt er sie offen — samt knapper Kasse — und beweist Echtheit mit einem
+Detail, das ihn etwas kostet.** Dieses Detail nie erfinden.
+
+═══ GÄSTE, DIE ER NENNT, ABER DIE NICHT IM DATABANK STEHEN ═══
+
+Beim Abgleich am 07.09. gefunden: In beiden Sponsoring-Pitches führt er
+**Sean Meyersfield (CrossFit Champion)** und **Logan Gonzalez (ex-Navy SEAL)** als
+Gäste auf. **Keiner von beiden hat eine Databank-Zeile.** Logan hat einen
+Kalenderblock (Fr 11.09. 15:30–17:00, JPR, mit Fragezeichen), Sean nirgends etwas.
+
+**Regel: die Gästeliste in seinen Pitches ist eine eigene Quelle.** Bei jedem
+Abgleich gegen den Databank prüfen — er nennt dort Namen, die sonst nirgends
+auftauchen.

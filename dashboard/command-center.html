@@ -472,6 +472,13 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="age">07:21</span>
     </li>
 
+    <li class="row s-ok">
+      <input type="checkbox" data-item="weekly-recon" checked aria-label="Wochenabgleich">
+      <span class="row-b"><span class="who">Wochenabgleich</span> — vier Lücken im Databank geschlossen, das Wochendokument liegt in Drive
+        <span class="row-sub">Beim Abgleich Deiner Pitches gegen den Databank sind zwei Gäste aufgefallen, <strong>die Du selbst auflistest, die aber nirgends eine Zeile hatten: Sean Meyersfield und Logan Gonzalez.</strong> Beide angelegt — Sean als "Not Started", weil ich keinen Beleg für einen Kontakt habe; Logan als "Confirmed", weil der Block am Fr 11.09. 15:30–17:00 bei JPR steht. Dazu: Francisco Medina stand auf "Not Started", obwohl Du ihn am 02.09. angeschrieben hast — korrigiert. Ken Stern neu, mit Adresse.<br>Der Wochenauszug 31.08.–06.09. liegt in <a href="https://docs.google.com/document/d/166f31Lyzk5jLMCV-3H4c5CpjBj64FWRRXhfVm96JbZo/edit">YNB x Claude</a>: was sich bewegt hat, was ich gelernt habe, was ich an mir korrigiert habe, was offen bleibt.</span></span>
+      <span class="age">✓</span>
+    </li>
+
     <li class="row s-warn">
       <input type="checkbox" data-item="casabuho" aria-label="Casa Buho interview">
       <span class="row-b"><span class="who">Casa Buho, Antigua</span> — Lars verschiebt, und die Stelle ist eine andere geworden
@@ -1135,7 +1142,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-07T07:10:00-05:00");
+  var SWEPT = new Date("2026-09-07T12:35:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

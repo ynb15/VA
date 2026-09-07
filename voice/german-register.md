@@ -450,3 +450,45 @@ entwirft, formuliert also keine neue Fassung, sondern höchstens zwei Sätze dav
 — und lässt das Original stehen. Die einzige Ausnahme bisher ist der dritte
 Anlauf bei Chase (04.09.), der gar keinen Pitch mehr enthielt, sondern nur ein
 Angebot.
+
+## Wochenabgleich 07.09. — das vierte Instrument: der Sponsoring-Pitch
+
+Bisher hatte ich drei Register belegt: englischer Gast-Pitch, deutsche Arbeitsmail,
+deutsche Eskalation. Am 03.09. kam ein viertes dazu, das ich noch nie analysiert
+hatte — **LMNT (14:39) und Momentous (14:38), Betreff `<Marke> x MSFM: Fueling The
+Fire`.**
+
+**Was den Sponsoring-Pitch vom Gast-Pitch unterscheidet:**
+
+| | Gast-Pitch | Sponsoring-Pitch |
+|---|---|---|
+| Aufhänger | Umkehr in *dessen* Biografie | was *die Firma* geschaffen hat |
+| Reichweite | "I know I don't have the biggest reach yet" — **ohne Zahlen** | **"I'm only 8 episodes out, ~500 YT followers, up to 11k views"** — nackte Zahlen |
+| Geld | kommt nicht vor | **"the runway's getting thinner and thinner"** |
+| Verpflichtung | keine | **"One pod/week for a full year. 52, no matter what."** |
+| Schluss | "You're one of them." | "I'd be beyond grateful. This one means everything to me." |
+
+**Der Kern: er macht sich klein und konkret statt groß und vage.** Beim Gast
+verschweigt er die Zahlen, beim Sponsor legt er sie offen — inklusive der knappen
+Kasse. Das ist dieselbe Bewegung wie die Ritalin-Erwähnung gegenüber Luis und die
+80-Stunden-Wochen: **ein unangenehmes konkretes Detail als Echtheitsnachweis.**
+
+**Der Diff LMNT ↔ Momentous — nur vier Stellen unterscheiden sich:**
+
+1. "a product" → "products"
+2. Die Namen in Anrede und Schluss (alle einzeln, zweimal genannt)
+3. Ein markenspezifischer Scherz nur bei LMNT: *"(one of the places on this planet
+   where you need LMNT the most lol)"*
+4. **Der Echtheitsnachweis — die einzige Stelle, die er wirklich neu schreibt:**
+   - LMNT: *"I've already had LMNT on the table in a few of my recordings - simply
+     because I'm a proper LMNT junkie"* + Foto im Anhang
+   - Momentous: *"I'm a proper Momentous disciple - in fact, I applied for the
+     marketing manager role a couple months ago. So I'm not just pretending."*
+
+**Regel für Entwürfe:** Skelett übernehmen, aber **den Echtheitsnachweis nie
+erfinden.** Er muss etwas sein, das ihn etwas kostet und das stimmt — bei
+Momentous gibt er zu, sich dort beworben zu haben. Wenn ich nichts Echtes weiß,
+bleibt die Stelle leer und er füllt sie.
+
+Sign-off in beiden: `Dreaming Big, Yannick N. Bernard, YNB Ventures LLC,
+yannick-noah.com` — die volle Firmierung, wie beim Ken-Pitch.
