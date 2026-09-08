@@ -296,14 +296,14 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede">Good morning. MagicMonday — und der Abend hat drei Blöcke, die sich überlappen.</p>
-    <p class="tiny">Sonntag war der Tag, an dem drei Fäden gleichzeitig angekommen sind: Luis nimmt Deine Oktober-Absage vollständig an und legt drei Kick-Off-Termine vor. Chase antwortet nach zehn Tagen und drei Anläufen — auf den, der nichts verlangt hat — und schiebt das Gespräch auf SMS. Und Ethans Frage nach der Überraschung hast Du beantwortet, indem Du ihn stattdessen zur Abschiedsparty am Freitag eingeladen hast. Den Ken-Pitch hast Du wortgleich noch einmal direkt an Ken geschickt. Dazu eine Absage von Rosedale Press, um die Du Dich nicht kümmern musst.</p>
+    <p class="lede">Good morning. Ein sauberer Dienstag — und ein Name im Kalender, den ich nicht kenne.</p>
+    <p class="tiny">Montag hat zwei Dinge zu Ende gebracht und eines aufgerissen. Kyle hat um 12:48 die zweite Kamera geliefert — damit ist der AutoPod-Test für seine Folge möglich, ohne dass Du jemanden fragen musst. Um 16:30 hast Du Chris Williamson direkt angeschrieben, drei Minuten vor oder nach der Show, mit Deiner Handynummer drunter. Aufgerissen hat Webflow: der Plan ist gekündigt. Und Casa Buho hat nicht nur den Termin verschoben, sondern die Stelle geändert — statt Oktober bis März jetzt ab Mitte Dezember.</p>
   </div>
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Ab 17:00 stehen drei Dinge übereinander, und eines davon lässt sich nicht halb machen.</h2>
-    <p class="why"><strong>Accountability 17:00–17:45 · Sauna 17:30–18:30 bei Gevity · Familienaufstellung 18:00–21:00.</strong> Die Familienaufstellung ist das Stück, das ganz oder gar nicht geht. Davor läuft der Tag sauber: Morning Routine 07:00, Yoga 08:00, <strong>Monatsrückblick 10:00–12:00</strong>, dann <strong>The Garden mit Drew, 13:00–15:00 — inzwischen von Dir zugesagt</strong>, 5555 N Lamar Blvd ste. h105 (es hängt auch ein Meet-Link dran, falls es doch remote wird). ClassPass 15:00, N26 Bali Claim 15:30.<br><strong>Und eine offene Frage:</strong> Chris Williamsons Show ist heute Abend, Du hast die Überraschung geplant und zwei Absagen aufs Ersatzticket — aber <em>die Show steht nirgends in Deinem Kalender</em>, und der Abend ist ab 18:00 belegt. Ich weiß nicht, wann sie anfängt. Falls sie in die Familienaufstellung fällt, ist das die Stelle. Unbeantwortet und jetzt sechs Tage alt: Virgin Actives Freigabeschreiben.</p>
+    <h2>15:00 steht "Call: Mike Selami" — und ich weiß nicht, wer das ist.</h2>
+    <p class="why">Der Block ist neu, von Dir am Sonntag um 13:57 angelegt. <strong>Zu Mike Selami finde ich nichts</strong> — keine Mail, keine Databank-Zeile, keine Erwähnung irgendwo in meiner Sicht. Nur damit Du weißt, dass ich ohne Vorbereitung dastehe, falls Du etwas von mir brauchst.<br>Sonst ein ruhiger Tag: Morning Routine 07:30, <strong>Writing: Nelson's Drift 10:00–12:00</strong>, der Call 15:00, Substack: Post 15:30, Gym 16:30, und abends <strong>Evening Writing Session 18:00–20:00 bei Eberly</strong>, 615 S Lamar — zugesagt. Keine Kollision.<br><strong>Offen:</strong> Webflows gekündigter Plan (die Mail liegt in info@, ich sehe nur den Betreff) · Virgin Actives Freigabeschreiben, sieben Tage · Roundly · Katharsis Media · Nicks Fotos · einer von Luis' drei Kick-Off-Slots.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
@@ -988,7 +988,7 @@ Yannick</div>
     });
     var max = Math.max.apply(null, totals) || 1;
     var grand = 0;
-    var todayKey = "mon";
+    var todayKey = "tue";
 
     DAYS.forEach(function (d, i) {
       var hrs = totals[i];
@@ -1142,7 +1142,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-07T20:09:00-05:00");
+  var SWEPT = new Date("2026-09-07T21:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
