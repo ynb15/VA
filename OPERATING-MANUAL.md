@@ -1292,3 +1292,41 @@ Kalenderblock (Fr 11.09. 15:30–17:00, JPR, mit Fragezeichen), Sean nirgends et
 **Regel: die Gästeliste in seinen Pitches ist eine eigene Quelle.** Bei jedem
 Abgleich gegen den Databank prüfen — er nennt dort Namen, die sonst nirgends
 auftauchen.
+
+═══════════════════════════════════════════════════════════════════════════════
+ABREISE AUS AUSTIN IST SONNTAG, 13.09.
+═══════════════════════════════════════════════════════════════════════════════
+
+Steht in keinem Kalender, den ich sehe. Steht in seiner Mail an Gabby vom
+07.09., 23:33: "I leave ATX on Sunday for a podcast road trip through NM, AZ &
+CO." Das passt zu Strassman am 15.09. in Albuquerque.
+
+Konsequenz für das Board: alles, was vor der Reise erledigt sein muss, hat ab
+jetzt eine Kante. Aber ich sage ihm nicht, was davon wichtig ist — ich sage,
+dass die Kante existiert.
+
+═══════════════════════════════════════════════════════════════════════════════
+MODERN WISDOM: EINE SIEBENMONATIGE KETTE, DIE ICH NICHT GESEHEN HABE
+═══════════════════════════════════════════════════════════════════════════════
+
+Vier Anläufe seit dem 20.02.2026 — careers@, dann Chris direkt (17.07.), dann
+Jonathan und Kyle mit Chris in CC (06.08.), dann Chris noch einmal (19.08.).
+Der erste ging von info@yannickbernard.com aus, dem Postfach, das für mich
+gesperrt ist. Sichtbar wurde das alles erst am 08.09., weil er die Kette selbst
+an gabby@chriswillx.com weitergeleitet hat.
+
+Merke: Wenn ein Vorgang plötzlich mit sieben Monaten Vorgeschichte auftaucht,
+ist das kein Bruch in seiner Arbeitsweise, sondern eine Lücke in meiner Sicht.
+Nicht "neu" nennen. Nachtragen und sagen, seit wann es läuft.
+
+Kontakte in dieser Kette: chris.williamson88@googlemail.com · jonathan@,
+kyle@, gabby@, careers@chriswillx.com.
+
+═══════════════════════════════════════════════════════════════════════════════
+DIE BURNING-MAN-EINLADUNG IST BELEGT
+═══════════════════════════════════════════════════════════════════════════════
+
+Marian Goodell, CEO von Burning Man, hat sein Outreach gelesen und ihn ins HQ
+nach San Francisco eingeladen. Quelle: seine eigene Mail an Chris vom 19.08.
+Die San-Francisco-Etappe war bis dahin nur eine Vermutung auf dem Board; sie
+ist jetzt eine Aussage von ihm — aber weiterhin ohne Datum.

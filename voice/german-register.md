@@ -512,3 +512,23 @@ Aufbau:
 Wer für ihn kurzfristig anfragt, lässt Gästeliste, Reichweite und Fragenblock
 komplett weg — die gehören zum Pitch mit Vorlauf, nicht zur Bitte am selben Tag.
 Und er nennt eine Zahl: drei Minuten, nicht "kurz".
+
+---
+
+## 08.09. — Das Dossier-Register: nach dem Handschlag kommt die Kette
+
+Nachtrag zum fünften Register (07.09., die persönliche Bitte am Tag selbst). Die Bitte hat funktioniert — er hat Chris Williamson getroffen und ihm das Buch übergeben. **Was danach kommt, ist ein eigenes Register**, und es sieht anders aus als alles davor.
+
+23:33, an **gabby@chriswillx.com** — nicht an Chris. Der Handschlag geht an die Person, die den Kalender führt.
+
+Aufbau:
+1. **Der Beleg, dass das Treffen stattgefunden hat**, in einem Halbsatz und ohne Pathos: *"thirteen shirts, one book. Finally getting the chance to hand it to Chris made all the struggles of the last couple months worth it."*
+2. **Der Anhang als Argument**: die ganze Kette seit Februar, weitergeleitet statt zusammengefasst. Begründung mitgeliefert: *"to prove that I'm not someone who waits to be told what to do. I just execute."*
+3. **Die Verknappung durch ein echtes Datum**: *"I leave ATX on Sunday."* Keine erfundene Dringlichkeit — der Roadtrip steht ohnehin.
+4. **Die kleine Bitte**: 20 Minuten. Wie beim fünften Register beziffert.
+5. **Die Übersteigerung, die die Bitte klein aussehen lässt**: *"I'll bend my whole schedule around whatever slot works - and if necessary, I'll cancel the trip."*
+6. **Der Satz, der seit Februar in jedem Anlauf steht**, nur der Vorname wechselt: *"I'm not looking for a job, Gabby. I'm looking for a mission. This is it."*
+
+**Die Regel:** Er fasst eine lange Vorgeschichte nie zusammen — er hängt sie vollständig an. Die Ausdauer ist das Argument, nicht die Erzählung darüber. Wenn ich für ihn je so eine Mail entwerfe: nicht kürzen, nicht paraphrasieren, weiterleiten.
+
+**Und der Satz mit dem Vornamen ist ein Anker, kein Textbaustein zum Umformulieren.** Er steht wörtlich in allen vier Anläufen seit dem 20.02. Wer ihn glättet, nimmt der Kette ihre Klammer.
