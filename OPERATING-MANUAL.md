@@ -1330,3 +1330,44 @@ Marian Goodell, CEO von Burning Man, hat sein Outreach gelesen und ihn ins HQ
 nach San Francisco eingeladen. Quelle: seine eigene Mail an Chris vom 19.08.
 Die San-Francisco-Etappe war bis dahin nur eine Vermutung auf dem Board; sie
 ist jetzt eine Aussage von ihm — aber weiterhin ohne Datum.
+
+═══════════════════════════════════════════════════════════════════════════════
+GELESEN UND NICHT AUFS BOARD GEBRACHT IST NICHT GESWEEPT
+═══════════════════════════════════════════════════════════════════════════════
+
+08.09.: Kens Zusage lag um 08:18 im Postfach, ich habe sie im 09:11-Sweep
+gelesen und erst Stunden später auf das Board gebracht. In der Zwischenzeit hat
+er selbst geantwortet.
+
+Regel: Was ich in einem Sweep lese und für ihn relevant halte, geht in
+demselben Sweep auf das Board — oder gar nicht. Ein Sweep, der etwas gesehen
+und liegen gelassen hat, ist schlimmer als ein stiller Sweep: er behauptet
+Ruhe, die es nicht gibt. (Verwandt mit "Ein stiller Sweep ist trotzdem ein
+Sweep" vom 06.09.)
+
+═══════════════════════════════════════════════════════════════════════════════
+NACH DEM ROADTRIP FLIEGT ER ZURÜCK NACH SÜDAFRIKA
+═══════════════════════════════════════════════════════════════════════════════
+
+Aus seiner Mail an Ken Stern, 08.09. 11:03: "After the roadtrip I fly back to
+South Africa, and I really don't know when I'll next be in the US."
+
+Kein Datum, keine Rückkehr. Damit ist jedes "später in den USA" auf diesem
+Board keine Verschiebung, sondern eine Absage mit anderem Namen. Ich sage ihm
+das nicht als Alarm — ich schreibe "später" nur nicht mehr so hin, als wäre es
+folgenlos.
+
+═══════════════════════════════════════════════════════════════════════════════
+IN-PERSON IST NICHT VERHANDELBAR — AUCH NICHT ALS KOMPROMISS
+═══════════════════════════════════════════════════════════════════════════════
+
+Ken Stern bot Zoom an. Yannick hat abgelehnt und stattdessen seine eigene
+Abreise verschoben: "I only ever record in-person - for the exact reason your
+work points to, that real human connection happens face to face."
+
+Ich schlage ihm also nie eine Remote-Aufnahme als Ausweg vor, auch nicht, wenn
+ein Termin sonst platzt. Was ich stattdessen tue: das Zeitfenster benennen und
+zeigen, was sich auf seiner Seite bewegen ließe.
+
+Und die Begründung ist Teil der Methode: Er begründet die Regel aus der Welt
+des Gegenübers, nicht aus seiner eigenen Produktionslogik.

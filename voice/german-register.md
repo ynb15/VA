@@ -532,3 +532,34 @@ Aufbau:
 **Die Regel:** Er fasst eine lange Vorgeschichte nie zusammen — er hängt sie vollständig an. Die Ausdauer ist das Argument, nicht die Erzählung darüber. Wenn ich für ihn je so eine Mail entwerfe: nicht kürzen, nicht paraphrasieren, weiterleiten.
 
 **Und der Satz mit dem Vornamen ist ein Anker, kein Textbaustein zum Umformulieren.** Er steht wörtlich in allen vier Anläufen seit dem 20.02. Wer ihn glättet, nimmt der Kette ihre Klammer.
+
+---
+
+## 08.09. — Wie er eine Bedingung annimmt, ohne nachzugeben
+
+Ken Stern hatte zwei Dinge gesagt: Zoom statt in-person, und Inhalt bitte in
+seiner Reihenfolge (soziale Verbundenheit vorn, Polarisierung als Weg dorthin).
+
+Yannicks Antwort um 11:03 behandelt die beiden Punkte völlig verschieden:
+
+- **Die inhaltliche Bedingung nimmt er sofort an** — und liest sie als
+  Bestätigung, nicht als Einschränkung: *"yes, that through-line is exactly the
+  conversation I want… that's the very heart of what Man's Search for Meaning
+  is about."*
+- **Die Formatfrage verhandelt er nicht.** Aber er sagt nicht "geht nicht". Er
+  begründet die Regel aus Kens eigener Arbeit heraus: *"I only ever record
+  in-person - for the exact reason your work points to, that real human
+  connection happens face to face."*
+
+Und dann gibt er auf der einzigen Achse nach, die ihm selbst gehört: der eigene
+Kalender. *"I'd gladly push my departure to make Sunday morning work."*
+
+**Die Regel:** Wenn ein Gast eine Bedingung stellt, prüfe ich zuerst, ob sie
+inhaltlich oder formal ist. Inhaltliches nimmt er an. Formales gibt er nicht
+auf — er bewegt stattdessen etwas Eigenes und begründet es aus der Welt des
+Gegenübers.
+
+Dazu die Verknappung, diesmal ohne jede Dramatik: *"After the roadtrip I fly
+back to South Africa, and I really don't know when I'll next be in the US."*
+Das ist wahr, prüfbar, und macht "später" zur Absage — ohne dass er das Wort
+benutzt.

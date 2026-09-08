@@ -296,18 +296,25 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede">Good morning. Du hast Chris getroffen — und um 23:33 nachgelegt.</p>
-    <p class="tiny">Die Frage von gestern Abend ist beantwortet, und zwar von Dir selbst: <strong>"thirteen shirts, one book. Finally getting the chance to hand it to Chris made all the struggles of the last couple months worth it."</strong> Das Buch ist übergeben. Um 23:33 ging eine Mail an <strong>gabby@chriswillx.com</strong> — mit der Gästeliste als PDF und der kompletten Kette seit dem 20. Februar im Anhang. Darin steht auch ein Datum, das ich bisher nirgends hatte: <strong>Du verlässt ATX am Sonntag</strong> für die Podcast-Roadtrip durch NM, AZ und CO.</p>
+    <p class="lede">Ken Stern sagt zu — und Du hast in einer Stunde selbst geantwortet.</p>
+    <p class="tiny">08:18 seine Zusage im Prinzip, 11:03 Deine Antwort. Er kann das Wochenende nicht: Ankunft Samstag spätnachmittag, Du weg am Sonntag. Er bot Zoom an. <strong>Du hast Zoom abgelehnt und stattdessen Deine eigene Abreise angeboten</strong> — Sonntagvormittag, in-person. Dabei steht in Deiner Mail ein Satz, den ich vorher nirgends hatte: <strong>nach dem Roadtrip fliegst Du zurück nach Südafrika</strong>, und Du weißt nicht, wann Du wieder in den USA bist. Das ändert die Bedeutung von jedem "später" auf diesem Board.</p>
   </div>
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Gabby hat seit 23:33 alles. Bis Sonntag ist Zeit.</h2>
-    <p class="why">Du hast um 20 Minuten mit ihr und/oder Chris gebeten und dazugeschrieben, dass Du dafür den ganzen Terminplan verbiegst — <em>"and if necessary, I'll cancel the trip."</em> <strong>Das ist die einzige Sache heute, bei der eine Antwort von außen kommen kann</strong>, und sie hat ein Ablaufdatum: Sonntag.<br>Der Tag selbst ist ruhig: Morning Routine 07:30, <strong>Writing: Nelson's Drift 10:00–12:00</strong>, <strong>15:00 "Call: Mike Selami"</strong> — zu dem Namen finde ich weiterhin nichts, keine Mail, keine Databank-Zeile; Du hast den Block Sonntag 13:57 selbst angelegt —, Substack 15:30, Gym 16:30, und <strong>Evening Writing Session 18:00–20:00 bei Eberly</strong>, 615 S Lamar, zugesagt. Keine Kollision.<br><strong>Offen:</strong> Webflows gekündigter Plan (die Mail liegt in info@, ich sehe nur den Betreff) · Virgin Actives Freigabeschreiben, sieben Tage · Roundly · Katharsis Media · Nicks Fotos · einer von Luis' drei Kick-Off-Slots.</p>
+    <h2>Zwei Fäden warten auf eine Antwort, beide mit Sonntag als Kante.</h2>
+    <p class="why"><strong>Ken Stern</strong> — Du hast Sonntagvormittag vorgeschlagen und angeboten, die Abreise zu schieben. Seine inhaltliche Bedingung steht: er will <em>social connection und gesunde Gemeinschaften</em> im Vordergrund, Polarisierung und <em>Republican Like Me</em> als Weg dorthin. Das deckt sich mit Deinem Winkel, aber es ist seine Reihenfolge, nicht Deine.<br><strong>Gabby (chriswillx)</strong> — seit gestern 23:33 ohne Antwort. Auch dort hast Du bis Sonntag terminiert.<br>Der Rest des Tages: Substack 15:30, Gym 16:30 (Gevity hat um 11:34 bestätigt, "The Yin"), <strong>Evening Writing Session 18:00–20:00 bei Eberly</strong>, 615 S Lamar. Der 15:00-Block "Call: Mike Selami" ist durch; zu dem Namen finde ich weiterhin nichts.<br><strong>Offen:</strong> Webflow (nur Betreff) · Virgin Active, 7 Tage · Roundly · Katharsis Media · Nicks Fotos · einer von Luis' drei Slots.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
+
+    <li class="row s-wait">
+      <input type="checkbox" data-item="ken-yes" aria-label="Ken Stern sagt zu">
+      <span class="row-b"><span class="who">Ken Stern</span> — Zusage 08:18, Deine Gegenfrage 11:03
+        <span class="row-sub"><em>"I'd be happy to join you for a conversation."</em> Aber nicht dieses Wochenende: er landet erst <strong>Samstag spätnachmittag</strong> in Austin, Du bist Sonntag weg. Sein Angebot: Zoom oder eine Podcast-Plattform, sonst später in Austin oder in DC.<br><strong>Seine inhaltliche Bedingung</strong>, wörtlich: <em>"would want to foreground my current work around social connection and healthy people and healthy communities"</em> — Polarisierung und <em>Republican Like Me</em> gern, aber als Durchgangsweg. Der rote Faden, den er selbst nennt: menschliche Vereinzelung und das Zerbrechen von Gemeinschaften.<br><strong>Du hast um 11:03 geantwortet</strong>, ohne mich, und Zoom abgelehnt: <em>"I only ever record in-person - for the exact reason your work points to, that real human connection happens face to face."</em> Stattdessen: <em>"I'd gladly push my departure to make Sunday morning work."</em><br>Darin steht der Satz, der für mich neu ist: <em>"After the roadtrip I fly back to South Africa, and I really don't know when I'll next be in the US."</em> <em>Meine Lesart, nicht Deine Ansage:</em> damit ist "später in Austin oder in DC" für Dich praktisch kein Angebot, und das erklärt, warum Du lieber die Abreise verschiebst.</span></span>
+      <span class="age">11:03</span>
+    </li>
 
     <li class="row s-wait">
       <input type="checkbox" data-item="gabby-mw" aria-label="Gabby / Modern Wisdom">
@@ -1149,7 +1156,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-08T08:11:00-05:00");
+  var SWEPT = new Date("2026-09-08T16:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
