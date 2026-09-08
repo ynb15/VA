@@ -309,6 +309,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-ok">
+      <input type="checkbox" data-item="streak" aria-label="Streak Tracking">
+      <span class="row-b"><span class="who">Streak</span> — Du trackst ab heute, ob Deine Mails geöffnet werden
+        <span class="row-sub">15:27 installiert, Testmail an Dich selbst raus. <em>Meine Lesart, nicht Deine Ansage:</em> das passt zeitlich genau zu den beiden Fäden, die gerade auf eine Antwort warten — Gabby seit gestern 23:33, Ken seit heute 11:03.<br><strong>Was das für mich ändert:</strong> Öffnungen sehe ich nicht, die liegen in Streak, nicht im Postfach. Wenn Du in einem Faden also weißt, dass gelesen wurde, weiß ich es nicht — sag es mir, sonst schreibe ich weiter "keine Antwort" und meine damit etwas anderes als Du.</span></span>
+      <span class="age">15:27</span>
+    </li>
+
     <li class="row s-wait">
       <input type="checkbox" data-item="ken-yes" aria-label="Ken Stern sagt zu">
       <span class="row-b"><span class="who">Ken Stern</span> — Zusage 08:18, Deine Gegenfrage 11:03
@@ -1156,7 +1163,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-08T16:10:00-05:00");
+  var SWEPT = new Date("2026-09-08T18:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

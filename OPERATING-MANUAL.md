@@ -1371,3 +1371,16 @@ zeigen, was sich auf seiner Seite bewegen ließe.
 
 Und die Begründung ist Teil der Methode: Er begründet die Regel aus der Welt
 des Gegenübers, nicht aus seiner eigenen Produktionslogik.
+
+═══════════════════════════════════════════════════════════════════════════════
+ER TRACKT SEIT 08.09. SEINE MAILS — ICH SEHE DAS NICHT
+═══════════════════════════════════════════════════════════════════════════════
+
+08.09. 15:27: Streak-E-Mail-Tracking installiert, Testmail an sich selbst.
+
+Öffnungen und Klicks liegen in Streak, nicht im Postfach. Ich sehe sie nicht.
+Wenn ich also "keine Antwort" schreibe, heißt das ab jetzt ausdrücklich nur:
+keine Antwortmail. Ob gelesen wurde, weiß er womöglich und ich nicht.
+
+Ich frage ihn nicht danach. Ich formuliere nur genauer: "keine Antwortmail",
+nicht "Stille".
