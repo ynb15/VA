@@ -296,8 +296,8 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede">Chase ist zurück — und der Freitag hat sich in einer halben Stunde gefüllt.</p>
-    <p class="tiny">Zwischen 11:29 und 11:42 kamen zwei Einladungen für <strong>Freitag</strong>, beide bereits zugesagt: <strong>Chase Reeves, "Sauna yannick", 09:00–10:00</strong> bei ihm zu Hause (7803 Shantivana Trail) — der Faden, der zuletzt auf SMS abgebogen war —, und <strong>Andy Wolfe, "Matcha", 11:15–12:00</strong> im Merit Coffee Co. Dazu hast Du um 09:54 die <strong>YT Academy von heute auf Freitag 10:00–11:30</strong> geschoben. Damit überlappen Academy und Matcha um 15 Minuten.</p>
+    <p class="lede">Katharsis ist raus für den 15. — und fragt zurück.</p>
+    <p class="tiny">16:00, keine drei Stunden nach Deiner Antwort: Candice hat sich mit ihrem Team rückversichert und muss absagen. Ihre Crew ist ab Ende dieser Woche bis zum <strong>29. September</strong> auf <em>Bands of Enchantment</em>, und am 15. laufen zusätzlich <strong>drei andere Produktionen im Studio</strong>. Ihre Rückfrage steht offen: <em>"Is this the only time you'll be in town?"</em><br>Damit bleibt für Albuquerque am 15. <strong>The Podcast Studio NM</strong> — die Zusage von Nick, auf dessen Setup-Fotos Du noch wartest.</p>
   </div>
 
   <div class="rightnow">
@@ -323,13 +323,12 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="age">11:42</span>
     </li>
 
-    <li class="row s-ok">
-      <input type="checkbox" data-item="katharsis-back" aria-label="Katharsis beantwortet" checked>
-      <span class="row-b"><span class="who">Katharsis</span> — beantwortet, 13:07. Mein Entwurf lag an drei Stellen daneben.
-        <span class="row-sub">Du hast die sieben Fragen inline beantwortet und einen <strong>Link auf Deine Playlist</strong> als Antwort auf "what kind of setting" mitgeschickt — darauf wäre ich nicht gekommen.<br><strong>Was ich falsch hatte:</strong> Ich schrieb <em>"no crew needed, I bring my own gear"</em> — Du schriebst <strong>"provided crew pls"</strong>. Ich schrieb, die eine Anforderung seien <strong>isolierte Tonspuren und getrennte Kameradateien</strong> — Du schriebst <strong>"no"</strong>. Das war meine Herleitung aus Kyles Lieferung, nicht Deine Bedingung; ich hatte sie in Deine Stimme gelegt. Und ich schrieb "YouTube", Du <strong>"YouTube &amp; Spotify"</strong>.<br>Richtig lag ich bei Form, Ton und daran, kein Wort über Preis zu verlieren. Der Vergleich steht vollständig in <code>drafts/katharsis-antwort.md</code>; die Regel daraus habe ich ins Manual geschrieben.</span></span>
-      <span class="age">13:07</span>
-    </li>
-    <li class="row s-ok">
+    <li class="row s-act">
+      <input type="checkbox" data-item="katharsis-back" aria-label="Katharsis sagt ab">
+      <span class="row-b"><span class="who">Katharsis</span> — Absage für den 15., mit einer Rückfrage
+        <span class="row-sub">16:00, von Candice: <em>"I greatly apologize, as I should have checked in with our team prior to responding. I don't think the timing will work out, as most of our crew is working on Bands of Enchantment beginning the end of this week through the 29th of September. Generally, we're pretty nimble, but we also have 3 other productions happening that day in the studio, so we are unfortunately booked out. Is this the only time you'll be in town?"</em><br>Zwei Gründe, beide unabhängig voneinander: Crew gebunden bis 29.09., und der 15. ist im Studio ohnehin dreifach belegt. <strong>Ihre Frage ist der einzige offene Punkt</strong> — sie hält die Tür für einen anderen Termin auf.<br><em>Was das faktisch heißt:</em> Für den 15. bleibt <strong>The Podcast Studio NM</strong>. Nicks Zusage steht, seine Setup-Fotos stehen aus.<br>Nachtrag zu heute Mittag: mein Entwurf lag an drei Stellen daneben (Crew, Anforderungen, Ausstrahlung) — der Vergleich steht in <code>drafts/katharsis-antwort.md</code>, die Regel im Manual.</span></span>
+      <span class="age">16:00</span>
+    </li>    <li class="row s-ok">
       <input type="checkbox" data-item="streak" aria-label="Streak Tracking">
       <span class="row-b"><span class="who">Streak</span> — Du trackst ab heute, ob Deine Mails geöffnet werden
         <span class="row-sub">15:27 installiert, Testmail an Dich selbst raus. <em>Meine Lesart, nicht Deine Ansage:</em> das passt zeitlich genau zu den beiden Fäden, die gerade auf eine Antwort warten — Gabby seit gestern 23:33, Ken seit heute 11:03.<br><strong>Was das für mich ändert:</strong> Öffnungen sehe ich nicht, die liegen in Streak, nicht im Postfach. Wenn Du in einem Faden also weißt, dass gelesen wurde, weiß ich es nicht — sag es mir, sonst schreibe ich weiter "keine Antwort" und meine damit etwas anderes als Du.</span></span>
@@ -1170,7 +1169,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-09T15:10:00-05:00");
+  var SWEPT = new Date("2026-09-09T16:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
