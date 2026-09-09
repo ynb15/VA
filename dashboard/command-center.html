@@ -296,14 +296,14 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede">Ken Stern sagt zu — und Du hast in einer Stunde selbst geantwortet.</p>
-    <p class="tiny">08:18 seine Zusage im Prinzip, 11:03 Deine Antwort. Er kann das Wochenende nicht: Ankunft Samstag spätnachmittag, Du weg am Sonntag. Er bot Zoom an. <strong>Du hast Zoom abgelehnt und stattdessen Deine eigene Abreise angeboten</strong> — Sonntagvormittag, in-person. Dabei steht in Deiner Mail ein Satz, den ich vorher nirgends hatte: <strong>nach dem Roadtrip fliegst Du zurück nach Südafrika</strong>, und Du weißt nicht, wann Du wieder in den USA bist. Das ändert die Bedeutung von jedem "später" auf diesem Board.</p>
+    <p class="lede">Good morning. Der Sonntag ist voll — und Sonntag ist Abreisetag.</p>
+    <p class="tiny">Ich habe die Wochenübersicht neu aus beiden Kalendern gebaut; sie stand noch auf Ende August. Dabei ist eines aufgefallen, das ich Dir nur hinlege: <strong>Sonntag, 13.09., liegen FSC 10:00, Filmen 13:30, der Sutcliffe-Review 15:30 und Artist Date 18:00.</strong> Es ist derselbe Tag, an dem Du Ken einen Vormittag angeboten hast und an dem laut Deiner Mail an Gabby die Abreise steht. Der Eintrag <em>Austin (Chico)</em> endet ebenfalls Sonntag.</p>
   </div>
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Zwei Fäden warten auf eine Antwort, beide mit Sonntag als Kante.</h2>
-    <p class="why"><strong>Ken Stern</strong> — Du hast Sonntagvormittag vorgeschlagen und angeboten, die Abreise zu schieben. Seine inhaltliche Bedingung steht: er will <em>social connection und gesunde Gemeinschaften</em> im Vordergrund, Polarisierung und <em>Republican Like Me</em> als Weg dorthin. Das deckt sich mit Deinem Winkel, aber es ist seine Reihenfolge, nicht Deine.<br><strong>Gabby (chriswillx)</strong> — seit gestern 23:33 ohne Antwort. Auch dort hast Du bis Sonntag terminiert.<br>Der Rest des Tages: Substack 15:30, Gym 16:30 (Gevity hat um 11:34 bestätigt, "The Yin"), <strong>Evening Writing Session 18:00–20:00 bei Eberly</strong>, 615 S Lamar. Der 15:00-Block "Call: Mike Selami" ist durch; zu dem Namen finde ich weiterhin nichts.<br><strong>Offen:</strong> Webflow (nur Betreff) · Virgin Active, 7 Tage · Roundly · Katharsis Media · Nicks Fotos · einer von Luis' drei Slots.</p>
+    <h2>Mittwoch: eine echte Überschneidung um 15:30, und ein Nein steht aus.</h2>
+    <p class="why">Morning Routine 07:30 · <strong>YT Academy 10:00–11:30</strong> · <strong>Call: Mike Selami 12:30–13:00</strong> — Du hast ihn gestern Abend um 20:44 vom Dienstag hierher geschoben · <strong>Fridge Lab: Speak Your Success 15:00–17:00</strong> bei The Red Fridge Society, 508 Oakland Ave, zugesagt · <strong>Substack: Post 15:30–16:00 liegt mittendrin</strong> · <strong>Thought Experiments on Patios #6, 19:30–21:30</strong> im Stargazer, 979 Springdale — <strong>darauf hast Du noch nicht geantwortet.</strong><br>Zwei Fäden warten weiter auf Antwort: <strong>Ken</strong> (Sonntagvormittag angeboten) und <strong>Gabby</strong> (seit Montag 23:33). Öffnungen siehst Du in Streak, ich nicht.<br><strong>Offen:</strong> Katharsis — Antwortentwurf liegt in <code>drafts/katharsis-antwort.md</code> · Webflow (nur Betreff) · Virgin Active, 8 Tage · Roundly · Nicks Fotos · einer von Luis' drei Slots.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
@@ -944,53 +944,40 @@ Yannick</div>
 
   /* ── week data: local Austin times, both calendars ────── */
   var DAYS = [
-    { key:"mon", label:"Mon 31", date:"2026/8/31" },
-    { key:"tue", label:"Tue 1",  date:"2026/9/1" },
-    { key:"wed", label:"Wed 2",  date:"2026/9/2" },
-    { key:"thu", label:"Thu 3",  date:"2026/9/3" },
-    { key:"fri", label:"Fri 4",  date:"2026/9/4" },
-    { key:"sat", label:"Sat 5",  date:"2026/9/5" },
-    { key:"sun", label:"Sun 6",  date:"2026/9/6" }
+    { key:"mon", label:"Mon 7",  date:"2026/9/7" },
+    { key:"tue", label:"Tue 8",  date:"2026/9/8" },
+    { key:"wed", label:"Wed 9",  date:"2026/9/9" },
+    { key:"thu", label:"Thu 10", date:"2026/9/10" },
+    { key:"fri", label:"Fri 11", date:"2026/9/11" },
+    { key:"sat", label:"Sat 12", date:"2026/9/12" },
+    { key:"sun", label:"Sun 13", date:"2026/9/13" }
   ];
-
-  // [day, startHour, endHour, bucket, title] — rebuilt from both calendars, 31 Aug–6 Sep
+  // [day, startHour, endHour, bucket, title] — beide Kalender, 7.–13. September
   var EV = [
-    ["mon",6.5,7.5,"anchor","Morning Routine"],["mon",7.5,9,"make","Prep: Kyle Kingsbury"],
-    ["mon",10,12.5,"rec","MSFM: Kyle Kingsbury"],["mon",15.5,16.75,"make","Danny Miranda (Launch)"],
-    ["mon",17.25,19.25,"people","Isabelle"],["mon",21,21.75,"body","Yoga"],
+    ["mon",7,8,"anchor","Morning Routine"],["mon",8,9,"body","Yoga"],
+    ["mon",9.5,11.5,"make","Monatsrückblick"],["mon",13,15,"people","The Garden: Drew"],
+    ["mon",15,15.5,"body","ClassPass"],["mon",15.5,16,"make","N26: Bali Claim"],
 
-    ["tue",7.5,8.25,"body","Yoga"],["tue",8.5,9.25,"anchor","Morning Routine"],
-    ["tue",9.5,10,"make","Reading: DMT"],["tue",10.25,12.25,"people","Chris Will & Seek Discomfort"],
-    ["tue",13.5,15,"make","Podcast: Outreaches"],["tue",15.5,16,"make","Podcast: Management"],
-    ["tue",16,16.5,"make","YouTube: Management"],["tue",17,18,"body","Gym"],
-    ["tue",19,19.5,"anchor","Accountability"],
+    ["tue",7.5,8.5,"anchor","Morning Routine"],["tue",9,11,"make","Writing: Mission MW"],
+    ["tue",11.5,12.5,"body","Gym"],["tue",13,16.5,"make","Podcast: Management"],
+    ["tue",15.5,16,"make","Substack: Post"],["tue",17.5,18.5,"body","Yoga (Gevity)"],
 
-    ["wed",7.5,8.25,"body","Yoga"],["wed",8.5,9.5,"anchor","Morning Routine"],
-    ["wed",9.75,10.25,"make","Prep: Matt Defina"],["wed",10.5,11,"make","Reading: DMT"],
-    ["wed",11.25,12,"make","Substack: Meaning Crisis"],["wed",12,12.5,"make","Pitch: Seek Discomfort"],
-    ["wed",12.5,12.75,"make","Substack: Post"],["wed",13.25,14.25,"make","Pitch: Francisco Medina"],
-    ["wed",14.25,14.75,"make","Podcast: Management"],["wed",15,16,"make","Emails und so"],
-    ["wed",16.25,17.25,"body","Gym"],["wed",20.5,22,"people","Drew"],
+    ["wed",7.5,8.5,"anchor","Morning Routine"],["wed",10,11.5,"make","YT Academy"],
+    ["wed",12.5,13,"people","Call: Mike Selami"],["wed",15,17,"people","Fridge Lab"],
+    ["wed",15.5,16,"make","Substack: Post"],["wed",19.5,21.5,"people","Thought Experiments #6"],
 
-    ["thu",7.5,8.25,"body","Yoga"],["thu",8.5,9,"anchor","Morning Routine"],
-    ["thu",9.25,9.75,"make","Reading: DMT"],["thu",10,11.25,"make","LMNT & Neutonic"],
-    ["thu",11.25,12.5,"make","Prep: Matt Defina"],["thu",12.5,13,"make","Substack: Post"],
-    ["thu",14.5,16,"make","Podcast: Management"],["thu",16.5,18.5,"people","Boozyless"],
-    ["thu",19,21.5,"people","Men Circle"],
+    ["thu",7.5,8.5,"anchor","Morning Routine"],["thu",15.5,16,"make","Substack: Post"],
+    ["thu",16.5,17.5,"body","Gym"],["thu",19,20,"body","Padel"],
 
-    ["fri",7,8,"anchor","Morning Routine"],["fri",9,11,"rec","MSFM: Matt Defina"],
-    ["fri",14,14.5,"make","Substack: Post"],["fri",14.75,17.25,"make","Hustle"],
-    ["fri",16,16.5,"people","Huddle Room 2"],["fri",16.17,16.33,"people","Meet Ken!"],
-    ["fri",17.5,18.5,"body","Gym"],
+    ["fri",7.5,8.5,"anchor","Morning Routine"],
+    ["fri",15.5,17,"rec","MSFM: Logan Gonzalez?"],["fri",19,20,"body","Padel"],
 
-    ["sat",7.5,8.5,"anchor","Morning Routine"],["sat",10,12,"make","Members Writing Session"],
-    ["sat",12,14.5,"people","David Sutcliffe?"],["sat",16,18,"make","Eben Britton (Review)"],
+    ["sat",7.5,8.5,"anchor","Morning Routine"],["sat",10,11.5,"body","Yoga"],
+    ["sat",14,15,"body","Gym"],["sat",19,20.5,"people","Bat-Watching"],
 
-    ["sun",7.5,8.5,"anchor","Morning Routine"],["sun",9,10,"body","Pickleball"],
-    ["sun",13,14,"body","Gym"],
-    ["sun",13,14.5,"make","YouTube: Porn Pandemic"],["sun",15,15.5,"anchor","ClassPass"],
-    ["sun",15,17,"anchor","Artist Date"],["sun",15.5,16,"anchor","N26: Bali Claim"],
-    ["sun",18,19.5,"body","Yoga"]
+    ["sun",7.5,8.5,"anchor","Morning Routine"],["sun",10,12,"anchor","FSC"],
+    ["sun",13.5,15,"make","YouTube: Porn Pandemic (Filmen)"],
+    ["sun",15.5,17.5,"rec","Podcast: Sutcliffe (Review)"],["sun",18,20,"people","Artist Date"]
   ];
 
   var BUCKET_VAR = { rec:"--cal-rec", make:"--cal-make", people:"--cal-people", body:"--cal-body", anchor:"--cal-anchor" };
@@ -1016,7 +1003,7 @@ Yannick</div>
     });
     var max = Math.max.apply(null, totals) || 1;
     var grand = 0;
-    var todayKey = "tue";
+    var todayKey = "wed";
 
     DAYS.forEach(function (d, i) {
       var hrs = totals[i];
@@ -1170,7 +1157,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-08T21:08:00-05:00");
+  var SWEPT = new Date("2026-09-08T22:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
