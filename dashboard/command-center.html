@@ -309,6 +309,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-act">
+      <input type="checkbox" data-item="jpr-edit" aria-label="JPR liefert Schnitt">
+      <span class="row-b"><span class="who">Just Push Record</span> — geschnittene Folge geliefert, 17:36
+        <span class="row-sub">Betreff <em>"Hey Yannick - edited pod"</em>, nur ein Drive-Link, sonst nichts. Der Ordner heißt <strong>09-04</strong> und wurde am 4. September angelegt, Eigentümer team@justpushrecord.com — <strong>es ist also das Material vom Freitagstermin.</strong> Ins Innere sehe ich nicht, ich kenne nur Titel und Datum des Ordners.<br><em>Ein Punkt, den ich nur festhalte:</em> JPR liefert hier den <strong>fertigen Schnitt</strong>. Die offene Hälfte der AutoPod-Frage — ob sie für ihre eigenen Drehs auch das Rohmaterial mit getrennten Spuren herausgeben — ist damit nicht beantwortet, eher im Gegenteil.</span></span>
+      <span class="age">17:36</span>
+    </li>
+
     <li class="row s-wait">
       <input type="checkbox" data-item="chase-sauna" aria-label="Chase Reeves Sauna">
       <span class="row-b"><span class="who">Chase Reeves</span> — wieder da, Freitag 09:00 Sauna bei ihm
@@ -1169,7 +1176,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-09T17:10:00-05:00");
+  var SWEPT = new Date("2026-09-09T18:11:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
