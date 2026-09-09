@@ -323,13 +323,12 @@ details.cleared[open] summary::after{content:" ▴";}
       <span class="age">11:42</span>
     </li>
 
-    <li class="row s-act">
-      <input type="checkbox" data-item="katharsis-back" aria-label="Katharsis Media meldet sich">
-      <span class="row-b"><span class="who">Katharsis Media</span> — nach sechs Tagen zurück, mit sieben Fragen
-        <span class="row-sub">19:49, von Candice. Der Grund für die Stille: <em>"we were shut down for the annual NM Film Office Conference that we help host every year. There was supposed to be an away message, but it seems it was not properly turned on."</em> Sie will Fotos schicken und die Fragen dienen ihr dazu, <em>"an accurate quote"</em> zu erstellen — <strong>der Preis kommt also von ihr, ohne dass Du fragst.</strong><br>Die sieben Fragen: Personenzahl · jemand virtuell dazu · Livestream · nur Audio oder auch Video · eigene Crew oder ihre · besondere Anforderungen (Mehrkanal-Audio, FPS, Kamera-Outputs) · wo es ausgestrahlt wird.<br><strong>Ich habe eine fertige Antwort hingelegt: <code>drafts/katharsis-antwort.md</code></strong> — alle sieben aus dem beantwortet, was schon dokumentiert ist: zwei Personen, niemand virtuell, kein Livestream, Video und Audio, eigenes Equipment ohne Crew, und als einzige echte Anforderung <strong>isolierte Tonspur pro Sprecher plus getrennte Kameradateien</strong> — genau das, worauf Dein Schnitt läuft. Slot bleibt 15.09., 10:30–12:30 Ortszeit. Kopieren und schicken, wenn Du willst; ich schicke nichts.<br><em>Meine Lesart, nicht Deine Ansage:</em> ob Du nach Nicks Zusage überhaupt noch ein zweites Studio brauchst, weiß ich nicht.</span></span>
-      <span class="age">19:49</span>
+    <li class="row s-ok">
+      <input type="checkbox" data-item="katharsis-back" aria-label="Katharsis beantwortet" checked>
+      <span class="row-b"><span class="who">Katharsis</span> — beantwortet, 13:07. Mein Entwurf lag an drei Stellen daneben.
+        <span class="row-sub">Du hast die sieben Fragen inline beantwortet und einen <strong>Link auf Deine Playlist</strong> als Antwort auf "what kind of setting" mitgeschickt — darauf wäre ich nicht gekommen.<br><strong>Was ich falsch hatte:</strong> Ich schrieb <em>"no crew needed, I bring my own gear"</em> — Du schriebst <strong>"provided crew pls"</strong>. Ich schrieb, die eine Anforderung seien <strong>isolierte Tonspuren und getrennte Kameradateien</strong> — Du schriebst <strong>"no"</strong>. Das war meine Herleitung aus Kyles Lieferung, nicht Deine Bedingung; ich hatte sie in Deine Stimme gelegt. Und ich schrieb "YouTube", Du <strong>"YouTube &amp; Spotify"</strong>.<br>Richtig lag ich bei Form, Ton und daran, kein Wort über Preis zu verlieren. Der Vergleich steht vollständig in <code>drafts/katharsis-antwort.md</code>; die Regel daraus habe ich ins Manual geschrieben.</span></span>
+      <span class="age">13:07</span>
     </li>
-
     <li class="row s-ok">
       <input type="checkbox" data-item="streak" aria-label="Streak Tracking">
       <span class="row-b"><span class="who">Streak</span> — Du trackst ab heute, ob Deine Mails geöffnet werden
@@ -1171,7 +1170,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-09T12:10:00-05:00");
+  var SWEPT = new Date("2026-09-09T13:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

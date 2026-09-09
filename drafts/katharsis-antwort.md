@@ -1,40 +1,41 @@
-# Antwort an Candice (Katharsis Media, Albuquerque)
+# Antwort an Candice (Katharsis Media) — ERLEDIGT, und mein Entwurf war an drei Stellen falsch
 
-**Stand:** 08.09.2026, 19:49 kam ihre Mail. Sieben Fragen, alle beantwortbar aus dem, was schon dokumentiert ist. **Ich schicke nichts. Das hier ist ein Entwurf zum Kopieren.**
+**Er hat am 09.09. um 13:07 selbst geantwortet.** Ich lasse meinen Entwurf hier stehen, weil der Vergleich mehr wert ist als eine saubere Akte.
 
-**Sprache:** Englisch — der ganze Faden läuft auf Englisch, Anrede bei ihm zuletzt `Howdy y'all!`, jetzt eine Person: `Howdy Candice`.
-
-**Kein Wort über Preis.** Sie schreibt selbst, die Antworten dienen dazu, *"an accurate quote"* zu erstellen. Der Preis kommt also von ihr, ohne dass er fragt — genau so, wie er es sonst auch hält.
-
----
-
-## Entwurf
+## Was er tatsächlich geschrieben hat
 
 > Howdy Candice,
 >
-> No apology needed — thanks for coming back with such a thorough list. Here's everything:
+> Thanks for getting back to me. Here's all the information you asked for:
 >
-> - **People on the show:** two. Me and one guest, Prof. Rick Strassman.
-> - **Anyone virtual:** no. In-person only, always.
-> - **Streamed live:** no. Recorded, edited afterwards.
-> - **Audio only or video:** video and audio.
-> - **Crew:** I bring my own gear and run it myself — three cameras and two mics. No crew needed on your side.
-> - **Specific needs:** the one thing that matters to me is **isolated audio — one separate track per speaker**, and **separate camera files** rather than a live-switched single output. That's what my edit runs on.
-> - **Where it airs:** YouTube, on the *Man's Search for Meaning* channel.
+> - How many people will be on the show (including host(s) and any guest(s)): **2**
+> - Will you need to bring anyone in virtually via like Zoom / Google meets? **No**
+> - Is this streamed live? If so, what platform do you use? **No**
+> - Is this audio only or video and audio? **video and audio**
+> - Will you have your own crew, do you need us to provide crew, or are you planning to live switch yourself? **provided crew pls**
+> - Do you have any specific needs (multichannel audio output, tech specs regarding FPS / camera outputs, etc) **no**
+> - Where will this air when it is edited? **YouTube & Spotify**
 >
-> Slot I'm after is still **Sep 15, 10:30am–12:30pm local time**. And I'd still love those setup photos whenever you get a moment.
+> And here are some references for what kind of setting I'm looking for:
+> https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m
 >
 > Cheers,
 > Yannick
 
----
+## Wo ich richtig lag
 
-## Was ich bewusst weggelassen habe
+Form und Ton: `Howdy Candice`, Englisch, die Fragen **inline in ihrer Reihenfolge** beantwortet statt in Prosa. Zwei Personen, niemand virtuell, kein Livestream, Video und Audio. **Kein Wort über Preis** — das hat er genauso gehalten.
 
-- **Preis.** Siehe oben.
-- **Substack / weitere Plattformen.** Ich weiß sicher, dass die Folgen auf YouTube laufen. Ob er die Ausstrahlung breiter angeben will, ist seine Entscheidung — ich habe die Zeile schmal gehalten, damit er sie nur ergänzen muss.
-- **Ob er ihre Technik ergänzend braucht.** Er hat Nick gegenüber dieselbe Ausstattung genannt (drei Kameras, zwei Mikros) und um Fotos gebeten. Ich gehe davon aus, dass es hier genauso läuft — falls er dort doch mieten will, ändert das nur den Punkt "Crew/Gear".
+## Wo ich falsch lag — drei Stellen
 
-## Was ich nicht weiß
+1. **Crew.** Ich schrieb: *"I bring my own gear and run it myself — three cameras and two mics. No crew needed."* Er schrieb: **"provided crew pls"**. Ich hatte die Antwort aus dem Faden mit Nick (The Podcast Studio NM) übertragen, wo er seine eigene Ausrüstung genannt hat. Das überträgt sich nicht. **Wenn ein Studio Crew anbietet, nimmt er sie.**
+2. **Besondere Anforderungen.** Ich schrieb, das eine, worauf es ankomme, seien **isolierte Tonspuren pro Sprecher und getrennte Kameradateien**. Er schrieb: **"no"**. Das ist der härteste Punkt: Die AutoPod-Voraussetzung ist **meine** Herleitung aus Kyles Lieferung — er hat sie nie gegenüber einem Studio zur Bedingung gemacht. Ich habe eine eigene Schlussfolgerung in seiner Stimme zur Anforderung erklärt.
+3. **Ausstrahlung.** Ich schrieb "YouTube" und notierte, Spotify sei seine Entscheidung. Er schrieb **"YouTube & Spotify"**. Wenn ein Feld eine Aufzählung ist, gehört die vollständige Aufzählung hin oder eine leere Stelle — nicht die halbe Liste als Antwort.
 
-Ob er nach Nicks Zusage überhaupt noch ein zweites Studio will. Katharsis war sechs Tage still; The Podcast Studio NM hat den Slot bestätigt. Beide parallel zu halten, kann Absicht sein — ich behaupte hier nichts.
+## Und eines, auf das ich nicht gekommen wäre
+
+Auf ihre Frage nach dem gewünschten Setting antwortet er **mit einem Link auf seine eigene Playlist**. Keine Adjektive, kein "warm, holzig, gedämpft" — er zeigt es. Das ist zugleich die Antwort auf seine eigene Bitte um Fotos: er liefert das Gegenstück selbst.
+
+## Regel
+
+Wenn er eine Liste von Fragen bekommt, beantworte ich sie **inline, in seiner Reihenfolge, so knapp wie er** — aber ich fülle keine Antwort aus einer eigenen technischen Herleitung. Wo ich es nicht aus **seinen** Worten belegen kann, lasse ich die Zeile leer und schreibe daneben, was mir fehlt.

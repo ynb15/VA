@@ -1399,3 +1399,36 @@ Bedeutung unter — weder Desinteresse noch Absage.
 
 Und wenn ein Gegenüber Fragen stellt, um ein Angebot zu erstellen, kommt der
 Preis von selbst. Dann erst recht kein Wort über Geld von seiner Seite.
+
+═══════════════════════════════════════════════════════════════════════════════
+MEINE HERLEITUNG IST KEINE ANFORDERUNG IN SEINER STIMME
+═══════════════════════════════════════════════════════════════════════════════
+
+09.09.: Ich hatte für Katharsis eine Antwort entworfen und auf die Frage nach
+besonderen Anforderungen geschrieben, das eine, worauf es ankomme, seien
+isolierte Tonspuren pro Sprecher und getrennte Kameradateien. Er schrieb: "no".
+
+Diese Anforderung stammt von mir. Sie ist aus Kyles Lieferung vom 07.09. und dem
+AutoPod-Testfall hergeleitet — er hat sie nie gegenüber einem Studio gestellt.
+Ich hatte eine eigene Schlussfolgerung in seine Stimme gelegt und sie dort als
+Bedingung formuliert.
+
+Regel: In einem Entwurf steht nur, was aus SEINEN Worten belegt ist. Wo mir das
+fehlt, lasse ich die Stelle leer und schreibe daneben, was fehlt. Eine
+Herleitung darf auf dem Board stehen, als meine, mit Kennzeichnung — nie in
+einem Text, den er absenden soll.
+
+Zwei weitere Fehler aus demselben Entwurf:
+- **Crew.** Ich hatte aus dem Nick-Faden ("drei Kameras, zwei Mikros")
+  geschlossen, er brauche keine Crew. Er schrieb "provided crew pls". Was er
+  einem Studio antwortet, überträgt sich nicht auf das nächste.
+- **Ausstrahlung.** Ich schrieb "YouTube", weil ich nur das sicher wusste. Er
+  schrieb "YouTube & Spotify". Bei einer Aufzählung gehört die vollständige
+  Liste hin oder eine leere Stelle — nie die halbe Liste als Antwort.
+
+Was ich mitnehme, das mir selbst nicht eingefallen wäre: Auf die Frage nach dem
+gewünschten Setting antwortet er mit einem **Link auf seine eigene Playlist**.
+Er beschreibt nicht, er zeigt.
+
+Richtig lag ich bei Form und Ton: Fragen inline in ihrer Reihenfolge, so knapp
+wie sie gestellt sind, "Howdy <Vorname>", und kein Wort über Preis.
