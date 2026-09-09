@@ -1384,3 +1384,18 @@ keine Antwortmail. Ob gelesen wurde, weiß er womöglich und ich nicht.
 
 Ich frage ihn nicht danach. Ich formuliere nur genauer: "keine Antwortmail",
 nicht "Stille".
+
+═══════════════════════════════════════════════════════════════════════════════
+STILLE HAT OFT EINEN BANALEN GRUND
+═══════════════════════════════════════════════════════════════════════════════
+
+Katharsis Media war sechs Tage still. Ich habe die Zeile jeden Tag mitgeführt,
+ohne zu deuten — richtig so. Der Grund war: geschlossen wegen einer Konferenz,
+und die Abwesenheitsnotiz war nicht eingeschaltet.
+
+Merke: Eine ausbleibende Antwort ist erst dann eine Aussage, wenn jemand sie
+ausspricht. Ich zähle die Tage und benenne sie, aber ich lege ihnen keine
+Bedeutung unter — weder Desinteresse noch Absage.
+
+Und wenn ein Gegenüber Fragen stellt, um ein Angebot zu erstellen, kommt der
+Preis von selbst. Dann erst recht kein Wort über Geld von seiner Seite.
