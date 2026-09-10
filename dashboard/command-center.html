@@ -309,6 +309,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-ok">
+      <input type="checkbox" data-item="kyle-reshare" aria-label="Kyle teilt Dateien erneut">
+      <span class="row-b"><span class="who">Kyle Kingsbury</span> — teilt die sieben DJI-Dateien noch einmal, einzeln
+        <span class="row-sub">11:36–11:37, sieben Drive-Freigaben von kyle@kingsbu.com: <code>DJI_20260831…0074</code> bis <code>0080</code>. <strong>Dieselben sieben Dateien wie am Montag</strong> — diesmal aber als Einzelfreigaben statt über den Ordner.<br><em>Meine Lesart, nicht seine Ansage:</em> das sieht nach einer nachgereichten Berechtigung aus. Falls Montag beim Öffnen nichts ging, ist das die Reparatur. Falls doch, hast Du sie jetzt zweimal.<br>An der Sache selbst ändert das nichts: Das Material für den AutoPod-Testfall liegt vor.</span></span>
+      <span class="age">11:37</span>
+    </li>
+
     <li class="row s-act">
       <input type="checkbox" data-item="jpr-edit" aria-label="JPR liefert Schnitt">
       <span class="row-b"><span class="who">Just Push Record</span> — geschnittene Folge geliefert, 17:36
@@ -1175,7 +1182,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-10T11:10:00-05:00");
+  var SWEPT = new Date("2026-09-10T12:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
