@@ -309,6 +309,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-act">
+      <input type="checkbox" data-item="mp-policy" aria-label="Media Pouch Dateipolitik">
+      <span class="row-b"><span class="who">Media Pouch</span> — ihre Dateipolitik, im Erinnerungsschreiben um 15:08
+        <span class="row-sub">Alles hier steht wörtlich in ihrer Mail, nichts davon ist meine Auslegung:<br>· <strong>Sieben Tage, um Probleme zu melden.</strong> <em>"We maintain the original files for 7 days. After this period, the originals are cleared from our SSDs, and re-uploading becomes impossible."</em><br>· <strong>Vierzehn Tage auf ihrem Drive</strong>, danach gelöscht. Erste Wiederherstellung gratis, jede weitere <strong>250 $</strong>.<br>· <strong>Du darfst eine eigene SSD mitbringen</strong> und direkt darauf aufnehmen — <em>"bypassing the need to use our Google Drive."</em> Sie nennen das Modell, das sie im Studio nutzen: <strong>Samsung T7 Shield</strong>.<br><em>Was daran für Dich zusammenpasst — das ist meine Verknüpfung:</em> Die Sieben-Tage-Frist erklärt, warum bei der Datei vom 17.08. nichts mehr ging; die Originale waren gelöscht, bevor der Faden zu Ende war. Und dieselbe Frist läuft ab morgen wieder — Du bist ab Sonntag unterwegs.</span></span>
+      <span class="age">15:08</span>
+    </li>
+
     <li class="row s-ok">
       <input type="checkbox" data-item="kyle-reshare" aria-label="Kyle teilt Dateien erneut">
       <span class="row-b"><span class="who">Kyle Kingsbury</span> — teilt die sieben DJI-Dateien noch einmal, einzeln
@@ -1181,7 +1188,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-10T14:09:00-05:00");
+  var SWEPT = new Date("2026-09-10T15:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
