@@ -563,3 +563,20 @@ Dazu die Verknappung, diesmal ohne jede Dramatik: *"After the roadtrip I fly
 back to South Africa, and I really don't know when I'll next be in the US."*
 Das ist wahr, prüfbar, und macht "später" zur Absage — ohne dass er das Wort
 benutzt.
+
+---
+
+## Nachtrag (Fund vom 10.09., Mail vom 18.08.) — wie er auf Kaltakquise antwortet
+
+Ein SEO-Anbieter (Sunrise Grow Web Solutions) hatte ihn dreimal angeschrieben und um Vorkasse gebeten. Seine Antwort am 18.08., 21:34, vollständig:
+
+> You're pathetic, dude. First, you deliver. Then, you ask for payment. Trust me, I've build several businesses from zero. Get real results first.
+
+**Ein sechstes Register, das ich noch nicht hatte:** kurz, ohne Anrede, ohne Gruß, ohne Weichmacher. Keine Begründung mit Zeitmangel oder Budget — er widerspricht dem **Prinzip**.
+
+Zwei Dinge, die daran hängen und die meine Preisregel schärfen:
+
+1. **"First, you deliver. Then, you ask for payment."** Das ist dieselbe Haltung, aus der die Modern-Wisdom-Mail vom 06.08. kommt (*"Give me one real project… and I'll do it for free"*) und die Sponsoring-Pitches. Er geht in Vorleistung und erwartet das umgekehrt auch.
+2. Deshalb frage ich bei Lieferanten nie nach Preis, **und ich entwerfe für ihn auch nichts, was jemandem Vorkasse anbietet.**
+
+Dieser Ton gehört ihm allein. Ich entwerfe ihn nicht — ich schreibe hier nur auf, dass es ihn gibt, damit ich eine solche Antwort nicht versehentlich glätte, wenn er sie einmal selbst so haben will.
