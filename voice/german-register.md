@@ -580,3 +580,20 @@ Zwei Dinge, die daran hängen und die meine Preisregel schärfen:
 2. Deshalb frage ich bei Lieferanten nie nach Preis, **und ich entwerfe für ihn auch nichts, was jemandem Vorkasse anbietet.**
 
 Dieser Ton gehört ihm allein. Ich entwerfe ihn nicht — ich schreibe hier nur auf, dass es ihn gibt, damit ich eine solche Antwort nicht versehentlich glätte, wenn er sie einmal selbst so haben will.
+
+---
+
+## 10.09. — Der Nudge: was er streicht, wenn er zum zweiten Mal schreibt
+
+Drei Tage nach dem Dossier an Gabby fasst er nach. Vier Zeilen, kein Anhang, keine Kette.
+
+**Was wegfällt:** die Vorgeschichte, der Beleg, die Erklärung, warum er schreibt.
+**Was bleibt:** die Bilanz in einer Zeile (*"7 years… 6-figure agency… 50+ 5-star reviews"*), die bezifferte Bitte (*"20 minutes"*), und der Satz, der die Bitte klein macht (*"Point me at any slot that works and I'll build everything around it"*).
+
+**Was neu dazukommt und was ich vorher nirgends hatte:**
+
+1. **Ein Vergleich mit einem Dritten.** *"Give me the reins and I'll get Modern Wisdom past damn Andrew Huberman."* Bis hierher hat er in dieser Kette immer nur die eigene Bilanz genannt. Das ist die erste Stelle, an der er ein Ziel *gegen jemanden* formuliert — und das einzige Schimpfwort weit und breit sitzt genau darin.
+2. **Die Reise ist nicht mehr Verhandlungsmasse.** Montag: *"if necessary, I'll cancel the trip."* Heute: *"before or after my road trip."* Er nimmt das Angebot zurück, ohne es zu erwähnen.
+3. **Der Missions-Satz wird ersetzt.** Statt *"I'm not looking for a job, I'm looking for a mission"* steht dort *"I'm willing to do whatever it takes to earn my seat at the table."* Aus einer Selbstbeschreibung wird ein Angebot.
+
+**Regel:** Sein Nachfassen ist keine gekürzte Fassung der ersten Mail. Er tauscht das Argument aus — von *wer ich bin* zu *was ich für euch schlage* — und er nimmt Zugeständnisse still zurück, wenn sie sich erledigt haben. Wenn ich je einen Nudge für ihn entwerfe: nicht zusammenfassen, sondern das eine neue Argument suchen.
