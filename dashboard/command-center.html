@@ -296,14 +296,14 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede">Gabby hat geantwortet — vier Minuten nach Deinem Nachfassen.</p>
-    <p class="tiny">10:51 Dein Nudge, <strong>10:55 ihre Antwort</strong>. Sie heißt <strong>Gabby Ianniello</strong> und ist Executive Assistant: <em>"Thanks for the follow up. I'll get back to you next week as this week is turning out to be quite smelly. Reach out on Monday, please!"</em><br><strong>Ein Ja zum Kontakt, ein Nein zu dieser Woche.</strong> Montag liegt hinter Deiner Abreise — Du bist dann unterwegs Richtung New Mexico. Der Faden ist offen, aber er ist nicht mehr etwas, das vor Sonntag passiert.</p>
+    <p class="lede">Good morning. Freitag ist voll, und übermorgen geht es los.</p>
+    <p class="tiny">Fünf Termine zwischen 09:00 und 19:00, dazu die Aufnahme bei Media Pouch. <strong>Eine Überlappung bleibt:</strong> YT Academy bis 11:30 gegen Matcha ab 11:15, und davor sitzt Du ab 09:00 im Süden bei Chase.<br>Donnerstag hat nichts geschlossen und nichts aufgerissen — er war der ruhigste Tag der Woche. Das Einzige, was sich bewegt hat, ist von Dir selbst gekommen: die Buchung bei Media Pouch und Gabbys Antwort auf Dein Nachfassen.</p>
   </div>
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Von drei offenen Fäden ist einer beantwortet — und aus der Woche geschoben.</h2>
-    <p class="why"><strong>Gabby: erledigt für diese Woche.</strong> Montag, und zwar von Dir aus. <strong>Ken</strong> — Sonntagvormittag angeboten, seit Dienstag 11:03 ohne Antwort. <strong>Candice</strong> — ihre Rückfrage steht seit gestern 16:00.<br><strong>Heute:</strong> Morning Routine 07:30 · Gym 11:30 · Substack 15:30 · Yoga 17:30 (Gevity) · Padel 19:00.<br><strong>Morgen:</strong> Sauna bei Chase 09:00 · YT Academy 10:00–11:30 · Matcha mit Andy Wolfe 11:15–12:00 — <strong>15 Minuten doppelt</strong> · <em>MSFM: Logan Gonzalez?</em> 15:30–17:00 · Padel 19:00.<br><strong>Offen:</strong> Media Pouch (17 Tage seit ihrer letzten Nachricht) · Webflow (nur Betreff) · Virgin Active (9 Tage) · Nicks Setup-Fotos · einer von Luis' drei Slots.</p>
+    <h2>Freitag, der Reihe nach — und eine Frist, die heute zu laufen beginnt.</h2>
+    <p class="why"><strong>09:00–10:00 Sauna bei Chase Reeves</strong>, 7803 Shantivana Trail · <strong>10:00–11:30 YT Academy</strong> · <strong>11:15–12:00 Matcha mit Andy Wolfe</strong>, Merit Coffee — <strong>die 15 Minuten überlappen weiterhin</strong> · <strong>15:00–15:30 Substack</strong>, liegt im Aufnahmeblock · <strong>15:00–16:30 Man's Search for Meaning: Logan Gonzalez?</strong> — bei <strong>Media Pouch</strong>, 902 E 5th Street; im Kalender steht als Ort noch Just Push Record · <strong>19:00 Padel</strong>.<br><strong>Ab morgen läuft Media Pouchs Sieben-Tage-Frist</strong> für Dateiprobleme, und ab Sonntag bist Du unterwegs. Ihre eigene Regel: nach sieben Tagen sind die Originale gelöscht, ein Re-Upload dann unmöglich. Sie erlauben ausdrücklich eine eigene SSD.<br><strong>Offen:</strong> Ken (Sonntagvormittag, seit Dienstag) · Candice (ihre Rückfrage, seit Mittwoch) · Gabby (Montag, dann unterwegs) · Nicks Setup-Fotos für den 15. · Webflow · Virgin Active (10 Tage) · einer von Luis' drei Slots.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
@@ -1034,7 +1034,7 @@ Yannick</div>
     });
     var max = Math.max.apply(null, totals) || 1;
     var grand = 0;
-    var todayKey = "thu";
+    var todayKey = "fri";
 
     DAYS.forEach(function (d, i) {
       var hrs = totals[i];
@@ -1188,7 +1188,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-10T21:08:00-05:00");
+  var SWEPT = new Date("2026-09-10T22:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
