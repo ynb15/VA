@@ -296,8 +296,8 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede">Good morning. Freitag ist voll, und übermorgen geht es los.</p>
-    <p class="tiny">Fünf Termine zwischen 09:00 und 19:00, dazu die Aufnahme bei Media Pouch. <strong>Eine Überlappung bleibt:</strong> YT Academy bis 11:30 gegen Matcha ab 11:15, und davor sitzt Du ab 09:00 im Süden bei Chase.<br>Donnerstag hat nichts geschlossen und nichts aufgerissen — er war der ruhigste Tag der Woche. Das Einzige, was sich bewegt hat, ist von Dir selbst gekommen: die Buchung bei Media Pouch und Gabbys Antwort auf Dein Nachfassen.</p>
+    <p class="lede">Strassman fragt nach der Adresse. Fünf Wörter, 10:42.</p>
+    <p class="tiny"><em>"Please confirm the address for next week."</em> Kein Betreff, kein Gruß. Das ist Dienstag, Albuquerque — und die Adresse ist das eine, was in diesem Vorgang noch nie jemand geschrieben hat: <strong>Nick hat weder die Fotos geschickt, um die Du am 04.09. gebeten hast, noch je eine Adresse genannt.</strong><br>Was ich habe, stammt aus meiner eigenen Recherche vom 02.09. und ist <strong>nicht bestätigt</strong>: The Podcast Studio NM, <strong>1330 San Pedro NE</strong>, (505) 933-5282. Das kam aus einer Suchergebnis-Zusammenfassung; die Studio-Seite selbst ist vom Egress-Proxy gesperrt, ich konnte sie nie öffnen.</p>
   </div>
 
   <div class="rightnow">
@@ -308,6 +308,13 @@ details.cleared[open] summary::after{content:" ▴";}
 
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
+
+    <li class="row s-crit">
+      <input type="checkbox" data-item="strassman-adresse" aria-label="Strassman fragt nach der Adresse">
+      <span class="row-b"><span class="who">Rick Strassman</span> — <em>"Please confirm the address for next week."</em>
+        <span class="row-sub">10:42, fünf Wörter, kein Betreff. Der Termin ist <strong>Dienstag, 15.09.</strong>, und er will wissen, wohin er kommen soll.<br><strong>Das Problem an dieser Frage:</strong> In dem ganzen Vorgang hat noch nie jemand eine Adresse geschrieben. Nick von The Podcast Studio NM hat am 04.09. um 12:11 nur den Slot bestätigt. Deine Rückfrage von 15:39 — drei Kameras, zwei Mikros, <strong>und bitte Fotos vom Setup</strong> — ist bis heute unbeantwortet. Das sind sieben Tage.<br><strong>Was ich anzubieten habe, ausdrücklich unbestätigt:</strong> The Podcast Studio NM, <strong>1330 San Pedro NE, Albuquerque</strong>, (505) 933-5282, info@thepodcaststudionm.com. Diese Angabe stammt aus meiner Recherche vom 02.09., aus einer Suchergebnis-Zusammenfassung — <strong>die Studioseite selbst ist vom Egress-Proxy gesperrt, ich habe sie nie gesehen.</strong> Ich würde sie Strassman nicht weitergeben, ohne dass Nick sie bestätigt hat.<br>Zur Erinnerung, weil es an derselben Adresse hängt: Katharsis ist für den 15. raus, und Candices Rückfrage steht seit Mittwoch offen.</span></span>
+      <span class="age">10:42</span>
+    </li>
 
     <li class="row s-act">
       <input type="checkbox" data-item="mp-policy" aria-label="Media Pouch Dateipolitik">
@@ -1188,7 +1195,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-11T10:10:00-05:00");
+  var SWEPT = new Date("2026-09-11T11:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
