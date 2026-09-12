@@ -296,18 +296,25 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede">Strassman fragt nach der Adresse. Fünf Wörter, 10:42.</p>
-    <p class="tiny"><em>"Please confirm the address for next week."</em> Kein Betreff, kein Gruß. Das ist Dienstag, Albuquerque — und die Adresse ist das eine, was in diesem Vorgang noch nie jemand geschrieben hat: <strong>Nick hat weder die Fotos geschickt, um die Du am 04.09. gebeten hast, noch je eine Adresse genannt.</strong><br>Was ich habe, stammt aus meiner eigenen Recherche vom 02.09. und ist <strong>nicht bestätigt</strong>: The Podcast Studio NM, <strong>1330 San Pedro NE</strong>, (505) 933-5282. Das kam aus einer Suchergebnis-Zusammenfassung; die Studio-Seite selbst ist vom Egress-Proxy gesperrt, ich konnte sie nie öffnen.</p>
+    <p class="lede">Good morning. Die Dateien sind da — und ab jetzt läuft die Uhr.</p>
+    <p class="tiny">22:02, von Media Pouch: <em>"Your files from your recording session are being uploaded to your shared Google Drive folder"</em> — Sitzung <code>yannick_bernard_09-11-26_1</code>. Nach ihrer eigenen Regel hast Du damit <strong>bis zum 18. September</strong> Zeit, Probleme zu melden; danach sind die Originale von ihren SSDs gelöscht und ein Re-Upload ist unmöglich. <strong>Vierzehn Tage Drive-Speicherung enden am 25.09.</strong><br>Und Strassmans Frage von gestern 10:42 steht nach zwölf Stunden noch offen: <em>"Please confirm the address for next week."</em></p>
   </div>
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Freitag, der Reihe nach — und eine Frist, die heute zu laufen beginnt.</h2>
-    <p class="why"><strong>09:00–10:00 Sauna bei Chase Reeves</strong>, 7803 Shantivana Trail · <strong>10:00–11:30 YT Academy</strong> · <strong>11:15–12:00 Matcha mit Andy Wolfe</strong>, Merit Coffee — <strong>die 15 Minuten überlappen weiterhin</strong> · <strong>15:00–15:30 Substack</strong>, liegt im Aufnahmeblock · <strong>15:00–16:30 Man's Search for Meaning: Logan Gonzalez?</strong> — bei <strong>Media Pouch</strong>, 902 E 5th Street; im Kalender steht als Ort noch Just Push Record · <strong>19:00 Padel</strong>.<br><strong>Ab morgen läuft Media Pouchs Sieben-Tage-Frist</strong> für Dateiprobleme, und ab Sonntag bist Du unterwegs. Ihre eigene Regel: nach sieben Tagen sind die Originale gelöscht, ein Re-Upload dann unmöglich. Sie erlauben ausdrücklich eine eigene SSD.<br><strong>Offen:</strong> Ken (Sonntagvormittag, seit Dienstag) · Candice (ihre Rückfrage, seit Mittwoch) · Gabby (Montag, dann unterwegs) · Nicks Setup-Fotos für den 15. · Webflow · Virgin Active (10 Tage) · einer von Luis' drei Slots.</p>
+    <h2>Samstag ist leicht. Zwei Dinge haben ein Datum.</h2>
+    <p class="why"><strong>Samstag:</strong> Morning Routine 07:30 · Yoga 10:00–11:30 · <strong>Padel 12:30–13:30</strong> (von Freitagabend hierher geschoben) · <strong>Bat-Watching + Bat Q&amp;A 19:00–20:30</strong>, 305 S Congress, zugesagt · ganztägig <em>ATX Veg Fest</em>. Keine Kollision.<br><strong>Zwei Fristen mit Datum:</strong> Media Pouchs Reklamationsfenster endet <strong>18.09.</strong>, die Drive-Speicherung <strong>25.09.</strong> — beides läuft, während Du unterwegs bist. Und <strong>Strassman wartet seit gestern 10:42 auf die Adresse</strong>; die Aufnahme ist Dienstag.<br><strong>Was ich zur Adresse habe, bleibt unbestätigt:</strong> The Podcast Studio NM, 1330 San Pedro NE, (505) 933-5282 — aus meiner Recherche vom 02.09., die Studioseite ist für mich gesperrt. Nick hat seit dem 04.09. weder Fotos noch Adresse geschickt.<br><strong>Sonst offen:</strong> Ken (Sonntagvormittag) · Gabby (Montag) · Candice' Rückfrage · Webflow · Virgin Active (11 Tage) · einer von Luis' drei Slots.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
+
+    <li class="row s-act">
+      <input type="checkbox" data-item="mp-files" aria-label="Media Pouch Dateien">
+      <span class="row-b"><span class="who">Media Pouch</span> — Dateien im Upload, 22:02. Frist: 18.09.
+        <span class="row-sub">Sitzung <code>yannick_bernard_09-11-26_1</code>, in den geteilten Drive-Ordner <em>Yannick Bernard x Media Pouch</em>.<br><strong>Ihre eigenen Fristen, ab heute gerechnet:</strong> Probleme melden bis <strong>18.09.</strong> — danach sind die Originale von ihren SSDs gelöscht und ein Re-Upload ist nach ihrer Aussage unmöglich. Drive-Speicherung bis <strong>25.09.</strong>, erste Wiederherstellung gratis, jede weitere 250 $.<br><em>Warum ich das so genau hinschreibe:</em> Bei der Aufnahme vom 17.08. war genau diese Frist abgelaufen, als ihre letzte Antwort kam. Beide Fristen laufen jetzt, während Du auf dem Roadtrip bist.</span></span>
+      <span class="age">22:02</span>
+    </li>
 
     <li class="row s-crit">
       <input type="checkbox" data-item="strassman-adresse" aria-label="Strassman fragt nach der Adresse">
@@ -1041,7 +1048,7 @@ Yannick</div>
     });
     var max = Math.max.apply(null, totals) || 1;
     var grand = 0;
-    var todayKey = "fri";
+    var todayKey = "sat";
 
     DAYS.forEach(function (d, i) {
       var hrs = totals[i];
@@ -1195,7 +1202,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-11T21:08:00-05:00");
+  var SWEPT = new Date("2026-09-11T22:08:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
