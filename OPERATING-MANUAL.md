@@ -1537,3 +1537,38 @@ geschrieben, nachdem ich es getan habe. Und ein angefangener Sweep wird in
 demselben Durchlauf zu Ende gebracht — Datei, Notion, Commit, Push,
 Veroeffentlichung. Wenn ein Durchlauf dafuer nicht reicht, ist der naechste
 Schritt der erste Werkzeugaufruf des naechsten Durchlaufs, nicht ein Satz.
+
+═══════════════════════════════════════════════════════════════════════════════
+DAS STUDIO IN ALBUQUERQUE HAT ABGESAGT — UND EINE ABSAGE HAT KEINEN GRUND
+═══════════════════════════════════════════════════════════════════════════════
+
+12.09., 17:29 Austin: The Podcast Studio NM streicht den Termin fuer Dienstag,
+15.09. Wortlaut vollstaendig: "Dieser Termin wurde gestrichen und aus Ihrem
+Kalender entfernt." Absender info@thepodcaststudionm.com, also der Organisator.
+Kein Begleitsatz, kein Grund, kein Ersatzangebot.
+
+Sechzehn Stunden vorher hatte derselbe Absender die Adresse nachgetragen.
+
+Zweifach geprueft: Mail im Postfach, Kalendereintrag gelöscht (get_event:
+"resource could not be found or has been deleted").
+
+WAS DADURCH NICHT WEGGEFALLEN IST: Sein eigener Termin "Man's Search for
+Meaning: Rick Strassman", Di 15.09. 10:30 Ortszeit, Ort Albuquerque, Status
+bestaetigt, Strassman hat zugesagt. Der Gast steht, der Raum nicht.
+
+Strassman war Gast auf der abgesagten Einladung und hat die Absage ebenfalls
+bekommen.
+
+REGEL: Eine Google-Absage sieht identisch aus, ob jemand bewusst storniert oder
+versehentlich seinen Kalendereintrag loescht. Ich schreibe deshalb nie einen
+Grund dazu und unterstelle keine Absicht. Ich schreibe hin, dass keiner genannt
+wurde — und dass genau das die Rueckfrage rechtfertigt.
+
+STAND DER ALTERNATIVEN IN ALBUQUERQUE (aus der Recherche vom 02.09., nicht neu
+geprueft):
+  - Katharsis Media — fuer den 15. raus, Crew bis 29.09. gebunden
+  - Albuquerque Podcast Studio — contact@albuquerquepodcast.studio,
+    (505) 584-7400, 201 Eubank Blvd NE Ste B1, ~95 $/Std. laut Peerspace
+  - ABQ Castle Studios — 818-934-3775 (Burbank, nach ABQ-Standort fragen)
+Beide letzteren sind unangeschrieben. Seine eigene Vorlage liegt in
+drafts/abq-studio-anfrage.md.

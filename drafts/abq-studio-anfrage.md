@@ -71,7 +71,9 @@ yannick-noah.com
 - **Albuquerque Podcast Studio** — contact@albuquerquepodcast.studio · (505) 584-7400
   201 Eubank Blvd NE, Ste B1 · $95/Std. laut Peerspace-Listing
 - **The Podcast Studio NM** — info@thepodcaststudionm.com · (505) 933-5282
-  1330 San Pedro NE · kein veröffentlichter Satz
+  201 San Mateo Blvd NE, NM 87108 · kein veröffentlichter Satz
+  **ABGESAGT 12.09. 17:29, ohne Begründung.** Die frühere Angabe "1330 San Pedro NE"
+  war falsch — sie stammte aus einer Suchzusammenfassung, nicht vom Studio.
 - **ABQ Castle Studios** — 818-934-3775 (Burbank, nach dem ABQ-Standort fragen)
   kalkuliert pro Produktion
 - **Katharsis Media** — info@katharsismedia.org · **von Dir angeschrieben, 02.09. 14:38**
