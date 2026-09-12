@@ -309,6 +309,14 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-act">
+      <input type="checkbox" data-item="mp-hiss" aria-label="Media Pouch Rauschen reklamiert">
+      <span class="row-b"><span class="who">Media Pouch</span> — Du hast reklamiert, sie haben in 15 Minuten geantwortet
+        <span class="row-sub"><strong>15:53, Du an Ryan:</strong> <em>"Thanks for sending the files! However, we got the same issue again: there's a permanent background hiss and it's only ~2GB"</em> — mit Drive-Link auf die Datei.<br><strong>16:08, ihre Antwort, wörtlich:</strong> <em>"Files are 1080p so they are smaller size. The noise you're referring to is just the normal noise floor. I can only hear it if i have the volume turned to max on my iPhone. The raw audio file is labeled mic 1 in the audio files folder which you can use to swap in or make additional edits to the audio if you'd like."</em><br><strong>Drei Dinge stehen da, die vorher nicht dastanden:</strong> die Dateigröße erklären sie mit 1080p · das Rauschen nennen sie den normalen Grundpegel und damit keinen Fehler · und es gibt eine <strong>Rohspur, beschriftet <code>mic 1</code>, im Ordner <em>audio files</em></strong>, die Du einsetzen kannst.<br><em>Was ich daran festhalte, ohne Partei zu nehmen:</em> Im August hat derselbe Vorgang <strong>17 Tage</strong> gebraucht und ist nie zu Ende geführt worden. Diesmal kam die Antwort nach <strong>fünfzehn Minuten</strong> und mit einem konkreten Verweis. Ob die Rohspur Dein Problem löst, kann ich nicht beurteilen — <strong>in die Dateien sehe ich nicht hinein.</strong><br><strong>Zur Frist:</strong> Deine Reklamation liegt deutlich innerhalb der sieben Tage, die sie selbst nennen. Der Vorgang ist also fristgerecht offen, nicht verfallen.</span></span>
+      <span class="age">16:08</span>
+    </li>
+
+
     <li class="row s-ok">
       <input type="checkbox" data-item="gabby-terminiert" aria-label="Gabby Montagsmail terminiert">
       <span class="row-b"><span class="who">Gabby Ianniello</span> — die Montagsmail ist geschrieben und auf Montag 08:44 gelegt
@@ -342,7 +350,7 @@ details.cleared[open] summary::after{content:" ▴";}
     <li class="row s-act">
       <input type="checkbox" data-item="mp-files" aria-label="Media Pouch Dateien">
       <span class="row-b"><span class="who">Media Pouch</span> — Dateien im Upload, 22:02. Frist: 18.09.
-        <span class="row-sub">Sitzung <code>yannick_bernard_09-11-26_1</code>, in den geteilten Drive-Ordner <em>Yannick Bernard x Media Pouch</em>.<br><strong>Ihre eigenen Fristen, ab heute gerechnet:</strong> Probleme melden bis <strong>18.09.</strong> — danach sind die Originale von ihren SSDs gelöscht und ein Re-Upload ist nach ihrer Aussage unmöglich. Drive-Speicherung bis <strong>25.09.</strong>, erste Wiederherstellung gratis, jede weitere 250 $.<br><em>Warum ich das so genau hinschreibe:</em> Bei der Aufnahme vom 17.08. war genau diese Frist abgelaufen, als ihre letzte Antwort kam. Beide Fristen laufen jetzt, während Du auf dem Roadtrip bist.<br><strong>15:01 — Nachtrag:</strong> Media Pouch bittet um eine Fünf-Sterne-Bewertung, Betreff <em>"Yannick do you want FREE Studio Time?"</em>. <em>Ohne Wertung, nur die Reihenfolge:</em> die Bitte kommt, während ihre eigene Reklamationsfrist für die gestrigen Dateien läuft — und der Vorgang zur Tonspur vom 17.08. ist weiterhin offen.</span></span>
+        <span class="row-sub">Sitzung <code>yannick_bernard_09-11-26_1</code>, in den geteilten Drive-Ordner <em>Yannick Bernard x Media Pouch</em>.<br><strong>Ihre Fristen — und ihre beiden Mails sagen dazu nicht dasselbe:</strong><br>· <em>Erinnerungsmail vom 11.09., 15:08:</em> sieben Tage, um Probleme zu melden (<strong>bis 18.09.</strong>), danach Originale von den SSDs gelöscht; erste Wiederherstellung gratis, jede weitere 250 $.<br>· <em>Upload-Mail vom 11.09., 22:02:</em> 14 Tage im Drive (<strong>bis 25.09.</strong>), danach Wiederherstellung innerhalb von <strong>30 Tagen ab Buchungsdatum</strong> — also bis etwa <strong>11.10.</strong> — für <strong>250 $</strong>, <em>"recovery is not guaranteed"</em>; danach endgültig weg. Von einer kostenlosen ersten Wiederherstellung steht hier nichts.<br><strong>Ich hatte bisher nur die erste Version auf dem Board.</strong> Welche gilt, weiß ich nicht — es sind zwei Mails derselben Firma.<br><em>Warum ich das so genau hinschreibe:</em> Bei der Aufnahme vom 17.08. war genau diese Frist abgelaufen, als ihre letzte Antwort kam. Beide Fristen laufen jetzt, während Du auf dem Roadtrip bist.<br><strong>15:01 — Nachtrag:</strong> Media Pouch bittet um eine Fünf-Sterne-Bewertung, Betreff <em>"Yannick do you want FREE Studio Time?"</em>. <em>Ohne Wertung, nur die Reihenfolge:</em> die Bitte kommt, während ihre eigene Reklamationsfrist für die gestrigen Dateien läuft — und der Vorgang zur Tonspur vom 17.08. ist weiterhin offen.</span></span>
       <span class="age">22:02</span>
     </li>
 
@@ -1232,7 +1240,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-12T15:08:00-05:00");
+  var SWEPT = new Date("2026-09-12T16:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
