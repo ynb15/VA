@@ -303,11 +303,19 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
     <h2>Samstag ist leicht. Der Montag ist es nicht mehr.</h2>
-    <p class="why"><strong>Heute:</strong> Morning Routine 07:30 · Yoga 10:00–11:30 · <strong>Padel 12:30–13:30</strong> · <strong>Bat-Watching 19:00–20:30</strong>, 305 S Congress, zugesagt · ganztägig <em>ATX Veg Fest</em>. Keine Kollision.<br><strong>Die Adresse ist da und meine alte war falsch:</strong> Nicht 1330 San Pedro NE — das war meine unbestätigte Recherche vom 02.09. und sie stimmt nicht. Das Studio schreibt selbst: <strong>201 San Mateo Blvd NE, Albuquerque, NM 87108.</strong><br><strong>Montag hat jetzt drei Dinge gleichzeitig:</strong> Ken 8:30–10:30 in Austin, der Roadtrip-Block beginnt, und abends stehen Sauna 17:30 und Familienaufstellung 18:00–21:00 — auch in Austin. Die Aufnahme mit Strassman ist Dienstag 10:30 Ortszeit in Albuquerque, und Du selbst hast die Fahrt im August auf <em>"roughly an 11h drive"</em> beziffert. <em>Das ist meine Rechnung, nicht Deine Ansage:</em> beides zusammen geht nicht auf.<br><strong>Sonst offen:</strong> Gabby (Montag) · Candice' Rückfrage · Media Pouch 18.09. / 25.09. · Webflow · Virgin Active (11 Tage) · einer von Luis' drei Slots.</p>
+    <p class="why"><strong>Heute:</strong> Morning Routine 07:30 · Yoga 10:00–11:30 · <strong>Padel 12:30–13:30</strong> · <strong>Bat-Watching 19:00–20:30</strong>, 305 S Congress, zugesagt · ganztägig <em>ATX Veg Fest</em>. Keine Kollision.<br><strong>Die Adresse ist da und meine alte war falsch:</strong> Nicht 1330 San Pedro NE — das war meine unbestätigte Recherche vom 02.09. und sie stimmt nicht. Das Studio schreibt selbst: <strong>201 San Mateo Blvd NE, Albuquerque, NM 87108.</strong><br><strong>Montag hat jetzt drei Dinge gleichzeitig:</strong> Ken 8:30–10:30 in Austin, der Roadtrip-Block beginnt, und abends stehen Sauna 17:30 und Familienaufstellung 18:00–21:00 — auch in Austin. Die Aufnahme mit Strassman ist Dienstag 10:30 Ortszeit in Albuquerque, und Du selbst hast die Fahrt im August auf <em>"roughly an 11h drive"</em> beziffert. <em>Das ist meine Rechnung, nicht Deine Ansage:</em> beides zusammen geht nicht auf.<br><strong>Gabby ist vom Tisch</strong> — die Montagsmail ist geschrieben und terminiert, siehe unten.<br><strong>Sonst offen:</strong> Candice' Rückfrage · Media Pouch 18.09. / 25.09. · Webflow · Virgin Active (11 Tage) · einer von Luis' drei Slots.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
+
+    <li class="row s-ok">
+      <input type="checkbox" data-item="gabby-terminiert" aria-label="Gabby Montagsmail terminiert">
+      <span class="row-b"><span class="who">Gabby Ianniello</span> — die Montagsmail ist geschrieben und auf Montag 08:44 gelegt
+        <span class="row-sub">Im Faden liegt eine Nachricht von Dir mit Zustellzeitpunkt <strong>Montag, 14.09., 08:44</strong>. Sie trägt kein Postfach-Label — <em>daraus lese ich, dass sie geplant und noch nicht raus ist</em>; das ist meine Einordnung, nicht etwas, das dort steht.<br>Anfang: <em>"Cheers Gabby, It's Monday - hoping the smelly week cleared out and left you standing. As requested, here I am."</em><br><strong>Damit ist der Punkt, den ich seit Donnerstag als offen geführt habe, keiner mehr.</strong> Gabby hatte am 10.09. um 10:55 geschrieben: <em>"I'll get back to you next week as this week is turning out to be quite smelly. Reach out on Monday, please!"</em> — und Du hast das Montagsfenster vorbereitet, statt es Dir zu merken.<br><em>Ich fasse nichts davon an.</em> Nur eine Beobachtung ohne Handlungsbedarf: 08:44 liegt im Ken-Block (8:30–10:30). Da die Mail von selbst rausgeht, spielt das keine Rolle.</span></span>
+      <span class="age">Mo 08:44</span>
+    </li>
+
 
     <li class="row s-crit">
       <input type="checkbox" data-item="montag-fahrt" aria-label="Montag Austin und Dienstag Albuquerque">
@@ -1224,7 +1232,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-12T10:09:00-05:00");
+  var SWEPT = new Date("2026-09-12T11:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
