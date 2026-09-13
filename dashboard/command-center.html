@@ -296,14 +296,14 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede">17:29 — The Podcast Studio NM hat die Aufnahme am Dienstag abgesagt.</p>
-    <p class="tiny"><em>"Dieser Termin wurde gestrichen und aus Ihrem Kalender entfernt."</em> Keine Begründung, kein Satz von Nick dazu — nur die Google-Absage. <strong>Sechzehn Stunden nachdem er die Adresse geschickt hatte.</strong><br>Ich habe es an zwei Stellen geprüft: die Mail ist echt, und der Termin ist aus dem Kalender verschwunden. <strong>Dein eigener Block <em>Man's Search for Meaning: Rick Strassman</em> steht dagegen unverändert — Dienstag, 10:30 Ortszeit, Strassman hat zugesagt.</strong><br><strong>Strassman steht auf der Absage mit drauf.</strong> Er hat sie also auch bekommen.</p>
+    <p class="lede">Good morning. Letzter Tag in Austin — und der Dienstag hat noch keinen Raum.</p>
+    <p class="tiny"><strong>Gestern 17:29:</strong> The Podcast Studio NM hat die Aufnahme am Dienstag gestrichen. Keine Begründung, kein Satz von Nick — sechzehn Stunden nachdem er die Adresse geschickt hatte. <strong>Dein eigener Termin mit Strassman steht unverändert</strong>, Dienstag 10:30 Ortszeit, von ihm zugesagt. Strassman war auf der abgesagten Einladung Gast und hat sie mitbekommen.<br>Zwei Entwürfe liegen bereit: <code>drafts/nick-rueckfrage.md</code> und Deine eigene Studio-Vorlage vom 02.09. für die zwei noch unangeschriebenen Studios in Albuquerque. <strong>Abschicken tust Du.</strong></p>
   </div>
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Der Termin am Dienstag hat einen Gast und keinen Raum.</h2>
-    <p class="why"><strong>Das ist der Stand, ohne meine Zutat:</strong> Strassman hat zugesagt und wartet in Albuquerque. Das Studio hat die Buchung heute 17:29 gestrichen. Katharsis Media war für den 15. schon raus — ihre Crew ist bis 29.09. gebunden, drei andere Produktionen.<br><strong>Was ich von der Recherche am 02.09. noch liegen habe, als Möglichkeit und nicht als Empfehlung:</strong> <em>Albuquerque Podcast Studio</em> (contact@albuquerquepodcast.studio, 505&nbsp;584-7400, 201 Eubank Blvd NE Ste B1, ~95&nbsp;$/Std. laut Peerspace) und <em>ABQ Castle Studios</em> (818&nbsp;934-3775, Burbank-Nummer, nach dem ABQ-Standort fragen). Beide sind unangeschrieben.<br>In <code>drafts/abq-studio-anfrage.md</code> liegt Deine eigene Vorlage, die Du am 02.09. an Katharsis geschickt hast — gebrauchsfertig. In <code>drafts/nick-rueckfrage.md</code> liegen zwei Zeilen an Nick. <strong>Abschicken tust Du.</strong><br><strong>Montag bleibt wie gestern beschrieben:</strong> Ken 8:30–10:30 in Austin, Roadtrip-Beginn, abends Sauna 17:30 und Familienaufstellung 18:00–21:00 — und Gabbys Mail geht 08:44 von selbst raus.</p>
+    <h2>Du hast den Sonntag gestern selbst umgebaut.</h2>
+    <p class="why"><strong>So sieht er jetzt aus, aus beiden Kalendern:</strong> Morning Routine 07:00–08:00 · <strong>Writers Walk 08:00–10:00</strong>, Carpenter Hotel, 400 Josephine St, zugesagt · Drew 11:00–11:30 · <strong>Padel 12:00–13:00</strong> · <strong>Podcast: Ken Stern (Prep) 15:00–17:00</strong> · Artist Date 18:00–20:00. Ganztägig: <em>Rest Day</em>, und <em>Austin (Chico)</em> endet heute.<br><strong>Keine Kollision.</strong><br><strong>Was Du gestern aus dem Sonntag herausgenommen hast:</strong> <em>YouTube: Porn Pandemic (Filmen)</em> 13:30–15:00 und <em>Podcast: David Sutcliffe (Review)</em> 15:30–17:30. An deren Stelle steht jetzt die Ken-Vorbereitung. <em>Das ist Deine Entscheidung, ich halte sie nur fest.</em><br><strong>Einen Eintrag kann ich nicht deuten:</strong> <em>Podcast: Eben Britton</em>, ganztägig, gestern 17:03 angelegt, als „frei" markiert. Ohne Uhrzeit und ohne Beschreibung. Ich weiß nicht, ob das eine Erinnerung oder ein Platzhalter ist.<br><strong>Was mit Datum offen ist:</strong> der Raum am Dienstag · Strassmans Adressfrage, jetzt zum zweiten Mal · Media Pouchs Rohspur <code>mic 1</code> und ihre Frist 18.09. · Candice' Rückfrage · Webflow · Virgin Active · einer von Luis' drei Slots. Gabbys Mail geht morgen 08:44 von selbst raus.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
@@ -1066,9 +1066,9 @@ Yannick</div>
     ["sat",7.5,8.5,"anchor","Morning Routine"],["sat",10,11.5,"body","Yoga"],
     ["sat",14,15,"body","Gym"],["sat",19,20.5,"people","Bat-Watching"],
 
-    ["sun",7.5,8.5,"anchor","Morning Routine"],["sun",10,12,"anchor","FSC"],
-    ["sun",13.5,15,"make","YouTube: Porn Pandemic (Filmen)"],
-    ["sun",15.5,17.5,"rec","Podcast: Sutcliffe (Review)"],["sun",18,20,"people","Artist Date"]
+    ["sun",7,8,"anchor","Morning Routine"],["sun",8,10,"people","Writers Walk"],
+    ["sun",11,11.5,"people","Drew"],["sun",12,13,"body","Padel"],
+    ["sun",15,17,"rec","Ken Stern (Prep)"],["sun",18,20,"people","Artist Date"]
   ];
 
   var BUCKET_VAR = { rec:"--cal-rec", make:"--cal-make", people:"--cal-people", body:"--cal-body", anchor:"--cal-anchor" };
@@ -1094,7 +1094,7 @@ Yannick</div>
     });
     var max = Math.max.apply(null, totals) || 1;
     var grand = 0;
-    var todayKey = "sat";
+    var todayKey = "sun";
 
     DAYS.forEach(function (d, i) {
       var hrs = totals[i];
@@ -1248,7 +1248,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-12T21:09:00-05:00");
+  var SWEPT = new Date("2026-09-12T22:08:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
