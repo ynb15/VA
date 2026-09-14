@@ -327,9 +327,9 @@ details.cleared[open] summary::after{content:" ▴";}
 
     <li class="row s-act">
       <input type="checkbox" data-item="ian-abgelehnt" aria-label="Ian-Termine abgelehnt">
-      <span class="row-b"><span class="who">Ian Gardner</span> — Du hast gestern 17:50 beide Termine abgelehnt
-        <span class="row-sub"><strong>Betroffen sind zwei Einträge:</strong><br>· <em>Dinner Ian &amp; Yannick</em>, Mi 16.09. 20:00–21:00, Scottsdale<br>· <em>Man's Search for Meaning: Ian Gardner</em>, Do 17.09. 12:00–14:00, <strong>112 N Central Ave #M18, Phoenix</strong><br><strong>Beide stehen weiter im Kalender, Status <em>confirmed</em>, und Ian hat beide zugesagt.</strong> Geändert hat sich nur Deine eigene Antwort: von zugesagt auf <em>abgelehnt</em>, beide gestern um 17:50.<br><em>Was ich daraus nicht mache:</em> Du bist bei beiden selbst der Organisator. Eine Absage per Antwortstatus ist nicht dasselbe wie ein gelöschter Termin — <strong>ich weiß nicht, ob das eine Entscheidung oder ein Zwischenschritt ist</strong>, und Ian hat davon vermutlich nichts gemerkt, weil Du nicht gelöscht hast.<br>Zur Einordnung: Die Phoenix-Aufnahme stand seit dem 19.08. und war der Grund, warum Du Ian im August geschrieben hast, Du hättest <em>"proper Tetris"</em> im Kalender gespielt, um sie möglich zu machen.</span></span>
-      <span class="age">gestern</span>
+      <span class="row-b"><span class="who">Ian Gardner</span> — das Dinner ist jetzt beidseitig ab, die Aufnahme nicht
+        <span class="row-sub"><strong>Betroffen sind zwei Einträge:</strong><br>· <em>Dinner Ian &amp; Yannick</em>, Mi 16.09. 20:00–21:00, Scottsdale<br>· <em>Man's Search for Meaning: Ian Gardner</em>, Do 17.09. 12:00–14:00, <strong>112 N Central Ave #M18, Phoenix</strong><br><strong>Heute 11:48 hat Ian das Dinner ebenfalls abgesagt</strong> — Mail <em>"Declined: Dinner Ian &amp; Yannick"</em> von ian@acraya.global. <strong>Der Mittwoch ist damit von beiden Seiten ab.</strong><br><strong>Die Aufnahme am Donnerstag nicht.</strong> Gerade geprüft: dort steht Deine Antwort weiterhin auf <em>abgelehnt</em>, <strong>Ians Antwort weiterhin auf zugesagt</strong>, Status des Termins <em>confirmed</em>. Er hat auf den einen Termin reagiert und auf den anderen nicht.<br><em>Was ich daraus nicht mache:</em> Ob er den Donnerstag übersehen hat oder ihn stehen lässt, weiß ich nicht. Aus seiner Sicht hat bisher niemand die Aufnahme abgesagt — Dein "abgelehnt" hat ihn nicht erreicht, solange der Termin nicht gelöscht ist.<br><em>Was ich daraus nicht mache:</em> Du bist bei beiden selbst der Organisator. Eine Absage per Antwortstatus ist nicht dasselbe wie ein gelöschter Termin — <strong>ich weiß nicht, ob das eine Entscheidung oder ein Zwischenschritt ist</strong>, und Ian hat davon vermutlich nichts gemerkt, weil Du nicht gelöscht hast.<br>Zur Einordnung: Die Phoenix-Aufnahme stand seit dem 19.08. und war der Grund, warum Du Ian im August geschrieben hast, Du hättest <em>"proper Tetris"</em> im Kalender gespielt, um sie möglich zu machen.</span></span>
+      <span class="age">11:48</span>
     </li>
 
 
@@ -1076,7 +1076,7 @@ Yannick</div>
     ["tue",15.5,17.5,"rec","Sutcliffe (Review)"],["tue",16.5,17.5,"body","Gym"],
     ["wed",7.5,8.5,"anchor","Morning Routine"],["wed",10,11.5,"make","YT Academy"],
     ["wed",15.5,16,"make","Substack"],["wed",16.5,17.5,"body","Gym"],
-    ["wed",20,21,"people","Dinner Ian (abgelehnt)"],
+    ["wed",20,21,"people","Dinner Ian (beidseitig ab)"],
     ["thu",7.5,8.5,"anchor","Morning Routine"],["thu",12,14,"rec","Ian Gardner (abgelehnt)"],
     ["thu",15.5,16,"make","Substack"],["thu",16.5,17.5,"body","Gym"],
     ["fri",7.5,8.5,"anchor","Morning Routine"],["fri",10,12,"rec","Whitney Wheelock?"],
@@ -1262,7 +1262,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-14T11:10:00-05:00");
+  var SWEPT = new Date("2026-09-14T12:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
