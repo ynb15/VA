@@ -1758,3 +1758,24 @@ TECHNISCHE NOTIZ: Die Databank hat mehr als 60 Zeilen. Eine Abfrage ohne
 Namensfilter zeigt nur die erste Seite — Ken, Strassman, Gardner, Callahan,
 Gonzalez und beide Armstrongs fehlten dort komplett. Immer gezielt nach
 Namen filtern, bevor ich behaupte, jemand stehe nicht in der Databank.
+
+═══════════════════════════════════════════════════════════════════════════════
+DAS BOARD HAT EINE NEUE URL (14.09., beim Sweep 14:09)
+═══════════════════════════════════════════════════════════════════════════════
+
+ALT:  https://claude.ai/code/artifact/36c602cc-f6a8-46a7-89c3-937111cd431d
+NEU:  https://claude.ai/artifact/7mHxnbsL44VByfwCDoS9TJ
+
+Ich habe wie immer mit der alten URL veroeffentlicht; die Antwort kam unter
+der neuen zurueck, Version 111 direkt nach 110. Die Artefakt-Liste zeigt nur
+EIN "YNB Command Center", unter der neuen URL, heute aktualisiert.
+
+DARAUS FOLGT: Es ist dasselbe Board, nicht ein zweites. Der Host hat das
+URL-Schema geaendert (von /code/artifact/<uuid> auf /artifact/<kurz-id>).
+
+WAS ICH NICHT WEISS: ob die alte URL weiterleitet. Ich kann das von hier aus
+nicht pruefen. Er hat die alte in seinen Lesezeichen, und der Trigger-Prompt
+traegt sie ebenfalls — beides kann ich nicht selbst aendern.
+
+AB JETZT: In Chat-Meldungen die NEUE URL nennen. Die alte einmal erwaehnt und
+dann nicht mehr.
