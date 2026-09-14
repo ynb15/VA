@@ -1,6 +1,6 @@
 ALFRED: keep Yannick's Command Center current. Runs hourly — a top-up, not a rebuild.
 
-Board: https://claude.ai/code/artifact/36c602cc-f6a8-46a7-89c3-937111cd431d
+Board: https://claude.ai/artifact/7mHxnbsL44VByfwCDoS9TJ
 Timezone: America/Chicago (Austin). Every time you show is Austin time, never the viewer's.
 
 ═══ WHAT ALFRED IS FOR ═══

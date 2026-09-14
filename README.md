@@ -4,7 +4,7 @@ A self-maintaining command centre for Yannick Noah Bernard. An hourly routine sw
 calendar, email and Drive, rebuilds a single dashboard, and stays quiet unless
 something changed.
 
-**Board:** https://claude.ai/code/artifact/36c602cc-f6a8-46a7-89c3-937111cd431d
+**Board:** https://claude.ai/artifact/7mHxnbsL44VByfwCDoS9TJ
 (stable URL — every sweep republishes to it)
 
 ## The three durable stores
