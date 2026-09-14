@@ -1572,3 +1572,189 @@ geprueft):
   - ABQ Castle Studios — 818-934-3775 (Burbank, nach ABQ-Standort fragen)
 Beide letzteren sind unangeschrieben. Seine eigene Vorlage liegt in
 drafts/abq-studio-anfrage.md.
+
+═══════════════════════════════════════════════════════════════════════════════
+ICH HABE DEN MEDIA-POUCH-VORGANG DREI WOCHEN LANG FALSCH GEFUEHRT
+═══════════════════════════════════════════════════════════════════════════════
+
+Beim woechentlichen Abgleich am 14.09. habe ich den Faden vom 17.08. zum ersten
+Mal VOLLSTAENDIG gelesen. Was ich seit dem 01.09. auf dem Board hatte — "die
+letzte Nachricht war 'we're still looking into this for you', siebzehn Tage, der
+Vorgang ist offen" — war falsch.
+
+Der Faden geht weiter:
+
+  25.08. Media Pouch: "We fixed the audio issue as best we could. The new file
+         will finish uploading in 20 minutes. It appears this issue stems from a
+         piece of hardware and we are trying to isolate it. I'd like to give you
+         a free booking to either re-record this podcast or record a completely
+         new one with someone else once we resolve this issue."
+
+  30.08. YNB: "Shit happens. Appreciate the accountability and the offer for a
+         free booking. Will get back to this for the next guest."
+
+DREI SCHLUESSE, DIE DAMIT HINFAELLIG SIND:
+  - Der Vorgang war nach drei Tagen erledigt, nicht siebzehn Tage offen.
+  - Die Freitagsbuchung war kein Widerspruch, sondern das eingeloeste
+    Freikontingent — er hatte es am 30.08. ausdruecklich dafuer reserviert.
+  - Die Bewertungsbitte vom 12.09. ist keine Dreistigkeit: er hatte ihnen am
+    22.08. schon unaufgefordert eine Google-Bewertung gegeben.
+
+WARUM: `search_threads` zeigt die ~5 AELTESTEN Nachrichten und markiert nicht,
+dass etwas fehlt. Genau diese Regel steht seit Wochen weiter oben in dieser
+Datei. Ich habe sie gelesen und nicht angewendet, weil der Faden sich
+abgeschlossen anfuehlte.
+
+VERSCHAERFTE REGEL: Bevor ich einem Vorgang das Wort "offen", "unbeantwortet",
+"Stille" oder eine Tagezahl anhefte, rufe ich den Faden mit get_thread ab. Keine
+Ausnahme, auch nicht bei Faeden, die ich zu kennen glaube. Eine Tagezahl ist
+eine Behauptung ueber das, was NICHT passiert ist — und das ist genau die
+Aussage, die eine Vorschau nicht tragen kann.
+
+NEBENBEFUND: Logan Gonzalez war nie unsicher. Am 10.09. schrieb er dem Studio
+"Guest: Logan Gonzalez". Das Fragezeichen im Kalendertitel ist seins, nicht ein
+Hinweis auf eine offene Zusage.
+
+═══════════════════════════════════════════════════════════════════════════════
+VOICE — WIE ER BEI EINEM DIENSTLEISTER REKLAMIERT (zweimal belegt)
+═══════════════════════════════════════════════════════════════════════════════
+
+Derselbe Defekt, dasselbe Studio, drei Wochen auseinander. Der Unterschied ist
+die Regel.
+
+ERSTE REKLAMATION, 22.08.:
+  "Howdy Ryan,
+   Just left you guys a Google review, still really appreciate the smooth
+   session from Monday!
+   Just one thing: something seems off with the file: there's a permanent
+   background hiss and it's only ~2GB. Mind taking a look on your end and
+   sending over the refined version?
+   Cheers, YNB"
+
+  Vier Teile: Anrede mit Vornamen · ein gegebener Gefallen zuerst (die
+  Bewertung) · "Just one thing:" als Scharnier · der Defekt in einem Satz · die
+  Bitte als Gefallen formuliert ("Mind taking a look…").
+
+ZWEITE REKLAMATION, 12.09.:
+  "Howdy Ryan,
+   Thanks for sending the files! However, we got the same issue again: there's
+   a permanent background hiss and it's only ~2GB: [Link]
+   Cheers, YNB"
+
+  Der Dank schrumpft auf vier Woerter. Das Scharnier wird zu "However". "we got
+  the same issue AGAIN" traegt die Eskalation. UND: es gibt keine Bitte mehr.
+  Er nennt den Defekt, haengt den Beweis an und hoert auf.
+
+DIE REGEL: Beim zweiten Mal wird er nicht lauter, sondern kuerzer. Er eskaliert
+durch WEGLASSEN — das Polster faellt weg, die Bitte faellt weg, der Beweis
+bleibt. Ein Entwurf fuer eine zweite Reklamation darf deshalb NICHT mehr Worte
+haben als der erste, und keine Forderung enthalten, die er nicht selbst
+geschrieben hat.
+
+ABGRENZUNG — wann er doch lauter wird: Bei Virgin Active (Brille, seit Mai)
+laeuft es umgekehrt. Dort steht "Another week, another email with no reply…
+This is getting frustrating" und eine Frist. Der Unterschied: Media Pouch will
+er behalten, Virgin Active hat er abgeschrieben. Bei einem Gegenueber, mit dem
+er weiterarbeiten will, eskaliert er durch Subtraktion; bei einem, das er
+abgeschrieben hat, benennt er die Frustration. Zwei verschiedene Instrumente,
+nicht zwei Lautstaerken.
+
+UND WIE ER EINE ENTSCHULDIGUNG ANNIMMT (30.08.): "Shit happens. Appreciate the
+accountability and the offer for a free booking." Drei Saetze, kein Nachtreten,
+und er benennt ausdruecklich, WOFUER er dankt — nicht fuer die Reparatur,
+sondern fuer das Einstehen. Ein Entwurf, der hier mehr Worte macht, ist falsch.
+
+═══════════════════════════════════════════════════════════════════════════════
+VOICE — DER DREI-MINUTEN-ANLAUF (Chris Williamson, 07.09. 16:30)
+═══════════════════════════════════════════════════════════════════════════════
+
+An chris.williamson88@googlemail.com, jonathan@ und kyle@chriswillx.com,
+Betreff "3min before tonight's show?", am Abend der Show:
+
+  "Chris and team,
+   I know you've got a show to prep for, (I flew here all the way from South
+   Africa to attend it) so I'll make it short:
+   I, like you, came to America to build an impactful podcast and I brought you
+   a little gift I'd love to hand you for being a huge inspiration.
+   If you have 3min for a conversation before or after the show, it'd truly
+   mean the world to meet you.
+   Happy to make whatever time work; my cell: +1 (512) 529-3695.
+   Dreaming Big,
+   Yannick N. Bernard"
+
+WAS DARIN STECKT:
+  - Er bezahlt die Zeit des Lesers im Voraus, indem er die eigene nennt: der
+    Flug aus Suedafrika steht in einer Klammer, nicht als Anspruch.
+  - Die Bitte ist auf drei Minuten beziffert. Eine bezifferte Bitte ist
+    leichter zuzusagen als eine offene.
+  - Die Gemeinsamkeit kommt vor dem Anliegen ("I, like you, came to America").
+  - Er gibt die Handynummer heraus und macht sich verfuegbar, statt einen
+    Termin vorzuschlagen.
+  - Signatur "Dreaming Big," — bisher nur hier gesehen. Nicht verallgemeinern.
+
+DIE REGEL: Wenn die Zeit knapp ist, nennt er die Knappheit selbst, beziffert
+die Bitte und legt die Entscheidung vollstaendig beim anderen ab. Kein
+Terminvorschlag, kein Nachfassdatum.
+
+═══════════════════════════════════════════════════════════════════════════════
+PHOENIX UND ALBUQUERQUE SIND BEIDE "MOUNTAIN" UND TROTZDEM EINE STUNDE APART
+═══════════════════════════════════════════════════════════════════════════════
+
+Beim Zeitzonen-Abgleich fuer den Roadtrip am 14.09. aufgefallen:
+
+  ARIZONA HAT KEINE SOMMERZEIT. Phoenix steht das ganze Jahr auf UTC-7.
+  New Mexico hat Sommerzeit. Albuquerque steht im September auf UTC-6.
+
+Beide heissen umgangssprachlich "Mountain Time". Im September sind sie
+TROTZDEM eine Stunde auseinander — Phoenix liegt dann gleichauf mit
+Kalifornien, nicht mit Albuquerque.
+
+DIE BEIDEN EINTRAEGE, GEGENGERECHNET:
+
+  Strassman   Notion 2026-09-15 16:30 UTC  →  11:30 Central  →  10:30 ABQ
+  Ian Gardner Notion 2026-09-17 17:00 UTC  →  12:00 Central  →  10:00 Phoenix
+
+Beide Datensaetze sind in sich richtig. Die Falle ist die Anzeige: sein
+Kalender zeigt beide in Central, und "12:00" fuer Phoenix liest sich wie
+Mittag, ist aber zehn Uhr morgens vor Ort.
+
+REGEL: Bei jedem Eintrag auf dieser Reise rechne ich die UTC-Zeit in die
+ORTSZEIT DES ORTES um und schreibe die Ortszeit aufs Board — nie die
+Central-Anzeige. Und ich pruefe Arizona getrennt von New Mexico, auch wenn
+beide "Mountain" heissen.
+
+═══════════════════════════════════════════════════════════════════════════════
+DATABANK-ABGLEICH 14.09. — STAND UND LUECKEN
+═══════════════════════════════════════════════════════════════════════════════
+
+GESCHRIEBEN:
+  - Ken Stern: Datum ergaenzt, Mo 14.09. 08:30-10:30 (13:30-15:30 UTC).
+    Status stand bereits auf Confirmed.
+
+NICHT GESCHRIEBEN, WEIL ES SEINE ENTSCHEIDUNG IST:
+  - Ian Gardner steht auf "Confirmed" mit Datum Do 17.09. 12:00 Central.
+    Im Kalender hat er am 13.09. um 17:50 seine eigene Antwort auf
+    "abgelehnt" gesetzt — bei diesem Termin UND beim Dinner am Mittwoch.
+    Der Termin ist aber nicht geloescht und Ian hat zugesagt.
+    ICH AENDERE DEN STATUS NICHT. Ein "abgelehnt" im eigenen Kalender ist
+    kein Widerruf gegenueber dem Gast. Vorgelegt, nicht entschieden.
+
+LUECKEN, DIE ICH NICHT VON MIR AUS FUELLE:
+  - Logan Gonzalez steht auf "Confirmed" ohne Datum, obwohl am 11.09.
+    aufgenommen. Muesste "Recorded" + Datum sein. (Beim naechsten Lauf
+    nachziehen — Notion war beim Schreiben abgerissen.)
+  - Confirmed ohne Datum: Amy May, Jamie Elkon, Drew Birch, Megan de Beyer,
+    Amy Nelson, Scott Aaronson.
+  - Recorded ohne Datum: Whitney Wheelock, Nathan Maingard, Craig Makhosi,
+    Bridget Woods.
+  - Cal Callahan steht auf "In Conversation" ohne Datum. Letzter Stand:
+    23.08., er schrieb "Let's get together this week for a walk/coffee."
+
+GESCHLOSSEN SEIT DEM 31.08.: Lance Armstrong (Reached Out) und Cal Callahan
+(In Conversation) sind jetzt beide in der Databank. Die Luecke von damals
+besteht nicht mehr.
+
+TECHNISCHE NOTIZ: Die Databank hat mehr als 60 Zeilen. Eine Abfrage ohne
+Namensfilter zeigt nur die erste Seite — Ken, Strassman, Gardner, Callahan,
+Gonzalez und beide Armstrongs fehlten dort komplett. Immer gezielt nach
+Namen filtern, bevor ich behaupte, jemand stehe nicht in der Databank.
