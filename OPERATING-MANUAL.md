@@ -2002,3 +2002,70 @@ nicht als Empfehlung.
 · **15:05 an Soul:** *"This package was shipped almost 3 weeks ago and still
   hasn't arrived - what's happening?"* — dritter Beleg für den knappen
   Lieferanten-Ton: kein Polster, eine Frage statt einer Forderung.
+
+═══════════════════════════════════════════════════════════════
+VOICE — DER LIEFERANTENTON, VIERTER UND FÜNFTER BELEG (15.09.)
+═══════════════════════════════════════════════════════════════
+
+Ich hatte notiert: *er eskaliert durch Weglassen — die zweite Reklamation ist
+kürzer als die erste.* Das war zu eng. Der heutige Nachmittag zeigt **zwei
+verschiedene Register, und die Länge entscheidet nichts.**
+
+**Soul (Lieferant, an dem nichts hängt) — kurz, zweimal:**
+· 15:05: *"This package was shipped almost 3 weeks ago and still hasn't arrived
+  - what's happening?"*
+· 16:05, nachdem Erica auf die Paketversicherung verwies: *"Erica, I kindly ask
+  you to provide proper customer support instead of just telling me to file a
+  claim - where is the package?"*
+Er stellt **dieselbe Frage zweimal**. Der Widerspruch richtet sich nicht gegen
+den Ton, sondern dagegen, dass die Antwort an der Sache vorbeigeht.
+
+**Media Pouch (Lieferant, den er behalten will) — lang, und das Lange ist die
+Beziehung:**
+· widerlegt ihr Argument an der Sache (*"on headphones, which is how a huge
+  share of people listen, it's clearly there"*),
+· benennt den Grund, warum es zählt (*"that's the whole reason I'm paying for a
+  professional studio"*),
+· erinnert an die Vorgeschichte (*"the exact same issue as last time"*),
+· nennt **zwei** akzeptable Lösungen statt einer Forderung,
+· und schließt mit dem Angebot: *"you guys have the best-looking podcast setup
+  I've come across … I'd love to do a lot more sessions there … Let's solve this
+  and keep going."*
+
+> **Regel, korrigiert:** Nicht Länge unterscheidet die Register, sondern
+> **Zukunft**. Wo er weiterarbeiten will, investiert er Text in die Beziehung
+> und bietet Auswege an. Wo nicht, fragt er zweimal dasselbe und wird kürzer.
+> Entwürfe für Lieferanten müssen zuerst diese Frage beantworten: will er die
+> Firma behalten?
+
+**Nebenbefund, der eine eigene Korrektur präzisiert:** Am 14.09. hatte ich
+geschrieben, der Media-Pouch-Vorgang vom August sei erledigt gewesen.
+**Kaufmännisch ja** (Gratisbuchung angenommen), **technisch nein** — er sagt
+heute selbst, es ist derselbe Fehler. Ich hatte "erledigt" zu breit gefasst.
+
+═══════════════════════════════════════════════════════════════
+ER HAT DIE HONORARFRAGE SELBST GESTELLT — ALS FRAGE NACH DEM UMFANG (15.09.)
+═══════════════════════════════════════════════════════════════
+
+Auf dem Board stand wochenlang: *"bei Lieferanten fragst Du nie nach dem Preis,
+hier bist Du aber der Lieferant"* — mit dem Zusatz, dass das mein Vorschlag sei
+und nicht seine Gewohnheit.
+
+Heute 15:49 an Luis: *"Und eine kurze Frage noch: in welchem Umfang planen wir
+dann das Ganze ab Mitte Oktober offiziell anzugehen?"*
+
+**Er fragt nach dem Rahmen, nicht nach der Zahl.** Das ist kein Ausweichen: der
+Umfang ist die Bedingung, unter der ein Honorar überhaupt genannt werden kann.
+
+> **Regel:** Wenn ich bei ihm eine Lücke sehe, die "die Preisfrage fehlt" heißt,
+> ist die Frage, die er tatsächlich stellen wird, fast immer eine Stufe davor —
+> nach Umfang, nach Erwartung, nach Rahmen. Ich soll die Lücke benennen, aber
+> nicht seine Formulierung vorwegnehmen.
+
+**Zwei Abreisedaten am selben Nachmittag, an zwei verschiedene Leute:**
+· 14:52 an Walker: *"these are my final days in the States before I head home to
+  SA, so my window to make this happen is closing."*
+· 15:49 an Luis: *"ich fliege an dem WE erst zurück nach SA"* → 17./18.10.
+Ein Monat Differenz, und die Burning-Man-Aufnahme (2.10.) liegt dazwischen.
+Aufs Board als Beobachtung, **ohne zu behaupten, eines sei unwahr** — "final
+days" kann ein Gefühl sein, und Flugpläne ändern sich.
