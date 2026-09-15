@@ -1944,3 +1944,61 @@ Board-Änderung und Publish noch offen waren. Das ist derselbe Fehler wie am 14.
 > **abgeschlossen** ist — Board gespeichert, committet, gepusht, publiziert.
 > Solange ein Tool-Ergebnis in der Hand liegt, das noch zu einer Änderung führen
 > muss, ist der Durchgang nicht zu Ende.
+
+═══════════════════════════════════════════════════════════════
+BURNING MAN: SAN FRANCISCO, NICHT GERLACH — UND NICHT BESTÄTIGT (15.09., 15:08)
+═══════════════════════════════════════════════════════════════
+
+Eine Stunde nachdem ich den Burning-Man-Punkt „korrigiert" hatte, habe ich den
+Faden `19faa4fe6cf78368` vollständig gelesen und dabei **meine eigene Korrektur
+korrigieren müssen**. Zwei Fehler:
+
+**1. Der Ort.** Ich hatte aus dem `location`-Feld des Kalendereintrags
+*"Burning Man Gerlach Office"* geschlossen, der Termin sei in Nevada. Walker
+Fisher schreibt zweimal **`1:00 PM to 3:00 PM PT at BMHQ`**, und Yannick selbst
+am 13.08.: *"I'll actually be flying to SF specifically for this podcast and only
+planning to be in town a few days."* **Es ist San Francisco.**
+
+> **Regel:** Das `location`-Feld eines Kalendereintrags ist eine Notiz von ihm,
+> keine Quelle. Wenn der Faden einen Ort nennt, gilt der Faden. Ich hatte
+> dieselbe Lektion schon bei der Adresse `1330 San Pedro NE`.
+
+*Die Uhrzeit war richtig:* Zeitstempel `2026-10-02T15:00:00-05:00` = 20:00Z
+= **13:00 PT**. Die Zeitstempel-Regel hat gehalten, das Ortsfeld nicht.
+
+**2. Es ist nicht fest.** Walker, 14.08.: *"she agrees that October 2nd is the
+most stable option; **however, it is still tentatively confirmed on her end**…
+please continue to hold October 2nd."* Am 09.09.: *"I will be conferring with
+Marian and reply today with options that we can confirm."* — **diese Antwort ist
+nie gekommen.** Sechs Tage Stille, dann heute 14:52 sein Nachfassen.
+
+**Damit hatte der Databank recht und mein Board unrecht.** *In Conversation* ohne
+Datum ist die genauere Beschreibung eines Termins, den nur eine Seite hält. Dass
+ich den Status nicht angefasst habe, war richtig — aber aus dem falschen Grund
+(ich hielt den Kalender für die bessere Quelle).
+
+**Die eine offene Stelle im ganzen Faden ist eine Frage an ihn**, seit 14.08.
+unbeantwortet: *"when would you need final confirmation by? This will help
+Marian understand when she needs to provide you with a solid confirmation."*
+Auch die heutige Mail nennt keine Frist. Aufs Board als Wiedergabe seiner Frage,
+nicht als Empfehlung.
+
+**Kontext, den ich vorher nicht hatte und der zählt:**
+· Marians eigene Antwort, 28.07.: *"I am interested. We have a team and a
+  process, and if you're patient we might be able to land something… And, i
+  still don't know if i can do your podcast. But, let's try."*
+· 13.08., er: er wollte zum **4. Oktober** zurück in Südafrika sein — *"it's my
+  anniversary with my fiancée"* — und gibt das für diesen Termin auf:
+  *"But hey, a Burner's gotta do what a Burner's gotta do."*
+· Heute: *"it's now looking like these are my final days in the States before I
+  head home to SA, so my window to make this happen is closing."*
+· Am 05.08. gab es schon einmal eine Zeitzonenverwirrung in diesem Faden
+  (Einladung 11:00 CT gegen die vorher genannten 13:00 CT).
+
+**Gleicher Nachmittag, zwei weitere Mails von ihm:**
+· **14:48 an Nick:** *"Just wanted to make sure we're booked in for 10:30 on
+  Friday morning - can you send a Google invite to me and my guest:
+  rjstrassman@gmail.com"* → der Freitagsraum ist **angefragt, nicht gebucht**.
+· **15:05 an Soul:** *"This package was shipped almost 3 weeks ago and still
+  hasn't arrived - what's happening?"* — dritter Beleg für den knappen
+  Lieferanten-Ton: kein Polster, eine Frage statt einer Forderung.
