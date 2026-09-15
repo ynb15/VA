@@ -1888,3 +1888,59 @@ mit der Freitagszusage selbst aufgegeben.
 **Offen und von mir nicht zu lösen:** ein Auto für Freitag. Er hat es selbst als
 Voraussetzung genannt, und im Postfach liegt keine Bestätigung — was nichts
 beweist, weil er Autos und Räume auch telefonisch bucht.
+
+═══════════════════════════════════════════════════════════════
+BURNING MAN STAND IMMER IM KALENDER — ICH HABE NACH DEM FALSCHEN WORT GESUCHT (15.09.)
+═══════════════════════════════════════════════════════════════
+
+Das Board führte seit Wochen: *"Burning Man CEO — end of September, at their HQ.
+No date on the calendar, nothing in the Databank."*
+
+Der erste Teil war falsch. Der Eintrag heißt
+**`Man's Search for Meaning: Marian Goodell`, Fr 02.10., Ort `Burning Man
+Gerlach Office`**, angelegt 14.08. Marian Goodell *ist* die CEO.
+
+**Woran es lag:** Ich habe den Kalender nach "Burning Man" durchsucht, er führt
+Gäste aber konsequent unter `Man's Search for Meaning: <Name>`. Der Ortsname
+stand nur im `location`-Feld, das meine Suche nicht getroffen hat.
+
+> **Regel:** Podcast-Termine heißen in seinem Kalender *immer*
+> `Man's Search for Meaning: <Gastname>`. Wenn ich prüfen will, ob ein Gast
+> terminiert ist, suche ich nach dem **Gastnamen** oder hole die ganze Reihe
+> mit `search_events("Man's Search for Meaning")` — nie nach Firma, Ort oder
+> Projekt.
+
+**Die Zeitzonenfalle zum dritten Mal.** Der Eintrag trägt Zeitstempel `-05:00`
+(Central) bei `timeZone: America/Los_Angeles`. Nach der geschärften Regel gilt
+der Zeitstempel: **13:00–15:00 Ortszeit Gerlach** (Nevada, Pacific). Dritter Fall
+derselben Bauart nach Strassman/Denver und Boulder. Es ist kein Zufall mehr,
+sondern ein Muster: **wenn er einen Termin in einer anderen Zeitzone selbst
+anlegt, trägt der Zeitstempel Central und das Label den Zielort.** Bei Boulder
+ist daraus eine echte Stunde Differenz zur Studio-Einladung geworden.
+
+**Databank sagt etwas anderes als der Kalender:** Marian Goodell steht auf
+*In Conversation*, ohne Datum, Notiz *"Replied interested ('let's try'); intake
+form submitted."* Ich habe den Status **nicht** angefasst — einen Termin selbst
+anzulegen ist keine Zusage der Gästin, und welche der beiden Darstellungen
+stimmt, weiß nur er. Aufs Board als Widerspruch, nicht als Korrektur.
+
+**Erledigt im selben Durchgang:** Scott Aaronsons Datum in die Databank
+geschrieben (`398251f9-734e-81bd-a604-eba48171a5b0`, `2026-08-21 18:00–20:00Z`
+= Fr 21.08. 13:00–15:00 Austin, Just Push Record). Die Notiz enthielt das Datum
+schon im Klartext, das Feld war leer. **Status bewusst auf `Confirmed` gelassen**
+— ob die Aufnahme stattgefunden hat, weiß ich nicht, und sein `responseStatus`
+steht noch auf `needsAction`.
+
+**Weiter ohne Beleg und deshalb unangetastet:** Amy May, Jamie Elkon, Drew Birch,
+Megan de Beyer, Amy Nelson (Confirmed) sowie Nathan Maingard, Craig Makhosi,
+Bridget Woods (Recorded) haben kein Datum und keinen Kalendereintrag unter
+`Man's Search for Meaning:`. Vermutlich Südafrika-Aufnahmen von vor der Reise.
+**Ich erfinde dafür keine Daten.**
+
+**Eigener Verfahrensfehler, dreimal an einem Tag:** Ich habe mitten in
+laufender Arbeit "No response requested" geantwortet, während Notion-Schreibvorgang,
+Board-Änderung und Publish noch offen waren. Das ist derselbe Fehler wie am 14.09.
+> **Regel, schärfer:** "Nichts zu berichten" ist nur zulässig, wenn der Sweep
+> **abgeschlossen** ist — Board gespeichert, committet, gepusht, publiziert.
+> Solange ein Tool-Ergebnis in der Hand liegt, das noch zu einer Änderung führen
+> muss, ist der Durchgang nicht zu Ende.
