@@ -1817,3 +1817,74 @@ für Freitag ist kein Raum gebucht. Nicks Absage steht. Die Adresse
 genau dieser gestrichenen Buchung — sie ist jetzt doppelt überholt, im Tag und
 im Ort. Mein Entwurf `drafts/strassman-adresse.md` ist damit inhaltlich falsch
 und darf so nicht stehenbleiben.
+
+═══════════════════════════════════════════════════════════════
+DER STRASSMAN-FADEN — VIER FALSCHE ZEILEN AUF EINMAL (14.09., Sweep 22:08)
+═══════════════════════════════════════════════════════════════
+
+Ich habe `19fd86941f0f50e6` und `1a06d6776b533f6f` zum ersten Mal mit
+`get_thread` geholt statt in der Suchvorschau. Ergebnis: **vier Behauptungen
+auf dem Board waren falsch oder veraltet**, alle vier aus derselben Ursache.
+
+**1. Der Dienstag ist nicht am Raum gescheitert.**
+12.09. 17:23 Austin, er an Strassman: *"I owe you a real apology and a favor:
+I just got word that the buddy I'm road-tripping out of Austin with is stuck
+with travel delays coming back from Thailand. There's no realistic…"*
+Nicks Kalenderabsage kam 17:29 — fünf Stunden früher in UTC gerechnet, aber
+am selben Tag. Wer wen zuerst abgesagt hat, ist aus dem Postfach nicht zu
+belegen (eine Mail von ihm an Nick existiert nicht). **Aber "ohne Begründung,
+merkwürdig, ich kann es nicht erklären" war meine Konstruktion um eine Lücke
+herum, die gar keine war.**
+
+**2. Die Adresse war seit 12.09. vormittags geklärt.**
+Nick 01:25: *"201 San Mateo Blvd NE. Se will send you other side of street."*
+Nick 10:34: *"We are right before Central. You'll see two towers on the east
+side. We are right before a closed down Walgreens store. 505 550 3869 is
+direct if you get lost."* — weitergeleitet 10:38, Strassmans *"Thanks!"* 11:09.
+Ich habe die Zeile danach noch zwei Tage als offen geführt.
+
+**3. Preis und Fotos lagen seit 08.09. vor.**
+Nick, 08.09. 13:34: *"Cost will be $300 plus tax."* Mit Studiofoto im Anhang.
+Auf dem Board stand bis heute *"kein veröffentlichter Preis"* und *"Setup-Fotos
+stehen aus"*. Das war eine Behauptung darüber, was NICHT passiert ist — genau
+die Klasse Aussage, die eine Vorschau nicht tragen kann.
+
+**4. Der Termin war gestern Abend abgesagt und ist erst gestern Mittag
+wieder aufgemacht worden.**
+13.09. 18:31 Strassman: *"It is a bummer. Let me know next time you're in the
+area."* — 14.09. 12:06 er: *"I'm now looking into renting/borrowing a car to
+make it happen against all odds."* — 12:16 Strassman: *"Friday am still works,
+10:30 am."* — 19:18 er: *"Friday 10:30 it is!"* — 20:06 Kalenderzusage.
+
+**Die verschärfte Regel — dritter Verstoß gegen dieselbe Sache.**
+Die alte Fassung hieß: *vor "offen", "Stille" oder einer Tageszählung den Faden
+mit `get_thread` holen.* Sie hat nicht gereicht, weil ich sie als Ausnahme
+gelesen habe. Neue Fassung:
+
+> **Jeder Faden, aus dem eine Zeile aufs Board geht, wird vorher mit
+> `get_thread` vollständig gelesen. Ohne Ausnahme, auch wenn die Vorschau
+> vollständig aussieht — sie sieht immer vollständig aus.** Eine Zeile, die
+> ich nur aus `search_threads` habe, darf auf dem Board nur mit der expliziten
+> Kennzeichnung "nur Vorschau gelesen" stehen.
+
+**Nebenbefund, ohne Handlungsbedarf für mich:**
+Strassman hat am 08.09. zweimal widersprochen: *"I don't see a recording studio
+located in that building"* und *"This looks like it's on 201 Eubank Blvd. NE.,
+not 201 San Mateo"*. 201 Eubank ist die Adresse des *anderen* Studios auf
+meiner Liste. Nicks Wegmarken sprechen für San Mateo, aber ein Ortskundiger
+hat zweimal widersprochen — das bleibt ungeklärt.
+
+**Seine eigenen Worte zur Kasse, 13.09. 13:50:**
+*"I'm down to my last pennies before I fly back to South Africa in early
+October, so an extra flight isn't in the cards."*
+Das ist die erste Aussage von ihm selbst neben den drei geplatzten Abbuchungen
+(Webflow, Google Workspace, Anthropic). Ich lege es daneben und leite nichts ab.
+
+**Boulder stimmt nicht überein:** er schreibt 13.09. *"we still need to be in
+Boulder by Thursday"* und *"podcasts scheduled up in Boulder for the weekend"*,
+im Kalender steht Joe Moore am Dienstag 22.09. Die Donnerstagsbedingung hat er
+mit der Freitagszusage selbst aufgegeben.
+
+**Offen und von mir nicht zu lösen:** ein Auto für Freitag. Er hat es selbst als
+Voraussetzung genannt, und im Postfach liegt keine Bestätigung — was nichts
+beweist, weil er Autos und Räume auch telefonisch bucht.
