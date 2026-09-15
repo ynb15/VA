@@ -1779,3 +1779,41 @@ traegt sie ebenfalls — beides kann ich nicht selbst aendern.
 
 AB JETZT: In Chat-Meldungen die NEUE URL nennen. Die alte einmal erwaehnt und
 dann nicht mehr.
+
+═══════════════════════════════════════════════════════════════
+STRASSMAN IST AUF FREITAG GERUTSCHT — UND DAS HAT ER SELBST GELÖST (14.09., 20:06)
+═══════════════════════════════════════════════════════════════
+
+Ich habe zwei Tage lang das Problem "kein Raum für Dienstag" geführt: Nick hat
+die Buchung Samstag 17:29 ohne Begründung gestrichen, Katharsis war für den 15.
+raus, ich hatte Entwürfe an zwei weitere Studios liegen.
+
+Gelöst wurde es an keiner dieser Stellen. Er hat **das Datum bewegt**.
+
+Die Zusage kam 14.09. 20:06 Austin als Kalenderbenachrichtigung:
+*"Rick Strassman hat diese Einladung angenommen. Wann Freitag 18. Sep. 2026 ⋅
+11:30AM – 1:30PM (Nordamerikanische Zentralzeit - Chicago) Standort Albuquerque"*
+
+Gegengeprüft an beiden Kalendern:
+· `5s49u4u5jsmmu2dtqdd3os5hpc` steht jetzt auf `2026-09-18T11:30:00-05:00` → 13:30,
+  Ort Albuquerque, **beide Teilnehmer auf zugesagt**, updated `2026-09-15T01:06:52Z`
+· `0ktsl38rs35u9pfnbifchk4jj7` (*Whitney Wheelock? (high)*) ist **von Freitag auf
+  Samstag 19.09. 10:00–12:00** gewandert, updated 14.09. 17:03 UTC — drei Stunden
+  **vor** Strassmans Zusage. Er hat den Freitag also erst freigeräumt und dann
+  angefragt, nicht umgekehrt.
+
+**Die Regel daraus:** wenn ich ein Problem als "X ist blockiert, ich brauche Y"
+führe, führe ich eine Lösungsrichtung mit, die er nicht gewählt hat. Er hat hier
+nicht die Ressource beschafft, sondern die Bedingung geändert. Das ist die
+zweite Woche in Folge, dass sich ein von mir aufgeschriebener Widerspruch
+auflöst, weil er selbst etwas verschoben hat (Montagabend war der erste Fall).
+Ich schreibe Widersprüche weiter auf — aber ohne die Formulierung "das braucht
+jetzt eine Entscheidung von Dir", solange ich nicht weiß, ob er sie nicht
+längst getroffen hat.
+
+**Was dadurch NICHT gelöst ist, und ich es nicht mitziehen darf:**
+für Freitag ist kein Raum gebucht. Nicks Absage steht. Die Adresse
+`201 San Mateo Blvd NE`, die Strassman Samstagnacht bekommen hat, gehört zu
+genau dieser gestrichenen Buchung — sie ist jetzt doppelt überholt, im Tag und
+im Ort. Mein Entwurf `drafts/strassman-adresse.md` ist damit inhaltlich falsch
+und darf so nicht stehenbleiben.
