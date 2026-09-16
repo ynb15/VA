@@ -2069,3 +2069,32 @@ Umfang ist die Bedingung, unter der ein Honorar überhaupt genannt werden kann.
 Ein Monat Differenz, und die Burning-Man-Aufnahme (2.10.) liegt dazwischen.
 Aufs Board als Beobachtung, **ohne zu behaupten, eines sei unwahr** — "final
 days" kann ein Gefühl sein, und Flugpläne ändern sich.
+
+═══════════════════════════════════════════════════════════════
+EINE DRITTE MAILART: BEWERBUNGEN FÜR SICH SELBST (15.09.)
+═══════════════════════════════════════════════════════════════
+
+Bisher kannte ich bei ihm zwei Sorten ausgehender Post: **Gastanfragen** für den
+Podcast und, seit Ende August, **Sponsorenanfragen** (LMNT, Momentous). Heute
+Abend kommt eine dritte dazu:
+
+**18:29 und 18:32 an Salt Escapes** (mike@, amy@, dann jared@), Betreff
+*"Marketing Strategist. Lifelong Athlete. Community Builder."*, je ~4,4 MB
+Anhang. Einstieg: *"7+ years scaling mission driven brands. My own 6-figure
+copywriting agency with clients across 3 continents. 50+ 5-star reviews on
+Trustpilot. Marketing is my craft. Community is where I come alive."*
+
+**Casa Buho** (Community Manager, Antigua) gehört in dieselbe Reihe — dort läuft
+seit dem 28.08. eine Bewerbung, und heute hat er dafür einen Gesprächstermin
+vorgeschlagen. Auch die MKP-Mail vom 11.08. enthielt einen solchen Satz:
+*"If there's ever an opening to support you on the marketing or communications
+side, I'd jump at it!"*
+
+> **Regel:** Diese Mails gehören **nicht** in den Databank (der ist für Gäste)
+> und nicht in die Sponsorenzeile. Eigene Zeile, eigener Faden. Ich ordne sie
+> nicht ein, bewerte sie nicht und leite keine Absicht daraus ab — ich halte nur
+> fest, wer angeschrieben wurde, damit eine eingehende Antwort zuzuordnen ist.
+
+**Der Roadtrip-Block ist heute 09:41 umdatiert worden**, von 14.–19.09. auf
+**16.–23.09.** Wenn ich die Woche aufs Board schreibe, ist dieser ganztägige
+Eintrag die zuverlässigste Quelle für den Rahmen — die Etappen stehen nirgends.
