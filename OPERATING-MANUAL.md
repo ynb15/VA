@@ -2098,3 +2098,35 @@ side, I'd jump at it!"*
 **Der Roadtrip-Block ist heute 09:41 umdatiert worden**, von 14.–19.09. auf
 **16.–23.09.** Wenn ich die Woche aufs Board schreibe, ist dieser ganztägige
 Eintrag die zuverlässigste Quelle für den Rahmen — die Etappen stehen nirgends.
+
+═══════════════════════════════════════════════════════════════
+VOICE — DER PUNKT, AN DEM ER ES BEIM NAMEN NENNT (16.09.)
+═══════════════════════════════════════════════════════════════
+
+Der Soul-Faden liefert das Muster in vier Runden binnen achtzehn Stunden, und
+damit die sauberste Beobachtung, die ich bisher dazu habe:
+
+1. **Sachfrage.** *"This package was shipped almost 3 weeks ago and still hasn't
+   arrived - what's happening?"*
+2. **Antwort geht an der Sache vorbei** (Verweis auf die Paketversicherung) →
+   **dieselbe Frage noch einmal**, höflich, aber unnachgiebig:
+   *"I kindly ask you to provide proper customer support instead of just telling
+   me to file a claim - where is the package?"*
+3. **Sie liefern das Verlangte** (Sendungsverfolgung).
+4. **Er prüft es selbst und findet, dass sie es nicht getan haben:**
+   *"Melissa, did you actually check the tracking link or just copy&paste it?
+   The package is allegedly stuck in Flower Mound since September 1st?! Honestly,
+   this is just really poor customer service…"*
+
+> **Regel, präzisiert:** Er benennt Frustration **erst, wenn die Gegenseite
+> etwas geliefert hat, das sie selbst nicht geprüft hat.** Nicht bei Verzug,
+> nicht bei Widerspruch in der Sache — sondern bei erkennbarer Nachlässigkeit.
+> Dasselbe bei Virgin Active. Bei Media Pouch, wo er weiterarbeiten will, kommt
+> dieser Satz nicht, obwohl der Vorgang älter und teurer ist.
+
+Für Entwürfe heißt das: **die Eskalationsstufe richtet sich nicht nach der Dauer
+und nicht nach dem Schaden, sondern danach, ob die Gegenseite ihre eigene
+Antwort geprüft hat.** Und: er fragt zweimal dasselbe, bevor er wertet.
+
+*Nebenbei:* Bei Soul antworten zwei verschiedene Personen (Erica, dann Melissa).
+Er spricht beide namentlich an.
