@@ -2130,3 +2130,45 @@ Antwort geprüft hat.** Und: er fragt zweimal dasselbe, bevor er wertet.
 
 *Nebenbei:* Bei Soul antworten zwei verschiedene Personen (Erica, dann Melissa).
 Er spricht beide namentlich an.
+
+═══════════════════════════════════════════════════════════════
+ICH HABE EINEN ALARM GEBAUT, DEN ES NICHT GAB — IAN GARDNER (17.09.)
+═══════════════════════════════════════════════════════════════
+
+Auf dem Board stand den ganzen Vormittag, zuoberst und mit Stripe:
+*"Der Ian-Termin ist heute. Abgesagt hast Du ihn nur Dir selbst … wenn er nicht
+stattfindet, erfährt Ian es von Dir oder gar nicht."*
+
+**Falsch, und zwar an der Wurzel.** Am 13.09. um 22:50 hat Yannick Ian selbst
+geschrieben: *"I have to reshuffle our plan… I've had to move all the podcasts I
+had lined up in Boulder and Albuquerque and unfortunately that means I need to
+postpone our session too."* Ian, 27 Minuten später: *"All good brother...
+Whenever you arrive!"*
+
+**Wie es passiert ist.** Ich habe den Kalender gelesen (Eintrag steht, Ian
+*accepted*, er *declined*) und die Mailsuche nach `Gardner` gemacht. Die Suche
+hat den Faden `19fcdebb3d96344c` zurückgegeben — und die Vorschau zeigte die
+fünf **ältesten** Nachrichten, also August. Die Absage ist die **zehnte**
+Nachricht im Faden. Ich habe den Faden nicht mit `get_thread` geholt, weil er
+nach Vorgeschichte aussah.
+
+> **Die Regel vom 15.09. hat nicht versagt, weil sie unbekannt war, sondern weil
+> ich sie nur auf *neue* Fäden angewandt habe.** Sie gilt gerade für die alten:
+> ein Faden, der in der Vorschau alt aussieht, ist der gefährlichste, weil die
+> Vorschau ihn systematisch alt *aussehen lässt*. Wenn eine Board-Zeile
+> behauptet, etwas sei **nicht** geschehen — keine Mail, keine Antwort, kein
+> Widerspruch —, ist das eine Aussage über einen Faden, den ich vollständig
+> gelesen haben muss. **Negative Behauptungen brauchen mehr Beleg als positive,
+> nicht weniger.**
+
+**Die zweite Lehre, unangenehmer:** Ein *declined* des Organisators bei einem
+*accepted* des Gastes ist keine Evidenz für gar nichts. Es ist genau das, was
+übrigbleibt, wenn jemand telefonisch oder per Mail absagt und den Eintrag nicht
+aufräumt. Ich habe aus einem **Aufräumrest** einen **Alarm** gemacht und ihn
+oben auf den Tag gesetzt — bei einem Mann, dem ich laut Handbuch *weniger*
+Alarme schulde, nicht mehr.
+
+**Was wirklich offen ist:** sein eigener Satz *"I'll follow up as soon as I've
+got firmer dates"*, Fenster nach seinen Worten die Woche ab 21.09. oder ab
+28.09. Scottsdale liegt nicht auf dem Weg nach San Francisco (02.10.). Das ist
+eine Zeile ohne Uhr, kein Alarm.
