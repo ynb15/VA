@@ -2172,3 +2172,33 @@ Alarme schulde, nicht mehr.
 got firmer dates"*, Fenster nach seinen Worten die Woche ab 21.09. oder ab
 28.09. Scottsdale liegt nicht auf dem Weg nach San Francisco (02.10.). Das ist
 eine Zeile ohne Uhr, kein Alarm.
+
+═══════════════════════════════════════════════════════════════
+VOICE — EIN FÜNFTES REGISTER: DER KALTE ANBIETER (gesehen 18.09.)
+═══════════════════════════════════════════════════════════════
+
+Beim Sweep taucht ein SEO-Verkäufer wieder auf (`syed@sunrisegrowwebsolutions.com`,
+Faden `19fec5cb80045860`), den er am **18.08. um 02:34** so abgefertigt hat:
+
+> *"You're pathetic, dude. First, you deliver. Then, you ask for payment. Trust
+> me, I've build several businesses from zero. Get real results first."*
+
+Das ist **kein** Fall der Eskalationsregel vom 16.09. Dort galt: er benennt
+Frustration erst, wenn die Gegenseite etwas geliefert hat, das sie selbst nicht
+geprüft hat. **Bei kalter Akquise ohne Beziehung gibt es diese Stufenfolge gar
+nicht** — der erste Satz ist schon der letzte.
+
+> **Regel:** Fünf Register, nicht vier. Vor jedem Lieferanten-Entwurf zuerst
+> fragen: *besteht eine Beziehung, die er behalten will?*
+> · **Ja** (Media Pouch) → lang, Auswege anbieten, Zukunft benennen.
+> · **Transaktion** (Soul, Virgin Active) → kurz, dieselbe Frage zweimal,
+>   Wertung erst bei erkennbarer Nachlässigkeit.
+> · **Kalt und ungefragt** (Syed) → ein Satz, verächtlich, Faden zu.
+> **Für mich heißt das vor allem: in dieser dritten Lage entwerfe ich gar
+> nichts.** Er braucht dafür keinen Entwurf, und ein höflicher von mir wäre das
+> Gegenteil seiner Absicht.
+
+*Nebenbefund zum Postfach:* Die ersten drei Nachfassversuche dieses Absenders
+sind automatisch im Papierkorb gelandet, der vierte (18.09., 10:27) steht im
+Posteingang. **Ein Absender im Posteingang statt im Papierkorb bedeutet nicht,
+dass die Sache neu oder wichtig ist.**
