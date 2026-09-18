@@ -296,14 +296,14 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede">Gabby hat um 18:07 geantwortet. Nach sieben Monaten ist es ein Nein — mit einer offenen Tür am Ende.</p>
-    <p class="tiny"><em>"we&#39;re honestly not hiring at the moment … do keep in touch as things are always changing here at Modern Wisdom. Next year will be a big year for us!"</em> Ganzer Wortlaut in der ersten Zeile unten.<br><strong>Um 18:57 hast Du Nick beide Fragen beantwortet</strong> — Dateien über Google Drive, Zahlung per Karte. Damit ist für morgen alles geklärt außer dem Wagen. <em>Korrigiert seit heute Morgen:</em> der Ian-Termin war kein Risiko — Du hattest ihn am 13.09. selbst verschoben, Ian hat zugestimmt.<br><strong>Morgen ist der Aufnahmetag:</strong> Strassman, <strong>10:30 Ortszeit Albuquerque</strong>, Raum gebucht, alle drei haben zugesagt.</p>
+    <p class="lede">Freitag ist der Aufnahmetag. Strassman, 10:30 Ortszeit Albuquerque.</p>
+    <p class="tiny"><strong>Der Freitag im Kalender:</strong> Morning Routine 07:00 · <em>Prep: Rick Strassman</em> 08:30–10:30 · <strong>Aufnahme 11:30–13:30 Central = 10:30–12:30 Ortszeit Albuquerque</strong>, The Podcast Studio NM, <strong>201 San Mateo Blvd NE</strong> · Substack 15:30. Ganztägig <em>Roadtrip</em> (16.–23.09.).<br><strong>Alles geregelt außer dem Wagen:</strong> Raum gebucht, alle drei haben zugesagt, Dateien kommen über Google Drive, gezahlt wird per Karte, <strong>300 $ plus Steuer</strong>. Direktnummer bei Nick, falls Du Dich verfährst: <strong>505 550 3869</strong>.<br><em>Vom Donnerstagabend:</em> Gabby hat abgesagt — kein Termin bei Modern Wisdom, aber ausdrücklich <em>"do keep in touch"</em>.</p>
   </div>
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Ryans Zeitstempel ist das Einzige, das morgen früh nicht mehr geht.</h2>
-    <p class="why"><strong>Frist 18.09., und morgen fährst Du nach Albuquerque und nimmst zwei Stunden mit Strassman auf.</strong> Ryan will eine Stelle in der Datei, die Du ohnehin schon gehört hast — <em>"the time stamp of the specific section that sounds worst on your headphones"</em>. Wenn es heute Abend nicht rausgeht, geht es nicht rechtzeitig raus. <em>Das ist meine Einschätzung der Reihenfolge, keine Ansage.</em><br><strong>Ohne Uhr, wenn heute Abend noch Luft ist:</strong> SavedBy will die Lieferadresse fürs Soul-Paket · Deine RSVP zur BMHQ-Einladung am 02.10. · Ian wartet auf feste Daten.<br><strong>Und heute Abend gelesen, aber nichts zu tun:</strong> Gabbys Absage. <em>Sie lässt ausdrücklich offen, dass sich das nächstes Jahr ändert — das ist ihre Formulierung, nicht meine Deutung.</em></p>
+    <h2>Heute fährst Du und nimmst auf. Der Rest kann warten.</h2>
+    <p class="why"><strong>10:30 Ortszeit Albuquerque, und davor die Fahrt.</strong> Das ist der Tag. <em>Wenn morgens etwas dazwischenkommt, ist die Direktnummer des Studios 505 550 3869.</em><br><strong>Die einzige Sache mit einer Frist auf heute:</strong> Ryan wartet auf den Zeitstempel der schlimmsten Rauschstelle — <em>"the time stamp of the specific section that sounds worst on your headphones"</em>. Wenn der Tag dafür keinen Platz lässt, ist eine Zeile an ihn mehr wert als Schweigen. <em>Das ist meine Einschätzung, keine Ansage.</em><br><strong>Ohne Uhr und für danach:</strong> SavedBy will die Lieferadresse fürs Soul-Paket · Deine RSVP zur BMHQ-Einladung am 02.10. steht noch offen · Ian wartet auf feste Daten, ohne Druck.</p>
   </div>
 
   <div class="eyebrow">Still open</div>
@@ -1210,7 +1210,11 @@ Yannick</div>
     });
     var max = Math.max.apply(null, totals) || 1;
     var grand = 0;
-    var todayKey = "thu";
+    var _p = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Chicago", year: "numeric", month: "numeric", day: "numeric" }).formatToParts(new Date());
+    var _g = function (t) { var f = _p.filter(function (x) { return x.type === t; })[0]; return f ? f.value : ""; };
+    var _todayStr = _g("year") + "/" + Number(_g("month")) + "/" + Number(_g("day"));
+    var _match = DAYS.filter(function (d) { return d.date === _todayStr; })[0];
+    var todayKey = _match ? _match.key : "";
 
     DAYS.forEach(function (d, i) {
       var hrs = totals[i];
@@ -1364,7 +1368,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-17T21:08:00-05:00");
+  var SWEPT = new Date("2026-09-17T22:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
