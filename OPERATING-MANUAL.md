@@ -2202,3 +2202,35 @@ nicht** — der erste Satz ist schon der letzte.
 sind automatisch im Papierkorb gelandet, der vierte (18.09., 10:27) steht im
 Posteingang. **Ein Absender im Posteingang statt im Papierkorb bedeutet nicht,
 dass die Sache neu oder wichtig ist.**
+
+═══════════════════════════════════════════════════════════════
+ER FÜLLT DAS FORMULAR NICHT AUS — ER BEENDET DEN VORGANG (19.09.)
+═══════════════════════════════════════════════════════════════
+
+Das Board führte seit dem 16.09. als offenen Punkt: *"SavedBy will die
+Lieferadresse."* Zweimal gefragt, zuletzt am 18.09. um 17:42. Ich hatte das als
+Aufgabe geführt, die er zu erledigen hat.
+
+Er hat sie nicht erledigt. Am 19.09. um 11:37:
+
+> *"Hey Raven, Thanks for reaching out. At this point however, I'm so
+> disappointed by the terrible customer service from Soul that I'd kindly just
+> ask for a refund."*
+
+Acht Minuten später war der Schadensfall bewilligt und Soul hat 77 $ erstattet.
+
+> **Regel:** Wenn ich bei ihm einen offenen Punkt führe, der aus einer Frage der
+> Gegenseite besteht, ist *die Frage zu beantworten* nur **eine** der möglichen
+> Auflösungen. Die andere, und bei erschöpfter Beziehung oft seine: **den
+> Vorgang abbrechen und das Geld zurückverlangen.** Ich soll die offene Frage
+> festhalten, aber nicht unterstellen, dass ihre Beantwortung der nächste
+> Schritt ist.
+
+**Zum Ton, passend zur Registerregel vom 16.09.:** *"I'd kindly just ask for a
+refund"* — höflich im Wortlaut, endgültig in der Sache. Er wird nie laut; er
+hört auf. Dieselbe Bauart wie *"I kindly ask you to provide proper customer
+support"* vom 15.09., nur eine Stufe weiter.
+
+**Und der Auslöser ist wieder derselbe:** nicht der Verzug (drei Wochen), nicht
+der Schaden (77 $), sondern dass die Gegenseite ihn zum dritten Mal um etwas
+gebeten hat, statt selbst etwas zu liefern.
