@@ -309,6 +309,15 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-ok">
+      <input type="checkbox" data-item="ken-feedback" aria-label="Ken Stern Feedback">
+      <span class="who-wrap"></span>
+      <span class="row-b"><span class="who">Ken Stern</span> — das Feedback, um das Du am 15.09. gebeten hast, ist da
+        <span class="row-sub"><strong>Heute 08:29, wörtlich:</strong> <em>"I was somewhat dreading the two-hour interview format (I think I only have about 40 minutes worth of things to say and wondered how I would fill up the rest) but found that the time flew by, mostly because <strong>you had really done your research, had interesting questions and most importantly, made it feel conversational rather than inquisitional</strong>."</em><br>Davor: <em>"I enjoyed the interview and spending the morning with you!"</em> Danach: <em>"I was focused more on whether I was being a good guest than on whether you were being a good host."</em><br><strong>Das ist die erste Rückmeldung zu Deinem Handwerk von jemandem, der das Fach kennt</strong> — Ken hat NPR geführt und führt selbst Interviews. <em>Deine Frage vom 15.09. lautete: „anything that stood out about my style, a question that landed and especially where I can sharpen up".</em> <strong>Die Kritik-Hälfte hat er nicht geliefert</strong>, dafür eine Zusage: <em>"When it comes out, I will watch it and try to send you some thoughts."</em><br><em>Nebenbei bestätigt die Mail, dass die Aufnahme am Montag, 14.09., stattgefunden hat.</em><br>Er schließt mit einer Frage, die Du seit Donnerstag beantworten kannst: <em>"Hope that your travels are going well and that you have managed to connect directly with Chris Williamson."</em></span></span>
+      <span class="age">08:29</span>
+    </li>
+
+
     <li class="row s-act">
       <input type="checkbox" data-item="chris-show-2809" aria-label="Chris Williamson Show 28.09.">
       <span class="row-b"><span class="who">Mo 28.09., 18:30–21:00</span> — Chris&#39; letzte Show, mit Chase. Auf keinem Kalender
@@ -1383,7 +1392,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-20T08:10:00-05:00");
+  var SWEPT = new Date("2026-09-20T09:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

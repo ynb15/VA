@@ -2234,3 +2234,29 @@ support"* vom 15.09., nur eine Stufe weiter.
 **Und der Auslöser ist wieder derselbe:** nicht der Verzug (drei Wochen), nicht
 der Schaden (77 $), sondern dass die Gegenseite ihn zum dritten Mal um etwas
 gebeten hat, statt selbst etwas zu liefern.
+
+═══════════════════════════════════════════════════════════════
+DIE ERSTE FACHLICHE EINSCHÄTZUNG SEINES INTERVIEWHANDWERKS (20.09.)
+═══════════════════════════════════════════════════════════════
+
+Ken Stern — früher CEO von NPR, selbst Interviewer — auf seine Bitte um
+Feedback:
+
+> *"you had really done your research, had interesting questions and most
+> importantly, made it feel conversational rather than inquisitional"*
+
+Dazu: er habe das Zweistundenformat **gefürchtet** (*"I think I only have about
+40 minutes worth of things to say"*) und am Ende sei die Zeit verflogen.
+
+**Warum das in dieses Handbuch gehört und nicht nur aufs Board:** Es ist die
+erste externe, fachlich kompetente Beschreibung dessen, was seine Aufnahmen
+tragen. Drei Dinge, in seiner Reihenfolge: **Recherche · Fragen · das Gefühl
+eines Gesprächs statt eines Verhörs.** Wenn ich für ihn Gastanfragen, Beschreibungen
+oder Texte über die Show schreibe, ist das die Sprache, die zutrifft — nicht
+Reichweite, nicht Prominenz.
+
+**Und ein Muster:** Er hat um Kritik gebeten und Lob bekommen. Dasselbe bei
+Cal (*"Well done!!!!"*). **Wenn er nach Schärfung fragt, liefern die Leute
+Bestätigung.** Ich schreibe deshalb nie „Feedback steht noch aus", wenn Lob
+gekommen ist — aber ich halte fest, dass die Kritik-Hälfte fehlt, weil er
+danach gefragt hat.
