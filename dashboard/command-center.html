@@ -297,7 +297,7 @@ details.cleared[open] summary::after{content:" ▴";}
 
   <div class="greet">
     <p class="lede">Sonntag, und er ist als Ruhetag markiert. Die Sutcliffe-Folge geht heute raus.</p>
-    <p class="tiny"><strong>Der Sonntag im Kalender:</strong> ganztägig <em>Rest Day</em> und <em>Podcast: David Sutcliffe</em> (Ausspielmarker) · Morning Routine 07:30 · Date Night 11:00–13:00 · Artist Date 15:00–17:00. Der Roadtrip-Block läuft noch bis 23.09.<br><strong>Isabelles Thumbnail für genau diese Folge</strong> liegt seit Freitagnacht als Canva-Freigabe im Postfach — falls Du heute ohnehin auf die Folge schaust.<br><em>Ohne Beleg geblieben:</em> die Strassman-Aufnahme vom Freitag und der Whitney-Block von gestern. Ich trage beides nach, wenn etwas kommt.</p>
+    <p class="tiny"><strong>Der Sonntag im Kalender:</strong> ganztägig <em>Rest Day</em> und <em>Podcast: David Sutcliffe</em> (Ausspielmarker) · Morning Routine 07:30. <strong>Mehr steht da nicht.</strong> <em>Date Night 11:00–13:00 und Artist Date 15:00–17:00 standen gestern Abend noch auf dem Tag und sind über Nacht verschwunden — ich lese das als Dein Aufräumen, nicht als Versehen, und frage nicht nach.</em> Der Roadtrip-Block läuft noch bis 23.09.<br><strong>Isabelles Thumbnail für genau diese Folge</strong> liegt seit Freitagnacht als Canva-Freigabe im Postfach — falls Du heute ohnehin auf die Folge schaust.<br><em>Ohne Beleg geblieben:</em> die Strassman-Aufnahme vom Freitag und der Whitney-Block von gestern. Ich trage beides nach, wenn etwas kommt.</p>
   </div>
 
   <div class="rightnow">
@@ -1199,8 +1199,7 @@ Yannick</div>
     ["thu",12,14,"rec","Ian Gardner (verschoben)"],["thu",15.5,16,"make","Substack"],
     ["fri",7.5,8.5,"anchor","Morning Routine"],["fri",11.5,13.5,"rec","Strassman (10:30 Ortszeit)"],
     ["sat",7,8,"anchor","Morning Routine"],["sat",8,9,"body","Yoga"],["sat",10,12,"rec","Whitney Wheelock?"],["sat",14.5,15,"body","ClassPass"],
-    ["sun",7.5,8.5,"anchor","Morning Routine"],["sun",11,13,"people","Date Night"],
-    ["sun",15,17,"people","Artist Date"]
+    ["sun",7.5,8.5,"anchor","Morning Routine"]
   ];
 
   var BUCKET_VAR = { rec:"--cal-rec", make:"--cal-make", people:"--cal-people", body:"--cal-body", anchor:"--cal-anchor" };
@@ -1384,7 +1383,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-19T22:09:00-05:00");
+  var SWEPT = new Date("2026-09-20T07:09:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
