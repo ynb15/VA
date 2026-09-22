@@ -2260,3 +2260,62 @@ Cal (*"Well done!!!!"*). **Wenn er nach Schärfung fragt, liefern die Leute
 Bestätigung.** Ich schreibe deshalb nie „Feedback steht noch aus", wenn Lob
 gekommen ist — aber ich halte fest, dass die Kritik-Hälfte fehlt, weil er
 danach gefragt hat.
+
+═══════════════════════════════════════════════════════════════════════════════
+ACHT STUNDEN OHNE SWEEP, UND GENAU DARIN FIEL DIE ABSAGE (21.09.)
+═══════════════════════════════════════════════════════════════════════════════
+
+Am Montag, 21.09., lief der 07:16-Sweep vollständig. Danach lagen acht Stunden
+ohne einen. In diesen acht Stunden ist der Dienstag in Boulder abgesagt worden —
+das Studio um 12:57, Joe Moore um 17:04 — und der Privatkalender wurde um 17:23
+von allen wiederkehrenden Blöcken für Mo–Do geräumt.
+
+Auf dem Board stand bis 22:25 weiterhin als oberste Karte:
+**"Vor Boulder morgen steht noch eine Zusage aus, die nicht von mir kommen kann."**
+
+**Das ist schlimmer als eine leere Karte.** Eine leere Karte sagt nichts. Diese
+hat ihn zu einer Handlung gedrängt — eine RSVP abzugeben — für einen Termin, den
+es seit fünf Stunden nicht mehr gab.
+
+**Regel: der Schaden eines veralteten Boards ist nicht proportional zum Alter,
+sondern zur Handlungsaufforderung darauf.** Eine Karte, die nur beobachtet, altert
+langsam. Eine Karte, die zu etwas auffordert, ist ab dem Moment falsch, in dem
+sich die Sache ändert — und sie steht ganz oben, wo sie am meisten wiegt.
+
+Daraus folgt für die Praxis: **wenn ein Sweep ausfällt oder zusammengefasst wird,
+ist die erste Prüfung nicht das Postfach, sondern die oberste Karte.** Stimmt die
+Aufforderung darauf noch? Kalendereinträge, auf die eine Right-now-Karte zeigt,
+werden bei jedem Sweep gegengeprüft, nicht nur, wenn eine Mail dazu kommt.
+
+**Und: eine Absage kommt oft ohne Mail an ihn.** Hier kamen drei Kalender-
+nachrichten (zwei Streichungen des Studios, eine Absage des Gastes) und eine
+stille Änderung im Privatkalender. Alle vier landeten automatisch im Papierkorb
+oder gar nicht im Postfach. **Der Kalender ist bei Terminen die erste Quelle,
+nicht die zweite.**
+
+═══════════════════════════════════════════════════════════════════════════════
+WOCHENABGLEICH 21.09. — WAS ICH IM DATABANK GEÄNDERT HABE UND WAS NICHT
+═══════════════════════════════════════════════════════════════════════════════
+
+Geändert, alle drei mit Beleg:
+· **Ken Stern** Confirmed → **Recorded**. Seine Mail vom 20.09.: *"I enjoyed the
+  interview and spending the morning with you!"* Die Aufnahme vom 14.09. war nie
+  als stattgefunden eingetragen.
+· **Ian Gardner** Datum 17.09. → **geleert**. Der Termin wurde am 13.09. von ihm
+  selbst verschoben; im Kalendereintrag steht seither seine Antwort auf declined,
+  Ians auf accepted.
+· **Eamon Armstrong** Reached Out → **In Conversation**, mit Wortlaut.
+
+Nicht geändert, und das ist die eigentliche Entscheidung: **neun Zeilen stehen
+auf Confirmed oder Recorded ganz ohne Datum** — Amy May, Jamie Elkon, Drew Birch,
+Megan de Beyer, Amy Nelson, Whitney Wheelock, Nathan Maingard, Craig Makhosi,
+Bridget Woods. Für keine davon gibt es einen Beleg.
+
+**Ein erfundenes Datum ist schlimmer als eine leere Zelle**, weil eine leere Zelle
+sich selbst als Lücke zu erkennen gibt und ein erfundenes Datum nicht. Diese neun
+bleiben leer, bis er etwas dazu sagt oder ein Beleg auftaucht.
+
+Ebenso: **Rick Strassman bleibt Confirmed mit dem 18.09.** Beide Seiten hatten
+zugesagt, die Einladung wurde neun Minuten vor Beginn noch angefasst — aber es
+gibt keinen einzigen Beleg, dass aufgenommen wurde. *Recorded* wäre eine
+Behauptung, keine Eintragung.
