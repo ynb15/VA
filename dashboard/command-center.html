@@ -309,6 +309,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-warn">
+      <input type="checkbox" data-item="ken-boston-cc" aria-label="Ken Stern Boston Verteiler">
+      <span class="row-b"><span class="who">Ken Stern</span> &mdash; Du stehst heute in einem Verteiler, in dem Du nicht vorkommst
+        <span class="row-sub"><strong>16:14, Betreff <em>&bdquo;Boston&ldquo;</em>, an drei Adressen:</strong> <code>marilynspinner@yahoo.com</code>, <strong><code>ynb@yannick-noah.com</code></strong>, <code>melissa@healthspanaction.org</code>.<br><strong>Der Text spricht drei Leute an, und keiner davon bist Du:</strong> <em>&bdquo;Bernie + Melissa &ndash; would you let me know the details on my panel when you can, especially the timing of it, so that I can make travel plans accordingly. And Marilyn &ndash; would be equally grateful if you could share any updates on your plan to get the Longevity for Life group together at the conference.&ldquo;</em><br><strong>16:54 antwortet Marilyn Spinner an dieselbe Runde</strong> und wird konkret: alle sind bis zum <strong>8.</strong> in Boston, sie und Joel fliegen am 7., Melissa, Bernie, Randy und sie wohnen im <em>Atlas</em>. Anlass ist der <strong>Translational Longevity Summit</strong>.<br><strong>Meine Lesart, und sie ist ausdr&uuml;cklich meine:</strong> an der Stelle, an der <em>Bernie</em> stehen m&uuml;sste, steht Deine Adresse. Ken hat Dir in den letzten zwei Wochen mehrfach geschrieben; die Autovervollst&auml;ndigung ist die naheliegende Erkl&auml;rung. <strong>Beleg daf&uuml;r habe ich keinen</strong> &mdash; nur die Tatsache, dass Dich niemand in diesem Faden anspricht.<br><em>Ich tue nichts damit.</em> Es steht hier, damit es nicht sp&auml;ter wie eine Einladung nach Boston aussieht &mdash; und weil Du mitliest, was eine fremde Arbeitsgruppe intern plant.</span></span>
+      <span class="age">16:14</span>
+    </li>
+
     <li class="row s-act">
       <input type="checkbox" data-item="jpr-lieferung-2209" aria-label="JPR liefert einen zweiten Schnitt">
       <span class="row-b"><span class="who">Cory McKane (Just Push Record)</span> &mdash; heute 01:07 ein zweiter Drive-Ordner, ohne ein Wort dazu
@@ -1416,7 +1423,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-22T16:05:00-05:00");
+  var SWEPT = new Date("2026-09-22T17:05:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
