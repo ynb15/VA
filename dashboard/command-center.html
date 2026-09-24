@@ -309,6 +309,13 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-wait">
+      <input type="checkbox" data-item="gevity-zwei-monate" aria-label="Gevity Zwei-Monats-Check-in">
+      <span class="row-b"><span class="who">Codi Gerjets</span> (Club Director, Gevity) &mdash; Zwei-Monats-Nachfrage, heute 09:36
+        <span class="row-sub"><em>&bdquo;I know Espoir may have already reached out earlier, but I wanted to also check in personally since you&#39;re coming up on about <strong>two months at Gevity</strong> - congrats!&ldquo;</em> Vier Fragen: welche Kurse, welche Member Events, ob Du andere Mitglieder kennengelernt hast (<em>&bdquo;I&#39;d be more than happy to help make a few introductions&ldquo;</em>), und was besser laufen k&ouml;nnte. Schluss: <em>&bdquo;This is our first year open &hellip; don&#39;t hold back!&ldquo;</em><br><strong>Was ich einordne, damit Du es nicht selbst pr&uuml;fen musst:</strong> die Mail ist pers&ouml;nlich geschrieben und mit Namen adressiert, tr&auml;gt aber eine HubSpot-Kampagnenkennung und einen Abmeldelink. <em>Beides stimmt gleichzeitig: ein echter Mensch, ein automatischer Versand.</em><br><em>Ohne Rat, nur der Stand:</em> Gevity ist Sauna, Gym und Padel in Deinem Kalender &mdash; und Du fliegst in rund drei Wochen zur&uuml;ck nach SA. <strong>Das Angebot, Dich anderen Mitgliedern vorzustellen, ist das Einzige darin, das eine Antwort lohnen k&ouml;nnte.</strong> Ob es das tut, entscheidest Du.</span></span>
+      <span class="age">09:36</span>
+    </li>
+
     <li class="row s-crit">
       <input type="checkbox" data-item="bm-agreement-adresse" checked aria-label="Burning Man fragt nach Geschaeftsadresse">
       <span class="row-b"><span class="who">Burning Man</span> &mdash; der Vertrag kommt. <strong>Die Adresse hast Du 51 Minuten sp&auml;ter geschickt</strong>
@@ -1430,7 +1437,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-24T09:04:00-05:00");
+  var SWEPT = new Date("2026-09-24T10:04:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
