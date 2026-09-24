@@ -2319,3 +2319,33 @@ Ebenso: **Rick Strassman bleibt Confirmed mit dem 18.09.** Beide Seiten hatten
 zugesagt, die Einladung wurde neun Minuten vor Beginn noch angefasst — aber es
 gibt keinen einzigen Beleg, dass aufgenommen wurde. *Recorded* wäre eine
 Behauptung, keine Eintragung.
+
+═══════════════════════════════════════════════════════════════════════════
+ZWEI KALENDER, NICHT EINER (24.09.)
+═══════════════════════════════════════════════════════════════════════════
+
+Heute Morgen habe ich in den Actuals **„Privat: nichts"** geschrieben, nachdem
+ich nur `ynb@yannick-noah.com` (YNB Business) abgefragt hatte. Im Privatkalender
+`yannicknbernard@gmail.com` stand die ganze Zeit ein ganztägiger Eintrag:
+**Whitney/Colorado?**, So 20.09. bis So 27.09., angelegt 26.06., zuletzt
+geändert 23.08., als *frei* markiert.
+
+Er blockiert nichts, deshalb fällt er in keiner Belegungsansicht auf — und
+deshalb ist er genau die Art Eintrag, die man übersieht und die trotzdem etwas
+über die Woche sagt.
+
+**Regel: „nichts im Kalender" darf erst dastehen, wenn beide Kalender gefragt
+sind.** Ein ganztägiger, durchsichtiger Marker ist kein Nichts, sondern ein
+leiser Eintrag.
+
+Die Kalender, die es gibt (Stand 24.09.):
+· `ynb@yannick-noah.com` — **YNB Business**, Zeitzone America/Denver
+· `yannicknbernard@gmail.com` — **YNB privat**, Zeitzone America/Chicago
+· `en.german#holiday@group.v.calendar.google.com` — Feiertage Deutschland
+· `e_2_en#weeknum@group.v.calendar.google.com` — Kalenderwochen
+· `c_f9u9u58luljs46fplplkj0v1go@group.calendar.google.com` — PTYA Community,
+  Zeitzone Europe/London
+
+Die ersten beiden sind seine. Dass sie **unterschiedliche Zeitzonen als Default
+tragen** (Denver geschäftlich, Chicago privat), ist der zweite Grund, warum der
+Offset im Zeitstempel zählt und das `timeZone`-Feld nur ein Etikett ist.
