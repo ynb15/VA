@@ -2349,3 +2349,21 @@ Die Kalender, die es gibt (Stand 24.09.):
 Die ersten beiden sind seine. Dass sie **unterschiedliche Zeitzonen als Default
 tragen** (Denver geschäftlich, Chicago privat), ist der zweite Grund, warum der
 Offset im Zeitstempel zählt und das `timeZone`-Feld nur ein Etikett ist.
+
+═══════════════════════════════════════════════════════════════════════════
+DEN TAG AM LETZTEN ABEND-SWEEP ROLLEN, NICHT AM ERSTEN MORGEN-SWEEP (25.09.)
+═══════════════════════════════════════════════════════════════════════════
+
+Der Sweep-Trigger läuft `0 0-3,12-23 * * *` UTC — das sind **07:00 bis 22:00
+Austin**. Zwischen 22:00 und 07:00 fällt kein Sweep, also korrigiert in neun
+Stunden niemand das Board.
+
+**Regel: Begrüßung und Right-now werden beim letzten Abend-Sweep auf den
+nächsten Tag gestellt, nicht beim ersten Sweep am Morgen danach.** Ein Board,
+das einen Abend zu früh richtig ist, kostet nichts. Ein Board, das um 07:00
+noch „morgen beginnt das Retreat" sagt, während das Retreat heute beginnt, ist
+derselbe Fehler wie am 21.09., nur mit anderem Anlass.
+
+Am 24.09. um 21:02 so gemacht: Board auf Freitag gestellt, während es noch
+Donnerstagabend war. Der Tagesabschluss für Donnerstag stand zu dem Zeitpunkt
+schon geschrieben; die Reihenfolge ist also **erst abschließen, dann rollen.**
