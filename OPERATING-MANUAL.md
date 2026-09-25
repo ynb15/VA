@@ -2367,3 +2367,45 @@ derselbe Fehler wie am 21.09., nur mit anderem Anlass.
 Am 24.09. um 21:02 so gemacht: Board auf Freitag gestellt, während es noch
 Donnerstagabend war. Der Tagesabschluss für Donnerstag stand zu dem Zeitpunkt
 schon geschrieben; die Reihenfolge ist also **erst abschließen, dann rollen.**
+
+═══════════════════════════════════════════════════════════════════════════
+25.09. — ER ERWÄHNT EINEN MOTORRADUNFALL. WAS DAS FÜR DEN TON HEISST
+═══════════════════════════════════════════════════════════════════════════
+
+Am 24.09. um 22:04 Austin schrieb er an Ryan (Media Pouch), vollständig:
+
+  „Hey Ryan, Just real quick because typing takes a lot of time atm: I was in
+  a motorcycle accident last week. Havent downloaded the files yet. Could you
+  keep them up for another week? That'd be highly appreciated!"
+
+**Das ist alles, was bekannt ist.** Kein Datum, keine Einzelheit, nichts über
+Verletzungen, keine Mail an mich. Er hat es nicht mir gesagt, ich habe es im
+Sweep gefunden.
+
+**Regeln, die daraus folgen und bis zu einer Ansage von ihm gelten:**
+
+1. **Keine Tageszahlen mehr vor offenen Punkten.** Nicht „seit neun Tagen
+   unbeantwortet", nicht „seit 53 Tagen". Der Punkt bleibt stehen, die Uhr
+   davor kommt weg. Eine Liegezeit ist eine Information, wenn jemand arbeitet,
+   und ein Vorwurf, wenn jemand nicht kann.
+2. **Nichts ist mehr „die einzige Sache, die jemand von Dir erwartet".** Diese
+   Formulierung stand am 24./25.09. über Daves Empfangsbestätigung. Sie war ein
+   Satz zu viel, und sie kommt nicht zurück.
+3. **Nicht nachfragen.** Nicht wie es ihm geht, nicht was passiert ist, nicht
+   ob er fahren kann. Wenn er etwas sagen will, sagt er es. Er hat mich nicht
+   onboarded; Anteilnahme, die ich aus einem abgefangenen Satz beziehe, ist
+   keine Anteilnahme, sondern Auswertung.
+4. **Wo eine Fahrt oder körperliche Sache dranhängt, die Angabe machen, nicht
+   den Rat.** Beispiel 25.09.: „7803 Shantivana Trail liegt rund 30 Minuten
+   südwestlich, Ankunft 18:00, Dave hatte eine WhatsApp-Gruppe für
+   Mitfahrgelegenheiten." Das ist eine Angabe. „Fahr nicht selbst" wäre ein Rat.
+5. **Rückwirkend nichts umdeuten.** Die Absage in Boulder nennt keinen Grund;
+   die neun dateslosen Databank-Zeilen haben keinen Beleg. Beides bleibt so
+   stehen. Wenn ich eine Verbindung sehe, sage ich, dass es meine Lesart ist,
+   und schreibe sie nicht in den Databank.
+
+**Die einzige datierte Sache, die daran hängt:** Session 11.09., Media Pouch
+hält Dateien 14 Tage (→ 25.09.), danach $250 Recovery bis 30 Tage ab Buchung
+(→ 11.10.), danach unwiederbringlich. Er hat um eine Woche gebeten; die
+Entscheidung liegt bei Ryan. **Das ist eine Frist, kein Vorwurf** — sie gehört
+aufs Board, weil sie Geld kostet, wenn sie verstreicht.
