@@ -2409,3 +2409,30 @@ hält Dateien 14 Tage (→ 25.09.), danach $250 Recovery bis 30 Tage ab Buchung
 (→ 11.10.), danach unwiederbringlich. Er hat um eine Woche gebeten; die
 Entscheidung liegt bei Ryan. **Das ist eine Frist, kein Vorwurf** — sie gehört
 aufs Board, weil sie Geld kostet, wenn sie verstreicht.
+
+═══════════════════════════════════════════════════════════════════════════
+BEIM ROLLEN BEIDE KALENDER FÜR DEN NEUEN TAG ABFRAGEN (26.09.)
+═══════════════════════════════════════════════════════════════════════════
+
+Am Do 24.09. um 19:04 hat er seinen eigenen Eintrag *Man's Search for Meaning:
+Whitney Wheelock? (high)* von Do 10:00 auf **Sa 26.09., 13:00–15:00 Austin**
+verschoben. Gefunden habe ich es erst am Fr 25.09. um 21:02 — **26 Stunden
+später.** In den drei Abend-Sweeps dazwischen hatte ich nur `in:anywhere` gegen
+die Post gelaufen, und beim Rollen auf Freitag hatte ich den Freitag geprüft,
+aber nicht den Samstag.
+
+**Regel, Ergänzung zur Roll-Regel vom 25.09.:** beim Rollen auf den nächsten Tag
+werden **beide Kalender für den neuen Tag** abgefragt, und zusätzlich einmal am
+Tag ein Fenster von heute bis +7 Tage. Eine Absage oder Verschiebung erzeugt oft
+gar keine Mail — bei einem eigenen Eintrag nie. **Wer nur die Post sweept,
+sweept die Hälfte.**
+
+Damit sind es drei Kalender-Lehren in drei Tagen, und alle dieselbe:
+· 21.09. — der Kalender ist bei Terminen die erste Quelle, nicht die zweite.
+· 24.09. — „nichts im Kalender" erst nach beiden Kalendern.
+· 26.09. — beim Rollen den neuen Tag mitprüfen, nicht nur den alten.
+
+**Und der Versatz zum vierten Mal:** `2026-09-26T12:00:00-06:00` mit Etikett
+`America/Chicago`, obwohl Chicago Ende September auf −05:00 liegt. Der Versatz
+ist der Zeitpunkt: 18:00 UTC = 13:00 Austin. Das passiert also nicht nur bei
+fremden Einladungen, sondern auch in seinen eigenen Einträgen.
