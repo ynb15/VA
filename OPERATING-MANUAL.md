@@ -2492,3 +2492,30 @@ dann schreibe ich **im selben Satz dazu, dass es meine Beobachtung ist.**
 Nicht in einer Fußnote, nicht am Ende des Absatzes. Sonst steht sie morgen als
 Tatsache da, kopiert aus meiner eigenen Fassung. Genau so ist die
 Drei-Tage-Falschmeldung bei den BMHQ-Zusagen entstanden.
+
+═══════════════════════════════════════════════════════════════════════════════
+NACHTRAG ZUM `updated`-FELD: DER KALENDER-ZEITSTEMPEL LÜGT NICHT, ER MEINT
+ETWAS ANDERES (27.09., 13:02)
+═══════════════════════════════════════════════════════════════════════════════
+
+Die Regel vom 27.09. früh war: ist der `updated`-Zeitstempel **des Kalenders**
+neuer als mein letzter Sweep, dann den ganzen Kalender neu abfragen. Die Regel
+bleibt. Was dazugehört:
+
+Der Kalender-Zeitstempel springt auch, wenn **kein einziger Termin** verändert
+wurde. Heute stand er um 09:06 auf `03:26:17Z`, um 13:02 auf `17:43:23Z` — und
+in beiden Fällen war der jüngste Termin-`updated` unverändert der vom
+26.09., 19:43 (Whitney-Block). Google bumpt das Feld auch bei Sync- und
+Einstellungsvorgängen.
+
+Also: **der Kalender-Zeitstempel ist ein Anlass zum Nachfragen, kein Beweis für
+eine Änderung.** Nach der Nachfrage zählt nur, was in den Termin-Feldern steht.
+Nie „der Kalender wurde geändert" ins Board schreiben, weil das Feld gesprungen
+ist — erst wenn ein Termin-Feld selbst anders aussieht.
+
+Zweiter Punkt, praktisch: `orderBy: lastModified` sortiert **aufsteigend**, die
+jüngste Änderung steht also am **Ende** der Liste, nicht am Anfang. Bei einem
+Fenster ohne Zeitgrenzen liefert die Abfrage nur die **kommenden** Termine; die
+jüngste Änderung an einem vergangenen Termin findet man so nicht. Wer „das
+Neueste" sucht, fragt ein Fenster ab, das den fraglichen Tag enthält, und liest
+das `updated` jedes Termins selbst.
