@@ -2466,3 +2466,29 @@ Praktisch heißt das: der tägliche Sieben-Tage-Kalenderabruf liest auch die
 `attendees`, nicht nur Titel und Zeit. Und: **wenn das `updated`-Feld eines
 Kalenders jünger ist als mein letzter Sweep, wird der ganze Kalender neu
 abgefragt, nicht nur der heutige Tag.** Genau so ist dieser Fehler aufgefallen.
+
+═══════════════════════════════════════════════════════════════════════════════
+EIN FENSTER, DAS MORGEN ANFÄNGT, SIEHT HEUTE NICHT (27.09.)
+═══════════════════════════════════════════════════════════════════════════════
+
+Am 26.09. um 22:02 habe ich beim Rollen das private Sieben-Tage-Fenster auf
+**28.09. → 03.10.** gelegt, weil ich „die nächste Woche" wollte. Ergebnis:
+zwei Einträge. Heute um 09:06 lag dasselbe Fenster auf **27.09. → 04.10.**
+und brachte zehn — darunter der ganztägige Marker *Whitney/Colorado?*
+(20.–27.09.), der am 26.09. schon lief und schon relevant war.
+
+Regel: **das Tagesfenster beginnt immer heute 00:00, nie morgen.** Ganztägige
+Marker, die heute noch laufen, fallen sonst durchs Raster, und zwar genau die,
+die über den Tagesrand hinausgehen — also die wichtigen.
+
+Zweite Regel, aus demselben Sweep: wenn ein Sweep **nichts Neues** findet, ist
+das ein Ergebnis und gehört ins Tagesprotokoll. Ein leeres Fenster, das nicht
+protokolliert ist, sieht später aus wie ein Fenster, das nie abgefragt wurde.
+
+Dritte Regel, die heute zweimal gebraucht wurde: wenn ich eine Verbindung
+zwischen zwei Einträgen sehe, die in keinem Feld steht — hier: der zweimal
+verschobene Whitney-Block und der heute auslaufende Marker *Whitney/Colorado?* —
+dann schreibe ich **im selben Satz dazu, dass es meine Beobachtung ist.**
+Nicht in einer Fußnote, nicht am Ende des Absatzes. Sonst steht sie morgen als
+Tatsache da, kopiert aus meiner eigenen Fassung. Genau so ist die
+Drei-Tage-Falschmeldung bei den BMHQ-Zusagen entstanden.
