@@ -2436,3 +2436,33 @@ Damit sind es drei Kalender-Lehren in drei Tagen, und alle dieselbe:
 `America/Chicago`, obwohl Chicago Ende September auf −05:00 liegt. Der Versatz
 ist der Zeitpunkt: 18:00 UTC = 13:00 Austin. Das passiert also nicht nur bei
 fremden Einladungen, sondern auch in seinen eigenen Einträgen.
+
+═══════════════════════════════════════════════════════════════════════════
+EIN ZUSTAND IST EIN FELD, KEIN GEDÄCHTNIS (27.09.)
+═══════════════════════════════════════════════════════════════════════════
+
+Am 27.09. habe ich gefunden, dass **beide Burning-Man-Einladungen seit Do 24.09.,
+19:04 auf `accepted` stehen** — die BMHQ-Führung am 05.10. und das Interview am
+06.10. Auf dem Board stand bei beiden **drei Tage lang** „Deine Antwort steht
+offen", über fünf Versionen hinweg.
+
+Der Ablauf: ich hatte die Einladung am 24.09. um 18:02 gelesen, `needsAction`.
+Er hat um 19:04 zugesagt. Danach habe ich die Zeile bei jedem Umschreiben **aus
+meiner eigenen vorherigen Fassung übernommen**, statt sie neu abzufragen.
+
+**Regel: jeder Punkt auf dem Board, dessen Wahrheit in einem Feld steht, wird
+beim Umschreiben neu aus dem Feld gelesen — nie aus der alten Fassung kopiert.**
+Betroffen sind mindestens:
+· `responseStatus` bei Einladungen (RSVP offen / zugesagt / abgelehnt)
+· `start`/`end` bei Terminen (siehe den Whitney-Block, zweimal verschoben)
+· `status` (confirmed / cancelled)
+· Notion-Properties, die ich auf dem Board zitiere
+
+**Ein Vorwurf, der schon erledigt ist, ist schlimmer als gar keine Zeile** — er
+kostet ihn Aufmerksamkeit für etwas, das er längst getan hat, und er lässt das
+ganze Board unzuverlässig aussehen.
+
+Praktisch heißt das: der tägliche Sieben-Tage-Kalenderabruf liest auch die
+`attendees`, nicht nur Titel und Zeit. Und: **wenn das `updated`-Feld eines
+Kalenders jünger ist als mein letzter Sweep, wird der ganze Kalender neu
+abgefragt, nicht nur der heutige Tag.** Genau so ist dieser Fehler aufgefallen.
