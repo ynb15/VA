@@ -2519,3 +2519,70 @@ Fenster ohne Zeitgrenzen liefert die Abfrage nur die **kommenden** Termine; die
 jüngste Änderung an einem vergangenen Termin findet man so nicht. Wer „das
 Neueste" sucht, fragt ein Fenster ab, das den fraglichen Tag enthält, und liest
 das `updated` jedes Termins selbst.
+
+═══════════════════════════════════════════════════════════════════════════════
+DER POSTAUSGANG IST KEINE WOCHENAUFGABE (28.09.)
+═══════════════════════════════════════════════════════════════════════════════
+
+Der schwerste Fehler bisher, und er lag eine Woche offen da.
+
+Am **21.09. um 16:15 Austin** hat er Joe Moore geschrieben: Motorradunfall in
+**Colorado Springs**, in der Woche davor, gerade aus dem **Krankenhaus**,
+*„doing fairly okay"*, Podcast für den nächsten Tag abgesagt, Tippen fällt
+schwer. Um **18:20** kam nach Joes Rückfrage der zweite Teil: Rückflug nach
+Südafrika zur **Physiotherapie**, sobald er sich bewegen kann, und er kommt
+**bei Freunden in Colorado Springs** unter.
+
+Was ich stattdessen protokolliert habe:
+- **21.09.:** „Joe Moore lehnt ab" — weil im Kalendereintrag beide Teilnehmer
+  auf `declined` standen. Die Richtung war falsch: **er** hat abgesagt.
+- **21.09.:** „Kein Grund in irgendeiner Nachricht, keine Mail dazu in beide
+  Richtungen." Der Grund stand in derselben Stunde in seinem Postausgang.
+- **25.09.:** nach seiner Mail an Ryan: „Das ist alles, was ich weiß. Kein
+  Datum, keine Einzelheit, nichts über Verletzungen." Alles davon stand seit
+  vier Tagen im Postfach.
+
+**Warum es passiert ist:** die stündlichen Sweeps liefen auf
+`in:anywhere newer_than:2h`, und ich habe die Treffer gelesen wie Eingangspost —
+wer schreibt mir? Der Postausgang wurde als **Montagsaufgabe** geführt
+(`in:sent newer_than:8d`), und der Montagsdurchgang am 21.09. lief morgens,
+Stunden vor diesen beiden Mails.
+
+**Regel, ab sofort:** bei **jedem** Sweep wird der Postausgang mitgelesen, nicht
+nur montags. Wenn ein Treffer von ihm selbst kommt, ist er das Wichtigste im
+Sweep — wichtiger als jede Einladung, jeder Kalenderumzug, jede Frist. **Er
+schreibt selten; wenn er schreibt, steht dort, was wirklich los ist.**
+
+**Zweite Regel:** `responseStatus: declined` sagt, *dass* abgesagt wurde, nie
+*von wem zuerst* und nie *warum*. Eine Absage im Kalender ist ein Anlass, den
+Faden und den Postausgang zu lesen — nie eine fertige Geschichte. „Ohne Grund"
+darf erst dastehen, wenn beide Richtungen der Post gelesen sind.
+
+**Dritte Regel, zum Ton:** die Einzelheiten stehen jetzt belegt da, weil er sie
+Dritten geschrieben hat, nicht mir. Das ändert nichts an der Regel vom 25.09.:
+keine Tageszahlen, keine Erwartungen, nicht nach ihm fragen. Es ändert nur, dass
+ich nicht mehr „ich weiß nichts" schreiben darf, wo etwas belegt ist.
+
+═══════════════════════════════════════════════════════════════════════════════
+DER 02.10. IST KEIN GEISTERBLOCK (28.09.)
+═══════════════════════════════════════════════════════════════════════════════
+
+Ich habe den Block *Man's Search for Meaning: Marian Goodell*, Fr 02.10.,
+15:00–17:00 Austin, tagelang als „Geisterblock" geführt, weil er keine
+Teilnehmer hat. Walker Fisher am **16.09., 20:00 Austin**: *„I was able to
+confirm with Marian for October 2nd, 1:00pm - 3:00pm and Burning Man
+Headquarters. I'll be sending you an official calendar invite now."* 13:00–15:00
+Pacific sind genau 15:00–17:00 Austin. **Der Block ist die Verabredung, die
+Walker bestätigt hat** — er hat sie selbst angelegt, weil die offizielle
+Einladung nie kam.
+
+Die Einladungen vom **24.09.** legen Führung und Interview auf **Mo 05.10.** und
+**Di 06.10.** Dass der 02.10. damit überholt und nur übrig geblieben ist, ist
+**meine Lesart**; gestrichen ist er in keinem Feld. Der Ort in seinem Eintrag
+heißt *Burning Man Gerlach Office* (Nevada), Walker sprach vom *Headquarters*
+in San Francisco.
+
+**Regel:** „ohne Teilnehmer" heißt nicht „erfunden". Bevor ein Block ein Geist
+genannt wird, wird der Faden gelesen, in dem er verabredet wurde. Ein Block ohne
+Einladung kann eine Verabredung sein, die jemand mündlich oder per Mail
+bestätigt hat.
