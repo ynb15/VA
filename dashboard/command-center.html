@@ -309,6 +309,17 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-act">
+      <input type="checkbox" data-item="strassman-file-2809" aria-label="Strassman-Aufnahme geliefert">
+      <span class="row-b"><span class="who">Nick Layman (The Podcast Studio NM)</span> &mdash; <strong>heute 13:01: die Strassman-Aufnahme ist da</strong>
+        <span class="row-sub"><strong>Die Mail vollst&auml;ndig:</strong> <em>&bdquo;Hello Yannick, Attached is the link to your podcast recording. [Google-Drive-Link] We sent a separate invoice for payment. Thanks for choosing us for your podcast needs. Best, Nick Layman&ldquo;</em>
+        <br><strong>Damit ist belegt, dass am Fr 18.09. in Albuquerque aufgenommen wurde</strong> &mdash; und zwar l&uuml;ckenlos: die Studio-Einladung <em>Podcast Rental and Recording, Fr 18.09., 11:30&ndash;13:30 GMT-5</em> ging am 15.09. um 21:44 an Dich <em>und</em> an <code>rjstrassman@gmail.com</code> &middot; Strassman selbst am 14.09.: <em>&bdquo;Friday am still works, 10:30 am&ldquo;</em> &middot; Du am 15.09.: <em>&bdquo;Friday 10:30 it is! I got everything else reshuffled.&ldquo;</em> &middot; Du am 17.09. an Nick: <em>&bdquo;It&rsquo;d be great if you could deliver the files through Google Drive. And I&rsquo;d like to pay via card. Looking forward to tomorrow!&ldquo;</em> &middot; und heute genau dieser Lieferweg.
+        <br><strong>Ich habe die Databank-Zeile deshalb von <em>Confirmed</em> auf <em>Recorded</em> gesetzt</strong>, mit der ganzen Belegkette im <code>Notes</code>-Feld. <em>Heute früh stand hier noch, ob am 18.09. aufgenommen wurde, sei &bdquo;durch nichts belegt&ldquo; und nur Du k&ouml;nntest es beantworten. Das war um 09:03 richtig und ist es seit 13:01 nicht mehr.</em>
+        <br><strong>Das liegt in der Woche des Unfalls</strong> (Colorado Springs, 14.&ndash;20.09.). <em>Du bist trotzdem nach Albuquerque gefahren. Das stelle ich fest, ich bewerte es nicht.</em>
+        <br><strong>Was daran offen ist:</strong> <em>&bdquo;We sent a separate invoice for payment&ldquo;</em> &mdash; <strong>eine Rechnung ist im Postfach bis 13:01 nicht angekommen.</strong> Zahlung sollte laut Deiner Mail vom 17.09. per Karte laufen. <em>Ich sehe sie nicht; sie kann auch woanders liegen.</em></span></span>
+      <span class="age hot">13:01</span>
+    </li>
+
     <li class="row s-crit">
       <input type="checkbox" data-item="unfall-2409" aria-label="Motorradunfall: was er selbst geschrieben hat">
       <span class="row-b"><span class="who">Korrektur, heute beim Postausgangs-Durchgang gefunden</span> &mdash; <strong>Du hast den Unfall schon am 21.09. beschrieben. Ich habe es eine Woche lang nicht gesehen.</strong>
@@ -1453,7 +1464,7 @@ Yannick</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-09-28T12:03:00-05:00");
+  var SWEPT = new Date("2026-09-28T13:03:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
