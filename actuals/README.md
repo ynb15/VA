@@ -12,6 +12,15 @@ for the full text. Written on the Monday reconciliation pass.
 Existing documents in that folder:
 - "Alfred — Actuals Log" — the original, running to the 27 Aug day close.
 - "Alfred — Actuals Log · Woche 28.–31. August 2026" — the first weekly digest.
+- "Alfred — Actuals Log · Woche 31. Aug – 6. Sep 2026"
+- "Alfred — Actuals Log · Woche 7.–13. September 2026"
+- "Alfred — Actuals Log · Woche 14.–20.09.2026"
+- "Alfred — Actuals Log · Woche 21.–27. September 2026" — written 28 Sep.
+
+One caveat learned on 28 Sep: `create_file` reports `fileSize: 1` for a Google
+Doc even when the text landed in full. Read the content back rather than
+trusting that number — and never conclude from it that the write failed and
+should be repeated.
 
 ## Why it works this way
 
