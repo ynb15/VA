@@ -2692,3 +2692,31 @@ belegen: Wenn `originalStartTime` und `start` einer Instanz
 auseinanderlaufen, ist das eine echte Verschiebung, mit Datum im
 `updated`-Feld. Heute: der *Monatsrückblick* vom Mi 30.09. 08:00 steht
 jetzt auf Sa 03.10. 12:00 Austin, `updated` 12:02 desselben Tages.
+
+═══════════════════════════════════════════════════════════════════════
+DIE NEUE REGEL HAT SICH HEUTE BEZAHLT GEMACHT (29.09., 13:02)
+═══════════════════════════════════════════════════════════════════════
+
+Am 28.09. steht hier: *der Postausgang ist keine Wochenaufgabe.* Einen
+Tag später war der einzige Fund des Tages genau dort — zwei Mails, die
+er um 12:34 und 12:54 selbst geschrieben hat, an Virgin Active und an
+OnPress. Im Posteingang lagen an dem Tag bis dahin nur Verteiler.
+
+Was daran über den Tag hinaus gilt:
+
+**Eine Mail von ihm an Dritte ist oft der einzige Ort, an dem ein Stand
+steht.** Beide Fäden waren seit Wochen still. Dass Virgin Active seit
+dem 15.09. nicht geantwortet hat und dass OnPress eine Erstattung
+angeboten hatte, die nie eingelöst wurde, war nirgendwo sonst zu sehen —
+kein Kalendereintrag, keine Notion-Zeile, keine eingehende Mail.
+
+**Wenn er einen Faden wieder aufnimmt, gehört der ganze Faden gelesen,
+nicht nur seine letzte Mail.** Erst die alten Nachrichten geben die
+Zahlen, die Zusagen und das Datum, ab dem die Gegenseite schweigt. Die
+Karte auf dem Board taugt nur so viel wie der Faden dahinter.
+
+**Und: was er über sich selbst an Dritte schreibt, wird zitiert, nicht
+verrechnet.** Heute schreibt er an OnPress, er habe die USA kurz nach
+dem 21.07. verlassen; am 21.09. schrieb er an Joe Moore aus Colorado
+Springs. Beides steht nebeneinander. Es ist nicht meine Aufgabe, daraus
+eine Reiseroute zu bauen oder einen Widerspruch zu behaupten.
