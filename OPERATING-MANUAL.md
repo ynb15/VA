@@ -2586,3 +2586,48 @@ in San Francisco.
 genannt wird, wird der Faden gelesen, in dem er verabredet wurde. Ein Block ohne
 Einladung kann eine Verabredung sein, die jemand mündlich oder per Mail
 bestätigt hat.
+
+═══════════════════════════════════════════════════════════════════════════════
+EINE ANGEKÜNDIGTE ZWEITE MAIL WIRD NACHGEPRÜFT (28.09.)
+═══════════════════════════════════════════════════════════════════════════════
+
+Nick Layman schrieb um 13:01: *„We sent a separate invoice for payment."* Mein
+Sweep lief um 13:03 und fand keine Rechnung. Ich schrieb also aufs Board, sie
+sei „bis 13:01 nicht angekommen". Sie kam um **13:06** — drei Minuten nach
+meinem Blick.
+
+**Regel:** wenn eine Mail eine zweite ausdrücklich ankündigt („a separate
+invoice", „a DocuSign link shortly", „I'll send the invite now"), dann ist
+**„noch nicht da" beim nächsten Sweep noch einmal zu prüfen**, bevor es
+stehen bleibt. Ein Sweep um :03 sieht nicht, was um :06 kommt.
+
+**Und wenn es dann doch da ist: nicht still austauschen.** Dazuschreiben, was
+wann stand und wann es kam. Ein leise korrigiertes Board ist ein Board, dem er
+nicht ansehen kann, wo es irrt.
+
+Am selben Tag zweimal gebraucht: bei Nicks Rechnung, und um 18:41 bei Walkers
+Ankündigung *„we will be sending a DocuSign link for a speaker's agreement
+shortly"* — die steht jetzt als Beobachtung mit Uhrzeit da („war um 19:03 noch
+nicht da"), nicht als Tatsache über die Zukunft.
+
+═══════════════════════════════════════════════════════════════════════════════
+ENTWÜRFE, DIE SEIN HANDWERK BERÜHREN, LIEGEN IM REPO — NICHT AUF DEM BOARD (28.09.)
+═══════════════════════════════════════════════════════════════════════════════
+
+Walker hat am 28.09. um 18:41 um eine Themenliste für das Marian-Interview
+gebeten. Die Podcast-Fragen sind der Kern seines Handwerks — kein Vorgang, den
+ich für ihn abarbeite.
+
+Was ich getan habe: den Entwurf geschrieben und in `drafts/` abgelegt, mit dem
+ausdrücklichen Satz, dass jede Zeile, die nicht klingt wie er, falsch ist und
+gestrichen gehört. Auf dem Board steht **die Bitte und der Hinweis, wo der
+Entwurf liegt** — nicht der Entwurf selbst und keine Aufforderung, ihn zu
+benutzen.
+
+**Regel:** Entwürfe für Drittkontakte (Terminmails, Empfangsbestätigungen,
+Nachfragen) gehören aufs Board, fertig zum Kopieren. Entwürfe, die in seine
+schöpferische Arbeit greifen — Fragen für ein Interview, Texte für seinen
+Substack, Schnitte für ein Video — gehören ins Repo als **Angebot**. Ein
+Entlastungsangebot, das er nicht wollte, ist eine Zumutung.
+
+Und in beiden Fällen gilt unverändert: **ich verschicke nichts.**
