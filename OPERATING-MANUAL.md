@@ -2657,3 +2657,38 @@ Snippet und ein Betreff, der zu nichts im Faden passt.
 Und die Kehrseite, die genauso wichtig ist: Weil es ein Verteiler ist,
 liegt hier **nichts** bei ihm und nichts bei mir. Die Databank-Zeile
 bleibt unangetastet. Ein Verteiler ist kein Grund, ein Feld zu ändern.
+
+═══════════════════════════════════════════════════════════════════════
+„WEG" IST EIN BEFUND, KEIN NICHT-TREFFER (29.09.)
+═══════════════════════════════════════════════════════════════════════
+
+Heute Mittag fehlte der ganztägige Marker *Little Washington?*
+(01.10.–09.11., privat, durchsichtig) in der Tagesabfrage. Ein fehlender
+Treffer ist erst mal nur das: ein fehlender Treffer. Er kann heißen, dass
+gelöscht wurde — oder dass das Fenster falsch lag, dass durchsichtige
+Ganztagesmarker anders behandelt werden, oder dass ich ihn vorher falsch
+notiert habe.
+
+Bevor „weg" auf das Board kommt, gehören drei Proben dazu:
+
+1. **Volltextsuche über beide Kalender** mit weitem Zeitrahmen
+   (`fullText`, hier 01.09.–31.12.).
+2. **Mindestens ein Fenster, das die volle Spanne des Eintrags
+   schneidet** — nicht nur den heutigen Tag. Ein Ereignis vom 01.10. bis
+   09.11. muss auch in einer Abfrage vom 25.10. bis 10.11. auftauchen.
+3. **Eine Gegenprobe mit einem Eintrag derselben Bauart**, der noch da
+   sein muss. Hier: `Punta Mona?`, ebenfalls ganztägig und durchsichtig,
+   kam zurück. Damit ist ausgeschlossen, dass diese Bauart generell
+   durchfällt.
+
+Erst wenn alle drei nichts bringen, ist „nicht mehr da" ein Befund. Und
+auch dann bleibt es bei „nicht mehr da": ein gelöschtes Ereignis
+hinterlässt kein `updated`, keinen Urheber, keinen Grund. Wer es
+entfernt hat und warum, steht in keinem Feld — also steht es auch nicht
+auf dem Board.
+
+Umgekehrt gilt dasselbe für eine Verschiebung, und die ist leichter zu
+belegen: Wenn `originalStartTime` und `start` einer Instanz
+auseinanderlaufen, ist das eine echte Verschiebung, mit Datum im
+`updated`-Feld. Heute: der *Monatsrückblick* vom Mi 30.09. 08:00 steht
+jetzt auf Sa 03.10. 12:00 Austin, `updated` 12:02 desselben Tages.
