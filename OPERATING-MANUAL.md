@@ -2631,3 +2631,29 @@ Substack, Schnitte für ein Video — gehören ins Repo als **Angebot**. Ein
 Entlastungsangebot, das er nicht wollte, ist eine Zumutung.
 
 Und in beiden Fällen gilt unverändert: **ich verschicke nichts.**
+
+═══════════════════════════════════════════════════════════════════════
+EIN PERSÖNLICH AUSSEHENDER ABSENDER IST KEIN RÜCKSCHREIBEN (29.09.)
+═══════════════════════════════════════════════════════════════════════
+
+Heute Nacht kam eine Mail von `niklas@niklassteenfatt.com` — eigene
+Domain, Vorname vor dem @, deutscher Betreff („Keine Hektik"), und der
+Name steht in der Podcast-Databank auf `Reached Out` mit Approval Yes.
+Das sieht aus wie eine Antwort auf eine Anfrage.
+
+Es ist keine. Es ist seine Newsletter-Ausgabe: Vorschautext
+(„Achtung vor KI-FOMO"), danach die üblichen unsichtbaren Füllzeichen.
+Sieben Mails von ihm im Postfach, alle in diesem Format, über zwei Jahre.
+Das einzige persönliche Stück in dem Faden ist **YNBs eigene** Antwort
+vom 01.02.2024.
+
+Die Regel: Ein Absender, der in der Databank steht, macht eine Mail
+nicht zur Antwort. Bevor eine Zeile wie „X hat geantwortet" auf das
+Board kommt, muss der Faden selbst gelesen sein — mit `get_thread`, nicht
+aus der Vorschau, und mit einem Blick auf die früheren Mails desselben
+Absenders. Zwei Anzeichen für Verteiler: die unsichtbaren Füllzeichen im
+Snippet und ein Betreff, der zu nichts im Faden passt.
+
+Und die Kehrseite, die genauso wichtig ist: Weil es ein Verteiler ist,
+liegt hier **nichts** bei ihm und nichts bei mir. Die Databank-Zeile
+bleibt unangetastet. Ein Verteiler ist kein Grund, ein Feld zu ändern.
