@@ -2788,3 +2788,40 @@ Proben aus der Regel von 12:02 als „nicht mehr da" belegt, und genau so
 steht es da — mit dem Hinweis, dass es kein Feld gibt, das Zeitpunkt
 oder Grund einer Löschung nennt. Wer einen Block gelöscht hat, der zwei
 Stunden vorher noch lief, braucht keine Rückfrage von mir.
+
+═══════════════════════════════════════════════════════════════════════
+NACHTRAG ZUR „WEG"-REGEL: DAS FENSTER MUSS DAHIN REICHEN, WO ES
+HINGEGANGEN SEIN KÖNNTE (29.09., 18:02)
+═══════════════════════════════════════════════════════════════════════
+
+Heute Mittag habe ich hier geschrieben, wie man belegt, dass ein
+Kalendereintrag weg ist: Volltext über beide Kalender, ein Fenster über
+die volle Spanne, eine Gegenprobe mit gleicher Bauart. Vier Stunden
+später habe ich genau das gemacht und trotzdem eine falsche Zeile auf
+das Board gesetzt: *Writing: Nelson's Drift* sei gelöscht.
+
+Er war nicht gelöscht. Er war verschoben — gleiche `id`, neuer `start`
+am **09.11.**, `updated` 13:11 desselben Tages. Meine drei Abfragen
+liefen alle bis höchstens **01.11.** Drei Proben mit demselben blinden
+Fleck sind eine Probe.
+
+**Die Regel, geschärft:**
+
+1. Eine Bereichsabfrage beweist Abwesenheit **nur innerhalb ihres
+   Bereichs.** Nie mehr als das aus ihr folgern.
+2. Vor „weg": immer zuerst die **`id` des Eintrags** in einem weiten
+   Fenster suchen (`orderBy: lastModified`, Monate, mindestens ein
+   Jahr nach vorn, wenn nichts dagegen spricht). Eine Verschiebung
+   behält die `id` — das ist das eindeutigste Merkmal, das es gibt.
+3. Ein Titel-Volltext ist die **zweitbeste** Probe, nicht die erste. Er
+   scheitert an jeder Umbenennung und an jedem Fenster.
+4. Und wenn ein Kalender am selben Tag mehrfach angefasst wurde, ist die
+   Reihenfolge wichtig: **erst den offenen `updated`-Zeitstempel
+   einlösen, dann Schlüsse ziehen.** Der Zeitstempel des
+   Geschäftskalenders stand um 16:02 auf 22:20:51Z und war ungeprüft —
+   dort lag die Antwort.
+
+Und die allgemeine Fassung, weil sie über Kalender hinausgeht: **wenn
+ich eine Regel schreibe, prüfe ich beim nächsten Anwenden, ob ich sie
+auch befolge.** Heute habe ich sie zitiert und gebrochen im Abstand von
+vier Stunden.
