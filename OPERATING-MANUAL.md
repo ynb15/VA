@@ -2759,3 +2759,32 @@ N26-Termin, eine Nachfrage bei Virgin Active und eine Erstattungsbitte
 an OnPress innerhalb von 45 Minuten zusammengehören, ist plausibel und
 steht in keinem Feld. Also steht es als Vermutung auf dem Board oder gar
 nicht.
+
+═══════════════════════════════════════════════════════════════════════
+DIE NACHPRÜF-REGEL HAT GEHALTEN (29.09., 16:02)
+═══════════════════════════════════════════════════════════════════════
+
+Am 28.09. um 18:41 kündigt Walker den Speaker's Agreement „shortly" an.
+Am 28.09. steht daraufhin im Manual: *eine angekündigte zweite Mail wird
+nachgeprüft.* Danach stand auf dem Board neun Sweeps lang „noch nicht
+da", jedes Mal mit Zähler — 07:03, 08:03, 10:04, 11:02, 12:02, 13:02,
+14:02, 15:03. Am 29.09. um 15:28 kam sie.
+
+Warum der Zähler wichtig war: ohne ihn wäre „noch nicht da" nach dem
+zweiten Mal zu einer Floskel geworden, die man irgendwann streicht, weil
+sie alt aussieht. Mit Zähler ist sie eine Messung. Und als die Mail kam,
+war sofort klar, wie lange sie gedauert hat.
+
+Also: **ein offener Punkt, der von außen angekündigt ist, bekommt einen
+Zähler, nicht eine Formulierung.** Und wenn er eintrifft, wird der
+Zähler ein letztes Mal genannt und dann gestrichen — nicht still
+gelöscht.
+
+Dazu eine zweite Sache von heute, die mit Löschen zu tun hat:
+**ein verschwundener Kalendereintrag verlässt das Board nicht lautlos.**
+*Writing: Nelson's Drift* stand seit dem 08.09. und lief heute noch von
+09:30 bis 11:30; um 16:02 war er nicht mehr da. Er ist mit den drei
+Proben aus der Regel von 12:02 als „nicht mehr da" belegt, und genau so
+steht es da — mit dem Hinweis, dass es kein Feld gibt, das Zeitpunkt
+oder Grund einer Löschung nennt. Wer einen Block gelöscht hat, der zwei
+Stunden vorher noch lief, braucht keine Rückfrage von mir.
