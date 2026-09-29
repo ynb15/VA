@@ -2720,3 +2720,42 @@ verrechnet.** Heute schreibt er an OnPress, er habe die USA kurz nach
 dem 21.07. verlassen; am 21.09. schrieb er an Joe Moore aus Colorado
 Springs. Beides steht nebeneinander. Es ist nicht meine Aufgabe, daraus
 eine Reiseroute zu bauen oder einen Widerspruch zu behaupten.
+
+═══════════════════════════════════════════════════════════════════════
+WIE MAN DEN 'updated'-ZEITSTEMPEL EINLÖST (29.09., 14:02)
+═══════════════════════════════════════════════════════════════════════
+
+Am 27.09. steht hier: der Kalender-Zeitstempel ist ein Anlass
+nachzufragen, kein Beweis. Das gilt weiter. Heute kam der zweite Teil
+dazu — **wie** man nachfragt, damit die Nachfrage auch etwas findet.
+
+Dreimal an einem Tag trug der private Kalender einen frischen
+`updated`-Wert. Zweimal habe ich nur das Tagesfenster abgefragt und
+nichts gefunden; beim dritten Mal habe ich es richtig gemacht:
+
+    calendarId: privat
+    startTime: heute, endTime: +3 Monate
+    orderBy: lastModified
+    pageSize: 250
+
+`orderBy: lastModified` sortiert **aufsteigend**. Die zuletzt geänderten
+Einträge stehen also **am Ende** der Liste — dort, und nur dort, lag
+*N26: Bali Claim*, ein Einzeltermin am 06.10., dessen `updated` auf die
+Minute mit dem Kalender-Zeitstempel übereinstimmte.
+
+Die Regel:
+
+1. Frischer Kalender-`updated` → **weites Fenster** (Monate, nicht der
+   Tag) plus `orderBy: lastModified`, und die **letzten** Zeilen lesen.
+2. Den `updated`-Wert jedes Eintrags gegen den Kalender-Zeitstempel
+   halten. Stimmen sie überein, ist das der geänderte Eintrag.
+3. Erst wenn das weite Fenster nichts bringt, war der Zeitstempel
+   folgenlos — und dann steht im Log „nachgefragt, keine Feldänderung",
+   nicht „nichts passiert".
+
+Und eine zweite Sache, die heute dreimal galt: **eine Vermutung über das
+Warum wird als Vermutung markiert, im selben Satz.** Dass ein
+N26-Termin, eine Nachfrage bei Virgin Active und eine Erstattungsbitte
+an OnPress innerhalb von 45 Minuten zusammengehören, ist plausibel und
+steht in keinem Feld. Also steht es als Vermutung auf dem Board oder gar
+nicht.
