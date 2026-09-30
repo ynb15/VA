@@ -2922,3 +2922,51 @@ sagt, wann etwas geplant ist, nie ob es passiert ist. Wenn eine Uhrzeit
 vorbei ist, heißt das nur, dass die Uhrzeit vorbei ist. Wer das anders
 aufschreibt, erfindet eine Tatsache — und muss sie später korrigieren,
 so wie hier.
+
+═══ DAS FENSTER MUSS JEDEN TAG ABDECKEN, ÜBER DEN AUF DEM BOARD ETWAS STEHT (30.09., 17:02) ═══
+Die Sweep-Regel hieß „heute bis nächsten Montag". Am Mittwoch 30.09. lief das
+Fenster damit bis Mo 05.10. — und das Interview mit Marian Goodell liegt am
+06.10. Ich habe den wichtigsten Termin auf dem Board vier Sweeps lang nicht mehr
+gelesen und ihn stattdessen aus einer alten Zeile beschrieben. Ergebnis: zwei
+falsche Angaben gleichzeitig. Seine Zusage stand seit 13:47 auf `accepted`,
+auf dem Board bis 17:02 auf `needsAction`. Und sein eigener Aufnahmeblock, den
+er um 13:29 auf den 06.10. gezogen hatte, lief bei mir weiter als toter Rest
+auf dem Freitag.
+
+DIE REGEL IST NICHT „bis nächsten Montag". SIE IST: das Fenster reicht bis zum
+LETZTEN TAG, ÜBER DEN AUF DEM BOARD EINE BEHAUPTUNG STEHT. Steht ein Termin,
+eine RSVP, eine Frist oder eine Uhrzeit auf dem Board, dann wird der Tag, an dem
+sie liegt, bei jedem Sweep mitgelesen. Ein Kalenderfenster ist keine Woche, es ist
+die Menge der Tage, über die man etwas behauptet. Dieselbe Form wie der
+Nelson's-Drift-Fehler vom 29.09. und wie der Ian-Gardner-Fehler vom 27. Aug: ein
+Horizont, der zu früh endet, und dann eine Folgerung aus der Lücke. Drei Mal ist
+ein Muster.
+
+═══ „REST", „ÜBRIG GEBLIEBEN", „LEICHE" SIND URTEILE, KEINE FELDER (30.09., 17:02) ═══
+Ich habe einen Block monatelang als „Rest der alten Verabredung vom 16.09., löschen
+kann ihn nur Du" geführt. Er war in Wahrheit `4s1d9m4ujjsh4gteq82a9hmore`, Titel
+*Man's Search for Meaning: Marian Goodell*, Ort *Burning Man Gerlach Office*, von
+ihm selbst am 14.08. angelegt — also der Aufnahmetermin des größten Gasts im
+Kalender. Der Ort stand die ganze Zeit in meiner eigenen Board-Zeile, und ich habe
+ihn nicht mit der Aufnahme verbunden.
+
+VOR DEM WORT „REST" WERDEN TITEL, ORT, `creator` UND `created` GELESEN. Ein Ereignis,
+das er selbst angelegt hat, ist kein Überbleibsel, sondern eine Absicht, deren Grund
+man nicht sieht — genau wie ein fertiger Entwurf in seinem Ordner. Und eine Zeile,
+die einen Ort nennt, den man nicht erklären kann, ist eine ungelöste Frage und keine
+Beschreibung. Die Probe ist ein `fullText` auf den Ort über ein Fenster von Monaten:
+sie hat den Termin in einer einzigen Abfrage gefunden.
+
+═══ VOR EINER RECHNUNG ÜBER VERLORENE DATEIEN: SUCH DIE KOPIE (30.09., 17:02) ═══
+Media Pouch bot am 30.09. die Wiederherstellung der Aufnahme vom 11.09. für 250 $
+an, ohne Garantie, Frist 11.10. Bevor so eine Entscheidung auf das Board kommt,
+werden zwei Dinge festgestellt, nicht vermutet:
+  1. WAS liegt in der Sitzung. `yannick_bernard_09-11-26_1` war die Folge mit
+     Logan Gonzalez — eine Aufnahme mit Gast, nicht ein Solo-Dreh. Das entscheidet,
+     ob 250 $ teuer oder billig sind, und es steht im Kalender, nicht in der Mail.
+  2. OB es noch eine Kopie gibt. Die am 12.09. von ihm selbst verlinkte Datei, beide
+     geteilten Ordner, und eine Drive-Suche über Sitzungsname und Gastname. Ergebnis
+     hier: keine Mediendatei, nur sein Vorbereitungsdokument.
+Ein „das ist weg" über fremden Speicher ist erst ein Befund, wenn der eigene Speicher
+durchsucht ist. Und der Satz „es gibt keine zweite Kopie" wird mit der Zahl der
+Abfragen dahinter geschrieben, damit er nachprüfbar bleibt.
