@@ -2825,3 +2825,33 @@ Und die allgemeine Fassung, weil sie über Kalender hinausgeht: **wenn
 ich eine Regel schreibe, prüfe ich beim nächsten Anwenden, ob ich sie
 auch befolge.** Heute habe ich sie zitiert und gebrochen im Abstand von
 vier Stunden.
+
+═══════════════════════════════════════════════════════════════════════
+EINE ZU GROSSE ANTWORT WIRD AUSGEWERTET, NICHT GEKÜRZT (30.09.)
+═══════════════════════════════════════════════════════════════════════
+
+Um 07:04 wollte ich einen frischen Kalender-Zeitstempel richtig
+einlösen: privater Kalender, 09.10.2026 bis 30.06.2027,
+`orderBy: lastModified`. Die Antwort war zu groß und wurde als Datei
+abgelegt statt zurückgegeben.
+
+Das ist kein Fehlschlag und kein Grund, das Fenster zu verkleinern.
+Die Datei ist JSON; ausgewertet wird sie mit einem kurzen Durchlauf:
+
+    python3 - "$datei" <<'PY'
+    import json,sys
+    d=json.load(open(sys.argv[1])); ev=d["events"]
+    late=[e for e in ev if e.get("updated","") >= "2026-09-30"]
+    ...
+    PY
+
+So kamen die Zahlen zustande, die auf dem Board stehen: **159 Einträge,
+null mit einer Änderung ab dem 30.09.** Das ist ein Befund mit einer
+Zahl daran, nicht ein Gefühl.
+
+Die Regel: **Wenn eine Abfrage zu groß für die Antwort ist, wird sie
+ausgewertet — nicht das Fenster geschrumpft, bis die Antwort passt.**
+Ein kleineres Fenster hätte hier genau den Fehler vom 29.09. um 16:02
+wiederholt. Und wenn eine Zahl aus so einer Auswertung auf das Board
+kommt, gehört sie mit Zeitraum und Stückzahl hin, damit nachvollziehbar
+bleibt, worüber sie eine Aussage macht.
