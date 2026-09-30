@@ -2855,3 +2855,41 @@ Ein kleineres Fenster hätte hier genau den Fehler vom 29.09. um 16:02
 wiederholt. Und wenn eine Zahl aus so einer Auswertung auf das Board
 kommt, gehört sie mit Zeitraum und Stückzahl hin, damit nachvollziehbar
 bleibt, worüber sie eine Aussage macht.
+
+═══════════════════════════════════════════════════════════════════════
+EIN ENTWURF AUS DEM POSTFACH BLEIBT EIN ENTWURF AUS DEM POSTFACH
+(30.09., 15:02)
+═══════════════════════════════════════════════════════════════════════
+
+Am 28.09. bat Walker um Themen für das Marian-Goodell-Interview. Ich
+habe am selben Abend einen Entwurf hingelegt, gebaut aus allem, was im
+Postfach stand: seinem Aufhänger vom 28.07. („can a culture survive its
+own success"), Marians drei Zitaten, dem Bio-Text. Sauber gekennzeichnet
+als Angebot, nichts dazuerfunden.
+
+Am 30.09. um 14:10 hat er seine eigene Liste geschickt. Elf Stränge:
+Marian als Person, das Erbe nach Larrys Tod mit Mazatlán und den 9→10
+Prinzipien, die harten Jahre 2022 und 2023, COVID als Kehre, die
+MTV-Klage, das Regional Network mit seinem Anfang in Austin, Flipside,
+Burners Without Borders, die Einsamkeitsepidemie, die HBO-Dokumentation,
+BRC 2026. Und dazu der Satz, der alles erklärt:
+
+    „it grew out of my notes from our call two months ago"
+
+Von diesem Telefonat steht in **keiner** Mail und in **keinem**
+Kalendereintrag etwas.
+
+Die Regel, die daraus folgt — und sie ist keine Entschuldigung, sondern
+eine Einschränkung, die auf den Entwurf selbst gehört:
+
+**Wenn ich etwas entwerfe, das sein Handwerk berührt, schreibe ich in
+den Kopf, woraus es gebaut ist — und damit auch, woraus nicht.** „Gebaut
+aus dem Postfach" ist eine Quellenangabe und gleichzeitig eine Warnung:
+alles, was er in Gesprächen, Notizbüchern oder Telefonaten hat, fehlt
+darin. Bei einem Gast, mit dem er schon telefoniert hat, ist der Anteil
+dessen, was mir fehlt, groß.
+
+Und: **ein überholter Entwurf wird markiert, nicht gelöscht.** Im Kopf
+steht jetzt, wann er überholt wurde und was seine Liste hatte, die meine
+nicht hatte. Ein gelöschter Entwurf belegt nichts; ein markierter zeigt,
+wo die Grenze lag.

@@ -1,5 +1,23 @@
 # Entwurf: Themenliste für Walker — Interview Marian Goodell, Di 06.10.
 
+**Status: ÜBERHOLT. Am 30.09. um 14:10 Austin hat er Walker seine eigene
+Themenliste geschickt — elf Stränge, cc appearances@burningman.org.
+Dieser Entwurf wurde nicht gebraucht. Er bleibt hier stehen, weil ein
+gelöschter Entwurf nichts belegt; überschrieben wird er nicht.**
+
+**Was seine Liste hatte und dieser Entwurf nicht:** Marian als Person
+(„I've heard she doesn't even love to talk at the burn"), das Erbe nach
+Larrys Tod (Mazatlán, 9→10 Prinzipien), die harten Jahre (2022 Hitze,
+2023 Regen, COVID als Kehre), Dekommodifizierung und die MTV-Klage, das
+Regional Network mit seinem Anfang in Austin, Flipside, Burners Without
+Borders, die Einsamkeitsepidemie, die HBO-Dokumentation, BRC 2026.
+Das ruht auf seinen Notizen aus einem Telefonat vor zwei Monaten —
+„my notes from our call two months ago" —, von dem in keiner Mail und in
+keinem Kalendereintrag etwas steht. **Genau das ist die Grenze dieses
+Entwurfs: er war aus dem Postfach gebaut.**
+
+--- Stand vom 28.09. ---
+
 **Status: Entwurf. Nicht verschickt. Verschickst Du.**
 Angelegt am 28.09. um 19:03 Austin, nachdem Walker um 18:41 danach gefragt hat.
 
