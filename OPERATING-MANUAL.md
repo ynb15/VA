@@ -2893,3 +2893,32 @@ Und: **ein überholter Entwurf wird markiert, nicht gelöscht.** Im Kopf
 steht jetzt, wann er überholt wurde und was seine Liste hatte, die meine
 nicht hatte. Ein gelöschter Entwurf belegt nichts; ein markierter zeigt,
 wo die Grenze lag.
+
+═══════════════════════════════════════════════════════════════════════
+EIN GROSSER FUND IN DER POST IST KEIN GRUND, DEN HALBEN SWEEP ZU LASSEN
+(30.09., 16:03)
+═══════════════════════════════════════════════════════════════════════
+
+Heute hatten zwei Sweeps hintereinander etwas Großes in der Post: um
+14:02 die zugesagte Erstattung von OnPress und seine Mail an Ryan, um
+15:02 seine Themenliste an Walker. Beide Male habe ich den
+Geschäftskalender abgefragt und den privaten **nicht**.
+
+Genau in dieser Zeit stand dort eine Verschiebung: *Rob & Ryan* war um
+13:29 von heute auf morgen gesetzt worden. Auf dem Board stand
+stattdessen bis 16:03 meine Zeile von 13:02, der Termin sei „durch" —
+eine Folgerung aus der Uhrzeit, die nie ein Feldwert war und die falsch
+war.
+
+**Die Regel, ohne Ausnahme: beide Kalender bei jedem Sweep.** Die
+Reihenfolge ist Post, Geschäftskalender, privater Kalender — und der
+private fällt nicht weg, weil die Post etwas Interessantes hatte. Ein
+Sweep ist erst fertig, wenn alle drei abgefragt sind, und im Log steht
+für jeden einzelnen, was er ergeben hat, auch wenn es nichts war.
+
+**Und die zweite Hälfte, die genauso zählt:** „ist durch", „hat
+stattgefunden", „ist erledigt" sind **keine Feldwerte**. Der Kalender
+sagt, wann etwas geplant ist, nie ob es passiert ist. Wenn eine Uhrzeit
+vorbei ist, heißt das nur, dass die Uhrzeit vorbei ist. Wer das anders
+aufschreibt, erfindet eine Tatsache — und muss sie später korrigieren,
+so wie hier.
