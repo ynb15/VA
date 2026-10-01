@@ -3105,3 +3105,24 @@ ADRESSE NACH DEM RUNDBRIEF ALS NEWSLETTER ABGELEGT, wäre der Faden beim nächst
 Sweep unsichtbar geworden. Die Newsletter-Liste führt Absender, von denen NUR
 Werbung kommt. Bei allen anderen gilt: die einzelne Mail einordnen, nicht den
 Absender.
+
+═══ ER FÜHRT DEN KALENDER ALS PROTOKOLL, NICHT NUR ALS PLAN (01.10., 15:02) ═══
+Dritte Beobachtung, damit ein Muster: Dienstag 29.09. wurde der Check-In nach
+seiner eigenen Zeit angelegt; Mittwoch 30.09. entstand `Podcast: Management`
+um 13:29 für 13:00–14:30; heute um 15:00 entstand derselbe Blocktitel für
+12:30–14:00 — eine Stunde nach dessen Ende — und im gleichen Atemzug wurde
+`Rob & Ryan` gelöscht.
+
+DAS HEISST: ein Block, dessen `created` NACH seinem `end` liegt, ist eine
+Eintragung über Vergangenes und kein Vorhaben. Er gehört nicht in „was steht
+heute an", sondern in den Tagesrückblick. Und er ist KEIN Anlass für einen
+Hinweis an ihn — das ist seine Art, den Tag festzuhalten, und sie funktioniert.
+Die Regel ist nur: `created` mit `end` vergleichen, bevor man einen Block als
+Vorhaben liest.
+
+UND DER GEGENTEST, DER DIESMAL GEHALTEN HAT: bevor „Rob & Ryan ist gelöscht" auf
+das Board kam, lief eine Volltextsuche über BEIDE Kalender von 01.09.2026 bis
+01.06.2027 — beide leer. Erst dann steht „gelöscht" da. Am 29.09. hatte ich bei
+Nelson's Drift nur bis zum 01.11. gesucht und mich geirrt; der Termin lag auf dem
+09.11. Das Fenster, das diesmal gereicht hat, ist das Mindeste: ein Jahr nach
+vorne, der ganze laufende Monat nach hinten, und auf jedem Kalender.
