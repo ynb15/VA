@@ -3034,3 +3034,12 @@ UND DIE ALLGEMEINE FORM DAVON, zum dritten Mal in zwei Tagen in anderer Gestalt
 ERGEBNIS IST NUR SO GUT WIE DIE ABFRAGE, DIE ES ERZEUGT HAT. Bevor „nichts Neues"
 auf das Board geht, muss die Abfrage selbst belastbar sein — sonst meldet das
 Board die Stille des Werkzeugs als Stille der Welt.
+
+═══ DIE ZWEI WERKZEUGE SORTIEREN GEGENLÄUFIG (01.10., 09:03) ═══
+`search_threads` liefert die NEUESTEN Threads zuerst. `list_events` mit
+`orderBy: lastModified` sortiert AUFSTEIGEND, die geänderten Zeilen stehen am
+ENDE. Also: bei der Post ist Seite 1 die richtige Seite für „was ist neu", beim
+Kalender die letzte. Ein kleines `pageSize` ist beim Postfach harmlos und beim
+Kalender fatal. Wer sich die Richtung nicht jedes Mal klarmacht, hält beim
+Kalender die ältesten Zeilen für den aktuellen Stand — genau das wäre am 30.09.
+um 21:02 mit `pageSize: 5` passiert.
