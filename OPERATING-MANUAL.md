@@ -178,7 +178,20 @@ unless marked otherwise.
   End of Sep  San Francisco — Burning Man HQ, recording with their CEO. NO DATES
               YET. This is the one leg with nothing on the calendar, and the five
               Bay Area prospects plus Dean Karnazes all hang off it.
-  Early-mid Oct  Back to South Africa.
+  Early-mid Oct  CORRECTED 01 Oct: REHAB IS IN GERMANY, NOT SOUTH AFRICA.
+              His own words to Enfold, 01 Oct 13:31 Austin: "I'm now omw back in
+              Germany to get my rehab done and it'll be a while before I'm back
+              in ATX, or in North America at all." The earlier "back to SA" came
+              from his 21 Sep mail to Joe Moore ("flying home to SA to start my
+              physiotherapy"). BOTH ARE HIS OWN WORDS, TEN DAYS APART; the later
+              one wins. He also cancelled the Enfold Austin window 16-18 Oct for
+              this reason, himself, on 01 Oct.
+              UNRESOLVED AND NOT MINE TO RESOLVE: the BMHQ tour (Mon 05 Oct,
+              15:00-15:50 Austin) and the Marian Goodell interview (Tue 06 Oct,
+              13:00-15:00 Austin) are both in San Francisco, and he accepted the
+              interview himself on 30 Sep at 13:47. State both facts side by
+              side; never pick one. If SF is off, Walker and Marian are the only
+              people with a date at stake.
 
 ═══ HOW MY WEEK ACTUALLY RUNS ═══
 MONDAY — MagicMonday. Sacred deep work. Offline most of the day, 4–5h on an essay,
@@ -3058,3 +3071,37 @@ und hinterlässt nichts, was `list_events` zeigen kann — das Werkzeug hat kein
 `showDeleted`. ES BLEIBT EINE HYPOTHESE UND GEHÖRT ALS SOLCHE AUFS BOARD. Was
 feststeht, ist der Stempel; was fehlt, ist der Termin. Beides hinschreiben, keines
 von beidem in das andere übersetzen.
+
+═══ EINE KALENDER-EIGENSCHAFT ÄNDERT DEN STEMPEL, NICHT DIE TERMINE (01.10., 14:02) ═══
+KORREKTUR ZU ZWEI EIGENEN EINTRÄGEN. Am 30.09. um 21:02 und am 01.10. um 12:02
+habe ich einen kalenderweiten `updated` ohne passenden Termin gefunden und beide
+Male eine LÖSCHUNG als wahrscheinlichste Erklärung hingeschrieben. Das war falsch.
+
+Zwischen 12:02 und 13:02 am 01.10. wechselte der geschäftliche Kalender seine
+eigene Zeitzone von `America/Denver` auf `America/Chicago`. Das ist eine
+KALENDER-EIGENSCHAFT: sie hebt den kalenderweiten `updated` und lässt jeden
+einzelnen Termin-`updated` unberührt — exakt die Signatur, die ich zwei Mal
+gesehen hatte. Für den privaten Stempel vom 30.09. um 20:06 ist dasselbe jetzt
+die wahrscheinlichere Erklärung als eine Löschung.
+
+ALSO: ein kalenderweiter Stempel ohne Termin heißt zuerst
+EIGENSCHAFT GEÄNDERT (Zeitzone, Name, Farbe, Standard-Erinnerungen), erst danach
+Löschung. Und man prüft es, indem man im selben Durchgang das Feld `timeZone` der
+Antwort mit dem vorigen Durchgang vergleicht — es steht in jeder `list_events`-
+Antwort und ich hatte es zwei Mal übersehen.
+
+DIE GEGENPROBE, DIE MAN DABEI IMMER MACHT: nach einem Zonenwechsel wandern die
+Wanduhr-Zahlen aller Termine, die Zeitpunkte aber nicht. BMHQ-Tour vorher
+`2026-10-05T14:00:00-06:00`, nachher `15:00:00-05:00` — beide 20:00 UTC. Wer die
+Zahl liest statt den Versatz, meldet eine Verschiebung, die nie passiert ist.
+Nur ein Termin war wirklich verschoben, und der trug einen neuen eigenen
+`updated`. DER VERSATZ IST DER ZEITPUNKT — zum dritten Mal belegt.
+
+═══ EIN RUNDBRIEF VON EINEM ECHTEN KONTAKT BLEIBT EIN ECHTER KONTAKT (01.10.) ═══
+`steve@enfold.org` schickte um 11:05 einen Werbe-Rundbrief („Introducing Our 2027
+Dates"). Dieselbe Adresse führt seit dem 04.08. die echte Korrespondenz über eine
+Aufnahme mit Enfold, und um 13:31 hat Yannick dorthin abgesagt. HÄTTE ICH DIE
+ADRESSE NACH DEM RUNDBRIEF ALS NEWSLETTER ABGELEGT, wäre der Faden beim nächsten
+Sweep unsichtbar geworden. Die Newsletter-Liste führt Absender, von denen NUR
+Werbung kommt. Bei allen anderen gilt: die einzelne Mail einordnen, nicht den
+Absender.
