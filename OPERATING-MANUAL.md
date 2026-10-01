@@ -2985,3 +2985,28 @@ GEZÄHLT HABE, GEHÖRT NICHT AUF DAS BOARD — und am wenigsten in einen Satz ü
 eigene Verlässlichkeit, denn dort trägt sie das Gegenteil von dem, was sie
 behauptet. Wenn die Quelle nicht in einer Abfrage oder einem Dateizugriff liegt,
 steht die Zahl nicht da, oder sie steht mit dem Wort „ungezählt" daneben.
+
+═══ DER KALENDERSTEMPEL KANN JEDEN TERMIN ÜBERHOLEN — DANN IST DIE EHRLICHE ANTWORT „ICH WEISS ES NICHT" (30.09., 21:02) ═══
+Am 30.09. um 21:02 stand auf dem privaten Kalender `updated 2026-10-01T01:06:27Z`
+(= 20:06 Austin), und **kein einziger Termin trug diesen Stempel** — nicht im
+Fenster 30.09.–20.10., nicht in 20.10.2026–01.07.2027, nicht in 20.–30.09.
+
+ZWEI DINGE SIND DAMIT GLEICHZEITIG WAHR: es hat sich etwas geändert (der
+Kalenderstempel ist ein Feldwert), und ich kann nicht sagen, was. Die
+wahrscheinlichste Erklärung ist eine LÖSCHUNG: sie hebt den Kalenderstempel und
+lässt nichts zurück, was `list_events` noch zeigen könnte — das Werkzeug hat kein
+`showDeleted`. Die zweite ist ein Termin ausserhalb der abgesuchten Fenster.
+
+ALSO: ein offener Kalenderstempel, der sich nicht einlösen lässt, wird als offene
+Zeile auf das Board geschrieben — nicht als erfundenes Ereignis, und erst recht
+nicht als „nichts geändert". Ein Board, das „nichts geändert" sagt, während der
+Kalender das Gegenteil sagt, ist schlechter als eines, das eine Lücke zugibt.
+
+UND DIE FALLE IN DER ABFRAGE SELBST: bei `orderBy: lastModified` ist die Sortierung
+AUFSTEIGEND, die geänderten Zeilen stehen also am ENDE. Eine Abfrage mit kleinem
+`pageSize` oder eine, deren Antwort einen `nextPageToken` trägt, enthält die
+Änderung deshalb GARANTIERT NICHT und beweist gar nichts. Ich habe diesen Sweep mit
+`pageSize: 5` begonnen und hätte den Stempel damit nie einlösen können. Entweder
+`pageSize` so hoch, dass kein `nextPageToken` zurückkommt, oder das Fenster in
+Scheiben schneiden und jede einzeln prüfen — ein abgeschnittenes Ergebnis ist kein
+Ergebnis.
