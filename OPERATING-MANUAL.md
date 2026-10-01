@@ -3010,3 +3010,26 @@ AUFSTEIGEND, die geänderten Zeilen stehen also am ENDE. Eine Abfrage mit kleine
 `pageSize` so hoch, dass kein `nextPageToken` zurückkommt, oder das Fenster in
 Scheiben schneiden und jede einzeln prüfen — ein abgeschnittenes Ergebnis ist kein
 Ergebnis.
+
+═══ `newer_than:2h` IST KEINE VERLÄSSLICHE POSTABFRAGE (01.10., 07:03) ═══
+Am 30.09. lag um 18:59 ein DMARC-Bericht im Konto. Die Sweeps um 20:03, 21:02 und
+22:02 liefen alle mit `in:anywhere newer_than:2h` und gaben alle drei `{}` zurück
+— beim ersten war die Mail 64 Minuten alt und lag damit klar im nominellen Fenster.
+Am nächsten Morgen fand `newer_than:1d` achtzehn Threads, den Bericht darunter.
+
+Gmail dokumentiert für `newer_than:` Tage, Monate und Jahre, keine Stunden. Dass
+`2h` an manchen Sweeps trotzdem traf (um 17:02 fand es Walker um 16:49 und Ryan um
+17:00) macht es nicht besser, sondern schlechter: EINE ABFRAGE, DIE MANCHMAL
+STIMMT, IST KEINE ABFRAGE, SONDERN EINE FEHLERQUELLE MIT GUTEM RUF.
+
+DIE ABFRAGE IST AB JETZT `in:anywhere newer_than:1d` MIT `includeTrash: true`, und
+die Zeitstempel werden selbst gefiltert — `date` ist UTC, Austin ist UTC−5 im
+Sommer. Das kostet ein paar Zeilen mehr Antwort und erfüllt nebenbei die Regel
+„lies die Post des Tages als Satz, nicht als Warteschlange" besser als jedes
+Stundenfenster. Für eine Nachtlücke entsprechend `newer_than:2d`.
+
+UND DIE ALLGEMEINE FORM DAVON, zum dritten Mal in zwei Tagen in anderer Gestalt
+(Kalenderfenster 30.09., `pageSize` 30.09., jetzt Postfenster): EIN LEERES
+ERGEBNIS IST NUR SO GUT WIE DIE ABFRAGE, DIE ES ERZEUGT HAT. Bevor „nichts Neues"
+auf das Board geht, muss die Abfrage selbst belastbar sein — sonst meldet das
+Board die Stille des Werkzeugs als Stille der Welt.
