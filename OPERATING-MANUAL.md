@@ -3120,9 +3120,37 @@ Hinweis an ihn — das ist seine Art, den Tag festzuhalten, und sie funktioniert
 Die Regel ist nur: `created` mit `end` vergleichen, bevor man einen Block als
 Vorhaben liest.
 
-UND DER GEGENTEST, DER DIESMAL GEHALTEN HAT: bevor „Rob & Ryan ist gelöscht" auf
-das Board kam, lief eine Volltextsuche über BEIDE Kalender von 01.09.2026 bis
-01.06.2027 — beide leer. Erst dann steht „gelöscht" da. Am 29.09. hatte ich bei
-Nelson's Drift nur bis zum 01.11. gesucht und mich geirrt; der Termin lag auf dem
-09.11. Das Fenster, das diesmal gereicht hat, ist das Mindeste: ein Jahr nach
-vorne, der ganze laufende Monat nach hinten, und auf jedem Kalender.
+ZURÜCKGENOMMEN AM 01.10. UM 17:02: DER GEGENTEST HAT NICHT GEHALTEN.
+„Rob & Ryan ist gelöscht" war falsch. Dasselbe Ereignis
+`82ni8mdgmt1l52cb8rthum4gpo` liegt auf Fr 02.10., 11:00–12:00 Austin — verschoben,
+nicht gelöscht. Zwei Fehler zugleich:
+  1. Das Tagesfenster endete am 02.10. um 00:00, also außerhalb des neuen Termins.
+  2. Die Volltextsuche, die genau das hätte fangen sollen, lief mit dem Suchbegriff
+     `Rob &amp; Ryan` — ICH HABE DIE HTML-SCHREIBWEISE AUS DEM BOARD IN DIE
+     KALENDERABFRAGE GEGEBEN. Danach gibt es keinen Treffer, und das leere Ergebnis
+     sah aus wie ein Befund.
+
+DARAUS ZWEI REGELN:
+  KEINE HTML-ENTITÄTEN IN EINE ABFRAGE. Suchbegriffe werden aus dem ROHTEXT
+  gebildet, nie aus dem Board-Markup: `&` nicht `&amp;`, `"` nicht `&bdquo;`,
+  `–` nicht `&ndash;`. Bei einem Titel mit Sonderzeichen sucht man lieber ein
+  einzelnes unverfängliches Wort („Ryan") als den ganzen Titel.
+  EIN LEERES SUCHERGEBNIS WIRD ERST ZUM BEFUND, WENN DIE ABFRAGE SELBST GEPRÜFT IST.
+  Das ist dieselbe Lehre wie beim Postfenster am 01.10. um 07:03, jetzt zum zweiten
+  Mal und mit Folgen für ihn: eine falsche Löschmeldung auf dem Board. Die Probe
+  dafür kostet nichts — denselben Begriff einmal gegen einen Termin laufen lassen,
+  von dem man WEISS, dass er existiert. Kommt der auch nicht zurück, ist die
+  Abfrage kaputt und nicht die Welt.
+
+═══ EINE TERMINIERTE GMAIL-SENDUNG IST SICHTBAR — UND BIS ZUR SENDEZEIT ÄNDERBAR (01.10., 17:02) ═══
+Im Faden mit Media Pouch lag eine Mail von ihm mit `date: 2026-10-02T18:00:00Z`
+(= Fr 13:00 Austin, also in der ZUKUNFT) und OHNE `labelIds`. Das ist die
+Signatur einer terminierten Sendung: `search_threads` zeigt sie, `get_message`
+gibt den Volltext aus — anders als bei echten Entwürfen, die `get_message` nicht
+ausgibt.
+
+DARAUS: eine Mail im Faden mit Zukunftsdatum und ohne Etikett ist WEDER gesendet
+NOCH ein Entwurf, sondern terminiert. Sie gehört aufs Board als „liegt bereit,
+geht am …", nicht als „verschickt" und nicht als „offen". Und sie ist bis zur
+Sendezeit änderbar — das ist das einzige Fenster, in dem eine Korrektur noch
+gratis ist, und genau deshalb gehört die Sendezeit mit auf das Board.
