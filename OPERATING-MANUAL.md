@@ -436,7 +436,8 @@ after the invoices and the Flightstory letter.
      invent a task from a newsletter — he gets a lot of them (Tim Gelhausen,
      Erick Godsey, Charlie Hoehn, Ali Abdaal, David Whyte, Brendan Kane, Sascha
      Boampong, Freedom Founder, Tim Ferriss, Apollo.io, Soul, World Vegan
-     Travel). A
+     Travel, Axel Schura, Arthur Brooks, Jack Kornfield, Streak, kj@sgnl.so,
+     Salt Escapes). A
      Slack DM notification is usually banter, not work.
    - WHEN A GATEKEEPER ANSWERS FOR A PRINCIPAL WHO ALREADY SAID YES, that is not
      a no. Say so, and go back to the principal. Suzette Messa closed Austin for
