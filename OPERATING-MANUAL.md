@@ -2970,3 +2970,18 @@ werden zwei Dinge festgestellt, nicht vermutet:
 Ein „das ist weg" über fremden Speicher ist erst ein Befund, wenn der eigene Speicher
 durchsucht ist. Und der Satz „es gibt keine zweite Kopie" wird mit der Zahl der
 Abfragen dahinter geschrieben, damit er nachprüfbar bleibt.
+
+═══ EINE ZAHL AUF DEM BOARD WIRD GEZÄHLT, NICHT GESCHÄTZT (30.09., 19:02) ═══
+Um 17:02 habe ich auf das Board geschrieben „Heute sind es siebzehn Sweeps. Drei
+haben etwas in der Post gefunden, fünf haben eigene Fehler von mir korrigiert" —
+in demselben Satz, in dem ich zwei eigene Fehler einräumte. Es waren elf Sweeps,
+und die Aufteilung war ebenfalls geschätzt. Die Zahl stand in `actuals/` die ganze
+Zeit nachzählbar da: ein `grep -c '^## '` auf die Tagesdatei.
+
+Das Manual sagt an zwei Stellen, Tageszählungen und Stundensummen jeden Sweep neu
+zu berechnen statt sie fortzuschreiben. Der Fehler hier war schlimmer als
+Fortschreiben: eine Zahl, die nie berechnet wurde. EINE ZAHL, DIE ICH NICHT
+GEZÄHLT HABE, GEHÖRT NICHT AUF DAS BOARD — und am wenigsten in einen Satz über
+eigene Verlässlichkeit, denn dort trägt sie das Gegenteil von dem, was sie
+behauptet. Wenn die Quelle nicht in einer Abfrage oder einem Dateizugriff liegt,
+steht die Zahl nicht da, oder sie steht mit dem Wort „ungezählt" daneben.
