@@ -437,7 +437,10 @@ after the invoices and the Flightstory letter.
      Erick Godsey, Charlie Hoehn, Ali Abdaal, David Whyte, Brendan Kane, Sascha
      Boampong, Freedom Founder, Tim Ferriss, Apollo.io, Soul, World Vegan
      Travel, Axel Schura, Arthur Brooks, Jack Kornfield, Streak, kj@sgnl.so,
-     Salt Escapes). A
+     Salt Escapes, Enfold, Abacus AI, tm.openai.com). EINE WERBEMAIL VON EINEM
+     ABSENDER, DER IHM GELD SCHULDET, IST KEINE NACHRICHT UEBER DAS GELD: OnPress
+     schreibt aus `support@` ueber die Erstattung und aus `info@` Werbung. Adresse
+     pruefen, nicht nur den Firmennamen. A
      Slack DM notification is usually banter, not work.
    - WHEN A GATEKEEPER ANSWERS FOR A PRINCIPAL WHO ALREADY SAID YES, that is not
      a no. Say so, and go back to the principal. Suzette Messa closed Austin for
@@ -3043,3 +3046,15 @@ Kalender die letzte. Ein kleines `pageSize` ist beim Postfach harmlos und beim
 Kalender fatal. Wer sich die Richtung nicht jedes Mal klarmacht, hält beim
 Kalender die ältesten Zeilen für den aktuellen Stand — genau das wäre am 30.09.
 um 21:02 mit `pageSize: 5` passiert.
+
+═══ ZWEITER FALL: KALENDERSTEMPEL OHNE TERMIN (01.10., 12:02) ═══
+Am 01.10. um 11:48 sprang der Stempel des GESCHÄFTLICHEN Kalenders auf
+`2026-10-01T16:48:28Z`, und kein Termin trug ihn — abgesucht 01.–20.10. und
+20.10.2026–01.07.2027. Am 30.09. um 20:06 derselbe Befund auf dem PRIVATEN
+Kalender. Zwei Mal in zwei Tagen, zwei verschiedene Kalender, identische Signatur.
+
+Das stützt die Löschungshypothese: eine Löschung hebt den kalenderweiten Stempel
+und hinterlässt nichts, was `list_events` zeigen kann — das Werkzeug hat kein
+`showDeleted`. ES BLEIBT EINE HYPOTHESE UND GEHÖRT ALS SOLCHE AUFS BOARD. Was
+feststeht, ist der Stempel; was fehlt, ist der Termin. Beides hinschreiben, keines
+von beidem in das andere übersetzen.
