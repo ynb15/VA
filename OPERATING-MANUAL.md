@@ -3345,3 +3345,49 @@ bleibt sonst für immer unentdeckt.
 `info@trainingportal.co.za` (**südafrikanisches Studio-Marketing — sieht nach
 Virgin Active und nach Podcast-Studios aus, ist aber beides nicht.** Gelesen,
 bevor es einsortiert wurde.)
+
+═══════════════════════════════════════════════════════════════════════════════
+DAS LABEL IST SEIN HANDGRIFF, NICHT EINE EINORDNUNG (02.10., 12:03)
+═══════════════════════════════════════════════════════════════════════════════
+
+Korrektur zu dem, was ich in der Nacht zum 02.10. geschrieben hatte („Werbung
+landet automatisch im Papierkorb, ein neuer Absender nicht"). **Das war
+höchstens die halbe Erklärung.**
+
+Zwischen dem 11:03- und dem 12:03-Sweep wanderten **sechs Fäden von `INBOX` nach
+`TRASH`, alle weiterhin `UNREAD`** — darunter die Google-Workspace-Rechnung.
+Drei andere blieben im Posteingang. Niemand hatte sie geöffnet.
+
+**Also: er räumt von Hand auf, in Stapeln, ungelesen.** Daraus folgt:
+
+- **`TRASH` heißt „er hat es weggelegt", nicht „es war Werbung".** Und
+  `INBOX` heißt „noch nicht weggelegt", nicht „echte Post".
+- **Das Label ändert sich zwischen zwei Sweeps.** Wenn eine Board-Zeile sich auf
+  ein Label stützt, ist sie eine Stunde später womöglich falsch. **Also keine
+  Board-Aussage auf ein Label bauen** — nur auf Absender, Inhalt und Zeitstempel.
+- **Umgekehrt ist es ein nützliches Signal über ihn:** wenn etwas, das ich als
+  offen führe, bei ihm im Papierkorb landet, hat er entschieden. Dann die Zeile
+  **zurücknehmen**, nicht als offen weiterführen — und ihn nicht darauf ansprechen.
+- **Nie selbst umsortieren.** Es ist sein Postfach.
+
+═══════════════════════════════════════════════════════════════════════════════
+SLACK IST NICHT TEIL DES SWEEPS — ABER SLACK-BENACHRICHTIGUNGEN SIND POST
+═══════════════════════════════════════════════════════════════════════════════
+
+Am 02.10. um 11:41 kam `notification@slack.com`: *„Bodhi Bijlani hat dir eine
+Nachricht gesendet"* — eine **Direktnachricht** im Gevity-Slack
+(`gevitygroup.slack.com`) von 11:30, beginnend mit *„You are the first person to
+say that they are…"*, also eine Antwort auf etwas von ihm.
+
+**Die Regel:**
+
+1. **Eine Slack-Benachrichtigungsmail ist ein Befund wie jede andere Post** —
+   `notification@slack.com` gehört **nicht** in die Newsletter-Liste. Absender,
+   Workspace, Uhrzeit und der Anfang des Textes stehen im Betreff und im Auszug.
+2. **Der Slack-Inhalt selbst wird nicht gelesen**, solange er es nicht sagt.
+   Eine Direktnachricht ist privater als ein Postfach, auf das er mich gesetzt
+   hat. Auf dem Board steht die Tatsache und **ein einzeiliges Angebot**, Slack
+   mit aufzunehmen — kein Drängen, und nicht vorher tun.
+3. **Senden bleibt in jedem Fall verboten**, in Slack wie in der Mail.
+4. **Dass die Benachrichtigungsmail im Papierkorb liegt, sagt nichts darüber, ob
+   die Nachricht in Slack gelesen ist.** Zwei verschiedene Systeme.
