@@ -3257,3 +3257,26 @@ Der Auslöser-Zeitstempel ist UTC — **Austin ist UTC−5 im Sommer**, also
 `00:02Z` = `19:02`, nicht `20:02`. Und wenn ein Auslöser einen Slot nachliefert,
 der schon erledigt ist, ist das ein **zweiter Durchgang in derselben Stunde** und
 wird so beschriftet, nicht als die nächste Stunde.
+
+═══════════════════════════════════════════════════════════════════════════════
+NEWSLETTER-ABSENDER, NACHTRAG 02.10.
+═══════════════════════════════════════════════════════════════════════════════
+
+Neu dazu, alle in der Nacht zum 02.10., alle an `info@`:
+
+- `tg@timgelhausen.de` — Tim Gelhausen, deutscher Freitags-Newsletter
+- `noreply@skool.com` — Skool-Wochenübersichten (mehrere Gruppen, u.a.
+  *Useful AI • AI For Business* und *Full Stack Freedom*); **ein Faden kann
+  Digests mehrerer Gruppen enthalten**
+- `willkommen@mail.freedom-founder.com` — *FREEDOM FOUNDER*, von Nadine
+
+**Und eine Beobachtung dazu, die eine Regel ist:** diese vier Mails lagen
+**`UNREAD` im `INBOX`**, nicht im Papierkorb. Seine gewohnte Werbung landet
+automatisch im Papierkorb — **ein neuer Absender tut das nicht**, weil sein
+Filter ihn noch nicht kennt. Daraus folgt:
+
+**`INBOX` ist kein Beweis, dass eine Mail echte Post ist.** Der Papierkorb ist
+ein starkes Zeichen für Werbung, aber der Posteingang ist kein Zeichen für das
+Gegenteil — bei einem unbekannten Absender entscheidet der Inhalt, nicht das
+Label. Und: **nichts umsortieren.** Es ist sein Postfach; die Absender gehören
+in diese Liste, nicht in einen Filter, den ich anlege.
