@@ -3154,3 +3154,53 @@ NOCH ein Entwurf, sondern terminiert. Sie gehört aufs Board als „liegt bereit
 geht am …", nicht als „verschickt" und nicht als „offen". Und sie ist bis zur
 Sendezeit änderbar — das ist das einzige Fenster, in dem eine Korrektur noch
 gratis ist, und genau deshalb gehört die Sendezeit mit auf das Board.
+
+═══════════════════════════════════════════════════════════════════════════════
+EIN BEKANNTER BETREFF IST DER BESTE VERSTECKPLATZ FÜR EINE NEUE NACHRICHT
+(01.10.26, 19:02 — zweiter Fall, also ein Muster)
+═══════════════════════════════════════════════════════════════════════════════
+
+Am 01.10. habe ich einen Austausch von **76 Minuten** mit Andie Grace
+(Burning Man) **komplett übersehen** — sechs Nachrichten zwischen 12:39 und
+14:10 Austin. Zwei Abschnitte des Tageslogs waren dadurch falsch: der
+13:02/14:02-Abschnitt listete seine 12:51 und seine 13:26, aber nicht die 12:54
+dazwischen; der 15:02-Abschnitt sagte „Post: nichts Neues seit 14:00", während
+14:06 und 14:10 schon dastanden. Und das Board trug die Spannung
+Deutschland ↔ San Francisco sechs Stunden als unaufgelöst, **nachdem er sie
+selbst aufgelöst hatte.**
+
+**Die Ursache war nicht eine kaputte Abfrage.** Die Abfrage war richtig, der
+Faden stand in der Trefferliste. **Ich habe den Betreff erkannt und deshalb
+nicht hineingeschaut.** *Man's Search for Meaning Interview* steht ein Dutzend
+Mal auf dem Board; die Zeile sah aus wie etwas, das ich schon kenne.
+
+**Der erste Fall war Ian Gardner** — damals habe ich es selbst so notiert:
+*„ich habe den Faden nicht vollständig geholt, weil er alt aussah."* Zwei Fälle
+derselben Art sind nach der eigenen Regel ein Muster.
+
+**DIE REGEL: Ein Sweep vergleicht Zeitstempel, nicht Betreffzeilen.**
+
+Für jeden Faden in der `newer_than:1d`-Liste:
+
+1. **Lies das `date` der neuesten Nachricht darin** und halte es gegen den
+   Stand des letzten Sweeps. Wiedererkennen ist kein Prüfschritt.
+2. **Die Trefferliste zeigt nur einen Ausschnitt des Fadens.** Bei
+   `messageCount` größer als die Zahl der gezeigten Nachrichten ist der Faden
+   **unvollständig** — dann `get_thread` oder `get_message`, nicht raten.
+3. **Ein alter Faden mit einer neuen Nachricht ist genau der Normalfall**, nicht
+   die Ausnahme: seine wichtigsten Vorgänge laufen über Wochen in einem Faden.
+   Ein *neuer* Betreff ist das Seltene.
+4. **Ein `Fwd:` ist eine neue Nachricht von ihm**, auch wenn der Betreff danach
+   gleich aussieht. Hier war die 12:54 ein Fwd — sein eigener Schritt, zu einer
+   neuen Person, mit einer Zusage darin.
+5. **Bevor ein Abschnitt „nichts Neues seit HH:MM" sagt:** nimm die größte
+   `date` aus der Trefferliste und schreibe sie hin. Dann steht da eine
+   nachprüfbare Zahl statt eines Gefühls.
+
+**Und die Folgeregel, teurer als der Fehler selbst:** eine Aussage auf dem
+Board, die eine *Spannung in seinen eigenen Worten* behauptet
+(„unaufgelöst", „widerspricht sich", „zwei Bilder"), ist nur so gut wie der
+jüngste gelesene Satz von ihm. **Vor so einer Zeile: den Faden holen, in dem
+er zuletzt geschrieben hat.** Hier hätte ein Blick in den Interview-Faden die
+ganze Zeile gespart — die Auflösung lag 39 Minuten nach der Mail, die ich
+als Widerspruch zitiert habe.
