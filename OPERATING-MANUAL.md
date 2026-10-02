@@ -3204,3 +3204,56 @@ jüngste gelesene Satz von ihm. **Vor so einer Zeile: den Faden holen, in dem
 er zuletzt geschrieben hat.** Hier hätte ein Blick in den Interview-Faden die
 ganze Zeile gespart — die Auflösung lag 39 Minuten nach der Mail, die ich
 als Widerspruch zitiert habe.
+
+═══════════════════════════════════════════════════════════════════════════════
+DREI REGELN ÜBER DIE WERKZEUGE, AM 01.10. ABENDS GELERNT
+═══════════════════════════════════════════════════════════════════════════════
+
+**1. DIE TRefferliste DER POST IST NICHT NACH DATUM SORTIERT —
+UND DAMIT IST EIN KLEINES `pageSize` AUCH AUF DEM POSTFACH GEFÄHRLICH.**
+
+Am 01.10. um 19:10 lief der Sweep mit `pageSize: 8`. Der Andie-Grace-Faden
+(`1a0ea65c6573d2e5`, neueste Nachricht `2026-10-01T19:10:34Z`) **stand nicht in
+den ersten acht Zeilen** — während vier ältere Fäden (17:52, 17:51, 17:50 …)
+darin standen. Mit `pageSize: 25` erscheint er auf Platz 9.
+
+**Nach welchem Feld `search_threads` wirklich ordnet, ist nicht bestimmt.**
+Genau deshalb:
+
+- **Die Position in der Liste ist kein Maß für Aktualität.** „Der neueste Faden
+  steht oben" gilt nicht.
+- **`pageSize` muss die `resultCountEstimate` abdecken.** Bei `newer_than:1d`
+  liegt die bei ihm zwischen 20 und 25 — also `pageSize: 25`, nie weniger.
+  *Das korrigiert die frühere Zeile „ein kleines `pageSize` ist auf dem Postfach
+  harmlos und nur beim Kalender fatal". Ist es nicht.*
+- **„Nichts Neues" braucht das Maximum über die ganze Liste**, nicht über die
+  erste Seite. Die Zahl hinschreiben, sonst ist es ein Gefühl.
+- **Ein `nextPageToken` auf dem Postfach heißt dasselbe wie beim Kalender:
+  die Antwort kann die Änderung nicht enthalten.** Dieselbe Regel, beide Seiten.
+
+**2. EIN KALENDERWEITER STEMPEL OHNE TERMIN IST ROUTINE, KEIN SIGNAL.**
+
+Am 01.10. zweimal innerhalb von drei Stunden: geschäftlich `23:49:46Z` (18:49
+Austin), privat `2026-10-02T00:50:59Z` (19:50 Austin). Beide Male:
+`timeZone` unverändert, kein Termin in drei bis vier abgesuchten Fenstern von
+01.08./01.09.26 bis 01.06.27 angefasst, **keine Folge für eine einzige Aussage
+auf dem Board.**
+
+**Die Konsequenz:** die Prüfung bleibt — erst `timeZone`, dann die Fenster,
+jedes bis zur letzten Seite —, aber sie **endet in einer Zeile im Log und nicht
+auf dem Board**. Es kostet drei bis vier Abfragen und hat bisher nie etwas
+bedeutet. Nie „gelöscht" sagen, solange keine Löschung gezeigt werden kann.
+
+**3. DIE BESCHRIFTUNG EINES SWEEPS KOMMT VON DER UHR, NICHT VOM HOCHZÄHLEN.**
+
+Am 01.10. habe ich einen Durchgang als **20:02** eingetragen, der um **19:10**
+lief. Ursache: der Auslöser feuerte um `2026-10-02T00:02:32Z` — **das sind 19:02
+Austin**, derselbe Slot, den ich nach der Uhr schon bearbeitet hatte. Statt die
+Uhr zu lesen, habe ich die letzte Beschriftung um eine Stunde erhöht. Eine Stunde
+lang trug das Board einen Zeitstempel, der in der Zukunft lag.
+
+**Vor jedem Log-Eintrag und vor jedem `var SWEPT`:** `TZ=America/Chicago date`.
+Der Auslöser-Zeitstempel ist UTC — **Austin ist UTC−5 im Sommer**, also
+`00:02Z` = `19:02`, nicht `20:02`. Und wenn ein Auslöser einen Slot nachliefert,
+der schon erledigt ist, ist das ein **zweiter Durchgang in derselben Stunde** und
+wird so beschriftet, nicht als die nächste Stunde.
