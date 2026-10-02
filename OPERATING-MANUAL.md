@@ -3280,3 +3280,36 @@ ein starkes Zeichen für Werbung, aber der Posteingang ist kein Zeichen für das
 Gegenteil — bei einem unbekannten Absender entscheidet der Inhalt, nicht das
 Label. Und: **nichts umsortieren.** Es ist sein Postfach; die Absender gehören
 in diese Liste, nicht in einen Filter, den ich anlege.
+
+═══════════════════════════════════════════════════════════════════════════════
+DIE POSTABFRAGE: TAGESGRENZE STATT `newer_than` (02.10.)
+═══════════════════════════════════════════════════════════════════════════════
+
+**Standard für den stündlichen Sweep ist jetzt:**
+
+    in:anywhere after:JJJJ/MM/TT   mit includeTrash: true und pageSize: 50
+
+mit dem **heutigen** Datum. Gründe, alle am 02.10. nachgemessen:
+
+- **Der Schnitt ist nachprüfbar.** `after:2026/10/2` heißt „ab diesem
+  Kalendertag", nicht „ungefähr 24 Stunden" — und `newer_than` war bei Gmail
+  schon einmal unzuverlässig (`2h` ließ eine Mail dreimal durchfallen).
+- **Es ist viel billiger.** `after:2026/10/2` gab `resultCountEstimate: 8`,
+  `after:2026/10/1` gab 28. Dieselbe Abdeckung für den laufenden Tag.
+- **Antworten in alten Fäden fallen nicht durch.** Gmail trifft *Nachrichten*,
+  nicht Fäden: der Media-Pouch-Faden von September erschien in der
+  Tagesabfrage, weil eine Nachricht von heute darin liegt. **Ein Faden ist
+  genau dann dabei, wenn er eine Nachricht aus dem Fenster hat.**
+- **Nach einer Nachtlücke** (22:02 → 07:03) den **Vortag** nehmen:
+  `after:` auf gestern, damit die ganze Nacht drin ist.
+- **`pageSize` bleibt 50** und die `resultCountEstimate` muss darunter liegen,
+  sonst ist die Liste unvollständig — und sie ist **nicht nach Datum sortiert.**
+
+**Und weiter zum Posteingang-Label:** `kj@sgnl.so` lag am 01.10. im Papierkorb
+und am 02.10. im Posteingang. **Sein Filter ist nicht einmal pro Absender
+stabil.** Also entscheidet immer der Inhalt, nie das Label.
+
+**Newsletter-Liste, Nachtrag:** `success@hookpoint.com`. **Achtung, das ist
+Brendan Kanes Firma** — der Rundbrief von `success@` ist trotzdem keine Antwort
+von ihm. Dieselbe Falle wie bei Enfold und OnPress: **die Adresse zählt, nicht
+der Firmenname.**
