@@ -3313,3 +3313,35 @@ stabil.** Also entscheidet immer der Inhalt, nie das Label.
 Brendan Kanes Firma** — der Rundbrief von `success@` ist trotzdem keine Antwort
 von ihm. Dieselbe Falle wie bei Enfold und OnPress: **die Adresse zählt, nicht
 der Firmenname.**
+
+═══════════════════════════════════════════════════════════════════════════════
+DER KALENDERSTEMPEL IST FENSTERUNABHÄNGIG — DESHALB ERST ER, DANN DAS FENSTER
+(02.10., nachgemessen)
+═══════════════════════════════════════════════════════════════════════════════
+
+Der kalenderweite `updated` in der Antwort von `list_events` ist eine
+**Eigenschaft des Kalenders, nicht der Abfrage.** Am 02.10. um 09:03 mit dem
+Fenster **nur heute** abgefragt: derselbe Wert wie um 08:03 mit dem Fenster
+02.–23.10. (`2026-10-02T03:08:49Z` geschäftlich, `2026-10-02T00:50:59Z` privat).
+Beim geschäftlichen Kalender kam **kein einziger Termin** zurück, weil heute dort
+nichts steht — **und der Stempel stand trotzdem in der Antwort.**
+
+**Also der Ablauf für den stündlichen Sweep:**
+
+1. **Beide Kalender mit dem Tagesfenster** abfragen. Das gibt den Stempel *und*
+   die Termine des Tages, über die das Board Aussagen macht — billig.
+2. **Stempel unverändert → fertig.** Nichts kann sich geändert haben.
+3. **Stempel gehoben → jetzt das weite Fenster**, bis zum letzten Tag, über den
+   das Board etwas behauptet, `orderBy: lastModified`, `pageSize: 100`, und die
+   Regeln von vorher: erst `timeZone` vergleichen, jede Antwort mit
+   `nextPageToken` ist unbrauchbar, und kein „gelöscht" ohne Gegenprobe.
+
+**Einmal am Tag trotzdem das weite Fenster**, auch bei stillem Stempel — beim
+Morgen-Sweep nach der Nachtlücke und beim Tagesübergang. Grund: das Board trägt
+Aussagen über nächste Woche, und ein Stempel, den ich einmal verpasst habe,
+bleibt sonst für immer unentdeckt.
+
+**Newsletter-Liste, Nachtrag 02.10.:** `donotreply@jobalert.indeed.com` ·
+`info@trainingportal.co.za` (**südafrikanisches Studio-Marketing — sieht nach
+Virgin Active und nach Podcast-Studios aus, ist aber beides nicht.** Gelesen,
+bevor es einsortiert wurde.)
