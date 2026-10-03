@@ -3391,3 +3391,9 @@ say that they are…"*, also eine Antwort auf etwas von ihm.
 3. **Senden bleibt in jedem Fall verboten**, in Slack wie in der Mail.
 4. **Dass die Benachrichtigungsmail im Papierkorb liegt, sagt nichts darüber, ob
    die Nachricht in Slack gelesen ist.** Zwei verschiedene Systeme.
+
+**Newsletter-Liste, Nachtrag 03.10.:** `no-reply@email.claude.com` (Anthropics
+eigener Claude-Code-Rundbrief, an `info@`) · `zacsolomon@user.luma-mail.com`
+(Luma-Einladungen, *Austin Writers Social*; **nicht dieselbe Adresse wie
+`zac@atxwritingclub.com`** — ob dieselbe Person, ist offen) · `no-reply@reviews.io`
+(Bewertungsanfragen für fremde Marken, am 02.10. für „Soul") · `help@abacus.ai`.
