@@ -3399,3 +3399,27 @@ eigener Claude-Code-Rundbrief, an `info@`) · `zacsolomon@user.luma-mail.com`
 (Bewertungsanfragen für fremde Marken, am 02.10. für „Soul") · `help@abacus.ai` ·
 `hello@justinwelsh.me` (Rundbrief über Geschäftsaufbau, an `ynb@`, erster Eingang
 03.10. 07:10 Austin).
+
+═══════════════════════════════════════════════════════════════════════════════
+SALT ESCAPES: WAS AM 03.10. FESTSTEHT
+═══════════════════════════════════════════════════════════════════════════════
+
+**Mike hat am 03.10., 11:52 Austin geantwortet** — achtzehn Tage nach der
+Bewerbung vom 15.09. 18:29. Erste menschliche Reaktion von dort; die
+„You're in! Here's £200"-Mail vom 15.09. 21:51 war automatisch.
+
+1. **Er verweist auf die Karriereseite**, `salt-escapes.com/team/careers`.
+   Die Stelle heißt dort *marketing lead*, **ihr CMO** sichtet die Bewerbungen,
+   nicht Mike. Der Mail-Weg ist damit ausdrücklich nicht der Weg.
+2. **Mike und Amy sind „offline for the next month hosting retreats in Africa"**
+   — also bis etwa Anfang November nicht erreichbar.
+3. **Nur Mike hat geantwortet.** Amy (mit angeschrieben 15.09. 18:29) und Jared
+   (15.09. 18:32) nicht.
+4. **Kein Datum, keine Frist genannt.** Der nächste Schritt liegt bei Yannick und
+   hat keine Uhr. Nicht drängen, nicht einordnen, nicht empfehlen.
+5. Bewerbungen für ihn selbst sind die **dritte Mailart** (neben Gastanfragen und
+   Sponsorenanfragen) und bleiben getrennt vom Databank, der für Gäste ist.
+   Casa Buho gehört in dieselbe Reihe.
+
+*Gefunden, weil der Betreff bekannt aussah und der Faden trotzdem ganz gelesen
+wurde — die Regel vom 01.10., zum ersten Mal mit Ertrag angewandt.*
