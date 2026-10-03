@@ -3396,4 +3396,6 @@ say that they are…"*, also eine Antwort auf etwas von ihm.
 eigener Claude-Code-Rundbrief, an `info@`) · `zacsolomon@user.luma-mail.com`
 (Luma-Einladungen, *Austin Writers Social*; **nicht dieselbe Adresse wie
 `zac@atxwritingclub.com`** — ob dieselbe Person, ist offen) · `no-reply@reviews.io`
-(Bewertungsanfragen für fremde Marken, am 02.10. für „Soul") · `help@abacus.ai`.
+(Bewertungsanfragen für fremde Marken, am 02.10. für „Soul") · `help@abacus.ai` ·
+`hello@justinwelsh.me` (Rundbrief über Geschäftsaufbau, an `ynb@`, erster Eingang
+03.10. 07:10 Austin).
