@@ -3458,3 +3458,28 @@ die *Suche nach Änderungen*, nicht für eine *Gegenprobe zu einer Behauptung*.
 (Salt Escapes) gelesen **und mit `STARRED` markiert**, während er drei Rundbriefe
 in derselben Minute ungeöffnet in den Papierkorb gelegt hat. `STARRED` heißt
 „das hebe ich mir auf" — mehr wird daraus nicht abgeleitet.
+
+═══════════════════════════════════════════════════════════════════════════════
+ER BAUT ABENDS UM — UND DANN KIPPT EINE AUSSAGE ÜBER DIE VERGANGENHEIT (03.10.)
+═══════════════════════════════════════════════════════════════════════════════
+
+Sa 03.10., **16:08 Austin**: drei Änderungen im Privatkalender in 29 Sekunden.
+*Rob & Ryan* von Fr auf **Mo 05.10. 11:00–12:00**, *Monatsrückblick* von heute
+12:00–14:00 auf **Mo 09:00–11:00**, und die *Artist-Date*-Instanz von **So 04.10.
+ist verschwunden** (Gegenprobe: 11.10. und 18.10. stehen, die Serie ist
+auffindbar; Silent Day, Rest Day, Morning Routine für Sonntag stehen auch).
+
+**Zwei Regeln daraus:**
+
+1. **Ein leeres Tagesfenster ist ein Signal, kein Nichts.** Heute kam der
+   Privatkalender fürs Tagesfenster leer zurück, obwohl dort der
+   *Monatsrückblick* stand. Das war der erste Hinweis auf den Umbau. Wenn ein
+   Fenster, das vorher etwas hatte, leer zurückkommt: **sofort das weite
+   Fenster**, nicht weiterziehen.
+2. **Wenn er einen Block verschiebt, kippt auch eine Board-Aussage über die
+   Vergangenheit.** *Rob & Ryan* stand im Freitagsbalken und in der Begrüßung
+   („ob es stattgefunden hat, steht in keinem Feld"). Nach dem Verschieben ist es
+   **derselbe Eintrag an einem neuen Tag** — der Freitag hatte ihn dann nie.
+   Also: bei jeder Verschiebung **auch `var EV` und die Rückblickszeilen prüfen**,
+   nicht nur die kommenden Uhren. Dritter Fall dieser Art (nach dem FIR-Block und
+   dem Donnerstagsblock *Rob & Ryan* von Mittwoch).
