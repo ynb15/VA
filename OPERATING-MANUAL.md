@@ -3400,6 +3400,11 @@ eigener Claude-Code-Rundbrief, an `info@`) · `zacsolomon@user.luma-mail.com`
 `hello@justinwelsh.me` (Rundbrief über Geschäftsaufbau, an `ynb@`, erster Eingang
 03.10. 07:10 Austin).
 
+**Kein Rundbrief, aber derselbe Umgang:** `dmarcreport@microsoft.com` (erster
+Eingang 03.10. 12:43 Austin) läuft wie `noreply-dmarc-support@google.com` direkt
+in `Label_2`, also von seinem Filter abgefangen und nie im Postfach. Maschinen-
+berichte dieser Art werden gezählt und nicht weiter angefasst.
+
 ═══════════════════════════════════════════════════════════════════════════════
 SALT ESCAPES: WAS AM 03.10. FESTSTEHT
 ═══════════════════════════════════════════════════════════════════════════════
