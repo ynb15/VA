@@ -3428,3 +3428,33 @@ Bewerbung vom 15.09. 18:29. Erste menschliche Reaktion von dort; die
 
 *Gefunden, weil der Betreff bekannt aussah und der Faden trotzdem ganz gelesen
 wurde — die Regel vom 01.10., zum ersten Mal mit Ertrag angewandt.*
+
+═══════════════════════════════════════════════════════════════════════════════
+WAS ER AM 03.10. SELBST GESCHRIEBEN HAT: DC UND DER VORGEZOGENE RÜCKFLUG
+═══════════════════════════════════════════════════════════════════════════════
+
+Mail an **Ken Stern**, Sa 03.10. 15:19 Austin (`2026-10-03T20:19:40Z`,
+Thread `1a07251483345f77`, Message `1a1036c23627f1ef`), Antwort auf Kens
+Feedback vom 20.09.:
+
+1. **„I'm now heading back to South Africa earlier than planned to do my rehab
+   over there."** Der Rückflug ist **vorgezogen**, Begründung Rehab nach dem
+   Motorradunfall. **Kein Datum.** Was das für den 17.10. bedeutet, den er Luis
+   gegenüber als Rückflugwochenende genannt hat, ist damit **offen** — nicht
+   auflösen, nicht raten.
+2. **„our travels are bringing us through DC this Thursday"** — also
+   **Do 08.10. in Washington DC**, mit seiner Verlobten („her first time in DC").
+3. Er hat Ken **Frühstück, Mittag oder Kaffee angeboten, ohne Uhrzeit.** Das
+   Treffen liegt bei Ken. Nicht nachfassen.
+4. **Im Kalender steht zu Do 08.10. und Fr 09.10. auf beiden Kalendern nichts** —
+   kein Flug, kein DC. Festgestellt, **nichts eingetragen.**
+
+**Regel, die daraus folgt:** eine Behauptung über ein Datum, die aus seiner Post
+kommt, wird **gegen den Kalender geprüft** — auch wenn der Kalenderstempel
+unverändert ist. Die Regel „Stempel unverändert → kein weites Fenster" gilt für
+die *Suche nach Änderungen*, nicht für eine *Gegenprobe zu einer Behauptung*.
+
+**Und:** der Stern ist seine Handschrift. Am 03.10. hat er Mikes Antwort
+(Salt Escapes) gelesen **und mit `STARRED` markiert**, während er drei Rundbriefe
+in derselben Minute ungeöffnet in den Papierkorb gelegt hat. `STARRED` heißt
+„das hebe ich mir auf" — mehr wird daraus nicht abgeleitet.
