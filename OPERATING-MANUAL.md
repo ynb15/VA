@@ -3502,3 +3502,21 @@ auffindbar; Silent Day, Rest Day, Morning Routine für Sonntag stehen auch).
    Also: bei jeder Verschiebung **auch `var EV` und die Rückblickszeilen prüfen**,
    nicht nur die kommenden Uhren. Dritter Fall dieser Art (nach dem FIR-Block und
    dem Donnerstagsblock *Rob & Ryan* von Mittwoch).
+
+═══════════════════════════════════════════════════════════════════════════════
+DER GESCHÄFTSKALENDER HEBT SEINEN STEMPEL VON SELBST (STAND 04.10.)
+═══════════════════════════════════════════════════════════════════════════════
+
+**Zehn Fälle** bis 04.10. 18:02, in denen der kalenderweite `updated`-Stempel
+gesprungen ist, **ohne dass im weiten Fenster ein Termin angefasst war** —
+`timeZone` jedes Mal unverändert, kein `nextPageToken`. Acht davon auf
+**`ynb@yannick-noah.com` (geschäftlich)**, zwei auf dem privaten.
+Am Wochenende 03./04.10. allein drei, alle geschäftlich (Sa 20:01, So 16:20,
+So 17:06 Austin), zuletzt nur eine Stunde auseinander.
+
+**Umgang, unverändert:** Stempel gehoben → **weites Fenster ziehen**
+(`orderBy: lastModified`, `pageSize: 100`, `timeZone` vergleichen) → wenn die
+jüngste Termin-Änderung älter ist als der Stempel, ist es ein stempelloser Fall:
+**eine Zeile ins Log, nichts aufs Board, nie „gelöscht" nennen.** Die Prüfung
+wird trotzdem jedes Mal gemacht — der eine Fall, der Folgen hatte (Sa 16:08,
+privat), sah im Stempel genauso aus wie die anderen zehn.
