@@ -3400,6 +3400,11 @@ eigener Claude-Code-Rundbrief, an `info@`) · `zacsolomon@user.luma-mail.com`
 `hello@justinwelsh.me` (Rundbrief über Geschäftsaufbau, an `ynb@`, erster Eingang
 03.10. 07:10 Austin).
 
+**Nachtrag 04.10., zweiter:** `kontakt@vivaconagua.org` (*Viva con Agua de Sankt
+Pauli e.V.*, Hamburg, an `info@`; erster Eingang 04.10. 10:53 Austin, Buchwerbung
+mit **unersetzten Platzhaltern** `{{ contact.FIRSTNAME }}` — Massenverteiler,
+keine Ansprache).
+
 **Nachtrag 04.10.:** `info@mail.freedom-writer.de` (deutscher Werbe-Rundbrief an
 `info@`, erster Eingang 04.10. 04:07 Austin; **nicht dieselbe Adresse wie
 `willkommen@mail.freedom-founder.com`** — `freedom-writer.de` gegen
