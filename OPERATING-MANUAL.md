@@ -3400,6 +3400,12 @@ eigener Claude-Code-Rundbrief, an `info@`) · `zacsolomon@user.luma-mail.com`
 `hello@justinwelsh.me` (Rundbrief über Geschäftsaufbau, an `ynb@`, erster Eingang
 03.10. 07:10 Austin).
 
+**Nachtrag 04.10., dritter:** `erick@shimmersurfing.com` (*Feasting Friday*,
+**an `ynb@`**; erster Eingang 04.10. 12:38 Austin). **Sieht persönlich aus, ist
+aber ein Rundbrief** — Versand über Kit (`kit-mail3.com`), Abmeldelink,
+Postfachadresse in Seattle. *Merkregel: eine Adresse mit Vornamen beweist nichts;
+der Fuß der Mail tut es.*
+
 **Nachtrag 04.10., zweiter:** `kontakt@vivaconagua.org` (*Viva con Agua de Sankt
 Pauli e.V.*, Hamburg, an `info@`; erster Eingang 04.10. 10:53 Austin, Buchwerbung
 mit **unersetzten Platzhaltern** `{{ contact.FIRSTNAME }}` — Massenverteiler,
