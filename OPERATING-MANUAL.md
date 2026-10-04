@@ -3400,6 +3400,9 @@ eigener Claude-Code-Rundbrief, an `info@`) · `zacsolomon@user.luma-mail.com`
 `hello@justinwelsh.me` (Rundbrief über Geschäftsaufbau, an `ynb@`, erster Eingang
 03.10. 07:10 Austin).
 
+**Nachtrag 04.10., vierter:** `hello@mail.apollo.io` (Marketing-Adresse von
+Apollo.io, an `ynb@`; erster Eingang 04.10. 16:28 Austin).
+
 **Nachtrag 04.10., dritter:** `erick@shimmersurfing.com` (*Feasting Friday*,
 **an `ynb@`**; erster Eingang 04.10. 12:38 Austin). **Sieht persönlich aus, ist
 aber ein Rundbrief** — Versand über Kit (`kit-mail3.com`), Abmeldelink,
