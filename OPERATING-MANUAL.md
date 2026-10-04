@@ -3400,6 +3400,11 @@ eigener Claude-Code-Rundbrief, an `info@`) · `zacsolomon@user.luma-mail.com`
 `hello@justinwelsh.me` (Rundbrief über Geschäftsaufbau, an `ynb@`, erster Eingang
 03.10. 07:10 Austin).
 
+**Nachtrag 04.10.:** `info@mail.freedom-writer.de` (deutscher Werbe-Rundbrief an
+`info@`, erster Eingang 04.10. 04:07 Austin; **nicht dieselbe Adresse wie
+`willkommen@mail.freedom-founder.com`** — `freedom-writer.de` gegen
+`freedom-founder.com`, ob dieselbe Firma, ist offen).
+
 **Kein Rundbrief, aber derselbe Umgang:** `dmarcreport@microsoft.com` (erster
 Eingang 03.10. 12:43 Austin) läuft wie `noreply-dmarc-support@google.com` direkt
 in `Label_2`, also von seinem Filter abgefangen und nie im Postfach. Maschinen-
