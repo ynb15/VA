@@ -3520,3 +3520,104 @@ jüngste Termin-Änderung älter ist als der Stempel, ist es ein stempelloser Fa
 **eine Zeile ins Log, nichts aufs Board, nie „gelöscht" nennen.** Die Prüfung
 wird trotzdem jedes Mal gemacht — der eine Fall, der Folgen hatte (Sa 16:08,
 privat), sah im Stempel genauso aus wie die anderen elf.
+
+═══════════════════════════════════════════════════════════════════════════════
+VOICE — DAS ENGLISCHE REGISTER, VIER REGELN AUS DER WOCHE 27.09.–05.10.
+═══════════════════════════════════════════════════════════════════════════════
+
+Aus neun vollständig gelesenen Sent-Threads. Alle neun englisch, alle neun
+Follow-ups. **Regeln, keine Anekdoten:**
+
+1. **Zwei Begrüßungen für zwei Register.** `Cheers <Vorname>,` im Cold Pitch und
+   im formellen Thread. `Howdy <Vorname>,` im warmen Wiederanknüpfen
+   („Howdy Aubert, Been a few months"). Nie „Hi", nie „Dear".
+
+2. **Nach langem Schweigen benennt er die Lücke selbst — und entschuldigt sich
+   nicht.** *„Been a few months – just wanted to reconnect and send some warmth
+   your way"*, danach sofort ein Geschenk (ein Name, ein Link, eine Nachricht).
+   Kein „sorry for the late reply", kein Grund, keine Erklärung.
+   → In einem Follow-up-Entwurf: **ein Nebensatz für die Lücke, dann geben.**
+
+3. **Er gibt, bevor er ablehnt oder bittet.** An Zac: erst die Absage zur
+   Quartalsbindung, dann *„But I do have something for you in return"* und der
+   Podcast. Ein Nein steht nie allein im Absatz.
+
+4. **Eine unbequeme Wahrheit kommt vorne hin, nicht hinten.**
+   *„I'd rather be honest about that upfront than sign up and drop out halfway
+   through."* → In einem Entwurf: die Einschränkung **vor** das Angebot setzen.
+
+5. **Wenn er um Geld oder Nachsicht bittet, nennt er den Grund einmal, flach,
+   ohne Flehen.** Arztrechnungen bei der ATX-Rückerstattung; Nachsicht beim
+   $250-Honorar bei Media Pouch. **Ein Satz Grund, kein zweiter Satz
+   Rechtfertigung.** Wer in einem Entwurf nachlegt, schreibt nicht in seiner
+   Stimme.
+
+6. **Der Cold Pitch öffnet mit einer Zeile von IHNEN, kursiv, bevor er sagt,
+   wer er ist.** Belegt über das ganze Outreach-Doc (87 Pitches): erst der
+   Beweis, dass er zugehört hat, dann die Selbstvorstellung.
+   Reihenfolge nie umdrehen.
+
+**Deutsch diese Woche: nichts.** Zwischen 27.09. und 05.10. ist keine deutsche
+Mail rausgegangen. `voice/german-register.md` bleibt deshalb unverändert —
+das ist der Befund, nicht eine Lücke in der Prüfung.
+
+═══════════════════════════════════════════════════════════════════════════════
+ZEITZONEN AUSSERHALB VON CENTRAL: ZWEI REGELN (STAND 05.10.)
+═══════════════════════════════════════════════════════════════════════════════
+
+Aus der September-Prüfung des Geschäftskalenders (73 Termine).
+
+**Alle 73 September-Termine stehen auf Offset −05:00**, fast alle mit Label
+`America/Chicago`. Kein einziger auf einem Mountain-Offset. Zwei waren aber
+körperlich außerhalb von Central:
+
+- **Ian Gardner, Do 17.09., `112 N Central Ave #M18, Phoenix, AZ 85004`.**
+  Eintrag `12:00:00-05:00`. Arizona ist **MST ohne Sommerzeit, UTC−07:00** —
+  im September **zwei** Stunden hinter Austin. 12:00 Austin = **10:00 Phoenix**.
+- **Rick Strassman, Fr 18.09., Ort „Albuquerque".** Eintrag `11:30:00-05:00`.
+  Albuquerque war MDT, UTC−06:00. = **10:30 Albuquerque**, verabredet war
+  **10–12 lokal**.
+
+**Regel 1 — Arizona ist nicht Mountain Time, es ist Mountain *Standard* Time.**
+Von März bis November liegt Phoenix **zwei** Stunden hinter Austin, nicht eine.
+Boulder und Albuquerque liegen in derselben Jahreszeit **eine** Stunde hinter
+Austin. Wer Arizona und Colorado in denselben Topf wirft, liegt um eine Stunde
+daneben.
+
+**Regel 2 — `Location` in der Notion-Databank ist der Wohnort des Gastes, nicht
+die Zone der Aufnahme.** Gegenprobe: Matt Defina steht unter *Colorado*, Ken
+Stern ist aus DC — **beide wurden in Austin aufgenommen**, `Just Push Record
+Studios, 908 East 5th Street #114C, Austin, TX 78702`. Bei beiden ist Central
+richtig. Als Zeitzonen-Prüfung ist das Feld unbrauchbar. **Es zählt das
+`location`-Feld des Kalendertermins** — und wenn das leer ist, ist die Zone
+nicht prüfbar und wird nicht behauptet (So 27.09., Whitney Wheelock).
+
+**Woran man einen in Central getippten Fremdzonen-Termin erkennt:** die runde
+Uhrzeit steht in Central, in der Zone des Gastes ist sie unrund.
+09:00 Austin → 08:00 Boulder. 11:30 Austin → 10:30 Albuquerque. 12:00 Austin →
+10:00 Phoenix. Eine mit einem Gast verabredete Zeit ist **in dessen Zone** rund.
+
+═══════════════════════════════════════════════════════════════════════════════
+DAS OUTREACH-DOC IN DRIVE IST FÜR MICH NUR LESBAR (STAND 05.10.)
+═══════════════════════════════════════════════════════════════════════════════
+
+Der wöchentliche Trigger verlangt „Neue Outreaches ins Doc übertragen". **Das
+kann ich mit den vorhandenen Werkzeugen nicht.** Der Drive-Connector hat für
+eine bestehende Datei nur `update_file`, und das ändert ausschließlich **Titel
+und Ordner** — keinen Inhalt. Inhalt schreibt nur `create_file`, also nur in ein
+**neues** Dokument.
+
+Das Outreach-Doc (`1R11m4Lt81v3YO0bKuyNybKUZQ_THgREEoiYzYA_eOVg`, 204.157
+Zeichen, 87 Pitches) neu anzulegen und das alte zu ersetzen wäre genau das
+Überschreiben, das verboten ist. **Also nicht.**
+
+**Umgang:** Die Zeilen und Daten, die ins Doc gehören, werden im
+Wochenabgleich unter `actuals/` und im Wochendokument in Drive
+**einfügefertig** hingelegt. Einfügen muss er. Das ist beim Abgleich jedes Mal
+so zu sagen — nicht als Entschuldigung, sondern damit er weiß, dass das Doc
+nicht von selbst mitwächst.
+
+Außerdem: ein `read_file_content` auf dieses Doc **sprengt das Tool-Limit**
+(207.382 Zeichen Rohantwort). Es landet in `…/tool-results/*.txt` als JSON
+`{fileContent, title, viewUrl}` und wird mit `python3`/`jq` aus der Datei
+geholt, nie mit `Read`.

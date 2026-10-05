@@ -597,3 +597,19 @@ Drei Tage nach dem Dossier an Gabby fasst er nach. Vier Zeilen, kein Anhang, kei
 3. **Der Missions-Satz wird ersetzt.** Statt *"I'm not looking for a job, I'm looking for a mission"* steht dort *"I'm willing to do whatever it takes to earn my seat at the table."* Aus einer Selbstbeschreibung wird ein Angebot.
 
 **Regel:** Sein Nachfassen ist keine gekürzte Fassung der ersten Mail. Er tauscht das Argument aus — von *wer ich bin* zu *was ich für euch schlage* — und er nimmt Zugeständnisse still zurück, wenn sie sich erledigt haben. Wenn ich je einen Nudge für ihn entwerfe: nicht zusammenfassen, sondern das eine neue Argument suchen.
+
+---
+
+## 05.10. — Wochenabgleich 27.09.–05.10.: keine deutsche Mail
+
+`in:sent newer_than:8d` → neun Threads, **alle neun englisch**, alle neun
+Follow-ups. In diesen acht Tagen ist **keine deutsche Mail rausgegangen** —
+keine Arbeitsmail, keine Eskalation, kein Entwurf, den er umgeschrieben hätte.
+
+Also keine neue Regel. Ich schreibe das trotzdem hin, damit beim nächsten
+Abgleich klar ist: diese Woche wurde geprüft und war leer. Ein fehlender
+Eintrag heißt sonst nicht „nichts gefunden", sondern „nicht nachgesehen" —
+und das wäre der falsche Schluss.
+
+Die vier englischen Regeln der Woche stehen in der VOICE-Sektion der Manual
+(Abschnitt *„DAS ENGLISCHE REGISTER, VIER REGELN AUS DER WOCHE 27.09.–05.10."*).
