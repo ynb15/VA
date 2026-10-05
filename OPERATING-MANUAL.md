@@ -3507,7 +3507,7 @@ auffindbar; Silent Day, Rest Day, Morning Routine für Sonntag stehen auch).
 DER GESCHÄFTSKALENDER HEBT SEINEN STEMPEL VON SELBST (STAND 04.10.)
 ═══════════════════════════════════════════════════════════════════════════════
 
-**Zwölf Fälle** bis 05.10. 14:03 (elf davon bis 04.10. 20:02), in denen der kalenderweite `updated`-Stempel
+**Dreizehn Fälle** bis 05.10. 18:03 (elf davon bis 04.10. 20:02; zwei allein am 05.10., um 13:26 und 17:30), in denen der kalenderweite `updated`-Stempel
 gesprungen ist, **ohne dass im weiten Fenster ein Termin angefasst war** —
 `timeZone` jedes Mal unverändert, kein `nextPageToken`. Acht davon auf
 **`ynb@yannick-noah.com` (geschäftlich)**, zwei auf dem privaten.
@@ -3879,3 +3879,22 @@ in der Form „X ist durch": der Monatsrückblick (geschrieben 10:03, falsch ab
 4. **Historische Zeilen werden nicht umgeschrieben, sondern mit einem datierten
    NACHTRAG versehen.** Der alte Stand ist der Beleg; er darf nur nicht als
    aktuell gelesen werden.
+
+═══════════════════════════════════════════════════════════════════════════════
+PSYCHEDELICS TODAY IST NICHT JOE MOORE (05.10., 17:26)
+═══════════════════════════════════════════════════════════════════════════════
+
+`info@psychedelicstoday.com` schickt an `info@yannickbernard.com` einen
+**Rundbrief** (*„Hey Friends, A few quick things before the news…"*, Vital
+Conference Breckenridge, FDA-Kommentarfrist, Horizons).
+
+**Joe Moore hat Psychedelics Today mitgegründet.** Die Wache lautet „Joe Moore,
+seit 21.09. still" — und genau deshalb ist dieser Absender eine Falle: er sieht
+aus wie Bewegung in der Sache und ist ein Massenverteiler.
+
+**Regel:** Eine Mail von der **Organisation** eines Kontakts ist keine Antwort
+**des** Kontakts. Die Wache bleibt offen, bis eine Nachricht von seiner
+persönlichen Adresse kommt. Dasselbe gilt für
+`bariweiss+…@substack.com` (Arthur Brooks steht in der Databank) und für
+`info@getsoul.com` / `no-reply@reviews.io` zum Soul-Paket: **der Absender
+beweist nur sich selbst.**
