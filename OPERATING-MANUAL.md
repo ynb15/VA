@@ -3715,3 +3715,42 @@ beweist nichts, der Fuß der Mail beweist es.** Dazu
 **Belegte Abbuchung 05.10.:** Anthropic, `Max plan - 5x`, 5.10.–5.11.2026,
 **100,00 $**, bezahlt, Karte endet `9299`, Beleg `2191-1936-6207`, Rechnung
 `CRDPBPFB-0008`. Nichts zu tun, aber belegt.
+
+═══════════════════════════════════════════════════════════════════════════════
+MEDIA POUCH: DIE 250 $ SIND ENTSCHIEDEN (05.10., 11:51)
+═══════════════════════════════════════════════════════════════════════════════
+
+Ryans Antwort auf Yannicks Bitte um Nachsicht vom 02.10. — nach drei Tagen:
+
+> *„File recovery on Google Drive isn't a simple ‚undelete' click. When files
+> expire out of our 14-day window, we have to restore the entire day's worth of
+> data from backup, which pulls back every file from every session that day, not
+> just yours. That's typically **500GB-1TB+** of data per restore…"*
+>
+> *„The $250 fee reflects the actual cost of doing this, not a markup. **We apply
+> it uniformly across all clients so I don't end up making subjective calls on
+> who gets exceptions.**"*
+>
+> *„**The $250 recovery stays open to you within the 30-day window if you'd like
+> to proceed.**"*
+
+**Stand, der bis zum Fensterende gilt (etwa So 11.10.):**
+- **Kein Rabatt.** Die Bitte ist abgelehnt, mit Begründung, ohne Gereiztheit.
+- **Das Angebot steht**, 250 $, *„not guaranteed"*.
+- **Beauftragt ist nichts.** Er wartet auf ein Ja oder Nein von Yannick.
+- Inhalt: die Aufnahme vom **11.09. mit Logan Gonzalez**, keine zweite Kopie.
+  Nach dem Fenster: *„unrecoverable"*.
+
+**Nicht mehr sagen:** „Frist bei Ryan", „der Ball liegt bei Ryan". Beides war
+falsch. Richtig ist: **die Entscheidung liegt bei Yannick, mit Datum.**
+
+**Der Entwurf im Board vom 01.10. ist überholt** — er bat um Nachsicht, und
+darauf liegt jetzt eine Antwort. Nicht erneut anbieten.
+
+**Register-Beobachtung, zum Dienstleisterton:** Er hat **einmal** gebeten, flach,
+mit einem Satz Grund (Arztrechnungen) und ohne Nachlegen. Die Antwort war ein
+sachliches Nein mit Kostenrechnung. **Das bestätigt die Regel vom
+Wochenabgleich:** ein Satz Grund, kein zweiter Satz Rechtfertigung — und das
+Ergebnis hängt dann nicht am Ton, sondern an der Police der Gegenseite. Wer in
+einem Entwurf für ihn nachlegen würde, würde nichts gewinnen und den Ton
+verlieren.
