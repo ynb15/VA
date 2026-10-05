@@ -3507,7 +3507,7 @@ auffindbar; Silent Day, Rest Day, Morning Routine für Sonntag stehen auch).
 DER GESCHÄFTSKALENDER HEBT SEINEN STEMPEL VON SELBST (STAND 04.10.)
 ═══════════════════════════════════════════════════════════════════════════════
 
-**Elf Fälle** bis 04.10. 20:02, in denen der kalenderweite `updated`-Stempel
+**Zwölf Fälle** bis 05.10. 14:03 (elf davon bis 04.10. 20:02), in denen der kalenderweite `updated`-Stempel
 gesprungen ist, **ohne dass im weiten Fenster ein Termin angefasst war** —
 `timeZone` jedes Mal unverändert, kein `nextPageToken`. Acht davon auf
 **`ynb@yannick-noah.com` (geschäftlich)**, zwei auf dem privaten.
@@ -3799,3 +3799,18 @@ Rundbriefliste ergänzt: `membership@livegevity.co` (*„This week at the club"*
 Wochenprogramm) und `no-reply@reviews.io` (Bewertungsbitte für *Soul*).
 **Zu letzterem die Regel:** eine Bewertungsbitte läuft nach Zeitplan und
 **beweist keine Lieferung**. Daraus nichts über das Soul-Paket ableiten.
+
+**Nachtrag 05.10. 14:03 — zwölfter Fall, und der erste an einem Werktag
+mitten in seiner Arbeit.** Geschäftlicher Stempel von `17:35:15Z` auf
+`18:26:57Z` (= 13:26 Austin). Weites Fenster 05.–20.10., `orderBy:
+lastModified`, kein `nextPageToken`, `timeZone` unverändert: der jüngste
+Termin-Stempel ist `17:35:15Z` (Walkers BMHQ-Kürzung von 12:35), also **älter
+als der kalenderweite Stempel**. Kein Termin trägt den neuen.
+
+**Was dieser Tag zusätzlich zeigt:** an demselben Kalender sind heute
+innerhalb von drei Stunden **drei echte Änderungen mit Termin-Stempel**
+gelaufen (10:55 Brendan Kane, 12:35 BMHQ, 12:36 privat Monatsrückblick) **und
+ein stempelloser Hub**. Die Unterscheidung ist also nicht theoretisch: der
+einzige Unterschied im Befund ist, ob im weiten Fenster ein Termin den neuen
+Stempel trägt. **Deshalb wird das weite Fenster jedes Mal gezogen, auch wenn
+die letzten elf Fälle folgenlos waren.**
