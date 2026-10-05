@@ -3754,3 +3754,48 @@ Wochenabgleich:** ein Satz Grund, kein zweiter Satz Rechtfertigung — und das
 Ergebnis hängt dann nicht am Ton, sondern an der Police der Gegenseite. Wer in
 einem Entwurf für ihn nachlegen würde, würde nichts gewinnen und den Ton
 verlieren.
+
+═══════════════════════════════════════════════════════════════════════════════
+DER MONATSRÜCKBLICK, DREIMAL IN 69 STUNDEN (STAND 05.10. 12:36)
+═══════════════════════════════════════════════════════════════════════════════
+
+Dieselbe Instanz `vnqdpuov5n6p4j7sjf4627o3vd_20260930T130000Z`:
+
+1. **Sa 03.10., 16:08** — von Samstag auf Mo 05.10., 09:00–11:00
+2. **Mo 05.10., 10:55** — auf Mo 05.10., 12:00–14:00
+3. **Mo 05.10., 12:36** — auf **Mi 07.10., 11:00–13:00**
+
+**Gegenprobe jedes Mal gemacht**, zuletzt mit weitem Fenster 05.10.–10.11.,
+`orderBy: lastModified`, `pageSize: 100`, kein `nextPageToken`: dieselbe
+Instanz-ID an einem neuen Tag, und die Serie bleibt auffindbar (nächste
+Instanz 30.10.). **Verschoben, nicht gelöscht.** Die Regel hat gehalten:
+*ein Tagesfenster, in dem ein Termin fehlt, ist ein Signal — und „gelöscht"
+wird nie ohne weites Fenster gesagt.*
+
+**Daraus für die Board-Praxis:** Bei einem Block, der sich innerhalb eines Tages
+mehrfach bewegt, ist jede Formulierung mit „heute" nach einer Stunde fragwürdig.
+Die Zeile auf dem Board nennt deshalb **Tag und Uhrzeit aus dem Feld**, nie
+„heute früh" oder „später".
+
+═══════════════════════════════════════════════════════════════════════════════
+BMHQ-FÜHRUNG: 30 STATT 50 MINUTEN (05.10., 12:35)
+═══════════════════════════════════════════════════════════════════════════════
+
+Walker hat `7g31dm928s7pq4gqtslvd0lupd` gekürzt (`updated 17:35:15Z`):
+**15:00–15:30 Austin = 13:00–13:30 San Francisco.** Startzeit unverändert, nur
+das Ende. Seine Mail eine Sekunde später: *„Geändert: Uhrzeit … 3PM – 3:30PM /
+Nordamerikanische Zentralzeit - Chicago"*.
+
+Vollständige Adresse jetzt im Feld: **660 Alabama St, San Francisco, CA 94110,
+USA.** Die Handlungsanweisung steht unverändert in der Beschreibung:
+*„Please text Walker upon arrival for him to let you in the front door"* —
+Nummer nur aus seiner Signatur, `415.717.4754`.
+
+**Lesefalle, einmal festgehalten:** Googles Einladungsmail enthält den Satz
+*„Ihre Anwesenheit ist optional."* Das ist **ein Feld der Einladung**, keine
+Aussage des Organisators. Nie als Walkers Wort zitieren.
+
+Rundbriefliste ergänzt: `membership@livegevity.co` (*„This week at the club"*,
+Wochenprogramm) und `no-reply@reviews.io` (Bewertungsbitte für *Soul*).
+**Zu letzterem die Regel:** eine Bewertungsbitte läuft nach Zeitplan und
+**beweist keine Lieferung**. Daraus nichts über das Soul-Paket ableiten.
