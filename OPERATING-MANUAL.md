@@ -3667,3 +3667,51 @@ Nebenbei bestätigt derselbe Faden ein zweites Mal, in Yannicks eigenen Worten
 vom 03.10.: *„I got into a motorcycle accident in **Colorado** two weeks ago, so
 I'm now heading back to **South Africa** earlier than planned to do my rehab over
 there."* Der Widerspruch zum 01.10. („back in Germany") bleibt damit stehen.
+
+═══════════════════════════════════════════════════════════════════════════════
+FÜNFTER FALL: EINE AUSSAGE ÜBER DIE VERGANGENHEIT MIT EINER STUNDE
+HALBWERTSZEIT (05.10., 10:55)
+═══════════════════════════════════════════════════════════════════════════════
+
+Um **10:55 Austin** zwei Verschiebungen, acht Sekunden auseinander, auf beiden
+Kalendern:
+
+- **privat** `updated 2026-10-05T15:55:50Z` — *Monatsrückblick* von heute
+  **09:00–11:00 auf heute 12:00–14:00**
+- **geschäftlich** `updated 2026-10-05T15:55:58Z` — *Follow-Up: Brendan Kane*
+  von **Mi 07.10. 09:00–10:00 auf Mi 07.10. 14:00–15:00**
+
+Beide tragen den Stempel selbst, `timeZone` unverändert, kein
+`nextPageToken` — **kein stempelloser Fall.**
+
+**Was daran neu ist:** Im Sweep um 10:03 hatte ich geschrieben
+*„Monatsrückblick ist durch"*. Das war nach der Uhr richtig. Eine Stunde später
+war es falsch — der Block stand nicht mehr in der Vergangenheit, sondern wieder
+in der Zukunft.
+
+**Regel, geschärft:** Eine Aussage der Form „X ist durch" / „X hat
+stattgefunden" ist **keine Tatsache, sondern eine Ableitung aus zwei Feldern**
+(Uhrzeit + aktuelle Zeit), und das erste Feld kann sich rückwirkend ändern.
+Darum:
+
+1. **Nie „hat stattgefunden" schreiben, wenn nur die Uhr vorbei ist.** Der
+   Kalender sagt, wann etwas *geplant* war, nie, ob es gelaufen ist. Richtig
+   ist „die Zeit dafür ist vorbei" — oder gar nichts.
+2. **Bei jeder Verschiebung auch die Sweep-Abschnitte desselben Tages prüfen**,
+   nicht nur Board-Zeilen. Der Fehler stand diesmal im eigenen Protokoll von
+   vor einer Stunde.
+3. **Historische Board-Zeilen werden nicht umgeschrieben, sondern mit einem
+   datierten Nachtrag versehen** („NACHTRAG 05.10. 10:55 — dieser Stand gilt
+   nicht mehr"). Der alte Stand ist der Beleg; er darf nur nicht als aktuell
+   gelesen werden.
+
+Rundbriefliste ergänzt: **`kj@sgnl.so`** — sieht wie eine persönliche Adresse
+aus, ist ein Kit/ConvertKit-Rundbrief (Abmeldelink `unsubscribe.kit-mail3.com`,
+Postadresse *131 Continental Dr Suite 305, Newark, DE 19713*), Werbung für
+einen *AI Builders Club*. Zweiter Beleg für die Regel: **die Vorname-Adresse
+beweist nichts, der Fuß der Mail beweist es.** Dazu
+`bariweiss+…@substack.com`.
+
+**Belegte Abbuchung 05.10.:** Anthropic, `Max plan - 5x`, 5.10.–5.11.2026,
+**100,00 $**, bezahlt, Karte endet `9299`, Beleg `2191-1936-6207`, Rechnung
+`CRDPBPFB-0008`. Nichts zu tun, aber belegt.
