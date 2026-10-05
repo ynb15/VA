@@ -3507,16 +3507,16 @@ auffindbar; Silent Day, Rest Day, Morning Routine für Sonntag stehen auch).
 DER GESCHÄFTSKALENDER HEBT SEINEN STEMPEL VON SELBST (STAND 04.10.)
 ═══════════════════════════════════════════════════════════════════════════════
 
-**Zehn Fälle** bis 04.10. 18:02, in denen der kalenderweite `updated`-Stempel
+**Elf Fälle** bis 04.10. 20:02, in denen der kalenderweite `updated`-Stempel
 gesprungen ist, **ohne dass im weiten Fenster ein Termin angefasst war** —
 `timeZone` jedes Mal unverändert, kein `nextPageToken`. Acht davon auf
 **`ynb@yannick-noah.com` (geschäftlich)**, zwei auf dem privaten.
-Am Wochenende 03./04.10. allein drei, alle geschäftlich (Sa 20:01, So 16:20,
-So 17:06 Austin), zuletzt nur eine Stunde auseinander.
+Am Wochenende 03./04.10. allein **vier**, alle geschäftlich (Sa 20:01, So 16:20,
+So 17:06, So 19:13 Austin) — am Sonntag drei in gut drei Stunden.
 
 **Umgang, unverändert:** Stempel gehoben → **weites Fenster ziehen**
 (`orderBy: lastModified`, `pageSize: 100`, `timeZone` vergleichen) → wenn die
 jüngste Termin-Änderung älter ist als der Stempel, ist es ein stempelloser Fall:
 **eine Zeile ins Log, nichts aufs Board, nie „gelöscht" nennen.** Die Prüfung
 wird trotzdem jedes Mal gemacht — der eine Fall, der Folgen hatte (Sa 16:08,
-privat), sah im Stempel genauso aus wie die anderen zehn.
+privat), sah im Stempel genauso aus wie die anderen elf.
