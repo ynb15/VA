@@ -3621,3 +3621,49 @@ Außerdem: ein `read_file_content` auf dieses Doc **sprengt das Tool-Limit**
 (207.382 Zeichen Rohantwort). Es landet in `…/tool-results/*.txt` als JSON
 `{fileContent, title, viewUrl}` und wird mit `python3`/`jq` aus der Datei
 geholt, nie mit `Read`.
+
+═══════════════════════════════════════════════════════════════════════════════
+ER REIST MIT SEINER VERLOBTEN (BELEGT 05.10.)
+═══════════════════════════════════════════════════════════════════════════════
+
+Aus seiner eigenen Mail an Ken Stern vom **Sa 03.10., 15:19**:
+*„I've got my fiancée with me and it's her first time in DC, so we'd be thrilled
+to see a bit of it."* Ken schreibt am **05.10., 09:22** zurück von
+*„you and your fiancée on Thursday"*.
+
+**Zwei Belege, beide aus dem Faden, keiner meine Auslegung.** Das stand bei mir
+bisher nirgends — ich habe seine Reise die ganze Zeit als Einzelreise geführt.
+
+**Was daran hängt:** jede Planung, die eine Personenzahl braucht — Studios,
+Unterkunft, Flüge, Einladungen, Restaurants, die DC-Tipps, die Ken anbietet.
+**Nicht für eine Person rechnen.** Einen Namen nennt keiner der beiden Mails;
+ich erfinde keinen.
+
+**Regel daraus:** eine Tatsache über sein Leben kann in einem Satz stehen, der
+einem ganz anderen Zweck dient (hier: eine Terminbitte). Beim Lesen eines
+Fadens ist nicht nur die Bitte der Inhalt, sondern auch jeder Nebensatz, in dem
+er von sich erzählt.
+
+═══════════════════════════════════════════════════════════════════════════════
+KEN STERN, DONNERSTAG IN DC: ERLEDIGT (05.10., 09:22)
+═══════════════════════════════════════════════════════════════════════════════
+
+Seine Antwort, vollständig — vier Zeilen:
+
+> *„Hi Yannick - sorry to hear about your motorcycle accident. I hope the
+> injuries are not too serious.*
+> *Unfortunately I'm at a conference in **Boston Wednesday through Friday**, so
+> won't be able to visit with you and your fiancée on Thursday. Next time I hope*
+> *If you want any **DC tourist advice**, let me know"*
+
+**Zu:** die Wache „Ken Sterns Antwort auf Donnerstag", offen seit Sa 15:19.
+**Offen:** nur sein Angebot für DC-Tipps, ohne Uhr, nur wenn Yannick will.
+**Am Kalender ändert das nichts** — Do 08.10., Fr 09.10., Sa 10.10. bleiben auf
+beiden Kalendern leer. Nichts eintragen, nichts streichen.
+
+Die Mail liegt beim Sweep um 10:03 noch `UNREAD` im `INBOX`.
+
+Nebenbei bestätigt derselbe Faden ein zweites Mal, in Yannicks eigenen Worten
+vom 03.10.: *„I got into a motorcycle accident in **Colorado** two weeks ago, so
+I'm now heading back to **South Africa** earlier than planned to do my rehab over
+there."* Der Widerspruch zum 01.10. („back in Germany") bleibt damit stehen.
