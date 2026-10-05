@@ -3814,3 +3814,68 @@ ein stempelloser Hub**. Die Unterscheidung ist also nicht theoretisch: der
 einzige Unterschied im Befund ist, ob im weiten Fenster ein Termin den neuen
 Stempel trägt. **Deshalb wird das weite Fenster jedes Mal gezogen, auch wenn
 die letzten elf Fälle folgenlos waren.**
+
+═══════════════════════════════════════════════════════════════════════════════
+DER GESCHÄFTSKALENDER STEHT JETZT AUF LOS ANGELES (05.10., 16:40)
+═══════════════════════════════════════════════════════════════════════════════
+
+Das Feld `timeZone` von **`ynb@yannick-noah.com`** ist von
+`America/Chicago` auf **`America/Los_Angeles`** umgesprungen
+(`updated 2026-10-05T21:40:16Z`). **Zweiter Fall dieser Art** — der erste war
+am 01.10. um 11:48.
+
+**Die Zeitpunkte sind unverändert.** Gegengeprüft mit demselben weiten Fenster
+und `timeZone: America/Chicago`: jeder Termin kommt genau wie vorher, kein
+`updated` eines Termins hat sich bewegt. Ohne den Parameter kommt derselbe
+Termin mit Offset `−07:00` zurück: aus `15:00 −05:00` wird `13:00 −07:00` —
+**identischer Zeitpunkt, anderes Schild.**
+
+**VERFAHRENSREGEL, ab sofort:** Jede `list_events`-Abfrage auf den
+**Geschäftskalender** bekommt **`timeZone: America/Chicago`** mitgegeben.
+Sonst ist die Stunde im Feld nicht mehr die Austin-Stunde, und eine Zahl, die
+ohne Umrechnung aufs Board wandert, ist um zwei Stunden falsch.
+**Der private Kalender steht weiter auf `America/Chicago`** — die Umstellung
+betraf nur den geschäftlichen.
+
+**Das Board bleibt auf Austin-Zeit** und nennt San Francisco dazu, wie bisher.
+Umgestellt wird es nur, wenn er es sagt. Dass die Umstellung zur Reise nach
+San Francisco passt, ist **meine Vermutung**; wer sie gemacht hat, steht in
+keinem Feld.
+
+═══════════════════════════════════════════════════════════════════════════════
+SECHS VERSCHIEBUNGEN AN EINEM TAG — UND WAS DAS FÜR BOARD-SÄTZE HEISST (05.10.)
+═══════════════════════════════════════════════════════════════════════════════
+
+Montag, 05.10., chronologisch:
+
+| Uhrzeit | Was |
+|---|---|
+| 10:55 | *Monatsrückblick* heute 09:00–11:00 → heute 12:00–14:00 |
+| 10:55 | *Follow-Up: Brendan Kane* Mi 09:00–10:00 → Mi 14:00–15:00 |
+| 12:35 | *Tour of BMHQ* 15:00–15:50 → **15:00–15:30** (von Walker) |
+| 12:36 | *Monatsrückblick* → **Mi 07.10., 11:00–13:00** |
+| 13:26 | stempelloser Hub, geschäftlich (zwölfter Fall) |
+| 16:40 | `timeZone` geschäftlich → `America/Los_Angeles` |
+| 16:40 | *Rob & Ryan* heute 11:00–12:00 → **Sa 10.10., 12:00–13:00** |
+
+**Von den vier Uhren, mit denen der Tag begann, ist eine übrig** — und die
+wurde um 20 Minuten gekürzt.
+
+**Zwei eigene Aussagen sind an diesem Tag rückwirkend falsch geworden**, beide
+in der Form „X ist durch": der Monatsrückblick (geschrieben 10:03, falsch ab
+10:55) und *Rob & Ryan* (geschrieben 15:03 und 16:03, falsch ab 16:40).
+
+**Daraus, verbindlich:**
+
+1. **„Ist durch" / „hat stattgefunden" wird nicht mehr geschrieben.** Der
+   Kalender sagt, wann etwas *geplant* war. Zulässig ist nur **„die Zeit dafür
+   ist vorbei"** — oder gar nichts.
+2. **Nach jeder Verschiebung werden die Sweep-Abschnitte desselben Tages
+   mitgeprüft**, nicht nur die Board-Zeilen. Beide Fehler standen im eigenen
+   Protokoll.
+3. **„Tag X ist leer" ist eine Aussage mit Verfallsdatum.** Sie wird bei jeder
+   Verschiebung gegengeprüft — der Samstag war bis 16:40 leer und ist es
+   seitdem nicht.
+4. **Historische Zeilen werden nicht umgeschrieben, sondern mit einem datierten
+   NACHTRAG versehen.** Der alte Stand ist der Beleg; er darf nur nicht als
+   aktuell gelesen werden.
