@@ -4051,3 +4051,29 @@ steht noch da — Mi 07.10. *Monatsrückblick* 11:00–13:00 · Sa 10.10.
 *Artist Date* 15:00, *Rest Day*. **Nichts fehlt, nichts verschoben.**
 
 **Eine Zeile ins Log, nichts aufs Board, nicht „gelöscht" genannt.**
+
+═══════════════════════════════════════════════════════════════════════════
+DAS POSTFACH HAT SEINEN EIGENEN STEMPELLOSEN HUB: DIE `historyId`
+(erstmals belegt 06.10. zwischen 17:02 und 18:02 Austin)
+═══════════════════════════════════════════════════════════════════════════
+
+Zwischen zwei Durchgängen ist die `historyId` **nahezu aller** heutigen
+Threads gesprungen, bei **identischem** `labelIds`, `date` und `sizeEstimate`:
+Kingsbury `2223487` → `2223777`, Apollo `2223423` → `2223776`, Gevity
+`2223357` → `2223775`, Jentjens `2223300` → `2223774`, LinkedIn `2223239` →
+`2223773`, ATX `2223150` → `2223772`, Anthropic-Karte `2223042` → `2223771`,
+Glass' Nachricht `2223095` → `2223767`.
+
+**Nichts war gelesen, verschoben, etikettiert oder gelöscht.** Alle acht lagen
+davor und danach `UNREAD` im `INBOX`.
+
+**Die Regel, die daraus folgt — dieselbe wie beim Kalender:**
+*Ein mailboxweiter Zähler ist kein Ereignis.* Die `historyId` kann sich
+bewegen, ohne dass an einem einzelnen Objekt etwas anders ist. Verglichen
+werden **Absender, Zeit, `labelIds` und `resultCountEstimate`** — nie die
+`historyId`. Ein Sprung darin ist **eine Zeile ins Log, nichts aufs Board**,
+und wird **nicht** als neue oder geänderte Mail gemeldet.
+
+*Warum das überhaupt notiert wird: beim Kalender hat genau diese Verwechslung
+einmal zu einem falschen „gelöscht" geführt. Der Zähler des Postfachs
+verdient dieselbe Vorsicht, bevor er sie verdient.*
