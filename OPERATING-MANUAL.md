@@ -3507,7 +3507,7 @@ auffindbar; Silent Day, Rest Day, Morning Routine für Sonntag stehen auch).
 DER GESCHÄFTSKALENDER HEBT SEINEN STEMPEL VON SELBST (STAND 04.10.)
 ═══════════════════════════════════════════════════════════════════════════════
 
-**Dreizehn Fälle** bis 05.10. 18:03 (elf davon bis 04.10. 20:02; zwei allein am 05.10., um 13:26 und 17:30), in denen der kalenderweite `updated`-Stempel
+**Vierzehn Fälle** bis 06.10. 07:03 (elf davon bis 04.10. 20:02; zwei am 05.10. um 13:26 und 17:30, einer in der Nacht zum 06.10. um 23:57), in denen der kalenderweite `updated`-Stempel
 gesprungen ist, **ohne dass im weiten Fenster ein Termin angefasst war** —
 `timeZone` jedes Mal unverändert, kein `nextPageToken`. Acht davon auf
 **`ynb@yannick-noah.com` (geschäftlich)**, zwei auf dem privaten.
@@ -3929,3 +3929,37 @@ einen neuen anzulegen. Dasselbe Muster wie beim Monatsrückblick: **er legt
 Blöcke um, er legt selten neue an.** Wer auf dem Board nach einem „neuen
 Termin" sucht, übersieht das — die ID bleibt gleich, nur Titel, Zeit und Ort
 ändern sich.
+
+═══════════════════════════════════════════════════════════════════════════════
+VIRGIN ACTIVE: DRITTE NACHFORDERUNG, UND SIE IST EINDEUTIG (06.10., 03:24)
+═══════════════════════════════════════════════════════════════════════════════
+
+Mathew Glass, wörtlich:
+
+> *„Please can you complete the letter **manually**, when you are doing it
+> electronically it is **clearing off our legal stamp**."*
+
+Interne Notiz zu **Ticket 709511** (`virginactivesa.freshdesk.com`), von
+**Carryn Milne**: *„Mathew Glass Legal's signature block is not on the letter?
+please could Mr Bernard complete the letter manually."*
+
+**Der offene Schritt ist damit konkret:** Freigabeschreiben **ausdrucken, von
+Hand ausfüllen und unterschreiben, vollständig scannen**, zurückschicken.
+Die Anforderungen vom 01.10. gelten weiter: **eigene ausländische Bankdaten**
+im Brief, **ganze Seite** im Scan.
+
+**Das Muster, drei Mal belegt:** jede Nachforderung kommt erst, nachdem er
+geliefert oder nachgefragt hat, und jede führt eine neue Bedingung ein
+(14.09. keine Screenshots → 01.10. eigene Auslandsbankdaten + vollständiger
+Scan → 06.10. von Hand statt elektronisch). **Nicht kommentieren, nicht
+drängen** — nur die jeweils aktuelle Bedingung sauber hinstellen.
+
+**Belegte Eckdaten des Vorgangs:** Brille am **7. Mai** an der Rezeption
+abgegeben, Ersatzwert rund **R3.000**, Mitgliedschaft läuft über seinen Freund
+**Jeff Peroutka** (er war dessen Gast), CCTV nur 10 Tage aufbewahrt. Am 03.08.
+hat er mit **Consumer Goods and Services Ombud** und **Small Claims Court**
+eskaliert; danach kam Bewegung.
+
+**Neu auf der Maschinenmail-Liste:** `card-expiring@mail.anthropic.com`
+(*„Please update your payment information"*). Betrifft dieselbe Karte `9299`,
+über die am 05.10. die 100,00 $ liefen. Kein Datum im Text.
