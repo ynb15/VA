@@ -3984,3 +3984,46 @@ Richtungen:**
    Kontakt, wenn nie einer bestand (Tamay Jentjens, `Not Started`).
 
 **Entscheidend ist immer der Fuß der Mail**, nie der Absendername.
+
+═══════════════════════════════════════════════════════════════════════════
+VIERTER FALL DER ABSENDER-REGEL: EIN ZUGESAGTER GAST, PERSÖNLICH
+UNTERSCHRIEBEN — UND TROTZDEM KEINE NACHRICHT
+(06.10. 11:53, `kyle@kingsbu.com`)
+═══════════════════════════════════════════════════════════════════════════
+
+Die Absender-Regel war dreifach belegt. Jetzt ist sie vierfach, und der vierte
+Fall ist der härteste, weil er den naheliegendsten Reflex trifft: **eine Mail
+von einem bestätigten Podcast-Gast, nur mit dem Vornamen unterschrieben.**
+
+**Die Mail:** Betreff *„The most important thing you'll ever build"*, am Ende
+nur **„Kyle"**, ohne Firmenzeile, im Ton ein persönlicher Brief. Der Fuß
+entscheidet anders: **Kit-Rundbrief** über `click.kit-mail3.com`, mit
+**Abmelde- und Einstellungslink**. Inhaltlich eine Werbung für sein Programm
+*The Kingdom Within* — zwei Anrufe im Monat, **150 $ im Monat oder 1500 $ im
+Jahr**, Anmeldung über Skool.
+
+**Was der Fuß belegt — und es ist nützlich:** `kingsbu.com`, der *Kyle
+Kingsbury Podcast* bei Apple und bei Spotify, sein Instagram. Damit ist
+unabhängig bestätigt, dass der **Databank-Eintrag *Kyle Kingsbury* derselbe
+Mann ist**. Genau wie bei Zac Solomon klärt ein Rundbrief eine
+Identitätsfrage, die vorher nur eine Namensgleichheit war.
+
+**Was der Fuß nicht belegt:** zum Podcast steht **kein Wort** in der Mail. Der
+Widerspruch bleibt unverändert offen — **Databank 31.08.** gegen **Kalender:
+*Podcast: Kyle Kingsbury* als ganztägiger Eintrag am Sa 17.10.** Eine
+Werbemail ist kein Terminhinweis. Nicht auflösen, nur beide Angaben nennen.
+
+**Die Regel, jetzt vierfach belegt:**
+1. Organisation ≠ Person (Psychedelics Today / Joe Moore).
+2. Persönlich unterschrieben, aber an eine Liste (Zac Solomon).
+3. Eigene Domain ohne je einen Kontakt (Tamay Jentjens, `Not Started`).
+4. **Zugesagter Gast, persönlich unterschrieben, Rundbrief** (Kyle Kingsbury).
+
+**Rundbriefliste ergänzt:** `kyle@kingsbu.com` · `hello@mail.apollo.io`
+(Werberundbrief, *„New AI agents in Slack"*). Damit sind am 06.10. **sechs der
+acht Threads** Rundbriefe oder Werbung.
+
+**Die Zusatzregel, die daraus folgt:** *ein Kontakt auf der Rundbriefliste
+bleibt ein offener Kontakt.* Dass Kyle Kingsbury jetzt als Massenabsender
+geführt wird, heißt nicht, dass die Frage nach seinem Aufnahmedatum erledigt
+ist. Die Liste filtert Mails, nicht Menschen.
