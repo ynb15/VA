@@ -3898,3 +3898,34 @@ persönlichen Adresse kommt. Dasselbe gilt für
 `bariweiss+…@substack.com` (Arthur Brooks steht in der Databank) und für
 `info@getsoul.com` / `no-reply@reviews.io` zum Soul-Paket: **der Absender
 beweist nur sich selbst.**
+
+═══════════════════════════════════════════════════════════════════════════════
+DIE MARIAN-GOODELL-DUBLETTE IST AUFGELÖST (05.10., 18:54)
+═══════════════════════════════════════════════════════════════════════════════
+
+Sein eigener Block `4s1d9m4ujjsh4gteq82a9hmore` (angelegt 14.08.) ist
+umbenannt, verschoben und entortet:
+
+- Titel: *Man's Search for Meaning: Marian Goodell* → **Podcast: Marian
+  Goodell (Prep)**
+- Zeit: Di 06.10. 13:00–15:00 → **Mo 05.10., 17:00–19:00 Austin**
+- Ort: *Burning Man Gerlach Office* → **das Feld ist weg**
+
+**Der Punkt ist damit zu.** Er stand seit dem 29.09. auf dem Board, mit dem
+Satz „löschen oder ändern kannst nur Du". **Nicht mehr erwähnen.**
+
+**Walkers Einladung ist unberührt** (`181kgdmr4mkilqmf0bjgvp70ib`): Di 06.10.,
+13:00–15:00 Austin = 11:00–13:00 San Francisco, `660 Alabama St 4th floor`,
+alle drei `accepted`, `updated` weiter vom 30.09. Gegengeprüft im weiten
+Fenster.
+
+**Was weiterhin offen ist und davon unberührt bleibt:** der *Podcast Appearance
+agreement* — dreimal angekündigt (Walker 16.09., Andie 22.09., Walker 28.09.),
+nie gekommen.
+
+**Beobachtung, ohne Deutung:** Er hat sich für den Abend vor der Aufnahme einen
+**zweistündigen Prep-Block** gebaut, und zwar aus dem alten Eintrag, statt
+einen neuen anzulegen. Dasselbe Muster wie beim Monatsrückblick: **er legt
+Blöcke um, er legt selten neue an.** Wer auf dem Board nach einem „neuen
+Termin" sucht, übersieht das — die ID bleibt gleich, nur Titel, Zeit und Ort
+ändern sich.
