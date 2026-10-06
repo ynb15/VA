@@ -3507,10 +3507,13 @@ auffindbar; Silent Day, Rest Day, Morning Routine für Sonntag stehen auch).
 DER GESCHÄFTSKALENDER HEBT SEINEN STEMPEL VON SELBST (STAND 04.10.)
 ═══════════════════════════════════════════════════════════════════════════════
 
-**Vierzehn Fälle** bis 06.10. 07:03 (elf davon bis 04.10. 20:02; zwei am 05.10. um 13:26 und 17:30, einer in der Nacht zum 06.10. um 23:57), in denen der kalenderweite `updated`-Stempel
-gesprungen ist, **ohne dass im weiten Fenster ein Termin angefasst war** —
-`timeZone` jedes Mal unverändert, kein `nextPageToken`. Acht davon auf
-**`ynb@yannick-noah.com` (geschäftlich)**, zwei auf dem privaten.
+**Fünfzehn Fälle** bis 06.10. 13:02 (elf davon bis 04.10. 20:02; zwei am
+05.10. um 13:26 und 17:30, einer in der Nacht zum 06.10. um 23:57, **einer am
+06.10. um 12:55 Austin auf dem privaten Kalender**), in denen der kalenderweite
+`updated`-Stempel gesprungen ist, **ohne dass im weiten Fenster ein Termin
+angefasst war** — `timeZone` jedes Mal unverändert, kein `nextPageToken`.
+*Die Aufteilung „acht geschäftlich, zwei privat" galt für die ersten zehn und
+ist seitdem nicht fortgeschrieben — ich führe sie nicht als aktuelle Zahl.*
 Am Wochenende 03./04.10. allein **vier**, alle geschäftlich (Sa 20:01, So 16:20,
 So 17:06, So 19:13 Austin) — am Sonntag drei in gut drei Stunden.
 
@@ -4027,3 +4030,24 @@ acht Threads** Rundbriefe oder Werbung.
 bleibt ein offener Kontakt.* Dass Kyle Kingsbury jetzt als Massenabsender
 geführt wird, heißt nicht, dass die Frage nach seinem Aufnahmedatum erledigt
 ist. Die Liste filtert Mails, nicht Menschen.
+
+═══════════════════════════════════════════════════════════════════════════
+FÜNFZEHNTER STEMPELLOSER FALL — 06.10. 12:55 AUSTIN, PRIVATER KALENDER
+═══════════════════════════════════════════════════════════════════════════
+
+Der private Kalender hob seinen kalenderweiten `updated` von
+`2026-10-05T21:40:36Z` auf **`2026-10-06T17:55:48Z`** (= 12:55 Austin).
+
+**Gegenprobe gezogen** (06.10.–20.10., `orderBy: lastModified`,
+`pageSize: 100`, `timeZone: America/Chicago`): **zwölf Termine, kein
+`nextPageToken`**, `timeZone` des Kalenders unverändert `America/Chicago`.
+Der **jüngste Termin-Stempel ist `2026-10-05T21:40:36Z`** (Rob & Ryan) —
+**kein Termin trägt den neuen Stempel.** Also stempellos.
+
+**Zusätzlich gegengeprüft, weil der Fall am Sa 16:08 genauso aussah und doch
+Folgen hatte:** alles, was das Board über den privaten Kalender behauptet,
+steht noch da — Mi 07.10. *Monatsrückblick* 11:00–13:00 · Sa 10.10.
+*Rob & Ryan* 12:00–13:00 · So 11.10. *Morning Routine* 07:30, *FSC* 10:00,
+*Artist Date* 15:00, *Rest Day*. **Nichts fehlt, nichts verschoben.**
+
+**Eine Zeile ins Log, nichts aufs Board, nicht „gelöscht" genannt.**
