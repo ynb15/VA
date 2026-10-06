@@ -309,6 +309,21 @@ details.cleared[open] summary::after{content:" ▴";}
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
 
+    <li class="row s-wait">
+      <input type="checkbox" data-item="atx-newsletter-0610" aria-label="ATX Writing Club Rundbrief von Zac">
+      <span class="row-b"><span class="who">ATX Writing Club, heute 07:47</span> &mdash; <strong>Zac schreibt &mdash; aber an seine ganze Liste, und die R&uuml;ckerstattung kommt darin nicht vor.</strong>
+        <span class="row-sub">`atxwritingclub@substack.com`, Betreff <em>&bdquo;ATX Writing Club Events&ldquo;</em>, Vorschau <em>&bdquo;Our fall season has begun&ldquo;</em>. <strong>Substack-Rundbrief mit Abmeldelink</strong> &mdash; keine Antwort auf Deine Anfrage vom 01.10.
+        <br><strong>Er ist persönlich unterschrieben:</strong> <em>&bdquo;My name is <strong>Zac Solomon</strong> and I&#39;m one of your hosts at ATX Writing Club&ldquo;</em>, und am Ende <em>&bdquo;&mdash;Zac&ldquo;</em>. <em>Damit ist die Namensgleichheit unabh&auml;ngig best&auml;tigt &mdash; der Databank-Eintrag <em>Zac Solomon</em> ist derselbe Mann.</em>
+        <br><strong>Die Wache bleibt offen:</strong> Deine Bitte um R&uuml;ckerstattung der Mitgliedschaft, begr&uuml;ndet mit Arztrechnungen, steht seit dem <strong>01.10.</strong> Er ist bis <strong>13.10.</strong> weg. <em>Eine Mail von der Organisation ist keine Antwort der Person.</em>
+        <br><br><strong>Aus dem Rundbrief ein Datum, das eine Zeile auf diesem Board pr&auml;zisiert:</strong>
+        <br>&middot; <strong>Sa 17.10. &mdash; <em>Austin Writers Social</em></strong>: <em>&bdquo;ATX Writing Club members <strong>and the general public are welcome</strong>&ldquo;</em>. <em>Also keine Mitgliedschaft n&ouml;tig.</em>
+        <br>&middot; <strong>Di 20.10. &mdash; <em>Getting paid for your writing</em></strong>, Workshop mit dem Finanzprofessor und Autor <strong>Akash Kanojia</strong>. <em>Neu, stand vorher nicht auf dem Board. Keine Uhrzeit im Rundbrief.</em>
+        <br>&middot; heute 06.10. und Di 03.11. je eine <em>Evening Writing Session</em> &mdash; <strong>beide &bdquo;exclusively for ATX Writing Club members&ldquo;</strong>, also an der Mitgliedschaft h&auml;ngend, &uuml;ber die Du gerade verhandelst. <em>Keine Uhrzeit genannt, in keinem Kalender eingetragen.</em>
+        <br><em>Ich trage nichts ein und schlage nichts vor.</em></span></span>
+      <span class="age">heute 07:47</span>
+    </li>
+
+
     <li class="row s-act">
       <input type="checkbox" data-item="va-manuell-0610" aria-label="Virgin Active: Brief von Hand ausfuellen">
       <span class="row-b"><span class="who">Virgin Active, heute 03:24</span> &mdash; <strong>Der Brief muss von Hand ausgef&uuml;llt werden. Deine elektronische Unterschrift hat ihren Rechtsstempel gel&ouml;scht.</strong>
@@ -1703,7 +1718,7 @@ YNB</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-10-06T07:03:00-05:00");
+  var SWEPT = new Date("2026-10-06T08:03:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
