@@ -3963,3 +3963,24 @@ eskaliert; danach kam Bewegung.
 **Neu auf der Maschinenmail-Liste:** `card-expiring@mail.anthropic.com`
 (*„Please update your payment information"*). Betrifft dieselbe Karte `9299`,
 über die am 05.10. die 100,00 $ liefen. Kein Datum im Text.
+
+**Rundbriefliste, Stand 06.10.** Neu dazu:
+`atxwritingclub@substack.com` (Substack, persönlich von **Zac Solomon**
+unterschrieben — und trotzdem ein Massenverteiler; die Rückerstattungsbitte
+vom 01.10. kommt darin nicht vor) · `tamay@tamay-jentjens.com`
+(Marketing-Rundbrief, Impressum *Native Motion GmbH*; **Tamay Jentjens steht
+in der Databank auf `Not Started`** — angeschrieben wurde er nie, also ist
+dadurch nichts offen) · `messages-noreply@linkedin.com`
+(**LinkedIn-Spielbenachrichtigung** — der Absender heißt `messages-noreply@`
+und sieht nach Postfach aus; es ist keins) · `card-expiring@mail.anthropic.com`.
+
+**Damit ist die Absender-Regel dreifach belegt und gilt in beiden
+Richtungen:**
+1. Eine Mail von der **Organisation** eines Kontakts ist keine Antwort des
+   Kontakts (Psychedelics Today / Joe Moore).
+2. Eine Mail **persönlich unterschrieben** vom Kontakt ist keine Antwort,
+   wenn sie an eine Liste ging (Zac Solomon / ATX Writing Club).
+3. Eine Mail **von der eigenen Domain** eines Databank-Kontakts ist kein
+   Kontakt, wenn nie einer bestand (Tamay Jentjens, `Not Started`).
+
+**Entscheidend ist immer der Fuß der Mail**, nie der Absendername.
