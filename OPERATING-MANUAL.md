@@ -4118,3 +4118,36 @@ nie umgekehrt.
 Newsletter) · `support@davidwhyte.com` (ActiveCampaign, Abmeldelink).
 **Maschinenpost ergänzt:** `noreply@wise.com` (Cashback-Gutschriften,
 Antwort technisch nicht möglich; die September-Gutschrift betrug **0,27 EUR**).
+
+═══════════════════════════════════════════════════════════════════════════
+`THREAD_VIEW_METADATA_ONLY` LÄSST DEN BETREFF WEG — UND DARIN STAND EIN DATUM
+(07.10., Gevity „Fall Social")
+═══════════════════════════════════════════════════════════════════════════
+
+Um 14:03 habe ich die Gevity-Mail von 13:28 mit
+`THREAD_VIEW_METADATA_ONLY` gesehen und als Rundbrief abgelegt. Um 15:03 mit
+`THREAD_VIEW_MINIMAL` stand der Betreff da: **„Tomorrow night: Fall Social"**,
+*„Pumpkin painting, fall cocktails, live guitar … **Tomorrow, 6–9 PM**"* —
+**Do 08.10., 18:00–21:00 Austin, in seinem eigenen Club**, an einem Tag, den
+das Board als leer führt.
+
+**Was `THREAD_VIEW_METADATA_ONLY` zurückgibt:** `id`, `sender`, Empfänger,
+`date`, `labelIds`. **Nicht:** `subject`, nicht `snippet`.
+
+**Die Regel:**
+1. **Der Sweep-Vergleich** (Absender, Zeit, `labelIds`,
+   `resultCountEstimate`) funktioniert mit Metadaten — dafür bleibt sie
+   erlaubt.
+2. **Aber jede Mail, die als neu auffällt, wird mindestens mit
+   `THREAD_VIEW_MINIMAL` gelesen**, also mit Betreff und Vorschau. Metadaten
+   allein genügen nur für Threads, die beim vorigen Durchgang schon
+   eingeordnet waren.
+3. **Und besonders:** ein Rundbrief **einer Organisation, bei der er Mitglied
+   oder Kunde ist** (Club, Studio, Verein, Abo — Gevity, ATX Writing Club,
+   Virgin Active) wird immer mit Betreff gelesen. *Ein Verteiler kann eine
+   Einladung mit Datum enthalten.*
+
+**Daran hängt auch die Formulierung von „Tag X ist leer":** die Aussage
+beschreibt **seinen Kalender**, nicht die Welt. Ein Club-Abend, zu dem nichts
+gebucht ist, macht den Donnerstag nicht voll — und ich schreibe das auf dem
+Board ausdrücklich so hin, damit beides stehen kann.
