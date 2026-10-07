@@ -3507,7 +3507,7 @@ auffindbar; Silent Day, Rest Day, Morning Routine für Sonntag stehen auch).
 DER GESCHÄFTSKALENDER HEBT SEINEN STEMPEL VON SELBST (STAND 04.10.)
 ═══════════════════════════════════════════════════════════════════════════════
 
-**Fünfzehn Fälle** bis 06.10. 13:02 (elf davon bis 04.10. 20:02; zwei am
+**Siebzehn Fälle** bis 07.10. 07:03 (elf davon bis 04.10. 20:02; zwei am
 05.10. um 13:26 und 17:30, einer in der Nacht zum 06.10. um 23:57, **einer am
 06.10. um 12:55 Austin auf dem privaten Kalender**), in denen der kalenderweite
 `updated`-Stempel gesprungen ist, **ohne dass im weiten Fenster ein Termin
@@ -4077,3 +4077,44 @@ und wird **nicht** als neue oder geänderte Mail gemeldet.
 *Warum das überhaupt notiert wird: beim Kalender hat genau diese Verwechslung
 einmal zu einem falschen „gelöscht" geführt. Der Zähler des Postfachs
 verdient dieselbe Vorsicht, bevor er sie verdient.*
+
+═══════════════════════════════════════════════════════════════════════════
+DIE STEMPELLOSEN HUBS HABEN EIN MUSTER: EIN TÄGLICHER LAUF UM 04:57 UTC
+(erkannt 07.10. 07:03 — und damit eine eigene alte Notiz korrigiert)
+═══════════════════════════════════════════════════════════════════════════
+
+**Sechzehnter und siebzehnter Fall, beide in derselben Nacht:**
+geschäftlich `2026-10-06T04:57:04Z` → **`2026-10-07T04:57:11Z`**, privat
+`2026-10-06T17:55:48Z` → **`2026-10-07T04:10:29Z`**. Beide gegengeprüft im
+weiten Fenster (07.10.–21.10.): kein `nextPageToken`, `timeZone` beidseits
+unverändert, **kein Termin trägt den jeweils neuen Stempel.**
+
+**Das Muster:** der geschäftliche Stempel sprang gestern auf `04:57:04Z` und
+heute auf `04:57:11Z` — **dieselbe Minute, sieben Sekunden Unterschied, 24
+Stunden auseinander.** Das ist ein **täglicher automatischer Lauf**, kein
+Einzelereignis.
+
+**Und damit korrigiere ich eine eigene Notiz:** der Hub „in der Nacht zum
+06.10. um **23:57**" war als eigener Fall geführt. **23:57 Austin = 04:57
+UTC** — *das war derselbe tägliche Lauf, nur in Austin-Zeit notiert und in UTC
+nicht wiedererkannt.*
+
+**Was daraus für das Verfahren folgt — und was ausdrücklich nicht:**
+- **Nicht:** die Prüfung sparen. Der eine Fall mit Folgen (Sa 16:08, privat)
+  sah im Stempel genauso aus. **Das weite Fenster wird weiter jedes Mal
+  gezogen.**
+- **Sondern:** ein Stempelsprung **um 04:57 UTC auf dem Geschäftskalender**
+  ist der erwartbare Normalfall und bekommt eine Zeile im Log, nichts weiter.
+  Ein Sprung **zu einer anderen Zeit** verdient die volle Aufmerksamkeit.
+- **Und:** Stempel werden künftig **in UTC verglichen**, nicht in Austin-Zeit.
+  Die Umrechnung hat mir ein Muster fünfzehn Fälle lang verborgen.
+
+**Gelernt, allgemeiner:** *zwei Notizen über dasselbe Ereignis in zwei
+Zeitzonen sehen aus wie zwei Ereignisse.* Rohwerte notieren, dann umrechnen —
+nie umgekehrt.
+
+**Rundbriefliste ergänzt, Stand 07.10.:** `tg@timgelhausen.de` ·
+`niklas@niklassteenfatt.com` (beide deutsch, beide nennen sich im Text selbst
+Newsletter) · `support@davidwhyte.com` (ActiveCampaign, Abmeldelink).
+**Maschinenpost ergänzt:** `noreply@wise.com` (Cashback-Gutschriften,
+Antwort technisch nicht möglich; die September-Gutschrift betrug **0,27 EUR**).
