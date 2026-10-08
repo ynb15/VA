@@ -4215,3 +4215,40 @@ zwanzig Fällen und habe zweimal mehr behauptet, als die Daten tragen.* Erst ein
 Minute, dann eine Tageszeit. **Beim nächsten Mal keine Eigenschaft hinzufügen,
 die nicht mindestens dreimal unabhängig belegt ist** — und auch dann als
 „bisher immer", nicht als „immer".
+
+═══════════════════════════════════════════════════════════════════════════
+FÜNFTER FALL DER ABSENDER-REGEL: EINE MASSENMAIL, DIE UM ANTWORT BITTET
+(08.10. 10:03, `kj@sgnl.so`, Betreff „quick question (AI)")
+═══════════════════════════════════════════════════════════════════════════
+
+Die vier bisherigen Fälle drehten sich um **wen**: Organisation ≠ Person
+(Psychedelics Today / Joe Moore) · persönlich unterschrieben, aber an eine
+Liste (Zac Solomon) · eigene Domain ohne je einen Kontakt (Tamay Jentjens) ·
+zugesagter Gast, der einen Rundbrief schickt (Kyle Kingsbury).
+
+**Der fünfte dreht sich um was die Mail verlangt.** Sie beginnt mit
+*„morning Yannick☕️"*, stellt sieben Fragen und bittet ausdrücklich:
+*„just reply to this email! (Me and the team read every reply!)"*
+
+**Sie ist trotzdem ein Rundbrief**, und die Belege stehen in ihr selbst:
+- Abmeldelink und *„Update your profile"* über `kit-mail3.com`;
+- *„Me and the team read **every reply**"* — Plural; es antworten viele;
+- *„**Tomorrow's email** is one of my fav lessons"* — eine Sequenz, kein
+  Gespräch;
+- *„most helpful to **my audience**"*.
+
+**Die Regel, die daraus folgt:** *eine direkte Frage und eine Bitte um Antwort
+machen aus einer Massenmail keine Nachricht an ihn.* Dieser Typ ist der
+gefährlichste der fünf, weil er wie eine **offene Verpflichtung** aussieht und
+deshalb am leichtesten eine falsche Karte aufs Board bringt.
+
+**Prüfreihenfolge, wenn eine Mail nach einer Antwort verlangt:**
+1. Abmeldelink oder Profil-Link im Fuß? → Rundbrief.
+2. Spricht sie von „audience", „every reply", „tomorrow's email", einer
+   Sequenz? → Rundbrief.
+3. Steht der Absender in der Databank oder auf einer offenen Wache? → auch
+   dann bleibt es ein Rundbrief, **aber die Wache bleibt offen** (Regel vom
+   06.10.: die Liste filtert Mails, nicht Menschen).
+
+**Rundbriefliste:** `kj@sgnl.so` steht schon drauf (seit 07.10.). Zweite Mail
+in zwei Tagen — es ist eine tägliche Sequenz.
