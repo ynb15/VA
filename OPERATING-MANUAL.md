@@ -4360,3 +4360,30 @@ kann, weil sie plausibel klingt.**
   Durchgang einem früheren Befund widerspricht, **erst dort nachsehen,
   bevor ich eine neue Handlung von ihm behaupte** — sonst wird aus meinem
   Zusammenfassungsfehler eine erfundene Aktion von ihm.
+
+═══════════════════════════════════════════════════════════════════════════
+EINUNDZWANZIGSTER STEMPELLOSER FALL — 08.10. 16:02, SPÄTER NACHMITTAG
+═══════════════════════════════════════════════════════════════════════════
+
+Privat hob von `2026-10-08T13:43:13Z` auf **`2026-10-08T20:27:14Z`** —
+**15:27 Austin.** Gegengeprüft (08.10.–01.11., `orderBy: lastModified`,
+`pageSize: 100`, kein `nextPageToken`, `timeZone` weiter `America/Chicago`):
+vierzehn Termine, **jüngster Termin-Stempel `2026-10-05T21:40:36Z`** —
+unverändert gegenüber dem zwanzigsten Fall. **Stempellos.**
+
+**Die Zählung des weiten Fensters als Gegentest.** Beim Tageswechsel stand im
+Protokoll „privat zehn" für das Fenster 08.10.–21.10. Mein Fenster war diesmal
+08.10.–01.11. und gab vierzehn. Die vier zusätzlichen sind genau die Termine
+nach dem 21.10.: Rest Day, Morning Routine und Artist Date am 25.10. und der
+Monatsrückblick am 30.10. **Zehn plus vier gleich vierzehn — es ist nichts
+dazugekommen und nichts verschwunden.**
+
+**Daraus eine Regel, die den Gegentest billiger macht:** wenn das weite
+Fenster ein anderes Ende hat als das letzte protokollierte, wird die
+Zahlendifferenz **aufgelöst, nicht verglichen** — die zusätzlichen Termine
+einzeln benannt. Zwei verschiedene Zahlen aus zwei verschiedenen Fenstern sind
+kein Befund; sie werden erst einer, wenn die Differenz nicht aufgeht.
+
+**Nichts aufs Board, nichts in den Chat.** Keine Löschung behauptet.
+Einundzwanzigster Fall, und die eng gefasste Formulierung hält weiter: kein
+Rhythmus, keine Tageszeit.
