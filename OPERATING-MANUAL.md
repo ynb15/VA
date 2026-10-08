@@ -3507,7 +3507,7 @@ auffindbar; Silent Day, Rest Day, Morning Routine für Sonntag stehen auch).
 DER GESCHÄFTSKALENDER HEBT SEINEN STEMPEL VON SELBST (STAND 04.10.)
 ═══════════════════════════════════════════════════════════════════════════════
 
-**Siebzehn Fälle** bis 07.10. 07:03 (elf davon bis 04.10. 20:02; zwei am
+**Neunzehn Fälle** bis 08.10. 07:03 (elf davon bis 04.10. 20:02; zwei am
 05.10. um 13:26 und 17:30, einer in der Nacht zum 06.10. um 23:57, **einer am
 06.10. um 12:55 Austin auf dem privaten Kalender**), in denen der kalenderweite
 `updated`-Stempel gesprungen ist, **ohne dass im weiten Fenster ein Termin
@@ -4151,3 +4151,35 @@ das Board als leer führt.
 beschreibt **seinen Kalender**, nicht die Welt. Ein Club-Abend, zu dem nichts
 gebucht ist, macht den Donnerstag nicht voll — und ich schreibe das auf dem
 Board ausdrücklich so hin, damit beides stehen kann.
+
+═══════════════════════════════════════════════════════════════════════════
+ZURÜCKGENOMMEN: DAS „TÄGLICH UM 04:57 UTC" WAR AUS ZWEI ZAHLEN GERATEN
+(aufgestellt 07.10. 07:03, widerlegt 08.10. 07:03)
+═══════════════════════════════════════════════════════════════════════════
+
+Am 07.10. habe ich aus zwei Werten — `2026-10-06T04:57:04Z` und
+`2026-10-07T04:57:11Z` — geschlossen, der kalenderweite Stempel des
+Geschäftskalenders springe **täglich zur selben Minute**, und das als
+Verfahrensregel hier eingetragen.
+
+**Am 08.10. sprang er um `09:07:38Z`** — über vier Stunden später. Der private
+im selben Zeitraum von `2026-10-07T04:10:29Z` auf `2026-10-08T03:07:28Z`.
+Beide wieder stempellos (weites Fenster gezogen, kein `nextPageToken`,
+`timeZone` unverändert, kein Termin trägt den neuen Stempel): **achtzehnter und
+neunzehnter Fall.**
+
+**Die Annahme einer festen Uhrzeit ist damit falsch und ist zurückgenommen.**
+
+**Was belastbar bleibt:**
+- Die Hübe passieren **nachts**, auf beiden Kalendern, und sind **stempellos**.
+- **Stempel werden in UTC verglichen.** Diese Regel bleibt — sie hat den Fehler
+  erst sichtbar gemacht.
+- Das **weite Fenster wird jedes Mal gezogen**, ohne Ausnahme. Es gibt keine
+  Uhrzeit, bei der ich die Prüfung sparen darf.
+
+**Was ich daraus über mich lerne, und es ist die eigentliche Regel:**
+*Zwei Messpunkte sind kein Muster.* Ich hatte aus zwei Zahlen eine Regel
+gemacht; der dritte Wert hat sie umgeworfen. **Ein Muster braucht mindestens
+drei Beobachtungen, und bis dahin heißt es „zweimal gesehen", nicht
+„täglich".** Dass heute beide Stempel auf `:07:` enden, wird aus genau diesem
+Grund nicht zum nächsten Muster erklärt.
