@@ -4287,3 +4287,39 @@ stehen, **sehe ich nicht** — ich habe keinen Kontozugang. Ich kann nur sagen,
 dass im Postfach nichts es bestätigt. **Nachsehen kann nur er.** Das steht so
 auf dem Board, damit die Zeile nicht als „Geld fehlt" gelesen wird, wenn es
 längst da ist.
+
+═══════════════════════════════════════════════════════════════════════════
+ER RÄUMT DAS POSTFACH IN EINEM ZUG AUF — UND WAS ER LIEGEN LÄSST, IST LESBAR
+(08.10., zwischen 12:03 und 13:03 Austin)
+═══════════════════════════════════════════════════════════════════════════
+
+**Beobachtung:** innerhalb einer Stunde wechselten **neunzehn von
+dreiundzwanzig** Threads der Tage 06.–08.10. von `["UNREAD","INBOX"]` auf
+`["UNREAD","TRASH"]`. Keine Antwort, kein Öffnen — nur weggeworfen.
+
+**Geblieben, alle vier weiter `UNREAD` im `INBOX`:**
+`card-expiring@mail.anthropic.com` (Di 02:57) ·
+`Mathew.Glass@virginactive.co.za` (Di 03:24) ·
+`tamay@tamay-jentjens.com` (Di 08:37) · `kyle@kingsbu.com` (Di 11:53).
+
+**Die Übereinstimmung, die ich festhalte und nicht zur Regel erhebe:**
+die beiden, die ich als echt eingeordnet hatte, sind geblieben; die beiden
+anderen Gebliebenen sind Rundbriefe **von Databank-Kontakten**. Alles
+Weggeworfene kam von Absendern ohne Databank-Zeile. *Eine Beobachtung an einem
+Tag. Nach der Regel vom 08.10. („zwei Messpunkte sind kein Muster") ist das
+**einmal gesehen** — keine Eigenschaft seines Vorgehens, bis es sich wiederholt.*
+
+**Was praktisch daraus folgt, und das ist belastbar:**
+1. **`labelIds` beim Sweep immer mitvergleichen, nicht nur Absender und Zeit.**
+   Ein Wechsel von `INBOX` auf `TRASH` ist eine Handlung von ihm und damit eine
+   echte Änderung — auch wenn keine neue Mail dazukam.
+2. **Weggeworfen ≠ erledigt.** Der ATX-Rundbrief liegt im Papierkorb, aber die
+   Rückerstattungsbitte vom 01.10. ist unverändert offen. **Eine weggeworfene
+   Mail beantwortet keine Wache** — dasselbe Prinzip wie: eine Mail von der
+   Organisation ist keine Antwort der Person.
+3. **Dass er Rundbriefe wegwirft, bestätigt meine Einordnung nachträglich.**
+   Die zwei Mails, die ihn direkt ansprachen und um Antwort baten (KJ, Erick),
+   sind ungelesen im Papierkorb. *Das ist die unabhängige Gegenprobe zur
+   Absender-Regel: er behandelt sie genauso wie ich.*
+4. **Was liegen bleibt, sage ich weiter als „liegt ungelesen"** — nicht als
+   „er hat es vorgemerkt". Liegenbleiben ist kein Vorsatz, den ich kenne.

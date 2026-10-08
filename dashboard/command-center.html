@@ -296,7 +296,7 @@ details.cleared[open] summary::after{content:" ▴";}
 <section class="panel" id="p-today" role="tabpanel" aria-labelledby="t-today">
 
   <div class="greet">
-    <p class="lede"><strong>Donnerstag, und in beiden Kalendern steht nichts.</strong> <em>Beim Tageswechsel im weiten Fenster gepr&uuml;ft: gesch&auml;ftlich vier Termine ab heute, privat zehn, kein <code>nextPageToken</code>, beide <code>timeZone</code> unver&auml;ndert. <strong>Heute und morgen leer.</strong> Das beschreibt Deinen Kalender und hat ein Verfallsdatum &mdash; ich pr&uuml;fe es bei jeder Verschiebung neu.</em><br><strong>Heute Abend ist aber etwas, das nicht im Kalender steht:</strong> <em><strong>18:00&ndash;21:00 der <em>Fall Social</em> in Deinem Club</strong> (<code>membership@livegevity.co</code>, gestern 13:28, <em>&bdquo;Tomorrow, 6&ndash;9 PM&ldquo;</em>). <strong>Rundbrief an die Mitglieder, nichts gebucht, keine Zusage von Dir.</strong> Ich sage nur, dass es das gibt und wann.</em><br><strong>Achtzehn Mails liegen ungelesen</strong>, <em>sechzehn davon Rundbriefe. Die zwei echten stehen seit Dienstag: <strong>Mathew Glass &mdash; der Brief muss von Hand</strong> &mdash; und <strong>die Anthropic-Karte <code>9299</code></strong>.</em><br><strong>In drei Tagen, So 11.10., endet das 250-$-Fenster bei Ryan.</strong> <em>Beauftragt ist nichts; die Entscheidung ist Deine.</em></p>
+    <p class="lede"><strong>Donnerstag, und in beiden Kalendern steht nichts.</strong> <em>Beim Tageswechsel im weiten Fenster gepr&uuml;ft: gesch&auml;ftlich vier Termine ab heute, privat zehn, kein <code>nextPageToken</code>, beide <code>timeZone</code> unver&auml;ndert. <strong>Heute und morgen leer.</strong> Das beschreibt Deinen Kalender und hat ein Verfallsdatum &mdash; ich pr&uuml;fe es bei jeder Verschiebung neu.</em><br><strong>Heute Abend ist aber etwas, das nicht im Kalender steht:</strong> <em><strong>18:00&ndash;21:00 der <em>Fall Social</em> in Deinem Club</strong> (<code>membership@livegevity.co</code>, gestern 13:28, <em>&bdquo;Tomorrow, 6&ndash;9 PM&ldquo;</em>). <strong>Rundbrief an die Mitglieder, nichts gebucht, keine Zusage von Dir.</strong> Ich sage nur, dass es das gibt und wann.</em><br><strong>Du hast heute Mittag den Posteingang geleert</strong> &mdash; <em>neunzehn von dreiundzwanzig Threads der letzten drei Tage liegen im Papierkorb. <strong>Vier sind geblieben, alle vier ungelesen:</strong> Mathew Glass (Brief von Hand), die Anthropic-Karte, und zwei Rundbriefe von Databank-Kontakten (Kingsbury, Jentjens).</em><br><strong>Vorher lagen achtzehn ungelesen</strong>, <em>sechzehn davon Rundbriefe. Die zwei echten stehen seit Dienstag: <strong>Mathew Glass &mdash; der Brief muss von Hand</strong> &mdash; und <strong>die Anthropic-Karte <code>9299</code></strong>.</em><br><strong>In drei Tagen, So 11.10., endet das 250-$-Fenster bei Ryan.</strong> <em>Beauftragt ist nichts; die Entscheidung ist Deine.</em></p>
     <p class="tiny"><strong>Mittwoch in vier Zeilen &mdash; zweiter Tag in Folge ohne eine einzige Verschiebung:</strong> <em>die zwei Bl&ouml;cke des Tages (Monatsr&uuml;ckblick 11:00&ndash;13:00, Brendan Kane 14:00&ndash;15:00) standen von 07:03 bis 22:03 unber&uuml;hrt. <strong>Zehn Mails kamen, alle zehn Rundbriefe, Werbung oder Maschinenpost</strong> &mdash; nach 13:37 neun Stunden nichts. Von Dir an keinem Durchgang etwas.</em><br><strong>Zwei Funde, und einer war mein eigener Fehler:</strong> <em>die Gevity-Mail hatte ich um 14:03 mit einer Ansicht gelesen, <strong>die den Betreff wegl&auml;sst</strong> &mdash; und genau darin stand das Datum des Fall Social. Eine Stunde als Rundbrief abgelegt, bevor ich es sah. <strong>Neue Regel:</strong> jede neue Mail mindestens mit Betreff lesen, und Rundbriefe von Clubs und Diensten, bei denen Du Kunde bist, immer.</em><br><strong>Der andere Fund korrigiert eine eigene Z&auml;hlung:</strong> <em>die n&auml;chtlichen Stempelspr&uuml;nge des Gesch&auml;ftskalenders passieren <strong>t&auml;glich um 04:57 UTC</strong> &mdash; ein automatischer Lauf. Den Fall &bdquo;23:57&ldquo; hatte ich separat gez&auml;hlt; das war 04:57 UTC, derselbe Lauf, nur in Austin-Zeit notiert. <strong>Stempel vergleiche ich jetzt in UTC.</strong></em><br><em>Mittwoch: <strong>sechzehn Durchg&auml;nge</strong>, 07:03 bis 22:03 &mdash; zwei mit einem Fund, vier nur mit Rundbriefen, neun leer, dazu zwei stempellose H&uuml;be &uuml;ber Nacht und zwei Neuaufsetzungen der Maschine (beide ohne Verlust). <strong>Zwei eigene Aussagen habe ich selbst korrigiert.</strong> Alles in <code>actuals/2026-10-07.md</code>.</em></p>
   </div>
 
@@ -308,6 +308,20 @@ details.cleared[open] summary::after{content:" ▴";}
 
   <div class="eyebrow">Still open</div>
   <ul class="rows" id="today-rows">
+
+    <li class="row s-now">
+      <input type="checkbox" data-item="posteingang-geleert-0810" aria-label="Posteingang geleert, vier Mails geblieben">
+      <span class="row-b"><span class="who">Du warst im Postfach, zwischen 12:03 und 13:03</span> &mdash; <strong>Neunzehn von dreiundzwanzig Threads liegen jetzt im Papierkorb. Vier sind geblieben.</strong>
+        <span class="row-sub"><strong>Geblieben sind, alle vier weiter <code>UNREAD</code> im <code>INBOX</code>:</strong>
+        <br>&middot; <strong>Mathew Glass</strong>, Di 03:24 &mdash; der Brief <strong>von Hand</strong>, Ticket 709511.
+        <br>&middot; <strong>Anthropic-Karte</strong>, Di 02:57 &mdash; Karte <code>9299</code> l&auml;uft ab.
+        <br>&middot; <strong>Kyle Kingsbury</strong>, Di 11:53 &mdash; der Kit-Rundbrief.
+        <br>&middot; <strong>Tamay Jentjens</strong>, Di 08:37 &mdash; die Werbemail.
+        <br><strong>Weggeworfen wurde alles andere</strong>, auch die beiden Mails von heute, die Dich direkt ansprachen (KJ, Erick), beide Apollo-Mails, Gevity, Peter Crone, David Whyte, Wise, LinkedIn, OnPress, ATX, Get Soul, Tim Gelhausen, Niklas Steenfatt, Freedom Writer.
+        <br><strong>Was daran auff&auml;llt &mdash; und das ist meine Lesart, nicht Deine Aussage:</strong> <em>die zwei, die ich echt genannt habe, sind beide geblieben. Die zwei anderen sind Rundbriefe <strong>von Leuten, die in Deiner Databank stehen</strong> &mdash; Kingsbury als zugesagter Gast, Jentjens auf <code>Not Started</code>. Die weggeworfenen sind von Absendern, die dort nicht stehen. <strong>Ob das Absicht war oder nur die Stelle, an der Du aufgeh&ouml;rt hast, wei&szlig; ich nicht.</strong></em>
+        <br><strong>Eine Wache wird dadurch nicht beantwortet:</strong> <em>der ATX-Rundbrief ist im Papierkorb, aber <strong>Deine Bitte um R&uuml;ckerstattung der Mitgliedschaft vom 01.10. steht weiter offen</strong>. Zac ist bis 13.10. weg. Eine weggeworfene Mail ist keine Antwort.</em></span></span>
+      <span class="age hot">heute</span>
+    </li>
 
     <li class="row s-wait">
       <input type="checkbox" data-item="onpress-erstattung-0810" aria-label="OnPress-Erstattung 111,29 Dollar, Frist vorbei">
@@ -1745,7 +1759,7 @@ YNB</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-10-08T12:03:00-05:00");
+  var SWEPT = new Date("2026-10-08T13:03:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }
