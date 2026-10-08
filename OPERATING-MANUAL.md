@@ -3507,7 +3507,7 @@ auffindbar; Silent Day, Rest Day, Morning Routine für Sonntag stehen auch).
 DER GESCHÄFTSKALENDER HEBT SEINEN STEMPEL VON SELBST (STAND 04.10.)
 ═══════════════════════════════════════════════════════════════════════════════
 
-**Neunzehn Fälle** bis 08.10. 07:03 (elf davon bis 04.10. 20:02; zwei am
+**Zwanzig Fälle** bis 08.10. 09:03 (elf davon bis 04.10. 20:02; zwei am
 05.10. um 13:26 und 17:30, einer in der Nacht zum 06.10. um 23:57, **einer am
 06.10. um 12:55 Austin auf dem privaten Kalender**), in denen der kalenderweite
 `updated`-Stempel gesprungen ist, **ohne dass im weiten Fenster ein Termin
@@ -4183,3 +4183,35 @@ gemacht; der dritte Wert hat sie umgeworfen. **Ein Muster braucht mindestens
 drei Beobachtungen, und bis dahin heißt es „zweimal gesehen", nicht
 „täglich".** Dass heute beide Stempel auf `:07:` enden, wird aus genau diesem
 Grund nicht zum nächsten Muster erklärt.
+
+═══════════════════════════════════════════════════════════════════════════
+ZWANZIGSTER FALL, UND ER WAR AM VORMITTAG: AUCH „NACHTS" IST ZURÜCKGENOMMEN
+(08.10. 09:03 — zwei Stunden nach der ersten Rücknahme)
+═══════════════════════════════════════════════════════════════════════════
+
+Der private Kalender hob seinen Stempel von `2026-10-08T03:07:28Z` auf
+**`2026-10-08T13:43:13Z`** — **08:43 Austin, mitten am Vormittag.**
+Gegengeprüft (08.10.–22.10., kein `nextPageToken`, `timeZone` unverändert,
+jüngster Termin-Stempel `2026-10-05T21:40:36Z`): **stempellos, zwanzigster
+Fall.** Alles, was das Board behauptet, steht.
+
+**Heute früh hatte ich das „täglich um 04:57 UTC" zurückgenommen und als
+belastbaren Rest notiert: „die Hübe passieren nachts."** Zwei Stunden später
+ist auch das widerlegt.
+
+**Was übrig bleibt, so eng formuliert, dass es hält:**
+> Der kalenderweite `updated`-Stempel kann sich **jederzeit** bewegen, ohne
+> dass ein Termin angefasst wurde. **Keine Uhrzeit, keine Tageszeit, kein
+> Rhythmus.**
+
+**Und die Konsequenz, die sich dadurch gerade nicht ändert:** das weite Fenster
+wird **jedes Mal** gezogen, wenn ein Stempel sich bewegt. Es gibt keine
+Tageszeit, bei der ich die Prüfung sparen darf — und das war schon vorher die
+Regel, weil der eine Fall mit Folgen (Sa 16:08) im Stempel aussah wie alle
+anderen.
+
+**Die Lehre, zum zweiten Mal an einem Tag:** *ich beschreibe diese Hübe seit
+zwanzig Fällen und habe zweimal mehr behauptet, als die Daten tragen.* Erst eine
+Minute, dann eine Tageszeit. **Beim nächsten Mal keine Eigenschaft hinzufügen,
+die nicht mindestens dreimal unabhängig belegt ist** — und auch dann als
+„bisher immer", nicht als „immer".
