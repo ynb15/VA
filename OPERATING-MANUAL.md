@@ -4323,3 +4323,40 @@ Tag. Nach der Regel vom 08.10. („zwei Messpunkte sind kein Muster") ist das
    Absender-Regel: er behandelt sie genauso wie ich.*
 4. **Was liegen bleibt, sage ich weiter als „liegt ungelesen"** — nicht als
    „er hat es vorgemerkt". Liegenbleiben ist kein Vorsatz, den ich kenne.
+
+═══════════════════════════════════════════════════════════════════════════════
+EIN SATZ ÜBER EINE GRUPPE VON THREADS IST KEINE MESSUNG — 08.10. 14:02
+═══════════════════════════════════════════════════════════════════════════════
+
+Am 08.10. um 13:03 habe ich notiert, neunzehn Threads seien „von
+`["UNREAD","INBOX"]` auf `["UNREAD","TRASH"]`" gewechselt, „alle ungelesen".
+Eine Stunde später, bei der Wiederholung desselben Aufrufs, trugen zwei davon
+`["TRASH"]` ohne `UNREAD`. Im Protokoll der Aufrufe von 13:03 nachgesehen:
+**sie trugen es dort schon.** Die Daten waren richtig, der Satz darüber war
+falsch.
+
+**Die Regel.** Wenn eine Gruppe von Threads sich ändert, wird der
+Gruppenbefund **nicht aus dem Muster der Mehrheit geschrieben**. Entweder
+jede Zeile einzeln gezählt und die Zahlen genannt — „siebzehn X, zwei Y" —
+oder, wenn das zu viel ist, ausdrücklich hingeschrieben, wie viele ich
+geprüft habe. **„Alle" über mehr als eine Handvoll Zeilen ist eine Behauptung
+und braucht eine Zählung.** Bei `labelIds` kostet die Zählung nichts: die
+Werte stehen in derselben Antwort.
+
+**Warum es nicht nur Form ist.** „Neunzehn ungelesen weggeworfen" beschreibt
+*alles markieren und löschen*. „Siebzehn ungelesen, zwei geöffnet und dann
+weggeworfen" beschreibt *durchgehen*. Aus derselben Mailbewegung werden zwei
+verschiedene Aussagen über ihn — und die, die ich zuerst geschrieben hatte,
+war die falsche. **Das ist genau die Sorte Fehler, die er nicht überprüfen
+kann, weil sie plausibel klingt.**
+
+**Praktisch, für jeden Durchgang:**
+- `labelIds` jeder Zeile einzeln vergleichen, auch wenn achtzehn davon
+  gleich aussehen. `["UNREAD","TRASH"]` und `["TRASH"]` sind zwei
+  verschiedene Handlungen von ihm.
+- Im Board und im Chat Zahlen nennen, nicht „alle".
+- Das Protokoll der eigenen Aufrufe ist nachlesbar
+  (`/root/.claude/projects/-home-user-VA/*.jsonl`). Wenn ein späterer
+  Durchgang einem früheren Befund widerspricht, **erst dort nachsehen,
+  bevor ich eine neue Handlung von ihm behaupte** — sonst wird aus meinem
+  Zusammenfassungsfehler eine erfundene Aktion von ihm.
