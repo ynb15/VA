@@ -4252,3 +4252,38 @@ deshalb am leichtesten eine falsche Karte aufs Board bringt.
 
 **Rundbriefliste:** `kj@sgnl.so` steht schon drauf (seit 07.10.). Zweite Mail
 in zwei Tagen — es ist eine tägliche Sequenz.
+
+═══════════════════════════════════════════════════════════════════════════
+EIN POSTEN DARF NICHT VERSCHWINDEN, WEIL SEIN DATUM VORBEI IST
+(08.10. 12:03 — die OnPress-Erstattung war beim Rollover vom Board gefallen)
+═══════════════════════════════════════════════════════════════════════════
+
+**Was passiert ist:** die Zeile *„OnPress 111,29 $"* stand bis Mi 07.10. in der
+`why`-Liste des Boards. Beim Rollover auf Donnerstag (07.10. 22:03) habe ich die
+Liste **neu geschrieben** und dabei die Posten des Vortags **nicht gegen die
+alte Liste geprüft**. Der Posten fiel heraus, ohne Stand, ohne Notiz.
+
+**Was dahinter stand:** Meryd Yannaccone, OnPress, **30.09. 13:26 Austin**,
+Vorgang `2350169`, Bestellung `SO91537353` (*Modern Wisdom 101*):
+*„I'll get that refund taken care of. **You should see the payment back to your
+card in 3-5 business days.**"* — **seit 30.09. 18:26Z kam im Faden nichts
+mehr.** Frist drei bis fünf Arbeitstage ab Di 30.09. = **Fr 03.10. bis
+Di 06.10.** (meine Notiz vom 01.10. schrieb Mi 07.10.; auf jede Rechnung
+vorbei).
+
+**Die Regel — sie gilt beim Tagesabschluss, ohne Ausnahme:**
+> Die neue `why`-Liste wird **Punkt für Punkt gegen die alte geprüft**. Jeder
+> Posten, der herausfällt, braucht einen **Grund im Log**: *erledigt* (mit
+> Belegstelle), *vom Betroffenen zurückgezogen*, oder *ausdrücklich nicht mehr
+> relevant*.
+> **„Das Datum ist vorbei" ist kein Grund.**
+
+*Der Ablauf einer Frist ist der Moment, in dem ein Posten wichtiger wird, nicht
+unwichtiger.* Ein zugesagtes Geld, das nicht gekommen ist, ist genau dann ein
+Thema, wenn die zugesagte Zeit verstrichen ist.
+
+**Und die Grenze meiner Sicht gehört dazu:** ob die 111,29 $ auf der Karte
+stehen, **sehe ich nicht** — ich habe keinen Kontozugang. Ich kann nur sagen,
+dass im Postfach nichts es bestätigt. **Nachsehen kann nur er.** Das steht so
+auf dem Board, damit die Zeile nicht als „Geld fehlt" gelesen wird, wenn es
+längst da ist.
