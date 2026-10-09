@@ -4416,3 +4416,39 @@ und eine Vermutung heißt im Protokoll Vermutung.
 „neunzehn, alle ungelesen" ohne Einzelzählung, hier „zwanzig" ohne
 Einzelliste. **Eine Zahl, deren Posten ich nicht aufgeschrieben habe, ist
 beim nächsten Durchgang kein Vergleichswert.**
+
+═══════════════════════════════════════════════════════════════════════════
+BEIM TAGESWECHSEL WERDEN ALLE ALTERSMARKEN GEPRÜFT, NICHT NUR DIE NEUESTE
+ZEILE — 08.10., Tagesabschluss
+═══════════════════════════════════════════════════════════════════════════
+
+Beim Donnerstagabschluss trugen **siebzehn** Altersmarken des Boards noch
+`heute`, `gestern` oder `morgen`. Die ältesten standen so seit dem
+**19.09.** — achtzehn Tage. Eine Zeile vom 06.10. las sich als „heute
+07:47", eine vom 05.10. als „heute 16:40". Dazu zwei `who`-Felder mit
+„Heute" als Überschrift und ein „— durch" in *Samstag 5.*, das meine eigene
+Formulierungsregel verletzt.
+
+**Die Regel.** Bei jedem Tageswechsel wird **jede** `class="age"`-Marke und
+**jedes** `who`-Feld gegen das Datum seiner eigenen Zeile geprüft, nicht nur
+die Zeilen des Vortags. Die Prüfung ist ein `grep` und kostet nichts:
+
+    grep -n 'class="age[^"]*">\(heute\|gestern\|morgen\)' dashboard/command-center.html
+    grep -n 'class="who">\(Heute\|Gestern\|Morgen\)'      dashboard/command-center.html
+
+Danach darf höchstens **eine** Marke relativ sein: das `gestern` der Zeile
+vom Vortag. Alles andere wird auf ein absolutes Datum gesetzt
+(`05.10. 16:40`, nicht `Mo 16:40` — ein Wochentag wird in sieben Tagen
+wieder falsch).
+
+**Die Unterscheidung, die dabei gilt:** *die Marke muss absolut sein, die
+Prosa innerhalb der Zeile darf relativ bleiben* — „was gestern noch auf dem
+Montag stand" ist in einer datierten Zeile lesbar, weil die Marke sie
+datiert. Ohne absolute Marke ist dieselbe Prosa eine Falschaussage.
+
+**Und die zweite Lehre dieses Tages:** *eine Rücknahme im Handbuch und im
+Chat ist keine Rücknahme am Board.* Das „täglich um 04:57 UTC" hatte ich um
+07:03 zurückgenommen und bis zum Tageswechsel um 22:02 in der `tiny`-Zeile
+stehen gelassen — fünfzehn Stunden. **Wenn ich eine Aussage zurücknehme,
+wird im selben Durchgang nachgesehen, wo sie am Board steht, und sie wird
+dort geändert — nicht erst beim nächsten Tageswechsel.**
