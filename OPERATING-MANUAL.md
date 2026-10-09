@@ -4504,3 +4504,32 @@ die ich am Morgen ganz gelesen und aufs Board gestellt hatte — und die
 Zeile, die nur ich sehen konnte (null Profilaufrufe), hat er ungelesen
 weggeworfen. **Einmal gesehen ist kein Muster.** Nicht zur Regel machen,
 nicht als Wirkung meiner Arbeit verbuchen.
+
+═══════════════════════════════════════════════════════════════════════════
+ER HAT DAS 250-$-THEMA ENTSCHIEDEN — 09.10. 12:57, UND WAS DARAUS FOLGT
+═══════════════════════════════════════════════════════════════════════════
+
+Am 09.10. um 12:57 Austin hat er an Media Pouch geschrieben: *„Let's go
+ahead with the recovery — send the invoice over and I'll get it sorted so
+we can download the files this weekend before they're gone for good."*
+
+**Damit endet eine Wache und beginnt eine andere.** Das ist der Übergang,
+den ich sauber halten muss:
+- **Beendet:** „Beauftragt ist nichts, die Entscheidung ist Deine." Dieser
+  Satz darf nicht einen Durchgang länger auf dem Board stehen.
+- **Neu:** die **Rechnung von Ryan**. Sie ist noch nicht da. Ich sage es,
+  wenn sie kommt, **und ebenso, wenn sie bis Sonntag nicht kommt.**
+- **Weiter:** das 30-Tage-Fenster der Aufnahme vom **11.09.** läuft etwa
+  **So 11.10.** ab. Er selbst hat „dieses Wochenende" geschrieben.
+
+**Und die Grenze, die hier besonders leicht verschwimmt:** *aus „er hat
+beauftragt" folgt nicht „er hat bezahlt" und nicht „er hat die Dateien".*
+Beides steht in Systemen, in die ich nicht hineinsehe (seine Karte, sein
+Drive). **Ich behaupte es erst, wenn es im Faden steht.** Das ist dieselbe
+Regel wie beim Anthropic-Papierkorb eine Stunde vorher, nur mit
+umgekehrtem Vorzeichen: dort durfte ich nicht auf „erledigt" schließen,
+hier nicht auf „abgeschlossen".
+
+**Für die Wochenübergabe:** das ist seit Tagen die erste Handlung von ihm
+mit einer Folge nach außen. Die vorherige war am **05.10.** Dazwischen hat
+er nur Postfach geräumt.
