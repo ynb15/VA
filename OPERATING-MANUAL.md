@@ -4471,3 +4471,36 @@ einer dritten, er wählt nicht zwischen den zwei.**
 die Vortagsgrenze zu nehmen. Sie ist jetzt nur Vorsicht statt Notwendigkeit,
 und sie kostet ein paar Zeilen mehr. *Die Regel bleibt, bis ein Fall sie
 widerlegt — nicht bis eine Messung sie überflüssig erscheinen lässt.*
+
+═══════════════════════════════════════════════════════════════════════════
+EIN PAPIERKORB IST KEIN ERLEDIGT-VERMERK, IN KEINE RICHTUNG — 09.10. 12:02
+═══════════════════════════════════════════════════════════════════════════
+
+Am 09.10. gegen Mittag hat er die Mail **„Please update your payment
+information"** (Anthropic, Karte `9299`) ungelesen in den Papierkorb
+gelegt — einen der zwei Posten, die ich als echt bezeichnet hatte.
+
+**Die beiden Fehlschlüsse, die hier beide falsch wären:**
+- *„Er hat es weggeworfen, also ist es erledigt."* Nein — der Papierkorb
+  sagt nichts über die Karte.
+- *„Er hat es weggeworfen, ohne es zu lesen, also hat er es übersehen."*
+  Auch nein — er kann die Karte längst im Anthropic-Konto erneuert haben
+  und die Mail deshalb nicht mehr brauchen.
+
+**Die Regel.** Wenn ein Posten in einem System liegt, in das ich nicht
+hineinsehe (ein Konto, eine Karte, ein Bankkonto), dann ist der Zustand der
+**Mail** dazu **kein Beleg über die Sache**. Der Posten bleibt auf dem
+Board, der neue Zustand der Mail wird daneben genannt, und **ich behaupte
+nach keiner Seite etwas.**
+
+**Was dazu gehört, und nicht vergessen werden darf:** die Zeile wird
+*nicht* stillschweigend gestrichen, weil die Mail weg ist. Das wäre
+derselbe Fehler wie am 08.10. mit OnPress — nur mit einem anderen Grund.
+**„Die Mail ist weg" ist so wenig ein Grund wie „das Datum ist vorbei".**
+
+**Nebenbeobachtung, ausdrücklich ohne Deutung:** die zwei Mails, die er bei
+diesem Durchgang *geöffnet* hat (Gevity, Mycoskie), sind genau die zwei,
+die ich am Morgen ganz gelesen und aufs Board gestellt hatte — und die
+Zeile, die nur ich sehen konnte (null Profilaufrufe), hat er ungelesen
+weggeworfen. **Einmal gesehen ist kein Muster.** Nicht zur Regel machen,
+nicht als Wirkung meiner Arbeit verbuchen.
