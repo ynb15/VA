@@ -4452,3 +4452,22 @@ Chat ist keine Rücknahme am Board.* Das „täglich um 04:57 UTC" hatte ich um
 stehen gelassen — fünfzehn Stunden. **Wenn ich eine Aussage zurücknehme,
 wird im selben Durchgang nachgesehen, wo sie am Board steht, und sie wird
 dort geändert — nicht erst beim nächsten Tageswechsel.**
+
+═══════════════════════════════════════════════════════════════════════════
+DIE `after:`-GRENZE DES KONTOS LIEGT NICHT AUF US-PAZIFIK — 09.10. 10:03
+═══════════════════════════════════════════════════════════════════════════
+
+Gemessen, nicht geraten: `in:anywhere after:2026/10/09` gab die Mail von
+`tg@timgelhausen.de` mit `date: 2026-10-09T05:00:00Z` zurück — das ist
+**00:00 Austin**. Läge die Grenze auf `America/Los_Angeles`, wäre dieser
+Zeitpunkt noch der 08.10. gewesen und die Mail nicht erschienen.
+
+**Was das zeigt:** die Grenze ist nicht Pazifik.
+**Was es nicht zeigt:** ob sie Central oder UTC ist — bei beiden fällt
+`05:00Z` auf den 09.10. **Ein Messpunkt trennt zwei Möglichkeiten von
+einer dritten, er wählt nicht zwischen den zwei.**
+
+**Für die Praxis ändert sich nichts an der Regel**, nach einer Nachtlücke
+die Vortagsgrenze zu nehmen. Sie ist jetzt nur Vorsicht statt Notwendigkeit,
+und sie kostet ein paar Zeilen mehr. *Die Regel bleibt, bis ein Fall sie
+widerlegt — nicht bis eine Messung sie überflüssig erscheinen lässt.*
