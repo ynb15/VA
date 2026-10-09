@@ -4556,3 +4556,25 @@ um zu entscheiden; mehr darf ich nicht beitragen.
 *er hatte um eine Rechnung gebeten („send the invoice over"), gekommen ist
 ein Zahlungslink.* Das ist eine Lücke zwischen Wunsch und Lieferung, keine
 Empfehlung. **Ich benenne sie und rate nicht dazu, sie zu schließen.**
+
+═══════════════════════════════════════════════════════════════════════════
+DREIUNDZWANZIGSTER STEMPELLOSER FALL — 09.10. 14:40, ZWEI AN EINEM TAG
+═══════════════════════════════════════════════════════════════════════════
+
+Privat hob zweimal am 09.10.: `20:27:14Z` → `17:04:19Z` (12:04 Austin, der
+zweiundzwanzigste) und `17:04:19Z` → **`19:40:54Z`** (14:40 Austin, der
+dreiundzwanzigste). Beide gegengeprüft, beide stempellos: zehn Termine,
+jüngster Termin-Stempel unverändert `2026-10-05T21:40:36Z`, kein
+`nextPageToken`, `timeZone` unverändert.
+
+**Zwei Hübe an einem Tag ist in dieser Zählung neu.** Das ist **keine neue
+Eigenschaft** und wird nicht zur Regel: es ist ein weiterer Beleg für den
+eng gefassten Satz, der seit dem 08.10. gilt — *der kalenderweite
+`updated`-Stempel kann sich jederzeit bewegen, ohne dass ein Termin
+angefasst wurde; keine Uhrzeit, keine Tageszeit, kein Rhythmus.* Eine
+Häufigkeit gehört da nicht hinein, solange ich sie nicht dreimal gezählt
+habe.
+
+**Kostenpunkt, der die Routine rechtfertigt:** jeder Hub kostet einen
+weiten Fensterzug. Das ist der Preis dafür, dass das Board nie behauptet,
+ein Termin sei weg, wenn nur ein Stempel gewandert ist.
