@@ -4387,3 +4387,32 @@ kein Befund; sie werden erst einer, wenn die Differenz nicht aufgeht.
 **Nichts aufs Board, nichts in den Chat.** Keine Löschung behauptet.
 Einundzwanzigster Fall, und die eng gefasste Formulierung hält weiter: kein
 Rhythmus, keine Tageszeit.
+
+═══════════════════════════════════════════════════════════════════════════
+BEI BEOBACHTETEN THREADS WIRD DIE NACHRICHTENLISTE MITGESCHRIEBEN, NICHT
+NUR DIE ZAHL — 08.10. 20:02
+═══════════════════════════════════════════════════════════════════════════
+
+Der Virgin-Active-Thread `19eb3e9b7799b16e` stand den ganzen Tag auf
+`"messageCount":20` und stand um 20:02 auf **19**. Ich konnte **nicht sagen,
+welche Nachricht fehlt**, weil ich nur die Zahl protokolliert hatte und die
+`search_threads`-Vorschau bloß die fünf ältesten Nachrichten zeigt.
+
+**Die Regel.** Für jeden Thread, der eine offene Sache trägt — Geld, eine
+Zusage, eine Anweisung an ihn — wird **beim ersten vollen Lesen die Liste
+der Nachrichten-IDs mit Datum und `labelIds` ins Tagesprotokoll
+geschrieben**. Danach ist jede Änderung der Zahl auflösbar, statt geraten.
+Die Liste wird am Tageswechsel in die Übergabe mitgenommen, solange die
+Sache offen ist.
+
+**Und die Erklärung, die zuerst geprüft wird, bevor von Handeln geredet
+wird:** *Google leert den Papierkorb nach dreißig Tagen automatisch.* Eine
+schwindende Nachrichtenzahl in einem Thread mit alten `TRASH`-Nachrichten
+ist zuerst Hausputz des Anbieters und erst dann eine Handlung von ihm. Ohne
+die Liste von vorher ist auch das nur eine Vermutung aus dem Zeitabstand —
+und eine Vermutung heißt im Protokoll Vermutung.
+
+**Das ist derselbe Fehler wie am Mittag, eine Ebene tiefer.** Dort war es
+„neunzehn, alle ungelesen" ohne Einzelzählung, hier „zwanzig" ohne
+Einzelliste. **Eine Zahl, deren Posten ich nicht aufgeschrieben habe, ist
+beim nächsten Durchgang kein Vergleichswert.**
