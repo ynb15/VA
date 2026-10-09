@@ -4533,3 +4533,26 @@ hier nicht auf „abgeschlossen".
 **Für die Wochenübergabe:** das ist seit Tagen die erste Handlung von ihm
 mit einer Folge nach außen. Die vorherige war am **05.10.** Dazwischen hat
 er nur Postfach geräumt.
+
+═══════════════════════════════════════════════════════════════════════════
+ZAHLUNGSSEITEN WERDEN NICHT GEÖFFNET — 09.10. 14:02
+═══════════════════════════════════════════════════════════════════════════
+
+Ryan hat am 09.10. um 13:04 einen **Stripe-Zahlungslink** geschickt
+(`buy.stripe.com/…`). In seiner Mail steht **kein Betrag**.
+
+**Die Regel, und sie gilt ohne Ausnahme:** einen Zahlungs-, Checkout- oder
+Bezahllink **öffne ich nicht**, auch nicht, um den Betrag zu prüfen. Was
+ich über den Betrag sage, stammt aus dem Mailtext — hier aus den Mails vom
+30.09. und 05.10., die 250 $ nennen. **Dass dieser Link 250 $ fordert,
+behaupte ich nicht**, weil ich es nicht gesehen habe und nicht nachsehen
+werde.
+
+**Was stattdessen gesagt wird:** dass ein Zahlungslink da ist, von wem, mit
+welchem Begleitsatz, und dass der Betrag in der Mail fehlt. Das reicht ihm,
+um zu entscheiden; mehr darf ich nicht beitragen.
+
+**Und die zweite Feststellung des Falls, die auf dem Board stehen bleibt:**
+*er hatte um eine Rechnung gebeten („send the invoice over"), gekommen ist
+ein Zahlungslink.* Das ist eine Lücke zwischen Wunsch und Lieferung, keine
+Empfehlung. **Ich benenne sie und rate nicht dazu, sie zu schließen.**
