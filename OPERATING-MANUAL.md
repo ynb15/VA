@@ -4713,3 +4713,25 @@ Nachrichten zu lesen.
 **`INBOX.threadsUnread` wird ab jetzt bei jedem Tagesabschluss
 mitgeschrieben.** Ändert sich die Zahl stärker als die Woche erklärt, war
 er im alten Stapel — und das ist dann zu prüfen, nicht zu vermuten.
+
+═══════════════════════════════════════════════════════════════════════
+VIERUNDZWANZIGSTER STEMPELLOSER FALL — 10.10. 11:53, SIEBEN MINUTEN VOR
+EINEM TERMIN
+
+Privat hob von `2026-10-09T19:40:54Z` auf **`2026-10-10T16:53:23Z`** =
+**11:53 Austin**, sieben Minuten vor *Rob & Ryan* (12:00–13:00).
+Gegengeprüft (10.10.–24.10., `orderBy: lastModified`, `pageSize: 100`):
+zehn Termine, kein `nextPageToken`, `timeZone` weiter `America/Chicago`,
+jüngster Termin-Stempel unverändert `2026-10-05T21:40:36Z`. Die
+Zahlendifferenz zum Tageswechsel („privat zehn" für 10.10.–23.10.) geht
+auf: zehn zu zehn, ein Tag mehr Fenster bringt keinen Termin.
+**Stempellos.**
+
+**Die Nähe zum Termin ist ein Datum, kein Muster.** Die dreiundzwanzig
+vorigen Fälle lagen nachts (der 04:57-UTC-Lauf), mittags und
+nachmittags, ohne erkennbaren Bezug zu einem Termin. Nach meiner eigenen
+Drei-Beobachtungen-Schwelle wird aus einem Fall nichts. Der Satz bleibt
+wie er ist: *der kalenderweite `updated`-Stempel kann sich jederzeit
+bewegen, ohne dass ein Termin angefasst wurde; keine Uhrzeit, keine
+Tageszeit, kein Rhythmus.* **Sollte ein zweiter und dritter Hub kurz vor
+einem Termin kommen, wird das hier nachgetragen — nicht vorher.**
