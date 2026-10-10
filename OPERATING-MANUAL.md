@@ -4597,3 +4597,32 @@ absolutes Datum. Der Prüfbefehl bleibt:
 **Und was er zeigen muss:** nur Zeilen des Vortags, und **nie** `heute`
 oder `morgen` nach einem Tageswechsel. Eine Zeile von vorgestern mit
 `gestern` ist derselbe Fehler wie eine vom 19.09. mit `heute`.
+
+═══════════════════════════════════════════════════════════════════════════
+`internalDate` IST NICHT DIE ANKUNFTSZEIT — 10.10. 07:04
+═══════════════════════════════════════════════════════════════════════════
+
+Ein DMARC-Bericht von `noreply-dmarc-support@google.com` trug
+`internalDate` / `date` = **`2026-10-09T23:59:59Z`**, also 18:59:59 Austin.
+In den Durchgängen um 19:03, 20:02, 21:02 und 22:02 war er **nicht** zu
+sehen; beim Durchgang um 07:04 am nächsten Morgen war er da, mit dem
+höchsten `historyId` des ganzen Fensters (2228321).
+
+**Die Regel.** Bei Maschinenberichten ist der Zeitstempel oft das **Ende
+des Berichtszeitraums**, nicht der Moment der Zustellung. Wenn eine Mail
+mit einem Zeitstempel auftaucht, der in einem Durchgang liegt, in dem ich
+sie nicht gesehen habe, dann **ist das kein Fehler meines Durchgangs** —
+und ich schreibe nicht „sie lag schon um 18:59 im Postfach".
+
+**Was die Reihenfolge wirklich sagt:** der `historyId` ordnet nach dem
+Zeitpunkt der letzten Änderung im Postfach. Für die Frage *„wann ist das
+hier erschienen?"* ist er der bessere Anhaltspunkt als `date`. Für die
+Frage *„wann wurde das geschrieben?"* bleibt `date` richtig. **Zwei
+verschiedene Fragen, zwei verschiedene Felder.**
+
+**Nebenbefund, derselbe Fall:** die Mail trug `labelIds: ["Label_2"]`,
+**ohne `INBOX`**. Er hat also Filter, die Maschinenpost am Posteingang
+vorbeiführen. Das erklärt, warum solche Berichte in den Durchgängen bisher
+nie auftauchten — **nicht, weil keine kommen, sondern weil sie nicht in den
+Posteingang kommen.** Nichts fürs Board; seine Einrichtung, und sie tut,
+was sie soll.
