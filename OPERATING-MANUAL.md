@@ -4735,3 +4735,84 @@ wie er ist: *der kalenderweite `updated`-Stempel kann sich jederzeit
 bewegen, ohne dass ein Termin angefasst wurde; keine Uhrzeit, keine
 Tageszeit, kein Rhythmus.* **Sollte ein zweiter und dritter Hub kurz vor
 einem Termin kommen, wird das hier nachgetragen — nicht vorher.**
+
+═══════════════════════════════════════════════════════════════════════
+DIE WIEDERHERSTELLUNG IST DURCH — 10.10. 12:13, UND WAS AB JETZT GILT
+
+Media Pouch am 10.10. um 12:13 Austin: *„we recovered your folder
+yesterday and just received your payment. Your folder can be accessed
+here and be available for the next 72 hours."* **Damit ist gezahlt und
+geliefert**, und zwar belegt im Faden, wie es die Regel verlangt.
+
+- **Die laufende Frist ist jetzt das 72-Stunden-Fenster: ab 12:13, also
+  etwa Di 13.10. mittags.** Das 30-Tage-Fenster ist gegenstandslos.
+- Der Ordner ist **derselbe wie am 11.09.**
+  (`1t7cRbJIzqltGnQ6vj-PpYqMZFH4ym36M`), neu gefüllt.
+- Inhalt vollständig: Hauptvideo 2,66 GB · `.drp` · sechs Audiospuren
+  (CAM 1–4, MIC 1, MIC 2) je 1,49 GB · vier ISO-Videos (110 MB, 19,3 GB,
+  24,0 GB, 27,8 GB ≈ 71 GB).
+- Am 10.10. um **12:37** entstanden Kopien vom Hauptvideo und allen
+  sechs Audiospuren, **keine von den vier ISO-Videos**.
+- **Wem die Kopien gehören, ist offen.** `owner = 'me'` gibt für den
+  Ordner nichts, `get_file_metadata` liefert kein Besitzerfeld. **Nicht
+  als geklärt behandeln.**
+
+**Für den Ton:** die Sache ist von „er muss entscheiden" über „er hat
+beauftragt" und „er hat gelesen" zu „bezahlt und geliefert" gewandert.
+Jede Stufe wurde erst gesagt, als sie belegt war. **So bleibt es:
+„heruntergeladen" wird erst behauptet, wenn es belegt ist** — und aus dem
+Postfach ist das nicht zu sehen.
+
+═══════════════════════════════════════════════════════════════════════
+WOCHENTAGE WERDEN GERECHNET, NICHT MITGESCHLEPPT
+
+Am 10.10. habe ich alle `(Mo|Di|Mi|Do|Fr|Sa|So) TT.MM.`-Marken des
+Boards gegen den echten Kalender gerechnet. **Drei von ihnen waren
+falsch**, eine davon seit dem 02.10. in jedem Protokoll: *„Mo 13.10."* —
+der 13.10.2026 ist ein **Dienstag**. Dazu *„Di 30.09."* (ein Mittwoch)
+und die daraus gebaute Arbeitstagsspanne.
+
+**Die Prüfung gehört ab jetzt zum Tagesabschluss**, als Rechnung, nicht
+als Erinnerung:
+
+```
+python3 -I - <<'PY'
+import re, datetime
+s=open('dashboard/command-center.html',encoding='utf-8').read()
+WD=['Mo','Di','Mi','Do','Fr','Sa','So']
+for m in re.finditer(r'\b(Mo|Di|Mi|Do|Fr|Sa|So)\s(\d{2})\.(\d{2})\.', s):
+    lab,d,mo=m.group(1),int(m.group(2)),int(m.group(3))
+    real=WD[datetime.date(2026,mo,d).weekday()]
+    if real!=lab: print('falsch:',m.group(0),'->',real)
+PY
+```
+
+**Und eine Lehre über Korrekturen:** die OnPress-Nachzählung vom 08.10.
+war *schlechter* als meine erste Notiz vom 01.10. Die erste hatte
+Mi 07.10. und war richtig (drei Arbeitstage nach Mi 30.09. = Mo 05.10.,
+fünf = Mi 07.10.). Die „Korrektur" hat den Fehler eingeführt.
+**Eine Nachzählung wird genauso belegt wie die Zahl, die sie ersetzt —
+Arbeitstage werden aufgezählt, nicht geschätzt.**
+
+═══════════════════════════════════════════════════════════════════════
+`in:inbox is:unread` ÜBERSIEHT, WAS GELESEN IM POSTEINGANG LIEGT
+
+Beim 11:02-Durchgang am 10.10. habe ich den Posteingang über
+`in:inbox is:unread newer_than:5d` gezählt und dabei verpasst, dass in
+derselben Postfachsitzung auch die **gelesene** Media-Pouch-Mail vom
+05.10. in den Papierkorb ging (`historyId` 2228620).
+
+**Wenn ich wissen will, was er in einer Sitzung getan hat, zähle ich
+nicht den ungelesenen Posteingang, sondern vergleiche die `labelIds`
+der beobachteten Threads.** Die Unread-Abfrage sagt, wie viel noch
+offen ist — nicht, was passiert ist.
+
+═══════════════════════════════════════════════════════════════════════
+FÜNFUNDZWANZIGSTER STEMPELLOSER FALL — 10.10. 12:22
+
+Privat hob von `2026-10-10T16:53:23Z` auf **`2026-10-10T17:22:07Z`** =
+**12:22 Austin**, neunundzwanzig Minuten nach dem vierundzwanzigsten.
+Gegengeprüft (10.10.–24.10., zehn Termine, kein `nextPageToken`,
+`timeZone` unverändert, jüngster Termin-Stempel weiter
+`2026-10-05T21:40:36Z`). **Stempellos.** Zweiter Tag mit zwei Hüben;
+bleibt ohne Regel.
