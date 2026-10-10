@@ -4816,3 +4816,23 @@ Gegengeprüft (10.10.–24.10., zehn Termine, kein `nextPageToken`,
 `timeZone` unverändert, jüngster Termin-Stempel weiter
 `2026-10-05T21:40:36Z`). **Stempellos.** Zweiter Tag mit zwei Hüben;
 bleibt ohne Regel.
+
+═══════════════════════════════════════════════════════════════════════
+SECHSUNDZWANZIGSTER STEMPELLOSER FALL — 10.10. 16:00, GESCHÄFTLICH
+
+Geschäftlich hob von `2026-10-08T09:07:38Z` — wo der Stempel **zwei
+Tage** stillstand — auf **`2026-10-10T21:00:01Z` = 16:00 Austin**.
+Gegengeprüft (10.10.–24.10., `orderBy: lastModified`, `pageSize: 100`):
+**vier Termine** wie beim Tageswechsel, kein `nextPageToken`,
+`timeZone` weiter `America/Los_Angeles`, jüngster Termin-Stempel
+`2026-09-29T17:11:12Z`. **Stempellos**, und der erste geschäftliche seit
+dem zwölften Fall.
+
+**Damit ist belegt, was bisher nur für den privaten Kalender belegt war:
+die Hübe treffen beide Kalender, unabhängig voneinander.** Am 10.10.
+hoben privat 11:53 und 12:22, geschäftlich 16:00 — drei Hübe an einem
+Tag, auf zwei Kalendern, kein Termin angefasst.
+
+**Die Sekunde `:00:01` nach der vollen Stunde trage ich nur ein.** Die
+im September zurückgezogene Vermutung eines täglichen 04:57-UTC-Laufs
+wird davon nicht wiederbelebt: ein Zeitpunkt ist kein Rhythmus.
