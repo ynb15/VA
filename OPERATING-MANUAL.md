@@ -4648,3 +4648,26 @@ Rundbrief ist keine Nachricht.
 heißt nicht, dass ihr Inhalt erwartbar ist. Die Gevity-Lehre vom 07.10.
 gilt weiter — wenn im Betreff ein Datum oder eine Frist steht, wird sie
 ganz gelesen, Rhythmus hin oder her.
+
+═══════════════════════════════════════════════════════════════════════
+DIE ALTERSMARKEN-PRÜFUNG GILT AUCH FÜR DEN FLIESSTEXT, NICHT NUR FÜR DIE
+`age`-SPALTEN
+
+Am 10.10. um 10:02 standen auf dem Samstagsboard noch vier Zeitmarken aus
+Freitag: „seit neun Stunden" im `tiny`, „Du hast heute 12:57 beauftragt"
+und „seit heute Mittag" in den `why`-Punkten 2 und 4, „Patrick Reiser,
+heute 01:33" in den Rundbriefdaten. Beim Tageswechsel zwölf Stunden
+vorher hatte ich nur die `age`-Spalten der Zeilen durchgesehen.
+
+**Die Prüfung beim Tageswechsel umfasst ab jetzt:**
+  grep -n '[Hh]eute\|[Gg]estern\|[Mm]orgen\|seit [a-z]* Stunden\|vorhin\|gerade'
+auf die Zeilen der Lede, des `tiny`, der `h2` und des `why` — nicht nur
+`class="age"`. Jede Fundstelle wird gegen das neue Datum gelesen und auf
+eine absolute Angabe gesetzt, wenn sie sich auf einen Vortag bezieht.
+
+**Warum es mehr als Kosmetik ist:** Punkt 2 lautete „Du hast heute 12:57
+beauftragt — jetzt wartet die Rechnung." Es wartet keine Rechnung; es
+liegt ein Stripe-Link ohne Betrag. Der Fließtext darunter sagte das
+richtig, die Überschrift sagte etwas Falsches. **Eine abgestandene
+Zeitmarke zieht leicht eine falsche Behauptung mit sich**, weil die
+Überschrift aus dem Gefühl des Vortags geschrieben ist.
