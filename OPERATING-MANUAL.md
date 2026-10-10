@@ -4578,3 +4578,22 @@ habe.
 **Kostenpunkt, der die Routine rechtfertigt:** jeder Hub kostet einen
 weiten Fensterzug. Das ist der Preis dafür, dass das Board nie behauptet,
 ein Termin sei weg, wenn nur ein Stempel gewandert ist.
+
+═══════════════════════════════════════════════════════════════════════════
+PRÄZISIERUNG DER ALTERSMARKEN-REGEL — 09.10., Tagesabschluss
+═══════════════════════════════════════════════════════════════════════════
+
+Die Regel vom 08.10. sagte: „danach darf höchstens **eine** Marke relativ
+sein: das `gestern` der Zeile vom Vortag." **Das war zu eng formuliert.**
+Beim Freitagabschluss hatte der Vortag vier Zeilen, alle zu Recht mit
+`gestern`.
+
+**Richtig ist:** relativ darf eine Marke nur sein, wenn ihre Zeile vom
+**Vortag** ist — und zwar für *jede* solche Zeile. Alles Ältere trägt ein
+absolutes Datum. Der Prüfbefehl bleibt:
+
+    grep -n 'class="age[^"]*">\(heute\|gestern\|morgen\)' dashboard/command-center.html
+
+**Und was er zeigen muss:** nur Zeilen des Vortags, und **nie** `heute`
+oder `morgen` nach einem Tageswechsel. Eine Zeile von vorgestern mit
+`gestern` ist derselbe Fehler wie eine vom 19.09. mit `heute`.
