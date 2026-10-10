@@ -4626,3 +4626,25 @@ vorbeiführen. Das erklärt, warum solche Berichte in den Durchgängen bisher
 nie auftauchten — **nicht, weil keine kommen, sondern weil sie nicht in den
 Posteingang kommen.** Nichts fürs Board; seine Einrichtung, und sie tut,
 was sie soll.
+
+═══════════════════════════════════════════════════════════════════════════
+JUSTIN WELSH KOMMT SAMSTAGS FRÜH — DREIMAL BELEGT, 10.10. 08:03
+═══════════════════════════════════════════════════════════════════════════
+
+`hello@justinwelsh.me` ist dreimal beobachtet, jedes Mal an einem Samstag
+zwischen **07:10 und 07:16 Austin**: Sa 12.09. 07:16 (von ihm in den
+Papierkorb), Sa 03.10. 07:10, Sa 10.10. 07:11.
+
+**Drei unabhängige Beobachtungen — damit ist die Schwelle der Musterregel
+erreicht**, und es darf als **„bisher immer samstags früh"** notiert
+werden. *Nicht als „immer": drei ist die Untergrenze, nicht der Beweis.*
+
+**Praktischer Nutzen:** am Samstagmorgen ist diese Mail erwartbar. Sie
+braucht kein volles Lesen, solange der Betreff nach Rundbrief aussieht und
+der Absender stimmt. **Fällt sie aus, ist das nichts** — ein ausgefallener
+Rundbrief ist keine Nachricht.
+
+**Und der Gegenhinweis, der dazugehört:** dass eine Mail erwartbar ist,
+heißt nicht, dass ihr Inhalt erwartbar ist. Die Gevity-Lehre vom 07.10.
+gilt weiter — wenn im Betreff ein Datum oder eine Frist steht, wird sie
+ganz gelesen, Rhythmus hin oder her.
