@@ -4671,3 +4671,45 @@ liegt ein Stripe-Link ohne Betrag. Der Fließtext darunter sagte das
 richtig, die Überschrift sagte etwas Falsches. **Eine abgestandene
 Zeitmarke zieht leicht eine falsche Behauptung mit sich**, weil die
 Überschrift aus dem Gefühl des Vortags geschrieben ist.
+
+═══════════════════════════════════════════════════════════════════════
+ER SORTIERT AUCH EIN, NICHT NUR WEG — 10.10., ZWISCHEN 10:02 UND 11:02
+
+Bis heute hatte ein Postfachbesuch von ihm in meinen Beobachtungen genau
+zwei Ergebnisse: ungelesen in den Papierkorb, oder unverändert liegen
+lassen. Am 10.10. kam ein drittes: **beide Jentjens-Mails** (06.10. und
+09.10.) trugen danach nur noch `Label_7786317299810343705` =
+**`Targets/Tamay Jentjens`** — gelesen, aus dem Posteingang heraus,
+einsortiert.
+
+**Folgen für die Messung:**
+1. **Eine Mail, die aus `in:inbox is:unread` verschwindet, ist nicht
+   automatisch im Papierkorb.** Drei Wege führen heraus: gelesen,
+   gelöscht, einsortiert. Wer das nicht einzeln prüft, schreibt
+   „weggeworfen" über etwas, das abgelegt wurde. Der Weg dahin:
+   `get_message` mit `messageFormat: METADATA_ONLY` auf die
+   Nachrichten-ID und die `labelIds` lesen.
+2. **Eine `Label_…`-ID ist keine Aussage.** Immer über `list_labels`
+   auflösen, bevor sie auf dem Board auftaucht.
+3. **Filter von Hand unterscheiden:** ein Filter greift beim Eingang.
+   Lag die Mail vorher Tage ungelesen im Posteingang, war es keine
+   Filterregel. Das ist ein Schluss aus dem Zeitverlauf — als solcher
+   benennen.
+4. **`UNREAD` weg heißt nicht gelesen.** Es heißt, die Marke ist weg.
+   Auf dem Board steht deshalb „als gelesen markiert", nicht „Du hast
+   gelesen".
+
+═══════════════════════════════════════════════════════════════════════
+`list_labels` LIEFERT DIE GRUNDLINIE ÜBER DAS GANZE POSTFACH
+
+Meine Mailabfragen schauen fünf Tage zurück; ein Räumen im alten Stapel
+sieht ich damit nicht. `list_labels` gibt pro Label `threadsTotal` und
+`threadsUnread` für das **ganze** Postfach, in einem Aufruf, ohne
+Nachrichten zu lesen.
+
+**Stand 10.10. 11:02 Austin:** `INBOX` 146 Threads / **43 ungelesen** ·
+`UNREAD` 65 · `TRASH` 311 / 232 ungelesen · `SENT` 545 · `DRAFT` 16.
+
+**`INBOX.threadsUnread` wird ab jetzt bei jedem Tagesabschluss
+mitgeschrieben.** Ändert sich die Zahl stärker als die Woche erklärt, war
+er im alten Stapel — und das ist dann zu prüfen, nicht zu vermuten.
