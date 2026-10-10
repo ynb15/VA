@@ -4836,3 +4836,26 @@ Tag, auf zwei Kalendern, kein Termin angefasst.
 **Die Sekunde `:00:01` nach der vollen Stunde trage ich nur ein.** Die
 im September zurückgezogene Vermutung eines täglichen 04:57-UTC-Laufs
 wird davon nicht wiederbelebt: ein Zeitpunkt ist kein Rhythmus.
+
+═══════════════════════════════════════════════════════════════════════
+SIEBENUNDZWANZIGSTER FALL, UND VIER AN EINEM TAG — 10.10.
+
+Geschäftlich hob ein zweites Mal, von `21:00:01Z` auf
+**`21:13:22Z` = 16:13 Austin**, dreizehn Minuten nach dem
+sechsundzwanzigsten. Gegengeprüft: dieselben vier Termine, dieselben
+Termin-Stempel. **Stempellos.**
+
+**Bilanz des 10.10.: vier Hübe** — privat 11:53 und 12:22, geschäftlich
+16:00 und 16:13 — **und kein einziger Termin bewegt.** Das ist der
+bisherige Höchststand an einem Tag.
+
+**Warum die Routine ihren Preis wert ist:** vier Hübe, vier weite
+Fensterzüge. Ohne den Gegentest hätte das Board an diesem Tag **vier
+Terminänderungen behauptet, die es nicht gab.** Genau dafür steht die
+Regel da.
+
+**Die Formulierung bleibt wörtlich unverändert:** *der kalenderweite
+`updated`-Stempel kann sich jederzeit bewegen, ohne dass ein Termin
+angefasst wurde; keine Uhrzeit, keine Tageszeit, kein Rhythmus.*
+Eine Häufigkeit von vier an einem Tag ist ein Zählwert, keine
+Eigenschaft — und wird nicht zur Erwartung.
