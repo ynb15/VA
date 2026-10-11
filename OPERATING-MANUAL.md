@@ -4909,3 +4909,46 @@ derselben Mail nannten vier verschiedene Dinge:
 4. Ein Datum aus so einer Mail kommt **nie** auf das Board als Termin.
    Es kommt, wenn überhaupt, als „der Absender nennt zwei verschiedene
    Daten" — wie beim Elevation Camp am 09.10.
+
+═══════════════════════════════════════════════════════════════════════
+ER IST IN KAPSTADT — 10.10. BIS 04.11., VON IHM SELBST EINGETRAGEN
+
+Am 11.10. zwischen **06:30 und 06:33 Austin** hat er im privaten
+Kalender einen ganztägigen Block **`Kapstaad`** angelegt:
+`start: 2026-10-10`, `end: 2026-11-05` (API-Ende exklusiv, also
+**10.10. bis 04.11.**), `transparency: transparent`.
+
+**Damit ist der Widerspruch Deutschland/Südafrika erledigt** (01.10. an
+Enfold gegen 03.10. an Ken). Er ist von ihm entschieden, nicht von mir
+aufgelöst — **und er kommt von der Liste der offenen Widersprüche.**
+Was bleibt: Kyle Kingsbury 31.08. in der Databank gegen Sa 17.10.
+ganztägig im Kalender.
+
+**In derselben Runde bewegt:** `FSC` von So 11.10. auf Sa 17.10.
+10:00–12:00 · `Rob & Ryan` von Sa 10.10. 12:00 auf So 11.10.
+06:00–07:00 · `Monatsrückblick` vom 30.09. auf So 11.10. 03:00–05:00 ·
+`N26: Bali Claim` auf Mi 14.10. 08:00 · `Follow-Up: Brendan Kane` auf
+Mi 14.10. 07:00 · **neu** `Writing: Entreprisoneur` Mo 12.10.
+02:30–05:30 Austin · die `Morning Routine` vom 11.10. ist nicht mehr da.
+
+**Die Zeiten sind in SAST gedacht** — das ist meine Lesart, er hat
+nichts dazu gesagt: 02:30 Austin = 09:30 Kapstadt, 06:00 = 13:00,
+03:00 = 10:00, 08:00 = 15:00. **Auf dem Board bleibt alles Austiner
+Zeit.** Das ist seine Festlegung und ändert sich nicht, nur weil er
+verreist.
+
+**Der Geschäftskalender steht seit dem 11.10. auf
+`timeZone: Africa/Johannesburg`** (vorher `America/Los_Angeles`, davor
+am 05.10. schon einmal umgestellt). **Das ist der Grund, warum bei jedem
+`list_events` auf diesen Kalender `timeZone: America/Chicago`
+mitgegeben wird** — ohne das wandern alle zonenlosen Angaben.
+
+**Was dadurch in einem anderen Licht steht, ohne ihn zu drängen:** der
+Virgin-Active-Brief von Hand ist eine südafrikanische Sache (Mathew
+Glass, `virginactive.co.za`, Ticket 709511) und liegt seit Di 06.10.
+ungelesen. **Nebeneinanderstellen, nicht raten, nicht schieben.**
+
+**Austiner Termine, die jetzt im Block liegen:** Writers Social
+Sa 17.10. 19:00 · ATX-Workshop Di 20.10. · Elevation Camp Köln
+24.–25.10. **Nichts davon wird von mir angefasst oder kommentiert,
+solange er nichts sagt.**
