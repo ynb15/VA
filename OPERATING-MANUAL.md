@@ -4881,3 +4881,31 @@ um fünf Stunden voraus (CDT, `-05:00`).
 **Was es gekostet hätte:** fünf Stunden zu früh gerollt heißt: falscher
 Wochentag in der Lede, ein Tagesabschluss in der Datei des nächsten
 Tages, und alle Altersmarken des laufenden Tages auf „gestern".
+
+═══════════════════════════════════════════════════════════════════════
+TEXT- UND HTML-TEIL EINER MAIL KÖNNEN VERSCHIEDENE INHALTE TRAGEN
+
+Am 10.10. um 20:27 Austin kam ein Rundbrief der Hailey Foundation
+(`joel@haileyfoundation.org`, neuer Absender, Mailchimp). Vier Stellen
+derselben Mail nannten vier verschiedene Dinge:
+
+- **Betreff:** *„Save the Date: Holiday Lunch & Seminar"*
+- **`snippet`** (aus dem HTML-Teil): Seminar *„Looking Ahead: Animal Law
+  2027"*, freies Holiday Lunch **Dec. 6th**
+- **`plaintextBody`:** Spay Day Dinner **Feb. 25**, India Palace,
+  San Antonio, 19:00
+- **Slug der Browser-Ansicht:** `spay-day-banquet-feb-27-7pm-at-la-fonda`
+
+**Die Regel, die daraus folgt:**
+1. `messageFormat: PLAIN_TEXT` gibt **den Text-Teil**, nicht „die Mail".
+   Bei Massenversendern ist der Text-Teil oft eine ältere Kampagne, die
+   nicht mitgepflegt wurde.
+2. **Wenn Betreff oder `snippet` dem `plaintextBody` widersprechen, habe
+   ich zwei Versionen vor mir und nicht eine Mail.** Dann wird beides
+   benannt, nicht eines als „der Inhalt" ausgegeben.
+3. Der Slug der *View in browser*-Adresse ist eine **dritte** Quelle und
+   oft die ehrlichste über die gemeinte Kampagne — er wird mitgelesen,
+   **aber nicht geöffnet**.
+4. Ein Datum aus so einer Mail kommt **nie** auf das Board als Termin.
+   Es kommt, wenn überhaupt, als „der Absender nennt zwei verschiedene
+   Daten" — wie beim Elevation Camp am 09.10.
