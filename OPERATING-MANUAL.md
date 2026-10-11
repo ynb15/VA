@@ -4952,3 +4952,26 @@ ungelesen. **Nebeneinanderstellen, nicht raten, nicht schieben.**
 Sa 17.10. 19:00 · ATX-Workshop Di 20.10. · Elevation Camp Köln
 24.–25.10. **Nichts davon wird von mir angefasst oder kommentiert,
 solange er nichts sagt.**
+
+═══════════════════════════════════════════════════════════════════════
+ZWEI MAILS DERSELBEN FIRMA KURZ NACHEINANDER SIND NICHT AUTOMATISCH
+EINE ANMELDUNG
+
+Am 11.10. um 11:41 und 11:43 kamen zwei Mails von Apollo.io, von zwei
+verschiedenen Absenderadressen (`info@` und `hello@mail.apollo.io`).
+**Das Muster sieht genau wie eine Anmeldung aus** — Bestätigung plus
+Willkommen, zwei Minuten auseinander. Betreff und `snippet` zeigten
+etwas anderes: *„Ends tomorrow: Live agent support"* und *„90 days on
+Apollo — let's close this deal"*. **Beides Verkaufspost an ein
+bestehendes Konto.**
+
+**Die Regel:** bevor aus einem Muster eine Handlung von ihm wird
+(„er hat sich angemeldet"), wird **Betreff und `snippet` geholt**
+(`messageFormat: MINIMAL`, kostet fast nichts). Erst dann kommt es aufs
+Board. Eine falsche Handlungsbehauptung über ihn ist schlimmer als eine
+Zeile, die eine Stunde später kommt.
+
+**Als Tatsache bleibt:** es gibt ein **Apollo.io-Konto**, und Apollo
+selbst spricht von *„90 days on Apollo"* — also etwa seit Mitte Juli.
+**Deren Angabe, nicht meine Messung.** Hintergrund zu den 24 Namen und
+den fünf unversandten Pitches; **kein Rat, keine Frage dazu.**
