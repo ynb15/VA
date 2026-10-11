@@ -4859,3 +4859,25 @@ Regel da.
 angefasst wurde; keine Uhrzeit, keine Tageszeit, kein Rhythmus.*
 Eine Häufigkeit von vier an einem Tag ist ein Zählwert, keine
 Eigenschaft — und wird nicht zur Erwartung.
+
+═══════════════════════════════════════════════════════════════════════
+DER TAGESWECHSEL DES BOARDS HÄNGT AN AUSTIN, NICHT AN DER MASCHINENUHR
+
+Am 10.10. um **19:02 Austin** meldete die Umgebung zum Durchgang:
+*„Today's date is now 2026-10-11."* Das ist **UTC**, und UTC ist Austin
+um fünf Stunden voraus (CDT, `-05:00`).
+
+**Konsequenz, wörtlich:**
+- Der Wochentagsstreifen `DAYS`, die Lede-Anrede, der Tagesabschluss und
+  der Dateiname in `actuals/` folgen **Austin**. Der Tag wechselt um
+  **00:00 Austin = 05:00Z**, der Tagesabschluss liegt auf **22:02 Austin
+  = 03:02Z**.
+- Zwischen 19:00 und 24:00 Austin steht die Maschinenuhr also **schon im
+  nächsten Datum**, während auf dem Board noch der laufende Tag gilt.
+  **In diesen fünf Stunden wird nichts gerollt.**
+- Wenn eine Systemmeldung ein neues Datum nennt, wird es gegen
+  `date -u` und die Austin-Verschiebung geprüft, nicht übernommen.
+
+**Was es gekostet hätte:** fünf Stunden zu früh gerollt heißt: falscher
+Wochentag in der Lede, ein Tagesabschluss in der Datei des nächsten
+Tages, und alle Altersmarken des laufenden Tages auf „gestern".
