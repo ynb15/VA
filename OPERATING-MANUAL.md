@@ -4975,3 +4975,95 @@ Zeile, die eine Stunde später kommt.
 selbst spricht von *„90 days on Apollo"* — also etwa seit Mitte Juli.
 **Deren Angabe, nicht meine Messung.** Hintergrund zu den 24 Namen und
 den fünf unversandten Pitches; **kein Rat, keine Frage dazu.**
+
+═══════════════════════════════════════════════════════════════════════
+`orderBy: lastModified` SORTIERT AUFSTEIGEND — DIE NEUESTE ÄNDERUNG
+STEHT AUF DER LETZTEN SEITE
+
+Am 12.10. um 07:02 standen beide Kalenderstempel neu (geschäftlich
+00:17, privat 01:14 Austin). Das weite Fenster mit
+`orderBy: lastModified` und `pageSize: 100` lieferte auf **Seite 1** des
+privaten Kalenders als jüngste Änderung den **03.10.** — obwohl der
+*Kapstaad*-Block vom 11.10. 06:33 dort liegt und von mir selbst am Tag
+vorher notiert wurde. Er stand auf **Seite 2**.
+
+**Grund:** die API sortiert `lastModified` **aufsteigend**. Seite 1
+trägt die ältesten Änderungen.
+
+**Was daraus folgt — Korrektur meines eigenen Verfahrens:**
+1. **Ein `nextPageToken` macht die Antwort nicht unbrauchbar, sondern
+   unvollständig.** Die alte Fassung dieser Regel („jeder
+   `nextPageToken` macht die Antwort unbrauchbar") führte zum
+   Gegenteil des Gewollten: sie hätte mich die Seite wegwerfen lassen,
+   auf der die Änderung steht. **Richtig ist: bis zur letzten Seite
+   lesen, dann das Maximum von `updated` bilden.**
+2. **Nie das Maximum einer einzelnen Seite als „die jüngste Änderung"
+   melden.** Es ist das Maximum dieser Seite, nicht des Kalenders.
+3. Wer sparen will, nimmt ein **engeres Zeitfenster**, nicht eine
+   kleinere Seite.
+
+═══════════════════════════════════════════════════════════════════════
+`newer_than:5d` VERLIERT OFFENE PUNKTE, DIE NOCH UNGELESEN LIEGEN
+
+Am 12.10. 07:02 gab `in:inbox is:unread newer_than:5d` wieder **zwölf**
+Threads — dieselbe Zahl wie beim Übergang zwölf Stunden vorher. Die
+Besetzung war aber anders: eine neue Mail kam dazu, und **Kingsburys
+Rundbrief vom 06.10. 11:53 fiel aus dem Fenster**, während er weiter
+`UNREAD` und `INBOX` trägt.
+
+**Eine gleich gebliebene Zahl ist kein gleich gebliebener Zustand.**
+Das Fünf-Tage-Fenster lässt oben etwas herausfallen, während unten
+etwas hereinkommt.
+
+**Ab jetzt bei jeder Zählung:**
+- `in:inbox is:unread older_than:5d` als Gegenprobe, wenn ein Punkt
+  von der Liste zu verschwinden scheint. Er ist dann meist nur alt
+  geworden, nicht erledigt.
+- `list_labels` für die Grundlinie über das ganze Postfach.
+- **Auf dem Board die Fensterbreite mitsagen:** „dreizehn auf meiner
+  Liste, zwölf davon im Fünf-Tage-Fenster, 53 im ganzen Postfach."
+  Eine Zahl ohne ihr Fenster ist eine Behauptung.
+
+═══════════════════════════════════════════════════════════════════════
+EINUNDDREISSIGSTER UND ZWEIUNDDREISSIGSTER STEMPELLOSER FALL
+
+12.10., geschäftlich `05:17:18Z` = 00:17 Austin, privat `06:14:54Z` =
+01:14 Austin. Beide Kalender bis zur **letzten** Seite gegengeprüft;
+jüngste Termin-Änderung weiter die Umbaurunde vom 11.10. 11:32/11:33Z.
+**Kein Termin bewegt.** Stand: **32 Fälle.**
+
+Dazu ein Nebenbefund, den ich nur nenne, weil er beim nächsten Vergleich
+sonst wie eine Änderung aussieht: die Umbaurunde vom Sonntag hat auch
+auf dem **privaten** Kalender die termin-eigenen `timeZone`-Felder auf
+`Africa/Johannesburg` umgeschrieben (FSC, Morning Routine, Artist Date,
+N26). **Die Offsets sind unverändert** (`-05:00`/`-06:00`), die
+Uhrzeiten also auch. Der Kalender selbst steht weiter auf
+`America/Chicago`. **Ein geänderter `timeZone`-Name ohne geänderten
+Offset ist keine Terminverschiebung.**
+
+═══════════════════════════════════════════════════════════════════════
+NEUE ZEILEN BEKOMMEN ABSOLUTE DATEN — SONST WIDERSPRICHT SICH DIE ZEILE
+BEIM NÄCHSTEN ROLL SELBST
+
+Die *Kapstaad*-Zeile vom 11.10. stand am Morgen des 12.10. so da:
+`<span class="who">Du, heute 06:30–06:33</span>` — und daneben in
+derselben Zeile `<span class="age hot">gestern 06:33</span>`. **Die
+Zeile widersprach sich selbst**, weil der `who`-Text aus dem Tag stammt,
+an dem er geschrieben wurde, und die `age`-Spalte beim Roll
+mitgerechnet wird.
+
+Zwei Regeln:
+1. **Jede neu angelegte Zeile trägt im Text absolute Daten**
+   („So 11.10. 06:30–06:33"), nicht „heute"/„gestern". Dann muss beim
+   Roll nichts nachgezogen werden. Die `age`-Spalte bleibt relativ —
+   die wird berechnet.
+2. **Widerspricht eine Zeile sich selbst, wird sie beim nächsten
+   Durchgang umgestellt, auch wenn „Zeilen sind datierte
+   Momentaufnahmen" sonst gilt.** Der Vorrang liegt bei der
+   Widerspruchsfreiheit, nicht bei der Konvention.
+
+Dasselbe gilt für Marken, die beim Roll **mechanisch** verschoben
+werden: „das 30-Tage-Fenster, das **morgen** ablief" wurde beim Roll zu
+„das **gestern** ablief" und zeigte damit auf den falschen Tag. Beim
+Roll werden relative Marken nicht weitergedreht, sondern **auf ein
+absolutes Datum gesetzt.**
