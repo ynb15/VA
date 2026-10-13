@@ -5497,3 +5497,36 @@ Das ist dieselbe Familie wie der Fehler vom 12.09. („erst behaupten,
 dann tun") — hier nur durch die Shell verursacht statt durch
 Reihenfolge im Kopf. **Der Satz über die getane Arbeit entsteht nach
 dem Ergebnis, nicht neben ihm.**
+
+═══════════════════════════════════════════════════════════════════════
+DER BURNING-MAN-FREIGABEVORBEHALT IST JETZT SCHRIFTLICH — 13.10. 13:04
+
+Seit dem 03.08. stand auf meiner Liste eine Tagesordnungszeile aus dem
+Logistik-Call: *„Review Process: Final review protocol for all
+published materials, including social posts and teasers."* Am 13.10.
+um 13:04 hat Walker Fisher sie ausgeschrieben:
+
+> *„Please let us know as soon as you have a transcript of the **edited
+> podcast** available. We'll want to review that prior to release,
+> along with **the footage, any stills, and the captions** you plan to
+> use across your release platforms."*
+
+**Vier Gegenstände, nicht einer:** Transkript des fertigen Schnitts ·
+Material · Stills · Captions — **auf allen Kanälen.** Empfänger: er,
+im Cc Marian, Andie und `appearances@burningman.org`.
+
+**Was damit zusammenliegt, ohne dass ich es zusammenrechne:**
+die Freigabe gilt für den **fertigen** Schnitt · sein eigener Plan ist
+**Dezember** · und die zweite Stunde hat **keinen Ton**.
+**Nebeneinanderstellen. Er zieht den Schluss, nicht ich.**
+
+**Dritter unabhängiger Beleg für Isabelle an diesem Tag** (nach seiner
+Mail 09:53 und Andies 12:53): *„So glad to hear you and Isabelle made
+it back safely to South Africa!"* — damit ist sie als Begleitung auf
+der Reise dreifach belegt und gehört nicht mehr nur als „sieben offene
+Kommentare" in die Liste.
+
+**Für den Fall, dass es relevant wird:** Walker schrieb **elf Minuten
+nach** Andies Mail über den fehlenden Ton und erwähnt ihn nicht. **Ob
+er sie gelesen hatte, steht nicht da** — also nicht behaupten, Burning
+Man wisse von dem Problem oder wisse es nicht.
