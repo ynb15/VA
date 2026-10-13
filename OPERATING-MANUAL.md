@@ -5175,3 +5175,41 @@ DREIUNDDREISSIGSTER STEMPELLOSER FALL
 zwei Stunden, unerklärt. **Stand: 33 Fälle.** *Grenze: das Fenster
 begann am 12.10.; eine Änderung an einem früheren Termin wäre so nicht
 sichtbar.*
+
+═══════════════════════════════════════════════════════════════════════
+DIE GOODELL-AUFNAHME IST BELEGT — 06.10., UND WIE DER BELEG AUSSAH
+
+Beim Wochenabgleich am 12.10. stand bei Marian Goodell: *Confirmed*,
+Datum vorbei, **kein Beleg für die Aufnahme** — ich habe sie
+ausdrücklich nicht auf *Recorded* gesetzt. Am Abend desselben Tages
+kam der Beleg, und zwar doppelt:
+
+- **Andie Grace, 17:28 Austin:** *„Here are the files from the two
+  cameras we ran for you last week."* Plus Drive-Freigabe des Ordners
+  `1E6vkO4WaLbqiijA2JcTTui1gzfms6L5i` mit Verwaltungsrechten.
+- **Marian Goodell selbst, 22:57 Austin:** *„Yanick, that was fun"* —
+  und die Frage nach einem Transkript.
+
+**Databank auf *Recorded* gesetzt.** Datum `2026-10-06 18:00Z` bleibt.
+
+**Was das für die Methode heißt — und es ist keine Selbstkritik,
+sondern eine Bestätigung:** zwischen „alles spricht dafür" und
+„belegt" lagen hier **fünf Stunden**. Hätte ich am Mittag auf
+*Recorded* gesetzt, wäre es zufällig richtig gewesen. **Zu warten hat
+nichts gekostet.** Die Regel bleibt: ein Status wird gesetzt, wenn die
+Gegenseite ihn aussagt, nicht wenn ich ihn erschließen kann.
+
+**Zwei Dinge, die aus dem Ordner mitzunehmen sind:**
+1. `Guest.mp4` 18,5 GB und `Host.mp4` 10,4 GB, **der Ton liegt auf der
+   Host-Kamera** — steht so in Andies Mail und ist für jeden Schnitt
+   die entscheidende Zeile.
+2. **Die Dateien liegen in Andies Drive, nicht in seinem, und niemand
+   nennt eine Aufbewahrungsfrist.** Dieselbe Gattung wie Media Pouch:
+   fremder Speicher, Dauer unbekannt. **Benennen, nicht warnen** — und
+   bei jedem Durchgang mitprüfen, solange der Schnitt läuft:
+   `parentId = '1E6vkO4WaLbqiijA2JcTTui1gzfms6L5i'`
+
+**Marians Frage ist an die Runde gerichtet**, nicht an ihn: geschrieben
+an Andie, mit ihm und `appearances@burningman.org` im Cc. **Eine Frage
+mit mehreren Empfängern ist keine Aufgabe für ihn**, solange niemand
+sie ihm zuschiebt. Festhalten, nicht zuweisen.
