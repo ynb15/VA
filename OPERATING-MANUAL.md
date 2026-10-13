@@ -5421,3 +5421,56 @@ ihm an Arbeitstagen ein Protokoll mit laufender Korrektur. Deshalb:
 **ein Blockname auf dem Board ist nur so lange gültig, wie der letzte
 `updated`-Stempel alt ist** — und „er hat X um Y geplant" ist bei ihm
 fast immer falsch; richtig ist „er hat X um Y eingetragen".
+
+═══════════════════════════════════════════════════════════════════════
+DER TON DER ZWEITEN STUNDE GOODELL FEHLT — 13.10., BELEGT VON ANDIE
+
+Am 13.10. um 12:53 Austin hat Andie Grace auf seine Frage von 09:59
+geantwortet. Die Sätze, auf die es ankommt:
+
+- *„I just checked the raw files still on the SD cards, and **it
+  definitely cuts off at about halfway through** for the camera angle
+  on you, which was the audio for the mics."*
+- *„**Unfortunately, Marian's camera was not capturing audio with its
+  built in mic.**"*
+- *„**nothing on my end captured the audio from the second half of the
+  interview.**"*
+- *„I can only hope one of your two Iphones captured the rest of the
+  audio?"*
+
+**Stand:** von zwei Stunden liegt bei Burning Man eine Stunde mit Ton.
+Die SD-Karten sind geprüft. **Eine Wiederherstellung bietet sie nicht
+an.** Der einzige weitere Ort, den jemand nennt, sind seine beiden
+iPhones — und dort kann nur er nachsehen.
+
+**Zwei Dinge, die ich daraus mitnehme, und beides betrifft mich:**
+1. **Meine Zahl war der Hinweis, und ich habe ihn nicht gelesen.** Um
+   07:02 hatte ich `Host.mp4` 10,4 GB gegen `Guest.mp4` 18,5 GB
+   notiert. Die Regel von 10:02 („Verhältnisse bilden") ist genau hier
+   entstanden — **sie hätte den Befund drei Stunden früher gehabt.**
+2. **Isabelle war im Raum** — *„I assumed Isabelle had hit stop on
+   recording since both cameras were stopped."* Zweiter unabhängiger
+   Beleg für sie an diesem Tag, nach seiner eigenen Mail
+   („Isabelle and I just landed back home").
+
+**Für das Board:** die Lage wird mit ihren Worten genannt, **einmal**,
+und der Hinweis auf die Telefone bleibt eine Wiedergabe ihrer Frage —
+kein Auftrag. Was mit einer Dezember-Veröffentlichung passiert, wenn
+die zweite Stunde tonlos bleibt, ist **nicht meine Schlussfolgerung**,
+solange er sie nicht zieht.
+
+═══════════════════════════════════════════════════════════════════════
+VIERUNDDREISSIGSTER STEMPELLOSER FALL
+
+13.10., geschäftlich `17:55:38Z` = 12:55 Austin. Weites Fenster
+13.10.–31.12., `orderBy: lastModified`, eine Seite, kein
+`nextPageToken`: jüngste Termin-Änderung `16:29:35Z`. Differenz etwa
+86 Minuten, unerklärt. Privat `16:39:38Z` ohne Änderung im
+Tagesfenster. **Stand: 34 Fälle.**
+
+**Und eine Notiz zur Media-Pouch-Frist, damit sie nicht als Entwarnung
+gelesen wird:** der Ordner antwortete um 13:03 noch, fünfzig Minuten
+nach der von Media Pouch genannten Frist. **Die 72 Stunden sind ihre
+Angabe.** Dass der Zugang noch offen ist, heißt nicht, dass er offen
+bleibt — und es heißt erst recht nicht, dass meine Frist falsch war.
+Gemessen wird der Zustand, nicht die Absicht der Gegenseite.
