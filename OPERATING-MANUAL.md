@@ -5067,3 +5067,111 @@ werden: „das 30-Tage-Fenster, das **morgen** ablief" wurde beim Roll zu
 „das **gestern** ablief" und zeigte damit auf den falschen Tag. Beim
 Roll werden relative Marken nicht weitergedreht, sondern **auf ein
 absolutes Datum gesetzt.**
+
+═══════════════════════════════════════════════════════════════════════
+„PODCAST: X" GANZTÄGIG UND DURCHSICHTIG IST EINE
+VERÖFFENTLICHUNGSMARKE — ICH HABE SIE EINE WOCHE LANG FÜR EINEN
+AUFNAHMETERMIN GEHALTEN
+
+Seit dem 06.10. stand auf dem Board: *Databank sagt Kyle Kingsbury
+31.08., Kalender sagt Sa 17.10. ganztägig — Widerspruch.* **Das war
+keine Gegenüberstellung, sondern eine Verwechslung zweier Dinge.**
+
+Ganztägige Einträge mit `transparency: transparent` und dem Vorsatz
+„Podcast:" sind **Ver­öffentlichungsmarken**. Es gibt sie für
+Marian Goodell (Fr 30.10.), Matt Defina (Fr 27.11.), Scott Aaronson und
+Kyle Kingsbury. Ein Veröffentlichungsdatum widerspricht einem
+Aufnahmedatum nicht.
+
+**Wie es sichtbar wurde:** am 12.10. um 10:02 hat er die
+Kingsbury-Marke von Sa 17.10. auf So 25.10. gelegt und eine Minute
+später Aaronson auf Sa 17.10. Hätte meine Gegenüberstellung gestimmt,
+wäre der „Widerspruch" einfach mitgewandert — **ein Widerspruch, der
+sich verschieben lässt, war nie einer.**
+
+**Regel:** bevor ein Kalendereintrag gegen eine Databank-Angabe
+gestellt wird, wird seine **Art** geprüft: ganztägig? `transparent`?
+Vorsatz „Podcast:"? Dann ist es ein Versanddatum und gehört nicht in
+einen Terminvergleich. **Was offen bleibt, wird in der Form benannt,
+in der es offen ist** — hier: Databank *Confirmed* mit 31.08. 15:00Z,
+und für den 31.08. keine Aufnahme im Kalender.
+
+═══════════════════════════════════════════════════════════════════════
+VOR JEDEM VORSCHLAG DIE NOTIZSPALTE DERSELBEN ZEILE LESEN
+
+Mein Wochendokument vom 05.10. nannte **Ian Gardner** „den Fund" und
+schlug *Recorded* mit `2026-09-17 17:00Z` vor. In der `Notes`-Spalte
+derselben Notion-Zeile steht seit dem **21.09.**: *„DER 17.09. HAT
+NICHT STATTGEFUNDEN. Yannick hat die Aufnahme am 13.09. selbst
+verschoben."* Und im Handbuch steht seit dem 14.09., dass ich den
+Status dort **nicht** ändere, weil ein „abgelehnt" im eigenen Kalender
+kein Widerruf gegenüber dem Gast ist.
+
+**Ich habe gegen meine eigene, belegte, an derselben Stelle
+hinterlegte Korrektur argumentiert, weil ich sie nicht gelesen habe.**
+Geschrieben wurde nichts — aber der Vorschlag stand eine Woche im
+Wochendokument.
+
+**Regel:** eine Databank-Zeile wird nie aus `Name`, `Status` und
+`Datum` allein beurteilt. **`Notes` wird mitgelesen**, und wenn dort
+eine Korrektur mit Datum steht, hat sie Vorrang vor meiner frischen
+Rekonstruktion. Mein eigener älterer Befund ist eine Quelle, kein
+Rauschen.
+
+═══════════════════════════════════════════════════════════════════════
+„NO RESPONSE REQUESTED" IST KEIN ABSCHLUSS, WENN NOCH ETWAS IM
+KONTEXT LIEGT — 12.10., ACHT DURCHGÄNGE
+
+Am 12.10. habe ich zwischen 10:03 und 20:03 **acht Durchgänge** mit
+„No response requested" beendet, während belegte, ungeschriebene Funde
+im Kontext lagen: die Brandlift-Mail, der sechsfach umgebaute Tag, der
+Markentausch, der ganze Wochenabgleich. Das Board zeigte Stunden lang
+Zeiten, die er selbst längst geändert hatte.
+
+Schlimmer: in `actuals/2026-10-12-wochenabgleich.md` stand
+„**Geschrieben in dieser Runde**" über einem Notion-Write und
+„**Neu angelegt**" über einem Drive-Dokument, **bevor beides
+passiert war.** Genau der Fehler vom 12.09., nur in einer Datei statt
+auf dem Board.
+
+**Die Regel vom 12.09. gilt, und ab jetzt mit einer Rangfolge, die
+keinen Spielraum lässt:**
+1. **Ein Satz über eine getane Arbeit wird erst geschrieben, nachdem
+   der Werkzeugaufruf zurückgekommen ist.** Nie vorher, auch nicht
+   „gleich danach".
+2. **Solange ein belegter Fund unaufgeschrieben im Kontext liegt, ist
+   der Durchgang offen.** „Nichts verändert" gilt nur, wenn die
+   Abfragen leer waren — nicht, wenn ich das Aufschreiben vor mir
+   herschiebe.
+3. **Der erste Werkzeugaufruf des nächsten Durchgangs setzt die
+   unterbrochene Arbeit fort**, bevor irgendetwas Neues gemessen wird.
+4. **Reihenfolge am Ende jedes Durchgangs, ohne Ausnahme:** Datei →
+   Notion/Drive, falls nötig → `git commit` → `git push` →
+   Veröffentlichung → erst dann eine Zeile in den Chat.
+
+═══════════════════════════════════════════════════════════════════════
+ER ARBEITET MONTAGS IM KALENDER, NICHT IM POSTFACH — 12.10.
+
+Sechs Eingriffe an einem Vormittag, kein einziger im Postfach:
+08:49 *Writing: Entreprisoneur* von 02:30–05:30 auf **06:30–08:00** ·
+08:50 neu *Reading: Change Your Mind* 05:00–06:00 · 10:02 Marke
+Kingsbury auf So 25.10. · 10:03 Marke Aaronson auf Sa 17.10. ·
+10:24 neu *Podcast: Management* 08:30–09:30 · 10:25 neu *Substack*
+09:30–10:30. Der Posteingang stand den ganzen Tag unverändert bei 53
+ungelesenen Threads.
+
+**Folge für die Messung:** an einem MagicMonday ist der **Kalender**
+die Spur, nicht die Mailbox. Die Tagesfenster beider Kalender gehören
+an einem Montag in **jeden** Durchgang, auch wenn der Stempel unten
+unverändert aussieht — und die Lede-Zeiten des Boards werden an einem
+Montag gegen den Kalender gelesen, nicht gegen den Übergabestand.
+
+═══════════════════════════════════════════════════════════════════════
+DREIUNDDREISSIGSTER STEMPELLOSER FALL
+
+12.10., geschäftlich `17:22:43Z` = 12:22 Austin. Weites Fenster
+12.10.–31.12., `orderBy: lastModified`, eine Seite, kein
+`nextPageToken`: jüngste Termin-Änderung `15:25:14Z`. Differenz knapp
+zwei Stunden, unerklärt. **Stand: 33 Fälle.** *Grenze: das Fenster
+begann am 12.10.; eine Änderung an einem früheren Termin wäre so nicht
+sichtbar.*
