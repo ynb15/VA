@@ -5323,3 +5323,48 @@ Geschäftskalender seit dem 29.09. die ganztägige Marke
 *Podcast: Marian Goodell* auf **Fr 30.10.** liegt. **Zwei Angaben von
 ihm, zwei Wochen auseinander.** Nebeneinanderstellen, nicht auflösen;
 die Marke nicht anfassen.
+
+═══════════════════════════════════════════════════════════════════════
+BRANDLIFT IST ZU — 13.10. 10:26, UND WIE DER ABSCHLUSS AUSSAH
+
+Der älteste offene Punkt mit Datum stand seit dem **16.09.**: die
+Einladung *„Willkommen im Projekt Gottfried Prinz – dein Briefing"*,
+Mo 19.10. 09:00–10:00 Austin = 16:00 Berlin, Luis und Lukas auf
+`accepted`, er auf `needsAction`.
+
+Am 13.10. um 09:01 fragte Luis nach und behauptete, er habe
+**abgelehnt**. Um **10:26** hat er geantwortet — *„Noted, danke fürs
+Update. Holistic House klingt immer spannend…"* — und **in derselben
+Minute** steht die Einladung auf `accepted`. Alle drei.
+
+**Zwei Dinge, die das für mich festlegt:**
+1. **Es war richtig, Luis' „abgelehnt" gegen das Feld `needsAction` zu
+   stellen und nichts aufzulösen.** Die Gegenseite kann sich im Zustand
+   irren; das Feld irrt sich nicht. Hätte ich Luis geglaubt, hätte auf
+   dem Board „abgelehnt" gestanden, und das wäre falsch gewesen.
+2. **Eine Mailantwort und eine Terminantwort sind zwei Handlungen.**
+   Hier fielen sie in dieselbe Minute, aber das ist nicht die Regel —
+   bei Goodell lagen sie Tage auseinander. **Beide werden einzeln
+   geprüft**, und erst wenn `responseStatus` steht, ist der Punkt zu.
+
+**Neu und offen gelassen:** *Holistic House* (seine Schreibweise;
+Luis schrieb *Holistic house*). Was es ist, steht in keiner Mail. Nicht
+raten.
+
+═══════════════════════════════════════════════════════════════════════
+IAN GARDNER: DAS VERSPRECHEN IST EINGEHALTEN, DAS DATUM BLEIBT OFFEN
+
+Am 13.10. um 10:08 hat er Ian geschrieben — vier Wochen nach seinem
+eigenen *„I'll follow up as soon as I've got firmer dates"* vom 13.09.
+Ian antwortete um 10:56: *„Hit me up once your plans solidify."*
+
+**Damit ist der offene Punkt aus der Notion-Notiz vom 21.09. erledigt**
+(sein eigenes Versprechen), **und das Datum bleibt bewusst leer.** Die
+Databank-Zeile *Confirmed ohne Datum* ist jetzt nicht mehr eine Lücke,
+sondern **der richtige Zustand** — die Tür ist offen, der nächste
+Schritt liegt bei ihm, und es gibt keinen Termin, den ich eintragen
+könnte.
+
+**Das schließt meinen Fehler vom 05.10. endgültig ab:** ich wollte Ian
+auf *Recorded* mit dem 17.09. setzen. Die Aufnahme hat nicht
+stattgefunden, und sie ist bis heute nicht nachgeholt.
