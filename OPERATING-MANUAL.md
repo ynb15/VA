@@ -5368,3 +5368,56 @@ könnte.
 **Das schließt meinen Fehler vom 05.10. endgültig ab:** ich wollte Ian
 auf *Recorded* mit dem 17.09. setzen. Die Aufnahme hat nicht
 stattgefunden, und sie ist bis heute nicht nachgeholt.
+
+═══════════════════════════════════════════════════════════════════════
+`viewedByMeTime` IST KEIN BEWEIS FÜR SEINEN ZUGRIFF
+
+Am 13.10. um 12:03 stand am Unterordner *Audio Source Files*
+`viewedByMeTime: 2026-10-13T16:19:30Z` = 11:19 Austin — vierundfünfzig
+Minuten vor Ablauf des Media-Pouch-Fensters. Das sieht aus wie „er hat
+kurz vorher noch hineingesehen".
+
+**Es ist keiner.** Das Feld bezieht sich auf das **authentifizierte
+Konto**, und meine eigenen Leseabfragen laufen über dasselbe Konto.
+Ich kann seinen Aufruf nicht von meinem unterscheiden.
+
+**Regel:** `viewedByMeTime` wird notiert, aber **nie als Handlung von
+ihm gemeldet**. Wenn der Wert erzählerisch wichtig wäre, steht dabei:
+„Zuordnung offen, meine eigenen Abfragen setzen dasselbe Feld."
+Dasselbe gilt für jedes Feld, das „by me" enthält.
+
+═══════════════════════════════════════════════════════════════════════
+KORREKTUR: DIE MENTALLY-FIT-FRIST WAR NICHT DER 09.10.
+
+Auf dem Board stand seit dem 08.10.: *„eine Verkaufsfrist bei Mentally
+Fit zum Fr 09.10. — die Zeit dafür ist vorbei."* Am 13.10. um 11:52
+schreibt Erick Godsey, Betreff *„Today is the last day"*:
+**„Mentally Fit goes from $1000 to $1500 at midnight tonight."**
+
+Entweder wurde die Frist verlängert, oder ich habe am 08.10. die
+falsche gelesen. **Beides macht meine Angabe falsch, und „vorbei" war
+die schlimmere Hälfte** — eine abgelaufene Frist nimmt man von der
+Liste, eine laufende nicht.
+
+**Regel:** eine Frist, die ich für abgelaufen erklärt habe, wird
+**nicht von der Liste genommen, solange der Absender noch schreibt.**
+Erst wenn er selbst sagt, dass es vorbei ist, oder lange nichts mehr
+kommt, verschwindet sie. Und: **das Datum wird mit dem Satz zitiert, in
+dem es stand** — dann fällt eine Verlängerung beim nächsten Rundbrief
+sofort auf.
+
+═══════════════════════════════════════════════════════════════════════
+DER BLOCK WIRD GEFÜHRT, NICHT GEPLANT — VIERMAL AN EINEM TAG
+
+13.10., alle vier an derselben Stelle gemessen:
+- 08:55 angelegt: *Reading: Change Your Mind* 04:30–05:30 (vorbei)
+- 08:55 angelegt: *Substack* 06:30–08:30 (vorbei)
+- 10:15 angelegt: *Emails* 09:30–10:30 (laufend)
+- **11:29 umbenannt und verlängert: dieselbe Termin-ID heißt jetzt
+  *Management* und läuft 09:30–11:30**
+
+**Vier Eingriffe, kein einziger in die Zukunft.** Der Kalender ist bei
+ihm an Arbeitstagen ein Protokoll mit laufender Korrektur. Deshalb:
+**ein Blockname auf dem Board ist nur so lange gültig, wie der letzte
+`updated`-Stempel alt ist** — und „er hat X um Y geplant" ist bei ihm
+fast immer falsch; richtig ist „er hat X um Y eingetragen".
