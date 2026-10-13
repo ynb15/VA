@@ -5213,3 +5213,46 @@ Gegenseite ihn aussagt, nicht wenn ich ihn erschließen kann.
 an Andie, mit ihm und `appearances@burningman.org` im Cc. **Eine Frage
 mit mehreren Empfängern ist keine Aufgabe für ihn**, solange niemand
 sie ihm zuschiebt. Festhalten, nicht zuweisen.
+
+═══════════════════════════════════════════════════════════════════════
+DER KALENDER IST BEI IHM AUCH PROTOKOLL, NICHT NUR PLAN — 13.10., 08:55
+
+Um **07:02** war der Geschäftskalender für den 13.10. **leer**,
+gemessen. Um **08:55** standen zwei Blöcke darin:
+*Substack* 06:30–08:30 und *Reading: Change Your Mind* 04:30–05:30.
+**Beide Zeiten lagen beim Anlegen schon hinter ihm.**
+
+Dasselbe eine Woche vorher: den Block *California 03.–08.10.* hat er
+am **11.10.** nachgetragen, einen Tag nach der Rückkehr.
+
+**Zwei Folgen für die Messung:**
+1. **Ein leerer Tagesblick am Morgen sagt nichts über den Tag.** Die
+   Tagesfenster beider Kalender gehören in **jeden** Durchgang, und
+   eine Lede-Zeile „heute steht nichts an" ist nach einer Stunde
+   überholt. Am 13.10. war sie es nach genau einer.
+2. **Ein Termin, der in der Vergangenheit auftaucht, ist kein Fehler
+   und keine Verschiebung.** Vor jeder Formulierung wie „er hat
+   verschoben" wird `created` gegen `start` gelesen: liegt `created`
+   **nach** `start`, ist es ein Eintrag im Nachhinein. Das gehört so
+   aufs Board — „nachgetragen", nicht „angelegt".
+
+═══════════════════════════════════════════════════════════════════════
+EINE POSTFACHSITZUNG HAT VIER AUSGÄNGE, NICHT DREI — 13.10.
+
+Bisher kannte ich drei: ungelesen liegen lassen · ungelesen in den
+Papierkorb · gelesen und einsortiert (10.10., Jentjens). Am 13.10. kam
+der vierte dazu, und er ist der aussagekräftigste:
+
+**`UNREAD` weg, `INBOX` bleibt — gelesen und absichtlich behalten.**
+
+So steht es bei genau zwei Mails: **Andie Graces Mail mit den
+Goodell-Dateien** und **der Drive-Freigabe dazu**. Beide tragen jetzt
+nur noch `INBOX`. In derselben Sitzung sind fünf andere Mails in den
+Papierkorb gegangen, vier davon ungelesen, und **Marians Frage nach
+dem Transkript liegt unverändert ungelesen im Posteingang.**
+
+**Regel:** die vier Ausgänge werden auf dem Board unterschieden, weil
+sie Verschiedenes heißen. `INBOX` ohne `UNREAD` nach einer Sitzung, in
+der anderes wegging, ist **die stärkste Spur, die ein Postfach
+hergibt** — er hat die Mail gesehen und nicht weggeräumt. Das wird
+genannt, nicht gedeutet, und **nie als Aufgabe gelesen.**
