@@ -5474,3 +5474,26 @@ nach der von Media Pouch genannten Frist. **Die 72 Stunden sind ihre
 Angabe.** Dass der Zugang noch offen ist, heißt nicht, dass er offen
 bleibt — und es heißt erst recht nicht, dass meine Frist falsch war.
 Gemessen wird der Zustand, nicht die Absicht der Gegenseite.
+
+═══════════════════════════════════════════════════════════════════════
+EIN GESCHEITERTES BOARD-SKRIPT DARF DEN COMMIT NICHT ÜBERLEBEN
+
+13.10., 13:02: das Board-Skript brach an einer Ersetzung ab, die nicht
+mehr passte (`AssertionError`), und schrieb die Datei korrekt **nicht**.
+Gut. **Aber Log, Handbuch, `git commit` und `git push` liefen danach
+trotzdem**, weil sie in derselben Zeile mit Zeilenumbrüchen statt mit
+`&&` verkettet waren. Ergebnis: eine Commit-Nachricht, die
+Board-Änderungen beschreibt, die noch nicht existierten.
+
+**Regel:**
+1. **Das Board-Skript läuft als eigener Werkzeugaufruf**, und sein
+   `ok`-Ergebnis wird gelesen, bevor irgendetwas anderes folgt.
+2. **Log und Commit erst danach.** Nie in derselben Kette.
+3. Wenn Befehle doch verkettet werden, dann mit `&&`, nicht mit
+   Zeilenumbruch — ein Zeilenumbruch führt die nächste Zeile auch nach
+   einem Fehler aus.
+
+Das ist dieselbe Familie wie der Fehler vom 12.09. („erst behaupten,
+dann tun") — hier nur durch die Shell verursacht statt durch
+Reihenfolge im Kopf. **Der Satz über die getane Arbeit entsteht nach
+dem Ergebnis, nicht neben ihm.**
