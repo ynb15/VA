@@ -5530,3 +5530,52 @@ Kommentare" in die Liste.
 nach** Andies Mail über den fehlenden Ton und erwähnt ihn nicht. **Ob
 er sie gelesen hatte, steht nicht da** — also nicht behaupten, Burning
 Man wisse von dem Problem oder wisse es nicht.
+
+═══════════════════════════════════════════════════════════════════════
+DAS MAXIMUM VON `updated` WIRD GERECHNET, NICHT ABGELESEN —
+UND DER 34. FALL WIRD ZURÜCKGENOMMEN
+
+Am 13.10. um 13:02 habe ich den Geschäftsstempel `17:55:38Z` als
+unerklärt gemeldet und als **34. stempellosen Fall** gezählt. Um 15:02
+fand ich den Eintrag, der ihn erklärt: *Men who meditate in the sauna*,
+**angelegt 11:39** (`16:39:36Z`) — **vor** meiner Prüfung, und im
+geprüften Fenster. Ich hatte als jüngste Änderung `16:29:35Z` gemeldet.
+
+**Entweder fehlte der Eintrag in der Antwort, oder ich habe das Maximum
+falsch abgelesen. Ich kann es nicht auseinanderhalten.** Deshalb:
+
+**Der 34. Fall wird zurückgenommen. Stand wieder: 33.**
+
+**Regel:** das Maximum von `updated` wird **gerechnet**, nicht mit dem
+Auge über eine lange Antwort gesucht:
+```
+jq -r '.events | max_by(.updated) | "\(.updated)  \(.summary)"' <datei>
+```
+Bei einer Antwort, die als Datei kommt, ist das ohnehin der Weg; bei
+einer Antwort im Fenster wird sie vorher gespeichert. **Ein
+stempelloser Fall wird erst gezählt, wenn die Rechnung ihn zeigt** —
+und eine Zählung, die auf einem Blick beruht, ist keine Zählung.
+
+═══════════════════════════════════════════════════════════════════════
+ROBERT PADDOCK (VALENTURE INSTITUTE) IST NEU — 13.10. 11:39
+
+Erster Termin seit dem 11.10., der **in der Zukunft** liegt und nicht
+nachgetragen ist, und der erste mit einer Einladung nach draußen:
+
+**`Men who meditate in the sauna`**, Fr **23.10., 02:00–04:00 Austin**
+= **09:00–11:00 Kapstadt**, Geschäftskalender. Er als Organisator
+`accepted`, eingeladen **`robert.paddock@valentureinstitute.com`**,
+Antwort `needsAction`.
+
+Dazu ein privater Block **`Rob` 12:30–14:30** am selben Tag, um 14:22
+nachgetragen.
+
+**Dass das derselbe Rob ist, ist eine Vermutung.** Im Kalender steht
+einmal *Rob* ohne Nachnamen und einmal die Adresse; verbunden sind sie
+nur durch das Datum. **Nicht auflösen, nicht zusammenführen** — und
+`robert.paddock@valentureinstitute.com` **nicht** mit *Rob & Ryan* vom
+10./11.10. verwechseln, der bisher einzigen anderen Rob-Spur.
+
+**Auf die Watchlist:** die Antwort auf diese Einladung (Fr 23.10.,
+`needsAction`). **Nicht nachfragen, nicht erinnern** — nur melden, wenn
+sie kommt.
