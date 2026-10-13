@@ -5256,3 +5256,70 @@ sie Verschiedenes heißen. `INBOX` ohne `UNREAD` nach einer Sitzung, in
 der anderes wegging, ist **die stärkste Spur, die ein Postfach
 hergibt** — er hat die Mail gesehen und nicht weggeräumt. Das wird
 genannt, nicht gedeutet, und **nie als Aufgabe gelesen.**
+
+═══════════════════════════════════════════════════════════════════════
+ZAHLEN, DIE ICH NOTIERE, MUSS ICH AUCH INS VERHÄLTNIS SETZEN — 13.10.
+
+Um 07:02 habe ich den Goodell-Ordner gelesen und beide Dateigrößen
+notiert: `Guest.mp4` 18.477.374.819 B, `Host.mp4` 10.359.371.765 B.
+Um 09:59 hat **er** Andie geschrieben: *„the host camera … seems to
+have only captured about an hour of our 2h conversation."*
+
+**Die Hostdatei ist 56 % der Gastdatei. Das stand in meinen eigenen
+Zahlen, zwei Stunden vorher, und ich habe es nicht gelesen** — ich habe
+die Werte in eine Tabelle geschrieben und sie nicht verglichen.
+
+**Regel:** wenn zwei Werte derselben Art nebeneinanderstehen — zwei
+Kameradateien einer Aufnahme, zwei Spuren, zwei Beträge, zwei
+Teilnehmerzahlen — **wird das Verhältnis gebildet und hingeschrieben**,
+nicht nur die Werte. Eine auffällige Abweichung wird **als Beobachtung**
+genannt, ohne Ursache zu behaupten: „die Hostdatei ist 56 % der
+Gastdatei, obwohl beide dieselbe Aufnahme zeigen" hätte genügt. Die
+Ursache festzustellen war seine Sache, und er hat sie gestellt.
+
+═══════════════════════════════════════════════════════════════════════
+GLASS ANTWORTET JETZT IN EINEM NEUEN FADEN — 13.10.
+
+Am 13.10. um 09:36 hat er den von Hand unterschriebenen Freigabebrief
+geschickt. Um **10:03** kam die Antwort — **nicht** im Faden
+`19eb3e9b7799b16e`, sondern in einem **neuen** Faden
+`1a135ca8bb409175`, Betreff *„Fw: Release letter"*, weitergeleitet von
+**Monique Erasmus, Assistant Club General Manager**. Inhalt: auf
+Seite 2 fehlt der Stempelkasten.
+
+**Folge für die Messung:** eine Beobachtung, die an einer `threadId`
+hängt, verliert den Vorgang, sobald die Gegenseite den Faden wechselt.
+**Virgin Active wird ab jetzt über den Absender beobachtet**, nicht über
+den Faden:
+  `from:virginactive.co.za OR from:freshdesk` — und zusätzlich auf
+  `Monique.Erasmus@virginactive.co.za` achten, die neu auftaucht.
+Dasselbe gilt für jeden Vorgang mit Ticketsystem im Rücken: Freshdesk
+erzeugt neue Betreffs.
+
+**Und die Reihe, einmal vollständig, damit sie nicht wieder
+nachgezählt werden muss:** 21.08. Bankbestätigung · 01.09.
+Freigabebrief · 01.10. ausländische Bankverbindung und vollständiger
+Scan · 06.10. von Hand wegen des Rechtsstempels · **13.10. Seite 2
+fehlt der Stempelkasten.** Fünf Anforderungen, jede erst nachdem er
+geliefert hat. Vorgang seit 11.06., Schaden vom 7. Mai.
+
+═══════════════════════════════════════════════════════════════════════
+ZWEI NEUE FESTE TATSACHEN AUS SEINER EIGENEN MAIL — 13.10. 09:53
+
+Aus der Dankmail an Walker, Andie und Marian, wörtlich:
+
+1. **„Isabelle and I just landed back home in South Africa over the
+   weekend and I'm now easing into my rehab here"** — die
+   Rehabilitation läuft **in Südafrika**, und **Isabelle ist mit ihm**.
+   Das ist die erste Stelle, an der Isabelle als Begleitung belegt ist;
+   bisher stand sie nur mit sieben offenen Kommentaren in der Liste.
+2. **„the 2h of your heart"** — das Goodell-Gespräch war **zwei
+   Stunden** lang. Darauf beruht seine Rechnung zur fehlenden Stunde.
+
+**Und ein Widerspruch, der von ihm selbst kommt, nicht von zwei
+Quellen:** in derselben Mail steht *„the plan is to put the episode out
+in **December** as the grand finale of this year's run"* — während im
+Geschäftskalender seit dem 29.09. die ganztägige Marke
+*Podcast: Marian Goodell* auf **Fr 30.10.** liegt. **Zwei Angaben von
+ihm, zwei Wochen auseinander.** Nebeneinanderstellen, nicht auflösen;
+die Marke nicht anfassen.
