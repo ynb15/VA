@@ -5579,3 +5579,55 @@ nur durch das Datum. **Nicht auflösen, nicht zusammenführen** — und
 **Auf die Watchlist:** die Antwort auf diese Einladung (Fr 23.10.,
 `needsAction`). **Nicht nachfragen, nicht erinnern** — nur melden, wenn
 sie kommt.
+
+═══════════════════════════════════════════════════════════════════════
+## Der 34. stempellose Fall — und wie ein Stempel ab jetzt geprüft wird
+*(13.10.2026, 18:02 Austin)*
+
+Der Privatkalender stand um 17:02 auf `19:44:58Z` und um 18:02 auf
+**`22:34:30Z`**. Im Tagesfenster hatte sich nichts geändert.
+
+**Die Prüfung, die jetzt Standard ist** — nicht ein Fenster, sondern
+drei, jedes mit `orderBy: lastModified` **bis zur letzten Seite**
+gelesen und das Maximum mit `jq max_by(.updated)` **gerechnet**:
+
+1. **die Vergangenheit** `01.01.–01.09.` des laufenden Jahres
+2. **das laufende Fenster** `01.09.–31.12.`
+3. **das Folgejahr** `01.01.–31.12.`
+
+Nur das mittlere Fenster war bisher Verfahren. Das genügt nicht: wenn er
+einen alten Eintrag anfasst, liegt die Änderung in Fenster 1, und ich
+hätte den Stempel fälschlich als unerklärt gezählt. Am 13.10. ergaben
+die drei Fenster 910 / 130 / 211 Termine und das Maximum `19:44:10Z` —
+**1.251 Termine über zwei Jahre, drei Stunden vor dem Stempel**.
+
+**Wichtig zur Mechanik:** die Vergangenheitsseiten brauchen
+**Blätterung** — am 13.10. vier Seiten à 250, und erst die letzte
+Antwort kam **ohne** `nextPageToken`. Weil `lastModified`
+**aufsteigend** sortiert, steht die jüngste Änderung auf der **letzten**
+Seite; eine Antwort mit Token ist unvollständig, nicht unbrauchbar.
+
+**Und ein Glücksfall der Werkzeugkette:** Antworten über ~100.000 Zeichen
+werden nicht in den Kontext geschrieben, sondern **in eine Datei unter
+`tool-results/`**. Das ist nicht ein Hindernis, sondern genau der Weg,
+den die Regel verlangt — `jq -s '[.[].events[]] | max_by(.updated)'`
+über alle gespeicherten Seiten rechnet das Maximum, und kein Auge liest
+mehr über eine Liste.
+
+**Was ein stempelloser Fall bleibt — die drei Ursachen, die ich nicht
+auseinanderhalten kann** (und deshalb nie als eine behaupte):
+- ein **gelöschter** Termin — abgesagte Einträge gibt `list_events`
+  in dieser Form nicht zurück
+- ein Termin **außerhalb** der geprüften Jahre
+- eine Änderung **am Kalender selbst** — Name, Farbe, Freigabe,
+  Benachrichtigungen. Die hebt den Stempel der *Sammlung*, ohne einen
+  Termin anzufassen. Das ist die unauffälligste und wahrscheinlichste
+  der drei, und sie ist für ihn ohne jede Bedeutung.
+
+**Zählung: 34.**
+
+**Und die Konsequenz für den Chat:** ein stempelloser Fall geht **nicht**
+in den Chat. Er ist eine Eigenschaft meiner Messung, kein Befund über
+seine Arbeit. Er wird gezählt, ins Log geschrieben, und das ist alles.
+Er landet nur dann vor ihm, wenn die Fälle ein Muster bilden, das ihn
+betrifft — und dann als Muster, nicht als Einzelfall.
