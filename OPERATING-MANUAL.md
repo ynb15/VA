@@ -5806,3 +5806,63 @@ Er schreibt es groß, Luis klein. **Dass er es kennt, steht jetzt da**
 („Holistic House klingt immer spannend"); **was es ist, weiß ich weiter
 nicht.** Es ist ein Brandlift-Thema für ihren Call am **Mo 19.10.** —
 also nicht mehr rätselhaft, nur unbekannt. Nicht nachfragen.
+
+═══════════════════════════════════════════════════════════════════════
+## Die Uhrenzeile enthält nur, was in seinen Kalendern steht
+*(Mi 14.10.2026, 08:02 Austin — zweiter Fall derselben Art in zwei Tagen)*
+
+Auf dem Board standen in der Zeile **„Die Uhren"** — der Liste seiner
+eigenen Termine — zwei Punkte, die in **keinem** seiner Kalender
+existieren:
+
+- **„Sa 17.10. … Writers Social 19:00"** — nachgesehen: privat nur *FSC*
+  10:00–12:00, geschäftlich nur die ganztägige Marke *Podcast: Scott
+  Aaronson*. **Und die „19:00" ist meine Erfindung** — der ATX-Rundbrief
+  nennt für den 17.10. keine Uhrzeit.
+- **„Di 20.10. … der ATX-Workshop, ohne Uhrzeit"** — nachgesehen: privat
+  nur *Date Night* 11:00–13:00, Geschäftskalender an dem Tag leer.
+
+**Das ist derselbe Fehler wie beim Elevation Camp am Tag davor**
+(Datum aus der Quelle, Wochentag von mir, falsch). Zwei Fälle in zwei
+Tagen machen daraus eine Struktur, nicht einen Ausrutscher:
+
+### Die Regel
+
+**1. „Die Uhren" ist eine Abschrift, keine Sammlung.** In diese Zeile
+kommt ausschließlich, was eine `list_events`-Antwort für den Tag
+hergibt — mit Termin-ID nachprüfbar. Alles andere (Rundbriefe,
+Ankündigungen, Einladungen ohne Annahme) gehört in den Abschnitt
+*„Daten aus Rundbriefen, die ich festhalte, ohne sie zu Deinen zu
+machen"*. **Die Trennung ist der ganze Wert der Zeile.**
+
+**2. Was die Quelle nicht nennt, steht nicht da.** Keine Uhrzeit, kein
+Wochentag, kein Ort, den ich nicht zitieren kann. Ein Datum ohne Uhrzeit
+bleibt ein Datum ohne Uhrzeit.
+
+**3. Ein Rundbrieftermin wandert erst dann in die Uhren, wenn er im
+Kalender steht.** Nicht, wenn er plausibel ist, nicht, wenn er zu einem
+Muster passt, und nicht, weil er schon einmal dort stand.
+
+**4. Beim Übertragen alter Zeilen in neuen Text wird jede Angabe neu
+geprüft.** Beide Fehler sind beim **Kopieren** entstanden: die
+Zeichenkette wanderte von Fassung zu Fassung und wurde dabei nie wieder
+gegen eine Quelle gehalten. **Eine Zeile, die ich abschreibe, prüfe ich,
+oder ich schreibe sie nicht ab.**
+
+### Dazu zwei Beobachtungen, die nebeneinander stehen bleiben
+
+**Alle ATX-Termine liegen in Austin, und er ist bis 04.11. in
+Kapstadt.** Das macht den Block zu Information, nicht zu Terminkalender.
+Kein Rat, keine Frage — nur der Grund, warum er auf dem Board unten
+steht und nicht oben.
+
+**Der Rundbrief kommt von Zac Solomon** — dessen persönliche Mail vom
+Di 12:01 ungelesen im Papierkorb liegt, und mit dem die
+**ATX-Erstattung vom 01.10.** offen ist. *Nebeneinander, nicht
+zusammengerechnet.*
+
+**Und eine Kleinigkeit zur Mechanik:** dieser Rundbrief kam **zweimal**
+— an `info@yannickbernard.com` und an `ynb@yannick-noah.com` —, landete
+aber in **einem** Thread mit zwei Nachrichten. Eine Mail, die zweimal
+zugestellt wird, ist nicht zwei Mails. Beim Zählen der Tagespost zählt
+der Thread, nicht die Nachricht.
