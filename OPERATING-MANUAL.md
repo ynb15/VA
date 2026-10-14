@@ -5664,3 +5664,85 @@ Muster belastbar ist. **Bis dahin wird weiter gerechnet, nicht geraten.**
 
 Und es bleibt dabei: **nichts davon geht in den Chat.** Es zeigt auf
 meine Messung und auf Google, nicht auf seine Arbeit.
+
+═══════════════════════════════════════════════════════════════════════
+## Drei Korrekturen vom Dienstagabend, 13.10.2026
+*(Tagesabschluss 22:02 Austin)*
+
+### 1. Die „Sekunde `:30`" war kein Muster — Fall 36
+
+Um 21:55 Austin (`02:55:06Z`) stieg der Privatstempel ein zweites Mal
+an diesem Abend. Volle Prüfung, drei Fenster, Maxima gerechnet:
+**910 / 130 / 211 Termine — Zahl für Zahl identisch mit der Messung von
+18:02**, Maxima unverändert. Kein Termin neu, keiner weg, keiner
+geändert.
+
+Um 20:02 hatte ich aus zwei Stempeln auf `:30` ein Muster gemacht.
+**Der dritte endet auf `:06`. Zwei von drei sind keine Regel**, und die
+Notiz „ab jetzt die Sekunde notieren" bleibt zwar nützlich, trägt aber
+keine Schlussfolgerung.
+
+**Was dafür belastbar ist und mehr wert:** *drei unerklärte Stempel an
+einem Abend bei über drei Messungen **unveränderter Terminzahl**.* Eine
+gleiche Zahl über 1.251 Termine schließt sowohl eine Neuanlage als auch
+eine **Löschung** innerhalb 2026/2027 praktisch aus — und damit fällt
+eine der drei Ursachen aus Fall 34 weg. Übrig bleiben: ein Termin
+**außerhalb** der geprüften Jahre, oder eine Änderung **an der Sammlung
+selbst**. **Auch das ist Deutung, kein Befund.**
+
+**Regel, die daraus folgt:** bei einem stempellosen Fall wird **die
+Terminzahl je Fenster mitnotiert**, nicht nur das Maximum. Die Zahl
+trennt „etwas ist verschwunden" von „nichts hat sich bewegt" — und das
+kostet nichts, weil `jq` sie ohnehin ausgibt.
+
+### 2. Der Tageswechsel erfasst nur die laufende Woche — und tat das nicht
+
+Beim Wechsel auf Mittwoch stellte sich heraus, dass die Zeilen mit dem
+Kürzel **`-1210`** ihre „heute"-Marken **vom Montag** noch trugen: der
+Wechsel am Dienstag hatte Lede, `tiny`, `h2` und `why` gezogen, **die
+Zeilenblöcke aber nicht**.
+
+**Verfahren ab jetzt, und es ist eng zu nehmen:**
+- **Das Kürzel `-DDMM` am `data-item` ist das Ankerdatum der Zeile.**
+  Daraus wird je Block abgeleitet, was „heute", „gestern" und „morgen"
+  bedeuten — **nicht aus dem aktuellen Datum.**
+- Ersetzt wird **blockweise** über den Zeilenbereich einer Zeile, nie
+  mit einem pauschalen Suchen-und-Ersetzen über die ganze Datei. Ein
+  pauschaler Lauf schrieb bei einem ersten Versuch **66 Stellen** falsch,
+  weil er Archivzeilen aus früheren Wochen mit dem heutigen Datum
+  stempelte. **Das ist schlimmer als die relative Marke.**
+- Wendungen, die kein Datum meinen („*sage es heute nicht wieder*",
+  „*von heute Morgen*"), werden **vorher** einzeln ersetzt oder
+  stehengelassen. Mechanisch gerollte Sprache ist der Fehler, den die
+  Regel verhindern soll.
+- **Die Archivzeilen unterhalb der laufenden Woche tragen weiter
+  relative Marken von ihrem Schreibtag. Bekannte Schuld.** Sie wird nur
+  behoben, wenn eine Zeile aus anderem Grund angefasst wird — jede
+  dieser Zeilen bräuchte ihren eigenen Schreibtag, und den habe ich nur
+  über das Kürzel.
+
+### 3. Zwei eigene Fehler, die nichts mit Technik zu tun haben
+
+**„Die ungelesenen" wurden auf die jüngsten zwei verkürzt.** Um 14:02
+standen fünf ungelesene Mails korrekt in der Tagesdatei. Von **15:02
+an** schrieb ich „die zwei ungelesenen von 12:53 und 13:04" — und ließ
+Erick Godsey (11:52), Zac Solomon (12:01) und `kj@sgnl.so` (12:27)
+stillschweigend fallen. Alle drei lagen um 22:02 unverändert da.
+**Regel: eine Menge wird gezählt oder benannt, nie mit „die" abgekürzt.**
+Eine Kurzform, die beim nächsten Durchgang abgeschrieben wird, wird zur
+Tatsache.
+
+**Wochentage, die ich selbst dazugeschrieben habe, waren falsch.** Das
+Elevation Camp lief auf dem Board seit einer Woche als
+„Fr 24.–Sa 25.10." — **der 24.10. ist ein Samstag, der 25.10. ein
+Sonntag.** Patrick Reisers Mail nannte nur die Zahlen; die Wochentage
+sind meine Zutat. **Regel: ein Wochentag, den die Quelle nicht nennt,
+wird gerechnet, nicht geschrieben.** Die Wochentagsprüfung fängt es nur,
+wenn die Zeichenkette dem Muster entspricht — hier hat sie es gefangen,
+aber erst nach einer Woche, weil der Text vorher nur im Übergabeblatt
+stand und nicht im geprüften Board.
+
+**Und eine Kleinigkeit, die jetzt belegt ist:** die Anthropic-Mail
+`card-expiring@mail.anthropic.com` kam am **Di 06.10. 02:57 Austin**
+(`2026-10-06T07:57:18Z`) und liegt **ungelesen** im Papierkorb. Auf dem
+Board stand zeitweise „gelesen". Nachgesehen statt erinnert.
