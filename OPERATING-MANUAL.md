@@ -5897,3 +5897,63 @@ derselben Unterhaltung.**
 
 **Und keine Deutung dazu:** welches der beiden Postfächer ihm wofür
 dient, sagt dieser Befund nicht. Zwei Zustände, nebeneinander.
+
+═══════════════════════════════════════════════════════════════════════
+## Es gibt einen Editor — und der Burning-Man-Komplex steht jetzt vollständig
+*(Mi 14.10.2026, 12:02 Austin)*
+
+Aus seiner eigenen Mail an Marian, Walker und Andie (Di 13.10. 09:53),
+heute 11:09 unverändert an Isabelle weitergeleitet:
+
+> „On the release: **I'm working with my editor on a really epic intro
+> right now** and the plan is to put the episode out **in December** as
+> the grand finale of this year's run."
+
+**Neu daran: der Editor.** Den Dezember-Plan hatte ich; dass jemand
+Drittes am Schnitt arbeitet, nicht. Damit sind es **vier** Dinge, die
+nebeneinander stehen und die ich **nicht** zusammenrechne:
+
+1. ein **Editor** arbeitet am **Intro**
+2. Walker will vor der Veröffentlichung **Transkript des fertigen
+   Schnitts, Material, Stills, Captions** sehen — auf allen Kanälen
+3. von zwei Stunden hat die zweite **keinen Ton**, es bleiben seine
+   beiden iPhones
+4. seine eigene Ganztagsmarke *Podcast: Marian Goodell* liegt auf
+   **Fr 30.10.**, sein Satz sagt **Dezember**
+
+**Was daraus folgt, folgert er.** Von mir kommt dazu kein Vorschlag,
+keine Frage und keine Zeitplanung.
+
+### Marians Transkriptfrage ist noch offen — seine Essayfrage nicht
+
+Marian hat zwei Dinge gefragt. Die nach dem **AfrikaBurn-Essay** hat er
+beantwortet (Substack-Link *„10 Life Lessons I Learned at AfrikaBurn"*).
+Die nach dem **Transkript** (*„does anyone have access to that?"*) hat
+**bis heute niemand** beantwortet — sie stand an Andie, mit ihm und
+`appearances@burningman.org` im Cc. **An die Runde, nicht an ihn
+allein.** Die beiden Fragen nicht verwechseln: eine beantwortete Frage
+im selben Absatz macht die andere nicht erledigt.
+
+### Jetzt wörtlich statt aus zweiter Hand
+
+> „**Isabelle and I just landed back home in South Africa over the
+> weekend and I'm now easing into my rehab here**"
+
+Dazu „**the 2h of your heart**", eine offene Einladung an das BM-Team
+nach Kapstadt und zu AfrikaBurn, und der Wunsch nach *Part 2 in BRC* im
+nächsten Jahr — **ohne Datum, also keine Uhr.**
+
+### Zwei Beobachtungen zur Mechanik
+
+**Er leitet an Isabelle weiter, ohne eigenen Text.** Dieselbe
+Weiterleitung ist der Weg, über den ich am 14.10. überhaupt an diesen
+Mailtext gekommen bin — ausgehende Mails sehe ich sonst nur, wenn ich
+`in:sent` abfrage. **Zweiter Fall binnen eines Tages, in dem der Wert
+einer Mail im mitzitierten Teil lag.** Die Regel von 07:02 gilt also
+nicht nur für fremde Antworten, sondern auch für seine eigenen
+Weiterleitungen.
+
+**Seine Links laufen über `streak-link.com`.** Das ist Streak, und es
+passt zu seiner Notiz, dass er das Öffnen seiner Mails trackt. Keine
+Deutung, nur die Erklärung für die fremd aussehenden URLs in seinen
+Mails — **und ein Grund, sie nicht für Weiterleitungsspuren zu halten.**
