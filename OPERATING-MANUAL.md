@@ -5957,3 +5957,43 @@ Weiterleitungen.
 passt zu seiner Notiz, dass er das Öffnen seiner Mails trackt. Keine
 Deutung, nur die Erklärung für die fremd aussehenden URLs in seinen
 Mails — **und ein Grund, sie nicht für Weiterleitungsspuren zu halten.**
+
+═══════════════════════════════════════════════════════════════════════
+## Fall 37 — und die Terminzahl ist jetzt das eigentliche Ergebnis
+*(Mi 14.10.2026, 15:02 Austin)*
+
+Vierter Stempelsprung in zwei Tagen, dritter auf dem Privatkalender:
+`02:55:06Z` → **`19:31:26Z`** (14:31 Austin). Drei Fenster gerechnet,
+und zwar Maximum **und Zahl**:
+
+| | Di 18:02 | Di 22:02 | Mi 15:02 |
+|---|---|---|---|
+| 01.01.–01.09. | 910 | 910 | **910** |
+| 01.09.–31.12. | 130 | 130 | **130** |
+| 2027 | 211 | 211 | **211** |
+
+**Dreimal dieselbe Zahl über 1.251 Termine, und das Maximum bleibt
+`19:44:10Z`** — beim letzten Sprung fast 24 Stunden alt.
+
+Die Regel von gestern („Terminzahl mitnotieren") hat sich damit sofort
+bezahlt: **die Zahl ist hier der Befund, nicht das Maximum.** Eine über
+vier Messungen konstante Zahl schließt Neuanlage *und* Löschung
+innerhalb der geprüften zwei Jahre aus. Übrig bleiben ein Termin
+außerhalb 2026/2027 oder eine Änderung an der Sammlung selbst — und bei
+vier Sprüngen in zwei Tagen ohne eine einzige Terminänderung ist das
+Zweite das Naheliegende. **Bleibt Deutung.**
+
+**Sekunden bisher: `:30`, `:30`, `:06`, `:26`.** Kein Muster. Die
+Notiz von Dienstag 20:02 bleibt zurückgezogen, und ich baue daraus
+keine neue.
+
+**Was das praktisch heißt:** die Vollprüfung kostet je Durchgang sechs
+Abfragen und liefert seit vier Messungen dasselbe Ergebnis. **Ab jetzt
+genügt das laufende Fenster** (eine Abfrage, Zahl *und* Maximum) —
+solange dessen **Zahl 130 bleibt und das Maximum sich nicht bewegt**,
+wird der Fall als weiterer Sprung derselben Serie gezählt und notiert.
+**Die Vollprüfung läuft wieder, sobald eine der drei Zahlen sich
+ändert, das Maximum springt, oder der Geschäftskalender betroffen ist** —
+dort gab es bisher nur einen Fall. *Das ist eine bewusste Verkürzung
+nach vier gleichen Messungen, keine Nachlässigkeit; sie steht hier,
+damit sie überprüfbar bleibt.*
