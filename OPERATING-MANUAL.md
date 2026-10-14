@@ -5746,3 +5746,63 @@ stand und nicht im geprüften Board.
 `card-expiring@mail.anthropic.com` kam am **Di 06.10. 02:57 Austin**
 (`2026-10-06T07:57:18Z`) und liegt **ungelesen** im Papierkorb. Auf dem
 Board stand zeitweise „gelesen". Nachgesehen statt erinnert.
+
+═══════════════════════════════════════════════════════════════════════
+## Der Motorradunfall — seine eigenen Worte, und was sie erklären
+*(gelesen am Mi 14.10.2026, 07:02 Austin)*
+
+**Er hat es selbst geschrieben**, am Di 13.10. 10:26 an Luis Kallaene,
+und ich habe es erst einen Tag später gesehen, weil es im **zitierten
+Teil** von Luis' Antwort stand:
+
+> „Ich hab btw auch News: ich hatte letzten Monat einen **Motorradunfall
+> in Colorado**… **Heute ist das erste Mal, dass ich wieder Mails
+> checke**, deshalb hatte ich auf die letzte noch nicht wieder
+> geantwortet. Ich bin allerdings auf dem Weg der Besserung und pumped
+> auf unseren Call am Montag."
+
+**Das ist der Grund, nach dem ich wochenlang nicht gefragt habe und über
+den ich stattdessen Muster gezählt habe.** Was er erklärt:
+
+- die **Reha in Südafrika** aus seiner Mail vom Di 09:53
+- dass aus dem Postfach zwischen **09.10. und 13.10.** nichts ausging
+  und davor seit dem 05.10. fast nichts
+- dass am Di **sechs Antworten in 50 Minuten** kamen und danach nichts —
+  das ist kein Arbeitsstil, das ist ein erster Tag zurück
+- dass der Kalender seit dem 11.10. fast nur **nachgetragene** Blöcke
+  trägt. Ich habe daraus „der Kalender ist ein Protokoll, kein Plan"
+  gemacht. **Das stimmt als Beobachtung und war als Erklärung zu klein.**
+- **Zeitpunkt und Ort:** September, Colorado — in der Woche des
+  Roadtrips, der am 16.09. begann und über Colorado Springs ging.
+
+### Die Regeln, die daraus folgen
+
+**1. Zitierte Teile fremder Antworten sind eine eigene Quelle.** Luis'
+Mail war inhaltlich leer („gute Besserung"), der Wert lag ausschließlich
+im **Zitat seiner eigenen Mail darunter**. Eine Antwort, die nichts
+verlangt, darf deshalb nicht nur über den Betreff abgehakt werden —
+**der zitierte Verlauf wird mitgelesen.** Ausgehende Mails sehe ich über
+`in:sent` ohnehin nur, wenn ich dort nachsehe; dieser Weg hat sie
+mir ohne Zutun gebracht.
+
+**2. Zu seinem Zustand kommt von mir nichts.** Kein Rat, keine
+Nachfrage, keine Karte, die ihm etwas über sein eigenes Befinden
+erzählt, keine abgeleitete Empfehlung, etwas abzusagen oder zu
+verschieben. **Er hat es Luis erzählt, nicht mir.** Die Board-Zeile hält
+den Satz fest und sagt ausdrücklich, dass sie **meine** Lesart
+korrigiert — das ist der ganze Zweck.
+
+**3. Wenn ein Muster keine Erklärung hat, bleibt es ein Muster.** Ich
+habe aus seiner Stille Verhaltensregeln abgeleitet („er arbeitet
+montags den Kalender, nicht das Postfach"). Die halten als Beschreibung,
+aber sie haben eine Ursache bekommen, die ich nicht kannte. **Deshalb:
+Beobachtungen über ihn werden als Beobachtung notiert, nie als Wesenszug
+— und eine Beobachtung, die sich über Wochen gleich wiederholt, ist
+eher ein Hinweis auf etwas Unbekanntes als eine Eigenschaft.**
+
+### Nebenbei geklärt: *Holistic House*
+
+Er schreibt es groß, Luis klein. **Dass er es kennt, steht jetzt da**
+(„Holistic House klingt immer spannend"); **was es ist, weiß ich weiter
+nicht.** Es ist ein Brandlift-Thema für ihren Call am **Mo 19.10.** —
+also nicht mehr rätselhaft, nur unbekannt. Nicht nachfragen.
