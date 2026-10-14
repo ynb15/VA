@@ -5631,3 +5631,36 @@ in den Chat. Er ist eine Eigenschaft meiner Messung, kein Befund über
 seine Arbeit. Er wird gezählt, ins Log geschrieben, und das ist alles.
 Er landet nur dann vor ihm, wenn die Fälle ein Muster bilden, das ihn
 betrifft — und dann als Muster, nicht als Einzelfall.
+
+═══════════════════════════════════════════════════════════════════════
+## Die Sekunde `:30` — stempellose Fälle haben ein Muster
+*(13.10.2026, 20:02 Austin — Fall 35)*
+
+Am Abend des 13.10. stiegen **beide** Kalenderstempel ohne erklärenden
+Termin, und zwar auf **dieselbe Sekunde**:
+
+- **privat** `2026-10-13T22:34:**30**Z` — 17:34 Austin — *Fall 34*
+- **Geschäft** `2026-10-14T00:29:**30**Z` — 19:29 Austin — *Fall 35*
+
+Geprüft wie es die Regel verlangt, je drei Fenster, Maximum mit `jq`
+gerechnet: privat **1.251** Termine über zwei Jahre, Maximum `19:44:10Z`;
+Geschäft **845** Termine, Maximum `19:45:28Z`. Beide Maxima liegen
+*vor* dem jeweiligen Stempel, in einem Fall drei Stunden, im anderen 44
+Minuten.
+
+**Was das Muster wert ist:** zwei Eingriffe von seiner Hand treffen nicht
+zufällig die exakt gleiche Sekunde in zwei verschiedenen Minuten auf zwei
+verschiedenen Kalendern. Das verschiebt die wahrscheinlichste der drei
+Ursachen (siehe Abschnitt zu Fall 34) deutlich auf **Serverseite** —
+Abgleich, Weitergabe einer Einstellung, etwas in Googles Maschinerie.
+**Das ist Deutung, kein Befund.** Die Schnittstelle sagt nicht, was einen
+Sammlungsstempel hebt.
+
+**Die Konsequenz für die Arbeit:** ab jetzt wird bei einem stempellosen
+Fall **die Sekunde notiert**. Sammeln sich Fälle auf `:30` oder einer
+anderen festen Sekunde, ist das ein weiteres Indiz für Maschine statt
+Mensch — und erspart künftig die volle Drei-Fenster-Rechnung, sobald das
+Muster belastbar ist. **Bis dahin wird weiter gerechnet, nicht geraten.**
+
+Und es bleibt dabei: **nichts davon geht in den Chat.** Es zeigt auf
+meine Messung und auf Google, nicht auf seine Arbeit.
