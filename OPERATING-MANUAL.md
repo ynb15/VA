@@ -5866,3 +5866,34 @@ zusammengerechnet.*
 aber in **einem** Thread mit zwei Nachrichten. Eine Mail, die zweimal
 zugestellt wird, ist nicht zwei Mails. Beim Zählen der Tagespost zählt
 der Thread, nicht die Nachricht.
+
+═══════════════════════════════════════════════════════════════════════
+## Nachtrag zur Doppelzustellung: ein Thread, zwei Ausgänge
+*(Mi 14.10.2026, 09:03 Austin — eine Stunde nach der Regel, die er
+korrigiert)*
+
+Um 08:02 habe ich notiert: *„Eine Mail, die zweimal zugestellt wird, ist
+nicht zwei Mails. Beim Zählen der Tagespost zählt der Thread, nicht die
+Nachricht."* **Für das Zählen stimmt das. Für den Ausgang nicht.**
+
+Der ATX-Rundbrief vom 14.10. 07:35 kam an beide Adressen und liegt in
+**einem** Thread mit zwei Nachrichten. Eine Stunde später:
+
+- die Kopie an `info@yannickbernard.com`: **`UNREAD,TRASH`**
+- die Kopie an `ynb@yannick-noah.com`: **`INBOX`**
+
+**Ungelesen weggeworfen und gelesen-behalten, in derselben Minute, in
+derselben Unterhaltung.**
+
+**Die Regel, vollständig:**
+- **Zählen** (wie viel Post kam): pro **Thread**.
+- **Ausgang** (was damit passiert ist — die vier Ausgänge einer
+  Postfachsitzung): pro **Nachricht**, über ihre `labelIds`. Ein
+  Thread-Zustand existiert nicht; `search_threads` zeigt die Marken
+  *jeder* Nachricht, und sie können auseinandergehen.
+- Eine Zeile wie „Mail X ist jetzt im Papierkorb" ist bei
+  doppelt zugestellter Post **unvollständig**, wenn sie nicht sagt,
+  *welche Kopie*.
+
+**Und keine Deutung dazu:** welches der beiden Postfächer ihm wofür
+dient, sagt dieser Befund nicht. Zwei Zustände, nebeneinander.
