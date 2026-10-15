@@ -6281,3 +6281,62 @@ ab Mi 30.09. sind bis Do 15.10. **11 Werktage** — ausgerechnet, nicht
 **Und was ich nicht tue:** nachfassen. Der Text für ein Nachfassen wird
 geschrieben und hingelegt; **abschicken tut er.** Auf dem Board steht das
 Angebot, nicht die Mahnung.
+
+═══════════════════════════════════════════════════════════════════════
+
+## Die Kontrollmessung: wie ein echtes Anlegen aussieht — und was damit
+## für die 40 stempellosen Fälle ausgeschlossen ist
+
+**Do 15.10., 13:02.** Nach vierzig Fällen, in denen der Sammlungsstempel
+des Privatkalenders sprang, ohne dass irgendeine Zahl sich bewegte, ist
+zum ersten Mal ein **echtes** Anlegen in dieselbe Messung gefallen:
+*Francis*, Sa 17.10., `created 17:49:00Z`, `updated 17:49:20Z`.
+
+**So sieht ein echtes Ereignis aus — alle vier Merkmale zusammen:**
+
+1. **Zahl +1** im betroffenen Fenster (130 → 131).
+2. **Fenstermaximum springt** auf das `updated` des neuen Termins
+   (`2026-10-13T19:44:10Z` → `2026-10-15T17:49:20Z`).
+3. **Sammlungsstempel springt**, und zwar **eine Sekunde nach** dem
+   `updated` des Termins.
+4. **Die Antwort wächst**, hier von 100 529 auf 101 174 Bytes, und die
+   ID-Menge um genau diese eine ID.
+
+**Bei allen 40 Fällen traf nur Punkt 3 zu.** Zahl, Maximum und
+Antwortgröße standen still — in drei Fenstern gleichzeitig, über fünf
+Vollprüfungen hinweg (910 / 130 / 211, jetzt 910 / **131** / 211).
+
+**Befund, nicht mehr Vermutung: Anlegen, Löschen und Ändern eines Termins
+in 2026 oder 2027 ist als Ursache der 40 Fälle ausgeschlossen.** Vorher
+hieß es im Manual, das sei die unwahrscheinlichste von drei Erklärungen;
+jetzt ist es keine Erklärung mehr.
+
+**Die Antwortgröße in Bytes ist ab jetzt Teil der Messung.** Sie ist das
+billigste und schärfste der vier Merkmale: `wc -c` auf die gespeicherte
+Antwort zeigt eine Änderung an der Sammlung, noch bevor ich jq laufen
+lasse. Zwei Antworten mit identischer Bytezahl enthalten dasselbe.
+
+**Was offen bleibt, und ich behaupte nichts darüber:** Termine
+**außerhalb** der drei Fenster, also vor 2026 und nach 2027. Das ist die
+einzige noch ungeprüfte Region und der nächste Test, wenn die Serie
+weiterläuft.
+
+**Und was geprüft und verworfen ist:** dass **meine eigenen** Abfragen den
+Stempel setzen. Vier Fensterabfragen liefen 15:04:41Z, 16:05:08Z,
+17:03:20Z, 18:03:29Z; die Stempel standen auf 15:03:15Z, 15:23:52Z,
+16:17:42Z, 17:49:21Z. Keine Deckung. Der Verdacht lag nahe, weil die
+Sprünge stündlich kommen wie meine Sweeps — **und deshalb musste er
+geprüft werden, statt plausibel zu bleiben.** (Dieselbe Lehre wie bei der
+`historyId` zwei Stunden vorher: eine naheliegende Mechanik wird gemessen
+oder sie bleibt eine Vermutung.)
+
+### Zwei Termine, die gleichzeitig stehen, werden hingestellt, nicht gelöst
+
+*Francis* 11:00–13:00 überlappt *FSC* 10:00–12:00 um eine Stunde — beide
+privat, beide `confirmed`, beide von ihm. **Das kommt als Befund aufs
+Board, mit beiden Zeiten und der Überlappung in Minuten, und ohne
+Empfehlung, welcher weichen soll.** Angeboten wird ein Vorschlag, wenn er
+sagt, welcher der beiden; mehr nicht. Wer *Francis* ist, steht nicht im
+Termin — kein Ort, keine Beschreibung, kein Teilnehmer. **Ein Name ohne
+Angaben bleibt ein Name**; ich suche ihn nicht in der Databank zusammen
+und schreibe keine Vermutung aufs Board.
