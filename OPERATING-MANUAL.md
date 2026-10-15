@@ -6116,14 +6116,15 @@ aus einer:
    lag und heute nicht mehr, **ist ein Vorgang von ihm** und gehört aufs
    Board.
 
-Der Zeitpunkt eines Label-Wechsels steht nirgends in der Antwort. Was es
-gibt, ist die **`historyId`**: sie steigt monoton mit jeder Änderung.
-Liegt die `historyId` einer getrashten Mail **unter** der einer Mail, die
-um 09:35 angekommen ist, dann ist der Griff **vor** 09:35 passiert. Das
-ist eine Ordnung, keine Uhrzeit — und so wird es auch hingeschrieben.
-Dieselbe Rechnung hat hier eine dritte Mail aus der Sitzung
-herausgehalten: der Workspace-*Product Update* lag ebenfalls
-`UNREAD,TRASH`, aber mit einer `historyId` von Mittwoch.
+Der Zeitpunkt eines Label-Wechsels steht nirgends in der Antwort.
+
+> **ZURÜCKGEZOGEN eine Stunde später (11:02).** Hier stand, die
+> `historyId` steige monoton mit jeder Änderung und man könne einen
+> Löschgriff damit zeitlich einordnen. **Das ist falsch** — siehe den
+> Abschnitt *"Die `historyId` taugt nicht zum Datieren"* weiter unten.
+> Der ehrliche Befund ist allein das **Beobachtungsfenster zwischen zwei
+> Sweeps**: zuletzt in Mappe A gesehen, jetzt in Mappe B, also irgendwann
+> in dieser Stunde. Mehr nicht.
 
 **Und drei Mails, die zusammen ankamen, hatten drei verschiedene
 Ausgänge.** Das ist der Nachtrag zur Doppelzustellungs-Regel von heute
@@ -6159,3 +6160,91 @@ stehen; falsch wäre nur gewesen, ihn als Aussage über den Tag zu lesen
 statt als Messung einer Minute. **Negative Befunde über seinen Kalender
 gelten bis zur nächsten Messung und werden mit Uhrzeit hingeschrieben,
 nicht als Zustand.**
+
+
+═══════════════════════════════════════════════════════════════════════
+
+## Die `historyId` taugt nicht zum Datieren
+
+**Do 15.10., 11:02 — Rückzug einer Regel, die eine Stunde alt war.**
+
+Um 10:02 habe ich den Zeitpunkt eines Löschgriffs über die `historyId`
+eingeordnet: die beiden gelöschten Google-Mails lagen bei 2236690 und
+2236695, die um 09:35 angekommene Mail bei 2236753, also musste der Griff
+vor 09:35 liegen. Eine Stunde später sieht dieselbe Messung so aus:
+
+| Mail | Zustand | `historyId` 10:02 | `historyId` 11:02 |
+|---|---|---|---|
+| NYT 08:03 | **unangetastet** `UNREAD,INBOX` | 2236504 | **2236896** |
+| World Vegan Travel 09:35 | **unangetastet** `UNREAD,INBOX` | 2236753 | **2236898** |
+| Google 07:16 | `TRASH` | 2236690 | **2236690** |
+| Workspace 07:17 | `UNREAD,TRASH` | 2236695 | **2236695** |
+
+**Die Zahl der unveränderten Mails steigt, die der geänderten bleibt
+stehen.** Was dieses Feld in dieser Antwort zählt, weiß ich nicht; eine
+Reihenfolge von Benutzergriffen ist es jedenfalls nicht.
+
+**Regel:** Die `historyId` wird **nicht** benutzt, um etwas zu datieren
+oder zu ordnen. Was einen Label-Wechsel zeitlich eingrenzt, ist
+ausschließlich das **Fenster zwischen zwei Sweeps**: *zuletzt um 09:02
+ungelesen im Posteingang gesehen, um 10:02 im Papierkorb* — also in
+dieser Stunde, und keine Minute genauer. Das ist weniger, als ich vor
+einer Stunde behauptet habe, und es ist das, was ich belegen kann.
+
+**Die allgemeinere Lehre, und die ist die wichtigere:** Die falsche Regel
+stand **eine Stunde** im Manual, auf dem Board und im Commit. Entstanden
+ist sie, weil ich eine *plausible* Mechanik (ein monoton steigender
+Zähler) als *geprüfte* Mechanik aufgeschrieben habe — geprüft hatte ich
+nur, dass die Zahlen in einer einzigen Messung die erwartete Reihenfolge
+hatten. **Eine Mechanik, die ich an einer Momentaufnahme ablese, wird als
+Vermutung notiert, nicht als Regel.** Eine Regel wird sie erst, wenn ich
+sie über **zwei** Messungen gesehen habe — und genau diese zweite Messung
+hat sie hier umgebracht.
+
+## "18 Minuten vor dem Ende" — eine Zahl am falschen Ereignis
+
+Dieselbe Stunde, zweiter Fehler, andere Ursache. Ich habe notiert, die
+Verlängerung des *YouTube*-Blocks um 09:42 sei *"18 Minuten vor seinem
+eigenen Ende"* gekommen. Das Ende war 08:30. **09:42 liegt danach.** Die
+18 Minuten gehören zum *Anlegen* um 07:18, das 18 Minuten nach dem
+07:00-Beginn lag — ich habe die Zahl von einem Ereignis auf ein anderes
+übertragen, weil beide denselben Block betrafen.
+
+**Regel:** Eine Zeitdifferenz wird **beim Hinschreiben nachgerechnet**,
+auch wenn sie aus derselben Zeile stammt. Steht in einem Satz eine
+Spanne, dann stehen in meiner Notiz vorher die **zwei Zeitpunkte**, aus
+denen sie gebildet ist.
+
+Richtig gerechnet ist der Befund schärfer als der falsche:
+
+| Griff | Austin | Ende danach | Lage |
+|---|---|---|---|
+| angelegt | 07:18 | 08:30 | 18 Min **nach** dem 07:00-Beginn |
+| verlängert | 09:42 | 10:00 | **72 Min nach** dem Ablauf |
+| verlängert | 10:43 | 11:00 | **43 Min nach** dem Ablauf |
+
+**Alle drei Griffe an diesem Block sind Nachträge.** Das ist dieselbe
+Form, die diese ganze Woche trägt — Termine werden eingetragen und
+verlängert, *nachdem* ihre Zeit vorbei ist. Es ist ein Muster und bleibt
+eines: **einen Grund dafür kenne ich nicht und schreibe keinen dazu.**
+
+## Tamay Jentjens steht unter `Targets`
+
+Am Do 15.10. zwischen 10:02 und 11:02 hat er den Rundbrief von Tamay
+Jentjens (03:21) gelesen, archiviert und unter
+**`Targets/Tamay Jentjens`** abgelegt (`Label_7786317299810343705`,
+**29 Mails**, 0 ungelesen).
+
+Das Label gibt es also länger, und es ist kein Rundbrief-Ordner, sondern
+eins seiner `Targets/`-Labels — dieselbe Familie wie *Targets/Arthur
+Brooks*, *Targets/Hook Point*, *Targets/Psychedelics Today*. **Befund:
+Tamay ist bei ihm ein Target, kein Absender, den er nur erträgt.** Was er
+mit ihm vorhat, steht nirgends, und ich stelle keine Vermutung dazu auf
+dem Board hin.
+
+**Folgerung für die Rundbrief-Spalte des Boards:** Wenn ich etwas als
+*"Daten aus Rundbriefen, die ich festhalte, ohne sie zu Deinen zu
+machen"* einordne, dann ist das eine Einordnung **von mir**. Ein Blick
+auf die `labelIds` derselben Mail kann sie widerlegen. **Bevor ein
+Absender in die Rundbrief-Spalte wandert, wird geprüft, ob er ein
+`Targets/`- oder `Leads/`-Label hat.**
