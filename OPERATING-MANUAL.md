@@ -6248,3 +6248,36 @@ machen"* einordne, dann ist das eine Einordnung **von mir**. Ein Blick
 auf die `labelIds` derselben Mail kann sie widerlegen. **Bevor ein
 Absender in die Rundbrief-Spalte wandert, wird geprüft, ob er ein
 `Targets/`- oder `Leads/`-Label hat.**
+
+═══════════════════════════════════════════════════════════════════════
+
+## Ein Absender, der sich bewegt, ist keine Sache, die sich bewegt
+
+**Do 15.10., 12:02.** OnPress hat zum ersten Mal seit der
+Erstattungszusage vom 30.09. geschrieben — und es war eine Werbemail
+(*"Having trouble getting your books on time?"*, im Fußzeilentext als
+*"email promotion"* ausgewiesen). Zu den 111,29 $ kein Wort.
+
+Das ergänzt die Virgin-Active-Regel um ihre andere Hälfte. Dort gilt:
+**beobachtet wird nach Absender, nicht nach Faden**, weil eine Antwort in
+einem neuen Thread sonst durchfällt. Hier gilt die Umkehrung:
+
+**Eine Mail vom beobachteten Absender schließt die Beobachtung nicht.**
+Eine Wache steht auf der **Sache** — die Erstattung, die unterschriebene
+Seite 2, der Ton der zweiten Stunde — nicht auf dem Namen im Absenderfeld.
+Erst wenn die Mail die Sache berührt, ändert sich der Status. Eine
+Werbemail desselben Hauses ist für die Wache ein **Null-Ereignis**, und
+sie wird genau so hingeschrieben: *der Absender hat sich bewegt, die
+Sache nicht.*
+
+Es ist trotzdem eine Zeile wert, aus zwei Gründen: es belegt, dass der
+Absender aktiv und erreichbar ist, und es datiert das Schweigen in der
+Sache neu.
+
+**Fristen werden nachgerechnet, nicht geschätzt.** *"3-5 business days"*
+ab Mi 30.09. sind bis Do 15.10. **11 Werktage** — ausgerechnet, nicht
+überschlagen (dieselbe Regel wie bei der Zeitdifferenz von heute 11:02).
+
+**Und was ich nicht tue:** nachfassen. Der Text für ein Nachfassen wird
+geschrieben und hingelegt; **abschicken tut er.** Auf dem Board steht das
+Angebot, nicht die Mahnung.
