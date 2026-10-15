@@ -6088,3 +6088,74 @@ Kaplan-Termin in jeder Antwort und ich habe nur den Stempel gelesen;
 heute hätte der Titelvergleich die Bewegung verdeckt. **Beide Male lag
 die Antwort vollständig vor mir.** Die Frage war zu eng, nicht die Daten
 zu dünn.
+
+═══════════════════════════════════════════════════════════════════════
+
+## Eine Postfach-Sitzung steht in keiner Ankunftsabfrage
+
+**Do 15.10., 10:02.** Zwischen 09:02 und 09:35 hat er zwei Mails aus dem
+Posteingang geräumt: die Google-Sicherheitswarnung von 07:16 **gelesen**
+und in den Papierkorb, den Workspace-Admin-Hinweis von 07:17
+**ungelesen** in den Papierkorb. Die NYT-Bestätigung von 08:03 blieb
+unangetastet.
+
+**Meine Standardabfrage hätte das nie gezeigt.**
+`in:anywhere newer_than:2h` fragt nach **Ankünften**. Ein Label-Wechsel
+ist keine Ankunft. Die beiden Mails sind um 07:16 und 07:17 angekommen,
+und um 10:02 liegen sie in einer Abfrage von 08:02 bis 10:02 schlicht
+nicht mehr drin. Gefunden habe ich es nur, weil ich für die `h2` eine
+Zahl brauchte und deshalb `in:inbox is:unread` separat gelaufen bin —
+also durch Zufall, nicht durch Verfahren.
+
+**Regel:** Der Postteil eines Sweeps besteht aus **zwei** Abfragen, nicht
+aus einer:
+
+1. **Ankünfte** — `in:anywhere newer_than:2h`, `includeTrash: true`.
+2. **Zustand** — `in:inbox is:unread`, jedes Mal, und die Ausgabe wird
+   aufgezählt, nicht überflogen. Was gestern ungelesen im Posteingang
+   lag und heute nicht mehr, **ist ein Vorgang von ihm** und gehört aufs
+   Board.
+
+Der Zeitpunkt eines Label-Wechsels steht nirgends in der Antwort. Was es
+gibt, ist die **`historyId`**: sie steigt monoton mit jeder Änderung.
+Liegt die `historyId` einer getrashten Mail **unter** der einer Mail, die
+um 09:35 angekommen ist, dann ist der Griff **vor** 09:35 passiert. Das
+ist eine Ordnung, keine Uhrzeit — und so wird es auch hingeschrieben.
+Dieselbe Rechnung hat hier eine dritte Mail aus der Sitzung
+herausgehalten: der Workspace-*Product Update* lag ebenfalls
+`UNREAD,TRASH`, aber mit einer `historyId` von Mittwoch.
+
+**Und drei Mails, die zusammen ankamen, hatten drei verschiedene
+Ausgänge.** Das ist der Nachtrag zur Doppelzustellungs-Regel von heute
+08:02, einen Schritt weiter: der Ausgang gilt **pro Nachricht**, und er
+ist auch zwischen gleichzeitig angekommenen Nachrichten verschieden.
+Aus *"er hat den Posteingang aufgeräumt"* darf ich für die eine Mail
+nicht schließen, was für die andere gilt. Dass er die eine geöffnet und
+die andere ungelesen weggeworfen hat, steht als Befund da — **warum,
+weiß ich nicht, und ich schreibe keinen Grund dazu.**
+
+### Die Mengenregel vom Dienstag hat heute wieder versagt
+
+Im 09:02-Eintrag stehen **sechs** ungelesene, sechs sind namentlich
+genannt, und es waren **sieben** — Tamay Jentjens von 03:21 fehlte.
+Die Regel vom Dienstag (*eine Menge wird gezählt oder genannt, nie
+abgekürzt*) war befolgt, die Aufzählung war vollständig formuliert, und
+sie war trotzdem falsch, weil sie **aus meinem Kopf** kam und nicht aus
+einer Abfrage. Tamays Mail stand zu diesem Zeitpunkt sogar auf dem
+Board, im Rundbrief-Abschnitt.
+
+**Verschärfung:** Die Zahl der ungelesenen Mails kommt aus **einer
+Abfrage in diesem Sweep**, deren Treffer ich einzeln hinschreibe. Sie
+kommt nie aus der Liste vom letzten Sweep plus Differenz. Eine Menge,
+die ich nicht in derselben Stunde gemessen habe, bekommt keine Zahl.
+
+### Nachtrag zur Uhrenzeile: "nicht verlängert" hat ein Ablaufdatum
+
+Um 09:02 habe ich notiert, der *YouTube*-Block sei *"um 08:30
+ausgelaufen, nicht verlängert"*. Um 09:42 hat er ihn auf 10:00
+verlängert — dieselbe ID `4ul5sv6mt7tfm84qbntfdatkp2`, Beginn
+unverändert, nur das Ende gewandert. Der Satz war richtig und bleibt
+stehen; falsch wäre nur gewesen, ihn als Aussage über den Tag zu lesen
+statt als Messung einer Minute. **Negative Befunde über seinen Kalender
+gelten bis zur nächsten Messung und werden mit Uhrzeit hingeschrieben,
+nicht als Zustand.**
