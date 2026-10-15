@@ -6340,3 +6340,71 @@ sagt, welcher der beiden; mehr nicht. Wer *Francis* ist, steht nicht im
 Termin — kein Ort, keine Beschreibung, kein Teilnehmer. **Ein Name ohne
 Angaben bleibt ein Name**; ich suche ihn nicht in der Databank zusammen
 und schreibe keine Vermutung aufs Board.
+
+═══════════════════════════════════════════════════════════════════════
+
+## Ein Verschieben ändert keine ID — deshalb wird die Liste gezählt, nicht
+## das Maximum
+
+**Do 15.10., 14:02 — Korrektur eines Befunds, der eine Stunde alt war.**
+
+Um 13:02 habe ich aufs Board geschrieben, *Francis* überlappe *FSC* am
+Samstag um eine Stunde. **Falsch.** Er hatte um 12:49 **zwei** Dinge
+getan, vier Sekunden auseinander:
+
+| `updated` | Was |
+|---|---|
+| `17:49:16Z` | *FSC* von 10:00–12:00 auf **09:00–11:00** verschoben |
+| `17:49:20Z` | *Francis* auf **11:00–13:00** angelegt |
+
+Die beiden **stoßen aneinander**. Es gab nie eine Überlappung.
+
+**Beide Lücken, durch die das gefallen ist:**
+
+1. **Der ID-Vergleich findet keine Änderungen.** Ich hatte die Menge der
+   Termin-IDs vorher gegen nachher gestellt — genau eine ID kam hinzu —
+   und daraus geschlossen, *Francis* sei die einzige Änderung. Ein
+   verschobener Termin behält seine ID. Der Vergleich findet **Zugänge
+   und Abgänge, nichts sonst.**
+2. **Das Maximum findet nur die jüngste Änderung.** Die *FSC*-Verschiebung
+   lag vier Sekunden unter dem Maximum und war damit unsichtbar.
+
+**Die Regel, die beides ersetzt.** Nach jeder Messung wird die
+**vollständige Liste** der Termine aufgezählt, deren `updated` über dem
+**Maximum der vorigen Messung** liegt:
+
+```
+jq -r '.events[] | select(.updated > "<Maximum der vorigen Messung>")
+       | "\(.updated)  \(.summary)  \(.start.dateTime // .start.date)"' DATEI | sort
+```
+
+**Das ist die Messung.** Maximum, Zahl und ID-Vergleich bleiben als
+Zusatzmerkmale (sie stehen in der Kontrollmessung von 13:02), aber der
+Befund ist die Liste. Sie beantwortet direkt die Frage, die ein Sweep
+stellt: *was hat er seit dem letzten Sweep angefasst?*
+
+**Und das Fenster wird weit genug gezogen.** Das Tagesfenster endete bei
+Freitag; die Verschiebung lag auf Samstag. Gefunden habe ich sie erst,
+als ich bis Sonntag gezogen habe. **Das Tagesfenster des Sweeps reicht ab
+jetzt bis zum Ende der laufenden Woche**, nicht bis morgen.
+
+### Die dritte Wiederholung desselben Fehlers an einem Tag
+
+Heute früh um 07:02 habe ich geschrieben: *"Jede Kalenderantwort wird auf
+zwei Dinge gelesen: den Stempel und die Termine."* Um 13:02 habe ich
+genau das wieder nicht getan — ich habe die Antwort auf **Zahlen**
+gelesen (Bytes, Zahl, Maximum, ID-Menge) und die Termine darin nicht
+angesehen. Die neue *FSC*-Zeit stand in derselben Datei, aus der ich die
+Bytezahl gezogen habe.
+
+Dazu habe ich die Zeit, die ich für den Vergleich brauchte, **vom Board
+genommen statt aus der Antwort**. Das ist der eigentliche Fehler, und er
+ist heute dreimal in verschiedener Form aufgetreten (die `historyId`, die
+18 Minuten, diese Überlappung).
+
+**Regel, so scharf wie ich sie formulieren kann: Für einen Vergleich
+dürfen beide Seiten nur aus der Antwort kommen, nie eine Seite vom
+Board.** Das Board ist das Ergebnis der letzten Messung, nicht eine
+Quelle. Wenn ich eine Uhrzeit, eine Zahl oder einen Zustand gegen etwas
+prüfe, hole ich **beide** Werte frisch — oder ich schreibe hin, dass der
+eine von vorhin stammt und wann er gemessen wurde.
