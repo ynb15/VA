@@ -6049,3 +6049,42 @@ Mittagszeit, ohne Einladung — ob Gespräch, Aufnahme oder Privates, sagt
 der Eintrag nicht. Dass es derselbe Mark Kaplan ist, dessen fertiger
 Pitch im Outreach-Doc steht und der in **keiner** Databank-Zeile
 auftaucht (einer der neun vom 12.10.), ist **Vermutung, kein Befund**.
+
+═══════════════════════════════════════════════════════════════════════
+## Gleicher Titel, gleiche Uhrzeit, anderer Termin — die ID entscheidet
+*(Do 15.10.2026, 07:02 Austin)*
+
+Heute um 06:08 und 06:09 hat er zwei Griffe gemacht, nach denen der
+Kalender **an der Oberfläche unverändert aussieht**:
+
+- Der *Substack*-Block mit der ID `4v78il0gl7dinnv3br2d7lhbf9` (angelegt
+  Di 13.10. 13:55) lag auf **Di 06:30–08:30** und liegt jetzt auf
+  **Do 05:00–06:30** — verschoben und um 30 Minuten gekürzt.
+- Auf dem **Dienstag** steht aber wieder ein *Substack* 06:30–08:30 —
+  mit **neuer ID** `1vgrvhepgb2001uk6g7rh7ubjh`, **heute 06:09**
+  angelegt.
+
+**Wer nur Titel und Uhrzeit vergleicht, sieht „Dienstag unverändert".**
+Das wäre falsch gewesen: der Dienstagsblock ist jetzt ein Nachtrag von
+heute, und der ursprüngliche Block steht auf Donnerstag.
+
+### Die Regel
+
+**Ein Termin wird über seine `id` identifiziert, nie über Titel + Zeit.**
+In jeder Tagesnotiz, in der ein Block erscheint, verschwindet oder sich
+bewegt, steht die **ID** dabei. Sonst lässt sich eine Verschiebung nicht
+von einer Löschung-plus-Neuanlage unterscheiden — und das sind zwei
+verschiedene Dinge über seinen Tag.
+
+**Dazu gehört `created` gegen `start`:** die ID sagt, *welcher* Termin,
+`created` sagt, *wann er entstand*. Nur beides zusammen trennt
+„verschoben" von „nachgetragen". Heute: der Reading-Block (04:00–05:00,
+angelegt 06:08) ist **nachgetragen**; der Substack-Block ist
+**verschoben**; der Dienstags-Substack ist **neu angelegt**. Drei
+verschiedene Vorgänge, die ohne IDs wie einer ausgesehen hätten.
+
+**Und der zweite Fall derselben Art in zwei Tagen:** gestern stand der
+Kaplan-Termin in jeder Antwort und ich habe nur den Stempel gelesen;
+heute hätte der Titelvergleich die Bewegung verdeckt. **Beide Male lag
+die Antwort vollständig vor mir.** Die Frage war zu eng, nicht die Daten
+zu dünn.
