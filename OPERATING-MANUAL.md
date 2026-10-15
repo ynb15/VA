@@ -5997,3 +5997,55 @@ wird der Fall als weiterer Sprung derselben Serie gezählt und notiert.
 dort gab es bisher nur einen Fall. *Das ist eine bewusste Verkürzung
 nach vier gleichen Messungen, keine Nachlässigkeit; sie steht hier,
 damit sie überprüfbar bleibt.*
+
+═══════════════════════════════════════════════════════════════════════
+## Ein Termin, der vier Tage in jeder Antwort stand und nicht auf dem Board
+*(Mi 14.10.2026, Tagesabschluss — der teuerste Fehler dieser Woche)*
+
+**Fr 16.10., 03:30–05:30 Austin = 10:30–12:30 Kapstadt, privat,
+`ahcpe0l8ikg8gkoof2vchi71jg`: ein Zwei-Stunden-Block *Mark Kaplan*,**
+angelegt **Mo 12.10. 16:05**, ohne Teilnehmer.
+
+**Er stand seit Montag in jeder Privatkalender-Abfrage.** Im Fenster
+`01.09.–31.12.` war er der **zweitälteste Eintrag**, direkt unter dem
+*Rob*-Block, und er erschien wörtlich in den `jq`-Ausgaben vom
+Dienstagabend (18:02, 22:02) und von Mittwoch (15:02) — jedes Mal in
+der Liste der vier jüngsten Änderungen, die ich selbst gedruckt habe.
+
+**Warum ich ihn nicht gesehen habe:** diese Abfragen liefen, um einen
+**Stempel** zu erklären. Ich habe die Antwort auf `updated` hin gelesen,
+das Maximum gerechnet, den Fall gezählt — und die Termine selbst nie
+angesehen. **Das Fenster war richtig abgefragt und falsch ausgewertet.**
+Ein perfektes Verfahren mit der falschen Frage.
+
+### Die Regel
+
+**Jede Kalenderantwort wird auf zwei Dinge gelesen:**
+1. **den Stempel** — wie bisher, Maximum und Zahl gerechnet;
+2. **die Termine** — jeder Eintrag mit einem **Datum in der Zukunft**
+   wird gegen die Uhrenzeile des Boards geprüft. Steht er dort nicht,
+   kommt er dort hin oder es gibt einen benannten Grund.
+
+Das kostet nichts: die Antwort liegt ohnehin da, und `jq` kann beides in
+einem Lauf ausgeben. **Ein weites Fenster ist eine Terminliste, nicht
+nur ein Stempelbeweis.**
+
+### Und das Allgemeine daran
+
+Dies ist der zweite Fehler dieser Woche mit derselben Form: **eine
+Prüfung, die genau das findet, wonach sie fragt, und nichts daneben.**
+- Am 13.10. habe ich zwei Dateigrößen notiert und das Verhältnis nicht
+  gebildet — er hat die fehlende Stunde gesehen, nicht ich.
+- Heute habe ich ein Fenster auf Stempel geprüft und den Termin darin
+  nicht gelesen.
+
+**Was daraus folgt:** nach jeder Abfrage, die für einen bestimmten Zweck
+lief, einmal fragen — *was steht in dieser Antwort noch, das ich nicht
+gesucht habe?* Das ist keine Vollständigkeitspflicht, sondern ein Blick:
+die Daten sind schon da und schon bezahlt.
+
+**Zum Termin selbst kommt von mir nichts.** Zwei Stunden, Kapstadter
+Mittagszeit, ohne Einladung — ob Gespräch, Aufnahme oder Privates, sagt
+der Eintrag nicht. Dass es derselbe Mark Kaplan ist, dessen fertiger
+Pitch im Outreach-Doc steht und der in **keiner** Databank-Zeile
+auftaucht (einer der neun vom 12.10.), ist **Vermutung, kein Befund**.
