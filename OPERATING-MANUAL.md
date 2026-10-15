@@ -6408,3 +6408,26 @@ Board.** Das Board ist das Ergebnis der letzten Messung, nicht eine
 Quelle. Wenn ich eine Uhrzeit, eine Zahl oder einen Zustand gegen etwas
 prüfe, hole ich **beide** Werte frisch — oder ich schreibe hin, dass der
 eine von vorhin stammt und wann er gemessen wurde.
+
+═══════════════════════════════════════════════════════════════════════
+
+## Jede Zahl auf dem Board trägt ihre Messzeit
+
+**Do 15.10., 15:02.** Die Zeile `tamay-abgelegt-1510` sagte *"Ungelesen im
+Posteingang, Stand jetzt: … fünf"* und daneben *"insgesamt 44 ungelesene"*.
+Vier Stunden später waren es acht, und die 44 stammten aus einem
+`list_labels` von 11:02.
+
+**"Stand jetzt" ist auf einem Board, das jede Stunde neu erscheint, eine
+Lüge mit Verfallsdatum.** Das Board trägt oben seinen Sweep-Zeitstempel,
+aber eine Zahl im Text hat ihre eigene Messzeit, und die ist oft älter.
+
+**Regel:** Jede Menge und jede Gesamtzahl im Board-Text wird mit der
+Uhrzeit hingeschrieben, zu der sie gemessen wurde — *"gemessen um 15:02"*,
+*"diese Gesamtzahl ist von 11:02"*. Stammen zwei Zahlen in einem Satz aus
+verschiedenen Messungen, steht das dabei. Das kostet vier Wörter und
+nimmt dem Board jede stille Veralterung.
+
+Das ist die positive Form der Regel von 14:02 (*für einen Vergleich
+dürfen beide Seiten nur aus der Antwort kommen*): was ich nicht neu
+messe, bekommt ein Datum statt eines "jetzt".
