@@ -6431,3 +6431,67 @@ nimmt dem Board jede stille Veralterung.
 Das ist die positive Form der Regel von 14:02 (*für einen Vergleich
 dürfen beide Seiten nur aus der Antwort kommen*): was ich nicht neu
 messe, bekommt ein Datum statt eines "jetzt".
+
+═══════════════════════════════════════════════════════════════════════
+
+## Die Serie springt auf beiden Kalendern — und unabhängig voneinander
+
+**Do 15.10., 22:02, Tagesabschluss.** 41 stempellose Fälle lang war die
+Serie ein Phänomen des **Privat**kalenders. Um **21:11** sprang zum
+ersten Mal der Stempel des **Geschäfts**kalenders:
+`2026-10-15T15:43:27Z` → **`2026-10-16T02:11:02Z`**.
+
+Vollprüfung gelaufen, weil die Regel es beim Geschäftskalender verlangt:
+
+| Fenster Geschäft | jetzt | Basis |
+|---|---|---|
+| 01.01.–01.09.2026 (3 Seiten) | **679**, 679 eindeutige IDs | 679 |
+| 01.09.–31.12.2026 | **111** | 108 |
+| 01.01.–31.12.2027 | **58** | 58 |
+
+Die **+3** im laufenden Fenster sind die drei neuen Donnerstagstermine
+(*Reading: Change Your Mind*, *YouTube*, der nachgetragene
+Dienstags-*Substack*) — alle drei habe ich selbst beim Entstehen gesehen,
+und alle drei haben ein `updated` **unter** `15:43:27Z`. **Kein einziger
+Termin in irgendeinem der drei Fenster hat ein `updated` über
+`15:43:27Z`.** Der Stempel sprang trotzdem.
+
+**Und das Entscheidende: der Privatkalender stand zur selben Zeit still**
+— `19:29:55Z`, unverändert seit 14:29, über drei Durchgänge.
+
+**Befund: die beiden Kalender springen unabhängig voneinander.** Was
+auch immer den Stempel setzt, es läuft **pro Kalender**, nicht pro Konto
+und nicht als ein gemeinsamer Durchlauf. Das schließt eine
+kontoweite Sammelbewegung aus, jedenfalls für diesen Zeitpunkt.
+
+**Serienstand: 42 Fälle, 41 privat, 1 geschäftlich.**
+
+**Verfahrensänderung:** Der Geschäftskalender wird ab jetzt genauso
+geführt wie der private — Stempel bei jedem Sweep, bei einem Sprung ohne
+Griff die verkürzte Prüfung (Zahl und Maximum des laufenden Fensters),
+Vollprüfung bei Änderung einer Zahl. **Basiszahlen Geschäft: 679 / 111 /
+58.** Basiszahlen privat: 910 / 131 / 211.
+
+**Was offen ist und was ich nicht behaupte:** Termine vor 2026 und nach
+2027 sind weiter ungeprüft, auf beiden Kalendern. Das bleibt die einzige
+Region, in der eine Erklärung durch Termine noch möglich wäre. Alles
+andere — Anlegen, Löschen, Ändern innerhalb 2026/2027 — ist durch die
+Kontrollmessung von 13:02 und diese Vollprüfung ausgeschlossen. **Einen
+Grund kenne ich nicht, und ich schreibe keinen hin.**
+
+### Die Wurzel aller drei Korrekturen dieses Tages
+
+Donnerstag hat mich drei Befunde gekostet, die eine Stunde lang falsch
+auf dem Board standen (`historyId`, „18 Minuten", „Überlappung"). Alle
+drei haben **dieselbe** Ursache, und sie ist wichtiger als die drei
+Einzelfälle:
+
+> **Ich habe eine Seite des Vergleichs vom Board genommen statt aus der
+> Antwort.**
+
+Das Board ist das Ergebnis der letzten Messung. Es ist **keine Quelle.**
+Wenn ich eine Uhrzeit, eine Zahl oder einen Zustand gegen etwas prüfe,
+kommen **beide** Werte aus der frischen Antwort — oder ich schreibe
+ausdrücklich hin, dass der eine von vorhin ist und wann er gemessen
+wurde. Drei Vorfälle an einem Tag sind kein Zufall, sondern eine
+Arbeitsgewohnheit, und sie ist damit benannt.
