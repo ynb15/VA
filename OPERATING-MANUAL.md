@@ -6495,3 +6495,59 @@ kommen **beide** Werte aus der frischen Antwort — oder ich schreibe
 ausdrücklich hin, dass der eine von vorhin ist und wann er gemessen
 wurde. Drei Vorfälle an einem Tag sind kein Zufall, sondern eine
 Arbeitsgewohnheit, und sie ist damit benannt.
+
+═══════════════════════════════════════════════════════════════════════
+
+## Der Kalender ist ein Protokoll, kein Plan
+
+**Fr 16.10., 09:02.** Um 08:17 hat er in **14 Sekunden** drei Dinge
+getan, über beide Kalender:
+
+| `updated` | Griff |
+|---|---|
+| `13:17:45Z` | *Reading: Change Your Mind* neu auf Fr 02:00–03:00 — **sechs Stunden nach der eigenen Zeit** |
+| `13:17:54Z` | *Mark Kaplan* **Ende 05:30 → 05:00**, drei Stunden nachdem der Termin vorbei war |
+| `13:17:55Z` | *YouTube* (dieselbe ID) von **Do 07:00–11:00** auf **Fr 05:30–09:30** verschoben |
+
+**Der mittlere Griff ist der Schlüssel.** Ein Termin, der nach seinem
+Ende auf eine **kürzere, genauere** Zeit korrigiert wird, wird nicht
+geplant — er wird **protokolliert**. Niemand kürzt einen Plan rückwärts.
+
+**Das erklärt die ganze Woche neu.** Was ich seit Montag als „Nachträge",
+„Unregelmäßigkeit" und „der Kalender wird geführt, nachdem die Zeit
+vorbei ist" notiert habe — die zwei *YouTube*-Verlängerungen nach
+Ablauf, die Blöcke, die nach ihrer eigenen Startzeit entstehen, der
+Dienstags-*Substack*, der auf Donnerstag wandert und auf dem Dienstag
+durch einen neuen ersetzt wird — ist **ein konsistentes Verfahren und
+kein Durcheinander.** Er schreibt auf, was war.
+
+**Das ist meine Lesart und bleibt als solche markiert.** Er hat es nie
+gesagt. Aber sie ist besser belegt als jede andere, die ich hatte, und
+sie hat eine Vorhersage: Einträge werden **nachträglich präzisiert**,
+nicht nachträglich erfunden.
+
+### Drei Konsequenzen für meine Arbeit
+
+1. **Nachträge sind keine Auffälligkeit mehr.** Ich schreibe die Zeiten
+   hin und wann sie gesetzt wurden, aber nicht mehr mit dem Unterton,
+   dass daran etwas schiefgeht. Die Zählung „X Minuten nach seinem
+   eigenen Ende" entfällt als Befund; sie war eine Beobachtung über mein
+   Erwartungsmodell, nicht über ihn.
+2. **Künftige Kalendereinträge sind schwächere Evidenz als ich
+   angenommen habe.** Wenn der Kalender überwiegend nachschreibt, dann
+   ist ein Eintrag für morgen eine Absicht, keine Zusage. Die Uhrenzeile
+   führt sie weiter, aber ich behandle sie nicht als verbindlich — und
+   ich sage ihm nicht, was dort „steht", als wäre es abgemacht.
+3. **Vergangene Einträge sind stärkere Evidenz.** Was für eine vergangene
+   Stunde im Kalender steht — besonders nach einer Korrektur — ist
+   wahrscheinlich das, was wirklich passiert ist. Das ist die bessere
+   Quelle für die Frage, wie seine Woche tatsächlich gelaufen ist, als
+   meine eigenen Beobachtungsnotizen.
+
+### Nebenbefund: ein abgewiesener Zugriff wird nicht wiederholt
+
+`get_thread` auf einen Faden im Papierkorb kam mit *„The caller does not
+have permission"* zurück. **Nicht wiederholt.** Was ich vom Inhalt habe,
+ist der Vorschautext aus der Suchantwort, und auf dem Board ist er
+**als Vorschautext gekennzeichnet**. Ein Zitat aus einem Snippet ist ein
+Zitat aus einem Snippet, kein Zitat aus der Mail.
