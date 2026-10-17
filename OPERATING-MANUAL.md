@@ -6697,3 +6697,25 @@ die Meldungen deutsch sind und regelmäßig wörtliche Zitate tragen.
 Und: **nach jedem Commit `git log --oneline -1` prüfen**, bevor gepusht
 wird — ein fehlgeschlagener Commit sieht in einer Kette mit `&&` aus wie
 ein fehlgeschlagener Push.
+
+───────────────────────────────────────────────────────────────────────
+NACHTRAG ZUR VERFALLSDATUM-REGEL: AM STEMPEL AUFHÄNGEN, NICHT NACHDATIEREN
+───────────────────────────────────────────────────────────────────────
+
+Die Regel von heute früh sagt: jeder Satz der Form „seit X unverändert"
+bekommt seine Messzeit mit. Richtig — aber beim ersten Anwenden fiel auf,
+dass das eine stündliche Handarbeit erzeugt: *„Von Dir ist bis 08:08
+nichts gekommen"* muss um 09:08 nachgezogen werden, und wenn ich es
+einmal vergesse, steht wieder eine totgelaufene Behauptung auf dem Board.
+
+**Besser:** den Satz **am Board-Zeitstempel aufhängen**, statt eine
+Uhrzeit hineinzuschreiben — *„bis zum Stempel oben"*. Das Board trägt
+`SWEPT` ohnehin sichtbar und wird jede Stunde neu veröffentlicht; damit
+ist der Satz **selbststempelnd** und kann nicht veralten.
+
+**Die Unterscheidung:** eine **Messung** trägt ihre eigene Uhrzeit fest
+(*„sieben ungelesen, gemessen 08:08"* — die Zahl gehört zu dem Moment).
+Eine **anhaltende Abwesenheit** hängt am Board-Stempel (*„bis zum
+Stempel oben nichts gekommen"* — die Aussage gilt bis jetzt). Feste
+Uhrzeit für das, was gemessen wurde; Stempelbezug für das, was
+weiterhin nicht passiert ist.
