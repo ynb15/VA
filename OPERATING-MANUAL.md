@@ -6551,3 +6551,75 @@ have permission"* zurück. **Nicht wiederholt.** Was ich vom Inhalt habe,
 ist der Vorschautext aus der Suchantwort, und auf dem Board ist er
 **als Vorschautext gekennzeichnet**. Ein Zitat aus einem Snippet ist ein
 Zitat aus einem Snippet, kein Zitat aus der Mail.
+
+═══════════════════════════════════════════════════════════════════════
+EIN ENTWURF STEHT IN KEINER POSTABFRAGE (16.10., 22:08)
+═══════════════════════════════════════════════════════════════════════
+
+Am 10.10. steht hier die Regel, die mir eine Postfach-Sitzung gerettet
+hat: **zwei Abfragen pro Sweep**, Ankünfte und Zustand. Heute hat sich
+gezeigt, dass beide an derselben Stelle blind sind.
+
+**Der einzige echte Fund des Freitags war ein Entwurf.** Um 11:04 Austin
+lag eine Antwort an `sutcliffe1969@gmail.com` im Ordner, ungesendet, im
+Faden *„Man's Search for Meaning"* — demselben Gast, dessen YouTube-Short
+am selben Morgen um 08:21 gesperrt worden war.
+
+**Keine der beiden Postabfragen hätte ihn je gefunden.** Ein Entwurf:
+
+- trägt **kein `INBOX`** — fällt also aus `in:inbox is:unread` heraus,
+- **kommt nicht an** — fällt also aus `newer_than:2h` heraus,
+- wird von `search_threads` **ausdrücklich ausgeschlossen** („Drafts are
+  explicitly excluded by default by the tool"),
+- und `get_thread` gibt Entwürfe **nicht mit zurück** („This tool does
+  not support retrieving drafts").
+
+Gesehen habe ich ihn an **einer einzigen Zahl in der Label-Tabelle:
+`DRAFT` 16 → 17.**
+
+**VERFAHRENSREGEL, ab sofort:** `list_labels` läuft am Tagesabschluss
+ohnehin. Ab jetzt werden **`DRAFT` und `SENT` dort genauso gelesen wie
+`INBOX` und `TRASH`** — und **bewegt sich `DRAFT`**, folgt
+`list_drafts` mit `newer_than:2d` und **`DRAFT_VIEW_METADATA_ONLY`**.
+
+**Metadaten, nicht Text.** Empfänger, Zeit, Faden — das reicht für die
+Zeile auf dem Board. **Den Entwurfstext lese ich nicht**, solange er es
+nicht sagt. Ein Entwurf ist das Einzige im Postfach, was noch gar nicht
+an jemanden gerichtet *ist*; ihn mitzulesen wäre etwas anderes als
+Post zu sichten. Wenn der Inhalt einmal nötig wird, frage ich.
+
+**Und `SENT` kann fallen.** Heute 974 → 973 Nachrichten bei
+unveränderten 546 Fäden, an einem Tag, an dem er nichts gesendet hat.
+Ich habe die Zahl hingestellt und **keine Ursache genannt** — von hier
+sehe ich nicht, welche Nachricht verschwunden ist. Die Regel dahinter
+ist die alte: eine Zahl, die nicht aufgeht, wird benannt und nicht
+erklärt.
+
+───────────────────────────────────────────────────────────────────────
+DIE NAIVE UNGELESEN-RECHNUNG GEHT NICHT AUF
+───────────────────────────────────────────────────────────────────────
+
+Dazu eine kleine Rechenregel, die heute beim Abgleich der Label-Tabelle
+aufgefallen ist.
+
+`INBOX`-ungelesen Do 22:02 = 47, Fr 22:08 = 45. Dazwischen: vier
+ungelesene Nachtankünfte, acht Abgänge, zwei ungelesene Ankünfte.
+
+Rechnet man die Abgänge so, wie sie im Papierkorb **aussehen** — sechs
+ungelesen, zwei gelesen —, kommt `47 + 4 − 6 + 2 = 47`. **Falsch.**
+
+Richtig ist `47 + 4 − 8 + 2 = 45`, denn die zwei „gelesenen" Abgänge
+**lagen vorher ungelesen im Posteingang** und sind erst beim Wegwerfen
+gelesen worden. Für die Ungelesen-Bilanz zählt **der Zustand vor dem
+Griff**, nicht der danach.
+
+**Die Regel:** Ein Abgang vermindert die Ungelesen-Zahl genau dann, wenn
+die Mail **beim letzten Stand** ungelesen war — und den letzten Stand
+habe ich, weil ich die Ungelesenen jeden Sweep aufzähle. Der
+Papierkorb-Zustand ist das Ergebnis zweier Handlungen auf einmal
+(lesen **und** löschen) und taugt deshalb nicht als Eingangswert.
+
+**Quergeprüft wird mit einer dritten Abfrage:**
+`in:inbox is:unread older_than:7d` → heute 39. `39 + 6 = 45`, deckt sich
+mit `list_labels`. **Drei Wege zur selben Zahl sind der Beleg; einer ist
+eine Behauptung.**
