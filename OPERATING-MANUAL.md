@@ -6623,3 +6623,59 @@ Papierkorb-Zustand ist das Ergebnis zweier Handlungen auf einmal
 `in:inbox is:unread older_than:7d` → heute 39. `39 + 6 = 45`, deckt sich
 mit `list_labels`. **Drei Wege zur selben Zahl sind der Beleg; einer ist
 eine Behauptung.**
+
+═══════════════════════════════════════════════════════════════════════
+EIN ERKLÄRTER SPRUNG IST NICHT DASSELBE WIE EINE ERKLÄRTE ÄNDERUNG
+(17.10., 07:08)
+═══════════════════════════════════════════════════════════════════════
+
+Bisher gab es in diesem Handbuch zwei Sorten Stempelsprung: einen, zu
+dem ein Termin mit passendem `updated` gehört — erledigt —, und einen
+ohne, der in die Serie wandert. **Heute kam eine dritte Sorte.**
+
+Der Stempel des Geschäftskalenders sprang auf `2026-10-17T09:26:12Z`.
+Im geweiteten Fenster lag genau ein Termin mit **derselben Sekunde**:
+die Brandlift-Einladung *„Willkommen im Projekt Gottfried Prinz – dein
+Briefing"*, Mo 19.10., von Luis am 16.09. angelegt. Der Sprung war also
+**restlos erklärt** — und damit war ich fast fertig.
+
+**Dann habe ich verglichen, was sich geändert hat, und nichts gefunden.**
+Titel, Start, Ende, `status`, Meet-Code, Organisator, Antwortstatus aller
+drei Teilnehmer, `description`, `location`: **jedes Feld, von dem ich
+einen älteren Stand hatte, war identisch.**
+
+**Die Regel:** Ein `updated` beweist, **dass** angefasst wurde, nicht
+**was**. Wenn der Vergleich nichts findet, heißt der Satz genau das:
+*der Termin ist um HH:MM angefasst worden, und was sich geändert hat,
+sehe ich nicht.* **Nicht** „nichts hat sich geändert" (das wäre falsch,
+der Stempel sagt das Gegenteil), **nicht** ein stempelloser Fall (der
+Stempel hat seinen Termin), und **nicht** eine erfundene Änderung.
+
+**Und: diese Sorte ist dieselbe Form wie die Serie, eine Ebene tiefer.**
+Die Serie ist ein Sammlungsstempel ohne Termin. Dies ist ein
+Termin-`updated` ohne sichtbares Feld. Ob das zusammenhängt, weiß ich
+nicht; ich halte beides getrennt gezählt, bis eine Messung sie verbindet.
+
+───────────────────────────────────────────────────────────────────────
+„SEIT X UNVERÄNDERT" IST EINE BEHAUPTUNG MIT VERFALLSDATUM
+───────────────────────────────────────────────────────────────────────
+
+Am 15.10. steht hier: **jede Zahl auf dem Board trägt ihre Messzeit.**
+Heute hat sich gezeigt, dass das auch für Sätze gilt, in denen keine
+Zahl steht.
+
+In der Zeile `brandlift-onhold-1210` stand seit dem 12.10.:
+
+> *„angelegt von Luis am 16.09., **seit dem 16.09. nicht mehr
+> geändert**."*
+
+Das war am 12.10. gemessen und richtig. Am 17.10. um 04:26 wurde der
+Termin angefasst — **und der Satz stand weiter da und behauptete
+weiter.** Eine Zahl, die veraltet, sieht man an ihrem Zeitstempel. Ein
+**negativer** Satz veraltet lautlos.
+
+**Die Regel:** Jeder Satz der Form „seit X unverändert", „bis heute
+nichts", „noch keine Antwort" bekommt **die Messzeit mit** — genau wie
+eine Zahl. Und wenn eine Messung ihn umwirft, wird er **in derselben
+Zeile korrigiert**, mit sichtbarem Vermerk, nicht stillschweigend
+ersetzt. Das Board soll zeigen, was schon falsch darauf stand.
