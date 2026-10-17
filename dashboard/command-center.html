@@ -302,7 +302,7 @@ details.cleared[open] summary::after{content:" ▴";}
 
   <div class="rightnow">
     <div class="eyebrow">Right now</div>
-    <h2>Der Brandlift-Termin am Montag ist <strong>heute um 04:26</strong> angefasst worden &mdash; <strong>zum ersten Mal seit dem 16.09.</strong> Was sich ge&auml;ndert hat, <strong>sehe ich nicht</strong>: jedes Feld, von dem ich einen &auml;lteren Stand habe, ist gleich.</h2>
+    <h2>Samstag hat <strong>drei Stempelbewegungen</strong> in beiden Kalendern: eine ist erkl&auml;rt, <strong>zwei sind es nicht.</strong> Die Serie steht damit auf <strong>44 F&auml;llen</strong> &mdash; und der Gesch&auml;ftskalender hat jetzt <strong>zwei</strong> davon, nicht mehr einen.</h2>
     <p class="why"><strong>Die Uhren</strong> <em>(nur was in Deinen Kalendern steht, gemessen Fr 16.10. 22:08):</em> <em><strong>Sa 17.10.</strong> <em>FSC</em> <strong>09:00&ndash;11:00</strong> <em>(= 16:00&ndash;18:00 Kapstadt)</em> und <em>Francis</em> <strong>11:00&ndash;13:00</strong> <em>(= 18:00&ndash;20:00 Kapstadt)</em>, <strong>beide privat</strong>, beide Do 12:49 angefasst, <em>Francis</em> <strong>ohne Teilnehmer</strong> &middot; ganzt&auml;gig im Gesch&auml;ftskalender <strong><em>Podcast: Scott Aaronson</em></strong>, <em>ohne Uhrzeit</em> &middot; <strong>So 18.10.</strong> <em>Morning Routine</em> <strong>07:30&ndash;08:30</strong>, <em>Artist Date</em> <strong>15:00&ndash;17:00</strong>, ganzt&auml;gig <em>Rest Day</em> &mdash; <strong>alle drei privat und alle drei Serientermine</strong> &middot; durchlaufend ganzt&auml;gig <strong><em>Kapstaad</em></strong> <em>10.10. bis 04.11.</em> &middot; <strong>Montag habe ich in diesem Fenster nicht gemessen</strong> &mdash; <em>was im Wochenstreifen steht, ist vom Mittwoch.</em></em></p>
   </div>
 
@@ -328,6 +328,17 @@ details.cleared[open] summary::after{content:" ▴";}
         <br>&middot; <strong>Damit acht ungelesen</strong> aus den letzten sieben Tagen, dazu die <strong>39 &auml;lteren</strong> mit unver&auml;nderter Anzahl. <em>Keine Abg&auml;nge seit Freitagmorgen &mdash; seit der Aufr&auml;umsitzung hast Du das Postfach nicht mehr angefasst.</em>
         <br>&middot; <em>Nichts zu tun, nichts vorgeschlagen. Die Zeile steht hier, damit die Zahl auf dem Board erkl&auml;rt ist.</em></span></span>
       <span class="age">Sa 17.10. 12:03</span>
+    </li>
+
+    <li class="row s-warn">
+      <input type="checkbox" data-item="stempel-1300-1710" aria-label="Geschaeftskalender 13:00 gesprungen, kein Termin dazu, Fall 44">
+      <span class="row-b"><span class="who">Sa 17.10., 13:00</span> &mdash; <strong>Jetzt ist auch der Gesch&auml;ftskalender gesprungen, ohne Termin dazu. Fall 44 &mdash; und der <em>zweite</em> auf diesem Kalender.</strong>
+        <span class="row-sub">&middot; <strong>Gemessen:</strong> <em>Gesch&auml;ftsstempel <code>2026-10-17T09:26:12Z</code> &rarr; <code>2026-10-17T18:00:26Z</code>. Der private Kalender stand in derselben Zeit <strong>still</strong> (<code>05:05:34Z</code>, unver&auml;ndert seit 00:05).</em>
+        <br>&middot; <strong>Drei-Fenster-Pr&uuml;fung gelaufen, alle drei vollst&auml;ndig:</strong> <em><strong>01.01.&ndash;01.09.</strong> 679 Termine (drei Seiten: 249+248+182), gr&ouml;&szlig;tes <code>updated</code> <code>2026-10-08T09:07:38Z</code> &middot; <strong>01.09.&ndash;31.12.</strong> 113, gr&ouml;&szlig;tes <code>2026-10-17T09:26:12Z</code> (das ist der Brandlift-Termin von 04:26) &middot; <strong>2027</strong> 58, gr&ouml;&szlig;tes <code>2026-09-29T17:03:01Z</code>. <strong>Kein Termin tr&auml;gt den neuen Stempel.</strong></em>
+        <br>&middot; <strong>Was das &auml;ndert:</strong> <em>bisher war der gesch&auml;ftliche Fall vom <strong>Fr 21:11</strong> der einzige. Jetzt sind es <strong>zwei von 44</strong> &mdash; die Serie ist nicht mehr fast nur privat. <strong>Und zum zweiten Mal in zwei Tagen ist der eine Kalender gesprungen, w&auml;hrend der andere stillstand</strong>: die beiden bewegen sich unabh&auml;ngig voneinander, das ist jetzt zweimal gemessen.</em>
+        <br>&middot; <strong>Nebenbefund:</strong> <em>die Terminzahl im Fenster <strong>01.09.&ndash;31.12.</strong> ist von <strong>111</strong> auf <strong>113</strong> gestiegen, die anderen beiden Fenster stehen genau auf ihrer Basis (679 und 58). <strong>Beim privaten Kalender heute dasselbe Muster</strong> an derselben Grenze (910/131 &rarr; 908/133, Gesamtzahl unver&auml;ndert). <em>Ich nenne keine Ursache.</em></em>
+        <br>&middot; <em>Nichts zu tun. <strong>Kein Termin von Dir ist betroffen</strong>, kein Eintrag hat sich ge&auml;ndert, keine Zeit hat sich verschoben.</em></span></span>
+      <span class="age hot">Sa 17.10. 13:00</span>
     </li>
 
     <li class="row s-warn">
@@ -2179,7 +2190,7 @@ YNB</div>
   });
 
   /* ── timestamps, always Austin ────────────────────────── */
-  var SWEPT = new Date("2026-10-17T12:09:00-05:00");
+  var SWEPT = new Date("2026-10-17T13:10:00-05:00");
   function fmt(d, opts) {
     return new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: TZ }, opts)).format(d);
   }

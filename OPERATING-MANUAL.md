@@ -6719,3 +6719,43 @@ Eine **anhaltende Abwesenheit** hängt am Board-Stempel (*„bis zum
 Stempel oben nichts gekommen"* — die Aussage gilt bis jetzt). Feste
 Uhrzeit für das, was gemessen wurde; Stempelbezug für das, was
 weiterhin nicht passiert ist.
+
+───────────────────────────────────────────────────────────────────────
+NACHTRAG ZUR SERIE (17.10., 13:10): ZWEI GESCHÄFTLICHE FÄLLE, UND EINE
+PRÜFBARE FRAGE
+───────────────────────────────────────────────────────────────────────
+
+**Serienstand: 44 Fälle, 42 privat und 2 geschäftlich.** Der zweite
+geschäftliche kam heute um **13:00 Austin** (`2026-10-17T18:00:26Z`),
+nach vollständiger Drei-Fenster-Prüfung: 679 / 113 / 58, kein Termin
+mit diesem `updated`.
+
+**Damit fällt die Formulierung „die Serie ist fast nur privat".** Sie
+war auf einen einzigen Gegenfall gestützt; jetzt sind es zwei in zwei
+Tagen.
+
+**Was dagegen härter geworden ist:** die **Unabhängigkeit der beiden
+Kalender**. Am 16.10. um 21:11 sprang der geschäftliche, während der
+private stillstand; am 17.10. um 13:00 genau dasselbe. **Zwei Messungen
+— damit ist es nach der eigenen Regel keine Vermutung mehr.** Eine
+kontoweite Sammelbewegung ist als Ursache ausgeschlossen.
+
+**Neu beobachtet, an beiden Kalendern am selben Tag:** die Terminzahl im
+Fenster **01.09.–31.12.** steigt, während die Nachbarfenster exakt auf
+ihrer Basis stehen — geschäftlich 111 → 113, privat 131 → 133, und bei
+privat ist die Gesamtzahl über alle drei Fenster **unverändert 1252**.
+Dieselbe Grenze, dasselbe Vorzeichen, beide Kalender. **Keine Ursache
+genannt.** Die Basiszahlen der Drei-Fenster-Prüfung sind also kein
+Fixpunkt, sondern selbst eine Messung mit Datum — ab jetzt werden sie
+mit ihrer Messzeit notiert.
+
+**Und eine prüfbare Frage für die nächsten Fälle:** der heutige
+geschäftliche Sprung lag **26 Sekunden nach dem Ende von *Francis***
+(13:00 Austin) — einem Termin im *privaten* Kalender, der selbst
+**nicht angefasst** wurde. Das ist eine Zeitkoinzidenz und nichts
+weiter. **Was beim nächsten Fall zu messen ist:** liegt der
+Sprungzeitpunkt auf der Anfangs- oder Endzeit eines Termins an diesem
+Tag, egal in welchem Kalender? Bei zwei Treffern wird daraus eine
+Beobachtung, bei einem bleibt es Zufall. Die Sekundenwerte der bisher
+notierten Fälle zeigen weiter kein Muster: `:15`, `:52`, `:42`, `:55`,
+`:02`, `:34`, `:26`.
