@@ -6798,3 +6798,45 @@ solcher Abfragen ist keine Handlung.** Zwischen zwei Messungen kann sich
 der Messbereich verschoben haben, nicht nur der Inhalt. Die Summe
 beider Mengen (im Fenster + älter) ist die einzige Zahl, die sich nur
 durch eine echte Handlung ändert.
+
+───────────────────────────────────────────────────────────────────────
+DIE DREI-FENSTER-PRÜFUNG LÄUFT UNGEFILTERT (17.10., 17:09)
+───────────────────────────────────────────────────────────────────────
+
+Heute der dritte Stempelsprung auf dem Geschäftskalender innerhalb eines
+Tages. Um die Prüfung billiger zu machen, habe ich das 2027-Fenster mit
+einem Unsinn-Filter abgefragt (`fullText: zzzzzznomatch`) — in der
+Hoffnung, so nur den Sammlungsstempel zurückzubekommen.
+
+**Zurück kam: Stempel ja, Terminliste leer.** Und damit war die Abfrage
+für ihren Zweck wertlos.
+
+**Zwei Gründe, und beide sind grundsätzlich:**
+
+1. **Eine gefilterte Abfrage liefert ein gefiltertes Maximum.** Das
+   größte `updated` unter den Treffern sagt nichts über das größte
+   `updated` im Fenster. Wer filtert, prüft ein anderes Fenster als das,
+   über das er schreibt.
+2. **Der Sammlungsstempel ist für alle Fenster derselbe.** Er ist die
+   Eigenschaft des Kalenders, nicht des Abfragefensters. Er kann deshalb
+   nie belegen, dass *dieses* Fenster den Sprung nicht enthält — genau
+   das soll die Prüfung aber leisten.
+
+**Regel:** Die Drei-Fenster-Prüfung läuft **ohne `fullText`, ohne
+`eventType`, ohne jede Einschränkung** — `calendarId`, `startTime`,
+`endTime`, `orderBy: lastModified`, `pageSize: 250`, und alle Seiten bis
+`nextPageToken` fehlt. Was teuer ist, bleibt teuer; eine billige
+Variante, die nichts beweist, ist keine Ersparnis.
+
+**Und wenn ein Fenster ungeprüft bleibt, wird das genannt**, nicht
+verschwiegen: Fall 45 ist in 2026 vollständig geprüft, im 2027-Fenster
+nur drei Stunden vorher. Das steht so auf dem Board und hier.
+
+───────────────────────────────────────────────────────────────────────
+Serienstand 17.10., 17:09: **45 Fälle, 42 privat, 3 geschäftlich.**
+Die beiden unerklärten geschäftlichen Sprünge dieses Tages liegen
+**genau 3 h 14 min** auseinander (`18:00:26Z` und `21:14:26Z`), weshalb
+beide auf `:26` enden — ein Abstand aus ganzen Minuten, keine
+Eigenschaft der Sekunden. Der erklärte Sprung von 04:26 liegt nicht auf
+diesem Raster. **Ein Paar ist kein Muster**; beim nächsten Fall ist der
+Abstand zum vorigen zu messen.
