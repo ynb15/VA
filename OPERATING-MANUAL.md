@@ -6759,3 +6759,42 @@ Tag, egal in welchem Kalender? Bei zwei Treffern wird daraus eine
 Beobachtung, bei einem bleibt es Zufall. Die Sekundenwerte der bisher
 notierten Fälle zeigen weiter kein Muster: `:15`, `:52`, `:42`, `:55`,
 `:02`, `:34`, `:26`.
+
+═══════════════════════════════════════════════════════════════════════
+`newer_than:7d` IST EIN SCHIEBEFENSTER — EINE FALLENDE ZAHL IST NICHT
+AUTOMATISCH EIN ABGANG (17.10., 14:09)
+═══════════════════════════════════════════════════════════════════════
+
+Die Zustandsabfrage des Sweeps ist `in:inbox is:unread newer_than:7d`.
+Sie stand um 12:09 auf **acht** und um 14:09 auf **sieben**, und in der
+Liste fehlte ein Name. Zwei Stunden lang hatte niemand das Postfach
+angefasst.
+
+**Die Mail war nicht weg. Sie war sieben Tage alt geworden.** Blake
+Mycoskies Rundbrief vom `2026-10-10T19:04:59Z` ist zwischen den beiden
+Messungen über die Fenstergrenze gerutscht — bei der zweiten Messung lag
+er **drei Minuten** darüber. Einzeln abgefragt trug er unverändert
+`UNREAD,INBOX`.
+
+**Das Fenster bewegt sich mit der Uhr. Die Zahl kann fallen, ohne dass
+sich etwas bewegt hat** — und sie fällt genau dann, wenn der älteste
+Eintrag die Grenze erreicht.
+
+**VERFAHRENSREGEL:** Fällt die Zahl im Sieben-Tage-Fenster, wird **vor**
+dem Wort „Abgang" zweierlei getan:
+
+1. **Den fehlenden Namen einzeln abfragen** (`in:anywhere from:…` mit
+   `includeTrash: true`). Trägt die Mail noch `UNREAD,INBOX`, war es das
+   Fenster und nicht er.
+2. **Die ältere Menge gegenprüfen** mit `in:inbox is:unread
+   older_than:7d`. Ist sie um genau so viel gestiegen, wie das Fenster
+   verloren hat, ist die Bilanz geschlossen. Heute: 8 → 7 und 39 → 40,
+   Summe **47** unverändert gegen 45 + 2 Ankünfte.
+
+**Das Gegenstück zur alten Regel:** am 15.10. stand hier, die Zahl
+komme aus einer Abfrage **in diesem Sweep**, nie aus der letzten Liste
+plus Delta. Das gilt weiter — und dazu jetzt: **die Differenz zweier
+solcher Abfragen ist keine Handlung.** Zwischen zwei Messungen kann sich
+der Messbereich verschoben haben, nicht nur der Inhalt. Die Summe
+beider Mengen (im Fenster + älter) ist die einzige Zahl, die sich nur
+durch eine echte Handlung ändert.
