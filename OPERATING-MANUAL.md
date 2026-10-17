@@ -6679,3 +6679,21 @@ nichts", „noch keine Antwort" bekommt **die Messzeit mit** — genau wie
 eine Zahl. Und wenn eine Messung ihn umwirft, wird er **in derselben
 Zeile korrigiert**, mit sichtbarem Vermerk, nicht stillschweigend
 ersetzt. Das Board soll zeigen, was schon falsch darauf stand.
+
+───────────────────────────────────────────────────────────────────────
+COMMIT-MELDUNGEN GEHEN ÜBER `-F`, NICHT ÜBER `-m`
+───────────────────────────────────────────────────────────────────────
+
+Kleine Betriebsregel, heute bezahlt: die Commit-Meldung dieses Sweeps
+enthielt ein Zitat in doppelten Anführungszeichen. In
+`git commit -m "…"` hat das die Zeichenkette aufgebrochen, die Shell
+hat den Rest als Pfadangaben gelesen, und **der Commit kam nicht
+zustande** („pathspec 'dem' did not match"). Gemerkt habe ich es nur,
+weil `git log --oneline -1` danach noch den alten Commit zeigte.
+
+**Regel:** Meldungen werden in eine Datei im Scratchpad geschrieben und
+mit **`git commit -F <datei>`** übergeben. Das gilt besonders hier, weil
+die Meldungen deutsch sind und regelmäßig wörtliche Zitate tragen.
+Und: **nach jedem Commit `git log --oneline -1` prüfen**, bevor gepusht
+wird — ein fehlgeschlagener Commit sieht in einer Kette mit `&&` aus wie
+ein fehlgeschlagener Push.
