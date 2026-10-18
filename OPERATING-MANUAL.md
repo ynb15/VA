@@ -7144,3 +7144,44 @@ Auftrag lief über Yazmin und Timo"* — zwei Namen, die nirgends auffindbar
 waren. Ein erfundener plausibler Name wäre die gefährlichste Mail
 gewesen, die ich ihm je hingelegt hätte. **Lücke lassen und fragen
 schlägt plausibel raten, auch wenn die Quote darunter leidet.**
+
+═══════════════════════════════════════════════════════════════════
+AB 18.10.2026: DAS BOARD LÄUFT AUF KAPSTADTER ZEIT, NICHT AUSTIN
+───────────────────────────────────────────────────────────────────
+
+Von ihm selbst, im Chat am 18.10.2026:
+
+> „Ich bin jetzt in Kapstadt und nicht mehr in Austin."
+
+**Damit ist die alte Dauervorgabe („jede Zeit, die Du zeigst, ist
+Austin-Zeit") überholt.** Sie stammt aus der Zeit, als er in Texas saß.
+Seine eigene Ansage sticht den gespeicherten Sweep-Auftrag.
+
+**Neu:** alles, was ich ihm zeige — Board, Wochenstreifen, `var SWEPT`,
+Logzeilen, Chatzeiten — läuft auf **`Africa/Johannesburg`**.
+Der Versatz zu vorher ist **+7 Stunden** (Austin CDT = UTC−5,
+Kapstadt SAST = UTC+2). Eine Zeile, die gestern „09:00 Austin" hieß,
+heißt heute **16:00 Kapstadt**.
+
+**Belege, die schon vorher in dieselbe Richtung zeigten und die ich
+hätte zusammenlegen müssen:** Kapstadt-Aufenthalt 10.10.–04.11. von ihm
+selbst eingetragen · Reha in Südafrika · *„I'm back home in South
+Africa"* an Ian am 13.10. · der Geschäftskalender steht serverseitig auf
+`Africa/Johannesburg` · die Virgin-Active-Sache ist südafrikanisch.
+**Ich habe die Ortsfrage und die Zeitbasis-Frage getrennt behandelt,
+obwohl es eine Frage war.** Das ist der Fehler, nicht die fehlende
+Information.
+
+**Was bleibt:**
+- `list_events` bekommt weiterhin ein explizites `timeZone` mit — jetzt
+  `Africa/Johannesburg` statt `America/Chicago`, auf **beiden** Kalendern.
+- Vor jedem Logeintrag und vor jedem `var SWEPT`:
+  `TZ=Africa/Johannesburg date`.
+- Fremdzeiten werden weiter dazugesagt, wenn es einen Gegenüber gibt
+  (Brandlift sitzt in Berlin, Gäste in den USA).
+- **Der Tageswechsel des Boards verschiebt sich um 7 Stunden.** Alle
+  Stempelvergleiche laufen ohnehin in UTC — daran ändert sich nichts.
+
+**Umstellung des Boards:** beim nächsten Sweep, vollständig, inklusive
+Wochenstreifen. Bis dahin steht dort Austin-Zeit und ist um 7 Stunden
+falsch.

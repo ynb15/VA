@@ -148,10 +148,26 @@ Tommy Caldwell · Yung Pueblo · Yes Theory (zweimal) · Codie Sanchez ·
 MJ DeMarco · Blake Mycoskie · Mikhaila Peterson · Zach Leary (dreimal
 angeschrieben, nie Antwort) · Dean Karnazes · Sebastian Thrun.
 
-**Sechs davon tragen `[Via <Name>]` im Betreff** — also eine Empfehlung,
-die verpufft ist: via Danny Miranda (3×), via Pat Killoren (2×),
-via Boysen Hodgson, via Tim Doyle, via Cal Callahan.
+**Neun davon tragen `[Via <Name>]` im Betreff** — also eine Empfehlung,
+die verpufft ist. Dahinter stehen **sechs verschiedene Empfehlende**:
+
+| Empfohlen von | Fäden | an |
+|---|---:|---|
+| Danny Miranda | 3 | `lindsey@contrarianthink.com` · `codie@contrarianthinking.co` · `dan@eden.so` |
+| Pat Killoren | 2 | `tiegan.bradley@austintexas.gov` · `mayor.watson@austintexas.gov` |
+| **Rob Paddock** | 1 | `brendan@hookpoint.com` (Brendan Kane) |
+| Boysen Hodgson | 1 | `johnny@heybrotherco.com` |
+| Tim Doyle | 1 | `cory@cory-allen.com` |
+| Cal Callahan | 1 | `chase@matterful.co` / `chasereeves@gmail.com` |
+
 **Eine verbrannte Empfehlung ist teurer als eine kalte Mail.**
+
+> **Korrektur vom 18.10.2026.** Hier stand zuerst „sechs" — und die
+> Aufzählung darunter nannte acht Fäden und ließ **Rob Paddock** aus.
+> Es sind **neun Fäden von sechs Empfehlenden**. Die Verwechslung von
+> Fäden und Personen hat ausgerechnet den teuersten Posten verdeckt:
+> Rob Paddock ist sein Mentor und steht auf der Gästeliste in jedem
+> einzelnen Pitch.
 
 ---
 
@@ -161,8 +177,9 @@ Keine Kampagne. Drei Schritte, in dieser Reihenfolge:
 
 1. **Die sechs toten Adressen klären**, bevor irgendetwas rausgeht.
    Sonst gehen Nachfassmails an Postfächer, die es nicht gibt.
-2. **Die sechs Empfehlungs-Fäden zuerst nachfassen.** Dort steht ein Name
-   dahinter, der sich sonst fragt, was aus seiner Vermittlung geworden ist.
+2. **Die neun Empfehlungs-Fäden zuerst nachfassen**, und davon den von
+   Rob Paddock als allerersten. Dort steht jeweils ein Name dahinter, der
+   sich sonst fragt, was aus seiner Vermittlung geworden ist.
 3. **Danach der Rest, in Portionen** — nicht 71 auf einmal.
 
 Ich schreibe die Entwürfe, einzeln und nach dem Muster oben.
