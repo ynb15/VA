@@ -6840,3 +6840,37 @@ beide auf `:26` enden — ein Abstand aus ganzen Minuten, keine
 Eigenschaft der Sekunden. Der erklärte Sprung von 04:26 liegt nicht auf
 diesem Raster. **Ein Paar ist kein Muster**; beim nächsten Fall ist der
 Abstand zum vorigen zu messen.
+
+───────────────────────────────────────────────────────────────────────
+EINE GEFALLENE VERMUTUNG WIRD GENAUSO NOTIERT WIE EINE GEHALTENE
+(17.10., 20:08)
+───────────────────────────────────────────────────────────────────────
+
+Um 17:09 stand auf dem Board: die beiden unerklärten Stempelsprünge des
+Tages liegen **genau 3 h 14 min** auseinander — ausdrücklich als
+„ein Paar ist kein Muster" gekennzeichnet. Daraus ließ sich etwas
+machen, was eine Koinzidenz von einer Regel unterscheidet: **eine
+Vorhersage.** Wäre es ein Takt, müsste der nächste Sprung auf
+19:28:26 Austin fallen.
+
+**Um 20:08 gemessen: nichts. Der Stempel stand unverändert.** Die
+Vermutung ist gefallen.
+
+**Die Regel ist nicht neu, aber sie hat heute eine zweite Hälfte
+bekommen.** Bisher stand hier: ein Mechanismus aus einer Momentaufnahme
+ist eine Vermutung, eine Regel erst nach zwei Messungen. Dazu jetzt:
+
+1. **Eine Vermutung ist nur so viel wert wie die Vorhersage, die sie
+   erlaubt.** „Zwei Zahlen passen zusammen" ist keine; „der nächste
+   Wert muss X sein" ist eine. Wo sich keine Vorhersage formulieren
+   lässt, ist die Beobachtung eine Notiz und kein Ansatz.
+2. **Die gefallene Vermutung wird auf dem Board korrigiert, nicht
+   gelöscht.** Sonst bleibt über die Wochen nur stehen, was zufällig
+   gepasst hat, und das Board wird zu einer Sammlung bestätigter
+   Zufälle. Der Absatz von 17:09 ist deshalb durch die Prüfung ersetzt
+   worden, mit dem Ergebnis sichtbar — nicht stillschweigend entfernt.
+
+**Unberührt davon bleibt die offene Frage vom 13:10:** fallen die
+stempellosen Sprünge auf Anfangs- oder Endzeiten von Terminen? Die
+hat ihre eigene Messung und ist durch den gefallenen Takt nicht
+betroffen.
