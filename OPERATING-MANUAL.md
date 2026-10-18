@@ -6874,3 +6874,33 @@ ist eine Vermutung, eine Regel erst nach zwei Messungen. Dazu jetzt:
 stempellosen Sprünge auf Anfangs- oder Endzeiten von Terminen? Die
 hat ihre eigene Messung und ist durch den gefallenen Takt nicht
 betroffen.
+
+═══════════════════════════════════════════════════════════════════════
+DER WOCHENSTREIFEN WIRD AUS EINER MESSUNG GEBAUT, NICHT AUS ERINNERUNG
+(17.10., 22:08 — Wochenwechsel)
+═══════════════════════════════════════════════════════════════════════
+
+`DAYS` und `EV` im Board sind am Samstagsabschluss auf **Mo 19. bis
+So 25.10.** gerollt. Beim Bauen fiel eine Stelle auf, an der ich fast
+aus dem Gedächtnis geschrieben hätte: in meinen eigenen Notizen stand
+für Montag „**Brandlift 09:00–10:00**" — so hatte ich den Block die
+ganze Woche genannt. **Im Kalender heißt er
+*„Willkommen im Projekt Gottfried Prinz – dein Briefing"*.**
+
+Das ist kein Fehler im Inhalt, aber einer in der Methode: ein
+Wochenstreifen, der aus den eigenen Notizen entsteht, trägt meine
+Abkürzungen und nicht seine Titel. Und er trägt nur, was ich
+aufgeschrieben hatte.
+
+**VERFAHRENSREGEL für jeden Wochenwechsel:** `EV` wird aus **einer
+frischen Abfrage beider Kalender über die neue Woche** gebaut —
+`startTime` Montag 00:00, `endTime` Sonntag 23:59, `orderBy: startTime`
+—, nicht aus dem Log und nicht aus der vorigen Woche. Jeder Block
+bekommt seine Zeit und seinen Titel aus der Antwort. Was im Kalender
+keinen Eintrag hat, steht nicht im Streifen; und ein leerer Tag ist
+kein freier Tag, sondern ein Tag, der noch nicht geführt wurde.
+
+**Ganztägige Marken gehören nicht in `EV`** (der Streifen ist ein
+Stundenraster) — sie stehen in der Uhrenzeile. Diese Woche:
+*MagicMonday* (Mo), *Podcast: Kyle Kingsbury* (So 25.), *Rest Day*
+(So 25.), durchlaufend *Kapstaad* bis 04.11.
