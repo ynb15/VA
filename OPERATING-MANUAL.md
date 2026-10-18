@@ -7252,3 +7252,62 @@ zeigt, dass die Frage nicht lautet „kommt der nach Austin", sondern
 **„kommt der je nach Kapstadt oder Europa".** Das ist eine andere Frage,
 sie ist beantwortbar, und bei reisenden Leuten oft mit ja. Die
 2027-Sperre streicht die Liste nicht — sie sortiert sie um.
+
+═══════════════════════════════════════════════════════════════════
+DIE REDAKTIONSLINIE: EUROPA – AFRIKA – AMERIKA ALS SOZIOKULTURELLE
+BRÜCKE. UND: MRT OFFEN, NICHTS TERMINGEBUNDENES ANSTOSSEN
+───────────────────────────────────────────────────────────────────
+
+**Von ihm selbst am 18.10.2026, zum ersten Mal ausgesprochen:**
+
+> „Genau das ist ja auch mein Ansatz mit dem Podcast, dass ich
+> idealerweise Europa, Afrika und Amerika wie so eine soziokulturelle
+> Brücke verbinde."
+
+**Das ist die Redaktionslinie der Sendung und ab sofort der Maßstab für
+jeden Gästevorschlag, den ich mache.** Nicht Reichweite, nicht Prominenz
+— passt die Person in die Brücke.
+
+**ZUSTAND OFFEN — NICHTS TERMINGEBUNDENES ANSTOSSEN:**
+Er wartet auf ein **MRT seines Knies**. Fällt es schlecht aus, braucht
+er eine **OP, und die müsste in Deutschland stattfinden**. Damit ist
+offen, ob er den Winter in Kapstadt bleiben kann.
+
+**Folge für mich:**
+- „Er ist in Kapstadt bis X" ist **keine gesicherte Grundlage** mehr.
+  Der Kalendereintrag 10.10.–04.11. bleibt, was er ist: ein Eintrag.
+- **Keine Mail an Brendan Kane.** Er hat ausdrücklich „ich warte"
+  gesagt. Nicht von sich aus wieder aufbringen.
+- Überhaupt **nichts anstoßen, was einen Ort oder ein Datum zusagt**,
+  bis er das MRT-Ergebnis nennt.
+- Das Fenster ist dabei nicht knapp: Brendan Kane ist November bis
+  Anfang Dezember **und** etwa Januar bis Juni in Kapstadt. Warten
+  kostet diesen Gast nicht. Das einmal gesagt — dann Ruhe.
+
+**WAS DIE BRÜCKE ÜBER SEINE PIPELINE SAGT (geprüft, 18.10.):**
+
+Die **gesendeten Folgen tragen Afrika schon**: Rob Bennett (77, Therapeut,
+Apartheid-Aktivist, Techno-Ikone, Südafrika) · Francis Chouler
+(Schauspieler/Regisseur, Südafrika, 11k Aufrufe) · Rob Paddock
+(Valenture Institute, Südafrika).
+
+Die **Outreach-Pipeline trägt sie nicht.** Von 86 Adressen in
+`podcast/outreach-unbeantwortet.md`: **null südafrikanische**, eine
+europäische, zwei US-Behörden, der Rest `.com`. Die erkennbaren Namen
+sind durchweg amerikanisch — McConaughey, Krakauer, Pollan, Codie
+Sanchez, Lance Armstrong, Aubrey Marcus, Yung Pueblo, Peter Attia,
+MJ DeMarco, Dean Karnazes, Sebastian Thrun.
+
+*Methodenvorbehalt: die Endung einer Adresse beweist keine
+Staatsangehörigkeit, und `gmail.com` dominiert mit 18 von 86. Aber null
+`.za` sind null, und die Namensliste bestätigt es qualitativ.*
+
+**Daraus der Befund:** die Brücke steht im **Rückkatalog** und fehlt im
+**Vorhaben**. Das ist genau herum falsch — Afrika ist die einzige Säule,
+die er gerade aufnehmen kann, und die einzige ohne Pipeline.
+
+**Und der Fall, den er fürchtet, ist redaktionell kein Verlust:** muss
+er zur OP nach Deutschland, ist das die **Europa-Säule**. Er ist
+Deutscher. Das als Aufnahmefenster zu denken statt nur als Arzttermin
+ist zulässig — **aber erst, wenn er das Ergebnis kennt und es selbst
+anspricht.**
