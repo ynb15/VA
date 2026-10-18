@@ -7489,3 +7489,38 @@ veröffentlicht Folge **und** Shorts → **dann** löscht er.
 **Nicht vorschlagen, die Datei länger zu behalten.** Speicherplatz ist
 sein Grund, der ist legitim, und ein Audio-Export allein reicht zum
 Rendern von Video nicht.
+
+═══════════════════════════════════════════════════════════════════
+ER PLANT DIE WOCHE SONNTAGVORMITTAG — UND DER GESCHÄFTSKALENDER
+STEHT JETZT SELBST AUF JOHANNESBURG
+───────────────────────────────────────────────────────────────────
+
+**Gemessen So 18.10.:** zwischen **11:28 und 13:31 Kapstadt** hat er in
+einem Zug fünf neue Blöcke angelegt und vier bestehende angefasst.
+Vorher war der Kalender für diese Woche praktisch leer.
+
+**Als Muster notiert, nicht als Regel** — ein einzelner Sonntag belegt
+keine Gewohnheit. Wenn es sich wiederholt, gehört der Sonntagvormittag
+zu den Zeitpunkten, an denen sich ohne Vorwarnung viel bewegt.
+
+**Der Geschäftskalender meldet sich seit heute mit
+`timeZone: Africa/Johannesburg`.** Damit ist die Umstellung des Boards
+auf Kapstadt nicht nur seine Ansage, sondern auch seine Kalendertat.
+**Der private Kalender steht weiter auf `America/Chicago`** — die beiden
+laufen also auseinander, und `list_events` bekommt auf **beiden**
+weiterhin ein explizites `timeZone` mit.
+
+**ZWEI OFFENE PUNKTE, BENANNT UND NICHT ANGEFASST:**
+1. **Di 20.10., 10:00 Kapstadt: *Filmen: Porn Pandemic* (10:00–11:30)
+   und *AI Education* (10:00–12:00) liegen vollständig übereinander.**
+   Sieben Minuten auseinander angelegt — also vermutlich übersehen.
+   Benannt, nicht verschoben.
+2. ***Follow-Up: Brendan Kane*** trägt weiter `America/Chicago`:
+   14:00 Chicago = **21:00 Kapstadt**. Angelegt am 10.07. für eine
+   US-Reise, die nicht stattfindet. Brendan ist diesen Monat in Lissabon
+   (20:00), ab November in Kapstadt. **Frage, keine Korrektur.**
+
+**Kleiner, nützlicher Nebeneffekt der Umstellung:** Berlin und Kapstadt
+stehen beide auf UTC+2, solange Deutschland Sommerzeit hat (bis
+25.10.). Brandlift-Termine brauchen bis dahin **kein Umrechnen**.
+Ab dem 26.10. ist Berlin eine Stunde zurück.
