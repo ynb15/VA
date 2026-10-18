@@ -7311,3 +7311,77 @@ er zur OP nach Deutschland, ist das die **Europa-Säule**. Er ist
 Deutscher. Das als Aufnahmefenster zu denken statt nur als Arzttermin
 ist zulässig — **aber erst, wenn er das Ergebnis kennt und es selbst
 anspricht.**
+
+═══════════════════════════════════════════════════════════════════
+MEIN BLINDER FLECK: ICH HABE SEINE PIPELINE AM POSTFACH GEMESSEN.
+SIE LIEGT IN NOTION, TRELLO UND AUF WHATSAPP
+───────────────────────────────────────────────────────────────────
+
+**Am 18.10.2026 habe ich ihm gesagt, Afrika sei „die einzige Säule ohne
+Pipeline". Falsch.** Er hat widersprochen — Kontakte laufen über
+WhatsApp, die Liste liege in Notion und Trello — und die Datenbank gibt
+ihm recht.
+
+**`Databank` (Notion, `collection://4aa27609-a278-4792-b912-0e17a835dd6f`),
+Ansicht „South Africa" (Location = Cape Town ODER South Africa): 24 Zeilen.**
+
+| Status | Anzahl | Namen |
+|---|---:|---|
+| **Recorded** | 3 | Bridget Woods · Craig Makhosi (Sangoma) · Nathan Maingard |
+| **Confirmed** | 5 | Amy May · Amy Nelson · Drew Birch · Jamie Elkon · Megan de Beyer |
+| **Researching** | 2 | Jon Savage · Robert Paddock |
+| **Not Started** | 14 | Benji Adrion · Caroline Amaru · Chi Mhende · Christian Wolf · David Benatar · David Chidester · George Ellis · Joe Fleming · Mark Solms · Milton Schorr · Monique Shiess · Pumla Gobodo-Madikizela · Rian Malan · Sam Paddock |
+
+**URSACHE DES FEHLERS — und die Lehre wiegt schwerer als der Fehler:**
+Ich habe „Pipeline" mit „Outreach-Mails" gleichgesetzt und daraus
+`podcast/outreach-auswertung.md` gebaut. **Das Postfach ist der
+schwächste seiner Kanäle.** Warme Beziehungen laufen über **WhatsApp**
+(Rob Paddock, Francis Chouler, Rob Bennett — er nennt sie selbst), die
+Planung über **Notion und Trello**. Wer nur Mail liest, hält warme
+Kontakte für kalt und leere Säulen für leer.
+
+**Regel: bevor ich über seinen Stand bei irgendetwas rede, erst Notion
+ansehen. Und nie aus dem Fehlen einer Mail auf das Fehlen einer
+Beziehung schließen.**
+
+**WAS ICH NICHT SEHEN KANN — ausdrücklich festhalten:**
+- **WhatsApp:** kein Zugang, wird es vermutlich nie geben. Strukturell
+  blind für seine wärmsten Beziehungen.
+- **Trello:** **nicht verbunden.** `ListConnectors` zeigt Canva, Gmail,
+  Google Calendar, Google Drive, Notion, Slack, Vibe Prospecting — kein
+  Trello. Und Trello führt aktive Planung: die Zeile *Jon Savage* trägt
+  die Notiz „Outreach bereits geplant (**Trello: Morgen**)".
+  Verbinden ginge über claude.ai → Einstellungen → Connectors.
+
+**WAS IN DEN ZEILEN STECKT (Auszug, zur Erinnerung an die Qualität):**
+- **Mark Solms** (UCT, Kapstadt) — als „TOP-TIPP" markiert. Bewusstsein
+  und Affekt; erbte das Weingut Solms-Delta und übertrug Miteigentum an
+  die Nachfahren der versklavten Arbeiter.
+- **George Ellis** (UCT) — Kosmologe, Hawking-Koautor, **geb. 1939, ~86**.
+  Die Zeile sagt selbst: „kostbares In-Person-Fenster, eher früher
+  angehen." **Diese Dringlichkeit hängt nicht am MRT.**
+- **Pumla Gobodo-Madikizela** — Wahrheits- und Versöhnungskommission,
+  Gespräche mit Eugene de Kock. Jetzt Stellenbosch, ~50 km, in Person
+  machbar.
+- **David Benatar** (UCT, emeritiert) — Antinatalist, der perfekte
+  Gegenpol zum Frankl'schen „Sinn im Leiden". Vermerk: extrem
+  öffentlichkeitsscheu.
+- **Monique Shiess** — Mitgründerin von **AfrikaBurn**. Verbindet direkt
+  mit dem laufenden Marian-Goodell-/Burning-Man-Faden. **Das ist eine
+  Brücke zwischen zwei seiner Säulen, also genau seine Redaktionslinie.**
+- **Joe Fleming** — US-Irak-Veteran, nach Südafrika gezogen, gründete
+  „Recharge", eine Männer-Gehgemeinschaft für psychische Gesundheit.
+
+**DER ENGPASS IST NICHT DIE LISTE — ES SIND DIE FÜNF BESTÄTIGTEN OHNE
+DATUM.** Amy May, Amy Nelson, Drew Birch, Jamie Elkon, Megan de Beyer
+stehen auf *Confirmed* und *Approval = Yes*, aber **ohne `Datum`**. Bei
+Drew Birch steht in den Notizen ein blankes „Confirmed?" — mit
+Fragezeichen. Das sind die nächstliegenden Aufnahmen überhaupt, und sie
+liegen ohne Termin.
+
+**LÜCKE: Mark Kaplan fehlt in der Databank.** Er hat sich **Fr 16.10.,
+10:30–12:00 Kapstadt** mit ihm getroffen (Privatkalender,
+`ahcpe0l8ikg8gkoof2vchi71jg`) — südafrikanischer Filmemacher, über
+Freunde vermittelt. Keine Zeile. Ebenso traf er **Sa 17.10.
+18:30–22:30** „Francis" (vier Stunden). Beides Belege dafür, dass sein
+tatsächlicher Betrieb an meinem Postfachblick vorbeiläuft.
