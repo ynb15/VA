@@ -162,12 +162,38 @@ die verpufft ist. Dahinter stehen **sechs verschiedene Empfehlende**:
 
 **Eine verbrannte Empfehlung ist teurer als eine kalte Mail.**
 
-> **Korrektur vom 18.10.2026.** Hier stand zuerst „sechs" — und die
-> Aufzählung darunter nannte acht Fäden und ließ **Rob Paddock** aus.
-> Es sind **neun Fäden von sechs Empfehlenden**. Die Verwechslung von
-> Fäden und Personen hat ausgerechnet den teuersten Posten verdeckt:
-> Rob Paddock ist sein Mentor und steht auf der Gästeliste in jedem
-> einzelnen Pitch.
+> **Zweite Korrektur vom 18.10.2026 — die erste war auch falsch.**
+>
+> Ursprünglich stand hier „sechs", die Aufzählung nannte acht. Ich habe
+> auf **neun Fäden von sechs Empfehlenden** korrigiert und Rob Paddock
+> als „teuersten stillen Faden" bezeichnet. **Das war der schlimmere
+> Fehler.** Auf Nachfrage geprüft, Faden für Faden:
+>
+> | Faden | Stand laut Postfach |
+> |---|---|
+> | Rob Paddock → `brendan@hookpoint.com` | **Beantwortet am 09.07., Zusage.** Nicht still. |
+> | Cal Callahan → `chase@matterful.co` | **Beantwortet am 06.09.** Nicht still. |
+> | Pat Killoren → `mayor.watson@austintexas.gov` | Automatische Antwort mit Verweis auf Tiegan Bradley. Kein Mensch, aber auch nicht verbrannt. |
+> | Danny Miranda → `lindsey@contrarianthink.com` | wirklich still |
+> | Danny Miranda → `codie@contrarianthinking.co` | wirklich still |
+> | Danny Miranda → `dan@eden.so` | wirklich still |
+> | Boysen Hodgson → `johnny@heybrotherco.com` | wirklich still |
+> | Tim Doyle → `cory@cory-allen.com` | wirklich still |
+> | Pat Killoren → `tiegan.bradley@austintexas.gov` | wirklich still |
+>
+> **Es sind sechs wirklich stille Empfehlungen.**
+>
+> **Die Ursache ist ein Fehler im Verfahren, nicht im Zählen.** Die Liste
+> misst *Fäden*, nicht *Beziehungen*. Zu Brendan Kane gehen **zwei** Fäden
+> mit demselben Betreff raus (08.07. 20:38 und 09.07. 02:00). Geantwortet
+> wurde auf den zweiten. Der erste steht bis heute auf einer Mail und
+> taucht damit als „unberührt" auf — obwohl der Mann zugesagt hat.
+> Dasselbe bei Chase Reeves.
+>
+> **Damit ist die Zahl 71 eine Obergrenze, kein Befund.** Wie stark sie
+> überzeichnet, weiß ich nicht; in der geprüften Teilmenge waren es 2 von
+> 9. Die Zahl wird neu hergeleitet, und zwar **pro Person statt pro
+> Faden** — Doppel-Fäden zusammengelegt, bevor gezählt wird.
 
 ---
 
@@ -177,9 +203,11 @@ Keine Kampagne. Drei Schritte, in dieser Reihenfolge:
 
 1. **Die sechs toten Adressen klären**, bevor irgendetwas rausgeht.
    Sonst gehen Nachfassmails an Postfächer, die es nicht gibt.
-2. **Die neun Empfehlungs-Fäden zuerst nachfassen**, und davon den von
-   Rob Paddock als allerersten. Dort steht jeweils ein Name dahinter, der
-   sich sonst fragt, was aus seiner Vermittlung geworden ist.
+2. **Die sechs wirklich stillen Empfehlungs-Fäden nachfassen** (Tabelle
+   oben). Dort steht jeweils ein Name dahinter, der sich sonst fragt, was
+   aus seiner Vermittlung geworden ist. **Nicht** Brendan Kane und
+   **nicht** Chase Reeves — die haben geantwortet und brauchen etwas
+   anderes als eine Nachfassmail.
 3. **Danach der Rest, in Portionen** — nicht 71 auf einmal.
 
 Ich schreibe die Entwürfe, einzeln und nach dem Muster oben.

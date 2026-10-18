@@ -7185,3 +7185,70 @@ Information.
 **Umstellung des Boards:** beim nächsten Sweep, vollständig, inklusive
 Wochenstreifen. Bis dahin steht dort Austin-Zeit und ist um 7 Stunden
 falsch.
+
+═══════════════════════════════════════════════════════════════════
+EIN FADEN IST KEINE BEZIEHUNG — UND BRENDAN KANE HAT LÄNGST ZUGESAGT
+───────────────────────────────────────────────────────────────────
+
+**Am 18.10.2026 habe ich ihm gesagt, der Faden an Brendan Kane sei „der
+teuerste stille Faden von allen", weil Rob Paddock ihn vermittelt hat.
+Falsch.** Er hat nachgefragt — *„Was meinst du mit Rob Paddock?"* — und
+das Postfach sagt das Gegenteil.
+
+**Was wirklich dort steht** (`19f44979b0135a11`):
+Brendan Kane antwortet am **09.07.2026, fünf Stunden** nach dem Pitch:
+
+> *„knowing that Rob Paddock connected us definitely carries weight.
+> Rob's a good friend, so when he recommends someone, I pay attention.
+> I've actually been taking a bit of a break from podcasts recently, but
+> given your note, the thought you've put into the show, and the fact
+> that you've invested the time to read my work, **I'm open to doing
+> it**."*
+
+Und er nennt ungefragt seinen Kalender:
+- London bis 20. Juli
+- Lissabon: August, September, Oktober
+- **Kapstadt: der ganze November und bis in den frühen Dezember**
+- **Kapstadt wieder: etwa Januar bis Juni**
+
+Yannick antwortet am 10.07.: *„I set a reminder to reach out when I'm
+back in Cape Town too later this year."*
+
+**Er ist seit dem 10.10. in Kapstadt. Brendan Kane kommt in rund zwei
+Wochen.** Im Wochenstreifen steht bereits „Follow-Up: Brendan Kane".
+
+**Warum das der Fund ist und nicht nur ein Termin:** Es erfüllt
+*in-person only*, braucht keinen Flug, keine USA und keinen
+Genesungsfortschritt über „kann in einem Raum sitzen" hinaus. Der Gast
+ist eine schriftliche Zusage. Und Brendan Kane ist **Hook Point** und
+**One Million Followers** — ausgerechnet der Mann für Reichweite, also
+genau die Frage, die Yannick heute gestellt hat. Dazu ist er sieben der
+nächsten acht Monate in derselben Stadt: kein einzelner Schuss, sondern
+ein Fenster, das fast die ganze Zeit abdeckt, in der Yannick nicht
+reisen kann.
+
+**DER VERFAHRENSFEHLER, DER DAS VERDECKT HAT:**
+`podcast/outreach-unbeantwortet.md` zählt **Fäden**, nicht **Personen**.
+An Brendan Kane gingen **zwei** Mails mit demselben Betreff raus
+(08.07. 20:38 und 09.07. 02:00). Geantwortet wurde auf die zweite. Die
+erste steht bis heute auf einer Mail und erscheint damit als
+„unberührt". Dasselbe bei Chase Reeves.
+
+**Regel ab sofort: vor dem Zählen pro Person zusammenlegen, nicht pro
+Faden.** Und: **„unbeantwortet" nie behaupten, ohne die Adresse einmal
+über das ganze Archiv geprüft zu haben** — `from:<adresse>`, nicht nur
+den Faden ansehen.
+
+**Damit ist die Zahl 71 eine Obergrenze, kein Befund.** In der geprüften
+Teilmenge waren 2 von 9 falsch. Neu herzuleiten.
+
+**Was von den neun Empfehlungen übrig bleibt:** sechs wirklich stille
+(Danny Miranda ×3, Boysen Hodgson, Tim Doyle, Pat Killoren → Tiegan
+Bradley). Mayor Watson hat eine Abwesenheitsnotiz mit Verweis auf
+Tiegan Bradley geschickt — kein Mensch, aber auch nicht verbrannt.
+
+**Und die allgemeine Lehre für die 2027-Sperre:** Brendan Kanes Kalender
+zeigt, dass die Frage nicht lautet „kommt der nach Austin", sondern
+**„kommt der je nach Kapstadt oder Europa".** Das ist eine andere Frage,
+sie ist beantwortbar, und bei reisenden Leuten oft mit ja. Die
+2027-Sperre streicht die Liste nicht — sie sortiert sie um.
