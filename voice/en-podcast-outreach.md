@@ -195,7 +195,10 @@ Pitch-Baukasten. Der gehört in den Kaltpitch und nirgendwo sonst.
 
 ## 7. Offene Fragen an ihn
 
-- `Gg,` als Abbinder — wofür steht das, und wann setzt er es?
+- `Gg,` als Abbinder — wofür steht das? **Wann** er es setzt, ist seit Runde 2 geklärt:
+  `Dreaming Big,` wenn er etwas will oder sich erklärt · `Gg,` wenn er abwickelt ·
+  unter ~20 Wörtern gar kein Abbinder. Sprachübergreifend belegt, siehe
+  `voice/de-register.md` Abschnitt 3.
 - Wann `YNB` und wann `Yannick` unter derselben Art Mail?
 - Bei Pollan hat er fast vier Tage gewartet, bei Joe 76 Minuten. Liegt dahinter eine
   Regel oder nur die Lage?

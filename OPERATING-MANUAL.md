@@ -7076,3 +7076,71 @@ Situation geordnet, mit Belegstellen und mit meinen Fehlgriffen daneben.
 Sie wird **überschrieben, nicht fortgeschrieben.**
 `voice/german-register.md` bleibt vorerst liegen; es ist mit 615 Zeilen
 Chronik genau die Form, die ich ersetze.
+
+═══════════════════════════════════════════════════════════════════
+ES SIND ZWEI REGISTER MIT GEGENLÄUFIGEN REGELN, NICHT EINE STIMME IN
+ZWEI SPRACHEN
+───────────────────────────────────────────────────────────────────
+
+Blindtest Runde 2 (deutsch), 18.10.2026, vier Fälle, Entwürfe committet
+in dda7289 um 05:05:49 CDT vor dem ersten Abruf der Zielmails.
+**Ergebnis: 0 von 4.**
+
+Der Befund ist größer als das Ergebnis. **Was im englischen Register
+richtig ist, ist im deutschen teilweise falsch:**
+
+| | englisch | deutsch |
+|---|---|---|
+| meine Länge zu seiner | 1,31 (2 von 5 zu **kurz**) | **2,06 (4 von 4 zu lang)** |
+| Absätze | mehrere | **meist einer** |
+| Entschuldigung | ja, wenn sein Fehler kostet | **nie** |
+| Rechtfertigung | kurz | **gar nicht** |
+| Reihenfolge | Mensch zuerst | **Sache zuerst, er selbst zuletzt** |
+
+**Damit ist `voice/german-register.md` als Arbeitsgrundlage erledigt.**
+615 Zeilen Chronik, die beide Register zusammenwirft — sie *musste*
+falsch sein. Kopfnotiz gesetzt, Datei bleibt als Quelle liegen.
+**Arbeitsgrundlage sind `voice/de-register.md` und
+`voice/en-podcast-outreach.md`.**
+
+**DIE HARTE REGEL DES DEUTSCHEN REGISTERS:**
+`sorry` — er 0×, ich 3× über vier Mails. Er hat sich nicht entschuldigt
+für einen Monat Funkstille, nicht für eine **zu Unrecht angemahnte**
+Rechnung, nicht für sieben Tage Verzug. Beim eigenen Fehler macht er aus
+*ich* ein **wir**: *„da hatten wir wohl was übersehen"*. Er erklärt
+einmal, ohne Reue — oder sagt gar nichts.
+
+**DIE ZWEITE:** Reihenfolge. Am 13.10. an Luis Kallaene steht der
+Motorradunfall an **dritter** Stelle, eingeleitet mit **„btw"**, nachdem
+er Luis' Update quittiert (*„Noted, danke fürs Update."*) und Holistic
+House abgenickt hat. Zur abgelehnten Kalendereinladung vier Wörter:
+**„Termin gerade angenommen."** Keine Erklärung, warum etwas war — nur,
+was jetzt gilt.
+
+**DIE ABBINDERFRAGE IST BEANTWORTET** (stand seit Runde 1 offen):
+`Dreaming Big,` wenn er etwas **will** oder sich **erklärt** · `Gg,` wenn
+er **abwickelt** · unter ~20 Wörtern **gar keiner**, direkt in den
+Signaturblock. Sprachübergreifend belegt. `Dreaming Big,` kam in der
+ganzen deutschen Runde nicht einmal vor.
+
+**ER SPIEGELT DIE ANREDE NICHT.** Katrin Preusse schreibt `Moin!`, er
+antwortet `Hey Katrin,`. Seine eigene Anrede, unabhängig vom Eingang:
+`Hey <Vorname>,` · `Howdy <Vorname>,` · bei sehr kurzen Mails gar keine.
+
+**SIGNATUR:** `YNB Copywriting` ist alt (bis Jan 2026). Aktuell immer
+`Yannick N. Bernard / YNB Ventures LLC / yannickbernard.com`.
+
+**WIEDERHOLUNGSFEHLER AUS RUNDE 1:** nicht nachgeschlagen. Ich schrieb
+*„Holistic House sagt mir noch nichts"* — er schreibt *„Holistic House
+klingt immer spannend"*, kennt es also, und es steht sogar auf meiner
+eigenen Beobachtungsliste. Zweite Runde, derselbe Fehlertyp. **Die Regel
+„erst das Archiv und die eigenen Notizen durchsuchen, dann schreiben"
+ist damit die teuerste der beiden Runden.**
+
+**EINE ENTSCHEIDUNG, DIE RICHTIG WAR, OBWOHL SIE ALS FEHLSCHLAG ZÄHLT:**
+In Fall 3 fehlte mir der Name des Ansprechpartners. Ich habe die Stelle
+offen gelassen statt sie zu füllen. Die echte Antwort lautet *„Der
+Auftrag lief über Yazmin und Timo"* — zwei Namen, die nirgends auffindbar
+waren. Ein erfundener plausibler Name wäre die gefährlichste Mail
+gewesen, die ich ihm je hingelegt hätte. **Lücke lassen und fragen
+schlägt plausibel raten, auch wenn die Quote darunter leidet.**

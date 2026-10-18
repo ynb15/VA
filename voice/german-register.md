@@ -1,3 +1,13 @@
+> **ABGELÖST AM 18.10.2026 — NICHT MEHR ALS ARBEITSGRUNDLAGE BENUTZEN.**
+> Diese Datei ist eine Chronik aus über 30 datierten Nachträgen. Zum Schreiben einer
+> Mail taugt sie nicht: man muss sie durchsuchen statt anwenden, und sie wirft deutsches
+> und englisches Register zusammen, obwohl deren Regeln einander in mehreren Punkten
+> widersprechen (gemessen in Blindtest Runde 1 und 2).
+>
+> **Arbeitsgrundlage sind jetzt:** `voice/de-register.md` und
+> `voice/en-podcast-outreach.md` — nach Situation geordnet, mit Belegstellen.
+> Diese Datei bleibt als Quelle liegen, bis ihre Belege dort eingearbeitet sind.
+
 # Yannicks deutsches Register — aus gesendeten Mails, nicht aus Vermutungen
 
 Quelle: seine eigenen SENT-Threads, März–August 2026. Brandlift/Gottfried,
