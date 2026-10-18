@@ -7385,3 +7385,59 @@ liegen ohne Termin.
 Freunde vermittelt. Keine Zeile. Ebenso traf er **Sa 17.10.
 18:30–22:30** „Francis" (vier Stunden). Beides Belege dafür, dass sein
 tatsächlicher Betrieb an meinem Postfachblick vorbeiläuft.
+
+═══════════════════════════════════════════════════════════════════
+TRELLO IST DA — UND SEINE SHORTS-LISTE ENTHÄLT KEINEN EINZIGEN
+PODCAST-CLIP
+───────────────────────────────────────────────────────────────────
+
+**Trello-Connector seit 18.10. verbunden.** Fünf Boards, alle im
+Workspace `YNB`: **YNB · YNBrain · YNBusiness · YNBooks · YNBrand**.
+
+- **YNBusiness** = sein Tagesbetrieb: `Braindump · In Progress ·
+  The One Thing · Heute · Morgen · Diese Woche · Diesen Monat ·
+  Irgendwann · Backlog · On hold`. **Hier liegt die Liste „Morgen",
+  auf die der Jon-Savage-Eintrag in Notion verweist.**
+- **YNBrand** = Content: `Medium · Braindump · Substack (ready) ·
+  Substack (tbf) · YT Braindump · YT in progress · YT Pipieline ·
+  **YT Shorts** · YT tbe · YNB Podcast · Products`.
+
+**DER BEFUND:** `YT Shorts` hat **19 Karten — und nicht eine davon ist
+ein Podcast-Ausschnitt.** Es sind durchweg **eigene, gedrehte Stücke**:
+Scarborough · Steve Harvey & Winston Churchill · Vagabonding ·
+Inner/Outer Charisma · Honesty/Integrity · If your life was a movie… ·
+The Girl Who Could Not See · How to Entreprisoneur · Top 10 Books ·
+Top 10 Podcasts · Top10 Cities · Mad World · Day In The Life ·
+One Day in A Life As A 10k Solopreneur · Relationship · Meet YNB ·
+JK Rowling · Churchill · Real Love.
+
+**„Shorts" heißt bei ihm bisher: Originale, nicht Schnipsel.** Mein
+Logan-Plan ist damit eine **neue Gattung**, kein Nachschub für diese
+Liste. Nicht stillschweigend vermischen.
+
+**UND DAS ARGUMENT, DAS AUS SEINEM EIGENEN BOARD KOMMT:**
+**Alle 19 verlangen ihn vor der Kamera.** Er sitzt in der Reha, mit
+einem Knie, das vielleicht operiert werden muss. Diese Liste kann sich
+gerade nicht bewegen. **Die Podcast-Ausschnitte sind die einzigen
+Shorts, die er veröffentlichen kann, ohne aufzustehen** — das Material
+ist längst aufgenommen. Das ist keine Empfehlung von mir, das ist der
+Zustand seiner eigenen Liste.
+
+**SEIN KARTENFORMAT (geprüft an zwei Karten):**
+- **Name** = die Idee, kurz. `Short:` als Präfix ist **optional** —
+  manche haben es, die meisten nicht.
+- **`desc` bleibt leer.** Er benutzt das Beschreibungsfeld nicht.
+- **Der Inhalt steht in Kommentaren**, mit einem Wort als Kopfzeile:
+  `Script`, `Inspo`. Darunter Stichpunkte oder ein Referenzlink.
+
+> Beleg „Short: Scarborough", Kommentar: *„Script — There's only one
+> unofficial rule here: you gotta walk barefoot"*
+> Beleg „If your life was a movie…", Kommentar: *„Inspo — siehe auch:
+> The Last Year of My Life"* plus YouTube-Link.
+
+**Wer dort Karten anlegt, schreibt also in Kommentare, nicht in `desc`.**
+
+**NICHTS GESCHRIEBEN.** Trello-Schreibzugriff ist nicht freigegeben.
+Offene Frage an ihn: eigene Liste `YT Shorts: Podcast`, oder in die
+bestehende mit Präfix? Und falls Präfix — seine Drive-Grammatik
+`Logan: <Sache>` ist konsistenter als `Short: Logan — <Sache>`.
