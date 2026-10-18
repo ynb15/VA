@@ -6904,3 +6904,75 @@ kein freier Tag, sondern ein Tag, der noch nicht geführt wurde.
 Stundenraster) — sie stehen in der Uhrenzeile. Diese Woche:
 *MagicMonday* (Mo), *Podcast: Kyle Kingsbury* (So 25.), *Rest Day*
 (So 25.), durchlaufend *Kapstaad* bis 04.11.
+
+═══════════════════════════════════════════════════════════════════════
+ER HAT ANGEFANGEN, MICH EINZUARBEITEN (18.10., 00:30)
+═══════════════════════════════════════════════════════════════════════
+
+Erste eigene Nachricht von ihm seit Langem, und sie ändert zwei Dinge
+grundsätzlich.
+
+**1. Der Motorradunfall.** Er schreibt: *„Ich hatte vor einem Monat einen
+Motorradunfall, was mein ganzes Leben natürlich so ein bisschen
+durcheinander geworfen hat."* Also Mitte September.
+
+**Das löst rückwirkend auf, was ich wochenlang als Widersprüche geführt
+habe, und diese Einträge sind damit geschlossen:**
+
+- Die vier verschiedenen Reiseziele für denselben Zeitraum (Rehab in
+  Deutschland an Enfold, Rehab in Südafrika an Ken Stern, „final days in
+  the States" an Walker, Atlanta an Boysen) — **nicht mehr als
+  Widerspruch führen.**
+- Der Kalender als Protokoll statt als Plan, die Nachträge, die leeren
+  Tage, die rückwirkend gekürzten Blöcke — **das ist der Grund.**
+  Nicht mehr als Unregelmäßigkeit zählen.
+- Dass seit dem 03.09. kein einziger neuer Podcast-Outreach mehr
+  rausgegangen ist.
+
+**Nicht nachfragen. Nicht als Karte aufs Board. Einmal zur Kenntnis
+genommen, und das war's.**
+
+**2. Er fragt zum ersten Mal, wofür er mich einsetzen soll** — Content
+Creation und Wachstum des Podcasts. Die Regel „er hat dich nicht
+eingearbeitet, sag ihm nicht, was seine Prioritäten sind" gilt weiter für
+*seine* Prioritäten. Aber **auf eine offene Frage antworte ich jetzt mit
+Vorschlägen**, markiert als meine, mit einer Empfehlung und der Angabe,
+was mich was kostet.
+
+───────────────────────────────────────────────────────────────────────
+WAS ICH DABEI ÜBER MEINE EIGENE ARBEIT GELERNT HABE
+───────────────────────────────────────────────────────────────────────
+
+**Ich hatte ihm drei Systeme gebaut, die alle einen Upload von ihm
+brauchen.** `youtube/shorts-elements.md`, `youtube/ai-editor.md`,
+`youtube/README.md` — alle drei warten seit dem 03.09. darauf, dass er
+etwas in `[Alfred] Inbox` legt. Der Ordner war in jedem einzelnen Sweep
+dieser Woche leer.
+
+**Regel:** Bevor ich ein System baue, das eine Handlung von ihm
+voraussetzt, prüfe ich, ob es eine Variante gibt, die **nur aus Daten
+arbeitet, die ich ohnehin schon lesen kann** — Postfach, Kalender, Drive,
+Notion. Ein Werkzeug, das auf ihn wartet, ist kein Werkzeug, sondern eine
+weitere offene Schleife auf seiner Liste. Davon hat er genug.
+
+───────────────────────────────────────────────────────────────────────
+`YNBPodcast/Bookings` SIND STUDIOS, NICHT GÄSTE
+───────────────────────────────────────────────────────────────────────
+
+Im Chat angekündigt, an diesem Label die Conversion zu messen. **Falsch.**
+Alle 15 Mails sind Studio-Vorgänge: Media Pouch, JPR, Podcast Studio
+Austin, The Podcast Studio NM, Roundly, dazu Docusign und PayPal.
+
+**Die Conversion wird an den Antworten in den Outreach-Fäden selbst
+gemessen** — Absender weder `ynb@`, noch `info@`, noch `mailer-daemon`.
+Und: eine Antwort ist **keine** Folge. Die Suchantwort liefert nur die
+~5 ältesten Nachrichten je Faden; der Ausgang langer Verhandlungen steht
+dort nicht drin. Das gehört in jede Aussage dazu.
+
+**Ergebnis der Auswertung** (`podcast/outreach-auswertung.md`,
+Rohliste `podcast/outreach-unbeantwortet.md`): 111 Fäden, 104 zugestellt,
+**30 Antworten = 29 %**. Nachgefasst in **13** Fäden → 10 Antworten;
+nicht nachgefasst in **91** → 20 Antworten. **71 Fäden stehen bis heute
+auf genau einer Mail.** Die Betreffmuster-Quoten sind mit der Temperatur
+des Kontakts konfundiert und taugen nicht als Regel — so steht es auch im
+Dokument.
