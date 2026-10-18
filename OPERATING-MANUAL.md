@@ -7524,3 +7524,37 @@ weiterhin ein explizites `timeZone` mit.
 stehen beide auf UTC+2, solange Deutschland Sommerzeit hat (bis
 25.10.). Brandlift-Termine brauchen bis dahin **kein Umrechnen**.
 Ab dem 26.10. ist Berlin eine Stunde zurück.
+
+═══════════════════════════════════════════════════════════════════
+DER UNFALL HAT EINE ANSPRUCHSSEITE — UND SIE IST UNGEWÖHNLICH SAUBER
+───────────────────────────────────────────────────────────────────
+
+**Von ihm am 18.10. genannt, neu:** Er war **Beifahrer**, nicht Fahrer.
+**Der Fahrer ist zu schnell gefahren, es war sein Fehler, und es gibt
+einen Polizeibericht.**
+
+Damit liegt ein Personenschadensanspruch vor, der nach allem, was ich
+finde, so sauber ist, wie solche Fälle werden: klares Fremdverschulden,
+amtlich dokumentiert, Mitverschulden des Sozius regulär null.
+
+**Sein Irrtum, den ich ausgeräumt habe:** er vermutete, der Fahrer habe
+„nur eine Vehicle Insurance" und deshalb keine Haftpflicht. **In den USA
+ist das dieselbe Police.** Colorado schreibt **25/50/15** vor. War die
+Maschine legal versichert, existieren **25.000 $** — und die Haftpflicht
+deckt genau **Dritte**, also ihn.
+
+**ALLES STEHT IN `legal/unfall-colorado.md`** — Fristen, Unterlagenliste,
+offene Fragen.
+
+**DIE EINE SACHE, DIE ICH IHM WIEDER SAGEN WÜRDE, WENN ES SOWEIT IST:**
+**vor dem MRT und vor der OP-Entscheidung nichts unterschreiben.** Ein
+*settlement release* ist endgültig. Versicherer melden sich früh und
+freundlich, solange der Verletzte den Umfang noch nicht kennt.
+
+**Verdienstausfall ist bei ihm belegbar** und das vergisst man leicht:
+abgesagte Aufnahmen mit Strassman, Joe Moore und Ian Gardner, dazu der
+verschobene Brandlift-Start. Das steht alles in seinem eigenen Postfach.
+
+**Nicht drängeln.** Er hat nicht nach einem Plan gefragt, sondern nach
+einer Auskunft. Von sich aus wieder aufbringen **nur**, wenn das
+MRT-Ergebnis kommt oder eine Frist in Sicht gerät.
