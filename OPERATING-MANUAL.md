@@ -6976,3 +6976,103 @@ nicht nachgefasst in **91** → 20 Antworten. **71 Fäden stehen bis heute
 auf genau einer Mail.** Die Betreffmuster-Quoten sind mit der Temperatur
 des Kontakts konfundiert und taugen nicht als Regel — so steht es auch im
 Dokument.
+
+═══════════════════════════════════════════════════════════════════
+ER IST BIS 2027 NICHT MEHR IN DEN USA — UND SEIN HARTES NEIN HEISST
+„NUR IN PERSON"
+───────────────────────────────────────────────────────────────────
+
+Aus seiner eigenen Mail an Ian Gardner, **Di 13.10.2026 15:08 UTC**, fünf
+Tage alt, an einen Dritten geschrieben, also ohne Grund zu beschönigen:
+
+> *„I'm back home in South Africa, easing into my rehab, and realistically
+> I won't be back in the US until 2027."*
+
+Das stand bisher nirgends im Handbuch. Kapstadt 10.10.–04.11. war notiert,
+die Reha war notiert — **die Jahreszahl nicht.**
+
+**Warum das mehr ist als eine Ortsangabe:** seine härteste Podcast-Regel
+steht in jedem einzelnen Pitch — *„I committed to depth over quantity.
+In-person only."* Und praktisch alle 111 Outreach-Fäden zielen auf
+Gäste in den USA.
+
+Damit ist die Lage: **die 71 unberührten Fäden lassen sich gerade nicht
+mit dem Satz nachfassen, der bisher funktioniert hat.** „I'm in Austin
+through August, if you've got an hour" ist über ein Jahr lang nicht wahr.
+Ein Nachfassen in der alten Form wäre eine Einladung zu einem Termin, den
+er nicht halten kann — und genau das hat er bei Ian und Joe schon einmal
+gemusst.
+
+**Was daraus folgt und was nicht:**
+
+- **Folgt:** jedes Nachfassen in dieses Register braucht einen anderen
+  Aufhänger als die eigene Anwesenheit. Entweder ein Platzhalter für 2027
+  (so macht er es bei Ian: *„Let's aim to make it happen once I'm back
+  stateside next year"*), oder etwas ohne Termin.
+- **Folgt nicht:** dass „in-person only" gefallen ist. Die Regel ist seine,
+  ich habe keinen Beleg, dass er sie lockert. **Nicht von mir aus
+  aufweichen, nicht Remote vorschlagen, ohne dass er es sagt.**
+- **Offen und ihn zu fragen:** gelten südafrikanische Gäste bis dahin als
+  Ersatz, oder liegt der Podcast bis 2027 still?
+
+**Eintragung am 18.10.2026 aus dem Blindtest.** Der Fund kam nicht aus
+einem Sweep — er fiel beim Lesen seiner eigenen gesendeten Mails an. Das
+ist die zweite Lehre: **`SENT` ist eine Quelle über seine Lage, nicht nur
+über seinen Ton.** 973 gesendete Mails, die ich bis zum 18.10. nie
+systematisch gelesen habe.
+
+═══════════════════════════════════════════════════════════════════
+BLINDTEST: WIE ICH SEINE STIMME PRÜFE, OHNE IHN ZU BELASTEN
+───────────────────────────────────────────────────────────────────
+
+Verfahren, am 18.10.2026 zum ersten Mal gelaufen
+(`voice/blindtest/2026-10-18-runde-1.md` + `-auswertung.md`):
+
+1. Fäden suchen, in denen **er selbst** geantwortet hat.
+2. Pro Faden **nur** die eingegangene Mail lesen, plus seine *früheren*
+   Nachrichten im selben Faden. Die Zielmail bleibt ungelesen.
+   `get_message` auf einzelne IDs, **nie** `get_thread` — der Faden
+   liefert die Antwort mit.
+3. Entwurf schreiben, **strukturelle Vorhersagen davorsetzen** (Anrede,
+   Abbinder, Länge, welche Züge), damit der Abgleich benennbar wird.
+4. **Committen und pushen.** Der Commit-Zeitstempel ist der Beweis, dass
+   nicht vorher geschaut wurde.
+5. Erst danach die echten Antworten holen und Wort für Wort vergleichen.
+6. Ergebnis in die **Situations-Spezifikation**, nicht in ein Chronik-Log.
+
+**Maß, von ihm akzeptiert:** nicht Wortgleichheit, sondern *„Du schickst
+sie, ohne sie anzufassen."* Binär. Runde 1: **0 von 5.**
+
+**Der teuerste Einzelfehler war kein Stilfehler.** Ich habe einen
+Erstkontakt-Pitch für jemanden entworfen, den er drei Wochen vorher
+bereits gepitcht hatte — weil die eingegangene Mail die erste des Fadens
+war und ich daraus auf Erstkontakt geschlossen habe.
+
+**Regel, ab sofort, vor jedem Mailentwurf:** erst das Archiv nach der
+Person durchsuchen, Adresse **und** Klarname, `in:anywhere`. **Nie aus der
+Fadenlänge auf die Beziehungslänge schließen.** Ein Faden ist nicht die
+Beziehung.
+
+**Zweite Regel:** fehlende harte Angaben (Ort, Zeitfenster, Jahreszahl,
+Gesundheitsstand) **erfragen**, nicht mit Wärme überbrücken. Er setzt an
+genau diesen Stellen Tatsachen ein. Eine Gefühlsbehauptung anstelle einer
+Tatsache ist eine Abweichung, keine Rettung.
+
+**Eine gefallene Vermutung:** ich war überzeugt, durchgehend zu lang zu
+schreiben. Gemessen über fünf Mails, Eigentext ohne Zitat: 600 Wörter bei
+ihm, 789 bei mir — aber in **zwei** Fällen war ich zu kurz, und der
+Ausreißer 2,57 kommt allein aus dem Fehler oben. Die Vermutung ist
+widerlegt und bleibt als widerlegt stehen.
+
+**Der Zug, den er macht und ich dreimal verpasst habe:** wenn die Sache
+gelaufen ist, lässt er nicht nur eine Tür offen — **er gibt dem anderen
+noch etwas.** Pollan: der Pitch wird rückwirkend zum Dankesbrief. Der
+falsche Bill Perkins: ein echtes Kompliment an den Falschen. Joe Moore:
+die abgesagte Aufnahme wird eine Einladung zum Kaffee *„without the mic"*.
+Höflich ist nicht dasselbe wie großzügig.
+
+**Die Spezifikation liegt in `voice/en-podcast-outreach.md`** — nach
+Situation geordnet, mit Belegstellen und mit meinen Fehlgriffen daneben.
+Sie wird **überschrieben, nicht fortgeschrieben.**
+`voice/german-register.md` bleibt vorerst liegen; es ist mit 615 Zeilen
+Chronik genau die Form, die ich ersetze.
