@@ -7441,3 +7441,51 @@ Zustand seiner eigenen Liste.
 Offene Frage an ihn: eigene Liste `YT Shorts: Podcast`, oder in die
 bestehende mit Präfix? Und falls Präfix — seine Drive-Grammatik
 `Logan: <Sache>` ist konsistenter als `Short: Logan — <Sache>`.
+
+═══════════════════════════════════════════════════════════════════
+„8K" IST EINE AUFLÖSUNG. UND: VERÖFFENTLICHTE FOLGEN LÖSCHT ER AUS
+DEM DRIVE
+───────────────────────────────────────────────────────────────────
+
+**Mein Fehler vom 18.10.:** Ich habe in seinem Pitch-Text gelesen
+*„…Millionaire Robert Paddock (8K)"* und daraus **8.000 Aufrufe**
+gemacht. **Das ist die Auflösung.** Er hat widersprochen.
+
+**Woran es zu erkennen gewesen wäre:** direkt darüber steht in
+demselben Pitch *„actor and director Francis Chouler (**11k views**)"* —
+**dort schreibt er das Wort `views` dazu, bei Paddock nicht.** Der
+Unterschied stand im selben Absatz.
+
+**Regel: Klammerzahlen hinter Videotiteln sind nicht automatisch
+Reichweite.** Ohne das Wort dabei ist es eine Vermutung, und sie wird
+als Vermutung gekennzeichnet oder gar nicht genannt.
+
+**Verschärfend: ich kann Reichweite derzeit überhaupt nicht messen** —
+`youtube.com` ist gesperrt. Jede Zahl, die ich zum Kanal nenne, stammt
+aus seinen eigenen Mails. Das gehört jedes Mal dazugesagt.
+
+───────────────────────────────────────────────────────────────────
+
+**SEINE SPEICHERPOLITIK, von ihm am 18.10. genannt:**
+
+> „Immer wenn ich eine Folge veröffentliche, lösche ich die Datei, den
+> Podcast im Drive, um wieder Speicherplatz freizumachen."
+
+**Damit ist belegt, warum ich die Francis-Chouler-Datei nicht finde: es
+gibt sie nicht mehr.** Das Transkript ist übrig geblieben, das Video
+nicht.
+
+**Die Folge für die Shorts-Arbeit ist hart und muss stehen:**
+**Das Zeitfenster, in dem ich eine Folge schneiden kann, liegt zwischen
+der Lieferung durch das Studio und seiner Veröffentlichung.** Danach ist
+das Rohmaterial weg, und übrig bleibt nur noch, was bei YouTube liegt.
+
+**Was daraus folgt — und es passt ohnehin zur Sache:** Shorts bewerben
+eine Folge. Sie gehören **vor** die Veröffentlichung, nicht danach.
+Der Shorts-Schritt wird also Teil des Vor-Veröffentlichungs-Ablaufs:
+Studio liefert → ich transkribiere, wähle, schneide, rendere → er
+veröffentlicht Folge **und** Shorts → **dann** löscht er.
+
+**Nicht vorschlagen, die Datei länger zu behalten.** Speicherplatz ist
+sein Grund, der ist legitim, und ein Audio-Export allein reicht zum
+Rendern von Video nicht.

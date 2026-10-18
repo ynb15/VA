@@ -182,6 +182,15 @@ ich die zehn.
 ## Was danach kommt
 
 Vier weitere Folgen haben bereits ein Transkript:
-**Robert Paddock (8K)** · Whitney Wheelock · Nathan Maingard · Curtis Crane (PDF).
-Robert Paddock ist der naheliegende nächste — zweitstärkste Reichweite, Dein Mentor,
-und er steht in jedem Deiner Pitches.
+**Robert Paddock** · Whitney Wheelock · Nathan Maingard · Curtis Crane (PDF).
+
+> **Korrektur vom 18.10.2026.** Hier stand „Robert Paddock (8K)" mit der Behauptung,
+> das sei die zweitstärkste Reichweite. **Falsch — die „8K" in seinem Pitch-Text sind
+> die Auflösung, nicht die Aufrufe.** Die 11k bei Francis Chouler sind dagegen
+> tatsächlich Aufrufe; dort steht in seinem eigenen Text ausdrücklich „11k views".
+> **Ich kann derzeit überhaupt keine Reichweite prüfen**, weil `youtube.com` gesperrt
+> ist. Jede Zahl, die ich nenne, stammt aus seinen eigenen Pitch-Mails — nicht aus
+> einer Messung.
+
+Robert Paddock bleibt trotzdem der naheliegende nächste: sein Mentor, in jedem Pitch
+auf der Gästeliste, Transkript liegt vor.
