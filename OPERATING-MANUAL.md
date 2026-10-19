@@ -7630,3 +7630,16 @@ Sichtbarkeit, nicht Aufmerksamkeit.** Verweildauer steht öffentlich nicht da.
 sind nicht gemessene Werte, **keine Nullen** — ich hatte sie im ersten Durchgang
 als Nullen gerechnet und den Median dadurch auf 259 gedrückt statt 331.
 Beim nächsten Mal: `None` von `0` trennen, bevor gerechnet wird.
+
+── Nachtrag 19.10.: zwei kleine, harte Befunde aus dem Aufräumen um 15:20
+**Lokale Kreativ-Einladungen interessieren ihn nicht automatisch.** Ich hatte die
+CREATE-NIGHT-Einladung von Studio Portal (19.11., Kapstadt) aufs Board geschrieben
+mit „ob er Dich interessiert, weiß ich nicht". **Er hat sie ungelesen in den
+Papierkorb geworfen.** Nicht wieder aufgreifen, und so etwas künftig nicht mehr
+eigens nennen — Rundbrief bleibt Rundbrief, auch wenn er lokal ist.
+
+**Er trägt Kalenderblöcke nach, statt sie vorher zu setzen.** Am 19.10. zweimal
+belegt: Chiro um 14:07 auf 12:45–13:45 korrigiert (Termin lag schon hinter ihm),
+und „Podcast: Management" 14:00–15:30 um **14:50:56** angelegt — mitten im Block.
+**Folge für mich: ein Kalendersprung am Nachmittag ist oft eine Nachtragung, kein
+Plan.** Nicht als Umplanung lesen und ihn nicht darauf ansprechen.
