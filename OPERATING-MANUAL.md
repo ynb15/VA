@@ -7643,3 +7643,22 @@ belegt: Chiro um 14:07 auf 12:45–13:45 korrigiert (Termin lag schon hinter ihm
 und „Podcast: Management" 14:00–15:30 um **14:50:56** angelegt — mitten im Block.
 **Folge für mich: ein Kalendersprung am Nachmittag ist oft eine Nachtragung, kein
 Plan.** Nicht als Umplanung lesen und ihn nicht darauf ansprechen.
+
+── Nachtrag 19.10., 16:17: zwei Regeln aus einer abgesagten Stunde
+**Ein Satz über Postausgang muss die Messzeit mittragen.** Im Wochenabgleich um
+15:26 schrieb ich „seit dem 14.10. ist nichts hinausgegangen". Um 16:05 hat er
+an Luis geschrieben. Der Satz war nicht falsch, er war **unbefristet** — und
+damit nach vierzig Minuten falsch. Künftig: „gemessen um HH:MM" dazu, oder den
+Satz gar nicht schreiben.
+
+**Er lässt eine freigewordene Stunde nicht leer.** Luis sagt den 16-Uhr-Call um
+15:36 ab; um 15:58 steht in derselben Stunde „Podcast: Management". Dazu, drittes
+Beispiel am selben Tag, das Nachtragen: den tatsächlich gearbeiteten Block
+14:00–15:30 hat er **danach** angelegt. **Kalenderbewegungen am Nachmittag sind
+bei ihm Buchhaltung, nicht Planung.**
+
+**Und sein Reflex bei schlechten Nachrichten, zum zweiten Mal in einer Woche
+belegt:** er beklagt sie nicht, er gibt der Gegenseite recht. Bei Ian am 13.10.
+(„I didn't want to let this quietly fade"), bei Luis am 19.10. („Schade, ich
+hatte Bock. Aber finde den Ansatz richtig"). **Ein Entwurf von mir, der eine
+Absage bedauert ohne sie einzuordnen, klingt nicht wie er.**
