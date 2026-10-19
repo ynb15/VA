@@ -7662,3 +7662,54 @@ belegt:** er beklagt sie nicht, er gibt der Gegenseite recht. Bei Ian am 13.10.
 („I didn't want to let this quietly fade"), bei Luis am 19.10. („Schade, ich
 hatte Bock. Aber finde den Ansatz richtig"). **Ein Entwurf von mir, der eine
 Absage bedauert ohne sie einzuordnen, klingt nicht wie er.**
+
+═══════════════════════════════════════════════════════════════════════════════
+Ab 19.10.2026: Shorts aus dem Drive-Master — die Kette steht
+═══════════════════════════════════════════════════════════════════════════════
+
+Er hat am 19.10. die Sutcliffe-Folge als Probelauf gegeben: veröffentlicht,
+**und die Datei liegt noch im Drive**. Genau das Fenster. Drei Shorts geschnitten,
+die Kette läuft. Werkzeuge: `video/master_schnitt.py`, `video/bildausschnitt.py`,
+`video/shorts-render.py`. Dokumentation: `video/sutcliffe-shorts.md`.
+
+── DIE 18,6-GB-SPERRE IST WEG
+Studio-Master sind zweistellige Gigabyte groß. Der Container kann sie nicht
+halten, und `download_file_content` hat den Drive-Server schon bei 7 MB
+umgebracht. **Lösung: Bereichsanfragen.** Drive meldet `accept-ranges: bytes`
+und liefert mit `drive.usercontent.google.com/download` bei link-freigegebenen
+Dateien HTTP 206 auf jeden Byte-Bereich. PyAV nimmt ein dateiähnliches Objekt —
+also wird nur geholt, was der Demuxer liest: **200–260 MB pro Fenster statt
+18,6 GB**, bei 12,8 MB/s.
+**Vorsicht bei großen Dateien:** Drive schiebt eine Virenscan-Warnseite davor.
+Erst das `uuid`-Token aus deren Formular liefert die Bytes.
+**Und: `requests.Session` benutzen, nicht `urllib`.** Mit urllib brach der
+Durchsatz auf unter 1 MB/s ein, weil pro Block ein neuer TLS-Handschlag lief.
+
+── DIE ZEITMARKEN PASSEN NICHT AUFEINANDER
+Master 125:18, veröffentlicht 116:33. **Der Versatz ist nicht konstant** —
+er wächst von +68 s (bei veröffentlicht 08:52) auf +336 s (bei 86:32), weil im
+Fluss gekürzt wurde. Formel für Sutcliffe: `68 + 0,0575 × (t − 532)`.
+**Immer mit einer Tonprobe nachmessen**, nie der Formel allein trauen:
+20 Sekunden Ton aus dem Master holen, mit faster-whisper transkribieren, Text im
+veröffentlichten Transkript suchen. Kostet 48 MB und eine halbe Minute.
+
+── DER STUDIOSCHNITT WECHSELT DIE KAMERA MITTEN IM SHORT
+Im 34-Sekunden-Fenster von Short 2 dreimal. Ein fester 9:16-Ausschnitt trifft
+dann die Zimmerpflanze statt den Sprecher. `bildausschnitt.py` findet die
+Schnitte über die mittlere Bildänderung (Schwelle 18) — **das funktioniert
+zuverlässig** — und ortet den Kopf über **Bewegung**.
+**Hautfarbe wurde verworfen und ist es wert, festgehalten zu werden:** im warmen
+Studiolicht galten **26–48 % des Bildes als Haut**, Holzregal und Pflanzen
+eingeschlossen. Das Profil trennte Sprecher und Kulisse nicht.
+
+── WAS NOCH NICHT VON SELBST GEHT
+**Ob eine oder zwei Personen im Bild sind, erkennt das Werkzeug nicht.** Bei
+einem Zweier-Shot schneidet es auf den, der sich bewegt. Der gestapelte Modus
+ist gebaut (`--layout stapel`, beide übereinander, 1080×960 je Hälfte) und sieht
+gut aus — nur die automatische Entscheidung fehlt. **Bis dahin trage ich sie von
+Hand in den Plan ein.** Nicht so tun, als liefe es vollautomatisch.
+
+── ZWEI SACHEN, DIE DER CONTAINER NICHT KANN
+`ffmpeg` aus `imageio-ffmpeg` **stürzt bei HTTPS-Eingaben mit SIGSEGV ab**
+(Exit -11). Lokale Dateien: einwandfrei. Darum PyAV für alles Entfernte.
+`drawtext` fehlt im Build, `cv2` ist nicht installiert.

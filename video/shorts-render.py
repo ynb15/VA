@@ -32,7 +32,7 @@ def ass_time(t):
     return f"{int(h)}:{int(m):02d}:{sec:05.2f}"
 
 
-def build_ass(cues, path, highlight="&H0030D5FF&"):
+def build_ass(cues, path, highlight="&H0030D5FF&", marginv=320):
     """cues: [{'start':s,'end':s,'text':str}] -> ASS mit grossem Fliesstext unten."""
     head = f"""[Script Info]
 ScriptType: v4.00+
@@ -43,8 +43,8 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{FONT},86,&H00FFFFFF,&H00000000,&H00000000,-1,0,1,7,3,2,90,90,320,1
-Style: Hit,{FONT},86,{highlight},&H00000000,&H00000000,-1,0,1,7,3,2,90,90,320,1
+Style: Cap,{FONT},86,&H00FFFFFF,&H00000000,&H00000000,-1,0,1,7,3,2,90,90,{marginv},1
+Style: Hit,{FONT},86,{highlight},&H00000000,&H00000000,-1,0,1,7,3,2,90,90,{marginv},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -129,16 +129,60 @@ def main():
     ap.add_argument("--focus", type=float, default=0.5,
                     help="0..1 — wo im Breitbild der Ausschnitt sitzt (0.5 = Mitte)")
     ap.add_argument("--crf", type=int, default=20)
+    ap.add_argument("--layout", choices=["einzel", "stapel"], default="einzel",
+                    help="stapel = zwei Ausschnitte uebereinander (Zweier-Shot)")
+    ap.add_argument("--oben", default=None, help="x:y:b:h im Quellbild, obere Haelfte")
+    ap.add_argument("--unten", default=None, help="x:y:b:h im Quellbild, untere Haelfte")
+    ap.add_argument("--plan", default=None,
+                    help="JSON aus bildausschnitt.py; Zeiten relativ zu --src. "
+                         "Setzt je Einstellung einen eigenen Ausschnitt.")
+    ap.add_argument("--marginv", type=int, default=None,
+                    help="Abstand der Untertitel vom unteren Rand")
     a = ap.parse_args()
 
     t0 = tc(a.start)
     dur = (tc(a.end) - t0) if a.end else None
     sw, sh = probe_size(a.src)
 
-    # 9:16-Ausschnitt aus dem Breitbild, horizontal frei platzierbar
-    cw = min(sw, int(sh * 9 / 16))
-    cx = int((sw - cw) * min(max(a.focus, 0.0), 1.0))
-    vf = [f"crop={cw}:{sh}:{cx}:0", f"scale={W}:{H}:flags=lanczos"]
+    if a.plan:
+        daten = json.loads(Path(a.plan).read_text(encoding="utf-8"))
+        schnitte = daten["einstellungen"]
+        teile, marken = [], []
+        for i, sc in enumerate(schnitte):
+            von, bis = sc["start"], sc["ende"]
+            if sc.get("layout") == "stapel":
+                for seite, marke in (("oben", f"o{i}"), ("unten", f"u{i}")):
+                    x, y, b, h = (int(v) for v in sc[seite].split(":"))
+                    teile.append(f"[0:v]trim={von}:{bis},setpts=PTS-STARTPTS,"
+                                 f"crop={b}:{h}:{x}:{y},scale={W}:{H // 2}:"
+                                 f"flags=lanczos,setsar=1[{marke}]")
+                teile.append(f"[o{i}][u{i}]vstack=inputs=2[v{i}]")
+            else:
+                x, y, b, h = (int(v) for v in sc["kasten"].split(":"))
+                teile.append(f"[0:v]trim={von}:{bis},setpts=PTS-STARTPTS,"
+                             f"crop={b}:{h}:{x}:{y},scale={W}:{H}:"
+                             f"flags=lanczos,setsar=1[v{i}]")
+            teile.append(f"[0:a]atrim={von}:{bis},asetpts=PTS-STARTPTS[a{i}]")
+            marken.append(f"[v{i}][a{i}]")
+        teile.append("".join(marken) + f"concat=n={len(schnitte)}:v=1:a=1[v][aout]")
+        graph = teile
+        marginv = a.marginv if a.marginv is not None else 150
+        t0, dur = 0.0, None
+    elif a.layout == "stapel":
+        if not (a.oben and a.unten):
+            raise SystemExit("--layout stapel braucht --oben und --unten")
+        def teil(spec, marke):
+            x, y, b, h = (int(v) for v in spec.split(":"))
+            return (f"[0:v]crop={b}:{h}:{x}:{y},"
+                    f"scale={W}:{H // 2}:flags=lanczos,setsar=1[{marke}]")
+        graph = [teil(a.oben, "o"), teil(a.unten, "u"), "[o][u]vstack=inputs=2[v]"]
+        marginv = a.marginv if a.marginv is not None else 150
+    else:
+        cw = min(sw, int(sh * 9 / 16))
+        cx = int((sw - cw) * min(max(a.focus, 0.0), 1.0))
+        graph = [f"[0:v]crop={cw}:{sh}:{cx}:0,"
+                 f"scale={W}:{H}:flags=lanczos,setsar=1[v]"]
+        marginv = a.marginv if a.marginv is not None else 320
 
     with tempfile.TemporaryDirectory() as td:
         cues = None
@@ -153,15 +197,22 @@ def main():
         elif a.srt:
             cues = srt_to_cues(a.srt)
 
+        letzte = "[v]"
         if cues:
             ass = os.path.join(td, "cap.ass")
-            build_ass(cues, ass)
-            vf.append("subtitles=" + ass.replace(":", r"\:"))
+            build_ass(cues, ass, marginv=marginv)
+            graph.append("[v]subtitles=" + ass.replace(":", r"\:") + "[vout]")
+            letzte = "[vout]"
 
-        cmd = [FFMPEG, "-y", "-ss", str(t0), "-i", a.src]
-        if dur:
+        cmd = [FFMPEG, "-y"]
+        if not a.plan:
+            cmd += ["-ss", str(t0)]
+        cmd += ["-i", a.src]
+        if dur and not a.plan:
             cmd += ["-t", str(dur)]
-        cmd += ["-vf", ",".join(vf), "-r", "30",
+        tonspur = "[aout]" if a.plan else "0:a?"
+        cmd += ["-filter_complex", ";".join(graph), "-map", letzte, "-map", tonspur,
+                "-r", "30",
                 "-c:v", "libx264", "-preset", "medium", "-crf", str(a.crf),
                 "-pix_fmt", "yuv420p", "-profile:v", "high",
                 "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
