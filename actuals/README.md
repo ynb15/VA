@@ -19,6 +19,10 @@ Existing documents in that folder:
 - "Alfred — Actuals Log · Woche 28.09.–04.10.2026"
 - "Alfred — Actuals Log · Woche 5.–12. Oktober 2026" — written 12 Oct,
   `1Zr_k9hD5hSx2MUmZXMpcHDoQvIXTNKCNyvhKLcqzUNk`.
+- "Alfred — Actuals Log · Woche 13.–19.10.2026" — written 19 Oct,
+  `10Onr28epzhWPCCIu4ISKYFe5vZbonPeUUAxCsNma-M4`. First one written in Cape
+  Town time. Content read back after the write; `fileSize` reported 1 again,
+  the text was complete.
 
 One caveat learned on 28 Sep: `create_file` reports `fileSize: 1` for a Google
 Doc even when the text landed in full. Read the content back rather than

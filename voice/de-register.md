@@ -202,3 +202,61 @@ angehängt. Schreibt er nicht. Hier gilt sie nicht.
   Belege sind alle harmlos.
 - `Gg,` — wofür steht es? *(aus Runde 1 noch offen, inzwischen sprachübergreifend belegt)*
 - Imre: warum der Sprachwechsel mitten im Satz — Nähe, oder nur Tempo?
+
+---
+
+## Nachprüfung 19.10.2026 — die Regeln halten, eine kommt dazu
+
+**Material:** `in:sent newer_than:8d`. Alle fünf Threads **vollständig** gelesen
+(METADATA_ONLY zum Durchzählen, dann die Einzelnachrichten) — die Suchvorschau
+hätte die neuesten Nachrichten verschwiegen, zwei Threads haben 18 und 21.
+**Ergebnis: eine deutsche Mail von ihm in der Woche**, an Luis Kallaene
+(Brandlift) am **13.10. 17:26 Kapstadt**. Seit dem 14.10. ist nichts hinausgegangen.
+
+### Die Mail, vollständig
+
+> Howdy Luis,
+>
+> Noted, danke fürs Update. Holistic House klingt immer spannend. Ich hab btw
+> auch News: ich hatte letzten Monat einen Motorradunfall in Colorado… Heute
+> ist das erste Mal, dass ich wieder Mails checke, deshalb hatte ich auf die
+> letzte noch nicht wieder geantwortet. Ich bin allerdings auf dem Weg der
+> Besserung und pumped auf unseren Call am Montag. Termin gerade angenommen.
+>
+> Gg,
+> Yannick
+
+**59 Wörter. Ein Absatz. `Howdy` + `Gg,`.**
+
+### Was sich bestätigt hat
+
+| Regel | Belegt an dieser Mail |
+|---|---|
+| **Keine Entschuldigung, nie** | Vier Wochen Funkstille, ein Unfall, ein unbeantworteter Terminvorschlag — **kein „sorry", kein „entschuldige"**. Er *erklärt* („Heute ist das erste Mal, dass ich wieder Mails checke") und geht weiter. |
+| **Ein Absatz bei Transaktion** | Fünf Sachen in einem Absatz: Dank, Projektkommentar, Unfall, Besserung, Terminannahme. Keine Gliederung. |
+| **`Gg,` beim Abwickeln** | Hier wird ein Termin bestätigt — nichts erbeten. `Gg,`. |
+| **Keine Rechtfertigung** | Die Terminabsage wird nicht verteidigt, nur erwähnt. |
+| **Zuerst die Sache, zuletzt er selbst** | „danke fürs Update" vor „ich hab btw auch News". Der Unfall kommt **hinter** dem Projektkommentar. |
+
+### Was neu dazukommt
+
+**Anglizismen sind das Register, nicht ein Ausrutscher.** In 59 deutschen Wörtern:
+`Howdy` · `Noted` · `btw` · `News` · `pumped` · `Call`. Im selben Thread früher:
+`Bock` · `Vollgas` · `hardcore` · `asap` · `committe` · `Slots`.
+**Regel: nicht eindeutschen.** Ein Entwurf, der „Telefonat" statt „Call" schreibt
+oder „übrigens" statt „btw", klingt nicht wie er.
+
+**Die Auslassungspunkte tragen die schlechte Nachricht.** „einen Motorradunfall
+in Colorado…" — drei Punkte statt eines Satzes über die Schwere. Dasselbe in der
+englischen Ian-Mail am selben Tag, zweimal. **Wo etwas weh tut, setzt er `…`
+und schreibt nicht weiter.**
+
+**Eine Zeile Credo, kursiv, wenn es grundsätzlich wird.** Nicht in dieser Mail,
+aber im selben Thread am 28.08.: *„Wenn ich mich zu etwas committe, dann nur zu
+100%."* Allein stehend, kursiv, ohne Erläuterung danach. Das ist sein Mittel für
+den einen Satz, auf den es ankommt — **höchstens einer pro Mail.**
+
+### Die Anrede-Regel, präzisiert
+`Hey Männer,` an die zwei Brandlift-Gründer zusammen (28.08.) ·
+`Howdy <Vorname>,` an einen einzelnen · `Besten Dank, <Vorname>!` wenn die Mail
+nur eine Quittung ist (26.08., ohne Grußformel am Ende).

@@ -210,3 +210,86 @@ Pitch-Baukasten. Der gehört in den Kaltpitch und nirgendwo sonst.
 Sobald er einen meiner Entwürfe anfasst und abschickt, liegt seine Fassung in `SENT`.
 Ich ziehe die Differenz und schreibe sie hier rein — in den Abschnitt der Situation,
 nicht ans Ende. Diese Datei wächst nicht chronologisch. Sie wird überschrieben.
+
+---
+
+## Re-test 19.10.2026 — and a fourth sign-off I had not recorded
+
+**Material:** `in:sent newer_than:8d`, every thread read in full (two of them
+have 18 and 21 messages; the search preview shows only the five oldest and
+says nothing about it). **Four English mails, all on 13.10. within 40 minutes.**
+Nothing outbound since 14.10.
+
+### Three distinct English instruments, same afternoon
+
+**1. The re-engagement (Ian Gardner, 15:08 UTC).** 140 words, five short
+paragraphs, `Howdy Ian,` → `Dreaming Big,`. The shape:
+
+1. the owed update, with what happened — *"Then life threw a real curveball… I
+   was in a motorcycle accident in Colorado… and I'm only now getting back to
+   my inbox."*
+2. the hard constraint, stated plainly — *"realistically I won't be back in the
+   US until 2027. So I can't give you a near-term date, which I'm genuinely
+   bummed about."*
+3. **the refusal of silence** — *"But I didn't want to let this quietly fade –
+   I still very much want to sit down with you for the podcast!"*
+4. the forward offer plus thanks, never an apology — *"thanks for your patience
+   and understanding."*
+
+**No „sorry" anywhere.** „genuinely bummed" carries the regret; the thanks
+carries what an apology would.
+
+**2. The group thank-you (Walker, Andie, Marian, 14:53 UTC).** 300 words — his
+longest of the week, and the most structured. The shape:
+
+1. where he is, one sentence, then the pivot: *"so I finally have a moment to
+   say what I've been wanting to say since we wrapped:"*
+2. **"Thank you. Truly."** — two sentences, five words. He breaks the sentence
+   to land it.
+3. **one named credit per person, each concrete and different**: Marian *"you
+   still gave me the 2h of your heart"* · Walker *"you were relentless and
+   consistent over months"* · Andie *"shoutout for spending the better part of
+   an hour building the set"*. Then **"What a team."**
+4. only then the business: the December release as *"the grand finale of this
+   year's run"*
+5. **the open question answered at the end, not the top** — Marian had asked
+   about the AfrikaBurn essay; the link comes here.
+6. reciprocity: *"the door swings both ways too… you've got a home with us here
+   in Cape Town"*
+
+**3. The transactional (Mathew Glass, Virgin Active).** Two lines.
+*"Howdy Mathew, Here's the manually signed document. Cheers, Yannick."*
+`Cheers,` — and that is the whole mail.
+
+### THE NEW RULE: he invents a sign-off for the recipient's world
+
+The Burning Man mail ends **"With burning fire and gratitude,"**.
+
+That is not one of the three I had recorded. So the set is not three but four:
+
+| Sign-off | When |
+|---|---|
+| `Dreaming Big,` | he wants something, or is making a commitment |
+| `Gg,` | transacting, German |
+| `Cheers,` | transacting, English, two-liner |
+| **bespoke, built from the recipient's own vocabulary** | **a milestone with people whose world has its own language** |
+
+**For me that means:** on a mail that marks something, don't reach for the
+standard three. Ask what the recipient's world calls warmth, and build the
+sign-off out of that. Used sparingly — once in this week's five mails.
+
+### Two more things worth keeping
+
+**He answers requests last.** Marian asked two things: the essay and a
+transcript. He answered the essay, at the end of the mail — and **left the
+transcript question unanswered.** (Still open. As of today I could produce one,
+but the episode is unpublished, so only from the Drive files.)
+
+**The parenthetical after a guest name is their credential, not their reach.**
+In the original pitch: *"actor and director Francis Chouler (11k views)"* —
+there it *is* reach, explicitly labelled. Everywhere else it is the
+credential: *"former IronMan athlete and $100M EdTech-founder Rob Paddock"*,
+*"quantum physicist, UT professor and OpenAI insider Scott Aaronson
+(upcoming)"*. **When the parenthesis holds a bare number with no word after it,
+it is not reach** — that was the „(8K)" lesson of 17.10., and the pitch proves
+the rule: when he means views, he writes „views".
