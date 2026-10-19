@@ -1,2 +1,3 @@
 video/shorts/*.mp4
 video/transkripte/*.vtt
+__pycache__/

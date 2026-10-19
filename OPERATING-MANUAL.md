@@ -7685,31 +7685,83 @@ Erst das `uuid`-Token aus deren Formular liefert die Bytes.
 **Und: `requests.Session` benutzen, nicht `urllib`.** Mit urllib brach der
 Durchsatz auf unter 1 MB/s ein, weil pro Block ein neuer TLS-Handschlag lief.
 
-── DIE ZEITMARKEN PASSEN NICHT AUFEINANDER
-Master 125:18, veröffentlicht 116:33. **Der Versatz ist nicht konstant** —
-er wächst von +68 s (bei veröffentlicht 08:52) auf +336 s (bei 86:32), weil im
-Fluss gekürzt wurde. Formel für Sutcliffe: `68 + 0,0575 × (t − 532)`.
-**Immer mit einer Tonprobe nachmessen**, nie der Formel allein trauen:
-20 Sekunden Ton aus dem Master holen, mit faster-whisper transkribieren, Text im
-veröffentlichten Transkript suchen. Kostet 48 MB und eine halbe Minute.
+── DIE ZEITMARKEN PASSEN NICHT AUFEINANDER — UND WARUM
+Master 125:18, veröffentlicht 116:33. **Er beschleunigt den Podcast beim Export
+auf 1,1**, und zwar nach eigener Aussage bei fast jedem. Lokal nachgemessen und
+bestätigt: **1,1055** (veröffentlicht 804–827 s) und **1,0949** (4.532–4.574 s),
+Streuung unter einer Sekunde. Verfahren: 60 s Ton aus dem Master, wortgenaues
+Transkript, Ausrichtung gegen das veröffentlichte Transkript, Gerade durch die
+sicher gleichen Wortpaare.
+**Über die ganze Folge kommt man damit nicht hin:** global sind es nur 1,056.
+Das geht mit 1,1 nur auf, wenn in der Veröffentlichung rund drei Minuten
+Material stecken, die im Master nicht vorkommen — die Folge beginnt zum
+Beispiel mit einem Kaltstart aus der Mitte des Gesprächs.
+**Regel: 1,1 gilt lokal, der Versatz wird in der Nähe der Stelle gemessen.
+Eine Formel über die ganze Folge gibt es nicht** — die, die hier bis zum 19.10.
+stand (`68 + 0,0575 × (t − 532)`), war aus zwei Ankern hochgerechnet und ist
+falsch.
+**Und für den Schnitt: `--tempo 1.1`.** Ein Short aus dem Master läuft sonst
+langsamer als alles andere auf seinem Kanal.
 
 ── DER STUDIOSCHNITT WECHSELT DIE KAMERA MITTEN IM SHORT
-Im 34-Sekunden-Fenster von Short 2 dreimal. Ein fester 9:16-Ausschnitt trifft
-dann die Zimmerpflanze statt den Sprecher. `bildausschnitt.py` findet die
-Schnitte über die mittlere Bildänderung (Schwelle 18) — **das funktioniert
-zuverlässig** — und ortet den Kopf über **Bewegung**.
-**Hautfarbe wurde verworfen und ist es wert, festgehalten zu werden:** im warmen
-Studiolicht galten **26–48 % des Bildes als Haut**, Holzregal und Pflanzen
-eingeschlossen. Das Profil trennte Sprecher und Kulisse nicht.
+Im 34-Sekunden-Fenster von Short 2 dreimal. `bildausschnitt.py` findet die
+Schnitte, ortet die Köpfe und entscheidet Einzel oder Stapel — alles über
+**Bewegung**, nie über Hautfarbe.
+**Schnitt erkennen: Fläche, nicht Helligkeit.** Die erste Fassung nahm die
+mittlere Bildänderung (Schwelle 18) und galt hier als „zuverlässig" — sie war
+es nicht. Sutcliffe redet mit beiden Händen; eine ausholende Geste hebt den
+Mittelwert auf 20–31 und erzeugte vier Schnitte, wo keiner war. Entscheidend
+ist der **Anteil des Bildes**, der sich ändert: echter Kameraschnitt 0,51–0,61,
+größte Handbewegung 0,19–0,35.
+**Totale erkennen: Bewegungsmasse in der Bildmitte.** Die beiden sitzen am
+Rand, der Tisch steht dazwischen. Totale 0,22–0,28, Nahaufnahme 0,55–0,73.
+Unter 0,45 wird gestapelt.
+**Hautfarbe wurde zweimal verworfen und ist es wert, festgehalten zu werden:**
+im warmen Studiolicht galten **26–48 % des Bildes als Haut**, Holzregal und
+Pflanzen eingeschlossen. Und beim zweiten Versuch, über das Hautband die
+Mundhöhe zu finden, lief das Band ins graue T-Shirt und in die Tischplatte und
+zog die Untertitelzeile auf die Brust.
 
-── WAS NOCH NICHT VON SELBST GEHT
-**Ob eine oder zwei Personen im Bild sind, erkennt das Werkzeug nicht.** Bei
-einem Zweier-Shot schneidet es auf den, der sich bewegt. Der gestapelte Modus
-ist gebaut (`--layout stapel`, beide übereinander, 1080×960 je Hälfte) und sieht
-gut aus — nur die automatische Entscheidung fehlt. **Bis dahin trage ich sie von
-Hand in den Plan ein.** Nicht so tun, als liefe es vollautomatisch.
+── WAS JETZT VON SELBST GEHT
+Einzel oder Stapel entscheidet das Werkzeug seit dem 19.10. allein, und die
+Lippenhöhe kommt aus der Kopfoberkante. **Offen bleibt: im Stapel weiß es
+nicht, wer gerade spricht** — die Zeile sitzt an einer festen Höhe unter dem
+oberen Kopf. Nicht so tun, als wäre das die Lippe.
 
 ── ZWEI SACHEN, DIE DER CONTAINER NICHT KANN
 `ffmpeg` aus `imageio-ffmpeg` **stürzt bei HTTPS-Eingaben mit SIGSEGV ab**
 (Exit -11). Lokale Dateien: einwandfrei. Darum PyAV für alles Entfernte.
 `drawtext` fehlt im Build, `cv2` ist nicht installiert.
+
+═══════════════════════════════════════════════════════════════════════════════
+19.10.2026: Seine drei Korrekturen an den Shorts — und was sie wert waren
+═══════════════════════════════════════════════════════════════════════════════
+
+Er hat die drei Shorts angesehen und drei Dinge beanstandet. **Alle drei waren
+richtig, und zwei davon hatte ich falsch erklärt.** Das ist das Muster, das ich
+mir merken muss: er beschreibt das Symptom genau, und wenn meine Erklärung
+dazu nicht passt, ist meine Erklärung falsch, nicht seine Beobachtung.
+
+**1. „Ich erhöhe die Geschwindigkeit auf 1,1. Deshalb der Versatz."**
+Ich hatte geschrieben, im Fluss sei gekürzt worden. Nachgemessen: lokal 1,1055
+und 1,0949. **Er hatte recht, meine Formel war falsch.** Siehe oben.
+
+**2. „Die Untertitel müssen an der Lippe sein, nah dran. Das ist ein
+neurologischer Trick."** Vorher saßen sie am unteren Rand (150 px). Jetzt an
+der gemessenen Mundhöhe, und sie springen mit, wenn die Kamera schneidet.
+**Das ist keine Geschmacksfrage** — der Blick soll nicht zwischen Mund und
+Bildunterkante pendeln müssen. Gilt ab jetzt für jeden Short.
+
+**3. „Manchmal, wenn die Kamera springt, wird einfach nur der Tisch gezeigt."**
+Ich habe zuerst nach leeren Szenen im Material gesucht — es gab keine. Die
+Ursache war mein eigener Ausschnitt: in der Totale sitzen die beiden am Rand,
+und ein 9:16-Fenster trifft die Mitte, also den Tisch. **In Short 1 waren das
+6,9 Sekunden Tischplatte.** Jetzt wird die Totale erkannt und gestapelt.
+**Merke: wenn er sagt „da ist nichts im Bild", kann die Ursache trotzdem bei
+mir liegen und nicht im Material.**
+
+── WIE ICH ES GEPRÜFT HABE, UND WARUM DAS DAZUGEHÖRT
+Jede der drei Änderungen wurde an **Einzelbildern mit eingezeichneter Linie**
+geprüft, nicht an Zahlen. Die erste Lippenschätzung sah in den Zahlen plausibel
+aus und lag auf der Stirn — das sieht man erst im Bild. **Kontaktabzug mit
+`drawbox` ansehen, bevor eine Bildänderung als fertig gilt.**

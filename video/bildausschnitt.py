@@ -1,21 +1,39 @@
 #!/usr/bin/env python3
-"""Findet Kamerawechsel und die Position der Gesichter — ohne OpenCV.
+"""Findet Kamerawechsel, die Lippenhoehe und tote Einstellungen — ohne OpenCV.
 
 Die Studio-Schnitte wechseln mitten im Short zwischen Nahaufnahme und
 Zweier-Shot. Ein fester 9:16-Ausschnitt trifft dann mal den Sprecher, mal eine
 Zimmerpflanze. Dieses Modul zerlegt den Clip in Einstellungen und schlaegt je
-Einstellung einen Ausschnitt vor:
+Einstellung einen Ausschnitt vor, dazu zwei Angaben, die der Renderer braucht:
+
+* `lippe` — die Hoehe des Mundes im AUSGABEBILD (0..1920). Untertitel gehoeren
+  an die Lippe oder knapp darunter; das ist kein Geschmack, sondern der Grund,
+  warum der Blick nicht zwischen Mund und Bildunterkante pendeln muss.
+* `tot` — Einstellungen ohne Sprecher. Nach einem Kameraschnitt steht im
+  Studiomaterial regelmaessig eine knappe Sekunde nur der Tisch im Bild. Der
+  Ton laeuft weiter, das Bild ist leer. Solche Abschnitte werden markiert,
+  damit der Renderer sie ueberbrueckt statt sie zu zeigen.
 
 Das Signal ist BEWEGUNG, nicht Hautfarbe. Hauttoene wurden am 19.10.2026
 verworfen: im warmen Studiolicht galten 26–48 % des Bildes als Haut, Holzregal
 und Pflanzen eingeschlossen — das Profil trennte Sprecher und Kulisse nicht.
-Bewegung trennt sie sauber: der Redner bewegt Kopf und Haende, die Kulisse steht.
+Bewegung trennt sie sauber: der Redner bewegt Kopf und Haende, die Kulisse
+steht. Und sie trennt auch leer von belegt: ein Tisch bewegt sich gar nicht.
 
-Je Einstellung wird das Spaltenprofil der zeitlichen Abweichung gebildet und der
-Schwerpunkt als Kopfposition genommen. Ob eine oder zwei Personen im Bild sind,
-entscheidet das Werkzeug NICHT von sich aus — dafuer gibt es `--plan`, in dem
-die Einstellung ueberschrieben werden kann. Automatische Einzel/Stapel-Erkennung
-steht noch aus; lieber ein Feld zum Nachtragen als eine Zahl, die raet.
+Die Lippenhoehe wird NICHT als bewegungsstaerkste Zeile genommen. Das war der
+erste Versuch und er lag verlaesslich falsch: die staerkste Bewegung im
+Gesicht sitzt an Augen und Brille, nicht am Mund — die Linie landete auf der
+Stirn. Auch die Hautfarbe taugt nicht: das Hautband lief in das graue T-Shirt
+und in die Tischplatte hinein und zog den Mund auf die Brust. Was haelt: die
+OBERKANTE des bewegten Bereichs ist der Kopf, und der Mund liegt ein festes
+Stueck darunter (`KOPF_MUND`, Anteil der Ausschnitthoehe). An vier
+Nahaufnahmen geprueft: Streuung der Kopfoberkante 0,156–0,189.
+
+Ein-/Zweier-Shot entscheidet das Werkzeug jetzt selbst, ueber die
+Bewegungsmasse in der Bildmitte. Im Studio sitzen die beiden am Rand, der
+Tisch steht dazwischen: in der Totale liegen rund 28 % der Bewegung in der
+Mitte, in der Nahaufnahme 55–73 %. Unter `MITTE_SCHWELLE` wird gestapelt —
+ein 9:16-Ausschnitt aus einer Totale zeigt sonst den Tisch.
 
     python3 video/bildausschnitt.py clip.mp4 --json plan.json
 """
@@ -26,115 +44,135 @@ import av
 import numpy as np
 
 ZIEL_V = 9 / 16
+AUS_B, AUS_H = 1080, 1920
+MITTE_SCHWELLE = 0.45       # darunter: Totale mit zwei Personen -> stapeln
+KOPF_MUND = 0.44            # Abstand Kopfoberkante -> Mund, Anteil der Hoehe
+LIPPE_BAND = (0.56, 0.66)   # enges Band: an vier geprueften Nahaufnahmen
+                            # lag der Mund bei 0,595–0,629. Die Messung darf
+                            # darin wandern, aber nicht daraus heraus — eine
+                            # zu tief gelesene Kopfoberkante schob die Zeile
+                            # sonst an den Hals (Short 2: 0,72).
+STAPEL_H = 0.70             # Hoehe eines Stapelausschnitts, Anteil der Quelle
+STAPEL_LIPPE = 0.70         # feste Zeilenhoehe im Stapel, Anteil der Haelfte
+KOPF_PROBEN = 25            # Proben (a 0,2 s) fuer die Messung der Kopfoberkante
 
 
-def _graustufen_folge(pfad, breite=160):
-    """Je Sekunde ein kleines Graubild plus ein Farbbild fuer die Hautsuche."""
+def _graustufen_folge(pfad, breite=160, abstand=0.2):
+    """Alle `abstand` Sekunden ein kleines Graubild."""
     c = av.open(pfad)
     v = next(s for s in c.streams if s.type == "video")
-    klein, farbe, zeiten = [], [], []
+    klein, zeiten = [], []
     letzte = -1.0
+    w = h = 0
     for frame in c.decode(v):
         t = float(frame.pts * v.time_base)
-        if t - letzte < 0.5:
+        if t - letzte < abstand:
             continue
         letzte = t
         img = frame.to_ndarray(format="rgb24")
         h, w, _ = img.shape
         schritt = max(1, w // breite)
-        mini = img[::schritt, ::schritt]
-        klein.append(mini.mean(axis=2))
-        farbe.append(mini)
+        klein.append(img[::schritt, ::schritt].mean(axis=2))
         zeiten.append(t)
     c.close()
-    return zeiten, klein, farbe, (w, h)
+    return zeiten, klein, (w, h)
 
 
-def schnitte_finden(zeiten, klein, schwelle=18.0):
-    """Grenzen zwischen Einstellungen ueber die mittlere Bildaenderung."""
+def schnitte_finden(zeiten, klein, anteil=0.45, mittel=25.0):
+    """Grenzen zwischen Einstellungen.
+
+    Nicht ueber die mittlere Bildaenderung allein — daran ist die erste
+    Fassung gescheitert. Sutcliffe redet mit beiden Haenden; eine ausholende
+    Geste hebt den Mittelwert auf 20–31 und erzeugte vier Schnitte, wo keiner
+    war. Entscheidend ist der ANTEIL des Bildes, der sich aendert: beim
+    echten Kameraschnitt wechselt auch der Hintergrund, gemessen 0,51–0,61;
+    bei der groessten Handbewegung nur 0,19–0,35. Dazwischen liegt Luft.
+    """
     grenzen = [0]
     for i in range(1, len(klein)):
         a, b = klein[i - 1], klein[i]
         n = min(a.shape[0], b.shape[0]), min(a.shape[1], b.shape[1])
-        d = np.abs(a[:n[0], :n[1]] - b[:n[0], :n[1]]).mean()
-        if d > schwelle:
+        d = np.abs(a[:n[0], :n[1]] - b[:n[0], :n[1]])
+        if float((d > 25).mean()) > anteil and d.mean() > mittel:
             grenzen.append(i)
     grenzen.append(len(klein))
     return grenzen
 
 
-def bewegungsprofil(bilder):
-    """Spaltenweise mittlere Aenderung ueber die Bilder einer Einstellung."""
+def bewegungskarte(bilder):
+    """Mittlere zeitliche Aenderung je Bildpunkt innerhalb einer Einstellung."""
     if len(bilder) < 2:
-        return np.zeros(bilder[0].shape[1]) if bilder else np.zeros(1)
+        return np.zeros_like(bilder[0]) if bilder else np.zeros((1, 1))
     h = min(b.shape[0] for b in bilder)
     w = min(b.shape[1] for b in bilder)
     stapel = np.stack([b[:h, :w] for b in bilder])
-    return np.abs(np.diff(stapel, axis=0)).mean(axis=(0, 1))
+    return np.abs(np.diff(stapel, axis=0)).mean(axis=0)
+
+
+def _glatt(profil, teiler=12):
+    k = max(3, len(profil) // teiler)
+    return np.convolve(profil, np.ones(k) / k, mode="same")
 
 
 def schwerpunkt(profil):
     """Spalte mit der groessten Bewegungsmasse, geglaettet."""
     if profil.max() <= 0:
         return len(profil) / 2
-    k = max(3, len(profil) // 12)
-    kern = np.ones(k) / k
-    glatt = np.convolve(profil, kern, mode="same")
-    return float(np.argmax(glatt))
+    return float(np.argmax(_glatt(profil)))
 
 
-def hautspalten(rgb):
-    """Spaltenprofil der Hautpixel."""
-    r, g, b = (rgb[..., i].astype(np.int16) for i in range(3))
-    y = (0.299 * r + 0.587 * g + 0.114 * b)
-    cb = 128 - 0.168736 * r - 0.331264 * g + 0.5 * b
-    cr = 128 + 0.5 * r - 0.418688 * g - 0.081312 * b
-    maske = (cb > 77) & (cb < 127) & (cr > 133) & (cr < 173) & (y > 40)
-    return maske.sum(axis=0).astype(float), maske
+def kopfoberkante(karte, r0, r1, c0, c1, anteil=0.35):
+    """Oberste Zeile mit nennenswerter Bewegung, als Anteil des Ausschnitts."""
+    aus = karte[max(0, r0):max(r0 + 1, r1), max(0, c0):max(c0 + 1, c1)]
+    if aus.size == 0:
+        return None
+    z = _glatt(aus.mean(axis=1), teiler=20)
+    if z.max() <= 0:
+        return None
+    ueber = np.where(z > anteil * z.max())[0]
+    return float(ueber[0]) / len(z) if len(ueber) else None
 
 
-def personen_finden(profil, mindestanteil=0.12):
-    """Gipfel im Spaltenprofil zu Personen zusammenfassen."""
-    if profil.max() <= 0:
-        return []
-    p = profil / profil.max()
-    aktiv = p > mindestanteil
-    gruppen, start = [], None
-    for i, an in enumerate(aktiv):
-        if an and start is None:
-            start = i
-        elif not an and start is not None:
-            gruppen.append((start, i))
-            start = None
-    if start is not None:
-        gruppen.append((start, len(aktiv)))
-    # winzige Gruppen verwerfen, nach Masse sortieren
-    gruppen = [g for g in gruppen if (g[1] - g[0]) >= max(3, len(p) * 0.04)]
-    gruppen.sort(key=lambda g: profil[g[0]:g[1]].sum(), reverse=True)
-    return gruppen[:2]
+def lippe_aus_kopf(karte, kasten, sx, sy):
+    """Lippenhoehe im Ausgabeausschnitt (0..1), aus der Kopfoberkante."""
+    x, y, b, h = kasten
+    oben = kopfoberkante(karte, int(y / sy), int((y + h) / sy),
+                         int(x / sx), int((x + b) / sx))
+    roh = (oben + KOPF_MUND) if oben is not None else 0.62
+    return min(max(roh, LIPPE_BAND[0]), LIPPE_BAND[1])
 
 
-def plan_bauen(pfad, mindestdauer=1.2):
-    zeiten, klein, farbe, (qb, qh) = _graustufen_folge(pfad)
-    grenzen = schnitte_finden(zeiten, klein)
-    mb = farbe[0].shape[1]           # Breite der Miniatur
-    faktor = qb / mb
-    plan = []
-    for i in range(len(grenzen) - 1):
-        a, b = grenzen[i], grenzen[i + 1]
-        if b <= a:
-            continue
-        profil = bewegungsprofil(klein[a:b])
-        start_t = zeiten[a]
-        ende_t = zeiten[b] if b < len(zeiten) else zeiten[-1] + 1.0
-        if ende_t - start_t < mindestdauer and plan:
-            plan[-1]["ende"] = ende_t
-            continue
-        x = schwerpunkt(profil) * faktor
-        plan.append({"start": round(start_t, 2), "ende": round(ende_t, 2),
-                     "layout": "einzel", "kasten": _kasten(x, qb, qh, ZIEL_V),
-                     "bewegung_x": round(x / qb, 3)})
-    return plan, (qb, qh)
+def mittenmasse(spalten):
+    """Anteil der Bewegung, der in der Bildmitte liegt."""
+    g = _glatt(spalten)
+    if g.sum() <= 0:
+        return 1.0
+    g = g / g.sum()
+    n = len(g)
+    return float(g[int(n * 0.35):int(n * 0.65)].sum())
+
+
+def gipfel(spalten, von, bis):
+    """Staerkste geglaettete Bewegungsspalte im Bereich [von, bis)."""
+    g = _glatt(spalten)
+    bereich = g[von:bis]
+    return (von + int(np.argmax(bereich))) if len(bereich) else (von + bis) // 2
+
+
+def stapelseite(karte, spalten, von, bis, qb, qh, sx, sy):
+    """Ausschnitt fuer eine Haelfte des Stapels (9:8, damit nichts verzerrt).
+
+    Waagerecht auf den Bewegungsgipfel der Seite, senkrecht an der gemessenen
+    Kopfoberkante ausgerichtet — sonst steht ueber dem Kopf eine halbe
+    Bildhoehe Wand.
+    """
+    bh = int(round(qh * STAPEL_H))
+    bb = min(int(round(bh * (AUS_B / (AUS_H / 2)))), qb)
+    x = max(0, min(int(round(gipfel(spalten, von, bis) * sx - bb / 2)), qb - bb))
+    oben = kopfoberkante(karte, 0, karte.shape[0], int(x / sx), int((x + bb) / sx))
+    kopf = (oben if oben is not None else 0.25) * qh
+    y = int(max(0, min(kopf - 0.12 * qh, qh - bh)))
+    return x, y, bb, bh
 
 
 def _kasten(mitte_x, qb, qh, seitenverhaeltnis):
@@ -147,19 +185,109 @@ def _kasten(mitte_x, qb, qh, seitenverhaeltnis):
     x = int(round(mitte_x - bb / 2))
     x = max(0, min(x, qb - bb))
     y = max(0, (qh - bh) // 3)      # Koepfe sitzen im oberen Drittel
-    return f"{x}:{y}:{bb}:{bh}"
+    return x, y, bb, bh
+
+
+def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=25,
+               abstand=0.2):
+    zeiten, klein, (qb, qh) = _graustufen_folge(pfad, abstand=abstand)
+    if len(klein) < 2:
+        raise SystemExit("Zu wenige Bilder gelesen.")
+    grenzen = schnitte_finden(zeiten, klein)
+    sy = qh / klein[0].shape[0]
+    sx = qb / klein[0].shape[1]
+
+    roh = []
+    for i in range(len(grenzen) - 1):
+        a, b = grenzen[i], grenzen[i + 1]
+        if b <= a:
+            continue
+        karte = bewegungskarte(klein[a:b])
+        # Fuer die Kopfoberkante nur ein kurzes Fenster aus der Mitte der
+        # Einstellung: ueber 20 Sekunden gemittelt verschwindet die schwache
+        # Bewegung am Haaransatz unter der Schwelle, die Oberkante rutscht
+        # nach unten und die Zeile landet am Hals. Gemessen an Short 2:
+        # 0,28 statt 0,13. Das Mass muss so lang sein wie das, an dem
+        # KOPF_MUND geeicht wurde — rund fuenf Sekunden.
+        k = min(len(klein[a:b]), KOPF_PROBEN)
+        m = a + max(0, (b - a - k) // 2)
+        karte_kurz = bewegungskarte(klein[m:m + k])
+        roh.append({"kurz": karte_kurz, "start": zeiten[a],
+                    "ende": zeiten[b] if b < len(zeiten) else zeiten[-1] + abstand,
+                    "karte": karte, "spalten": karte.mean(axis=0),
+                    "masse": float(karte.mean()), "proben": b - a})
+
+    # Bezug fuer "tot": der Mittelwert der langen Einstellungen. Kurze
+    # Abschnitte haben zu wenige Differenzen, um den Bezug zu tragen.
+    lang = [s["masse"] for s in roh if s["ende"] - s["start"] >= 1.5]
+    bezug = float(np.median(lang)) if lang else float(np.median([s["masse"] for s in roh]))
+
+    plan = []
+    for s in roh:
+        dauer = s["ende"] - s["start"]
+        # Unter drei Proben gibt es zu wenige Differenzen, um leer von belegt
+        # zu trennen — dann lieber zeigen als faelschlich ueberbruecken.
+        tot = (s["proben"] >= 3 and bezug > 0
+               and s["masse"] < totanteil * bezug)
+        mitte = mittenmasse(s["spalten"])
+        n = len(s["spalten"])
+        if tot or mitte >= MITTE_SCHWELLE:
+            x = gipfel(s["spalten"], 0, n) * sx
+            kasten = _kasten(x, qb, qh, ZIEL_V)
+            eintrag = {"layout": "einzel", "kasten": "%d:%d:%d:%d" % kasten,
+                       "lippe": int(round(lippe_aus_kopf(s["kurz"], kasten, sx, sy)
+                                          * AUS_H)) + lippe_versatz}
+        else:
+            # Totale: beide sitzen am Rand, der Tisch steht in der Mitte.
+            links = stapelseite(s["kurz"], s["spalten"], 0, int(n * 0.45),
+                                qb, qh, sx, sy)
+            rechts = stapelseite(s["kurz"], s["spalten"], int(n * 0.55), n,
+                                 qb, qh, sx, sy)
+            x = gipfel(s["spalten"], 0, n) * sx
+            # Im Stapel wird die Lippe NICHT gemessen. Welcher der beiden
+            # gerade spricht, weiss das Werkzeug nicht, und eine gemessene
+            # Hoehe landete im Versuch auf Yannicks Brille. Weil der
+            # Ausschnitt die Kopfoberkante auf 12 % der Kastenhoehe setzt und
+            # ein Kopf in der Totale hoechstens 45 % davon einnimmt, liegt das
+            # Kinn immer ueber STAPEL_LIPPE — die Zeile deckt nie ein Gesicht.
+            eintrag = {"layout": "stapel", "oben": "%d:%d:%d:%d" % links,
+                       "unten": "%d:%d:%d:%d" % rechts,
+                       "lippe": int(round(STAPEL_LIPPE * AUS_H / 2)) + lippe_versatz}
+        if plan and not tot and not plan[-1]["tot"] and dauer < mindestdauer \
+                and abs(x / qb - plan[-1]["bewegung_x"]) < 0.08:
+            plan[-1]["ende"] = round(s["ende"], 2)   # gleiche Kadrierung: anhaengen
+            continue
+        eintrag.update(start=round(s["start"], 2), ende=round(s["ende"], 2),
+                       tot=bool(tot), bewegung_x=round(x / qb, 3),
+                       mitte=round(mitte, 2), masse=round(s["masse"], 2))
+        plan.append(eintrag)
+    return plan, (qb, qh), bezug
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("clip")
     ap.add_argument("--json", default=None)
+    ap.add_argument("--abstand", type=float, default=0.2)
+    ap.add_argument("--totanteil", type=float, default=0.28,
+                    help="Anteil der mittleren Bewegung, unter dem eine "
+                         "Einstellung als leer gilt")
+    ap.add_argument("--lippe-versatz", type=int, default=25,
+                    help="Pixel, um die die Untertitel zusaetzlich nach unten "
+                         "ruecken")
     a = ap.parse_args()
-    plan, groesse = plan_bauen(a.clip)
+    plan, groesse, bezug = plan_bauen(a.clip, totanteil=a.totanteil,
+                                      lippe_versatz=a.lippe_versatz,
+                                      abstand=a.abstand)
+    print(f"Bezugsbewegung {bezug:.2f} · {len(plan)} Einstellungen")
     for p in plan:
-        rest = p.get("kasten") or f'{p["oben"]} / {p["unten"]}'
-        print(f'{p["start"]:6.1f}–{p["ende"]:6.1f}  {p["layout"]:7} {rest}')
+        mark = "TOT " if p["tot"] else "    "
+        wo = p.get("kasten") or f'{p["oben"]} + {p["unten"]}'
+        print(f'{p["start"]:6.1f}–{p["ende"]:6.1f}  {mark}{p["layout"]:6} {wo:>26}'
+              f'  Lippe {p["lippe"]:4}  Mitte {p["mitte"]:.2f}'
+              f'  Bewegung {p["masse"]:5.2f}')
     if a.json:
-        json.dump({"quelle": a.clip, "groesse": groesse, "einstellungen": plan},
+        json.dump({"quelle": a.clip, "groesse": groesse,
+                   "bezugsbewegung": round(bezug, 3), "einstellungen": plan},
                   open(a.json, "w"), indent=1)
         print(f'→ {a.json}')
