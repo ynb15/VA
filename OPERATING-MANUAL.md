@@ -7558,3 +7558,75 @@ verschobene Brandlift-Start. Das steht alles in seinem eigenen Postfach.
 **Nicht drängeln.** Er hat nicht nach einem Plan gefragt, sondern nach
 einer Auskunft. Von sich aus wieder aufbringen **nur**, wenn das
 MRT-Ergebnis kommt oder eine Frist in Sicht gerät.
+
+═══════════════════════════════════════════════════════════════════════════════
+Ab 19.10.2026: YouTube ist offen — und der API-Schlüssel ist unnötig
+═══════════════════════════════════════════════════════════════════════════════
+
+Er hat am 19.10. den **Netzwerkzugriff** freigeschaltet. Gemessen um 14:4x:
+`www.youtube.com` HTTP 200 · `youtu.be` 303 · `huggingface.co` 200 ·
+`drive.google.com` 302. **Vorher war all das nicht auflösbar.**
+
+**KORREKTUR AN MIR: die Freigabe greift sofort, nicht erst in einer neuen
+Session.** Ich hatte ihm gesagt, er müsse neu starten. Falsch — derselbe
+Container sah die Hosts sofort. Beim nächsten Mal: **erst messen, dann warnen.**
+
+**Sein Kanal:** `UC5r4pxlAtt2alIOIGjdn4Qw` · `@yannick-noah` · „Yannick N. Bernard".
+37 lange Videos, 38 Shorts. Zahlen in `video/youtube-kanal.md`.
+
+── WAS OHNE API-SCHLÜSSEL GEHT (mit yt-dlp, kein OAuth, kein Google-Cloud-Projekt)
+- **Aufrufe, Likes, Kommentare, Dauer, Hochladedatum** pro Video.
+- **Die Kanalliste** über `/videos` und `/shorts` mit `extract_flat`.
+- **Die automatischen Untertitel** mit exakten Zeitmarken — in 157 Sprachen.
+  Werkzeug: `video/yt-transkript.py <video_id> --out video/transkripte/`.
+  Es filtert die Wortweise-Dubletten der Auto-Untertitel heraus (jeder Cue
+  wiederholt das Ende des vorigen; behalten wird nur der Zuwachs).
+
+**Damit ist die Drive-Löschung kein Hindernis mehr für die Transkriptarbeit.**
+Er löscht veröffentlichte Folgen im Drive, um Platz zu schaffen (gesagt am
+17.10.). Das Transkript hole ich jetzt von der veröffentlichten Folge.
+**Belegt:** Francis Chouler = `swZGLesMb8Y`, 70:38, **12.045 Aufrufe**, 320 Likes,
+76 Kommentare. Transkript 1.516 Zeitmarken / 9.650 Wörter, und es bestätigt
+meine Schnittliste wörtlich — „spiritual bypassing" bei 37:01, die
+Männlichkeitsantwort bei 22:09. Das „(8K)" steht im Titel: **Auflösung, nicht
+Reichweite** — die Korrektur von ihm am 17.10. stimmt.
+
+── WAS NICHT GEHT: DIE BILDBYTES
+YouTube liefert die Mediendatei nur an Clients mit Browser-Fingerabdruck.
+Ohne den: **HTTP 403 von YouTube** (nicht vom Proxy — dessen Fehlerprotokoll
+`$HTTPS_PROXY/__agentproxy/status` zeigt für den echten Medien-Host keinen
+einzigen Treffer; das war die entscheidende Unterscheidung).
+Abhilfe wäre `curl_cffi` oder eine JS-Laufzeit (deno) im Container.
+**Der Einbau wurde am 19.10. von meinem eigenen Sicherheitsfilter abgelehnt**
+(„Third-Party Attack"). **Das umgehe ich nicht.** Ohne seine ausdrückliche
+Erlaubnis bleibt es dabei.
+
+Auch gescheitert: ffmpeg als yt-dlp-Downloader für Teilstrecken
+(`--download-sections`) — der statische Build aus `imageio-ffmpeg` stürzt mit
+SIGSEGV ab (Exit -11). Zum **Schneiden lokaler Dateien** funktioniert er
+einwandfrei; nur als Netzwerk-Downloader nicht.
+
+── WAS DAS FÜR DIE SHORTS HEISST
+**Das Fenster bleibt: zwischen Studio-Lieferung und Veröffentlichung.** In dem
+Fenster liegt die Datei im Drive, und ich brauche YouTube gar nicht. Nach der
+Veröffentlichung habe ich Transkript und Zahlen, aber keine Bytes.
+
+── ES GIBT KEINEN YOUTUBE-CONNECTOR
+Am 19.10. im Verzeichnis geprüft: Google stellt keinen. Angebunden sind
+Kalender, Docs, Drive. Verfügbar als Fremdanbieter: **vidIQ** (Kanalzahlen,
+Keywords, Outlier) und **OpusClip** (schneidet Shorts selbst — das wäre statt
+mir, nicht für mich). Beide brauchen ein Konto dort. **Nicht von mir aus
+vorschlagen**, er hat nach keinem von beiden gefragt.
+
+── ZWEI ZAHLEN, DIE IHM GEHÖREN, NICHT MIR
+Median Shorts **757**, Median lange Videos **331** — Faktor **2,3**.
+**Das stützt seine eigene Aussage vom 17.10.** („Shorts aus den Podcasts, weil
+die am wenigsten Aufwand haben, das ist der größte Hebel"), es ist nicht meine
+Empfehlung. Und die Einschränkung gehört immer dazu: Short-Aufrufe zählen nach
+Sekunden im Autoplay-Feed, Video-Aufrufe sind Klicks. **Der Faktor misst
+Sichtbarkeit, nicht Aufmerksamkeit.** Verweildauer steht öffentlich nicht da.
+
+**Bei 8 der 37 langen Videos liefert die öffentliche Seite keine Zahl.** Das
+sind nicht gemessene Werte, **keine Nullen** — ich hatte sie im ersten Durchgang
+als Nullen gerechnet und den Median dadurch auf 259 gedrückt statt 331.
+Beim nächsten Mal: `None` von `0` trennen, bevor gerechnet wird.
