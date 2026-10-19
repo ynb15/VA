@@ -1,4 +1,4 @@
-# Shorts in Eigenregie — Stand 18.10.2026
+# Shorts in Eigenregie — Stand 19.10.2026
 
 **Was geprüft wurde, nicht behauptet.** Alle Angaben unten sind in dieser
 Maschine ausgeführt worden, nicht geschätzt.
@@ -19,23 +19,37 @@ Bildausschnitt und Untertitel und gibt einen fertigen **1080×1920 H.264/AAC**
 mit `+faststart` aus. Belegt durch `video/beispiel-short.mp4`.
 
 ```
+# einfachster Fall: ein fester Ausschnitt
 python3 video/shorts-render.py --src folge.mp4 --start 00:12:04 --end 00:12:48 \
         --out short.mp4 --focus 0.45 --srt clip.srt
+
+# der volle Weg: Einstellungen erkennen, dann rendern
+python3 video/bildausschnitt.py clip.mp4 --json plan.json
+python3 video/shorts-render.py --src clip.mp4 --plan plan.json \
+        --tempo 1.1 --auto-captions --out short.mp4
 ```
 
 `--focus 0..1` schiebt den 9:16-Ausschnitt horizontal durchs Breitbild.
+`--tempo` beschleunigt wie beim Export (seine Folgen laufen auf **1,1**).
 
-## Blockiert — und zwar genau hier
+## Nicht mehr blockiert
 
-| Host | Fehler | wofür |
+Die drei Hosts, die hier am 18.10. als gesperrt standen, sind seit der
+Freischaltung am 19.10. erreichbar:
+
+| Host | wofür | Stand |
 |---|---|---|
-| `huggingface.co` | **403 durch den Proxy** | Whisper-Modell für wortgenaue Untertitel |
-| `youtube.com` | DNS nicht aufgelöst | seinen Kanal lesen, Abrufe messen, Auto-Captions |
-| `greymattermedia.capetown` | DNS nicht aufgelöst | Mark Kaplans Seite |
+| `huggingface.co` | Whisper-Modell für wortgenaue Untertitel | **läuft** |
+| `youtube.com` | Kanal lesen, Abrufe messen, Auto-Captions | **läuft, ohne API-Schlüssel** |
+| `greymattermedia.capetown` | Mark Kaplans Seite | **läuft** |
 
-Alle drei über **Cloud-Umgebung → Edit → Network access → Allowed domains**
-(Haken bei den Paketmanagern drin lassen).
-Doku: https://code.claude.com/docs/en/cloud-environments#network-access
+**Kein API-Schlüssel, kein OAuth, kein Google-Cloud-Projekt** — `yt-dlp` liest
+Metadaten, Abrufzahlen und automatische Untertitel ohne Anmeldung.
+**Was nicht geht:** die Mediendaten selbst. YouTube antwortet auf die
+Videobytes mit **403** — das kommt von YouTube, nicht vom Proxy (geprüft gegen
+`$HTTPS_PROXY/__agentproxy/status`, dort steht kein Fehlschlag für den
+Medienhost). Deshalb wird aus dem **Drive-Master** geschnitten, nicht aus der
+veröffentlichten Folge.
 
 ## Die Arbeitsteilung, ehrlich aufgeschrieben
 
@@ -46,21 +60,23 @@ Datei zurückgeben.
 **Einmal pro Folge von ihm:** die Masterdatei in `[Alfred] Inbox` auf Drive
 (`1BTFS3WpV2XbTMDz0knlSMOPjNOziRzO9`) — oder ein Drive-Link. Mehr nicht.
 
-**Einmal überhaupt:** die drei Hosts oben freischalten.
+**Einmal überhaupt:** die drei Hosts freischalten — **am 19.10. erledigt.**
 
 ## Die Grenze, die bleibt
 
-Ein **fester** 9:16-Ausschnitt ist nicht dasselbe wie automatische
-Sprechererkennung. Bei einem Zweiergespräch in einer Totale schneidet AutoPod
-besser, weil es auf den jeweils Sprechenden umschneidet. Was hier geht:
+**Seit dem 19.10. kleiner als vorher.** `bildausschnitt.py` entscheidet selbst,
+ob eine Einstellung eine Nahaufnahme oder eine Totale ist, und stapelt die
+Totale (beide übereinander, 1080×960 je Hälfte) statt auf die Tischplatte
+zwischen den beiden zu schneiden. Die Untertitel sitzen an der gemessenen
+Mundhöhe und springen mit dem Kameraschnitt mit.
 
-- fester Ausschnitt mit frei wählbarer Position (`--focus`) — gut bei einer
-  Person oder enger Kameraführung,
-- **Umschnitt pro Clip-Abschnitt**, wenn die Sprecherwechsel aus dem Transkript
-  bekannt sind — damit kommt man nah an AutoPod heran,
-- echtes Multicam, **wenn getrennte Kameradateien vorliegen**. Genau das ist
-  die offene Frage an Cory/JPR aus `youtube/ai-editor.md`, und sie entscheidet,
-  ob dieses Werkzeug AutoPod ($29/Monat) ersetzt oder nur ergänzt.
+**Was weiterhin fehlt:** echtes Umschneiden auf den jeweils Sprechenden. Im
+Stapel weiß das Werkzeug nicht, wer gerade redet — dafür bräuchte es
+Lippenbewegung je Person, und bei zwei Personen in einer Totale ist die zu
+klein für das Bewegungsmaß, mit dem hier gearbeitet wird. Echtes Multicam geht
+nur, **wenn getrennte Kameradateien vorliegen** — das ist die offene Frage an
+Cory/JPR aus `youtube/ai-editor.md`, und sie entscheidet, ob dieses Werkzeug
+AutoPod ($29/Monat) ersetzt oder nur ergänzt.
 
 ## Warum das diesmal nicht im Leerlauf endet
 
