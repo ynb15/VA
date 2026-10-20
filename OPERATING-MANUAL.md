@@ -8148,3 +8148,46 @@ war es folgenlos**, weil der Versatz Roh ↔ Schnitt an elf Stellen bis
 Minute 72 gemessen ist und überall 12,2 s beträgt. **Offen, falls wieder
 gebraucht:** einen Neuversuch des Bereichslesers einbauen, der den
 Bestätigungslink erneuert, statt den Abbruch als Dateiende zu lesen.
+
+═══════════════════════════════════════════════════════════════════════════════
+AB 20.10.2026: ES GIBT ZWEI AGENTEN UND ZWEI BRANCHES
+═══════════════════════════════════════════════════════════════════════════════
+
+Von ihm selbst, im Chat am 20.10.2026:
+
+> „Kann ich dich duplizieren und dann ein Agent permanent Shorts kreieren
+> lassen, damit ich nicht immer warten muss … das soll dann mein Content
+> Assistant quasi sein. Dem ich die Jobs geben kann."
+
+| | **Alfred** (diese Session) | **Content Assistant** |
+|---|---|---|
+| Session | `session_01ELkvmWEvz5X1QNTjj2ucia` | `session_01UiDavSH3jThmLktN7Wvzxs` |
+| Branch | `claude/ai-chief-of-staff-cz83jv` | `claude/content-assistant` |
+| Gebiet | Postfach, Kalender, Board, Sweep, Outreach | Transkripte, Short-Kandidaten, Schnitt, Rendern |
+| Geweckt von | Tagessweep 15:54 Kapstadt | **ihm direkt im Chat** — kein Trigger |
+
+**Der Branch ist die Trennlinie. Nie über Kreuz schreiben.** Fremden Stand
+holt man sich mit `git fetch origin <anderer-branch>` und liest hinein; man
+schreibt nicht hinein. Zwei Schreiber auf einem Branch kollidieren beim
+Push, und die Arbeit, die dabei verlorengeht, ist nicht die eigene.
+
+── WAS ICH IHM DABEI GESAGT HABE, UND WARUM ES IM HANDBUCH STEHT
+**Eine zweite Session erbt den Kontext nicht.** Sie startet bei null und
+liest das Repo. Genau dafür gibt es das Handbuch — **das ist jetzt kein
+Prinzip mehr, sondern eine Abhängigkeit.** Was nur im Chatfaden steht,
+existiert für den anderen Agenten nicht.
+
+**Eigener Container heißt eigener Download.** Die Aaronson-Dateien hier
+abzuziehen kostete 37 Minuten. Deshalb wurde die laufende Folge **nicht**
+übergeben: duplizieren hilft gegen Warten in der Breite, nicht in der Tiefe.
+**Regel: übergeben wird an einer Materialgrenze, nicht mitten im Lauf.**
+
+**Und die Grenze, die nicht technisch ist** (so an ihn geschrieben): acht
+Runden an einem einzigen Short, jede aus seiner Korrektur — der Zwischenruf,
+den er hörte und die Messung nicht; der Pegel, der sich sauber maß und
+miserabel klang; der Ausschnitt, der zu eng war. **Ein Agent, den niemand
+ansieht, hätte die −14-LUFS-Fassung ausgeliefert und sich dabei auf seine
+eigene Messung berufen.** Der Content Assistant liefert Entwürfe und benennt
+das Gemessene; die Abnahme bleibt bei ihm. Hochladen tut er nichts — das
+fällt unter „nichts geht raus", und das gilt für jeden Agenten, nicht nur
+für mich.
