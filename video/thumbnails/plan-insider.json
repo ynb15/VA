@@ -15,19 +15,29 @@
   },
   "logo": "video/thumbnails/_logo_openai.png",
   "logo_xy": [
-   1085,
-   600
+   640,
+   152
   ],
-  "logo_groesse": 160,
+  "logo_groesse": 150,
   "zeilen": [
    "OpenAI",
    "Insider"
   ],
   "kasten": 1,
-  "text_mitte_y": 360,
+  "text_mitte_y": 400,
   "max_breite": 560,
-  "max_hoehe": 430,
+  "max_hoehe": 330,
   "ziel": "video/thumbnails/aaronson-openai-insider.jpg",
-  "logo_oben": true
+  "logo_oben": true,
+  "pfeil_von": [
+   648,
+   642
+  ],
+  "pfeil_nach": [
+   978,
+   548
+  ],
+  "pfeil_bogen": 0.3,
+  "pfeil_dicke": 18
  }
 ]

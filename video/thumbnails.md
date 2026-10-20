@@ -279,6 +279,16 @@ Alphakanals in diesem Bereich entfernt sie sauber, ohne den Körper zu
 beschädigen. Vor so einem Schnitt immer erst das Zeilenprofil der Maske
 ansehen.
 
+### Pfeil
+
+`pfeil()` zieht einen gebogenen Pfeil von A nach B: quadratische Bézierkurve,
+`bogen` ist die Auslenkung quer zur Verbindungslinie als Anteil ihrer Länge
+(positiv biegt nach unten), die Spitze sitzt auf der Tangente am Ende.
+
+**Unter den Kasten, nicht durch ihn.** Der erste Versuch lief quer über
+„Insider". Die Kastenunterkante steht im Bauprotokoll — der Pfeil beginnt
+darunter.
+
 ### Logo vor oder hinter den Köpfen
 
 `logo_oben` entscheidet das. Vorgabe ist **vor** den Köpfen: wer sagt, man
