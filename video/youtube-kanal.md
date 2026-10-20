@@ -76,3 +76,45 @@ for tab in ['videos','shorts']:
 **Kein API-Schlüssel, kein Google-Cloud-Projekt, kein OAuth.** Möglich geworden durch die
 Netzwerk-Freigabe vom 19.10. Vorher war `youtube.com` im Container nicht auflösbar, und ich
 konnte Reichweite überhaupt nicht messen — das war mein blinder Fleck vom 17./18.10.
+
+
+---
+
+## Sein Short-Look, abgelesen an den eigenen Shorts (20.10.2026)
+
+Er hat gefragt, ob ich an die veröffentlichten Shorts herankomme, um Filter und
+Schrift zu übernehmen. **Teilweise — und für diese Frage reicht es.**
+
+**Was geht:** die Vorschaubilder. `https://i.ytimg.com/vi/<id>/oardefault.jpg`
+liefert das Hochformat in 720×1280, **HTTP 200, ohne Anmeldung**. Das ist ein
+echter Einzelbild-Ausschnitt aus dem Short, mit eingebrannten Untertiteln.
+`maxresdefault.jpg` und `hq720.jpg` liefern dieselbe Szene im Querformat.
+
+**Was nicht geht:** die Videodaten selbst. Die Watch-Seite antwortet inzwischen
+mit „Sign in to confirm you're not a bot", der Medienhost mit 403. **Damit kann
+ich den Schnitt nicht sehen, nur einzelne Bilder.** Für Farbe, Schrift und
+Zeilenposition genügt das.
+
+### Was auf den Bildern steht
+
+| | |
+|---|---|
+| **Schrift** | VERSALIEN, fetter schmaler Serifenloser mit **rauer Textur** in den Buchstaben |
+| **Farbe** | weiß, **das gerade gesprochene Wort in Gelb** (≈ `#FFD530`) |
+| **Kontur** | dicke schwarze Kontur, dazu ein weicher Schatten |
+| **Zeile** | zwei bis drei Wörter, Oberkante bei rund **0,67–0,70** der Bildhöhe — also **unter dem Mund, auf Bart- und Kinnhöhe** |
+| **Ausschnitt** | **deutlich enger als ein voller 1080er Schnitt** — der Kopf füllt rund zwei Drittel der Bildhöhe, oben am Haaransatz beschnitten |
+| **Farblook** | warm, kontrastreich, Hintergrund fast abgesoffen, **sichtbare Vignette** |
+| **Logo** | YNB-Wasserzeichen mittig, unteres Fünftel |
+
+### Was ich davon übernommen habe
+
+Versalien · gelbes Aktivwort · dicke Kontur · Zeile unter dem Kinn · engerer
+Ausschnitt (`--zoom 1.35`) · warmer Look mit Vignette (`--look warm`).
+
+### Was ich nicht übernehmen kann
+
+**Die Schrift.** Im Container liegen nur DejaVu, Liberation, FreeSans und ein
+paar CJK-Familien — keine schmale Display-Schrift und nichts mit Textur.
+Gerendert wird deshalb in **DejaVu Sans Bold**: dieselbe Anmutung, aber breiter
+und glatt. **Wenn er die Schriftdatei in den Drive-Eingang legt, nehme ich sie.**

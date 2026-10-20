@@ -1,0 +1,15 @@
+# Wortkorrekturen für eingebrannte Untertitel.
+# Eine Zeile je Paar: falsch -> richtig. Vergleich ohne Rücksicht auf
+# Groß- und Kleinschreibung, nur ganze Wörter. Zeilen mit # sind Notizen.
+#
+# Gesammelt aus dem, was faster-whisper am Studiomaterial verhört hat.
+# Eingebrannt ist ein falsches Wort nicht mehr zu retten — deshalb die Liste.
+tenancy -> tendency
+andretates -> Andrew Tate's
+endate -> Andrew Tate
+substack -> Substack
+afrikaburn -> AfrikaBurn
+burningman -> Burning Man
+gilmore -> Gilmore
+yannick -> Yannick
+sutcliffe -> Sutcliffe

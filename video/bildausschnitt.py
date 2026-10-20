@@ -54,6 +54,13 @@ LIPPE_BAND = (0.56, 0.66)   # enges Band: an vier geprueften Nahaufnahmen
                             # sonst an den Hals (Short 2: 0,72).
 STAPEL_H = 0.70             # Hoehe eines Stapelausschnitts, Anteil der Quelle
 STAPEL_LIPPE = 0.70         # feste Zeilenhoehe im Stapel, Anteil der Haelfte
+ZEILE_FEST = 0.65           # Zeilenhoehe im herangezogenen Bild, Anteil der Hoehe
+                            # Beim Zoom sitzt die Kopfoberkante bauartbedingt auf
+                            # 10 % der Kastenhoehe — damit liegt der Mund immer
+                            # bei rund 0,56 und das Kinn bei 0,73. Eine feste
+                            # Zeile dazwischen ist genauer als jede Messung:
+                            # die Schaetzung schwankte zwischen 0,56 und 0,66
+                            # und landete mal unter dem Kinn, mal auf dem Mund.
 KOPF_PROBEN = 25            # Proben (a 0,2 s) fuer die Messung der Kopfoberkante
 
 
@@ -175,21 +182,31 @@ def stapelseite(karte, spalten, von, bis, qb, qh, sx, sy):
     return x, y, bb, bh
 
 
-def _kasten(mitte_x, qb, qh, seitenverhaeltnis):
-    """Ausschnitt mit gegebenem Seitenverhaeltnis um mitte_x, im Bild gehalten."""
-    bh = qh
+def _kasten(mitte_x, qb, qh, seitenverhaeltnis, zoom=1.0, kopf_oben=None):
+    """Ausschnitt mit gegebenem Seitenverhaeltnis um mitte_x, im Bild gehalten.
+
+    `zoom` > 1 zieht enger heran. Seine veroeffentlichten Shorts sind deutlich
+    naeher dran als ein voller 1080er Ausschnitt: der Kopf fuellt dort rund
+    zwei Drittel der Bildhoehe. `kopf_oben` (Anteil der Quellhoehe) setzt den
+    Ausschnitt so, dass ueber dem Kopf ein Zehntel Luft bleibt.
+    """
+    bh = int(round(qh / max(zoom, 1.0)))
     bb = int(round(bh * seitenverhaeltnis))
     if bb > qb:
         bb = qb
         bh = int(round(bb / seitenverhaeltnis))
     x = int(round(mitte_x - bb / 2))
     x = max(0, min(x, qb - bb))
-    y = max(0, (qh - bh) // 3)      # Koepfe sitzen im oberen Drittel
+    if kopf_oben is None:
+        y = max(0, (qh - bh) // 3)      # Koepfe sitzen im oberen Drittel
+    else:
+        y = int(round(kopf_oben * qh - 0.10 * bh))
+    y = max(0, min(y, qh - bh))
     return x, y, bb, bh
 
 
-def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=25,
-               abstand=0.2):
+def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=0,
+               abstand=0.2, zoom=1.0):
     zeiten, klein, (qb, qh) = _graustufen_folge(pfad, abstand=abstand)
     if len(klein) < 2:
         raise SystemExit("Zu wenige Bilder gelesen.")
@@ -233,10 +250,20 @@ def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=25,
         n = len(s["spalten"])
         if tot or mitte >= MITTE_SCHWELLE:
             x = gipfel(s["spalten"], 0, n) * sx
-            kasten = _kasten(x, qb, qh, ZIEL_V)
+            # Erst ueber den vollen Ausschnitt die Kopfoberkante messen, dann
+            # den engeren Kasten darum legen — sonst sucht man den Kopf in
+            # einem Fenster, das man erst kennt, wenn man den Kopf hat.
+            grob = _kasten(x, qb, qh, ZIEL_V)
+            oben = kopfoberkante(s["kurz"], 0, s["kurz"].shape[0],
+                                 int(grob[0] / sx), int((grob[0] + grob[2]) / sx))
+            kasten = _kasten(x, qb, qh, ZIEL_V, zoom=zoom,
+                             kopf_oben=oben if zoom > 1.0 else None)
+            if zoom > 1.0:
+                hoehe = int(round(ZEILE_FEST * AUS_H))
+            else:
+                hoehe = int(round(lippe_aus_kopf(s["kurz"], kasten, sx, sy) * AUS_H))
             eintrag = {"layout": "einzel", "kasten": "%d:%d:%d:%d" % kasten,
-                       "lippe": int(round(lippe_aus_kopf(s["kurz"], kasten, sx, sy)
-                                          * AUS_H)) + lippe_versatz}
+                       "lippe": hoehe + lippe_versatz}
         else:
             # Totale: beide sitzen am Rand, der Tisch steht in der Mitte.
             links = stapelseite(s["kurz"], s["spalten"], 0, int(n * 0.45),
@@ -261,6 +288,16 @@ def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=25,
                        tot=bool(tot), bewegung_x=round(x / qb, 3),
                        mitte=round(mitte, 2), masse=round(s["masse"], 2))
         plan.append(eintrag)
+
+    # Ein angeschnittener Anfang (Trim mitten in der Bildgruppe) erzeugt eine
+    # Einstellung von zwei Zehntelsekunden ohne Bewegung und mit geratenem
+    # Ausschnitt. Sie faellt der naechsten zu, statt kurz Unsinn zu zeigen.
+    while len(plan) > 1 and plan[0]["ende"] - plan[0]["start"] < mindestdauer:
+        plan[1]["start"] = plan[0]["start"]
+        plan.pop(0)
+    while len(plan) > 1 and plan[-1]["ende"] - plan[-1]["start"] < mindestdauer:
+        plan[-2]["ende"] = plan[-1]["ende"]
+        plan.pop()
     return plan, (qb, qh), bezug
 
 
@@ -272,13 +309,15 @@ if __name__ == "__main__":
     ap.add_argument("--totanteil", type=float, default=0.28,
                     help="Anteil der mittleren Bewegung, unter dem eine "
                          "Einstellung als leer gilt")
-    ap.add_argument("--lippe-versatz", type=int, default=25,
+    ap.add_argument("--zoom", type=float, default=1.0,
+                    help="enger heranziehen; seine Shorts liegen bei rund 1.35")
+    ap.add_argument("--lippe-versatz", type=int, default=0,
                     help="Pixel, um die die Untertitel zusaetzlich nach unten "
                          "ruecken")
     a = ap.parse_args()
     plan, groesse, bezug = plan_bauen(a.clip, totanteil=a.totanteil,
                                       lippe_versatz=a.lippe_versatz,
-                                      abstand=a.abstand)
+                                      abstand=a.abstand, zoom=a.zoom)
     print(f"Bezugsbewegung {bezug:.2f} · {len(plan)} Einstellungen")
     for p in plan:
         mark = "TOT " if p["tot"] else "    "

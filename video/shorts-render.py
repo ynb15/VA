@@ -35,6 +35,14 @@ import imageio_ffmpeg
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 W, H = 1080, 1920
 FONT = "DejaVu Sans"
+GELB = "&H0030D5FF&"       # das Gelb seines Kanals, als Stilfarbe (ABGR)
+WEISS = "&H00FFFFFF&"
+GELB_I, WEISS_I = "&H30D5FF&", "&HFFFFFF&"   # dieselben Farben als \\c im Text
+# Sein Look, abgelesen an den eigenen Shorts (Vorschaubilder, 20.10.2026):
+# warm, kontrastreich, Hintergrund abgesoffen, deutliche Vignette.
+LOOK = ("eq=contrast=1.14:brightness=-0.02:saturation=1.16,"
+        "colorbalance=rs=0.04:gs=0.01:bs=-0.05:rm=0.03:bm=-0.03,"
+        "vignette=PI/4.5")
 
 
 def tc(s):
@@ -51,12 +59,18 @@ def ass_time(t):
     return f"{int(h)}:{int(m):02d}:{sec:05.2f}"
 
 
-def build_ass(cues, path, highlight="&H0030D5FF&", marginv=320, tempo=1.0):
-    """cues: [{'start','end','text', 'lippe'?}] -> ASS.
+def build_ass(cues, path, marginv=320, tempo=1.0, tiefer=0, gross=True,
+              groesse=88, paare=None):
+    """cues -> ASS mit wortweiser Hervorhebung.
 
-    Mit `lippe` sitzt die Zeile per \\pos mit Oberkante an dieser Hoehe,
-    ohne sie am unteren Rand (marginv). `tempo` rechnet die Zeiten auf die
-    beschleunigte Fassung um.
+    Abgelesen an seinen veroeffentlichten Shorts: GROSSBUCHSTABEN, fetter
+    Serifenloser, dicke schwarze Kontur, und das gerade gesprochene Wort in
+    Gelb. Dafuer wird je Wort eine eigene Zeile ausgegeben, die alle Woerter
+    der Einblendung zeigt und nur eines einfaerbt.
+
+    `tiefer` schiebt die Zeile unter die Lippe — nicht darauf. Auch das ist
+    an seinen Shorts abgelesen: die Zeile sitzt dort auf Bart- und Kinnhoehe,
+    rund 0,70 der Bildhoehe.
     """
     head = f"""[Script Info]
 ScriptType: v4.00+
@@ -67,25 +81,71 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{FONT},86,&H00FFFFFF,&H00000000,&H00000000,-1,0,1,7,3,2,90,90,{marginv},1
-Style: Hit,{FONT},86,{highlight},&H00000000,&H00000000,-1,0,1,7,3,2,90,90,{marginv},1
+Style: Cap,{FONT},{groesse},{WEISS},&H00000000,&H00000000,-1,0,1,8,3,2,80,80,{marginv},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lines = []
+
+    def zeile(von, bis, text, lippe):
+        kopf = ""
+        if lippe is not None:
+            kopf = f"{{\\an8\\pos({W // 2},{int(lippe) + tiefer})}}"
+        lines.append(f"Dialogue: 0,{ass_time(von / tempo)},{ass_time(bis / tempo)},"
+                     f"Cap,,0,0,0,,{kopf}{text}")
+
     for c in cues:
-        txt = c["text"].strip().replace("\n", "\\N")
-        if not txt:
+        woerter = [w for w in (c.get("woerter") or [])
+                   if w["t"].strip() and w["end"] > c["start"] and w["start"] < c["end"]]
+        roh = [w["t"].strip() for w in woerter] or c["text"].split()
+        if paare:
+            roh = [korrigieren(w, paare) for w in roh]
+        roh = [w.upper() for w in roh] if gross else roh
+        if not roh:
             continue
-        style = "Hit" if c.get("hit") else "Cap"
-        if c.get("lippe") is not None:
-            txt = f"{{\\an8\\pos({W // 2},{int(c['lippe'])})}}" + txt
-        lines.append(
-            f"Dialogue: 0,{ass_time(c['start'] / tempo)},"
-            f"{ass_time(c['end'] / tempo)},{style},,0,0,0,,{txt}"
-        )
+        if not woerter:
+            zeile(c["start"], c["end"], " ".join(roh), c.get("lippe"))
+            continue
+        for i, w in enumerate(woerter):
+            von = max(w["start"], c["start"]) if i else c["start"]
+            bis = min(woerter[i + 1]["start"], c["end"]) if i + 1 < len(woerter) else c["end"]
+            if bis - von <= 0.02:
+                continue
+            teile = [f"{{\\c{GELB_I if k == i else WEISS_I}}}{t}"
+                     for k, t in enumerate(roh)]
+            zeile(von, bis, " ".join(teile), c.get("lippe"))
+
     Path(path).write_text(head + "\n".join(lines) + "\n", encoding="utf-8")
+
+
+def korrekturen_lesen(pfad):
+    """Wortkorrekturen fuer eingebrannte Untertitel laden.
+
+    Ein falsch verstandenes Wort steht nach dem Rendern fuer immer im Bild.
+    `tendency` kam als `tenancy` heraus, `Andrew Tate's` als `andretates` —
+    beides in einem Short, der veroeffentlicht werden soll. Die Liste ist
+    billiger als ein groesseres Modell und faengt genau die Woerter, die in
+    seinem Material immer wieder vorkommen.
+    """
+    paare = {}
+    if not pfad or not Path(pfad).exists():
+        return paare
+    for zeile in Path(pfad).read_text(encoding="utf-8").splitlines():
+        zeile = zeile.split("#")[0].strip()
+        if "->" in zeile:
+            falsch, richtig = (t.strip() for t in zeile.split("->", 1))
+            if falsch:
+                paare[falsch.lower()] = richtig
+    return paare
+
+
+def korrigieren(wort, paare):
+    """Ein Wort ersetzen, Satzzeichen bleiben stehen."""
+    kern = wort.strip(".,!?;:\"'\u2019\u201c\u201d")
+    if not kern or kern.lower() not in paare:
+        return wort
+    return wort.replace(kern, paare[kern.lower()], 1)
 
 
 def cues_an_lippen(cues, lippen):
@@ -122,24 +182,47 @@ def srt_to_cues(srt_path, offset=0.0):
     return cues
 
 
-def whisper_cues(clip, model_size="small", lang=None, group=4):
-    """Wortgenaue Zeiten fuer den bereits geschnittenen Clip."""
+def whisper_cues(clip, model_size="small", lang=None, worte=3):
+    """Wortgenaue Zeiten fuer den bereits geschnittenen Clip.
+
+    `worte` ist die Zahl der Woerter je Einblendung. Drei ist sein Wunsch vom
+    20.10. und entspricht seinen veroeffentlichten Shorts: so kurz, dass der
+    Blick die Zeile in einem Zug nimmt.
+    """
     from faster_whisper import WhisperModel
     m = WhisperModel(model_size, device="cpu", compute_type="int8")
     segments, info = m.transcribe(clip, language=lang, word_timestamps=True,
                                   vad_filter=True)
-    words = [w for s in segments for w in (s.words or [])]
+    words = [w for s in segments for w in (s.words or []) if w.word.strip()]
     cues, buf = [], []
+
+    def schliessen(buf):
+        return {"start": buf[0].start, "end": buf[-1].end,
+                "text": " ".join(x.word.strip() for x in buf),
+                "woerter": [{"t": x.word.strip(), "start": x.start, "end": x.end}
+                            for x in buf]}
+
     for w in words:
         buf.append(w)
-        if len(buf) >= group or w.word.strip().endswith((".", "?", "!", "…")):
-            cues.append({"start": buf[0].start, "end": buf[-1].end,
-                         "text": " ".join(x.word.strip() for x in buf)})
+        satzende = w.word.strip().endswith((".", "?", "!", "…"))
+        if len(buf) >= worte or satzende:
+            cues.append(schliessen(buf))
             buf = []
     if buf:
-        cues.append({"start": buf[0].start, "end": buf[-1].end,
-                     "text": " ".join(x.word.strip() for x in buf)})
-    return cues, info.language
+        cues.append(schliessen(buf))
+    # Eine Einblendung aus einem einzigen Wort liest sich wie ein Zucken:
+    # sie wandert zurueck in die vorhergehende, solange die nicht zu voll wird.
+    zusammen = []
+    for c in cues:
+        if (zusammen and len(c["woerter"]) == 1
+                and len(zusammen[-1]["woerter"]) < worte + 1):
+            v = zusammen[-1]
+            v["end"] = c["end"]
+            v["text"] += " " + c["text"]
+            v["woerter"] += c["woerter"]
+        else:
+            zusammen.append(c)
+    return zusammen, info.language
 
 
 def run(cmd):
@@ -262,8 +345,21 @@ def main():
                     help="Feste Untertitelhoehe im Ausgabebild (0..1920), "
                          "Oberkante der Zeile. Schlaegt --marginv.")
     ap.add_argument("--tempo", type=float, default=1.0,
-                    help="Beschleunigung wie in der veroeffentlichten Folge "
-                         "(gemessen 1.0575). 1.0 = unveraendert.")
+                    help="Beschleunigung. Seine Folgen laufen auf 1.1, fuer "
+                         "Shorts will er 1.2. 1.0 = unveraendert.")
+    ap.add_argument("--worte", type=int, default=3,
+                    help="Woerter je Einblendung (sein Wunsch: 3)")
+    ap.add_argument("--tiefer", type=int, default=0,
+                    help="Pixel, um die die Zeile zusaetzlich nach unten "
+                         "rueckt; der Plan setzt die Hoehe schon unter die Lippe")
+    ap.add_argument("--schriftgroesse", type=int, default=88)
+    ap.add_argument("--korrekturen", default="video/korrekturen.txt",
+                    help="Liste falsch -> richtig fuer die Untertitel")
+    ap.add_argument("--klein", action="store_true",
+                    help="keine Grossbuchstaben (sein Kanal nutzt Versalien)")
+    ap.add_argument("--look", choices=["warm", "aus"], default="warm",
+                    help="warm = der Grading seiner Shorts (Kontrast, warmer "
+                         "Stich, Vignette), abgelesen an den Vorschaubildern")
     a = ap.parse_args()
 
     if not 0.5 <= a.tempo <= 2.0:
@@ -311,6 +407,10 @@ def main():
             graph.append(f"[{a_quelle.rstrip('?')}]atempo={a.tempo}[at]")
         a_quelle = "[at]"
 
+    if a.look == "warm":
+        graph.append(f"{v_quelle}{LOOK}[vlook]")
+        v_quelle = "[vlook]"
+
     with tempfile.TemporaryDirectory() as td:
         cues = None
         if a.auto_captions:
@@ -319,7 +419,7 @@ def main():
             if dur:
                 cut += ["-t", str(dur)]
             run(cut + ["-c", "copy", raw])
-            cues, lang = whisper_cues(raw, a.model, a.lang)
+            cues, lang = whisper_cues(raw, a.model, a.lang, worte=a.worte)
             print(f"  Transkript: {len(cues)} Einblendungen, Sprache {lang}")
         elif a.srt:
             cues = srt_to_cues(a.srt)
@@ -333,7 +433,15 @@ def main():
             elif a.lippe is not None:
                 cues = [{**c, "lippe": a.lippe} for c in cues]
             ass = os.path.join(td, "cap.ass")
-            build_ass(cues, ass, marginv=marginv, tempo=a.tempo)
+            paare = korrekturen_lesen(a.korrekturen)
+            build_ass(cues, ass, marginv=marginv, tempo=a.tempo,
+                      tiefer=a.tiefer, gross=not a.klein,
+                      groesse=a.schriftgroesse, paare=paare)
+            if paare:
+                print(f"  {len(paare)} Wortkorrekturen geladen")
+            print(f"  {a.worte} Woerter je Einblendung, "
+                  f"{'VERSALIEN' if not a.klein else 'gemischt'}, "
+                  f"{a.tiefer} px unter der Lippe, Look: {a.look}")
             graph.append(f"{v_quelle}subtitles="
                          + ass.replace(":", r"\:") + "[vout]")
             letzte = "[vout]"

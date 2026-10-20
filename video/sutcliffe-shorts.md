@@ -42,6 +42,46 @@ sonst langsamer als alles andere auf Deinem Kanal — Ton über `atempo`, Bild
 
 ---
 
+## Short 4 — „Vulnerability is not weakness" (dritte Fassung des Verfahrens)
+
+**Gewünscht am 20.10.:** die Stelle über Hyper-Masculinity, in der er seine
+Substack-Notiz über Vulnerability vorliest.
+
+**Gefunden:** veröffentlicht **01:12:01–01:13:06**, im Master **4569–4640**
+(Fenster 4550–4665 geholt, über den Ton nachgemessen, Anker bei
+veröffentlicht 4532 ↔ Master 4799, lokales Tempo 1,1).
+
+Der Bogen steht von selbst: er benennt, woran Hyper-Masculinity scheitert —
+*„failing to become whole is in the tendency to completely suppress certain
+traits or behaviors like vulnerability"* — sagt dann *„I put out a note
+recently on Substack"* und liest sie ganz vor. Am Ende Sutcliffes drei Worte:
+*„Yeah, that's true."* **71 Sekunden Master, mit Tempo 1,2 genau 59.**
+
+**Fünf Änderungen aus seiner Rückmeldung vom 20.10.:**
+
+| | |
+|---|---|
+| **zu kurz** | Dieser Short läuft **59 s** statt 31–53. Das Fenster endet an Sutcliffes Antwort, nicht an einer Satzgrenze. |
+| **Tempo** | `--tempo 1.2` (seine Folgen laufen auf 1,1, die Shorts sollen schneller sein) |
+| **drei Wörter** | `--worte 3`; eine Einblendung aus einem einzigen Wort wandert in die vorhergehende zurück |
+| **Text unter die Lippe** | feste Zeilenhöhe bei **0,65 der Bildhöhe** — siehe unten, warum fest besser ist als gemessen |
+| **sein Look** | Versalien, gelbes Aktivwort, dicke Kontur, engerer Ausschnitt, warme Gradation — abgelesen an seinen eigenen Shorts |
+
+**Warum die Zeilenhöhe jetzt fest ist und nicht mehr gemessen wird:** der
+Ausschnitt setzt die Kopfoberkante bauartbedingt auf 10 % der Kastenhöhe.
+Damit liegt der Mund immer bei rund 0,56 und das Kinn bei 0,73 — die Lage ist
+durch den Ausschnitt schon normiert. Die Messung schwankte zwischen 0,56 und
+0,66 und landete im Versuch mal auf dem Mund, mal unter dem Kinn. **Eine feste
+Zeile dazwischen ist genauer als die Schätzung.**
+
+**Offen, seine Entscheidung:** zwischen Sekunde 43,6 und 51,7 schneidet der
+Studioschnitt auf die Totale — mitten im stärksten Teil der Notiz („But armor
+is not strength"). Ich stapele sie derzeit. Alternative: in diesen acht
+Sekunden auf ihm bleiben und die Totale auf ihn beschneiden. **Welche von
+beiden, entscheidest Du.**
+
+---
+
 ## Geschnitten und fertig — zweite Fassung
 
 | # | Datei | Länge | Master | Inhalt |

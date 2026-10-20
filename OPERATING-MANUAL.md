@@ -7765,3 +7765,41 @@ Jede der drei Änderungen wurde an **Einzelbildern mit eingezeichneter Linie**
 geprüft, nicht an Zahlen. Die erste Lippenschätzung sah in den Zahlen plausibel
 aus und lag auf der Stirn — das sieht man erst im Bild. **Kontaktabzug mit
 `drawbox` ansehen, bevor eine Bildänderung als fertig gilt.**
+
+═══════════════════════════════════════════════════════════════════════════════
+20.10.2026: Sein Short-Look ist messbar — über die Vorschaubilder
+═══════════════════════════════════════════════════════════════════════════════
+
+Er hat gefragt, ob ich an seine veröffentlichten Shorts herankomme, um Filter
+und Schrift zu übernehmen. **Teilweise, und es reicht.**
+
+── DER WEG
+`https://i.ytimg.com/vi/<id>/oardefault.jpg` liefert das **Hochformat in
+720×1280, HTTP 200, ohne Anmeldung** — ein echtes Einzelbild aus dem Short,
+mit eingebrannten Untertiteln. Die Liste der Shorts kommt über
+`yt-dlp --flat-playlist -J https://www.youtube.com/@yannick-noah/shorts`.
+**Die Watch-Seite geht nicht mehr:** „Sign in to confirm you're not a bot",
+und die Mediendaten antworten weiter mit 403. Also: Bilder ja, Schnitt nein.
+
+── WAS AUF DEN BILDERN STEHT
+**VERSALIEN** · fetter schmaler Serifenloser mit rauer Textur · weiß, **das
+gerade gesprochene Wort in Gelb** (≈ `#FFD530`) · dicke schwarze Kontur ·
+zwei bis drei Wörter · Zeile bei **0,67–0,70 der Bildhöhe**, also unter dem
+Mund auf Bart- und Kinnhöhe · **enger Ausschnitt**, der Kopf füllt zwei
+Drittel der Höhe · warm, kontrastreich, Hintergrund abgesoffen, **Vignette** ·
+YNB-Logo mittig im unteren Fünftel.
+
+── WAS DAVON IM WERKZEUG STEHT
+`--worte 3` · Versalien und gelbes Aktivwort in `build_ass` · `--zoom 1.35`
+in `bildausschnitt.py` · `--look warm` · feste Zeilenhöhe 0,65.
+**Was fehlt: die Schrift.** Der Container hat nur DejaVu, Liberation und
+FreeSans — nichts Schmales, nichts mit Textur. **Wenn er die Schriftdatei in
+den Drive-Eingang legt, nehme ich sie.** Danach fragen, nicht raten.
+
+── UND EINE REGEL, DIE DAS GANZE TRÄGT
+**Ein falsch verstandenes Wort ist nach dem Einbrennen nicht mehr zu retten.**
+`tendency` kam als `tenancy` heraus, `Andrew Tate's` als `andretates` — beides
+in einem Short, der veröffentlicht werden sollte. Deshalb: für jeden Short,
+der hinausgeht, **`--model medium`** und die Liste `video/korrekturen.txt`.
+Die Liste wächst mit; sie ist billiger als ein größeres Modell und fängt genau
+die Namen, die in seinem Material immer wiederkommen.
