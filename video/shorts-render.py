@@ -407,8 +407,18 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
     Modells unzuverlaessig ist, die Pause aber nicht.
     """
     from faster_whisper import WhisperModel
+    import numpy as np
+    # Den Ton selbst dekodieren statt faster-whisper die Datei geben:
+    # es ruft PyAV mit `metadata_errors` auf, das die hier installierte
+    # PyAV-Fassung nicht kennt (TypeError). Ueber ffmpeg ist es ohnehin
+    # derselbe Weg, den der Rest dieser Datei geht — 16 kHz Mono float32,
+    # genau das, was das Modell erwartet.
+    roh = subprocess.run([FFMPEG, "-nostdin", "-v", "quiet", "-i", clip,
+                          "-f", "f32le", "-ac", "1", "-ar", "16000", "-"],
+                         capture_output=True, check=True).stdout
+    ton = np.frombuffer(roh, dtype=np.float32)
     m = WhisperModel(model_size, device="cpu", compute_type="int8")
-    segments, info = m.transcribe(clip, language=lang, word_timestamps=True,
+    segments, info = m.transcribe(ton, language=lang, word_timestamps=True,
                                   vad_filter=True)
     # Der Abschnitt, aus dem ein Wort stammt, wird mitgefuehrt: Whisper
     # trennt Saetze zuverlaessiger ueber seine eigenen Abschnitte als ueber
@@ -675,6 +685,27 @@ def broll_graph(stuecke, quelle, tempo, modus, seite, radius, fokus,
                 f"crop={seite}:{seite},fps=30,setsar=1,format=rgba,"
                 f"geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='{alpha}'[bk{i}]")
             x, y = (W - seite) // 2, (H - seite) // 2
+        elif modus == "unschaerfe":
+            # Randlos, aber nichts wird beschnitten: der Film laeuft in voller
+            # Breite scharf in der Mitte, dahinter steht er vergroessert und
+            # unscharf und fuellt das Bild. Fuer Quellen, bei denen ein
+            # 9:16-Ausschnitt zu wenig echte Pixel uebrig laesst — beim
+            # Into-the-Wild-Trailer waeren es 513 von 2153.
+            # Der scharfe Teil ist quadratisch, nicht in voller Breite: ein
+            # 2,36:1-Trailer waere ueber die ganze Breite nur 458 von 1920
+            # Pixeln hoch, also ein duenner Streifen. Quadratisch geschnitten
+            # steht er bei 1080x1080 — aus 913 echten Pixeln, also Faktor
+            # 1,18 statt 2,10 beim 9:16-Ausschnitt.
+            f = min(max(fokus, 0.0), 1.0)
+            teile.append(kopf + f"fps=30,setsar=1,split=2[bg{i}][fg{i}]")
+            teile.append(
+                f"[bg{i}]scale={W}:{H}:force_original_aspect_ratio=increase,"
+                f"crop={W}:{H},gblur=sigma=42,eq=brightness=-0.16[bgu{i}]")
+            teile.append(
+                f"[fg{i}]crop='min(iw,ih)':'min(iw,ih)':'(iw-min(iw,ih))*{f}':"
+                f"'(ih-min(iw,ih))/2',scale={W}:{W}[fgs{i}]")
+            teile.append(f"[bgu{i}][fgs{i}]overlay=0:(H-h)/2[bk{i}]")
+            x, y = 0, 0
         else:
             # Randlos: auf Hoehe bringen, dann das 9:16-Fenster waagrecht
             # dorthin schieben, wo das Motiv steht.
@@ -840,10 +871,13 @@ def main():
                     help="B-Roll als Karte: 'von:bis=datei[,von:bis=datei]', "
                          "Zeiten in Clipzeit wie bei --stumm. Der Ton der "
                          "B-Roll wird verworfen, die Stimme laeuft durch.")
-    ap.add_argument("--broll-modus", choices=["vollbild", "karte"],
+    ap.add_argument("--broll-modus",
+                    choices=["vollbild", "unschaerfe", "karte"],
                     default="vollbild",
-                    help="randlos 1080x1920 (Vorgabe, sein Bild) oder als "
-                         "quadratische Karte auf Schwarz (Williamsons Rahmen)")
+                    help="vollbild: 9:16 aus der B-Roll geschnitten. "
+                         "unschaerfe: Film scharf in voller Breite, dahinter "
+                         "er selbst vergroessert und unscharf — nichts wird "
+                         "beschnitten. karte: Williamsons Quadrat auf Schwarz.")
     ap.add_argument("--broll-fokus", type=float, default=0.5,
                     help="0..1 schiebt das 9:16-Fenster waagrecht durch die "
                          "B-Roll — aus 16:9 bleiben nur 31,6 %% der Breite")

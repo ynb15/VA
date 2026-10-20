@@ -25,3 +25,10 @@ aronson -> Aaronson
 aaronson -> Aaronson
 scott aronson -> Scott Aaronson
 shtetl optimized -> Shtetl-Optimized
+# Craig-Makhosi-Folge (20.10.): Into the Wild und Ubuntu.
+mccandless -> McCandless
+krakauer -> Krakauer
+supertramp -> Supertramp
+super tramp -> Supertramp
+ubuntu -> Ubuntu
+makhosi -> Makhosi

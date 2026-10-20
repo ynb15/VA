@@ -8212,3 +8212,83 @@ Zu bauen: `--broll zeit:zeit=datei`, der quadratische Kasten 980×980 auf
 x=50/y=470 mit gerundeten Ecken, **die Stimme läuft durch** (der Ton der
 B-Roll wird verworfen, sonst reden zwei gleichzeitig), Untertitel laufen
 darüber weiter.
+
+═══════════════════════════════════════════════════════════════════════════════
+20.10.2026: B-ROLL AUS FILM — ER LIEFERT, ICH BAUE. UND EIN TRAILER IST KEIN FILM
+═══════════════════════════════════════════════════════════════════════════════
+
+Er hat drei Chris-Williamson-Shorts als Vorbild geschickt und dreimal
+klargestellt, was er will. Beim dritten Mal deutlich: **„Ich habe dir gesagt,
+lass meinen Stil. Das Einzige, was ich von Chris Williamson kopieren möchte,
+sind die filmischen B-Rolls."**
+
+── MEIN FEHLER, UND ER IST LEHRREICH
+Ich hatte Williamsons **Rahmen** für den Inhalt gehalten und seinen Short in
+den 980er Kasten auf Schwarz gesetzt. Dabei hatte ich Kleinschreibung und
+weißes Aktivwort richtig als fremden Stil erkannt und ausgeschlossen — beim
+Kasten nicht, **weil er sich so sauber messen ließ.**
+**REGEL: Dass etwas gut messbar ist, macht es nicht zum Inhalt.** Die
+Messbarkeit einer Gestaltungsentscheidung sagt nichts darüber, ob sie
+übernommen werden soll. Vorgabe ist jetzt randlos.
+
+── UND MEIN ZWEITER FEHLER: ICH HABE EINE TECHNISCHE GRENZE ALS HALTUNG
+   VERKLEIDET
+Drei Runden lang habe ich über Content-ID geredet, wo die Antwort schlicht
+lautet: **ich kann aus diesem Container kein Video herunterladen.** YouTube
+antwortet auf Mediendaten mit 403, und `archive.org`, `pixabay`, `pexels`,
+`videos.pexels.com`, `mixkit`, `coverr`, `videvo`, `commons.wikimedia.org`
+sind alle am Egress-Proxy abgewiesen (`connect_rejected`, Gateway 403). Auch
+die gemeinfreien. Das ist Technik, nicht Erlaubnis — und er war zu Recht
+genervt, dass ich das vermischt habe.
+**REGEL: Erst sagen, was nicht geht und warum, dann getrennt davon, was man
+nicht tun will.** Beides zu mischen klingt nach Ausrede und kostet Runden.
+
+── DIE ZAHL, DIE SEINE ENTSCHEIDUNG BETRIFFT, RICHTIGGESTELLT
+Ich hatte gesagt, ein Anspruch träfe „seinen Kanal". Zu grob. Ein
+Content-ID-Anspruch ist **kein Strike** und trifft das Video. Bei Shorts
+**unter einer Minute** — seine sind es — entscheidet der Rechteinhaber
+zwischen tracken, monetarisieren und **sperren**; bei Studios ist Sperren
+üblich. Realistischer Schaden: der Short ist weg, der Kanal bleibt heil.
+**Er hat entschieden, dass er das eingeht. Damit ist es erledigt und wird
+nicht wieder aufgebracht.**
+
+── DER ERSTE ECHTE LAUF: CRAIG MAKHOSI ÜBER *INTO THE WILD*
+Er hat Podcast-Ausschnitt (3:58, 4K) und „B-Roll" in den Drive gelegt.
+**Die B-Roll-Datei ist eine Bildschirmaufnahme des Kinotrailers aus dem
+YouTube-Player** — mit Seitenflächen der Webseite, SUBSCRIBE-Knopf und in den
+ersten zwei Sekunden der Bedienleiste im Bild. Nutzbares Filmbild:
+**2153×913 auf x 244 / y 144**, über die Bewegung zwischen sieben Bildern
+ausgemessen.
+
+**Die Zahl, die alles entscheidet:** ein 9:16-Ausschnitt daraus hat nur
+**513×913 echte Pixel** und müsste **2,10×** hochskaliert werden — neben 4K
+sieht das weich aus. Quadratisch bleiben **913×913**, also **1,18×**.
+Daraus `--broll-modus unschaerfe`: der Film steht quadratisch und fast
+unskaliert scharf in der Mitte, dahinter füllt er sich selbst vergrößert und
+unscharf das Hochformat. **Randlos wie verlangt, ohne den Beschnitt zu
+bezahlen.**
+
+── EIN TRAILER IST KEIN FILM, UND DAS KOSTETE VIER ANLÄUFE
+Eigene Schnitterkennung fand **14** Einstellungen, `ffmpeg`s Szenenerkennung
+**130**. Selbst die 130 reichten nicht: **der Trailer blendet über, statt zu
+schneiden**, und eine Überblendung sieht keine Szenenerkennung. Jeder
+automatisch gesetzte Anfang landete mitten in einer Blende mit zwei Bildern
+übereinander. Gelöst erst durch **dichtes Abtasten (2 Bilder/s) mit
+Zeitmarke und Hinsehen.**
+**REGEL: Für B-Roll aus einem Trailer die Stücke ansehen, nicht errechnen —
+und zwar Anfang, Mitte und Ende, sonst bleibt der Blendenrest unentdeckt.**
+Die sauberen Strecken sind kurz: hier durchweg **0,9–1,9 s**.
+**REGEL: Variable Bildrate zuerst wegrechnen.** Die Datei meldete „29,70 fps
+bei 60 tbr"; vor der Normalisierung auf feste 30 fps war jede Zeitmarke
+unzuverlässig. Das vorher zu tun hätte zwei der vier Anläufe erspart.
+
+── ZWEI FEHLER IM WERKZEUG, DABEI BEHOBEN
+**`faster-whisper` brach ab**, weil es PyAV mit `metadata_errors` aufruft,
+das die installierte Fassung nicht kennt. Der Ton wird jetzt selbst über
+ffmpeg dekodiert und als Feld übergeben.
+**`--srt` rechnete Shorts ganz ohne Untertitel**: Einblendungen ohne
+Wortzeiten fielen in `build_ass` vor dem dafür vorgesehenen Zweig heraus.
+Das gelbe Aktivwort bleibt `--auto-captions` vorbehalten, weil es Wortzeiten
+braucht.
+**Und eine Kleinigkeit mit Zähnen:** `ffmpeg` liest `stdin` und frisst in
+einer Schleife die Eingabeliste auf. `-nostdin` gehört in jeden Aufruf.

@@ -267,3 +267,90 @@ steht, ist weg — genau deshalb nimmt Williamson die Karte. Dagegen hilft
 Motiv steht, wie `--focus` beim Hauptbild. **Bei der Auswahl der Clips zählt
 das:** eine Einstellung, deren Motiv mittig steht, überlebt den Beschnitt;
 eine Totale mit zwei Leuten an den Rändern nicht.
+
+---
+
+## Erster echter Lauf: Craig Makhosi über *Into the Wild* (20.10.2026)
+
+Er hat zwei Dateien in den Drive gelegt und damit genau das getan, worum ich
+gebeten hatte.
+
+| | |
+|---|---|
+| **Podcast** | „YNB Podcast - Craig Makhosi - Ubuntu(1).mp4" · 1,04 GB · **3:58,65** · 3840×2160, HEVC, 30 fps — ein bereits geschnittener Ausschnitt, nicht die ganze Folge |
+| **B-Roll** | „YNB Podcast: Into The Wild" · 274 MB · **2:24,83** · 1206×2622 mit Drehmatrix, zeigt also **2622×1206 quer** |
+
+Beide über `drive.usercontent.google.com` geladen — **1,04 GB in 7 s**. Der
+Konnektor hätte das nicht gekonnt (base64), der Bereichsleser aus
+`drive_fernzugriff.py` kann es.
+
+### Was die B-Roll-Datei wirklich ist
+
+**Eine Bildschirmaufnahme des Kinotrailers aus dem YouTube-Player.** Nicht
+der Film. Im Bild stehen: die Seitenflächen der Webseite, schwarze
+Letterbox-Balken, der **SUBSCRIBE-Knopf**, und in den ersten zwei Sekunden
+sogar die **Bedienleiste des Players** (Rücksprungpfeil, Fortschrittsbalken).
+
+Das nutzbare Filmbild liegt bei **x 244–2396, y 144–1056 → 2153×913**.
+Gemessen über die Bewegung zwischen sieben Bildern: was sich ändert, ist
+Film; was steht, ist Oberfläche.
+
+**Die Folge für die Auflösung, und sie ist die wichtigste Zahl hier:**
+
+| Weg | echte Pixel | auf 1080×1920 |
+|---|---|---|
+| 9:16 herausschneiden | **513×913** | **2,10× hochskaliert** |
+| quadratisch (Modus `unschaerfe` / `karte`) | **913×913** | **1,18×** |
+
+**Ein 9:16-Ausschnitt verwirft 76 % der Bildbreite und muss das Übrige
+vervierfachen.** Neben 4K-Podcastmaterial sieht das weich aus. Deshalb ist
+für diese Quelle `--broll-modus unschaerfe` gebaut worden: der Film steht
+quadratisch und fast unskaliert scharf in der Mitte, dahinter füllt er sich
+selbst vergrößert und unscharf das Hochformat. **Randlos wie verlangt, ohne
+den Beschnitt zu bezahlen.**
+
+### Vier Anläufe, die Einstellungen zu finden — und warum drei scheiterten
+
+Das ist der eigentliche Lerninhalt dieses Laufs.
+
+**1. Eigene Schnitterkennung über Bildänderung (4 Bilder/s, Schwelle 0,35):**
+fand 14 Einstellungen. **Falsch.** Sie verschmolz Einstellungen, die einander
+ähnlich sehen — eine angebliche „10,4 s lange Einstellung" bei 47 s enthielt
+in Wahrheit ein halbes Dutzend.
+
+**2. Dieselbe Erkennung auf der normalisierten Datei:** besser, aber immer
+noch zu grob.
+
+**3. `ffmpeg`s eigene Szenenerkennung (`select='gt(scene,0.18)'`):**
+**130 Schnitte** statt 14 — eine völlig andere Größenordnung, und die
+richtige. Trotzdem lagen die geschnittenen Stücke daneben.
+
+**4. Dicht abgetastet und angesehen (2 Bilder/s, Streifen mit Zeitmarke):**
+erst das hat es gelöst. **Der Trailer blendet über, statt zu schneiden** —
+und eine Szenenerkennung sieht eine Überblendung nicht, weil sich das Bild
+langsam ändert. Deshalb landete jeder automatisch gesetzte Anfang mitten in
+einer Blende, in der zwei Bilder übereinanderliegen.
+
+**REGEL: Ein Trailer ist kein Film.** Er ist in 1–2-Sekunden-Stücken
+geschnitten und hält sie mit Blenden zusammen. Für B-Roll heißt das: die
+sauberen Strecken sind **kurz** (hier durchweg 0,9–1,9 s), und sie müssen
+**angesehen** werden, nicht errechnet. Ein Kontaktabzug der Mittelpunkte
+genügt dafür nicht — es braucht Anfang, Mitte und Ende jedes Stücks, sonst
+sieht man den Blendenrest nicht.
+
+**REGEL: Variable Bildrate macht Zeitmarken unzuverlässig.** Die Datei meldet
+„29,70 fps bei 60 tbr". Einmal auf feste 30 fps umgerechnet
+(`fps=30`, `-g 30`), und alle Zeiten stimmen. Das vorher zu tun hätte mir
+zwei der vier Anläufe erspart.
+
+### Zwei Fehler im eigenen Werkzeug, dabei behoben
+
+**`faster-whisper` brach ab** (`TypeError: open() got an unexpected keyword
+argument 'metadata_errors'`): es ruft PyAV mit einem Argument auf, das die
+hier installierte PyAV-Fassung nicht kennt. **Der Ton wird jetzt selbst über
+ffmpeg dekodiert** (16 kHz Mono float32) und als Feld übergeben — derselbe
+Weg, den der Rest der Datei ohnehin geht.
+
+**`ffmpeg` frisst `stdin`.** Eine Schleife, die ihre Liste aus einem
+Here-Dokument las, verlor nach dem ersten Durchlauf alle weiteren Zeilen.
+`-nostdin` gehört in jeden ffmpeg-Aufruf innerhalb einer Schleife.
