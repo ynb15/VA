@@ -53,9 +53,11 @@ oben links, Kastenmitte bei x = 464.
 
 ### Der orangerote Kasten
 
-**`#DF2C00`.** Nachgemessen über alle sechs: der mit Abstand häufigste Wert ist
-in jedem einzelnen Bild derselbe Farbeimer, `#DE2A00` (Rasterung auf 6er-Stufen),
-Zweitwert `#D82A00` — das ist JPEG-Rand, kein zweiter Farbton. **Bestätigt.**
+**`#DF2D00`** — aus seinem Canva-File abgelesen, nicht mehr geschätzt.
+
+Meine Schätzung aus den JPEGs war `#DF2C00`, in der letzten Ziffer daneben.
+Das Canva-File sagt `#df2d00`, und das ist die Quelle. **Immer diesen Wert
+nehmen.**
 
 Gemessene Geometrie:
 
@@ -128,6 +130,69 @@ seiner Bestätigung: meine Messung schlägt seine Abnahme nicht.
    Der einzelne Kopf in Aufbau B ist **der Gast**, nicht er — in
    `-0NES3TOiIg`, `GxpvzT3rUBQ` und `f79ehF4zP3I` steht dort derselbe
    Gast-Kopf rechts, und Yannick kommt im Bild gar nicht vor.
+
+## Sein Canva-File — die Quelle, nicht mehr die Schätzung
+
+Seit dem 20.10. ist der Connector verbunden. Sein Arbeitsfile heisst
+**`TN: YNB Podcast - Danny`** (`DAHTeSc4G4U`), elf Seiten, je 1280×720. „TN"
+= Thumbnail. Es gibt **keine Brand Templates und kein Autofill** — das File
+ist eine normale Sammlung von Seiten, keine befüllbare Vorlage. Der
+Autofill-Weg ist damit erledigt.
+
+Was direkt daraus kommt, statt gemessen zu werden:
+
+| | Wert | Herkunft |
+|---|---|---|
+| Kastenfarbe | **`#df2d00`** | `paths[].fill.color` |
+| Schriftverweis | `YAFdJjbTu24,1` | `formatting.fontRef` |
+| Ausrichtung | `center` | `formatting.textAlign` |
+| Zeilenabstand | **1,11** (einmal 1,02, einmal 1,22) | `formatting.lineHeight` |
+| Schriftgrade | 104,5 · 107,7 · 116 · 122,2 · 132,6 · 137,9 · 161,3 · 163,8 · 175,0 | `formatting.fontSize` |
+
+### Die Satzregel, die ich vorher falsch hatte
+
+**Ein Textblock hat genau einen Schriftgrad und genau einen Zeilenabstand.**
+Nicht eine eigene Versalhöhe je Zeile. Steht so in jedem `textRegion` seines
+Files. Mein erster Entwurf gab jeder Zeile ihre eigene Grösse — damit wird der
+Zeilenabstand ungleich und der Block franst aus. **Er hat das sofort gesehen
+und benannt.**
+
+### Kastenmasse, aus fünf seiner Kästen gerechnet
+
+Kasten als Rechteck hinter genau einer Zeile, `cornerRounding: 0`:
+
+| Wort | Grad | Tinte | Kasten | Polster seitl. | Höhe / Grad |
+|---|---:|---:|---:|---:|---:|
+| GOD | 116,0 | 264 | 288,2 | 12,1 | 1,010 |
+| Coincidence? | 104,5 | 728 | 747,4 | 9,7 | 1,193 |
+| REALLY | 107,7 | 384 | 406,1 | 11,1 | 0,942 |
+| TRAP | 163,8 | 427 | 452,0 | 12,5 | 1,218 |
+| PAST | 161,3 | 413 | 448,2 | 17,6 | 0,932 |
+
+→ **Polster seitlich ≈ 0,10 × Schriftgrad · Kastenhöhe ≈ 1,01 × Schriftgrad.**
+
+Nebenbei: dass Poppins-Bold-Tintenbreiten bei fünf verschiedenen Wörtern in
+fünf verschiedenen Graden durchweg ein plausibles, gleichmässiges Polster
+ergeben, ist ein weiterer unabhängiger Beleg für die Schrift.
+
+## Die Blickrichtung — die Regel, die ich zuerst gebrochen habe
+
+**Beide schauen nach innen. Er links nach rechts, der Gast rechts nach links.**
+Das steht oben im Bauplan seit der ersten Messung, und ich habe mir trotzdem
+ein Bild ausgesucht, auf dem er geradeaus schaut. Seine Rückmeldung:
+*„Mein Gesicht soll natürlich den Gast anschauen."*
+
+**Das ist nicht verhandelbar und geht der Mimik vor.** Lieber ein etwas
+ruhigeres Gesicht mit richtiger Blickrichtung als ein ausdrucksstarkes, das
+ins Leere schaut.
+
+**Automatisch messen lässt sich das nicht zuverlässig.** Ich habe es über die
+Nase gegen die Augenmitte versucht (YuNet) — bei Profilaufnahmen setzt der
+Detektor die Punkte irgendwohin ins Unscharfe, und das Vorzeichen wird
+Zufall. Geprüft an `y_2695`: Messung sagte „nach links gedreht", das Bild
+zeigt eindeutig nach rechts. **Blickrichtung wird angeschaut, nicht
+gerechnet.** Zur Platzierung taugt YuNet, zur Kopfdrehung nicht.
+
 
 ## Die Platzierung, aus seinen Thumbnails gemessen
 

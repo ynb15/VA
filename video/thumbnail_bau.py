@@ -17,7 +17,10 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
 BREITE, HOEHE = 1280, 720
-KASTEN = (0xDF, 0x2C, 0x00)
+KASTEN = (0xDF, 0x2D, 0x00)   # aus seinem Canva-File, nicht aus dem JPEG geschaetzt
+ZEILENHOEHE = 1.11            # Canva lineHeight, der haeufigste Wert in seinem File
+KASTEN_H = 1.01               # Kastenhoehe / Schriftgrad, Median seiner sieben Kaesten
+KASTEN_PAD = 0.10             # seitliches Polster / Schriftgrad, ebenda
 CAP = 0.700          # Versalhoehe von Poppins in em, gemessen
 HIER = os.path.dirname(os.path.abspath(__file__))
 SCHRIFT = os.path.join(HIER, 'marke', 'Poppins-Bold.ttf')
@@ -122,50 +125,68 @@ def hintergrund(pfad, dunkel=0.08, weich=6.0):
 
 
 def _mass(zeichner, text, font):
-    """Tintenmass eines Wortes: Breite, Versalhoehe, Versatz zur Grundlinie."""
+    """Tintenmass eines Wortes: Breite, Links- und Oben-Versatz."""
     l, t, r, b = zeichner.textbbox((0, 0), text, font=font)
     return r - l, l, t
 
 
-def satz(bild, zeilen, mitte_x, oben_y, nach_links=False):
-    """zeilen: Liste von (text, versalhoehe, kasten?)
+def satz(bild, zeilen, kasten_index, mitte_x=640, mitte_y=360,
+         max_breite=760, max_hoehe=470, grad=None):
+    """Alle Zeilen in EINEM Schriftgrad und EINEM Zeilenabstand setzen.
 
-    Vor und nach einer Kastenzeile kommt etwas mehr Luft, sonst klebt das
-    kleine Wort darueber auf der Kastenkante — in seinen Vorlagen steht dort
-    eine sichtbare Lucke.
+    So macht er es selbst: in seinem Canva-File hat ein Textblock genau einen
+    `fontSize` und genau einen `lineHeight` (meist 1.11), `textAlign: center`.
+    Ein frueherer Entwurf hier gab jeder Zeile eine eigene Versalhoehe — damit
+    wird der Zeilenabstand ungleich und der Block franst aus.
+
+    Der Block wird auf `mitte_y` zentriert. Der Grad wird, wenn nicht gesetzt,
+    so gross gewaehlt wie Breite und Hoehe es zulassen.
     """
     d = ImageDraw.Draw(bild)
-    y = oben_y
-    for i, (text, cap, kasten) in enumerate(zeilen):
-        if kasten and i > 0:
-            y += int(zeilen[i - 1][1] * 0.20)
-        f = ImageFont.truetype(SCHRIFT, int(round(cap / CAP)))
-        br, lx, ty = _mass(d, text, f)
-        polster_x = int(cap * 0.22)          # gemessen: 15-30 px bei cap 82-100
-        polster_o = int(cap * 0.24)
-        polster_u = int(cap * 0.26)
-        if nach_links:
-            x = mitte_x
-        else:
-            x = int(mitte_x - br / 2)
-        if kasten:
-            d.rectangle([x - polster_x, y - polster_o,
-                         x + br + polster_x, y + cap + polster_u], fill=KASTEN)
-        d.text((x - lx, y - ty), text, font=f, fill=(255, 255, 255))
-        y += int(cap * 1.30) + (int(cap * 0.20) if kasten else 0)
-    return bild
+
+    def passt(g):
+        f = ImageFont.truetype(SCHRIFT, g)
+        breit = max(_mass(d, t, f)[0] for t in zeilen)
+        hoch = (len(zeilen) - 1) * g * ZEILENHOEHE + g * CAP
+        return breit <= max_breite and hoch <= max_hoehe
+
+    if grad is None:
+        grad = 60
+        while grad < 175 and passt(grad + 1):
+            grad += 1
+
+    f = ImageFont.truetype(SCHRIFT, grad)
+    cap = grad * CAP
+    schritt = grad * ZEILENHOEHE
+    block = (len(zeilen) - 1) * schritt + cap
+    y = mitte_y - block / 2                      # Oberkante der ersten Versalhöhe
+
+    for i, text in enumerate(zeilen):
+        breit, lx, ty = _mass(d, text, f)
+        x = mitte_x - breit / 2
+        oben = y + i * schritt
+        if i == kasten_index:
+            kh = grad * KASTEN_H
+            kp = grad * KASTEN_PAD
+            ky = oben + cap / 2 - kh / 2
+            d.rectangle([x - kp, ky, x + breit + kp, ky + kh], fill=KASTEN)
+        d.text((x - lx, oben - ty), text, font=f, fill=(255, 255, 255))
+    return bild, grad
 
 
-def bauen(hg, links, rechts, zeilen, ziel, text_mitte=640, text_oben=146,
+def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
+          text_mitte_y=360, max_breite=760, max_hoehe=470, grad=None,
           hg_dunkel=0.08, hg_weich=6.0, ziel_links=None, ziel_rechts=None):
+    """zeilen: Liste von Texten · kasten: Index der Zeile mit dem Kasten."""
     bild = hintergrund(hg, dunkel=hg_dunkel, weich=hg_weich)
     if links:
         kopf_setzen(bild, links, ziel_links or ZIEL_LINKS)
     if rechts:
         kopf_setzen(bild, rechts, ziel_rechts or ZIEL_RECHTS)
-    satz(bild, zeilen, text_mitte, text_oben)
+    _, grad = satz(bild, zeilen, kasten, text_mitte, text_mitte_y,
+                   max_breite, max_hoehe, grad)
     bild.convert('RGB').save(ziel, quality=95)
-    return ziel
+    return ziel, grad
 
 
 if __name__ == '__main__':
@@ -175,4 +196,5 @@ if __name__ == '__main__':
     with open(a.plan) as fh:
         plan = json.load(fh)
     for f in plan:
-        print(bauen(**f))
+        pfad, grad = bauen(**f)
+        print(f'{pfad}  (Schriftgrad {grad})')
