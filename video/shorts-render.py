@@ -56,6 +56,11 @@ GELB_I, WEISS_I = "&H30D5FF&", "&HFFFFFF&"   # dieselben Farben als \\c im Text
 LOOK = ("eq=contrast=1.14:brightness=-0.02:saturation=1.16,"
         "colorbalance=rs=0.04:gs=0.01:bs=-0.05:rm=0.03:bm=-0.03,"
         "vignette=PI/4.5")
+# B-Roll-Karte, ausgemessen an den drei Referenz-Shorts (20.10.2026):
+# quadratisch 980x980 auf x=50/y=470 im 1080x1920-Bild, also 50 px Rand
+# seitlich und senkrecht exakt mittig; Ecken auf 40 px gerundet; ringsum
+# reines Schwarz. Beide B-Roll-Bilder stimmen darin aufs Pixel ueberein.
+BROLL_SEITE, BROLL_RADIUS = 980, 40
 
 
 def tc(s):
@@ -179,7 +184,15 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         roh = [_anzeige(w["t"], gross) for w in woerter]
         roh = [w for w in roh if w]
         if not roh:
-            continue
+            # Einblendungen ohne Wortzeiten — so kommen sie aus --srt — haben
+            # kein `woerter`. Dann gibt es nichts hervorzuheben, aber die
+            # Zeile gehoert trotzdem ins Bild. Vorher fiel sie genau hier
+            # heraus, und --srt rechnete einen Short ohne einen einzigen
+            # Untertitel, ohne eine Zeile Warnung.
+            roh = [_anzeige(t, gross) for t in (c.get("text") or "").split()]
+            roh = [t for t in roh if t]
+            if not roh:
+                continue
         fs = groesse
         if not woerter:
             zeile(c["start"], c["end"], " ".join(roh), c.get("lippe"), fs)
@@ -577,6 +590,83 @@ def _ausschnitt(spec, ziel_h, marke):
     return (f"crop={b}:{h}:{x}:{y},scale={W}:{ziel_h}:flags=lanczos,setsar=1")
 
 
+def broll_lesen(spec):
+    """'12.4:15.8=clip.mp4,20:23=zweit.mp4' -> [(von, bis, datei), ...].
+
+    Zeiten in Clipzeit, wie bei --stumm: das ist die Zeit, in der er die
+    Stelle im Transkript sieht. Auf die Zeit des fertigen Bildes gerechnet
+    wird erst dort, wo der Filter wirklich haengt.
+    """
+    stuecke = []
+    for teil in spec.split(","):
+        teil = teil.strip()
+        if not teil:
+            continue
+        zeit, _, datei = teil.partition("=")
+        if not datei:
+            raise SystemExit(f"--broll: '{teil}' hat keine Datei "
+                             f"(Form: von:bis=datei)")
+        try:
+            von, bis = (float(x) for x in zeit.split(":"))
+        except ValueError:
+            raise SystemExit(f"--broll: '{zeit}' ist kein Zeitpaar von:bis")
+        if bis <= von:
+            raise SystemExit(f"--broll: {von}:{bis} endet nicht nach dem Anfang")
+        if not Path(datei).is_file():
+            raise SystemExit(f"--broll: {datei} gibt es nicht")
+        stuecke.append((von, bis, datei))
+    stuecke.sort(key=lambda s: s[0])
+    for (v1, b1, _), (v2, b2, _) in zip(stuecke, stuecke[1:]):
+        if v2 < b1:
+            raise SystemExit(f"--broll: {v1}:{b1} und {v2}:{b2} ueberlappen")
+    return stuecke
+
+
+def _ecken_alpha(seite, radius):
+    """geq-Ausdruck fuer die Alphamaske einer Karte mit runden Ecken.
+
+    Abstand zur naechsten Ecke nur dort messen, wo man ueberhaupt im
+    Eckviertel ist — sonst ist dx=dy=0 und die Flaeche bleibt voll deckend.
+    Der halbe Pixel Weichheit nimmt die Treppe aus dem Bogen.
+    """
+    r = radius
+    dx = f"max(max({r}-X,X-({seite}-1-{r})),0)"
+    dy = f"max(max({r}-Y,Y-({seite}-1-{r})),0)"
+    return f"clip(({r}-sqrt(pow({dx},2)+pow({dy},2))+0.5)*255,0,255)"
+
+
+def broll_graph(stuecke, quelle, tempo, seite, radius, erste_eingabe):
+    """B-Roll als quadratische Karte auf schwarzem Grund.
+
+    Zwei Dinge passieren je Fenster, und das zweite hatte ich beim ersten
+    Entwurf vergessen: die Karte wird darueber gelegt — UND der Grund wird
+    schwarz. In der Referenz ist waehrend der B-Roll kein Sprecher zu sehen,
+    nur die Karte auf Schwarz. Ohne das Abdunkeln saehe man ihn ringsherum
+    weiterreden.
+
+    `tempo` rechnet die Clipzeit auf die Zeit des fertigen Bildes um, weil
+    dieser Filter hinter `setpts` haengt. Das ist genau der Fehler, der am
+    20.10. die Stummschaltung acht Sekunden zu spaet greifen liess.
+    """
+    x, y = (W - seite) // 2, (H - seite) // 2
+    fenster = [(von / tempo, bis / tempo) for von, bis, _ in stuecke]
+    bed = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b in fenster)
+    teile = [f"{quelle}lutyuv=y=0:u=128:v=128:enable='{bed}'[bgrund]"]
+    letzte = "[bgrund]"
+    alpha = _ecken_alpha(seite, radius)
+    for i, (a, b) in enumerate(fenster):
+        k = erste_eingabe + i
+        teile.append(
+            f"[{k}:v]trim=0:{b - a:.3f},setpts=PTS-STARTPTS+{a:.3f}/TB,"
+            f"scale={seite}:{seite}:force_original_aspect_ratio=increase,"
+            f"crop={seite}:{seite},fps=30,setsar=1,format=rgba,"
+            f"geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='{alpha}'[bk{i}]")
+        teile.append(f"{letzte}[bk{i}]overlay={x}:{y}:"
+                     f"enable='between(t,{a:.3f},{b:.3f})'[bo{i}]")
+        letzte = f"[bo{i}]"
+    return teile, letzte, fenster
+
+
 def plan_graph(schnitte):
     """Filtergraph fuer einen Plan: Bild ohne tote Einstellungen, Ton vollstaendig.
 
@@ -723,6 +813,15 @@ def main():
                          "Logo noch Untertitel")
     ap.add_argument("--klein", action="store_true",
                     help="keine Grossbuchstaben (sein Kanal nutzt Versalien)")
+    ap.add_argument("--broll", default=None,
+                    help="B-Roll als Karte: 'von:bis=datei[,von:bis=datei]', "
+                         "Zeiten in Clipzeit wie bei --stumm. Der Ton der "
+                         "B-Roll wird verworfen, die Stimme laeuft durch.")
+    ap.add_argument("--broll-seite", type=int, default=BROLL_SEITE,
+                    help=f"Kantenlaenge der Karte (Vorgabe {BROLL_SEITE}, "
+                         f"an der Referenz gemessen)")
+    ap.add_argument("--broll-radius", type=int, default=BROLL_RADIUS,
+                    help=f"Eckradius der Karte (Vorgabe {BROLL_RADIUS})")
     ap.add_argument("--look", choices=["warm", "aus"], default="warm",
                     help="warm = der Grading seiner Shorts (Kontrast, warmer "
                          "Stich, Vignette), abgelesen an den Vorschaubildern")
@@ -798,6 +897,23 @@ def main():
         graph.append(f"{v_quelle}{LOOK}[vlook]")
         v_quelle = "[vlook]"
 
+    # B-Roll kommt HINTER den Look und VOR die Untertitel: der Film soll
+    # nicht durch seine warme Gradation laufen (in der Referenz sieht die
+    # B-Roll aus wie Film, nicht wie sein Studio), die Einblendungen sollen
+    # aber darauf stehen.
+    broll = broll_lesen(a.broll) if a.broll else []
+    if broll:
+        graph_b, v_quelle, fenster_b = broll_graph(
+            broll, v_quelle, a.tempo, a.broll_seite, a.broll_radius, 1)
+        graph += graph_b
+        for (von, bis, datei), (fa, fb) in zip(broll, fenster_b):
+            print(f"  B-Roll {von:.2f}-{bis:.2f} Clipzeit "
+                  f"-> {fa:.2f}-{fb:.2f} im Bild ({fb - fa:.2f}s): "
+                  f"{os.path.basename(datei)}")
+        print(f"  Karte {a.broll_seite}x{a.broll_seite} auf "
+              f"x={(W - a.broll_seite) // 2}/y={(H - a.broll_seite) // 2}, "
+              f"Radius {a.broll_radius}, Grund schwarz")
+
     with tempfile.TemporaryDirectory() as td:
         cues = None
         if a.auto_captions:
@@ -843,6 +959,11 @@ def main():
         if dur and not a.plan:
             cmd += ["-t", str(dur)]
         naechste = 1
+        for _, _, datei in broll:
+            # Nur das Bild wird gebraucht; -an haelt den Ton der B-Roll
+            # von vornherein draussen, damit nie zwei Stimmen laufen.
+            cmd += ["-an", "-i", datei]
+            naechste += 1
 
         if a.logo:
             cmd += ["-i", a.logo]

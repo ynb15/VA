@@ -48,6 +48,16 @@ in derselben Runde zu ändern hat seine Rückmeldung unbrauchbar gemacht.
 fertigen Videos — für den Weg über CapCut Desktop (Untertitel → Untertitel
 hinzufügen).
 
+**`--broll von:bis=datei`** legt eine B-Roll als **quadratische Karte
+980×980 auf x=50 / y=470** über das Bild, Ecken auf 40 px gerundet, Grund
+währenddessen schwarz — an den drei Referenz-Shorts ausgemessen, die er am
+20.10. geschickt hat (`video/broll-referenz.md`). Zeiten in **Clipzeit**, wie
+bei `--stumm`; auf die Bildzeit gerechnet wird im Filter. **Der Ton der B-Roll
+wird gar nicht erst eingelesen** (`-an`), die Stimme läuft unverändert durch —
+nachgemessen: abtastwertgenau gleich bis 10,967 s von 11,008 s, danach
+437 Werte um höchstens 9 von 32768 daneben, das ist der Schwanz des
+AAC-Enkoders. Untertitel und Logo liegen darüber.
+
 **`--marke x0,y0,x1,y1`** hält den Ausschnitt aus einem schon eingebrannten
 Logo heraus. Für den Podcast-Master gemessen: `0,875,215,1080`. Ohne das
 steht in der Totale sein Logo zweimal im Bild.

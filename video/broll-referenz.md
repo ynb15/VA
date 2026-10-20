@@ -171,3 +171,68 @@ wie lang eine B-Roll-Einstellung steht und wie oft sie kommt. Aus einem
 Einzelbild je Short ist das nicht zu holen. Vorschlag zum Einstieg, als
 Vorschlag gekennzeichnet: **2–4 s je Einstellung, nur dort, wo der Satz ein
 Bild hergibt** — und dann an seiner Korrektur nachgezogen, wie alles andere.
+
+---
+
+## Gebaut und nachgemessen (20.10.2026)
+
+`--broll von:bis=datei[,von:bis=datei]` steht in `video/shorts-render.py`.
+Zeiten in **Clipzeit**, wie bei `--stumm`.
+
+**Die Kette hängt hinter dem Look und vor den Untertiteln.** Begründung:
+in der Referenz sieht die B-Roll aus wie Film, nicht wie sein Studio — sie
+soll also nicht durch die warme Gradation laufen. Die Einblendungen sollen
+aber darauf stehen, und das tun sie.
+
+**Zwei Dinge je Fenster, und das zweite ist das, was es überhaupt erst wie
+die Referenz aussehen lässt:** die Karte wird darübergelegt **und der Grund
+wird schwarz** (`lutyuv` mit Zeitfenster). Ohne das Abdunkeln säße die Karte
+mitten im weiterredenden Sprecher.
+
+### Am fertigen Bild gemessen, nicht am Vorhaben
+
+| | Referenz | mein Ergebnis |
+|---|---|---|
+| Kasten x | 50–1029 (980 px) | **50–1029 (980 px)** |
+| Kasten y | 470–1449 (980 px) | **470–1449 (980 px)** |
+| Seitenverhältnis | 1,000 | **1,000** |
+| außerhalb | schwarz | **maximale Helligkeit 0,0** |
+| außerhalb des Fensters | randlos 9:16 | **x 0–1079, y 0–1919** |
+
+**Der Ton ist nicht angefasst.** Dieselbe Quelle einmal mit und einmal ohne
+`--broll` gerechnet, beide auf 16-kHz-Mono dekodiert:
+**abtastwertgenau gleich bis 10,967 s von 11,008 s.** Danach weichen
+437 Werte ab, der größte um **9 von 32768** — 88 dB unter dem Signal. Das ist
+der Schwanz des AAC-Enkoders, kein Eingriff. `-an` hält den Ton der B-Roll
+von vornherein draußen, damit nie zwei Stimmen laufen.
+
+**Rechenzeit:** 11 s Short mit 3,2 s B-Roll in **18,6 s**. Ohne B-Roll sind
+es 6,9 s. Die runden Ecken kommen aus `geq`, das je Pixel rechnet — das sind
+die rund 12 Sekunden Unterschied. Fällt das je ins Gewicht, wird die Maske
+einmal als Bild erzeugt und mit `alphamerge` aufgelegt; gebraucht wurde es
+bisher nicht.
+
+### Dabei aufgefallen: `--srt` rendert keine Untertitel
+
+**Ein Fehler, der schon vorher drinstand und nichts mit B-Roll zu tun hat.**
+In `build_ass` fiel jede Einblendung ohne Wortzeiten vor dem dafür
+vorgesehenen Zweig heraus — und aus `--srt` kommen Einblendungen immer ohne
+Wortzeiten. Ergebnis: `--srt clip.srt` rechnete einen Short **ohne einen
+einzigen Untertitel, ohne eine Zeile Warnung.** Der Weg steht so in
+`video/README.md`.
+
+Behoben: ohne Wortzeiten steht die Zeile als Ganzes im Bild. **Das gelbe
+Aktivwort gibt es auf diesem Weg nicht** — dafür braucht es Wortzeiten, also
+`--auto-captions`. Wer den vollen Look will, nimmt den.
+
+### Was noch offen ist, und von ihm abhängt
+
+- **Wie lang eine Einstellung steht und wie oft sie kommt.** Aus einem
+  Einzelbild je Referenz nicht zu holen. Vorschlag 2–4 s, dann an seiner
+  Korrektur nachgezogen.
+- **Logo während der B-Roll.** Steht jetzt weiter im Bild, unterhalb der
+  Karte auf dem schwarzen Grund. In den drei Referenzen ist keines zu sehen.
+  Ein Zeitfenster am Logo-Overlay wäre ein Einzeiler — **nicht ungefragt
+  geändert.**
+- **Übergang.** Zur Zeit harter Schnitt in die Karte und heraus. Ob die
+  Referenz blendet, ist aus Einzelbildern nicht zu sehen.
