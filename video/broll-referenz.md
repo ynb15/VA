@@ -236,3 +236,34 @@ Aktivwort gibt es auf diesem Weg nicht** — dafür braucht es Wortzeiten, also
   geändert.**
 - **Übergang.** Zur Zeit harter Schnitt in die Karte und heraus. Ob die
   Referenz blendet, ist aus Einzelbildern nicht zu sehen.
+
+---
+
+## Korrektur vom 20.10., noch am selben Abend: Vollbild, nicht Karte
+
+**„Ich will's Vollbild lassen. Ich habe dir gesagt, lass meinen Stil. Das
+Einzige, was ich von Chris Williamson kopieren möchte, sind die filmischen
+B-Rolls."**
+
+Er hat recht, und der Fehler ist sauber zu benennen: **ich habe Williamsons
+Rahmen für den Inhalt gehalten.** Der 980er Kasten auf Schwarz ist *dessen*
+Handschrift — genauso eine Stilentscheidung wie Kleinschreibung und weißes
+Aktivwort, die ich beide richtig als fremd erkannt hatte. Beim Kasten habe
+ich es nicht getan, weil er sich so sauber messen ließ. **Dass etwas gut
+messbar ist, macht es nicht zum Inhalt.**
+
+`--broll-modus vollbild` ist jetzt die Vorgabe: B-Roll füllt 1080×1920 wie
+jede andere Einstellung seiner Shorts. Gemessen am Ergebnis: **Inhalt
+x 0–1079, y 0–1919, schwarze Ränder null auf allen vier Seiten.** Untertitel
+und Logo liegen darüber wie gehabt.
+
+Die Karte bleibt als `--broll-modus karte`, weil sie gebaut und belegt ist —
+sie steht nur nicht mehr im Weg.
+
+**Der Preis des randlosen Wegs, und er gehört dazu:** aus einem 16:9-Film
+bleiben im 9:16-Fenster **31,6 % der Breite** übrig. Was links und rechts
+steht, ist weg — genau deshalb nimmt Williamson die Karte. Dagegen hilft
+`--broll-fokus 0..1`, das den Ausschnitt waagrecht dorthin schiebt, wo das
+Motiv steht, wie `--focus` beim Hauptbild. **Bei der Auswahl der Clips zählt
+das:** eine Einstellung, deren Motiv mittig steht, überlebt den Beschnitt;
+eine Totale mit zwei Leuten an den Rändern nicht.

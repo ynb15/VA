@@ -635,32 +635,55 @@ def _ecken_alpha(seite, radius):
     return f"clip(({r}-sqrt(pow({dx},2)+pow({dy},2))+0.5)*255,0,255)"
 
 
-def broll_graph(stuecke, quelle, tempo, seite, radius, erste_eingabe):
-    """B-Roll als quadratische Karte auf schwarzem Grund.
+def broll_graph(stuecke, quelle, tempo, modus, seite, radius, fokus,
+                erste_eingabe):
+    """B-Roll ueber das Bild legen — randlos oder als Karte.
 
-    Zwei Dinge passieren je Fenster, und das zweite hatte ich beim ersten
-    Entwurf vergessen: die Karte wird darueber gelegt — UND der Grund wird
-    schwarz. In der Referenz ist waehrend der B-Roll kein Sprecher zu sehen,
-    nur die Karte auf Schwarz. Ohne das Abdunkeln saehe man ihn ringsherum
-    weiterreden.
+    **Vorgabe ist randlos**, weil das sein Bild ist: 1080x1920 gefuellt, wie
+    jede andere Einstellung seiner Shorts auch. Die quadratische Karte auf
+    Schwarz ist Williamsons Rahmen, nicht seiner — sie bleibt als `--broll-
+    modus karte` erhalten, weil sie ausgemessen und gebaut ist, steht aber
+    nicht mehr im Weg.
+
+    Preis des randlosen Wegs, und der gehoert dazu: aus einem 16:9-Film
+    bleiben im 9:16-Fenster **31,6 % der Breite** uebrig. Was links und
+    rechts steht, ist weg. Deshalb `--broll-fokus`, das den Ausschnitt waag-
+    recht schiebt — wie `--focus` beim Hauptbild.
 
     `tempo` rechnet die Clipzeit auf die Zeit des fertigen Bildes um, weil
     dieser Filter hinter `setpts` haengt. Das ist genau der Fehler, der am
     20.10. die Stummschaltung acht Sekunden zu spaet greifen liess.
     """
-    x, y = (W - seite) // 2, (H - seite) // 2
     fenster = [(von / tempo, bis / tempo) for von, bis, _ in stuecke]
-    bed = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b in fenster)
-    teile = [f"{quelle}lutyuv=y=0:u=128:v=128:enable='{bed}'[bgrund]"]
-    letzte = "[bgrund]"
+    teile, letzte = [], quelle
+
+    if modus == "karte":
+        # Nur hier wird der Grund schwarz: die Karte deckt das Bild nicht ab,
+        # ohne das Abdunkeln saehe man ihn ringsherum weiterreden.
+        bed = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b in fenster)
+        teile.append(f"{quelle}lutyuv=y=0:u=128:v=128:enable='{bed}'[bgrund]")
+        letzte = "[bgrund]"
+
     alpha = _ecken_alpha(seite, radius)
     for i, (a, b) in enumerate(fenster):
         k = erste_eingabe + i
-        teile.append(
-            f"[{k}:v]trim=0:{b - a:.3f},setpts=PTS-STARTPTS+{a:.3f}/TB,"
-            f"scale={seite}:{seite}:force_original_aspect_ratio=increase,"
-            f"crop={seite}:{seite},fps=30,setsar=1,format=rgba,"
-            f"geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='{alpha}'[bk{i}]")
+        kopf = (f"[{k}:v]trim=0:{b - a:.3f},setpts=PTS-STARTPTS+{a:.3f}/TB,")
+        if modus == "karte":
+            teile.append(
+                kopf
+                + f"scale={seite}:{seite}:force_original_aspect_ratio=increase,"
+                f"crop={seite}:{seite},fps=30,setsar=1,format=rgba,"
+                f"geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='{alpha}'[bk{i}]")
+            x, y = (W - seite) // 2, (H - seite) // 2
+        else:
+            # Randlos: auf Hoehe bringen, dann das 9:16-Fenster waagrecht
+            # dorthin schieben, wo das Motiv steht.
+            teile.append(
+                kopf
+                + f"scale={W}:{H}:force_original_aspect_ratio=increase,"
+                f"crop={W}:{H}:(iw-{W})*{min(max(fokus, 0.0), 1.0)}:(ih-{H})/2,"
+                f"fps=30,setsar=1[bk{i}]")
+            x, y = 0, 0
         teile.append(f"{letzte}[bk{i}]overlay={x}:{y}:"
                      f"enable='between(t,{a:.3f},{b:.3f})'[bo{i}]")
         letzte = f"[bo{i}]"
@@ -817,11 +840,19 @@ def main():
                     help="B-Roll als Karte: 'von:bis=datei[,von:bis=datei]', "
                          "Zeiten in Clipzeit wie bei --stumm. Der Ton der "
                          "B-Roll wird verworfen, die Stimme laeuft durch.")
+    ap.add_argument("--broll-modus", choices=["vollbild", "karte"],
+                    default="vollbild",
+                    help="randlos 1080x1920 (Vorgabe, sein Bild) oder als "
+                         "quadratische Karte auf Schwarz (Williamsons Rahmen)")
+    ap.add_argument("--broll-fokus", type=float, default=0.5,
+                    help="0..1 schiebt das 9:16-Fenster waagrecht durch die "
+                         "B-Roll — aus 16:9 bleiben nur 31,6 %% der Breite")
     ap.add_argument("--broll-seite", type=int, default=BROLL_SEITE,
-                    help=f"Kantenlaenge der Karte (Vorgabe {BROLL_SEITE}, "
-                         f"an der Referenz gemessen)")
+                    help=f"nur bei --broll-modus karte: Kantenlaenge "
+                         f"(Vorgabe {BROLL_SEITE}, an der Referenz gemessen)")
     ap.add_argument("--broll-radius", type=int, default=BROLL_RADIUS,
-                    help=f"Eckradius der Karte (Vorgabe {BROLL_RADIUS})")
+                    help=f"nur bei --broll-modus karte: Eckradius "
+                         f"(Vorgabe {BROLL_RADIUS})")
     ap.add_argument("--look", choices=["warm", "aus"], default="warm",
                     help="warm = der Grading seiner Shorts (Kontrast, warmer "
                          "Stich, Vignette), abgelesen an den Vorschaubildern")
@@ -904,15 +935,20 @@ def main():
     broll = broll_lesen(a.broll) if a.broll else []
     if broll:
         graph_b, v_quelle, fenster_b = broll_graph(
-            broll, v_quelle, a.tempo, a.broll_seite, a.broll_radius, 1)
+            broll, v_quelle, a.tempo, a.broll_modus, a.broll_seite,
+            a.broll_radius, a.broll_fokus, 1)
         graph += graph_b
         for (von, bis, datei), (fa, fb) in zip(broll, fenster_b):
             print(f"  B-Roll {von:.2f}-{bis:.2f} Clipzeit "
                   f"-> {fa:.2f}-{fb:.2f} im Bild ({fb - fa:.2f}s): "
                   f"{os.path.basename(datei)}")
-        print(f"  Karte {a.broll_seite}x{a.broll_seite} auf "
-              f"x={(W - a.broll_seite) // 2}/y={(H - a.broll_seite) // 2}, "
-              f"Radius {a.broll_radius}, Grund schwarz")
+        if a.broll_modus == "karte":
+            print(f"  Karte {a.broll_seite}x{a.broll_seite} auf "
+                  f"x={(W - a.broll_seite) // 2}/"
+                  f"y={(H - a.broll_seite) // 2}, "
+                  f"Radius {a.broll_radius}, Grund schwarz")
+        else:
+            print(f"  randlos {W}x{H}, Fokus {a.broll_fokus:.2f}")
 
     with tempfile.TemporaryDirectory() as td:
         cues = None
