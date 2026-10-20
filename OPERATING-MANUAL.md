@@ -8191,3 +8191,14 @@ eigene Messung berufen.** Der Content Assistant liefert Entwürfe und benennt
 das Gemessene; die Abnahme bleibt bei ihm. Hochladen tut er nichts — das
 fällt unter „nichts geht raus", und das gilt für jeden Agenten, nicht nur
 für mich.
+
+── NACHTRAG 20.10., 15:55: ER RÄUMT DEN POSTEINGANG DOCH AUF
+Zwischen 14:19 und 15:55 sind vier Rundbriefe aus dem Posteingang in den
+Papierkorb gewandert und Walkers Mail ist gelesen. Ungelesen: von 6 auf 2.
+**Das widerlegt nichts** — die Regel vom 12.10. („an einem MagicMonday ist
+der Kalender die Spur, nicht die Mailbox") galt Montagen, und heute ist
+Dienstag. Aber es korrigiert den Eindruck, der sich daraus aufbaute, der
+Posteingang sei bei ihm tote Materie. **Er triagiert, nur nicht täglich.**
+Folge für die Messung: der Zähler „ungelesen" fällt auch ohne eine einzige
+neue Mail, und ein Rückgang ist deshalb kein Fehler in meiner Zählung,
+sondern eine Handlung von ihm. Beides getrennt notieren.
