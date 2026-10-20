@@ -8101,3 +8101,50 @@ lauteste — sonst gewinnt immer die heiß ausgesteuerte Aufnahme.
 (Korrelation untereinander +0,59 bis +0,81, Pegel −33, −47, −58 dB). Es
 sieht nach Übersprechen aus, oder eine davon ist ein Raum-/Summenmikrofon.
 Und es gibt keine Spur 3.
+
+═══════════════════════════════════════════════════════════════════
+AB 20.10.2026: DER SWEEP LÄUFT EINMAL AM TAG, NICHT STÜNDLICH
+───────────────────────────────────────────────────────────────────
+
+Von ihm selbst, im Chat am 20.10.2026:
+
+> „Kannst du dieses stündliche Sweeping mal ausschalten? Das reicht, wenn
+> du das einmal am Tag machst, irgendwie so um 16 Uhr."
+
+`trig_01FnmMyeG9ynGwbzNxwnSQLu` steht jetzt auf
+`CRON_TZ=Africa/Johannesburg 54 15 * * *` und heißt
+**„Alfred — täglicher Sweep"**. Vorher: `0 0-3,12-23 * * *` UTC, also
+zwanzig Läufe am Tag.
+
+**Warum 15:54 und nicht 16:00:** auf der vollen Stunde feuert alles
+gleichzeitig, und Läufe auf der Null verzögern sich. Der Versatz ist
+hausgemacht und bewusst klein.
+
+**Was beim Hineinsehen am gespeicherten Auftrag falsch war** — seit Wochen,
+unbemerkt, weil ich ihn nie gelesen habe, sondern immer nur ausgeführt:
+1. „Runs hourly" — jetzt falsch.
+2. **Die Board-URL war die alte** (`claude.ai/code/artifact/36c602cc-…`),
+   die laut `MIGRATION.md` seit der Umstellung tot ist. Hätte ich sie je
+   aus dem Auftrag genommen statt aus dem Handbuch, hätte ich ins Leere
+   veröffentlicht.
+3. „Timezone: America/Chicago (Austin)" — am 18.10. von ihm selbst
+   überholt, im Handbuch korrigiert, im Auftrag nicht.
+Alle drei sind korrigiert.
+
+**REGEL: der gespeicherte Auftrag ist auch ein Dokument und veraltet wie
+jedes andere.** Er wird mitgepflegt, wenn sich etwas ändert, das in ihm
+steht — nicht nur das Handbuch. Und: eine Angabe aus dem Auftrag gilt nur,
+solange das Handbuch ihr nicht widerspricht. Das Handbuch sticht.
+
+**Folge für die Form:** ein Tagessweep deckt einen Tag ab, keine Stunde.
+Das Postfenster und beide Kalenderfenster werden entsprechend weiter
+gelesen — `newer_than:2h` reicht nicht mehr.
+
+── NACHTRAG: DER TONABZUG DER FERTIGEN FOLGE BRACH BEI 74,6 VON 101,4 MIN AB
+`video/ton_holen.py` endete ohne Fehlermeldung nach 11,87 von 16,1 GB —
+der Dekodierlauf lief einfach aus. Vermutlich ist der Bestätigungslink von
+Drive nach 37 Minuten abgelaufen; belegt ist das nicht. **Für die Sache
+war es folgenlos**, weil der Versatz Roh ↔ Schnitt an elf Stellen bis
+Minute 72 gemessen ist und überall 12,2 s beträgt. **Offen, falls wieder
+gebraucht:** einen Neuversuch des Bereichslesers einbauen, der den
+Bestätigungslink erneuert, statt den Abbruch als Dateiende zu lesen.
