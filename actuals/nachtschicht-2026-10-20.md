@@ -16,3 +16,35 @@ Letzter bekannter Stand seines Branches beim Start: `11355ed`.
   Kosten bisher 93 $. Kontext wächst mit rund 30k je Stunde; die Grenze von
   850k läge damit gegen 04:30, das Ende bei 1000k gegen 08:30. Der sechste
   Short sollte lange davor fertig sein.
+- **00:40** · **COMPLETED**, fertig um 22:01 · Kontext **662k**/1000k ·
+  neuer Commit: `e802b25` *„Serie ‚What makes life meaningful': sechs Shorts,
+  Werkzeug und Befunde"* · Maßnahme: **keine**
+  — **Der Auftrag ist durch.** Sein stündlicher Weckruf
+  (`trig_01UmYDUo6zh61YrybiqyD5kg`) ist weg; genau so war die
+  Abbruchbedingung gesetzt. Alle sechs geschnitten und per `SendUserFile`
+  ausgeliefert: Sutcliffe, Aaronson, Ken Stern, Logan Gonzalez, Matt Defina,
+  Rick Strassman — im abgenommenen Sutcliffe-Format, ohne B-Rolls.
+  Kosten gesamt 96 $, Laufzeit rund neun Stunden.
+
+### Was im Commit steht, und was davon über diese Nacht hinaus zählt
+
+**Im Repo liegen nur die `.srt`.** Die sechs `.mp4` sind per `SendUserFile`
+in seinen Chat mit dem Content Assistant gegangen — `video/shorts/*.mp4`
+steht in `.gitignore`. Zu finden sind sie also dort, nicht im Branch.
+
+**Drei Container-Einsammlungen während des Laufs**, jedes Mal mit
+abgebrochenen Prozessen, „kein OOM, nichts im Protokoll; nohup und setsid
+helfen beide nicht". Genau dagegen hat er `video/frage_am_ende.py` gebaut:
+wiederaufnehmbar, erkennt am Dateistand, was fertig ist. **Das ist die
+belastbare Antwort auf Nachtläufe**, nicht das Wecken.
+
+**Er ist unabhängig in denselben Drive-Fehler gelaufen wie ich:** ein
+Bereichsabruf über 600 s lieferte 192 s und meldete trotzdem Erfolg. Seine
+Lösung sind 210-s-Stücke; meine von heute Nachmittag ist die Prüfung von
+Status und Länge in `drive_fernzugriff.py` mit Wiederholung. **Zwei
+Umgehungen desselben Fehlers auf zwei Branches** — gehört zusammengeführt,
+aber das ist seine Entscheidung, nicht meine.
+
+**Offen und ihm vorzulegen:** das Ende von Rick Strassmans Short — der
+Assistent hat den kürzeren Bogen gewählt und das ausdrücklich als Frage an
+ihn offengelassen.
