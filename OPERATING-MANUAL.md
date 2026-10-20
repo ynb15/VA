@@ -8256,3 +8256,63 @@ dem Kinn, 0,61 umgekehrt. Genommen: **0,57**, neu als
 — drei Bänder über ein Standbild, das kostet zwei Minuten und erspart eine
 Runde. Dasselbe gilt für `--zoom`: 1.15 schnitt hier die Kopfoberkante ab,
 weil der Studioschnitt schon eng ist. Hier 1.0.
+
+═══════════════════════════════════════════════════════════════════════════════
+NACHTSCHICHT: WER DIE AGENTEN BEAUFSICHTIGT, WENN ER SCHLÄFT
+═══════════════════════════════════════════════════════════════════════════════
+
+Von ihm selbst, am 20.10.2026:
+
+> „Ich habe den Laptop zugemacht und ganz klar gesagt, dass er weiterarbeiten
+> soll, aber dann hat er immer wieder aufgehört. Scheinbar brauchen wir
+> jemanden, der das immer wieder kontrolliert und zusieht, dass es weiterläuft
+> — damit ich am nächsten Tag, wenn ich zurück zur Arbeit kehre, die Aufgaben
+> auch wirklich abgearbeitet sind."
+
+── ERST NACHSEHEN, DANN BAUEN
+Bevor irgendetwas gebaut wurde: `get_session` und `list_triggers`. Befund:
+**der Content Assistant hatte sich den Wecker längst selbst gestellt.**
+`trig_01UmYDUo6zh61YrybiqyD5kg`, stündlich, in die eigene Session, mit einem
+wiederholbaren Skript (`weiter.py`), das am Dateistand erkennt, was schon
+fertig ist — und mit einer Abbruchbedingung: wenn alle sechs Shorts
+ausgeliefert sind, löscht er den Trigger selbst.
+**Die Hälfte der gewünschten Lösung stand also schon, und sie war gut.** Wer
+das nicht nachsieht, baut sie ein zweites Mal daneben.
+
+── WARUM EIN AGENT NACHTS AUFHÖRT, UND WAS DAGEGEN HILFT
+Ein Agent *schläft* nicht — wenn sein Zug zu Ende ist, läuft nichts mehr. Nur
+eine Nachricht weckt ihn. Drei Gründe, warum eine Nacht trotzdem verfällt:
+1. **Containerneustart.** Hintergrundprozesse sterben mit. Seine eigene
+   Diagnose, wörtlich im Sitzungstitel: *„Container-Neustart killt Prozesse."*
+   **Gegenmittel: ein wiederholbares Skript, das am Dateistand erkennt, wo es
+   steht** — nicht ein langer Lauf, der von vorn anfangen müsste.
+2. **Kontextgrenze.** Nach fünf Stunden Arbeit stand er bei **592k von 1000k
+   Token.** Davor hilft kein Wecken: wer voll ist, bleibt voll. Hier hilft nur
+   ein Nachfolger mit Übergabe — und der kostet einen neuen Container samt
+   aller Downloads, also **nicht eigenmächtig, sondern ihn fragen.**
+3. **Eine echte Sperre.** Drive-Tageslimit, fehlende Datei, fehlende Freigabe.
+   Anstupsen macht das nur teurer. **Melden, nicht wiederholen.**
+
+── DIE AUFSICHT
+`trig_0156BzMV3hgSDPWTcz79u3G5` — „Alfred — Nachtschicht-Aufsicht",
+`CRON_TZ=Africa/Johannesburg 40 21,0,3,6 * * *`, feuert in diese Session.
+Je Durchgang: Trigger-Liste (weg = fertig), `get_session` (Status und
+Kontextstand), neue Commits auf seinem Branch als Beleg für Fortschritt.
+Dann **höchstens eine** Maßnahme: anstupsen, melden, oder nichts.
+Eine Zeile nach `actuals/nachtschicht-<Datum>.md`, committen, pushen.
+**Nachts nichts im Chat** — außer es hängt an etwas, das nur er lösen kann.
+**Um 06:40 der Morgenbericht, höchstens fünf Zeilen.**
+
+**REGEL: die Aufsicht übernimmt die Arbeit nicht.** Wenn der Content Assistant
+nicht weiterkommt, ist das ein Befund, kein Grund einzuspringen. Sonst gibt es
+morgens zwei halbe Ergebnisse auf zwei Branches statt einem ganzen.
+
+**REGEL: einmal anstupsen, nicht zweimal aus demselben Grund.** Ein Agent, der
+auf das erste Wecken nicht reagiert, reagiert auch auf das vierte nicht — er
+ist blockiert, und das ist eine andere Diagnose.
+
+── WAS DAS KOSTET, UND WARUM ER ES WISSEN MUSS
+Der Content Assistant hat in fünf Stunden betreuter Arbeit **86 $** verbraucht.
+Eine unbeaufsichtigte Nacht in dieser Größenordnung ist kein Rundungsfehler.
+**Die Taktung ist deshalb seine Entscheidung, nicht meine** — gesagt, nicht
+verschwiegen, und leicht zu ändern.
