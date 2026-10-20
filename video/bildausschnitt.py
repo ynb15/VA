@@ -206,9 +206,33 @@ def _kasten(mitte_x, qb, qh, seitenverhaeltnis, zoom=1.0, kopf_oben=None):
     return x, y, bb, bh
 
 
+def marke_meiden(kasten, marke, qb, qh):
+    """Schiebt den Ausschnitt aus einem eingebrannten Logo heraus.
+
+    Der Master traegt sein YNB-Logo schon unten links im Bild. In den
+    Nahaufnahmen liegt es ausserhalb des 9:16-Ausschnitts, in der Totale
+    nicht — dort stand es im fertigen Short neben dem Logo, das wir selbst
+    darueberlegen. Erst nach oben ausweichen (das Bild bleibt auf der
+    Person), erst wenn das nicht reicht, nach rechts.
+    """
+    if not marke:
+        return kasten
+    mx0, my0, mx1, my1 = marke
+    x, y, bb, bh = kasten
+    if x >= mx1 or x + bb <= mx0 or y >= my1 or y + bh <= my0:
+        return kasten
+    y_neu = my0 - bh
+    if y_neu >= 0:
+        return x, y_neu, bb, bh
+    x_neu = mx1
+    if x_neu + bb <= qb:
+        return x_neu, y, bb, bh
+    return kasten
+
+
 def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=0,
                abstand=0.2, zoom=1.0, kein_stapel=False,
-               zeile_folgt=False):
+               zeile_folgt=False, marke=None):
     zeiten, klein, (qb, qh) = _graustufen_folge(pfad, abstand=abstand)
     if len(klein) < 2:
         raise SystemExit("Zu wenige Bilder gelesen.")
@@ -260,6 +284,7 @@ def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=0,
                                  int(grob[0] / sx), int((grob[0] + grob[2]) / sx))
             kasten = _kasten(x, qb, qh, ZIEL_V, zoom=zoom,
                              kopf_oben=oben if zoom > 1.0 else None)
+            kasten = marke_meiden(kasten, marke, qb, qh)
             # Die Zeile bleibt auf einer Hoehe, auch wenn die Kamera auf
             # die Totale wechselt — sein Wunsch vom 20.10.: „es kann auf der
             # gleichen Hoehe bleiben." Das Auge hat die Zeile dann immer am
@@ -333,12 +358,21 @@ if __name__ == "__main__":
     ap.add_argument("--lippe-versatz", type=int, default=0,
                     help="Pixel, um die die Untertitel zusaetzlich nach unten "
                          "ruecken")
+    ap.add_argument("--marke", default=None,
+                    help="x0,y0,x1,y1 eines schon eingebrannten Logos in der "
+                         "Quelle; der Ausschnitt weicht ihm aus. Fuer den "
+                         "Podcast-Master gemessen: 0,875,215,1080")
     a = ap.parse_args()
+    marke = None
+    if a.marke:
+        marke = tuple(int(v) for v in a.marke.split(","))
+        if len(marke) != 4:
+            raise SystemExit("--marke braucht vier Werte: x0,y0,x1,y1")
     plan, groesse, bezug = plan_bauen(a.clip, totanteil=a.totanteil,
                                       lippe_versatz=a.lippe_versatz,
                                       abstand=a.abstand, zoom=a.zoom,
                                       kein_stapel=a.kein_stapel,
-                                      zeile_folgt=a.zeile_folgt)
+                                      zeile_folgt=a.zeile_folgt, marke=marke)
     print(f"Bezugsbewegung {bezug:.2f} · {len(plan)} Einstellungen")
     for p in plan:
         mark = "TOT " if p["tot"] else "    "

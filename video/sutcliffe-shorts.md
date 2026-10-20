@@ -233,3 +233,84 @@ kam der Fall nicht vor; die Mechanik steht für den Fall, dass er kommt.
 die Zeile sitzt deshalb an einer festen Höhe unter dem oberen Kopf statt an
 dessen Lippe. Dafür bräuchte es Lippenbewegung je Person; machbar, aber noch
 nicht gebaut.
+
+---
+
+## Sechste Runde, 20.10. — „der Ton ist irgendwie anders"
+
+**Ja, und zwar aus einem Grund, den ich fünf Runden lang übersehen habe: der
+Master ist ungemastert.** Gemessen nach EBU R128 liegt er bei **−30,9 LUFS**,
+Spitze −4,8 dBFS. Shorts laufen bei etwa **−14 LUFS**. Der fertige Short trug
+diesen Pegel unverändert weiter — rund 17 LU leiser als alles andere auf dem
+Kanal, und genau so klingt er: dünn und fern.
+
+Dazu ein zweiter Sprung, den ich erst durch die Messung gesehen habe: das
+Outro liegt bei **−24,9 LUFS**, also 6,5 LU über dem Hauptteil. Am Übergang
+ging der Pegel hörbar hoch.
+
+`--laut` (Vorgabe −14 LUFS) normalisiert jetzt **Hauptteil und Outro auf
+dasselbe Ziel**, bevor sie aneinandergesetzt werden. Kette: Hochpass 80 Hz,
+milder Kompressor (−26 dB, 3:1), `loudnorm`, Begrenzer auf −1 dBTP. Gemessen
+am Ergebnis: Hauptteil −14,5 LUFS, Outro −14,4 LUFS, Spitze −1,4 dBFS. Die
+Dynamik schrumpft dabei von 32,7 auf 30,4 dB — es pumpt also nicht. Der
+Rauschboden steigt mit, von −62,7 auf −44,2 dB; bei Sprache auf −18 dB sind
+das 26 dB Abstand, und entrauscht wird bewusst nicht: Artefakte auf einer
+Stimme sind schlimmer als leises Raumrauschen.
+
+**Zeitdehnung jetzt über `rubberband` statt `atempo`.** An derselben Passage
+gemessen: `atempo=1.2` hebt die spektrale Flachheit um 8 % und die Energie
+über 6 kHz um 11 % — das ist die Rauheit, die WSOLA beim stückweisen
+Zusammensetzen erzeugt. `rubberband` bleibt in beiden Werten darunter.
+Zeittreue geprüft: die stummen Fenster liegen im Ergebnis 0,03–0,04 s neben
+dem Sollwert, also innerhalb eines Bildes.
+
+### Der zweite Einwurf — und wie man ihn findet
+
+Dein Hinweis war der richtige: **„du siehst es doch, wenn die Kamera auf ihn
+wechselt."** Der Master schneidet bei Clipsekunde 19,28 auf David, und genau
+davor liegt der Einwurf. Was ihn von Sprache trennt, ist nicht die Tonhöhe —
+beide Stimmen liegen bei 100–140 Hz, und ein Vergleich der Spektren über
+0,3 s trennt sie nicht (Ähnlichkeit zu David 0,72, zu Dir selbst 0,68–0,76,
+also gar nichts). Was trennt, ist **Pegel plus Einbettung**: sein Mikrofon
+steht heißer. Die Suche läuft jetzt über alle Läufe über −27 dB von 0,10 bis
+0,90 s Dauer, die auf beiden Seiten innerhalb von 0,2 s unter −45 dB fallen.
+Über den ganzen Clip trifft das zwölf Stellen; **zwei davon stechen heraus:**
+
+| Clipzeit | Spitze | |
+|---|---|---|
+| 19,20–19,41 | **−15,6 dB** | David, Schnitt auf ihn bei 19,28 |
+| 49,56–49,86 | **−19,7 dB** | David, in der Totale |
+
+Die übrigen zehn liegen bei −23 bis −27 dB — das sind Deine eigenen Silben
+nach einer Atempause. Beide Einwürfe sind jetzt stumm (gemessen −240 dB).
+Dass „like" direkt davor liegt, ist kein Problem: das Wort endet bei 19,13,
+danach fällt der Pegel auf −50 dB, und „vulnerability" setzt erst bei 19,65
+wieder ein.
+
+### Zwei Logos im Bild
+
+In der Totale trug der fertige Short **Dein Logo doppelt**: einmal das, das
+schon im Master eingebrannt ist (gemessen x 0–215, y 875–1080 im
+1920×1080-Bild), und einmal unseres in der Mitte. In den Nahaufnahmen fällt
+das eingebrannte aus dem 9:16-Fenster heraus, in der Totale nicht.
+`bildausschnitt.py --marke 0,875,215,1080` schiebt den Ausschnitt jetzt
+darüber — der Kasten der Totale wandert von `75:280` auf `75:75`, alle
+anderen bleiben unverändert.
+
+```
+python3 video/bildausschnitt.py clip.mp4 --zoom 1.35 --kein-stapel \
+        --marke 0,875,215,1080 --json plan.json
+
+python3 video/shorts-render.py --src clip.mp4 --plan plan.json \
+        --tempo 1.2 --dehnung rubberband --laut -14 \
+        --auto-captions --lang en --model medium \
+        --korrekturen video/korrekturen.txt \
+        --stumm 19.15:19.56,49.50:49.99 \
+        --logo marke/ynb-logo-weiss.png --logo-breite 700 --logo-hoehe 0.877 \
+        --outro marke/outro_9_16.mov --out short.mp4
+```
+
+**Offen:** zwischen zwei Einblendungen bleibt das Bild kurz ohne Text — an der
+längsten Stelle 1,5 s (Clipsekunde 6,18–7,66), weil dort wirklich eine Pause
+ist. Die Zeile stehen zu lassen, bis die nächste kommt, wäre ein Einzeiler;
+ich habe es nicht ungefragt geändert.

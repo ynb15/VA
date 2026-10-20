@@ -26,6 +26,19 @@ Drei Dinge, die aus der ersten Runde am Sutcliffe-Master gelernt sind
   zusammengesetzt, und deshalb bleiben die Untertitelzeiten gueltig.
   Verworfen: den toten Abschnitt samt Ton herausschneiden. Das zerreisst den
   Satz, der darueber laeuft, und verschiebt alle folgenden Zeiten.
+
+Aus der sechsten Runde (20.10.2026, „der Ton ist irgendwie anders“):
+
+* `--laut` — der Master kommt ungemastert aus der Kamera und liegt bei
+  -31 LUFS. Shorts laufen bei etwa -14 LUFS. Ohne Angleichung klingt ein
+  Short aus dem Master duenn und fern neben allem anderen auf dem Kanal,
+  und das Outro (-24,9 LUFS) springt am Ende um 6,5 LU nach oben. Die
+  Kette normalisiert Hauptteil und Outro auf dasselbe Ziel, bevor sie
+  aneinandergesetzt werden.
+* `--dehnung rubberband` statt `atempo`. Gemessen an derselben Passage hebt
+  `atempo=1.2` die spektrale Flachheit um 8 % und die Energie ueber 6 kHz um
+  11 % — das ist die Rauhheit, die WSOLA beim Zusammensetzen erzeugt.
+  `rubberband` bleibt darunter.
 """
 import argparse, json, os, re, subprocess, sys, tempfile
 from pathlib import Path
@@ -486,6 +499,42 @@ def mittlerer_pegel(datei, dauer=None):
     return None
 
 
+def lautheit(datei, dauer=None):
+    """Integrierte Lautheit (LUFS) und wahre Spitze (dBTP) nach EBU R128.
+
+    `volumedetect` taugt dafuer nicht: es misst den quadratischen Mittelwert
+    ueber alles, Pausen eingerechnet. Fuer die Frage \u201eklingt das so laut wie
+    seine anderen Shorts\u201c zaehlt die gegatete Lautheit.
+    """
+    cmd = [FFMPEG, "-hide_banner"]
+    if dauer:
+        cmd += ["-t", str(dauer)]
+    cmd += ["-i", datei, "-af", "ebur128=peak=true", "-f", "null", os.devnull]
+    p = subprocess.run(cmd, capture_output=True, text=True)
+    lufs = spitze = None
+    for zeile in p.stderr.splitlines():
+        t = zeile.strip()
+        if t.startswith("I:") and "LUFS" in t:
+            lufs = float(t.split()[1])
+        elif t.startswith("Peak:") and "dBFS" in t:
+            spitze = float(t.split()[1])
+    return lufs, spitze
+
+
+def lautheit_kette(ziel):
+    """Filterkette, die Sprache auf `ziel` LUFS bringt.
+
+    Vor dem `loudnorm` steht ein milder Kompressor: aus -31 LUFS auf -14 sind
+    17 dB, und die will man nicht allein ueber den Begrenzer holen. Gemessen
+    schrumpft die Dynamik dabei nur von 32,7 auf 30,4 dB, es pumpt also
+    nicht. Danach ein Begrenzer gegen einzelne Spitzen.
+    """
+    return ("highpass=f=80,"
+            "acompressor=threshold=-26dB:ratio=3:attack=5:release=150:makeup=1,"
+            f"loudnorm=I={ziel}:TP=-1.5:LRA=9,"
+            "alimiter=limit=-1dB:level=disabled")
+
+
 def probe_size(src):
     p = subprocess.run([FFMPEG, "-hide_banner", "-i", src],
                        capture_output=True, text=True)
@@ -625,6 +674,15 @@ def main():
                          "Stimme und Bett gemessen")
     ap.add_argument("--musik-unter", type=float, default=8.0,
                     help="dB, die das Bett unter der Stimme liegt")
+    ap.add_argument("--dehnung", choices=("rubberband", "atempo"),
+                    default="rubberband",
+                    help="Verfahren fuer --tempo. atempo (WSOLA) setzt den Ton "
+                         "stueckweise neu zusammen und wird dabei messbar "
+                         "rauher; rubberband bleibt sauberer.")
+    ap.add_argument("--laut", default="-14",
+                    help="Ziellautheit in LUFS fuer Hauptteil UND Outro, "
+                         "'aus' laesst den Pegel wie er ist. Der Master liegt "
+                         "bei -31 LUFS, Shorts laufen bei etwa -14.")
     ap.add_argument("--stumm", default=None,
                     help="Zeitfenster im Clip, die stumm geschaltet werden, "
                          "z. B. 49.50:49.98,12.1:12.4 — fuer Zwischenrufe des "
@@ -696,11 +754,15 @@ def main():
     if a.tempo != 1.0:
         graph.append(f"{v_quelle}setpts=PTS/{a.tempo}[vt]")
         v_quelle = "[vt]"
-        if a_quelle.startswith("["):
-            graph.append(f"{a_quelle}atempo={a.tempo}[at]")
+        if a.dehnung == "rubberband":
+            dehner = (f"rubberband=tempo={a.tempo}:transients=crisp"
+                      ":pitchq=quality")
         else:
-            graph.append(f"[{a_quelle.rstrip('?')}]atempo={a.tempo}[at]")
+            dehner = f"atempo={a.tempo}"
+        ein = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
+        graph.append(f"{ein}{dehner}[at]")
         a_quelle = "[at]"
+        print(f"  Tempo {a.tempo}x ueber {a.dehnung}")
 
     if a.look == "warm":
         graph.append(f"{v_quelle}{LOOK}[vlook]")
@@ -788,14 +850,29 @@ def main():
             a_quelle = "[amix]"
             naechste += 1
 
+        ziel = None if a.laut.strip().lower() == "aus" else float(a.laut)
+        if ziel is not None:
+            gemessen, spitze = lautheit(a.src, dauer=clip_laenge)
+            if gemessen is not None:
+                print(f"  Quelle {gemessen:.1f} LUFS, Spitze {spitze:.1f} dBFS"
+                      f" -> {ziel:.1f} LUFS")
+            stimme = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
+            graph.append(f"{stimme}{lautheit_kette(ziel)}[alaut]")
+            a_quelle = "[alaut]"
+
         if a.outro:
             cmd += ["-i", a.outro]
             graph.append(f"[{naechste}:v]scale={W}:{H}:"
                          f"force_original_aspect_ratio=decrease,"
                          f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30,"
                          f"format=yuv420p[ov]")
-            graph.append(f"[{naechste}:a]aformat=sample_fmts=fltp:"
-                         f"sample_rates=48000:channel_layouts=stereo[oa]")
+            outro_ton = (f"[{naechste}:a]aformat=sample_fmts=fltp:"
+                         f"sample_rates=48000:channel_layouts=stereo")
+            if ziel is not None:
+                # Das Outro liegt bei -24,9 LUFS, der angeglichene Hauptteil
+                # bei -14. Ohne diesen Schritt springt der Ton am Uebergang.
+                outro_ton += "," + lautheit_kette(ziel)
+            graph.append(outro_ton + "[oa]")
             stimme = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
             graph.append(f"{letzte}format=yuv420p[vm]")
             graph.append(f"{stimme}aformat=sample_fmts=fltp:sample_rates=48000:"

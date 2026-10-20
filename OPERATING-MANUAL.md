@@ -7915,3 +7915,49 @@ YouTube-Shorts-App hinzu (dort ist sie lizenziert) · oder er gibt einen der
 drei Hosts im Netzwerkzugriff frei, dann hole ich gemeinfreie Stücke selbst.
 Die Mischung steht: Loop, Ein- und Ausblendung, Absenkung unter der Stimme,
 Pegel gemessen statt geraten.
+
+── NACHTRAG 20.10., SECHSTE RUNDE: „DER TON IST IRGENDWIE ANDERS" — JA
+**Er hatte recht, und die Ursache lag fünf Runden lang offen herum: der Master
+ist ungemastert.** Gemessen nach EBU R128: **−30,9 LUFS**, Spitze −4,8 dBFS.
+Shorts laufen bei etwa **−14 LUFS**. Der Short trug diesen Pegel unverändert
+weiter, also rund 17 LU unter allem anderen auf seinem Kanal — und genau so
+klingt er: dünn und fern. Dazu ein zweiter Sprung, den erst die Messung zeigte:
+das Outro liegt bei **−24,9 LUFS**, 6,5 LU über dem Hauptteil.
+`--laut` (Vorgabe −14) normalisiert jetzt **Hauptteil und Outro auf dasselbe
+Ziel**, bevor sie aneinandergesetzt werden. Ergebnis gemessen: −14,5 / −14,4
+LUFS, Spitze −1,4 dBFS, Dynamik nur von 32,7 auf 30,4 dB geschrumpft.
+**Regel: `volumedetect` beantwortet die Frage nicht.** Es mittelt über alles,
+Pausen eingerechnet. Für „klingt das so laut wie seine anderen Shorts" zählt
+die gegatete Lautheit — `ebur128`.
+
+**Zeitdehnung jetzt `rubberband`, nicht `atempo`.** An derselben Passage
+gemessen hebt `atempo=1.2` die spektrale Flachheit um 8 % und die Energie über
+6 kHz um 11 % — das ist die Rauheit, die WSOLA erzeugt, wenn sie den Ton
+stückweise neu zusammensetzt. Zeittreue geprüft: die stummen Fenster liegen
+0,03–0,04 s neben dem Soll, also innerhalb eines Bildes.
+
+── WIE MAN EINEN ZWISCHENRUF FINDET (ZWEITER ANLAUF)
+**Sein Hinweis war die Lösung: „du siehst es doch, wenn die Kamera auf ihn
+wechselt."** Der Master schneidet bei Clipsekunde 19,28 auf David — der
+Einwurf liegt unmittelbar davor. **Das Bild hat die Antwort getragen, und ich
+hatte es nicht angesehen.**
+**Was nicht trennt:** die Tonhöhe. Beide liegen bei 100–140 Hz. Auch ein
+Spektrenvergleich über 0,3 s trennt nicht — Ähnlichkeit zum bekannten
+David-Einwurf 0,72, zu Yannick selbst 0,68–0,76. Das ist kein Befund, und ich
+habe den Ansatz verworfen statt ihn schönzurechnen.
+**Was trennt:** Pegel plus Einbettung. Davids Mikrofon steht heißer. Gesucht
+wird über alle Läufe über −27 dB, 0,10–0,90 s lang, die auf beiden Seiten
+innerhalb 0,2 s unter −45 dB fallen. Zwölf Treffer im ganzen Clip, **zwei
+stechen heraus: 19,20–19,41 bei −15,6 dB und 49,56–49,86 bei −19,7 dB.** Die
+übrigen zehn liegen bei −23 bis −27 dB, das sind seine eigenen Silben nach
+einer Atempause. Beide Einwürfe jetzt stumm, nachgemessen −240 dB.
+
+── SEIN LOGO STAND ZWEIMAL IM BILD
+In der Totale trug der Short das eingebrannte Logo des Masters (gemessen
+x 0–215, y 875–1080) **neben** dem, das wir selbst darüberlegen. In den
+Nahaufnahmen fällt das eingebrannte aus dem 9:16-Fenster, in der Totale nicht.
+`bildausschnitt.py --marke 0,875,215,1080` weicht aus — erst nach oben, damit
+das Bild auf der Person bleibt, erst dann nach rechts. Der Kasten der Totale
+wandert von `75:280` auf `75:75`, alle anderen bleiben unverändert.
+**Regel für jede fremde Quelle: nachsehen, was schon im Bild steht, bevor man
+etwas darüberlegt.**
