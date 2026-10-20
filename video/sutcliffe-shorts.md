@@ -108,6 +108,14 @@ Minute Arbeit.**
 | **genau drei Wörter** | Statt ein einzelnes Wort zum Nachbarn zu schieben (das machte vier), werden die Wörter einer durchgehenden Strecke **neu aufgeteilt**: vier werden 2+2, sieben werden 3+2+2. Über ein Satzende hinweg wird nichts umverteilt. |
 | **eine Zeile je Einblendung** | Die Schriftgröße gilt **je Einblendung**: Grundgröße 78, und nur wo es nötig ist, wird verkleinert. `CALLED THE HYPERMASCULINITY` läuft so auf einer Zeile, ohne dass alle anderen kleiner werden. |
 
+**Fünfte Runde, 20.10.:** Satzgrenzen aus dem Tonpegel statt aus Whispers
+Zeitstempeln · eine Schriftgröße für alle, dafür werden zu breite
+Einblendungen geteilt (`CALLED THE` + `HYPERMASCULINITY`) · Schriftbreiten
+ausgemessen statt geschätzt · `~`-Muster in der Korrekturliste, weil Whisper
+denselben Namen von Lauf zu Lauf anders buchstabiert (`endotades`,
+`endotates`, `endate`) · Sutcliffes zweiter Einwurf bei 49,5 s stummgeschaltet
+statt herausgeschnitten, damit das Bild ruhig bleibt.
+
 **Zwei Fehler, die dabei auffielen:**
 
 **`CALLED THE HYPER`** — die Korrektur `hyper masculinity → hypermasculinity`

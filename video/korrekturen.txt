@@ -19,3 +19,4 @@ gilmore -> Gilmore
 yannick -> Yannick
 sutcliffe -> Sutcliffe
 hyper masculinity -> hypermasculinity
+~^endo.?t[ae]d?t?e?s?$ -> Andrew Tates

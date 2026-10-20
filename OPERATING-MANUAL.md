@@ -7876,3 +7876,42 @@ jeden Short**, nicht nur für diesen.
 Bindestriche als eigene Vorsilbe (`hyper` + `-masculinity`). Wer beim
 Wortvergleich nur Satzzeichen abschneidet, findet die Korrektur nicht.
 Außen alles Nichtalphanumerische weg.
+
+── NACHTRAG 20.10., FÜNFTE RUNDE: DREI MESSFEHLER UND EINE GRENZE
+
+**1. Whispers Zeitstempel und Satzzeichen tragen nicht.** Mit
+`word_timestamps` zieht es Wortenden an den nächsten Wortanfang — die Lücke
+ist dann 0,00 s, auch wenn 0,24 s Stille liegen. Die Zeichensetzung fällt mal
+weg (`strength` statt `strength.`), die Abschnittsgrenzen ebenso. Deshalb
+kommen die Satzgrenzen jetzt **aus dem Tonpegel**: 20-ms-Fenster, Stille ab
+0,24 s unter −45 dB. An der Stelle, an der `expression of strength` in
+`most men` überging, liegen 0,24 s bei −59 dB — genau dort gehört der Schnitt
+in der Zeile hin.
+
+**2. Geschätzte Schriftbreiten brechen Zeilen um.** Zwei Einblendungen liefen
+auf zwei Zeilen, weil mein Schätzwert je Zeichen daneben lag — und weil die
+Grundgröße 88 war, nicht die 78, gegen die ich gerechnet hatte. Jetzt ist die
+Breite **ausgemessen**: Probezeilen im echten Stil rendern, weiße Pixel zählen.
+`MMM` ist 0,80 je Zeichen breit, `III` 0,27, normale Versalien 0,61.
+**Regel: wenn das Ergebnis im Bild steht, miss es im Bild.**
+
+**3. Ein Filter wirkt dort, wo er in der Kette steht.** Die Stummschaltung lag
+hinter `atempo` und griff deshalb 8 Sekunden zu spät — der Zwischenruf blieb
+hörbar, und ich hätte es fast übersehen. Jetzt steht sie davor, und die
+Zeitfenster sind Clipzeit. **Nach jedem Eingriff am Ton nachmessen, nicht
+nachdenken:** 20-ms-RMS über die Stelle, −120 dB oder es hat nicht gegriffen.
+
+── MUSIK: WAS NICHT GEHT, UND WAS GEHT
+Er schlug vor, die Titel seiner Spotify-Liste „YNBs Epic Shorts" über einen
+YouTube-MP3-Downloader zu holen. **Das mache ich nicht.** Das sind
+Handelsaufnahmen (Max Richter, Nicholas Britell, The Irrepressibles) — ein
+Short damit fängt sich binnen Minuten einen Content-ID-Anspruch auf **seinem**
+Kanal ein. Der Schaden träfe ihn, nicht mich.
+**Und selbst der legale Weg ist hier zu:** `freepd.com`, `musopen.org` und
+`incompetech.com` weist der Egress-Proxy ab (`connect_rejected`).
+**Die drei Wege, die bleiben:** er legt Titel in den Drive-Ordner, den er
+ohnehin schon freigegeben hat · er fügt die Musik nach dem Upload in der
+YouTube-Shorts-App hinzu (dort ist sie lizenziert) · oder er gibt einen der
+drei Hosts im Netzwerkzugriff frei, dann hole ich gemeinfreie Stücke selbst.
+Die Mischung steht: Loop, Ein- und Ausblendung, Absenkung unter der Stimme,
+Pegel gemessen statt geraten.

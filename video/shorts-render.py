@@ -76,17 +76,23 @@ def _anzeige(wort, gross):
 
 
 def _breite_em(text):
-    """Grobe Textbreite in Geviert, um die Schrift einpassen zu koennen."""
+    """Textbreite in Geviert — an DejaVu Sans Bold ausgemessen, nicht geraten.
+
+    Gemessen wurde, indem Probezeilen in genau dem Stil gerendert und die
+    weissen Pixel gezaehlt wurden: `COMPLETELY SUPPRESS` ist 11,59 Geviert
+    breit, `MMM` 0,80 je Zeichen, `III` 0,27. Mit geschaetzten Werten lagen
+    zwei Einblendungen daneben und brachen auf zwei Zeilen um.
+    """
     b = 0.0
     for c in text:
         if c == " ":
-            b += 0.32
+            b += 0.30
         elif c in "IJl'\u2019":
-            b += 0.33
+            b += 0.27
         elif c in "MW":
-            b += 0.86
+            b += 0.80
         else:
-            b += 0.64
+            b += 0.61
     return b
 
 
@@ -99,10 +105,10 @@ def build_ass(cues, path, marginv=320, tempo=1.0, tiefer=0, gross=True,
     Gelb. Dafuer wird je Wort eine eigene Zeile ausgegeben, die alle Woerter
     der Einblendung zeigt und nur eines einfaerbt.
 
-    **Die Schriftgroesse gilt je Einblendung, nicht fuer alle.** Sein Wunsch
-    ist eine Zeile pro Einblendung; drei kurze Woerter und
-    `CALLED THE HYPERMASCULINITY` sind aber nicht gleich breit. Also wird nur
-    dort verkleinert, wo es noetig ist — der Rest bleibt gross.
+    **Eine Schriftgroesse fuer alle.** Dass eine einzelne Einblendung kleiner
+    gesetzt ist als die davor, faellt auf — sein Einwand vom 20.10. Dass die
+    Zeile passt, erledigt das Packen in `_packen`: zu breite Einblendungen
+    werden geteilt, nicht verkleinert.
     """
     head = f"""[Script Info]
 ScriptType: v4.00+
@@ -137,8 +143,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         roh = [w for w in roh if w]
         if not roh:
             continue
-        fs = min(groesse, int(nutzbar / max(_breite_em(" ".join(roh)), 0.1)))
-        fs = max(fs, 46)
+        fs = groesse
         if not woerter:
             zeile(c["start"], c["end"], " ".join(roh), c.get("lippe"), fs)
             continue
@@ -169,7 +174,14 @@ def korrekturen_lesen(pfad):
         zeile = zeile.split("#")[0].strip()
         if "->" in zeile:
             falsch, richtig = (t.strip() for t in zeile.split("->", 1))
-            if falsch:
+            if not falsch:
+                continue
+            if falsch.startswith("~"):
+                # Muster statt fester Schreibweise: Whisper buchstabiert
+                # denselben Namen von Lauf zu Lauf anders — `endotades`,
+                # `endotates`, `endate`. Eine Liste jagt dem ewig hinterher.
+                paare[re.compile(falsch[1:], re.I)] = richtig.split()
+            else:
                 paare[tuple(falsch.lower().split())] = richtig.split()
     return paare
 
@@ -192,15 +204,23 @@ def korrekturen_anwenden(woerter, paare):
     """
     if not paare:
         return woerter
-    maxlen = max(len(k) for k in paare)
+    muster = {k: v for k, v in paare.items() if hasattr(k, "search")}
+    feste = {k: v for k, v in paare.items() if not hasattr(k, "search")}
+    maxlen = max((len(k) for k in feste), default=1)
     raus, i = [], 0
     while i < len(woerter):
         treffer = None
         for n in range(min(maxlen, len(woerter) - i), 0, -1):
             schluessel = tuple(_kern(w["t"]) for w in woerter[i:i + n])
-            if schluessel in paare:
-                treffer = (n, paare[schluessel])
+            if schluessel in feste:
+                treffer = (n, feste[schluessel])
                 break
+        if not treffer:
+            kern = _kern(woerter[i]["t"])
+            for re_k, ersatz in muster.items():
+                if kern and re_k.fullmatch(kern):
+                    treffer = (1, ersatz)
+                    break
         if not treffer:
             raus.append(woerter[i]); i += 1
             continue
@@ -252,17 +272,78 @@ def srt_to_cues(srt_path, offset=0.0):
     return cues
 
 
-def _aufteilen(n, worte):
-    """Wortzahlen fuer eine Strecke: moeglichst gleich gross, nie eins allein."""
-    if n <= worte:
-        return [n]
-    k = -(-n // worte)
-    basis, rest = divmod(n, k)
-    return [basis + 1] * rest + [basis] * (k - rest)
+def stillen_finden(clip, mindest=0.24, schwelle=-45.0):
+    """Echte Sprechpausen aus dem Ton holen.
+
+    Warum nicht aus Whisper: mit `word_timestamps` zieht es die Wortenden an
+    den naechsten Wortanfang heran — die Luecke ist dann 0,00 s, auch wenn in
+    Wahrheit eine Viertelsekunde Stille liegt. Und die Zeichensetzung faellt
+    mal weg (`strength` statt `strength.`), die Abschnittsgrenzen ebenso.
+    Gemessen am Pegel ist die Pause dagegen eindeutig: an der Stelle, an der
+    `expression of strength` in `most men` ueberging, liegen 0,24 s bei
+    -59 dB. Genau dort gehoert der Schnitt in der Zeile hin.
+    """
+    import tempfile as tf
+    with tf.TemporaryDirectory() as td:
+        roh = os.path.join(td, "ton.raw")
+        run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", clip,
+             "-ac", "1", "-ar", "16000", "-f", "s16le", roh])
+        import numpy as np
+        a = np.fromfile(roh, dtype="<i2").astype(float) / 32768
+    import numpy as np
+    fenster = 320                      # 20 ms
+    n = len(a) // fenster
+    if n < 2:
+        return []
+    rms = np.sqrt((a[:n * fenster].reshape(n, fenster) ** 2).mean(axis=1))
+    db = 20 * np.log10(np.maximum(rms, 1e-6))
+    leise = db < schwelle
+    stillen, start = [], None
+    for i, ist in enumerate(leise):
+        if ist and start is None:
+            start = i
+        elif not ist and start is not None:
+            if (i - start) * 0.02 >= mindest:
+                stillen.append((start * 0.02, i * 0.02))
+            start = None
+    if start is not None and (n - start) * 0.02 >= mindest:
+        stillen.append((start * 0.02, n * 0.02))
+    return stillen
+
+
+def _packen(woerter, worte, max_em):
+    """Woerter einer Strecke zu Einblendungen packen.
+
+    Zwei Schranken: hoechstens `worte` Woerter, und die Zeile muss bei
+    EINER Schriftgroesse auf EINE Zeile passen. Sein Einwand vom 20.10.:
+    `CALLED THE HYPERMASCULINITY` kleiner zu setzen als den Rest faellt auf.
+    Also wird die Einblendung geteilt, nicht die Schrift verkleinert —
+    `CALLED THE` und `HYPERMASCULINITY` stehen beide gross da.
+    """
+    gruppen, akt = [], []
+    for w in woerter:
+        kand = akt + [w]
+        text = " ".join(_anzeige(x["t"], True) for x in kand)
+        if akt and (len(kand) > worte or _breite_em(text) > max_em):
+            gruppen.append(akt)
+            akt = [w]
+        else:
+            akt = kand
+    if akt:
+        gruppen.append(akt)
+    # Ein einzelnes Wort am Ende holt sich eines vom Vorgaenger, solange der
+    # dabei nicht selbst zu einem einzelnen wird und die Zeile passt.
+    if len(gruppen) >= 2 and len(gruppen[-1]) == 1 and len(gruppen[-2]) >= 3:
+        kand = gruppen[-2][-1:] + gruppen[-1]
+        text = " ".join(_anzeige(x["t"], True) for x in kand)
+        if _breite_em(text) <= max_em:
+            gruppen[-2] = gruppen[-2][:-1]
+            gruppen[-1] = kand
+    return gruppen
 
 
 def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
-                 pause=0.45):
+                 pause=0.45, max_em=11.8):
     """Wortgenaue Zeiten fuer den bereits geschnittenen Clip.
 
     `worte` ist die Zahl der Woerter je Einblendung — drei, sein Wunsch vom
@@ -289,6 +370,14 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
              if w.word.strip()]
     flach = korrekturen_anwenden(flach, paare)
 
+    # Pausen aus dem Ton: sie markieren die Satzgrenzen, die Whisper
+    # verschluckt. Jede Stille schliesst das Wort ab, das vor ihr beginnt.
+    nach_stille = set()
+    for von, bis in stillen_finden(clip):
+        kandidaten = [i for i, w in enumerate(flach) if w["start"] < von]
+        if kandidaten:
+            nach_stille.add(kandidaten[-1])
+
     cues, buf = [], []
 
     def schliessen(buf, grund):
@@ -302,6 +391,8 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
         luecke = (naechstes["start"] - w["end"]) if naechstes else 99
         if w["t"].endswith((".", "?", "!", "…")):
             grund = "satz"
+        elif i in nach_stille:
+            grund = "stille"
         elif naechstes and naechstes.get("seg") != w.get("seg"):
             grund = "abschnitt"
         elif luecke > pause:
@@ -343,10 +434,11 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
         offen = bool(geglaettet) and geglaettet[-1][-1]["grund"] == "voll"
         if offen:
             geglaettet[-1].extend(lauf)
-        elif laenge == 1 and geglaettet and geglaettet[-1][-1]["grund"] == "pause":
+        elif (laenge == 1 and geglaettet
+              and geglaettet[-1][-1]["grund"] in ("pause", "stille")):
             geglaettet[-1][-1]["grund"] = "voll"
             geglaettet[-1].extend(lauf)
-        elif laenge == 1 and lauf[-1]["grund"] == "pause":
+        elif laenge == 1 and lauf[-1]["grund"] in ("pause", "stille"):
             lauf[-1]["grund"] = "voll"      # nimmt die naechste Strecke auf
             geglaettet.append(lauf)
         else:
@@ -355,11 +447,7 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
 
     zusammen = []
     for lauf in laeufe:
-        rest = [w for c in lauf for w in c["woerter"]]
-        teile = []
-        for groesse in _aufteilen(len(rest), worte):
-            teile.append(rest[:groesse])
-            rest = rest[groesse:]
+        teile = _packen([w for c in lauf for w in c["woerter"]], worte, max_em)
         for k, teil in enumerate(teile):
             # Innerhalb einer Strecke steht die naechste Einblendung sofort da,
             # damit es nicht zwischen jedem Dreier kurz schwarz wird.
@@ -517,7 +605,7 @@ def main():
     ap.add_argument("--tiefer", type=int, default=0,
                     help="Pixel, um die die Zeile zusaetzlich nach unten "
                          "rueckt; der Plan setzt die Hoehe schon unter die Lippe")
-    ap.add_argument("--schriftgroesse", type=int, default=88)
+    ap.add_argument("--schriftgroesse", type=int, default=78)
     ap.add_argument("--korrekturen", default="video/korrekturen.txt",
                     help="Liste falsch -> richtig fuer die Untertitel")
     ap.add_argument("--pause", type=float, default=0.45,
@@ -537,6 +625,10 @@ def main():
                          "Stimme und Bett gemessen")
     ap.add_argument("--musik-unter", type=float, default=8.0,
                     help="dB, die das Bett unter der Stimme liegt")
+    ap.add_argument("--stumm", default=None,
+                    help="Zeitfenster im Clip, die stumm geschaltet werden, "
+                         "z. B. 49.50:49.98,12.1:12.4 — fuer Zwischenrufe des "
+                         "Gegenuebers, die den Fluss stoeren")
     ap.add_argument("--outro", default=None,
                     help="Clip, der hinten angehaengt wird; wird auf 1080x1920 "
                          "und 30 Bilder gebracht, bekommt aber weder Look noch "
@@ -586,6 +678,20 @@ def main():
                  f"scale={W}:{H}:flags=lanczos,setsar=1[vcat]"]
         marginv = a.marginv if a.marginv is not None else 320
         v_quelle, a_quelle = "[vcat]", "0:a?"
+
+    if a.stumm:
+        # Ein kurzes „Yeah" des Gegenuebers zwischen zwei Saetzen bricht den
+        # Fluss. Stummschalten statt herausschneiden: das Bild laeuft weiter,
+        # der Schnitt bleibt ruhig, und die Pause war ohnehin da.
+        fenster = []
+        for teil in a.stumm.split(","):
+            von, bis = (float(x) for x in teil.split(":"))
+            fenster.append(f"between(t,{von},{bis})")
+        quelle = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
+        graph.append(f"{quelle}volume=enable='{'+'.join(fenster)}':volume=0[astumm]")
+        a_quelle = "[astumm]"
+        print(f"  {len(fenster)} Fenster stummgeschaltet (vor dem Tempo, "
+              f"also in Clipzeit)")
 
     if a.tempo != 1.0:
         graph.append(f"{v_quelle}setpts=PTS/{a.tempo}[vt]")
