@@ -8038,3 +8038,66 @@ rund 100 px, rechts rund 150, unten rund 380 von 1080×1920.
 **Der Ton ist unverändert:** die Tonspur ist bitgenau dieselbe wie in der
 fünften Runde (`cmp` auf 16-kHz-Mono). Nach der siebten Runde wird am Ton
 nichts mehr angefasst, solange er nicht danach fragt.
+
+═══════════════════════════════════════════════════════════════════════════════
+DIE AARONSON-FOLGE HAT ROHDATEIEN — ECHTES MULTICAM IST AB JETZT MÖGLICH
+═══════════════════════════════════════════════════════════════════════════════
+
+Am 20.10.2026 hat er die Rohdateien in seinen eigenen Drive kopiert
+(`1Z5ioNa6P2Rn_TjHZOBHjUKQaxYyokb_L`). Damit ist die Frage aus
+`youtube/ai-editor.md` beantwortet, die seit Wochen offen stand.
+
+── WAS DA LIEGT, ALLES 102:18 MIN, EIN DURCHGEHENDER TAKE
+| Datei | Größe | Inhalt |
+|---|---|---|
+| Left Camera Source Record | 4,19 GB, HEVC 5,3 Mbit/s | **Aaronson**, Nahaufnahme |
+| Right Cam Source Record | 4,13 GB, HEVC 5,2 Mbit/s | **er selbst**, Nahaufnahme |
+| Middle Camera Source Record | 11,09 GB, H.264 14,4 Mbit/s | Totale, beide |
+| 3 × mp3 (Spur 1, 2, 4) | je ~82 MB | Mikrofonspuren |
+
+**Die Kameranamen meinen die Position der Kamera, nicht wer im Bild ist.**
+Geprüft an je einem Bild bei Minute 20 — nicht aus dem Namen geschlossen.
+Der erste Ordner (`1_toK5LfEmKB9QEzp0XVZQK4H1dkglraN`, Eigentümer
+`team@justpushrecord.com`) enthielt einen Unterordner „Raw", der für diese
+Sitzung leer zurückkam. **Die Lehre: ein Ordner, auf den ich nicht komme,
+ist nicht leer — er ist unlesbar. Fragen statt folgern.** Er hat die Dateien
+daraufhin selbst umkopiert, und sie waren da.
+
+── WAS DAS FÜR DIE SHORTS ÄNDERT
+Bei Sutcliffe musste ein 9:16-Fenster aus einer fertigen Totale geschnitten
+werden. Daraus kamen alle Folgeprobleme: Tischplatte im Bild, gestapelte
+Totale, eingebranntes Logo im Ausschnitt, der Ausschnitt hinter dem Sprecher
+her. **Mit getrennten Kameradateien fällt das weg** — Vollbild-Nahaufnahme
+des gerade Sprechenden, umgeschnitten zwischen beiden. Das ist das, wofür
+AutoPod 29 $/Monat nimmt.
+
+── DER VERSATZ ROH ↔ SCHNITT IST KONSTANT 12,2 SEKUNDEN
+Gemessen über die Lautstärkeverläufe, an sieben Stellen von Minute 1 bis
+Minute 50: **jedes Mal 12,2 s**, Korrelation 0,80–0,83. Der Editor hat vorn
+zwölf Sekunden abgeschnitten und sonst nichts. **Rohzeit = Schnittzeit +
+12,2 s.** Bei Sutcliffe war das anders (Cold Open, der im Master gar nicht
+vorkam, und ein Tempofaktor) — **deshalb wird der Versatz je Folge
+gemessen, nie angenommen.** Eine einzelne globale Korrelation reicht dafür
+nicht; es braucht mehrere lokale Fenster über die ganze Länge.
+
+── ZWEI MESSUNGEN, DIE ARBEIT SPAREN
+**`demux(audio)` überspringt die Videopakete nicht.** Für 120 s Ton kamen
+327 MB über die Leitung — genau die 120 s Video dazu. PyAV setzt `discard`
+auf den übrigen Spuren, der mov-Demuxer liest die Bytes trotzdem. Mit
+1-MiB-Blöcken statt 8 wurde es nicht besser (197 MB) und fünfmal langsamer.
+Also einmal sequentiell durch und das Ergebnis als FLAC behalten
+(`video/ton_holen.py`): aus 16,1 GB werden rund 150 MB, die hier bleiben.
+**Einmal holen, beliebig oft transkribieren.**
+**Modellwahl an zwei Minuten gemessen:** `small` 3,65× Echtzeit, `medium`
+1,69×. `medium` versteht „ex-NFL stars", `small` macht „X, NFL stars"
+daraus. Für ein Transkript, aus dem Zitate ausgewählt werden, ist das der
+Unterschied — `medium` nehmen.
+
+── SPRECHERZUORDNUNG OHNE DIARISIERUNGSMODELL
+`video/transkript_lokal.py` ordnet je Segment die Spur zu, die am weitesten
+über **ihrem eigenen** Sprechpegel liegt (75. Perzentil), nicht die absolut
+lauteste — sonst gewinnt immer die heiß ausgesteuerte Aufnahme.
+**Offen und ihn zu fragen:** die drei Spuren sind nicht sauber getrennt
+(Korrelation untereinander +0,59 bis +0,81, Pegel −33, −47, −58 dB). Es
+sieht nach Übersprechen aus, oder eine davon ist ein Raum-/Summenmikrofon.
+Und es gibt keine Spur 3.
