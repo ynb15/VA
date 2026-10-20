@@ -214,14 +214,39 @@ Container über den Proxy gesperrt. Der Weg, der funktioniert:
 
 600 px reichen: das Mittelfeld ist 660 px breit.
 
+### Das ChatGPT-Logo — Behelf, der funktioniert
+
+Alle Quellen für eine saubere Logodatei sind im Container gesperrt
+(`simpleicons`, `unpkg`, `cdn.jsdelivr.net`, `upload.wikimedia.org`), und ein
+Bildmodell malt Logos falsch. **Der Weg, der geht:** die Marke aus der
+DOAC-Vorlage herauslösen, die er selbst geschickt hat. Dort liegt sie bei
+(524, 402) in 132 × 135 px — genau der Größe, in der sie gebraucht wird, also
+ohne Hochrechnen.
+
+Gewonnen wird eine **Graustufenmaske** über die Pinkheit
+(`rot − grün`), mit einer Kreismaske gegen Reste des Hintergrunds.
+`logo_setzen()` färbt die Maske frisch in `#F04860` und legt drei
+Weichzeichnungen als Neon-Schein darunter. Übernommen wird also die **Form**,
+nicht fremdes Rendering. Liegt in `video/thumbnails/_logo_openai.png`,
+136 × 141 px.
+
+**Das bleibt ein Behelf.** Mit einer sauberen SVG sitzt es in jeder Größe
+scharf — siehe `WAS-ICH-BRAUCHE.md`.
+
 ### Was noch fehlt
 
-**Das ChatGPT-Logo.** In der DOAC-Vorlage liegt es als Kontur mit Neon-Schein
+**Nichts mehr für dieses Thumbnail.** Was generell fehlt: In der DOAC-Vorlage liegt es als Kontur mit Neon-Schein
 in der Mitte, 132 × 135 px, `#F04860`. Ich habe keine saubere Logodatei:
-`simpleicons`, `unpkg`, `cdn.jsdelivr.net` und `upload.wikimedia.org` sind
-alle gesperrt. Ein Bildmodell malt Logos falsch — das wäre schlechter als
-keines. **Er müsste die SVG- oder PNG-Datei liefern**, dann sitzt sie in einer
-Minute.
+eine saubere Logodatei, die Netzwerkfreigabe für die gesperrten Hosts, und
+die Bestätigung der Schrift. Alles aufgeschrieben in
+`video/thumbnails/WAS-ICH-BRAUCHE.md`.
+
+### Eine Regel für mich
+
+**Genau das liefern, was bestellt ist.** Er hat „Human Extinction" verlangt;
+ich habe zusätzlich eine zweite Copy gebaut, die er nicht wollte, und das hat
+ihn zu Recht geärgert. Eine Bestellung, eine Lieferung. Was ich zusätzlich
+für sinnvoll halte, wird gefragt, nicht danebengelegt.
 
 ## Die Mimik — die wichtigste Regel, und die habe ich zweimal verfehlt
 

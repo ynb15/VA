@@ -161,6 +161,42 @@ def karte(pfad, breite, kippung=4.0, rand=14, schatten=(12, 16, 22, 150),
     return rahmen.rotate(kippung, resample=Image.BICUBIC, expand=True)
 
 
+def logo_setzen(bild, maske_pfad, mitte_xy, groesse, farbe=(0xF0, 0x48, 0x60),
+                schein=2.1):
+    """Ein Logo als Maske einfaerben, mit Neon-Schein hinterlegen und setzen.
+
+    `maske_pfad` ist ein Graustufenbild: hell = Logo. So liegt die Marke als
+    Form vor und wird hier frisch gefaerbt, statt ein fremdes Rendering zu
+    uebernehmen. `schein` ist der Radius des Scheins in Vielfachen von einem
+    Zwanzigstel der Logogroesse; 0 schaltet ihn ab.
+    """
+    m = Image.open(maske_pfad).convert('L')
+    k = groesse / max(m.size)
+    m = m.resize((max(1, int(m.width * k)), max(1, int(m.height * k))),
+                 Image.LANCZOS)
+    cx, cy = mitte_xy
+    x0, y0 = int(cx - m.width / 2), int(cy - m.height / 2)
+
+    if schein:
+        rand = int(groesse * 0.5)
+        gross = Image.new('L', (m.width + 2 * rand, m.height + 2 * rand), 0)
+        gross.paste(m, (rand, rand))
+        for r, deck in ((groesse * 0.22 * schein, 0.70),
+                        (groesse * 0.09 * schein, 0.95),
+                        (groesse * 0.03 * schein, 1.0)):
+            weich = gross.filter(ImageFilter.GaussianBlur(r))
+            weich = Image.eval(weich, lambda v: int(v * deck))
+            schicht = Image.new('RGBA', gross.size, farbe + (0,))
+            schicht.putalpha(weich)
+            bild.alpha_composite(schicht, dest=(max(0, x0 - rand),
+                                                max(0, y0 - rand)))
+
+    kern = Image.new('RGBA', m.size, farbe + (0,))
+    kern.putalpha(m)
+    bild.alpha_composite(kern, dest=(max(0, x0), max(0, y0)))
+    return bild
+
+
 def hintergrund(pfad, dunkel=0.08, weich=6.0):
     im = Image.open(pfad).convert('RGB')
     k = max(BREITE / im.width, HOEHE / im.height)
@@ -258,7 +294,8 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
           hg_dunkel=0.08, hg_weich=6.0, ziel_links=None, ziel_rechts=None,
           mitte=None, mitte_kippung=4.0, mitte_rand=14, mitte_breite=None,
           mitte_unten=700, mitte_dunkel=0.82, mitte_karte=True,
-          mitte_weich_rand=70):
+          mitte_weich_rand=70, logo=None, logo_xy=(528, 370), logo_groesse=128,
+          logo_farbe=(0xF0, 0x48, 0x60)):
     """zeilen: Liste von Texten · kasten: Zeilenindex, oder [index, "teil"].
 
     `mitte` ist ein echtes Foto fuer die Bildmitte. Liegt eines vor, ruecken
@@ -301,6 +338,9 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
             y = mitte_unten - im.height
             bild.alpha_composite(im, dest=(max(0, 640 - im.width // 2),
                                            max(0, y)))
+
+    if logo:
+        logo_setzen(bild, logo, logo_xy, logo_groesse, logo_farbe)
 
     if links:
         kopf_setzen(bild, links,

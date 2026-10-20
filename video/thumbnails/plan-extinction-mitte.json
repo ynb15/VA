@@ -1,0 +1,27 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_3605.png",
+  "rechts": "video/thumbnails/_freisteller/a_2504.png",
+  "mitte": "video/thumbnails/_mittelgrafik.jpg",
+  "mitte_karte": false,
+  "mitte_breite": 620,
+  "mitte_dunkel": 1.0,
+  "mitte_unten": 724,
+  "logo": "video/thumbnails/_logo_openai.png",
+  "logo_xy": [
+   505,
+   362
+  ],
+  "logo_groesse": 146,
+  "zeilen": [
+   "Human",
+   "Extinction?"
+  ],
+  "kasten": [
+   1,
+   "Extinction"
+  ],
+  "ziel": "video/thumbnails/aaronson-extinction-mitte.jpg"
+ }
+]
