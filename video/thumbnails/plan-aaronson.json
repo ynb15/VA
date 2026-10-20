@@ -1,0 +1,89 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_5303.png",
+  "rechts": "video/thumbnails/_freisteller/a_2701.png",
+  "zeilen": [
+   [
+    "AI",
+    70,
+    false
+   ],
+   [
+    "Works",
+    96,
+    true
+   ],
+   [
+    "Too Well",
+    96,
+    false
+   ]
+  ],
+  "ziel": "video/thumbnails/aaronson-1-works-too-well.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_5302.png",
+  "rechts": "video/thumbnails/_freisteller/a_5796.png",
+  "zeilen": [
+   [
+    "We're The",
+    64,
+    false
+   ],
+   [
+    "Orangutans",
+    84,
+    true
+   ]
+  ],
+  "ziel": "video/thumbnails/aaronson-2-orangutans.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_2695.png",
+  "rechts": "video/thumbnails/_freisteller/a_0095.png",
+  "zeilen": [
+   [
+    "AI Just",
+    68,
+    false
+   ],
+   [
+    "Broke",
+    100,
+    true
+   ],
+   [
+    "Math",
+    100,
+    false
+   ]
+  ],
+  "ziel": "video/thumbnails/aaronson-3-broke-math.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_5303.png",
+  "rechts": "video/thumbnails/_freisteller/a_5796.png",
+  "zeilen": [
+   [
+    "Make AI",
+    68,
+    false
+   ],
+   [
+    "Love",
+    100,
+    true
+   ],
+   [
+    "Humanity",
+    86,
+    false
+   ]
+  ],
+  "ziel": "video/thumbnails/aaronson-4-love-humanity.jpg"
+ }
+]

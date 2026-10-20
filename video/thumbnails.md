@@ -121,15 +121,73 @@ seiner Bestätigung: meine Messung schlägt seine Abnahme nicht.
 3. **„zwei bis drei Zeilen"** → zwei bis **vier**.
 4. **Die gekippte Fotokarte mit Rand und Schatten fehlte ganz.** Sie ist das
    zweithäufigste Gestaltungsmittel nach dem Kasten.
-5. **„Links in aller Regel er selbst"** → in Aufbau B steht der einzelne Kopf
-   immer rechts. Wer links und wer rechts steht, kann ich ohne Referenzfoto
-   nicht sicher zuordnen — **offene Frage an ihn.**
+5. **„Links in aller Regel er selbst"** → **bestätigt**, nachdem ich am
+   20.10. ein Einzelbild aus `Right Cam` der Aaronson-Aufnahme gezogen habe
+   (die Kameradatei, die laut `aaronson-shorts.md` auf Yannick zeigt): er ist
+   der Brillenträger mit den langen Haaren, und der steht in Aufbau A links.
+   Der einzelne Kopf in Aufbau B ist **der Gast**, nicht er — in
+   `-0NES3TOiIg`, `GxpvzT3rUBQ` und `f79ehF4zP3I` steht dort derselbe
+   Gast-Kopf rechts, und Yannick kommt im Bild gar nicht vor.
+
+## Die Platzierung, aus seinen Thumbnails gemessen
+
+Mit YuNet (Gesichtserkennung, kein Erzeugen) an den drei veröffentlichten
+Zwei-Kopf-Thumbnails gemessen — Augenmitte und Gesichtsrahmenhöhe:
+
+| Folge | links: Augen x / y · Höhe | rechts: Augen x / y · Höhe |
+|---|---|---|
+| `frNOUgxE0IM` | 178 / 315 · 500 | 1099 / 358 · 501 |
+| `ewgUIZGJaWQ` | 185 / 286 · 545 | 1117 / 251 · 488 |
+| `RG-K0fIA2-w` | 148 / 243 · 480 | 1110 / 303 · 500 |
+| **Mittel** | **170 / 281 · 508** | **1109 / 304 · 497** |
+
+Nach diesen sechs Zahlen setzt `video/thumbnail_bau.py` die Köpfe: skalieren
+auf die Rahmenhöhe, platzieren auf die Augenmitte. Der Einzelkopf in Aufbau B
+sitzt bei **1063 / 278 · 475** (aus `GxpvzT3rUBQ`, `-0NES3TOiIg`,
+`f79ehF4zP3I`).
+
+**Warum nicht über die Kopfhöhe:** Scheitel-zu-Schulter aus der Freistell-Maske
+springt kaum, wenn jemand den Kopf in den Nacken legt — der Kopf im Bild aber
+deutlich. Das war der erste Versuch, und er lieferte je nach Pose bis zu 25 %
+Grössenunterschied. Die Augenlinie tut das nicht.
+
+## Das Werkzeug
+
+`video/thumbnail_bau.py` nimmt Freisteller, einen Hintergrund und die Zeilen
+und setzt daraus die 1280×720. Aufruf über eine Plan-Datei:
+
+```
+python3 video/thumbnail_bau.py --plan video/thumbnails/plan-aaronson.json
+```
+
+Eine Zeile ist `[text, versalhöhe, kasten?]`. Genau eine Zeile bekommt den
+Kasten. Mitgeliefert: `video/marke/Poppins-Bold.ttf` und
+`video/modelle/yunet.onnx` (232 KB, von huggingface.co/opencv — `github.com`
+und `cdn.jsdelivr.net` geben im Container 403 über den Proxy).
+
+**Freistellen** läuft über `rembg`/U²-Net. Das ist Segmentierung: es schneidet
+ein echtes Foto aus, es erfindet nichts. Die Kanten sitzen auch an den Haaren
+sauber. `alpha_matting=True` gibt weichere Kanten, bricht aber bei manchen
+Bildern mit einem Solver-Fehler ab — dann ohne.
+
+**Zwei Fallen beim Drive-Zugriff**, über die ich gestolpert bin und die auch
+`video/drive_fernzugriff.py` betreffen:
+
+1. **HEAD liefert `content-length: 0`.** Dann ist die Dateigrösse 0, jeder
+   Lesevorgang leer, und PyAV bricht mit `InvalidData` ab — nicht
+   reproduzierbar, weil HEAD mal richtig und mal 0 antwortet. Die Grösse
+   gehört aus dem `content-range` einer Ein-Byte-Bereichsanfrage.
+2. **Der Blockleser prüft den Statuscode nicht.** Gibt Drive unter Last eine
+   Fehlerseite, landet HTML als „Daten" im Puffer. Status, `content-range`
+   und Blocklänge gehören geprüft.
+
+Beides ist in `video/thumbnails/drive_fest.py` behoben; `drive_fernzugriff.py`
+habe ich nicht angefasst, das gehört dem Schnitt-Zweig.
 
 ## Das Freistellen der Gesichter
 
-Das bleibt die eigentliche Handarbeit. Ohne Modell geht es über eine Maske aus
-dem Kamerabild; mit Canva über dessen eigenes Werkzeug. Welcher Weg der bessere
-ist, entscheidet das Ergebnis, nicht die Theorie.
+**Gelöst, ohne Canva** — siehe oben. Der Weg über Canva bleibt offen, er wird
+aber nicht mehr gebraucht.
 
 ## Canva
 
