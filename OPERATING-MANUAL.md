@@ -7961,3 +7961,43 @@ das Bild auf der Person bleibt, erst dann nach rechts. Der Kasten der Totale
 wandert von `75:280` auf `75:75`, alle anderen bleiben unverändert.
 **Regel für jede fremde Quelle: nachsehen, was schon im Bild steht, bevor man
 etwas darüberlegt.**
+
+── NACHTRAG 20.10., SIEBTE RUNDE: DIE ANGLEICHUNG WAR FALSCH
+**„Der Ton ist jetzt absolut miserabel."** Vollständig zurückgenommen. Die
+ausgelieferte Datei trägt wieder exakt den Ton der fünften Runde — belegt,
+nicht behauptet: beide Tonspuren auf 16-kHz-Mono dekodiert, `cmp` meldet
+keinen Unterschied. Bitgenau gleich.
+
+**Der Fehler ist nicht die Lautheitskette. Der Fehler ist, wie ich gemessen
+habe.** Der Ausdruck enthielt beides: −14,5 LUFS und Dynamik 32,7 → 30,4 dB
+(das, was ich sehen wollte) und **Rauschboden −62,7 → −44,2 dB** (das, was er
+hören würde). Ich habe das Zweite als Fußnote behandelt und dazugeschrieben,
+26 dB Abstand zur Stimme seien vertretbar. Im Ohr sind 18 dB mehr Raumrauschen
+der Unterschied zwischen einer ruhigen und einer zischenden Aufnahme.
+**REGEL: Eine Messung, die bestätigt, was man ohnehin vorhatte, ist kein
+Beleg.** Die Zahl, die gegen das eigene Vorhaben spricht, steht meistens im
+selben Ausdruck. Sie zuerst lesen.
+**REGEL: Nie zwei Dinge am Ton in derselben Runde.** Pegelkette und
+Dehnverfahren gleichzeitig zu ändern hat seine Rückmeldung unbrauchbar
+gemacht — „anders" war danach nicht mehr zuzuordnen.
+**REGEL: Sein Ohr schlägt meine Messung.** Bei allem, was am Ende ein Mensch
+hört oder sieht, ist die Messung ein Werkzeug zum Finden, nicht zum Abnehmen.
+
+Vorgaben stehen jetzt auf `--laut aus` und `--dehnung atempo`, also auf dem
+Stand, den er abgenommen hat. Beides bleibt im Werkzeug, aber bewusst
+einzuschalten. Aus der sechsten Runde bleibt nur der Bildausschnitt
+(`--marke`) — ein Logo statt zwei, ein Bildfehler, kein Toneingriff.
+
+── CAPCUT: DIREKT NEIN, ÜBER .SRT JA
+Er fragte, ob er mir Zugriff auf CapCut geben kann. **Nein.** CapCut hat keine
+öffentliche Schnitt-API, und diese Sitzung läuft in einem Container in der
+Cloud — sie kommt an seinen Laptop nicht heran, unabhängig von CapCut. Es gibt
+fremde Werkzeuge, die die Projektdatei (`draft_content.json`) direkt
+schreiben — `capcut-cli`, `capcut-mate`, `VectCutAPI` — alle inoffiziell,
+Format undokumentiert, Drafts ab JianYing 6 verschlüsselt. Das ginge nur mit
+Claude Code lokal auf seinem Rechner.
+**Was stattdessen trägt:** `--srt-out` legt die Einblendungen als `.srt` in
+der Zeit des fertigen Videos ab. CapCut Desktop liest das und legt jede Zeile
+als eigenen Textblock auf die Spur. Dreiwortgruppen und Korrekturliste stecken
+drin; Schrift und Farbe setzt er dort selbst. Damit behält er Ton und
+Schnittplatz, und die mechanische Arbeit kommt von hier.

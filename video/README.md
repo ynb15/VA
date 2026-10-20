@@ -32,15 +32,21 @@ python3 video/shorts-render.py --src clip.mp4 --plan plan.json \
 `--focus 0..1` schiebt den 9:16-Ausschnitt horizontal durchs Breitbild.
 `--tempo` beschleunigt wie beim Export (seine Folgen laufen auf **1,1**).
 
-**Pegel: `--laut` immer mitgeben.** Der Master kommt ungemastert aus der
-Kamera und liegt bei **−31 LUFS**; Shorts laufen bei etwa **−14**. Ohne
-Angleichung klingt der Short dünn und fern neben allem anderen auf dem Kanal,
-und das Outro (−24,9 LUFS) springt am Ende um 6,5 LU nach oben. `--laut -14`
-ist Vorgabe und normalisiert **Hauptteil und Outro auf dasselbe Ziel**.
+**Pegel: `--laut` bleibt aus.** Der Master kommt ungemastert aus der Kamera
+und liegt bei **−31 LUFS**, Shorts laufen bei etwa **−14**. Die Angleichung
+ist gebaut und misst sich sauber (−14,5 LUFS, Dynamik 32,7 → 30,4 dB) —
+**aber sie hebt den Rauschboden um 18 dB, und er hat sie am 20.10. abgelehnt**
+(„der Ton ist jetzt absolut miserabel“). Vorgabe ist deshalb `--laut aus`.
+Wer sie braucht, schaltet sie bewusst ein.
 
-**`--dehnung rubberband` ist Vorgabe.** `atempo=1.2` hebt gemessen die
-spektrale Flachheit um 8 % und die Energie über 6 kHz um 11 % — die Rauheit,
-die WSOLA beim stückweisen Zusammensetzen erzeugt.
+**`--dehnung atempo` ist Vorgabe**, obwohl `rubberband` messbar sauberer ist
+(`atempo=1.2` hebt die spektrale Flachheit um 8 %, die Energie über 6 kHz um
+11 %). `atempo` ist der Klang, den er abgenommen hat — und zwei Dinge am Ton
+in derselben Runde zu ändern hat seine Rückmeldung unbrauchbar gemacht.
+
+**`--srt-out`** legt dieselben Einblendungen als `.srt` ab, in der Zeit des
+fertigen Videos — für den Weg über CapCut Desktop (Untertitel → Untertitel
+hinzufügen).
 
 **`--marke x0,y0,x1,y1`** hält den Ausschnitt aus einem schon eingebrannten
 Logo heraus. Für den Podcast-Master gemessen: `0,875,215,1080`. Ohne das

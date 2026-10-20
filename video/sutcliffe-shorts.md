@@ -314,3 +314,60 @@ python3 video/shorts-render.py --src clip.mp4 --plan plan.json \
 längsten Stelle 1,5 s (Clipsekunde 6,18–7,66), weil dort wirklich eine Pause
 ist. Die Zeile stehen zu lassen, bis die nächste kommt, wäre ein Einzeiler;
 ich habe es nicht ungefragt geändert.
+
+---
+
+## Siebte Runde, 20.10. — die Angleichung zurückgenommen
+
+**Seine Antwort auf die sechste Runde: „der Ton ist jetzt absolut miserabel."**
+Zurückgenommen, vollständig. Die ausgelieferte Datei trägt wieder **exakt den
+Ton der fünften Runde** — nachgewiesen, nicht behauptet: die Tonspuren von
+`vuln_12` und der neuen Fassung sind **bitgenau gleich** (beide auf 16-kHz-Mono
+dekodiert, `cmp` meldet keinen Unterschied), −31,3 LUFS, Spitze −4,9 dBFS.
+
+**Was ich falsch gemacht habe, und es ist nicht die Zahl.** Die Messung sagte,
+was ich hören wollte: −14,5 LUFS, Dynamik nur von 32,7 auf 30,4 dB geschrumpft,
+also kein Pumpen. Die Zahl, die ich gesehen und trotzdem abgetan habe, war der
+**Rauschboden: von −62,7 auf −44,2 dB.** 18 dB mehr Raumrauschen. Auf dem
+Papier sind 26 dB Abstand zur Stimme vertretbar; im Ohr ist es das, was aus
+einer ruhigen Aufnahme eine zischende macht. Dazu `rubberband` statt `atempo`
+in derselben Runde — zwei Änderungen am Ton gleichzeitig, sodass sein „anders"
+nicht mehr zuzuordnen war.
+
+**Zwei Regeln daraus:**
+1. **Eine Messung, die bestätigt, was man vorhatte, ist kein Beleg.** Der
+   Rauschboden stand im selben Ausdruck wie die Lautheit. Ich habe ihn als
+   Fußnote behandelt, weil das Ergebnis sonst nicht mehr so gut ausgesehen
+   hätte.
+2. **Nie zwei Dinge am Ton in derselben Runde.** Pegelkette und Dehnverfahren
+   zusammen zu ändern hat die Rückmeldung unbrauchbar gemacht.
+
+`--laut` und `--dehnung` bleiben im Werkzeug, aber **die Vorgaben sind jetzt
+`aus` und `atempo`** — also genau der Stand, der ihm gefiel. Wer sie braucht,
+schaltet sie bewusst ein.
+
+**Was aus der sechsten Runde bleibt:** der Bildausschnitt (`--marke`), also
+ein Logo statt zwei. Das war ein Bildfehler, kein Toneingriff.
+
+**Der Einwurf bei Clipsekunde 19,20–19,41 ist drin gelassen** — er schneidet
+ihn selbst heraus. Der bei 49,56 bleibt stumm wie in der fünften Runde.
+
+## Der Weg über CapCut
+
+Gefragt: „kann ich dir Zugriff auf CapCut geben?" **Direkt nicht.** CapCut hat
+keine öffentliche Schnitt-API, und diese Sitzung läuft in einem Container in
+der Cloud — sie kommt an seinen Rechner nicht heran, unabhängig von CapCut.
+
+Was es gibt, sind **fremde Werkzeuge, die die Projektdatei auf der Platte
+schreiben** (`draft_content.json`): `capcut-cli`, `capcut-mate`, `VectCutAPI`.
+Alle inoffiziell, Format undokumentiert, Zeiten in Mikrosekunden, und Drafts
+ab JianYing 6 sind verschlüsselt. Das wäre nur auf seinem Rechner möglich —
+also Claude Code lokal auf dem Laptop, nicht hier.
+
+**Was stattdessen trägt, und heute schon:** `--srt-out` legt dieselben
+Einblendungen als `.srt` ab, in der Zeit des fertigen Videos. CapCut Desktop
+liest das (Untertitel → Untertitel hinzufügen) und legt jede Zeile als eigenen
+Textblock auf die Spur. Gruppierung zu drei Wörtern und die Korrekturliste
+stecken schon drin; Schrift, Farbe und Position setzt er dort selbst. Damit
+behält er seinen Ton und seinen Schnittplatz, und die mechanische Arbeit
+kommt von hier.

@@ -72,6 +72,30 @@ def ass_time(t):
     return f"{int(h)}:{int(m):02d}:{sec:05.2f}"
 
 
+def srt_time(t):
+    h, rem = divmod(max(t, 0), 3600)
+    m, sec = divmod(rem, 60)
+    return f"{int(h):02d}:{int(m):02d}:{sec:06.3f}".replace(".", ",")
+
+
+def cues_als_srt(cues, pfad, tempo=1.0, gross=True):
+    """Dieselben Einblendungen als .srt, in der Zeit des fertigen Videos.
+
+    Gebraucht fuer den Weg über einen Schnittplatz: CapCut Desktop liest
+    .srt (Untertitel → Untertitel hinzufügen) und legt jede Zeile als
+    eigenen Textblock auf die Spur. Die Gruppierung zu drei Wörtern und die
+    Korrekturen stecken dann schon drin — nur Schrift und Farbe setzt er
+    dort selbst.
+    """
+    zeilen = []
+    for i, c in enumerate(cues, 1):
+        text = " ".join(_anzeige(w["t"], gross) for w in c["woerter"])
+        zeilen.append(f"{i}\n{srt_time(c['start'] / tempo)} --> "
+                      f"{srt_time(c['end'] / tempo)}\n{text}\n")
+    Path(pfad).write_text("\n".join(zeilen), encoding="utf-8")
+    return len(cues)
+
+
 SATZZEICHEN = ".,!?;:\u2026"
 
 
@@ -674,15 +698,21 @@ def main():
                          "Stimme und Bett gemessen")
     ap.add_argument("--musik-unter", type=float, default=8.0,
                     help="dB, die das Bett unter der Stimme liegt")
-    ap.add_argument("--dehnung", choices=("rubberband", "atempo"),
-                    default="rubberband",
-                    help="Verfahren fuer --tempo. atempo (WSOLA) setzt den Ton "
-                         "stueckweise neu zusammen und wird dabei messbar "
-                         "rauher; rubberband bleibt sauberer.")
-    ap.add_argument("--laut", default="-14",
+    ap.add_argument("--srt-out", default=None,
+                    help="Einblendungen zusaetzlich als .srt ablegen, in der "
+                         "Zeit des fertigen Videos. Fuer den Weg ueber einen "
+                         "Schnittplatz: CapCut Desktop liest .srt.")
+    ap.add_argument("--dehnung", choices=("atempo", "rubberband"),
+                    default="atempo",
+                    help="Verfahren fuer --tempo. atempo (WSOLA) ist messbar "
+                         "rauher, aber es ist der Klang, den er abgenommen "
+                         "hat. rubberband nur bewusst einschalten.")
+    ap.add_argument("--laut", default="aus",
                     help="Ziellautheit in LUFS fuer Hauptteil UND Outro, "
-                         "'aus' laesst den Pegel wie er ist. Der Master liegt "
-                         "bei -31 LUFS, Shorts laufen bei etwa -14.")
+                         "'aus' laesst den Pegel wie er ist (Vorgabe). Der "
+                         "Master liegt bei -31 LUFS, Shorts laufen bei etwa "
+                         "-14 — aber die Angleichung hebt den Rauschboden um "
+                         "18 dB, und genau das hat er am 20.10. abgelehnt.")
     ap.add_argument("--stumm", default=None,
                     help="Zeitfenster im Clip, die stumm geschaltet werden, "
                          "z. B. 49.50:49.98,12.1:12.4 — fuer Zwischenrufe des "
@@ -782,6 +812,10 @@ def main():
             print(f"  Transkript: {len(cues)} Einblendungen, Sprache {lang}")
         elif a.srt:
             cues = srt_to_cues(a.srt)
+
+        if cues and a.srt_out:
+            n = cues_als_srt(cues, a.srt_out, tempo=a.tempo, gross=not a.klein)
+            print(f"  {n} Zeilen nach {a.srt_out}")
 
         letzte = v_quelle
         if cues:
