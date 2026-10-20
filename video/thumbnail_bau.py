@@ -130,7 +130,7 @@ def _mass(zeichner, text, font):
     return r - l, l, t
 
 
-def satz(bild, zeilen, kasten_index, mitte_x=640, mitte_y=360,
+def satz(bild, zeilen, kasten, mitte_x=640, mitte_y=360,
          max_breite=760, max_hoehe=470, grad=None):
     """Alle Zeilen in EINEM Schriftgrad und EINEM Zeilenabstand setzen.
 
@@ -141,7 +141,18 @@ def satz(bild, zeilen, kasten_index, mitte_x=640, mitte_y=360,
 
     Der Block wird auf `mitte_y` zentriert. Der Grad wird, wenn nicht gesetzt,
     so gross gewaehlt wie Breite und Hoehe es zulassen.
+
+    `kasten` ist entweder der Index der Zeile, die ganz auf den Kasten kommt,
+    oder ein Paar `[index, "teilwort"]` — dann liegt der Kasten nur hinter
+    diesem Teil der Zeile. Das braucht man fuer „Human **Extinction**?", wo
+    das Fragezeichen neben dem Kasten stehen soll. In seinem Canva-File gibt
+    es beides: „Coincidence?" liegt ganz auf dem Kasten, bei „Did I REALLY /
+    Make It Up?" nur das Wort REALLY.
     """
+    if isinstance(kasten, (list, tuple)):
+        kasten_index, kasten_teil = kasten[0], kasten[1]
+    else:
+        kasten_index, kasten_teil = kasten, None
     d = ImageDraw.Draw(bild)
 
     def passt(g):
@@ -169,7 +180,15 @@ def satz(bild, zeilen, kasten_index, mitte_x=640, mitte_y=360,
             kh = grad * KASTEN_H
             kp = grad * KASTEN_PAD
             ky = oben + cap / 2 - kh / 2
-            d.rectangle([x - kp, ky, x + breit + kp, ky + kh], fill=KASTEN)
+            if kasten_teil:
+                stelle = text.index(kasten_teil)
+                vor = d.textlength(text[:stelle], font=f)
+                teil_br = d.textlength(kasten_teil, font=f)
+                kx0 = x - lx + vor
+                d.rectangle([kx0 - kp, ky, kx0 + teil_br + kp, ky + kh],
+                            fill=KASTEN)
+            else:
+                d.rectangle([x - kp, ky, x + breit + kp, ky + kh], fill=KASTEN)
         d.text((x - lx, oben - ty), text, font=f, fill=(255, 255, 255))
     return bild, grad
 
@@ -177,7 +196,7 @@ def satz(bild, zeilen, kasten_index, mitte_x=640, mitte_y=360,
 def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
           text_mitte_y=360, max_breite=760, max_hoehe=470, grad=None,
           hg_dunkel=0.08, hg_weich=6.0, ziel_links=None, ziel_rechts=None):
-    """zeilen: Liste von Texten · kasten: Index der Zeile mit dem Kasten."""
+    """zeilen: Liste von Texten · kasten: Zeilenindex, oder [index, "teil"]."""
     bild = hintergrund(hg, dunkel=hg_dunkel, weich=hg_weich)
     if links:
         kopf_setzen(bild, links, ziel_links or ZIEL_LINKS)

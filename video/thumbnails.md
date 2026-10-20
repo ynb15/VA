@@ -49,7 +49,17 @@ darunter das große.
 von sechs (Bildmitte ist 640). `f79ehF4zP3I` bricht das: linksbündig, Textblock
 oben links, Kastenmitte bei x = 464.
 
-**Zwei bis vier Wörter insgesamt. Kein Satz, kein Punkt, kein Fragezeichen.**
+**Zwei bis vier Wörter insgesamt. Kein Satz, kein Punkt.**
+
+**Fragezeichen schon** — meine frühere Regel „kein Fragezeichen" war zu eng.
+Sie kam aus den sechs veröffentlichten Thumbnails, in denen zufällig keines
+vorkommt. Sein Canva-File hat gleich mehrere: „Coincidence?", „Did I REALLY /
+Make It Up?", „Was THIS GOD'S Calling?". Am 20.10. hat er selbst eines
+angefordert.
+
+**Der Kasten kann hinter einem Teil der Zeile liegen**, nicht nur hinter der
+ganzen. „Coincidence?" liegt ganz darauf, bei „Did I REALLY / Make It Up?"
+nur das Wort REALLY. `thumbnail_bau.py` nimmt dafür `"kasten": [1, "Teil"]`.
 
 ### Der orangerote Kasten
 

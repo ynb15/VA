@@ -1,0 +1,30 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_3605.png",
+  "rechts": "video/thumbnails/_freisteller/a_3000.png",
+  "zeilen": [
+   "Human",
+   "Extinction?"
+  ],
+  "kasten": [
+   1,
+   "Extinction"
+  ],
+  "ziel": "video/thumbnails/aaronson-extinction-A.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_3605.png",
+  "rechts": "video/thumbnails/_freisteller/a_3002.png",
+  "zeilen": [
+   "Human",
+   "Extinction?"
+  ],
+  "kasten": [
+   1,
+   "Extinction"
+  ],
+  "ziel": "video/thumbnails/aaronson-extinction-B.jpg"
+ }
+]
