@@ -14,9 +14,24 @@ BLOCK = 8 << 20
 
 
 class FesteDriveDatei:
-    def __init__(self, url, groesse=None, cache_mb=768):
+    def __init__(self, url, groesse=None, cache_mb=768, url_neu=None,
+                 sitzung=None):
+        """url_neu: optionaler Aufruf, der eine frische URL liefert.
+
+        Die Download-URL von Drive traegt ein uuid-Token, das nach einiger Zeit
+        ablaeuft. Danach beantwortet Drive die Bereichsanfrage mit 200 und der
+        ganzen Datei statt mit 206 — bei einer 4-GB-Datei ist das kein
+        brauchbarer Rueckfall. Mit `url_neu` holt der Leser sich stattdessen
+        ein frisches Token und macht weiter; lange Durchlaeufe brechen sonst
+        mittendrin ab.
+        """
         self.url = url
-        self.s = requests.Session()
+        self.url_neu = url_neu
+        self.erneuert = 0
+        # Dieselbe Sitzung wie die Virenscan-Bestaetigung benutzen. Die
+        # Bestaetigung setzt ein Cookie; ohne das beantwortet Drive die
+        # Bereichsanfrage mit 200 und der ganzen Datei statt mit 206.
+        self.s = sitzung if sitzung is not None else requests.Session()
         self.pos = 0
         self.blocks = {}
         self.reihenfolge = []
@@ -50,25 +65,34 @@ class FesteDriveDatei:
         ende = min(anfang + BLOCK, self.groesse) - 1
         erwartet = ende - anfang + 1
         letzter = None
-        for versuch in range(6):
+        for versuch in range(8):
             try:
-                r = self.s.get(self.url, timeout=180,
+                # stream=True: erst Kopfzeilen pruefen, Koerper nur bei 206
+                # lesen. Ohne das laedt eine 200-Antwort die ganze Datei (hier
+                # 4 GB) in den Speicher, bevor sie verworfen wird.
+                r = self.s.get(self.url, timeout=180, stream=True,
                                headers={"Range": f"bytes={anfang}-{ende}"})
-                if r.status_code != 206:
-                    raise IOError(f"Status {r.status_code} statt 206")
-                cr = r.headers.get("content-range", "")
-                if not cr.startswith(f"bytes {anfang}-{ende}/"):
-                    raise IOError(f"content-range {cr!r} passt nicht")
-                if len(r.content) != erwartet:
-                    raise IOError(f"{len(r.content)} statt {erwartet} Bytes")
-                daten = r.content
+                try:
+                    if r.status_code != 206:
+                        if self.url_neu is not None and self.erneuert < 8:
+                            self.url = self.url_neu()
+                            self.erneuert += 1
+                        raise IOError(f"Status {r.status_code} statt 206")
+                    cr = r.headers.get("content-range", "")
+                    if not cr.startswith(f"bytes {anfang}-{ende}/"):
+                        raise IOError(f"content-range {cr!r} passt nicht")
+                    daten = r.raw.read(erwartet, decode_content=True)
+                finally:
+                    r.close()
+                if len(daten) != erwartet:
+                    raise IOError(f"{len(daten)} statt {erwartet} Bytes")
                 break
             except Exception as e:
                 letzter = e
                 self.wiederholt += 1
-                if versuch == 5:
-                    raise IOError(f"Block {nr} nach 6 Versuchen: {letzter}")
-                time.sleep(1.5 * (2 ** versuch))
+                if versuch == 7:
+                    raise IOError(f"Block {nr} nach 8 Versuchen: {letzter}")
+                time.sleep(min(60, 2.0 * (2 ** versuch)))
         self.anfragen += 1
         self.gelesen += len(daten)
         self.blocks[nr] = daten
@@ -122,4 +146,5 @@ class FesteDriveDatei:
     @property
     def bilanz(self):
         return (f"{self.anfragen} Bereichsanfragen, {self.gelesen/1048576:.1f} MB"
-                + (f", {self.wiederholt} Wiederholungen" if self.wiederholt else ""))
+                + (f", {self.wiederholt} Wiederholungen" if self.wiederholt else "")
+                + (f", {self.erneuert}x Token erneuert" if self.erneuert else ""))

@@ -6,7 +6,7 @@ letzten Schluesselbild davor dekodiert und jedes n-te Bild gespeichert.
 """
 import argparse, os, sys, time
 sys.path.insert(0, '/home/user/VA/video')
-from drive_fernzugriff import bestaetigte_url
+from drive_fernzugriff import bestaetigte_url, SITZUNG
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from drive_fest import FesteDriveDatei as DriveDatei
 import av
@@ -14,7 +14,8 @@ import av
 
 def fenster(fid, fenster_liste, ziel_ordner, pro_sekunde=2.0, groesse=None):
     os.makedirs(ziel_ordner, exist_ok=True)
-    q = DriveDatei(bestaetigte_url(fid), groesse=groesse)
+    q = DriveDatei(bestaetigte_url(fid), groesse=groesse, sitzung=SITZUNG,
+                   url_neu=lambda: bestaetigte_url(fid))
     c = av.open(q)
     v = next(s for s in c.streams if s.type == 'video')
     v.thread_type = 'AUTO'

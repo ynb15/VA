@@ -131,6 +131,67 @@ seiner Bestätigung: meine Messung schlägt seine Abnahme nicht.
    `-0NES3TOiIg`, `GxpvzT3rUBQ` und `f79ehF4zP3I` steht dort derselbe
    Gast-Kopf rechts, und Yannick kommt im Bild gar nicht vor.
 
+## Die Mimik — die wichtigste Regel, und die habe ich zweimal verfehlt
+
+Seine Worte am 20.10.: *„Das hat keinen Anreiz, da klickt keiner drauf, wenn
+jemand auf einem Thumbnail lacht. Das müssen schockierte, überraschte, böse
+Blicke sein."*
+
+An den sieben Gesichtern seiner veröffentlichten Thumbnails nachgesehen, und
+es stimmt ohne Ausnahme:
+
+- **Augen weit auf, Weiß rundum sichtbar** — nicht zusammengekniffen
+- **Brauen hoch**, bei mehreren die Stirn in Falten
+- **Mund offen** — aber als Staunen oder Grimasse, nicht als Lächeln
+- Oder stattdessen ein **harter, verengter Blick**
+
+**Kein einziges lacht.** Ich habe in Runde 1 und 2 beide Male lächelnde
+Gesichter geliefert. Das ist der teuerste Fehler dieser Serie gewesen.
+
+### Messbar machen
+
+Augenweiß ist ein brauchbarer Hilfswert: helle, farbarme Pixel in einem
+Fenster um die beiden YuNet-Augenpunkte, auf den Pupillenabstand normiert
+(`video/thumbnails/augen.py`). Grünliche Pixel müssen raus, sonst zählen die
+Spiegelungen der Pflanzen in seiner Brille mit.
+
+| | Augenweiß |
+|---|---|
+| seine veröffentlichten Gesichter | **0,006 – 0,201**, links meist 0,016–0,039 |
+| meine lächelnden Fehlgriffe | **0,0000 – 0,032** — beim Lächeln verschwindet es ganz |
+
+**Als Vorsortierung taugt es, als Entscheidung nicht.** Ein harter, verengter
+Blick hat wenig Augenweiß und ist trotzdem richtig. Angeschaut wird jedes Bild.
+
+### Was in der Aaronson-Aufnahme drin ist — und was nicht
+
+**Nachgesehen: 2.600 Einzelbilder aus rund 45 Minuten** beider Nahkameras,
+davon 1.806 aus einem zusammenhängenden 1-Bild-pro-Sekunde-Durchlauf über
+30 Minuten.
+
+**Bei ihm gibt es den aufgerissenen Blick in diesem Gespräch nicht.** Der
+höchste Wert über alle Bilder liegt bei 0,017, seine eigenen Thumbnails liegen
+bei 0,016–0,039. Er hört in dieser Folge ruhig zu, oft mit der Faust am Kinn.
+Was es gibt: **ungläubig** (2871 s), **hart und verschlossen** (5749 s),
+**skeptisch mit gerunzelter Braue** (3605 s), **angespannt sprechend** (718 s).
+
+**Bei Aaronson ist die Ausbeute gut.** Bei 3000 s verzieht er das Gesicht
+regelrecht gequält, bei 3002 s und 2504 s spricht er mit offenem Mund und
+hochgezogenen Brauen.
+
+**Das ist ein Befund über das Material, keine Entschuldigung.** Wenn er die
+Stelle kennt, an der er stärker reagiert hat, genügt ein Zeitstempel. Sonst
+bleibt der Weg über die Totale (`Middle Camera`) oder eine andere Folge.
+
+### Lange Fenster statt vieler kurzer
+
+Fürs Suchen gilt: **ein zusammenhängendes Fenster ist pro Bild viel billiger
+als viele kurze.** Jedes Fenster kostet einen Sprung und damit mindestens
+einen 8-MiB-Block; innerhalb eines Fensters laufen die Blöcke durch.
+300 Sekunden bei 1 Bild/s kosten rund 200 MB für 300 Bilder — dieselben
+300 Bilder aus 60 kurzen Fenstern kosten das Mehrfache.
+
+
 ## Sein Canva-File — die Quelle, nicht mehr die Schätzung
 
 Seit dem 20.10. ist der Connector verbunden. Sein Arbeitsfile heisst
