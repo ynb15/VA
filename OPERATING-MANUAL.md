@@ -7838,3 +7838,18 @@ Podcast-Outro. **Er legt den Track in den Eingang, ich mische.**
 dem dunklen Shirt besser als die mit Verlauf** — die Verlaufsfassung verschwand
 bei 92 % Deckung fast. Im Repo unter `video/marke/`. Beide Dateien waren schon
 link-freigegeben, es war keine Freigabe von mir nötig.
+
+── NACHTRAG 20.10., DRITTE RUNDE
+**Gemessene Kopfoberkanten taugen nicht zum Verzweigen.** Zwei identische
+Ausschnitte ergaben Zeilenhöhen von 0,44 und 0,65 — dieselbe Kadrierung,
+anderes Bewegungsfenster. Verzweigt wird deshalb über `mitte`, die
+Bewegungsmasse in der Bildmitte: die trennt Nahaufnahme (0,62–0,73) von
+Totale (0,22–0,28) stabil und entscheidet jetzt zweierlei mit einer Zahl —
+ob gestapelt wird und wo die Untertitelzeile sitzt (0,65 bzw. 0,42).
+**Regel: lieber eine stabile Größe doppelt nutzen als zwei wacklige messen.**
+
+**Seine Dateien sind nicht alle link-freigegeben.** Master und Logos ja, das
+Podcast-Outro nein — der Abruf landet auf der Anmeldeseite. Der Drive-Konnektor
+kann Binärdateien nur base64 liefern, was bei Megabytes nicht geht.
+**Also: Freigabe erbitten, nicht selbst setzen** (Drive-Schreibrechte sind
+nicht erteilt, und eine Freigabe ist eine Sichtbarkeitsänderung).

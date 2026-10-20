@@ -96,10 +96,37 @@ das veröffentlicht wird, nichts aus dem Netz. In seinem Drive liegt nur
 Text die falsche Farbe. **Eine Datei in den Drive-Eingang, und es ist eine
 Minute Arbeit.**
 
-**Offen, seine Entscheidung:** zwischen Sekunde 43,6 und 51,7 schneidet der
-Studioschnitt auf die Totale — mitten im stärksten Teil der Notiz („But armor
-is not strength"). Ich stapele sie derzeit. Alternative: in diesen acht
-Sekunden auf ihm bleiben und die Totale auf ihn beschneiden.
+**Dritte Runde, 20.10.:**
+
+| | |
+|---|---|
+| **Totale** | `--kein-stapel`: zwischen 43,6 und 51,7 bleibt der Schnitt auf ihm statt zu stapeln. Beschnitten wird auf den stärksten Bewegungsgipfel — in einer Passage, die er allein spricht, ist das er. |
+| **hypermasculinity** | steht jetzt in einer Einblendung. Whisper hört `hyper masculinity` als zwei Wörter, die Korrekturliste macht ein Wort daraus — Wortfolge links, ein Wort rechts. |
+| **einzelnes „the"** | wandert zum Nachbarn. Rückwärts nur, wenn die vorige Einblendung bloß voll war; **vorwärts**, wenn die eigene Grenze eine Atempause war. Über ein Satzende oder einen Abschnittswechsel wandert nichts. |
+| **Logo** | doppelt so breit, 1040 px. **Bei dieser Größe stößt es an die Untertitelzeile** — siehe unten. |
+| **Outro** | Weg gebaut und geprüft, Datei fehlt. |
+
+**Zur Zeilenhöhe, zweiter Anlauf:** mit dem Schnitt auf ihn in der Totale lag
+die feste 0,65 plötzlich auf seinen Händen — dort ist er klein im Bild, und
+das Kinn sitzt viel weiter oben. Unterschieden wird jetzt über `mitte`, die
+Bewegungsmasse in der Bildmitte: **Nahaufnahme ≥ 0,45 → Zeile auf 0,65,
+sonst auf 0,42.** Nicht über eine gemessene Kopfoberkante — die schwankte bei
+zwei *identischen* Ausschnitten zwischen 0,44 und 0,65. `mitte` trennt
+dieselben Fälle stabil (Nahaufnahme 0,62–0,73, Totale 0,22–0,28).
+
+**Zum Logo:** bei 1040 px (dem Doppelten) steht die Oberkante direkt unter der
+Untertitelzeile und berührt sie bei zweizeiligen Einblendungen. Auf seinen
+eigenen Shorts ist das Logo rund 450 px breit. **Mein Vorschlag wäre 700** —
+deutlich größer als vorher, aber mit Luft nach oben. Entschieden hat er 1040,
+also liegt 1040 vor.
+
+**Zum Outro:** `--outro` hängt einen Clip hinten an, bringt ihn auf 1080×1920
+und 30 Bilder und lässt Look, Logo und Untertitel bewusst weg. An einem
+Testclip geprüft (10,03 s + 2,5 s = 12,53 s). **Die Datei fehlt:**
+`YNB_Podcast_Outro_9_16_NEU.mov` liegt im Drive
+(`1kLsW8GjTWR-X4_02r7yqWuRUtCa6h5aX`), ist aber **nicht per Link freigegeben** —
+der Abruf landet auf der Google-Anmeldeseite. Anders als der Master und die
+Logodateien, die freigegeben sind. **Eine Freigabe, und es ist ein Durchlauf.**
 
 ---
 

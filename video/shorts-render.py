@@ -214,7 +214,7 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
     """Wortgenaue Zeiten fuer den bereits geschnittenen Clip.
 
     `worte` ist die Zahl der Woerter je Einblendung — drei, sein Wunsch vom
-    20.10.
+    20.10. Eine Einblendung aus einem einzigen Wort wandert zum Nachbarn.
 
     **Eine Einblendung laeuft nie ueber eine Satzgrenze.** Das war sein
     zweiter Einwand: wenn der letzte Satz endet und der naechste anfaengt,
@@ -237,40 +237,61 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
              if w.word.strip()]
     flach = korrekturen_anwenden(flach, paare)
 
-    cues, buf, harte_grenze = [], [], False
+    cues, buf = [], []
 
-    def schliessen(buf, hart):
+    def schliessen(buf, grund):
         cues.append({"start": buf[0]["start"], "end": buf[-1]["end"],
                      "text": " ".join(w["t"] for w in buf),
-                     "woerter": list(buf), "hart": hart})
+                     "woerter": list(buf), "grund": grund})
 
     for i, w in enumerate(flach):
         buf.append(w)
-        satzende = w["t"].endswith((".", "?", "!", "…"))
         naechstes = flach[i + 1] if i + 1 < len(flach) else None
         luecke = (naechstes["start"] - w["end"]) if naechstes else 99
-        wechsel = bool(naechstes) and naechstes.get("seg") != w.get("seg")
-        hart = satzende or wechsel or luecke > pause
-        if hart or len(buf) >= worte:
-            schliessen(buf, hart)
+        if w["t"].endswith((".", "?", "!", "…")):
+            grund = "satz"
+        elif naechstes and naechstes.get("seg") != w.get("seg"):
+            grund = "abschnitt"
+        elif luecke > pause:
+            grund = "pause"
+        elif len(buf) >= worte:
+            grund = "voll"
+        else:
+            grund = None
+        if grund:
+            schliessen(buf, grund)
             buf = []
     if buf:
-        schliessen(buf, True)
+        schliessen(buf, "satz")
 
-    # Eine Einblendung aus einem einzigen Wort liest sich wie ein Zucken. Sie
-    # wandert zurueck — aber nur, wenn die vorhergehende nicht an einer
-    # Satzgrenze endet. Sonst waere genau der Fehler wieder da.
-    zusammen = []
-    for c in cues:
-        v = zusammen[-1] if zusammen else None
-        if (v and not v["hart"] and len(c["woerter"]) == 1
-                and len(v["woerter"]) < worte + 1):
-            v["end"] = c["end"]
-            v["text"] += " " + c["text"]
-            v["woerter"] += c["woerter"]
-            v["hart"] = c["hart"]
-        else:
-            zusammen.append(c)
+    # Ein einzelnes Wort als ganze Einblendung liest sich wie ein Zucken —
+    # sein Einwand: „the steht alleine, warum nicht zusammen mit tendency to".
+    # Es wandert deshalb zum Nachbarn. Rueckwaerts nur, wenn die vorige
+    # Einblendung bloss voll war; vorwaerts nur, wenn die eigene Grenze eine
+    # Atempause war. Ueber ein Satzende oder einen Abschnittswechsel wandert
+    # nichts — genau das war der Fehler davor.
+    zusammen, i = [], 0
+    while i < len(cues):
+        c = cues[i]
+        if len(c["woerter"]) == 1:
+            v = zusammen[-1] if zusammen else None
+            if v and v["grund"] == "voll" and len(v["woerter"]) < worte + 1:
+                v["end"] = c["end"]
+                v["text"] += " " + c["text"]
+                v["woerter"] += c["woerter"]
+                v["grund"] = c["grund"]
+                i += 1
+                continue
+            n = cues[i + 1] if i + 1 < len(cues) else None
+            if (n and c["grund"] in ("pause", "voll")
+                    and len(n["woerter"]) < worte + 1):
+                n["start"] = c["start"]
+                n["text"] = c["text"] + " " + n["text"]
+                n["woerter"] = c["woerter"] + n["woerter"]
+                i += 1
+                continue
+        zusammen.append(c)
+        i += 1
     return zusammen, info.language
 
 
@@ -440,6 +461,10 @@ def main():
                          "Stimme und Bett gemessen")
     ap.add_argument("--musik-unter", type=float, default=8.0,
                     help="dB, die das Bett unter der Stimme liegt")
+    ap.add_argument("--outro", default=None,
+                    help="Clip, der hinten angehaengt wird; wird auf 1080x1920 "
+                         "und 30 Bilder gebracht, bekommt aber weder Look noch "
+                         "Logo noch Untertitel")
     ap.add_argument("--klein", action="store_true",
                     help="keine Grossbuchstaben (sein Kanal nutzt Versalien)")
     ap.add_argument("--look", choices=["warm", "aus"], default="warm",
@@ -579,6 +604,22 @@ def main():
             graph.append("[st1][duck]amix=inputs=2:normalize=0:"
                          "dropout_transition=0[amix]")
             a_quelle = "[amix]"
+            naechste += 1
+
+        if a.outro:
+            cmd += ["-i", a.outro]
+            graph.append(f"[{naechste}:v]scale={W}:{H}:"
+                         f"force_original_aspect_ratio=decrease,"
+                         f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30,"
+                         f"format=yuv420p[ov]")
+            graph.append(f"[{naechste}:a]aformat=sample_fmts=fltp:"
+                         f"sample_rates=48000:channel_layouts=stereo[oa]")
+            stimme = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
+            graph.append(f"{letzte}format=yuv420p[vm]")
+            graph.append(f"{stimme}aformat=sample_fmts=fltp:sample_rates=48000:"
+                         f"channel_layouts=stereo[am]")
+            graph.append("[vm][am][ov][oa]concat=n=2:v=1:a=1[vend][aend]")
+            letzte, a_quelle = "[vend]", "[aend]"
             naechste += 1
 
         cmd += ["-filter_complex", ";".join(graph),

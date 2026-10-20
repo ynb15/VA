@@ -54,7 +54,8 @@ LIPPE_BAND = (0.56, 0.66)   # enges Band: an vier geprueften Nahaufnahmen
                             # sonst an den Hals (Short 2: 0,72).
 STAPEL_H = 0.70             # Hoehe eines Stapelausschnitts, Anteil der Quelle
 STAPEL_LIPPE = 0.70         # feste Zeilenhoehe im Stapel, Anteil der Haelfte
-ZEILE_FEST = 0.65           # Zeilenhoehe im herangezogenen Bild, Anteil der Hoehe
+ZEILE_FEST = 0.65           # Zeilenhoehe bei grossem Kopf, Anteil der Hoehe
+ZEILE_WEIT = 0.42           # Zeilenhoehe, wenn die Person klein im Bild steht
                             # Beim Zoom sitzt die Kopfoberkante bauartbedingt auf
                             # 10 % der Kastenhoehe — damit liegt der Mund immer
                             # bei rund 0,56 und das Kinn bei 0,73. Eine feste
@@ -206,7 +207,7 @@ def _kasten(mitte_x, qb, qh, seitenverhaeltnis, zoom=1.0, kopf_oben=None):
 
 
 def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=0,
-               abstand=0.2, zoom=1.0):
+               abstand=0.2, zoom=1.0, kein_stapel=False):
     zeiten, klein, (qb, qh) = _graustufen_folge(pfad, abstand=abstand)
     if len(klein) < 2:
         raise SystemExit("Zu wenige Bilder gelesen.")
@@ -248,7 +249,7 @@ def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=0,
                and s["masse"] < totanteil * bezug)
         mitte = mittenmasse(s["spalten"])
         n = len(s["spalten"])
-        if tot or mitte >= MITTE_SCHWELLE:
+        if tot or kein_stapel or mitte >= MITTE_SCHWELLE:
             x = gipfel(s["spalten"], 0, n) * sx
             # Erst ueber den vollen Ausschnitt die Kopfoberkante messen, dann
             # den engeren Kasten darum legen — sonst sucht man den Kopf in
@@ -258,8 +259,20 @@ def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=0,
                                  int(grob[0] / sx), int((grob[0] + grob[2]) / sx))
             kasten = _kasten(x, qb, qh, ZIEL_V, zoom=zoom,
                              kopf_oben=oben if zoom > 1.0 else None)
+            # Wo die Zeile sitzt, haengt daran, wie gross der Kopf im Bild
+            # ist. Beim Heranziehen zieht der Ausschnitt die Kopfoberkante auf
+            # 10 % der Kastenhoehe — dann steht der Mund bei 0,56, das Kinn
+            # bei 0,73, und die feste Zeile dazwischen ist geprueft. Stammt
+            # der Ausschnitt dagegen aus einer Totale, ist die Person klein
+            # und das Kinn viel weiter oben; dort landete die feste 0,65 auf
+            # seinen Haenden.
+            # Unterschieden wird ueber `mitte` und nicht ueber eine gemessene
+            # Kopfoberkante: die Messung schwankte bei zwei identischen
+            # Ausschnitten zwischen 0,44 und 0,65 Zeilenhoehe. `mitte` trennt
+            # dieselben Faelle stabil (Nahaufnahme 0,62–0,73, Totale 0,22–0,28).
+            anteil = ZEILE_FEST if mitte >= MITTE_SCHWELLE else ZEILE_WEIT
             if zoom > 1.0:
-                hoehe = int(round(ZEILE_FEST * AUS_H))
+                hoehe = int(round(anteil * AUS_H))
             else:
                 hoehe = int(round(lippe_aus_kopf(s["kurz"], kasten, sx, sy) * AUS_H))
             eintrag = {"layout": "einzel", "kasten": "%d:%d:%d:%d" % kasten,
@@ -309,6 +322,10 @@ if __name__ == "__main__":
     ap.add_argument("--totanteil", type=float, default=0.28,
                     help="Anteil der mittleren Bewegung, unter dem eine "
                          "Einstellung als leer gilt")
+    ap.add_argument("--kein-stapel", action="store_true",
+                    help="auch Totalen auf eine Person beschneiden statt zu "
+                         "stapeln — auf dem staerksten Bewegungsgipfel, also "
+                         "auf dem, der gerade spricht und gestikuliert")
     ap.add_argument("--zoom", type=float, default=1.0,
                     help="enger heranziehen; seine Shorts liegen bei rund 1.35")
     ap.add_argument("--lippe-versatz", type=int, default=0,
@@ -317,7 +334,8 @@ if __name__ == "__main__":
     a = ap.parse_args()
     plan, groesse, bezug = plan_bauen(a.clip, totanteil=a.totanteil,
                                       lippe_versatz=a.lippe_versatz,
-                                      abstand=a.abstand, zoom=a.zoom)
+                                      abstand=a.abstand, zoom=a.zoom,
+                                      kein_stapel=a.kein_stapel)
     print(f"Bezugsbewegung {bezug:.2f} · {len(plan)} Einstellungen")
     for p in plan:
         mark = "TOT " if p["tot"] else "    "
