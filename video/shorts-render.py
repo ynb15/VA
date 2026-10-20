@@ -27,7 +27,7 @@ Drei Dinge, die aus der ersten Runde am Sutcliffe-Master gelernt sind
   Verworfen: den toten Abschnitt samt Ton herausschneiden. Das zerreisst den
   Satz, der darueber laeuft, und verschiebt alle folgenden Zeiten.
 """
-import argparse, json, os, subprocess, sys, tempfile
+import argparse, json, os, re, subprocess, sys, tempfile
 from pathlib import Path
 
 import imageio_ffmpeg
@@ -59,8 +59,39 @@ def ass_time(t):
     return f"{int(h)}:{int(m):02d}:{sec:05.2f}"
 
 
+SATZZEICHEN = ".,!?;:\u2026"
+
+
+def _anzeige(wort, gross):
+    """Wort, wie es im Bild steht: ohne schliessendes Satzzeichen.
+
+    Sein Einwand vom 20.10.: „du hast an zwei, drei Stellen noch einen Punkt
+    gemacht und ein Fragezeichen, das wirkt total fehl am Platz." Stimmt —
+    in Shorts steht kein Satzzeichen. Fuer die TRENNUNG braucht das Werkzeug
+    den Punkt aber weiterhin, deshalb faellt er erst hier weg und nicht
+    schon im Transkript. Apostrophe bleiben: IT'S, THERE'S.
+    """
+    w = wort.rstrip(SATZZEICHEN)
+    return w.upper() if gross else w
+
+
+def _breite_em(text):
+    """Grobe Textbreite in Geviert, um die Schrift einpassen zu koennen."""
+    b = 0.0
+    for c in text:
+        if c == " ":
+            b += 0.32
+        elif c in "IJl'\u2019":
+            b += 0.33
+        elif c in "MW":
+            b += 0.86
+        else:
+            b += 0.64
+    return b
+
+
 def build_ass(cues, path, marginv=320, tempo=1.0, tiefer=0, gross=True,
-              groesse=88):
+              groesse=78, rand=40):
     """cues -> ASS mit wortweiser Hervorhebung.
 
     Abgelesen an seinen veroeffentlichten Shorts: GROSSBUCHSTABEN, fetter
@@ -68,9 +99,10 @@ def build_ass(cues, path, marginv=320, tempo=1.0, tiefer=0, gross=True,
     Gelb. Dafuer wird je Wort eine eigene Zeile ausgegeben, die alle Woerter
     der Einblendung zeigt und nur eines einfaerbt.
 
-    `tiefer` schiebt die Zeile unter die Lippe — nicht darauf. Auch das ist
-    an seinen Shorts abgelesen: die Zeile sitzt dort auf Bart- und Kinnhoehe,
-    rund 0,70 der Bildhoehe.
+    **Die Schriftgroesse gilt je Einblendung, nicht fuer alle.** Sein Wunsch
+    ist eine Zeile pro Einblendung; drei kurze Woerter und
+    `CALLED THE HYPERMASCULINITY` sind aber nicht gleich breit. Also wird nur
+    dort verkleinert, wo es noetig ist — der Rest bleibt gross.
     """
     head = f"""[Script Info]
 ScriptType: v4.00+
@@ -81,29 +113,34 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{FONT},{groesse},{WEISS},&H00000000,&H00000000,-1,0,1,8,3,2,80,80,{marginv},1
+Style: Cap,{FONT},{groesse},{WEISS},&H00000000,&H00000000,-1,0,1,8,3,2,{rand},{rand},{marginv},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lines = []
+    nutzbar = W - 2 * rand
 
-    def zeile(von, bis, text, lippe):
+    def zeile(von, bis, text, lippe, fs):
         kopf = ""
         if lippe is not None:
             kopf = f"{{\\an8\\pos({W // 2},{int(lippe) + tiefer})}}"
+        if fs != groesse:
+            kopf += f"{{\\fs{fs}}}"
         lines.append(f"Dialogue: 0,{ass_time(von / tempo)},{ass_time(bis / tempo)},"
                      f"Cap,,0,0,0,,{kopf}{text}")
 
     for c in cues:
         woerter = [w for w in (c.get("woerter") or [])
                    if w["t"].strip() and w["end"] > c["start"] and w["start"] < c["end"]]
-        roh = [w["t"].strip() for w in woerter] or c["text"].split()
-        roh = [w.upper() for w in roh] if gross else roh
+        roh = [_anzeige(w["t"], gross) for w in woerter]
+        roh = [w for w in roh if w]
         if not roh:
             continue
+        fs = min(groesse, int(nutzbar / max(_breite_em(" ".join(roh)), 0.1)))
+        fs = max(fs, 46)
         if not woerter:
-            zeile(c["start"], c["end"], " ".join(roh), c.get("lippe"))
+            zeile(c["start"], c["end"], " ".join(roh), c.get("lippe"), fs)
             continue
         for i, w in enumerate(woerter):
             von = max(w["start"], c["start"]) if i else c["start"]
@@ -112,7 +149,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                 continue
             teile = [f"{{\\c{GELB_I if k == i else WEISS_I}}}{t}"
                      for k, t in enumerate(roh)]
-            zeile(von, bis, " ".join(teile), c.get("lippe"))
+            zeile(von, bis, " ".join(teile), c.get("lippe"), fs)
 
     Path(path).write_text(head + "\n".join(lines) + "\n", encoding="utf-8")
 
@@ -138,7 +175,13 @@ def korrekturen_lesen(pfad):
 
 
 def _kern(wort):
-    return wort.strip(".,!?;:\"'\u2019\u201c\u201d").lower()
+    """Wortkern fuer den Vergleich: alles Nichtalphanumerische aussen weg.
+
+    Whisper liefert Bindestriche als eigene Vorsilbe (`hyper` + `-masculinity`).
+    Mit einem festen Satzzeichenstreifen blieb der Bindestrich stehen und die
+    Korrektur griff nicht — `CALLED THE HYPER` stand im Bild.
+    """
+    return re.sub(r"^[^0-9A-Za-z]+|[^0-9A-Za-z]+$", "", wort).lower()
 
 
 def korrekturen_anwenden(woerter, paare):
@@ -209,6 +252,15 @@ def srt_to_cues(srt_path, offset=0.0):
     return cues
 
 
+def _aufteilen(n, worte):
+    """Wortzahlen fuer eine Strecke: moeglichst gleich gross, nie eins allein."""
+    if n <= worte:
+        return [n]
+    k = -(-n // worte)
+    basis, rest = divmod(n, k)
+    return [basis + 1] * rest + [basis] * (k - rest)
+
+
 def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
                  pause=0.45):
     """Wortgenaue Zeiten fuer den bereits geschnittenen Clip.
@@ -264,34 +316,58 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
     if buf:
         schliessen(buf, "satz")
 
-    # Ein einzelnes Wort als ganze Einblendung liest sich wie ein Zucken —
-    # sein Einwand: „the steht alleine, warum nicht zusammen mit tendency to".
-    # Es wandert deshalb zum Nachbarn. Rueckwaerts nur, wenn die vorige
-    # Einblendung bloss voll war; vorwaerts nur, wenn die eigene Grenze eine
-    # Atempause war. Ueber ein Satzende oder einen Abschnittswechsel wandert
-    # nichts — genau das war der Fehler davor.
-    zusammen, i = [], 0
-    while i < len(cues):
-        c = cues[i]
-        if len(c["woerter"]) == 1:
-            v = zusammen[-1] if zusammen else None
-            if v and v["grund"] == "voll" and len(v["woerter"]) < worte + 1:
-                v["end"] = c["end"]
-                v["text"] += " " + c["text"]
-                v["woerter"] += c["woerter"]
-                v["grund"] = c["grund"]
-                i += 1
-                continue
-            n = cues[i + 1] if i + 1 < len(cues) else None
-            if (n and c["grund"] in ("pause", "voll")
-                    and len(n["woerter"]) < worte + 1):
-                n["start"] = c["start"]
-                n["text"] = c["text"] + " " + n["text"]
-                n["woerter"] = c["woerter"] + n["woerter"]
-                i += 1
-                continue
-        zusammen.append(c)
-        i += 1
+    # Drei Woerter heisst drei, nicht „meistens drei". In der Fassung davor
+    # wanderte ein einzelnes Wort zum Nachbarn und machte daraus vier. Statt
+    # zu verschieben werden die Woerter einer durchgehenden Strecke neu
+    # aufgeteilt: vier Woerter werden 2+2, sieben werden 3+2+2. Ein Wort steht
+    # nur dann allein, wenn die Strecke selbst nur aus einem besteht.
+    # Eine „Strecke" endet an einer echten Grenze — Satzende, Abschnitt oder
+    # Atempause. Ueber die hinweg wird nichts umverteilt.
+    laeufe, aktuell = [], []
+    for c in cues:
+        aktuell.append(c)
+        if c["grund"] != "voll":
+            laeufe.append(aktuell)
+            aktuell = []
+    if aktuell:
+        laeufe.append(aktuell)
+
+    # Eine Strecke aus einem einzigen Wort gibt eine Einblendung aus einem
+    # einzigen Wort — `LIKE` stand so im Bild. Sie wird mit dem Nachbarn
+    # zusammengelegt, aber nur ueber eine Atempause hinweg: ueber ein Satzende
+    # oder einen Abschnittswechsel wandert weiterhin nichts. Eine Strecke,
+    # deren letzte Grenze auf „voll" steht, ist offen und nimmt die naechste auf.
+    geglaettet = []
+    for lauf in laeufe:
+        laenge = sum(len(c["woerter"]) for c in lauf)
+        offen = bool(geglaettet) and geglaettet[-1][-1]["grund"] == "voll"
+        if offen:
+            geglaettet[-1].extend(lauf)
+        elif laenge == 1 and geglaettet and geglaettet[-1][-1]["grund"] == "pause":
+            geglaettet[-1][-1]["grund"] = "voll"
+            geglaettet[-1].extend(lauf)
+        elif laenge == 1 and lauf[-1]["grund"] == "pause":
+            lauf[-1]["grund"] = "voll"      # nimmt die naechste Strecke auf
+            geglaettet.append(lauf)
+        else:
+            geglaettet.append(lauf)
+    laeufe = geglaettet
+
+    zusammen = []
+    for lauf in laeufe:
+        rest = [w for c in lauf for w in c["woerter"]]
+        teile = []
+        for groesse in _aufteilen(len(rest), worte):
+            teile.append(rest[:groesse])
+            rest = rest[groesse:]
+        for k, teil in enumerate(teile):
+            # Innerhalb einer Strecke steht die naechste Einblendung sofort da,
+            # damit es nicht zwischen jedem Dreier kurz schwarz wird.
+            ende = teile[k + 1][0]["start"] if k + 1 < len(teile) else teil[-1]["end"]
+            zusammen.append({"start": teil[0]["start"], "end": ende,
+                             "text": " ".join(w["t"] for w in teil),
+                             "woerter": teil,
+                             "grund": lauf[-1]["grund"] if k + 1 == len(teile) else "voll"})
     return zusammen, info.language
 
 

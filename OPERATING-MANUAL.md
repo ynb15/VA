@@ -7853,3 +7853,26 @@ Podcast-Outro nein — der Abruf landet auf der Anmeldeseite. Der Drive-Konnekto
 kann Binärdateien nur base64 liefern, was bei Megabytes nicht geht.
 **Also: Freigabe erbitten, nicht selbst setzen** (Drive-Schreibrechte sind
 nicht erteilt, und eine Freigabe ist eine Sichtbarkeitsänderung).
+
+── NACHTRAG 20.10., VIERTE RUNDE: SEINE FEINHEITEN
+Er sagt selbst, warum er so genau hinsieht: „das sind Details, die den
+Unterschied machen und die Audience mehr reinsaugen in den Content."
+**Das ist keine Pingeligkeit, das ist sein Handwerk — und es gilt ab jetzt für
+jeden Short**, nicht nur für diesen.
+
+**Die Regeln, die daraus feststehen:**
+· **Keine Satzzeichen im Bild.** Punkt und Fragezeichen fallen weg — aber erst
+  beim Schreiben der Zeile. Zum TRENNEN braucht das Werkzeug sie weiter.
+· **Genau drei Wörter.** Nicht „meistens drei". Wer ein einzelnes Wort zum
+  Nachbarn schiebt, macht daraus vier. Richtig ist, die Wörter einer
+  durchgehenden Strecke neu aufzuteilen: vier werden 2+2, sieben 3+2+2.
+· **Eine Zeile je Einblendung.** Die Schriftgröße gilt je Einblendung, nicht
+  global — sonst schrumpft wegen eines langen Wortes der ganze Short.
+· **Die Zeile bleibt auf einer Höhe**, auch wenn die Kamera wechselt.
+· **Das Outro hängt an jeden Short.**
+· **Das Logo braucht Luft** — 700 px, 0,877 der Höhe.
+
+**Und ein Fallstrick, der zweimal zugeschlagen hat:** Whisper liefert
+Bindestriche als eigene Vorsilbe (`hyper` + `-masculinity`). Wer beim
+Wortvergleich nur Satzzeichen abschneidet, findet die Korrektur nicht.
+Außen alles Nichtalphanumerische weg.

@@ -96,37 +96,29 @@ das veröffentlicht wird, nichts aus dem Netz. In seinem Drive liegt nur
 Text die falsche Farbe. **Eine Datei in den Drive-Eingang, und es ist eine
 Minute Arbeit.**
 
-**Dritte Runde, 20.10.:**
+**Vierte Runde, 20.10. — die Feinheiten, die er etablieren will:**
 
 | | |
 |---|---|
-| **Totale** | `--kein-stapel`: zwischen 43,6 und 51,7 bleibt der Schnitt auf ihm statt zu stapeln. Beschnitten wird auf den stärksten Bewegungsgipfel — in einer Passage, die er allein spricht, ist das er. |
-| **hypermasculinity** | steht jetzt in einer Einblendung. Whisper hört `hyper masculinity` als zwei Wörter, die Korrekturliste macht ein Wort daraus — Wortfolge links, ein Wort rechts. |
-| **einzelnes „the"** | wandert zum Nachbarn. Rückwärts nur, wenn die vorige Einblendung bloß voll war; **vorwärts**, wenn die eigene Grenze eine Atempause war. Über ein Satzende oder einen Abschnittswechsel wandert nichts. |
-| **Logo** | doppelt so breit, 1040 px. **Bei dieser Größe stößt es an die Untertitelzeile** — siehe unten. |
-| **Outro** | Weg gebaut und geprüft, Datei fehlt. |
+| **Outro** | hängt dran. `YNB_Podcast_Outro_9_16_NEU.mov`, 4,21 s, ProRes 4444, 1080×1920, 24 fps — wird auf 30 Bilder gebracht und bekommt **weder Look noch Logo noch Untertitel**. Gesamtlänge 59,4 s. |
+| **Logo** | 700 px statt 1040, auf 0,877 der Bildhöhe. Luft über und unter der Zeile. |
+| **Zeile bleibt auf einer Höhe** | auch beim Wechsel in die Totale. Konstant 0,65. Das Auge hat die Zeile immer am selben Fleck. |
+| **keine Satzzeichen** | Punkt und Fragezeichen fallen im Bild weg. **Für die Trennung braucht das Werkzeug sie weiter**, deshalb fallen sie erst beim Schreiben der Zeile weg, nicht schon im Transkript. |
+| **Sutcliffes Einwurf** | raus. Gemessen: er endet auf *„vulnerability"* bei 20,28 s, Sutcliffes *„Yeah. Right."* liegt bei **20,44–20,94**, sein nächster Satz beginnt bei 21,22. Geschnitten 20,32–21,12. Sein Reaktionsbild bleibt eine Sekunde stehen, nur stumm. |
+| **genau drei Wörter** | Statt ein einzelnes Wort zum Nachbarn zu schieben (das machte vier), werden die Wörter einer durchgehenden Strecke **neu aufgeteilt**: vier werden 2+2, sieben werden 3+2+2. Über ein Satzende hinweg wird nichts umverteilt. |
+| **eine Zeile je Einblendung** | Die Schriftgröße gilt **je Einblendung**: Grundgröße 78, und nur wo es nötig ist, wird verkleinert. `CALLED THE HYPERMASCULINITY` läuft so auf einer Zeile, ohne dass alle anderen kleiner werden. |
 
-**Zur Zeilenhöhe, zweiter Anlauf:** mit dem Schnitt auf ihn in der Totale lag
-die feste 0,65 plötzlich auf seinen Händen — dort ist er klein im Bild, und
-das Kinn sitzt viel weiter oben. Unterschieden wird jetzt über `mitte`, die
-Bewegungsmasse in der Bildmitte: **Nahaufnahme ≥ 0,45 → Zeile auf 0,65,
-sonst auf 0,42.** Nicht über eine gemessene Kopfoberkante — die schwankte bei
-zwei *identischen* Ausschnitten zwischen 0,44 und 0,65. `mitte` trennt
-dieselben Fälle stabil (Nahaufnahme 0,62–0,73, Totale 0,22–0,28).
+**Zwei Fehler, die dabei auffielen:**
 
-**Zum Logo:** bei 1040 px (dem Doppelten) steht die Oberkante direkt unter der
-Untertitelzeile und berührt sie bei zweizeiligen Einblendungen. Auf seinen
-eigenen Shorts ist das Logo rund 450 px breit. **Mein Vorschlag wäre 700** —
-deutlich größer als vorher, aber mit Luft nach oben. Entschieden hat er 1040,
-also liegt 1040 vor.
+**`CALLED THE HYPER`** — die Korrektur `hyper masculinity → hypermasculinity`
+griff nicht, weil Whisper den Bindestrich als eigene Vorsilbe liefert
+(`hyper` + `-masculinity`) und mein Wortkern nur Satzzeichen abschnitt.
+Jetzt fällt außen alles Nichtalphanumerische weg.
 
-**Zum Outro:** `--outro` hängt einen Clip hinten an, bringt ihn auf 1080×1920
-und 30 Bilder und lässt Look, Logo und Untertitel bewusst weg. An einem
-Testclip geprüft (10,03 s + 2,5 s = 12,53 s). **Die Datei fehlt:**
-`YNB_Podcast_Outro_9_16_NEU.mov` liegt im Drive
-(`1kLsW8GjTWR-X4_02r7yqWuRUtCa6h5aX`), ist aber **nicht per Link freigegeben** —
-der Abruf landet auf der Google-Anmeldeseite. Anders als der Master und die
-Logodateien, die freigegeben sind. **Eine Freigabe, und es ist ein Durchlauf.**
+**`LIKE` stand allein im Bild** — eine Strecke aus einem einzigen Wort gibt
+eine Einblendung aus einem einzigen Wort. Solche Strecken werden mit dem
+Nachbarn zusammengelegt, **aber nur über eine Atempause hinweg**; über
+Satzende und Abschnittswechsel weiterhin nicht.
 
 ---
 
