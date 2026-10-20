@@ -279,6 +279,13 @@ Alphakanals in diesem Bereich entfernt sie sauber, ohne den Körper zu
 beschädigen. Vor so einem Schnitt immer erst das Zeilenprofil der Maske
 ansehen.
 
+### Logo vor oder hinter den Köpfen
+
+`logo_oben` entscheidet das. Vorgabe ist **vor** den Köpfen: wer sagt, man
+solle „ein Logo auf ihn werfen", meint davor, nicht dahinter. Hinter den
+Köpfen (`logo_oben: false`) ist es nur sinnvoll, wenn das Logo auf einer
+Grafik in der Bildmitte liegt, wie in der DOAC-Vorlage.
+
 ### Eine Regel für mich
 
 **Genau das liefern, was bestellt ist.** Er hat „Human Extinction" verlangt;

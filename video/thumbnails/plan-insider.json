@@ -1,0 +1,33 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_3605.png",
+  "rechts": "video/thumbnails/_freisteller/a_2504_ohne_hand.png",
+  "ziel_links": {
+   "augen_x": 167,
+   "scheitel_y": 10,
+   "box_h": 495
+  },
+  "ziel_rechts": {
+   "augen_x": 1128,
+   "scheitel_y": 10,
+   "box_h": 470
+  },
+  "logo": "video/thumbnails/_logo_openai.png",
+  "logo_xy": [
+   1085,
+   600
+  ],
+  "logo_groesse": 160,
+  "zeilen": [
+   "OpenAI",
+   "Insider"
+  ],
+  "kasten": 1,
+  "text_mitte_y": 360,
+  "max_breite": 560,
+  "max_hoehe": 430,
+  "ziel": "video/thumbnails/aaronson-openai-insider.jpg",
+  "logo_oben": true
+ }
+]

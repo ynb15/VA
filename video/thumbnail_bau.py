@@ -308,7 +308,7 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
           mitte=None, mitte_kippung=4.0, mitte_rand=14, mitte_breite=None,
           mitte_unten=700, mitte_dunkel=0.82, mitte_karte=True,
           mitte_weich_rand=70, logo=None, logo_xy=(528, 370), logo_groesse=128,
-          logo_farbe=(0xF0, 0x48, 0x60)):
+          logo_farbe=(0xF0, 0x48, 0x60), logo_oben=True):
     """zeilen: Liste von Texten · kasten: Zeilenindex, oder [index, "teil"].
 
     `mitte` ist ein echtes Foto fuer die Bildmitte. Liegt eines vor, ruecken
@@ -352,7 +352,7 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
             bild.alpha_composite(im, dest=(max(0, 640 - im.width // 2),
                                            max(0, y)))
 
-    if logo:
+    if logo and not logo_oben:
         logo_setzen(bild, logo, logo_xy, logo_groesse, logo_farbe)
 
     if links:
@@ -361,6 +361,11 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
     if rechts:
         kopf_setzen(bild, rechts,
                     ziel_rechts or (ZIEL_RECHTS_MITTE if mit_mitte else ZIEL_RECHTS))
+    if logo and logo_oben:
+        # Auf die Koepfe geworfen, nicht dahinter: wer „ein Logo auf ihn
+        # werfen" sagt, meint davor.
+        logo_setzen(bild, logo, logo_xy, logo_groesse, logo_farbe)
+
     _, grad = satz(bild, zeilen, kasten, text_mitte, text_mitte_y,
                    max_breite, max_hoehe, grad)
     bild.convert('RGB').save(ziel, quality=95)
