@@ -211,17 +211,22 @@ def logo_setzen(bild, maske_pfad, mitte_xy, groesse, farbe=(0xF0, 0x48, 0x60),
 
 
 def pfeil(bild, von, nach, bogen=0.28, dicke=18, farbe=(255, 255, 255),
-          kopf=3.1):
+          kopf=3.1, gezeichnet=True, schwung=0.30):
     """Ein gebogener Pfeil von `von` nach `nach`.
 
     `bogen` ist die Auslenkung quer zur Verbindungslinie, als Anteil ihrer
     Laenge; positiv biegt nach unten. `kopf` ist die Spitzenlaenge in
     Vielfachen der Strichdicke.
+
+    `gezeichnet` gibt dem Strich einen Handschrift-Zug: er laeuft am Anfang
+    duenn aus und wird zur Spitze hin voll, dazu ein leichtes Schlenkern quer
+    zur Linie (`schwung`, in Vielfachen der Dicke). Ohne das sieht der Pfeil
+    nach Zeichenprogramm aus, nicht nach Hand.
     """
+    import math
     (x0, y0), (x1, y1) = von, nach
     dx, dy = x1 - x0, y1 - y0
     laenge = max(1.0, (dx * dx + dy * dy) ** 0.5)
-    # Steuerpunkt quer zur Verbindung
     sx = (x0 + x1) / 2 - dy / laenge * bogen * laenge
     sy = (y0 + y1) / 2 + dx / laenge * bogen * laenge
 
@@ -230,29 +235,38 @@ def pfeil(bild, von, nach, bogen=0.28, dicke=18, farbe=(255, 255, 255),
         return (u * u * x0 + 2 * u * t * sx + t * t * x1,
                 u * u * y0 + 2 * u * t * sy + t * t * y1)
 
-    n = 160
-    ende = 1.0 - (kopf * dicke) / laenge * 0.75   # vor der Spitze aufhoeren
-    ende = max(0.05, min(0.98, ende))
+    ende = max(0.05, min(0.98, 1.0 - (kopf * dicke) / laenge * 0.70))
     d = ImageDraw.Draw(bild)
-    punkte = [punkt(ende * i / n) for i in range(n + 1)]
-    d.line(punkte, fill=farbe + (255,), width=dicke, joint='curve')
-    for px, py in punkte[::6]:
-        r = dicke / 2
+    n = 240
+    for i in range(n + 1):
+        t = ende * i / n
+        px, py = punkt(t)
+        if gezeichnet:
+            # Tangente fuer das Querschlenkern
+            ax, ay = punkt(max(0.0, t - 0.01))
+            bx, by = punkt(min(1.0, t + 0.01))
+            tx, ty = bx - ax, by - ay
+            tl = max(1e-6, (tx * tx + ty * ty) ** 0.5)
+            nx, ny = -ty / tl, tx / tl
+            v = math.sin(t * math.pi * 1.7 + 0.6) * schwung * dicke
+            px, py = px + nx * v, py + ny * v
+            r = dicke / 2 * (0.40 + 0.60 * (t / max(ende, 1e-6)) ** 0.7)
+        else:
+            r = dicke / 2
         d.ellipse([px - r, py - r, px + r, py + r], fill=farbe + (255,))
 
-    # Spitze entlang der Tangente am Ende
     ax, ay = punkt(ende)
     bx, by = punkt(min(1.0, ende + 0.02))
     tx, ty = bx - ax, by - ay
     tl = max(1e-6, (tx * tx + ty * ty) ** 0.5)
     tx, ty = tx / tl, ty / tl
     nx, ny = -ty, tx
-    spitze = (x1, y1)
     lang = kopf * dicke
-    breit = kopf * dicke * 0.62
-    d.polygon([spitze,
+    breit = kopf * dicke * (0.52 if gezeichnet else 0.62)
+    d.polygon([(x1, y1),
                (x1 - tx * lang + nx * breit, y1 - ty * lang + ny * breit),
-               (x1 - tx * lang - nx * breit, y1 - ty * lang - ny * breit)],
+               (x1 - tx * lang * 0.82 - nx * breit, y1 - ty * lang * 0.82
+                - ny * breit)],
               fill=farbe + (255,))
     return bild
 
@@ -357,7 +371,8 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
           mitte_weich_rand=70, logo=None, logo_xy=(528, 370), logo_groesse=128,
           logo_farbe=(0xF0, 0x48, 0x60), logo_oben=True, pfeil_von=None,
           pfeil_nach=None, pfeil_bogen=0.28, pfeil_dicke=18,
-          pfeil_farbe=(255, 255, 255)):
+          pfeil_farbe=(0xDF, 0x2D, 0x00), pfeil_gezeichnet=True,
+          pfeil_kopf=3.1):
     """zeilen: Liste von Texten · kasten: Zeilenindex, oder [index, "teil"].
 
     `mitte` ist ein echtes Foto fuer die Bildmitte. Liegt eines vor, ruecken
@@ -420,7 +435,7 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
 
     if pfeil_von and pfeil_nach:
         pfeil(bild, tuple(pfeil_von), tuple(pfeil_nach), pfeil_bogen,
-              pfeil_dicke, pfeil_farbe)
+              pfeil_dicke, tuple(pfeil_farbe), pfeil_kopf, pfeil_gezeichnet)
     bild.convert('RGB').save(ziel, quality=95)
     return ziel, grad
 

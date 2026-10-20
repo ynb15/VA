@@ -285,9 +285,20 @@ ansehen.
 `bogen` ist die Auslenkung quer zur Verbindungslinie als Anteil ihrer Länge
 (positiv biegt nach unten), die Spitze sitzt auf der Tangente am Ende.
 
-**Unter den Kasten, nicht durch ihn.** Der erste Versuch lief quer über
-„Insider". Die Kastenunterkante steht im Bauprotokoll — der Pfeil beginnt
-darunter.
+**Unter den Kasten, nicht durch ihn, und nicht an ihn heran.** Der erste
+Versuch lief quer über „Insider". Beim zweiten kam die Spitze dem Kasten zu
+nah — und weil der Pfeil dieselbe Farbe hat, verschmelzen die beiden dann
+optisch. Nachgemessen werden sollte der kleinste Abstand zwischen roten
+Pixeln ausserhalb des Kastenrechtecks und dem Rechteck selbst; **unter 20 px
+sieht es verbunden aus**, bei 24 px steht es frei.
+
+**`gezeichnet=True` ist Vorgabe.** Der Strich läuft am Anfang dünn aus und
+wird zur Spitze hin voll, dazu ein leichtes Schlenkern quer zur Linie
+(`schwung`). Ohne das sieht der Pfeil nach Zeichenprogramm aus, nicht nach
+Hand — und genau das war seine Rückmeldung: *„so ein bisschen mehr
+gezeichnet."*
+
+**Farbe:** dieselbe wie der Kasten, `#DF2D00`. Das ist jetzt die Vorgabe.
 
 ### Logo vor oder hinter den Köpfen
 

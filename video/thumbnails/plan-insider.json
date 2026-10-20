@@ -16,9 +16,9 @@
   "logo": "video/thumbnails/_logo_openai.png",
   "logo_xy": [
    640,
-   152
+   134
   ],
-  "logo_groesse": 150,
+  "logo_groesse": 224,
   "zeilen": [
    "OpenAI",
    "Insider"
@@ -30,14 +30,20 @@
   "ziel": "video/thumbnails/aaronson-openai-insider.jpg",
   "logo_oben": true,
   "pfeil_von": [
-   648,
-   642
+   598,
+   652
   ],
   "pfeil_nach": [
-   978,
-   548
+   1004,
+   588
   ],
-  "pfeil_bogen": 0.3,
-  "pfeil_dicke": 18
+  "pfeil_bogen": 0.2,
+  "pfeil_dicke": 22,
+  "pfeil_farbe": [
+   223,
+   45,
+   0
+  ],
+  "pfeil_gezeichnet": true
  }
 ]
