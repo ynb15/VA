@@ -141,6 +141,62 @@ seiner Bestätigung: meine Messung schlägt seine Abnahme nicht.
    `-0NES3TOiIg`, `GxpvzT3rUBQ` und `f79ehF4zP3I` steht dort derselbe
    Gast-Kopf rechts, und Yannick kommt im Bild gar nicht vor.
 
+## Grafik in der Bildmitte — nach den DOAC-Vorlagen gemessen
+
+Er am 20.10.: *„Ich möchte, dass du im Hintergrund so eine Grafik erstellst,
+wie bei Diary of a CEO."* Drei Vorlagen geschickt, gewünscht ist die mittlere
+mit dem ChatGPT-Logo.
+
+### Was bei DOAC steht, mit demselben Detektor gemessen
+
+| | links: Augen x / y · Höhe | rechts: Augen x / y · Höhe |
+|---|---|---|
+| Vorlage 1 | 177 / 283 · 441 | 1127 / 280 · 431 |
+| Vorlage 2 | 162 / 305 · 448 | 1133 / 330 · 425 |
+| Vorlage 3 | 163 / 290 · 489 | 1124 / 338 · 421 |
+| **Mittel** | **167 / 293 · 459** | **1128 / 316 · 426** |
+
+**Mit Grafik in der Mitte rücken die Köpfe nach aussen und werden kleiner:**
+Gesichtshöhe 459 / 426 statt 508 / 497 bei ihm ohne Grafik, Augen bei x = 167
+und 1128 statt 170 und 1109. Sonst bleibt für die Mitte kein Platz.
+
+**Die Schrift sitzt oben, nicht mittig.** Bei DOAC läuft der Textblock von
+y ≈ 20 bis 230, Mitte also bei ≈ 125. Das Mittelfeld beginnt darunter bei
+y ≈ 230 und läuft bis zur Unterkante, waagerecht von x ≈ 300 bis 960.
+
+**Das ChatGPT-Logo** in Vorlage 2: 132 × 135 px, Mitte bei (524, 402), Farbe
+≈ `#F04860`, als Kontur mit Neon-Schein, nicht gefüllt.
+
+### Was gebaut ist
+
+`thumbnail_bau.py` nimmt jetzt `"mitte": "<bild>"`. Liegt eines vor, schaltet
+der Setzer selbsttätig auf die DOAC-Werte um: Köpfe nach aussen, Schrift nach
+oben. Dazu `karte()` — die **gekippte Fotokarte mit hellem Rand und
+Schlagschatten**, die in drei seiner sechs Thumbnails steht und die hier
+bisher nur beschrieben, nie gebaut war.
+
+### Was nicht gebaut ist, und warum
+
+**Das DOAC-Mittelbild ist selbst KI-erzeugt** — der Cyborg-Kopf, die
+Robotergesichter, die brennende Stadt. Ein Eins-zu-eins-Nachbau ginge nur mit
+einem Bildmodell, und seine stehende Vorgabe lautet: keine Bildmodelle, keine
+erfundenen Gesichter, keine KI-Hintergründe.
+
+**Das ist seine Entscheidung, nicht meine.** Drei Wege stehen offen:
+
+1. **Er gibt das Erzeugen für die Mitte frei.** Der Canva-Connector hat
+   `generate-image`. Die Köpfe blieben echt, nur das Mittelbild wäre erzeugt.
+2. **Echtes Foto in die Karte.** Das ist ohnehin sein eigener Stil — in
+   `-0NES3TOiIg` steckt ein echtes NFL-Foto, in `GxpvzT3rUBQ` ein echtes
+   Plakat. Dafür braucht es ein Bild, das er freigibt.
+3. **Nur Logo und Licht.** Ohne erzeugte Figuren. Dafür müsste er die
+   Logo-Datei liefern: `simpleicons`, `unpkg`, `cdn.jsdelivr.net` und
+   `upload.wikimedia.org` sind im Container über den Proxy gesperrt.
+
+Die Testbilder `test-mitte-*.jpg` zeigen die Mechanik mit einem **Platzhalter**
+— einem Einzelbild aus der Totalen. Das Layout stimmt, der Inhalt der Karte
+nicht.
+
 ## Die Mimik — die wichtigste Regel, und die habe ich zweimal verfehlt
 
 Seine Worte am 20.10.: *„Das hat keinen Anreiz, da klickt keiner drauf, wenn

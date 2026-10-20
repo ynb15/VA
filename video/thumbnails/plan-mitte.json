@@ -1,0 +1,30 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_0718.png",
+  "rechts": "video/thumbnails/_freisteller/a_2504.png",
+  "mitte": "video/thumbnails/_mittelfoto.jpg",
+  "zeilen": [
+   "AI Just",
+   "Broke",
+   "Math"
+  ],
+  "kasten": 1,
+  "ziel": "video/thumbnails/test-mitte-broke-math.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_3605.png",
+  "rechts": "video/thumbnails/_freisteller/a_2504.png",
+  "mitte": "video/thumbnails/_mittelfoto.jpg",
+  "zeilen": [
+   "Human",
+   "Extinction?"
+  ],
+  "kasten": [
+   1,
+   "Extinction"
+  ],
+  "ziel": "video/thumbnails/test-mitte-extinction.jpg"
+ }
+]

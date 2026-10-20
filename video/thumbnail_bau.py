@@ -34,6 +34,16 @@ YUNET = os.path.join(HIER, 'modelle', 'yunet.onnx')
 ZIEL_LINKS = dict(augen_x=170, augen_y=281, box_h=508)
 ZIEL_RECHTS = dict(augen_x=1109, augen_y=304, box_h=497)
 
+# Mit einer Grafik in der Mitte ruecken die Koepfe nach aussen und werden
+# kleiner, sonst bleibt kein Platz. Werte aus den drei DOAC-Vorlagen, die er
+# am 20.10. als Beispiel geschickt hat, mit demselben Detektor gemessen.
+ZIEL_LINKS_MITTE = dict(augen_x=167, augen_y=293, box_h=459)
+ZIEL_RECHTS_MITTE = dict(augen_x=1128, augen_y=316, box_h=426)
+# Das Mittelfeld bei DOAC: x 300-960, bis zur Unterkante durchlaufend, und
+# die Schrift sitzt darueber statt mittig.
+MITTE_FELD = dict(x0=300, x1=960, oben=230, unten=720)
+TEXT_Y_MITTE = 140
+
 
 def kopfmass(png):
     """Scheitel, Schulterlinie und Kopfmitte eines Freistellers messen.
@@ -112,6 +122,43 @@ def kopf_setzen(leinwand, png, ziel, kontrast=1.14, helligkeit=1.06):
     y = int(round(ziel['augen_y'] - ay * k))
     leinwand.paste(neu, (x, y), neu)
     return leinwand
+
+
+def karte(pfad, breite, kippung=4.0, rand=14, schatten=(12, 16, 22, 150),
+          dunkel=1.0):
+    """Ein echtes Foto als gekippte Karte mit hellem Rand und Schlagschatten.
+
+    Das Mittel, das in drei seiner sechs veroeffentlichten Thumbnails steht
+    (`-0NES3TOiIg`, `GxpvzT3rUBQ`, `f79ehF4zP3I`) und das im Bauplan bisher
+    nur beschrieben war. Rand und Kippung sind abgelesen, nicht pixelgenau
+    gemessen — beides laesst sich im Plan ueberschreiben.
+
+    schatten: (versatz_x, versatz_y, weichzeichnung, deckkraft)
+    """
+    im = Image.open(pfad).convert('RGB')
+    if dunkel != 1.0:
+        im = Image.eval(im, lambda v: int(min(255, v * dunkel)))
+    k = breite / im.width
+    im = im.resize((int(im.width * k), int(im.height * k)), Image.LANCZOS)
+    mit_rand = Image.new('RGB', (im.width + 2 * rand, im.height + 2 * rand),
+                         (242, 241, 235))
+    mit_rand.paste(im, (rand, rand))
+
+    vx, vy, weich, deck = schatten
+    rahmen = Image.new('RGBA', (mit_rand.width + 2 * (abs(vx) + weich * 2),
+                                mit_rand.height + 2 * (abs(vy) + weich * 2)),
+                       (0, 0, 0, 0))
+    mx = (rahmen.width - mit_rand.width) // 2
+    my = (rahmen.height - mit_rand.height) // 2
+
+    schlag = Image.new('RGBA', rahmen.size, (0, 0, 0, 0))
+    ImageDraw.Draw(schlag).rectangle(
+        [mx + vx, my + vy, mx + vx + mit_rand.width, my + vy + mit_rand.height],
+        fill=(0, 0, 0, deck))
+    schlag = schlag.filter(ImageFilter.GaussianBlur(weich))
+    rahmen = Image.alpha_composite(rahmen, schlag)
+    rahmen.paste(mit_rand, (mx, my))
+    return rahmen.rotate(kippung, resample=Image.BICUBIC, expand=True)
 
 
 def hintergrund(pfad, dunkel=0.08, weich=6.0):
@@ -207,14 +254,38 @@ def satz(bild, zeilen, kasten, mitte_x=640, mitte_y=360,
 
 
 def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
-          text_mitte_y=360, max_breite=760, max_hoehe=470, grad=None,
-          hg_dunkel=0.08, hg_weich=6.0, ziel_links=None, ziel_rechts=None):
-    """zeilen: Liste von Texten · kasten: Zeilenindex, oder [index, "teil"]."""
+          text_mitte_y=None, max_breite=None, max_hoehe=None, grad=None,
+          hg_dunkel=0.08, hg_weich=6.0, ziel_links=None, ziel_rechts=None,
+          mitte=None, mitte_kippung=4.0, mitte_rand=14, mitte_breite=None,
+          mitte_unten=700, mitte_dunkel=0.82):
+    """zeilen: Liste von Texten · kasten: Zeilenindex, oder [index, "teil"].
+
+    `mitte` ist ein echtes Foto fuer die Bildmitte. Liegt eines vor, ruecken
+    die Koepfe nach aussen und die Schrift nach oben — nach den Werten, die an
+    seinen DOAC-Vorlagen gemessen sind.
+    """
+    mit_mitte = mitte is not None
+    if text_mitte_y is None:
+        text_mitte_y = TEXT_Y_MITTE if mit_mitte else 360
+    if max_breite is None:
+        max_breite = 720 if mit_mitte else 760
+    if max_hoehe is None:
+        max_hoehe = 265 if mit_mitte else 470
+
     bild = hintergrund(hg, dunkel=hg_dunkel, weich=hg_weich)
+
+    if mit_mitte:
+        feld_b = MITTE_FELD['x1'] - MITTE_FELD['x0']
+        k = karte(mitte, mitte_breite or int(feld_b * 0.70),
+                  kippung=mitte_kippung, rand=mitte_rand, dunkel=mitte_dunkel)
+        bild.paste(k, (640 - k.width // 2, mitte_unten - k.height), k)
+
     if links:
-        kopf_setzen(bild, links, ziel_links or ZIEL_LINKS)
+        kopf_setzen(bild, links,
+                    ziel_links or (ZIEL_LINKS_MITTE if mit_mitte else ZIEL_LINKS))
     if rechts:
-        kopf_setzen(bild, rechts, ziel_rechts or ZIEL_RECHTS)
+        kopf_setzen(bild, rechts,
+                    ziel_rechts or (ZIEL_RECHTS_MITTE if mit_mitte else ZIEL_RECHTS))
     _, grad = satz(bild, zeilen, kasten, text_mitte, text_mitte_y,
                    max_breite, max_hoehe, grad)
     bild.convert('RGB').save(ziel, quality=95)
