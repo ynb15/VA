@@ -3,7 +3,11 @@
   "hg": "video/thumbnails/_hintergrund.jpg",
   "links": "video/thumbnails/_freisteller/y_0718.png",
   "rechts": "video/thumbnails/_freisteller/a_2504.png",
-  "mitte": "video/thumbnails/_mittelfoto.jpg",
+  "mitte": "video/thumbnails/_mittelgrafik.jpg",
+  "mitte_karte": false,
+  "mitte_breite": 620,
+  "mitte_dunkel": 1.0,
+  "mitte_unten": 724,
   "zeilen": [
    "AI Just",
    "Broke",
@@ -16,7 +20,11 @@
   "hg": "video/thumbnails/_hintergrund.jpg",
   "links": "video/thumbnails/_freisteller/y_3605.png",
   "rechts": "video/thumbnails/_freisteller/a_2504.png",
-  "mitte": "video/thumbnails/_mittelfoto.jpg",
+  "mitte": "video/thumbnails/_mittelgrafik.jpg",
+  "mitte_karte": false,
+  "mitte_breite": 620,
+  "mitte_dunkel": 1.0,
+  "mitte_unten": 724,
   "zeilen": [
    "Human",
    "Extinction?"

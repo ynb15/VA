@@ -257,7 +257,8 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
           text_mitte_y=None, max_breite=None, max_hoehe=None, grad=None,
           hg_dunkel=0.08, hg_weich=6.0, ziel_links=None, ziel_rechts=None,
           mitte=None, mitte_kippung=4.0, mitte_rand=14, mitte_breite=None,
-          mitte_unten=700, mitte_dunkel=0.82):
+          mitte_unten=700, mitte_dunkel=0.82, mitte_karte=True,
+          mitte_weich_rand=70):
     """zeilen: Liste von Texten · kasten: Zeilenindex, oder [index, "teil"].
 
     `mitte` ist ein echtes Foto fuer die Bildmitte. Liegt eines vor, ruecken
@@ -276,9 +277,30 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
 
     if mit_mitte:
         feld_b = MITTE_FELD['x1'] - MITTE_FELD['x0']
-        k = karte(mitte, mitte_breite or int(feld_b * 0.70),
-                  kippung=mitte_kippung, rand=mitte_rand, dunkel=mitte_dunkel)
-        bild.paste(k, (640 - k.width // 2, mitte_unten - k.height), k)
+        if mitte_karte:
+            k = karte(mitte, mitte_breite or int(feld_b * 0.70),
+                      kippung=mitte_kippung, rand=mitte_rand,
+                      dunkel=mitte_dunkel)
+            bild.paste(k, (640 - k.width // 2, mitte_unten - k.height), k)
+        else:
+            # Randlos wie bei DOAC: das Bild laeuft bis zur Unterkante und
+            # verliert sich seitlich im Schwarz, damit keine Kante steht.
+            br = mitte_breite or feld_b
+            im = Image.open(mitte).convert('RGB')
+            kk = br / im.width
+            im = im.resize((br, int(im.height * kk)), Image.LANCZOS)
+            if mitte_dunkel != 1.0:
+                im = Image.eval(im, lambda v: int(min(255, v * mitte_dunkel)))
+            maske = Image.new('L', im.size, 0)
+            ImageDraw.Draw(maske).rectangle(
+                [mitte_weich_rand, 0,
+                 im.width - mitte_weich_rand, im.height], fill=255)
+            maske = maske.filter(ImageFilter.GaussianBlur(mitte_weich_rand / 2))
+            im = im.convert('RGBA')
+            im.putalpha(maske)
+            y = mitte_unten - im.height
+            bild.alpha_composite(im, dest=(max(0, 640 - im.width // 2),
+                                           max(0, y)))
 
     if links:
         kopf_setzen(bild, links,
