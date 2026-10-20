@@ -26,5 +26,19 @@
    "Extinction"
   ],
   "ziel": "video/thumbnails/aaronson-extinction-B.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_3605.png",
+  "rechts": "video/thumbnails/_freisteller/a_2504.png",
+  "zeilen": [
+   "Human",
+   "Extinction?"
+  ],
+  "kasten": [
+   1,
+   "Extinction"
+  ],
+  "ziel": "video/thumbnails/aaronson-extinction-C.jpg"
  }
 ]

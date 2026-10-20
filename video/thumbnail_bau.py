@@ -21,6 +21,8 @@ KASTEN = (0xDF, 0x2D, 0x00)   # aus seinem Canva-File, nicht aus dem JPEG gescha
 ZEILENHOEHE = 1.11            # Canva lineHeight, der haeufigste Wert in seinem File
 KASTEN_H = 1.01               # Kastenhoehe / Schriftgrad, Median seiner sieben Kaesten
 KASTEN_PAD = 0.10             # seitliches Polster / Schriftgrad, ebenda
+KASTEN_PAD_Y = 0.14           # Polster oben/unten / Schriftgrad, aus denselben
+                              # fuenf Kaesten rueckgerechnet
 CAP = 0.700          # Versalhoehe von Poppins in em, gemessen
 HIER = os.path.dirname(os.path.abspath(__file__))
 SCHRIFT = os.path.join(HIER, 'marke', 'Poppins-Bold.ttf')
@@ -177,18 +179,29 @@ def satz(bild, zeilen, kasten, mitte_x=640, mitte_y=360,
         x = mitte_x - breit / 2
         oben = y + i * schritt
         if i == kasten_index:
-            kh = grad * KASTEN_H
+            # Der Kasten sitzt auf dem Tintenband des Wortes: Oberkante der
+            # Tinte bis Grundlinie, rundum gleich viel Luft. Nicht bis zur
+            # Unterlaenge — in seinen Thumbnails haengt die heraus, siehe das
+            # y von „Patriarchy" in frNOUgxE0IM.
+            ursprung_y = oben - ty
+            grundlinie = ursprung_y + f.getmetrics()[0]
             kp = grad * KASTEN_PAD
-            ky = oben + cap / 2 - kh / 2
+            kpy = grad * KASTEN_PAD_Y
             if kasten_teil:
+                # Tintenmass, nicht Vorschubmass. `textlength` gibt die
+                # Vorschubbreite inklusive Seitenabstand; nimmt man die, steht
+                # rechts mehr Luft als links und der Kasten sitzt schief.
                 stelle = text.index(kasten_teil)
                 vor = d.textlength(text[:stelle], font=f)
-                teil_br = d.textlength(kasten_teil, font=f)
-                kx0 = x - lx + vor
-                d.rectangle([kx0 - kp, ky, kx0 + teil_br + kp, ky + kh],
-                            fill=KASTEN)
+                tl, tt, tr, _ = d.textbbox((0, 0), kasten_teil, font=f)
+                ursprung_x = x - lx + vor
+                kx0, kx1 = ursprung_x + tl, ursprung_x + tr
+                ky0 = ursprung_y + tt
             else:
-                d.rectangle([x - kp, ky, x + breit + kp, ky + kh], fill=KASTEN)
+                kx0, kx1 = x, x + breit
+                ky0 = oben
+            d.rectangle([kx0 - kp, ky0 - kpy, kx1 + kp, grundlinie + kpy],
+                        fill=KASTEN)
         d.text((x - lx, oben - ty), text, font=f, fill=(255, 255, 255))
     return bild, grad
 

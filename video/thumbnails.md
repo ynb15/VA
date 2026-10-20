@@ -240,7 +240,29 @@ Kasten als Rechteck hinter genau einer Zeile, `cornerRounding: 0`:
 | TRAP | 163,8 | 427 | 452,0 | 12,5 | 1,218 |
 | PAST | 161,3 | 413 | 448,2 | 17,6 | 0,932 |
 
-→ **Polster seitlich ≈ 0,10 × Schriftgrad · Kastenhöhe ≈ 1,01 × Schriftgrad.**
+→ **Polster seitlich ≈ 0,10 × Schriftgrad · Polster oben/unten ≈ 0,14 ×
+Schriftgrad.**
+
+### Wie der Kasten sitzt — zweimal nachkorrigiert
+
+Er am 20.10.: *„Der Balken muss nochmal adjustiert werden, da ist mir das Wort
+Extinction noch nicht gleichmäßig."* Zu Recht, zwei Fehler:
+
+1. **Waagerecht:** ich hatte die **Vorschubbreite** des Wortes genommen
+   (`textlength`) statt der **Tintenbreite**. Die Vorschubbreite enthält den
+   Seitenabstand der Schrift — dadurch stand rechts sichtbar mehr Luft als
+   links. Richtig ist `textbbox`.
+2. **Senkrecht:** der Kasten war auf die Versalhöhe zentriert. Wörter mit
+   Oberlängen (`t`, `i`-Punkt in „Extinction") ragen darüber hinaus, also
+   stand oben mehr Luft als unten.
+
+**Die Regel, die jetzt gilt:** der Kasten sitzt auf dem **Tintenband** des
+Wortes — Oberkante der Tinte bis Grundlinie — mit gleich viel Luft rundum.
+**Unterlängen hängen heraus**, nicht hinein: das `y` von „Patriarchy" in
+`frNOUgxE0IM` ragt deutlich unter den Kasten, und das `g` von „Orangutans"
+macht es jetzt genauso.
+
+Nachgemessen am fertigen Bild: links 22, rechts 22, oben 19, unten 19 px.
 
 Nebenbei: dass Poppins-Bold-Tintenbreiten bei fünf verschiedenen Wörtern in
 fünf verschiedenen Graden durchweg ein plausibles, gleichmässiges Polster
