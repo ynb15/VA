@@ -101,13 +101,26 @@ def gesicht_messen(png):
 
 
 def kopf_setzen(leinwand, png, ziel, kontrast=1.14, helligkeit=1.06):
-    """ziel: dict mit augen_x, augen_y, box_h — die gemessenen Vorlagenwerte.
+    """ziel: dict mit augen_x, box_h und entweder augen_y oder scheitel_y.
+
+    **`scheitel_y` ist meist das richtige Mass.** Zwei Koepfe auf dieselbe
+    Gesichtsrahmenhoehe zu bringen heisst nicht, dass sie gleich im Bild
+    sitzen: der Abstand Scheitel-zu-Auge haengt von Kopfhaltung und Abstand
+    zur Kamera ab. Bei gleicher Rahmenhoehe lag Yannicks Scheitel bei y = 11
+    und Aaronsons bei y = 71. Mit `scheitel_y` wird die Oberkante gesetzt und
+    die Augenhoehe daraus gerechnet — die Koepfe werden oben gleich
+    angeschnitten, ohne dass einer groesser gezogen werden muss.
 
     Kontrast und Helligkeit leicht angehoben: in seinen Vorlagen steht das
     Gesicht hart vor dem abgesoffenen Hintergrund, das Kamerabild kommt
     flacher aus der Aufnahme. Nur die Farbkanaele, die Maske bleibt wie sie ist.
     """
     ax, ay, bh = gesicht_messen(png)
+    k_vor = ziel['box_h'] / bh
+    if 'scheitel_y' in ziel:
+        al = np.asarray(Image.open(png))[:, :, 3] > 40
+        oben = int(np.nonzero(al.sum(1) > 6)[0][0])
+        ziel = dict(ziel, augen_y=ziel['scheitel_y'] + (ay - oben) * k_vor)
     im = Image.open(png).convert('RGBA')
     if kontrast != 1.0 or helligkeit != 1.0:
         farbe, maske = im.convert('RGB'), im.getchannel('A')

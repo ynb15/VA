@@ -251,10 +251,24 @@ seiner den Rand ausreizte. Nachgemessen: bei gleichem YuNet-Rahmen
 nach Kopfhaltung und Abstand zur Kamera. Der Gesichtsrahmen misst das nicht
 mit.
 
-**Die Abhilfe:** die Kopfhöhe so wählen, dass **der Scheitel bei beiden an
-derselben Stelle** landet. Für Aaronson hiess das `box_h` 531 statt 426.
-Rechnung: `box_h = (ziel_augen_y − ziel_scheitel_y) / (augen_y − alpha_oben)
-× gemessene_box_h`.
+**Die falsche Abhilfe, die ich zuerst nahm:** den Kopf grösser ziehen, bis
+der Scheitel oben anstösst. Damit wurde Aaronson um 16 % grösser als Yannick,
+und das fiel sofort auf: *„Scotts Kopf ist fast doppelt so gross wie meiner."*
+
+**Die richtige Abhilfe: den Kopf hochschieben, nicht vergrössern.**
+`kopf_setzen()` nimmt dafür `scheitel_y` statt `augen_y` — die Oberkante wird
+gesetzt, die Augenhöhe daraus gerechnet. Beide Köpfe dürfen dieselbe Grösse
+behalten und werden trotzdem oben gleich angeschnitten.
+
+**Grössen vergleicht man am Pupillenabstand, nicht an der Rahmenhöhe.** Die
+Rahmenhöhe hängt von Frisur und Kopfhaltung ab, der Pupillenabstand nicht.
+
+| | links | rechts | Verhältnis |
+|---|---:|---:|---:|
+| seine DOAC-Vorlage 2 | 138,2 | 144,1 | **1,043** |
+| dieses Thumbnail | 142,0 | 144,5 | **1,018** |
+
+Rechts darf also **minimal grösser** sein als links, aber nicht mehr.
 
 ### Hände freistellen
 

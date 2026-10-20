@@ -5,8 +5,8 @@
   "rechts": "video/thumbnails/_freisteller/a_2504_ohne_hand.png",
   "ziel_rechts": {
    "augen_x": 1128,
-   "augen_y": 316,
-   "box_h": 531
+   "scheitel_y": 10,
+   "box_h": 470
   },
   "mitte": "video/thumbnails/_mittelgrafik.jpg",
   "mitte_karte": false,
@@ -25,6 +25,11 @@
   ],
   "kasten": 1,
   "ziel": "video/thumbnails/aaronson-extinction-mitte.jpg",
-  "grad": 127
+  "grad": 127,
+  "ziel_links": {
+   "augen_x": 167,
+   "scheitel_y": 10,
+   "box_h": 495
+  }
  }
 ]
