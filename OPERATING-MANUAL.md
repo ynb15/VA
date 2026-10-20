@@ -8148,3 +8148,67 @@ war es folgenlos**, weil der Versatz Roh ↔ Schnitt an elf Stellen bis
 Minute 72 gemessen ist und überall 12,2 s beträgt. **Offen, falls wieder
 gebraucht:** einen Neuversuch des Bereichslesers einbauen, der den
 Bestätigungslink erneuert, statt den Abbruch als Dateiende zu lesen.
+
+═══════════════════════════════════════════════════════════════════════════════
+20.10.2026: SEINE B-ROLL-REFERENZ IST FREMD — UND SIE IST NICHT SEIN LOOK
+═══════════════════════════════════════════════════════════════════════════════
+
+Er hat drei Shorts geschickt: „die wie ich mir vorstelle, wie sie
+idealerweise aussehen sollen. Also quasi mit B-Rolls, aus Film unterlegt."
+**Alle drei sind von Chris Williamson (`@ChrisWillx`), nicht von ihm** —
+über `youtube.com/oembed` geholt, das antwortet ohne Anmeldung mit Titel und
+Kanal. Vollständige Messung in `video/broll-referenz.md`.
+
+── DIE WATCH-SEITE IST AUCH FÜR FREMDE VIDEOS ZU
+`yt-dlp` auf alle drei: „Sign in to confirm you're not a bot." Also keine
+Aufrufzahlen, keine Dauer, keine Auto-Untertitel. **Der Weg, der am 19.10.
+für seinen eigenen Kanal noch lief, ist jetzt auch dort zu.** Was bleibt:
+`oembed` für Titel und Kanal, `i.ytimg.com/vi/<id>/oardefault.jpg` für **ein**
+Einzelbild im Hochformat 1080×1920.
+
+── DIE VORLAGE IST EIN QUADRAT AUF SCHWARZ, KEIN HOCHFORMAT
+Gemessen an beiden B-Roll-Bildern, **auf das Pixel identisch**: Kasten
+**980×980**, x 50–1029, y 470–1449 — 50 px Rand seitlich, oben und unten je
+470, also exakt mittig. Gerundete Ecken, reines Schwarz drumherum, keine
+Unschärfeverdopplung. Das Sprecherbild dagegen ist randlos 9:16.
+**Deshalb sieht eine Kinoeinstellung darin nicht zerschnitten aus — sie wird
+gar nicht erst ins Hochformat gezwungen.**
+
+── SEINE REFERENZ WIDERSPRICHT SEINEM EIGENEN ABGENOMMENEN LOOK
+Kleinschreibung statt VERSALIEN · Aktivwort **heller und fetter weiß** statt
+gelb (gemessen: `comes` 187,5 Helligkeit / 18,0 Pixel je Spalte, `from`
+245,3 / 24,6) · keine sichtbare Kontur statt dicker schwarzer · **zwei** Wörter
+statt genau drei · Zeile bei 0,50 (B-Roll) bzw. 0,61 links (Sprecher) statt
+0,65 mittig · kein Logo in keinem der drei Bilder.
+**„So umsetzen" heißt deshalb entweder B-Roll in seinen Look einbauen oder
+den Look wechseln. Das sind zwei verschiedene Aufträge, und es ist Geschmack,
+also seine Entscheidung.** Nicht stillschweigend das eine für das andere
+nehmen — acht Runden an einem Short kamen genau aus solchen Details.
+
+── DIE MESSGRENZE, DIE DAZUGEHÖRT
+**Ein Bild je Short.** Daraus ist nicht abzulesen, wie lang eine B-Roll steht,
+wie oft sie kommt, ob hart geschnitten oder geblendet wird, ob der Ton
+darunter abgesenkt ist. Dafür bräuchte es den Schnitt, und an den komme ich
+nicht. **Was ich dazu sage, ist Vorschlag und wird als Vorschlag
+gekennzeichnet.**
+
+── STOCKMATERIAL IST GESPERRT, AUCH DAS GEMEINFREIE
+Am 20.10. gemessen, alle `connect_rejected` (Gateway 403 auf CONNECT):
+`archive.org` · `pixabay.com` · `pexels.com` · `videos.pexels.com` ·
+`mixkit.co` · `coverr.co` · `videvo.net` · `commons.wikimedia.org` ·
+`upload.wikimedia.org`. **Dieselbe Wand wie bei der Musik.**
+Und unabhängig davon: die drei Referenzen unterlegen **Handelsproduktionen**.
+Das Argument von der Spotify-Liste gilt unverändert — ein Content-ID-Anspruch
+träfe **seinen** Kanal. Dass große Kanäle damit durchkommen, ändert nicht, wo
+der Anspruch landet. **Ob er das eingeht, ist seine Entscheidung; das Material
+besorgen tue ich nicht.**
+**Der Weg, der nichts kostet: sein eigenes Material.** AfrikaBurn, Kapstadt,
+die Reiseaufnahmen — dafür liegen auf seinem Kanal schon Belege, und es ist
+unverwechselbar seins, was Stockbilder nie sind.
+
+── WAS NOCH NICHT GEBAUT IST
+`shorts-render.py` hat keinen B-Roll-Schalter (an der Argumentliste geprüft).
+Zu bauen: `--broll zeit:zeit=datei`, der quadratische Kasten 980×980 auf
+x=50/y=470 mit gerundeten Ecken, **die Stimme läuft durch** (der Ton der
+B-Roll wird verworfen, sonst reden zwei gleichzeitig), Untertitel laufen
+darüber weiter.
