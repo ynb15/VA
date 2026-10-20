@@ -7790,8 +7790,14 @@ Drittel der Höhe · warm, kontrastreich, Hintergrund abgesoffen, **Vignette** �
 YNB-Logo mittig im unteren Fünftel.
 
 ── WAS DAVON IM WERKZEUG STEHT
-`--worte 3` · Versalien und gelbes Aktivwort in `build_ass` · `--zoom 1.35`
-in `bildausschnitt.py` · `--look warm` · feste Zeilenhöhe 0,65.
+`--worte 3` · Versalien und gelbes Aktivwort in `build_ass` · **`--zoom 1.15`**
+in `bildausschnitt.py` · `--look warm` · feste Zeilenhöhe 0,65 ·
+**`--schriftgroesse 70`**.
+**Korrigiert am 20.10.:** 1,35 und Schriftgröße 78 waren zu eng — gemessen
+blieben der Schrift nur 74 bzw. 68 Pixel zum Rand, und die Kopfoberkante lag
+außerhalb des Bildes. Seine Rückmeldung: „zu nah rangezoomt, YouTube schneidet
+was ab von der Schrift und meinem Gesicht." Jetzt 114 bzw. 105 Pixel Rand,
+Kopf vollständig im Bild.
 **Was fehlt: die Schrift.** Der Container hat nur DejaVu, Liberation und
 FreeSans — nichts Schmales, nichts mit Textur. **Wenn er die Schriftdatei in
 den Drive-Eingang legt, nehme ich sie.** Danach fragen, nicht raten.
@@ -8001,3 +8007,34 @@ der Zeit des fertigen Videos ab. CapCut Desktop liest das und legt jede Zeile
 als eigenen Textblock auf die Spur. Dreiwortgruppen und Korrekturliste stecken
 drin; Schrift und Farbe setzt er dort selbst. Damit behält er Ton und
 Schnittplatz, und die mechanische Arbeit kommt von hier.
+
+── NACHTRAG 20.10., ACHTE RUNDE: RAND LASSEN
+**„Zu nah rangezoomt, YouTube schneidet da was ab von der Schrift und meinem
+Gesicht."** Beides nachgemessen, beides stimmte.
+
+**Schrift:** die breiteste Einblendung war **938 px breit, Rand 74 links und
+68 rechts.** Die Knopfspalte der Shorts-Oberfläche (Gefällt mir, Kommentar,
+Teilen) liegt rechts bei ungefähr 150 px und genau auf der Höhe der Zeile
+(0,65 der Bildhöhe). Gelöst **nicht** über engere Gruppen — `max_em` zu senken
+hätte „THE" wieder allein stehen lassen, was er im Oktober schon einmal
+beanstandet hat — sondern über die Schriftgröße: **78 → 70**. Die Gruppierung
+rechnet in em und bleibt dadurch unverändert, nur die Zeile wird schmaler.
+Gemessen am fertigen Bild: **861 px, Rand 114 und 105.**
+
+**Gesicht:** bei `--zoom 1.35` lag die Kopfoberkante außerhalb des Bildes.
+**`--zoom 1.15`** (Ausschnitt 528×939 statt 450×800) lässt Luft über dem Kopf
+und zu beiden Seiten.
+
+**Folge für `--marke`:** bei 1,15 ist der Ausschnitt 939 px hoch und passt
+nicht mehr über das eingebrannte Logo (das bei y 875 beginnt). Nach rechts
+auszuweichen hätte die Person aus der Mitte geschoben. `marke_meiden` **zieht
+deshalb jetzt enger statt zur Seite** — höchstens um ein Viertel —, wenn das
+reicht: die Totale steht auf 492×875 bei x=54, mittig auf ihm, Logo draußen.
+
+**Regel: der Bildrand gehört nicht dir.** Bei allem, was auf einer fremden
+Oberfläche läuft, vorher ausmessen, was die Oberfläche selbst belegt — oben
+rund 100 px, rechts rund 150, unten rund 380 von 1080×1920.
+
+**Der Ton ist unverändert:** die Tonspur ist bitgenau dieselbe wie in der
+fünften Runde (`cmp` auf 16-kHz-Mono). Nach der siebten Runde wird am Ton
+nichts mehr angefasst, solange er nicht danach fragt.

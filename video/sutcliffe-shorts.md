@@ -298,7 +298,7 @@ darüber — der Kasten der Totale wandert von `75:280` auf `75:75`, alle
 anderen bleiben unverändert.
 
 ```
-python3 video/bildausschnitt.py clip.mp4 --zoom 1.35 --kein-stapel \
+python3 video/bildausschnitt.py clip.mp4 --zoom 1.15 --kein-stapel \
         --marke 0,875,215,1080 --json plan.json
 
 python3 video/shorts-render.py --src clip.mp4 --plan plan.json \
@@ -371,3 +371,46 @@ Textblock auf die Spur. Gruppierung zu drei Wörtern und die Korrekturliste
 stecken schon drin; Schrift, Farbe und Position setzt er dort selbst. Damit
 behält er seinen Ton und seinen Schnittplatz, und die mechanische Arbeit
 kommt von hier.
+
+---
+
+## Achte Runde, 20.10. — Rand zum Bildrand
+
+**„Zu nah rangezoomt, YouTube schneidet da was ab von der Schrift und meinem
+Gesicht."** Beides nachgemessen, beides stimmte.
+
+| | vorher | jetzt |
+|---|---|---|
+| breiteste Einblendung | 938 px | **861 px** |
+| Rand links / rechts | 74 / 68 px | **114 / 105 px** |
+| Schriftgröße | 78 | **70** |
+| Ausschnitt Nahaufnahme | 450×800 (`--zoom 1.35`) | **528×939 (`--zoom 1.15`)** |
+| Ausschnitt Totale | 450×800 | **492×875** |
+
+Die Knopfspalte der Shorts-Oberfläche (rund 150 px rechts) liegt genau auf der
+Höhe der Zeile. Gelöst **nicht** über engere Gruppen — `max_em` zu senken hätte
+„THE" wieder allein stehen lassen, was Du im Oktober schon beanstandet hast —
+sondern über die Schriftgröße. Die Gruppierung rechnet in em und bleibt
+dadurch unverändert, nur die Zeile wird schmaler. Bei `--zoom 1.35` lag
+zusätzlich die Kopfoberkante außerhalb des Bildes.
+
+**Eine Folge davon:** bei 1,15 ist der Ausschnitt 939 px hoch und passt nicht
+mehr über das eingebrannte Logo des Masters (beginnt bei y 875). Nach rechts
+auszuweichen hätte Dich aus der Bildmitte geschoben — `marke_meiden` zieht
+deshalb jetzt **enger statt zur Seite**, höchstens um ein Viertel. Die Totale
+steht auf 492×875 bei x=54: mittig auf Dir, Logo draußen.
+
+**Am Ton ist nichts angefasst** — die Tonspur ist bitgenau dieselbe wie in der
+fünften Runde.
+
+```
+python3 video/bildausschnitt.py clip.mp4 --zoom 1.15 --kein-stapel \
+        --marke 0,875,215,1080 --json plan.json
+
+python3 video/shorts-render.py --src clip.mp4 --plan plan.json \
+        --tempo 1.2 --auto-captions --lang en --model medium \
+        --korrekturen video/korrekturen.txt --schriftgroesse 70 \
+        --stumm 49.50:49.99 --srt-out short.srt \
+        --logo marke/ynb-logo-weiss.png --logo-breite 700 --logo-hoehe 0.877 \
+        --outro marke/outro_9_16.mov --out short.mp4
+```

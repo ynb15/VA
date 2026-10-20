@@ -224,6 +224,14 @@ def marke_meiden(kasten, marke, qb, qh):
     y_neu = my0 - bh
     if y_neu >= 0:
         return x, y_neu, bb, bh
+    # Nach oben passt der Kasten nicht mehr — dann lieber ein Stueck enger
+    # ziehen als zur Seite rutschen: zur Seite verliert man die Person aus
+    # der Mitte, enger behaelt sie. Mehr als ein Viertel wird nicht gekuerzt.
+    if my0 >= 0.75 * bh:
+        bh_neu = int(my0)
+        bb_neu = int(round(bh_neu * bb / bh))
+        x_neu = max(0, min(x + (bb - bb_neu) // 2, qb - bb_neu))
+        return x_neu, 0, bb_neu, bh_neu
     x_neu = mx1
     if x_neu + bb <= qb:
         return x_neu, y, bb, bh
@@ -354,7 +362,7 @@ if __name__ == "__main__":
                          "stapeln — auf dem staerksten Bewegungsgipfel, also "
                          "auf dem, der gerade spricht und gestikuliert")
     ap.add_argument("--zoom", type=float, default=1.0,
-                    help="enger heranziehen; seine Shorts liegen bei rund 1.35")
+                    help="enger heranziehen. Bewaehrt: 1.15. Seine veroeffentlichten Shorts wirken naeher (rund 1.35), aber dabei liegt die Kopfoberkante ausserhalb des Bildes und der Schrift bleiben nur 70 px zum Rand.")
     ap.add_argument("--lippe-versatz", type=int, default=0,
                     help="Pixel, um die die Untertitel zusaetzlich nach unten "
                          "ruecken")
