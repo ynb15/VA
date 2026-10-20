@@ -275,7 +275,14 @@ def korrekturen_anwenden(woerter, paare):
             continue
         n, ersatz = treffer
         gruppe = woerter[i:i + n]
-        schwanz = gruppe[-1]["t"][len(gruppe[-1]["t"].rstrip(".,!?;:")):]
+        # Satzzeichen des Originals uebernehmen — ausser die Korrektur bringt
+        # selbst eines mit. Sonst stuende dort "AI??", sobald Whisper das
+        # Fragezeichen auch gesetzt hat, und ohne diese Regel haengt es davon
+        # ab, wie der Lauf gerade ausgegangen ist.
+        if ersatz and ersatz[-1][-1:] in ".,!?;:":
+            schwanz = ""
+        else:
+            schwanz = gruppe[-1]["t"][len(gruppe[-1]["t"].rstrip(".,!?;:")):]
         von, bis = gruppe[0]["start"], gruppe[-1]["end"]
         schritt = (bis - von) / max(len(ersatz), 1)
         for k, t in enumerate(ersatz):

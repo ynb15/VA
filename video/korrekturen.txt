@@ -28,3 +28,5 @@ shtetl optimized -> Shtetl-Optimized
 # 20.10.: Whisper setzt das Fragezeichen hinter "how safe is AI" mal, mal
 # nicht — von Lauf zu Lauf verschieden. Seine Frage soll eines haben.
 how safe is ai -> how safe is AI?
+# Und Whisper zerlegt "AI" mal in "A I" — auch das abfangen.
+how safe is a i -> how safe is AI?

@@ -214,3 +214,37 @@ Studioschnitt die Auflösung (ein Kasten, der seinen Kopf auf ein Drittel der
 Höhe bringt, müsste 2,9-fach hochskaliert werden). **Richtig gelöst wird das
 mit seiner eigenen Kamera** (`Right Cam`), und dafür braucht es eine frische
 Kopie der Rohdateien im Drive — die alten sind am Tageslimit.
+
+### Dritte Runde am Short 1 (20.10.)
+
+**„Probier mal, ob du das *So* am Anfang rausschneiden kannst — er spricht da
+auch noch ein bisschen rüber."** Das „So" liegt bei Clipsekunde 0,08–0,44, und
+dahinter fällt der Pegel für drei Hundertstel auf −54 dB. Genau dort getrennt:
+der Short beginnt jetzt auf **„How safe is AI?"**. Rohzeit neu **55:53,3**.
+
+**„Bei der Hälfte musst du die Kamera nochmal adjustieren, sein Gesicht geht
+fast aus dem Short raus."** Stimmte, und die Ursache ist eine Schwäche des
+Werkzeugs: `bildausschnitt.py` sucht den **Bewegungsgipfel**, und Aaronson
+gestikuliert mit der rechten Hand. Die Hand zog den Kasten nach rechts auf
+`x = 812`, am Gesicht vorbei.
+**Nachgemessen an fünf Bildern über die ganze Einstellung: sein Gesicht steht
+konstant bei x 930–970** im 1920er Bild, die linke Wange bei ~780. Der Kasten
+bei 812 schnitt sie also ab. Jetzt **`x = 650`** — Gesicht bei 0,52 der
+Kastenbreite, 130 px Luft links.
+**Regel: der Bewegungsgipfel ist nicht das Gesicht.** Bei einem Gast, der mit
+den Händen redet, wird der Ausschnitt nachgemessen, nicht übernommen.
+
+**Eine halbe Sekunde Studio-Totale mitten im Satz** (Clipsekunde 20,0–20,5)
+zeigt in jedem Ausschnitt nur Wand und Getränkedosen. Sie ist jetzt als `tot`
+markiert und wird mit dem stehenden Bild davor überbrückt — Ton läuft weiter.
+Genau dafür gibt es die Mechanik; dies ist der erste Fall, in dem sie
+gebraucht wurde.
+
+**Und das Fragezeichen ist jetzt zuverlässig.** Whisper schrieb „AI?" im einen
+Lauf, „AI." im nächsten und „A I?" im übernächsten. Zwei Zeilen in
+`korrekturen.txt` fangen beide Zerlegungen ab, und
+`korrekturen_anwenden` übernimmt das Satzzeichen des Originals **nicht
+mehr**, wenn die Korrektur selbst eines mitbringt — sonst stünde dort „AI??",
+sobald Whisper es auch gesetzt hat.
+
+**Stand: 52,7 s.**
