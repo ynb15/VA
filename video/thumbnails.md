@@ -241,6 +241,30 @@ eine saubere Logodatei, die Netzwerkfreigabe für die gesperrten Hosts, und
 die Bestätigung der Schrift. Alles aufgeschrieben in
 `video/thumbnails/WAS-ICH-BRAUCHE.md`.
 
+### Kopfgrössen gleichen sich nicht über den Gesichtsrahmen aus
+
+Am 20.10. fiel ihm auf, dass Aaronsons Kopf oben zu viel Luft hatte, während
+seiner den Rand ausreizte. Nachgemessen: bei gleichem YuNet-Rahmen
+(459 / 426) landete sein Scheitel bei y = 11, Aaronsons bei y = 71.
+
+**Der Grund:** der Abstand Scheitel-zu-Auge ist bei beiden verschieden, je
+nach Kopfhaltung und Abstand zur Kamera. Der Gesichtsrahmen misst das nicht
+mit.
+
+**Die Abhilfe:** die Kopfhöhe so wählen, dass **der Scheitel bei beiden an
+derselben Stelle** landet. Für Aaronson hiess das `box_h` 531 statt 426.
+Rechnung: `box_h = (ziel_augen_y − ziel_scheitel_y) / (augen_y − alpha_oben)
+× gemessene_box_h`.
+
+### Hände freistellen
+
+Sein Hinweis: *„Die Hand hat keine Wirkung."* In `a_2504` liegen beide Hände
+als **eigene Maskenbereiche** vor — ab Zeile 686 steht links von Spalte 800
+nur die Hand, der Rumpf beginnt dort erst bei Spalte 880. Ein Nullsetzen des
+Alphakanals in diesem Bereich entfernt sie sauber, ohne den Körper zu
+beschädigen. Vor so einem Schnitt immer erst das Zeilenprofil der Maske
+ansehen.
+
 ### Eine Regel für mich
 
 **Genau das liefern, was bestellt ist.** Er hat „Human Extinction" verlangt;
