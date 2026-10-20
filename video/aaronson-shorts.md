@@ -184,3 +184,33 @@ alle im Bild — „IF WHAT I", „YOU KNOW LIKE", „THERE IS IS BASICALLY YOU"
 Das ist wörtlich richtig und liest sich trotzdem unruhig. Sauber wäre, die
 Füllwörter **aus Bild und Ton zusammen** herauszuschneiden; nur die Zeile zu
 kürzen wäre falsch, weil der Ton sie weiter sagt. Nicht ungefragt gemacht.
+
+### Zweite Runde am Short 1 (20.10.)
+
+**„Da wo ich die Frage stelle, sollte ein Fragezeichen kommen, und ich sollte
+auf jeden Fall zu sehen sein."** Beides geändert.
+
+**Das Fragezeichen bleibt jetzt stehen.** Am 20.10. früh hatte er das
+Gegenteil verlangt — „ein Fragezeichen, das total fehl am Platz wirkt" —, und
+seitdem fiel jedes Satzzeichen weg. **Es ist kein Widerspruch:** gestört hat
+ihn ein Fragezeichen hinter einer *Aussage*, nicht hinter einer Frage. Also
+fällt weiterhin alles weg, was nur Satzbau ist (`. , ; : …`), und `?` und `!`
+bleiben. Sitzt eines falsch, ist das ein Hörfehler und gehört in
+`korrekturen.txt` — nicht in eine Regel, die alle Fragezeichen abräumt.
+
+Dazu eine Zeile in `korrekturen.txt`: Whisper setzt das Fragezeichen hinter
+„how safe is AI" **von Lauf zu Lauf verschieden** — im einen Durchgang war es
+da, im nächsten nicht. `how safe is ai -> how safe is AI?` macht es fest.
+
+**Die Eingangseinstellung zeigt jetzt ihn.** Der Studioschnitt steht während
+der Frage auf der Totale; mein Ausschnitt lag auf Aaronson, also auf dem, der
+zuhört. Jetzt auf der linken Seite (`116:0:608:1080`). Die Zeile bei 0,57
+sitzt dort rechnerisch 47 px unter seinem Kinn — nachgerechnet über den
+Maßstab 1,778 des Ausschnitts, und im Bild bestätigt.
+
+**Die Grenze dieser Fassung:** in der Totale ist er klein im Bild, Kopf rund
+15 % der Bildhöhe. Enger heranzuziehen bringt nichts — dafür fehlt dem
+Studioschnitt die Auflösung (ein Kasten, der seinen Kopf auf ein Drittel der
+Höhe bringt, müsste 2,9-fach hochskaliert werden). **Richtig gelöst wird das
+mit seiner eigenen Kamera** (`Right Cam`), und dafür braucht es eine frische
+Kopie der Rohdateien im Drive — die alten sind am Tageslimit.

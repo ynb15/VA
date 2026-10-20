@@ -97,18 +97,30 @@ def cues_als_srt(cues, pfad, tempo=1.0, gross=True):
 
 
 SATZZEICHEN = ".,!?;:\u2026"
+# Was im Bild wegfaellt: alles, was nur Satzbau ist. `?` und `!` bleiben.
+STUMME_ZEICHEN = ".,;:\u2026"
 
 
 def _anzeige(wort, gross):
-    """Wort, wie es im Bild steht: ohne schliessendes Satzzeichen.
+    """Wort, wie es im Bild steht: ohne Punkt, aber mit Fragezeichen.
 
     Sein Einwand vom 20.10.: „du hast an zwei, drei Stellen noch einen Punkt
-    gemacht und ein Fragezeichen, das wirkt total fehl am Platz." Stimmt —
-    in Shorts steht kein Satzzeichen. Fuer die TRENNUNG braucht das Werkzeug
-    den Punkt aber weiterhin, deshalb faellt er erst hier weg und nicht
-    schon im Transkript. Apostrophe bleiben: IT'S, THERE'S.
+    gemacht und ein Fragezeichen, das wirkt total fehl am Platz." Also fielen
+    erst alle Satzzeichen weg. Am selben Abend, am Aaronson-Short: „da wo ich
+    die Frage stelle, how safe is AI, danach sollte ein Fragezeichen kommen."
+
+    Beides stimmt, und es ist kein Widerspruch: **gestoert hat ihn ein
+    Fragezeichen, das keine Frage war** — eines, das Whisper an eine Aussage
+    gehaengt hatte. Ein echtes Fragezeichen traegt. Also faellt weiterhin
+    alles weg, was nur Satzbau ist (`. , ; : …`), und `?` und `!` bleiben
+    stehen. Sitzt eines falsch, ist das ein Hoerfehler und gehoert in
+    `korrekturen.txt`, nicht in eine Regel, die alle Fragezeichen abraeumt.
+
+    Fuer die TRENNUNG braucht das Werkzeug den Punkt weiterhin, deshalb
+    faellt er erst hier weg und nicht schon im Transkript. Apostrophe
+    bleiben: IT'S, THERE'S.
     """
-    w = wort.rstrip(SATZZEICHEN)
+    w = wort.rstrip(STUMME_ZEICHEN)
     return w.upper() if gross else w
 
 

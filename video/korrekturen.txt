@@ -25,3 +25,6 @@ aronson -> Aaronson
 aaronson -> Aaronson
 scott aronson -> Scott Aaronson
 shtetl optimized -> Shtetl-Optimized
+# 20.10.: Whisper setzt das Fragezeichen hinter "how safe is AI" mal, mal
+# nicht — von Lauf zu Lauf verschieden. Seine Frage soll eines haben.
+how safe is ai -> how safe is AI?
