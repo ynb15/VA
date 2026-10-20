@@ -428,7 +428,20 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
     flach = [{"t": w.word.strip(), "start": w.start, "end": w.end, "seg": i}
              for i, s in enumerate(segments) for w in (s.words or [])
              if w.word.strip()]
-    flach = korrekturen_anwenden(flach, paare)
+    # Whisper liefert eine Nachsilbe mit Bindestrich als eigenes Wort:
+    # `self` + `-initiation`. Zusammengesetzt mit Leerzeichen steht dann
+    # `SELF -INITIATION` im Bild. Derselbe Fallstrick wie bei
+    # `hyper` + `-masculinity` am 20.10. Hier zusammenziehen, vor den
+    # Korrekturen — sonst findet die Liste das ganze Wort nicht.
+    gezogen = []
+    for w in flach:
+        if (gezogen and w["t"].startswith("-") and len(w["t"]) > 1
+                and gezogen[-1]["seg"] == w["seg"]):
+            gezogen[-1] = {**gezogen[-1], "t": gezogen[-1]["t"] + w["t"],
+                           "end": w["end"]}
+        else:
+            gezogen.append(w)
+    flach = korrekturen_anwenden(gezogen, paare)
 
     # Pausen aus dem Ton: sie markieren die Satzgrenzen, die Whisper
     # verschluckt. Jede Stille schliesst das Wort ab, das vor ihr beginnt.
