@@ -20,3 +20,8 @@ yannick -> Yannick
 sutcliffe -> Sutcliffe
 hyper masculinity -> hypermasculinity
 ~^endo.?t[ae]d?t?e?s?$ -> Andrew Tates
+# Aaronson-Folge (20.10.): Whisper schreibt den Namen durchgaengig einfach.
+aronson -> Aaronson
+aaronson -> Aaronson
+scott aronson -> Scott Aaronson
+shtetl optimized -> Shtetl-Optimized
