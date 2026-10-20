@@ -354,3 +354,89 @@ Weg, den der Rest der Datei ohnehin geht.
 **`ffmpeg` frisst `stdin`.** Eine Schleife, die ihre Liste aus einem
 Here-Dokument las, verlor nach dem ersten Durchlauf alle weiteren Zeilen.
 `-nostdin` gehört in jeden ffmpeg-Aufruf innerhalb einer Schleife.
+
+---
+
+## Seine Korrektur, 20.10. abends: zu kurz und zu wenig Inhalt
+
+**„Die B-Rolls, die sind gefühlt nur eine Sekunde da, die müssen viel länger
+laufen. So ist es gerade richtig disruptiv, es stört. Und da fehlt auch die
+Hälfte des Inhalts. Du hast viel zu viel rausgeschnitten."**
+
+Beides richtig, und beides geht auf **denselben** Denkfehler zurück.
+
+### Der Fehler: ich habe nach schnittfreien Einstellungen gesucht
+
+Ich hatte mir selbst die Regel gegeben, eine B-Roll dürfe „keinen Schnitt
+drin" haben. Für einen **einzelnen Einspieler** stimmt das. Für einen
+Trailer ist es die falsche Frage: der ist in 1–2-Sekunden-Stücken geschnitten,
+also fand ich nur 1–2-Sekunden-Stücke — und genau die hat er als störend
+empfunden.
+
+**Richtig ist, durchgehende Strecken zu nehmen, mitsamt den Schnitten des
+Trailers.** Die Schnitte sind dann kein Mangel, sondern das, was es nach
+Film aussehen lässt. Nicht „eine Einstellung", sondern **ein Block**.
+
+### Was im Trailer wirklich frei ist — gesichtet, nicht gerechnet
+
+Vier Versuche, die Schrift automatisch zu finden, sind gescheitert; der
+letzte maß an einer bekannten Schriftstelle (`jon krakauer`) **0,0000** und
+an einer bekannt sauberen (`anhalter`) **0,0064** — also genau verkehrt
+herum. Die Trailerschrift ist dünn, halbdurchsichtig und wandert; kein
+Schwellenwert trennt sie vom Bild.
+
+**Gelöst durch Hinsehen:** der ganze Trailer als Kontaktabzug, ein Bild je
+Sekunde, 145 Stück auf drei Blättern.
+
+| Schrift im Bild | |
+|---|---|
+| 0,0–3,0 | Bedienleiste des Players |
+| 5,0–7,5 | Paramount / RiverRoad |
+| 57,9–60,6 | „from writer-director sean penn" |
+| 80,7–83,6 | „based on the best-seller by jon krakauer" |
+| 87,9–90,6 | „inspired by the true story" |
+| 113,6–115,9 | „take a journey" |
+| 122,9–124,9 | „into the beauty" |
+| 127,8–129,0 | „into the danger" |
+| 134,9–138,9 | Titel „into the WILD" |
+
+**Dazwischen 121,5 von 144,8 Sekunden frei**, in Strecken bis **50,4 s**.
+Material war also nie das Problem — meine Suche war es.
+
+**REGEL: Wenn die Automatik dreimal falsch liegt, ist es ein Blättchen-Problem,
+kein Schwellenwert-Problem.** Ein Kontaktabzug über die ganze Länge kostet
+eine Minute und beantwortet die Frage endgültig.
+
+### Der Inhalt: die Stelle war halb so lang wie das Thema
+
+Erste Fassung 76:06–115:35 (39,3 s roh). **Die Passage über *Into the Wild*
+beginnt in Wahrheit bei 22:80** — mit „Everyone used to say I looked just
+like the dude" — und läuft bis zum Ubuntu-Satz bei 118:00.
+
+Neu: **22,80–118,00 = 95,2 s roh → 79,3 s bei Tempo 1,2.** Darin steckt, was
+vorher fehlte: dass er das Buch an der Uni las · „happiness is only real when
+shared" · *„that made his death worth it"* · *„he went and lived what we were
+fantasizing about"* · der Austausch über Buch und Film · und erst dann die
+Selbst-Initiation und Ubuntu.
+
+### Die sieben Blöcke
+
+| Block | im Short | Dauer | Trailer | worauf |
+|---|---|---|---|---|
+| A | 16,6–22,2 | 5,6 s | 108,5 | „that made his death worth it" |
+| B | 22,9–31,1 | 8,2 s | 17,0 | „he went and lived what we were fantasizing about" |
+| C | 48,7–54,5 | 5,8 s | 90,8 | „the book goes even deeper" |
+| D | 54,9–58,5 | 3,6 s | 84,0 | „Christopher McCandless, Alex Supertramp" |
+| E | 64,0–71,1 | 7,1 s | 61,0 | „cutting ties with my mother, my father" |
+| F | 77,3–83,5 | 6,2 s | 98,8 | „going into the wilderness" |
+| G | 84,2–89,2 | 5,0 s | 116,2 | „relationships are what make life meaningful" |
+
+Zusammen **41,5 s von 95,2 s Clipzeit, also 44 %.** Vorher waren es sechs
+Einspieler von je 0,9–1,9 s.
+
+### Nebenbei: die Unschärfe war der Flaschenhals
+
+`gblur=sigma=42` auf 1080×1920 war der Grund, warum ein 33-Sekunden-Short
+**25 Minuten** brauchte. Jetzt wird auf ein Viertel verkleinert, mit
+`sigma=11` weichgezeichnet und wieder vergrößert — bei einer so starken
+Weichzeichnung sieht man keinen Unterschied, und es kostet ein Sechzehntel.

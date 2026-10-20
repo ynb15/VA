@@ -711,9 +711,14 @@ def broll_graph(stuecke, quelle, tempo, modus, seite, radius, fokus,
             # 1,18 statt 2,10 beim 9:16-Ausschnitt.
             f = min(max(fokus, 0.0), 1.0)
             teile.append(kopf + f"fps=30,setsar=1,split=2[bg{i}][fg{i}]")
+            # Erst klein rechnen, dann unscharf, dann wieder gross: eine
+            # starke Weichzeichnung sieht danach genauso aus und kostet ein
+            # Sechzehntel. Bei 1080x1920 war `gblur=sigma=42` der Grund,
+            # warum ein 33-Sekunden-Short 25 Minuten brauchte.
             teile.append(
                 f"[bg{i}]scale={W}:{H}:force_original_aspect_ratio=increase,"
-                f"crop={W}:{H},gblur=sigma=42,eq=brightness=-0.16[bgu{i}]")
+                f"crop={W}:{H},scale={W // 4}:{H // 4},gblur=sigma=11,"
+                f"scale={W}:{H}:flags=bilinear,eq=brightness=-0.16[bgu{i}]")
             teile.append(
                 f"[fg{i}]crop='min(iw,ih)':'min(iw,ih)':'(iw-min(iw,ih))*{f}':"
                 f"'(ih-min(iw,ih))/2',scale={W}:{W}[fgs{i}]")
