@@ -24,7 +24,8 @@ from drive_fernzugriff import DriveDatei, bestaetigte_url
 
 
 def fenster_holen(file_id, start, ende, ziel, groesse=None):
-    quelle = DriveDatei(bestaetigte_url(file_id), groesse=groesse)
+    quelle = DriveDatei(bestaetigte_url(file_id), groesse=groesse,
+                        datei_id=file_id)
     ein = av.open(quelle)
     v_ein = next(s for s in ein.streams if s.type == 'video')
     a_ein = next(s for s in ein.streams if s.type == 'audio')

@@ -240,7 +240,7 @@ def marke_meiden(kasten, marke, qb, qh):
 
 def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=0,
                abstand=0.2, zoom=1.0, kein_stapel=False,
-               zeile_folgt=False, marke=None):
+               zeile_folgt=False, marke=None, zeile=None):
     zeiten, klein, (qb, qh) = _graustufen_folge(pfad, abstand=abstand)
     if len(klein) < 2:
         raise SystemExit("Zu wenige Bilder gelesen.")
@@ -299,11 +299,13 @@ def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=0,
             # selben Fleck, und genau das ist der Sinn der Sache.
             # Mit `zeile_folgt` richtet sie sich stattdessen danach, wie gross
             # die Person im Bild steht (Nahaufnahme 0,65, Totale 0,42).
-            if zeile_folgt and mitte < MITTE_SCHWELLE:
+            if zeile is not None:
+                anteil = zeile
+            elif zeile_folgt and mitte < MITTE_SCHWELLE:
                 anteil = ZEILE_WEIT
             else:
                 anteil = ZEILE_FEST
-            if zoom > 1.0:
+            if zeile is not None or zoom > 1.0:
                 hoehe = int(round(anteil * AUS_H))
             else:
                 hoehe = int(round(lippe_aus_kopf(s["kurz"], kasten, sx, sy) * AUS_H))
@@ -366,6 +368,12 @@ if __name__ == "__main__":
     ap.add_argument("--lippe-versatz", type=int, default=0,
                     help="Pixel, um die die Untertitel zusaetzlich nach unten "
                          "ruecken")
+    ap.add_argument("--zeile", type=float, default=None,
+                    help="feste Zeilenhoehe als Anteil der Bildhoehe, statt "
+                         "gemessen oder ZEILE_FEST. Haengt am Raum: im "
+                         "Sutcliffe-Studio sitzt sie bei 0.65, bei Just Push "
+                         "Record bei 0.57 — dort steht die Kamera naeher, und "
+                         "0.65 landet auf der Brust.")
     ap.add_argument("--marke", default=None,
                     help="x0,y0,x1,y1 eines schon eingebrannten Logos in der "
                          "Quelle; der Ausschnitt weicht ihm aus. Fuer den "
@@ -380,7 +388,8 @@ if __name__ == "__main__":
                                       lippe_versatz=a.lippe_versatz,
                                       abstand=a.abstand, zoom=a.zoom,
                                       kein_stapel=a.kein_stapel,
-                                      zeile_folgt=a.zeile_folgt, marke=marke)
+                                      zeile_folgt=a.zeile_folgt, marke=marke,
+                                      zeile=a.zeile)
     print(f"Bezugsbewegung {bezug:.2f} · {len(plan)} Einstellungen")
     for p in plan:
         mark = "TOT " if p["tot"] else "    "

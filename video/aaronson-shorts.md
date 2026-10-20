@@ -137,3 +137,50 @@ dem Inhalt, nicht aus einer Messung.
 Kameradateien: `Left Camera` und `Right Cam` haben je eine eigene Tonspur,
 und das Mikrofon an der Kamera hört den, auf den sie zeigt, am lautesten.
 Dafür genügt das Fenster des jeweiligen Shorts, nicht die ganze Datei.
+
+---
+
+## Short 1 gebaut: „How safe is AI?" (20.10.)
+
+**Datei:** `video/shorts/aaronson-01-how-safe-is-ai.mp4` · 53,0 s · 1080×1920
+Untertitel zusätzlich als `.srt` daneben, für CapCut.
+
+**Was drin ist** (Rohzeit):
+* **55:52,9–56:14,1** — „So, how safe is AI?" → „I'm worried. I'm very worried
+  about where this… this is not just some cool consumer product. We have
+  created the first ever form of verbal intelligence on Earth other than our
+  own."
+* *Innenschnitt* — die elf Sekunden über den „apocalyptic optimist" und die
+  Dokumentation, aus der das Wort stammt, sind raus. Sie brechen den Bogen.
+* **56:27,5–57:05,1** — „There is — there is no obvious stopping principle. …
+  If there is a wall that AI is going to hit, where it leaves plenty for
+  humans to still do that's economically valuable — no one has convincingly
+  articulated where that wall is. The burden is on them."
+
+Der Satz danach („…to explain where this wall is, right") wiederholt nur und
+ist weggelassen; der Short endet auf „the burden is on them".
+
+**Zwei Dinge, die an diesem Material anders sind als bei Sutcliffe:**
+
+**Die Zeile sitzt bei 0,57, nicht bei 0,65.** Bei Just Push Record steht die
+Kamera näher; 0,65 landete in der ersten Fassung auf der Brust, deutlich
+unter dem Kinn. An zwei Einstellungen mit eingezeichneten Bändern geprüft:
+0,56 sitzt in der Nahaufnahme direkt unter dem Kinn, in der Totale auf dem
+Kinn; 0,61 umgekehrt. 0,57 trifft beides. `bildausschnitt.py --zeile 0.57`.
+**Die Zeilenhöhe hängt am Raum, nicht am Werkzeug.**
+
+**`--zoom 1.0`, nicht 1.15.** Der Studioschnitt ist hier schon eng; bei 1.15
+war die Kopfoberkante ab. Voller Bildausschnitt in der Höhe, 608×1080.
+
+**Eine 0,4-Sekunden-Einstellung ist von Hand entfernt worden.** Der
+Studioschnitt geht bei Clipsekunde 20,6 für vier Zehntel auf die Totale
+zurück, direkt vor dem Innenschnitt. Das hätte wie ein Fehler ausgesehen.
+Das Bild bleibt jetzt auf dem, der den Satz zu Ende spricht. Die automatische
+Zusammenlegung greift hier nicht, weil sie nur bei ähnlichem Bildausschnitt
+zusammenlegt — und der springt dort von 0,64 auf 0,16.
+
+**Was offen ist:** Aaronson redet mit sehr vielen Füllwörtern, und die stehen
+alle im Bild — „IF WHAT I", „YOU KNOW LIKE", „THERE IS IS BASICALLY YOU".
+Das ist wörtlich richtig und liest sich trotzdem unruhig. Sauber wäre, die
+Füllwörter **aus Bild und Ton zusammen** herauszuschneiden; nur die Zeile zu
+kürzen wäre falsch, weil der Ton sie weiter sagt. Nicht ungefragt gemacht.

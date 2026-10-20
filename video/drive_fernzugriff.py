@@ -11,6 +11,7 @@ Die Datei muss im Drive link-freigegeben sein ("anyone with the link").
 """
 import os
 import re
+import time
 import urllib.parse
 
 import requests
@@ -45,8 +46,9 @@ def bestaetigte_url(file_id):
 class DriveDatei:
     """read/seek/tell auf einer entfernten Datei, blockweise zwischengespeichert."""
 
-    def __init__(self, url, groesse=None, cache_mb=512):
+    def __init__(self, url, groesse=None, cache_mb=512, datei_id=None):
         self.url = url
+        self.datei_id = datei_id
         self.pos = 0
         self.blocks = {}
         self.reihenfolge = []
@@ -60,19 +62,49 @@ class DriveDatei:
         return int(r.headers["content-length"])
 
     def _block(self, nr):
+        """Genau diesen Block holen — ganz, oder gar nicht.
+
+        Am 20.10.2026 zweimal teuer gelernt: ein kurz abgeschnittener Block
+        sieht fuer den Aufrufer aus wie das Ende der Datei. Der Tonabzug der
+        Aaronson-Folge endete so bei 74,6 von 101,4 Minuten, und ein
+        100-Sekunden-Fenster aus einer Kameradatei kam als 18 Sekunden
+        zurueck — beide Male ohne eine einzige Fehlermeldung. Die alte
+        Fassung hat nur bei einer *Ausnahme* wiederholt; eine Antwort mit
+        falscher Laenge oder falschem Status ging durch.
+
+        Deshalb jetzt: Laenge und Status pruefen, sonst wiederholen, und
+        beim dritten Versuch den Bestaetigungslink erneuern — der laeuft
+        nach einiger Zeit ab, und genau das passt zu beiden Faellen.
+        Haelt es dann immer noch nicht, wird eine Ausnahme geworfen.
+        Lieber ein Abbruch mit Grund als eine stille halbe Datei.
+        """
         if nr in self.blocks:
             return self.blocks[nr]
         anfang = nr * BLOCK
         ende = min(anfang + BLOCK, self.groesse) - 1
-        for versuch in range(4):
+        erwartet = ende - anfang + 1
+        daten = None
+        letzter_grund = ""
+        for versuch in range(5):
+            if versuch == 3 and self.datei_id:
+                self.url = bestaetigte_url(self.datei_id)
+                letzter_grund += " | Link erneuert"
             try:
                 r = SITZUNG.get(self.url, timeout=180,
                                 headers={"Range": f"bytes={anfang}-{ende}"})
-                daten = r.content
-                break
-            except Exception:
-                if versuch == 3:
-                    raise
+                if r.status_code not in (200, 206):
+                    letzter_grund = f"Status {r.status_code}"
+                elif len(r.content) != erwartet:
+                    letzter_grund = f"{len(r.content)} statt {erwartet} Bytes"
+                else:
+                    daten = r.content
+                    break
+            except Exception as e:
+                letzter_grund = f"{type(e).__name__}: {e}"
+            time.sleep(2 ** versuch)
+        if daten is None:
+            raise IOError(f"Block {nr} ({anfang}-{ende}) nicht vollstaendig "
+                          f"zu holen: {letzter_grund}")
         self.anfragen += 1
         self.gelesen += len(daten)
         self.blocks[nr] = daten
@@ -93,7 +125,9 @@ class DriveDatei:
             b = self._block(nr)
             stueck = b[innen:innen + offen]
             if not stueck:
-                break
+                raise IOError(f"Leeres Stueck in Block {nr} bei {self.pos} — "
+                              f"das waere stillschweigend als Dateiende "
+                              f"durchgegangen.")
             teile.append(stueck)
             self.pos += len(stueck)
             offen -= len(stueck)

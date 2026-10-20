@@ -8202,3 +8202,57 @@ Posteingang sei bei ihm tote Materie. **Er triagiert, nur nicht täglich.**
 Folge für die Messung: der Zähler „ungelesen" fällt auch ohne eine einzige
 neue Mail, und ein Rückgang ist deshalb kein Fehler in meiner Zählung,
 sondern eine Handlung von ihm. Beides getrennt notieren.
+
+═══════════════════════════════════════════════════════════════════════════════
+DRIVE HAT EIN TAGESLIMIT — UND ES HAT HEUTE DREIMAL STILL ZUGESCHLAGEN
+═══════════════════════════════════════════════════════════════════════════════
+
+Am 20.10.2026 brachen drei Abzüge aus dem Drive ohne Fehlermeldung ab: der
+Tonabzug der Aaronson-Folge bei 74,6 von 101,4 Minuten, und zwei
+100-Sekunden-Fenster aus den Kameradateien kamen als 18 bzw. 19 Sekunden
+zurück. Ich hatte das zuerst einem abgelaufenen Bestätigungslink
+zugeschrieben. **Das war falsch.** Was wirklich zurückkam, war eine
+HTML-Seite mit 2040 Bytes:
+
+> **Google Drive — Quota exceeded**
+
+**Das Limit hängt am Eigentümer, nicht an der Datei.** Gemessen am selben
+Nachmittag: alle fünf Dateien in **seinem eigenen** Ordner blockiert — auch
+die Middle-Camera, aus der nur 30 MB geholt worden waren, und die mp3, aus
+der 83 MB kamen. Die Datei im Ordner von `team@justpushrecord.com`, aus der
+**12 GB** geflossen waren, lieferte weiter. Es ist also kein Zähler pro
+Datei und kein Zähler nach Volumen, sondern eine Sperre für den anonymen
+Download-Weg über das Konto, dem die Dateien gehören.
+
+── DER EIGENTLICHE FEHLER WAR MEINER
+`DriveDatei._block` hat nur bei einer **Ausnahme** wiederholt. Eine Antwort
+mit 200 und 2040 Bytes galt als gültiger Block, `read()` gab das kurze Stück
+zurück, und PyAV las das als Dateiende. **Eine halbe Datei, die aussieht wie
+eine ganze, ist schlimmer als ein Abbruch.** Jetzt werden Status und Länge
+geprüft, viermal mit wachsender Pause wiederholt, beim dritten Versuch der
+Bestätigungslink erneuert — und wenn es dann nicht hält, fliegt eine
+Ausnahme mit Grund.
+**REGEL: jede Antwort aus dem Netz wird auf Länge geprüft, bevor sie als
+Daten gilt.** Ein HTTP 200 sagt nur, dass der Server geantwortet hat.
+
+── WAS DAS PRAKTISCH HEISST
+* Das Limit löst sich nach etwa einem Tag von selbst.
+* **Eine frische Kopie der Datei im Drive bekommt einen eigenen Zähler** —
+  das ist der schnelle Weg, wenn es eilt. Ihn fragen, nicht selbst kopieren:
+  Drive-Schreibzugriffe sind nicht freigegeben.
+* Das große Holen also **einmal** machen und das Ergebnis behalten
+  (`ton_holen.py` legt FLAC ab), statt dieselbe Datei mehrfach anzufassen.
+
+═══════════════════════════════════════════════════════════════════
+DIE ZEILENHÖHE HÄNGT AM RAUM, NICHT AM WERKZEUG
+───────────────────────────────────────────────────────────────────
+`ZEILE_FEST = 0.65` war am Sutcliffe-Studio ausgemessen. Bei **Just Push
+Record** steht die Kamera näher — dort landet 0,65 auf der Brust, deutlich
+unter dem Kinn. An zwei Einstellungen mit eingezeichneten Bändern geprüft:
+0,56 sitzt in der Nahaufnahme direkt unter dem Kinn und in der Totale auf
+dem Kinn, 0,61 umgekehrt. Genommen: **0,57**, neu als
+`bildausschnitt.py --zeile`.
+**Bei jeder neuen Aufnahmesituation wird die Zeilenhöhe einmal nachgemessen**
+— drei Bänder über ein Standbild, das kostet zwei Minuten und erspart eine
+Runde. Dasselbe gilt für `--zoom`: 1.15 schnitt hier die Kopfoberkante ab,
+weil der Studioschnitt schon eng ist. Hier 1.0.

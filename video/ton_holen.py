@@ -26,7 +26,8 @@ from drive_fernzugriff import DriveDatei, bestaetigte_url
 
 
 def ton_holen(file_id, ziel, groesse=None, rate=16000, melden=60.0):
-    quelle = DriveDatei(bestaetigte_url(file_id), groesse=groesse)
+    quelle = DriveDatei(bestaetigte_url(file_id), groesse=groesse,
+                        datei_id=file_id)
     ein = av.open(quelle)
     a_ein = next(s for s in ein.streams if s.type == "audio")
     dauer = float(ein.duration) / 1e6 if ein.duration else None
