@@ -7803,3 +7803,38 @@ in einem Short, der veröffentlicht werden sollte. Deshalb: für jeden Short,
 der hinausgeht, **`--model medium`** und die Liste `video/korrekturen.txt`.
 Die Liste wächst mit; sie ist billiger als ein größeres Modell und fängt genau
 die Namen, die in seinem Material immer wiederkommen.
+
+── NACHTRAG 20.10. ABENDS: DREI SACHEN, DIE DIE ERSTE FASSUNG NICHT KONNTE
+
+**1. Eine Einblendung darf nie über das Satzende laufen.** Sein Einwand:
+„ich beende den Satz und fange den nächsten an, und das ist alles in dem
+gleichen." Die Lösung war nicht das Satzzeichen — *„too afraid to touch."*
+und *„This is why…"* standen in getrennten **Whisper-Abschnitten** und
+trotzdem in einer Zeile, weil der Punkt fehlte und die Pause unter der
+Schwelle lag. **Whispers Abschnittsgrenzen sind das verlässlichere Signal als
+seine Zeichensetzung.** Getrennt wird jetzt an dreierlei: Abschnittswechsel,
+Satzzeichen, Pause über 0,45 s.
+
+**2. Korrekturen müssen Wortfolgen können.** `for short` war in Wahrheit
+`fall short` — das sieht man nur im Satz, nicht am Einzelwort. Die Liste in
+`video/korrekturen.txt` arbeitet jetzt auf der flachen Wortliste vor der
+Gruppierung und greift damit auch über eine Einblendungsgrenze hinweg.
+**Er meldet diese Fehler selbst — also gehören sie sofort in die Liste.**
+
+**3. Ein fester dB-Wert für ein Musikbett ist wertlos.** −16 dB klingt nach
+einer Zahl, ist aber absolut, während die Quellen es nicht sind: das Bett lag
+danach 14 dB unter der Stimme, und die Mischung mit Musik war von der ohne
+0,1 dB entfernt. **Gemessen statt geraten:** beide Spuren über `volumedetect`,
+das Bett `--musik-unter` dB darunter. Dass die Kette trägt, ist nachgewiesen
+(−34,5 / −34,0 / −33,4 dB bei 12 / 6 / 3 dB Abstand).
+
+**Und eine Grenze, die ich nicht überschreite:** für etwas, das er
+veröffentlicht, hole ich keine Musik aus dem Netz. Sein Drive hat nur die
+Podcast-Outro. **Er legt den Track in den Eingang, ich mische.**
+
+── SEIN LOGO LIEGT IM DRIVE
+`YNB Logo freigestellt weiß_neu.png` (`1hzYj7XNu_jixtsYUMM_pIuV28FMqsPd6`),
+5224×2947 RGBA, und die Verlaufsfassung daneben. **Die weiße liest sich auf
+dem dunklen Shirt besser als die mit Verlauf** — die Verlaufsfassung verschwand
+bei 92 % Deckung fast. Im Repo unter `video/marke/`. Beide Dateien waren schon
+link-freigegeben, es war keine Freigabe von mir nötig.

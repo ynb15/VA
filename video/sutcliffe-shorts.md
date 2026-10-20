@@ -74,11 +74,32 @@ durch den Ausschnitt schon normiert. Die Messung schwankte zwischen 0,56 und
 0,66 und landete im Versuch mal auf dem Mund, mal unter dem Kinn. **Eine feste
 Zeile dazwischen ist genauer als die Schätzung.**
 
+**Zweite Runde, 20.10. abends — seine Korrekturen:**
+
+| | |
+|---|---|
+| **Punchline steht allein** | Sutcliffes *„Yeah, that's true"* ist raus. Der Short endet auf **„most men have neither."** — 55,9 s statt 59. |
+| **zwei Verhörer** | *for short* war **fall short**, *endotades* war **Andrew Tates**. Beide in `video/korrekturen.txt`; die Liste kann jetzt auch Wortfolgen. |
+| **Satzgrenzen** | Eine Einblendung läuft nie mehr über das Satzende. Entscheidend war nicht das Satzzeichen, sondern **Whispers eigene Abschnitte**: *„too afraid to touch."* und *„This is why…"* standen in getrennten Abschnitten und trotzdem in einer Zeile, weil der Punkt fehlte und die Pause zu kurz war. Jetzt trennt jeder Abschnittswechsel, jedes Satzzeichen und jede Pause über 0,45 s. |
+| **Logo** | aus seinem Drive: *YNB Logo freigestellt weiß_neu.png*, 520 px breit, mittig auf 0,845 der Bildhöhe — wie auf seinen Shorts. |
+| **Musik** | **Weg gebaut, Bett fehlt.** Siehe unten. |
+
+**Zur Musik, offen:** die Kette steht — das Bett wird geloopt, ein- und
+ausgeblendet und von der Stimme weggedrückt (`sidechaincompress`), und der
+Pegel wird **gemessen** statt geraten: der erste Versuch mit festen −16 dB lag
+14 dB unter der Stimme und war schlicht nicht zu hören (0,1 dB Unterschied
+zwischen Mischung mit und ohne). Jetzt misst `--musik` beide Spuren und legt
+das Bett `--musik-unter` dB unter die Stimme, voreingestellt 8.
+**Was fehlt, ist der Track.** Ich habe keine Musikbibliothek und hole für etwas,
+das veröffentlicht wird, nichts aus dem Netz. In seinem Drive liegt nur
+*outro audio.mp3* (42 s, seine Podcast-Outro) — als episches Bett unter diesem
+Text die falsche Farbe. **Eine Datei in den Drive-Eingang, und es ist eine
+Minute Arbeit.**
+
 **Offen, seine Entscheidung:** zwischen Sekunde 43,6 und 51,7 schneidet der
 Studioschnitt auf die Totale — mitten im stärksten Teil der Notiz („But armor
 is not strength"). Ich stapele sie derzeit. Alternative: in diesen acht
-Sekunden auf ihm bleiben und die Totale auf ihn beschneiden. **Welche von
-beiden, entscheidest Du.**
+Sekunden auf ihm bleiben und die Totale auf ihn beschneiden.
 
 ---
 

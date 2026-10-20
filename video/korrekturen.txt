@@ -1,12 +1,17 @@
-# Wortkorrekturen für eingebrannte Untertitel.
-# Eine Zeile je Paar: falsch -> richtig. Vergleich ohne Rücksicht auf
-# Groß- und Kleinschreibung, nur ganze Wörter. Zeilen mit # sind Notizen.
+# Korrekturen für eingebrannte Untertitel.
+# Eine Zeile je Paar: falsch -> richtig. Links darf eine Wortfolge stehen.
+# Vergleich ohne Rücksicht auf Groß- und Kleinschreibung, nur ganze Wörter.
+# Zeilen mit # sind Notizen.
 #
-# Gesammelt aus dem, was faster-whisper am Studiomaterial verhört hat.
-# Eingebrannt ist ein falsches Wort nicht mehr zu retten — deshalb die Liste.
+# Warum es die Liste gibt: ein falsch verstandenes Wort ist nach dem
+# Einbrennen nicht mehr zu retten. Gesammelt aus dem, was faster-whisper am
+# Studiomaterial verhört hat — von ihm selbst gemeldet, wo es mir entging.
+for short -> fall short
 tenancy -> tendency
-andretates -> Andrew Tate's
-endate -> Andrew Tate
+endate -> Andrew Tates
+endotades -> Andrew Tates
+andretates -> Andrew Tates
+andretate -> Andrew Tate
 substack -> Substack
 afrikaburn -> AfrikaBurn
 burningman -> Burning Man

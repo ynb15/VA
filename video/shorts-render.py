@@ -60,7 +60,7 @@ def ass_time(t):
 
 
 def build_ass(cues, path, marginv=320, tempo=1.0, tiefer=0, gross=True,
-              groesse=88, paare=None):
+              groesse=88):
     """cues -> ASS mit wortweiser Hervorhebung.
 
     Abgelesen an seinen veroeffentlichten Shorts: GROSSBUCHSTABEN, fetter
@@ -99,8 +99,6 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         woerter = [w for w in (c.get("woerter") or [])
                    if w["t"].strip() and w["end"] > c["start"] and w["start"] < c["end"]]
         roh = [w["t"].strip() for w in woerter] or c["text"].split()
-        if paare:
-            roh = [korrigieren(w, paare) for w in roh]
         roh = [w.upper() for w in roh] if gross else roh
         if not roh:
             continue
@@ -120,13 +118,12 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 
 def korrekturen_lesen(pfad):
-    """Wortkorrekturen fuer eingebrannte Untertitel laden.
+    """Korrekturen fuer eingebrannte Untertitel laden.
 
-    Ein falsch verstandenes Wort steht nach dem Rendern fuer immer im Bild.
-    `tendency` kam als `tenancy` heraus, `Andrew Tate's` als `andretates` —
-    beides in einem Short, der veroeffentlicht werden soll. Die Liste ist
-    billiger als ein groesseres Modell und faengt genau die Woerter, die in
-    seinem Material immer wieder vorkommen.
+    Links darf eine Wortfolge stehen, nicht nur ein Wort: `for short` war in
+    Wahrheit `fall short`, und das sieht man erst im Satz. Ein falsch
+    verstandenes Wort steht nach dem Rendern fuer immer im Bild — die Liste
+    ist billiger als jedes groessere Modell.
     """
     paare = {}
     if not pfad or not Path(pfad).exists():
@@ -136,16 +133,46 @@ def korrekturen_lesen(pfad):
         if "->" in zeile:
             falsch, richtig = (t.strip() for t in zeile.split("->", 1))
             if falsch:
-                paare[falsch.lower()] = richtig
+                paare[tuple(falsch.lower().split())] = richtig.split()
     return paare
 
 
-def korrigieren(wort, paare):
-    """Ein Wort ersetzen, Satzzeichen bleiben stehen."""
-    kern = wort.strip(".,!?;:\"'\u2019\u201c\u201d")
-    if not kern or kern.lower() not in paare:
-        return wort
-    return wort.replace(kern, paare[kern.lower()], 1)
+def _kern(wort):
+    return wort.strip(".,!?;:\"'\u2019\u201c\u201d").lower()
+
+
+def korrekturen_anwenden(woerter, paare):
+    """Wortfolgen ersetzen, Satzzeichen des letzten Wortes bleiben stehen.
+
+    Arbeitet auf der flachen Wortliste VOR der Gruppierung, damit eine
+    Korrektur auch ueber eine Einblendungsgrenze hinweg greift.
+    """
+    if not paare:
+        return woerter
+    maxlen = max(len(k) for k in paare)
+    raus, i = [], 0
+    while i < len(woerter):
+        treffer = None
+        for n in range(min(maxlen, len(woerter) - i), 0, -1):
+            schluessel = tuple(_kern(w["t"]) for w in woerter[i:i + n])
+            if schluessel in paare:
+                treffer = (n, paare[schluessel])
+                break
+        if not treffer:
+            raus.append(woerter[i]); i += 1
+            continue
+        n, ersatz = treffer
+        gruppe = woerter[i:i + n]
+        schwanz = gruppe[-1]["t"][len(gruppe[-1]["t"].rstrip(".,!?;:")):]
+        von, bis = gruppe[0]["start"], gruppe[-1]["end"]
+        schritt = (bis - von) / max(len(ersatz), 1)
+        for k, t in enumerate(ersatz):
+            raus.append({"t": t + (schwanz if k == len(ersatz) - 1 else ""),
+                         "start": von + k * schritt,
+                         "end": von + (k + 1) * schritt,
+                         "seg": gruppe[0].get("seg")})
+        i += n
+    return raus
 
 
 def cues_an_lippen(cues, lippen):
@@ -182,44 +209,66 @@ def srt_to_cues(srt_path, offset=0.0):
     return cues
 
 
-def whisper_cues(clip, model_size="small", lang=None, worte=3):
+def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
+                 pause=0.45):
     """Wortgenaue Zeiten fuer den bereits geschnittenen Clip.
 
-    `worte` ist die Zahl der Woerter je Einblendung. Drei ist sein Wunsch vom
-    20.10. und entspricht seinen veroeffentlichten Shorts: so kurz, dass der
-    Blick die Zeile in einem Zug nimmt.
+    `worte` ist die Zahl der Woerter je Einblendung — drei, sein Wunsch vom
+    20.10.
+
+    **Eine Einblendung laeuft nie ueber eine Satzgrenze.** Das war sein
+    zweiter Einwand: wenn der letzte Satz endet und der naechste anfaengt,
+    standen beide Teile in derselben Zeile und der Schnitt war im Bild nicht
+    zu sehen. Getrennt wird an zwei Stellen: am Satzzeichen — und an einer
+    **Sprechpause ueber `pause` Sekunden**, weil die Zeichensetzung des
+    Modells unzuverlaessig ist, die Pause aber nicht.
     """
     from faster_whisper import WhisperModel
     m = WhisperModel(model_size, device="cpu", compute_type="int8")
     segments, info = m.transcribe(clip, language=lang, word_timestamps=True,
                                   vad_filter=True)
-    words = [w for s in segments for w in (s.words or []) if w.word.strip()]
-    cues, buf = [], []
+    # Der Abschnitt, aus dem ein Wort stammt, wird mitgefuehrt: Whisper
+    # trennt Saetze zuverlaessiger ueber seine eigenen Abschnitte als ueber
+    # die Satzzeichen, die es setzt. `too afraid to touch.` und `This is why`
+    # standen in getrennten Abschnitten — und trotzdem in einer Zeile, weil
+    # der Punkt fehlte und die Pause zu kurz war.
+    flach = [{"t": w.word.strip(), "start": w.start, "end": w.end, "seg": i}
+             for i, s in enumerate(segments) for w in (s.words or [])
+             if w.word.strip()]
+    flach = korrekturen_anwenden(flach, paare)
 
-    def schliessen(buf):
-        return {"start": buf[0].start, "end": buf[-1].end,
-                "text": " ".join(x.word.strip() for x in buf),
-                "woerter": [{"t": x.word.strip(), "start": x.start, "end": x.end}
-                            for x in buf]}
+    cues, buf, harte_grenze = [], [], False
 
-    for w in words:
+    def schliessen(buf, hart):
+        cues.append({"start": buf[0]["start"], "end": buf[-1]["end"],
+                     "text": " ".join(w["t"] for w in buf),
+                     "woerter": list(buf), "hart": hart})
+
+    for i, w in enumerate(flach):
         buf.append(w)
-        satzende = w.word.strip().endswith((".", "?", "!", "…"))
-        if len(buf) >= worte or satzende:
-            cues.append(schliessen(buf))
+        satzende = w["t"].endswith((".", "?", "!", "…"))
+        naechstes = flach[i + 1] if i + 1 < len(flach) else None
+        luecke = (naechstes["start"] - w["end"]) if naechstes else 99
+        wechsel = bool(naechstes) and naechstes.get("seg") != w.get("seg")
+        hart = satzende or wechsel or luecke > pause
+        if hart or len(buf) >= worte:
+            schliessen(buf, hart)
             buf = []
     if buf:
-        cues.append(schliessen(buf))
-    # Eine Einblendung aus einem einzigen Wort liest sich wie ein Zucken:
-    # sie wandert zurueck in die vorhergehende, solange die nicht zu voll wird.
+        schliessen(buf, True)
+
+    # Eine Einblendung aus einem einzigen Wort liest sich wie ein Zucken. Sie
+    # wandert zurueck — aber nur, wenn die vorhergehende nicht an einer
+    # Satzgrenze endet. Sonst waere genau der Fehler wieder da.
     zusammen = []
     for c in cues:
-        if (zusammen and len(c["woerter"]) == 1
-                and len(zusammen[-1]["woerter"]) < worte + 1):
-            v = zusammen[-1]
+        v = zusammen[-1] if zusammen else None
+        if (v and not v["hart"] and len(c["woerter"]) == 1
+                and len(v["woerter"]) < worte + 1):
             v["end"] = c["end"]
             v["text"] += " " + c["text"]
             v["woerter"] += c["woerter"]
+            v["hart"] = c["hart"]
         else:
             zusammen.append(c)
     return zusammen, info.language
@@ -231,6 +280,25 @@ def run(cmd):
         sys.stderr.write(p.stderr[-3000:])
         raise SystemExit(f"ffmpeg brach ab ({p.returncode})")
     return p
+
+
+def mittlerer_pegel(datei, dauer=None):
+    """Mittlerer Pegel einer Tonspur in dB, ueber `volumedetect`.
+
+    Gebraucht, weil ein fester Wert wie -16 dB nichts taugt: er ist absolut,
+    die Quellen sind es nicht. Im ersten Versuch lag das Bett danach 14 dB
+    unter der Stimme und war schlicht nicht zu hoeren — gemessen 0,1 dB
+    Unterschied zwischen Mischung mit und ohne Musik.
+    """
+    cmd = [FFMPEG, "-hide_banner"]
+    if dauer:
+        cmd += ["-t", str(dauer)]
+    cmd += ["-i", datei, "-af", "volumedetect", "-f", "null", os.devnull]
+    p = subprocess.run(cmd, capture_output=True, text=True)
+    for zeile in p.stderr.splitlines():
+        if "mean_volume:" in zeile:
+            return float(zeile.split("mean_volume:")[1].split("dB")[0])
+    return None
 
 
 def probe_size(src):
@@ -355,6 +423,23 @@ def main():
     ap.add_argument("--schriftgroesse", type=int, default=88)
     ap.add_argument("--korrekturen", default="video/korrekturen.txt",
                     help="Liste falsch -> richtig fuer die Untertitel")
+    ap.add_argument("--pause", type=float, default=0.45,
+                    help="Sprechpause in Sekunden, ab der eine Einblendung "
+                         "endet (Satzgrenze ohne Satzzeichen)")
+    ap.add_argument("--logo", default=None,
+                    help="PNG mit Transparenz, wird unten mittig eingeblendet")
+    ap.add_argument("--logo-breite", type=int, default=520)
+    ap.add_argument("--logo-alpha", type=float, default=1.0)
+    ap.add_argument("--logo-hoehe", type=float, default=0.845,
+                    help="Anteil der Bildhoehe, auf dem das Logo sitzt")
+    ap.add_argument("--musik", default=None,
+                    help="Musikbett; wird geloopt, ein- und ausgeblendet und "
+                         "unter der Stimme abgesenkt")
+    ap.add_argument("--musik-db", type=float, default=None,
+                    help="fester Pegel des Betts; ohne Angabe wird er aus "
+                         "Stimme und Bett gemessen")
+    ap.add_argument("--musik-unter", type=float, default=8.0,
+                    help="dB, die das Bett unter der Stimme liegt")
     ap.add_argument("--klein", action="store_true",
                     help="keine Grossbuchstaben (sein Kanal nutzt Versalien)")
     ap.add_argument("--look", choices=["warm", "aus"], default="warm",
@@ -381,16 +466,19 @@ def main():
                   f"mit Standbild ueberbrueckt")
         marginv = a.marginv if a.marginv is not None else 150
         t0, dur = 0.0, None
+        clip_laenge = schnitte[-1]["ende"] - schnitte[0]["start"]
         v_quelle, a_quelle = "[vcat]", "[acat]"
     elif a.layout == "stapel":
         if not (a.oben and a.unten):
             raise SystemExit("--layout stapel braucht --oben und --unten")
+        clip_laenge = dur
         graph = [f"[0:v]{_ausschnitt(a.oben, H // 2, 'o')}[o]",
                  f"[0:v]{_ausschnitt(a.unten, H // 2, 'u')}[u]",
                  "[o][u]vstack=inputs=2[vcat]"]
         marginv = a.marginv if a.marginv is not None else 150
         v_quelle, a_quelle = "[vcat]", "0:a?"
     else:
+        clip_laenge = dur
         cw = min(sw, int(sh * 9 / 16))
         cx = int((sw - cw) * min(max(a.focus, 0.0), 1.0))
         graph = [f"[0:v]crop={cw}:{sh}:{cx}:0,"
@@ -419,7 +507,9 @@ def main():
             if dur:
                 cut += ["-t", str(dur)]
             run(cut + ["-c", "copy", raw])
-            cues, lang = whisper_cues(raw, a.model, a.lang, worte=a.worte)
+            cues, lang = whisper_cues(raw, a.model, a.lang, worte=a.worte,
+                                      paare=korrekturen_lesen(a.korrekturen),
+                                      pause=a.pause)
             print(f"  Transkript: {len(cues)} Einblendungen, Sprache {lang}")
         elif a.srt:
             cues = srt_to_cues(a.srt)
@@ -433,12 +523,9 @@ def main():
             elif a.lippe is not None:
                 cues = [{**c, "lippe": a.lippe} for c in cues]
             ass = os.path.join(td, "cap.ass")
-            paare = korrekturen_lesen(a.korrekturen)
             build_ass(cues, ass, marginv=marginv, tempo=a.tempo,
                       tiefer=a.tiefer, gross=not a.klein,
-                      groesse=a.schriftgroesse, paare=paare)
-            if paare:
-                print(f"  {len(paare)} Wortkorrekturen geladen")
+                      groesse=a.schriftgroesse)
             print(f"  {a.worte} Woerter je Einblendung, "
                   f"{'VERSALIEN' if not a.klein else 'gemischt'}, "
                   f"{a.tiefer} px unter der Lippe, Look: {a.look}")
@@ -452,6 +539,48 @@ def main():
         cmd += ["-i", a.src]
         if dur and not a.plan:
             cmd += ["-t", str(dur)]
+        naechste = 1
+
+        if a.logo:
+            cmd += ["-i", a.logo]
+            graph.append(f"[{naechste}:v]scale={a.logo_breite}:-1,format=rgba,"
+                         f"colorchannelmixer=aa={a.logo_alpha}[lg]")
+            graph.append(f"{letzte}[lg]overlay=(W-w)/2:"
+                         f"H*{a.logo_hoehe}-h/2[vlogo]")
+            letzte = "[vlogo]"
+            naechste += 1
+
+        if a.musik:
+            # Das Bett laeuft unter der Stimme und wird von ihr weggedrueckt
+            # (sidechaincompress). Ohne das Wegdruecken frisst eine epische
+            # Flaeche die Konsonanten.
+            cmd += ["-i", a.musik]
+            laenge = (clip_laenge / a.tempo) if clip_laenge else None
+            db = a.musik_db
+            if db is None:
+                stimme_db = mittlerer_pegel(a.src, dauer=clip_laenge)
+                bett_db = mittlerer_pegel(a.musik, dauer=laenge)
+                if stimme_db is not None and bett_db is not None:
+                    db = round(stimme_db - bett_db - a.musik_unter, 1)
+                    print(f"  Musik: Stimme {stimme_db:.1f} dB, Bett "
+                          f"{bett_db:.1f} dB -> {db:+.1f} dB "
+                          f"({a.musik_unter:.0f} dB darunter)")
+                else:
+                    db = -16.0
+            stimme = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
+            graph.append(f"{stimme}asplit=2[st1][st2]")
+            bett = (f"[{naechste}:a]aloop=loop=-1:size=2000000000,"
+                    f"volume={db}dB,afade=t=in:st=0:d=1.5")
+            if laenge:
+                bett += f",atrim=0:{laenge:.2f},afade=t=out:st={max(laenge-2.0,0):.2f}:d=2.0"
+            graph.append(bett + "[bett]")
+            graph.append("[bett][st2]sidechaincompress=threshold=0.04:ratio=8:"
+                         "attack=15:release=350[duck]")
+            graph.append("[st1][duck]amix=inputs=2:normalize=0:"
+                         "dropout_transition=0[amix]")
+            a_quelle = "[amix]"
+            naechste += 1
+
         cmd += ["-filter_complex", ";".join(graph),
                 "-map", letzte, "-map", a_quelle,
                 "-r", "30",
