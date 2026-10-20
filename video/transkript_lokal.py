@@ -39,14 +39,61 @@ def huelle(pfad, rate=100):
     return 20 * np.log10(e)
 
 
+def trennt_die_spuren(segmente, h, rate=100, mindest_spreizung=4.0):
+    """Taugen diese Spuren ueberhaupt zur Sprecherzuordnung?
+
+    Zwei Lavaliers trennen Sprecher, weil das Verhaeltnis der Pegel kippt,
+    je nachdem wer spricht. Drei Mikrofone, die denselben Raum aufnehmen,
+    tun das nicht — ihr Verhaeltnis bleibt konstant, nur die Verstaerkung
+    ist anders eingestellt.
+
+    Geprueft wird deshalb die **Spreizung des Pegelverhaeltnisses** je
+    Spurpaar ueber alle Segmente (Quartilsabstand). Kippt das Verhaeltnis
+    nie, traegt es keine Information ueber den Sprecher, und eine Zuordnung
+    daraus waere erfunden.
+
+    Am Aaronson-Material vom 21.08.2026 gemessen: Quartilsabstand 2,4 dB
+    (Spur 4 gegen 1) und 2,3 dB (Spur 2 gegen 1), beide Verteilungen
+    eingipflig. Die drei mp3 sind drei Mikrofone im selben Raum mit rund
+    -17 und -7 dB Versatz, keine getrennten Ansteckmikrofone.
+    """
+    paare = []
+    for i in range(1, len(h)):
+        d = []
+        for seg in segmente:
+            a, b = int(seg["start"] * rate), int(seg["end"] * rate)
+            if b - a < rate * 0.8 or b > min(len(h[0]), len(h[i])):
+                continue
+            d.append(np.percentile(h[i][a:b], 80) - np.percentile(h[0][a:b], 80))
+        if not d:
+            continue
+        d = np.array(d)
+        paare.append(float(np.percentile(d, 75) - np.percentile(d, 25)))
+    return (max(paare) if paare else 0.0), mindest_spreizung
+
+
 def sprecher_zuordnen(segmente, spuren, namen, rate=100):
     """Je Segment die Spur mit dem hoechsten Pegel ueber ihrem eigenen Mittel.
 
     Der Bezug ist das 75. Perzentil der jeweiligen Spur — ihr Sprechpegel.
     Dadurch zaehlt der Abstand zum eigenen Normal, nicht die absolute
     Lautstaerke; sonst gewaenne eine heiss ausgesteuerte Aufnahme immer.
+
+    Vorher wird geprueft, ob die Spuren ueberhaupt trennen. Tun sie es
+    nicht, bleibt die Zuordnung weg — **lieber kein Sprechername als ein
+    erfundener.** Der erste Lauf am Aaronson-Material hat Namen vergeben,
+    die reines Rauschen waren, und sie sahen im Transkript genauso
+    verlaesslich aus wie echte.
     """
     h = [huelle(p, rate) for p in spuren]
+    spreizung, mindest = trennt_die_spuren(segmente, h, rate)
+    if spreizung < mindest:
+        print(f"  KEINE Sprecherzuordnung: die Spuren trennen nicht "
+              f"(groesste Spreizung {spreizung:.1f} dB, gebraucht "
+              f"{mindest:.0f} dB). Das sind Mikrofone im selben Raum, "
+              f"keine getrennten Ansteckmikrofone.")
+        return segmente, False
+    print(f"  Sprecherzuordnung aus den Spuren (Spreizung {spreizung:.1f} dB)")
     bezug = [np.percentile(x, 75) for x in h]
     for seg in segmente:
         a, b = int(seg["start"] * rate), int(seg["end"] * rate)
@@ -58,7 +105,7 @@ def sprecher_zuordnen(segmente, spuren, namen, rate=100):
         zweiter = sorted(werte)[-2] if len(werte) > 1 else -99
         seg["sprecher"] = namen[i]
         seg["abstand"] = round(werte[i] - zweiter, 1)
-    return segmente
+    return segmente, True
 
 
 def main():
@@ -90,20 +137,27 @@ def main():
                    encoding="utf-8")
     print(f"  Segmente gesichert: {roh}")
 
+    zugeordnet = False
     if a.spuren:
         namen = a.namen or [Path(p).stem for p in a.spuren]
-        segmente = sprecher_zuordnen(segmente, a.spuren, namen)
+        segmente, zugeordnet = sprecher_zuordnen(segmente, a.spuren, namen)
 
     dauer = segmente[-1]["end"] if segmente else 0
     zeilen = [f"# {a.titel or Path(a.ton).stem}", "",
               f"**Dauer** {dauer:.0f} s ({int(dauer // 60)}:{int(dauer % 60):02d}) · "
               f"**Sprache** {info.language} · **Modell** {a.model}", "",
               "Quelle: eigenes Transkript aus dem Rohton, Zeiten in **Rohzeit**.", ""]
-    if a.spuren:
+    if zugeordnet:
         zeilen += ["Sprecher aus den Einzelspuren: wer spricht, ist auf seinem "
                    "Mikrofon am lautesten. Der Wert in Klammern ist der Abstand "
                    "zur zweitlautesten Spur in dB — unter 2 dB ist die "
                    "Zuordnung unsicher.", ""]
+    elif a.spuren:
+        zeilen += ["**Ohne Sprecherzuordnung.** Die mitgegebenen Spuren trennen "
+                   "die Sprecher nicht — es sind Mikrofone im selben Raum mit "
+                   "unterschiedlicher Verstaerkung, nicht getrennte "
+                   "Ansteckmikrofone. Wer spricht, steht hier deshalb nicht; "
+                   "lieber keine Angabe als eine erfundene.", ""]
     zeilen.append("---")
     zeilen.append("")
     for s in segmente:

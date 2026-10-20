@@ -1,0 +1,7522 @@
+[
+ {
+  "start": 3.34,
+  "end": 5.34,
+  "text": "Where should I be facing, by the way?"
+ },
+ {
+  "start": 5.34,
+  "end": 9.34,
+  "text": "No, to me. Just a normal conversation."
+ },
+ {
+  "start": 9.34,
+  "end": 12.69,
+  "text": "Okay, great."
+ },
+ {
+  "start": 12.69,
+  "end": 16.69,
+  "text": "Professor Scott Aronson. Have you ever read Dostoevsky's The Idiot?"
+ },
+ {
+  "start": 16.69,
+  "end": 19.69,
+  "text": "I have. Decades ago, though."
+ },
+ {
+  "start": 19.69,
+  "end": 23.69,
+  "text": "Great. Because that's basically me today."
+ },
+ {
+  "start": 23.69,
+  "end": 27.69,
+  "text": "Out of every conversation I've got lined up these days with"
+ },
+ {
+  "start": 27.69,
+  "end": 32.69,
+  "text": "ex-NFL stars, UFC fighters, Navy SEALs,"
+ },
+ {
+  "start": 32.69,
+  "end": 40.41,
+  "text": "actors and Burning Man CEOs this one with you here is the one I've had the"
+ },
+ {
+  "start": 40.41,
+  "end": 49.69,
+  "text": "most nerves about and that's because it's because you're one of the world's"
+ },
+ {
+  "start": 49.69,
+  "end": 56.85,
+  "text": "leading authorities in your field right and I'm like the what well let's"
+ },
+ {
+  "start": 56.85,
+  "end": 64.09,
+  "text": "say the one and only F I ever got in my entire high school career was of all"
+ },
+ {
+  "start": 64.09,
+  "end": 71.39,
+  "text": "subjects in physics. I didn't study physics as a student. I studied math and"
+ },
+ {
+  "start": 71.39,
+  "end": 76.21,
+  "text": "computer science. I just sort of came into physics by a side door of"
+ },
+ {
+  "start": 76.21,
+  "end": 80.33,
+  "text": "quantum information. All right well at least you didn't have any other Fs."
+ },
+ {
+  "start": 80.33,
+  "end": 85.29,
+  "text": "Well yeah to be fair I only passed my math classes because I was"
+ },
+ {
+  "start": 85.29,
+  "end": 91.25,
+  "text": "flirting with my very young math teacher all the time. But, good thing we got this."
+ },
+ {
+  "start": 91.25,
+  "end": 94.25,
+  "text": "That clearly shows a different kind of talent."
+ },
+ {
+  "start": 94.25,
+  "end": 95.25,
+  "text": "Right."
+ },
+ {
+  "start": 95.25,
+  "end": 96.25,
+  "text": "Yeah."
+ },
+ {
+  "start": 96.25,
+  "end": 102.05,
+  "text": "We got this out of the way. So today, I'm the idiot in the room and I'm weirdly excited"
+ },
+ {
+  "start": 102.05,
+  "end": 106.37,
+  "text": "about it. And I thought, you have two kids, right?"
+ },
+ {
+  "start": 106.37,
+  "end": 107.37,
+  "text": "I do."
+ },
+ {
+  "start": 107.37,
+  "end": 108.37,
+  "text": "What age are they?"
+ },
+ {
+  "start": 108.37,
+  "end": 109.37,
+  "text": "They're 13 and 9."
+ },
+ {
+  "start": 109.37,
+  "end": 114.81,
+  "text": "Okay. So, what have you been telling them when they ask you what daddy does for"
+ },
+ {
+  "start": 114.81,
+  "end": 122.89,
+  "text": "Oh, I mean, they know. They can say some of the basics about what's the P versus NP problem,"
+ },
+ {
+  "start": 122.89,
+  "end": 129.61,
+  "text": "what's quantum computing. To them, it's just normal. My wife is also a theoretical"
+ },
+ {
+  "start": 129.61,
+  "end": 137.21,
+  "text": "computer scientist, so that's kind of in the air in our house. But I've made it clear"
+ },
+ {
+  "start": 137.21,
+  "end": 141.77,
+  "text": "to the kids that I'm going to support them no matter what they choose to do, even"
+ },
+ {
+  "start": 141.77,
+  "end": 149.77,
+  "text": "if it's algebraic geometry, even if it's physics or engineering. It doesn't have to be theoretical"
+ },
+ {
+  "start": 149.77,
+  "end": 150.77,
+  "text": "computer science."
+ },
+ {
+  "start": 150.77,
+  "end": 157.73,
+  "text": "But how do you start explaining to them what you do? Like one day away, let's say five"
+ },
+ {
+  "start": 157.73,
+  "end": 158.73,
+  "text": "years old."
+ },
+ {
+  "start": 158.73,
+  "end": 167.13,
+  "text": "Well, okay. I mean, we do math for the purpose of understanding what are the ultimate"
+ },
+ {
+  "start": 167.13,
+  "end": 176.33,
+  "text": "limits of computers. What can you ever do or not do with computers? And as part of that,"
+ },
+ {
+  "start": 176.33,
+  "end": 182.57,
+  "text": "I study a new type of computer called a quantum computer that people are just starting now"
+ },
+ {
+  "start": 182.57,
+  "end": 188.89,
+  "text": "to be able to build, but which looks like it could do some things quickly that would"
+ },
+ {
+  "start": 188.89,
+  "end": 195.37,
+  "text": "take our current computers longer than the age of the universe. So they're interesting"
+ },
+ {
+  "start": 195.37,
+  "end": 201.45,
+  "text": "to me, because not so much because of the applications, although I hope they'll be useful"
+ },
+ {
+  "start": 201.45,
+  "end": 206.19,
+  "text": "for at least a few things, but just because they change the limit. They change the answer"
+ },
+ {
+  "start": 206.19,
+  "end": 211.93,
+  "text": "to that question of what is or isn't computable in our universe in any reasonable amount"
+ },
+ {
+  "start": 211.93,
+  "end": 217.01,
+  "text": "of time. And that's really what I'm after, is understanding the answer to that."
+ },
+ {
+  "start": 217.01,
+  "end": 219.57,
+  "text": "What was your latest breakthrough?"
+ },
+ {
+  "start": 219.57,
+  "end": 232.49,
+  "text": "You know, I'm kind of on the downswing here, you know, I've gotten so much less capable"
+ },
+ {
+  "start": 232.49,
+  "end": 236.57,
+  "text": "at doing technical work than when I was younger."
+ },
+ {
+  "start": 236.57,
+  "end": 241.21,
+  "text": "You know, I've shifted to a different mode, you could say, where I form out more and"
+ },
+ {
+  "start": 241.21,
+  "end": 247.01,
+  "text": "more work to my grad students, you know, and now, of course, to AIs, right, which,"
+ },
+ {
+  "start": 247.01,
+  "end": 248.33,
+  "text": "I'm sure we'll talk about that."
+ },
+ {
+  "start": 248.33,
+  "end": 252.37,
+  "text": "But that's changing the entire nature of what we do."
+ },
+ {
+  "start": 252.37,
+  "end": 255.33,
+  "text": "But some of the things that I've been involved with"
+ },
+ {
+  "start": 255.33,
+  "end": 259.49,
+  "text": "in the last couple of years that might interest you,"
+ },
+ {
+  "start": 259.49,
+  "end": 263.73,
+  "text": "I and others had theoretical proposals"
+ },
+ {
+  "start": 263.73,
+  "end": 266.49,
+  "text": "for things you could do with a quantum computer that"
+ },
+ {
+  "start": 266.49,
+  "end": 270.53,
+  "text": "would actually get an advantage over a classical computer"
+ },
+ {
+  "start": 270.53,
+  "end": 272.81,
+  "text": "that have now, just within the last year or two,"
+ },
+ {
+  "start": 272.81,
+  "end": 275.61,
+  "text": "turned into actual experiments."
+ },
+ {
+  "start": 275.61,
+  "end": 279.47,
+  "text": "For example, this company, Quantinuo in Colorado,"
+ },
+ {
+  "start": 279.47,
+  "end": 283.09,
+  "text": "has done with its 100-qubit quantum computer."
+ },
+ {
+  "start": 283.09,
+  "end": 287.73,
+  "text": "So one of these was called quantum information supremacy."
+ },
+ {
+  "start": 287.73,
+  "end": 290.93,
+  "text": "And this was about doing something"
+ },
+ {
+  "start": 290.93,
+  "end": 294.53,
+  "text": "with a small number of qubits, quantum bits,"
+ },
+ {
+  "start": 294.53,
+  "end": 299.05,
+  "text": "like let's say 12 qubits, but that could only"
+ },
+ {
+  "start": 299.05,
+  "end": 301.53,
+  "text": "have been done with a much larger number of classical"
+ },
+ {
+  "start": 301.53,
+  "end": 305.09,
+  "text": "bits, several hundred, I think."
+ },
+ {
+  "start": 305.09,
+  "end": 309.71,
+  "text": "And what's nice is that this separation was just provable,"
+ },
+ {
+  "start": 309.71,
+  "end": 314.05,
+  "text": "without having to make any assumptions about what"
+ },
+ {
+  "start": 314.05,
+  "end": 316.25,
+  "text": "are the limits of classical algorithms, which"
+ },
+ {
+  "start": 316.25,
+  "end": 321.41,
+  "text": "is something that we still can't prove a lot about."
+ },
+ {
+  "start": 321.41,
+  "end": 323.41,
+  "text": "But if you're just comparing bits to qubits,"
+ },
+ {
+  "start": 323.41,
+  "end": 325.61,
+  "text": "then you actually can prove these things."
+ },
+ {
+  "start": 325.61,
+  "end": 328.77,
+  "text": "And this led to an experiment that"
+ },
+ {
+  "start": 328.77,
+  "end": 332.69,
+  "text": "was just because of where the technology is now,"
+ },
+ {
+  "start": 332.69,
+  "end": 335.21,
+  "text": "It would not have been doable a few years ago, okay?"
+ },
+ {
+  "start": 335.21,
+  "end": 339.49,
+  "text": "But the experiment was doable now."
+ },
+ {
+  "start": 339.49,
+  "end": 345.37,
+  "text": "And then another experiment which started from a proposal that I had back in 2018."
+ },
+ {
+  "start": 345.37,
+  "end": 348.65,
+  "text": "And then we published a paper on it in 2023."
+ },
+ {
+  "start": 348.65,
+  "end": 353.93,
+  "text": "And then just about a year ago was actually demonstrated"
+ },
+ {
+  "start": 353.93,
+  "end": 358.85,
+  "text": "in a collaboration between Continuum and JP Morgan Chase."
+ },
+ {
+  "start": 358.85,
+  "end": 363.05,
+  "text": "And this was about using current quantum computers"
+ },
+ {
+  "start": 363.05,
+  "end": 367.05,
+  "text": "to generate cryptographically certified random bits."
+ },
+ {
+  "start": 367.05,
+  "end": 372.05,
+  "text": "So, it's very easy to generate random numbers, right?"
+ },
+ {
+  "start": 372.77,
+  "end": 375.21,
+  "text": "Certainly if you have quantum mechanics, right?"
+ },
+ {
+  "start": 375.21,
+  "end": 377.37,
+  "text": "Randomness is just built in, right?"
+ },
+ {
+  "start": 377.37,
+  "end": 379.93,
+  "text": "In fact, if you just stuck a Geiger counter"
+ },
+ {
+  "start": 379.93,
+  "end": 382.57,
+  "text": "next to some radioactive material, right?"
+ },
+ {
+  "start": 382.57,
+  "end": 385.45,
+  "text": "The pattern of clicks when there's a decay, right?"
+ },
+ {
+  "start": 385.45,
+  "end": 388.21,
+  "text": "According to the known laws of physics"
+ },
+ {
+  "start": 388.21,
+  "end": 394.27,
+  "text": "going to be inherently random, right? Okay, but we were interested in a harder"
+ },
+ {
+  "start": 394.27,
+  "end": 399.45,
+  "text": "problem, right, which is how could you generate random bits, you know, publish"
+ },
+ {
+  "start": 399.45,
+  "end": 404.23,
+  "text": "them on the internet and then prove to every skeptic that these bits really"
+ },
+ {
+  "start": 404.23,
+  "end": 408.13,
+  "text": "are random, right? What are the practical implications for everyday life?"
+ },
+ {
+  "start": 408.13,
+  "end": 413.65,
+  "text": "Yeah, well, okay, so having a certifiable randomness source could be"
+ },
+ {
+  "start": 413.65,
+  "end": 419.13,
+  "text": "useful for several kinds of cryptographic protocols okay the easiest"
+ },
+ {
+  "start": 419.13,
+  "end": 423.97,
+  "text": "one to explain would be cryptocurrencies okay especially proof of"
+ },
+ {
+  "start": 423.97,
+  "end": 430.73,
+  "text": "state cryptocurrencies like aetherium now is since they did this merge a year"
+ },
+ {
+  "start": 430.73,
+  "end": 436.85,
+  "text": "or two ago right so you know a proof of state cryptocurrency is way more"
+ },
+ {
+  "start": 436.85,
+  "end": 442.05,
+  "text": "environmentally friendly than Bitcoin like you're not using a significant"
+ },
+ {
+  "start": 442.05,
+  "end": 447.09,
+  "text": "fraction of all the electricity in the world to just you know do these useless"
+ },
+ {
+  "start": 447.09,
+  "end": 453.53,
+  "text": "computations okay but what you do need is you need to constantly run a lottery"
+ },
+ {
+  "start": 453.53,
+  "end": 459.57,
+  "text": "to decide who gets to add the next block to your blockchain right and so"
+ },
+ {
+  "start": 459.57,
+  "end": 463.13,
+  "text": "and so you know billions of dollars are riding on this everyone needs to"
+ },
+ {
+  "start": 463.13,
+  "end": 468.49,
+  "text": "trust that this lottery is fair okay and so so this is this is you know"
+ },
+ {
+  "start": 468.49,
+  "end": 472.77,
+  "text": "Right now, they do it in some more ad hoc way."
+ },
+ {
+  "start": 472.77,
+  "end": 477.13,
+  "text": "They sort of, I think, source the randomness from the blockchain itself."
+ },
+ {
+  "start": 477.13,
+  "end": 485.03,
+  "text": "But if you wanted a sort of really physically rooted source of randomness, then our proposal"
+ },
+ {
+  "start": 485.03,
+  "end": 490.33,
+  "text": "was you could actually use current quantum computers for this."
+ },
+ {
+  "start": 490.33,
+  "end": 495.05,
+  "text": "And the basic protocol, by the way, this is the only thing in my career that I've"
+ },
+ {
+  "start": 495.05,
+  "end": 501.61,
+  "text": "patented so far, you know, through UT Austin, and we even licensed it for a while, you know,"
+ },
+ {
+  "start": 502.97,
+  "end": 511.13,
+  "text": "no one's gotten rich from this patent, but the basic proposal is that you have a classical"
+ },
+ {
+  "start": 511.13,
+  "end": 516.81,
+  "text": "challenger, you know, with a very small amount of seed randomness, and then that challenger"
+ },
+ {
+  "start": 516.81,
+  "end": 526.47,
+  "text": "uses their seed to generate a quantum circuit, so like a sequence of operations that a quantum"
+ },
+ {
+  "start": 526.47,
+  "end": 533.05,
+  "text": "computer could apply, which looks random, it's not really, it's pseudo-random."
+ },
+ {
+  "start": 533.05,
+  "end": 539.83,
+  "text": "But then you could think of my protocol as a way of bootstrapping from that pseudo-randomness"
+ },
+ {
+  "start": 539.83,
+  "end": 541.69,
+  "text": "into true randomness."
+ },
+ {
+  "start": 541.69,
+  "end": 545.61,
+  "text": "Because what's going to happen is that the pseudo-random circuit gets sent over"
+ },
+ {
+  "start": 545.61,
+  "end": 550.09,
+  "text": "to the quantum computer, let's say just over the internet, and now the quantum"
+ },
+ {
+  "start": 550.09,
+  "end": 555.29,
+  "text": "computer is challenged. It has to respond by you're running the circuit"
+ },
+ {
+  "start": 555.29,
+  "end": 559.47,
+  "text": "and then sampling some of the outputs that you get by running it, right? Which"
+ },
+ {
+  "start": 559.47,
+  "end": 564.37,
+  "text": "you're just going to be strings of ones and zeros, right? Like if it's a 50"
+ },
+ {
+  "start": 564.37,
+  "end": 568.61,
+  "text": "qubit circuit then you know each time you measure you'll see a string of 50"
+ },
+ {
+  "start": 568.61,
+  "end": 574.45,
+  "text": "bits, okay? So you just say send me some of these strings, right? And then"
+ },
+ {
+  "start": 574.45,
+  "end": 583.53,
+  "text": "Then the classical verifier, at its leisure, can do a statistical test on those shrigs"
+ },
+ {
+  "start": 583.53,
+  "end": 589.67,
+  "text": "to check, are they actually consistent with having been output by this circuit?"
+ },
+ {
+  "start": 589.67,
+  "end": 593.75,
+  "text": "This is actually the bottleneck in my whole protocol, interestingly."
+ },
+ {
+  "start": 593.75,
+  "end": 595.77,
+  "text": "It's not the quantum computation."
+ },
+ {
+  "start": 595.77,
+  "end": 603.03,
+  "text": "It's the classical verification of the quantum computation, which seems to take like"
+ },
+ {
+  "start": 603.03,
+  "end": 607.95,
+  "text": "two to the fiftieth time, right, if it's 50 qubits. Or, you know, and that's the"
+ },
+ {
+  "start": 607.95,
+  "end": 612.07,
+  "text": "reason why you probably want to stop at about 50 qubits, right, because if you did"
+ },
+ {
+  "start": 612.07,
+  "end": 615.51,
+  "text": "it with a hundred qubits, now you're talking about two to the hundredth time,"
+ },
+ {
+  "start": 615.51,
+  "end": 619.23,
+  "text": "right. You know, and we do have supercomputers today that can do two"
+ },
+ {
+  "start": 619.23,
+  "end": 624.09,
+  "text": "to the fifty. We don't have ones that can do two to the hundred, okay. So,"
+ },
+ {
+  "start": 624.09,
+  "end": 629.27,
+  "text": "so, so it is, it is bottlenecked in that way, okay, but, you know, at your"
+ },
+ {
+  "start": 629.27,
+  "end": 636.23,
+  "text": "leisure, you can do this verification. And here's the key point. If it checks out, then I can,"
+ },
+ {
+  "start": 638.63,
+  "end": 646.87,
+  "text": "my post-doc, Shi-han Hung and I, were able to prove that under some plausible cryptographic"
+ },
+ {
+  "start": 646.87,
+  "end": 654.39,
+  "text": "assumptions, even a quantum computer could have only generated these samples quickly if it is"
+ },
+ {
+  "start": 654.39,
+  "end": 657.07,
+  "text": "is really sampling them from a distribution that"
+ },
+ {
+  "start": 657.07,
+  "end": 659.35,
+  "text": "has a lot of real randomness in it."
+ },
+ {
+  "start": 659.35,
+  "end": 662.39,
+  "text": "So the point is you don't have to trust the quantum computer."
+ },
+ {
+  "start": 662.39,
+  "end": 663.85,
+  "text": "The quantum computer could have been"
+ },
+ {
+  "start": 663.85,
+  "end": 669.31,
+  "text": "commandeered by the NSA, or by Chinese intelligence,"
+ },
+ {
+  "start": 669.31,
+  "end": 672.31,
+  "text": "or by whoever your worst enemy is."
+ },
+ {
+  "start": 672.31,
+  "end": 674.47,
+  "text": "But if they're sending you samples"
+ },
+ {
+  "start": 674.47,
+  "end": 676.67,
+  "text": "that pass the statistical test,"
+ },
+ {
+  "start": 676.67,
+  "end": 682.03,
+  "text": "then either we're just totally wrong about what"
+ },
+ {
+  "start": 682.03,
+  "end": 684.35,
+  "text": "problems are hard for quantum computers,"
+ },
+ {
+  "start": 684.35,
+  "end": 688.83,
+  "text": "or else there must be real randomness in those samples,"
+ },
+ {
+  "start": 688.83,
+  "end": 690.19,
+  "text": "a lot of it."
+ },
+ {
+  "start": 690.19,
+  "end": 693.99,
+  "text": "And you can then feed the samples"
+ },
+ {
+  "start": 693.99,
+  "end": 695.75,
+  "text": "into a classical algorithm that's"
+ },
+ {
+  "start": 695.75,
+  "end": 698.51,
+  "text": "called a randomness extractor."
+ },
+ {
+  "start": 698.51,
+  "end": 701.27,
+  "text": "This is just known stuff in computer science."
+ },
+ {
+  "start": 701.27,
+  "end": 705.87,
+  "text": "But you can extract from that nearly uniform random bits,"
+ },
+ {
+  "start": 705.87,
+  "end": 708.23,
+  "text": "which you can then use for all sorts"
+ },
+ {
+  "start": 708.23,
+  "end": 710.19,
+  "text": "of cryptographic applications."
+ },
+ {
+  "start": 710.19,
+  "end": 713.83,
+  "text": "So those are some examples of some of the work"
+ },
+ {
+  "start": 713.83,
+  "end": 716.27,
+  "text": "that I've done over the past decade."
+ },
+ {
+  "start": 716.27,
+  "end": 719.35,
+  "text": "I'm also super fascinated by your personal story"
+ },
+ {
+  "start": 719.35,
+  "end": 721.67,
+  "text": "because I think you're the only person I've heard of"
+ },
+ {
+  "start": 721.67,
+  "end": 723.73,
+  "text": "that dropped out of high school,"
+ },
+ {
+  "start": 723.73,
+  "end": 726.75,
+  "text": "dropped out of high school at the age of 15"
+ },
+ {
+  "start": 726.75,
+  "end": 728.99,
+  "text": "in order to go to college."
+ },
+ {
+  "start": 729.83,
+  "end": 730.67,
+  "text": "And-"
+ },
+ {
+  "start": 730.67,
+  "end": 733.51,
+  "text": "Well, I mean, drop out is one way of putting it."
+ },
+ {
+  "start": 733.51,
+  "end": 737.85,
+  "text": "I got a New York State GED when I was 15,"
+ },
+ {
+  "start": 737.85,
+  "end": 748.85,
+  "text": "No, basically I didn't like the environment of high school, either intellectually or socially."
+ },
+ {
+  "start": 748.85,
+  "end": 750.85,
+  "text": "No, I resonate with that."
+ },
+ {
+  "start": 750.85,
+  "end": 754.85,
+  "text": "Yeah, yeah, yeah. And I wanted to get out. And I had always been ahead in math,"
+ },
+ {
+  "start": 754.85,
+  "end": 760.85,
+  "text": "and so I just sort of used that as an excuse, sort of, to just get out quicker."
+ },
+ {
+  "start": 760.85,
+  "end": 768.35,
+  "text": "I had a very unusual circumstance, which was that my father was working in Hong Kong for a couple of years."
+ },
+ {
+  "start": 768.35,
+  "end": 774.85,
+  "text": "So I lived in Hong Kong when I was 13. So I was moving back and forth between the U.S. and Hong Kong."
+ },
+ {
+  "start": 774.85,
+  "end": 777.85,
+  "text": "And so it was like completely different school systems."
+ },
+ {
+  "start": 777.85,
+  "end": 781.85,
+  "text": "And I sort of took advantage of the differences to say,"
+ },
+ {
+  "start": 781.85,
+  "end": 785.85,
+  "text": "well, you know, actually for me to be doing the math that I should be doing, you know,"
+ },
+ {
+  "start": 785.85,
+  "end": 788.85,
+  "text": "actually I should be in ninth grade instead of eighth grade."
+ },
+ {
+  "start": 788.85,
+  "end": 793.29,
+  "text": "And then when I came back to the U.S. it was 11th grade instead of 10th grade, right?"
+ },
+ {
+  "start": 793.29,
+  "end": 799.79,
+  "text": "And then after that I found out, I had sort of run out of math at my high school,"
+ },
+ {
+  "start": 799.79,
+  "end": 804.97,
+  "text": "but I found out about a program at Clarkson University in upstate New York,"
+ },
+ {
+  "start": 804.97,
+  "end": 810.01,
+  "text": "which was called the Clarkson School, where just high school seniors can,"
+ },
+ {
+  "start": 810.01,
+  "end": 815.15,
+  "text": "you know, take college courses and they get their high school diploma"
+ },
+ {
+  "start": 815.15,
+  "end": 818.51,
+  "text": "and then they can transfer to a different college."
+ },
+ {
+  "start": 818.51,
+  "end": 823.51,
+  "text": "So I did that when I was 15."
+ },
+ {
+  "start": 823.51,
+  "end": 825.91,
+  "text": "That was a nice experience."
+ },
+ {
+  "start": 825.91,
+  "end": 828.89,
+  "text": "And then applied to a lot of colleges,"
+ },
+ {
+  "start": 828.89,
+  "end": 831.63,
+  "text": "got rejected from almost all of them."
+ },
+ {
+  "start": 831.63,
+  "end": 834.87,
+  "text": "But Cornell was kind enough to accept me."
+ },
+ {
+  "start": 834.87,
+  "end": 839.03,
+  "text": "So then I went to Cornell when I was 16."
+ },
+ {
+  "start": 839.03,
+  "end": 844.67,
+  "text": "And I've wondered, should I have done this or not?"
+ },
+ {
+  "start": 844.67,
+  "end": 847.11,
+  "text": "Professionally, I'm very happy that I did it."
+ },
+ {
+  "start": 847.11,
+  "end": 848.73,
+  "text": "And I would do it again."
+ },
+ {
+  "start": 848.73,
+  "end": 854.97,
+  "text": "I think many, many more kids into math and science"
+ },
+ {
+  "start": 854.97,
+  "end": 859.89,
+  "text": "could be doing this if we were set up to do it."
+ },
+ {
+  "start": 859.89,
+  "end": 863.69,
+  "text": "I wish that people were able to move more at their own pace"
+ },
+ {
+  "start": 863.69,
+  "end": 865.01,
+  "text": "through the curriculum."
+ },
+ {
+  "start": 865.01,
+  "end": 867.93,
+  "text": "I feel very strongly about that."
+ },
+ {
+  "start": 867.93,
+  "end": 871.73,
+  "text": "And I'm dealing with that now with my own kids."
+ },
+ {
+  "start": 871.73,
+  "end": 875.77,
+  "text": "So that I have no regrets about at all."
+ },
+ {
+  "start": 875.77,
+  "end": 880.17,
+  "text": "Socially, it made dating a hell of a lot harder."
+ },
+ {
+  "start": 880.17,
+  "end": 881.61,
+  "text": "How so?"
+ },
+ {
+  "start": 881.61,
+  "end": 885.77,
+  "text": "Well, I was three years younger than my classmates."
+ },
+ {
+  "start": 885.77,
+  "end": 895.53,
+  "text": "And so it took me a long time to learn"
+ },
+ {
+  "start": 895.53,
+  "end": 899.57,
+  "text": "how to simulate a person with normal social skills."
+ },
+ {
+  "start": 899.57,
+  "end": 902.33,
+  "text": "So I really needed to be playing on easy mode,"
+ },
+ {
+  "start": 902.33,
+  "end": 904.81,
+  "text": "and I was playing on hard mode."
+ },
+ {
+  "start": 904.81,
+  "end": 911.85,
+  "text": "But so, you know, I do think it's easier for girls than for boys, you know, to do this."
+ },
+ {
+  "start": 911.85,
+  "end": 917.93,
+  "text": "You tricked the system, basically, and then went on to work at MIT for nine years and"
+ },
+ {
+  "start": 917.93,
+  "end": 919.93,
+  "text": "Well, there were steps in between, yeah."
+ },
+ {
+  "start": 919.93,
+  "end": 924.81,
+  "text": "I mean, I went to, after Cornell, I went to Berkeley for grad school."
+ },
+ {
+  "start": 924.81,
+  "end": 929.69,
+  "text": "I was there for four years, and then I was a postdoc at the Institute for Advanced"
+ },
+ {
+  "start": 929.69,
+  "end": 934.97,
+  "text": "study in Princeton and then for two years at the University of Waterloo in"
+ },
+ {
+  "start": 934.97,
+  "end": 939.93,
+  "text": "Canada and then I got hired by MIT as a professor yeah and then I was there for"
+ },
+ {
+  "start": 939.93,
+  "end": 946.45,
+  "text": "nine years and then you know that there I got married we had our daughter but"
+ },
+ {
+  "start": 946.45,
+  "end": 951.85,
+  "text": "then my wife and I needed jobs in the same place and we ended up having a"
+ },
+ {
+  "start": 951.85,
+  "end": 956.09,
+  "text": "very nice offer here in Texas and so we moved here a decade ago. When did"
+ },
+ {
+  "start": 956.09,
+  "end": 962.09,
+  "text": "How did you develop this passion, I want to say obsession with quantum computing?"
+ },
+ {
+  "start": 962.09,
+  "end": 969.09,
+  "text": "Well, yeah, that was not how I got into computer science in the first place."
+ },
+ {
+  "start": 969.09,
+  "end": 976.09,
+  "text": "I found out what programming was when I was 11, let's say, and I was just devastated"
+ },
+ {
+  "start": 976.09,
+  "end": 980.09,
+  "text": "that no one had told me about it before."
+ },
+ {
+  "start": 980.09,
+  "end": 984.09,
+  "text": "I had dreamed of making my own Nintendo games."
+ },
+ {
+  "start": 984.09,
+  "end": 987.81,
+  "text": "very into Nintendo, as probably most kids were"
+ },
+ {
+  "start": 987.81,
+  "end": 990.29,
+  "text": "in the 80s and 90s."
+ },
+ {
+  "start": 991.29,
+  "end": 996.29,
+  "text": "But I had no idea even what sort of thing"
+ },
+ {
+  "start": 996.59,
+  "end": 1000.89,
+  "text": "would be involved in making Zelda or Mario."
+ },
+ {
+  "start": 1000.89,
+  "end": 1005.09,
+  "text": "Would you go to a factory and how do you make"
+ },
+ {
+  "start": 1005.09,
+  "end": 1010.09,
+  "text": "the characters move in exactly the way you want?"
+ },
+ {
+  "start": 1010.57,
+  "end": 1013.21,
+  "text": "And it was a revelation when a friend"
+ },
+ {
+  "start": 1013.21,
+  "end": 1019.05,
+  "text": "showed me, this was actually Apple Basic, okay, so, you know, truly, truly ancient,"
+ },
+ {
+  "start": 1019.05,
+  "end": 1025.91,
+  "text": "you know, programming language, but, you know, the point was, you know, here's this spaceship"
+ },
+ {
+  "start": 1025.91,
+  "end": 1030.13,
+  "text": "game or whatever, and here are these lines of code, right, and the lines of code are"
+ },
+ {
+  "start": 1030.13,
+  "end": 1034.45,
+  "text": "the complete specification of the game, you know, you want the game to do something"
+ },
+ {
+  "start": 1034.45,
+  "end": 1038.17,
+  "text": "different, you just have to change the code, right, and you know, I like to say,"
+ },
+ {
+  "start": 1038.17,
+  "end": 1046.89,
+  "text": "me that was like finding out where babies come from. It was just revelatory. So I wanted"
+ },
+ {
+  "start": 1046.89,
+  "end": 1054.33,
+  "text": "to learn all I could about programming. In seventh grade I found a friend who was also"
+ },
+ {
+  "start": 1054.33,
+  "end": 1059.73,
+  "text": "into it, in fact a much better programmer than I was. We made shareware games together."
+ },
+ {
+  "start": 1059.73,
+  "end": 1065.89,
+  "text": "I think we put them on America Online. I think we made at least $30 from people"
+ },
+ {
+  "start": 1065.89,
+  "end": 1068.29,
+  "text": "registering our shareware."
+ },
+ {
+  "start": 1068.29,
+  "end": 1076.13,
+  "text": "But I also realized that I was, even if I liked programming,"
+ },
+ {
+  "start": 1076.13,
+  "end": 1079.97,
+  "text": "I was not good at software engineering."
+ },
+ {
+  "start": 1079.97,
+  "end": 1083.61,
+  "text": "I liked making my code work with other people's code,"
+ },
+ {
+  "start": 1083.61,
+  "end": 1087.13,
+  "text": "getting it done by a deadline, documenting it."
+ },
+ {
+  "start": 1087.13,
+  "end": 1092.33,
+  "text": "Of course, now we have AI to help do all that stuff."
+ },
+ {
+  "start": 1092.33,
+  "end": 1094.33,
+  "text": "Back then, we certainly didn't."
+ },
+ {
+  "start": 1094.33,
+  "end": 1099.93,
+  "text": "And I got more and more drawn to the mathematical side of it,"
+ },
+ {
+  "start": 1099.93,
+  "end": 1102.81,
+  "text": "just understanding what kinds of programs"
+ },
+ {
+  "start": 1102.81,
+  "end": 1105.85,
+  "text": "could ever be written, what kinds of problems"
+ },
+ {
+  "start": 1105.85,
+  "end": 1108.65,
+  "text": "could or couldn't be solved by any program."
+ },
+ {
+  "start": 1108.65,
+  "end": 1114.09,
+  "text": "And I got very interested in these programming languages"
+ },
+ {
+  "start": 1114.09,
+  "end": 1116.45,
+  "text": "that I was learning, which were, at the time,"
+ },
+ {
+  "start": 1116.45,
+  "end": 1123.33,
+  "text": "basic, and then Pascal, and then C, and C++, and Java."
+ },
+ {
+  "start": 1123.33,
+  "end": 1125.49,
+  "text": "Are these the limit of what you can do?"
+ },
+ {
+  "start": 1125.49,
+  "end": 1129.57,
+  "text": "Could there be some other programming language that would let you do things that could never"
+ },
+ {
+  "start": 1129.57,
+  "end": 1134.25,
+  "text": "be done in basic, let's say, even in principle, right?"
+ },
+ {
+  "start": 1134.25,
+  "end": 1137.05,
+  "text": "These are completely strange terms to me."
+ },
+ {
+  "start": 1137.05,
+  "end": 1139.97,
+  "text": "Okay, you've heard of these programming languages, no?"
+ },
+ {
+  "start": 1139.97,
+  "end": 1140.97,
+  "text": "Like basic Java?"
+ },
+ {
+  "start": 1140.97,
+  "end": 1141.97,
+  "text": "No."
+ },
+ {
+  "start": 1141.97,
+  "end": 1142.97,
+  "text": "Okay."
+ },
+ {
+  "start": 1142.97,
+  "end": 1143.97,
+  "text": "I mean these are..."
+ },
+ {
+  "start": 1143.97,
+  "end": 1144.97,
+  "text": "Yeah, I've heard of Java."
+ },
+ {
+  "start": 1144.97,
+  "end": 1145.97,
+  "text": "Yeah, okay, yeah."
+ },
+ {
+  "start": 1145.97,
+  "end": 1146.97,
+  "text": "Yeah, I mean these are the..."
+ },
+ {
+  "start": 1146.97,
+  "end": 1149.89,
+  "text": "I mean some of these languages you may not have heard of just because they're"
+ },
+ {
+  "start": 1149.89,
+  "end": 1150.89,
+  "text": "old."
+ },
+ {
+  "start": 1150.89,
+  "end": 1151.89,
+  "text": "Yeah."
+ },
+ {
+  "start": 1151.89,
+  "end": 1155.51,
+  "text": "fashion decades ago, like Pascal, for example, right?"
+ },
+ {
+  "start": 1155.51,
+  "end": 1159.97,
+  "text": "But nowadays, a lot of people use Python, right?"
+ },
+ {
+  "start": 1159.97,
+  "end": 1163.25,
+  "text": "Back then, Python hadn't even been invented yet, okay?"
+ },
+ {
+  "start": 1163.25,
+  "end": 1164.25,
+  "text": "But, you know, I was-"
+ },
+ {
+  "start": 1164.25,
+  "end": 1165.89,
+  "text": "That was in the 19th-"
+ },
+ {
+  "start": 1165.89,
+  "end": 1168.21,
+  "text": "Yeah, this was, no, this was the 90s."
+ },
+ {
+  "start": 1168.21,
+  "end": 1169.37,
+  "text": "This was the 90s."
+ },
+ {
+  "start": 1169.37,
+  "end": 1174.37,
+  "text": "And so the question was,"
+ },
+ {
+  "start": 1175.09,
+  "end": 1180.09,
+  "text": "could someday someone make a new programming language"
+ },
+ {
+  "start": 1180.09,
+  "end": 1184.25,
+  "text": "programming language that would let you create a game that just never could be"
+ },
+ {
+  "start": 1184.25,
+  "end": 1190.05,
+  "text": "created in our existing languages for some fundamental reason right and so it"
+ },
+ {
+  "start": 1190.05,
+  "end": 1194.45,
+  "text": "was really a further revelation to me when I learned of something called the"
+ },
+ {
+  "start": 1194.45,
+  "end": 1198.77,
+  "text": "church touring thesis right and this was what Alan touring you know they"
+ },
+ {
+  "start": 1198.77,
+  "end": 1202.77,
+  "text": "sort of founder of computer science you know and his friends figured out"
+ },
+ {
+  "start": 1202.77,
+  "end": 1207.09,
+  "text": "back in the 1930s and it basically says that once you have enough"
+ },
+ {
+  "start": 1207.09,
+  "end": 1214.25,
+  "text": "functionality in your computer, you know, so you have the ability to do, you know,"
+ },
+ {
+  "start": 1214.25,
+  "end": 1219.77,
+  "text": "if-then, you know, conditionals, go into loops, right, you know, branch, you know,"
+ },
+ {
+  "start": 1219.77,
+  "end": 1224.33,
+  "text": "based on, you know, whether there's a zero or a one written somewhere, and you"
+ },
+ {
+  "start": 1224.33,
+  "end": 1228.57,
+  "text": "can read from a memory, you can write to a memory, right, you can use more"
+ },
+ {
+  "start": 1228.57,
+  "end": 1233.09,
+  "text": "and more memory, address different parts of the memory. At this point, you've"
+ },
+ {
+  "start": 1233.09,
+  "end": 1239.25,
+  "text": "basically cross this threshold of universality, okay, and you can, at this"
+ },
+ {
+  "start": 1239.25,
+  "end": 1244.01,
+  "text": "point, you can, you know, you're what's called touring universal, so you can do"
+ },
+ {
+  "start": 1244.01,
+  "end": 1248.53,
+  "text": "anything that could be done in any other programming language that we know,"
+ },
+ {
+  "start": 1248.53,
+  "end": 1253.21,
+  "text": "right, and the only questions are now just how much time do you have, how much"
+ },
+ {
+  "start": 1253.21,
+  "end": 1258.29,
+  "text": "memory do you have, right, so you could say like ever since the 30s and 40s,"
+ },
+ {
+  "start": 1258.29,
+  "end": 1262.93,
+  "text": "you know, our computers have gotten exponentially more powerful, right, but"
+ },
+ {
+  "start": 1262.93,
+  "end": 1269.45,
+  "text": "But they've gotten more powerful simply because they get faster and faster, and they get more"
+ },
+ {
+  "start": 1269.45,
+  "end": 1274.45,
+  "text": "and more memory, and we get more and more of them, but that's it."
+ },
+ {
+  "start": 1274.45,
+  "end": 1282.33,
+  "text": "The basic principles of how they operate haven't changed at all, and so that was really huge."
+ },
+ {
+  "start": 1282.33,
+  "end": 1284.09,
+  "text": "So the quantity is just..."
+ },
+ {
+  "start": 1284.09,
+  "end": 1285.09,
+  "text": "Yes, right."
+ },
+ {
+  "start": 1285.09,
+  "end": 1288.49,
+  "text": "It's like the quantity has been going up exponentially."
+ },
+ {
+  "start": 1288.49,
+  "end": 1290.37,
+  "text": "You know, that's Moore's law, right?"
+ },
+ {
+  "start": 1290.37,
+  "end": 1292.45,
+  "text": "That, you know, computing power,"
+ },
+ {
+  "start": 1292.45,
+  "end": 1294.33,
+  "text": "under all different ways of measuring it,"
+ },
+ {
+  "start": 1294.33,
+  "end": 1296.73,
+  "text": "has been doubling, you know, every 18 months,"
+ },
+ {
+  "start": 1296.73,
+  "end": 1299.57,
+  "text": "or every two years, or, you know, something like that."
+ },
+ {
+  "start": 1299.57,
+  "end": 1300.85,
+  "text": "And, you know, that's been true,"
+ },
+ {
+  "start": 1300.85,
+  "end": 1304.13,
+  "text": "basically, from the 1950s until today, right?"
+ },
+ {
+  "start": 1304.13,
+  "end": 1307.35,
+  "text": "And that has really been the force that has powered,"
+ },
+ {
+  "start": 1307.35,
+  "end": 1309.61,
+  "text": "you know, most of the technological change"
+ },
+ {
+  "start": 1309.61,
+  "end": 1311.41,
+  "text": "that we've seen over that time, right?"
+ },
+ {
+  "start": 1311.41,
+  "end": 1314.41,
+  "text": "That's what got us from the ENIAC and so forth,"
+ },
+ {
+  "start": 1314.41,
+  "end": 1316.69,
+  "text": "you know, to the iPhone, you know,"
+ },
+ {
+  "start": 1316.69,
+  "end": 1321.49,
+  "text": "and now to the data centers that run CHAT, GPT, and CLAWD,"
+ },
+ {
+  "start": 1321.49,
+  "end": 1326.93,
+  "text": "and so forth, so much of it has just been this Moore's Law."
+ },
+ {
+  "start": 1326.93,
+  "end": 1330.93,
+  "text": "But in some sense, it's all just been the same slug"
+ },
+ {
+  "start": 1330.93,
+  "end": 1333.81,
+  "text": "to a theorist or to a mathematician."
+ },
+ {
+  "start": 1333.81,
+  "end": 1337.13,
+  "text": "It's all been the same operating principles,"
+ },
+ {
+  "start": 1337.13,
+  "end": 1339.09,
+  "text": "the same kinds of instruction sets,"
+ },
+ {
+  "start": 1339.09,
+  "end": 1342.13,
+  "text": "just more and more of it."
+ },
+ {
+  "start": 1342.13,
+  "end": 1346.73,
+  "text": "And so then that really became part of my worldview"
+ },
+ {
+  "start": 1346.73,
+  "end": 1350.65,
+  "text": "that, in some sense, even if I wanted"
+ },
+ {
+  "start": 1350.65,
+  "end": 1354.61,
+  "text": "to understand this universe, I didn't necessarily"
+ },
+ {
+  "start": 1354.61,
+  "end": 1357.29,
+  "text": "need to know that much about physics."
+ },
+ {
+  "start": 1357.29,
+  "end": 1360.53,
+  "text": "Physics is just kind of like an encoding detail."
+ },
+ {
+  "start": 1360.53,
+  "end": 1368.21,
+  "text": "Like, OK, maybe the neutrino or the muon"
+ },
+ {
+  "start": 1368.21,
+  "end": 1371.01,
+  "text": "has this mass instead of that mass."
+ },
+ {
+  "start": 1371.01,
+  "end": 1373.95,
+  "text": "But these are, no matter what the details of physics"
+ },
+ {
+  "start": 1373.95,
+  "end": 1376.85,
+  "text": "turned out to be, it would just be another"
+ },
+ {
+  "start": 1376.85,
+  "end": 1379.57,
+  "text": "touring universal programming environment."
+ },
+ {
+  "start": 1379.57,
+  "end": 1381.69,
+  "text": "So you're basically saying there's still some hope"
+ },
+ {
+  "start": 1381.69,
+  "end": 1383.93,
+  "text": "for me to become a quantum physicist one day."
+ },
+ {
+  "start": 1383.93,
+  "end": 1387.13,
+  "text": "Well, again, I'm telling the story"
+ },
+ {
+  "start": 1387.13,
+  "end": 1389.91,
+  "text": "of how I kind of got to it from the side door."
+ },
+ {
+  "start": 1389.91,
+  "end": 1393.37,
+  "text": "I mean, I did take some physics in college,"
+ },
+ {
+  "start": 1393.37,
+  "end": 1397.61,
+  "text": "but in physics, things go very, very quickly"
+ },
+ {
+  "start": 1397.61,
+  "end": 1401.53,
+  "text": "to doing calculations with differential equations."
+ },
+ {
+  "start": 1401.53,
+  "end": 1405.05,
+  "text": "We have infinitely many degrees of freedom."
+ },
+ {
+  "start": 1405.05,
+  "end": 1408.97,
+  "text": "And then because that's too complicated,"
+ },
+ {
+  "start": 1408.97,
+  "end": 1412.33,
+  "text": "you then resort to a lot of often unjustified"
+ },
+ {
+  "start": 1412.33,
+  "end": 1413.93,
+  "text": "approximations."
+ },
+ {
+  "start": 1413.93,
+  "end": 1417.13,
+  "text": "And people get really, really, really good at that."
+ },
+ {
+  "start": 1417.13,
+  "end": 1419.85,
+  "text": "But that was just never the kind of math"
+ },
+ {
+  "start": 1419.85,
+  "end": 1421.13,
+  "text": "that resonated for me."
+ },
+ {
+  "start": 1421.13,
+  "end": 1424.33,
+  "text": "I just wanted everything to be well-defined."
+ },
+ {
+  "start": 1424.33,
+  "end": 1427.25,
+  "text": "I liked it when things were finite,"
+ },
+ {
+  "start": 1427.25,
+  "end": 1429.93,
+  "text": "or at least finite dimensional, right?"
+ },
+ {
+  "start": 1429.93,
+  "end": 1434.93,
+  "text": "And so I kind of kept physics at arm's length a little bit."
+ },
+ {
+  "start": 1435.69,
+  "end": 1437.97,
+  "text": "Right, and I said, okay, it's just gonna be"
+ },
+ {
+  "start": 1437.97,
+  "end": 1442.49,
+  "text": "touring equivalent anyway to things that I do know, right?"
+ },
+ {
+  "start": 1442.49,
+  "end": 1445.41,
+  "text": "And so you could say, if you really believe"
+ },
+ {
+  "start": 1445.41,
+  "end": 1447.65,
+  "text": "that the world, in some sense,"
+ },
+ {
+  "start": 1447.65,
+  "end": 1450.65,
+  "text": "might as well be a big video game,"
+ },
+ {
+  "start": 1450.65,
+  "end": 1452.85,
+  "text": "a big computer simulation, right?"
+ },
+ {
+  "start": 1452.85,
+  "end": 1456.49,
+  "text": "then do you really care about exactly what instruction set"
+ },
+ {
+  "start": 1456.49,
+  "end": 1457.33,
+  "text": "it's running on?"
+ },
+ {
+  "start": 1457.33,
+  "end": 1461.69,
+  "text": "Or if the great programmer in the sky"
+ },
+ {
+  "start": 1461.69,
+  "end": 1464.97,
+  "text": "were using Pascal versus C or something."
+ },
+ {
+  "start": 1466.75,
+  "end": 1469.09,
+  "text": "The whole point is that we know that all these things"
+ },
+ {
+  "start": 1469.09,
+  "end": 1471.69,
+  "text": "can emulate each other, right?"
+ },
+ {
+  "start": 1471.69,
+  "end": 1474.73,
+  "text": "But then it was really a further revelation"
+ },
+ {
+  "start": 1474.73,
+  "end": 1476.93,
+  "text": "when I found out about quantum computing."
+ },
+ {
+  "start": 1476.93,
+  "end": 1479.53,
+  "text": "So this was the mid-90s,"
+ },
+ {
+  "start": 1479.53,
+  "end": 1481.37,
+  "text": "which was when sort of the most famous"
+ },
+ {
+  "start": 1481.37,
+  "end": 1487.85,
+  "text": "quantum algorithms were discovered, like Shor's algorithm for factoring, Grover's algorithm"
+ },
+ {
+  "start": 1487.85,
+  "end": 1489.21,
+  "text": "for search."
+ },
+ {
+  "start": 1489.21,
+  "end": 1495.77,
+  "text": "And so I read popular articles about these things, you know, in 1995 or 96, and, you"
+ },
+ {
+  "start": 1495.77,
+  "end": 1501.41,
+  "text": "know, the popular articles kind of mis-explained it, you know, the same way that they often"
+ },
+ {
+  "start": 1501.41,
+  "end": 1505.73,
+  "text": "still mis-explain it 30 years later, right, which is, you know, what they always want"
+ },
+ {
+  "start": 1505.73,
+  "end": 1511.29,
+  "text": "to say is well a quantum computer would just be able to try every possible"
+ },
+ {
+  "start": 1511.29,
+  "end": 1515.51,
+  "text": "solution at once right and that's what would let it solve all these difficult"
+ },
+ {
+  "start": 1515.51,
+  "end": 1520.73,
+  "text": "problems exponentially faster than a classical computer right and I remember"
+ },
+ {
+  "start": 1520.73,
+  "end": 1524.17,
+  "text": "reading that you know as a teenager and I remember thinking you know this"
+ },
+ {
+  "start": 1524.17,
+  "end": 1528.49,
+  "text": "sounds like garbage this sounds like you know physicists who just don't"
+ },
+ {
+  "start": 1528.49,
+  "end": 1532.09,
+  "text": "understand what they're up against like they don't understand you know"
+ },
+ {
+  "start": 1532.09,
+  "end": 1535.57,
+  "text": "the limits of Turing computation."
+ },
+ {
+  "start": 1535.57,
+  "end": 1539.57,
+  "text": "But of course, to be sure, I had to learn something"
+ },
+ {
+  "start": 1539.57,
+  "end": 1543.13,
+  "text": "about what is this quantum mechanics."
+ },
+ {
+  "start": 1543.13,
+  "end": 1546.65,
+  "text": "And already in the 90s, the web was fairly new."
+ },
+ {
+  "start": 1546.65,
+  "end": 1550.85,
+  "text": "But there were web pages explaining quantum computing,"
+ },
+ {
+  "start": 1550.85,
+  "end": 1554.05,
+  "text": "explaining these quantum algorithms that had just"
+ },
+ {
+  "start": 1554.05,
+  "end": 1555.09,
+  "text": "been discovered."
+ },
+ {
+  "start": 1555.09,
+  "end": 1558.69,
+  "text": "So I read them, and I read the early quantum computing"
+ },
+ {
+  "start": 1558.69,
+  "end": 1559.73,
+  "text": "papers."
+ },
+ {
+  "start": 1559.73,
+  "end": 1565.25,
+  "text": "And it was amazing to me just how little physics"
+ },
+ {
+  "start": 1565.25,
+  "end": 1568.05,
+  "text": "I needed to know to learn this."
+ },
+ {
+  "start": 1568.05,
+  "end": 1571.53,
+  "text": "It's just vectors and matrices."
+ },
+ {
+  "start": 1571.53,
+  "end": 1574.01,
+  "text": "It's just linear algebra."
+ },
+ {
+  "start": 1574.01,
+  "end": 1576.97,
+  "text": "OK, you have to know what a complex number is."
+ },
+ {
+  "start": 1576.97,
+  "end": 1578.65,
+  "text": "You have to know what a matrix is."
+ },
+ {
+  "start": 1578.65,
+  "end": 1583.29,
+  "text": "But I knew enough math that I knew those things."
+ },
+ {
+  "start": 1583.29,
+  "end": 1590.57,
+  "text": "And then just like you could have a virtuoso programmer who"
+ },
+ {
+  "start": 1590.57,
+  "end": 1594.53,
+  "text": "has no idea how a transistor works"
+ },
+ {
+  "start": 1594.53,
+  "end": 1597.33,
+  "text": "or what is actually going on at the hardware"
+ },
+ {
+  "start": 1597.33,
+  "end": 1601.85,
+  "text": "level of the machine, the whole point of modern computer"
+ },
+ {
+  "start": 1601.85,
+  "end": 1605.73,
+  "text": "science is that we create these abstraction boundaries."
+ },
+ {
+  "start": 1605.73,
+  "end": 1611.41,
+  "text": "So you can think entirely in terms of your Python code"
+ },
+ {
+  "start": 1611.41,
+  "end": 1616.21,
+  "text": "Or maybe you descend to a lower level of the assembly code."
+ },
+ {
+  "start": 1616.21,
+  "end": 1620.25,
+  "text": "But to be a programmer, you don't"
+ },
+ {
+  "start": 1620.25,
+  "end": 1623.69,
+  "text": "have to know how to build a transistor."
+ },
+ {
+  "start": 1623.69,
+  "end": 1626.01,
+  "text": "That's someone else's problem."
+ },
+ {
+  "start": 1626.01,
+  "end": 1629.33,
+  "text": "And it's the same way with quantum computing."
+ },
+ {
+  "start": 1629.33,
+  "end": 1631.47,
+  "text": "The engineers and physicists are still"
+ },
+ {
+  "start": 1631.47,
+  "end": 1633.81,
+  "text": "trying to solve the problem of how do we actually"
+ },
+ {
+  "start": 1633.81,
+  "end": 1636.77,
+  "text": "make these qubits work at scale."
+ },
+ {
+  "start": 1636.77,
+  "end": 1639.65,
+  "text": "They've made an enormous amount of progress on it."
+ },
+ {
+  "start": 1639.65,
+  "end": 1643.43,
+  "text": "since I was first reading about this 30 years ago."
+ },
+ {
+  "start": 1643.43,
+  "end": 1646.33,
+  "text": "They're still not where we want to be."
+ },
+ {
+  "start": 1646.33,
+  "end": 1650.57,
+  "text": "But in the meantime, we are perfectly free to say,"
+ },
+ {
+  "start": 1650.57,
+  "end": 1653.69,
+  "text": "well, assume that you have perfect qubits."
+ },
+ {
+  "start": 1653.69,
+  "end": 1656.41,
+  "text": "Then that would lead to sort of a new model"
+ },
+ {
+  "start": 1656.41,
+  "end": 1661.21,
+  "text": "of what is efficiently computable."
+ },
+ {
+  "start": 1661.21,
+  "end": 1664.77,
+  "text": "And it turns out, so you could ask,"
+ },
+ {
+  "start": 1664.77,
+  "end": 1668.45,
+  "text": "so does quantum mechanics overturn this church"
+ },
+ {
+  "start": 1668.45,
+  "end": 1676.13,
+  "text": "thesis that I was talking about before, does it actually change the answer to what is computable?"
+ },
+ {
+  "start": 1676.13,
+  "end": 1682.09,
+  "text": "It's a subtle story, because in terms of what can be computed at all, like in any amount"
+ },
+ {
+  "start": 1682.09,
+  "end": 1685.93,
+  "text": "of time, quantum mechanics doesn't change that at all."
+ },
+ {
+  "start": 1685.93,
+  "end": 1691.65,
+  "text": "It's the same set of computable functions that we had before, and this is because"
+ },
+ {
+  "start": 1691.65,
+  "end": 1697.93,
+  "text": "anything you could do with a quantum computer, you could eventually do with a classical computer."
+ },
+ {
+  "start": 1697.93,
+  "end": 1703.01,
+  "text": "But in terms of what can be done in a reasonable amount of time, or let's say with reasonable"
+ },
+ {
+  "start": 1703.01,
+  "end": 1709.81,
+  "text": "scaling like, you know, in a few minutes or maybe a few days, but not like longer than"
+ },
+ {
+  "start": 1709.81,
+  "end": 1717.17,
+  "text": "the age of the universe, right, quantum computing really does seem to change that."
+ },
+ {
+  "start": 1717.17,
+  "end": 1722.73,
+  "text": "And it changes it in a sort of weirder way than any science fiction writer would"
+ },
+ {
+  "start": 1722.73,
+  "end": 1725.65,
+  "text": "have had the imagination to invent, right?"
+ },
+ {
+  "start": 1725.65,
+  "end": 1728.13,
+  "text": "It changed, basically, quantum mechanics,"
+ },
+ {
+  "start": 1728.13,
+  "end": 1732.73,
+  "text": "which we learned 100 years ago, literally 1926"
+ },
+ {
+  "start": 1732.73,
+  "end": 1735.69,
+  "text": "was when Schrodinger wrote down his equation."
+ },
+ {
+  "start": 1735.69,
+  "end": 1738.69,
+  "text": "And it hasn't changed in all that time."
+ },
+ {
+  "start": 1738.69,
+  "end": 1743.21,
+  "text": "It's been sort of the basic language of physics"
+ },
+ {
+  "start": 1743.21,
+  "end": 1748.17,
+  "text": "for a century now, arguably the most successful theory"
+ },
+ {
+  "start": 1748.17,
+  "end": 1751.25,
+  "text": "in the history of science."
+ },
+ {
+  "start": 1751.25,
+  "end": 1754.53,
+  "text": "But also, famously, maybe the weirdest thing"
+ },
+ {
+  "start": 1754.53,
+  "end": 1756.41,
+  "text": "that science ever discovered."
+ },
+ {
+  "start": 1756.41,
+  "end": 1760.41,
+  "text": "Because at its core, quantum mechanics"
+ },
+ {
+  "start": 1760.41,
+  "end": 1764.49,
+  "text": "is a change to the rules of probability themselves."
+ },
+ {
+  "start": 1764.49,
+  "end": 1767.61,
+  "text": "And it replaced it."
+ },
+ {
+  "start": 1767.61,
+  "end": 1773.25,
+  "text": "In normal life, we could talk about numbers from 0 to 1"
+ },
+ {
+  "start": 1773.25,
+  "end": 1777.85,
+  "text": "that quantify, I think this person has a 30% chance"
+ },
+ {
+  "start": 1777.85,
+  "end": 1781.05,
+  "text": "to win this election or an 80% chance."
+ },
+ {
+  "start": 1781.05,
+  "end": 1783.73,
+  "text": "I would never say a negative 30% chance."
+ },
+ {
+  "start": 1783.73,
+  "end": 1785.07,
+  "text": "That would be nonsense."
+ },
+ {
+  "start": 1785.07,
+  "end": 1789.27,
+  "text": "And even less would I say a square root of minus 1% chance."
+ },
+ {
+  "start": 1789.27,
+  "end": 1792.35,
+  "text": "But in quantum mechanics, I have to give every possibility"
+ },
+ {
+  "start": 1792.35,
+  "end": 1794.31,
+  "text": "a number called an amplitude."
+ },
+ {
+  "start": 1794.31,
+  "end": 1799.55,
+  "text": "These amplitudes can be positive or negative, or even complex numbers."
+ },
+ {
+  "start": 1799.55,
+  "end": 1802.03,
+  "text": "And so then there's a whole new calculus"
+ },
+ {
+  "start": 1802.03,
+  "end": 1806.91,
+  "text": "for how you deal with these amplitudes, how they evolve in time."
+ },
+ {
+  "start": 1806.91,
+  "end": 1808.95,
+  "text": "They can cancel each other out."
+ },
+ {
+  "start": 1808.95,
+  "end": 1812.55,
+  "text": "So if something can happen one way with a positive amplitude"
+ },
+ {
+  "start": 1812.55,
+  "end": 1814.89,
+  "text": "and a different way with a negative amplitude,"
+ },
+ {
+  "start": 1814.89,
+  "end": 1817.11,
+  "text": "then the total amplitude could be zero,"
+ },
+ {
+  "start": 1817.11,
+  "end": 1819.23,
+  "text": "so that the thing never happens at all."
+ },
+ {
+  "start": 1819.23,
+  "end": 1822.23,
+  "text": "This is called quantum interference."
+ },
+ {
+  "start": 1822.23,
+  "end": 1825.43,
+  "text": "And then there's a rule for what happens when you look,"
+ },
+ {
+  "start": 1825.43,
+  "end": 1826.87,
+  "text": "when you make a measurement."
+ },
+ {
+  "start": 1826.87,
+  "end": 1829.59,
+  "text": "And then these amplitudes turn into"
+ },
+ {
+  "start": 1829.59,
+  "end": 1831.39,
+  "text": "ordinary probabilities,"
+ },
+ {
+  "start": 1831.39,
+  "end": 1834.23,
+  "text": "that you'll see one thing versus another thing."
+ },
+ {
+  "start": 1834.23,
+  "end": 1837.15,
+  "text": "But the way that we calculate those probabilities"
+ },
+ {
+  "start": 1837.15,
+  "end": 1838.79,
+  "text": "is now totally different"
+ },
+ {
+  "start": 1838.79,
+  "end": 1842.03,
+  "text": "from anything in our everyday experience."
+ },
+ {
+  "start": 1842.03,
+  "end": 1845.99,
+  "text": "So that's basically what quantum mechanics is all about."
+ },
+ {
+  "start": 1845.99,
+  "end": 1848.67,
+  "text": "And no one had ever explained that to me."
+ },
+ {
+  "start": 1848.67,
+  "end": 1853.15,
+  "text": "I had read popular books, and they said all kinds of things."
+ },
+ {
+  "start": 1853.15,
+  "end": 1855.23,
+  "text": "Quantum mechanics is weird."
+ },
+ {
+  "start": 1855.23,
+  "end": 1858.39,
+  "text": "It says particles are not in any one place."
+ },
+ {
+  "start": 1858.39,
+  "end": 1861.91,
+  "text": "They're in a kind of smear of probability wave."
+ },
+ {
+  "start": 1861.91,
+  "end": 1864.19,
+  "text": "And I would read that, and I would be like,"
+ },
+ {
+  "start": 1864.19,
+  "end": 1866.07,
+  "text": "well, isn't that just a fancy way of saying"
+ },
+ {
+  "start": 1866.07,
+  "end": 1867.83,
+  "text": "that you don't know where the particle is?"
+ },
+ {
+  "start": 1867.83,
+  "end": 1869.43,
+  "text": "I mean, this is exactly."
+ },
+ {
+  "start": 1869.43,
+  "end": 1871.71,
+  "text": "I think at some point you just have to come out with it"
+ },
+ {
+  "start": 1871.71,
+  "end": 1874.83,
+  "text": "and say, look, it's about these amplitudes."
+ },
+ {
+  "start": 1874.83,
+  "end": 1877.81,
+  "text": "It's about this change to the rules of probability."
+ },
+ {
+  "start": 1877.81,
+  "end": 1880.45,
+  "text": "So that's what I learned when I started reading"
+ },
+ {
+  "start": 1880.45,
+  "end": 1882.59,
+  "text": "about quantum computing as a teenager."
+ },
+ {
+  "start": 1882.59,
+  "end": 1885.61,
+  "text": "And you know, that's how I got into it."
+ },
+ {
+  "start": 1885.61,
+  "end": 1888.09,
+  "text": "Yeah, I think this is the very first prop explanation"
+ },
+ {
+  "start": 1888.09,
+  "end": 1890.53,
+  "text": "I got about quantum physics."
+ },
+ {
+  "start": 1890.53,
+  "end": 1893.07,
+  "text": "And you mentioned ChetGPT."
+ },
+ {
+  "start": 1893.07,
+  "end": 1895.73,
+  "text": "So fast forward in your career,"
+ },
+ {
+  "start": 1895.73,
+  "end": 1898.59,
+  "text": "you also worked two years at ChetGPT,"
+ },
+ {
+  "start": 1898.59,
+  "end": 1903.59,
+  "text": "at OpenAI on the foundations of AI safety."
+ },
+ {
+  "start": 1904.23,
+  "end": 1906.07,
+  "text": "What exactly was your job there?"
+ },
+ {
+  "start": 1906.07,
+  "end": 1908.11,
+  "text": "All right, so yes."
+ },
+ {
+  "start": 1908.11,
+  "end": 1909.63,
+  "text": "Now we're getting to the juicy stuff."
+ },
+ {
+  "start": 1909.63,
+  "end": 1913.71,
+  "text": "Yeah, yeah, and this is a big fast forward,"
+ },
+ {
+  "start": 1913.71,
+  "end": 1918.71,
+  "text": "but no, I could say actually I got into"
+ },
+ {
+  "start": 1919.87,
+  "end": 1921.87,
+  "text": "quantum computing in the late 90s"
+ },
+ {
+  "start": 1921.87,
+  "end": 1925.95,
+  "text": "when I was still an undergrad at Cornell,"
+ },
+ {
+  "start": 1925.95,
+  "end": 1933.07,
+  "text": "But, you know, I still wasn't sure whether I would ever be able to do anything original"
+ },
+ {
+  "start": 1933.07,
+  "end": 1934.07,
+  "text": "in that, right?"
+ },
+ {
+  "start": 1934.07,
+  "end": 1940.83,
+  "text": "And I was also very, very interested at the time in AI and machine learning, right?"
+ },
+ {
+  "start": 1940.83,
+  "end": 1946.35,
+  "text": "Which were another, you know, big part of computer science and, you know, where clearly"
+ },
+ {
+  "start": 1946.35,
+  "end": 1948.51,
+  "text": "exciting things were happening."
+ },
+ {
+  "start": 1948.51,
+  "end": 1953.83,
+  "text": "And, you know, already then I could see like this, you know, this AI stuff probably"
+ },
+ {
+  "start": 1953.83,
+  "end": 1958.27,
+  "text": "it will impact the real world on a shorter time scale than quantum computing."
+ },
+ {
+  "start": 1958.27,
+  "end": 1959.35,
+  "text": "When was that?"
+ },
+ {
+  "start": 1959.35,
+  "end": 1960.35,
+  "text": "This was the late 90s."
+ },
+ {
+  "start": 1960.35,
+  "end": 1961.35,
+  "text": "Oh, wow."
+ },
+ {
+  "start": 1961.35,
+  "end": 1962.35,
+  "text": "Yeah, yeah, yeah."
+ },
+ {
+  "start": 1962.35,
+  "end": 1963.35,
+  "text": "AI was a thing already?"
+ },
+ {
+  "start": 1963.35,
+  "end": 1969.11,
+  "text": "I mean, the term AI was coined in 1956, right?"
+ },
+ {
+  "start": 1969.11,
+  "end": 1978.03,
+  "text": "So there's this whole prehistory of, you know, Marvin Minsky and, you know, all"
+ },
+ {
+  "start": 1978.03,
+  "end": 1983.75,
+  "text": "these actually, you know, very great thinkers, right?"
+ },
+ {
+  "start": 1983.75,
+  "end": 1988.27,
+  "text": "but you know they spent an enormous amount of time on approaches that"
+ },
+ {
+  "start": 1988.27,
+  "end": 1993.31,
+  "text": "didn't really work right and you know and again and again they felt like okay"
+ },
+ {
+  "start": 1993.31,
+  "end": 1997.79,
+  "text": "if we could just introspect enough and if we could just understand the nature"
+ },
+ {
+  "start": 1997.79,
+  "end": 2001.79,
+  "text": "of our own cognition you know then we could figure out how to just describe"
+ },
+ {
+  "start": 2001.79,
+  "end": 2006.15,
+  "text": "it to a machine and you know actually John McCarthy who was another of the"
+ },
+ {
+  "start": 2006.15,
+  "end": 2010.35,
+  "text": "pioneers of AI said like if we ever figure it out you know how much"
+ },
+ {
+  "start": 2010.35,
+  "end": 2016.29,
+  "text": "computing power you have will be totally irrelevant. We could run a human level AI"
+ },
+ {
+  "start": 2016.29,
+  "end": 2022.83,
+  "text": "on the computers from the 60s, okay? And what no one wanted to believe was that"
+ },
+ {
+  "start": 2022.83,
+  "end": 2027.99,
+  "text": "it would just be a matter of getting a massive amount of computer power and"
+ },
+ {
+  "start": 2027.99,
+  "end": 2032.15,
+  "text": "feeding in a massive amount of training data and then it would all"
+ },
+ {
+  "start": 2032.15,
+  "end": 2036.55,
+  "text": "just start to work for some, you know, totally inscrutable reason, right?"
+ },
+ {
+  "start": 2036.55,
+  "end": 2041.89,
+  "text": "That hypothesis was around, okay, but it was just too ugly to take seriously"
+ },
+ {
+  "start": 2042.55,
+  "end": 2047.61,
+  "text": "Right. No one wanted hardly anyone wanted that to be true, right?"
+ },
+ {
+  "start": 2047.61,
+  "end": 2050.41,
+  "text": "And and also they didn't believe it was true, right?"
+ },
+ {
+  "start": 2050.41,
+  "end": 2055.79,
+  "text": "It just it just seemed like magical thinking so when the real breakthrough happened with well again"
+ },
+ {
+  "start": 2055.79,
+  "end": 2058.51,
+  "text": "You know, it wasn't so much a kid. Okay"
+ },
+ {
+  "start": 2058.51,
+  "end": 2065.15,
+  "text": "I mean you could say the conceptual breakthroughs right those have already happened like the 1970s the 1980s"
+ },
+ {
+  "start": 2065.15,
+  "end": 2070.47,
+  "text": "right, people had the idea of neural networks, you know, already then, okay?"
+ },
+ {
+  "start": 2070.47,
+  "end": 2074.03,
+  "text": "You know, when people talk about deep learning today, that's just a rebranding"
+ },
+ {
+  "start": 2074.03,
+  "end": 2079.11,
+  "text": "of neural networks, okay? You know, we're talking about the same thing, okay? So"
+ },
+ {
+  "start": 2079.11,
+  "end": 2083.75,
+  "text": "people, you know, neural nets go back, I mean, you know, actually they"
+ },
+ {
+  "start": 2083.75,
+  "end": 2088.03,
+  "text": "originated in the 1940s, and then it becomes something called the Perceptron"
+ },
+ {
+  "start": 2088.03,
+  "end": 2092.83,
+  "text": "in the 1960s, and then, you know, by the 1980s, you know, you have people"
+ },
+ {
+  "start": 2092.83,
+  "end": 2097.63,
+  "text": "actually, you know, training multilayer neural nets. So in some sense they have"
+ },
+ {
+  "start": 2097.63,
+  "end": 2103.15,
+  "text": "all the right ideas. You know, what they don't have is nearly enough computer"
+ },
+ {
+  "start": 2103.15,
+  "end": 2108.59,
+  "text": "power or training data, right? You know, and like they're short by"
+ },
+ {
+  "start": 2108.59,
+  "end": 2113.35,
+  "text": "like factors of millions, right? And so it looks like, you know, these are"
+ },
+ {
+  "start": 2113.35,
+  "end": 2119.35,
+  "text": "just kind of not-so-great ideas that don't really work, right? That, you"
+ },
+ {
+  "start": 2119.35,
+  "end": 2121.85,
+  "text": "you know, that was how it seemed at the time, right?"
+ },
+ {
+  "start": 2121.85,
+  "end": 2124.59,
+  "text": "And you had to be like, you know, in some sense,"
+ },
+ {
+  "start": 2124.59,
+  "end": 2127.95,
+  "text": "a really crazy person to say, no, you know, just you wait."
+ },
+ {
+  "start": 2127.95,
+  "end": 2130.67,
+  "text": "If you scale up this non-working idea"
+ },
+ {
+  "start": 2130.67,
+  "end": 2132.35,
+  "text": "by a factor of millions,"
+ },
+ {
+  "start": 2132.35,
+  "end": 2135.99,
+  "text": "then suddenly it's going to start working, okay?"
+ },
+ {
+  "start": 2135.99,
+  "end": 2137.87,
+  "text": "A few people said that, okay?"
+ },
+ {
+  "start": 2137.87,
+  "end": 2140.39,
+  "text": "But you know, now here we are, you know,"
+ },
+ {
+  "start": 2141.63,
+  "end": 2144.63,
+  "text": "some decades later, and I think it's safe to say,"
+ },
+ {
+  "start": 2144.63,
+  "end": 2145.79,
+  "text": "that is what happened."
+ },
+ {
+  "start": 2145.79,
+  "end": 2153.23,
+  "text": "Where would you, if you trace it back, what would you say, when did the breakthrough happen?"
+ },
+ {
+  "start": 2153.23,
+  "end": 2159.51,
+  "text": "Well, okay, so again, you're looking for a conceptual breakthrough that I'm telling you was not there, right?"
+ },
+ {
+  "start": 2159.51,
+  "end": 2169.67,
+  "text": "I mean, there was a, you could say that there were conceptual breakthroughs back in the 40s, the 60s, 70s and 80s"
+ },
+ {
+  "start": 2169.67,
+  "end": 2172.95,
+  "text": "and coming up with these neural nets, figuring out how to train them."
+ },
+ {
+  "start": 2172.95,
+  "end": 2178.31,
+  "text": "But then, you know, they still didn't work for decades because it turns out that to get"
+ },
+ {
+  "start": 2178.31,
+  "end": 2184.19,
+  "text": "an impressive result, you needed, you know, a neural net with billions of neurons, right?"
+ },
+ {
+  "start": 2184.19,
+  "end": 2189.47,
+  "text": "And you needed an amount of training data that was, like, on the scale of, like, all"
+ },
+ {
+  "start": 2189.47,
+  "end": 2193.07,
+  "text": "the stuff on the entire internet, right?"
+ },
+ {
+  "start": 2193.07,
+  "end": 2197.51,
+  "text": "You know, and then at that point, it starts showing all this human-level intelligence,"
+ },
+ {
+  "start": 2197.51,
+  "end": 2198.51,
+  "text": "right?"
+ },
+ {
+  "start": 2198.51,
+  "end": 2199.51,
+  "text": "But not before that."
+ },
+ {
+  "start": 2199.51,
+  "end": 2200.51,
+  "text": "Okay."
+ },
+ {
+  "start": 2200.51,
+  "end": 2201.51,
+  "text": "I see."
+ },
+ {
+  "start": 2201.51,
+  "end": 2202.51,
+  "text": "I see."
+ },
+ {
+  "start": 2202.51,
+  "end": 2208.41,
+  "text": "And this was so weird that again, when I started in computer science, almost no one"
+ },
+ {
+  "start": 2208.41,
+  "end": 2209.99,
+  "text": "would have expected this was possible."
+ },
+ {
+  "start": 2209.99,
+  "end": 2214.43,
+  "text": "It was obvious to everyone that you would need some further breakthrough."
+ },
+ {
+  "start": 2214.43,
+  "end": 2220.79,
+  "text": "But no, mostly it was just massively more computer power and data."
+ },
+ {
+  "start": 2220.79,
+  "end": 2225.51,
+  "text": "What was your job at OpenAI?"
+ },
+ {
+  "start": 2225.51,
+  "end": 2231.55,
+  "text": "So after choosing not to go into AI, choosing"
+ },
+ {
+  "start": 2231.55,
+  "end": 2239.71,
+  "text": "to go into quantum computing back in 2000,"
+ },
+ {
+  "start": 2239.71,
+  "end": 2245.23,
+  "text": "even though AI seemed exciting, it seemed like all the progress"
+ },
+ {
+  "start": 2245.23,
+  "end": 2250.03,
+  "text": "that people were making was almost entirely empirical."
+ },
+ {
+  "start": 2250.03,
+  "end": 2254.63,
+  "text": "First of all, of course, it didn't work then, nearly like it works today."
+ },
+ {
+  "start": 2254.63,
+  "end": 2257.11,
+  "text": "But even to the extent that it did work,"
+ },
+ {
+  "start": 2257.11,
+  "end": 2259.95,
+  "text": "no one really understood why it worked."
+ },
+ {
+  "start": 2259.95,
+  "end": 2263.01,
+  "text": "It's like you could write papers with some bar charts"
+ },
+ {
+  "start": 2263.01,
+  "end": 2268.19,
+  "text": "in them that says, OK, we tried this machine learning"
+ },
+ {
+  "start": 2268.19,
+  "end": 2271.39,
+  "text": "method on this benchmark suite,"
+ },
+ {
+  "start": 2271.39,
+  "end": 2272.67,
+  "text": "and here were the results."
+ },
+ {
+  "start": 2272.67,
+  "end": 2276.59,
+  "text": "And doing this made it 20% more accurate."
+ },
+ {
+  "start": 2276.59,
+  "end": 2281.79,
+  "text": "But I like to sit back and really, really understand"
+ },
+ {
+  "start": 2281.79,
+  "end": 2284.15,
+  "text": "why something is working."
+ },
+ {
+  "start": 2284.15,
+  "end": 2287.95,
+  "text": "And so I found more of that in quantum computing."
+ },
+ {
+  "start": 2287.95,
+  "end": 2292.31,
+  "text": "But then in the decades that I was not an AI, of course,"
+ },
+ {
+  "start": 2292.31,
+  "end": 2296.07,
+  "text": "it did get better and better, driven in large part"
+ },
+ {
+  "start": 2296.07,
+  "end": 2300.75,
+  "text": "by these massive advances, massive increases"
+ },
+ {
+  "start": 2300.75,
+  "end": 2304.87,
+  "text": "that we got in computing power and data."
+ },
+ {
+  "start": 2304.87,
+  "end": 2306.67,
+  "text": "There were some new ideas."
+ },
+ {
+  "start": 2306.67,
+  "end": 2311.19,
+  "text": "So there was a particular architecture for neural nets"
+ },
+ {
+  "start": 2311.19,
+  "end": 2315.15,
+  "text": "that was invented in 2017 called the transformer, okay?"
+ },
+ {
+  "start": 2315.15,
+  "end": 2318.39,
+  "text": "And that was a big enabler for everything that happened."
+ },
+ {
+  "start": 2318.39,
+  "end": 2322.27,
+  "text": "So if you had to pick a breakthrough that was recent,"
+ },
+ {
+  "start": 2322.27,
+  "end": 2326.11,
+  "text": "you could have picked the transformer in 2017,"
+ },
+ {
+  "start": 2326.11,
+  "end": 2328.11,
+  "text": "which came out of a team at Google."
+ },
+ {
+  "start": 2328.11,
+  "end": 2329.51,
+  "text": "Now, my guess is-"
+ },
+ {
+  "start": 2329.51,
+  "end": 2332.43,
+  "text": "Which is the T in GPT, by the way."
+ },
+ {
+  "start": 2332.43,
+  "end": 2333.67,
+  "text": "Yeah, that's right."
+ },
+ {
+  "start": 2333.67,
+  "end": 2336.49,
+  "text": "It's a generative pre-trained transformer."
+ },
+ {
+  "start": 2336.49,
+  "end": 2337.83,
+  "text": "That's right."
+ },
+ {
+  "start": 2337.83,
+  "end": 2341.67,
+  "text": "It's referring to this just particular type of neural net."
+ },
+ {
+  "start": 2341.67,
+  "end": 2344.13,
+  "text": "Now my best guess is that if the transformer"
+ },
+ {
+  "start": 2344.13,
+  "end": 2346.91,
+  "text": "hadn't been invented, it would have been a few more years"
+ },
+ {
+  "start": 2346.91,
+  "end": 2349.11,
+  "text": "and then we would have gotten to the same place."
+ },
+ {
+  "start": 2349.11,
+  "end": 2353.03,
+  "text": "But, you know, but that did accelerate things, okay?"
+ },
+ {
+  "start": 2353.03,
+  "end": 2358.03,
+  "text": "So anyway, so I was aware that, you know,"
+ },
+ {
+  "start": 2358.27,
+  "end": 2361.35,
+  "text": "some impressive things were happening in AI."
+ },
+ {
+  "start": 2361.35,
+  "end": 2365.47,
+  "text": "You know, in 2011, we saw the computer"
+ },
+ {
+  "start": 2365.47,
+  "end": 2367.95,
+  "text": "beat the human champion in Jeopardy, right?"
+ },
+ {
+  "start": 2367.95,
+  "end": 2372.71,
+  "text": "In 2016, we saw a computer beat the human champion at Go,"
+ },
+ {
+  "start": 2372.71,
+  "end": 2376.83,
+  "text": "right, and then, you know, we saw, like,"
+ },
+ {
+  "start": 2376.83,
+  "end": 2379.99,
+  "text": "some really impressive results at classifying images."
+ },
+ {
+  "start": 2380.83,
+  "end": 2383.67,
+  "text": "In 2020, in 2021, you know,"
+ },
+ {
+  "start": 2383.67,
+  "end": 2386.71,
+  "text": "almost everyone was distracted by the pandemic,"
+ },
+ {
+  "start": 2386.71,
+  "end": 2387.55,
+  "text": "but, you know, I saw, you know,"
+ },
+ {
+  "start": 2387.55,
+  "end": 2391.27,
+  "text": "there was this weird little outfit called OpenAI"
+ },
+ {
+  "start": 2391.27,
+  "end": 2395.23,
+  "text": "that was putting out this thing called GPT, right?"
+ },
+ {
+  "start": 2395.23,
+  "end": 2397.75,
+  "text": "This was before a chat GPT, right?"
+ },
+ {
+  "start": 2397.75,
+  "end": 2402.83,
+  "text": "But I was able to try out this GPT-3."
+ },
+ {
+  "start": 2402.83,
+  "end": 2404.79,
+  "text": "And I could see, yes, this really"
+ },
+ {
+  "start": 2404.79,
+  "end": 2408.71,
+  "text": "is a step change compared to anything that's come before."
+ },
+ {
+  "start": 2408.71,
+  "end": 2415.43,
+  "text": "This is not just like a sort of trivial chatbot of the type"
+ },
+ {
+  "start": 2415.43,
+  "end": 2417.91,
+  "text": "that we had since the 60s."
+ },
+ {
+  "start": 2417.91,
+  "end": 2421.99,
+  "text": "There was this thing called ELISA that just basically"
+ },
+ {
+  "start": 2421.99,
+  "end": 2425.67,
+  "text": "just sort of rephrases whatever you say to it, right?"
+ },
+ {
+  "start": 2425.67,
+  "end": 2428.41,
+  "text": "And so it's like, it's the illusion"
+ },
+ {
+  "start": 2428.41,
+  "end": 2430.27,
+  "text": "of a conversational intelligence,"
+ },
+ {
+  "start": 2430.27,
+  "end": 2432.87,
+  "text": "but really no one's at home there, right?"
+ },
+ {
+  "start": 2432.87,
+  "end": 2436.03,
+  "text": "And so when people first heard about GPT,"
+ },
+ {
+  "start": 2436.03,
+  "end": 2438.95,
+  "text": "especially in computer science and in linguistics,"
+ },
+ {
+  "start": 2438.95,
+  "end": 2441.31,
+  "text": "think overwhelmingly their reaction was,"
+ },
+ {
+  "start": 2441.31,
+  "end": 2443.59,
+  "text": "this sounds like just another ELISA."
+ },
+ {
+  "start": 2443.59,
+  "end": 2448.59,
+  "text": "It sounds like just another parlor trick, basically."
+ },
+ {
+  "start": 2448.67,
+  "end": 2450.71,
+  "text": "But I tried it out and I could see,"
+ },
+ {
+  "start": 2450.71,
+  "end": 2453.43,
+  "text": "No, this is not a Liza, you know."
+ },
+ {
+  "start": 2453.43,
+  "end": 2455.79,
+  "text": "What did it look like in these early days?"
+ },
+ {
+  "start": 2455.79,
+  "end": 2458.43,
+  "text": "So there was this thing called AI dungeon"
+ },
+ {
+  "start": 2458.43,
+  "end": 2462.99,
+  "text": "that you could use where you could just type something"
+ },
+ {
+  "start": 2462.99,
+  "end": 2467.43,
+  "text": "and you could start writing a story, it would continue it."
+ },
+ {
+  "start": 2467.43,
+  "end": 2471.47,
+  "text": "So it was not yet good enough to be useful, I would say."
+ },
+ {
+  "start": 2471.47,
+  "end": 2474.23,
+  "text": "But it was good enough to be interesting."
+ },
+ {
+  "start": 2474.23,
+  "end": 2478.67,
+  "text": "It was clearly trying to continue whatever you wrote."
+ },
+ {
+  "start": 2478.67,
+  "end": 2481.59,
+  "text": "Sometimes it would get off topic, right?"
+ },
+ {
+  "start": 2481.59,
+  "end": 2484.73,
+  "text": "It wasn't like reliably answering your question."
+ },
+ {
+  "start": 2484.73,
+  "end": 2489.73,
+  "text": "But, you know, there was clearly like some kind of model"
+ },
+ {
+  "start": 2490.11,
+  "end": 2492.83,
+  "text": "inside of it, you know, of the world, right?"
+ },
+ {
+  "start": 2492.83,
+  "end": 2496.87,
+  "text": "Of what all these words and phrases actually meant,"
+ },
+ {
+  "start": 2496.87,
+  "end": 2499.85,
+  "text": "you know, that, you know, none of the earlier chatbots"
+ },
+ {
+  "start": 2499.85,
+  "end": 2502.13,
+  "text": "would have had anything like, right?"
+ },
+ {
+  "start": 2502.13,
+  "end": 2504.59,
+  "text": "So I could see, you could say like in some sense,"
+ },
+ {
+  "start": 2504.59,
+  "end": 2508.07,
+  "text": "I got AI-pilled in 2021 or so."
+ },
+ {
+  "start": 2508.07,
+  "end": 2509.83,
+  "text": "Yeah, they converted you to the dark side."
+ },
+ {
+  "start": 2509.83,
+  "end": 2513.43,
+  "text": "Yeah, well, no."
+ },
+ {
+  "start": 2513.43,
+  "end": 2520.23,
+  "text": "I was like, OK, if this works just by training"
+ },
+ {
+  "start": 2520.23,
+  "end": 2524.07,
+  "text": "a big enough neural net, then all the computer scientists"
+ },
+ {
+  "start": 2524.07,
+  "end": 2528.69,
+  "text": "who said otherwise 20 years ago, they were all wrong."
+ },
+ {
+  "start": 2528.69,
+  "end": 2531.07,
+  "text": "And as you keep scaling this up,"
+ },
+ {
+  "start": 2531.07,
+  "end": 2534.11,
+  "text": "we should expect it to just get better and better."
+ },
+ {
+  "start": 2534.11,
+  "end": 2538.59,
+  "text": "So by that point, I have friends who"
+ },
+ {
+  "start": 2538.59,
+  "end": 2541.31,
+  "text": "would reach that realization much earlier,"
+ },
+ {
+  "start": 2541.31,
+  "end": 2543.59,
+  "text": "like a decade ago, before that."
+ },
+ {
+  "start": 2543.59,
+  "end": 2545.95,
+  "text": "So I had no very good excuse."
+ },
+ {
+  "start": 2545.95,
+  "end": 2549.31,
+  "text": "But OK, but I did realize that."
+ },
+ {
+  "start": 2549.31,
+  "end": 2553.55,
+  "text": "There was still, I didn't know what I could be doing there."
+ },
+ {
+  "start": 2553.55,
+  "end": 2558.15,
+  "text": "But then in 2022, Ilya Sutskofer,"
+ },
+ {
+  "start": 2558.15,
+  "end": 2561.59,
+  "text": "who was then the chief scientist at OpenAI,"
+ },
+ {
+  "start": 2561.59,
+  "end": 2565.51,
+  "text": "and it was the co-founder of it."
+ },
+ {
+  "start": 2565.51,
+  "end": 2573.03,
+  "text": "And Jan Leicke, who was then the head of alignment at OpenAI,"
+ },
+ {
+  "start": 2573.03,
+  "end": 2576.91,
+  "text": "reached out to me, and they said, listen,"
+ },
+ {
+  "start": 2576.91,
+  "end": 2580.79,
+  "text": "we read your blog, we're fans of your blog, whatever,"
+ },
+ {
+  "start": 2580.79,
+  "end": 2584.39,
+  "text": "and we would like you to go on leave for a year"
+ },
+ {
+  "start": 2584.39,
+  "end": 2588.35,
+  "text": "and work in our AI alignment team."
+ },
+ {
+  "start": 2588.35,
+  "end": 2591.47,
+  "text": "And my first reaction was like, why do you want me?"
+ },
+ {
+  "start": 2591.47,
+  "end": 2593.55,
+  "text": "I'm a quantum computing person."
+ },
+ {
+  "start": 2593.55,
+  "end": 2596.59,
+  "text": "What you're doing has nothing to do with quantum computing."
+ },
+ {
+  "start": 2596.59,
+  "end": 2599.83,
+  "text": "And I said, no, we think about it more broadly."
+ },
+ {
+  "start": 2599.83,
+  "end": 2602.43,
+  "text": "You're a theoretical computer scientist."
+ },
+ {
+  "start": 2602.43,
+  "end": 2608.91,
+  "text": "And we really think that a theoretical computer science"
+ },
+ {
+  "start": 2608.91,
+  "end": 2612.63,
+  "text": "might be at the core of how do we do this safely."
+ },
+ {
+  "start": 2612.63,
+  "end": 2615.11,
+  "text": "It's true that most of the progress that's"
+ },
+ {
+  "start": 2615.11,
+  "end": 2618.31,
+  "text": "gotten AI to work so well has been empirical,"
+ },
+ {
+  "start": 2618.31,
+  "end": 2620.67,
+  "text": "has just been trial and error."
+ },
+ {
+  "start": 2620.67,
+  "end": 2622.73,
+  "text": "but if we want to ensure that it's safe,"
+ },
+ {
+  "start": 2622.73,
+  "end": 2626.63,
+  "text": "that it's not gonna help people make chemical weapons,"
+ },
+ {
+  "start": 2626.63,
+  "end": 2630.27,
+  "text": "or it's not gonna plot against humans or whatever,"
+ },
+ {
+  "start": 2630.27,
+  "end": 2632.99,
+  "text": "then we need some kind of guarantee,"
+ },
+ {
+  "start": 2632.99,
+  "end": 2636.07,
+  "text": "and that means we need to think about theory, right?"
+ },
+ {
+  "start": 2636.07,
+  "end": 2637.67,
+  "text": "So I still wasn't sure,"
+ },
+ {
+  "start": 2637.67,
+  "end": 2640.63,
+  "text": "but I knew people were thinking about this."
+ },
+ {
+  "start": 2640.63,
+  "end": 2645.11,
+  "text": "I had actually had a spectacular undergraduate at MIT"
+ },
+ {
+  "start": 2645.11,
+  "end": 2648.47,
+  "text": "named Paul Cristiano, who did quantum computing with me,"
+ },
+ {
+  "start": 2648.47,
+  "end": 2651.51,
+  "text": "but who then later went to open AI"
+ },
+ {
+  "start": 2651.51,
+  "end": 2653.67,
+  "text": "and who became one of the leaders"
+ },
+ {
+  "start": 2653.67,
+  "end": 2655.91,
+  "text": "of this AI alignment field, right?"
+ },
+ {
+  "start": 2655.91,
+  "end": 2658.47,
+  "text": "So because of Paul, you know, I knew"
+ },
+ {
+  "start": 2658.47,
+  "end": 2661.35,
+  "text": "that one could actually think in this intersection"
+ },
+ {
+  "start": 2661.35,
+  "end": 2665.31,
+  "text": "of theoretical computer science and AI alignment."
+ },
+ {
+  "start": 2665.31,
+  "end": 2667.83,
+  "text": "And so I thought about it and they said,"
+ },
+ {
+  "start": 2667.83,
+  "end": 2669.33,
+  "text": "you know, again, and guess what?"
+ },
+ {
+  "start": 2669.33,
+  "end": 2671.71,
+  "text": "You don't even have to move to San Francisco."
+ },
+ {
+  "start": 2671.71,
+  "end": 2674.21,
+  "text": "You can stay with your family in Austin,"
+ },
+ {
+  "start": 2674.21,
+  "end": 2675.41,
+  "text": "stay with your students."
+ },
+ {
+  "start": 2675.41,
+  "end": 2678.17,
+  "text": "You'll just fly out to visit us once a month."
+ },
+ {
+  "start": 2678.17,
+  "end": 2682.67,
+  "text": "and we'll just pay you and you won't have to teach."
+ },
+ {
+  "start": 2682.67,
+  "end": 2686.13,
+  "text": "So they made it very hard to say no."
+ },
+ {
+  "start": 2686.13,
+  "end": 2688.13,
+  "text": "What did your job actually look like?"
+ },
+ {
+  "start": 2688.13,
+  "end": 2693.13,
+  "text": "So there was never any very clear job description."
+ },
+ {
+  "start": 2693.13,
+  "end": 2697.21,
+  "text": "It was try to use theoretical computer science"
+ },
+ {
+  "start": 2697.21,
+  "end": 2701.25,
+  "text": "to solve AI alignment basically."
+ },
+ {
+  "start": 2701.25,
+  "end": 2705.73,
+  "text": "And so I looked for things to do,"
+ },
+ {
+  "start": 2705.73,
+  "end": 2707.65,
+  "text": "and actually I would have weekly meetings"
+ },
+ {
+  "start": 2707.65,
+  "end": 2711.33,
+  "text": "with Ilya, where I would say to him,"
+ },
+ {
+  "start": 2711.33,
+  "end": 2713.97,
+  "text": "like here, I've made some progress on this,"
+ },
+ {
+  "start": 2713.97,
+  "end": 2715.77,
+  "text": "I've made some progress on that,"
+ },
+ {
+  "start": 2715.77,
+  "end": 2718.63,
+  "text": "and Ilya would always say, okay, that's great, Scott,"
+ },
+ {
+  "start": 2718.63,
+  "end": 2720.43,
+  "text": "but what we really want from you"
+ },
+ {
+  "start": 2720.43,
+  "end": 2723.17,
+  "text": "is what is the mathematical definition,"
+ },
+ {
+  "start": 2723.17,
+  "end": 2726.29,
+  "text": "what it means for the AI to love humanity?"
+ },
+ {
+  "start": 2726.29,
+  "end": 2727.89,
+  "text": "And I would have to say,"
+ },
+ {
+  "start": 2727.89,
+  "end": 2729.89,
+  "text": "Ilya, I'm still thinking about that."
+ },
+ {
+  "start": 2729.89,
+  "end": 2732.49,
+  "text": "I don't have a lot of progress to report on that."
+ },
+ {
+  "start": 2732.49,
+  "end": 2739.81,
+  "text": "I'm not even sure how much of that is a math problem."
+ },
+ {
+  "start": 2739.81,
+  "end": 2748.93,
+  "text": "It seems like there's 3,000 years of moral philosophy that is implicated in this question."
+ },
+ {
+  "start": 2748.93,
+  "end": 2753.45,
+  "text": "My challenge, of course, is can I break off little bits and pieces of this that can be"
+ },
+ {
+  "start": 2753.45,
+  "end": 2759.21,
+  "text": "addressed mathematically because in the end I would like to make progress."
+ },
+ {
+  "start": 2759.21,
+  "end": 2765.25,
+  "text": "The most concrete thing that I found to do when I was at OpenAI was I came up with the"
+ },
+ {
+  "start": 2765.25,
+  "end": 2772.61,
+  "text": "first scheme for watermarking the outputs of a large language model, like chat GPT or"
+ },
+ {
+  "start": 2772.61,
+  "end": 2774.93,
+  "text": "Claude or Gemini."
+ },
+ {
+  "start": 2774.93,
+  "end": 2776.37,
+  "text": "What does watermarking mean?"
+ },
+ {
+  "start": 2776.37,
+  "end": 2782.77,
+  "text": "It means slightly changing the way that the language model works in a way that should"
+ },
+ {
+  "start": 2782.77,
+  "end": 2788.57,
+  "text": "not be noticeable at all by an ordinary user, but which is embedding a subtle"
+ },
+ {
+  "start": 2788.57,
+  "end": 2794.65,
+  "text": "statistical signal into the choice of words that are coming out that would"
+ },
+ {
+  "start": 2794.65,
+  "end": 2800.01,
+  "text": "let you later prove, you know, to very high confidence that, yes, this text did"
+ },
+ {
+  "start": 2800.01,
+  "end": 2806.97,
+  "text": "come not only from AI, but from this specific AI model. Okay? So, you know, I"
+ },
+ {
+  "start": 2806.97,
+  "end": 2815.57,
+  "text": "I had a sort of a holy crap moment when I realized that this was going to be needed"
+ },
+ {
+  "start": 2815.57,
+  "end": 2820.53,
+  "text": "in the summer of 2022, so four years ago."
+ },
+ {
+  "start": 2820.53,
+  "end": 2823.97,
+  "text": "This was before chat GPT had come out."
+ },
+ {
+  "start": 2823.97,
+  "end": 2835.27,
+  "text": "But I could already use GPT-4 internally within the open AI, and so I saw how good"
+ },
+ {
+  "start": 2835.27,
+  "end": 2840.83,
+  "text": "it was, in particular, I saw that it was perfectly capable of writing, let's say, high school"
+ },
+ {
+  "start": 2840.83,
+  "end": 2846.39,
+  "text": "essays or college essays. And I was like, every student in the world is going to want"
+ },
+ {
+  "start": 2846.39,
+  "end": 2848.83,
+  "text": "to use this to cheat on their homework, aren't they?"
+ },
+ {
+  "start": 2848.83,
+  "end": 2849.83,
+  "text": "Totally."
+ },
+ {
+  "start": 2849.83,
+  "end": 2854.95,
+  "text": "Right? So, you know, I don't have such a great track record at like seeing decades"
+ },
+ {
+  "start": 2854.95,
+  "end": 2859.83,
+  "text": "into the future, right? I missed what AI scaling was going to do. For example,"
+ },
+ {
+  "start": 2859.83,
+  "end": 2866.11,
+  "text": "I also missed how popular Bitcoin was going to be, right, as many people did, I guess."
+ },
+ {
+  "start": 2866.11,
+  "end": 2869.35,
+  "text": "But in this case, I was able to see six months ahead."
+ },
+ {
+  "start": 2869.35,
+  "end": 2870.35,
+  "text": "Okay."
+ },
+ {
+  "start": 2870.35,
+  "end": 2876.51,
+  "text": "So would you say, I write on Substack, and they recently partnered up with Pangram."
+ },
+ {
+  "start": 2876.51,
+  "end": 2877.51,
+  "text": "Yeah, that's right."
+ },
+ {
+  "start": 2877.51,
+  "end": 2881.39,
+  "text": "So is that one of the children of your work?"
+ },
+ {
+  "start": 2881.39,
+  "end": 2884.07,
+  "text": "Not exactly, no."
+ },
+ {
+  "start": 2884.07,
+  "end": 2889.35,
+  "text": "So what quickly became clear is that there were several different approaches to how you"
+ },
+ {
+  "start": 2889.35,
+  "end": 2894.75,
+  "text": "could make AI text detectable, right? So one approach would be to just treat it"
+ },
+ {
+  "start": 2894.75,
+  "end": 2899.67,
+  "text": "as yet another AI problem, right? So we train a new neural net to just"
+ },
+ {
+  "start": 2899.67,
+  "end": 2904.59,
+  "text": "distinguish human text from AI text as well as it can. This is essentially what"
+ },
+ {
+  "start": 2904.59,
+  "end": 2910.75,
+  "text": "pangram does, and they do very, very well at it, okay? You know, and other"
+ },
+ {
+  "start": 2910.75,
+  "end": 2915.75,
+  "text": "people have done versions of this as well, right? Now, you know, a"
+ },
+ {
+  "start": 2915.75,
+  "end": 2922.91,
+  "text": "A pangram actually works better than many of us expected that that kind of thing would,"
+ },
+ {
+  "start": 2922.91,
+  "end": 2925.99,
+  "text": "but there's still some false positives."
+ },
+ {
+  "start": 2925.99,
+  "end": 2932.71,
+  "text": "And one issue is if you're going to be accusing a student of cheating based on the output"
+ },
+ {
+  "start": 2932.71,
+  "end": 2938.13,
+  "text": "of your tool, then you better be really damn confident."
+ },
+ {
+  "start": 2938.13,
+  "end": 2944.03,
+  "text": "You would like a rate of false positives that's well below 1%, I would say."
+ },
+ {
+  "start": 2944.03,
+  "end": 2946.31,
+  "text": "So that's part of the issue."
+ },
+ {
+  "start": 2946.31,
+  "end": 2949.55,
+  "text": "Now, a second approach that you could imagine"
+ },
+ {
+  "start": 2949.55,
+  "end": 2954.31,
+  "text": "is you could have the AI companies just log all the text"
+ },
+ {
+  "start": 2954.31,
+  "end": 2956.11,
+  "text": "that they ever generate."
+ },
+ {
+  "start": 2956.11,
+  "end": 2959.71,
+  "text": "And then you could imagine letting people query them"
+ },
+ {
+  "start": 2959.71,
+  "end": 2963.83,
+  "text": "to say, did you ever generate this essay or not?"
+ },
+ {
+  "start": 2963.83,
+  "end": 2968.63,
+  "text": "Now, you could argue whether or not that appropriately"
+ },
+ {
+  "start": 2968.63,
+  "end": 2971.03,
+  "text": "preserves people's privacy."
+ },
+ {
+  "start": 2971.03,
+  "end": 2974.19,
+  "text": "Even if it did, it would be hard to convince them"
+ },
+ {
+  "start": 2974.19,
+  "end": 2976.79,
+  "text": "that it does, right, is part of, like,"
+ },
+ {
+  "start": 2976.79,
+  "end": 2978.51,
+  "text": "I think people would really, like,"
+ },
+ {
+  "start": 2978.51,
+  "end": 2980.79,
+  "text": "some people would really feel an ick about that,"
+ },
+ {
+  "start": 2980.79,
+  "end": 2984.31,
+  "text": "that, like, their privacy is being compromised that way,"
+ },
+ {
+  "start": 2984.31,
+  "end": 2987.19,
+  "text": "right, and so that brings us to a third possibility,"
+ },
+ {
+  "start": 2987.19,
+  "end": 2989.59,
+  "text": "and this is what watermarking is, right."
+ },
+ {
+  "start": 2989.59,
+  "end": 2992.35,
+  "text": "Watermarking, unlike pangram,"
+ },
+ {
+  "start": 2992.35,
+  "end": 2994.53,
+  "text": "requires slightly changing the way"
+ },
+ {
+  "start": 2994.53,
+  "end": 2998.39,
+  "text": "that the LLM itself operates, right."
+ },
+ {
+  "start": 2998.39,
+  "end": 3005.99,
+  "text": "um, as I said, not in a way that's easy to detect, right? But basically what it does is it takes"
+ },
+ {
+  "start": 3005.99,
+  "end": 3013.27,
+  "text": "advantage of the fact that, you know, LLMs are inherently probabilistic in how they work, right?"
+ },
+ {
+  "start": 3013.27,
+  "end": 3019.35,
+  "text": "And we all see this, like if you feed the same prompt to chat GPT a bunch of times, you know,"
+ },
+ {
+  "start": 3019.35,
+  "end": 3025.11,
+  "text": "you can get a different response each time, right? Why? Because it is sampling the next token"
+ },
+ {
+  "start": 3025.11,
+  "end": 3027.43,
+  "text": "from a probability distribution, right?"
+ },
+ {
+  "start": 3027.43,
+  "end": 3030.51,
+  "text": "And the whole thing that that transformer neural net"
+ },
+ {
+  "start": 3030.51,
+  "end": 3033.71,
+  "text": "is doing is it's not calculating exactly"
+ },
+ {
+  "start": 3033.71,
+  "end": 3035.27,
+  "text": "what the next word should be,"
+ },
+ {
+  "start": 3035.27,
+  "end": 3037.31,
+  "text": "it's calculating probabilities"
+ },
+ {
+  "start": 3037.31,
+  "end": 3039.59,
+  "text": "for each possible next word, right?"
+ },
+ {
+  "start": 3039.59,
+  "end": 3041.37,
+  "text": "And then normally what you would do"
+ },
+ {
+  "start": 3041.37,
+  "end": 3043.03,
+  "text": "is you would just sample,"
+ },
+ {
+  "start": 3043.03,
+  "end": 3045.87,
+  "text": "repeatedly sample from that distribution"
+ },
+ {
+  "start": 3045.87,
+  "end": 3049.49,
+  "text": "and this is how chat GPT, for example,"
+ },
+ {
+  "start": 3049.49,
+  "end": 3051.91,
+  "text": "generates its responses, okay?"
+ },
+ {
+  "start": 3051.91,
+  "end": 3058.39,
+  "text": "But with watermarking, we say, well, what if instead we generated it"
+ },
+ {
+  "start": 3058.39,
+  "end": 3061.79,
+  "text": "pseudo-randomly?"
+ },
+ {
+  "start": 3061.79,
+  "end": 3066.11,
+  "text": "So we're going to generate the next word in a way that looks random."
+ },
+ {
+  "start": 3066.11,
+  "end": 3070.31,
+  "text": "In fact, it looks like it came from exactly this distribution"
+ },
+ {
+  "start": 3070.31,
+  "end": 3073.15,
+  "text": "with these given probabilities."
+ },
+ {
+  "start": 3073.15,
+  "end": 3078.95,
+  "text": "But in some very hard to detect way, we're"
+ },
+ {
+  "start": 3078.95,
+  "end": 3085.21,
+  "text": "going to be biasing things in favor of combinations of words, you know, that like"
+ },
+ {
+  "start": 3085.21,
+  "end": 3089.81,
+  "text": "get a high score, you know, according to some pseudo random function, right? And"
+ },
+ {
+  "start": 3089.81,
+  "end": 3095.25,
+  "text": "the fact that we did that will then be detectable later, right? So, you know, we"
+ },
+ {
+  "start": 3095.25,
+  "end": 3098.93,
+  "text": "also need a detection tool, right, which is not going to know these"
+ },
+ {
+  "start": 3098.93,
+  "end": 3103.43,
+  "text": "probabilities. It's not going to know the prompt that someone may have typed"
+ },
+ {
+  "start": 3103.43,
+  "end": 3109.31,
+  "text": "to get this this essay, it just has the text itself, right? And from that it has"
+ },
+ {
+  "start": 3109.31,
+  "end": 3114.85,
+  "text": "to say is the watermark here or not, right? But, you know, if we know the key"
+ },
+ {
+  "start": 3114.85,
+  "end": 3118.43,
+  "text": "of this pseudo-random function, then we can just look at all that"
+ },
+ {
+  "start": 3118.43,
+  "end": 3123.59,
+  "text": "combinations of, let's say, five or so consecutive words, you know, calculate"
+ },
+ {
+  "start": 3123.59,
+  "end": 3128.21,
+  "text": "the pseudo-random function for each of them, add up all the results, and if"
+ },
+ {
+  "start": 3128.21,
+  "end": 3132.39,
+  "text": "the result is above some threshold, then we could say, like, there is at"
+ },
+ {
+  "start": 3132.39,
+  "end": 3137.71,
+  "text": "most a point one percent chance that this score would have been this high by"
+ },
+ {
+  "start": 3137.71,
+  "end": 3143.71,
+  "text": "by random chance right so ninety nine point nine percent yes you know this"
+ },
+ {
+  "start": 3143.71,
+  "end": 3148.63,
+  "text": "watermark of this AI is there okay so that so that was the basic principle"
+ },
+ {
+  "start": 3148.63,
+  "end": 3154.51,
+  "text": "you know which I proposed in 2022 and I went and gave talks about it you"
+ },
+ {
+  "start": 3154.51,
+  "end": 3158.27,
+  "text": "know one thing that was surprising to people at the time they thought that"
+ },
+ {
+  "start": 3158.27,
+  "end": 3163.83,
+  "text": "there would have to be an inherent trade-off between watermarking and the"
+ },
+ {
+  "start": 3163.83,
+  "end": 3168.07,
+  "text": "quality of the output. So they said yeah like yeah maybe you can do this but if"
+ },
+ {
+  "start": 3168.07,
+  "end": 3171.19,
+  "text": "you change the probabilities then you're going to degrade the quality"
+ },
+ {
+  "start": 3171.19,
+  "end": 3176.85,
+  "text": "right and and you know so so what I was explained to them was no there's"
+ },
+ {
+  "start": 3176.85,
+  "end": 3180.65,
+  "text": "no such trade-off right no one will notice anything different right"
+ },
+ {
+  "start": 3180.65,
+  "end": 3184.93,
+  "text": "because you're just replacing this randomness by pseudo randomness okay"
+ },
+ {
+  "start": 3184.93,
+  "end": 3193.09,
+  "text": "So since then, people sort of massively improved the basic theory that I laid out."
+ },
+ {
+  "start": 3193.09,
+  "end": 3195.09,
+  "text": "They published papers about it."
+ },
+ {
+  "start": 3195.09,
+  "end": 3197.65,
+  "text": "I never even published a paper on it."
+ },
+ {
+  "start": 3197.65,
+  "end": 3201.33,
+  "text": "By the time I thought of writing one, it was already obsolete."
+ },
+ {
+  "start": 3201.33,
+  "end": 3205.65,
+  "text": "The AI world moves too fast for me."
+ },
+ {
+  "start": 3205.65,
+  "end": 3212.57,
+  "text": "And now, actually, Google, DeepMind, and Anthropic have both actually deployed water"
+ },
+ {
+  "start": 3212.57,
+  "end": 3218.81,
+  "text": "market, very similar to what I proposed. Open AI still is not. On a more"
+ },
+ {
+  "start": 3218.81,
+  "end": 3225.71,
+  "text": "personal level, what did working inside this AI machinery do to"
+ },
+ {
+  "start": 3225.71,
+  "end": 3230.97,
+  "text": "your sense of the future and to the future of your children? Yeah, well so"
+ },
+ {
+  "start": 3230.97,
+  "end": 3234.93,
+  "text": "it certainly prompted me to think more about it. I mean,"
+ },
+ {
+  "start": 3234.93,
+  "end": 3240.25,
+  "text": "even if I hadn't worked for Open AI, this is changing"
+ },
+ {
+  "start": 3240.25,
+  "end": 3245.55,
+  "text": "everything that we do, right? Like it's impossible to work in a computer science"
+ },
+ {
+  "start": 3245.55,
+  "end": 3250.51,
+  "text": "department, or for that matter to work in any department at a university, or for that"
+ },
+ {
+  "start": 3250.51,
+  "end": 3254.83,
+  "text": "matter to work anywhere at all, right? And not be aware of how this is"
+ },
+ {
+  "start": 3254.83,
+  "end": 3259.63,
+  "text": "changing the world. You know, it certainly, you know, like it made a lot of the"
+ },
+ {
+  "start": 3259.63,
+  "end": 3265.63,
+  "text": "conversations more salient for me earlier, you know, than maybe they"
+ },
+ {
+  "start": 3265.63,
+  "end": 3270.19,
+  "text": "would have been otherwise. And you know how I felt? Like, you know, when"
+ },
+ {
+  "start": 3270.19,
+  "end": 3277.67,
+  "text": "When I was 11 or so, besides playing a lot of Nintendo, I spent a lot of time reading"
+ },
+ {
+  "start": 3277.67,
+  "end": 3281.07,
+  "text": "Isaac Asimov's robot novels."
+ },
+ {
+  "start": 3281.07,
+  "end": 3288.07,
+  "text": "I was really into them and when I first got into programming, I thought, okay, what would"
+ },
+ {
+  "start": 3288.07,
+  "end": 3289.63,
+  "text": "be really cool to do?"
+ },
+ {
+  "start": 3289.63,
+  "end": 3294.19,
+  "text": "I just want to build an AI that will follow Asimov's three laws of robotics."
+ },
+ {
+  "start": 3294.19,
+  "end": 3297.87,
+  "text": "How come no one else thought of doing that?"
+ },
+ {
+  "start": 3297.87,
+  "end": 3307.63,
+  "text": "I tried, I got a little bit stuck at the how do you make it intelligent part, okay?"
+ },
+ {
+  "start": 3307.63,
+  "end": 3312.55,
+  "text": "And then I started learning more about real computer science when I was a teenager, and"
+ },
+ {
+  "start": 3312.55,
+  "end": 3318.59,
+  "text": "I found out, no, actually computer science has nothing to do with this, right?"
+ },
+ {
+  "start": 3318.59,
+  "end": 3324.51,
+  "text": "It is so ridiculously far from building anything intelligent enough that it would"
+ },
+ {
+  "start": 3324.51,
+  "end": 3327.35,
+  "text": "would actually engage any of these questions"
+ },
+ {
+  "start": 3327.35,
+  "end": 3329.87,
+  "text": "that Asimov was writing about."
+ },
+ {
+  "start": 3329.87,
+  "end": 3333.55,
+  "text": "That was just my science fiction fantasy of what it would be."
+ },
+ {
+  "start": 3333.55,
+  "end": 3336.87,
+  "text": "And now I get to see what the real thing is."
+ },
+ {
+  "start": 3336.87,
+  "end": 3339.91,
+  "text": "And then, OK, fast forward 30 years."
+ },
+ {
+  "start": 3339.91,
+  "end": 3341.95,
+  "text": "I'm working at OpenAI."
+ },
+ {
+  "start": 3341.95,
+  "end": 3346.15,
+  "text": "I'm having lunch with different teams in the cafeteria."
+ },
+ {
+  "start": 3346.15,
+  "end": 3348.83,
+  "text": "And all the conversations feel like I'm"
+ },
+ {
+  "start": 3348.83,
+  "end": 3352.87,
+  "text": "living in an Isaac Asimov novel."
+ },
+ {
+  "start": 3352.87,
+  "end": 3360.75,
+  "text": "how safe is AI? I'm worried I'm very worried about where this I mean I mean I"
+ },
+ {
+  "start": 3360.75,
+  "end": 3365.35,
+  "text": "feel like you know we are you know this is not just some cool consumer product"
+ },
+ {
+  "start": 3365.35,
+  "end": 3370.83,
+  "text": "right we are you know we have created you know the first ever form of verbal"
+ },
+ {
+  "start": 3370.83,
+  "end": 3375.37,
+  "text": "intelligence on earth other than our own yeah I heard you were saying yeah"
+ },
+ {
+  "start": 3375.37,
+  "end": 3379.93,
+  "text": "calling yourself an apocole optimist apocole optimist yeah that was the"
+ },
+ {
+  "start": 3379.93,
+  "end": 3384.41,
+  "text": "phrase from this from this movie that was this documentary that that's all I made"
+ },
+ {
+  "start": 3384.41,
+  "end": 3392.41,
+  "text": "but I mean yeah there is there is no obvious stopping principle right we are"
+ },
+ {
+  "start": 3392.41,
+  "end": 3397.21,
+  "text": "like oh it's able to do these jobs better than us but not those jobs"
+ },
+ {
+  "start": 3397.21,
+  "end": 3403.15,
+  "text": "right there is there is basically you know like like if what I would say is"
+ },
+ {
+  "start": 3403.15,
+  "end": 3407.69,
+  "text": "that if there is a wall that AI is going to hit like where it stops"
+ },
+ {
+  "start": 3407.69,
+  "end": 3413.57,
+  "text": "improving you know where like like sort of you know where it leaves plenty for"
+ },
+ {
+  "start": 3413.57,
+  "end": 3418.93,
+  "text": "humans to still do that's economically valuable no one has convincingly"
+ },
+ {
+  "start": 3418.93,
+  "end": 3424.41,
+  "text": "articulated where that wall is okay I would say at this point the burden is"
+ },
+ {
+  "start": 3424.41,
+  "end": 3429.61,
+  "text": "on them to explain where this wall is right because what we've seen in the"
+ },
+ {
+  "start": 3429.61,
+  "end": 3434.33,
+  "text": "last few years is that as you scale more and more as you add more"
+ },
+ {
+  "start": 3434.33,
+  "end": 3439.53,
+  "text": "inference time compute you know meaning like it's thinking it's looking things up"
+ },
+ {
+  "start": 3439.53,
+  "end": 3444.65,
+  "text": "on the internet and so forth before it answers you right as you add more more"
+ },
+ {
+  "start": 3444.65,
+  "end": 3448.81,
+  "text": "training data as you do more reinforcement learning it just gets"
+ },
+ {
+  "start": 3448.81,
+  "end": 3454.05,
+  "text": "better and better and better right so like three years ago I would say you"
+ },
+ {
+  "start": 3454.05,
+  "end": 3458.01,
+  "text": "know it was already like like you know it was it was able to like pass some"
+ },
+ {
+  "start": 3458.01,
+  "end": 3461.49,
+  "text": "high school exams you know which was cool but you could say okay but it's"
+ },
+ {
+  "start": 3461.49,
+  "end": 3467.49,
+  "text": "not doing any real research, right? It's, you know, clearly, you know, it's, you know,"
+ },
+ {
+  "start": 3467.49,
+  "end": 3472.61,
+  "text": "I could give it, you know, one of like my research problems and it's just, it's just"
+ },
+ {
+  "start": 3472.61,
+  "end": 3477.57,
+  "text": "spouting nonsense, like the same as, same way an overconfident freshman would do,"
+ },
+ {
+  "start": 3477.57,
+  "end": 3483.49,
+  "text": "right? And it's like you could point at it and laugh, right? Okay, but, but now"
+ },
+ {
+  "start": 3483.49,
+  "end": 3488.93,
+  "text": "where are we? Well, you know, as some of your listeners might have seen, just"
+ },
+ {
+  "start": 3488.93,
+  "end": 3494.95,
+  "text": "this summer we have started to see a large number of breakthroughs in pure"
+ },
+ {
+  "start": 3494.95,
+  "end": 3500.45,
+  "text": "math, in theoretical computer science, that have come partly or entirely from"
+ },
+ {
+  "start": 3500.45,
+  "end": 3505.41,
+  "text": "the use of AI models. We have seen solutions to long-standing open"
+ },
+ {
+  "start": 3505.41,
+  "end": 3511.37,
+  "text": "problems. There was problems of the famous mathematician Paul Erdős. One of"
+ },
+ {
+  "start": 3511.37,
+  "end": 3516.21,
+  "text": "them was called the unit distance conjecture. It was falsified by an"
+ },
+ {
+  "start": 3516.21,
+  "end": 3523.77,
+  "text": "open AI model. There are several problems that I've cared about in"
+ },
+ {
+  "start": 3523.77,
+  "end": 3528.33,
+  "text": "quantum computing theory and in computational complexity have now been"
+ },
+ {
+  "start": 3528.33,
+  "end": 3536.01,
+  "text": "solved by open AI models. An anthropic model just a few weeks ago"
+ },
+ {
+  "start": 3536.01,
+  "end": 3540.29,
+  "text": "made progress on the Riemann hypothesis which is one of the biggest"
+ },
+ {
+  "start": 3540.29,
+  "end": 3545.77,
+  "text": "unsolved problems in all of math. It didn't solve it but it made progress"
+ },
+ {
+  "start": 3545.77,
+  "end": 3554.01,
+  "text": "that humans have not made. So I think mathematicians and computer"
+ },
+ {
+  "start": 3554.01,
+  "end": 3558.65,
+  "text": "scientists like see all this and especially this summer you know they see"
+ },
+ {
+  "start": 3558.65,
+  "end": 3563.13,
+  "text": "the writing on the wall right they see that you know like yes maybe there"
+ },
+ {
+  "start": 3563.13,
+  "end": 3567.45,
+  "text": "will still be a role for us you know you know you know many of us"
+ },
+ {
+  "start": 3567.45,
+  "end": 3572.53,
+  "text": "selfishly hope that there will be but the whole nature of what we do is now"
+ },
+ {
+  "start": 3572.53,
+  "end": 3577.81,
+  "text": "changed beyond recognition right and when I look at like the new quantum"
+ },
+ {
+  "start": 3577.81,
+  "end": 3582.65,
+  "text": "computing papers you know every night on the preprint server on the archive I"
+ },
+ {
+  "start": 3582.65,
+  "end": 3587.61,
+  "text": "would say at least half of the papers that interest me like you know within"
+ },
+ {
+  "start": 3587.61,
+  "end": 3592.89,
+  "text": "the last month or so are saying you know yes you know we use GPT we used"
+ },
+ {
+  "start": 3592.89,
+  "end": 3599.09,
+  "text": "Claude you know you know it at least helped in doing the technical work"
+ },
+ {
+  "start": 3599.09,
+  "end": 3608.25,
+  "text": "In preparation for this conversation I re-read the essay AI 2027 and one of the scenarios"
+ },
+ {
+  "start": 3608.25,
+  "end": 3613.21,
+  "text": "they describe anticipates humanity going extinct."
+ },
+ {
+  "start": 3613.21,
+  "end": 3614.21,
+  "text": "What are your thoughts on that?"
+ },
+ {
+  "start": 3614.21,
+  "end": 3618.37,
+  "text": "I think that is unfortunately within the set of possibilities."
+ },
+ {
+  "start": 3618.37,
+  "end": 3623.45,
+  "text": "I mean you know where I'm not you know so there is this whole movement of you know"
+ },
+ {
+  "start": 3623.45,
+  "end": 3627.21,
+  "text": "Sometimes they're pejoratively called AI-doomers."
+ },
+ {
+  "start": 3627.21,
+  "end": 3632.57,
+  "text": "But it's most associated with Eliezer Gidkowski, who"
+ },
+ {
+  "start": 3632.57,
+  "end": 3634.97,
+  "text": "is sort of the prophet of this movement."
+ },
+ {
+  "start": 3634.97,
+  "end": 3639.69,
+  "text": "He's been talking about this for more than 20 years now."
+ },
+ {
+  "start": 3639.69,
+  "end": 3644.29,
+  "text": "He just regarded it as obvious that if we"
+ },
+ {
+  "start": 3644.29,
+  "end": 3647.77,
+  "text": "continue building AI, it will become superhuman."
+ },
+ {
+  "start": 3647.77,
+  "end": 3651.37,
+  "text": "And then at some point, it will be to us,"
+ },
+ {
+  "start": 3651.37,
+  "end": 3654.81,
+  "text": "as we are to orangutans or whatever."
+ },
+ {
+  "start": 3654.81,
+  "end": 3658.05,
+  "text": "How well do orangutans fare in a human world?"
+ },
+ {
+  "start": 3658.05,
+  "end": 3662.73,
+  "text": "Well, he would say something even stronger than that."
+ },
+ {
+  "start": 3662.73,
+  "end": 3665.57,
+  "text": "He would say, by default, this kills us."
+ },
+ {
+  "start": 3665.57,
+  "end": 3670.65,
+  "text": "By default, unless we have some breakthrough in how"
+ },
+ {
+  "start": 3670.65,
+  "end": 3674.05,
+  "text": "to align this with human interests,"
+ },
+ {
+  "start": 3674.05,
+  "end": 3677.33,
+  "text": "whatever goal it has, it could probably better achieve"
+ },
+ {
+  "start": 3677.33,
+  "end": 3681.17,
+  "text": "that goal by transforming the earth"
+ },
+ {
+  "start": 3681.17,
+  "end": 3683.81,
+  "text": "into something very different from what it is"
+ },
+ {
+  "start": 3683.81,
+  "end": 3686.81,
+  "text": "than it can by leaving us around, right?"
+ },
+ {
+  "start": 3686.81,
+  "end": 3691.81,
+  "text": "So now, I would say I don't accept the arguments"
+ },
+ {
+  "start": 3693.27,
+  "end": 3696.09,
+  "text": "that that is, let's say, a default outcome."
+ },
+ {
+  "start": 3696.09,
+  "end": 3699.61,
+  "text": "On the other hand, is it a possible outcome?"
+ },
+ {
+  "start": 3699.61,
+  "end": 3702.09,
+  "text": "Well, unfortunately, yes."
+ },
+ {
+  "start": 3702.09,
+  "end": 3706.13,
+  "text": "I mean, again, people need to conceptualize"
+ },
+ {
+  "start": 3706.13,
+  "end": 3709.53,
+  "text": "what is happening right now is it's not another cool"
+ },
+ {
+  "start": 3709.53,
+  "end": 3713.05,
+  "text": "technology like the internet or like social media, right?"
+ },
+ {
+  "start": 3713.05,
+  "end": 3716.19,
+  "text": "This is like, it goes back to the evolution"
+ },
+ {
+  "start": 3716.19,
+  "end": 3718.29,
+  "text": "of the hominid brain, right?"
+ },
+ {
+  "start": 3718.29,
+  "end": 3723.29,
+  "text": "Where something new happened in the whole history of Earth."
+ },
+ {
+  "start": 3723.37,
+  "end": 3726.13,
+  "text": "Now you have this verbal intelligence"
+ },
+ {
+  "start": 3726.13,
+  "end": 3728.05,
+  "text": "that can conceptualize things,"
+ },
+ {
+  "start": 3728.05,
+  "end": 3731.01,
+  "text": "that eventually could write things down,"
+ },
+ {
+  "start": 3731.01,
+  "end": 3732.81,
+  "text": "could ponder things, right?"
+ },
+ {
+  "start": 3732.81,
+  "end": 3734.61,
+  "text": "And now we have a new one, right?"
+ },
+ {
+  "start": 3734.61,
+  "end": 3741.61,
+  "text": "And now we have one that is not constrained in the way that we are by having brains that"
+ },
+ {
+  "start": 3741.61,
+  "end": 3748.65,
+  "text": "have to fit into these skulls, that have to fit through the birth canal when we're being"
+ },
+ {
+  "start": 3748.65,
+  "end": 3750.97,
+  "text": "born."
+ },
+ {
+  "start": 3750.97,
+  "end": 3757.61,
+  "text": "It's not constrained by having to operate on the comparatively tiny amounts of energy"
+ },
+ {
+  "start": 3757.61,
+  "end": 3761.21,
+  "text": "that we get from our food."
+ },
+ {
+  "start": 3761.21,
+  "end": 3768.73,
+  "text": "can just keep scaling this thing up. And anyone who's interacted with Fable or with GPT 5.6"
+ },
+ {
+  "start": 3768.73,
+  "end": 3774.21,
+  "text": "Pro can see that by many measures these things are already much more intelligent than they"
+ },
+ {
+  "start": 3774.21,
+  "end": 3775.21,
+  "text": "are."
+ },
+ {
+  "start": 3775.21,
+  "end": 3781.97,
+  "text": "For sure. At this point in time, what's your personal take? Where do you see AI"
+ },
+ {
+  "start": 3781.97,
+  "end": 3785.41,
+  "text": "going in the next five to ten years?"
+ },
+ {
+  "start": 3785.41,
+  "end": 3789.09,
+  "text": "to some very, very weird and very scary places."
+ },
+ {
+  "start": 3789.09,
+  "end": 3792.77,
+  "text": "I mean, I hope that we'll still be around."
+ },
+ {
+  "start": 3792.77,
+  "end": 3795.45,
+  "text": "I mean, look, you could say in terms of putting my money"
+ },
+ {
+  "start": 3795.45,
+  "end": 3801.09,
+  "text": "where my mouth is, I mean, my kids still go to school."
+ },
+ {
+  "start": 3801.09,
+  "end": 3804.05,
+  "text": "They're thinking in terms of going to college."
+ },
+ {
+  "start": 3804.05,
+  "end": 3808.61,
+  "text": "I'm thinking in terms of what college will they go to."
+ },
+ {
+  "start": 3808.61,
+  "end": 3812.81,
+  "text": "But certainly, it affects me on that personal level"
+ },
+ {
+  "start": 3812.81,
+  "end": 3817.01,
+  "text": "of like, you know, what do I tell my kids"
+ },
+ {
+  "start": 3817.01,
+  "end": 3820.33,
+  "text": "that will be useful to them in this world, right?"
+ },
+ {
+  "start": 3820.33,
+  "end": 3823.53,
+  "text": "What will be left for humans to do"
+ },
+ {
+  "start": 3823.53,
+  "end": 3825.79,
+  "text": "that will have any economic value?"
+ },
+ {
+  "start": 3827.21,
+  "end": 3830.05,
+  "text": "So I think the, you know,"
+ },
+ {
+  "start": 3830.05,
+  "end": 3833.51,
+  "text": "there's an enormous range of possible outcomes,"
+ },
+ {
+  "start": 3833.51,
+  "end": 3836.13,
+  "text": "and right now is the time when, you know,"
+ },
+ {
+  "start": 3836.13,
+  "end": 3839.17,
+  "text": "we need to sort of make our voices heard,"
+ },
+ {
+  "start": 3839.17,
+  "end": 3841.01,
+  "text": "you know, if we want to steer things"
+ },
+ {
+  "start": 3841.01,
+  "end": 3843.25,
+  "text": "toward the better outcomes, right?"
+ },
+ {
+  "start": 3843.25,
+  "end": 3845.93,
+  "text": "Like this is one of the most consequential moments"
+ },
+ {
+  "start": 3845.93,
+  "end": 3847.85,
+  "text": "in human history, really."
+ },
+ {
+  "start": 3847.85,
+  "end": 3850.67,
+  "text": "Do we have any influence, really?"
+ },
+ {
+  "start": 3850.67,
+  "end": 3854.87,
+  "text": "Well, I mean, you know, I think, you know,"
+ },
+ {
+  "start": 3854.87,
+  "end": 3859.87,
+  "text": "not everyone has as much influence as Sam Altman has,"
+ },
+ {
+  "start": 3859.93,
+  "end": 3862.45,
+  "text": "or, you know, Dario Amadei, okay?"
+ },
+ {
+  "start": 3862.45,
+  "end": 3864.69,
+  "text": "But I think we all have some non-zero"
+ },
+ {
+  "start": 3864.69,
+  "end": 3866.37,
+  "text": "amount of influence, right?"
+ },
+ {
+  "start": 3866.37,
+  "end": 3869.53,
+  "text": "At the very least, you know, we can vote."
+ },
+ {
+  "start": 3869.53,
+  "end": 3873.49,
+  "text": "we can make our opinions known."
+ },
+ {
+  "start": 3873.49,
+  "end": 3877.21,
+  "text": "And some subset of people can contribute"
+ },
+ {
+  "start": 3877.21,
+  "end": 3883.09,
+  "text": "by thinking about how do we make this safe."
+ },
+ {
+  "start": 3883.09,
+  "end": 3884.53,
+  "text": "There's a huge amount that needs"
+ },
+ {
+  "start": 3884.53,
+  "end": 3888.01,
+  "text": "to be done in AI safety, in AI governance."
+ },
+ {
+  "start": 3891.57,
+  "end": 3894.29,
+  "text": "And I think that those things are still"
+ },
+ {
+  "start": 3894.29,
+  "end": 3898.77,
+  "text": "very, very underfunded relative to the need for them."
+ },
+ {
+  "start": 3898.77,
+  "end": 3905.77,
+  "text": "So yeah, so I think you could imagine like better outcomes"
+ },
+ {
+  "start": 3905.77,
+  "end": 3911.01,
+  "text": "where, look, even if AI can do everything"
+ },
+ {
+  "start": 3911.01,
+  "end": 3913.73,
+  "text": "that we can do better than we can do it,"
+ },
+ {
+  "start": 3913.73,
+  "end": 3917.81,
+  "text": "that's not necessarily the end of the world, right?"
+ },
+ {
+  "start": 3917.81,
+  "end": 3920.85,
+  "text": "Like you could say lots and lots of people"
+ },
+ {
+  "start": 3920.85,
+  "end": 3924.57,
+  "text": "have long ago made peace with that, with OK, maybe"
+ },
+ {
+  "start": 3924.57,
+  "end": 3927.65,
+  "text": "they're not doing much of economic value, right?"
+ },
+ {
+  "start": 3927.65,
+  "end": 3933.65,
+  "text": "or maybe they can't write a novel or paint a painting"
+ },
+ {
+  "start": 3933.65,
+  "end": 3937.33,
+  "text": "or prove a theorem beyond what anyone else could do."
+ },
+ {
+  "start": 3937.33,
+  "end": 3939.49,
+  "text": "But they still enjoy their lives."
+ },
+ {
+  "start": 3939.49,
+  "end": 3940.89,
+  "text": "They enjoy their friends."
+ },
+ {
+  "start": 3940.89,
+  "end": 3943.01,
+  "text": "They enjoy their hobbies."
+ },
+ {
+  "start": 3943.01,
+  "end": 3946.89,
+  "text": "And so it might be that the small number of us"
+ },
+ {
+  "start": 3946.89,
+  "end": 3950.57,
+  "text": "who've just invested so much of our identity"
+ },
+ {
+  "start": 3950.57,
+  "end": 3954.17,
+  "text": "in can we prove a theorem that no one else can prove,"
+ },
+ {
+  "start": 3954.17,
+  "end": 3957.37,
+  "text": "but maybe we'll just need to get over ourselves."
+ },
+ {
+  "start": 3957.37,
+  "end": 3969.37,
+  "text": "But then, of course, there's the much more basic economic issue."
+ },
+ {
+  "start": 3969.37,
+  "end": 3978.93,
+  "text": "If we really have this world where AIs stay kind of like friendly golden retrievers, kind"
+ },
+ {
+  "start": 3978.93,
+  "end": 3992.65,
+  "text": "of like Claude or GPT mostly are these days, right, and so they stay pretty controllable."
+ },
+ {
+  "start": 3992.65,
+  "end": 4000.45,
+  "text": "You could imagine this world where they bring us infinite wealth, right, or almost limitless"
+ },
+ {
+  "start": 4000.45,
+  "end": 4002.11,
+  "text": "material wealth."
+ },
+ {
+  "start": 4002.11,
+  "end": 4008.21,
+  "text": "But then does that wealth all flow to a few AI companies or does it get shared by"
+ },
+ {
+  "start": 4008.21,
+  "end": 4013.81,
+  "text": "of humanity and of course of course I would prefer the latter yeah this yes"
+ },
+ {
+  "start": 4013.81,
+  "end": 4019.45,
+  "text": "one quote I can't stop thinking about by Arthur Clarke maybe our role on this"
+ },
+ {
+  "start": 4019.45,
+  "end": 4024.73,
+  "text": "planet is not to worship God but to create him what are your thoughts on"
+ },
+ {
+  "start": 4024.73,
+  "end": 4030.41,
+  "text": "that yeah so so there's a famous saying that like the the ultimate you"
+ },
+ {
+  "start": 4030.41,
+  "end": 4034.77,
+  "text": "know Silicon Valley answer to you know does God exist is neither yes nor"
+ },
+ {
+  "start": 4034.77,
+  "end": 4038.17,
+  "text": "or no, it's not yet, right?"
+ },
+ {
+  "start": 4038.17,
+  "end": 4042.05,
+  "text": "So, you know, I mean, like, you know,"
+ },
+ {
+  "start": 4042.05,
+  "end": 4044.25,
+  "text": "when you're in, you know, when you spend time"
+ },
+ {
+  "start": 4044.25,
+  "end": 4047.51,
+  "text": "in these circles, like the San Francisco AI world,"
+ },
+ {
+  "start": 4047.51,
+  "end": 4051.05,
+  "text": "like, yeah, like there are constant jokes about,"
+ },
+ {
+  "start": 4051.05,
+  "end": 4054.73,
+  "text": "you know, are we, you know, creating God, right?"
+ },
+ {
+  "start": 4056.45,
+  "end": 4058.85,
+  "text": "You know, build, people have used terms"
+ },
+ {
+  "start": 4058.85,
+  "end": 4061.01,
+  "text": "like, you know, the sand god, right?"
+ },
+ {
+  "start": 4061.01,
+  "end": 4068.13,
+  "text": "as silicon microchips being derived from sand."
+ },
+ {
+  "start": 4068.13,
+  "end": 4073.41,
+  "text": "So this is clearly not a, we could say if it is a god,"
+ },
+ {
+  "start": 4073.41,
+  "end": 4076.01,
+  "text": "then it clearly isn't one that meets"
+ },
+ {
+  "start": 4076.01,
+  "end": 4079.33,
+  "text": "all of the traditional religious conceptions."
+ },
+ {
+  "start": 4079.33,
+  "end": 4083.21,
+  "text": "It wasn't there at the beginning of the universe."
+ },
+ {
+  "start": 4083.21,
+  "end": 4084.33,
+  "text": "Does it love us?"
+ },
+ {
+  "start": 4084.33,
+  "end": 4085.17,
+  "text": "Well, maybe."
+ },
+ {
+  "start": 4085.17,
+  "end": 4090.01,
+  "text": "If we program it to love us, then maybe it will."
+ },
+ {
+  "start": 4090.01,
+  "end": 4095.73,
+  "text": "I mean, I think that we are headed for a form of intelligence"
+ },
+ {
+  "start": 4095.73,
+  "end": 4099.69,
+  "text": "that's sufficiently far beyond our intelligence"
+ },
+ {
+  "start": 4099.69,
+  "end": 4102.29,
+  "text": "that it will seem godlike to us."
+ },
+ {
+  "start": 4102.29,
+  "end": 4105.97,
+  "text": "And maybe some people have already had this experience,"
+ },
+ {
+  "start": 4105.97,
+  "end": 4108.85,
+  "text": "just interacting with caring AIs."
+ },
+ {
+  "start": 4108.85,
+  "end": 4113.93,
+  "text": "It feels like, OK, people have prayed to gods for millennia."
+ },
+ {
+  "start": 4113.93,
+  "end": 4117.25,
+  "text": "Now for the first time, we have something kind of like one"
+ },
+ {
+  "start": 4117.25,
+  "end": 4120.01,
+  "text": "that actually answers, right?"
+ },
+ {
+  "start": 4121.01,
+  "end": 4124.09,
+  "text": "You know, now of course, you know,"
+ },
+ {
+  "start": 4124.09,
+  "end": 4126.73,
+  "text": "one should be very cautious here, right?"
+ },
+ {
+  "start": 4127.73,
+  "end": 4129.17,
+  "text": "You know, we don't want, you know,"
+ },
+ {
+  "start": 4129.17,
+  "end": 4132.89,
+  "text": "we want people to maintain their critical faculties,"
+ },
+ {
+  "start": 4132.89,
+  "end": 4134.91,
+  "text": "right, and part of the problem is like,"
+ },
+ {
+  "start": 4134.91,
+  "end": 4138.85,
+  "text": "precisely because these models are now so good, right?"
+ },
+ {
+  "start": 4138.85,
+  "end": 4143.29,
+  "text": "It is so tempting to just forget your critical faculties,"
+ },
+ {
+  "start": 4143.29,
+  "end": 4146.69,
+  "text": "right, just believe whatever it's telling you, right?"
+ },
+ {
+  "start": 4146.69,
+  "end": 4150.75,
+  "text": "And that way lies a great deal of danger, right?"
+ },
+ {
+  "start": 4150.75,
+  "end": 4155.63,
+  "text": "So I think, look, I use LLMs for all sorts of things."
+ },
+ {
+  "start": 4155.63,
+  "end": 4156.47,
+  "text": "I use it for..."
+ },
+ {
+  "start": 4156.47,
+  "end": 4160.07,
+  "text": "I heard you calling GPT-5.6 the greatest therapist"
+ },
+ {
+  "start": 4160.07,
+  "end": 4160.91,
+  "text": "of all time."
+ },
+ {
+  "start": 4160.91,
+  "end": 4161.73,
+  "text": "Yeah, yeah, yeah."
+ },
+ {
+  "start": 4161.73,
+  "end": 4163.63,
+  "text": "I mean, I can use it for just dealing"
+ },
+ {
+  "start": 4163.63,
+  "end": 4167.91,
+  "text": "with my personal traumas that are still with me"
+ },
+ {
+  "start": 4167.91,
+  "end": 4170.99,
+  "text": "from when I was this little kid"
+ },
+ {
+  "start": 4170.99,
+  "end": 4173.31,
+  "text": "who would skip grades in college, right?"
+ },
+ {
+  "start": 4173.31,
+  "end": 4178.07,
+  "text": "I can use it for just all kinds of personal issues."
+ },
+ {
+  "start": 4178.07,
+  "end": 4180.39,
+  "text": "I can use it for my research, right?"
+ },
+ {
+  "start": 4180.39,
+  "end": 4185.39,
+  "text": "So, and so many other people have found"
+ },
+ {
+  "start": 4189.87,
+  "end": 4192.27,
+  "text": "so many other uses for it, right?"
+ },
+ {
+  "start": 4192.27,
+  "end": 4196.03,
+  "text": "But yes, one should also remember"
+ },
+ {
+  "start": 4196.03,
+  "end": 4198.55,
+  "text": "that these are not literally gods."
+ },
+ {
+  "start": 4198.55,
+  "end": 4201.47,
+  "text": "They are also consumer products, right?"
+ },
+ {
+  "start": 4201.47,
+  "end": 4203.85,
+  "text": "they've been shaped by a whole bunch"
+ },
+ {
+  "start": 4203.85,
+  "end": 4205.85,
+  "text": "of different incentives, right?"
+ },
+ {
+  "start": 4205.85,
+  "end": 4208.33,
+  "text": "Including commercial incentives"
+ },
+ {
+  "start": 4208.33,
+  "end": 4211.61,
+  "text": "that to make people want to keep using them."
+ },
+ {
+  "start": 4211.61,
+  "end": 4216.61,
+  "text": "And so I think it is really crucial"
+ },
+ {
+  "start": 4216.81,
+  "end": 4218.39,
+  "text": "that even as we use them,"
+ },
+ {
+  "start": 4218.39,
+  "end": 4223.39,
+  "text": "that we don't completely lose our critical sense"
+ },
+ {
+  "start": 4223.51,
+  "end": 4226.37,
+  "text": "or our ability to evaluate things for ourselves."
+ },
+ {
+  "start": 4226.37,
+  "end": 4230.09,
+  "text": "And that's, I'm a professor, right?"
+ },
+ {
+  "start": 4230.09,
+  "end": 4233.93,
+  "text": "this is a huge problem that we're facing right now in education, right?"
+ },
+ {
+  "start": 4233.93,
+  "end": 4240.45,
+  "text": "How do we convince our students to maintain their ability to think things through for themselves?"
+ },
+ {
+  "start": 4240.45,
+  "end": 4243.05,
+  "text": "Yeah."
+ },
+ {
+  "start": 4243.05,
+  "end": 4249.53,
+  "text": "Speaking of God, I was fascinated by the fact while prepping this conversation"
+ },
+ {
+  "start": 4249.53,
+  "end": 4257.61,
+  "text": "that, to me, you are unique in the way that, you know, you are..."
+ },
+ {
+  "start": 4257.61,
+  "end": 4266.25,
+  "text": "You've been working in this space of science for decades, and at the same time you write"
+ },
+ {
+  "start": 4266.25,
+  "end": 4271.93,
+  "text": "about spirituality, religion, even existentialism a lot."
+ },
+ {
+  "start": 4271.93,
+  "end": 4273.89,
+  "text": "I mean a little bit."
+ },
+ {
+  "start": 4273.89,
+  "end": 4279.85,
+  "text": "I write about sort of whatever is interesting to me at the moment, or whatever is helping"
+ },
+ {
+  "start": 4279.85,
+  "end": 4288.61,
+  "text": "me procrastinate from whatever else I should be doing, right? But I mean, you know, clearly,"
+ },
+ {
+  "start": 4288.61,
+  "end": 4294.33,
+  "text": "you know, religion, art, you know, these are all parts of human experience. And, you know,"
+ },
+ {
+  "start": 4294.33,
+  "end": 4297.45,
+  "text": "if you're interested in everything, then of course you're going to be interested"
+ },
+ {
+  "start": 4297.45,
+  "end": 4298.45,
+  "text": "in them."
+ },
+ {
+  "start": 4298.45,
+  "end": 4299.45,
+  "text": "What do you believe in?"
+ },
+ {
+  "start": 4299.45,
+  "end": 4322.45,
+  "text": "So, I was raised in a Jewish family, and at some point, actually around the time when I was reading Isaac Asimov and Carl Sagan and Richard Dawkins and all the people, around when I was 12 or so, I said,"
+ },
+ {
+  "start": 4322.45,
+  "end": 4329.41,
+  "text": "This is really all a bunch of Iron Age myths, isn't it?"
+ },
+ {
+  "start": 4329.41,
+  "end": 4332.49,
+  "text": "None of that was actually true, what"
+ },
+ {
+  "start": 4332.49,
+  "end": 4336.01,
+  "text": "I had learned about in my Hebrew day school."
+ },
+ {
+  "start": 4336.01,
+  "end": 4346.93,
+  "text": "And I became, for a while, a fairly militant atheist, I guess."
+ },
+ {
+  "start": 4346.93,
+  "end": 4351.09,
+  "text": "And I thought, OK, the progress of science"
+ },
+ {
+  "start": 4351.09,
+  "end": 4356.73,
+  "text": "has given less and less room for God, for anything mystical."
+ },
+ {
+  "start": 4356.73,
+  "end": 4359.65,
+  "text": "And that's just been the pattern for hundreds of years."
+ },
+ {
+  "start": 4359.65,
+  "end": 4364.21,
+  "text": "And there's no reason to expect that that won't continue"
+ },
+ {
+  "start": 4364.21,
+  "end": 4366.85,
+  "text": "and that God will just get pushed into a tighter"
+ },
+ {
+  "start": 4366.85,
+  "end": 4369.57,
+  "text": "and tighter corner of maybe setting"
+ },
+ {
+  "start": 4369.57,
+  "end": 4373.45,
+  "text": "the constants of the standard model of elementary particles."
+ },
+ {
+  "start": 4373.45,
+  "end": 4377.21,
+  "text": "But then after that, the walls of physics pretty much"
+ },
+ {
+  "start": 4377.21,
+  "end": 4380.85,
+  "text": "answer what is going to happen."
+ },
+ {
+  "start": 4380.85,
+  "end": 4386.61,
+  "text": "And so that was kind of my view for a while."
+ },
+ {
+  "start": 4386.61,
+  "end": 4394.61,
+  "text": "I remember when I was a student, I was in computer science."
+ },
+ {
+  "start": 4394.61,
+  "end": 4397.33,
+  "text": "Unfortunately, computer science tends"
+ },
+ {
+  "start": 4397.33,
+  "end": 4400.21,
+  "text": "to be more than 80% male."
+ },
+ {
+  "start": 4400.21,
+  "end": 4410.17,
+  "text": "And I thought, man, if I wanted to meet women,"
+ },
+ {
+  "start": 4410.17,
+  "end": 4414.13,
+  "text": "the best way would be to go to the Hillel house."
+ },
+ {
+  "start": 4414.13,
+  "end": 4416.49,
+  "text": "But then I said, but it would be dishonest for me"
+ },
+ {
+  "start": 4416.49,
+  "end": 4418.93,
+  "text": "to do that, because I don't really believe in it."
+ },
+ {
+  "start": 4418.93,
+  "end": 4422.25,
+  "text": "And then I thought, but it's not really symmetric, is it?"
+ },
+ {
+  "start": 4422.25,
+  "end": 4425.81,
+  "text": "It's like, OK, if you believe in a personal god who"
+ },
+ {
+  "start": 4425.81,
+  "end": 4427.97,
+  "text": "really cares about you, then he"
+ },
+ {
+  "start": 4427.97,
+  "end": 4432.93,
+  "text": "might punish you for going to a secular humanist meetup."
+ },
+ {
+  "start": 4432.93,
+  "end": 4434.61,
+  "text": "But there's no atheist god who will"
+ },
+ {
+  "start": 4434.61,
+  "end": 4437.57,
+  "text": "punish you for going to Hillel."
+ },
+ {
+  "start": 4437.57,
+  "end": 4440.17,
+  "text": "If you want to go there and have the social experience,"
+ },
+ {
+  "start": 4440.17,
+  "end": 4442.13,
+  "text": "then you should just do that."
+ },
+ {
+  "start": 4442.13,
+  "end": 4447.09,
+  "text": "And so I sort of evolved to have a more relaxed attitude,"
+ },
+ {
+  "start": 4447.09,
+  "end": 4452.25,
+  "text": "you could say, where this is just part of whatever"
+ },
+ {
+  "start": 4452.25,
+  "end": 4454.09,
+  "text": "my history, my culture."
+ },
+ {
+  "start": 4459.73,
+  "end": 4462.97,
+  "text": "What does it mean to you to be Jewish?"
+ },
+ {
+  "start": 4462.97,
+  "end": 4466.73,
+  "text": "Well, it means that, first of all,"
+ },
+ {
+  "start": 4466.73,
+  "end": 4469.93,
+  "text": "every few generations or so, you know,"
+ },
+ {
+  "start": 4469.93,
+  "end": 4471.93,
+  "text": "someone is going to try to kill you."
+ },
+ {
+  "start": 4471.93,
+  "end": 4475.49,
+  "text": "So you should probably be aware of the rate."
+ },
+ {
+  "start": 4475.49,
+  "end": 4476.97,
+  "text": "And like when I was a kid,"
+ },
+ {
+  "start": 4476.97,
+  "end": 4479.41,
+  "text": "that was just kind of abstract knowledge, right?"
+ },
+ {
+  "start": 4479.41,
+  "end": 4481.03,
+  "text": "That was like something that I read,"
+ },
+ {
+  "start": 4481.03,
+  "end": 4483.43,
+  "text": "that I knew because I read it in books"
+ },
+ {
+  "start": 4483.43,
+  "end": 4487.61,
+  "text": "or because, you know, my grandparents said,"
+ },
+ {
+  "start": 4487.61,
+  "end": 4490.33,
+  "text": "you know, actually seen it, you know,"
+ },
+ {
+  "start": 4490.33,
+  "end": 4495.33,
+  "text": "but now, you know, I think we see that"
+ },
+ {
+  "start": 4495.33,
+  "end": 4497.97,
+  "text": "I think we see that in a much more concrete way."
+ },
+ {
+  "start": 4497.97,
+  "end": 4501.73,
+  "text": "So it's first of all, it's that."
+ },
+ {
+  "start": 4501.73,
+  "end": 4507.49,
+  "text": "But it's also, you could say, I would"
+ },
+ {
+  "start": 4507.49,
+  "end": 4516.01,
+  "text": "say I evolved to a position where ethics is really hard."
+ },
+ {
+  "start": 4516.01,
+  "end": 4518.17,
+  "text": "We could answer all the questions"
+ },
+ {
+  "start": 4518.17,
+  "end": 4525.17,
+  "text": "about what elementary particles are going"
+ },
+ {
+  "start": 4525.17,
+  "end": 4528.25,
+  "text": "to do when you put them in this state or in that state."
+ },
+ {
+  "start": 4528.25,
+  "end": 4531.33,
+  "text": "And it still wouldn't answer the questions about, OK,"
+ },
+ {
+  "start": 4531.33,
+  "end": 4533.13,
+  "text": "how should we live?"
+ },
+ {
+  "start": 4533.13,
+  "end": 4539.77,
+  "text": "Or which other entities should we even"
+ },
+ {
+  "start": 4539.77,
+  "end": 4543.49,
+  "text": "regard as having moral value at all?"
+ },
+ {
+  "start": 4543.49,
+  "end": 4546.77,
+  "text": "Hopefully we regard all other humans as having value."
+ },
+ {
+  "start": 4546.77,
+  "end": 4551.45,
+  "text": "What about fetuses?"
+ },
+ {
+  "start": 4551.45,
+  "end": 4554.33,
+  "text": "What about non-human animals?"
+ },
+ {
+  "start": 4554.33,
+  "end": 4556.33,
+  "text": "What about AIs?"
+ },
+ {
+  "start": 4556.33,
+  "end": 4562.69,
+  "text": "Who is in the charm circle of conscious beings"
+ },
+ {
+  "start": 4562.69,
+  "end": 4563.69,
+  "text": "that we care about?"
+ },
+ {
+  "start": 4563.69,
+  "end": 4567.21,
+  "text": "And you could say, for all the progress in science,"
+ },
+ {
+  "start": 4567.21,
+  "end": 4570.33,
+  "text": "there is still this hard problem of consciousness."
+ },
+ {
+  "start": 4570.33,
+  "end": 4574.49,
+  "text": "There is still this explanatory gap"
+ },
+ {
+  "start": 4574.49,
+  "end": 4579.29,
+  "text": "in getting to, well, where do we actually"
+ },
+ {
+  "start": 4579.29,
+  "end": 4583.13,
+  "text": "enter the picture as agents?"
+ },
+ {
+  "start": 4583.13,
+  "end": 4588.13,
+  "text": "And so you could set a charitable view toward religion"
+ },
+ {
+  "start": 4590.73,
+  "end": 4592.97,
+  "text": "would be to say that people have been actually grappling"
+ },
+ {
+  "start": 4592.97,
+  "end": 4596.25,
+  "text": "with these kinds of things for thousands of years"
+ },
+ {
+  "start": 4596.25,
+  "end": 4599.57,
+  "text": "with the concepts that were available to them at the time."
+ },
+ {
+  "start": 4602.21,
+  "end": 4605.77,
+  "text": "Their science was vastly more primitive than ours was."
+ },
+ {
+  "start": 4605.77,
+  "end": 4609.25,
+  "text": "And their morality was also much more primitive"
+ },
+ {
+  "start": 4609.25,
+  "end": 4612.41,
+  "text": "than ours was, and so they got a lot wrong."
+ },
+ {
+  "start": 4612.41,
+  "end": 4616.63,
+  "text": "But if you look at the Buddhist tradition, for example,"
+ },
+ {
+  "start": 4616.63,
+  "end": 4619.03,
+  "text": "there was a lot of really deep thought there."
+ },
+ {
+  "start": 4619.03,
+  "end": 4625.49,
+  "text": "If you look at almost any of the major religious traditions,"
+ },
+ {
+  "start": 4625.49,
+  "end": 4629.27,
+  "text": "there was a lot of thought there that was worth preserving."
+ },
+ {
+  "start": 4629.27,
+  "end": 4635.23,
+  "text": "And I would say the Jewish tradition in particular"
+ },
+ {
+  "start": 4635.23,
+  "end": 4642.35,
+  "text": "is notable for being maybe one of the first to say,"
+ },
+ {
+  "start": 4642.35,
+  "end": 4649.53,
+  "text": "Just because, basically, might does not necessarily"
+ },
+ {
+  "start": 4649.53,
+  "end": 4650.03,
+  "text": "make right."
+ },
+ {
+  "start": 4653.87,
+  "end": 4657.19,
+  "text": "When the first temple was destroyed"
+ },
+ {
+  "start": 4657.19,
+  "end": 4660.75,
+  "text": "and the Jews were exiled to Babylon,"
+ },
+ {
+  "start": 4660.75,
+  "end": 4663.49,
+  "text": "the normal thing to say, according"
+ },
+ {
+  "start": 4663.49,
+  "end": 4670.51,
+  "text": "to the Moors of the time, was our god has failed us."
+ },
+ {
+  "start": 4670.51,
+  "end": 4672.83,
+  "text": "The true God is the Babylonian God,"
+ },
+ {
+  "start": 4672.83,
+  "end": 4676.15,
+  "text": "because that's the one who defeated us in war."
+ },
+ {
+  "start": 4676.15,
+  "end": 4681.19,
+  "text": "And you could say Judaism, as we know it today,"
+ },
+ {
+  "start": 4681.19,
+  "end": 4684.35,
+  "text": "started when they said, no."
+ },
+ {
+  "start": 4684.35,
+  "end": 4685.79,
+  "text": "We failed God."
+ },
+ {
+  "start": 4685.79,
+  "end": 4688.35,
+  "text": "It wasn't that God failed us."
+ },
+ {
+  "start": 4688.35,
+  "end": 4695.23,
+  "text": "And you see in the Bible, there is one book"
+ },
+ {
+  "start": 4695.23,
+  "end": 4698.83,
+  "text": "that deals with these things way more brilliantly"
+ },
+ {
+  "start": 4698.83,
+  "end": 4701.99,
+  "text": "than anything else, which is Joke, of course, right?"
+ },
+ {
+  "start": 4701.99,
+  "end": 4706.99,
+  "text": "But they're just sort of directly asking the question"
+ },
+ {
+  "start": 4707.31,
+  "end": 4712.31,
+  "text": "of how can, if there is this God,"
+ },
+ {
+  "start": 4713.91,
+  "end": 4718.63,
+  "text": "how can he allow so much injustice"
+ },
+ {
+  "start": 4718.63,
+  "end": 4721.75,
+  "text": "or cause all of this injustice?"
+ },
+ {
+  "start": 4721.75,
+  "end": 4723.35,
+  "text": "What's your response to that?"
+ },
+ {
+  "start": 4724.99,
+  "end": 4725.99,
+  "text": "Well, I don't know."
+ },
+ {
+  "start": 4725.99,
+  "end": 4735.99,
+  "text": "I mean, famously, the answer of the book was, well,"
+ },
+ {
+  "start": 4735.99,
+  "end": 4740.51,
+  "text": "puny human, what makes you think that you could dare"
+ },
+ {
+  "start": 4740.51,
+  "end": 4743.51,
+  "text": "to try to understand the answer?"
+ },
+ {
+  "start": 4743.51,
+  "end": 4748.11,
+  "text": "So it's sort of a very unsatisfying non-answer,"
+ },
+ {
+  "start": 4748.11,
+  "end": 4749.87,
+  "text": "I would say."
+ },
+ {
+  "start": 4749.87,
+  "end": 4754.95,
+  "text": "But maybe one answer would be to say, well,"
+ },
+ {
+  "start": 4754.95,
+  "end": 4756.79,
+  "text": "We shouldn't accept the situation."
+ },
+ {
+  "start": 4756.79,
+  "end": 4758.83,
+  "text": "We should fight it."
+ },
+ {
+  "start": 4758.83,
+  "end": 4763.83,
+  "text": "And that, the whole project of creating an aligned AI"
+ },
+ {
+  "start": 4763.99,
+  "end": 4767.99,
+  "text": "is, you could say, it's sort of like people saying,"
+ },
+ {
+  "start": 4767.99,
+  "end": 4772.39,
+  "text": "well, you know what, screw this."
+ },
+ {
+  "start": 4772.39,
+  "end": 4776.51,
+  "text": "If God is going to allow all of this injustice,"
+ },
+ {
+  "start": 4776.51,
+  "end": 4781.51,
+  "text": "then we should be helping the really just God"
+ },
+ {
+  "start": 4783.07,
+  "end": 4784.91,
+  "text": "come into being."
+ },
+ {
+  "start": 4784.91,
+  "end": 4792.99,
+  "text": "Yeah, I struggled a lot, I thought a lot about going into social politics with you, but I"
+ },
+ {
+  "start": 4792.99,
+  "end": 4801.59,
+  "text": "found specifically three very interesting thought-provoking blog posts of yours."
+ },
+ {
+  "start": 4801.59,
+  "end": 4808.03,
+  "text": "And I just came to the point that I thought, you know, I named this podcast after Frank"
+ },
+ {
+  "start": 4808.03,
+  "end": 4814.11,
+  "text": "Hill's book, Man's Search for Meaning, and it would have been a disgrace not to"
+ },
+ {
+  "start": 4814.11,
+  "end": 4817.43,
+  "text": "to talk about what's going on in the world."
+ },
+ {
+  "start": 4817.43,
+  "end": 4820.47,
+  "text": "So I would just like to give you the opportunity,"
+ },
+ {
+  "start": 4820.47,
+  "end": 4823.51,
+  "text": "because I found this blog post about October 7th, right?"
+ },
+ {
+  "start": 4823.51,
+  "end": 4828.43,
+  "text": "Where you were also advocating to offer refuge"
+ },
+ {
+  "start": 4828.43,
+  "end": 4830.67,
+  "text": "for Israelis in other lands."
+ },
+ {
+  "start": 4830.67,
+  "end": 4833.35,
+  "text": "And yeah, I'd just like to give you the opportunity"
+ },
+ {
+  "start": 4833.35,
+  "end": 4835.35,
+  "text": "to comment or share your perspective"
+ },
+ {
+  "start": 4835.35,
+  "end": 4837.91,
+  "text": "about what's happening in Gaza at the moment."
+ },
+ {
+  "start": 4837.91,
+  "end": 4849.55,
+  "text": "No, it is, you know, it's a tragedy, you know, that I don't want any innocent people on any"
+ },
+ {
+  "start": 4849.55,
+  "end": 4859.59,
+  "text": "side to be killed, you know, I've always been a supporter of, you know, what was first"
+ },
+ {
+  "start": 4859.59,
+  "end": 4865.19,
+  "text": "called partition, what was later called the two-state solution, you know, that has"
+ },
+ {
+  "start": 4865.19,
+  "end": 4869.97,
+  "text": "always been my end game, you know, to have the different peoples living next to each"
+ },
+ {
+  "start": 4869.97,
+  "end": 4880.85,
+  "text": "other in peace. And, you know, when I was growing up, so like, you know, when I was"
+ },
+ {
+  "start": 4880.85,
+  "end": 4886.89,
+  "text": "a teenager, I'd say in the 90s, like that was kind of the liberal position, right?"
+ },
+ {
+  "start": 4886.89,
+  "end": 4892.53,
+  "text": "That was kind of like an enlightened, like, well-meaning person in the U.S., like"
+ },
+ {
+  "start": 4892.53,
+  "end": 4897.61,
+  "text": "That was just the obvious thing that you would believe."
+ },
+ {
+  "start": 4897.61,
+  "end": 4900.97,
+  "text": "I think that what October 7 laid bare"
+ },
+ {
+  "start": 4900.97,
+  "end": 4904.13,
+  "text": "is that there's this new, completely different"
+ },
+ {
+  "start": 4904.13,
+  "end": 4909.63,
+  "text": "understanding that sort of started in academia."
+ },
+ {
+  "start": 4909.63,
+  "end": 4916.17,
+  "text": "Well, it started in the Islamic world, in the Soviet Union."
+ },
+ {
+  "start": 4916.17,
+  "end": 4923.05,
+  "text": "from there got to academia through people like Edward"
+ },
+ {
+  "start": 4923.05,
+  "end": 4924.17,
+  "text": "Said."
+ },
+ {
+  "start": 4924.17,
+  "end": 4927.45,
+  "text": "And I knew about this ideology because I"
+ },
+ {
+  "start": 4927.45,
+  "end": 4929.81,
+  "text": "was a grad student in Berkeley."
+ },
+ {
+  "start": 4929.81,
+  "end": 4933.57,
+  "text": "I was there during September 11th,"
+ },
+ {
+  "start": 4933.57,
+  "end": 4936.09,
+  "text": "when the night of September 11th,"
+ },
+ {
+  "start": 4936.09,
+  "end": 4939.37,
+  "text": "there was a whole vigil where there were people basically"
+ },
+ {
+  "start": 4939.37,
+  "end": 4942.01,
+  "text": "saying, yeah, the US deserved this."
+ },
+ {
+  "start": 4942.01,
+  "end": 4945.57,
+  "text": "And that was what they believed."
+ },
+ {
+  "start": 4945.57,
+  "end": 4950.57,
+  "text": "And so I, you know, and, you know, and they,"
+ },
+ {
+  "start": 4950.65,
+  "end": 4953.67,
+  "text": "like there was like a Holocaust memorial event"
+ },
+ {
+  "start": 4953.67,
+  "end": 4955.77,
+  "text": "and they took it over with a, you know,"
+ },
+ {
+  "start": 4955.77,
+  "end": 4957.61,
+  "text": "with a Palestine thing, right?"
+ },
+ {
+  "start": 4957.61,
+  "end": 4961.53,
+  "text": "And they threw rocks and smashed the windows"
+ },
+ {
+  "start": 4961.53,
+  "end": 4962.37,
+  "text": "at the Hillel Center."
+ },
+ {
+  "start": 4962.37,
+  "end": 4963.37,
+  "text": "I've never heard of that."
+ },
+ {
+  "start": 4963.37,
+  "end": 4965.93,
+  "text": "Yeah, this was, I know, this all happened in Berkeley"
+ },
+ {
+  "start": 4965.93,
+  "end": 4970.93,
+  "text": "in 2002, around the time of the second Intifada, okay?"
+ },
+ {
+  "start": 4971.35,
+  "end": 4975.55,
+  "text": "And so I knew that like there was this sort of,"
+ },
+ {
+  "start": 4975.55,
+  "end": 4984.85,
+  "text": "perspective that had come from, let's say, post-colonial theory or post-modernism, deconstructionism,"
+ },
+ {
+  "start": 4984.85,
+  "end": 4994.51,
+  "text": "this whole, it originated in this left fringe within academia that said, no, we don't"
+ },
+ {
+  "start": 4994.51,
+  "end": 5004.89,
+  "text": "want two states, we don't want a two-state solution, the Jews are just settler-colonialists."
+ },
+ {
+  "start": 5004.89,
+  "end": 5013.81,
+  "text": "they don't belong there, they should go back to Poland, or whatever, and of course many"
+ },
+ {
+  "start": 5013.81,
+  "end": 5022.45,
+  "text": "of them came from, they ended up in Israel in the 1940s because their families had been"
+ },
+ {
+  "start": 5022.45,
+  "end": 5026.45,
+  "text": "murdered and there was literally nowhere else on earth that would take them at the"
+ },
+ {
+  "start": 5026.45,
+  "end": 5033.53,
+  "text": "time, so that's how they got there, but they don't belong there, in fact, maybe"
+ },
+ {
+  "start": 5033.53,
+  "end": 5037.17,
+  "text": "There never was any Jewish connection to that place at all,"
+ },
+ {
+  "start": 5037.17,
+  "end": 5040.25,
+  "text": "all the archaeology notwithstanding."
+ },
+ {
+  "start": 5040.25,
+  "end": 5048.13,
+  "text": "It's all a myth, and they're just settler colonialists."
+ },
+ {
+  "start": 5048.13,
+  "end": 5053.61,
+  "text": "They're just like the French in Algeria,"
+ },
+ {
+  "start": 5053.61,
+  "end": 5057.01,
+  "text": "or white people in South Africa,"
+ },
+ {
+  "start": 5057.01,
+  "end": 5061.13,
+  "text": "and they just have no right to be there."
+ },
+ {
+  "start": 5061.13,
+  "end": 5066.13,
+  "text": "And so this was sort of a very fringe view"
+ },
+ {
+  "start": 5066.13,
+  "end": 5070.69,
+  "text": "in the American context for decades."
+ },
+ {
+  "start": 5070.69,
+  "end": 5074.89,
+  "text": "Then it was sort of after October 7 that we all saw,"
+ },
+ {
+  "start": 5074.89,
+  "end": 5076.89,
+  "text": "this is metastasized now."
+ },
+ {
+  "start": 5076.89,
+  "end": 5080.21,
+  "text": "This has become a mainstream view."
+ },
+ {
+  "start": 5080.21,
+  "end": 5082.89,
+  "text": "The very day of that massacre, we"
+ },
+ {
+  "start": 5082.89,
+  "end": 5086.61,
+  "text": "saw at every major university people cheering it,"
+ },
+ {
+  "start": 5086.61,
+  "end": 5090.33,
+  "text": "people saying, finally, the Israelis"
+ },
+ {
+  "start": 5090.33,
+  "end": 5097.97,
+  "text": "getting what they deserved, or what they deserved apparently is to all be killed in a very horrific"
+ },
+ {
+  "start": 5097.97,
+  "end": 5098.97,
+  "text": "way."
+ },
+ {
+  "start": 5098.97,
+  "end": 5111.37,
+  "text": "Do you have a thesis on why it's the Jewish folk out of all that's been ostracized for"
+ },
+ {
+  "start": 5111.37,
+  "end": 5112.37,
+  "text": "such a long time?"
+ },
+ {
+  "start": 5112.37,
+  "end": 5117.37,
+  "text": "There's something really, really deep and really primal here that goes back to the"
+ },
+ {
+  "start": 5117.37,
+  "end": 5119.81,
+  "text": "beginnings of Western civilization."
+ },
+ {
+  "start": 5119.81,
+  "end": 5122.25,
+  "text": "But this is something that's been with us"
+ },
+ {
+  "start": 5122.25,
+  "end": 5123.71,
+  "text": "for thousands of years."
+ },
+ {
+  "start": 5125.81,
+  "end": 5130.65,
+  "text": "I mean, if it hadn't been, then there could never"
+ },
+ {
+  "start": 5130.65,
+  "end": 5132.65,
+  "text": "have been a Holocaust, for example."
+ },
+ {
+  "start": 5132.65,
+  "end": 5135.33,
+  "text": "There could never have been the whole history"
+ },
+ {
+  "start": 5135.33,
+  "end": 5137.05,
+  "text": "of expulsions before that."
+ },
+ {
+  "start": 5137.05,
+  "end": 5142.05,
+  "text": "But we are far afield from my expertise at this point."
+ },
+ {
+  "start": 5142.05,
+  "end": 5149.93,
+  "text": "expertise at this point. I am not a scholar of anti-Semitism of Jewish history, but what the"
+ },
+ {
+  "start": 5149.93,
+  "end": 5158.81,
+  "text": "people who do study it say is that it's really in some sense not about Jews, right? It's about"
+ },
+ {
+  "start": 5158.81,
+  "end": 5166.33,
+  "text": "like, you know, civilizations that sort of need a way to unite all these sort of disparate"
+ },
+ {
+  "start": 5166.33,
+  "end": 5173.65,
+  "text": "interests you know behind like you know whatever is is most troubling to that"
+ },
+ {
+  "start": 5173.65,
+  "end": 5179.41,
+  "text": "society whether it's capitalism or whether it's communism or its"
+ },
+ {
+  "start": 5179.41,
+  "end": 5184.81,
+  "text": "immigration or its feminism or whatever like there has to be a villain who is"
+ },
+ {
+  "start": 5184.81,
+  "end": 5189.67,
+  "text": "behind the scenes pulling the strings causing this bad thing that you don't"
+ },
+ {
+  "start": 5189.67,
+  "end": 5194.61,
+  "text": "like to infect your civilization right and if you just if we can all"
+ },
+ {
+  "start": 5194.61,
+  "end": 5201.45,
+  "text": "just unite to cast out that that sort of you know malign force then then you know"
+ },
+ {
+  "start": 5201.45,
+  "end": 5206.13,
+  "text": "this then then we'll have a utopian society right and for whatever reason"
+ },
+ {
+  "start": 5206.13,
+  "end": 5210.97,
+  "text": "you know Jews were sort of slotted into this role you know 2,000 years ago"
+ },
+ {
+  "start": 5210.97,
+  "end": 5215.65,
+  "text": "right you know a lot of it was you know came from early Christianity and"
+ },
+ {
+  "start": 5215.65,
+  "end": 5219.41,
+  "text": "from you know the idea that you know that you know the you know of course"
+ },
+ {
+  "start": 5219.41,
+  "end": 5224.09,
+  "text": "the the the writers of the New Testament you know were Jews right you"
+ },
+ {
+  "start": 5224.09,
+  "end": 5226.93,
+  "text": "they were a different faction of Jews,"
+ },
+ {
+  "start": 5226.93,
+  "end": 5234.85,
+  "text": "arguing against the faction that hadn't supported Jesus."
+ },
+ {
+  "start": 5234.85,
+  "end": 5242.21,
+  "text": "But then because of that, the idea became the Jews"
+ },
+ {
+  "start": 5242.21,
+  "end": 5245.53,
+  "text": "were literally guilty of deicide."
+ },
+ {
+  "start": 5245.53,
+  "end": 5252.13,
+  "text": "Instead of maybe getting credit for producing the Son of God,"
+ },
+ {
+  "start": 5252.13,
+  "end": 5259.61,
+  "text": "They got the blame for turning them over to the Romans."
+ },
+ {
+  "start": 5259.61,
+  "end": 5262.89,
+  "text": "So there was that, and then there"
+ },
+ {
+  "start": 5262.89,
+  "end": 5265.47,
+  "text": "was thousands of years of history"
+ },
+ {
+  "start": 5265.47,
+  "end": 5268.69,
+  "text": "when Jews were excluded from other occupations."
+ },
+ {
+  "start": 5268.69,
+  "end": 5271.35,
+  "text": "And so they ended up doing the things"
+ },
+ {
+  "start": 5271.35,
+  "end": 5273.85,
+  "text": "that no one else would do, which a lot of times"
+ },
+ {
+  "start": 5273.85,
+  "end": 5277.41,
+  "text": "was involve trading, involve banking."
+ },
+ {
+  "start": 5277.41,
+  "end": 5280.17,
+  "text": "And there's a long history of minorities"
+ },
+ {
+  "start": 5280.17,
+  "end": 5283.11,
+  "text": "who learn to specialize in those kinds of things,"
+ },
+ {
+  "start": 5283.11,
+  "end": 5285.49,
+  "text": "who then get vilified for it, right?"
+ },
+ {
+  "start": 5285.49,
+  "end": 5287.99,
+  "text": "I think like the Parsis in India,"
+ },
+ {
+  "start": 5287.99,
+  "end": 5292.01,
+  "text": "the Chinese in Malaysia, right?"
+ },
+ {
+  "start": 5292.01,
+  "end": 5294.45,
+  "text": "There are a lot of other examples of that."
+ },
+ {
+  "start": 5294.45,
+  "end": 5297.17,
+  "text": "So then, you know, that got mixed in with it as well."
+ },
+ {
+  "start": 5297.17,
+  "end": 5301.17,
+  "text": "You know, but there's a long, long history here."
+ },
+ {
+  "start": 5301.17,
+  "end": 5305.77,
+  "text": "Yeah, and your blog post on July 4th,"
+ },
+ {
+  "start": 5305.77,
+  "end": 5309.57,
+  "text": "you celebrated America's 250th birthday"
+ },
+ {
+  "start": 5309.57,
+  "end": 5315.57,
+  "text": "and called yourself, you know, thoroughly American after all, and at the same time you wrote about"
+ },
+ {
+  "start": 5315.57,
+  "end": 5323.49,
+  "text": "those Trump 20-28 campaigns including, you know, focusing on quote-unquote heritage Americans,"
+ },
+ {
+  "start": 5323.49,
+  "end": 5331.41,
+  "text": "which excludes people like you. What is it like for you to be American nowadays?"
+ },
+ {
+  "start": 5331.41,
+  "end": 5340.51,
+  "text": "I mean, look, I think that, you know, that we have to say like with, you know, those"
+ },
+ {
+  "start": 5340.51,
+  "end": 5347.49,
+  "text": "of us who believe this have to say like equally loudly that we love America, we love what"
+ },
+ {
+  "start": 5347.49,
+  "end": 5348.49,
+  "text": "it stands for."
+ },
+ {
+  "start": 5348.49,
+  "end": 5357.03,
+  "text": "I mean, the founding of the United States, right, was one of the most spectacular things"
+ },
+ {
+  "start": 5357.03,
+  "end": 5362.27,
+  "text": "that ever happened in the whole sorry history of the human species, right, where like for"
+ },
+ {
+  "start": 5362.27,
+  "end": 5367.95,
+  "text": "the first time ever you have a country that is explicitly founded on like what today we"
+ },
+ {
+  "start": 5367.95,
+  "end": 5373.39,
+  "text": "could recognize as like reasonable, you know, liberal principles, right, and of course,"
+ },
+ {
+  "start": 5373.39,
+  "end": 5377.95,
+  "text": "you know, these were very compromised people and they, you know, and they, you know,"
+ },
+ {
+  "start": 5377.95,
+  "end": 5385.23,
+  "text": "some of them were slaves and so forth, but, you know, they built this self-correcting"
+ },
+ {
+  "start": 5385.23,
+  "end": 5391.79,
+  "text": "machine you know that was that was you know over the centuries was was actually able able to improve"
+ },
+ {
+  "start": 5391.79,
+  "end": 5400.59,
+  "text": "itself right and you know this was this was an astounding event if one is going to pledge"
+ },
+ {
+  "start": 5400.59,
+  "end": 5406.75,
+  "text": "allegiance to anything at all you know one should pledge allegiance to that right and so"
+ },
+ {
+  "start": 5406.75,
+  "end": 5413.23,
+  "text": "I'm very proud to be an American I'm absolutely disgusted by our current president and by what"
+ },
+ {
+  "start": 5413.23,
+  "end": 5414.23,
+  "text": "what he represents."
+ },
+ {
+  "start": 5414.23,
+  "end": 5418.39,
+  "text": "And I don't even know if we need to belabor that."
+ },
+ {
+  "start": 5418.39,
+  "end": 5424.27,
+  "text": "The reasons should be sufficiently obvious to anyone."
+ },
+ {
+  "start": 5424.27,
+  "end": 5428.83,
+  "text": "But I feel like fundamentally, this"
+ },
+ {
+  "start": 5428.83,
+  "end": 5433.39,
+  "text": "is arguably the first president we've ever had who really"
+ },
+ {
+  "start": 5433.39,
+  "end": 5435.99,
+  "text": "does not believe in the founding"
+ },
+ {
+  "start": 5435.99,
+  "end": 5438.99,
+  "text": "principles of the country at all."
+ },
+ {
+  "start": 5438.99,
+  "end": 5442.55,
+  "text": "If he has made it completely clear that if he could,"
+ },
+ {
+  "start": 5442.55,
+  "end": 5444.95,
+  "text": "he would just be a dictator, right?"
+ },
+ {
+  "start": 5444.95,
+  "end": 5447.99,
+  "text": "And, you know, he doesn't try to hide that."
+ },
+ {
+  "start": 5447.99,
+  "end": 5450.99,
+  "text": "And, you know, I think there are many of his supporters"
+ },
+ {
+  "start": 5450.99,
+  "end": 5454.13,
+  "text": "who want that and who love that about him."
+ },
+ {
+  "start": 5454.13,
+  "end": 5456.67,
+  "text": "And, you know, and the fact that he was able"
+ },
+ {
+  "start": 5456.67,
+  "end": 5460.67,
+  "text": "to win two elections despite sort of not hiding"
+ },
+ {
+  "start": 5460.67,
+  "end": 5465.67,
+  "text": "his authoritarian tendencies is terrifying, right?"
+ },
+ {
+  "start": 5466.83,
+  "end": 5469.35,
+  "text": "You know, and I can know all of that"
+ },
+ {
+  "start": 5469.35,
+  "end": 5472.71,
+  "text": "And I can still say, you know, and yet, you know,"
+ },
+ {
+  "start": 5472.71,
+  "end": 5475.55,
+  "text": "sometimes he will do things that I agree with."
+ },
+ {
+  "start": 5475.55,
+  "end": 5476.39,
+  "text": "Sure."
+ },
+ {
+  "start": 5476.39,
+  "end": 5478.71,
+  "text": "You know, sometimes, you know,"
+ },
+ {
+  "start": 5478.71,
+  "end": 5481.67,
+  "text": "the extremists on the other side, you know,"
+ },
+ {
+  "start": 5481.67,
+  "end": 5484.83,
+  "text": "scare me even more than the extremists on that side."
+ },
+ {
+  "start": 5484.83,
+  "end": 5486.13,
+  "text": "Nevertheless, you know,"
+ },
+ {
+  "start": 5486.13,
+  "end": 5489.15,
+  "text": "it is a terrible situation to be in."
+ },
+ {
+  "start": 5489.15,
+  "end": 5493.59,
+  "text": "To have, I would say, in both major parties,"
+ },
+ {
+  "start": 5493.59,
+  "end": 5494.79,
+  "text": "you know, at this point,"
+ },
+ {
+  "start": 5494.79,
+  "end": 5497.67,
+  "text": "sort of so little respect for sort of"
+ },
+ {
+  "start": 5497.67,
+  "end": 5501.31,
+  "text": "the basic principles of the enlightenment, right?"
+ },
+ {
+  "start": 5501.31,
+  "end": 5506.31,
+  "text": "Of liberalism, of free speech, of democracy,"
+ },
+ {
+  "start": 5507.63,
+  "end": 5512.63,
+  "text": "of science, of having a shared understanding of reality"
+ },
+ {
+  "start": 5513.15,
+  "end": 5515.87,
+  "text": "that we would have just taken for granted"
+ },
+ {
+  "start": 5516.79,
+  "end": 5517.75,
+  "text": "when I was growing up."
+ },
+ {
+  "start": 5517.75,
+  "end": 5520.03,
+  "text": "Yeah, you mentioned something really, really interesting"
+ },
+ {
+  "start": 5520.03,
+  "end": 5524.67,
+  "text": "I keep coming back to, which is a phenomena"
+ },
+ {
+  "start": 5524.67,
+  "end": 5528.35,
+  "text": "we call ambiguity, tolerance and psychology, right?"
+ },
+ {
+  "start": 5528.35,
+  "end": 5533.35,
+  "text": "Which describes the ability to hold"
+ },
+ {
+  "start": 5533.35,
+  "end": 5536.51,
+  "text": "two seemingly paradoxes, right?"
+ },
+ {
+  "start": 5536.51,
+  "end": 5541.51,
+  "text": "Like, specifically you can be a quote unquote"
+ },
+ {
+  "start": 5543.35,
+  "end": 5548.35,
+  "text": "conservatist and at the same time be pro-abortion, right?"
+ },
+ {
+  "start": 5548.47,
+  "end": 5550.63,
+  "text": "For whatever reasons."
+ },
+ {
+  "start": 5550.63,
+  "end": 5561.19,
+  "text": "And I see this inability in the mainstream or with the majority of people being one of"
+ },
+ {
+  "start": 5561.19,
+  "end": 5568.75,
+  "text": "the most fundamental problems of our society because we're stuck in this black and white"
+ },
+ {
+  "start": 5568.75,
+  "end": 5569.75,
+  "text": "thinking."
+ },
+ {
+  "start": 5569.75,
+  "end": 5574.03,
+  "text": "Yeah, it's become harder and harder to have conversations across."
+ },
+ {
+  "start": 5574.03,
+  "end": 5578.19,
+  "text": "I even noticed this in a very personal way on my blog."
+ },
+ {
+  "start": 5578.19,
+  "end": 5586.07,
+  "text": "When I started my blog in 2005, it was easier to have debates in the comments section than"
+ },
+ {
+  "start": 5586.07,
+  "end": 5587.07,
+  "text": "it is today."
+ },
+ {
+  "start": 5587.07,
+  "end": 5589.11,
+  "text": "What do you think that is?"
+ },
+ {
+  "start": 5589.11,
+  "end": 5595.39,
+  "text": "Well, I think part of it is that the internet just got more and more polarized."
+ },
+ {
+  "start": 5595.39,
+  "end": 5602.39,
+  "text": "Part of it is what happened, I guess in my own career, I became better known,"
+ },
+ {
+  "start": 5602.39,
+  "end": 5605.07,
+  "text": "which had had some nice effects,"
+ },
+ {
+  "start": 5605.07,
+  "end": 5608.87,
+  "text": "but it also meant that a lot of trolls and crazies"
+ },
+ {
+  "start": 5608.87,
+  "end": 5612.27,
+  "text": "got attracted to my blog, right?"
+ },
+ {
+  "start": 5612.27,
+  "end": 5617.27,
+  "text": "And I did take some controversial public stances"
+ },
+ {
+  "start": 5617.91,
+  "end": 5619.25,
+  "text": "over the years, right?"
+ },
+ {
+  "start": 5619.25,
+  "end": 5622.91,
+  "text": "And then, you know, and I feel like,"
+ },
+ {
+  "start": 5624.05,
+  "end": 5625.59,
+  "text": "part of me feels like, you know,"
+ },
+ {
+  "start": 5625.59,
+  "end": 5628.47,
+  "text": "if I have this platform and I can say something"
+ },
+ {
+  "start": 5628.47,
+  "end": 5629.97,
+  "text": "that I really believe in,"
+ },
+ {
+  "start": 5629.97,
+  "end": 5633.09,
+  "text": "was like, why else did I even become a professor"
+ },
+ {
+  "start": 5633.09,
+  "end": 5634.41,
+  "text": "in the first place?"
+ },
+ {
+  "start": 5634.41,
+  "end": 5636.45,
+  "text": "What is tenure for, right?"
+ },
+ {
+  "start": 5636.45,
+  "end": 5641.45,
+  "text": "If it's not to give me the freedom to say things"
+ },
+ {
+  "start": 5641.53,
+  "end": 5644.05,
+  "text": "that might get someone else in trouble,"
+ },
+ {
+  "start": 5644.05,
+  "end": 5645.41,
+  "text": "if they say it right."
+ },
+ {
+  "start": 5645.41,
+  "end": 5648.21,
+  "text": "And I feel like I don't want to be a coward, right?"
+ },
+ {
+  "start": 5648.21,
+  "end": 5653.21,
+  "text": "I want to, like my heroes, like Bertrand Russell"
+ },
+ {
+  "start": 5653.97,
+  "end": 5658.97,
+  "text": "or whoever, be able to just say what is on my mind."
+ },
+ {
+  "start": 5659.97,
+  "end": 5668.73,
+  "text": "you know, defend my beliefs with arguments, you know, listen to other people's arguments,"
+ },
+ {
+  "start": 5668.73,
+  "end": 5674.05,
+  "text": "you know, be willing to change and all of that stuff."
+ },
+ {
+  "start": 5674.05,
+  "end": 5676.73,
+  "text": "So part of me feels that way."
+ },
+ {
+  "start": 5676.73,
+  "end": 5681.49,
+  "text": "You know, on the other hand, once you take a public stance for something, it can sort"
+ },
+ {
+  "start": 5681.49,
+  "end": 5684.77,
+  "text": "of overshadow everything else that you do, right?"
+ },
+ {
+  "start": 5684.77,
+  "end": 5691.53,
+  "text": "And then even if you don't actually get canceled for what you say, right, which fortunately"
+ },
+ {
+  "start": 5691.53,
+  "end": 5700.13,
+  "text": "I haven't been, there were some close calls, there were some close calls, but I've not"
+ },
+ {
+  "start": 5700.13,
+  "end": 5709.71,
+  "text": "been canceled, but it could just take a tremendous amount of time, right, when hundreds of people"
+ },
+ {
+  "start": 5709.71,
+  "end": 5716.71,
+  "text": "or saying mean things about you online and you feel like the intellectual thing to do"
+ },
+ {
+  "start": 5716.71,
+  "end": 5722.27,
+  "text": "if someone disagrees with me is to go have a debate with them or have a dialogue with"
+ },
+ {
+  "start": 5722.27,
+  "end": 5723.27,
+  "text": "them."
+ },
+ {
+  "start": 5723.27,
+  "end": 5728.39,
+  "text": "But now we're talking about 500 dialogues with 500 of these people, many of whom are"
+ },
+ {
+  "start": 5728.39,
+  "end": 5731.35,
+  "text": "not interested in the dialogue at all."
+ },
+ {
+  "start": 5731.35,
+  "end": 5736.23,
+  "text": "Or if they are, they'll just do a denial of service attack."
+ },
+ {
+  "start": 5736.23,
+  "end": 5738.55,
+  "text": "They will just completely wear you down."
+ },
+ {
+  "start": 5738.55,
+  "end": 5742.87,
+  "text": "if you try to have, you know, if you try to have that dialogue with them, right?"
+ },
+ {
+  "start": 5742.87,
+  "end": 5748.4,
+  "text": "And so, you know, it becomes a lot harder."
+ },
+ {
+  "start": 5748.4,
+  "end": 5759.4,
+  "text": "For, if there's one thing you want the people listening to take away from this, what would"
+ },
+ {
+  "start": 5759.4,
+  "end": 5760.4,
+  "text": "it be?"
+ },
+ {
+  "start": 5760.4,
+  "end": 5762.12,
+  "text": "What's your message for humanity?"
+ },
+ {
+  "start": 5762.12,
+  "end": 5765.48,
+  "text": "What's your CTA, your call to action?"
+ },
+ {
+  "start": 5765.48,
+  "end": 5783.48,
+  "text": "Pay attention to what is happening now in AI. I would say don't believe the people who say it's all a scam, it's all a stochastic parrot, it's all just a fake."
+ },
+ {
+  "start": 5783.48,
+  "end": 5788.48,
+  "text": "I feel like that perspective is too cynical for its own good."
+ },
+ {
+  "start": 5788.48,
+  "end": 5792.88,
+  "text": "The trouble with AI right now is not that it doesn't work."
+ },
+ {
+  "start": 5792.88,
+  "end": 5795.92,
+  "text": "It's that it does work."
+ },
+ {
+  "start": 5795.92,
+  "end": 5799.84,
+  "text": "It actually does the things that if you sent them back"
+ },
+ {
+  "start": 5799.84,
+  "end": 5802.72,
+  "text": "in time 20 years ago or 30 years ago,"
+ },
+ {
+  "start": 5802.72,
+  "end": 5806.12,
+  "text": "anyone would agree that this is intelligent."
+ },
+ {
+  "start": 5806.12,
+  "end": 5809.36,
+  "text": "It is only because we've gotten habituated to it now"
+ },
+ {
+  "start": 5809.36,
+  "end": 5813.04,
+  "text": "that there's even an argument about is this intelligent"
+ },
+ {
+  "start": 5813.04,
+  "end": 5813.88,
+  "text": "or not."
+ },
+ {
+  "start": 5813.88,
+  "end": 5818.2,
+  "text": "And bringing a new form of intelligence"
+ },
+ {
+  "start": 5818.2,
+  "end": 5822.52,
+  "text": "into the world is inherently not a safe thing."
+ },
+ {
+  "start": 5822.52,
+  "end": 5825.44,
+  "text": "I mean, it's not even a safe thing for those of us"
+ },
+ {
+  "start": 5825.44,
+  "end": 5828.24,
+  "text": "who were parents, right?"
+ },
+ {
+  "start": 5828.24,
+  "end": 5832.08,
+  "text": "And there we have a lot more similarity to go on, right?"
+ },
+ {
+  "start": 5832.08,
+  "end": 5836.48,
+  "text": "And the biological intelligences that were created."
+ },
+ {
+  "start": 5836.48,
+  "end": 5839.4,
+  "text": "This is an intelligence that there's never"
+ },
+ {
+  "start": 5839.4,
+  "end": 5843.24,
+  "text": "been anything quite like in the history of the world."
+ },
+ {
+  "start": 5843.24,
+  "end": 5845.76,
+  "text": "And so maybe this will go great, right?"
+ },
+ {
+  "start": 5845.76,
+  "end": 5852.8,
+  "text": "Maybe we will get it to support human flourishing,"
+ },
+ {
+  "start": 5852.8,
+  "end": 5863.72,
+  "text": "and it will become like the benevolent god who"
+ },
+ {
+  "start": 5863.72,
+  "end": 5867.68,
+  "text": "didn't show up in all those cases where"
+ },
+ {
+  "start": 5867.68,
+  "end": 5869.88,
+  "text": "we might have wanted him."
+ },
+ {
+  "start": 5869.88,
+  "end": 5872.72,
+  "text": "But now this one actually will show up,"
+ },
+ {
+  "start": 5872.72,
+  "end": 5881.72,
+  "text": "And we'll just be able to create this sort of messianic age."
+ },
+ {
+  "start": 5881.72,
+  "end": 5885.44,
+  "text": "One can equally well imagine utterly disastrous scenarios."
+ },
+ {
+  "start": 5885.44,
+  "end": 5891.56,
+  "text": "But there's this saying people have."
+ },
+ {
+  "start": 5891.56,
+  "end": 5896.24,
+  "text": "People used to just dismiss this kind of talk as, OK,"
+ },
+ {
+  "start": 5896.24,
+  "end": 5898.92,
+  "text": "you're reading too much science fiction."
+ },
+ {
+  "start": 5898.92,
+  "end": 5900.72,
+  "text": "And so the saying is, well, you better"
+ },
+ {
+  "start": 5900.72,
+  "end": 5906.68,
+  "text": "get used to talking about science fiction because now we're living in one."
+ },
+ {
+  "start": 5906.68,
+  "end": 5914.6,
+  "text": "To close the loop, circling back to man's search for meaning, what in these times makes"
+ },
+ {
+  "start": 5914.6,
+  "end": 5917.32,
+  "text": "life meaningful for you?"
+ },
+ {
+  "start": 5917.32,
+  "end": 5924.84,
+  "text": "Well okay, so what makes life meaningful for me right now is first of all my kids,"
+ },
+ {
+  "start": 5924.84,
+  "end": 5929.84,
+  "text": "my family, my students, you know, teaching."
+ },
+ {
+  "start": 5930.36,
+  "end": 5932.8,
+  "text": "I spent two weeks this summer teaching"
+ },
+ {
+  "start": 5934.2,
+  "end": 5937.2,
+  "text": "theoretical computer science to 11 and 12 year olds"
+ },
+ {
+  "start": 5937.2,
+  "end": 5939.56,
+  "text": "at a math camp in Utah."
+ },
+ {
+  "start": 5939.56,
+  "end": 5940.84,
+  "text": "I should have attended that."
+ },
+ {
+  "start": 5940.84,
+  "end": 5941.68,
+  "text": "Huh?"
+ },
+ {
+  "start": 5941.68,
+  "end": 5942.5,
+  "text": "I should have attended that."
+ },
+ {
+  "start": 5942.5,
+  "end": 5943.34,
+  "text": "Yeah, yeah."
+ },
+ {
+  "start": 5943.34,
+  "end": 5947.8,
+  "text": "So my nine year old was also there as a camper."
+ },
+ {
+  "start": 5947.8,
+  "end": 5952.8,
+  "text": "And I felt like, you know, even these kids are aware"
+ },
+ {
+  "start": 5952.8,
+  "end": 5955.24,
+  "text": "of kind of the clouds on the horizon, right?"
+ },
+ {
+  "start": 5955.24,
+  "end": 5957.88,
+  "text": "They're aware that like all the math that they're learning"
+ },
+ {
+  "start": 5957.88,
+  "end": 5961.16,
+  "text": "is stuff that AI can now do, you know,"
+ },
+ {
+  "start": 5962.52,
+  "end": 5965.52,
+  "text": "maybe better than they will ever do it."
+ },
+ {
+  "start": 5965.52,
+  "end": 5967.08,
+  "text": "But you know what, you know, they're there to learn."
+ },
+ {
+  "start": 5967.08,
+  "end": 5969.04,
+  "text": "They're there to learn math, right?"
+ },
+ {
+  "start": 5969.04,
+  "end": 5973.4,
+  "text": "And, you know, and they put all their devices away"
+ },
+ {
+  "start": 5973.4,
+  "end": 5976.24,
+  "text": "and we're just using, you know, using the board,"
+ },
+ {
+  "start": 5976.24,
+  "end": 5978.0,
+  "text": "using pen and paper."
+ },
+ {
+  "start": 5978.0,
+  "end": 5982.88,
+  "text": "And for me, understanding math was always"
+ },
+ {
+  "start": 5982.88,
+  "end": 5984.8,
+  "text": "a source of meaning in life."
+ },
+ {
+  "start": 5984.8,
+  "end": 5988.16,
+  "text": "And seeing this new generation that says,"
+ },
+ {
+  "start": 5988.16,
+  "end": 5991.56,
+  "text": "the hell with everything, we want to learn math."
+ },
+ {
+  "start": 5991.56,
+  "end": 5998.2,
+  "text": "Of course, that also gave me a very strong sense of meaning."
+ },
+ {
+  "start": 5998.2,
+  "end": 6001.84,
+  "text": "I would say thinking about science gives me meaning."
+ },
+ {
+  "start": 6001.84,
+  "end": 6005.12,
+  "text": "I feel like it'll probably continue to do that,"
+ },
+ {
+  "start": 6005.12,
+  "end": 6008.88,
+  "text": "even if AI does become better than we are at solving"
+ },
+ {
+  "start": 6008.88,
+  "end": 6011.08,
+  "text": "all the scientific problems."
+ },
+ {
+  "start": 6011.08,
+  "end": 6013.68,
+  "text": "Right now, there's still a few things for us to do."
+ },
+ {
+  "start": 6013.68,
+  "end": 6018.8,
+  "text": "But even in a world where AI could just"
+ },
+ {
+  "start": 6018.8,
+  "end": 6021.76,
+  "text": "do all the math and science better than us,"
+ },
+ {
+  "start": 6021.76,
+  "end": 6026.32,
+  "text": "I feel like I would still derive some meaning from asking"
+ },
+ {
+  "start": 6026.32,
+  "end": 6030.04,
+  "text": "the AI questions, trying to understand its answers,"
+ },
+ {
+  "start": 6030.04,
+  "end": 6032.92,
+  "text": "just trying to, I actually want"
+ },
+ {
+  "start": 6032.92,
+  "end": 6037.08,
+  "text": "to know the answers to some of these big questions."
+ },
+ {
+  "start": 6037.08,
+  "end": 6039.96,
+  "text": "So that's another source of meaning for me."
+ },
+ {
+  "start": 6039.96,
+  "end": 6046.96,
+  "text": "Scott, this was beyond mind-bending and thought-provoking."
+ },
+ {
+  "start": 6046.96,
+  "end": 6053.84,
+  "text": "First of all, I really admire your courage to speak your mind"
+ },
+ {
+  "start": 6053.84,
+  "end": 6058.6,
+  "text": "and give a voice to people out there."
+ },
+ {
+  "start": 6058.6,
+  "end": 6062.24,
+  "text": "And yeah, just have the guts to write and talk"
+ },
+ {
+  "start": 6062.24,
+  "end": 6066.44,
+  "text": "about these very juicy, very polarizing topics."
+ },
+ {
+  "start": 6066.44,
+  "end": 6067.28,
+  "text": "Thank you."
+ },
+ {
+  "start": 6067.28,
+  "end": 6068.92,
+  "text": "No, I mean, you added directions"
+ },
+ {
+  "start": 6068.92,
+  "end": 6070.44,
+  "text": "that I didn't know you were gonna go,"
+ },
+ {
+  "start": 6070.44,
+  "end": 6073.68,
+  "text": "but that most podcasters don't, but you know."
+ },
+ {
+  "start": 6073.68,
+  "end": 6074.5,
+  "text": "Sure."
+ },
+ {
+  "start": 6074.5,
+  "end": 6075.34,
+  "text": "You know what?"
+ },
+ {
+  "start": 6075.34,
+  "end": 6076.18,
+  "text": "That's why we're here."
+ },
+ {
+  "start": 6076.18,
+  "end": 6077.0,
+  "text": "Yeah, exactly."
+ },
+ {
+  "start": 6077.0,
+  "end": 6079.72,
+  "text": "Thank you so much for the lectures,"
+ },
+ {
+  "start": 6079.72,
+  "end": 6084.72,
+  "text": "for all the, really like all the eye-opening learnings"
+ },
+ {
+  "start": 6084.72,
+  "end": 6093.72,
+  "text": "eye-opening learnings about quantum computing, AI and your personal story."
+ },
+ {
+  "start": 6093.72,
+  "end": 6095.72,
+  "text": "That was great. Thank you so much, Lukas."
+ },
+ {
+  "start": 6095.72,
+  "end": 6097.72,
+  "text": "Of course. Great."
+ },
+ {
+  "start": 6097.72,
+  "end": 6098.72,
+  "text": "To you."
+ },
+ {
+  "start": 6098.72,
+  "end": 6102.72,
+  "text": "Absolutely. All right, so you'll just send me a link when it's up and I will share"
+ },
+ {
+  "start": 6102.72,
+  "end": 6103.72,
+  "text": "your blog."
+ },
+ {
+  "start": 6103.72,
+  "end": 6105.72,
+  "text": "Yeah, give me like three weeks and then..."
+ },
+ {
+  "start": 6105.72,
+  "end": 6107.72,
+  "text": "Okay, perfect, perfect, perfect."
+ },
+ {
+  "start": 6107.72,
+  "end": 6108.72,
+  "text": "Can we take a quick picture?"
+ },
+ {
+  "start": 6108.72,
+  "end": 6109.72,
+  "text": "Absolutely, absolutely."
+ },
+ {
+  "start": 6109.72,
+  "end": 6112.72,
+  "text": "With you sitting in your chair, that'd be great."
+ },
+ {
+  "start": 6112.72,
+  "end": 6120.9,
+  "text": "great yeah sweet okay great no and and I mean it that was oh good that was great"
+ },
+ {
+  "start": 6120.9,
+  "end": 6124.7,
+  "text": "good thank you thank you so much"
+ },
+ {
+  "start": 6126.7,
+  "end": 6133.82,
+  "text": "oh we're just on time I hope yeah"
+ }
+]
