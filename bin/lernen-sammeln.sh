@@ -15,6 +15,7 @@ declare -A ZWEIG=(
   [content-schlicht]=claude/content-assistant
   [content-cinematic]=claude/content-cinematic
   [content-vlog]=claude/content-vlog
+  [content-gastauftritte]=claude/content-gastauftritte
   [thumbnails]=claude/thumbnails
   [head-of-content]=claude/head-of-content
   [youtube-manager]=claude/youtube-manager

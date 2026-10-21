@@ -81,6 +81,7 @@ diese Maschine.
 | `content-schlicht` | Content Assistant — Shorts, schlicht | `claude/content-assistant` |
 | `content-cinematic` | Content Assistant — cinematisch | `claude/content-cinematic` |
 | `content-vlog` | Content Assistant — Vlog / Archiv | `claude/content-vlog` |
+| `content-gastauftritte` | Content Assistant — seine Gastauftritte | `claude/content-gastauftritte` |
 | `thumbnails` | Thumbnail Assistant | `claude/thumbnails` |
 | `head-of-content` | Head of Content | `claude/head-of-content` |
 | `youtube-manager` | YouTube Manager | `claude/youtube-manager` |

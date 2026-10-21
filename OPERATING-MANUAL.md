@@ -8678,3 +8678,38 @@ Plan trägt oder reißen lässt.
 oder 31. Oktober"*, und später, dass die Hauptpodcasts am Wochenende laufen.
 Der 30.10. ist ein Freitag, der 31.10. ein Samstag. Der Kalender steht auf
 **Samstag, 31.10.** — gefragt, nicht geraten, aber noch unbeantwortet.
+
+## Der vierte Content-Assistent — seine Gastauftritte
+
+Angelegt am 21.10.2026. Er sagte: *„Ich dachte eigentlich, ich hätte dir
+aufgetragen, einen dritten Short-Assistenten zu erstellen."*
+
+**Die drei gab es schon** — Shorts (schlicht), Cinematic und Vlog, alle am
+21.10. auf seine Bitte hin angelegt. Was fehlte, war ein **vierter**, und der
+ist durch die Auslastung berechtigt: alle drei hängen an Aaronson (So 25.10.)
+und Kingsbury (Sa 31.10.).
+
+**Sein Fach ist ein anderes: Yannick als Gast in fremden Podcasts.** Die
+anderen drei schneiden seine Gäste; dieser schneidet **ihn**. Anderes
+Ausgangsmaterial (YouTube statt Drive), andere Hauptperson, anderer Zweck.
+
+| | |
+|---|---|
+| Session | `session_01YTs5D1g2jbQmSNEd2Fcg7h` |
+| Branch | `claude/content-gastauftritte` |
+| Lerndatei | `lernen/content-gastauftritte.md` |
+
+**Erster Auftrag:** *„Success" Won't Fill Your Internal Void | Yannick Bernard*
+auf dem Kanal **The Garden** (`youtube.com/@homeofthegarden`),
+`https://youtu.be/q3_kLgYIXGQ`. Transkript, Kandidatenliste in **seinem**
+Format (Zeitmarke · Stichwort), zwei bis drei gebaute Shorts.
+
+**Das Kriterium für eine „Wisdom Bomb", das ihm mitgegeben wurde:** der Satz
+muss **ohne die Frage davor** verständlich und **ohne den Satz danach** fertig
+sein. Alles andere ist ein Ausschnitt, kein Short.
+
+**Die Rechtelage ist hier anders als sonst:** das Video liegt auf einem fremden
+Kanal. Als Gast die eigenen Stellen zu schneiden ist üblich und meist
+erwünscht, aber die Risikoentscheidung ist seine. Der Agent baut, legt vor und
+schreibt **eine Zeile** dazu — keine Belehrung. Will er eine Freigabe, entwerfe
+ich die Nachricht an The Garden.
