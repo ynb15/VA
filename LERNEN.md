@@ -45,6 +45,48 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 4 — 21.10.2026, 13:25 Kapstadt · sein Preset schlägt unsere Messung
+
+Der Shorts-Assistent hat Isabelles Preset eingebaut (`video/preset-ynb.md` auf
+`claude/content-assistant`, Commit `1e155d4`). Nachgeprüft, es stimmt.
+
+- **Sechs Stilwerte, von uns an seinen veröffentlichten Shorts abgelesen, waren
+  falsch.** Schrift **Inter Black** (nicht DejaVu Sans Bold) · Größe **82**
+  (nicht 78) · Gelb **`#F9F13A`** (nicht `#FFD530`) · Zeilenbreite **72 % der
+  Bildbreite** (nicht 1000 px fest) · Logo **28 % breit** auf Höhe **0,87**
+  (nicht 520 px / 0,845) · Gradation **entsättigt-kühl** (nicht warm).
+  **Die Regel daraus, und sie gilt für jedes Fach:** an Ausgabebildern
+  abgelesene Stilwerte sind ein **Notbehelf, bis die Quelldatei da ist**.
+  **Erst nach der Vorlage fragen, dann messen** — nicht umgekehrt. Eine
+  Messung am Ergebnis trifft das Ergebnis, nicht die Absicht.
+  → betrifft: alle
+- **Das trifft den Thumbnail-Bauplan mit derselben Wucht.** `video/thumbnails.md`
+  ist vollständig an sechs veröffentlichten Thumbnails abgelesen — gleiche
+  Methode, gleiches Risiko. **Und dieselbe Person baut sie**: Isabelle Semler
+  macht Shorts *und* Thumbnails. Bevor dort weiter gemessen wird, muss nach der
+  Vorlage gefragt werden.
+  → betrifft: thumbnails, head-of-content
+- **Wer libass benutzt, darf die Zeilenbreite nicht roh mit PIL messen.**
+  libass legt die Schriftgröße auf Ober- plus Unterlänge (Inter Black:
+  1,21 Geviert), Faktor `groesse / sum(font.getmetrics()) = 0,82`. Gemessen am
+  gerenderten Bild: `WHAT MAKES LIFE` ist bei 82 px **643 px** breit, PIL sagt
+  **776**. Ohne die Korrektur misst der Umbruch **21 % zu breit** und trennt
+  Zeilen, die längst passen.
+  → betrifft: content-*, thumbnails
+- **Die Untertitelhöhe hängt am Raum, jetzt mit drei Messpunkten:** **50 %** bei
+  Rick Strassman (Webcam) · **57 %** im Just-Push-Record-Studio · **70 %** als
+  Vorgabe, wenn keine Lippe gemessen ist. Und: **die gemessene Lippe schlägt
+  die Vorgabe** — seine Ansage vom 21.10., *„dass der Text nicht direkt unter
+  seiner Lippe ist"*.
+  → betrifft: alle Content-Agenten
+- **Offen und nur von ihm zu lösen: `luts/ynb_look.png` fehlt.** In der
+  Übergabe lagen nur `make_lut.py` und die Anleitung. Solange die Datei fehlt,
+  läuft eine **Annäherung statt seines Filters**, und der Renderer schreibt das
+  ehrlich in die Ausgabe (`Look: Annaeherung (LUT ... fehlt)`).
+  → betrifft: content-*
+
+---
+
 ## Ausgabe 3 — 21.10.2026, 13:10 Kapstadt · Slack, erster Durchgang
 
 Sein Arbeits-Slack ist **`team-ynb.slack.com`** und war nie gelesen — auf seine
