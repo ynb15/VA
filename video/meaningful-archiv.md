@@ -47,6 +47,7 @@ Untertitel unter `video/shorts/<datei>.srt`.
 | 6 | Rick Strassman | `1Hwt3_c_Ifhd7onXyC8nrHIdtjwJjxdjH` | **~7100–7160, ungenau** | 49,0 s | `06-rick-meaningful` | **nein — Ende offen** |
 | 7 | Kyle Kingsbury | `1NWMaIn8avpf0EVQvm2DhEQr73uhfioIq` | 7485,78–7547,38 | 51,4 s | `07-kyle-meaningful` | ja, Bild und Schluss geprüft |
 | 10 | Eben Britton | `1lIFL8aUunQQPtTDp0vQNlaRc7of-4PfG` | 5986,89–6034,27 | 39,5 s | `10-britton-meaningful` | ja, Schluss geprüft |
+| 11 | Whitney Wheelock | `1CFqj0d_cO9oGqusPSabS22pgyeJWQ7XE` | 6570,73–6638,92 | 56,8 s | `11-wheelock-meaningful` | ja, Naht im Ton geprüft |
 
 **Die Zeitmarken von 7 und 10 sind am Dateibeginn des Suchfensters gemessen,
 nicht gerechnet** — `master_schnitt.py` setzt auf das Schlüsselbild vor dem
@@ -348,3 +349,44 @@ verbraucht: rund 4 GB.**
    Dasselbe Mittel wie am Schluss würde helfen — auf das Satzende **vor** der
    Frage schneiden statt auf eine feste Sekunde. **Das ändert aber die
    Einstiege aller bisherigen Stücke**, deshalb erst nach seinem Wort.
+
+---
+
+## Das Sutcliffe-Short, neu gebaut am 21.10.
+
+**Er hat es direkt verlangt.** Nicht neu gesucht, sondern neu gerendert — die
+Zeitmarke **7222,0–7281,6** stand in der Tabelle oben, und genau dafür gibt es
+sie. Fenster 7212–7292 geholt (**224 MB**), Dateibeginn gemessen bei 7211,99.
+
+**Zwei Fassungen, wie Regel 4 es verlangt:**
+
+| | Datei | Stand |
+|---|---|---|
+| **A** | `sutcliffe-meaningful-A-ohne.mp4` | ohne Kopfzeile, 49,7 s |
+| **B** | `sutcliffe-meaningful-B-kopfzeile.mp4` | mit `WHAT MAKES \| LIFE MEANINGFUL?`, 4,5 s |
+
+**Was ich nehmen würde: A.** Begründung, und sie ist meine, nicht seine Vorgabe:
+das Stück **beginnt mit der gestellten Frage im Ton** — *„After all, what makes
+life meaningful for you?"* steht in den ersten 2,4 Sekunden als Untertitel im
+Bild. Eine Kopfzeile, die dasselbe noch einmal schreibt, sagt in den ersten
+viereinhalb Sekunden zweimal dasselbe und nimmt dem Gesicht Platz weg. **Bei
+einer Folge, in der er die Frage *nicht* im Bild stellt, wäre es umgekehrt.**
+
+### Ein Fehler in der Kopfzeile selbst, gemessen
+
+**`--kopfzeile-hoehe` ist die Mitte des Feldes, nicht die Oberkante** — das
+stand nirgends, und mit der Vorgabe 0,68 **liegt das Feld genau auf der
+Untertitelzeile.** Am gerenderten Bild nachgemessen:
+
+| | Vorgabe 0,68 · Größe 96 | nachgebessert 0,78 · Größe 64 |
+|---|---|---|
+| Feld | 0,656–0,774 | **0,721–0,839** |
+| Untertitelzeile (Lippe 1248) | 0,650–0,693 | unverändert |
+| Logo (0,87) | 0,843–0,893 | unverändert |
+| **Überschneidung** | **~57 px mit dem Untertitel** | **keine** |
+
+Die Untertitel sind in beiden Fassungen identisch — **sie werden verdeckt, nicht
+weggelassen.** Geprüft: beide SRT-Dateien haben dieselben 53 Einblendungen.
+
+**Das trifft jeden, der `--kopfzeile` mit lippenfolgenden Untertiteln benutzt**,
+und steht deshalb im Lernkanal.
