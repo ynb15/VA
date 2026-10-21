@@ -14,6 +14,9 @@ Ergebnis** — statt einer 25-Minuten-Aufnahme reichen oft zwei Minuten.
 | `OHnZi87272U` | 4 | **2,0 s** | 23,2 | **0,77** | **messbar, ruhig geschnitten** |
 | `xI8OpQNuFvg` | 3 | **2,0 s** | 22,6 | **0,75** | **messbar, ruhig geschnitten** |
 | `ZQht2yOX9Js` | 4 | **1,9 s** | 18,7 | **0,61** | **lange Einstellungen, gemessen** |
+| `ak3ma7wtE_0` | 5 | **2,0 s** | 16,1 | **0,53** | **die längsten im ganzen Feld** |
+| `_Jdvwiun9zY` | 5 | 4,8 s | 8,3 | **0,67** | ruhig |
+| `9phnAlJxico` | 1 | **1,0 s** | 56,2 | 0,94 | **Kamerawackeln, nicht Schnitt** |
 | `CPpwXZA9p0Q` | 7 | 4,8 s | 9,6 | 0,78 | ruhig geschnitten |
 | `oRG2jlQWCsY` | 5 | 4,6 s | 10,6 | 0,83 | ruhig |
 | `wOp_wgp-f9I` | 9 | 4,9 s | 10,6 | 0,88 | am Anschlag |
@@ -116,6 +119,36 @@ Große Gesichter, mittig im Bild.
 * Das MOVIECLIPS-Zeichen steht unten links und fällt beim Mittenausschnitt
   heraus.
 
+### Block 2 — Taxi Driver · `ak3ma7wtE_0` · AcademyAwardClips · 4:47
+**Aufnehmen: 3:20–4:45** (85 s). Zusätzlich lohnend: 0:35–1:10.
+
+**Sättigung 0,53 — die längsten Einstellungen im ganzen Feld.** Kein
+eingebranntes Zeichen, keine Endtafel, 1080p.
+
+Ab **3:25** läuft der Spiegelmonolog: De Niro in der Feldjacke, mittlere
+Großaufnahme, mittig, achtzig Sekunden fast ohne Schnitt. **Inhaltlich ist das
+der stärkste Fund der ganzen Liste für Block 2** — ein Mann allein in einem
+Zimmer, der Härte vor dem Spiegel probt. Das ist *„so they choose one who
+pretends he doesn't"*, wörtlich.
+
+Bei **0:39–1:07** außerdem sein Gesicht und die Fingerpistole an der Schläfe.
+
+### Block 2 — American Psycho · `_Jdvwiun9zY` · 5:09
+**Sättigung 0,67**, also ruhig geschnitten. Noch nicht am Blatt durchgesehen —
+Zeitangabe folgt.
+
+### Block 5 — Saving Private Ryan · `9phnAlJxico` · 1:18
+**Hier zeigt die Messung ihre Grenze, und das gehört hierher:** Sättigung
+**0,94** bei einem Takt von 1,0 s sähe nach Sekundenschnitt aus. Es ist aber
+keiner — **die Szene ist aus der Hand gefilmt und wackelt.**
+
+Das Verfahren misst **Bildänderung**, und Kamerabewegung ändert das Bild
+genauso wie ein Schnitt. Bei ruhig stehender Kamera trennt die Zahl sauber;
+bei Handkamera, Schwenk oder Fahrt überschätzt sie den Schnitt.
+
+**Die Zahl ist für diese Quelle also unbrauchbar, die Quelle nicht.** 1:18
+sind ohnehin zu wenig für mehr als eine Einstellung.
+
 ### Block 1 — Marty Supreme · `xI8OpQNuFvg` · 4K HDR · 3:19
 **Aufnehmen: 0:15–1:40** (85 s).
 
@@ -167,10 +200,9 @@ ist gemessen, sauber und braucht zwei Minuten statt fünfzehn.
 
 ### Noch offen
 `udsqfx_9woc` (The Batman — **der fehlende Moment, in dem die Maske abgeht**),
-`_Jdvwiun9zY` (American Psycho), `ak3ma7wtE_0` (Taxi Driver), `El-PZehlEO8`
-(Marty Supreme, Endspiel), `dfeUzm6KF4g` (Fight Club), `9phnAlJxico` (Saving
-Private Ryan), `Dr8IU0CwMWM` (Pursuit of Happyness), `gbOVM-3Worg` (Peaky
-Blinders), `zpN7t6LN42s` (Wolf of Wall Street).
+`El-PZehlEO8` (Marty Supreme, Endspiel), `dfeUzm6KF4g` (Fight Club),
+`Dr8IU0CwMWM` (Pursuit of Happyness), `gbOVM-3Worg` (Peaky Blinders),
+`zpN7t6LN42s` (Wolf of Wall Street).
 
 **Gemessen, aber nachrangig:** `Ld603TeJBCk` (Pursuit of Happyness, *Zero
 Income*, 8:58) liegt bei Sättigung **0,96** — schnell geschnitten.
@@ -192,6 +224,7 @@ Rest nach.
 | Batman | 18:48 | **4:40** |
 | Wolf of Wall Street | 18:08 | **5:00** |
 | Wall Street | 4:21 | **0:45** |
+| Taxi Driver | 4:47 | **1:25** |
 | Tate | 10–15 min | **2:00** |
 | **zusammen** | **~88 min** | **~20 min** |
 
