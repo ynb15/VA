@@ -1,3 +1,12 @@
 video/shorts/*.mp4
 video/transkripte/*.vtt
 __pycache__/
+
+# Arbeitsdateien der Meaningful-Serie: Fenster aus dem Drive-Master, deren
+# Rohschnitte und die fertigen Stuecke. Die Fenster sind bis zu 580 MB gross
+# und jederzeit aus Drive-ID und Zeitmarke wiederherstellbar — die stehen in
+# video/meaningful-archiv.md, und genau dafuer ist die Tabelle da.
+video/*_f[0-9].mp4
+video/*_fertig.mp4
+video/*-meaningful.mp4
+video/lauf-*.log

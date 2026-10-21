@@ -17,7 +17,7 @@ MUSTER = re.compile(r"(?i)(makes?\s+(a\s+)?(human\s+)?life\s+meaningful"
                     r"|what\s+makes\s+life\s+meaning"
                     r"|life\s+meaningful\s+(for|to)\s+you"
                     r"|makes\s+your\s+life\s+meaningful)")
-STUECK, MAX_VERSUCHE, ZIEL = 210.0, 7, 72.0
+STUECK, MAX_VERSUCHE, ZIEL = 210.0, 4, 72.0
 
 LISTE = os.path.join(HIER, "meaningful-folgen.json")
 
@@ -103,6 +103,11 @@ def eine(f):
     if gesamt is None:
         gesamt = laufzeit(fid, groesse)
         print(f"{nr}. {name}: Laufzeit {gesamt:.1f}s gemessen", flush=True)
+        ganz = json.load(open(LISTE))
+        for z in ganz["folgen"]:
+            if z["nr"] == nr:
+                z["gesamt"] = round(gesamt, 1)
+        json.dump(ganz, open(LISTE, "w"), indent=1, ensure_ascii=False)
 
     clip = os.path.join(HIER, f"{k}_fertig.mp4")
     if dauer(clip) < 5:
@@ -112,7 +117,11 @@ def eine(f):
             start = max(0.0, ende - STUECK)
             w = os.path.join(HIER, f"{k}_f{v}.mp4")
             wstart = os.path.join(HIER, f"{k}_f{v}.beginn")
-            if dauer(w) < 5:
+            jf = os.path.join(HIER, f"{k}_f{v}.json")
+            # Liegt das Transkript schon vor, ist dieses Fenster durchsucht —
+            # dann wird es nicht noch einmal geholt. Bei einem 34-GB-Master
+            # sind das 580 MB je Fenster.
+            if dauer(w) < 5 and not os.path.exists(jf):
                 p = lauf([sys.executable, os.path.join(REPO, "video/master_schnitt.py"),
                           "--id", fid, "--start", str(start), "--ende", str(ende),
                           "--groesse", str(groesse), "--out", w],
@@ -124,7 +133,6 @@ def eine(f):
                 if not m:
                     raise RuntimeError(f"Dateibeginn nicht gemeldet: {p.stdout[:160]}")
                 open(wstart, "w").write(m.group(1))
-            jf = os.path.join(HIER, f"{k}_f{v}.json")
             d = json.load(open(jf)) if os.path.exists(jf) else transkript(w)
             json.dump(d, open(jf, "w"), indent=1)
             tr = next((i for i, s in enumerate(d) if MUSTER.search(s["text"])), None)
@@ -135,7 +143,14 @@ def eine(f):
                 break
             ende = start
         if fenster is None:
-            return f"{nr}. {name}: Frage NICHT gefunden"
+            json.dump({"nr": nr, "name": name, "drive_id": fid,
+                       "gefunden": False, "gesamt": round(gesamt, 1),
+                       "durchsucht_ab": round(ende, 1),
+                       "grund": "Muster in den letzten "
+                                f"{MAX_VERSUCHE * STUECK:.0f}s nicht getroffen"},
+                      open(befund, "w"), indent=1, ensure_ascii=False)
+            return (f"{nr}. {name}: Frage NICHT in den letzten "
+                    f"{MAX_VERSUCHE * STUECK:.0f}s — Befund abgelegt")
         schluss = schluss_waehlen(daten, idx)
         von = max(0.0, daten[idx]["start"] - 1.0)
         # Fensterzeit -> Masterzeit. Ohne diese beiden Zahlen ist das
@@ -156,8 +171,15 @@ def eine(f):
 
     plan = os.path.join(HIER, f"{k}_fertig_plan.json")
     if not os.path.exists(plan):
+        # Ohne Stapeln folgt der Kasten in der Totale dem Bewegungsgipfel,
+        # also der gestikulierenden Hand statt dem Gesicht. Bei Kyle stand
+        # dadurch 11 s lang Buecherregal im Bild und kein Kopf (gemessen am
+        # 21.10. an ausgelesenen Einzelbildern). Gestapelt steht je Person
+        # ein Kasten. --marke haelt den Ausschnitt aus dem eingebrannten
+        # Logo heraus (gemessen x 55-205, y 911-1028).
         lauf([sys.executable, os.path.join(REPO, "video/bildausschnitt.py"), clip,
-              "--zoom", "1.15", "--kein-stapel", "--json", plan], capture_output=True)
+              "--zoom", "1.15", "--marke", "0,875,215,1080",
+              "--json", plan], capture_output=True)
     lauf([sys.executable, os.path.join(REPO, "video/shorts-render.py"),
           "--src", clip, "--plan", plan, "--out", out,
           "--tempo", "1.2", "--auto-captions", "--lang", "en", "--model", "medium",

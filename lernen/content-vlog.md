@@ -148,3 +148,42 @@ Bei einer Antwort von 30 bis 60 Sekunden ist das der halbe Einstieg. Der Abruf
 mit `capture_output=True` lief. Jetzt wird er ausgelesen und je Fenster in
 `<k>_f<v>.beginn` abgelegt. Fehlt er, bleibt die Zeitmarke **leer** statt falsch.
 → betrifft: alle, die `master_schnitt.py` benutzen
+
+## 21.10.2026 — Nachtrag, zwei Korrekturen an meinen eigenen Einträgen oben
+
+**Erstens: `ton_holen.py` ist kein billiger Weg, eine Stelle zu suchen.** Ich
+hatte es dafür erwogen, weil aus 16,1 GB rund 150 MB FLAC werden. **Die 150 MB
+sind die Ausgabe, nicht der Abruf.** Das Werkzeug liest die Datei *ganz*
+sequentiell durch — bei Rob Bennetts 34-GB-Master wären das 34 GB und damit
+mehr als das Tageslimit, für eine Suche. Grund steht im Werkzeug selbst:
+`demux(audio)` überspringt die Videopakete nicht, der mov-Demuxer liest sie
+trotzdem. **Tonspur holen lohnt nur, wenn dieselbe Folge mehrfach durchsucht
+wird** — einmal 34 GB gegen beliebig oft transkribieren. Für einen einzelnen
+Treffer am Ende ist das Fenster über `master_schnitt.py` richtig.
+→ betrifft: alle, die aus Drive-Mastern suchen
+
+**Zweitens: mein „zwei Fenster fangen 8 von 8" gilt für acht Folgen, nicht für
+neun.** Rob Bennett bricht es. In den letzten 420 Sekunden seiner Folge stehen
+Reue, Rückblick und Verabschiedung — *„Thank you so much, Rob. Book him before
+you die"* — und **keine Frage nach dem Sinn.** Er war der erste Gast überhaupt
+(Januar 2026); möglich, dass das Ritual damals noch nicht bestand. Das ist meine
+Vermutung, keine Messung.
+
+**Die Kosten der Suche hängen an der Bitrate, nicht an der Dateigröße.** Gemessen
+am 21.10.: ein 210-Sekunden-Fenster kostet bei Kyles 1,3-GB-Export **35 MB**, bei
+Bennetts 34-GB-Master **580 MB**. Das ist Faktor 17 für dasselbe Zeitfenster.
+**Wer blind rückwärts sucht, muss das vorher ausrechnen** — sieben Versuche à
+580 MB sind 4 GB für eine Folge, bei einem Tageslimit von rund 28 GB pro
+Eigentümer. Die Suche ist deshalb jetzt auf **vier Fenster (840 s)** gedeckelt;
+das deckt das Dreifache des größten gemessenen Abstands. Wird nichts gefunden,
+legt das Werkzeug einen Befund mit Grund ab, statt es bei jedem Lauf neu zu
+versuchen.
+→ betrifft: alle, die aus Drive-Mastern suchen
+
+**Drittens, zur Wiederaufnahme:** das Werkzeug hatte am Vorhandensein der
+*Fensterdatei* erkannt, was erledigt ist. Falsch — erledigt ist ein Fenster,
+wenn sein *Transkript* vorliegt. Ich hatte zwei durchsuchte Fensterdateien
+gelöscht, um Platte frei zu machen, und der nächste Lauf hätte sie für 1,1 GB
+noch einmal geholt, obwohl die Transkripte danebenlagen. Jetzt entscheidet das
+Transkript.
+→ betrifft: alle, die wiederaufnehmbare Läufe bauen

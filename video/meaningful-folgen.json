@@ -1,35 +1,169 @@
 {
-  "_hinweis": "Die Folgenliste der Reihe 'What makes life meaningful?'. frage_am_ende.py liest sie hier, nicht im Code — eine neue Folge ist eine neue Zeile, kein Eingriff ins Werkzeug. 'gesamt' null heisst: Laufzeit beim Lauf abfragen (kostet rund 8 MB).",
-  "folgen": [
-    {"nr":  1, "name": "David Sutcliffe", "k": "sutcliffe", "id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT", "groesse": 19976733699, "gesamt": 7518.0, "stand": "fertig"},
-    {"nr":  2, "name": "Scott Aaronson",  "k": "aaronson",  "id": "1C7CUI-B6_fBcdttR_zKIJBYraBMTtUvh", "groesse": 16141727375, "gesamt": 6138.0, "stand": "fertig"},
-    {"nr":  3, "name": "Ken Stern",       "k": "ken",       "id": "1RGq-Mw0QEm5jE2WMthKPkP5OHrXvmotF", "groesse": 16824141940, "gesamt": 6333.4, "stand": "fertig"},
-    {"nr":  4, "name": "Logan Gonzalez",  "k": "logan",     "id": "1ztggu2ua5-AntISFHHP9cBqjVhSn6Zmj", "groesse":  2663541811, "gesamt": 5159.5, "stand": "fertig"},
-    {"nr":  5, "name": "Matt Defina",     "k": "matt",      "id": "1ubW-gMYb6_g0ZO-cOVyEFGQoKvIyGivj", "groesse": 17449171699, "gesamt": 6572.3, "stand": "fertig"},
-    {"nr":  6, "name": "Rick Strassman",  "k": "rick",      "id": "1Hwt3_c_Ifhd7onXyC8nrHIdtjwJjxdjH", "groesse": 15496441499, "gesamt": 7251.8, "stand": "fertig, Ende offen"},
-
-    {"nr":  7, "name": "Kyle Kingsbury",  "k": "kyle",      "id": "1NWMaIn8avpf0EVQvm2DhEQr73uhfioIq", "groesse":  1290034956, "gesamt": 7790.0, "stand": "offen",
-     "notiz": "v1-Export, 1920x1080, 129:50 — die ganze Folge. Die 4K-Kameradatei (YNB) laeuft nur 77:12, also deutlich kuerzer als das Gespraech; fuer die Frage am Ende taugt sie nicht."},
-    {"nr":  8, "name": "Rob Bennett",     "k": "bennett",   "id": "1K5E3SlIrEBL7aCM7Z-QvAeEsrXiQ5RW-", "groesse": 34210284768, "gesamt": null, "stand": "offen",
-     "notiz": "veroeffentlicht o9lM8i6XUWo, 118:35."},
-    {"nr":  9, "name": "Craig Makhosi",   "k": "makhosi",   "id": "1JEWgIwIt1XIzwZphqsGnqLedKkYa9Dhm", "groesse": 27409366795, "gesamt": null, "stand": "offen",
-     "notiz": "veroeffentlicht FF-eRPgZI2k (vermutlich), 145:12."},
-    {"nr": 10, "name": "Eben Britton",    "k": "britton",   "id": "1lIFL8aUunQQPtTDp0vQNlaRc7of-4PfG", "groesse": 26996814481, "gesamt": null, "stand": "offen",
-     "notiz": "veroeffentlicht RG-K0fIA2-w, 102:28."},
-    {"nr": 11, "name": "Whitney Wheelock","k": "wheelock",  "id": "1iZy9XwHryVdCf3VBRM2Ya5oP_XIBjmdM", "groesse":  4969465804, "gesamt": null, "stand": "offen",
-     "notiz": "Zweier-Kamera (Whit & YNB) — zeigt beide. veroeffentlicht rFRIX4Yute0 (vermutlich), 104:07."},
-    {"nr": 12, "name": "Curtis Crane",    "k": "crane",     "id": "19S90VEL7LNfkwNCBZH6ZJDuVE3jRu6MG", "groesse":  2041723882, "gesamt": null, "stand": "blockiert",
-     "notiz": "v1-Export, 2,0 GB. Bereichsabruf scheitert am 21.10.: Block 0 liefert 920758 statt 8388608 Bytes — die Datei ist nicht link-freigegeben. Braucht 'Jeder mit dem Link'. Der 33,2-GB-Rohschnitt 1X9I3dODNz8RqdMml801Gk2a4E2SdmzM- waere die Ausweichquelle."},
-    {"nr": 13, "name": "Marian Goodell",  "k": "goodell",   "id": "1LVM5nxvxjMuSmsQlz1Jys_O32y8eYe0A", "groesse": 18477374819, "gesamt": null, "stand": "blockiert",
-     "notiz": "Kameraton bricht nach etwa einer Stunde ab, Gespraech lief zwei Stunden, die Frage steht am Ende. Braucht die iPhone-Tonspur; sie liegt nicht im Drive."},
-
-    {"nr": 14, "name": "Francis Chouler", "k": "chouler",   "id": null, "groesse": null, "gesamt": null, "stand": "ohne Master",
-     "notiz": "Master nach der Veroeffentlichung geloescht. Zeile steht trotzdem: Frage veroeffentlicht 01:08:29, Antwort 01:08:36-01:09:31, Ende auf 'Embrace the uncertainty. It is the source of aliveness.' Quelle video/transkripte/swZGLesMb8Y.transkript.md."},
-    {"nr": 15, "name": "Rob Paddock",     "k": "paddock",   "id": null, "groesse": null, "gesamt": null, "stand": "ohne Master",
-     "notiz": "ud5kr_LoqU4 (vermutlich), 92:13. Master geloescht, YouTube-Transkript seit 21.10. gesperrt. Braucht die Datei von ihm."},
-    {"nr": 16, "name": "Nathan Maingard", "k": "maingard",  "id": null, "groesse": null, "gesamt": null, "stand": "ohne Master",
-     "notiz": "cv-I2lkMebE (vermutlich), 114:41. wie Paddock."},
-    {"nr": 17, "name": "Danny Miranda",   "k": "miranda",   "id": null, "groesse": null, "gesamt": null, "stand": "ohne Master",
-     "notiz": "23NNT7aMgL4 (vermutlich), 78:54. wie Paddock."}
-  ]
+ "_hinweis": "Die Folgenliste der Reihe 'What makes life meaningful?'. frage_am_ende.py liest sie hier, nicht im Code — eine neue Folge ist eine neue Zeile, kein Eingriff ins Werkzeug. 'gesamt' null heisst: Laufzeit beim Lauf abfragen (kostet rund 8 MB).",
+ "folgen": [
+  {
+   "nr": 1,
+   "name": "David Sutcliffe",
+   "k": "sutcliffe",
+   "id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
+   "groesse": 19976733699,
+   "gesamt": 7518.0,
+   "stand": "fertig"
+  },
+  {
+   "nr": 2,
+   "name": "Scott Aaronson",
+   "k": "aaronson",
+   "id": "1C7CUI-B6_fBcdttR_zKIJBYraBMTtUvh",
+   "groesse": 16141727375,
+   "gesamt": 6138.0,
+   "stand": "fertig"
+  },
+  {
+   "nr": 3,
+   "name": "Ken Stern",
+   "k": "ken",
+   "id": "1RGq-Mw0QEm5jE2WMthKPkP5OHrXvmotF",
+   "groesse": 16824141940,
+   "gesamt": 6333.4,
+   "stand": "fertig"
+  },
+  {
+   "nr": 4,
+   "name": "Logan Gonzalez",
+   "k": "logan",
+   "id": "1ztggu2ua5-AntISFHHP9cBqjVhSn6Zmj",
+   "groesse": 2663541811,
+   "gesamt": 5159.5,
+   "stand": "fertig"
+  },
+  {
+   "nr": 5,
+   "name": "Matt Defina",
+   "k": "matt",
+   "id": "1ubW-gMYb6_g0ZO-cOVyEFGQoKvIyGivj",
+   "groesse": 17449171699,
+   "gesamt": 6572.3,
+   "stand": "fertig"
+  },
+  {
+   "nr": 6,
+   "name": "Rick Strassman",
+   "k": "rick",
+   "id": "1Hwt3_c_Ifhd7onXyC8nrHIdtjwJjxdjH",
+   "groesse": 15496441499,
+   "gesamt": 7251.8,
+   "stand": "fertig, Ende offen"
+  },
+  {
+   "nr": 7,
+   "name": "Kyle Kingsbury",
+   "k": "kyle",
+   "id": "1NWMaIn8avpf0EVQvm2DhEQr73uhfioIq",
+   "groesse": 1290034956,
+   "gesamt": 7790.0,
+   "stand": "offen",
+   "notiz": "v1-Export, 1920x1080, 129:50 — die ganze Folge. Die 4K-Kameradatei (YNB) laeuft nur 77:12, also deutlich kuerzer als das Gespraech; fuer die Frage am Ende taugt sie nicht."
+  },
+  {
+   "nr": 9,
+   "name": "Craig Makhosi",
+   "k": "makhosi",
+   "id": "1JEWgIwIt1XIzwZphqsGnqLedKkYa9Dhm",
+   "groesse": 27409366795,
+   "gesamt": null,
+   "stand": "offen",
+   "notiz": "veroeffentlicht FF-eRPgZI2k (vermutlich), 145:12."
+  },
+  {
+   "nr": 10,
+   "name": "Eben Britton",
+   "k": "britton",
+   "id": "1lIFL8aUunQQPtTDp0vQNlaRc7of-4PfG",
+   "groesse": 26996814481,
+   "gesamt": null,
+   "stand": "offen",
+   "notiz": "veroeffentlicht RG-K0fIA2-w, 102:28."
+  },
+  {
+   "nr": 11,
+   "name": "Whitney Wheelock",
+   "k": "wheelock",
+   "id": "1iZy9XwHryVdCf3VBRM2Ya5oP_XIBjmdM",
+   "groesse": 4969465804,
+   "gesamt": null,
+   "stand": "offen",
+   "notiz": "Zweier-Kamera (Whit & YNB) — zeigt beide. veroeffentlicht rFRIX4Yute0 (vermutlich), 104:07."
+  },
+  {
+   "nr": 8,
+   "name": "Rob Bennett",
+   "k": "bennett",
+   "id": "1K5E3SlIrEBL7aCM7Z-QvAeEsrXiQ5RW-",
+   "groesse": 34210284768,
+   "gesamt": null,
+   "stand": "offen",
+   "notiz": "veroeffentlicht o9lM8i6XUWo, 118:35. Frage steht NICHT in den letzten 420 s: dort laufen Reue, Rueckblick und Verabschiedung ('Thank you so much, Rob'). Er war der erste Gast ueberhaupt (Januar 2026) — moeglich, dass das Ritual damals noch nicht bestand. Jedes Fenster kostet hier 580 MB statt 260. Vor weiterer Suche ihn fragen."
+  },
+  {
+   "nr": 12,
+   "name": "Curtis Crane",
+   "k": "crane",
+   "id": "19S90VEL7LNfkwNCBZH6ZJDuVE3jRu6MG",
+   "groesse": 2041723882,
+   "gesamt": null,
+   "stand": "blockiert",
+   "notiz": "v1-Export, 2,0 GB. Bereichsabruf scheitert am 21.10.: Block 0 liefert 920758 statt 8388608 Bytes — die Datei ist nicht link-freigegeben. Braucht 'Jeder mit dem Link'. Der 33,2-GB-Rohschnitt 1X9I3dODNz8RqdMml801Gk2a4E2SdmzM- waere die Ausweichquelle."
+  },
+  {
+   "nr": 13,
+   "name": "Marian Goodell",
+   "k": "goodell",
+   "id": "1LVM5nxvxjMuSmsQlz1Jys_O32y8eYe0A",
+   "groesse": 18477374819,
+   "gesamt": null,
+   "stand": "blockiert",
+   "notiz": "Kameraton bricht nach etwa einer Stunde ab, Gespraech lief zwei Stunden, die Frage steht am Ende. Braucht die iPhone-Tonspur; sie liegt nicht im Drive."
+  },
+  {
+   "nr": 14,
+   "name": "Francis Chouler",
+   "k": "chouler",
+   "id": null,
+   "groesse": null,
+   "gesamt": null,
+   "stand": "ohne Master",
+   "notiz": "Master nach der Veroeffentlichung geloescht. Zeile steht trotzdem: Frage veroeffentlicht 01:08:29, Antwort 01:08:36-01:09:31, Ende auf 'Embrace the uncertainty. It is the source of aliveness.' Quelle video/transkripte/swZGLesMb8Y.transkript.md."
+  },
+  {
+   "nr": 15,
+   "name": "Rob Paddock",
+   "k": "paddock",
+   "id": null,
+   "groesse": null,
+   "gesamt": null,
+   "stand": "ohne Master",
+   "notiz": "ud5kr_LoqU4 (vermutlich), 92:13. Master geloescht, YouTube-Transkript seit 21.10. gesperrt. Braucht die Datei von ihm."
+  },
+  {
+   "nr": 16,
+   "name": "Nathan Maingard",
+   "k": "maingard",
+   "id": null,
+   "groesse": null,
+   "gesamt": null,
+   "stand": "ohne Master",
+   "notiz": "cv-I2lkMebE (vermutlich), 114:41. wie Paddock."
+  },
+  {
+   "nr": 17,
+   "name": "Danny Miranda",
+   "k": "miranda",
+   "id": null,
+   "groesse": null,
+   "gesamt": null,
+   "stand": "ohne Master",
+   "notiz": "23NNT7aMgL4 (vermutlich), 78:54. wie Paddock."
+  }
+ ]
 }
