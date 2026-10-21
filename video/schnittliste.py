@@ -136,14 +136,23 @@ def anwenden(clip, abschnitte, raus, out, tempo):
     if not behalten:
         raise SystemExit("Es bliebe nichts uebrig.")
     paus = stillen(ton_lesen(clip))
-    # benachbarte Abschnitte verschmelzen, damit nur an echten Luecken geschnitten wird
-    strecken = []
-    for a in behalten:
-        if strecken and abs(a["start"] - strecken[-1][1]) < 0.05:
+    # Benachbarte Abschnitte verschmelzen — nach ihrer STELLE in der Liste,
+    # nicht nach dem Zeitabstand. Der erste Entwurf verschmolz nur bei unter
+    # 0,05 s Abstand; zwischen zwei Saetzen liegt aber fast immer eine
+    # Atempause. Ergebnis waren 46 Einzelstuecke fuer 3 gestrichene Zeilen,
+    # jedes mit eigener Ein- und Ausblendung — der Ton haette gepumpt.
+    # Zwischen zwei behaltenen Nachbarn gehoert die Pause dazu.
+    behalten_idx = [i for i in range(1, len(abschnitte) + 1) if i not in raus]
+    strecken, letzte = [], None
+    for i in behalten_idx:
+        a = abschnitte[i - 1]
+        if letzte is not None and i == letzte + 1:
             strecken[-1][1] = a["end"]
         else:
             strecken.append([a["start"], a["end"]])
+        letzte = i
     gezogen = [[ziehen(v, paus), ziehen(b, paus)] for v, b in strecken]
+    gezogen = [s for s in gezogen if s[1] - s[0] > 0.1]   # leere Reste raus
     print(f"  {len(abschnitte)} Abschnitte, {len(raus)} gestrichen, "
           f"{len(gezogen)} Strecke(n):", flush=True)
     for v, b in gezogen:
