@@ -5,6 +5,35 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
 
 ---
 
+## 21.10.2026 — abends, zweite Runde
+
+- **Kopfdrehung messen, bevor man spiegelt.** Ich spiegelte ihn und drehte
+  ihn damit erst vom Gast weg. Über 367 Bilder gemessen ist seine Gier (Nase
+  gegen Augenmitte, auf Pupillenabstand normiert) **immer positiv**: min
+  +0,03, Median **+0,44**, max +0,77. Er sitzt durchgehend zum Gast gedreht.
+  **Erst messen, dann spiegeln — und meist gar nicht.**
+  → betrifft: content-*, cinematic
+
+- **Nach Drehung auswählen, nicht nur nach Größe — es gibt einen
+  Zielkonflikt.** Je stärker jemand zum Gegenüber gedreht ist, desto kleiner
+  wird sein Gesicht im Bild. In derselben Aufnahme: Gier ≥ 0,50 **und**
+  Pupillenabstand ≥ 72 → **kein einziges Bild**. Gier ≥ 0,45 und ≥ 68 → 52.
+  → betrifft: content-*, cinematic
+
+- **Freisteller zusätzlich am Kopf in Originalgröße prüfen.** Die Prüfung vor
+  Grün bei 420 px Vorschau zeigte nicht, dass rembg ein Stück Bücherregal
+  neben der Schläfe stehen gelassen hatte. Im Thumbnail war es ein
+  auffälliger Farbfleck.
+  → betrifft: alle, die freistellen
+
+- **Belichtung zwischen zwei Köpfen angleichen und nachmessen.** Zwei Kameras
+  belichten verschieden: ein Gesicht lag bei mittlerer Helligkeit 167 mit
+  **41 % Pixeln über 230** (ausgefressen), das andere bei 141 mit 28 %.
+  Messbar und korrigierbar je Kopf. Danach 138 gegen 130.
+  → betrifft: content-*, cinematic
+
+---
+
 ## 21.10.2026 — abends
 
 ### Korrektur an den Copy-Regeln des Head of Content

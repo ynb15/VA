@@ -1,18 +1,22 @@
 [
  {
-  "hg": "video/thumbnails/_hintergrund.jpg",
-  "links": "video/thumbnails/_freisteller/y_k4223.png",
-  "links_spiegeln": true,
+  "hg": "video/thumbnails/_hintergrund-kingsbury.jpg",
+  "links": "video/thumbnails/_freisteller/y_k4222_rein.png",
+  "links_spiegeln": false,
   "rechts": "video/thumbnails/_freisteller/k_0042.png",
   "ziel_links": {
-   "augen_x": 167,
-   "scheitel_y": 10,
-   "box_h": 451
+   "augen_x": 186,
+   "scheitel_y": 14,
+   "box_h": 403,
+   "helligkeit": 0.94,
+   "kontrast": 1.06
   },
   "ziel_rechts": {
-   "augen_x": 1128,
-   "scheitel_y": 10,
-   "box_h": 437
+   "augen_x": 1118,
+   "scheitel_y": 4,
+   "box_h": 524,
+   "helligkeit": 0.97,
+   "kontrast": 1.1
   },
   "zeilen": [
    "CAGE FIGHTER",
@@ -22,22 +26,27 @@
    1,
    "MYSTIC"
   ],
-  "ziel": "video/thumbnails/kingsbury-A-cage-fighter.jpg"
+  "ziel": "video/thumbnails/kingsbury-A-cage-fighter.jpg",
+  "hg_dunkel": 0.07
  },
  {
-  "hg": "video/thumbnails/_hintergrund.jpg",
-  "links": "video/thumbnails/_freisteller/y_k4223.png",
-  "links_spiegeln": true,
+  "hg": "video/thumbnails/_hintergrund-kingsbury.jpg",
+  "links": "video/thumbnails/_freisteller/y_k4222_rein.png",
+  "links_spiegeln": false,
   "rechts": "video/thumbnails/_freisteller/k_0042.png",
   "ziel_links": {
-   "augen_x": 167,
-   "scheitel_y": 10,
-   "box_h": 451
+   "augen_x": 186,
+   "scheitel_y": 14,
+   "box_h": 403,
+   "helligkeit": 0.94,
+   "kontrast": 1.06
   },
   "ziel_rechts": {
-   "augen_x": 1128,
-   "scheitel_y": 10,
-   "box_h": 437
+   "augen_x": 1118,
+   "scheitel_y": 4,
+   "box_h": 524,
+   "helligkeit": 0.97,
+   "kontrast": 1.1
   },
   "zeilen": [
    "THE FIGHTER",
@@ -45,6 +54,7 @@
    "FIGHTING"
   ],
   "kasten": 1,
-  "ziel": "video/thumbnails/kingsbury-B-who-quit.jpg"
+  "ziel": "video/thumbnails/kingsbury-B-who-quit.jpg",
+  "hg_dunkel": 0.07
  }
 ]

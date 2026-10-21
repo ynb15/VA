@@ -326,6 +326,49 @@ fertigen Thumbnail `RG-K0fIA2-w` geschnitten. Dort steht er schon vor
 der Bildrand liefert zusätzlich eine gerade Schnittkante. **Immer aus dem
 Rohmaterial freistellen, wo die Person vor einem belichteten Raum sitzt.**
 
+### Vor dem Spiegeln die Kopfdrehung messen
+
+**Am 21.10. habe ich ihn gespiegelt und damit erst weggedreht.** Seine
+Reaktion: *„irgendwie hast du jetzt mein Gesicht einfach umgedreht. Jetzt
+gucken beide [weg]."*
+
+Nachgemessen über alle 367 Bilder seiner Kamera: die Gier (Nase gegen
+Augenmitte, auf Pupillenabstand normiert) ist **immer positiv** — Minimum
++0,03, Median **+0,44**, Maximum +0,77. Er ist in dieser Aufnahme
+durchgehend nach Bild-rechts gedreht, also ohnehin zum Gast hin. **Spiegeln
+war genau falsch herum.**
+
+**Regel: erst die Gier über viele Bilder messen, dann entscheiden.** Ist das
+Vorzeichen schon richtig, wird nicht gespiegelt.
+
+**Und: nach Gier auswählen, nicht nur nach Größe.** Das Bild, das ich zuerst
+nahm, hatte Gier +0,31 — unter dem Median, also vergleichsweise frontal, und
+genau deshalb sah es aus, als schaue er in die Kamera. Es gibt einen
+Zielkonflikt: **je stärker gedreht, desto kleiner das Gesicht.** Bei
+Gier ≥ 0,50 und Pupillenabstand ≥ 72 gab es **kein einziges** Bild; bei
+Gier ≥ 0,45 und ≥ 68 waren es 52.
+
+### Freisteller am Kopf in voller Auflösung prüfen
+
+Die Prüfung vor Grün war richtig, aber zu klein: bei 420 px Vorschau war
+nicht zu sehen, dass rembg **ein Stück Bücherregal neben seiner Schläfe
+stehen gelassen** hatte. Im fertigen Thumbnail war es ein auffälliger
+Farbfleck. **Kopfbereich zusätzlich in Originalgröße ansehen.**
+
+### Belichtung der beiden Köpfe angleichen
+
+Zwei Kameras belichten verschieden. Gemessen im fertigen Bild: sein Gesicht
+lag bei mittlerer Helligkeit **167 mit 41 % Pixeln über 230** (ausgefressen),
+Kingsburys bei 141 mit 28 %. `kopf_setzen()` nimmt `helligkeit` und
+`kontrast` jetzt **je Kopf** aus dem Ziel-Wörterbuch. Danach: 138 gegen 130,
+beide unter 5 % über 230.
+
+### Hintergrund aus dem richtigen Dreh
+
+Der dunkle Fleck neben seinem Kopf war anfangs der **Hintergrund aus dem
+Aaronson-Studio**, den ich gedankenlos weiterverwendet hatte. Pro Folge den
+Hintergrund aus dieser Aufnahme nehmen.
+
 ### Wenn beide Kameras in dieselbe Richtung zeigen
 
 In der Kingsbury-Aufnahme schauen **beide** auf ihrer jeweiligen Kamera nach

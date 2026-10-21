@@ -131,6 +131,10 @@ def kopf_setzen(leinwand, png, ziel, kontrast=1.14, helligkeit=1.06,
         oben = int(np.nonzero(al.sum(1) > 6)[0][0])
         ziel = dict(ziel, augen_y=ziel['scheitel_y'] + (ay - oben) * k_vor)
     im = Image.open(png).convert('RGBA')
+    # Je Kopf einstellbar: die beiden Kameras belichten verschieden, und ein
+    # ueberbelichtetes Gesicht neben einem dunklen faellt sofort auf.
+    kontrast = ziel.get('kontrast', kontrast)
+    helligkeit = ziel.get('helligkeit', helligkeit)
     if kontrast != 1.0 or helligkeit != 1.0:
         farbe, maske = im.convert('RGB'), im.getchannel('A')
         farbe = ImageEnhance.Contrast(farbe).enhance(kontrast)
