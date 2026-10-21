@@ -101,7 +101,13 @@ def saetze_bilden(woerter, pause=0.45):
 def woerter_holen(clip, modell="medium"):
     from faster_whisper import WhisperModel
     m = WhisperModel(modell, device="cpu", compute_type="int8")
-    seg, _ = m.transcribe(ton_lesen(clip), language="en", word_timestamps=True)
+    # condition_on_previous_text=False: der Decoder nimmt sonst den
+    # vorher erkannten Text als Vorlage und unterdrueckt Wiederholungen.
+    # Rick sagt „you know" im Sekundentakt — gemessen am selben Fenster
+    # von rick5_mit: mit Vorlage 170 Woerter und 0x „you know", ohne
+    # Vorlage 188 Woerter und 7x. Eine ganze Fassung verlor so 90 Woerter.
+    seg, _ = m.transcribe(ton_lesen(clip), language="en", word_timestamps=True,
+                          condition_on_previous_text=False)
     return [{"t": w.word, "start": w.start, "end": w.end}
             for s in seg for w in (s.words or []) if w.word.strip()]
 

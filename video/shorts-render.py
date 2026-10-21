@@ -635,8 +635,15 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
                          capture_output=True, check=True).stdout
     ton = np.frombuffer(roh, dtype=np.float32)
     m = WhisperModel(model_size, device="cpu", compute_type="int8")
+    # condition_on_previous_text=False: der Decoder nimmt sonst den vorher
+    # erkannten Text als Vorlage und unterdrueckt Wiederholungen. Rick sagt
+    # „you know" im Sekundentakt — gemessen am selben 80-s-Fenster von
+    # rick5_mit: mit Vorlage 170 Woerter und 0x „you know", ohne Vorlage 188
+    # Woerter und 7x. Eine ganze Fassung verlor so 90 Woerter, und die
+    # Untertitel waren lueckenhaft, ohne dass irgendetwas davon meldete.
     segments, info = m.transcribe(ton, language=lang, word_timestamps=True,
-                                  vad_filter=True)
+                                  vad_filter=True,
+                                  condition_on_previous_text=False)
     # Der Abschnitt, aus dem ein Wort stammt, wird mitgefuehrt: Whisper
     # trennt Saetze zuverlaessiger ueber seine eigenen Abschnitte als ueber
     # die Satzzeichen, die es setzt. `too afraid to touch.` und `This is why`

@@ -1,3 +1,43 @@
+## 21.10.2026 — Whisper verschluckt Wiederholungen, und niemand merkt es
+
+**Befund, gemessen am selben 80-Sekunden-Fenster derselben Datei:**
+
+| `condition_on_previous_text` | Wörter | „you know" |
+|---|---|---|
+| `True` (die Vorgabe) | 170 | **0** |
+| `False` | 188 | **7** |
+
+Der Decoder nimmt den vorher erkannten Text als Vorlage und unterdrückt
+dann Wiederholungen. Rick Strassman sagt „you know" im Sekundentakt —
+eine ganze Fassung verlor dadurch **90 Wörter**, die Untertitel waren
+lückenhaft, und **kein Werkzeug hat etwas gemeldet**. Aufgefallen ist es
+nur, weil zufällig eine inhaltsgleiche zweite Fassung danebenlag: 612
+Wörter gegen 520 bei identischer Tonspur und identischem Pegel.
+**`condition_on_previous_text=False` steht jetzt in allen drei
+Werkzeugen** (`shorts-render.py`, `fuellwoerter.py`, `schnittliste.py`).
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Die Folge davon ist schlimmer als der Fehler: eine Null, die durchläuft.**
+`fuellwoerter.py` bekam dieses lückenhafte Transkript, fand **0 von 43**
+Stellen, meldete „fertig" und legte eine Datei ab, die mit der Eingabe
+identisch war. Der nächste Schritt rechnete damit weiter. Jetzt bricht es
+bei null Funden ab und schreibt nichts.
+**Regel: ein Werkzeug, das nichts gefunden hat, darf nicht „fertig"
+melden.** Null ist ein Ergebnis, das begründet werden muss — bei
+Füllwörtern, bei Schnittlisten, beim Ortscheck.
+→ betrifft: alle Content-Agenten
+
+**Und ein Fehler in der eigenen Messung, der die Spur fast verwischt hätte.**
+Der erste Test sagte „kein Unterschied" (219 gegen 216 Wörter) und schien
+die Vermutung zu widerlegen. Die Zählung war kaputt: `w.word` von
+faster-whisper enthält ein führendes Leerzeichen, `" ".join(...)` macht
+daraus zwei, und `"you know"` findet sich in `"you  know"` nie. Jede
+Trefferzahl in dem Test war null, auch die richtige.
+**Regel: eine Messung, die überall null zählt, misst nichts.** Bevor man
+aus ihr schließt, prüft man sie an einem Fall, von dem man weiß, dass er
+treffen muss.
+→ betrifft: alle Content-Agenten
+
 ## 21.10.2026 — Gemeinsames Werkzeug gehört einem Branch
 
 **`shorts-render.py` lag in drei Fassungen vor, keine davon vollständig:**

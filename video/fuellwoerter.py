@@ -36,7 +36,13 @@ def ton_lesen(clip, rate=16000):
 def woerter(clip, modell="medium"):
     from faster_whisper import WhisperModel
     m = WhisperModel(modell, device="cpu", compute_type="int8")
-    seg, _ = m.transcribe(ton_lesen(clip), language="en", word_timestamps=True)
+    # condition_on_previous_text=False: der Decoder nimmt sonst den
+    # vorher erkannten Text als Vorlage und unterdrueckt Wiederholungen.
+    # Rick sagt „you know" im Sekundentakt — gemessen am selben Fenster
+    # von rick5_mit: mit Vorlage 170 Woerter und 0x „you know", ohne
+    # Vorlage 188 Woerter und 7x. Eine ganze Fassung verlor so 90 Woerter.
+    seg, _ = m.transcribe(ton_lesen(clip), language="en", word_timestamps=True,
+                          condition_on_previous_text=False)
     return [{"t": w.word, "k": kern(w.word), "start": w.start, "end": w.end}
             for s in seg for w in (s.words or []) if w.word.strip()]
 
@@ -87,6 +93,16 @@ def main():
         print(f"   {n:3d}x  {s}")
     if a.nur_zaehlen:
         return
+
+    # Eine Null muss auffallen. Am 21.10. lief dieses Werkzeug auf ein
+    # lueckenhaftes Transkript, fand 0 von 43 Stellen, meldete „fertig" und
+    # legte eine Datei ab, die mit der Eingabe identisch war. Der naechste
+    # Schritt rechnete damit weiter. Ohne Fund gibt es jetzt keine Datei
+    # und keinen Erfolg, sondern einen Abbruch mit Grund.
+    if not treffer:
+        sys.exit(f"Keine Fuellstelle gefunden in {len(ws)} Woertern — das ist "
+                 f"bei diesem Material unwahrscheinlich. Wahrscheinlich ist "
+                 f"das Transkript lueckenhaft. Nichts geschrieben.")
 
     # Behalten-Strecken bilden
     dauer = float(subprocess.run([FF, "-hide_banner", "-i", a.clip],
