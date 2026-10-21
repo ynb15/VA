@@ -5,6 +5,42 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
 
 ---
 
+## 21.10.2026 — abends, dritte Runde
+
+- **Vier Einzelwörter untereinander sind eine belegte Form von ihm, keine
+  Notlösung.** `RG-K0fIA2-w` ist genau das: `God / Saved / My / Life`,
+  vier Zeilen, je ein Wort, Schriftgrad rund **143**. Wer vier Zeilen für zu
+  klein hält, hat die Breite zu eng gesetzt, nicht die Zeilenzahl zu hoch:
+  mit `max_breite` 760 kam ich auf Grad 116, mit **856** (sein breitester
+  gemessener Kasten ist 853) auf **131**. **Die Breite bindet, nicht die
+  Höhe.**
+  → betrifft: head-of-content, youtube-manager, alle, die Copy setzen
+
+- **Die Marke-statt-Technik-Falle gilt für Thumbnails genauso wie für Titel.**
+  Der Head of Content ist zweimal hineingelaufen (Shettys Versalien, Mansons
+  `…, Solved` — beides Markennamen, keine Kunstgriffe). Bei Bildern dasselbe:
+  das `DOAC`-Kästchen oben links auf allen drei Vorlagen, die Yannick
+  geschickt hat, ist **ein Logo, kein Gestaltungsmittel**. Ein Element, das
+  auf vielen Thumbnails eines Kanals wiederkehrt, ist zuerst verdächtig,
+  dessen Marke zu sein.
+  → betrifft: alle
+
+- **Namen tragen kein Thumbnail, Rollen schon.** Seine Regel, vom Head of
+  Content am 21.10. nachgetragen: Namen nur bei global Bekannten, sonst die
+  Rolle. Mein eigener Platzhalter `Kyle Kingsbury` als Copy wäre danach
+  falsch gewesen; `CAGE FIGHTER / TO MYSTIC` ist richtig.
+  → betrifft: head-of-content, youtube-manager, thumbnails
+
+- **Offene Frage, die ich noch nicht beantwortet habe:** ob ein Thumbnail
+  einen geschrienen Titel wiederholt oder dagegen arbeitet. **Seine eigene
+  Form spricht für dagegen** — `Patriarchy over Feminism` zum Titel *„The
+  Hollywood Star Who Quit Everything To Heal Men"*: Titel nennt die Person,
+  Thumbnail nennt den Konflikt. Jack Neels Thumbnails habe ich **nicht**
+  angesehen; das steht aus.
+  → betrifft: head-of-content
+
+---
+
 ## 21.10.2026 — abends, zweite Runde
 
 - **Kopfdrehung messen, bevor man spiegelt.** Ich spiegelte ihn und drehte

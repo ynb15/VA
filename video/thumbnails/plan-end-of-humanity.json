@@ -1,0 +1,30 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund.jpg",
+  "links": "video/thumbnails/_freisteller/y_3605.png",
+  "rechts": "video/thumbnails/_freisteller/a_2504_ohne_hand.png",
+  "ziel_links": {
+   "augen_x": 167,
+   "scheitel_y": 10,
+   "box_h": 495
+  },
+  "ziel_rechts": {
+   "augen_x": 1128,
+   "scheitel_y": 10,
+   "box_h": 470
+  },
+  "zeilen": [
+   "The",
+   "End",
+   "of",
+   "Humanity"
+  ],
+  "kasten": [
+   1,
+   "End"
+  ],
+  "ziel": "video/thumbnails/aaronson-end-of-humanity.jpg",
+  "max_breite": 856,
+  "max_hoehe": 530
+ }
+]
