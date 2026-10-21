@@ -386,6 +386,34 @@ ich habe zusätzlich eine zweite Copy gebaut, die er nicht wollte, und das hat
 ihn zu Recht geärgert. Eine Bestellung, eine Lieferung. Was ich zusätzlich
 für sinnvoll halte, wird gefragt, nicht danebengelegt.
 
+## Varianten einer Folge müssen bis aufs Pixel gleich gesetzt sein
+
+Sein Grund am 21.10.: *„ich möchte, dass die Kopfgrößen überall gleich sind
+… weil das wichtig ist für A/B-Tests, dass Elemente wirklich gleich sind."*
+
+**Wenn mehrere Thumbnails zu derselben Folge gegeneinander getestet werden,
+darf sich nur das ändern, was getestet wird.** Gleiche Freisteller, gleiches
+`box_h`, gleiche Kinnlinie. Sonst misst der Test die Kopfgröße mit und nicht
+die Copy.
+
+Festgehalten für die Aaronson-Folge: `y_3605` mit `box_h` 595 und
+`a_2504_ohne_hand` mit `box_h` 524, Kinnlinie links 592, rechts 612.
+
+## Kinnlinie bündigen, nicht Scheitel
+
+**Scheitel-zu-Kinn ist bei zwei Menschen verschieden.** Mit beiden Scheiteln
+auf y = 3 lag sein Kinn bei **716**, Aaronsons bei **641** — 75 px
+auseinander, und genau das hat er gesehen: *„mein Kinn sollte auf der Höhe
+von Scott sein."*
+
+`kopf_setzen()` nimmt dafür `kinn_y` statt `scheitel_y`. Als Kinnlinie dient
+die **Unterkante des YuNet-Gesichtsrahmens** — kein echtes Kinn, aber bei
+beiden derselbe Messpunkt, und darauf kommt es an.
+
+**Nachregeln am fertigen Bild.** Der Detektor misst den Freisteller anders
+als die Montage; nach dem ersten Lauf blieben 20 px Rest. Einmal messen,
+`kinn_y` um die Differenz korrigieren, neu rendern — danach 2 px.
+
 ## Fläche, die kein Gesicht zeigt, zahlt nicht ein
 
 Sein Satz am 21.10.: *„je mehr wir von Kyles Oberkörper zeigen, desto weniger

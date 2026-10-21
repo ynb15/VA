@@ -73,7 +73,7 @@ def kopfmass(png):
     return scheitel, int(schulter), mitte, flaeche
 
 
-def gesicht_messen(png):
+def gesicht_messen(png, mit_unterkante=False):
     """Augenmitte und Gesichtshoehe eines Freistellers messen (YuNet).
 
     Maskenmasse wie Scheitel-zu-Schulter taugen nicht zum Skalieren: legt
@@ -97,6 +97,9 @@ def gesicht_messen(png):
     r = max(res, key=lambda r: r[3])          # groesster Rahmen
     augen_x = (float(r[4]) + float(r[6])) / 2
     augen_y = (float(r[5]) + float(r[7])) / 2
+    if mit_unterkante:
+        # Unterkante des Gesichtsrahmens, als Kinnlinie benutzbar
+        return augen_x, augen_y, float(r[3]), float(r[1]) + float(r[3])
     return augen_x, augen_y, float(r[3])
 
 
@@ -124,9 +127,15 @@ def kopf_setzen(leinwand, png, ziel, kontrast=1.14, helligkeit=1.06,
             Image.FLIP_LEFT_RIGHT)
         png = png.rsplit('.', 1)[0] + '__gespiegelt.png'
         gespiegelt.save(png)
-    ax, ay, bh = gesicht_messen(png)
+    ax, ay, bh, by = gesicht_messen(png, mit_unterkante=True)
     k_vor = ziel['box_h'] / bh
-    if 'scheitel_y' in ziel:
+    if 'kinn_y' in ziel:
+        # Kinnlinie als Anker. Scheitel-zu-Kinn ist bei zwei Menschen
+        # verschieden; wer beide oben buendig setzt, bekommt unten
+        # verschiedene Kinnhoehen. Fuer A/B-Tests muessen die Elemente
+        # gleich sitzen, also wird unten gebuendigt.
+        ziel = dict(ziel, augen_y=ziel['kinn_y'] - (by - ay) * k_vor)
+    elif 'scheitel_y' in ziel:
         al = np.asarray(Image.open(png))[:, :, 3] > 40
         oben = int(np.nonzero(al.sum(1) > 6)[0][0])
         ziel = dict(ziel, augen_y=ziel['scheitel_y'] + (ay - oben) * k_vor)

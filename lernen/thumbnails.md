@@ -5,6 +5,30 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
 
 ---
 
+## 21.10.2026 — abends, fünfte Runde
+
+- **Varianten derselben Folge müssen bis aufs Pixel gleich gesetzt sein.**
+  Sein Grund, wörtlich: *„weil das wichtig ist für A/B-Tests, dass Elemente
+  wirklich gleich sind."* Wenn mehrere Fassungen gegeneinander laufen, darf
+  sich nur ändern, was getestet wird. Gilt für jedes Medium, in dem wir
+  Varianten vorlegen — Titel, Beschreibungen, Hooks.
+  → betrifft: alle
+
+- **Zwei Köpfe bündigt man am Kinn, nicht am Scheitel.** Scheitel-zu-Kinn ist
+  bei zwei Menschen verschieden: mit beiden Scheiteln auf y = 3 lag ein Kinn
+  bei **716**, das andere bei **641** — 75 px auseinander. Als Messpunkt
+  taugt die Unterkante des YuNet-Gesichtsrahmens; kein echtes Kinn, aber bei
+  beiden derselbe Punkt.
+  → betrifft: content-*, cinematic
+
+- **Platzierungswerte am fertigen Bild nachregeln, nicht am Einzelteil.** Der
+  Detektor misst den Freisteller anders als die Montage — nach dem ersten
+  Lauf blieben 20 px Versatz. Einmal messen, korrigieren, neu rendern: dann
+  2 px.
+  → betrifft: content-*, cinematic
+
+---
+
 ## 21.10.2026 — abends, vierte Runde
 
 - **Seine Zielspanne für Kopfgrößen ist 145–167 Pupillenabstand, nicht
