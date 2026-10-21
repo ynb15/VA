@@ -1,0 +1,64 @@
+What if the man OpenAI hired to help make AI safe spent two years being asked one question he still can't answer – what would it mean, mathematically, for a machine to love humanity?
+
+Scott Aaronson is one of the world's leading quantum computing theorists. He teaches computer science at UT Austin, where he founded the Quantum Information Center, and he has spent his career on one question: what can computers ever do, and what can they never do? Then in 2022 Ilya Sutskever and Jan Leike asked him to take a leave and work on AI safety at OpenAI – and while he was there, he invented the first scheme for watermarking the output of a large language model.
+
+We start with quantum computers and end up somewhere I hadn't planned: God, the Book of Job, October 7th, and what he tells his own kids about a world where machines may soon do everything better than we can. In between he says the thing almost no one in his field will say out loud – that the trouble with AI isn't that it doesn't work…
+
+In this episode we explore:
+
+• Ilya Sutskever's question: what would it mean, mathematically, for an AI to love humanity?
+• The ChatGPT watermark he invented in 2022 – and why OpenAI never shipped it
+• The AI models that falsified an Erdős conjecture and moved the Riemann hypothesis
+• AI 2027, human extinction, and how orangutans fare in a human world
+• Arthur C. Clarke: maybe our role is not to worship God, but to create him
+
+An unfiltered, deeply human conversation about intelligence, God, extinction and what will be left for us to do.
+
+Get in touch with Scott:
+https://scottaaronson.blog
+https://www.scottaaronson.com
+
+Here's the timestamps:
+0:00 "Today I'm the idiot in the room"
+4:05 12 qubits that beat hundreds of classical bits
+5:18 Proving to a skeptic that random is really random
+9:50 "The quantum computer could be commandeered by the NSA"
+10:45 Dropping out of high school at 15
+13:03 "Socially, it made dating a hell of a lot harder"
+14:29 Finding programming at 11: "like finding out where babies come from"
+19:19 Moore's Law: everything changed and nothing changed
+26:28 Quantum mechanics is a change to the rules of probability itself
+28:31 "Now we're getting to the juicy stuff": two years inside OpenAI
+31:10 Why neural nets didn't work for 60 years – and then suddenly did
+34:49 The transformer, 2017 – the T in GPT
+37:44 "I got AI-pilled in 2021"
+38:29 When Ilya Sutskever and Jan Leike came calling
+41:01 Ilya's question: what would it mean for an AI to love humanity?
+41:42 The watermark he invented for ChatGPT
+43:48 Pangram, logging, watermarking – three ways to catch AI text
+47:55 Why Google and Anthropic shipped it and OpenAI didn't
+49:38 Asimov's three laws and the kid who tried to build them
+50:56 "Apocaloptimist" – where is the wall?
+53:00 AI falsified an Erdős conjecture and moved the Riemann hypothesis
+54:20 AI 2027, extinction, and how orangutans fare in a human world
+56:06 "This goes back to the evolution of the hominid brain"
+57:05 The next five to ten years – and who gets the wealth
+60:36 Help me bring Man's Search for Meaning to life
+63:24 Arthur C. Clarke: "not to worship God but to create him"
+65:34 "The greatest therapist of all time"
+68:18 From Hebrew school to militant atheist at 12
+70:16 "Every few generations, someone is going to try to kill you"
+72:56 Judaism's first move: might does not make right
+73:47 The Book of Job and the God who allows injustice
+74:58 "Then we should help the really just God come into being"
+75:52 October 7th, Gaza and the two-state solution he still wants
+79:51 Why the Jews? The villain who pulls the strings
+83:08 "Heritage Americans" and loving America anyway
+86:18 Ambiguity tolerance: holding two contradictions at once
+89:53 His message for humanity
+90:18 "The trouble with AI is not that it doesn't work. It's that it does."
+92:13 What makes life meaningful
+
+Prefer listening on the go? You can find this episode on:
+→ Spotify: <EPISODENLINK>
+→ Apple Podcasts: <EPISODENLINK>
