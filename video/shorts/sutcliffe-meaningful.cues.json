@@ -1,0 +1,2246 @@
+[
+ {
+  "start": 0.05,
+  "end": 1.37,
+  "text": "After all, what",
+  "woerter": [
+   {
+    "t": "After",
+    "start": 0.05,
+    "end": 0.71,
+    "seg": 0
+   },
+   {
+    "t": "all,",
+    "start": 0.71,
+    "end": 1.09,
+    "seg": 0
+   },
+   {
+    "t": "what",
+    "start": 1.35,
+    "end": 1.37,
+    "seg": 0
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 1.37,
+  "end": 1.81,
+  "text": "makes life",
+  "woerter": [
+   {
+    "t": "makes",
+    "start": 1.37,
+    "end": 1.57,
+    "seg": 0
+   },
+   {
+    "t": "life",
+    "start": 1.57,
+    "end": 1.81,
+    "seg": 0
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 1.81,
+  "end": 2.97,
+  "text": "meaningful for you?",
+  "woerter": [
+   {
+    "t": "meaningful",
+    "start": 1.81,
+    "end": 2.1966666666666668,
+    "seg": 0
+   },
+   {
+    "t": "for",
+    "start": 2.1966666666666668,
+    "end": 2.5833333333333335,
+    "seg": 0
+   },
+   {
+    "t": "you?",
+    "start": 2.5833333333333335,
+    "end": 2.97,
+    "seg": 0
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 3.53,
+  "end": 4.73,
+  "text": "other people.",
+  "woerter": [
+   {
+    "t": "other",
+    "start": 3.53,
+    "end": 4.13,
+    "seg": 1
+   },
+   {
+    "t": "people.",
+    "start": 4.13,
+    "end": 4.73,
+    "seg": 1
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 5.51,
+  "end": 6.73,
+  "text": "I mean, really,",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 5.51,
+    "end": 5.606,
+    "seg": 2
+   },
+   {
+    "t": "mean,",
+    "start": 5.606,
+    "end": 5.75,
+    "seg": 2
+   },
+   {
+    "t": "really,",
+    "start": 5.79,
+    "end": 6.55,
+    "seg": 2
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 6.73,
+  "end": 7.19,
+  "text": "what else?",
+  "woerter": [
+   {
+    "t": "what",
+    "start": 6.73,
+    "end": 6.77,
+    "seg": 2
+   },
+   {
+    "t": "else?",
+    "start": 6.77,
+    "end": 7.19,
+    "seg": 2
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 7.33,
+  "end": 7.81,
+  "text": "It's just",
+  "woerter": [
+   {
+    "t": "It's",
+    "start": 7.33,
+    "end": 7.51,
+    "seg": 3
+   },
+   {
+    "t": "just",
+    "start": 7.51,
+    "end": 7.81,
+    "seg": 3
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 7.81,
+  "end": 8.49,
+  "text": "connection,",
+  "woerter": [
+   {
+    "t": "connection,",
+    "start": 7.81,
+    "end": 8.49,
+    "seg": 3
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 8.81,
+  "end": 9.17,
+  "text": "you know,",
+  "woerter": [
+   {
+    "t": "you",
+    "start": 8.81,
+    "end": 8.954,
+    "seg": 3
+   },
+   {
+    "t": "know,",
+    "start": 8.954,
+    "end": 9.17,
+    "seg": 3
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 9.27,
+  "end": 10.47,
+  "text": "like simple",
+  "woerter": [
+   {
+    "t": "like",
+    "start": 9.27,
+    "end": 10.15,
+    "seg": 4
+   },
+   {
+    "t": "simple",
+    "start": 10.15,
+    "end": 10.47,
+    "seg": 4
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 10.47,
+  "end": 12.35,
+  "text": "moments with",
+  "woerter": [
+   {
+    "t": "moments",
+    "start": 10.47,
+    "end": 10.97,
+    "seg": 4
+   },
+   {
+    "t": "with",
+    "start": 10.97,
+    "end": 12.35,
+    "seg": 4
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 12.35,
+  "end": 13.61,
+  "text": "my wife",
+  "woerter": [
+   {
+    "t": "my",
+    "start": 12.35,
+    "end": 12.91,
+    "seg": 4
+   },
+   {
+    "t": "wife",
+    "start": 12.91,
+    "end": 13.61,
+    "seg": 4
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 13.61,
+  "end": 15.37,
+  "text": "and friends",
+  "woerter": [
+   {
+    "t": "and",
+    "start": 13.61,
+    "end": 14.75,
+    "seg": 4
+   },
+   {
+    "t": "friends",
+    "start": 14.75,
+    "end": 15.37,
+    "seg": 4
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 15.37,
+  "end": 16.19,
+  "text": "and, you know,",
+  "woerter": [
+   {
+    "t": "and,",
+    "start": 15.37,
+    "end": 15.91,
+    "seg": 5
+   },
+   {
+    "t": "you",
+    "start": 15.91,
+    "end": 15.97,
+    "seg": 5
+   },
+   {
+    "t": "know,",
+    "start": 15.97,
+    "end": 16.09,
+    "seg": 5
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 16.19,
+  "end": 16.65,
+  "text": "just moments",
+  "woerter": [
+   {
+    "t": "just",
+    "start": 16.19,
+    "end": 16.33,
+    "seg": 5
+   },
+   {
+    "t": "moments",
+    "start": 16.33,
+    "end": 16.65,
+    "seg": 5
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 16.65,
+  "end": 17.31,
+  "text": "like this,",
+  "woerter": [
+   {
+    "t": "like",
+    "start": 16.65,
+    "end": 17.01,
+    "seg": 5
+   },
+   {
+    "t": "this,",
+    "start": 17.01,
+    "end": 17.31,
+    "seg": 5
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 17.91,
+  "end": 18.63,
+  "text": "like the",
+  "woerter": [
+   {
+    "t": "like",
+    "start": 17.91,
+    "end": 18.16,
+    "seg": 6
+   },
+   {
+    "t": "the",
+    "start": 18.16,
+    "end": 18.63,
+    "seg": 6
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 18.63,
+  "end": 20.11,
+  "text": "ability to",
+  "woerter": [
+   {
+    "t": "ability",
+    "start": 18.63,
+    "end": 19.15,
+    "seg": 6
+   },
+   {
+    "t": "to",
+    "start": 19.15,
+    "end": 20.11,
+    "seg": 6
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 20.11,
+  "end": 21.17,
+  "text": "be in connection",
+  "woerter": [
+   {
+    "t": "be",
+    "start": 20.11,
+    "end": 20.55,
+    "seg": 6
+   },
+   {
+    "t": "in",
+    "start": 20.55,
+    "end": 20.79,
+    "seg": 6
+   },
+   {
+    "t": "connection",
+    "start": 20.79,
+    "end": 21.17,
+    "seg": 6
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 21.17,
+  "end": 21.77,
+  "text": "with other",
+  "woerter": [
+   {
+    "t": "with",
+    "start": 21.17,
+    "end": 21.39,
+    "seg": 6
+   },
+   {
+    "t": "other",
+    "start": 21.39,
+    "end": 21.77,
+    "seg": 6
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 21.77,
+  "end": 22.15,
+  "text": "people.",
+  "woerter": [
+   {
+    "t": "people.",
+    "start": 21.77,
+    "end": 22.15,
+    "seg": 6
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 22.29,
+  "end": 23.25,
+  "text": "to have",
+  "woerter": [
+   {
+    "t": "to",
+    "start": 22.29,
+    "end": 22.37,
+    "seg": 7
+   },
+   {
+    "t": "have",
+    "start": 22.37,
+    "end": 23.25,
+    "seg": 7
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 23.25,
+  "end": 24.65,
+  "text": "the opportunity",
+  "woerter": [
+   {
+    "t": "the",
+    "start": 23.25,
+    "end": 23.91,
+    "seg": 7
+   },
+   {
+    "t": "opportunity",
+    "start": 23.91,
+    "end": 24.65,
+    "seg": 7
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 24.65,
+  "end": 26.25,
+  "text": "to go deeper",
+  "woerter": [
+   {
+    "t": "to",
+    "start": 24.65,
+    "end": 25.45,
+    "seg": 7
+   },
+   {
+    "t": "go",
+    "start": 25.45,
+    "end": 25.81,
+    "seg": 7
+   },
+   {
+    "t": "deeper",
+    "start": 25.81,
+    "end": 26.25,
+    "seg": 7
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 26.25,
+  "end": 26.93,
+  "text": "and have real",
+  "woerter": [
+   {
+    "t": "and",
+    "start": 26.25,
+    "end": 26.43,
+    "seg": 8
+   },
+   {
+    "t": "have",
+    "start": 26.43,
+    "end": 26.65,
+    "seg": 8
+   },
+   {
+    "t": "real",
+    "start": 26.65,
+    "end": 26.93,
+    "seg": 8
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 26.93,
+  "end": 28.33,
+  "text": "moments to",
+  "woerter": [
+   {
+    "t": "moments",
+    "start": 26.93,
+    "end": 27.65,
+    "seg": 8
+   },
+   {
+    "t": "to",
+    "start": 27.65,
+    "end": 28.33,
+    "seg": 8
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 28.33,
+  "end": 29.77,
+  "text": "see yourself",
+  "woerter": [
+   {
+    "t": "see",
+    "start": 28.33,
+    "end": 28.79,
+    "seg": 8
+   },
+   {
+    "t": "yourself",
+    "start": 28.79,
+    "end": 29.77,
+    "seg": 8
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 29.77,
+  "end": 30.67,
+  "text": "reflected",
+  "woerter": [
+   {
+    "t": "reflected",
+    "start": 29.77,
+    "end": 30.67,
+    "seg": 8
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 30.67,
+  "end": 31.49,
+  "text": "through the",
+  "woerter": [
+   {
+    "t": "through",
+    "start": 30.67,
+    "end": 31.21,
+    "seg": 8
+   },
+   {
+    "t": "the",
+    "start": 31.21,
+    "end": 31.49,
+    "seg": 8
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 31.49,
+  "end": 31.75,
+  "text": "other.",
+  "woerter": [
+   {
+    "t": "other.",
+    "start": 31.49,
+    "end": 31.75,
+    "seg": 8
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 31.99,
+  "end": 32.63,
+  "text": "And maybe at",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 31.99,
+    "end": 32.19,
+    "seg": 9
+   },
+   {
+    "t": "maybe",
+    "start": 32.19,
+    "end": 32.45,
+    "seg": 9
+   },
+   {
+    "t": "at",
+    "start": 32.45,
+    "end": 32.63,
+    "seg": 9
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 32.63,
+  "end": 33.11,
+  "text": "this point in",
+  "woerter": [
+   {
+    "t": "this",
+    "start": 32.63,
+    "end": 32.83,
+    "seg": 9
+   },
+   {
+    "t": "point",
+    "start": 32.83,
+    "end": 32.97,
+    "seg": 9
+   },
+   {
+    "t": "in",
+    "start": 32.97,
+    "end": 33.11,
+    "seg": 9
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 33.11,
+  "end": 33.55,
+  "text": "my life,",
+  "woerter": [
+   {
+    "t": "my",
+    "start": 33.11,
+    "end": 33.29,
+    "seg": 9
+   },
+   {
+    "t": "life,",
+    "start": 33.29,
+    "end": 33.55,
+    "seg": 9
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 33.59,
+  "end": 34.97,
+  "text": "because I'm",
+  "woerter": [
+   {
+    "t": "because",
+    "start": 33.59,
+    "end": 33.91,
+    "seg": 10
+   },
+   {
+    "t": "I'm",
+    "start": 33.91,
+    "end": 34.97,
+    "seg": 10
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 34.97,
+  "end": 36.77,
+  "text": "57 and I've",
+  "woerter": [
+   {
+    "t": "57",
+    "start": 34.97,
+    "end": 35.61,
+    "seg": 10
+   },
+   {
+    "t": "and",
+    "start": 35.61,
+    "end": 35.93,
+    "seg": 10
+   },
+   {
+    "t": "I've",
+    "start": 35.93,
+    "end": 36.77,
+    "seg": 10
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 36.77,
+  "end": 37.59,
+  "text": "lived a lot",
+  "woerter": [
+   {
+    "t": "lived",
+    "start": 36.77,
+    "end": 37.01,
+    "seg": 10
+   },
+   {
+    "t": "a",
+    "start": 37.01,
+    "end": 37.29,
+    "seg": 10
+   },
+   {
+    "t": "lot",
+    "start": 37.29,
+    "end": 37.59,
+    "seg": 10
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 37.59,
+  "end": 38.53,
+  "text": "and, you know,",
+  "woerter": [
+   {
+    "t": "and,",
+    "start": 37.59,
+    "end": 38.07,
+    "seg": 11
+   },
+   {
+    "t": "you",
+    "start": 38.07,
+    "end": 38.43,
+    "seg": 11
+   },
+   {
+    "t": "know,",
+    "start": 38.43,
+    "end": 38.51,
+    "seg": 11
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 38.53,
+  "end": 38.93,
+  "text": "I'm kind of",
+  "woerter": [
+   {
+    "t": "I'm",
+    "start": 38.53,
+    "end": 38.63,
+    "seg": 11
+   },
+   {
+    "t": "kind",
+    "start": 38.63,
+    "end": 38.83,
+    "seg": 11
+   },
+   {
+    "t": "of",
+    "start": 38.83,
+    "end": 38.93,
+    "seg": 11
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 38.93,
+  "end": 39.87,
+  "text": "in my",
+  "woerter": [
+   {
+    "t": "in",
+    "start": 38.93,
+    "end": 39.05,
+    "seg": 11
+   },
+   {
+    "t": "my",
+    "start": 39.05,
+    "end": 39.87,
+    "seg": 11
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 39.87,
+  "end": 41.07,
+  "text": "elder wisdom",
+  "woerter": [
+   {
+    "t": "elder",
+    "start": 39.87,
+    "end": 40.35,
+    "seg": 11
+   },
+   {
+    "t": "wisdom",
+    "start": 40.35,
+    "end": 41.07,
+    "seg": 11
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 41.07,
+  "end": 41.61,
+  "text": "years",
+  "woerter": [
+   {
+    "t": "years",
+    "start": 41.07,
+    "end": 41.61,
+    "seg": 11
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 41.61,
+  "end": 43.15,
+  "text": "as to",
+  "woerter": [
+   {
+    "t": "as",
+    "start": 41.61,
+    "end": 42.15,
+    "seg": 12
+   },
+   {
+    "t": "to",
+    "start": 42.15,
+    "end": 43.15,
+    "seg": 12
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 43.15,
+  "end": 44.57,
+  "text": "shepherd, to pass",
+  "woerter": [
+   {
+    "t": "shepherd,",
+    "start": 43.15,
+    "end": 43.61,
+    "seg": 12
+   },
+   {
+    "t": "to",
+    "start": 43.89,
+    "end": 44.17,
+    "seg": 12
+   },
+   {
+    "t": "pass",
+    "start": 44.17,
+    "end": 44.57,
+    "seg": 12
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 44.57,
+  "end": 45.41,
+  "text": "down the",
+  "woerter": [
+   {
+    "t": "down",
+    "start": 44.57,
+    "end": 45.09,
+    "seg": 12
+   },
+   {
+    "t": "the",
+    "start": 45.09,
+    "end": 45.41,
+    "seg": 12
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 45.41,
+  "end": 46.71,
+  "text": "things that",
+  "woerter": [
+   {
+    "t": "things",
+    "start": 45.41,
+    "end": 45.87,
+    "seg": 12
+   },
+   {
+    "t": "that",
+    "start": 45.87,
+    "end": 46.71,
+    "seg": 12
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 46.71,
+  "end": 47.21,
+  "text": "I've learned,",
+  "woerter": [
+   {
+    "t": "I've",
+    "start": 46.71,
+    "end": 46.97,
+    "seg": 12
+   },
+   {
+    "t": "learned,",
+    "start": 46.97,
+    "end": 47.21,
+    "seg": 12
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 47.23,
+  "end": 48.37,
+  "text": "the things that",
+  "woerter": [
+   {
+    "t": "the",
+    "start": 47.23,
+    "end": 47.47,
+    "seg": 13
+   },
+   {
+    "t": "things",
+    "start": 47.47,
+    "end": 47.65,
+    "seg": 13
+   },
+   {
+    "t": "that",
+    "start": 47.65,
+    "end": 48.37,
+    "seg": 13
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 48.37,
+  "end": 48.93,
+  "text": "I know,",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 48.37,
+    "end": 48.47,
+    "seg": 13
+   },
+   {
+    "t": "know,",
+    "start": 48.47,
+    "end": 48.93,
+    "seg": 13
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 49.37,
+  "end": 50.81,
+  "text": "and to rest",
+  "woerter": [
+   {
+    "t": "and",
+    "start": 49.37,
+    "end": 49.73,
+    "seg": 14
+   },
+   {
+    "t": "to",
+    "start": 49.73,
+    "end": 50.07,
+    "seg": 14
+   },
+   {
+    "t": "rest",
+    "start": 50.07,
+    "end": 50.81,
+    "seg": 14
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 50.81,
+  "end": 52.67,
+  "text": "in the place",
+  "woerter": [
+   {
+    "t": "in",
+    "start": 50.81,
+    "end": 51.77,
+    "seg": 14
+   },
+   {
+    "t": "the",
+    "start": 51.77,
+    "end": 52.15,
+    "seg": 14
+   },
+   {
+    "t": "place",
+    "start": 52.15,
+    "end": 52.67,
+    "seg": 14
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 52.67,
+  "end": 54.25,
+  "text": "that I'm in.",
+  "woerter": [
+   {
+    "t": "that",
+    "start": 52.67,
+    "end": 52.99,
+    "seg": 14
+   },
+   {
+    "t": "I'm",
+    "start": 52.99,
+    "end": 53.27,
+    "seg": 14
+   },
+   {
+    "t": "in.",
+    "start": 53.27,
+    "end": 54.25,
+    "seg": 14
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 55.15,
+  "end": 56.95,
+  "text": "And I think,",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 55.15,
+    "end": 55.63,
+    "seg": 15
+   },
+   {
+    "t": "I",
+    "start": 55.63,
+    "end": 56.03,
+    "seg": 15
+   },
+   {
+    "t": "think,",
+    "start": 56.03,
+    "end": 56.95,
+    "seg": 15
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 56.95,
+  "end": 58.09,
+  "text": "yeah, like",
+  "woerter": [
+   {
+    "t": "yeah,",
+    "start": 56.95,
+    "end": 57.69,
+    "seg": 15
+   },
+   {
+    "t": "like",
+    "start": 57.89,
+    "end": 58.09,
+    "seg": 15
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 58.09,
+  "end": 58.45,
+  "text": "getting,",
+  "woerter": [
+   {
+    "t": "getting,",
+    "start": 58.09,
+    "end": 58.45,
+    "seg": 15
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 59.85,
+  "end": 60.71,
+  "text": "as I get",
+  "woerter": [
+   {
+    "t": "as",
+    "start": 59.85,
+    "end": 60.33,
+    "seg": 16
+   },
+   {
+    "t": "I",
+    "start": 60.33,
+    "end": 60.53,
+    "seg": 16
+   },
+   {
+    "t": "get",
+    "start": 60.53,
+    "end": 60.71,
+    "seg": 16
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 60.71,
+  "end": 62.45,
+  "text": "older and",
+  "woerter": [
+   {
+    "t": "older",
+    "start": 60.71,
+    "end": 61.15,
+    "seg": 16
+   },
+   {
+    "t": "and",
+    "start": 61.15,
+    "end": 62.45,
+    "seg": 16
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 63.7,
+  "end": 64.6,
+  "text": "lessening the",
+  "woerter": [
+   {
+    "t": "lessening",
+    "start": 63.7,
+    "end": 64.24,
+    "seg": 16
+   },
+   {
+    "t": "the",
+    "start": 64.24,
+    "end": 64.6,
+    "seg": 16
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 64.6,
+  "end": 65.88,
+  "text": "grip of the",
+  "woerter": [
+   {
+    "t": "grip",
+    "start": 64.6,
+    "end": 64.88,
+    "seg": 16
+   },
+   {
+    "t": "of",
+    "start": 64.88,
+    "end": 65.24,
+    "seg": 16
+   },
+   {
+    "t": "the",
+    "start": 65.24,
+    "end": 65.88,
+    "seg": 16
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 65.88,
+  "end": 67.64,
+  "text": "material world,",
+  "woerter": [
+   {
+    "t": "material",
+    "start": 65.88,
+    "end": 66.7,
+    "seg": 16
+   },
+   {
+    "t": "world,",
+    "start": 66.7,
+    "end": 67.64,
+    "seg": 16
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 67.66,
+  "end": 68.46,
+  "text": "which is fine,",
+  "woerter": [
+   {
+    "t": "which",
+    "start": 67.66,
+    "end": 67.84,
+    "seg": 17
+   },
+   {
+    "t": "is",
+    "start": 67.84,
+    "end": 68.12,
+    "seg": 17
+   },
+   {
+    "t": "fine,",
+    "start": 68.12,
+    "end": 68.4,
+    "seg": 17
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 68.46,
+  "end": 68.86,
+  "text": "like it's",
+  "woerter": [
+   {
+    "t": "like",
+    "start": 68.46,
+    "end": 68.66,
+    "seg": 17
+   },
+   {
+    "t": "it's",
+    "start": 68.66,
+    "end": 68.86,
+    "seg": 17
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 68.86,
+  "end": 69.44,
+  "text": "like you're,",
+  "woerter": [
+   {
+    "t": "like",
+    "start": 68.86,
+    "end": 69.02,
+    "seg": 17
+   },
+   {
+    "t": "you're,",
+    "start": 69.02,
+    "end": 69.44,
+    "seg": 17
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 69.7,
+  "end": 70.62,
+  "text": "you should be",
+  "woerter": [
+   {
+    "t": "you",
+    "start": 69.7,
+    "end": 70.0,
+    "seg": 18
+   },
+   {
+    "t": "should",
+    "start": 70.0,
+    "end": 70.3,
+    "seg": 18
+   },
+   {
+    "t": "be",
+    "start": 70.3,
+    "end": 70.62,
+    "seg": 18
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 70.62,
+  "end": 71.82,
+  "text": "trying to",
+  "woerter": [
+   {
+    "t": "trying",
+    "start": 70.62,
+    "end": 70.9,
+    "seg": 18
+   },
+   {
+    "t": "to",
+    "start": 70.9,
+    "end": 71.82,
+    "seg": 18
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 71.82,
+  "end": 72.34,
+  "text": "fucking climb",
+  "woerter": [
+   {
+    "t": "fucking",
+    "start": 71.82,
+    "end": 72.02799999999999,
+    "seg": 18
+   },
+   {
+    "t": "climb",
+    "start": 72.02799999999999,
+    "end": 72.34,
+    "seg": 18
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 72.34,
+  "end": 72.78,
+  "text": "mountains",
+  "woerter": [
+   {
+    "t": "mountains",
+    "start": 72.34,
+    "end": 72.78,
+    "seg": 18
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 72.78,
+  "end": 73.84,
+  "text": "and your ego",
+  "woerter": [
+   {
+    "t": "and",
+    "start": 72.78,
+    "end": 73.16,
+    "seg": 19
+   },
+   {
+    "t": "your",
+    "start": 73.16,
+    "end": 73.5,
+    "seg": 19
+   },
+   {
+    "t": "ego",
+    "start": 73.5,
+    "end": 73.84,
+    "seg": 19
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 73.84,
+  "end": 74.3,
+  "text": "is going to",
+  "woerter": [
+   {
+    "t": "is",
+    "start": 73.84,
+    "end": 74.1,
+    "seg": 19
+   },
+   {
+    "t": "going",
+    "start": 74.1,
+    "end": 74.18,
+    "seg": 19
+   },
+   {
+    "t": "to",
+    "start": 74.18,
+    "end": 74.3,
+    "seg": 19
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 74.3,
+  "end": 75.3,
+  "text": "be involved and",
+  "woerter": [
+   {
+    "t": "be",
+    "start": 74.3,
+    "end": 74.46,
+    "seg": 19
+   },
+   {
+    "t": "involved",
+    "start": 74.46,
+    "end": 75.04,
+    "seg": 19
+   },
+   {
+    "t": "and",
+    "start": 75.04,
+    "end": 75.3,
+    "seg": 19
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 75.3,
+  "end": 75.86,
+  "text": "wanting to be,",
+  "woerter": [
+   {
+    "t": "wanting",
+    "start": 75.3,
+    "end": 75.52,
+    "seg": 19
+   },
+   {
+    "t": "to",
+    "start": 75.52,
+    "end": 75.76,
+    "seg": 19
+   },
+   {
+    "t": "be,",
+    "start": 75.76,
+    "end": 75.86,
+    "seg": 19
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 75.88,
+  "end": 76.6,
+  "text": "like that's,",
+  "woerter": [
+   {
+    "t": "like",
+    "start": 75.88,
+    "end": 76.0,
+    "seg": 20
+   },
+   {
+    "t": "that's,",
+    "start": 76.0,
+    "end": 76.6,
+    "seg": 20
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 76.62,
+  "end": 77.12,
+  "text": "you can't get",
+  "woerter": [
+   {
+    "t": "you",
+    "start": 76.62,
+    "end": 76.74,
+    "seg": 20
+   },
+   {
+    "t": "can't",
+    "start": 76.74,
+    "end": 76.94,
+    "seg": 20
+   },
+   {
+    "t": "get",
+    "start": 76.94,
+    "end": 77.12,
+    "seg": 20
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 77.12,
+  "end": 77.52,
+  "text": "out of",
+  "woerter": [
+   {
+    "t": "out",
+    "start": 77.12,
+    "end": 77.34,
+    "seg": 20
+   },
+   {
+    "t": "of",
+    "start": 77.34,
+    "end": 77.52,
+    "seg": 20
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 77.52,
+  "end": 78.44,
+  "text": "that, right?",
+  "woerter": [
+   {
+    "t": "that,",
+    "start": 77.52,
+    "end": 77.94,
+    "seg": 20
+   },
+   {
+    "t": "right?",
+    "start": 77.94,
+    "end": 78.44,
+    "seg": 20
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 78.44,
+  "end": 79.24,
+  "text": "And I can't",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 78.44,
+    "end": 78.9,
+    "seg": 21
+   },
+   {
+    "t": "I",
+    "start": 78.9,
+    "end": 79.04,
+    "seg": 21
+   },
+   {
+    "t": "can't",
+    "start": 79.04,
+    "end": 79.24,
+    "seg": 21
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 79.24,
+  "end": 79.64,
+  "text": "get out of",
+  "woerter": [
+   {
+    "t": "get",
+    "start": 79.24,
+    "end": 79.42,
+    "seg": 21
+   },
+   {
+    "t": "out",
+    "start": 79.42,
+    "end": 79.58,
+    "seg": 21
+   },
+   {
+    "t": "of",
+    "start": 79.58,
+    "end": 79.64,
+    "seg": 21
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 79.64,
+  "end": 80.22,
+  "text": "that even at",
+  "woerter": [
+   {
+    "t": "that",
+    "start": 79.64,
+    "end": 79.8,
+    "seg": 21
+   },
+   {
+    "t": "even",
+    "start": 79.8,
+    "end": 80.0,
+    "seg": 21
+   },
+   {
+    "t": "at",
+    "start": 80.0,
+    "end": 80.22,
+    "seg": 21
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 80.22,
+  "end": 80.54,
+  "text": "my age,",
+  "woerter": [
+   {
+    "t": "my",
+    "start": 80.22,
+    "end": 80.36,
+    "seg": 21
+   },
+   {
+    "t": "age,",
+    "start": 80.36,
+    "end": 80.54,
+    "seg": 21
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 80.58,
+  "end": 82.12,
+  "text": "but I'm",
+  "woerter": [
+   {
+    "t": "but",
+    "start": 80.58,
+    "end": 80.84,
+    "seg": 22
+   },
+   {
+    "t": "I'm",
+    "start": 80.84,
+    "end": 82.12,
+    "seg": 22
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 82.12,
+  "end": 82.64,
+  "text": "not trying to",
+  "woerter": [
+   {
+    "t": "not",
+    "start": 82.12,
+    "end": 82.28,
+    "seg": 22
+   },
+   {
+    "t": "trying",
+    "start": 82.28,
+    "end": 82.42,
+    "seg": 22
+   },
+   {
+    "t": "to",
+    "start": 82.42,
+    "end": 82.64,
+    "seg": 22
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 82.64,
+  "end": 83.42,
+  "text": "prove myself to",
+  "woerter": [
+   {
+    "t": "prove",
+    "start": 82.64,
+    "end": 82.76,
+    "seg": 22
+   },
+   {
+    "t": "myself",
+    "start": 82.76,
+    "end": 83.26,
+    "seg": 22
+   },
+   {
+    "t": "to",
+    "start": 83.26,
+    "end": 83.42,
+    "seg": 22
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 83.42,
+  "end": 84.06,
+  "text": "anyone anymore.",
+  "woerter": [
+   {
+    "t": "anyone",
+    "start": 83.42,
+    "end": 83.6,
+    "seg": 22
+   },
+   {
+    "t": "anymore.",
+    "start": 83.6,
+    "end": 84.06,
+    "seg": 22
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 84.06,
+  "end": 84.94,
+  "text": "And there's a",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 84.06,
+    "end": 84.32,
+    "seg": 23
+   },
+   {
+    "t": "there's",
+    "start": 84.32,
+    "end": 84.64,
+    "seg": 23
+   },
+   {
+    "t": "a",
+    "start": 84.64,
+    "end": 84.94,
+    "seg": 23
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 84.94,
+  "end": 85.58,
+  "text": "great relief",
+  "woerter": [
+   {
+    "t": "great",
+    "start": 84.94,
+    "end": 85.2,
+    "seg": 23
+   },
+   {
+    "t": "relief",
+    "start": 85.2,
+    "end": 85.58,
+    "seg": 23
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 85.58,
+  "end": 86.14,
+  "text": "in that.",
+  "woerter": [
+   {
+    "t": "in",
+    "start": 85.58,
+    "end": 85.84,
+    "seg": 23
+   },
+   {
+    "t": "that.",
+    "start": 85.84,
+    "end": 86.14,
+    "seg": 23
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 86.34,
+  "end": 86.78,
+  "text": "And so it",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 86.34,
+    "end": 86.36,
+    "seg": 24
+   },
+   {
+    "t": "so",
+    "start": 86.36,
+    "end": 86.48,
+    "seg": 24
+   },
+   {
+    "t": "it",
+    "start": 86.48,
+    "end": 86.78,
+    "seg": 24
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 86.78,
+  "end": 87.82,
+  "text": "allows for",
+  "woerter": [
+   {
+    "t": "allows",
+    "start": 86.78,
+    "end": 87.36,
+    "seg": 24
+   },
+   {
+    "t": "for",
+    "start": 87.36,
+    "end": 87.82,
+    "seg": 24
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 87.82,
+  "end": 90.06,
+  "text": "more softness",
+  "woerter": [
+   {
+    "t": "more",
+    "start": 87.82,
+    "end": 89.3,
+    "seg": 24
+   },
+   {
+    "t": "softness",
+    "start": 89.3,
+    "end": 90.06,
+    "seg": 24
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 90.06,
+  "end": 91.24,
+  "text": "or connection",
+  "woerter": [
+   {
+    "t": "or",
+    "start": 90.06,
+    "end": 90.58,
+    "seg": 25
+   },
+   {
+    "t": "connection",
+    "start": 90.58,
+    "end": 91.24,
+    "seg": 25
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 91.24,
+  "end": 92.58,
+  "text": "and humility",
+  "woerter": [
+   {
+    "t": "and",
+    "start": 91.24,
+    "end": 91.82,
+    "seg": 25
+   },
+   {
+    "t": "humility",
+    "start": 91.82,
+    "end": 92.58,
+    "seg": 25
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 92.58,
+  "end": 93.88,
+  "text": "and just to",
+  "woerter": [
+   {
+    "t": "and",
+    "start": 92.58,
+    "end": 93.3,
+    "seg": 26
+   },
+   {
+    "t": "just",
+    "start": 93.3,
+    "end": 93.52,
+    "seg": 26
+   },
+   {
+    "t": "to",
+    "start": 93.52,
+    "end": 93.88,
+    "seg": 26
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 93.88,
+  "end": 95.2,
+  "text": "see things,",
+  "woerter": [
+   {
+    "t": "see",
+    "start": 93.88,
+    "end": 94.44,
+    "seg": 26
+   },
+   {
+    "t": "things,",
+    "start": 94.44,
+    "end": 95.2,
+    "seg": 26
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 95.86,
+  "end": 96.5,
+  "text": "what's",
+  "woerter": [
+   {
+    "t": "what's",
+    "start": 95.86,
+    "end": 96.5,
+    "seg": 27
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 96.5,
+  "end": 96.9,
+  "text": "happening in the",
+  "woerter": [
+   {
+    "t": "happening",
+    "start": 96.5,
+    "end": 96.66,
+    "seg": 27
+   },
+   {
+    "t": "in",
+    "start": 96.66,
+    "end": 96.8,
+    "seg": 27
+   },
+   {
+    "t": "the",
+    "start": 96.8,
+    "end": 96.9,
+    "seg": 27
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 96.9,
+  "end": 97.6,
+  "text": "world in a",
+  "woerter": [
+   {
+    "t": "world",
+    "start": 96.9,
+    "end": 97.04,
+    "seg": 27
+   },
+   {
+    "t": "in",
+    "start": 97.04,
+    "end": 97.24,
+    "seg": 27
+   },
+   {
+    "t": "a",
+    "start": 97.24,
+    "end": 97.6,
+    "seg": 27
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 97.6,
+  "end": 98.16,
+  "text": "different way",
+  "woerter": [
+   {
+    "t": "different",
+    "start": 97.6,
+    "end": 97.92,
+    "seg": 27
+   },
+   {
+    "t": "way",
+    "start": 97.92,
+    "end": 98.16,
+    "seg": 27
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 98.16,
+  "end": 99.38,
+  "text": "and then I",
+  "woerter": [
+   {
+    "t": "and",
+    "start": 98.16,
+    "end": 98.22,
+    "seg": 28
+   },
+   {
+    "t": "then",
+    "start": 98.22,
+    "end": 99.02,
+    "seg": 28
+   },
+   {
+    "t": "I",
+    "start": 99.02,
+    "end": 99.38,
+    "seg": 28
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 99.38,
+  "end": 100.18,
+  "text": "guess the",
+  "woerter": [
+   {
+    "t": "guess",
+    "start": 99.38,
+    "end": 99.78,
+    "seg": 28
+   },
+   {
+    "t": "the",
+    "start": 99.78,
+    "end": 100.18,
+    "seg": 28
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 100.18,
+  "end": 101.06,
+  "text": "meaning is just",
+  "woerter": [
+   {
+    "t": "meaning",
+    "start": 100.18,
+    "end": 100.4,
+    "seg": 28
+   },
+   {
+    "t": "is",
+    "start": 100.4,
+    "end": 100.68,
+    "seg": 28
+   },
+   {
+    "t": "just",
+    "start": 100.68,
+    "end": 101.06,
+    "seg": 28
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 101.6,
+  "end": 102.3,
+  "text": "to find a",
+  "woerter": [
+   {
+    "t": "to",
+    "start": 101.6,
+    "end": 101.92,
+    "seg": 29
+   },
+   {
+    "t": "find",
+    "start": 101.92,
+    "end": 102.08,
+    "seg": 29
+   },
+   {
+    "t": "a",
+    "start": 102.08,
+    "end": 102.3,
+    "seg": 29
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 102.3,
+  "end": 104.1,
+  "text": "way to make",
+  "woerter": [
+   {
+    "t": "way",
+    "start": 102.3,
+    "end": 102.48,
+    "seg": 29
+   },
+   {
+    "t": "to",
+    "start": 102.48,
+    "end": 102.8,
+    "seg": 29
+   },
+   {
+    "t": "make",
+    "start": 102.8,
+    "end": 104.1,
+    "seg": 29
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 104.1,
+  "end": 105.92,
+  "text": "my contribution.",
+  "woerter": [
+   {
+    "t": "my",
+    "start": 104.1,
+    "end": 105.26,
+    "seg": 29
+   },
+   {
+    "t": "contribution.",
+    "start": 105.26,
+    "end": 105.92,
+    "seg": 29
+   }
+  ],
+  "grund": "satz"
+ }
+]

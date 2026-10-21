@@ -1,0 +1,50 @@
+{
+  "name": "Sutcliffe - What Makes Life Meaningful",
+  "stand": "2026-10-21",
+  "quelle": {
+    "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
+    "master_titel": "YNB Podcast: David Sutcliffe",
+    "fenster_master_s": [7221.0, 7336.0],
+    "hinweis": "In EINEM Stueck holen. Zwei getrennt geholte Stuecke zusammenzusetzen hat einen Knack von -17,7 dBFS erzeugt (normale Stelle: -50 dBFS)."
+  },
+  "schnitt": {
+    "teile_master_s": [[7222.0, 7225.0], [7230.25, 7334.2]],
+    "blende_s": 0.13,
+    "warum": "Seine Frage, dann faellt alles weg bis 'other people' - Ansage vom 21.10. Die Naht traegt eine Ton- und Bildblende von 4 Bildern, sonst klingt der Schnitt amateurhaft."
+  },
+  "bild": {
+    "tempo": 1.2,
+    "look": "preset",
+    "worte_je_einblendung": 3,
+    "tiefer_px": 120,
+    "logo_breite_px": 700,
+    "logo_hoehe": 0.877,
+    "zoom": 1.15,
+    "warum_tiefer": "Bei 0 px sitzt die Zeile auf seinem Bart. An drei Testbildern verglichen (0/120/200): 120 sitzt frei darunter und laesst Luft zum Logo.",
+    "warum_logo": "Sein abgenommener Wert. Das Preset sagt 28 % (302 px) - das gilt fuer Neues, nicht fuer Abgenommenes."
+  },
+  "einblendungen": {
+    "datei": "video/shorts/sutcliffe-meaningful.cues.json",
+    "warum": "Whisper ist nicht deterministisch: jeder Lauf gruppiert anders, und zweimal ist dabei eine abgenommene Anpassung verlorengegangen. Aus dieser Datei wird gerendert (--cues-in), nicht neu transkribiert.",
+    "von_hand_gesetzt": [
+      "'meaningful for you?' steht in EINER Einblendung - seine Ansage. Die Zeile ist 929 px breit und damit ueber der Preset-Schranke von 777; sie passt aufs Bild, seine Ansage gilt.",
+      "Vier Woerter hatten die Dauer null und fielen dadurch aus dem Bild, darunter 'fucking'. Sie haben jetzt eine Dauer und erscheinen."
+    ]
+  },
+  "ton": {
+    "laut": "aus",
+    "dehnung": "atempo",
+    "warum": "Keine Lautheitsangleichung - am 20.10. abgelehnt, der Rauschboden steigt um 18 dB. atempo ist der Klang, den er abgenommen hat."
+  },
+  "musik": {
+    "drive_id": "1_iCUQBNSP42fIA3ImSfPLmzAWIkYQHol",
+    "titel": "David Kushner - Daylight",
+    "ordner": "https://drive.google.com/drive/folders/1m3S9cayJDrHX7rMizhOod6lU523FWMHW",
+    "blende_ein_s": 0.3,
+    "sidechain_ratio": 4,
+    "warum": "Seine Ansage vom 21.10.: deutlich lauter und frueher einsetzend - unter der Frage war gar keine Musik. Darum kurze Blende statt 1,5 s und sanfteres Wegdruecken."
+  },
+  "offen": [
+    "Die Totale bei etwa Sekunde 25 traegt die Pointe 'to see yourself reflected through the other' und zeigt ihn klein im Profil. Enger fassen geht, ist aber eine Aenderung am Bild und braucht seine Zustimmung."
+  ]
+}
