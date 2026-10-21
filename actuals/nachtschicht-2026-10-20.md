@@ -48,3 +48,18 @@ aber das ist seine Entscheidung, nicht meine.
 **Offen und ihm vorzulegen:** das Ende von Rick Strassmans Short — der
 Assistent hat den kürzeren Bogen gewählt und das ausdrücklich als Frage an
 ihn offengelassen.
+- **03:40** · kein Nachtlauf offen · Maßnahme: **keine** — zwei Abfragen, Ende.
+- **06:40** · COMPLETED, unverändert seit 22:01 · keine neuen Commits ·
+  Maßnahme: **Morgenbericht**
+
+### Bilanz der Nacht
+
+**Die Aufsicht hat nicht eingreifen müssen.** Vier Kontrollen, null
+Anstupser. Das ist das erwünschte Ergebnis und nicht dasselbe wie
+„unnötig": festgestellt wurde es erst durch das Nachsehen.
+
+**Nebenbefund für heute:** das **Drive-Tageslimit auf seinen eigenen
+Kopien hat sich gelöst** — `Right Cam` und `Left Camera` liefern wieder
+vollständige Bereiche (206, 1 MiB geprüft). Gesperrt waren sie seit
+gestern ~15:00. Damit ist die Multicam-Fassung des Aaronson-Shorts ohne
+neue Kopie möglich.
