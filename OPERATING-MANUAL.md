@@ -8367,3 +8367,64 @@ veröffentlichte Folgen auf dem Kanal, Kalenderblöcke mit Personennamen, und di
 Gästeliste in seinen eigenen Pitches.** Alle drei liegen außerhalb der Mail.
 
 Vollständiger Stand mit Belegen: `podcast/stand-2026-10-21.md`.
+
+═══════════════════════════════════════════════════════════════════
+SEIN BETREFF-TRICK, SEINE ORTSRECHERCHE, UND DIE KAPSTADT-LEUTE (21.10.)
+───────────────────────────────────────────────────────────────────
+
+Alles drei von ihm selbst, im Chat am 21.10.2026.
+
+**1. Die Empfehlung gehört in den Betreff, in eckige Klammern.**
+> "wenn ich Personen kenne, die irgendwie mit meinem Prospect connected sind,
+> dann mache ich so in eckigen Klammern via Scott Aronson … das erhöht die
+> Chance deutlich, dass die Personen auch reagieren."
+
+Das stand bisher nur als Beobachtung im Handbuch ("ROUTE EVERY PITCH THROUGH
+THE REFERRER"). Jetzt ist es seine Ansage. **Meine Betreffquote sagt etwas
+anderes** — `[Via <Name>]` 3 von 12, nackter Podcastname 10 von 17 —, aber die
+Quoten sind mit der Temperatur des Kontakts konfundiert, und das steht so auch
+in `podcast/outreach-auswertung.md`. **Seine Ansage gilt; die Zahl kommt
+daneben, nicht dagegen.** Beides lässt sich verbinden:
+`[Via Scott Aaronson] Man's Search for Meaning`.
+
+**2. Den Ort recherchiert er bei Google, wörtlich so:**
+> "Ich gebe oft bei Google ein, Scott Aronson, where does he live? Und dann
+> kriege ich meistens eine relativ reliable Angabe."
+
+Damit ist das Ortsfeld eines Pitches eine **Recherchepflicht von mir**, keine
+Rückfrage an ihn. Grenze, die ich selbst ziehe: **Firmensitz ja, Wohnadresse
+nein.** Für "in-person only" reicht die Stadt des Arbeitsplatzes, und eine
+private Adresse suche ich nicht.
+
+**3. Die Kapstadt-Gäste laufen nicht über Mail.**
+> "alle Kapstadt-Leute, Amy May, Amy Nelson, Drew Birch, Jamie Elkin, Megan
+> DeBayer, mit denen bin ich persönlich in Kontakt, genauso wie mit Bridget"
+
+**"Confirmed ohne Datum" ist bei diesen fünf also der richtige Zustand**, keine
+Lücke. Ich hatte sie als Engpass geführt — das war der Postfachblick vom
+18.10. in neuer Gestalt. **Wo er persönlich redet, ist ein leeres Mailfeld
+kein Befund.**
+
+**4. Bridget Woods: aufgenommen, Ton kaputt, Freundin.**
+> "Mit Bridget habe ich auch den Podcast schon aufgenommen, wenngleich die
+> Audio absolut katastrophal ist … Vermutlich eher nicht. Aber Bridget ist auch
+> eine persönliche Freundin von mir. Deshalb wirst du die wahrscheinlich im
+> Kalender noch öfter mal sehen."
+
+**Regel: ein Kalenderblock mit einem Gastnamen ist nicht automatisch eine
+Aufnahme.** Ich hatte den Zwei-Stunden-Block "Bridget" am Sa 24.10. als
+mögliche zweite Sitzung hingestellt; die Person war richtig, die Sache falsch.
+An ihre Zeile gehört keine Veröffentlichungsmarke.
+
+**5. Chase Reeves ist verschoben, nicht still.**
+> "mit Chase Reeves wollte ich eigentlich einen Podcast machen, bis dann mein
+> Motorradunfall dazwischen kam. Holen wir nach, wenn ich zurück in den USA bin."
+
+*Reached Out* → *In Conversation*, kein Datum, **USA-Liste 2027**.
+
+**6. Und ein Methodenfehler von mir, beim Abgleich des Outreach-Docs:** mein
+Vergleich lief nur gegen die **aktiven** Status. Damit galt Matthew McConaughey
+als "keine Zeile", obwohl eine existiert — sie stand auf *Not Started*, nach
+**sechs** gesendeten Mails. Dasselbe bei yung pueblo nach zwei.
+**Die 153 `Not Started` sind kein sicherer Hafen. Ein Status-Abgleich schließt
+sie mit ein.**
