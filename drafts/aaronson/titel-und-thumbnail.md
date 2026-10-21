@@ -32,50 +32,78 @@ sagt, rät.
 
 ---
 
-## 15 Titel
+## 15 Titel — Fassung 2, nach der Messung des Head of Content
+
+**Fassung 1 hatte zwei Fehler**, und sie kommen aus derselben Quelle: ich habe
+Deine bisherige Praxis nachgebaut, ohne zu prüfen, ob sie trägt. Der Head of
+Content hat inzwischen **438 Titel** der Vorbildkanäle ausgemessen, und zwei
+seiner Befunde treffen genau meine 15:
+
+1. **`(4K)` war in allen 15. Das war falsch.** In 400 Vorbildtiteln kommt ein
+   technischer Tag **einmal** vor. Alle 38 inhaltlichen Klammern dort drehen das
+   Thema weiter — *(and how to reverse it)*, *(Do THIS Instead)* — **keine
+   einzige ist eine Produktionsangabe.** `(4K)` steht in 8 Deiner 38 Titel; es
+   ist Deine Gewohnheit, aber es verschenkt den zweiten Haken.
+2. **Der Gastname gehört nach hinten, und ich hatte Dir das Gegenteil empfohlen.**
+   DOAC baut `<Rolle>: <Versprechen> | <Name>` — 97 von 100 Titeln mit
+   Doppelpunkt, 14 davon mit Name hinten. **Bei Dir: 0 von 38.** Ich hatte
+   geschrieben, der Name könne weg, weil `Queer Actor:` Francis auch nicht nennt.
+   Das war aus Deiner Praxis abgeleitet statt gemessen. **Der zweite Slot kostet
+   nichts** — er nimmt dem Titel vorne kein Zeichen weg und fängt jede Suche nach
+   dem Namen ein.
+
+Dazu ein dritter Befund, der **keine Korrektur ist, sondern Deine Entscheidung
+betrifft:** Du-Ansprache (`you/your`) steht in **13 %** Deiner 38 Titel, bei den
+Vorbildern in 41–55 % (Shetty 55, Manson 49, DOAC 41). Ich/Wir dagegen bei Dir
+**36 %** — mehr als bei jedem Vorbild. Der Head of Content hält das ausdrücklich
+für **eine Entscheidung, keine Lücke** (Du trennst die Register pro Plattform
+selbst, belegt an Deiner eigenen Notiz `(YT only)`). Deshalb liefere ich vier
+Titel mit Du-Ansprache als **Angebot**, nicht als Korrektur.
 
 ### Mit Zitat — Deine stärkste belegte Form
 
-1. `OpenAI Insider: "The Trouble With AI Is Not That It Doesn't Work" – AI Safety, God & Extinction (4K)`
-2. `Quantum Physicist: "We're The Orangutans Now" – OpenAI, Human Extinction & God (4K)`
-3. `OpenAI Insider: "Nobody Can Tell Me Where AI Stops" – Quantum Computing, God & Extinction (4K)`
+1. `OpenAI Insider: "The Trouble With AI Is Not That It Doesn't Work" | Prof. Scott Aaronson`
+2. `Quantum Physicist: "We're The Orangutans Now" | Prof. Scott Aaronson`
+3. `OpenAI Insider: "Nobody Can Tell Me Where AI Stops" | Prof. Scott Aaronson`
 
 ### Dreierliste — Deine Curtis-/Sutcliffe-Form
 
-4. `Quantum Physicist & OpenAI Insider: AI Safety, Human Extinction & God – Prof. Scott Aaronson (4K)`
-5. `OpenAI Insider: ChatGPT, The Book of Job & The End of Humanity (4K)`
-6. `The #1 Quantum Expert: Quantum Computing, Creating God & Human Extinction (4K)`
+4. `Quantum Physicist & OpenAI Insider: AI Safety, Extinction & God | Prof. Scott Aaronson`
+5. `OpenAI Insider: ChatGPT, The Book of Job & The End of Humanity | Scott Aaronson`
+6. `The #1 Quantum Expert: Quantum Computing, Creating God & Extinction | Scott Aaronson`
 
 ### Versalien — Deine eigenen Entwürfe, zugespitzt
 
-7. `OpenAI Insider: NOBODY Knows Where AI Stops – Not Even The People Building It (4K)`
-8. `AI Safety Expert: Everything You've Heard About AI Being "Just A Parrot" Is WRONG (4K)`
-9. `Quantum Scientist: NOBODY Understands What We Are Creating (4K)`
+7. `OpenAI Insider: NOBODY Knows Where AI Stops – Not Even The People Building It | Scott Aaronson`
+8. `AI Safety Expert: Everything You Heard About AI Being "Just A Parrot" Is WRONG | Scott Aaronson`
+9. `Quantum Scientist: NOBODY Understands What We Are Creating | Prof. Scott Aaronson`
 
 ### Der Auftrag — die Szene, die sonst keiner hat
 
-10. `OpenAI Hired Him To Define Love Mathematically – Prof. Scott Aaronson on AI, God & Extinction (4K)`
-11. `The Man OpenAI Asked To Make AI Love Humanity: Quantum Computing, God & Extinction (4K)`
-12. `He Left Quantum Computing To Stop AI From Killing Us: OpenAI, God & The Book of Job (4K)`
+10. `OpenAI Hired Him To Define Love Mathematically | Prof. Scott Aaronson`
+11. `The Man OpenAI Asked To Make AI Love Humanity | Prof. Scott Aaronson`
+12. `He Left Quantum Computing To Stop AI From Killing Us | Prof. Scott Aaronson`
 
-### Entzug und Behauptung — Deine Hormozi-Form
+### Mit Du-Ansprache — das Angebot, nicht die Korrektur
 
-13. `The AI Warning From Inside OpenAI – Prof. Scott Aaronson on God, Extinction & Quantum (4K)`
-14. `Quantum Physicist: We Are Building God And Nobody Is Ready (4K)`
-15. `AI Just Solved Problems No Human Could – OpenAI Insider on Extinction & God (4K)`
+13. `OpenAI Insider: AI Is Smarter Than You Think (And Nobody Knows Where It Stops) | Scott Aaronson`
+14. `Quantum Physicist: Why You Should Fear AI – And Why He Still Doesn't | Scott Aaronson`
+15. `AI Safety Expert: What You Get Wrong About AI, God And Extinction | Prof. Scott Aaronson`
 
-**Meine Empfehlung: Nummer 1.** Sie hat Deine stärkste Form (Rolle + Zitat +
-Dreierliste), das Zitat ist der beste Satz der Folge und steht bei Dir schon als
-Short-Kandidat Nummer 1, und `OpenAI` sitzt im ersten Wort. **Nummer 11** ist die
-Alternative, wenn Du die Szene über das Zitat stellen willst.
+**Alle 15 liegen zwischen 68 und 95 Zeichen**, also unter dem YouTube-Maximum
+von 100. Gemessen, nicht geschätzt.
 
-**Was ich bei allen 15 nicht getan habe:** „Scott Aaronson" ans Satzende
-gestellt oder weggelassen. Bei 1–3 und 7–9 fehlt der Name — **das ist Absicht**,
-weil Deine Zitat-Titel ihn auch nicht tragen (`Queer Actor:` nennt Francis
-nicht). Wer nach ihm sucht, findet die Folge über die Beschreibung und die Tags.
-Wenn Du den Namen im Titel willst, nimm 4, 10, 11 oder 13.
+**Meine Empfehlung bleibt Nummer 1** — Rolle vorn, Dein stärkstes Zitat in der
+Mitte, Name hinten. Das Zitat ist Short-Kandidat Nummer 1, `OpenAI` steht im
+ersten Wort, und der Name ist jetzt drin, ohne vorne Platz zu kosten.
+**Nummer 13** ist die Alternative, wenn Du die Du-Ansprache testen willst: dort
+dreht die Klammer das Thema weiter, statt die Auflösung anzugeben.
 
----
+**Die Einschränkung, die bleibt:** Deine stärkste Folge (`Queer Actor…`, 12.059)
+ist auch Deine erste mit echtem Gast und läuft seit sieben Monaten. **Ich kann
+Dir nicht sagen, ob der Titel das getragen hat oder Thema, Thumbnail oder
+Algorithmus.** Die Formen oben sind an 438 Vorbildtiteln und Deinen 38 gemessen —
+das ist Bauweise, nicht bewiesene Wirkung.
 
 ## 15 Thumbnail-Zeilen
 

@@ -60,8 +60,17 @@ def laufzeit(file_id, groesse):
         spanne = (f"bytes=0-{mb * 1024 * 1024}" if wo == 0
                   else f"bytes={groesse - mb * 1024 * 1024}-{groesse - 1}")
         r = SITZUNG.get(url, headers={"Range": spanne}, timeout=180)
-        if b"<html" in r.content[:200].lower():
-            raise RuntimeError("HTML statt Bytes — Datei ist nicht link-freigegeben")
+        # Drive liefert "Quota exceeded" als HTTP 200 mit einer ~2 kB
+        # HTML-Seite, nicht als Fehler (Lernkanal, 21.10.2026). Deshalb
+        # zaehlt die Blocklaenge, nicht der Statuscode: eine Bereichsanfrage
+        # ueber Megabytes, die Kilobytes zurueckbringt, ist eine Fehlerseite.
+        erwartet = mb * 1024 * 1024
+        if len(r.content) < erwartet // 2:
+            kopf = r.content[:400].decode("utf-8", "replace")
+            raise IOError(
+                f"{len(r.content)} Bytes statt ~{erwartet} angefordert "
+                f"(HTTP {r.status_code}). Entweder Tageslimit des Eigentuemers "
+                f"erreicht oder keine Link-Freigabe. Anfang: {kopf[:200]!r}")
         sek = mvhd_dauer(r.content)
         if sek is not None:
             return sek
