@@ -440,3 +440,24 @@ Einspieler von je 0,9–1,9 s.
 **25 Minuten** brauchte. Jetzt wird auf ein Viertel verkleinert, mit
 `sigma=11` weichgezeichnet und wieder vergrößert — bei einer so starken
 Weichzeichnung sieht man keinen Unterschied, und es kostet ein Sechzehntel.
+
+---
+
+## Nachtrag 21.10.2026: zwei Lesarten dieser Seite sind überholt
+
+Es gibt **drei** Standbilder je Short (`oar1`, `oardefault`, `oar3`), nicht
+eins. Damit ist nachgemessen, was oben offenbleiben musste. Vollständig in
+**`video/williamson-bildsprache.md`** (33 Shorts, 99 Bilder). Zwei Punkte
+betreffen direkt, was oben steht:
+
+1. **Der 980er Kasten ist nicht „die B-Roll", sondern der Rahmen des ganzen
+   Shorts.** Er steht in allen drei Zeitproben derselben Shorts; im Kasten wird
+   zwischen Film und Sprecher geschnitten. Die Tabelle oben
+   („Sprecherbild / B-Roll") liest eine Zufallszuordnung aus je einem Bild.
+2. **`VWGWkfmJCq8` ist randlos *und* trägt Film** (Film · Sprecher · Film).
+   Oben steht sie als reines Sprecherbild — das war das eine verfügbare Bild.
+   Seine Entscheidung „Vollbild, nur die filmischen B-Rolls" ist damit **keine
+   Abweichung von der Referenz, sondern eine ihrer beiden Bauarten.**
+
+Die Geometrie des Kastens (50/470, 980×980) bestätigt sich an 19 Bildern
+unverändert.
