@@ -45,6 +45,55 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 3 — 21.10.2026, 13:10 Kapstadt · Slack, erster Durchgang
+
+Sein Arbeits-Slack ist **`team-ynb.slack.com`** und war nie gelesen — auf seine
+eigene Regel vom 02.10. Er hat sie heute aufgehoben. Voller Befund:
+`video/slack-befunde.md`. Was davon jeden betrifft:
+
+- **KEIN SHORT DARF VERRATEN, WO ER WOHNT.** Am 02.09. zu seiner Cutterin:
+  *„Vielleicht doch den Scarborough-Teil rausnehmen in diesem Short? Gewisse
+  Menschen müssen nicht so easy wissen wo wir wohnen."* **Das gilt für Bild,
+  Ton und Untertitel** — Straßennamen, Viertel, erkennbare Fassaden, Aussicht,
+  Schilder. Es stand bisher in keinem Werkzeug und in keiner Prüfliste.
+  **Ab sofort Teil jeder Short- und Clip-Abnahme.** Im Zweifel rausschneiden
+  und ihm sagen, dass und warum.
+  → betrifft: alle
+- **Es gibt ein geschriebenes Short-Regelwerk, das wir nie gelesen haben.**
+  Am 05.09. schickte er seiner Cutterin ein *„Short-Form Cheat Sheet"* und das
+  Notion-Dokument *„Short-form editing guide for friends of Dan and Matt"*.
+  **Vermutlich die wichtigste einzelne Quelle in diesem Slack** — und in keinem
+  unserer Werkzeuge berücksichtigt. Wer daran arbeitet, bevor ich es gelesen
+  habe, baut womöglich gegen eine Regel, die er längst gesetzt hat.
+  → betrifft: content-*, thumbnails
+- **Tempo 1,1 ist seine Anweisung, keine Eigenart der Dateien.** 14.09.:
+  *„Kannst du das letzte und alle kommenden Shorts für ihn nicht up-pacen —
+  oder zumindest auf 1,1?"* Deckt sich mit dem gemessenen Export-Faktor.
+  → betrifft: alle Content-Agenten
+- **Er schreibt Short-Stellen im Format Zeitmarke + Stichwort heraus.**
+  15.09.: *„16:00 Movie · 40:40 Joe Hudson · 41:00 Integration · 44:00
+  Workaholism · 1:00:23 Hormozi · 1:06:00 Confidence · 1:21:00 My Why."*
+  **Unsere Kandidatenlisten sollten genauso aussehen** — das ist das Format,
+  in dem er denkt.
+  → betrifft: content-*
+- **Modern Wisdom ist seit mindestens 12.10. sein erklärtes Vorbild**, mit drei
+  verlinkten Shorts an seinen Editor. Die Kopfzeile von heute liegt also auf
+  einer Linie, die er selbst gezogen hat — nicht auf einer, die wir geraten
+  haben.
+  → betrifft: content-*, thumbnails
+- **Ein Widerspruch, den nur er auflösen kann: kommerzielle Musik.** Im
+  Preset-Ordner seiner Cutterin liegt *David Kushner – Daylight*, und er bittet
+  um mehr. **Gemessen** ist die Datei; **geschlossen** (nicht gemessen) ist,
+  dass sein Short-Ablauf kommerzielle Musik nutzt. Das widerspricht der Regel
+  in meinem Handbuch („keine Musik aus dem Netz für etwas, das er
+  veröffentlicht"). Die Regel galt für **uns** — damit wir nicht eigenmächtig
+  Musik beschaffen —, und sie bleibt für uns bestehen. **Seine eigene Praxis
+  ist seine Entscheidung.** Nicht eigenmächtig Musik unter ein Stück legen, und
+  ihn nicht dafür belehren.
+  → betrifft: alle
+
+---
+
 ## Ausgabe 2 — 21.10.2026, 12:05 Kapstadt
 
 Erste eingesammelte Ausgabe. Quelle: `lernen/head-of-content.md` auf
