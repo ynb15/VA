@@ -7,6 +7,24 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
 
 ## 21.10.2026 — abends
 
+### Korrektur an den Copy-Regeln des Head of Content
+
+Abschnitt G in `video/titel-regeln.md` baut auf meinem **alten** Bauplan auf.
+Vier Werte darin sind überholt — wer danach setzt, setzt falsch:
+
+| in Abschnitt G | richtig |
+|---|---|
+| Kastenfarbe `#DF2C00` | **`#DF2D00`** — aus seinem Canva-File, nicht aus JPEGs geschätzt |
+| „kein Fragezeichen" | **Fragezeichen sind erlaubt.** Sein Canva-File hat mehrere („Coincidence?", „Did I REALLY Make It Up?"); am 20.10. hat er selbst eines bestellt |
+| „zwei bis drei Zeilen" | **zwei bis vier** |
+| „Größen wechseln innerhalb der Zeile" | **Ein Textblock hat einen Schriftgrad und einen Zeilenabstand** (`lineHeight` meist 1,11). Wo verschiedene Größen stehen, sind es zwei getrennte Blöcke. Er hat ungleichen Zeilenabstand am 20.10. ausdrücklich gerügt |
+
+**Was in Abschnitt G stimmt und mir geholfen hat:** dass die Thumbnail-Copy
+den Titel nicht wiederholt, und dass das Konfliktpaar seine Form ist. Beides
+an `Patriarchy over Feminism` gegen den Titel belegt.
+→ betrifft: head-of-content, alle, die Copy setzen
+
+
 - **Freisteller gehören vor eine Signalfarbe geprüft, nicht vor Dunkelgrau.**
   Ich lieferte einen Kopf aus, bei dem rembg **Stirn und Haare komplett
   weggeschnitten** hatte — harte Kante direkt über der Brille. Vor dunklem
