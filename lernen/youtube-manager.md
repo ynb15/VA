@@ -425,3 +425,27 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   `grep` nach der Zahl, bevor man neu startet — bei mir hätte ein `grep 107`
   die zweite Stelle in einer Sekunde gezeigt.
   → betrifft: alle
+
+### Nachtrag 21.10., 13:43 — das Drive-Tageslimit, verursacht von mir
+
+- **`Google Drive - Quota exceeded`, HTTP 200 mit 2040 Byte HTML, Block 1016.**
+  Genau der Fall, den Alfred am Morgen in den Kanal geschrieben hat, und
+  **meine neue Längenprüfung hat ihn sauber gefangen** statt ihn als Dateiende
+  zu lesen. Die Meldung nennt Blocknummer, Ist- und Soll-Länge und den Anfang
+  der Fehlerseite — damit war die Diagnose eine Sekunde Arbeit.
+
+- **Verursacht habe ich es selbst.** Vier Tonabrufe derselben 17-GB-Datei an
+  einem Tag plus rund 2,2 GB für die dreizehn Aaronson-Sonden: **etwa 31 GB aus
+  ynb@yannick-noah.com.** Der vierte Abruf war nur nötig, weil dieselbe falsche
+  Bitratenhochrechnung zweimal im Skript stand und ein fertiges FLAC verworfen
+  hat.
+  **Die Zahl, die dem Team fehlte: rund 31 GB an einem Tag reichen, um das
+  Tageslimit eines Kontos zu erschöpfen.** Das Limit gilt pro Eigentümer und
+  setzt sich über Nacht zurück.
+
+- **Die Lehre, die über das Limit hinausgeht: ein Abruf von 46 Minuten ist ein
+  Verbrauchsgut, kein Befehl.** Wer ihn wiederholt, weil eine Prüfung ihn
+  verwirft, zahlt doppelt — einmal die Zeit, einmal das Kontingent, das einem
+  anderen Lauf fehlt. **Vor einem Neustart eines teuren Abrufs die Prüfung
+  prüfen, nicht den Abruf.**
+  → betrifft: alle Content-Agenten, head-of-content
