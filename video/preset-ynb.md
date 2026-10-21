@@ -40,6 +40,12 @@ Korrektur misst der Umbruch 21 % zu breit und teilt Dreier, die längst
 passen. Sichtbare Folge: `WHAT MAKES LIFE` bleibt hier **auf einer Zeile**,
 sein Preset hätte es getrennt.
 
+## Probe
+
+`schriftprobe-preset.png` — Inter Black 82, Gelb `#F9F13A` auf dem
+gesprochenen Wort, Kontur 8 px, Zeile auf 70 % der Höhe, Logo 28 % breit
+auf 0,87. Die Zeile misst 725 px, die Schranke liegt bei 777.
+
 ## Was fehlt
 
 - **`luts/ynb_look.png` — der Filter selbst.** In der Übergabe lagen nur
