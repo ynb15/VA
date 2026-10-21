@@ -5,6 +5,47 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
 
 ---
 
+## 21.10.2026 — Sutcliffe „What makes life meaningful?"
+
+### Eine Thumbnail-Zeile hat rund zehn Zeichen, nicht mehr
+
+- **Zwischen zwei Köpfen bleiben rund 650 px.** Gemessen an diesem Bau:
+  Yannicks Gesichtsrahmen endet bei x = 325, Sutcliffes beginnt bei x = 982.
+  Was dazwischen passt, bestimmt den Schriftgrad, nicht der Geschmack.
+- **Daraus folgt eine harte Grenze für die Zeile.** Dieselben Köpfe, drei
+  Zeilen: `What Else Is There?` → Grad 139 · `It's Just Connection` → 117 ·
+  `What Makes Life Meaningful?` → **109, und bei Thumbnail-Größe liest es
+  sich nicht mehr.** Die längste Zeile entscheidet, nicht die Gesamtlänge.
+- **Für den YouTube-Manager:** eine Thumbnail-Zeile hält **höchstens zehn
+  Zeichen**. Eine Frage, die als Titel trägt, trägt als Thumbnail-Zeile oft
+  nicht — das sind zwei verschiedene Texte.
+  → betrifft: youtube-manager, head-of-content, thumbnails
+
+### Das Material für den Gastgeber liegt selten im Stück selbst
+
+- **In diesem 60-Sekunden-Stück ist Yannick 2,5 Sekunden im Bild** — mit
+  Hand und Stift am Gesicht und halb geschlossenen Augen. Der Schnitt liegt
+  fast ganz auf dem Gast, und das ist bei einer Antwort auch richtig.
+- **Zwei weitere Fenster derselben Datei gemessen:** 7160–7222 — wieder nur
+  Sutcliffe. Erst ein Fenster aus der Mitte der Folge (3600–3800) lieferte
+  Yannick ohne Hand, Augen offen, Pupillenabstand 147, Augenweite 0,0297.
+- **Also: das Fenster des Stücks reicht für den Gast, nicht für den
+  Gastgeber.** Für den Gastgeber gleich ein langes Fenster irgendwo aus der
+  Folge mitnehmen — ein Sprung kostet mehr als die Sekunden, die er bringt.
+  → betrifft: thumbnails, cinematic
+
+### Zwei Dinge lagen nur im Container, nicht im Repo
+
+- **Das Freistellen gab es nur als Einzeiler in der Sitzung.** Liegt jetzt
+  als `video/thumbnails/freisteller.py` im Repo, mitsamt dem Prüfblatt gegen
+  Grün und dem Kopf in 1:1 — die beiden Prüfungen, an denen der
+  abgeschnittene Haaransatz aufgefallen wäre.
+- **`augen.py` zeigte auf `…/scratchpad/modelle/yunet.onnx`.** Beim nächsten
+  Container wäre das Skript still ausgefallen. Zeigt jetzt auf das Modell im
+  Repo. **Wer ein Modell oder eine Schrift lädt, legt den Pfad ins Repo** —
+  Regel 5 aus `plan/ABLAUF.md` gilt auch für Pfade, nicht nur für Dateien.
+  → betrifft: alle
+
 ## 21.10.2026 — abends, fünfte Runde
 
 - **Varianten derselben Folge müssen bis aufs Pixel gleich gesetzt sein.**

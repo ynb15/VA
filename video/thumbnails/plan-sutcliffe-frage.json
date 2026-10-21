@@ -1,0 +1,29 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund_sutcliffe.jpg",
+  "links": "video/thumbnails/_freisteller/y_s3709.png",
+  "rechts": "video/thumbnails/_freisteller/s_7270.png",
+  "ziel_links": {
+   "augen_x": 167,
+   "kinn_y": 600,
+   "box_h": 535
+  },
+  "ziel_rechts": {
+   "augen_x": 1128,
+   "kinn_y": 600,
+   "box_h": 570
+  },
+  "zeilen": [
+   "What Makes",
+   "Life",
+   "Meaningful?"
+  ],
+  "kasten": [
+   2,
+   "Meaningful"
+  ],
+  "ziel": "video/thumbnails/sutcliffe-frage.jpg",
+  "zeilenhoehe": 0.98,
+  "max_breite": 700
+ }
+]

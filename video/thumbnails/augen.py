@@ -10,7 +10,9 @@ Das ist ein Hilfsmass zum Vorsortieren, keine Entscheidung. Angeschaut wird
 trotzdem.
 """
 import cv2, numpy as np
-MODELL = '/tmp/claude-0/-home-user-VA/01d5d204-2851-5077-9bd0-356b051ca338/scratchpad/modelle/yunet.onnx'
+import os
+MODELL = os.path.join(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))), 'modelle', 'yunet.onnx')
 _D = {}
 
 
