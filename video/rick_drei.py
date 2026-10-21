@@ -25,7 +25,12 @@ TEMPO = 1.15
 KASTEN, LIPPE = "780:14:528:939", 965
 # Was raus soll, als Text. Beide Marken muessen im selben Abschnitt oder in
 # aufeinanderfolgenden Abschnitten liegen; alles dazwischen faellt mit.
-VON, BIS = "a couple of things", "1000 pages"
+# Whisper schreibt Zahlen mal als Ziffer, mal als Wort — die erste Fassung
+# suchte nur „1000 pages", das Transkript sagte „a thousand pages", und der
+# Lauf brach nach fuenf Minuten Transkription ergebnislos ab. Also mehrere
+# Schreibweisen, und der Fund wird protokolliert.
+VON = ["a couple of things"]
+BIS = ["1000 pages", "thousand pages", "1,000 pages"]
 
 
 def log(*a):
@@ -61,12 +66,15 @@ def streichen_finden(abschnitte):
     a = b = None
     for i, abs_ in enumerate(abschnitte, 1):
         t = _norm(abs_["text"])
-        if a is None and _norm(VON) in t:
+        if a is None and any(_norm(v) in t for v in VON):
             a = i
-        if _norm(BIS) in t:
+        if any(_norm(x) in t for x in BIS):
             b = i
     if a is None or b is None or b < a:
-        sys.exit(f"Stelle nicht gefunden (von={a}, bis={b}) — nichts gestrichen.")
+        log("Stelle nicht gefunden — hier sind die ersten Abschnitte:")
+        for i, abs_ in enumerate(abschnitte[:10], 1):
+            log(f"   {i}: {abs_['text'].strip()[:95]}")
+        sys.exit(f"von={a}, bis={b} — nichts gestrichen.")
     return list(range(a, b + 1))
 
 
@@ -80,9 +88,19 @@ def main():
     gekuerzt = os.path.join(o, "rick5_mit.mp4")
 
     if not fertig(gekuerzt):
-        log("Abschnitte von rick4_mit.mp4 bilden")
-        woerter = sl.woerter_holen(quelle)
-        abschnitte = sl.saetze_bilden(woerter)
+        # Die Transkription kostet Minuten. Sie wird abgelegt, damit ein
+        # zweiter Versuch nicht wieder von vorn anfaengt — beim ersten Lauf
+        # brach die Textsuche danach ab, und die fuenf Minuten waren weg.
+        import json
+        cache = os.path.join(o, "rick5_abschnitte.json")
+        if os.path.exists(cache):
+            abschnitte = json.load(open(cache))
+            log(f"{len(abschnitte)} Abschnitte aus {os.path.basename(cache)}")
+        else:
+            log("Abschnitte von rick4_mit.mp4 bilden")
+            woerter = sl.woerter_holen(quelle)
+            abschnitte = sl.saetze_bilden(woerter)
+            json.dump(abschnitte, open(cache, "w"))
         raus = streichen_finden(abschnitte)
         log(f"{len(abschnitte)} Abschnitte, es fallen {raus}:")
         for i in raus:
