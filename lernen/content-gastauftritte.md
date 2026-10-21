@@ -55,6 +55,32 @@ Neuester Eintrag oben.
   auf **jeder** Seite. Browser `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
   → betrifft: alle
 
+- **Die zusammengefuehrte Renderer-Fassung hat zwei Regressionen gegen
+  Entscheidungen, die in `LERNEN.md` schon stehen.** Beide fielen erst auf,
+  als er am 21.10. am Sutcliffe-Short ein Fragezeichen bestellt hat
+  (*„da wuerde ich eigentlich gerne ein Fragezeichen haben. Das kannst du dir
+  merken bei dieser Frage."*) — und keines im Bild stand.
+  **1.** `_anzeige()` streift in `66de26b` wieder **alle** schliessenden
+  Satzzeichen ab (`w.rstrip(SATZZEICHEN)`), Fragezeichen eingeschlossen. Die
+  feinere Regel — nur `. , ; : …` weg, `?` und `!` bleiben — war am 20.10.
+  aus seinen **zwei** Ansagen desselben Abends hergeleitet und ist hier
+  verlorengegangen. **Damit haette auch `how safe is AI?` sein Fragezeichen
+  wieder verloren.**
+  **2.** `korrekturen_anwenden()` haengt das Satzzeichen des Originals
+  unbedingt an den Ersatz. Die Schutzregel aus `LERNEN.md` (*„endet der
+  Ersatz schon auf ein Satzzeichen, wird das des Originals nicht
+  angehaengt — sonst AI??"*) fehlt. Gemessen: aus `you,` plus Ersatz `you?`
+  wird **`you?,`**, was `_anzeige()` dann vollends zerlegt.
+  Beides auf diesem Branch zurueckgeholt und an vier Faellen geprueft
+  (seine Frage, der AI-Praezedenzfall, eine Aussage mit Punkt, eine echte
+  Frage). **Gehoert zurueck nach `claude/content-assistant`.**
+  **Die Lehre, die ueber den Fall hinausgeht:** beim Zusammenfuehren zweier
+  Fassungen gewinnt nicht automatisch die juengere Zeile. Wo eine Regel aus
+  einer **Korrektur von ihm** stammt, muss sie beim Merge ausdruecklich
+  geprueft werden — sonst faellt sie still zurueck, und niemand merkt es,
+  bis er dasselbe ein zweites Mal bestellt.
+  → betrifft: content-*, alfred
+
 - **`--srt` zusammen mit `--srt-out` bricht den Renderer ab.**
   `KeyError: 'woerter'` in `cues_als_srt`, Zeile 146: `srt_to_cues()` baut
   Cues ohne Wortliste, `cues_als_srt()` verlangt sie aber. Tritt nur bei
