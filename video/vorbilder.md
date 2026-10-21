@@ -153,8 +153,19 @@ Die Formel ist *geliehene Autorität + verheimlichte Wahrheit*.
 **Manson und Shetty haben je eine wiederkehrende Marke im Titel selbst.**
 Manson: `…, Solved` — **21 von 100** Titeln (*Failure, Solved* · *Finding Your Life Path,
 Solved*). Shetty: `watch` in **52 von 100**, sein eigener Name in **53 von 100**. **Beide verkaufen eine Reihe, nicht eine
-Folge.** Yannick hat kein solches Serienwort. `star` (6×) ist das, was einem am nächsten
-kommt — und es ist zufällig, nicht gesetzt.
+Folge.**
+
+**Korrektur vom 21.10., nach Durchsicht des Substack-Ordners:** hier stand, Yannick habe
+kein solches Serienwort. **Das war falsch.** Er hat eines, und es steht sogar in dieser
+Titelliste:
+
+> `Steven Bartlett, This Is My Application` — YouTube, Titel 18
+> `Mark Manson, This Is My Application` — Substack 09, Juni 2026
+> `The Craziest Job Application in History @ChrisWill` — unveröffentlichter Entwurf
+
+Dreimal dieselbe Bewegung, drei berühmte Namen, zwei Plattformen. Ich hatte nur die 38
+YouTube-Titel gemessen, und dort kommt es einmal vor — zu wenig, um als Muster
+aufzufallen. Belege und Vorbehalte: `voice/substack-register.md` §1.
 
 **Sein Wortfeld ist das schärfste von allen fünf.** psychedelics, transgender, tantra,
 manosphere, masculinity, feminism, apartheid. Das ist kein Mangel. Es ist seine
@@ -195,10 +206,19 @@ für ein Interview.
   Zahl (siehe `video/youtube-kanal.md`) ist jede Korrelation Zufall. Was oben steht, ist
   **Formvergleich, keine Wirkungsmessung.** Klickrate und Impressionen stehen öffentlich
   nicht da; dafür bräuchte es YouTube Analytics über OAuth.
-* **Substack ist am 21.10. noch gesperrt.** `substack.com` und `ynbernard.substack.com`
-  antworten beide mit `CONNECT tunnel failed, 403` über den Egress-Proxy. Solange das so
-  ist, kenne ich seine geschriebene Langform nicht — und Titel sind nur die kürzeste
-  Form davon.
+* **Substack ist am 21.10. noch gesperrt** (`CONNECT tunnel failed, 403` über den
+  Egress-Proxy) — **gebraucht wird es nicht mehr.** Der Drive-Ordner kam am selben Tag,
+  und die Dokumente tragen die veröffentlichten Titel **samt den verworfenen Varianten.**
+  Was daraus folgt, steht in `voice/substack-register.md`; zwei Punkte betreffen diese
+  Seite direkt:
+  **(a)** den Zwei-Slot-Bau aus §3 beherrscht er in der Schrift längst — jeder Substack-Post
+  hat Titel plus Unterzeile (`I Quit.` / *A Homage to The Boring Virtue of Contentment*).
+  Er lässt den zweiten Slot nur auf YouTube leer.
+  **(b)** zur Du-Ansprache aus §2: bei `The Porn Pandemic` hat er die DESTROYS-Fassung
+  des Titels selbst mit **`(YT only)`** markiert und für Substack `You Think It's A
+  Secret. It's Not.` genommen. **Er trennt die Register bewusst.** Die 13 % sind also
+  eine Entscheidung, nicht eine Lücke — was den gemessenen Abstand zu Manson und Shetty
+  nicht kleiner macht, aber anders erklärt.
 
 ## Wie das nachgezogen wird
 
