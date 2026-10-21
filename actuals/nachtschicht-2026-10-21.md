@@ -47,3 +47,19 @@ rechtfertigt die Ausnahme: das Drive-Limit löst sich von selbst, die drei
 fehlenden Links haben bis Freitag Zeit.
 
 - **21:40** · alle acht · Fortschritt · kein offener Nachtlauf · neue Commits: 140 heute · Maßnahme: keine
+
+## 00:40 · zweite Kontrolle
+
+**Unverändert.** Alle acht Commit-Zahlen stehen exakt auf dem Stand von 21:40
+(14 · 24 · 22 · 13 · 36 · 6 · 22 · 3), die Zeitstempel sind nur drei Stunden
+älter geworden. **Niemand arbeitet, und niemand soll** — es ist kein Nachtlauf
+offen.
+
+`get_trigger` auf `trig_01QJcu2efwge414fHNrkLzbX`: **scharf, `enabled: true`,
+`next_run_at 2026-10-22T06:40:00Z`.** Das Kingsbury-Transkript steht
+unverändert für morgen früh bereit.
+
+**Keine Maßnahme.** Stillstand ohne offenen Auftrag ist kein Befund — ein
+Anstupsen wäre hier das Gegenteil von Aufsicht.
+
+- **00:40** · alle acht · ruhend, kein offener Lauf · neue Commits: keine · Maßnahme: keine
