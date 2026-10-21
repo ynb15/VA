@@ -1,0 +1,32 @@
+{
+ "quelle": "/tmp/claude-0/-home-user-VA/097d7a5e-8499-5908-b07e-d54029f39317/scratchpad/clip_aa2.mp4",
+ "groesse": [
+  1920,
+  1080
+ ],
+ "bezugsbewegung": 4.14,
+ "einstellungen": [
+  {
+   "layout": "einzel",
+   "kasten": "116:0:608:1080",
+   "lippe": 1094,
+   "start": 0.0,
+   "ende": 2.145,
+   "tot": false,
+   "bewegung_x": 0.18,
+   "mitte": 0.18,
+   "masse": 4.0
+  },
+  {
+   "layout": "einzel",
+   "kasten": "650:0:608:1080",
+   "lippe": 1094,
+   "start": 2.145,
+   "ende": 58.145,
+   "tot": false,
+   "bewegung_x": 0.5,
+   "mitte": 0.6,
+   "masse": 5.5
+  }
+ ]
+}

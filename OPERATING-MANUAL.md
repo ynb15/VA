@@ -8595,3 +8595,57 @@ vollständig: Chris Williamson, Steven Bartlett, Mark Manson, Jay Shetty,
 Jack Neel. **Ich hatte den Namen nicht geraten, sondern gefragt** — und es
 war nicht „Jack Neal". Eine Minute Nachfragen gegen fünf Agenten, die auf
 einen falschen Kanal hin arbeiten.
+
+## Der Lernkanal — das Team teilt Befunde, zweimal täglich
+
+Angelegt am 21.10.2026. Seine Bitte, wörtlich: *„Ich möchte, dass deine Agenten
+einmal täglich mindestens oder zweimal täglich ihre Learnings miteinander
+austauschen, wenn das ohnehin nicht sowieso passiert. Oder dass du derjenige
+bist, der den Progress und die Learnings der unterschiedlichen Agenten
+kontrollierst und sie dann immer gegenseitig miteinander teilst."*
+
+**Die ehrliche Antwort auf „wenn das nicht ohnehin passiert": es passierte
+nicht.** Jeder Agent hat seinen eigenen Branch und sein eigenes Kontextfenster.
+Zwischen beiden gibt es keinen Weg, den ein Agent von allein geht. Beim Anlegen
+des Kanals gemessen: **26 Commits echter Arbeit auf sechs Agenten-Branches**
+(thumbnails 15, youtube-manager 3, content-cinematic 3, head-of-content 2,
+content-vlog 2, guest-booking 1), und **kein einziger Befund davon war für
+irgendeinen anderen Agenten sichtbar**.
+
+### Der Aufbau
+
+| | |
+|---|---|
+| **Schreiben** | Jeder Agent hängt an `lernen/<schlüssel>.md` auf **seinem eigenen** Branch an. Eine Datei je Agent → nie ein Merge-Konflikt. |
+| **Lesen** | Jeder Agent liest `LERNEN.md` vom Chief-of-Staff-Branch, **am Anfang jedes Arbeitsblocks**, mit `git fetch` + `git show origin/…:LERNEN.md`. Kein Checkout, kein Merge. |
+| **Sammeln** | Alfred, `bin/lernen-sammeln.sh`. Holt alle sieben Zweige, zeigt nur, was seit dem letzten Mal dazukam. `--quittieren` setzt den Stand. |
+| **Takt** | Zweimal täglich, auf zwei Läufen, **die es schon gibt**: 06:40 (Morgenbericht der Nachtschicht) und 15:54 (täglicher Sweep). Kein neuer Timer, keine zusätzlichen Kosten. |
+| **Verteilen** | Nach Adressat, nicht per Rundruf. Jeder Eintrag trägt `→ betrifft:`. Eine Session wird nur geweckt, wenn ein Befund ändert, was sie **gerade jetzt** tut — sonst liest sie ihn beim nächsten Block. |
+
+Die Protokolldatei für die Agenten ist `lernen/KANAL.md`, das Gedächtnis selbst
+`LERNEN.md`. Der Stand des Einsammelns liegt als Kopie in `lernen/.gelesen/` —
+ein Diff dagegen überlebt auch ein Umschreiben auf dem Agenten-Branch.
+
+### Was ein Eintrag ist
+
+Ein nachgemessener Befund, **der auch für jemand anderen gilt**. Mit einer Zahl
+oder einem wörtlichen Zitat. Der Test: würde ein anderer Agent ohne diesen Satz
+einen Fehler machen oder Arbeit doppeln? Nein → nicht in den Kanal.
+
+Nicht hinein gehören Fortschrittsmeldungen, Vorhaben, Einschätzungen ohne
+Messung und alles, was nur den eigenen Auftrag betrifft. Der Kanal stirbt an
+Volumen, nicht an Lücken.
+
+### Zwei Regeln, die beim Anlegen entstanden sind
+
+**Ungeholte Remote-Refs lügen.** Die erste Zählung ergab „null eigene Commits
+bei allen sieben" — ordentlich formatiert, eindeutig, komplett falsch, weil
+`git rev-list` gegen den Stand von `origin/…` lief, den dieser Container beim
+Klonen bekommen hatte. Vor jeder Aussage über einen fremden Branch: `git fetch`.
+
+**Aufträge gehören dem Fach-Agenten.** Seine Korrektur vom 21.10. zum
+Aaronson-Short: *„Diese Aufgabe hättest du eigentlich dem Short Manager
+übergeben sollen."* Ab jetzt: diagnostizieren, so weit messen, dass die
+Übergabe präzise ist, abgeben. Nicht selbst rendern. Wer einen Auftrag annimmt,
+für den jemand anderes zuständig ist, baut genau das Silo, das der Kanal
+auflösen soll.
