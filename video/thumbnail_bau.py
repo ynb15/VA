@@ -100,7 +100,8 @@ def gesicht_messen(png):
     return augen_x, augen_y, float(r[3])
 
 
-def kopf_setzen(leinwand, png, ziel, kontrast=1.14, helligkeit=1.06):
+def kopf_setzen(leinwand, png, ziel, kontrast=1.14, helligkeit=1.06,
+                spiegeln=False):
     """ziel: dict mit augen_x, box_h und entweder augen_y oder scheitel_y.
 
     **`scheitel_y` ist meist das richtige Mass.** Zwei Koepfe auf dieselbe
@@ -115,6 +116,14 @@ def kopf_setzen(leinwand, png, ziel, kontrast=1.14, helligkeit=1.06):
     Gesicht hart vor dem abgesoffenen Hintergrund, das Kamerabild kommt
     flacher aus der Aufnahme. Nur die Farbkanaele, die Maske bleibt wie sie ist.
     """
+    if spiegeln:
+        # Beide Kameras koennen denselben Blickwinkel zeigen; dann muss einer
+        # gespiegelt werden, damit sie sich anschauen. Die Messung laeuft auf
+        # dem gespiegelten Bild, sonst sitzt die Augenposition seitenverkehrt.
+        gespiegelt = Image.open(png).convert('RGBA').transpose(
+            Image.FLIP_LEFT_RIGHT)
+        png = png.rsplit('.', 1)[0] + '__gespiegelt.png'
+        gespiegelt.save(png)
     ax, ay, bh = gesicht_messen(png)
     k_vor = ziel['box_h'] / bh
     if 'scheitel_y' in ziel:
@@ -372,7 +381,7 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
           logo_farbe=(0xF0, 0x48, 0x60), logo_oben=True, pfeil_von=None,
           pfeil_nach=None, pfeil_bogen=0.28, pfeil_dicke=18,
           pfeil_farbe=(0xDF, 0x2D, 0x00), pfeil_gezeichnet=True,
-          pfeil_kopf=3.1):
+          pfeil_kopf=3.1, links_spiegeln=False, rechts_spiegeln=False):
     """zeilen: Liste von Texten · kasten: Zeilenindex, oder [index, "teil"].
 
     `mitte` ist ein echtes Foto fuer die Bildmitte. Liegt eines vor, ruecken
@@ -421,10 +430,12 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
 
     if links:
         kopf_setzen(bild, links,
-                    ziel_links or (ZIEL_LINKS_MITTE if mit_mitte else ZIEL_LINKS))
+                    ziel_links or (ZIEL_LINKS_MITTE if mit_mitte else ZIEL_LINKS),
+                    spiegeln=links_spiegeln)
     if rechts:
         kopf_setzen(bild, rechts,
-                    ziel_rechts or (ZIEL_RECHTS_MITTE if mit_mitte else ZIEL_RECHTS))
+                    ziel_rechts or (ZIEL_RECHTS_MITTE if mit_mitte else ZIEL_RECHTS),
+                    spiegeln=rechts_spiegeln)
     if logo and logo_oben:
         # Auf die Koepfe geworfen, nicht dahinter: wer „ein Logo auf ihn
         # werfen" sagt, meint davor.

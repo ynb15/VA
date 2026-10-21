@@ -1,16 +1,17 @@
 [
  {
   "hg": "video/thumbnails/_hintergrund.jpg",
-  "links": "video/thumbnails/_freisteller/y_rg.png",
+  "links": "video/thumbnails/_freisteller/y_k4223.png",
+  "links_spiegeln": true,
   "rechts": "video/thumbnails/_freisteller/k_0042.png",
   "ziel_links": {
    "augen_x": 167,
-   "augen_y": 300,
-   "box_h": 378
+   "scheitel_y": 10,
+   "box_h": 451
   },
   "ziel_rechts": {
    "augen_x": 1128,
-   "augen_y": 300,
+   "scheitel_y": 10,
    "box_h": 437
   },
   "zeilen": [

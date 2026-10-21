@@ -307,6 +307,35 @@ solle „ein Logo auf ihn werfen", meint davor, nicht dahinter. Hinter den
 Köpfen (`logo_oben: false`) ist es nur sinnvoll, wenn das Logo auf einer
 Grafik in der Bildmitte liegt, wie in der DOAC-Vorlage.
 
+### Freisteller IMMER vor Grün prüfen
+
+Am 21.10. habe ich ihm einen Freisteller geliefert, bei dem **rembg Stirn und
+Haare komplett weggeschnitten hatte** — der Kopf endete mit einer harten Kante
+direkt über der Brille. Seine Worte: *„siehst du das, dass mein Kopf
+abgeschnitten ist über meiner Brille."*
+
+**Warum es mir nicht auffiel:** ich hatte den Freisteller nur vor dunklem Grau
+geprüft. Dunkle Haare vor dunklem Grund — das Loch war unsichtbar. **Jeder
+Freisteller gehört vor eine Signalfarbe, Grün (0,200,0).**
+
+### Nicht aus fertigen Thumbnails freistellen
+
+Derselbe Fehler hatte eine zweite Ursache: ich hatte sein Gesicht aus dem
+fertigen Thumbnail `RG-K0fIA2-w` geschnitten. Dort steht er schon vor
+**schwarzem Hintergrund** — rembg kann dunkles Haar davon nicht trennen, und
+der Bildrand liefert zusätzlich eine gerade Schnittkante. **Immer aus dem
+Rohmaterial freistellen, wo die Person vor einem belichteten Raum sitzt.**
+
+### Wenn beide Kameras in dieselbe Richtung zeigen
+
+In der Kingsbury-Aufnahme schauen **beide** auf ihrer jeweiligen Kamera nach
+Bild-links. Nebeneinandergesetzt schauen sie dann in dieselbe Richtung statt
+sich an. Abhilfe: **einen von beiden spiegeln** (`links_spiegeln` /
+`rechts_spiegeln`). Die Messung muss danach auf dem gespiegelten Bild laufen,
+sonst sitzt die Augenposition seitenverkehrt. Zu spiegeln ist der mit den
+wenigsten seitenabhängigen Merkmalen — ein Headset-Bügel fällt niemandem auf,
+Schrift auf dem Shirt schon.
+
 ### Eine Regel für mich
 
 **Genau das liefern, was bestellt ist.** Er hat „Human Extinction" verlangt;

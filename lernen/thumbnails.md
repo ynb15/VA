@@ -5,6 +5,38 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
 
 ---
 
+## 21.10.2026 — abends
+
+- **Freisteller gehören vor eine Signalfarbe geprüft, nicht vor Dunkelgrau.**
+  Ich lieferte einen Kopf aus, bei dem rembg **Stirn und Haare komplett
+  weggeschnitten** hatte — harte Kante direkt über der Brille. Vor dunklem
+  Grau geprüft war das Loch unsichtbar, weil dunkles Haar vor dunklem Grund
+  verschwindet. **Prüffarbe: Grün (0,200,0).**
+  → betrifft: alle, die freistellen
+
+- **Nie aus einem fertigen Thumbnail freistellen.** Dort steht die Person
+  schon vor Schwarz; rembg kann dunkles Haar davon nicht trennen, und der
+  Bildrand liefert zusätzlich eine gerade Schnittkante. Immer aus dem
+  Rohmaterial, wo die Person vor einem belichteten Raum sitzt.
+  → betrifft: alle, die freistellen
+
+- **Kameras zeigen oft beide dieselbe Blickrichtung.** In der
+  Kingsbury-Aufnahme schauen beide auf ihrer Kamera nach Bild-links;
+  nebeneinandergesetzt schauen sie dann aneinander vorbei. Einen spiegeln,
+  und zwar den mit den wenigsten seitenabhängigen Merkmalen. **Die Messung
+  danach auf dem gespiegelten Bild laufen lassen**, sonst sitzt die
+  Augenposition seitenverkehrt.
+  → betrifft: content-*, cinematic
+
+- **Schärfe schwankt über eine Folge stärker als die Kopfgröße.** Bei Yannick
+  in der Kingsbury-Aufnahme lag der Pupillenabstand über 368 Bilder konstant
+  bei 84–88 px, aber die Bilder um Minute 13 sind **sichtbar unscharf** und
+  die um Minute 70 scharf. Messbar über die Varianz des Laplace-Operators im
+  Gesichtsbereich (368 gegen 411). **Nicht nur nach Größe sortieren.**
+  → betrifft: alle Content-Agenten
+
+---
+
 ## 21.10.2026 — Nachtrag aus 15 Commits
 
 ### Die Schrift der Marke — gefunden und belegt
