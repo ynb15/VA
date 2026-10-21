@@ -1,0 +1,67 @@
+{
+ "quelle": "/home/user/VA/video/britton_fertig.mp4",
+ "groesse": [
+  3840,
+  2160
+ ],
+ "bezugsbewegung": 3.01,
+ "einstellungen": [
+  {
+   "layout": "einzel",
+   "kasten": "936:0:1056:1878",
+   "lippe": 1248,
+   "start": 0.0,
+   "ende": 2.63,
+   "tot": false,
+   "bewegung_x": 0.381,
+   "mitte": 0.6,
+   "masse": 3.01
+  },
+  {
+   "layout": "einzel",
+   "kasten": "1440:282:1056:1878",
+   "lippe": 1248,
+   "start": 2.63,
+   "ende": 9.93,
+   "tot": false,
+   "bewegung_x": 0.512,
+   "mitte": 0.67,
+   "masse": 3.02
+  },
+  {
+   "layout": "einzel",
+   "kasten": "1008:0:1056:1878",
+   "lippe": 1248,
+   "start": 9.93,
+   "ende": 22.6,
+   "tot": false,
+   "bewegung_x": 0.4,
+   "mitte": 0.46,
+   "masse": 4.23
+  },
+  {
+   "layout": "stapel",
+   "oben": "0:0:1701:1512",
+   "unten": "1766:340:1701:1512",
+   "lippe": 672,
+   "start": 22.6,
+   "ende": 30.4,
+   "tot": false,
+   "bewegung_x": 0.681,
+   "mitte": 0.3,
+   "masse": 2.32
+  },
+  {
+   "layout": "stapel",
+   "oben": "494:0:1701:1512",
+   "unten": "1646:0:1701:1512",
+   "lippe": 672,
+   "start": 30.4,
+   "ende": 47.4,
+   "tot": false,
+   "bewegung_x": 0.35,
+   "mitte": 0.35,
+   "masse": 2.61
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "quelle": "/home/user/VA/video/kyle_fertig.mp4",
+ "groesse": [
+  1920,
+  1080
+ ],
+ "bezugsbewegung": 1.01,
+ "einstellungen": [
+  {
+   "layout": "stapel",
+   "oben": "199:74:850:756",
+   "unten": "631:134:850:756",
+   "lippe": 672,
+   "start": 0.0,
+   "ende": 4.6,
+   "tot": false,
+   "bewegung_x": 0.325,
+   "mitte": 0.43,
+   "masse": 1.0
+  },
+  {
+   "layout": "einzel",
+   "kasten": "1044:141:528:939",
+   "lippe": 1248,
+   "start": 4.6,
+   "ende": 21.02,
+   "tot": false,
+   "bewegung_x": 0.681,
+   "mitte": 0.47,
+   "masse": 2.99
+  },
+  {
+   "layout": "stapel",
+   "oben": "0:0:850:756",
+   "unten": "1039:324:850:756",
+   "lippe": 672,
+   "start": 21.02,
+   "ende": 32.03,
+   "tot": false,
+   "bewegung_x": 0.762,
+   "mitte": 0.07,
+   "masse": 1.01
+  },
+  {
+   "layout": "stapel",
+   "oben": "427:278:850:756",
+   "unten": "919:182:850:756",
+   "lippe": 672,
+   "start": 32.03,
+   "ende": 52.05,
+   "tot": false,
+   "bewegung_x": 0.7,
+   "mitte": 0.44,
+   "masse": 3.15
+  },
+  {
+   "layout": "stapel",
+   "oben": "0:0:850:756",
+   "unten": "1070:314:850:756",
+   "lippe": 672,
+   "start": 52.05,
+   "ende": 61.66,
+   "tot": false,
+   "bewegung_x": 0.919,
+   "mitte": 0.07,
+   "masse": 0.99
+  }
+ ]
+}
