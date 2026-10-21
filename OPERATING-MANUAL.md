@@ -8324,7 +8324,9 @@ DAS TEAM, STAND 21.10.2026: SECHS AGENTEN, SECHS BRANCHES
 | Agent | Session | Branch | Gebiet |
 |---|---|---|---|
 | **Alfred** | `session_01ELkvmWEvz5X1QNTjj2ucia` | `claude/ai-chief-of-staff-cz83jv` | Postfach, Kalender, Board, Sweep, Nachtaufsicht |
-| **Content Assistant** | `session_01UiDavSH3jThmLktN7Wvzxs` | `claude/content-assistant` | Transkripte, Shorts, Schnitt |
+| **Content Assistant — Shorts (schlicht)** | `session_01UiDavSH3jThmLktN7Wvzxs` | `claude/content-assistant` | Transkripte, Shorts, Schnitt |
+| **Cinematic Content Assistant** | `session_01XqVYzN3ZsciLLfqS5GxYNV` | `claude/content-cinematic` | filmische Shorts, Einspieler, Bildsprache |
+| **Vlog Content Assistant** | `session_01AFYkJ3TqgbC5x3hkcuUdE2` | `claude/content-vlog` | lange Formate, Archiv über alle Folgen |
 | **Thumbnail Assistant** | `session_01Qng36it9JR8kntKEjVEjXS` | `claude/thumbnails` | Vorschaubilder |
 | **Head of Content** | `session_017XwQh9PcSRWDQwDkCxAnKx` | `claude/head-of-content` | Substack, Titel, Copy, Beschreibungen |
 | **YouTube Manager** | `session_01AcQ6iCiXdnDbp7uxixXydg` | `claude/youtube-manager` | Community, Kommentare, Metadaten |
@@ -8560,3 +8562,36 @@ Das gelbe Aktivwort bleibt `--auto-captions` vorbehalten, weil es Wortzeiten
 braucht.
 **Und eine Kleinigkeit mit Zähnen:** `ffmpeg` liest `stdin` und frisst in
 einer Schleife die Eingabeliste auf. `-nostdin` gehört in jeden Aufruf.
+
+── DREI CONTENT ASSISTANTS STATT EINEM (21.10.)
+Von ihm: *„Den Content Assistant möchte ich quasi duplizieren. Der eine soll
+sich darauf fokussieren, einfach Shorts zu schneiden, unspektakulär
+aufbereiten. Der andere soll ein cinematischer Content Assistant sein — wie
+Chris Williamson das macht. Und einen dritten für Vlogs."*
+
+**Keiner der beiden Neuen fängt bei null an**, und das ist der Grund, warum
+vorher zusammengeführt wurde: der filmische Teil (B-Roll, Williamson-Vorlage,
+`video/broll-referenz.md`) und das wiederaufnehmbare `frage_am_ende.py`
+entstanden auf dem Zweig des Vorgängers, die Lautheits- und Ausschnittarbeit
+auf meinem. Beide Zweige fassten `video/shorts-render.py` an.
+**REGEL: bevor ein Werkzeug an weitere Agenten vererbt wird, wird der Zweig
+zusammengeführt.** Sonst hat man nach drei Abzweigungen vier Renderer, die
+sich nicht mehr vertragen, und niemand merkt es, bis zwei Fassungen
+desselben Shorts verschieden aussehen.
+
+**Der Vlog-Auftrag hat eine Sperre, die er lösen muss:** „in einen
+Drive-Ordner legen" setzt Drive-Schreibrechte voraus, und die sind nicht
+freigegeben. Bis dahin liefert der Agent über `SendUserFile` und führt das
+Archiv als Tabelle im Repo (`video/meaningful-archiv.md`).
+**Und die Tabelle ist ohnehin das wertvollere Ergebnis als die Dateien:** aus
+Gast, Masterzeit und Dauer lässt sich der Schnitt bei Folge 100 in einer
+Stunde neu bauen, auch wenn jede Datei neu gerendert werden müsste. Sechs
+Folgen sind aus der Nacht schon erledigt.
+
+── JACK NEEL IST VERIFIZIERT
+`https://www.youtube.com/@jackneel` — Kanal-ID `UCFRCiFkWWJN2rO6dsKU9-1A`,
+**3,52 Mio Abos**, am 21.10. geprüft. Damit sind die fünf Vorbilder
+vollständig: Chris Williamson, Steven Bartlett, Mark Manson, Jay Shetty,
+Jack Neel. **Ich hatte den Namen nicht geraten, sondern gefragt** — und es
+war nicht „Jack Neal". Eine Minute Nachfragen gegen fünf Agenten, die auf
+einen falschen Kanal hin arbeiten.
