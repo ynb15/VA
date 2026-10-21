@@ -84,3 +84,48 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   aufzugeben — die Netzwerkfreigabe vom 19.10. gilt weiter, der Kanalabruf über
   `extract_flat` braucht keinen API-Schlüssel.
   → betrifft: alle
+
+- **„Not Started" in der Databank beweist nicht, dass nichts rausgegangen ist.**
+  Beim Abgleich seines Outreach-Docs (87 Pitches) gegen die Databank stand
+  **Matthew McConaughey auf *Not Started* nach sechs gesendeten Mails** (vier
+  Bounces, zwei zugestellt am 15.08.), **yung pueblo auf *Not Started* nach
+  zwei**. Mein Abgleich lief zuerst nur gegen die aktiven Status und hat beide
+  als „fehlende Zeile" gemeldet, obwohl sie existieren.
+  **Regel: ein Status-Abgleich schließt `Not Started` mit ein**, sonst meldet er
+  Lücken, die keine sind, und übersieht die Fehler, die es gibt.
+  → betrifft: alfred, head-of-content
+
+- **Fünf gesendete Pitches haben gar keine Databank-Zeile** — Dr. Mark Gafni
+  (gesendet und **binnen eines Tages persönlich beantwortet**), John Wineland,
+  Codie Sanchez, MJ DeMarco, Alon Matar. Und **eine Zeile heißt nur „Paul"**,
+  gemeint ist Paul Austin (The Third Wave) — wer nach dem Nachnamen sucht,
+  findet sie nie.
+  **Das Outreach-Doc in Drive ist damit eine eigene Quelle über seine Pipeline,
+  nicht eine Kopie der Databank.** Beim Zählen gehört es dazu.
+  → betrifft: alfred, head-of-content
+
+- **Sein Betreff-Trick, von ihm am 21.10. ausgesprochen:** *„wenn ich Personen
+  kenne, die irgendwie mit meinem Prospect connected sind, dann mache ich so in
+  eckigen Klammern via Scott Aronson … das erhöht die Chance deutlich, dass die
+  Personen auch reagieren."* Gemessen über alle 111 Fäden liegt `[Via <Name>]`
+  bei 3 von 12 (25 %) und der nackte Podcastname bei 10 von 17 (59 %) — die
+  Zahlen sind mit der Temperatur des Kontakts konfundiert und widerlegen ihn
+  nicht. **Seine Ansage schlägt meine Quote; beides nebeneinander nennen.**
+  → betrifft: alle
+
+- **Seine Ortsrecherche ist eine Google-Frage, und er hat sie mir gesagt:**
+  *„Ich gebe oft bei Google ein, Scott Aronson, where does he live?"* Für Ilya
+  Sutskever ergibt das **Palo Alto** (Sitz von Safe Superintelligence, zweites
+  Büro Tel Aviv). **Firmensitz, nicht Wohnadresse** — nach einer privaten
+  Adresse wird nicht gesucht, und für „in-person only" reicht der Firmensitz.
+  → betrifft: alle
+
+- **Ein Kalenderblock mit einem Gastnamen ist nicht automatisch eine Aufnahme.**
+  Von ihm am 21.10. über Bridget Woods: *„Bridget ist auch eine persönliche
+  Freundin von mir. Deshalb wirst du die wahrscheinlich im Kalender noch öfter
+  mal sehen."* Ich hatte den zweistündigen Block „Bridget" am Sa 24.10. als
+  mögliche Aufnahme hingestellt. **Die Person war richtig, die Sache falsch.**
+  Dazu: ihre Folge ist aufgenommen, aber *„die Audio absolut katastrophal …
+  vermutlich eher nicht"* veröffentlichen — an diese Zeile gehört keine
+  Veröffentlichungsmarke.
+  → betrifft: alfred, youtube-manager, head-of-content

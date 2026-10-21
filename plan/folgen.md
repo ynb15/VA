@@ -23,7 +23,7 @@ ohne eine einzige neue Aufnahme. Das Nadelöhr ist also nicht das Material.
 | **Sa 31.10.** | **Kyle Kingsbury** | 31.08.2026 | `1Y7-B2vZn1WFXINQamcnjRMgCM6Ztvust` | Transkript läuft seit 21.10. · **Thumbnail macht er selbst über ChatGPT** — am 21.10. so angewiesen, der Stichtag T−5 entfällt |
 | **Fr 13.11.** | **Rick Strassman** | 18.09.2026 | `1OKUFDBDyeEqV7iwypV5Q-vyQi7WL9b_C` | Meaningful-Stück (**Ende offen, seine Entscheidung**) |
 | **Fr 27.11.** | **Matt Defina** | 04.09.2026 | `1K2cpLvNJ6mrR8Xg7qyhRzgjqSNZCmAIw` | Meaningful-Stück |
-| **Fr 04.12.** | **Marian Goodell** | 06.10.2026 | `1Stnn8uXZO_sWkx-c0CKR6NE9RbXi0elX` | — · **offene Frage von ihr zum Transkript seit 13.10. — vor dem 04.12. zu klären** |
+| **Fr 04.12.** | **Marian Goodell** | 06.10.2026 | `1Stnn8uXZO_sWkx-c0CKR6NE9RbXi0elX` | **Tonschaden, siehe unten** — die Mikrofonaufnahme deckt nur die erste von zwei Stunden |
 | offen | David Sutcliffe | 26.08.2026 | `17QfVLgnVoyYi5hMlNtZyMYgmPi_0yrOS` | 4 Shorts gebaut · Meaningful-Stück |
 | offen | Logan Gonzalez | 11.09.2026 | `1LZnl1qhXTDQIluFQlohnlsqwz_pMrwyG` | Meaningful-Stück |
 | offen | Ken Stern | 14.09.2026 | `18nUfXLmrKTPBfgwh90MATPKjgmNsjTJQ` | Meaningful-Stück |
@@ -93,6 +93,24 @@ Sutcliffe-Clips** liegen (`1JyKri_kUrsK7jfub7cbHiz38oqyd_7_u`):
 
 **Das sind vier der 18 Clips, die der Kalender bis Jahresende braucht** — und
 sie sind fertig. Sie brauchen nur noch Titel, Beschreibung und Thumbnail.
+
+## Marian Goodell: die Hälfte des Tons fehlt — vor dem 04.12. zu lösen
+
+**Aus seinem eigenen Postfach, 19.10., an Burning Man** (walker.fisher, cc
+marian@ und andie.grace@): *„The mic recording from the shoot only captured the
+first hour of our 2h conversation."* Und an Andie: *„The audio won't be pretty,
+so it'll take some work, but we'll do our best to make it usable."*
+
+**Es gibt eine Sicherungsaufnahme** — Walker Fisher am 19.10. 17:10:
+*„I'm really glad you have the backup audio."* Wie gut die ist, steht nirgends.
+
+**Was das für den Plan heißt:** T−10 fällt auf den **24.11.** Bis dahin muss
+geklärt sein, ob die zweite Stunde brauchbar ist. **Wer das Transkript baut,
+muss es vorher wissen** — sonst transkribiert er eine Stunde und findet die
+Lücke erst beim Schneiden.
+
+**Noch nicht geprüft:** ob die Sicherungsspur im Drive-Ordner liegt. **Das ist
+die erste Frage, nicht die letzte.**
 
 ### Die Rechtefrage beim Tate-Clip
 

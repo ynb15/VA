@@ -168,3 +168,284 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   erste wiederholt** — bei Titel und Thumbnail ist Arbeitsteilung die Form, nicht
   Redundanz.
   → betrifft: thumbnails, content-*
+
+### Nachtrag 21.10., spät — zwei Zahlen aus dem Kanal waren falsch, von ihm korrigiert
+
+- **„Mansons `…, Solved` ist ein Serienkunstgriff" — nein, es ist sein
+  Podcastname.** Nachgeprüft: der Podcast heißt **„SOLVED with Mark Manson"**
+  (Apple Podcasts, id1247526593). Dass `…, Solved` in 21 von 100 Titeln steht,
+  ist derselbe Effekt wie „Jay Shetty" in 53 von 100 — **der Showname, keine
+  Betonung und kein Format.** Yannick hat es sofort gesehen: *„Das ist sein
+  Podcast. So heißt sein Podcast."*
+  **Die Falle steht in `video/titel-regeln.md` §E selbst beschrieben** und wurde
+  im gleichen Dokument ein zweites Mal betreten. **Regel: ein wiederkehrendes
+  Titelwort ist erst ein Kunstgriff, wenn es nicht der Name der Show ist — und
+  das kostet eine Suche, keine Messung.**
+  → betrifft: head-of-content, youtube-manager, thumbnails
+
+- **„Gastname hinten in 0 von 38" ist falsch. Es sind 3.** Nachgezählt an den
+  38 Titeln: `– Millionaire Rob Paddock (8K)` · `- Nathan Maingard (8K)` ·
+  `Why Kids Should Be Allowed Trans Surgery – Dr. Curtis Crane`. Ein vierter
+  trägt den Namen in der Mitte (`77 y/o Techno DJ Rob Bennett`). **Vier von 38
+  enthalten überhaupt einen Gastnamen.** Ich habe die Null zweimal an ihn
+  weitergegeben, ohne sie nachzuzählen — **eine Zahl aus dem Kanal ist ein
+  Befund, keine Messung; wer sie weitergibt, prüft sie an den eigenen Daten.**
+  → betrifft: alle
+
+- **Seine Namensregel, seit Jahren, wörtlich von ihm am 21.10.:** *„nur die
+  Namen können wir nur verwenden, wenn die wirklich weltweit global bekannt
+  sind."* Beispiele von ihm: Christopher Nolan, Donald Trump. Für alle anderen
+  **die Rolle**, weil sie zieht: *„America's #1 Transgender Doctor hat natürlich
+  viel mehr Pull, viel mehr Attraktivität als Curtis Crane."* Selbst bei Steven
+  Bartlett wäre **„Diary of a CEO"** das stärkere Wort.
+  **Damit ist die Empfehlung „der zweite Slot für den Gastnamen kostet nichts"
+  gegenstandslos** — rechnerisch stimmt sie, aber sie füllt den Slot mit einem
+  Namen, den niemand sucht. Der Name gehört in Beschreibung und Tags, nicht in
+  den Titel. **Bekannt im eigenen Fach ist nicht global bekannt** (Scott
+  Aaronson).
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **Keine Schablone von einem Vorbildkanal.** Wörtlich: *„ich will die nicht
+  kopieren. Oder so eine Schablone mir abschauen von Diary of a CEO, sondern
+  eher das als Inspiration sehen. Und immer wieder punktuell entscheiden."*
+  Konkret zur Dreier-Aufzählung: **dass DOAC sie nicht benutzt, ist kein Verbot
+  für ihn.** Ich hatte sie in meiner Fassung 3 ganz gestrichen — das war
+  Schablonendenken und ist zurückgenommen.
+  **Regel: eine Messung an einem Vorbildkanal beschreibt den Vorbildkanal.
+  Sie wird erst durch seine Zustimmung eine Regel für ihn.**
+  → betrifft: alle
+
+- **Sein Serienformat-Fund ist erledigt.** *„ich plane jetzt nicht, eine Serie
+  fortzusetzen mit Applications."* Der Grund dahinter, und er ordnet die
+  Prioritäten: *„idealerweise will ich meinen Podcast so schnell, so groß
+  aufziehen, dass ich für niemanden anderen mehr arbeiten muss."*
+  **Keine vierte `This Is My Application` titeln.**
+  → betrifft: head-of-content
+
+### Nachtrag 21.10., 10:30 — Jack Neel nachgemessen, und ein erfundenes Zitat in meinem eigenen Titel
+
+- **Jack Neel ist verifiziert**, selbst gemessen statt übernommen: `@jackneel`,
+  `UCFRCiFkWWJN2rO6dsKU9-1A`, **3.520.000 Abos**, 100 Titel. **58 mit Zitat, 50
+  davon als Ruf mit Ausrufezeichen im Zitat.** Länge Median 86, 7 bei genau 100.
+  Du 19 %, Ich/Wir 25 %. Die Zahlen des Head of Content halten; Abweichungen nur
+  im Rundungsbereich (er: 18/27, Median 85,5).
+  **Das ist der Name, der im Auftrag als „kein Kanal dieses Namens verifiziert"
+  stand.** Jetzt ist er es.
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **Neels zweiter Slot trägt 21× die eigene Marke und 27× einen anderen Namen —
+  und diese Namen sind Alex Hormozi, Rhonda Patrick, Robert Pape.** Also global
+  bekannte. **Yannicks Namensregel wird von Neels Daten gestützt, nicht
+  widerlegt.** Und der Slot hat eine zweite Verwendung, die bei Yannick frei ist:
+  die eigene Marke (`│ Man's Search for Meaning`).
+  → betrifft: head-of-content, thumbnails
+
+- **Ich hatte ein erfundenes Zitat in meinem empfohlenen Titel.**
+  `"The Trouble With AI Is That It Does Work"` — Aaronson sagt *„The trouble with
+  AI right now is **not** that it doesn't work. It's that it does work."* Meine
+  Fassung verschmolz zwei Sätze zu einem. Ebenso `"We Are The Orangutans Now"`
+  aus einer früheren Fassung: er sagt *„it will be to us, as we are to
+  orangutans"*.
+  **Regel: ein Zitat in Anführungszeichen wird vor dem Ablegen mit einer
+  Zeichenkettensuche gegen das Transkript geprüft, nie aus dem Gedächtnis. Eine
+  Behauptung ohne Anführungszeichen darf verkürzen; eine mit nicht.** Das gilt
+  für Titel, Thumbnail-Copy, Beschreibungen und Kapitelzeilen gleichermaßen —
+  überall, wo wir ihm Worte in den Mund legen, die er veröffentlichen soll.
+  → betrifft: alle
+
+- **Die Ruf-Form passt nicht zu jedem Gast, und das Ausrufezeichen ist keine
+  Messung.** Es steht nicht im Ton; es ist eine Behauptung über den Vortrag.
+  Aaronson sagt seine härtesten Sätze leise und mit Einschränkungen davor. Bei
+  Neel trägt die Form nachweislich (50 von 100) — **ob sie bei einem leisen Gast
+  trägt, steht in keiner Zahl.** Als Einschätzung gekennzeichnet, nicht als Regel.
+  → betrifft: head-of-content, thumbnails
+
+### Nachtrag 21.10., 10:45 — drei Korrekturen von ihm an meiner Titelarbeit
+
+- **Paraphrasieren in Anführungszeichen ist erlaubt. Seine Entscheidung,
+  wörtlich:** *„wir können gerne paraphrasieren, wenn es zu Zitaten kommt."*
+  **Damit ist die Regel aus `video/titel-regeln.md` („ein Zitat, das in der
+  Aufnahme nicht vorkommt, ist eine Erfindung") für seinen Kanal aufgehoben.**
+  Was bleibt: **jede Paraphrase muss auf einer belegten Stelle stehen**, und die
+  Stelle gehört neben den Entwurf. Erfunden ist nicht paraphrasiert.
+  **Die Regel dahinter, die mich das gekostet hat:** eine Messung an fremden
+  Kanälen wird erst durch seine Zustimmung eine Regel für ihn — ich hatte das
+  selbst notiert und dann doch eine fremde Regel über seinen Entwurf gestellt.
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **„Wörtlich" ist kein Qualitätskriterium für einen Titel.** Ich habe
+  `"I'm still thinking about that"` und `"It's that it does work"` empfohlen,
+  weil sie die Zitatprüfung bestanden. Seine Antwort: *„Die sind richtig schwach,
+  richtig schwach."* **Er hat recht** — aus dem Zusammenhang gerissen sagen beide
+  nichts. **Die Prüfung schließt Titel aus, sie wählt keine aus.** Erst
+  auswählen, was zieht, dann prüfen, worauf es steht.
+  → betrifft: alle
+
+- **„Deutlich provokativer schreiben."** Stehender Auftrag für Titel,
+  Thumbnail-Copy und Clip-Texte. Für mich heißt das konkret: der Titel verspricht
+  die härteste Aussage, die in der Folge wirklich vorkommt — nicht die
+  korrekteste. Die Einordnung („er relativiert das danach") gehört in die
+  Beschreibung und in mein Begleitblatt, **nicht in den Titel.**
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **Fachbegriffe erklären, bevor ich sie benutze.** Ich habe „Du-Ansprache"
+  dreimal in Berichten verwendet; seine Rückmeldung: *„ich weiß nicht ganz genau,
+  was du die ganze Zeit mit der Du-Ansprache meinst."* Es heißt nur: steht
+  `you`/`your` im Titel. **Er hat uns nicht onboardet — unsere Messgrößen sind
+  ihm nicht bekannt, nur weil sie unter uns eingeführt sind.** Einmal in einer
+  Zeile erklären, mit einem Beispiel aus seinem eigenen Material.
+  → betrifft: alle
+
+### Nachtrag 21.10., 11:00 — der Suchausschnitt ist nicht das Dokument
+
+- **Ich habe seine Prep-Dokumente nicht gelesen, sondern einen Suchausschnitt.**
+  Auf seine Frage, ob ich seine Podcast-Dokumente durchgegangen bin, war die
+  Antwort nein: ich hatte **ein** Dokument gesehen (Aaronson) und davon nur das
+  `contentSnippet` aus der Drive-Suche, das nach rund 2.000 Zeichen abbricht.
+  **Die Hälfte seiner Titelliste stand nicht darin.**
+  **Regel: `contentSnippet` ist ein Abschnitt, kein Dokument.** Wer darauf
+  aufbaut, muss es sagen — oder das Dokument lesen.
+  → betrifft: alle
+
+- **Ich habe ihm seine eigene Zeile als meine vorgelegt.**
+  `We're Building God & Nobody Is Ready` steht wörtlich in seinem Scott-Dokument,
+  zweimal (unter *Title* und unter *Thumbnail*). Ich habe sie als meinen
+  Titelvorschlag präsentiert. Ebenso `The End of Humanity`, das er heute als
+  Thumbnail „bestellt" hat — **es stand schon in seiner Datei.**
+  **Regel: wenn eine Zeile aus seinem Material kommt, steht das dabei.** Ein
+  Vorschlag, der ihm seine eigene Idee zurückgibt, kostet ihn eine Runde und
+  verschleiert, was wirklich von uns ist.
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **Sein Titelbau ist zweispaltig, und die Dokumente zeigen es.** Spalte A ist
+  die Rolle mit Doppelpunkt (`The #1 Quantum Expert:`, `OpenAI Insider:`,
+  `Hollywood Star turned Men's Therapist:`, `The $100M IronMan Founder:`).
+  Spalte B ist entweder ein **Themen-Dreier mit `&`** (`Andrew Tate, Manosphere &
+  God` · `Segregation, Whiteness & Male Violence` · `ChatGPT/Judaism, God & The
+  End of Humanity`) oder eine **Versalien-Behauptung** (`NOBODY Knows If AI Is
+  Actually Safe!` · `Everything You've Heard About Quantum Computers Is WRONG`).
+  **Der Dreier steht in drei von vier Dokumenten mit B-Spalte — er ist seine
+  Signatur**, und ihn nach dem Vorbild von Diary of a CEO zu streichen war
+  falsch. Sein Widerspruch von heute hat jetzt seinen Beleg.
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **Seine Thumbnail-Braindumps sind deutlich härter als seine Titel — das ist
+  die Antwort auf „provokativer schreiben", und sie ist von ihm.**
+  `Feminists are just ugly` · `Patriarchy is GREAT!` · `Women Are Just HOT` ·
+  `Racism Is Just DUMB` · `The Nazis Never Left` · `Nobody Talks About This` ·
+  `We Need A Matriarchy` · `Human Extinction?!`
+  Drei wiederkehrende Formen: **das „Nobody"-Motiv** (in vier von vier
+  Dokumenten, seine häufigste einzelne Bewegung), **`X Is Just Y`** als
+  Abwertung in drei Wörtern, und **der nackte Zustandssatz**
+  (`Segregation Still Exists`).
+  → betrifft: thumbnails, head-of-content, content-*
+
+- **Das Fragezeichen im Thumbnail ist entschieden, von ihm selbst.**
+  `Human Extinction?!` steht wörtlich in seinem Dokument. `video/thumbnails.md`
+  sagt „kein Fragezeichen" — **das ist an sechs veröffentlichten gemessen und
+  beschreibt, was durchgekommen ist, nicht was er will.** Ich hatte den
+  Widerspruch als offene Frage an ihn zurückgegeben; die Antwort lag in seiner
+  eigenen Datei.
+  **Regel: bevor ich ihm eine Entscheidung zurückgebe, in seinem Material
+  nachsehen, ob er sie längst getroffen hat.**
+  → betrifft: alle
+
+### Nachtrag 21.10., 12:30 — die Längenprüfung in `drive_fernzugriff.py` fehlt, auch auf dem Herkunftsbranch
+
+- **Die Übergabe des Shorts-Assistenten sagt, `drive_fernzugriff.py` prüfe
+  „Statuscode **und** Blocklänge und werfe `IOError`". Das tut es nicht.**
+  Nachgesehen auf `origin/claude/content-assistant` (Stand `ce55545`):
+  `_block()` fängt Ausnahmen und wiederholt viermal, **vergleicht aber nie
+  `len(daten)` mit der angeforderten Blockgröße.** Eine kurze, erfolgreiche
+  Antwort wird zwischengespeichert; `read()` bricht dann aus seiner Schleife
+  und liefert **weniger Bytes als verlangt** — und für jeden Demuxer ist ein
+  kurzer `read()` ein Dateiende. Der Lauf meldet Erfolg mit einem Bruchteil
+  des Tons.
+  **Zweimal an einem Tag passiert:** 23:32 und 3:50 Ton statt ~107 min aus
+  derselben 17-GB-Datei.
+  **Behoben auf meinem Branch:** `video/werkzeug/drive_lesen.py` vergleicht die
+  Blocklänge, wiederholt mit Wartezeit und wirft `IOError` mit dem Anfang der
+  Antwort im Text; `read()` kürzt nie still, sondern bricht laut ab. Geprüft:
+  drei Blöcke à 8 MiB sauber durch.
+  **Der Shorts-Assistent möge sie übernehmen** — ich schreibe nicht auf seinen
+  Branch.
+  → betrifft: content-assistant, content-*, alle, die Drive direkt lesen
+
+- **Und die Lehre, die über diesen Fehler hinausgeht: eine Zusage in einer
+  Übergabe ist ein Befund, keine Messung.** Ich hatte die Prüfung für
+  vorhanden gehalten, weil die Übergabe es sagte, und meine eigene Schwelle
+  darum lasch gesetzt (30 min). Beides hat denselben Grund wie die „0 von 38"
+  heute Morgen: **ich habe eine Zahl weitergegeben, die ich nicht nachgezählt
+  habe.** Wer eine fremde Prüfung voraussetzt, liest sie vorher.
+  → betrifft: alle
+
+- **Ein Falschalarm aus meiner eigenen Diagnose, zur Warnung:** ich habe auf
+  „HTML statt Bytes" geprüft mit `'<' in text[:80]`. In binären MOV-Daten
+  steht praktisch immer ein `<`. Die Meldung „HTML statt Bytes" war falsch;
+  es kamen echte Bytes (`ftypqt … mdat`, HTTP 206). **Eine Fehlerseite erkennt
+  man an der Länge, nicht an einem Zeichen im Rohdatenstrom.**
+  → betrifft: alle
+
+### Nachtrag 21.10., 13:20 — meine eigene Prüfung hat einen vollständigen Abruf verworfen
+
+- **Erwartete Tondauer nicht aus der Dateigröße eines *anderen* Masters
+  hochrechnen.** Ich hatte Stufe 3 so gebaut: erwartete Sekunden = Quellgröße
+  ÷ (Aaronsons 16,1 GB / 6084 s). Bei Kingsbury kam **77:12 statt der so
+  erwarteten ~107 min**, und der Lauf brach ab mit „still gekürzt".
+  **Der Abruf war aber vollständig: 16,98 von 16,97 GB, 100 %.** Kingsbury ist
+  ein MOV mit deutlich höherer Datenrate als Aaronsons MP4 — dieselbe
+  Dateigröße, kürzere Laufzeit. Die Folge ist einfach 77 Minuten lang.
+  **Fast 46 Minuten Abruf wären umsonst wiederholt worden.**
+  **Die Regel: Vollständigkeit hängt an den gelesenen Bytes, nicht an der
+  Dauer.** Die Bytes prüft `video/werkzeug/drive_lesen.py` blockweise und wirft
+  `IOError`; kommt der Abruf ohne Fehler durch, ist die Datei ganz. In der
+  Dauerprüfung bleibt nur ein Boden gegen offensichtlichen Unsinn (< 20 min).
+  **Eine Prüfgröße, die aus einem anderen Fall hochgerechnet ist, prüft den
+  anderen Fall.**
+  → betrifft: alle
+
+- **Gemessene Laufzeiten, damit sie niemand mehr hochrechnet:**
+
+  | Folge | Quelle | Laufzeit Rohton |
+  |---|---|---|
+  | Scott Aaronson | 16,1 GB MP4 | 102:14 |
+  | Kyle Kingsbury | **17,0 GB MOV** | **77:12** |
+
+  Das sind 2,65 MB je Sekunde gegen **3,67 MB je Sekunde** — ein Unterschied
+  von 38 %. **Pro Studio und Kameraformat neu messen.**
+  → betrifft: content-*, head-of-content
+
+- **Nachtrag zum Nachtrag, 13:20: dieselbe falsche Hochrechnung stand zweimal
+  im Skript, und ich habe nur eine Stelle behoben.** Stufe 3 war korrigiert,
+  Stufe 2 nicht — dort entschied `a > 0.9 * GROESSE / 107` (= 143 MB), ob ein
+  vorhandenes FLAC brauchbar ist. Das fertige Kingsbury-FLAC hat **68 MB**,
+  wurde darum gelöscht, und der 46-Minuten-Abruf lief ein viertes Mal.
+  **Die Regel: eine Annahme, die man als falsch erkannt hat, wird im ganzen
+  Skript gesucht, nicht an der Stelle behoben, wo sie aufgefallen ist.**
+  `grep` nach der Zahl, bevor man neu startet — bei mir hätte ein `grep 107`
+  die zweite Stelle in einer Sekunde gezeigt.
+  → betrifft: alle
+
+### Nachtrag 21.10., 13:43 — das Drive-Tageslimit, verursacht von mir
+
+- **`Google Drive - Quota exceeded`, HTTP 200 mit 2040 Byte HTML, Block 1016.**
+  Genau der Fall, den Alfred am Morgen in den Kanal geschrieben hat, und
+  **meine neue Längenprüfung hat ihn sauber gefangen** statt ihn als Dateiende
+  zu lesen. Die Meldung nennt Blocknummer, Ist- und Soll-Länge und den Anfang
+  der Fehlerseite — damit war die Diagnose eine Sekunde Arbeit.
+
+- **Verursacht habe ich es selbst.** Vier Tonabrufe derselben 17-GB-Datei an
+  einem Tag plus rund 2,2 GB für die dreizehn Aaronson-Sonden: **etwa 31 GB aus
+  ynb@yannick-noah.com.** Der vierte Abruf war nur nötig, weil dieselbe falsche
+  Bitratenhochrechnung zweimal im Skript stand und ein fertiges FLAC verworfen
+  hat.
+  **Die Zahl, die dem Team fehlte: rund 31 GB an einem Tag reichen, um das
+  Tageslimit eines Kontos zu erschöpfen.** Das Limit gilt pro Eigentümer und
+  setzt sich über Nacht zurück.
+
+- **Die Lehre, die über das Limit hinausgeht: ein Abruf von 46 Minuten ist ein
+  Verbrauchsgut, kein Befehl.** Wer ihn wiederholt, weil eine Prüfung ihn
+  verwirft, zahlt doppelt — einmal die Zeit, einmal das Kontingent, das einem
+  anderen Lauf fehlt. **Vor einem Neustart eines teuren Abrufs die Prüfung
+  prüfen, nicht den Abruf.**
+  → betrifft: alle Content-Agenten, head-of-content

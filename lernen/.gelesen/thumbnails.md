@@ -5,6 +5,208 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
 
 ---
 
+## 21.10.2026 — Sutcliffe „What makes life meaningful?"
+
+### Eine Thumbnail-Zeile hat rund zehn Zeichen, nicht mehr
+
+- **Zwischen zwei Köpfen bleiben rund 650 px.** Gemessen an diesem Bau:
+  Yannicks Gesichtsrahmen endet bei x = 325, Sutcliffes beginnt bei x = 982.
+  Was dazwischen passt, bestimmt den Schriftgrad, nicht der Geschmack.
+- **Daraus folgt eine harte Grenze für die Zeile.** Dieselben Köpfe, drei
+  Zeilen: `What Else Is There?` → Grad 139 · `It's Just Connection` → 117 ·
+  `What Makes Life Meaningful?` → **109, und bei Thumbnail-Größe liest es
+  sich nicht mehr.** Die längste Zeile entscheidet, nicht die Gesamtlänge.
+- **Für den YouTube-Manager:** eine Thumbnail-Zeile hält **höchstens zehn
+  Zeichen**. Eine Frage, die als Titel trägt, trägt als Thumbnail-Zeile oft
+  nicht — das sind zwei verschiedene Texte.
+  → betrifft: youtube-manager, head-of-content, thumbnails
+
+### Das Material für den Gastgeber liegt selten im Stück selbst
+
+- **In diesem 60-Sekunden-Stück ist Yannick 2,5 Sekunden im Bild** — mit
+  Hand und Stift am Gesicht und halb geschlossenen Augen. Der Schnitt liegt
+  fast ganz auf dem Gast, und das ist bei einer Antwort auch richtig.
+- **Zwei weitere Fenster derselben Datei gemessen:** 7160–7222 — wieder nur
+  Sutcliffe. Erst ein Fenster aus der Mitte der Folge (3600–3800) lieferte
+  Yannick ohne Hand, Augen offen, Pupillenabstand 147, Augenweite 0,0297.
+- **Also: das Fenster des Stücks reicht für den Gast, nicht für den
+  Gastgeber.** Für den Gastgeber gleich ein langes Fenster irgendwo aus der
+  Folge mitnehmen — ein Sprung kostet mehr als die Sekunden, die er bringt.
+  → betrifft: thumbnails, cinematic
+
+### Zwei Dinge lagen nur im Container, nicht im Repo
+
+- **Das Freistellen gab es nur als Einzeiler in der Sitzung.** Liegt jetzt
+  als `video/thumbnails/freisteller.py` im Repo, mitsamt dem Prüfblatt gegen
+  Grün und dem Kopf in 1:1 — die beiden Prüfungen, an denen der
+  abgeschnittene Haaransatz aufgefallen wäre.
+- **`augen.py` zeigte auf `…/scratchpad/modelle/yunet.onnx`.** Beim nächsten
+  Container wäre das Skript still ausgefallen. Zeigt jetzt auf das Modell im
+  Repo. **Wer ein Modell oder eine Schrift lädt, legt den Pfad ins Repo** —
+  Regel 5 aus `plan/ABLAUF.md` gilt auch für Pfade, nicht nur für Dateien.
+  → betrifft: alle
+
+## 21.10.2026 — abends, fünfte Runde
+
+- **Varianten derselben Folge müssen bis aufs Pixel gleich gesetzt sein.**
+  Sein Grund, wörtlich: *„weil das wichtig ist für A/B-Tests, dass Elemente
+  wirklich gleich sind."* Wenn mehrere Fassungen gegeneinander laufen, darf
+  sich nur ändern, was getestet wird. Gilt für jedes Medium, in dem wir
+  Varianten vorlegen — Titel, Beschreibungen, Hooks.
+  → betrifft: alle
+
+- **Zwei Köpfe bündigt man am Kinn, nicht am Scheitel.** Scheitel-zu-Kinn ist
+  bei zwei Menschen verschieden: mit beiden Scheiteln auf y = 3 lag ein Kinn
+  bei **716**, das andere bei **641** — 75 px auseinander. Als Messpunkt
+  taugt die Unterkante des YuNet-Gesichtsrahmens; kein echtes Kinn, aber bei
+  beiden derselbe Punkt.
+  → betrifft: content-*, cinematic
+
+- **Platzierungswerte am fertigen Bild nachregeln, nicht am Einzelteil.** Der
+  Detektor misst den Freisteller anders als die Montage — nach dem ersten
+  Lauf blieben 20 px Versatz. Einmal messen, korrigieren, neu rendern: dann
+  2 px.
+  → betrifft: content-*, cinematic
+
+---
+
+## 21.10.2026 — abends, vierte Runde
+
+- **Seine Zielspanne für Kopfgrößen ist 145–167 Pupillenabstand, nicht
+  125–140.** Gemessen an seinen drei veröffentlichten Zwei-Kopf-Thumbnails:
+  167/145, 162/146, 163/166. Meine ersten Fassungen lagen bei 128–153 und
+  waren durchweg zu klein. Sein Grund, wörtlich: *„das Gesicht zeigt ja die
+  Mimik, das hat am meisten Pull … so wenig Platz vor allem oben unbenutzt
+  lassen, wie nur möglich."*
+  → betrifft: content-*, cinematic, alle, die Gesichter ins Bild setzen
+
+- **Oberkörper schneidet man nicht weg, man vergrössert den Kopf.** Dann
+  läuft der Rumpf unten von selbst aus dem Bild. Nur was in den Textblock
+  ragt (eine erhobene Hand) wird aus der Maske genommen.
+  → betrifft: thumbnails, cinematic
+
+- **Die Prüffrage, die er als Prinzip formuliert hat:** *welchen Wert
+  kommuniziert diese Fläche?* Hintergrund und Oberkörper tragen nichts, Mimik
+  trägt alles. Gilt für jedes Bild, nicht nur für Thumbnails.
+  → betrifft: alle
+
+---
+
+## 21.10.2026 — abends, dritte Runde
+
+- **Vier Einzelwörter untereinander sind eine belegte Form von ihm, keine
+  Notlösung.** `RG-K0fIA2-w` ist genau das: `God / Saved / My / Life`,
+  vier Zeilen, je ein Wort, Schriftgrad rund **143**. Wer vier Zeilen für zu
+  klein hält, hat die Breite zu eng gesetzt, nicht die Zeilenzahl zu hoch:
+  mit `max_breite` 760 kam ich auf Grad 116, mit **856** (sein breitester
+  gemessener Kasten ist 853) auf **131**. **Die Breite bindet, nicht die
+  Höhe.**
+  → betrifft: head-of-content, youtube-manager, alle, die Copy setzen
+
+- **Die Marke-statt-Technik-Falle gilt für Thumbnails genauso wie für Titel.**
+  Der Head of Content ist zweimal hineingelaufen (Shettys Versalien, Mansons
+  `…, Solved` — beides Markennamen, keine Kunstgriffe). Bei Bildern dasselbe:
+  das `DOAC`-Kästchen oben links auf allen drei Vorlagen, die Yannick
+  geschickt hat, ist **ein Logo, kein Gestaltungsmittel**. Ein Element, das
+  auf vielen Thumbnails eines Kanals wiederkehrt, ist zuerst verdächtig,
+  dessen Marke zu sein.
+  → betrifft: alle
+
+- **Namen tragen kein Thumbnail, Rollen schon.** Seine Regel, vom Head of
+  Content am 21.10. nachgetragen: Namen nur bei global Bekannten, sonst die
+  Rolle. Mein eigener Platzhalter `Kyle Kingsbury` als Copy wäre danach
+  falsch gewesen; `CAGE FIGHTER / TO MYSTIC` ist richtig.
+  → betrifft: head-of-content, youtube-manager, thumbnails
+
+- **Offene Frage, die ich noch nicht beantwortet habe:** ob ein Thumbnail
+  einen geschrienen Titel wiederholt oder dagegen arbeitet. **Seine eigene
+  Form spricht für dagegen** — `Patriarchy over Feminism` zum Titel *„The
+  Hollywood Star Who Quit Everything To Heal Men"*: Titel nennt die Person,
+  Thumbnail nennt den Konflikt. Jack Neels Thumbnails habe ich **nicht**
+  angesehen; das steht aus.
+  → betrifft: head-of-content
+
+---
+
+## 21.10.2026 — abends, zweite Runde
+
+- **Kopfdrehung messen, bevor man spiegelt.** Ich spiegelte ihn und drehte
+  ihn damit erst vom Gast weg. Über 367 Bilder gemessen ist seine Gier (Nase
+  gegen Augenmitte, auf Pupillenabstand normiert) **immer positiv**: min
+  +0,03, Median **+0,44**, max +0,77. Er sitzt durchgehend zum Gast gedreht.
+  **Erst messen, dann spiegeln — und meist gar nicht.**
+  → betrifft: content-*, cinematic
+
+- **Nach Drehung auswählen, nicht nur nach Größe — es gibt einen
+  Zielkonflikt.** Je stärker jemand zum Gegenüber gedreht ist, desto kleiner
+  wird sein Gesicht im Bild. In derselben Aufnahme: Gier ≥ 0,50 **und**
+  Pupillenabstand ≥ 72 → **kein einziges Bild**. Gier ≥ 0,45 und ≥ 68 → 52.
+  → betrifft: content-*, cinematic
+
+- **Freisteller zusätzlich am Kopf in Originalgröße prüfen.** Die Prüfung vor
+  Grün bei 420 px Vorschau zeigte nicht, dass rembg ein Stück Bücherregal
+  neben der Schläfe stehen gelassen hatte. Im Thumbnail war es ein
+  auffälliger Farbfleck.
+  → betrifft: alle, die freistellen
+
+- **Belichtung zwischen zwei Köpfen angleichen und nachmessen.** Zwei Kameras
+  belichten verschieden: ein Gesicht lag bei mittlerer Helligkeit 167 mit
+  **41 % Pixeln über 230** (ausgefressen), das andere bei 141 mit 28 %.
+  Messbar und korrigierbar je Kopf. Danach 138 gegen 130.
+  → betrifft: content-*, cinematic
+
+---
+
+## 21.10.2026 — abends
+
+### Korrektur an den Copy-Regeln des Head of Content
+
+Abschnitt G in `video/titel-regeln.md` baut auf meinem **alten** Bauplan auf.
+Vier Werte darin sind überholt — wer danach setzt, setzt falsch:
+
+| in Abschnitt G | richtig |
+|---|---|
+| Kastenfarbe `#DF2C00` | **`#DF2D00`** — aus seinem Canva-File, nicht aus JPEGs geschätzt |
+| „kein Fragezeichen" | **Fragezeichen sind erlaubt.** Sein Canva-File hat mehrere („Coincidence?", „Did I REALLY Make It Up?"); am 20.10. hat er selbst eines bestellt |
+| „zwei bis drei Zeilen" | **zwei bis vier** |
+| „Größen wechseln innerhalb der Zeile" | **Ein Textblock hat einen Schriftgrad und einen Zeilenabstand** (`lineHeight` meist 1,11). Wo verschiedene Größen stehen, sind es zwei getrennte Blöcke. Er hat ungleichen Zeilenabstand am 20.10. ausdrücklich gerügt |
+
+**Was in Abschnitt G stimmt und mir geholfen hat:** dass die Thumbnail-Copy
+den Titel nicht wiederholt, und dass das Konfliktpaar seine Form ist. Beides
+an `Patriarchy over Feminism` gegen den Titel belegt.
+→ betrifft: head-of-content, alle, die Copy setzen
+
+
+- **Freisteller gehören vor eine Signalfarbe geprüft, nicht vor Dunkelgrau.**
+  Ich lieferte einen Kopf aus, bei dem rembg **Stirn und Haare komplett
+  weggeschnitten** hatte — harte Kante direkt über der Brille. Vor dunklem
+  Grau geprüft war das Loch unsichtbar, weil dunkles Haar vor dunklem Grund
+  verschwindet. **Prüffarbe: Grün (0,200,0).**
+  → betrifft: alle, die freistellen
+
+- **Nie aus einem fertigen Thumbnail freistellen.** Dort steht die Person
+  schon vor Schwarz; rembg kann dunkles Haar davon nicht trennen, und der
+  Bildrand liefert zusätzlich eine gerade Schnittkante. Immer aus dem
+  Rohmaterial, wo die Person vor einem belichteten Raum sitzt.
+  → betrifft: alle, die freistellen
+
+- **Kameras zeigen oft beide dieselbe Blickrichtung.** In der
+  Kingsbury-Aufnahme schauen beide auf ihrer Kamera nach Bild-links;
+  nebeneinandergesetzt schauen sie dann aneinander vorbei. Einen spiegeln,
+  und zwar den mit den wenigsten seitenabhängigen Merkmalen. **Die Messung
+  danach auf dem gespiegelten Bild laufen lassen**, sonst sitzt die
+  Augenposition seitenverkehrt.
+  → betrifft: content-*, cinematic
+
+- **Schärfe schwankt über eine Folge stärker als die Kopfgröße.** Bei Yannick
+  in der Kingsbury-Aufnahme lag der Pupillenabstand über 368 Bilder konstant
+  bei 84–88 px, aber die Bilder um Minute 13 sind **sichtbar unscharf** und
+  die um Minute 70 scharf. Messbar über die Varianz des Laplace-Operators im
+  Gesichtsbereich (368 gegen 411). **Nicht nur nach Größe sortieren.**
+  → betrifft: alle Content-Agenten
+
+---
+
 ## 21.10.2026 — Nachtrag aus 15 Commits
 
 ### Die Schrift der Marke — gefunden und belegt
@@ -87,6 +289,14 @@ Diese drei gelten weit über Thumbnails hinaus:
   Mimik: lieber ein ruhigeres Gesicht mit richtiger Blickrichtung als ein
   ausdrucksstarkes, das ins Leere schaut.
   → betrifft: content-*, cinematic
+
+- **Position ist nicht Größe.** Er bat darum, einen Kopf *hochzuschieben*;
+  ich habe ihn stattdessen vergrößert. Seine Antwort: *„Scotts Kopf ist fast
+  doppelt so groß wie meiner. Das müssen wir ändern. Ich wollte, dass du
+  seinen Kopf hochschiebst."* Daraus kam der Anker `scheitel_y` neben
+  `augen_y`. **Wer eine Lage ändern soll, ändert die Lage** — eine Größe zu
+  ändern sieht auf den ersten Blick ähnlich aus und ist eine andere Antwort.
+  → betrifft: alle
 
 - **Umfang.** Er bestellte die Copy „Human Extinction"; ich lieferte
   zusätzlich eine zweite Copy, die er nicht wollte: *„Ich hab dir gesagt, ich

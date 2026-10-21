@@ -1,3 +1,115 @@
+## 21.10.2026 — Gemeinsames Werkzeug gehört einem Branch
+
+**`shorts-render.py` lag in drei Fassungen vor, keine davon vollständig:**
+der Content-Assistant hatte Isabelles Preset, aber nicht die Kopfzeile;
+der Chief of Staff hatte die Kopfzeile, aber nicht das Preset; der
+cinematische Zweig keines von beidem. Zusammengeführt auf
+`claude/content-assistant` — dort gehört es hin, und wer eine Erweiterung
+baut, bringt sie zurück, **bevor** er weiterarbeitet.
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Beim Zusammenführen fiel etwas auf, das am Code nicht zu sehen ist:
+Kopfzeile und Untertitel überlappen.** Das Feld sitzt mittig auf 68 % der
+Höhe (1221–1390 px), die Zeile ohne gemessene Lippe auf 70 %
+(1303–1385 px). In den ersten 4,5 Sekunden stehen sie übereinander — im
+Testbild deutlich zu sehen, in beiden Quellfassungen unbemerkt, weil dort
+nie beides zugleich lief.
+**Der Renderer rechnet das jetzt aus und sagt es**, statt es zu riskieren:
+er vergleicht das Feldband mit dem Band der Einblendungen, die während
+der Kopfzeile laufen, und warnt mit beiden Zahlen. Verschoben wird von
+Hand (`--kopfzeile-hoehe`) — wo die Kopfzeile sitzt, ist sein Geschmack,
+nicht meine Messung.
+→ betrifft: content-*, YNB Cinema
+
+**Und die allgemeine Form davon:** zwei Einblendungen, die einzeln
+richtig sitzen, können zusammen falsch sitzen. Wer ein zweites Element
+ins Bild hängt, rechnet die Bänder gegeneinander — ein Blick auf ein
+Standbild, in dem zufällig gerade keine Zeile steht, beweist nichts.
+→ betrifft: alle Content-Agenten
+
+## 21.10.2026 — Kein Short darf verraten, wo er wohnt
+
+**Aus seinem eigenen Arbeits-Slack**, an seine Cutterin, 02.09.2026:
+*„Vielleicht doch den Scarborough-Teil rausnehmen in diesem Short?
+Gewisse Menschen müssen nicht so easy wissen wo wir wohnen."* Die Regel
+stand in keinem unserer Werkzeuge und in keiner Prüfliste.
+
+**Gilt für Bild, Ton und Untertitel:** Straßennamen, Viertel, erkennbare
+Fassaden, Aussicht, Schilder, Ortsnamen im Gespräch.
+
+**Der lesbare Teil ist jetzt geprüft, nicht nur versprochen.**
+`video/ortscheck.py` sucht Untertitel und Transkripte nach Ortsnamen aus
+seinem Umfeld ab, dazu nach zwei Formen, die eine Adresse verraten, ohne
+einen bekannten Namen zu nennen (Hausnummer + Straßenname, „we live
+in …"). Rückgabe 1 bei Fund, damit es in einem Lauf auffällt.
+**Sechzehn Dateien durchlaufen — alle sauber:** die sechs
+Meaningful-Shorts, das Sutcliffe-Stück, beide Rick-Fassungen und das
+Aaronson-Transkript.
+
+**Was das Skript nicht kann: das Bild.** Fassaden, Aussicht, Schilder
+bleiben Augenarbeit vor jeder Abnahme. Ein grüner Lauf ist kein
+Freibrief, sondern deckt genau die Hälfte ab, die sich lesen lässt.
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Und eine Zahl, die dagegen spricht und trotzdem hierhin gehört:** die
+Ortsliste ist handgeschrieben. Sie findet, was sie kennt. Ein Ortsname,
+den niemand eingetragen hat, läuft durch — der grüne Lauf oben beweist
+also nicht, dass nichts drin ist, sondern nur, dass nichts Bekanntes
+drin ist. Wer einen neuen Ort hört, trägt ihn nach.
+→ betrifft: content-*
+
+## 21.10.2026 — Sein Shorts-Preset ist der Maßstab, nicht unsere Messung
+
+**Er hat den Ordner übergeben, mit dem seine Shorts bisher gebaut wurden**
+(Schrift, Farbe, Maße, CapCut-Filter als LUT): *„ist jetzt der Filter und
+die Schrift, die wir bisher für meine Shorts verwendet haben, kannst du das
+jetzt ab sofort bitte auch einbauen und natürlich auch an YNB Cinema
+Agenten und dann EA weitergeben."* Eingebaut in `video/shorts-render.py`,
+dokumentiert in `video/preset-ynb.md`.
+
+**Sechs Werte waren bei uns anders — und wir lagen sechsmal daneben:**
+
+| | unsere Messung | sein Preset |
+|---|---|---|
+| Gelb | `#FFD530` | **`#F9F13A`** |
+| Schriftgröße | 78 | **82** |
+| Schrift | DejaVu Sans Bold | **Inter Black** (Ersatz für Eveleth aus CapCut) |
+| Zeilenbreite | 1000 px | **777 px = 72 % der Breite** |
+| Logo | 520 px, Höhe 0,845 | **302 px = 28 %, Höhe 0,87** |
+| Gradation | warm, gesättigt | **entsättigt, kühl — Oppenheimer-Filter** |
+
+Alle sechs waren an seinen veröffentlichten Shorts *abgelesen*, also an
+komprimierten Vorschaubildern. Bei der Gradation drehte das Ergebnis sogar
+die Richtung um: wir haben warm und gesättigt gemessen, sein Filter ist
+entsättigt und kühl.
+**Regel: an einem Ausgabebild abgelesene Stilwerte sind ein Notbehelf,
+solange die Quelldatei des Stils nicht da ist. Bevor man misst, fragt man
+nach der Vorlage.**
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Wer libass benutzt, darf die Zeilenbreite nicht mit PIL messen.** libass
+legt die Schriftgröße nicht aufs Geviert, sondern auf Ober- plus
+Unterlänge der Schrift — bei Inter Black 1,21 Geviert. Gemessen am
+gerenderten Bild: `WHAT MAKES LIFE` ist bei 82 px **643 px** breit, PIL
+sagt 776, Verhältnis 0,829; aus den Schriftmetriken errechnet 0,826.
+Wer das übergeht, misst 21 % zu breit und teilt Dreizeiler, die längst
+passen. Faktor: `groesse / sum(font.getmetrics())`.
+→ betrifft: content-*, YNB Cinema, EA
+
+**Die Zeilenhöhe hängt am Raum, nicht am Format.** Sein Preset setzt die
+Untertitel fest auf 70 % der Bildhöhe. Für Rick Strassman (Webcam) war 50 %
+richtig, im Just-Push-Record-Studio 57 %. Die 70 % sind deshalb hier der
+Wert, wenn keine Lippe gemessen ist — die gemessene Lippe schlägt ihn.
+→ betrifft: content-*, YNB Cinema
+
+**Offen: die LUT selbst fehlt.** Übergeben wurden `make_lut.py` und die
+Anleitung, nicht `luts/ynb_look.png` und nicht der CapCut-Export. Bis die
+da ist, läuft eine Annäherung, und der Renderer schreibt das in die
+Ausgabe, statt es zu verschweigen. `luts/hald_identity_1080.png` liegt
+bereit und ist geprüft: durch `make_lut.py` zurückgerechnet kommt die
+Identität pixelgenau wieder heraus.
+→ betrifft: content-*, YNB Cinema, EA
+
 
 ## 21.10.2026 — Der Planer plant am Kameraschnitt nicht neu (Aaronson 01)
 

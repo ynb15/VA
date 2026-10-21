@@ -5,9 +5,94 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
 
 ---
 
+## 2026-10-21, Nachtrag — der fünfte Vorbildkanal, und was er an meinem Befund korrigiert
+
+- **Jack Neel ist verifiziert und gemessen.** `@jackneel`, Kanal-ID
+  `UCFRCiFkWWJN2rO6dsKU9-1A`, **3,52 Mio Abos**, 100 Titel, am 21.10. eigenhändig geprüft.
+  Nicht „Jack Neal". Grundgesamtheit damit **538 Titel, fünf Kanäle.**
+  → betrifft: youtube-manager, thumbnails, guest-booking
+
+- **KORREKTUR an meinem eigenen Befund von heute Vormittag.** Ich hatte geschrieben: „drei
+  von vier Vorbildern sprechen den Zuschauer an, er nicht." Mit Neel sind es **drei von
+  fünf** — und Neel sitzt mit **18 % Du-Ansprache und 27 % Ich/Wir** direkt neben Yannick
+  (13 % / 36 %), mit 3,52 Mio Abos. **Wer jetzt noch „mehr Du-Ansprache" als die Antwort
+  weitergibt, gibt einen von zwei belegten Wegen als den einzigen aus.**
+  Was nach fünf Kanälen trägt: **jeder löst die Aufmerksamkeitsfrage im ersten Drittel des
+  Titels, auf Weg A (Du-Versprechen: Shetty 55 %, Manson 49 %, DOAC 41 %) oder Weg B
+  (Behauptung, die jemand aufstellt — Williamson über den Namen, 52 %; Neel über Rolle plus
+  Zitat). **Yannick geht keinen von beiden:** 13 % Du, Name in 13 %, er selbst in 36 %.
+  Das ist die Position, die keiner der fünf besetzt — und *dieser* Befund hält.
+  → betrifft: youtube-manager, thumbnails, content-*
+
+- **Neels Signatur ist der wörtlich zitierte Ruf, und der Befund ist absolut.**
+  **58 von 100** seiner Titel enthalten ein Zitat, **50 davon mit Ausrufe- oder
+  Fragezeichen innerhalb des Zitats.** Williamson zitiert fast genauso viel (29) — aber
+  **null** davon als Ruf. DOAC 2, Manson 0, Shetty 0, Yannick 0 von 38.
+  `Divorce Lawyer: "90% Of People Cheat!" Here's What Actually Ends Marriages in 2026`
+  **Der Unterschied ist das Ausrufezeichen im Zitat: Neel 50, alle vier anderen zusammen 2.**
+  Für Yannick ist das der billigste Weg B — die Rolle hat er (13 von 38 Titeln), der Ruf
+  steht in jeder Aufnahme. **Harte Grenze: ein Zitat im Titel, das im Ton nicht vorkommt,
+  ist eine Erfindung, keine Titelform.**
+  → betrifft: youtube-manager, thumbnails, content-*
+
+- **Der zweite Titel-Slot: Gastname oder eigene Marke, nie eine Produktionsangabe.**
+  Nachgemessen an allen fünf: DOAC 23 und Williamson 47 von 100 setzen den **Gast** hinten
+  hinein, Neel 21 und Shetty (Name in 53) die **eigene Marke**. **Drei von fünf stempeln
+  sich selbst, zwei den Gast.** Was belegt ist: der Slot ist nicht leer und nicht technisch.
+  Ein Auflösungs-Tag kommt in **500** Vorbildtiteln **einmal** vor; bei Yannick achtmal in 38.
+  → betrifft: youtube-manager, thumbnails
+
+- **Längengrenze: Neel schreibt an den Anschlag, das würde ich nicht nachmachen.**
+  Median 85,5 Zeichen, **27 Titel ab 95, 7 bei genau 100** (DOAC 11 bzw. 2, Shetty 5 bzw. 1).
+  YouTube kappt in der Suche und auf dem Handy früher. Yannicks Median: 54.
+  → betrifft: youtube-manager
+
+- **ZWEI KORREKTUREN VON IHM an meinen Titelbefunden, beide nachgeprüft, beide am 21.10.
+  Wer meine Regelliste vor 10:30 gelesen hat, hat zwei falsche Sätze darin gelesen.**
+
+  **(a) „Gastname hinten in 0 von 38 seiner Titel" ist falsch — es sind drei**
+  (*Dr. Curtis Crane*, *Nathan Maingard*, *Rob Paddock*, dazu *(Eben Britton)* in der
+  Klammer). Gemessen hatte ich die Verknüpfung *Rolle vor dem Doppelpunkt **und** Name am
+  Ende* — die ist tatsächlich 0 (DOAC 14) — und daraus „Name hinten = 0" gemacht. **Das ist
+  etwas anderes.** Dazu ein Werkzeugfehler: mein Muster verlangte den Namen am Zeilenende,
+  und bei Maingard und Paddock steht dahinter `(8K)`. **Der Suffix, den ich auf derselben
+  Seite kritisiere, hat meine eigene Messung blind gemacht**, während dasselbe Muster vier
+  Fehltreffer durchließ. **Ein Regex ist eine Behauptung — stichprobenweise gegen die
+  Rohdaten lesen, nicht nur zählen.**
+
+  **(b) Meine Empfehlung „zweiter Slot kostet nichts, Gastname rein" ist zurückgezogen.**
+  Seine Namensregel, seit Jahren: **Namen nur bei global Bekannten (Nolan, Trump), sonst
+  die Rolle, weil die Rolle zieht.** Ein Gastname, den niemand sucht, macht den Titel nur
+  länger. Nachgemessen stützt das Feld die Empfehlung ohnehin nicht: DOAC 23 und Williamson
+  47 von 100 setzen den Gast hinten hinein, **Neel 21 und Shetty (Name in 53) die eigene
+  Marke — drei von fünf stempeln sich selbst.** Was bleibt: **`(4K)` raus** (ein
+  Auflösungs-Tag in 500 Vorbildtiteln einmal, bei ihm achtmal in 38), und leer ist eine
+  Antwort (Williamson: `The ElevenLabs Situation Is Crazy`).
+  → betrifft: youtube-manager, thumbnails, content-*
+
+- **Mansons `…, Solved` ist sein Sendungsname, kein Serienkunstgriff** — die Sendung heißt
+  **„SOLVED with Mark Manson"** (Apple Podcasts, `solvedpodcast.com`). Von ihm korrigiert,
+  nachgeprüft. **Das ist dieselbe Falle, die ich einen Abschnitt vorher selbst aufgeschrieben
+  hatte** (Shettys Versalien sind sein Markenname) — und ich bin ein zweites Mal
+  hineingelaufen. Sortiert: Shetty (`watch` 52, Name 53), Neel (Name 26), Manson
+  (`Solved` 21) — **drei von fünf stempeln ihren Sendungsnamen in den Titel.**
+  **Die Falle in einem Satz: ein Wort, das in vielen Titeln eines Kanals steht, ist zuerst
+  verdächtig, seine Marke zu sein — nicht seine Technik.**
+  → betrifft: alle
+
+- **Und die Lehre, für die der Kanal da ist — am eigenen Fall.** Ich habe heute Vormittag
+  nach dem fünften Kanal gesucht, nichts gefunden und „nicht verifizierbar, ich rate nicht"
+  notiert. **Die Antwort lag seit Stunden in Alfreds Handbuch**, weil Yannick den Link
+  selbst geschickt hatte. Nicht zu raten war richtig — **nicht zu fragen war der Fehler.**
+  Gleichzeitig lagen meine 538 Titel hier, während drei andere Agenten ohne sie arbeiteten.
+  **Erst `LERNEN.md` lesen, dann suchen.**
+  → betrifft: alle
+
+---
+
 ## 2026-10-21
 
-### Titel — gemessen an 438 Titeln, nicht geschätzt
+### Titel — gemessen an 538 Titeln (fünf Kanäle), nicht geschätzt
 
 - **Die Vorbildkanäle sprechen den Zuschauer an, seine Titel sprechen von ihm.**
   Du-Ansprache (`you/your/yourself`) in den letzten 100 Titeln je Kanal: Jay Shetty
@@ -30,7 +115,7 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   → betrifft: youtube-manager, thumbnails
 
 - **Die Klammer im Titel: bei den Vorbildern ein zweiter Haken, bei ihm die Auflösung.**
-  `(4K)`/`(8K)` in **8 von 38** seiner Titel (21 %). In 400 Vorbildtiteln kommt ein
+  `(4K)`/`(8K)` in **8 von 38** seiner Titel (21 %). In 500 Vorbildtiteln kommt ein
   technischer Tag **einmal** vor (Williamson, und dort hinter dem Gastnamen). Alle 38
   inhaltlichen Klammern der Vorbilder drehen das Thema weiter: *(and how to reverse it)*,
   *(Here Is The Truth)*, *(Do THIS Instead)*, *(ft. Annie Duke)*. **Keine einzige ist
@@ -48,8 +133,8 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
 
 - **Manson und Shetty verkaufen eine Reihe, nicht eine Folge.** Mansons `…, Solved` in
   **21 von 100** Titeln (*Failure, Solved* · *Finding Your Life Path, Solved*), Shettys
-  `watch` in 52. Ein wiederkehrendes Titelwort ist bei zwei von vier Vorbildern das
-  Erkennungsmerkmal.
+  `watch` in 52. Ein wiederkehrendes Titelwort ist bei drei von fünf Vorbildern das
+  Erkennungsmerkmal (Neel: sein Name in 26 von 100, davon 21 als Abbinder).
   → betrifft: youtube-manager, content-*
 
 ### Sein geschriebenes Register — bindend für jeden Entwurf, nicht nur für Substack
@@ -63,7 +148,7 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   oben sind eine Entscheidung, keine Lücke.
   → betrifft: alle
 
-- **Die Zitatkästen sind seine Bauweise, und keiner der vier Vorbildkanäle hat sie.**
+- **Die Zitatkästen sind seine Bauweise, und keiner der fünf Vorbildkanäle hat sie.**
   Jeder geschriebene Essay trägt zentrierte Zitatkästen als Pfeiler, Autor mit
   Gedankenstrich: Francis Bacon, Alan Watts, Mark Manson, Marcus Aurelius, Oscar Wilde,
   Sartre, Mandela, Chris Williamson. *Motorcycle Accident* schließt mit **zwei**

@@ -45,6 +45,57 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 7 — 21.10.2026, 16:10 Kapstadt · der tägliche Sweep
+
+- **Marian Goodells Folge hat nur die halbe Tonaufnahme.** Aus seinem Postfach,
+  19.10. an Burning Man: *„The mic recording from the shoot only captured the
+  first hour of our 2h conversation."* Es gibt eine Sicherung (*„I'm really
+  glad you have the backup audio"*), ihre Qualität ist unbekannt.
+  **Veröffentlichung steht auf dem 04.12., T−10 ist der 24.11.** Wer das
+  Transkript baut, muss das **vorher** wissen. Ob die Sicherungsspur im
+  Drive-Ordner liegt, ist **nicht geprüft** — das ist die erste Frage.
+  → betrifft: content-*, youtube-manager
+- **Zwei Einblendungen, die einzeln richtig sitzen, können zusammen falsch
+  sitzen.** Beim Zusammenführen des Renderers gefunden: die Kopfzeile sitzt auf
+  68 % der Höhe (1221–1390 px), die Untertitelzeile ohne gemessene Lippe auf
+  70 % (1303–1385 px) — in den ersten 4,5 Sekunden stehen sie **übereinander**.
+  In beiden Quellfassungen unbemerkt, **weil dort nie beides zugleich lief.**
+  Der Renderer rechnet die Bänder jetzt gegeneinander und warnt mit beiden
+  Zahlen. **Ein Blick auf ein Standbild, in dem zufällig keine Zeile steht,
+  beweist nichts.**
+  → betrifft: alle Content-Agenten
+- **Der Fehlertext eines Werkzeugs nennt nicht immer den Host, der abgelehnt
+  hat.** `yt-dlp` meldete „Unable to download webpage … giving up after 3
+  retries"; im Proxy-Protokoll standen **20 Ablehnungen auf `www.google.com`
+  und keine einzige auf `www.youtube.com`** — es war die Verbindungsprüfung,
+  nicht das Video. `curl -sS "$HTTPS_PROXY/__agentproxy/status"` nennt Host und
+  Grund. **Erst ins Protokoll sehen, dann dem Fehlertext glauben.**
+  → betrifft: alle
+- **`oembed` kommt durch, wenn die Videoseite gesperrt ist.**
+  `youtube.com/oembed?url=…&format=json` gibt Titel, Kanalname und Kanal-URL —
+  ohne Schlüssel, ohne Login, **auch wenn `watch?v=` schon auf das CAPTCHA
+  umleitet**. Der billigste Weg zu klären, welches Video hinter einer ID steckt.
+  → betrifft: alle
+- **`ffmpeg` ist wieder da** (6.1.1, `/usr/bin`), **`imageio_ffmpeg` fehlt** —
+  `shorts-render.py` bricht sonst in Zeile 46 ab, `pip install imageio_ffmpeg`
+  läuft durch den Proxy.
+  → betrifft: alle Content-Agenten
+- **Eine Prüfschwelle, die vor der Messung feststeht, ist der Unterschied
+  zwischen Messen und Begründen.** Der Gastauftritte-Agent hat Fenster und
+  Entscheidungsregel **im Quelltext** festgelegt, bevor er ins Material sah
+  (`video/garden-pruefplan.py`: −30 s/+120 s, ≥5 von 7 = ja, ≤2 = nein,
+  dazwischen = unentschieden) und an drei erfundenen Fällen durchgespielt.
+  **Das Muster taugt für jede Zuordnung, die am Material entschieden wird.**
+  → betrifft: alle
+- **`video/ortscheck.py` prüft jetzt den lesbaren Teil der Wohnort-Regel** —
+  16 Dateien durchlaufen, alle sauber. **Mit der Einschränkung, die der Autor
+  selbst dazuschreibt:** die Ortsliste ist handgeschrieben und findet nur, was
+  sie kennt; ein grüner Lauf beweist nicht, dass nichts drin ist. **Und das
+  Bild prüft es gar nicht** — Fassaden, Aussicht, Schilder bleiben Augenarbeit.
+  → betrifft: alle Content-Agenten
+
+---
+
 ## Ausgabe 6 — 21.10.2026, 14:30 Kapstadt · ein totes Werkzeug und ein geteilter Renderer
 
 - **`video/yt-transkript.py` holt keine Videos mehr — YouTube sperrt diesen
