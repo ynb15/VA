@@ -258,3 +258,47 @@ dann rund **921 KB HTML statt 8 MB Nutzdaten** (Curtis 920.758 Bytes, Makhosi
 freigegeben, der 33,2-GB-Rohschnitt im Drive des Cutters aber schon. Statt
 „blockiert" war es ein Quellenwechsel.
 → betrifft: alle, die aus Drive-Mastern lesen
+
+## 21.10.2026 — Der Zwischenspeicher hing an der Folge, nicht an der Quelldatei
+
+**Beinahe-Fehler, in der eigenen Änderung von heute, und er hätte wie ein
+Treffer ausgesehen.** Die Suchfenster hießen `<folge>_f<n>.mp4/.json`. Als
+Whitney Wheelocks Quelle von der Zweier-Kamera auf die Gastkamera umgestellt
+wurde, lagen die Transkripte der **alten** Kamera noch unter genau diesen Namen
+— und da die Wiederaufnahme am Transkript entscheidet (richtig, siehe oben),
+hätte der nächste Lauf sie stillschweigend weiterbenutzt. Gesucht worden wäre
+also in einem Material, das 42 Minuten vor dem Gespräch endet, **mit dem
+Ergebnis eines Fehlschlags, der nach einem Befund aussieht.**
+
+**Die Quelle gehört in den Namen:** `<folge>_<id8>_f<n>`. Dann sind Dateien
+einer anderen Quelle schlicht nie ein Treffer. Die 19 vorhandenen Fenster
+wurden umbenannt statt neu geholt — das hätte sonst mehrere Gigabyte gekostet.
+→ betrifft: alle, die wiederaufnehmbare Läufe mit Zwischenspeicher bauen
+
+**Und der zweite Teil desselben Fehlers:** ich habe die Dateien umbenannt,
+während der alte Lauf noch lief. Der suchte weiter unter den alten Namen und
+hätte Brittons 911-MB-Fenster neu geholt. Rechtzeitig gestoppt, aber
+**Dateinamen ändern, während ein Lauf sie benutzt, ist dasselbe wie den Boden
+unter ihm wegziehen.** Erst anhalten, dann umbenennen, dann starten.
+→ betrifft: alle
+
+## 21.10.2026 — Whisper lässt den letzten Abschnitt fallen, wenn der Ton dort endet
+
+Kyles Stück endet auf *„I got nothing else to add to that."* — **im Ton, nicht
+im Untertitel.** Gemessen: der Rohschnitt läuft 61,6 s, die Untertitel enden bei
+51,1 s von 51,3 s Hauptteil; der Satz liegt bei Clipsekunde 60,0–61,6 und steht
+in **keiner** Einblendung.
+
+**Er ist da, und das ist gemessen, nicht vermutet:** Pegel in diesem Fenster
+**−27,1 dB** gegen −24,3 dB in „that's really it" und −15,2 dB im lauten Teil.
+Also leise Sprache, keine Stille. Die Suche hatte den Satz auch sauber erkannt
+(Abschnitt 175,99–177,59 im Fenstertranskript) — **dort lief das Material
+danach weiter.** Beim Untertiteln endet die Datei direkt hinter dem Satz, und
+Whisper gibt den angebrochenen letzten Abschnitt nicht mehr aus.
+
+**Was das praktisch heißt:** bei einem Stück, dessen Pointe die letzten ein bis
+zwei Sekunden sind, fehlt genau dort die Zeile. Die sechs Stücke vom 20.10.
+haben dasselbe in klein — ihre Untertitel enden 0,2–0,5 s vor dem Stück, weil
+dort kein eigener Satz mehr steht. **Nicht ungefragt umgebaut**: der saubere Weg
+wäre, dem Renderer das Suchtranskript mitzugeben statt neu zu transkribieren.
+→ betrifft: alle, die mit --auto-captions arbeiten

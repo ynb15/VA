@@ -168,9 +168,15 @@ def eine(f):
         ende = gesamt
         for v in range(MAX_VERSUCHE):
             start = max(0.0, ende - STUECK)
-            w = os.path.join(HIER, f"{k}_f{v}.mp4")
-            wstart = os.path.join(HIER, f"{k}_f{v}.beginn")
-            jf = os.path.join(HIER, f"{k}_f{v}.json")
+            # Die Quelle steckt im Namen. Sonst gelten nach einem Wechsel der
+            # Quelldatei die Transkripte der alten weiter — bei Whitney
+            # Wheelock waere das die Kamera gewesen, die 42 Minuten vor dem
+            # Gespraech endet, und der Fehler haette nach einem Treffer
+            # ausgesehen.
+            st = f"{k}_{fid[:8]}_f{v}"
+            w = os.path.join(HIER, f"{st}.mp4")
+            wstart = os.path.join(HIER, f"{st}.beginn")
+            jf = os.path.join(HIER, f"{st}.json")
             # Liegt das Transkript schon vor, ist dieses Fenster durchsucht —
             # dann wird es nicht noch einmal geholt. Bei einem 34-GB-Master
             # sind das 580 MB je Fenster.
