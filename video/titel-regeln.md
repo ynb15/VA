@@ -33,35 +33,46 @@ Liste. Sein Ohr sticht die Tabelle.
 
 ---
 
-## C. Der Zwei-Slot-Bau. Das ist der Handgriff, der am meisten ändert.
+## C. Die Rolle vorn. **Der zweite Slot: Empfehlung zurückgezogen am 21.10.**
 
 ```
-Gast UNBEKANNT:   <Rolle oder Behauptung>: <Versprechen mit Du> | <Name des Gastes>
+Gast UNBEKANNT:   <Rolle oder Behauptung>: <Behauptung oder zitierter Ruf>
 Gast BEKANNT:     <Name>: <Behauptung, die er aufstellt>
 ```
 
-**Unbekannt** — DOAC, 41 von 100:
-> `AI Insider: We Are Losing Control Faster Than You Think | Jeffrey Ladish`
-> `The Deathbed Doctor: Weeks Before Death, Patients Start Having Visions! | Dr Christopher Kerr`
+**Die Weiche ist seine eigene Regel, seit Jahren** — von ihm am 21.10. bestätigt:
+**Namen nur bei global Bekannten** (Nolan, Trump), **sonst die Rolle, weil die Rolle
+zieht.** Das deckt sich mit DOAC: Name vorn bei den Bekannten (42 von 100 — `Dana White:`,
+`Rick Rubin:`, `Andrew Huberman:`), Rolle vorn bei den Unbekannten (41 von 100 —
+`AI Insider:`, `The Deathbed Doctor:`, `Human Lie Detector:`).
 
-**Bekannt** — DOAC, 42 von 100: `Dana White:` · `Rick Rubin:` · `Andrew Huberman:`
+**Die Rolle beherrscht er schon:** 13 von 38 Titeln (*Men's Therapist:*, *Ex-NFL Star:*,
+*$100M Founder:*, *Tantra Guru:*, *Podcast Star turned Hypnotherapist:*).
 
-**Was bei ihm fehlt:** Er hat die Rolle in 13 von 38 Titeln (*Men's Therapist:*,
-*Ex-NFL Star:*, *$100M Founder:*, *Tantra Guru:*) — und den Namen hinten in
-**keinem einzigen**. Gemessen: Rolle-mit-Name-hinten DOAC 14, er 0.
-**Der zweite Slot ist frei und kostet nichts.** Er ist auch der Platz, wo `(4K)` stand.
+### Was hier gestanden hat und falsch war
 
-**Womit der zweite Slot gefüllt wird, ist allerdings nicht einig** — nachgemessen an allen
-fünf: DOAC und Williamson setzen den **Gast** hinein (23 bzw. 47 von 100), Neel und Shetty
-die **eigene Marke** (`… │ Jack Neel` 21 von 100; Shettys Name in 53 von 100).
-**Drei von fünf stempeln sich selbst, zwei den Gast. Keiner eine Produktionsangabe.**
-Belegt ist: der Slot ist nicht leer und nicht technisch. Bei 509 Abos trägt ein Gastname
-vermutlich weiter als ein eigener Kanalstempel — **vermutlich, nicht gemessen.**
+**Hier stand: „der zweite Slot ist frei und kostet nichts — Gastname rein", mit
+„Gastname hinten in 0 von 38". Beides ist korrigiert.**
 
-Namen, die in seine Titel gehören und bisher fehlen: *Rob Paddock* · *Dr. Curtis Crane* ·
-*Nathan Maingard* · *Rob Bennett* · *Eben Britton* · *Kyle Kingsbury* · *Scott Aaronson*.
+* **Die Zahl: es sind drei**, nicht null — *Dr. Curtis Crane*, *Nathan Maingard*,
+  *Rob Paddock*, dazu *(Eben Britton)* in der Klammer. Gemessen hatte ich die Verknüpfung
+  *Rolle vor dem Doppelpunkt **und** Name am Ende* (die ist 0, DOAC 14) und daraus
+  „Name hinten = 0" gemacht. Dazu verlangte mein Muster den Namen am Zeilenende — bei
+  Maingard und Paddock steht dahinter `(8K)`. **Der Suffix, den ich in §B verbiete, hat
+  meine eigene Messung blind gemacht.**
+* **Seine Namensregel sticht die Empfehlung.** Ein Gastname, den niemand sucht, macht den
+  Slot nicht wertvoll, nur länger. **Für unbekannte Gäste gehört kein Name in den Titel.**
 
----
+### Was von der Messung bleibt
+
+* **`(4K)`/`(8K)` raus.** Ein Auflösungs-Tag kommt in 500 Vorbildtiteln **einmal** vor,
+  bei ihm achtmal in 38. **Das steht unverändert.**
+* **Womit die fünf den Slot füllen, ist nicht einig:** DOAC 23 und Williamson 47 von 100
+  der Gast, Neel 21 und Shetty (eigener Name in 53) die eigene Marke. **Drei von fünf
+  stempeln sich selbst, zwei den Gast. Keine Mehrheit für den Gastnamen.**
+* **Leer ist eine Antwort.** Williamson: `The ElevenLabs Situation Is Crazy`, Median 55
+  Zeichen, kein zweiter Slot.
+* **Was den Platz stattdessen verdient: der zitierte Ruf** (→ D).
 
 ## D. Zwei Wege, nicht einer. **Korrigiert am 21.10., nachdem der fünfte Kanal dazukam.**
 
@@ -112,34 +123,48 @@ richtig. Für **Interviews** ist es der Platz, auf dem der Gast oder sein Satz s
 irgendeiner der Wege seine Zahlen hebt**: 38 Videos, 8 ohne öffentliche Aufrufzahl,
 Klickrate und Impressionen stehen öffentlich nicht da. **„Weicht ab", nie „wirkt besser."**
 
-## E. Zwei Messfallen. Hier laufe man nicht hinein.
+## E. Drei Messfallen. In zwei bin ich selbst gelaufen.
 
 **Shettys Versalien sind sein Markenname.** 50 von 100 seiner Titel haben ein Wort in
 Großbuchstaben — aber 53 enthalten „Jay Shetty" und 52 „watch". Wer daraus ableitet
 „Versalien funktionieren", kopiert einen Kanalnamen. **Vor jeder Regel nachsehen, *was* in
 Versalien steht.**
 
-**Ich habe selbst eine Falle gestellt und bin hineingelaufen:** Ich schrieb, ihm fehle ein
-Serienformat. Falsch — er hat eins, ich hatte nur eine Plattform gemessen (→ F).
-**Eine Aussage über ihn braucht mehr als einen Kanal als Grundlage.**
+**Mansons `…, Solved` ist auch ein Sendungsname.** 21 von 100 seiner Titel tragen es —
+und die Sendung heißt **„SOLVED with Mark Manson"** (Apple Podcasts, `solvedpodcast.com`).
+Von Yannick am 21.10. korrigiert, nachgeprüft. **Hier stand es als Serienkunstgriff: das
+war dieselbe Falle, eine Zeile weiter oben beschrieben, ein zweites Mal betreten.**
+Sortiert also: Shetty (`watch` 52, Name 53), Neel (Name 26), Manson (`Solved` 21) —
+**drei von fünf stempeln ihren Sendungsnamen in den Titel. Das ist Branding und setzt eine
+Sendung voraus, die den Namen trägt. Nichts zum Ausdenken.**
+
+**Und die Falle, die mich zweimal erwischt hat, in einem Satz:** ein Wort, das in vielen
+Titeln eines Kanals steht, ist zuerst verdächtig, **seine Marke** zu sein — nicht seine
+Technik. Vor jeder Regel nachsehen, *was* dort wiederholt wird.
 
 ---
 
-## F. Sein Serienformat. Vorhanden, unbenutzt.
+## F. „<Name>, This Is My Application" — der Fund bleibt, der Vergleich war falsch
 
 > `Steven Bartlett, This Is My Application` — YouTube, Titel 18
 > `Mark Manson, This Is My Application` — Substack, Post 09
 > `The Craziest Job Application in History @ChrisWill` — unveröffentlichter Entwurf
 
-Dreimal dieselbe Bewegung, drei berühmte Namen, zwei Plattformen. Das ist, was Manson mit
-`…, Solved` (21 von 100) und Shetty mit `WATCH THIS` (52 von 100) hat: **ein
-wiederkehrendes Titelwort, das eine Reihe verkauft statt einer Folge.**
+Dreimal dieselbe rhetorische Bewegung, drei berühmte Namen, zwei Plattformen. **Dass er
+sie dreimal gemacht hat, ist der Fund.**
 
-**Vorbehalt:** dass die drei als Reihe gedacht waren, steht in keinem Dokument. Das ist
-mein Fund an seinem Material, nicht seine Absicht. **Ohne seine Zustimmung keine vierte
-Folge dieser Reihe titeln.**
+**Was falsch war:** ich hatte das mit Mansons `…, Solved` und Shettys `WATCH THIS`
+verglichen — „ein wiederkehrendes Titelwort, das eine Reihe verkauft". **Beide sind
+Sendungsnamen** (→ E), also kein Vergleich, sondern meine Konstruktion.
 
----
+**Und es ist nicht als Titelschablone zu benutzen.** Zwei Gründe, beide von ihm:
+seine Namensregel (Namen nur bei global Bekannten — und hier steht der Name eines
+*anderen*, nicht der des Gastes), und: **keine Schablone von einem Vorbildkanal.**
+Der YouTube-Manager hat es aus seinen Titeln gestrichen. Richtig so.
+
+Was davon bleibt, gehört nicht in einen Titel, sondern in die Redaktion: **er hat dreimal
+öffentlich dasselbe getan**, und der dritte Versuch liegt als unfertiges Kernstück im
+Drive (`Substack: Chris Will`). **Das ist eine Entscheidung für ihn, keine Titelregel.**
 
 ## G. Thumbnail-Copy
 

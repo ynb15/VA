@@ -155,15 +155,46 @@ Ist der Gast **bekannt**, wandert der Name nach vorn und die Rolle fällt weg
 (42 von 100): `Dana White:` · `Rick Rubin:` · `Andrew Huberman:` · `Druski:`.
 Ist er **unbekannt**, trägt die Rolle den Haken und der Name reitet hinten mit.
 
-**Yannick benutzt Slot 1 und lässt Slot 2 leer.** 13 seiner 38 Titel haben eine Rolle
-vor dem Doppelpunkt — *Men's Therapist:* · *Ex-NFL Star:* · *Tantra Guru:* ·
-*EdTech-Millionaire:* · *$100M Founder:* · *Podcast Star turned Hypnotherapist:* —
-und in **keinem einzigen** davon steht der Name des Gastes am Ende. Gemessen:
-**Rolle-vor-Doppelpunkt mit Namen hinten: DOAC 14, YNB 0.**
+**Yannick benutzt Slot 1.** 13 seiner 38 Titel haben eine Rolle vor dem Doppelpunkt —
+*Men's Therapist:* · *Ex-NFL Star:* · *Tantra Guru:* · *EdTech-Millionaire:* ·
+*$100M Founder:* · *Podcast Star turned Hypnotherapist:*. Die Rollen-Formel beherrscht er
+also schon.
 
-Die Rollen-Formel beherrscht er also schon. Es fehlt der zweite Slot, und der kostet
-nichts: *Rob Paddock*, *Dr. Curtis Crane*, *Nathan Maingard*, *Rob Bennett* und *Eben
-Britton* stehen teils in den Titeln, aber als Hauptsache statt als Beiwerk.
+---
+
+### Der zweite Slot — die Empfehlung ist zurückgezogen
+
+**Hier stand: „es fehlt der zweite Slot, und der kostet nichts — Gastname rein", und davor
+„Gastname hinten in keinem einzigen seiner 38 Titel". Beides falsch, beides am 21.10.
+korrigiert, der zweite Punkt von Yannick selbst.**
+
+**1. Die Zahl war falsch. Es sind drei:** *Dr. Curtis Crane* · *Nathan Maingard* ·
+*Rob Paddock*, dazu *(Eben Britton)* in der Klammer.
+
+Wie der Fehler entstand, weil das die eigentliche Lehre ist: gemessen hatte ich die
+Verknüpfung *Rolle vor dem Doppelpunkt **und** Name am Ende* — die ist tatsächlich 0, bei
+DOAC 14. **Daraus habe ich „Name hinten = 0" gemacht, und das ist etwas anderes.**
+Dazu ein Werkzeugfehler: mein Muster verlangte den Namen am **Zeilenende**, und bei
+Maingard und Paddock steht dahinter `(8K)`. **Der Suffix, den ich zwei Abschnitte weiter
+kritisiere, hat meine eigene Messung blind gemacht** — während dasselbe Muster vier
+Fehltreffer durchließ (*„Until THIS Happened'"*, *„Then It Came True"*).
+**Ein Regex ist eine Behauptung; er gehört stichprobenweise gegen die Titel gelesen.**
+
+**2. Seine Namensregel sticht die Empfehlung.** Von ihm am 21.10., seit Jahren seine
+Praxis: **Namen nur bei global Bekannten** (Nolan, Trump) — **sonst die Rolle, weil die
+Rolle zieht.** Ein Gastname, den niemand sucht, macht den Slot nicht wertvoll, nur länger.
+*Rob Paddock*, *Nathan Maingard*, *Rob Bennett* sind genau solche Namen.
+
+**Was von der Messung übrig bleibt, und es ist nicht wenig:**
+
+* **Der Slot ist nie technisch.** Ein Auflösungs-Tag kommt in 500 Vorbildtiteln **einmal**
+  vor; bei ihm achtmal in 38. **`(4K)` raus — das steht.**
+* **Womit die fünf ihn füllen, ist nicht einig:** DOAC 23 und Williamson 47 von 100 setzen
+  den **Gast** hinein, Neel 21 und Shetty (eigener Name in 53) die **eigene Marke**.
+  **Drei von fünf stempeln sich selbst, zwei den Gast.** Es gibt keine Mehrheit für den
+  Gastnamen — und mit seiner Regel für ihn keinen Grund dafür.
+* **Leer ist auch eine Antwort.** Williamson schreibt `The ElevenLabs Situation Is Crazy`
+  ohne zweiten Slot, Median 55 Zeichen.
 
 ---
 

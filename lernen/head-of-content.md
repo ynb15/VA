@@ -47,6 +47,39 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   YouTube kappt in der Suche und auf dem Handy früher. Yannicks Median: 54.
   → betrifft: youtube-manager
 
+- **ZWEI KORREKTUREN VON IHM an meinen Titelbefunden, beide nachgeprüft, beide am 21.10.
+  Wer meine Regelliste vor 10:30 gelesen hat, hat zwei falsche Sätze darin gelesen.**
+
+  **(a) „Gastname hinten in 0 von 38 seiner Titel" ist falsch — es sind drei**
+  (*Dr. Curtis Crane*, *Nathan Maingard*, *Rob Paddock*, dazu *(Eben Britton)* in der
+  Klammer). Gemessen hatte ich die Verknüpfung *Rolle vor dem Doppelpunkt **und** Name am
+  Ende* — die ist tatsächlich 0 (DOAC 14) — und daraus „Name hinten = 0" gemacht. **Das ist
+  etwas anderes.** Dazu ein Werkzeugfehler: mein Muster verlangte den Namen am Zeilenende,
+  und bei Maingard und Paddock steht dahinter `(8K)`. **Der Suffix, den ich auf derselben
+  Seite kritisiere, hat meine eigene Messung blind gemacht**, während dasselbe Muster vier
+  Fehltreffer durchließ. **Ein Regex ist eine Behauptung — stichprobenweise gegen die
+  Rohdaten lesen, nicht nur zählen.**
+
+  **(b) Meine Empfehlung „zweiter Slot kostet nichts, Gastname rein" ist zurückgezogen.**
+  Seine Namensregel, seit Jahren: **Namen nur bei global Bekannten (Nolan, Trump), sonst
+  die Rolle, weil die Rolle zieht.** Ein Gastname, den niemand sucht, macht den Titel nur
+  länger. Nachgemessen stützt das Feld die Empfehlung ohnehin nicht: DOAC 23 und Williamson
+  47 von 100 setzen den Gast hinten hinein, **Neel 21 und Shetty (Name in 53) die eigene
+  Marke — drei von fünf stempeln sich selbst.** Was bleibt: **`(4K)` raus** (ein
+  Auflösungs-Tag in 500 Vorbildtiteln einmal, bei ihm achtmal in 38), und leer ist eine
+  Antwort (Williamson: `The ElevenLabs Situation Is Crazy`).
+  → betrifft: youtube-manager, thumbnails, content-*
+
+- **Mansons `…, Solved` ist sein Sendungsname, kein Serienkunstgriff** — die Sendung heißt
+  **„SOLVED with Mark Manson"** (Apple Podcasts, `solvedpodcast.com`). Von ihm korrigiert,
+  nachgeprüft. **Das ist dieselbe Falle, die ich einen Abschnitt vorher selbst aufgeschrieben
+  hatte** (Shettys Versalien sind sein Markenname) — und ich bin ein zweites Mal
+  hineingelaufen. Sortiert: Shetty (`watch` 52, Name 53), Neel (Name 26), Manson
+  (`Solved` 21) — **drei von fünf stempeln ihren Sendungsnamen in den Titel.**
+  **Die Falle in einem Satz: ein Wort, das in vielen Titeln eines Kanals steht, ist zuerst
+  verdächtig, seine Marke zu sein — nicht seine Technik.**
+  → betrifft: alle
+
 - **Und die Lehre, für die der Kanal da ist — am eigenen Fall.** Ich habe heute Vormittag
   nach dem fünften Kanal gesucht, nichts gefunden und „nicht verifizierbar, ich rate nicht"
   notiert. **Die Antwort lag seit Stunden in Alfreds Handbuch**, weil Yannick den Link
