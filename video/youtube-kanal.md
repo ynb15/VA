@@ -185,3 +185,16 @@ Feminism FAILED"*, wenige Minuten später *„Did Feminism Ruin Men?"* — diese
 ID, derselbe Lauf. Entweder hat er den Titel in dem Moment geändert, oder
 YouTube testet zwei Titel gegeneinander. **Ich weiß nicht, welches von beiden**,
 und rate es nicht.
+
+### Nachtrag: seine eigenen Hauptkommentare zaehlen nicht mit
+
+Die erste Zaehlung oben zaehlte **seinen eigenen angepinnten Kommentar** als
+unbeantwortet mit. Im Werkzeug korrigiert (`author_is_uploader` auf oberster
+Ebene wird uebersprungen). Bei `cMI3tsQp410` sind es damit **2 statt 3** offene.
+Die Summe von 14 ist aus demselben Grund die obere Grenze, nicht der Endwert.
+
+**Und ein Fund dabei, der der Community-Arbeit gehoert:** sein angepinnter
+Kommentar unter `cMI3tsQp410` beginnt mit *„Howdy Savages!"* und verlinkt die
+Langfassung. Das ist seine Anrede an den Kanal — **eine Belegstelle, nicht die
+Regel.** Bevor ich in seiner Stimme antworte, sammle ich die angepinnten
+Kommentare aller Videos (`is_pinned`) und halte sie gegen `voice/`.

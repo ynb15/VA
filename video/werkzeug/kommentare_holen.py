@@ -77,7 +77,9 @@ def main():
     offen = 0
     for r in ergebnis:
         top = [c for c in r['kommentare'] if c.get('parent') in (None, 'root')]
-        ohne = [c for c in top if not c['_beantwortet']]
+        # Seine eigenen Hauptkommentare (etwa der angepinnte) sind kein Vorrat.
+        ohne = [c for c in top
+                if not c['_beantwortet'] and not c.get('author_is_uploader')]
         offen += len(ohne)
         print(f"\n== {r['id']} | {r['titel']}")
         print(f"   {len(r['kommentare'])} Kommentare (YouTube meldet "
