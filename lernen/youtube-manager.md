@@ -168,3 +168,56 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   erste wiederholt** — bei Titel und Thumbnail ist Arbeitsteilung die Form, nicht
   Redundanz.
   → betrifft: thumbnails, content-*
+
+### Nachtrag 21.10., spät — zwei Zahlen aus dem Kanal waren falsch, von ihm korrigiert
+
+- **„Mansons `…, Solved` ist ein Serienkunstgriff" — nein, es ist sein
+  Podcastname.** Nachgeprüft: der Podcast heißt **„SOLVED with Mark Manson"**
+  (Apple Podcasts, id1247526593). Dass `…, Solved` in 21 von 100 Titeln steht,
+  ist derselbe Effekt wie „Jay Shetty" in 53 von 100 — **der Showname, keine
+  Betonung und kein Format.** Yannick hat es sofort gesehen: *„Das ist sein
+  Podcast. So heißt sein Podcast."*
+  **Die Falle steht in `video/titel-regeln.md` §E selbst beschrieben** und wurde
+  im gleichen Dokument ein zweites Mal betreten. **Regel: ein wiederkehrendes
+  Titelwort ist erst ein Kunstgriff, wenn es nicht der Name der Show ist — und
+  das kostet eine Suche, keine Messung.**
+  → betrifft: head-of-content, youtube-manager, thumbnails
+
+- **„Gastname hinten in 0 von 38" ist falsch. Es sind 3.** Nachgezählt an den
+  38 Titeln: `– Millionaire Rob Paddock (8K)` · `- Nathan Maingard (8K)` ·
+  `Why Kids Should Be Allowed Trans Surgery – Dr. Curtis Crane`. Ein vierter
+  trägt den Namen in der Mitte (`77 y/o Techno DJ Rob Bennett`). **Vier von 38
+  enthalten überhaupt einen Gastnamen.** Ich habe die Null zweimal an ihn
+  weitergegeben, ohne sie nachzuzählen — **eine Zahl aus dem Kanal ist ein
+  Befund, keine Messung; wer sie weitergibt, prüft sie an den eigenen Daten.**
+  → betrifft: alle
+
+- **Seine Namensregel, seit Jahren, wörtlich von ihm am 21.10.:** *„nur die
+  Namen können wir nur verwenden, wenn die wirklich weltweit global bekannt
+  sind."* Beispiele von ihm: Christopher Nolan, Donald Trump. Für alle anderen
+  **die Rolle**, weil sie zieht: *„America's #1 Transgender Doctor hat natürlich
+  viel mehr Pull, viel mehr Attraktivität als Curtis Crane."* Selbst bei Steven
+  Bartlett wäre **„Diary of a CEO"** das stärkere Wort.
+  **Damit ist die Empfehlung „der zweite Slot für den Gastnamen kostet nichts"
+  gegenstandslos** — rechnerisch stimmt sie, aber sie füllt den Slot mit einem
+  Namen, den niemand sucht. Der Name gehört in Beschreibung und Tags, nicht in
+  den Titel. **Bekannt im eigenen Fach ist nicht global bekannt** (Scott
+  Aaronson).
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **Keine Schablone von einem Vorbildkanal.** Wörtlich: *„ich will die nicht
+  kopieren. Oder so eine Schablone mir abschauen von Diary of a CEO, sondern
+  eher das als Inspiration sehen. Und immer wieder punktuell entscheiden."*
+  Konkret zur Dreier-Aufzählung: **dass DOAC sie nicht benutzt, ist kein Verbot
+  für ihn.** Ich hatte sie in meiner Fassung 3 ganz gestrichen — das war
+  Schablonendenken und ist zurückgenommen.
+  **Regel: eine Messung an einem Vorbildkanal beschreibt den Vorbildkanal.
+  Sie wird erst durch seine Zustimmung eine Regel für ihn.**
+  → betrifft: alle
+
+- **Sein Serienformat-Fund ist erledigt.** *„ich plane jetzt nicht, eine Serie
+  fortzusetzen mit Applications."* Der Grund dahinter, und er ordnet die
+  Prioritäten: *„idealerweise will ich meinen Podcast so schnell, so groß
+  aufziehen, dass ich für niemanden anderen mehr arbeiten muss."*
+  **Keine vierte `This Is My Application` titeln.**
+  → betrifft: head-of-content

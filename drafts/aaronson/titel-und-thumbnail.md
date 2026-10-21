@@ -32,85 +32,116 @@ sagt, rät.
 
 ---
 
-## 15 Titel — Fassung 3, gegen die Regelliste geprüft
+## 15 Titel — Fassung 4, nach Deiner Korrektur vom 21.10.
 
-Der Head of Content hat seine Messung inzwischen als anwendbare Liste abgelegt
-(`video/titel-regeln.md`, 438 Vorbildtitel). **Sie widerlegt drei weitere Punkte
-meiner Fassung 2.** Was ich geändert habe:
+**Du hast drei Dinge korrigiert. Zwei davon waren Fehler, die ich Dir
+weitergegeben habe, und bei beiden habe ich nachgerechnet.**
 
-| | Fassung 2 | Fassung 3 |
-|---|---|---|
-| `(4K)` | in allen 15 | **raus** — technischer Tag in 400 Vorbildtiteln **1×** |
-| Gastname | fehlte in 9 | **in allen 15 hinten** — DOAC 14×, Du bisher 0× |
-| **Dreier-Aufzählung** | 3 Titel (`AI Safety, Extinction & God`) | **raus** — DOAC zählt nie drei Themen auf; eine Behauptung trägt weiter als drei Stichwörter |
-| **Länge** | 68–95 Zeichen | **Slot 1 bei 43–62**, siehe unten |
-| **Versalien** | mehrere Titel mit 2 | **höchstens eins**, und nur echte Betonung |
-| Du-Ansprache | 4 | **5** |
+### 1. „Mark Mansons `…, Solved`" ist sein Podcastname. Du hast recht.
 
-### Ein Widerspruch in der Regelliste, den ich auflösen musste
+Nachgeprüft: der Podcast heißt **„SOLVED with Mark Manson"** (Apple Podcasts,
+seit 2017). Dass `…, Solved` in 21 von 100 seiner Titel steht, ist also **kein
+Serien-Kunstgriff, sondern der Showname** — so wie bei Shetty „Jay Shetty" in 53
+von 100 steht.
 
-Abschnitt B sagt **45–65 Zeichen**. Abschnitt C zeigt als Vorbild
-`AI Insider: We Are Losing Control Faster Than You Think | Jeffrey Ladish`
-— **71 Zeichen**, und das zweite Beispiel hat 92. DOACs Median liegt bei 77,5.
-**Zwei-Slot-Bau und 45–65 gehen nicht zusammen.**
+Das ist bitter, denn **genau diese Falle steht in der Regelliste beschrieben**
+(§E: *„Shettys Versalien sind sein Markenname… wer daraus ableitet, Versalien
+funktionieren, kopiert einen Kanalnamen"*) — und die Manson-Beobachtung läuft
+zweimal in dieselbe Falle. **Die Regel, die daraus folgt und jetzt im Lernkanal
+steht: ein wiederkehrendes Titelwort ist erst dann ein Kunstgriff, wenn es nicht
+der Name der Show ist.** Nachsehen kostet eine Suche.
 
-Meine Auflösung: **die 45–65 gelten für Slot 1**, den Teil vor dem `|`. Das ist
-der Satz, den der Zuschauer liest; der Name hinten ist ein eigener Slot und
-kostet vorne kein Zeichen. Danach liegen **14 der 15 im Fenster**, der volle
-Titel bei 65–79 — also im DOAC-Korridor und unter dem YouTube-Maximum von 100.
-**Das ist meine Entscheidung, nicht seine Regel** — wenn er den vollen Titel
-unter 65 will, fällt der zweite Slot wieder weg, und damit der Befund, der am
-meisten ändert.
+### 2. Das „Serienformat" ist gestrichen.
 
-### Mit Zitat — Deine stärkste belegte Form
+Du planst keine vierte `This Is My Application`. Damit ist der Fund erledigt —
+er war ohnehin mit dem Vorbehalt versehen, dass die Reihe in keinem Dokument
+steht. **Ich schlage sie nicht wieder vor.**
 
-1. `OpenAI Insider: "The Trouble With AI Is That It Does Work" | Scott Aaronson`
-2. `OpenAI Insider: "Nobody Can Tell Me Where AI Stops" | Prof. Scott Aaronson`
-3. `Quantum Physicist: "We Are The Orangutans Now" | Prof. Scott Aaronson`
+### 3. Der Gastname — und hier war die Zahl, die ich Dir nannte, falsch.
 
-### Eine Behauptung statt dreier Stichwörter
+Ich habe Dir zweimal „Gastname hinten in **0 von 38**" gesagt. **Nachgezählt an
+Deinen 38 Titeln: es sind 3.**
 
-4. `AI Safety Expert: It Is Not A Parrot And That Is The Problem | Scott Aaronson`
-5. `Quantum Scientist: We Are Building God (Nobody Is Ready) | Scott Aaronson`
-6. `OpenAI Insider: AI Just Solved What No Human Could | Scott Aaronson`
+> `… – Millionaire Rob Paddock (8K)` · `… - Nathan Maingard (8K)` ·
+> `Why Kids Should Be Allowed Trans Surgery – Dr. Curtis Crane`
 
-### Versalien — genau ein Betonungswort
+Und ein vierter trägt den Namen in der Mitte (`… 77 y/o Techno DJ Rob Bennett
+on Apartheid…`). **Vier von 38 Titeln enthalten überhaupt einen Gastnamen.**
 
-7. `OpenAI Insider: NOBODY Knows Where AI Stops Improving | Scott Aaronson`
+**Und Deine Regel erklärt genau, warum es so wenige sind:** Namen nur, wenn sie
+global bekannt sind — Nolan, Trump. Für alle anderen zieht die Rolle.
+*„America's #1 Transgender Doctor"* hat mehr Pull als *„Curtis Crane"*, und
+selbst bei Bartlett wäre *„Diary of a CEO"* das stärkere Wort.
+
+**Damit fällt meine Empfehlung aus Fassung 2 und 3 weg.** „Der zweite Slot kostet
+nichts" stimmte rechnerisch (er nimmt vorne kein Zeichen weg) — aber er füllt ihn
+mit einem Namen, den niemand sucht. **Scott Aaronson ist in seinem Fach bekannt,
+nicht global.** Also: **kein Gastname in den 15 unten.** Er steht in der
+Beschreibung und in den Tags, da findet ihn jeder, der ihn sucht.
+
+### 4. Keine Schablone. Die Dreierform bleibt Deine Entscheidung.
+
+Dass DOAC nie drei Themen aufzählt, ist eine Beobachtung an DOAC — **kein Verbot
+für Dich.** Ich hatte sie in Fassung 3 ganz gestrichen; das war Schablonendenken.
+Drei der 15 unten haben sie wieder, weil sie hier trägt: die Folge *hat* drei
+Gebiete, und `Quantum Computing, Extinction & God` sagt das in vier Wörtern.
+
+---
+
+### Deine eigenen Rollen, aus dem Prep-Doc und von Dir eben genannt
+
+`The Quantum Genius` · `The Quantum Professor` · `The #1 Quantum Expert` ·
+`OpenAI Insider` · `AI Safety Expert` · `Quantum Scientist`
+
+### Mit Zitat
+
+1. `The Quantum Genius: "The Trouble With AI Is That It Does Work"`
+2. `OpenAI Insider: "Nobody Can Tell Me Where AI Stops"`
+3. `The Quantum Professor Inside OpenAI: AI, God & Extinction`
+
+### Eine Behauptung
+
+4. `The #1 Quantum Expert: We Are Building God And Nobody Is Ready`
+5. `OpenAI Insider: NOBODY Understands What We Are Creating`
+6. `OpenAI Insider: AI Just Solved What No Human Could`
+7. `The Quantum Genius Who Left Physics To Stop AI Killing Us`
 
 ### Der Auftrag — die Szene, die sonst keiner hat
 
-8. `OpenAI Hired Him To Define Love Mathematically | Prof. Scott Aaronson`
-9. `The Man OpenAI Asked To Make AI Love Humanity | Prof. Scott Aaronson`
-10. `He Left Quantum Computing To Stop AI Killing Us | Prof. Scott Aaronson`
+8. `OpenAI Hired Him To Define Love Mathematically`
+9. `The Man OpenAI Asked To Make AI Love Humanity`
 
-### Mit Du-Ansprache — das Angebot, nicht die Korrektur
+### Dreierform — weil sie hier trägt
 
-11. `OpenAI Insider: AI Already Does What You Call Impossible | Scott Aaronson`
-12. `AI Safety Expert: You Are Not Ready For What We Built | Scott Aaronson`
-13. `Quantum Physicist: Why You Should Fear AI (And Why He Doesn't) | Scott Aaronson`
-14. `AI Safety Expert: What You Get Wrong About Extinction | Scott Aaronson`
-15. `Quantum Physicist: You Will Meet A God You Built | Scott Aaronson`
+10. `OpenAI's AI Safety Insider: Quantum Computing, Extinction & God`
+11. `The Quantum Genius: Extinction, The Book of Job & Creating God`
+12. `OpenAI Insider: ChatGPT, Quantum Supremacy & The End Of Humanity`
 
-**Die Klammern in 5 und 13 sind keine Produktionsangabe**, sondern halten den
-Ausweg offen — die Form, die in 38 von 39 Vorbild-Klammern steht
-(`(and how to reverse it)`, `(Do THIS Instead)`).
+### Mit Du-Ansprache
 
-**Meine Empfehlung bleibt Nummer 1.** Rolle vorn, Dein stärkstes Zitat, Name
-hinten, 58 Zeichen in Slot 1, `OpenAI` im ersten Wort, keine Aufzählung, keine
-Versalien, kein Tag. Sie erfüllt die Liste vollständig.
-**Nummer 12** ist die Alternative, wenn Du die Du-Ansprache testen willst.
+13. `AI Safety Expert: You Are Not Ready For What We Built`
+14. `The Quantum Genius: Why You Should Fear AI (And Why He Doesn't)`
+15. `OpenAI Insider: AI Already Does What You Call Impossible`
 
-**Der Vorbehalt, den der Head of Content selbst mitschickt und den ich
-weitergebe:** das ist **Formvergleich, keine Wirkungsmessung.** Bei 38 Videos,
-8 davon ohne öffentliche Aufrufzahl, ist jede Korrelation Titelform ↔ Reichweite
-Zufall; Klickrate und Impressionen stehen öffentlich nicht da. **Diese Titel
-weichen von Deiner bisherigen Form ab. Dass sie besser wirken, weiß niemand.**
+**Alle 15 liegen zwischen 45 und 64 Zeichen** — in Deinem eigenen Median-Fenster
+(54), ohne Gastnamen, ohne `(4K)`, ohne Fragezeichen, höchstens ein
+Versalienwort.
 
-Und: **die Ich-Form ist nicht grundsätzlich falsch.**
-`10 Life Lessons I Learned at AfrikaBurn` ist Dein drittbestes Video (2.234) und
-genau Mansons Form. Für **Solofolgen** ist Ich richtig — nur im Interview ist es
-der Platz, auf dem der Gast stehen sollte.
+**Meine Empfehlung: Nummer 1.** `The Quantum Genius` ist Deine eigene Rolle aus
+dem Prep-Doc, das Zitat ist der stärkste Satz der Folge und Dein Short-Kandidat
+Nummer 1, und 62 Zeichen passen. **Nummer 4** ist die Alternative, wenn Du die
+Behauptung über das Zitat stellen willst — sie ist der größere Haken, aber sie
+verspricht mehr, als ein Physiker einlöst.
+
+**Was ich bewusst nicht mehr behaupte:** dass irgendeine dieser Formen besser
+*wirkt*. Sie weichen von Deiner bisherigen Form ab, und das ist alles, was
+gemessen ist. Bei 38 Videos und 8 ohne öffentliche Aufrufzahl ist jede
+Korrelation Titelform ↔ Reichweite Zufall.
+
+**`(4K)` habe ich draußen gelassen**, aber das ist Deine Gewohnheit (8 von 38)
+und Du hast sie nicht verteidigt oder verworfen. Die Messung sagt: technischer
+Tag in 400 Vorbildtiteln einmal. **Wenn Du ihn drin willst, sag es** — dann
+hänge ich ihn an, und die Titel bleiben unter 70 Zeichen.
 
 ## 15 Thumbnail-Zeilen
 
