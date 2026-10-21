@@ -103,6 +103,19 @@ hier überhaupt nicht hin. Ein Riesenfehler."*
   genommen. Der Gegenbeleg lag vor mir, ich habe ihn nicht auf den zweiten Satz
   angewendet. Dieselbe Form wie der Lautheitsfehler vom 20.10.
   → betrifft: alle
+- **Zweimal an einem Tag habe ich ein Detail aus einem Nachbardatensatz
+  übernommen — das ist ein Muster, kein Ausrutscher.** Erst die Thread-Nummer
+  der Zeitmarkenliste (ich hatte sie von einer anderen Nachricht derselben DM
+  genommen und daraus „verschiedene Threads" geschlossen — es ist **derselbe**),
+  dann der Stand des Renderers beim Gastauftritte-Agenten (ich habe von der
+  Herkunft seines Branches auf seine Arbeitskopie geschlossen; er hatte die
+  Datei längst ersetzt). **Beide Male stand neben der richtigen Zeile eine
+  ähnliche, und ich habe die falsche gegriffen.**
+  **Die Gegenmaßnahme ist billig: wenn eine Angabe aus einer Liste mit mehreren
+  ähnlichen Einträgen stammt, die Zeile noch einmal einzeln aufrufen**, bevor
+  sie in eine gemeinsame Datei geht. Ein zweiter Aufruf kostet Sekunden; eine
+  falsche Zahl in `LERNEN.md` wandert durch acht Agenten.
+  → betrifft: alle
 - **Ist seine Formulierung mehrdeutig, wird gefragt, nicht ausgelegt.** Eine
   Rückfrage kostet eine Minute; ein falsch verstandener Auftrag kostet einen
   Arbeitstag und das Vertrauen des Agenten in jeden weiteren Auftrag.
@@ -192,16 +205,23 @@ eigene Regel vom 02.10. Er hat sie heute aufgehoben. Voller Befund:
   1:00:23 Hormozi · 1:06:00 Confidence · 1:21:00 My Why."*
   **Unsere Kandidatenlisten sollten genauso aussehen** — das ist das Format,
   in dem er denkt.
-  **Zu welchem Video die Liste gehört, ist offen.** Gemessen: die Liste steht
-  in der DM an Isabelle am **15.09. um 17:01**; der Link zum
-  Garden-Gastauftritt (`q3_kLgYIXGQ`) steht am **14.09. um 22:20** — und die
-  beiden liegen in **verschiedenen Threads** derselben DM. Der
-  Gastauftritte-Agent hält die Liste für die Auswahl zu genau diesem Video und
-  stützt das auf die Kapitel (`1:21:00 My Why` ↔ `1:19:07 His why…`); **seine
-  Datierung („14.09. 22:20, direkt nach dem Link") stimmt nicht.** Die
-  Kapitelprobe kann trotzdem richtig sein. **Wer die Liste benutzt, prüft sie
-  erst gegen die Kapitel des Videos** — und behauptet die Zuordnung nicht,
-  bevor das steht.
+  **Zu welchem Video die Liste gehört: plausibel, nicht belegt.** Am 21.10.
+  zweimal nachgemessen, zuletzt von mir in Slack:
+  * Link `q3_kLgYIXGQ` (Garden) — **14.09. 22:20:08**
+  * Liste — **15.09. 17:01:06**
+  * **beide im selben Thread** `1788525418.826269` (*Shorts: Boo The
+    Philosopher*), **unmittelbar aufeinanderfolgend, keine Nachricht dazwischen**
+  Der Gastauftritte-Agent hat alle sieben Marken gegen die **26 Kapitel** des
+  Videos geprüft: **7 von 7 fallen in die Laufzeit · 1 von 7 trifft einen
+  Kapiteltitel wörtlich** (`1:21:00 My Why` ↔ `1:19:07 His why…`, +113 s) ·
+  **3 von 7 passen thematisch** · **0 von 7 werden widerlegt** · aber **von
+  sechs Stichworten kommt nur eines auf der Videoseite vor** (`Integration`;
+  `Hormozi`, `Joe Hudson`, `Confidence`, `Workaholism` **null Mal**).
+  **Ein zweiter Kandidat steht oben im selben Thread:** `ud5kr_LoqU4`, die
+  Rob-Paddock-Folge seines eigenen Kanals. **Nicht prüfbar** — YouTube gibt die
+  Seite nicht mehr heraus.
+  **Entschieden wird es am Wortlaut, also erst mit dem Transkript.** Bis dahin
+  ist die Liste eine **Suchanweisung**, keine belegte Auswahl.
   → betrifft: content-*, head-of-content
 - **Modern Wisdom ist seit mindestens 12.10. sein erklärtes Vorbild**, mit drei
   verlinkten Shorts an seinen Editor. Die Kopfzeile von heute liegt also auf
