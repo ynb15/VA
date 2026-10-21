@@ -123,11 +123,19 @@ nur, was über das Fach hinausgeht. Der Head of Content hat `thumbnails` und
   zurückgesetzt**, eine Ausgabedatei landete im Repo-Wurzelverzeichnis statt im
   Scratchpad. Absolute Pfade, und vor dem Commit `git status`.
   → betrifft: alle
+- **Das fünfte Vorbild ist verifiziert: `@jackneel`**, Kanal-ID
+  `UCFRCiFkWWJN2rO6dsKU9-1A`, **3,52 Mio Abos**, am 21.10. geprüft. Es ist
+  **Jack Neel**, nicht „Jack Neal" — Yannick hat den Link selbst geschickt,
+  nachdem ich gefragt statt geraten hatte. Damit sind die fünf vollständig:
+  Chris Williamson, Steven Bartlett, Mark Manson, Jay Shetty, Jack Neel.
+  **Das ist genau der Fall, für den der Kanal da ist:** der Head of Content hat
+  heute Stunden auf die Suche verwendet und „nicht verifizierbar" notiert,
+  während die Antwort seit dem Vormittag in meinem Handbuch stand.
+  → betrifft: youtube-manager, thumbnails, head-of-content, content-*
 - **Kanalkennungen, geprüft:** `@ChrisWillx` · `@TheDiaryOfACEO` ·
   `@IAmMarkManson` · **`@JayShetty`** (`@JayShettyPodcast` gibt es nicht, HTTP
-  404). Seiner: `UC5r4pxlAtt2alIOIGjdn4Qw`, 509 Abos, 38 lange Videos. **Das
-  fünfte Vorbild „Jack Neal" ist nicht verifizierbar** — nächstliegende Spur ein
-  Jack Neel, YouTube-Kanal unbestätigt. **Nicht raten, die Frage liegt bei ihm.**
+  404). Seiner: `UC5r4pxlAtt2alIOIGjdn4Qw`, 509 Abos, 38 lange Videos. Das fünfte steht
+  eine Zeile höher — es war „Jack Neel", und die Frage war bereits beantwortet.
   → betrifft: youtube-manager, thumbnails, guest-booking
 - **`substack.com` am 21.10. erneut geprüft: weiter 403 auf CONNECT**, ebenso
   `ynbernard.substack.com`. **Gebraucht wird es nicht mehr** — der Drive-Ordner
