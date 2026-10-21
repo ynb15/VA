@@ -10,7 +10,7 @@ Maschine ausgeführt worden, nicht geschätzt.
 | **ffmpeg** | 7.0.2 static, über `pip install imageio-ffmpeg` von pypi — kein apt nötig |
 | **Encoder** | libx264, aac |
 | **Filter** | `crop`, `scale`, `zoompan`, `subtitles`, `ass` (`drawtext` fehlt, wird nicht gebraucht) |
-| **Schrift** | DejaVu Sans Bold vorhanden |
+| **Schrift** | **Inter Black** aus `video/fonts/` (sein Preset). Eveleth, das Original aus CapCut, fehlt — siehe `preset-ynb.md` |
 | **Maschine** | 4 Kerne, 15 GB RAM, ~30 GB frei, **kein GPU** |
 | **Tempo** | 11 s Short in **6,9 s** gerendert — schneller als Echtzeit |
 

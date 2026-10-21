@@ -1,3 +1,55 @@
+## 21.10.2026 — Sein Shorts-Preset ist der Maßstab, nicht unsere Messung
+
+**Er hat den Ordner übergeben, mit dem seine Shorts bisher gebaut wurden**
+(Schrift, Farbe, Maße, CapCut-Filter als LUT): *„ist jetzt der Filter und
+die Schrift, die wir bisher für meine Shorts verwendet haben, kannst du das
+jetzt ab sofort bitte auch einbauen und natürlich auch an YNB Cinema
+Agenten und dann EA weitergeben."* Eingebaut in `video/shorts-render.py`,
+dokumentiert in `video/preset-ynb.md`.
+
+**Sechs Werte waren bei uns anders — und wir lagen sechsmal daneben:**
+
+| | unsere Messung | sein Preset |
+|---|---|---|
+| Gelb | `#FFD530` | **`#F9F13A`** |
+| Schriftgröße | 78 | **82** |
+| Schrift | DejaVu Sans Bold | **Inter Black** (Ersatz für Eveleth aus CapCut) |
+| Zeilenbreite | 1000 px | **777 px = 72 % der Breite** |
+| Logo | 520 px, Höhe 0,845 | **302 px = 28 %, Höhe 0,87** |
+| Gradation | warm, gesättigt | **entsättigt, kühl — Oppenheimer-Filter** |
+
+Alle sechs waren an seinen veröffentlichten Shorts *abgelesen*, also an
+komprimierten Vorschaubildern. Bei der Gradation drehte das Ergebnis sogar
+die Richtung um: wir haben warm und gesättigt gemessen, sein Filter ist
+entsättigt und kühl.
+**Regel: an einem Ausgabebild abgelesene Stilwerte sind ein Notbehelf,
+solange die Quelldatei des Stils nicht da ist. Bevor man misst, fragt man
+nach der Vorlage.**
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Wer libass benutzt, darf die Zeilenbreite nicht mit PIL messen.** libass
+legt die Schriftgröße nicht aufs Geviert, sondern auf Ober- plus
+Unterlänge der Schrift — bei Inter Black 1,21 Geviert. Gemessen am
+gerenderten Bild: `WHAT MAKES LIFE` ist bei 82 px **643 px** breit, PIL
+sagt 776, Verhältnis 0,829; aus den Schriftmetriken errechnet 0,826.
+Wer das übergeht, misst 21 % zu breit und teilt Dreizeiler, die längst
+passen. Faktor: `groesse / sum(font.getmetrics())`.
+→ betrifft: content-*, YNB Cinema, EA
+
+**Die Zeilenhöhe hängt am Raum, nicht am Format.** Sein Preset setzt die
+Untertitel fest auf 70 % der Bildhöhe. Für Rick Strassman (Webcam) war 50 %
+richtig, im Just-Push-Record-Studio 57 %. Die 70 % sind deshalb hier der
+Wert, wenn keine Lippe gemessen ist — die gemessene Lippe schlägt ihn.
+→ betrifft: content-*, YNB Cinema
+
+**Offen: die LUT selbst fehlt.** Übergeben wurden `make_lut.py` und die
+Anleitung, nicht `luts/ynb_look.png` und nicht der CapCut-Export. Bis die
+da ist, läuft eine Annäherung, und der Renderer schreibt das in die
+Ausgabe, statt es zu verschweigen. `luts/hald_identity_1080.png` liegt
+bereit und ist geprüft: durch `make_lut.py` zurückgerechnet kommt die
+Identität pixelgenau wieder heraus.
+→ betrifft: content-*, YNB Cinema, EA
+
 
 ## 21.10.2026 — Der Planer plant am Kameraschnitt nicht neu (Aaronson 01)
 
