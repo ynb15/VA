@@ -11,3 +11,5 @@ video/*_fertig.mp4
 video/*-meaningful.mp4
 video/lauf-*.log
 video/*-meaningful.srt
+video/*_f[0-9]+[0-9].mp4
+video/*_concat.txt
