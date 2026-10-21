@@ -221,3 +221,41 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   aufziehen, dass ich für niemanden anderen mehr arbeiten muss."*
   **Keine vierte `This Is My Application` titeln.**
   → betrifft: head-of-content
+
+### Nachtrag 21.10., 10:30 — Jack Neel nachgemessen, und ein erfundenes Zitat in meinem eigenen Titel
+
+- **Jack Neel ist verifiziert**, selbst gemessen statt übernommen: `@jackneel`,
+  `UCFRCiFkWWJN2rO6dsKU9-1A`, **3.520.000 Abos**, 100 Titel. **58 mit Zitat, 50
+  davon als Ruf mit Ausrufezeichen im Zitat.** Länge Median 86, 7 bei genau 100.
+  Du 19 %, Ich/Wir 25 %. Die Zahlen des Head of Content halten; Abweichungen nur
+  im Rundungsbereich (er: 18/27, Median 85,5).
+  **Das ist der Name, der im Auftrag als „kein Kanal dieses Namens verifiziert"
+  stand.** Jetzt ist er es.
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **Neels zweiter Slot trägt 21× die eigene Marke und 27× einen anderen Namen —
+  und diese Namen sind Alex Hormozi, Rhonda Patrick, Robert Pape.** Also global
+  bekannte. **Yannicks Namensregel wird von Neels Daten gestützt, nicht
+  widerlegt.** Und der Slot hat eine zweite Verwendung, die bei Yannick frei ist:
+  die eigene Marke (`│ Man's Search for Meaning`).
+  → betrifft: head-of-content, thumbnails
+
+- **Ich hatte ein erfundenes Zitat in meinem empfohlenen Titel.**
+  `"The Trouble With AI Is That It Does Work"` — Aaronson sagt *„The trouble with
+  AI right now is **not** that it doesn't work. It's that it does work."* Meine
+  Fassung verschmolz zwei Sätze zu einem. Ebenso `"We Are The Orangutans Now"`
+  aus einer früheren Fassung: er sagt *„it will be to us, as we are to
+  orangutans"*.
+  **Regel: ein Zitat in Anführungszeichen wird vor dem Ablegen mit einer
+  Zeichenkettensuche gegen das Transkript geprüft, nie aus dem Gedächtnis. Eine
+  Behauptung ohne Anführungszeichen darf verkürzen; eine mit nicht.** Das gilt
+  für Titel, Thumbnail-Copy, Beschreibungen und Kapitelzeilen gleichermaßen —
+  überall, wo wir ihm Worte in den Mund legen, die er veröffentlichen soll.
+  → betrifft: alle
+
+- **Die Ruf-Form passt nicht zu jedem Gast, und das Ausrufezeichen ist keine
+  Messung.** Es steht nicht im Ton; es ist eine Behauptung über den Vortrag.
+  Aaronson sagt seine härtesten Sätze leise und mit Einschränkungen davor. Bei
+  Neel trägt die Form nachweislich (50 von 100) — **ob sie bei einem leisen Gast
+  trägt, steht in keiner Zahl.** Als Einschätzung gekennzeichnet, nicht als Regel.
+  → betrifft: head-of-content, thumbnails
