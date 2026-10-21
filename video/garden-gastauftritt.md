@@ -12,10 +12,15 @@ ihm.
 
 ---
 
-## Zuerst: er hat die Stellen schon selbst markiert
+## Zuerst: eine Liste von ihm, die wahrscheinlich zu diesem Video gehoert
 
-Am **14.09.2026 um 22:20 Kapstadt** hat er Isabelle in Slack genau dieses Video
-geschickt und unmittelbar danach seine eigene Liste:
+Im Slack-Thread *Shorts: Boo The Philosopher* (DM an Isabelle,
+`1788525418.826269`) stehen hintereinander:
+
+| Antwort | Zeit (Kapstadt) | Inhalt |
+|---|---|---|
+| 14 | **14.09.2026 22:20:08** | der Link `youtu.be/q3_kLgYIXGQ` |
+| 15 | **15.09.2026 17:01:06** | die Liste unten |
 
 > **Shorts**
 > • 16:00 Movie
@@ -26,15 +31,40 @@ geschickt und unmittelbar danach seine eigene Liste:
 > • 1:06:00 Confidence
 > 1:21:00 My Why
 
-**Das ist dieselbe Liste, die in `LERNEN.md` als „sein Format" zitiert wird —
-dort ohne Video.** Sie gehört zu diesem Gastauftritt. Mein Auftrag beginnt also
-nicht bei null: er beginnt bei seinen sieben Marken.
+**Das ist dieselbe Liste, die in `LERNEN.md` als Beleg fuer "sein Format"
+zitiert wird — dort ohne Video.**
 
-Isabelles Rückfrage dazu, unbeantwortet: *„hmmmm so oder nur deinen Teil oder
-noch mit der Ausmalbuch-Analogie danach?"* — und seine Antwort in dem Thread:
-*„Hmm finde ich noch nicht allzu episch"*, dazu *„Movie B-Rolls könnten wir noch
-einbauen"* mit `youtu.be/z9cMzUCl6ys`. **Welche der sieben Stellen er damit
-meinte, steht nicht da.** Nicht geraten.
+**Wie stark der Beleg ist, nachgerechnet.** Die Liste folgt dem Link zwar
+unmittelbar — **keine Nachricht dazwischen** —, aber **18 Stunden 41 Minuten
+spaeter und am naechsten Tag**. Oben im selben Thread steht ein zweites Video:
+`ud5kr_LoqU4`, die Rob-Paddock-Folge **seines eigenen** Podcasts. Die Liste
+koennte also auch dorthin gehoeren.
+
+Gegen die 26 gemessenen Kapitel von `q3_kLgYIXGQ` geprueft:
+
+| Pruefung | Ergebnis |
+|---|---|
+| Marken, die in die Laufzeit fallen | **7 von 7** |
+| woertliche Uebereinstimmung mit einem Kapiteltitel | **1 von 7** — `1:21:00 My Why` gegen `1:19:07 His why: giving a voice to people who don't usually get one` (+113 s) |
+| thematisch stimmig mit dem Kapitel, in dem sie liegen | **3 von 7** — `Integration` und `Workaholism` im Kapitel `37:25 The addiction to self-improvement nobody calls an addiction`; `16:00 Movie` 19 s vor `16:19 what would the hero do` |
+| Stichwort kommt auf der Videoseite ueberhaupt vor | **1 von 6** — `Integration` 2x; `Hormozi`, `Joe Hudson`, `Confidence`, `Workaholism` **null Mal** |
+| von einem Kapitel widerlegt | **0 von 7** |
+
+**Das Gegenstueck liess sich nicht pruefen:** die Seite der Rob-Paddock-Folge
+gibt YouTube diesem Container nicht mehr heraus (HTTP 302 auf das CAPTCHA).
+Ohne deren Kapitel ist kein Vergleich moeglich.
+
+**Damit gilt: plausibel, nicht belegt.** Dass Kapiteltitel nicht jeden Namen
+nennen, macht die vier Nullen nicht zu einem Gegenbeweis — aber eben auch zu
+keiner Bestaetigung. **Belegt ist die Zuordnung erst am Wortlaut**, also erst
+mit dem Transkript. Bis dahin ist die Liste unten eine **Suchanweisung**, und
+wenn sie sich am Material als falsch erweist, gehoert sie zur Paddock-Folge.
+
+Isabelles Rueckfrage dazu: *"hmmmm so oder nur deinen Teil oder noch mit der
+Ausmalbuch-Analogie danach?"* (16.09., mit `movie.mov` im Anhang) — seine
+Antwort zwei Tage spaeter: *"Hmm finde ich noch nicht allzu episch"*, dazu
+*"Movie B-Rolls koennten wir noch einbauen"*. **Worauf sich das bezieht, steht
+nicht da.** Nicht geraten.
 
 ---
 
@@ -54,6 +84,8 @@ Die Kapitelangaben sind **gemessen**: 26 Kapitelmarken, heute aus der
 Videoseite geholt. Sie stehen in `video/garden-kapitel.md`.
 
 ### Seine sieben Marken
+
+*(Zuordnung zu diesem Video: plausibel, nicht belegt — siehe oben.)*
 
 **1:21:00 · My Why**
 Sitzt im Kapitel **1:19:07 „His why: giving a voice to people who don't usually

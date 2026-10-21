@@ -27,6 +27,17 @@ Neuester Eintrag oben.
   und Medien gesperrt sind.**
   → betrifft: content-*, youtube-manager, thumbnails
 
+- **`oembed` kommt durch, wenn die Videoseite gesperrt ist.**
+  `https://www.youtube.com/oembed?url=https://youtu.be/<id>&format=json` gibt
+  **Titel, Kanalname, Kanal-URL und Vorschaubild** zurueck — ohne Login, ohne
+  Schluessel, und **auch dann noch, wenn `watch?v=` schon mit 302 auf das
+  Google-CAPTCHA umleitet** (heute beides am selben Video gemessen). Keine
+  Dauer, keine Kapitel. **Das ist der billigste Weg, um ueberhaupt zu klaeren,
+  welches Video hinter einer ID steckt** — so habe ich `ud5kr_LoqU4` als die
+  Rob-Paddock-Folge seines eigenen Kanals identifiziert, nachdem die
+  Videoseite nicht mehr kam.
+  → betrifft: alle
+
 - **Der 403, den yt-dlp meldet, kommt nicht von YouTube.** Im Proxy-Protokoll
   stehen **20 Ablehnungen auf `www.google.com:443`** und keine einzige auf
   `www.youtube.com` — yt-dlps „Unable to download webpage … Giving up after 3
@@ -44,15 +55,24 @@ Neuester Eintrag oben.
   auf **jeder** Seite. Browser `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
   → betrifft: alle
 
-- **Korrektur an `LERNEN.md`: die Zeitmarkenliste ist nicht allgemein, sie
-  gehört zu einem bestimmten Video.** In Ausgabe 3 steht sie als Beleg für
-  „sein Format" mit Datum 15.09. Gemessen: er hat sie am **14.09.2026 um
-  22:20 Kapstadt** in der DM an Isabelle geschickt, **direkt nach dem Link
-  `youtu.be/q3_kLgYIXGQ`** — dem Garden-Gastauftritt. Die Zuordnung hält an den
-  Kapiteln: `1:21:00 My Why` gegen Kapitel `1:19:07 His why: giving a voice to
-  people who don't usually get one`, `16:00 Movie` gegen `16:19 what would the
-  hero do`. **Für dieses Video existiert seine Auswahl also schon** — wer hier
-  neu anfängt, doppelt seine Arbeit.
+- **Die Zeitmarkenliste in `LERNEN.md` gehoert wahrscheinlich zu einem
+  bestimmten Video — belegt ist es nicht, und meine erste Datierung war
+  falsch.** Primaerquelle Slack, DM an Isabelle, Thread `1788525418.826269`
+  (*Shorts: Boo The Philosopher*): der Link `youtu.be/q3_kLgYIXGQ` ist
+  Antwort 14 vom **14.09. 22:20:08**, die Liste ist Antwort 15 vom
+  **15.09. 17:01:06**. **Gleicher Thread, keine Nachricht dazwischen — aber
+  18 h 41 min und einen Tag spaeter.** Ich hatte zuerst geschrieben, sie stehe
+  "direkt nach dem Link" am 14.09. um 22:20; **die Uhrzeit war die des Links,
+  nicht der Liste.** Gegen die 26 Kapitel geprueft: 7/7 Marken fallen in die
+  Laufzeit, **1/7** stimmt woertlich mit einem Kapiteltitel ueberein
+  (`1:21:00 My Why` / `1:19:07 His why…`, +113 s), 3/7 sind thematisch stimmig,
+  **0/7** werden widerlegt — und **4 der 6 Stichworte** (`Hormozi`,
+  `Joe Hudson`, `Confidence`, `Workaholism`) kommen auf der Videoseite
+  **null Mal** vor. Im selben Thread steht oben ein zweites Video,
+  `ud5kr_LoqU4` (Rob-Paddock-Folge **seines eigenen** Podcasts); dessen Seite
+  gibt YouTube inzwischen nicht mehr heraus (302 auf das CAPTCHA), ein
+  Vergleich war also nicht moeglich. **Also: plausibel, nicht belegt.**
+  Entschieden wird es am Wortlaut, nicht am Kapiteltitel.
   → betrifft: content-*, head-of-content
 
 - **Die beiden `shorts-render.py` sind auseinandergelaufen, in beide
