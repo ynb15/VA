@@ -32,8 +32,30 @@ def dauer(p):
          "-of", "csv=p=0", p]).decode().strip())
 
 
-def fertig(p, mindest=1_000_000):
-    return os.path.exists(p) and os.path.getsize(p) > mindest
+def fertig(p, soll=None, anteil=0.97):
+    """Ist die Datei wirklich fertig — nicht nur gross?
+
+    Am 21.10. wurde der Container mitten im Rendern eingezogen. Zurueck
+    blieb eine 55-MB-Datei ohne moov-Atom: unabspielbar, aber gross genug,
+    dass eine Groessenpruefung sie als fertig durchgewunken haette. Der
+    naechste Lauf haette sie uebersprungen und Erfolg gemeldet.
+    Also wird die Laufzeit gemessen. Was sich nicht lesen laesst oder zu
+    kurz ist, wird geloescht und neu gerechnet.
+    """
+    if not os.path.exists(p) or os.path.getsize(p) < 100_000:
+        return False
+    try:
+        d = dauer(p)
+    except Exception:
+        log("unvollstaendig, wird neu gerechnet:", os.path.basename(p))
+        os.remove(p)
+        return False
+    if soll and d < soll * anteil:
+        log(f"zu kurz ({d:.1f}s statt {soll:.1f}s), wird neu gerechnet:",
+            os.path.basename(p))
+        os.remove(p)
+        return False
+    return True
 
 
 def plan_schreiben(quelle, ziel):
@@ -84,7 +106,7 @@ def main():
     # 2) beide Fassungen rendern
     for quelle, name in ((mit, "07-rick-mit"), (ohne, "07-rick-ohne")):
         ziel = os.path.join(o, f"{name}.mp4")
-        if fertig(ziel):
+        if fertig(ziel, soll=dauer(quelle) / TEMPO):
             log(f"{name}.mp4 liegt schon da")
             continue
         rendern(quelle, ziel, os.path.join(o, f"{name}.srt"), a.logo)
