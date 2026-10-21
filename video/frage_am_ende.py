@@ -87,8 +87,39 @@ def schluss_waehlen(daten, idx):
     eine Obergrenze fuer den Fall, dass gar kein Uebergang gefunden wird; die
     laengste gemessene Antwort war Aaronsons mit 78 s Masterzeit.
     """
-    neue_frage = re.compile(r"(?i)^(how|what|where|when|why|who|can|could|do|did|"
-                            r"would|is|are|tell)\b.*\?\s*$")
+    # Eine Frage faengt nicht immer mit einem Fragewort an und steht oft nicht
+    # in einem Abschnitt. Whitney Wheelocks Bogen endet auf "then you have a
+    # meaningful life, perhaps" — danach fragt er "So you don't agree that a
+    # cute little poodle called Mauro doesn't make life a little bit more
+    # meaningful?", und das Fragezeichen steht zwei Abschnitte spaeter.
+    # Deshalb wird ab einem Abschnitt der Satz zusammengesetzt, bis ein
+    # Satzzeichen kommt, und dieser ganze Satz geprueft.
+    # "so" allein ist zu gierig: Kyle Kingsburys eigener Satz "So when you speak
+    # about the infallible nature of God ... it's beyond language, right?"
+    # beginnt mit "so" und endet acht Sekunden spaeter auf ein Fragezeichen —
+    # der Schnitt waere 31 s statt 61 s lang geworden. "so" zaehlt deshalb nur,
+    # wenn direkt ein Frage- oder Anredewort folgt.
+    OEFFNER = (r"how|what|where|when|why|who|can|could|do|does|did|would|will|"
+               r"is|are|tell|don't|doesn't|aren't|didn't|"
+               r"so[,\s]+(?:you|do|don't|does|is|are|would|can|did|didn't)")
+    neue_frage = re.compile(rf"(?i)^({OEFFNER})\b.*\?\s*$", re.S)
+
+    def satz_ab(j):
+        """Der Satz, der bei Abschnitt j beginnt — ueber Abschnittsgrenzen hinweg.
+
+        Begrenzt auf 12 s, damit nicht eine ganze Antwort ohne Interpunktion
+        als ein Satz gilt. Das haelt zugleich das rhetorische "right?" mitten
+        in einer Antwort draussen: der Satz beginnt dort mit "because" oder
+        "like", nicht mit einem Oeffner.
+        """
+        teile = []
+        for x in daten[j:]:
+            if x["start"] - daten[j]["start"] > 12:
+                break
+            teile.append(x["text"].strip())
+            if x["text"].rstrip().endswith((".", "!", "?")):
+                break
+        return " ".join(teile)
     # Was die vier Faelle teilen, ist nicht die Satzform, sondern das Thema:
     # ab hier wird abgebunden oder es geht ums Geschaeft. Der Uebergang steht
     # dabei nicht immer am Anfang eines Abschnitts — bei Britton steckt
@@ -108,7 +139,7 @@ def schluss_waehlen(daten, idx):
         if d["start"] - beginn <= 15:
             continue
         t = d["text"].strip()
-        if neue_frage.match(t):
+        if neue_frage.match(satz_ab(daten.index(d))):
             grenze, getroffen = min(grenze, d["start"]), True
             break
         m = UEBERGANG.search(t)
@@ -201,6 +232,22 @@ def eine(f):
                 fenster, fstart, daten, idx = w, gemessen, d, tr
                 break
             ende = start
+        # Laeuft die Antwort ueber die Fenstergrenze? Gesucht wird rueckwaerts,
+        # das Anschlussfenster (v-1) liegt also naeher am Folgenende und ist
+        # bereits geholt. Bei Whitney Wheelock endete das Stueck mitten im Satz
+        # auf 211,29 s bei 211,4 s Fensterlaenge — der Schnitt stand auf der
+        # Fensterkante, nicht am Ende des Bogens.
+        anschluss = None
+        if fenster is not None and v > 0:
+            vorn = os.path.join(HIER, f"{k}_{fid[:8]}_f{v - 1}")
+            if os.path.exists(vorn + ".json"):
+                versatz = dauer(fenster)
+                weiter = [{"start": x["start"] + versatz,
+                           "end": x["end"] + versatz, "text": x["text"]}
+                          for x in json.load(open(vorn + ".json"))]
+                daten = daten + weiter
+                anschluss = (vorn + ".mp4", versatz)
+
         if fenster is None:
             json.dump({"nr": nr, "name": name, "drive_id": fid,
                        "gefunden": False, "gesamt": round(gesamt, 1),
@@ -212,19 +259,45 @@ def eine(f):
                     f"{MAX_VERSUCHE * STUECK:.0f}s — Befund abgelegt")
         schluss = schluss_waehlen(daten, idx)
         von = max(0.0, daten[idx]["start"] - 1.0)
+
+        quelle, fende = fenster, None
+        if anschluss and schluss > anschluss[1] - 0.05:
+            # Beide Fenster aneinandersetzen und daraus schneiden. Sie sind
+            # luckenlos aneinander geholt worden; die Zeitrechnung des
+            # zusammengesetzten Stuecks ist dieselbe wie die des Versatzes.
+            quelle = os.path.join(HIER, f"{k}_{fid[:8]}_f{v}+{v - 1}.mp4")
+            if dauer(quelle) < 5:
+                liste = os.path.join(HIER, f"{k}_{fid[:8]}_concat.txt")
+                with open(liste, "w") as fh:
+                    fh.write(f"file '{fenster}'\nfile '{anschluss[0]}'\n")
+                lauf([FF, "-nostdin", "-y", "-hide_banner", "-loglevel", "error",
+                      "-f", "concat", "-safe", "0", "-i", liste,
+                      "-c", "copy", quelle])
+            fende = anschluss[1]
+            print(f"{nr}. {name}: Antwort laeuft ueber die Fenstergrenze, "
+                  f"Anschlussfenster f{v - 1} angesetzt", flush=True)
         # Fensterzeit -> Masterzeit. Ohne diese beiden Zahlen ist das
         # Stueck in zwei Jahren nicht mehr zuzuordnen, und genau darum
         # geht es bei diesem Auftrag.
+        def master(t):
+            if fstart is None:
+                return None
+            if fende is None or t <= fende:
+                return round(fstart + t, 2)
+            vorn_beginn = float(open(os.path.join(
+                HIER, f"{k}_{fid[:8]}_f{v - 1}.beginn")).read())
+            return round(vorn_beginn + (t - fende), 2)
+
         json.dump({"nr": nr, "name": name, "drive_id": fid,
-                   "master_von": round(fstart + von, 2) if fstart else None,
-                   "master_bis": round(fstart + schluss, 2) if fstart else None,
+                   "master_von": master(von),
+                   "master_bis": master(schluss),
                    "masterzeit_gemessen": fstart is not None,
                    "fenster": os.path.basename(fenster),
                    "fenster_von": round(von, 2), "fenster_bis": round(schluss, 2),
                    "frage": daten[idx]["text"].strip()},
                   open(befund, "w"), indent=1, ensure_ascii=False)
         lauf([FF, "-nostdin", "-y", "-hide_banner", "-loglevel", "error",
-              "-ss", f"{von:.2f}", "-i", fenster, "-t", f"{schluss - von:.2f}",
+              "-ss", f"{von:.2f}", "-i", quelle, "-t", f"{schluss - von:.2f}",
               "-c:v", "libx264", "-crf", "17", "-preset", "veryfast",
               "-c:a", "aac", "-b:a", "192k", clip])
 

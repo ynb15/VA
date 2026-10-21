@@ -302,3 +302,75 @@ haben dasselbe in klein — ihre Untertitel enden 0,2–0,5 s vor dem Stück, we
 dort kein eigener Satz mehr steht. **Nicht ungefragt umgebaut**: der saubere Weg
 wäre, dem Renderer das Suchtranskript mitzugeben statt neu zu transkribieren.
 → betrifft: alle, die mit --auto-captions arbeiten
+
+## 21.10.2026 — Die Antwort läuft über die Fenstergrenze
+
+**Whitney Wheelocks Stück endete mitten im Satz** — *„…the word for fear and
+ignorance is that by"*. Der Befund sagte, warum: Schnitt bei **211,29 s** bei
+einer **Fensterlänge von 211,13 s**. Der Schnitt stand auf der Fensterkante,
+nicht am Ende des Bogens.
+
+**Das ist ein eigener Fehler, kein Sonderfall.** Wer rückwärts in Stücken sucht,
+findet die Frage irgendwo im Fenster — und eine Antwort von 68 Sekunden, die
+55 Sekunden vor der Fensterkante beginnt, läuft zwangsläufig hinaus. **Der
+Zuschnitt endet dann stumm an der Kante und sieht aus wie ein Ergebnis.**
+
+**Das Gute: das Anschlussfenster liegt schon da.** Gesucht wird rückwärts, das
+Fenster `v-1` ist also näher am Folgenende und bereits geholt. Transkripte
+aneinanderhängen (versetzt um die gemessene Fensterlänge), und wenn der Schluss
+hinter der Kante liegt, die beiden MP4s über den `concat`-Demuxer zusammensetzen
+und daraus schneiden. **Kostet keinen einzigen zusätzlichen Abruf.** Die
+Masterzeit hinter der Kante zählt dann vom Beginn des Anschlussfensters.
+
+**Prüfung, ob so etwas vorliegt, in einer Zeile:** `fenster_bis` gegen die
+Fensterlänge halten. Liegt es dichter als ein, zwei Sekunden an der Kante,
+ist der Schnitt mit großer Wahrscheinlichkeit abgeschnitten und kein Ende.
+→ betrifft: alle, die in Fenstern aus einem langen Master suchen
+
+## 21.10.2026 — Eine Frage fängt nicht mit einem Fragewort an
+
+Nachdem die Fenstergrenze überbrückt war, lief Whitneys Stück **zu weit**: bis
+in seine Nachfrage *„So you don't agree that a cute little poodle called Mauro
+doesn't make life a little bit more meaningful?"*. Zwei Gründe auf einmal —
+sie beginnt mit *„So"* (kein Fragewort), und **das Fragezeichen steht zwei
+Whisper-Abschnitte später**.
+
+**Also wird ab einem Abschnitt der ganze Satz zusammengesetzt** (bis zum
+nächsten Satzzeichen, höchstens 12 Sekunden) und dieser geprüft, nicht der
+einzelne Abschnitt.
+
+**Und sofort der Gegenfehler, am selben Material gemessen:** mit *„so"* in der
+Öffnerliste brach Kyle Kingsburys Stück bei **31 statt 61 Sekunden** ab — sein
+eigener Satz *„So when you speak about the infallible nature of God … it's
+beyond language, right?"* beginnt mit „so" und endet acht Sekunden später auf
+ein Fragezeichen. **Ein rhetorisches „right?" am Satzende ist in diesen
+Antworten der Normalfall, nicht die Ausnahme.**
+
+**Die Eingrenzung, die beides löst:** *„so"* zählt nur, wenn direkt ein Frage-
+oder Anredewort folgt (`so you`, `so do`, `so is`, …). *„So when"* fällt damit
+heraus, *„So you don't agree"* nicht. **An allen drei Stücken gegengeprüft:**
+Wheelock 224,41 · Kyle 177,59 · Britton 97,25 — alle drei auf dem richtigen
+Satzende.
+→ betrifft: alle, die einen Bogen automatisch beenden
+
+## 21.10.2026 — Zwei von elf Folgen haben die Frage nicht
+
+| Folge | durchsucht | Ergebnis |
+|---|---|---|
+| Rob Bennett | 840 s, 1,74 GB | Reue, Rückblick, Verabschiedung — keine Sinnfrage |
+| Curtis Crane | 840 s, ~2,5 GB | Schlussbotschaft an die Trans-Bewegung, dann Abmoderation |
+
+**Beide Male sind die Fenster lückenlos und vollständig** — bei Curtis
+nachgemessen: 5751,3 → 6593,0, vier Fenster à 210–212 s, keine Lücke, und das
+letzte endet auf *„Ladies and gentlemen, this was Dr. Curtis Crane."* Es fehlt
+also nicht Material, sondern die Frage.
+
+**Eine Chronologie-Erklärung trägt nicht.** Rob Bennett war Folge 01 (Januar),
+Curtis Crane Folge 07 (August) — aber Francis Chouler als Folge 02 (März) hat
+die Frage, belegt über sein Transkript. **Er stellt sie also nicht jedes Mal.**
+Das ist die sparsamste Erklärung, und sie ist zu bestätigen, nicht zu glauben.
+
+**Praktisch heißt das: ein ergebnisloser Lauf ist ein Ergebnis.** Deshalb legt
+das Werkzeug auch dann einen Befund mit Grund und durchsuchtem Bereich ab —
+sonst sucht jeder spätere Lauf dieselben 2,5 GB noch einmal.
+→ betrifft: alle, die eine feste Frage über viele Folgen suchen
