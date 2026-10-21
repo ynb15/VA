@@ -39,6 +39,7 @@ ein 9:16-Ausschnitt aus einer Totale zeigt sonst den Tisch.
 """
 import argparse
 import json
+import sys
 
 import av
 import numpy as np
@@ -86,7 +87,7 @@ def _graustufen_folge(pfad, breite=160, abstand=0.2):
     return zeiten, klein, (w, h)
 
 
-def schnitte_finden(zeiten, klein, anteil=0.45, mittel=25.0):
+def schnitte_finden(zeiten, klein, anteil=0.45, mittel=25.0, melden=True):
     """Grenzen zwischen Einstellungen.
 
     Nicht ueber die mittlere Bildaenderung allein — daran ist die erste
@@ -95,15 +96,53 @@ def schnitte_finden(zeiten, klein, anteil=0.45, mittel=25.0):
     war. Entscheidend ist der ANTEIL des Bildes, der sich aendert: beim
     echten Kameraschnitt wechselt auch der Hintergrund, gemessen 0,51–0,61;
     bei der groessten Handbewegung nur 0,19–0,35. Dazwischen liegt Luft.
+
+    **Die beiden Schwellen sind am Sutcliffe-Studio geeicht und gelten nicht
+    ueberall.** Genau wie die Untertitelhoehe haengen sie am Raum: an Licht,
+    Hintergrund und daran, wie stark sich zwei Kamerawinkel unterscheiden.
+    Sitzen beide Kameras aehnlich, bleibt ein echter Schnitt unter 0,45 und
+    wird nicht gefunden — dann plant der Planer die ganze Strecke als **eine**
+    Einstellung, der Kasten steht fest, und beim Wechsel auf die Totale zeigt
+    er Kulisse statt Gast. Im Aaronson-Short lief so ein Kasten 56 Sekunden
+    am Stueck.
+
+    Der Planer ist daran nicht schuld — er legt fuer **jede** gefundene
+    Einstellung einen eigenen Kasten an. Gefehlt hat der Fund.
+
+    Deshalb meldet diese Funktion, was sie gesehen hat: wie viele Schnitte
+    gefunden wurden, wie lang die laengste Strecke ist, und welche Kandidaten
+    knapp unter der Schwelle lagen. Ein zu hoher Schwellenwert ist damit
+    sichtbar, statt still zu scheitern.
     """
     grenzen = [0]
+    knapp = []
     for i in range(1, len(klein)):
         a, b = klein[i - 1], klein[i]
         n = min(a.shape[0], b.shape[0]), min(a.shape[1], b.shape[1])
         d = np.abs(a[:n[0], :n[1]] - b[:n[0], :n[1]])
-        if float((d > 25).mean()) > anteil and d.mean() > mittel:
+        fl, mi = float((d > 25).mean()), float(d.mean())
+        if fl > anteil and mi > mittel:
             grenzen.append(i)
+        elif fl > anteil * 0.6 and mi > mittel * 0.6:
+            knapp.append((fl, mi, zeiten[i]))
     grenzen.append(len(klein))
+
+    if melden:
+        laengste = max((zeiten[min(grenzen[i + 1], len(zeiten) - 1)]
+                        - zeiten[grenzen[i]]
+                        for i in range(len(grenzen) - 1)), default=0.0)
+        print("Schnitterkennung: %d Einstellungen, laengste %.1f s "
+              "(Schwellen Flaeche %.2f / Mittel %.0f)"
+              % (len(grenzen) - 1, laengste, anteil, mittel), file=sys.stderr)
+        knapp.sort(reverse=True)
+        for fl, mi, t in knapp[:5]:
+            print("  knapp verfehlt bei %.1f s: Flaeche %.2f, Mittel %.0f"
+                  % (t, fl, mi), file=sys.stderr)
+        if laengste > 25.0:
+            print("  ACHTUNG: eine Einstellung laeuft %.0f s am Stueck. In "
+                  "einem Podcast ist das meist kein Schnitt, sondern ein "
+                  "nicht gefundener. --schnitt-anteil senken und nachsehen."
+                  % laengste, file=sys.stderr)
     return grenzen
 
 
@@ -240,11 +279,14 @@ def marke_meiden(kasten, marke, qb, qh):
 
 def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=0,
                abstand=0.2, zoom=1.0, kein_stapel=False,
-               zeile_folgt=False, marke=None, zeile=None):
+               zeile_folgt=False, marke=None, zeile=None,
+               schnitt_anteil=0.45, schnitt_mittel=25.0):
     zeiten, klein, (qb, qh) = _graustufen_folge(pfad, abstand=abstand)
     if len(klein) < 2:
         raise SystemExit("Zu wenige Bilder gelesen.")
-    grenzen = schnitte_finden(zeiten, klein)
+    grenzen = schnitte_finden(zeiten, klein,
+                              anteil=schnitt_anteil,
+                              mittel=schnitt_mittel)
     sy = qh / klein[0].shape[0]
     sx = qb / klein[0].shape[1]
 
@@ -374,6 +416,13 @@ if __name__ == "__main__":
                          "Sutcliffe-Studio sitzt sie bei 0.65, bei Just Push "
                          "Record bei 0.57 — dort steht die Kamera naeher, und "
                          "0.65 landet auf der Brust.")
+    ap.add_argument("--schnitt-anteil", type=float, default=0.45,
+                    help="Anteil des Bildes, der sich aendern muss, damit es "
+                         "als Kameraschnitt zaehlt. Am Sutcliffe-Studio "
+                         "geeicht; in anderen Raeumen nachmessen.")
+    ap.add_argument("--schnitt-mittel", type=float, default=25.0,
+                    help="Zusaetzliche Schwelle fuer die mittlere "
+                         "Bildaenderung.")
     ap.add_argument("--marke", default=None,
                     help="x0,y0,x1,y1 eines schon eingebrannten Logos in der "
                          "Quelle; der Ausschnitt weicht ihm aus. Fuer den "
@@ -389,7 +438,9 @@ if __name__ == "__main__":
                                       abstand=a.abstand, zoom=a.zoom,
                                       kein_stapel=a.kein_stapel,
                                       zeile_folgt=a.zeile_folgt, marke=marke,
-                                      zeile=a.zeile)
+                                      zeile=a.zeile,
+                                      schnitt_anteil=a.schnitt_anteil,
+                                      schnitt_mittel=a.schnitt_mittel)
     print(f"Bezugsbewegung {bezug:.2f} · {len(plan)} Einstellungen")
     for p in plan:
         mark = "TOT " if p["tot"] else "    "
