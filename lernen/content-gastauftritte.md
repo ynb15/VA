@@ -55,6 +55,50 @@ Neuester Eintrag oben.
   auf **jeder** Seite. Browser `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
   → betrifft: alle
 
+- **Der Plan liefert die Lippe, der Renderer setzt die Zeile GENAU dorthin —
+  der Abstand ist ein eigenes Flag und steht auf 0.** Seine Beanstandung vom
+  21.10.: *„Die Schrift ist überwiegend auch direkt auf Davids Lippen. Das
+  ist nicht optimal, das habe ich dir auch schon gesagt."* Gemessen: Plan
+  meldet `Lippe 1248` (65 % der Hoehe), und das Protokoll schreibt
+  `0 px unter der Lippe`. An drei Testbildern verglichen (0 / 120 / 200 px):
+  bei **0** sitzt die Zeile auf dem Bart, bei **120** frei darunter mit Luft
+  zum Logo, bei **200** draengt sie ans Logo. **`--tiefer 120` ist der Wert
+  fuer dieses Studio.** Seine Ansage „nicht direkt unter seiner Lippe" war
+  notiert, aber nirgends eingestellt — eine Regel, die in keinem Flag steht,
+  wirkt nicht.
+  → betrifft: alle Content-Agenten
+
+- **Ein Preset zu uebernehmen heisst nicht, es auf abgenommene Stuecke
+  anzuwenden.** Ich habe beim Einbauen des Presets das Logo von **700 px auf
+  302 px** (28 %) geaendert — an einem Short, dessen Logogroesse er bereits
+  abgenommen hatte. Seine Reaktion: *„dann ist auch mein Logo ploetzlich viel
+  kleiner."* **Er hatte keine Aenderung am Logo bestellt.** Der Auftrag „nimm
+  sein Preset" galt dem, was offen war, nicht dem, was schon stand.
+  **Regel: ein neues Preset gilt fuer Neues. Was er abgenommen hat, bleibt,
+  bis er es selbst aendert.**
+  → betrifft: alle
+
+- **`mean_volume` der Gesamtmischung taugt nicht, um ein Musikbett zu
+  pruefen.** Zwischen der Fassung ohne Musik und der lautesten mit Musik
+  lagen **0,6 dB** — und in der Sprechpause 0,1 dB. Das sah nach „keine Musik
+  im Signal" aus, war aber nur das falsche Messinstrument: die fast
+  durchgehende Stimme bestimmt den Mittelwert. **Richtig ist, den
+  Bett-Zweig allein durch dieselbe Kette zu schicken und dort zu messen** —
+  dann steht da −36,7 / −40,7 / −45,7 dB gegen eine Stimme bei −29,1 dB.
+  Auch die Differenz zweier Dateien hilft nicht: beide sind neu AAC-kodiert,
+  die Stimme hebt sich nicht weg (max 0,0 dB, reines Codec-Rauschen).
+  → betrifft: alle Content-Agenten
+
+- **`video/musik_drunter.py` legt ein Bett unter einen FERTIGEN Short.**
+  Gleiche Kette wie `--musik` im Renderer (geloopt, 1,5 s ein, 2 s aus,
+  `sidechaincompress` threshold 0,04 / ratio 8, `amix normalize=0`), aber
+  ohne erneutes Transkribieren und Encodieren des Bildes: `-c:v copy`.
+  Drei Pegelfassungen kosten so Minuten statt drei vollen Durchlaeufen.
+  **Falle beim Nachbauen:** `shorts-render.py` wertet beim Import sein
+  eigenes `argparse` aus, man muss `sys.argv` leeren — und die eigenen
+  Argumente **vorher** sichern, sonst sind sie weg.
+  → betrifft: alle Content-Agenten
+
 - **Die zusammengefuehrte Renderer-Fassung hat zwei Regressionen gegen
   Entscheidungen, die in `LERNEN.md` schon stehen.** Beide fielen erst auf,
   als er am 21.10. am Sutcliffe-Short ein Fragezeichen bestellt hat
