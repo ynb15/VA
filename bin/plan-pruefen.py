@@ -14,11 +14,11 @@ heute = datetime.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 \
         else datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=2))).date()
 
 PODCASTS = {
+    datetime.date(2026, 10, 25): "Scott Aaronson",
     datetime.date(2026, 10, 31): "Kyle Kingsbury",
-    datetime.date(2026, 11, 14): "Scott Aaronson",
-    datetime.date(2026, 11, 28): "David Sutcliffe",
-    datetime.date(2026, 12, 12): "Matt Defina",
-    datetime.date(2026, 12, 19): "Ken Stern",
+    datetime.date(2026, 11, 13): "Rick Strassman",
+    datetime.date(2026, 11, 27): "Matt Defina",
+    datetime.date(2026, 12,  4): "Marian Goodell",
 }
 VORLAUF = [(10, "Transkript",                   "content-schlicht"),
            (8,  "Clip- und Short-Auswahl",      "content-schlicht"),

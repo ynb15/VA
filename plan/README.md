@@ -12,10 +12,11 @@ auf YouTube"), Shorts und Clips unter der Woche drumherum · **Rückkatalog
 mitnutzen**, vor allem Craig Makhosi und Francis Chouler · **Short-Beschreibungen
 braucht er nicht** · **er nimmt täglich ab, Stück für Stück.**
 
-## Die drei Dateien
+## Die vier Dateien
 
 | | |
 |---|---|
+| **`plan/ABLAUF.md`** | **Die Regeln.** Wer macht was, bis wann, und wann ist es fertig. Auf seine Bitte vom 21.10.: *„wir brauchen klare Regeln."* Wer eine Frage zum Vorgehen hat, liest zuerst hier. |
 | `plan/folgen.md` | Der Bestand. Was aufgenommen ist, was davon schon existiert, welche Vorlaufzeiten gelten. Von Hand gepflegt. |
 | `plan/kalender.md` | Der Kalender, Tag für Tag. **Erzeugt** von `bin/kalender-bauen.py` — nicht von Hand ändern, sonst ist er beim nächsten Lauf weg. |
 | `bin/plan-pruefen.py` | Die Kontrolle. Was geht heute raus, welche Frist greift, wie tief ist der Vorrat. |
@@ -45,14 +46,9 @@ und eine Lücke ist das Einzige, was ein Takt nicht verzeiht.
 
 ## Die Vorlaufzeiten
 
-| Frist | Was | Wer |
-|---|---|---|
-| T−10 | Transkript | Content Assistant (Shorts) |
-| T−8 | Clip- und Short-Auswahl | Content Assistant (Shorts) |
-| T−6 | Titel · Beschreibung · Tags | YouTube Manager |
-| T−5 | Thumbnails | Thumbnail Assistant |
-| T−3 | Shorts gebaut | Content Assistants |
-| T−2 | Paket vollständig bei ihm | Alfred |
+Stehen mit Besitzer und Fertig-Kriterium in **`plan/ABLAUF.md`**, Abschnitt 2.
+Kurz: T−10 Transkript · T−8 Auswahl · T−6 Text · T−5 Bild · T−3 Shorts ·
+T−2 Paket bei ihm.
 
 **T−3 trägt eine Nachbesserungsrunde ein**, weil bisher **jedes** Short eine
 gebraucht hat. Eine Frist ohne Nachbesserungsrunde ist eine Frist, die reißt.

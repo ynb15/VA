@@ -6,10 +6,10 @@ Takt und Wochenendlage sind seine Vorgaben vom 21.10.2026:
 ich veröffentliche in der Regel auch am Wochenende die Main Podcasts
 und dann drumherum unter der Woche Shorts und Clips.“
 
-**71 Tage · 5 Podcasts · 15 Clips · 51 Shorts**
+**71 Tage · 5 Podcasts · 18 Clips · 48 Shorts**
 
-Der 26.12. ist ausgelassen (zweiter Weihnachtstag); der fünfte
-Podcast steht stattdessen am Samstag, 19.12.
+Termine von ihm am 21.10. gesetzt. Nach dem 04.12. ist offen —
+seine Worte: „und ab dann schauen wir da nochmal.“
 
 ---
 
@@ -17,11 +17,11 @@ Podcast steht stattdessen am Samstag, 19.12.
 
 | Podcast | Datum | T−10 Transkript | T−8 Auswahl | T−6 Text | T−5 Thumbnail | T−3 Shorts | T−2 bei ihm |
 |---|---|---|---|---|---|---|---|
+| **Scott Aaronson** | So 25.10. | 15.10. | 17.10. | 19.10. | 20.10. | 22.10. | 23.10. |
 | **Kyle Kingsbury** | Sa 31.10. | 21.10. | 23.10. | 25.10. | 26.10. | 28.10. | 29.10. |
-| **Scott Aaronson** | Sa 14.11. | 04.11. | 06.11. | 08.11. | 09.11. | 11.11. | 12.11. |
-| **David Sutcliffe** | Sa 28.11. | 18.11. | 20.11. | 22.11. | 23.11. | 25.11. | 26.11. |
-| **Matt Defina** | Sa 12.12. | 02.12. | 04.12. | 06.12. | 07.12. | 09.12. | 10.12. |
-| **Ken Stern** | Sa 19.12. | 09.12. | 11.12. | 13.12. | 14.12. | 16.12. | 17.12. |
+| **Rick Strassman** | Fr 13.11. | 03.11. | 05.11. | 07.11. | 08.11. | 10.11. | 11.11. |
+| **Matt Defina** | Fr 27.11. | 17.11. | 19.11. | 21.11. | 22.11. | 24.11. | 25.11. |
+| **Marian Goodell** | Fr 04.12. | 24.11. | 26.11. | 28.11. | 29.11. | 01.12. | 02.12. |
 
 **Stand 21.10.2026:** die Frist T−10 für Kingsbury ist **heute**.
 Was heute nicht anläuft, verschiebt den 31.10.
@@ -41,7 +41,7 @@ Quelle und seinen Zustand, sobald es gebaut ist.
 | Do 22.10. | Short | — | offen |
 | Fr 23.10. | Short | — | offen |
 | Sa 24.10. | Clip | 3–10 Min | offen |
-| So 25.10. | Clip | 10–20 Min | offen |
+| So 25.10. | **PODCAST** | Scott Aaronson | offen |
 | Mo 26.10. | Short | — | offen |
 | Di 27.10. | Short | — | offen |
 | Mi 28.10. | Short | — | offen |
@@ -65,8 +65,8 @@ Quelle und seinen Zustand, sobald es gebaut ist.
 | Di 10.11. | Short | — | offen |
 | Mi 11.11. | Short | — | offen |
 | Do 12.11. | Short | — | offen |
-| Fr 13.11. | Short | — | offen |
-| Sa 14.11. | **PODCAST** | Scott Aaronson | offen |
+| Fr 13.11. | **PODCAST** | Rick Strassman | offen |
+| Sa 14.11. | Clip | 3–10 Min | offen |
 | So 15.11. | Clip | 10–20 Min | offen |
 | Mo 16.11. | Short | — | offen |
 | Di 17.11. | Short | — | offen |
@@ -79,8 +79,8 @@ Quelle und seinen Zustand, sobald es gebaut ist.
 | Di 24.11. | Short | — | offen |
 | Mi 25.11. | Short | — | offen |
 | Do 26.11. | Short | — | offen |
-| Fr 27.11. | Short | — | offen |
-| Sa 28.11. | **PODCAST** | David Sutcliffe | offen |
+| Fr 27.11. | **PODCAST** | Matt Defina | offen |
+| Sa 28.11. | Clip | 3–10 Min | offen |
 | So 29.11. | Clip | 10–20 Min | offen |
 | Mo 30.11. | Short | — | offen |
 
@@ -91,7 +91,7 @@ Quelle und seinen Zustand, sobald es gebaut ist.
 | Di 01.12. | Short | — | offen |
 | Mi 02.12. | Short | — | offen |
 | Do 03.12. | Short | — | offen |
-| Fr 04.12. | Short | — | offen |
+| Fr 04.12. | **PODCAST** | Marian Goodell | offen |
 | Sa 05.12. | Clip | 3–10 Min | offen |
 | So 06.12. | Clip | 10–20 Min | offen |
 | Mo 07.12. | Short | — | offen |
@@ -99,14 +99,14 @@ Quelle und seinen Zustand, sobald es gebaut ist.
 | Mi 09.12. | Short | — | offen |
 | Do 10.12. | Short | — | offen |
 | Fr 11.12. | Short | — | offen |
-| Sa 12.12. | **PODCAST** | Matt Defina | offen |
+| Sa 12.12. | Clip | 3–10 Min | offen |
 | So 13.12. | Clip | 10–20 Min | offen |
 | Mo 14.12. | Short | — | offen |
 | Di 15.12. | Short | — | offen |
 | Mi 16.12. | Short | — | offen |
 | Do 17.12. | Short | — | offen |
 | Fr 18.12. | Short | — | offen |
-| Sa 19.12. | **PODCAST** | Ken Stern | offen |
+| Sa 19.12. | Clip | 3–10 Min | offen |
 | So 20.12. | Clip | 10–20 Min | offen |
 | Mo 21.12. | Short | — | offen |
 | Di 22.12. | Short | — | offen |

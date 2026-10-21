@@ -12,11 +12,11 @@ ENDE  = datetime.date(2026, 12, 31)
 
 # Podcast-Samstage: zwei im Monat, 26.12. gemieden (zweiter Weihnachtstag)
 PODCASTS = {
+    datetime.date(2026, 10, 25): ("Scott Aaronson",  "21.08.2026"),
     datetime.date(2026, 10, 31): ("Kyle Kingsbury",  "31.08.2026"),
-    datetime.date(2026, 11, 14): ("Scott Aaronson",  "21.08.2026"),
-    datetime.date(2026, 11, 28): ("David Sutcliffe", "26.08.2026"),
-    datetime.date(2026, 12, 12): ("Matt Defina",     "04.09.2026"),
-    datetime.date(2026, 12, 19): ("Ken Stern",       "14.09.2026"),
+    datetime.date(2026, 11, 13): ("Rick Strassman",  "18.09.2026"),
+    datetime.date(2026, 11, 27): ("Matt Defina",     "04.09.2026"),
+    datetime.date(2026, 12,  4): ("Marian Goodell",  "06.10.2026"),
 }
 
 VORLAUF = [(10, "Transkript", "Content Assistant (Shorts)"),
@@ -56,8 +56,8 @@ aus.append("*„mindestens fünf, idealerweise sieben Content Pieces pro Woche �
 aus.append("ich veröffentliche in der Regel auch am Wochenende die Main Podcasts")
 aus.append("und dann drumherum unter der Woche Shorts und Clips.\u201c\n")
 aus.append(f"**{len(zeilen)} Tage · {n_pod} Podcasts · {n_clip} Clips · {n_short} Shorts**\n")
-aus.append("Der 26.12. ist ausgelassen (zweiter Weihnachtstag); der fünfte")
-aus.append("Podcast steht stattdessen am Samstag, 19.12.\n")
+aus.append("Termine von ihm am 21.10. gesetzt. Nach dem 04.12. ist offen —")
+aus.append("seine Worte: „und ab dann schauen wir da nochmal.\u201c\n")
 aus.append("---\n")
 aus.append("## Die Vorlauftermine — danach löse ich die Aufträge aus\n")
 aus.append("| Podcast | Datum | T−10 Transkript | T−8 Auswahl | T−6 Text | T−5 Thumbnail | T−3 Shorts | T−2 bei ihm |")

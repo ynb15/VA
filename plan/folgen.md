@@ -14,16 +14,19 @@ direkt unter `YNB Podcast`.
 Bei **zwei Folgen im Monat** reicht dieser Bestand **bis Ende Februar 2027** —
 ohne eine einzige neue Aufnahme. Das Nadelöhr ist also nicht das Material.
 
-| # | Gast | Aufnahme | Drive-Ordner | Was schon da ist |
+**Die Termine hat er am 21.10. selbst gesetzt.** Nach dem 04.12. ist offen:
+*„und ab dann schauen wir da nochmal."*
+
+| Termin | Gast | Aufnahme | Drive-Ordner | Was schon da ist |
 |---|---|---|---|---|
-| 1 | **Kyle Kingsbury** | 31.08.2026 | `1Y7-B2vZn1WFXINQamcnjRMgCM6Ztvust` | Thumbnail-Agent hat Material nachgemessen (`397e9b8`) |
-| 2 | **Scott Aaronson** | 21.08.2026 | `1fv8Jw8v0IwN7kGiLQ-WHSjwXsYpVtkSb` | Transkript (1504 Segmente, 102:13) · 8 Short-Kandidaten · 1 Short gebaut · 4 Thumbnails · Beschreibung A+B · Titel+Thumbnail-Zeilen |
-| 3 | **David Sutcliffe** | 26.08.2026 | `17QfVLgnVoyYi5hMlNtZyMYgmPi_0yrOS` | 4 Shorts gebaut · Meaningful-Stück |
-| 4 | **Matt Defina** | 04.09.2026 | `1K2cpLvNJ6mrR8Xg7qyhRzgjqSNZCmAIw` | Meaningful-Stück |
-| 5 | **Logan Gonzalez** | 11.09.2026 | `1LZnl1qhXTDQIluFQlohnlsqwz_pMrwyG` | Meaningful-Stück |
-| 6 | **Ken Stern** | 14.09.2026 | `18nUfXLmrKTPBfgwh90MATPKjgmNsjTJQ` | Meaningful-Stück |
-| 7 | **Rick Strassman** | 18.09.2026 | `1OKUFDBDyeEqV7iwypV5Q-vyQi7WL9b_C` | Meaningful-Stück (**Ende offen, seine Entscheidung**) |
-| 8 | **Marian Goodell** | 06.10.2026 | `1Stnn8uXZO_sWkx-c0CKR6NE9RbXi0elX` | — · **offene Frage von ihr zum Transkript, 13.10.** |
+| **So 25.10.** | **Scott Aaronson** | 21.08.2026 | `1fv8Jw8v0IwN7kGiLQ-WHSjwXsYpVtkSb` | Transkript (1504 Segmente, 102:13) · 8 Short-Kandidaten · 1 Short gebaut · **9 Thumbnails** · Beschreibung A+B (laufzeitabhängig) · Titel + Thumbnail-Zeilen |
+| **Sa 31.10.** | **Kyle Kingsbury** | 31.08.2026 | `1Y7-B2vZn1WFXINQamcnjRMgCM6Ztvust` | Thumbnail-Material nachgemessen (`397e9b8`) · Transkript läuft seit 21.10. |
+| **Fr 13.11.** | **Rick Strassman** | 18.09.2026 | `1OKUFDBDyeEqV7iwypV5Q-vyQi7WL9b_C` | Meaningful-Stück (**Ende offen, seine Entscheidung**) |
+| **Fr 27.11.** | **Matt Defina** | 04.09.2026 | `1K2cpLvNJ6mrR8Xg7qyhRzgjqSNZCmAIw` | Meaningful-Stück |
+| **Fr 04.12.** | **Marian Goodell** | 06.10.2026 | `1Stnn8uXZO_sWkx-c0CKR6NE9RbXi0elX` | — · **offene Frage von ihr zum Transkript seit 13.10. — vor dem 04.12. zu klären** |
+| offen | David Sutcliffe | 26.08.2026 | `17QfVLgnVoyYi5hMlNtZyMYgmPi_0yrOS` | 4 Shorts gebaut · Meaningful-Stück |
+| offen | Logan Gonzalez | 11.09.2026 | `1LZnl1qhXTDQIluFQlohnlsqwz_pMrwyG` | Meaningful-Stück |
+| offen | Ken Stern | 14.09.2026 | `18nUfXLmrKTPBfgwh90MATPKjgmNsjTJQ` | Meaningful-Stück |
 
 **Statusfehler in der Notion-Databank, die dabei auffallen:** Aaronson,
 Kingsbury und Defina stehen auf *Confirmed*, obwohl ihre Folgen aufgenommen und
