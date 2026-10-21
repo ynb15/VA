@@ -46,3 +46,9 @@ makhosi -> Makhosi
 # Fragezeichen mitten in den Satz ("meaningful? for you?").
 meaningful for you -> meaningful for you?
 makes your life meaningful -> makes your life meaningful?
+# 21.10., Sutcliffe: Whisper haengt an seine ANTWORT "Other people" ein
+# Fragezeichen, weil die Stimme oben bleibt. Genau das Fragezeichen, das
+# keine Frage ist, hat ihn am 20.10. gestoert. Der Punkt rechts ist der
+# Griff dafuer: er verdraengt das "?" des Originals, und _anzeige() nimmt
+# den Punkt danach wieder weg — im Bild steht "OTHER PEOPLE".
+other people -> other people.
