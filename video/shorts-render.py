@@ -150,7 +150,17 @@ def cues_als_srt(cues, pfad, tempo=1.0, gross=True):
     return len(cues)
 
 
-SATZZEICHEN = ".,!?;:\u2026"
+SATZZEICHEN = ".,!;:\u2026"
+# Das Fragezeichen bleibt stehen — seine Ansage vom 21.10.: die Frage soll
+# „in einer Einblendung mit einem Fragezeichen" stehen. Am 20.10. hatte er
+# das Gegenteil gesagt („wirkt total fehl am Platz"); die juengere Ansage
+# gilt. Punkt, Komma und Ausrufezeichen fallen weiter weg.
+# Eine Einblendung, die auf ein Fragezeichen endet, darf breiter werden als
+# die uebrigen: `MEANINGFUL TO YOU?` misst bei 82 px 884 px und passt nicht
+# in die 72 Prozent des Presets. Lieber diese eine Zeile 84 Prozent breit
+# als sie zu teilen oder kleiner zu setzen — dass eine Einblendung kleiner
+# gesetzt ist als die davor, war sein Einwand vom 20.10.
+FRAGE_BREITE = int(W * 0.84)
 
 
 def _anzeige(wort, gross):
@@ -164,6 +174,11 @@ def _anzeige(wort, gross):
     """
     w = wort.rstrip(SATZZEICHEN)
     return w.upper() if gross else w
+
+
+def _ist_frage(woerter):
+    """Endet die Einblendung auf einem Fragezeichen?"""
+    return bool(woerter) and str(woerter[-1].get("t", "")).rstrip().endswith("?")
 
 
 _FONT_CACHE = {}
@@ -575,7 +590,8 @@ def _packen(woerter, worte, max_px):
     for w in woerter:
         kand = akt + [w]
         text = " ".join(_anzeige(x["t"], True) for x in kand)
-        if akt and (len(kand) > worte or _breite_px(text) > max_px):
+        schranke = FRAGE_BREITE if _ist_frage(kand) else max_px
+        if akt and (len(kand) > worte or _breite_px(text) > schranke):
             gruppen.append(akt)
             akt = [w]
         else:
@@ -587,7 +603,7 @@ def _packen(woerter, worte, max_px):
     if len(gruppen) >= 2 and len(gruppen[-1]) == 1 and len(gruppen[-2]) >= 3:
         kand = gruppen[-2][-1:] + gruppen[-1]
         text = " ".join(_anzeige(x["t"], True) for x in kand)
-        if _breite_px(text) <= max_px:
+        if _breite_px(text) <= (FRAGE_BREITE if _ist_frage(kand) else max_px):
             gruppen[-2] = gruppen[-2][:-1]
             gruppen[-1] = kand
     return gruppen
