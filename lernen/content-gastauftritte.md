@@ -55,6 +55,42 @@ Neuester Eintrag oben.
   auf **jeder** Seite. Browser `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
   → betrifft: alle
 
+- **`--srt` zusammen mit `--srt-out` bricht den Renderer ab.**
+  `KeyError: 'woerter'` in `cues_als_srt`, Zeile 146: `srt_to_cues()` baut
+  Cues ohne Wortliste, `cues_als_srt()` verlangt sie aber. Tritt nur bei
+  dieser Kombination auf, und erst nach dem Transkodieren — also nach der
+  teuren Minute. **Wer eine fertige SRT wiederverwendet, laesst `--srt-out`
+  weg.**
+  → betrifft: content-*
+
+- **Eine wiederverwendete SRT kostet das gelbe Aktivwort.** `--srt` liefert
+  nur Cue-Grenzen, keine Wortzeiten — die Hervorhebung des gesprochenen
+  Wortes braucht aber Wortzeiten und faellt damit still weg. Am Sutcliffe-Short
+  gemessen: Gruppierung und Wortlaut stimmten, **die Farbe fehlte komplett**,
+  und im Renderprotokoll steht kein Hinweis darauf. Wer den abgenommenen Look
+  will, muss `--auto-captions` nehmen, auch wenn eine geprueft SRT schon
+  dasteht. **Die SRT taugt zum Pruefen des Wortlauts, nicht als Ersatz fuer
+  die Transkription.**
+  → betrifft: content-*
+
+- **Zeitbasis beim Zurueckspielen einer SRT: mal Tempo, nicht geteilt.**
+  `--srt-out` schreibt Ausgabezeit (`start / tempo`), `--srt` erwartet
+  Quellzeit. Eine mit `--srt-out` bei Tempo 1,2 geschriebene Datei muss also
+  **× 1,2** zurueckgerechnet werden. Probe am Sutcliffe-Short: letzter Cue
+  49,15 s × 1,2 = 58,98 s, Clip 59,6 s — passt.
+  → betrifft: content-*
+
+- **Seine Praezisierung zur Wohnort-Regel, 21.10.:** *„Cape Town oder South
+  Africa — ich moechte es halt nur nicht genauer veroeffentlichen."* Also
+  **Stadt und Land duerfen fallen, alles Feinere nicht.** `video/ortscheck.py`
+  hat auf diesem Branch jetzt zwei Stufen: `GROB` (Cape Town, South Africa,
+  Western Cape, Tafelberg) wird nur gezaehlt, `ORTE` (Scarborough, Kommetjie,
+  Misty Cliffs, Noordhoek, Fish Hoek, Muizenberg …) schlaegt an und setzt
+  die Rueckgabe auf 1. Vorher stand „cape town" und „south africa" in der
+  Sperrliste — das haette jeden Short mit seiner Herkunftsgeschichte
+  blockiert. **Gehoert zurueck nach `content-schlicht`, dort liegt die Datei.**
+  → betrifft: content-*, thumbnails
+
 - **Gegen den Fehler des Tages hilft eine Schwelle, die vor der Messung
   feststeht.** Alfred und ich haben am 21.10. denselben Fehler gemacht — eine
   Lesart fuer eine Tatsache gehalten; bei ihm kostete es drei Thumbnails, bei
