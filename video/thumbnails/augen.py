@@ -30,7 +30,14 @@ def messen(pfad_oder_bgr):
     _, res = _det(w, h).detect(bgr)
     if res is None or not len(res):
         return None
-    r = max(res, key=lambda r: r[3])
+    # Nach Sicherheit waehlen, nicht nach Groesse. In der Ken-Stern-Aufnahme
+    # meldete YuNet im selben Bild einen Rahmen von 574 px Hoehe — das war
+    # das Mikrofon vor dem hellen Hemd, und weil es groesser war als das
+    # Gesicht, gewann es. Gleicher Fehler wie der 109-px-"Kopf" in der
+    # DJI-Datei, der eine Hand war.
+    r = max(res, key=lambda r: r[-1])
+    if float(r[-1]) < 0.80:
+        return None
     ar, al = (float(r[4]), float(r[5])), (float(r[6]), float(r[7]))
     pd = ((ar[0] - al[0]) ** 2 + (ar[1] - al[1]) ** 2) ** 0.5
     if pd < 20:
