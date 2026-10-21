@@ -8388,3 +8388,33 @@ Nutzungsfenster, nicht über ein Guthaben, und das Fenster war nie
 **REGEL: eine Zahl, die ich nenne, muss ich auch einordnen können.** Ich habe
 sie als Warnung gemeint und sie klang wie eine Rechnung. Nächstes Mal dazu,
 was sie misst — oder weglassen.
+
+── DER SUBSTACK-ORDNER IST DA (21.10.)
+`1zd-wlZ8YW7FnB7u_F6FeaU2NIdCYw75C` — rund **30 Google Docs** mit dem Präfix
+„Substack: " plus **sieben Unterordner** (*Feedback · The Crisis of Men ·
+Friendship · 2026 · Welcome · Trolling · Value*). Eigentümer `ynb@`, Lesen
+über den Docs- oder Drive-Connector, **Schreiben nicht freigegeben.**
+Damit hat der Head of Content seine Grundlage, auch ohne die Freischaltung
+von `substack.com`.
+**Ein Dokument sticht heraus:** „Substack: Chris Will", 1,4 MB, zuletzt am
+19.10. geändert — offenbar Material über **Chris Williamson**, also über
+eines der fünf Vorbilder, die gerade analysiert werden sollen. Möglicherweise
+hat er diese Arbeit in Teilen schon gemacht. **Erst hineinsehen, dann
+anfangen.**
+
+── AGENTEN IN DER CLOUD ERREICHT MAN NICHT MIT `SendMessage` (21.10. geprüft)
+`ListAgents` listet nur Sessions **auf dieser Maschine**. Die Agenten laufen
+als Claude-Code-Remote-Sessions in der Cloud und tauchen dort nicht auf; ein
+`SendMessage` an sie scheitert mit *„No agent named … is reachable."*
+
+**Der Weg, der funktioniert:** `create_trigger` mit
+`persistent_session_id: <ziel-session>` und `run_once_at` zwei bis drei
+Minuten in der Zukunft. **Der Prompt ist die Nachricht** und wird dort als
+Benutzerzug zugestellt. Einmalig, löscht sich nach dem Feuern selbst.
+
+**Das war ein Fehler im ersten Entwurf der Nachtschicht-Aufsicht** — dort
+stand „anstupsen per `SendMessage`", und das hätte um 03:40 stumm versagt.
+Korrigiert. **Die Lehre: einen Weg, den eine Anweisung vorschreibt, einmal
+tatsächlich gehen, bevor die Anweisung gespeichert wird.** Ein ungeprüfter
+Pfad in einem Auftrag, der nachts allein läuft, ist kein Auftrag, sondern
+eine Hoffnung.
