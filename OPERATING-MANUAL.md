@@ -8316,3 +8316,54 @@ Der Content Assistant hat in fünf Stunden betreuter Arbeit **86 $** verbraucht.
 Eine unbeaufsichtigte Nacht in dieser Größenordnung ist kein Rundungsfehler.
 **Die Taktung ist deshalb seine Entscheidung, nicht meine** — gesagt, nicht
 verschwiegen, und leicht zu ändern.
+
+═══════════════════════════════════════════════════════════════════
+DIE ZAHL 71 IST EINGELÖST: ES SIND 60 PERSONEN (21.10., Guest Booker)
+───────────────────────────────────────────────────────────────────
+
+Am 18.10. stand hier: *„Damit ist die Zahl 71 eine Obergrenze, kein Befund.
+Neu herzuleiten."* Hergeleitet, mit beiden Prüfungen, die die Regel verlangt:
+
+1. **Pro Person zusammengelegt**, nicht pro Faden: 71 Tabellenzeilen → **62
+   Personen.** Mehrfach angeschrieben: Zach Leary (3×), Dr. Dan Engle, Kim
+   (rappid.run), Justin Lovato, Matthew McConaughey, Paul Austin, Timothy
+   Allen Olson, Yung Pueblo (je 2×).
+2. **Alle 88 Adressen der Liste über das ganze Archiv geprüft** —
+   fünf Abfragen `in:anywhere from:{…}` mit `includeTrash: true`. Vierzehn
+   Treffer, **kein einziger eine menschliche Antwort auf den Pitch**: die zwei
+   schon bekannten Fehleinträge (Brendan Kane 09.07., Chase Reeves 06.09.),
+   zwei Autoreplies (Mayor Watson, Carhart-Harris) und zehn Rundbriefe.
+
+**Stand: 60 Personen ohne jede Antwort, dazu 6 unerreichbar (Bounce).**
+Die Label-Zahl `YNBPodcast/Outreaches` steht weiter auf **111 Fäden** —
+seit dem 03.09. ist nichts Neues rausgegangen.
+
+**Die OR-Abfrage ist das Werkzeug dafür.** `from:{a b c …}` prüft achtzehn
+Adressen in einem Aufruf; achtundachtzig Adressen kosten fünf Abfragen statt
+achtundachtzig. Was sie **nicht** kann: eine Antwort von einer *anderen*
+Adresse derselben Person finden (Agentur, Assistenz, zweites Postfach). Das
+gehört zu jeder Zahl dazu, die mit ihr belegt ist.
+
+**Nebenbefund mit Wert:** Carhart-Harris' Autoreply vom 07.08. nennt seine
+heutige Zugehörigkeit (**UCSF**, nicht Imperial) und seine Assistenz
+`buglova.kat@ucsf.edu`. Ein Autoreply ist keine Antwort — aber er kann eine
+Adresse korrigieren, und die alte steht in der Liste.
+
+───────────────────────────────────────────────────────────────────
+DIE DATABANK KENNT DREI GESENDETE FOLGEN NICHT (21.10.)
+───────────────────────────────────────────────────────────────────
+
+**Rob Paddock** steht auf *Researching*, **Francis Chouler** und **Rob Bennett**
+haben **gar keine Zeile** — alle drei Folgen sind veröffentlicht (Chouler ist mit
+12.045 Aufrufen das stärkste lange Video des Kanals). Ebenso ohne Zeile:
+**Mark Kaplan** (Treffen Fr 16.10., 10:30–12:00 Kapstadt, von ihm selbst
+angelegt). **Sean Meyersfield** steht auf *Not Started* und wird in beiden
+Sponsoring-Pitches als Gast geführt.
+
+**Dieselbe Ursache wie der blinde Fleck vom 18.10.:** sein Betrieb läuft nicht
+durch mein Postfach. **Regel: eine Databank-Lücke wird nicht am Mailverkehr
+gesucht, sondern an den drei Orten, an denen Gäste wirklich auftauchen —
+veröffentlichte Folgen auf dem Kanal, Kalenderblöcke mit Personennamen, und die
+Gästeliste in seinen eigenen Pitches.** Alle drei liegen außerhalb der Mail.
+
+Vollständiger Stand mit Belegen: `podcast/stand-2026-10-21.md`.
