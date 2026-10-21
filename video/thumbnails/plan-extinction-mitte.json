@@ -6,17 +6,17 @@
   "ziel_rechts": {
    "augen_x": 1128,
    "kinn_y": 612,
-   "box_h": 524
+   "box_h": 541
   },
   "mitte": "video/thumbnails/_mittelgrafik.jpg",
   "mitte_karte": false,
   "mitte_breite": 620,
   "mitte_dunkel": 1.0,
-  "mitte_unten": 724,
+  "mitte_unten": 758,
   "logo": "video/thumbnails/_logo_openai.png",
   "logo_xy": [
    555,
-   377
+   411
   ],
   "logo_groesse": 132,
   "zeilen": [
@@ -25,11 +25,13 @@
   ],
   "kasten": 1,
   "ziel": "video/thumbnails/aaronson-extinction-mitte.jpg",
-  "grad": 127,
   "ziel_links": {
    "augen_x": 167,
-   "kinn_y": 592,
-   "box_h": 595
-  }
+   "kinn_y": 587,
+   "box_h": 575
+  },
+  "max_breite": 856,
+  "max_hoehe": 300,
+  "text_mitte_y": 169
  }
 ]
