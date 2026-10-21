@@ -143,26 +143,39 @@ def main():
         ids += [z.split('#')[0].strip() for z in open(a.liste) if z.split('#')[0].strip()]
     os.makedirs(a.out, exist_ok=True)
     ergebnis = os.path.join(a.out, 'messung.json')
-    alle = json.load(open(ergebnis)) if os.path.exists(ergebnis) else {}
+
+    def lies():
+        try: return json.load(open(ergebnis))
+        except Exception: return {}
+
+    def merke(vid, eintrag):
+        # Frisch einlesen und nur den eigenen Eintrag setzen: laeuft ein
+        # zweiter Durchgang parallel, haette ein Schreiben aus dem Stand
+        # vom Start dessen Ergebnisse geloescht. Genau das ist am 21.10.
+        # passiert - ein fertig gemessenes Video stand hinterher wieder
+        # als offen in der Datei.
+        d = lies(); d[vid] = eintrag
+        json.dump(d, open(ergebnis, 'w'), indent=1, ensure_ascii=False)
+
+    alle = lies()
     start = time.time()
     for vid in ids:
         if a.frist and time.time() - start > a.frist:
             print('Frist erreicht, Rest beim naechsten Aufruf.'); break
+        alle = lies()
         if vid in alle and alle[vid].get('fertig') and not alle[vid].get('fehler'):
             print(f'{vid} schon gemessen'); continue
         m = meta(vid, a.out)
         if not m:
             # Nicht als fertig abhaken: beim naechsten Aufruf erneut versuchen.
-            alle[vid] = dict(fertig=False, fehler='abgewiesen')
-            json.dump(alle, open(ergebnis,'w'), indent=1, ensure_ascii=False)
+            merke(vid, dict(fertig=False, fehler='abgewiesen'))
             print(f'{vid} abgewiesen, kommt beim naechsten Aufruf dran', flush=True)
             time.sleep(a.pause); continue
         ks = kacheln(m, hole(m, a.out))
         r = messen(ks, m['dauer'] or 1, a.schwelle) or {}
         p = None if a.kein_blatt else blatt(m, ks, a.out)
-        alle[vid] = dict(fertig=True, titel=m['titel'], kanal=m['kanal'],
-                         dauer=m['dauer'], blatt=p, **r)
-        json.dump(alle, open(ergebnis,'w'), indent=1, ensure_ascii=False)
+        merke(vid, dict(fertig=True, titel=m['titel'], kanal=m['kanal'],
+                        dauer=m['dauer'], blatt=p, **r))
         print(f"{vid} {m['dauer']}s  {r.get('wechsel')} Wechsel  "
               f"Median {r.get('strecke_median')}s  {m['titel'][:48]}", flush=True)
         time.sleep(a.pause)
