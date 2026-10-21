@@ -374,3 +374,25 @@ Das ist die sparsamste Erklärung, und sie ist zu bestätigen, nicht zu glauben.
 das Werkzeug auch dann einen Befund mit Grund und durchsuchtem Bereich ab —
 sonst sucht jeder spätere Lauf dieselben 2,5 GB noch einmal.
 → betrifft: alle, die eine feste Frage über viele Folgen suchen
+
+## 21.10.2026 — Zwei eigene Fehler derselben Familie: nebeneinander laufen lassen
+
+**Erstens, schon einmal passiert und trotzdem wiederholt:** ich habe einen neuen
+Lauf gestartet, ohne den alten zu stoppen. Beide schrieben dieselben Dateien.
+Der alte trug noch die vorige Fassung des Codes im Speicher und hat den Befund
+mit der **falschen Zeitmarke überschrieben** — 224,41 statt 223,28. Gemerkt habe
+ich es nur, weil ich die Zahl gegen meine eigene Nachrechnung gehalten habe.
+**Ein Hintergrundlauf ist erst beendet, wenn `ps` ihn nicht mehr zeigt**, nicht
+wenn der nächste gestartet ist.
+
+**Zweitens, beim Reparieren genau dieses Fehlers:** beim zeilenweisen Ersetzen
+blieb die **alte** Zuweisung `versatz = dauer(fenster)` eine Zeile unter der
+neuen stehen und hat sie überschrieben. Syntaktisch einwandfrei, Prüfung grün,
+Ergebnis falsch. **Eine Prüfung auf Syntax ist keine Prüfung auf Wirkung.**
+Was gegriffen hätte: `grep -n versatz` nach dem Patch — zwei Zuweisungen
+derselben Größe in zwei aufeinanderfolgenden Zeilen sind sofort sichtbar.
+
+**Die Zahl, die es aufgedeckt hat, war die, die nicht passte.** Ich hatte vorher
+von Hand 223,28 ausgerechnet; der Befund sagte 224,41. Hätte ich nur geschaut,
+ob das Stück „jetzt länger ist", wäre es durchgegangen.
+→ betrifft: alle

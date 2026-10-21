@@ -240,13 +240,19 @@ def eine(f):
         anschluss = None
         if fenster is not None and v > 0:
             vorn = os.path.join(HIER, f"{k}_{fid[:8]}_f{v - 1}")
-            if os.path.exists(vorn + ".json"):
-                versatz = dauer(fenster)
+            if os.path.exists(vorn + ".json") and os.path.exists(vorn + ".beginn"):
+                # Der Versatz ist der Abstand der gemessenen Dateianfaenge, NICHT
+                # die Laenge des ersten Fensters. Die Fenster ueberlappen sich:
+                # bei Whitney Wheelock endet f1 bei Master 6626,77 und f0 beginnt
+                # schon bei 6625,64 — 1,13 s doppelt. Mit der Fensterlaenge als
+                # Versatz liegt das angehaengte Transkript um diese Spanne
+                # daneben, und stumpfes Aneinanderhaengen spielt sie zweimal.
+                versatz = float(open(vorn + ".beginn").read()) - fstart
                 weiter = [{"start": x["start"] + versatz,
                            "end": x["end"] + versatz, "text": x["text"]}
                           for x in json.load(open(vorn + ".json"))]
                 daten = daten + weiter
-                anschluss = (vorn + ".mp4", versatz)
+                anschluss = (vorn + ".mp4", versatz, dauer(fenster))
 
         if fenster is None:
             json.dump({"nr": nr, "name": name, "drive_id": fid,
@@ -260,46 +266,49 @@ def eine(f):
         schluss = schluss_waehlen(daten, idx)
         von = max(0.0, daten[idx]["start"] - 1.0)
 
-        quelle, fende = fenster, None
-        if anschluss and schluss > anschluss[1] - 0.05:
-            # Beide Fenster aneinandersetzen und daraus schneiden. Sie sind
-            # luckenlos aneinander geholt worden; die Zeitrechnung des
-            # zusammengesetzten Stuecks ist dieselbe wie die des Versatzes.
-            quelle = os.path.join(HIER, f"{k}_{fid[:8]}_f{v}+{v - 1}.mp4")
-            if dauer(quelle) < 5:
-                liste = os.path.join(HIER, f"{k}_{fid[:8]}_concat.txt")
-                with open(liste, "w") as fh:
-                    fh.write(f"file '{fenster}'\nfile '{anschluss[0]}'\n")
-                lauf([FF, "-nostdin", "-y", "-hide_banner", "-loglevel", "error",
-                      "-f", "concat", "-safe", "0", "-i", liste,
-                      "-c", "copy", quelle])
-            fende = anschluss[1]
+        teile = None
+        if anschluss and schluss > anschluss[2]:
+            vorn_mp4, versatz, d_v = anschluss
+            # Die Ueberlappung wird uebersprungen statt zweimal gespielt: das
+            # zweite Stueck setzt genau dort ein, wo das erste aufhoert.
+            teile = (von, d_v, vorn_mp4, d_v - versatz, schluss - versatz)
             print(f"{nr}. {name}: Antwort laeuft ueber die Fenstergrenze, "
-                  f"Anschlussfenster f{v - 1} angesetzt", flush=True)
-        # Fensterzeit -> Masterzeit. Ohne diese beiden Zahlen ist das
-        # Stueck in zwei Jahren nicht mehr zuzuordnen, und genau darum
-        # geht es bei diesem Auftrag.
-        def master(t):
-            if fstart is None:
-                return None
-            if fende is None or t <= fende:
-                return round(fstart + t, 2)
-            vorn_beginn = float(open(os.path.join(
-                HIER, f"{k}_{fid[:8]}_f{v - 1}.beginn")).read())
-            return round(vorn_beginn + (t - fende), 2)
+                  f"Anschlussfenster f{v - 1} angesetzt, Ueberlappung "
+                  f"{d_v - versatz:.2f}s uebersprungen", flush=True)
 
+        # Fensterzeit -> Masterzeit. Der Versatz rechnet in Masterzeit, also
+        # gilt Master = Dateibeginn des Fensters + Zeit im Stueck, auch hinter
+        # der Naht. Ohne diese beiden Zahlen ist das Stueck in zwei Jahren nicht
+        # mehr zuzuordnen, und genau darum geht es bei diesem Auftrag.
         json.dump({"nr": nr, "name": name, "drive_id": fid,
-                   "master_von": master(von),
-                   "master_bis": master(schluss),
+                   "master_von": round(fstart + von, 2) if fstart else None,
+                   "master_bis": round(fstart + schluss, 2) if fstart else None,
                    "masterzeit_gemessen": fstart is not None,
                    "fenster": os.path.basename(fenster),
+                   "anschlussfenster": (os.path.basename(anschluss[0])
+                                        if teile else None),
                    "fenster_von": round(von, 2), "fenster_bis": round(schluss, 2),
                    "frage": daten[idx]["text"].strip()},
                   open(befund, "w"), indent=1, ensure_ascii=False)
-        lauf([FF, "-nostdin", "-y", "-hide_banner", "-loglevel", "error",
-              "-ss", f"{von:.2f}", "-i", quelle, "-t", f"{schluss - von:.2f}",
-              "-c:v", "libx264", "-crf", "17", "-preset", "veryfast",
-              "-c:a", "aac", "-b:a", "192k", clip])
+
+        kodierung = ["-c:v", "libx264", "-crf", "17", "-preset", "veryfast",
+                     "-c:a", "aac", "-b:a", "192k"]
+        if teile:
+            a_von, a_bis, b_datei, b_von, b_bis = teile
+            # Ueber den concat-FILTER, nicht den Demuxer: der Demuxer reicht die
+            # Zeitstempel beider Dateien durch, und der HEVC-Dekoder stolperte an
+            # der Naht ("Duplicate POC in a sequence"). Als zwei getrennte
+            # Eingaben wird jede fuer sich dekodiert.
+            lauf([FF, "-nostdin", "-y", "-hide_banner", "-loglevel", "error",
+                  "-ss", f"{a_von:.2f}", "-to", f"{a_bis:.2f}", "-i", fenster,
+                  "-ss", f"{b_von:.2f}", "-to", f"{b_bis:.2f}", "-i", b_datei,
+                  "-filter_complex",
+                  "[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1[v][a]",
+                  "-map", "[v]", "-map", "[a]"] + kodierung + [clip])
+        else:
+            lauf([FF, "-nostdin", "-y", "-hide_banner", "-loglevel", "error",
+                  "-ss", f"{von:.2f}", "-i", fenster,
+                  "-t", f"{schluss - von:.2f}"] + kodierung + [clip])
 
     plan = os.path.join(HIER, f"{k}_fertig_plan.json")
     if not os.path.exists(plan):
