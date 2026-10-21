@@ -17,7 +17,7 @@ MUSTER = re.compile(r"(?i)(makes?\s+(a\s+)?(human\s+)?life\s+meaningful"
                     r"|what\s+makes\s+life\s+meaning"
                     r"|life\s+meaningful\s+(for|to)\s+you"
                     r"|makes\s+your\s+life\s+meaningful)")
-STUECK, MAX_VERSUCHE, ZIEL = 210.0, 4, 72.0
+STUECK, MAX_VERSUCHE, ZIEL_MAX = 210.0, 4, 100.0
 
 LISTE = os.path.join(HIER, "meaningful-folgen.json")
 
@@ -73,41 +73,77 @@ def transkript(clip):
 
 
 def schluss_waehlen(daten, idx):
-    """Ende des Bogens: vor der naechsten Frage, auf dem letzten Satzende.
+    """Ende des Bogens: am Uebergang, auf dem letzten Satzende davor.
 
-    Zweimal von zwei ist die erste Fassung ins Outro gelaufen („wo findet man
-    dich") — die Antwort endet dort, wo er die naechste Frage stellt, und die
-    kommt bei jedem Gast woanders.
+    Dreimal ist die erste Fassung zu weit gelaufen — Logan und Matt ins Outro
+    ("wo findet man dich", Instagram, Spotify), Kyle in die Ankuendigung
+    seiner Community. Bei Eben Britton kam ein vierter Fall dazu, und der
+    zeigt die eigentliche Ursache: dort stand 108 Sekunden lang keine neue
+    Frage, also entschied die feste Ziellaenge von 72 Sekunden — und landete
+    mitten in einer ganz anderen Antwort (Byron Katies "is it true?"), 25 s
+    nach dem Ende des Bogens.
+
+    Deshalb entscheidet die Ziellaenge jetzt nichts mehr. Sie ist nur noch
+    eine Obergrenze fuer den Fall, dass gar kein Uebergang gefunden wird; die
+    laengste gemessene Antwort war Aaronsons mit 78 s Masterzeit.
     """
     neue_frage = re.compile(r"(?i)^(how|what|where|when|why|who|can|could|do|did|"
                             r"would|is|are|tell)\b.*\?\s*$")
-    # Eine Frage ist nicht das einzige Ende. Bei Kyle Kingsbury uebernahm er
-    # mit "Well, speaking of meaning and purpose, you got some news to share"
-    # — keine Frage, und der Schnitt lief 8,8 s in die Ankuendigung seiner
-    # Community hinein. Dieselbe Sorte Fehler wie zweimal zuvor im Outro
-    # ("wo findet man dich", Instagram, Spotify). Was die drei Faelle teilen,
-    # ist nicht die Satzform, sondern das Thema: ab hier geht es ums Geschaeft.
-    uebergang = re.compile(r"(?i)\b(speaking of|news to share|where can (people|we|"
-                           r"they)|find you|follow you|your (book|website|community|"
-                           r"podcast|channel)|instagram|spotify|youtube|link in|"
-                           r"before we (go|wrap)|last question|plug)\b")
-    grenze = daten[-1]["end"]
+    # Was die vier Faelle teilen, ist nicht die Satzform, sondern das Thema:
+    # ab hier wird abgebunden oder es geht ums Geschaeft. Der Uebergang steht
+    # dabei nicht immer am Anfang eines Abschnitts — bei Britton steckt
+    # "and to close it off" im selben Abschnitt wie sein Schlusssatz
+    # ("Ubuntu baby. That's it. That's it and to close it off").
+    UEBERGANG = re.compile(
+        r"(?i)\b(speaking of|news to share|to close (it|us) (off|out)|"
+        r"one question to ask|where can (people|we|they)|how can people|"
+        r"(find|follow|reach) you|get in touch|your (book|website|community|"
+        r"podcast|channel|program)|instagram|spotify|link in|"
+        r"before we (go|wrap)|last question|ladies and gentlemen)\b")
+
+    beginn = daten[idx]["start"]
+    grenze = min(daten[-1]["end"], beginn + ZIEL_MAX)
+    getroffen = False
     for d in daten[idx + 1:]:
-        if d["start"] - daten[idx]["start"] <= 15:
+        if d["start"] - beginn <= 15:
             continue
         t = d["text"].strip()
-        if neue_frage.match(t) or uebergang.search(t):
-            # Die Grenze ist der Beginn des Uebergangs, nicht 0,3 s davor —
-            # sonst faellt genau der Satz heraus, der daran endet. Bei Kyle
-            # war das "I got nothing else to add to that." (endet 177,59,
-            # Uebergang beginnt 177,59).
-            grenze = d["start"]
+        if neue_frage.match(t):
+            grenze, getroffen = min(grenze, d["start"]), True
             break
-    ziel = min(daten[idx]["start"] + ZIEL, grenze)
-    kand = [d for d in daten[idx:] if d["end"] <= grenze + 0.05]
+        m = UEBERGANG.search(t)
+        if m:
+            # Steckt der Uebergang mitten im Abschnitt, wird seine Lage ueber
+            # den Zeichenabstand geschaetzt — Whisper liefert hier keine
+            # Wortzeiten. Bei Britton ergibt das 97,0 s statt 94,5 s und haelt
+            # damit "That's it. That's it" im Stueck.
+            anteil = m.start() / max(1, len(t))
+            grenze = min(grenze, d["start"] + anteil * (d["end"] - d["start"]))
+            getroffen = True
+            break
+
+    # Ab idx+1, nicht ab idx: die Frage selbst endet auf ein Fragezeichen und
+    # waere sonst das einzige "Satzende". Bei Britton hat Whisper keinen
+    # einzigen Antwortabschnitt interpunktiert — damit waere der Schnitt auf
+    # der Frage gelandet, also bei 6 s Laenge.
+    kand = [d for d in daten[idx + 1:] if d["end"] <= grenze + 0.05]
+    if not kand:
+        return grenze
     satz = [d for d in kand if d["text"].rstrip().endswith((".", "!", "?"))]
-    wahl = satz or kand or daten[idx:]
-    return min((d["end"] for d in wahl), key=lambda x: abs(x - ziel))
+    # Das letzte Satzende vor dem Uebergang, nicht das naechste an einer
+    # Wunschlaenge. Die Antwort laeuft bis zum Uebergang, und wie lang sie
+    # ist, entscheidet der Gast. Interpunktiert Whisper gar nicht, entscheidet
+    # die Grenze — ein frueher Satzanfang waere schlechter als ein Schnitt
+    # auf der gemessenen Uebergangsstelle.
+    ende = max(d["end"] for d in (satz or kand))
+    # Ist der Uebergang gemessen, ist er selbst ein gueltiger Schnittpunkt —
+    # und der bessere, wenn das letzte Satzende deutlich davor liegt. Bei
+    # Britton waeren das 94,52 statt 97,0 und damit faellt "Ubuntu baby.
+    # That's it." heraus, also genau die Pointe. Liegt das Satzende dicht an
+    # der Grenze (Kyle: 0,25 s), bleibt es beim Satzende.
+    if getroffen and grenze - ende > 2.0:
+        return grenze
+    return ende
 
 
 def eine(f):

@@ -187,3 +187,74 @@ gelöscht, um Platte frei zu machen, und der nächste Lauf hätte sie für 1,1 G
 noch einmal geholt, obwohl die Transkripte danebenlagen. Jetzt entscheidet das
 Transkript.
 → betrifft: alle, die wiederaufnehmbare Läufe bauen
+
+## 21.10.2026 — Die feste Ziellänge war die Ursache, nicht die neue Frage
+
+**Vierter Fall derselben Art, und erst der zeigt die Wurzel.** Bisher hieß die
+Erklärung: der Schnitt läuft ins Outro, weil die Endpunktwahl eine feste
+Ziellänge nimmt statt bis zur nächsten Frage zu schneiden. **Das war zu kurz
+gedacht.** Bei Eben Britton stand 108 Sekunden lang *keine* neue Frage — also
+entschied die Ziellänge von 72 Sekunden, und zwar mitten in einer ganz anderen
+Antwort: dem Byron-Katie-Werkzeug *„is it true?"*. **25 Sekunden über das Ende
+des Bogens hinaus.**
+
+| Gast | Antwort endet | geschnitten wurde bis | daneben |
+|---|---:|---:|---:|
+| Kyle Kingsbury | 177,59 | 186,39 | **8,8 s** in die Community-Ankündigung |
+| Eben Britton | ~97 | 123,70 | **25,4 s** in eine andere Antwort |
+
+**Drei Dinge, die zusammen tragen:**
+
+1. **Die Ziellänge entscheidet nichts mehr.** Sie ist nur noch Obergrenze für
+   den Fall, dass kein Übergang gefunden wird — 100 s, weil die längste
+   gemessene Antwort Aaronsons mit 78 s Masterzeit war. Geschnitten wird auf
+   das **letzte** Satzende vor dem Übergang, nicht auf das nächstgelegene an
+   einer Wunschlänge. Wie lang die Antwort ist, entscheidet der Gast.
+2. **Der Übergang steht nicht immer am Anfang eines Abschnitts.** Bei Britton
+   steckt *„and to close it off"* im selben Whisper-Abschnitt wie sein
+   Schlusssatz: *„Buntu baby. That's it. That's it and to close it off."* Die
+   Lage wird deshalb über den **Zeichenabstand** im Abschnitt geschätzt
+   (Wortzeiten liefert Whisper hier nicht) — das ergibt 97,0 statt 94,5 und
+   hält damit genau die Pointe im Stück.
+3. **Der gemessene Übergangspunkt ist selbst ein gültiger Schnittpunkt**, und
+   der bessere, wenn das letzte Satzende deutlich davor liegt. Liegt es dicht
+   daran (Kyle: 0,25 s), bleibt es beim Satzende.
+
+**Und ein Fallstrick, der mir dabei in die Falle gegangen ist:** die Kandidaten
+liefen ab dem Abschnitt der Frage selbst. **Die Frage endet auf ein
+Fragezeichen** und war damit das einzige „Satzende", weil Whisper bei Britton
+*keinen einzigen* Antwortabschnitt interpunktiert hat. Der Schnitt wäre 6
+Sekunden lang geworden. Kandidaten ab `idx + 1`.
+→ betrifft: alle, die einen Bogen automatisch beenden
+
+## 21.10.2026 — Dritte Kamera, die vor dem Ende aussteigt
+
+Whitney Wheelocks Zweier-Kamera `(Whit & YNB)` läuft **61:53** bei einer Folge
+von **104:07** — sie endet 42 Minuten vor dem Gespräch, die Abschlussfrage steht
+dort gar nicht drin. Gesucht wurde trotzdem, 840 Sekunden weit, für nichts.
+**Die beiden Einzelkameras laufen 114:00 und 113:56**, decken die Folge also.
+
+Damit sind es **drei von drei geprüften Mehrkamera-Aufnahmen**, bei denen eine
+Datei vorzeitig endet: Kyle (77:12 statt 129:50), Marian (Ton nach ~60 von
+~120 min), Whitney (61:53 statt 104:07).
+
+**Regel, jetzt belastbar: bei Mehrkamera-Material zuerst die Laufzeit *jeder*
+Datei gegen die Laufzeit der Folge halten, dann die längste nehmen.** Kostet
+8–23 MB je Datei und erspart eine Suche im falschen Material. Und: **die
+Zweier-Kamera ist nicht automatisch die beste Quelle**, auch wenn sie
+inhaltlich die schönste wäre.
+→ betrifft: content-shorts, content-cinematic, alle mit Studio-Material
+
+## 21.10.2026 — Welche Master abrufbar sind, vorher abfragen
+
+`get_file_permissions` beantwortet in einem Aufruf, was der Bereichsabruf sonst
+erst nach dem Fehlschlag zeigt. **Ohne `{"role":"reader","type":"anyone"}` ist
+eine Datei über `drive_fernzugriff.py` nicht erreichbar** — der Abruf bekommt
+dann rund **921 KB HTML statt 8 MB Nutzdaten** (Curtis 920.758 Bytes, Makhosi
+921.335 Bytes). Das ist ein anderer Fehler als das Tageslimit, das als
+**2040-Byte-Seite mit HTTP 200** kommt. Beide fängt der Längenprüfer ab.
+
+**Nützlich wurde es sofort:** Curtis Cranes eigener 2,0-GB-Export ist *nicht*
+freigegeben, der 33,2-GB-Rohschnitt im Drive des Cutters aber schon. Statt
+„blockiert" war es ein Quellenwechsel.
+→ betrifft: alle, die aus Drive-Mastern lesen
