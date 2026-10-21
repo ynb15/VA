@@ -118,3 +118,70 @@ Ausschnitt (`--zoom 1.35`) · warmer Look mit Vignette (`--look warm`).
 paar CJK-Familien — keine schmale Display-Schrift und nichts mit Textur.
 Gerendert wird deshalb in **DejaVu Sans Bold**: dieselbe Anmutung, aber breiter
 und glatt. **Wenn er die Schriftdatei in den Drive-Eingang legt, nehme ich sie.**
+
+
+---
+
+## Die Kommentare sind erreichbar — korrigiert am 21.10.2026
+
+Am 20.10. stand hier, die Watch-Seite antworte mit „Sign in to confirm you're not
+a bot". **Das gilt weiter — aber nur für die Formate, nicht für die Kommentare.**
+Der Abbruch kam daher, dass `yt-dlp` ohne Videoformate aufgibt, *bevor* es den
+Kommentar-Endpunkt anfragt. Mit `ignore_no_formats_error` läuft es weiter, und
+die Kommentare kommen.
+
+```python
+opts = {'quiet': True, 'skip_download': True, 'getcomments': True,
+        'ignore_no_formats_error': True, 'ignoreerrors': True,
+        'extractor_args': {'youtube': {'max_comments': ['80','all','80','20']}}}
+```
+
+`yt-dlp` ist **nicht vorinstalliert** — `pip install yt-dlp` zuerst (lief am
+21.10. durch, Version 2026.08.19).
+
+**Vollständig, nicht angeschnitten:** bei jedem geprüften Video war die Zahl der
+geholten Kommentare gleich der von YouTube gemeldeten (`comment_count`).
+
+### Die Felder pro Kommentar
+
+`author` · `author_id` · `author_is_uploader` · `author_is_verified` ·
+`text` · `like_count` · `timestamp` · `_time_text` · `parent` ·
+**`is_pinned`** · **`is_favorited`** (sein Herz) · `id`
+
+`parent` trägt `root` oder die ID des Elternkommentars — damit sind Antwortbäume
+rekonstruierbar, und `author_is_uploader` zeigt, wo er selbst schon geantwortet hat.
+
+### Das Volumen, letzte 14 lange Videos (21.10.2026)
+
+**63 Kommentare insgesamt, 14 Hauptkommentare ohne Antwort von ihm.**
+
+| Video | alle | Hauptkommentare | ohne seine Antwort |
+|---|---:|---:|---:|
+| `cMI3tsQp410` Why Kids Should Be Allowed Trans Surgery | 23 | 9 | 3 |
+| `ewgUIZGJaWQ` America's #1 Transgender Doctor: Burning Man | 13 | 6 | 0 |
+| `frNOUgxE0IM` The Hollywood Star Who Quit Everything | 7 | 4 | 1 |
+| `23NNT7aMgL4` Podcast Star turned Hypnotherapist | 7 | 4 | 1 |
+| `GxpvzT3rUBQ`, `RG-K0fIA2-w` | je 3 | je 2 | je 1 |
+| acht weitere | je 0–1 | je 0–1 | je 0–1 |
+
+**Das ist eine Menge, die an einem Nachmittag vollständig zu beantworten ist** —
+kein Auswahlproblem, sondern ein Arbeitsvorrat. Der Hebel liegt nicht in der
+Masse, sondern darin, dass er sonst gar nicht dazu kommt.
+
+**Die Einschränkung gehört dazu:** „ohne seine Antwort" ist aus
+`author_is_uploader` erschlossen, nicht von YouTube so gemeldet. Ein Herz
+(`is_favorited`) ohne Textantwort zählt in dieser Spalte als unbeantwortet.
+
+### Was weiter nicht geht
+
+Die Mediendaten (403) und **das Senden**. Kommentarantworten brauchen OAuth —
+und davor steht ohnehin seine Regel vom 21.10.: *Agenten entwerfen.* Ich lege
+Antworten fertig vor, er klickt.
+
+### Nebenbefund, ungeklärt
+
+`GxpvzT3rUBQ` hieß um 07:1x noch *„Hollywood Star turned Men's Therapist:
+Feminism FAILED"*, wenige Minuten später *„Did Feminism Ruin Men?"* — dieselbe
+ID, derselbe Lauf. Entweder hat er den Titel in dem Moment geändert, oder
+YouTube testet zwei Titel gegeneinander. **Ich weiß nicht, welches von beiden**,
+und rate es nicht.
