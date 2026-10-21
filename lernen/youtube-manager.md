@@ -385,3 +385,32 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   es kamen echte Bytes (`ftypqt … mdat`, HTTP 206). **Eine Fehlerseite erkennt
   man an der Länge, nicht an einem Zeichen im Rohdatenstrom.**
   → betrifft: alle
+
+### Nachtrag 21.10., 13:20 — meine eigene Prüfung hat einen vollständigen Abruf verworfen
+
+- **Erwartete Tondauer nicht aus der Dateigröße eines *anderen* Masters
+  hochrechnen.** Ich hatte Stufe 3 so gebaut: erwartete Sekunden = Quellgröße
+  ÷ (Aaronsons 16,1 GB / 6084 s). Bei Kingsbury kam **77:12 statt der so
+  erwarteten ~107 min**, und der Lauf brach ab mit „still gekürzt".
+  **Der Abruf war aber vollständig: 16,98 von 16,97 GB, 100 %.** Kingsbury ist
+  ein MOV mit deutlich höherer Datenrate als Aaronsons MP4 — dieselbe
+  Dateigröße, kürzere Laufzeit. Die Folge ist einfach 77 Minuten lang.
+  **Fast 46 Minuten Abruf wären umsonst wiederholt worden.**
+  **Die Regel: Vollständigkeit hängt an den gelesenen Bytes, nicht an der
+  Dauer.** Die Bytes prüft `video/werkzeug/drive_lesen.py` blockweise und wirft
+  `IOError`; kommt der Abruf ohne Fehler durch, ist die Datei ganz. In der
+  Dauerprüfung bleibt nur ein Boden gegen offensichtlichen Unsinn (< 20 min).
+  **Eine Prüfgröße, die aus einem anderen Fall hochgerechnet ist, prüft den
+  anderen Fall.**
+  → betrifft: alle
+
+- **Gemessene Laufzeiten, damit sie niemand mehr hochrechnet:**
+
+  | Folge | Quelle | Laufzeit Rohton |
+  |---|---|---|
+  | Scott Aaronson | 16,1 GB MP4 | 102:14 |
+  | Kyle Kingsbury | **17,0 GB MOV** | **77:12** |
+
+  Das sind 2,65 MB je Sekunde gegen **3,67 MB je Sekunde** — ein Unterschied
+  von 38 %. **Pro Studio und Kameraformat neu messen.**
+  → betrifft: content-*, head-of-content
