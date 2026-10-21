@@ -423,3 +423,32 @@ kein Download aus dem Netz nötig, das Modell lädt beim ersten Aufruf.
 **Faustregel:** klingt eine Stelle im Untertitel nach Unsinn, ist sie Unsinn.
 Zwanzig Sekunden mit `large-v3` nachhören, dann in `video/korrekturen.txt`.
 → betrifft: alle Content-Agenten
+
+## 21.10.2026 — `--kopfzeile-hoehe` ist die Mitte, und die Vorgabe kollidiert
+
+**Wer `--kopfzeile` mit lippenfolgenden Untertiteln benutzt, verdeckt sie.**
+Am gerenderten Bild gemessen, Sutcliffe-Short, 1080×1920:
+
+| | Vorgabe 0,68 · Größe 96 | nachgebessert 0,78 · Größe 64 |
+|---|---|---|
+| Kopfzeilenfeld | **0,656–0,774** | 0,721–0,839 |
+| Untertitelzeile (Lippe 1248) | 0,650–0,693 | unverändert |
+| Logo (`--logo-hoehe 0.87`) | 0,843–0,893 | unverändert |
+| Überschneidung | **~57 px mit dem Untertitel** | keine |
+
+**Zwei Dinge, die man wissen muss:**
+
+1. **`--kopfzeile-hoehe` ist die Mitte des Feldes, nicht die Oberkante.** Das
+   steht in keiner Hilfe. Ich habe erst 0,715 gesetzt, in der Annahme, es sei
+   die Oberkante — die Überschneidung blieb, nur kleiner.
+2. **Die Untertitel werden verdeckt, nicht weggelassen.** Beide SRT-Dateien
+   haben dieselben 53 Einblendungen; die ersten vier liegen unter dem Feld.
+   Wer nur die SRT prüft, sieht den Fehler nicht. **Nur das gerenderte Bild
+   zeigt ihn.**
+
+**Der Raum zwischen Untertitel und Logo ist eng:** Unterkante Untertitel 0,693,
+Oberkante Logo 0,843 — 150 px bei 1920. Ein Feld von 96 px Schriftgröße misst
+283 px und passt dort nicht. Bei Größe 64 sind es 207 px, und mit Mitte 0,78
+bleiben 54 px Luft nach oben und 8 px nach unten. **Wer die Kopfzeile grösser
+will, muss sie über die Untertitelzeile setzen, nicht darunter.**
+→ betrifft: alle, die `--kopfzeile` benutzen — Shorts, Cinematic, Vlog
