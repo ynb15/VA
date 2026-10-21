@@ -21,10 +21,45 @@ ich nicht vorher ab, sondern liefere alles andere und sage dazu, was fehlt.
 | 5 | **Angepinnter Kommentar zur Folge** | die Fundraiser-Variante |
 | 6 | **Angepinnte Kommentare für jeden Clip** | Anrede + Teaser + Link zur Folge |
 | 7 | **Beschreibungen für jeden Clip** | Deine Clip-Form mit der Doppelformel |
-| 8 | **Beschreibungen für die Shorts** | weil 39 von 39 keine haben |
+| ~~8~~ | ~~Beschreibungen für die Shorts~~ | **gestrichen am 21.10.** — s. unten |
 
 Dazu, ungefragt, wenn mir beim Transkript etwas auffällt: **die drei bis fünf
 stärksten Stellen für Clips**, mit Zeitmarke. Kein Konzept, eine Liste.
+
+### Stück 8 ist gestrichen — Short-Beschreibungen
+
+Von ihm am 21.10.2026: *„Ich finde halt die Short-Beschreibung, die ist jetzt
+nicht wirklich relevant."*
+
+**Mein Befund dazu war richtig gemessen** — 39 von 39 Shorts haben keine
+Beschreibung, und ich hatte ihn als größten einzelnen SEO-Posten des Kanals
+gemeldet. **Er hat ihn gehört und anders entschieden.** Die Streichung steht
+hier, damit sie niemand als Lücke wieder aufmacht. Die anderen sieben Stücke
+bleiben unverändert.
+
+---
+
+## Der Kalender — seit 21.10.2026
+
+Zwei Podcasts im Monat, Hauptfolge **samstags**, dazu täglich ein Content-Stück.
+Der Plan liegt auf Alfreds Branch (`plan/README.md`, `plan/kalender.md`,
+`plan/ABLAUF.md`); **mein Stichtag ist T−6, der Text.**
+
+| Folge | Veröffentlichung | mein Stichtag |
+|---|---|---|
+| **Kyle Kingsbury** | Sa 31.10. | **So 25.10.** |
+| Scott Aaronson | Sa 14.11. | So 08.11. |
+| David Sutcliffe | Sa 28.11. | So 22.11. |
+| Matt Defina | Sa 12.12. | So 06.12. |
+| Ken Stern | Sa 19.12. | So 13.12. |
+
+**Die Vorlaufkette:** T−10 Transkript · T−8 Auswahl · **T−6 Text (ich)** ·
+T−5 Bild · T−3 Shorts · T−2 Paket bei ihm.
+
+**Was das für mich heißt:** das Transkript ist meine Eingangsvoraussetzung und
+kommt vom Shorts-Assistenten. **Liegt es an meinem Stichtag nicht vor, melde ich
+das, statt zu warten** — Titel und Thumbnail-Copy kann ich aus dem Prep-Doc
+bauen, Beschreibung und Timestamps nicht.
 
 ---
 
