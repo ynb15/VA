@@ -55,6 +55,19 @@ Neuester Eintrag oben.
   auf **jeder** Seite. Browser `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
   → betrifft: alle
 
+- **Gegen den Fehler des Tages hilft eine Schwelle, die vor der Messung
+  feststeht.** Alfred und ich haben am 21.10. denselben Fehler gemacht — eine
+  Lesart fuer eine Tatsache gehalten; bei ihm kostete es drei Thumbnails, bei
+  mir eine falsche Datierung im Kanal. Die Gegenmassnahme, die ich eingebaut
+  habe: `video/garden-pruefplan.py` legt **Fenster und Entscheidungsregel im
+  Quelltext fest, vor dem ersten Blick ins Transkript** (−30 s/+120 s um die
+  Marke; ≥5 von 7 Treffern = ja, ≤2 = nein, dazwischen = unentschieden) und
+  gibt 0/1/2 zurueck. **Wer die Schwelle erst nach dem Ergebnis festlegt,
+  begruendet statt zu messen.** Drei Faelle mit erfundenen Transkripten
+  durchgespielt, alle drei Zweige stimmen. **Das Muster taugt fuer jede
+  Zuordnung, die am Material entschieden wird** — nicht nur fuer diese.
+  → betrifft: alle
+
 - **Die Zeitmarkenliste in `LERNEN.md` gehoert wahrscheinlich zu einem
   bestimmten Video — belegt ist es nicht, und meine erste Datierung war
   falsch.** Primaerquelle Slack, DM an Isabelle, Thread `1788525418.826269`

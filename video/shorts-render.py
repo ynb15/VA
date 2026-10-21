@@ -196,7 +196,7 @@ def _libass_faktor(groesse=None):
         return 1.0
 
 
-def _breite_px(text, groesse=None):
+def _breite_px(text, groesse=None, kontur=True):
     """Textbreite im Ausgabebild, in Pixel.
 
     Seit die Schriftdatei selbst in fonts/ liegt, wird mit ihr gemessen:
@@ -211,7 +211,7 @@ def _breite_px(text, groesse=None):
         roh = _font(g).getlength(text) * _libass_faktor(g)
     except Exception:
         roh = _breite_em(text) * g
-    return roh * SCALE_X / 100 + 2 * (KONTUR + FETTER)
+    return roh * SCALE_X / 100 + (2 * (KONTUR + FETTER) if kontur else 0)
 
 
 def _breite_em(text):
@@ -233,6 +233,91 @@ def _breite_em(text):
         else:
             b += 0.61
     return b
+
+
+def _rundes_rechteck(breite, hoehe, radius):
+    """Abgerundetes Rechteck als ASS-Zeichenbefehl, Ursprung oben links.
+
+    Warum nicht als PNG mit `overlay`: ein Standbild als zweiter Eingang hat
+    nur einen Zeitstempel, und `fade` bewertet den — die Einblendung kam
+    deshalb mit Alpha 0 heraus und blieb unsichtbar. Als Zeichenbefehl im
+    Untertitelstrom bekommt das Feld dieselbe Zeitachse wie die Schrift,
+    `\\fad` wirkt darauf, und es braucht keinen zweiten Eingang.
+    ASS kann runde Ecken nur so — `BorderStyle=3` gibt scharfe.
+    """
+    b, h, r = int(breite), int(hoehe), int(radius)
+    r = max(0, min(r, b // 2, h // 2))
+    return (f"m {r} 0 l {b - r} 0 b {b} 0 {b} 0 {b} {r} "
+            f"l {b} {h - r} b {b} {h} {b} {h} {b - r} {h} "
+            f"l {r} {h} b 0 {h} 0 {h} 0 {h - r} "
+            f"l 0 {r} b 0 0 0 0 {r} 0")
+
+
+def kopfzeile_ass(text, pfad, dauer, groesse=96, hoehe_anteil=0.68,
+                  dunkel=True, polster=(44, 28), radius=26,
+                  zeilenabstand=1.18, einblenden=(260, 340)):
+    """Kopfzeile ueber die ersten Sekunden, nach Modern-Wisdom-Vorbild.
+
+    Ein Feld mit runden Ecken, darauf zwei bis drei Woerter. Bei Williamson
+    ist das Feld weiss und die Schrift schwarz; **er hat es am 21.10.
+    umgekehrt bestellt** — schwarzes Feld, weisse Schrift. `dunkel=False`
+    dreht es auf das Original.
+
+    Die Feldbreite kommt aus der **gemessenen** Textbreite, mit derselben
+    Schrift und demselben libass-Faktor wie die Untertitel, aber ohne die
+    Kontur — das Feld traegt keine. `|` im Text trennt Zeilen; ohne Trenner
+    wird nicht umbrochen, weil eine Kopfzeile, die von selbst umbricht,
+    unvorhersehbar aussieht.
+
+    Rueckgabe: (Feldbreite, Feldhoehe) — nur zum Berichten.
+    """
+    zeilen = [t.strip() for t in text.split("|") if t.strip()]
+    if not zeilen:
+        raise SystemExit("--kopfzeile ist leer")
+    px, py = polster
+    breite = int(round(max(_breite_px(z, groesse, kontur=False)
+                           for z in zeilen) + 2 * px))
+    hoehe = int(round(len(zeilen) * groesse * zeilenabstand + 2 * py))
+
+    mitte_y = hoehe_anteil * H
+    x0 = int(round((W - breite) / 2))
+    y0 = int(round(mitte_y - hoehe / 2))
+
+    feld = "&H00000000" if dunkel else "&H00FFFFFF"
+    schrift = "&H00FFFFFF" if dunkel else "&H00000000"
+    ein, aus = einblenden
+
+    kopf = f"""[Script Info]
+ScriptType: v4.00+
+PlayResX: {W}
+PlayResY: {H}
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, ScaleX, ScaleY, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Feld,{FONT},{groesse},{feld},&H00000000,&H00000000,0,0,100,100,1,0,0,7,0,0,0,1
+Style: Kopf,{FONT},{groesse},{schrift},&H00000000,&H00000000,0,0,{SCALE_X},100,1,0,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    bis = ass_time(dauer)
+    zeilen_aus = [
+        f"Dialogue: 0,{ass_time(0)},{bis},Feld,,0,0,0,,"
+        f"{{\\an7\\pos({x0},{y0})\\bord0\\shad0\\fad({ein},{aus})\\p1}}"
+        + _rundes_rechteck(breite, hoehe, radius) + "{\\p0}"
+    ]
+    abstand = groesse * zeilenabstand
+    erste = mitte_y - (len(zeilen) - 1) * abstand / 2
+    for i, z in enumerate(zeilen):
+        y = int(round(erste + i * abstand))
+        zeilen_aus.append(
+            f"Dialogue: 1,{ass_time(0)},{bis},Kopf,,0,0,0,,"
+            f"{{\\an5\\pos({W // 2},{y})\\bord0\\shad0"
+            f"\\fad({ein},{aus})}}{z}")
+    Path(pfad).write_text(kopf + "\n".join(zeilen_aus) + "\n", encoding="utf-8")
+    return breite, hoehe
 
 
 def build_ass(cues, path, marginv=320, tempo=1.0, tiefer=0, gross=True,
@@ -974,6 +1059,19 @@ def main():
     ap.add_argument("--logo-hoehe", type=float, default=0.87,
                     help="Anteil der Bildhoehe, auf dem das Logo sitzt "
                          "(Vorgabe 0.87 aus seinem Preset)")
+    ap.add_argument("--kopfzeile", default=None,
+                    help="Schlagzeile ueber die ersten Sekunden, wie bei "
+                         "Modern Wisdom. `|` trennt Zeilen. Beispiel: "
+                         "\"Is AI safe?\"")
+    ap.add_argument("--kopfzeile-dauer", type=float, default=4.5,
+                    help="Sekunden im fertigen Video (Vorgabe 4.5)")
+    ap.add_argument("--kopfzeile-groesse", type=int, default=96)
+    ap.add_argument("--kopfzeile-hoehe", type=float, default=0.68,
+                    help="Mitte des Feldes als Anteil der Bildhoehe")
+    ap.add_argument("--kopfzeile-hell", action="store_true",
+                    help="weisses Feld mit schwarzer Schrift, wie bei Modern "
+                         "Wisdom. Vorgabe ist umgekehrt: schwarzes Feld, "
+                         "weisse Schrift — so hat er es am 21.10. bestellt.")
     ap.add_argument("--musik", default=None,
                     help="Musikbett; wird geloopt, ein- und ausgeblendet und "
                          "unter der Stimme abgesenkt")
@@ -1202,6 +1300,40 @@ def main():
             # von vornherein draussen, damit nie zwei Stimmen laufen.
             cmd += ["-an", "-i", datei]
             naechste += 1
+
+        if a.kopfzeile:
+            kopf_ass = os.path.join(td, "kopf.ass")
+            kb, kh = kopfzeile_ass(
+                a.kopfzeile, kopf_ass, a.kopfzeile_dauer,
+                groesse=a.kopfzeile_groesse,
+                hoehe_anteil=a.kopfzeile_hoehe,
+                dunkel=not a.kopfzeile_hell)
+            filt = "subtitles=" + kopf_ass.replace(":", r"\:")
+            if FONT_DATEI:
+                filt += ":fontsdir=" + str(FONT_ORDNER).replace(":", r"\:")
+            graph.append(f"{letzte}{filt}[vkopf]")
+            letzte = "[vkopf]"
+            print(f"  Kopfzeile {a.kopfzeile!r}: Feld {kb}x{kh} px, "
+                  f"{a.kopfzeile_dauer}s, "
+                  + ("weiss auf schwarz" if not a.kopfzeile_hell
+                     else "schwarz auf weiss"))
+            # Kopfzeile und Untertitel koennen sich treffen: das Feld sitzt
+            # mittig auf 68 % der Hoehe, die Zeile ohne gemessene Lippe auf
+            # 70 %. Das faellt am Code nicht auf, nur im Bild — also wird es
+            # ausgerechnet und gesagt, statt es zu riskieren.
+            feld_oben = a.kopfzeile_hoehe * H - kh / 2
+            feld_unten = feld_oben + kh
+            band = [(c["lippe"] + a.tiefer, c["lippe"] + a.tiefer + a.schriftgroesse)
+                    for c in (cues or [])
+                    if c.get("lippe") is not None
+                    and c["start"] / a.tempo < a.kopfzeile_dauer]
+            stoss = [b for b in band if b[0] < feld_unten and b[1] > feld_oben]
+            if stoss:
+                print(f"  ACHTUNG: Kopfzeile ({feld_oben:.0f}-{feld_unten:.0f} px) "
+                      f"und Untertitel ({min(b[0] for b in stoss):.0f}-"
+                      f"{max(b[1] for b in stoss):.0f} px) ueberlappen in den "
+                      f"ersten {a.kopfzeile_dauer}s. --kopfzeile-hoehe "
+                      f"verschieben oder die Kopfzeile kuerzer halten.")
 
         if a.logo:
             cmd += ["-i", a.logo]

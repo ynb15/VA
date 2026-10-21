@@ -158,7 +158,42 @@ that broke him open". Der Widerspruch im Satz selbst trägt ihn.
 
 ---
 
-## Vor dem Schnitt zu prüfen — zwei Stellen, nicht allgemein
+## Was das Transkript je Marke beantworten muss
+
+Damit die Entscheidung Minuten dauert und nicht Stunden, steht sie als Skript
+da: `python3 video/garden-pruefplan.py <transkript>`. Es frisst das Format von
+`yt-transkript.py`, SRT und VTT, und gibt 0 zurueck, wenn die Liste zu diesem
+Video gehoert, 1 wenn nicht, 2 bei unentschieden.
+
+**Die Schwelle steht vorab fest, vor dem ersten Blick ins Transkript** —
+sonst entscheidet das Ergebnis die Regel. Fenster **−30 s/+120 s** um die
+Marke (eine Marke ist eher der Anfang des Schnitts als dessen Mitte), zweites
+Fenster ±180 s nur zur Einordnung. **≥5 von 7 Treffern: gehoert hierher.
+≤2: gehoert zur Paddock-Folge. 3–4: unentschieden**, dann dasselbe Skript
+gegen deren Transkript und vergleichen.
+
+| Marke | Die Frage, die das Transkript beantwortet |
+|---|---|
+| 16:00 Movie | Rahmt er seine Entscheidungen als Film — fragt er, was der Held täte? |
+| 40:40 Joe Hudson | **Fällt der Name Joe Hudson?** |
+| 41:00 Integration | Spricht er über Integration nach einer Erfahrung/einem Retreat? |
+| 44:00 Workaholism | Spricht er über Arbeitssucht? |
+| 1:00:23 Hormozi | **Fällt der Name Hormozi?** |
+| 1:06:00 Confidence | Spricht er über Selbstvertrauen? |
+| 1:21:00 My Why | Nennt er sein Warum, seinen Antrieb? |
+
+**Die beiden fett gesetzten entscheiden am meisten.** Eigennamen sind selten:
+ein Treffer wiegt schwer, und ein Fehlen auch. Genau diese beiden kommen auf
+der Videoseite **null Mal** vor — sie sind damit die Stellen, an denen die
+Zuordnung kippen kann.
+
+Das Skript meldet zusätzlich, **wo sonst** im Transkript ein Stichwort fällt.
+Steht `Hormozi` bei 10:00 statt bei 1:00:23, gehoert die Liste womoeglich
+hierher, aber seine Zeitmarken stammen aus einer anderen Fassung.
+
+---
+
+## Vor dem Schnitt zu prüfen — drei Punkte
 
 1. **Wohnort.** Die Folge ist in Austin aufgenommen, das ist unkritisch. Zwei
    Stellen sind es nicht: **1:21:59** („cultural bridge between Germany, South
@@ -181,11 +216,19 @@ that broke him open". Der Widerspruch im Satz selbst trägt ihn.
 
 ## Was gebaut ist, damit der Schnitt sofort anfangen kann
 
-Sein Preset liegt jetzt auf diesem Branch und ist **gelaufen, nicht nur
-kopiert**: `video/shorts-render.py` (Fassung mit `--look preset`),
-`video/fonts/Inter-Black.otf`, `video/luts/hald_identity_1080.png`,
-`video/preset-ynb.md`. Probe gerendert, 1080×1920 — Inter Black 82, Versalien,
-Kontur 8 px, Logo 28 % auf 0,87.
+Auf diesem Branch liegt jetzt die **zusammengefuehrte** Fassung des Renderers
+von `claude/content-assistant` (Commit `66de26b`): sie hat **sein Preset
+und** `--kopfzeile`. Dazu `video/fonts/Inter-Black.otf`,
+`video/luts/hald_identity_1080.png`, `video/preset-ynb.md` und neu
+`video/ortscheck.py`. Probe gerendert, 1080x1920 — Inter Black 82,
+Versalien, Kontur 8 px, Logo 28 % auf 0,87.
+
+**`ortscheck.py` deckt den Wohnort-Teil ab, der sich lesen laesst:**
+`python3 video/ortscheck.py video/shorts/garden-*.srt` vor jeder Abnahme,
+Rueckgabe 1 bei Fund. **Das Bild prueft es nicht** — Fassaden, Aussicht und
+Schilder bleiben Augenarbeit. Und es wird bei **1:21:59** anschlagen
+(„South Africa" steht in der Liste): das ist richtig so, zu entscheiden ist
+dann, ob ein *bestimmter* Ort faellt oder nur das Land.
 
 Sobald die Datei da ist, ist jeder Short **ein** Aufruf:
 
