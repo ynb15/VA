@@ -56,3 +56,7 @@ kingsbury -> Kingsbury
 # Britton-Folge (21.10.): Whisper zerlegt Ubuntu in "Buntu".
 buntu baby -> Ubuntu baby
 britton -> Britton
+# 21.10. zweiter Lauf: Whisper schreibt Paul Chek jetzt "Czech" statt "Cech".
+# Als Wortfolge, nicht als Einzelwort — "Czech" allein kann ein Land sein.
+paul czech -> Paul Chek
+czech says -> Chek says

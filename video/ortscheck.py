@@ -33,6 +33,22 @@ MUSTER = [
      "Hausnummer + Strassenname"),
     (r"\bwe live in\b|\bi live in\b|\bour house in\b|\bmy house in\b",
      "wohnt-in-Formel"),
+    # 21.10.2026: nicht nur sein Wohnort ist zu schuetzen. In der
+    # Curtis-Crane-Folge liest der Gast bei Masterzeit 6555 s seine
+    # E-Mail-Adresse vor — "my Yahoo email is cnc51924 at yahoo.com".
+    # Jeder Clip aus dieser Minute veroeffentlicht sie. Whisper schreibt
+    # das "at" und das "dot" aus, also muss auch die gesprochene Form
+    # getroffen werden, nicht nur die geschriebene.
+    (r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}",
+     "E-Mail-Adresse"),
+    (r"\b[A-Za-z0-9._%+-]{3,}\s+at\s+[A-Za-z0-9-]+\s*(?:\.|\s+dot\s+)\s*"
+     r"(?:com|net|org|co\.?\s*(?:uk|za)|de|io)\b",
+     "E-Mail-Adresse, ausgesprochen"),
+    (r"\b(?:\+\d{1,3}[\s-]?)?(?:\(?\d{2,4}\)?[\s-]?){2,4}\d{3,4}\b(?=.{0,40}"
+     r"(?:call|phone|number|whatsapp|text me))",
+     "Telefonnummer"),
+    (r"\b(?:my|his|her|their)\s+(?:email|e-mail|number|phone|address)\s+is\b",
+     "Kontaktdaten-Ansage"),
 ]
 
 

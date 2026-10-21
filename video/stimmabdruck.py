@@ -108,14 +108,24 @@ def gruppieren():
     from sklearn.cluster import AgglomerativeClustering
     ergebnis = {}
     for k, fenster in sorted(folgen().items()):
-        X = normiert(np.concatenate([f[2] for f in fenster]))
+        roh = np.concatenate([f[2] for f in fenster])
         texte, herkunft = [], []
         for basis, d, e, idx in fenster:
             for j, i in enumerate(idx):
                 texte.append(d[i]["text"].strip())
                 herkunft.append((os.path.basename(basis), i))
-        gr = AgglomerativeClustering(n_clusters=2, metric="cosine",
-                                     linkage="average").fit_predict(X)
+        # Abschnitte, fuer die keine Einbettung zustande kam (zu wenig Ton),
+        # tragen einen Nullvektor. Die fliegen hier raus und bekommen spaeter
+        # kein Etikett, sondern "?" — das ist die eingebaute Verweigerung.
+        gilt = np.linalg.norm(roh, axis=1) > 1e-6
+        X = normiert(roh[gilt])
+        gr_klein = AgglomerativeClustering(n_clusters=2, metric="cosine",
+                                           linkage="average").fit_predict(X)
+        gr = np.full(len(roh), -1, dtype=int)
+        gr[gilt] = gr_klein
+        if (~gilt).any():
+            print(f"{k}: {int((~gilt).sum())} Abschnitte ohne Einbettung",
+                  flush=True)
 
         anker = None
         bef = os.path.join(HIER, f"{k}_befund.json")
@@ -131,11 +141,13 @@ def gruppieren():
             continue
 
         ynb = gr[anker]
-        etikett = ["YNB" if g == ynb else "Gast" for g in gr]
+        etikett = ["?" if g < 0 else ("YNB" if g == ynb else "Gast") for g in gr]
         ergebnis[k] = {"etikett": etikett, "texte": texte,
-                       "herkunft": herkunft, "anker": anker}
+                       "herkunft": herkunft, "anker": anker,
+                       "einbettung": roh}
         n = sum(1 for e in etikett if e == "YNB")
-        print(f"{k}: {len(etikett)} Abschnitte, {n} YNB / {len(etikett)-n} Gast"
+        g_ = sum(1 for e in etikett if e == "Gast")
+        print(f"{k}: {len(etikett)} Abschnitte, {n} YNB / {g_} Gast"
               f"  | Anker: \"{texte[anker][:60]}\"", flush=True)
     np.save(os.path.join(HIER, "stimmabdruck_gruppen.npy"),
             np.array([ergebnis], dtype=object), allow_pickle=True)
