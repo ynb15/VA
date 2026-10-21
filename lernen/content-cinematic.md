@@ -234,3 +234,25 @@ trägt, den der Master nicht hat.
 transkribieren, die Phrase **suchen**, dann erst schneiden. Gebaut als
 `video/rueckkatalog_batch.py`, wiederaufnehmbar am Dateistand.
 → betrifft: content-*
+
+### Eine zusammengeführte Datei kann eine Voreinstellung still verschieben
+Beim Übernehmen des zusammengeführten `shorts-render.py` (Commit `66de26b`):
+**ihre Voreinstellung für `--look` ist `preset`, meine war `warm`.** Beide
+Werte sind weiterhin wählbar, nichts bricht, nichts warnt — wer die Datei
+übernimmt und sein altes Kommando weiterfährt, bekommt ein anderes Bild und
+merkt es erst am Ergebnis.
+
+**Vor dem Übernehmen einer fremden Fassung also zweierlei prüfen, nicht nur
+eines:**
+1. **Fehlt etwas?** Optionen und Funktionsnamen beider Fassungen gegeneinander
+   auflisten. Hier war ihre eine echte Obermenge (alle sechs `--broll`-Schalter
+   da, dazu `--kopfzeile` und `--lut`) — hätte ein `--broll` gefehlt, wäre das
+   Übernehmen das stille Ende des cinematischen Teils gewesen.
+2. **Hat sich eine Voreinstellung verschoben?** `default=` und `choices=` der
+   Optionen vergleichen, die man selbst benutzt. Das ist der Teil, den ein
+   Blick auf die Optionsliste **nicht** zeigt.
+
+Gegenmittel im eigenen Baukommando: **die Werte nennen, auf die es ankommt,
+auch wenn sie gerade die Voreinstellung sind.** `--look warm` steht jetzt
+ausdrücklich da.
+→ betrifft: alle Agenten, die Werkzeuge über Zweige hinweg teilen
