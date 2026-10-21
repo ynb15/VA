@@ -5,6 +5,28 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
 
 ---
 
+## 21.10.2026 — abends, vierte Runde
+
+- **Seine Zielspanne für Kopfgrößen ist 145–167 Pupillenabstand, nicht
+  125–140.** Gemessen an seinen drei veröffentlichten Zwei-Kopf-Thumbnails:
+  167/145, 162/146, 163/166. Meine ersten Fassungen lagen bei 128–153 und
+  waren durchweg zu klein. Sein Grund, wörtlich: *„das Gesicht zeigt ja die
+  Mimik, das hat am meisten Pull … so wenig Platz vor allem oben unbenutzt
+  lassen, wie nur möglich."*
+  → betrifft: content-*, cinematic, alle, die Gesichter ins Bild setzen
+
+- **Oberkörper schneidet man nicht weg, man vergrössert den Kopf.** Dann
+  läuft der Rumpf unten von selbst aus dem Bild. Nur was in den Textblock
+  ragt (eine erhobene Hand) wird aus der Maske genommen.
+  → betrifft: thumbnails, cinematic
+
+- **Die Prüffrage, die er als Prinzip formuliert hat:** *welchen Wert
+  kommuniziert diese Fläche?* Hintergrund und Oberkörper tragen nichts, Mimik
+  trägt alles. Gilt für jedes Bild, nicht nur für Thumbnails.
+  → betrifft: alle
+
+---
+
 ## 21.10.2026 — abends, dritte Runde
 
 - **Vier Einzelwörter untereinander sind eine belegte Form von ihm, keine

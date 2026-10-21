@@ -303,7 +303,7 @@ def _mass(zeichner, text, font):
 
 
 def satz(bild, zeilen, kasten, mitte_x=640, mitte_y=360,
-         max_breite=760, max_hoehe=470, grad=None):
+         max_breite=760, max_hoehe=470, grad=None, zeilenhoehe=None):
     """Alle Zeilen in EINEM Schriftgrad und EINEM Zeilenabstand setzen.
 
     So macht er es selbst: in seinem Canva-File hat ein Textblock genau einen
@@ -325,12 +325,14 @@ def satz(bild, zeilen, kasten, mitte_x=640, mitte_y=360,
         kasten_index, kasten_teil = kasten[0], kasten[1]
     else:
         kasten_index, kasten_teil = kasten, None
+    if zeilenhoehe is None:
+        zeilenhoehe = ZEILENHOEHE
     d = ImageDraw.Draw(bild)
 
     def passt(g):
         f = ImageFont.truetype(SCHRIFT, g)
         breit = max(_mass(d, t, f)[0] for t in zeilen)
-        hoch = (len(zeilen) - 1) * g * ZEILENHOEHE + g * CAP
+        hoch = (len(zeilen) - 1) * g * zeilenhoehe + g * CAP
         return breit <= max_breite and hoch <= max_hoehe
 
     if grad is None:
@@ -340,7 +342,7 @@ def satz(bild, zeilen, kasten, mitte_x=640, mitte_y=360,
 
     f = ImageFont.truetype(SCHRIFT, grad)
     cap = grad * CAP
-    schritt = grad * ZEILENHOEHE
+    schritt = grad * zeilenhoehe
     block = (len(zeilen) - 1) * schritt + cap
     y = mitte_y - block / 2                      # Oberkante der ersten Versalhöhe
 
@@ -385,7 +387,8 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
           logo_farbe=(0xF0, 0x48, 0x60), logo_oben=True, pfeil_von=None,
           pfeil_nach=None, pfeil_bogen=0.28, pfeil_dicke=18,
           pfeil_farbe=(0xDF, 0x2D, 0x00), pfeil_gezeichnet=True,
-          pfeil_kopf=3.1, links_spiegeln=False, rechts_spiegeln=False):
+          pfeil_kopf=3.1, links_spiegeln=False, rechts_spiegeln=False,
+          zeilenhoehe=None):
     """zeilen: Liste von Texten · kasten: Zeilenindex, oder [index, "teil"].
 
     `mitte` ist ein echtes Foto fuer die Bildmitte. Liegt eines vor, ruecken
@@ -446,7 +449,7 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
         logo_setzen(bild, logo, logo_xy, logo_groesse, logo_farbe)
 
     _, grad = satz(bild, zeilen, kasten, text_mitte, text_mitte_y,
-                   max_breite, max_hoehe, grad)
+                   max_breite, max_hoehe, grad, zeilenhoehe)
 
     if pfeil_von and pfeil_nach:
         pfeil(bild, tuple(pfeil_von), tuple(pfeil_nach), pfeil_bogen,

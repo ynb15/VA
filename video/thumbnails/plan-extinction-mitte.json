@@ -5,8 +5,8 @@
   "rechts": "video/thumbnails/_freisteller/a_2504_ohne_hand.png",
   "ziel_rechts": {
    "augen_x": 1128,
-   "scheitel_y": 10,
-   "box_h": 470
+   "scheitel_y": 3,
+   "box_h": 500
   },
   "mitte": "video/thumbnails/_mittelgrafik.jpg",
   "mitte_karte": false,
@@ -28,8 +28,8 @@
   "grad": 127,
   "ziel_links": {
    "augen_x": 167,
-   "scheitel_y": 10,
-   "box_h": 495
+   "scheitel_y": 3,
+   "box_h": 560
   }
  }
 ]

@@ -386,6 +386,34 @@ ich habe zusätzlich eine zweite Copy gebaut, die er nicht wollte, und das hat
 ihn zu Recht geärgert. Eine Bestellung, eine Lieferung. Was ich zusätzlich
 für sinnvoll halte, wird gefragt, nicht danebengelegt.
 
+## Fläche, die kein Gesicht zeigt, zahlt nicht ein
+
+Sein Satz am 21.10.: *„je mehr wir von Kyles Oberkörper zeigen, desto weniger
+… das nimmt halt Platz weg, den wir fürs Gesicht nutzen können. Und das
+Gesicht zeigt ja die Mimik, das hat am meisten Pull. … So wenig Platz vor
+allem oben unbenutzt lassen, wie nur möglich."*
+
+**Das ist an seinen eigenen Thumbnails nachprüfbar.** Pupillenabstand in den
+drei Zwei-Kopf-Folgen:
+
+| | links | rechts |
+|---|---:|---:|
+| `frNOUgxE0IM` | 167 | 145 |
+| `ewgUIZGJaWQ` | 162 | 146 |
+| `RG-K0fIA2-w` | 163 | 166 |
+
+**Die Zielspanne ist 145–167, nicht 125–140.** Meine ersten Fassungen lagen
+bei 128–153 und waren damit durchweg zu klein. Dazu: `scheitel_y` auf **3**
+statt 10 — die obersten Pixel sind Fläche wie jede andere.
+
+**Der Rumpf verschwindet von selbst, wenn der Kopf groß genug ist.** Nicht
+den Rumpf wegschneiden, sondern den Kopf vergrössern — dann läuft er unten
+aus dem Bild. Nur eine Hand, die in den Textblock ragt, wird aus der Maske
+genommen.
+
+**Die Prüffrage vor jedem Bau:** welchen Wert hat diese Fläche? Hintergrund
+und Oberkörper tragen nichts, Mimik trägt alles.
+
 ## Die Mimik — die wichtigste Regel, und die habe ich zweimal verfehlt
 
 Seine Worte am 20.10.: *„Das hat keinen Anreiz, da klickt keiner drauf, wenn
