@@ -1,3 +1,32 @@
+## 21.10.2026 — Gemeinsames Werkzeug gehört einem Branch
+
+**`shorts-render.py` lag in drei Fassungen vor, keine davon vollständig:**
+der Content-Assistant hatte Isabelles Preset, aber nicht die Kopfzeile;
+der Chief of Staff hatte die Kopfzeile, aber nicht das Preset; der
+cinematische Zweig keines von beidem. Zusammengeführt auf
+`claude/content-assistant` — dort gehört es hin, und wer eine Erweiterung
+baut, bringt sie zurück, **bevor** er weiterarbeitet.
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Beim Zusammenführen fiel etwas auf, das am Code nicht zu sehen ist:
+Kopfzeile und Untertitel überlappen.** Das Feld sitzt mittig auf 68 % der
+Höhe (1221–1390 px), die Zeile ohne gemessene Lippe auf 70 %
+(1303–1385 px). In den ersten 4,5 Sekunden stehen sie übereinander — im
+Testbild deutlich zu sehen, in beiden Quellfassungen unbemerkt, weil dort
+nie beides zugleich lief.
+**Der Renderer rechnet das jetzt aus und sagt es**, statt es zu riskieren:
+er vergleicht das Feldband mit dem Band der Einblendungen, die während
+der Kopfzeile laufen, und warnt mit beiden Zahlen. Verschoben wird von
+Hand (`--kopfzeile-hoehe`) — wo die Kopfzeile sitzt, ist sein Geschmack,
+nicht meine Messung.
+→ betrifft: content-*, YNB Cinema
+
+**Und die allgemeine Form davon:** zwei Einblendungen, die einzeln
+richtig sitzen, können zusammen falsch sitzen. Wer ein zweites Element
+ins Bild hängt, rechnet die Bänder gegeneinander — ein Blick auf ein
+Standbild, in dem zufällig gerade keine Zeile steht, beweist nichts.
+→ betrifft: alle Content-Agenten
+
 ## 21.10.2026 — Kein Short darf verraten, wo er wohnt
 
 **Aus seinem eigenen Arbeits-Slack**, an seine Cutterin, 02.09.2026:
