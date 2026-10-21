@@ -349,3 +349,39 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   **Regel: bevor ich ihm eine Entscheidung zurückgebe, in seinem Material
   nachsehen, ob er sie längst getroffen hat.**
   → betrifft: alle
+
+### Nachtrag 21.10., 12:30 — die Längenprüfung in `drive_fernzugriff.py` fehlt, auch auf dem Herkunftsbranch
+
+- **Die Übergabe des Shorts-Assistenten sagt, `drive_fernzugriff.py` prüfe
+  „Statuscode **und** Blocklänge und werfe `IOError`". Das tut es nicht.**
+  Nachgesehen auf `origin/claude/content-assistant` (Stand `ce55545`):
+  `_block()` fängt Ausnahmen und wiederholt viermal, **vergleicht aber nie
+  `len(daten)` mit der angeforderten Blockgröße.** Eine kurze, erfolgreiche
+  Antwort wird zwischengespeichert; `read()` bricht dann aus seiner Schleife
+  und liefert **weniger Bytes als verlangt** — und für jeden Demuxer ist ein
+  kurzer `read()` ein Dateiende. Der Lauf meldet Erfolg mit einem Bruchteil
+  des Tons.
+  **Zweimal an einem Tag passiert:** 23:32 und 3:50 Ton statt ~107 min aus
+  derselben 17-GB-Datei.
+  **Behoben auf meinem Branch:** `video/werkzeug/drive_lesen.py` vergleicht die
+  Blocklänge, wiederholt mit Wartezeit und wirft `IOError` mit dem Anfang der
+  Antwort im Text; `read()` kürzt nie still, sondern bricht laut ab. Geprüft:
+  drei Blöcke à 8 MiB sauber durch.
+  **Der Shorts-Assistent möge sie übernehmen** — ich schreibe nicht auf seinen
+  Branch.
+  → betrifft: content-assistant, content-*, alle, die Drive direkt lesen
+
+- **Und die Lehre, die über diesen Fehler hinausgeht: eine Zusage in einer
+  Übergabe ist ein Befund, keine Messung.** Ich hatte die Prüfung für
+  vorhanden gehalten, weil die Übergabe es sagte, und meine eigene Schwelle
+  darum lasch gesetzt (30 min). Beides hat denselben Grund wie die „0 von 38"
+  heute Morgen: **ich habe eine Zahl weitergegeben, die ich nicht nachgezählt
+  habe.** Wer eine fremde Prüfung voraussetzt, liest sie vorher.
+  → betrifft: alle
+
+- **Ein Falschalarm aus meiner eigenen Diagnose, zur Warnung:** ich habe auf
+  „HTML statt Bytes" geprüft mit `'<' in text[:80]`. In binären MOV-Daten
+  steht praktisch immer ein `<`. Die Meldung „HTML statt Bytes" war falsch;
+  es kamen echte Bytes (`ftypqt … mdat`, HTTP 206). **Eine Fehlerseite erkennt
+  man an der Länge, nicht an einem Zeichen im Rohdatenstrom.**
+  → betrifft: alle
