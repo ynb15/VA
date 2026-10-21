@@ -1,0 +1,55 @@
+{
+ "quelle": "video/sutcliffe_meaningful_roh.mp4",
+ "groesse": [
+  1920,
+  1080
+ ],
+ "bezugsbewegung": 2.733,
+ "einstellungen": [
+  {
+   "layout": "einzel",
+   "kasten": "780:141:528:939",
+   "lippe": 1248,
+   "start": 0.0,
+   "ende": 2.63,
+   "tot": false,
+   "bewegung_x": 0.544,
+   "mitte": 0.67,
+   "masse": 2.4
+  },
+  {
+   "layout": "einzel",
+   "kasten": "732:98:528:939",
+   "lippe": 1248,
+   "start": 2.63,
+   "ende": 29.73,
+   "tot": false,
+   "bewegung_x": 0.519,
+   "mitte": 0.74,
+   "masse": 3.4
+  },
+  {
+   "layout": "stapel",
+   "oben": "0:0:850:756",
+   "unten": "1070:146:850:756",
+   "lippe": 672,
+   "start": 29.73,
+   "ende": 37.13,
+   "tot": false,
+   "bewegung_x": 0.831,
+   "mitte": 0.26,
+   "masse": 1.99
+  },
+  {
+   "layout": "einzel",
+   "kasten": "708:86:528:939",
+   "lippe": 1248,
+   "start": 37.13,
+   "ende": 59.63,
+   "tot": false,
+   "bewegung_x": 0.506,
+   "mitte": 0.77,
+   "masse": 3.06
+  }
+ ]
+}

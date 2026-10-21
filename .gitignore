@@ -17,3 +17,7 @@ video/*.npy
 video/*.npy.idx
 video/einbetten.log
 .ecapa/
+video/sutcliffe_fenster.mp4
+video/sutcliffe_meaningful_roh.mp4
+video/sutcliffe-meaningful-*.mp4
+video/sutcliffe-render.log
