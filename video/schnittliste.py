@@ -60,6 +60,52 @@ def ziehen(t, paus, max_versatz=1.2):
     return min(nah, key=lambda p: abs(p[0] - t))[0] if nah else t
 
 
+
+def saetze_bilden(woerter, pause=0.45):
+    """Woerter zu SAETZEN gruppieren, nicht zu Whisper-Abschnitten.
+
+    Sein Strich vom 21.10. hat den Fehler aufgedeckt: Whispers Abschnitte
+    enden mitten im Satz („...translation and commentary" | „on the book of
+    Genesis"), also zerreisst jeder Strich an so einer Grenze einen Satz.
+    Er streicht nach Sinn — die Liste muss deshalb nach Sinn gebaut sein.
+
+    Getrennt wird an Satzzeichen und an einer Sprechpause ueber `pause`.
+    Beides zusammen, weil Whispers Zeichensetzung mal fehlt und die Pause
+    allein mitten im Satz stehen kann.
+    """
+    saetze, lauf = [], []
+    for i, w in enumerate(woerter):
+        lauf.append(w)
+        text = w["t"].rstrip()
+        endet = text.endswith((".", "!", "?"))
+        luecke = (woerter[i + 1]["start"] - w["end"]) if i + 1 < len(woerter) else 9e9
+        if endet or luecke >= pause:
+            saetze.append({"start": lauf[0]["start"], "end": lauf[-1]["end"],
+                           "text": " ".join(x["t"].strip() for x in lauf).strip()})
+            lauf = []
+    if lauf:
+        saetze.append({"start": lauf[0]["start"], "end": lauf[-1]["end"],
+                       "text": " ".join(x["t"].strip() for x in lauf).strip()})
+    # Sehr kurze Schnipsel („Yeah.", „Right.") an den Nachbarn haengen, sonst
+    # wird die Liste unlesbar lang.
+    gelegt = []
+    for s in saetze:
+        if gelegt and len(s["text"].split()) <= 2 and s["start"] - gelegt[-1]["end"] < 0.8:
+            gelegt[-1]["end"] = s["end"]
+            gelegt[-1]["text"] += " " + s["text"]
+        else:
+            gelegt.append(dict(s))
+    return gelegt
+
+
+def woerter_holen(clip, modell="medium"):
+    from faster_whisper import WhisperModel
+    m = WhisperModel(modell, device="cpu", compute_type="int8")
+    seg, _ = m.transcribe(ton_lesen(clip), language="en", word_timestamps=True)
+    return [{"t": w.word, "start": w.start, "end": w.end}
+            for s in seg for w in (s.words or []) if w.word.strip()]
+
+
 def bauen(clip, abschnitte, tempo, out, titel, ende_clip=None):
     zeilen = [f"# {titel}", f"# Quelle: {os.path.basename(clip)} · Tempo {tempo}",
               "#",
@@ -129,6 +175,8 @@ def main():
     p.add_argument("--versatz", type=float, default=0.0,
                    help="Sekunde im Transkript, an der der Clip beginnt")
     p.add_argument("--tempo", type=float, default=1.15)
+    p.add_argument("--pause", type=float, default=0.45,
+                   help="Sprechpause, ab der ohne Satzzeichen getrennt wird")
     p.add_argument("--titel", default="Short")
     p.add_argument("--liste", help="Schnittliste hierhin schreiben")
     p.add_argument("--ende-clip", type=float, default=None,
@@ -146,11 +194,9 @@ def main():
                "text": s["text"]} for s in roh]
         ab = [s for s in ab if s["end"] > 0]
     else:
-        from faster_whisper import WhisperModel
-        m = WhisperModel("medium", device="cpu", compute_type="int8")
-        seg, _ = m.transcribe(ton_lesen(a.clip), language="en", vad_filter=True)
-        ab = [{"start": round(s.start, 2), "end": round(s.end, 2),
-               "text": s.text.strip()} for s in seg]
+        ab = saetze_bilden(woerter_holen(a.clip), pause=a.pause)
+        ab = [{"start": round(s["start"], 2), "end": round(s["end"], 2),
+               "text": s["text"]} for s in ab]
 
     if a.liste:
         n = bauen(a.clip, ab, a.tempo, a.liste, a.titel, a.ende_clip)
