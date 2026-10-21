@@ -46,6 +46,48 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
   Regel 5 aus `plan/ABLAUF.md` gilt auch für Pfade, nicht nur für Dateien.
   → betrifft: alle
 
+## 21.10.2026 — seine Korrektur: verschwendeter Rand und schwache Mimik
+
+*„Guck mal, wie viel Platz mein Hals einnimmt und auch Kens Oberkörper. Das
+ist verschwendeter Platz."* · *„Ken guckt irgendwo ins Leere. Und die Mimik
+genauso wie meine ist super schwach. Da steckt nicht viel Emotion dahinter."*
+
+### Unter dem Kinn bleiben 120 px, nicht 240
+
+- **Gemessen an acht Gesichtern aus vier seiner veröffentlichten
+  Thumbnails: Median 122 px unter der Kinnlinie, Spanne 37–172.** Das von
+  ihm abgenommene `aaronson-openai-insider` liegt bei 126 und 132. Das von
+  ihm beanstandete `ken-reason` lag bei **187 und 239**.
+- **Hals, Schulter und Hemd tragen keine Mimik.** Der Kopf wird dafür nach
+  unten geschoben, nicht vergrössert — der Pupillenabstand lag mit 143/154
+  schon in seiner Spanne 145–167. Grösser machen hätte das Gesicht weich
+  gerechnet und das Problem nicht gelöst.
+- **Das ist eine zweite Kennzahl neben dem Pupillenabstand.** Die Kopfgrösse
+  allein sagt nichts darüber, wie viel Fläche der Kopf wirklich nutzt.
+  → betrifft: thumbnails, cinematic
+
+### „Guckt ins Leere" ist nicht die Kopfdrehung
+
+- **Gemessen (Nase gegen Augenmitte, auf den Pupillenabstand normiert):**
+  seine acht veröffentlichten Gesichter liegen im Median bei 0,11, die
+  beiden beanstandeten Ken-Köpfe bei 0,19 und −0,08 — **innerhalb seiner
+  Spanne.** Die Drehung war also richtig.
+- **Was er meint, ist die Blickrichtung der Augen**, und die misst YuNet
+  nicht: der Detektor gibt die Lage der Augen, nicht die der Pupillen. Dafür
+  gibt es nur das Hinsehen. **Eine Kennzahl, die es nicht gibt, darf nicht
+  durch eine ersetzt werden, die es gibt.**
+  → betrifft: alle, die Messwerte als Entscheidung ausgeben
+
+### Ein ruhiges Gespräch liefert kein Thumbnail-Gesicht
+
+- **In der Ken-Aufnahme liegt die Augenweite im Median bei 0,005**, seine
+  veröffentlichten Gesichter bei 0,016–0,039. Das beste Bild aus einem
+  schwachen Fenster ist trotzdem ein schwaches Bild.
+- **Also weiter suchen, nicht das Beste aus dem ersten Fenster nehmen.**
+  Ein Fenster kostet rund 3 MB je Sekunde Laufzeit — billiger als ein
+  Thumbnail, das er zurückgibt.
+  → betrifft: thumbnails, cinematic, content-*
+
 ## 21.10.2026 — Ken Stern
 
 ### Die Kinnlinie wird am Fertigbild abgelesen, nicht am Detektor

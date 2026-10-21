@@ -588,6 +588,36 @@ zeigt eindeutig nach rechts. **Blickrichtung wird angeschaut, nicht
 gerechnet.** Zur Platzierung taugt YuNet, zur Kopfdrehung nicht.
 
 
+## Der verschwendete Rand — seine Korrektur vom 21.10.2026
+
+*„Guck mal, wie viel Platz mein Hals einnimmt und auch Kens Oberkörper. Das
+ist verschwendeter Platz."* · *„Ken guckt irgendwo ins Leere. Und die Mimik
+genauso wie meine ist super schwach."*
+
+**Nachgemessen an acht Gesichtern aus vier veröffentlichten Thumbnails:**
+
+| | unter dem Kinn | Drehung (Nase gegen Augenmitte / pd) |
+|---|---:|---:|
+| seine veröffentlichten acht | **Median 122 px**, Spanne 37–172 | Median 0,11 |
+| `aaronson-openai-insider` (von ihm abgenommen) | 126 / 132 | 0,13 / −0,13 |
+| `ken-reason` (von ihm beanstandet) | **187 / 239** | 0,19 / −0,08 |
+
+**Die Regel: unter dem Kinn bleiben rund 120 px, nie mehr als 170.** Alles
+darunter ist Hals, Schulter und Hemd — Fläche, die keine Mimik trägt. Die
+Kinnlinie landet also bei **y ≈ 600**, nicht bei 480 wie im ersten
+Ken-Entwurf. Der Kopf wird dafür nach unten geschoben, nicht vergrössert:
+der Pupillenabstand lag mit 143/154 schon in seiner Spanne.
+
+**Die Drehung war nicht das Problem.** Beide Ken-Köpfe liegen mit 0,19 und
+−0,08 innerhalb seiner Spanne. „Guckt ins Leere" meint die **Blickrichtung
+der Augen**, nicht die Kopfdrehung — und die misst YuNet nicht. Dafür gibt
+es nur das Hinsehen.
+
+**Drittens die Mimik.** In dieser Aufnahme liegt die Augenweite im Median
+bei 0,005, seine veröffentlichten Gesichter bei 0,016–0,039. Ein ruhiges
+Gespräch liefert kein Thumbnail-Gesicht — dann muss weiter gesucht werden,
+nicht das beste aus einem schwachen Fenster genommen.
+
 ## Die Platzierung, aus seinen Thumbnails gemessen
 
 Mit YuNet (Gesichtserkennung, kein Erzeugen) an den drei veröffentlichten

@@ -5,12 +5,12 @@
   "rechts": "video/thumbnails/_freisteller/k_3722.png",
   "ziel_links": {
    "augen_x": 167,
-   "kinn_y": 600,
+   "kinn_y": 662,
    "box_h": 590
   },
   "ziel_rechts": {
    "augen_x": 1128,
-   "kinn_y": 510,
+   "kinn_y": 629,
    "box_h": 523
   },
   "max_breite": 700,
