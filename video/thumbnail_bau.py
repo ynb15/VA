@@ -387,6 +387,32 @@ def satz(bild, zeilen, kasten, mitte_x=640, mitte_y=360,
     return bild, grad
 
 
+def unten_abdunkeln(bild, staerke=0.45, hoehe=220):
+    """Unteren Bildrand weich abdunkeln, damit weisse Schrift dort traegt.
+
+    Eine letzte Zeile wie „Humanity" laeuft bei ihm ueber Mikrofon und
+    Schulter — helle Stellen, auf denen Weiss auf Weiss steht. Ein Verlauf
+    nach unten loest das, ohne dass eine Kante sichtbar wird: die Deckung
+    waechst mit t**1.5, oben also fast nichts, unten `staerke`. Quadratisch
+    waere zu spaet dran — gemessen lag die Deckung auf Mikrofonhoehe dann
+    noch bei 13 %, und das Mikrofon blieb weiss.
+
+    Der Verlauf liegt ueber den Koepfen, nicht nur ueber dem Hintergrund —
+    das Mikrofon gehoert zum Freisteller, eine Abdunklung nur im Hintergrund
+    wuerde genau die helle Stelle verfehlen.
+    """
+    if not staerke:
+        return bild
+    rampe = Image.new('L', (1, HOEHE), 0)
+    for y in range(HOEHE):
+        t = (y - (HOEHE - hoehe)) / hoehe
+        rampe.putpixel((0, y), 0 if t <= 0 else int(255 * staerke * t ** 1.5))
+    schleier = Image.new('RGBA', (BREITE, HOEHE), (0, 0, 0, 255))
+    schleier.putalpha(rampe.resize((BREITE, HOEHE)))
+    bild.alpha_composite(schleier)
+    return bild
+
+
 def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
           text_mitte_y=None, max_breite=None, max_hoehe=None, grad=None,
           hg_dunkel=0.08, hg_weich=6.0, ziel_links=None, ziel_rechts=None,
@@ -397,7 +423,7 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
           pfeil_nach=None, pfeil_bogen=0.28, pfeil_dicke=18,
           pfeil_farbe=(0xDF, 0x2D, 0x00), pfeil_gezeichnet=True,
           pfeil_kopf=3.1, links_spiegeln=False, rechts_spiegeln=False,
-          zeilenhoehe=None):
+          zeilenhoehe=None, unten_dunkel=0.0, unten_hoehe=220):
     """zeilen: Liste von Texten · kasten: Zeilenindex, oder [index, "teil"].
 
     `mitte` ist ein echtes Foto fuer die Bildmitte. Liegt eines vor, ruecken
@@ -456,6 +482,8 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
         # Auf die Koepfe geworfen, nicht dahinter: wer „ein Logo auf ihn
         # werfen" sagt, meint davor.
         logo_setzen(bild, logo, logo_xy, logo_groesse, logo_farbe)
+
+    unten_abdunkeln(bild, unten_dunkel, unten_hoehe)
 
     _, grad = satz(bild, zeilen, kasten, text_mitte, text_mitte_y,
                    max_breite, max_hoehe, grad, zeilenhoehe)

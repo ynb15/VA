@@ -32,6 +32,8 @@
   },
   "max_breite": 856,
   "max_hoehe": 300,
-  "text_mitte_y": 169
+  "text_mitte_y": 122,
+  "grad": 130,
+  "zeilenhoehe": 0.9
  }
 ]
