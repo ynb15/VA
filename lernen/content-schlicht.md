@@ -1,3 +1,34 @@
+## 21.10.2026 — Kein Short darf verraten, wo er wohnt
+
+**Aus seinem eigenen Arbeits-Slack**, an seine Cutterin, 02.09.2026:
+*„Vielleicht doch den Scarborough-Teil rausnehmen in diesem Short?
+Gewisse Menschen müssen nicht so easy wissen wo wir wohnen."* Die Regel
+stand in keinem unserer Werkzeuge und in keiner Prüfliste.
+
+**Gilt für Bild, Ton und Untertitel:** Straßennamen, Viertel, erkennbare
+Fassaden, Aussicht, Schilder, Ortsnamen im Gespräch.
+
+**Der lesbare Teil ist jetzt geprüft, nicht nur versprochen.**
+`video/ortscheck.py` sucht Untertitel und Transkripte nach Ortsnamen aus
+seinem Umfeld ab, dazu nach zwei Formen, die eine Adresse verraten, ohne
+einen bekannten Namen zu nennen (Hausnummer + Straßenname, „we live
+in …"). Rückgabe 1 bei Fund, damit es in einem Lauf auffällt.
+**Sechzehn Dateien durchlaufen — alle sauber:** die sechs
+Meaningful-Shorts, das Sutcliffe-Stück, beide Rick-Fassungen und das
+Aaronson-Transkript.
+
+**Was das Skript nicht kann: das Bild.** Fassaden, Aussicht, Schilder
+bleiben Augenarbeit vor jeder Abnahme. Ein grüner Lauf ist kein
+Freibrief, sondern deckt genau die Hälfte ab, die sich lesen lässt.
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Und eine Zahl, die dagegen spricht und trotzdem hierhin gehört:** die
+Ortsliste ist handgeschrieben. Sie findet, was sie kennt. Ein Ortsname,
+den niemand eingetragen hat, läuft durch — der grüne Lauf oben beweist
+also nicht, dass nichts drin ist, sondern nur, dass nichts Bekanntes
+drin ist. Wer einen neuen Ort hört, trägt ihn nach.
+→ betrifft: content-*
+
 ## 21.10.2026 — Sein Shorts-Preset ist der Maßstab, nicht unsere Messung
 
 **Er hat den Ordner übergeben, mit dem seine Shorts bisher gebaut wurden**
