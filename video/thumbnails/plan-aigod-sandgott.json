@@ -1,0 +1,34 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund_aigod.jpg",
+  "links": "video/thumbnails/_freisteller/y_god.png",
+  "rechts": "video/thumbnails/_freisteller/a_god.png",
+  "ziel_links": {
+   "augen_x": 167,
+   "kinn_y": 600,
+   "box_h": 420
+  },
+  "ziel_rechts": {
+   "augen_x": 1128,
+   "kinn_y": 600,
+   "box_h": 429
+  },
+  "zeilen": [
+   "Does",
+   "God Exist?",
+   "Not Yet"
+  ],
+  "kasten": 2,
+  "max_breite": 600,
+  "zeilenhoehe": 1.02,
+  "ziel": "video/thumbnails/aigod-sandgott.jpg",
+  "mitte": "video/thumbnails/_sandgott_vorschau.jpg",
+  "mitte_karte": false,
+  "mitte_breite": 420,
+  "mitte_unten": 742,
+  "mitte_dunkel": 1.0,
+  "mitte_weich_rand": 60,
+  "text_mitte_y": 158,
+  "max_hoehe": 290
+ }
+]

@@ -232,6 +232,38 @@ def logo_setzen(bild, maske_pfad, mitte_xy, groesse, farbe=(0xF0, 0x48, 0x60),
     return bild
 
 
+def halo(bild, mitte_xy=(640, 300), radius=250, dicke=16,
+         farbe=(0xFF, 0xB0, 0x30), schein=1.0):
+    """Ein leuchtender Ring — der Heiligenschein hinter der Bildmitte.
+
+    Gebaut aus derselben Mehrfach-Unschaerfe wie `logo_setzen`: ein harter
+    Kern, darunter drei weichere Schichten. Kein erzeugtes Bild, nur Geometrie
+    — damit traegt diese Fassung auch dann, wenn kein Bildmodell erreichbar
+    ist.
+    """
+    cx, cy = mitte_xy
+    rand = int(radius * 0.9)
+    gross = Image.new('L', (2 * (radius + rand), 2 * (radius + rand)), 0)
+    m = radius + rand
+    ImageDraw.Draw(gross).ellipse(
+        [m - radius, m - radius, m + radius, m + radius],
+        outline=255, width=dicke)
+    x0, y0 = cx - m, cy - m
+    if schein:
+        for r, deck in ((radius * 0.20 * schein, 0.55),
+                        (radius * 0.08 * schein, 0.80),
+                        (radius * 0.03 * schein, 1.0)):
+            weich = gross.filter(ImageFilter.GaussianBlur(r))
+            weich = Image.eval(weich, lambda v: int(v * deck))
+            schicht = Image.new('RGBA', gross.size, farbe + (0,))
+            schicht.putalpha(weich)
+            bild.alpha_composite(schicht, dest=(x0, y0))
+    kern = Image.new('RGBA', gross.size, farbe + (0,))
+    kern.putalpha(gross)
+    bild.alpha_composite(kern, dest=(x0, y0))
+    return bild
+
+
 def pfeil(bild, von, nach, bogen=0.28, dicke=18, farbe=(255, 255, 255),
           kopf=3.1, gezeichnet=True, schwung=0.30):
     """Ein gebogener Pfeil von `von` nach `nach`.
@@ -423,7 +455,9 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
           pfeil_nach=None, pfeil_bogen=0.28, pfeil_dicke=18,
           pfeil_farbe=(0xDF, 0x2D, 0x00), pfeil_gezeichnet=True,
           pfeil_kopf=3.1, links_spiegeln=False, rechts_spiegeln=False,
-          zeilenhoehe=None, unten_dunkel=0.0, unten_hoehe=220):
+          zeilenhoehe=None, unten_dunkel=0.0, unten_hoehe=220,
+          halo_xy=None, halo_radius=250, halo_dicke=16,
+          halo_farbe=(0xFF, 0xB0, 0x30), halo_schein=1.0):
     """zeilen: Liste von Texten · kasten: Zeilenindex, oder [index, "teil"].
 
     `mitte` ist ein echtes Foto fuer die Bildmitte. Liegt eines vor, ruecken
@@ -466,6 +500,11 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
             y = mitte_unten - im.height
             bild.alpha_composite(im, dest=(max(0, 640 - im.width // 2),
                                            max(0, y)))
+
+    if halo_xy:
+        # Hinter die Koepfe, wie das Mittelbild auch.
+        halo(bild, tuple(halo_xy), halo_radius, halo_dicke,
+             tuple(halo_farbe), halo_schein)
 
     if logo and not logo_oben:
         logo_setzen(bild, logo, logo_xy, logo_groesse, logo_farbe)
