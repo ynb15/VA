@@ -450,7 +450,7 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
           hg_dunkel=0.08, hg_weich=6.0, ziel_links=None, ziel_rechts=None,
           mitte=None, mitte_kippung=4.0, mitte_rand=14, mitte_breite=None,
           mitte_unten=700, mitte_dunkel=0.82, mitte_karte=True,
-          mitte_weich_rand=70, logo=None, logo_xy=(528, 370), logo_groesse=128,
+          mitte_weich_rand=70, mitte_weich_hoch=0, mitte_x=640, logo=None, logo_xy=(528, 370), logo_groesse=128,
           logo_farbe=(0xF0, 0x48, 0x60), logo_oben=True, pfeil_von=None,
           pfeil_nach=None, pfeil_bogen=0.28, pfeil_dicke=18,
           pfeil_farbe=(0xDF, 0x2D, 0x00), pfeil_gezeichnet=True,
@@ -490,15 +490,20 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
             im = im.resize((br, int(im.height * kk)), Image.LANCZOS)
             if mitte_dunkel != 1.0:
                 im = Image.eval(im, lambda v: int(min(255, v * mitte_dunkel)))
+            # Seitlich immer weich, oben und unten nur auf Wunsch: die
+            # Robotergrafik laeuft unten bis zur Bildkante, ein freigestelltes
+            # Motiv wie die beiden Haende braucht dort auch eine weiche Kante.
             maske = Image.new('L', im.size, 0)
             ImageDraw.Draw(maske).rectangle(
-                [mitte_weich_rand, 0,
-                 im.width - mitte_weich_rand, im.height], fill=255)
-            maske = maske.filter(ImageFilter.GaussianBlur(mitte_weich_rand / 2))
+                [mitte_weich_rand, mitte_weich_hoch,
+                 im.width - mitte_weich_rand,
+                 im.height - mitte_weich_hoch], fill=255)
+            maske = maske.filter(ImageFilter.GaussianBlur(
+                max(mitte_weich_rand, mitte_weich_hoch) / 2))
             im = im.convert('RGBA')
             im.putalpha(maske)
             y = mitte_unten - im.height
-            bild.alpha_composite(im, dest=(max(0, 640 - im.width // 2),
+            bild.alpha_composite(im, dest=(max(0, mitte_x - im.width // 2),
                                            max(0, y)))
 
     if halo_xy:

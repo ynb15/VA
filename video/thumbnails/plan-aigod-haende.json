@@ -1,0 +1,35 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund_aigod.jpg",
+  "links": "video/thumbnails/_freisteller/y_god2.png",
+  "rechts": "video/thumbnails/_freisteller/a_god2.png",
+  "ziel_links": {
+   "augen_x": 167,
+   "kinn_y": 600,
+   "box_h": 389
+  },
+  "ziel_rechts": {
+   "augen_x": 1128,
+   "kinn_y": 600,
+   "box_h": 370
+  },
+  "zeilen": [
+   "Does",
+   "God Exist?",
+   "Not Yet"
+  ],
+  "kasten": 2,
+  "zeilenhoehe": 1.02,
+  "ziel": "video/thumbnails/aigod-haende.jpg",
+  "mitte": "video/thumbnails/_haende.jpg",
+  "mitte_karte": false,
+  "mitte_breite": 660,
+  "mitte_unten": 700,
+  "mitte_dunkel": 1.0,
+  "mitte_weich_rand": 90,
+  "text_mitte_y": 150,
+  "max_breite": 560,
+  "max_hoehe": 270,
+  "mitte_weich_hoch": 70
+ }
+]

@@ -1,0 +1,33 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund_aigod.jpg",
+  "links": "video/thumbnails/_freisteller/y_god2.png",
+  "rechts": null,
+  "ziel_links": {
+   "augen_x": 167,
+   "kinn_y": 600,
+   "box_h": 389
+  },
+  "ziel_rechts": null,
+  "zeilen": [
+   "Does",
+   "God Exist?",
+   "Not Yet"
+  ],
+  "kasten": 2,
+  "zeilenhoehe": 1.02,
+  "ziel": "video/thumbnails/aigod-doac.jpg",
+  "mitte": "video/thumbnails/_papstroboter.jpg",
+  "mitte_karte": false,
+  "mitte_breite": 520,
+  "mitte_unten": 724,
+  "mitte_dunkel": 1.0,
+  "mitte_weich_rand": 55,
+  "text_mitte_y": 502,
+  "max_breite": 720,
+  "max_hoehe": 330,
+  "mitte_weich_hoch": 0,
+  "mitte_x": 1030,
+  "text_mitte": 640
+ }
+]

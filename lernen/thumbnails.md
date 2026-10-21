@@ -46,6 +46,34 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
   Regel 5 aus `plan/ABLAUF.md` gilt auch für Pfade, nicht nur für Dateien.
   → betrifft: alle
 
+## 21.10.2026 — Kopfgröße: sein Maßstab ist DOAC, nicht mein letzter Stand
+
+*„Scotts Gesicht ist halt viel zu nah rangezoomt."* · *„Das einzige
+brauchbare Thumbnail als Inspiration ist das von Diary of a CEO."*
+
+- **Gemessen an dem DOAC-Thumbnail, das er benannt hat** (`xtR2sTjysPc`):
+  Gesichtsrahmen **61 %** der Bildhöhe links, 54 % rechts, Pupillenabstand
+  140 und 131.
+- **Meine beanstandete Fassung lag bei 70 % / 69 % und pd 155 / 171** — und
+  damit fast genau auf dem von ihm abgenommenen `aaronson-openai-insider`
+  (72 % / 69 %, pd 157 / 166). **Dieselbe Zahl war einmal richtig und einmal
+  falsch.** Sein Maßstab hat sich mit dem Vorbild verschoben; die Messung an
+  alten Freigaben trägt das nicht von selbst mit.
+- **Korrigiert auf 62 % / 65 %, pd 146 / 150.** Wenn er ein Vorbild benennt,
+  wird daran gemessen — nicht an der letzten Freigabe.
+  → betrifft: thumbnails, alle, die an früheren Freigaben messen
+
+### Blickrichtung wird am Fertigbild geprüft, nicht am Ausschnitt
+
+- **Zum dritten Mal dieselbe Beanstandung** (*„dass unsere Gesichter sich
+  gegenseitig angucken müssen"*). Das Bild, das ich genommen hatte, zeigte
+  Scott mit nach oben gerollten Augen — im quadratischen Ausschnitt wirkte
+  das nachdenklich, im fertigen Thumbnail neben einem Gesicht, das ihn
+  ansieht, wirkt es daneben.
+- **Also: nach dem Setzen hinsehen, nicht nur vor dem Freistellen.** Der
+  Ausschnitt zeigt ein Gesicht, das Thumbnail zeigt zwei zueinander.
+  → betrifft: thumbnails, cinematic
+
 ## 21.10.2026 — seine Korrektur: verschwendeter Rand und schwache Mimik
 
 *„Guck mal, wie viel Platz mein Hals einnimmt und auch Kens Oberkörper. Das

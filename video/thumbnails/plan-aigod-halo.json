@@ -1,17 +1,17 @@
 [
  {
   "hg": "video/thumbnails/_hintergrund_aigod.jpg",
-  "links": "video/thumbnails/_freisteller/y_god.png",
-  "rechts": "video/thumbnails/_freisteller/a_god.png",
+  "links": "video/thumbnails/_freisteller/y_god2.png",
+  "rechts": "video/thumbnails/_freisteller/a_god2.png",
   "ziel_links": {
    "augen_x": 167,
    "kinn_y": 600,
-   "box_h": 420
+   "box_h": 389
   },
   "ziel_rechts": {
    "augen_x": 1128,
    "kinn_y": 600,
-   "box_h": 429
+   "box_h": 370
   },
   "zeilen": [
    "Does",
