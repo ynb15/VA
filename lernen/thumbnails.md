@@ -46,6 +46,45 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
   Regel 5 aus `plan/ABLAUF.md` gilt auch für Pfade, nicht nur für Dateien.
   → betrifft: alle
 
+## 21.10.2026 — Ken Stern
+
+### Die Kinnlinie wird am Fertigbild abgelesen, nicht am Detektor
+
+- **YuNets Rahmenboden sitzt bei verschiedenen Gesichtern verschieden hoch
+  über dem sichtbaren Kinn.** Bei einem Vollbart liegt er mitten im Bart,
+  bei einem glatten Kinn knapp darüber. Mit beiden Kinnlinien auf dem
+  gleichen Wert lagen die sichtbaren Kinne 90 px auseinander.
+- **Und die Messung am fertigen JPG schwankt.** Vier Durchgänge, jedes Mal
+  die halbe Differenz nachgezogen: 533/573 → 574/551 → 543/576. Der Wert
+  sprang bei jeder Bewegung in die andere Richtung. **Der Anker im Setzer
+  ist exakt, die Messung am flachen Bild ist es nicht** — wer dem Detektor
+  hinterherregelt, macht es schlechter.
+- **Also: beide Kinnlinien gleich setzen, einmal rendern, mit einer
+  gezeichneten Hilfslinie nachsehen, einmal korrigieren.** Hier: Ken 90 px
+  hoch, danach Bartkante 575 gegen Kinn 578.
+  → betrifft: thumbnails, cinematic
+
+### Zwei Kameras, zwei Einstellungsgrößen — in derselben Folge
+
+- **Gemessen über 1030 Bilder aus vier Fenstern der Ken-Aufnahme:** Kens
+  Pupillenabstand geht bis 150, Yannicks nur bis 114. Die Gastkamera steht
+  enger als seine eigene. Beide auf gleiche Kopfgröße zu bringen heißt, ihn
+  um das 1,45-Fache hochzurechnen.
+- **Das ist innerhalb dessen, was er abgenommen hat:** im Aaronson-Thumbnail
+  liegt der Faktor für Scott bei 1,39. Hochrechnen bis etwa 1,45 ist in
+  seinen freigegebenen Bildern belegt, darüber hinaus nicht.
+  → betrifft: thumbnails, cinematic
+
+### Die Tonfarbe einer Folge ist nicht übertragbar
+
+- **Die Ken-Aufnahme ist bei Tageslicht vor grüner Bepflanzung gedreht**,
+  Yannick im bunten Trikot. Aaronson und Sutcliffe sind dunkles Studio.
+  `hintergrund()` dunkelt auf 0,08 ab, der Hintergrund gleicht sich also an
+  — die **Gesichter** bleiben aber heller und wärmer als in den dunklen
+  Folgen. Ein Satz Thumbnails aus zwei verschiedenen Drehs sieht nie gleich
+  aus, auch bei identischer Geometrie.
+  → betrifft: thumbnails, cinematic, youtube-manager
+
 ## 21.10.2026 — abends, fünfte Runde
 
 - **Varianten derselben Folge müssen bis aufs Pixel gleich gesetzt sein.**
