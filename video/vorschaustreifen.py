@@ -22,12 +22,16 @@ def meta(vid, ordner):
     if os.path.exists(p):
         try: return json.load(open(p))
         except Exception: pass
-    # Die Bot-Pruefung greift je nach Player-Zugang. android_vr kommt am
-    # 21.10. durch, die uebrigen nicht; sie wird trotzdem zwischendurch
-    # abweisen, deshalb mehrere Anlaeufe mit wachsender Pause.
+    # Die Bot-Pruefung greift je nach Player-Zugang: android_vr kommt am
+    # 21.10. durch, visionos/tv/web_safari/web_embedded/mweb nicht.
+    #
+    # Sie weist trotzdem zwischendurch ab, und zwar mengenabhaengig, nicht
+    # videoabhaengig - sie loest sich erst nach Minuten wieder. Lange
+    # Wartepausen an dieser Stelle verbrauchen also nur die Frist, ohne die
+    # Lage zu aendern. Deshalb kurze Kette und schnell aufgeben: der naechste
+    # Aufruf holt den Rest, die Datei merkt sich den Stand.
     d = None
-    for versuch, zugang in enumerate(['android_vr', 'android_vr', 'android_vr',
-                                      'visionos', 'tv', 'android_vr']):
+    for versuch, zugang in enumerate(['android_vr', 'android_vr', 'visionos']):
         r = subprocess.run([sys.executable, '-m', 'yt_dlp', '-J', '--skip-download',
                             '--extractor-args', f'youtube:player_client={zugang}',
                             f'https://www.youtube.com/watch?v={vid}'],
@@ -36,7 +40,7 @@ def meta(vid, ordner):
             try:
                 d = json.loads(r.stdout); break
             except Exception: pass
-        time.sleep(min(20 * (versuch + 1), 150))
+        time.sleep(8 * (versuch + 1))
     if d is None: return None
     sb = [f for f in d.get('formats', []) if str(f.get('format_id','')).startswith('sb')]
     sb.sort(key=lambda f: -(f.get('width') or 0))
