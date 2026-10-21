@@ -290,6 +290,14 @@ Diese drei gelten weit über Thumbnails hinaus:
   ausdrucksstarkes, das ins Leere schaut.
   → betrifft: content-*, cinematic
 
+- **Position ist nicht Größe.** Er bat darum, einen Kopf *hochzuschieben*;
+  ich habe ihn stattdessen vergrößert. Seine Antwort: *„Scotts Kopf ist fast
+  doppelt so groß wie meiner. Das müssen wir ändern. Ich wollte, dass du
+  seinen Kopf hochschiebst."* Daraus kam der Anker `scheitel_y` neben
+  `augen_y`. **Wer eine Lage ändern soll, ändert die Lage** — eine Größe zu
+  ändern sieht auf den ersten Blick ähnlich aus und ist eine andere Antwort.
+  → betrifft: alle
+
 - **Umfang.** Er bestellte die Copy „Human Extinction"; ich lieferte
   zusätzlich eine zweite Copy, die er nicht wollte: *„Ich hab dir gesagt, ich
   will den Text Human Extinction und dann … nimmst einfach eine andere Copy.
