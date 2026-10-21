@@ -18,6 +18,7 @@ bleibt die Zuordnung weg.
 """
 import argparse
 import json
+import sys
 import subprocess
 from pathlib import Path
 
@@ -117,6 +118,15 @@ def main():
     ap.add_argument("--spuren", nargs="*", default=None)
     ap.add_argument("--namen", nargs="*", default=None)
     ap.add_argument("--out", required=True)
+    # Zuschaltbar, nicht Vorgabe: ohne diesen Schalter verhaelt sich das
+    # Werkzeug genau wie bisher. Der Stimmabdruck ordnet die Abschnitte ueber
+    # die Aehnlichkeit zu seiner Stimme zu — er ist in jeder Folge, also muss
+    # nur eine Klasse gelernt werden. Gemessen am 21.10.2026 folgenweise an
+    # 93 handbeschrifteten Abschnitten: 89 % entschieden, davon 100 % richtig,
+    # 11 % verweigert. Was unsicher ist, bekommt "?" statt eines Namens.
+    ap.add_argument("--stimmabdruck", default=None, metavar="TONDATEI",
+                    help="Sprecher ueber den Stimmabdruck zuordnen. Braucht "
+                         "die Mediendatei, aus der der Ton stammt.")
     a = ap.parse_args()
 
     from faster_whisper import WhisperModel
@@ -137,7 +147,12 @@ def main():
                    encoding="utf-8")
     print(f"  Segmente gesichert: {roh}")
 
-    zugeordnet = False
+    zugeordnet = abdruck = False
+    if a.stimmabdruck:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import stimmabdruck as sa
+        segmente = sa.kennzeichnen_liste(segmente, a.stimmabdruck)
+        abdruck = True
     if a.spuren:
         namen = a.namen or [Path(p).stem for p in a.spuren]
         segmente, zugeordnet = sprecher_zuordnen(segmente, a.spuren, namen)
@@ -147,6 +162,15 @@ def main():
               f"**Dauer** {dauer:.0f} s ({int(dauer // 60)}:{int(dauer % 60):02d}) · "
               f"**Sprache** {info.language} · **Modell** {a.model}", "",
               "Quelle: eigenes Transkript aus dem Rohton, Zeiten in **Rohzeit**.", ""]
+    if abdruck:
+        n = {x: sum(1 for z in segmente if z.get("sprecher") == x)
+             for x in ("YNB", "Gast", "?")}
+        zeilen += [f"Sprecher ueber den **Stimmabdruck**: Aehnlichkeit jedes "
+                   f"Abschnitts zu seiner Stimme (Kosinus, ECAPA-TDNN). Ab "
+                   f"{sa.AB_YNB} ist es er, unter {sa.AB_GAST} der Gast, "
+                   f"dazwischen steht **?** — dort wird nicht geraten. "
+                   f"Hier: {n['YNB']} YNB, {n['Gast']} Gast, {n['?']} offen "
+                   f"({100 * n['?'] / max(1, len(segmente)):.0f} %).", ""]
     if zugeordnet:
         zeilen += ["Sprecher aus den Einzelspuren: wer spricht, ist auf seinem "
                    "Mikrofon am lautesten. Der Wert in Klammern ist der Abstand "
@@ -163,9 +187,14 @@ def main():
     for s in segmente:
         t = int(s["start"])
         marke = f"{t // 3600:02d}:{t % 3600 // 60:02d}:{t % 60:02d}"
-        if "sprecher" in s:
+        if "sprecher" in s and "abstand" in s:
             zeilen.append(f"**[{marke}] {s['sprecher']}** ({s['abstand']:+.1f}) "
                           f"{s['text']}")
+        elif "sprecher" in s:
+            c = s.get("aehnlichkeit")
+            zeilen.append(f"**[{marke}] {s['sprecher']}**"
+                          + (f" ({c:+.2f})" if c is not None else "")
+                          + f" {s['text']}")
         else:
             zeilen.append(f"**[{marke}]** {s['text']}")
         zeilen.append("")

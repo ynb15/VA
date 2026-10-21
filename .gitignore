@@ -21,3 +21,5 @@ video/sutcliffe_fenster.mp4
 video/sutcliffe_meaningful_roh.mp4
 video/sutcliffe-meaningful-*.mp4
 video/sutcliffe-render.log
+video/*.sprecher.json
+video/stimmabdruck_gruppen.npy

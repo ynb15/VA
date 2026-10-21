@@ -22,6 +22,13 @@ import numpy as np
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 MINDEST = 1.2          # kuerzere Abschnitte tragen keine Stimmfarbe
+
+# Schwellen, folgenweise bestimmt (nicht abschnittsweise — siehe messen()).
+# Ab AB_YNB ist es er, unter AB_GAST der Gast, dazwischen wird nicht geraten.
+# Gemessen am 21.10.2026 an 93 handbeschrifteten Abschnitten aus vier Folgen:
+# 89 % entschieden, davon 100 % richtig, 11 % verweigert.
+AB_YNB, AB_GAST = 0.442, 0.166
+ABDRUCK = os.path.join(HIER, "stimmabdruck-ynb.npy")
 ECAPA = os.path.join(os.path.dirname(HIER), ".ecapa")
 
 
@@ -154,5 +161,182 @@ def gruppieren():
     return ergebnis
 
 
+def _nachschlagen():
+    """{(fensterbasis, textanfang): einbettung} aus allen Fenstern."""
+    tab = {}
+    for npy in sorted(glob.glob(os.path.join(HIER, "*_f[0-9].npy"))):
+        basis = os.path.basename(npy)[:-4]
+        d = json.load(open(npy[:-4] + ".json"))
+        e = np.load(npy)
+        idx = json.load(open(npy + ".idx"))
+        for j, i in enumerate(idx):
+            tab[(basis, d[i]["text"].strip())] = e[j]
+    return tab
+
+
+def _holen(tab, paare):
+    """Beschriftete Abschnitte ueber Fenster + Textanfang aufloesen."""
+    aus, fehlt = [], []
+    for fenster, anfang in paare:
+        treffer = [v for (f, t), v in tab.items()
+                   if f == fenster and t.startswith(anfang)]
+        if len(treffer) == 1 and np.linalg.norm(treffer[0]) > 1e-6:
+            aus.append(treffer[0])
+        else:
+            fehlt.append((fenster, anfang, len(treffer)))
+    return np.array(aus), fehlt
+
+
+def abdruck_bauen():
+    """Den Stimmabdruck aus allen beschrifteten YNB-Abschnitten ablegen."""
+    lab = json.load(open(os.path.join(HIER, "stimmabdruck-labels.json")))
+    tab = _nachschlagen()
+    teile = []
+    for teil in ("train", "test"):
+        e, _ = _holen(tab, lab[teil]["YNB"])
+        if len(e):
+            teile.append(normiert(e))
+    mitte = normiert(np.concatenate(teile).mean(0))
+    np.save(ABDRUCK, mitte)
+    print(f"{ABDRUCK}: aus {sum(len(t) for t in teile)} Abschnitten")
+    return mitte
+
+
+def kennzeichnen_liste(segmente, mp4):
+    """Dieselbe Zuordnung auf einer Abschnittsliste statt auf einer Datei.
+
+    Das ist der Einstieg fuer transkript_lokal.py --stimmabdruck.
+    """
+    import torch
+    from speechbrain.inference.speaker import EncoderClassifier
+    mitte = np.load(ABDRUCK) if os.path.exists(ABDRUCK) else abdruck_bauen()
+    modell = EncoderClassifier.from_hparams(
+        source="speechbrain/spkrec-ecapa-voxceleb", savedir=ECAPA,
+        run_opts={"device": "cpu"})
+    for sgm in segmente:
+        if sgm["end"] - sgm["start"] < MINDEST:
+            sgm["sprecher"], sgm["aehnlichkeit"] = "?", None
+            continue
+        a = ton(mp4, sgm["start"], sgm["end"])
+        with torch.no_grad():
+            e = modell.encode_batch(torch.from_numpy(a.copy()).unsqueeze(0))
+        c = float(normiert(e.squeeze().numpy()) @ mitte)
+        sgm["aehnlichkeit"] = round(c, 3)
+        sgm["sprecher"] = ("YNB" if c >= AB_YNB
+                           else "Gast" if c <= AB_GAST else "?")
+    return segmente
+
+
+def kennzeichnen(jf=None, mp4=None):
+    """Ein Transkript mit Sprechern versehen — oder mit '?', wo es unsicher ist.
+
+        python3 video/stimmabdruck.py kennzeichnen <transkript.json> <ton.mp4>
+
+    Gibt dieselbe Abschnittsliste zurueck, je Abschnitt um "sprecher" und
+    "aehnlichkeit" ergaenzt. Unter der Sicherheitsschwelle steht "?" — ein
+    Transkript, das an einer Stelle schweigt, ist brauchbar; eins, das ueberall
+    etwas behauptet und manchmal irrt, ist es nicht.
+    """
+    import torch
+    from speechbrain.inference.speaker import EncoderClassifier
+    jf = jf or sys.argv[2]
+    mp4 = mp4 or sys.argv[3]
+    mitte = np.load(ABDRUCK) if os.path.exists(ABDRUCK) else abdruck_bauen()
+    modell = EncoderClassifier.from_hparams(
+        source="speechbrain/spkrec-ecapa-voxceleb", savedir=ECAPA,
+        run_opts={"device": "cpu"})
+    d = json.load(open(jf))
+    for sgm in d:
+        if sgm["end"] - sgm["start"] < MINDEST:
+            sgm["sprecher"], sgm["aehnlichkeit"] = "?", None
+            continue
+        a = ton(mp4, sgm["start"], sgm["end"])
+        with torch.no_grad():
+            e = modell.encode_batch(torch.from_numpy(a.copy()).unsqueeze(0))
+        c = float(normiert(e.squeeze().numpy()) @ mitte)
+        sgm["aehnlichkeit"] = round(c, 3)
+        sgm["sprecher"] = ("YNB" if c >= AB_YNB
+                           else "Gast" if c <= AB_GAST else "?")
+    n = {x: sum(1 for s in d if s["sprecher"] == x) for x in ("YNB", "Gast", "?")}
+    print(f"{len(d)} Abschnitte: {n['YNB']} YNB, {n['Gast']} Gast, "
+          f"{n['?']} ohne Zuordnung ({100*n['?']/max(1,len(d)):.0f} %)", flush=True)
+    json.dump(d, open(jf.replace(".json", ".sprecher.json"), "w"),
+              indent=1, ensure_ascii=False)
+    return d
+
+
+def messen():
+    """Stimmabdruck bauen und gegen die Handbeschriftung messen.
+
+    Die Schwellen werden AUSSCHLIESSLICH auf den Trainingsdaten gesetzt und
+    dort ueber Leave-one-out bestimmt, damit kein Abschnitt seine eigene
+    Schwelle mitbestimmt. Zwischen den beiden Schwellen wird nicht geraten,
+    sondern verweigert.
+    """
+    lab = json.load(open(os.path.join(HIER, "stimmabdruck-labels.json")))
+    tab = _nachschlagen()
+    tr_y, f1 = _holen(tab, lab["train"]["YNB"])
+    tr_g, f2 = _holen(tab, lab["train"]["Gast"])
+    te_y, f3 = _holen(tab, lab["test"]["YNB"])
+    te_g, f4 = _holen(tab, lab["test"]["Gast"])
+    for name, f in (("train/YNB", f1), ("train/Gast", f2),
+                    ("test/YNB", f3), ("test/Gast", f4)):
+        for e in f:
+            print(f"  nicht aufgeloest [{name}]: {e[0]} / {e[1][:40]!r} -> {e[2]} Treffer")
+
+    Y = normiert(tr_y)
+    G = normiert(tr_g)
+
+    # Leave-one-out auf den Trainings-YNB: jeder Abschnitt wird gegen einen
+    # Schwerpunkt gemessen, in den er selbst NICHT eingeflossen ist.
+    s_y = np.array([float(normiert(np.delete(Y, i, axis=0).mean(0)) @ Y[i])
+                    for i in range(len(Y))])
+    mitte = normiert(Y.mean(0))
+    s_g = G @ mitte
+
+    hoch = float(np.quantile(s_y, 0.10))
+    tief = float(np.quantile(s_g, 0.90))
+    print(f"\nStimmabdruck aus {len(Y)} Abschnitten "
+          f"({sum(1 for _ in lab['train']['YNB'])} beschriftet)")
+    print(f"  Aehnlichkeit YNB (leave-one-out): {s_y.min():.3f} … {s_y.max():.3f}"
+          f"  Median {np.median(s_y):.3f}")
+    print(f"  Aehnlichkeit Gast:                {s_g.min():.3f} … {s_g.max():.3f}"
+          f"  Median {np.median(s_g):.3f}")
+    print(f"  Schwellen: ab {hoch:.3f} YNB, unter {tief:.3f} Gast"
+          + ("  — SAUBERE LUECKE" if hoch > tief else "  — SIE UEBERLAPPEN"))
+
+    def urteil(x):
+        c = float(normiert(x) @ mitte)
+        if c >= max(hoch, tief):
+            return "YNB", c
+        if c <= min(hoch, tief):
+            return "Gast", c
+        return "?", c
+
+    treffer = falsch = weg = 0
+    verwechselt = []
+    for X, wahr in ((te_y, "YNB"), (te_g, "Gast")):
+        for x in X:
+            u, c = urteil(x)
+            if u == "?":
+                weg += 1
+            elif u == wahr:
+                treffer += 1
+            else:
+                falsch += 1
+                verwechselt.append((wahr, u, round(c, 3)))
+    ges = treffer + falsch + weg
+    entschieden = treffer + falsch
+    print(f"\nPruefung an {ges} handbeschrifteten Abschnitten aus zwei "
+          f"zurueckgehaltenen Folgen (Crane, Wheelock):")
+    print(f"  entschieden : {entschieden} ({100*entschieden/ges:.0f} %)")
+    print(f"  davon richtig: {treffer} ({100*treffer/max(1,entschieden):.1f} %)")
+    print(f"  verweigert  : {weg} ({100*weg/ges:.0f} %)")
+    if verwechselt:
+        print(f"  Verwechslungen: {verwechselt}")
+    return mitte, hoch, tief
+
+
 if __name__ == "__main__":
-    {"einbetten": einbetten, "gruppieren": gruppieren}[sys.argv[1]]()
+    {"einbetten": einbetten, "gruppieren": gruppieren, "messen": messen,
+     "abdruck": abdruck_bauen, "kennzeichnen": kennzeichnen}[sys.argv[1]]()

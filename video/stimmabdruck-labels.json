@@ -1,0 +1,405 @@
+{
+ "_hinweis": "Von Hand beschriftet am 21.10.2026, am Wortlaut des Transkripts und damit UNABHAENGIG vom Tonmodell — das ist die Bedingung dafuer, dass die Messung etwas aussagt. Beschriftet ist nur, wo der Sprecher eindeutig ist. Abschnitte, die einen Sprecherwechsel enthalten (z.B. 'Buntu baby. That's it. That's it and to close it off'), sind BEWUSST weggelassen: sie haben keine richtige Antwort.",
+ "_methode": "Verweis ueber Fenster + Textanfang, nicht ueber den Index — so bleibt die Zuordnung lesbar und pruefbar.",
+ "train": {
+  "YNB": [
+   [
+    "kyle_1NWMaIn8_f0",
+    "Ladies and gentlemen, Carl Kingsbury"
+   ],
+   [
+    "kyle_1NWMaIn8_f0",
+    "That's fascinating, dude"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "I guess this answers my favorite question"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "I like to ask at the end"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "cause we're on the Man Search for Meaning"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "I like to ask, what makes life meaningful"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "Do you have anything to add to that"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "you got some news to share"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "After all since we're on the man's search"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "Evan give the people listening"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "Thanks, man. Thank you, brother. How can people"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "Okay. Thanks brother. Ladies and gentlemen"
+   ]
+  ],
+  "Gast": [
+   [
+    "kyle_1NWMaIn8_f1",
+    "And being in the heavenly spaces"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "I think the fairest answer there is"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "that we are God's meaning makers"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "Like we're the nodes of consciousness"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "that give any meaning to God"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "because something in singular cannot know itself"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "Mind, as Paul"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "mind is a factor of duality"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "So when you speak about the infallible nature"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "it cannot be spoken because it's beyond mind"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "As we move into the world of 10,000 things"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "that's where we can actually know thyself"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "We're here to know thyself for the benefit of God"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "And we're here to know thyself for the benefit of us"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "as nodes of God consciousness"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "I mean, that's really it"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "I got nothing else to add to that"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "my digital community is called The Kingdom Within"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "I feel like all access points for me"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "if I want to live a better life"
+   ],
+   [
+    "kyle_1NWMaIn8_f1",
+    "It's your foundation, it's the liftoff"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "All the people man all the people in my life"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "That lifts others other people up"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "someone that people can count on"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "friendship love inspiration a positive word"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "Being a positive person"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "Being a presence that people feel comforted by"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "Everything that I've got going is on my Instagram"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "Check out the athletes approach"
+   ],
+   [
+    "britton_1lIFL8aU_f0",
+    "Right now you can book a free 30-minute"
+   ]
+  ]
+ },
+ "test": {
+  "YNB": [
+   [
+    "crane_1X9I3dOD_f0",
+    "Oh, dude, that was one of the funniest"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "and realest podcasts I've ever done"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "That was, dude, you're a fucking character"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "How can people get in touch with you"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "Nobody has ever revealed their email address"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "Ladies and gentlemen, this was Dr. Curtis Crane"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "the living legend"
+   ],
+   [
+    "wheelock_1CFqj0d__f1",
+    "What makes life meaningful after all"
+   ],
+   [
+    "wheelock_1CFqj0d__f0",
+    "So you don't agree that a cute little poodle"
+   ]
+  ],
+  "Gast": [
+   [
+    "crane_1X9I3dOD_f0",
+    "And we're like, we're not role playing"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "You really have something of ours"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "So then it turns into a month's long"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "like endeavor where we eventually get ahold"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "of the print 3D, whatever people"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "And they send us two and for our efforts"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "And so then it became, my friend Logan built this"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "like beautiful chroma Cove"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "He called it this art for Burning Man"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "And it's this just like massive"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "15 to 20 foot LED thing"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "It's on this like two and a half foot tall"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "like wooden box stage"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "And he's so creative"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "He drills a hole in the bottom of it"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "like a little bit bigger than a quarter"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "And he hangs the figurine from a slowly twirling"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "like disco ball thing and puts a spotlight"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "And so then that whole Burning Man"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "and there'd be all these people looking at it"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "And we'd say to people, just random people"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "do you know the dark secret of the chroma Cove"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "and think of your wildest dreams"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "Think of the thing that's beyond your imagination"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "Think of the thing that you think"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "but that you've always wanted to happen to you"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "And get on all fours and bend over"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "and look in that tiny hole a foot off the ground"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "and the chroma Cove will show you your deepest desires"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "And it just so happened about the third person"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "I said this to was this gay dude"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "And so he bends over and he looks in there"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "and he's like, yeah, that's about right"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "So in summary, never miss an opportunity"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "I mean, if you hate me or if you're Kennedy"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "please don't get in touch"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "If you're someone that likes me"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "my Yahoo email is"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "That's my favorite number"
+   ],
+   [
+    "wheelock_1CFqj0d__f1",
+    "Nothing needs to make life meaningful"
+   ],
+   [
+    "wheelock_1CFqj0d__f1",
+    "Every experience is absolutely meaningful"
+   ],
+   [
+    "wheelock_1CFqj0d__f0",
+    "And so when you get rid of ignorance"
+   ],
+   [
+    "wheelock_1CFqj0d__f0",
+    "If you're asking me in all seriousness"
+   ],
+   [
+    "wheelock_1CFqj0d__f0",
+    "I think it's always meaningful"
+   ],
+   [
+    "wheelock_1CFqj0d__f0",
+    "And she's just experiencing herself"
+   ],
+   [
+    "crane_1X9I3dOD_f0",
+    "Shit, when you ask other people"
+   ]
+  ]
+ },
+ "_korrektur_21_10": "'Shit, when you ask other people' war von mir als YNB beschriftet und ist Curtis — das Modell hat widersprochen und recht behalten. Beleg ist der Gespraechsverlauf, nicht mein Ohr: 'Oh, is I not supposed to do that?' / 'No, you can.' / 'Shit, when you ask other people, how do they get hold of you?' / 'Their website or their Instagram, I guess.'"
+}

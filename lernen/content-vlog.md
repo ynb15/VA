@@ -452,3 +452,102 @@ Oberkante Logo 0,843 — 150 px bei 1920. Ein Feld von 96 px Schriftgröße miss
 bleiben 54 px Luft nach oben und 8 px nach unten. **Wer die Kopfzeile grösser
 will, muss sie über die Untertitelzeile setzen, nicht darunter.**
 → betrifft: alle, die `--kopfzeile` benutzen — Shorts, Cinematic, Vlog
+
+## 21.10.2026 — Der Stimmabdruck läuft. 89 % entschieden, davon 100 % richtig, 11 % verweigert
+
+**Gemessen, nicht behauptet**, an **93 von Hand beschrifteten Abschnitten** aus
+vier Folgen (Kingsbury, Britton, Crane, Wheelock). Beschriftet wurde **am
+Wortlaut des Transkripts**, also unabhängig vom Tonmodell — sonst misst man sich
+selbst. Werkzeug: ECAPA-TDNN über SpeechBrain, 192 Dimensionen, je
+Whisper-Abschnitt ab 1,2 s eine Einbettung, Kosinus zum Schwerpunkt seiner
+Stimme.
+
+| Schwelle | entschieden | davon richtig | verweigert | er selbst erkannt |
+|---|---:|---:|---:|---:|
+| **ab 0,442 / unter 0,166** | **89 %** | **100 %** | **11 %** | 18 von 20 |
+| ab 0,350 / unter 0,300 | 100 % | 98,9 % | 0 % | 20 von 20 |
+
+**Die erste Zeile ist eingebaut.** Ein Transkript, das an elf Prozent der
+Stellen schweigt und sonst recht hat, ist brauchbar; eins, das überall etwas
+behauptet, ist es nicht.
+
+**Die Trennung ist groß:** seine Stimme liegt bei **0,411–0,699** (Median 0,528),
+die der Gäste bei **−0,087–0,419** (Median 0,075).
+
+### Der Fehler, den ich zuerst gemacht habe, und er ist der lehrreiche Teil
+
+**Die Schwelle abschnittsweise zu bestimmen ist zu optimistisch.** Erster
+Versuch: Schwerpunkt aus zwei Folgen, Schwelle über Leave-one-out *innerhalb*
+dieser Folgen → 0,538. Ergebnis auf zwei zurückgehaltenen Folgen: 78 %
+entschieden, 100 % richtig — **aber von zehn Abschnitten mit seiner Stimme
+wurde genau einer erkannt.** Die Trefferquote sah gut aus, weil sie von den 45
+Gast-Abschnitten getragen wurde, die leicht sind.
+
+**Ursache: der Raum, nicht die Stimme.** Mit *folgenweisem* Auslassen gemessen,
+je Folge gegen einen Schwerpunkt ohne diese Folge:
+
+| ausgelassen | seine Ähnlichkeit dort | die der Gäste |
+|---|---|---|
+| Kingsbury | 0,527 (0,42–0,70) | 0,067 |
+| Britton | 0,652 (0,49–0,70) | 0,076 |
+| Crane | 0,537 (0,45–0,67) | 0,093 |
+| Wheelock | 0,429 (0,41–0,45) | 0,004 |
+
+In einer **fremden** Aufnahme sitzt seine Stimme systematisch tiefer als in den
+Trainingsfolgen — Mikrofon und Raum wandern mit. Eine Schwelle, die innerhalb
+der Trainingsfolgen gesetzt wird, ist deshalb zu hoch und verweigert genau den,
+den sie finden soll.
+
+**Regel: wer über Folgen hinweg erkennen will, muss über Folgen hinweg prüfen.**
+Abschnittsweises Auslassen teilt sich Raum und Mikrofon mit den Trainingsdaten
+und beschönigt.
+
+**Und die praktische Folge:** der Schwerpunkt wird mit **jeder weiteren Folge
+besser**, weil er über mehr Räume mittelt. Die Zeitmarken seiner Abschlussfrage
+stehen für neun Folgen in `video/meaningful-archiv.md` — das ist beschriftetes
+Material für die eine Klasse, die gelernt werden muss, ohne eine Minute
+Handarbeit.
+
+### Zwei Zahlen, die gegen das Verfahren sprechen
+
+1. **Ein Gast-Abschnitt liegt bei 0,419 und damit über dem kleinsten
+   YNB-Wert (0,411).** Es ist Brittons **erster Abschnitt direkt nach der
+   Frage** — genau die Stelle, an der ein Whisper-Abschnitt beide Stimmen
+   enthält. Solche Abschnitte haben keine richtige Antwort, und kein
+   Stimmabdruck löst das; das löst nur ein feinerer Schnitt der Abschnitte.
+2. **Von zwei verweigerten YNB-Abschnitten sind beide seine Abschlussfrage** —
+   *„What makes life meaningful after all?"* (0,411) und *„I like to ask, what
+   makes life meaningful?"* (0,419). Kurze, schnell gesprochene Fragen tragen
+   weniger Stimmfarbe als ein langer Gedanke. Ausgerechnet der Satz, um den es
+   in dieser Reihe geht, ist der schwerste Fall.
+
+### Ein Etikett von mir war falsch, und das Modell hat es gefunden
+
+*„Shit, when you ask other people"* hatte ich als ihn beschriftet; das Modell
+sagte Gast (0,068). **Das Modell hatte recht** — der Verlauf davor und danach
+zeigt es: *„Oh, is I not supposed to do that?" / „No, you can." / „Shit, when
+you ask other people, how do they get hold of you?" / „Their website or their
+Instagram, I guess."* Das ist Curtis, der ihn fragt. Korrigiert, und im
+Etikettenfile vermerkt. **Ich kann es nicht nachhören — der Beleg ist der
+Gesprächsverlauf, nicht mein Ohr.**
+
+### Praxisprobe an einer Folge, die weder im Training noch in der Prüfung war
+
+Rob Bennett, 52 Abschnitte: **13 YNB, 28 Gast, 11 ohne Zuordnung (21 %)**. Die
+Zuordnungen lesen sich richtig — seine Abschnitte sind Fragen und Einwürfe
+(*„so you're saying there's no life without war?"*), Bennetts sind seine
+Alan-Watts-Gedanken. **Die Verweigerungen sind fast alle kurze Rückmeldungen:**
+„Yeah.", „Yes.", „Okay.", „Probably not.", „I don't know." Genau dort soll
+nicht geraten werden.
+
+### Wie es benutzt wird
+
+```
+python3 video/transkript_lokal.py --ton ton.flac --out t.md \
+        --stimmabdruck folge.mp4
+```
+
+**Zuschaltbar, nicht Vorgabe.** Ohne den Schalter verhält sich
+`transkript_lokal.py` genau wie bisher — der Shorts- und der cinematische
+Assistent arbeiten diese Woche unter Termindruck damit.
+→ betrifft: alle Content-Agenten
