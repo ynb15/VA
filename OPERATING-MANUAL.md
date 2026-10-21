@@ -8418,3 +8418,145 @@ Korrigiert. **Die Lehre: einen Weg, den eine Anweisung vorschreibt, einmal
 tatsächlich gehen, bevor die Anweisung gespeichert wird.** Ein ungeprüfter
 Pfad in einem Auftrag, der nachts allein läuft, ist kein Auftrag, sondern
 eine Hoffnung.
+20.10.2026: SEINE B-ROLL-REFERENZ IST FREMD — UND SIE IST NICHT SEIN LOOK
+═══════════════════════════════════════════════════════════════════════════════
+
+Er hat drei Shorts geschickt: „die wie ich mir vorstelle, wie sie
+idealerweise aussehen sollen. Also quasi mit B-Rolls, aus Film unterlegt."
+**Alle drei sind von Chris Williamson (`@ChrisWillx`), nicht von ihm** —
+über `youtube.com/oembed` geholt, das antwortet ohne Anmeldung mit Titel und
+Kanal. Vollständige Messung in `video/broll-referenz.md`.
+
+── DIE WATCH-SEITE IST AUCH FÜR FREMDE VIDEOS ZU
+`yt-dlp` auf alle drei: „Sign in to confirm you're not a bot." Also keine
+Aufrufzahlen, keine Dauer, keine Auto-Untertitel. **Der Weg, der am 19.10.
+für seinen eigenen Kanal noch lief, ist jetzt auch dort zu.** Was bleibt:
+`oembed` für Titel und Kanal, `i.ytimg.com/vi/<id>/oardefault.jpg` für **ein**
+Einzelbild im Hochformat 1080×1920.
+
+── DIE VORLAGE IST EIN QUADRAT AUF SCHWARZ, KEIN HOCHFORMAT
+Gemessen an beiden B-Roll-Bildern, **auf das Pixel identisch**: Kasten
+**980×980**, x 50–1029, y 470–1449 — 50 px Rand seitlich, oben und unten je
+470, also exakt mittig. Gerundete Ecken, reines Schwarz drumherum, keine
+Unschärfeverdopplung. Das Sprecherbild dagegen ist randlos 9:16.
+**Deshalb sieht eine Kinoeinstellung darin nicht zerschnitten aus — sie wird
+gar nicht erst ins Hochformat gezwungen.**
+
+── SEINE REFERENZ WIDERSPRICHT SEINEM EIGENEN ABGENOMMENEN LOOK
+Kleinschreibung statt VERSALIEN · Aktivwort **heller und fetter weiß** statt
+gelb (gemessen: `comes` 187,5 Helligkeit / 18,0 Pixel je Spalte, `from`
+245,3 / 24,6) · keine sichtbare Kontur statt dicker schwarzer · **zwei** Wörter
+statt genau drei · Zeile bei 0,50 (B-Roll) bzw. 0,61 links (Sprecher) statt
+0,65 mittig · kein Logo in keinem der drei Bilder.
+**„So umsetzen" heißt deshalb entweder B-Roll in seinen Look einbauen oder
+den Look wechseln. Das sind zwei verschiedene Aufträge, und es ist Geschmack,
+also seine Entscheidung.** Nicht stillschweigend das eine für das andere
+nehmen — acht Runden an einem Short kamen genau aus solchen Details.
+
+── DIE MESSGRENZE, DIE DAZUGEHÖRT
+**Ein Bild je Short.** Daraus ist nicht abzulesen, wie lang eine B-Roll steht,
+wie oft sie kommt, ob hart geschnitten oder geblendet wird, ob der Ton
+darunter abgesenkt ist. Dafür bräuchte es den Schnitt, und an den komme ich
+nicht. **Was ich dazu sage, ist Vorschlag und wird als Vorschlag
+gekennzeichnet.**
+
+── STOCKMATERIAL IST GESPERRT, AUCH DAS GEMEINFREIE
+Am 20.10. gemessen, alle `connect_rejected` (Gateway 403 auf CONNECT):
+`archive.org` · `pixabay.com` · `pexels.com` · `videos.pexels.com` ·
+`mixkit.co` · `coverr.co` · `videvo.net` · `commons.wikimedia.org` ·
+`upload.wikimedia.org`. **Dieselbe Wand wie bei der Musik.**
+Und unabhängig davon: die drei Referenzen unterlegen **Handelsproduktionen**.
+Das Argument von der Spotify-Liste gilt unverändert — ein Content-ID-Anspruch
+träfe **seinen** Kanal. Dass große Kanäle damit durchkommen, ändert nicht, wo
+der Anspruch landet. **Ob er das eingeht, ist seine Entscheidung; das Material
+besorgen tue ich nicht.**
+**Der Weg, der nichts kostet: sein eigenes Material.** AfrikaBurn, Kapstadt,
+die Reiseaufnahmen — dafür liegen auf seinem Kanal schon Belege, und es ist
+unverwechselbar seins, was Stockbilder nie sind.
+
+── WAS NOCH NICHT GEBAUT IST
+`shorts-render.py` hat keinen B-Roll-Schalter (an der Argumentliste geprüft).
+Zu bauen: `--broll zeit:zeit=datei`, der quadratische Kasten 980×980 auf
+x=50/y=470 mit gerundeten Ecken, **die Stimme läuft durch** (der Ton der
+B-Roll wird verworfen, sonst reden zwei gleichzeitig), Untertitel laufen
+darüber weiter.
+
+═══════════════════════════════════════════════════════════════════════════════
+20.10.2026: B-ROLL AUS FILM — ER LIEFERT, ICH BAUE. UND EIN TRAILER IST KEIN FILM
+═══════════════════════════════════════════════════════════════════════════════
+
+Er hat drei Chris-Williamson-Shorts als Vorbild geschickt und dreimal
+klargestellt, was er will. Beim dritten Mal deutlich: **„Ich habe dir gesagt,
+lass meinen Stil. Das Einzige, was ich von Chris Williamson kopieren möchte,
+sind die filmischen B-Rolls."**
+
+── MEIN FEHLER, UND ER IST LEHRREICH
+Ich hatte Williamsons **Rahmen** für den Inhalt gehalten und seinen Short in
+den 980er Kasten auf Schwarz gesetzt. Dabei hatte ich Kleinschreibung und
+weißes Aktivwort richtig als fremden Stil erkannt und ausgeschlossen — beim
+Kasten nicht, **weil er sich so sauber messen ließ.**
+**REGEL: Dass etwas gut messbar ist, macht es nicht zum Inhalt.** Die
+Messbarkeit einer Gestaltungsentscheidung sagt nichts darüber, ob sie
+übernommen werden soll. Vorgabe ist jetzt randlos.
+
+── UND MEIN ZWEITER FEHLER: ICH HABE EINE TECHNISCHE GRENZE ALS HALTUNG
+   VERKLEIDET
+Drei Runden lang habe ich über Content-ID geredet, wo die Antwort schlicht
+lautet: **ich kann aus diesem Container kein Video herunterladen.** YouTube
+antwortet auf Mediendaten mit 403, und `archive.org`, `pixabay`, `pexels`,
+`videos.pexels.com`, `mixkit`, `coverr`, `videvo`, `commons.wikimedia.org`
+sind alle am Egress-Proxy abgewiesen (`connect_rejected`, Gateway 403). Auch
+die gemeinfreien. Das ist Technik, nicht Erlaubnis — und er war zu Recht
+genervt, dass ich das vermischt habe.
+**REGEL: Erst sagen, was nicht geht und warum, dann getrennt davon, was man
+nicht tun will.** Beides zu mischen klingt nach Ausrede und kostet Runden.
+
+── DIE ZAHL, DIE SEINE ENTSCHEIDUNG BETRIFFT, RICHTIGGESTELLT
+Ich hatte gesagt, ein Anspruch träfe „seinen Kanal". Zu grob. Ein
+Content-ID-Anspruch ist **kein Strike** und trifft das Video. Bei Shorts
+**unter einer Minute** — seine sind es — entscheidet der Rechteinhaber
+zwischen tracken, monetarisieren und **sperren**; bei Studios ist Sperren
+üblich. Realistischer Schaden: der Short ist weg, der Kanal bleibt heil.
+**Er hat entschieden, dass er das eingeht. Damit ist es erledigt und wird
+nicht wieder aufgebracht.**
+
+── DER ERSTE ECHTE LAUF: CRAIG MAKHOSI ÜBER *INTO THE WILD*
+Er hat Podcast-Ausschnitt (3:58, 4K) und „B-Roll" in den Drive gelegt.
+**Die B-Roll-Datei ist eine Bildschirmaufnahme des Kinotrailers aus dem
+YouTube-Player** — mit Seitenflächen der Webseite, SUBSCRIBE-Knopf und in den
+ersten zwei Sekunden der Bedienleiste im Bild. Nutzbares Filmbild:
+**2153×913 auf x 244 / y 144**, über die Bewegung zwischen sieben Bildern
+ausgemessen.
+
+**Die Zahl, die alles entscheidet:** ein 9:16-Ausschnitt daraus hat nur
+**513×913 echte Pixel** und müsste **2,10×** hochskaliert werden — neben 4K
+sieht das weich aus. Quadratisch bleiben **913×913**, also **1,18×**.
+Daraus `--broll-modus unschaerfe`: der Film steht quadratisch und fast
+unskaliert scharf in der Mitte, dahinter füllt er sich selbst vergrößert und
+unscharf das Hochformat. **Randlos wie verlangt, ohne den Beschnitt zu
+bezahlen.**
+
+── EIN TRAILER IST KEIN FILM, UND DAS KOSTETE VIER ANLÄUFE
+Eigene Schnitterkennung fand **14** Einstellungen, `ffmpeg`s Szenenerkennung
+**130**. Selbst die 130 reichten nicht: **der Trailer blendet über, statt zu
+schneiden**, und eine Überblendung sieht keine Szenenerkennung. Jeder
+automatisch gesetzte Anfang landete mitten in einer Blende mit zwei Bildern
+übereinander. Gelöst erst durch **dichtes Abtasten (2 Bilder/s) mit
+Zeitmarke und Hinsehen.**
+**REGEL: Für B-Roll aus einem Trailer die Stücke ansehen, nicht errechnen —
+und zwar Anfang, Mitte und Ende, sonst bleibt der Blendenrest unentdeckt.**
+Die sauberen Strecken sind kurz: hier durchweg **0,9–1,9 s**.
+**REGEL: Variable Bildrate zuerst wegrechnen.** Die Datei meldete „29,70 fps
+bei 60 tbr"; vor der Normalisierung auf feste 30 fps war jede Zeitmarke
+unzuverlässig. Das vorher zu tun hätte zwei der vier Anläufe erspart.
+
+── ZWEI FEHLER IM WERKZEUG, DABEI BEHOBEN
+**`faster-whisper` brach ab**, weil es PyAV mit `metadata_errors` aufruft,
+das die installierte Fassung nicht kennt. Der Ton wird jetzt selbst über
+ffmpeg dekodiert und als Feld übergeben.
+**`--srt` rechnete Shorts ganz ohne Untertitel**: Einblendungen ohne
+Wortzeiten fielen in `build_ass` vor dem dafür vorgesehenen Zweig heraus.
+Das gelbe Aktivwort bleibt `--auto-captions` vorbehalten, weil es Wortzeiten
+braucht.
+**Und eine Kleinigkeit mit Zähnen:** `ffmpeg` liest `stdin` und frisst in
+einer Schleife die Eingabeliste auf. `-nostdin` gehört in jeden Aufruf.

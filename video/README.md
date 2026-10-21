@@ -48,6 +48,19 @@ in derselben Runde zu ändern hat seine Rückmeldung unbrauchbar gemacht.
 fertigen Videos — für den Weg über CapCut Desktop (Untertitel → Untertitel
 hinzufügen).
 
+**`--broll von:bis=datei`** legt eine B-Roll über das Bild —
+**randlos 1080×1920, das ist die Vorgabe und sein Bild.** Zeiten in
+**Clipzeit**, wie bei `--stumm`; auf die Bildzeit gerechnet wird im Filter.
+`--broll-fokus 0..1` schiebt den Ausschnitt waagrecht, denn aus einem
+16:9-Film bleiben im 9:16-Fenster nur **31,6 % der Breite**.
+`--broll-modus karte` gibt stattdessen Williamsons Rahmen (980×980 auf
+x=50/y=470, Ecken 40 px, Grund schwarz) — ausgemessen in
+`video/broll-referenz.md`, aber **nicht sein Stil**, deshalb nicht Vorgabe. **Der Ton der B-Roll
+wird gar nicht erst eingelesen** (`-an`), die Stimme läuft unverändert durch —
+nachgemessen: abtastwertgenau gleich bis 10,967 s von 11,008 s, danach
+437 Werte um höchstens 9 von 32768 daneben, das ist der Schwanz des
+AAC-Enkoders. Untertitel und Logo liegen darüber.
+
 **`--marke x0,y0,x1,y1`** hält den Ausschnitt aus einem schon eingebrannten
 Logo heraus. Für den Podcast-Master gemessen: `0,875,215,1080`. Ohne das
 steht in der Totale sein Logo zweimal im Bild.

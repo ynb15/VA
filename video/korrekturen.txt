@@ -30,3 +30,10 @@ shtetl optimized -> Shtetl-Optimized
 how safe is ai -> how safe is AI?
 # Und Whisper zerlegt "AI" mal in "A I" — auch das abfangen.
 how safe is a i -> how safe is AI?
+# Craig-Makhosi-Folge (20.10.): Into the Wild und Ubuntu.
+mccandless -> McCandless
+krakauer -> Krakauer
+supertramp -> Supertramp
+super tramp -> Supertramp
+ubuntu -> Ubuntu
+makhosi -> Makhosi
