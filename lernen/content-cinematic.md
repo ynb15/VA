@@ -178,3 +178,59 @@ dahinter füllt er sich selbst vergrößert und unscharf das Hochformat.
   Master-Fensters Statuscode **und** Blocklänge prüfen.
 * **`ZEILE_FEST = 0,65` gilt für das Sutcliffe-Studio** — für diesen Short also
   richtig, nicht ungeprüft auf andere Räume übertragen.
+
+---
+
+## 21.10.2026, nachmittags — Rückkatalog
+
+### Chouler hat keinen Master im Drive
+**Der Auftrag ging von Francis Chouler aus (12.045 Aufrufe, stärkstes langes
+Video). Das Material ist nicht da.** Im Ordner
+`02 YNB Podcast: Francis Chouler` (`1U5RRbaDsOfElZo311clMCybEzLmdrUkt`,
+unter `YNB Podcast: Published` → `YNB Podcast 2026`) liegen **fünf Dateien:**
+zwei Transkripte, das Folgendokument, zwei Feedback-Bilder. **Kein Video.**
+
+Dreifach gesucht: über den Titel (`title contains 'Chouler'`), über alle
+Videodateien von Januar bis Juni 2026, und über den Elternordner. Die Folge
+ist auf YouTube veröffentlicht, und von dort ist nichts zu laden.
+
+**Wer Rückkatalog plant, prüft zuerst, ob der Master existiert.** Eine
+Aufrufzahl sagt, dass eine Folge getragen hat — nicht, dass das Material noch
+greifbar ist.
+→ betrifft: head-of-content, content-*, youtube-manager
+
+### Die Schnitterkennung scheiterte still, und das war der Fehler
+Alfreds Befund — *„der Ausschnittsplaner plant an einem Kameraschnitt nicht
+neu"* — ist **richtig beobachtet und falsch begründet.** `plan_bauen` legt für
+**jede gefundene** Einstellung einen eigenen Kasten an. Gefehlt hat der Fund.
+
+`schnitte_finden` trug zwei fest eingebaute Schwellen (Fläche **0,45**,
+Mittel **25**), geeicht am Sutcliffe-Studio: echter Schnitt 0,51–0,61, größte
+Handbewegung 0,19–0,35. **Die hängen am Raum — genau wie die Untertitelhöhe
+(0,65 Sutcliffe, 0,57 Just Push Record).** Sitzen zwei Kameras ähnlich, bleibt
+ein echter Schnitt unter 0,45. Dann läuft ein Kasten über die ganze Strecke;
+im Aaronson-Short 56 Sekunden, und beim Wechsel auf die Totale zeigte er
+Kulisse statt Gast.
+
+**Das Eigentliche war nicht, dass es schiefging, sondern dass es still
+schiefging.** Jetzt meldet die Erkennung Zahl und Länge der Einstellungen,
+nennt die fünf Kandidaten knapp unter der Schwelle und warnt, wenn eine
+Einstellung über 25 s am Stück läuft. Dazu `--schnitt-anteil` und
+`--schnitt-mittel`.
+
+**Die allgemeine Lehre: jede Schwelle, die an einem Raum geeicht wurde, muss
+sagen, was sie gesehen hat.** Sonst ist ein falscher Wert von einem richtigen
+nicht zu unterscheiden, bis es jemandem im fertigen Bild auffällt.
+→ betrifft: alle Content-Agenten
+
+### Veröffentlichte Zeit ist nicht Masterzeit, und dazwischen liegt keine Formel
+Für die Rückkatalog-Shorts stehen die Zeiten in der **veröffentlichten**
+Fassung, geschnitten wird im **Master**. Der Anker (veröffentlicht 4532 ↔
+Master 4799, lokales Tempo 1,1) trägt **lokal** — an einer Stelle 200 s vom
+Anfang rechnet er in die Irre, weil die Veröffentlichung einen Kaltstart
+trägt, den der Master nicht hat.
+
+**Verfahren, das trägt:** weites Fenster um die Schätzung holen,
+transkribieren, die Phrase **suchen**, dann erst schneiden. Gebaut als
+`video/rueckkatalog_batch.py`, wiederaufnehmbar am Dateistand.
+→ betrifft: content-*
