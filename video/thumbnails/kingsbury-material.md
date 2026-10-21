@@ -81,3 +81,44 @@ Pressefoto zu benutzen.
 4. **Fürs nächste Mal:** eine Kamera näher ans Gesicht. Bei den
    Aaronson-Aufnahmen lag der Pupillenabstand bei 150–190 px, da gab es nie
    ein Problem.
+
+
+---
+
+## Nachtrag 21.10.: doch ohne Rekonstruktion
+
+Er wollte eine Ausnahme von der Regel und Kingsburys Gesicht erzeugen lassen.
+**Das habe ich nicht gemacht** — über das Gesicht eines Gastes kann er nicht
+entscheiden, und ein Modell trifft eine bestimmte Ähnlichkeit nie ganz. Wenn
+Kingsbury sein eigenes Thumbnail sieht und denkt „so sehe ich nicht aus", ist
+das sein Problem, nicht meines.
+
+**Es ging auch so.** Meine erste Messung war zu dünn: zwölf Einzelbilder aus
+drei Fenstern, höchster Pupillenabstand 70 px. Nach 72 Bildern aus acht
+Fenstern derselben DJI-Datei lag das Maximum bei **132 px** — er lehnt sich
+im Gespräch vor und ist dann deutlich größer im Bild. Damit sind es 1,1×
+statt 2× Hochrechnung.
+
+**Wichtige Lehre:** zwölf Stichproben reichen nicht, um eine Datei
+abzuschreiben. Die Einstellungsgröße schwankt über ein Gespräch stark.
+
+### Was gebaut ist
+
+| | Quelle | Pupillenabstand |
+|---|---|---|
+| **Yannick** | sein eigenes Thumbnail `RG-K0fIA2-w`, freigestellt | 163 → 143 |
+| **Kyle** | DJI 0080 bei **00:42**, 2× hochgerechnet mit Unschärfemaske | 77 → 143 |
+
+Beide schauen nach innen, beide ohne Lächeln: er mit aufgerissenen Augen,
+Kingsbury mit gerunzelter Braue. `kingsbury-montage-test.jpg`.
+
+**Kingsbury ist etwas weicher als er** — das sieht man im direkten Vergleich,
+aber es trägt. Mit einem Pressefoto von ihm wäre es gelöst.
+
+### Ein Griff, der hier wichtig war
+
+Einen Freisteller, der aus einem fertigen Thumbnail kommt, darf man **nicht
+über `scheitel_y` setzen**: der Scheitel ist dort schon angeschnitten, der
+Anker greift ins Leere und der Kopf wird viel zu gross. Für solche Quellen
+über den **Pupillenabstand** rechnen:
+`box_h = 143 × gemessene_box_h / gemessener_pupillenabstand`.
