@@ -10,6 +10,7 @@ Ergebnis** — statt einer 25-Minuten-Aufnahme reichen oft zwei Minuten.
 
 | Kennung | Min | Takt | Ausbeute/min | Sättigung | was das heißt |
 |---|---:|---:|---:|---:|---|
+| `OHnZi87272U` | 4 | **2,0 s** | 23,2 | **0,77** | **messbar, ruhig geschnitten** |
 | `ZQht2yOX9Js` | 4 | **1,9 s** | 18,7 | **0,61** | **lange Einstellungen, gemessen** |
 | `CPpwXZA9p0Q` | 7 | 4,8 s | 9,6 | 0,78 | ruhig geschnitten |
 | `oRG2jlQWCsY` | 5 | 4,6 s | 10,6 | 0,83 | ruhig |
@@ -19,6 +20,8 @@ Ergebnis** — statt einer 25-Minuten-Aufnahme reichen oft zwei Minuten.
 | `D0GfpCwhjls` | 59 | 9,8 s | 5,7 | 0,93 | nicht messbar |
 | `UYlp0pkNjT0` | 25 | 9,9 s | 5,8 | 0,96 | nicht messbar |
 | `TNeIwjhjJrc` | 19 | 9,6 s | 6,0 | **0,97** | **Montage, schneller Schnitt** |
+| `NfVUrG2wNG0` | 24 | 9,8 s | 6,0 | **0,99** | **Montage, schnellster im Feld** |
+| `3NexOrW0uew` | 150 | 10,0 s | 2,3 | **0,38** | **fast stehendes Bild** |
 
 **Der Takt wird von YouTube nach Laufzeit gewählt — und genau daran hängt,
 ob die Frage überhaupt beantwortbar ist.** Bei einem Vier-Minuten-Clip liegt
@@ -97,19 +100,48 @@ das Thema.
 dann steht es im quadratischen Bild. Für diese Quelle also entweder randlos
 schneiden oder das Zeichen wegschneiden, bevor die B-Roll gebaut wird.
 
+### Block 2 — Wall Street · `OHnZi87272U` · JoBlo · 4:21
+**Aufnehmen: 3:15–4:00** (45 s statt 4:21).
+
+Die ersten drei Minuten sind fast nur Totalen des Aktionärssaals — Menschen­
+mengen, kleine Köpfe, im 9:16-Ausschnitt unbrauchbar. **Ab 3:17 steht Michael
+Douglas in Großaufnahme am Mikrofon** und hält die Rede: großes Gesicht,
+mittig, gut ausgeleuchtet. Genau die 45 Sekunden sind es.
+
+Kein eingebranntes Zeichen im Filmbild. **Die letzten 20 Sekunden (4:01–4:21)
+sind eine JoBlo-Endtafel mit „LIKE & SUBSCRIBE" — nicht mit aufnehmen.**
+
+### Block 3 — Andrew Tate · `3NexOrW0uew` · Tracy Harmoush · 2:30:02
+**Aufnehmen: irgendwelche zwei Minuten, zum Beispiel 25:00–27:00.**
+
+**Sättigung 0,38 — der mit Abstand niedrigste Wert im ganzen Feld.** Das Bild
+steht fast: ein Zwei-Kamera-Gespräch, Tate im Sessel vor dunkelroter Wand,
+mittlere Großaufnahme, lange Einstellungen. **Für sechs Sekunden B-Roll ist
+das ideal**, und es macht die Stelle beliebig — es gibt nichts zu suchen.
+
+* Er sitzt leicht links der Mitte; beim Beschnitt hilft `--broll-fokus`.
+* Das Zeichen „WHAT THEY DON'T TELL US" steht **unten links** und fällt beim
+  Ausschnitt aus der Bildmitte heraus.
+* **Zu meiden: 59:52, 146:22 und 148:42** — dort steht die Totale mit beiden
+  im Bild, die überlebt den 9:16-Beschnitt nicht.
+
+Damit ist `Ini9zM8A6r0` (RattlesnakeTV, 21:18) nicht mehr nötig. Diese Quelle
+ist gemessen, sauber und braucht zwei Minuten statt fünfzehn.
+
 ### Aussortiert
 | | warum |
 |---|---|
 | `9zRJFv88i5s` | **Videospiel**, nicht der Film |
 | `TNeIwjhjJrc` | Trainingsmontagen, Sättigung 0,97 — Sekundenschnitt |
+| `NfVUrG2wNG0` | dasselbe, Sättigung 0,99 — der schnellste Schnitt im Feld |
 
 ### Noch offen
-`Ini9zM8A6r0` (Tate), `udsqfx_9woc` (The Batman), `El-PZehlEO8` (Marty
-Supreme), `_Jdvwiun9zY` (American Psycho), `ak3ma7wtE_0` (Taxi Driver),
-`9phnAlJxico` (Saving Private Ryan), `Ld603TeJBCk` und `Dr8IU0CwMWM`
-(Pursuit of Happyness), `Tc7H9s4PdSI` (Rocky), `dfeUzm6KF4g` (Fight Club),
-`gbOVM-3Worg` (Peaky Blinders), `3NexOrW0uew` (Tate lang),
-`xI8OpQNuFvg` (Marty Supreme), `zpN7t6LN42s` (Wolf of Wall Street).
+`udsqfx_9woc` (The Batman — **der fehlende Moment, in dem die Maske abgeht**),
+`El-PZehlEO8` und `xI8OpQNuFvg` (Marty Supreme), `_Jdvwiun9zY`
+(American Psycho), `ak3ma7wtE_0` (Taxi Driver), `9phnAlJxico` (Saving Private
+Ryan), `dfeUzm6KF4g` (Fight Club), `Ld603TeJBCk` und `Dr8IU0CwMWM` (Pursuit of
+Happyness), `Tc7H9s4PdSI` (Rocky), `gbOVM-3Worg` (Peaky Blinders),
+`zpN7t6LN42s` (Wolf of Wall Street).
 
 YouTube weist mengenabhängig ab; das Skript ist wiederaufnehmbar und holt den
 Rest nach.
@@ -125,9 +157,10 @@ Rest nach.
 | Rocky | 24:42 | **2:25** |
 | Batman | 18:48 | **4:40** |
 | Wolf of Wall Street | 18:08 | **5:00** |
-| Tate | 10–15 min | offen |
-| **zusammen** | **~80 min** | **~17 min + Tate** |
+| Wall Street | 4:21 | **0:45** |
+| Tate | 10–15 min | **2:00** |
+| **zusammen** | **~85 min** | **~20 min** |
 
-**Rund ein Fünftel der Aufnahmezeit und ein Fünftel des Speicherplatzes** — bei
+**Nicht ganz ein Viertel der Aufnahmezeit und des Speicherplatzes** — bei
 mehr brauchbarem Material, weil die dunklen und die schnell geschnittenen
 Strecken gar nicht erst aufgenommen werden.
