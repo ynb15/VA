@@ -8316,3 +8316,75 @@ Der Content Assistant hat in fünf Stunden betreuter Arbeit **86 $** verbraucht.
 Eine unbeaufsichtigte Nacht in dieser Größenordnung ist kein Rundungsfehler.
 **Die Taktung ist deshalb seine Entscheidung, nicht meine** — gesagt, nicht
 verschwiegen, und leicht zu ändern.
+
+═══════════════════════════════════════════════════════════════════════════════
+DAS TEAM, STAND 21.10.2026: SECHS AGENTEN, SECHS BRANCHES
+═══════════════════════════════════════════════════════════════════════════════
+
+| Agent | Session | Branch | Gebiet |
+|---|---|---|---|
+| **Alfred** | `session_01ELkvmWEvz5X1QNTjj2ucia` | `claude/ai-chief-of-staff-cz83jv` | Postfach, Kalender, Board, Sweep, Nachtaufsicht |
+| **Content Assistant** | `session_01UiDavSH3jThmLktN7Wvzxs` | `claude/content-assistant` | Transkripte, Shorts, Schnitt |
+| **Thumbnail Assistant** | `session_01Qng36it9JR8kntKEjVEjXS` | `claude/thumbnails` | Vorschaubilder |
+| **Head of Content** | `session_017XwQh9PcSRWDQwDkCxAnKx` | `claude/head-of-content` | Substack, Titel, Copy, Beschreibungen |
+| **YouTube Manager** | `session_01AcQ6iCiXdnDbp7uxixXydg` | `claude/youtube-manager` | Community, Kommentare, Metadaten |
+| **Guest Booking** | `session_01KEApNHe6h9T5sRT7nejf3U` | `claude/guest-booking` | Gästesuche, Outreach-Datenbank, Nachfassen |
+
+**Der Branch ist die Trennlinie.** Lesen über `git fetch origin <branch>` ist
+erwünscht — die Agenten reden über Dateien im Repo, nicht über Zuruf.
+Schreiben über Kreuz nie.
+
+── DREI ENTSCHEIDUNGEN VON IHM AM 21.10., DIE DAS TEAM TRAGEN
+**1. „Regel bleibt, Agenten entwerfen."** Auf die ausdrückliche Frage, ob der
+YouTube-Manager Kommentare beantworten und das Guest-Booking Anfragen
+verschicken darf. **Nichts geht raus, auch jetzt nicht, wo es sechs Agenten
+sind.** Das war die wichtigste der drei Fragen, und sie war es wert, gestellt
+zu werden: zwei der drei neuen Rollen sind so beschrieben, dass sie die Regel
+gebrochen hätten, wenn man sie wörtlich gebaut hätte.
+**REGEL: wenn ein neuer Auftrag eine stehende Regel berührt, wird gefragt und
+nicht ausgelegt.**
+
+**2. Substack: Drive-Ordner UND Freischaltung.** `substack.com` ist aus dem
+Container gesperrt (HTTP 403 beim Verbindungsaufbau, am 21.10. geprüft, auch
+über `WebFetch`). Beide Wege kommen: ein Drive-Ordner mit Posts, Notes,
+Entwürfen und Skripten — **dort stehen auch die unveröffentlichten Entwürfe,
+und die sagen über eine Stimme mehr als das Veröffentlichte** — und die
+Freischaltung von `substack.com` und `ynbernard.substack.com`.
+
+**3. Gästesuche: beides parallel.** Damit ist die Frage beantwortet, die seit
+dem 18.10. offen stand. **Südafrika jetzt, USA für 2027, zwei getrennte Listen
+in derselben Datenbank. „In-person only" ist NICHT gefallen.**
+
+── DIE VORBILDER FÜR TITEL, COPY UND THUMBNAILS
+Von ihm benannt: **Chris Williamson (Modern Wisdom)** · **Steven Bartlett
+(Diary of a CEO)** · **Mark Manson** · **Jay Shetty** · **„Jack Neal"**.
+Den letzten Namen hat er so gesagt; **kein Kanal dieses Namens ist
+verifiziert** — nicht raten, ihn fragen.
+**Das ist messbar und muss nicht Geschmackssache bleiben:**
+`yt-dlp --flat-playlist -J "https://www.youtube.com/@ChrisWillx/videos"`
+liefert Titel, IDs und Abozahlen ohne Anmeldung (am 21.10. geprüft, 4,46 Mio
+Abos), die Vorschaubilder liegen offen unter
+`https://i.ytimg.com/vi/<id>/maxresdefault.jpg`. Head of Content legt die
+Befunde nach `video/vorbilder.md`; Thumbnail Assistant und YouTube Manager
+lesen sie dort, statt dieselbe Arbeit dreimal zu machen.
+
+── WAS DER YOUTUBE-MANAGER NICHT KANN, UND WARUM ER ES TROTZDEM GIBT
+Er fragte, ob der Agent „idealerweise auch Videos hochlädt". **Nein, aus zwei
+voneinander unabhängigen Gründen:** es gibt keinen YouTube-Connector und ein
+Upload braucht OAuth samt Google-Cloud-Projekt (er ist dort am 19./20.10.
+hängengeblieben) — und selbst mit Zugang verbietet es Entscheidung 1.
+**Beides gehört ihm gesagt, nicht eines davon.** Der Gewinn liegt darin, dass
+Antworten, Titel, Beschreibung und Tags veröffentlichungsreif vorliegen und er
+nur noch klickt.
+
+── WAS „96 $" HEISST — UND WAS NICHT
+Er las die Zahl aus dem Nachtbericht als Verbrauch seines Abos: *„Heißt das,
+von den 100 Dollar Abo-Gebühr sind 96 aufgebraucht?"* **Nein.** `cost_usd` im
+Sitzungssatz ist der **Listenpreis-Gegenwert der verbrauchten Token**, kein
+Abbuchen von seinem Abo. Derselbe Satz zeigt `rateLimitType: five_hour`,
+`status: allowed`, `isUsingOverage: false` — abgerechnet wird über
+Nutzungsfenster, nicht über ein Guthaben, und das Fenster war nie
+überschritten.
+**REGEL: eine Zahl, die ich nenne, muss ich auch einordnen können.** Ich habe
+sie als Warnung gemeint und sie klang wie eine Rechnung. Nächstes Mal dazu,
+was sie misst — oder weglassen.
