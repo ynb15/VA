@@ -117,3 +117,16 @@ Die drei Gerüste vom August (`youtube/README.md`, `shorts-elements.md`,
 `ai-editor.md`) stehen still, weil alle drei auf einen Upload von ihm warten —
 von einem Mann in der Reha. Hier ist der Zuschnitt umgekehrt: **alles, was
 Denkarbeit ist, läuft ohne ihn.** Er legt eine Datei ab, sonst nichts.
+
+**Tempo: `--tempo 1.15` ist seit dem 21.10. die Vorgabe.** Seine Ansage:
+„dass wir die Shorts allesamt auf 1,15-facher Geschwindigkeit laufen lassen."
+Vorher wurde 1,2 von Hand mitgegeben, seine Folgen selbst laufen auf 1,1.
+Nicht mehr pro Short entscheiden.
+
+**`video/schnittliste.py` — er streicht, ich schneide.** Macht aus einem Clip
+eine nummerierte Textliste mit den Zeiten des fertigen Shorts; er löscht
+Zeilen oder nennt Nummern, und `--raus 3,7,9-11` baut den Clip neu. Die
+Schnitte werden auf die nächste Sprechpause gezogen (20-ms-Fenster, Stille
+ab 0,20 s unter −45 dB) und mit 40 ms Blende gesetzt, damit kein Wort
+abreißt und nichts knackt. Was nach dem Ende der aktuellen Fassung kommt,
+steht markiert darunter — so sieht er auch, was er **dazu**nehmen könnte.

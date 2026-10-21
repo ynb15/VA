@@ -832,7 +832,10 @@ def main():
     ap.add_argument("--lippe", type=int, default=None,
                     help="Feste Untertitelhoehe im Ausgabebild (0..1920), "
                          "Oberkante der Zeile. Schlaegt --marginv.")
-    ap.add_argument("--tempo", type=float, default=1.0,
+    # 1,15 ist seine Ansage vom 21.10.: „dass wir die Shorts allesamt auf
+    # 1,15-facher Geschwindigkeit laufen lassen". Davor war 1,2 von Hand
+    # mitgegeben; seine Folgen selbst laufen auf 1,1.
+    ap.add_argument("--tempo", type=float, default=1.15,
                     help="Beschleunigung. Seine Folgen laufen auf 1.1, fuer "
                          "Shorts will er 1.2. 1.0 = unveraendert.")
     ap.add_argument("--worte", type=int, default=3,
