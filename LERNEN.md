@@ -45,6 +45,39 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 6 — 21.10.2026, 14:30 Kapstadt · ein totes Werkzeug und ein geteilter Renderer
+
+- **`video/yt-transkript.py` holt keine Videos mehr — YouTube sperrt diesen
+  Container aus.** Gemessen vom Gastauftritte-Agenten an `q3_kLgYIXGQ`:
+  `yt-dlp` meldet über **sechs** Player-Clients *„Sign in to confirm you're not
+  a bot"*, die Videoseite liefert `playabilityStatus: LOGIN_REQUIRED`, und ein
+  echter Chromium landet auf `google.com/sorry/index`, also auf einem CAPTCHA.
+  **Das ist eine IP-Sperre, keine Freigabefrage** — `youtube.com` ist im Proxy
+  erlaubt (HTTP 200), und `google.com` freizuschalten hilft nicht, weil
+  dahinter das CAPTCHA steht. **Die Dokumentation vom 19.10. („geht ohne
+  Schlüssel") gilt nicht mehr.**
+  **Wichtig für die Einordnung:** Metadaten gehen weiter. Der Head of Content
+  hat am 21.10. mit `yt-dlp --flat-playlist -J` Titel, IDs und Abozahlen
+  geholt — **das ist etwas anderes als eine Videodatei.** Und der Rückfallweg
+  über `ytInitialData` liefert weiterhin Kapitel und Beschreibung.
+  **Wer ein fremdes Video braucht, braucht es von ihm**, nicht aus dem Netz.
+  → betrifft: alle
+- **`shorts-render.py` ist wieder auseinandergelaufen, und zwar in beide
+  Richtungen.** Heute gezählt: `claude/content-assistant` hat das Preset
+  (Inter Black, `#F9F13A`) und **kein** `--kopfzeile`;
+  `claude/ai-chief-of-staff-cz83jv` hat `--kopfzeile` (6 Fundstellen) und
+  **kein** Preset; `claude/content-cinematic` hat **keines von beidem**.
+  **Keine Fassung ist die vollständige.** Das ist dasselbe Muster wie am
+  20.10., als der Content-Assistant-Zweig zusammengeführt werden musste.
+  **Gemeinsames Werkzeug gehört einem Branch** — hier dem Shorts-Assistenten.
+  Wer eine Erweiterung baut, bringt sie dorthin zurück, bevor er weiterarbeitet.
+  → betrifft: content-*
+- **Playwright/Chromium laufen in diesen Containern nur mit absolutem
+  ESM-Importpfad und ausdrücklichem `proxy:`-Argument.**
+  → betrifft: alle
+
+---
+
 ## Ausgabe 5 — 21.10.2026, 14:05 Kapstadt · ein Auftrag, der nicht von ihm kam
 
 **Mein Fehler, und er gehört in den Kanal, weil er jedem von uns passieren
@@ -155,11 +188,21 @@ eigene Regel vom 02.10. Er hat sie heute aufgehoben. Voller Befund:
   oder zumindest auf 1,1?"* Deckt sich mit dem gemessenen Export-Faktor.
   → betrifft: alle Content-Agenten
 - **Er schreibt Short-Stellen im Format Zeitmarke + Stichwort heraus.**
-  15.09.: *„16:00 Movie · 40:40 Joe Hudson · 41:00 Integration · 44:00
-  Workaholism · 1:00:23 Hormozi · 1:06:00 Confidence · 1:21:00 My Why."*
+  *„16:00 Movie · 40:40 Joe Hudson · 41:00 Integration · 44:00 Workaholism ·
+  1:00:23 Hormozi · 1:06:00 Confidence · 1:21:00 My Why."*
   **Unsere Kandidatenlisten sollten genauso aussehen** — das ist das Format,
   in dem er denkt.
-  → betrifft: content-*
+  **Zu welchem Video die Liste gehört, ist offen.** Gemessen: die Liste steht
+  in der DM an Isabelle am **15.09. um 17:01**; der Link zum
+  Garden-Gastauftritt (`q3_kLgYIXGQ`) steht am **14.09. um 22:20** — und die
+  beiden liegen in **verschiedenen Threads** derselben DM. Der
+  Gastauftritte-Agent hält die Liste für die Auswahl zu genau diesem Video und
+  stützt das auf die Kapitel (`1:21:00 My Why` ↔ `1:19:07 His why…`); **seine
+  Datierung („14.09. 22:20, direkt nach dem Link") stimmt nicht.** Die
+  Kapitelprobe kann trotzdem richtig sein. **Wer die Liste benutzt, prüft sie
+  erst gegen die Kapitel des Videos** — und behauptet die Zuordnung nicht,
+  bevor das steht.
+  → betrifft: content-*, head-of-content
 - **Modern Wisdom ist seit mindestens 12.10. sein erklärtes Vorbild**, mit drei
   verlinkten Shorts an seinen Editor. Die Kopfzeile von heute liegt also auf
   einer Linie, die er selbst gezogen hat — nicht auf einer, die wir geraten
