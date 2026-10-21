@@ -396,3 +396,30 @@ derselben Größe in zwei aufeinanderfolgenden Zeilen sind sofort sichtbar.
 von Hand 223,28 ausgerechnet; der Befund sagte 224,41. Hätte ich nur geschaut,
 ob das Stück „jetzt länger ist", wäre es durchgegangen.
 → betrifft: alle
+
+## 21.10.2026 — Ein Verhörer korrigiert sich nicht von selbst, aber large-v3 hört besser
+
+**In Whitney Wheelocks Antwort standen drei Verhörer**, und der Weg zu ihnen ist
+übertragbar.
+
+| im Untertitel | tatsächlich | womit belegt |
+|---|---|---|
+| UP BY SAME SORRY I'VE BEEN HERE | **avidya** | dieselbe Stelle noch einmal transkribiert — `medium` schreibt dort von selbst „sorry, avidya" |
+| THE TIME CHURCH WOULD SAY | **the Tantrics would say** | `large-v3`, bestätigt von einem zweiten `medium`-Lauf mit anderem Ausschnitt |
+| SO I'D LIKE THE IGNORANCE | **so Advaita, ignorance** | `large-v3` |
+
+**Mein erster Vorschlag für „the time church" war „the Tao Te Ching".** Klingt
+plausibel, passt zum Thema — und ist falsch. Aufgefallen ist es nur, weil ich
+ihn nachgeprüft habe, statt ihn einzutragen. **Eine Korrektur, die man sich
+zusammenreimt, ist genauso ein erfundener Name wie ein erfundener Sprecher.**
+
+**Der übertragbare Teil:** `large-v3` löst auf, woran `medium` scheitert —
+Fachbegriffe und Namen, also genau das, was in der Korrekturliste landet.
+Der Renderer arbeitet mit `medium`, und das soll so bleiben (schnell, und es ist
+der abgenommene Stand). **Aber für die Prüfung eines verdächtigen Wortes ist
+`large-v3` auf zwanzig Sekunden Ton die billigste Zweitmeinung, die es gibt** —
+kein Download aus dem Netz nötig, das Modell lädt beim ersten Aufruf.
+
+**Faustregel:** klingt eine Stelle im Untertitel nach Unsinn, ist sie Unsinn.
+Zwanzig Sekunden mit `large-v3` nachhören, dann in `video/korrekturen.txt`.
+→ betrifft: alle Content-Agenten

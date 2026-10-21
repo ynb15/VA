@@ -37,3 +37,22 @@ supertramp -> Supertramp
 super tramp -> Supertramp
 ubuntu -> Ubuntu
 makhosi -> Makhosi
+# Wheelock-Folge (21.10.): drei Verhörer in der Abschlussantwort, alle
+# gegengeprüft. "avidya" liefert dieselbe Stelle bei erneutem Transkribieren
+# von selbst; "the Tantrics" und "Advaita" bestätigt large-v3, wo medium
+# "the time church" und "I'd like the" schreibt.
+# Mein erster Vorschlag für "the time church" war "the Tao Te Ching" — falsch,
+# und nur aufgefallen, weil ich ihn nachgeprüft statt eingetragen habe.
+up by same sorry i've been here -> avidya
+up by same -> avidya
+the time church -> the Tantrics
+the tantric -> the Tantrics
+so i'd like the ignorance -> so Advaita, ignorance
+advaita -> Advaita
+wheelock -> Wheelock
+# Kingsbury-Folge (21.10.): Paul Chek schreibt Whisper als Cech.
+paul cech -> Paul Chek
+kingsbury -> Kingsbury
+# Britton-Folge (21.10.): Whisper zerlegt Ubuntu in "Buntu".
+buntu baby -> Ubuntu baby
+britton -> Britton
