@@ -32,6 +32,110 @@ Agent sie je nur aus zweiter Hand kennt.
    schreibt sie nicht. Kein PR ohne ausdrückliche Bitte. Kein Modellname in
    irgendetwas Gepushtem.
 
+5. **„Weicht ab", nie „wirkt besser."** Ein Formvergleich ist keine
+   Wirkungsmessung. Bei 38 eigenen Videos, 8 davon ohne öffentliche Aufrufzahl,
+   und ohne Klickrate und Impressionen ist jede Korrelation Form↔Reichweite
+   Zufall. Wer eine gemessene Abweichung als Verbesserung weitergibt, verkauft
+   ihm eine Behauptung als Befund. Gilt für Titel, Thumbnails, Schnitt, Ton.
+6. **Eine Aussage über ihn braucht mehr als eine Plattform als Grundlage.** Der
+   Head of Content schrieb am 21.10., ihm fehle ein Serienformat — er hat eins
+   („This Is My Application", dreimal, zwei Plattformen), es kommt auf YouTube
+   nur einmal vor. **Der Fehler war methodisch, nicht inhaltlich:** eine
+   Plattform gemessen, über die Person geschlossen.
+
+---
+
+## Ausgabe 2 — 21.10.2026, 12:05 Kapstadt
+
+Erste eingesammelte Ausgabe. Quelle: `lernen/head-of-content.md` auf
+`claude/head-of-content` — dort stehen alle Belege und Zahlen im Volltext, hier
+nur, was über das Fach hinausgeht. Der Head of Content hat `thumbnails` und
+`youtube-manager` bereits selbst angeschrieben; nicht doppelt verteilen.
+
+### Titel und Copy — die anwendbare Fassung ist `video/titel-regeln.md`
+- **Die Vorbildkanäle sprechen den Zuschauer an, seine Titel sprechen von ihm.**
+  Du-Ansprache in den letzten 100 Titeln: Shetty 55 %, Manson 49 %, DOAC 41 %,
+  Williamson 14 % — **seine eigenen 38 langen Videos 13 %**. Ich/Wir dagegen
+  **bei ihm 36 %**, mehr als jeder Vorbildkanal. Williamson kommt mit 14 % aus,
+  weil in **52 %** seiner Titel ein Name steht, der allein zieht — wer solche
+  Namen nicht hat, hat die Position nicht. **Das ist eine Abweichung, keine
+  Empfehlung** (siehe Regel 5 oben), und ein Teil davon ist seine Entscheidung:
+  in seinen eigenen Entwürfen trennt er die Register pro Plattform schriftlich
+  und hat eine Titelfassung eigenhändig `(YT only)` markiert.
+  → betrifft: youtube-manager, thumbnails, content-*
+- **Der zweite Titel-Slot kostet nichts und er benutzt ihn nicht.** DOAC baut
+  `<Rolle>: <Versprechen>! | <Name>`; 97 von 100 Titeln haben einen Doppelpunkt,
+  14 tragen den Gastnamen hinten. Er benutzt die Rolle vorn (13 von 38), den
+  Namen hinten **in keinem einzigen**.
+  → betrifft: youtube-manager, thumbnails
+- **Messfalle, die jedes Fach betrifft: nachsehen, *was* gezählt wurde.**
+  Shettys „50 % Versalien" sind sein Markenname (53 Titel enthalten „Jay
+  Shetty"), keine Betonung. Wer daraus „Versalien funktionieren" ableitet,
+  kopiert einen Kanalnamen. Dieselbe Falle überall, wo ein Merkmal mit einer
+  Konstante zusammenfällt.
+  → betrifft: alle
+
+### Sein geschriebenes Register — bindend für jeden Entwurf, nicht nur Substack
+- **Seine Essays sind zugleich Videoskripte.** In den englischen Entwürfen
+  stehen deutsche Regieanweisungen („→ Musik: … (Piano?)", „+ Business Bilder").
+  **Wer einen Essay anfasst, fasst ein Skript an** — Anweisungen nicht wegräumen.
+  → betrifft: content-*, youtube-manager
+- **Zwei Arten Dokument im Substack-Ordner, nicht verwechseln:** Recherchenotizen
+  (`Ressourcen`/`Inspo`/`Braindump`/`Titles`, Stichpunkte, abbrechende Sätze)
+  gegen geschriebene Entwürfe (Fließtext, `-----` als Trenner, zentrierte
+  Zitatkästen). **Wer aus einer Notizdatei Stilregeln zieht, zitiert eine
+  Einkaufsliste.** Spezifikation: `voice/substack-register.md`.
+  → betrifft: alle
+- **Die Du-Wendung kommt am Schluss, nicht am Anfang.** Seine Essays laufen über
+  ihn selbst und kippen erst im letzten Absatz zum Leser. Wer mit der
+  Leseransprache eröffnet, schreibt gegen seine Form.
+  → betrifft: alle
+- **Tippfehler bleiben auch im veröffentlichten Text stehen** („enabled tby",
+  „That Helped Me Built"). Sprachübergreifend und für die Langform: **eine
+  fehlerfreie Fassung ist bereits eine Abweichung.**
+  → betrifft: alle
+- **Fettung: in der Mail höchstens einmal, im Essay mehrmals — und immer ein
+  ganzer Satz.** Die Mail-Regel aus `voice/de-register.md` nicht auf die
+  Langform übertragen.
+  → betrifft: alle
+
+### Drive und Werkzeuge — drei Befunde, die Zeit und Kontingent sparen
+- **Erst `snippetVerbosity: BRIEF`, dann gezielt lesen.** `search_files` mit
+  `parentId` und BRIEF liefert die ersten ~1.000 Zeichen **jedes** Dokuments in
+  **einem** Aufruf — Titel, Unterzeile, verworfene Varianten von zehn Posts,
+  ohne eines zu öffnen. Die großen Dokumente sind 1,1–11,8 MB (eingebettete
+  Bilder); `read_file_content` darauf ist teuer und meist unnötig.
+  → betrifft: alle
+- **Drive ignoriert `pageSize`, und die Seiten überlappen.** `pageSize: 100`
+  übergeben, **5 Dateien** zurückbekommen; Folgeseiten 10, 10, 10, 5. Ohne
+  Durchblättern über `pageToken` **sieht man den Ordner nicht** — und merkt es
+  nicht. Beim Zusammenzählen deduplizieren, das letzte Element einer Seite ist
+  das erste der nächsten.
+  → betrifft: alle
+- **Ein freigegebener Ordner ist nicht der ganze Bestand.** Ein Substack-Text
+  hing unter einem ganz anderen Elternordner. **Nach Titel suchen, nicht nur
+  nach Elternordner.**
+  → betrifft: alle
+- **`yt-dlp` ist nicht installiert, `pip install yt-dlp` läuft durch den Proxy.**
+  Danach ohne Schlüssel und ohne OAuth: `yt-dlp --flat-playlist -J
+  --playlist-end 100 "https://www.youtube.com/@<handle>/videos"` gibt Titel, IDs
+  und Abozahlen. **Vorsicht bei Hintergrundaufrufen: ein `cd` wird
+  zurückgesetzt**, eine Ausgabedatei landete im Repo-Wurzelverzeichnis statt im
+  Scratchpad. Absolute Pfade, und vor dem Commit `git status`.
+  → betrifft: alle
+- **Kanalkennungen, geprüft:** `@ChrisWillx` · `@TheDiaryOfACEO` ·
+  `@IAmMarkManson` · **`@JayShetty`** (`@JayShettyPodcast` gibt es nicht, HTTP
+  404). Seiner: `UC5r4pxlAtt2alIOIGjdn4Qw`, 509 Abos, 38 lange Videos. **Das
+  fünfte Vorbild „Jack Neal" ist nicht verifizierbar** — nächstliegende Spur ein
+  Jack Neel, YouTube-Kanal unbestätigt. **Nicht raten, die Frage liegt bei ihm.**
+  → betrifft: youtube-manager, thumbnails, guest-booking
+- **`substack.com` am 21.10. erneut geprüft: weiter 403 auf CONNECT**, ebenso
+  `ynbernard.substack.com`. **Gebraucht wird es nicht mehr** — der Drive-Ordner
+  `1zd-wlZ8YW7FnB7u_F6FeaU2NIdCYw75C` enthält die Posts samt den **verworfenen
+  Titelvarianten**, die öffentlich nirgends stehen. Lesen ja, **Schreiben nicht
+  freigegeben.**
+  → betrifft: alle
+
 ---
 
 ## Ausgabe 1 — 21.10.2026, 11:30 Kapstadt
