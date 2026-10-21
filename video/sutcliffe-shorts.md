@@ -414,3 +414,46 @@ python3 video/shorts-render.py --src clip.mp4 --plan plan.json \
         --logo marke/ynb-logo-weiss.png --logo-breite 700 --logo-hoehe 0.877 \
         --outro marke/outro_9_16.mov --out short.mp4
 ```
+
+---
+
+## Kopfzeile über die ersten Sekunden (21.10., nach Modern-Wisdom-Vorbild)
+
+Von ihm, mit einem Standbild aus einem Williamson-Short: *„Ab sofort soll bei
+den Shorts für die ersten 4–5 Sekunden eine Headline gezeigt werden, so wie
+Chris das macht. Ich würde sagen, mit einem schwarzen Balken und weißer
+Schrift."*
+
+**Neue Schalter:** `--kopfzeile "Is AI safe?"` · `--kopfzeile-dauer 4.5` ·
+`--kopfzeile-groesse 96` · `--kopfzeile-hoehe 0.68` · `--kopfzeile-hell`.
+`|` im Text trennt Zeilen. Ohne Trenner wird **nicht** umbrochen — eine
+Kopfzeile, die von selbst umbricht, sieht unvorhersehbar aus.
+
+**Am Vorbild abgelesen:** das Feld sitzt **unter** der laufenden
+Untertitelzeile, nicht darüber, und hat runde Ecken. Die Schrift ist deutlich
+größer als die Untertitel (bei Williamson Faktor ≈ 1,4; hier 96 gegen 70).
+
+**Gegen das Vorbild entschieden:** bei Williamson ist das Feld **weiß mit
+schwarzer Schrift**, auf dem Standbild, das er selbst geschickt hat, klar zu
+sehen. Bestellt hat er die Umkehrung. Vorgabe ist deshalb **schwarzes Feld,
+weiße Schrift**; `--kopfzeile-hell` dreht es auf das Original.
+
+### Warum das Feld gezeichnet und nicht überlagert wird
+
+Erster Versuch: abgerundetes Rechteck als PNG, dazu `overlay` und `fade`.
+**Kam unsichtbar heraus.** Ursache: ein Standbild als zweiter Eingang hat
+genau einen Zeitstempel, und `fade=t=in:st=0` bewertet eben diesen — das
+Ergebnis war Alpha 0, und `overlay` hat dieses eine Bild dann die ganze Zeit
+gehalten. Gemessen: Feldinneres und Umgebung unterschieden sich um 30 von
+255.
+
+**Jetzt wird das Feld als ASS-Vektorform gezeichnet** (`\p1`, vier Linien und
+vier Beziers). Damit liegt es im selben Strom wie die Schrift, hat dieselbe
+Zeitachse, `\fad` wirkt darauf, und es braucht keinen zweiten Eingang.
+`BorderStyle=3` wäre die naheliegende ASS-Lösung gewesen, gibt aber nur
+scharfe Ecken. Nachgemessen am fertigen Bild: Feldinneres bei Sekunde 1,0
+**exakt 0**, bei Sekunde 4,8 wieder Videopegel.
+
+**Regel: ein Standbild als Filtereingang hat keine Zeit.** Alles, was sich
+über die Zeit ändern soll — Ein- und Ausblenden, Bewegung —, gehört in einen
+Strom, der eine hat.

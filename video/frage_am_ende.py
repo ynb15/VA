@@ -19,14 +19,32 @@ MUSTER = re.compile(r"(?i)(makes?\s+(a\s+)?(human\s+)?life\s+meaningful"
                     r"|makes\s+your\s+life\s+meaningful)")
 STUECK, MAX_VERSUCHE, ZIEL = 210.0, 7, 72.0
 
-FOLGEN = [
-    ("David Sutcliffe", "sutcliffe", "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT", 19976733699, 7518.0, 1),
-    ("Scott Aaronson",  "aaronson",  "1C7CUI-B6_fBcdttR_zKIJBYraBMTtUvh", 16141727375, 6138.0, 2),
-    ("Ken Stern",       "ken",       "1RGq-Mw0QEm5jE2WMthKPkP5OHrXvmotF", 16824141940, 6333.4, 3),
-    ("Logan Gonzalez",  "logan",     "1ztggu2ua5-AntISFHHP9cBqjVhSn6Zmj",  2663541811, 5159.5, 4),
-    ("Matt Defina",     "matt",      "1ubW-gMYb6_g0ZO-cOVyEFGQoKvIyGivj", 17449171699, 6572.3, 5),
-    ("Rick Strassman",  "rick",      "1Hwt3_c_Ifhd7onXyC8nrHIdtjwJjxdjH", 15496441499, 7251.8, 6),
-]
+LISTE = os.path.join(HIER, "meaningful-folgen.json")
+
+
+def folgen_laden():
+    """Die Folgen stehen in meaningful-folgen.json, nicht hier im Code.
+
+    Eine neue Folge ist damit eine neue Zeile in einer Datendatei und kein
+    Eingriff ins Werkzeug. Uebersprungen wird, was keinen erreichbaren Master
+    hat — 'blockiert' (Freigabe oder Tonspur fehlt) und 'ohne Master'
+    (nach der Veroeffentlichung geloescht). Deren Grund steht in der Liste.
+    """
+    roh = json.load(open(LISTE))["folgen"]
+    return [f for f in roh if f.get("id") and f.get("stand", "").startswith("offen")]
+
+
+def laufzeit(fid, groesse):
+    """Laufzeit aus dem Kopf der Datei, ohne sie zu laden (rund 8 MB)."""
+    import av
+    sys.path.insert(0, HIER)
+    from drive_fernzugriff import DriveDatei, bestaetigte_url
+    q = DriveDatei(bestaetigte_url(fid), groesse=groesse, datei_id=fid)
+    c = av.open(q)
+    d = c.duration / 1_000_000.0
+    c.close()
+    q.close()
+    return d
 
 
 def lauf(cmd, **kw):
@@ -75,10 +93,16 @@ def schluss_waehlen(daten, idx):
     return min((d["end"] for d in wahl), key=lambda x: abs(x - ziel))
 
 
-def eine(name, k, fid, groesse, gesamt, nr):
+def eine(f):
+    name, k, fid, nr = f["name"], f["k"], f["id"], f["nr"]
+    groesse, gesamt = f.get("groesse"), f.get("gesamt")
     out = os.path.join(HIER, f"{nr:02d}-{k}-meaningful.mp4")
+    befund = os.path.join(HIER, f"{k}_befund.json")
     if dauer(out) > 10:
         return f"{nr}. {name}: schon fertig ({dauer(out):.1f}s)"
+    if gesamt is None:
+        gesamt = laufzeit(fid, groesse)
+        print(f"{nr}. {name}: Laufzeit {gesamt:.1f}s gemessen", flush=True)
 
     clip = os.path.join(HIER, f"{k}_fertig.mp4")
     if dauer(clip) < 5:
@@ -87,22 +111,44 @@ def eine(name, k, fid, groesse, gesamt, nr):
         for v in range(MAX_VERSUCHE):
             start = max(0.0, ende - STUECK)
             w = os.path.join(HIER, f"{k}_f{v}.mp4")
+            wstart = os.path.join(HIER, f"{k}_f{v}.beginn")
             if dauer(w) < 5:
-                lauf([sys.executable, os.path.join(REPO, "video/master_schnitt.py"),
-                      "--id", fid, "--start", str(start), "--ende", str(ende),
-                      "--groesse", str(groesse), "--out", w], capture_output=True)
+                p = lauf([sys.executable, os.path.join(REPO, "video/master_schnitt.py"),
+                          "--id", fid, "--start", str(start), "--ende", str(ende),
+                          "--groesse", str(groesse), "--out", w],
+                         capture_output=True, text=True)
+                m = re.search(r"beginnt bei Master ([\d.]+)s", p.stdout)
+                # Ohne diese Zahl ist die Masterzeitmarke bis zu 6 s daneben:
+                # der Abruf setzt auf das Schluesselbild VOR dem bestellten
+                # Start, Fensterzeit 0 ist dort und nicht bei `start`.
+                if not m:
+                    raise RuntimeError(f"Dateibeginn nicht gemeldet: {p.stdout[:160]}")
+                open(wstart, "w").write(m.group(1))
             jf = os.path.join(HIER, f"{k}_f{v}.json")
             d = json.load(open(jf)) if os.path.exists(jf) else transkript(w)
             json.dump(d, open(jf, "w"), indent=1)
             tr = next((i for i, s in enumerate(d) if MUSTER.search(s["text"])), None)
             if tr is not None:
-                fenster, fstart, daten, idx = w, start, d, tr
+                gemessen = (float(open(wstart).read())
+                            if os.path.exists(wstart) else None)
+                fenster, fstart, daten, idx = w, gemessen, d, tr
                 break
             ende = start
         if fenster is None:
             return f"{nr}. {name}: Frage NICHT gefunden"
         schluss = schluss_waehlen(daten, idx)
         von = max(0.0, daten[idx]["start"] - 1.0)
+        # Fensterzeit -> Masterzeit. Ohne diese beiden Zahlen ist das
+        # Stueck in zwei Jahren nicht mehr zuzuordnen, und genau darum
+        # geht es bei diesem Auftrag.
+        json.dump({"nr": nr, "name": name, "drive_id": fid,
+                   "master_von": round(fstart + von, 2) if fstart else None,
+                   "master_bis": round(fstart + schluss, 2) if fstart else None,
+                   "masterzeit_gemessen": fstart is not None,
+                   "fenster": os.path.basename(fenster),
+                   "fenster_von": round(von, 2), "fenster_bis": round(schluss, 2),
+                   "frage": daten[idx]["text"].strip()},
+                  open(befund, "w"), indent=1, ensure_ascii=False)
         lauf([FF, "-nostdin", "-y", "-hide_banner", "-loglevel", "error",
               "-ss", f"{von:.2f}", "-i", fenster, "-t", f"{schluss - von:.2f}",
               "-c:v", "libx264", "-crf", "17", "-preset", "veryfast",
@@ -124,10 +170,10 @@ def eine(name, k, fid, groesse, gesamt, nr):
 
 
 if __name__ == "__main__":
-    for f in FOLGEN:
+    for f in folgen_laden():
         try:
-            print(eine(*f), flush=True)
+            print(eine(f), flush=True)
         except Exception as e:
-            print(f"{f[5]}. {f[0]}: Fehler {type(e).__name__}: {str(e)[:120]}",
+            print(f'{f["nr"]}. {f["name"]}: Fehler {type(e).__name__}: {str(e)[:120]}',
                   flush=True)
     print("DURCHLAUF ENDE", flush=True)

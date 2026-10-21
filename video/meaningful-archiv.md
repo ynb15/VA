@@ -222,3 +222,61 @@ waren nach rund 28 GB *alle* Dateien in seinem Ordner gesperrt. Ein Fenster
 kostet 200–260 MB, eine Folge also unter einem Gigabyte. Eingeteilt wird
 trotzdem über mehrere Tage, weil ein Fehlversuch zwei bis drei Fenster kostet
 und das Limit nicht vorher sichtbar ist.
+
+---
+
+## Werkzeug, Stand 21.10.2026
+
+**Die Folgenliste steht in `video/meaningful-folgen.json`, nicht im Code.** Eine
+neue Folge ist eine neue Zeile in einer Datendatei. `frage_am_ende.py` liest sie
+dort, überspringt alles ohne erreichbaren Master (`blockiert`, `ohne Master`)
+und schreibt je Folge ein `<k>_befund.json` mit Drive-ID, Masterzeitmarke und
+dem Wortlaut der Frage — die Archivzeile entsteht damit beim Schneiden, nicht
+hinterher aus dem Gedächtnis.
+
+**Ein Fehler, den ich im eigenen Patch gefunden habe, bevor er lief.** Ich hatte
+die Masterzeit als `Fensterstart + Fensterzeit` gerechnet. Das ist falsch:
+`master_schnitt.py` setzt auf das **Schlüsselbild vor** dem bestellten Start,
+die Datei beginnt also früher, und Fensterzeit 0 liegt dort. Der Abruf meldet
+den tatsächlichen Beginn ohnehin auf der Standardausgabe — er wurde nur
+verworfen. Jetzt wird er ausgelesen, in `<k>_f<v>.beginn` gelegt und für die
+Masterzeit benutzt; fehlt er, bleibt `master_von` leer und
+`masterzeit_gemessen` steht auf `false`, statt eine falsche Zahl einzutragen.
+**Ungeprüft wären es bis zu 6 Sekunden Versatz gewesen** — bei einer Antwort von
+30 bis 60 Sekunden ist das der halbe Einstieg.
+
+### Kyle Kingsbury, gemessen am 21.10.
+
+| Datei | Laufzeit | Bild | Abrufkosten der Laufzeitabfrage |
+|---|---|---|---|
+| `1NWMaIn8avpf0EVQvm2DhEQr73uhfioIq` v1-Export, 1,3 GB | **129:50** | 1920×1080 | 8,0 MB |
+| `1mQjt0g5GVptvEDVY8w3mVN2Qa8NFlTnp` (YNB), 17,0 GB | **77:12** | 3840×2160 | 17,7 MB |
+
+**Die 4K-Kameradatei ist 52 Minuten kürzer als das Gespräch.** Für die Frage am
+Ende ist sie damit unbrauchbar, und es ist derselbe Fehler wie bei Marian
+Goodell — eine Kamera, die vor dem Ende aussteigt. Geschnitten wird aus dem
+v1-Export. **Das ist ein Befund, keine Vermutung:** beide Laufzeiten stehen im
+Dateikopf und sind oben abgefragt.
+
+### Curtis Crane ist nicht link-freigegeben
+
+Der Bereichsabruf auf den v1-Export bricht ab: **Block 0 liefert 920.758 statt
+8.388.608 Bytes.** Das ist genau der Fall, den der Prüfer in
+`drive_fernzugriff.py` seit dem 20.10. abfangen soll — und er hat ihn
+abgefangen, mit Grund, statt eine halbe Datei als ganze auszugeben. Der Abruf
+braucht **„Jeder mit dem Link"** auf der Datei. Ausweichquelle wäre der
+33,2-GB-Rohschnitt `1X9I3dODNz8RqdMml801Gk2a4E2SdmzM-` im Drive des Cutters.
+
+### Die Kopfzeile — offene Frage an ihn
+
+`video/shorts-render.py` kann seit dem 21.10. eine Schlagzeile in die ersten
+4–5 Sekunden legen (`--kopfzeile`, schwarzes Feld, weiße Schrift, nach
+Modern-Wisdom-Vorbild). Vom Chief of Staff übernommen.
+
+**Für diese Reihe habe ich sie bewusst nicht eingeschaltet.** Eine Schlagzeile
+ist ein Haken für den Feed; diese Stücke sind Archivmaterial und werden bei
+Folge 100 ohnehin neu geschnitten, dann im Zusammenhang und mit einem Haken für
+das ganze Video statt siebzehn einzelnen. Sollen die Stücke in der Zwischenzeit
+auch als einzelne Shorts laufen, ist es umgekehrt — dann gehört sie drauf. **Das
+entscheidet er.** Umbauen kostet nur das Rendern, nicht den Abruf: die Fenster
+und die Zeitmarken bleiben gültig.
