@@ -45,8 +45,14 @@ Untertitel unter `video/shorts/<datei>.srt`.
 | 4 | Logan Gonzalez | `1ztggu2ua5-AntISFHHP9cBqjVhSn6Zmj` | 4957,1–5009,4 | 43,6 s | `04-logan-meaningful` | ja |
 | 5 | Matt Defina | `1ubW-gMYb6_g0ZO-cOVyEFGQoKvIyGivj` | 6474,7–6513,1 | 32,0 s | `05-matt-meaningful` | ja |
 | 6 | Rick Strassman | `1Hwt3_c_Ifhd7onXyC8nrHIdtjwJjxdjH` | **~7100–7160, ungenau** | 49,0 s | `06-rick-meaningful` | **nein — Ende offen** |
+| 7 | Kyle Kingsbury | `1NWMaIn8avpf0EVQvm2DhEQr73uhfioIq` | 7485,78–7547,38 | 51,4 s | `07-kyle-meaningful` | ja, Bild und Schluss geprüft |
+| 10 | Eben Britton | `1lIFL8aUunQQPtTDp0vQNlaRc7of-4PfG` | 5986,89–6034,27 | 39,5 s | `10-britton-meaningful` | ja, Schluss geprüft |
 
-**Drei Lücken in diesen sechs Zeilen:**
+**Die Zeitmarken von 7 und 10 sind am Dateibeginn des Suchfensters gemessen,
+nicht gerechnet** — `master_schnitt.py` setzt auf das Schlüsselbild vor dem
+bestellten Start, und der gemeldete Beginn steht jetzt in `<k>_f<v>.beginn`.
+
+**Drei Lücken in den ersten sechs Zeilen:**
 
 1. **Ricks Zeitmarke ist grob** (`~7100–7160`); die anderen fünf sind auf eine
    Zehntelsekunde gemessen. Wird beim nächsten Zugriff auf diesen Master
@@ -280,3 +286,65 @@ das ganze Video statt siebzehn einzelnen. Sollen die Stücke in der Zwischenzeit
 auch als einzelne Shorts laufen, ist es umgekehrt — dann gehört sie drauf. **Das
 entscheidet er.** Umbauen kostet nur das Rendern, nicht den Abruf: die Fenster
 und die Zeitmarken bleiben gültig.
+
+---
+
+## Stand am 21.10.2026, 11:10 — nach dem ersten Arbeitstag
+
+**Geschnitten und geliefert: 8 von 17.** Die sechs aus der Nacht, dazu Kyle
+Kingsbury und Eben Britton. Whitney Wheelock rechnet noch.
+
+| Folge | Stand |
+|---|---|
+| 7 Kyle Kingsbury | **fertig**, 51,4 s |
+| 10 Eben Britton | **fertig**, 39,5 s |
+| 11 Whitney Wheelock | Zeitmarke steht (6570,73–6626,93), rendert |
+| 12 Curtis Crane | als nächstes, aus dem 33,2-GB-Rohschnitt des Cutters |
+| 8 Rob Bennett | **Frage in den letzten 840 s nicht gefunden** |
+| 9 Craig Makhosi | **braucht „Jeder mit dem Link"** |
+| 13 Marian Goodell | **braucht Tonspur und Freigabe** |
+| 14–17 | ohne Master; Francis' Zeile steht, drei brauchen die Datei von ihm |
+
+### Rob Bennett — die Frage steht dort nicht
+
+Vier Fenster durchsucht, 840 Sekunden, **1,74 GB abgerufen.** Was in den letzten
+sieben Minuten steht: Reue (*„I regret being a human, I guess. I think I'd
+prefer to have been a swallow or a spider"*), ein Rückblick auf die Aufnahme
+(*„first guest… I was looking forward to it for a year"*) und die
+Verabschiedung (*„Thank you so much, Rob. Book him before you die"*).
+**Keine Frage nach dem Sinn.**
+
+**Er war der erste Gast überhaupt, Januar 2026.** Möglich, dass das Ritual
+damals noch nicht bestand — das ist meine Vermutung, keine Messung. Weiter
+zurück zu suchen kostet bei diesem Master **580 MB je Fenster**; bevor das
+läuft, sollte er sagen, ob er Rob Bennett die Frage gestellt hat.
+
+### Die Abrufkosten, gemessen
+
+| Folge | Master | ein 210-s-Fenster |
+|---|---:|---:|
+| Kyle Kingsbury | 1,3 GB v1-Export | **35 MB** |
+| Rob Bennett | 34,2 GB | **580 MB** |
+| Eben Britton | 27,0 GB | **911 MB** |
+
+**Faktor 26 zwischen dem billigsten und dem teuersten Fenster, bei gleicher
+Dauer.** Die Kosten hängen an der Bitrate, nicht an der Dateigröße — Britton ist
+kleiner als Bennett und teurer. Bei einem Tageslimit von rund 28 GB pro
+Eigentümer entscheidet das, wie viele Folgen an einem Tag gehen. **Heute
+verbraucht: rund 4 GB.**
+
+### Zwei Dinge am Stück, die ich nicht ungefragt ändere
+
+1. **Die letzte Zeile fehlt, wenn die Pointe am Dateiende steht.** Kyles
+   *„I got nothing else to add to that."* ist im Ton (−27,1 dB gegen −24,3 dB
+   in „that's really it", also leise Sprache, keine Stille), steht aber in
+   keiner Einblendung: Whisper gibt den angebrochenen letzten Abschnitt nicht
+   mehr aus, wenn die Datei direkt dahinter endet. Der saubere Weg wäre, dem
+   Renderer das Suchtranskript mitzugeben statt neu zu transkribieren — ein
+   Eingriff in sein abgenommenes Werkzeug.
+2. **Am Anfang hängt ein Fetzen des vorigen Satzes.** Der Einstieg liegt eine
+   Sekunde vor der Frage, damit kein Wort der Frage abgeschnitten wird. Bei
+   Britton fängt diese Sekunde *„So that's what I would say to him"* mit.
+   Dasselbe Mittel wie am Schluss würde helfen — auf das Satzende **vor** der
+   Frage schneiden statt auf eine feste Sekunde. **Das ändert aber die
+   Einstiege aller bisherigen Stücke**, deshalb erst nach seinem Wort.
