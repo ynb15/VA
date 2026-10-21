@@ -8649,3 +8649,32 @@ Aaronson-Short: *„Diese Aufgabe hättest du eigentlich dem Short Manager
 Übergabe präzise ist, abgeben. Nicht selbst rendern. Wer einen Auftrag annimmt,
 für den jemand anderes zuständig ist, baut genau das Silo, das der Kanal
 auflösen soll.
+
+## Der Contentplan — täglich ein Stück, zwei Podcasts im Monat
+
+Sein Auftrag vom 21.10.2026. Der Aufbau steht in `plan/README.md`, der Bestand
+in `plan/folgen.md`, der Kalender in `plan/kalender.md` (erzeugt, nicht von Hand
+gepflegt), die Kontrolle in `bin/plan-pruefen.py`. Der tägliche Sweep fährt ihn.
+
+**Seine Vorgaben, wörtlich:** *„mindestens fünf, idealerweise sieben Content
+Pieces pro Woche"* · *„ich veröffentliche in der Regel auch am Wochenende die
+Main Podcasts und dann drumherum unter der Woche Shorts und Clips"* ·
+Rückkatalog mitnutzen, *„vor allem halt in den Podcast mit Craig und auch
+Francis"* · *„die Short-Beschreibung, die ist jetzt nicht wirklich relevant"* ·
+Abnahme **täglich, Stück für Stück**.
+
+**Das Material ist nicht das Nadelöhr.** Acht fertig aufgenommene Folgen liegen
+unveröffentlicht; bei zwei im Monat reicht das bis Ende Februar 2027 ohne eine
+neue Aufnahme. Dazu 38 veröffentlichte Folgen, aus denen fast nichts geschnitten
+ist.
+
+**Das Nadelöhr ist er.** Nichts geht ohne ihn raus, und er nimmt täglich ab.
+Täglich heißt: kein Puffer in der Abnahme. Also liegt der Puffer davor —
+**mindestens drei fertige Stücke im Kasten.** Fällt die Zahl darunter, wird
+nicht weitergebaut, sondern aufgefüllt. Das ist die einzige Zahl, die diesen
+Plan trägt oder reißen lässt.
+
+**Eine Lesart, die er bestätigen muss:** er sagte *„nächste Woche Freitag am 30.
+oder 31. Oktober"*, und später, dass die Hauptpodcasts am Wochenende laufen.
+Der 30.10. ist ein Freitag, der 31.10. ein Samstag. Der Kalender steht auf
+**Samstag, 31.10.** — gefragt, nicht geraten, aber noch unbeantwortet.
