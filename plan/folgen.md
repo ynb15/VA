@@ -78,3 +78,31 @@ der dieser Plan scheitert oder hält — nicht der Vorrat, nicht die Agenten.
 
 Daraus folgt die Bauweise: **gesammelt abnehmen, einzeln veröffentlichen.**
 Einmal pro Woche legt er eine Woche Material ab, nicht jeden Tag ein Stück.
+
+## Fertige Clips, die schon da sind — gefunden 21.10.
+
+Er hat heute einen Ordner verlinkt, in dem **vier geschnittene
+Sutcliffe-Clips** liegen (`1JyKri_kUrsK7jfub7cbHiz38oqyd_7_u`):
+
+| Clip | Größe | Anmerkung |
+|---|---|---|
+| **David Sutcliffe about Andrew Tate** | 212 MB | **Er hält ihn für den stärksten.** B-Roll von Tate gewünscht — **Rechtefrage offen, siehe unten** |
+| David Sutcliffe Hollywood | 148 MB | |
+| David Sutcliffe Gilmore Girls & Friends | 117 MB | |
+| David Sutcliffe Patriarchy | 102 MB | |
+
+**Das sind vier der 18 Clips, die der Kalender bis Jahresende braucht** — und
+sie sind fertig. Sie brauchen nur noch Titel, Beschreibung und Thumbnail.
+
+### Die Rechtefrage beim Tate-Clip
+
+Fremdes Interviewmaterial von Andrew Tate einzuschneiden heißt, fremdes
+Bildmaterial auf **seinem** Kanal zu veröffentlichen. Das ist derselbe Fall wie
+die Regel zu kommerzieller Musik, nur mit Bild: **Content-ID-Ansprüche und
+Löschanträge treffen seinen Kanal, nicht die Quelle.** Kommentierende Nutzung
+ist üblich und oft vertretbar — aber die Entscheidung über das Risiko ist seine,
+nicht unsere, und sie fällt **vor** dem Schnitt, nicht danach.
+
+**Ungeklärt ist außerdem, welches Interview gemeint ist** — ob Sutcliffe selbst
+eines mit Tate geführt hat oder ob Tate-Material aus fremder Quelle gemeint ist.
+Beides führt zu verschiedenen Antworten. **Nicht geraten, gefragt.**
