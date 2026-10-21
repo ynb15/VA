@@ -299,9 +299,9 @@ Kingsbury und Eben Britton. Whitney Wheelock rechnet noch.
 |---|---|
 | 7 Kyle Kingsbury | **fertig**, 51,4 s |
 | 10 Eben Britton | **fertig**, 39,5 s |
-| 11 Whitney Wheelock | Zeitmarke steht (6570,73–6626,93), rendert |
-| 12 Curtis Crane | als nächstes, aus dem 33,2-GB-Rohschnitt des Cutters |
-| 8 Rob Bennett | **Frage in den letzten 840 s nicht gefunden** |
+| 11 Whitney Wheelock | **fertig**, 56,8 s |
+| 8 Rob Bennett | **Frage nicht gestellt** — 840 s durchsucht, Fenster lückenlos |
+| 12 Curtis Crane | **Frage nicht gestellt** — 840 s durchsucht, Fenster lückenlos |
 | 9 Craig Makhosi | **braucht „Jeder mit dem Link"** |
 | 13 Marian Goodell | **braucht Tonspur und Freigabe** |
 | 14–17 | ohne Master; Francis' Zeile steht, drei brauchen die Datei von ihm |
