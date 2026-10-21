@@ -99,3 +99,48 @@ nichts passiert.** Dateien überleben, Prozesse nicht — und zwar auch mit
 
 **Regel für jeden langen Lauf ab jetzt: erst wiederaufnehmbar bauen, dann
 starten.** Nicht umgekehrt.
+
+---
+
+## Nachtrag 21.10.2026 — Sutcliffe neu gebaut, mit seinem Preset
+
+Auf seine Bitte („den Short, den ich aus dem David Sutcliffe-Podcast ziehen
+moechte, What Makes Life Meaningful") noch einmal gerendert, diesmal **mit
+seinem Preset** statt mit den abgelesenen Werten der Nacht: Inter Black 82,
+Gelb `#F9F13A`, Zeilenbreite 72 %, Logo 28 % auf 0,87, `--look preset`.
+Laenge unveraendert **49,70 s**, 1080x1920.
+
+**Der Weg, nachvollziehbar:** Fenster 7221–7283 aus dem Drive-Master geholt
+(62,04 s bekommen von 62 bestellt, geprueft — 176 MB statt 18,6 GB), exakt auf
+7222,0–7281,6 geschnitten, Ausschnittsplan neu gemessen.
+
+**Vier Einstellungen, an jedem Kameraschnitt geteilt** — und einzeln im Bild
+nachgesehen, weil der feste Kasten genau hier schon einmal die Wand gezeigt
+hat:
+
+| Einstellung | im Quellbild | wer zu sehen ist |
+|---|---|---|
+| 0,0–2,6 s | `768:141:528:939` | Yannick, stellt die Frage |
+| 2,6–29,7 s | `732:98:528:939` | Sutcliffe, nah |
+| 29,7–37,1 s | `1332:141:528:939` | **Totale** — Kasten korrekt auf Sutcliffe |
+| 37,1–59,6 s | `708:86:528:939` | Sutcliffe, nah |
+
+**Zwei Befunde, die Arbeit gekostet haben** (ausfuehrlich in
+`lernen/content-gastauftritte.md`):
+
+1. **`--srt` zusammen mit `--srt-out` bricht ab** (`KeyError: 'woerter'`), und
+   zwar erst nach dem Transkodieren.
+2. **Eine wiederverwendete SRT kostet das gelbe Aktivwort.** `--srt` liefert
+   keine Wortzeiten, die Hervorhebung faellt **still** weg — kein Hinweis im
+   Protokoll. Erst der zweite Lauf mit `--auto-captions` hat sie zurueckgeholt.
+   Der Wortlaut war in beiden gleich, nur die Gruppierung weicht an einer
+   Stelle ab (`MEANINGFUL FOR YOU` gegen `MEANINGFUL FOR` + `YOU`) — Whisper
+   ist nicht deterministisch.
+
+**Ortscheck auf den Untertiteln: sauber**, kein Hinweis auf den Wohnort.
+
+**Was ich noch aendern wuerde, aber nicht ohne ihn:** die Totale bei Sekunde
+25–31 traegt die Pointe (*„to see yourself reflected through the other"*), und
+dort ist er klein und im Profil. Einfrieren waere falsch — er ist ja zu sehen.
+Moeglich waere, die Totale enger zu fassen; das ist eine Aenderung am Bild und
+gehoert vor seine Augen, nicht in denselben Durchgang.
