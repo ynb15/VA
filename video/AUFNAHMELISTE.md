@@ -48,45 +48,58 @@ Am fertigen Short ausgemessen (Transkript mit Zeitmarken):
 
 ---
 
-## 2 · Für den Hypermaskulinitäts-Short — sechs Aufnahmen
+## 2 · Für den Hypermaskulinitäts-Short
 
-Die Blöcke stehen in `video/hypermaskulinitaet-broll-plan.md`.
-**Tate wird hier nicht noch einmal aufgenommen** — die Aufnahme aus Teil 1
-trägt auch Block 3.
+### Korrektur vom 21.10.: Taxi Driver und Marty Supreme sind raus
 
-| Block | Quelle | Kennung | **aufnehmen** |
-|---|---|---|---|
-| **1** · *„the tendency to completely suppress"* | Marty Supreme | https://www.youtube.com/watch?v=xI8OpQNuFvg | **0:15–1:40** |
-| **1** | Wolf of Wall Street | https://www.youtube.com/watch?v=LwG6aia2vn0 | **0:00–5:00** |
-| **2** · *„most men are too afraid to touch"* | **Taxi Driver** | https://www.youtube.com/watch?v=ak3ma7wtE_0 | **3:20–4:45** |
-| **2** | Wall Street | https://www.youtube.com/watch?v=OHnZi87272U | **3:15–4:00** |
-| **3** · *„the Andrew Tates of this world"* | — | — | *aus Teil 1* |
-| **4** · *„fear hidden behind a mask"* | Batman | https://www.youtube.com/watch?v=JlELZSdfWKs | **8:20–13:00** |
-| **4** · *„a man who can crack open"* | **Good Will Hunting** | https://www.youtube.com/watch?v=ZQht2yOX9Js | **ganz (3:55)** |
-| **5** · *„most men have neither"* | Rocky | https://www.youtube.com/watch?v=Tc7H9s4PdSI | **1:35–2:20** |
-| **5** | Pursuit of Happyness | https://www.youtube.com/watch?v=CPpwXZA9p0Q | **5:40–7:00** |
+**Seine Begründung zu Marty Supreme:** *„da sind die ja nur in dieser
+Bowling-Club. Das ist absolut nicht passend. Das repräsentiert gar nichts."*
 
-**Zusammen rund 20 Minuten.** Ohne die Zeitangaben wären es 88 gewesen.
+**Er hat recht, und der Fehler sitzt tiefer als die Auswahl.** Ich habe diese
+beiden nach dem **Aussehen** gewählt — Marty Supreme war die sauberste Quelle
+der Liste (4K, kein Zeichen, warme Gradation, Sättigung 0,75), Taxi Driver
+hatte mit 0,53 die längsten Einstellungen im ganzen Feld. Beides stimmt, und
+beides beantwortet die falsche Frage. **Ein Einspieler muss nicht gut aussehen,
+er muss etwas sagen.** Ein Mann, der in einer Spielhalle Tischtennis zockt,
+sagt nichts über Männer, die Verletzlichkeit unterdrücken.
 
-### Die drei wichtigsten davon, falls die Zeit knapp ist
-1. **https://www.youtube.com/watch?v=ZQht2yOX9Js** Good Will Hunting — Miramax, offiziell, kein Zeichen, und
-   als einzige Quelle mit **gemessen langen Einstellungen** (Sättigung 0,61).
-2. **https://www.youtube.com/watch?v=ak3ma7wtE_0** Taxi Driver — Sättigung **0,53**, die längsten
-   Einstellungen im ganzen Feld. Ab 3:25 der Spiegelmonolog: achtzig Sekunden
-   fast ohne Schnitt, ein Mann allein im Zimmer, der Härte probt.
-3. **https://www.youtube.com/watch?v=xI8OpQNuFvg** Marty Supreme — 4K, kein Zeichen, keine Endtafel.
+Dasselbe gilt für meine Messung überhaupt: Sättigung und Takt sagen, ob eine
+Quelle **brauchbar** ist. Ob sie **passt**, sagen sie nicht.
 
-### Was an diesen Quellen zu beachten ist
-* **Batman https://www.youtube.com/watch?v=JlELZSdfWKs:** nur 8:20–13:00 ist brauchbar. Der Rest ist fast
-  durchgehend Nachtszenen und auf dem Telefon eine dunkle Fläche.
-* **Rocky https://www.youtube.com/watch?v=Tc7H9s4PdSI:** **ab 2:20 kommen 35 Sekunden Movieclips-Endtafeln.**
-  Nicht mitaufnehmen.
-* **Wall Street https://www.youtube.com/watch?v=OHnZi87272U:** die ersten drei Minuten sind nur Totalen des
-  Saals. Die letzten 20 Sekunden sind eine JoBlo-Endtafel.
-* **Wolf of Wall Street https://www.youtube.com/watch?v=LwG6aia2vn0:** Binge Society brennt sein Logo **oben
-  links** ein. Beim randlosen Ausschnitt aus der Mitte fällt es heraus.
+### Was bleibt und von ihm bestätigt ist
 
----
+| Block | Text | Film | Link | aufnehmen |
+|---|---|---|---|---|
+| **3** | *„the Andrew Tates of this world"* | **Sutcliffe × Tate** | siehe Teil 1 | *aus Teil 1* |
+| **4** | *„fear hidden behind a mask"* | **Batman** | https://www.youtube.com/watch?v=JlELZSdfWKs | **8:20–13:00** |
+| **4** | *„a man who can crack open"* | **Good Will Hunting** | https://www.youtube.com/watch?v=ZQht2yOX9Js | **ganz (3:55)** |
+| **5** | *„most men have neither"* | **Rocky** | https://www.youtube.com/watch?v=Tc7H9s4PdSI | **1:35–2:20** |
+| **5** | | **Pursuit of Happyness** | https://www.youtube.com/watch?v=CPpwXZA9p0Q | **5:40–7:00** |
+
+**Rund 11 Minuten.**
+
+### Blöcke 1 und 2 — offen, und mein Vorschlag ist: weglassen
+
+Für *„the tendency to completely suppress"* (9,6–14,1 s) und *„most men are too
+afraid to touch"* (22,9–26,8 s) habe ich kein Material, das er bestätigt hat
+und das die Sache **darstellt** statt nur hart auszusehen.
+
+**Vorschlag: beide Blöcke fallen lassen.** Der Short hat dann vier Blöcke statt
+fünf, rund 21 s von 55,9 s = **38 %** — immer noch mehr als Williamsons
+Durchschnitt, und jeder verbleibende Block trägt. **Lieber vier, die sitzen,
+als sechs, von denen zwei nichts sagen.**
+
+**Falls er sie doch will**, wären das die zwei, die den Inhalt wirklich treffen
+— nicht die Härte, sondern das Unterdrücken selbst:
+
+| Film | was es darstellt |
+|---|---|
+| **Fight Club**, die Selbsthilfegruppen | Männer, die erst weinen können, wenn sie vorgeben, todkrank zu sein. Das **ist** das Thema, nicht eine Illustration davon. |
+| **American Psycho**, die Morgenroutine vor dem Spiegel | ein Mann, der nur noch Oberfläche ist. Die Maske, bevor der Text sie nennt. |
+
+**Beide erst messen und am Kontaktabzug ansehen**, bevor er irgendetwas
+aufnimmt — bei Marty Supreme habe ich genau diesen Schritt mit dem Aussehen
+verwechselt.
 
 ## Wie aufnehmen — sechs Punkte, jeder aus einem Fehler vom 20.10.
 
