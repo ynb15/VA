@@ -10,16 +10,32 @@ werden müsste — und das ist der realistische Fall: die sechs MP4s aus der Nac
 vom 20./21.10. sind mit dem Container weg, geliefert hat er sie, die Untertitel
 liegen im Repo, die Dateien nicht.
 
-**Der Drive-Ordner fehlt noch.** Drive-Schreibzugriffe sind nicht freigegeben
-(einzige Ausnahme: das wöchentliche Protokolldokument). Bis er das freigibt,
-kommen die Stücke über `SendUserFile` und das Archiv steht hier.
+## Der Drive-Ordner — gefunden, und ich kann hineinschreiben
+
+**`YNB Podcast: Claude Creation`** · `1N5i97R5byCWF57z23GuwoY1v5w6vX1ef` ·
+von ihm am 21.10.2026 um 09:04 angelegt, in `YNB Podcast` neben
+`: In Progress` und `: Published`.
+
+**Am 21.10. um 09:22 getestet und es geht** — eine Textdatei hineingeschrieben,
+sie liegt drin (`1bKrtpOk7iykn6KLR8KitxjSyFZeY6fF9`, kann gelöscht werden).
+Der Stand im Handbuch („Drive-Schreibzugriffe nicht freigegeben") ist damit
+überholt. **Dorthin gehen die Stücke ab jetzt**, je Folge drei Dateien:
+
+```
+<nr>-<gast>-meaningful.mp4    das geschnittene Stück
+<nr>-<gast>-meaningful.srt    die Untertitel
+<nr>-<gast>-meaningful.txt    das Transkript der Antwort
+```
+
+Das Archiv selbst bleibt hier im Repo — eine Tabelle in Git ist versionierbar
+und durchsuchbar, eine im Drive nicht.
 
 ---
 
 ## Was geschnitten ist
 
 Zeiten in **Masterzeit (Sekunden)**, Dauer **des fertigen Stücks** bei Tempo 1,2.
-Die Untertitel liegen daneben unter `video/shorts/<datei>.srt`.
+Untertitel unter `video/shorts/<datei>.srt`.
 
 | # | Gast | Drive-ID des Masters | Frage/Antwort im Master | Dauer | Datei | geprüft |
 |---|---|---|---|---|---|---|
@@ -30,33 +46,62 @@ Die Untertitel liegen daneben unter `video/shorts/<datei>.srt`.
 | 5 | Matt Defina | `1ubW-gMYb6_g0ZO-cOVyEFGQoKvIyGivj` | 6474,7–6513,1 | 32,0 s | `05-matt-meaningful` | ja |
 | 6 | Rick Strassman | `1Hwt3_c_Ifhd7onXyC8nrHIdtjwJjxdjH` | **~7100–7160, ungenau** | 49,0 s | `06-rick-meaningful` | **nein — Ende offen** |
 
-**Zwei Lücken in diesen sechs Zeilen, und beide sind echte Lücken:**
+**Drei Lücken in diesen sechs Zeilen:**
 
-1. **Ricks Zeitmarke ist grob.** In `meaningful-serie.md` steht sie als
-   `~7100–7160`; die anderen fünf sind auf eine Zehntelsekunde gemessen. Beim
-   nächsten Zugriff auf diesen Master wird sie nachgemessen.
+1. **Ricks Zeitmarke ist grob** (`~7100–7160`); die anderen fünf sind auf eine
+   Zehntelsekunde gemessen. Wird beim nächsten Zugriff auf diesen Master
+   nachgemessen.
 2. **Ricks Stück hat ein offenes Ende.** Der Vorgänger hat den kürzeren Bogen
-   gewählt und das ausdrücklich ihm zur Entscheidung gelassen. Das bleibt seine
-   Entscheidung.
-
-**Das Aufnahmedatum fehlt in allen sechs Zeilen.** Drive liefert nur das
-Hochladedatum, nicht das Aufnahmedatum — und die beiden liegen hier Wochen
-auseinander. Die Aufnahmedaten stehen im Notion-Databank; sie kommen in die
-Tabelle, wenn ich dort einmal durchgehe, nicht vorher geraten.
+   gewählt und das ausdrücklich ihm zur Entscheidung gelassen. Bleibt seine.
+3. **Das Aufnahmedatum fehlt überall.** Drive liefert nur das Hochladedatum, und
+   die beiden liegen hier Wochen auseinander. Die Aufnahmedaten stehen im
+   Notion-Databank; sie kommen von dort, nicht geraten.
 
 ---
 
-## Was in Frage kommt — alle Folgen, die aufgenommen sind
+## Zeile fertig, Datei fehlt — Francis Chouler
 
-**17 aufgenommene Folgen**, gemessen am 21.10.2026 aus drei Quellen: die
-veröffentlichten über `yt-dlp` vom Kanal, die Masterdateien über die Drive-Suche,
-die Ordnerstruktur aus `YNB Podcast: Published` / `: In Progress` / `: Backlog`.
+**Das Muster für alle veröffentlichten Folgen ohne Master.** Die Antwort steht
+wortgenau im Transkript, das am 19.10. geholt wurde
+(`video/transkripte/swZGLesMb8Y.transkript.md`). Für die Archivzeile reicht das.
 
-Nicht gezählt sind Gäste, von denen im Drive nur ein Vorbereitungsdokument liegt
-und keine Aufnahme — **Bridget Woods, Cal Callahan, Cara West**. Die sind
-Pipeline, keine Folge.
+| Gast | Folge | Frage | Antwort | Dauer |
+|---|---|---|---|---|
+| Francis Chouler | `swZGLesMb8Y` · 70:39 | **01:08:29** | **01:08:36 – 01:09:31** | 55 s veröffentlicht |
 
-### Material liegt vor — das kann sofort laufen
+Zeiten **veröffentlicht**, nicht Masterzeit — es gibt keinen Master mehr.
+
+Seine Frage: *„I was thinking about renaming this podcast to Man's Search for
+Meaning … so I would be curious, what does make life meaningful for you?"*
+
+Francis' Antwort, gekürzt: *„All of the various episodes on the way, all of the
+things we have to go through in order to get to where we're going … it's that
+kind of unpredictable factor. I think that's the source of delight in a life,
+and a source of meaning — from holding on to the kind of golden thread that you
+know you need to keep following."* Und am Schluss, nach seinem Einwurf *„so live
+for the uncertainty"*: **„Embrace the uncertainty. It is the source of
+aliveness."**
+
+**Das ist das stärkste Ende der sieben, die ich bisher gelesen habe** — und das
+ist meine Einschätzung, nicht seine Vorgabe. Dazu passt, dass dieser Short mit
+**1.300 Aufrufen** schon veröffentlicht und sein viertstärkster ist. Für die
+Reihe bei Folge 100 wird er neu geschnitten werden müssen; der Schnittpunkt
+steht jetzt fest.
+
+---
+
+## Was in Frage kommt
+
+**17 aufgenommene Folgen**, gemessen am 21.10.2026 aus drei Quellen: der Kanal
+über `yt-dlp` (10 lange Formate), die Masterdateien über die Drive-Suche, die
+Ordnerstruktur aus `: Published` / `: In Progress` / `: Backlog`.
+
+Nicht gezählt: Gäste, von denen nur ein Vorbereitungsdokument liegt —
+**Bridget Woods, Cal Callahan, Cara West**, und **Vince Poscente** (Ordner vom
+19.10., Dokument und ein Foto, keine Aufnahme im Drive). Falls Vince aufgenommen
+ist, wird daraus Folge 18.
+
+### Material liegt vor — das kann laufen
 
 | Gast | veröffentlicht | Länge | Master im Drive | Größe |
 |---|---|---|---|---|
@@ -66,74 +111,99 @@ Pipeline, keine Folge.
 | Eben Britton | `RG-K0fIA2-w` | 102:28 | `1lIFL8aUunQQPtTDp0vQNlaRc7of-4PfG` | 27,0 GB |
 | Whitney Wheelock | `rFRIX4Yute0` (vermutlich) | 104:07 | `1iZy9XwHryVdCf3VBRM2Ya5oP_XIBjmdM` (Zweier-Kamera) | 5,0 GB |
 | Kyle Kingsbury | — | — | `1mQjt0g5GVptvEDVY8w3mVN2Qa8NFlTnp` · LOW_RES `1NWMaIn8avpf0EVQvm2DhEQr73uhfioIq` | 17,0 / **1,3 GB** |
-| Marian Goodell | — | — | `1LVM5nxvxjMuSmsQlz1Jys_O32y8eYe0A` · YNB-Kamera `1n4h-Qis-40e-cEcKd-hAhtyj_vgU4Hwk` | 18,5 / 10,4 GB |
 
-**Curtis Crane und Kyle Kingsbury sind die billigsten der ganzen Liste** — von
-beiden liegt ein kleiner Export vor (2,0 bzw. 1,3 GB). Die lassen sich ganz
-laden, ohne das Tageslimit zu belasten. Der 33,2-GB-Rohschnitt von Curtis
-(`1X9I3dODNz8RqdMml801Gk2a4E2SdmzM-`, im Drive des Cutters) wird dafür nicht
-gebraucht.
+**Curtis Crane und Kyle Kingsbury sind die billigsten** — von beiden liegt ein
+kleiner Export vor (2,0 bzw. 1,3 GB), ganz ladbar, ohne das Tageslimit zu
+belasten. Der 33,2-GB-Rohschnitt von Curtis
+(`1X9I3dODNz8RqdMml801Gk2a4E2SdmzM-`, im Drive des Cutters) wird nicht gebraucht.
 
 **Whitney Wheelock liegt dreifach** — `(YNB)` 7,5 GB, `(Whit)` 7,5 GB,
-`(Whit & YNB)` 5,0 GB. Für diese Frage ist die Zweier-Kamera die richtige: sie
-zeigt beide, und das ist das Bild, das die Reihe braucht.
+`(Whit & YNB)` 5,0 GB. Die Zweier-Kamera ist die richtige: sie zeigt beide, und
+das ist das Bild, das die Reihe braucht.
 
-**Marian Goodell und Kyle Kingsbury sind unveröffentlicht.** Bei ihnen gibt es
-kein YouTube-Transkript, also läuft die Suche rückwärts vom Ende — der Weg aus
-`frage_am_ende.py`.
+**Dass fünf veröffentlichte Folgen den Master noch haben, ist kein Widerspruch
+zu seiner Aufräumregel** — gelöscht hat er genau die vier unten, nicht alle.
 
-### Master noch nicht gefunden
+### Marian Goodell — der Ton bricht ab
 
-| Gast | veröffentlicht | Länge | Stand |
+| Gast | Länge | Material |
+|---|---|---|
+| Marian Goodell | ~2 h | `1LVM5nxvxjMuSmsQlz1Jys_O32y8eYe0A` 18,5 GB · `1n4h-Qis-40e-cEcKd-hAhtyj_vgU4Hwk` (YNB-Kamera) 10,4 GB |
+
+**Sein Befund vom 21.10.:** die Kamera, die den Ton aufgenommen hat, ist nach
+etwa einer Stunde ausgegangen. Das Gespräch lief zwei Stunden, **und die Frage
+steht am Ende** — also genau in dem Teil ohne Kameraton. Der Ton vom iPhone
+muss darunter, so gut es geht.
+
+**Im Drive-Ordner `00 YNB Podcast: Marian Goodell` liegt keine Tonspur** —
+geprüft am 21.10., auch über eine Suche nach allen Audiodateien ab 01.10.: dort
+stehen nur Scott Aaronsons MP3s und Logans vier CAM-WAVs. **Die iPhone-Aufnahme
+fehlt, sie wird gebraucht.**
+
+Wenn sie da ist, ist der Weg technisch unspektakulär und messbar: die beiden
+Spuren über die **Kreuzkorrelation der Hüllkurve** im überlappenden ersten
+Stück ausrichten (das gibt den Versatz auf wenige Millisekunden, und es zeigt
+zugleich, ob das iPhone mit einer anderen Abtastrate gelaufen ist — dann driftet
+es über zwei Stunden hörbar auseinander und muss gedehnt werden, nicht nur
+verschoben). Danach Hochpass, Entzerrung, Pegel. **Was ich nicht verspreche:
+dass es wie Kameraton klingt.** Ein iPhone im Raum ist ein iPhone im Raum.
+Für ein Archivstück reicht es; ob es für die Reihe reicht, entscheidet sein Ohr.
+
+### Master gelöscht — veröffentlicht, Platz gespart
+
+| Gast | Folge | Länge | Stand |
 |---|---|---|---|
-| Francis Chouler | `swZGLesMb8Y` | 70:39 | Transkript-Doc da, **Short schon veröffentlicht** (1.300 Aufrufe), Videodatei nicht gefunden |
-| Rob Paddock | `ud5kr_LoqU4` (vermutlich) | 92:13 | keine Videodatei im Gästeordner |
-| Nathan Maingard | `cv-I2lkMebE` (vermutlich) | 114:41 | keine Videodatei im Gästeordner |
-| Danny Miranda | `23NNT7aMgL4` (vermutlich) | 78:54 | nur zwei kurze Clips im Ordner, kein Master |
+| Francis Chouler | `swZGLesMb8Y` | 70:39 | **Zeile fertig** (oben), Transkript liegt im Repo |
+| Rob Paddock | `ud5kr_LoqU4` (vermutlich) | 92:13 | kein Master, **kein Transkript** |
+| Nathan Maingard | `cv-I2lkMebE` (vermutlich) | 114:41 | kein Master, **kein Transkript** |
+| Danny Miranda | `23NNT7aMgL4` (vermutlich) | 78:54 | kein Master, **kein Transkript** |
 
-**Bei diesen vier liegt im Gästeordner keine Masterdatei.** Die veröffentlichte
-Folge selbst ist keine Quelle: YouTube antwortet auf die Videobytes mit 403,
-Metadaten und Untertitel gehen, die Mediendaten nicht. Zwei Wege bleiben — im
-Drive des Cutters weitersuchen (dort lagen Rob Bennett und Curtis Crane), oder
-ihn einmal fragen. **Das ist die einzige Stelle, an der es ohne ihn eventuell
-nicht weitergeht.**
+**Seine Erklärung vom 21.10.:** die vier sind veröffentlicht, deshalb liegen sie
+nicht mehr im Drive — Speicherplatz. Das ist nachvollziehbar und war nicht zu
+erraten.
 
-**Francis Chouler ist ein Sonderfall, und ein guter:** die Antwort ist als Short
-*„What Makes Life Meaningful? (Francis Michael)"* **schon veröffentlicht** und
-mit 1.300 Aufrufen sein viertstärkster. Das Stück existiert also — nur nicht als
-Datei, an die ich herankomme. Wenn er die Exportdatei hat, ist diese Zeile in
-fünf Minuten erledigt.
+**Was daran hängt: der Umweg über YouTube ist seit heute zu.** Am 19.10. hat
+`yt-transkript.py` die automatischen Untertitel ohne Anmeldung geholt — so
+kamen Sutcliffes und Francis' Transkripte ins Repo. Am 21.10. antwortet YouTube
+auf denselben Abruf mit **„Sign in to confirm you're not a bot"**. Vier
+Abspielclients durchprobiert: `web_safari` und `mweb` liefern noch Titel und
+Metadaten, aber **die Untertitelliste kommt leer zurück**; `android_vr` und der
+Standardclient fallen auf die Botprüfung. Die Kanalliste über
+`--flat-playlist` geht weiterhin — Metadaten ja, Untertitel nein.
 
-### Die Zuordnung ist teils erschlossen, nicht gemessen
+**Damit sind Rob Paddock, Nathan Maingard und Danny Miranda die einzigen drei
+Folgen, bei denen es ohne ihn nicht weitergeht.** Er besitzt die Videos; aus
+YouTube Studio heruntergeladen und in `YNB Podcast: Claude Creation` gelegt,
+sind sie in je zwanzig Minuten erledigt. **Eile hat es nicht** — geschnitten
+wird frühestens bei Folge 100.
 
-Wo oben **„vermutlich"** steht, habe ich die Folge über Titel, Länge und
-Gästeordner zugeordnet, nicht über eine Stelle im Video. Belegt sind Sutcliffe
-(Transkript geprüft), Francis Chouler (Transkript 70:35 gegen Video 70:39) und
-Curtis Crane (Dateiname). Die übrigen prüfe ich beim Schneiden mit — spätestens
-dann fällt auf, wenn ein Master nicht zur Folge gehört.
+### Die Zuordnung ist teils erschlossen
+
+Wo **„vermutlich"** steht, ist die Folge über Titel, Länge und Gästeordner
+zugeordnet, nicht über eine Stelle im Video. Belegt sind Sutcliffe (Transkript
+geprüft), Francis Chouler (Transkript 70:35 gegen Video 70:39) und Curtis Crane
+(Dateiname). Die übrigen prüfe ich beim Schneiden mit.
 
 ---
 
 ## Ob die Frage überhaupt in jeder Folge steht
 
-**Geprüft bei sieben von siebzehn.** Bei den sechs geschnittenen steht sie, bei
-Francis Chouler belegt der veröffentlichte Short sie. Bei den übrigen zehn ist
-sie **angenommen, nicht nachgewiesen** — er stellt sie als Abschlussfrage, und
-bei sechs von sechs lag sie in den letzten Minuten. Es kann Folgen geben, in
-denen sie fehlt; das fällt beim Suchen auf und wird dann hier als Fehlzeile
-vermerkt, nicht verschwiegen.
+**Belegt bei acht von siebzehn:** die sechs geschnittenen, Francis Chouler über
+das Transkript, und Marian Goodell, weil er es am 21.10. selbst gesagt hat.
+Bei den übrigen neun ist sie **angenommen, nicht nachgewiesen.** Fällt eine
+Folge aus, steht das hier als Fehlzeile, nicht verschwiegen.
 
 **Und das Ziel liegt weit:** 17 aufgenommene Folgen gegen 100. Diese Tabelle
-läuft also über Jahre weiter, und genau darum zählt sie mehr als die Dateien.
+läuft über Jahre weiter, und darum zählt sie mehr als die Dateien.
 
 ---
 
 ## Der Weg pro Folge
 
-1. **Veröffentlichte Folge:** YouTube-Transkript (`video/yt-transkript.py`) gibt
-   die Stelle wortgenau und kostenlos. Dann einen Anker in der Nähe suchen und
-   den Versatz dort messen — **nie über eine Formel**, das Tempo 1,1 gilt nur
-   lokal.
+1. **Veröffentlichte Folge mit Master:** Anker in der Nähe suchen, Versatz dort
+   messen — **nie über eine Formel**, Tempo 1,1 gilt nur lokal. Das
+   YouTube-Transkript als Vorsuche steht nicht mehr zur Verfügung (siehe oben),
+   also läuft auch hier die Suche über den Master.
 2. **Unveröffentlichte Folge:** rückwärts vom Ende in **210-Sekunden-Stücken**
    holen und transkribieren, bis das Muster trifft. Größere Fenster brechen
    vorzeitig ab und melden trotzdem Erfolg; `drive_fernzugriff.py` prüft
@@ -144,12 +214,11 @@ läuft also über Jahre weiter, und genau darum zählt sie mehr als die Dateien.
 4. **Format:** der abgenommene Sutcliffe-Stand — randlos, Versalien, gelbes
    Aktivwort, Logo 700 px auf 0,877, warmer Look, Tempo 1,2, `--laut aus`,
    `--dehnung atempo`. **Keine B-Rolls, keine Musik.**
-5. **Zeile hier eintragen**, Untertitel nach `video/shorts/`, Datei über
-   `SendUserFile`.
+5. **Zeile hier eintragen**, Untertitel nach `video/shorts/`, die drei Dateien
+   nach `YNB Podcast: Claude Creation`.
 
 **Das Drive-Tageslimit hängt am Eigentümer, nicht an der Datei** — am 20.10.
 waren nach rund 28 GB *alle* Dateien in seinem Ordner gesperrt. Ein Fenster
-kostet 200–260 MB, eine Folge also unter einem Gigabyte. Elf Folgen sind damit
-rechnerisch an einem Tag machbar; eingeteilt wird trotzdem über mehrere Tage,
-weil ein Fehlversuch pro Folge zwei bis drei Fenster kostet und das Limit nicht
-vorher sichtbar ist.
+kostet 200–260 MB, eine Folge also unter einem Gigabyte. Eingeteilt wird
+trotzdem über mehrere Tage, weil ein Fehlversuch zwei bis drei Fenster kostet
+und das Limit nicht vorher sichtbar ist.
