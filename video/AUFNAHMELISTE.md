@@ -2,7 +2,7 @@
 
 **Stand 21.10.2026.** Alle Kennungen, Kanäle und Laufzeiten geprüft, alle
 Zeitangaben an den Vorschaustreifen der Videos abgelesen.
-Link ist immer `https://www.youtube.com/watch?v=<Kennung>`.
+Alle Links sind vollständig und anklickbar.
 
 > **Es sind zwei getrennte Shorts, und sie werden nicht vermischt.**
 >
@@ -13,26 +13,22 @@ Link ist immer `https://www.youtube.com/watch?v=<Kennung>`.
 
 ---
 
-## 1 · Für den Tate-Short — eine einzige Aufnahme
+## 1 · Für den Tate-Short — Sutcliffes eigene Interviews mit Tate
 
-**`3NexOrW0uew`** · Tracy Harmoush · 2:30:02
-**Aufnehmen: 20:00–25:00** (fünf Minuten).
+**Korrektur vom 21.10.:** hier stand vorher ein fremdes Tate-Interview
+(Tracy Harmoush). **Das war falsch.** Der Short ist Sutcliffe, der auf
+*sein* Interview mit Tate zurückblickt — die Bilder müssen aus genau diesem
+Interview kommen. Es gibt zwei, beide auf Sutcliffes eigenem Kanal:
 
-Warum fünf und nicht zwei: ich brauche hier **fünf Blöcke**, nicht einen.
-Fünf Minuten geben genug verschiedene Haltungen, Gesten und Mienen, damit die
-Blöcke nicht alle gleich aussehen.
+| | Link | Länge |
+|---|---|---|
+| **Round 2** — der Link aus Deinem Folgendokument | https://www.youtube.com/watch?v=sYj0exUT_Mw | 2:12:53 |
+| **Round 1** | https://www.youtube.com/watch?v=2ELmm02-jCQ | 1:25:36 |
 
-* Gemessene Sättigung **0,38** — der mit Abstand ruhigste Schnitt im ganzen
-  Feld. Lange Einstellungen, keine Sekundenschnitte.
-* Das Zeichen „WHAT THEY DON'T TELL US" steht **unten links** und fällt beim
-  Ausschnitt aus der Bildmitte heraus.
-* **Zu meiden: 59:52, 146:22, 148:42** — dort steht die Totale mit beiden im
-  Bild, die überlebt den 9:16-Beschnitt nicht.
-
-**Falls Du einen zweiten Blickwinkel willst:** `Ini9zM8A6r0` (RattlesnakeTV,
-21:18, Monolog über Maskulinität), drei Minuten irgendwo. **Ungeprüft** —
-YouTube weist die Messung dieser Kennung seit heute früh ab. Ich sehe sie mir
-an, sobald die Aufnahme da ist.
+**Zeitangaben fehlen hier noch.** YouTube weist die Vorschaustreifen dieser
+beiden Kennungen seit dem Nachmittag ab; ich messe sie, sobald es wieder
+durchgeht. Bis dahin: **Round 2, irgendwo in der ersten halben Stunde, fünf
+Minuten**, in denen beide im Bild sind und Tate spricht.
 
 ### Wo die Einspieler hinkommen
 
@@ -60,34 +56,34 @@ trägt auch Block 3.
 
 | Block | Quelle | Kennung | **aufnehmen** |
 |---|---|---|---|
-| **1** · *„the tendency to completely suppress"* | Marty Supreme | `xI8OpQNuFvg` | **0:15–1:40** |
-| **1** | Wolf of Wall Street | `LwG6aia2vn0` | **0:00–5:00** |
-| **2** · *„most men are too afraid to touch"* | **Taxi Driver** | `ak3ma7wtE_0` | **3:20–4:45** |
-| **2** | Wall Street | `OHnZi87272U` | **3:15–4:00** |
+| **1** · *„the tendency to completely suppress"* | Marty Supreme | https://www.youtube.com/watch?v=xI8OpQNuFvg | **0:15–1:40** |
+| **1** | Wolf of Wall Street | https://www.youtube.com/watch?v=LwG6aia2vn0 | **0:00–5:00** |
+| **2** · *„most men are too afraid to touch"* | **Taxi Driver** | https://www.youtube.com/watch?v=ak3ma7wtE_0 | **3:20–4:45** |
+| **2** | Wall Street | https://www.youtube.com/watch?v=OHnZi87272U | **3:15–4:00** |
 | **3** · *„the Andrew Tates of this world"* | — | — | *aus Teil 1* |
-| **4** · *„fear hidden behind a mask"* | Batman | `JlELZSdfWKs` | **8:20–13:00** |
-| **4** · *„a man who can crack open"* | **Good Will Hunting** | `ZQht2yOX9Js` | **ganz (3:55)** |
-| **5** · *„most men have neither"* | Rocky | `Tc7H9s4PdSI` | **1:35–2:20** |
-| **5** | Pursuit of Happyness | `CPpwXZA9p0Q` | **5:40–7:00** |
+| **4** · *„fear hidden behind a mask"* | Batman | https://www.youtube.com/watch?v=JlELZSdfWKs | **8:20–13:00** |
+| **4** · *„a man who can crack open"* | **Good Will Hunting** | https://www.youtube.com/watch?v=ZQht2yOX9Js | **ganz (3:55)** |
+| **5** · *„most men have neither"* | Rocky | https://www.youtube.com/watch?v=Tc7H9s4PdSI | **1:35–2:20** |
+| **5** | Pursuit of Happyness | https://www.youtube.com/watch?v=CPpwXZA9p0Q | **5:40–7:00** |
 
 **Zusammen rund 20 Minuten.** Ohne die Zeitangaben wären es 88 gewesen.
 
 ### Die drei wichtigsten davon, falls die Zeit knapp ist
-1. **`ZQht2yOX9Js`** Good Will Hunting — Miramax, offiziell, kein Zeichen, und
+1. **https://www.youtube.com/watch?v=ZQht2yOX9Js** Good Will Hunting — Miramax, offiziell, kein Zeichen, und
    als einzige Quelle mit **gemessen langen Einstellungen** (Sättigung 0,61).
-2. **`ak3ma7wtE_0`** Taxi Driver — Sättigung **0,53**, die längsten
+2. **https://www.youtube.com/watch?v=ak3ma7wtE_0** Taxi Driver — Sättigung **0,53**, die längsten
    Einstellungen im ganzen Feld. Ab 3:25 der Spiegelmonolog: achtzig Sekunden
    fast ohne Schnitt, ein Mann allein im Zimmer, der Härte probt.
-3. **`xI8OpQNuFvg`** Marty Supreme — 4K, kein Zeichen, keine Endtafel.
+3. **https://www.youtube.com/watch?v=xI8OpQNuFvg** Marty Supreme — 4K, kein Zeichen, keine Endtafel.
 
 ### Was an diesen Quellen zu beachten ist
-* **Batman `JlELZSdfWKs`:** nur 8:20–13:00 ist brauchbar. Der Rest ist fast
+* **Batman https://www.youtube.com/watch?v=JlELZSdfWKs:** nur 8:20–13:00 ist brauchbar. Der Rest ist fast
   durchgehend Nachtszenen und auf dem Telefon eine dunkle Fläche.
-* **Rocky `Tc7H9s4PdSI`:** **ab 2:20 kommen 35 Sekunden Movieclips-Endtafeln.**
+* **Rocky https://www.youtube.com/watch?v=Tc7H9s4PdSI:** **ab 2:20 kommen 35 Sekunden Movieclips-Endtafeln.**
   Nicht mitaufnehmen.
-* **Wall Street `OHnZi87272U`:** die ersten drei Minuten sind nur Totalen des
+* **Wall Street https://www.youtube.com/watch?v=OHnZi87272U:** die ersten drei Minuten sind nur Totalen des
   Saals. Die letzten 20 Sekunden sind eine JoBlo-Endtafel.
-* **Wolf of Wall Street `LwG6aia2vn0`:** Binge Society brennt sein Logo **oben
+* **Wolf of Wall Street https://www.youtube.com/watch?v=LwG6aia2vn0:** Binge Society brennt sein Logo **oben
   links** ein. Beim randlosen Ausschnitt aus der Mitte fällt es heraus.
 
 ---

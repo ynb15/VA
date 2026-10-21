@@ -9,3 +9,10 @@ __pycache__/
 #   outro_16_9.mov  -> 1TG-PSYPsxAE3N_QvcTxOvIvIKsGCq5l4  (fuer Clips)
 video/marke/*.mov
 video/marke/*.MOV
+
+# YouTube-Zugangsdaten fuer yt-dlp. Ein Cookie-Export ist eine
+# angemeldete Sitzung - wer die Datei hat, ist eingeloggt. Sie darf nie
+# ins Repo, auch nicht versehentlich mit "git add -A".
+*cookies*.txt
+*cookies*
+cookies/
