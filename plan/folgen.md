@@ -20,7 +20,7 @@ ohne eine einzige neue Aufnahme. Das Nadelöhr ist also nicht das Material.
 | Termin | Gast | Aufnahme | Drive-Ordner | Was schon da ist |
 |---|---|---|---|---|
 | **So 25.10.** | **Scott Aaronson** | 21.08.2026 | `1fv8Jw8v0IwN7kGiLQ-WHSjwXsYpVtkSb` | Transkript (1504 Segmente, 102:13) · 8 Short-Kandidaten · 1 Short gebaut · **9 Thumbnails** · Beschreibung A+B (laufzeitabhängig) · Titel + Thumbnail-Zeilen |
-| **Sa 31.10.** | **Kyle Kingsbury** | 31.08.2026 | `1Y7-B2vZn1WFXINQamcnjRMgCM6Ztvust` | Thumbnail-Material nachgemessen (`397e9b8`) · Transkript läuft seit 21.10. |
+| **Sa 31.10.** | **Kyle Kingsbury** | 31.08.2026 | `1Y7-B2vZn1WFXINQamcnjRMgCM6Ztvust` | Transkript läuft seit 21.10. · **Thumbnail macht er selbst über ChatGPT** — am 21.10. so angewiesen, der Stichtag T−5 entfällt |
 | **Fr 13.11.** | **Rick Strassman** | 18.09.2026 | `1OKUFDBDyeEqV7iwypV5Q-vyQi7WL9b_C` | Meaningful-Stück (**Ende offen, seine Entscheidung**) |
 | **Fr 27.11.** | **Matt Defina** | 04.09.2026 | `1K2cpLvNJ6mrR8Xg7qyhRzgjqSNZCmAIw` | Meaningful-Stück |
 | **Fr 04.12.** | **Marian Goodell** | 06.10.2026 | `1Stnn8uXZO_sWkx-c0CKR6NE9RbXi0elX` | — · **offene Frage von ihr zum Transkript seit 13.10. — vor dem 04.12. zu klären** |

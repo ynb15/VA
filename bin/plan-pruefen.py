@@ -20,10 +20,13 @@ PODCASTS = {
     datetime.date(2026, 11, 27): "Matt Defina",
     datetime.date(2026, 12,  4): "Marian Goodell",
 }
+# Ausnahmen: Folge -> Fristen, die fuer sie nicht gelten (von ihm so entschieden)
+ENTFAELLT = {"Kyle Kingsbury": {5}}   # Thumbnail macht er selbst ueber ChatGPT, 21.10.
+
 VORLAUF = [(10, "Transkript",                   "content-schlicht"),
            (8,  "Clip- und Short-Auswahl",      "content-schlicht"),
            (6,  "Titel · Beschreibung · Tags",  "youtube-manager"),
-           (5,  "Thumbnails",                   "thumbnails"),
+           (5,  "Thumbnails",                   "thumbnails"),   # Kingsbury: entfaellt, er macht es selbst
            (3,  "Shorts gebaut",                "content-schlicht + content-cinematic"),
            (2,  "Paket vollständig bei ihm",    "alfred")]
 
@@ -49,6 +52,8 @@ print("\nFRISTEN:")
 etwas = False
 for pd in sorted(PODCASTS):
     for tage, was, wer in VORLAUF:
+        if tage in ENTFAELLT.get(PODCASTS[pd], set()):
+            continue
         frist = pd - datetime.timedelta(days=tage)
         rest = (frist - heute).days
         if -1 <= rest <= 3:

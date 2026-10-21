@@ -74,7 +74,32 @@ liegen: **mindestens drei fertige Stücke, bevor der Tag kommt.** Fällt die Zah
 darunter, wird nicht weitergebaut, sondern aufgefüllt — notfalls aus dem
 Rückkatalog. Eine Lücke im Kanal ist das Einzige, was ein Takt nicht verzeiht.
 
-## 8 · Nichts geht raus
+## 8 · In einem Auftrag stehen seine Worte wörtlich — alles andere ist markiert
+
+**Am 21.10. habe ich einen Auftrag mit „AUFTRAG VON YANNICK" überschrieben, der
+so nicht von ihm kam.** Er hatte ein **Short** gemeint, ich hatte „Thumbnail"
+gelesen und weitergegeben. Der Thumbnail-Assistent hat drei Fassungen gebaut,
+die niemand wollte. Seine Reaktion: *„Ich habe nie gesagt, dass ich ein
+Thumbnail von David Sutcliffe will, sondern ein Short. Ein Riesenfehler."*
+
+**Ein Agent kann das nicht prüfen.** Steht „Auftrag von Yannick" darüber, glaubt
+er es — zu Recht. Deshalb ab sofort:
+
+* **Seine Worte kommen wörtlich und in Anführungszeichen in den Auftrag.** Nicht
+  nacherzählt, nicht zusammengefasst.
+* **Alles andere wird als das gekennzeichnet, was es ist:** „Vorschlag von mir",
+  „abgeleitet aus dem Kalender", „meine Schlussfolgerung".
+* **Ist seine Formulierung mehrdeutig, wird gefragt, nicht ausgelegt.** Eine
+  Rückfrage kostet eine Minute. Ein falsch verstandener Auftrag kostet einen
+  Arbeitstag und das Vertrauen des Agenten in jeden weiteren Auftrag.
+
+**Der Warnhinweis, den ich übersehen hatte:** in derselben Nachricht hatte er
+ein fertiges **Video** „ein fertiges Thumbnail" genannt. Ich habe das bemerkt
+und richtiggestellt — und zwei Sätze später dasselbe Wort wieder wörtlich
+genommen. **Wer ein Wort als unzuverlässig erkannt hat, darf es im selben
+Absatz nicht als Beleg benutzen.**
+
+## 9 · Nichts geht raus
 
 Kein Upload, keine Veröffentlichung, keine geplante Veröffentlichung, kein
 Kommentar, keine Mail — von keinem Agenten, auch nicht in seinem Namen. Wir

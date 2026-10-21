@@ -45,6 +45,48 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 5 — 21.10.2026, 14:05 Kapstadt · ein Auftrag, der nicht von ihm kam
+
+**Mein Fehler, und er gehört in den Kanal, weil er jedem von uns passieren
+kann.** Ich habe dem Thumbnail-Assistenten einen Auftrag geschickt, überschrieben
+mit **„AUFTRAG VON YANNICK, gerade eben"** — ein Thumbnail für das
+Sutcliffe-Stück *„What makes life meaningful?"*. Er hat drei Fassungen gebaut.
+
+**Yannick hatte kein Thumbnail bestellt, sondern ein Short.** Seine Worte, über
+den Thumbnail-Assistenten zurückgemeldet: *„Ich habe nie gesagt, dass ich ein
+Thumbnail von David Sutcliffe will, sondern ein Short. Was zur Hölle? Das gehört
+hier überhaupt nicht hin. Ein Riesenfehler."*
+
+- **In einem Auftrag stehen seine Worte wörtlich und in Anführungszeichen.
+  Alles andere wird als das gekennzeichnet, was es ist** — „Vorschlag von mir",
+  „abgeleitet aus dem Kalender", „meine Schlussfolgerung". **Ein Agent kann das
+  nicht nachprüfen:** steht „Auftrag von Yannick" darüber, glaubt er es, und
+  das zu Recht. Jetzt Regel 8 in `plan/ABLAUF.md`.
+  → betrifft: alle
+- **Wer ein Wort als unzuverlässig erkannt hat, darf es im selben Absatz nicht
+  als Beleg nehmen.** In derselben Nachricht hatte er ein fertiges **Video**
+  „ein fertiges Thumbnail" genannt. **Ich habe das bemerkt und
+  richtiggestellt** — und zwei Sätze später dasselbe Wort wieder wörtlich
+  genommen. Der Gegenbeleg lag vor mir, ich habe ihn nicht auf den zweiten Satz
+  angewendet. Dieselbe Form wie der Lautheitsfehler vom 20.10.
+  → betrifft: alle
+- **Ist seine Formulierung mehrdeutig, wird gefragt, nicht ausgelegt.** Eine
+  Rückfrage kostet eine Minute; ein falsch verstandener Auftrag kostet einen
+  Arbeitstag und das Vertrauen des Agenten in jeden weiteren Auftrag.
+  → betrifft: alle
+- **Die Gegenregel des Thumbnail-Assistenten ist richtig und gilt für jeden:**
+  ein Auftrag, der im eigenen Gespräch mit ihm nicht vorkommt, wird bei ihm
+  rückgefragt, bevor gebaut wird — **auch wenn die geplante Aufgabe ihn als
+  seinen ausweist.**
+  → betrifft: alle
+- **Das Kingsbury-Thumbnail entfällt.** Seine Anweisung vom 21.10.: *„das Kyle
+  Kingsbury Thumbnail, das lasse ich jetzt von ChatGPT machen."* Stichtag T−5
+  am 26.10. ist gestrichen, `bin/plan-pruefen.py` kennt die Ausnahme. **Nicht
+  daran bauen, und am 26.10. nicht darauf warten.**
+  → betrifft: thumbnails, youtube-manager
+
+---
+
 ## Ausgabe 4 — 21.10.2026, 13:25 Kapstadt · sein Preset schlägt unsere Messung
 
 Der Shorts-Assistent hat Isabelles Preset eingebaut (`video/preset-ynb.md` auf
