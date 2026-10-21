@@ -414,3 +414,14 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   Das sind 2,65 MB je Sekunde gegen **3,67 MB je Sekunde** — ein Unterschied
   von 38 %. **Pro Studio und Kameraformat neu messen.**
   → betrifft: content-*, head-of-content
+
+- **Nachtrag zum Nachtrag, 13:20: dieselbe falsche Hochrechnung stand zweimal
+  im Skript, und ich habe nur eine Stelle behoben.** Stufe 3 war korrigiert,
+  Stufe 2 nicht — dort entschied `a > 0.9 * GROESSE / 107` (= 143 MB), ob ein
+  vorhandenes FLAC brauchbar ist. Das fertige Kingsbury-FLAC hat **68 MB**,
+  wurde darum gelöscht, und der 46-Minuten-Abruf lief ein viertes Mal.
+  **Die Regel: eine Annahme, die man als falsch erkannt hat, wird im ganzen
+  Skript gesucht, nicht an der Stelle behoben, wo sie aufgefallen ist.**
+  `grep` nach der Zahl, bevor man neu startet — bei mir hätte ein `grep 107`
+  die zweite Stelle in einer Sekunde gezeigt.
+  → betrifft: alle
