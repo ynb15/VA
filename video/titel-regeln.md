@@ -1,7 +1,8 @@
 # Titel, Beschreibungen, Thumbnail-Copy — die Regelliste
 
 **Für `youtube-manager`, `thumbnails` und jeden, der Copy schreibt.** Das ist die
-anwendbare Kurzform. Die Messungen dahinter: `video/vorbilder.md` (438 Titel),
+anwendbare Kurzform. Die Messungen dahinter: `video/vorbilder.md` (538 Titel, fünf
+Vorbildkanäle),
 `voice/substack-register.md` (sein geschriebenes Register), `video/thumbnails.md`
 (sein Thumbnail-Bauplan), `voice/de-register.md` / `voice/en-podcast-outreach.md` (Mail).
 
@@ -23,8 +24,8 @@ Liste. Sein Ohr sticht die Tabelle.
 
 | | Regel | Beleg |
 |---|---|---|
-| **Länge** | 45–65 Zeichen. Seine bisherigen: Median 54. DOAC fährt 77,5, das ist das obere Ende | 438 Titel |
-| **Kein `(4K)`, kein `(8K)`** | In 400 Vorbildtiteln kommt ein technischer Tag **einmal** vor. Bei ihm in 8 von 38. **Raus.** | §4 |
+| **Länge** | 45–65 Zeichen. Seine bisherigen: Median 54. DOAC 77,5 und Neel 85,5 sind das obere Ende — **Neel schreibt an den Anschlag** (27 Titel ab 95 Zeichen, 7 bei genau 100); das würde ich nicht nachmachen, YouTube kappt früher | 538 Titel |
+| **Kein `(4K)`, kein `(8K)`** | In 500 Vorbildtiteln kommt ein Auflösungs-Tag **einmal** vor. Bei ihm in 8 von 38. **Raus.** | §4 |
 | **Klammer, wenn überhaupt, hält den Ausweg** | `(and how to reverse it)` · `(Do THIS Instead)` · `(Here Is The Truth)`. Nie eine Produktionsangabe | 38 von 39 Vorbild-Klammern |
 | **Kein Fragezeichen** | 1–7 % bei den Vorbildern, 0 % bei ihm. Nicht einführen, ohne Grund | — |
 | **Keine Dreier-Aufzählung** | DOAC zählt nie drei Themen auf. Seins tut es (*„Burning Man, Bobby Kennedy & Black Holes"*). Eine Behauptung trägt weiter als drei Stichwörter | — |
@@ -50,36 +51,66 @@ Gast BEKANNT:     <Name>: <Behauptung, die er aufstellt>
 **keinem einzigen**. Gemessen: Rolle-mit-Name-hinten DOAC 14, er 0.
 **Der zweite Slot ist frei und kostet nichts.** Er ist auch der Platz, wo `(4K)` stand.
 
+**Womit der zweite Slot gefüllt wird, ist allerdings nicht einig** — nachgemessen an allen
+fünf: DOAC und Williamson setzen den **Gast** hinein (23 bzw. 47 von 100), Neel und Shetty
+die **eigene Marke** (`… │ Jack Neel` 21 von 100; Shettys Name in 53 von 100).
+**Drei von fünf stempeln sich selbst, zwei den Gast. Keiner eine Produktionsangabe.**
+Belegt ist: der Slot ist nicht leer und nicht technisch. Bei 509 Abos trägt ein Gastname
+vermutlich weiter als ein eigener Kanalstempel — **vermutlich, nicht gemessen.**
+
 Namen, die in seine Titel gehören und bisher fehlen: *Rob Paddock* · *Dr. Curtis Crane* ·
 *Nathan Maingard* · *Rob Bennett* · *Eben Britton* · *Kyle Kingsbury* · *Scott Aaronson*.
 
 ---
 
-## D. Die Du-Ansprache. Gemessen, und mit dem Vorbehalt dazu.
+## D. Zwei Wege, nicht einer. **Korrigiert am 21.10., nachdem der fünfte Kanal dazukam.**
 
-Du-Ansprache (`you/your/yourself`) in den letzten 100 Titeln je Kanal:
+**Die erste Fassung dieser Liste sagte: drei von vier Vorbildern sprechen den Zuschauer an,
+also mehr Du-Ansprache.** Mit Jack Neel (`@jackneel`, 3,52 Mio, 100 Titel) stimmt das nicht
+mehr so.
 
-| Shetty | Manson | DOAC | Williamson | **er** |
-|---:|---:|---:|---:|---:|
-| 55 % | 49 % | 41 % | 14 % | **13 %** |
+| | Du-Ansprache | Ich/Wir | Zitat im Titel | davon mit `!` im Zitat |
+|---|---:|---:|---:|---:|
+| Shetty | 55 % | 6 % | 1 % | 0 |
+| Manson | 49 % | 11 % | 2 % | 0 |
+| DOAC | 41 % | 23 % | 5 % | 2 |
+| **Neel** | **18 %** | **27 %** | **58 %** | **50** |
+| Williamson | 14 % | 16 % | 29 % | **0** |
+| **er** | **13 %** | **36 %** | **5 %** | **0** |
 
-Ich/Wir umgekehrt: **er 36 %**, mehr als jeder Vorbildkanal (Shetty 6 %).
+**Jeder der fünf löst die Aufmerksamkeitsfrage im ersten Drittel des Titels — auf einem
+von zwei Wegen:**
 
-**Williamson kommt mit 14 % aus, weil in 52 % seiner Titel ein Name steht, der allein
-zieht** (Robert Greene, Huberman, Tony Robbins). Bei 509 Abos und weitgehend unbekannten
-Gästen ist diese Position nicht da.
+**Weg A — ein Versprechen an den Zuschauer.** Shetty, Manson, DOAC. 41–55 % Du.
+> `Why Watching Porn Ruins Your Brain (and how to reverse it)`
 
-**Was daraus folgt — und was nicht.** Belegt ist der Abstand. **Nicht belegt ist, dass
-mehr Du-Ansprache seine Zahlen hebt**: bei 38 Videos, davon 8 ohne öffentliche
-Aufrufzahl, ist jede Korrelation Titelform↔Reichweite Zufall. Klickrate und Impressionen
-stehen öffentlich nicht da. **Also: „weicht ab", nie „wirkt besser."**
+**Weg B — eine Behauptung, die jemand aufstellt.** Williamson über den Namen (52 % Namen),
+**Neel über Rolle plus wörtlich zitierten Ruf**:
+> `Divorce Lawyer: "90% Of People Cheat!" Here's What Actually Ends Marriages in 2026`
+> `Surveillance Expert: "I'll Go to Jail for This!" The Hacker Exposing America's Secret Spy Network`
+
+**Er geht keinen von beiden:** 13 % Du, Name in 13 % — und in 36 % der Titel steht er
+selbst. **Das ist die Position, die keiner der fünf besetzt.** Das ist der Befund; „mehr
+Du" ist nur eine von zwei belegten Antworten darauf.
+
+**Weg B ist für ihn der billigere.** Neel hält die Ich-Form oben (27 %) und kommt trotzdem
+ohne Du-Versprechen aus, weil Rolle und Zitat die Arbeit machen. **Die Rolle beherrscht er
+schon** (*Men's Therapist*, *Tantra Guru*, *$100M Founder* — 13 von 38 Titeln). **Was
+fehlt, ist der Ruf in Anführungszeichen** — und den hat er, in jeder Aufnahme. Sein Kanal
+trägt zwei zitierende Titel, beide **ohne** Ausrufezeichen:
+*'I Didn't Believe In Past Lives – Until THIS Happened'* und
+*Ex-NFL Star: "I Lived My Dream at 27 – Then I Wanted to Die"*.
+
+**Der Unterschied Neel ↔ Williamson ist das Ausrufezeichen im Zitat, und er ist absolut:
+Neel 50, alle vier anderen zusammen 2.** Williamson zitiert ruhig, Neel ruft.
 
 **Die Ich-Form ist nicht grundsätzlich falsch.** `10 Life Lessons I Learned at AfrikaBurn`
-ist sein drittbestes Video (2.200) und genau Mansons Form (*33 Things Everyone Should Know
-How To Do*). Für **Soloformate** ist Ich richtig. Für **Interviews** ist es der Platz, auf
-dem der Gast stehen sollte.
+ist sein drittbestes Video (2.200) und genau Mansons Form. Für **Soloformate** ist Ich
+richtig. Für **Interviews** ist es der Platz, auf dem der Gast oder sein Satz stehen sollte.
 
----
+**Der Vorbehalt bleibt derselbe.** Belegt ist der Abstand. **Nicht belegt ist, dass
+irgendeiner der Wege seine Zahlen hebt**: 38 Videos, 8 ohne öffentliche Aufrufzahl,
+Klickrate und Impressionen stehen öffentlich nicht da. **„Weicht ab", nie „wirkt besser."**
 
 ## E. Zwei Messfallen. Hier laufe man nicht hinein.
 
@@ -145,7 +176,7 @@ Wörter. **Ungeprüft bleibt, ob „MYSTIC" für sein Publikum trägt** — das 
 
 ## H. Beschreibungen
 
-Hier habe ich **nichts gemessen.** Ich habe 438 Titel gezogen, keine Beschreibungen —
+Hier habe ich **nichts gemessen.** Ich habe 538 Titel gezogen, keine Beschreibungen —
 `--flat-playlist` liefert sie nicht. **Wer eine Beschreibungsregel braucht, bekommt von
 mir bisher keine belegte.** Was aus dem geschriebenen Register übertragbar ist, weil es
 sprachübergreifend belegt ist:

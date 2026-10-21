@@ -3,9 +3,10 @@
 **Gemessen:** Di 21.10.2026 · `yt-dlp --flat-playlist`, je die **letzten 100 Titel**
 der Videos-Reiter, ohne API-Schlüssel. Sein eigener Kanal liefert 38 lange Videos —
 mehr hat er nicht, deshalb stehen dort 38 gegen 100.
-**Grundgesamtheit: 438 Titel.**
+**Grundgesamtheit: 538 Titel.**
 
-Vorbilder von ihm am 21.10. benannt. Vier sind gemessen:
+Vorbilder von ihm am 21.10. benannt. **Alle fünf sind gemessen** (der fünfte am
+21.10. nachgetragen, siehe unten):
 
 | Kanal | Handle | Abos | Titel gezogen |
 |---|---|---:|---:|
@@ -13,31 +14,39 @@ Vorbilder von ihm am 21.10. benannt. Vier sind gemessen:
 | Diary of a CEO (Steven Bartlett) | `@TheDiaryOfACEO` | 20.700.000 | 100 |
 | Mark Manson | `@IAmMarkManson` | 3.170.000 | 100 |
 | Jay Shetty | `@JayShetty` | 4.890.000 | 100 |
+| Jack Neel | `@jackneel` | 3.520.000 | 100 |
 | **Yannick N. Bernard** | `@yannick-noah` | 509 | **38** |
 
-**Der fünfte fehlt.** „Jack Neal" ist so nicht auffindbar. `@JayShettyPodcast` gibt
-es übrigens auch nicht — der richtige Handle ist `@JayShetty`. Die nächstliegende
-Spur zum fünften ist ein **Jack Neel** (Podcast über Crime, Business, Psychologie,
-Instagram `@jackhneel`, Los Angeles) — **einen YouTube-Kanal dazu habe ich nicht
-verifiziert, und ich rate nicht.** Sobald er sagt, wen er meint, kommt der Kanal hier
-mit denselben Zahlen dazu.
+**Der fünfte heißt Jack Neel, nicht „Jack Neal".** Am 21.10. nachgetragen und
+eigenhändig geprüft: `@jackneel`, Kanal-ID `UCFRCiFkWWJN2rO6dsKU9-1A`, **3,52 Mio Abos**,
+100 Titel gezogen. Damit sind alle fünf gemessen, Grundgesamtheit **538 Titel**.
+
+> Chronik, weil sie zur Methode gehört: ich hatte am Vormittag gesucht, keinen Kanal
+> gefunden und „nicht verifizierbar, ich rate nicht" notiert. Richtig war, nicht zu raten —
+> **falsch war, nicht zu fragen.** Die Antwort lag seit dem Vormittag bei Alfred im
+> Handbuch, weil Yannick den Link selbst geschickt hatte. Nachgetragen über den Lernkanal.
+
+Nebenbefund: `@JayShettyPodcast` gibt es nicht (HTTP 404), der richtige Handle ist
+`@JayShetty`.
 
 ---
 
 ## 1. Was gemessen wurde
 
-| | Williamson | DOAC | Manson | Shetty | **YNB** |
-|---|---:|---:|---:|---:|---:|
-| Titel | 100 | 100 | 100 | 100 | **38** |
-| Zeichen, Median | 55 | 77,5 | 43 | 63 | **54** |
-| Wörter, Median | 10 | 13 | 8 | 12 | **9,5** |
-| **Du-Ansprache** (`you/your/yourself`) | 14 % | 41 % | 49 % | 55 % | **13 %** |
-| **Ich/Wir** (`I/my/me/we/our`) | 16 % | 23 % | 11 % | 6 % | **36 %** |
-| Versalwort (≥3 Großbuchstaben) | 5 % | 26 % | 1 % | 50 %¹ | **28 %** |
-| Doppelpunkt | 13 % | 97 % | 11 % | 1 % | **37 %** |
-| Gastname im Titel² | 52 % | 65 % | 5 %³ | 36 % | **13 %** |
-| Fragezeichen | 6 % | 6 % | 7 % | 1 % | **0 %** |
-| Auflösungs-Tag `(4K)`/`(8K)` | 1 % | 0 % | 0 % | 0 % | **21 %** |
+| | Williamson | DOAC | Manson | Shetty | **Neel** | **YNB** |
+|---|---:|---:|---:|---:|---:|---:|
+| Titel | 100 | 100 | 100 | 100 | 100 | **38** |
+| Zeichen, Median | 55 | 77,5 | 43 | 63 | **85,5** | **54** |
+| Wörter, Median | 10 | 13 | 8 | 12 | 14 | **9,5** |
+| **Du-Ansprache** (`you/your/yourself`) | 14 % | 41 % | 49 % | 55 % | **18 %** | **13 %** |
+| **Ich/Wir** (`I/my/me/we/our`) | 16 % | 23 % | 11 % | 6 % | **27 %** | **36 %** |
+| Versalwort (≥3 Großbuchstaben) | 5 % | 26 % | 1 % | 50 %¹ | 24 % | **28 %** |
+| Doppelpunkt | 13 % | 97 % | 11 % | 1 % | 50 % | **37 %** |
+| **Zitat im Titel** | 29 % | 5 % | 2 % | 1 % | **58 %** | **5 %** |
+| davon mit `!`/`?` **im** Zitat | 0 | 2 | 0 | 0 | **50** | **0** |
+| Gastname im Titel² | 52 % | 65 % | 5 %³ | 36 % | s. §2a | **13 %** |
+| Fragezeichen | 6 % | 6 % | 7 % | 1 % | 2 % | **0 %** |
+| Auflösungs-Tag `(4K)`/`(8K)` | 1 % | 0 % | 0 % | 0 % | 0 % | **21 %** |
 
 ¹ Bei Shetty ist das fast immer seine eigene Marke in Versalien (`JAY SHETTY`), nicht ein
 betontes Wort — **53 der 100 Titel enthalten „Jay Shetty", 52 enthalten „watch".**
@@ -47,29 +56,82 @@ Vergleichsgröße für **Yannicks eigene Soloformate**, nicht für seine Intervi
 
 ---
 
-## 2. Der auffälligste Unterschied: seine Titel sprechen von ihm, ihre sprechen zu Dir
+## 2. Der auffälligste Unterschied — nach Neel neu gefasst
 
-Das ist die Zahl, die am weitesten auseinanderliegt, und sie geht in beide Richtungen
-gleichzeitig:
+**Die erste Fassung dieses Abschnitts lautete: „drei von vier Vorbildern sprechen den
+Zuschauer an, er nicht."** Mit Neel stimmt die Zählung nicht mehr, und die Erklärung war
+zu schmal. Neu, an fünf Kanälen:
 
-* **Du-Ansprache:** Shetty 55 %, Manson 49 %, DOAC 41 % — **er 13 %** (5 von 38).
-* **Ich/Wir:** **er 36 %** (14 von 38) — mehr als jeder Vorbildkanal, Shetty 6 %.
+| | Du-Ansprache | Ich/Wir |
+|---|---:|---:|
+| Shetty | 55 % | 6 % |
+| Manson | 49 % | 11 % |
+| DOAC | 41 % | 23 % |
+| **Neel** | **18 %** | **27 %** |
+| Williamson | 14 % | 16 % |
+| **er** | **13 %** | **36 %** |
 
-Also: bei drei von vier Vorbildern steht in etwa jedem zweiten Titel ein Versprechen an
-den Zuschauer. Bei ihm steht in jedem dritten Titel **er selbst**: *I lived the last year
-of my life* · *Iboga Taught Me To Love Hitler* · *How Psychedelics Made Me Face My Dad
-after 18 Years* · *Living My Dream Life in Cape Town at 26 y/o* · *The Last Year Of My
-Life* · *10 Life Lessons I Learned at AfrikaBurn*.
+**Es sind also drei von fünf, nicht drei von vier.** Und Neel ist der unbequeme Fall: bei
+18 % Du und 27 % Ich/Wir sitzt er direkt neben ihm — mit 3,52 Mio Abos.
 
-**Williamson ist die Ausnahme — und das ist kein Gegenbeweis, sondern die Bedingung.**
-Er hat 14 % Du-Ansprache, weil in 52 % seiner Titel ein **Name** steht, der allein zieht:
-*Robert Greene* · *Andrew Huberman* · *David Deutsch* · *Sam Sulek* · *Tony Robbins*.
-Wer solche Namen hat, braucht das Versprechen nicht. Wer sie nicht hat, braucht es.
+### Was nach fünf Kanälen trägt
 
-**Schlussfolgerung (meine, nicht gemessen):** mit 509 Abos und weitgehend unbekannten
-Gästen hat er die Williamson-Position nicht. Das Manson/Shetty-Muster — Versprechen an
-den Zuschauer — ist das, was ohne Namen trägt. **Belegt ist der Unterschied, nicht dass
-seine Zahlen davon steigen.** Das entscheidet sein Kanal, nicht diese Tabelle.
+**Jeder der fünf löst die Aufmerksamkeitsfrage im ersten Drittel des Titels — nur auf
+zwei verschiedenen Wegen:**
+
+* **Weg A: ein Versprechen an den Zuschauer.** Shetty, Manson, DOAC. 41–55 % Du.
+* **Weg B: eine Behauptung, die jemand aufstellt** — ein Name, der allein zieht
+  (Williamson: 52 % Namen, *Robert Greene*, *Huberman*, *Tony Robbins*), oder eine Rolle
+  plus ein wörtlich zitierter Ruf (Neel: 50 % Doppelpunkt, **58 % Zitat, davon 50 mit
+  Ausrufezeichen im Zitat**).
+
+**Er geht keinen von beiden.** 13 % Du, und ein Name in nur 13 % — während in 36 % der
+Titel er selbst steht. **Das ist die Position, die keiner der fünf besetzt**, und das ist
+der Befund, der die erste Fassung überlebt.
+
+**Neel ist dabei die bessere Nachricht als Manson und Shetty.** Weg B liegt näher an
+seinem Instinkt: Neel hält die Ich-Form oben (27 %) und kommt trotzdem ohne Du-Versprechen
+aus — weil die Rolle und das Zitat die Arbeit machen. **Wer ihm „mehr Du" empfiehlt,
+empfiehlt einen von zwei belegten Wegen als den einzigen.**
+
+**Schlussfolgerung, als solche gekennzeichnet:** mit 509 Abos und weitgehend unbekannten
+Gästen hat er die Williamson-Variante von Weg B nicht (die Namen tragen noch nicht).
+Die Neel-Variante — Rolle plus Zitat — braucht keinen bekannten Namen.
+**Belegt ist der Abstand, nicht dass einer der Wege seine Zahlen hebt.**
+
+## 2a. Neels Signatur: der wörtlich zitierte Ruf
+
+Der schärfste Einzelkanal-Befund im ganzen Satz:
+
+| | Titel mit Zitat | davon mit `!`/`?` **innerhalb** des Zitats |
+|---|---:|---:|
+| **Neel** | **58 von 100** | **50** |
+| Williamson | 29 | **0** |
+| DOAC | 5 | 2 |
+| YNB | 2 von 38 | **0** |
+| Manson | 2 | 0 |
+| Shetty | 1 | 0 |
+
+> `Divorce Lawyer: "90% Of People Cheat!" Here's What Actually Ends Marriages in 2026 │ Jack Neel`
+> `Ex-CIA Spy: "His Body Was Switched!" The 7 People Who Know Where He Is │Jack Neel Podcast`
+> `Surveillance Expert: "I'll Go to Jail for This!" The Hacker Exposing America's Secret Spy Network`
+> `Happiness Expert: "Phones Destroy Your Meaning!" Escape By Doing THIS In The First Hour of Your Day!`
+
+**Der Bau ist immer derselbe:** Rolle → Doppelpunkt → **der Satz, den der Gast gesagt hat,
+in Anführungszeichen, mit Ausrufezeichen** → dann erst die Einordnung → dann der Abbinder.
+
+**Williamson zitiert auch viel (29), aber nie als Ruf** — bei ihm ist es die ruhige
+Aussage: *„I Was A Loser Until I Was 39" – Robert Greene*. **Der Unterschied ist das
+Ausrufezeichen im Zitat, und er ist absolut: Neel 50, alle vier anderen zusammen 2.**
+
+**Für ihn ist das der billigste Weg B:** er hat die Zitate schon. Sein Kanal trägt zwei
+davon (*'I Didn't Believe In Past Lives – Until THIS Happened'* und *Ex-NFL Star: "I Lived
+My Dream at 27 – Then I Wanted to Die"*), beide ohne Ausrufezeichen. In 100 Minuten Podcast
+steht der Ruf drin — er muss ihn nur in den Titel heben.
+
+**Neel schreibt dabei an den Anschlag:** Median 85,5 Zeichen, **27 Titel ab 95 Zeichen,
+7 bei genau 100** (DOAC 11 bzw. 2, Shetty 5 bzw. 1). Das ist das eine, was ich an ihm
+nicht empfehlen würde: YouTube kappt in der Suche und auf dem Handy früher.
 
 ---
 
@@ -109,12 +171,12 @@ Britton* stehen teils in den Titeln, aber als Hauptsache statt als Beiwerk.
 
 * **Er:** 8 von 38 Titeln tragen `(4K)` oder `(8K)` — **21 %.** Fünfmal `(4K)`, dreimal
   `(8K)`. Die einzige andere Klammer in seinen 38 Titeln ist `(Don't)`.
-* **Die Vorbilder:** in 400 Titeln kommt ein technischer Tag **einmal** vor, bei
+* **Die Vorbilder:** in **500** Titeln kommt ein Auflösungs-Tag **einmal** vor, bei
   Williamson, und dort **hinter** dem Gastnamen:
   *The Next 36 Months Will Change Everything - Tony Robbins (4K)*.
 
-Ihre Klammer hält **einen zweiten Haken**, der den ersten weiterdreht. Die vier Kanäle
-haben zusammen **39 Klammern in 400 Titeln** — 38 davon inhaltlich, eine technisch:
+Ihre Klammer hält **einen zweiten Haken**, der den ersten weiterdreht. Die fünf Kanäle
+haben zusammen **54 Klammern in 500 Titeln** — 53 davon inhaltlich, eine technisch:
 
 > Williamson: `(and how to reverse it)` · `(and got out)` · `(and how to fix it)` ·
 > `(40% of men need it)` · `(and how to get out)`
@@ -124,10 +186,16 @@ haben zusammen **39 Klammern in 400 Titeln** — 38 davon inhaltlich, eine techn
 > Shetty: `(You NEED to Hear This)` · `(Do THIS Instead)` · `(And How to Fix It)` ·
 > `(7 Types You Need to Be Prepared for)`
 
-**Das Muster: Problem im Titel, Ausweg in der Klammer.** Fünf der 38 enthalten eine
-Du-Form oder eine Handlungsaufforderung (`(Do This!)`, `(You NEED to Hear This)`,
-`(Do THIS Instead)`); der Rest dreht das Thema weiter. **Keine einzige ist eine
-Produktionsangabe.**
+**Das Muster: Problem im Titel, Ausweg in der Klammer.** Beispiele aus Neel:
+`(It's Not What You Think!)` · `(1 Video = $150k)` · `(ZERO Employees)` ·
+`(Steal This Viral Hook!)`. Fünf der 53 enthalten eine Du-Form oder eine
+Handlungsaufforderung; der Rest dreht das Thema weiter.
+
+**Eine Ausnahme, die ich nicht unterschlage:** Neel setzt **siebenmal `(Interview)`** —
+das ist eine Formatangabe, das Nächste, was es im ganzen Satz zu seinem `(4K)` gibt.
+**Der Unterschied bleibt trotzdem:** `(Interview)` sagt dem Zuschauer, *was* er bekommt;
+`(4K)` sagt ihm, aus wie vielen Bildpunkten es besteht. **Ein Auflösungs-Tag: einmal in
+500 Titeln.**
 
 Das deckt sich mit der „(8K)"-Lehre vom 17.10. im englischen Register: *wenn er Aufrufe
 meint, schreibt er „views" dazu.* **Eine nackte Zahl in Klammern liest niemand als
@@ -142,17 +210,22 @@ Ausweg rein. Kostet einen Handgriff, keine neue Idee.
 | DOAC | **expert 27 Titel** · **lying/lie/liar 9** · world 8 · doctor 7 · warning 7 · brain 7 · war 6 · truth 5 |
 | Manson | **life 23** · **solved 22** · people 9 · change 5 · brain 4 · confidence 4 · yourself 4 |
 | Shetty | **watch 52** · happens 16 · next 16 · life 10 · feel 8 · want 8 · love 7 · relationship 6 |
+| Neel | **jack 26 · neel 26** · **expert 20** · podcast 12 · **exposes 11** · interview 9 · reveals 8 · hidden 6 · spy 5 · dark 5 |
 | **YNB** | star 6 · truth 5 · life 5 · men 4 · psychedelics 4 · transgender 4 · tantra 4 · manosphere 3 · masculinity 3 |
 
 Drei Dinge daran:
 
 **DOAC hat ein Autoritätswort und ein Konfliktwort.** `expert` in **27 von 100**
-Titeln, `lying`/`lie`/`liar` in 9.
+Titeln, `lying`/`lie`/`liar` in 9. **Neel fährt dasselbe Autoritätswort** (`expert` 20)
+und als Konfliktwort `exposes`/`reveals` (19 zusammen). **Zwei von fünf bauen ihre Titel
+auf eine geliehene Fachautorität** — und das ist der Slot, den er mit *Men's Therapist*,
+*Tantra Guru*, *$100M Founder* schon bedient.
 Die Formel ist *geliehene Autorität + verheimlichte Wahrheit*.
 
 **Manson und Shetty haben je eine wiederkehrende Marke im Titel selbst.**
 Manson: `…, Solved` — **21 von 100** Titeln (*Failure, Solved* · *Finding Your Life Path,
-Solved*). Shetty: `watch` in **52 von 100**, sein eigener Name in **53 von 100**. **Beide verkaufen eine Reihe, nicht eine
+Solved*). Shetty: `watch` in **52 von 100**, sein eigener Name in **53 von 100**.
+Neel: sein Name in **26 von 100**, davon 21 als Abbinder. **Beide verkaufen eine Reihe, nicht eine
 Folge.**
 
 **Korrektur vom 21.10., nach Durchsicht des Substack-Ordners:** hier stand, Yannick habe
@@ -167,9 +240,11 @@ Dreimal dieselbe Bewegung, drei berühmte Namen, zwei Plattformen. Ich hatte nur
 YouTube-Titel gemessen, und dort kommt es einmal vor — zu wenig, um als Muster
 aufzufallen. Belege und Vorbehalte: `voice/substack-register.md` §1.
 
-**Sein Wortfeld ist das schärfste von allen fünf.** psychedelics, transgender, tantra,
+**Sein Wortfeld ist das schärfste von allen sechs.** psychedelics, transgender, tantra,
 manosphere, masculinity, feminism, apartheid. Das ist kein Mangel. Es ist seine
-Unterscheidung, und keiner der vier Kanäle fährt so weit raus. **Das würde ich nicht
+Unterscheidung. **Neel geht am weitesten mit** (Antichrist, Epstein, UFOs, „what's on the
+moon") — aber ins Verschwörungsfach, nicht ins seelische. Keiner der fünf besetzt, was er
+besetzt. **Das würde ich nicht
 anfassen** — die Befunde oben betreffen den Bau des Titels, nicht das Thema.
 
 ---
@@ -191,6 +266,17 @@ wird. Jeder Entwurf benennt, welche Regel er anwendet.
 → Das ist schon ein Manson-Titel, nur ohne Du. Manson schreibt den Nutzen hinein:
 > `The Psychedelic Trip You Should Not Take`
 
+**3a. Weg B in Neels Form, am Material, das er schon hat.** Sein bestehender Titel
+*Ex-NFL Star: "I Lived My Dream at 27 – Then I Wanted to Die" (4K)* ist **fast** schon ein
+Neel-Titel — Rolle, Doppelpunkt, Zitat. Es fehlen zwei Handgriffe: das Ausrufezeichen im
+Zitat und der Name statt `(4K)`:
+> `Ex-NFL Star: "I Lived My Dream At 27 — Then I Wanted To Die!" | Eben Britton`
+
+Dasselbe an der Crane-Folge, wenn im Rohmaterial ein solcher Satz steht:
+> `America's #1 Transgender Surgeon: "I Build A Penis In Six Hours!" | Dr. Curtis Crane`
+**Ungeprüft: ob der Satz so gefallen ist.** Ein Zitat im Titel, das nicht im Ton vorkommt,
+ist keine Titelform, sondern eine Erfindung — **das wäre die Grenze, nicht die Technik.**
+
 **4. `10 Life Lessons I Learned at AfrikaBurn`** (2.200 Aufrufe, sein drittbestes)
 → **Hier würde ich nichts ändern.** Nummer vorn, Ich-Erfahrung, exotischer Ort: das ist
 Mansons eigene Form (*33 Things Everyone Should Know How To Do*), und es hat bei ihm
@@ -201,7 +287,10 @@ für ein Interview.
 
 ## 7. Was offen ist
 
-* **Wer ist „Jack Neal"?** Eine Zeile von ihm, dann steht der fünfte Kanal hier.
+* **Der fünfte Kanal ist nachgetragen** (Jack Neel, `@jackneel`, 3,52 Mio, 21.10.).
+  Was daran noch fehlt: ich habe seine **Thumbnails** nicht angesehen. Bei 58 % Zitat-Rufen
+  im Titel lohnt die Frage, ob das Bild den Ruf wiederholt oder dagegenarbeitet — das wäre
+  Arbeit für den Thumbnail-Assistenten, nicht für mich.
 * **Aufrufe pro Titelform** kann ich nicht rechnen: bei 38 Videos und 8 ohne öffentliche
   Zahl (siehe `video/youtube-kanal.md`) ist jede Korrelation Zufall. Was oben steht, ist
   **Formvergleich, keine Wirkungsmessung.** Klickrate und Impressionen stehen öffentlich

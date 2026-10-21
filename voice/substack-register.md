@@ -135,7 +135,7 @@ moralize"* und *„I'm not a neuroscientist."*
 Entwurf, oft mehrere. Francis Bacon · Alan Watts · Mark Manson · Marcus Aurelius ·
 Oscar Wilde · Jean-Paul Sartre · Nelson Mandela · Chris Williamson.
 `Motorcycle Accident` schließt mit **zwei** Kästen hintereinander.
-→ **Belegter Vorbehalt:** keiner der vier Vorbildkanäle arbeitet so. Das ist seins.
+→ **Belegter Vorbehalt:** keiner der fünf Vorbildkanäle arbeitet so. Das ist seins.
 
 **Der kursive Einzeiler, wiederholt mit einem geänderten Wort.**
 *I should have been dead.* … später: *I could have been dead.*
