@@ -1,3 +1,11 @@
 video/shorts/*.mp4
 video/transkripte/*.vtt
 __pycache__/
+
+# Aus dem Drive geholte Markenmittel: zu gross fuer Git (GitHub nimmt ueber
+# 100 MB nicht an) und jederzeit neu zu holen. Der Container wird zwischen
+# den Zuegen eingesammelt, danach holt man sie mit drive_fernzugriff.py wieder.
+#   outro_9_16.mov  -> 1kLsW8GjTWR-X4_02r7yqWuRUtCa6h5aX  (4,21 s, 138 MB)
+#   outro_16_9.mov  -> 1TG-PSYPsxAE3N_QvcTxOvIvIKsGCq5l4  (fuer Clips)
+video/marke/*.mov
+video/marke/*.MOV
