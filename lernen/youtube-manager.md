@@ -295,3 +295,57 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   ihm nicht bekannt, nur weil sie unter uns eingeführt sind.** Einmal in einer
   Zeile erklären, mit einem Beispiel aus seinem eigenen Material.
   → betrifft: alle
+
+### Nachtrag 21.10., 11:00 — der Suchausschnitt ist nicht das Dokument
+
+- **Ich habe seine Prep-Dokumente nicht gelesen, sondern einen Suchausschnitt.**
+  Auf seine Frage, ob ich seine Podcast-Dokumente durchgegangen bin, war die
+  Antwort nein: ich hatte **ein** Dokument gesehen (Aaronson) und davon nur das
+  `contentSnippet` aus der Drive-Suche, das nach rund 2.000 Zeichen abbricht.
+  **Die Hälfte seiner Titelliste stand nicht darin.**
+  **Regel: `contentSnippet` ist ein Abschnitt, kein Dokument.** Wer darauf
+  aufbaut, muss es sagen — oder das Dokument lesen.
+  → betrifft: alle
+
+- **Ich habe ihm seine eigene Zeile als meine vorgelegt.**
+  `We're Building God & Nobody Is Ready` steht wörtlich in seinem Scott-Dokument,
+  zweimal (unter *Title* und unter *Thumbnail*). Ich habe sie als meinen
+  Titelvorschlag präsentiert. Ebenso `The End of Humanity`, das er heute als
+  Thumbnail „bestellt" hat — **es stand schon in seiner Datei.**
+  **Regel: wenn eine Zeile aus seinem Material kommt, steht das dabei.** Ein
+  Vorschlag, der ihm seine eigene Idee zurückgibt, kostet ihn eine Runde und
+  verschleiert, was wirklich von uns ist.
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **Sein Titelbau ist zweispaltig, und die Dokumente zeigen es.** Spalte A ist
+  die Rolle mit Doppelpunkt (`The #1 Quantum Expert:`, `OpenAI Insider:`,
+  `Hollywood Star turned Men's Therapist:`, `The $100M IronMan Founder:`).
+  Spalte B ist entweder ein **Themen-Dreier mit `&`** (`Andrew Tate, Manosphere &
+  God` · `Segregation, Whiteness & Male Violence` · `ChatGPT/Judaism, God & The
+  End of Humanity`) oder eine **Versalien-Behauptung** (`NOBODY Knows If AI Is
+  Actually Safe!` · `Everything You've Heard About Quantum Computers Is WRONG`).
+  **Der Dreier steht in drei von vier Dokumenten mit B-Spalte — er ist seine
+  Signatur**, und ihn nach dem Vorbild von Diary of a CEO zu streichen war
+  falsch. Sein Widerspruch von heute hat jetzt seinen Beleg.
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **Seine Thumbnail-Braindumps sind deutlich härter als seine Titel — das ist
+  die Antwort auf „provokativer schreiben", und sie ist von ihm.**
+  `Feminists are just ugly` · `Patriarchy is GREAT!` · `Women Are Just HOT` ·
+  `Racism Is Just DUMB` · `The Nazis Never Left` · `Nobody Talks About This` ·
+  `We Need A Matriarchy` · `Human Extinction?!`
+  Drei wiederkehrende Formen: **das „Nobody"-Motiv** (in vier von vier
+  Dokumenten, seine häufigste einzelne Bewegung), **`X Is Just Y`** als
+  Abwertung in drei Wörtern, und **der nackte Zustandssatz**
+  (`Segregation Still Exists`).
+  → betrifft: thumbnails, head-of-content, content-*
+
+- **Das Fragezeichen im Thumbnail ist entschieden, von ihm selbst.**
+  `Human Extinction?!` steht wörtlich in seinem Dokument. `video/thumbnails.md`
+  sagt „kein Fragezeichen" — **das ist an sechs veröffentlichten gemessen und
+  beschreibt, was durchgekommen ist, nicht was er will.** Ich hatte den
+  Widerspruch als offene Frage an ihn zurückgegeben; die Antwort lag in seiner
+  eigenen Datei.
+  **Regel: bevor ich ihm eine Entscheidung zurückgebe, in seinem Material
+  nachsehen, ob er sie längst getroffen hat.**
+  → betrifft: alle
