@@ -10,7 +10,9 @@ Ergebnis** — statt einer 25-Minuten-Aufnahme reichen oft zwei Minuten.
 
 | Kennung | Min | Takt | Ausbeute/min | Sättigung | was das heißt |
 |---|---:|---:|---:|---:|---|
+| `Tc7H9s4PdSI` | 3 | **1,9 s** | 26,1 | 0,85 | messbar |
 | `OHnZi87272U` | 4 | **2,0 s** | 23,2 | **0,77** | **messbar, ruhig geschnitten** |
+| `xI8OpQNuFvg` | 3 | **2,0 s** | 22,6 | **0,75** | **messbar, ruhig geschnitten** |
 | `ZQht2yOX9Js` | 4 | **1,9 s** | 18,7 | **0,61** | **lange Einstellungen, gemessen** |
 | `CPpwXZA9p0Q` | 7 | 4,8 s | 9,6 | 0,78 | ruhig geschnitten |
 | `oRG2jlQWCsY` | 5 | 4,6 s | 10,6 | 0,83 | ruhig |
@@ -100,6 +102,34 @@ das Thema.
 dann steht es im quadratischen Bild. Für diese Quelle also entweder randlos
 schneiden oder das Zeichen wegschneiden, bevor die B-Roll gebaut wird.
 
+### Block 5 — Rocky, bessere Quelle · `Tc7H9s4PdSI` · Movieclips · 2:55
+**Aufnehmen: 1:35–2:20** (45 s) — **statt** der Stelle aus der
+25-Minuten-Zusammenstellung. Derselbe Inhalt, viel kürzer zu finden.
+
+Bei **1:43–2:00** Stallone blutig und geschwollen, wie er nach ihr ruft; bei
+**2:04–2:19** kommt sie zu ihm, die Umarmung, sein zugeschwollenes Gesicht.
+Große Gesichter, mittig im Bild.
+
+* **0:00–0:36 ist unbrauchbar**: Totale auf den Ring, winzige Figuren.
+* **Ab 2:20 kommen 35 Sekunden Movieclips-Endtafeln** („CLICK TO SUBSCRIBE",
+  Besetzungsangaben, „TRAILERS FILM NEWS ORIGINALS"). Nicht mitaufnehmen.
+* Das MOVIECLIPS-Zeichen steht unten links und fällt beim Mittenausschnitt
+  heraus.
+
+### Block 1 — Marty Supreme · `xI8OpQNuFvg` · 4K HDR · 3:19
+**Aufnehmen: 0:15–1:40** (85 s).
+
+**Die sauberste Quelle der ganzen Liste neben Good Will Hunting:** kein
+eingebranntes Zeichen, keine Endtafel, 4K, und ein Bild, das von sich aus
+filmisch ist — warmes Orange gegen Blaugrün, Spielhalle, viele
+Großaufnahmen von Chalamet. Sättigung 0,75, also ruhig geschnitten.
+
+Die Großaufnahmen liegen bei **0:21–0:59** und **1:10–1:36**; das Fenster oben
+deckt beide ab. Die ersten fünf Sekunden sind fast schwarz.
+
+Die Gesichter stehen oft außerhalb der Bildmitte — hier zahlt sich
+`--broll-fokus` aus.
+
 ### Block 2 — Wall Street · `OHnZi87272U` · JoBlo · 4:21
 **Aufnehmen: 3:15–4:00** (45 s statt 4:21).
 
@@ -137,11 +167,14 @@ ist gemessen, sauber und braucht zwei Minuten statt fünfzehn.
 
 ### Noch offen
 `udsqfx_9woc` (The Batman — **der fehlende Moment, in dem die Maske abgeht**),
-`El-PZehlEO8` und `xI8OpQNuFvg` (Marty Supreme), `_Jdvwiun9zY`
-(American Psycho), `ak3ma7wtE_0` (Taxi Driver), `9phnAlJxico` (Saving Private
-Ryan), `dfeUzm6KF4g` (Fight Club), `Ld603TeJBCk` und `Dr8IU0CwMWM` (Pursuit of
-Happyness), `Tc7H9s4PdSI` (Rocky), `gbOVM-3Worg` (Peaky Blinders),
-`zpN7t6LN42s` (Wolf of Wall Street).
+`_Jdvwiun9zY` (American Psycho), `ak3ma7wtE_0` (Taxi Driver), `El-PZehlEO8`
+(Marty Supreme, Endspiel), `dfeUzm6KF4g` (Fight Club), `9phnAlJxico` (Saving
+Private Ryan), `Dr8IU0CwMWM` (Pursuit of Happyness), `gbOVM-3Worg` (Peaky
+Blinders), `zpN7t6LN42s` (Wolf of Wall Street).
+
+**Gemessen, aber nachrangig:** `Ld603TeJBCk` (Pursuit of Happyness, *Zero
+Income*, 8:58) liegt bei Sättigung **0,96** — schnell geschnitten.
+`CPpwXZA9p0Q` (0,78) ist die bessere Wahl und steht oben.
 
 YouTube weist mengenabhängig ab; das Skript ist wiederaufnehmbar und holt den
 Rest nach.
@@ -154,12 +187,13 @@ Rest nach.
 |---|---:|---:|
 | Good Will Hunting | 3:55 | **3:55** |
 | Pursuit of Happyness | 7:11 | **1:20** |
-| Rocky | 24:42 | **2:25** |
+| Rocky | 24:42 | **0:45** (`Tc7H9s4PdSI`) |
+| Marty Supreme | 3:19 | **1:25** |
 | Batman | 18:48 | **4:40** |
 | Wolf of Wall Street | 18:08 | **5:00** |
 | Wall Street | 4:21 | **0:45** |
 | Tate | 10–15 min | **2:00** |
-| **zusammen** | **~85 min** | **~20 min** |
+| **zusammen** | **~88 min** | **~20 min** |
 
 **Nicht ganz ein Viertel der Aufnahmezeit und des Speicherplatzes** — bei
 mehr brauchbarem Material, weil die dunklen und die schnell geschnittenen
