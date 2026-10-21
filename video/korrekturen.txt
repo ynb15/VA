@@ -37,3 +37,12 @@ supertramp -> Supertramp
 super tramp -> Supertramp
 ubuntu -> Ubuntu
 makhosi -> Makhosi
+# 21.10.: Seine Abschlussfrage soll ein Fragezeichen tragen — seine Ansage am
+# Sutcliffe-Short: "da wuerde ich eigentlich gerne ein Fragezeichen haben.
+# Das kannst du dir merken bei dieser Frage." Sie steht in jeder Folge, also
+# gilt es fuer die ganze Reihe, nicht nur hier.
+# Nur die Fassung mit "for you" bekommt die Regel: "what makes life
+# meaningful" allein waere ein Praefix davon und hinge ein zweites
+# Fragezeichen mitten in den Satz ("meaningful? for you?").
+meaningful for you -> meaningful for you?
+makes your life meaningful -> makes your life meaningful?
