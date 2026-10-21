@@ -40,7 +40,7 @@ Aus der sechsten Runde (20.10.2026, „der Ton ist irgendwie anders“):
   11 % — das ist die Rauhheit, die WSOLA beim Zusammensetzen erzeugt.
   `rubberband` bleibt darunter.
 """
-import argparse, json, os, re, subprocess, sys, tempfile
+import argparse, json, os, re, shutil, subprocess, sys, tempfile
 from pathlib import Path
 
 import imageio_ffmpeg
@@ -388,8 +388,18 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                          f"{kopf}{{\\bord{FETTER}}}{bauen(True)}")
 
     for c in cues:
+        # Ein Wort, dem Whisper die Dauer null gibt, faellt sonst aus dem
+        # Bild: `end > start` ist bei start == end nie wahr. Genau so
+        # verschwand `FUCKING` aus „you should be trying to fucking climb
+        # mountains" — in der .srt stand es, im Video nicht, weil die .srt
+        # nicht nach Zeit filtert. Seine Ansage vom 21.10.: „Das soll
+        # natuerlich ausgeschrieben werden, nicht einfach rausnehmen."
+        # `max(..., start + 1 ms)` hebt nur Woerter ohne Laenge an; ein Wort,
+        # das genau an der Grenze endet, bleibt weiterhin draussen.
         woerter = [w for w in (c.get("woerter") or [])
-                   if w["t"].strip() and w["end"] > c["start"] and w["start"] < c["end"]]
+                   if w["t"].strip()
+                   and max(w["end"], w["start"] + 0.001) > c["start"]
+                   and w["start"] < c["end"]]
         roh = [_anzeige(w["t"], gross) for w in woerter]
         roh = [w for w in roh if w]
         if not roh:
@@ -1102,6 +1112,19 @@ def main():
                          "Stimme und Bett gemessen")
     ap.add_argument("--musik-unter", type=float, default=8.0,
                     help="dB, die das Bett unter der Stimme liegt")
+    ap.add_argument("--cues-out", default=None,
+                    help="Die fertigen Einblendungen samt Wortzeiten als JSON "
+                         "ablegen. Das ist die Fassung, aus der das Bild "
+                         "entsteht — nicht die .srt, die nur eine Ausgabe "
+                         "davon ist.")
+    ap.add_argument("--cues-in", default=None,
+                    help="Statt zu transkribieren diese JSON-Datei nehmen. "
+                         "Damit bleibt eine einmal abgenommene Einblendung "
+                         "ueber jeden weiteren Lauf erhalten: Whisper ist "
+                         "nicht deterministisch, eine abgelegte Datei schon.")
+    ap.add_argument("--ass-out", default=None,
+                    help="Die erzeugte ASS zusaetzlich hierhin kopieren. "
+                         "Zum Nachsehen, was wirklich ins Bild geht.")
     ap.add_argument("--srt-out", default=None,
                     help="Einblendungen zusaetzlich als .srt ablegen, in der "
                          "Zeit des fertigen Videos. Fuer den Weg ueber einen "
@@ -1275,6 +1298,14 @@ def main():
                                       paare=korrekturen_lesen(a.korrekturen),
                                       pause=a.pause)
             print(f"  Transkript: {len(cues)} Einblendungen, Sprache {lang}")
+        if a.cues_in:
+            cues = json.loads(Path(a.cues_in).read_text(encoding="utf-8"))
+            print(f"  Einblendungen aus {a.cues_in}: {len(cues)} — nicht neu "
+                  f"transkribiert")
+        if cues and a.cues_out:
+            Path(a.cues_out).write_text(
+                json.dumps(cues, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"  {len(cues)} Einblendungen nach {a.cues_out}")
         elif a.srt:
             cues = srt_to_cues(a.srt)
 
@@ -1301,6 +1332,9 @@ def main():
             build_ass(cues, ass, marginv=marginv, tempo=a.tempo,
                       tiefer=a.tiefer, gross=not a.klein,
                       groesse=a.schriftgroesse)
+            if a.ass_out:
+                shutil.copy(ass, a.ass_out)
+                print(f"  ASS nach {a.ass_out}")
             print(f"  {a.worte} Woerter je Einblendung, "
                   f"{'VERSALIEN' if not a.klein else 'gemischt'}, "
                   f"{a.tiefer} px unter der Lippe, Look: {a.look}")
