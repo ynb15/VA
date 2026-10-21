@@ -72,8 +72,8 @@
    "id": "1JEWgIwIt1XIzwZphqsGnqLedKkYa9Dhm",
    "groesse": 27409366795,
    "gesamt": null,
-   "stand": "offen",
-   "notiz": "veroeffentlicht FF-eRPgZI2k (vermutlich), 145:12."
+   "stand": "blockiert",
+   "notiz": "veroeffentlicht FF-eRPgZI2k (vermutlich), 145:12. NICHT link-freigegeben — am 21.10. zweifach belegt: der Abruf bekommt 921335 statt 8388608 Bytes fuer Block 0, und die Rechteabfrage zeigt nur ynb (owner) und semlerisabelle (writer), kein 'anyone: reader'. Braucht 'Jeder mit dem Link'. Keine Ausweichquelle gefunden."
   },
   {
    "nr": 10,
@@ -81,7 +81,7 @@
    "k": "britton",
    "id": "1lIFL8aUunQQPtTDp0vQNlaRc7of-4PfG",
    "groesse": 26996814481,
-   "gesamt": null,
+   "gesamt": 6147.6,
    "stand": "offen",
    "notiz": "veroeffentlicht RG-K0fIA2-w, 102:28."
   },
@@ -109,11 +109,11 @@
    "nr": 12,
    "name": "Curtis Crane",
    "k": "crane",
-   "id": "19S90VEL7LNfkwNCBZH6ZJDuVE3jRu6MG",
-   "groesse": 2041723882,
+   "id": "1X9I3dODNz8RqdMml801Gk2a4E2SdmzM-",
+   "groesse": 33224508420,
    "gesamt": null,
-   "stand": "blockiert",
-   "notiz": "v1-Export, 2,0 GB. Bereichsabruf scheitert am 21.10.: Block 0 liefert 920758 statt 8388608 Bytes — die Datei ist nicht link-freigegeben. Braucht 'Jeder mit dem Link'. Der 33,2-GB-Rohschnitt 1X9I3dODNz8RqdMml801Gk2a4E2SdmzM- waere die Ausweichquelle."
+   "stand": "offen",
+   "notiz": "Rohschnitt im Drive des Cutters (christoph.hoffarth), 33,2 GB — am 21.10. geprueft: 'anyone: reader' gesetzt, also abrufbar. Sein eigener v1-Export 19S90VEL7LNfkwNCBZH6ZJDuVE3jRu6MG (2,0 GB) waere billiger, ist aber NICHT link-freigegeben. veroeffentlicht ewgUIZGJaWQ, 109:53."
   },
   {
    "nr": 13,
@@ -123,7 +123,7 @@
    "groesse": 18477374819,
    "gesamt": null,
    "stand": "blockiert",
-   "notiz": "Kameraton bricht nach etwa einer Stunde ab, Gespraech lief zwei Stunden, die Frage steht am Ende. Braucht die iPhone-Tonspur; sie liegt nicht im Drive."
+   "notiz": "Kameraton bricht nach etwa einer Stunde ab, Gespraech lief zwei Stunden, die Frage steht am Ende. Zweifach blockiert: die iPhone-Tonspur liegt nicht im Drive, UND beide Kameradateien sind nicht link-freigegeben (Rechteabfrage 21.10.: kein 'anyone: reader' auf 1LVM5nxv... noch auf 1n4h-Qis...)."
   },
   {
    "nr": 14,

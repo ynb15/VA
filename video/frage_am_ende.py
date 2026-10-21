@@ -81,13 +81,30 @@ def schluss_waehlen(daten, idx):
     """
     neue_frage = re.compile(r"(?i)^(how|what|where|when|why|who|can|could|do|did|"
                             r"would|is|are|tell)\b.*\?\s*$")
+    # Eine Frage ist nicht das einzige Ende. Bei Kyle Kingsbury uebernahm er
+    # mit "Well, speaking of meaning and purpose, you got some news to share"
+    # — keine Frage, und der Schnitt lief 8,8 s in die Ankuendigung seiner
+    # Community hinein. Dieselbe Sorte Fehler wie zweimal zuvor im Outro
+    # ("wo findet man dich", Instagram, Spotify). Was die drei Faelle teilen,
+    # ist nicht die Satzform, sondern das Thema: ab hier geht es ums Geschaeft.
+    uebergang = re.compile(r"(?i)\b(speaking of|news to share|where can (people|we|"
+                           r"they)|find you|follow you|your (book|website|community|"
+                           r"podcast|channel)|instagram|spotify|youtube|link in|"
+                           r"before we (go|wrap)|last question|plug)\b")
     grenze = daten[-1]["end"]
     for d in daten[idx + 1:]:
-        if d["start"] - daten[idx]["start"] > 15 and neue_frage.match(d["text"].strip()):
-            grenze = d["start"] - 0.3
+        if d["start"] - daten[idx]["start"] <= 15:
+            continue
+        t = d["text"].strip()
+        if neue_frage.match(t) or uebergang.search(t):
+            # Die Grenze ist der Beginn des Uebergangs, nicht 0,3 s davor —
+            # sonst faellt genau der Satz heraus, der daran endet. Bei Kyle
+            # war das "I got nothing else to add to that." (endet 177,59,
+            # Uebergang beginnt 177,59).
+            grenze = d["start"]
             break
     ziel = min(daten[idx]["start"] + ZIEL, grenze)
-    kand = [d for d in daten[idx:] if d["end"] <= grenze]
+    kand = [d for d in daten[idx:] if d["end"] <= grenze + 0.05]
     satz = [d for d in kand if d["text"].rstrip().endswith((".", "!", "?"))]
     wahl = satz or kand or daten[idx:]
     return min((d["end"] for d in wahl), key=lambda x: abs(x - ziel))
