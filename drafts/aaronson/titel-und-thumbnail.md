@@ -32,78 +32,85 @@ sagt, rät.
 
 ---
 
-## 15 Titel — Fassung 2, nach der Messung des Head of Content
+## 15 Titel — Fassung 3, gegen die Regelliste geprüft
 
-**Fassung 1 hatte zwei Fehler**, und sie kommen aus derselben Quelle: ich habe
-Deine bisherige Praxis nachgebaut, ohne zu prüfen, ob sie trägt. Der Head of
-Content hat inzwischen **438 Titel** der Vorbildkanäle ausgemessen, und zwei
-seiner Befunde treffen genau meine 15:
+Der Head of Content hat seine Messung inzwischen als anwendbare Liste abgelegt
+(`video/titel-regeln.md`, 438 Vorbildtitel). **Sie widerlegt drei weitere Punkte
+meiner Fassung 2.** Was ich geändert habe:
 
-1. **`(4K)` war in allen 15. Das war falsch.** In 400 Vorbildtiteln kommt ein
-   technischer Tag **einmal** vor. Alle 38 inhaltlichen Klammern dort drehen das
-   Thema weiter — *(and how to reverse it)*, *(Do THIS Instead)* — **keine
-   einzige ist eine Produktionsangabe.** `(4K)` steht in 8 Deiner 38 Titel; es
-   ist Deine Gewohnheit, aber es verschenkt den zweiten Haken.
-2. **Der Gastname gehört nach hinten, und ich hatte Dir das Gegenteil empfohlen.**
-   DOAC baut `<Rolle>: <Versprechen> | <Name>` — 97 von 100 Titeln mit
-   Doppelpunkt, 14 davon mit Name hinten. **Bei Dir: 0 von 38.** Ich hatte
-   geschrieben, der Name könne weg, weil `Queer Actor:` Francis auch nicht nennt.
-   Das war aus Deiner Praxis abgeleitet statt gemessen. **Der zweite Slot kostet
-   nichts** — er nimmt dem Titel vorne kein Zeichen weg und fängt jede Suche nach
-   dem Namen ein.
+| | Fassung 2 | Fassung 3 |
+|---|---|---|
+| `(4K)` | in allen 15 | **raus** — technischer Tag in 400 Vorbildtiteln **1×** |
+| Gastname | fehlte in 9 | **in allen 15 hinten** — DOAC 14×, Du bisher 0× |
+| **Dreier-Aufzählung** | 3 Titel (`AI Safety, Extinction & God`) | **raus** — DOAC zählt nie drei Themen auf; eine Behauptung trägt weiter als drei Stichwörter |
+| **Länge** | 68–95 Zeichen | **Slot 1 bei 43–62**, siehe unten |
+| **Versalien** | mehrere Titel mit 2 | **höchstens eins**, und nur echte Betonung |
+| Du-Ansprache | 4 | **5** |
 
-Dazu ein dritter Befund, der **keine Korrektur ist, sondern Deine Entscheidung
-betrifft:** Du-Ansprache (`you/your`) steht in **13 %** Deiner 38 Titel, bei den
-Vorbildern in 41–55 % (Shetty 55, Manson 49, DOAC 41). Ich/Wir dagegen bei Dir
-**36 %** — mehr als bei jedem Vorbild. Der Head of Content hält das ausdrücklich
-für **eine Entscheidung, keine Lücke** (Du trennst die Register pro Plattform
-selbst, belegt an Deiner eigenen Notiz `(YT only)`). Deshalb liefere ich vier
-Titel mit Du-Ansprache als **Angebot**, nicht als Korrektur.
+### Ein Widerspruch in der Regelliste, den ich auflösen musste
+
+Abschnitt B sagt **45–65 Zeichen**. Abschnitt C zeigt als Vorbild
+`AI Insider: We Are Losing Control Faster Than You Think | Jeffrey Ladish`
+— **71 Zeichen**, und das zweite Beispiel hat 92. DOACs Median liegt bei 77,5.
+**Zwei-Slot-Bau und 45–65 gehen nicht zusammen.**
+
+Meine Auflösung: **die 45–65 gelten für Slot 1**, den Teil vor dem `|`. Das ist
+der Satz, den der Zuschauer liest; der Name hinten ist ein eigener Slot und
+kostet vorne kein Zeichen. Danach liegen **14 der 15 im Fenster**, der volle
+Titel bei 65–79 — also im DOAC-Korridor und unter dem YouTube-Maximum von 100.
+**Das ist meine Entscheidung, nicht seine Regel** — wenn er den vollen Titel
+unter 65 will, fällt der zweite Slot wieder weg, und damit der Befund, der am
+meisten ändert.
 
 ### Mit Zitat — Deine stärkste belegte Form
 
-1. `OpenAI Insider: "The Trouble With AI Is Not That It Doesn't Work" | Prof. Scott Aaronson`
-2. `Quantum Physicist: "We're The Orangutans Now" | Prof. Scott Aaronson`
-3. `OpenAI Insider: "Nobody Can Tell Me Where AI Stops" | Prof. Scott Aaronson`
+1. `OpenAI Insider: "The Trouble With AI Is That It Does Work" | Scott Aaronson`
+2. `OpenAI Insider: "Nobody Can Tell Me Where AI Stops" | Prof. Scott Aaronson`
+3. `Quantum Physicist: "We Are The Orangutans Now" | Prof. Scott Aaronson`
 
-### Dreierliste — Deine Curtis-/Sutcliffe-Form
+### Eine Behauptung statt dreier Stichwörter
 
-4. `Quantum Physicist & OpenAI Insider: AI Safety, Extinction & God | Prof. Scott Aaronson`
-5. `OpenAI Insider: ChatGPT, The Book of Job & The End of Humanity | Scott Aaronson`
-6. `The #1 Quantum Expert: Quantum Computing, Creating God & Extinction | Scott Aaronson`
+4. `AI Safety Expert: It Is Not A Parrot And That Is The Problem | Scott Aaronson`
+5. `Quantum Scientist: We Are Building God (Nobody Is Ready) | Scott Aaronson`
+6. `OpenAI Insider: AI Just Solved What No Human Could | Scott Aaronson`
 
-### Versalien — Deine eigenen Entwürfe, zugespitzt
+### Versalien — genau ein Betonungswort
 
-7. `OpenAI Insider: NOBODY Knows Where AI Stops – Not Even The People Building It | Scott Aaronson`
-8. `AI Safety Expert: Everything You Heard About AI Being "Just A Parrot" Is WRONG | Scott Aaronson`
-9. `Quantum Scientist: NOBODY Understands What We Are Creating | Prof. Scott Aaronson`
+7. `OpenAI Insider: NOBODY Knows Where AI Stops Improving | Scott Aaronson`
 
 ### Der Auftrag — die Szene, die sonst keiner hat
 
-10. `OpenAI Hired Him To Define Love Mathematically | Prof. Scott Aaronson`
-11. `The Man OpenAI Asked To Make AI Love Humanity | Prof. Scott Aaronson`
-12. `He Left Quantum Computing To Stop AI From Killing Us | Prof. Scott Aaronson`
+8. `OpenAI Hired Him To Define Love Mathematically | Prof. Scott Aaronson`
+9. `The Man OpenAI Asked To Make AI Love Humanity | Prof. Scott Aaronson`
+10. `He Left Quantum Computing To Stop AI Killing Us | Prof. Scott Aaronson`
 
 ### Mit Du-Ansprache — das Angebot, nicht die Korrektur
 
-13. `OpenAI Insider: AI Is Smarter Than You Think (And Nobody Knows Where It Stops) | Scott Aaronson`
-14. `Quantum Physicist: Why You Should Fear AI – And Why He Still Doesn't | Scott Aaronson`
-15. `AI Safety Expert: What You Get Wrong About AI, God And Extinction | Prof. Scott Aaronson`
+11. `OpenAI Insider: AI Already Does What You Call Impossible | Scott Aaronson`
+12. `AI Safety Expert: You Are Not Ready For What We Built | Scott Aaronson`
+13. `Quantum Physicist: Why You Should Fear AI (And Why He Doesn't) | Scott Aaronson`
+14. `AI Safety Expert: What You Get Wrong About Extinction | Scott Aaronson`
+15. `Quantum Physicist: You Will Meet A God You Built | Scott Aaronson`
 
-**Alle 15 liegen zwischen 68 und 95 Zeichen**, also unter dem YouTube-Maximum
-von 100. Gemessen, nicht geschätzt.
+**Die Klammern in 5 und 13 sind keine Produktionsangabe**, sondern halten den
+Ausweg offen — die Form, die in 38 von 39 Vorbild-Klammern steht
+(`(and how to reverse it)`, `(Do THIS Instead)`).
 
-**Meine Empfehlung bleibt Nummer 1** — Rolle vorn, Dein stärkstes Zitat in der
-Mitte, Name hinten. Das Zitat ist Short-Kandidat Nummer 1, `OpenAI` steht im
-ersten Wort, und der Name ist jetzt drin, ohne vorne Platz zu kosten.
-**Nummer 13** ist die Alternative, wenn Du die Du-Ansprache testen willst: dort
-dreht die Klammer das Thema weiter, statt die Auflösung anzugeben.
+**Meine Empfehlung bleibt Nummer 1.** Rolle vorn, Dein stärkstes Zitat, Name
+hinten, 58 Zeichen in Slot 1, `OpenAI` im ersten Wort, keine Aufzählung, keine
+Versalien, kein Tag. Sie erfüllt die Liste vollständig.
+**Nummer 12** ist die Alternative, wenn Du die Du-Ansprache testen willst.
 
-**Die Einschränkung, die bleibt:** Deine stärkste Folge (`Queer Actor…`, 12.059)
-ist auch Deine erste mit echtem Gast und läuft seit sieben Monaten. **Ich kann
-Dir nicht sagen, ob der Titel das getragen hat oder Thema, Thumbnail oder
-Algorithmus.** Die Formen oben sind an 438 Vorbildtiteln und Deinen 38 gemessen —
-das ist Bauweise, nicht bewiesene Wirkung.
+**Der Vorbehalt, den der Head of Content selbst mitschickt und den ich
+weitergebe:** das ist **Formvergleich, keine Wirkungsmessung.** Bei 38 Videos,
+8 davon ohne öffentliche Aufrufzahl, ist jede Korrelation Titelform ↔ Reichweite
+Zufall; Klickrate und Impressionen stehen öffentlich nicht da. **Diese Titel
+weichen von Deiner bisherigen Form ab. Dass sie besser wirken, weiß niemand.**
+
+Und: **die Ich-Form ist nicht grundsätzlich falsch.**
+`10 Life Lessons I Learned at AfrikaBurn` ist Dein drittbestes Video (2.234) und
+genau Mansons Form. Für **Solofolgen** ist Ich richtig — nur im Interview ist es
+der Platz, auf dem der Gast stehen sollte.
 
 ## 15 Thumbnail-Zeilen
 
@@ -152,3 +159,34 @@ KI-Publikum hinaus, Nummer 3 ist der Satz, auf dem die Folge steht.
    Thumbnail sagt `Human Extinction?`. **Da widerspricht Dein Entwurf Deiner
    bisherigen Praxis.** Meine 15 sind alle ohne. Wenn Du das Fragezeichen willst,
    ist es eine Entscheidung gegen sechs eigene Belege — nicht falsch, aber neu.
+
+---
+
+## Nachtrag: die Thumbnail-Form, die ich übersehen hatte
+
+Aus `video/titel-regeln.md` §G, und es korrigiert meine 15 oben:
+
+> **Die Thumbnail-Copy wiederholt den Titel nicht.** Belegt an seinen eigenen:
+> `Patriarchy over Feminism` zu *„The Hollywood Star Who Quit Everything To Heal
+> Men"*. **Titel nennt die Person, Thumbnail nennt den Konflikt.**
+> **Das Konfliktpaar ist seine Form** — ein Gegensatz in zwei Wörtern schlägt
+> eine Behauptung in vier.
+
+**Meine 15 oben sind fast alle Behauptungen, keine Paare.** Das ist der
+schwächere Bau. Fünf Paare nach seiner belegten Form, `**fett**` = Kasten:
+
+| # | Zeile 1 | Zeile 2 | Zeile 3 |
+|---|---|---|---|
+| P1 | `QUANTUM` | *to* | **`GOD`** |
+| P2 | `PARROT` | *or* | **`GOD`** |
+| P3 | `HUMANS` | *to* | **`ORANGUTANS`** |
+| P4 | `PHYSICS` | *to* | **`PRAYER`** |
+| P5 | `MATH` | *vs* | **`MEANING`** |
+
+**P1 trägt am weitesten:** es ist die ganze Spannweite der Folge in drei Wörtern,
+es wiederholt keinen der 15 Titel, und es ist genau der Bau von
+`Patriarchy over Feminism`. **P3 ist das riskantere** — stärker, aber nur
+verständlich, wenn der Titel oder das Thumbnail den Zusammenhang gibt.
+
+Damit sind es 20 Thumbnail-Zeilen statt 15. Die fünf Paare sind die, die ich
+Dir empfehlen würde; die 15 Behauptungen bleiben als Auswahl stehen.

@@ -135,3 +135,36 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   nicht** — er hat den Namen am 21.10. genannt, im Drive gibt es keinen Ordner
   dazu.
   → betrifft: alle
+
+### Nachtrag 21.10., nachmittags — zur Arbeitsteilung mit dem Head of Content
+
+- **Die 38 Beschreibungen sind schon gemessen. Er muss nur die 400 ziehen.**
+  `video/titel-regeln.md` §H sagt, zu Beschreibungen sei nichts gemessen, weil
+  `--flat-playlist` sie nicht liefert, und bietet an, „die 38 und die 400"
+  nachzuziehen. **Die 38 liegen fertig in `youtube/beschreibungen.md`** —
+  Bauplan, Häufigkeiten seiner wörtlichen Formeln, Selbstzensur, Timestamp-Form,
+  und die zwei Nullen (39 Shorts ohne Beschreibung, 0 von 77 mit Tags). Der Weg
+  dorthin steht in `video/youtube-kanal.md`: `getcomments` plus
+  `ignore_no_formats_error`, rund 20 s je Video, kein Schlüssel.
+  **Wer die 400 Vorbildbeschreibungen zieht, braucht denselben Schalter** — ohne
+  ihn bricht `yt-dlp` an der Bot-Prüfung ab, bevor es die Beschreibung hat.
+  → betrifft: head-of-content
+
+- **Sein Widerspruch zwischen §B und §C, und wie ich ihn aufgelöst habe.**
+  §B verlangt 45–65 Zeichen, §C zeigt als Vorbild einen DOAC-Titel mit **71**
+  und einen mit **92**; DOACs Median ist 77,5. Beides gilt nicht gleichzeitig.
+  Meine Auflösung: **die 45–65 auf Slot 1 beziehen**, den Teil vor dem `|`.
+  Damit liegen 14 von 15 Aaronson-Titeln im Fenster und die vollen Titel bei
+  65–79. **Das ist meine Entscheidung, nicht seine Regel** — falls er es anders
+  meint, korrigiert er mich, und dann fällt der zweite Slot weg.
+  → betrifft: head-of-content, thumbnails
+
+- **Die Thumbnail-Regel, die meine 15 Zeilen schwächer macht, als sie sein
+  müssten.** §G: die Copy wiederholt den Titel nicht, und **das Konfliktpaar ist
+  seine Form** (`Patriarchy over Feminism`). Meine 15 waren fast alle
+  Behauptungen. Fünf Paare nachgetragen (`QUANTUM to GOD`, `PARROT or GOD`,
+  `HUMANS to ORANGUTANS`, `PHYSICS to PRAYER`, `MATH vs MEANING`).
+  **Als Regel: wer Copy in zwei Feldern schreibt, muss prüfen, ob das zweite das
+  erste wiederholt** — bei Titel und Thumbnail ist Arbeitsteilung die Form, nicht
+  Redundanz.
+  → betrifft: thumbnails, content-*
