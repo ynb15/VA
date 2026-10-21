@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Legt das Musikbett unter einen fertigen Short - gleiche Kette wie der Renderer.
 
-    python3 musik_drunter.py <video.mp4> <musik.mp3> <ausgabe-stamm> <dB-unter> ...
+    python3 musik_drunter.py <video.mp4> <musik.mp3> <stamm> <ab-sekunde> <dB-unter> ...
 
 Je angegebenem Abstand entsteht eine Fassung. Der Pegel wird nicht geraten,
 sondern aus Stimme und Bett gerechnet, genauso wie in `shorts-render.py`:
@@ -36,20 +36,37 @@ def dauer(pfad):
 
 def main():
     video, musik, stamm = ARGV[1], ARGV[2], ARGV[3]
-    abstaende = [float(x) for x in ARGV[4:]]
+    ab_s = float(ARGV[4])          # wo im Song das Bett anfaengt
+    abstaende = [float(x) for x in ARGV[5:]]
+    # Seine Ansage vom 21.10.: "die Musik auf jeden Fall viel lauter, und die
+    # muss auch schon frueher starten -- da, wo ich die Frage stelle, ist gar
+    # keine Musik." Also kurze Blende statt 1,5 s, und sanfteres Wegdruecken
+    # (ratio 4 statt 8), damit das Bett unter der Stimme stehen bleibt,
+    # statt zu verschwinden.
+    blende_ein, ratio = 0.3, 4
     laenge = dauer(video)
     stimme_db = sr.mittlerer_pegel(video, dauer=laenge)
-    bett_db = sr.mittlerer_pegel(musik, dauer=laenge)
-    print(f"Stimme {stimme_db:.1f} dB · Bett {bett_db:.1f} dB · Laenge {laenge:.2f} s")
+    # Den Pegel des Betts an der Stelle messen, die auch benutzt wird. Von
+    # 0:00 gemessen faellt er zu niedrig aus: die ersten 15 s von "Daylight"
+    # sind 7-10 dB leiser als der Hauptteil, und genau daher kam sein
+    # Eindruck "unter der Frage ist gar keine Musik".
+    schnipsel = f"{stamm}-bettprobe.wav"
+    subprocess.run([FF, "-nostdin", "-y", "-hide_banner", "-loglevel", "error",
+                    "-ss", str(ab_s), "-t", f"{laenge:.2f}", "-i", musik,
+                    schnipsel], check=True)
+    bett_db = sr.mittlerer_pegel(schnipsel, dauer=laenge)
+    print(f"Stimme {stimme_db:.1f} dB · Bett ab {int(ab_s)//60}:{int(ab_s)%60:02d} "
+          f"{bett_db:.1f} dB · Laenge {laenge:.2f} s")
     for ab in abstaende:
         db = round(stimme_db - bett_db - ab, 1)
         out = f"{stamm}-{int(ab)}db.mp4"
-        bett = (f"[1:a]aloop=loop=-1:size=2000000000,volume={db}dB,"
-                f"afade=t=in:st=0:d=1.5,atrim=0:{laenge:.2f},"
+        bett = (f"[1:a]atrim=start={ab_s},asetpts=PTS-STARTPTS,"
+                f"aloop=loop=-1:size=2000000000,volume={db}dB,"
+                f"afade=t=in:st=0:d={blende_ein},atrim=0:{laenge:.2f},"
                 f"afade=t=out:st={max(laenge - 2.0, 0):.2f}:d=2.0[bett]")
         graph = ("[0:a]asplit=2[st1][st2];" + bett +
-                 ";[bett][st2]sidechaincompress=threshold=0.04:ratio=8:"
-                 "attack=15:release=350[duck];"
+                 f";[bett][st2]sidechaincompress=threshold=0.04:ratio={ratio}:"
+                 "attack=15:release=250[duck];"
                  "[st1][duck]amix=inputs=2:normalize=0:dropout_transition=0[amix]")
         subprocess.run([FF, "-nostdin", "-y", "-hide_banner", "-loglevel", "error",
                         "-i", video, "-i", musik, "-filter_complex", graph,
