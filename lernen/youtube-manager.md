@@ -259,3 +259,39 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   Neel trägt die Form nachweislich (50 von 100) — **ob sie bei einem leisen Gast
   trägt, steht in keiner Zahl.** Als Einschätzung gekennzeichnet, nicht als Regel.
   → betrifft: head-of-content, thumbnails
+
+### Nachtrag 21.10., 10:45 — drei Korrekturen von ihm an meiner Titelarbeit
+
+- **Paraphrasieren in Anführungszeichen ist erlaubt. Seine Entscheidung,
+  wörtlich:** *„wir können gerne paraphrasieren, wenn es zu Zitaten kommt."*
+  **Damit ist die Regel aus `video/titel-regeln.md` („ein Zitat, das in der
+  Aufnahme nicht vorkommt, ist eine Erfindung") für seinen Kanal aufgehoben.**
+  Was bleibt: **jede Paraphrase muss auf einer belegten Stelle stehen**, und die
+  Stelle gehört neben den Entwurf. Erfunden ist nicht paraphrasiert.
+  **Die Regel dahinter, die mich das gekostet hat:** eine Messung an fremden
+  Kanälen wird erst durch seine Zustimmung eine Regel für ihn — ich hatte das
+  selbst notiert und dann doch eine fremde Regel über seinen Entwurf gestellt.
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **„Wörtlich" ist kein Qualitätskriterium für einen Titel.** Ich habe
+  `"I'm still thinking about that"` und `"It's that it does work"` empfohlen,
+  weil sie die Zitatprüfung bestanden. Seine Antwort: *„Die sind richtig schwach,
+  richtig schwach."* **Er hat recht** — aus dem Zusammenhang gerissen sagen beide
+  nichts. **Die Prüfung schließt Titel aus, sie wählt keine aus.** Erst
+  auswählen, was zieht, dann prüfen, worauf es steht.
+  → betrifft: alle
+
+- **„Deutlich provokativer schreiben."** Stehender Auftrag für Titel,
+  Thumbnail-Copy und Clip-Texte. Für mich heißt das konkret: der Titel verspricht
+  die härteste Aussage, die in der Folge wirklich vorkommt — nicht die
+  korrekteste. Die Einordnung („er relativiert das danach") gehört in die
+  Beschreibung und in mein Begleitblatt, **nicht in den Titel.**
+  → betrifft: head-of-content, thumbnails, content-*
+
+- **Fachbegriffe erklären, bevor ich sie benutze.** Ich habe „Du-Ansprache"
+  dreimal in Berichten verwendet; seine Rückmeldung: *„ich weiß nicht ganz genau,
+  was du die ganze Zeit mit der Du-Ansprache meinst."* Es heißt nur: steht
+  `you`/`your` im Titel. **Er hat uns nicht onboardet — unsere Messgrößen sind
+  ihm nicht bekannt, nur weil sie unter uns eingeführt sind.** Einmal in einer
+  Zeile erklären, mit einem Beispiel aus seinem eigenen Material.
+  → betrifft: alle
