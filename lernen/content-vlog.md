@@ -551,3 +551,49 @@ python3 video/transkript_lokal.py --ton ton.flac --out t.md \
 `transkript_lokal.py` genau wie bisher — der Shorts- und der cinematische
 Assistent arbeiten diese Woche unter Termindruck damit.
 → betrifft: alle Content-Agenten
+
+## 22.10.2026 — Ein Klaviercover ist kein Ausweg um Content ID
+
+**Vier Sperren an einem Tag, drei verschiedene Titel**, zwei davon unter
+Stücken meiner Serie. Der Befund steckt in der letzten Zeile: der vierte
+Versuch war ein **Klaviercover**, gewählt, um dem Anspruch auf die Aufnahme
+auszuweichen — und wurde trotzdem weltweit gesperrt, diesmal als Anspruch auf
+**Melodie und Text**.
+
+**Eine Coverversion wechselt den Anspruchsteller, nicht die Sperre.** Die
+Aufnahme gehört einem Label, die Komposition einem Verlag; wer die Aufnahme
+umgeht, landet beim Verlag.
+
+**Und: dass eine Datei in seinem Musikordner liegt, ist keine Freigabe.** Dort
+lagen drei Titel, und alle drei haben gesperrt.
+
+**Für die Meaningful-Serie ausdrücklich festgeschrieben** in
+`video/meaningful-serie.md`: keine Musik, bis er einen lizenzierten Titel
+nennt. Vorher stand dort nur, dass keine drin ist — das hätte beim nächsten
+Durchgang jemand „ergänzt".
+→ betrifft: alle Content-Agenten
+
+## 22.10.2026 — Dateinamen, und was dabei beinahe schiefging
+
+**Seine Ansage:** `YNB Podcast <Gastname> <Stichwort>.mp4`, für alle Shorts.
+Elf Untertiteldateien und fünf Videodateien umbenannt, das Werkzeug schreibt
+neue Stücke direkt so.
+
+**Zwei Dinge, die beim Umbenennen auffielen:**
+
+1. **Von Sutcliffes Untertiteln lagen zwei Fassungen** — die aus der Nacht vom
+   20./21.10. und die vom neuen Preset. Beide heißen jetzt gleich, also musste
+   eine gewinnen. Die ausgelieferte Datei ist die neue, **die Zeiten weichen um
+   bis zu 17 ms ab**. Hätte ich die alte behalten, wären Untertitel und Video
+   auseinander gelaufen, und zwar unsichtbar.
+2. **Mein `sed` hat den Verweis in `aaronson-shorts.md` nicht getroffen**, weil
+   dort `.mp4` stand und ich auf `.srt` ersetzt hatte. Gefunden mit einem
+   `grep` über alle Markdown-Dateien nach den alten Namen — **nachgesehen,
+   statt anzunehmen, dass es durch ist.**
+
+**Die laufende Nummer fällt aus dem Dateinamen.** Für eine Reihe, die auf
+hundert Folgen zielt, ist das ein Verlust an Ordnung im Ordner — aufgefangen
+wird er von `video/meaningful-archiv.md`, wo die Nummer samt Drive-ID und
+Masterzeitmarke steht. Aus einem Ordner voller Dateien lässt sich der Schnitt
+nicht bauen, aus der Tabelle schon.
+→ betrifft: alle Short-Agenten
