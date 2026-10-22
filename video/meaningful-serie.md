@@ -144,3 +144,49 @@ Coverversion wechselt den Anspruchsteller, nicht die Sperre.**
 nennt.** Dass eine Datei in seinem Musikordner liegt, ist keine Freigabe — dort
 lagen drei Titel, und alle drei haben gesperrt. Das steht hier, damit es beim
 nächsten Durchgang niemand „ergänzt".
+
+---
+
+## Nachtrag 22.10.2026 — defensiv schneiden
+
+**Seine Anweisung, wörtlich:** *„dass du lieber zu defensiv als zu offensiv
+schneidest"* — und dazu das Transkript übergeben, damit er sagen kann, was raus
+soll.
+
+**Die Fehlerrichtung ist unsymmetrisch.** Eine Auslassung, die er nicht wollte,
+kostet ihn: Liste lesen, Stelle finden, Rückmeldung schreiben, neue Renderrunde.
+Eine Zeile zu viel kostet ihn eine Nummer.
+
+### Was sich dadurch an dieser Serie ändert
+
+**Der Anfang war zu offensiv, und das war mir nicht aufgefallen.** Das Muster
+trifft die Zeile mit *„what makes life meaningful"*, geschnitten wurde eine
+Sekunde davor. Bei Kyle Kingsbury lief der Anlauf aber über **vier Abschnitte**:
+
+```
+108,43  I guess this answers my favorite question
+111,43  I like to ask at the end,
+113,95  cause we're on the Man Search for Meaning podcast,
+116,15  right?
+116,99  I like to ask, what makes life meaningful?   ← hier begann der Schnitt
+```
+
+**Das Stück fing also mit einem bezuglosen „right?" an**, und der Satz, der die
+ganze Reihe erklärt, fehlte. Dem Render hört man das nicht an — es klingt
+sauber, es ist nur falsch.
+
+**Jetzt geht der Anfang zurück bis zum Beginn seiner Wortmeldung**, gemessen
+über den Stimmabdruck (`video/stimmabdruck.py`): rückwärts, solange die
+vorigen Abschnitte seine Stimme tragen und keine Pause über 2 s dazwischen
+liegt. Ohne Stimmabdruck bleibt es bei einer Sekunde Vorlauf — lieber der alte
+Stand als eine Vermutung.
+
+**Und die Obergrenze ist von 100 auf 140 Sekunden gestiegen.** Sie greift nur,
+wenn gar kein Übergang gefunden wird, und war zu knapp: Aaronsons Antwort lief
+schon 78 s.
+
+### Das Transkript zeigt jetzt auch, was nicht drin ist
+
+Jeder Befund trägt **`davor`** und **`danach`** — je 30 Sekunden Transkript vor
+und hinter dem Schnitt. Ohne das kann er nicht sagen, was fehlt, ohne die ganze
+Folge zu öffnen.

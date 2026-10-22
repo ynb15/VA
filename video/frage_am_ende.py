@@ -17,7 +17,12 @@ MUSTER = re.compile(r"(?i)(makes?\s+(a\s+)?(human\s+)?life\s+meaningful"
                     r"|what\s+makes\s+life\s+meaning"
                     r"|life\s+meaningful\s+(for|to)\s+you"
                     r"|makes\s+your\s+life\s+meaningful)")
-STUECK, MAX_VERSUCHE, ZIEL_MAX = 210.0, 4, 100.0
+# Seine Anweisung vom 22.10.2026: "dass du lieber zu defensiv als zu offensiv
+# schneidest". Die Fehlerrichtung ist unsymmetrisch — eine Auslassung, die er
+# nicht wollte, kostet ihn Suchen und eine neue Renderrunde; eine Zeile zu viel
+# kostet ihn eine Nummer. ZIEL_MAX greift nur, wenn gar kein Uebergang gefunden
+# wird, und war mit 100 s zu knapp: Aaronsons Antwort lief schon 78 s.
+STUECK, MAX_VERSUCHE, ZIEL_MAX = 210.0, 4, 140.0
 
 LISTE = os.path.join(HIER, "meaningful-folgen.json")
 
@@ -177,6 +182,45 @@ def schluss_waehlen(daten, idx):
     return ende
 
 
+def beginn_waehlen(daten, idx, fenster):
+    """Der Anfang des Bogens: zurueck bis zum Beginn SEINER Wortmeldung.
+
+    Das Muster trifft die Zeile mit "what makes life meaningful", aber die
+    Frage faengt frueher an. Bei Kyle Kingsbury lief der Anlauf ueber vier
+    Abschnitte — "I guess this answers my favorite question, I like to ask at
+    the end, cause we're on the Man's Search for Meaning podcast, right?" —
+    und das Stueck begann mit einem bezuglosen "right?". Genau die Art
+    Auslassung, die seine Anweisung vom 22.10. meint.
+
+    Zurueckgegangen wird, solange die vorigen Abschnitte SEINE Stimme tragen;
+    der erste, der es nicht tut, beendet die Suche. Ohne Stimmabdruck bleibt
+    es bei einer Sekunde Vorlauf — lieber der alte Stand als eine Vermutung.
+    """
+    sicher = max(0.0, daten[idx]["start"] - 1.0)
+    try:
+        sys.path.insert(0, HIER)
+        import stimmabdruck as sa
+        if not os.path.exists(sa.ABDRUCK):
+            return sicher
+        kand = [d for d in daten[max(0, idx - 8):idx]
+                if d["end"] - d["start"] >= sa.MINDEST]
+        if not kand:
+            return sicher
+        werte = sa.kennzeichnen_liste([dict(d) for d in kand], fenster)
+        erster = daten[idx]["start"]
+        for d in reversed(werte):
+            if d["sprecher"] != "YNB" or erster - d["end"] > 2.0:
+                break
+            erster = d["start"]
+        if erster < daten[idx]["start"]:
+            print(f"    Anlauf mitgenommen: {daten[idx]['start'] - erster:.1f}s "
+                  f"vor der Frage", flush=True)
+        return max(0.0, min(sicher, erster - 0.3))
+    except Exception as e:
+        print(f"    Anlaufsuche uebersprungen: {type(e).__name__}", flush=True)
+        return sicher
+
+
 def eine(f):
     name, k, fid, nr = f["name"], f["k"], f["id"], f["nr"]
     groesse, gesamt = f.get("groesse"), f.get("gesamt")
@@ -268,7 +312,7 @@ def eine(f):
             return (f"{nr}. {name}: Frage NICHT in den letzten "
                     f"{MAX_VERSUCHE * STUECK:.0f}s — Befund abgelegt")
         schluss = schluss_waehlen(daten, idx)
-        von = max(0.0, daten[idx]["start"] - 1.0)
+        von = beginn_waehlen(daten, idx, fenster)
 
         teile = None
         if anschluss and schluss > anschluss[2]:
@@ -292,7 +336,14 @@ def eine(f):
                    "anschlussfenster": (os.path.basename(anschluss[0])
                                         if teile else None),
                    "fenster_von": round(von, 2), "fenster_bis": round(schluss, 2),
-                   "frage": daten[idx]["text"].strip()},
+                   "frage": daten[idx]["text"].strip(),
+                   # Was direkt davor und danach steht. Seine Anweisung vom
+                   # 22.10.: er will das Transkript dazu und selbst sagen, was
+                   # raus soll. Dafuer muss sichtbar sein, was NICHT drin ist.
+                   "davor": " ".join(d["text"].strip() for d in daten
+                                     if von - 30 <= d["start"] < von),
+                   "danach": " ".join(d["text"].strip() for d in daten
+                                      if schluss <= d["start"] < schluss + 30)},
                   open(befund, "w"), indent=1, ensure_ascii=False)
 
         kodierung = ["-c:v", "libx264", "-crf", "17", "-preset", "veryfast",
