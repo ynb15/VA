@@ -75,7 +75,8 @@
     "abgenommen": "In This Shirt und Tom Odell Piano - von ihm am 22.10. abends ausdruecklich fuer diesen Test bestellt. Comptine hatte er nachmittags selbst verlinkt.",
     "warum_trotz_sperre": "Seine Ansage: 'dann teste ich, ob eines davon auf YouTube durchgeht'. Die Sperren lauteten 'exceeds the length limits set by the copyright holder' - die Laenge ist also der Hebel, den er pruefen will. Er laedt hoch, nicht ich.",
     "regel": "Nur Titel, die er benannt oder verlinkt hat. Dass eine Datei in seinem Musikordner liegt, sagt ueber die Rechte nichts.",
-    "dateiname": "Die Fassung ohne Musik traegt den Grundnamen; die Musikfassungen tragen den Titel in Klammern, damit er nach dem Hochladen weiss, welche Sperre zu welchem Titel gehoert."
+    "dateiname": "Die Fassung ohne Musik traegt den Grundnamen; die Musikfassungen tragen den Titel in Klammern, damit er nach dem Hochladen weiss, welche Sperre zu welchem Titel gehoert.",
+    "regel_songanfang": "Der Pegel eines Betts wird an der GENUTZTEN Stelle gemessen, und die Stelle wird so gewaehlt, dass der Titel dort schon auf vollem Pegel steht. Fast jeder Titel faengt leise an. Zweimal hat er genau das beanstandet - bei Daylight am 21.10. ('da ist gar keine Musik') und bei In This Shirt am 22.10. Darum steht zu jedem Titel eine 'ab_sekunde' in den Musikquellen."
   },
   "offen": [
     "Die Totale bei etwa Sekunde 25 traegt die Pointe 'to see yourself reflected through the other' und zeigt ihn klein im Profil. Enger fassen geht, ist aber eine Aenderung am Bild und braucht seine Zustimmung."
@@ -105,8 +106,8 @@
       {
         "name": "The Irrepressibles - In This Shirt",
         "drive_id": "1aExrMK5cJdbFcY0T0T3iGFsw8upoiryJ",
-        "ab_sekunde": 0,
-        "hinweis": "Von der ersten Sekunde an bei -9,3 dB. GESPERRT: am 22.10. ebenfalls beanstandet, nachdem Daylight schon gesperrt war."
+        "ab_sekunde": 2,
+        "hinweis": "Sekunde 0-2 liegen bei -14,6 und -13,1 dB RMS, ab Sekunde 2 steht der Titel bei rund -9,5 dB; Gesang und Perkussion kommen bei 0:23. Darum ab 0:02, nicht ab 0:00 - sein Befund vom 22.10. GESPERRT am 22.10. frueh, 'exceeds the length limits set by the copyright holder'. Unter 90 s ungetestet."
       },
       {
         "name": "Max Richter - On The Nature Of Daylight",
@@ -137,8 +138,8 @@
     },
     {
       "datei": "YNB Podcast David Sutcliffe Meaning (In This Shirt).mp4",
-      "musik": "The Irrepressibles - In This Shirt, ab 0:00, Bett -20,5 dB (3 dB unter der Stimme)",
-      "hinweis": "Von ihm am 22.10. abends ausdruecklich bestellt. Derselbe Titel wurde heute frueh schon einmal beanstandet - jetzt unter 90 s, das ist genau der Test."
+      "musik": "The Irrepressibles - In This Shirt, ab 0:02, Bett -20,5 dB (3 dB unter der Stimme), Einblendung 0,1 s",
+      "hinweis": "Von ihm am 22.10. abends ausdruecklich bestellt. Erste Fassung lief ab 0:00 und bekam seinen Befund: 'der Song, der muss schon frueher losgehen. Die ersten paar Sekunden, da ist fast gar keine Musik.' Nachgemessen war nicht die Blende schuld, sondern der Songanfang: Sekunde 0-2 liegen bei -14,6 und -13,1 dB RMS, der Rest bei rund -9,5 dB. Jetzt faengt das Bett bei 0:02 an, wo der Titel schon auf vollem Pegel steht, und die Einblendung ist von 0,3 auf 0,1 s gekuerzt. Nachgemessen am fertigen Short: die ersten zwei Sekunden stehen jetzt bei -31,2 statt -34,7 dB, der laufende Pegel bleibt bei -32,4 dB. Die Musik ist also ab dem ersten Bild da."
     },
     {
       "datei": "YNB Podcast David Sutcliffe Meaning (Odell Piano).mp4",

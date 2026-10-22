@@ -422,3 +422,35 @@ wurden ausschliesslich **Pausen**, kein gesprochenes Wort. Nachgewiesen mit
 Zeichen derselbe. Die 14 Stellen stehen einzeln in
 `video/shorts/sutcliffe-meaningful.pausen.json`, damit er sie sieht, statt sie
 suchen zu muessen.
+
+## 22.10.2026, 19:30 — „Die ersten paar Sekunden, da ist fast gar keine Musik" — es war der Songanfang, nicht die Blende.
+
+Sein Befund zu „In This Shirt": *„der Song, der muss schon frueher losgehen. Die
+ersten paar Sekunden, da ist fast gar keine Musik."* Derselbe Befund wie am
+21.10. bei Daylight.
+
+Mein erster Verdacht war die Einblendung (0,3 s). Falsch. Nachgemessen am Titel
+selbst, sekundenweise:
+
+| Sekunde im Song | RMS |
+|---|---|
+| 0 | −14,6 dB |
+| 1 | −13,1 dB |
+| 2 | −10,2 dB |
+| 5–20 | rund −9,5 dB |
+
+Der Titel faengt also **4 bis 6 dB leiser** an. Das Bett lief ab 0:00, und damit
+lagen die ersten zwei Sekunden des Shorts gemessen bei −34,7 dB gegen −32,6 dB
+im Rest — genau was er hoert.
+
+Behoben, indem das Bett bei **0:02** einsetzt, wo der Titel schon auf vollem
+Pegel steht, und die Einblendung von 0,3 auf 0,1 s gekuerzt wird. Nachgemessen
+am fertigen Short: erste zwei Sekunden −31,2 statt −34,7 dB, laufender Pegel
+unveraendert −32,4 dB. Kein Knacken am Einsatz.
+
+→ betrifft: **jeden** Titel. Fast jeder faengt leise an. Die Stelle im Song wird
+so gewaehlt, dass der Titel dort schon steht — nicht bei 0:00, nur weil das die
+erste Sekunde ist. Zu jedem Titel gehoert darum eine `ab_sekunde` in den
+Musikquellen, und der Pegel wird an der genutzten Stelle gemessen, nicht am
+Songanfang. `musik_drunter.py` nimmt die Einblendung jetzt als `--blende-ein`
+entgegen, damit sie nicht mehr im Code festhaengt.

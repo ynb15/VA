@@ -2,6 +2,7 @@
 """Legt das Musikbett unter einen fertigen Short - gleiche Kette wie der Renderer.
 
     python3 musik_drunter.py <video.mp4> <musik.mp3> <stamm> <ab-sekunde> <dB-unter> ...
+                             [--blende-ein SEKUNDEN]
 
 Je angegebenem Abstand entsteht eine Fassung. Der Pegel wird nicht geraten,
 sondern aus Stimme und Bett gerechnet, genauso wie in `shorts-render.py`:
@@ -35,15 +36,26 @@ def dauer(pfad):
 
 
 def main():
-    video, musik, stamm = ARGV[1], ARGV[2], ARGV[3]
-    ab_s = float(ARGV[4])          # wo im Song das Bett anfaengt
-    abstaende = [float(x) for x in ARGV[5:]]
+    argv = list(ARGV)
+    # Seine Rueckmeldung vom 22.10. zu "In This Shirt": "der Song, der muss
+    # schon frueher losgehen. Die ersten paar Sekunden, da ist fast gar keine
+    # Musik." Nachgemessen war nicht die Blende schuld, sondern der Songanfang
+    # (0-2 s liegen 4-6 dB unter dem Rest). Trotzdem gehoert die Blende
+    # einstellbar: 0,3 s sind am Anfang eines Shorts hoerbar.
+    blende_ein = 0.3
+    if "--blende-ein" in argv:
+        i = argv.index("--blende-ein")
+        blende_ein = float(argv[i + 1])
+        del argv[i:i + 2]
+    video, musik, stamm = argv[1], argv[2], argv[3]
+    ab_s = float(argv[4])          # wo im Song das Bett anfaengt
+    abstaende = [float(x) for x in argv[5:]]
     # Seine Ansage vom 21.10.: "die Musik auf jeden Fall viel lauter, und die
     # muss auch schon frueher starten -- da, wo ich die Frage stelle, ist gar
     # keine Musik." Also kurze Blende statt 1,5 s, und sanfteres Wegdruecken
     # (ratio 4 statt 8), damit das Bett unter der Stimme stehen bleibt,
     # statt zu verschwinden.
-    blende_ein, ratio = 0.3, 4
+    ratio = 4
     laenge = dauer(video)
     stimme_db = sr.mittlerer_pegel(video, dauer=laenge)
     # Den Pegel des Betts an der Stelle messen, die auch benutzt wird. Von
