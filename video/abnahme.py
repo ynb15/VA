@@ -91,10 +91,21 @@ def main():
     if a.srt:
         n = sum(1 for z in open(a.srt, encoding="utf-8") if "-->" in z)
         pruef("Untertitel", n > 0, f"{n} Einblendungen")
-        orts = subprocess.run([sys.executable, os.path.join(HIER, "ortscheck.py"), a.srt],
-                              capture_output=True, text=True)
-        pruef("Ortscheck", orts.returncode == 0,
-              "sauber" if orts.returncode == 0 else orts.stdout.strip().splitlines()[-1])
+        ortspfad = os.path.join(HIER, "ortscheck.py")
+        if not os.path.exists(ortspfad):
+            # Shorts II hat genau hier einen IndexError gesehen: liegt
+            # ortscheck.py nicht daneben, lief der Aufruf ins Leere, stdout
+            # blieb leer, und `.splitlines()[-1]` griff auf eine leere Liste.
+            # Eine fehlende Pruefung darf die Abnahme nicht abstuerzen
+            # lassen — sie muss sagen, dass sie fehlt.
+            pruef("Ortscheck", False, f"ortscheck.py fehlt neben {os.path.basename(__file__)}")
+        else:
+            orts = subprocess.run([sys.executable, ortspfad, a.srt],
+                                  capture_output=True, text=True)
+            meldung = (orts.stdout.strip().splitlines() or
+                       orts.stderr.strip().splitlines() or ["ohne Ausgabe"])[-1]
+            pruef("Ortscheck", orts.returncode == 0,
+                  "sauber" if orts.returncode == 0 else meldung)
     else:
         pruef("Untertitel", False, "keine .srt uebergeben (--srt)")
 
