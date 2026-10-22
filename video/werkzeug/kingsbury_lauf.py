@@ -101,23 +101,50 @@ def stufe3_dauer():
 
 
 def stufe4_transkript():
+    """Stueckweise, damit ein Containerneustart nicht alles kostet.
+
+    Am 22.10. hat ein Neustart eine laufende Transkription von 77 Minuten
+    mitgenommen - der Ton war fertig, die Arbeit weg. Jetzt wird in Fenstern
+    von 300 s gearbeitet und nach jedem Fenster gespeichert. Ein neuer Lauf
+    liest den Fortschritt und macht am naechsten Fenster weiter.
+    """
     if JSON.exists() and JSON.stat().st_size > 10_000:
         sag("Stufe 4: Transkript liegt schon da")
         return
-    # openai-whisper laedt seine Gewichte von openaipublic.azureedge.net,
-    # und der Host ist am Egress-Proxy gesperrt (403 auf CONNECT, am
-    # 21.10. gemessen). faster-whisper holt sie von HuggingFace ueber
-    # us.aws.cdn.hf.co, und der antwortet (206). Gleiches Modell, anderer
-    # Weg - kein Umrouten einer Sperre, ein anderer Anbieter.
-    from faster_whisper import WhisperModel
-    sag("Stufe 4: lade Modell medium (faster-whisper, int8)")
-    modell = WhisperModel("medium", device="cpu", compute_type="int8")
-    sag("Stufe 4: transkribiere — das ist der lange Teil")
     sys.path.insert(0, str(W))
     from ton_lesen import ton_als_array
-    teile, info = modell.transcribe(ton_als_array(FLAC), language="en")
-    segmente = [{"start": t.start, "end": t.end, "text": t.text}
-                for t in teile]
+    from faster_whisper import WhisperModel
+
+    FENSTER = 300.0
+    RATE = 16000
+    teil_datei = W / "kingsbury-teile.json"
+    fertig = json.loads(teil_datei.read_text()) if teil_datei.exists() else {}
+    if fertig:
+        sag(f"Stufe 4: {len(fertig)} Fenster liegen schon vor — mache weiter")
+
+    sag("Stufe 4: lese Ton")
+    ton = ton_als_array(FLAC)
+    anzahl = int(len(ton) / RATE / FENSTER) + 1
+    sag(f"Stufe 4: {anzahl} Fenster a {FENSTER:.0f}s")
+    sag("Stufe 4: lade Modell medium (faster-whisper, int8)")
+    modell = WhisperModel("medium", device="cpu", compute_type="int8")
+
+    for n in range(anzahl):
+        if str(n) in fertig:
+            continue
+        a = int(n * FENSTER * RATE)
+        b = min(int((n + 1) * FENSTER * RATE), len(ton))
+        if a >= b:
+            break
+        teile, _ = modell.transcribe(ton[a:b], language="en")
+        versatz = n * FENSTER
+        fertig[str(n)] = [{"start": t.start + versatz, "end": t.end + versatz,
+                           "text": t.text} for t in teile]
+        teil_datei.write_text(json.dumps(fertig, ensure_ascii=False))
+        sag(f"Stufe 4: Fenster {n+1}/{anzahl} fertig "
+            f"({len(fertig[str(n)])} Segmente, bis {versatz+FENSTER:.0f}s)")
+
+    segmente = [s for n in sorted(fertig, key=int) for s in fertig[n]]
     JSON.write_text(json.dumps(segmente, ensure_ascii=False))
     sag(f"Stufe 4: fertig, {len(segmente)} Segmente")
 
