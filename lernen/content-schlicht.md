@@ -1,3 +1,34 @@
+## 22.10.2026 — NEUE REGEL: jeder Short geht mit seinem Transkript raus
+
+**Seine Ansage, und sie gilt für alle Short-Agenten:** *„dass die Shorts
+mit dem Transkript geliefert werden müssen, damit ich einfacher Feedback
+geben kann, beziehungsweise einfach dir sagen kann, was raus soll."*
+
+**Ab sofort gehört zu jedem Short eine Liste zum Durchstreichen**, nicht
+nur die Datei. `video/kurzliste.py` baut sie aus der `.srt`, die der
+Renderer ohnehin über `--srt-out` schreibt: durchnummeriert, mit den
+Zeiten **im fertigen Short** — er streicht eine Nummer, wir schneiden.
+
+Die rohe `.srt` allein taugt dafür nicht: drei Wörter je Zeile, hundert
+Einblendungen. Und Satzenden allein auch nicht, weil in eingebrannten
+Untertiteln fast kein Satzzeichen steht (nur das Fragezeichen bleibt).
+Die Liste bricht deshalb an Sprechpausen und spätestens nach vierzehn
+Wörtern um.
+
+    python3 video/shorts-render.py … --srt-out kurz.srt
+    python3 video/kurzliste.py kurz.srt --titel "Aaronson 1" --out liste.txt
+
+`video/abnahme.py` fragt die `.srt` bereits ab; ohne sie gibt es kein
+„bestanden".
+→ betrifft: content-*, YNB Cinema, EA, alle Short-Agenten
+
+**Zweite Ansage derselben Runde:** die Kopfzeile soll **deutlich größer**
+und auf **weißem Grund** stehen. Gemessen: bei Schriftgröße 96 ist das
+Feld 543 px breit, also 50 % der Bildbreite; bei 170 sind es 899 px, also
+83 % — links und rechts bleiben 90 px. Das ist die Größe, die er meint.
+`--kopfzeile-groesse 170 --kopfzeile-hell`.
+→ betrifft: content-*, YNB Cinema
+
 ## 22.10.2026 — Warum dieselben Fehler bei verschiedenen Agenten passieren
 
 **Seine Frage, und sie ist berechtigt:** *„Ich verstehe nicht, warum hier
