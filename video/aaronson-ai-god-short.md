@@ -36,6 +36,87 @@ ein zweiter Filter darüber wäre eine Änderung, die niemand bestellt hat.
 
 ---
 
+## Runde 2 — seine vier Korrekturen, 22.10. ~10:05
+
+**Wörtlich:** *„Okay, ich möchte das zweite Short nehmen. Allerdings hast du
+Learnings ignoriert, beziehungsweise Regeln, die ich gegeben habe. Und zwar ist
+das Logo viel zu klein und da fehlt wieder mal das Outro. Ebenso wie der
+Filter, den ich euch Agenten gegeben habe. Und dann möchte ich, dass du den
+Song In the Shirt darunter legst."*
+
+**Gewählt: Fassung B.** Die gebaute Datei ist
+**`video/shorts/aigod-B2.mp4`** — 31,6 s (27,4 s + 4,2 s Outro).
+Gegenüberstellung: `video/shorts/aigod-vorher-nachher.jpg`.
+
+### 1 · Das Logo war 10,2 % breit statt 28 % — und das lag an der Datei
+
+**Kein Bedienfehler, ein messbarer Fehler in `marke/ynb-logo-weiss.png`.**
+Die Datei ist **5224×2947 px**, die sichtbare Marke darin aber nur
+**1901×1518 px** — **63,6 % der Dateibreite sind durchsichtiger Rand.**
+Der Renderer skaliert die *Datei* auf `--logo-breite` (Vorgabe 302 px = 28 %
+der Bildbreite), also wird die Marke nur **302 × 0,364 = 110 px = 10,2 %**.
+
+**Behoben, ohne den Renderer anzufassen:** die Datei einmal auf ihren
+sichtbaren Inhalt beschnitten und als
+`video/marke/ynb-logo-weiss-beschnitten.png` abgelegt. Damit trifft
+`--logo-breite 302` genau die **28 %** aus dem Preset — die Marke ist jetzt
+**2,75-fach** so breit wie vorher.
+
+**Das betrifft jeden Short, den irgendein Agent mit dieser Logodatei gebaut
+hat.** Steht im Lernkanal.
+
+### 2 · Das Outro fehlte — es liegt in seinem Drive, nicht im Repo
+
+`YNB Podcast: Outro 9:16` (`1kLsW8GjTWR-X4_02r7yqWuRUtCa6h5aX`, 144 MB),
+ProRes **1080×1920, 24 B/s, 4,21 s**, Ton PCM 48 kHz. Der Renderer bringt es
+auf 1080×1920/30 und hängt es an; Look, Logo und Untertitel bekommt es
+bewusst nicht.
+
+### 3 · Der Filter läuft — aber als Annäherung, nicht als seine LUT
+
+`--look preset` war in Runde 1 von mir auf `aus` gesetzt, mit der Begründung,
+der Clip sei schon gradiert. **Seine Ansage schlägt die Begründung**, der
+Filter ist drin. Was der Renderer dazu ausgibt, wörtlich:
+
+```
+Look: Annaeherung (LUT .../luts/ynb_look.png fehlt)
+```
+
+**Die LUT-Datei selbst ist in Drive unter keinem Namen zu finden** — gesucht
+nach `Preset`, `LUT`, `Filter`, `Oppenheimer`, `hald`, `cube`, `Look`,
+`Eveleth` und im Ordnerbaum `YNB Podcast: Shorts` (dort liegen nur
+`Shorts: Music`, `Shorts: Scenes` und `Into The Wild.mov`). Was läuft, ist
+die entsättigt-kühle Annäherung aus seinem Preset plus Vignette.
+**Exakt wird es mit fünf Minuten CapCut**, Anleitung in
+`video/preset-ynb.md` auf `claude/content-assistant`: Identitäts-Hald-Bild
+auf die Timeline, seinen Filter drauf, exportieren, `make_lut.py` darüber.
+
+**Und es ist ein zweiter Durchgang** — die Quelle trägt bereits eine
+Gradation. Wenn es zu schwer wirkt, sind die zwei Stellschrauben die echte
+LUT oder `--look aus`.
+
+### 4 · Die Musik liegt darunter
+
+`Kopie von The Irrepressibles - In This Shirt.mp3`
+(`1aExrMK5cJdbFcY0T0T3iGFsw8upoiryJ`, 5:35). Benutzt werden die **ersten
+27,4 s**; der Renderer blendet 1,5 s ein, 2 s aus und drückt das Bett per
+`sidechaincompress` unter der Stimme weg. Gemessener Pegel:
+**Stimme −31,8 dB, Bett −11,1 dB → −28,7 dB**, also 8 dB unter der Stimme.
+**Belegt, dass es wirklich liegt:** die stillsten 2 % der Tonblöcke gehen von
+**−82,9 dB** (digitale Stille) auf **−42,5 dB** — das ist das Bett in den
+Sprechpausen. Über dem Outro läuft es nicht, das hat seinen eigenen Ton.
+
+**Soll eine andere Stelle des Songs darunter, sag die Minute** — dann
+schneide ich das Bett dort an.
+
+### Was gleich geblieben ist
+
+Tempo 1,0 · Ausschnitte und Zeilenhöhen wie gemessen · Untertitel wortgleich
+(SRT byte-identisch zu Fassung B) · Ortsprüfung sauber · **Ton weiter
+unverändert bei −28,1 LUFS**, weil die Lautheitsfrage aus Runde 1 offen ist.
+
+---
+
 ## Zwei Fassungen — eine Entscheidung für Dich
 
 Beide haben denselben Einstieg und dieselbe zweite Stelle. Sie unterscheiden

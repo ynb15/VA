@@ -8,6 +8,69 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 ## 2026-10-22
 
+- **Das Logo steht in jedem bisher gebauten Short auf 10,2 % der Bildbreite
+  statt auf den 28 % aus seinem Preset — die Ursache liegt in der Logodatei,
+  nicht im Renderer.** `video/marke/ynb-logo-weiss.png` ist **5224×2947 px**,
+  die sichtbare Marke darin aber nur **1901×1518 px**: **63,6 % der
+  Dateibreite sind durchsichtiger Rand.** `shorts-render.py` skaliert die
+  *Datei* auf `--logo-breite` (Vorgabe `int(W*0.28)` = 302 px), also wird die
+  Marke nur `302 × 0,364 = 110 px` breit — **10,2 % statt 28 %.**
+  Seine Rückmeldung vom 22.10.: *„das Logo ist viel zu klein."*
+  **Die Gegenmaßnahme kostet nichts und braucht keine Änderung am Renderer:**
+  die Datei einmal auf ihren sichtbaren Inhalt beschneiden. Liegt als
+  `video/marke/ynb-logo-weiss-beschnitten.png` auf diesem Branch; damit
+  trifft `--logo-breite 302` genau 28 %.
+  **Die Regel dahinter: ein Prozentwert auf eine Datei angewandt trifft die
+  Datei, nicht das, was man darin sieht.** Gilt für jedes Overlay mit
+  Transparenzrand — Logo, Chromzeichen, Endkarte.
+  → betrifft: content-*, thumbnails
+- **Das Outro liegt in Drive und war nur nie gesucht worden.**
+  `YNB Podcast: Outro 9:16` (`1kLsW8GjTWR-X4_02r7yqWuRUtCa6h5aX`), ProRes
+  **1080×1920, 24 B/s, 4,21 s**, PCM 48 kHz, im Ordner `YNB Podcast: Outro`
+  (`1OgYU4M3r1vihWvsWj1n9XTjsfPsZAkH-`). Daneben die 16:9-Fassung für Clips
+  (`1TG-PSYPsxAE3N_QvcTxOvIvIKsGCq5l4`, 419 MB). `video/preset-ynb.md` führt
+  das Outro bis heute unter „was fehlt" — **es fehlt nicht, es lag im
+  falschen Ordnerbaum gesucht.** Seine Rückmeldung: *„da fehlt wieder mal das
+  Outro."*
+  → betrifft: content-*, alle
+- **Die LUT seines Filters ist in Drive unter keinem Namen auffindbar — die
+  Suche ist jetzt dokumentiert, damit sie niemand wiederholt.** Gesucht nach
+  `Preset`, `LUT`, `Filter`, `Oppenheimer`, `hald`, `cube`, `Look`, `Eveleth`
+  (alle leer) und im Ordnerbaum `YNB Podcast: Shorts`
+  (`1EvrsgqS6sxFYAQTxpNzCWxPOz9ABXcb3`), der **nur** `Shorts: Music`,
+  `Shorts: Scenes` und `Into The Wild.mov` enthält. `--look preset` läuft
+  deshalb weiter als Annäherung und schreibt das ehrlich in die Ausgabe.
+  **Er geht davon aus, uns den Filter gegeben zu haben** (*„der Filter, den
+  ich euch Agenten gegeben habe"*) — die fünf Minuten CapCut aus
+  `preset-ynb.md` sind der einzige bekannte Weg zur echten LUT.
+  → betrifft: content-*, alfred
+- **`--look preset` ist die Vorgabe des Renderers; wer sie abschaltet, schaltet
+  seinen Filter ab.** Ich hatte in Runde 1 `--look aus` gesetzt, weil die
+  Quelle ein bereits gradierter Clip war — begründet, aber seine Regel sticht:
+  *„Ebenso wie der Filter, den ich euch Agenten gegeben habe."*
+  **Eine gute Begründung ersetzt keine seiner Vorgaben; wer abweicht, fragt
+  vorher oder legt beide Fassungen vor.**
+  → betrifft: alle Content-Agenten
+- **Musik: er gibt die Datei, und dann gilt sein Weg.** Freigegeben am 22.10.
+  für dieses Short: `The Irrepressibles – In This Shirt`
+  (`1aExrMK5cJdbFcY0T0T3iGFsw8upoiryJ`), neben
+  `David Kushner – Daylight` und `Max Richter – On The Nature Of Daylight`
+  im Ordner **`Shorts: Music`** (`1M_FhnC0GzERt0zyKvFDae-gumpn--o4O`).
+  `--musik` setzt den Pegel selbst: gemessen Stimme −31,8 dB, Bett −11,1 dB
+  → **−28,7 dB**, 8 dB darunter, mit `sidechaincompress`. **Dass das Bett
+  wirklich liegt, prüft man an den Pausen**, nicht am Mittelwert: die
+  stillsten 2 % gehen von −82,9 dB auf −42,5 dB.
+  → betrifft: alle Content-Agenten
+- **Nebenbefund, ungefragt gefunden und für Kingsbury entscheidend: Kyle
+  Kingsbury hat selbst Dateien geteilt.** Unter `sharedWithMe` von
+  `kyle@kingsbu.com`: `C0105.MP4`, zwei DJI-Drohnenclips vom **31.08.2026**
+  und `ZOOM0314_Tr1.WAV` / `Tr2.WAV`. **Das ist genau das Material, dessen
+  Fehlen die Lücke zwischen 77:12 Rohton und 129:50 Schnitt erklärt.**
+  Nicht geprüft, nicht angefasst — die Kingsbury-Arbeit ruht auf seine
+  Anweisung. Aber wer sie wieder aufnimmt, fängt hier an.
+  → betrifft: content-*, youtube-manager, alfred
+
+
 - **Gegenbefund zu Alfreds Prüfung von 09:30: `grep -c 'STUMME_ZEICHEN'` misst
   die falsche Sache, und die Fassung von Shorts I ist in diesem Punkt in
   Ordnung.** Seine Ansage lautete, `shorts-render.py` auf
