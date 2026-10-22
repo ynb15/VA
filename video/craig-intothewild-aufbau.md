@@ -17,28 +17,56 @@ Kosten: 4,5 Prozent der Bildhöhe. Siehe `untertitel_finden.py`.
 Gegengeprüft am fertigen Short: 105 Proben im Abstand 0,5 s über das untere
 Fünftel — kein einziger eingebrannter Untertitel mehr im Bild.
 
-## Die neun Einspieler
+## Die zwoelf Einspieler (Fassung D)
 
-Jeder aus einer anderen Stelle des Trailers. **Nichts wird zweimal benutzt.**
-Bei 171 brauchbaren Sekunden gibt es dafür keinen Grund.
+Bedingung dieser Runde: **die Kamera muss auf McCandless sein.** Nicht
+Landschaft, nicht nur Haende. Dazu Craig im Bild beim ersten Satz, beim
+letzten Satz und einmal in der Mitte.
 
-| Name | Trailer ab | Dauer | Bild                        | im Short     |
-|------|-----------:|------:|-----------------------------|--------------|
-| n1   |       24,0 |  7,7s | Wald, Rucksack am Wasser    | 0,00–6,40    |
-| n2   |       64,5 |  4,7s | Lesen im Gegenlicht         | 6,40–10,30   |
-| n3   |      148,0 |  4,5s | **das Tagebuch**            | 10,30–14,00  |
-| n4   |       37,5 |  4,8s | Silhouette am Meer, Vögel   | 14,00–18,00  |
-| n5   |       43,5 |  4,8s | Pferde                      | 18,00–22,00  |
-| n6   |       96,0 |  7,2s | Wüste, Gehen                | 25,00–31,00  |
-| n7   |      116,0 |  6,6s | Schnee, Berge               | 31,00–36,50  |
-| n8   |       68,0 |  5,4s | Wasserfall                  | 39,50–44,00  |
-| n9   |      124,5 |  7,9s | Bus im Schnee, Lagerfeuer   | 44,00–50,60  |
+| Nr | Trailer ab | Dauer | Bild                                   | im Short     |
+|----|-----------:|------:|----------------------------------------|--------------|
+| –  |          – |     – | **Craig** - erster Satz                | 0,00–2,28    |
+| m1 |      100,0 |  7,2s | Lauf frei, dann Rucksack und Hut       | 2,28–9,00    |
+| m2 |      144,0 |  6,6s | **TAGEBUCH** - HAPPINESS-Seite         | 9,00–15,18   |
+| m3 |      168,6 |  3,6s | Gesicht ganz nah                       | 15,18–18,37  |
+| m4 |       36,3 |  3,2s | Silhouette am Abendmeer                | 18,37–21,08  |
+| m5 |       44,0 |  3,4s | laeuft mit den Pferden                 | 21,08–24,02  |
+| –  |          – |     – | **Craig**                              | 24,02–25,98  |
+| m6 | 118,8+129,3|  4,8s | blickt ueber die Berge, dann Gesicht   | 25,98–30,70  |
+| m7 |      131,0 |  4,8s | Anzug, die Familie                     | 30,70–35,00  |
+| m8 |       27,0 |  3,3s | geht auf die Kamera zu, am Wasser      | 35,00–37,82  |
+| m9 |       74,0 |  3,5s | Lauf durch den Wald                    | 37,82–40,83  |
+| m10|      115,2 |  3,3s | Arme ausgebreitet am Schneehang        | 40,83–43,65  |
+| m11|       84,0 |  3,6s | Kajak im Wildwasser                    | 43,65–46,75  |
+| m12|      155,0 |  3,8s | **TAGEBUCH** - REAL WHEN SHARED        | 46,75–50,07  |
+| –  |          – |     – | **Craig** - der Ubuntu-Satz, ohne Bild | 50,07–Ende   |
 
-**n3 liegt auf dem Zitat.** Bei 12,5–13,5 s sagt Craig „happiness … when
-shared", und im Bild steht die Tagebuchseite. Das war die Vorgabe.
+**Das Tagebuch laeuft an beiden Stellen durch, ohne ein Bild zu wiederholen.**
+Moeglich ist das, weil bei 144–167 s 24 Sekunden Tagebuch am Stueck liegen:
+m2 nimmt das Schreiben der HAPPINESS-Seite, m12 die Worte REAL WHEN SHARED
+unter dem Stift. Zwei Stellen derselben Szene, kein gemeinsames Bild.
 
-Craig selbst ist noch bei 22,0–25,0, 36,5–39,5 und 50,6–52,5 zu sehen:
-7,9 von 52,5 Sekunden. **85 Prozent B-Roll.**
+Craig ist 6,75 von 52,58 Sekunden zu sehen: **87 Prozent B-Roll.**
+
+m3 sitzt auf „that made his death worth it", m7 auf „this giant parental
+system", m9 auf „going into the wilderness". Einstellungen, die einen Satz
+tragen, gehoeren an diesen Satz.
+
+## Musik
+
+`--musik` mit „In This Shirt" (The Irrepressibles), `--musik-unter 14`.
+Gemessen: Stimme −17,3 dB, Bett −11,6 dB, abgesenkt auf −19,7 dB. Der
+Spitzenpegel des Shorts bleibt bei −0,5 dB und damit genau da, wo er ohne
+Musik schon lag (−0,4 dB) — das Bett hebt den Mittelwert um 0,3 dB, mehr
+nicht.
+
+Der Titel ist durchgehend dicht (−12 dB RMS ab Sekunde 2), es gibt kein
+leises Intro, auf das man sich legen koennte. Darum die 14 dB statt der
+voreingestellten 8.
+
+**Es ist eine Handelsaufnahme.** Content ID wird sie finden; das kostet in
+der Regel die Einnahmen des Shorts, nicht den Short. Seine Entscheidung,
+ausdruecklich und namentlich getroffen.
 
 ## Was dabei nicht zu haben ist
 
