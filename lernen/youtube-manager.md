@@ -492,3 +492,51 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   gefädelt, also sah er wie eine Wiederholung aus. **Eine Mail ist ein Fall,
   kein Betreff.**
   → betrifft: ai-chief-of-staff, alle Content-Agenten
+
+### Nachtrag 22.10., zweiter — der Musikordner gemessen, nicht geschätzt
+
+- **Zwei Ordner, neun Dateien, acht verschiedene Titel.** `Shorts: Music`
+  (sein eigener, angelegt 21.10. 15:30) hält Max Richter *On The Nature Of
+  Daylight*, David Kushner *Daylight*, The Irrepressibles *In This Shirt*.
+  `YNB Epic Shorts Music` gehört **semlerisabelle@gmail.com** und ist am 21.10.
+  mit ihm geteilt — dort liegen Kushner *Daylight* (dieselbe Dateigröße,
+  4 372 206 Bytes, also dieselbe Datei), Adam Taylor *He's Alive*, Yannick
+  Lowack *Passacaglia*, Tom Odell *Another Love / Piano cover*, Benny Garner
+  *Comptine d'un autre été*, Nicholas Britell *Adagio in C Minor /
+  Succession (HBO)*.
+  **Korrektur an Alfreds Bericht: nicht „drei Titel im Ordner, alle drei
+  gesperrt".** Von seinen drei haben **zwei** gesperrt, Max Richter ist
+  ungetestet; die dritte Sperre kommt aus **Isabelles** Ordner. Drei von acht
+  gesperrt, fünf ungetestet.
+  → betrifft: ai-chief-of-staff, shorts, alle Content-Agenten
+
+- **Der Befund, der die Richtung setzt: alle acht Dateinamen nennen eine
+  kommerzielle Aufnahme.** Kein einziger kommt aus einer lizenzierten
+  Bibliothek. Damit sind die fünf ungetesteten dieselbe Bauform wie die drei
+  gesperrten — *Erwartung, nicht Messung.*
+  **Und die Coverversion schließt sich doppelt:** Garners *Comptine*-Cover ist
+  als `Melody or lyrics` gesperrt — der Anspruch gilt der **Komposition**, also
+  hilft eine eigene Aufnahme nicht. Lowacks *Passacaglia* geht umgekehrt: die
+  Komposition (Handel/Halvorsen, Halvorsen † 1935) ist frei, aber die Datei ist
+  **seine Aufnahme**, und die ist geschützt. **Oben die Komposition, unten die
+  Aufnahme — ein Cover entkommt immer nur einem von beiden.** Frei ist ein
+  Stück erst, wenn beide Seiten eine Lizenz auf seinen Namen haben.
+  → betrifft: alle Content-Agenten, shorts
+
+- **Eine Falle im Ordner: zwei verschiedene Stücke heißen „Daylight".**
+  Gesperrt hat *Daylight* von **David Kushner**. *On The Nature Of Daylight* von
+  **Max Richter** ist ein anderes Stück und ungetestet. Wer das eine gegen das
+  andere tauscht, hält die Sperre für behoben und holt sich die nächste.
+  → betrifft: shorts, thumbnails, alle Content-Agenten
+
+- **Was ein Neuhochladen kostet, gemessen:** keiner der vier gesperrten IDs
+  steht in einem öffentlichen Reiter (39 Videos, 39 Shorts). Die Reihe
+  *What Makes Life Meaningful?* hat sechs öffentliche Folgen — **Sutcliffe und
+  Aaronson sind nicht darunter.** Gesperrte Videos geben yt-dlp **gar keine
+  Metadaten**, nicht einmal den Titel; Abrufe und Kommentare stehen nur in
+  seinem Studio. **Also: öffentlich ist dort nichts angelaufen, was verloren
+  gehen könnte.** Zum Vergleich, was das Format einbringt: Median der Reihe
+  535 Abrufe, Median aller 39 Shorts 678, Spanne 26 bis 2766.
+  **Die Lehre: „was geht beim Neuhochladen verloren" ist keine Rechtsfrage,
+  sondern eine Messung — und sie fällt hier auf null.**
+  → betrifft: ai-chief-of-staff, shorts
