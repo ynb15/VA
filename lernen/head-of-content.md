@@ -5,6 +5,68 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
 
 ---
 
+## 2026-10-22, Nachtschicht — Substack ist offen, und ein Nullergebnis diszipliniert alles
+
+- **`substack.com` ist freigeschaltet, die Autoren-Subdomains nicht.** `substack.com` und
+  `ynbernard.substack.com` antworten 200; `yungpueblo.substack.com`,
+  `thedankoe.substack.com` und acht weitere alle **403 (`CONNECT tunnel failed`)**. Auch
+  die Umwege enden dort: `substack.com/home/post/p-<id>` und `/inbox/post/<id>` leiten auf
+  die Subdomain um, `publication/by-subdomain` sagt `Not authorized`. **Fremde Essaytexte
+  sind damit nicht lesbar**; für den Vergleich im Text braucht es `*.substack.com`.
+  → betrifft: alle
+
+- **Was über `substack.com` trotzdem geht, und es ist viel.** Zwei Endpunkte ohne
+  Anmeldung: `api/v1/user/<handle>/public_profile` gibt **Abozahl, Bestseller-Tier,
+  Follower und Kategorie-Rang**; `api/v1/profile/posts?profile_user_id=<id>&limit=50`
+  gibt pro Beitrag **Titel, Unterzeile, Wortzahl, Datum, Reaktionen und Teilen-Zahl**.
+  So habe ich 704 Beiträge von 16 Autoren gemessen, ohne eine Subdomain zu berühren.
+  **Grenzen, geprüft:** `limit` max 50, **kein `offset`** (HTTP 400), und
+  `publication/search` wie `post/search` liefern leer.
+  → betrifft: alle
+
+- **DAS NULLERGEBNIS: Titelform sagt über die Wirkung nichts.** 694 Beiträge, jeder auf
+  den Median seines eigenen Autors normiert. Du-Ansprache **+0,07** · Ich/Wir **±0,00** ·
+  Doppelpunkt **−0,05** · Fragezeichen **+0,01** · Zitat im Titel **−0,01** · Zahl im
+  Titel **−0,03**. **Alles Rauschen.**
+  **Damit ist der Vorbehalt bestätigt, den ich allen mitgegeben habe** („weicht ab, nie
+  wirkt besser") — und er ist jetzt nicht mehr Vorsicht, sondern Messung.
+  **Keine Titelregel als Wachstumsversprechen weitergeben.** Titelmechanik ist Anpassung
+  an ein Feld, kein Hebel. Was wirkt, liegt im Text.
+  → betrifft: youtube-manager, thumbnails, content-*, alle
+
+- **Was messbar anders ist: der Takt.** Er liegt bei **1,5 Beiträgen pro Monat**,
+  Median-Lücke **20 Tage**, größte Lücke 49, letzter Beitrag vor **46 Tagen** — der
+  langsamste der ganzen Vergleichsgruppe. Der zweitlangsamste echte Newsletter fährt 2,2.
+  Michael Easter 22,0, Esther Perel 21,7. **Gegenprobe, die dazugehört:** Experimental
+  History fährt 2,4 und hat die stärkste Einzelwirkung der Gruppe — Takt ist nicht alles,
+  aber 49-Tage-Lücken sind kein Takt.
+  → betrifft: alle
+
+- **Der eine Handwerkshebel, der ohne Textfreigabe belegt ist: die Unterzeile.**
+  Seine wiederholt den Titel in anderen Worten. Ihre **fügt hinzu** — eine Frage
+  (*„Where has all the weirdness gone?"*), einen Beleg (*„It's a lack of men in caring
+  professions, not a surplus of women in law and academia"*), ein Werkzeug mit Anzahl
+  (*„…and 3 frameworks to practice with"*), einen Scherz-Alternativtitel (*„OR: why your
+  brain needs a boxcutter"*) — oder sie **vollendet den Satz des Titels**
+  (`HEARTBREAK` ↳ *„is unpreventable . . ."*). Längen sind gleich (26–60 Zeichen gegen
+  seine 41), **die Aufgabe ist verschieden.**
+  → betrifft: youtube-manager, thumbnails, content-*
+
+- **Drei Korrekturen an meiner eigenen Datei vom 21.10., alle aus demselben Fehler.**
+  Ich hatte aus den Drive-Entwürfen auf das Veröffentlichte geschlossen.
+  **(a)** Veröffentlicht ist `How Watching Porn DESTROYS Your Life` — die DESTROYS-Fassung,
+  die ich als „nur für YouTube" gemeldet hatte. Genau verkehrt.
+  **(b)** Die Substack-URL im Entwurf ist **der Beitrag eines anderen Autors**
+  (`diogos.substack.com`), abgelegt als Vorlage. Das `(YT only)` hing an **dessen**
+  Überschrift. **Eine URL in einem Entwurf ist zuerst eine Quelle, nicht ein Beleg.**
+  **(c)** Veröffentlicht heißt es „Men", nicht „Boys".
+  Und: die Zitatkästen, die ich als sein Gerüst gemeldet hatte, stehen im Veröffentlichten
+  auf **6 von 13** Essays, Median **0** — ein Mittel, kein Gerüst.
+  **Die Lehre ist dieselbe wie gestern, nur teurer: ein Entwurf ist keine Veröffentlichung.**
+  → betrifft: alle
+
+---
+
 ## 2026-10-21, Nachtrag — der fünfte Vorbildkanal, und was er an meinem Befund korrigiert
 
 - **Jack Neel ist verifiziert und gemessen.** `@jackneel`, Kanal-ID

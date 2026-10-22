@@ -10,9 +10,22 @@ Gelesen vollständig: `The Porn Pandemic`, `Chris Will`, `Motorcycle Accident`, 
 Kopfzeilen gelesen: die zehn nummerierten Posts in `YNB Substack: 2026`
 (`1gOkHqjZz8SMk4HvT45P4BdFSzjZ24oYL`).
 
-`substack.com` ist am 21.10. weiterhin gesperrt (`CONNECT tunnel failed, 403`).
-**Gebraucht wird es nicht mehr:** die Docs tragen die Post-URL und — wichtiger — die
-**verworfenen Titelvarianten.** Das steht öffentlich nirgends.
+>  **ÜBERHOLT AM 22.10., IN DREI PUNKTEN. Erst `voice/substack-essays.md` lesen.**
+>  `substack.com` ist seit dem 21./22.10. freigeschaltet, die 13 veröffentlichten Essays
+>  sind vollständig gemessen — und sie widerlegen drei Schlüsse, die ich hier aus den
+>  Entwürfen gezogen hatte:
+>  **(a)** Veröffentlicht ist `How Watching Porn DESTROYS Your Life`, **nicht** die
+>  Du-Fassung. Mein Satz unten, er nehme für Substack die Du-Fassung und habe DESTROYS
+>  als YouTube-Variante abgehakt, ist **genau verkehrt**.
+>  **(b)** Die URL im Entwurf ist **nicht** seine Post-URL, sondern der Beitrag eines
+>  anderen Autors (`diogos.substack.com`), den er als Vorlage abgelegt hatte. Das
+>  `(YT only)` bezog sich auf **dessen** Überschrift.
+>  **(c)** `01` heißt veröffentlicht **„Men"**, nicht „Boys". Frage erledigt.
+>  Die **Entwurfsbefunde** in dieser Datei bleiben gültig — die Schlüsse über
+>  *veröffentlichte* Titel nicht.
+
+Die Docs tragen die verworfenen Titelvarianten, und das bleibt der wertvolle Teil.
+Eine URL darin ist allerdings zuerst eine **Quelle**, nicht ein Beleg.
 
 ---
 
@@ -74,10 +87,13 @@ dort steht statt der Einordnung `(4K)`.
 * verworfen: `How Watching Porn DESTROYS You/Men`
 * verworfen, **von ihm selbst markiert:** `It's visible that you watch p*rn` **`(YT only)`**
 
-**Er trennt die Register selbst, schriftlich, in Klammern.** Die DESTROYS-Fassung ist für
-YouTube, die Zwei-Sätze-Du-Fassung für Substack. Das heißt: die 13 % Du-Ansprache, die
-ich an seinen YouTube-Titeln gemessen habe, sind **keine Lücke in seinem Gehör** —
-sie sind eine Entscheidung, die er pro Plattform trifft.
+> **FALSCH, korrigiert am 22.10.** Hier stand: er trenne die Register selbst, DESTROYS
+> für YouTube und die Du-Fassung für Substack. **Veröffentlicht hat er DESTROYS — auf
+> Substack.** Die Du-Zeile steht als Unterzeile darunter. Und `(YT only)` hing an der
+> Überschrift des fremden Beitrags, nicht an seiner eigenen.
+> **Gemessen an den 13 veröffentlichten Titeln: Du 15 %, Ich 38 %** — praktisch identisch
+> mit seinen YouTube-Titeln (13 % / 36 %). **Es gibt keinen Plattformunterschied in
+> seinen Titeln.** Belege: `voice/substack-essays.md` §0 und §1.
 
 **`Chris Will` (unveröffentlicht), drei Varianten, keine entschieden:**
 `How I landed My Dream Job at Modern Wisdom` · `The Craziest Job Application in History
@@ -207,20 +223,19 @@ become? And how far are you willing to go?"*), dann drei gewöhnliche Leben
   entschieden. Darunter eine Liste `Launch` mit Namen (Alex Banayan, Cal Callahan, Eben
   Britton, Chase Reeves, David Sutcliffe, *The Chosen Ones*, Whitney & Max).
   **Was davon noch fehlt und was schon abgesprochen ist, weiß nur er.**
-* **Der Doppeleintrag der Titel.** Datei `01` heißt *Why Men Need to Break Up*, die
-  Überschrift im Dokument *Why Boys Need To Break Up With Their Mothers*, das YouTube-Video
-  *Why Men Need to Break Up With Their Mothers*. **Boys oder Men** — in der Schrift
-  „Boys", im Video „Men". Absicht oder Rest?
+* ~~**Boys oder Men?**~~ **Erledigt am 22.10.:** veröffentlicht als
+  `Why Men Need to Break Up With Their Mother` — **„Men", Singular „Mother".** Das „Boys"
+  stand nur in der Dokumentüberschrift.
 * **Sechs Unterordner habe ich nicht geöffnet:** *Feedback*, *The Crisis of Men*,
   *Friendship*, *Welcome*, *Trolling*, *Value*. *Feedback* ist der interessanteste —
   da steht vermutlich, was Leser ihm zurückgeschrieben haben.
 * **`Substack: Be Authentic – As Long As It Sells` liegt außerhalb** des freigegebenen
   Ordners (Elternordner `1LV3hdnn0KIDUYPo0_rA9vKYKeDVECYXa`, = *07 Hormozi/Robbins*).
   Es gibt also mehr Material, als der eine Link hergibt.
-* **Welche der zehn Posts wirklich veröffentlicht sind**, sagt nur eine Post-URL — und
-  die steht bisher in genau einem Dokument (`The Porn Pandemic`,
-  `substack.com/home/post/p-189382556`). Die Nummerierung 00–09 ist eine Reihenfolge,
-  **kein Veröffentlichungsnachweis.**
+* ~~**Welche der zehn Posts wirklich veröffentlicht sind**~~ **Erledigt am 22.10.:**
+  der Feed nennt **13** veröffentlichte Beiträge, Dez 2025 – Sep 2026. Die eine URL im
+  Porn-Dokument war die eines fremden Autors. Die Nummerierung 00–09 ist eine Reihenfolge,
+  **kein Veröffentlichungsnachweis** — das stimmte.
 
 ---
 
