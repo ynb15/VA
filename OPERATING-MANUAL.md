@@ -8798,3 +8798,21 @@ Schritt er ins Video kam. Der Unterschied gehört in jede Meldung an ihn.
 nicht die Tonspur. Es braucht eine neue Fassung ohne die Spur; das alte Stück
 geht auf privat. Was dabei verloren geht — Aufrufe, Kommentare, Alter der URL
 — gehört in die Vorlage, damit er mit der Zahl entscheidet und nicht ohne.
+
+## Die Repo-Kopie des Boards ist nicht die Quelle — die veröffentlichte ist es
+
+**22.10.2026.** `dashboard/command-center.html` im Repo trug noch die Lede vom
+**18.10.**, die veröffentlichte Fassung die vom **21.10.** Hätte ich aus der
+Repo-Kopie veröffentlicht, wäre ein Tag Boardarbeit stillschweigend
+verschwunden — **ohne Fehler, ohne Konflikt, ohne Hinweis.**
+
+**REGEL: vor jedem Neuveröffentlichen des Boards die laufende Fassung lesen
+(`Artifact action: "read"` auf die URL) und die Änderung in diese einsetzen.**
+Nicht in die Datei im Repo. Danach die Repo-Kopie mit der neuen Fassung
+überschreiben, damit die beiden wieder beieinander sind.
+
+**Zweiter Befund derselben Messung:** der Zeitstempel (`SWEPT` im Skript) stand
+noch auf `2026-10-20T15:55` — die Lede war am 21.10. ausgetauscht worden, der
+Stempel nicht. **Ein Board, das inhaltlich aktuell ist und seine Messzeit zwei
+Tage zurückdatiert, ist schlimmer als ein offensichtlich altes.** Der Stempel
+gehört in dieselbe Änderung wie der Text, nie in eine spätere.
