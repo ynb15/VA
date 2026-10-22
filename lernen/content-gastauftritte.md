@@ -448,9 +448,54 @@ Pegel steht, und die Einblendung von 0,3 auf 0,1 s gekuerzt wird. Nachgemessen
 am fertigen Short: erste zwei Sekunden −31,2 statt −34,7 dB, laufender Pegel
 unveraendert −32,4 dB. Kein Knacken am Einsatz.
 
-→ betrifft: **jeden** Titel. Fast jeder faengt leise an. Die Stelle im Song wird
-so gewaehlt, dass der Titel dort schon steht — nicht bei 0:00, nur weil das die
-erste Sekunde ist. Zu jedem Titel gehoert darum eine `ab_sekunde` in den
-Musikquellen, und der Pegel wird an der genutzten Stelle gemessen, nicht am
-Songanfang. `musik_drunter.py` nimmt die Einblendung jetzt als `--blende-ein`
-entgegen, damit sie nicht mehr im Code festhaengt.
+**Das war die halbe Antwort, und sie war nicht die gemeinte.** Siehe den
+naechsten Eintrag.
+
+## 22.10.2026, 20:10 — Nicht der Pegel entscheidet, sondern wo der Titel arrangiert losgeht.
+
+Nach der Korrektur oben kam sein Widerspruch:
+
+> *„Der Song geht erst so richtig los bei Sekunde 21. Ich rede bei dem Short. Wo
+> David, glaube ich, Moments sagt. Da geht der Song erst richtig los. Das wollte
+> ich. Ich wollte, dass du den Inhalt des Songs vorziehst. Die ersten 20
+> Sekunden des Songs, da passiert nichts."*
+
+Mein Fehler war die Messgroesse. Ich hatte das **RMS** gemessen, und danach steht
+„In This Shirt" ab Sekunde 2 auf vollem Pegel — also hielt ich die Sache fuer
+erledigt. Gehoert hat er etwas anderes: die ersten 23 Sekunden traegt ein
+**einzelnes Instrument**. Laut, aber leer.
+
+Die richtige Messgroesse ist die Energie **ueber 2 kHz**. Dort zeigt sich der
+Einsatz von Gesang und Perkussion als Sprung, den das RMS gar nicht sieht:
+
+| Songsekunde | RMS | ueber 2 kHz |
+|---|---|---|
+| 22,9 | −9,5 dB | −53,0 dB |
+| 23,2 | −9,7 dB | −53,4 dB |
+| **23,3** | −7,9 dB | **−34,6 dB** |
+| 23,4 | −8,4 dB | −31,2 dB |
+
+19 dB Sprung in einem Zehntelsekundenblock, bei **unveraendertem RMS**.
+
+Seine Zeitangabe stimmte auf die Zehntelsekunde: mit dem Bett ab 0:02 landete
+dieser Einsatz bei Shortsekunde 21,3 — und bei 21,7 steht `MOMENTS` im Bild. Das
+Bett faengt jetzt bei **0:23,25** an. Nachgemessen am fertigen Short: Energie
+ueber 2 kHz in den ersten 10 s um 4 bis 6 dB hoeher, laufender Pegel
+unveraendert bei −32,2 dB, kein Knacken (groesster Sprung 0,0323 gegen 0,0416 an
+einer normalen ruhigen Stelle).
+
+→ betrifft: **jeden** Titel. Die `ab_sekunde` gehoert auf den Sprung in den
+Hoehen, nicht auf die erste Sekunde mit vollem Pegel. Vor jedem Bett wird der
+Titel sekundenweise auf beides geprueft — RMS **und** Energie ueber 2 kHz — und
+der Einsatz wird vorgezogen, statt den Short mit dem Vorspann zu belegen. Die
+anderen beiden Titel daraufhin nachgeprueft: Odell ab 2:20 (−13,1 gegen −11,8 dB
+im Mittel) und Comptine ab 0:10 (−17,6 gegen −18,9 dB) fangen beide nicht leise
+an, dort ist nichts zu korrigieren.
+
+→ und zweitens: **zweimal am selben Befund vorbeigearbeitet, weil ich die
+erstbeste Erklaerung genommen habe, die zu einer Messung passte.** Der Pegel war
+eine Erklaerung, nicht die Erklaerung. Wenn eine Messung den Befund nur halb
+deckt, fehlt eine zweite Messgroesse.
+
+`musik_drunter.py` nimmt die Einblendung jetzt als `--blende-ein` entgegen,
+damit sie nicht mehr im Code festhaengt.

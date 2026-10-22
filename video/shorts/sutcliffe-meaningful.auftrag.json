@@ -76,7 +76,7 @@
     "warum_trotz_sperre": "Seine Ansage: 'dann teste ich, ob eines davon auf YouTube durchgeht'. Die Sperren lauteten 'exceeds the length limits set by the copyright holder' - die Laenge ist also der Hebel, den er pruefen will. Er laedt hoch, nicht ich.",
     "regel": "Nur Titel, die er benannt oder verlinkt hat. Dass eine Datei in seinem Musikordner liegt, sagt ueber die Rechte nichts.",
     "dateiname": "Die Fassung ohne Musik traegt den Grundnamen; die Musikfassungen tragen den Titel in Klammern, damit er nach dem Hochladen weiss, welche Sperre zu welchem Titel gehoert.",
-    "regel_songanfang": "Der Pegel eines Betts wird an der GENUTZTEN Stelle gemessen, und die Stelle wird so gewaehlt, dass der Titel dort schon auf vollem Pegel steht. Fast jeder Titel faengt leise an. Zweimal hat er genau das beanstandet - bei Daylight am 21.10. ('da ist gar keine Musik') und bei In This Shirt am 22.10. Darum steht zu jedem Titel eine 'ab_sekunde' in den Musikquellen."
+    "regel_songanfang": "Nicht der PEGEL am Songanfang entscheidet, sondern wo der Titel ARRANGIERT losgeht. 'In This Shirt' steht ab Sekunde 2 auf vollem Pegel, aber die ersten 23 Sekunden sind ein einzelnes Instrument - er nennt das 'da passiert nichts'. Zu messen ist darum die Energie ueber 2 kHz, nicht nur das RMS: der Einsatz von Gesang oder Perkussion zeigt sich dort als Sprung von 15 bis 20 dB. Die 'ab_sekunde' gehoert auf diesen Sprung. Dreimal beanstandet: Daylight am 21.10., In This Shirt am 22.10. zweimal."
   },
   "offen": [
     "Die Totale bei etwa Sekunde 25 traegt die Pointe 'to see yourself reflected through the other' und zeigt ihn klein im Profil. Enger fassen geht, ist aber eine Aenderung am Bild und braucht seine Zustimmung."
@@ -106,8 +106,8 @@
       {
         "name": "The Irrepressibles - In This Shirt",
         "drive_id": "1aExrMK5cJdbFcY0T0T3iGFsw8upoiryJ",
-        "ab_sekunde": 2,
-        "hinweis": "Sekunde 0-2 liegen bei -14,6 und -13,1 dB RMS, ab Sekunde 2 steht der Titel bei rund -9,5 dB; Gesang und Perkussion kommen bei 0:23. Darum ab 0:02, nicht ab 0:00 - sein Befund vom 22.10. GESPERRT am 22.10. frueh, 'exceeds the length limits set by the copyright holder'. Unter 90 s ungetestet."
+        "ab_sekunde": 23.25,
+        "hinweis": "Der Titel steht ab Sekunde 2 auf vollem Pegel (0-2 s liegen bei -14,6 und -13,1 dB RMS, danach rund -9,5), aber bis Sekunde 23,3 traegt ihn ein einzelnes Instrument. Bei 23,3 springt die Energie ueber 2 kHz von -53,4 auf -34,6 dB: Gesang und Perkussion. DORT faengt das Bett an - seine Ansage vom 22.10. Ab da bleibt der Titel bis ueber Sekunde 110 voll. GESPERRT am 22.10. frueh, 'exceeds the length limits set by the copyright holder'. Unter 90 s ungetestet."
       },
       {
         "name": "Max Richter - On The Nature Of Daylight",
@@ -119,13 +119,13 @@
         "name": "Tom Odell - Another Love (Piano Cover)",
         "drive_id": "1JdaKBC72nGI_brcT3MpUMKdTTlblGZ4F",
         "ab_sekunde": 140,
-        "hinweis": "Von Isabelle am 22.10. in den Ordner gelegt, nachdem Daylight und In This Shirt gesperrt wurden. Staerkstes Fenster ab 2:20 (-11 bis -13 dB, sehr gleichmaessig); die ersten 40 s liegen 6-10 dB darunter. ERWARTUNG, nicht gemessen: ein Piano-Cover ist eine EIGENE Aufnahme, der Abgleich gegen Tom Odells Master greift also nicht. Ein Anspruch auf die KOMPOSITION bleibt moeglich, der ist aber meist auf Monetarisierung gerichtet und nicht auf Sperrung. Vermutlich genau deshalb hat sie dieses Stueck gewaehlt. ABGELEHNT fuer Sutcliffe, seine Rueckmeldung vom 22.10.: „das passt nicht ganz bei David rein“. Laeuft weiter unter dem Aaronson-Short."
+        "hinweis": "Von Isabelle am 22.10. in den Ordner gelegt, nachdem Daylight und In This Shirt gesperrt wurden. Staerkstes Fenster ab 2:20 (-11 bis -13 dB, sehr gleichmaessig); die ersten 40 s liegen 6-10 dB darunter. ERWARTUNG, nicht gemessen: ein Piano-Cover ist eine EIGENE Aufnahme, der Abgleich gegen Tom Odells Master greift also nicht. Ein Anspruch auf die KOMPOSITION bleibt moeglich, der ist aber meist auf Monetarisierung gerichtet und nicht auf Sperrung. Vermutlich genau deshalb hat sie dieses Stueck gewaehlt. ABGELEHNT fuer Sutcliffe, seine Rueckmeldung vom 22.10.: „das passt nicht ganz bei David rein“. Laeuft weiter unter dem Aaronson-Short. Am 22.10. nachgeprueft: ab 2:20 liegt der Titel bei -13,1 dB gegen -11,8 dB im Mittel der genutzten 85 s - der faengt also nicht leise an, hier ist nichts zu korrigieren."
       },
       {
         "name": "Benny Garner - Comptine d'Un Autre Ete",
         "drive_id": "14388T7Iw2Z5lHIkh_1h63WT13q4ZUg6I",
         "ab_sekunde": 10,
-        "hinweis": "Coverversion des Yann-Tiersen-Stuecks aus Amelie, von Isabelle am 22.10. in denselben Ordner gelegt wie das Odell-Cover. Dauer 149 s, ab 0:10 gleichmaessig bei -17 bis -22 dB. Insgesamt leiser als die anderen Titel; der Pegel wird relativ zur genutzten Stelle gerechnet und gleicht das aus."
+        "hinweis": "Coverversion des Yann-Tiersen-Stuecks aus Amelie, von Isabelle am 22.10. in denselben Ordner gelegt wie das Odell-Cover. Dauer 149 s, ab 0:10 gleichmaessig bei -17 bis -22 dB. Insgesamt leiser als die anderen Titel; der Pegel wird relativ zur genutzten Stelle gerechnet und gleicht das aus. Am 22.10. nachgeprueft: ab 0:10 liegt der Titel bei -17,6 dB gegen -18,9 dB im Mittel der genutzten 85 s - er faengt dort sogar ueber dem eigenen Schnitt an, hier ist nichts zu korrigieren."
       }
     ],
     "regel": "Zu jedem Short mit Bett gehoert eine Fassung OHNE Musik. Wieviel von einem Titel durchgeht, haengt am Rechteinhaber und ist hier nicht messbar; YouTube zeigt den Anspruch im Upload-Vorgang."
@@ -138,8 +138,8 @@
     },
     {
       "datei": "YNB Podcast David Sutcliffe Meaning (In This Shirt).mp4",
-      "musik": "The Irrepressibles - In This Shirt, ab 0:02, Bett -20,5 dB (3 dB unter der Stimme), Einblendung 0,1 s",
-      "hinweis": "Von ihm am 22.10. abends ausdruecklich bestellt. Erste Fassung lief ab 0:00 und bekam seinen Befund: 'der Song, der muss schon frueher losgehen. Die ersten paar Sekunden, da ist fast gar keine Musik.' Nachgemessen war nicht die Blende schuld, sondern der Songanfang: Sekunde 0-2 liegen bei -14,6 und -13,1 dB RMS, der Rest bei rund -9,5 dB. Jetzt faengt das Bett bei 0:02 an, wo der Titel schon auf vollem Pegel steht, und die Einblendung ist von 0,3 auf 0,1 s gekuerzt. Nachgemessen am fertigen Short: die ersten zwei Sekunden stehen jetzt bei -31,2 statt -34,7 dB, der laufende Pegel bleibt bei -32,4 dB. Die Musik ist also ab dem ersten Bild da."
+      "musik": "The Irrepressibles - In This Shirt, ab 0:23,25, Bett -20,5 dB (3 dB unter der Stimme), Einblendung 0,05 s",
+      "hinweis": "Von ihm am 22.10. abends bestellt. Zwei Korrekturrunden, und die zweite hat die erste erklaert. Runde 1 (ab 0:00 -> 0:02) hat nur den Pegel des Songanfangs ausgeglichen - das war nicht gemeint. Seine Klarstellung: 'Der Song geht erst so richtig los bei Sekunde 21. Ich rede bei dem Short. Wo David, glaube ich, Moments sagt. Da geht der Song erst richtig los. Das wollte ich. Ich wollte, dass du den Inhalt des Songs vorziehst. Die ersten 20 Sekunden des Songs, da passiert nichts.' Nachgemessen stimmt das auf die Zehntelsekunde: bei Songsekunde 23,3 springt die Energie ueber 2 kHz von -53,4 auf -34,6 dB - dort kommen Gesang und Perkussion. Mit dem alten Bett ab 0:02 landete dieser Einsatz bei Shortsekunde 21,3, und bei 21,7 steht 'MOMENTS' im Bild. Das Bett faengt jetzt bei 0:23,25 an, also genau dort. Nachgemessen am fertigen Short: Energie ueber 2 kHz in den ersten 10 s um 4 bis 6 dB hoeher, laufender Pegel unveraendert bei -32,2 dB. Kein Knacken (groesster Sprung 0,0323, normale ruhige Stelle 0,0416)."
     },
     {
       "datei": "YNB Podcast David Sutcliffe Meaning (Odell Piano).mp4",
