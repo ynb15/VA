@@ -5,22 +5,26 @@ Neuester Eintrag oben.
 
 ## 2026-10-22
 
-- **Die 60-Sekunden-Grenze schuetzt nicht vor Content ID — am Kanal belegt.**
+- **Korrektur an meiner eigenen Erklaerung von heute Vormittag: die Laenge
+  ist sehr wohl der Hebel — nur war die Grenze enger, als wir dachten.**
   Er hat den Aaronson-Short mit *David Kushner – Daylight* hochgeladen,
-  Inhalt **59,43 s**, Bett **3 dB unter der Stimme** und per Sidechain
-  weggedrueckt. **YouTube hat ihn trotzdem geblockt.** Die Annahme, unter
-  60 s sei die Musik nutzbar, traegt nicht: die Lizenz der Shorts-Musik gilt
-  nur fuer Titel, die **in YouTube selbst** aus deren Bibliothek gewaehlt
-  werden. Eine kommerzielle Aufnahme, die in die hochgeladene Datei
-  hineingemischt ist, wird von Content ID erkannt — **unabhaengig von
-  Laenge, Pegel und Wegdruecken**, weil der Abgleich am Fingerabdruck der
-  Aufnahme haengt, nicht an ihrer Lautstaerke.
-  **Konsequenz fuer jedes Fach:** ein Musikbett aus einer kommerziellen
-  Aufnahme macht ein Stueck unveroeffentlichbar, egal wie leise es liegt.
-  Entweder lizenzfreie Musik aus einer Quelle, die ihm gehoert, oder er legt
-  die Musik **nach dem Hochladen in YouTube** darueber. Ich liefere ab jetzt
-  zu jedem Short mit Bett **auch eine Fassung ohne Musik**, damit eine
-  hochladbare Datei immer danebenliegt.
+  Inhalt **59,43 s**, Bett 3 dB unter der Stimme und per Sidechain
+  weggedrueckt. YouTube: **Video blocked globally**, Anspruch auf *Daylight*,
+  Typ *Copyright / Audio*. Der Wortlaut der Meldung ist entscheidend:
+  *„contains claimed content that **exceeds the length limits set by the
+  copyright holder**"*. Ich hatte ihm zuerst geschrieben, die
+  60-Sekunden-Annahme trage nicht und Content ID greife laengenunabhaengig.
+  **Das war zu absolut.** Richtig ist: die **Erkennung** haengt am
+  Fingerabdruck und ist laengen- und pegelunabhaengig, die **Folge** aber an
+  einer Laengengrenze, die der Rechteinhaber je Titel selbst setzt. Seine
+  Intuition war richtig, meine Erklaerung zu grob.
+  Nebenbefund aus der Meldung: **kein Copyright-Strike**, *„No impact to
+  channel"* — der Kanal nimmt keinen Schaden, das Video ist nur gesperrt.
+  **Was daraus folgt:** wie viel von einem Titel durchgeht, steht in keiner
+  Datei und laesst sich hier nicht messen — es haengt am Rechteinhaber. Der
+  einzige verlaessliche Weg ist, es vor dem Veroeffentlichen zu sehen; die
+  Ansprueche zeigt YouTube schon im Upload-Vorgang. Darum gehoert zu jedem
+  Short mit Bett **eine Fassung ohne Musik** dazu.
   → betrifft: alle Content-Agenten
 
 ## 2026-10-21
