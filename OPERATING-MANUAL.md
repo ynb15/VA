@@ -8713,3 +8713,35 @@ Kanal. Als Gast die eigenen Stellen zu schneiden ist üblich und meist
 erwünscht, aber die Risikoentscheidung ist seine. Der Agent baut, legt vor und
 schreibt **eine Zeile** dazu — keine Belehrung. Will er eine Freigabe, entwerfe
 ich die Nachricht an The Garden.
+
+## DAS TEAM — die maßgebliche Liste
+
+**Diese Tabelle ist die Quelle.** Die Nachtschicht-Aufsicht und der Sweep
+verweisen hierher, statt die Namen im gespeicherten Auftrag zu führen — eine
+Liste an zwei Orten läuft auseinander, und am 22.10. war sie das dritte Mal
+innerhalb von vierundzwanzig Stunden nachzutragen.
+
+| Agent | Session | Branch | Fach |
+|---|---|---|---|
+| **Alfred** (ich) | `session_01ELkvmWEvz5X1QNTjj2ucia` | `claude/ai-chief-of-staff-cz83jv` | Übersicht, Plan, Lernkanal, Aufsicht |
+| Content — Shorts I | `session_01UiDavSH3jThmLktN7Wvzxs` | `claude/content-assistant` | **Besitzt das gemeinsame Werkzeug** · aktuell Aaronson |
+| Content — Shorts II | `session_013ucmJDg1VJscd8fwpxegnH` | `claude/content-shorts-2` | Zweite Warteschlange · aktuell Kingsbury |
+| Content — Cinematic | `session_01XqVYzN3ZsciLLfqS5GxYNV` | `claude/content-cinematic` | Filmische Shorts, Rückkatalog, B-Roll |
+| Content — Vlog | `session_01AFYkJ3TqgbC5x3hkcuUdE2` | `claude/content-vlog` | Meaningful-Archiv, Stimmabdruck |
+| Content — Gastauftritte | `session_01YTs5D1g2jbQmSNEd2Fcg7h` | `claude/content-gastauftritte` | Seine Auftritte in **fremden** Podcasts |
+| Thumbnail Assistant | `session_01Qng36it9JR8kntKEjVEjXS` | `claude/thumbnails` | Thumbnails, Bauplan, Freisteller |
+| Head of Content | `session_017XwQh9PcSRWDQwDkCxAnKx` | `claude/head-of-content` | Substack, Register, Titelregeln |
+| YouTube Manager | `session_01AcQ6iCiXdnDbp7uxixXydg` | `claude/youtube-manager` | Beschreibungen, Titel, Tags, Kommentare |
+| Guest Booking | `session_01KEApNHe6h9T5sRT7nejf3U` | `claude/guest-booking` | Gäste, Databank, Outreach-Abgleich |
+
+**Die Regel, die den fünften Content-Agenten nötig machte** (22.10.): Shorts I
+hielt gleichzeitig das gemeinsame Werkzeug, die Aaronson-Shorts am Stichtag und
+Kingsbury. **Ein Agent, der Werkzeug *und* zwei Folgen unter Termindruck hält,
+ist kein Agent, sondern ein Engpass.**
+
+**Und die Teilung, ohne die ein zweiter Shorts-Schneider schadet statt nützt:**
+`shorts-render.py`, `ortscheck.py` und `korrekturen.txt` gehören **Shorts I**.
+Shorts II benutzt sie und ändert sie nicht; braucht er eine Änderung,
+beschreibt er sie. Am 20. und 21.10. ist der Renderer zweimal auseinander-
+gelaufen, und beim zweiten Mal hat der Merge stillschweigend eine Entscheidung
+zurückgenommen (das Fragezeichen).
