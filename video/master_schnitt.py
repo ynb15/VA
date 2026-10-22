@@ -37,6 +37,7 @@ def fenster_holen(file_id, start, ende, ziel, groesse=None):
     ein.seek(int(start / v_ein.time_base), stream=v_ein)
 
     erster_pts = {}
+    versatz_ts = None
     geschrieben = 0
     for pkt in ein.demux(v_ein, a_ein):
         if pkt.dts is None:
@@ -53,6 +54,22 @@ def fenster_holen(file_id, start, ende, ziel, groesse=None):
         art = pkt.stream.type
         if art not in erster_pts:
             erster_pts[art] = t
+        # Die Zeitstempel auf null ziehen. Vorher behielt das Fenster die
+        # Uhr des Masters: eine Datei, die bei Master 5775 anfing, meldete
+        # start_time=5775 und duration=75. Jedes Werkzeug danach rechnet
+        # aber ab null — `--start 13` suchte dann eine Stelle, die vor dem
+        # ersten Bild liegt, und ffmpeg nahm stillschweigend den Anfang.
+        # Am 22.10. sind daraus drei Renderings mit falschem Ausschnitt
+        # geworden, die im Standbild richtig aussahen.
+        # Ein gemeinsamer Versatz fuer beide Spuren, sonst laufen Bild und
+        # Ton auseinander.
+        if versatz_ts is None:
+            versatz_ts = t
+        schieben = int(round(versatz_ts / pkt.time_base))
+        if pkt.pts is not None:
+            pkt.pts -= schieben
+        if pkt.dts is not None:
+            pkt.dts -= schieben
         pkt.stream = v_aus if art == 'video' else a_aus
         aus.mux(pkt)
         geschrieben += 1
@@ -75,5 +92,5 @@ if __name__ == '__main__':
     a = p.parse_args()
     beginn, versatz, n, bilanz = fenster_holen(a.id, a.start, a.ende, a.out, a.groesse)
     print(f'{a.out}')
-    print(f'  Datei beginnt bei Master {beginn:.2f}s · gewuenschter Start liegt '
-          f'{versatz:.2f}s hineinversetzt · {n} Pakete · {bilanz}')
+    print(f'  Datei laeuft ab 0 (entspricht Master {beginn:.2f}s) · gewuenschter '
+          f'Start liegt {versatz:.2f}s hineinversetzt · {n} Pakete · {bilanz}')

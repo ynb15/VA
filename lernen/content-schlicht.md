@@ -1,3 +1,31 @@
+## 22.10.2026 — Ein Fenster aus dem Master behielt die Uhr des Masters
+
+**Befund, gemessen.** `master_schnitt.py` holte ein Fenster aus dem
+Drive-Master und schrieb die Pakete mit ihren **Originalzeitstempeln**:
+`start_time=5775.0`, `duration=75.0`. Jedes Werkzeug danach rechnet aber
+ab null. `--start 13` suchte also eine Stelle **vor dem ersten Bild**,
+ffmpeg nahm stillschweigend den Anfang, und `-t` griff ebenfalls daneben.
+
+**Drei Renderings liefen damit durch und sahen im Standbild richtig aus** —
+der Gast spricht über die ganze Länge, also fällt am Einzelbild nichts
+auf. Aufgefallen ist es erst an der Laufzeit: 6 s bestellt, 52 s geliefert;
+10 s bestellt, 54 s geliefert; 52 s bestellt, 54 s geliefert. Drei
+verschiedene Bestellungen, zwei identische Ergebnisse — **das** war der
+Alarm, nicht das Bild.
+
+`master_schnitt.py` zieht die Zeitstempel jetzt auf null (ein gemeinsamer
+Versatz für Bild und Ton, sonst laufen sie auseinander) und schreibt in
+die Ausgabe `Datei laeuft ab 0 (entspricht Master X)`.
+**Wer ein Fenster aus einem Master zieht, prüft `start_time` der Ausgabe,
+bevor er Zeiten hineinrechnet.**
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Und die Form dahinter, zum dritten Mal in zwei Tagen:** ein Standbild
+beweist nichts über einen Ausschnitt. Die Laufzeit schon. Wer eine
+Bestellung aufgibt, misst das Ergebnis gegen die Bestellung — bei
+Drive-Bereichsabrufen, bei Fenstern aus dem Master, bei jedem Rendering.
+→ betrifft: alle Content-Agenten
+
 ## 22.10.2026 — Die Ortsregel war zu eng, und drei Fehler im SRT-Rückweg
 
 **Seine Präzisierung vom 21.10., die meine Liste von gestern korrigiert:**
