@@ -1,4 +1,4 @@
-# Scott Aaronson — AI God + nicht sicher (45,7 s)
+# Scott Aaronson — AI God (45,7 s)
 #
 # Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
 # Was raus soll: Zeile loeschen oder die Nummer nennen.
@@ -15,10 +15,17 @@
  10  [00:37.54–00:41.38]  THAT THERE'S NEVER BEEN ANYTHING QUITE LIKE IN THE HISTORY OF THE WORLD
 
 # ══════════════════════════════════════════════════════════════════
+# MUSIK: KEINE. Am 22.10. sind vier veroeffentlichte Shorts weltweit
+#   gesperrt worden, drei verschiedene Titel — darunter um 15:21 genau
+#   der Titel, den dieses Stueck vorher trug (In This Shirt, FUGA).
+#   Auch ein Klaviercover wurde gesperrt, auf die Komposition.
+#   Gemessen: Anteil der Tonfenster unter -55 dB liegt bei 17,2 %
+#   (mit Bett waren es 0,0 %) — es liegt nachweislich nichts darunter.
+#
 # WAS ICH HERAUSGENOMMEN HABE — zum Gegenlesen
 # ══════════════════════════════════════════════════════════════════
 
-### WEGGELASSEN — zwischen "it's not yet" und "people have prayed to gods"
+### WEGGELASSEN zwischen "it's not yet" und "people have prayed to gods"
 ### Rohzeit 1:07:04–1:08:26  ·  1:22 Minuten
 
   [1:07:04]  that yeah so so there's a famous saying that like the the ultimate you
@@ -45,7 +52,7 @@
   [1:08:22]  And maybe some people have already had this experience,
   [1:08:25]  just interacting with caring AIs.
 
-### WEGGELASSEN — die Eltern-Analogie, auf Deinen Wunsch vom 22.10.
+### WEGGELASSEN die Eltern-Analogie, auf Deinen Wunsch vom 22.10.
 ### Rohzeit 1:37:02–1:37:16  ·  0:14 Minuten
 
   [1:37:02]  I mean, it's not even a safe thing for those of us

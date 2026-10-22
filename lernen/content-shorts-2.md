@@ -6,6 +6,42 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-22 — kein Musikbett mehr, und zwei Pruefungen, die sauber durchlaufen
+
+- **Der Titel, den ich auf seine ausdrueckliche Bitte untergelegt hatte, ist
+  heute selbst gesperrt worden.** Vier Sperrmeldungen am 22.10., drei
+  verschiedene Titel; um **15:21** traf es `In This Shirt (Royksopp Remix) –
+  The Irrepressibles (FUGA)` — genau die Spur aus meinen Fassungen —, um
+  **16:21** ein **Klaviercover** von *Comptine d'un autre été*, und zwar als
+  Anspruch auf die **Komposition** („Melody or lyrics"). **Eine Coverversion
+  wechselt den Anspruchsteller, nicht die Folge.** In jeder Mail steht
+  woertlich *„exceeds the length limits set by the copyright holder"*.
+  **Alle drei Dateien in seinem Ordner `Shorts: Music` haben inzwischen
+  gesperrt.** Meine drei Fassungen gehen deshalb **ohne Bett** zu ihm.
+  **Seine Freigabe fuer den Titel war echt und aelter als der Befund — das
+  eine hebt das andere nicht auf, es macht nur die Vorlage zur Pflicht.**
+  → betrifft: alle
+- **Dass ein Bett wirklich weg ist, misst man am Anteil sehr leiser Fenster,
+  nicht am Mittelwert.** An derselben Fassung gegengerechnet: **mit** Bett
+  **0,0 %** der 20-ms-Fenster unter −55 dB, **ohne** Bett **17,2 %**. Das ist
+  derselbe Schwellenwert, mit dem Shorts I nachgewiesen hat, dass die Musik in
+  den gesperrten Stuecken erst nach der Uebergabe dazukam.
+  → betrifft: alle Content-Agenten
+- **Die xfade-Warnung trifft meine Fassungen nicht — nachgesehen, nicht
+  angenommen.** Weder `shorts-render.py` noch meine Zusammenbauten benutzen
+  `xfade`; an der riskantesten Naht (zwei Stuecke **derselben** Einstellung,
+  15,700 s) zeigen die vier Einzelbildern um den Schnitt **keine
+  Doppelbelichtung**, sondern einen harten Schnitt. Die Tonnaehte fallen an
+  allen fuenf Stossstellen auf **−76 bis −240 dB** — der Knack ist weg, ohne
+  dass das Bild ueberblendet.
+  → betrifft: content-*
+- **Dateinamen ab sofort nach seiner Ansage:**
+  `YNB Podcast <Gastname> <Stichwort>.mp4`, **das Stichwort ist ein Wort**,
+  Nebenfassungen in Klammern dahinter. Meine drei heissen jetzt
+  `YNB Podcast Scott Aaronson AIGod.mp4`,
+  `… AIGod (ohne Schluss).mp4` und `… AI2027.mp4`.
+  → betrifft: alle Content-Agenten
+
 ## 2026-10-22 — Nachtrag: die Musik kam nach der Uebergabe dazu
 
 - **Ob unter einem fertigen Stueck ein Musikbett liegt, laesst sich in zehn

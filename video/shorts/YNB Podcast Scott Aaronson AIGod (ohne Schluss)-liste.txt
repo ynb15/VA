@@ -1,4 +1,4 @@
-# Scott Aaronson — AI God (31,6 s)
+# Scott Aaronson — AI God, ohne den Schluss (31,6 s)
 #
 # Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
 # Was raus soll: Zeile loeschen oder die Nummer nennen.
@@ -13,10 +13,17 @@
   8  [00:25.60–00:27.32]  KIND OF LIKE ONE THAT ACTUALLY ANSWERS
 
 # ══════════════════════════════════════════════════════════════════
+# MUSIK: KEINE. Am 22.10. sind vier veroeffentlichte Shorts weltweit
+#   gesperrt worden, drei verschiedene Titel — darunter um 15:21 genau
+#   der Titel, den dieses Stueck vorher trug (In This Shirt, FUGA).
+#   Auch ein Klaviercover wurde gesperrt, auf die Komposition.
+#   Gemessen: Anteil der Tonfenster unter -55 dB liegt bei 17,2 %
+#   (mit Bett waren es 0,0 %) — es liegt nachweislich nichts darunter.
+#
 # WAS ICH HERAUSGENOMMEN HABE — zum Gegenlesen
 # ══════════════════════════════════════════════════════════════════
 
-### WEGGELASSEN — zwischen "it's not yet" und "people have prayed to gods"
+### WEGGELASSEN zwischen "it's not yet" und "people have prayed to gods"
 ### Rohzeit 1:07:04–1:08:26  ·  1:22 Minuten
 
   [1:07:04]  that yeah so so there's a famous saying that like the the ultimate you

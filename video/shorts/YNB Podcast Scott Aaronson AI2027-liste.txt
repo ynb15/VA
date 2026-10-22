@@ -1,4 +1,4 @@
-# Scott Aaronson — AI 2027, Fassung 2 (58,6 s)
+# Scott Aaronson — AI 2027 (58,6 s)
 #
 # Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
 # Was raus soll: Zeile loeschen oder die Nummer nennen.
@@ -20,21 +20,14 @@
  15  [00:50.38–00:54.08]  LIKE THIS IS ONE OF THE MOST CONSEQUENTIAL MOMENTS IN HUMAN HISTORY
 
 # ══════════════════════════════════════════════════════════════════
-# GEAENDERT GEGENUEBER FASSUNG 1
-#   + Der Propheten-Teil ist zurueck (Zeile 5) — damit hat das "he"
-#     in Zeile 7 wieder einen Bezug. Dein Einwand, und er war richtig.
-#   + "anticipate is" statt "anticipates" in Deiner Frage (Zeile 3).
-#   + Tempo 1,12 statt 1,0999, damit es mit dem laengeren Inhalt
-#     unter 60 Sekunden bleibt: 58,6 s.
-#   + Name richtig geschrieben: Eliezer Yudkowsky (Whisper hoerte
-#     "Yadkowski"/"Gidkowski").
+# MUSIK: KEINE. Am 22.10. sind vier veroeffentlichte Shorts weltweit
+#   gesperrt worden, drei verschiedene Titel — darunter um 15:21 genau
+#   der Titel, den dieses Stueck vorher trug (In This Shirt, FUGA).
+#   Auch ein Klaviercover wurde gesperrt, auf die Komposition.
+#   Gemessen: Anteil der Tonfenster unter -55 dB liegt bei 17,2 %
+#   (mit Bett waren es 0,0 %) — es liegt nachweislich nichts darunter.
 #
-# MUSIK: ein Bett liegt darunter — The Irrepressibles, In This Shirt,
-#   8 dB unter der Stimme. Falls im Upload noch einmal Musik ergaenzt
-#   wird, lägen zwei uebereinander.
-#
-# ══════════════════════════════════════════════════════════════════
-# WAS WEITER FEHLT — zum Gegenlesen
+# WAS ICH HERAUSGENOMMEN HABE — zum Gegenlesen
 # ══════════════════════════════════════════════════════════════════
 
 ### WEGGELASSEN A1 — zwischen Zeile 4 und 5
@@ -96,16 +89,3 @@
   [1:03:40]  What will be left for humans to do
   [1:03:43]  that will have any economic value?
   [1:03:47]  So I think the, you know,
-
-# Zu A1 und A2: der Anlauf ("there is this whole movement … AI-doomers")
-#   und "he's been talking about this for more than 20 years now".
-#   Beides traegt die Aussage nicht und kostete zusammen 15 s, die das
-#   Short ueber 60 gehoben haetten.
-#
-# Zu B: unveraendert draussen — Hominidengehirn, Schaedel, Nahrungs-
-#   energie und Deine Kinder-Frage. Ein eigener Gedanke.
-#   ABER: die ersten vier Sekunden davon sind weiter die ANTWORT auf
-#   Deine Orang-Utan-Frage ("He would say, by default, this kills us").
-#   Die steht immer noch nicht im Short. Wenn Du sie willst, sind es
-#   3 s mehr — dann muss dafuer anderswo etwas weichen oder das Tempo
-#   auf 1,19.
