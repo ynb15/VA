@@ -22,17 +22,17 @@
       ],
       [
         5931.8,
-        5984.8
+        5984.33
       ]
     ],
     "blende_s": 0.13,
     "warum": "Seine Frage, dann faellt alles weg bis zur Substanz - seine Regel vom 21.10. Hier sind das 7,0 s: 'Well, okay, so so so what makes life meaningful for me right now is, first of all'. Danach beginnt es mit 'My kids, my family, my students'.",
-    "ende_warum": "Der Nachtlauf schnitt bei 5972,6 mitten im Gedanken. Seine Antwort laeuft bis 'that also gave me a very strong sense of meaning' bei 5984,2 - 11,6 s mehr.",
+    "ende_warum": "Endet bei 5984,33, mitten in der Stille nach „meaning“. Gemessen: das Wort endet bei 5984,27, dann 0,1 s echte Stille (−80 dB), und bei 5984,40–5984,80 liegt ein eigenes Geräusch bei −31 dB — sein „kleines und“ vom 22.10. Der vorige Schnitt endete bei 5984,80 und hatte es drin.",
     "vorlauf_warum": "Der Schnitt beginnt 0,4 s vor seinem ersten Wort. Mit weniger Vorlauf verschluckt Whisper 'What' und im Bild stand 'IN THESE TIMES'. Preis: der Short beginnt mit 0,5 s Totale, bevor die Kamera auf ihn schneidet.",
     "doppelung_raus": "Er sagt „I should have attended that“ zweimal (5927,25 und 5928,93, dazwischen Aaronsons „Huh?“). Herausgeschnitten ist 5927,15-5931,80 — etwas mehr als er gesagt hat, weil direkt danach „Yeah, yeah, which, well, so so so so so“ folgt und ein Schnitt mitten hinein schlechter klingt. Uebergang jetzt „in Utah.“ -> „My nine year old was also there as a camper“. Offen: ob sein „Yeah“ drin bleiben soll, dann Grenze 2 s frueher."
   },
   "bild": {
-    "tempo": 1.2,
+    "tempo": 1.22,
     "look": "preset",
     "worte_je_einblendung": 3,
     "tiefer_px": 120,
@@ -40,7 +40,8 @@
     "logo_hoehe": 0.877,
     "zoom": 1.15,
     "warum_tiefer": "Bei 0 px sitzt die Zeile auf seinem Bart. An drei Testbildern verglichen (0/120/200): 120 sitzt frei darunter und laesst Luft zum Logo.",
-    "warum_logo": "Sein abgenommener Wert. Das Preset sagt 28 % (302 px) - das gilt fuer Neues, nicht fuer Abgenommenes."
+    "warum_logo": "Sein abgenommener Wert. Das Preset sagt 28 % (302 px) - das gilt fuer Neues, nicht fuer Abgenommenes.",
+    "warum_tempo": "Ausnahme fuer diesen Short, NICHT die neue Vorgabe. Seine Ansage vom 22.10.: der Inhalt muss unter 60 s bleiben, sonst laesst sich die Musik nicht verwenden. Bei seinem gewohnten 1,20 waeren es 60,39 s. 1,21 ergibt 59,89 s und ist zu knapp an der Grenze; 1,22 ergibt 59,40 s. Abweichung zu 1,20: 1,7 %. Fuer alle anderen Shorts gilt weiter 1,20 — das ist der Klang, den er abgenommen hat."
   },
   "einblendungen": {
     "datei": "video/shorts/aaronson-meaningful.cues.json",
@@ -88,7 +89,8 @@
     "warum": "Seine Ansage vom 22.10.2026: „du vergisst jetzt schon wieder mein Outro. Wo ist mein Outro? Das gehört hinter jedes Short.“ Gilt fuer jeden Short, nicht nur diesen."
   },
   "laenge_s": {
-    "hauptteil": 60.83,
-    "mit_outro": 65.04
+    "hauptteil": 59.43,
+    "mit_outro": 63.64,
+    "schranke": "Hauptteil unter 60 s, Outro darf darueber hinausgehen"
   }
 }
