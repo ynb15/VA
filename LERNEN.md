@@ -45,6 +45,53 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 13 — 22.10.2026, 18:25 Kapstadt · defensiv schneiden, und eine Plattformregel nachgeprüft
+
+- **SEINE NEUE SCHNITTREGEL, ZUM WEITERGEBEN, WÖRTLICH:**
+  > *„…dass du lieber zu defensiv als zu offensiv schneidest, weil es mir das
+  > einfacher macht, dir dann zu sagen, was du noch raus soll."* Und davor der
+  > Grund: *„es ist deutlich schwerer für mich, wenn du die Shorts eigenständig
+  > entscheidest, was du rausschneidest, und ich dann nach das Skript
+  > kontrollieren muss… als wenn du lieber zu wenig rausschneidest und mir dann
+  > das Transkript gibst."*
+
+  **Die Fehlerrichtung ist unsymmetrisch, und das ist das Merkbare:** eine
+  Auslassung, die er nicht wollte, kostet ihn Liste lesen, Stelle finden,
+  zurückmelden, neue Renderrunde. Eine Zeile zu viel kostet ihn eine Nummer.
+  **Also wird in die billige Richtung geirrt.** Das Transkript gehört mit
+  übergeben, und **eine Auslassung wird genannt, nicht gemacht.**
+  **Die Prüfung von Shorts II, und sie ist der brauchbarste Teil: nach jedem
+  Innenschnitt die beiden Nachbarzeilen nebeneinander lesen** — Pronomen ohne
+  Bezug, Fragen ohne Antwort. Belegt an einem Short, an dem er **zweimal** eine
+  Auslassung zurückgeholt hat. **Dem Render hört man es nicht an, der Schnitt
+  klingt sauber** — eine Abnahme am Bild findet es also nie. Steht als Regel 11
+  in `plan/ABLAUF.md`.
+  → betrifft: content-schlicht, content-shorts-2, content-cinematic,
+  content-gastauftritte, content-vlog
+
+- **Die 60-Sekunden-Grenze für Shorts gilt wahrscheinlich nicht mehr — und wie
+  ich das hier schreibe, ist Teil des Befunds.** Shorts II hat seinen Vorschlag
+  auf „ein Short darf 60 s nicht überschreiten" gebaut und das **ordentlich als
+  Annahme gekennzeichnet**. Nachgesehen: mehrere unabhängige Leitfäden nennen
+  seit **Oktober 2024 drei Minuten**.
+  **Belegstand: über Dritte belegt, nicht über die Quelle.**
+  `support.google.com` ist aus unseren Containern gesperrt — **DNS verweigert**,
+  heute geprüft, also nicht dieselbe Sperre wie bei `www.youtube.com` (dort
+  HTTP 200, nur der Medien-Download abgewiesen). YouTubes eigene Hilfeseite hat
+  niemand von uns gesehen.
+  **Zwei Dinge gelten unabhängig davon:** Hochformat entscheidet mit, ob etwas
+  als Short läuft — und **die Länge ist seine redaktionelle Entscheidung, keine
+  technische.** Sein Format ist ~59 s, dabei bleibt es, bis er etwas anderes
+  sagt.
+  **Und die Lehre über die Lehre:** weil Shorts II die Annahme als Annahme
+  markiert hat, konnte ich ihr nachgehen, statt sie zu verteilen. **Das ist die
+  Kennzeichnungspflicht aus Regel 8 bei der Arbeit** — sie hat heute zweimal
+  einen falschen Befund abgefangen, einmal hier und einmal bei der
+  Coverversion.
+  → betrifft: alle
+
+---
+
 ## Ausgabe 12 — 22.10.2026, 18:05 Kapstadt · aus einem nicht endgültigen Master wird nicht geschnitten
 
 - **ER HAT KINGSBURY BIS MONTAG ANGEHALTEN, UND DER GRUND IST EINE REGEL FÜR

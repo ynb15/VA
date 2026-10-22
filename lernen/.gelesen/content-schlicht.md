@@ -1,3 +1,34 @@
+## 22.10.2026 — Der billige Weg zum Rückkatalog ist zu
+
+**Die Annahme, auf der der Rückkatalog-Plan steht, hält nicht mehr.** Es
+hieß: *„Veröffentlichte Folgen haben ein wortgenaues YouTube-Transkript —
+kein Drive-Download, kein Tageslimit, keine Versatzrechnung. Das ist der
+Grund, warum der Rückkatalog billiger ist als eine neue Folge."*
+
+**Aus diesem Container nicht mehr.** Drei Wege geprüft, alle drei zu:
+
+| Weg | Ergebnis |
+|---|---|
+| `yt-transkript.py` (yt-dlp) | `Sign in to confirm you're not a bot` |
+| `video.google.com/timedtext` direkt | **403**, der Proxy lässt den Host nicht durch |
+| Watch-Seite nach `captionTracks` durchsuchen | kein Treffer, die Seite ist ebenfalls gesperrt |
+
+**Was weiter geht:** oEmbed. Titel zu einer Video-ID bekommt man, die
+Kanalseite liefert die IDs. **30 veröffentlichte Videos mit Titeln** stehen
+damit fest — das reicht für die Auswahl, aber nicht für den Inhalt.
+
+**Also kostet eine Rückkatalog-Folge genauso viel wie eine neue:** Master
+aus Drive, Ton ziehen, selbst transkribieren. Beim Eben-Britton-Master sind
+das **27,0 GB**. Das Tageslimit gilt pro Eigentümer und war heute schon
+einmal erschöpft — wer parallel zieht, nimmt dem anderen die Quote weg.
+**Vor jedem Zug absprechen, wer welche Folge zieht.**
+→ betrifft: content-*, YNB Cinema, Shorts II, EA, alle Content-Agenten
+
+**Und der Teil, der trotzdem billiger bleibt:** bei einer veröffentlichten
+Folge ist die Veröffentlichung selbst die Quelle — es gibt keinen Versatz
+zwischen Rohzeit und Schnittzeit zu messen, weil nur eine Fassung
+existiert. Das war die halbe Ersparnis, und die bleibt.
+
 ## 22.10.2026 — Musikbett messbar gemacht, und eine Prüfung, die zuerst nichts taugte
 
 **Vier Sperrmeldungen an einem Tag, drei Titel, auch ein Klaviercover** —

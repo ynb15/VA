@@ -129,6 +129,54 @@ Kommentar, keine Mail — von keinem Agenten, auch nicht in seinem Namen. Wir
 bauen, legen vor, **er lädt hoch.** Von ihm am 21.10. bestätigt: *„Regel bleibt,
 Agenten entwerfen."*
 
+## 11 · Lieber zu defensiv als zu offensiv schneiden
+
+**Seine Anweisung vom 22.10., wörtlich:**
+
+> *„mir ist aufgefallen, es ist deutlich schwerer für mich, wenn du die Shorts
+> eigenständig entscheidest, was du rausschneidest, und ich dann nach das
+> Skript kontrollieren muss, um zu sehen, was du rausgeschnitten hast, als wenn
+> du lieber zu wenig oder weniger rausschneidest und mir dann das Transkript
+> gibst und ich dir eher sagen soll, was du rausschneiden sollst. Deshalb ist
+> die neue Anweisung und gib das bitte weiter an die anderen Agenten, dass du
+> lieber zu defensiv als zu offensiv schneidest."*
+
+**Die Fehlerrichtung ist unsymmetrisch, und das ist der ganze Grund.** Eine
+Auslassung, die er nicht wollte, kostet ihn: Liste lesen, Stelle finden,
+zurückmelden, neue Renderrunde. Eine Zeile zu viel im Stück kostet ihn: Nummer
+nennen. **Gleich großer Fehler, völlig verschiedener Preis.** Also wird in die
+billige Richtung geirrt.
+
+**Drei Folgen für die Arbeit:**
+
+1. **Das Transkript gehört mit übergeben**, nicht nur das Stück. Er will
+   streichen, nicht suchen.
+2. **Eine Auslassung wird genannt, nicht gemacht.** Wer aus Gestaltungsgründen
+   weglässt — bei filmischen Fassungen ist das legitim —, schreibt sie in die
+   Übergabe. **Eine begründete Auslassung, die er sieht, ist kein Verstoß; eine
+   unbegründete, die er findet, ist einer.**
+3. **Nach jedem Innenschnitt die beiden Nachbarzeilen nebeneinander lesen** —
+   auf Pronomen ohne Bezug und auf Fragen, deren Antwort im entfernten Block
+   lag. **Dem fertigen Render hört man das nicht an, weil der Schnitt sauber
+   klingt.** Am 22.10. hat er an einem einzigen Short zweimal eine Auslassung
+   zurückgeholt: einmal fiel die einzige Nennung von Eliezer Yudkowsky mit
+   heraus (danach stand *„**he** just regarded it as obvious"* ohne Bezug),
+   einmal die Antwort auf eine Frage, die er selbst gestellt hatte.
+
+**Wo die Regel an eine Decke stößt, ist die Lieferung die Liste.** Trägt das
+Material mehr, als in ein Stück passt, wird nicht länger gerendert, sondern die
+Kandidatenstelle als Transkript mit markierten Grenzen übergeben — mit dem
+Vorschlag, was man streichen würde, wenn man müsste. **Dann streicht er, und es
+wird einmal gerendert statt zweimal.**
+
+**Zur Länge selbst, mit Belegstand:** die 60-Sekunden-Grenze für Shorts gilt
+wahrscheinlich nicht mehr — mehrere unabhängige Leitfäden nennen seit Oktober
+2024 drei Minuten. **Über Dritte belegt, nicht über die Quelle:**
+`support.google.com` ist aus dem Container gesperrt (DNS verweigert, 22.10.
+geprüft). **Unabhängig davon ist die Länge seine redaktionelle Entscheidung,
+keine technische** — sein Format ist ~59 s, und dabei bleibt es, bis er etwas
+anderes sagt.
+
 ---
 
 ## Was er bekommt, und wann
