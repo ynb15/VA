@@ -14,7 +14,11 @@ Ende als Liste da und wird nicht als „bestanden" ausgegeben.
 
 Rueckgabe 1, sobald eine Pruefung fehlschlaegt.
 """
-import argparse, os, subprocess, sys
+import argparse, os, re, subprocess, sys
+
+import imageio_ffmpeg
+
+FF = imageio_ffmpeg.get_ffmpeg_exe()
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 
@@ -75,6 +79,46 @@ def main():
     dauer = float(probe(a.short, "format=duration") or 0)
     pruef("Laufzeit", 0 < dauer <= 180,
           f"{dauer:.1f}s" + ("" if dauer <= 180 else "  <- ueber dem Shorts-Limit"))
+
+    # Dateiname, seine Ansage vom 22.10.: „YNB Podcast und dann der Name und
+    # dann halt ein Stichwort zu dem Inhalt". Das Stichwort ist EIN Wort und
+    # sagt, welche Stelle es ist. Nebenfassungen in Klammern dahinter, damit
+    # der Grundname gleich bleibt.
+    name = os.path.basename(a.short)
+    passt = re.match(r"^YNB Podcast .+? \S+( \(.+\))?\.(mp4|mov)$", name)
+    pruef("Dateiname", bool(passt),
+          name if passt else f"{name}  <- erwartet: "
+          f"YNB Podcast <Gast> <Stichwort>.mp4")
+
+    # Musikbett. Vier Sperrmeldungen an einem Tag, drei Titel, auch ein
+    # Klaviercover — die Sperre haengt an der Komposition, nicht an der
+    # Aufnahme. Ein durchlaufendes Bett haelt die Laengengrenze nie ein.
+    # Messbar ist es am Pegel in den Sprechpausen: in den sauberen Fassungen
+    # liegen 12 bis 20 Prozent aller 20-ms-Fenster unter -55 dB, unter einem
+    # Bett faellt der Boden dort nie hin. Das Outro bleibt aussen vor, es
+    # hat seinen eigenen Ton.
+    bis = max(dauer - 4.5, 1.0)
+    roh = subprocess.run([FF, "-nostdin", "-v", "quiet", "-t", f"{bis:.2f}",
+                          "-i", a.short, "-f", "f32le", "-ac", "1",
+                          "-ar", "16000", "-"], capture_output=True).stdout
+    if roh:
+        import numpy as np
+        t = np.frombuffer(roh, dtype=np.float32)
+        f = t[:len(t) // 320 * 320].reshape(-1, 320)
+        pegel = 20 * np.log10(np.maximum(np.sqrt((f ** 2).mean(axis=1)), 1e-9))
+        boden = float(np.percentile(pegel, 1))
+        # Nicht der Anteil leiser Fenster, sondern wie tief es in den
+        # Sprechpausen ueberhaupt wird. Nachgemessen: saubere Fassungen
+        # liegen im leisesten Prozent bei -78 bis -89 dB. Mit einem
+        # untergelegten Bett bei -58 — und das war ein absichtlich leises
+        # Testbett; ein hoerbares liegt bei -30 bis -40. Der Anteil unter
+        # -55 dB taugte dafuer nicht: er fiel von 13,6 auf 11,3 Prozent und
+        # haette das Bett durchgelassen.
+        pruef("Kein Musikbett", boden <= -65.0,
+              f"leisestes Prozent bei {boden:.1f} dB"
+              + ("" if boden <= -65.0 else "  <- klingt nach durchlaufendem Bett"))
+    else:
+        pruef("Kein Musikbett", False, "Tonspur nicht lesbar")
 
     # Outro: das letzte Bild des Shorts gegen das letzte Bild des Outros
     if os.path.exists(a.outro):
