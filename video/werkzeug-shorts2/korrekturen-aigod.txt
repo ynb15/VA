@@ -51,3 +51,16 @@ anyway this is -> this is
 in in human -> in human
 # Whisper verschluckt das Plural-s in "within the set of possibilities".
 set of possibility -> set of possibilities
+# 22.10., Fassung 2 des AI-2027-Shorts.
+# Whisper verhoert den Namen; richtig ist Eliezer Yudkowsky.
+eliezer yadkowski -> Eliezer Yudkowsky
+eliezer gidkowski -> Eliezer Yudkowsky
+eliezer yudkowski -> Eliezer Yudkowsky
+yadkowski -> Yudkowsky
+gidkowski -> Yudkowsky
+# Seine Ansage vom 22.10.: in seiner Frage soll "anticipate is" stehen,
+# nicht "anticipates". Sein Satz, seine Schreibweise.
+anticipates -> anticipate is
+# Whisper verschluckt das "In" am Anfang je nach Lauf — mal ja, mal nein.
+# Die Einblendung soll den Satz vollstaendig zeigen.
+preparation for this conversation -> In preparation for this conversation

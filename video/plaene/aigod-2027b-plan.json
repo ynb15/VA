@@ -1,0 +1,14 @@
+{
+ "quelle": "../nie-sicher/vorlage-2027b.mov",
+ "groesse": [1920, 1080],
+ "notiz": "Short 'AI 2027', Fassung 2: mit dem Propheten-Teil, damit das 'he' einen Bezug hat. Tempo 1,12 statt 1,0999, damit es unter 60 s bleibt (seine Vorgabe vom 22.10.). Bildschnitte am zusammengesetzten Stueck geprueft: 12,600 / 33,433 / 38,500.",
+ "einstellungen": [
+  {"layout": "einzel", "kasten": "251:0:608:1080",  "lippe": 1080, "start": 0.000,  "ende": 12.600, "tot": false, "wer": "Yannick, Nah — die Frage"},
+  {"layout": "einzel", "kasten": "761:0:608:1080",  "lippe": 1100, "start": 12.600, "ende": 15.700, "tot": false, "wer": "Aaronson, Nah — within the set of possibilities"},
+  {"layout": "einzel", "kasten": "726:0:608:1080",  "lippe": 1100, "start": 15.700, "ende": 22.267, "tot": false, "wer": "Aaronson, Nah — der Prophet (NEU)"},
+  {"layout": "einzel", "kasten": "611:0:608:1080",  "lippe": 1100, "start": 22.267, "ende": 33.433, "tot": false, "wer": "Aaronson, Nah — superhuman, Orang-Utans"},
+  {"layout": "einzel", "kasten": "1196:0:608:1080", "lippe": 1100, "start": 33.433, "ende": 35.624, "tot": false, "wer": "Totale, Kasten auf Aaronson"},
+  {"layout": "einzel", "kasten": "71:0:608:1080",   "lippe": 1080, "start": 35.624, "ende": 38.500, "tot": false, "wer": "Totale, Kasten auf Yannick — seine Orang-Utan-Frage"},
+  {"layout": "einzel", "kasten": "661:0:608:1080",  "lippe": 1100, "start": 38.500, "ende": 54.367, "tot": false, "wer": "Aaronson, Nah — die Pointe"}
+ ]
+}

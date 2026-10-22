@@ -1,0 +1,111 @@
+# Scott Aaronson — AI 2027, Fassung 2 (58,6 s)
+#
+# Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
+# Was raus soll: Zeile loeschen oder die Nummer nennen.
+#
+  1  [00:00.00–00:04.38]  IN PREPARATION FOR THIS CONVERSATION I RE-READ THE ESSAY AI 2027
+  2  [00:05.18–00:06.58]  AND ONE OF THE SCENARIOS
+  3  [00:07.20–00:12.40]  THEY DESCRIBE ANTICIPATE IS HUMANITY GOING EXTINCT WHAT ARE YOUR THOUGHTS ON THAT?
+  4  [00:12.66–00:15.66]  I THINK THAT IS UNFORTUNATELY WITHIN THE SET OF POSSIBILITIES
+  5  [00:16.62–00:21.78]  IT'S MOST ASSOCIATED WITH ELIEZER YUDKOWSKY WHO WAS SORT OF THE PROPHET OF THIS
+  6  [00:21.78–00:22.16]  MOVEMENT
+  7  [00:22.52–00:28.58]  HE JUST REGARDED IT AS OBVIOUS THAT IF WE CONTINUE BUILDING AI IT WILL BECOME
+  8  [00:28.58–00:29.36]  SUPERHUMAN
+  9  [00:29.84–00:35.06]  AND THEN AT SOME POINT IT WILL BE TO US AS WE ARE TO ORANGUTANS
+ 10  [00:35.06–00:35.70]  OR WHATEVER RIGHT?
+ 11  [00:35.90–00:38.42]  AND HOW WELL DO ORANGUTANS FARE IN A HUMAN WORLD?
+ 12  [00:38.58–00:44.64]  THERE'S AN ENORMOUS RANGE OF POSSIBLE OUTCOMES AND RIGHT NOW IS THE TIME WHEN WE NEED
+ 13  [00:44.64–00:48.98]  TO SORT OF MAKE OUR VOICES HEARD IF WE WANT TO STEER THINGS TOWARD THE
+ 14  [00:48.98–00:49.74]  BETTER OUTCOMES
+ 15  [00:50.38–00:54.08]  LIKE THIS IS ONE OF THE MOST CONSEQUENTIAL MOMENTS IN HUMAN HISTORY
+
+# ══════════════════════════════════════════════════════════════════
+# GEAENDERT GEGENUEBER FASSUNG 1
+#   + Der Propheten-Teil ist zurueck (Zeile 5) — damit hat das "he"
+#     in Zeile 7 wieder einen Bezug. Dein Einwand, und er war richtig.
+#   + "anticipate is" statt "anticipates" in Deiner Frage (Zeile 3).
+#   + Tempo 1,12 statt 1,0999, damit es mit dem laengeren Inhalt
+#     unter 60 Sekunden bleibt: 58,6 s.
+#   + Name richtig geschrieben: Eliezer Yudkowsky (Whisper hoerte
+#     "Yadkowski"/"Gidkowski").
+#
+# MUSIK: ein Bett liegt darunter — The Irrepressibles, In This Shirt,
+#   8 dB unter der Stimme. Falls im Upload noch einmal Musik ergaenzt
+#   wird, lägen zwei uebereinander.
+#
+# ══════════════════════════════════════════════════════════════════
+# WAS WEITER FEHLT — zum Gegenlesen
+# ══════════════════════════════════════════════════════════════════
+
+### WEGGELASSEN A1 — zwischen Zeile 4 und 5
+### Rohzeit 1:00:17–1:00:27  ·  0:10 Minuten
+
+  [1:00:18]  I mean you know where I'm not you know so there is this whole movement of you know
+  [1:00:23]  Sometimes they're pejoratively called AI-doomers.
+
+### WEGGELASSEN A2 — zwischen Zeile 6 und 7
+### Rohzeit 1:00:34–1:00:39  ·  0:05 Minuten
+
+  [1:00:34]  He's been talking about this for more than 20 years now.
+
+### WEGGELASSEN B — zwischen Zeile 11 und 12
+### Rohzeit 1:00:57–1:03:49  ·  2:52 Minuten
+
+  [1:00:58]  Well, he would say something even stronger than that.
+  [1:01:02]  He would say, by default, this kills us.
+  [1:01:05]  By default, unless we have some breakthrough in how
+  [1:01:10]  to align this with human interests,
+  [1:01:14]  whatever goal it has, it could probably better achieve
+  [1:01:17]  that goal by transforming the earth
+  [1:01:21]  into something very different from what it is
+  [1:01:23]  than it can by leaving us around, right?
+  [1:01:26]  So now, I would say I don't accept the arguments
+  [1:01:33]  that that is, let's say, a default outcome.
+  [1:01:36]  On the other hand, is it a possible outcome?
+  [1:01:39]  Well, unfortunately, yes.
+  [1:01:42]  I mean, again, people need to conceptualize
+  [1:01:46]  what is happening right now is it's not another cool
+  [1:01:49]  technology like the internet or like social media, right?
+  [1:01:53]  This is like, it goes back to the evolution
+  [1:01:56]  of the hominid brain, right?
+  [1:01:58]  Where something new happened in the whole history of Earth.
+  [1:02:03]  Now you have this verbal intelligence
+  [1:02:06]  that can conceptualize things,
+  [1:02:08]  that eventually could write things down,
+  [1:02:11]  could ponder things, right?
+  [1:02:12]  And now we have a new one, right?
+  [1:02:14]  And now we have one that is not constrained in the way that we are by having brains that
+  [1:02:21]  have to fit into these skulls, that have to fit through the birth canal when we're being
+  [1:02:28]  born.
+  [1:02:30]  It's not constrained by having to operate on the comparatively tiny amounts of energy
+  [1:02:37]  that we get from our food.
+  [1:02:41]  can just keep scaling this thing up. And anyone who's interacted with Fable or with GPT 5.6
+  [1:02:48]  Pro can see that by many measures these things are already much more intelligent than they
+  [1:02:54]  are.
+  [1:02:55]  For sure. At this point in time, what's your personal take? Where do you see AI
+  [1:03:01]  going in the next five to ten years?
+  [1:03:05]  to some very, very weird and very scary places.
+  [1:03:09]  I mean, I hope that we'll still be around.
+  [1:03:12]  I mean, look, you could say in terms of putting my money
+  [1:03:15]  where my mouth is, I mean, my kids still go to school.
+  [1:03:21]  They're thinking in terms of going to college.
+  [1:03:24]  I'm thinking in terms of what college will they go to.
+  [1:03:28]  But certainly, it affects me on that personal level
+  [1:03:32]  of like, you know, what do I tell my kids
+  [1:03:37]  that will be useful to them in this world, right?
+  [1:03:40]  What will be left for humans to do
+  [1:03:43]  that will have any economic value?
+  [1:03:47]  So I think the, you know,
+
+# Zu A1 und A2: der Anlauf ("there is this whole movement … AI-doomers")
+#   und "he's been talking about this for more than 20 years now".
+#   Beides traegt die Aussage nicht und kostete zusammen 15 s, die das
+#   Short ueber 60 gehoben haetten.
+#
+# Zu B: unveraendert draussen — Hominidengehirn, Schaedel, Nahrungs-
+#   energie und Deine Kinder-Frage. Ein eigener Gedanke.
+#   ABER: die ersten vier Sekunden davon sind weiter die ANTWORT auf
+#   Deine Orang-Utan-Frage ("He would say, by default, this kills us").
+#   Die steht immer noch nicht im Short. Wenn Du sie willst, sind es
+#   3 s mehr — dann muss dafuer anderswo etwas weichen oder das Tempo
+#   auf 1,19.
