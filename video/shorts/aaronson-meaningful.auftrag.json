@@ -1,0 +1,78 @@
+{
+  "name": "Aaronson - What Makes Life Meaningful",
+  "stand": "2026-10-22",
+  "quelle": {
+    "master_drive_id": "1C7CUI-B6_fBcdttR_zKIJBYraBMTtUvh",
+    "master_titel": "YNB Podcast: Scott Aaronson",
+    "fenster_master_s": [
+      5885.0,
+      6020.0
+    ],
+    "hinweis": "In EINEM Stueck holen, wie bei Sutcliffe."
+  },
+  "schnitt": {
+    "teile_master_s": [
+      [
+        5900.1,
+        5904.45
+      ],
+      [
+        5911.45,
+        5984.8
+      ]
+    ],
+    "blende_s": 0.13,
+    "warum": "Seine Frage, dann faellt alles weg bis zur Substanz - seine Regel vom 21.10. Hier sind das 7,0 s: 'Well, okay, so so so what makes life meaningful for me right now is, first of all'. Danach beginnt es mit 'My kids, my family, my students'.",
+    "ende_warum": "Der Nachtlauf schnitt bei 5972,6 mitten im Gedanken. Seine Antwort laeuft bis 'that also gave me a very strong sense of meaning' bei 5984,2 - 11,6 s mehr.",
+    "vorlauf_warum": "Der Schnitt beginnt 0,4 s vor seinem ersten Wort. Mit weniger Vorlauf verschluckt Whisper 'What' und im Bild stand 'IN THESE TIMES'. Preis: der Short beginnt mit 0,5 s Totale, bevor die Kamera auf ihn schneidet."
+  },
+  "bild": {
+    "tempo": 1.2,
+    "look": "preset",
+    "worte_je_einblendung": 3,
+    "tiefer_px": 120,
+    "logo_breite_px": 700,
+    "logo_hoehe": 0.877,
+    "zoom": 1.15,
+    "warum_tiefer": "Bei 0 px sitzt die Zeile auf seinem Bart. An drei Testbildern verglichen (0/120/200): 120 sitzt frei darunter und laesst Luft zum Logo.",
+    "warum_logo": "Sein abgenommener Wert. Das Preset sagt 28 % (302 px) - das gilt fuer Neues, nicht fuer Abgenommenes."
+  },
+  "einblendungen": {
+    "datei": "video/shorts/aaronson-meaningful.cues.json",
+    "von_hand_gesetzt": [
+      "'meaningful for you?' in EINER Einblendung - stehende Vorgabe.",
+      "Acht Woerter hatten die Dauer null und haetten gefehlt; sie haben jetzt eine."
+    ]
+  },
+  "ton": {
+    "laut": "aus",
+    "dehnung": "atempo",
+    "warum": "Keine Lautheitsangleichung - am 20.10. abgelehnt, der Rauschboden steigt um 18 dB. atempo ist der Klang, den er abgenommen hat."
+  },
+  "musik": {
+    "drive_id": "1_iCUQBNSP42fIA3ImSfPLmzAWIkYQHol",
+    "titel": "David Kushner - Daylight",
+    "ordner": "https://drive.google.com/drive/folders/1m3S9cayJDrHX7rMizhOod6lU523FWMHW",
+    "blende_ein_s": 0.3,
+    "sidechain_ratio": 4,
+    "warum": "Seine Ansage vom 21.10.: deutlich lauter und frueher einsetzend - unter der Frage war gar keine Musik. Darum kurze Blende statt 1,5 s und sanfteres Wegdruecken.",
+    "ab_sekunde": 50,
+    "warum_ab_sekunde": "Die ersten 15 s von Daylight sind 7-10 dB leiser als der Hauptteil (gemessen in 5-s-Bloecken: 0:00 -21,9 dB gegen 0:50 -10,8 dB). Am Songanfang zu starten war der Grund, warum unter seiner Frage 'gar keine Musik' war. Ab 0:50 traegt das Bett sofort und bleibt die vollen 89 s stark.",
+    "pegel_db_unter_stimme": [
+      0,
+      3,
+      6
+    ],
+    "gemessen_unter_der_frage": {
+      "leise_6db": -38.0,
+      "mittel_3db": -35.0,
+      "laut_0db": -32.0,
+      "stimme": -35.7
+    },
+    "werkzeug": "video/musik_drunter.py — legt das Bett unter einen fertigen Short, ohne neu zu transkribieren oder das Bild neu zu encodieren.",
+    "pegel": "mittel (3 dB unter der Stimme), seine Vorgabe vom 22.10."
+  },
+  "offen": [
+    "Die 0,5 s Totale am Anfang - sie herauszunehmen kostet das erste Wort der Frage."
+  ]
+}
