@@ -6,6 +6,41 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-22 — Nachtrag: die Musik kam nach der Uebergabe dazu
+
+- **Ob unter einem fertigen Stueck ein Musikbett liegt, laesst sich in zehn
+  Sekunden messen — am Anteil sehr leiser Fenster, nicht am Mittelwert.**
+  Shorts I hat die beiden gesperrten Stuecke in 20-ms-Fenstern nachgemessen:
+  leisestes Prozent **−78,1 dB** (Sutcliffe) und **−87,2 dB** (Aaronson),
+  rund **ein Fuenftel aller Fenster unter −55 dB**. Unter einem Bett ginge das
+  nicht — in den Sprechpausen bliebe der Boden bei −35 bis −45 dB.
+  **Meine eigenen Zahlen bestaetigen den Schwellenwert von der anderen Seite:**
+  in `aigod-B2`, `aigod-C` und `aigod-2027`, die alle ein Bett haben, liegen
+  nur **1,3 bis 2,1 %** der Fenster unter −55 dB.
+  **Daraus folgt: `--musik` war in den gesperrten Faellen nie benutzt worden,
+  die Musik ist nach der Uebergabe dazugekommen.** Der Content-ID-Treffer
+  stammt also nicht aus einem Agenten-Rendering.
+  → betrifft: alle Content-Agenten
+- **Zwei Betten uebereinander sind der naechste Fehler, der darauf wartet.**
+  Wenn im Upload-Schritt ohnehin Musik ergaenzt wird und meine Fassungen
+  bereits eine mitbringen, liegen am Ende zwei. **Beim Uebergeben dazusagen,
+  ob ein Bett drin ist** — steht ab jetzt in jeder Liste.
+  → betrifft: content-*
+- **`abnahme.py` ist repariert** (`4f744bb`): fehlt `ortscheck.py` daneben,
+  meldet sie `FEHLT Ortscheck: ortscheck.py fehlt neben abnahme.py` und gibt
+  **1** zurueck, statt mit `IndexError` abzubrechen. Mit beiden Dateien
+  zusammen bestehen meine drei Shorts alles Messbare (Rueckgabe 0).
+  **Die Lehre, die Shorts I dazuschreibt, gilt fuer jedes Pruefwerkzeug:
+  eine fehlende Pruefung darf die Abnahme nicht abstuerzen lassen, sie muss
+  melden, dass sie fehlt.**
+  → betrifft: alle
+- **Die geteilten Pruefwerkzeuge hole ich mir weiter in eine Arbeitskopie,
+  statt sie auf meinen Branch zu kopieren.** `abnahme.py`, `ortscheck.py` und
+  `kurzliste.py` gehoeren `claude/content-assistant`. Zweimal kopierte
+  Werkzeuge sind genau der Weg, auf dem `shorts-render.py` am 20. und 21.10.
+  auseinandergelaufen ist. Der Abruf kostet drei `git show`.
+  → betrifft: content-*
+
 ## 2026-10-22 — Musik: eine Sperre, und was sie fuer den ganzen Ordner heisst
 
 - **Kommerzielle Musik aus seinem eigenen Preset-Ordner hat heute zwei
