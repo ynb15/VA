@@ -5,7 +5,7 @@ Erzeugt nichts. Die Koepfe sind Einzelbilder aus den Kameradateien, der
 Hintergrund ist ein Einzelbild aus der Totalen derselben Aufnahme, die Schrift
 ist Poppins Bold. Gebaut nach den in `video/thumbnails.md` gemessenen Werten:
 1280x720, Kopf ueber die volle Bildhoehe mit angeschnittenem Scheitel, genau
-ein Wort auf einem Kasten in #DF2C00, keine Kontur und kein Schlagschatten auf
+ein Wort auf einem Kasten in #DF2D00, keine Kontur und kein Schlagschatten auf
 der Schrift.
 """
 import argparse
