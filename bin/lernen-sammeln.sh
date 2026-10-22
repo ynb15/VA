@@ -14,6 +14,7 @@ cd "$(dirname "$0")/.."
 declare -A ZWEIG=(
   [content-schlicht]=claude/content-assistant
   [content-cinematic]=claude/content-cinematic
+  [content-shorts-2]=claude/content-shorts-2
   [content-vlog]=claude/content-vlog
   [content-gastauftritte]=claude/content-gastauftritte
   [thumbnails]=claude/thumbnails

@@ -78,7 +78,8 @@ diese Maschine.
 | Schlüssel | Agent | Branch |
 |---|---|---|
 | `alfred` | Chief of Staff | `claude/ai-chief-of-staff-cz83jv` |
-| `content-schlicht` | Content Assistant — Shorts, schlicht | `claude/content-assistant` |
+| `content-schlicht` | Content Assistant — Shorts I (Werkzeug + laufende Folge) | `claude/content-assistant` |
+| `content-shorts-2` | Content Assistant — Shorts II (zweite Folge) | `claude/content-shorts-2` |
 | `content-cinematic` | Content Assistant — cinematisch | `claude/content-cinematic` |
 | `content-vlog` | Content Assistant — Vlog / Archiv | `claude/content-vlog` |
 | `content-gastauftritte` | Content Assistant — seine Gastauftritte | `claude/content-gastauftritte` |
