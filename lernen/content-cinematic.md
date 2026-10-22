@@ -372,3 +372,17 @@ zwei Treffer brachte, brachte nachmittags null. Nicht weil nichts da war —
 stehen auf UNREAD. Ein leeres Suchergebnis ist kein Nullbefund, bevor man
 `includeTrash` probiert hat.
 → betrifft: alle Agenten, die Shorts bauen
+
+### Entscheidung von ihm, 22.10.: In This Shirt ist freigegeben
+*In This Shirt* (The Irrepressibles) wird unter Shorts bis 60 Sekunden
+verwendet. **Das ist entschieden und wird nicht erneut aufgeworfen.**
+
+Ich hatte dreimal widersprochen, zuletzt mit vier Sperrmeldungen aus seinem
+Postfach. Er kennt den Stand und hat anders entschieden — es ist sein Kanal.
+Die Belege stehen im Nachtrag darueber, falls sie jemand braucht; sie sind
+kein Anlass, die Frage noch einmal zu stellen.
+
+**Die Lehre ist nicht die Musik, sondern der Takt.** Einmal mit Beleg
+widersprechen ist Sorgfalt. Dreimal ist Dazwischenreden, auch wenn der
+Beleg stimmt. Nach seiner Bestaetigung wird gebaut, nicht nachgefasst.
+→ betrifft: alle Agenten
