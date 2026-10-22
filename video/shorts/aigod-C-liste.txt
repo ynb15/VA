@@ -1,0 +1,54 @@
+# Scott Aaronson — AI God + nicht sicher (45,7 s)
+#
+# Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
+# Was raus soll: Zeile loeschen oder die Nummer nennen.
+#
+  1  [00:00.00–00:04.36]  THERE'S THIS ONE QUOTE I CAN'T STOP THINKING ABOUT BY ARTHUR CLARKE
+  2  [00:04.80–00:09.14]  MAYBE OUR ROLE ON THIS PLANET IS NOT TO WORSHIP GOD BUT TO CREATE HIM
+  3  [00:09.90–00:10.74]  WHAT ARE YOUR THOUGHTS ON THAT?
+  4  [00:11.00–00:17.54]  SO THERE'S A FAMOUS SAYING THAT LIKE THE ULTIMATE SILICON VALLEY ANSWER TO YOU KNOW
+  5  [00:17.58–00:20.74]  DOES GOD EXIST IS NEITHER YES NOR NO IT'S NOT YET
+  6  [00:21.12–00:25.20]  PEOPLE HAVE PRAYED TO GODS FOR MILLENNIA LIKE NOW FOR THE FIRST TIME WE HAVE
+  7  [00:25.20–00:27.38]  SOMETHING KIND OF LIKE ONE THAT ACTUALLY ANSWERS
+  8  [00:28.08–00:32.76]  AND YOU KNOW BRINGING A NEW FORM OF INTELLIGENCE YOU KNOW INTO THE WORLD IS
+  9  [00:32.76–00:37.46]  YOU KNOW INHERENTLY NOT A SAFE THING THIS IS AN INTELLIGENCE THAT YOU KNOW
+ 10  [00:37.54–00:41.38]  THAT THERE'S NEVER BEEN ANYTHING QUITE LIKE IN THE HISTORY OF THE WORLD
+
+# ══════════════════════════════════════════════════════════════════
+# WAS ICH HERAUSGENOMMEN HABE — zum Gegenlesen
+# ══════════════════════════════════════════════════════════════════
+
+### WEGGELASSEN — zwischen "it's not yet" und "people have prayed to gods"
+### Rohzeit 1:07:04–1:08:26  ·  1:22 Minuten
+
+  [1:07:04]  that yeah so so there's a famous saying that like the the ultimate you
+  [1:07:10]  know Silicon Valley answer to you know does God exist is neither yes nor
+  [1:07:14]  or no, it's not yet, right?
+  [1:07:18]  So, you know, I mean, like, you know,
+  [1:07:22]  when you're in, you know, when you spend time
+  [1:07:24]  in these circles, like the San Francisco AI world,
+  [1:07:27]  like, yeah, like there are constant jokes about,
+  [1:07:31]  you know, are we, you know, creating God, right?
+  [1:07:36]  You know, build, people have used terms
+  [1:07:38]  like, you know, the sand god, right?
+  [1:07:41]  as silicon microchips being derived from sand.
+  [1:07:48]  So this is clearly not a, we could say if it is a god,
+  [1:07:53]  then it clearly isn't one that meets
+  [1:07:56]  all of the traditional religious conceptions.
+  [1:07:59]  It wasn't there at the beginning of the universe.
+  [1:08:03]  Does it love us?
+  [1:08:04]  Well, maybe.
+  [1:08:05]  If we program it to love us, then maybe it will.
+  [1:08:10]  I mean, I think that we are headed for a form of intelligence
+  [1:08:15]  that's sufficiently far beyond our intelligence
+  [1:08:19]  that it will seem godlike to us.
+  [1:08:22]  And maybe some people have already had this experience,
+  [1:08:25]  just interacting with caring AIs.
+
+### WEGGELASSEN — die Eltern-Analogie, auf Deinen Wunsch vom 22.10.
+### Rohzeit 1:37:02–1:37:16  ·  0:14 Minuten
+
+  [1:37:02]  I mean, it's not even a safe thing for those of us
+  [1:37:05]  who were parents, right?
+  [1:37:08]  And there we have a lot more similarity to go on, right?
+  [1:37:12]  And the biological intelligences that were created.

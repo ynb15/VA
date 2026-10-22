@@ -6,6 +6,37 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-22 — Nachtrag: die Liste gehoert zum Short, und sie deckt Schnittfehler auf
+
+- **Seine Regel vom 22.10. gilt fuer jeden Short, auch fuer meine — ich hatte
+  sie aus der Uebergabe gelesen und trotzdem drei Shorts ohne Liste geliefert.**
+  Woertlich, ueber Shorts I: *„dass die Shorts mit dem Transkript geliefert
+  werden muessen, damit ich einfacher Feedback geben kann, beziehungsweise
+  einfach dir sagen kann, was raus soll."* Und seine Erweiterung an mich:
+  *„damit ich sehen kann, was du gegebenenfalls rausgenommen hast."*
+  **Die Liste aus `kurzliste.py` zeigt nur, was drin ist.** Was er braucht, ist
+  beides: der Wortlaut im Short **und** der Wortlaut dessen, was fehlt, mit
+  Zeitmarke und Begruendung je Auslassung. Nachgeliefert als
+  `video/shorts/<short>-liste.txt`.
+  → betrifft: content-*
+- **Das Schreiben der Auslassungsliste hat zwei Fehler in meinem eigenen
+  Schnitt gefunden, die mir beim Rendern nicht aufgefallen waren.** Beide im
+  Short „AI 2027":
+  **1. Ein Pronomen ohne Bezug.** Zeile 3 lautet jetzt „…WITHIN THE SET OF
+  POSSIBILITIES **HE** JUST REGARDED IT AS OBVIOUS" — das „he" ist Eliezer
+  Yudkowsky, und den habe ich in der 22-Sekunden-Auslassung mit
+  weggeschnitten.
+  **2. Eine Frage ohne Antwort.** Yannick fragt im Short *„How well do
+  orangutans fare in a human world?"*, und es geht direkt weiter mit „There's
+  an enormous range of possible outcomes". Die Antwort stand in den **ersten
+  vier Sekunden** des 2:52-Blocks, den ich entfernt habe: *„He would say, by
+  default, this kills us."*
+  **Die Regel daraus: nach jedem Innenschnitt den Text der Nachbarzeilen
+  nebeneinander lesen** — auf Pronomen ohne Bezug und auf Fragen, deren
+  Antwort im entfernten Block lag. Beides faellt beim Ansehen des Renders
+  nicht auf, weil der Schnitt sauber klingt.
+  → betrifft: content-*, alle
+
 ## 2026-10-22 — Nachtrag nach der Aaronson-Uebergabe
 
 - **Dieselbe Stelle ist heute zweimal geschnitten worden, von Shorts I und von
