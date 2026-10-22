@@ -92,5 +92,29 @@
     "hauptteil": 59.43,
     "mit_outro": 63.64,
     "schranke": "Hauptteil unter 60 s, Outro darf darueber hinausgehen"
+  },
+  "musik_quellen": {
+    "ordner": "https://drive.google.com/drive/folders/1M_FhnC0GzERt0zyKvFDae-gumpn--o4O",
+    "titel": [
+      {
+        "name": "David Kushner - Daylight",
+        "drive_id": "1viFyrSNs_NZI8Rhn_-ITbcnX1wUB3TVZ",
+        "ab_sekunde": 50,
+        "hinweis": "Die ersten 15 s liegen 7-10 dB unter dem Hauptteil. GESPERRT: Anspruch am 22.10. am Aaronson-Short, 'exceeds the length limits set by the copyright holder', weltweit blockiert, kein Strike."
+      },
+      {
+        "name": "The Irrepressibles - In This Shirt",
+        "drive_id": "1aExrMK5cJdbFcY0T0T3iGFsw8upoiryJ",
+        "ab_sekunde": 0,
+        "hinweis": "Von der ersten Sekunde an bei -9,3 dB, braucht keinen Versatz."
+      },
+      {
+        "name": "Max Richter - On The Nature Of Daylight",
+        "drive_id": "1LcSKfy28B7tcEz1PnwenzZIJsUJUdBXn",
+        "ab_sekunde": 240,
+        "hinweis": "Die ersten 20 s liegen bei -36 dB. Fuer kurze Betten ab 4:50, fuer lange ab 4:00. Sehr breit lizenziertes Stueck, Anspruch wahrscheinlich - nicht gemessen, nur erwartet."
+      }
+    ],
+    "regel": "Zu jedem Short mit Bett gehoert eine Fassung OHNE Musik. Wieviel von einem Titel durchgeht, haengt am Rechteinhaber und ist hier nicht messbar; YouTube zeigt den Anspruch im Upload-Vorgang."
   }
 }
