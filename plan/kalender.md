@@ -33,13 +33,19 @@ Was heute nicht anläuft, verschiebt den 31.10.
 Leere Zellen fülle ich beim täglichen Lauf — jedes Stück bekommt seine
 Quelle und seinen Zustand, sobald es gebaut ist.
 
+**Die Zustände, und was sie heißen:** `offen` — nichts gebaut. `gebaut, nicht
+abgenommen` — die Datei liegt im Repo, er hat sie nicht gesehen. `bei ihm` —
+übergeben, wartet auf seine Abnahme. `fertig` — abgenommen, kann raus.
+**Nur `bei ihm` und `fertig` zählen als Vorrat**, denn er nimmt täglich ab;
+ein Stück, das er nicht gesehen hat, kann morgen nicht raus.
+
 
 ### Oktober 2026
 
 | Tag | Art | Quelle | Zustand |
 |---|---|---|---|
-| Do 22.10. | Short | — | offen |
-| Fr 23.10. | Short | — | offen |
+| Do 22.10. | Short | Sutcliffe 04 · „Vulnerability is not weakness" | **gebaut, nicht abgenommen** |
+| Fr 23.10. | Short | Sutcliffe 01 · „Therapeut" | **gebaut, nicht abgenommen** |
 | Sa 24.10. | Clip | 3–10 Min | offen |
 | So 25.10. | **PODCAST** | Scott Aaronson | offen |
 | Mo 26.10. | Short | — | offen |

@@ -37,6 +37,44 @@ Guest Booker führt die Databank, das ist seine Zeile.
 Spur:** Nathan Maingard und Bridget Woods. Entweder längst veröffentlicht oder
 anders abgelegt. **Ungeklärt, nicht geraten** — liegt beim Guest Booker.
 
+## Zwei veröffentlichte Shorts sind seit heute weltweit gesperrt
+
+**22.10.2026, zwei Content-ID-Mails von YouTube, 08:57 und 09:57.** Beide zu
+„What makes life meaningful?" — einmal mit **David Sutcliffe**, einmal mit
+**Scott Aaronson**. Wörtlich aus der Mail:
+
+> Content used: **Daylight — David Kushner** · Content owners: **Virgin Music
+> Group** · Type: Audio · **Impact on video: Blocked globally**
+
+**Nicht Monetarisierung beim Rechteinhaber, nicht einzelne Länder: weltweit
+gesperrt.** Die beiden Stücke sind unabspielbar, solange sie oben sind. Meine
+Einordnung vom 21.10. war zu weich — ich schrieb, kommerzielle Musik sei
+„meist keine Verwarnung, sondern ein Tauschgeschäft". Das gilt für einen Teil
+des Katalogs, für diesen nicht.
+
+**Was dabei gemessen ist, und was nicht:**
+
+* **Gemessen:** in diesem Repo hat auf keinem Branch je eine Audiodatei
+  gelegen (`git log --all --diff-filter=A` über `*.mp3 *.wav *.m4a *.aac`:
+  leer). `video/shorts-render.py` legt ein Musikbett **nur** bei `--musik`
+  unter, und `video/sutcliffe-shorts.md` hält seit dem 20.10. fest: *„Was
+  fehlt, ist der Track."* **Kein von uns gebautes Stück kann diese Spur
+  tragen.** Das gilt für die sechs Meaningful-Shorts, die vier
+  Sutcliffe-Shorts und die Aaronson-Fassungen.
+* **Schlussfolgerung, nicht Messung:** die Spur ist dann beim Hochladen
+  dazugekommen, aus derselben Quelle, in der der Track liegt — Isabelles
+  Preset-Ordner `1m3S9cayJDrHX7rMizhOod6lU523FWMHW`. Belegt ist nur, dass der
+  Track dort liegt, nicht, über welchen Schritt er ins Video kam.
+
+**Die Regel, die daraus folgt, gilt ab sofort für jeden Agenten:** keine Musik
+unter einem Stück ohne seine ausdrückliche Freigabe **für genau diesen Titel**.
+„Liegt in einem seiner Ordner" ist keine Freigabe — genau daraus kam dieser
+Track.
+
+**Der Weg zurück** liegt beim YouTube-Manager als Entwurf: neue Fassung ohne
+die Spur hochladen, altes Stück auf privat. **Die YouTube-Trimmfunktion ist
+kein Weg** — sie schneidet das Bild, nicht die Tonspur.
+
 ## Der zweite Vorrat, den wir noch nicht anfassen
 
 **38 lange Videos sind veröffentlicht** (Kanal `UC5r4pxlAtt2alIOIGjdn4Qw`,

@@ -23,11 +23,25 @@ PODCASTS = {
 # Ausnahmen: Folge -> Fristen, die fuer sie nicht gelten (von ihm so entschieden)
 ENTFAELLT = {"Kyle Kingsbury": {5}}   # Thumbnail macht er selbst ueber ChatGPT, 21.10.
 
-VORLAUF = [(10, "Transkript",                   "content-schlicht"),
-           (8,  "Clip- und Short-Auswahl",      "content-schlicht"),
+# Wer eine Folge schneidet, entscheidet die Folge, nicht die Frist.
+# Seine Regel vom 21.10.: "alle Shorts zu Scott werden von ein und demselben
+# Agenten bearbeitet, nacheinander." Also steht hier ein Name pro Folge, und
+# die Schnittfristen holen ihn sich von dort. Zwei Namen an einer Frist waren
+# der Grund, warum am 22.10. dieselbe Stelle zweimal geschnitten wurde.
+SCHNITT = {
+    "Scott Aaronson":  "content-shorts-2",
+    "Kyle Kingsbury":  "content-schlicht",
+    "Rick Strassman":  "content-cinematic",
+    "Matt Defina":     "content-schlicht",
+    "Marian Goodell":  "content-cinematic",
+}
+
+# wer: ein fester Name, oder "SCHNITT" fuer "der Agent dieser Folge"
+VORLAUF = [(10, "Transkript",                   "SCHNITT"),
+           (8,  "Clip- und Short-Auswahl",      "SCHNITT"),
            (6,  "Titel · Beschreibung · Tags",  "youtube-manager"),
            (5,  "Thumbnails",                   "thumbnails"),   # Kingsbury: entfaellt, er macht es selbst
-           (3,  "Shorts gebaut",                "content-schlicht + content-cinematic"),
+           (3,  "Shorts gebaut",                "SCHNITT"),
            (2,  "Paket vollständig bei ihm",    "alfred")]
 
 print(f"PLANKONTROLLE · {heute.strftime('%a %d.%m.%Y')} Kapstadt\n")
@@ -59,7 +73,8 @@ for pd in sorted(PODCASTS):
         if -1 <= rest <= 3:
             etwas = True
             marke = "HEUTE " if rest == 0 else ("UEBERFAELLIG " if rest < 0 else f"in {rest} Tg ")
-            print(f"  {marke:14s} {PODCASTS[pd]:16s} T-{tage:<2d} {was:28s} -> {wer}")
+            zustaendig = SCHNITT.get(PODCASTS[pd], "?") if wer == "SCHNITT" else wer
+            print(f"  {marke:14s} {PODCASTS[pd]:16s} T-{tage:<2d} {was:28s} -> {zustaendig}")
 if not etwas:
     print("  keine in den naechsten drei Tagen")
 

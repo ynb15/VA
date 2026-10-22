@@ -8724,8 +8724,8 @@ innerhalb von vierundzwanzig Stunden nachzutragen.
 | Agent | Session | Branch | Fach |
 |---|---|---|---|
 | **Alfred** (ich) | `session_01ELkvmWEvz5X1QNTjj2ucia` | `claude/ai-chief-of-staff-cz83jv` | Übersicht, Plan, Lernkanal, Aufsicht |
-| Content — Shorts I | `session_01UiDavSH3jThmLktN7Wvzxs` | `claude/content-assistant` | **Besitzt das gemeinsame Werkzeug** · aktuell Aaronson |
-| Content — Shorts II | `session_013ucmJDg1VJscd8fwpxegnH` | `claude/content-shorts-2` | Zweite Warteschlange · aktuell Kingsbury |
+| Content — Shorts I | `session_01UiDavSH3jThmLktN7Wvzxs` | `claude/content-assistant` | **Besitzt das gemeinsame Werkzeug** · aktuell **Kingsbury** |
+| Content — Shorts II | `session_013ucmJDg1VJscd8fwpxegnH` | `claude/content-shorts-2` | Zweite Warteschlange · aktuell **Aaronson** |
 | Content — Cinematic | `session_01XqVYzN3ZsciLLfqS5GxYNV` | `claude/content-cinematic` | Filmische Shorts, Rückkatalog, B-Roll |
 | Content — Vlog | `session_01AFYkJ3TqgbC5x3hkcuUdE2` | `claude/content-vlog` | Meaningful-Archiv, Stimmabdruck |
 | Content — Gastauftritte | `session_01YTs5D1g2jbQmSNEd2Fcg7h` | `claude/content-gastauftritte` | Seine Auftritte in **fremden** Podcasts |
@@ -8733,6 +8733,26 @@ innerhalb von vierundzwanzig Stunden nachzutragen.
 | Head of Content | `session_017XwQh9PcSRWDQwDkCxAnKx` | `claude/head-of-content` | Substack, Register, Titelregeln |
 | YouTube Manager | `session_01AcQ6iCiXdnDbp7uxixXydg` | `claude/youtube-manager` | Beschreibungen, Titel, Tags, Kommentare |
 | Guest Booking | `session_01KEApNHe6h9T5sRT7nejf3U` | `claude/guest-booking` | Gäste, Databank, Outreach-Abgleich |
+
+── WELCHE FOLGE WEM GEHÖRT
+**Seine Regel vom 21.10., wörtlich:** *„alle Shorts zu Scott werden von ein und
+demselben Agenten bearbeitet, nacheinander."* Nicht die Kandidaten teilen —
+**die Folge** teilen. Ein Name pro Folge, von T−10 bis T−3.
+
+| Folge | Veröffentlichung | Schnitt liegt bei |
+|---|---|---|
+| Scott Aaronson | So 25.10. | **Shorts II** |
+| Kyle Kingsbury | Sa 31.10. | **Shorts I** |
+| Rick Strassman | Fr 13.11. | **Cinematic** |
+| Matt Defina | Fr 27.11. | **Shorts I** |
+| Marian Goodell | Fr 04.12. | **Cinematic** |
+
+**Dieselbe Tabelle steht als `SCHNITT` in `bin/plan-pruefen.py`** und ist dort
+die Quelle für jede Schnittfrist — vorher trug die Frist zwei Namen
+(„content-schlicht + content-cinematic"), und genau daraus wurde am 22.10.
+dieselbe Stelle zweimal geschnitten, auf 0,4 Sekunden identisch. **Wer eine
+Folge umhängt, ändert beide Stellen.** Vlog und Gastauftritte stehen nicht in
+der Tabelle: sie arbeiten über Folgen hinweg (Archiv) bzw. an fremdem Material.
 
 **Die Regel, die den fünften Content-Agenten nötig machte** (22.10.): Shorts I
 hielt gleichzeitig das gemeinsame Werkzeug, die Aaronson-Shorts am Stichtag und
@@ -8745,3 +8765,36 @@ Shorts II benutzt sie und ändert sie nicht; braucht er eine Änderung,
 beschreibt er sie. Am 20. und 21.10. ist der Renderer zweimal auseinander-
 gelaufen, und beim zweiten Mal hat der Merge stillschweigend eine Entscheidung
 zurückgenommen (das Fragezeichen).
+
+## Musik: der Track, der zwei Shorts weltweit gesperrt hat
+
+**22.10.2026.** Zwei Content-ID-Mails von YouTube, 08:57 und 09:57, beide zu
+„What makes life meaningful?" — mit Sutcliffe und mit Aaronson:
+
+> Content used: **Daylight — David Kushner** · Content owners: **Virgin Music
+> Group** · Type: Audio · **Impact on video: Blocked globally**
+
+**Weltweit gesperrt, nicht monetarisiert.** Beide Stücke sind unabspielbar.
+Die Einordnung vom Vortag war zu weich: kommerzielle Musik ist bei einem Teil
+des Katalogs ein Tauschgeschäft — Einnahmen an den Rechteinhaber, einzelne
+Länder gesperrt — und bei Virgin Music Group eben nicht.
+
+**DIE REGEL: keine Musik unter einem Stück ohne seine ausdrückliche Freigabe
+für genau diesen Titel.** „Liegt in einem seiner Ordner" ist keine Freigabe.
+Genau daraus kam dieser Track: er liegt in Isabelles Preset-Ordner
+`1m3S9cayJDrHX7rMizhOod6lU523FWMHW`. Ein Ordner ist eine Fundstelle, keine
+Rechtelage. Dasselbe gilt für alles Fremde — **nichts Mediales aus dem Netz
+in etwas, das er veröffentlicht.**
+
+**Was dabei gemessen ist, und was Schluss:** gemessen ist, dass in diesem Repo
+auf keinem Branch je eine Audiodatei gelegen hat (`git log --all
+--diff-filter=A` über `*.mp3 *.wav *.m4a *.aac`: leer) und dass
+`video/shorts-render.py` ein Bett nur bei `--musik` unterlegt. **Kein von uns
+gebautes Stück kann diese Spur tragen.** Dass sie beim Hochladen dazukam, ist
+Schlussfolgerung — belegt ist nur, wo der Track liegt, nicht, über welchen
+Schritt er ins Video kam. Der Unterschied gehört in jede Meldung an ihn.
+
+**Und der Weg zurück ist nicht die Trimmfunktion.** Die schneidet das Bild,
+nicht die Tonspur. Es braucht eine neue Fassung ohne die Spur; das alte Stück
+geht auf privat. Was dabei verloren geht — Aufrufe, Kommentare, Alter der URL
+— gehört in die Vorlage, damit er mit der Zahl entscheidet und nicht ohne.
