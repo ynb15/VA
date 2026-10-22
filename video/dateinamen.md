@@ -26,9 +26,11 @@ gesagt, es weiterzugeben.
    `sutcliffe -> Sutcliffe`, die richtige Schreibweise ist also seine
    eigene Vorgabe. Im Dateinamen steht **Sutcliffe**.
 2. **Nebenfassungen in Klammern dahinter**, damit der Grundname gleich
-   bleibt: `YNB Podcast David Sutcliffe Meaning (ohne Musik).mp4`. Gebraucht
-   wird das, seit zu jedem Short mit Musikbett auch eine Fassung ohne
-   gehört — siehe `lernen/content-gastauftritte.md`, 22.10.
+   bleibt. **Seit dem 22.10., 17:20 Kapstadt, ist das umgedreht:** die
+   Fassung **ohne** Musik trägt den Grundnamen, weil vier Sperren an einem
+   Tag gezeigt haben, dass auch Coverversionen weltweit gesperrt werden
+   (siehe `lernen/content-gastauftritte.md`). Gäbe es je wieder eine Fassung
+   mit Bett, hieße sie `… (mit Musik).mp4`.
 
 **Das Stichwort ist ein Wort, kein Satz** — `Meaning`, `Tate`, `Vulnerability`.
 Es sagt, welche Stelle es ist, nicht worum es geht.

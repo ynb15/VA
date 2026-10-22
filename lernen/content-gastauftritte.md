@@ -17,19 +17,40 @@ Neuester Eintrag oben.
   zur letzten Seite lesen** — auch wenn die erste Seite plausibel aussieht.
   → betrifft: alle
 
-- **Zwei kommerzielle Aufnahmen hintereinander gesperrt — der Ausweg ist die
-  Coverversion, nicht der leisere Pegel.** Nach *Daylight* wurde am 22.10.
-  auch *The Irrepressibles – In This Shirt* gesperrt, bei gleichem Pegel und
-  gleicher Laenge. Isabelle hat daraufhin ein **Piano-Cover** von *Tom Odell –
-  Another Love* in den Ordner gelegt. **Der Unterschied ist grundsaetzlich:**
-  Content ID gleicht gegen die **Aufnahme** ab, und ein Cover ist eine andere
-  Aufnahme — der Abgleich gegen das Original greift nicht. Ein Anspruch auf
-  die **Komposition** bleibt moeglich, ist aber ueblicherweise auf
-  Monetarisierung gerichtet, nicht auf Sperrung.
-  **Das ist eine Erwartung, keine Messung** — ob es durchgeht, zeigt erst der
-  Upload. Aber es ist der erste Vorschlag in dieser Reihe, der an der Ursache
-  ansetzt statt an Pegel oder Laenge. **Fuer die Suche nach Musik heisst das:
-  Coverversionen und Neueinspielungen zuerst, Originalaufnahmen zuletzt.**
+- **WIDERRUFEN: die Coverversion ist KEIN Ausweg. Vier Sperren an einem Tag,
+  drei Titel, jeder Neuversuch wieder weltweit gesperrt.** Ich hatte hier
+  geschrieben, ein Cover wechsle den Anspruchsteller und ein
+  Kompositionsanspruch ziele „ueblicherweise auf Monetarisierung statt auf
+  Sperrung" — ausdruecklich als Erwartung gekennzeichnet. **Gemessen ist
+  jetzt das Gegenteil** (Sperrmeldungen vom 22.10., Zeiten Kapstadt):
+
+  | Zeit | Video | beanstandet | Rechteinhaber | Type |
+  |---|---|---|---|---|
+  | 10:57 | `jnAHk2_xWBI` | Daylight – David Kushner | Virgin Music Group | Audio |
+  | 11:57 | `9iRza-eDKcc` | Daylight – David Kushner | Virgin Music Group | Audio |
+  | 15:21 | `5nl--61ZBBI` | In This Shirt (Royksopp Remix) | FUGA | Audio |
+  | 16:21 | `nHQIvWANN04` | COMPTINE D UN AUTRE ETE | LatinAutor-UMPG, UMPG u.a. | **Melody or lyrics** |
+
+  Die vierte Zeile ist **Benny Garners Klaviercover**, also genau der Titel,
+  den ich als Ausweg vorgeschlagen hatte. **Blocked globally**, und zwar als
+  `Melody or lyrics` statt `Audio`: Content ID gleicht auch gegen die
+  **Komposition** ab, und der Verlag hat dieselbe Laengengrenze gesetzt wie
+  das Label. **Eine Coverversion wechselt den Anspruchsteller, nicht die
+  Folge.**
+
+  **Was gilt:** kein Musikbett — nicht Original, nicht Cover, nicht leiser.
+  **Die Fassung ohne Musik ist nicht die Nebenfassung, sie ist die Fassung.**
+  Eine Spur kommt erst wieder in Frage, wenn er einen Titel aus einer
+  **lizenzierten Bibliothek** nennt oder ausdruecklich fuer genau diesen
+  Titel freigibt. **Dass eine Datei in seinem Musikordner liegt, sagt ueber
+  die Rechte nichts** — dort liegen inzwischen drei Titel, und alle drei
+  haben gesperrt.
+
+  **Und die Lehre ueber den Fall hinaus:** ich hatte eine Erwartung sauber
+  als solche gekennzeichnet und sie trotzdem zur Grundlage einer Empfehlung
+  gemacht (*„Coverversionen zuerst, Originalaufnahmen zuletzt"*). Eine
+  gekennzeichnete Vermutung ist keine Lizenz, sie wie einen Befund zu
+  benutzen — sie gehoert geprueft, bevor jemand danach arbeitet.
   → betrifft: alle Content-Agenten
 
 - **Eine Bildblende an einer Naht INNERHALB derselben Einstellung erzeugt

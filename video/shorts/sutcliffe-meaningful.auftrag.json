@@ -50,27 +50,10 @@
     "warum": "Keine Lautheitsangleichung - am 20.10. abgelehnt, der Rauschboden steigt um 18 dB. atempo ist der Klang, den er abgenommen hat."
   },
   "musik": {
-    "drive_id": "1_iCUQBNSP42fIA3ImSfPLmzAWIkYQHol",
-    "titel": "David Kushner - Daylight",
-    "ordner": "https://drive.google.com/drive/folders/1m3S9cayJDrHX7rMizhOod6lU523FWMHW",
-    "blende_ein_s": 0.3,
-    "sidechain_ratio": 4,
-    "warum": "Seine Ansage vom 21.10.: deutlich lauter und frueher einsetzend - unter der Frage war gar keine Musik. Darum kurze Blende statt 1,5 s und sanfteres Wegdruecken.",
-    "ab_sekunde": 50,
-    "warum_ab_sekunde": "Die ersten 15 s von Daylight sind 7-10 dB leiser als der Hauptteil (gemessen in 5-s-Bloecken: 0:00 -21,9 dB gegen 0:50 -10,8 dB). Am Songanfang zu starten war der Grund, warum unter seiner Frage 'gar keine Musik' war. Ab 0:50 traegt das Bett sofort und bleibt die vollen 89 s stark.",
-    "pegel_db_unter_stimme": [
-      0,
-      3,
-      6
-    ],
-    "gemessen_unter_der_frage": {
-      "leise_6db": -38.0,
-      "mittel_3db": -35.0,
-      "laut_0db": -32.0,
-      "stimme": -35.7
-    },
-    "werkzeug": "video/musik_drunter.py — legt das Bett unter einen fertigen Short, ohne neu zu transkribieren oder das Bild neu zu encodieren.",
-    "abgenommen": "Benny Garner - Comptine d'Un Autre Ete, Bett ab 0:10, 3 dB unter der Stimme. Vierter Titel fuer diesen Short."
+    "abgenommen": "KEINE. Stand 22.10.2026, 17:20 Kapstadt.",
+    "warum": "Vier Sperren an einem Tag, drei Titel, jeder Neuversuch wieder weltweit gesperrt — zuletzt auch die Coverversion (Comptine d’un autre été, Benny Garner), und zwar als \"Melody or lyrics\": Content ID greift auch auf die Komposition zu, und der Verlag setzt dieselbe Laengengrenze wie das Label. Eine Coverversion wechselt den Anspruchsteller, nicht die Folge.",
+    "regel": "Kein Musikbett — nicht Original, nicht Cover, nicht leiser. Eine Spur erst wieder, wenn er einen Titel aus einer lizenzierten Bibliothek nennt oder ausdruecklich fuer genau diesen Titel freigibt. Dass eine Datei in seinem Musikordner liegt, sagt ueber die Rechte nichts.",
+    "dateiname": "Die Fassung OHNE Musik traegt den Grundnamen. Gaebe es je wieder eine mit Bett, hiesse sie \"(mit Musik)\"."
   },
   "offen": [
     "Die Totale bei etwa Sekunde 25 traegt die Pointe 'to see yourself reflected through the other' und zeigt ihn klein im Profil. Enger fassen geht, ist aber eine Aenderung am Bild und braucht seine Zustimmung."
