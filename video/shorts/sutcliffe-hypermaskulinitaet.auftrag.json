@@ -1,0 +1,102 @@
+{
+  "name": "Sutcliffe-Folge - Hypermaskulinitaet / Vulnerability is not weakness",
+  "datei": "YNB Podcast David Sutcliffe Hypermasculinity.mp4",
+  "stand": "2026-10-22, 20:30 Kapstadt",
+  "wer_spricht": "Er selbst. Er liest seine eigene Substack-Notiz vor; Sutcliffe hoert zu und wirft zweimal etwas ein.",
+  "quelle": {
+    "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
+    "master_titel": "YNB Podcast: David Sutcliffe",
+    "fenster_master_s": [4550.0, 4665.0],
+    "hinweis": "In EINEM Stueck geholt. Datei beginnt bei Master 4549.99, 312 MB ueber 39 Bereichsanfragen."
+  },
+  "schnitt": {
+    "plan": "video/shorts/sutcliffe-hypermaskulinitaet.schnittplan.json",
+    "von_bis_src_s": [21.1, 88.1],
+    "von_bis_master_s": [4571.09, 4638.09],
+    "dauer_roh_s": 67.0,
+    "warum": "Beide Grenzen liegen auf einem Kamerawechsel, Bild fuer Bild gemessen (Differenz 41,8 bzw. 39,1 gegen 0,5 im Ruhepegel). Bei src 21,1000 schneidet die Kamera von der Totale auf sein Gesicht, sein erstes Wort 'But' kommt 0,24 s spaeter. Bei src 88,1000 schneidet sie auf Sutcliffe, sein letztes Wort 'neither' endet 0,45 s davor. Es ist also kein Schnitt noetig, den das Material nicht ohnehin hergibt - und damit auch keine Stelle, an der ein Sprung entstehen koennte.",
+    "kamerawechsel_clipzeit_s": [19.0, 21.0, 43.6, 51.5],
+    "was_wo": "0-19,0 sein Gesicht · 19,0-21,0 Sutcliffes Reaktionsbild · 21,0-43,6 sein Gesicht · 43,6-51,5 Totale · 51,5-67,0 sein Gesicht"
+  },
+  "broll": {
+    "vorbild": "Sein Craig-Makhosi-Short mit Into the Wild. Seine Ansage vom 22.10.: 'genau das die B-Roll, wie bei dem Short von Craig mit Into the Wild, fast durchgehend laufen lassen. Also mich am Anfang zeigen und dann noch den letzten Teil. Mich wieder zeigen.'",
+    "modus": "unschaerfe",
+    "warum_modus": "Beide Quellen sind Bildschirmaufnahmen im Querformat. Ein 9:16-Ausschnitt wuerde drei Viertel der Breite verwerfen und den Rest hochskalieren. Im Unschaerfe-Modus steht der Film quadratisch und fast unskaliert scharf in der Mitte, dahinter fuellt er sich selbst vergroessert und unscharf das Hochformat - randlos, ohne den Beschnitt zu bezahlen. Das ist derselbe Modus wie bei Craig.",
+    "fokus": 0.5,
+    "bloecke": [
+      {
+        "clipzeit_s": [19.0, 32.9],
+        "quelle": "Shorts: Manosphere (Drive 1UcP5eYD7DHX7CuuOrM36eKucyS_euwQr)",
+        "quellzeit_s": [20.75, 32.35],
+        "worauf": "'like vulnerability ... I put out a note recently on Substack ... most men are too afraid to touch'",
+        "warum_hier": "Uebergabe faellt auf den Kamerawechsel bei 19,0, ist also unsichtbar. Deckt zugleich Sutcliffes Reaktionsbild ab."
+      },
+      {
+        "clipzeit_s": [32.9, 45.0],
+        "quelle": "Shorts: Andrew Tate & David Sutcliffe (Drive 1P_o3bMBllXoGpnyhRKfaZId6cqKSSPyz)",
+        "quellzeit_s": [34.0, 44.1],
+        "worauf": "'this is why the Andrew Tates of this world have so much power ... to follow a leader who bleeds ... so they choose one who pretends he doesn't'",
+        "warum_hier": "Die woertlichste Entsprechung im ganzen Short. Eine durchgehende Einstellung auf Tate, kein Schnitt, kein Text. Rechte: Davids Zustimmung fuer dieses Material liegt vor (21.10.)."
+      },
+      {
+        "clipzeit_s": [45.0, 50.54],
+        "quelle": "Shorts: Manosphere",
+        "quellzeit_s": [98.1, 102.72],
+        "worauf": "'but armor is not strength, it's fear hidden behind a mask'",
+        "warum_hier": "Der Anfang ist so gelegt, dass das Wort 'mask' (Clipzeit 49,68) genau auf den Mann mit der Sonnenbrille faellt - Quellzeit 102,0, Blockversatz 3,90 s. Am fertigen Bild nachgeprueft: sitzt."
+      }
+    ],
+    "anteil": "31,54 von 67,00 s Clipzeit, also 47 %. Bei Craig waren es 44 %.",
+    "uebergabe_zurueck": {
+      "clipzeit_s": 50.54,
+      "warum": "Erst stand sie auf 51,5, dem Kamerawechsel - der Uebergang waere unsichtbar gewesen. Dann lagen aber die Worte 'REAL STRENGTH IS' noch auf fremdem Bild, und zwar auf Louis Therouxs Gesicht. Das ist die Wende des Arguments und seine eigene Zeile, die gehoert auf ihn. Jetzt endet die B-Roll bei 50,54, wo das Wort 'real' anfaengt. Dazwischen stehen 0,96 s Totale, auf ihn beschnitten (Kasten 54:0:492:875, Mitte 0,24 - das ist er, er sitzt links) - also Totale auf ihn, dann naeher auf sein Gesicht. Eine Entscheidung von mir, nicht seine Vorgabe."
+    },
+    "netflix_zeichen": "Die Manosphere-Datei traegt oben rechts ein eingebranntes NETFLIX-Zeichen, gemessen bei x 2105-2275, y 193-271 im 2622x1206-Bild. Es erscheint im fertigen Short NICHT: der scharfe quadratische Ausschnitt nimmt die mittleren 912 px (x 855-1767), der unscharfe Hintergrund die mittleren 513 px. Beides liegt links vom Zeichen. Am fertigen Bild nachgesehen: der obere Rand ist glatt, nichts zu lesen.",
+    "herkunft_der_dateien": "Beide aus seinem Drive-Ordner 1F3x2S7Vn0XNDT73uJnadQIF1_NoAy2Cd, von ihm selbst dort abgelegt. Material aus dem Netz hole ich nicht - siehe video/broll-referenz.md."
+  },
+  "bild": {
+    "tempo": 1.2,
+    "look": "preset",
+    "worte_je_einblendung": 3,
+    "tiefer_px": 120,
+    "logo_breite_px": 700,
+    "logo_hoehe": 0.877,
+    "zoom": 1.15,
+    "plan": "bildausschnitt.py --zoom 1.15 --marke 0,875,215,1080 --kein-stapel",
+    "lippe": 1248
+  },
+  "einblendungen": {
+    "datei": "video/shorts/sutcliffe-hypermaskulinitaet.cues.json",
+    "abgleich": "Der Untertiteltext ist Zeichen fuer Zeichen derselbe wie in der abgenommenen Fassung vom 20.10. (video/shorts/sutcliffe-04-vulnerability.srt) - mit diff nachgeprueft.",
+    "fuenf_korrekturen_am_ersten_lauf": [
+      "'HYPER-MUSCULINITY' statt 'HYPERMASCULINITY'. Whisper liefert den Wortkern von Lauf zu Lauf anders; steht jetzt als Muster in korrekturen.txt.",
+      "'BEHAVIORS YEAH VULNERABILITY' - sein 'like' als 'yeah' verhoert, der Satz war damit kaputt. Ohne den Abgleich gegen die alte Fassung waere das durchgegangen.",
+      "'VULNERABILITY YEAH RIGHT AND I PUT' - Sutcliffes Zwischenruf, Einblendung raus und Ton stumm (20,10-20,88).",
+      "'MOST MAN' zweimal statt 'MOST MEN'. Jetzt als Paar in korrekturen.txt, NUR als Paar: 'a man who can crack open' ist richtig und bleibt.",
+      "'MASK MM-HMM REAL' - Sutcliffes zweiter Zwischenruf, Wort raus und Ton stumm (49,98-50,52). Danach blieben sieben Woerter in der Strecke, nach seiner Regel neu geteilt in 3+2+2: 'REAL STRENGTH IS' / 'A MAN' / 'WHO CAN'."
+    ],
+    "zwischenrufe": "Stummgeschaltet, nicht herausgeschnitten - seine Festlegung vom 20.10.: 'damit das Bild ruhig bleibt'."
+  },
+  "ton": {
+    "laut": "aus",
+    "dehnung": "atempo"
+  },
+  "musik": {
+    "abgenommen": "KEINE.",
+    "warum": "Seine stehende Regel nach fuenf Sperren an einem Tag: ein Bett erst wieder, wenn er einen Titel nennt. Fuer diesen Short hat er keinen genannt."
+  },
+  "outro": {
+    "datei": "video/marke/ynb-outro-9x16.mov",
+    "dauer_s": 4.21
+  },
+  "laenge_s": {
+    "hauptteil": 55.87,
+    "outro": 4.21,
+    "gesamt": 60.08,
+    "hinweis": "Keine Laengenvorgabe von ihm fuer diesen Short. 60,08 s liegt knapp ueber 60 - falls das eine Rolle spielt, liessen sich mit video/pausen_waehlen.py ein paar Pausen kuerzen; er liest hier aber vor, die Pausen sind gewollt. Nicht ungefragt angefasst."
+  },
+  "offen": [
+    "Die Uebergabe zurueck auf ihn bei 50,54 ist meine Entscheidung, nicht seine Vorgabe - siehe broll.uebergabe_zurueck.",
+    "Von der zweiten Tate-Datei im selben Ordner ('Shorts: Andrew Tate best-of', 1,15 GB, 617 s) ist nichts verwendet. Sie liegt geladen bereit, falls er lieber Material daraus will."
+  ]
+}
