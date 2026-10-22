@@ -1,0 +1,10 @@
+{
+ "quelle": "aigod-vorlageB.mov",
+ "groesse": [3840, 2160],
+ "notiz": "Fassung B: nur Nahaufnahmen, die Totale faellt weg. Ausschnitte an sechs Bildern mit Raster gemessen.",
+ "einstellungen": [
+  {"layout": "einzel", "kasten": "513:0:1215:2160",  "lippe": 1105, "start": 0.000,  "ende": 10.967, "tot": false, "wer": "Yannick, Nah"},
+  {"layout": "einzel", "kasten": "1433:0:1215:2160", "lippe": 1213, "start": 10.967, "ende": 21.133, "tot": false, "wer": "Aaronson, Nah"},
+  {"layout": "einzel", "kasten": "1253:0:1215:2160", "lippe": 1284, "start": 21.133, "ende": 27.433, "tot": false, "wer": "Aaronson, Nah"}
+ ]
+}

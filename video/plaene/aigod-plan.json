@@ -1,0 +1,12 @@
+{
+ "quelle": "aigod-vorlage.mov",
+ "groesse": [3840, 2160],
+ "notiz": "Ausschnitte an sechs Bildern mit Raster gemessen, je Einstellung einzeln. Die Totale bekommt einen eigenen, engeren Kasten, damit der Shot auf Aaronson bleibt.",
+ "einstellungen": [
+  {"layout": "einzel", "kasten": "513:0:1215:2160",   "lippe": 1105, "start": 0.000,  "ende": 10.967, "tot": false, "wer": "Yannick, Nah"},
+  {"layout": "einzel", "kasten": "1433:0:1215:2160",  "lippe": 1213, "start": 10.967, "ende": 21.133, "tot": false, "wer": "Aaronson, Nah"},
+  {"layout": "einzel", "kasten": "1553:0:1215:2160",  "lippe": 1267, "start": 21.133, "ende": 22.953, "tot": false, "wer": "Aaronson, Nah"},
+  {"layout": "einzel", "kasten": "2618:446:765:1360", "lippe": 1048, "start": 22.953, "ende": 28.583, "tot": false, "wer": "Totale, enger Kasten auf Aaronson"},
+  {"layout": "einzel", "kasten": "1253:0:1215:2160",  "lippe": 1284, "start": 28.583, "ende": 36.167, "tot": false, "wer": "Aaronson, Nah"}
+ ]
+}

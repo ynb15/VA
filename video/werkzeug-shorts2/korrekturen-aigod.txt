@@ -1,0 +1,43 @@
+# Korrekturen für eingebrannte Untertitel.
+# Eine Zeile je Paar: falsch -> richtig. Links darf eine Wortfolge stehen.
+# Vergleich ohne Rücksicht auf Groß- und Kleinschreibung, nur ganze Wörter.
+# Zeilen mit # sind Notizen.
+#
+# Warum es die Liste gibt: ein falsch verstandenes Wort ist nach dem
+# Einbrennen nicht mehr zu retten. Gesammelt aus dem, was faster-whisper am
+# Studiomaterial verhört hat — von ihm selbst gemeldet, wo es mir entging.
+for short -> fall short
+tenancy -> tendency
+endate -> Andrew Tates
+endotades -> Andrew Tates
+andretates -> Andrew Tates
+andretate -> Andrew Tate
+substack -> Substack
+afrikaburn -> AfrikaBurn
+burningman -> Burning Man
+gilmore -> Gilmore
+yannick -> Yannick
+sutcliffe -> Sutcliffe
+hyper masculinity -> hypermasculinity
+~^endo.?t[ae]d?t?e?s?$ -> Andrew Tates
+# Aaronson-Folge (20.10.): Whisper schreibt den Namen durchgaengig einfach.
+aronson -> Aaronson
+aaronson -> Aaronson
+scott aronson -> Scott Aaronson
+shtetl optimized -> Shtetl-Optimized
+# Craig-Makhosi-Folge (20.10.): Into the Wild und Ubuntu.
+mccandless -> McCandless
+krakauer -> Krakauer
+supertramp -> Supertramp
+super tramp -> Supertramp
+ubuntu -> Ubuntu
+makhosi -> Makhosi
+# --- Zusatz fuer "AI God", gemessen am Clip (22.10.2026, Shorts II) ---
+# Gehoert nach Pruefung in die gemeinsame korrekturen.txt; die liegt bei
+# Shorts I, deshalb hier als eigene Datei uebergeben und nicht dort geaendert.
+arthur clark -> Arthur Clarke
+clark -> Clarke
+prayed the gods -> prayed to gods
+current eyes -> current AIs
+ais -> AIs
+llms -> LLMs
