@@ -32,9 +32,12 @@ anderen Autors**, den er als Vorlage abgelegt hatte. Daher auch die Entwurfszeil
 und `(YT only)` sein Urteil darüber, wo sie tragen würde.
 **Lehre: eine URL in einem Entwurf ist zuerst eine Quelle, nicht ein Beleg.**
 
-**(c) „Boys oder Men — offen."** — **Beantwortet: Men.**
-Veröffentlicht als `Why Men Need to Break Up With Their Mother` (Singular *Mother*, das
-Video sagt *Mothers*). Das „Boys" stand nur in der Dokumentüberschrift.
+**(c) „Boys oder Men — offen."** — **Beantwortet, aber anders als zuerst notiert.**
+Der Feed trägt heute `Why Men Need to Break Up With Their Mother`. **Zwei Leserbelege
+vom Januar und Mai 2026 zeigen aber die Teilen-Karte mit `Why Boys Need to Break Up With
+Their Mothers`** (`voice/leser-echo.md` §3). **Er hat also als „Boys … Mothers"
+veröffentlicht und später auf „Men … Mother" umbenannt.** Mein erster Satz hier — „das
+Boys stand nur in der Dokumentüberschrift" — war falsch.
 
 **(d) Kleiner, aber wichtig:** ich hatte die Zitatkästen als Pfeiler „in jedem
 geschriebenen Entwurf" bezeichnet. Im **Veröffentlichten** sind es **16 Kästen, verteilt
