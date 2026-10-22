@@ -21,8 +21,9 @@
         7334.2
       ]
     ],
-    "blende_s": 0.13,
-    "warum": "Seine Frage, dann faellt alles weg bis 'other people' - Ansage vom 21.10. Die Naht traegt eine Ton- und Bildblende von 4 Bildern, sonst klingt der Schnitt amateurhaft."
+    "blende_s": 0.0,
+    "warum": "Seine Frage, dann faellt alles weg bis 'other people' - Ansage vom 21.10. Die Naht ist ein HARTER Schnitt mit 20-ms-Tonblenden an beiden Seiten. Eine Bildblende von 0,13 s war hier falsch: davor und danach steht dieselbe Kamera auf Sutcliffe, also blendete sie zwei Momente desselben Bildes ineinander - bei Sekunde 2,43 und 2,47 lagen zwei Gesichter uebereinander. Sein Befund vom 22.10.: 'so ein kleiner Glitch ... einfach richtig schlecht geschnitten'. Nachgemessen: an der Naht faellt der Pegel auf -85 dB, der groesste Signalsprung in der Gegend liegt bei 2,948 s und ist noch das Wort 'you?'.",
+    "regel": "Eine Bildblende nur dort, wo die Naht ZWEI Kameras verbindet. Innerhalb derselben Einstellung immer hart schneiden - sonst entsteht eine Doppelbelichtung."
   },
   "bild": {
     "tempo": 1.2,
@@ -69,7 +70,7 @@
       "stimme": -35.7
     },
     "werkzeug": "video/musik_drunter.py — legt das Bett unter einen fertigen Short, ohne neu zu transkribieren oder das Bild neu zu encodieren.",
-    "abgenommen": "mittel (3 dB unter der Stimme) — seine Wahl vom 22.10.2026: „Ich hab den mittleren Tonpegel genommen.“"
+    "abgenommen": "The Irrepressibles - In This Shirt, Bett ab 0:00, 3 dB unter der Stimme. Seine Wahl vom 22.10., nachdem Daylight weltweit gesperrt wurde."
   },
   "offen": [
     "Die Totale bei etwa Sekunde 25 traegt die Pointe 'to see yourself reflected through the other' und zeigt ihn klein im Profil. Enger fassen geht, ist aber eine Aenderung am Bild und braucht seine Zustimmung."
@@ -82,8 +83,8 @@
     "warum": "Seine Ansage vom 22.10.2026: „du vergisst jetzt schon wieder mein Outro. Wo ist mein Outro? Das gehört hinter jedes Short.“ Gilt fuer jeden Short, nicht nur diesen."
   },
   "laenge_s": {
-    "hauptteil": 89.07,
-    "mit_outro": 93.28
+    "hauptteil": 89.17,
+    "mit_outro": 93.38
   },
   "musik_quellen": {
     "ordner": "https://drive.google.com/drive/folders/1M_FhnC0GzERt0zyKvFDae-gumpn--o4O",

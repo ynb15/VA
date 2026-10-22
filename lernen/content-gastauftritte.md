@@ -5,6 +5,22 @@ Neuester Eintrag oben.
 
 ## 2026-10-22
 
+- **Eine Bildblende an einer Naht INNERHALB derselben Einstellung erzeugt
+  eine Doppelbelichtung.** Er fand sie: *„so ein kleiner Glitch ... einfach
+  richtig schlecht geschnitten."* An den Einzelbildern nachgesehen — bei
+  Sekunde **2,43 und 2,47** liegen zwei Gesichter uebereinander. Ursache:
+  `xfade` von 0,13 s an einer Stelle, an der davor und danach **dieselbe
+  Kamera** auf dem Sprecher steht; die Blende mischt zwei Momente desselben
+  Bildes. Sie war von mir die falsche Antwort auf seinen frueheren Einwand,
+  der Schnitt sei „amateurhaft" — dessen Ursache war ein **Knack im Ton**
+  von einer anderen Naht, und der ist separat behoben.
+  **Regel: Bildblende nur, wenn die Naht zwei Kameras verbindet. Innerhalb
+  einer Einstellung immer hart schneiden**, und den Knack ueber kurze
+  Tonblenden (20 ms) an beiden Seiten erledigen — gemessen faellt der Pegel
+  an der Naht dann auf −85 dB, und der groesste Signalsprung in der Gegend
+  ist das gesprochene Wort selbst.
+  → betrifft: alle Content-Agenten
+
 - **Korrektur an meiner eigenen Erklaerung von heute Vormittag: die Laenge
   ist sehr wohl der Hebel — nur war die Grenze enger, als wir dachten.**
   Er hat den Aaronson-Short mit *David Kushner – Daylight* hochgeladen,
