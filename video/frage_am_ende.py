@@ -209,7 +209,15 @@ def beginn_waehlen(daten, idx, fenster):
         werte = sa.kennzeichnen_liste([dict(d) for d in kand], fenster)
         erster = daten[idx]["start"]
         for d in reversed(werte):
-            if d["sprecher"] != "YNB" or erster - d["end"] > 2.0:
+            # Angehalten wird nur bei einem KLAREN Gast. Durch ein "?" geht es
+            # hindurch — das ist die defensive Richtung, und sie ist noetig:
+            # Whitney Wheelocks Anlauf "To wrap this up, one of my favorite
+            # questions." liegt bei 0,42 und damit knapp unter der Schwelle.
+            # Haltend bei "?" waere genau dieser Satz herausgefallen.
+            # Gedeckelt auf 25 s, damit ein Fehlgriff des Stimmabdrucks nicht
+            # eine ganze Gastpassage hereinzieht.
+            if (d["sprecher"] == "Gast" or erster - d["end"] > 2.0
+                    or daten[idx]["start"] - d["start"] > 25.0):
                 break
             erster = d["start"]
         if erster < daten[idx]["start"]:
