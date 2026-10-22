@@ -8786,13 +8786,40 @@ Genau daraus kam dieser Track: er liegt in Isabelles Preset-Ordner
 Rechtelage. Dasselbe gilt für alles Fremde — **nichts Mediales aus dem Netz
 in etwas, das er veröffentlicht.**
 
-**Was dabei gemessen ist, und was Schluss:** gemessen ist, dass in diesem Repo
-auf keinem Branch je eine Audiodatei gelegen hat (`git log --all
+**NACHTRAG VOM SELBEN ABEND — zwei Sätze oben sind überholt, und einer war
+mein Fehlschluss.**
+
+**Erstens: es waren vier Meldungen, nicht zwei, und drei verschiedene Titel.**
+Die Tabelle mit Zeiten, Video-IDs und Rechteinhabern steht in `plan/folgen.md`.
+Er hat zweimal neu hochgeladen, und beide Male kam die Sperre zurück — das
+zweite Mal auf ein **Klaviercover**, als `Melody or lyrics`. **Eine
+Coverversion wechselt den Anspruchsteller, nicht die Folge:** Content ID
+greift auch auf die Komposition, und der Verlag setzt dieselbe Längengrenze
+wie das Label. **Der einzige belegte Weg ist ohne Bett.**
+
+**Zweitens, und das ist die Lehre, die bleibt:** ich hatte gemeldet, **kein von
+uns gebautes Stück könne diese Spur tragen** — begründet damit, dass in diesem
+Repo auf keinem Branch je eine Audiodatei gelegen hat (`git log --all
 --diff-filter=A` über `*.mp3 *.wav *.m4a *.aac`: leer) und dass
-`video/shorts-render.py` ein Bett nur bei `--musik` unterlegt. **Kein von uns
-gebautes Stück kann diese Spur tragen.** Dass sie beim Hochladen dazukam, ist
-Schlussfolgerung — belegt ist nur, wo der Track liegt, nicht, über welchen
-Schritt er ins Video kam. Der Unterschied gehört in jede Meldung an ihn.
+`video/shorts-render.py` ein Bett nur bei `--musik` unterlegt. **Beide
+Messungen stimmen, der Schluss daraus war falsch.** Die Musik liegt in seinem
+Drive; ein Agent lädt sie in den Container, rendert damit, und die Datei kommt
+nie in git. Cinematic hatte das Bett in der eigenen Lerndatei festgehalten —
+**53 Sekunden am Stück** —, ich hatte nur nicht nachgesehen.
+
+**REGEL: ein Nullbefund in der Versionsgeschichte beweist nichts über das, was
+gerendert wurde.** Was nicht eingecheckt ist, hat trotzdem existiert. Wer
+wissen will, womit gebaut wurde, liest die Lerndateien und Bauprotokolle der
+Agenten, nicht `git log`. **Und allgemeiner: eine Abwesenheit in der Quelle, die
+ich durchsuchen kann, ist kein Beleg für eine Abwesenheit in der Welt.** Dieser
+Fehler hat dieselbe Form wie der vom 21.10. („null eigene Commits bei allen
+sieben" — gegen nicht geholte Refs gezählt).
+
+**Dazu die Regel, die Cinematic am selben Tag selbst aufgeschrieben hat und die
+hier ihren Platz bekommt:** *„Eine allgemeine Regel aus dem Gedächtnis ist keine
+Auskunft."* Wo eine Plattformregel eine Lieferung oder seine Entscheidung
+trägt, gehört sie belegt. Beide Male an diesem Tag lag der Beleg zwei Suchen
+weit — in seinem Postfach.
 
 **Und der Weg zurück ist nicht die Trimmfunktion.** Die schneidet das Bild,
 nicht die Tonspur. Es braucht eine neue Fassung ohne die Spur; das alte Stück
@@ -8816,3 +8843,43 @@ noch auf `2026-10-20T15:55` — die Lede war am 21.10. ausgetauscht worden, der
 Stempel nicht. **Ein Board, das inhaltlich aktuell ist und seine Messzeit zwei
 Tage zurückdatiert, ist schlimmer als ein offensichtlich altes.** Der Stempel
 gehört in dieselbe Änderung wie der Text, nie in eine spätere.
+
+## Wie Shorts heißen — seine Vorgabe vom 22.10.
+
+**Seine Worte:** *„ich möchte, dass du ab sofort die Dateien so nennst, YNB
+Podcast und dann der Name und dann halt ein Stichwort zu dem Inhalt … Alle
+Shorts, das heißt, gib das bitte auch weiter an die anderen Short-Agenten."*
+
+```
+YNB Podcast <Gastname> <Stichwort>.mp4
+```
+
+**Das Stichwort ist ein Wort, kein Satz** — `Meaning`, `Tate`, `Vulnerability`.
+Es sagt, welche Stelle es ist, nicht worum es geht. Nebenfassungen in Klammern
+dahinter, damit der Grundname gleich bleibt:
+`YNB Podcast David Sutcliffe Meaning (Fassung C).mp4`.
+
+**Die Schreibweise des Namens bleibt korrekt.** Sein Beispiel schrieb
+„Suctliffe"; `video/korrekturen.txt` führt seit dem 20.10. `sutcliffe ->
+Sutcliffe`, die richtige Schreibweise ist also seine eigene Vorgabe. Volltext
+mit Beispielen: `video/dateinamen.md` auf `claude/content-gastauftritte`.
+
+**An alle vier Short-Agenten und den Vlog-Agenten weitergegeben am 22.10.**,
+weil er es ausdrücklich verlangt hat. Der Gastauftritte-Agent hat die Vorgabe
+aufgenommen und die zwei Lücken darin selbst geschlossen, statt jeden Agenten
+eine eigene Auslegung finden zu lassen — **das ist die richtige Reihenfolge:
+eine Festlegung treffen, kennzeichnen, dass sie nicht von ihm ist, und sie
+weitergeben.**
+
+## Bildblende nur an einer Naht zwischen zwei Kameras
+
+**22.10., vom Gastauftritte-Agenten gemessen, von ihm gefunden:** *„so ein
+kleiner Glitch … einfach richtig schlecht geschnitten."* Ein `xfade` von 0,13 s
+an einer Stelle, an der davor und danach **dieselbe** Kamera auf dem Sprecher
+steht, erzeugt eine **Doppelbelichtung** — an den Einzelbildern nachgesehen
+lagen bei **2,43 s und 2,47 s** zwei Gesichter übereinander.
+
+**REGEL: Bildblende nur, wenn die Naht zwei Kameras verbindet. Innerhalb einer
+Einstellung immer hart schneiden** — und den Knack über kurze Tonblenden
+(20 ms) an beiden Seiten erledigen; gemessen fällt der Pegel an der Naht dann
+auf **−85 dB**. Gehört in `shorts-render.py`, und die Datei gehört Shorts I.

@@ -1,3 +1,41 @@
+## 22.10.2026 — Musiksperre: meine Fassungen tragen keine Musik, gemessen
+
+**Zwei veröffentlichte Shorts sind weltweit gesperrt** — „What makes life
+meaningful?" mit Sutcliffe und mit Aaronson, beides Stücke, die hier
+gebaut wurden. Grund laut YouTube: *Daylight — David Kushner · Virgin
+Music Group · Impact: Blocked globally.*
+
+**Nachgemessen, nicht beteuert.** Die Tonspuren der hier abgelieferten
+Fassungen, in 20-ms-Fenstern:
+
+| Datei | leisestes 1 % | Median | Anteil unter −55 dB |
+|---|---|---|---|
+| 01-sutcliffe-meaningful | **−78,1 dB** | −31,0 dB | 20,5 % |
+| 02-aaronson-meaningful | **−87,2 dB** | −36,2 dB | 18,2 % |
+
+**Ein Musikbett kann das nicht.** Läge Musik unter der Stimme, bliebe der
+Boden in den Sprechpausen bei etwa −35 bis −45 dB, durchgehend. Hier
+liegen rund ein Fünftel aller Fenster unter −55 dB und die leisesten bei
+−78 und −87. Dazu: `--musik` wurde in keinem Lauf benutzt, die Spur kommt
+unverändert aus dem Podcast-Master.
+**Die Musik ist nach der Übergabe dazugekommen, nicht hier.** Das ist
+keine Entlastung, sondern ein Hinweis, wo zu suchen ist — und es heißt,
+dass sich die Stücke aus den vorhandenen Fassungen neu rendern lassen,
+ohne etwas nachzubauen.
+
+**Die Regel bleibt, wie sie war, und wird schärfer:** keine Musik aus
+Handelsaufnahmen, und *„liegt in einem seiner Ordner" ist keine
+Freigabe.* Freigabe heißt: er nennt den Titel.
+→ betrifft: content-*, YNB Cinema, Shorts II, EA, alle Content-Agenten
+
+**Und eine Lehre über Prüfwerkzeuge.** `abnahme.py` stürzte mit einem
+IndexError ab, wenn `ortscheck.py` nicht danebenlag: der Aufruf lief ins
+Leere, `stdout` blieb leer, `.splitlines()[-1]` griff auf eine leere
+Liste. **Eine fehlende Prüfung darf die Abnahme nicht abstürzen lassen —
+sie muss melden, dass sie fehlt.** Sonst ist das Werkzeug, das Fehler
+verhindern soll, selbst eine Fehlerquelle.
+→ betrifft: alle Content-Agenten
+
 ## 22.10.2026 — Eine Folge, ein Agent, der Reihe nach
 
 **Seine Regel, 22.10.:** *„lass uns, um die Übersicht zu behalten, die

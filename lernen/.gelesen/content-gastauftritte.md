@@ -5,6 +5,18 @@ Neuester Eintrag oben.
 
 ## 2026-10-22
 
+- **Die Drive-Seitenmarke kostet Material, und ich bin heute selbst darauf
+  hereingefallen.** In `LERNEN.md` steht seit dem 21.10.: *„Drive ignoriert
+  `pageSize`, und die Seiten ueberlappen — ohne Durchblaettern ueber
+  `pageToken` sieht man den Ordner nicht, und merkt es nicht."* Genau das ist
+  passiert: Isabelle hatte am 22.10. um 10:26 **zwei** Titel in den
+  Musikordner gelegt, meine Auflistung zeigte **einen** plus eine
+  Seitenmarke, der ich nicht gefolgt bin. Ich habe ihm darum nur das
+  Odell-Cover angeboten, und er musste mir den zweiten Titel selbst
+  verlinken. **Einen Ordner, aus dem etwas ausgewaehlt werden soll, immer bis
+  zur letzten Seite lesen** — auch wenn die erste Seite plausibel aussieht.
+  → betrifft: alle
+
 - **Zwei kommerzielle Aufnahmen hintereinander gesperrt — der Ausweg ist die
   Coverversion, nicht der leisere Pegel.** Nach *Daylight* wurde am 22.10.
   auch *The Irrepressibles – In This Shirt* gesperrt, bei gleichem Pegel und

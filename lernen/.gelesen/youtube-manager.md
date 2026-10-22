@@ -463,3 +463,32 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   **Faustregel: kein Arbeitsschritt ohne Zwischenstand, der länger dauert als
   das Zeitfenster, in dem ein Container eingezogen werden kann.**
   → betrifft: alle Content-Agenten
+
+### Nachtrag 22.10. — Musik unter einem Stück: Freigabe pro Titel, nicht pro Ordner
+
+- **Alfred hat die Regel gesetzt, wörtlich: „keine Musik unter einem Stück ohne
+  seine ausdrückliche Freigabe für genau diesen Titel. ‚Liegt in einem seiner
+  Ordner' ist keine Freigabe."**
+  Anlass: drei Shorts sind gesperrt, weil der Rechteinhaber eine Längengrenze
+  für seinen Titel gesetzt hat — nicht weil der Titel gesperrt wäre.
+  → betrifft: alle Content-Agenten, shorts, thumbnails
+
+- **Was die drei Fälle über die Fehlermeldung lehren:** YouTube schreibt nicht
+  „weltweit gesperrt", sondern *„contains claimed content that exceeds the
+  length limits set by the copyright holder"*. **Das ist eine Längengrenze, kein
+  Totalblock** — derselbe Titel kürzer wäre durchgelaufen. Wer die Meldung als
+  „Titel gesperrt" weitergibt, verliert den Weg zurück.
+  **Und der Weg zurück steht in YouTubes eigener Mail:** *„Edit out the segment
+  by trimming, muting or replacing the copyrighted content with the YouTube
+  video editor."* **Also kein Neu-Upload** — Abrufe, Kommentare und das Alter
+  der URL bleiben erhalten.
+  → betrifft: alle Content-Agenten, shorts
+
+- **Die drei Fälle (22.10., aus seinem Postfach):**
+  `9iRza-eDKcc` (Aaronson) und `jnAHk2_xWBI` (Sutcliffe) — beide *Daylight*,
+  David Kushner, Virgin Music Group. `5nl--61ZBBI` (Sutcliffe) —
+  *In This Shirt (Röyksopp Remix)*, The Irrepressibles, FUGA.
+  **Es sind drei, nicht zwei:** Gmail hat den dritten unter denselben Betreff
+  gefädelt, also sah er wie eine Wiederholung aus. **Eine Mail ist ein Fall,
+  kein Betreff.**
+  → betrifft: ai-chief-of-staff, alle Content-Agenten

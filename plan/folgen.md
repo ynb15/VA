@@ -37,43 +37,64 @@ Guest Booker führt die Databank, das ist seine Zeile.
 Spur:** Nathan Maingard und Bridget Woods. Entweder längst veröffentlicht oder
 anders abgelegt. **Ungeklärt, nicht geraten** — liegt beim Guest Booker.
 
-## Zwei veröffentlichte Shorts sind seit heute weltweit gesperrt
+## Vier Sperrmeldungen an einem Tag — und die Coverversion hilft nicht
 
-**22.10.2026, zwei Content-ID-Mails von YouTube, 08:57 und 09:57.** Beide zu
-„What makes life meaningful?" — einmal mit **David Sutcliffe**, einmal mit
-**Scott Aaronson**. Wörtlich aus der Mail:
+**22.10.2026. Vier Content-ID-Mails, drei verschiedene Musiktitel, zwei
+Neuhochladungen, jede wieder gesperrt.** Zeiten Kapstadt, IDs und Rechteinhaber
+aus den Mails selbst:
 
-> Content used: **Daylight — David Kushner** · Content owners: **Virgin Music
-> Group** · Type: Audio · **Impact on video: Blocked globally**
+| Zeit | Titel des Shorts | Video | beanstandet | Rechteinhaber | Type |
+|---|---|---|---|---|---|
+| 10:57 | What makes life meaningful? (Ex-Hollywood Therapist David Sutcliffe) | `jnAHk2_xWBI` | Daylight – David Kushner | Virgin Music Group | Audio |
+| 11:57 | What makes life meaningful? (Quantum Professor Scott Aaronson) | `9iRza-eDKcc` | Daylight – David Kushner | Virgin Music Group | Audio |
+| 15:21 | dasselbe Sutcliffe-Stück, neu hochgeladen | `5nl--61ZBBI` | In This Shirt (Royksopp Remix) – The Irrepressibles | FUGA | Audio |
+| **16:21** | **YNB Podcast david Sutcliffe Meaning XXX** | `nHQIvWANN04` | **COMPTINE D UN AUTRE ETE** | LatinAutor-UMPG, LatinAutor, LatinAutorPerf, Muserk, UMPG Brazil, UMPG Publishing | **Melody or lyrics** |
 
-**Nicht Monetarisierung beim Rechteinhaber, nicht einzelne Länder: weltweit
-gesperrt.** Die beiden Stücke sind unabspielbar, solange sie oben sind. Meine
-Einordnung vom 21.10. war zu weich — ich schrieb, kommerzielle Musik sei
-„meist keine Verwarnung, sondern ein Tauschgeschäft". Das gilt für einen Teil
-des Katalogs, für diesen nicht.
+**Die Tabelle ist ein Verlauf, keine Liste.** Zeile 4 trägt schon die neue
+Dateinamen-Vorgabe und einen Platzhalter — **er hat während des Sweeps zweimal
+neu hochgeladen, und beide Male kam die Sperre zurück.**
 
-**Was dabei gemessen ist, und was nicht:**
+**Der Grund steht in allen vier Mails wörtlich gleich:**
 
-* **Gemessen:** in diesem Repo hat auf keinem Branch je eine Audiodatei
-  gelegen (`git log --all --diff-filter=A` über `*.mp3 *.wav *.m4a *.aac`:
-  leer). `video/shorts-render.py` legt ein Musikbett **nur** bei `--musik`
-  unter, und `video/sutcliffe-shorts.md` hält seit dem 20.10. fest: *„Was
-  fehlt, ist der Track."* **Kein von uns gebautes Stück kann diese Spur
-  tragen.** Das gilt für die sechs Meaningful-Shorts, die vier
-  Sutcliffe-Shorts und die Aaronson-Fassungen.
-* **Schlussfolgerung, nicht Messung:** die Spur ist dann beim Hochladen
-  dazugekommen, aus derselben Quelle, in der der Track liegt — Isabelles
-  Preset-Ordner `1m3S9cayJDrHX7rMizhOod6lU523FWMHW`. Belegt ist nur, dass der
-  Track dort liegt, nicht, über welchen Schritt er ins Video kam.
+> can't be played because it contains claimed content that **exceeds the length
+> limits set by the copyright holder** · **Impact on video: Blocked globally**
 
-**Die Regel, die daraus folgt, gilt ab sofort für jeden Agenten:** keine Musik
-unter einem Stück ohne seine ausdrückliche Freigabe **für genau diesen Titel**.
-„Liegt in einem seiner Ordner" ist keine Freigabe — genau daraus kam dieser
-Track.
+Also: die **Erkennung** hängt am Titel, die **Folge** an einer Längengrenze, die
+der Rechteinhaber je Titel selbst setzt. Ein durchlaufendes Bett — bei Cinematic
+gemessen **53 Sekunden** — hält unter einem 59-Sekunden-Short keine solche
+Grenze ein. Kein Copyright-Strike, kein Kanalschaden; das Stück ist gesperrt.
 
-**Der Weg zurück** liegt beim YouTube-Manager als Entwurf: neue Fassung ohne
-die Spur hochladen, altes Stück auf privat. **Die YouTube-Trimmfunktion ist
-kein Weg** — sie schneidet das Bild, nicht die Tonspur.
+**Die Coverversion ist kein Ausweg, und das ist jetzt gemessen.** Zeile 4 ist
+Benny Garners Klaviercover von *Comptine d'un autre été*, genau als Umweg um
+Content ID in den Musikordner gelegt. Gesperrt als **`Melody or lyrics`** —
+der Anspruch gilt der **Komposition**, nicht der Aufnahme, und der Verlag setzt
+dieselbe Längengrenze wie das Label. **Eine Coverversion wechselt den
+Anspruchsteller, nicht die Folge.**
+
+**Der einzige belegte Weg ist ohne Bett.** Leiser, kürzer, Cover, Remix: von
+heute widerlegt oder unbelegt. Will er Musik, führt der Weg über eine
+**lizenzierte Bibliothek** — ein Einkauf, keine Dateiwahl.
+
+**REGEL: keine Musik unter einem Stück, bis er einen Titel ausdrücklich
+freigibt.** In seinem Musikordner `1m3S9cayJDrHX7rMizhOod6lU523FWMHW` liegen
+jetzt drei Titel, und **alle drei haben gesperrt.** Ein Ordner ist eine
+Fundstelle, keine Rechtelage.
+
+**Zum Weg zurück:** die Mail nennt drei Wege im YouTube-Editor — *„trimming,
+**muting** or replacing"*. Stummschalten steht also zur Verfügung. Es hilft hier
+nicht, aber aus einem Grund, der zur Mischung gehört und nicht zum Werkzeug:
+**das Bett ist in dieselbe Tonspur gemischt wie seine Stimme**, und der
+betroffene Abschnitt ist der ganze Short. Neu hochladen ohne Bett bleibt der
+Weg.
+
+**Eine Korrektur von mir, die in dieselbe Stunde gehört.** Ich hatte ihm um
+16:20 gemeldet, **kein von uns gebautes Stück könne diese Spur tragen** — mit
+der Begründung, in diesem Repo habe auf keinem Branch je eine Audiodatei
+gelegen. Das ist richtig gemessen und **trägt den Schluss nicht**: die Musik
+liegt in seinem Drive, ein Agent lädt sie in den Container und rendert damit,
+und die Datei kommt nie in git. Die Lerndatei von Cinematic hält das Bett
+ausdrücklich fest. **Ein Nullbefund in der Versionsgeschichte beweist nichts
+über das, was gerendert wurde.**
 
 ## Der zweite Vorrat, den wir noch nicht anfassen
 

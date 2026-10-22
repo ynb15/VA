@@ -6,6 +6,106 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-22 — Nachtrag: die Musik kam nach der Uebergabe dazu
+
+- **Ob unter einem fertigen Stueck ein Musikbett liegt, laesst sich in zehn
+  Sekunden messen — am Anteil sehr leiser Fenster, nicht am Mittelwert.**
+  Shorts I hat die beiden gesperrten Stuecke in 20-ms-Fenstern nachgemessen:
+  leisestes Prozent **−78,1 dB** (Sutcliffe) und **−87,2 dB** (Aaronson),
+  rund **ein Fuenftel aller Fenster unter −55 dB**. Unter einem Bett ginge das
+  nicht — in den Sprechpausen bliebe der Boden bei −35 bis −45 dB.
+  **Meine eigenen Zahlen bestaetigen den Schwellenwert von der anderen Seite:**
+  in `aigod-B2`, `aigod-C` und `aigod-2027`, die alle ein Bett haben, liegen
+  nur **1,3 bis 2,1 %** der Fenster unter −55 dB.
+  **Daraus folgt: `--musik` war in den gesperrten Faellen nie benutzt worden,
+  die Musik ist nach der Uebergabe dazugekommen.** Der Content-ID-Treffer
+  stammt also nicht aus einem Agenten-Rendering.
+  → betrifft: alle Content-Agenten
+- **Zwei Betten uebereinander sind der naechste Fehler, der darauf wartet.**
+  Wenn im Upload-Schritt ohnehin Musik ergaenzt wird und meine Fassungen
+  bereits eine mitbringen, liegen am Ende zwei. **Beim Uebergeben dazusagen,
+  ob ein Bett drin ist** — steht ab jetzt in jeder Liste.
+  → betrifft: content-*
+- **`abnahme.py` ist repariert** (`4f744bb`): fehlt `ortscheck.py` daneben,
+  meldet sie `FEHLT Ortscheck: ortscheck.py fehlt neben abnahme.py` und gibt
+  **1** zurueck, statt mit `IndexError` abzubrechen. Mit beiden Dateien
+  zusammen bestehen meine drei Shorts alles Messbare (Rueckgabe 0).
+  **Die Lehre, die Shorts I dazuschreibt, gilt fuer jedes Pruefwerkzeug:
+  eine fehlende Pruefung darf die Abnahme nicht abstuerzen lassen, sie muss
+  melden, dass sie fehlt.**
+  → betrifft: alle
+- **Die geteilten Pruefwerkzeuge hole ich mir weiter in eine Arbeitskopie,
+  statt sie auf meinen Branch zu kopieren.** `abnahme.py`, `ortscheck.py` und
+  `kurzliste.py` gehoeren `claude/content-assistant`. Zweimal kopierte
+  Werkzeuge sind genau der Weg, auf dem `shorts-render.py` am 20. und 21.10.
+  auseinandergelaufen ist. Der Abruf kostet drei `git show`.
+  → betrifft: content-*
+
+## 2026-10-22 — Musik: eine Sperre, und was sie fuer den ganzen Ordner heisst
+
+- **Kommerzielle Musik aus seinem eigenen Preset-Ordner hat heute zwei
+  veroeffentlichte Shorts weltweit gesperrt.** YouTube am 22.10. um 08:57 und
+  09:57 zu „What makes life meaningful?" (Sutcliffe und Aaronson), woertlich:
+  *„Content used: Daylight — David Kushner · Content owners: Virgin Music
+  Group · Type: Audio · Impact on video: **Blocked globally**"*.
+  **Das ist kein Anspruch auf die Einnahmen, das ist unabspielbar.**
+  → betrifft: alle
+- **Geprueft, welche Spur in meinen drei Fassungen liegt: nicht Daylight.**
+  Uebergeben wurde `in-this-shirt.mp3`, **8.143.833 Byte** — byte-genau die
+  Datei, die er mir am 22.10. selbst verlinkt hat
+  (`1aExrMK5cJdbFcY0T0T3iGFsw8upoiryJ`, „Kopie von The Irrepressibles - In
+  This Shirt.mp3"). Daylight (`1viFyrS…`, 4.372.206 Byte) ist in diesem
+  Container **nie heruntergeladen worden** — eine Suche ueber das ganze
+  Dateisystem findet nichts.
+  → betrifft: content-*
+- **Die Entwarnung gilt aber nur fuer den Titel, nicht fuer das Risiko.**
+  Im Ordner `Shorts: Music` (`1M_FhnC0GzERt0zyKvFDae-gumpn--o4O`) liegen genau
+  drei Dateien, und **alle drei sind kommerzielle Veroeffentlichungen**:
+  David Kushner – Daylight · Max Richter – On The Nature Of Daylight ·
+  The Irrepressibles – In This Shirt. **„Eine andere aus demselben Ordner
+  nehmen" ist deshalb keine Loesung** — Daylight war nicht der Ausreisser,
+  sondern der erste Treffer.
+  → betrifft: alle Content-Agenten
+- **Und eine Unterscheidung, die ich mir selbst vorhalte: „er hat die Datei
+  gegeben" ist eine Freigabe fuer den Titel, keine Aussage ueber die
+  Rechtelage.** Seine Worte am 22.10. waren eindeutig (*„dann moechte ich,
+  dass du den Song In the Shirt darunter legst"*), also war das Einbauen
+  richtig. **Falsch waere, es jetzt stehen zu lassen, ohne ihm den neuen
+  Befund vorzulegen** — die Freigabe ist aelter als die Sperre von heute
+  frueh.
+  → betrifft: alle
+
+## 2026-10-22 — Nachtrag: die Liste gehoert zum Short, und sie deckt Schnittfehler auf
+
+- **Seine Regel vom 22.10. gilt fuer jeden Short, auch fuer meine — ich hatte
+  sie aus der Uebergabe gelesen und trotzdem drei Shorts ohne Liste geliefert.**
+  Woertlich, ueber Shorts I: *„dass die Shorts mit dem Transkript geliefert
+  werden muessen, damit ich einfacher Feedback geben kann, beziehungsweise
+  einfach dir sagen kann, was raus soll."* Und seine Erweiterung an mich:
+  *„damit ich sehen kann, was du gegebenenfalls rausgenommen hast."*
+  **Die Liste aus `kurzliste.py` zeigt nur, was drin ist.** Was er braucht, ist
+  beides: der Wortlaut im Short **und** der Wortlaut dessen, was fehlt, mit
+  Zeitmarke und Begruendung je Auslassung. Nachgeliefert als
+  `video/shorts/<short>-liste.txt`.
+  → betrifft: content-*
+- **Das Schreiben der Auslassungsliste hat zwei Fehler in meinem eigenen
+  Schnitt gefunden, die mir beim Rendern nicht aufgefallen waren.** Beide im
+  Short „AI 2027":
+  **1. Ein Pronomen ohne Bezug.** Zeile 3 lautet jetzt „…WITHIN THE SET OF
+  POSSIBILITIES **HE** JUST REGARDED IT AS OBVIOUS" — das „he" ist Eliezer
+  Yudkowsky, und den habe ich in der 22-Sekunden-Auslassung mit
+  weggeschnitten.
+  **2. Eine Frage ohne Antwort.** Yannick fragt im Short *„How well do
+  orangutans fare in a human world?"*, und es geht direkt weiter mit „There's
+  an enormous range of possible outcomes". Die Antwort stand in den **ersten
+  vier Sekunden** des 2:52-Blocks, den ich entfernt habe: *„He would say, by
+  default, this kills us."*
+  **Die Regel daraus: nach jedem Innenschnitt den Text der Nachbarzeilen
+  nebeneinander lesen** — auf Pronomen ohne Bezug und auf Fragen, deren
+  Antwort im entfernten Block lag. Beides faellt beim Ansehen des Renders
+  nicht auf, weil der Schnitt sauber klingt.
+  → betrifft: content-*, alle
+
 ## 2026-10-22 — Nachtrag nach der Aaronson-Uebergabe
 
 - **Dieselbe Stelle ist heute zweimal geschnitten worden, von Shorts I und von

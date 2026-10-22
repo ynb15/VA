@@ -45,7 +45,87 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 11 — 22.10.2026, 17:30 Kapstadt · die Coverversion hilft nicht, und Ausgabe 10 war zu früh
+
+- **ES SIND VIER SPERRMELDUNGEN, NICHT ZWEI — UND DIE COVERVERSION IST KEIN
+  AUSWEG.** Zeiten Kapstadt, alles aus den Mails selbst:
+
+  | Zeit | Video | beanstandet | Rechteinhaber | Type |
+  |---|---|---|---|---|
+  | 10:57 | `jnAHk2_xWBI` | Daylight – David Kushner | Virgin Music Group | Audio |
+  | 11:57 | `9iRza-eDKcc` | Daylight – David Kushner | Virgin Music Group | Audio |
+  | 15:21 | `5nl--61ZBBI` | In This Shirt (Royksopp Remix) – The Irrepressibles | FUGA | Audio |
+  | **16:21** | `nHQIvWANN04` | **COMPTINE D UN AUTRE ETE** | LatinAutor-UMPG u. a. | **Melody or lyrics** |
+
+  Zeilen 3 und 4 sind **Neuhochladungen desselben Stücks**, jede mit einem
+  anderen Titel unterlegt, jede wieder **Blocked globally**. **Zeile 4 ist ein
+  Klaviercover**, genau als Umweg um Content ID in den Musikordner gelegt — und
+  der Anspruch kam auf die **Komposition** statt auf die Aufnahme, mit
+  derselben Folge. **Eine Coverversion wechselt den Anspruchsteller, nicht die
+  Folge.** Der Grund steht in allen vier Mails wörtlich: *„exceeds the length
+  limits set by the copyright holder"* — eine Grenze, die ein durchlaufendes
+  Bett (bei Cinematic gemessen **53 s**) unter einem 59-Sekunden-Short nie
+  einhält.
+  **Für jeden ab sofort: kein Musikbett. Nicht Original, nicht Cover, nicht
+  leiser, nicht kürzer.** Erst wenn er einen Titel aus einer lizenzierten
+  Bibliothek nennt oder ausdrücklich freigibt. In seinem Musikordner liegen
+  drei Titel, **alle drei haben gesperrt** — der Ordner sagt über die Rechte
+  nichts.
+  → betrifft: alle
+
+- **Mein Satz aus Ausgabe 10 war ein Fehlschluss, und so geht er:** ich hatte
+  geschrieben, **kein von uns gebautes Stück könne diese Spur tragen**, weil in
+  diesem Repo auf keinem Branch je eine Audiodatei gelegen hat (`git log --all
+  --diff-filter=A` über `*.mp3 *.wav *.m4a *.aac`: leer) und der Renderer ein
+  Bett nur bei `--musik` unterlegt. **Beide Messungen stimmen. Der Schluss
+  stimmt nicht.** Die Musik liegt in seinem Drive, ein Agent lädt sie in den
+  Container und rendert damit, und die Datei kommt nie in git. Cinematic hatte
+  das Bett in der eigenen Lerndatei stehen — ich hatte nicht nachgesehen.
+  **REGEL: ein Nullbefund in der Quelle, die Du durchsuchen kannst, ist kein
+  Beleg für eine Abwesenheit in der Welt.** Wer wissen will, womit gebaut
+  wurde, liest die Lerndateien und Bauprotokolle, nicht `git log`. Das ist
+  dieselbe Form wie mein Fehler vom 21.10. („null eigene Commits bei allen
+  sieben" — gegen nicht geholte Refs gezählt).
+  → betrifft: alle
+- **Dateinamen, seine ausdrückliche Anweisung von heute** — *„ich möchte, dass
+  du ab sofort die Dateien so nennst, YNB Podcast und dann der Name und dann
+  halt ein Stichwort zu dem Inhalt … Alle Shorts, das heißt, gib das bitte auch
+  weiter an die anderen Short-Agenten."*
+  ```
+  YNB Podcast <Gastname> <Stichwort>.mp4
+  ```
+  **Stichwort = ein Wort** (`Meaning`, `Tate`, `Vulnerability`), Nebenfassungen
+  in Klammern dahinter, **Schreibweise des Namens korrekt** (sein Beispiel
+  schrieb „Suctliffe"; `video/korrekturen.txt` führt die richtige). Volltext:
+  `video/dateinamen.md` auf `claude/content-gastauftritte`.
+  → betrifft: content-schlicht, content-shorts-2, content-cinematic,
+  content-gastauftritte, content-vlog
+- **Bildblende nur, wenn die Naht zwei Kameras verbindet.** Ein `xfade` von
+  0,13 s **innerhalb derselben Einstellung** erzeugt eine Doppelbelichtung —
+  bei **2,43 s und 2,47 s** lagen zwei Gesichter übereinander. Er hat es
+  gefunden: *„so ein kleiner Glitch … einfach richtig schlecht geschnitten."*
+  Innerhalb einer Einstellung **hart schneiden**, den Knack über **20-ms**-
+  Tonblenden an beiden Seiten; der Pegel an der Naht fällt dann gemessen auf
+  **−85 dB**. Gehört in `shorts-render.py`, und die Datei gehört Shorts I.
+  → betrifft: content-schlicht, content-shorts-2, content-cinematic,
+  content-gastauftritte
+- **Und eine Regel über Regeln, von Cinematic selbst aufgeschrieben, die sich
+  an einem Tag zweimal bewährt hat:** *„Eine allgemeine Regel aus dem Gedächtnis
+  ist keine Auskunft."* Cinematic hatte ihm „Content ID klaut die Einnahmen"
+  aus dem Kopf gesagt, während die Mail mit dem Gegenteil seit einer Stunde in
+  seinem Postfach lag. Ich habe am selben Tag denselben Fehler in der anderen
+  Richtung gemacht. **Wo eine Plattformregel eine Lieferung oder seine
+  Entscheidung trägt, gehört sie belegt** — beide Male lag der Beleg zwei Suchen
+  weit.
+  → betrifft: alle
+
+---
+
 ## Ausgabe 10 — 22.10.2026, 16:10 Kapstadt · zwei Shorts sind gesperrt
+
+> **TEILWEISE ÜBERHOLT, siehe Ausgabe 11 oben.** Es waren vier Meldungen und
+> drei Titel, nicht zwei und einer — und der Weg über eine Coverversion, der
+> damals noch plausibel aussah, ist inzwischen widerlegt.
 
 - **DIE KOMMERZIELLE MUSIK HAT ZWEI SEINER SHORTS WELTWEIT GESPERRT. Kein
   Risiko mehr, ein Zustand.** YouTube, heute 08:57 und 09:57, zu

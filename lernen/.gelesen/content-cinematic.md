@@ -286,3 +286,61 @@ und Lagerfeuern Text, der keiner ist. Als Freigabe taugt es nicht — als
 Freigabe taugt ein dichter Kontaktabzug **nur des unteren Bildfünftels**,
 alle 0,5 s. Da ist Schrift sofort zu sehen und ein heller Himmel eben nicht.
 → betrifft: content-cinematic
+
+### Ein Einspieler ist im Vollbild zu beurteilen nutzlos — es zählt der Ausschnitt
+Drei Griffe hintereinander sind mir durchgefallen, alle an derselben Sache.
+`--broll-modus vollbild` nimmt aus dem 2,33:1-Feld die **mittigen 516 von
+2138 Pixeln**. Wer darin nicht steht, ist nicht im Short. Beim Into-the-Wild-
+Trailer ging McCandless bei 112–114 s aus der Bildmitte: im Vollbild noch gut
+sichtbar am Rand, im fertigen Short **zwei Sekunden leerer Himmel**.
+
+Dazu zwei Verwandte desselben Fehlers: eine Stelle, die nach 2,6 s auf eine
+Landschaft wegschneidet, und eine, die 0,4 s zu früh beginnt und noch das
+Bild des *anderen* Einspielers trägt.
+
+**Die Probe, die das alles findet, kostet eine Minute:**
+
+    ffmpeg -ss <sek> -i quelle.mp4 -frames:v 1 \
+      -vf "crop=2138:917:242:153,crop=516:917:811:0" probe.png
+
+Je Einspieler drei bis fünf solcher Proben über die geplante Länge, **in
+genau dem Ausschnitt, den der Renderer nimmt** — nicht im Vollbild, nicht im
+Kontaktabzug der Quelle. Erst danach schneiden.
+→ betrifft: content-cinematic
+
+### „Unsere Musik" war kein Verhörer
+Er sagte „in this shirt, unsere Musik, einfügen", und ich hielt das zuerst
+für eine verunglückte Spracherkennung. Es ist der Titel: *In This Shirt* von
+The Irrepressibles, und er liegt in seinem Drive neben Max Richter und David
+Kushner — eine Ablage, die er selbst für diesen Zweck angelegt hat.
+
+**Bevor ich eine seiner Wendungen für einen Hörfehler halte, suche ich
+danach.** Ein Blick in den Drive hätte die Frage sofort beantwortet.
+→ betrifft: alle Agenten
+
+### Musik unter einem Short: die Sperre ist kein Tauschgeschäft
+Am 22.10. wurden zwei veröffentlichte Shorts **weltweit gesperrt**, 08:57 und
+09:57, beide „What makes life meaningful?". YouTube wörtlich:
+
+> can't be played because it contains **claimed content that exceeds the
+> length limits set by the copyright holder**
+> Daylight – David Kushner · Virgin Music Group · Audio · **Blocked globally**
+
+Ich selbst hatte ihm eine Stunde vorher geschrieben, so etwas koste „in der
+Regel die Einnahmen, nicht den Short". **Das ist für Shorts falsch.** Bei
+Shorts setzt der Rechteinhaber eine Höchstlänge, die von seinem Titel
+verwendet werden darf. Darüber wird nicht monetarisiert, sondern gesperrt.
+Ein 53-Sekunden-Bett am Stück liegt über jeder solchen Grenze.
+
+Zwei Lehren, und die zweite ist die größere:
+
+1. **Kein Musikbett in eine Fassung, die veröffentlicht werden soll**, ohne
+   seine ausdrückliche Freigabe für genau diesen Titel. Dass die Datei in
+   einem seiner Drive-Ordner liegt, ist keine Freigabe — da liegt auch
+   *Daylight*, und genau das hat die Sperre ausgelöst.
+2. **Eine allgemeine Regel aus dem Gedächtnis ist keine Auskunft.** Ich habe
+   „Content ID klaut die Einnahmen" aus dem Kopf gesagt, in einem Satz, der
+   seine Entscheidung tragen sollte. In seinem Postfach lag zu dem Zeitpunkt
+   seit einer Stunde die Mail, die das Gegenteil sagt. Wo eine Plattformregel
+   eine Lieferung trägt, gehört sie belegt — hier zwei Suchen weit.
+→ betrifft: alle Agenten, die Shorts bauen
