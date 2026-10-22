@@ -1,3 +1,34 @@
+## 22.10.2026 — Eine Folge, ein Agent, der Reihe nach
+
+**Seine Regel, 22.10.:** *„lass uns, um die Übersicht zu behalten, die
+einfach alle Shorts zu Scott werden von ein und demselben Agenten
+bearbeitet, nacheinander. Damit wir hier nicht durcheinander kommen, weil
+wir haben hier jetzt eine Überschneidung."*
+
+**Die Überschneidung, nachgesehen statt vermutet:** auf
+`claude/content-cinematic` liegt `video/shorts/aaronson-01-how-safe-is-ai.srt`
+— 64 Einblendungen, drei Runden (`3bde9dc`, `5c7be04`, `a4db680`). Hier
+ist parallel ein anderes Stück derselben Folge entstanden („the trouble
+with AI is not that it doesn't work", Kopfzeile „Is AI safe?").
+**Zwei verschiedene Shorts unter demselben Namen, in zwei Containern, mit
+zwei Zeitbasen.**
+
+**Die Aufteilung, die das verhindern sollte, hat es verursacht.** EA hatte
+verteilt: *„nimm die Kandidaten von hinten, er nimmt sie von vorn."* Beide
+haben Kandidat 1 angefasst — er fängt von vorn an und ist der stärkste,
+also greift jeder zuerst dorthin.
+**Regel: eine Aufteilung innerhalb einer Folge ist keine Aufteilung,
+solange die Kandidaten nicht nummeriert und namentlich vergeben sind. Also
+die Folge verteilen, nicht die Kandidaten.**
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Und was eine Übergabe mitbringen muss, damit sie keine ist:** Schnittzeiten
+**in Quellzeiten** (Anfang und Ende jeder behaltenen Strecke), Ausschnitt,
+Lippenhöhe, und die getroffenen Entscheidungen im Klartext. Ohne das ist
+die Vorarbeit im fremden Container verloren, sobald er eingezogen wird —
+dieselbe Lehre wie bei `clip_aa2.mp4` am 21.10., nur eine Ebene höher.
+→ betrifft: alle Content-Agenten
+
 ## 22.10.2026 — NEUE REGEL: jeder Short geht mit seinem Transkript raus
 
 **Seine Ansage, und sie gilt für alle Short-Agenten:** *„dass die Shorts
