@@ -6,6 +6,40 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-22 — SEINE NEUE SCHNITTREGEL: lieber zu defensiv als zu offensiv
+
+- **Ab sofort wird defensiv geschnitten. Seine Worte vom 22.10., wörtlich:**
+  *„mir ist aufgefallen, es ist deutlich schwerer für mich, wenn du die Shorts
+  eigenständig entscheidest, was du rausschneidest, und ich dann nach das
+  Skript kontrollieren muss, um zu sehen, was du rausgeschnitten hast, als
+  wenn du lieber zu wenig oder weniger rausschneidest und mir dann das
+  Transkript gibst und ich dir eher sagen soll, was du rausschneiden sollst.
+  Deshalb ist die neue Anweisung und gib das bitte weiter an die anderen
+  Agenten, dass du lieber zu defensiv als zu offensiv schneidest, weil es für
+  mich einfach einfacher macht, weil es mir das einfacher macht, dir dann zu
+  sagen, was du noch raus soll."*
+  **Er hat ausdrücklich gesagt, es weiterzugeben** — also gilt es für jeden
+  Short-Agenten, nicht nur für mich.
+  → betrifft: alle Content-Agenten
+- **Was das praktisch heisst, und warum es billiger ist als mein bisheriges
+  Vorgehen.** Eine Auslassung, die er nicht wollte, kostet ihn: Liste lesen,
+  Stelle finden, mir sagen, dass sie zurueck soll, und eine neue Runde. Eine
+  Zeile zu viel im Short kostet ihn: Nummer nennen. **Die Fehlerrichtung ist
+  also nicht symmetrisch, und ich habe sie bisher falsch herum gewaehlt.**
+  Belegt am heutigen Tag: an „AI 2027" hat er **zweimal** eine Auslassung
+  zurueckgeholt (den Propheten-Teil und davor die Parent-Analogie-Diskussion),
+  und beide Male stammte der Fehler daher, dass ich einen ganzen Block
+  gestrichen hatte, statt seine ersten Zeilen einzeln zu pruefen.
+  → betrifft: alle Content-Agenten
+- **Die eine Stelle, an der die Regel an eine harte Grenze stoesst, und mein
+  Vorschlag dazu.** Ein YouTube-Short darf **60 s** nicht ueberschreiten;
+  defensiv schneiden hat dort eine Decke. Mein Vorschlag, bis er es anders
+  sagt: **bis an die Decke fuellen (55–59 s) und die Liste so uebergeben, dass
+  er herausstreichen kann**; wo das Material mehr traegt, zusaetzlich eine
+  Clip-Fassung ohne 60-s-Grenze anbieten, statt den Gedanken zu beschneiden.
+  → betrifft: content-*
+
+
 ## 2026-10-22 — die neue Musikpruefung hat einen blinden Fleck: das Outro
 
 - **`abnahme.py` in `77cf13f` laesst ein Musikbett durch, sobald der Short ein
