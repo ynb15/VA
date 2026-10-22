@@ -142,7 +142,7 @@ Dafür genügt das Fenster des jeweiligen Shorts, nicht die ganze Datei.
 
 ## Short 1 gebaut: „How safe is AI?" (20.10.)
 
-**Datei:** `video/shorts/aaronson-01-how-safe-is-ai.mp4` · 53,0 s · 1080×1920
+**Datei:** `video/shorts/YNB Podcast Scott Aaronson AI.mp4` · 53,0 s · 1080×1920
 Untertitel zusätzlich als `.srt` daneben, für CapCut.
 
 **Was drin ist** (Rohzeit):
