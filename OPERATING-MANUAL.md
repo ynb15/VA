@@ -8494,3 +8494,71 @@ Scott Aaronson"**. Die Form hat er selbst schon benutzt, im Brendan-Kane-Pitch:
 **Das präzisiert die Regel "EVERY NAME CARRIES ITS TWIST"**, die seit dem
 27.08. hier steht: der Twist erklärt den Menschen für Fremde — und die
 Beziehung für Bekannte.
+
+───────────────────────────────────────────────────────────────────
+VIER WEITERE AM 22.10. — UND DIE WICHTIGSTE BETRIFFT MEINE QUELLEN
+───────────────────────────────────────────────────────────────────
+
+**5. DIE REIHENFOLGE DER FÜNF NAMEN IST SEINE, UND SIE HAT EINE LOGIK.**
+Für Ilya: **Strassman · Paddock · Sutcliffe · Goodell · Scott zuletzt**,
+eingeleitet mit **"and of course our mutual connection, Professor Scott
+Aaronson"**. Der Bekannte steht **unten**, nicht oben: die Liste baut von der
+Fachnähe zur Verbindung, und der gemeinsame Bekannte ist die Pointe. "And of
+course" ist dabei sein eigener Scharniersatz — er steht genauso im
+Brendan-Kane-Pitch (*"and of course our mutual friend, my mentor and living
+legend Rob Paddock"*).
+
+**6. EINE GASTBESCHREIBUNG WIRD NICHT UMFORMULIERT — UND EIN ENTWURF IM REPO
+IST NICHT SEINE STIMME.**
+> "bitte schau nochmal nach, Rick Strassman, du hast die Beschreibung
+> geändert. So habe ich es Rick Strassman nie vorgestellt. Rick Strassman
+> würde ich vorstellen mit the world's leading DMT and consciousness
+> researcher, Professor Rick Strassman."
+
+Ich hatte "DMT researcher, UNM professor and author of *The Spirit Molecule*"
+geschrieben. **Woher das kam, ist der eigentliche Befund:** aus
+`drafts/2026-10-18-mushroom-cowboy.md`, wo *"Prof. Rick Strassman, the DMT
+researcher and 3x Rogan guest who wrote The Spirit Molecule"* steht — **ein
+Entwurf, den ein Agent geschrieben hat und den er nie abgeschickt hat.**
+
+**Regel: belegte Formulierungen stehen in seinen GESENDETEN Texten und im
+Outreach-Doc. Ein Entwurf im Repo ist eine Herleitung von mir, auch wenn er
+nach ihm klingt** — und besonders dann. Das ist dieselbe Familie wie die Regel
+vom 09.09. ("meine Herleitung ist keine Anforderung in seiner Stimme"), nur
+eine Ebene tiefer: diesmal habe ich aus meinem eigenen alten Entwurf zitiert
+und es für seine Sprache gehalten.
+
+**Gegenprobe, die ich hätte machen müssen und dann gemacht habe:** im
+Outreach-Doc hat Strassman **gar keine Roster-Zeile**, und "consciousness
+researcher" kommt im ganzen Doc nicht vor. Wo das Doc keine Formulierung
+hergibt, **frage ich oder lasse die Stelle leer** — ich baue sie nicht aus
+Repo-Material.
+
+**Was das Doc dagegen hergibt und gilt:** *"Hollywood star turned men's
+therapist David Sutcliffe"* (Zeile 1501) und *"BurningMan CEO Marian Goodell"*
+(Zeile 814). Er hat am 22.10. mündlich "Hollywood actor" gesagt; beide Formen
+sind seine, die gesprochene ist die jüngere.
+
+**7. `(upcoming)` NUR, WENN DIE MAIL VOR DER VERÖFFENTLICHUNG RAUSGEHT.**
+> "nimm dieses Upcoming aus. Deshalb sage ich ja, das die Nachricht wird
+> rausgehen, wenn alle Podcasts veröffentlicht sind."
+
+**Die Marke am Namen ist keine Eigenschaft des Gastes, sondern eine Aussage
+über den Sendezeitpunkt.** Wer sie aus dem Doc mitkopiert, datiert die Mail
+unbemerkt auf gestern. Vor jedem Pitch: Sendezeitpunkt gegen die
+Veröffentlichungsmarken im Geschäftskalender halten (Aaronson So 25.10.,
+Strassman Fr 13.11., Goodell Fr 04.12.).
+
+**8. EIN TESTDURCHLAUF IST KEIN AUFTRAG MIT UHR.**
+> "du musst halt verstehen, dass ich dir das jetzt nur als Testdurchlauf
+> gegeben habe. Das heißt, die Nachricht wird dieses Jahr nicht mehr rausgehen."
+
+Damit fallen drei Fragen weg, die ich ihm vorgelegt hatte: der Unfall (kommt
+nicht vor), das MRT (nichts geht raus), die Jahreszahl 2027 (nicht mehr im
+Text — das Outro ist wieder die normale Landungsform, und bis zum Versand ist
+sie wieder wahr).
+
+**Regel: bei einem Auftrag ohne Uhr wird der Entwurf für den Zustand gebaut,
+in dem er rausgeht, nicht für heute.** Und ich frage einmal nach dem
+Zeitpunkt, bevor ich Einschränkungen in einen Text schreibe, die nur heute
+gelten.
