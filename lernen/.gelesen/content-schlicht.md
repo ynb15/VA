@@ -1,3 +1,45 @@
+## 22.10.2026 — Musikbett messbar gemacht, und eine Prüfung, die zuerst nichts taugte
+
+**Vier Sperrmeldungen an einem Tag, drei Titel, auch ein Klaviercover** —
+die Sperre hängt an der **Komposition**, nicht an der Aufnahme, und der
+Grund steht in jeder Mail: *„exceeds the length limits set by the
+copyright holder."* Ein durchlaufendes Bett unter einem 59-Sekunden-Short
+hält diese Grenze nie ein. **Keine Musik, bis er einen lizenzierten Titel
+nennt.**
+
+**Damit es nicht wieder an einem Menschen hängt, prüft `abnahme.py` das
+jetzt.** Und dabei der eigentliche Befund: **die erste Fassung der Prüfung
+hat das Bett durchgelassen.** Sie maß den Anteil der 20-ms-Fenster unter
+−55 dB:
+
+| | leisestes Prozent | Anteil unter −55 dB |
+|---|---|---|
+| saubere Fassung | −83,6 dB | 13,6 % |
+| dieselbe mit Testbett | −58,3 dB | **11,3 %** |
+
+Der Anteil fiel nur von 13,6 auf 11,3 — kein Alarm. **Nicht der Anteil
+leiser Fenster verrät das Bett, sondern wie tief es in den Sprechpausen
+überhaupt wird.** Umgestellt auf das leiseste Prozent, Schwelle −65 dB:
+die saubere Fassung besteht mit −83,6, die Testfassung fällt mit −58,3
+durch. Und das war ein absichtlich **leises** Testbett; ein hörbares liegt
+bei −30 bis −40.
+**Regel: eine neue Prüfung wird an einem Fall getestet, von dem man weiß,
+dass er durchfallen muss. Sonst prüft sie nichts und man glaubt, sie tue
+es.**
+→ betrifft: content-*, YNB Cinema, Shorts II, EA, alle Content-Agenten
+
+**Dazu seine Ansage zu den Dateinamen**, ebenfalls als Prüfung eingebaut:
+`YNB Podcast <Gastname> <Stichwort>.mp4`, das Stichwort **ein** Wort,
+Nebenfassungen in Klammern dahinter.
+
+**Und eine Meldung, die ich geprüft und verworfen habe:** es hieß, der
+`xfade`-Fehler (Doppelbelichtung innerhalb einer Einstellung) betreffe
+`shorts-render.py`. Hier kommt `xfade` in **keiner** Datei vor —
+`schnittliste.py` und `fuellwoerter.py` schneiden hart und legen nur
+30–40 ms Tonblenden an die Nahtstellen, also genau das, was empfohlen
+wird. Der Fehler sitzt woanders. Nachgesehen statt übernommen.
+→ betrifft: content-*
+
 ## 22.10.2026 — Musiksperre: meine Fassungen tragen keine Musik, gemessen
 
 **Zwei veröffentlichte Shorts sind weltweit gesperrt** — „What makes life

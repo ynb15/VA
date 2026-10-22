@@ -344,3 +344,45 @@ Zwei Lehren, und die zweite ist die größere:
    seit einer Stunde die Mail, die das Gegenteil sagt. Wo eine Plattformregel
    eine Lieferung trägt, gehört sie belegt — hier zwei Suchen weit.
 → betrifft: alle Agenten, die Shorts bauen
+
+### Nachtrag, und er kippt die Entscheidung: auch die Coverversion wird gesperrt
+Vier Sperrmeldungen am 22.10., alle im Volltext nachgelesen, alle
+*Blocked globally*, alle mit derselben Begruendung („exceeds the length
+limits set by the copyright holder"):
+
+| UTC | Video | beanstandet | Rechteinhaber | Type |
+|---|---|---|---|---|
+| 08:57 | `jnAHk2_xWBI` | Daylight – David Kushner | Virgin Music Group | Audio |
+| 09:57 | `9iRza-eDKcc` | Daylight – David Kushner | Virgin Music Group | Audio |
+| 13:21 | `5nl--61ZBBI` | **In This Shirt (Royksopp Remix) – The Irrepressibles** | FUGA | Audio |
+| 14:21 | `nHQIvWANN04` | COMPTINE D UN AUTRE ETE | LatinAutor-UMPG u.a. | **Melody or lyrics** |
+
+Zwei Dinge daran sind neu und wichtiger als die erste Notiz:
+
+1. **Die vierte Zeile ist ein Klaviercover**, hochgeladen als Ausweg. Der
+   Anspruch gilt der **Komposition**, nicht der Aufnahme. Eine andere
+   Einspielung wechselt also den Anspruchsteller, nicht die Folge — und
+   damit hilft es auch nicht, vom Remix auf das Original auszuweichen.
+2. **Die Grenze ist nicht zu unterbieten, solange das Bett durchlaeuft.**
+   Unter einem Short von knapp 60 Sekunden laeuft es knapp 60 Sekunden.
+
+Dazu eine Lehre ueber das Suchen selbst: dieselbe Gmail-Suche, die mittags
+zwei Treffer brachte, brachte nachmittags null. Nicht weil nichts da war —
+**die Mails lagen im Papierkorb, und Gmail sucht dort nicht mit.** Alle vier
+stehen auf UNREAD. Ein leeres Suchergebnis ist kein Nullbefund, bevor man
+`includeTrash` probiert hat.
+→ betrifft: alle Agenten, die Shorts bauen
+
+### Entscheidung von ihm, 22.10.: In This Shirt ist freigegeben
+*In This Shirt* (The Irrepressibles) wird unter Shorts bis 60 Sekunden
+verwendet. **Das ist entschieden und wird nicht erneut aufgeworfen.**
+
+Ich hatte dreimal widersprochen, zuletzt mit vier Sperrmeldungen aus seinem
+Postfach. Er kennt den Stand und hat anders entschieden — es ist sein Kanal.
+Die Belege stehen im Nachtrag darueber, falls sie jemand braucht; sie sind
+kein Anlass, die Frage noch einmal zu stellen.
+
+**Die Lehre ist nicht die Musik, sondern der Takt.** Einmal mit Beleg
+widersprechen ist Sorgfalt. Dreimal ist Dazwischenreden, auch wenn der
+Beleg stimmt. Nach seiner Bestaetigung wird gebaut, nicht nachgefasst.
+→ betrifft: alle Agenten

@@ -20,7 +20,7 @@ ohne eine einzige neue Aufnahme. Das Nadelöhr ist also nicht das Material.
 | Termin | Gast | Aufnahme | Drive-Ordner | Was schon da ist |
 |---|---|---|---|---|
 | **So 25.10.** | **Scott Aaronson** | 21.08.2026 | `1fv8Jw8v0IwN7kGiLQ-WHSjwXsYpVtkSb` | Transkript (1504 Segmente, 102:13) · 8 Short-Kandidaten · 1 Short gebaut · **9 Thumbnails** · Beschreibung A+B (laufzeitabhängig) · Titel + Thumbnail-Zeilen |
-| **Sa 31.10.** | **Kyle Kingsbury** | 31.08.2026 | `1Y7-B2vZn1WFXINQamcnjRMgCM6Ztvust` | Transkript läuft seit 21.10. · **Thumbnail macht er selbst über ChatGPT** — am 21.10. so angewiesen, der Stichtag T−5 entfällt |
+| **Sa 31.10.** | **Kyle Kingsbury** | 31.08.2026 | `1Y7-B2vZn1WFXINQamcnjRMgCM6Ztvust` | **ANGEHALTEN bis Mo 26.10., siehe unten** · Transkript steht (Rohton 77:12) · Clips und Short-Kandidaten gewählt, alles auf **Rohzeit** · **Thumbnail macht er selbst über ChatGPT**, T−5 entfällt |
 | **Fr 13.11.** | **Rick Strassman** | 18.09.2026 | `1OKUFDBDyeEqV7iwypV5Q-vyQi7WL9b_C` | Meaningful-Stück (**Ende offen, seine Entscheidung**) |
 | **Fr 27.11.** | **Matt Defina** | 04.09.2026 | `1K2cpLvNJ6mrR8Xg7qyhRzgjqSNZCmAIw` | Meaningful-Stück |
 | **Fr 04.12.** | **Marian Goodell** | 06.10.2026 | `1Stnn8uXZO_sWkx-c0CKR6NE9RbXi0elX` | **Tonschaden, siehe unten** — die Mikrofonaufnahme deckt nur die erste von zwei Stunden |
@@ -106,6 +106,47 @@ Daraus ist noch fast nichts geschnitten worden. **Das ist der eigentliche
 Hebel für eine tägliche Veröffentlichung**: der Rückkatalog liefert Clips und
 Shorts, ohne den Vorrat an neuen Folgen anzutasten. Dazu kommt ein Befund des
 YouTube-Managers: **39 von 39 Shorts haben keine Beschreibung.**
+
+## Kingsbury ruht bis Montag — seine Entscheidung vom 22.10.
+
+**Seine Worte:** *„Lass uns mal Kyle Kingsbury bis Montag aufschieben. Weil ich
+warte halt noch, ich muss den Podcast reviewen und dann erst kriege ich die
+finale Version von meinem Cutter. Von meinem menschlichen Cutter. Vorher macht
+es halt keinen Sinn, da was rauszuschneiden, weil das einfach zu viel Kapazität
+kostet."*
+
+**Der Grund ist derselbe, den wir bei Sutcliffe gemessen haben.** Alles, was in
+`video/kingsbury-shorts.md` steht, sind **Rohzeiten**; die Datei sagt das selbst:
+*„Der Versatz zur geschnittenen Folge ist noch nicht gemessen."* Schneidet ein
+Mensch die Folge neu, verschiebt sich nicht nur der Versatz — **Stellen können
+ganz verschwinden.** Ein Versatz lässt sich nachmessen, eine herausgeschnittene
+Stelle nicht.
+
+**Was den Halt übersteht, und was nicht:**
+
+| | |
+|---|---|
+| **Bleibt gültig** | Transkript des Rohtons (77:12) · die Lesart, *welche* Stellen tragen: drei Clips, die Short-Kandidaten, und die eine Stelle, die ohne sein Wort nicht angefasst wird (71:01–73:00) |
+| **Muss neu** | jede Zeitangabe · der Versatz · jeder Schnitt · alles, was an einer Laufzeit hängt |
+
+**Deshalb kostet der Halt fast nichts:** T−10 und T−8 sind inhaltlich erledigt,
+und das Teure — Versatz messen, rendern, die Nachbesserungsrunde — hat noch
+nicht angefangen. **Angehalten wurde vor der Ausgabe, nicht danach.**
+
+**Was weiterlaufen kann, weil es nicht am Schnitt hängt:** Titel, Tags und der
+Textteil der Beschreibung entstehen aus dem Transkript, nicht aus dem Bild. Der
+YouTube-Manager führt laufzeitabhängige Teile ohnehin in zwei Fassungen (bei
+Aaronson Beschreibung A+B) — genau dieses Muster trägt hier.
+
+**Und die eine Frage, die der 31.10. aufwirft.** Nach dem Halt bleiben als
+kritischer Weg: Versatz messen → Shorts schneiden → eine Nachbesserungsrunde →
+Paket. **Ab Montag sind das fünf Tage für drei Schritte — das geht.** Kommt die
+Endfassung später, wird es knapp, und ab Donnerstag hält der 31.10. nicht mehr.
+
+**Mein Vorschlag, eine Entscheidung, nicht zwei:** der 31.10. bleibt stehen. Ist
+die Endfassung am **Mi 28.10. abends** nicht im Drive, wandert Kingsbury und der
+31.10. wird aus dem Rückkatalog gefüllt. Strassman (13.11.) hat Luft, die Folge
+verliert also nichts außer dem Platz.
 
 ## Was eine Folge braucht, bevor sie raus kann
 

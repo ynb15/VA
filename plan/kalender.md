@@ -18,13 +18,26 @@ seine Worte: „und ab dann schauen wir da nochmal.“
 | Podcast | Datum | T−10 Transkript | T−8 Auswahl | T−6 Text | T−5 Thumbnail | T−3 Shorts | T−2 bei ihm |
 |---|---|---|---|---|---|---|---|
 | **Scott Aaronson** | So 25.10. | 15.10. | 17.10. | 19.10. | 20.10. | 22.10. | 23.10. |
-| **Kyle Kingsbury** | Sa 31.10. | 21.10. | 23.10. | 25.10. | 26.10. | 28.10. | 29.10. |
+| **Kyle Kingsbury** | Sa 31.10. | ✓ steht | ✓ steht | ab 26.10. | entfällt | **28.10.** | **29.10.** |
 | **Rick Strassman** | Fr 13.11. | 03.11. | 05.11. | 07.11. | 08.11. | 10.11. | 11.11. |
 | **Matt Defina** | Fr 27.11. | 17.11. | 19.11. | 21.11. | 22.11. | 24.11. | 25.11. |
 | **Marian Goodell** | Fr 04.12. | 24.11. | 26.11. | 28.11. | 29.11. | 01.12. | 02.12. |
 
-**Stand 21.10.2026:** die Frist T−10 für Kingsbury ist **heute**.
-Was heute nicht anläuft, verschiebt den 31.10.
+**Stand 22.10.2026, nachmittags:** **Kingsbury ruht bis Mo 26.10.** — er muss
+die Folge erst reviewen und bekommt dann die Endfassung von seinem menschlichen
+Cutter; aus einem nicht endgültigen Master zu schneiden kostet die Arbeit
+zweimal. Seine Entscheidung, am 22.10. so gesagt.
+
+**T−10 und T−8 sind inhaltlich erledigt** (Transkript des Rohtons, Clips und
+Short-Kandidaten gewählt) — aber **alle Zeitangaben darin sind Rohzeiten** und
+werden an der Endfassung neu gemessen. Der Halt kam also vor dem teuren Teil.
+
+**Der kritische Weg nach dem Halt:** Versatz messen → schneiden → eine
+Nachbesserungsrunde → Paket. Ab Montag sind das fünf Tage für drei Schritte.
+**Entscheidungspunkt: liegt die Endfassung am Mi 28.10. abends nicht im Drive,
+wandert Kingsbury** und der 31.10. kommt aus dem Rückkatalog.
+
+Das Thumbnail entfällt, das macht er selbst über ChatGPT (21.10.).
 
 ---
 
@@ -53,7 +66,7 @@ ein Stück, das er nicht gesehen hat, kann morgen nicht raus.
 | Mi 28.10. | Short | — | offen |
 | Do 29.10. | Short | — | offen |
 | Fr 30.10. | Short | — | offen |
-| Sa 31.10. | **PODCAST** | Kyle Kingsbury | offen |
+| Sa 31.10. | **PODCAST** | Kyle Kingsbury | **angehalten bis Mo 26.10.** |
 
 ### November 2026
 

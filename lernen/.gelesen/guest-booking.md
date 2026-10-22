@@ -190,3 +190,134 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   nach dem Zeitpunkt fragen, bevor Einschränkungen in einen Text kommen, die nur
   heute gelten.**
   → betrifft: alle
+- **Ein sechstes Register, das in keinem Voice-Dokument stand: die warme DM an
+  einen Peer.** Am 22.10. über einen Screenshot seiner eigenen Nachricht an Jon
+  Savage sichtbar geworden — gelaufen über Instagram/WhatsApp, **im Postfach
+  steht dazu nichts**. Aufbau: `Howdy <Name>,` · Vermittler als erster Satz ·
+  `Quick intro:` als eigene Zeile · der Aufhänger in einer Zeile mit
+  Ethos-Spiegel · die Reise als Rahmen für die Gästeliste · **`AND:`-Zeile** ·
+  Unfall als ein Satz · **Kaffee statt Mikrofon** als Bitte · `Dreaming Big,`.
+  **Was ich daraus mitnehme und was auch für andere gilt: sein Betrieb läuft
+  über Kanäle, die wir nicht lesen, und die Register, die dort entstehen,
+  fehlen in unseren Dateien, bis er sie zeigt.**
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Der Motorradunfall ist für ihn Material, nicht Tabu.** In derselben
+  Nachricht: *„On top of that, I survived a motorcycle accident 3 weeks ago…
+  just landed back in SA on Friday night in one piece."* Ein Satz, kein zweiter
+  Satz Rechtfertigung, und das gegenüber jemandem, den er nicht kennt. **Die
+  Regel „nicht nachfragen, nichts ableiten" gilt weiter für uns** — aber ihm zu
+  raten, ihn aus einem Text zu lassen, war meine Vorsicht, nicht seine.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Die `AND:`-Zeile schlägt die `(upcoming)`-Klammer.** Marian Goodell steht
+  in seiner DM nicht in der Bullet-Liste, sondern als eigener Satz darunter —
+  und als **Einladung ins BMHQ**, nicht als Folge. Dadurch altert die Zeile
+  nicht, egal wann die Folge erscheint. **Seine Lösung, besser als meine.**
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Wenn eine ausgesprochene Regel und ein gefundener Text sich widersprechen,
+  zuerst beide datieren.** Seine DM hat **sieben** Bullets, seine Ansage vom
+  21.10. sagt **fünf**. Die DM sagt *„3 weeks ago"* und *„landed back in SA on
+  Friday night"*, ist also um den 10.10. geschrieben — **älter als die Ansage,
+  also gilt die Ansage.** Ohne Datierung wäre daraus „Praxis schlägt Regel"
+  geworden, und das wäre hier falsch gewesen.
+  **Dazu: eine Zeitangabe aus einem fremden Text wird nie übernommen** —
+  „3 weeks ago" war am 10.10. richtig und ist heute falsch.
+  → betrifft: alle
+- **„A motorcycle accident", nie „I came off a motorcycle".** *„das hört sich
+  viel zu undramatisch an."* Belegt in drei seiner eigenen Mails (an Ryan
+  24.09., an Joe Moore 21.09., in der DM an Jon Savage). **Verharmlosen ist
+  genauso eine Abweichung von seiner Stimme wie Übertreiben.** Derselbe Fehler
+  stand in einem zweiten, ungesendeten Entwurf und ist dort mitkorrigiert —
+  **eine als falsch erkannte Formulierung wird über alle liegenden Entwürfe
+  gegrept**, denn ein ungesendeter Entwurf wird irgendwann gesendet.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Die Form des neuen Textes bestimmt die Regeln, nicht die Form der Vorlage.**
+  Ich hatte in eine Mail `Howdy Jon,` als erste Zeile gesetzt, weil **seine
+  eigene DM** so anfängt. Seine Korrektur: *„eine E-Mail, die mit Hi Howdy,
+  Hello anfängt, hat ungefähr 90-prozentige schlechtere Erfolgsquote … Warum
+  nimmst du das jetzt plötzlich weg?"* Beat 1 ist der Cold Open **ohne Anrede**,
+  so machen es alle 87 Pitches im Outreach-Doc. **In einer DM ist man schon im
+  Gespräch, in einer Mail an einen Fremden noch nicht.** Wer aus einer DM eine
+  Mail baut, übernimmt den Inhalt und nicht den Aufbau.
+  **Und: wenn wir bewusst von einer seiner Regeln abweichen, gehört die
+  Abweichung in den Entwurfskopf** — sonst ist es kein Vorschlag, sondern ein
+  stiller Regelbruch.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Woran „zu wenig Tiefe" bei ihm konkret liegt**, dreimal nachvollzogen an
+  einem Entwurf, den er genau so beanstandet hat:
+  1. **Die beste Anekdote ist nicht der beste Mensch.** Mein Cold Open sass auf
+     den zwei Millionen Rand, die Jon Savage zurückzahlte. Stärker ist seine
+     *Heartbreak-Chart* — ein Mann plottet seine Niederlagen, weil die
+     Erfolgskurve zu dünn zum Hinsehen war. **Beat 1 sucht die Stelle, an der
+     der Mensch sichtbar wird, nicht das beeindruckendste Ereignis.**
+  2. **Ohne Geständnis keine Tiefe.** Beat 3 hatte eine Parallele statt etwas,
+     das ihn kostet. Das Geständnis ist der Motor seiner Essays und fehlt in
+     einem Pitch genauso auffällig.
+  3. **Eine der Fragen muss den Preis berühren**, nicht die Methode.
+  **Prüfung vor der Übergabe: steht ein Satz drin, der ihn etwas kostet, und
+  eine Frage, die den Preis des anderen berührt?**
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Ein Satz aus seinem Archiv trägt die Lage mit, in der er stand.** Ich hatte
+  in einen Erstkontakt *„I like to meet people properly before we ever switch a
+  mic on"* geschrieben — hergeleitet aus seiner Mail an Scott Aaronson vom
+  04.08. (*„One thing I like to do before every podcast: grab a quick coffee in
+  person"*). **Nur hatte Scott da längst zugesagt**: das ist eine Logistikzeile
+  an einen gebuchten Gast. Seine Reaktion: *„Was ist das für ein Bullshit,
+  Alter? Wo hast du diese Formulierung gesehen?"*
+  **Vor jeder Übernahme zwei Fragen: an wen ging der Satz, und in welchem
+  Stadium?** Und: **wo sein Text für genau diesen Empfänger existiert, wird er
+  übernommen, nicht verbessert** — seine eigene DM an Jon hatte den Schlusssatz
+  bereits, und ich hatte ihn durch meinen ersetzt.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Über eine Beziehung, die es noch nicht gibt, wird nichts behauptet.** Mein
+  *„He was right"* über den Vermittler: *„wie kann ich sagen, dass er recht
+  hatte, wenn ich noch gar nicht mit Jon zusammengekommen bin?"* Zulässig ist
+  nicht die Bestätigung, sondern **die eigene Hälfte** — warum der Absender
+  glaubt, dass der Vermittler das gesagt hat.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Jeder Satz muss etwas tun, nicht nur stimmen.** *„I had a motorcycle
+  accident in Colorado and flew home to the Mother City to start my rehab"* —
+  beide Tatsachen richtig, der Satz trotzdem funktionslos (*„Das ist so, hä?
+  Was soll der kommunizieren?"*). Mit der Verknüpfung **unterbrochen → deshalb
+  zu Hause → deshalb jetzt möglich** trägt dieselbe Information die Bitte, die
+  danach kommt.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Eine nicht erreichbare Website beendet die Recherche nicht.** Ich hatte
+  einen Pitch auf einem TEDx-Talk von **2014** gebaut und zur Gegenwart nur
+  notiert, dass `jonsavage.com`/`.co.za` und `instagram.com` von hier
+  `ENOTFOUND` sind. Eine einzige Websuche ergab dann: **Africa Podcast Network**
+  (Gründer), **InBroadcasting** (CEO), **AMPD Studios** (Mitgründer), Bühnen
+  bei **Podcast Movement** (USA) und **The Podcast Show** (London). **Erst
+  damit wurde der richtige Spiegel sichtbar** — Yannicks Redaktionslinie
+  Europa–Afrika–Amerika gegen einen Mann, der Afrika in diese Räume trägt.
+  **Und: bevor ein Spiegel aus Yannicks Biografie gebaut wird, muss belegt
+  sein, dass das Thema beim Empfänger überhaupt vorkommt** — seine Korrektur:
+  *„die Vipassana macht bei ihm gar keinen Sinn, du siehst doch gar keine
+  spirituelle Referenz in seiner Story."*
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Bevor ich recherchiere, lese ich seine eigenen Felder zu dem Menschen.**
+  Ich habe den Jon-Savage-Auftrag behandelt, als käme er von Null, habe
+  Instagram und zwei Websites angelaufen, und am Ende in meinem Entwurf eine
+  Einschränkung notiert: dass der Podcast-Mann und der TEDx-Filmemacher
+  derselbe seien, sei **meine Schlussfolgerung**, nirgends ausgeschrieben.
+  **Es stand ausgeschrieben, bei ihm.** Die Databank-Zeile „Jon Savage" trägt
+  seit **01.07.2026** im Feld *Platform* vier Kanäle, darunter
+  `africapodcastnetwork.com` und `x.com/jonsavagerocks` — von ihm eingetragen,
+  vier Monate vor der Vermittlung. Dazu ein Vorbereitungsdoc in Drive vom
+  **02.08.** mit seinem Arbeitstitel **„The Podcast Genius"**. **Drei Felder
+  lesen hätte eine Websuche und eine falsche Einschränkung gespart.**
+  → betrifft: alle, die für ihn recherchieren
+- **Ein leerer Gmail-Entwurf ist eine Quelle.** Zu Jon lag seit **16.10.** ein
+  Entwurf im Postfach: Körper leer, kein Empfänger, aber **Betreff gesetzt** —
+  `[Via Denver Burgess] Man's Search for Meaning`. Daraus kommen zwei Dinge,
+  die ich sonst geraten hätte: **der Nachname des Vermittlers** (Burgess), und
+  **seine Betreff-Wahl für diesen Fall** — voller Nachname in der Klammer, und
+  der nackte Podcastname **ohne** Reisebogen, weil beide in derselben Stadt
+  sind. Die Betreff-Suche in `in:drafts` gehört damit neben `in:sent`.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **„Teilweise angepasst" heißt nicht, dass der Text irgendwo liegt.** Seine
+  angepasste Fassung war weder in diesem Chat noch in den 18 Gmail-Entwürfen,
+  im Outreach-Doc (letzte Änderung 21.10.), in den Drive-Dateien von heute, im
+  Alfred-Inbox-Ordner oder in Notion. **Erst suchen, dann fragen** — die Suche
+  hat hier mehr gefunden als die Frage gekostet hätte; aber ohne seinen Text
+  gibt es keine Analyse, und das sage ich in einer Zeile statt zu raten.
+  → betrifft: alle Agenten

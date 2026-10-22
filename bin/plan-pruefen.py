@@ -23,6 +23,16 @@ PODCASTS = {
 # Ausnahmen: Folge -> Fristen, die fuer sie nicht gelten (von ihm so entschieden)
 ENTFAELLT = {"Kyle Kingsbury": {5}}   # Thumbnail macht er selbst ueber ChatGPT, 21.10.
 
+# Angehaltene Folgen: Folge -> (frei ab, worauf gewartet wird).
+# Von ihm so entschieden. Fristen davor werden nicht als ueberfaellig gemeldet
+# — sie sind nicht verpasst, sie sind ausgesetzt. Die Zeile bleibt sichtbar,
+# damit ein Halt nicht aus dem Blick geraet.
+WARTET = {
+    "Kyle Kingsbury": (datetime.date(2026, 10, 26),
+                       "Endfassung seines menschlichen Cutters; er reviewt die "
+                       "Folge erst"),
+}
+
 # Wer eine Folge schneidet, entscheidet die Folge, nicht die Frist.
 # Seine Regel vom 21.10.: "alle Shorts zu Scott werden von ein und demselben
 # Agenten bearbeitet, nacheinander." Also steht hier ein Name pro Folge, und
@@ -34,6 +44,16 @@ SCHNITT = {
     "Rick Strassman":  "content-cinematic",
     "Matt Defina":     "content-schlicht",
     "Marian Goodell":  "content-cinematic",
+}
+
+# Entscheidungspunkte: Tag -> was an diesem Tag entschieden werden muss, und
+# von wem. Steht hier, damit ich es nicht im Kopf tragen muss — was nicht im
+# Repo steht, passiert nicht.
+ENTSCHEIDUNG = {
+    datetime.date(2026, 10, 28):
+        "Liegt Kingsburys Endfassung heute abend nicht im Drive, haelt der "
+        "31.10. nicht mehr.\n  Dann waehlt ER: Folge wandert, oder "
+        "31.10. aus dem Rueckkatalog. Vorlage von mir.",
 }
 
 # wer: ein fester Name, oder "SCHNITT" fuer "der Agent dieser Folge"
@@ -72,13 +92,29 @@ for pd in sorted(PODCASTS):
         rest = (frist - heute).days
         if -1 <= rest <= 3:
             etwas = True
-            marke = "HEUTE " if rest == 0 else ("UEBERFAELLIG " if rest < 0 else f"in {rest} Tg ")
+            halt = WARTET.get(PODCASTS[pd])
+            if halt and heute < halt[0]:
+                marke = "ANGEHALTEN "
+            else:
+                marke = "HEUTE " if rest == 0 else ("UEBERFAELLIG " if rest < 0 else f"in {rest} Tg ")
             zustaendig = SCHNITT.get(PODCASTS[pd], "?") if wer == "SCHNITT" else wer
             print(f"  {marke:14s} {PODCASTS[pd]:16s} T-{tage:<2d} {was:28s} -> {zustaendig}")
+
+for folge, (frei, grund) in sorted(WARTET.items()):
+    if heute < frei:
+        print(f"\n  ANGEHALTEN: {folge} ruht bis {frei.strftime('%a %d.%m.')} "
+              f"— wartet auf {grund}.")
+        rest_bis = (frei - heute).days
+        print(f"              Das sind noch {rest_bis} Tg. Alles, was am Schnitt "
+              f"haengt, ruht mit.")
 if not etwas:
     print("  keine in den naechsten drei Tagen")
 
-# 3 — Vorlauf im Kasten: wie viele fertige Stuecke liegen vor heute?
+# 3 — was heute entschieden werden muss
+if heute in ENTSCHEIDUNG:
+    print(f"\nENTSCHEIDUNG HEUTE:\n  {ENTSCHEIDUNG[heute]}")
+
+# 4 — Vorlauf im Kasten: wie viele fertige Stuecke liegen vor heute?
 print("\nVORRAT:")
 fertig = 0
 if os.path.exists("plan/kalender.md"):

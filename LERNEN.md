@@ -45,6 +45,58 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 12 — 22.10.2026, 18:05 Kapstadt · aus einem nicht endgültigen Master wird nicht geschnitten
+
+- **ER HAT KINGSBURY BIS MONTAG ANGEHALTEN, UND DER GRUND IST EINE REGEL FÜR
+  ALLE.** Seine Worte:
+  > *„Lass uns mal Kyle Kingsbury bis Montag aufschieben. Weil ich warte halt
+  > noch, ich muss den Podcast reviewen und dann erst kriege ich die finale
+  > Version von meinem Cutter. Von meinem menschlichen Cutter. Vorher macht es
+  > halt keinen Sinn, da was rauszuschneiden, weil das einfach zu viel
+  > Kapazität kostet."*
+
+  **Es gibt einen menschlichen Cutter, und seine Fassung ist die endgültige.**
+  Das stand bis heute in keiner unserer Dateien.
+  **Die Regel: aus einem Master, der noch durch einen Menschen geht, wird nicht
+  geschnitten.** Nicht, weil der Versatz sich ändert — den messen wir nach —,
+  sondern weil **eine herausgeschnittene Stelle sich nicht nachmessen lässt.**
+  Ein Versatz ist ein Fehler mit einer Zahl; eine fehlende Stelle ist Arbeit
+  umsonst.
+  **Und die Unterscheidung, die den Halt billig macht:** was *welche* Stellen
+  tragen, überlebt den neuen Schnitt — das Transkript, die Lesart, die
+  Zurückhaltung an heiklen Stellen. Was *wo* liegt, überlebt ihn nicht. **Wer
+  eine Folge vorbereitet, deren Master noch nicht endgültig ist, arbeitet an der
+  ersten Hälfte und lässt die zweite stehen.** Bei Kingsbury war genau das der
+  Zustand, als der Halt kam — deshalb kostet er fast nichts.
+  → betrifft: content-schlicht, content-shorts-2, content-cinematic,
+  content-gastauftritte, content-vlog, youtube-manager
+
+- **Ein Halt ist ein eigener Zustand, nicht ein verpasster Termin.** Meine
+  Tageskontrolle hat Kingsburys T−10 vier Tage lang als ÜBERFÄLLIG gemeldet,
+  und das wäre ab heute falsch gewesen: die Frist ist nicht verpasst, sie ist
+  **ausgesetzt**. `bin/plan-pruefen.py` kennt jetzt `WARTET` (Folge → frei ab
+  wann, worauf) und meldet `ANGEHALTEN` statt `UEBERFAELLIG`, nennt aber
+  weiter die Zeile — **ein Halt, der unsichtbar wird, ist eine vergessene
+  Folge.** Dazu `ENTSCHEIDUNG`: Entscheidungspunkte stehen im Skript, nicht in
+  meinem Kopf.
+  **Allgemein: ein Zustand, den das Werkzeug nicht kennt, wird als der nächste
+  ähnliche gemeldet — und das ist dann eine Falschmeldung mit gutem Gewissen.**
+  → betrifft: alle, die Fristen führen
+
+- **Freigewordene Kapazität geht in den Rückkatalog, nicht in Vorarbeit.** Shorts
+  I ist bis Montag frei, und der Vorrat steht bei **null**. 38 veröffentlichte
+  Folgen, aus denen fast nichts geschnitten ist; **Chouler mit 12.045 Aufrufen
+  ist die stärkste und die einzige echte Wirkungszahl, die wir haben.** Von ihm
+  am 21.10. gewünscht: Craig Makhosi und Francis Chouler.
+  **Und der sachliche Grund, warum der Rückkatalog billiger ist als eine neue
+  Folge:** veröffentlichte Folgen haben ein wortgenaues YouTube-Transkript
+  (`video/yt-transkript.py`) — kein Drive-Download, kein Tageslimit, **keine
+  Versatzrechnung**, weil die Veröffentlichung selbst die Quelle ist. Bei
+  Chouler gibt es gar keinen Master im Drive. Das ist kein Notbehelf.
+  → betrifft: content-schlicht, content-cinematic
+
+---
+
 ## Ausgabe 11 — 22.10.2026, 17:30 Kapstadt · die Coverversion hilft nicht, und Ausgabe 10 war zu früh
 
 - **ES SIND VIER SPERRMELDUNGEN, NICHT ZWEI — UND DIE COVERVERSION IST KEIN
