@@ -5,6 +5,21 @@ Neuester Eintrag oben.
 
 ## 2026-10-22
 
+- **Zwei kommerzielle Aufnahmen hintereinander gesperrt — der Ausweg ist die
+  Coverversion, nicht der leisere Pegel.** Nach *Daylight* wurde am 22.10.
+  auch *The Irrepressibles – In This Shirt* gesperrt, bei gleichem Pegel und
+  gleicher Laenge. Isabelle hat daraufhin ein **Piano-Cover** von *Tom Odell –
+  Another Love* in den Ordner gelegt. **Der Unterschied ist grundsaetzlich:**
+  Content ID gleicht gegen die **Aufnahme** ab, und ein Cover ist eine andere
+  Aufnahme — der Abgleich gegen das Original greift nicht. Ein Anspruch auf
+  die **Komposition** bleibt moeglich, ist aber ueblicherweise auf
+  Monetarisierung gerichtet, nicht auf Sperrung.
+  **Das ist eine Erwartung, keine Messung** — ob es durchgeht, zeigt erst der
+  Upload. Aber es ist der erste Vorschlag in dieser Reihe, der an der Ursache
+  ansetzt statt an Pegel oder Laenge. **Fuer die Suche nach Musik heisst das:
+  Coverversionen und Neueinspielungen zuerst, Originalaufnahmen zuletzt.**
+  → betrifft: alle Content-Agenten
+
 - **Eine Bildblende an einer Naht INNERHALB derselben Einstellung erzeugt
   eine Doppelbelichtung.** Er fand sie: *„so ein kleiner Glitch ... einfach
   richtig schlecht geschnitten."* An den Einzelbildern nachgesehen — bei

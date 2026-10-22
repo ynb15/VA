@@ -76,7 +76,8 @@
       "stimme": -35.7
     },
     "werkzeug": "video/musik_drunter.py — legt das Bett unter einen fertigen Short, ohne neu zu transkribieren oder das Bild neu zu encodieren.",
-    "pegel": "mittel (3 dB unter der Stimme), seine Vorgabe vom 22.10."
+    "pegel": "mittel (3 dB unter der Stimme), seine Vorgabe vom 22.10.",
+    "abgenommen": "Tom Odell - Another Love (Piano Cover), Bett ab 2:20, 3 dB unter der Stimme. Dritter Versuch, nachdem Daylight und In This Shirt gesperrt wurden."
   },
   "offen": [
     "Die 0,5 s Totale am Anfang - sie herauszunehmen kostet das erste Wort der Frage."
@@ -106,13 +107,19 @@
         "name": "The Irrepressibles - In This Shirt",
         "drive_id": "1aExrMK5cJdbFcY0T0T3iGFsw8upoiryJ",
         "ab_sekunde": 0,
-        "hinweis": "Von der ersten Sekunde an bei -9,3 dB, braucht keinen Versatz."
+        "hinweis": "Von der ersten Sekunde an bei -9,3 dB. GESPERRT: am 22.10. ebenfalls beanstandet, nachdem Daylight schon gesperrt war."
       },
       {
         "name": "Max Richter - On The Nature Of Daylight",
         "drive_id": "1LcSKfy28B7tcEz1PnwenzZIJsUJUdBXn",
         "ab_sekunde": 240,
         "hinweis": "Die ersten 20 s liegen bei -36 dB. Fuer kurze Betten ab 4:50, fuer lange ab 4:00. Sehr breit lizenziertes Stueck, Anspruch wahrscheinlich - nicht gemessen, nur erwartet."
+      },
+      {
+        "name": "Tom Odell - Another Love (Piano Cover)",
+        "drive_id": "1JdaKBC72nGI_brcT3MpUMKdTTlblGZ4F",
+        "ab_sekunde": 140,
+        "hinweis": "Von Isabelle am 22.10. in den Ordner gelegt, nachdem Daylight und In This Shirt gesperrt wurden. Staerkstes Fenster ab 2:20 (-11 bis -13 dB, sehr gleichmaessig); die ersten 40 s liegen 6-10 dB darunter. ERWARTUNG, nicht gemessen: ein Piano-Cover ist eine EIGENE Aufnahme, der Abgleich gegen Tom Odells Master greift also nicht. Ein Anspruch auf die KOMPOSITION bleibt moeglich, der ist aber meist auf Monetarisierung gerichtet und nicht auf Sperrung. Vermutlich genau deshalb hat sie dieses Stueck gewaehlt."
       }
     ],
     "regel": "Zu jedem Short mit Bett gehoert eine Fassung OHNE Musik. Wieviel von einem Titel durchgeht, haengt am Rechteinhaber und ist hier nicht messbar; YouTube zeigt den Anspruch im Upload-Vorgang."
