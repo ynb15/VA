@@ -1,0 +1,1404 @@
+[
+ {
+  "start": 0.0,
+  "end": 1.58,
+  "text": "But where I",
+  "woerter": [
+   {
+    "t": "But",
+    "start": 0.0,
+    "end": 0.56,
+    "seg": 0
+   },
+   {
+    "t": "where",
+    "start": 0.56,
+    "end": 1.04,
+    "seg": 0
+   },
+   {
+    "t": "I",
+    "start": 1.04,
+    "end": 1.58,
+    "seg": 0
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 1.58,
+  "end": 2.36,
+  "text": "see what you",
+  "woerter": [
+   {
+    "t": "see",
+    "start": 1.58,
+    "end": 1.9,
+    "seg": 0
+   },
+   {
+    "t": "what",
+    "start": 1.9,
+    "end": 2.14,
+    "seg": 0
+   },
+   {
+    "t": "you",
+    "start": 2.14,
+    "end": 2.36,
+    "seg": 0
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 2.36,
+  "end": 3.84,
+  "text": "called the",
+  "woerter": [
+   {
+    "t": "called",
+    "start": 2.36,
+    "end": 2.84,
+    "seg": 0
+   },
+   {
+    "t": "the",
+    "start": 2.84,
+    "end": 3.84,
+    "seg": 0
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 3.84,
+  "end": 4.82,
+  "text": "hypermasculinity",
+  "woerter": [
+   {
+    "t": "hypermasculinity",
+    "start": 3.84,
+    "end": 4.82,
+    "seg": 0
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 4.82,
+  "end": 5.35,
+  "text": "fall",
+  "woerter": [
+   {
+    "t": "fall",
+    "start": 4.82,
+    "end": 5.35,
+    "seg": 0
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 5.35,
+  "end": 6.52,
+  "text": "short is",
+  "woerter": [
+   {
+    "t": "short",
+    "start": 5.35,
+    "end": 5.88,
+    "seg": 0
+   },
+   {
+    "t": "is",
+    "start": 5.88,
+    "end": 6.52,
+    "seg": 0
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 7.34,
+  "end": 9.26,
+  "text": "where it's",
+  "woerter": [
+   {
+    "t": "where",
+    "start": 7.34,
+    "end": 7.82,
+    "seg": 1
+   },
+   {
+    "t": "it's",
+    "start": 7.82,
+    "end": 9.26,
+    "seg": 1
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 9.26,
+  "end": 10.24,
+  "text": "failing to",
+  "woerter": [
+   {
+    "t": "failing",
+    "start": 9.26,
+    "end": 9.76,
+    "seg": 2
+   },
+   {
+    "t": "to",
+    "start": 9.76,
+    "end": 10.24,
+    "seg": 2
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 10.24,
+  "end": 11.5,
+  "text": "become whole is",
+  "woerter": [
+   {
+    "t": "become",
+    "start": 10.24,
+    "end": 10.5,
+    "seg": 2
+   },
+   {
+    "t": "whole",
+    "start": 10.5,
+    "end": 11.0,
+    "seg": 2
+   },
+   {
+    "t": "is",
+    "start": 11.0,
+    "end": 11.5,
+    "seg": 2
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 11.5,
+  "end": 13.26,
+  "text": "in the",
+  "woerter": [
+   {
+    "t": "in",
+    "start": 11.5,
+    "end": 12.62,
+    "seg": 2
+   },
+   {
+    "t": "the",
+    "start": 12.62,
+    "end": 13.26,
+    "seg": 2
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 13.76,
+  "end": 15.02,
+  "text": "tendency to",
+  "woerter": [
+   {
+    "t": "tendency",
+    "start": 13.76,
+    "end": 14.24,
+    "seg": 3
+   },
+   {
+    "t": "to",
+    "start": 14.24,
+    "end": 15.02,
+    "seg": 3
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 15.02,
+  "end": 15.92,
+  "text": "completely",
+  "woerter": [
+   {
+    "t": "completely",
+    "start": 15.02,
+    "end": 15.92,
+    "seg": 3
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 15.92,
+  "end": 17.3,
+  "text": "suppress certain",
+  "woerter": [
+   {
+    "t": "suppress",
+    "start": 15.92,
+    "end": 16.54,
+    "seg": 3
+   },
+   {
+    "t": "certain",
+    "start": 16.54,
+    "end": 17.3,
+    "seg": 3
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 17.3,
+  "end": 18.54,
+  "text": "Traits or",
+  "woerter": [
+   {
+    "t": "Traits",
+    "start": 17.3,
+    "end": 18.44,
+    "seg": 4
+   },
+   {
+    "t": "or",
+    "start": 18.44,
+    "end": 18.54,
+    "seg": 4
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 18.54,
+  "end": 18.84,
+  "text": "behaviors.",
+  "woerter": [
+   {
+    "t": "behaviors.",
+    "start": 18.54,
+    "end": 18.84,
+    "seg": 4
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 19.14,
+  "end": 19.28,
+  "text": "like",
+  "woerter": [
+   {
+    "t": "like",
+    "start": 19.14,
+    "end": 19.28,
+    "seg": 4
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 19.28,
+  "end": 19.86,
+  "text": "vulnerability.",
+  "woerter": [
+   {
+    "t": "vulnerability.",
+    "start": 19.28,
+    "end": 19.86,
+    "seg": 4
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 20.78,
+  "end": 22.06,
+  "text": "and I put",
+  "woerter": [
+   {
+    "t": "and",
+    "start": 20.78,
+    "end": 21.16,
+    "seg": 4
+   },
+   {
+    "t": "I",
+    "start": 21.16,
+    "end": 21.44,
+    "seg": 4
+   },
+   {
+    "t": "put",
+    "start": 21.44,
+    "end": 22.06,
+    "seg": 4
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 22.06,
+  "end": 22.74,
+  "text": "out a",
+  "woerter": [
+   {
+    "t": "out",
+    "start": 22.06,
+    "end": 22.3,
+    "seg": 4
+   },
+   {
+    "t": "a",
+    "start": 22.3,
+    "end": 22.74,
+    "seg": 4
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 22.74,
+  "end": 23.66,
+  "text": "note recently",
+  "woerter": [
+   {
+    "t": "note",
+    "start": 22.74,
+    "end": 23.04,
+    "seg": 4
+   },
+   {
+    "t": "recently",
+    "start": 23.04,
+    "end": 23.66,
+    "seg": 4
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 23.66,
+  "end": 24.38,
+  "text": "on Substack",
+  "woerter": [
+   {
+    "t": "on",
+    "start": 23.66,
+    "end": 23.86,
+    "seg": 4
+   },
+   {
+    "t": "Substack",
+    "start": 23.86,
+    "end": 24.38,
+    "seg": 4
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 25.82,
+  "end": 26.5,
+  "text": "Vulnerability is",
+  "woerter": [
+   {
+    "t": "Vulnerability",
+    "start": 25.82,
+    "end": 26.3,
+    "seg": 5
+   },
+   {
+    "t": "is",
+    "start": 26.3,
+    "end": 26.5,
+    "seg": 5
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 26.5,
+  "end": 27.04,
+  "text": "not weakness",
+  "woerter": [
+   {
+    "t": "not",
+    "start": 26.5,
+    "end": 26.62,
+    "seg": 5
+   },
+   {
+    "t": "weakness",
+    "start": 26.62,
+    "end": 27.04,
+    "seg": 5
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 27.64,
+  "end": 28.62,
+  "text": "It's a distinctive",
+  "woerter": [
+   {
+    "t": "It's",
+    "start": 27.64,
+    "end": 28.14,
+    "seg": 6
+   },
+   {
+    "t": "a",
+    "start": 28.14,
+    "end": 28.2,
+    "seg": 6
+   },
+   {
+    "t": "distinctive",
+    "start": 28.2,
+    "end": 28.62,
+    "seg": 6
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 28.62,
+  "end": 29.52,
+  "text": "expression",
+  "woerter": [
+   {
+    "t": "expression",
+    "start": 28.62,
+    "end": 29.52,
+    "seg": 6
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 29.52,
+  "end": 30.08,
+  "text": "of strength.",
+  "woerter": [
+   {
+    "t": "of",
+    "start": 29.52,
+    "end": 29.78,
+    "seg": 6
+   },
+   {
+    "t": "strength.",
+    "start": 29.78,
+    "end": 30.08,
+    "seg": 6
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 30.5,
+  "end": 31.38,
+  "text": "Most men are",
+  "woerter": [
+   {
+    "t": "Most",
+    "start": 30.5,
+    "end": 30.66,
+    "seg": 6
+   },
+   {
+    "t": "men",
+    "start": 30.66,
+    "end": 31.0,
+    "seg": 6
+   },
+   {
+    "t": "are",
+    "start": 31.0,
+    "end": 31.38,
+    "seg": 6
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 31.38,
+  "end": 32.12,
+  "text": "too afraid",
+  "woerter": [
+   {
+    "t": "too",
+    "start": 31.38,
+    "end": 31.66,
+    "seg": 6
+   },
+   {
+    "t": "afraid",
+    "start": 31.66,
+    "end": 32.12,
+    "seg": 6
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 32.12,
+  "end": 32.7,
+  "text": "to touch",
+  "woerter": [
+   {
+    "t": "to",
+    "start": 32.12,
+    "end": 32.36,
+    "seg": 6
+   },
+   {
+    "t": "touch",
+    "start": 32.36,
+    "end": 32.7,
+    "seg": 6
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 32.7,
+  "end": 33.72,
+  "text": "This is why",
+  "woerter": [
+   {
+    "t": "This",
+    "start": 32.7,
+    "end": 33.42,
+    "seg": 7
+   },
+   {
+    "t": "is",
+    "start": 33.42,
+    "end": 33.54,
+    "seg": 7
+   },
+   {
+    "t": "why",
+    "start": 33.54,
+    "end": 33.72,
+    "seg": 7
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 33.72,
+  "end": 34.11,
+  "text": "the Andrew",
+  "woerter": [
+   {
+    "t": "the",
+    "start": 33.72,
+    "end": 33.86,
+    "seg": 7
+   },
+   {
+    "t": "Andrew",
+    "start": 33.86,
+    "end": 34.11,
+    "seg": 7
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 34.11,
+  "end": 34.66,
+  "text": "Tates of this",
+  "woerter": [
+   {
+    "t": "Tates",
+    "start": 34.11,
+    "end": 34.36,
+    "seg": 7
+   },
+   {
+    "t": "of",
+    "start": 34.36,
+    "end": 34.52,
+    "seg": 7
+   },
+   {
+    "t": "this",
+    "start": 34.52,
+    "end": 34.66,
+    "seg": 7
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 34.66,
+  "end": 35.4,
+  "text": "world have so",
+  "woerter": [
+   {
+    "t": "world",
+    "start": 34.66,
+    "end": 34.9,
+    "seg": 7
+   },
+   {
+    "t": "have",
+    "start": 34.9,
+    "end": 35.22,
+    "seg": 7
+   },
+   {
+    "t": "so",
+    "start": 35.22,
+    "end": 35.4,
+    "seg": 7
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 35.4,
+  "end": 35.84,
+  "text": "much power",
+  "woerter": [
+   {
+    "t": "much",
+    "start": 35.4,
+    "end": 35.54,
+    "seg": 7
+   },
+   {
+    "t": "power",
+    "start": 35.54,
+    "end": 35.84,
+    "seg": 7
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 35.84,
+  "end": 36.54,
+  "text": "because",
+  "woerter": [
+   {
+    "t": "because",
+    "start": 35.84,
+    "end": 36.54,
+    "seg": 7
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 36.54,
+  "end": 37.84,
+  "text": "most men don't",
+  "woerter": [
+   {
+    "t": "most",
+    "start": 36.54,
+    "end": 36.88,
+    "seg": 7
+   },
+   {
+    "t": "men",
+    "start": 36.88,
+    "end": 37.24,
+    "seg": 7
+   },
+   {
+    "t": "don't",
+    "start": 37.24,
+    "end": 37.84,
+    "seg": 7
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 37.84,
+  "end": 38.42,
+  "text": "feel secure",
+  "woerter": [
+   {
+    "t": "feel",
+    "start": 37.84,
+    "end": 38.02,
+    "seg": 7
+   },
+   {
+    "t": "secure",
+    "start": 38.02,
+    "end": 38.42,
+    "seg": 7
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 38.42,
+  "end": 39.16,
+  "text": "enough in",
+  "woerter": [
+   {
+    "t": "enough",
+    "start": 38.42,
+    "end": 38.82,
+    "seg": 7
+   },
+   {
+    "t": "in",
+    "start": 38.82,
+    "end": 39.16,
+    "seg": 7
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 39.56,
+  "end": 40.54,
+  "text": "Themselves to",
+  "woerter": [
+   {
+    "t": "Themselves",
+    "start": 39.56,
+    "end": 40.1,
+    "seg": 8
+   },
+   {
+    "t": "to",
+    "start": 40.1,
+    "end": 40.54,
+    "seg": 8
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 40.54,
+  "end": 41.3,
+  "text": "follow a leader",
+  "woerter": [
+   {
+    "t": "follow",
+    "start": 40.54,
+    "end": 40.86,
+    "seg": 8
+   },
+   {
+    "t": "a",
+    "start": 40.86,
+    "end": 41.12,
+    "seg": 8
+   },
+   {
+    "t": "leader",
+    "start": 41.12,
+    "end": 41.3,
+    "seg": 8
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 41.3,
+  "end": 42.5,
+  "text": "who bleeds so",
+  "woerter": [
+   {
+    "t": "who",
+    "start": 41.3,
+    "end": 41.48,
+    "seg": 8
+   },
+   {
+    "t": "bleeds",
+    "start": 41.48,
+    "end": 41.82,
+    "seg": 8
+   },
+   {
+    "t": "so",
+    "start": 41.82,
+    "end": 42.5,
+    "seg": 8
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 42.5,
+  "end": 43.38,
+  "text": "they choose one",
+  "woerter": [
+   {
+    "t": "they",
+    "start": 42.5,
+    "end": 42.7,
+    "seg": 8
+   },
+   {
+    "t": "choose",
+    "start": 42.7,
+    "end": 43.02,
+    "seg": 8
+   },
+   {
+    "t": "one",
+    "start": 43.02,
+    "end": 43.38,
+    "seg": 8
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 43.38,
+  "end": 44.28,
+  "text": "who pretends",
+  "woerter": [
+   {
+    "t": "who",
+    "start": 43.38,
+    "end": 43.8,
+    "seg": 8
+   },
+   {
+    "t": "pretends",
+    "start": 43.8,
+    "end": 44.28,
+    "seg": 8
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 44.28,
+  "end": 45.2,
+  "text": "he doesn't",
+  "woerter": [
+   {
+    "t": "he",
+    "start": 44.28,
+    "end": 44.78,
+    "seg": 8
+   },
+   {
+    "t": "doesn't",
+    "start": 44.78,
+    "end": 45.2,
+    "seg": 8
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 45.2,
+  "end": 46.76,
+  "text": "But armor is",
+  "woerter": [
+   {
+    "t": "But",
+    "start": 45.2,
+    "end": 46.04,
+    "seg": 9
+   },
+   {
+    "t": "armor",
+    "start": 46.04,
+    "end": 46.38,
+    "seg": 9
+   },
+   {
+    "t": "is",
+    "start": 46.38,
+    "end": 46.76,
+    "seg": 9
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 46.76,
+  "end": 47.3,
+  "text": "not strength.",
+  "woerter": [
+   {
+    "t": "not",
+    "start": 46.76,
+    "end": 46.9,
+    "seg": 9
+   },
+   {
+    "t": "strength.",
+    "start": 46.9,
+    "end": 47.3,
+    "seg": 9
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 47.74,
+  "end": 49.18,
+  "text": "It's fear hidden",
+  "woerter": [
+   {
+    "t": "It's",
+    "start": 47.74,
+    "end": 48.14,
+    "seg": 9
+   },
+   {
+    "t": "fear",
+    "start": 48.14,
+    "end": 48.5,
+    "seg": 9
+   },
+   {
+    "t": "hidden",
+    "start": 48.5,
+    "end": 49.18,
+    "seg": 9
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 49.18,
+  "end": 49.96,
+  "text": "behind a mask",
+  "woerter": [
+   {
+    "t": "behind",
+    "start": 49.18,
+    "end": 49.5,
+    "seg": 9
+   },
+   {
+    "t": "a",
+    "start": 49.5,
+    "end": 49.66,
+    "seg": 9
+   },
+   {
+    "t": "mask",
+    "start": 49.66,
+    "end": 49.96,
+    "seg": 9
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 50.54,
+  "end": 51.7,
+  "text": "real strength is",
+  "woerter": [
+   {
+    "t": "real",
+    "start": 50.54,
+    "end": 50.94,
+    "seg": 10
+   },
+   {
+    "t": "strength",
+    "start": 50.94,
+    "end": 51.32,
+    "seg": 10
+   },
+   {
+    "t": "is",
+    "start": 51.32,
+    "end": 51.7,
+    "seg": 10
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 51.7,
+  "end": 52.04,
+  "text": "a man",
+  "woerter": [
+   {
+    "t": "a",
+    "start": 51.7,
+    "end": 51.8,
+    "seg": 10
+   },
+   {
+    "t": "man",
+    "start": 51.8,
+    "end": 52.04,
+    "seg": 10
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 52.04,
+  "end": 52.62,
+  "text": "who can",
+  "woerter": [
+   {
+    "t": "who",
+    "start": 52.04,
+    "end": 52.3,
+    "seg": 10
+   },
+   {
+    "t": "can",
+    "start": 52.3,
+    "end": 52.62,
+    "seg": 10
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 52.62,
+  "end": 53.92,
+  "text": "crack open and",
+  "woerter": [
+   {
+    "t": "crack",
+    "start": 52.62,
+    "end": 52.86,
+    "seg": 10
+   },
+   {
+    "t": "open",
+    "start": 52.86,
+    "end": 53.24,
+    "seg": 10
+   },
+   {
+    "t": "and",
+    "start": 53.24,
+    "end": 53.92,
+    "seg": 10
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 53.92,
+  "end": 54.78,
+  "text": "still trust",
+  "woerter": [
+   {
+    "t": "still",
+    "start": 53.92,
+    "end": 54.26,
+    "seg": 10
+   },
+   {
+    "t": "trust",
+    "start": 54.26,
+    "end": 54.78,
+    "seg": 10
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 54.78,
+  "end": 55.64,
+  "text": "himself to",
+  "woerter": [
+   {
+    "t": "himself",
+    "start": 54.78,
+    "end": 55.16,
+    "seg": 10
+   },
+   {
+    "t": "to",
+    "start": 55.16,
+    "end": 55.64,
+    "seg": 10
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 55.64,
+  "end": 56.6,
+  "text": "stand who",
+  "woerter": [
+   {
+    "t": "stand",
+    "start": 55.64,
+    "end": 55.96,
+    "seg": 10
+   },
+   {
+    "t": "who",
+    "start": 55.96,
+    "end": 56.6,
+    "seg": 10
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 56.6,
+  "end": 57.12,
+  "text": "doesn't need",
+  "woerter": [
+   {
+    "t": "doesn't",
+    "start": 56.6,
+    "end": 56.88,
+    "seg": 10
+   },
+   {
+    "t": "need",
+    "start": 56.88,
+    "end": 57.12,
+    "seg": 10
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 57.12,
+  "end": 57.8,
+  "text": "to perform",
+  "woerter": [
+   {
+    "t": "to",
+    "start": 57.12,
+    "end": 57.32,
+    "seg": 10
+   },
+   {
+    "t": "perform",
+    "start": 57.32,
+    "end": 57.8,
+    "seg": 10
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 58.36,
+  "end": 59.38,
+  "text": "Invincibility to",
+  "woerter": [
+   {
+    "t": "Invincibility",
+    "start": 58.36,
+    "end": 58.8,
+    "seg": 11
+   },
+   {
+    "t": "to",
+    "start": 58.8,
+    "end": 59.38,
+    "seg": 11
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 59.38,
+  "end": 59.96,
+  "text": "feel worthy",
+  "woerter": [
+   {
+    "t": "feel",
+    "start": 59.38,
+    "end": 59.6,
+    "seg": 11
+   },
+   {
+    "t": "worthy",
+    "start": 59.6,
+    "end": 59.96,
+    "seg": 11
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 59.96,
+  "end": 60.6,
+  "text": "of recognition",
+  "woerter": [
+   {
+    "t": "of",
+    "start": 59.96,
+    "end": 60.12,
+    "seg": 11
+   },
+   {
+    "t": "recognition",
+    "start": 60.12,
+    "end": 60.6,
+    "seg": 11
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 60.6,
+  "end": 61.84,
+  "text": "There's no",
+  "woerter": [
+   {
+    "t": "There's",
+    "start": 60.6,
+    "end": 61.6,
+    "seg": 12
+   },
+   {
+    "t": "no",
+    "start": 61.6,
+    "end": 61.84,
+    "seg": 12
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 61.84,
+  "end": 62.36,
+  "text": "vulnerability",
+  "woerter": [
+   {
+    "t": "vulnerability",
+    "start": 61.84,
+    "end": 62.36,
+    "seg": 12
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 62.36,
+  "end": 63.3,
+  "text": "without",
+  "woerter": [
+   {
+    "t": "without",
+    "start": 62.36,
+    "end": 63.3,
+    "seg": 12
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 63.3,
+  "end": 64.3,
+  "text": "confidence and",
+  "woerter": [
+   {
+    "t": "confidence",
+    "start": 63.3,
+    "end": 63.74,
+    "seg": 12
+   },
+   {
+    "t": "and",
+    "start": 63.74,
+    "end": 64.3,
+    "seg": 12
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 64.3,
+  "end": 64.6,
+  "text": "the brutal",
+  "woerter": [
+   {
+    "t": "the",
+    "start": 64.3,
+    "end": 64.4,
+    "seg": 12
+   },
+   {
+    "t": "brutal",
+    "start": 64.4,
+    "end": 64.6,
+    "seg": 12
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 64.6,
+  "end": 65.76,
+  "text": "truth most",
+  "woerter": [
+   {
+    "t": "truth",
+    "start": 64.6,
+    "end": 64.98,
+    "seg": 12
+   },
+   {
+    "t": "most",
+    "start": 64.98,
+    "end": 65.76,
+    "seg": 12
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 65.76,
+  "end": 66.28,
+  "text": "men have",
+  "woerter": [
+   {
+    "t": "men",
+    "start": 65.76,
+    "end": 66.02,
+    "seg": 12
+   },
+   {
+    "t": "have",
+    "start": 66.02,
+    "end": 66.28,
+    "seg": 12
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 66.28,
+  "end": 66.5,
+  "text": "neither",
+  "woerter": [
+   {
+    "t": "neither",
+    "start": 66.28,
+    "end": 66.5,
+    "seg": 12
+   }
+  ],
+  "grund": "stille"
+ }
+]

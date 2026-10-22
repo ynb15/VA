@@ -24,6 +24,11 @@ hyper masculinity -> hypermasculinity
 # Darum beide Schreibungen, und der Wortkern allein gleich mit.
 hyper musculinity -> hypermasculinity
 musculinity -> masculinity
+# Und als EIN Wort mit Bindestrich, so kam es am 22.10. aus dem Lauf.
+~^hyper.?m[ua]sc[uo]linity$ -> hypermasculinity
+# 22.10., derselbe Short: Whisper hoert "most men" zweimal als "most man".
+# Nur als Paar — "a man who can crack open" ist richtig und bleibt.
+most man -> most men
 ~^endo.?t[ae]d?t?e?s?$ -> Andrew Tates
 # Aaronson-Folge (20.10.): Whisper schreibt den Namen durchgaengig einfach.
 aronson -> Aaronson

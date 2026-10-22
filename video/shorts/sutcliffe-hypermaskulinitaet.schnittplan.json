@@ -1,0 +1,9 @@
+{
+ "quelle": "src.mp4",
+ "quelle_herkunft": "Masterfenster 4550-4665 s, in EINEM Stueck geholt (video/master_schnitt.py). Datei beginnt bei Master 4549.99.",
+ "zeitbasis": "Sekunden in src.mp4. Masterzeit = src-Zeit + 4549.99.",
+ "bild": [[21.1000, 88.1000]],
+ "ton":  [[21.1000, 88.1000]],
+ "tonblende_s": 0.02,
+ "warum": "Beide Grenzen liegen auf einem Kamerawechsel, Bild fuer Bild gemessen (Differenz 41,8 bzw. 39,1 gegen 0,5 im Ruhepegel). Bei 21,1000 schneidet die Kamera von der Totale auf sein Gesicht, sein erstes Wort 'But' kommt 0,24 s spaeter. Bei 88,1000 schneidet sie auf Sutcliffe, sein letztes Wort 'neither' endet 0,45 s davor. Es ist also kein Schnitt noetig, der nicht ohnehin im Material steht."
+}
