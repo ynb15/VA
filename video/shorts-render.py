@@ -879,6 +879,28 @@ def broll_graph(stuecke, quelle, tempo, modus, seite, radius, fokus,
     20.10. die Stummschaltung acht Sekunden zu spaet greifen liess.
     """
     fenster = [(von / tempo, bis / tempo) for von, bis, _ in stuecke]
+
+    # Naht zwischen zwei anstossenden Bloecken schliessen.
+    #
+    # `between(t,a,b)` vergleicht Fliesskommazeiten mit dem Bildraster des
+    # fertigen Videos. Wo ein Block bei b endet und der naechste bei
+    # demselben b beginnt, faellt dabei **genau ein Bild durch** und das
+    # Studio blitzt auf. Gemessen am 22.10. an der Craig-Fassung: 37,87 s,
+    # 40,87 s und 43,72 s, je ein einzelnes Bild. Im Player sieht das aus
+    # wie ein verunglueckter Uebergang.
+    #
+    # Das Ende wird darum um zwei Bilder verlaengert, aber nur dort, wo
+    # wirklich ein Block anschliesst. Das ist gefahrlos: die Bloecke werden
+    # der Reihe nach uebereinandergelegt, der spaetere liegt oben. Eine
+    # gewollte Luecke - der Sprecher soll zu sehen sein - bleibt unberuehrt.
+    NAHT = 2.0 / 30.0
+    gedehnt = []
+    for i, (a, b) in enumerate(fenster):
+        if i + 1 < len(fenster) and fenster[i + 1][0] - b < 0.1:
+            b = fenster[i + 1][0] + NAHT
+        gedehnt.append((a, b))
+    fenster = gedehnt
+
     teile, letzte = [], quelle
 
     if modus == "karte":
@@ -1262,12 +1284,19 @@ def main():
 
         letzte = v_quelle
         if cues:
-            if lippen:
+            if a.lippe is not None:
+                # Ausdruecklich gesetzt schlaegt den Plan. Bei einer Fassung,
+                # die zu 90 Prozent aus Einspielern besteht, gibt es unter dem
+                # Einspieler keine Lippe, der die Zeile folgen koennte - sie
+                # wandert dann sinnlos. Am 22.10. stand sie zwischen 672 und
+                # 1248 und sprang bei jedem Schnitt.
+                cues = [{**c, "lippe": a.lippe} for c in cues]
+                print(f"  Untertitel fest auf {a.lippe} px "
+                      f"({len(cues)} Zeilen), Plan-Lippe uebergangen")
+            elif lippen:
                 cues = cues_an_lippen(cues, lippen)
                 print(f"  Untertitel an der Lippe: {len(cues)} Zeilen, "
                       f"Hoehen {sorted({l for _,_,l in lippen if l})}")
-            elif a.lippe is not None:
-                cues = [{**c, "lippe": a.lippe} for c in cues]
             elif a.marginv is None:
                 # Steht die Lippe nicht fest, sitzt die Zeilenmitte auf
                 # 70 % der Bildhoehe — der Wert aus seinem Preset. \an8
