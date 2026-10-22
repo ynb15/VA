@@ -8697,3 +8697,90 @@ ever a night you wished you'd kept it."*
 **Als Prüfung vor der Übergabe:** steht im Entwurf ein Satz, der **ihn** etwas
 kostet, und eine Frage, die den **Preis** des anderen berührt? Wenn nicht, ist
 es ein korrekter Text ohne Tiefe.
+
+───────────────────────────────────────────────────────────────────
+DREI WEITERE AM JON-SAVAGE-ENTWURF — UND EINE ÜBER MEINE QUELLEN (22.10.)
+───────────────────────────────────────────────────────────────────
+
+**1. ÜBER EINE BEZIEHUNG, DIE ES NOCH NICHT GIBT, WIRD NICHTS BEHAUPTET.**
+> "der Satz 'He was right' ist völlig fehl am Platz. Wie kann ich sagen, dass
+> er recht hatte, wenn ich noch gar nicht mit Jon zusammengekommen bin? Das
+> ist ja totaler Bullshit."
+
+Ein Vermittler sagt "ihr müsst euch treffen". **Ob er recht hatte, weiß man
+erst nach dem Treffen.** Die zulässige Form ist nicht die Bestätigung,
+sondern die **eigene Hälfte**: warum der Absender glaubt, dass der Vermittler
+das gesagt hat. Das ist überprüfbar, weil es über ihn selbst spricht.
+
+**Allgemeiner, und das ist die eigentliche Regel:** ein Entwurf darf dem
+Empfänger keine gemeinsame Geschichte unterstellen, die noch nicht
+stattgefunden hat. Wärme entsteht durch das, was der Absender einbringt —
+nicht durch eine vorweggenommene Übereinstimmung.
+
+**2. EIN SATZ MUSS ETWAS TUN, NICHT NUR STIMMEN.**
+> "on the last leg of that trip I had a motorcycle accident in Colorado and
+> flew home to the mother city to start my rehab. Das ist so, hä? Was ist das
+> für ein Satz? Was soll der kommunizieren? Du müsstest eher schreiben, dieser
+> Podcast-Trip wurde interrupted durch diesen Unfall und jetzt bin ich halt
+> zurück zu Hause."
+
+Beide Tatsachen stimmten. **Der Satz hatte trotzdem keine Funktion** — er
+stand da, ohne zu erklären, warum er da steht. Mit der Verknüpfung
+(*unterbrochen → deshalb zu Hause → deshalb könnt ihr euch jetzt treffen*)
+trägt dieselbe Information die Bitte, die danach kommt.
+
+**Prüfung für jeden Satz in einem Entwurf: was tut er?** Entweder bringt er
+den Leser weiter, oder er stimmt nur — und das reicht nicht.
+
+**3. EINE FORMULIERUNG AUS DER FALSCHEN LAGE IST EIN ZITAT AUS DEM FALSCHEN
+BRIEF.**
+> "ich würde auch niemals schreiben, let me buy you a coffee. … Ebenso der
+> Satz, der darauf folgt. I like to meet people, bla bla bla. Wo hast du diese
+> Formulierung gesehen?"
+
+**Die ehrliche Antwort: aus seiner Mail an Scott Aaronson vom 04.08.** —
+*"One thing I like to do before every podcast: grab a quick coffee in person
+sometime in the days beforehand."* **Nur hatte Scott zu dem Zeitpunkt längst
+zugesagt.** Das ist eine **Logistikzeile an einen gebuchten Gast**, und sie
+setzt voraus, dass es "every podcast" zwischen den beiden schon gibt. An einen
+Fremden gerichtet behauptet derselbe Satz eine Selbstverständlichkeit, die es
+nicht gibt.
+
+**Regel: ein Satz aus seinem Archiv trägt die Lage mit, in der er stand.**
+Vor jeder Übernahme zwei Fragen: *an wen ging er, und in welchem Stadium?*
+Eine Zeile an einen zugesagten Gast, an einen Lieferanten oder an einen
+Freund ist in einem Erstkontakt kein Beleg, sondern eine Verwechslung.
+
+**Und der teuerste Teil davon:** seine eigene Fassung für genau diesen
+Empfänger lag mir vor. In der DM an Jon steht *"Now that we're both in the
+mother city, I'd love to invite you for a coffee."* **Ich hatte seinen Satz
+für diesen Menschen in der Hand und habe ihn durch meinen ersetzt.**
+**Wo sein Text für diesen Empfänger existiert, wird er übernommen, nicht
+verbessert.**
+
+**4. NACHSCHLAGEN, WAS DER MENSCH HEUTE TUT — NICHT NUR, WAS ER EINMAL GESAGT
+HAT.**
+> "mir wurde gesagt, dass Jon so der Mr. Podcast ist … das sollten wir auf
+> jeden Fall mit einbauen. … Die Vipassana macht halt hier bei ihm gar keinen
+> Sinn. Du siehst doch gar keine spirituelle Referenz in seiner Story. Also du
+> musst schon ein bisschen mehr nachdenken."
+
+Ich hatte den Pitch auf einem **TEDx-Talk von 2014** gebaut und für die
+Gegenwart nur festgestellt, dass seine Website von hier nicht erreichbar ist.
+**Das war zu früh aufgegeben.** Die Websuche ergab in einem Durchgang:
+**Africa Podcast Network** (Gründer), **InBroadcasting** (CEO), **AMPD
+Studios** (Mitgründer), Bühnen bei **Podcast Movement** (USA) und **The
+Podcast Show** (London), eigene Musiksendung *What's Your Poison?* — und seine
+eigene Zeile, er habe drei Jahre lang eine afrikanische Perspektive in diese
+Konferenzen getragen.
+
+**Damit wurde der Spiegel ein anderer**: nicht Yannicks Vipassana, sondern
+**seine Redaktionslinie Europa–Afrika–Amerika** gegen einen Mann, der Afrika
+seit Jahren in Räume in New York und London trägt. **Derselbe Beruf in zwei
+Formaten.**
+
+**Regel: eine nicht erreichbare Website beendet die Recherche nicht.** Wenn
+eine Quelle wegfällt, wird die nächste genommen — und bevor ein Spiegel aus
+Yannicks Biografie gebaut wird, muss belegt sein, dass das Thema beim
+Empfänger überhaupt vorkommt. **Ein Spiegel, der nur auf einer Seite liegt,
+ist keiner.**

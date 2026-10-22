@@ -256,3 +256,41 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   **Prüfung vor der Übergabe: steht ein Satz drin, der ihn etwas kostet, und
   eine Frage, die den Preis des anderen berührt?**
   → betrifft: alle, die Entwürfe für ihn schreiben
+- **Ein Satz aus seinem Archiv trägt die Lage mit, in der er stand.** Ich hatte
+  in einen Erstkontakt *„I like to meet people properly before we ever switch a
+  mic on"* geschrieben — hergeleitet aus seiner Mail an Scott Aaronson vom
+  04.08. (*„One thing I like to do before every podcast: grab a quick coffee in
+  person"*). **Nur hatte Scott da längst zugesagt**: das ist eine Logistikzeile
+  an einen gebuchten Gast. Seine Reaktion: *„Was ist das für ein Bullshit,
+  Alter? Wo hast du diese Formulierung gesehen?"*
+  **Vor jeder Übernahme zwei Fragen: an wen ging der Satz, und in welchem
+  Stadium?** Und: **wo sein Text für genau diesen Empfänger existiert, wird er
+  übernommen, nicht verbessert** — seine eigene DM an Jon hatte den Schlusssatz
+  bereits, und ich hatte ihn durch meinen ersetzt.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Über eine Beziehung, die es noch nicht gibt, wird nichts behauptet.** Mein
+  *„He was right"* über den Vermittler: *„wie kann ich sagen, dass er recht
+  hatte, wenn ich noch gar nicht mit Jon zusammengekommen bin?"* Zulässig ist
+  nicht die Bestätigung, sondern **die eigene Hälfte** — warum der Absender
+  glaubt, dass der Vermittler das gesagt hat.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Jeder Satz muss etwas tun, nicht nur stimmen.** *„I had a motorcycle
+  accident in Colorado and flew home to the Mother City to start my rehab"* —
+  beide Tatsachen richtig, der Satz trotzdem funktionslos (*„Das ist so, hä?
+  Was soll der kommunizieren?"*). Mit der Verknüpfung **unterbrochen → deshalb
+  zu Hause → deshalb jetzt möglich** trägt dieselbe Information die Bitte, die
+  danach kommt.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Eine nicht erreichbare Website beendet die Recherche nicht.** Ich hatte
+  einen Pitch auf einem TEDx-Talk von **2014** gebaut und zur Gegenwart nur
+  notiert, dass `jonsavage.com`/`.co.za` und `instagram.com` von hier
+  `ENOTFOUND` sind. Eine einzige Websuche ergab dann: **Africa Podcast Network**
+  (Gründer), **InBroadcasting** (CEO), **AMPD Studios** (Mitgründer), Bühnen
+  bei **Podcast Movement** (USA) und **The Podcast Show** (London). **Erst
+  damit wurde der richtige Spiegel sichtbar** — Yannicks Redaktionslinie
+  Europa–Afrika–Amerika gegen einen Mann, der Afrika in diese Räume trägt.
+  **Und: bevor ein Spiegel aus Yannicks Biografie gebaut wird, muss belegt
+  sein, dass das Thema beim Empfänger überhaupt vorkommt** — seine Korrektur:
+  *„die Vipassana macht bei ihm gar keinen Sinn, du siehst doch gar keine
+  spirituelle Referenz in seiner Story."*
+  → betrifft: alle, die Entwürfe für ihn schreiben
