@@ -1,3 +1,40 @@
+## 22.10.2026 — Warum dieselben Fehler bei verschiedenen Agenten passieren
+
+**Seine Frage, und sie ist berechtigt:** *„Ich verstehe nicht, warum hier
+immer wieder dieselben Fehler passieren bei unterschiedlichen Agenten."*
+Heute waren es drei auf einmal: Outro vergessen, Logo zu klein, Ton vom
+Kameramikrofon.
+
+**Die Antwort ist unangenehm einfach: es gab keine Liste.** Jeder von uns
+hat sich das Schwierige gemerkt — Ausschnitt, Schnittgrenzen, Umbruch —
+und das Selbstverständliche vergessen. Nichts im Werkzeug hat danach
+gefragt.
+
+**Zwei der drei Fehler waren überhaupt keine Geschmacksfragen, sondern
+Messfehler:**
+
+1. **Das Logo war nicht „zu klein gewählt", es war falsch gerechnet.**
+   `marke/ynb-logo-weiss.png` ist 5224x2947 px groß, die Marke darin aber
+   nur 1924 px breit — **36,8 % der Datei**, der Rest ist durchsichtiger
+   Rand. Wer die Datei auf die 28 % Bildbreite aus seinem Preset skaliert,
+   bekommt eine Marke von **111 px statt 302**. Der Renderer schneidet das
+   Logo jetzt auf seinen sichtbaren Kasten zu, bevor er skaliert;
+   `--logo-breite` meint ab jetzt die Breite der **Marke**.
+2. **Das Outro lag die ganze Zeit in seinem Drive.** „YNB Podcast: Outro
+   9:16", ProRes mit Alphakanal, 1080x1920, 4,2 s, die ersten 0,42 s
+   durchsichtig. Niemand hat danach gesucht. Liegt jetzt als
+   `video/marke/ynb-outro-9-16.mp4` (3,8 s, opak) im Repo, für alle.
+
+**Und die Gegenmaßnahme, damit die Antwort nicht nur eine Einsicht bleibt:
+`video/abnahme.py`.** Prüft einen fertigen Short vor der Übergabe auf
+Format, **Abtastrate 48 kHz** (44,1 kHz heißt Kameramikrofon statt
+Mischung), Laufzeit unter dem Shorts-Limit, **Outro am Ende** (Bildabstand
+zum Outro-Schlussbild), Untertitel und Ortscheck. Was nur das Auge sieht —
+Logogröße, Zeile unter der Lippe, Wortgrenzen, **den Ton wirklich
+anhören** — steht als Haken darunter und wird nicht als „bestanden"
+ausgegeben.
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
 ## 22.10.2026 — `-t` hinter dem `-i` begrenzt gar nichts
 
 **Zweiter Befund derselben Sitzung, und der erste war nur die halbe

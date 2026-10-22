@@ -838,6 +838,26 @@ def lautheit_kette(ziel):
             "alimiter=limit=-1dB:level=disabled")
 
 
+def _logo_kasten(pfad):
+    """(x, y, breite, hoehe) des sichtbaren Teils eines PNG mit Alphakanal.
+
+    Rueckgabe None, wenn die Datei randlos ist oder sich nicht lesen laesst —
+    dann wird nicht zugeschnitten.
+    """
+    try:
+        from PIL import Image
+        im = Image.open(pfad).convert("RGBA")
+        bb = im.getchannel("A").getbbox()
+    except Exception:
+        return None
+    if not bb:
+        return None
+    x0, y0, x1, y1 = bb
+    if (x1 - x0) >= im.size[0] * 0.98 and (y1 - y0) >= im.size[1] * 0.98:
+        return None
+    return x0, y0, x1 - x0, y1 - y0
+
+
 def probe_size(src):
     p = subprocess.run([FFMPEG, "-hide_banner", "-i", src],
                        capture_output=True, text=True)
@@ -1384,8 +1404,19 @@ def main():
                       f"verschieben oder die Kopfzeile kuerzer halten.")
 
         if a.logo:
+            # Auf den sichtbaren Teil zuschneiden, BEVOR skaliert wird.
+            # `marke/ynb-logo-weiss.png` ist 5224x2947 gross, die Marke darin
+            # aber nur 1924 px breit — 36,8 Prozent. Wer die Datei auf 28
+            # Prozent der Bildbreite skaliert, bekommt eine Marke von 111 px
+            # statt der gemeinten 302. Genau das war sein Einwand vom 22.10.
+            # („das Logo ist wieder mal zu klein"). `--logo-breite` meint ab
+            # jetzt die Breite der MARKE, nicht die der Datei.
+            kasten = _logo_kasten(a.logo)
             cmd += ["-i", a.logo]
-            graph.append(f"[{naechste}:v]scale={a.logo_breite}:-1,format=rgba,"
+            zuschnitt = (f"crop={kasten[2]}:{kasten[3]}:{kasten[0]}:{kasten[1]},"
+                         if kasten else "")
+            graph.append(f"[{naechste}:v]{zuschnitt}"
+                         f"scale={a.logo_breite}:-1,format=rgba,"
                          f"colorchannelmixer=aa={a.logo_alpha}[lg]")
             graph.append(f"{letzte}[lg]overlay=(W-w)/2:"
                          f"H*{a.logo_hoehe}-h/2[vlogo]")
