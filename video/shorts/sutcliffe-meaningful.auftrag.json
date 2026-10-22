@@ -70,7 +70,7 @@
       "stimme": -35.7
     },
     "werkzeug": "video/musik_drunter.py — legt das Bett unter einen fertigen Short, ohne neu zu transkribieren oder das Bild neu zu encodieren.",
-    "abgenommen": "Tom Odell - Another Love (Piano Cover), Bett ab 2:20, 3 dB unter der Stimme. Dritter Versuch, nachdem Daylight und In This Shirt gesperrt wurden."
+    "abgenommen": "Benny Garner - Comptine d'Un Autre Ete, Bett ab 0:10, 3 dB unter der Stimme. Vierter Titel fuer diesen Short."
   },
   "offen": [
     "Die Totale bei etwa Sekunde 25 traegt die Pointe 'to see yourself reflected through the other' und zeigt ihn klein im Profil. Enger fassen geht, ist aber eine Aenderung am Bild und braucht seine Zustimmung."
@@ -111,7 +111,13 @@
         "name": "Tom Odell - Another Love (Piano Cover)",
         "drive_id": "1JdaKBC72nGI_brcT3MpUMKdTTlblGZ4F",
         "ab_sekunde": 140,
-        "hinweis": "Von Isabelle am 22.10. in den Ordner gelegt, nachdem Daylight und In This Shirt gesperrt wurden. Staerkstes Fenster ab 2:20 (-11 bis -13 dB, sehr gleichmaessig); die ersten 40 s liegen 6-10 dB darunter. ERWARTUNG, nicht gemessen: ein Piano-Cover ist eine EIGENE Aufnahme, der Abgleich gegen Tom Odells Master greift also nicht. Ein Anspruch auf die KOMPOSITION bleibt moeglich, der ist aber meist auf Monetarisierung gerichtet und nicht auf Sperrung. Vermutlich genau deshalb hat sie dieses Stueck gewaehlt."
+        "hinweis": "Von Isabelle am 22.10. in den Ordner gelegt, nachdem Daylight und In This Shirt gesperrt wurden. Staerkstes Fenster ab 2:20 (-11 bis -13 dB, sehr gleichmaessig); die ersten 40 s liegen 6-10 dB darunter. ERWARTUNG, nicht gemessen: ein Piano-Cover ist eine EIGENE Aufnahme, der Abgleich gegen Tom Odells Master greift also nicht. Ein Anspruch auf die KOMPOSITION bleibt moeglich, der ist aber meist auf Monetarisierung gerichtet und nicht auf Sperrung. Vermutlich genau deshalb hat sie dieses Stueck gewaehlt. ABGELEHNT fuer Sutcliffe, seine Rueckmeldung vom 22.10.: „das passt nicht ganz bei David rein“. Laeuft weiter unter dem Aaronson-Short."
+      },
+      {
+        "name": "Benny Garner - Comptine d'Un Autre Ete",
+        "drive_id": "14388T7Iw2Z5lHIkh_1h63WT13q4ZUg6I",
+        "ab_sekunde": 10,
+        "hinweis": "Coverversion des Yann-Tiersen-Stuecks aus Amelie, von Isabelle am 22.10. in denselben Ordner gelegt wie das Odell-Cover. Dauer 149 s, ab 0:10 gleichmaessig bei -17 bis -22 dB. Insgesamt leiser als die anderen Titel; der Pegel wird relativ zur genutzten Stelle gerechnet und gleicht das aus."
       }
     ],
     "regel": "Zu jedem Short mit Bett gehoert eine Fassung OHNE Musik. Wieviel von einem Titel durchgeht, haengt am Rechteinhaber und ist hier nicht messbar; YouTube zeigt den Anspruch im Upload-Vorgang."
