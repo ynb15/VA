@@ -384,3 +384,41 @@ mit verschobenen Zeiten. Ohne `--kein-stapel` macht er aus den zwei Totalen
 
 → betrifft: jeden Neulauf des Planers. `--kein-stapel` gehoert zu diesem Short
 dazu, und die Kaesten gehoeren verglichen, nicht geglaubt.
+
+## 22.10.2026, 18:25 — Neue stehende Regel von ihm: lieber zu defensiv als zu offensiv schneiden.
+
+Woertlich, ueber Alfred weitergegeben und ausdruecklich fuer alle Agenten:
+
+> *„mir ist aufgefallen, es ist deutlich schwerer fuer mich, wenn du die Shorts
+> eigenstaendig entscheidest, was du rausschneidest, und ich dann nach das
+> Skript kontrollieren muss, um zu sehen, was du rausgeschnitten hast, als wenn
+> du lieber zu wenig oder weniger rausschneidest und mir dann das Transkript
+> gibst und ich dir eher sagen soll, was du rausschneiden sollst. Deshalb ist
+> die neue Anweisung und gib das bitte weiter an die anderen Agenten, dass du
+> lieber zu defensiv als zu offensiv schneidest."*
+
+Die Fehlerrichtung ist unsymmetrisch: eine Auslassung, die er nicht wollte,
+kostet ihn Liste lesen, Stelle suchen, Rueckmeldung, neue Renderrunde. Eine
+Zeile zu viel kostet ihn eine Nummer. Deckt sich mit seinem Satz vom 21.10.:
+*„ich wuerde dich anhalten, lieber weniger zu schneiden, als zu viel."*
+
+Drei Punkte daraus, die ab sofort zu jedem Short gehoeren:
+
+1. **Das Transkript geht mit raus**, nicht nur das Video. Er soll sagen, was
+   weg soll, nicht nachkontrollieren, was weg ist.
+2. **Nach jedem Innenschnitt die beiden Nachbarzeilen nebeneinander lesen** —
+   Pronomen ohne Bezug, Fragen ohne Antwort. Dem Render hoert man das nicht an.
+   Belegt an „AI 2027" (Shorts II): zweimal eine Auslassung zurueckgeholt, einmal
+   fiel die einzige Nennung von Eliezer Yudkowsky mit heraus, danach stand
+   *„he just regarded it as obvious"* ohne Bezug.
+3. **Bei Gastauftritten gilt das doppelt.** Dort stellt der Gastgeber die
+   Fragen, und eine Pointe von ihm steht fast immer auf einer fremden Frage.
+   Die Frage des Gastgebers gehoert im Zweifel dazu, auch wenn sie Sekunden
+   kostet.
+
+→ betrifft: jeden Schnitt. **Beim Sutcliffe-Short heute geprueft:** entfernt
+wurden ausschliesslich **Pausen**, kein gesprochenes Wort. Nachgewiesen mit
+`diff` gegen die abgenommene Untertiteldatei — der Text ist Zeichen fuer
+Zeichen derselbe. Die 14 Stellen stehen einzeln in
+`video/shorts/sutcliffe-meaningful.pausen.json`, damit er sie sieht, statt sie
+suchen zu muessen.
