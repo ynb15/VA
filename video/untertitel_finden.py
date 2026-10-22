@@ -18,6 +18,24 @@ welche Schrift). Liegt der Anteil ueber der Schwelle, steht dort Text.
 
     python3 video/untertitel_finden.py datei.mp4 \
             --feld 2138:961:242:153 --takt 0.5 --mindestens 5
+
+**Erst messen, WO die Untertitel stehen - dann vielleicht gar nicht
+suchen, WANN.** Beim Into-the-Wild-Trailer kostete mich das einen halben
+Nachmittag: ich habe untertitelfreie Strecken gejagt und kam auf 36
+brauchbare Sekunden von 185. Dann habe ich an zehn bekannten Textstellen
+die Lage der Schriftzeilen ausgemessen - sie lagen **jedes Mal in
+denselben 43 Pixeln am unteren Rand** (y 918-961 eines 961 Pixel hohen
+Feldes). Das Band weggeschnitten, und der **ganze** Trailer war brauchbar.
+Kosten: 4,5 Prozent der Bildhoehe.
+
+Also zuerst:
+
+    # Lage der Schrift an einer bekannten Textstelle ausmessen
+    ffmpeg -ss <sekunde> -i datei.mp4 -frames:v 1 -vf crop=<feld> probe.png
+
+Liegt die Schrift immer gleich, ist das Feld enger zu schneiden und diese
+Suche hier ueberfluessig. Sie bleibt fuer Quellen, bei denen die Schrift
+wandert - Trailerschrift tut das manchmal.
 """
 import argparse, subprocess, sys
 import numpy as np
@@ -43,7 +61,7 @@ def main():
                     help='Abstand der Proben in Sekunden')
     ap.add_argument('--band', type=float, default=0.72,
                     help='ab welchem Anteil der Hoehe gesucht wird')
-    ap.add_argument('--schwelle', type=float, default=0.0025,
+    ap.add_argument('--schwelle', type=float, default=0.0002,
                     help='Anteil heller Pixel, ab dem Text angenommen wird')
     ap.add_argument('--mindestens', type=float, default=4.0,
                     help='kuerzere freie Strecken werden nicht gemeldet')
@@ -66,12 +84,22 @@ def main():
                                               band[:, :, :-v])
         dunkel_daneben[:, :, :-v] = np.minimum(dunkel_daneben[:, :, :-v],
                                                band[:, :, v:])
-    schrift = (band > 215) & (dunkel_daneben < 110)
+    schrift = (band > 200) & (dunkel_daneben < 115)
     anteil = schrift.mean(axis=(1, 2))
     text = anteil > a.schwelle
 
     print(f'{len(folge)} Proben im Abstand {a.takt}s '
           f'({len(folge)*a.takt:.0f}s), Band ab y={y0}', file=sys.stderr)
+
+    # Eine Einblendung, die zwischen zwei Proben einsetzt, faellt sonst
+    # durch: an den Sekunden 144 und 166 las die Messung genau null,
+    # obwohl dort Text steht. Deshalb jede Textprobe auf ihre Nachbarn
+    # ausdehnen.
+    breit = text.copy()
+    for v in (1, 2):
+        breit[v:] |= text[:-v]
+        breit[:-v] |= text[v:]
+    text = breit
 
     # Freie Strecken, mit Sicherheitsabstand zu jeder Textstelle.
     frei, start = [], None
