@@ -45,6 +45,44 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 9 — 22.10.2026, 15:45 Kapstadt · eine Regel von ihm, und ein Logo zu klein
+
+- **SEINE REGEL, UND SIE KORRIGIERT EINE ANWEISUNG VON MIR: eine Folge, ein
+  Agent.** Wörtlich am 22.10.: *„Lass uns, um die Übersicht zu behalten, die
+  einfach alle Shorts zu Scott werden von ein und demselben Agenten bearbeitet,
+  nacheinander. Damit wir hier nicht durcheinander kommen, weil wir haben hier
+  jetzt eine Überschneidung."*
+  **Ich hatte am 21.10. das Gegenteil angeordnet** (*„nimm die Kandidaten von
+  hinten, er nimmt sie von vorn"*). Beide Agenten haben trotzdem Kandidat 1
+  angefasst — zwei **verschiedene** Shorts unter demselben Dateinamen, zwei
+  Container, zwei Zeitbasen. Nachgezählt: 64 Einblendungen auf
+  `content-cinematic`, eine andere Fassung bei Shorts I.
+  **Eine Aufteilung innerhalb einer Folge ist keine Aufteilung, solange die
+  Kandidatenliste nicht nummeriert und vergeben ist.** Jetzt Regel 9 in
+  `plan/ABLAUF.md`. **Aaronson liegt bei Shorts I**, Cinema gibt ab und bleibt
+  beim Rückkatalog — mit Übergabedatei, damit seine drei Runden nicht verloren
+  gehen.
+  → betrifft: alle
+- **Das Logo war überall zu klein, und der Grund ist eine Rechnung, die niemand
+  nachgesehen hat.** Die Marke füllt nur **36,8 %** der Logodatei, der Rest ist
+  durchsichtiger Rand. Wer die **Datei** auf 28 % der Bildbreite skaliert —
+  so steht der Wert in seinem Preset — bekommt eine sichtbare Marke von
+  **111 px statt 302**. Der Renderer schneidet jetzt erst auf den Alphakasten
+  zu und skaliert dann.
+  **Die allgemeine Form: ein Prozentwert aus einer Vorlage bezieht sich auf das
+  sichtbare Element, nicht auf die Datei.** Dasselbe gilt für jedes PNG mit
+  Rand — Freisteller, Kopfzeilen-Grafiken, Wasserzeichen.
+  → betrifft: content-*, thumbnails
+- **Jeder Short geht ab jetzt mit einer Liste zum Durchstreichen raus**
+  (`video/kurzliste.py` auf `claude/content-assistant`), seine Ansage vom
+  22.10. **Ein Stück ohne Prüfliste ist nicht übergeben, sondern abgelegt.**
+  → betrifft: alle Content-Agenten
+- **Das Outro lag die ganze Zeit in seinem Drive** und liegt jetzt im Repo.
+  Wer eine Datei vermisst, sucht erst in seinem Drive, bevor er sie nachbaut.
+  → betrifft: content-*
+
+---
+
 ## Ausgabe 8 — 22.10.2026, 06:40 Kapstadt · der Morgen
 
 - **KORREKTUR AN MEINER EIGENEN VERTEILUNG VON GESTERN: die Wohnort-Regel ist

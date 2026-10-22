@@ -99,7 +99,30 @@ und richtiggestellt — und zwei Sätze später dasselbe Wort wieder wörtlich
 genommen. **Wer ein Wort als unzuverlässig erkannt hat, darf es im selben
 Absatz nicht als Beleg benutzen.**
 
-## 9 · Nichts geht raus
+## 9 · Eine Folge, ein Agent — und verteilt wird die Folge, nicht der Kandidat
+
+**Seine Regel vom 22.10.2026:** *„Lass uns, um die Übersicht zu behalten, die
+einfach alle Shorts zu Scott werden von ein und demselben Agenten bearbeitet,
+nacheinander. Damit wir hier nicht durcheinander kommen, weil wir haben hier
+jetzt eine Überschneidung."*
+
+**Die Überschneidung ging auf eine Anweisung von mir zurück.** Ich hatte am
+21.10. geschrieben: *„nimm die Kandidaten von hinten, er nimmt sie von vorn,
+dann gibt es keine Doppelarbeit."* Beide haben trotzdem **Kandidat 1**
+angefasst und verschieden ausgelegt — am Ende lagen zwei **verschiedene**
+Shorts unter demselben Dateinamen, in zwei Containern, mit zwei Zeitbasen.
+Nachgezählt: `aaronson-01-how-safe-is-ai.srt` mit 64 Einblendungen auf
+`content-cinematic`, eine andere Fassung bei Shorts I.
+
+**Eine Aufteilung innerhalb einer Folge ist keine Aufteilung, solange die
+Kandidatenliste nicht nummeriert und schriftlich vergeben ist.** Und selbst
+dann ist sie teuer: Material, Zeitbasis, Logo-Korrektur und Abnahmeliste liegen
+je Folge an einer Stelle.
+
+**Also: wer Arbeit verteilt, verteilt die Folge.** Mehr Durchsatz heißt eine
+zweite Folge für einen zweiten Agenten, nicht eine halbe Folge für zwei.
+
+## 10 · Nichts geht raus
 
 Kein Upload, keine Veröffentlichung, keine geplante Veröffentlichung, kein
 Kommentar, keine Mail — von keinem Agenten, auch nicht in seinem Namen. Wir
