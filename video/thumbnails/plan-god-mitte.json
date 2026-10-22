@@ -1,0 +1,30 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund_aigod.jpg",
+  "links": null,
+  "rechts": "video/thumbnails/_freisteller/a_gross.png",
+  "ziel_rechts": {
+   "augen_x": 900,
+   "kinn_y": 700,
+   "box_h": 555
+  },
+  "zeilen": [
+   "AI",
+   "God"
+  ],
+  "kasten": 1,
+  "zeilenhoehe": 0.94,
+  "mitte": "video/thumbnails/_papstroboter.jpg",
+  "mitte_karte": false,
+  "mitte_x": 330,
+  "mitte_breite": 360,
+  "mitte_unten": 726,
+  "mitte_dunkel": 1.0,
+  "mitte_weich_rand": 45,
+  "text_mitte": 330,
+  "text_mitte_y": 125,
+  "max_breite": 380,
+  "max_hoehe": 215,
+  "ziel": "video/thumbnails/god-mitte.jpg"
+ }
+]
