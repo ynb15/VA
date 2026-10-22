@@ -36,6 +36,99 @@ ein zweiter Filter darüber wäre eine Änderung, die niemand bestellt hat.
 
 ---
 
+## Runde 3 — „zu viel rausgenommen", 22.10. ~10:25
+
+**Wörtlich:** *„Na, jetzt ist das Problem, dass du zu viel rausgenommen hast.
+Er sagt doch davor irgendwie, es war nie sicher. Eine Intelligenz ins Leben zu
+bringen. Und mir geht es nur mit dieser Parent-Analogie, die war fehl am
+Platz."*
+
+**Datei: `video/shorts/aigod-C.mp4`** — 45,7 s (41,5 s + 4,2 s Outro).
+
+### Die Stelle steht nicht im Clip, sondern bei 1:36:53 der Folge
+
+Im 3:44-Clip „AI God" kommt sie nicht vor — der deckt **1:06:59–1:10:43** ab.
+Gesucht und gefunden im Rohtranskript bei **01:36:53**, und dort steht die
+Eltern-Analogie **genau als der Satz dazwischen**, wie er es beschrieben hat:
+
+> „And bringing a new form of intelligence into the world is inherently not a
+> safe thing. ~~I mean, it's not even a safe thing for those of us who were
+> parents, right? And there we have a lot more similarity to go on, right? And
+> the biological intelligences that were created.~~ This is an intelligence
+> that there's never been anything quite like in the history of the world."
+
+**Durchgestrichen ist raus, der Rest ist drin.** Zwei Stücke, 7,7 s und 6,4 s,
+hinten angesetzt.
+
+### Woher das Material kam, und was es kostet
+
+Die Stelle liegt nur im **Folgenmaster** (`YNB Podcast: Scott Aaronson`,
+`1C7CUI-B6_fBcdttR_zKIJBYraBMTtUvh`, **16,1 GB**, Isabelles Ablage).
+Drei Messungen, bevor geschnitten wurde:
+
+* **Der Master ist 1920×1080**, der Clip 3840×2160. Der 9:16-Ausschnitt wird
+  aus dem Master also **1,78-fach hochgezogen** statt wie beim Clip um 0,89
+  verkleinert. **Die hinteren 14 Sekunden sind sichtbar weicher** — das ist
+  der Preis dieser Stelle, und er ist nicht zu umgehen, solange kein 4K-Export
+  davon existiert.
+* **Der Master läuft auf Tempo 1,0, der Clip auf 1,0999.** An drei Wörtern
+  gegengeprüft (`parents`, `benevolent`, `This is an intelligence`): zwischen
+  Master und Rohtranskript liegt ein reiner Versatz von **≈ 11,5 s**, keine
+  Tempoänderung. Die zwei Stücke sind deshalb **vor** dem Zusammensetzen mit
+  `atempo=1.0999` angeglichen — sonst fällt Aaronson mitten im Short ins
+  Langsame.
+* **Der Master ist die geschnittene Folge, nicht der Rohton.** Das passt zu
+  den 12,2 s aus `LERNEN.md`; gemessen habe ich 11,5 s.
+
+### Ein Umweg, den der nächste nicht noch einmal gehen muss
+
+**`ffmpeg` kommt in diesem Container nicht an die Drive-URL** — „Invalid data
+found when processing input" nach 0,9 s, bei `curl` auf dieselbe URL
+**HTTP 206 mit gültigen mp4-Bytes**. Der erste Abruf lief noch, alle weiteren
+nicht.
+
+Gelöst mit `video/werkzeug-shorts2/drive_fenster.py`: Die Datei hat `moov`
+vorn, also eine **Sparse-Datei** der vollen Größe anlegen, den Kopf an
+Offset 0 schreiben und das Byte-Fenster an seinen echten Offset.
+**694 MB auf der Platte statt 16,1 GB**, ffmpeg liest sie wie eine lokale
+Datei.
+
+### Zwei Fehler, die beim Prüfen aufgefallen sind
+
+**1. Der concat-Demuxer hat den Ton driften lassen.** Nach dem Zusammensetzen
+mit `-c copy` lagen die Tonstöße **0,027 / 0,033 / 0,053 / 0,125 s** vor den
+Bildschnitten, am Ende **0,215 s** Versatz. Mit `aresample=async=1` wuchs die
+Datei auf 45,2 s — das machte die Lücken sichtbar. **Mit dem concat-*Filter*
+statt des Demuxers sind Bild und Ton exakt gleich lang (41,533333 s).**
+Gegengeprüft am Inhalt: „This is an intelligence" beginnt bei **35,12 s**, der
+Bildschnitt liegt bei **35,10 s**.
+*(Die ausgelieferte Fassung B/B2 hatte diesen Fehler nicht in nennenswerter
+Grösse — dort lag der Ton am Ende 0,053 s daneben.)*
+
+**2. Mein erster Kasten für das Masterstück saß 300 px zu weit rechts.** Im
+ersten Rendern war sein Kopf links angeschnitten. An sechs Rasterbildern über
+die 7,7 s nachgemessen: sein Gesicht steht bei **x 1740–2070**, Mitte ≈ 1950 —
+ich hatte 2256 angenommen. Kasten jetzt `1343:0:1215:2160`.
+**Das ist dieselbe Falle wie der Bewegungsgipfel: ein Ausschnitt, der an einem
+Bild stimmt, stimmt nicht über die Einstellung.**
+
+### Zwei Korrekturzeilen mehr
+
+```
+inherently not not -> inherently not    (er stottert dort, wörtlich richtig, im Bild unruhig)
+anyway this is     -> this is           (Whisper-Artefakt an der Stoßstelle, steht nicht im Rohtranskript)
+```
+
+### Die Reihenfolge ist meine Entscheidung, nicht seine
+
+Er sagt *„davor"* — in der Folge kommt die Stelle aber **danach** (1:36 gegen
+1:07). Ich habe sie **ans Ende** gesetzt, weil „there's never been anything
+quite like in the history of the world" der stärkere Schlusspunkt ist als
+„something that actually answers". **Soll sie vor die Gottes-Stelle, ist das
+ein Umbau von zehn Minuten.**
+
+---
+
 ## Runde 2 — seine vier Korrekturen, 22.10. ~10:05
 
 **Wörtlich:** *„Okay, ich möchte das zweite Short nehmen. Allerdings hast du

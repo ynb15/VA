@@ -41,3 +41,9 @@ prayed the gods -> prayed to gods
 current eyes -> current AIs
 ais -> AIs
 llms -> LLMs
+# 22.10., Runde 3: im Master stottert er an der Stelle ("not ... not a safe
+# thing"). Woertlich richtig, im Bild unruhig — eingeebnet.
+inherently not not -> inherently not
+# An der Stossstelle zum Masterstueck hoert Whisper ein "anyway", das im
+# Rohtranskript der Folge nicht steht. Artefakt des Schnitts, nicht sein Wort.
+anyway this is -> this is

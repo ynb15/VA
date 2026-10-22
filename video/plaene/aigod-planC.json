@@ -1,0 +1,12 @@
+{
+ "quelle": "aigod-vorlageC.mov",
+ "groesse": [3840, 2160],
+ "notiz": "Fassung C: wie B, dahinter zwei Stuecke aus dem Folgenmaster (1920x1080, auf 3840 hochgezogen, Tempo 1,0999 angeglichen). Die Eltern-Analogie dazwischen faellt weg. Bildschnitte am zusammengesetzten Stueck gemessen: 10,967 / 21,133 / 27,433 / 35,100.",
+ "einstellungen": [
+  {"layout": "einzel", "kasten": "513:0:1215:2160",  "lippe": 1105, "start": 0.000,  "ende": 10.967, "tot": false, "wer": "Yannick, Nah (Clip 4K)"},
+  {"layout": "einzel", "kasten": "1433:0:1215:2160", "lippe": 1213, "start": 10.967, "ende": 21.133, "tot": false, "wer": "Aaronson, Nah (Clip 4K)"},
+  {"layout": "einzel", "kasten": "1253:0:1215:2160", "lippe": 1284, "start": 21.133, "ende": 27.433, "tot": false, "wer": "Aaronson, Nah (Clip 4K)"},
+  {"layout": "einzel", "kasten": "1343:0:1215:2160", "lippe": 1284, "start": 27.433, "ende": 35.100, "tot": false, "wer": "Aaronson, Nah (Master 1080p)"},
+  {"layout": "einzel", "kasten": "1249:0:1215:2160", "lippe": 1213, "start": 35.100, "ende": 41.533, "tot": false, "wer": "Aaronson, naeher (Master 1080p)"}
+ ]
+}

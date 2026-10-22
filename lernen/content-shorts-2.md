@@ -8,6 +8,61 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 ## 2026-10-22
 
+- **`ffmpeg` kommt in diesem Container nicht an eine Drive-URL heran, `curl`
+  schon — und es gibt einen Weg, der trotzdem nur das Noetige holt.**
+  Gemessen am Aaronson-Master (16,1 GB): `ffmpeg -ss … -i <drive-url>` lief
+  **einmal** durch und danach nur noch in *„Invalid data found when processing
+  input"* nach **0,9 s**, waehrend `curl -r` auf dieselbe URL im selben Moment
+  **HTTP 206 mit gueltigen mp4-Bytes** lieferte (am `ftyp`/`moov` am
+  Dateianfang geprueft). **Der Fehlertext nennt also nicht den Grund** — es ist
+  kein kaputtes Video und kein Tageslimit.
+  **Der Weg drumherum:** die Datei hat `moov` vorn, also eine **Sparse-Datei**
+  der vollen Groesse anlegen, den Kopf an Offset 0 schreiben und das gebrauchte
+  Byte-Fenster an seinen **echten** Offset. ffmpeg liest sie dann wie eine
+  lokale Datei und springt ins Fenster. **694 MB auf der Platte statt
+  16,1 GB**, 63 Sekunden. Fertig als
+  `video/werkzeug-shorts2/drive_fenster.py`.
+  → betrifft: alle
+- **Der concat-Demuxer laesst Bild und Ton auseinanderlaufen; der
+  concat-*Filter* nicht.** Fuenf Stuecke mit `-f concat -c copy`
+  zusammengesetzt: die Tonstoesse lagen **0,027 / 0,033 / 0,053 / 0,125 s** vor
+  den Bildschnitten, am Ende **0,215 s** Versatz, und der Container meldete
+  **42,55 s Ton gegen 41,53 s Bild**. `aresample=async=1` blaehte die Datei auf
+  **45,2 s** — damit waren die Luecken sichtbar. Mit dem concat-**Filter**
+  (`concat=n=5:v=1:a=1`) sind beide Spuren **exakt 41,533333 s**.
+  **Die Containerangabe allein verraet es nicht** — gegenpruefen heisst: die
+  Bildschnitte per `select='gt(scene,…)'` messen und das Transkript danebenlegen
+  („This is an intelligence" bei 35,12 s, Bildschnitt bei 35,10 s).
+  → betrifft: content-*
+- **Ein Ausschnitt, der an einem Bild stimmt, stimmt nicht ueber die
+  Einstellung.** Ich hatte den Kasten fuer ein 7,7-s-Stueck aus einem einzigen
+  Standbild abgelesen und auf Gesichtsmitte **x 2256** gesetzt; im Rendern war
+  sein Kopf links angeschnitten. An **sechs** Rasterbildern ueber dieselbe
+  Einstellung nachgemessen: das Gesicht wandert zwischen **x 1740 und 2070**,
+  Mitte ≈ **1950**. **Das ist dieselbe Falle wie der Bewegungsgipfel**, nur mit
+  einem Bild statt mit einem Detektor. Je Einstellung mindestens drei Bilder
+  ueber die ganze Dauer.
+  → betrifft: content-*, thumbnails
+- **Material aus dem Folgenmaster und Material aus einem fertigen Clip laufen
+  nicht im selben Tempo.** Gemessen an Aaronson: zwischen Master und
+  Rohtranskript liegt ein **reiner Versatz von ≈ 11,5 s** und **kein**
+  Tempounterschied (an `parents`, `benevolent` und `This is an intelligence`
+  gegengeprueft), waehrend der exportierte Clip auf **1,0999** laeuft.
+  **Wer beides in einem Short mischt, muss das Masterstueck vorher auf 1,0999
+  bringen** — sonst faellt der Sprecher mitten im Short ins Langsame.
+  Und: der Master ist **1920×1080**, der Clip **3840×2160** — der 9:16-Schnitt
+  wird aus dem Master **1,78-fach hochgezogen** statt um 0,89 verkleinert.
+  **Die gemischten Sekunden sind sichtbar weicher.**
+  → betrifft: content-*
+- **Whisper erfindet an einer Schnittstoss-Stelle ein Wort.** An der Naht
+  zwischen Clip- und Masterstueck schrieb das `medium`-Modell **„Anyway this
+  is an intelligence"**; im Rohtranskript der Folge steht an derselben Stelle
+  **„This is an intelligence"** ohne „anyway". **Ein zusammengesetztes Stueck
+  neu zu transkribieren erzeugt Woerter, die in keiner Quelle stehen** — die
+  eingebrannte Zeile gegen das Rohtranskript lesen, nicht nur gegen das Ohr.
+  → betrifft: content-*
+
+
 - **Das Logo steht in jedem bisher gebauten Short auf 10,2 % der Bildbreite
   statt auf den 28 % aus seinem Preset — die Ursache liegt in der Logodatei,
   nicht im Renderer.** `video/marke/ynb-logo-weiss.png` ist **5224×2947 px**,
