@@ -19,6 +19,11 @@ gilmore -> Gilmore
 yannick -> Yannick
 sutcliffe -> Sutcliffe
 hyper masculinity -> hypermasculinity
+# 22.10.: Whisper schreibt den Wortkern von Lauf zu Lauf anders — am
+# 20.10. "hyper" + "-masculinity", am 22.10. "hyper" + "-musculinity".
+# Darum beide Schreibungen, und der Wortkern allein gleich mit.
+hyper musculinity -> hypermasculinity
+musculinity -> masculinity
 ~^endo.?t[ae]d?t?e?s?$ -> Andrew Tates
 # Aaronson-Folge (20.10.): Whisper schreibt den Namen durchgaengig einfach.
 aronson -> Aaronson
