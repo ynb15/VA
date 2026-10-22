@@ -413,3 +413,55 @@ Stück, das ich weggeschnitten hatte. Am fertigen Ton hört man das nicht —
 der Schnitt klingt sauber, der Satz hängt trotzdem in der Luft. Stelle
 zurückgeholt, Short neun Sekunden länger, Fehler weg.
 → betrifft: alle Agenten
+
+### Vier Fehler an einem Short, und drei davon waren Entscheidungen, keine Pannen
+Am Tate-Short hat er vier Dinge beanstandet. Die Pannen sind das kleinere
+Problem; die Entscheidungen dahinter sind das Lehrstueck.
+
+**1. Zehn Einspieler, eine Szene.** Ich hatte mich frueh auf „nur neutrale
+Aufnahmen" festgelegt, um nicht mit Anklagematerial unter einer
+wohlwollenden Antwort zu landen. Richtig gedacht — aber die Festlegung hat
+alles weggeworfen, was die Quelle hergab, und ich habe den einheitlichen
+Look dann auch noch als Vorzug verkauft („dieselbe Aufnahme, also ein
+einheitlicher Look"). In derselben Datei lagen Lederjacke, Boxring, rotes
+Sofa, Kopfhoerer-Podcast, Fresh&Fit, Schreibtisch mit Goldbarren, Pool.
+**Eine Einschraenkung, die man sich selbst setzt, gehoert nach der Auswahl
+noch einmal geprueft — sonst begruendet sie am Ende das Ergebnis, das sie
+verursacht hat.**
+
+**2. Das Fenster zu frueh zugemacht.** Ich habe aus dem 20-GB-Master
+3790–3990 gelesen und daraus geschnitten. Der staerkste Teil der Antwort
+liegt bei 3990–4081: „he got out of jail and just fucking sat down with the
+mic", **„How do you not respect that?"** (zweimal), „this guy is living his
+karma", „I have never met anyone with the aura of Andrew Tate". Die
+„How do you not respect that"-Stelle steht in `sutcliffe-shorts.md`
+ausdruecklich als eine der staerksten der Folge — ich habe sie nie
+angesehen. **Bei einem Fenster aus einem grossen Master: erst das Ende der
+Passage suchen, dann das Fenster setzen.**
+
+**3. Eine Werkzeugwarnung fuer einen Fehler gehalten.** Der Plan hatte die
+ersten 0,6 s als gestapelte Totale erkannt. Ich hielt das fuer einen Blitz
+und zog es mit der naechsten Einstellung zusammen — und machte damit aus
+zwei Gesichtern ein Regal, weil ein 9:16-Ausschnitt aus einer Totale genau
+den Tisch trifft. Genau dafuer ist der Stapel gebaut. Rueckgaengig.
+
+**4. Der Plan war aelter als der Schnitt.** Nachdem ich den Zusammenschnitt
+um neun Sekunden verlaengert hatte, lief `plan.json` noch auf die alte
+Laenge — das Short brach mitten im letzten Satz ab. **Aendert sich der
+Schnitt, ist der Plan ungueltig.**
+
+### Zwei Verfahren, die daraus folgen
+
+**Gibt es einen von Hand gebauten Schnitt derselben Stelle, ist er der
+Maßstab — transkribiere ihn zuerst.** Isabels Fassung hat in zwei Minuten
+beantwortet, was ich in vier Runden erraten habe: welche Saetze drin
+gehoeren und welche nicht. Sie hatte genau die Stellen, die ich weggelassen
+hatte, und liess genau die weg, die ich behalten hatte.
+
+**Den Zusammenschnitt gegenlesen, bevor gerendert wird.** Satzbrueche an
+Schnittstellen („…not judging it. **Completely capable** of having a real
+conversation", „**I is living** his karma") sieht man am Transkript, nicht
+am Ton. Bisher habe ich sie am fertigen Short gefunden — das kostet je
+Fehler eine Renderrunde. Eine Transkription des Zusammenschnitts mit dem
+kleinen Modell kostet eine Minute.
+→ betrifft: alle Agenten
