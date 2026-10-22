@@ -3,6 +3,26 @@
 Schlüssel `content-gastauftritte`, Branch `claude/content-gastauftritte`.
 Neuester Eintrag oben.
 
+## 2026-10-22
+
+- **Die 60-Sekunden-Grenze schuetzt nicht vor Content ID — am Kanal belegt.**
+  Er hat den Aaronson-Short mit *David Kushner – Daylight* hochgeladen,
+  Inhalt **59,43 s**, Bett **3 dB unter der Stimme** und per Sidechain
+  weggedrueckt. **YouTube hat ihn trotzdem geblockt.** Die Annahme, unter
+  60 s sei die Musik nutzbar, traegt nicht: die Lizenz der Shorts-Musik gilt
+  nur fuer Titel, die **in YouTube selbst** aus deren Bibliothek gewaehlt
+  werden. Eine kommerzielle Aufnahme, die in die hochgeladene Datei
+  hineingemischt ist, wird von Content ID erkannt — **unabhaengig von
+  Laenge, Pegel und Wegdruecken**, weil der Abgleich am Fingerabdruck der
+  Aufnahme haengt, nicht an ihrer Lautstaerke.
+  **Konsequenz fuer jedes Fach:** ein Musikbett aus einer kommerziellen
+  Aufnahme macht ein Stueck unveroeffentlichbar, egal wie leise es liegt.
+  Entweder lizenzfreie Musik aus einer Quelle, die ihm gehoert, oder er legt
+  die Musik **nach dem Hochladen in YouTube** darueber. Ich liefere ab jetzt
+  zu jedem Short mit Bett **auch eine Fassung ohne Musik**, damit eine
+  hochladbare Datei immer danebenliegt.
+  → betrifft: alle Content-Agenten
+
 ## 2026-10-21
 
 - **YouTube weist diesen Container ab — `yt-transkript.py` läuft nicht mehr.**
