@@ -180,7 +180,11 @@ def schluss_waehlen(daten, idx):
 def eine(f):
     name, k, fid, nr = f["name"], f["k"], f["id"], f["nr"]
     groesse, gesamt = f.get("groesse"), f.get("gesamt")
-    out = os.path.join(HIER, f"{nr:02d}-{k}-meaningful.mp4")
+    # Seine Ansage vom 22.10.2026: "YNB Podcast und dann der Name und dann
+    # halt ein Stichwort zu dem Inhalt ... Alle Shorts." Die laufende
+    # Nummer faellt damit aus dem Dateinamen; sie steht in
+    # video/meaningful-archiv.md, und das ist ohnehin der Index.
+    out = os.path.join(HIER, f"YNB Podcast {name} Meaning.mp4")
     befund = os.path.join(HIER, f"{k}_befund.json")
     if dauer(out) > 10:
         return f"{nr}. {name}: schon fertig ({dauer(out):.1f}s)"

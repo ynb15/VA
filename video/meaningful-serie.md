@@ -99,3 +99,48 @@ nichts passiert.** Dateien überleben, Prozesse nicht — und zwar auch mit
 
 **Regel für jeden langen Lauf ab jetzt: erst wiederaufnehmbar bauen, dann
 starten.** Nicht umgekehrt.
+
+---
+
+## Nachtrag 22.10.2026 — zwei Festlegungen
+
+### Dateinamen
+
+**Seine Ansage vom 22.10.:** *„ich möchte, dass du ab sofort die Dateien so
+nennst, YNB Podcast und dann der Name und dann halt ein Stichwort zu dem Inhalt
+… Alle Shorts."*
+
+```
+YNB Podcast <Gastname> Meaning.mp4
+```
+
+**Die laufende Nummer fällt damit aus dem Dateinamen.** Sie steht weiter in
+`video/meaningful-archiv.md`, und das ist ohnehin der Index — aus einem Ordner
+voller Dateien lässt sich der Schnitt bei Folge 100 nicht bauen, aus der Tabelle
+schon. Nebenfassungen in Klammern dahinter, zum Beispiel
+`YNB Podcast David Sutcliffe Meaning (Kopfzeile).mp4`.
+
+### Keine Musik — ab jetzt mit Grund, nicht aus Zufall
+
+**Die Stücke dieser Reihe bekommen kein Musikbett.** Bisher stand hier nur, dass
+keines drin ist; jetzt steht hier, warum es auch keines geben soll.
+
+**Am 22.10. sind an einem Tag vier Fassungen weltweit gesperrt worden**, drei
+verschiedene Titel:
+
+| Zeit | Stück | beanstandet | Art des Anspruchs |
+|---|---|---|---|
+| 10:57 | Sutcliffe meaningful | Daylight – David Kushner | Audio |
+| 11:57 | Aaronson meaningful | Daylight – David Kushner | Audio |
+| 15:21 | Sutcliffe, neu hochgeladen | In This Shirt (Royksopp Remix) | Audio |
+| 16:21 | noch einmal neu | Comptine d'un autre été | **Melodie/Text** |
+
+**Die letzte Zeile ist der eigentliche Befund.** Das war ein **Klaviercover**,
+gewählt als Ausweg um Content ID herum — und es wurde trotzdem gesperrt, diesmal
+als Anspruch auf die **Komposition** statt auf die Aufnahme. **Eine
+Coverversion wechselt den Anspruchsteller, nicht die Sperre.**
+
+**Regel: keine Musik unter diesen Stücken, bis er einen lizenzierten Titel
+nennt.** Dass eine Datei in seinem Musikordner liegt, ist keine Freigabe — dort
+lagen drei Titel, und alle drei haben gesperrt. Das steht hier, damit es beim
+nächsten Durchgang niemand „ergänzt".

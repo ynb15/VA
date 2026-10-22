@@ -22,9 +22,9 @@ Der Stand im Handbuch („Drive-Schreibzugriffe nicht freigegeben") ist damit
 überholt. **Dorthin gehen die Stücke ab jetzt**, je Folge drei Dateien:
 
 ```
-<nr>-<gast>-meaningful.mp4    das geschnittene Stück
-<nr>-<gast>-meaningful.srt    die Untertitel
-<nr>-<gast>-meaningful.txt    das Transkript der Antwort
+YNB Podcast <Gast> Meaning.mp4    das geschnittene Stück
+YNB Podcast <Gast> Meaning.srt    die Untertitel
+YNB Podcast <Gast> Meaning.txt    das Transkript der Antwort
 ```
 
 Das Archiv selbst bleibt hier im Repo — eine Tabelle in Git ist versionierbar
@@ -39,15 +39,15 @@ Untertitel unter `video/shorts/<datei>.srt`.
 
 | # | Gast | Drive-ID des Masters | Frage/Antwort im Master | Dauer | Datei | geprüft |
 |---|---|---|---|---|---|---|
-| 1 | David Sutcliffe | `1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT` | 7222,0–7281,6 | 49,7 s | `01-sutcliffe-meaningful` | ja, von ihm abgenommenes Format |
-| 2 | Scott Aaronson | `1C7CUI-B6_fBcdttR_zKIJBYraBMTtUvh` | 5894,3–5972,6 | 65,3 s | `02-aaronson-meaningful` | ja |
-| 3 | Ken Stern | `1RGq-Mw0QEm5jE2WMthKPkP5OHrXvmotF` | 6150,1–6189,3 | 32,7 s | `03-ken-meaningful` | ja |
-| 4 | Logan Gonzalez | `1ztggu2ua5-AntISFHHP9cBqjVhSn6Zmj` | 4957,1–5009,4 | 43,6 s | `04-logan-meaningful` | ja |
-| 5 | Matt Defina | `1ubW-gMYb6_g0ZO-cOVyEFGQoKvIyGivj` | 6474,7–6513,1 | 32,0 s | `05-matt-meaningful` | ja |
-| 6 | Rick Strassman | `1Hwt3_c_Ifhd7onXyC8nrHIdtjwJjxdjH` | **~7100–7160, ungenau** | 49,0 s | `06-rick-meaningful` | **nein — Ende offen** |
-| 7 | Kyle Kingsbury | `1NWMaIn8avpf0EVQvm2DhEQr73uhfioIq` | 7485,78–7547,38 | 51,4 s | `07-kyle-meaningful` | ja, Bild und Schluss geprüft |
-| 10 | Eben Britton | `1lIFL8aUunQQPtTDp0vQNlaRc7of-4PfG` | 5986,89–6034,27 | 39,5 s | `10-britton-meaningful` | ja, Schluss geprüft |
-| 11 | Whitney Wheelock | `1CFqj0d_cO9oGqusPSabS22pgyeJWQ7XE` | 6570,73–6638,92 | 56,8 s | `11-wheelock-meaningful` | ja, Naht im Ton geprüft |
+| 1 | David Sutcliffe | `1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT` | 7222,0–7281,6 | 49,7 s | `YNB Podcast David Sutcliffe Meaning` | ja, von ihm abgenommenes Format |
+| 2 | Scott Aaronson | `1C7CUI-B6_fBcdttR_zKIJBYraBMTtUvh` | 5894,3–5972,6 | 65,3 s | `YNB Podcast Scott Aaronson Meaning` | ja |
+| 3 | Ken Stern | `1RGq-Mw0QEm5jE2WMthKPkP5OHrXvmotF` | 6150,1–6189,3 | 32,7 s | `YNB Podcast Ken Stern Meaning` | ja |
+| 4 | Logan Gonzalez | `1ztggu2ua5-AntISFHHP9cBqjVhSn6Zmj` | 4957,1–5009,4 | 43,6 s | `YNB Podcast Logan Gonzalez Meaning` | ja |
+| 5 | Matt Defina | `1ubW-gMYb6_g0ZO-cOVyEFGQoKvIyGivj` | 6474,7–6513,1 | 32,0 s | `YNB Podcast Matt Defina Meaning` | ja |
+| 6 | Rick Strassman | `1Hwt3_c_Ifhd7onXyC8nrHIdtjwJjxdjH` | **~7100–7160, ungenau** | 49,0 s | `YNB Podcast Rick Strassman Meaning` | **nein — Ende offen** |
+| 7 | Kyle Kingsbury | `1NWMaIn8avpf0EVQvm2DhEQr73uhfioIq` | 7485,78–7547,38 | 51,4 s | `YNB Podcast Kyle Kingsbury Meaning` | ja, Bild und Schluss geprüft |
+| 10 | Eben Britton | `1lIFL8aUunQQPtTDp0vQNlaRc7of-4PfG` | 5986,89–6034,27 | 39,5 s | `YNB Podcast Eben Britton Meaning` | ja, Schluss geprüft |
+| 11 | Whitney Wheelock | `1CFqj0d_cO9oGqusPSabS22pgyeJWQ7XE` | 6570,73–6638,92 | 56,8 s | `YNB Podcast Whitney Wheelock Meaning` | ja, Naht im Ton geprüft |
 
 **Die Zeitmarken von 7 und 10 sind am Dateibeginn des Suchfensters gemessen,
 nicht gerechnet** — `master_schnitt.py` setzt auf das Schlüsselbild vor dem
@@ -362,8 +362,8 @@ sie. Fenster 7212–7292 geholt (**224 MB**), Dateibeginn gemessen bei 7211,99.
 
 | | Datei | Stand |
 |---|---|---|
-| **A** | `sutcliffe-meaningful-A-ohne.mp4` | ohne Kopfzeile, 49,7 s |
-| **B** | `sutcliffe-meaningful-B-kopfzeile.mp4` | mit `WHAT MAKES \| LIFE MEANINGFUL?`, 4,5 s |
+| **A** | `YNB Podcast David Sutcliffe Meaning.mp4` | ohne Kopfzeile, 49,7 s |
+| **B** | `YNB Podcast David Sutcliffe Meaning (Kopfzeile).mp4` | mit `WHAT MAKES \| LIFE MEANINGFUL?`, 4,5 s |
 
 **Was ich nehmen würde: A.** Begründung, und sie ist meine, nicht seine Vorgabe:
 das Stück **beginnt mit der gestellten Frage im Ton** — *„After all, what makes
