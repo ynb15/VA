@@ -32,5 +32,21 @@ gesagt, es weiterzugeben.
    (siehe `lernen/content-gastauftritte.md`). Gäbe es je wieder eine Fassung
    mit Bett, hieße sie `… (mit Musik).mp4`.
 
+## Vier Testfassungen desselben Shorts (22.10., abends)
+
+Er will testen, welche Musik bei YouTube durchgeht, und braucht sie darum
+nebeneinander. Der Grundname bleibt die Fassung ohne Musik, die Musikfassungen
+tragen den Titel in Klammern:
+
+```
+YNB Podcast David Sutcliffe Meaning.mp4
+YNB Podcast David Sutcliffe Meaning (In This Shirt).mp4
+YNB Podcast David Sutcliffe Meaning (Odell Piano).mp4
+YNB Podcast David Sutcliffe Meaning (Comptine).mp4
+```
+
+Der Titel in der Klammer, nicht „mit Musik 1/2/3" — sonst weiß er nach dem
+Hochladen nicht mehr, welche Sperre zu welchem Titel gehört.
+
 **Das Stichwort ist ein Wort, kein Satz** — `Meaning`, `Tate`, `Vulnerability`.
 Es sagt, welche Stelle es ist, nicht worum es geht.

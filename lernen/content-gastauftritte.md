@@ -298,3 +298,89 @@ Neuester Eintrag oben.
   läuft durch den Proxy. Zusätzlich liegt ein zweites ffmpeg bei Playwright
   (`/opt/pw-browsers/ffmpeg-1011/`).
   → betrifft: alle Content-Agenten
+
+## 22.10.2026, 18:40 — Der unsaubere Anfang war ein Sprung mitten in einer Einstellung. Der J-Schnitt loest ihn auf.
+
+Sein Befund, zweimal: *„Nachdem ich frage, what makes life meaningful for you?
+Da ist so ein Moment, der ist einfach richtig schlecht geschnitten"* (22.10.),
+und nachdem ich eine Bildblende durch einen harten Schnitt ersetzt hatte:
+*„Du hast zwar den Fehler nicht wirklich behoben"*, dann *„ganz am Anfang, da
+ist einfach so ein richtig unsauberer Cut"*.
+
+Nachgemessen, Bild fuer Bild: der Kamerawechsel von ihm auf Sutcliffe liegt bei
+src2 **3,6000 s** (Differenz 41,2 gegen 0,6 im Ruhepegel). Mein Schnitt lag bei
+4,0 — also **0,4 s hinter** dem Wechsel. Dadurch sah man Sutcliffe 0,4 s lang,
+und dann sprang es auf denselben Sutcliffe 5 s spaeter. Zwei harte Schnitte in
+0,4 s, der zweite innerhalb derselben Einstellung: genau der Sprung, den er
+sieht. Ihn weicher zu machen (Blende) war der falsche Hebel — der Schnitt lag
+an der falschen Stelle.
+
+Die Loesung ist der **J-Schnitt**: das Bild endet exakt auf dem Kamerawechsel
+(3,6000), der Ton laeuft bis 4,0 weiter, damit seine Frage fertig wird. Das
+Bild des zweiten Stuecks faengt dafuer 0,4 s frueher an (src2 8,8667 statt
+9,2667). Ergebnis: **ein** Bildschnitt, und der faellt auf einen Kamerawechsel,
+ist also unsichtbar. Man sieht Sutcliffe zuhoeren, waehrend die Frage zu Ende
+geht.
+
+→ betrifft: jede Naht, die in einer Einstellung liegt. Erst messen, wo der
+naechste Kamerawechsel ist, dann das Bild dorthin legen und den Ton
+darueberlaufen lassen. `video/schnitt_bauen.py` nimmt Bild- und Tonstuecke
+getrennt entgegen und prueft, dass beide Summen gleich lang sind.
+
+## 22.10.2026, 18:40 — Der Anfang begann 0,05 s vor dem ersten Wort.
+
+Zweiter Teil desselben Befunds. Der Short begann bei src2 1,000, das erste Wort
+"After all" bei 1,05 — **50 ms Vorlauf**, und der erste Frame lag mitten in
+einer laufenden Einstellung. Gemessen: der Kamerawechsel auf ihn liegt bei src2
+**0,6000**. Der Short faengt jetzt dort an, also auf dem ersten Bild der
+Einstellung, mit 0,45 s Ruhe vor dem ersten Wort.
+
+→ betrifft: jeden Anfang. Der erste Frame eines Shorts gehoert auf den ersten
+Frame einer Einstellung, nicht irgendwohin in deren Mitte.
+
+## 22.10.2026, 18:40 — Pausen kuerzen: nicht nach Laenge waehlen, nach Bildaehnlichkeit.
+
+Fuer „unter 90 Sekunden" mussten 4,8 s weg. Pausen zu kuerzen heisst in einer
+stehenden Einstellung: Sprungschnitt. Nach Laenge zu waehlen (die laengste
+Pause zuerst) traf die sichtbarsten Stellen.
+
+Gemessen statt geschaetzt: fuer jede Pause wird die mittlere
+Helligkeitsdifferenz im Kopfbereich zwischen Ausstiegs- und Einstiegsbild
+berechnet, daneben der Ruhepegel (zwei benachbarte Bilder an derselben Stelle).
+Dann wird **innerhalb** jeder Pause die Paarung gesucht, bei der die Differenz
+am kleinsten ist, statt feste Puffer zu nehmen. Das hat viel gebracht:
+
+* feste Puffer von 0,15 s: 14 Schnitte, schlechtester Sprung **3,14**
+* Paarung gesucht: 14 Schnitte, schlechtester Sprung **2,72**, die meisten
+  zwischen 0,7 und 1,9 bei Ruhepegeln von 0,3 bis 1,1
+
+→ betrifft: jede Laengenvorgabe. `video/pausen_waehlen.py --fein`. Nicht die
+laengste Pause kuerzen, sondern die, an der das Bild vorher und nachher gleich
+aussieht.
+
+## 22.10.2026, 18:40 — Nach einem Neuschnitt die Einblendungen rechnen, nicht neu transkribieren.
+
+Sein Vorwurf vom 21.10. war berechtigt: *„warum ich dir in der vorherigen
+Schritt sage, pass das an ... und dann verlierst du es wieder."* Ursache ist
+Whisper, das nicht deterministisch ist. Die abgenommene Cue-Datei loest das nur,
+solange der Clip derselbe bleibt.
+
+Wenn aus einem Clip nur Stellen **herausgeschnitten** werden, muss gar nicht neu
+transkribiert werden: die Zeiten lassen sich abbilden. `video/cues_umlegen.py`
+nimmt die abgenommene Datei, den Versatz und die Liste der entfernten Stellen
+und rechnet um — 102 Einblendungen, keine neue Lotterie, „meaningful for you?"
+bleibt in einer Einblendung, die geheilten Woerter behalten ihre Dauer.
+
+→ betrifft: jeden Neuschnitt eines schon abgenommenen Shorts.
+
+## 22.10.2026, 18:40 — Der Ausschnittplaner liefert nach dem Neuschnitt dieselben Kaesten.
+
+Sorge war, dass ein neuer Lauf von `bildausschnitt.py` die abgenommene Fassung
+des Bildes verliert (der Planer folgt dem Bewegungsgipfel, nicht dem Gesicht).
+Nachgeprueft: mit `--zoom 1.15 --marke 0,875,215,1080 --kein-stapel` kommen auf
+dem neuen Clip **exakt dieselben sechs Kaesten** heraus wie auf dem alten, nur
+mit verschobenen Zeiten. Ohne `--kein-stapel` macht er aus den zwei Totalen
+„stapel" — dann weicht die Fassung ab.
+
+→ betrifft: jeden Neulauf des Planers. `--kein-stapel` gehoert zu diesem Short
+dazu, und die Kaesten gehoeren verglichen, nicht geglaubt.
