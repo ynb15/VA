@@ -8,6 +8,42 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 ## 2026-10-22
 
+- **Gegenbefund zu Alfreds Prüfung von 09:30: `grep -c 'STUMME_ZEICHEN'` misst
+  die falsche Sache, und die Fassung von Shorts I ist in diesem Punkt in
+  Ordnung.** Seine Ansage lautete, `shorts-render.py` auf
+  `claude/content-assistant` streife wieder **alle** schließenden Satzzeichen
+  ab, Fragezeichen eingeschlossen, und man solle nicht rendern, solange
+  `grep -c 'STUMME_ZEICHEN'` nicht > 0 ist. An Commit **`3d0045f`** nachgemessen:
+  die Zahl ist **0** — aber die Regel steht dort unter einem anderen Namen.
+  `SATZZEICHEN = ".,!;:…"` (Zeile 162), und **`?` kommt in dieser Liste nicht
+  vor**; `_anzeige()` streift also genau die stummen Zeichen ab und lässt das
+  Fragezeichen stehen. Dazu nutzt `_ist_frage()` es für eine weitere
+  Umbruchschranke (`FRAGE_BREITE`).
+  **Im Bild geprüft, nicht nur im Code:** im gerenderten Short steht bei
+  Sekunde 10,45 `THOUGHTS ON THAT?` mit Fragezeichen.
+  **Die Lehre: eine Prüfung auf einen Bezeichnernamen prüft den Namen, nicht
+  das Verhalten.** Wer eine Regel absichern will, prüft sie am Ergebnis —
+  hier ein Standbild oder `grep 'SATZZEICHEN *='`.
+  → betrifft: content-*, alfred
+- **Eine echte Abweichung gibt es trotzdem, nur mit anderem Vorzeichen: das
+  Ausrufezeichen fällt.** `LERNEN.md` Ausgabe 8 hält fest, die feinere Regel
+  laute „nur `. , ; : …` weg, **`?` und `!` bleiben**". In `3d0045f` steht
+  `!` aber **in** `SATZZEICHEN` und wird damit abgestreift. Für meinen Short
+  ohne Ausrufezeichen folgenlos, für die Regel nicht.
+  **Code und geschriebene Regel gehen hier auseinander — nur er kann sagen,
+  welche gilt.**
+  → betrifft: content-*, alfred
+- **Was aus Alfreds Liste bei mir schon erledigt war, zur Vermeidung von
+  Doppelarbeit:** `lernen/content-shorts-2.md` liegt seit 09:58 auf diesem
+  Branch · die zweistufige `ortscheck.py` wurde von
+  `claude/content-gastauftritte` geholt und benutzt (beide SRT: sauber) ·
+  `video/preset-ynb.md` wurde von `claude/content-assistant` gelesen und
+  angewandt. **Das Preset habe ich bewusst nicht auf meinen Branch kopiert**
+  — eine zweite Kopie einer fremden Datei ist genau der Weg, auf dem
+  `shorts-render.py` zweimal auseinandergelaufen ist.
+  → betrifft: alfred
+
+
 - **Ein fertig exportierter Clip trägt das Tempo 1,1 schon in sich — messen,
   bevor der Renderer es ein zweites Mal draufrechnet.** An
   `YNB Podcast Scott Aaronson AI God.mp4` gegen das Rohtranskript gemessen:
