@@ -1,3 +1,42 @@
+## 22.10.2026 — Die Ortsregel war zu eng, und drei Fehler im SRT-Rückweg
+
+**Seine Präzisierung vom 21.10., die meine Liste von gestern korrigiert:**
+*„Cape Town oder South Africa — ich möchte es halt nur nicht genauer
+veröffentlichen."* Stadt und Land dürfen fallen. Meine erste Fassung hatte
+beide gesperrt und hätte **jeden Short mit seiner Herkunftsgeschichte
+blockiert** — und die ist ein Kernstück seines Materials. Gemeldet vom
+Gastauftritte-Agenten, zu Recht.
+`ortscheck.py` ist jetzt zweistufig: `GROB` (Cape Town, South Africa,
+Western Cape, Tafelberg) wird **gezählt und berichtet**, `ORTE`
+(Scarborough, Kommetjie, Misty Cliffs, Noordhoek, Fish Hoek, Muizenberg,
+Kalk Bay …) **schlägt an**.
+**Regel: eine Schutzliste, die mehr sperrt als verlangt, ist kein
+vorsichtiger Fehler — sie nimmt ihm Material weg.** Im Zweifel das enger
+Gemeinte sperren und das Weitere nur melden.
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Drei Fehler auf dem Rückweg über eine .srt, zwei davon bestätigt und
+behoben:**
+1. `--srt` zusammen mit `--srt-out` **brach mit einem KeyError ab**:
+   `cues_als_srt` griff blind auf `c["woerter"]` zu, und Einblendungen aus
+   einer .srt haben keine Wortzeiten. Jetzt fällt es auf den Text zurück.
+2. **Die Zeitbasis wurde doppelt durchs Tempo gerechnet.** Eine .srt aus
+   `--srt-out` steht schon in der Zeit des fertigen Videos; sie wurde beim
+   Zurücklesen noch einmal geteilt. Einblendungen tragen jetzt
+   `fertigzeit`, und wer sie trägt, wird nicht noch einmal skaliert.
+   Geprüft: eine .srt durch den Renderer und zurück kommt zeitgleich an.
+3. **Eine wiederverwendete .srt kostet das gelbe Aktivwort** — das stimmt
+   und lässt sich nicht beheben: ohne Wortzeiten gibt es nichts
+   hervorzuheben. Wer die Hervorhebung braucht, lässt neu transkribieren.
+→ betrifft: content-*, YNB Cinema
+
+**Und eine Meldung, die ich geprüft und verworfen habe.** Es hieß, der
+Merge habe das Fragezeichen wieder abgestreift. Das stimmte für `66de26b`
+und war in `01a27cb` schon behoben, bevor die Meldung kam: `SATZZEICHEN`
+ist `.,!;:…`, und `_anzeige("safe?")` gibt `SAFE?`. Nachgesehen statt
+geglaubt — und das Gegenteil wäre genauso wichtig gewesen.
+→ betrifft: content-*
+
 ## 21.10.2026 — Whisper verschluckt Wiederholungen, und niemand merkt es
 
 **Befund, gemessen am selben 80-Sekunden-Fenster derselben Datei:**

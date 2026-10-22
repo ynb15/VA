@@ -18,14 +18,23 @@ etwas gefunden wurde — so faellt es in einem Lauf auf.
 import re, sys
 from pathlib import Path
 
-# Sein Wohnort und sein Umfeld. Erweitern, sobald etwas auffaellt —
-# lieber ein Fehlalarm zu viel als eine Adresse im Bild.
+# Zweistufig, und zwar auf seine eigene Praezisierung vom 21.10.2026 hin:
+# *„Cape Town oder South Africa — ich moechte es halt nur nicht genauer
+# veroeffentlichen."* Stadt und Land duerfen also fallen; seine
+# Herkunftsgeschichte ist ein Kernstueck seines Materials, und die erste
+# Fassung dieser Liste haette jeden Short damit blockiert.
+#
+# GROB wird nur gezaehlt und berichtet, ORTE schlaegt an.
+GROB = [
+    "cape town", "kapstadt", "south africa", "suedafrika", "südafrika",
+    "western cape", "table mountain", "tafelberg",
+]
 ORTE = [
-    "scarborough", "cape town", "kapstadt", "kommetjie", "misty cliffs",
-    "noordhoek", "fish hoek", "simon's town", "simons town", "muizenberg",
-    "chapman's peak", "chapmans peak", "table mountain", "tafelberg",
-    "camps bay", "hout bay", "sea point", "constantia", "stellenbosch",
-    "western cape", "south africa", "suedafrika", "südafrika",
+    "scarborough", "kommetjie", "misty cliffs", "noordhoek", "fish hoek",
+    "simon's town", "simons town", "muizenberg", "chapman's peak",
+    "chapmans peak", "camps bay", "hout bay", "sea point", "constantia",
+    "stellenbosch", "llandudno", "glencairn", "kalk bay", "st james",
+    "witsand", "scarborough beach",
 ]
 # Formen, die eine Adresse verraten, ohne einen bekannten Namen zu nennen.
 MUSTER = [
@@ -50,22 +59,26 @@ def zeilen(pfad):
 
 
 def pruefen(pfad):
-    treffer = []
+    """(Treffer, Grobnennungen) — nur die Treffer sind ein Grund zu schneiden."""
+    treffer, grob = [], []
     for marke, z in zeilen(pfad):
         klein = z.lower()
         for ort in ORTE:
             if ort in klein:
                 treffer.append((marke, ort, z))
+        for ort in GROB:
+            if ort in klein:
+                grob.append((marke, ort, z))
         for muster, name in MUSTER:
             if re.search(muster, z, re.I):
                 treffer.append((marke, name, z))
-    return treffer
+    return treffer, grob
 
 
 def main(argv):
     gesamt = 0
     for pfad in argv:
-        treffer = pruefen(pfad)
+        treffer, grob = pruefen(pfad)
         gesamt += len(treffer)
         if treffer:
             print(f"\n{pfad} — {len(treffer)} Stelle(n):")
@@ -73,6 +86,9 @@ def main(argv):
                 print(f"  {marke or '?':>12}  [{was}]  {z}")
         else:
             print(f"{pfad} — sauber")
+        if grob:
+            print(f"  ({len(grob)}x Stadt/Land genannt — erlaubt, nur zur "
+                  f"Kenntnis: {', '.join(sorted({w for _, w, _ in grob}))})")
     if gesamt:
         print(f"\n{gesamt} Stelle(n) gefunden. Pruefen, im Zweifel rausschneiden.")
     return 1 if gesamt else 0

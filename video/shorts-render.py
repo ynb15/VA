@@ -143,9 +143,18 @@ def cues_als_srt(cues, pfad, tempo=1.0, gross=True):
     """
     zeilen = []
     for i, c in enumerate(cues, 1):
-        text = " ".join(_anzeige(w["t"], gross) for w in c["woerter"])
-        zeilen.append(f"{i}\n{srt_time(c['start'] / tempo)} --> "
-                      f"{srt_time(c['end'] / tempo)}\n{text}\n")
+        # Einblendungen aus --srt haben keine Wortzeiten. Vorher griff diese
+        # Zeile blind auf c["woerter"] zu, und `--srt` zusammen mit
+        # `--srt-out` brach mit einem KeyError ab.
+        if c.get("woerter"):
+            text = " ".join(_anzeige(w["t"], gross) for w in c["woerter"])
+        else:
+            text = " ".join(_anzeige(t, gross) for t in (c.get("text") or "").split())
+        # Wer schon in der Zeit des fertigen Videos steht, wird nicht noch
+        # einmal durch das Tempo geteilt.
+        teiler = 1.0 if c.get("fertigzeit") else tempo
+        zeilen.append(f"{i}\n{srt_time(c['start'] / teiler)} --> "
+                      f"{srt_time(c['end'] / teiler)}\n{text}\n")
     Path(pfad).write_text("\n".join(zeilen), encoding="utf-8")
     return len(cues)
 
@@ -366,7 +375,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     lines = []
     nutzbar = W - 2 * rand
 
-    def zeile(von, bis, bauen, lippe, fs):
+    def zeile(von, bis, bauen, lippe, fs, fertig_zeit=False):
         """Eine Einblendung ausgeben.
 
         Layer 0 ist die Zeile mit schwarzer Kontur. Solange Inter Black als
@@ -379,7 +388,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             kopf = f"{{\\an8\\pos({W // 2},{int(lippe) + tiefer})}}"
         if fs != groesse:
             kopf += f"{{\\fs{fs}}}"
-        von_s, bis_s = ass_time(von / tempo), ass_time(bis / tempo)
+        t = 1.0 if fertig_zeit else tempo
+        von_s, bis_s = ass_time(von / t), ass_time(bis / t)
         lines.append(f"Dialogue: 0,{von_s},{bis_s},Cap,,0,0,0,,"
                      f"{kopf}{bauen(False)}")
         if FETTER:
@@ -412,7 +422,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             return " ".join(teile)
 
         if not woerter:
-            zeile(c["start"], c["end"], bauen, c.get("lippe"), fs)
+            zeile(c["start"], c["end"], bauen, c.get("lippe"), fs,
+                  c.get("fertigzeit", False))
             continue
         for i, w in enumerate(woerter):
             von = max(w["start"], c["start"]) if i else c["start"]
@@ -420,7 +431,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             if bis - von <= 0.02:
                 continue
             zeile(von, bis, lambda kontur, i=i: bauen(kontur, i),
-                  c.get("lippe"), fs)
+                  c.get("lippe"), fs, c.get("fertigzeit", False))
 
     Path(path).write_text(head + "\n".join(lines) + "\n", encoding="utf-8")
 
@@ -523,7 +534,14 @@ def cues_an_lippen(cues, lippen):
     return raus
 
 
-def srt_to_cues(srt_path, offset=0.0):
+def srt_to_cues(srt_path, offset=0.0, fertigzeit=True):
+    """Eine .srt einlesen.
+
+    `fertigzeit=True`: die Zeiten stehen schon in der Zeit des fertigen
+    Videos — so kommen sie aus `--srt-out` zurueck. Dann darf das Tempo
+    nicht noch einmal hineingerechnet werden. Eine .srt, die zur
+    ungeschnittenen Quelle gehoert, wird mit `fertigzeit=False` gelesen.
+    """
     cues, block = [], []
     for raw in Path(srt_path).read_text(encoding="utf-8").splitlines() + [""]:
         if raw.strip():
@@ -533,7 +551,8 @@ def srt_to_cues(srt_path, offset=0.0):
             times = next(l for l in block if "-->" in l)
             a, b = [t.strip().replace(",", ".") for t in times.split("-->")]
             text = " ".join(block[block.index(times) + 1:])
-            cues.append({"start": tc(a) - offset, "end": tc(b) - offset, "text": text})
+            cues.append({"start": tc(a) - offset, "end": tc(b) - offset,
+                         "text": text, "fertigzeit": fertigzeit})
         block = []
     return cues
 
