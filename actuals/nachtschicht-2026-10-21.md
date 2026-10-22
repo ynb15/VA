@@ -63,3 +63,14 @@ unverändert für morgen früh bereit.
 Anstupsen wäre hier das Gegenteil von Aufsicht.
 
 - **00:40** · alle acht · ruhend, kein offener Lauf · neue Commits: keine · Maßnahme: keine
+
+## 03:40 · dritte Kontrolle
+
+**Wieder unverändert** — `14 24 22 13 36 6 22 3`, Zahl für Zahl dieselbe Reihe
+wie um 21:40 und 00:40. Kein offener Nachtlauf, also auch nichts, was laufen
+sollte.
+
+**Keine Maßnahme.** Die Nacht ist das, was sie sein soll: still, mit einem
+Auftrag, der scharf für 06:40 steht.
+
+- **03:40** · alle acht · ruhend, kein offener Lauf · neue Commits: keine · Maßnahme: keine
