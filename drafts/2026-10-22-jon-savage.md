@@ -1,6 +1,13 @@
 # Jon Savage — E-Mail, via Denver
 
-**Stand:** Do 22.10.2026, Kapstadt. **Dritte Fassung.** **Entwurf, nicht gesendet.**
+**Stand:** Do 22.10.2026, Kapstadt. **Vierte Fassung.** **Entwurf, nicht gesendet.**
+
+> **Deine angepasste Version liegt mir nicht vor.** Ich habe gesucht, wo ich
+> suchen kann: Gmail-Entwürfe (alle 18, keiner von heute), das Outreach-Doc
+> (letzte Änderung 21.10.), Drive-Dateien von heute, der Alfred-Inbox-Ordner,
+> Notion. Nichts. In diesem Chat ist bei Deiner Nachricht kein Text und kein
+> Bild angekommen. **Was die Suche stattdessen gefunden hat, steht unten — es
+> ist mehr, als ich erwartet hatte.** Für die Analyse brauche ich Deinen Text.
 
 **Register:** zwischen seiner DM und dem Cold Pitch, wie bestellt.
 
@@ -31,11 +38,50 @@ aus Deiner Biografie: Du baust Europa–Afrika–Amerika als soziokulturelle
 Brücke, und er trägt Afrika seit Jahren in Räume in New York und London, die
 nicht dafür gebaut wurden. **Das ist derselbe Beruf in zwei Formaten.**
 
-> **Eine Einschränkung, die dazugehört:** dass der Podcast-Mann und der
-> Filmemacher aus dem TEDx-Talk **derselbe** sind, ist **meine
-> Schlussfolgerung** — aus Kapstadt, dem Radio- und Musikhintergrund und
-> daraus, dass sein Profil „TEDx" als Bühne führt. Es steht nirgends
-> ausgeschrieben. Wenn Denver das bestätigen kann, ist es sauber.
+> **Diese Einschränkung ist erledigt, und zwar aus Deinen eigenen Feldern.**
+> In Fassung 3 stand hier, dass der Podcast-Mann und der Filmemacher aus dem
+> TEDx-Talk derselbe zu sein **meine Schlussfolgerung** sei. Das war unnötig:
+> die Databank-Zeile „Jon Savage" trägt seit **01.07.2026** im Feld *Platform*
+> `jonsavage.com | africapodcastnetwork.com | instagram.com/jonsavage |
+> x.com/jonsavagerocks` — **von Dir eingetragen, vier Monate vor Denver.**
+> Damit ist der Mann, den Du willst, belegt derselbe, den die Recherche
+> gefunden hat. Keine Rückfrage an Denver nötig.
+>
+> **Neu daraus:** `x.com/jonsavagerocks` — ein Kanal, den ich nicht hatte.
+
+---
+
+## Was ich übersehen hatte: dieser Faden ist vier Monate alt
+
+Ich habe den Jon-Savage-Auftrag behandelt, als käme er von Null. Er kommt
+nicht von Null. Vier Spuren, alle von Dir:
+
+| Wann | Was | Wo |
+|---|---|---|
+| **01.07.2026** | Databank-Zeile angelegt. *Researching*, Cape Town, Content *Entrepreneurship · Nomad Life*, vier Kanäle im Feld *Platform*. **Why: „Outreach bereits geplant (Trello: Morgen)."** | Notion |
+| **02.08.2026** | Vorbereitungsdoc `00 YNB Podcast: Jon Savage` angelegt. Bis auf den Arbeitstitel **„The Podcast Genius:"** und einen Referenzlink leer. | Drive |
+| **16.10.2026** | Gmail-Entwurf angelegt. Betreff gesetzt, **Körper leer**, kein Empfänger. | Gmail |
+| **22.10.2026** | Auftrag an mich. | hier |
+
+**Was das für den Entwurf ändert, konkret zwei Dinge:**
+
+1. **Der Betreff ist Deiner, und er heißt anders als meiner.** In Deinem
+   Entwurf vom 16.10. steht wörtlich **`[Via Denver Burgess] Man's Search for
+   Meaning`** — voller Nachname in der Klammer, und der nackte Podcastname
+   ohne Reisebogen. Ich hatte `[Via Denver]` geschrieben und eine wärmere
+   Variante mit „Coffee in the Mother City" danebengelegt. **Beides raus, Dein
+   Betreff steht.** Und damit ist auch die offene Frage „Denvers Nachname"
+   beantwortet: **Burgess.**
+2. **Dein Arbeitstitel für die Folge ist „The Podcast Genius".** Nicht der
+   Filmemacher, nicht der Vier-Herzschmerz-Mann: der Podcast-Mann. Das deckt
+   sich mit der Recherche und mit der Richtung, in die Du mich am 22.10.
+   geschoben hast.
+
+> **Der Referenzlink im Vorbereitungsdoc führt nicht zu Jon.** `youtu.be/DeDVIaD3Zvk`
+> ist „He Just QUIT ‚Diary of a CEO'… so I asked for his SECRETS" vom Kanal
+> *Grant Owen* — ein Gespräch mit dem Trailer-Editor von Steven Bartletts
+> Show. **Meine Lesart:** Material über Podcast-Handwerk, das Du zu Jon
+> gelegt hast, nicht Material über Jon. Falls das anders gemeint war, sag's.
 
 **Was damit aus dem Entwurf verschwindet:** die Vipassana. Du hast recht — in
 seiner Geschichte gibt es keine spirituelle Referenz, und ein Spiegel, der auf
@@ -81,11 +127,10 @@ durch meinen ersetzt.** Jetzt steht sein Satz da.
 
 ## Betreff
 
-**`[Via Denver] Man's Search for Meaning`**
+**`[Via Denver Burgess] Man's Search for Meaning`**
 
-*Wärmer:* `[Via Denver] Coffee in the Mother City: Man's Search for Meaning`
-
-> **Denvers Nachname fehlt** — weder im Postfach noch in der Databank.
+> **Dein Betreff, wörtlich aus Deinem Gmail-Entwurf vom 16.10.** Mein
+> `[Via Denver]` und meine Variante mit „Coffee in the Mother City" sind raus.
 
 ---
 
@@ -153,13 +198,18 @@ durch meinen ersetzt.** Jetzt steht sein Satz da.
 ## Zwei Dinge, die Du entscheiden musst
 
 **1. Ist die DM schon raus?** Im Postfach steht zu Jon Savage und zu Denver
-**nichts**. Falls die DM bei ihm liegt, wird aus der Denver-Zeile:
+Burgess **nichts** — der Entwurf vom 16.10. ist der einzige Vorgang, und er
+hat keinen Empfänger. Falls die DM bei ihm liegt, wird aus der Denver-Zeile:
 
 > I dropped you a message after Denver connected us – putting it here properly,
 > in case it got lost in the scroll.
 
-**2. Die Adresse.** Denver hat Dir seinen Kontakt gegeben; was genau, sehe ich
-nicht. Ich rate keine.
+**2. Die Adresse — die eine Sache, die noch fehlt.** Dein eigener Entwurf vom
+16.10. hat auch keine. Von hier aus sind **alle drei** Seiten, auf denen eine
+stehen könnte, gesperrt: `jonsavage.com`, `africapodcastnetwork.com` und
+`inbroadcasting.com` kommen nicht durch den Proxy, Instagram und X auch nicht.
+**Ich rate keine.** Wenn Du die Netzfreigabe um `africapodcastnetwork.com`
+erweiterst, suche ich dort weiter; sonst kommt sie von Denver.
 
 ---
 
@@ -176,9 +226,11 @@ nicht. Ich rate keine.
 - **Kein Wort zum Namensdoppel.** Der bekanntere Jon Savage ist ein englischer
   Punk-Autor (Sex Pistols). Nicht derselbe Mann.
 
-**Databank:** *Researching*, Cape Town, Approval *Pending*. **Nicht angefasst** —
-der Status bewegt sich, wenn etwas rausgeht. Die Recherche oben gehört in die
-Zeile, sobald Du den Entwurf freigibst.
+**Databank:** *Researching*, Cape Town, Approval *Pending* — **Status und Why
+unangetastet**, der Status bewegt sich erst, wenn etwas rausgeht, und „Why" ist
+Dein Satz. **In *Notes* habe ich die Recherche eingetragen** (Netzwerk, Rollen,
+Bühnen, die drei Vorgänge vom 01.07./02.08./16.10. und dass die Adresse fehlt),
+damit die Zeile nicht leer bleibt, während der Entwurf hier liegt.
 
 *Quellen: [Podnews Extra: Jon Savage, Africa Podcast Network](https://extra.podnews.net/2105583/episodes/15247922-jon-savage-africa-podcast-network) ·
 [LinkedIn/GoPodium](https://www.linkedin.com/in/jonsavage1978/) ·

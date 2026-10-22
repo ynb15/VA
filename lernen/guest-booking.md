@@ -294,3 +294,30 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   *„die Vipassana macht bei ihm gar keinen Sinn, du siehst doch gar keine
   spirituelle Referenz in seiner Story."*
   → betrifft: alle, die Entwürfe für ihn schreiben
+- **Bevor ich recherchiere, lese ich seine eigenen Felder zu dem Menschen.**
+  Ich habe den Jon-Savage-Auftrag behandelt, als käme er von Null, habe
+  Instagram und zwei Websites angelaufen, und am Ende in meinem Entwurf eine
+  Einschränkung notiert: dass der Podcast-Mann und der TEDx-Filmemacher
+  derselbe seien, sei **meine Schlussfolgerung**, nirgends ausgeschrieben.
+  **Es stand ausgeschrieben, bei ihm.** Die Databank-Zeile „Jon Savage" trägt
+  seit **01.07.2026** im Feld *Platform* vier Kanäle, darunter
+  `africapodcastnetwork.com` und `x.com/jonsavagerocks` — von ihm eingetragen,
+  vier Monate vor der Vermittlung. Dazu ein Vorbereitungsdoc in Drive vom
+  **02.08.** mit seinem Arbeitstitel **„The Podcast Genius"**. **Drei Felder
+  lesen hätte eine Websuche und eine falsche Einschränkung gespart.**
+  → betrifft: alle, die für ihn recherchieren
+- **Ein leerer Gmail-Entwurf ist eine Quelle.** Zu Jon lag seit **16.10.** ein
+  Entwurf im Postfach: Körper leer, kein Empfänger, aber **Betreff gesetzt** —
+  `[Via Denver Burgess] Man's Search for Meaning`. Daraus kommen zwei Dinge,
+  die ich sonst geraten hätte: **der Nachname des Vermittlers** (Burgess), und
+  **seine Betreff-Wahl für diesen Fall** — voller Nachname in der Klammer, und
+  der nackte Podcastname **ohne** Reisebogen, weil beide in derselben Stadt
+  sind. Die Betreff-Suche in `in:drafts` gehört damit neben `in:sent`.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **„Teilweise angepasst" heißt nicht, dass der Text irgendwo liegt.** Seine
+  angepasste Fassung war weder in diesem Chat noch in den 18 Gmail-Entwürfen,
+  im Outreach-Doc (letzte Änderung 21.10.), in den Drive-Dateien von heute, im
+  Alfred-Inbox-Ordner oder in Notion. **Erst suchen, dann fragen** — die Suche
+  hat hier mehr gefunden als die Frage gekostet hätte; aber ohne seinen Text
+  gibt es keine Analyse, und das sage ich in einer Zeile statt zu raten.
+  → betrifft: alle Agenten
