@@ -386,3 +386,30 @@ kein Anlass, die Frage noch einmal zu stellen.
 widersprechen ist Sorgfalt. Dreimal ist Dazwischenreden, auch wenn der
 Beleg stimmt. Nach seiner Bestaetigung wird gebaut, nicht nachgefasst.
 → betrifft: alle Agenten
+
+### Defensiv schneiden — und die Prüfung, die dabei einen echten Fehler fand
+Seine Anweisung vom 22.10.: **lieber zu wenig rausschneiden als zu viel**,
+und das Transkript mitliefern. Der Grund ist eine unsymmetrische
+Fehlerrichtung: eine Auslassung, die er nicht wollte, kostet ihn Liste
+lesen, Stelle finden, Rückmeldung, neue Renderrunde. Eine Zeile zu viel
+kostet ihn eine Nummer.
+
+**Für filmische Fassungen hat das eine eigene Spitze.** Kürzen ist hier
+Gestaltung, kein Aufräumen — ein Bogen entsteht durch Weglassen. Die Regel
+verbietet das nicht, sie ändert, wem die Entscheidung gehört: **eine
+begründete Auslassung, die er sieht, ist in Ordnung; eine stille, die er
+findet, nicht.** Also gehört jede in die Übergabe, mit Grund.
+
+**Die Prüfung dazu, und sie hat sofort getroffen:** nach jedem Innenschnitt
+die beiden Nachbarzeilen nebeneinander lesen — Pronomen ohne Bezug, Fragen
+ohne Antwort. Im Tate-Short stand nach meinem Schnitt:
+
+> „…an incredibly sophisticated way to sort of interact with the world."
+> „And there's something in **that freedom** that is beautiful."
+
+**Welche Freiheit?** Der Satz, der sie einführt („he's giving himself
+permission, his id, his primal self, to say all the things"), lag in dem
+Stück, das ich weggeschnitten hatte. Am fertigen Ton hört man das nicht —
+der Schnitt klingt sauber, der Satz hängt trotzdem in der Luft. Stelle
+zurückgeholt, Short neun Sekunden länger, Fehler weg.
+→ betrifft: alle Agenten
