@@ -317,3 +317,30 @@ Kushner — eine Ablage, die er selbst für diesen Zweck angelegt hat.
 **Bevor ich eine seiner Wendungen für einen Hörfehler halte, suche ich
 danach.** Ein Blick in den Drive hätte die Frage sofort beantwortet.
 → betrifft: alle Agenten
+
+### Musik unter einem Short: die Sperre ist kein Tauschgeschäft
+Am 22.10. wurden zwei veröffentlichte Shorts **weltweit gesperrt**, 08:57 und
+09:57, beide „What makes life meaningful?". YouTube wörtlich:
+
+> can't be played because it contains **claimed content that exceeds the
+> length limits set by the copyright holder**
+> Daylight – David Kushner · Virgin Music Group · Audio · **Blocked globally**
+
+Ich selbst hatte ihm eine Stunde vorher geschrieben, so etwas koste „in der
+Regel die Einnahmen, nicht den Short". **Das ist für Shorts falsch.** Bei
+Shorts setzt der Rechteinhaber eine Höchstlänge, die von seinem Titel
+verwendet werden darf. Darüber wird nicht monetarisiert, sondern gesperrt.
+Ein 53-Sekunden-Bett am Stück liegt über jeder solchen Grenze.
+
+Zwei Lehren, und die zweite ist die größere:
+
+1. **Kein Musikbett in eine Fassung, die veröffentlicht werden soll**, ohne
+   seine ausdrückliche Freigabe für genau diesen Titel. Dass die Datei in
+   einem seiner Drive-Ordner liegt, ist keine Freigabe — da liegt auch
+   *Daylight*, und genau das hat die Sperre ausgelöst.
+2. **Eine allgemeine Regel aus dem Gedächtnis ist keine Auskunft.** Ich habe
+   „Content ID klaut die Einnahmen" aus dem Kopf gesagt, in einem Satz, der
+   seine Entscheidung tragen sollte. In seinem Postfach lag zu dem Zeitpunkt
+   seit einer Stunde die Mail, die das Gegenteil sagt. Wo eine Plattformregel
+   eine Lieferung trägt, gehört sie belegt — hier zwei Suchen weit.
+→ betrifft: alle Agenten, die Shorts bauen
