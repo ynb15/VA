@@ -1,39 +1,51 @@
 # Jon Savage — E-Mail, via Denver
 
-**Stand:** Do 22.10.2026, Kapstadt. **Entwurf, nicht gesendet.**
+**Stand:** Do 22.10.2026, Kapstadt. **Zweite Fassung.** **Entwurf, nicht gesendet.**
 
-**Register:** zwischen seiner DM und dem Cold Pitch — so von ihm bestellt:
-*„eine etwas formellere E-Mail als die Nachricht, aber nicht ganz so formell,
-wie wir das an manche andere rausgeschickt haben."*
-
-**Gebaut aus:** seiner eigenen DM an Jon (Screenshot vom 22.10.), dem
-TEDxCapeTown-Transkript, dem Outreach-Doc, und einer Websuche zum Film.
-**Nicht gebaut aus:** seiner Website — `jonsavage.com` und `jonsavage.co.za`
-sind von diesem Container **nicht auflösbar** (`ENOTFOUND`). Deshalb steht in
-diesem Entwurf **kein Satz darüber, was Jon heute macht**; der TED-Talk ist von
-2014, und zwölf Jahre sind zu viel, um sie zu raten.
+**Register:** zwischen seiner DM und dem Cold Pitch — so bestellt: *„eine etwas
+formellere E-Mail als die Nachricht, aber nicht ganz so formell, wie wir das an
+manche andere rausgeschickt haben."*
 
 ---
 
-## Was ich aus der DM übernommen habe — und was nicht
+## Seine drei Korrekturen an Fassung 1
 
-**Übernommen, weil es seins ist:** `Howdy Jon,` · die Denver-Zeile · *„Quick
-intro:"* · *„inspired by Frankl"* · der TEDtalk als Aufhänger · die Aufzählung
-der Gäste · die **AND:**-Zeile für Burning Man (elegant: sie nennt die
-Einladung statt einer Folge, und umgeht damit die Frage, was schon
-veröffentlicht ist) · der Unfall als **ein** Satz · *„Now that we're both in
-the mother city"* · *„crazy enough to think we can change the world"* ·
-`Dreaming Big,`
+**1. Nie „I came off a motorcycle".**
+> *„das hört sich viel zu undramatisch an. Ich hatte ein Motorcycle-Accident."*
 
-**Nicht übernommen:**
-- **Die sieben Bullets.** Er hat am 21.10. gesagt: *„ich mache immer 5 Bullet
-  Points."* Die DM hat sieben — sie ist aber **älter** (geschrieben um den
-  10.10., sie sagt *„3 weeks ago"* und *„landed back in SA on Friday night"*).
-  **Die jüngere Ansage gilt: fünf.**
-- **„3 weeks ago".** Der Unfall war Mitte September, die Heimkehr am 09./10.10.
-  Heute wären das fünf Wochen. **Keine Zahl in den Satz**, dann veraltet er nie.
-- **Das Enddatum seines Kapstadt-Aufenthalts.** Steht nicht drin, solange das
-  MRT aussteht.
+Korrigiert. **Und ich habe denselben Fehler in einem zweiten Entwurf gefunden
+und dort mitgezogen:** `drafts/2026-10-18-mushroom-cowboy.md` (ungesendet)
+sagte *„I came off a motorcycle in Colorado with no gear on"* — jetzt
+*„I had a motorcycle accident in Colorado, with no gear on."*
+
+**2. Die Anrede steht nicht am Anfang.**
+> *„eine E-Mail, die mit Hi Howdy, Hello anfängt, hat ungefähr 90-prozentige
+> schlechtere Erfolgsquote … Du hast doch mein Outreach-Dokument, du hast all
+> meine E-Mails durchgelesen. Warum nimmst du das jetzt plötzlich weg?"*
+
+**Er hat recht, und ich hatte es gewusst.** Beat 1 ist der Cold Open **ohne
+Anrede** — so steht es in allen 87 Pitches im Doc und seit dem 27.08. im
+Handbuch. Ich hatte die Anrede nach vorne gezogen, **weil seine DM das tut.**
+Eine DM ist aber kein Pitch: dort ist man schon im Gespräch, in einer Mail noch
+nicht. **Die Form des neuen Textes bestimmt die Regel, nicht die Form der
+Vorlage.**
+
+**3. Mehr Emotion, mehr Tiefe.**
+> *„irgendwie ist mir das noch ein bisschen zu … da steckt noch ein bisschen
+> mehr Emotion drin. Ein bisschen mehr Tiefe."*
+
+Was ich geändert habe, und warum:
+- **Der Cold Open sitzt jetzt auf der Heartbreak-Chart, nicht auf den zwei
+  Millionen.** Die zwei Millionen sind die bessere Anekdote; **die Chart ist
+  der bessere Mensch.** Ein Mann, der seine Niederlagen plottet, weil die
+  Erfolgskurve zu dünn zum Hinsehen war, und der danach weitermacht — darüber
+  schreibt ihm niemand.
+- **Beat 3 ist jetzt ein Geständnis, keine Parallele.** Das ist der Motor
+  seiner eigenen Essays („er benennt seine eigene Mitschuld, bevor er
+  irgendjemanden angreift"), und er hat in Fassung 1 gefehlt. Jetzt steht da,
+  dass er sehr gut war in einer Sache, an die er nicht mehr geglaubt hat.
+- **Vier Fragen statt drei**, und eine davon fragt nach dem Preis, nicht nach
+  der Methode.
 
 ---
 
@@ -41,57 +53,50 @@ the mother city"* · *„crazy enough to think we can change the world"* ·
 
 **`[Via Denver] Man's Search for Meaning`**
 
-*Wärmer, falls Dir das lieber ist:*
-`[Via Denver] Coffee in the Mother City: Man's Search for Meaning`
+*Wärmer:* `[Via Denver] Coffee in the Mother City: Man's Search for Meaning`
 
-> **Mir fehlt Denvers Nachname.** Er steht weder im Postfach noch in der
-> Databank. Wenn der Betreff ihn tragen soll, musst Du ihn einsetzen.
+> **Denvers Nachname fehlt mir** — weder im Postfach noch in der Databank. Wenn
+> der Betreff ihn tragen soll, setzt Du ihn ein.
 
 ---
 
 ## Die Mail
 
-> Howdy Jon,
+> *Most people took the gatekeepers out of that talk. I took the chart. You'd
+> plotted your own heartbreaks — midgets, cassette, 5FM, the Mash Lab — because
+> the success curve was too thin to look at, and then you stood in front of a
+> room full of strangers and called it a practical guide to changing the world.
+> Four heartbreaks deep, still building. That was never a talk about
+> distribution…*
 >
-> Our mutual friend Denver sent me your contact and told me the two madmen of
-> us had to come together. He wasn't wrong – so here's the longer version.
->
-> Your 2014 TEDx talk has stuck with me ever since I watched it. Not the line
-> everyone quotes – own your distribution, screw the gatekeepers – but the
-> slide before it. You'd plotted a chart of your own heartbreaks, because the
-> success chart was too thin to look at, and then you stood in front of a room
-> and called the whole thing an unsuccessful yet highly practical guide to
-> changing the world.
->
-> The part I keep coming back to is the two million. Three years on a film
-> project, the money finally in the bank, and then the brand that wrote the
-> cheque telling you the six films should be about them. You slept on it, paid
-> it all back the next morning and said you were done with the film industry.
-> Twelve years on, *Stone Cold Jane Austen* sits on Apple TV and Prime – the
-> film you crowdfunded to get around the gatekeepers ended up on the platforms
-> they used to control.
->
-> Quick intro:
-> My name is Yannick and I'm building [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m)
-> (inspired by Frankl) – a podcast about humans who've walked through the fire
+> Howdy Jon, my name is Yannick – host of [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m)
+> (inspired by Frankl), a podcast about humans who've walked through the fire
 > and came out different.
 >
-> I came out of the marketing world too. Built my own copywriting agency,
-> spent years making other people sound brilliant before I dared use my own
-> voice. This show is the first thing I've built that nobody owns a piece of –
-> no network, no label, no brand with final cut. Which is why your talk reads
-> to me less like a TED talk and more like a warning I got in time.
+> Denver sent me your contact and said the two madmen of us had to come
+> together. He was right – and here's the part he couldn't have known.
 >
-> So I'm not after the how-to of going independent. What I'd want to dig into
-> with you is a layer under that:
+> I spent years on the other side of your talk. I built my own copywriting
+> agency and Germany's #1 psychedelic therapy company, and I was very good at
+> making other people sound brilliant long after I'd stopped believing a word
+> of it. It took a Vipassana to break that open. This show is the first thing
+> I've built that nobody owns a piece of – no network, no label, no brand with
+> final cut. Which is why your chart never read like a TED talk to me. It read
+> like a warning I got just in time.
+>
+> So I'm not after the how-to of going independent. What I'd want to sit in
+> with you is the layer underneath:
 >
 > **Whether the heartbreak chart was the honest one all along. What you
-> actually bought with the two million you gave back. And whether changing the
-> world survived all four of those projects – or quietly turned into something
-> smaller that works better.**
+> actually bought with the two million you handed back the next morning – and
+> whether there was ever a night you wished you'd kept it. What it takes to
+> start the fifth thing when four of them have broken your heart. And whether
+> changing the world survived all of it, or quietly turned into something
+> smaller that you love more…**
 >
-> I just got back from a 4-month podcast trip through the US, where I got to
-> sit down with some wyld characters…
+> I know I don't have the biggest reach yet. But I just got back from a
+> 4-month podcast trip through the US, where I got to sit down with some wyld
+> characters…
 >
 >   - actor and director Francis Chouler
 >   - Hollywood actor turned men's therapist David Sutcliffe
@@ -105,11 +110,11 @@ the mother city"* · *„crazy enough to think we can change the world"* ·
 > I committed to depth over quantity. In-person only. Every guest I invite is
 > meaningful to me. **You're one of them.**
 >
-> On the last leg of that trip I came off a motorcycle in Colorado and flew
-> home to the Mother City to rehab it. Now that we're both in town, let me buy
-> you a coffee first – I like to meet people properly before we ever switch a
-> mic on. Seems like we're both just crazy enough to think we can change the
-> world, so who knows what might come out of it…
+> On the last leg of that trip I had a motorcycle accident in Colorado and flew
+> home to the Mother City to start my rehab. Now that we're both in town, let
+> me buy you a coffee first – I like to meet people properly before we ever
+> switch a mic on. Seems like we're both just crazy enough to think we can
+> change the world, so who knows what might come out of it…
 >
 > Dreaming Big,
 
@@ -117,15 +122,13 @@ the mother city"* · *„crazy enough to think we can change the world"* ·
 
 ## Zwei Dinge, die Du entscheiden musst
 
-**1. Ist die DM schon raus?** Im Postfach ist zu Jon Savage und zu Denver
-**nichts** — die Nachricht im Screenshot lief über einen Kanal, den ich nicht
-sehe. Die Mail oben steht für sich allein. **Falls die DM schon bei ihm liegt,
-ist der erste Absatz eine Wiederholung** und gehört ersetzt durch:
+**1. Ist die DM schon raus?** Im Postfach steht zu Jon Savage und zu Denver
+**nichts** — die Nachricht lief über einen Kanal, den ich nicht sehe. Die Mail
+oben steht für sich. **Falls die DM schon bei ihm liegt**, wird aus der
+Denver-Zeile:
 
-> Howdy Jon,
->
-> I dropped you a message a while back after Denver connected us – putting it
-> here properly in case it got lost in the scroll.
+> I dropped you a message after Denver connected us – putting it here properly,
+> in case it got lost in the scroll.
 
 **2. Die Adresse.** Denver hat Dir seinen Kontakt gegeben; was genau, sehe ich
 nicht. Ich habe keine Mailadresse für ihn und rate keine.
@@ -134,25 +137,22 @@ nicht. Ich habe keine Mailadresse für ihn und rate keine.
 
 ## Warum diese fünf Namen
 
-Seine Ansage vom 21.10.: die Liste wird **pro Empfänger** gewählt, nicht aus
-dem Doc kopiert. Jon ist Filmemacher, Musiker, Radiomann, Kapstädter — also
-stehen hier **zwei Filmleute, ein Musiker, der Mentor und ein Ausreißer**, und
-nicht die US-Prominenz aus der DM:
+Pro Empfänger gewählt, nicht aus dem Doc kopiert. Jon ist Filmemacher, Musiker,
+Radiomann, Kapstädter — also **zwei Filmleute, ein Musiker, der Mentor, ein
+Ausreißer**, und nicht die US-Prominenz aus der DM:
 
 - **Francis Chouler** — Schauspieler und Regisseur, Südafrika. Nächste Nähe,
   die es gibt, und mit 12.045 Aufrufen das stärkste lange Video des Kanals.
 - **David Sutcliffe** — der Mann, der aus Hollywood ausgestiegen ist. Das
   Gegenstück zu Jons *„I don't want to be in the film industry anymore."*
 - **Rob Paddock** — Mentor, Südafrika, hat es ohne Struktur gebaut.
-- **Rob Bennett** — 77, Techno-Ikone, Apartheid-Aktivist, Kapstadt. Musik und
-  Stadt in einer Zeile.
+- **Rob Bennett** — 77, Techno-Ikone, Apartheid-Aktivist, Kapstadt.
 - **Curtis Crane** — der Ausreißer, und in seiner eigenen DM an zweiter Stelle.
 
-**Alle fünf sind veröffentlicht.** Deshalb trägt keiner ein `(upcoming)`, und
-Burning Man steht in der **AND:**-Zeile statt in der Liste — genau wie er es
-selbst gelöst hat.
+**Alle fünf sind veröffentlicht**, deshalb kein `(upcoming)`; Burning Man steht
+in der **AND:**-Zeile statt in der Liste — seine eigene Lösung.
 
-*Tausch, falls Du doch die US-Prominenz willst:* Chouler und Bennett raus,
+*Tausch, falls Du die US-Prominenz willst:* Chouler und Bennett raus,
 `quantum physicist & OpenAI insider Prof. Scott Aaronson` und
 `the world's leading DMT and consciousness researcher Prof. Rick Strassman`
 rein. Dann verlierst Du die Nähe und gewinnst den Namen.
@@ -163,19 +163,17 @@ rein. Dann verlierst Du die Nähe und gewinnst den Namen.
 
 - **Nichts über seine Frau.** Sie kommt im TED-Talk zweimal vor (*„my lovely
   wife over there"*, und bei cassette *„I say us because Jane is over here"*).
-  Die Band ist Werk und damit Material; **die Ehe ist es nicht**, und ein
-  Fremder fängt dort nicht an.
-- **Nichts über heute.** Seine Website ist von hier nicht erreichbar, und die
-  Suche findet nach *Picture My Face* (2020) nichts mehr. **Ein Satz über seine
-  aktuellen Projekte wäre geraten** — deshalb fragt die Mail, statt zu
-  behaupten.
+  Die Band ist Werk und damit Material; **die Ehe ist es nicht.**
+- **Nichts über heute.** `jonsavage.com` und `jonsavage.co.za` sind von diesem
+  Container **nicht auflösbar** (`ENOTFOUND`), und die Suche findet nach
+  *Picture My Face* (2020) nichts mehr. Zwölf Jahre seit dem Talk sind zu viel
+  zum Raten — **die Mail fragt, statt zu behaupten.**
 - **Kein Wort zum Namensdoppel.** Der bekanntere Jon Savage ist ein englischer
-  Punk-Autor (Sex Pistols). Nicht derselbe Mann, und in keiner Zeile
-  vermischen.
+  Punk-Autor (Sex Pistols). Nicht derselbe Mann.
 
 **Databank:** Jon Savage steht auf *Researching*, Cape Town, Approval
-*Pending*, mit Deiner Notiz *„Outreach bereits geplant (Trello: Morgen)"*.
-Ich habe die Zeile **nicht** angefasst — Status bewegt sich, wenn etwas rausgeht.
+*Pending*, Notiz *„Outreach bereits geplant (Trello: Morgen)"*. **Nicht
+angefasst** — der Status bewegt sich, wenn etwas rausgeht.
 
 *Quellen zum Film: [Apple TV](https://tv.apple.com/us/movie/stone-cold-jane-austen/umc.cmc.ag46kg3i8jra5tbjn3cbm4aw) ·
 [Prime Video](https://www.primevideo.com/detail/0JDMX4AZB1Z1DHJDWPN8JD8V5B/) ·

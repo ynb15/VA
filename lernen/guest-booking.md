@@ -222,3 +222,37 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   **Dazu: eine Zeitangabe aus einem fremden Text wird nie übernommen** —
   „3 weeks ago" war am 10.10. richtig und ist heute falsch.
   → betrifft: alle
+- **„A motorcycle accident", nie „I came off a motorcycle".** *„das hört sich
+  viel zu undramatisch an."* Belegt in drei seiner eigenen Mails (an Ryan
+  24.09., an Joe Moore 21.09., in der DM an Jon Savage). **Verharmlosen ist
+  genauso eine Abweichung von seiner Stimme wie Übertreiben.** Derselbe Fehler
+  stand in einem zweiten, ungesendeten Entwurf und ist dort mitkorrigiert —
+  **eine als falsch erkannte Formulierung wird über alle liegenden Entwürfe
+  gegrept**, denn ein ungesendeter Entwurf wird irgendwann gesendet.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Die Form des neuen Textes bestimmt die Regeln, nicht die Form der Vorlage.**
+  Ich hatte in eine Mail `Howdy Jon,` als erste Zeile gesetzt, weil **seine
+  eigene DM** so anfängt. Seine Korrektur: *„eine E-Mail, die mit Hi Howdy,
+  Hello anfängt, hat ungefähr 90-prozentige schlechtere Erfolgsquote … Warum
+  nimmst du das jetzt plötzlich weg?"* Beat 1 ist der Cold Open **ohne Anrede**,
+  so machen es alle 87 Pitches im Outreach-Doc. **In einer DM ist man schon im
+  Gespräch, in einer Mail an einen Fremden noch nicht.** Wer aus einer DM eine
+  Mail baut, übernimmt den Inhalt und nicht den Aufbau.
+  **Und: wenn wir bewusst von einer seiner Regeln abweichen, gehört die
+  Abweichung in den Entwurfskopf** — sonst ist es kein Vorschlag, sondern ein
+  stiller Regelbruch.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Woran „zu wenig Tiefe" bei ihm konkret liegt**, dreimal nachvollzogen an
+  einem Entwurf, den er genau so beanstandet hat:
+  1. **Die beste Anekdote ist nicht der beste Mensch.** Mein Cold Open sass auf
+     den zwei Millionen Rand, die Jon Savage zurückzahlte. Stärker ist seine
+     *Heartbreak-Chart* — ein Mann plottet seine Niederlagen, weil die
+     Erfolgskurve zu dünn zum Hinsehen war. **Beat 1 sucht die Stelle, an der
+     der Mensch sichtbar wird, nicht das beeindruckendste Ereignis.**
+  2. **Ohne Geständnis keine Tiefe.** Beat 3 hatte eine Parallele statt etwas,
+     das ihn kostet. Das Geständnis ist der Motor seiner Essays und fehlt in
+     einem Pitch genauso auffällig.
+  3. **Eine der Fragen muss den Preis berühren**, nicht die Methode.
+  **Prüfung vor der Übergabe: steht ein Satz drin, der ihn etwas kostet, und
+  eine Frage, die den Preis des anderen berührt?**
+  → betrifft: alle, die Entwürfe für ihn schreiben

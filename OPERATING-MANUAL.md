@@ -8626,3 +8626,74 @@ die Frage "Regel oder Praxis" überhaupt entscheidbar.
 **Und eine Zahl, die nie wieder abgeschrieben wird:** *"3 weeks ago"* war am
 10.10. richtig und ist heute falsch. **Eine Zeitangabe aus einem fremden Text
 wird nie übernommen, sondern neu gerechnet oder weggelassen.**
+
+───────────────────────────────────────────────────────────────────
+DREI KORREKTUREN AM JON-SAVAGE-ENTWURF (22.10.)
+───────────────────────────────────────────────────────────────────
+
+**1. ES HEISST "A MOTORCYCLE ACCIDENT", NIE "I CAME OFF A MOTORCYCLE".**
+> "das hört sich viel zu undramatisch an. Ich hatte ein Motorcycle-Accident.
+> Bitte merkt ihr das."
+
+Seine eigenen Belege, dreimal: *"I was in a motorcycle accident last week"*
+(an Ryan, 24.09.), *"I had a motorcycle accident here in Colorado Springs"*
+(an Joe Moore, 21.09.), *"I survived a motorcycle accident 3 weeks ago"* (DM
+an Jon Savage). **Ich hatte eine Umschreibung gewählt, die den Vorfall kleiner
+macht, als er war.** Verharmlosen ist genauso eine Abweichung von seiner
+Stimme wie Übertreiben — und bei etwas, das ihm zugestossen ist, die
+unangenehmere.
+
+**Derselbe Fehler stand in einem zweiten Entwurf** und ist dort mitkorrigiert:
+`drafts/2026-10-18-mushroom-cowboy.md` (ungesendet). **Regel: wenn eine
+Formulierung als falsch erkannt wird, wird sie in ALLEN liegenden Entwürfen
+gesucht** — `grep` über `drafts/` kostet nichts, und ein ungesendeter Entwurf
+wird irgendwann gesendet.
+
+**2. DIE ANREDE STEHT NIE IN DER ERSTEN ZEILE.**
+> "eine E-Mail, die mit Hi Howdy, Hello anfängt, hat ungefähr 90-prozentige
+> schlechtere Erfolgsquote. … Du hast doch mein Outreach-Dokument, du hast all
+> meine E-Mails durchgelesen. Warum nimmst du das jetzt plötzlich weg? Ich
+> habe dir doch gesagt, wie ich das möchte."
+
+**Er hat recht, und das Handbuch sagte es seit dem 27.08.:** Beat 1 ist der
+Cold Open, *no greeting*. Alle 87 Pitches im Doc machen es so. **Warum ich es
+trotzdem weggenommen habe: seine eigene DM an Jon beginnt mit `Howdy Jon,`**,
+und ich habe die Form der Vorlage auf den neuen Text übertragen.
+
+**Die Regel, die daraus folgt und die über diesen Fall hinausgeht:**
+**Die Form des neuen Textes bestimmt, welche Regeln gelten — nicht die Form
+der Vorlage, aus der ich zitiere.** In einer DM ist man schon im Gespräch und
+darf grüssen; in einer Mail an einen Fremden fängt man mit ihm an, nicht mit
+sich. Wer aus einer DM eine Mail baut, übernimmt den Inhalt und **nicht** den
+Aufbau.
+
+**Und die unangenehmere Hälfte:** das war kein fehlendes Wissen, sondern ein
+Regelbruch mit Begründung. **Wenn ich von einer seiner Regeln abweiche, schreibe
+ich die Abweichung in den Entwurfskopf** — dann sieht er sie, bevor er sie
+suchen muss, und ich sehe sie selbst.
+
+**3. "EIN BISSCHEN MEHR EMOTION, EIN BISSCHEN MEHR TIEFE."**
+
+Woran es gelegen hat, und das ist verallgemeinerbar:
+
+**a) Ich hatte die beste Anekdote genommen statt den besten Menschen.** Der
+Cold Open sass auf den zwei Millionen Rand, die Jon zurückgezahlt hat — ein
+starker Vorgang. **Die Heartbreak-Chart ist stärker**: ein Mann plottet seine
+Niederlagen, weil die Erfolgskurve zu dünn zum Hinsehen war, und macht
+weiter. Darüber schreibt ihm niemand. **Beat 1 sucht nicht das beeindruckendste
+Ereignis, sondern die Stelle, an der der Mensch sichtbar wird.**
+
+**b) Beat 3 hatte kein Geständnis.** Da stand eine Parallele ("ich komme auch
+aus dem Marketing") statt dem, was ihn etwas kostet. **Das Geständnis ist der
+Motor seiner Essays** — er benennt seine eigene Mitschuld, bevor er
+irgendjemanden angreift — und es fehlt in einem Pitch genauso auffällig.
+Jetzt: *"I was very good at making other people sound brilliant long after I'd
+stopped believing a word of it."*
+
+**c) Keine Frage nach dem Preis.** Drei Fragen fragten nach Methode und
+Bedeutung, keine danach, was es gekostet hat. Dazu jetzt: *"whether there was
+ever a night you wished you'd kept it."*
+
+**Als Prüfung vor der Übergabe:** steht im Entwurf ein Satz, der **ihn** etwas
+kostet, und eine Frage, die den **Preis** des anderen berührt? Wenn nicht, ist
+es ein korrekter Text ohne Tiefe.

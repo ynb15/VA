@@ -27,7 +27,7 @@ researcher and 3x Rogan guest who wrote The Spirit Molecule. So somewhere out
 there is footage of your shirt sitting across from the man who ran the first
 legal psychedelic research in the US in twenty years.
 
-The day after that one I came off a motorcycle in Colorado with no gear on.
+The day after that one I had a motorcycle accident in Colorado, with no gear on.
 The shirt took the slide. I walked away from it, the shirt didn't.
 
 I've been through your shop and can't find it anymore. Any chance there's one
