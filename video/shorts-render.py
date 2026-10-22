@@ -741,7 +741,7 @@ def run(cmd):
     return p
 
 
-def mittlerer_pegel(datei, dauer=None):
+def mittlerer_pegel(datei, dauer=None, ab=0.0):
     """Mittlerer Pegel einer Tonspur in dB, ueber `volumedetect`.
 
     Gebraucht, weil ein fester Wert wie -16 dB nichts taugt: er ist absolut,
@@ -750,6 +750,11 @@ def mittlerer_pegel(datei, dauer=None):
     Unterschied zwischen Mischung mit und ohne Musik.
     """
     cmd = [FFMPEG, "-hide_banner"]
+    if ab:
+        # Vor -i gesetzt, damit nicht erst der ganze Vorlauf dekodiert wird.
+        # Gemessen wird das Stueck, das auch zu hoeren sein wird - sonst
+        # richtet sich der Pegel nach einer Stelle, die gar nicht vorkommt.
+        cmd += ["-ss", str(ab)]
     if dauer:
         cmd += ["-t", str(dauer)]
     cmd += ["-i", datei, "-af", "volumedetect", "-f", "null", os.devnull]
@@ -1100,6 +1105,14 @@ def main():
     ap.add_argument("--musik-db", type=float, default=None,
                     help="fester Pegel des Betts; ohne Angabe wird er aus "
                          "Stimme und Bett gemessen")
+    ap.add_argument("--musik-ab", type=float, default=0.0,
+                    help="Sekunde im Titel, ab der das Bett laeuft. Viele "
+                         "Stuecke fangen duenn an: bei 'In This Shirt' setzen "
+                         "Bass und Pauken erst bei Sekunde 48 ein, davor sind "
+                         "es nur Streicher.")
+    ap.add_argument("--musik-einblenden", type=float, default=1.5,
+                    help="Sekunden, ueber die das Bett aufgeblendet wird. "
+                         "Kurz setzen, wenn es vom ersten Bild an stehen soll.")
     ap.add_argument("--musik-unter", type=float, default=8.0,
                     help="dB, die das Bett unter der Stimme liegt")
     ap.add_argument("--srt-out", default=None,
@@ -1382,18 +1395,26 @@ def main():
             db = a.musik_db
             if db is None:
                 stimme_db = mittlerer_pegel(a.src, dauer=clip_laenge)
-                bett_db = mittlerer_pegel(a.musik, dauer=laenge)
+                bett_db = mittlerer_pegel(a.musik, dauer=laenge,
+                                          ab=a.musik_ab)
                 if stimme_db is not None and bett_db is not None:
                     db = round(stimme_db - bett_db - a.musik_unter, 1)
                     print(f"  Musik: Stimme {stimme_db:.1f} dB, Bett "
                           f"{bett_db:.1f} dB -> {db:+.1f} dB "
-                          f"({a.musik_unter:.0f} dB darunter)")
+                          f"({a.musik_unter:.0f} dB darunter)"
+                          + (f", ab Sekunde {a.musik_ab:.0f} des Titels"
+                             if a.musik_ab else "")
+                          + f", Einblendung {a.musik_einblenden:.2f}s")
                 else:
                     db = -16.0
             stimme = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
             graph.append(f"{stimme}asplit=2[st1][st2]")
-            bett = (f"[{naechste}:a]aloop=loop=-1:size=2000000000,"
-                    f"volume={db}dB,afade=t=in:st=0:d=1.5")
+            vorlauf = (f"atrim=start={a.musik_ab:.2f},asetpts=PTS-STARTPTS,"
+                       if a.musik_ab else "")
+            bett = (f"[{naechste}:a]{vorlauf}"
+                    f"aloop=loop=-1:size=2000000000,"
+                    f"volume={db}dB,"
+                    f"afade=t=in:st=0:d={a.musik_einblenden:.2f}")
             if laenge:
                 bett += f",atrim=0:{laenge:.2f},afade=t=out:st={max(laenge-2.0,0):.2f}:d=2.0"
             graph.append(bett + "[bett]")
