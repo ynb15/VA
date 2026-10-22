@@ -120,8 +120,18 @@ def main():
     a = ap.parse_args()
 
     from faster_whisper import WhisperModel
+    # Den Ton selbst dekodieren statt faster-whisper die Datei zu geben:
+    # es ruft PyAV mit `metadata_errors` auf, das die hier installierte
+    # PyAV-Fassung nicht kennt, und bricht mit TypeError ab. Derselbe
+    # Umweg steht in shorts-render.py; er fehlte hier, womit dieses
+    # Werkzeug ueberhaupt nicht mehr lief. 16 kHz Mono float32 ist genau,
+    # was das Modell sonst selbst herstellen wuerde.
+    roh = subprocess.run([FFMPEG, "-nostdin", "-v", "quiet", "-i", a.ton,
+                          "-f", "f32le", "-ac", "1", "-ar", "16000", "-"],
+                         capture_output=True, check=True).stdout
+    ton = np.frombuffer(roh, dtype=np.float32)
     m = WhisperModel(a.model, device="cpu", compute_type="int8", cpu_threads=4)
-    segs, info = m.transcribe(a.ton, language=a.lang, vad_filter=True,
+    segs, info = m.transcribe(ton, language=a.lang, vad_filter=True,
                               condition_on_previous_text=False)
     segmente = []
     for s in segs:
