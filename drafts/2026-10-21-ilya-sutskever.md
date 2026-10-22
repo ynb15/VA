@@ -1,46 +1,70 @@
 # Ilya Sutskever — Erstkontakt, via Scott Aaronson
 
-**Stand:** Mi 21.10.2026, Kapstadt. **Entwurf, nicht gesendet.**
+**Stand:** Do 22.10.2026, Kapstadt. **Zweite Fassung**, nach seinem Feedback vom
+21.10. **Entwurf, nicht gesendet.**
+
 **Gebaut aus:** dem Outreach-Doc (Pitches Scott Aaronson, Sebastian Thrun,
-Brendan Kane), dem Transkript Deiner Aaronson-Folge, `voice/en-podcast-outreach.md`,
-und einer Websuche zum Ort. **Nicht gebaut aus:** irgendetwas, was Du in
-Gesprächen oder Notizen hast und ich nicht sehe.
+Brendan Kane), dem Transkript seiner Aaronson-Folge, `voice/en-podcast-outreach.md`,
+und einer Websuche zum Ort. **Nicht gebaut aus:** irgendetwas, was er in
+Gesprächen oder Notizen hat und ich nicht sehe.
+
+---
+
+## Was sich gegenüber Fassung 1 geändert hat — seine fünf Korrekturen
+
+1. **Die Signatur endet bei `Dreaming Big,`.** Name und Firma stehen in seiner
+   Gmail-Signatur. *(Das Handbuch sagte bisher „full name plus YNB Ventures LLC
+   if they don't know him" — damit ist diese Regel überholt und korrigiert.)*
+2. **Der Betreff trägt den Reisebogen:** `From South Africa to San Francisco`.
+   Seine Begründung wörtlich: *„Das nutze ich immer, um eine gewisse globale
+   Reichweite darzustellen."*
+3. **Immer genau fünf Bullet Points.** Wörtlich: *„dass ich immer 5 Bullet
+   Points mache. Dahinter steckt neuropsychologische Muster."* Fassung 1 hatte
+   vier.
+4. **Die Gästeliste muss ans Feld des Empfängers grenzen.** Rick Strassman als
+   Professor rein, David Sutcliffe und Marian Goodell rein, **Rob Bennett und
+   Whitney Wheelock raus**, Rob Paddock bleibt.
+5. **Scott wird nicht erklärt.** *„es macht keinen Sinn, dass du Scott Aronson
+   als OpenAI-Safety-Researcher beschreibst, weil Ilya Scott kennt. Das ist
+   irgendwie so ein bisschen dumm."* Er steht jetzt als *our mutual connection*
+   da — dieselbe Form wie *„and of course our mutual friend, my mentor and
+   living legend Rob Paddock"* im Brendan-Kane-Pitch.
 
 ---
 
 ## Die Adresse fehlt, und das ist die eine Entscheidung vor dem Senden
 
-**Ich habe keine belegte Adresse für ihn.** SSI betreibt keine öffentliche
-Kontaktseite, es gibt kein `@ssi.inc`-Muster, das ich belegen kann, und einen
-geratenen Absender schreibe ich Dir nicht hin — das war der Fehler, der bei
-McConaughey vier Mails ins Leere geschickt hat.
+**Keine belegte Adresse.** SSI betreibt keine öffentliche Kontaktseite, es gibt
+kein `@ssi.inc`-Muster, das ich belegen kann, und einen geratenen Absender
+schreibe ich nicht hin — das war der Fehler, der bei McConaughey vier Mails ins
+Leere geschickt hat.
 
-**Der Weg, der bei Dir zweimal funktioniert hat, ist der Vermittler:** Cal →
-Chase Reeves, Matt Dalley → Ken Stern. Scott Aaronson ist erreichbar
-(`bqpqpoly@gmail.com`), Du hast ihm am **19.10. um 14:47** zuletzt geschrieben,
-und er hatte **wöchentliche Meetings mit Ilya** — das ist kein lauwarmer
-Verweis, das ist der direkte Weg.
+**Der Weg, der zweimal funktioniert hat, ist der Vermittler:** Cal → Chase
+Reeves, Matt Dalley → Ken Stern. Scott Aaronson ist erreichbar
+(`bqpqpoly@gmail.com`), letzte Mail an ihn am **19.10. um 14:47**, und er hatte
+**wöchentliche Meetings mit Ilya**.
 
-**Zwei Varianten, meine Empfehlung ist A:**
-
-- **A — kurze Zeile an Scott, Pitch darunter.** Du bittest ihn
-  weiterzuleiten. Er weiß dann, was in seinem Namen rausgeht.
+- **A (Empfehlung) — kurze Zeile an Scott, Pitch darunter.** Er weiß dann, was
+  in seinem Namen rausgeht.
 - **B — der Pitch an Ilya adressiert, in Scotts Postfach, ohne Begleitzeile.**
-  Genau wie bei Ken Stern am 05.09. Hat funktioniert, ist aber die Variante,
-  bei der der Vermittler erst beim Lesen merkt, was er gerade tut.
+  Wie bei Ken Stern am 05.09. Hat funktioniert; der Vermittler merkt aber erst
+  beim Lesen, was er gerade tut.
 
 ---
 
 ## Der Ort — eigenständig recherchiert
 
 **Palo Alto, Kalifornien.** Safe Superintelligence Inc. hat dort seinen
-Hauptsitz, zweites Büro in Tel Aviv. Ilya ist CEO; Daniel Levy ist President,
-Daniel Gross ist 2025 zu Meta gegangen.
+Hauptsitz, zweites Büro in Tel Aviv. Ilya ist CEO; Daniel Levy ist President.
 
-**Das ist der Firmensitz, nicht seine Wohnadresse** — nach einer privaten
-Adresse habe ich nicht gesucht und werde ich nicht suchen. Für
-„in-person only" reicht der Firmensitz: der Pitch nennt Palo Alto, nicht
-„Kalifornien".
+**Firmensitz, nicht Wohnadresse** — nach einer privaten Adresse habe ich nicht
+gesucht und werde ich nicht suchen.
+
+**Im Betreff steht San Francisco, im Text Palo Alto.** Der Betreff zeigt den
+Bogen, und San Francisco ist die Stadt, die jeder sofort einordnet; der Text
+nennt den Ort, an dem er wirklich sitzt — 50 km südlich. Wenn Du es einheitlich
+willst, ist San Francisco im Text die Variante, die ungenauer ist, aber runder
+klingt.
 
 *Quellen: [Safe Superintelligence Inc. (Wikipedia)](https://en.wikipedia.org/wiki/Safe_Superintelligence_Inc.) ·
 [CB Insights](https://www.cbinsights.com/company/safe-superintelligence) ·
@@ -50,15 +74,7 @@ Adresse habe ich nicht gesucht und werde ich nicht suchen. Für
 
 ## Betreff
 
-**`[Via Scott Aaronson] Man's Search for Meaning`**
-
-Die Empfehlung in eckigen Klammern wie von Dir beschrieben, und dahinter der
-nackte Podcastname — das ist das Betreffmuster mit Deiner besten Antwortquote
-(10 von 17 = 59 % über alle 111 Fäden, gemessen 18.10.; die Zahl ist mit der
-Temperatur des Kontakts konfundiert, also kein Beweis, aber auch kein Zufall).
-
-*Alternative, falls Du den Reisebogen willst:*
-`[Via Scott Aaronson] From Cape Town to Palo Alto: Man's Search for Meaning`
+**`[Via Scott Aaronson] From South Africa to San Francisco: Man's Search for Meaning`**
 
 ---
 
@@ -74,7 +90,6 @@ Temperatur des Kontakts konfundiert, also kein Beweis, aber auch kein Zufall).
 > completely fine and I won't bring it up again.
 >
 > Dreaming Big,
-> YNB
 
 ---
 
@@ -112,10 +127,11 @@ Temperatur des Kontakts konfundiert, also kein Beweis, aber auch kein Zufall).
 > I know I don't have the biggest reach yet. But I've already had some
 > extraordinary people on the show, such as…
 >
->   - quantum physicist, UT professor and former OpenAI safety researcher Scott Aaronson (upcoming)
+>   - our mutual connection Scott Aaronson (upcoming)
+>   - DMT researcher, UNM professor and author of *The Spirit Molecule* Rick Strassman (upcoming)
 >   - my mentor, former IronMan athlete and $100M EdTech-founder Rob Paddock
->   - ex-Federal Reserve banker turned Indian Tantra teacher Whitney Wheelock
->   - my 77 y/o psychedelic therapist, apartheid activist and techno icon Rob Bennett
+>   - Burning Man CEO Marian Goodell (upcoming)
+>   - Hollywood actor turned men's therapist David Sutcliffe
 >
 > …so you'd be in good company.
 >
@@ -127,50 +143,50 @@ Temperatur des Kontakts konfundiert, also kein Beweis, aber auch kein Zufall).
 > stateside – I'll come to Palo Alto, whenever it'd suit you best.
 >
 > Dreaming Big,
-> Yannick N. Bernard
-> YNB Ventures LLC
-> yannickbernard.com
 
 ---
 
-## Was ich bewusst entschieden habe — und was Deine Entscheidung ist
+## Was Du noch entscheiden müsstest
 
-**Entschieden, mit Begründung:**
+1. **Die Adresse / A oder B.** Ohne Adresse geht nichts raus.
+2. **Drei von fünf Namen tragen „(upcoming)".** Das ist ehrlich, sieht aber
+   dünn aus. Wenn Du mehr Veröffentlichtes willst: **Eben Britton**
+   („Ex-NFL star turned men's work teacher", Folge läuft, 806 Aufrufe) statt
+   Strassman — dann wären drei von fünf draußen. Strassmans Marke liegt auf
+   **Fr 13.11.**, Scotts auf **So 25.10.**, Goodell auf **Fr 04.12.**: nach dem
+   25.10. fällt Scotts „(upcoming)" weg, nach dem 13.11. das von Strassman.
+3. **Der Unfall: rein oder raus?** Er steht **nicht** drin — ein Erstkontakt,
+   der mit einer Einschränkung anfängt, verschenkt den Vorteil, den das Zitat
+   gerade aufgebaut hat. Wenn Du ihn willst, kommt er in Beat 7 als **ein** Satz
+   ohne zweiten Satz Rechtfertigung.
+4. **Senden jetzt oder nach dem MRT?** Der Pitch sagt kein Datum und keinen
+   Monat zu, nur „2027" und „Palo Alto" — die Jahreszahl ist Deine aus der
+   Ian-Mail vom 13.10., nicht meine.
 
-1. **Die Empfehlung steht vor dem Cold Open**, nicht darin. Das ist die
-   Brendan-Kane-Form (*„Rob Paddock told me I had to talk to you – so I read all
-   three of your books back to back…"*), nicht die Chase-Reeves-Form, wo die
-   Landung zuerst kommt. Grund: Deine Landung ist hier kein Argument — Du
-   landest nirgends.
-2. **Das Zitat ist wörtlich aus Deiner eigenen Folge** (Aaronson-Transkript,
-   **00:45:15 bis 00:45:27**). Nichts daran ist von mir formuliert. Es ist
-   gleichzeitig der Empfehlungsbeleg *und* die Anerkennung — Du zeigst ihm eine
-   Frage, die er selbst gestellt hat, in Deinem Podcast, und niemand hat sie
-   beantwortet.
+---
+
+## Was ich bewusst entschieden habe
+
+1. **Die Empfehlung steht vor dem Cold Open**, nicht darin. Brendan-Kane-Form
+   (*„Rob Paddock told me I had to talk to you – so I read all three of your
+   books back to back…"*), nicht Chase-Reeves-Form, wo die Landung zuerst kommt.
+   Grund: hier landet er nirgends.
+2. **Das Zitat ist wörtlich aus seiner eigenen Folge** (Aaronson-Transkript,
+   **00:45:15–00:45:27**). Nichts daran ist von mir formuliert. Es ist
+   gleichzeitig der Empfehlungsbeleg *und* die Anerkennung — eine Frage, die
+   Ilya selbst gestellt hat, in Yannicks Podcast, von niemandem beantwortet.
 3. **Kein Wort über den OpenAI-Vorstand, kein Wort über November 2023.**
-   Beat 1 ist Anerkennung, nie Diagnose — und eine Andeutung in diese Richtung
-   wäre bei ihm die eine Zeile, die den ganzen Brief kippt.
+   Beat 1 ist Anerkennung, nie Diagnose.
 4. **„Why a straight shot had to mean leaving"** nimmt sein eigenes Wort aus
-   SSIs Gründungsmitteilung auf. Erst hatte ich dort „rather than fix it from
-   inside" — das war ein Urteil und ist raus.
-5. **Scott steht als erster Name auf der Gästeliste**, mit „(upcoming)". Seine
-   Folge ist noch nicht veröffentlicht; die Marke liegt auf **So 25.10.** Wenn
-   Du nach dem 25.10. sendest, gehört „(upcoming)" weg.
-6. **Beat 6 wörtlich, Beat 7 in der Ian-Gardner-Form.** *„Let's aim to make it
-   happen once I'm back stateside"* ist Dein Satz vom 13.10., nicht meiner.
-
-**Deine Entscheidung, je einmal gefragt und dann Ruhe:**
-
-- **Der Unfall: rein oder raus?** Bei Ian, Scott, Luis und Walker hast Du ihn
-  genannt. Hier steht er **nicht** drin — ein Erstkontakt, der mit einer
-  Einschränkung anfängt, verschenkt den Vorteil, den das Zitat gerade
-  aufgebaut hat. Wenn Du ihn willst, kommt er in Beat 7 als ein Satz ohne
-  zweiten Satz Rechtfertigung.
-- **A oder B** (Begleitzeile an Scott, oder nicht).
-- **Senden jetzt oder nach dem MRT?** Der Pitch sagt kein Datum und keinen
-  Monat zu, nur „2027" und „Palo Alto". Damit verletzt er die Regel nicht, dass
-  nichts Orts- oder Datumsgebundenes rausgeht, solange das MRT aussteht —
-  **aber „2027" ist eine Jahreszahl, und die kommt von Dir, nicht von mir.**
-
-**Was ich nicht habe:** seine Adresse. Ohne die geht nichts raus, und raten tue
-ich nicht.
+   SSIs Gründungsmitteilung auf. In Fassung 1 stand dort „rather than fix it
+   from inside" — das war ein Urteil und ist raus.
+5. **Beat 6 wörtlich, Beat 7 in der Ian-Gardner-Form** (*„Let's aim to make it
+   happen once I'm back stateside"*, sein Satz vom 13.10.).
+6. **Eine Zahl, die seiner Ansage widerspricht, und ich lasse sie trotzdem
+   stehen:** über alle 111 Fäden liegt das Betreffmuster „From ⟨Ort⟩ to ⟨Ort⟩"
+   bei 6 von 37 Antworten (16 %), der nackte Podcastname bei 10 von 17 (59 %).
+   **Das widerlegt ihn nicht** — der Reisebogen ging überwiegend an die kalte
+   A-Liste (McConaughey, Pollan, Huberman, Brené Brown), der nackte Name an
+   Leute aus dem zweiten Grad. Die Tabelle misst die Temperatur des Kontakts,
+   nicht die Qualität des Betreffs. Steht hier, damit es nachprüfbar bleibt,
+   nicht als Einwand.

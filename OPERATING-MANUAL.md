@@ -8428,3 +8428,69 @@ als "keine Zeile", obwohl eine existiert — sie stand auf *Not Started*, nach
 **sechs** gesendeten Mails. Dasselbe bei yung pueblo nach zwei.
 **Die 153 `Not Started` sind kein sicherer Hafen. Ein Status-Abgleich schließt
 sie mit ein.**
+
+═══════════════════════════════════════════════════════════════════
+VIER KORREKTUREN AM COLD PITCH, VON IHM AM 21.10.2026
+───────────────────────────────────────────────────────────────────
+
+Nach der ersten Fassung des Ilya-Sutskever-Pitches. Alle vier sind Regeln,
+keine Einzelfälle, und eine davon streicht eine Regel, die hier seit dem
+27.08. stand.
+
+**1. DIE SIGNATUR ENDET BEI `Dreaming Big,`.**
+> "meine Unterschrift Dreaming Big, die sollte eigentlich da enden und mein
+> Name und die das Business das habe ich ja in meiner Signatur in Gmail."
+
+**Damit ist die alte Regel überholt** — hier stand: *"Dreaming Big," — full
+name plus YNB Ventures LLC if they don't know him, just "YNB" if they do.*
+Richtig ist: **`Dreaming Big,` und Schluss.** Gmail hängt den Block selbst an.
+Wer Name und Firma in den Entwurf schreibt, erzeugt sie doppelt.
+**Das "YNB" als kurze Unterschrift in Antworten bleibt** (Media Pouch, Nick,
+Soul) — das ist eine andere Lage als ein Erstkontakt.
+
+**2. DER BETREFF TRÄGT DEN REISEBOGEN, UND ZWAR ABSICHTLICH.**
+> "der Betreff siehst du ja ist in der Regel from South Africa to San
+> Francisco. In diesem Fall. Das nutze ich immer, um eine gewisse globale
+> Reichweite darzustellen."
+
+Meine Betreffauswertung vom 18.10. hatte dieses Muster mit **6 von 37
+(16 %)** als das schwächste gemessen und den nackten Podcastnamen mit **10 von
+17 (59 %)** als das stärkste. **Die Zahl widerlegt ihn nicht**, und das stand
+in `podcast/outreach-auswertung.md` von Anfang an dabei: der Reisebogen ging
+überwiegend an die kalte A-Liste, der nackte Name an Leute aus dem zweiten
+Grad. **Die Tabelle misst die Temperatur des Kontakts, nicht den Betreff.**
+
+**Regel: der Betreff ist `[Via <Name>] From <Ort> to <Ort>: Man's Search for
+Meaning`**, wenn es einen Vermittler gibt, und ohne die Klammer, wenn nicht.
+Die Quotentabelle kommt daneben, nie dagegen.
+
+**3. IMMER GENAU FÜNF BULLET POINTS.**
+> "wichtig ist auch, dass du verstehst, dass ich immer 5 Bullet Points mache.
+> Dahinter steckt neuropsychologische Muster."
+
+**Nicht vier, nicht sechs. Fünf.** Das ist keine Geschmacksfrage und wird nicht
+gekürzt, weil die Liste lang wirkt.
+
+**4. DIE GÄSTELISTE GRENZT ANS FELD DES EMPFÄNGERS — UND ERKLÄRT NIEMANDEN,
+DEN DER EMPFÄNGER KENNT.**
+> "es macht halt Sinn, dass wir die Gäste, wenn wir Gäste aufzählen, dass wir
+> welche nennen, die irgendwie mit dem Feld des Gastes davor kommen … es macht
+> keinen Sinn, dass du Scott Aronson als OpenAI-Safety-Researcher beschreibst,
+> weil Ilya Scott kennt. Das ist irgendwie so ein bisschen dumm."
+
+Zwei Sachen in einem Satz:
+
+**a) Die fünf Namen werden pro Empfänger ausgewählt**, nicht aus dem Doc
+kopiert. Für Ilya: Rick Strassman **als Professor**, David Sutcliffe, Marian
+Goodell **als Burning-Man-CEO**, Rob Paddock bleibt — **Rob Bennett und
+Whitney Wheelock raus**, obwohl sie in fast jedem Pitch im Doc stehen. Die
+Liste im Doc ist eine Vorlage, kein Block.
+
+**b) Ein Name, den der Empfänger persönlich kennt, bekommt keinen
+erklärenden Zusatz, sondern einen über die Beziehung.** Also nicht "former
+OpenAI safety researcher Scott Aaronson", sondern **"our mutual connection
+Scott Aaronson"**. Die Form hat er selbst schon benutzt, im Brendan-Kane-Pitch:
+*"and of course our mutual friend, my mentor and living legend Rob Paddock"*.
+**Das präzisiert die Regel "EVERY NAME CARRIES ITS TWIST"**, die seit dem
+27.08. hier steht: der Twist erklärt den Menschen für Fremde — und die
+Beziehung für Bekannte.
