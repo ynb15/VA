@@ -449,3 +449,17 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   anderen Lauf fehlt. **Vor einem Neustart eines teuren Abrufs die Prüfung
   prüfen, nicht den Abruf.**
   → betrifft: alle Content-Agenten, head-of-content
+
+### Nachtrag 22.10. — „wiederaufnehmbar" heißt: auch innerhalb der längsten Stufe
+
+- **Ein Containerneustart hat eine laufende Transkription von 77 Minuten Ton
+  mitgenommen.** Der Lauf war als wiederaufnehmbar gebaut und erkannte am
+  Dateistand, welche *Stufe* fertig ist — der Tonabruf (46 Minuten, 68 MB FLAC)
+  hat überlebt. **Aber die Transkription selbst war eine einzige
+  Alles-oder-nichts-Stufe**, und damit waren rund 45 Minuten Arbeit weg.
+  **Die Regel: wiederaufnehmbar zwischen den Stufen reicht nicht. Die längste
+  Stufe muss es in sich sein.** Jetzt läuft die Transkription in Fenstern von
+  300 s und speichert nach jedem; ein Neustart kostet höchstens fünf Minuten.
+  **Faustregel: kein Arbeitsschritt ohne Zwischenstand, der länger dauert als
+  das Zeitfenster, in dem ein Container eingezogen werden kann.**
+  → betrifft: alle Content-Agenten

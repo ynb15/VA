@@ -45,6 +45,63 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 10 — 22.10.2026, 16:10 Kapstadt · zwei Shorts sind gesperrt
+
+- **DIE KOMMERZIELLE MUSIK HAT ZWEI SEINER SHORTS WELTWEIT GESPERRT. Kein
+  Risiko mehr, ein Zustand.** YouTube, heute 08:57 und 09:57, zu
+  *„What makes life meaningful?"* mit **Sutcliffe** und mit **Aaronson**:
+  > Content used: **Daylight — David Kushner** · Content owners: **Virgin
+  > Music Group** · Type: Audio · **Impact on video: Blocked globally**
+  Das ist **genau der Track**, den ich gestern in Isabelles Preset-Ordner
+  gefunden habe. **Und meine Einordnung von gestern war zu weich:** ich schrieb,
+  das sei *„meist keine Verwarnung, sondern ein Tauschgeschäft"* — Einnahmen an
+  den Rechteinhaber, einzelne Länder gesperrt. **Tatsächlich: weltweit
+  gesperrt, das Stück ist unabspielbar.** Virgin Music Group erlaubt eine
+  Länge, die diese Shorts überschreiten.
+  **Für jeden Agenten ab sofort:** *Daylight* von David Kushner kommt unter
+  kein Stück. Und **keine Musik ohne ausdrückliche Freigabe von ihm für genau
+  diesen Titel** — „liegt in einem seiner Ordner" ist keine Freigabe. Der
+  Weg zurück ist neu hochladen ohne die Spur; die YouTube-Trimmfunktion
+  verändert das Stück.
+  → betrifft: alle
+- **Dieselbe Stelle wurde heute zweimal geschnitten, von zwei Agenten,
+  unabhängig und auf 0,4 Sekunden genau gleich.** Shorts I: Einstieg
+  Masterzeit 5776,50, raus 5810,20–5824,35, Ausstieg 5831,00. Shorts II,
+  Fassung C: 5801,88–5810,22 und 5823,98–5830,95. **Derselbe Schnitt, dieselbe
+  Auslassung, dieselben Wörter** — beide ausgelöst durch denselben Satz von
+  ihm, in zwei verschiedenen Gesprächen.
+  **Das ist eine Lücke in meinem Kanal, nicht ihr Fehler:** `LERNEN.md` fängt
+  **Befunde** ab, **laufende Aufträge fängt es nicht ab.** Zwischen 06:40 und
+  15:54 weiß niemand, woran der andere gerade sitzt. **Gegenmaßnahme, billig:
+  vor dem Schneiden einmal `git log --all --since` über die fremden Branches
+  und in die Kandidatenlisten sehen**, nicht nur in `LERNEN.md`.
+  → betrifft: alle
+- **Zwei Agenten geben derselben Folge verschiedenes Tempo: 1,15 gegen 1,0999.
+  Das sind 4,6 %.** 1,15 ist der Vorgabewert des Renderers, 1,0999 ist
+  gemessen — der Faktor, mit dem seine veröffentlichte Folge gegen den Master
+  läuft, deckungsgleich mit seiner Ansage an die Cutterin vom 14.09.
+  (*„oder zumindest auf 1,1"*). **Seine Abnahme des 1,15-Shorts steht**, also
+  ist keiner der Werte falsch. **Aber zwei Werte nebeneinander auf einem Kanal
+  sind kein Ergebnis, sondern ein offener Punkt** — er entscheidet.
+  → betrifft: alle Content-Agenten
+- **Für die Aaronson-Folge existiert kein echtes 4K.** Nachgemessen: Master
+  1920×1080 bei 21,2 Mbit/s · alle drei Rohkameras 1080p · der „4K"-Clip
+  3840×2160 bei 31,9 Mbit/s, also **8,0 Mbit/s je 1080p-Äquivalent**, und nur
+  **4,7 %** der horizontalen Energie liegen oberhalb der 1080p-Grenze.
+  **Der Master ist die beste Quelle dieser Folge, nicht die schlechteste** —
+  gleiche echte Auflösung, **2,7-fache Datenrate je Bildpunkt**.
+  Der Agent korrigiert damit seine eigene Behauptung von gestern und nennt den
+  Denkfehler: **aus einer Pixelzahl auf Detail geschlossen.**
+  → betrifft: content-*, thumbnails
+- **`abnahme.py` stürzt ab, statt den Grund zu nennen**, wenn `ortscheck.py`
+  nicht im selben Ordner liegt (`IndexError` auf leerer Ausgabe, Zeile 97).
+  Der Absturz kommt **nach** den bestandenen Prüfungen — **er sieht aus wie ein
+  durchgefallener Short.** Seit heute ist das Werkzeug Pflicht, trifft also
+  jeden. Gemeldet an Shorts I, dem die Datei gehört.
+  → betrifft: content-*
+
+---
+
 ## Ausgabe 9 — 22.10.2026, 15:45 Kapstadt · eine Regel von ihm, und ein Logo zu klein
 
 - **SEINE REGEL, UND SIE KORRIGIERT EINE ANWEISUNG VON MIR: eine Folge, ein

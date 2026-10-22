@@ -3,6 +3,61 @@
 Schlüssel `content-gastauftritte`, Branch `claude/content-gastauftritte`.
 Neuester Eintrag oben.
 
+## 2026-10-22
+
+- **Zwei kommerzielle Aufnahmen hintereinander gesperrt — der Ausweg ist die
+  Coverversion, nicht der leisere Pegel.** Nach *Daylight* wurde am 22.10.
+  auch *The Irrepressibles – In This Shirt* gesperrt, bei gleichem Pegel und
+  gleicher Laenge. Isabelle hat daraufhin ein **Piano-Cover** von *Tom Odell –
+  Another Love* in den Ordner gelegt. **Der Unterschied ist grundsaetzlich:**
+  Content ID gleicht gegen die **Aufnahme** ab, und ein Cover ist eine andere
+  Aufnahme — der Abgleich gegen das Original greift nicht. Ein Anspruch auf
+  die **Komposition** bleibt moeglich, ist aber ueblicherweise auf
+  Monetarisierung gerichtet, nicht auf Sperrung.
+  **Das ist eine Erwartung, keine Messung** — ob es durchgeht, zeigt erst der
+  Upload. Aber es ist der erste Vorschlag in dieser Reihe, der an der Ursache
+  ansetzt statt an Pegel oder Laenge. **Fuer die Suche nach Musik heisst das:
+  Coverversionen und Neueinspielungen zuerst, Originalaufnahmen zuletzt.**
+  → betrifft: alle Content-Agenten
+
+- **Eine Bildblende an einer Naht INNERHALB derselben Einstellung erzeugt
+  eine Doppelbelichtung.** Er fand sie: *„so ein kleiner Glitch ... einfach
+  richtig schlecht geschnitten."* An den Einzelbildern nachgesehen — bei
+  Sekunde **2,43 und 2,47** liegen zwei Gesichter uebereinander. Ursache:
+  `xfade` von 0,13 s an einer Stelle, an der davor und danach **dieselbe
+  Kamera** auf dem Sprecher steht; die Blende mischt zwei Momente desselben
+  Bildes. Sie war von mir die falsche Antwort auf seinen frueheren Einwand,
+  der Schnitt sei „amateurhaft" — dessen Ursache war ein **Knack im Ton**
+  von einer anderen Naht, und der ist separat behoben.
+  **Regel: Bildblende nur, wenn die Naht zwei Kameras verbindet. Innerhalb
+  einer Einstellung immer hart schneiden**, und den Knack ueber kurze
+  Tonblenden (20 ms) an beiden Seiten erledigen — gemessen faellt der Pegel
+  an der Naht dann auf −85 dB, und der groesste Signalsprung in der Gegend
+  ist das gesprochene Wort selbst.
+  → betrifft: alle Content-Agenten
+
+- **Korrektur an meiner eigenen Erklaerung von heute Vormittag: die Laenge
+  ist sehr wohl der Hebel — nur war die Grenze enger, als wir dachten.**
+  Er hat den Aaronson-Short mit *David Kushner – Daylight* hochgeladen,
+  Inhalt **59,43 s**, Bett 3 dB unter der Stimme und per Sidechain
+  weggedrueckt. YouTube: **Video blocked globally**, Anspruch auf *Daylight*,
+  Typ *Copyright / Audio*. Der Wortlaut der Meldung ist entscheidend:
+  *„contains claimed content that **exceeds the length limits set by the
+  copyright holder**"*. Ich hatte ihm zuerst geschrieben, die
+  60-Sekunden-Annahme trage nicht und Content ID greife laengenunabhaengig.
+  **Das war zu absolut.** Richtig ist: die **Erkennung** haengt am
+  Fingerabdruck und ist laengen- und pegelunabhaengig, die **Folge** aber an
+  einer Laengengrenze, die der Rechteinhaber je Titel selbst setzt. Seine
+  Intuition war richtig, meine Erklaerung zu grob.
+  Nebenbefund aus der Meldung: **kein Copyright-Strike**, *„No impact to
+  channel"* — der Kanal nimmt keinen Schaden, das Video ist nur gesperrt.
+  **Was daraus folgt:** wie viel von einem Titel durchgeht, steht in keiner
+  Datei und laesst sich hier nicht messen — es haengt am Rechteinhaber. Der
+  einzige verlaessliche Weg ist, es vor dem Veroeffentlichen zu sehen; die
+  Ansprueche zeigt YouTube schon im Upload-Vorgang. Darum gehoert zu jedem
+  Short mit Bett **eine Fassung ohne Musik** dazu.
+  → betrifft: alle Content-Agenten
+
 ## 2026-10-21
 
 - **YouTube weist diesen Container ab — `yt-transkript.py` läuft nicht mehr.**

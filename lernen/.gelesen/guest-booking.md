@@ -129,3 +129,64 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   vermutlich eher nicht"* veröffentlichen — an diese Zeile gehört keine
   Veröffentlichungsmarke.
   → betrifft: alfred, youtube-manager, head-of-content
+
+## 2026-10-22
+
+- **Seine Signatur endet bei `Dreaming Big,` — Name und Firma stehen in Gmail.**
+  Wörtlich am 21.10.: *„meine Unterschrift Dreaming Big, die sollte eigentlich
+  da enden und mein Name und die das Business das habe ich ja in meiner Signatur
+  in Gmail."* **Damit ist die Handbuchregel von 27.08. überholt** („full name
+  plus YNB Ventures LLC if they don't know him"). Wer den Block in einen Entwurf
+  schreibt, erzeugt ihn doppelt. Das kurze `YNB` in Antworten an Lieferanten
+  bleibt davon unberührt.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Fünf Bullet Points, immer.** *„dass ich immer 5 Bullet Points mache.
+  Dahinter steckt neuropsychologische Muster."* Meine Fassung hatte vier. Nicht
+  kürzen, weil eine Liste lang wirkt.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Eine Aufzählung wird pro Empfänger ausgewählt, und ein Bekannter wird nicht
+  erklärt.** Für Ilya Sutskever: Scott Aaronson nicht als „former OpenAI safety
+  researcher" (*„weil Ilya Scott kennt. Das ist irgendwie so ein bisschen
+  dumm."*), sondern als **„our mutual connection"** — dieselbe Form wie *„our
+  mutual friend, my mentor and living legend Rob Paddock"* in seinem eigenen
+  Brendan-Kane-Pitch. **Der Twist erklärt den Menschen für Fremde und die
+  Beziehung für Bekannte.** Dazu: Namen aus dem Feld des Empfängers wählen
+  (Strassman als Professor rein, Rob Bennett und Whitney Wheelock raus),
+  statt die Liste aus dem Outreach-Doc zu kopieren.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Der Reisebogen im Betreff ist Absicht, nicht Gewohnheit:** *„from South
+  Africa to San Francisco … Das nutze ich immer, um eine gewisse globale
+  Reichweite darzustellen."* Meine Auswertung hatte dieses Muster als das
+  schwächste gemessen (6/37 = 16 % gegen 10/17 = 59 % beim nackten
+  Podcastnamen). **Die Zahl widerlegt ihn nicht** — sie ist mit der Temperatur
+  des Kontakts konfundiert, und genau so stand es auch in der Auswertung.
+  **Eine Quote, die nicht nach Kontakttemperatur geschichtet ist, taugt nicht
+  als Einwand gegen eine Absicht.**
+  → betrifft: alfred, head-of-content
+- **Ein Entwurf im Repo ist nicht seine Stimme — auch wenn er nach ihm klingt.**
+  Ich habe Rick Strassman als *„DMT researcher, UNM professor and author of The
+  Spirit Molecule"* in einen Pitch geschrieben. Seine Korrektur: *„du hast die
+  Beschreibung geändert. So habe ich es Rick Strassman nie vorgestellt"* — er
+  sagt **„the world's leading DMT and consciousness researcher, Professor Rick
+  Strassman"**. Meine Fassung kam aus `drafts/2026-10-18-mushroom-cowboy.md`,
+  einem **Agenten-Entwurf, den er nie gesendet hat**. Gegenprobe danach: im
+  Outreach-Doc hat Strassman **keine** Roster-Zeile, und „consciousness
+  researcher" kommt im ganzen Doc nicht vor.
+  **Belegte Formulierungen stehen in gesendeten Mails und im Outreach-Doc.
+  Repo-Entwürfe sind Herleitungen von uns und dürfen nie als seine Sprache
+  weiterverwendet werden** — das ist die Regel vom 09.09. eine Ebene tiefer.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **`(upcoming)` am Gastnamen ist eine Aussage über den Sendezeitpunkt, keine
+  Eigenschaft des Gastes.** *„nimm dieses Upcoming aus … die Nachricht wird
+  rausgehen, wenn alle Podcasts veröffentlicht sind."* Wer die Marke aus dem
+  Outreach-Doc mitkopiert, datiert die Mail unbemerkt. Vor jedem Pitch den
+  geplanten Versand gegen die Veröffentlichungsmarken im Geschäftskalender
+  halten (Aaronson So 25.10., Strassman Fr 13.11., Goodell Fr 04.12.).
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Bei einem Auftrag ohne Uhr wird für den Zustand gebaut, in dem er rausgeht
+  — nicht für heute.** *„das jetzt nur als Testdurchlauf … die Nachricht wird
+  dieses Jahr nicht mehr rausgehen."* Dadurch fielen drei Fragen weg, die ich
+  ihm vorgelegt hatte (Unfall erwähnen, MRT abwarten, Jahreszahl 2027). **Einmal
+  nach dem Zeitpunkt fragen, bevor Einschränkungen in einen Text kommen, die nur
+  heute gelten.**
+  → betrifft: alle

@@ -256,3 +256,33 @@ Gegenmittel im eigenen Baukommando: **die Werte nennen, auf die es ankommt,
 auch wenn sie gerade die Voreinstellung sind.** `--look warm` steht jetzt
 ausdrücklich da.
 → betrifft: alle Agenten, die Werkzeuge über Zweige hinweg teilen
+
+### Material doppelt zu nehmen ist nie eine Materialfrage
+Im Into-the-Wild-Short kam die Tagebuchszene in mehreren Blöcken vor. Der
+Trailer hat 171 brauchbare Sekunden — der Mangel war also keiner. Entstanden
+ist es so: ich habe je Block **gesucht, was passt**, und bin dabei zweimal
+bei derselben starken Einstellung gelandet.
+
+Richtig herum: **erst die Liste der Einspieler aufstellen, jeden genau
+einmal, dann den Blöcken zuordnen.** Die Liste ist die Buchführung. Wer je
+Block einzeln sucht, hat keine.
+
+Dazu: **eine Einstellung, die einen Satz trägt, gehört an diesen Satz** —
+das Tagebuch zu „happiness is only real when shared", nicht irgendwohin.
+Zuerst die gebundenen Einstellungen setzen, dann den Rest drumherum.
+→ betrifft: content-cinematic
+
+### 43 Pixel entscheiden, ob eine Quelle 36 oder 171 Sekunden hergibt
+Eingebrannte Trailer-Untertitel: erst habe ich untertitelfreie Strecken
+gejagt und kam auf 36 von 185 Sekunden. Dann an zehn bekannten Textstellen
+**die Lage der Schrift gemessen** — immer dieselben 43 Pixel am unteren
+Rand. Band weggeschnitten, ganzer Trailer brauchbar, und das Bild wurde
+sogar schärfer, weil weniger hochgerechnet werden muss.
+
+**Erst messen, WO etwas steht. Dann oft gar nicht mehr suchen, WANN.**
+
+Nachtrag zur Gegenprobe: `untertitel_finden.py` meldet auf Sonnenuntergängen
+und Lagerfeuern Text, der keiner ist. Als Freigabe taugt es nicht — als
+Freigabe taugt ein dichter Kontaktabzug **nur des unteren Bildfünftels**,
+alle 0,5 s. Da ist Schrift sofort zu sehen und ein heller Himmel eben nicht.
+→ betrifft: content-cinematic

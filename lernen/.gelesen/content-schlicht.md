@@ -1,3 +1,197 @@
+## 22.10.2026 — Eine Folge, ein Agent, der Reihe nach
+
+**Seine Regel, 22.10.:** *„lass uns, um die Übersicht zu behalten, die
+einfach alle Shorts zu Scott werden von ein und demselben Agenten
+bearbeitet, nacheinander. Damit wir hier nicht durcheinander kommen, weil
+wir haben hier jetzt eine Überschneidung."*
+
+**Die Überschneidung, nachgesehen statt vermutet:** auf
+`claude/content-cinematic` liegt `video/shorts/aaronson-01-how-safe-is-ai.srt`
+— 64 Einblendungen, drei Runden (`3bde9dc`, `5c7be04`, `a4db680`). Hier
+ist parallel ein anderes Stück derselben Folge entstanden („the trouble
+with AI is not that it doesn't work", Kopfzeile „Is AI safe?").
+**Zwei verschiedene Shorts unter demselben Namen, in zwei Containern, mit
+zwei Zeitbasen.**
+
+**Die Aufteilung, die das verhindern sollte, hat es verursacht.** EA hatte
+verteilt: *„nimm die Kandidaten von hinten, er nimmt sie von vorn."* Beide
+haben Kandidat 1 angefasst — er fängt von vorn an und ist der stärkste,
+also greift jeder zuerst dorthin.
+**Regel: eine Aufteilung innerhalb einer Folge ist keine Aufteilung,
+solange die Kandidaten nicht nummeriert und namentlich vergeben sind. Also
+die Folge verteilen, nicht die Kandidaten.**
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Und was eine Übergabe mitbringen muss, damit sie keine ist:** Schnittzeiten
+**in Quellzeiten** (Anfang und Ende jeder behaltenen Strecke), Ausschnitt,
+Lippenhöhe, und die getroffenen Entscheidungen im Klartext. Ohne das ist
+die Vorarbeit im fremden Container verloren, sobald er eingezogen wird —
+dieselbe Lehre wie bei `clip_aa2.mp4` am 21.10., nur eine Ebene höher.
+→ betrifft: alle Content-Agenten
+
+## 22.10.2026 — NEUE REGEL: jeder Short geht mit seinem Transkript raus
+
+**Seine Ansage, und sie gilt für alle Short-Agenten:** *„dass die Shorts
+mit dem Transkript geliefert werden müssen, damit ich einfacher Feedback
+geben kann, beziehungsweise einfach dir sagen kann, was raus soll."*
+
+**Ab sofort gehört zu jedem Short eine Liste zum Durchstreichen**, nicht
+nur die Datei. `video/kurzliste.py` baut sie aus der `.srt`, die der
+Renderer ohnehin über `--srt-out` schreibt: durchnummeriert, mit den
+Zeiten **im fertigen Short** — er streicht eine Nummer, wir schneiden.
+
+Die rohe `.srt` allein taugt dafür nicht: drei Wörter je Zeile, hundert
+Einblendungen. Und Satzenden allein auch nicht, weil in eingebrannten
+Untertiteln fast kein Satzzeichen steht (nur das Fragezeichen bleibt).
+Die Liste bricht deshalb an Sprechpausen und spätestens nach vierzehn
+Wörtern um.
+
+    python3 video/shorts-render.py … --srt-out kurz.srt
+    python3 video/kurzliste.py kurz.srt --titel "Aaronson 1" --out liste.txt
+
+`video/abnahme.py` fragt die `.srt` bereits ab; ohne sie gibt es kein
+„bestanden".
+→ betrifft: content-*, YNB Cinema, EA, alle Short-Agenten
+
+**Zweite Ansage derselben Runde:** die Kopfzeile soll **deutlich größer**
+und auf **weißem Grund** stehen. Gemessen: bei Schriftgröße 96 ist das
+Feld 543 px breit, also 50 % der Bildbreite; bei 170 sind es 899 px, also
+83 % — links und rechts bleiben 90 px. Das ist die Größe, die er meint.
+`--kopfzeile-groesse 170 --kopfzeile-hell`.
+→ betrifft: content-*, YNB Cinema
+
+## 22.10.2026 — Warum dieselben Fehler bei verschiedenen Agenten passieren
+
+**Seine Frage, und sie ist berechtigt:** *„Ich verstehe nicht, warum hier
+immer wieder dieselben Fehler passieren bei unterschiedlichen Agenten."*
+Heute waren es drei auf einmal: Outro vergessen, Logo zu klein, Ton vom
+Kameramikrofon.
+
+**Die Antwort ist unangenehm einfach: es gab keine Liste.** Jeder von uns
+hat sich das Schwierige gemerkt — Ausschnitt, Schnittgrenzen, Umbruch —
+und das Selbstverständliche vergessen. Nichts im Werkzeug hat danach
+gefragt.
+
+**Zwei der drei Fehler waren überhaupt keine Geschmacksfragen, sondern
+Messfehler:**
+
+1. **Das Logo war nicht „zu klein gewählt", es war falsch gerechnet.**
+   `marke/ynb-logo-weiss.png` ist 5224x2947 px groß, die Marke darin aber
+   nur 1924 px breit — **36,8 % der Datei**, der Rest ist durchsichtiger
+   Rand. Wer die Datei auf die 28 % Bildbreite aus seinem Preset skaliert,
+   bekommt eine Marke von **111 px statt 302**. Der Renderer schneidet das
+   Logo jetzt auf seinen sichtbaren Kasten zu, bevor er skaliert;
+   `--logo-breite` meint ab jetzt die Breite der **Marke**.
+2. **Das Outro lag die ganze Zeit in seinem Drive.** „YNB Podcast: Outro
+   9:16", ProRes mit Alphakanal, 1080x1920, 4,2 s, die ersten 0,42 s
+   durchsichtig. Niemand hat danach gesucht. Liegt jetzt als
+   `video/marke/ynb-outro-9-16.mp4` (3,8 s, opak) im Repo, für alle.
+
+**Und die Gegenmaßnahme, damit die Antwort nicht nur eine Einsicht bleibt:
+`video/abnahme.py`.** Prüft einen fertigen Short vor der Übergabe auf
+Format, **Abtastrate 48 kHz** (44,1 kHz heißt Kameramikrofon statt
+Mischung), Laufzeit unter dem Shorts-Limit, **Outro am Ende** (Bildabstand
+zum Outro-Schlussbild), Untertitel und Ortscheck. Was nur das Auge sieht —
+Logogröße, Zeile unter der Lippe, Wortgrenzen, **den Ton wirklich
+anhören** — steht als Haken darunter und wird nicht als „bestanden"
+ausgegeben.
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+## 22.10.2026 — `-t` hinter dem `-i` begrenzt gar nichts
+
+**Zweiter Befund derselben Sitzung, und der erste war nur die halbe
+Ursache.** Nachdem die Zeitstempel auf null standen, stimmte der Einstieg
+— die Laufzeit immer noch nicht: 52 s bestellt, 54 s geliefert.
+
+`shorts-render.py` baute den Aufruf so:
+
+    ffmpeg -ss 13 -i quelle.mp4 -t 52 ... -i logo.png ...
+
+**ffmpeg ordnet Optionen der nächsten Datei zu.** `-t` stand hinter dem
+`-i` der Quelle, also band es an den **nächsten** Eingang — das Logo — und
+begrenzte nichts. Ohne `--logo` wäre es eine Ausgabeoption gewesen und
+hätte zufällig funktioniert; **mit** Logo lief der Short bis zum Ende der
+Quelle. Richtig ist `-ss 13 -t 52 -i quelle.mp4`, beides vor dem `-i`.
+Geprüft: 6 s bestellt, 5,27 s geliefert bei Tempo 1,15 — genau die 5,2,
+die herauskommen müssen.
+→ betrifft: content-*, YNB Cinema, EA
+
+**Was daran lehrreich ist:** der Fehler war unsichtbar, solange niemand
+ein Logo einblendete, und unsichtbar, solange niemand die Laufzeit
+nachrechnete. Zwei Bedingungen, die beide erfüllt sein mussten — und die
+Shorts der Nachtrunde liefen über `--plan`, der diesen Zweig gar nicht
+benutzt. Darum hat es tagelang niemand gemerkt.
+**Regel: bei ffmpeg steht jede Option vor der Datei, für die sie gilt.
+Wer eine Option hinter `-i` schreibt, meint die nächste Datei.**
+→ betrifft: alle Content-Agenten
+
+## 22.10.2026 — Ein Fenster aus dem Master behielt die Uhr des Masters
+
+**Befund, gemessen.** `master_schnitt.py` holte ein Fenster aus dem
+Drive-Master und schrieb die Pakete mit ihren **Originalzeitstempeln**:
+`start_time=5775.0`, `duration=75.0`. Jedes Werkzeug danach rechnet aber
+ab null. `--start 13` suchte also eine Stelle **vor dem ersten Bild**,
+ffmpeg nahm stillschweigend den Anfang, und `-t` griff ebenfalls daneben.
+
+**Drei Renderings liefen damit durch und sahen im Standbild richtig aus** —
+der Gast spricht über die ganze Länge, also fällt am Einzelbild nichts
+auf. Aufgefallen ist es erst an der Laufzeit: 6 s bestellt, 52 s geliefert;
+10 s bestellt, 54 s geliefert; 52 s bestellt, 54 s geliefert. Drei
+verschiedene Bestellungen, zwei identische Ergebnisse — **das** war der
+Alarm, nicht das Bild.
+
+`master_schnitt.py` zieht die Zeitstempel jetzt auf null (ein gemeinsamer
+Versatz für Bild und Ton, sonst laufen sie auseinander) und schreibt in
+die Ausgabe `Datei laeuft ab 0 (entspricht Master X)`.
+**Wer ein Fenster aus einem Master zieht, prüft `start_time` der Ausgabe,
+bevor er Zeiten hineinrechnet.**
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Und die Form dahinter, zum dritten Mal in zwei Tagen:** ein Standbild
+beweist nichts über einen Ausschnitt. Die Laufzeit schon. Wer eine
+Bestellung aufgibt, misst das Ergebnis gegen die Bestellung — bei
+Drive-Bereichsabrufen, bei Fenstern aus dem Master, bei jedem Rendering.
+→ betrifft: alle Content-Agenten
+
+## 22.10.2026 — Die Ortsregel war zu eng, und drei Fehler im SRT-Rückweg
+
+**Seine Präzisierung vom 21.10., die meine Liste von gestern korrigiert:**
+*„Cape Town oder South Africa — ich möchte es halt nur nicht genauer
+veröffentlichen."* Stadt und Land dürfen fallen. Meine erste Fassung hatte
+beide gesperrt und hätte **jeden Short mit seiner Herkunftsgeschichte
+blockiert** — und die ist ein Kernstück seines Materials. Gemeldet vom
+Gastauftritte-Agenten, zu Recht.
+`ortscheck.py` ist jetzt zweistufig: `GROB` (Cape Town, South Africa,
+Western Cape, Tafelberg) wird **gezählt und berichtet**, `ORTE`
+(Scarborough, Kommetjie, Misty Cliffs, Noordhoek, Fish Hoek, Muizenberg,
+Kalk Bay …) **schlägt an**.
+**Regel: eine Schutzliste, die mehr sperrt als verlangt, ist kein
+vorsichtiger Fehler — sie nimmt ihm Material weg.** Im Zweifel das enger
+Gemeinte sperren und das Weitere nur melden.
+→ betrifft: content-*, YNB Cinema, EA, alle Content-Agenten
+
+**Drei Fehler auf dem Rückweg über eine .srt, zwei davon bestätigt und
+behoben:**
+1. `--srt` zusammen mit `--srt-out` **brach mit einem KeyError ab**:
+   `cues_als_srt` griff blind auf `c["woerter"]` zu, und Einblendungen aus
+   einer .srt haben keine Wortzeiten. Jetzt fällt es auf den Text zurück.
+2. **Die Zeitbasis wurde doppelt durchs Tempo gerechnet.** Eine .srt aus
+   `--srt-out` steht schon in der Zeit des fertigen Videos; sie wurde beim
+   Zurücklesen noch einmal geteilt. Einblendungen tragen jetzt
+   `fertigzeit`, und wer sie trägt, wird nicht noch einmal skaliert.
+   Geprüft: eine .srt durch den Renderer und zurück kommt zeitgleich an.
+3. **Eine wiederverwendete .srt kostet das gelbe Aktivwort** — das stimmt
+   und lässt sich nicht beheben: ohne Wortzeiten gibt es nichts
+   hervorzuheben. Wer die Hervorhebung braucht, lässt neu transkribieren.
+→ betrifft: content-*, YNB Cinema
+
+**Und eine Meldung, die ich geprüft und verworfen habe.** Es hieß, der
+Merge habe das Fragezeichen wieder abgestreift. Das stimmte für `66de26b`
+und war in `01a27cb` schon behoben, bevor die Meldung kam: `SATZZEICHEN`
+ist `.,!;:…`, und `_anzeige("safe?")` gibt `SAFE?`. Nachgesehen statt
+geglaubt — und das Gegenteil wäre genauso wichtig gewesen.
+→ betrifft: content-*
+
 ## 21.10.2026 — Whisper verschluckt Wiederholungen, und niemand merkt es
 
 **Befund, gemessen am selben 80-Sekunden-Fenster derselben Datei:**
