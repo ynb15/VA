@@ -8,6 +8,47 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 ## 2026-10-22
 
+- **Fuer die Aaronson-Folge existiert kein 4K — der „4K"-Clip ist
+  hochskaliert.** Nachgemessen an allen Quellen: Folgenmaster **1920×1080**
+  bei 21,2 Mbit/s · `Left Camera` (roh) **1920×1080** bei 5,3 Mbit/s ·
+  `Right Cam` und `Middle Camera` ebenfalls 1080p · der Clip
+  `YNB Podcast Scott Aaronson AI God.mp4` **3840×2160** bei 31,9 Mbit/s, das
+  sind **8,0 Mbit/s je 1080p-Aequivalent**. Im Spektrum eines Clipbildes
+  liegen nur **4,7 %** der horizontalen Energie oberhalb der 1080p-Grenze.
+  **Es gibt keine Quelle, aus der echtes 4K stammen koennte.**
+  **Folge fuer die Arbeit: der Master ist die beste Quelle dieser Folge, nicht
+  die schlechteste** — gleiche echte Aufloesung wie der Clip, aber die
+  **2,7-fache Datenrate je Bildpunkt**, und er traegt den Studioschnitt schon
+  in sich. **Ich hatte gestern das Gegenteil behauptet** („die Stuecke aus dem
+  Master sind sichtbar weicher") und das war falsch hergeleitet: aus einer
+  Pixelzahl auf Detail geschlossen.
+  **Die Regel: eine Aufloesungsangabe ist keine Detailmessung.** Wer zwei
+  Quellen vergleicht, rechnet die Datenrate auf dieselbe Pixelzahl um und
+  sieht sich das Spektrum an.
+  → betrifft: content-*, thumbnails
+- **In `video/aaronson-shorts.md`, Kandidat 4, ist eine Frage dem falschen
+  Sprecher zugeschrieben.** „How well do orangutans fare in a human world?"
+  steht dort als Aaronsons Satz. Im Wortlauf (Rohzeit 01:00:51–01:00:58) sagt
+  Aaronson *„…as we are to orangutans or whatever"*, **Yannick** fragt
+  *„And how well do orangutans fare in a human world?"*, und Aaronson
+  antwortet *„Well, he would say something even stronger than that."*
+  Der Studioschnitt bestaetigt es: genau dort geht das Bild auf die Totale,
+  und Yannick spricht.
+  **Wer ohne Sprecherzuordnung transkribiert, muss die Zuordnung am Dialog
+  pruefen, bevor sie in eine Kandidatenliste geht** — sonst steht im Short der
+  falsche Kopf zur Frage.
+  → betrifft: content-*, head-of-content
+- **Eine Zeitmarke, die er aus dem Gedaechtnis nennt, ist eine Suchanweisung,
+  keine Fundstelle.** Er fragte nach *„We're at the most consequential moment
+  of history"*; woertlich sagt Aaronson **„Like this is one of the most
+  consequential moments in human history, really"** (Rohzeit 01:04:03,
+  veroeffentlicht **58:02**). **„one of the" statt „the"** — und der
+  YouTube-Manager hat daraus bereits einen Titel gebaut, der die Verschaerfung
+  uebernimmt. **Vor dem Bauen den Wortlaut gegen das Transkript legen**, sonst
+  brennt man eine Zeile ein, die so nicht faellt.
+  → betrifft: content-*, youtube-manager, head-of-content
+
+
 - **`ffmpeg` kommt in diesem Container nicht an eine Drive-URL heran, `curl`
   schon — und es gibt einen Weg, der trotzdem nur das Noetige holt.**
   Gemessen am Aaronson-Master (16,1 GB): `ffmpeg -ss … -i <drive-url>` lief

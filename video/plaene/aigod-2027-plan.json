@@ -1,0 +1,64 @@
+{
+ "quelle": "../nie-sicher/vorlage-2027.mov",
+ "groesse": [
+  1920,
+  1080
+ ],
+ "notiz": "Short 'AI 2027'. Alles aus dem Folgenmaster (1920x1080), Tempo 1,0 -> 1,0999 angeglichen. Ausschnitte je Einstellung an mehreren Rasterbildern gemessen; Bildschnitte am zusammengesetzten Stueck geprueft (12,833 / 27,333 / 32,500).",
+ "einstellungen": [
+  {
+   "layout": "einzel",
+   "kasten": "251:0:608:1080",
+   "lippe": 1080,
+   "start": 0.0,
+   "ende": 12.833,
+   "tot": false,
+   "wer": "Yannick, Nah — die Frage"
+  },
+  {
+   "layout": "einzel",
+   "kasten": "761:0:608:1080",
+   "lippe": 1100,
+   "start": 12.833,
+   "ende": 15.967,
+   "tot": false,
+   "wer": "Aaronson, Nah"
+  },
+  {
+   "layout": "einzel",
+   "kasten": "611:0:608:1080",
+   "lippe": 1100,
+   "start": 15.967,
+   "ende": 27.333,
+   "tot": false,
+   "wer": "Aaronson, Nah"
+  },
+  {
+   "layout": "einzel",
+   "kasten": "1196:0:608:1080",
+   "lippe": 1100,
+   "start": 27.333,
+   "ende": 29.567,
+   "tot": false,
+   "wer": "Totale, Kasten auf Aaronson"
+  },
+  {
+   "layout": "einzel",
+   "kasten": "71:0:608:1080",
+   "lippe": 1080,
+   "start": 29.567,
+   "ende": 32.5,
+   "tot": false,
+   "wer": "Totale, Kasten auf Yannick — seine Orang-Utan-Frage"
+  },
+  {
+   "layout": "einzel",
+   "kasten": "661:0:608:1080",
+   "lippe": 1100,
+   "start": 32.5,
+   "ende": 48.633,
+   "tot": false,
+   "wer": "Aaronson, Nah — die Pointe"
+  }
+ ]
+}

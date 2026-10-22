@@ -47,3 +47,7 @@ inherently not not -> inherently not
 # An der Stossstelle zum Masterstueck hoert Whisper ein "anyway", das im
 # Rohtranskript der Folge nicht steht. Artefakt des Schnitts, nicht sein Wort.
 anyway this is -> this is
+# 22.10., Short "AI 2027": er stottert bei "in in human history".
+in in human -> in human
+# Whisper verschluckt das Plural-s in "within the set of possibilities".
+set of possibility -> set of possibilities
