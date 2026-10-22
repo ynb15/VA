@@ -208,7 +208,18 @@ def beginn_waehlen(daten, idx, fenster):
             return sicher
         werte = sa.kennzeichnen_liste([dict(d) for d in kand], fenster)
         erster = daten[idx]["start"]
+        unsicher = 0
         for d in reversed(werte):
+            # Hoechstens EIN unsicherer Abschnitt am Stueck. Bei Kyle
+            # Kingsbury stehen zwei hintereinander, und sie gehoeren
+            # verschiedenen Sprechern: "That's fascinating, dude." (0,426,
+            # er) und davor "and then let that pour into everything else
+            # that you do." (0,187, der Gast, knapp ueber der Gastschwelle).
+            # Ohne diese Grenze lief der Anlauf 13,2 s zurueck und das
+            # Stueck begann mitten in Kyles voriger Antwort.
+            unsicher = 0 if d["sprecher"] == "YNB" else unsicher + 1
+            if unsicher > 1:
+                break
             # Angehalten wird nur bei einem KLAREN Gast. Durch ein "?" geht es
             # hindurch — das ist die defensive Richtung, und sie ist noetig:
             # Whitney Wheelocks Anlauf "To wrap this up, one of my favorite

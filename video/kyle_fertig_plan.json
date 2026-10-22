@@ -4,66 +4,66 @@
   1920,
   1080
  ],
- "bezugsbewegung": 1.01,
+ "bezugsbewegung": 1.02,
  "einstellungen": [
   {
    "layout": "stapel",
-   "oben": "199:74:850:756",
+   "oben": "211:74:850:756",
    "unten": "631:134:850:756",
    "lippe": 672,
    "start": 0.0,
-   "ende": 4.6,
+   "ende": 13.81,
    "tot": false,
-   "bewegung_x": 0.325,
-   "mitte": 0.43,
-   "masse": 1.0
+   "bewegung_x": 0.331,
+   "mitte": 0.44,
+   "masse": 0.9
   },
   {
    "layout": "einzel",
    "kasten": "1044:141:528:939",
    "lippe": 1248,
-   "start": 4.6,
-   "ende": 21.02,
+   "start": 13.81,
+   "ende": 30.43,
    "tot": false,
    "bewegung_x": 0.681,
-   "mitte": 0.47,
-   "masse": 2.99
+   "mitte": 0.48,
+   "masse": 2.95
   },
   {
    "layout": "stapel",
-   "oben": "0:0:850:756",
-   "unten": "1039:324:850:756",
+   "oben": "0:14:850:756",
+   "unten": "1063:324:850:756",
    "lippe": 672,
-   "start": 21.02,
-   "ende": 32.03,
+   "start": 30.43,
+   "ende": 41.44,
    "tot": false,
-   "bewegung_x": 0.762,
+   "bewegung_x": 0.775,
    "mitte": 0.07,
-   "masse": 1.01
+   "masse": 1.02
   },
   {
    "layout": "stapel",
-   "oben": "427:278:850:756",
-   "unten": "919:182:850:756",
+   "oben": "427:290:850:756",
+   "unten": "823:206:850:756",
    "lippe": 672,
-   "start": 32.03,
-   "ende": 52.05,
+   "start": 41.44,
+   "ende": 61.46,
    "tot": false,
-   "bewegung_x": 0.7,
+   "bewegung_x": 0.65,
    "mitte": 0.44,
-   "masse": 3.15
+   "masse": 3.13
   },
   {
    "layout": "stapel",
    "oben": "0:0:850:756",
    "unten": "1070:314:850:756",
    "lippe": 672,
-   "start": 52.05,
-   "ende": 61.66,
+   "start": 61.46,
+   "ende": 71.07,
    "tot": false,
-   "bewegung_x": 0.919,
+   "bewegung_x": 0.912,
    "mitte": 0.07,
-   "masse": 0.99
+   "masse": 0.98
   }
  ]
 }

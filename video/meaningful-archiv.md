@@ -45,9 +45,9 @@ Untertitel unter `video/shorts/<datei>.srt`.
 | 4 | Logan Gonzalez | `1ztggu2ua5-AntISFHHP9cBqjVhSn6Zmj` | 4957,1–5009,4 | 43,6 s | `YNB Podcast Logan Gonzalez Meaning` | ja |
 | 5 | Matt Defina | `1ubW-gMYb6_g0ZO-cOVyEFGQoKvIyGivj` | 6474,7–6513,1 | 32,0 s | `YNB Podcast Matt Defina Meaning` | ja |
 | 6 | Rick Strassman | `1Hwt3_c_Ifhd7onXyC8nrHIdtjwJjxdjH` | **~7100–7160, ungenau** | 49,0 s | `YNB Podcast Rick Strassman Meaning` | **nein — Ende offen** |
-| 7 | Kyle Kingsbury | `1NWMaIn8avpf0EVQvm2DhEQr73uhfioIq` | 7485,78–7547,38 | 51,4 s | `YNB Podcast Kyle Kingsbury Meaning` | ja, Bild und Schluss geprüft |
+| 7 | Kyle Kingsbury | `1NWMaIn8avpf0EVQvm2DhEQr73uhfioIq` | 7476,44–7547,38 | 59,2 s | `YNB Podcast Kyle Kingsbury Meaning` | ja, Bild und Schluss geprüft |
 | 10 | Eben Britton | `1lIFL8aUunQQPtTDp0vQNlaRc7of-4PfG` | 5986,89–6034,27 | 39,5 s | `YNB Podcast Eben Britton Meaning` | ja, Schluss geprüft |
-| 11 | Whitney Wheelock | `1CFqj0d_cO9oGqusPSabS22pgyeJWQ7XE` | 6570,73–6638,92 | 56,8 s | `YNB Podcast Whitney Wheelock Meaning` | ja, Naht im Ton geprüft |
+| 11 | Whitney Wheelock | `1CFqj0d_cO9oGqusPSabS22pgyeJWQ7XE` | 6568,33–6638,92 | 58,8 s | `YNB Podcast Whitney Wheelock Meaning` | ja, Naht im Ton geprüft |
 
 **Die Zeitmarken von 7 und 10 sind am Dateibeginn des Suchfensters gemessen,
 nicht gerechnet** — `master_schnitt.py` setzt auf das Schlüsselbild vor dem

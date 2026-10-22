@@ -4,18 +4,18 @@
   1920,
   1080
  ],
- "bezugsbewegung": 2.644,
+ "bezugsbewegung": 2.714,
  "einstellungen": [
   {
    "layout": "einzel",
    "kasten": "816:141:528:939",
    "lippe": 1248,
    "start": 0.0,
-   "ende": 68.17,
+   "ende": 70.57,
    "tot": false,
    "bewegung_x": 0.562,
-   "mitte": 0.46,
-   "masse": 2.64
+   "mitte": 0.45,
+   "masse": 2.71
   }
  ]
 }
