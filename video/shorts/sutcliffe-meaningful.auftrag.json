@@ -73,5 +73,16 @@
   },
   "offen": [
     "Die Totale bei etwa Sekunde 25 traegt die Pointe 'to see yourself reflected through the other' und zeigt ihn klein im Profil. Enger fassen geht, ist aber eine Aenderung am Bild und braucht seine Zustimmung."
-  ]
+  ],
+  "outro": {
+    "datei": "video/marke/ynb-outro-9x16.mov",
+    "drive_id": "1kLsW8GjTWR-X4_02r7yqWuRUtCa6h5aX",
+    "dauer_s": 4.21,
+    "werkzeug": "video/outro_anhaengen.py — NACH dem Musikbett, sonst liegt das Bett auch ueber dem Outro.",
+    "warum": "Seine Ansage vom 22.10.2026: „du vergisst jetzt schon wieder mein Outro. Wo ist mein Outro? Das gehört hinter jedes Short.“ Gilt fuer jeden Short, nicht nur diesen."
+  },
+  "laenge_s": {
+    "hauptteil": 89.07,
+    "mit_outro": 93.28
+  }
 }

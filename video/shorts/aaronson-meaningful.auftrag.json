@@ -18,13 +18,18 @@
       ],
       [
         5911.45,
+        5927.15
+      ],
+      [
+        5931.8,
         5984.8
       ]
     ],
     "blende_s": 0.13,
     "warum": "Seine Frage, dann faellt alles weg bis zur Substanz - seine Regel vom 21.10. Hier sind das 7,0 s: 'Well, okay, so so so what makes life meaningful for me right now is, first of all'. Danach beginnt es mit 'My kids, my family, my students'.",
     "ende_warum": "Der Nachtlauf schnitt bei 5972,6 mitten im Gedanken. Seine Antwort laeuft bis 'that also gave me a very strong sense of meaning' bei 5984,2 - 11,6 s mehr.",
-    "vorlauf_warum": "Der Schnitt beginnt 0,4 s vor seinem ersten Wort. Mit weniger Vorlauf verschluckt Whisper 'What' und im Bild stand 'IN THESE TIMES'. Preis: der Short beginnt mit 0,5 s Totale, bevor die Kamera auf ihn schneidet."
+    "vorlauf_warum": "Der Schnitt beginnt 0,4 s vor seinem ersten Wort. Mit weniger Vorlauf verschluckt Whisper 'What' und im Bild stand 'IN THESE TIMES'. Preis: der Short beginnt mit 0,5 s Totale, bevor die Kamera auf ihn schneidet.",
+    "doppelung_raus": "Er sagt „I should have attended that“ zweimal (5927,25 und 5928,93, dazwischen Aaronsons „Huh?“). Herausgeschnitten ist 5927,15-5931,80 — etwas mehr als er gesagt hat, weil direkt danach „Yeah, yeah, which, well, so so so so so“ folgt und ein Schnitt mitten hinein schlechter klingt. Uebergang jetzt „in Utah.“ -> „My nine year old was also there as a camper“. Offen: ob sein „Yeah“ drin bleiben soll, dann Grenze 2 s frueher."
   },
   "bild": {
     "tempo": 1.2,
@@ -74,5 +79,16 @@
   },
   "offen": [
     "Die 0,5 s Totale am Anfang - sie herauszunehmen kostet das erste Wort der Frage."
-  ]
+  ],
+  "outro": {
+    "datei": "video/marke/ynb-outro-9x16.mov",
+    "drive_id": "1kLsW8GjTWR-X4_02r7yqWuRUtCa6h5aX",
+    "dauer_s": 4.21,
+    "werkzeug": "video/outro_anhaengen.py — NACH dem Musikbett, sonst liegt das Bett auch ueber dem Outro.",
+    "warum": "Seine Ansage vom 22.10.2026: „du vergisst jetzt schon wieder mein Outro. Wo ist mein Outro? Das gehört hinter jedes Short.“ Gilt fuer jeden Short, nicht nur diesen."
+  },
+  "laenge_s": {
+    "hauptteil": 60.83,
+    "mit_outro": 65.04
+  }
 }
