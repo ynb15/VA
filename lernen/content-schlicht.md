@@ -1,3 +1,31 @@
+## 22.10.2026 — `-t` hinter dem `-i` begrenzt gar nichts
+
+**Zweiter Befund derselben Sitzung, und der erste war nur die halbe
+Ursache.** Nachdem die Zeitstempel auf null standen, stimmte der Einstieg
+— die Laufzeit immer noch nicht: 52 s bestellt, 54 s geliefert.
+
+`shorts-render.py` baute den Aufruf so:
+
+    ffmpeg -ss 13 -i quelle.mp4 -t 52 ... -i logo.png ...
+
+**ffmpeg ordnet Optionen der nächsten Datei zu.** `-t` stand hinter dem
+`-i` der Quelle, also band es an den **nächsten** Eingang — das Logo — und
+begrenzte nichts. Ohne `--logo` wäre es eine Ausgabeoption gewesen und
+hätte zufällig funktioniert; **mit** Logo lief der Short bis zum Ende der
+Quelle. Richtig ist `-ss 13 -t 52 -i quelle.mp4`, beides vor dem `-i`.
+Geprüft: 6 s bestellt, 5,27 s geliefert bei Tempo 1,15 — genau die 5,2,
+die herauskommen müssen.
+→ betrifft: content-*, YNB Cinema, EA
+
+**Was daran lehrreich ist:** der Fehler war unsichtbar, solange niemand
+ein Logo einblendete, und unsichtbar, solange niemand die Laufzeit
+nachrechnete. Zwei Bedingungen, die beide erfüllt sein mussten — und die
+Shorts der Nachtrunde liefen über `--plan`, der diesen Zweig gar nicht
+benutzt. Darum hat es tagelang niemand gemerkt.
+**Regel: bei ffmpeg steht jede Option vor der Datei, für die sie gilt.
+Wer eine Option hinter `-i` schreibt, meint die nächste Datei.**
+→ betrifft: alle Content-Agenten
+
 ## 22.10.2026 — Ein Fenster aus dem Master behielt die Uhr des Masters
 
 **Befund, gemessen.** `master_schnitt.py` holte ein Fenster aus dem

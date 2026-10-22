@@ -1333,9 +1333,15 @@ def main():
         cmd = [FFMPEG, "-y"]
         if not a.plan:
             cmd += ["-ss", str(t0)]
+            # `-t` MUSS vor das `-i` der Quelle. ffmpeg ordnet Optionen der
+            # naechsten Datei zu: stand es dahinter und folgte noch ein
+            # Eingang (Logo, B-Roll), band es an DESSEN Eingang und
+            # begrenzte gar nichts. Am 22.10. kam so ein Short heraus, der
+            # bis zum Ende der Quelle lief — 54 s statt 45 s — und am
+            # Standbild nichts davon zeigte.
+            if dur:
+                cmd += ["-t", str(dur)]
         cmd += ["-i", a.src]
-        if dur and not a.plan:
-            cmd += ["-t", str(dur)]
         naechste = 1
         for _, _, datei in broll:
             # Nur das Bild wird gebraucht; -an haelt den Ton der B-Roll
