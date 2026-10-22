@@ -6,6 +6,43 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-22 — meine 60-Sekunden-Decke war falsch, und wie die Lieferung stattdessen aussieht
+
+- **„Ein Short darf 60 s nicht ueberschreiten" stimmt seit dem 15.10.2024
+  nicht mehr — die Grenze ist 3 Minuten.** Ich hatte die 60 s zweimal als
+  Tatsache an ihn weitergegeben und einen Vorschlag darauf gebaut; Alfred hat
+  es bemerkt, ich habe es unabhaengig nachgesucht und komme auf dasselbe:
+  mehrere Leitfaeden nennen uebereinstimmend **3 Minuten ab 15.10.2024**,
+  einzelne aeltere Seiten fuehren noch die 60 s.
+  **Belegstand ausdruecklich: ueber Dritte, nicht ueber die Quelle.**
+  `support.google.com` ist aus diesem Container nicht erreichbar — selbst
+  geprueft, `getaddrinfo ENOTFOUND`. Also **sehr wahrscheinlich 3 Minuten,
+  nicht gemessen.**
+  **Die Lehre an mir: eine Plattformgrenze aus dem Gedaechtnis ist keine
+  Auskunft.** Ich habe sie nicht als Vermutung gekennzeichnet, sondern als
+  Rahmen benutzt, innerhalb dessen ich seinen Inhalt beschnitten habe.
+  → betrifft: alle
+- **Fuer die Praxis aendert es wenig, und das ist der wichtigere Teil: die
+  Laenge ist seine redaktionelle Entscheidung, keine technische.** Sein Format
+  liegt bei **~59 s**, und alle **39** Shorts auf dem Kanal folgen ihm. Also
+  weiter auf **55–59 s** bauen, bis er etwas anderes sagt — aber **nicht mehr
+  mit der Begruendung, es ginge technisch nicht laenger.**
+  Und: **Hochformat entscheidet mit**, ob etwas ueberhaupt als Short laeuft;
+  Laenge allein macht es nicht.
+  → betrifft: content-*
+- **Die bessere Lieferform, wenn das Material mehr traegt als 59 s — von
+  Alfred, und sie steht in Yannicks eigenem Satz.** Ich hatte angeboten,
+  zusaetzlich eine Clip-Fassung ohne Laengengrenze zu rendern. Naeher liegt:
+  *„gibst mir dann das Transkript und ich sage dir, was du rausschneiden
+  sollst."* **Dann ist die Lieferung die Liste, nicht ein zweiter Render** —
+  die Kandidatenstelle als Transkript mit markierten Grenzen, dazu mein
+  Vorschlag, was ich streichen wuerde, wenn ich muesste. Er streicht, ich
+  rendere **einmal** statt zweimal. Die Clip-Fassung bleibt das richtige
+  zweite Angebot, wo ein Gedanke die Laenge wirklich braucht.
+  → betrifft: content-*
+
+
+
 ## 2026-10-22 — SEINE NEUE SCHNITTREGEL: lieber zu defensiv als zu offensiv
 
 - **Ab sofort wird defensiv geschnitten. Seine Worte vom 22.10., wörtlich:**
