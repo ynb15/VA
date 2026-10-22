@@ -1,6 +1,6 @@
 {
   "name": "Sutcliffe - What Makes Life Meaningful",
-  "stand": "2026-10-21",
+  "stand": "2026-10-22",
   "quelle": {
     "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
     "master_titel": "YNB Podcast: David Sutcliffe",
@@ -68,7 +68,8 @@
       "laut_0db": -32.0,
       "stimme": -35.7
     },
-    "werkzeug": "video/musik_drunter.py — legt das Bett unter einen fertigen Short, ohne neu zu transkribieren oder das Bild neu zu encodieren."
+    "werkzeug": "video/musik_drunter.py — legt das Bett unter einen fertigen Short, ohne neu zu transkribieren oder das Bild neu zu encodieren.",
+    "abgenommen": "mittel (3 dB unter der Stimme) — seine Wahl vom 22.10.2026: „Ich hab den mittleren Tonpegel genommen.“"
   },
   "offen": [
     "Die Totale bei etwa Sekunde 25 traegt die Pointe 'to see yourself reflected through the other' und zeigt ihn klein im Profil. Enger fassen geht, ist aber eine Aenderung am Bild und braucht seine Zustimmung."
