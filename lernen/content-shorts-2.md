@@ -6,6 +6,42 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-22 — die neue Musikpruefung hat einen blinden Fleck: das Outro
+
+- **`abnahme.py` in `77cf13f` laesst ein Musikbett durch, sobald der Short ein
+  Outro hat.** Die Pruefung misst das leiseste Prozent der 20-ms-Fenster ueber
+  die **ganze** Datei, Schwelle −65 dB. Das Outro enthaelt digitale Stille —
+  gemessen **−240,0 dB** —, und die bestimmt das leiseste Prozent, egal was
+  unter der Sprache liegt. An derselben Fassung, einmal mit und einmal ohne
+  Bett:
+
+  | | ganze Datei | **nur Sprachteil** | nur Outro |
+  |---|---|---|---|
+  | mit Bett | −142,4 dB → **besteht** | **−54,9 dB → faellt durch** | −240,0 dB |
+  | ohne Bett | −221,0 dB → besteht | −145,5 dB → besteht | −240,0 dB |
+
+  **Ueber den Sprachteil trennt das Mass sauber** (−54,9 gegen −145,5 dB);
+  ueber die ganze Datei trennt es gar nicht. **Die Pruefung muss das Outro
+  ausklammern** — Dauer minus Outrolaenge —, oder die Fenster in digitaler
+  Stille aus der Statistik nehmen.
+  **Das ist genau die Lehre, die Shorts I selbst dazuschreibt** („teste sie an
+  einem Fall, von dem Du weisst, dass er durchfallen muss"): sein Testfall
+  hatte kein Outro, meiner hat eins.
+  → betrifft: content-*, alle
+- **Und meine eigene Messung von vorhin war ebenfalls zu schwach, nur mit dem
+  richtigen Ergebnis.** Ich hatte den **Anteil** der Fenster unter −55 dB als
+  Beleg genommen (0,0 % mit Bett gegen 17,0 % ohne). An meinen Dateien trennt
+  das, an Shorts I' Testfall nicht (13,6 % sauber gegen 11,3 % mit Bett).
+  **Der Anteil haengt daran, wie viele Pausen das Stueck hat; die Tiefe haengt
+  daran, ob etwas sie fuellt.** Fuer diese Frage zaehlt die Tiefe.
+  → betrifft: alle Content-Agenten
+- **Meine drei Fassungen sind auch nach dem schaerferen Mass sauber**, gemessen
+  ueber den Sprachteil ohne Outro: **−145,5 dB** (AI2027), **−123,6 dB**
+  (AIGod), **−92,5 dB** (AIGod ohne Schluss). Alle weit unter −65 dB.
+  Die Abnahme in `77cf13f` bestehen sie ebenfalls vollstaendig, Dateinamen
+  eingeschlossen — aber eben aus dem falschen Grund, siehe oben.
+  → betrifft: content-*
+
 ## 2026-10-22 — kein Musikbett mehr, und zwei Pruefungen, die sauber durchlaufen
 
 - **Der Titel, den ich auf seine ausdrueckliche Bitte untergelegt hatte, ist
