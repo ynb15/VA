@@ -7,12 +7,12 @@
    {
     "t": "What",
     "start": 0.0,
-    "end": 0.32,
+    "end": 0.4,
     "seg": 0
    },
    {
     "t": "in",
-    "start": 0.32,
+    "start": 0.4,
     "end": 1.24,
     "seg": 0
    }
@@ -21,32 +21,32 @@
  },
  {
   "start": 1.24,
-  "end": 2.02,
+  "end": 2.0,
   "text": "these times",
   "woerter": [
    {
     "t": "these",
     "start": 1.24,
-    "end": 1.52,
+    "end": 1.5,
     "seg": 0
    },
    {
     "t": "times",
-    "start": 1.52,
-    "end": 2.02,
+    "start": 1.5,
+    "end": 2.0,
     "seg": 0
    }
   ],
   "grund": "stille"
  },
  {
-  "start": 2.02,
+  "start": 2.0,
   "end": 2.86,
   "text": "makes life",
   "woerter": [
    {
     "t": "makes",
-    "start": 2.02,
+    "start": 2.0,
     "end": 2.6,
     "seg": 0
    },
@@ -107,39 +107,39 @@
  },
  {
   "start": 5.66,
-  "end": 6.48,
+  "end": 6.54,
   "text": "my family,",
   "woerter": [
    {
     "t": "my",
     "start": 5.66,
-    "end": 5.8,
+    "end": 5.82,
     "seg": 1
    },
    {
     "t": "family,",
-    "start": 5.8,
-    "end": 6.48,
+    "start": 5.82,
+    "end": 6.54,
     "seg": 1
    }
   ],
   "grund": "stille"
  },
  {
-  "start": 7.86,
-  "end": 8.84,
+  "start": 7.88,
+  "end": 8.92,
   "text": "my students,",
   "woerter": [
    {
     "t": "my",
-    "start": 7.86,
+    "start": 7.88,
     "end": 8.06,
     "seg": 1
    },
    {
     "t": "students,",
     "start": 8.06,
-    "end": 8.84,
+    "end": 8.92,
     "seg": 1
    }
   ],
@@ -147,7 +147,7 @@
  },
  {
   "start": 9.72,
-  "end": 10.0,
+  "end": 10.04,
   "text": "you know,",
   "woerter": [
    {
@@ -166,53 +166,53 @@
   "grund": "voll"
  },
  {
-  "start": 10.0,
+  "start": 10.04,
   "end": 10.46,
-  "text": "teaching.",
+  "text": "teaching,",
   "woerter": [
    {
-    "t": "teaching.",
-    "start": 10.0,
+    "t": "teaching,",
+    "start": 10.04,
     "end": 10.46,
     "seg": 1
    }
   ],
-  "grund": "satz"
+  "grund": "abschnitt"
  },
  {
-  "start": 10.66,
-  "end": 11.22,
-  "text": "You know, I",
+  "start": 10.64,
+  "end": 11.24,
+  "text": "you know, I",
   "woerter": [
    {
-    "t": "You",
-    "start": 10.66,
-    "end": 10.66,
+    "t": "you",
+    "start": 10.64,
+    "end": 10.84,
     "seg": 2
    },
    {
     "t": "know,",
-    "start": 10.66,
-    "end": 10.8,
+    "start": 10.84,
+    "end": 11.0,
     "seg": 2
    },
    {
     "t": "I",
-    "start": 10.84,
-    "end": 11.22,
+    "start": 11.0,
+    "end": 11.24,
     "seg": 2
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 11.22,
+  "start": 11.24,
   "end": 12.14,
   "text": "spent two weeks",
   "woerter": [
    {
     "t": "spent",
-    "start": 11.22,
+    "start": 11.24,
     "end": 11.56,
     "seg": 2
    },
@@ -233,7 +233,7 @@
  },
  {
   "start": 12.14,
-  "end": 12.76,
+  "end": 12.74,
   "text": "this summer",
   "woerter": [
    {
@@ -245,34 +245,34 @@
    {
     "t": "summer",
     "start": 12.38,
-    "end": 12.76,
+    "end": 12.74,
     "seg": 2
    }
   ],
   "grund": "stille"
  },
  {
-  "start": 12.76,
-  "end": 13.64,
+  "start": 12.74,
+  "end": 13.78,
   "text": "teaching",
   "woerter": [
    {
     "t": "teaching",
-    "start": 12.76,
-    "end": 13.64,
+    "start": 12.74,
+    "end": 13.78,
     "seg": 3
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 13.64,
+  "start": 13.78,
   "end": 15.42,
   "text": "theoretical",
   "woerter": [
    {
     "t": "theoretical",
-    "start": 13.64,
+    "start": 13.78,
     "end": 15.42,
     "seg": 3
    }
@@ -309,38 +309,38 @@
  },
  {
   "start": 16.34,
-  "end": 17.04,
+  "end": 17.06,
   "text": "to 11 and",
   "woerter": [
    {
     "t": "to",
     "start": 16.34,
-    "end": 16.58,
+    "end": 16.6,
     "seg": 4
    },
    {
     "t": "11",
-    "start": 16.58,
+    "start": 16.6,
     "end": 16.9,
     "seg": 4
    },
    {
     "t": "and",
     "start": 16.9,
-    "end": 17.04,
+    "end": 17.06,
     "seg": 4
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 17.04,
+  "start": 17.06,
   "end": 17.8,
   "text": "12 year olds",
   "woerter": [
    {
     "t": "12",
-    "start": 17.04,
+    "start": 17.06,
     "end": 17.36,
     "seg": 4
    },
@@ -387,12 +387,12 @@
    {
     "t": "math",
     "start": 18.3,
-    "end": 18.54,
+    "end": 18.56,
     "seg": 4
    },
    {
     "t": "camp",
-    "start": 18.54,
+    "start": 18.56,
     "end": 18.94,
     "seg": 4
    }
@@ -401,7 +401,7 @@
  },
  {
   "start": 18.94,
-  "end": 19.98,
+  "end": 19.92,
   "text": "in Utah.",
   "woerter": [
    {
@@ -413,1530 +413,1400 @@
    {
     "t": "Utah.",
     "start": 19.6,
-    "end": 19.98,
+    "end": 19.92,
     "seg": 4
    }
   ],
   "grund": "satz"
  },
  {
-  "start": 20.58,
-  "end": 20.78,
-  "text": "I should have",
+  "start": 20.08,
+  "end": 20.6,
+  "text": "My nine year",
   "woerter": [
    {
-    "t": "I",
-    "start": 20.58,
+    "t": "My",
+    "start": 20.08,
+    "end": 20.22,
+    "seg": 5
+   },
+   {
+    "t": "nine",
+    "start": 20.22,
+    "end": 20.4,
+    "seg": 5
+   },
+   {
+    "t": "year",
+    "start": 20.4,
     "end": 20.6,
     "seg": 5
-   },
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 20.6,
+  "end": 21.28,
+  "text": "old was also",
+  "woerter": [
    {
-    "t": "should",
+    "t": "old",
     "start": 20.6,
-    "end": 20.62,
+    "end": 20.74,
     "seg": 5
    },
-   {
-    "t": "have",
-    "start": 20.62,
-    "end": 20.78,
-    "seg": 5
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 20.78,
-  "end": 21.48,
-  "text": "attended that.",
-  "woerter": [
-   {
-    "t": "attended",
-    "start": 20.78,
-    "end": 21.04,
-    "seg": 5
-   },
-   {
-    "t": "that.",
-    "start": 21.04,
-    "end": 21.48,
-    "seg": 5
-   }
-  ],
-  "grund": "satz"
- },
- {
-  "start": 21.76,
-  "end": 22.26,
-  "text": "I should have",
-  "woerter": [
-   {
-    "t": "I",
-    "start": 21.76,
-    "end": 21.9,
-    "seg": 6
-   },
-   {
-    "t": "should",
-    "start": 21.9,
-    "end": 22.1,
-    "seg": 6
-   },
-   {
-    "t": "have",
-    "start": 22.1,
-    "end": 22.26,
-    "seg": 6
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 22.26,
-  "end": 22.76,
-  "text": "attended that.",
-  "woerter": [
-   {
-    "t": "attended",
-    "start": 22.26,
-    "end": 22.52,
-    "seg": 6
-   },
-   {
-    "t": "that.",
-    "start": 22.52,
-    "end": 22.76,
-    "seg": 6
-   }
-  ],
-  "grund": "satz"
- },
- {
-  "start": 22.76,
-  "end": 23.0,
-  "text": "Yeah, yeah.",
-  "woerter": [
-   {
-    "t": "Yeah,",
-    "start": 22.76,
-    "end": 22.86,
-    "seg": 7
-   },
-   {
-    "t": "yeah.",
-    "start": 23.0,
-    "end": 23.0,
-    "seg": 7
-   }
-  ],
-  "grund": "satz"
- },
- {
-  "start": 23.56,
-  "end": 24.88,
-  "text": "So my",
-  "woerter": [
-   {
-    "t": "So",
-    "start": 23.56,
-    "end": 24.2,
-    "seg": 8
-   },
-   {
-    "t": "my",
-    "start": 24.2,
-    "end": 24.88,
-    "seg": 8
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 24.88,
-  "end": 25.52,
-  "text": "nine-year-old",
-  "woerter": [
-   {
-    "t": "nine-year-old",
-    "start": 24.88,
-    "end": 25.52,
-    "seg": 8
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 25.52,
-  "end": 26.38,
-  "text": "was also there",
-  "woerter": [
    {
     "t": "was",
-    "start": 25.52,
-    "end": 25.7,
-    "seg": 8
+    "start": 20.74,
+    "end": 20.92,
+    "seg": 5
    },
    {
     "t": "also",
-    "start": 25.7,
-    "end": 26.06,
-    "seg": 8
-   },
-   {
-    "t": "there",
-    "start": 26.06,
-    "end": 26.38,
-    "seg": 8
+    "start": 20.92,
+    "end": 21.28,
+    "seg": 5
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 26.38,
-  "end": 28.0,
-  "text": "as a camper.",
+  "start": 21.28,
+  "end": 22.34,
+  "text": "there as",
   "woerter": [
    {
-    "t": "as",
-    "start": 26.38,
-    "end": 27.12,
-    "seg": 8
+    "t": "there",
+    "start": 21.28,
+    "end": 21.58,
+    "seg": 5
    },
    {
+    "t": "as",
+    "start": 21.58,
+    "end": 22.34,
+    "seg": 5
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 22.34,
+  "end": 23.22,
+  "text": "a camper.",
+  "woerter": [
+   {
     "t": "a",
-    "start": 27.12,
-    "end": 27.62,
-    "seg": 8
+    "start": 22.34,
+    "end": 22.82,
+    "seg": 5
    },
    {
     "t": "camper.",
-    "start": 27.62,
-    "end": 28.0,
-    "seg": 8
+    "start": 22.82,
+    "end": 23.22,
+    "seg": 5
    }
   ],
   "grund": "satz"
  },
  {
-  "start": 28.98,
-  "end": 30.12,
-  "text": "And and I",
+  "start": 24.28,
+  "end": 25.28,
+  "text": "And I",
   "woerter": [
    {
     "t": "And",
-    "start": 28.98,
-    "end": 29.46,
-    "seg": 9
-   },
-   {
-    "t": "and",
-    "start": 29.46,
-    "end": 29.94,
-    "seg": 9
+    "start": 24.28,
+    "end": 24.53,
+    "seg": 6
    },
    {
     "t": "I",
-    "start": 29.94,
-    "end": 30.12,
-    "seg": 9
+    "start": 24.53,
+    "end": 25.28,
+    "seg": 6
    }
   ],
-  "grund": "voll"
+  "grund": "stille"
  },
  {
-  "start": 30.12,
-  "end": 30.98,
+  "start": 25.28,
+  "end": 25.92,
   "text": "felt like, you",
   "woerter": [
    {
     "t": "felt",
-    "start": 30.12,
-    "end": 30.32,
-    "seg": 9
+    "start": 25.28,
+    "end": 25.54,
+    "seg": 6
    },
    {
     "t": "like,",
-    "start": 30.32,
-    "end": 30.64,
-    "seg": 9
+    "start": 25.54,
+    "end": 25.92,
+    "seg": 6
    },
    {
     "t": "you",
-    "start": 30.98,
-    "end": 30.98,
-    "seg": 9
+    "start": 25.92,
+    "end": 25.92,
+    "seg": 6
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 30.98,
-  "end": 31.92,
+  "start": 25.92,
+  "end": 27.08,
   "text": "know, like even,",
   "woerter": [
    {
     "t": "know,",
-    "start": 30.98,
-    "end": 31.116,
-    "seg": 9
+    "start": 25.92,
+    "end": 26.28,
+    "seg": 6
    },
    {
     "t": "like",
-    "start": 31.116,
-    "end": 31.32,
-    "seg": 9
+    "start": 26.3,
+    "end": 26.54,
+    "seg": 6
    },
    {
     "t": "even,",
-    "start": 31.32,
-    "end": 31.8,
-    "seg": 9
+    "start": 26.54,
+    "end": 27.02,
+    "seg": 6
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 31.92,
-  "end": 32.08,
+  "start": 27.08,
+  "end": 27.28,
   "text": "you know,",
   "woerter": [
    {
     "t": "you",
-    "start": 31.92,
-    "end": 32.02,
-    "seg": 9
+    "start": 27.08,
+    "end": 27.24,
+    "seg": 6
    },
    {
     "t": "know,",
-    "start": 32.02,
-    "end": 32.08,
-    "seg": 9
+    "start": 27.24,
+    "end": 27.28,
+    "seg": 6
    }
   ],
   "grund": "abschnitt"
  },
  {
-  "start": 32.08,
-  "end": 32.72,
+  "start": 27.28,
+  "end": 27.94,
   "text": "these kids",
   "woerter": [
    {
     "t": "these",
-    "start": 32.08,
-    "end": 32.34,
-    "seg": 10
+    "start": 27.28,
+    "end": 27.54,
+    "seg": 7
    },
    {
     "t": "kids",
-    "start": 32.34,
-    "end": 32.72,
-    "seg": 10
+    "start": 27.54,
+    "end": 27.94,
+    "seg": 7
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 32.72,
-  "end": 33.52,
+  "start": 27.94,
+  "end": 28.74,
   "text": "are aware",
   "woerter": [
    {
     "t": "are",
-    "start": 32.72,
-    "end": 33.04,
-    "seg": 10
+    "start": 27.94,
+    "end": 28.28,
+    "seg": 7
    },
    {
     "t": "aware",
-    "start": 33.04,
-    "end": 33.52,
-    "seg": 10
+    "start": 28.28,
+    "end": 28.74,
+    "seg": 7
    }
   ],
   "grund": "stille"
  },
  {
-  "start": 33.52,
-  "end": 34.38,
+  "start": 28.74,
+  "end": 29.58,
   "text": "of kind of",
   "woerter": [
    {
     "t": "of",
-    "start": 33.52,
-    "end": 34.02,
-    "seg": 10
+    "start": 28.74,
+    "end": 29.3,
+    "seg": 7
    },
    {
     "t": "kind",
-    "start": 34.02,
-    "end": 34.24,
-    "seg": 10
+    "start": 29.3,
+    "end": 29.58,
+    "seg": 7
    },
    {
     "t": "of",
-    "start": 34.24,
-    "end": 34.38,
-    "seg": 10
+    "start": 29.58,
+    "end": 29.58,
+    "seg": 7
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 34.38,
-  "end": 35.12,
+  "start": 29.58,
+  "end": 30.36,
   "text": "the clouds on",
   "woerter": [
    {
     "t": "the",
-    "start": 34.38,
-    "end": 34.6,
-    "seg": 10
+    "start": 29.58,
+    "end": 29.82,
+    "seg": 7
    },
    {
     "t": "clouds",
-    "start": 34.6,
-    "end": 34.88,
-    "seg": 10
+    "start": 29.82,
+    "end": 30.1,
+    "seg": 7
    },
    {
     "t": "on",
-    "start": 34.88,
-    "end": 35.12,
-    "seg": 10
+    "start": 30.1,
+    "end": 30.36,
+    "seg": 7
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 35.12,
-  "end": 35.8,
-  "text": "the horizon.",
+  "start": 30.36,
+  "end": 30.98,
+  "text": "the horizon,",
   "woerter": [
    {
     "t": "the",
-    "start": 35.12,
-    "end": 35.3,
-    "seg": 10
+    "start": 30.36,
+    "end": 30.54,
+    "seg": 7
    },
    {
-    "t": "horizon.",
-    "start": 35.3,
-    "end": 35.8,
-    "seg": 10
+    "t": "horizon,",
+    "start": 30.54,
+    "end": 30.98,
+    "seg": 7
    }
   ],
-  "grund": "satz"
+  "grund": "abschnitt"
  },
  {
-  "start": 35.88,
-  "end": 36.08,
-  "text": "Right.",
+  "start": 31.26,
+  "end": 31.54,
+  "text": "right, they're",
   "woerter": [
    {
-    "t": "Right.",
-    "start": 35.88,
-    "end": 36.08,
-    "seg": 11
-   }
-  ],
-  "grund": "satz"
- },
- {
-  "start": 36.08,
-  "end": 36.46,
-  "text": "They're aware",
-  "woerter": [
-   {
-    "t": "They're",
-    "start": 36.08,
-    "end": 36.3,
-    "seg": 11
+    "t": "right,",
+    "start": 31.26,
+    "end": 31.3,
+    "seg": 8
    },
    {
-    "t": "aware",
-    "start": 36.3,
-    "end": 36.46,
-    "seg": 11
+    "t": "they're",
+    "start": 31.38,
+    "end": 31.54,
+    "seg": 8
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 36.46,
-  "end": 37.08,
-  "text": "that like all",
+  "start": 31.54,
+  "end": 32.12,
+  "text": "aware that like",
   "woerter": [
    {
+    "t": "aware",
+    "start": 31.54,
+    "end": 31.68,
+    "seg": 8
+   },
+   {
     "t": "that",
-    "start": 36.46,
-    "end": 36.62,
-    "seg": 11
+    "start": 31.68,
+    "end": 31.88,
+    "seg": 8
    },
    {
     "t": "like",
-    "start": 36.62,
-    "end": 36.86,
-    "seg": 11
-   },
-   {
-    "t": "all",
-    "start": 36.86,
-    "end": 37.08,
-    "seg": 11
+    "start": 31.88,
+    "end": 32.12,
+    "seg": 8
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 37.08,
-  "end": 37.72,
-  "text": "the math that",
+  "start": 32.12,
+  "end": 32.74,
+  "text": "all the math",
   "woerter": [
    {
+    "t": "all",
+    "start": 32.12,
+    "end": 32.32,
+    "seg": 8
+   },
+   {
     "t": "the",
-    "start": 37.08,
-    "end": 37.28,
-    "seg": 11
+    "start": 32.32,
+    "end": 32.5,
+    "seg": 8
    },
    {
     "t": "math",
-    "start": 37.28,
-    "end": 37.52,
-    "seg": 11
-   },
+    "start": 32.5,
+    "end": 32.74,
+    "seg": 8
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 32.74,
+  "end": 33.06,
+  "text": "that they're",
+  "woerter": [
    {
     "t": "that",
-    "start": 37.52,
-    "end": 37.72,
-    "seg": 11
+    "start": 32.74,
+    "end": 32.9,
+    "seg": 9
+   },
+   {
+    "t": "they're",
+    "start": 32.9,
+    "end": 33.06,
+    "seg": 9
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 37.72,
-  "end": 38.28,
-  "text": "they're learning",
+  "start": 33.06,
+  "end": 33.5,
+  "text": "learning",
   "woerter": [
    {
-    "t": "they're",
-    "start": 37.72,
-    "end": 37.88,
-    "seg": 11
-   },
-   {
     "t": "learning",
-    "start": 37.88,
-    "end": 38.28,
-    "seg": 11
+    "start": 33.06,
+    "end": 33.5,
+    "seg": 9
    }
   ],
   "grund": "stille"
  },
  {
-  "start": 38.28,
-  "end": 39.72,
+  "start": 33.5,
+  "end": 35.0,
   "text": "is stuff that",
   "woerter": [
    {
     "t": "is",
-    "start": 38.28,
-    "end": 38.96,
-    "seg": 12
+    "start": 33.5,
+    "end": 34.12,
+    "seg": 9
    },
    {
     "t": "stuff",
-    "start": 38.96,
-    "end": 39.24,
-    "seg": 12
+    "start": 34.12,
+    "end": 34.46,
+    "seg": 9
    },
    {
     "t": "that",
-    "start": 39.24,
-    "end": 39.72,
-    "seg": 12
+    "start": 34.46,
+    "end": 35.0,
+    "seg": 9
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 39.72,
-  "end": 40.46,
-  "text": "that AI can",
+  "start": 35.0,
+  "end": 35.66,
+  "text": "AI can",
   "woerter": [
    {
-    "t": "that",
-    "start": 39.72,
-    "end": 39.96,
-    "seg": 12
-   },
-   {
     "t": "AI",
-    "start": 39.96,
-    "end": 40.18,
-    "seg": 12
+    "start": 35.0,
+    "end": 35.36,
+    "seg": 9
    },
    {
     "t": "can",
-    "start": 40.18,
-    "end": 40.46,
-    "seg": 12
+    "start": 35.36,
+    "end": 35.66,
+    "seg": 9
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 40.46,
-  "end": 41.12,
+  "start": 35.66,
+  "end": 36.48,
   "text": "now do,",
   "woerter": [
    {
     "t": "now",
-    "start": 40.46,
-    "end": 40.68,
-    "seg": 12
+    "start": 35.66,
+    "end": 35.92,
+    "seg": 9
    },
    {
     "t": "do,",
-    "start": 40.68,
-    "end": 41.12,
-    "seg": 12
+    "start": 35.92,
+    "end": 36.48,
+    "seg": 9
    }
   ],
   "grund": "stille"
  },
  {
-  "start": 41.12,
-  "end": 41.66,
+  "start": 36.56,
+  "end": 38.26,
   "text": "you know,",
   "woerter": [
    {
     "t": "you",
-    "start": 41.12,
-    "end": 41.42,
-    "seg": 12
+    "start": 36.56,
+    "end": 36.81,
+    "seg": 10
    },
    {
     "t": "know,",
-    "start": 41.42,
-    "end": 41.66,
-    "seg": 12
+    "start": 36.81,
+    "end": 38.26,
+    "seg": 10
    }
   ],
   "grund": "stille"
  },
  {
-  "start": 43.74,
-  "end": 44.7,
+  "start": 38.5,
+  "end": 39.98,
   "text": "maybe better",
   "woerter": [
    {
     "t": "maybe",
-    "start": 43.74,
-    "end": 44.22,
-    "seg": 13
+    "start": 38.5,
+    "end": 39.48,
+    "seg": 10
    },
    {
     "t": "better",
-    "start": 44.22,
-    "end": 44.7,
-    "seg": 13
+    "start": 39.48,
+    "end": 39.98,
+    "seg": 10
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 44.7,
-  "end": 45.34,
+  "start": 39.98,
+  "end": 40.56,
   "text": "than they will",
   "woerter": [
    {
     "t": "than",
-    "start": 44.7,
-    "end": 44.94,
-    "seg": 13
+    "start": 39.98,
+    "end": 40.14,
+    "seg": 10
    },
    {
     "t": "they",
-    "start": 44.94,
-    "end": 45.14,
-    "seg": 13
+    "start": 40.14,
+    "end": 40.36,
+    "seg": 10
    },
    {
     "t": "will",
-    "start": 45.14,
-    "end": 45.34,
-    "seg": 13
+    "start": 40.36,
+    "end": 40.56,
+    "seg": 10
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 45.34,
-  "end": 46.06,
+  "start": 40.56,
+  "end": 41.26,
   "text": "ever do it.",
   "woerter": [
    {
     "t": "ever",
-    "start": 45.34,
-    "end": 45.58,
-    "seg": 13
+    "start": 40.56,
+    "end": 40.82,
+    "seg": 10
    },
    {
     "t": "do",
-    "start": 45.58,
-    "end": 45.82,
-    "seg": 13
+    "start": 40.82,
+    "end": 41.04,
+    "seg": 10
    },
    {
     "t": "it.",
-    "start": 45.82,
-    "end": 46.06,
-    "seg": 13
+    "start": 41.04,
+    "end": 41.26,
+    "seg": 10
    }
   ],
   "grund": "satz"
  },
  {
-  "start": 46.16,
-  "end": 46.64,
-  "text": "But, you know,",
+  "start": 41.46,
+  "end": 41.92,
+  "text": "But you know",
   "woerter": [
    {
-    "t": "But,",
-    "start": 46.16,
-    "end": 46.44,
-    "seg": 14
+    "t": "But",
+    "start": 41.46,
+    "end": 41.66,
+    "seg": 11
    },
    {
     "t": "you",
-    "start": 46.54,
-    "end": 46.54,
-    "seg": 14
+    "start": 41.66,
+    "end": 41.78,
+    "seg": 11
    },
    {
-    "t": "know,",
-    "start": 46.54,
-    "end": 46.64,
-    "seg": 14
+    "t": "know",
+    "start": 41.78,
+    "end": 41.92,
+    "seg": 11
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 46.64,
-  "end": 46.86,
-  "text": "you know,",
+  "start": 41.92,
+  "end": 42.08,
+  "text": "what, you know,",
   "woerter": [
    {
+    "t": "what,",
+    "start": 41.92,
+    "end": 41.92,
+    "seg": 11
+   },
+   {
     "t": "you",
-    "start": 46.64,
-    "end": 46.76,
-    "seg": 14
+    "start": 41.92,
+    "end": 41.98,
+    "seg": 11
    },
    {
     "t": "know,",
-    "start": 46.76,
-    "end": 46.86,
-    "seg": 14
+    "start": 41.98,
+    "end": 42.08,
+    "seg": 11
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 46.86,
-  "end": 47.32,
+  "start": 42.08,
+  "end": 42.54,
   "text": "they're there",
   "woerter": [
    {
     "t": "they're",
-    "start": 46.86,
-    "end": 47.08,
-    "seg": 14
+    "start": 42.08,
+    "end": 42.3,
+    "seg": 11
    },
    {
     "t": "there",
-    "start": 47.08,
-    "end": 47.32,
-    "seg": 14
+    "start": 42.3,
+    "end": 42.54,
+    "seg": 11
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 47.32,
-  "end": 47.76,
+  "start": 42.54,
+  "end": 42.98,
   "text": "to learn.",
   "woerter": [
    {
     "t": "to",
-    "start": 47.32,
-    "end": 47.56,
-    "seg": 14
+    "start": 42.54,
+    "end": 42.78,
+    "seg": 11
    },
    {
     "t": "learn.",
-    "start": 47.56,
-    "end": 47.76,
-    "seg": 14
+    "start": 42.78,
+    "end": 42.98,
+    "seg": 11
    }
   ],
   "grund": "satz"
  },
  {
-  "start": 47.84,
-  "end": 48.44,
+  "start": 43.02,
+  "end": 43.66,
   "text": "They're there to",
   "woerter": [
    {
     "t": "They're",
-    "start": 47.84,
-    "end": 48.0,
-    "seg": 15
+    "start": 43.02,
+    "end": 43.2,
+    "seg": 12
    },
    {
     "t": "there",
-    "start": 48.0,
-    "end": 48.18,
-    "seg": 15
+    "start": 43.2,
+    "end": 43.42,
+    "seg": 12
    },
    {
     "t": "to",
-    "start": 48.18,
-    "end": 48.44,
-    "seg": 15
+    "start": 43.42,
+    "end": 43.66,
+    "seg": 12
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 48.44,
-  "end": 49.16,
-  "text": "learn math.",
+  "start": 43.66,
+  "end": 44.5,
+  "text": "learn math,",
   "woerter": [
    {
     "t": "learn",
-    "start": 48.44,
-    "end": 48.64,
-    "seg": 15
+    "start": 43.66,
+    "end": 43.86,
+    "seg": 12
    },
    {
-    "t": "math.",
-    "start": 48.64,
-    "end": 49.16,
-    "seg": 15
+    "t": "math,",
+    "start": 43.86,
+    "end": 44.38,
+    "seg": 12
    }
   ],
-  "grund": "satz"
+  "grund": "voll"
  },
  {
-  "start": 49.24,
-  "end": 49.72,
-  "text": "Right.",
+  "start": 44.5,
+  "end": 44.98,
+  "text": "right?",
   "woerter": [
    {
-    "t": "Right.",
-    "start": 49.24,
-    "end": 49.72,
-    "seg": 15
+    "t": "right?",
+    "start": 44.5,
+    "end": 44.98,
+    "seg": 12
    }
   ],
   "grund": "satz"
  },
  {
-  "start": 50.04,
-  "end": 51.84,
-  "text": "And, you",
+  "start": 46.12,
+  "end": 47.26,
+  "text": "And, you know,",
   "woerter": [
    {
     "t": "And,",
-    "start": 50.04,
-    "end": 50.52,
-    "seg": 16
+    "start": 46.12,
+    "end": 46.37,
+    "seg": 13
    },
    {
     "t": "you",
-    "start": 50.52,
-    "end": 51.84,
-    "seg": 16
-   }
-  ],
-  "grund": "stille"
- },
- {
-  "start": 51.84,
-  "end": 52.44,
-  "text": "know, and they",
-  "woerter": [
-   {
-    "t": "know,",
-    "start": 51.84,
-    "end": 52.0,
-    "seg": 16
+    "start": 46.37,
+    "end": 47.06,
+    "seg": 13
    },
    {
+    "t": "know,",
+    "start": 47.06,
+    "end": 47.24,
+    "seg": 13
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 47.26,
+  "end": 47.88,
+  "text": "and they put",
+  "woerter": [
+   {
     "t": "and",
-    "start": 52.0,
-    "end": 52.28,
-    "seg": 16
+    "start": 47.26,
+    "end": 47.52,
+    "seg": 13
    },
    {
     "t": "they",
-    "start": 52.28,
-    "end": 52.44,
-    "seg": 16
+    "start": 47.52,
+    "end": 47.68,
+    "seg": 13
+   },
+   {
+    "t": "put",
+    "start": 47.68,
+    "end": 47.88,
+    "seg": 13
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 52.44,
-  "end": 53.06,
-  "text": "put all their",
+  "start": 47.88,
+  "end": 48.3,
+  "text": "all their",
   "woerter": [
    {
-    "t": "put",
-    "start": 52.44,
-    "end": 52.64,
-    "seg": 16
-   },
-   {
     "t": "all",
-    "start": 52.64,
-    "end": 52.86,
-    "seg": 16
+    "start": 47.88,
+    "end": 48.08,
+    "seg": 13
    },
    {
     "t": "their",
-    "start": 52.86,
-    "end": 53.06,
-    "seg": 16
+    "start": 48.08,
+    "end": 48.3,
+    "seg": 13
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 53.06,
-  "end": 54.04,
+  "start": 48.3,
+  "end": 49.24,
   "text": "devices away",
   "woerter": [
    {
     "t": "devices",
-    "start": 53.06,
-    "end": 53.5,
-    "seg": 16
+    "start": 48.3,
+    "end": 48.72,
+    "seg": 13
    },
    {
     "t": "away",
-    "start": 53.5,
-    "end": 54.04,
-    "seg": 16
+    "start": 48.72,
+    "end": 49.24,
+    "seg": 13
    }
   ],
   "grund": "abschnitt"
  },
  {
-  "start": 54.04,
-  "end": 54.74,
+  "start": 49.24,
+  "end": 50.02,
   "text": "and we're just",
   "woerter": [
    {
     "t": "and",
-    "start": 54.04,
-    "end": 54.36,
-    "seg": 17
+    "start": 49.24,
+    "end": 49.56,
+    "seg": 14
    },
    {
     "t": "we're",
-    "start": 54.36,
-    "end": 54.52,
-    "seg": 17
+    "start": 49.56,
+    "end": 49.74,
+    "seg": 14
    },
    {
     "t": "just",
-    "start": 54.52,
-    "end": 54.74,
-    "seg": 17
+    "start": 49.74,
+    "end": 50.02,
+    "seg": 14
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 54.74,
-  "end": 55.72,
+  "start": 50.02,
+  "end": 51.1,
   "text": "using, you know,",
   "woerter": [
    {
     "t": "using,",
-    "start": 54.74,
-    "end": 55.26,
-    "seg": 17
+    "start": 50.02,
+    "end": 50.52,
+    "seg": 14
    },
    {
     "t": "you",
-    "start": 55.26,
-    "end": 55.46,
-    "seg": 17
+    "start": 50.54,
+    "end": 50.64,
+    "seg": 14
    },
    {
     "t": "know,",
-    "start": 55.46,
-    "end": 55.68,
-    "seg": 17
+    "start": 50.64,
+    "end": 50.88,
+    "seg": 14
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 55.72,
-  "end": 56.66,
+  "start": 51.1,
+  "end": 51.92,
   "text": "using the board,",
   "woerter": [
    {
     "t": "using",
-    "start": 55.72,
-    "end": 56.02,
-    "seg": 17
+    "start": 51.1,
+    "end": 51.24,
+    "seg": 14
    },
    {
     "t": "the",
-    "start": 56.02,
-    "end": 56.3,
-    "seg": 17
+    "start": 51.24,
+    "end": 51.5,
+    "seg": 14
    },
    {
     "t": "board,",
-    "start": 56.3,
-    "end": 56.66,
-    "seg": 17
+    "start": 51.5,
+    "end": 51.92,
+    "seg": 14
    }
   ],
   "grund": "stille"
  },
  {
-  "start": 56.66,
-  "end": 57.66,
+  "start": 52.3,
+  "end": 52.86,
   "text": "using pen",
   "woerter": [
    {
     "t": "using",
-    "start": 56.66,
-    "end": 57.36,
-    "seg": 18
+    "start": 52.3,
+    "end": 52.56,
+    "seg": 15
    },
    {
     "t": "pen",
-    "start": 57.36,
-    "end": 57.66,
-    "seg": 18
+    "start": 52.56,
+    "end": 52.86,
+    "seg": 15
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 57.66,
-  "end": 58.34,
+  "start": 52.86,
+  "end": 53.6,
   "text": "and paper.",
   "woerter": [
    {
     "t": "and",
-    "start": 57.66,
-    "end": 57.9,
-    "seg": 18
+    "start": 52.86,
+    "end": 53.08,
+    "seg": 15
    },
    {
     "t": "paper.",
-    "start": 57.9,
-    "end": 58.34,
-    "seg": 18
+    "start": 53.08,
+    "end": 53.6,
+    "seg": 15
    }
   ],
   "grund": "satz"
  },
  {
-  "start": 59.42,
-  "end": 60.52,
-  "text": "And and for",
+  "start": 54.74,
+  "end": 56.34,
+  "text": "And for me,",
   "woerter": [
    {
     "t": "And",
-    "start": 59.42,
-    "end": 59.67,
-    "seg": 19
-   },
-   {
-    "t": "and",
-    "start": 59.67,
-    "end": 60.12,
-    "seg": 19
+    "start": 54.74,
+    "end": 55.22,
+    "seg": 16
    },
    {
     "t": "for",
-    "start": 60.12,
-    "end": 60.52,
-    "seg": 19
+    "start": 55.22,
+    "end": 55.7,
+    "seg": 16
+   },
+   {
+    "t": "me,",
+    "start": 55.7,
+    "end": 56.34,
+    "seg": 16
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 60.52,
-  "end": 61.7,
-  "text": "me, you know,",
+  "start": 56.34,
+  "end": 57.02,
+  "text": "you know,",
   "woerter": [
    {
-    "t": "me,",
-    "start": 60.52,
-    "end": 61.06,
-    "seg": 19
-   },
-   {
     "t": "you",
-    "start": 61.12,
-    "end": 61.344,
-    "seg": 19
+    "start": 56.34,
+    "end": 56.572,
+    "seg": 16
    },
    {
     "t": "know,",
-    "start": 61.344,
-    "end": 61.68,
-    "seg": 19
+    "start": 56.572,
+    "end": 56.92,
+    "seg": 16
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 61.7,
-  "end": 62.6,
+  "start": 57.02,
+  "end": 57.78,
   "text": "understanding",
   "woerter": [
    {
     "t": "understanding",
-    "start": 61.7,
-    "end": 62.6,
-    "seg": 19
+    "start": 57.02,
+    "end": 57.78,
+    "seg": 16
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 62.6,
-  "end": 63.02,
+  "start": 57.78,
+  "end": 58.24,
   "text": "math",
   "woerter": [
    {
     "t": "math",
-    "start": 62.6,
-    "end": 63.02,
+    "start": 57.78,
+    "end": 58.24,
+    "seg": 16
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 58.24,
+  "end": 59.04,
+  "text": "was always a",
+  "woerter": [
+   {
+    "t": "was",
+    "start": 58.24,
+    "end": 58.5,
+    "seg": 17
+   },
+   {
+    "t": "always",
+    "start": 58.5,
+    "end": 58.86,
+    "seg": 17
+   },
+   {
+    "t": "a",
+    "start": 58.86,
+    "end": 59.04,
+    "seg": 17
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 59.04,
+  "end": 59.52,
+  "text": "source of",
+  "woerter": [
+   {
+    "t": "source",
+    "start": 59.04,
+    "end": 59.26,
+    "seg": 17
+   },
+   {
+    "t": "of",
+    "start": 59.26,
+    "end": 59.52,
+    "seg": 17
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 59.52,
+  "end": 60.32,
+  "text": "meaning in life.",
+  "woerter": [
+   {
+    "t": "meaning",
+    "start": 59.52,
+    "end": 59.74,
+    "seg": 17
+   },
+   {
+    "t": "in",
+    "start": 59.74,
+    "end": 60.02,
+    "seg": 17
+   },
+   {
+    "t": "life.",
+    "start": 60.02,
+    "end": 60.32,
+    "seg": 17
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 60.92,
+  "end": 61.58,
+  "text": "And seeing this",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 60.92,
+    "end": 61.1,
+    "seg": 18
+   },
+   {
+    "t": "seeing",
+    "start": 61.1,
+    "end": 61.34,
+    "seg": 18
+   },
+   {
+    "t": "this",
+    "start": 61.34,
+    "end": 61.58,
+    "seg": 18
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 61.58,
+  "end": 62.62,
+  "text": "new generation",
+  "woerter": [
+   {
+    "t": "new",
+    "start": 61.58,
+    "end": 61.82,
+    "seg": 18
+   },
+   {
+    "t": "generation",
+    "start": 61.82,
+    "end": 62.62,
+    "seg": 18
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 62.62,
+  "end": 63.48,
+  "text": "that",
+  "woerter": [
+   {
+    "t": "that",
+    "start": 62.62,
+    "end": 63.48,
+    "seg": 18
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 63.48,
+  "end": 64.16,
+  "text": "says, you know,",
+  "woerter": [
+   {
+    "t": "says,",
+    "start": 63.48,
+    "end": 63.9,
+    "seg": 18
+   },
+   {
+    "t": "you",
+    "start": 63.9,
+    "end": 64.02,
+    "seg": 18
+   },
+   {
+    "t": "know,",
+    "start": 64.02,
+    "end": 64.16,
+    "seg": 18
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 64.2,
+  "end": 64.86,
+  "text": "the hell with",
+  "woerter": [
+   {
+    "t": "the",
+    "start": 64.2,
+    "end": 64.36,
+    "seg": 19
+   },
+   {
+    "t": "hell",
+    "start": 64.36,
+    "end": 64.5,
+    "seg": 19
+   },
+   {
+    "t": "with",
+    "start": 64.5,
+    "end": 64.86,
+    "seg": 19
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 64.86,
+  "end": 65.62,
+  "text": "everything, you",
+  "woerter": [
+   {
+    "t": "everything,",
+    "start": 64.86,
+    "end": 65.32,
+    "seg": 19
+   },
+   {
+    "t": "you",
+    "start": 65.48,
+    "end": 65.62,
+    "seg": 19
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 65.62,
+  "end": 65.76,
+  "text": "know,",
+  "woerter": [
+   {
+    "t": "know,",
+    "start": 65.62,
+    "end": 65.76,
     "seg": 19
    }
   ],
   "grund": "abschnitt"
  },
  {
-  "start": 63.02,
-  "end": 63.82,
-  "text": "was always a",
-  "woerter": [
-   {
-    "t": "was",
-    "start": 63.02,
-    "end": 63.28,
-    "seg": 20
-   },
-   {
-    "t": "always",
-    "start": 63.28,
-    "end": 63.6,
-    "seg": 20
-   },
-   {
-    "t": "a",
-    "start": 63.6,
-    "end": 63.82,
-    "seg": 20
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 63.82,
-  "end": 64.3,
-  "text": "source of",
-  "woerter": [
-   {
-    "t": "source",
-    "start": 63.82,
-    "end": 64.04,
-    "seg": 20
-   },
-   {
-    "t": "of",
-    "start": 64.04,
-    "end": 64.3,
-    "seg": 20
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 64.3,
-  "end": 65.12,
-  "text": "meaning in life.",
-  "woerter": [
-   {
-    "t": "meaning",
-    "start": 64.3,
-    "end": 64.52,
-    "seg": 20
-   },
-   {
-    "t": "in",
-    "start": 64.52,
-    "end": 64.8,
-    "seg": 20
-   },
-   {
-    "t": "life.",
-    "start": 64.8,
-    "end": 65.12,
-    "seg": 20
-   }
-  ],
-  "grund": "satz"
- },
- {
   "start": 65.86,
-  "end": 66.38,
-  "text": "And seeing this",
+  "end": 66.36,
+  "text": "we want to",
   "woerter": [
-   {
-    "t": "And",
-    "start": 65.86,
-    "end": 65.9,
-    "seg": 21
-   },
-   {
-    "t": "seeing",
-    "start": 65.9,
-    "end": 66.1,
-    "seg": 21
-   },
-   {
-    "t": "this",
-    "start": 66.1,
-    "end": 66.38,
-    "seg": 21
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 66.38,
-  "end": 67.4,
-  "text": "new generation",
-  "woerter": [
-   {
-    "t": "new",
-    "start": 66.38,
-    "end": 66.58,
-    "seg": 21
-   },
-   {
-    "t": "generation",
-    "start": 66.58,
-    "end": 67.4,
-    "seg": 21
-   }
-  ],
-  "grund": "stille"
- },
- {
-  "start": 67.4,
-  "end": 68.7,
-  "text": "that that says,",
-  "woerter": [
-   {
-    "t": "that",
-    "start": 67.4,
-    "end": 68.18,
-    "seg": 21
-   },
-   {
-    "t": "that",
-    "start": 68.18,
-    "end": 68.5,
-    "seg": 21
-   },
-   {
-    "t": "says,",
-    "start": 68.5,
-    "end": 68.7,
-    "seg": 21
-   }
-  ],
-  "grund": "abschnitt"
- },
- {
-  "start": 68.7,
-  "end": 69.16,
-  "text": "you know, the",
-  "woerter": [
-   {
-    "t": "you",
-    "start": 68.7,
-    "end": 68.82,
-    "seg": 22
-   },
-   {
-    "t": "know,",
-    "start": 68.82,
-    "end": 68.94,
-    "seg": 22
-   },
-   {
-    "t": "the",
-    "start": 69.0,
-    "end": 69.16,
-    "seg": 22
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 69.16,
-  "end": 69.64,
-  "text": "hell with",
-  "woerter": [
-   {
-    "t": "hell",
-    "start": 69.16,
-    "end": 69.28,
-    "seg": 22
-   },
-   {
-    "t": "with",
-    "start": 69.28,
-    "end": 69.64,
-    "seg": 22
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 69.64,
-  "end": 70.12,
-  "text": "everything.",
-  "woerter": [
-   {
-    "t": "everything.",
-    "start": 69.64,
-    "end": 70.12,
-    "seg": 22
-   }
-  ],
-  "grund": "satz"
- },
- {
-  "start": 70.3,
-  "end": 70.8,
-  "text": "You know, we",
-  "woerter": [
-   {
-    "t": "You",
-    "start": 70.3,
-    "end": 70.44,
-    "seg": 23
-   },
-   {
-    "t": "know,",
-    "start": 70.44,
-    "end": 70.56,
-    "seg": 23
-   },
    {
     "t": "we",
-    "start": 70.68,
-    "end": 70.8,
-    "seg": 23
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 70.8,
-  "end": 71.14,
-  "text": "want to",
-  "woerter": [
+    "start": 65.86,
+    "end": 66.02,
+    "seg": 20
+   },
    {
     "t": "want",
-    "start": 70.8,
-    "end": 70.98,
-    "seg": 23
+    "start": 66.02,
+    "end": 66.2,
+    "seg": 20
    },
    {
     "t": "to",
-    "start": 70.98,
-    "end": 71.14,
-    "seg": 23
+    "start": 66.2,
+    "end": 66.36,
+    "seg": 20
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 71.14,
-  "end": 71.74,
-  "text": "learn math.",
+  "start": 66.36,
+  "end": 66.98,
+  "text": "learn math,",
   "woerter": [
    {
     "t": "learn",
-    "start": 71.14,
-    "end": 71.3,
-    "seg": 23
+    "start": 66.36,
+    "end": 66.52,
+    "seg": 20
    },
    {
-    "t": "math.",
-    "start": 71.3,
-    "end": 71.74,
-    "seg": 23
-   }
-  ],
-  "grund": "satz"
- },
- {
-  "start": 72.08,
-  "end": 72.56,
-  "text": "You know, of",
-  "woerter": [
-   {
-    "t": "You",
-    "start": 72.08,
-    "end": 72.2,
-    "seg": 24
-   },
-   {
-    "t": "know,",
-    "start": 72.2,
-    "end": 72.32,
-    "seg": 24
-   },
-   {
-    "t": "of",
-    "start": 72.34,
-    "end": 72.56,
-    "seg": 24
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 72.56,
-  "end": 73.2,
-  "text": "course, that",
-  "woerter": [
-   {
-    "t": "course,",
-    "start": 72.56,
-    "end": 72.82,
-    "seg": 24
-   },
-   {
-    "t": "that",
-    "start": 72.98,
-    "end": 73.2,
-    "seg": 24
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 73.2,
-  "end": 74.78,
-  "text": "that also",
-  "woerter": [
-   {
-    "t": "that",
-    "start": 73.2,
-    "end": 74.4,
-    "seg": 24
-   },
-   {
-    "t": "also",
-    "start": 74.4,
-    "end": 74.78,
-    "seg": 24
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 74.78,
-  "end": 75.24,
-  "text": "gave me",
-  "woerter": [
-   {
-    "t": "gave",
-    "start": 74.78,
-    "end": 75.02,
-    "seg": 24
-   },
-   {
-    "t": "me",
-    "start": 75.02,
-    "end": 75.24,
-    "seg": 24
-   }
-  ],
-  "grund": "abschnitt"
- },
- {
-  "start": 75.24,
-  "end": 76.14,
-  "text": "a very strong",
-  "woerter": [
-   {
-    "t": "a",
-    "start": 75.24,
-    "end": 75.34,
-    "seg": 25
-   },
-   {
-    "t": "very",
-    "start": 75.34,
-    "end": 75.64,
-    "seg": 25
-   },
-   {
-    "t": "strong",
-    "start": 75.64,
-    "end": 76.14,
-    "seg": 25
+    "t": "math,",
+    "start": 66.52,
+    "end": 66.98,
+    "seg": 20
    }
   ],
   "grund": "stille"
  },
  {
-  "start": 76.14,
-  "end": 77.12,
+  "start": 67.26,
+  "end": 67.58,
+  "text": "you know,",
+  "woerter": [
+   {
+    "t": "you",
+    "start": 67.26,
+    "end": 67.4,
+    "seg": 20
+   },
+   {
+    "t": "know,",
+    "start": 67.4,
+    "end": 67.54,
+    "seg": 20
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 67.58,
+  "end": 68.08,
+  "text": "of course,",
+  "woerter": [
+   {
+    "t": "of",
+    "start": 67.58,
+    "end": 67.78,
+    "seg": 20
+   },
+   {
+    "t": "course,",
+    "start": 67.78,
+    "end": 68.08,
+    "seg": 20
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 69.06,
+  "end": 70.24,
+  "text": "that also gave",
+  "woerter": [
+   {
+    "t": "that",
+    "start": 69.06,
+    "end": 69.54,
+    "seg": 21
+   },
+   {
+    "t": "also",
+    "start": 69.54,
+    "end": 69.98,
+    "seg": 21
+   },
+   {
+    "t": "gave",
+    "start": 69.98,
+    "end": 70.24,
+    "seg": 21
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 70.24,
+  "end": 70.56,
+  "text": "me a",
+  "woerter": [
+   {
+    "t": "me",
+    "start": 70.24,
+    "end": 70.46,
+    "seg": 21
+   },
+   {
+    "t": "a",
+    "start": 70.46,
+    "end": 70.56,
+    "seg": 21
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 70.56,
+  "end": 71.44,
+  "text": "very strong",
+  "woerter": [
+   {
+    "t": "very",
+    "start": 70.56,
+    "end": 70.88,
+    "seg": 21
+   },
+   {
+    "t": "strong",
+    "start": 70.88,
+    "end": 71.44,
+    "seg": 21
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 71.44,
+  "end": 72.32,
   "text": "sense of meaning.",
   "woerter": [
    {
     "t": "sense",
-    "start": 76.14,
-    "end": 76.62,
-    "seg": 25
+    "start": 71.44,
+    "end": 71.82,
+    "seg": 21
    },
    {
     "t": "of",
-    "start": 76.62,
-    "end": 76.88,
-    "seg": 25
+    "start": 71.82,
+    "end": 72.12,
+    "seg": 21
    },
    {
     "t": "meaning.",
-    "start": 76.88,
-    "end": 77.12,
-    "seg": 25
+    "start": 72.12,
+    "end": 72.32,
+    "seg": 21
    }
   ],
   "grund": "satz"

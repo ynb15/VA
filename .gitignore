@@ -2,3 +2,7 @@ video/shorts/*.mp4
 video/transkripte/*.vtt
 __pycache__/
 lernen/.frisch/
+
+# Sein Outro (137 MB) gehoert nicht in git. Quelle steht in
+# video/marke/HERKUNFT.md und in den Auftragsdateien.
+video/marke/*.mov
