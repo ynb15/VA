@@ -396,12 +396,19 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         # natuerlich ausgeschrieben werden, nicht einfach rausnehmen."
         # `max(..., start + 1 ms)` hebt nur Woerter ohne Laenge an; ein Wort,
         # das genau an der Grenze endet, bleibt weiterhin draussen.
-        woerter = [w for w in (c.get("woerter") or [])
-                   if w["t"].strip()
-                   and max(w["end"], w["start"] + 0.001) > c["start"]
+        alle = [w for w in (c.get("woerter") or []) if w["t"].strip()]
+        paare_roh = [(_anzeige(w["t"], gross), w) for w in alle]
+        paare_roh = [(t, w) for t, w in paare_roh if t]
+        roh = [t for t, _ in paare_roh]
+        # Eine Einblendung, die ueber einen Kameraschnitt laeuft, zerlegt
+        # `cues_an_lippen` in zwei Teile — derselbe Text an zwei Hoehen. Dafuer
+        # muss die GANZE Zeile stehen bleiben und nur die Hervorhebung dem
+        # Fenster folgen. Vorher wurden die Woerter vor dem Schnitt schon hier
+        # weggefiltert: aus „REAL STRENGTH IS" wurde fuer zwei Bilder ein
+        # einzelnes „IS", mitten im Satz (22.10.2026).
+        woerter = [(k, w) for k, (_, w) in enumerate(paare_roh)
+                   if max(w["end"], w["start"] + 0.001) > c["start"]
                    and w["start"] < c["end"]]
-        roh = [_anzeige(w["t"], gross) for w in woerter]
-        roh = [w for w in roh if w]
         if not roh:
             # Einblendungen ohne Wortzeiten — so kommen sie aus --srt — haben
             # kein `woerter`. Dann gibt es nichts hervorzuheben, aber die
@@ -425,12 +432,13 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         if not woerter:
             zeile(c["start"], c["end"], bauen, c.get("lippe"), fs)
             continue
-        for i, w in enumerate(woerter):
-            von = max(w["start"], c["start"]) if i else c["start"]
-            bis = min(woerter[i + 1]["start"], c["end"]) if i + 1 < len(woerter) else c["end"]
+        for j, (k, w) in enumerate(woerter):
+            von = max(w["start"], c["start"]) if j else c["start"]
+            bis = (min(woerter[j + 1][1]["start"], c["end"])
+                   if j + 1 < len(woerter) else c["end"])
             if bis - von <= 0.02:
                 continue
-            zeile(von, bis, lambda kontur, i=i: bauen(kontur, i),
+            zeile(von, bis, lambda kontur, k=k: bauen(kontur, k),
                   c.get("lippe"), fs)
 
     Path(path).write_text(head + "\n".join(lines) + "\n", encoding="utf-8")

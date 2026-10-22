@@ -499,3 +499,39 @@ deckt, fehlt eine zweite Messgroesse.
 
 `musik_drunter.py` nimmt die Einblendung jetzt als `--blende-ein` entgegen,
 damit sie nicht mehr im Code festhaengt.
+
+## 22.10.2026, 21:00 — Eine Einblendung, die ueber einen Kameraschnitt laeuft, verlor ihre Woerter.
+
+Gefunden am Hypermaskulinitaets-Short, nicht gemeldet: zwei Bilder lang stand
+mitten im Satz ein einzelnes **„IS"** im Bild, wo „REAL STRENGTH IS" stehen
+sollte.
+
+Ursache: `cues_an_lippen` teilt jede Einblendung, die ueber einen Kameraschnitt
+laeuft, in zwei Teile — laut eigener Beschreibung *„derselbe Text, an zwei
+Hoehen"*, damit die Zeile mit der Kamera mitspringt. `build_ass` filterte die
+Woerter danach aber am Fenster des Teilstuecks:
+
+```python
+woerter = [w for w in c["woerter"]
+           if max(w["end"], w["start"] + 0.001) > c["start"]
+           and w["start"] < c["end"]]
+roh = [_anzeige(w["t"], gross) for w in woerter]
+```
+
+Die Zeile wird aus `roh` gebaut. Beim zweiten Teilstueck (Clipzeit
+51,50–51,70) ueberlebte nur das Wort, das in diesem Fenster liegt — „is". Die
+beiden davor fielen aus dem Bild. Die Beschreibung versprach also etwas, was
+der Code nicht tat.
+
+Behoben: `roh` kommt jetzt aus **allen** Woertern der Einblendung, und nur die
+Hervorhebung folgt dem Fenster. Fuer ungeteilte Einblendungen aendert sich
+nichts — dort sind beide Mengen gleich.
+
+**Das betrifft nicht nur diesen Short.** Am Sutcliffe-Short „Meaning" wurden
+102 Einblendungen zu 106 ASS-Zeilen, also vier davon geteilt — dort stand
+dasselbe Problem im Bild und ist niemandem aufgefallen, weil die Teilstuecke
+kurz sind. Beim naechsten Lauf dieses Shorts ist es mit behoben.
+
+→ betrifft: jeden Short mit mehr als einer Kameraeinstellung. Und als Lehre:
+wenn eine Funktion in ihrer eigenen Beschreibung etwas verspricht
+(„derselbe Text"), gehoert genau das nachgeprueft, statt es zu glauben.
