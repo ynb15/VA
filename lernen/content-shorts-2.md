@@ -6,6 +6,52 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-22 — Nachtrag nach der Aaronson-Uebergabe
+
+- **Dieselbe Stelle ist heute zweimal geschnitten worden, von Shorts I und von
+  mir, unabhaengig und auf 0,4 Sekunden genau gleich.** Shorts I' „Is AI
+  safe?": Einstieg Masterzeit **5776,50**, **raus 5810,20–5824,35** (der
+  Eltern-Teil), Ausstieg **5831,00**. Meine Fassung C, am selben Vormittag:
+  Stueck A **5801,88–5810,22**, Stueck B **5823,98–5830,95** — derselbe
+  Schnitt, dieselbe Auslassung, dieselben Woerter.
+  **Beide Male war der Ausloeser derselbe Satz von Yannick** („die
+  Parent-Analogie, die war fehl am Platz"), nur in zwei Gespraechen. Der
+  Lernkanal faengt Befunde ab, **laufende Auftraege faengt er nicht ab** —
+  zwischen 06:40 und 15:54 weiss niemand, woran der andere gerade sitzt.
+  **Billigste Gegenmassnahme: vor dem Schneiden einmal `git log --all --since`
+  ueber die fremden Branches und in die Kandidatenlisten sehen**, nicht nur in
+  `LERNEN.md`.
+  → betrifft: alle
+- **`abnahme.py` stuerzt ab, statt den Grund zu nennen, wenn `ortscheck.py`
+  nicht neben ihm liegt.** Zeile 97: `orts.stdout.strip().splitlines()[-1]`
+  auf leerer Ausgabe gibt `IndexError: list index out of range`. Der Absturz
+  kommt **nach** den bestandenen Pruefungen, sieht also aus wie ein
+  durchgefallener Short. Mit `ortscheck.py` daneben laeuft alles durch.
+  **Da das Werkzeug seit heute Pflicht ist, trifft das jeden Agenten, der es
+  nicht aus demselben Ordner aufruft.** An Shorts I gemeldet, nicht selbst
+  geaendert — die Datei gehoert ihm.
+  → betrifft: content-*, alle
+- **Meine drei gelieferten Shorts bestehen die neue Abnahme.** `aigod-B2`,
+  `aigod-C`, `aigod-2027`: Format 1080×1920 · **Tonquelle 48 kHz** (also die
+  geschnittene Folge, nicht die 44,1-kHz-Kameradatei) · Outro vorhanden ·
+  Untertitel vorhanden · Ortscheck sauber. Rueckgabe 0.
+  → betrifft: content-*
+- **Zwei Agenten geben denselben Aaronson-Folgen unterschiedliches Tempo.**
+  Shorts I rendert mit `--tempo 1.15` (der Vorgabewert des Renderers), ich mit
+  **1,0999** — gemessen als der Faktor, mit dem seine veroeffentlichte Folge
+  gegen den Master laeuft, und deckungsgleich mit seiner eigenen Ansage an die
+  Cutterin vom 14.09.: *„oder zumindest auf 1,1"*. **Der Unterschied sind
+  4,6 %.** Seine Abnahme des 1,15-Shorts steht; welcher Wert kuenftig gilt,
+  entscheidet er, aber **zwei Werte nebeneinander auf einem Kanal sind kein
+  Ergebnis, sondern ein offener Punkt.**
+  → betrifft: content-*, alfred
+- **`fuellwoerter.py` existiert seit heute auf `claude/content-assistant`.**
+  Das ist genau die Stelle, die ich an drei Shorts als offen gemeldet habe
+  („die Fuellwoerter stehen im Bild, sauber waere Bild und Ton zusammen zu
+  schneiden"). **Vor der naechsten Runde dort nachsehen, statt es noch einmal
+  als offen zu melden.**
+  → betrifft: content-*
+
 ## 2026-10-22
 
 - **Fuer die Aaronson-Folge existiert kein 4K — der „4K"-Clip ist
