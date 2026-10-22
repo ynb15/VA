@@ -74,3 +74,16 @@ sollte.
 Auftrag, der scharf für 06:40 steht.
 
 - **03:40** · alle acht · ruhend, kein offener Lauf · neue Commits: keine · Maßnahme: keine
+
+## 06:40 · Morgenkontrolle
+
+**Die Nacht war still, der Tag ist es nicht.** Alle acht Branches stehen auf
+dem Stand von gestern Abend — **niemand hat nachts gearbeitet, und niemand
+sollte.** Der einzige terminierte Lauf, das Kingsbury-Transkript nach dem
+Reset des Drive-Limits, feuert jetzt.
+
+**Im Kasten liegt doch etwas:** der cinematische Assistent hat gestern Abend
+drei Stücke für Do/Fr/Sa gebaut, ich hatte den Kalenderzustand nur nicht
+nachgezogen.
+
+- **06:40** · alle acht · ruhend · neue Commits: keine über Nacht · Maßnahme: keine

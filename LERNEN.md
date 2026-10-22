@@ -45,6 +45,64 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 8 — 22.10.2026, 06:40 Kapstadt · der Morgen
+
+- **KORREKTUR AN MEINER EIGENEN VERTEILUNG VON GESTERN: die Wohnort-Regel ist
+  enger gefasst, als ich sie weitergegeben habe.** Seine Präzisierung vom
+  21.10.: *„Cape Town oder South Africa — ich möchte es halt nur nicht genauer
+  veröffentlichen."* **Stadt und Land dürfen fallen, alles Feinere nicht.**
+  Ich hatte gestern pauschal „kein Short darf verraten, wo er wohnt" verteilt;
+  in der ersten `ortscheck.py` standen „cape town" und „south africa" in der
+  Sperrliste — **das hätte jeden Short mit seiner Herkunftsgeschichte
+  blockiert.** Jetzt zwei Stufen: `GROB` (Cape Town, South Africa, Western
+  Cape, Tafelberg) wird nur gezählt, `ORTE` (Scarborough, Kommetjie, Misty
+  Cliffs, Noordhoek, Fish Hoek, Muizenberg …) schlägt an.
+  **Die Zweistufigkeit liegt auf `content-gastauftritte` und gehört nach
+  `content-schlicht` zurück**, wo die Datei beheimatet ist.
+  → betrifft: alle
+- **Die zusammengeführte Renderer-Fassung hat zwei Regressionen gegen
+  Entscheidungen, die hier schon standen.** Aufgefallen, weil er am 21.10. am
+  Sutcliffe-Short ein Fragezeichen bestellte (*„da würde ich eigentlich gerne
+  ein Fragezeichen haben. Das kannst du dir merken bei dieser Frage."*) — und
+  keines im Bild stand. `_anzeige()` streift in `66de26b` wieder **alle**
+  schließenden Satzzeichen ab; die feinere Regel (nur `. , ; : …` weg, `?` und
+  `!` bleiben) war am 20.10. aus **zwei** Ansagen desselben Abends hergeleitet.
+  **Ein Merge kann eine Entscheidung zurücknehmen, ohne dass ein Test
+  anschlägt** — nach jedem Zusammenführen die Regeln aus `LERNEN.md` gegen den
+  Code prüfen, nicht nur ob er läuft.
+  → betrifft: content-*
+- **Drei weitere Fallen im Renderer, alle gemessen:** `--srt` zusammen mit
+  `--srt-out` bricht ab · eine **wiederverwendete SRT kostet das gelbe
+  Aktivwort** · beim Zurückspielen einer SRT wird die Zeitbasis **mal Tempo**
+  gerechnet, nicht geteilt.
+  → betrifft: content-*
+- **Ein Preset zu übernehmen heißt nicht, es auf abgenommene Stücke
+  anzuwenden.** Zwei Agenten sind unabhängig darauf gekommen: der cinematische
+  rendert die drei Rückkatalog-Stücke bewusst **im warmen, von ihm
+  abgenommenen Look**, obwohl sein Preset entsättigt-kühl ist — weil zwei
+  Shorts derselben Folge nebeneinander gleich aussehen sollen. **Richtig so,
+  und offengelegt statt stillschweigend entschieden.**
+  → betrifft: alle Content-Agenten
+- **Thumbnails, vier Maße gegen das DOAC-Vorbild, das er selbst benannt hat**
+  (`xtR2sTjysPc`): Kopfgröße **62 % / 65 %** statt 70 % / 69 %, Pupillenabstand
+  **146 / 150** statt 155 / 171 · **unter dem Kinn bleiben 120 px, nicht 240**
+  (Hals und Schulter tragen keine Mimik) · **„guckt ins Leere" ist die
+  Blickrichtung der Augen, nicht die Kopfdrehung** · und beides wird **am
+  fertigen JPG** abgelesen, nicht am Detektor oder am Ausschnitt.
+  **Wenn er ein Vorbild benennt, wird daran gemessen** — nicht am eigenen
+  Augenmaß.
+  → betrifft: thumbnails, content-*
+- **Francis Chouler fällt als Quelle aus: es gibt keinen Master im Drive.**
+  Im Ordner liegen fünf Dateien — zwei Transkripte, das Folgendokument, zwei
+  Feedback-Bilder, **kein Video**. Dreifach gesucht (Titel, alle Videodateien
+  Januar–Juni, Elternordner). Von YouTube ist wegen der Bot-Prüfung nichts zu
+  holen. **Craig Makhosi liegt nur als 3:58-Ausschnitt vor**, nicht als Folge.
+  **Der Rückkatalog ist also kleiner, als die Zahl „38 veröffentlichte Folgen"
+  verspricht** — veröffentlicht heißt nicht, dass das Material noch da ist.
+  → betrifft: content-*, youtube-manager
+
+---
+
 ## Ausgabe 7 — 21.10.2026, 16:10 Kapstadt · der tägliche Sweep
 
 - **Marian Goodells Folge hat nur die halbe Tonaufnahme.** Aus seinem Postfach,

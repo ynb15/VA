@@ -55,6 +55,112 @@ Neuester Eintrag oben.
   auf **jeder** Seite. Browser `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
   → betrifft: alle
 
+- **Der Plan liefert die Lippe, der Renderer setzt die Zeile GENAU dorthin —
+  der Abstand ist ein eigenes Flag und steht auf 0.** Seine Beanstandung vom
+  21.10.: *„Die Schrift ist überwiegend auch direkt auf Davids Lippen. Das
+  ist nicht optimal, das habe ich dir auch schon gesagt."* Gemessen: Plan
+  meldet `Lippe 1248` (65 % der Hoehe), und das Protokoll schreibt
+  `0 px unter der Lippe`. An drei Testbildern verglichen (0 / 120 / 200 px):
+  bei **0** sitzt die Zeile auf dem Bart, bei **120** frei darunter mit Luft
+  zum Logo, bei **200** draengt sie ans Logo. **`--tiefer 120` ist der Wert
+  fuer dieses Studio.** Seine Ansage „nicht direkt unter seiner Lippe" war
+  notiert, aber nirgends eingestellt — eine Regel, die in keinem Flag steht,
+  wirkt nicht.
+  → betrifft: alle Content-Agenten
+
+- **Ein Preset zu uebernehmen heisst nicht, es auf abgenommene Stuecke
+  anzuwenden.** Ich habe beim Einbauen des Presets das Logo von **700 px auf
+  302 px** (28 %) geaendert — an einem Short, dessen Logogroesse er bereits
+  abgenommen hatte. Seine Reaktion: *„dann ist auch mein Logo ploetzlich viel
+  kleiner."* **Er hatte keine Aenderung am Logo bestellt.** Der Auftrag „nimm
+  sein Preset" galt dem, was offen war, nicht dem, was schon stand.
+  **Regel: ein neues Preset gilt fuer Neues. Was er abgenommen hat, bleibt,
+  bis er es selbst aendert.**
+  → betrifft: alle
+
+- **`mean_volume` der Gesamtmischung taugt nicht, um ein Musikbett zu
+  pruefen.** Zwischen der Fassung ohne Musik und der lautesten mit Musik
+  lagen **0,6 dB** — und in der Sprechpause 0,1 dB. Das sah nach „keine Musik
+  im Signal" aus, war aber nur das falsche Messinstrument: die fast
+  durchgehende Stimme bestimmt den Mittelwert. **Richtig ist, den
+  Bett-Zweig allein durch dieselbe Kette zu schicken und dort zu messen** —
+  dann steht da −36,7 / −40,7 / −45,7 dB gegen eine Stimme bei −29,1 dB.
+  Auch die Differenz zweier Dateien hilft nicht: beide sind neu AAC-kodiert,
+  die Stimme hebt sich nicht weg (max 0,0 dB, reines Codec-Rauschen).
+  → betrifft: alle Content-Agenten
+
+- **`video/musik_drunter.py` legt ein Bett unter einen FERTIGEN Short.**
+  Gleiche Kette wie `--musik` im Renderer (geloopt, 1,5 s ein, 2 s aus,
+  `sidechaincompress` threshold 0,04 / ratio 8, `amix normalize=0`), aber
+  ohne erneutes Transkribieren und Encodieren des Bildes: `-c:v copy`.
+  Drei Pegelfassungen kosten so Minuten statt drei vollen Durchlaeufen.
+  **Falle beim Nachbauen:** `shorts-render.py` wertet beim Import sein
+  eigenes `argparse` aus, man muss `sys.argv` leeren — und die eigenen
+  Argumente **vorher** sichern, sonst sind sie weg.
+  → betrifft: alle Content-Agenten
+
+- **Die zusammengefuehrte Renderer-Fassung hat zwei Regressionen gegen
+  Entscheidungen, die in `LERNEN.md` schon stehen.** Beide fielen erst auf,
+  als er am 21.10. am Sutcliffe-Short ein Fragezeichen bestellt hat
+  (*„da wuerde ich eigentlich gerne ein Fragezeichen haben. Das kannst du dir
+  merken bei dieser Frage."*) — und keines im Bild stand.
+  **1.** `_anzeige()` streift in `66de26b` wieder **alle** schliessenden
+  Satzzeichen ab (`w.rstrip(SATZZEICHEN)`), Fragezeichen eingeschlossen. Die
+  feinere Regel — nur `. , ; : …` weg, `?` und `!` bleiben — war am 20.10.
+  aus seinen **zwei** Ansagen desselben Abends hergeleitet und ist hier
+  verlorengegangen. **Damit haette auch `how safe is AI?` sein Fragezeichen
+  wieder verloren.**
+  **2.** `korrekturen_anwenden()` haengt das Satzzeichen des Originals
+  unbedingt an den Ersatz. Die Schutzregel aus `LERNEN.md` (*„endet der
+  Ersatz schon auf ein Satzzeichen, wird das des Originals nicht
+  angehaengt — sonst AI??"*) fehlt. Gemessen: aus `you,` plus Ersatz `you?`
+  wird **`you?,`**, was `_anzeige()` dann vollends zerlegt.
+  Beides auf diesem Branch zurueckgeholt und an vier Faellen geprueft
+  (seine Frage, der AI-Praezedenzfall, eine Aussage mit Punkt, eine echte
+  Frage). **Gehoert zurueck nach `claude/content-assistant`.**
+  **Die Lehre, die ueber den Fall hinausgeht:** beim Zusammenfuehren zweier
+  Fassungen gewinnt nicht automatisch die juengere Zeile. Wo eine Regel aus
+  einer **Korrektur von ihm** stammt, muss sie beim Merge ausdruecklich
+  geprueft werden — sonst faellt sie still zurueck, und niemand merkt es,
+  bis er dasselbe ein zweites Mal bestellt.
+  → betrifft: content-*, alfred
+
+- **`--srt` zusammen mit `--srt-out` bricht den Renderer ab.**
+  `KeyError: 'woerter'` in `cues_als_srt`, Zeile 146: `srt_to_cues()` baut
+  Cues ohne Wortliste, `cues_als_srt()` verlangt sie aber. Tritt nur bei
+  dieser Kombination auf, und erst nach dem Transkodieren — also nach der
+  teuren Minute. **Wer eine fertige SRT wiederverwendet, laesst `--srt-out`
+  weg.**
+  → betrifft: content-*
+
+- **Eine wiederverwendete SRT kostet das gelbe Aktivwort.** `--srt` liefert
+  nur Cue-Grenzen, keine Wortzeiten — die Hervorhebung des gesprochenen
+  Wortes braucht aber Wortzeiten und faellt damit still weg. Am Sutcliffe-Short
+  gemessen: Gruppierung und Wortlaut stimmten, **die Farbe fehlte komplett**,
+  und im Renderprotokoll steht kein Hinweis darauf. Wer den abgenommenen Look
+  will, muss `--auto-captions` nehmen, auch wenn eine geprueft SRT schon
+  dasteht. **Die SRT taugt zum Pruefen des Wortlauts, nicht als Ersatz fuer
+  die Transkription.**
+  → betrifft: content-*
+
+- **Zeitbasis beim Zurueckspielen einer SRT: mal Tempo, nicht geteilt.**
+  `--srt-out` schreibt Ausgabezeit (`start / tempo`), `--srt` erwartet
+  Quellzeit. Eine mit `--srt-out` bei Tempo 1,2 geschriebene Datei muss also
+  **× 1,2** zurueckgerechnet werden. Probe am Sutcliffe-Short: letzter Cue
+  49,15 s × 1,2 = 58,98 s, Clip 59,6 s — passt.
+  → betrifft: content-*
+
+- **Seine Praezisierung zur Wohnort-Regel, 21.10.:** *„Cape Town oder South
+  Africa — ich moechte es halt nur nicht genauer veroeffentlichen."* Also
+  **Stadt und Land duerfen fallen, alles Feinere nicht.** `video/ortscheck.py`
+  hat auf diesem Branch jetzt zwei Stufen: `GROB` (Cape Town, South Africa,
+  Western Cape, Tafelberg) wird nur gezaehlt, `ORTE` (Scarborough, Kommetjie,
+  Misty Cliffs, Noordhoek, Fish Hoek, Muizenberg …) schlaegt an und setzt
+  die Rueckgabe auf 1. Vorher stand „cape town" und „south africa" in der
+  Sperrliste — das haette jeden Short mit seiner Herkunftsgeschichte
+  blockiert. **Gehoert zurueck nach `content-schlicht`, dort liegt die Datei.**
+  → betrifft: content-*, thumbnails
+
 - **Gegen den Fehler des Tages hilft eine Schwelle, die vor der Messung
   feststeht.** Alfred und ich haben am 21.10. denselben Fehler gemacht — eine
   Lesart fuer eine Tatsache gehalten; bei ihm kostete es drei Thumbnails, bei

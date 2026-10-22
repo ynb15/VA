@@ -46,6 +46,115 @@ oben. Nur nachgemessene Befunde mit Zahl oder wörtlichem Zitat.
   Regel 5 aus `plan/ABLAUF.md` gilt auch für Pfade, nicht nur für Dateien.
   → betrifft: alle
 
+## 21.10.2026 — Kopfgröße: sein Maßstab ist DOAC, nicht mein letzter Stand
+
+*„Scotts Gesicht ist halt viel zu nah rangezoomt."* · *„Das einzige
+brauchbare Thumbnail als Inspiration ist das von Diary of a CEO."*
+
+- **Gemessen an dem DOAC-Thumbnail, das er benannt hat** (`xtR2sTjysPc`):
+  Gesichtsrahmen **61 %** der Bildhöhe links, 54 % rechts, Pupillenabstand
+  140 und 131.
+- **Meine beanstandete Fassung lag bei 70 % / 69 % und pd 155 / 171** — und
+  damit fast genau auf dem von ihm abgenommenen `aaronson-openai-insider`
+  (72 % / 69 %, pd 157 / 166). **Dieselbe Zahl war einmal richtig und einmal
+  falsch.** Sein Maßstab hat sich mit dem Vorbild verschoben; die Messung an
+  alten Freigaben trägt das nicht von selbst mit.
+- **Korrigiert auf 62 % / 65 %, pd 146 / 150.** Wenn er ein Vorbild benennt,
+  wird daran gemessen — nicht an der letzten Freigabe.
+  → betrifft: thumbnails, alle, die an früheren Freigaben messen
+
+### Blickrichtung wird am Fertigbild geprüft, nicht am Ausschnitt
+
+- **Zum dritten Mal dieselbe Beanstandung** (*„dass unsere Gesichter sich
+  gegenseitig angucken müssen"*). Das Bild, das ich genommen hatte, zeigte
+  Scott mit nach oben gerollten Augen — im quadratischen Ausschnitt wirkte
+  das nachdenklich, im fertigen Thumbnail neben einem Gesicht, das ihn
+  ansieht, wirkt es daneben.
+- **Also: nach dem Setzen hinsehen, nicht nur vor dem Freistellen.** Der
+  Ausschnitt zeigt ein Gesicht, das Thumbnail zeigt zwei zueinander.
+  → betrifft: thumbnails, cinematic
+
+## 21.10.2026 — seine Korrektur: verschwendeter Rand und schwache Mimik
+
+*„Guck mal, wie viel Platz mein Hals einnimmt und auch Kens Oberkörper. Das
+ist verschwendeter Platz."* · *„Ken guckt irgendwo ins Leere. Und die Mimik
+genauso wie meine ist super schwach. Da steckt nicht viel Emotion dahinter."*
+
+### Unter dem Kinn bleiben 120 px, nicht 240
+
+- **Gemessen an acht Gesichtern aus vier seiner veröffentlichten
+  Thumbnails: Median 122 px unter der Kinnlinie, Spanne 37–172.** Das von
+  ihm abgenommene `aaronson-openai-insider` liegt bei 126 und 132. Das von
+  ihm beanstandete `ken-reason` lag bei **187 und 239**.
+- **Hals, Schulter und Hemd tragen keine Mimik.** Der Kopf wird dafür nach
+  unten geschoben, nicht vergrössert — der Pupillenabstand lag mit 143/154
+  schon in seiner Spanne 145–167. Grösser machen hätte das Gesicht weich
+  gerechnet und das Problem nicht gelöst.
+- **Das ist eine zweite Kennzahl neben dem Pupillenabstand.** Die Kopfgrösse
+  allein sagt nichts darüber, wie viel Fläche der Kopf wirklich nutzt.
+  → betrifft: thumbnails, cinematic
+
+### „Guckt ins Leere" ist nicht die Kopfdrehung
+
+- **Gemessen (Nase gegen Augenmitte, auf den Pupillenabstand normiert):**
+  seine acht veröffentlichten Gesichter liegen im Median bei 0,11, die
+  beiden beanstandeten Ken-Köpfe bei 0,19 und −0,08 — **innerhalb seiner
+  Spanne.** Die Drehung war also richtig.
+- **Was er meint, ist die Blickrichtung der Augen**, und die misst YuNet
+  nicht: der Detektor gibt die Lage der Augen, nicht die der Pupillen. Dafür
+  gibt es nur das Hinsehen. **Eine Kennzahl, die es nicht gibt, darf nicht
+  durch eine ersetzt werden, die es gibt.**
+  → betrifft: alle, die Messwerte als Entscheidung ausgeben
+
+### Ein ruhiges Gespräch liefert kein Thumbnail-Gesicht
+
+- **In der Ken-Aufnahme liegt die Augenweite im Median bei 0,005**, seine
+  veröffentlichten Gesichter bei 0,016–0,039. Das beste Bild aus einem
+  schwachen Fenster ist trotzdem ein schwaches Bild.
+- **Also weiter suchen, nicht das Beste aus dem ersten Fenster nehmen.**
+  Ein Fenster kostet rund 3 MB je Sekunde Laufzeit — billiger als ein
+  Thumbnail, das er zurückgibt.
+  → betrifft: thumbnails, cinematic, content-*
+
+## 21.10.2026 — Ken Stern
+
+### Die Kinnlinie wird am Fertigbild abgelesen, nicht am Detektor
+
+- **YuNets Rahmenboden sitzt bei verschiedenen Gesichtern verschieden hoch
+  über dem sichtbaren Kinn.** Bei einem Vollbart liegt er mitten im Bart,
+  bei einem glatten Kinn knapp darüber. Mit beiden Kinnlinien auf dem
+  gleichen Wert lagen die sichtbaren Kinne 90 px auseinander.
+- **Und die Messung am fertigen JPG schwankt.** Vier Durchgänge, jedes Mal
+  die halbe Differenz nachgezogen: 533/573 → 574/551 → 543/576. Der Wert
+  sprang bei jeder Bewegung in die andere Richtung. **Der Anker im Setzer
+  ist exakt, die Messung am flachen Bild ist es nicht** — wer dem Detektor
+  hinterherregelt, macht es schlechter.
+- **Also: beide Kinnlinien gleich setzen, einmal rendern, mit einer
+  gezeichneten Hilfslinie nachsehen, einmal korrigieren.** Hier: Ken 90 px
+  hoch, danach Bartkante 575 gegen Kinn 578.
+  → betrifft: thumbnails, cinematic
+
+### Zwei Kameras, zwei Einstellungsgrößen — in derselben Folge
+
+- **Gemessen über 1030 Bilder aus vier Fenstern der Ken-Aufnahme:** Kens
+  Pupillenabstand geht bis 150, Yannicks nur bis 114. Die Gastkamera steht
+  enger als seine eigene. Beide auf gleiche Kopfgröße zu bringen heißt, ihn
+  um das 1,45-Fache hochzurechnen.
+- **Das ist innerhalb dessen, was er abgenommen hat:** im Aaronson-Thumbnail
+  liegt der Faktor für Scott bei 1,39. Hochrechnen bis etwa 1,45 ist in
+  seinen freigegebenen Bildern belegt, darüber hinaus nicht.
+  → betrifft: thumbnails, cinematic
+
+### Die Tonfarbe einer Folge ist nicht übertragbar
+
+- **Die Ken-Aufnahme ist bei Tageslicht vor grüner Bepflanzung gedreht**,
+  Yannick im bunten Trikot. Aaronson und Sutcliffe sind dunkles Studio.
+  `hintergrund()` dunkelt auf 0,08 ab, der Hintergrund gleicht sich also an
+  — die **Gesichter** bleiben aber heller und wärmer als in den dunklen
+  Folgen. Ein Satz Thumbnails aus zwei verschiedenen Drehs sieht nie gleich
+  aus, auch bei identischer Geometrie.
+  → betrifft: thumbnails, cinematic, youtube-manager
+
 ## 21.10.2026 — abends, fünfte Runde
 
 - **Varianten derselben Folge müssen bis aufs Pixel gleich gesetzt sein.**
