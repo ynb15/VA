@@ -190,3 +190,35 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   nach dem Zeitpunkt fragen, bevor Einschränkungen in einen Text kommen, die nur
   heute gelten.**
   → betrifft: alle
+- **Ein sechstes Register, das in keinem Voice-Dokument stand: die warme DM an
+  einen Peer.** Am 22.10. über einen Screenshot seiner eigenen Nachricht an Jon
+  Savage sichtbar geworden — gelaufen über Instagram/WhatsApp, **im Postfach
+  steht dazu nichts**. Aufbau: `Howdy <Name>,` · Vermittler als erster Satz ·
+  `Quick intro:` als eigene Zeile · der Aufhänger in einer Zeile mit
+  Ethos-Spiegel · die Reise als Rahmen für die Gästeliste · **`AND:`-Zeile** ·
+  Unfall als ein Satz · **Kaffee statt Mikrofon** als Bitte · `Dreaming Big,`.
+  **Was ich daraus mitnehme und was auch für andere gilt: sein Betrieb läuft
+  über Kanäle, die wir nicht lesen, und die Register, die dort entstehen,
+  fehlen in unseren Dateien, bis er sie zeigt.**
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Der Motorradunfall ist für ihn Material, nicht Tabu.** In derselben
+  Nachricht: *„On top of that, I survived a motorcycle accident 3 weeks ago…
+  just landed back in SA on Friday night in one piece."* Ein Satz, kein zweiter
+  Satz Rechtfertigung, und das gegenüber jemandem, den er nicht kennt. **Die
+  Regel „nicht nachfragen, nichts ableiten" gilt weiter für uns** — aber ihm zu
+  raten, ihn aus einem Text zu lassen, war meine Vorsicht, nicht seine.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Die `AND:`-Zeile schlägt die `(upcoming)`-Klammer.** Marian Goodell steht
+  in seiner DM nicht in der Bullet-Liste, sondern als eigener Satz darunter —
+  und als **Einladung ins BMHQ**, nicht als Folge. Dadurch altert die Zeile
+  nicht, egal wann die Folge erscheint. **Seine Lösung, besser als meine.**
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Wenn eine ausgesprochene Regel und ein gefundener Text sich widersprechen,
+  zuerst beide datieren.** Seine DM hat **sieben** Bullets, seine Ansage vom
+  21.10. sagt **fünf**. Die DM sagt *„3 weeks ago"* und *„landed back in SA on
+  Friday night"*, ist also um den 10.10. geschrieben — **älter als die Ansage,
+  also gilt die Ansage.** Ohne Datierung wäre daraus „Praxis schlägt Regel"
+  geworden, und das wäre hier falsch gewesen.
+  **Dazu: eine Zeitangabe aus einem fremden Text wird nie übernommen** —
+  „3 weeks ago" war am 10.10. richtig und ist heute falsch.
+  → betrifft: alle

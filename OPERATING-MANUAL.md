@@ -8562,3 +8562,67 @@ sie wieder wahr).
 in dem er rausgeht, nicht für heute.** Und ich frage einmal nach dem
 Zeitpunkt, bevor ich Einschränkungen in einen Text schreibe, die nur heute
 gelten.
+
+═══════════════════════════════════════════════════════════════════
+EIN SECHSTES REGISTER: DIE WARME DM AN EINEN PEER (22.10.)
+───────────────────────────────────────────────────────────────────
+
+Am 22.10. hat er einen Screenshot seiner eigenen Nachricht an **Jon Savage**
+gezeigt — über einen Kanal, den ich nicht lese (Instagram/WhatsApp; im
+Postfach steht zu Jon Savage und zu "Denver" **nichts**). **Diese Form stand
+in keinem Voice-Dokument**, und sie ist weder der Cold Pitch noch die
+Lieferantenmail.
+
+**Der Aufbau, wörtlich aus seiner Nachricht:**
+1. `Howdy Jon,`
+2. **Der Vermittler zuerst, als Satz, nicht als Betreff:** *"Our mutual friend
+   Denver sent me your contact and told me the two madmen of us had to come
+   together."*
+3. **`Quick intro:`** als eigene Zeile, dann *"My name is Yannick Bernard and
+   I'm currently building Man's Search for Meaning (inspired by Frankl)"* —
+   **"inspired by Frankl" steht sonst in keinem Pitch.** Der Playlist-Link roh,
+   nicht verlinkt (es ist eine DM).
+4. **Der Aufhänger in einer Zeile, mit Ethos-Spiegel:** *"Your 2014 TEDtalk
+   stuck with me - own your distribution, screw the gatekeepers, same ethos
+   I've been running on - and I've been meaning to reach out ever since."*
+5. **Die Reise als Rahmen für die Gästeliste:** *"I just returned from a
+   4-month podcast trip through the US where I got to talk some of the most
+   extraordinary people like…"*
+6. **SIEBEN Bullets** (dazu unten mehr), danach die **`AND:`-Zeile**:
+   *"AND: I even got invited to the BurningMan HQ in San Francisco to speak
+   with their CEO Marian Goodell."*
+7. **Der Unfall als ein Satz, ohne Rechtfertigung:** *"On top of that, I
+   survived a motorcycle accident 3 weeks ago… just landed back in SA on
+   Friday night in one piece."*
+8. **Die Bitte ist ein Kaffee, kein Mikrofon:** *"Now that we're both in the
+   mother city, I'd love to invite you for a coffee. Seems like we're both
+   just crazy enough to think we can change the world - so who knows what
+   might come out of it…"*
+9. `Dreaming Big,` + `Yannick`
+
+**DREI BEFUNDE, DIE ÜBER DIESE EINE NACHRICHT HINAUSGEHEN:**
+
+**a) Der Unfall ist Material, kein Tabu.** Am 25.09. steht hier die Regel
+"nicht nachfragen, nichts ableiten" — die gilt weiter für **mich**. **Er
+selbst setzt ihn als Beleg ein**, in einem Satz, ohne zweiten Satz
+Rechtfertigung, und sogar gegenüber jemandem, den er nicht kennt. Ich hatte
+ihm im Ilya-Entwurf geraten, ihn wegzulassen. Das war meine Vorsicht, nicht
+seine.
+
+**b) Die `AND:`-Zeile löst das Veröffentlichungsproblem elegant.** Marian
+Goodell steht **nicht** in der Bullet-Liste, sondern als eigener Satz darunter
+— und zwar als **Einladung ins HQ**, nicht als Folge. Damit braucht die Zeile
+kein `(upcoming)` und altert nicht. **Das ist die bessere Lösung als meine
+Klammer**, und sie ist seine.
+
+**c) Die "immer 5 Bullets"-Regel und diese Nachricht widersprechen sich — und
+das Datum entscheidet.** Die DM hat **sieben**. Sie ist aber **älter**: sie
+sagt *"3 weeks ago"* und *"landed back in SA on Friday night"*, also
+geschrieben um den 10.10. Seine Ansage "immer 5" kam am **21.10.**
+**Die jüngere Ansage gilt.** Allgemein: wenn eine ausgesprochene Regel und ein
+gefundener Text sich widersprechen, **zuerst beide datieren** — erst dann ist
+die Frage "Regel oder Praxis" überhaupt entscheidbar.
+
+**Und eine Zahl, die nie wieder abgeschrieben wird:** *"3 weeks ago"* war am
+10.10. richtig und ist heute falsch. **Eine Zeitangabe aus einem fremden Text
+wird nie übernommen, sondern neu gerechnet oder weggelassen.**
