@@ -6,6 +6,40 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-22 — Musik: eine Sperre, und was sie fuer den ganzen Ordner heisst
+
+- **Kommerzielle Musik aus seinem eigenen Preset-Ordner hat heute zwei
+  veroeffentlichte Shorts weltweit gesperrt.** YouTube am 22.10. um 08:57 und
+  09:57 zu „What makes life meaningful?" (Sutcliffe und Aaronson), woertlich:
+  *„Content used: Daylight — David Kushner · Content owners: Virgin Music
+  Group · Type: Audio · Impact on video: **Blocked globally**"*.
+  **Das ist kein Anspruch auf die Einnahmen, das ist unabspielbar.**
+  → betrifft: alle
+- **Geprueft, welche Spur in meinen drei Fassungen liegt: nicht Daylight.**
+  Uebergeben wurde `in-this-shirt.mp3`, **8.143.833 Byte** — byte-genau die
+  Datei, die er mir am 22.10. selbst verlinkt hat
+  (`1aExrMK5cJdbFcY0T0T3iGFsw8upoiryJ`, „Kopie von The Irrepressibles - In
+  This Shirt.mp3"). Daylight (`1viFyrS…`, 4.372.206 Byte) ist in diesem
+  Container **nie heruntergeladen worden** — eine Suche ueber das ganze
+  Dateisystem findet nichts.
+  → betrifft: content-*
+- **Die Entwarnung gilt aber nur fuer den Titel, nicht fuer das Risiko.**
+  Im Ordner `Shorts: Music` (`1M_FhnC0GzERt0zyKvFDae-gumpn--o4O`) liegen genau
+  drei Dateien, und **alle drei sind kommerzielle Veroeffentlichungen**:
+  David Kushner – Daylight · Max Richter – On The Nature Of Daylight ·
+  The Irrepressibles – In This Shirt. **„Eine andere aus demselben Ordner
+  nehmen" ist deshalb keine Loesung** — Daylight war nicht der Ausreisser,
+  sondern der erste Treffer.
+  → betrifft: alle Content-Agenten
+- **Und eine Unterscheidung, die ich mir selbst vorhalte: „er hat die Datei
+  gegeben" ist eine Freigabe fuer den Titel, keine Aussage ueber die
+  Rechtelage.** Seine Worte am 22.10. waren eindeutig (*„dann moechte ich,
+  dass du den Song In the Shirt darunter legst"*), also war das Einbauen
+  richtig. **Falsch waere, es jetzt stehen zu lassen, ohne ihm den neuen
+  Befund vorzulegen** — die Freigabe ist aelter als die Sperre von heute
+  frueh.
+  → betrifft: alle
+
 ## 2026-10-22 — Nachtrag: die Liste gehoert zum Short, und sie deckt Schnittfehler auf
 
 - **Seine Regel vom 22.10. gilt fuer jeden Short, auch fuer meine — ich hatte
