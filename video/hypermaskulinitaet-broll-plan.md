@@ -28,6 +28,22 @@ Kanal praktisch relevant:**
   Videos** an sich, teils auch Sperrungen in einzelnen Ländern. Dass viele
   große Kanäle das machen, stimmt — es heißt, dass sie den Anspruch in Kauf
   nehmen, nicht dass keiner entsteht.
+
+  **Nachtrag 22.10.2026 — der Regelfall ist nicht das, was uns passiert
+  ist.** An einem Tag vier Content-ID-Meldungen auf seinem Kanal, drei
+  verschiedene Titel, **jedes Mal `Blocked globally`**: Daylight (David
+  Kushner, Virgin Music Group) auf zwei Shorts, In This Shirt (Røyksopp
+  Remix, The Irrepressibles, FUGA) auf einem, und — als Anspruch auf die
+  **Komposition**, Typ „Melody or lyrics" — Comptine d'un autre été auf
+  einem Klaviercover, das als Ausweg hochgeladen war. Begründung jedes Mal
+  dieselbe: *„contains claimed content that exceeds the length limits set
+  by the copyright holder."* Alle vier im Volltext aus seinem Postfach
+  gelesen.
+
+  Das betraf Musik, nicht Bildmaterial, und sagt über Filmszenen nichts.
+  Aber es korrigiert die Zahl, auf der eine Entscheidung steht: **nicht
+  Monetarisierung und einzelne Länder, sondern weltweit unabspielbar.**
+  Wer diese Seite liest, soll die vier Fälle kennen, bevor er abwägt.
 * **Der Anspruch landet auf seinem Kanal, nicht auf meinem.**
 
 **Er hat entschieden, und damit ist es entschieden.** Das steht hier, damit
