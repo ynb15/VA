@@ -43,7 +43,7 @@ def abstand(a, b):
     ia, ib = Image.open(a).convert("L"), Image.open(b).convert("L")
     if ia.size != ib.size:
         ib = ib.resize(ia.size)
-    da, db = ia.getdata(), ib.getdata()
+    da, db = list(ia.tobytes()), list(ib.tobytes())
     return sum(abs(x - y) for x, y in zip(da, db)) / len(da)
 
 
