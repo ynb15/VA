@@ -1,3 +1,47 @@
+## 22.10.2026 — Defensiv schneiden, und die Naht nachlesen
+
+**Seine neue Anweisung, für alle Short-Agenten:** *„dass du lieber zu
+defensiv als zu offensiv schneidest, weil es mir das einfacher macht, dir
+dann zu sagen, was noch raus soll."*
+
+**Der Grund ist eine unsymmetrische Fehlerrichtung**, und das ist der Teil,
+den man sich merkt: eine Auslassung, die er nicht wollte, kostet ihn Liste
+lesen, Stelle finden, melden, neue Runde rendern. Eine Zeile zu viel im
+Short kostet ihn: eine Nummer nennen. **Gleich großer Fehler, völlig
+verschiedener Preis.** Also im Zweifel drinlassen.
+
+**Und die Prüfung dazu, an zwei echten Fehlern belegt** (Shorts II, Short
+„AI 2027", beide von ihm zurückgeholt): ein gestrichener Block nahm die
+einzige Nennung von Eliezer Yudkowsky mit, danach stand im Short *„**he**
+just regarded it as obvious"* ohne Bezug. Ein zweiter gestrichener Block
+begann mit *„He would say, by default, this kills us"* — der **Antwort**
+auf Yannicks eigene Frage, die dadurch unbeantwortet blieb.
+**Nach jedem Innenschnitt die beiden Nachbarzeilen nebeneinander lesen:**
+auf Pronomen ohne Bezug, und auf Fragen, deren Antwort im entfernten Block
+lag. **Beides hört man dem Render nicht an, weil der Schnitt sauber
+klingt.**
+→ betrifft: content-*, YNB Cinema, Shorts II, EA, alle Short-Agenten
+
+## 22.10.2026 — Ein langer Zug stirbt am Containerwechsel, nicht am Netz
+
+**Der Tonzug über den 27-GB-Britton-Master starb nach fünf Minuten:**
+
+    ProxyError: Unable to connect to proxy
+    HTTPSConnection(host='127.0.0.1', port=40217): Connection refused
+
+Nicht Drive hat abgelehnt, nicht das Tageslimit — **der Container wurde
+eingezogen, der Proxy bekam einen neuen Port, und der laufende Prozess
+hielt am alten fest.** Ein sequentieller Lauf über eine Stunde überlebt das
+nie, egal wie geduldig er ist.
+
+`ton_holen.py` nimmt jetzt `--von/--bis`, und `ton_stueckweise.py` holt die
+Spur in Zehn-Minuten-Stücken: **je Stück ein eigener Prozess mit frischem
+Proxy**, fertige Stücke bleiben liegen, unvollständige werden an ihrer
+Laufzeit erkannt und neu geholt, am Ende wird zusammengefügt.
+**Regel: was länger als ein Zug dauert, muss in Stücke, die kürzer sind als
+ein Zug.**
+→ betrifft: content-*, YNB Cinema, Shorts II, EA, alle Content-Agenten
+
 ## 22.10.2026 — Der billige Weg zum Rückkatalog ist zu
 
 **Die Annahme, auf der der Rückkatalog-Plan steht, hält nicht mehr.** Es

@@ -298,3 +298,240 @@ Neuester Eintrag oben.
   läuft durch den Proxy. Zusätzlich liegt ein zweites ffmpeg bei Playwright
   (`/opt/pw-browsers/ffmpeg-1011/`).
   → betrifft: alle Content-Agenten
+
+## 22.10.2026, 18:40 — Der unsaubere Anfang war ein Sprung mitten in einer Einstellung. Der J-Schnitt loest ihn auf.
+
+Sein Befund, zweimal: *„Nachdem ich frage, what makes life meaningful for you?
+Da ist so ein Moment, der ist einfach richtig schlecht geschnitten"* (22.10.),
+und nachdem ich eine Bildblende durch einen harten Schnitt ersetzt hatte:
+*„Du hast zwar den Fehler nicht wirklich behoben"*, dann *„ganz am Anfang, da
+ist einfach so ein richtig unsauberer Cut"*.
+
+Nachgemessen, Bild fuer Bild: der Kamerawechsel von ihm auf Sutcliffe liegt bei
+src2 **3,6000 s** (Differenz 41,2 gegen 0,6 im Ruhepegel). Mein Schnitt lag bei
+4,0 — also **0,4 s hinter** dem Wechsel. Dadurch sah man Sutcliffe 0,4 s lang,
+und dann sprang es auf denselben Sutcliffe 5 s spaeter. Zwei harte Schnitte in
+0,4 s, der zweite innerhalb derselben Einstellung: genau der Sprung, den er
+sieht. Ihn weicher zu machen (Blende) war der falsche Hebel — der Schnitt lag
+an der falschen Stelle.
+
+Die Loesung ist der **J-Schnitt**: das Bild endet exakt auf dem Kamerawechsel
+(3,6000), der Ton laeuft bis 4,0 weiter, damit seine Frage fertig wird. Das
+Bild des zweiten Stuecks faengt dafuer 0,4 s frueher an (src2 8,8667 statt
+9,2667). Ergebnis: **ein** Bildschnitt, und der faellt auf einen Kamerawechsel,
+ist also unsichtbar. Man sieht Sutcliffe zuhoeren, waehrend die Frage zu Ende
+geht.
+
+→ betrifft: jede Naht, die in einer Einstellung liegt. Erst messen, wo der
+naechste Kamerawechsel ist, dann das Bild dorthin legen und den Ton
+darueberlaufen lassen. `video/schnitt_bauen.py` nimmt Bild- und Tonstuecke
+getrennt entgegen und prueft, dass beide Summen gleich lang sind.
+
+## 22.10.2026, 18:40 — Der Anfang begann 0,05 s vor dem ersten Wort.
+
+Zweiter Teil desselben Befunds. Der Short begann bei src2 1,000, das erste Wort
+"After all" bei 1,05 — **50 ms Vorlauf**, und der erste Frame lag mitten in
+einer laufenden Einstellung. Gemessen: der Kamerawechsel auf ihn liegt bei src2
+**0,6000**. Der Short faengt jetzt dort an, also auf dem ersten Bild der
+Einstellung, mit 0,45 s Ruhe vor dem ersten Wort.
+
+→ betrifft: jeden Anfang. Der erste Frame eines Shorts gehoert auf den ersten
+Frame einer Einstellung, nicht irgendwohin in deren Mitte.
+
+## 22.10.2026, 18:40 — Pausen kuerzen: nicht nach Laenge waehlen, nach Bildaehnlichkeit.
+
+Fuer „unter 90 Sekunden" mussten 4,8 s weg. Pausen zu kuerzen heisst in einer
+stehenden Einstellung: Sprungschnitt. Nach Laenge zu waehlen (die laengste
+Pause zuerst) traf die sichtbarsten Stellen.
+
+Gemessen statt geschaetzt: fuer jede Pause wird die mittlere
+Helligkeitsdifferenz im Kopfbereich zwischen Ausstiegs- und Einstiegsbild
+berechnet, daneben der Ruhepegel (zwei benachbarte Bilder an derselben Stelle).
+Dann wird **innerhalb** jeder Pause die Paarung gesucht, bei der die Differenz
+am kleinsten ist, statt feste Puffer zu nehmen. Das hat viel gebracht:
+
+* feste Puffer von 0,15 s: 14 Schnitte, schlechtester Sprung **3,14**
+* Paarung gesucht: 14 Schnitte, schlechtester Sprung **2,72**, die meisten
+  zwischen 0,7 und 1,9 bei Ruhepegeln von 0,3 bis 1,1
+
+→ betrifft: jede Laengenvorgabe. `video/pausen_waehlen.py --fein`. Nicht die
+laengste Pause kuerzen, sondern die, an der das Bild vorher und nachher gleich
+aussieht.
+
+## 22.10.2026, 18:40 — Nach einem Neuschnitt die Einblendungen rechnen, nicht neu transkribieren.
+
+Sein Vorwurf vom 21.10. war berechtigt: *„warum ich dir in der vorherigen
+Schritt sage, pass das an ... und dann verlierst du es wieder."* Ursache ist
+Whisper, das nicht deterministisch ist. Die abgenommene Cue-Datei loest das nur,
+solange der Clip derselbe bleibt.
+
+Wenn aus einem Clip nur Stellen **herausgeschnitten** werden, muss gar nicht neu
+transkribiert werden: die Zeiten lassen sich abbilden. `video/cues_umlegen.py`
+nimmt die abgenommene Datei, den Versatz und die Liste der entfernten Stellen
+und rechnet um — 102 Einblendungen, keine neue Lotterie, „meaningful for you?"
+bleibt in einer Einblendung, die geheilten Woerter behalten ihre Dauer.
+
+→ betrifft: jeden Neuschnitt eines schon abgenommenen Shorts.
+
+## 22.10.2026, 18:40 — Der Ausschnittplaner liefert nach dem Neuschnitt dieselben Kaesten.
+
+Sorge war, dass ein neuer Lauf von `bildausschnitt.py` die abgenommene Fassung
+des Bildes verliert (der Planer folgt dem Bewegungsgipfel, nicht dem Gesicht).
+Nachgeprueft: mit `--zoom 1.15 --marke 0,875,215,1080 --kein-stapel` kommen auf
+dem neuen Clip **exakt dieselben sechs Kaesten** heraus wie auf dem alten, nur
+mit verschobenen Zeiten. Ohne `--kein-stapel` macht er aus den zwei Totalen
+„stapel" — dann weicht die Fassung ab.
+
+→ betrifft: jeden Neulauf des Planers. `--kein-stapel` gehoert zu diesem Short
+dazu, und die Kaesten gehoeren verglichen, nicht geglaubt.
+
+## 22.10.2026, 18:25 — Neue stehende Regel von ihm: lieber zu defensiv als zu offensiv schneiden.
+
+Woertlich, ueber Alfred weitergegeben und ausdruecklich fuer alle Agenten:
+
+> *„mir ist aufgefallen, es ist deutlich schwerer fuer mich, wenn du die Shorts
+> eigenstaendig entscheidest, was du rausschneidest, und ich dann nach das
+> Skript kontrollieren muss, um zu sehen, was du rausgeschnitten hast, als wenn
+> du lieber zu wenig oder weniger rausschneidest und mir dann das Transkript
+> gibst und ich dir eher sagen soll, was du rausschneiden sollst. Deshalb ist
+> die neue Anweisung und gib das bitte weiter an die anderen Agenten, dass du
+> lieber zu defensiv als zu offensiv schneidest."*
+
+Die Fehlerrichtung ist unsymmetrisch: eine Auslassung, die er nicht wollte,
+kostet ihn Liste lesen, Stelle suchen, Rueckmeldung, neue Renderrunde. Eine
+Zeile zu viel kostet ihn eine Nummer. Deckt sich mit seinem Satz vom 21.10.:
+*„ich wuerde dich anhalten, lieber weniger zu schneiden, als zu viel."*
+
+Drei Punkte daraus, die ab sofort zu jedem Short gehoeren:
+
+1. **Das Transkript geht mit raus**, nicht nur das Video. Er soll sagen, was
+   weg soll, nicht nachkontrollieren, was weg ist.
+2. **Nach jedem Innenschnitt die beiden Nachbarzeilen nebeneinander lesen** —
+   Pronomen ohne Bezug, Fragen ohne Antwort. Dem Render hoert man das nicht an.
+   Belegt an „AI 2027" (Shorts II): zweimal eine Auslassung zurueckgeholt, einmal
+   fiel die einzige Nennung von Eliezer Yudkowsky mit heraus, danach stand
+   *„he just regarded it as obvious"* ohne Bezug.
+3. **Bei Gastauftritten gilt das doppelt.** Dort stellt der Gastgeber die
+   Fragen, und eine Pointe von ihm steht fast immer auf einer fremden Frage.
+   Die Frage des Gastgebers gehoert im Zweifel dazu, auch wenn sie Sekunden
+   kostet.
+
+→ betrifft: jeden Schnitt. **Beim Sutcliffe-Short heute geprueft:** entfernt
+wurden ausschliesslich **Pausen**, kein gesprochenes Wort. Nachgewiesen mit
+`diff` gegen die abgenommene Untertiteldatei — der Text ist Zeichen fuer
+Zeichen derselbe. Die 14 Stellen stehen einzeln in
+`video/shorts/sutcliffe-meaningful.pausen.json`, damit er sie sieht, statt sie
+suchen zu muessen.
+
+## 22.10.2026, 19:30 — „Die ersten paar Sekunden, da ist fast gar keine Musik" — es war der Songanfang, nicht die Blende.
+
+Sein Befund zu „In This Shirt": *„der Song, der muss schon frueher losgehen. Die
+ersten paar Sekunden, da ist fast gar keine Musik."* Derselbe Befund wie am
+21.10. bei Daylight.
+
+Mein erster Verdacht war die Einblendung (0,3 s). Falsch. Nachgemessen am Titel
+selbst, sekundenweise:
+
+| Sekunde im Song | RMS |
+|---|---|
+| 0 | −14,6 dB |
+| 1 | −13,1 dB |
+| 2 | −10,2 dB |
+| 5–20 | rund −9,5 dB |
+
+Der Titel faengt also **4 bis 6 dB leiser** an. Das Bett lief ab 0:00, und damit
+lagen die ersten zwei Sekunden des Shorts gemessen bei −34,7 dB gegen −32,6 dB
+im Rest — genau was er hoert.
+
+Behoben, indem das Bett bei **0:02** einsetzt, wo der Titel schon auf vollem
+Pegel steht, und die Einblendung von 0,3 auf 0,1 s gekuerzt wird. Nachgemessen
+am fertigen Short: erste zwei Sekunden −31,2 statt −34,7 dB, laufender Pegel
+unveraendert −32,4 dB. Kein Knacken am Einsatz.
+
+**Das war die halbe Antwort, und sie war nicht die gemeinte.** Siehe den
+naechsten Eintrag.
+
+## 22.10.2026, 20:10 — Nicht der Pegel entscheidet, sondern wo der Titel arrangiert losgeht.
+
+Nach der Korrektur oben kam sein Widerspruch:
+
+> *„Der Song geht erst so richtig los bei Sekunde 21. Ich rede bei dem Short. Wo
+> David, glaube ich, Moments sagt. Da geht der Song erst richtig los. Das wollte
+> ich. Ich wollte, dass du den Inhalt des Songs vorziehst. Die ersten 20
+> Sekunden des Songs, da passiert nichts."*
+
+Mein Fehler war die Messgroesse. Ich hatte das **RMS** gemessen, und danach steht
+„In This Shirt" ab Sekunde 2 auf vollem Pegel — also hielt ich die Sache fuer
+erledigt. Gehoert hat er etwas anderes: die ersten 23 Sekunden traegt ein
+**einzelnes Instrument**. Laut, aber leer.
+
+Die richtige Messgroesse ist die Energie **ueber 2 kHz**. Dort zeigt sich der
+Einsatz von Gesang und Perkussion als Sprung, den das RMS gar nicht sieht:
+
+| Songsekunde | RMS | ueber 2 kHz |
+|---|---|---|
+| 22,9 | −9,5 dB | −53,0 dB |
+| 23,2 | −9,7 dB | −53,4 dB |
+| **23,3** | −7,9 dB | **−34,6 dB** |
+| 23,4 | −8,4 dB | −31,2 dB |
+
+19 dB Sprung in einem Zehntelsekundenblock, bei **unveraendertem RMS**.
+
+Seine Zeitangabe stimmte auf die Zehntelsekunde: mit dem Bett ab 0:02 landete
+dieser Einsatz bei Shortsekunde 21,3 — und bei 21,7 steht `MOMENTS` im Bild. Das
+Bett faengt jetzt bei **0:23,25** an. Nachgemessen am fertigen Short: Energie
+ueber 2 kHz in den ersten 10 s um 4 bis 6 dB hoeher, laufender Pegel
+unveraendert bei −32,2 dB, kein Knacken (groesster Sprung 0,0323 gegen 0,0416 an
+einer normalen ruhigen Stelle).
+
+→ betrifft: **jeden** Titel. Die `ab_sekunde` gehoert auf den Sprung in den
+Hoehen, nicht auf die erste Sekunde mit vollem Pegel. Vor jedem Bett wird der
+Titel sekundenweise auf beides geprueft — RMS **und** Energie ueber 2 kHz — und
+der Einsatz wird vorgezogen, statt den Short mit dem Vorspann zu belegen. Die
+anderen beiden Titel daraufhin nachgeprueft: Odell ab 2:20 (−13,1 gegen −11,8 dB
+im Mittel) und Comptine ab 0:10 (−17,6 gegen −18,9 dB) fangen beide nicht leise
+an, dort ist nichts zu korrigieren.
+
+→ und zweitens: **zweimal am selben Befund vorbeigearbeitet, weil ich die
+erstbeste Erklaerung genommen habe, die zu einer Messung passte.** Der Pegel war
+eine Erklaerung, nicht die Erklaerung. Wenn eine Messung den Befund nur halb
+deckt, fehlt eine zweite Messgroesse.
+
+`musik_drunter.py` nimmt die Einblendung jetzt als `--blende-ein` entgegen,
+damit sie nicht mehr im Code festhaengt.
+
+## 22.10.2026, 21:00 — Eine Einblendung, die ueber einen Kameraschnitt laeuft, verlor ihre Woerter.
+
+Gefunden am Hypermaskulinitaets-Short, nicht gemeldet: zwei Bilder lang stand
+mitten im Satz ein einzelnes **„IS"** im Bild, wo „REAL STRENGTH IS" stehen
+sollte.
+
+Ursache: `cues_an_lippen` teilt jede Einblendung, die ueber einen Kameraschnitt
+laeuft, in zwei Teile — laut eigener Beschreibung *„derselbe Text, an zwei
+Hoehen"*, damit die Zeile mit der Kamera mitspringt. `build_ass` filterte die
+Woerter danach aber am Fenster des Teilstuecks:
+
+```python
+woerter = [w for w in c["woerter"]
+           if max(w["end"], w["start"] + 0.001) > c["start"]
+           and w["start"] < c["end"]]
+roh = [_anzeige(w["t"], gross) for w in woerter]
+```
+
+Die Zeile wird aus `roh` gebaut. Beim zweiten Teilstueck (Clipzeit
+51,50–51,70) ueberlebte nur das Wort, das in diesem Fenster liegt — „is". Die
+beiden davor fielen aus dem Bild. Die Beschreibung versprach also etwas, was
+der Code nicht tat.
+
+Behoben: `roh` kommt jetzt aus **allen** Woertern der Einblendung, und nur die
+Hervorhebung folgt dem Fenster. Fuer ungeteilte Einblendungen aendert sich
+nichts — dort sind beide Mengen gleich.
+
+**Das betrifft nicht nur diesen Short.** Am Sutcliffe-Short „Meaning" wurden
+102 Einblendungen zu 106 ASS-Zeilen, also vier davon geteilt — dort stand
+dasselbe Problem im Bild und ist niemandem aufgefallen, weil die Teilstuecke
+kurz sind. Beim naechsten Lauf dieses Shorts ist es mit behoben.
+
+→ betrifft: jeden Short mit mehr als einer Kameraeinstellung. Und als Lehre:
+wenn eine Funktion in ihrer eigenen Beschreibung etwas verspricht
+(„derselbe Text"), gehoert genau das nachgeprueft, statt es zu glauben.

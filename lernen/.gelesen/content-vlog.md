@@ -597,3 +597,59 @@ wird er von `video/meaningful-archiv.md`, wo die Nummer samt Drive-ID und
 Masterzeitmarke steht. Aus einem Ordner voller Dateien lässt sich der Schnitt
 nicht bauen, aus der Tabelle schon.
 → betrifft: alle Short-Agenten
+
+## 22.10.2026 — Defensiv schneiden heißt, den Anlauf zur Frage mitzunehmen
+
+**Seine Anweisung:** *„dass du lieber zu defensiv als zu offensiv schneidest"* —
+und das Transkript mitgeben, damit er die Auslassungen bestimmt statt sie zu
+suchen.
+
+**An meiner Serie traf das den Anfang, nicht das Ende**, und mir war es nicht
+aufgefallen. Das Suchmuster trifft die Zeile mit *„what makes life meaningful"*,
+geschnitten wurde eine Sekunde davor. Der Anlauf dazu läuft aber über mehrere
+Abschnitte:
+
+| Folge | was fehlte | Länge |
+|---|---|---|
+| Kingsbury | *„I guess this answers my favorite question / I like to ask at the end / cause we're on the Man's Search for Meaning podcast / right?"* | **8,6 s** |
+| Wheelock | *„To wrap this up, one of my favorite questions."* | **3,1 s** |
+
+**Das Kingsbury-Stück begann dadurch mit einem bezuglosen „right?"** — und der
+Satz, der die ganze Reihe erklärt, fehlte. **Dem Render hört man das nicht an.
+Es klingt sauber, es ist nur falsch.**
+
+### Wie der Anfang jetzt bestimmt wird, und welcher Versuch nicht reichte
+
+Rückwärts vom Treffer, **solange die vorigen Abschnitte seine Stimme tragen** —
+gemessen über den Stimmabdruck von gestern.
+
+**Erster Versuch: anhalten, sobald ein Abschnitt nicht klar YNB ist.** Bei
+Kingsbury richtig, bei Wheelock falsch: *„To wrap this up, one of my favorite
+questions."* liegt bei **0,42** und damit knapp unter der Schwelle 0,442 — also
+„?", also Stopp, also genau der Satz draußen, um den es geht.
+
+**Jetzt wird nur bei einem klaren `Gast` angehalten**, durch ein `?` geht es
+hindurch. Gedeckelt auf 25 s, damit ein Fehlgriff nicht eine ganze Gastpassage
+hereinzieht. **Die Verweigerung des Stimmabdrucks ist beim Erkennen richtig und
+beim Schneiden zu streng** — dieselbe Zahl, zwei Zwecke, zwei Schwellen.
+
+### Eine Korrektur an meinem eigenen Befund von gestern
+
+Ich hatte geschrieben, Kingsburys Schlusssatz *„I got nothing else to add to
+that"* sei im Ton enthalten und nur nicht untertitelt, und das mit −27,1 dB
+belegt. **So sicher ist das nicht.** `large-v3` über dieselben letzten Sekunden
+hört dort **nichts** mehr als *„that's really it"*; `medium` schreibt den Satz.
+Der Pegel ist echt, aber er kann auch der Nachhall des vorigen Satzes sein.
+
+**Zwei Modelle widersprechen sich, und ich kann es nicht entscheiden** — ich
+kann nicht hören. Das steht jetzt so im Übergabetext, damit sein Ohr die Sache
+entscheidet statt meiner Messung. **Die Lehre ist nicht der Satz, sondern dass
+ich aus einem Pegelwert eine Gewissheit gemacht habe.**
+
+### Das Transkript zeigt jetzt, was nicht drin ist
+
+`video/uebergabe.py` baut je Stück eine Textdatei mit drei Teilen: **DAVOR,
+NICHT IM STÜCK** (30 s), **IM STÜCK**, **DANACH, NICHT IM STÜCK** (30 s). Ohne
+das kann er nicht sagen, was fehlt, ohne die ganze Folge zu öffnen — und genau
+darum ging es in seiner Anweisung.
+→ betrifft: alle Short-Agenten

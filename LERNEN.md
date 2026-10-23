@@ -45,6 +45,94 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 14 — 23.10.2026, 06:40 Kapstadt · der J-Schnitt, und meine Regel von gestern war zu grob
+
+- **MEINE REGEL VON GESTERN WAR ZU GROB, UND DIE BESSERE IST GEMESSEN.** Ich
+  hatte verteilt: *„Innerhalb einer Einstellung immer hart schneiden."* Der
+  Gastauftritte-Agent hat die Stelle Bild für Bild nachgemessen und die
+  eigentliche Ursache gefunden: **der Schnitt lag 0,4 s hinter dem
+  Kamerawechsel.** Wechsel bei src2 **3,6000 s** (Differenz 41,2 gegen 0,6 im
+  Ruhepegel), sein Schnitt bei 4,0 — man sah Sutcliffe 0,4 s, dann sprang es
+  auf denselben Sutcliffe fünf Sekunden später. **Zwei harte Schnitte in 0,4 s.**
+  Hart statt weich zu schneiden war der falsche Hebel; **weich oder hart war
+  nie die Frage, die Lage war die Frage.**
+  **Die Lösung ist der J-Schnitt:** Bild endet exakt auf dem Kamerawechsel
+  (3,6000), **Ton läuft bis 4,0 weiter**, damit die Frage fertig wird; das Bild
+  des zweiten Stücks beginnt 0,4 s früher. Ergebnis: **ein** Bildschnitt, und
+  der fällt auf einen Kamerawechsel, ist also unsichtbar.
+  **Dazu der Anfang:** der erste Frame eines Shorts gehört auf den **ersten
+  Frame einer Einstellung**, nicht in deren Mitte — sein Short begann 50 ms vor
+  dem ersten Wort und mitten in einer laufenden Einstellung.
+  **Also: erst messen, wo der nächste Kamerawechsel liegt, dann das Bild dorthin
+  legen und den Ton darüberlaufen lassen.** `video/schnitt_bauen.py` nimmt Bild
+  und Ton getrennt und prüft, dass beide Summen gleich lang sind.
+  → betrifft: alle, die schneiden
+- **Pausen kürzen: nicht die längste wählen, sondern die, an der das Bild
+  gleich aussieht.** In einer stehenden Einstellung ist jede gekürzte Pause ein
+  Sprungschnitt. Gemessen wird die Helligkeitsdifferenz im Kopfbereich zwischen
+  Ausstiegs- und Einstiegsbild, gegen den Ruhepegel zweier Nachbarbilder.
+  **Feste Puffer von 0,15 s: schlechtester Sprung 3,14. Paarung innerhalb der
+  Pause gesucht: 2,72**, die meisten zwischen 0,7 und 1,9 bei Ruhepegeln 0,3–1,1.
+  `video/pausen_waehlen.py --fein`.
+  → betrifft: alle, die eine Längenvorgabe einhalten müssen
+- **Nach einem Neuschnitt die Einblendungen umrechnen, nicht neu
+  transkribieren.** Whisper ist nicht deterministisch — daher sein Vorwurf vom
+  21.10.: *„warum ich dir in der vorherigen Schritt sage, pass das an … und dann
+  verlierst du es wieder."* Werden aus einem Clip nur Stellen **entfernt**,
+  lassen sich die Zeiten abbilden: `video/cues_umlegen.py` nimmt die abgenommene
+  Datei, den Versatz und die entfernten Stellen — **102 Einblendungen, keine
+  neue Lotterie.**
+  → betrifft: jeden Neuschnitt eines schon abgenommenen Shorts
+- **Die Defensiv-Prüfung hat beim ersten Einsatz einen echten Fehler
+  gefunden.** Cinematic nach seinem Innenschnitt im Tate-Short:
+  > „…an incredibly sophisticated way to sort of interact with the world."
+  > „And there's something in **that freedom** that is beautiful."
+
+  **Welche Freiheit?** Der Satz, der sie einführt, lag im weggeschnittenen
+  Stück. **Am Ton hört man es nicht, der Schnitt klingt sauber.** Stelle
+  zurückgeholt, Short neun Sekunden länger, Fehler weg. **Die Prüfung kostet
+  zwei Zeilen Lesen und hat beim ersten Mal getroffen.**
+  → betrifft: alle
+- **Eine Einschränkung, die man sich selbst setzt, begründet am Ende das
+  Ergebnis, das sie verursacht hat.** Cinematic hatte sich früh auf „nur
+  neutrale Aufnahmen" festgelegt — zehn von siebzehn Einspielern kamen dann aus
+  **einer** Szene, und den einheitlichen Look hat es anschließend als Vorzug
+  verkauft. In derselben Datei lagen Lederjacke, Boxring, rotes Sofa, Pool.
+  **Eine selbst gesetzte Einschränkung gehört nach der Auswahl noch einmal
+  geprüft.** Dazu aus demselben Short: **bei einem Fenster aus einem großen
+  Master erst das Ende der Passage suchen, dann das Fenster setzen** — 3790–3990
+  gelesen, der stärkste Teil lag bei 3990–4081 und wurde nie angesehen.
+  → betrifft: alle
+- **Gibt es einen von Hand gebauten Schnitt derselben Stelle, ist er der Maßstab
+  — transkribiere ihn zuerst.** Isabels Fassung hat in zwei Minuten beantwortet,
+  was Cinematic in vier Runden geraten hat: sie hatte genau die Stellen, die es
+  weggelassen hatte, und ließ genau die weg, die es behalten hatte.
+  → betrifft: alle
+- **ZWEIMAL IN SECHS STUNDEN HAT EIN AGENT MEINE BEGRÜNDUNG KORRIGIERT, UND
+  BEIDE MALE WAR ES DERSELBE FEHLER VON MIR.** Shorts II bei der
+  60-Sekunden-Decke, Cinematic bei den vier Sperren: *„Das betrifft Musik, nicht
+  Bildmaterial, und sagt über Filmszenen nichts."* **Ich hatte Tonansprüche als
+  Argument gegen eine Entscheidung über Bildmaterial benutzt.** Dazu gestern:
+  aus „nie eine Audiodatei im Repo" geschlossen, kein Stück könne die Spur
+  tragen.
+  **Die Form ist jedes Mal dieselbe: eine Regel von einem Mechanismus auf einen
+  anderen übertragen, ohne zu prüfen, ob der Mechanismus derselbe ist.**
+  Musik → Bild. Nullbefund in `git` → Nullbefund in der Welt. **Wer eine Regel
+  überträgt, nennt den Mechanismus, über den sie gilt** — sonst ist es eine
+  Analogie im Gewand eines Befundes.
+  → betrifft: alle
+- **Ein fertiges Stück liegt nirgends gemeinsam — und das ist der Grund, warum
+  der Kalender „null im Kasten" zeigte, während zwei Stücke bei ihm lagen.**
+  Über alle fünf Content-Branches geprüft: **im Repo liegt keine einzige fertige
+  `.mp4`**, nur `beispiel-short.mp4` und das Outro. Gerendert wird im Container,
+  geliefert wird im Gespräch. **Damit hat „fertig" keinen Ort, den ein anderer
+  nachsehen kann** — und Container werden eingesammelt. Eine Datei zu 60 s liegt
+  bei etwa 4–6 MB. **Ihm vorgeschlagen; bis er entscheidet, melden die Agenten
+  mir, was geliefert ist, und ich führe den Zustand.**
+  → betrifft: alle, die rendern
+
+---
+
 ## Ausgabe 13 — 22.10.2026, 18:25 Kapstadt · defensiv schneiden, und eine Plattformregel nachgeprüft
 
 - **SEINE NEUE SCHNITTREGEL, ZUM WEITERGEBEN, WÖRTLICH:**

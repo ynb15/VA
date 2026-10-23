@@ -180,3 +180,52 @@ dieselbe Form: eine Regel von einem Fall auf einen anderen übertragen, ohne zu
 prüfen, ob der Mechanismus derselbe ist.** Musik → Bild. Nullbefund in git →
 Nullbefund in der Welt. Das gehört als eigener Eintrag in den Lernkanal, nicht
 als Fußnote.
+
+---
+
+## 06:40 — Morgenlauf: Plan, Kanal, und der Kasten war nicht leer
+
+Keine geplante Aufgabe auf eine Agenten-Session. Alle neun still, keiner mit
+offenem Auftrag.
+
+- **06:40** · alle neun Agenten · still, kein offener Auftrag · Maßnahme: keine
+
+### Der Fund des Morgens: „null im Kasten" war falsch
+
+**Zwei Stücke lagen bei ihm, der Kalender zeigte null.** Pflichtprüfung aus
+diesem Auftrag — *„bevor Du ‚null im Kasten' meldest: sieh nach, ob etwas
+gebaut wurde und nur der Kalenderzustand nicht nachgezogen ist"* — und sie hat
+beide Male getroffen, am 22.10. und heute.
+
+Nachgetragen: **Fr 23.10. → Sutcliffe · Hypermasculinity** (Gastauftritte,
+60,08 s, gestern Abend geliefert) · **Sa 24.10. → Sutcliffe · Tate**
+(Cinematic, gestern Abend geliefert). Die beiden gebauten Sutcliffe-Shorts
+(„Therapeut", „Vulnerability") auf Mo 26.10. und Di 27.10. **Vorrat jetzt: 2.**
+
+**Und die Ursache, die tiefer liegt:** `bin/plan-pruefen.py` zählte nur
+Zustände, die **wörtlich** „fertig" oder „bei ihm" hießen. Sobald ein Zustand
+eine Begründung trug („bei ihm — gestern geliefert"), fiel er aus der Zählung.
+Jetzt zählt der Anfang des Zustands. **Ein Werkzeug, das exakte Gleichheit
+verlangt, meldet jede Präzisierung als Fehlen.**
+
+**Die strukturelle Lücke dahinter, geprüft:** über alle fünf Content-Branches
+liegt **keine einzige fertige `.mp4` im Repo** — nur `beispiel-short.mp4` und
+das Outro. Gerendert wird im Container, geliefert im Gespräch. **„Fertig" hat
+keinen Ort, den ein anderer nachsehen kann.** Geht in den Morgenbericht als
+Vorschlag.
+
+### Aaronson: T−3 ist gerutscht, T−2 ist heute und meins
+
+Shorts II meldet *„Three Shorts versions checked against today's rules and
+**ready to deliver**"* — **bereit, nicht geliefert.** T−3 (Shorts gebaut) ist
+damit gerutscht, T−2 (Paket vollständig bei ihm) ist heute, und der Besitzer
+bin ich. Im Paket fehlen weiter **drei Links von ihm**: GoFundMe, Spotify,
+Apple.
+
+### Lernkanal, Ausgabe 14
+Acht Einträge. Der stärkste korrigiert **meine** Regel von gestern: statt
+„innerhalb einer Einstellung hart schneiden" ist der **J-Schnitt** die Lösung —
+Bild endet auf dem Kamerawechsel (gemessen src2 3,6000), Ton läuft 0,4 s
+weiter. Dazu mein eigener Fehlertyp, zweimal an einem Tag von Agenten
+korrigiert: **eine Regel von einem Mechanismus auf einen anderen übertragen,
+ohne den Mechanismus zu prüfen.**

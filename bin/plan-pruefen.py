@@ -123,7 +123,10 @@ if os.path.exists("plan/kalender.md"):
         if not m: continue
         tag, monat, _, _, zustand = m.groups()
         d = datetime.date(2026, int(monat), int(tag))
-        if d >= heute and zustand.strip() in ("fertig", "bei ihm"):
+        # Der Zustand traegt oft noch eine Begruendung ("bei ihm — gestern
+        # geliefert") und Markdown-Sterne. Es zaehlt, womit er anfaengt.
+        z = zustand.strip().strip("*").lower()
+        if d >= heute and (z.startswith("fertig") or z.startswith("bei ihm")):
             fertig += 1
 print(f"  {fertig} Stuecke ab heute fertig im Kasten")
 if fertig < 3:

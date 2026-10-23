@@ -52,17 +52,25 @@ abgenommen` — die Datei liegt im Repo, er hat sie nicht gesehen. `bei ihm` —
 **Nur `bei ihm` und `fertig` zählen als Vorrat**, denn er nimmt täglich ab;
 ein Stück, das er nicht gesehen hat, kann morgen nicht raus.
 
+**Und eine Lücke, die am 23.10. aufgefallen ist:** ein fertiges Stück liegt
+**nirgends gemeinsam**. Die Agenten rendern im Container und liefern ihm die
+Datei im Gespräch; **im Repo liegt keine einzige fertige `.mp4`** (geprüft über
+alle fünf Content-Branches: nur `beispiel-short.mp4` und das Outro). Deshalb
+zeigte diese Tabelle „null im Kasten", während zwei Stücke bei ihm lagen.
+**Der Zustand hier ist ab jetzt das, was die Agenten als geliefert melden** —
+und ein Ort für fertige Dateien ist ihm vorgeschlagen.
+
 
 ### Oktober 2026
 
 | Tag | Art | Quelle | Zustand |
 |---|---|---|---|
-| Do 22.10. | Short | Sutcliffe 04 · „Vulnerability is not weakness" | **gebaut, nicht abgenommen** |
-| Fr 23.10. | Short | Sutcliffe 01 · „Therapeut" | **gebaut, nicht abgenommen** |
-| Sa 24.10. | Clip | 3–10 Min | offen |
+| Do 22.10. | Short | — | **nichts veröffentlicht** (Vorrat war leer) |
+| Fr 23.10. | Short | **Sutcliffe · Hypermasculinity** (Gastauftritte, 60,08 s) | **bei ihm** — 22.10. abends im Gespräch geliefert |
+| Sa 24.10. | Short | **Sutcliffe · Tate** (Cinematic, mit 17 Einspielern) | **bei ihm** — 22.10. abends geliefert, Nutzung der Szenen seine Entscheidung |
 | So 25.10. | **PODCAST** | Scott Aaronson | offen |
-| Mo 26.10. | Short | — | offen |
-| Di 27.10. | Short | — | offen |
+| Mo 26.10. | Short | Sutcliffe 01 · „Therapeut" | gebaut, nicht abgenommen |
+| Di 27.10. | Short | Sutcliffe 04 · „Vulnerability is not weakness" | gebaut, nicht abgenommen |
 | Mi 28.10. | Short | — | offen |
 | Do 29.10. | Short | — | offen |
 | Fr 30.10. | Short | — | offen |
