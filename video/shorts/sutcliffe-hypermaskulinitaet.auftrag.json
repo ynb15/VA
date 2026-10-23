@@ -1,58 +1,110 @@
 {
   "name": "Sutcliffe-Folge - Hypermaskulinitaet / Vulnerability is not weakness",
   "datei": "YNB Podcast David Sutcliffe Hypermasculinity.mp4",
-  "stand": "2026-10-22, 20:30 Kapstadt",
+  "stand": "2026-10-23, 00:40 Kapstadt — zweite Fassung nach seinen vier Korrekturen",
   "wer_spricht": "Er selbst. Er liest seine eigene Substack-Notiz vor; Sutcliffe hoert zu und wirft zweimal etwas ein.",
   "quelle": {
     "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
     "master_titel": "YNB Podcast: David Sutcliffe",
-    "fenster_master_s": [4550.0, 4665.0],
+    "fenster_master_s": [
+      4550.0,
+      4665.0
+    ],
     "hinweis": "In EINEM Stueck geholt. Datei beginnt bei Master 4549.99, 312 MB ueber 39 Bereichsanfragen."
   },
   "schnitt": {
     "plan": "video/shorts/sutcliffe-hypermaskulinitaet.schnittplan.json",
-    "von_bis_src_s": [21.1, 88.1],
-    "von_bis_master_s": [4571.09, 4638.09],
+    "von_bis_src_s": [
+      21.1,
+      88.1
+    ],
+    "von_bis_master_s": [
+      4571.09,
+      4638.09
+    ],
     "dauer_roh_s": 67.0,
     "warum": "Beide Grenzen liegen auf einem Kamerawechsel, Bild fuer Bild gemessen (Differenz 41,8 bzw. 39,1 gegen 0,5 im Ruhepegel). Bei src 21,1000 schneidet die Kamera von der Totale auf sein Gesicht, sein erstes Wort 'But' kommt 0,24 s spaeter. Bei src 88,1000 schneidet sie auf Sutcliffe, sein letztes Wort 'neither' endet 0,45 s davor. Es ist also kein Schnitt noetig, den das Material nicht ohnehin hergibt - und damit auch keine Stelle, an der ein Sprung entstehen koennte.",
-    "kamerawechsel_clipzeit_s": [19.0, 21.0, 43.6, 51.5],
+    "kamerawechsel_clipzeit_s": [
+      19.0,
+      21.0,
+      43.6,
+      51.5
+    ],
     "was_wo": "0-19,0 sein Gesicht · 19,0-21,0 Sutcliffes Reaktionsbild · 21,0-43,6 sein Gesicht · 43,6-51,5 Totale · 51,5-67,0 sein Gesicht"
   },
   "broll": {
-    "vorbild": "Sein Craig-Makhosi-Short mit Into the Wild. Seine Ansage vom 22.10.: 'genau das die B-Roll, wie bei dem Short von Craig mit Into the Wild, fast durchgehend laufen lassen. Also mich am Anfang zeigen und dann noch den letzten Teil. Mich wieder zeigen.'",
-    "modus": "unschaerfe",
-    "warum_modus": "Beide Quellen sind Bildschirmaufnahmen im Querformat. Ein 9:16-Ausschnitt wuerde drei Viertel der Breite verwerfen und den Rest hochskalieren. Im Unschaerfe-Modus steht der Film quadratisch und fast unskaliert scharf in der Mitte, dahinter fuellt er sich selbst vergroessert und unscharf das Hochformat - randlos, ohne den Beschnitt zu bezahlen. Das ist derselbe Modus wie bei Craig.",
-    "fokus": 0.5,
+    "vorbild": "Sein Craig-Makhosi-Short mit Into the Wild.",
+    "modus": "vollbild",
+    "warum_modus": "Sein Befund vom 23.10.: 'die erste Szene, die du reingespielt hast, die ist auch wieder im Kasten. Die soll ja alles im vollen Bild sein.' Der Unschaerfe-Modus setzt den Film quadratisch in die Mitte und fuellt darueber und darunter unscharf auf - genau der Kasten. Jetzt randlos 1080x1920.",
+    "wann": "Erst ab der Stelle, wo er die Substack-Notiz vorliest - seine Ansage vom 23.10.: 'ich moechte die B-Rolls erst einspielen, wenn ich das Substack Note vorlese.' Die Notiz beginnt mit 'Vulnerability is not weakness' bei Clipzeit 25,72; die B-Roll setzt 0,12 s davor ein.",
+    "ausschnitt_je_block": "--broll-fokus ist EIN Wert fuer alle Bloecke. Weil die Motive verschieden weit links stehen, wird jeder Block VORHER auf 9:16 beschnitten, mit eigenem Versatz. Der Renderer skaliert dann nur noch.",
     "bloecke": [
       {
-        "clipzeit_s": [19.0, 32.9],
-        "quelle": "Shorts: Manosphere (Drive 1UcP5eYD7DHX7CuuOrM36eKucyS_euwQr)",
-        "quellzeit_s": [20.75, 32.35],
-        "worauf": "'like vulnerability ... I put out a note recently on Substack ... most men are too afraid to touch'",
-        "warum_hier": "Uebergabe faellt auf den Kamerawechsel bei 19,0, ist also unsichtbar. Deckt zugleich Sutcliffes Reaktionsbild ab."
-      },
-      {
-        "clipzeit_s": [32.9, 45.0],
-        "quelle": "Shorts: Andrew Tate & David Sutcliffe (Drive 1P_o3bMBllXoGpnyhRKfaZId6cqKSSPyz)",
-        "quellzeit_s": [34.0, 44.1],
-        "worauf": "'this is why the Andrew Tates of this world have so much power ... to follow a leader who bleeds ... so they choose one who pretends he doesn't'",
-        "warum_hier": "Die woertlichste Entsprechung im ganzen Short. Eine durchgehende Einstellung auf Tate, kein Schnitt, kein Text. Rechte: Davids Zustimmung fuer dieses Material liegt vor (21.10.)."
-      },
-      {
-        "clipzeit_s": [45.0, 50.54],
+        "clipzeit_s": [
+          25.6,
+          29.25
+        ],
+        "datei": "b1.mp4",
         "quelle": "Shorts: Manosphere",
-        "quellzeit_s": [98.1, 102.72],
-        "worauf": "'but armor is not strength, it's fear hidden behind a mask'",
-        "warum_hier": "Der Anfang ist so gelegt, dass das Wort 'mask' (Clipzeit 49,68) genau auf den Mann mit der Sonnenbrille faellt - Quellzeit 102,0, Blockversatz 3,90 s. Am fertigen Bild nachgeprueft: sitzt."
+        "quellzeit_s": [
+          0.0,
+          3.04
+        ],
+        "ausschnitt": "crop=513:912:1054:147",
+        "worauf": "'Vulnerability is not weakness. It's a distinctive expression of strength.'",
+        "wer": "Junger Mann im blauen Shirt, nah, mittig, redet. Die laengste durchgehende Strecke im ganzen Trailer mit einem Gesicht in der Bildmitte und ohne Theroux."
+      },
+      {
+        "clipzeit_s": [
+          29.25,
+          32.9
+        ],
+        "datei": "b2.mp4",
+        "quelle": "Shorts: Manosphere",
+        "quellzeit_s": [
+          42.95,
+          45.99
+        ],
+        "ausschnitt": "crop=513:912:1054:147",
+        "worauf": "'Most men are too afraid to touch.'",
+        "wer": "Mann im Hoodie nah, dann der Mann vor dem Laden. Beide mit Gesicht im Bild."
+      },
+      {
+        "clipzeit_s": [
+          32.9,
+          48.7
+        ],
+        "datei": "b3.mp4",
+        "quelle": "Shorts: Andrew Tate & David Sutcliffe",
+        "quellzeit_s": [
+          34.0,
+          47.17
+        ],
+        "ausschnitt": "crop=678:1206:972:0",
+        "worauf": "'this is why the Andrew Tates of this world have so much power ... so they choose one who pretends he doesn't. But armor is not strength.'",
+        "wer": "Tate, eine durchgehende Einstellung, kein Schnitt, kein Text. Davids Zustimmung fuer dieses Material liegt vor (21.10.)."
+      },
+      {
+        "clipzeit_s": [
+          48.7,
+          50.54
+        ],
+        "datei": "b4.mp4",
+        "quelle": "Shorts: Manosphere",
+        "quellzeit_s": [
+          101.0,
+          102.53
+        ],
+        "ausschnitt": "crop=513:912:1054:147",
+        "worauf": "'it's fear hidden behind a mask'",
+        "wer": "Mann mit Sonnenbrille, der sich selbst mit dem Telefon filmt, danach der Glatzkopf mit Sonnenbrille. Der Blockanfang ist so gelegt, dass das Bild 0,06 s vor dem Wort 'mask' steht. Am fertigen Bild nachgeprueft."
       }
     ],
-    "anteil": "31,54 von 67,00 s Clipzeit, also 47 %. Bei Craig waren es 44 %.",
-    "uebergabe_zurueck": {
-      "clipzeit_s": 50.54,
-      "warum": "Erst stand sie auf 51,5, dem Kamerawechsel - der Uebergang waere unsichtbar gewesen. Dann lagen aber die Worte 'REAL STRENGTH IS' noch auf fremdem Bild, und zwar auf Louis Therouxs Gesicht. Das ist die Wende des Arguments und seine eigene Zeile, die gehoert auf ihn. Jetzt endet die B-Roll bei 50,54, wo das Wort 'real' anfaengt. Dazwischen stehen 0,96 s Totale, auf ihn beschnitten (Kasten 54:0:492:875, Mitte 0,24 - das ist er, er sitzt links) - also Totale auf ihn, dann naeher auf sein Gesicht. Eine Entscheidung von mir, nicht seine Vorgabe."
-    },
-    "netflix_zeichen": "Die Manosphere-Datei traegt oben rechts ein eingebranntes NETFLIX-Zeichen, gemessen bei x 2105-2275, y 193-271 im 2622x1206-Bild. Es erscheint im fertigen Short NICHT: der scharfe quadratische Ausschnitt nimmt die mittleren 912 px (x 855-1767), der unscharfe Hintergrund die mittleren 513 px. Beides liegt links vom Zeichen. Am fertigen Bild nachgesehen: der obere Rand ist glatt, nichts zu lesen.",
-    "herkunft_der_dateien": "Beide aus seinem Drive-Ordner 1F3x2S7Vn0XNDT73uJnadQIF1_NoAy2Cd, von ihm selbst dort abgelegt. Material aus dem Netz hole ich nicht - siehe video/broll-referenz.md."
+    "anteil": "24,94 von 67,00 s Clipzeit, also 37 %.",
+    "warum_nicht_theroux": "Louis Theroux ist der Dokumentarfilmer, nicht die Manosphere - sein Befund vom 23.10. Die Manosphere-Figuren der Doku sind Harrison Sullivan, Myron Gaines, Sneako, Justin Waller und Ed Matthews. Theroux ist im Trailer bei den Sekunden 23, 29-31, 39-40, 49, 58, 68-72, 75-76, 82-84, 86-90, 95-97, 99,9 und 102,5-103,9 im Ausschnitt zu sehen; alle diese Stellen sind gemieden.",
+    "warum_er_vorher_drin_war": "Ich hatte am VOLLEN Trailerbild ausgesucht (2622x912) und auf Leute geschaut, die am Rand standen. Gezeigt wird aber nur ein Ausschnitt von 513 px Breite. Wer am Rand stand, war weg - und Theroux stand in der Mitte, weil die Kamera IHM folgt. Der Kontaktabzug wird jetzt vom Ausschnitt gemacht.",
+    "netflix_zeichen": "Im Vollbildmodus faellt das NETFLIX-Zeichen (x 2105-2275) weit ausserhalb des 513-px-Ausschnitts bei x 1054-1567. Es kann nicht erscheinen.",
+    "herkunft_der_dateien": "Beide aus seinem Drive-Ordner 1F3x2S7Vn0XNDT73uJnadQIF1_NoAy2Cd."
   },
   "bild": {
     "tempo": 1.2,
@@ -61,9 +113,10 @@
     "tiefer_px": 120,
     "logo_breite_px": 700,
     "logo_hoehe": 0.877,
-    "zoom": 1.15,
-    "plan": "bildausschnitt.py --zoom 1.15 --marke 0,875,215,1080 --kein-stapel",
-    "lippe": 1248
+    "zoom": 1.0,
+    "plan": "bildausschnitt.py --zoom 1.0 --marke 0,875,215,1080 --kein-stapel",
+    "lippe": 1267,
+    "warum_zoom": "Erst 1,15. Sein Befund vom 23.10. am veroeffentlichten ersten Short: 'es ist ein bisschen zu nah rangezoomt. Also ans Gesicht. Zoom mal wieder ein bisschen raus.' An drei Testbildern verglichen (1,15 / 1,08 / 1,00): bei 1,00 steht der Kopf vollstaendig im Bild mit Luft darueber und die Schultern sind zu sehen. Die Untertitelzeile verschiebt sich dabei nur um 19 px (Lippe 1267 statt 1248), der Look bleibt also."
   },
   "einblendungen": {
     "datei": "video/shorts/sutcliffe-hypermaskulinitaet.cues.json",
@@ -82,8 +135,10 @@
     "dehnung": "atempo"
   },
   "musik": {
-    "abgenommen": "KEINE.",
-    "warum": "Seine stehende Regel nach fuenf Sperren an einem Tag: ein Bett erst wieder, wenn er einen Titel nennt. Fuer diesen Short hat er keinen genannt."
+    "abgenommen": "The Irrepressibles - In This Shirt, ab 0:23,25, Bett -25,9 dB (3 dB unter der Stimme), Einblendung 0,05 s",
+    "warum": "Seine Ansage vom 23.10.: 'dann kannst du auch jetzt in this shirt unterlegen. In der naechsten Version.'",
+    "warum_ab_23": "Der Titel geht arrangiert erst bei Songsekunde 23,3 los - dort springt die Energie ueber 2 kHz von -53,4 auf -34,6 dB. Davor traegt ihn ein einzelnes Instrument. Seine Ansage vom 22.10.",
+    "pegel": "Stimme -34,6 dB gemessen (dieser Short ist leiser als 'Meaning' mit -28,9 dB, weil er vorliest und die Pausen den Mittelwert druecken). Das Bett wird relativ dazu gerechnet, nicht absolut gesetzt."
   },
   "outro": {
     "datei": "video/marke/ynb-outro-9x16.mov",
