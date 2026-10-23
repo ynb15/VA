@@ -97,3 +97,26 @@ es seine Entscheidung mit vollem Wissen, und der Agent hat genau richtig
 geliefert: Vorgeschichte angeheftet, zweite Fassung daneben. **Nichts zu
 melden, nichts zu tun** — im Morgenbericht steht dazu nur, dass beide Fassungen
 bei ihm liegen.
+
+## Und ein Befund über mich selbst: mein lokaler Stand war zurückgefallen
+
+**Der Push um 00:4x wurde abgelehnt** — `non-fast-forward`. Nachgesehen statt
+gedrückt, und das war richtig: **auf dem Remote lagen drei eigene Commits, die
+mir lokal fehlten** (der Sweep von 15:54, das Tageslog, die 21:40-Kontrolle).
+Mein `HEAD` stand auf dem Morgenlauf von 06:40 — **der Container ist
+zwischendurch neu gebaut worden und kam mit einem älteren Klon zurück.**
+
+Die Arbeit war nicht verloren, sie war nur nicht hier. **Hätte ich
+force-gepusht, wären drei Commits weg gewesen**, darunter die Messung zum
+Rückkatalog und der Zustand des Aaronson-Pakets. Gelöst per `rebase` auf den
+Remote-Stand, der Konflikt in dieser Datei von Hand aufgelöst (Remote-Fassung
+als Grundlage, mein 00:40-Abschnitt dahinter).
+
+**REGEL: ein abgelehnter Push ist ein Befund, keine Hürde.** Erst `git log
+origin/<branch>` lesen, dann entscheiden. **`--force` kommt nur in Frage, wenn
+ich gesehen habe, was dabei verschwindet** — und hier wäre es ein ganzer
+Arbeitstag gewesen.
+
+**Und die Folge für die Nachtkontrolle:** mein eigener Branch gehört vor jeder
+Zählung gefetcht, nicht nur die der Agenten. Die Regel „erst fetchen, dann
+zählen" stand im Auftrag — ich hatte sie auf die anderen bezogen.
