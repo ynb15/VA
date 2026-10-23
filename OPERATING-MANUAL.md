@@ -8883,3 +8883,46 @@ lagen bei **2,43 s und 2,47 s** zwei Gesichter übereinander.
 Einstellung immer hart schneiden** — und den Knack über kurze Tonblenden
 (20 ms) an beiden Seiten erledigen; gemessen fällt der Pegel an der Naht dann
 auf **−85 dB**. Gehört in `shorts-render.py`, und die Datei gehört Shorts I.
+
+## Der Ablageort für fertige Stücke — er hat ihn selbst angelegt
+
+**Drive-Ordner „YNB Podcast: Claude Creation", `1N5i97R5byCWF57z23GuwoY1v5w6vX1ef`.**
+Von ihm am **21.10.2026 um 09:04** erstellt, Schreibzugriff am selben Tag um
+09:22 getestet und bestätigt. **Dort landen die gerenderten Stücke**;
+Schnittlisten, Untertitel und Archiv bleiben im Repo.
+
+**Und die Lehre, die mir gehört:** am 23.10. habe ich ihn im Morgenbericht nach
+einem Ablageort für fertige Dateien gefragt — **der Ordner existierte seit zwei
+Tagen, er hatte ihn selbst angelegt, und er stand in meiner eigenen
+Merkliste.** Am Abend davor hatte ich einem Agenten eine Entscheidung von ihm
+überschrieben. **Zwei Fehler derselben Familie an zwei Tagen: ich habe gefragt
+oder verfügt, wo er schon entschieden hatte.**
+
+**REGEL: vor jeder Frage an ihn und vor jeder Anweisung an einen Agenten
+nachsehen, ob die Antwort schon da ist** — in meiner Merkliste, im Handbuch, in
+den Notizen des Agenten. Eine Frage, deren Antwort vorliegt, kostet ihn
+dasselbe wie eine falsche Auskunft: sie verlangt Aufmerksamkeit für etwas, das
+erledigt war.
+
+## Der Rückkatalog ist nicht billiger — die Begründung ist am 23.10. weggefallen
+
+Am 22.10. habe ich den Rückkatalog damit begründet, veröffentlichte Folgen
+hätten ein wortgenaues YouTube-Transkript ohne Drive-Download. **Am 23.10. von
+zwei Agenten unabhängig gemessen: dieser Weg ist zu.** `yt-dlp` meldet den
+Bot-Check, `video.google.com/timedtext` gibt **403 am Proxy**, die Watch-Seite
+führt **keine `captionTracks`** mehr; vier Abspielclients geprüft, Metadaten
+kommen noch, Untertitellisten nicht. **Was bleibt:** oEmbed für Titel,
+`--flat-playlist` für die Kanalliste — **30 veröffentlichte Videos mit Titeln.**
+
+**Eine Rückkatalog-Folge kostet damit so viel wie eine neue.** Master aus Drive
+(Eben Britton: 27,0 GB), Ton ziehen, selbst transkribieren. **Das
+Drive-Tageslimit gilt pro Eigentümer**, also wird abgesprochen, wer welche Folge
+zieht.
+
+**Vier Folgen haben gar keinen Master mehr** — Chouler, Rob Paddock, Nathan
+Maingard, Danny Miranda, von ihm nach der Veröffentlichung gelöscht. **Chouler
+geht trotzdem**, weil sein Transkript am 19.10. geholt wurde (Frage 01:08:29,
+Antwort 01:08:36–01:09:31). Für die anderen drei ist beides zu.
+
+**Der Plan bleibt richtig, die Begründung war falsch.** Der Rückkatalog schont
+den Vorrat an unveröffentlichten Folgen — das gilt weiter. Billiger ist er nicht.

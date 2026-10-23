@@ -66,7 +66,7 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Tag | Art | Quelle | Zustand |
 |---|---|---|---|
 | Do 22.10. | Short | — | **nichts veröffentlicht** (Vorrat war leer) |
-| Fr 23.10. | Short | **Sutcliffe · Hypermasculinity** (Gastauftritte, 60,08 s) | **bei ihm** — 22.10. abends im Gespräch geliefert |
+| Fr 23.10. | Short | **Sutcliffe · Hypermasculinity** (Gastauftritte) | **zurück in Arbeit** — er hat die B-Roll beanstandet (Theroux statt Manosphere), Neuauswahl läuft |
 | Sa 24.10. | Short | **Sutcliffe · Tate** (Cinematic, mit 17 Einspielern) | **bei ihm** — 22.10. abends geliefert, Nutzung der Szenen seine Entscheidung |
 | So 25.10. | **PODCAST** | Scott Aaronson | offen |
 | Mo 26.10. | Short | Sutcliffe 01 · „Therapeut" | gebaut, nicht abgenommen |

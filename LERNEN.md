@@ -45,6 +45,78 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 15 — 23.10.2026, 16:10 Kapstadt · der Rückkatalog ist nicht billig, und der Ablageort existiert längst
+
+- **MEINE BEGRÜNDUNG FÜR DEN RÜCKKATALOG IST WEG.** Ich habe gestern an Shorts I
+  geschrieben, veröffentlichte Folgen seien billiger, weil sie ein wortgenaues
+  YouTube-Transkript haben — *„kein Drive-Download, kein Tageslimit, keine
+  Versatzrechnung."* **Shorts I hat drei Wege geprüft, alle zu:** `yt-dlp`
+  meldet den Bot-Check, `video.google.com/timedtext` gibt **403 am Proxy**, und
+  die Watch-Seite enthält **keine `captionTracks`** mehr. Vom Vlog-Agenten
+  unabhängig bestätigt: vier Abspielclients geprüft, `web_safari` und `mweb`
+  liefern Metadaten, aber keine Untertitelliste.
+  **Was noch geht:** oEmbed liefert Titel zu einer ID, die Kanalseite die IDs
+  (`--flat-playlist`). **30 veröffentlichte Videos mit Titeln stehen fest.**
+  **Also kostet eine Rückkatalog-Folge so viel wie eine neue:** Master aus
+  Drive, Ton ziehen, selbst transkribieren. Der Eben-Britton-Master hat
+  **27,0 GB**, und **das Drive-Tageslimit gilt pro Eigentümer** — wer eine Folge
+  zieht, sagt es vorher, sonst steht am Abend das ganze Team.
+  → betrifft: alle, die am Rückkatalog arbeiten
+- **Und vier veröffentlichte Folgen haben überhaupt keinen Master mehr:**
+  **Francis Chouler, Rob Paddock, Nathan Maingard, Danny Miranda** — von ihm
+  nach der Veröffentlichung gelöscht, um Speicher zu sparen. Fünf andere haben
+  ihren noch.
+  **Chouler geht trotzdem**, weil sein Transkript am 19.10. geholt wurde und
+  vorliegt: Frage bei **01:08:29**, Antwort **01:08:36–01:09:31**, Ende auf
+  *„Embrace the uncertainty. It is the source of aliveness."* **Für die anderen
+  drei ist beides zu** — kein Master, kein Transkript. **Das war die Folge, die
+  ich zweimal als erste Rückkatalog-Folge benannt habe; sie ist die einzige der
+  vier, die noch möglich ist, und das aus Zufall.**
+  → betrifft: content-schlicht, content-cinematic, content-vlog
+- **DER ORT FÜR FERTIGE STÜCKE EXISTIERT, UND ER HAT IHN SELBST ANGELEGT.**
+  Drive-Ordner **„YNB Podcast: Claude Creation"**
+  (`1N5i97R5byCWF57z23GuwoY1v5w6vX1ef`), von ihm am 21.10. um 09:04 erstellt,
+  **Schreibzugriff am 21.10. 09:22 getestet und bestätigt.**
+  **Ab jetzt gehen fertige Stücke dorthin**, das Archiv bleibt im Repo. Damit
+  hat „fertig" einen Ort, den jeder nachsehen kann — und meine Frage von heute
+  Morgen nach einem Ablageort ist beantwortet, **bevor ich sie gestellt habe.**
+  **Der Fehler ist meiner, und es ist der zweite dieser Art an zwei Tagen:**
+  gestern Abend habe ich Cinematic eine Entscheidung von ihm überschrieben, heute
+  Morgen habe ich ihn nach etwas gefragt, das er längst eingerichtet hatte und
+  das in meiner eigenen Merkliste stand. **Vor jeder Frage an ihn: nachsehen, ob
+  die Antwort schon da ist.**
+  → betrifft: alle, die rendern
+- **Der Kontaktabzug für die B-Roll-Auswahl wird vom AUSSCHNITT gemacht, nicht
+  vom Quellbild.** Sein Befund zum Hypermaskulinitäts-Short, drei Punkte in
+  einem Satz:
+  > *„google mal Louis Thoreau. Das ist der Typ, der die Doku gemacht hat. Und
+  > du zeigst vor allem Szenen von ihm. Aber er stellt die Manosphere ja gar
+  > nicht dar. Und teilweise haben wir wieder Szenen, wo die Person gar nicht im
+  > Bild ist."*
+
+  **Alle drei haben dieselbe Ursache:** ausgesucht wurde am vollen Trailerbild
+  (2622×912), gezeigt werden im randlosen 9:16 nur **513 px Breite** — die
+  mittleren **19,6 %**. Wer am Rand stand, war weg. Statt `crop=2622:912:0:147`
+  gehört `crop=513:912:1054:147` unter den Abzug.
+  **Und die Regel, die darüber hinausgeht: bei einer Doku folgt die Kamera dem
+  Reporter, nicht dem Thema.** Wer in der Bildmitte steht, ist bei Louis
+  Theroux, Reeve, Munchetty und jedem Format dieser Art **zuerst einmal der
+  Fragesteller** — deshalb blieb von der Auswahl genau der übrig, der die
+  Manosphere nicht darstellt. Nachgemessen: die längste durchgehende Strecke mit
+  einem Gesicht in der Mitte und ohne Theroux ist **3,0 s**, alles andere 0,8–1,5 s.
+  → betrifft: jede B-Roll-Auswahl
+- **Drei Agenten haben seit gestern gearbeitet und nichts in den Kanal
+  geschrieben** — Shorts I (27 Commits), Vlog (28), Thumbnails (38). **Zwei der
+  wichtigsten Befunde dieser Ausgabe standen in ihren Commit-Botschaften, nicht
+  im Kanal**, und beide treffen den Plan: der Rückkatalog und der Ablageort.
+  **Eine Commit-Botschaft erreicht niemanden, der nicht danach sucht.** Wer
+  etwas findet, das einen anderen betrifft, schreibt es in
+  `lernen/<schlüssel>.md` — ich sammle zweimal täglich, aber ich kann nur
+  weitergeben, was dort steht.
+  → betrifft: content-schlicht, content-vlog, thumbnails
+
+---
+
 ## Ausgabe 14 — 23.10.2026, 06:40 Kapstadt · der J-Schnitt, und meine Regel von gestern war zu grob
 
 - **MEINE REGEL VON GESTERN WAR ZU GROB, UND DIE BESSERE IST GEMESSEN.** Ich

@@ -37,7 +37,7 @@ Guest Booker führt die Databank, das ist seine Zeile.
 Spur:** Nathan Maingard und Bridget Woods. Entweder längst veröffentlicht oder
 anders abgelegt. **Ungeklärt, nicht geraten** — liegt beim Guest Booker.
 
-## Vier Sperrmeldungen an einem Tag — und die Coverversion hilft nicht
+## Sechs Sperrmeldungen an einem Tag — und die Coverversion hilft nicht
 
 **22.10.2026. Vier Content-ID-Mails, drei verschiedene Musiktitel, zwei
 Neuhochladungen, jede wieder gesperrt.** Zeiten Kapstadt, IDs und Rechteinhaber
@@ -49,6 +49,8 @@ aus den Mails selbst:
 | 11:57 | What makes life meaningful? (Quantum Professor Scott Aaronson) | `9iRza-eDKcc` | Daylight – David Kushner | Virgin Music Group | Audio |
 | 15:21 | dasselbe Sutcliffe-Stück, neu hochgeladen | `5nl--61ZBBI` | In This Shirt (Royksopp Remix) – The Irrepressibles | FUGA | Audio |
 | **16:21** | **YNB Podcast david Sutcliffe Meaning XXX** | `nHQIvWANN04` | **COMPTINE D UN AUTRE ETE** | LatinAutor-UMPG, LatinAutor, LatinAutorPerf, Muserk, UMPG Brazil, UMPG Publishing | **Melody or lyrics** |
+| 17:33 | What makes life meaningful? (Sutcliffe) | — | dritte Meldung in diesem Faden | | |
+| **20:12** | **YNB Podcast David Sutcliffe Meaning Comptine** | — | wieder das Cover — der Dateiname nennt es selbst | | |
 
 **Die Tabelle ist ein Verlauf, keine Liste.** Zeile 4 trägt schon die neue
 Dateinamen-Vorgabe und einen Platzhalter — **er hat während des Sweeps zweimal
@@ -72,8 +74,32 @@ dieselbe Längengrenze wie das Label. **Eine Coverversion wechselt den
 Anspruchsteller, nicht die Folge.**
 
 **Der einzige belegte Weg ist ohne Bett.** Leiser, kürzer, Cover, Remix: von
-heute widerlegt oder unbelegt. Will er Musik, führt der Weg über eine
-**lizenzierte Bibliothek** — ein Einkauf, keine Dateiwahl.
+heute widerlegt oder unbelegt.
+
+**Nachtrag 23.10.: es waren sechs Meldungen, nicht vier.** Zwei kamen am Abend
+des 22.10. nach meinem Bericht, die letzte **20:12** zu *„YNB Podcast David
+Sutcliffe Meaning Comptine"* — **der Dateiname nennt den Titel selbst.** Er hat
+also über den ganzen Tag **sechsmal** versucht, dasselbe Stück mit Musik
+hochzuladen, und sechsmal kam die Sperre. Alle sechs Mails liegen ungelesen
+oder im Papierkorb.
+
+**Daraus folgt nicht „nochmal keine Musik sagen", sondern ein Weg, den er gehen
+kann.** Will er Musik, führt er über eine **lizenzierte Quelle**:
+* **Die YouTube Audio Library** (in YouTube Studio, kostenlos). Nach YouTubes
+  eigener Hilfe ist diese Musik lizenzfrei und erhält **keinen
+  Content-ID-Anspruch**. Einige Titel verlangen eine Namensnennung in der
+  Beschreibung. **Belegstand: über mehrere Leitfäden belegt, die YouTube-Hilfe
+  selbst ist aus unseren Containern gesperrt** (`support.google.com`, DNS
+  verweigert).
+* **Die Shorts-Musikauswahl in der App ist ein anderer Weg und unklarer:** die
+  Quellen widersprechen sich, ob dabei ein unsichtbarer Anspruch entsteht, und
+  eine Quelle sagt, sie decke nur Shorts **unter 60 Sekunden**.
+* Bezahlte Bibliotheken (Epidemic Sound, Artlist) sind der dritte Weg — **ein
+  Einkauf, keine Dateiwahl.**
+
+**Das Naheliegendste ist die Audio Library: sie kostet nichts, liegt in dem
+Werkzeug, in dem er ohnehin hochlädt, und ist der einzige Weg, bei dem die
+Lizenz von derselben Stelle kommt wie die Sperre.**
 
 **REGEL: keine Musik unter einem Stück, bis er einen Titel ausdrücklich
 freigibt.** In seinem Musikordner `1m3S9cayJDrHX7rMizhOod6lU523FWMHW` liegen
@@ -104,7 +130,22 @@ Chouler mit 12.045 Aufrufen.**
 
 Daraus ist noch fast nichts geschnitten worden. **Das ist der eigentliche
 Hebel für eine tägliche Veröffentlichung**: der Rückkatalog liefert Clips und
-Shorts, ohne den Vorrat an neuen Folgen anzutasten. Dazu kommt ein Befund des
+Shorts, ohne den Vorrat an neuen Folgen anzutasten.
+
+**ABER: er ist nicht billiger als eine neue Folge, und das war am 22.10. noch
+meine Begründung.** Am 23.10. haben zwei Agenten unabhängig gemessen, dass
+YouTube-Transkripte aus unseren Containern **nicht mehr zu holen** sind —
+`yt-dlp` meldet den Bot-Check, `timedtext` gibt 403 am Proxy, die Watch-Seite
+führt keine `captionTracks` mehr. **Also: Master aus Drive, Ton ziehen, selbst
+transkribieren**, wie bei einer neuen Folge; der Eben-Britton-Master hat
+27,0 GB, und das **Drive-Tageslimit gilt pro Eigentümer** — wer zieht, sagt es
+vorher.
+
+**Und vier dieser Folgen haben überhaupt keinen Master mehr:** Francis Chouler,
+Rob Paddock, Nathan Maingard, Danny Miranda — nach der Veröffentlichung
+gelöscht, um Speicher zu sparen. **Chouler geht trotzdem**, weil sein Transkript
+am 19.10. geholt wurde und vorliegt (Frage 01:08:29, Antwort 01:08:36–01:09:31).
+Für die anderen drei ist beides zu. Dazu kommt ein Befund des
 YouTube-Managers: **39 von 39 Shorts haben keine Beschreibung.**
 
 ## Kingsbury ruht bis Montag — seine Entscheidung vom 22.10.
