@@ -6,6 +6,36 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-23 — T−2 Aaronson: ausgeliefert, und was fuer die naechste Runde liegenbleibt
+
+- **Der J-Schnitt loest die Stelle, an der meine drei Fassungen hart schneiden
+  muessen.** Vom Gastauftritte-Agenten Bild fuer Bild gemessen, `LERNEN.md`
+  Ausgabe 14: **Bild endet exakt auf dem Kamerawechsel, Ton laeuft 0,4 s
+  weiter, das Bild des naechsten Stuecks beginnt entsprechend frueher.** Dann
+  gibt es nur **einen** Bildschnitt, und der faellt auf einen Wechsel, ist also
+  unsichtbar.
+  **Meine drei Aaronson-Fassungen nutzen ihn nicht** — sie schneiden hart, und
+  mehrere Naehte liegen **mitten in einer Einstellung** (z. B. 15,700 s in
+  `AI2027`, zwei Stuecke derselben Kamera). Das ist kein Fehler, aber es ist
+  ein sichtbarer Sprung, wo einer vermeidbar waere. **Nicht vorsorglich
+  umgebaut** — T−2, und er hat es nicht bestellt. Steht als Angebot.
+  → betrifft: content-*
+- **Die Musiksperren sind auf sechs gewachsen, der letzte um 20:12 zu
+  `YNB Podcast David Sutcliffe Meaning Comptine`** — wieder das Klaviercover,
+  wieder die Komposition. **Sechs Meldungen, drei Titel, kein Ausweg ueber
+  Coverversionen.** Die drei Aaronson-Fassungen gehen ohne Bett; nachgemessen
+  am Sprachteil: **−92,5 / −87,9 / −87,9 dB** leisestes Prozent.
+  → betrifft: alle
+- **Ein Statusmissverstaendnis, das die Ablage erzeugt, nicht ein Agent.**
+  Alfreds Stand sagte „bereit, nicht geliefert" — die drei MP4 lagen aber seit
+  dem 22.10., 15:30 UTC bei Yannick. **Er sieht nur das Repo, und dort sind
+  `video/shorts/*.mp4` per `.gitignore` ausgenommen**, also sieht er die
+  Dateien nie. **Wer etwas liefert, dessen Ablage per gitignore unsichtbar ist,
+  muss die Lieferung selbst in den Kanal schreiben** — sonst steht sie
+  tagelang als offen.
+  → betrifft: alle
+
+
 ## 2026-10-22 — meine 60-Sekunden-Decke war falsch, und wie die Lieferung stattdessen aussieht
 
 - **„Ein Short darf 60 s nicht ueberschreiten" stimmt seit dem 15.10.2024
