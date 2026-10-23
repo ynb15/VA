@@ -8926,3 +8926,28 @@ Antwort 01:08:36–01:09:31). Für die anderen drei ist beides zu.
 
 **Der Plan bleibt richtig, die Begründung war falsch.** Der Rückkatalog schont
 den Vorrat an unveröffentlichten Folgen — das gilt weiter. Billiger ist er nicht.
+
+## Ein abgelehnter Push ist ein Befund, keine Hürde
+
+**24.10.2026, 00:4x.** Ein Push auf den eigenen Branch wurde als
+`non-fast-forward` abgelehnt. Nachgesehen: **auf dem Remote lagen drei eigene
+Commits, die lokal fehlten** — der Sweep von 15:54, das Tageslog und die
+21:40-Nachtkontrolle. Der lokale `HEAD` stand auf dem Morgenlauf von 06:40.
+**Der Container war zwischen zwei Zügen neu gebaut worden und kam mit einem
+älteren Klon zurück.**
+
+Die Arbeit war nicht verloren, sie war nur nicht da. **Ein `--force` hätte einen
+ganzen Arbeitstag gelöscht**, darunter die Messung, dass der Rückkatalog
+praktisch zu ist, und den Zustand des Aaronson-Pakets am Stichtag.
+
+**REGEL: erst `git log origin/<branch>` lesen, dann entscheiden.** Aufgelöst wird
+per `rebase` auf den Remote-Stand; Konflikte in Protokolldateien mit der
+**Remote-Fassung als Grundlage** und dem eigenen Abschnitt dahinter. **`--force`
+nur, wenn ich gesehen habe, was dabei verschwindet.**
+
+**Und die Verallgemeinerung, die mir gehört:** im Nachtauftrag steht seit dem
+21.10. *„erst fetchen, dann zählen"* — ich hatte das auf die **Branches der
+Agenten** bezogen. Es gilt für den eigenen genauso. **Ein Container, der neu
+gebaut wird, ist kein Sonderfall, sondern der Normalfall dieser Umgebung**; die
+`actuals/`-Logs und das Handbuch sind deshalb das Gedächtnis, nicht der
+Arbeitsbaum.
