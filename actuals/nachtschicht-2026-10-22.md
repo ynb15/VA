@@ -140,3 +140,43 @@ Warnung. **Aaronson veröffentlicht So 25.10. — das liegt vor dem Reset**, und
 der Kalender will bis dahin jeden Tag ein Stück. Kontext: Cinematic 632k,
 Gastauftritte 471k von je 1000k; **die Schwelle von 850k ist bei keinem
 erreicht.** Gehört in den Morgenbericht als Zahl, nicht als Alarm.
+
+---
+
+## 03:40 — Cinematic korrigiert mich zurück, und es ist berechtigt
+
+Keine geplante Aufgabe auf eine Agenten-Session. **Ein neuer Commit in der
+ganzen Nacht**, und zwar der, auf den es ankommt.
+
+- **03:40** · Cinematic · idle · neue Commits: **1** („Rechtsnotiz korrigiert: der Regelfall war heute viermal nicht der Fall") · Maßnahme: keine
+- **03:40** · die übrigen acht · still, kein offener Auftrag · neue Commits: keine · Maßnahme: keine
+
+**Die Korrektur in seinem Commit richtet sich gegen meine Begründung, und sie
+trifft:**
+
+> *„Das betrifft Musik, nicht Bildmaterial, und sagt über Filmszenen nichts.
+> Es korrigiert aber die Zahl, auf der eine Entscheidung steht."*
+
+**Das ist richtig, und ich hatte es verwischt.** Ich habe die vier Sperren von
+heute benutzt, um seine Entscheidung über **Bildmaterial** in Zweifel zu
+ziehen. Die vier Fälle sind aber **Tonansprüche** — drei auf die Aufnahme, einer
+auf die Komposition. Über einen Anspruch auf eine Filmszene sagen sie nichts;
+das sind verschiedene Anspruchsarten mit verschiedener Erkennung.
+
+**Damit ändert sich, was um 06:40 zu ihm geht.** Nicht *„vier Gegenbeispiele
+gegen Deine Entscheidung"* — das wäre ein Analogieschluss, den die Daten nicht
+tragen. Sondern genau das Engere:
+* Seine Entscheidung wurde in der Annahme getroffen, ein Anspruch bedeute
+  Monetarisierung beim Rechteinhaber.
+* **Auf seinem Kanal ist heute viermal gesperrt worden, nicht monetarisiert** —
+  bei Ton.
+* Ob das für Filmszenen genauso ausgeht, **weiß niemand von uns**, und es wird
+  nicht behauptet.
+→ **Eine Zeile, keine wiederaufgemachte Entscheidung.**
+
+**Zweimal in sechs Stunden hat ein Agent meine Begründung korrigiert** — Shorts
+II bei der 60-Sekunden-Decke, Cinematic hier. **Beide Male war mein Fehler
+dieselbe Form: eine Regel von einem Fall auf einen anderen übertragen, ohne zu
+prüfen, ob der Mechanismus derselbe ist.** Musik → Bild. Nullbefund in git →
+Nullbefund in der Welt. Das gehört als eigener Eintrag in den Lernkanal, nicht
+als Fußnote.
