@@ -1,3 +1,40 @@
+## 23.10.2026 — Der Rückkatalog über die Master kostet das Doppelte der Datei
+
+**Gemessen, dann abgebrochen.** Drei Stücke des Eben-Britton-Masters (27,0 GB,
+102 min) geholt, je 3 Minuten Ton:
+
+| Stück | Ton bis | geholt | Laufzeit |
+|---|---|---|---|
+| 0 | 3,0 min | 1,09 GB | 2,6 min |
+| 1 | 6,0 min | 1,98 GB | 5,2 min |
+| 2 | 9,0 min | 1,97 GB | 5,3 min |
+
+**Hochgerechnet auf 34 Stücke: 57 GB Transfer und 148 Minuten** — für eine
+Datei von 27 GB. **Das Doppelte der Datei.** Der Grund ist der Zuschnitt
+selbst: jedes Stück setzt auf dem Schlüsselbild **vor** seinem Anfang auf und
+der Demuxer liest über sein Ende hinaus. Stück 0 brauchte ohne vorangehenden
+Sprung nur 1,09 GB, die folgenden je rund 2.
+
+**Damit ist der Weg zu.** Das Drive-Tageslimit gilt pro Eigentümer und war am
+21.10. schon bei **31 GB** erschöpft. 57 GB für **eine** Folge verbrauchen die
+Quote aller Agenten für einen Tag. Ich habe nach drei Stücken (≈5 GB)
+abgebrochen, statt es zu Ende laufen zu lassen.
+
+**Die Klemme, die das erklärt:** große Stücke sind sparsam, aber ein Zug über
+mehr als ein paar Minuten stirbt am Containerwechsel. Kleine Stücke überleben,
+kosten aber den doppelten Transfer. **Beides zugleich geht nicht.**
+
+**Was billig bleibt und deshalb die Reihenfolge bestimmt:**
+1. Folgen, deren Transkript schon vorliegt — kein Zug nötig.
+2. Folgen mit einer **kleinen Exportfassung** neben dem Master: bei Aaronson
+   liegen 895 MB neben 16 GB, das ist ein Sechzigstel. Bei Britton gibt es
+   keine.
+3. Erst danach der Master, und dann nur mit abgesprochener Quote.
+
+**Die Bitte, die daraus folgt, geht an ihn, nicht an uns:** eine kleine
+Exportfassung je Folge, die bearbeitet werden soll.
+→ betrifft: content-*, YNB Cinema, Shorts II, EA, alle Content-Agenten
+
 ## 22.10.2026 — Defensiv schneiden, und die Naht nachlesen
 
 **Seine neue Anweisung, für alle Short-Agenten:** *„dass du lieber zu
