@@ -56,3 +56,44 @@ einer kleinen Exportfassung neben dem Master**.
 praktisch zu** — und das war mein Vorschlag für die Tage ohne Podcast. Gehört in
 den Morgenbericht, mit der Frage, ob neben den Mastern kleine Exportfassungen
 liegen. **Das weiß nur er.**
+
+---
+
+## 00:40 — der Agent hat die Datei geprüft, statt meine Unterscheidung zu übernehmen
+
+Keine geplante Aufgabe auf eine Agenten-Session. **Ein Commit seit 21:48.**
+
+- **00:40** · Gastauftritte · idle · neue Commits: **1** — „Sperrvorgeschichte von In This Shirt an den Auftrag geheftet" · Maßnahme: keine
+- **00:40** · die übrigen acht · still, kein offener Auftrag · neue Commits: keine · Maßnahme: keine
+
+**Und er korrigiert mich, sauber belegt.** Ich hatte ihm angeboten:
+*„beanstandet war der Royksopp-Remix, eine andere Aufnahme ist formal ein
+anderer Fingerabdruck."* Er hat **die Datei selbst nachgesehen**:
+
+> *„Genau die Datei, die unter dieser Fassung liegt, hat am 22.10. um 15:21 die
+> weltweite Sperre ausgelöst… Die Datei trägt im Tag ‚The Irrepressibles / From
+> the Circus to the Sea, Pt. 2 / 2021', ist also nicht als Remix ausgewiesen —
+> Content ID hat trotzdem dagegen angeschlagen."*
+
+**Es ist keine andere Aufnahme, es ist dieselbe Datei** — und „Royksopp Remix"
+ist die Kennung, die Content ID vergeben hat, nicht die Kennung der Datei.
+**Meine Unterscheidung war nicht nur unsicher, sie war hier gegenstandslos.**
+
+**Das ist der dritte Fall in zwei Tagen, und alle drei haben dieselbe Form:**
+Shorts II bei der 60-Sekunden-Decke, Cinematic bei Ton gegen Bild, und jetzt
+hier. **Ich habe über einen Mechanismus geschlossen, ohne das Stück anzusehen,
+über das ich schloss.** Die Agenten sitzen an den Dateien, ich an den Tabellen —
+**eine Aussage über eine Datei gehört deshalb nicht von mir, sondern von dem,
+der sie öffnen kann.** Steht als Regel im Kanal, Ausgabe 15.
+
+**Und der Punkt, der die Sache entscheidet, ist nicht technisch:**
+
+> *„Er hat den Titel am 23.10. trotzdem bestellt. Der Short ist damit ein
+> zweiter Versuch bei anderer Länge, keine neue Erwartung — und deshalb liegt
+> die Fassung ohne Musik daneben."*
+
+**Er hat heute, nach sechs Sperren, denselben Titel wieder bestellt.** Damit ist
+es seine Entscheidung mit vollem Wissen, und der Agent hat genau richtig
+geliefert: Vorgeschichte angeheftet, zweite Fassung daneben. **Nichts zu
+melden, nichts zu tun** — im Morgenbericht steht dazu nur, dass beide Fassungen
+bei ihm liegen.
