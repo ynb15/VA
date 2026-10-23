@@ -535,3 +535,57 @@ kurz sind. Beim naechsten Lauf dieses Shorts ist es mit behoben.
 → betrifft: jeden Short mit mehr als einer Kameraeinstellung. Und als Lehre:
 wenn eine Funktion in ihrer eigenen Beschreibung etwas verspricht
 („derselbe Text"), gehoert genau das nachgeprueft, statt es zu glauben.
+
+## 23.10.2026 — B-Roll am VOLLEN Bild ausgesucht, aber der Short zeigt nur die mittleren 31,6 %.
+
+Sein Befund zum Hypermaskulinitaets-Short, drei Punkte in einem Satz:
+
+> *„google mal Louis Thoreau. Das ist der Typ, der die Doku gemacht hat. Und du
+> zeigst vor allem Szenen von ihm. Aber er stellt die Manosphere ja gar nicht
+> dar. Und teilweise haben wir wieder Szenen, wo die Person gar nicht im Bild
+> ist."*
+
+Alle drei stimmen, und alle drei haben **dieselbe Ursache**: ich habe die
+Bloecke am vollen Trailerbild ausgesucht (2622×912) und dabei auf Leute
+geschaut, die am Rand standen. Gezeigt wird aber im randlosen 9:16 nur ein
+Ausschnitt von **513 px Breite**, also die mittleren 19,6 % der Trailerbreite
+(bei einem 16:9-Film sind es 31,6 %). Wer am Rand stand, war weg — und Louis
+Theroux, der Dokumentarfilmer, stand in der Mitte, weil die Kamera **ihn**
+verfolgt. Deshalb blieb von meiner Auswahl genau der uebrig, der die Manosphere
+nicht darstellt.
+
+Nachgeprueft an meinen eigenen alten Bloecken, im tatsaechlich gezeigten
+Ausschnitt: Block 1 (Quelle 20,75–32,35) enthaelt Theroux bei 23 und 29–31 und
+gar keine Person bei 21–22, 26–28 und 32–34. Block 2 (98,1–103,7) enthaelt
+Theroux bei 99,9 und 103,4 sowie eingeblendeten Text („powerbank") bei
+100,4–101,4. Sein Urteil war also nicht ungefaehr richtig, sondern genau.
+
+**Die Regel daraus: der Kontaktabzug wird vom AUSSCHNITT gemacht, nicht vom
+Quellbild.** Vorher:
+
+```
+crop=2622:912:0:147            # das ganze Filmfenster — zeigt, was NICHT laeuft
+```
+
+Jetzt:
+
+```
+crop=513:912:1054:147          # genau das, was im Short steht
+```
+
+Damit war in einem Durchgang zu sehen, was vorher drei Runden gekostet haette:
+die laengste durchgehende Strecke mit einem Gesicht in der Mitte und ohne
+Theroux ist **3 Sekunden** (Trailersekunde 0,0–3,0). Alles andere liegt bei
+0,8 bis 1,5 s. Ein Trailer ist eben in 1–2-Sekunden-Stuecken geschnitten, und
+die Mitte traegt nicht in jedem Stueck ein Gesicht.
+
+→ betrifft: jede B-Roll-Auswahl. Erst den Ausschnitt bauen, dann auswaehlen.
+Und bei einer Doku gilt zusaetzlich: **die Kamera folgt dem Reporter, nicht dem
+Thema.** Wer in der Bildmitte steht, ist bei Theroux, Reeve, Munchetty und
+jedem anderen Format dieser Art zuerst einmal der Fragesteller.
+
+→ zweitens: `--broll-fokus` ist EIN Wert fuer alle Bloecke. Wenn die Motive in
+verschiedenen Bloecken verschieden weit links stehen, reicht das nicht. Dann
+wird jeder Block **vorher** auf 9:16 beschnitten, mit eigenem Versatz, und der
+Renderer laeuft auf `--broll-modus vollbild` — der skaliert ein schon
+passendes Bild nur noch, ohne weiter zu schneiden.
