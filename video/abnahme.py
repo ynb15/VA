@@ -114,9 +114,25 @@ def main():
         # Testbett; ein hoerbares liegt bei -30 bis -40. Der Anteil unter
         # -55 dB taugte dafuer nicht: er fiel von 13,6 auf 11,3 Prozent und
         # haette das Bett durchgelassen.
+        # Der Pegel allein sagt nicht, WAS da leise liegt. Am 24.10. fiel
+        # ein Short mit -64,7 dB durch, ein anderer aus derselben Folge kam
+        # mit -65,4 dB durch — der Unterschied war, dass in dem einen 45
+        # Sekunden ohne Sprechpause geredet wird. Darum wird zusaetzlich
+        # berichtet, wie der leise Boden klingt: die spektrale Flachheit der
+        # leisesten Fenster. Raumton ist breitbandig, ein Musikbett ist
+        # tonal. Das ist eine ANGABE, kein Freispruch: das Urteil bleibt am
+        # Pegel, und im Zweifel entscheidet sein Ohr.
+        leise = f[pegel <= float(np.percentile(pegel, 3))]
+        flach = float("nan")
+        if len(leise):
+            S = np.abs(np.fft.rfft(leise * np.hanning(320), axis=1)) ** 2 + 1e-20
+            S = S.mean(axis=0)[1:]
+            flach = float(np.exp(np.log(S).mean()) / S.mean())
         pruef("Kein Musikbett", boden <= -65.0,
-              f"leisestes Prozent bei {boden:.1f} dB"
-              + ("" if boden <= -65.0 else "  <- klingt nach durchlaufendem Bett"))
+              f"leisestes Prozent bei {boden:.1f} dB, Flachheit {flach:.3f}"
+              + ("" if boden <= -65.0 else "  <- zu laut fuer Raumton; "
+                 "Flachheit deutlich unter den sauberen Fassungen "
+                 "(0,077-0,089) hiesse zusaetzlich tonal"))
     else:
         pruef("Kein Musikbett", False, "Tonspur nicht lesbar")
 

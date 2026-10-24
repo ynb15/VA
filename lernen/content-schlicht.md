@@ -677,3 +677,17 @@ Ebene früher stehen. **Wer eine Regel in die falsche Schicht baut, hat sie
 nicht gebaut** — und merkt es nur, wenn er den Zwischenstand misst statt das
 Ergebnis zu erwarten.
 → betrifft: content-*, alle Content-Agenten
+
+**24.10. — Die Musikbett-Prüfung schlug an, und ich habe sie nicht
+weichgeklopft.** Der Schwiegermutter-Short kam auf −64,7 dB im leisesten
+Prozent, die Schwelle liegt bei −65. Der Sumo-Short aus derselben Folge kam
+mit −65,3 durch. Der Unterschied ist keine Musik, sondern dass in den 45
+Sekunden fast ohne Sprechpause geredet wird — der Boden wird nie tief.
+Nachgemessen, **was** in diesem leisen Boden liegt: spektrale Flachheit 0,085,
+gegen 0,078 und 0,088 bei den nachweislich sauberen Shorts derselben Folge.
+Gleicher Raumton, kein tonales Bett.
+**Die Schwelle bleibt trotzdem, wo sie ist, und der Short bleibt durchgefallen.**
+Die Prüfung meldet die Flachheit jetzt zusätzlich — als Angabe, nicht als
+Freispruch. Eine Sicherheitsregel lockert man nicht, weil die eigene Messung
+das eigene Vorhaben stützt; sein Ohr entscheidet.
+→ betrifft: content-*, alle Content-Agenten
