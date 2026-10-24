@@ -20,7 +20,7 @@
   {
    "layout": "einzel",
    "kasten": "680:0:608:1080",
-   "lippe": 1143,
+   "lippe": 1267,
    "start": 19.03,
    "ende": 21.03,
    "tot": false,
@@ -30,7 +30,7 @@
   },
   {
    "layout": "einzel",
-   "kasten": "596:0:608:1080",
+   "kasten": "608:0:608:1080",
    "lippe": 1267,
    "start": 21.03,
    "ende": 43.57,
