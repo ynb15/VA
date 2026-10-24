@@ -1,3 +1,9 @@
+> **ÜBERHOLT (24.10.2026).** Dieses Papier stammt aus dem Briefing, also aus
+> Yannicks Fragen. Das Transkript liegt jetzt vor; was Logan tatsächlich
+> geantwortet hat, steht in **`logan-gonzalez-geprueft.md`**. Fünf der
+> dreizehn Kandidaten unten kommen in der Folge nicht vor. Dieses Papier
+> bleibt nur als Beleg stehen, wofür es gut war: als Suchanweisung.
+
 # Shorts-Plan — YNB Podcast: Logan Gonzalez
 
 **Aufnahme:** 11.09.2026 · **Material:** `00 YNB Podcast: Logan Gonzalez (edited)`
