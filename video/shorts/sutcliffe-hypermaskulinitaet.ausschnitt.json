@@ -1,18 +1,65 @@
 {
- "quelle": "clipB.mp4",
+ "quelle": "clip.mp4",
  "groesse": [
-  1080,
-  1920
+  1920,
+  1080
  ],
- "bezugsbewegung": 0,
+ "bezugsbewegung": 2.552,
  "einstellungen": [
   {
    "layout": "einzel",
-   "kasten": "0:0:1080:1920",
-   "lippe": 1190,
+   "kasten": "608:0:608:1080",
+   "lippe": 1267,
    "start": 0.0,
-   "ende": 67.04,
-   "tot": false
+   "ende": 19.03,
+   "tot": false,
+   "bewegung_x": 0.475,
+   "mitte": 0.63,
+   "masse": 2.48
+  },
+  {
+   "layout": "einzel",
+   "kasten": "680:0:608:1080",
+   "lippe": 1267,
+   "start": 19.03,
+   "ende": 21.03,
+   "tot": false,
+   "bewegung_x": 0.512,
+   "mitte": 0.71,
+   "masse": 2.73
+  },
+  {
+   "layout": "einzel",
+   "kasten": "608:0:608:1080",
+   "lippe": 1267,
+   "start": 21.03,
+   "ende": 43.57,
+   "tot": false,
+   "bewegung_x": 0.469,
+   "mitte": 0.7,
+   "masse": 3.02
+  },
+  {
+   "layout": "einzel",
+   "kasten": "57:0:493:875",
+   "lippe": 1267,
+   "start": 43.57,
+   "ende": 51.5,
+   "tot": false,
+   "bewegung_x": 0.156,
+   "mitte": 0.24,
+   "masse": 2.36
+  },
+  {
+   "layout": "einzel",
+   "kasten": "608:0:608:1080",
+   "lippe": 1267,
+   "start": 51.5,
+   "ende": 67.1,
+   "tot": false,
+   "bewegung_x": 0.475,
+   "mitte": 0.66,
+   "masse": 2.55
   }
  ]
 }

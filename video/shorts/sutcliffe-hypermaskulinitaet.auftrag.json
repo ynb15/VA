@@ -1,7 +1,7 @@
 {
   "name": "Sutcliffe-Folge - Hypermaskulinitaet / Vulnerability is not weakness",
   "datei": "YNB Podcast David Sutcliffe Hypermasculinity.mp4",
-  "stand": "2026-10-24 — fuenfte Fassung",
+  "stand": "2026-10-24 — sechste Fassung, Baender zurueckgenommen",
   "wer_spricht": "Er selbst. Er liest seine eigene Substack-Notiz vor; Sutcliffe hoert zu und wirft zweimal etwas ein.",
   "quelle": {
     "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
@@ -140,12 +140,12 @@
     "logo_hoehe": 0.877,
     "zoom": 1.0,
     "plan": "bildausschnitt.py --zoom 1.0 --marke 0,875,215,1080 --kein-stapel",
-    "lippe": 1190,
+    "lippe": 1267,
     "warum_zoom": "Erst 1,15. Sein Befund vom 23.10. am veroeffentlichten ersten Short: 'es ist ein bisschen zu nah rangezoomt. Also ans Gesicht. Zoom mal wieder ein bisschen raus.' An drei Testbildern verglichen (1,15 / 1,08 / 1,00): bei 1,00 steht der Kopf vollstaendig im Bild mit Luft darueber und die Schultern sind zu sehen. Die Untertitelzeile verschiebt sich dabei nur um 19 px (Lippe 1267 statt 1248), der Look bleibt also.",
-    "fassung": "weiter gefasst: 3:4-Ausschnitt mit unscharfer Fuellung",
-    "werkzeug": "video/weiter_fassen.py (vor dem Renderer), dann Plan mit EINEM Kasten",
-    "warum_weiter": "Sein Wunsch vom 24.10.: 'du musst nochmal ein bisschen rauszoomen. Mein Gesicht und auch David.' Der Zoom stand schon auf 1,0 und damit am Anschlag: aus einem 1920x1080-Bild ist der breiteste RANDLOSE 9:16-Ausschnitt 608 px breit, also die volle Hoehe; bildausschnitt.py begrenzt den Zoom deshalb hart auf 1,0. Weiter geht nur mit etwas oben und unten. Drei Stufen als Standbild verglichen: jetzt (zu nah), 3:4 mit Fuellung, ganzes Bild mit Fuellung (zu klein, er verschwindet). Gewaehlt ist die mittlere: 810 statt 608 Quellpixel, Motiv 1,33 mal kleiner, und der scharfe Teil wird dabei SCHAERFER (810 Quellpixel auf dieselbe Breite statt 608, also 1,33-fache statt 1,78-facher Vergroesserung).",
-    "warum_lippe_1190": "In der engen Fassung lag die Zeile bei 1267 von 1920, das entspricht Quellhoehe 712,7. Der scharfe Streifen liegt jetzt bei y 240-1680 und bildet dieselbe Quellhoehe ab: 240 + 712,7 * (1440/1080) = 1190. Damit sitzt die Zeile relativ zum Gesicht dort, wo er sie abgenommen hat."
+    "fassung": "randlos 9:16, Zoom 1,0 (voller Hoehenausschnitt) — KEINE Baender",
+    "warum_weiter": "ABGELEHNT. Auf seinen Wunsch 'ein bisschen rauszoomen' hatte ich einen 3:4-Ausschnitt mit unscharfer Fuellung gebaut (video/weiter_fassen.py). Seine Antwort vom 24.10.: 'Nein, was soll der Scheiss?! Ich will keine Baender. Bitte rueckgaengig machen. Dann lassen wir's lieber so wie bei der vorherigen Version.' Damit ist die Sache entschieden: in 9:16 ist Zoom 1,0 das Ende der Fahnenstange, und wenn weiter nur mit Baendern geht, bleibt es eng. Nicht noch einmal vorschlagen. Das Werkzeug bleibt liegen, falls er es je fuer etwas anderes will.",
+    "warum_lippe_1190": "In der engen Fassung lag die Zeile bei 1267 von 1920, das entspricht Quellhoehe 712,7. Der scharfe Streifen liegt jetzt bei y 240-1680 und bildet dieselbe Quellhoehe ab: 240 + 712,7 * (1440/1080) = 1190. Damit sitzt die Zeile relativ zum Gesicht dort, wo er sie abgenommen hat.",
+    "warum_lippe_1267": "Eine Zeilenhoehe fuer den ganzen Short. Der Planer setzt sie je Einstellung aus der gemessenen Lippe und kam fuer Sutcliffes Reaktionsbild auf 1143 — die Zeile sprang dadurch um 124 px. Seine Festlegung vom 20.10.: 'Zeile bleibt auf einer Hoehe.'"
   },
   "einblendungen": {
     "datei": "video/shorts/sutcliffe-hypermaskulinitaet.cues.json",
@@ -184,8 +184,7 @@
     "hinweis": "Keine Laengenvorgabe von ihm fuer diesen Short. 60,08 s liegt knapp ueber 60 - falls das eine Rolle spielt, liessen sich mit video/pausen_waehlen.py ein paar Pausen kuerzen; er liest hier aber vor, die Pausen sind gewollt. Nicht ungefragt angefasst."
   },
   "offen": [
-    "Die B-Roll bleibt randlos im vollen Bild (seine ausdrueckliche Ansage vom 23.10.), sein eigenes Bild hat jetzt Baender. Beim Schnitt auf die B-Roll oeffnet sich das Bild also. Ob das als Absicht liest oder als Bruch, ist seine Entscheidung; zwei Wege stehen offen - B-Roll auch mit Baendern, oder zurueck zur engen Fassung.",
-    "Das Ruckeln beim Schnitt auf David: fuenf Ursachen durchgemessen, vier ausgeschlossen (kein Kastensprung, keine springende Zeile, keine Kompressionsartefakte - dort sitzt ein I-Bild -, kein Wackeln in der Quelle: 1,72 gegen 2,23 Bild-zu-Bild-Differenz). Was bleibt: das 9:16-Fenster sprang um 72 Quellpixel, bei 1,78-facher Vergroesserung 128 px im Bild. Mit der weiteren Fassung sinkt die Vergroesserung auf 1,33 - ob das reicht, sagt er."
+    "Das Ruckeln beim Schnitt auf David: nach dieser Fassung sagt er 'der Uebergang zu David ist jetzt besser'. Verantwortlich dafuer sind die konstante Zeilenhoehe und der einheitliche Kasten fuer seine drei Nahaufnahmen — beides steckt auch in der engen Fassung, ist also nicht mit den Baendern verlorengegangen."
   ],
   "fassungen": [
     "YNB Podcast David Sutcliffe Hypermasculinity (In This Shirt).mp4"

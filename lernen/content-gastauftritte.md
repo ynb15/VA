@@ -721,3 +721,27 @@ jetzt auch im Kopf des Werkzeugs.
 Querformat nur rund ein Fuenftel der Breite uebrig.** Wer darin am Rand steht,
 wird von den Bedienelementen von YouTube Shorts teilweise verdeckt. Mittig ist
 hier keine Geschmacksfrage.
+
+## 24.10.2026 — Baender abgelehnt. In 9:16 ist Zoom 1,0 das Ende, und dabei bleibt es.
+
+Auf seinen Wunsch *„du musst nochmal ein bisschen rauszoomen"* hatte ich einen
+3:4-Ausschnitt mit unscharfer Fuellung gebaut, weil der randlose 9:16-Ausschnitt
+bei voller Hoehe rechnerisch am Anschlag ist. Seine Antwort:
+
+> *„Nein, was soll der Scheiss?! Ich will keine Baender. Bitte rueckgaengig
+> machen. Dann lassen wir's lieber so wie bei der vorherigen Version."*
+
+**Damit ist die Frage entschieden, nicht offen:** geht weiter nur mit Baendern,
+bleibt es eng. Nicht noch einmal vorschlagen.
+
+→ betrifft: alle Short-Agenten. Die Rechnung dahinter gilt weiter und erspart
+die Runde: aus 1920x1080 ist der breiteste **randlose** 9:16-Ausschnitt 608 px
+breit, also die volle Hoehe; `bildausschnitt.py` begrenzt den Zoom darum hart
+auf 1,0. Wer nach „ein bisschen rauszoomen" gefragt wird und schon auf 1,0
+steht, hat nichts mehr zu geben — **das gehoert gesagt, bevor eine Fassung mit
+Baendern gebaut wird**, nicht danach.
+
+→ und was dabei stehenblieb: die konstante Zeilenhoehe und der einheitliche
+Kasten je Kamera haben den Schnitt auf den Gast sichtbar aufgeraeumt
+(*„der Uebergang zu David ist jetzt besser"*). Das war die Korrektur, die
+gewirkt hat — nicht der Zoom.
