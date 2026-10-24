@@ -629,3 +629,27 @@ Container und meldet sein Ende.
 Dass der Lauf wiederaufnehmbar gebaut war, hat den Schaden auf 26 Minuten
 begrenzt — fertige Fenster hätte er übersprungen. Es gab nur keine.
 → betrifft: content-*, alle Content-Agenten
+
+**24.10. — Eine Schwelle, die an hellem Material geeicht wurde, findet im
+dunklen Studio gar nichts.** `bildausschnitt.py` erklärte die ersten 85
+Sekunden der Logan-Folge zu **einer** Einstellung; tatsächlich liegen darin
+fünf Kameraschnitte. Die Regel verlangte, dass sich 45 % des Bildes ändern —
+bei Sutcliffes hellem Set traf das zu (0,51–0,61 am Schnitt), in diesem fast
+schwarzen Studio ändert sich beim Kamerawechsel nur der Bereich, in dem ein
+Mensch sitzt: gemessen 0,26–0,29, alles andere höchstens 0,071. Der Renderer
+bekam darum einen festen Ausschnitt und schnitt den Gast halb aus dem Bild.
+**Regel: eine Schwelle, die aus einer Messung an einem Material stammt, gilt
+für dieses Material.** Entweder sie wird am neuen Material nachgemessen, oder
+sie wird relativ formuliert — hier: ein Sprung weit über das, was in *diesem*
+Clip normal ist, neben der alten festen Schwelle, damit das helle Material
+nichts verliert.
+
+**Und im selben Zug eine Messung wieder ausgebaut, die nicht getrennt hat.**
+Ich wollte die Stapel-Entscheidung („sind zwei Menschen im Bild?") auf eine
+neue Grösse stützen: wie viel Bewegung in *einen* 9:16-Ausschnitt passt. Die
+Werte über sechs Einstellungen, in denen nachweislich **immer nur eine**
+Person sass: 0,60 · 0,63 · 0,71 · 0,78 · 0,81 · 0,90. Eine Grösse, die
+denselben Fall über diese Spanne streut, trennt nichts — sie hätte nur
+später falsch ausgesehen. Also raus, und stattdessen `--kein-stapel`
+benutzt, das es für genau diesen Fall schon gibt.
+→ betrifft: content-*, alle Content-Agenten

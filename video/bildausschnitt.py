@@ -95,14 +95,40 @@ def schnitte_finden(zeiten, klein, anteil=0.45, mittel=25.0):
     war. Entscheidend ist der ANTEIL des Bildes, der sich aendert: beim
     echten Kameraschnitt wechselt auch der Hintergrund, gemessen 0,51–0,61;
     bei der groessten Handbewegung nur 0,19–0,35. Dazwischen liegt Luft.
+
+    **Diese feste Schwelle traegt aber nur helles Material.** Am 24.10.2026
+    an der Logan-Folge gemessen: das Studio ist fast schwarz, beim
+    Kamerawechsel aendert sich nur der Bereich, in dem ein Mensch sitzt.
+    Echte Schnitte lagen dort bei Anteil 0,26–0,29 und Mittel 23–27, alles
+    andere bei hoechstens 0,071 und 6,9. Die feste Schwelle 0,45 fand
+    **keinen einzigen** der fuenf Schnitte — der Renderer bekam eine einzige
+    Einstellung und schnitt den Gast halb aus dem Bild.
+
+    Darum zweigleisig: die alte feste Schwelle bleibt, wie sie war, und
+    daneben steht eine, die sich am Clip selbst misst — ein Sprung weit ueber
+    das, was in diesem Clip normal ist. So verliert helles Material nichts
+    und dunkles gewinnt seine Schnitte.
     """
-    grenzen = [0]
+    if len(klein) < 2:
+        return [0, len(klein)]
+    an, mi = [], []
     for i in range(1, len(klein)):
         a, b = klein[i - 1], klein[i]
         n = min(a.shape[0], b.shape[0]), min(a.shape[1], b.shape[1])
         d = np.abs(a[:n[0], :n[1]] - b[:n[0], :n[1]])
-        if float((d > 25).mean()) > anteil and d.mean() > mittel:
-            grenzen.append(i)
+        an.append(float((d > 25).mean()))
+        mi.append(float(d.mean()))
+    an, mi = np.array(an), np.array(mi)
+    an_bezug = float(np.percentile(an, 90))
+    mi_bezug = float(np.percentile(mi, 90))
+
+    grenzen = [0]
+    for i in range(len(an)):
+        fest = an[i] > anteil and mi[i] > mittel
+        relativ = (an[i] > max(0.15, 4 * an_bezug)
+                   and mi[i] > max(12.0, 4 * mi_bezug))
+        if fest or relativ:
+            grenzen.append(i + 1)
     grenzen.append(len(klein))
     return grenzen
 
