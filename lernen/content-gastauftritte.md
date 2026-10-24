@@ -745,3 +745,46 @@ Baendern gebaut wird**, nicht danach.
 Kasten je Kamera haben den Schnitt auf den Gast sichtbar aufgeraeumt
 (*„der Uebergang zu David ist jetzt besser"*). Das war die Korrektur, die
 gewirkt hat — nicht der Zoom.
+
+## 24.10.2026 — Das „Zittern" beim Schnitt war EIN Bild mit dem falschen Ausschnitt. Vier Runden gebraucht.
+
+Sein Befund, dreimal in Folge: *„Das Bild shattered/vibriert quasi bei dem
+Switch auf David"* · *„bei ca 0:15 ist noch ein Framing Fehler"* · *„das Bild
+zittert immer noch so, wenn du ueberspringst. Also wo ist das Problem? Das kann
+doch nicht so schwer sein."*
+
+**Er hatte recht, es war nicht schwer — es war ein Bild.** Gemessen an der
+Bild-zu-Bild-Differenz im fertigen Short standen am Schnitt **zwei** grosse
+Spruenge statt einem:
+
+| | Schnitt auf David | Schnitt zurueck |
+|---|---|---|
+| vorher | 34,6 **und 26,9** | 31,2 **und 26,4** |
+| behoben | 29,5 | 28,0 |
+
+Zwei Spruenge heissen: dazwischen steht ein Bild, das zu keiner der beiden
+Einstellungen passt. Im Kontaktabzug der Einzelbilder war es dann zu sehen —
+Davids **erstes** Bild stand 128 px weiter links als sein zweites.
+
+**Ursache:** `bildausschnitt.py` schaetzt die Einstellungsgrenzen und meldete
+19,03 s. Der Kamerawechsel liegt bei **19,0000 s**. Der Renderer schneidet die
+Einstellungen mit `trim` nach Zeitstempel, und `trim=0:19.03` nimmt alles
+*kleiner als* 19,03 — also auch das Bild bei 19,0000, das schon zur neuen
+Einstellung gehoert. Es bekam dadurch den Kasten der alten. Dasselbe am anderen
+Ende. Betroffen waren drei Grenzen: 19,03 statt 19,0000 · 21,03 statt 21,0000 ·
+43,57 statt 43,3667 (sechs Bilder, lag aber unter der B-Roll).
+
+**Warum ich es dreimal nicht gefunden habe, und das ist der eigentliche
+Befund:** ich habe am fertigen Bild geprueft und die Plangrenzen in
+**Ausgabezeit** gegengerechnet. Der Ausschnitt wird aber in **Clipzeit** gesetzt,
+vor der Beschleunigung, und `trim` nimmt alles kleiner als die Grenze. Ich habe
+in der falschen Zeitrechnung geprueft, daraus „kein Kastensprung" geschlossen
+und dreimal „keine technische Ursache gefunden" gemeldet — waehrend die Ursache
+jedes Mal dastand.
+
+→ betrifft: alle, die `bildausschnitt.py` benutzen. **Die Einstellungsgrenzen
+aus dem Plan sind Schaetzungen und gehoeren durch die Bild-fuer-Bild-gemessenen
+ersetzt, bevor gerendert wird.** Und die Probe darauf ist billig: am fertigen
+Short die Bild-zu-Bild-Differenz messen — **an einem sauberen Schnitt steht
+genau EIN grosser Sprung.** Stehen zwei, sitzt dazwischen ein Bild, das nicht
+dahin gehoert.
