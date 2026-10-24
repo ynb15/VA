@@ -206,3 +206,45 @@ damit Du zeilenweise streichen kannst.
 - Der **LUT fehlt mir weiterhin.** In Slack liegt nur das 4-MB-Zip. Ich
   bräuchte die einzelne `luts/ynb_look.png`. Bis dahin rendere ich mit dem
   Ersatz-Look — der ist nicht Dein Look.
+
+---
+
+## Was am 24.10. gebaut und geliefert ist
+
+| Short | Fenster in der Folge | Länge | Datei |
+|---|---|---|---|
+| A · Elternhaus | 0:16–1:28 | 66,1 s | `YNB Podcast Logan Gonzalez Elternhaus.mp4` |
+| C · Egotod | 37:45–39:31 | 96,1 s | `YNB Podcast Logan Gonzalez Egotod.mp4` |
+| F · Meaningful | 82:26–83:29 | 58,2 s | `YNB Podcast Logan Gonzalez Meaningful.mp4` |
+| D · Schwiegermutter | 49:20–50:07 | im Bau | `YNB Podcast Logan Gonzalez Schwiegermutter.mp4` |
+| E · Sumo | 79:54–81:43 | im Bau | `YNB Podcast Logan Gonzalez Sumo.mp4` |
+
+Zu jedem Short liegt eine **Streichliste** in den Zeiten des fertigen Shorts.
+Alle haben die messbare Abnahme bestanden: 1080×1920, 48 kHz, kein Musikbett,
+Outro da, Untertitel da, Ortscheck sauber.
+
+**Was offen bei Dir liegt:**
+
+1. **Elternhaus, Zeile 7–10:** die 13 Sekunden, in denen er auf „How did you
+   survive it?" nur „I don't know. I do not know." sagt. Defensiv drin
+   gelassen. Für mich die stärkste Stelle — für einen Short vielleicht zu lang.
+2. **Meaningful:** der Schnitt deckt Logans achtsekündige Denkpause mit einer
+   **Totale, in der Du trinkst**. Das kommt aus der Exportfassung, nicht von
+   mir. Drei Wege: so lassen · die Pause kürzen · auf Logan stehen bleiben.
+3. **Schwiegermutter:** der Short endet auf „now we're really sending it". Die
+   Auflösung — „complete strangers admiring something that you busted your ass
+   for" — liegt bei **52:00–52:40** und ist nicht drin, weil sie einen zweiten
+   Schnitt im Short bräuchte. Sag Bescheid, dann hänge ich sie an.
+4. **Sumo:** drin ist auch Deine Whitney-Houston-Stelle (er vergleicht sein
+   Publikum mit Deinem beim Naked Karaoke). Ohne Deinen Essay versteht das
+   niemand — Zeile steht auf der Streichliste.
+5. **Der LUT.** Alle fünf sind mit dem **Ersatz-Look** gerendert, nicht mit
+   Deinem. Ich brauche `luts/ynb_look.png` als einzelne Datei.
+
+**Machart, Stand jetzt:** `--tempo 1.15`, Ausschnitt je Einstellung aus
+`bildausschnitt.py --kein-stapel` (die Exportfassung schneidet schon auf den
+Sprechenden, es ist nie eine Totale mit beiden), Kopfzeile weiß auf 0,18 in
+Größe 140–150, Logo in der Standardbreite nach dem Alpha-Zuschnitt, Outro
+angehängt, Untertitel VERSALIEN in Dreiergruppen — **Fragen dagegen immer als
+eine Einblendung mit Fragezeichen**, seit heute auch dann, wenn sie mit
+Sprechpausen gesprochen werden.
