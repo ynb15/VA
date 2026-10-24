@@ -1,0 +1,58 @@
+{
+ "name": "Sutcliffe-Folge - das deutsche Schulsystem und der Troll-Kommentar",
+ "datei": "YNB Podcast David Sutcliffe School.mp4",
+ "stand": "2026-10-24 - erste Fassung, ohne Musik, 2160x3840",
+ "wer_spricht": "Er erzaehlt die Auseinandersetzung mit dem Online-Troll; Sutcliffe wirft ein und erzaehlt von seinen zehn Jahren Supervision.",
+ "seine_ansage": "'Und als naechstes auf jeden Fall auch, die Stelle, wo ich mich uebers deutsche Schulsystem aufrege. Und ueber den Kommentar und da bitte nichts eigenstaendig rauscutten.'",
+ "nichts_rausgeschnitten": "Innen steht die Stelle vollstaendig, ohne einen einzigen Binnenschnitt - Bild und Ton sind EIN Stueck von 7,90 bis 129,70 im Fenster. Entschieden ist nur, wo sie anfaengt und aufhoert.",
+ "quelle": {
+  "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
+  "fenster_master_s": [5465.0, 5600.0],
+  "hinweis": "In EINEM Stueck geholt. Datei beginnt bei Master 5464.98, 360 MB ueber 45 Bereichsanfragen."
+ },
+ "fundstelle": {
+  "veroeffentlicht": "01:25:41-01:27:31",
+  "liegt_direkt_vor": "dem Anger-Clip (veroeffentlicht 01:27:33) - die beiden grenzen aneinander, ohne Ueberschneidung."
+ },
+ "schnitt": {
+  "von_bis_src_s": [7.9, 129.7],
+  "von_bis_master_s": [5472.88, 5594.68],
+  "dauer_roh_s": 121.8,
+  "warum_anfang": "Der Satz davor ('that's the safe way to do it, right?') endet bei 7,38, 'it was just yesterday' beginnt bei 7,96 - geschnitten bei 7,90. Ein Kamerawechsel liegt bei Master 5472,6000, also 0,28 s davor; der Einstieg sitzt damit INNERHALB der neuen Einstellung. Bei 5474,1000 folgt der naechste Wechsel, die erste Einstellung ist also nur 1,22 s lang - das ist der Rhythmus des Masters, kein eigener Schnitt.",
+  "warum_nicht_auf_dem_wechsel": "Genau auf 5472,6000 einzusteigen haette 'Yeah,' (7,68-7,82) mitgenommen, das zum Satz DAVOR gehoert.",
+  "warum_ende": "'And our children.' endet bei 129,38, 'And I listened to your podcast' beginnt bei 129,94 - geschnitten bei 129,70 in der Luecke.",
+  "kamerawechsel_clipzeit_s": [1.2, 42.2, 43.7, 54.2, 60.7, 64.7, 71.7, 80.7, 87.7, 89.7, 115.7, 120.7],
+  "wie_gemessen": "video/schnittgrenzen.py - 11 der 12 Grenzen lagen 2 bis 6 Bilder neben der Schaetzung."
+ },
+ "bild": {
+  "ausgabe": "2160x3840",
+  "tempo": 1.2,
+  "look": "preset",
+  "worte_je_einblendung": 3,
+  "tiefer_px": 120,
+  "lippe": 1267,
+  "logo_breite_px": 1400,
+  "logo_hoehe": 0.877,
+  "kaesten": {
+   "er": "616:0:608:1080",
+   "sutcliffe": "680:0:608:1080",
+   "totale": "48:0:608:1080"
+  },
+  "totale_auf_volle_hoehe": "NEU. Bisher bekamen Totalen 493x875, also einen zusaetzlichen Hineinzoom um 1,23. Sein Befund vom 24.10.: 'du zoomst immer noch zu nah dran. Man kann schon noch mal ein bisschen rauszoomen, ohne dass es Raender braucht.' In der Totale stimmt das - dort war Luft. In den Nahaufnahmen nicht: 608x1080 aus 1920x1080 ist die volle Bildhoehe und in 9:16 das Maximum.",
+  "wie_gemessen": "Seine Kopfmitte in den Nahaufnahmen ueber das Spitzenprofil: 896-953 ueber neun Bilder, daraus Kasten 616. In der Totale wandert seine Kopfmitte stark (280 / 380 / 406 ueber die drei Totalen, er lehnt sich vor und gestikuliert) - gesetzt ist das dauergewichtete Mittel 352, also Kasten 48. Damit steht er in den drei Totalen bei 38 / 55 / 59 Prozent der Breite."
+ },
+ "einblendungen": {
+  "quelle": "video/shorts/sutcliffe-schule.cues.json",
+  "modell": "medium statt small",
+  "warum_medium": "Das kleine Modell hat an dieser Stelle vier inhaltliche Fehler gemacht: 'but WOW this is the biggest scandal' statt 'but TO ME', 'to WELCOME themselves' statt 'to WORK ON themselves', 'your therapist better IN therapy' (das 'be' fehlte) und 'your projections and YEAH NEVER ENDS' statt 'your bias never ends'. Das medium-Modell hat alle vier richtig.",
+  "zwei_stellen_von_hand": [
+   "'Craig' fehlte vor dem Nachnamen. Das kleine Modell hat es bei 13,38-13,56 gehoert, und im medium-Lauf liegt dort eine Luecke (with endet 13,48, Makhosi beginnt 13,66). Es steht jetzt als drittes Wort in 'podcast with Craig'.",
+   "'your biases.' ist in Wahrheit 'your bias never ends' plus Sutcliffes 'Exactly.' Das medium-Modell hat zwei gesprochene Woerter verschluckt. Nachgetragen mit den Zeiten des kleinen Modells."
+  ],
+  "korrekturen_neu": "craig mccosey / mccosey / makuzi / makosi / markosi -> Makhosi (Whisper und YouTube buchstabieren ihn auf fuenf Arten), 'teachers in training', 'psychologists in training', 'with markosi -> with Craig Makhosi', 'have most touch -> have the most touch'.",
+  "derbe_sprache": "'fuck ups in the school system', 'stay on top of shit', 'work on your shit', 'what the fuck', 'suppressing their shit', 'dumping their shit' - alles seine und Sutcliffes eigene Worte, steht so im Untertitel. Nichts davon ist eigenmaechtig entfernt."
+ },
+ "ton": {"laut": "aus", "dehnung": "atempo", "musik": "keine - nicht bestellt"},
+ "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
+ "laenge_s": {"hauptteil": 101.5, "outro": 4.21, "gesamt": 105.7}
+}
