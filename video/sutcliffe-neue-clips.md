@@ -1,4 +1,4 @@
-# Zwei neue Clips aus der Sutcliffe-Folge — Stand 24.10.2026
+# Drei neue Clips aus der Sutcliffe-Folge — Stand 24.10.2026
 
 Seine Ansage: *„dann habe ich noch zwei Clips aus dem David Sutcliffe
 Podcast und einmal wo er darüber spricht, warum er über seine Scheidung von
@@ -98,3 +98,44 @@ Beide Clips laufen durch `ortscheck.py`. Las Vegas und das Tropicana Hotel
 sind Davids Vergangenheit, nicht Dein Wohnort — die Regel vom 02.09. ist
 davon nicht berührt. Kapstadt fällt in der Folge erst bei 00:10:34, also
 hinter dem Ende von Clip 1.
+
+---
+
+## Clip 3 — „School" (deutsches Schulsystem und der Troll-Kommentar)
+
+**Veröffentlicht 01:25:41–01:27:31 · im Master 5472,88–5594,68 s**
+(Fenster 5465–5600 in einem Stück geholt, 360 MB über 45 Bereichsanfragen)
+
+**121,80 s Master · mit `--tempo 1.2` 101,53 s · mit Outro 105,78 s**
+
+Seine Ansage: *„die Stelle, wo ich mich übers deutsche Schulsystem aufrege.
+Und über den Kommentar und da bitte nichts eigenständig rauscutten."*
+**Innen ist nichts herausgeschnitten** — Bild und Ton sind ein Stück,
+entschieden ist nur Anfang und Ende.
+
+| Clipzeit | wer | Inhalt |
+|---|---|---|
+| 0,0–42,2 | Du | Der Troll, der Clip mit Craig Makhosi, die Regel gegen Therapie für Lehramtsanwärter |
+| 42,2–54,2 | Du | *„There's so many fuck ups in the school system, but to me this is the biggest scandal"* |
+| 54,2–64,7 | Du / David | *„…to become better human beings."* · David: *„Your therapist better be in therapy."* |
+| 64,7–89,7 | David | Zehn Jahre Supervision nach dem Abschluss, *„you got to stay on top of shit"* |
+| 89,7–121,8 | Du | *„Dude, what the fuck, you're getting it completely backwards"* bis *„…dumping their shit on other people. — And our children."* |
+
+**Was an diesem Clip anders ist:** die drei **Totalen laufen auf voller
+Bildhöhe** (`608×1080` statt `493×875`). Das ist die eine Stelle, an der sich
+Dein Zoom-Einwand vom 24.10. umsetzen ließ. Vergleich die Totalen hier mit
+denen im Divorce-Short — dort steckt der alte Hineinzoom noch drin.
+
+**Die Einblendungen kommen hier vom `medium`-Modell, nicht vom kleinen.**
+Das kleine hatte an dieser Stelle vier inhaltliche Fehler: *„but **wow** this
+is the biggest scandal"* statt *to me*, *„to **welcome** themselves"* statt
+*to work on themselves*, *„your therapist better **in** therapy"* (das *be*
+fehlte) und *„your projections and **yeah never ends**"* statt *your bias
+never ends*. Zwei Stellen sind von Hand nachgetragen: **„Craig"** vor dem
+Nachnamen (das medium-Modell lässt es weg, das kleine hört es bei 13,38) und
+**„your bias never ends. Exactly."**, wo das medium-Modell zwei gesprochene
+Wörter verschluckt hat.
+
+**Derbe Sprache bleibt drin**, weil Du gesagt hast, ich soll nichts
+eigenständig herausnehmen: *fuck ups*, *stay on top of shit*, *work on your
+shit*, *what the fuck*, *suppressing their shit*, *dumping their shit*.
