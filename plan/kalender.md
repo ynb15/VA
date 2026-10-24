@@ -70,10 +70,10 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Sa 24.10. | Short | **Sutcliffe · Tate** (Cinematic, mit 17 Einspielern) | **bei ihm** — 22.10. abends geliefert, Nutzung der Szenen seine Entscheidung |
 | So 25.10. | **PODCAST** | Scott Aaronson | **Paket bei ihm** (T−2 am 23.10. erfüllt) — offen: drei Links von ihm |
 | Mo 26.10. | Clip | **Aaronson · „How safe is AI"** (YouTube-Manager: Schnitt, 13 Titel, Beschreibung, Tags) | gebaut, nicht abgenommen |
-| Di 27.10. | Clip | **zwei neue Clips** (Gastauftritte, am 24.10. mit ihm live gebaut) | in Arbeit **mit ihm** |
+| Di 27.10. | Clip | **drei Clips** (Gastauftritte — Schulsystem dazu, am 24.10. mit ihm gebaut) | in Arbeit **mit ihm** |
 | Mi 28.10. | Short | Sutcliffe 01 · „Therapeut" | gebaut, nicht abgenommen |
 | Do 29.10. | Short | Sutcliffe 04 · „Vulnerability is not weakness" | gebaut, nicht abgenommen |
-| Fr 30.10. | Short | **Logan Gonzalez** (Shorts I) — Exportfassung 2,66 GB, 86,0 Min | in Arbeit, Tonzug läuft |
+| Fr 30.10. | Short | **Logan Gonzalez 1** (Shorts I) | **bei ihm** — 24.10. geliefert |
 | Sa 31.10. | **PODCAST** | Kyle Kingsbury | **angehalten bis Mo 26.10.** |
 
 ### November 2026
@@ -82,9 +82,9 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 |---|---|---|---|
 | So 01.11. | Clip | 10–20 Min | offen |
 | Mo 02.11. | Short | **Craig Makhosi · Into the Wild** (Cinematic, Fassung E) | gebaut, nicht abgenommen |
-| Di 03.11. | Short | — | offen |
-| Mi 04.11. | Short | — | offen |
-| Do 05.11. | Short | — | offen |
+| Di 03.11. | Short | **Logan Gonzalez 2** (Shorts I) | **bei ihm** — 24.10. geliefert |
+| Mi 04.11. | Short | **Logan Gonzalez 3** (Shorts I) | **bei ihm** — 24.10. geliefert |
+| Do 05.11. | Short | Logan 4 + 5 (Shorts I, im Bau) | in Arbeit |
 | Fr 06.11. | Short | — | offen |
 | Sa 07.11. | Clip | 3–10 Min | offen |
 | So 08.11. | Clip | 10–20 Min | offen |
