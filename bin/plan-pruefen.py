@@ -46,6 +46,16 @@ SCHNITT = {
     "Marian Goodell":  "content-cinematic",
 }
 
+# Rueckkatalog: wer welche veroeffentlichte Folge hat. Dieselbe Regel 9 —
+# und am 24.10. zum dritten Mal von mir verletzt, weil ich nicht nachgesehen
+# habe, wer schon sitzt. Vor jeder Zuweisung: git log --all ueber alle
+# Branches, und ein Ordner im Drive ist eine Folge, kein Dateiname.
+RUECKKATALOG = {
+    "Craig Makhosi / Into the Wild": "content-cinematic",   # seit ~20.10., Fassung E
+    "Logan Gonzalez":                "content-schlicht",    # ab 24.10.
+    "Francis Chouler":               "content-cinematic",
+}
+
 # Erledigte Fristen: Folge -> die T-Marken, die abgeschlossen sind.
 # Eine erledigte Frist darf nicht als ueberfaellig gemeldet werden — sonst
 # steht am Stichtag eine Falschmeldung neben der erledigten Arbeit. Dasselbe

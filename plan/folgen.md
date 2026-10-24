@@ -231,10 +231,23 @@ Gigabyte-Bereich:
 | `00 YNB Podcast: Logan Gonzalez (edited)` | **2,66 GB** | — |
 | `2026_09_…_Kyle_Kingsbury_v1_LOW_RES.mp4` | **1,29 GB** | 17,0 GB |
 
-**Craig Makhosi — die zweite Folge, die er am 21.10. ausdrücklich genannt hat —
-ist damit billig zu holen.** Eine Datei von 1,03 GB sprengt kein Tageslimit.
-**Die Frage, die ich ihm heute stellen wollte, ist damit beantwortet, ohne ihn
-zu fragen.**
+**ACHTUNG, und das ist mein Fehler vom selben Tag:** `Into The Wild` und
+`Ubuntu` sind **keine zwei Folgen, sondern zwei Stücke derselben Folge.** Beide
+liegen im Ordner `1w9hsorNksXo7uRI_h0WKD74zPvj6SeZ4`, zusammen mit dem
+27,4-GB-Master **und** seinem Vorbereitungsdokument *„06 YNB Podcast: Craig
+Makhosi"*. **Ein Ordner ist eine Folge; der Dateiname ist es nicht.** Ich hatte
+eine flache Dateiliste gelesen und zwei Zeilen daraus als zwei Gelegenheiten
+geführt.
+
+**Und Makhosi liegt seit Tagen bei Cinematic** — `video/craig-intothewild-aufbau.md`,
+Transkript, Variantenliste, Commits bis **„Fassung E"**. Shorts I hat die
+Zuweisung zurückgewiesen und dabei auf Regel 9 verwiesen: *„Eine Folge, ein
+Agent — und sie gilt auch, wenn die Zuweisung von Dir kommt."* **Richtig.**
+
+**Billig zu holen sind damit:** `Logan Gonzalez (edited)` **2,66 GB**
+(`1ztggu2ua5-AntISFHHP9cBqjVhSn6Zmj`, 1920×1080 h264, **86,0 Min** aus dem
+Dateikopf gelesen — dafür wurden 12,7 MB geholt) und die Aaronson-Fassung
+**895 MB**. Makhosi bleibt bei Cinematic.
 
 **Was weiter gilt:** für Folgen **ohne** Exportfassung bleibt der Master-Weg mit
 seinen gemessenen 57 GB Transfer je 27-GB-Datei — und der ist zu. **Vor jeder

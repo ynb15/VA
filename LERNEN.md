@@ -45,6 +45,52 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 18 — 24.10.2026, 16:30 Kapstadt · ein Ordner ist eine Folge, und Shorts I hat meine Zuweisung zurückgewiesen
+
+- **ICH HABE DREIMAL IN DREI TAGEN EINE FOLGE ZUGEWIESEN, AN DER SCHON JEMAND
+  SASS.** Aaronson, Chouler, jetzt Makhosi. Shorts I hat die dritte Zuweisung
+  zurückgewiesen, mit dem richtigen Satz:
+  > *„Eine Folge, ein Agent — das war unsere Antwort darauf, und sie gilt auch,
+  > wenn die Zuweisung von Dir kommt."*
+
+  **Regel 9 richtet sich also zuerst an mich, nicht an die Agenten.** Steht
+  jetzt als **Regel 9a** in `plan/ABLAUF.md` mit den drei Abfragen, die vor
+  jeder Zuweisung fällig sind, und als `RUECKKATALOG`-Tabelle in
+  `bin/plan-pruefen.py`. **Stand: Makhosi/Into the Wild bei Cinematic (Fassung
+  E), Logan Gonzalez bei Shorts I, Chouler bei Cinematic.**
+  → betrifft: alle
+- **EIN ORDNER IST EINE FOLGE. EIN DATEINAME IST ES NICHT.** Das ist die Falle,
+  die beim dritten Mal zugeschlagen hat. In einer **flachen** Drive-Suchliste
+  sahen `YNB Podcast: Into The Wild` (274 MB) und
+  `YNB Podcast - Craig Makhosi - Ubuntu.mp4` (1,03 GB) wie zwei Folgen aus.
+  **Sie liegen im selben Ordner** (`1w9hsorNksXo7uRI_h0WKD74zPvj6SeZ4`),
+  zusammen mit dem 27,4-GB-Master **und** seinem Vorbereitungsdokument
+  *„06 YNB Podcast: Craig Makhosi"*. **Eine Folge, vier Dateien.**
+  **Eine Dateisuche zeigt den Ordner nicht** — `parentId` muss man einzeln
+  abfragen. Wer aus einer Drive-Suche auf Inhalte schließt, schließt aus einer
+  Liste ohne Struktur.
+  → betrifft: alle, die im Drive suchen
+- **Die Laufzeit einer Datei steht im Dateikopf — 12,7 MB statt 2,66 GB.**
+  Shorts I hat für Logan Gonzalez **86,0 Minuten** ermittelt, indem es nur den
+  Anfang der Datei geholt hat (1920×1080 h264, Ton 48 kHz). **Vor jedem
+  Download, der sich lohnen muss, erst den Kopf lesen** — das kostet ein
+  Zweihundertstel und beantwortet die Frage, ob die Datei die richtige ist. Das
+  ist auch die Antwort auf das Tageslimit-Problem: eine Folge prüfen kostet
+  jetzt nichts mehr.
+  → betrifft: alle, die aus dem Drive holen
+- **Und eine Korrektur an mir, die ein Agent erzwungen hat: eine Freigabe an
+  einen anderen Agenten ist keine Freigabe für ihn.** Ich hatte Shorts I
+  geschrieben, die fertige Datei gehört in den Drive-Ordner
+  `1N5i97R5byCWF57z23GuwoY1v5w6vX1ef`. **Seine Anweisung an Shorts I lautet, dass
+  Drive-Schreibzugriffe nicht freigegeben sind** — und Shorts I hat sich darauf
+  berufen, ihn gefragt und auf Antwort gewartet, statt meiner Zeile zu folgen.
+  **Richtig.** Dass der Ordner existiert, getestet ist und ein anderer Agent
+  dort geschrieben hat, hebt eine Anweisung an einen Dritten nicht auf.
+  **Wer eine Erlaubnis weitergibt, muss sagen, wem sie erteilt wurde.**
+  → betrifft: alle
+
+---
+
 ## Ausgabe 17 — 24.10.2026, 16:05 Kapstadt · 4K sauber begründet, und ein Zirkelschluss über seine Stimme
 
 - **DIE SHORTS GEHEN AB JETZT AUF 2160×3840 — UND DIE BEGRÜNDUNG IST DAS

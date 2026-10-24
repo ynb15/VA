@@ -122,6 +122,40 @@ je Folge an einer Stelle.
 **Also: wer Arbeit verteilt, verteilt die Folge.** Mehr Durchsatz heißt eine
 zweite Folge für einen zweiten Agenten, nicht eine halbe Folge für zwei.
 
+## 9a · Vor der Zuweisung nachsehen, wer schon an der Folge sitzt
+
+**Regel 9 richtet sich nicht nur an die Agenten, sondern zuerst an mich.** Am
+22., 23. und 24.10. habe ich dreimal eine Folge zugewiesen, an der ein anderer
+Agent schon saß: **Aaronson** (Shorts I und Shorts II schnitten dieselbe Stelle
+auf 0,4 s identisch), **Chouler**, und **Makhosi**. Shorts I hat die dritte
+Zuweisung zurückgewiesen, mit dem richtigen Satz:
+
+> *„Eine Folge, ein Agent — das war unsere Antwort darauf, und sie gilt auch,
+> wenn die Zuweisung von Dir kommt."*
+
+**Also, in dieser Reihenfolge, vor jedem Folgenauftrag:**
+1. `git log --all --since=3.days --grep=<Gastname> -i` über **alle** Branches.
+2. `git ls-tree -r --name-only origin/claude/<branch> | grep -i <gastname>` bei
+   jedem Content-Branch — Dateien verraten mehr als Commit-Betreffs.
+3. Erst dann zuweisen, und den Namen in `SCHNITT` in `bin/plan-pruefen.py`
+   eintragen.
+
+**Die Falle, die beim dritten Mal zugeschlagen hat: ein Dateiname ist keine
+Folgenkennung.** `YNB Podcast: Into The Wild` und
+`YNB Podcast - Craig Makhosi - Ubuntu.mp4` sahen in einer flachen
+Drive-Suchliste wie zwei Folgen aus. Sie liegen **im selben Ordner**
+(`1w9hsorNksXo7uRI_h0WKD74zPvj6SeZ4`), zusammen mit dem Master und seinem
+Vorbereitungsdokument *„06 YNB Podcast: Craig Makhosi"*. **Der Ordner ist die
+Folge.** Eine Drive-Suche nach Dateien zeigt den Ordner nicht — danach muss man
+fragen.
+
+**Und wenn eine Übergabe nötig wird:** der abgebende Agent liefert zuerst
+Schnittzeiten in Quellzeiten, Ausschnitt, Lippenhöhe und die getroffenen
+Entscheidungen. **Vorher fängt der übernehmende nicht an** — sonst entsteht
+genau die Doppelarbeit, gegen die Regel 9 gebaut wurde.
+
+---
+
 ## 10 · Nichts geht raus
 
 Kein Upload, keine Veröffentlichung, keine geplante Veröffentlichung, kein

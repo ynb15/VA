@@ -73,7 +73,7 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Di 27.10. | Clip | **zwei neue Clips** (Gastauftritte, am 24.10. mit ihm live gebaut) | in Arbeit **mit ihm** |
 | Mi 28.10. | Short | Sutcliffe 01 · „Therapeut" | gebaut, nicht abgenommen |
 | Do 29.10. | Short | Sutcliffe 04 · „Vulnerability is not weakness" | gebaut, nicht abgenommen |
-| Fr 30.10. | Short | **Craig Makhosi** — Exportfassung 1,03 GB, billig zu holen | offen |
+| Fr 30.10. | Short | **Logan Gonzalez** (Shorts I) — Exportfassung 2,66 GB, 86,0 Min | in Arbeit, Tonzug läuft |
 | Sa 31.10. | **PODCAST** | Kyle Kingsbury | **angehalten bis Mo 26.10.** |
 
 ### November 2026
@@ -81,7 +81,7 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Tag | Art | Quelle | Zustand |
 |---|---|---|---|
 | So 01.11. | Clip | 10–20 Min | offen |
-| Mo 02.11. | Short | — | offen |
+| Mo 02.11. | Short | **Craig Makhosi · Into the Wild** (Cinematic, Fassung E) | gebaut, nicht abgenommen |
 | Di 03.11. | Short | — | offen |
 | Mi 04.11. | Short | — | offen |
 | Do 05.11. | Short | — | offen |
