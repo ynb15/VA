@@ -13,7 +13,7 @@ Start uebersprungen. Am Ende werden sie zu einer FLAC zusammengefuegt.
     python3 video/ton_stueckweise.py --id <drive-id> --groesse <bytes> \
             --dauer 6150 --out ton.flac [--stueck 600]
 """
-import argparse, os, subprocess, sys, time
+import argparse, os, re, subprocess, sys, time
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 
@@ -23,10 +23,22 @@ def log(*a):
 
 
 def laenge(pfad):
+    """Laufzeit durch Dekodieren, nicht aus dem Header.
+
+    Eine FLAC, die mit `concat` + `-c copy` entstand, traegt im Header nur
+    die Laenge eines Stuecks: ffprobe meldete am 24.10. fuer 86 Minuten
+    Logan 10 Minuten, obwohl alle Daten im File lagen. Nur der Dekodierlauf
+    sagt, was wirklich drin ist.
+    """
     try:
-        return float(subprocess.check_output(
-            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
-             "-of", "csv=p=0", pfad]).decode().strip())
+        r = subprocess.run(["ffmpeg", "-nostdin", "-v", "info", "-i", pfad,
+                            "-f", "null", "-"],
+                           capture_output=True, text=True)
+        m = re.findall(r"time=(\d+):(\d+):(\d+\.\d+)", r.stderr)
+        if not m:
+            return 0.0
+        h, mi, s = m[-1]
+        return int(h) * 3600 + int(mi) * 60 + float(s)
     except Exception:
         return 0.0
 
@@ -73,9 +85,19 @@ def main():
     with open(liste, "w") as f:
         for t in teile:
             f.write(f"file '{t}'\n")
+    # Kein `-c copy`: bei FLAC beschreibt der uebernommene Header nur ein
+    # Stueck, das Ergebnis meldet dann eine falsche Laufzeit. Neu kodieren.
     subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "concat",
-                    "-safe", "0", "-i", liste, "-c", "copy", a.out], check=True)
-    log(f"fertig: {a.out} — {laenge(a.out) / 60:.1f} min")
+                    "-safe", "0", "-i", liste, "-ac", "1",
+                    "-ar", str(a.rate), "-c:a", "flac", a.out], check=True)
+
+    ist, summe = laenge(a.out), sum(laenge(t) for t in teile)
+    log(f"fertig: {a.out} — {ist / 60:.1f} min "
+        f"(Stuecke zusammen {summe / 60:.1f} min)")
+    if summe and abs(ist - summe) > 2.0:
+        log(f"FEHLER: Ergebnis {ist:.1f}s passt nicht zu den Stuecken "
+            f"{summe:.1f}s — nicht weiterverwenden")
+        return 1
     return 0
 
 

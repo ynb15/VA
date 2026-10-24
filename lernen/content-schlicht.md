@@ -593,3 +593,26 @@ deren Lage nirgends steht.
 Quellzeiten — jede entfernte Stelle mit Anfang und Ende.** Sonst ist die
 Fassung nicht reproduzierbar, sobald der Container weg ist.
 → betrifft: alle Content-Agenten
+
+**24.10. — Eine Kopfzeile ist keine Messung.** Die neun Tonstücke der
+Logan-Folge lagen vollständig (zusammen 5159,1 s gegen 5159,5 s Quelle), aber
+`ffmpeg -f concat -c copy` schrieb daraus eine FLAC, die im Header nur **ein**
+Stück beschreibt. `ffprobe` meldete 10,0 Minuten für 86 Minuten Ton — und mein
+eigener Lauf meldete dieselben 10 Minuten als „fertig". Die Daten waren alle
+da; falsch war nur die Auskunft über sie.
+**Regel: Laufzeit nie aus dem Header lesen, sondern durch einen Dekodierlauf
+messen — und das Ergebnis gegen die Summe der Teile prüfen.** `ton_stueckweise.py`
+kodiert jetzt beim Zusammenfügen neu und bricht ab, wenn Ergebnis und Summe mehr
+als zwei Sekunden auseinanderliegen.
+Das ist derselbe Fehler wie beim Wiederaufnehmen über Dateigrössen: eine Zahl,
+die billig zu bekommen ist, beschreibt nicht das, wonach gefragt war.
+→ betrifft: content-*, alle Content-Agenten
+
+**Und noch eine, aus derselben Stunde: eine Bibliothek, die gestern ging, geht
+heute nicht.** `faster-whisper` ruft intern `av.open(..., metadata_errors=...)`;
+die hier installierte PyAV kennt den Parameter nicht und wirft `TypeError`.
+Behoben, indem das Tonfenster mit ffmpeg selbst nach float32 dekodiert und als
+Array übergeben wird — `transkript_stueckweise.py`. Das hängt an keiner
+Bibliotheksversion mehr und macht die Fensterzeiten eindeutig, weil der Versatz
+an einer Stelle im Code draufgerechnet wird.
+→ betrifft: content-*
