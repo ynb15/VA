@@ -170,6 +170,12 @@ SATZZEICHEN = ".,!;:\u2026"
 # als sie zu teilen oder kleiner zu setzen — dass eine Einblendung kleiner
 # gesetzt ist als die davor, war sein Einwand vom 20.10.
 FRAGE_BREITE = int(W * 0.84)
+# Eine Frage darf ueber zwei Zeilen laufen, ohne geteilt zu werden: libass
+# bricht selbst um (WrapStyle 0, Rand 40), und sie bleibt EINE Einblendung
+# mit dem Fragezeichen. „What makes life meaningful to you, Logan?" misst
+# bei 82 px 1918 px — in einer Zeile undarstellbar, ausser man verkleinert
+# die Schrift, und das hat er ausdruecklich nicht gewollt.
+FRAGE_MAX = 2 * (W - 80)
 
 
 def _anzeige(wort, gross):
@@ -596,6 +602,22 @@ def stillen_finden(clip, mindest=0.24, schwelle=-45.0):
     return stillen
 
 
+def _ganze_frage(woerter, i):
+    """Laenge einer Frage ab `i`, wenn sie ganz in eine Zeile passt.
+
+    Null, wenn vor dem naechsten Fragezeichen auch zwei Zeilen nicht mehr
+    reichen oder gar keines mehr kommt. Nur so weit gesucht, wie eine
+    Einblendung tragen kann — eine Frage ueber drei Saetze ist keine.
+    """
+    for j in range(i, min(len(woerter), i + 14)):
+        text = " ".join(_anzeige(x["t"], True) for x in woerter[i:j + 1])
+        if _breite_px(text) > FRAGE_MAX:
+            return 0
+        if _ist_frage(woerter[j:j + 1]):
+            return j - i + 1
+    return 0
+
+
 def _packen(woerter, worte, max_px):
     """Woerter einer Strecke zu Einblendungen packen.
 
@@ -606,15 +628,33 @@ def _packen(woerter, worte, max_px):
     `CALLED THE` und `HYPERMASCULINITY` stehen beide gross da.
     """
     gruppen, akt = [], []
-    for w in woerter:
+    i = 0
+    while i < len(woerter):
+        # **Eine Frage bleibt ganz.** Sein Wunsch vom 22.10. zur
+        # Schlussfrage: „in einer Zeile, in einer Einblendung, mit einem
+        # Fragezeichen". Die Drei-Wort-Grenze hat das am 24.10. wieder
+        # zerlegt — „WHAT MAKES / LIFE MEANINGFUL / TO YOU LOGAN?" stand in
+        # drei Einblendungen, obwohl die Zeile ganz gepasst haette. Hier
+        # entscheidet die Breite, nicht die Wortzahl.
+        laenge = _ganze_frage(woerter, i) if not akt else 0
+        if laenge:
+            gruppen.append(woerter[i:i + laenge])
+            i += laenge
+            continue
+        w = woerter[i]
         kand = akt + [w]
         text = " ".join(_anzeige(x["t"], True) for x in kand)
         schranke = FRAGE_BREITE if _ist_frage(kand) else max_px
         if akt and (len(kand) > worte or _breite_px(text) > schranke):
+            # Nicht gleich uebernehmen: das Wort faengt eine neue Einblendung
+            # an und muss darum noch einmal als Anfang betrachtet werden —
+            # sonst kaeme die Frage-Ausnahme nach der ersten Einblendung nie
+            # wieder zum Zug.
             gruppen.append(akt)
-            akt = [w]
-        else:
-            akt = kand
+            akt = []
+            continue
+        akt = kand
+        i += 1
     if akt:
         gruppen.append(akt)
     # Ein einzelnes Wort am Ende holt sich eines vom Vorgaenger, solange der

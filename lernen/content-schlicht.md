@@ -653,3 +653,18 @@ denselben Fall über diese Spanne streut, trennt nichts — sie hätte nur
 später falsch ausgesehen. Also raus, und stattdessen `--kein-stapel`
 benutzt, das es für genau diesen Fall schon gibt.
 → betrifft: content-*, alle Content-Agenten
+
+**24.10. — Eine halb umgesetzte Regel sieht aus wie eine umgesetzte.** Seine
+Vorgabe vom 22.10.: die Schlussfrage „in einer Zeile, in einer Einblendung,
+mit einem Fragezeichen". Eingebaut war dafür `FRAGE_BREITE` — eine breitere
+Schranke für Zeilen, die auf `?` enden. Nur schlägt die Drei-Wort-Grenze diese
+Schranke: „What makes life meaningful to you, Logan?" stand im Logan-Short in
+**drei** Einblendungen. Die Regel war im Code, die Wirkung nicht.
+Gemessen, statt geschätzt: die Zeile misst bei 82 px **1918 px**. In *eine*
+Zeile passt sie nur bei rund 40 px — halbe Schriftgröße, und genau das hat er
+für Einblendungen abgelehnt. Also ist „eine Zeile" hier nicht erreichbar; „eine
+Einblendung mit dem Fragezeichen" ist es. Eine Frage läuft jetzt über bis zu
+zwei Zeilen, bleibt aber **eine** Einblendung, bei voller Schriftgröße.
+**Regel: eine Vorgabe ist erst erfüllt, wenn sie am fertigen Short nachgesehen
+wurde — nicht, wenn der Code sie erwähnt.**
+→ betrifft: content-*, alle Content-Agenten
