@@ -46,7 +46,17 @@ from pathlib import Path
 import imageio_ffmpeg
 
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
-W, H = 1080, 1920
+# Ausgabegroesse in Pixeln. Wird von --ausgabe gesetzt; 2160x3840 ist seit
+# dem 24.10.2026 die Vorgabe, weil seine eigenen Shorts in dieser Groesse
+# liegen (gemessen an vier eigenen Exporten: 2160x3840, HEVC, 20 Mbit/s).
+W, H = 2160, 3840
+# Entwurfsraster der Untertitel. Das bleibt bei 1080x1920, auch wenn die
+# Ausgabe groesser ist: libass rechnet von PlayRes auf die Bildgroesse hoch
+# und zeichnet die Schrift dabei vektoriell. Darum sitzt jede einmal
+# abgenommene Lippenhoehe weiter genau da, wo sie gemessen wurde — nur mit
+# doppelt so vielen Pixeln gezeichnet. Alle Werte, die er je in Pixeln
+# abgenommen hat (Lippe, --tiefer, Schriftgroesse), gelten in diesem Raster.
+AW, AH = 1080, 1920
 HIER = Path(__file__).resolve().parent
 
 # --- Sein Preset ----------------------------------------------------------
@@ -91,8 +101,8 @@ SCALE_X = 112 if FONT_ERSATZ else 100
 FETTER = 2 if FONT_ERSATZ else 0
 GROESSE = 82               # seine Schriftgroesse (vorher hier 78)
 KONTUR = 8                 # schwarze Kontur ringsum
-MAX_BREITE = int(W * 0.72)  # die Zeile wird nie breiter, Rand bleibt frei
-LIPPE_VORGABE = int(H * 0.70)   # Mitte der Zeile, wenn die Lippe nicht feststeht
+MAX_BREITE = int(AW * 0.72)  # die Zeile wird nie breiter, Rand bleibt frei
+LIPPE_VORGABE = int(AH * 0.70)   # Mitte der Zeile, wenn die Lippe nicht feststeht
 GELB = "&H003AF1F9&"       # #F9F13A, sein Gelb aus dem Preset (ABGR)
 WEISS = "&H00FFFFFF&"
 GELB_I, WEISS_I = "&H3AF1F9&", "&HFFFFFF&"   # dieselben Farben als \\c im Text
@@ -295,8 +305,8 @@ def kopfzeile_ass(text, pfad, dauer, groesse=96, hoehe_anteil=0.68,
                            for z in zeilen) + 2 * px))
     hoehe = int(round(len(zeilen) * groesse * zeilenabstand + 2 * py))
 
-    mitte_y = hoehe_anteil * H
-    x0 = int(round((W - breite) / 2))
+    mitte_y = hoehe_anteil * AH
+    x0 = int(round((AW - breite) / 2))
     y0 = int(round(mitte_y - hoehe / 2))
 
     feld = "&H00000000" if dunkel else "&H00FFFFFF"
@@ -305,8 +315,8 @@ def kopfzeile_ass(text, pfad, dauer, groesse=96, hoehe_anteil=0.68,
 
     kopf = f"""[Script Info]
 ScriptType: v4.00+
-PlayResX: {W}
-PlayResY: {H}
+PlayResX: {AW}
+PlayResY: {AH}
 WrapStyle: 2
 ScaledBorderAndShadow: yes
 
@@ -330,7 +340,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         y = int(round(erste + i * abstand))
         zeilen_aus.append(
             f"Dialogue: 1,{ass_time(0)},{bis},Kopf,,0,0,0,,"
-            f"{{\\an5\\pos({W // 2},{y})\\bord0\\shad0"
+            f"{{\\an5\\pos({AW // 2},{y})\\bord0\\shad0"
             f"\\fad({ein},{aus})}}{z}")
     Path(pfad).write_text(kopf + "\n".join(zeilen_aus) + "\n", encoding="utf-8")
     return breite, hoehe
@@ -352,8 +362,8 @@ def build_ass(cues, path, marginv=320, tempo=1.0, tiefer=0, gross=True,
     """
     head = f"""[Script Info]
 ScriptType: v4.00+
-PlayResX: {W}
-PlayResY: {H}
+PlayResX: {AW}
+PlayResY: {AH}
 WrapStyle: 0
 ScaledBorderAndShadow: yes
 
@@ -365,7 +375,7 @@ Style: Cap,{FONT},{groesse},{WEISS},&H00000000,&H00000000,0,0,{SCALE_X},100,1,{K
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lines = []
-    nutzbar = W - 2 * rand
+    nutzbar = AW - 2 * rand
 
     def zeile(von, bis, bauen, lippe, fs):
         """Eine Einblendung ausgeben.
@@ -377,7 +387,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         """
         kopf = ""
         if lippe is not None:
-            kopf = f"{{\\an8\\pos({W // 2},{int(lippe) + tiefer})}}"
+            kopf = f"{{\\an8\\pos({AW // 2},{int(lippe) + tiefer})}}"
         if fs != groesse:
             kopf += f"{{\\fs{fs}}}"
         von_s, bis_s = ass_time(von / tempo), ass_time(bis / tempo)
@@ -1093,7 +1103,7 @@ def main():
                          "endet (Satzgrenze ohne Satzzeichen)")
     ap.add_argument("--logo", default=None,
                     help="PNG mit Transparenz, wird unten mittig eingeblendet")
-    ap.add_argument("--logo-breite", type=int, default=int(W * 0.28),
+    ap.add_argument("--logo-breite", type=int, default=None,
                     help="Vorgabe 28 %% der Bildbreite, aus seinem Preset")
     ap.add_argument("--logo-alpha", type=float, default=1.0)
     ap.add_argument("--logo-hoehe", type=float, default=0.87,
@@ -1172,12 +1182,20 @@ def main():
     ap.add_argument("--broll-fokus", type=float, default=0.5,
                     help="0..1 schiebt das 9:16-Fenster waagrecht durch die "
                          "B-Roll — aus 16:9 bleiben nur 31,6 %% der Breite")
-    ap.add_argument("--broll-seite", type=int, default=BROLL_SEITE,
+    ap.add_argument("--broll-seite", type=int, default=None,
                     help=f"nur bei --broll-modus karte: Kantenlaenge "
-                         f"(Vorgabe {BROLL_SEITE}, an der Referenz gemessen)")
-    ap.add_argument("--broll-radius", type=int, default=BROLL_RADIUS,
+                         f"(Vorgabe {BROLL_SEITE} auf 1080 breit, an der "
+                         f"Referenz gemessen; waechst mit --ausgabe)")
+    ap.add_argument("--broll-radius", type=int, default=None,
                     help=f"nur bei --broll-modus karte: Eckradius "
-                         f"(Vorgabe {BROLL_RADIUS})")
+                         f"(Vorgabe {BROLL_RADIUS} auf 1080 breit)")
+    ap.add_argument("--ausgabe", type=int, choices=(1080, 2160), default=2160,
+                    help="Bildbreite der Ausgabe: 2160 (= 2160x3840, Vorgabe) "
+                         "oder 1080. Seine eigenen Shorts liegen auf "
+                         "2160x3840; mehr echtes Bilddetail bringt das nicht, "
+                         "aber Schrift, Logo und Outro werden vierfach so "
+                         "fein gezeichnet, und YouTube behandelt einen "
+                         "4K-Upload anders als einen 1080p-Upload.")
     ap.add_argument("--look", choices=["preset", "warm", "aus"],
                     default="preset",
                     help="preset = sein CapCut-Filter als LUT (--lut), sonst "
@@ -1188,6 +1206,19 @@ def main():
                          "da, laeuft die Annaeherung und es steht in der "
                          "Ausgabe.")
     a = ap.parse_args()
+
+    # Ausgabegroesse steht erst jetzt fest; alle Vorgaben, die in Pixeln des
+    # Ausgabebildes gemessen sind, haengen daran. Die Untertitel nicht —
+    # die rechnen in AW/AH und werden von libass hochskaliert.
+    global W, H
+    W, H = (2160, 3840) if a.ausgabe == 2160 else (1080, 1920)
+    skala = W / AW
+    if a.logo_breite is None:
+        a.logo_breite = int(W * 0.28)
+    if a.broll_seite is None:
+        a.broll_seite = round(BROLL_SEITE * skala)
+    if a.broll_radius is None:
+        a.broll_radius = round(BROLL_RADIUS * skala)
 
     if not 0.5 <= a.tempo <= 2.0:
         raise SystemExit("--tempo muss zwischen 0.5 und 2.0 liegen (atempo).")
@@ -1385,7 +1416,7 @@ def main():
             # mittig auf 68 % der Hoehe, die Zeile ohne gemessene Lippe auf
             # 70 %. Das faellt am Code nicht auf, nur im Bild — also wird es
             # ausgerechnet und gesagt, statt es zu riskieren.
-            feld_oben = a.kopfzeile_hoehe * H - kh / 2
+            feld_oben = a.kopfzeile_hoehe * AH - kh / 2
             feld_unten = feld_oben + kh
             band = [(c["lippe"] + a.tiefer, c["lippe"] + a.tiefer + a.schriftgroesse)
                     for c in (cues or [])

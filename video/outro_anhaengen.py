@@ -14,22 +14,42 @@ rendern, Bett drunter, danach das Outro.
     python3 video/outro_anhaengen.py <haupt.mp4> <outro.mov> <ausgabe.mp4>
 
 Das Outro behaelt seinen eigenen Ton und bekommt weder Look noch Logo noch
-Untertitel - genauso wie im Renderer. Es wird auf 1080x1920 und 30 Bilder
-gebracht, falls es abweicht.
+Untertitel - genauso wie im Renderer. Es wird auf die Bildgroesse des
+Hauptteils und auf 30 Bilder gebracht, falls es abweicht.
+
+Die Groesse wird am Hauptteil GEMESSEN und nicht mehr fest auf 1080x1920
+gesetzt: seit dem 24.10.2026 liefert der Renderer 2160x3840, und ein fester
+Wert hier haette den fertigen Short wieder auf ein Viertel der Pixel
+gerechnet. Auch der zweite Durchgang laeuft jetzt auf `-preset medium -crf
+18` statt `veryfast`: dieser Schritt rechnet den ganzen Short ein zweites
+Mal durch, und `veryfast` hat dabei mehr weggeworfen als noetig.
 """
+import re
 import subprocess
 import sys
 
 import imageio_ffmpeg
 
 FF = imageio_ffmpeg.get_ffmpeg_exe()
-W, H = 1080, 1920
+
+
+def bildgroesse(pfad):
+    """Bildgroesse des Hauptteils lesen - danach richtet sich alles andere."""
+    r = subprocess.run([FF, "-hide_banner", "-i", pfad],
+                       capture_output=True, text=True)
+    for zeile in r.stderr.splitlines():
+        if " Video:" in zeile:
+            m = re.search(r"\b(\d{2,5})x(\d{2,5})\b", zeile)
+            if m:
+                return int(m.group(1)), int(m.group(2))
+    raise SystemExit(f"Konnte die Bildgroesse von {pfad} nicht lesen.")
 
 
 def main():
     if len(sys.argv) != 4:
         sys.exit(__doc__)
     haupt, outro, ziel = sys.argv[1:4]
+    W, H = bildgroesse(haupt)
     graph = (
         f"[0:v]scale={W}:{H}:force_original_aspect_ratio=decrease,"
         f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30,format=yuv420p[v0];"
@@ -44,7 +64,8 @@ def main():
     subprocess.run([FF, "-nostdin", "-y", "-hide_banner", "-loglevel", "error",
                     "-i", haupt, "-i", outro, "-filter_complex", graph,
                     "-map", "[v]", "-map", "[a]",
-                    "-c:v", "libx264", "-crf", "18", "-preset", "veryfast",
+                    "-c:v", "libx264", "-crf", "18", "-preset", "medium",
+                    "-pix_fmt", "yuv420p", "-profile:v", "high",
                     "-c:a", "aac", "-b:a", "192k", ziel], check=True)
 
     def dauer(p):
@@ -54,7 +75,7 @@ def main():
         return int(m.group(1)) * 3600 + int(m.group(2)) * 60 + float(m.group(3))
 
     print(f"  {dauer(haupt):.2f} s + {dauer(outro):.2f} s Outro "
-          f"= {dauer(ziel):.2f} s  ->  {ziel}")
+          f"= {dauer(ziel):.2f} s, {W}x{H}  ->  {ziel}")
 
 
 if __name__ == "__main__":

@@ -788,3 +788,71 @@ ersetzt, bevor gerendert wird.** Und die Probe darauf ist billig: am fertigen
 Short die Bild-zu-Bild-Differenz messen — **an einem sauberen Schnitt steht
 genau EIN grosser Sprung.** Stehen zwei, sitzt dazwischen ein Bild, das nicht
 dahin gehoert.
+
+---
+
+## 24.10. — „die Shorts, die ich selbst geschnitten habe, hatten eine bessere Auflösung"
+
+Sein Befund: *„mir ist aufgefallen, die Shorts, die ich selbst geschnitten
+habe, irgendwie hatten die eine bessere Auflösung als die du geschnitten
+hast. Woran liegt das? Und kannst du die Auflösung bitte genauso
+hochhalten?"*
+
+**Er hat recht, und es liegt nicht am Bildinhalt.** Gemessen an vier seiner
+eigenen Exporte im Drive (`David Sutcliffe Patriarchy/Hollywood/about Andrew
+Tate/Gilmore Girls & Friends.mov`):
+
+| | seine Shorts | meine bis 24.10. |
+|---|---|---|
+| Bildgröße | **2160×3840** | 1080×1920 |
+| Codec | HEVC | H.264 |
+| Datenrate | **19,6–20,2 Mbit/s** | 4,1–5,7 Mbit/s |
+
+**Echtes Bilddetail haben seine aber nicht mehr als meine.** Probe: ein Bild
+auf eine kleinere Breite herunterrechnen und wieder hochrechnen — was dabei
+verloren geht, war vorher echtes Detail. Im Gesichtsbereich, ohne Schrift:
+
+| herunter auf | sein 2160er Bild | mein 1080er Bild |
+|---|---|---|
+| 1080 px | 0,32–0,58 RMS | — |
+| ~600 px | 0,42–0,86 RMS | 0,54–0,76 RMS (bei 540) |
+
+Bei 1080 px Breite verliert seine 4K-Datei praktisch nichts — es war also
+nie Detail darüber. **Seine 4K-Shorts sind genauso hochgerechnet wie meine;
+die Quelle ist beide Male derselbe 1080p-Master im Drive** (18,6 GB,
+1920×1080 — ein 9:16-Fenster daraus hat 608 echte Spalten). Was seine
+Dateien besser machen, sind drei andere Dinge:
+
+1. **Schrift, Logo und Outro werden vierfach so fein gezeichnet.** Gemessen
+   an derselben Untertitelzeile: die Kante hat bei 2160 nativ einen
+   Gradienten von 255 (harte Kante), bei hochgerechnetem 1080 nur 148
+   (weiche Kante). Das ist der Teil, den das Auge als „schärfer" liest.
+2. **Ein 4K-Upload wird bei YouTube anders behandelt** als ein
+   1080p-Upload — andere Codec- und Datenratenstufe.
+3. **20 Mbit/s statt 4–6 Mbit/s** heißt weniger Kompressionsschaden, bevor
+   YouTube überhaupt anfängt.
+
+**Geändert:** `shorts-render.py` hat jetzt `--ausgabe` mit **Vorgabe 2160**
+(= 2160×3840). Der Entwurfsraster der Untertitel bleibt dabei auf 1080×1920
+(`AW/AH`): libass rechnet von `PlayRes` auf die Bildgröße hoch und zeichnet
+die Schrift vektoriell, **darum sitzt jede einmal abgenommene Lippenhöhe
+weiter genau da, wo sie gemessen wurde** — nachgeprüft, die hellen
+Schriftzeilen liegen in beiden Größen bei 554–1683. Alle Werte in
+Ausgabepixeln (Logobreite, B-Roll-Kante) wachsen mit.
+
+`outro_anhaengen.py` **liest die Bildgröße jetzt am Hauptteil** statt sie
+fest auf 1080×1920 zu setzen — sonst hätte dieser letzte Schritt den
+fertigen 4K-Short wieder auf ein Viertel der Pixel gerechnet. Und er läuft
+dort jetzt auf `-preset medium` statt `veryfast`: dieser Schritt kodiert den
+ganzen Short ein zweites Mal, und `veryfast` hat dabei mehr weggeworfen als
+nötig.
+
+**Kosten:** Rendern dauert etwa dreimal so lang (6 s Probe: 13 s auf 1080,
+41 s auf 2160), die Datei wird etwa dreieinhalbmal so groß.
+
+→ betrifft: alle Short-Agenten. **Ab sofort 2160×3840 ausgeben** — und
+wenn jemand eine Kette hat, die die Bildgröße irgendwo fest hinschreibt,
+gehört sie gemessen, nicht gesetzt. Ehrlich dazugesagt: mehr echtes
+Bilddetail wird es davon nicht, solange der Master 1080p ist. **Läge die
+Folge als 4K-Datei im Drive, wäre der Gewinn ein echter** — ein 9:16-Fenster
+aus 3840×2160 hat 1216 echte Spalten statt 608.
