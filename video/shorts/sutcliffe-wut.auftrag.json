@@ -1,0 +1,55 @@
+{
+ "name": "Sutcliffe-Folge - warum Wut dazugehoert",
+ "datei": "YNB Podcast David Sutcliffe Anger.mp4",
+ "stand": "2026-10-24 - erste Fassung, ohne Musik, 2160x3840",
+ "wer_spricht": "Er fuehrt mit Chris Williamson und dem Unterschied zwischen suppression und containment hin, Sutcliffe antwortet.",
+ "quelle": {
+  "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
+  "master_titel": "YNB Podcast: David Sutcliffe",
+  "fenster_master_s": [5592.0, 5708.0],
+  "hinweis": "In EINEM Stueck geholt. Datei beginnt bei Master 5592.00, 304 MB ueber 38 Bereichsanfragen."
+ },
+ "fundstelle": {
+  "veroeffentlicht": "01:27:33-01:29:02",
+  "seine_notiz": "why men need to express anger",
+  "wie_gefunden": "Im veroeffentlichten Transkript auf 'anger|angry|rage' gesucht. Vier Stellen kommen in Frage (01:25:12 sein eigener Sacred-Suns-Bericht, 01:27:54 Sutcliffes Antwort, 01:28:31 'sometimes anger is appropriate', 01:30:50 Aggression als Spektrum). Genommen ist die zusammenhaengende Antwort 01:27:33-01:29:02 - sie enthaelt die beiden Saetze, auf die seine Notiz zeigt, und endet auf einem ganzen Satz.",
+  "versatz": "Probe bei Master 5585: 'And our children.' bei Probe 8,92, veroeffentlicht 01:27:31 - daraus Master = 1,1 x veroeffentlicht - 182. Deckt sich mit dem Anker der Hypermaskulinitaets-Stelle (-184)."
+ },
+ "schnitt": {
+  "von_bis_src_s": [2.55, 98.45],
+  "von_bis_master_s": [5594.55, 5690.45],
+  "dauer_roh_s": 95.9,
+  "werkzeug": "video/schnitt_bauen.py (ein Stueck, Bild und Ton gleich)",
+  "warum_anfang": "Der Satz davor ('und unsere Kinder') endet bei Probe 2,38, 'And I listened to your podcast' beginnt bei 2,78 - geschnitten bei 2,55 in der Luecke. Der Kamerawechsel 0,95 s davor (Master 5593,6000) wurde BEWUSST nicht genommen: dort liefe das Satzende von davor noch mit.",
+  "warum_ende": "'I want access to that.' endet bei 98,28, danach 0,34 s Luecke, dann 'And but it's much more likely...'. Geschnitten bei 98,45. Die naechste Satzgrenze ('because it's not suppressed', 105,14) haette keine Luecke gehabt - dort setzt 'because' ohne Pause nach.",
+  "kamerawechsel_clipzeit_s": [10.5333, 12.0333, 17.5333, 28.5333, 73.6, 79.5333],
+  "wie_gemessen": "video/schnittgrenzen.py - alle sechs Grenzen lagen 1 bis 6 Bilder neben der Schaetzung."
+ },
+ "bild": {
+  "ausgabe": "2160x3840",
+  "tempo": 1.2,
+  "look": "preset",
+  "worte_je_einblendung": 3,
+  "tiefer_px": 120,
+  "lippe": 1267,
+  "logo_breite_px": 1400,
+  "logo_hoehe": 0.877,
+  "kaesten": {
+   "er": "635:0:608:1080",
+   "sutcliffe": "675:0:608:1080",
+   "totale_er": "179:0:493:875",
+   "totale_sutcliffe": "1216:0:493:875"
+  },
+  "warum_andere_werte_als_im_scheidungs_clip": "Dieselben Kameras, aber 75 Minuten spaeter sitzen beide anders. Seine Kopfmitte wandert hier von 965 auf 879 (gemessen an fuenf Bildern), im Scheidungs-Clip stand sie bei 1003-1022. In der Totale steht Sutcliffes Kopfmitte hier bei 1462 statt 1614. Ein Kasten je Kamera gilt INNERHALB eines Clips, nicht ueber die Folge.",
+  "warum_totale_auf_ihn": "In der Totale 17,5-28,5 spricht erst er zu Ende ('man must learn to be dangerous and then learn to contain it'), dann faellt Sutcliffes 'Yeah. Well, exactly.' Den Ausschnitt mittendrin umzusetzen waere ein harter Schnitt INNERHALB derselben Einstellung - genau der Sprung, den er mehrfach gemeldet hat. Also bleibt die Einstellung auf ihm; Sutcliffes Zustimmung laeuft als Ton darueber."
+ },
+ "einblendungen": {
+  "quelle": "video/shorts/sutcliffe-wut.cues.json",
+  "anzahl": 93,
+  "john_peterson": "STEHT SO IM BILD, weil es so gesagt ist. Gemeint ist Jordan Peterson. Drei unabhaengige Systeme hoeren 'John': YouTubes automatische Untertitel der Folge, Whisper small und Whisper medium. NICHT stillschweigend korrigiert - das waere ein Wort, das er nicht gesagt hat. Er entscheidet.",
+  "kuerzeste": "'BE AN' steht 0,22 s im Bild, in 'anger can be an appropriate response'. Es bleibt: die neue Weglass-Regel greift nur bei EINZELNEN Woertern, sonst haette sie Text weggeworfen."
+ },
+ "ton": {"laut": "aus", "dehnung": "atempo", "musik": "keine - nicht bestellt"},
+ "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py",
+ "offen": "Er entscheidet ueber die Laenge. Vorschlag in video/sutcliffe-zwei-neue-clips.md: Beginn bei Clipzeit 17,5 macht den Einstieg haerter und spart 17 s."
+}

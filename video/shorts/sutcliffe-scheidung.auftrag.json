@@ -1,0 +1,55 @@
+{
+ "name": "Sutcliffe-Folge - die Playmate-Ehe und die Trennung",
+ "datei": "YNB Podcast David Sutcliffe Divorce.mp4",
+ "stand": "2026-10-24 - erste Fassung, ohne Musik, 2160x3840",
+ "wer_spricht": "Er stellt die Frage mit dem Sokrates-Zitat, Sutcliffe erzaehlt.",
+ "quelle": {
+  "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
+  "master_titel": "YNB Podcast: David Sutcliffe",
+  "fenster_master_s": [490.0, 642.0],
+  "hinweis": "In EINEM Stueck geholt. Datei beginnt bei Master 489.98, 400 MB ueber 50 Bereichsanfragen."
+ },
+ "fundstelle": {
+  "veroeffentlicht": "00:07:22-00:09:21",
+  "wie_gefunden": "Erst im veroeffentlichten Transkript gesucht, dann den Versatz LOKAL gemessen - und genau das war noetig: aus dem Anker der Hypermaskulinitaets-Stelle (veroeffentlicht 4321 ↔ Master 4569) haette sich Master 302 ergeben, richtig sind 499. Der Versatz wandert ueber die Folge um fast 200 s. Gemessen an einer 26-Sekunden-Probe bei Master 290: 'kept in it' ↔ veroeffentlicht 00:04:12, 'didn't become truly disillusioned' ↔ 00:04:19 - daraus Master = 1,1 x veroeffentlicht + 12,75, aus beiden Wortpaaren derselbe Wert."
+ },
+ "schnitt": {
+  "von_bis_src_s": [4.9, 141.6],
+  "von_bis_master_s": [494.88, 631.58],
+  "dauer_roh_s": 136.7,
+  "werkzeug": "video/schnitt_bauen.py (ein Stueck, Bild und Ton gleich)",
+  "warum_anfang": "Die Luecke zwischen 'dude.' (3,58) und 'We also' (5,24) ist 1,66 s lang; geschnitten wird bei 4,90, also 0,34 s vor dem ersten Wort. 0,28 s davor, bei Master 494,6000, liegt ein Kamerawechsel (Differenz 42,5 gegen Ruhepegel 1,71) - der Einstieg liegt also INNERHALB der neuen Einstellung und nicht auf ihrer Kante.",
+  "warum_ende": "'other people.' endet bei 141,12; geschnitten bei 141,60. In 2,6 s um den Ausstieg herum liegt kein Kamerawechsel (groesster Unterschied 1,69 gegen Ruhepegel 1,20), der Schnitt faellt also in eine ruhige Einstellung.",
+  "kamerawechsel_clipzeit_s": [4.7, 6.2, 19.7, 39.3333, 46.2, 75.7, 77.7, 103.5, 110.7],
+  "wie_gemessen": "video/schnittgrenzen.py (neu). bildausschnitt.py schaetzt die Grenzen und lag bei ALLEN NEUN um 1 bis 6 Bilder daneben - genau der Fehler, der am 24.10. das Zittern am Schnitt verursacht hat."
+ },
+ "bild": {
+  "ausgabe": "2160x3840",
+  "tempo": 1.2,
+  "look": "preset",
+  "worte_je_einblendung": 3,
+  "tiefer_px": 120,
+  "lippe": 1267,
+  "logo_breite_px": 1400,
+  "logo_hoehe": 0.877,
+  "warum_logo_1400": "700 war sein abgenommener Wert auf 1080 Bildbreite. Bei 2160 sind das 1400 - derselbe Anteil, nicht derselbe Pixelwert.",
+  "kaesten": {
+   "er": "705:0:608:1080",
+   "sutcliffe": "668:0:608:1080",
+   "totale": "1370:0:493:875"
+  },
+  "warum_ein_kasten_je_kamera": "Der Planer schlaegt je Einstellung einen eigenen Kasten vor (bei ihm 692/704/776, bei Sutcliffe 620/680/692/656/692). Das sind dieselben zwei festen Kameras - unterschiedliche Kaesten heissen also, dass das Bild bei jedem Schnitt auf dieselbe Person neu gerahmt wird. Seine Regel vom 20.10. ('Zeile bleibt auf einer Hoehe') gilt sinngemaess auch fuer den Ausschnitt. Darum ein Kasten je Kamera, und EINE Zeilenhoehe.",
+  "wie_gemessen": "Seine Kopfmitte ueber das Spitzenprofil im Kopfband: 1003-1022 ueber vier Bilder, daraus Kasten 705. Bei Sutcliffe versagt dieses Mass (er sitzt vor hell angestrahlten Blaettern, das Profil misst das Laub) - dort das bewegungsgewichtete Mittel der Planervorschlaege, 668. Beides am Kontaktabzug mit eingezeichneter Mittellinie geprueft.",
+  "warum_totale_rechts": "In beiden Totalen (39,3-46,2 und 103,5-110,7) spricht Sutcliffe, er sitzt rechts. Der Planer hatte die erste auf IHN gelegt (x 65, also links) - das haette 7 s lang den Zuhoerer gezeigt. Kopfmitte in der Totale ueber drei Kandidaten gemessen: 1600/1620/1622, also 1614; Kasten 493 breit heisst x 1368, gesetzt 1370."
+ },
+ "einblendungen": {
+  "quelle": "video/shorts/sutcliffe-scheidung.cues.json",
+  "anzahl": 153,
+  "weggelassen": "Ein 'Yeah' von ihm bei Clipzeit 28,47, 0,12 s lang - drei Bilder. Der Ton bleibt unveraendert. Neue Regel MIN_HART im Renderer.",
+  "john_peterson": "Steht NICHT in diesem Clip (das ist der Wut-Clip).",
+  "shit": "'because I'd always kept my shit together' bei Clipzeit 108 - Sutcliffes Wort, steht so im Untertitel."
+ },
+ "ton": {"laut": "aus", "dehnung": "atempo", "musik": "keine - nicht bestellt"},
+ "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py",
+ "offen": "Er entscheidet ueber die Laenge. video/sutcliffe-zwei-neue-clips.md nennt drei Stellen zum Kuerzen, mit Zeitmarken."
+}

@@ -457,3 +457,40 @@ scharfe Ecken. Nachgemessen am fertigen Bild: Feldinneres bei Sekunde 1,0
 **Regel: ein Standbild als Filtereingang hat keine Zeit.** Alles, was sich
 über die Zeit ändern soll — Ein- und Ausblenden, Bewegung —, gehört in einen
 Strom, der eine hat.
+
+---
+
+## Stand 24.10.2026 — zwei weitere Stellen geschnitten, und 4K
+
+**Neu:** `video/sutcliffe-zwei-neue-clips.md` — die Playmate-Ehe
+(veröffentlicht 00:07:22–00:09:21, Master 494,88–631,58) und „why men need
+to express anger" (veröffentlicht 01:27:33–01:29:02, Master
+5594,55–5690,45), beide mit Transkript und Zeitmarken zum Kürzen.
+
+**Zwei Dinge, die für jede weitere Stelle aus dieser Folge gelten:**
+
+**1. Der Versatz zwischen Veröffentlichung und Master wandert um fast 200
+Sekunden.** Die Regel oben („der Versatz muss in der Nähe der Stelle
+gemessen werden") ist jetzt ein Messwert: aus dem Anker der
+Hypermaskulinitäts-Stelle (veröffentlicht 4321 ↔ Master 4569) ergäbe sich
+für veröffentlicht 00:07:22 ein Master-Zeitpunkt von 302 s — richtig sind
+**499**. Lokal gemessen gilt dort `Master = 1,1 × veröffentlicht + 12,75`,
+bei 01:27 dagegen `− 182`.
+
+**Billiges Verfahren, das jedes Mal reicht:** ein 26-Sekunden-Fenster am
+geschätzten Ort holen (rund 80 MB), transkribieren, die Wörter im
+veröffentlichten Transkript suchen — ein einziges Wortpaar gibt den Versatz.
+Zwei Paare aus demselben Fenster haben hier auf 0,05 s denselben Wert
+ergeben.
+
+**2. Der Planer liegt an JEDER Einstellungsgrenze daneben.** An den beiden
+neuen Clips: alle 15 Grenzen um 1 bis 6 Bilder. `video/schnittgrenzen.py`
+misst sie Bild für Bild nach und schreibt den Plan um. **Das gehört vor
+jeden Lauf**, sonst steht am Schnitt ein Bild mit dem Ausschnitt der
+falschen Einstellung — das ist das Zittern vom 24.10.
+
+**3. Ein Kasten je Kamera, aber nur innerhalb eines Clips.** Der Planer
+schlägt je Einstellung einen eigenen vor; das rahmt dieselbe Person bei
+jedem Schnitt neu. Über die Folge hinweg gilt ein Kasten dagegen nicht:
+zwischen 00:07 und 01:27 wandert seine Kopfmitte von 1010 auf 930, Sutcliffes
+in der Totale von 1614 auf 1462.
