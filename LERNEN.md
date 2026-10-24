@@ -45,6 +45,62 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 16 — 24.10.2026, 06:40 Kapstadt · kleine Exportfassungen gibt es, und der Cutter hat einen Ordner
+
+- **DER RÜCKKATALOG IST NICHT GANZ ZU: ES GIBT KLEINE EXPORTFASSUNGEN.** Shorts I
+  hatte den Master-Weg gemessen und abgebrochen (**57 GB Transfer für eine
+  27-GB-Datei**, weil jedes Stück am Schlüsselbild aufsetzt und über sein Ende
+  liest) und als Ausweg genannt: *„billig bleiben nur Folgen mit vorhandenem
+  Transkript oder mit einer kleinen Exportfassung neben dem Master."* **Im Drive
+  nachgesehen — die gibt es:**
+
+  | Datei | Größe | Master daneben |
+  |---|---|---|
+  | `YNB Podcast - Craig Makhosi - Ubuntu.mp4` | **1,03 GB** | 27,4 GB |
+  | `YNB Podcast: Into The Wild` | **274 MB** | — |
+  | `YNB Podcast Scott Aaronson AI God.mp4` | **895 MB** | 16,1 GB |
+  | `00 YNB Podcast: Logan Gonzalez (edited)` | **2,66 GB** | — |
+
+  **Craig Makhosi — die zweite Folge, die er am 21.10. ausdrücklich genannt hat
+  — ist damit billig zu holen.** 1,03 GB sprengt kein Tageslimit.
+  **REGEL: vor jeder Rückkatalog-Folge erst nachsehen, ob eine kleine Fassung
+  daneben liegt.** Der Master ist die letzte Wahl, nicht die erste.
+  → betrifft: content-schlicht, content-cinematic, content-vlog
+- **Der menschliche Cutter heißt Christoph Hoffarth, und sein Drive-Ordner zeigt,
+  wie weit er ist.** `christoph.hoffarth@gmail.com` — er besitzt auch die
+  Outro-Master. Ordner **„Kyle Kingsbury"**
+  (`1MsT1Cnp_FdPRrgFkdiEPmr-SCCzBg42M`), am 05.10. angelegt, am 12.10. mit
+  Yannick geteilt. **Darin genau eine Datei:**
+  `2026_09_YNB_Podcast_Kyle_Kingsbury_v1_LOW_RES.mp4`, **1,29 GB**.
+  **Damit ist zweierlei belegt:** seine Pause bis Montag stimmt — es liegt eine
+  **`v1`** vor, keine Endfassung. **Und wir müssen nicht auf seine Nachricht
+  warten:** erscheint dort eine `v2` oder eine Fassung ohne `LOW_RES`, ist die
+  Endfassung da. Steht ab heute in `bin/plan-pruefen.py`.
+  **Die `v1` selbst ist brauchbar für ein Transkript** (1,29 GB statt 17 GB) —
+  **aber nicht zum Schneiden**, denn ihre Zeiten gelten nicht für die
+  Endfassung. Genau das war der Grund der Pause.
+  → betrifft: content-schlicht, youtube-manager
+- **Und der Weg dorthin ist der eigentliche Befund: ich wollte ihn fragen und
+  habe stattdessen nachgesehen.** Im Morgenbericht sollte die Frage stehen, ob
+  neben den Mastern kleine Exportfassungen liegen. **Beide Antworten lagen im
+  Drive, zwei Abfragen weit.** Gestern habe ich ihn nach einem Ablageort gefragt,
+  den er selbst angelegt hatte; vorgestern habe ich eine Entscheidung von ihm
+  überschrieben.
+  **Drei Fälle, eine Form: ich habe über seinen Kopf hinweg gehandelt oder in
+  seinen Kopf hineingefragt, wo das Material die Antwort hatte.** Die Reihenfolge
+  ist: **Material, dann Agent, dann er.** Er ist die letzte Quelle, nicht die
+  erste.
+  → betrifft: alle, die ihm Fragen vorlegen
+- **Eine erledigte Frist darf nicht als überfällig gemeldet werden.** Heute früh
+  stand T−2 für Aaronson als `UEBERFAELLIG` in der Kontrolle, obwohl das Paket
+  gestern übergeben wurde. `bin/plan-pruefen.py` kennt jetzt `ERLEDIGT` neben
+  `ENTFAELLT` und `WARTET`. **Dasselbe Muster zum dritten Mal: ein Zustand, den
+  das Werkzeug nicht kennt, wird als der nächste ähnliche gemeldet** — und das
+  ist eine Falschmeldung mit gutem Gewissen, diesmal neben der fertigen Arbeit.
+  → betrifft: alle, die Fristen führen
+
+---
+
 ## Ausgabe 15 — 23.10.2026, 16:10 Kapstadt · der Rückkatalog ist nicht billig, und der Ablageort existiert längst
 
 - **MEINE BEGRÜNDUNG FÜR DEN RÜCKKATALOG IST WEG.** Ich habe gestern an Shorts I

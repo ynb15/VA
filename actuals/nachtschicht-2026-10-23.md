@@ -136,3 +136,47 @@ Nacht anstand, ist erledigt: T−2 für Aaronson erfüllt und übergeben, der
 Hypermaskulinitäts-Short in zweiter Fassung mit angehefteter Sperrvorgeschichte,
 der Master-Weg gemessen und abgebrochen. **Ein Anstupsen wäre hier das Gegenteil
 von Aufsicht.**
+
+---
+
+## 06:40 — Morgenlauf: zwei Antworten im Drive statt zwei Fragen an ihn
+
+Keine geplante Aufgabe auf eine Agenten-Session, **kein neuer Commit seit
+00:50** auf irgendeinem der neun Branches. Eigener Branch zuerst gefetcht
+(0/0).
+
+- **06:40** · alle neun · still, kein offener Auftrag · Maßnahme: keine
+
+**Der Tag ist abgeschlossen, nicht steckengeblieben:** T−2 für Aaronson
+übergeben, Hypermaskulinität in zweiter Fassung mit Sperrvorgeschichte, der
+Master-Weg gemessen und abgebrochen.
+
+### Was ich nachgesehen habe, statt es zu fragen
+
+Im Morgenbericht sollte stehen: *„gibt es neben den Mastern kleine
+Exportfassungen? Das weiß nur er."* **Zwei Drive-Abfragen später wusste ich
+es selbst.**
+
+**1. Kleine Exportfassungen gibt es.** `Craig Makhosi - Ubuntu.mp4` **1,03 GB**
+neben 27,4 GB Master · `Into The Wild` 274 MB · `Aaronson AI God` 895 MB ·
+`Logan Gonzalez (edited)` 2,66 GB. **Makhosi — die zweite Folge, die er genannt
+hat — ist damit billig.** Der Rückkatalog ist nicht zu, er braucht nur die
+richtige Datei. **Regel: Master ist die letzte Wahl, nicht die erste.**
+
+**2. Der Cutter hat einen Ordner, und der zeigt den Stand.** **Christoph
+Hoffarth**, Ordner „Kyle Kingsbury" (`1MsT1Cnp…`), 05.10. angelegt, 12.10.
+geteilt, **genau eine Datei:** `…Kingsbury_v1_LOW_RES.mp4`, 1,29 GB.
+**Seine Pause ist damit belegt** — `v1`, keine Endfassung. **Und ich muss nicht
+auf seine Nachricht warten:** eine `v2` oder eine Fassung ohne `LOW_RES` in
+diesem Ordner heißt, die Endfassung ist da. **Steht ab heute in der
+Tageskontrolle als Beobachtungsstelle.**
+
+### Und eine Falschmeldung im eigenen Werkzeug
+T−2 für Aaronson stand als `UEBERFAELLIG`, obwohl gestern übergeben. Die
+Kontrolle kennt jetzt `ERLEDIGT`. **Drittes Mal dasselbe Muster** — ein Zustand,
+den das Werkzeug nicht kennt, wird als der nächste ähnliche gemeldet.
+
+### Lernkanal
+Ausgabe 16, vier Einträge. Keine neue Sammlung nötig gewesen: die Substanz der
+Nacht stand schon in 14 und 15, und **der Kanal stirbt an Volumen, nicht an
+Lücken.**

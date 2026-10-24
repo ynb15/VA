@@ -189,6 +189,57 @@ die Endfassung am **Mi 28.10. abends** nicht im Drive, wandert Kingsbury und der
 31.10. wird aus dem Rückkatalog gefüllt. Strassman (13.11.) hat Luft, die Folge
 verliert also nichts außer dem Platz.
 
+## Der Cutter hat einen Ordner, und darin steht, wie weit er ist
+
+**24.10.2026 im Drive gefunden, statt ihn zu fragen.** Der menschliche Cutter
+ist **Christoph Hoffarth** (`christoph.hoffarth@gmail.com`) — er besitzt auch die
+Outro-Master. Am **05.10.** hat er einen Ordner **„Kyle Kingsbury"**
+(`1MsT1Cnp_FdPRrgFkdiEPmr-SCCzBg42M`) angelegt und am **12.10.** mit Yannick
+geteilt.
+
+**Darin liegt genau eine Datei:**
+`2026_09_YNB_Podcast_Kyle_Kingsbury_v1_LOW_RES.mp4` — **1,29 GB**, 05.10.
+
+**Zwei Dinge folgen daraus:**
+
+1. **Die Pause bis Montag ist begründet.** Es liegt eine **`v1`** vor, keine
+   Endfassung. Sein Satz — *„ich muss den Podcast reviewen und dann erst kriege
+   ich die finale Version von meinem Cutter"* — deckt sich mit dem, was der
+   Ordner zeigt.
+2. **Ich muss nicht warten, bis er es mir sagt.** **Der Ordner ist die
+   Beobachtungsstelle:** erscheint dort eine `v2` oder eine Fassung ohne
+   `LOW_RES`, ist die Endfassung da. Das gehört in die Tageskontrolle, nicht in
+   meinen Kopf.
+
+**Und die `v1` ist selbst schon brauchbar:** 1,29 GB statt 17 GB Master. **Ein
+Transkript lässt sich daraus ohne Tageslimit-Problem ziehen** — die Zeiten
+gelten dann für `v1`, nicht für die Endfassung, also wird damit **nicht
+geschnitten**, aber die Fundstellen stehen. Das war der Grund für die Pause
+(*„aus einem nicht endgültigen Master wird nicht geschnitten"*), und der bleibt.
+
+## Kleine Exportfassungen gibt es — und damit ist der Rückkatalog nicht ganz zu
+
+**Am 24.10. im Drive nachgesehen, nachdem Shorts I den Master-Weg abgebrochen
+hatte.** Neben den großen Mastern liegen bei einigen Folgen Exportfassungen im
+Gigabyte-Bereich:
+
+| Datei | Größe | neben Master |
+|---|---|---|
+| `YNB Podcast - Craig Makhosi - Ubuntu.mp4` | **1,03 GB** | 27,4 GB |
+| `YNB Podcast: Into The Wild` | **274 MB** | — |
+| `YNB Podcast Scott Aaronson AI God.mp4` | **895 MB** | 16,1 GB |
+| `00 YNB Podcast: Logan Gonzalez (edited)` | **2,66 GB** | — |
+| `2026_09_…_Kyle_Kingsbury_v1_LOW_RES.mp4` | **1,29 GB** | 17,0 GB |
+
+**Craig Makhosi — die zweite Folge, die er am 21.10. ausdrücklich genannt hat —
+ist damit billig zu holen.** Eine Datei von 1,03 GB sprengt kein Tageslimit.
+**Die Frage, die ich ihm heute stellen wollte, ist damit beantwortet, ohne ihn
+zu fragen.**
+
+**Was weiter gilt:** für Folgen **ohne** Exportfassung bleibt der Master-Weg mit
+seinen gemessenen 57 GB Transfer je 27-GB-Datei — und der ist zu. **Vor jeder
+Rückkatalog-Folge also: erst nachsehen, ob eine kleine Fassung daneben liegt.**
+
 ## Was eine Folge braucht, bevor sie raus kann
 
 Das Paket steht schon — der YouTube-Manager hat es in `youtube/veroeffentlichung.md`

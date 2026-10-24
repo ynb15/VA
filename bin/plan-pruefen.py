@@ -46,6 +46,15 @@ SCHNITT = {
     "Marian Goodell":  "content-cinematic",
 }
 
+# Erledigte Fristen: Folge -> die T-Marken, die abgeschlossen sind.
+# Eine erledigte Frist darf nicht als ueberfaellig gemeldet werden — sonst
+# steht am Stichtag eine Falschmeldung neben der erledigten Arbeit. Dasselbe
+# Muster wie WARTET: ein Zustand, den das Werkzeug nicht kennt, wird als der
+# naechste aehnliche gemeldet.
+ERLEDIGT = {
+    "Scott Aaronson": {10, 8, 6, 5, 3, 2},   # Paket am 23.10. uebergeben
+}
+
 # Entscheidungspunkte: Tag -> was an diesem Tag entschieden werden muss, und
 # von wem. Steht hier, damit ich es nicht im Kopf tragen muss — was nicht im
 # Repo steht, passiert nicht.
@@ -88,6 +97,8 @@ for pd in sorted(PODCASTS):
     for tage, was, wer in VORLAUF:
         if tage in ENTFAELLT.get(PODCASTS[pd], set()):
             continue
+        if tage in ERLEDIGT.get(PODCASTS[pd], set()):
+            continue
         frist = pd - datetime.timedelta(days=tage)
         rest = (frist - heute).days
         if -1 <= rest <= 3:
@@ -104,6 +115,12 @@ for folge, (frei, grund) in sorted(WARTET.items()):
     if heute < frei:
         print(f"\n  ANGEHALTEN: {folge} ruht bis {frei.strftime('%a %d.%m.')} "
               f"— wartet auf {grund}.")
+        if folge == "Kyle Kingsbury":
+            print("              BEOBACHTEN: Drive-Ordner des Cutters "
+                  "1MsT1Cnp_FdPRrgFkdiEPmr-SCCzBg42M.")
+            print("              Dort liegt nur v1_LOW_RES (1,29 GB, 05.10.). "
+                  "Eine v2 oder eine Fassung")
+            print("              ohne LOW_RES heisst: die Endfassung ist da.")
         rest_bis = (frei - heute).days
         print(f"              Das sind noch {rest_bis} Tg. Alles, was am Schnitt "
               f"haengt, ruht mit.")
