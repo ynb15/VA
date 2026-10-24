@@ -103,6 +103,10 @@ GROESSE = 82               # seine Schriftgroesse (vorher hier 78)
 KONTUR = 8                 # schwarze Kontur ringsum
 MAX_BREITE = int(AW * 0.72)  # die Zeile wird nie breiter, Rand bleibt frei
 LIPPE_VORGABE = int(AH * 0.70)   # Mitte der Zeile, wenn die Lippe nicht feststeht
+MIN_STAND = 0.6            # kuerzeste Standzeit einer Einblendung, in
+                           # Clipsekunden (bei --tempo 1.2 also 0.5 s im Bild)
+MIN_HART = 0.25            # darunter wird die Einblendung weggelassen, wenn
+                           # die naechste sofort folgt - siehe whisper_cues
 GELB = "&H003AF1F9&"       # #F9F13A, sein Gelb aus dem Preset (ABGR)
 WEISS = "&H00FFFFFF&"
 GELB_I, WEISS_I = "&H3AF1F9&", "&HFFFFFF&"   # dieselben Farben als \\c im Text
@@ -780,6 +784,46 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
                              "text": " ".join(w["t"] for w in teil),
                              "woerter": teil,
                              "grund": lauf[-1]["grund"] if k + 1 == len(teile) else "voll"})
+
+    # Eine Einblendung, die kuerzer steht als MIN_STAND, liest niemand - sie
+    # blitzt nur auf. Am 24.10. stand `YEAH` im Scheidungs-Clip 0,12 s im
+    # Bild, bei Tempo 1,2 also drei Bilder. Das kommt von einem Satz, der aus
+    # einem einzigen Wort besteht: ueber ein Satzende wird (richtigerweise)
+    # nichts zum Nachbarn geschoben, also bleibt das Wort allein stehen - und
+    # erbt die Laenge des gesprochenen Wortes. Es wird deshalb nicht
+    # verschoben, sondern VERLAENGERT, in die Luecke bis zur naechsten
+    # Einblendung hinein. Gibt die Luecke nichts her, bleibt es kurz; dann
+    # steht da wenigstens kein Loch.
+    for k, c in enumerate(zusammen):
+        if c["end"] - c["start"] >= MIN_STAND:
+            continue
+        grenze = (zusammen[k + 1]["start"] if k + 1 < len(zusammen)
+                  else c["start"] + MIN_STAND)
+        c["end"] = min(max(c["end"], c["start"] + MIN_STAND), grenze)
+
+    # Bleibt eine Einblendung danach unter MIN_HART, gibt die Luecke nichts
+    # her: der naechste Satz setzt sofort ein. Das ist der Fall `YEAH` aus dem
+    # Scheidungs-Clip - ein Zwischenruf von 0,12 s, eingeklemmt zwischen zwei
+    # Saetzen des anderen. Drei Bilder liest niemand, also wird die
+    # Einblendung WEGGELASSEN und die vorhergehende bis zum naechsten Satz
+    # gezogen, damit an der Stelle kein Loch steht. Der TON bleibt
+    # unveraendert - weggelassen wird nur die Schrift.
+    raus = []
+    for k, c in enumerate(zusammen):
+        # Nur ein EINZELNES Wort, das fuer sich steht. Ein schneller Zweier
+        # mitten im Satz (`BE AN` in `anger can be an appropriate response`)
+        # ist genauso kurz, traegt aber Text - der darf nicht fehlen.
+        if len(c["woerter"]) != 1 or c["end"] - c["start"] >= MIN_HART:
+            continue
+        if k > 0:
+            zusammen[k - 1]["end"] = max(zusammen[k - 1]["end"], c["end"])
+        raus.append(k)
+    if raus:
+        for k in raus:
+            w = " ".join(x["t"] for x in zusammen[k]["woerter"])
+            print(f"  Einblendung weggelassen: {w!r} stand nur "
+                  f"{zusammen[k]['end'] - zusammen[k]['start']:.2f} s")
+        zusammen = [c for k, c in enumerate(zusammen) if k not in set(raus)]
     return zusammen, info.language
 
 

@@ -856,3 +856,41 @@ gehört sie gemessen, nicht gesetzt. Ehrlich dazugesagt: mehr echtes
 Bilddetail wird es davon nicht, solange der Master 1080p ist. **Läge die
 Folge als 4K-Datei im Drive, wäre der Gewinn ein echter** — ein 9:16-Fenster
 aus 3840×2160 hat 1216 echte Spalten statt 608.
+
+---
+
+## 24.10. — eine Einblendung, die drei Bilder lang aufblitzt
+
+Beim Schneiden der Scheidungs-Stelle stand im Scheidungs-Clip ein **`YEAH`
+0,12 Sekunden** im Bild — bei Tempo 1,2 also drei Bilder. Es ist ein
+Zwischenruf von ihm, eingeklemmt zwischen zwei Sätzen von Sutcliffe: der
+Satz davor endet bei 28,31, das `Yeah.` läuft 28,47–28,59, der nächste Satz
+setzt bei 28,59 ein.
+
+**Warum die bestehende Regel nicht greift:** ein einzelnes Wort wandert zum
+Nachbarn — aber bewusst **nur über eine Atempause hinweg**, nicht über ein
+Satzende. `Yeah.` IST ein ganzer Satz, bleibt also allein stehen und erbt
+die Länge des gesprochenen Wortes. Richtig so; falsch war nur, was dann
+daraus wird.
+
+**Zwei Regeln neu in `shorts-render.py`:**
+
+1. `MIN_STAND = 0,6 s` (Clipzeit, bei Tempo 1,2 also 0,5 s im Bild). Eine
+   kürzere Einblendung wird **in die Lücke bis zur nächsten hinein
+   verlängert** — nie über sie hinaus, es wird also nichts später, nur
+   länger.
+2. `MIN_HART = 0,25 s`. Gibt die Lücke nichts her und besteht die
+   Einblendung aus einem **einzelnen** Wort, wird sie **weggelassen** und die
+   vorhergehende bis zum nächsten Satz gezogen, damit kein Loch entsteht.
+   **Der Ton bleibt unverändert** — weggelassen wird nur die Schrift.
+
+Die Einschränkung auf ein einzelnes Wort ist der Punkt: ein schneller
+Zweier mitten im Satz ist genauso kurz, trägt aber Text. Im Wut-Clip steht
+`BE AN` 0,22 s im Bild, in *„anger can be an appropriate response"* — das
+darf nicht fehlen. Eine reine Dauerregel hätte es weggeworfen.
+
+→ betrifft: alle Short-Agenten. Der Renderer meldet jede weggelassene
+Einblendung in der Ausgabe (`Einblendung weggelassen: 'Yeah.' stand nur
+0,12 s`) — **das gehört in die Abnahme**, denn an der Stelle fehlt Schrift
+zu hörbarem Ton. Steht da ein Wort, das Inhalt trägt, ist die Stelle von
+Hand zu lösen und nicht über die Regel.
