@@ -801,6 +801,27 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
             geglaettet.append(lauf)
     laeufe = geglaettet
 
+    # **Eine Frage ueberlebt die Sprechpause.** Das Packen haelt eine Frage
+    # zusammen — nur kommt sie dort gar nicht ganz an: eine Frage, die in
+    # Portionen gesprochen wird („What makes … life meaningful … to you,
+    # Logan?"), ist vorher schon an den Pausen in drei Strecken zerfallen,
+    # und der Packer sah am 24.10. nur noch `to you, Logan?`. Darum hier,
+    # eine Ebene frueher: Strecken, die zusammen eine Frage ergeben und in
+    # eine Einblendung passen, werden wieder zusammengelegt. Ueber ein
+    # Satzende hinweg nicht — nur ueber Pausen.
+    verbunden = []
+    for lauf in laeufe:
+        if verbunden:
+            vor = verbunden[-1]
+            woerter = [w for c in vor + lauf for w in c["woerter"]]
+            if (vor[-1]["grund"] in ("pause", "stille")
+                    and not _ist_frage([w for c in vor for w in c["woerter"]])
+                    and _ganze_frage(woerter, 0) == len(woerter)):
+                verbunden[-1] = vor + lauf
+                continue
+        verbunden.append(lauf)
+    laeufe = verbunden
+
     zusammen = []
     for lauf in laeufe:
         teile = _packen([w for c in lauf for w in c["woerter"]], worte, max_px)

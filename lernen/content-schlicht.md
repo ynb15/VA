@@ -667,4 +667,13 @@ Einblendung mit dem Fragezeichen" ist es. Eine Frage läuft jetzt über bis zu
 zwei Zeilen, bleibt aber **eine** Einblendung, bei voller Schriftgröße.
 **Regel: eine Vorgabe ist erst erfüllt, wenn sie am fertigen Short nachgesehen
 wurde — nicht, wenn der Code sie erwähnt.**
+Und die Reparatur ging beim ersten Versuch daneben, auf dieselbe Art: ich habe
+die Ausnahme ins Packen gebaut, nachgesehen — immer noch drei Einblendungen.
+Erst die Messung an der echten Wortliste zeigte, wo es wirklich zerfällt: eine
+Frage, die mit Sprechpausen gesprochen wird („What makes … life meaningful …
+to you, Logan?"), ist **vor** dem Packen schon an den Pausen in drei Strecken
+zerlegt; beim Packer kam nur noch `to you, Logan?` an. Die Ausnahme musste eine
+Ebene früher stehen. **Wer eine Regel in die falsche Schicht baut, hat sie
+nicht gebaut** — und merkt es nur, wenn er den Zwischenstand misst statt das
+Ergebnis zu erwarten.
 → betrifft: content-*, alle Content-Agenten
