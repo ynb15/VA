@@ -72,13 +72,13 @@
       {
         "clipzeit_s": [
           32.9,
-          45.0
+          45.7
         ],
         "datei": "b3.mp4",
         "quelle": "Shorts: Andrew Tate & David Sutcliffe",
         "quellzeit_s": [
           34.0,
-          44.08
+          44.67
         ],
         "ausschnitt": "crop=678:1206:972:0",
         "worauf": "'this is why the Andrew Tates of this world have so much power ... so they choose one who pretends he doesn't'",
@@ -86,29 +86,29 @@
       },
       {
         "clipzeit_s": [
-          45.0,
+          45.7,
           50.54
         ],
-        "datei": "b4.mp4 — aus drei Stuecken zusammengesetzt",
+        "datei": "b4.mp4 — aus drei GANZEN Einstellungen zusammengesetzt",
         "quelle": "Shorts: Manosphere",
         "ausschnitt": "crop=513:912:1054:147",
         "stuecke_quellzeit_s": [
           [
-            14.4,
-            15.9
+            14.9,
+            15.933
           ],
           [
-            53.5,
-            55.0
+            53.333,
+            54.833
           ],
           [
-            101.0,
-            102.7
+            101.3,
+            102.867
           ]
         ],
         "worauf": "'but armor is not strength, it's fear hidden behind a mask'",
-        "wer": "Mann mit Sonnenbrille nah · junger Mann in Weiss nah · Mann mit Sonnenbrille, der sich selbst filmt, dann der Glatzkopf mit Sonnenbrille. Der Wortanfang 'mask' faellt auf Blockversatz 3,88 s und damit auf den Glatzkopf (Quellzeit ab 101,75). Am fertigen Bild nachgeprueft.",
-        "warum_zusammengesetzt": "Der Trailer hat an dieser Stelle keine durchgehende Strecke von 4,6 s mit Gesicht in der Bildmitte und ohne Theroux - die laengsten sauberen Strecken im ganzen Trailer sind drei Sekunden (0,0-3,0 und 43,0-46,0), alles andere liegt bei 1,5 s. Darum werden drei Stuecke VORHER zu einer Datei verbunden, hart geschnitten. Der Renderer sieht einen Block, im Bild laufen die Schnitte des Trailers weiter - genau das Vorgehen vom Craig-Short: nicht eine Einstellung, sondern ein Block."
+        "wer": "Mann mit Sonnenbrille nah · junger Mann in Weiss nah · Mann, der sich selbst mit dem Telefon filmt, dann der Glatzkopf mit Sonnenbrille. Der Glatzkopf erscheint bei Clipzeit 49,54 und steht damit 0,12 s vor dem Wort 'mask' (49,66) im Bild.",
+        "warum_ganze_einstellungen": "Erster Versuch mit frei gewaehlten Grenzen (14,40 / 53,50 / 101,00) hatte zwei Fehler, beide erst am fertigen Bild zu sehen: 0,12 s der vorhergehenden Einstellung standen noch am Anfang (zwei Maenner von hinten), und am Ende der zweiten faehrt die Kamera so weit heran, dass nur noch Hals und Kinn im Bild sind - also wieder 'die Person gar nicht im Bild'. Darum sind jetzt die harten Schnitte des Trailers Bild fuer Bild gemessen (Differenz ueber 35 gegen 6 bis 9 im Ruhepegel) und nur GANZE Einstellungen verwendet: 14,900-15,933 · 53,333-54,833 · 101,300-102,867. Dabei kam auch heraus, dass meine alte Grenze 101,00 die ersten 0,30 s mit eingeblendetem Text ('powerbank') mitgenommen haette."
       }
     ],
     "anteil": "24,94 von 67,00 s Clipzeit, also 37 %.",
@@ -116,7 +116,8 @@
     "warum_er_vorher_drin_war": "Ich hatte am VOLLEN Trailerbild ausgesucht (2622x912) und auf Leute geschaut, die am Rand standen. Gezeigt wird aber nur ein Ausschnitt von 513 px Breite. Wer am Rand stand, war weg - und Theroux stand in der Mitte, weil die Kamera IHM folgt. Der Kontaktabzug wird jetzt vom Ausschnitt gemacht.",
     "netflix_zeichen": "Im Vollbildmodus faellt das NETFLIX-Zeichen (x 2105-2275) weit ausserhalb des 513-px-Ausschnitts bei x 1054-1567. Es kann nicht erscheinen.",
     "herkunft_der_dateien": "Beide aus seinem Drive-Ordner 1F3x2S7Vn0XNDT73uJnadQIF1_NoAy2Cd.",
-    "balance": "Erste Fassung: 3,65 / 3,65 / 15,80 / 1,84 s Clipzeit. Sein Befund vom 24.10.: 'Die Tate Szene geht nur ein bisschen zu lang und die darauffolgende Szene ist dann ploetzlich richtig kurz.' Jetzt: 3,65 / 3,65 / 12,10 / 5,54 s. Der Tate-Block endet damit genau am Ende seines Satzes ('one who pretends he doesn't', Clipzeit 44,78), statt 5 s darueber hinaus zu laufen."
+    "balance": "Erste Fassung: 3,65 / 3,65 / 15,80 / 1,84 s Clipzeit. Sein Befund vom 24.10.: 'Die Tate Szene geht nur ein bisschen zu lang und die darauffolgende Szene ist dann ploetzlich richtig kurz.' Jetzt: 3,65 / 3,65 / 12,80 / 4,84 s. Der Tate-Block endet dort, wo 'But armor is not strength' anfaengt (Clipzeit 45,70), statt 3,9 s ueber das Ende seines Satzes hinaus zu laufen.",
+    "regel_schnittgrenzen": "Grenzen eines B-Roll-Stuecks liegen auf den harten Schnitten der Quelle, nicht frei gewaehlt. Sonst steht am Anfang ein Rest der vorigen Einstellung und am Ende faehrt die Kamera aus dem Motiv heraus. Gemessen wird mit Bilddifferenz im Ausschnitt; harte Schnitte liegen bei ueber 35, der Ruhepegel bei 6 bis 9."
   },
   "bild": {
     "tempo": 1.2,
