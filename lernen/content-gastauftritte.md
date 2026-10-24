@@ -652,3 +652,39 @@ in den er faellt, ist nicht leise wegzumischen — er muss stumm. Und: ein
 einzelnes Wort in der Untertiteldatei ist kein Beleg dafuer, dass es gesprochen
 wurde. Im Zweifel die Stelle allein transkribieren, nicht im Zusammenhang —
 im Zusammenhang errät das Modell, was grammatisch passt.
+
+## 24.10.2026 — Die Untertitelzeile sprang beim Schnitt auf den Gast um 124 px. Der Planer hatte es angesagt.
+
+Sein Befund: *„bei ca 0:15 ist noch ein Framing Fehler, wo du auf David
+schaltest. Da ist das Bild marginal verschoben fuer einen Moment. Kannst du
+bitte auf solche Details achten und diese Fehler vermeiden."*
+
+Gefunden: `bildausschnitt.py` setzt die Zeilenhoehe **je Einstellung** aus der
+gemessenen Lippe. Fuer Sutcliffes Reaktionsbild (1,67 s) kam **1143** heraus,
+fuer alles andere **1267** — die Zeile sprang also um 124 px hoch und wieder
+zurueck, das sind 6,5 % der Bildhoehe. Dazu kam ein zweiter, kleinerer Sprung:
+der Planer gab seinen **drei Nahaufnahmen derselben Kamera** die Kaesten 608,
+596 und 608 — beim Weg- und Zurueckschneiden verschiebt sich das Bild dadurch
+um 12 Quellpixel, im Ausgabebild 21 px.
+
+**Das ist ein Rueckfall hinter eine Festlegung, die er am 20.10. schon getroffen
+hat:** *„Zeile bleibt auf einer Hoehe — auch beim Wechsel in die Totale.
+Konstant 0,65. Das Auge hat die Zeile immer am selben Fleck."*
+
+Behoben, zwei Regeln:
+1. **Eine Zeilenhoehe fuer den ganzen Short.** Nach dem Plan wird jede `lippe`
+   auf denselben Wert gesetzt.
+2. **Dieselbe Kamera bekommt denselben Kasten.** Der Planer misst je
+   Einstellung und kommt auf leicht verschiedene Werte; bei derselben Kamera
+   ist der Unterschied ein Fehler, kein Befund. Ein Gast mit eigener Kamera
+   behaelt dagegen seinen eigenen Kasten — an Sutcliffes Reaktionsbild
+   nachgesehen: mit x 680 sitzt sein Gesicht mittig, mit x 608 nicht.
+
+→ und das ist die eigentliche Lehre: **der Planer hat den Fehler selbst
+ausgedruckt.** In seiner Ausgabe stand `Lippe 1143` neben vier Mal `Lippe 1267`,
+und ich habe darueber hinweggelesen. Die Ausgabe eines Werkzeugs ist kein
+Protokoll, sondern ein Befund — **jede Zeile, die von den anderen abweicht,
+gehoert geprueft, bevor gerendert wird.** Drei Renderlaeufe haetten das
+gespart.
+
+→ betrifft: alle Short-Agenten, die `bildausschnitt.py` benutzen.
