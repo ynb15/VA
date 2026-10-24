@@ -589,3 +589,308 @@ verschiedenen Bloecken verschieden weit links stehen, reicht das nicht. Dann
 wird jeder Block **vorher** auf 9:16 beschnitten, mit eigenem Versatz, und der
 Renderer laeuft auf `--broll-modus vollbild` — der skaliert ein schon
 passendes Bild nur noch, ohne weiter zu schneiden.
+
+## 24.10.2026 — Die Musik endet zu abrupt. Zwei Sekunden Ausblende sind zu kurz.
+
+Seine Beobachtung, ausdruecklich als allgemeine Regel zum Weitergeben:
+
+> *„mir ist aufgefallen, dass du generell beim Ende des Shorts die Musik zu
+> schnell oder zu abrupt endest. Das ist eine generelle Beobachtung, das kannst
+> du gerne an die anderen Agenten weitergeben."*
+
+Nachgemessen am Hypermaskulinitaets-Short, Bett isoliert (Mischung mit Musik
+minus Mischung ohne):
+
+| Sekunde | Bettpegel |
+|---|---|
+| 53,5 | −35,6 dB |
+| 54,0 | −36,2 dB |
+| 54,5 | −39,6 dB |
+| 55,0 | −45,4 dB |
+| 55,5 | −54,1 dB |
+
+Bei 54,0 steht das Bett also noch auf vollem Pegel und ist 1,9 s spaeter weg.
+Nach 56 Sekunden Lauf hoert sich das an, als wuerde es abgeschaltet, nicht als
+wuerde es enden. **Dazu kommt der Gegensatz zum Outro, das direkt danach mit
+−4 dB einsetzt** — gemessen am Uebergang. Der Absturz faellt dadurch doppelt
+auf.
+
+Behoben: `musik_drunter.py` hatte die Ausblende mit `d=2.0` fest im Code.
+Sie ist jetzt `--blende-aus` und **auf 4 s voreingestellt**.
+
+→ betrifft: **alle Short-Agenten.** Zwei Sekunden Ausblende sind fuer ein Bett,
+das eine Minute lang laeuft, zu kurz. Und die Ausblende gehoert nicht in den
+Code, sondern an die Oberflaeche — genauso wie die Einblende, die am 22.10.
+aus demselben Grund herausgezogen wurde.
+
+## 24.10.2026 — Davids „Yeah" stand 20 dB ueber dem Satz, in den es hineinfiel.
+
+Sein Befund: *„frage ich mich, ob du Davids Ja vor oder nach Vulnerability,
+kannst du das stumm schalten? Das ist irgendwie stoerend. Aber nur dieses eine
+Ja."*
+
+Gemessen, 10-ms-Aufloesung: sein eigener Satz laeuft bis Clipzeit 19,03 bei
+−24 bis −30 dB, dann eine Luecke, dann von **19,09 bis 19,33 ein Einwurf mit
+Spitze −2,1 dB**. Das sind rund **20 dB ueber** dem Satz, in den er faellt —
+Sutcliffe sitzt an seinem eigenen Mikrofon. Deshalb faellt es auf, obwohl es
+nur eine Viertelsekunde dauert.
+
+**Und dabei ist eine aeltere Annahme von mir gekippt.** Ich hatte dieses Stueck
+am 22.10. fuer SEIN Wort „like" gehalten, weil die abgenommene Untertiteldatei
+vom 20.10. dort „LIKE VULNERABILITY" schreibt, und hatte das Wort entsprechend
+im Bild gelassen. In Isolation transkribiert ergibt das Stueck woertlich
+**„Yeah."** — gesprochen wird dort kein „like". Die Einblendung „LIKE" stand
+also ueber Davids Einwurf.
+
+Behoben: der Einwurf ist stumm (19,06–19,36), und „like" wandert in die
+Einblendung mit „vulnerability" — **„LIKE VULNERABILITY"** steht jetzt ueber
+dem gesprochenen Wort. Damit steht keine Einblendung ueber einer stummen
+Stelle, und der abgenommene Wortlaut bleibt.
+
+→ betrifft: jeden Short mit Gegenueber. Ein Einwurf, der ueber dem Satz liegt,
+in den er faellt, ist nicht leise wegzumischen — er muss stumm. Und: ein
+einzelnes Wort in der Untertiteldatei ist kein Beleg dafuer, dass es gesprochen
+wurde. Im Zweifel die Stelle allein transkribieren, nicht im Zusammenhang —
+im Zusammenhang errät das Modell, was grammatisch passt.
+
+## 24.10.2026 — Die Untertitelzeile sprang beim Schnitt auf den Gast um 124 px. Der Planer hatte es angesagt.
+
+Sein Befund: *„bei ca 0:15 ist noch ein Framing Fehler, wo du auf David
+schaltest. Da ist das Bild marginal verschoben fuer einen Moment. Kannst du
+bitte auf solche Details achten und diese Fehler vermeiden."*
+
+Gefunden: `bildausschnitt.py` setzt die Zeilenhoehe **je Einstellung** aus der
+gemessenen Lippe. Fuer Sutcliffes Reaktionsbild (1,67 s) kam **1143** heraus,
+fuer alles andere **1267** — die Zeile sprang also um 124 px hoch und wieder
+zurueck, das sind 6,5 % der Bildhoehe. Dazu kam ein zweiter, kleinerer Sprung:
+der Planer gab seinen **drei Nahaufnahmen derselben Kamera** die Kaesten 608,
+596 und 608 — beim Weg- und Zurueckschneiden verschiebt sich das Bild dadurch
+um 12 Quellpixel, im Ausgabebild 21 px.
+
+**Das ist ein Rueckfall hinter eine Festlegung, die er am 20.10. schon getroffen
+hat:** *„Zeile bleibt auf einer Hoehe — auch beim Wechsel in die Totale.
+Konstant 0,65. Das Auge hat die Zeile immer am selben Fleck."*
+
+Behoben, zwei Regeln:
+1. **Eine Zeilenhoehe fuer den ganzen Short.** Nach dem Plan wird jede `lippe`
+   auf denselben Wert gesetzt.
+2. **Dieselbe Kamera bekommt denselben Kasten.** Der Planer misst je
+   Einstellung und kommt auf leicht verschiedene Werte; bei derselben Kamera
+   ist der Unterschied ein Fehler, kein Befund. Ein Gast mit eigener Kamera
+   behaelt dagegen seinen eigenen Kasten — an Sutcliffes Reaktionsbild
+   nachgesehen: mit x 680 sitzt sein Gesicht mittig, mit x 608 nicht.
+
+→ und das ist die eigentliche Lehre: **der Planer hat den Fehler selbst
+ausgedruckt.** In seiner Ausgabe stand `Lippe 1143` neben vier Mal `Lippe 1267`,
+und ich habe darueber hinweggelesen. Die Ausgabe eines Werkzeugs ist kein
+Protokoll, sondern ein Befund — **jede Zeile, die von den anderen abweicht,
+gehoert geprueft, bevor gerendert wird.** Drei Renderlaeufe haetten das
+gespart.
+
+→ betrifft: alle Short-Agenten, die `bildausschnitt.py` benutzen.
+
+## 24.10.2026 — Die Hautfarbenmessung findet dunkle Haut nicht. Jede Messung wurde nachgesehen.
+
+Fuer die Mitte-Pruefung der B-Roll (sein Befund: *„Myron, Tate und HS ticky
+tocky sind alle am Rand und der wird auf YT noch teilweise rausgeschnitten"*)
+habe ich `video/gesicht_mitte.py` geschrieben: hautfarbene Pixel im oberen
+Bildteil, Spaltenverteilung ueber acht Bilder, Gipfel statt Schwerpunkt.
+
+**Bei vier von sechs Stuecken hat es gestimmt, bei zwei nicht — und das eine
+davon war Myron Gaines.** Die uebliche Hautmaske (`r>95, g>40, b>20, r>g, g>b`)
+ist auf helle Haut geeicht. Bei ihm hat sie stattdessen einen orangefarbenen
+Hintergrund gegriffen und den Ausschnitt um **1093 Pixel** danebengelegt — ins
+Leere. Beim Mann mit der Sonnenbrille lag sie 62 px daneben.
+
+| Stueck | gemessen | nach Augenschein |
+|---|---|---|
+| HS Tikky Tokky | x 890 | **890** ✓ |
+| Hoodie | x 1016 | **1016** ✓ |
+| Tate | x 738 | **738** ✓ |
+| Sonnenbrille | x 1095 | **956** ✗ |
+| **Myron Gaines** | **x 387** | **1480** ✗ |
+| Maske | x 980 | **980** ✓ |
+
+→ betrifft: alle, die Motive automatisch mittig setzen. **Eine Hautmaske ist
+ein Vorschlag, kein Befund** — und sie ist bei dunkler Haut unzuverlaessig, was
+sie unbrauchbar macht, wenn man sie ungeprueft laufen laesst. Der Kontaktabzug
+mit eingezeichneter Mittellinie kostet eine Minute und entscheidet. Das steht
+jetzt auch im Kopf des Werkzeugs.
+
+→ und der Grund, warum das ueberhaupt zaehlt: **in 9:16 bleiben von einem
+Querformat nur rund ein Fuenftel der Breite uebrig.** Wer darin am Rand steht,
+wird von den Bedienelementen von YouTube Shorts teilweise verdeckt. Mittig ist
+hier keine Geschmacksfrage.
+
+## 24.10.2026 — Baender abgelehnt. In 9:16 ist Zoom 1,0 das Ende, und dabei bleibt es.
+
+Auf seinen Wunsch *„du musst nochmal ein bisschen rauszoomen"* hatte ich einen
+3:4-Ausschnitt mit unscharfer Fuellung gebaut, weil der randlose 9:16-Ausschnitt
+bei voller Hoehe rechnerisch am Anschlag ist. Seine Antwort:
+
+> *„Nein, was soll der Scheiss?! Ich will keine Baender. Bitte rueckgaengig
+> machen. Dann lassen wir's lieber so wie bei der vorherigen Version."*
+
+**Damit ist die Frage entschieden, nicht offen:** geht weiter nur mit Baendern,
+bleibt es eng. Nicht noch einmal vorschlagen.
+
+→ betrifft: alle Short-Agenten. Die Rechnung dahinter gilt weiter und erspart
+die Runde: aus 1920x1080 ist der breiteste **randlose** 9:16-Ausschnitt 608 px
+breit, also die volle Hoehe; `bildausschnitt.py` begrenzt den Zoom darum hart
+auf 1,0. Wer nach „ein bisschen rauszoomen" gefragt wird und schon auf 1,0
+steht, hat nichts mehr zu geben — **das gehoert gesagt, bevor eine Fassung mit
+Baendern gebaut wird**, nicht danach.
+
+→ und was dabei stehenblieb: die konstante Zeilenhoehe und der einheitliche
+Kasten je Kamera haben den Schnitt auf den Gast sichtbar aufgeraeumt
+(*„der Uebergang zu David ist jetzt besser"*). Das war die Korrektur, die
+gewirkt hat — nicht der Zoom.
+
+## 24.10.2026 — Das „Zittern" beim Schnitt war EIN Bild mit dem falschen Ausschnitt. Vier Runden gebraucht.
+
+Sein Befund, dreimal in Folge: *„Das Bild shattered/vibriert quasi bei dem
+Switch auf David"* · *„bei ca 0:15 ist noch ein Framing Fehler"* · *„das Bild
+zittert immer noch so, wenn du ueberspringst. Also wo ist das Problem? Das kann
+doch nicht so schwer sein."*
+
+**Er hatte recht, es war nicht schwer — es war ein Bild.** Gemessen an der
+Bild-zu-Bild-Differenz im fertigen Short standen am Schnitt **zwei** grosse
+Spruenge statt einem:
+
+| | Schnitt auf David | Schnitt zurueck |
+|---|---|---|
+| vorher | 34,6 **und 26,9** | 31,2 **und 26,4** |
+| behoben | 29,5 | 28,0 |
+
+Zwei Spruenge heissen: dazwischen steht ein Bild, das zu keiner der beiden
+Einstellungen passt. Im Kontaktabzug der Einzelbilder war es dann zu sehen —
+Davids **erstes** Bild stand 128 px weiter links als sein zweites.
+
+**Ursache:** `bildausschnitt.py` schaetzt die Einstellungsgrenzen und meldete
+19,03 s. Der Kamerawechsel liegt bei **19,0000 s**. Der Renderer schneidet die
+Einstellungen mit `trim` nach Zeitstempel, und `trim=0:19.03` nimmt alles
+*kleiner als* 19,03 — also auch das Bild bei 19,0000, das schon zur neuen
+Einstellung gehoert. Es bekam dadurch den Kasten der alten. Dasselbe am anderen
+Ende. Betroffen waren drei Grenzen: 19,03 statt 19,0000 · 21,03 statt 21,0000 ·
+43,57 statt 43,3667 (sechs Bilder, lag aber unter der B-Roll).
+
+**Warum ich es dreimal nicht gefunden habe, und das ist der eigentliche
+Befund:** ich habe am fertigen Bild geprueft und die Plangrenzen in
+**Ausgabezeit** gegengerechnet. Der Ausschnitt wird aber in **Clipzeit** gesetzt,
+vor der Beschleunigung, und `trim` nimmt alles kleiner als die Grenze. Ich habe
+in der falschen Zeitrechnung geprueft, daraus „kein Kastensprung" geschlossen
+und dreimal „keine technische Ursache gefunden" gemeldet — waehrend die Ursache
+jedes Mal dastand.
+
+→ betrifft: alle, die `bildausschnitt.py` benutzen. **Die Einstellungsgrenzen
+aus dem Plan sind Schaetzungen und gehoeren durch die Bild-fuer-Bild-gemessenen
+ersetzt, bevor gerendert wird.** Und die Probe darauf ist billig: am fertigen
+Short die Bild-zu-Bild-Differenz messen — **an einem sauberen Schnitt steht
+genau EIN grosser Sprung.** Stehen zwei, sitzt dazwischen ein Bild, das nicht
+dahin gehoert.
+
+---
+
+## 24.10. — „die Shorts, die ich selbst geschnitten habe, hatten eine bessere Auflösung"
+
+Sein Befund: *„mir ist aufgefallen, die Shorts, die ich selbst geschnitten
+habe, irgendwie hatten die eine bessere Auflösung als die du geschnitten
+hast. Woran liegt das? Und kannst du die Auflösung bitte genauso
+hochhalten?"*
+
+**Er hat recht, und es liegt nicht am Bildinhalt.** Gemessen an vier seiner
+eigenen Exporte im Drive (`David Sutcliffe Patriarchy/Hollywood/about Andrew
+Tate/Gilmore Girls & Friends.mov`):
+
+| | seine Shorts | meine bis 24.10. |
+|---|---|---|
+| Bildgröße | **2160×3840** | 1080×1920 |
+| Codec | HEVC | H.264 |
+| Datenrate | **19,6–20,2 Mbit/s** | 4,1–5,7 Mbit/s |
+
+**Echtes Bilddetail haben seine aber nicht mehr als meine.** Probe: ein Bild
+auf eine kleinere Breite herunterrechnen und wieder hochrechnen — was dabei
+verloren geht, war vorher echtes Detail. Im Gesichtsbereich, ohne Schrift:
+
+| herunter auf | sein 2160er Bild | mein 1080er Bild |
+|---|---|---|
+| 1080 px | 0,32–0,58 RMS | — |
+| ~600 px | 0,42–0,86 RMS | 0,54–0,76 RMS (bei 540) |
+
+Bei 1080 px Breite verliert seine 4K-Datei praktisch nichts — es war also
+nie Detail darüber. **Seine 4K-Shorts sind genauso hochgerechnet wie meine;
+die Quelle ist beide Male derselbe 1080p-Master im Drive** (18,6 GB,
+1920×1080 — ein 9:16-Fenster daraus hat 608 echte Spalten). Was seine
+Dateien besser machen, sind drei andere Dinge:
+
+1. **Schrift, Logo und Outro werden vierfach so fein gezeichnet.** Gemessen
+   an derselben Untertitelzeile: die Kante hat bei 2160 nativ einen
+   Gradienten von 255 (harte Kante), bei hochgerechnetem 1080 nur 148
+   (weiche Kante). Das ist der Teil, den das Auge als „schärfer" liest.
+2. **Ein 4K-Upload wird bei YouTube anders behandelt** als ein
+   1080p-Upload — andere Codec- und Datenratenstufe.
+3. **20 Mbit/s statt 4–6 Mbit/s** heißt weniger Kompressionsschaden, bevor
+   YouTube überhaupt anfängt.
+
+**Geändert:** `shorts-render.py` hat jetzt `--ausgabe` mit **Vorgabe 2160**
+(= 2160×3840). Der Entwurfsraster der Untertitel bleibt dabei auf 1080×1920
+(`AW/AH`): libass rechnet von `PlayRes` auf die Bildgröße hoch und zeichnet
+die Schrift vektoriell, **darum sitzt jede einmal abgenommene Lippenhöhe
+weiter genau da, wo sie gemessen wurde** — nachgeprüft, die hellen
+Schriftzeilen liegen in beiden Größen bei 554–1683. Alle Werte in
+Ausgabepixeln (Logobreite, B-Roll-Kante) wachsen mit.
+
+`outro_anhaengen.py` **liest die Bildgröße jetzt am Hauptteil** statt sie
+fest auf 1080×1920 zu setzen — sonst hätte dieser letzte Schritt den
+fertigen 4K-Short wieder auf ein Viertel der Pixel gerechnet. Und er läuft
+dort jetzt auf `-preset medium` statt `veryfast`: dieser Schritt kodiert den
+ganzen Short ein zweites Mal, und `veryfast` hat dabei mehr weggeworfen als
+nötig.
+
+**Kosten:** Rendern dauert etwa dreimal so lang (6 s Probe: 13 s auf 1080,
+41 s auf 2160), die Datei wird etwa dreieinhalbmal so groß.
+
+→ betrifft: alle Short-Agenten. **Ab sofort 2160×3840 ausgeben** — und
+wenn jemand eine Kette hat, die die Bildgröße irgendwo fest hinschreibt,
+gehört sie gemessen, nicht gesetzt. Ehrlich dazugesagt: mehr echtes
+Bilddetail wird es davon nicht, solange der Master 1080p ist. **Läge die
+Folge als 4K-Datei im Drive, wäre der Gewinn ein echter** — ein 9:16-Fenster
+aus 3840×2160 hat 1216 echte Spalten statt 608.
+
+---
+
+## 24.10. — eine Einblendung, die drei Bilder lang aufblitzt
+
+Beim Schneiden der Scheidungs-Stelle stand im Scheidungs-Clip ein **`YEAH`
+0,12 Sekunden** im Bild — bei Tempo 1,2 also drei Bilder. Es ist ein
+Zwischenruf von ihm, eingeklemmt zwischen zwei Sätzen von Sutcliffe: der
+Satz davor endet bei 28,31, das `Yeah.` läuft 28,47–28,59, der nächste Satz
+setzt bei 28,59 ein.
+
+**Warum die bestehende Regel nicht greift:** ein einzelnes Wort wandert zum
+Nachbarn — aber bewusst **nur über eine Atempause hinweg**, nicht über ein
+Satzende. `Yeah.` IST ein ganzer Satz, bleibt also allein stehen und erbt
+die Länge des gesprochenen Wortes. Richtig so; falsch war nur, was dann
+daraus wird.
+
+**Zwei Regeln neu in `shorts-render.py`:**
+
+1. `MIN_STAND = 0,6 s` (Clipzeit, bei Tempo 1,2 also 0,5 s im Bild). Eine
+   kürzere Einblendung wird **in die Lücke bis zur nächsten hinein
+   verlängert** — nie über sie hinaus, es wird also nichts später, nur
+   länger.
+2. `MIN_HART = 0,25 s`. Gibt die Lücke nichts her und besteht die
+   Einblendung aus einem **einzelnen** Wort, wird sie **weggelassen** und die
+   vorhergehende bis zum nächsten Satz gezogen, damit kein Loch entsteht.
+   **Der Ton bleibt unverändert** — weggelassen wird nur die Schrift.
+
+Die Einschränkung auf ein einzelnes Wort ist der Punkt: ein schneller
+Zweier mitten im Satz ist genauso kurz, trägt aber Text. Im Wut-Clip steht
+`BE AN` 0,22 s im Bild, in *„anger can be an appropriate response"* — das
+darf nicht fehlen. Eine reine Dauerregel hätte es weggeworfen.
+
+→ betrifft: alle Short-Agenten. Der Renderer meldet jede weggelassene
+Einblendung in der Ausgabe (`Einblendung weggelassen: 'Yeah.' stand nur
+0,12 s`) — **das gehört in die Abnahme**, denn an der Stelle fehlt Schrift
+zu hörbarem Ton. Steht da ein Wort, das Inhalt trägt, ist die Stelle von
+Hand zu lösen und nicht über die Regel.

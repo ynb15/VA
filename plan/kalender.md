@@ -69,11 +69,11 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Fr 23.10. | Short | **Sutcliffe · Hypermasculinity** (Gastauftritte, 2. Fassung) | **bei ihm** — vier Korrekturen umgesetzt; Musikfrage offen, siehe unten |
 | Sa 24.10. | Short | **Sutcliffe · Tate** (Cinematic, mit 17 Einspielern) | **bei ihm** — 22.10. abends geliefert, Nutzung der Szenen seine Entscheidung |
 | So 25.10. | **PODCAST** | Scott Aaronson | **Paket bei ihm** (T−2 am 23.10. erfüllt) — offen: drei Links von ihm |
-| Mo 26.10. | Short | Sutcliffe 01 · „Therapeut" | gebaut, nicht abgenommen |
-| Di 27.10. | Short | Sutcliffe 04 · „Vulnerability is not weakness" | gebaut, nicht abgenommen |
-| Mi 28.10. | Short | — | offen |
-| Do 29.10. | Short | — | offen |
-| Fr 30.10. | Short | — | offen |
+| Mo 26.10. | Clip | **Aaronson · „How safe is AI"** (YouTube-Manager: Schnitt, 13 Titel, Beschreibung, Tags) | gebaut, nicht abgenommen |
+| Di 27.10. | Clip | **zwei neue Clips** (Gastauftritte, am 24.10. mit ihm live gebaut) | in Arbeit **mit ihm** |
+| Mi 28.10. | Short | Sutcliffe 01 · „Therapeut" | gebaut, nicht abgenommen |
+| Do 29.10. | Short | Sutcliffe 04 · „Vulnerability is not weakness" | gebaut, nicht abgenommen |
+| Fr 30.10. | Short | **Craig Makhosi** — Exportfassung 1,03 GB, billig zu holen | offen |
 | Sa 31.10. | **PODCAST** | Kyle Kingsbury | **angehalten bis Mo 26.10.** |
 
 ### November 2026

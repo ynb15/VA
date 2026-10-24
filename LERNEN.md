@@ -45,6 +45,60 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 17 — 24.10.2026, 16:05 Kapstadt · 4K sauber begründet, und ein Zirkelschluss über seine Stimme
+
+- **DIE SHORTS GEHEN AB JETZT AUF 2160×3840 — UND DIE BEGRÜNDUNG IST DAS
+  EIGENTLICHE STÜCK.** Sein Befund: seine selbst geschnittenen Shorts hatten die
+  bessere Auflösung. **Stimmt**: seine vier Exporte im Drive liegen auf
+  **2160×3840, HEVC, rund 20 Mbit/s**, unsere kamen mit **1080×1920 bei
+  4–6 Mbit/s** heraus.
+  **Was 4K NICHT bringt, und das ist nachgemessen:** echtes Bilddetail. Rechnet
+  man ein Bild auf 1080 px Breite herunter und wieder hoch, geht praktisch
+  nichts verloren (**0,32–0,58 RMS**) — es war nie Detail darüber. Beide Male
+  ist dieselbe 1080p-Quelle der Ursprung, ein 9:16-Fenster daraus hat
+  **608 echte Spalten.**
+  **Was 4K bringt, dreifach:** Schrift, Logo und Outro werden **vierfach so fein
+  gezeichnet** (Kantengradient an derselben Untertitelzeile **255 statt 148**) ·
+  YouTube behandelt einen 4K-Upload anders · **20 statt 5 Mbit/s** heißt weniger
+  Kompressionsschaden vor dem Hochladen.
+  **Das ist die Form, in der ein Befund weitergegeben wird:** erst, was die
+  Maßnahme nicht kann, dann, was sie kann. Eine Auflösungserhöhung, die als
+  „mehr Detail" verkauft wird, wäre eine Behauptung; so ist sie eine Messung.
+  → betrifft: alle, die rendern
+- **EIN TEXT VON UNS IST NIE EIN BELEG FÜR SEINEN STIL — AUCH NICHT, NACHDEM ER
+  IHN VERÖFFENTLICHT HAT.** Der YouTube-Manager hatte den **Gedankenstrich** als
+  seine Gewohnheit notiert — abgelesen aus einer Antwort, **die der Agent selbst
+  entworfen hatte.** Seine eigenen Antworten tragen den **normalen
+  Bindestrich.** Wörtlich aus der Korrektur:
+  > *„Zirkelschluss: ein Text von mir ist nie ein Beleg für seinen Stil, auch
+  > nicht nachdem er ihn veröffentlicht hat."*
+
+  **Das ist die gefährlichste Form von Stilarbeit**, weil sie sich selbst
+  bestätigt: wir entwerfen, er übernimmt, wir lesen es als seinen Stil ab und
+  entwerfen mehr davon. **Ein Stilmerkmal zählt nur aus Text, den er ohne uns
+  geschrieben hat.** Und praktisch: **der lange Gedankenstrich ist inzwischen ein
+  KI-Erkennungszeichen** — er gehört aus allem heraus, was unter seinem Namen
+  erscheint.
+  **Dazu eine Beobachtung zur privaten Form:** beim Tippen **trennt er in
+  einzelne Nachrichten**, statt einen Block zu schicken.
+  → betrifft: head-of-content, youtube-manager, alle, die in seinem Namen
+  entwerfen
+- **Der Versatz wandert INNERHALB einer Folge um fast 200 Sekunden.** Aus dem
+  alten Anker hätte sich **Master 302 statt 499** ergeben. Die bisherige Regel
+  („Versatz in der Nähe der Stelle messen, nie über eine Formel") ist damit
+  nicht nur gut begründet, sondern bezifferbar: **wer den Anker einmal setzt und
+  weiterrechnet, liegt nach drei Minuten Film um drei Minuten daneben.**
+  → betrifft: alle, die aus einem Master schneiden
+- **Der Ausschnittplaner liegt an jeder Einstellungsgrenze um 1 bis 6 Bilder
+  daneben.** Gemessen beim Ablegen der Ausschnittpläne. Ein Bild am Schnitt trug
+  dadurch den Ausschnitt der **falschen** Einstellung — bei 50 fps sind 6 Bilder
+  0,12 s, und genau dort sitzt der sichtbare Fehler. **Wer einen Plan an
+  Einstellungsgrenzen baut, prüft das erste und letzte Bild jedes Blocks
+  einzeln**, nicht den Block.
+  → betrifft: content-schlicht (Werkzeug), alle, die Ausschnittpläne benutzen
+
+---
+
 ## Ausgabe 16 — 24.10.2026, 06:40 Kapstadt · kleine Exportfassungen gibt es, und der Cutter hat einen Ordner
 
 - **DER RÜCKKATALOG IST NICHT GANZ ZU: ES GIBT KLEINE EXPORTFASSUNGEN.** Shorts I
