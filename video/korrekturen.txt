@@ -62,3 +62,15 @@ makes your life meaningful -> makes your life meaningful?
 # Griff dafuer: er verdraengt das "?" des Originals, und _anzeige() nimmt
 # den Punkt danach wieder weg — im Bild steht "OTHER PEOPLE".
 other people -> other people.
+# 24.10., Schulsystem-Stelle: Craigs Nachname wird je nach Lauf anders
+# verhoert — "McCosey" (Whisper small), "Makuzi" und "Makosi" (YouTubes
+# automatische Untertitel derselben Folge). Richtig ist Makhosi; er ist Gast
+# des Kanals, der Name gehoert richtig ins Bild.
+craig mccosey -> Craig Makhosi
+mccosey -> Makhosi
+makuzi -> Makhosi
+makosi -> Makhosi
+# Dieselbe Stelle: "in training" wird zu "and training". Nur als Paar — ein
+# allein stehendes "and" ist natuerlich richtig.
+teachers and training -> teachers in training
+psychologists and training -> psychologists in training
