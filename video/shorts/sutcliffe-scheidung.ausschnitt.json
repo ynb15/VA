@@ -1,0 +1,120 @@
+{
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/scheidung-clip.mp4",
+ "groesse": [
+  1920,
+  1080
+ ],
+ "bezugsbewegung": 3.069,
+ "einstellungen": [
+  {
+   "layout": "einzel",
+   "kasten": "705:0:608:1080",
+   "lippe": 1267,
+   "start": 0.0,
+   "ende": 4.7,
+   "tot": false,
+   "bewegung_x": 0.519,
+   "mitte": 0.7,
+   "masse": 3.0
+  },
+  {
+   "layout": "einzel",
+   "kasten": "668:0:608:1080",
+   "lippe": 1267,
+   "start": 4.7,
+   "ende": 6.2,
+   "tot": false,
+   "bewegung_x": 0.481,
+   "mitte": 0.76,
+   "masse": 4.72
+  },
+  {
+   "layout": "einzel",
+   "kasten": "705:0:608:1080",
+   "lippe": 1267,
+   "start": 6.2,
+   "ende": 19.7,
+   "tot": false,
+   "bewegung_x": 0.525,
+   "mitte": 0.67,
+   "masse": 2.75
+  },
+  {
+   "layout": "einzel",
+   "kasten": "668:0:608:1080",
+   "lippe": 1267,
+   "start": 19.7,
+   "ende": 39.333333333333336,
+   "tot": false,
+   "bewegung_x": 0.512,
+   "mitte": 0.77,
+   "masse": 4.44
+  },
+  {
+   "layout": "einzel",
+   "kasten": "1370:0:493:875",
+   "lippe": 1267,
+   "start": 39.333333333333336,
+   "ende": 46.2,
+   "tot": false,
+   "bewegung_x": 0.163,
+   "mitte": 0.24,
+   "masse": 2.63
+  },
+  {
+   "layout": "einzel",
+   "kasten": "668:0:608:1080",
+   "lippe": 1267,
+   "start": 46.2,
+   "ende": 75.7,
+   "tot": false,
+   "bewegung_x": 0.519,
+   "mitte": 0.74,
+   "masse": 3.44
+  },
+  {
+   "layout": "einzel",
+   "kasten": "705:0:608:1080",
+   "lippe": 1267,
+   "start": 75.7,
+   "ende": 77.7,
+   "tot": false,
+   "bewegung_x": 0.562,
+   "mitte": 0.57,
+   "masse": 2.57
+  },
+  {
+   "layout": "einzel",
+   "kasten": "668:0:608:1080",
+   "lippe": 1267,
+   "start": 77.7,
+   "ende": 103.5,
+   "tot": false,
+   "bewegung_x": 0.5,
+   "mitte": 0.73,
+   "masse": 3.14
+  },
+  {
+   "layout": "einzel",
+   "kasten": "1370:0:493:875",
+   "lippe": 1267,
+   "start": 103.5,
+   "ende": 110.7,
+   "tot": false,
+   "bewegung_x": 0.825,
+   "mitte": 0.31,
+   "masse": 1.82
+  },
+  {
+   "layout": "einzel",
+   "kasten": "668:0:608:1080",
+   "lippe": 1267,
+   "start": 110.7,
+   "ende": 136.8,
+   "tot": false,
+   "bewegung_x": 0.519,
+   "mitte": 0.73,
+   "masse": 3.45
+  }
+ ]
+}
