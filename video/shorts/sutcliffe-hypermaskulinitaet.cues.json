@@ -294,19 +294,19 @@
   "grund": "satz"
  },
  {
-  "start": 19.56,
-  "end": 19.86,
+  "start": 19.36,
+  "end": 20.0,
   "text": "like vulnerability.",
   "woerter": [
    {
     "t": "like",
-    "start": 19.56,
-    "end": 19.65
+    "start": 19.36,
+    "end": 19.56
    },
    {
     "t": "vulnerability.",
-    "start": 19.65,
-    "end": 19.86
+    "start": 19.56,
+    "end": 20.0
    }
   ],
   "grund": "satz"
