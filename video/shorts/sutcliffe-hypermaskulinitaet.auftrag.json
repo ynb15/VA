@@ -72,39 +72,51 @@
       {
         "clipzeit_s": [
           32.9,
-          48.7
+          45.0
         ],
         "datei": "b3.mp4",
         "quelle": "Shorts: Andrew Tate & David Sutcliffe",
         "quellzeit_s": [
           34.0,
-          47.17
+          44.08
         ],
         "ausschnitt": "crop=678:1206:972:0",
-        "worauf": "'this is why the Andrew Tates of this world have so much power ... so they choose one who pretends he doesn't. But armor is not strength.'",
+        "worauf": "'this is why the Andrew Tates of this world have so much power ... so they choose one who pretends he doesn't'",
         "wer": "Tate, eine durchgehende Einstellung, kein Schnitt, kein Text. Davids Zustimmung fuer dieses Material liegt vor (21.10.)."
       },
       {
         "clipzeit_s": [
-          48.7,
+          45.0,
           50.54
         ],
-        "datei": "b4.mp4",
+        "datei": "b4.mp4 — aus drei Stuecken zusammengesetzt",
         "quelle": "Shorts: Manosphere",
-        "quellzeit_s": [
-          101.0,
-          102.53
-        ],
         "ausschnitt": "crop=513:912:1054:147",
-        "worauf": "'it's fear hidden behind a mask'",
-        "wer": "Mann mit Sonnenbrille, der sich selbst mit dem Telefon filmt, danach der Glatzkopf mit Sonnenbrille. Der Blockanfang ist so gelegt, dass das Bild 0,06 s vor dem Wort 'mask' steht. Am fertigen Bild nachgeprueft."
+        "stuecke_quellzeit_s": [
+          [
+            14.4,
+            15.9
+          ],
+          [
+            53.5,
+            55.0
+          ],
+          [
+            101.0,
+            102.7
+          ]
+        ],
+        "worauf": "'but armor is not strength, it's fear hidden behind a mask'",
+        "wer": "Mann mit Sonnenbrille nah · junger Mann in Weiss nah · Mann mit Sonnenbrille, der sich selbst filmt, dann der Glatzkopf mit Sonnenbrille. Der Wortanfang 'mask' faellt auf Blockversatz 3,88 s und damit auf den Glatzkopf (Quellzeit ab 101,75). Am fertigen Bild nachgeprueft.",
+        "warum_zusammengesetzt": "Der Trailer hat an dieser Stelle keine durchgehende Strecke von 4,6 s mit Gesicht in der Bildmitte und ohne Theroux - die laengsten sauberen Strecken im ganzen Trailer sind drei Sekunden (0,0-3,0 und 43,0-46,0), alles andere liegt bei 1,5 s. Darum werden drei Stuecke VORHER zu einer Datei verbunden, hart geschnitten. Der Renderer sieht einen Block, im Bild laufen die Schnitte des Trailers weiter - genau das Vorgehen vom Craig-Short: nicht eine Einstellung, sondern ein Block."
       }
     ],
     "anteil": "24,94 von 67,00 s Clipzeit, also 37 %.",
     "warum_nicht_theroux": "Louis Theroux ist der Dokumentarfilmer, nicht die Manosphere - sein Befund vom 23.10. Die Manosphere-Figuren der Doku sind Harrison Sullivan, Myron Gaines, Sneako, Justin Waller und Ed Matthews. Theroux ist im Trailer bei den Sekunden 23, 29-31, 39-40, 49, 58, 68-72, 75-76, 82-84, 86-90, 95-97, 99,9 und 102,5-103,9 im Ausschnitt zu sehen; alle diese Stellen sind gemieden.",
     "warum_er_vorher_drin_war": "Ich hatte am VOLLEN Trailerbild ausgesucht (2622x912) und auf Leute geschaut, die am Rand standen. Gezeigt wird aber nur ein Ausschnitt von 513 px Breite. Wer am Rand stand, war weg - und Theroux stand in der Mitte, weil die Kamera IHM folgt. Der Kontaktabzug wird jetzt vom Ausschnitt gemacht.",
     "netflix_zeichen": "Im Vollbildmodus faellt das NETFLIX-Zeichen (x 2105-2275) weit ausserhalb des 513-px-Ausschnitts bei x 1054-1567. Es kann nicht erscheinen.",
-    "herkunft_der_dateien": "Beide aus seinem Drive-Ordner 1F3x2S7Vn0XNDT73uJnadQIF1_NoAy2Cd."
+    "herkunft_der_dateien": "Beide aus seinem Drive-Ordner 1F3x2S7Vn0XNDT73uJnadQIF1_NoAy2Cd.",
+    "balance": "Erste Fassung: 3,65 / 3,65 / 15,80 / 1,84 s Clipzeit. Sein Befund vom 24.10.: 'Die Tate Szene geht nur ein bisschen zu lang und die darauffolgende Szene ist dann ploetzlich richtig kurz.' Jetzt: 3,65 / 3,65 / 12,10 / 5,54 s. Der Tate-Block endet damit genau am Ende seines Satzes ('one who pretends he doesn't', Clipzeit 44,78), statt 5 s darueber hinaus zu laufen."
   },
   "bild": {
     "tempo": 1.2,
