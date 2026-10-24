@@ -688,3 +688,36 @@ gehoert geprueft, bevor gerendert wird.** Drei Renderlaeufe haetten das
 gespart.
 
 → betrifft: alle Short-Agenten, die `bildausschnitt.py` benutzen.
+
+## 24.10.2026 — Die Hautfarbenmessung findet dunkle Haut nicht. Jede Messung wurde nachgesehen.
+
+Fuer die Mitte-Pruefung der B-Roll (sein Befund: *„Myron, Tate und HS ticky
+tocky sind alle am Rand und der wird auf YT noch teilweise rausgeschnitten"*)
+habe ich `video/gesicht_mitte.py` geschrieben: hautfarbene Pixel im oberen
+Bildteil, Spaltenverteilung ueber acht Bilder, Gipfel statt Schwerpunkt.
+
+**Bei vier von sechs Stuecken hat es gestimmt, bei zwei nicht — und das eine
+davon war Myron Gaines.** Die uebliche Hautmaske (`r>95, g>40, b>20, r>g, g>b`)
+ist auf helle Haut geeicht. Bei ihm hat sie stattdessen einen orangefarbenen
+Hintergrund gegriffen und den Ausschnitt um **1093 Pixel** danebengelegt — ins
+Leere. Beim Mann mit der Sonnenbrille lag sie 62 px daneben.
+
+| Stueck | gemessen | nach Augenschein |
+|---|---|---|
+| HS Tikky Tokky | x 890 | **890** ✓ |
+| Hoodie | x 1016 | **1016** ✓ |
+| Tate | x 738 | **738** ✓ |
+| Sonnenbrille | x 1095 | **956** ✗ |
+| **Myron Gaines** | **x 387** | **1480** ✗ |
+| Maske | x 980 | **980** ✓ |
+
+→ betrifft: alle, die Motive automatisch mittig setzen. **Eine Hautmaske ist
+ein Vorschlag, kein Befund** — und sie ist bei dunkler Haut unzuverlaessig, was
+sie unbrauchbar macht, wenn man sie ungeprueft laufen laesst. Der Kontaktabzug
+mit eingezeichneter Mittellinie kostet eine Minute und entscheidet. Das steht
+jetzt auch im Kopf des Werkzeugs.
+
+→ und der Grund, warum das ueberhaupt zaehlt: **in 9:16 bleiben von einem
+Querformat nur rund ein Fuenftel der Breite uebrig.** Wer darin am Rand steht,
+wird von den Bedienelementen von YouTube Shorts teilweise verdeckt. Mittig ist
+hier keine Geschmacksfrage.
