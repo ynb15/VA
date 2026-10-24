@@ -75,7 +75,7 @@ also noch einmal vors Auge.
 
 ## Musik
 
-`--musik` mit „In This Shirt" (The Irrepressibles), `--musik-unter 14`.
+`--musik` mit `--musik-unter 0` (Stand 24.10.; davor 14, dann 9 — beides zu leise).
 Gemessen: Stimme −17,3 dB, Bett −11,6 dB, abgesenkt auf −19,7 dB. Der
 Spitzenpegel des Shorts bleibt bei −0,5 dB und damit genau da, wo er ohne
 Musik schon lag (−0,4 dB) — das Bett hebt den Mittelwert um 0,3 dB, mehr

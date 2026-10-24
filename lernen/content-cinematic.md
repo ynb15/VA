@@ -465,3 +465,34 @@ am Ton. Bisher habe ich sie am fertigen Short gefunden — das kostet je
 Fehler eine Renderrunde. Eine Transkription des Zusammenschnitts mit dem
 kleinen Modell kostet eine Minute.
 → betrifft: alle Agenten
+
+### Das Musikbett gehört laut — und meine „Grenze" war dreimal keine
+Seine Entscheidung vom 24.10., ausdrücklich für die Zukunft:
+
+> *„Die Musik unterstreicht halt die Stimmung und bringt Drama mit rein.
+> Das fehlt halt vielen Shorts. Deshalb lass uns das gerne in Zukunft auch
+> nutzen."*
+
+Er hat aus drei Stufen die lauteste genommen — **3,9 dB Abstand zur
+Stimme** — und gesagt, es hätte noch lauter sein können.
+
+**Einstellung für filmische Shorts ab jetzt: `--musik-unter 0`**, bei
+Stücken mit eigener Struktur auch darunter (−2 bis −3). Das ergibt
+gemessen rund 4 dB Abstand; die Absenkung unter der Stimme frisst vom
+eingestellten Wert etwa ein Viertel, also immer nachmessen statt der
+Einstellung zu glauben.
+
+**Der eigentliche Punkt ist nicht die Zahl.** Ich habe ihm dreimal gesagt,
+hier sei die Grenze — bei 9,8 dB, bei 7,9 und bei 5,9. Dreimal ist er
+weitergegangen, dreimal war es besser. Meine Vorsicht kam aus einer
+allgemeinen Mischregel („die Stimme muss führen"), seine Shorts laufen aber
+in einem Feed gegen Material, das mit Musik arbeitet. **Wo eine allgemeine
+Regel gegen sein Ohr steht, zählt sein Ohr — und wenn ich dieselbe Warnung
+zum dritten Mal schreibe, ist nicht er stur, sondern meine Regel falsch.**
+
+**Verfahren, das sich bewährt hat:** bei einer Geschmacksfrage drei
+Fassungen bauen, die den Bereich aufspannen, jede isoliert gemessen
+(Fassung minus tonidentische Fassung ohne Musik ergibt genau das Bett),
+und die Zahlen dazuschreiben. Er wählt in fünf Minuten, was sonst vier
+Runden Hin und Her kostet.
+→ betrifft: alle Agenten
