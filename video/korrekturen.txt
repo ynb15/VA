@@ -74,3 +74,11 @@ makosi -> Makhosi
 # allein stehendes "and" ist natuerlich richtig.
 teachers and training -> teachers in training
 psychologists and training -> psychologists in training
+# Und beim medium-Modell derselben Stelle: "Markosi", dazu faellt "Craig"
+# ganz weg. Links darf eine Wortfolge stehen und rechts eine laengere - die
+# Zeiten werden dabei gleichmaessig aufgeteilt.
+markosi -> Makhosi
+with markosi -> with Craig Makhosi
+# Dieselbe Stelle, medium verschluckt das "the": "who have the most touch
+# points" (das kleine Modell hatte es richtig).
+have most touch -> have the most touch
