@@ -1,0 +1,153 @@
+{
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/schule-clip.mp4",
+ "groesse": [
+  1920,
+  1080
+ ],
+ "bezugsbewegung": 3.825,
+ "einstellungen": [
+  {
+   "layout": "einzel",
+   "kasten": "680:0:608:1080",
+   "lippe": 1267,
+   "start": 0.0,
+   "ende": 1.2,
+   "tot": false,
+   "bewegung_x": 0.506,
+   "mitte": 0.71,
+   "masse": 2.46
+  },
+  {
+   "layout": "einzel",
+   "kasten": "616:0:608:1080",
+   "lippe": 1267,
+   "start": 1.2,
+   "ende": 42.2,
+   "tot": false,
+   "bewegung_x": 0.494,
+   "mitte": 0.71,
+   "masse": 3.41
+  },
+  {
+   "layout": "einzel",
+   "kasten": "680:0:608:1080",
+   "lippe": 1267,
+   "start": 42.2,
+   "ende": 43.7,
+   "tot": false,
+   "bewegung_x": 0.512,
+   "mitte": 0.7,
+   "masse": 2.57
+  },
+  {
+   "layout": "einzel",
+   "kasten": "616:0:608:1080",
+   "lippe": 1267,
+   "start": 43.7,
+   "ende": 54.2,
+   "tot": false,
+   "bewegung_x": 0.475,
+   "mitte": 0.56,
+   "masse": 4.64
+  },
+  {
+   "layout": "einzel",
+   "kasten": "48:0:608:1080",
+   "lippe": 1267,
+   "start": 54.2,
+   "ende": 60.7,
+   "tot": false,
+   "bewegung_x": 0.175,
+   "mitte": 0.24,
+   "masse": 3.6
+  },
+  {
+   "layout": "einzel",
+   "kasten": "616:0:608:1080",
+   "lippe": 1267,
+   "start": 60.7,
+   "ende": 64.7,
+   "tot": false,
+   "bewegung_x": 0.494,
+   "mitte": 0.63,
+   "masse": 5.76
+  },
+  {
+   "layout": "einzel",
+   "kasten": "48:0:608:1080",
+   "lippe": 1267,
+   "start": 64.7,
+   "ende": 71.7,
+   "tot": false,
+   "bewegung_x": 0.312,
+   "mitte": 0.22,
+   "masse": 3.55
+  },
+  {
+   "layout": "einzel",
+   "kasten": "680:0:608:1080",
+   "lippe": 1267,
+   "start": 71.7,
+   "ende": 80.7,
+   "tot": false,
+   "bewegung_x": 0.519,
+   "mitte": 0.77,
+   "masse": 4.39
+  },
+  {
+   "layout": "einzel",
+   "kasten": "616:0:608:1080",
+   "lippe": 1267,
+   "start": 80.7,
+   "ende": 87.7,
+   "tot": false,
+   "bewegung_x": 0.487,
+   "mitte": 0.75,
+   "masse": 3.82
+  },
+  {
+   "layout": "einzel",
+   "kasten": "680:0:608:1080",
+   "lippe": 1267,
+   "start": 87.7,
+   "ende": 89.7,
+   "tot": false,
+   "bewegung_x": 0.494,
+   "mitte": 0.74,
+   "masse": 3.32
+  },
+  {
+   "layout": "einzel",
+   "kasten": "616:0:608:1080",
+   "lippe": 1267,
+   "start": 89.7,
+   "ende": 115.7,
+   "tot": false,
+   "bewegung_x": 0.487,
+   "mitte": 0.57,
+   "masse": 5.52
+  },
+  {
+   "layout": "einzel",
+   "kasten": "48:0:608:1080",
+   "lippe": 1267,
+   "start": 115.7,
+   "ende": 120.7,
+   "tot": false,
+   "bewegung_x": 0.356,
+   "mitte": 0.26,
+   "masse": 4.18
+  },
+  {
+   "layout": "einzel",
+   "kasten": "616:0:608:1080",
+   "lippe": 1267,
+   "start": 120.7,
+   "ende": 121.97,
+   "tot": false,
+   "bewegung_x": 0.5,
+   "mitte": 0.66,
+   "masse": 4.47
+  }
+ ]
+}
