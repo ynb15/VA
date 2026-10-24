@@ -589,3 +589,66 @@ verschiedenen Bloecken verschieden weit links stehen, reicht das nicht. Dann
 wird jeder Block **vorher** auf 9:16 beschnitten, mit eigenem Versatz, und der
 Renderer laeuft auf `--broll-modus vollbild` — der skaliert ein schon
 passendes Bild nur noch, ohne weiter zu schneiden.
+
+## 24.10.2026 — Die Musik endet zu abrupt. Zwei Sekunden Ausblende sind zu kurz.
+
+Seine Beobachtung, ausdruecklich als allgemeine Regel zum Weitergeben:
+
+> *„mir ist aufgefallen, dass du generell beim Ende des Shorts die Musik zu
+> schnell oder zu abrupt endest. Das ist eine generelle Beobachtung, das kannst
+> du gerne an die anderen Agenten weitergeben."*
+
+Nachgemessen am Hypermaskulinitaets-Short, Bett isoliert (Mischung mit Musik
+minus Mischung ohne):
+
+| Sekunde | Bettpegel |
+|---|---|
+| 53,5 | −35,6 dB |
+| 54,0 | −36,2 dB |
+| 54,5 | −39,6 dB |
+| 55,0 | −45,4 dB |
+| 55,5 | −54,1 dB |
+
+Bei 54,0 steht das Bett also noch auf vollem Pegel und ist 1,9 s spaeter weg.
+Nach 56 Sekunden Lauf hoert sich das an, als wuerde es abgeschaltet, nicht als
+wuerde es enden. **Dazu kommt der Gegensatz zum Outro, das direkt danach mit
+−4 dB einsetzt** — gemessen am Uebergang. Der Absturz faellt dadurch doppelt
+auf.
+
+Behoben: `musik_drunter.py` hatte die Ausblende mit `d=2.0` fest im Code.
+Sie ist jetzt `--blende-aus` und **auf 4 s voreingestellt**.
+
+→ betrifft: **alle Short-Agenten.** Zwei Sekunden Ausblende sind fuer ein Bett,
+das eine Minute lang laeuft, zu kurz. Und die Ausblende gehoert nicht in den
+Code, sondern an die Oberflaeche — genauso wie die Einblende, die am 22.10.
+aus demselben Grund herausgezogen wurde.
+
+## 24.10.2026 — Davids „Yeah" stand 20 dB ueber dem Satz, in den es hineinfiel.
+
+Sein Befund: *„frage ich mich, ob du Davids Ja vor oder nach Vulnerability,
+kannst du das stumm schalten? Das ist irgendwie stoerend. Aber nur dieses eine
+Ja."*
+
+Gemessen, 10-ms-Aufloesung: sein eigener Satz laeuft bis Clipzeit 19,03 bei
+−24 bis −30 dB, dann eine Luecke, dann von **19,09 bis 19,33 ein Einwurf mit
+Spitze −2,1 dB**. Das sind rund **20 dB ueber** dem Satz, in den er faellt —
+Sutcliffe sitzt an seinem eigenen Mikrofon. Deshalb faellt es auf, obwohl es
+nur eine Viertelsekunde dauert.
+
+**Und dabei ist eine aeltere Annahme von mir gekippt.** Ich hatte dieses Stueck
+am 22.10. fuer SEIN Wort „like" gehalten, weil die abgenommene Untertiteldatei
+vom 20.10. dort „LIKE VULNERABILITY" schreibt, und hatte das Wort entsprechend
+im Bild gelassen. In Isolation transkribiert ergibt das Stueck woertlich
+**„Yeah."** — gesprochen wird dort kein „like". Die Einblendung „LIKE" stand
+also ueber Davids Einwurf.
+
+Behoben: der Einwurf ist stumm (19,06–19,36), und „like" wandert in die
+Einblendung mit „vulnerability" — **„LIKE VULNERABILITY"** steht jetzt ueber
+dem gesprochenen Wort. Damit steht keine Einblendung ueber einer stummen
+Stelle, und der abgenommene Wortlaut bleibt.
+
+→ betrifft: jeden Short mit Gegenueber. Ein Einwurf, der ueber dem Satz liegt,
+in den er faellt, ist nicht leise wegzumischen — er muss stumm. Und: ein
+einzelnes Wort in der Untertiteldatei ist kein Beleg dafuer, dass es gesprochen
+wurde. Im Zweifel die Stelle allein transkribieren, nicht im Zusammenhang —
+im Zusammenhang errät das Modell, was grammatisch passt.

@@ -1,7 +1,7 @@
 {
   "name": "Sutcliffe-Folge - Hypermaskulinitaet / Vulnerability is not weakness",
   "datei": "YNB Podcast David Sutcliffe Hypermasculinity.mp4",
-  "stand": "2026-10-23, 00:40 Kapstadt — zweite Fassung nach seinen vier Korrekturen",
+  "stand": "2026-10-24 — vierte Fassung",
   "wer_spricht": "Er selbst. Er liest seine eigene Substack-Notiz vor; Sutcliffe hoert zu und wirft zweimal etwas ein.",
   "quelle": {
     "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
@@ -152,7 +152,8 @@
       "'MOST MAN' zweimal statt 'MOST MEN'. Jetzt als Paar in korrekturen.txt, NUR als Paar: 'a man who can crack open' ist richtig und bleibt.",
       "'MASK MM-HMM REAL' - Sutcliffes zweiter Zwischenruf, Wort raus und Ton stumm (49,98-50,52). Danach blieben sieben Woerter in der Strecke, nach seiner Regel neu geteilt in 3+2+2: 'REAL STRENGTH IS' / 'A MAN' / 'WHO CAN'."
     ],
-    "zwischenrufe": "Stummgeschaltet, nicht herausgeschnitten - seine Festlegung vom 20.10.: 'damit das Bild ruhig bleibt'."
+    "zwischenrufe": "Drei Stellen stumm: 19,06-19,36 (Davids 'Yeah' vor 'vulnerability'), 20,10-20,88 ('Yeah, right') und 49,98-50,52 ('Mm-hmm'). Stummgeschaltet, nicht herausgeschnitten - seine Festlegung vom 20.10.: 'damit das Bild ruhig bleibt.'",
+    "like_korrektur": "Ich hatte das Stueck bei 19,09-19,33 am 22.10. fuer SEIN Wort 'like' gehalten, weil die abgenommene Untertiteldatei vom 20.10. dort 'LIKE VULNERABILITY' schreibt. In Isolation transkribiert ergibt es woertlich 'Yeah.' - gesprochen wird dort kein 'like'. Die Einblendung stand also ueber Davids Einwurf. Jetzt ist der Einwurf stumm und 'like' steht in der Einblendung mit 'vulnerability': 'LIKE VULNERABILITY' ueber dem gesprochenen Wort. Damit steht keine Einblendung ueber einer stummen Stelle und der abgenommene Wortlaut bleibt."
   },
   "ton": {
     "laut": "aus",
@@ -163,7 +164,9 @@
     "warum": "Seine Ansage vom 23.10.: 'dann kannst du auch jetzt in this shirt unterlegen. In der naechsten Version.'",
     "warum_ab_23": "Der Titel geht arrangiert erst bei Songsekunde 23,3 los - dort springt die Energie ueber 2 kHz von -53,4 auf -34,6 dB. Davor traegt ihn ein einzelnes Instrument. Seine Ansage vom 22.10.",
     "pegel": "Stimme -34,6 dB gemessen (dieser Short ist leiser als 'Meaning' mit -28,9 dB, weil er vorliest und die Pausen den Mittelwert druecken). Das Bett wird relativ dazu gerechnet, nicht absolut gesetzt.",
-    "sperrvorgeschichte": "GENAU DIESE DATEI hat am 22.10. um 15:21 Kapstadt eine weltweite Sperre ausgeloest: Video 5nl--61ZBBI, beanstandet als 'In This Shirt (Royksopp Remix)', Rechteinhaber FUGA, Typ Audio. Die Datei selbst traegt im Tag 'The Irrepressibles / From the Circus to the Sea, Pt. 2 / 2021', ist also nicht als Remix ausgewiesen - Content ID hat trotzdem dagegen angeschlagen. Ob ueber die Komposition oder ueber ein Asset, das mehrere Aufnahmen abdeckt, ist von hier nicht zu sehen. Gemessen ist nur das Ergebnis: gesperrt. Er hat den Titel am 23.10. trotzdem ausdruecklich bestellt; der Short ist damit ein zweiter Versuch bei anderer Laenge, keine neue Erwartung. Darum liegt die Fassung ohne Musik daneben."
+    "sperrvorgeschichte": "GENAU DIESE DATEI hat am 22.10. um 15:21 Kapstadt eine weltweite Sperre ausgeloest: Video 5nl--61ZBBI, beanstandet als 'In This Shirt (Royksopp Remix)', Rechteinhaber FUGA, Typ Audio. Die Datei selbst traegt im Tag 'The Irrepressibles / From the Circus to the Sea, Pt. 2 / 2021', ist also nicht als Remix ausgewiesen - Content ID hat trotzdem dagegen angeschlagen. Ob ueber die Komposition oder ueber ein Asset, das mehrere Aufnahmen abdeckt, ist von hier nicht zu sehen. Gemessen ist nur das Ergebnis: gesperrt. Er hat den Titel am 23.10. trotzdem ausdruecklich bestellt; der Short ist damit ein zweiter Versuch bei anderer Laenge, keine neue Erwartung. Darum liegt die Fassung ohne Musik daneben.",
+    "ausblende_s": 4.0,
+    "warum_ausblende": "Seine Beobachtung vom 24.10., ausdruecklich als allgemeine Regel: 'beim Ende des Shorts endest du die Musik zu schnell oder zu abrupt.' Nachgemessen stand das Bett bei Sekunde 54,0 noch auf vollem Pegel (-36,2 dB) und war 1,9 s spaeter weg (-54,1 dB); dazu setzt direkt danach das Outro mit -4 dB ein. Die Ausblende war mit 2 s fest im Code und ist jetzt --blende-aus mit Vorgabe 4 s."
   },
   "outro": {
     "datei": "video/marke/ynb-outro-9x16.mov",
@@ -178,5 +181,9 @@
   "offen": [
     "Die Uebergabe zurueck auf ihn bei 50,54 ist meine Entscheidung, nicht seine Vorgabe - siehe broll.uebergabe_zurueck.",
     "Von der zweiten Tate-Datei im selben Ordner ('Shorts: Andrew Tate best-of', 1,15 GB, 617 s) ist nichts verwendet. Sie liegt geladen bereit, falls er lieber Material daraus will."
-  ]
+  ],
+  "fassungen": [
+    "YNB Podcast David Sutcliffe Hypermasculinity (In This Shirt).mp4"
+  ],
+  "nur_eine_fassung": "Seine Ansage vom 24.10.: 'bitte gib mir nur eine Variante. Die mit In This Shirt.' Die Fassung ohne Musik wird darum nicht mehr mitgeliefert - die stehende Regel 'zu jedem Bett gehoert eine Fassung ohne Musik' ist damit fuer diesen Short ausdruecklich aufgehoben."
 }

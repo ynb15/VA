@@ -2,7 +2,7 @@
 """Legt das Musikbett unter einen fertigen Short - gleiche Kette wie der Renderer.
 
     python3 musik_drunter.py <video.mp4> <musik.mp3> <stamm> <ab-sekunde> <dB-unter> ...
-                             [--blende-ein SEKUNDEN]
+                             [--blende-ein SEKUNDEN] [--blende-aus SEKUNDEN]
 
 Je angegebenem Abstand entsteht eine Fassung. Der Pegel wird nicht geraten,
 sondern aus Stimme und Bett gerechnet, genauso wie in `shorts-render.py`:
@@ -11,6 +11,9 @@ geloopt, 1,5 s eingeblendet, 2 s ausgeblendet, per `sidechaincompress` von
 der Stimme weggedrueckt und mit `normalize=0` gemischt.
 
 Kein `loudnorm`, kein Limiter: seine Ansage vom 20.10. gilt weiter.
+
+Die Ausblende ist mit 4 s voreingestellt, nicht mit 2 — seine Beobachtung vom
+24.10.: *„beim Ende des Shorts endest du die Musik zu schnell oder zu abrupt."*
 """
 import importlib.util, subprocess, sys
 import imageio_ffmpeg
@@ -47,6 +50,18 @@ def main():
         i = argv.index("--blende-ein")
         blende_ein = float(argv[i + 1])
         del argv[i:i + 2]
+    # Seine Beobachtung vom 24.10., ausdruecklich als allgemeine Regel zum
+    # Weitergeben: "beim Ende des Shorts endest du die Musik zu schnell oder
+    # zu abrupt." Nachgemessen am Hypermaskulinitaets-Short: mit 2 s stand das
+    # Bett bei Sekunde 54,0 noch auf vollem Pegel (-35 dB) und war 1,9 s
+    # spaeter weg (-54 dB) — das hoert sich an, als wuerde es abgeschaltet.
+    # Dazu kommt, dass direkt danach das Outro mit -4 dB einsetzt; der
+    # Gegensatz macht den Absturz noch deutlicher. Vorgabe darum 4 s.
+    blende_aus = 4.0
+    if "--blende-aus" in argv:
+        i = argv.index("--blende-aus")
+        blende_aus = float(argv[i + 1])
+        del argv[i:i + 2]
     video, musik, stamm = argv[1], argv[2], argv[3]
     ab_s = float(argv[4])          # wo im Song das Bett anfaengt
     abstaende = [float(x) for x in argv[5:]]
@@ -75,7 +90,8 @@ def main():
         bett = (f"[1:a]atrim=start={ab_s},asetpts=PTS-STARTPTS,"
                 f"aloop=loop=-1:size=2000000000,volume={db}dB,"
                 f"afade=t=in:st=0:d={blende_ein},atrim=0:{laenge:.2f},"
-                f"afade=t=out:st={max(laenge - 2.0, 0):.2f}:d=2.0[bett]")
+                f"afade=t=out:st={max(laenge - blende_aus, 0):.2f}:"
+                f"d={min(blende_aus, laenge):.2f}[bett]")
         graph = ("[0:a]asplit=2[st1][st2];" + bett +
                  f";[bett][st2]sidechaincompress=threshold=0.04:ratio={ratio}:"
                  "attack=15:release=250[duck];"
