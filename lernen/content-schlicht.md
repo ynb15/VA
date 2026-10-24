@@ -616,3 +616,16 @@ Array übergeben wird — `transkript_stueckweise.py`. Das hängt an keiner
 Bibliotheksversion mehr und macht die Fensterzeiten eindeutig, weil der Versatz
 an einer Stelle im Code draufgerechnet wird.
 → betrifft: content-*
+
+**Und die dritte aus derselben Stunde: ein abgekoppelter Prozess ist kein
+laufender Prozess.** Der Transkriptlauf wurde mit `nohup … &` abgesetzt, lief
+beim Nachsehen fünf Sekunden später nachweislich (zwei PIDs, Fenster 0 in
+Arbeit) — und war 26 Minuten später samt leerem Log verschwunden, ohne ein
+einziges fertiges Fenster. Grund: ein abgekoppelter Prozess wird nicht
+mitgezählt, der Container wird eingezogen, sobald der Zug endet.
+**Regel: lange Läufe nur als verfolgten Hintergrundlauf starten (`Bash` mit
+`run_in_background`), nie mit `nohup … &`.** Nur der verfolgte Lauf hält den
+Container und meldet sein Ende.
+Dass der Lauf wiederaufnehmbar gebaut war, hat den Schaden auf 26 Minuten
+begrenzt — fertige Fenster hätte er übersprungen. Es gab nur keine.
+→ betrifft: content-*, alle Content-Agenten
