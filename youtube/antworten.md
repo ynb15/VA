@@ -46,11 +46,35 @@ der Antwort.
   *Preciate it*, *appreciate you engaging for real*. In 6 von 18 Antworten.
 - **Das nachgestellte `…`** statt eines Punktes: *„I too got that impression…"*,
   *„Seems like you're the real threat…"*
-- **Gedankenstrich `–`**, nicht `-`.
+- **Normaler Bindestrich `-`, nie `–` oder `—`.** Beleg aus seinen eigenen
+  Antworten: *„for it- Or refusing, doing nothing…"* und *„your picture of
+  this - or would you rather cling…"*
+  **Den Grund hat er am 24.10. selbst genannt: der lange Strich ist das
+  Erkennungszeichen dafuer, dass ein Text von einer KI stammt.** Er will das
+  nicht in seinen Nachrichten haben — oeffentlich nicht und privat nicht.
 - **Keine Emoji im Streit.** Emoji nur bei Freunden (💙) und im angepinnten
   Clip-Kommentar (👉).
 - **Er schließt einen harten Strang mit einer offenen Frage**, die den Ball
   zurücklegt, statt mit einem Urteil.
+
+## Privat: einzelne Nachrichten statt eines Blocks
+
+**Beim Tippen trennt er.** Im WhatsApp-Verlauf vom 24.10. stehen drei Gedanken
+als drei Blasen, nicht als ein Absatz mit Leerzeilen. Ein fertig formulierter
+Block ist dort schon an der Form erkennbar. **Entwuerfe fuer private Chats
+deshalb als getrennte Nachrichten liefern, nicht als einen Text.**
+
+## Mein eigener Fehler in der ersten Fassung dieser Datei
+
+**Ich hatte `–` als seine Gewohnheit notiert — abgelesen aus der Antwort an
+Jenn. Die war mein eigener Entwurf, den er uebernommen hat.** In derselben
+Datei stand bereits, dass ich sie nicht als Stilbeleg zaehlen darf; ich habe
+sie trotzdem gezaehlt.
+**Die Regel daraus: ein Text, den ich selbst geschrieben habe, ist nie ein
+Beleg fuer seinen Stil, auch nicht nachdem er ihn veroeffentlicht hat.** Vor
+jeder Messung die eigenen Zeilen aus dem Bestand streichen — dieselbe Lehre
+wie beim Zaehlen unbeantworteter Kommentare.
+→ betrifft: alle Content-Agenten
 
 ## Was ich daraus **nicht** ableite
 
