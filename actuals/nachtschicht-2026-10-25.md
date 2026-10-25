@@ -31,3 +31,14 @@ Stichtag 28.10. steht in der Tageskontrolle.
 
 **Nichts im Chat.** Warten kostet die Nacht nicht, und entscheiden kann er es
 erst, wenn die Datei da ist.
+
+---
+
+## 00:40 — still
+
+Keine geplante Aufgabe, **kein Commit seit 21:50**, eigener Branch gefetcht (0/0).
+
+- **00:40** · alle neun · still, kein offener Auftrag · Maßnahme: keine
+
+Montag ist der Tag, an dem der Plan wieder voll läuft: **Kingsbury kommt aus
+der Pause**, der Aaronson-Clip steht im Kalender, Logan liegt bei ihm.
