@@ -68,8 +68,8 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Do 22.10. | Short | — | **nichts veröffentlicht** (Vorrat war leer) |
 | Fr 23.10. | Short | **Sutcliffe · Hypermasculinity** (Gastauftritte, 2. Fassung) | **bei ihm** — vier Korrekturen umgesetzt; Musikfrage offen, siehe unten |
 | Sa 24.10. | Short | **Sutcliffe · Tate** (Cinematic, mit 17 Einspielern) | **bei ihm** — 22.10. abends geliefert, Nutzung der Szenen seine Entscheidung |
-| So 25.10. | **PODCAST** | Scott Aaronson | **Paket bei ihm** (T−2 am 23.10. erfüllt) — offen: drei Links von ihm |
-| Mo 26.10. | Clip | **Aaronson · „How safe is AI"** (YouTube-Manager: Schnitt, 13 Titel, Beschreibung, Tags) | gebaut, nicht abgenommen |
+| So 25.10. | **PODCAST** | Scott Aaronson | **VERÖFFENTLICHT** — `2_CZfN2iOFk`, empfohlener Titel genommen |
+| Mo 26.10. | Clip | **Aaronson · „How safe is AI"** | **VERÖFFENTLICHT am 24.10.** als `YO_sGYH1dm8`, 7:34 |
 | Di 27.10. | Clip | **drei Clips** (Gastauftritte — Schulsystem dazu, am 24.10. mit ihm gebaut) | in Arbeit **mit ihm** |
 | Mi 28.10. | Short | Sutcliffe 01 · „Therapeut" | gebaut, nicht abgenommen |
 | Do 29.10. | Short | Sutcliffe 04 · „Vulnerability is not weakness" | gebaut, nicht abgenommen |

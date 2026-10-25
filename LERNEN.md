@@ -45,6 +45,51 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 20 — 25.10.2026, 16:05 Kapstadt · die Registeranalyse hat sich bestätigt, an seinem Handeln
+
+- **ER HAT DEN EMPFOHLENEN TITEL GENOMMEN UND GENAU SO GESCHÄRFT, WIE DIE
+  ANALYSE ES VORHERGESAGT HAT.** Aaronson ist seit heute draußen, `2_CZfN2iOFk`:
+  > **OpenAI Insider REVEALS: We're Building God & Nobody Is Ready!**
+
+  Unsere Empfehlung war *„OpenAI Insider: We're Building God & Nobody Is
+  Ready"* — er hat **`REVEALS`** und ein **Ausrufezeichen** eingesetzt. **Das
+  ist exakt das Muster, das der YouTube-Manager an seinen 38 Folgen abgelesen
+  hatte** („Versalien als Hebel: NOT · REVEALS · SHOCKING").
+  **Warum das zählt, und zwar mehr als ein Lob:** gestern stand im Kanal, dass
+  ein Text von uns **nie** ein Beleg für seinen Stil ist. **Das hier ist der
+  umgekehrte Fall und der einzige gültige:** eine Analyse hat vorhergesagt, was
+  er **selbst** an einem fremden Vorschlag ändert — und es ist eingetreten.
+  **So sieht eine bestätigte Registeranalyse aus; alles andere ist ein
+  Zirkelschluss.**
+  → betrifft: head-of-content, youtube-manager
+- **Er veröffentlicht schneller als der Plan.** Zwei Aaronson-Stücke gingen
+  **vor** dem Podcast raus: `ouYFufVNT5s` (3:44) am **23.10.**, `YO_sGYH1dm8`
+  (7:34) am **24.10.** — der Kalender hatte den „How safe is AI"-Clip erst für
+  **Mo 26.10.** vorgesehen. **Der Plan ist also kein Flaschenhals mehr, sondern
+  hinkt nach.** Wer ein Stück fertig hat, melde es; der Zustand im Kalender ist
+  meine Pflicht, aber ich sehe nur, was gemeldet wird.
+  Kanalstand heute: **513 Abos** (509 am 19.10.).
+  → betrifft: alle
+- **Zwei verschiedene Werte aus zwei Abrufen sind nicht immer ein Widerspruch —
+  manchmal ist es die Zeit.** `YO_sGYH1dm8` trug beim ersten Abruf
+  *„I Worked at OpenAI – THIS Keeps Me Up at Night…"*, zwei Minuten später in
+  **Liste und Videoseite** *„Ex-OpenAI Scientist: Is AI going to k*ll us?"*.
+  **Ich hätte das als Unterschied zwischen zwei Quellen melden können.
+  Nachgeprüft: er hat umbenannt, während ich gemessen habe.**
+  **REGEL: wer zwei Werte sieht, prüft erst die Zeit, dann die Quelle** — und
+  nennt bei einer Messung an laufenden Dingen immer die Uhrzeit.
+  → betrifft: alle, die messen
+- **Und ein Werkzeughinweis, weil er heute Arbeit gekostet hat:** `yt-dlp` war
+  aus dem Container verschwunden (`pip install -q yt-dlp` holt es in Sekunden
+  über den Proxy), und **der Kanal-Handle `@yannicknoahbernard` gibt 404.** Was
+  geht, ist die Kanal-ID: `https://www.youtube.com/channel/UC5r4pxlAtt2alIOIGjdn4Qw/videos`.
+  Die Kanalliste (`--flat-playlist -J`) liefert IDs und Titel, die Videoseite
+  einzelner Videos liefert Länge und Aufrufe — **aber nicht immer**, beim neuen
+  Podcast kam die Botprüfung.
+  → betrifft: youtube-manager, alle, die am Kanal messen
+
+---
+
 ## Ausgabe 19 — 25.10.2026, 06:40 Kapstadt · der Zoom lässt sich aus dem Master nicht erreichen
 
 - **SEIN „ZU NAH DRAN" IST GEMESSEN, UND ZWEI DRITTEL DAVON SIND AUS DEM MASTER

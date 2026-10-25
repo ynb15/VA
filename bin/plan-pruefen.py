@@ -62,7 +62,7 @@ RUECKKATALOG = {
 # Muster wie WARTET: ein Zustand, den das Werkzeug nicht kennt, wird als der
 # naechste aehnliche gemeldet.
 ERLEDIGT = {
-    "Scott Aaronson": {10, 8, 6, 5, 3, 2},   # Paket am 23.10. uebergeben
+    "Scott Aaronson": {10, 8, 6, 5, 3, 2},   # veroeffentlicht 25.10., 2_CZfN2iOFk
 }
 
 # Entscheidungspunkte: Tag -> was an diesem Tag entschieden werden muss, und

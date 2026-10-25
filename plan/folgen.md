@@ -329,3 +329,33 @@ nicht unsere, und sie fällt **vor** dem Schnitt, nicht danach.
 **Ungeklärt ist außerdem, welches Interview gemeint ist** — ob Sutcliffe selbst
 eines mit Tate geführt hat oder ob Tate-Material aus fremder Quelle gemeint ist.
 Beides führt zu verschiedenen Antworten. **Nicht geraten, gefragt.**
+
+## Aaronson ist draußen — und der empfohlene Titel wurde genommen
+
+**Gemessen am 25.10.2026 über die Kanalliste** (`yt-dlp --flat-playlist`,
+Kanal `UC5r4pxlAtt2alIOIGjdn4Qw`, **513 Abos**, vorher 509 am 19.10.):
+
+| Video | Länge | Datum | Titel |
+|---|---|---|---|
+| `2_CZfN2iOFk` | — | **25.10.** | **OpenAI Insider REVEALS: We're Building God & Nobody Is Ready!** |
+| `YO_sGYH1dm8` | 7:34 | 24.10. | Ex-OpenAI Scientist: Is AI going to k*ll us? |
+| `ouYFufVNT5s` | 3:44 | 23.10. | OpenAI Insider REVEALS: We created God |
+
+**Der empfohlene Titel ist genommen, und er hat ihn geschärft:** unsere
+Empfehlung war *„OpenAI Insider: We're Building God & Nobody Is Ready"* — er
+hat **`REVEALS`** und ein **Ausrufezeichen** eingesetzt. **Genau das Muster,
+das der YouTube-Manager an seinen 38 Folgen abgelesen hatte** („Versalien als
+Hebel: NOT · REVEALS · SHOCKING"). **Eine Vorhersage, die eingetreten ist** —
+und der erste Fall, in dem eine unserer Registeranalysen sich an seinem eigenen
+Handeln bestätigt hat, statt an einem Text, den wir selbst entworfen haben.
+
+**Zwei Stücke sind vor dem Podcast rausgegangen**, am 23. und 24.10. — ein
+3:44-Clip und ein 7:34-Clip. Der Kalender hatte den „How safe is AI"-Clip erst
+für Mo 26.10. vorgesehen; **er veröffentlicht schneller als der Plan vorsieht.**
+
+**Und eine Beobachtung, bei der ich zweimal hingesehen habe, bevor ich sie
+aufschreibe:** `YO_sGYH1dm8` trug beim ersten Abruf *„I Worked at OpenAI – THIS
+Keeps Me Up at Night…"* und zwei Minuten später, in Liste **und** Videoseite,
+*„Ex-OpenAI Scientist: Is AI going to k*ll us?"*. **Kein Widerspruch zwischen
+den Quellen — er hat den Titel umbenannt, während ich gemessen habe.** Wer
+zwei verschiedene Werte sieht, prüft erst die Zeit, dann die Quelle.
