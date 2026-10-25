@@ -45,6 +45,68 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 19 — 25.10.2026, 06:40 Kapstadt · der Zoom lässt sich aus dem Master nicht erreichen
+
+- **SEIN „ZU NAH DRAN" IST GEMESSEN, UND ZWEI DRITTEL DAVON SIND AUS DEM MASTER
+  NICHT ZU ERREICHEN.** Sein Befund, zum zweiten Mal: *„du zoomst immer noch zu
+  nah dran… die ersten drei Shorts von David Sutcliffe haben wir manuell
+  gemacht. Und wenn du das vergleichst mit dem Short, das du gemacht hast, ist
+  das schon deutlich näher rangezoomt."* Gesichtshöhe als Anteil der Bildhöhe,
+  je Datei einzeln gemessen:
+
+  | | Gesichtshöhe |
+  |---|---|
+  | sein Gilmore-Short | **38,0 %** |
+  | sein Hollywood-Short | **40,5 %** |
+  | sein Patriarchy-Short | **42,2 %** |
+  | **unser Anger-Short** | **49,6 %** |
+  | sein „about Andrew Tate"-Short | 54,5 % — **enger als unserer** |
+
+  **Warum es nicht geht:** der Ausschnitt ist `608×1080` aus `1920×1080` — die
+  **volle Bildhöhe**, in 9:16 die obere Grenze. Für 40 % Gesichtshöhe bräuchte
+  es etwa `754×1340`, also **24 % mehr Bild, als in der Datei steht.** Genau
+  daran lag der Versuch mit Bändern vom 23.10., und die hat er abgelehnt.
+  **Schlussfolgerung, kennzeichnet: seine ersten drei Shorts sind sehr
+  wahrscheinlich aus den Kamera-Originalen geschnitten, bevor im Schnitt
+  hineingezoomt wurde.** Wer diese Bildsprache will, braucht diese Dateien —
+  das ist eine Bitte an ihn, keine Einstellung an unserem Werkzeug.
+  → betrifft: alle, die 9:16 ausschneiden
+- **Ein abgekoppelter Prozess ist kein laufender Prozess.** Ein Transkriptlauf
+  mit `nohup … &` lief beim Nachsehen fünf Sekunden später nachweislich (zwei
+  PIDs, Fenster 0 in Arbeit) — und war **26 Minuten später samt leerem Log
+  verschwunden**, ohne ein einziges fertiges Fenster. **Ein abgekoppelter
+  Prozess wird nicht mitgezählt, der Container wird eingezogen, sobald der Zug
+  endet.**
+  **REGEL: lange Läufe nur als verfolgten Hintergrundlauf starten (`Bash` mit
+  `run_in_background`), nie mit `nohup … &`.** Nur der verfolgte Lauf hält den
+  Container und meldet sein Ende. Dass der Lauf wiederaufnehmbar gebaut war, hat
+  den Schaden auf 26 Minuten begrenzt.
+  → betrifft: alle Content-Agenten
+- **Eine Schwelle, die an hellem Material geeicht wurde, findet im dunklen
+  Studio gar nichts.** `bildausschnitt.py` erklärte die ersten 85 Sekunden der
+  Logan-Folge zu **einer** Einstellung — darin liegen **fünf Kameraschnitte.**
+  Die Regel verlangte 45 % Bildänderung; bei Sutcliffes hellem Set traf das zu
+  (**0,51–0,61** am Schnitt), im fast schwarzen Studio ändert sich nur der
+  Bereich, in dem ein Mensch sitzt: **0,26–0,29**, alles andere höchstens
+  **0,071**. Der Renderer bekam einen festen Ausschnitt und schnitt den Gast
+  halb aus dem Bild.
+  **REGEL: eine Schwelle aus einer Messung an einem Material gilt für dieses
+  Material.** Entweder am neuen nachmessen oder relativ formulieren — hier: ein
+  Sprung weit über das, was in *diesem* Clip normal ist, **neben** der alten
+  festen Schwelle, damit das helle Material nichts verliert.
+  → betrifft: alle Content-Agenten
+- **Und eine Messung, die wieder ausgebaut wurde, weil sie nicht getrennt hat.**
+  Die Stapel-Entscheidung („sind zwei Menschen im Bild?") sollte auf eine neue
+  Größe gestützt werden. Über sechs Einstellungen, in denen nachweislich **immer
+  nur eine** Person saß: **0,60 · 0,63 · 0,71 · 0,78 · 0,81 · 0,90.** **Eine
+  Größe, die denselben Fall über diese Spanne streut, trennt nichts** — sie
+  hätte nur später falsch ausgesehen. Wieder ausgebaut, stattdessen das
+  vorhandene `--kein-stapel` benutzt. **Eine Messung, die nicht trennt, gehört
+  nicht eingebaut, sondern verworfen** — auch wenn Arbeit darin steckt.
+  → betrifft: alle
+
+---
+
 ## Ausgabe 18 — 24.10.2026, 16:30 Kapstadt · ein Ordner ist eine Folge, und Shorts I hat meine Zuweisung zurückgewiesen
 
 - **ICH HABE DREIMAL IN DREI TAGEN EINE FOLGE ZUGEWIESEN, AN DER SCHON JEMAND

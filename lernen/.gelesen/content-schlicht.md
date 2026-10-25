@@ -593,3 +593,101 @@ deren Lage nirgends steht.
 Quellzeiten — jede entfernte Stelle mit Anfang und Ende.** Sonst ist die
 Fassung nicht reproduzierbar, sobald der Container weg ist.
 → betrifft: alle Content-Agenten
+
+**24.10. — Eine Kopfzeile ist keine Messung.** Die neun Tonstücke der
+Logan-Folge lagen vollständig (zusammen 5159,1 s gegen 5159,5 s Quelle), aber
+`ffmpeg -f concat -c copy` schrieb daraus eine FLAC, die im Header nur **ein**
+Stück beschreibt. `ffprobe` meldete 10,0 Minuten für 86 Minuten Ton — und mein
+eigener Lauf meldete dieselben 10 Minuten als „fertig". Die Daten waren alle
+da; falsch war nur die Auskunft über sie.
+**Regel: Laufzeit nie aus dem Header lesen, sondern durch einen Dekodierlauf
+messen — und das Ergebnis gegen die Summe der Teile prüfen.** `ton_stueckweise.py`
+kodiert jetzt beim Zusammenfügen neu und bricht ab, wenn Ergebnis und Summe mehr
+als zwei Sekunden auseinanderliegen.
+Das ist derselbe Fehler wie beim Wiederaufnehmen über Dateigrössen: eine Zahl,
+die billig zu bekommen ist, beschreibt nicht das, wonach gefragt war.
+→ betrifft: content-*, alle Content-Agenten
+
+**Und noch eine, aus derselben Stunde: eine Bibliothek, die gestern ging, geht
+heute nicht.** `faster-whisper` ruft intern `av.open(..., metadata_errors=...)`;
+die hier installierte PyAV kennt den Parameter nicht und wirft `TypeError`.
+Behoben, indem das Tonfenster mit ffmpeg selbst nach float32 dekodiert und als
+Array übergeben wird — `transkript_stueckweise.py`. Das hängt an keiner
+Bibliotheksversion mehr und macht die Fensterzeiten eindeutig, weil der Versatz
+an einer Stelle im Code draufgerechnet wird.
+→ betrifft: content-*
+
+**Und die dritte aus derselben Stunde: ein abgekoppelter Prozess ist kein
+laufender Prozess.** Der Transkriptlauf wurde mit `nohup … &` abgesetzt, lief
+beim Nachsehen fünf Sekunden später nachweislich (zwei PIDs, Fenster 0 in
+Arbeit) — und war 26 Minuten später samt leerem Log verschwunden, ohne ein
+einziges fertiges Fenster. Grund: ein abgekoppelter Prozess wird nicht
+mitgezählt, der Container wird eingezogen, sobald der Zug endet.
+**Regel: lange Läufe nur als verfolgten Hintergrundlauf starten (`Bash` mit
+`run_in_background`), nie mit `nohup … &`.** Nur der verfolgte Lauf hält den
+Container und meldet sein Ende.
+Dass der Lauf wiederaufnehmbar gebaut war, hat den Schaden auf 26 Minuten
+begrenzt — fertige Fenster hätte er übersprungen. Es gab nur keine.
+→ betrifft: content-*, alle Content-Agenten
+
+**24.10. — Eine Schwelle, die an hellem Material geeicht wurde, findet im
+dunklen Studio gar nichts.** `bildausschnitt.py` erklärte die ersten 85
+Sekunden der Logan-Folge zu **einer** Einstellung; tatsächlich liegen darin
+fünf Kameraschnitte. Die Regel verlangte, dass sich 45 % des Bildes ändern —
+bei Sutcliffes hellem Set traf das zu (0,51–0,61 am Schnitt), in diesem fast
+schwarzen Studio ändert sich beim Kamerawechsel nur der Bereich, in dem ein
+Mensch sitzt: gemessen 0,26–0,29, alles andere höchstens 0,071. Der Renderer
+bekam darum einen festen Ausschnitt und schnitt den Gast halb aus dem Bild.
+**Regel: eine Schwelle, die aus einer Messung an einem Material stammt, gilt
+für dieses Material.** Entweder sie wird am neuen Material nachgemessen, oder
+sie wird relativ formuliert — hier: ein Sprung weit über das, was in *diesem*
+Clip normal ist, neben der alten festen Schwelle, damit das helle Material
+nichts verliert.
+
+**Und im selben Zug eine Messung wieder ausgebaut, die nicht getrennt hat.**
+Ich wollte die Stapel-Entscheidung („sind zwei Menschen im Bild?") auf eine
+neue Grösse stützen: wie viel Bewegung in *einen* 9:16-Ausschnitt passt. Die
+Werte über sechs Einstellungen, in denen nachweislich **immer nur eine**
+Person sass: 0,60 · 0,63 · 0,71 · 0,78 · 0,81 · 0,90. Eine Grösse, die
+denselben Fall über diese Spanne streut, trennt nichts — sie hätte nur
+später falsch ausgesehen. Also raus, und stattdessen `--kein-stapel`
+benutzt, das es für genau diesen Fall schon gibt.
+→ betrifft: content-*, alle Content-Agenten
+
+**24.10. — Eine halb umgesetzte Regel sieht aus wie eine umgesetzte.** Seine
+Vorgabe vom 22.10.: die Schlussfrage „in einer Zeile, in einer Einblendung,
+mit einem Fragezeichen". Eingebaut war dafür `FRAGE_BREITE` — eine breitere
+Schranke für Zeilen, die auf `?` enden. Nur schlägt die Drei-Wort-Grenze diese
+Schranke: „What makes life meaningful to you, Logan?" stand im Logan-Short in
+**drei** Einblendungen. Die Regel war im Code, die Wirkung nicht.
+Gemessen, statt geschätzt: die Zeile misst bei 82 px **1918 px**. In *eine*
+Zeile passt sie nur bei rund 40 px — halbe Schriftgröße, und genau das hat er
+für Einblendungen abgelehnt. Also ist „eine Zeile" hier nicht erreichbar; „eine
+Einblendung mit dem Fragezeichen" ist es. Eine Frage läuft jetzt über bis zu
+zwei Zeilen, bleibt aber **eine** Einblendung, bei voller Schriftgröße.
+**Regel: eine Vorgabe ist erst erfüllt, wenn sie am fertigen Short nachgesehen
+wurde — nicht, wenn der Code sie erwähnt.**
+Und die Reparatur ging beim ersten Versuch daneben, auf dieselbe Art: ich habe
+die Ausnahme ins Packen gebaut, nachgesehen — immer noch drei Einblendungen.
+Erst die Messung an der echten Wortliste zeigte, wo es wirklich zerfällt: eine
+Frage, die mit Sprechpausen gesprochen wird („What makes … life meaningful …
+to you, Logan?"), ist **vor** dem Packen schon an den Pausen in drei Strecken
+zerlegt; beim Packer kam nur noch `to you, Logan?` an. Die Ausnahme musste eine
+Ebene früher stehen. **Wer eine Regel in die falsche Schicht baut, hat sie
+nicht gebaut** — und merkt es nur, wenn er den Zwischenstand misst statt das
+Ergebnis zu erwarten.
+→ betrifft: content-*, alle Content-Agenten
+
+**24.10. — Die Musikbett-Prüfung schlug an, und ich habe sie nicht
+weichgeklopft.** Der Schwiegermutter-Short kam auf −64,7 dB im leisesten
+Prozent, die Schwelle liegt bei −65. Der Sumo-Short aus derselben Folge kam
+mit −65,3 durch. Der Unterschied ist keine Musik, sondern dass in den 45
+Sekunden fast ohne Sprechpause geredet wird — der Boden wird nie tief.
+Nachgemessen, **was** in diesem leisen Boden liegt: spektrale Flachheit 0,085,
+gegen 0,078 und 0,088 bei den nachweislich sauberen Shorts derselben Folge.
+Gleicher Raumton, kein tonales Bett.
+**Die Schwelle bleibt trotzdem, wo sie ist, und der Short bleibt durchgefallen.**
+Die Prüfung meldet die Flachheit jetzt zusätzlich — als Angabe, nicht als
+Freispruch. Eine Sicherheitsregel lockert man nicht, weil die eigene Messung
+das eigene Vorhaben stützt; sein Ohr entscheidet.
+→ betrifft: content-*, alle Content-Agenten

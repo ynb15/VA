@@ -894,3 +894,66 @@ Einblendung in der Ausgabe (`Einblendung weggelassen: 'Yeah.' stand nur
 0,12 s`) — **das gehört in die Abnahme**, denn an der Stelle fehlt Schrift
 zu hörbarem Ton. Steht da ein Wort, das Inhalt trägt, ist die Stelle von
 Hand zu lösen und nicht über die Regel.
+
+---
+
+## 24.10. — „du zoomst immer noch zu nah dran"
+
+Sein Befund, zum zweiten Mal: *„du zoomst immer noch zu nah dran. Man kann
+schon noch mal ein bisschen rauszoomen, ohne dass es Ränder braucht. Weil
+die ersten drei Shorts von David Sutcliffe haben wir manuell gemacht. Und
+wenn du das vergleichst mit dem Short, das du gemacht hast, ist das schon
+deutlich näher rangezoomt."*
+
+**Er hat recht, und zwei Drittel davon kann ich nicht ändern.** Gemessen ist
+die Gesichtshöhe als Anteil der Bildhöhe, je Datei für sich, 3–5 Bilder:
+
+| | Gesichtshöhe |
+|---|---|
+| sein Gilmore-Short | **38,0 %** |
+| sein Hollywood-Short | **40,5 %** |
+| sein Patriarchy-Short | **42,2 %** |
+| **mein Anger-Short** | **49,6 %** |
+| sein „about Andrew Tate"-Short | 54,5 % — *enger als meiner* |
+
+**Warum es nicht geht:** unser Ausschnitt ist `608×1080` aus `1920×1080` —
+die **volle Bildhöhe**. In 9:16 ist das die obere Grenze. Für 40 %
+Gesichtshöhe bräuchte es etwa `754×1340`, also **24 % mehr Bild, als in der
+Datei steht**. Genau deshalb landete der Versuch vom 23.10. bei Bändern: und
+die hat er abgelehnt.
+
+**Seine ersten drei Shorts sind also aus Material geschnitten, das mehr
+Bildfeld zeigt als der Master** — mit großer Wahrscheinlichkeit die
+Kamera-Originale, bevor im Schnitt hineingezoomt wurde. Im Drive-Ordner
+liegt nur der Programmschnitt, 1920×1080. **Angefragt: die
+Kamera-Originaldateien.** Damit lösen sich Zoom UND Auflösung auf einmal.
+
+**Was dann doch ging:** in den **Totalen** hatte `bildausschnitt.py`
+zusätzlich hineingezoomt — `493×875` statt `608×1080`, Faktor 1,23. Das ist
+jetzt heraus. Dort war Luft, in den Nahaufnahmen nicht.
+
+**Zwei Messfehler auf dem Weg dahin, beide von mir, beide lehrreich:**
+
+1. **Ein Maßstabsabgleich über eine Vorlage, die gar nicht im Bild liegt.**
+   Ich habe das Buchregal (Master x 1090–1340) in seinem Short gesucht und
+   3,00 statt 3,55 gefunden — scheinbar 18 % mehr Bild. Die Kontrolle an
+   meinem eigenen Short brachte das auf: dort kam 1,80 heraus statt der
+   bekannten 3,55, weil mein Ausschnitt nur bis x 1283 reicht und die
+   Vorlage **abgeschnitten** war. **Jede Registrierung zwischen zwei
+   Ausschnitten braucht eine Kontrolle mit bekanntem Sollwert** — ohne sie
+   hätte ich ihm eine erfundene Zahl gemeldet.
+2. **Normierte Kreuzkorrelation über FFT-Summen gibt r > 1.** Gemessen 13,8
+   — unmöglich für eine Korrelation. Die lokale Varianz kommt aus
+   Differenzen großer FFT-Summen und wird numerisch negativ oder winzig.
+   Die Fenstersummen gehören über ein **Integralbild** gerechnet, das ist
+   exakt. Erst dann waren die Werte plausibel (0,56–0,72).
+
+**Und das Maß, das die Frage wirklich beantwortet, braucht gar keinen
+Abgleich:** Gesichtshöhe als Anteil der Bildhöhe, je Datei für sich. Hautband
+im mittleren Drittel der Breite, größter zusammenhängender Block. Hätte ich
+damit angefangen, wären beide Fehler nicht passiert.
+
+→ betrifft: alle Short-Agenten. **Zoom 1,0 ist in 9:16 aus einem
+1080p-Master das Ende — wer weiter raus soll, braucht anderes Material, nicht
+einen anderen Parameter.** Und in Totalen prüfen, ob `bildausschnitt.py`
+zusätzlich hineingezoomt hat (`493×875`); dort ist Luft.

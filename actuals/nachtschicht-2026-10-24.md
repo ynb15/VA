@@ -65,3 +65,40 @@ gefetcht (0/0).
 - **03:40** · alle neun · still, kein offener Auftrag · Maßnahme: keine
 
 **Heute ist Sonntag, der 25.10. — Aaronson.** Alles dafür liegt bei ihm.
+
+---
+
+## 06:40 — Morgenlauf, Sonntag: Aaronson erscheint heute
+
+Keine geplante Aufgabe, **kein neuer Commit seit 00:50**, eigener Branch
+gefetcht (0/0).
+
+- **06:40** · alle neun · still, kein offener Auftrag · Maßnahme: keine
+
+**Plan:** heute **PODCAST Aaronson**, Paket seit dem 23.10. bei ihm, offen die
+drei Links. **Vorrat 3** — über der Schwelle.
+
+### Der eine Punkt, der heute zu ihm geht
+**Die Kingsbury-Pause endet morgen, und die Endfassung ist nicht da.** Gerade
+im Ordner des Cutters nachgesehen: **noch dieselbe `v1_LOW_RES` vom 05.10.**,
+nichts Neues in zwanzig Tagen. Der kritische Weg nach dem Halt — Versatz,
+Schnitt, eine Nachbesserungsrunde, Paket — braucht fünf Tage bis zum 31.10.
+**Ab Montag passt das genau, ab Mittwoch nicht mehr.** Der Stichtag 28.10.
+steht in der Tageskontrolle.
+
+### Und ein Befund, der eine Bitte an ihn ist, keine Einstellung
+Sein *„du zoomst immer noch zu nah dran"* ist nachgemessen — **seine drei
+manuellen Sutcliffe-Shorts liegen bei 38,0 / 40,5 / 42,2 % Gesichtshöhe,
+unserer bei 49,6 %.** Und es ist **aus dem Master nicht erreichbar**: unser
+Ausschnitt `608×1080` nutzt schon die **volle Bildhöhe**; für 40 % bräuchte es
+`754×1340`, also **24 % mehr Bild, als in der Datei steht.** Daran lag der
+Bänder-Versuch vom 23.10., den er abgelehnt hat.
+**Schlussfolgerung, als solche gekennzeichnet:** seine ersten drei Shorts
+stammen sehr wahrscheinlich aus den **Kamera-Originalen**. Wer diese
+Bildsprache will, braucht diese Dateien.
+
+### Lernkanal
+Ausgabe 19, vier Einträge — dazu zwei Werkzeugbefunde, die jeden treffen:
+**`nohup … &` überlebt den Zug nicht** (26 Minuten Lauf weg, leeres Log), und
+**eine Schwelle aus hellem Material findet im dunklen Studio nichts** (fünf
+Kameraschnitte als eine Einstellung gelesen).
