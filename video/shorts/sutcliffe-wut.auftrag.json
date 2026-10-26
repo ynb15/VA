@@ -1,12 +1,15 @@
 {
  "name": "Sutcliffe-Folge - warum Wut dazugehoert",
  "datei": "YNB Podcast David Sutcliffe Anger.mp4",
- "stand": "2026-10-24 - erste Fassung, ohne Musik, 2160x3840",
+ "stand": "2026-10-26 - zweite Fassung: Tempo 1,1, Binnenschnitt, JORDAN, Musik",
  "wer_spricht": "Er fuehrt mit Chris Williamson und dem Unterschied zwischen suppression und containment hin, Sutcliffe antwortet.",
  "quelle": {
   "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
   "master_titel": "YNB Podcast: David Sutcliffe",
-  "fenster_master_s": [5592.0, 5708.0],
+  "fenster_master_s": [
+   5592.0,
+   5708.0
+  ],
   "hinweis": "In EINEM Stueck geholt. Datei beginnt bei Master 5592.00, 304 MB ueber 38 Bereichsanfragen."
  },
  "fundstelle": {
@@ -16,13 +19,26 @@
   "versatz": "Probe bei Master 5585: 'And our children.' bei Probe 8,92, veroeffentlicht 01:27:31 - daraus Master = 1,1 x veroeffentlicht - 182. Deckt sich mit dem Anker der Hypermaskulinitaets-Stelle (-184)."
  },
  "schnitt": {
-  "von_bis_src_s": [2.55, 98.45],
-  "von_bis_master_s": [5594.55, 5690.45],
+  "von_bis_src_s": [
+   2.55,
+   98.45
+  ],
+  "von_bis_master_s": [
+   5594.55,
+   5690.45
+  ],
   "dauer_roh_s": 95.9,
   "werkzeug": "video/schnitt_bauen.py (ein Stueck, Bild und Ton gleich)",
   "warum_anfang": "Der Satz davor ('und unsere Kinder') endet bei Probe 2,38, 'And I listened to your podcast' beginnt bei 2,78 - geschnitten bei 2,55 in der Luecke. Der Kamerawechsel 0,95 s davor (Master 5593,6000) wurde BEWUSST nicht genommen: dort liefe das Satzende von davor noch mit.",
   "warum_ende": "'I want access to that.' endet bei 98,28, danach 0,34 s Luecke, dann 'And but it's much more likely...'. Geschnitten bei 98,45. Die naechste Satzgrenze ('because it's not suppressed', 105,14) haette keine Luecke gehabt - dort setzt 'because' ohne Pause nach.",
-  "kamerawechsel_clipzeit_s": [10.5333, 12.0333, 17.5333, 28.5333, 73.6, 79.5333],
+  "kamerawechsel_clipzeit_s": [
+   10.5333,
+   12.0333,
+   17.5333,
+   28.5333,
+   73.6,
+   79.5333
+  ],
   "wie_gemessen": "video/schnittgrenzen.py - alle sechs Grenzen lagen 1 bis 6 Bilder neben der Schaetzung."
  },
  "bild": {
@@ -49,7 +65,30 @@
   "john_peterson": "STEHT SO IM BILD, weil es so gesagt ist. Gemeint ist Jordan Peterson. Drei unabhaengige Systeme hoeren 'John': YouTubes automatische Untertitel der Folge, Whisper small und Whisper medium. NICHT stillschweigend korrigiert - das waere ein Wort, das er nicht gesagt hat. Er entscheidet.",
   "kuerzeste": "'BE AN' steht 0,22 s im Bild, in 'anger can be an appropriate response'. Es bleibt: die neue Weglass-Regel greift nur bei EINZELNEN Woertern, sonst haette sie Text weggeworfen."
  },
- "ton": {"laut": "aus", "dehnung": "atempo", "musik": "keine - nicht bestellt"},
+ "ton": {
+  "laut": "aus",
+  "dehnung": "atempo",
+  "musik": "keine - nicht bestellt"
+ },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py",
- "offen": "Er entscheidet ueber die Laenge. Vorschlag in video/sutcliffe-zwei-neue-clips.md: Beginn bei Clipzeit 17,5 macht den Einstieg haerter und spart 17 s."
+ "offen": "Er entscheidet ueber die Laenge. Vorschlag in video/sutcliffe-zwei-neue-clips.md: Beginn bei Clipzeit 17,5 macht den Einstieg haerter und spart 17 s.",
+ "aenderungen_26_10": {
+  "seine_ansage": "'John = Jordan Peterson' / 'about - man having (rausschneiden) - that men must' / 'Geschwindigkeit erhoehen auf 1.1' / 'bitte Moms got work unterlegen und schoen laut'",
+  "jordan": "JOHN -> JORDAN in der Einblendungsdatei geaendert. Gesagt ist 'John' - drei unabhaengige Systeme hoeren das -, er hat es ausdruecklich so entschieden.",
+  "binnenschnitt": {
+   "heraus": "3,30 s = GENAU 99 Bilder, Clipzeit 15,62-18,92 im Ton",
+   "was": "das 'man having' (16,18-17,08) und die 2,01 s Pause dahinter (17,08-19,09)",
+   "j_schnitt": "Das BILD schneidet 3,30 s frueher, naemlich auf dem Kamerawechsel bei Clipzeit 17,5333 (dort geht der Master ohnehin auf die Totale). Damit faellt der Bildschnitt auf einen Wechsel, den das Material selbst hergibt, und der Tonschnitt liegt in der Stille. Ergebnis: 'preach about' - 0,42 s Luft - 'that man must'.",
+   "warum_99_bilder": "Erster Versuch mit 3,29 s = 98,7 Bildern. Die Naht war sauber, aber jede Einstellungsgrenze DAHINTER lag zwischen zwei Bildern, und der Renderer gab dem Grenzbild den Ausschnitt der falschen Einstellung - an vier Grenzen wieder zwei Bildspruenge statt einem. schnitt_bauen.py bricht so etwas jetzt ab."
+  },
+  "einblendungen_korrigiert": "In der ersten Fassung standen THAT MAN MUST vier Sekunden zu frueh im Bild: das kleine Modell hatte das 'man having' als 'that' gehoert und die Zeiten danach verschoben ('about' 14,38-15,14 / 'that' 15,14-16,48, waehrend das echte 'that' erst bei 19,09 faellt). Jetzt auf die gemessenen Zeiten gesetzt.",
+  "totalen": "Auf volle Bildhoehe, 121:0:608:1080 (er) und 1158:0:608:1080 (Sutcliffe) statt 493x875. Am Kontaktabzug geprueft: Kopf nahe der Mitte, Raum sichtbar.",
+  "tempo": "1,1 statt 1,2 - das Tempo seiner veroeffentlichten Folge. 92,60 s Clip -> 84,20 s + 4,21 s Outro = 88,45 s.",
+  "musik": "Adam Taylor - Mom's Got Work, Bett ab Songsekunde 0 (setzt sofort mit vollem Pegel ein). Zwei Pegel geliefert: 0 dB unter der Stimme ('schoen laut', Bett allein -28,6 dB) und 3 dB darunter (-31,6 dB), sein Pegel vom 21.10. ACHTUNG: der Titel ist als 'The Handmaid's Tale (Deluxe Edition), Original Series Soundtrack, 2019' getaggt - eine kommerzielle Soundtrack-Veroeffentlichung und damit ein Sperrkandidat."
+ },
+ "laenge_s": {
+  "hauptteil": 84.2,
+  "outro": 4.21,
+  "gesamt": 88.45
+ }
 }

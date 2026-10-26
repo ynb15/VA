@@ -1,17 +1,25 @@
 {
- "quelle": "Fenster Master 5592-5708 aus 1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT (master_schnitt.py); Datei beginnt bei Master 5592.00",
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/wut-roh.mp4",
  "bild": [
   [
    2.55,
+   16.7833
+  ],
+  [
+   20.0833,
    98.45
   ]
  ],
  "ton": [
   [
    2.55,
+   18.169999999999998
+  ],
+  [
+   21.470000000000002,
    98.45
   ]
  ],
  "tonblende_s": 0.02,
- "hinweis": "Ein Stueck, Bild und Ton gleich - kein J-Schnitt noetig, die Stelle laeuft durch. Zeiten relativ zum Dateianfang."
+ "hinweis": "J-Schnitt, 3,30 s heraus = genau 99 Bilder. Bildschnitt auf dem Kamerawechsel bei Clipzeit 17,5333, Tonschnitt in der Stille nach 'about'. Die Laenge MUSS ganzzahlig in Bildern sein, sonst fallen alle Einstellungsgrenzen dahinter zwischen zwei Bilder und der Renderer gibt dem Grenzbild den Ausschnitt der falschen Einstellung."
 }
