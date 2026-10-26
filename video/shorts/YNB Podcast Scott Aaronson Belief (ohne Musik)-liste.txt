@@ -1,0 +1,133 @@
+# Scott Aaronson — „What do you believe in?" (59,2 s · Hauptteil 55,0 s + Outro 4,2 s)
+# Aus dem Religionsblock der Folge, Rohzeit 1:11:38–1:14:14
+#
+# Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
+# Was raus soll: Zeile loeschen oder die Nummer nennen.
+#
+  1  [00:00.00–00:01.02]  WHAT DO YOU BELIEVE IN?
+  2  [00:02.12–00:05.70]  SO YOU KNOW I MEAN I WAS I WAS RAISED IN A JEWISH FAMILY
+  3  [00:05.70–00:07.00]  AND
+  4  [00:07.62–00:07.96]  YOU KNOW I
+  5  [00:09.62–00:10.70]  AT SOME POINT
+  6  [00:11.16–00:15.10]  I YOU KNOW ACTUALLY AROUND THE TIME WHEN I WAS READING ISAAC ASIMOV AND ALL YOU
+  7  [00:15.10–00:18.86]  KNOW AND CARL SAGAN AND RICHARD DAWKINS AND ALL THESE PEOPLE I
+  8  [00:19.30–00:22.42]  YOU KNOW AROUND WHEN I WAS 12 OR SO I SAID WOW LIKE THIS IS
+  9  [00:22.42–00:25.92]  THIS IS REALLY ALL A BUNCH OF YOU KNOW IRON AGE MYTHS ISN'T IT?
+ 10  [00:26.02–00:30.88]  LIKE YOU KNOW NONE OF THAT WAS ACTUALLY TRUE RIGHT WHAT I YOU KNOW WHAT
+ 11  [00:30.88–00:36.74]  I HAD LEARNED ABOUT AT MY HEBREW DAY SCHOOL YOU KNOW AND I BECAME YOU
+ 12  [00:36.74–00:44.48]  KNOW FOR A WHILE KIND OF YOU KNOW FAIRLY MILITANT ATHEIST I GUESS AND SO YOU
+ 13  [00:44.48–00:48.94]  KNOW I SORT OF EVOLVED TO HAVE A MORE RELAXED ATTITUDE YOU COULD SAY
+ 14  [00:49.16–00:54.24]  WHERE YOU KNOW THIS IS JUST YOU KNOW PART OF WHATEVER MY HISTORY MY
+ 15  [00:54.24–00:54.70]  CULTURE
+
+# ══════════════════════════════════════════════════════════════════
+# DER BOGEN
+# ══════════════════════════════════════════════════════════════════
+# Deine Frage „What do you believe in?" — juedische Familie — mit zwoelf,
+# ueber Asimov, Sagan und Dawkins: „Iron Age myths" — militanter Atheist —
+# und am Ende die Kehrtwende: „a more relaxed attitude, this is just part of
+# my history, my culture."
+#
+# Nur Dein eigener Satz steht am Anfang, Du bist dabei auch im Bild (Totale,
+# Kasten auf Dich). Danach ist er durchgehend dran.
+
+# ══════════════════════════════════════════════════════════════════
+# WAS ICH HERAUSGENOMMEN HABE — genau eine Stelle, bei 00:43.7
+# ══════════════════════════════════════════════════════════════════
+#
+# Zwischen „militant atheist, I guess" und „and so I sort of evolved" fehlen
+# 1:35 Minuten. Der Schnitt liegt bei 00:43.7 im fertigen Short.
+# Rohzeit 1:12:27–1:14:02. Woertlich:
+
+  [1:12:27]  And, you know, I thought, okay, the progress of science has given sort of
+  [1:12:30]  less and less room, you know, for God or for anything mystical.
+  [1:12:37]  And that's just been the pattern for hundreds of years.
+  [1:12:40]  And there's no reason to expect that that won't continue and that God
+  [1:12:45]  will just get pushed into a tighter and tighter corner, of maybe like
+  [1:12:48]  setting the constants of the standard model of elementary particles,
+  [1:12:52]  but then, after that, the laws of physics pretty much answer what is
+  [1:12:55]  going to happen. Right.
+  [1:13:00]  Um, and so that was kind of my view for a while.
+  [1:13:06]  Um, you know, I remember, when I was a student, I was in computer
+  [1:13:14]  science, unfortunately computer science tends to be like more than
+  [1:13:18]  80% male, right.
+  [1:13:20]  And I thought, man, if I wanted to meet women, probably the best way
+  [1:13:30]  would be to go to the Hillel house, right.
+  [1:13:34]  But then I said, no, but it would be dishonest for me to do that
+  [1:13:37]  because I don't really believe in it.
+  [1:13:39]  And then I thought, but it's not really symmetric, is it?
+  [1:13:42]  It's like, okay, if you believe in a personal God who really cares
+  [1:13:46]  about you, then he might punish you for like going to a secular
+  [1:13:50]  humanist meetup, right.
+  [1:13:53]  But there's no atheist God who will punish you for going to Hillel.
+  [1:13:57]  If you want to go there and have the social experience, then you
+  [1:14:00]  should just do that. Right.
+
+# Warum sie draussen ist: mit ihr waere das Stueck 2:34 lang. Das ist der
+#   einzige Grund — inhaltlich haengt nichts daran, „and so I sort of
+#   evolved" schliesst direkt an „militant atheist" an.
+# Die Hillel-Geschichte (1:13:06–1:14:02, rund 56 s) ist fuer sich ein
+#   eigenes Short: er will Frauen kennenlernen, geht fast in den juedischen
+#   Studentenclub, findet dann das Argument „es gibt keinen Atheistengott,
+#   der mich dafuer bestraft". Sag Bescheid, dann baue ich das.
+# Willst Du stattdessen den Wissenschafts-Teil drin haben („God gets pushed
+#   into a tighter and tighter corner"), sagst Du es — dann muss dafuer
+#   etwas anderes weichen, weil wir sonst ueber eine Minute kommen.
+
+# ══════════════════════════════════════════════════════════════════
+# WAS IM RELIGIONSBLOCK SONST NOCH LIEGT (1:10:43–1:19:43)
+# ══════════════════════════════════════════════════════════════════
+# Nur als Uebersicht, damit Du siehst, was es noch gibt:
+#
+#   1:10:43  Deine Einleitung: Wissenschaftler, der ueber Spiritualitaet
+#            schreibt — seine Antwort: „I write about whatever is
+#            interesting to me at the moment."
+#   1:11:38  DIESES SHORT.
+#   1:13:06  Die Hillel-Geschichte (siehe oben).
+#   1:14:19  Deine Frage „What does it mean to you to be Jewish?" — seine
+#            erste Antwort: „every few generations or so, someone is going
+#            to try to kill you. So you should probably be aware of the
+#            rate." Hart, kurz, sehr stark. Rund 40 s.
+#   1:15:01  „Ethics is really hard" — wer gehoert in den Kreis der Wesen,
+#            die zaehlen: Feten, Tiere, KIs. Fuehrt direkt zum Alignment.
+#   1:17:09  Babylon: „our god has failed us" gegen „we failed God" — die
+#            Umkehr, mit der das Judentum laut ihm beginnt. Rund 59 s und
+#            in einem Stueck, ohne Innenschnitt zu bauen.
+#   1:18:08  Hiob und der Schluss: „If God is going to allow all of this
+#            injustice, then we should be helping the really just God come
+#            into being." Verbindet Religion und KI-Alignment — passt zum
+#            „AI God"-Short.
+#   Ab 1:19:44 geht es um Oktober 7 und Gaza. Da baue ich nichts, ohne
+#            dass Du es ausdruecklich sagst.
+
+# ══════════════════════════════════════════════════════════════════
+# MUSIK — eine Annahme von mir, sag wenn sie falsch ist
+# ══════════════════════════════════════════════════════════════════
+# Du hast zu diesem Short nichts zur Musik gesagt. Ich habe „In This Shirt"
+# daruntergelegt und sie wie beim Safety-Short vor dem Outro enden lassen:
+# Bett 0,00–54,97 s, Ausblende 53,5–55,0, danach laeuft das Outro allein.
+# Durch Subtraktion geprueft: -40 bis -50 dB durchgehend, ab 55,0 s unter
+# -72 dB. Stimme -34,4 dB, Bett -43,9 dB — 9,5 dB darunter.
+# Ohne Musik liegt die Fassung „(ohne Musik)" im Repo, die schicke ich nicht
+# mehr ungefragt mit.
+
+# ══════════════════════════════════════════════════════════════════
+# AUFBAU
+#   0:00.0–0:01.2  Totale, Kasten auf Dich — Deine Frage
+#   0:01.2–0:35.7  Aaronson Nah
+#   0:35.7–0:40.9  Totale, Kasten auf ihn (Du trinkst links aus dem Bild)
+#   0:40.9–0:43.7  Aaronson Nah
+#   0:43.7–0:55.0  Aaronson Nah, zweites Stueck
+# Die ersten vier Wechsel sind die Kameraschnitte des Studios, nicht meine.
+# Meiner ist nur der bei 0:43.7 — und weil dort beide Seiten dieselbe
+# Nahaufnahme sind, springt sein Kopf ein Stueck. Stoert es Dich, ziehe ich
+# das zweite Stueck etwas enger, dann liest es sich als gewollter Schnitt.
+#
+# ABNAHME (gemessen)
+#   1080x1920 · 48 kHz · 59,2 s · Outro da · 67 Untertitel · Ortscheck sauber
+#   Musikbett absichtlich da, die Pruefung meldet es korrekt als Fehler.
+#
+# Tempo 1,12. Untertitel woertlich, eine Korrektur: bei 0:20.8 hoerte das
+# Modell „well", im ungedehnten Ton mit large-v3 ist es „wow".
+#
+# NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.

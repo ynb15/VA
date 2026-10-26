@@ -1,0 +1,11 @@
+{
+  "quelle": "vorlage-religion.mov",
+  "groesse": [1920, 1080],
+  "einstellungen": [
+    {"kasten": "41:0:608:1080",   "lippe": 1100, "start": 0.000,  "ende": 1.161,  "wer": "Totale, Kasten auf Yannick — seine Frage"},
+    {"kasten": "686:0:608:1080",  "lippe": 1280, "start": 1.161,  "ende": 35.654, "wer": "Aaronson, Nah"},
+    {"kasten": "1166:0:608:1080", "lippe": 1100, "start": 35.654, "ende": 40.893, "wer": "Totale, Kasten auf Aaronson — Yannick trinkt links aus dem Bild"},
+    {"kasten": "686:0:608:1080",  "lippe": 1280, "start": 40.893, "ende": 43.733, "wer": "Aaronson, Nah — 'militant atheist'"},
+    {"kasten": "596:0:608:1080",  "lippe": 1280, "start": 43.733, "ende": 54.967, "wer": "Aaronson, Nah — zweites Stueck, 'more relaxed attitude'"}
+  ]
+}

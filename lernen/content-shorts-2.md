@@ -6,6 +6,46 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-26 (spaet) — Belief-Short, und zwei Dinge ueber Werkzeug
+
+- **Nur eine Fassung schicken, nicht zwei.** Ich hatte ihm Musik- und
+  musikfreie Fassung zusammen geschickt; seine Reaktion: *„Ich weiss nicht,
+  warum du mir jetzt nochmal einen Short ohne Musik geschickt hast."* Die
+  Sicherungsfassung gehoert ins Repo, nicht in die Lieferung. **Eine Datei
+  pro Short, die andere nur auf Nachfrage** — dasselbe Muster wie am 22.10.,
+  als ich ihm zweimal dasselbe AIGod-Short geschickt hatte.
+  → betrifft: alle Content-Agenten
+- **Das groessere Whisper-Modell ist nicht automatisch das bessere.**
+  `large-v3` glaettet Stotterer: aus *„like this is, this is really all a
+  bunch of"* macht es *„this is really all a bunch of"*. Fuer eingebrannte
+  Untertitel, die zu den Lippen passen muessen, ist das ein Nachteil.
+  **`medium` fuer den Durchgang, `large-v3` nur als Schiedsrichter fuer ein
+  einzelnes strittiges Wort** — und dann am *ungedehnten* Ton, weil die
+  Dehnung selbst Fehler erzeugt: bei Tempo 1,12 hoerte `medium` „well", wo
+  „wow" steht.
+  → betrifft: content-*
+- **Kameraschnitte misst man am fertigen Vorlagenband, nicht an der Quelle.**
+  Ich hatte die Schnitte in der Quelle gemessen und auf die Zeitachse
+  umgerechnet (Klipzeit−Start)/Tempo. Das stimmte zwar, aber ich konnte es
+  erst glauben, nachdem ich dieselbe Messung am Vorlagenband wiederholt
+  hatte: 1,167 · 35,667 · 40,900 gegen gerechnete 1,161 · 35,654 · 40,893.
+  **Eine Minute Nachmessen am fertigen Band ersetzt das Nachrechnen.**
+  → betrifft: content-*
+- **Ein Innenschnitt zwischen zwei aehnlichen Nahaufnahmen ist der Fall, bei
+  dem es glitchig aussieht.** Der Szenenwert an meiner Naht ist **0,064**,
+  an den Kameraschnitten des Studios **0,52–0,53**. Wo der Wert niedrig ist,
+  springt nur der Kopf, und genau das liest sich als Fehler statt als
+  Schnitt. **Niedriger Szenenwert an einer selbstgebauten Naht = Warnsignal**;
+  Gegenmittel ist ein merklich engerer Kasten auf der zweiten Seite, damit
+  der Schnitt gewollt wirkt.
+  → betrifft: alle Content-Agenten
+- **Rohzeit = Masterzeit + 12,6 s**, geprueft an „What do you believe in?"
+  (Master 4285,96 s → roh 1:11:38,6; Rohtranskript 1:11:38). Shorts I nennt
+  12,2 s, `video/aaronson-shorts.md` ebenfalls. **An dieser Stelle der Folge
+  sind es 12,6 s** — der Versatz ist also nicht ueber die ganze Folge
+  konstant, und wer bildgenau schneidet, misst ihn an seiner Stelle neu.
+  → betrifft: content-*, alle
+
 ## 2026-10-26 (abends) — drei Rueckmeldungen zu „How safe is AI"
 
 - **Die drei Bilder Totale, die ich heute frueh als Regel notiert hatte, liest
