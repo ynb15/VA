@@ -52,6 +52,29 @@ def main():
         sys.exit(f"Bild {db:.4f} s und Ton {dt:.4f} s sind verschieden lang - "
                  f"das laeuft auseinander. Plan korrigieren.")
 
+    # Jede Bildgrenze muss auf einem Bild liegen, und die herausgenommene
+    # Laenge muss eine GANZE Zahl von Bildern sein. Am 26.10.2026 teuer
+    # gelernt: 3,29 s sind 98,7 Bilder. Der Schnitt selbst sah sauber aus,
+    # aber jede Einstellungsgrenze DAHINTER lag danach zwischen zwei Bildern,
+    # und der Renderer gab dem Grenzbild den Ausschnitt der falschen
+    # Einstellung - an vier Grenzen standen wieder zwei Bildspruenge statt
+    # einem. Genau der Fehler, den er am 24.10. dreimal gemeldet hat.
+    bilder = plan.get("bilder_je_sekunde", 30)
+    schief = []
+    for a, b in bild:
+        for t in (a, b):
+            if abs(t * bilder - round(t * bilder)) > 0.01:
+                schief.append(t)
+    if abs(db * bilder - round(db * bilder)) > 0.01:
+        schief.append(db)
+    if schief:
+        sys.exit("Diese Zeiten liegen nicht auf einem Bild (bei "
+                 f"{bilder} Bildern/s): "
+                 + ", ".join(f"{t:.4f} = Bild {t * bilder:.2f}" for t in schief)
+                 + "\nDas faellt am Schnitt selbst nicht auf, verschiebt aber "
+                   "jede Einstellungsgrenze dahinter zwischen zwei Bilder. "
+                   "Auf ein Vielfaches von 1/%d runden." % bilder)
+
     teile, enden = [], []
     for i, (a, b) in enumerate(bild):
         teile.append(f"[0:v]trim={a:.4f}:{b:.4f},setpts=PTS-STARTPTS[v{i}]")

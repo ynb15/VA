@@ -957,3 +957,39 @@ damit angefangen, wären beide Fehler nicht passiert.
 1080p-Master das Ende — wer weiter raus soll, braucht anderes Material, nicht
 einen anderen Parameter.** Und in Totalen prüfen, ob `bildausschnitt.py`
 zusätzlich hineingezoomt hat (`493×875`); dort ist Luft.
+
+---
+
+## 26.10. — ein Binnenschnitt muss eine ganze Zahl von Bildern lang sein
+
+Am Anger-Short sollte eine Stolperstelle heraus (*„preach about — man having
+— that man must"*). Gemessen, J-Schnitt gebaut, Bildschnitt auf den
+Kamerawechsel gelegt, Tonschnitt in die Stille — die Naht selbst war sauber,
+**ein** Bildsprung. Trotzdem meldete die Schnittprobe an **vier anderen
+Grenzen** plötzlich wieder **zwei** Sprünge:
+
+| Ausgabezeit | Sprünge |
+|---|---|
+| 12,95 | 34,4 **und 27,0** |
+| 22,95 | 26,9 **und 36,5** |
+| 63,92 | 37,3 **und 26,9** |
+| 69,31 | 14,1 **und 33,8** |
+
+Das ist exakt die Signatur vom 24.10.: ein Bild mit dem Ausschnitt der
+falschen Einstellung.
+
+**Ursache:** herausgenommen waren **3,29 s = 98,7 Bilder**. Kein ganzes Bild.
+Dadurch liegt jede Einstellungsgrenze dahinter (17,5333 → 14,2433) zwischen
+zwei Bildern, und `trim` nimmt wieder alles *kleiner als* die Grenze — das
+Grenzbild fällt auf die falsche Seite. Mit **3,30 s = 99 Bilder** liegen alle
+Grenzen wieder glatt (14,2333 = Bild 427, 25,2333 = Bild 757, 70,30 = Bild
+2109, 76,2333 = Bild 2287).
+
+**`schnitt_bauen.py` bricht jetzt ab**, wenn eine Bildgrenze oder die
+Gesamtlänge nicht auf einem Bild liegt, mit der Zeit und der Bildnummer in
+der Meldung. Die Prüfung ist billiger als ein 25-Minuten-Lauf in 4K.
+
+→ betrifft: alle, die einen Binnenschnitt setzen. **Erst die Länge in Bilder
+umrechnen, dann schneiden** — und danach die Schnittprobe laufen lassen, an
+*allen* Grenzen, nicht nur an der neuen Naht. Der Fehler zeigt sich nicht
+dort, wo man geschnitten hat.
