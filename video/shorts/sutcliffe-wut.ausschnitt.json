@@ -1,5 +1,5 @@
 {
- "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/wut3-clip.mp4",
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/wutlang-clip.mp4",
  "groesse": [
   1920,
   1080
@@ -11,7 +11,7 @@
    "kasten": "635:0:608:1080",
    "lippe": 1267,
    "start": 0.0,
-   "ende": 10.5333,
+   "ende": 10.533333333333333,
    "tot": false,
    "bewegung_x": 0.5,
    "mitte": 0.73,
@@ -21,8 +21,8 @@
    "layout": "einzel",
    "kasten": "675:0:608:1080",
    "lippe": 1267,
-   "start": 10.5333,
-   "ende": 12.0333,
+   "start": 10.533333333333333,
+   "ende": 12.033333333333333,
    "tot": false,
    "bewegung_x": 0.531,
    "mitte": 0.67,
@@ -32,8 +32,8 @@
    "layout": "einzel",
    "kasten": "635:0:608:1080",
    "lippe": 1267,
-   "start": 12.0333,
-   "ende": 14.2333,
+   "start": 12.033333333333333,
+   "ende": 14.233333333333333,
    "tot": false,
    "bewegung_x": 0.481,
    "mitte": 0.69,
@@ -43,8 +43,8 @@
    "layout": "einzel",
    "kasten": "121:0:608:1080",
    "lippe": 1267,
-   "start": 14.2333,
-   "ende": 25.2333,
+   "start": 14.233333333333333,
+   "ende": 25.233333333333334,
    "tot": false,
    "bewegung_x": 0.188,
    "mitte": 0.26,
@@ -54,7 +54,7 @@
    "layout": "einzel",
    "kasten": "675:0:608:1080",
    "lippe": 1267,
-   "start": 25.2333,
+   "start": 25.233333333333334,
    "ende": 70.3,
    "tot": false,
    "bewegung_x": 0.512,
@@ -66,7 +66,7 @@
    "kasten": "1158:0:608:1080",
    "lippe": 1267,
    "start": 70.3,
-   "ende": 76.2333,
+   "ende": 76.23333333333333,
    "tot": false,
    "bewegung_x": 0.831,
    "mitte": 0.27,
@@ -76,12 +76,28 @@
    "layout": "einzel",
    "kasten": "675:0:608:1080",
    "lippe": 1267,
-   "start": 76.2333,
-   "ende": 92.6,
+   "start": 76.23333333333333,
+   "ende": 123.23333333333333,
    "tot": false,
    "bewegung_x": 0.494,
    "mitte": 0.75,
    "masse": 3.98
+  },
+  {
+   "layout": "einzel",
+   "kasten": "1158:0:608:1080",
+   "lippe": 1267,
+   "start": 123.23333333333333,
+   "ende": 130.23333333333332,
+   "tot": false
+  },
+  {
+   "layout": "einzel",
+   "kasten": "675:0:608:1080",
+   "lippe": 1267,
+   "start": 130.23333333333332,
+   "ende": 148.4,
+   "tot": false
   }
  ]
 }

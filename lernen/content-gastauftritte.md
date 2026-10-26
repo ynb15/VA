@@ -1001,3 +1001,23 @@ Bildraster des geschnittenen Clips beginnt bei 0, egal wo in der Quelle
 geschnitten wurde; entscheidend ist allein die **Länge jedes Bildstücks**.
 14,2333 s = 427 Bilder und 134,1667 s = 4025 Bilder sind glatt, auch wenn
 2,55 s = 76,5 Bilder es nicht ist. Die Prüfung misst jetzt die Längen.
+
+---
+
+## 26.10. — eine Totale sieht in der Bildmitte aus wie eine leere Einstellung
+
+Beim Verlängern des Anger-Shorts kamen zwei neue Einstellungen dazu. Die
+erste habe ich mit dem üblichen Kasten (`675`, also Bildmitte) abgetastet und
+gesehen: **Tisch, Regal, Dosen, kein Mensch.** Sieben Sekunden leeres Bild —
+ich war schon dabei, sie als tote Einstellung zu behandeln.
+
+**Sie ist keine.** Es ist die Totale: links sitzt er, rechts Sutcliffe, und
+dazwischen steht der Tisch. Genau dafür gibt es in `bildausschnitt.py` die
+Mittenmessung (`MITTE_SCHWELLE`) — nur hatte ich den Kasten hier von Hand
+gesetzt, ohne den Planer zu fragen, und dann an der einen Stelle geprüft, an
+der garantiert niemand sitzt.
+
+→ betrifft: alle. **Bei einer neuen Einstellung nie nur die Bildmitte
+ansehen** — ein Kontaktabzug über die ganze Breite kostet zwei Sekunden und
+hätte die Verwechslung sofort ausgeschlossen. Der Kasten liegt jetzt rechts
+auf Sutcliffe, derselbe Wert wie bei der anderen Totale desselben Clips.

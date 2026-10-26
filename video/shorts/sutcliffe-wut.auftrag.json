@@ -1,7 +1,7 @@
 {
  "name": "Sutcliffe-Folge - warum Wut dazugehoert",
  "datei": "YNB Podcast David Sutcliffe Anger.mp4",
- "stand": "2026-10-26 - zweite Fassung: Tempo 1,1, Binnenschnitt, JORDAN, Musik",
+ "stand": "2026-10-26 - dritte Fassung: mit dem Zusatz bis 'acting it out unconsciously', Tempo 1,17",
  "wer_spricht": "Er fuehrt mit Chris Williamson und dem Unterschied zwischen suppression und containment hin, Sutcliffe antwortet.",
  "quelle": {
   "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
@@ -87,8 +87,20 @@
   "musik": "Adam Taylor - Mom's Got Work, Bett ab Songsekunde 0 (setzt sofort mit vollem Pegel ein). Zwei Pegel geliefert: 0 dB unter der Stimme ('schoen laut', Bett allein -28,6 dB) und 3 dB darunter (-31,6 dB), sein Pegel vom 21.10. ACHTUNG: der Titel ist als 'The Handmaid's Tale (Deluxe Edition), Original Series Soundtrack, 2019' getaggt - eine kommerzielle Soundtrack-Veroeffentlichung und damit ein Sperrkandidat."
  },
  "laenge_s": {
-  "hauptteil": 84.2,
+  "hauptteil": 126.87,
   "outro": 4.21,
-  "gesamt": 88.45
+  "gesamt": 131.11
+ },
+ "aenderungen_26_10_zusatz": {
+  "seine_ansage": "Er hat sich die Fortsetzung als Skript geben lassen, die ersten fuenf Saetze davon ausgewaehlt und gesagt: 'das bitte neu mit reinnehmen'. Zuerst dazu 'die Geschwindigkeit so erhoehen, dass der Inhalt unter 90 Sekunden ist' - das waere Tempo 1,65 gewesen; auf den Hinweis hin hat er korrigiert: 'das hatte ich falsch verstanden, dann gib mir das bitte einfach mit dem Zusatz, aber halt auf 1,17-facher Geschwindigkeit'.",
+  "neues_ende": "Master 5745,96, geschnitten bei 5746,25 in der Pause davor. Letzter Satz: 'It's all part of the human experience, and I want access to all of it, but I don't want to be acting it out unconsciously.'",
+  "fenster": "Master 5592-5750 in EINEM Stueck geholt (408 MB), damit der ganze Clip aus einer Quelle kommt und keine zwei Fenster aneinandergesetzt werden muessen.",
+  "laenge": "148,40 s Clip = 4452 Bilder -> bei 1,17 126,87 s + 4,21 s Outro = 131,11 s.",
+  "stummes_and": "Der Stolperer 'and' vor 'but it's much more likely' (Clipzeit 92,59-93,13) ist STUMM geschaltet, nicht herausgeschnitten: an dieser Stelle gibt es keinen Kamerawechsel, hinter dem sich ein Bildschnitt verstecken liesse. Im Untertitel steht er nicht.",
+  "zwei_neue_einstellungen": {
+   "123,2333-130,2333": "Totale, Sutcliffe spricht und sitzt rechts - Kasten 1158:0:608:1080, derselbe wie bei der anderen Totale dieses Clips. ACHTUNG beim Pruefen: ich hatte zuerst nur die Bildmitte angesehen, und dort steht der Tisch - die Einstellung sah dadurch aus wie eine LEERE. Sie ist es nicht. Bei einer Totale immer beide Raender ansehen, nicht die Mitte.",
+   "130,2333-148,4000": "wieder seine Nahaufnahme, Kasten 675:0:608:1080"
+  },
+  "geprueft": "Alle neun Kamerawechsel: je genau ein Bildsprung. Die beiden neuen Grenzen liegen auf Bild 3697 und 3907."
  }
 }

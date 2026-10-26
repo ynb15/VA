@@ -1,5 +1,5 @@
 {
- "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/wut-roh.mp4",
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/wut-lang-roh.mp4",
  "bild": [
   [
    2.55,
@@ -7,19 +7,19 @@
   ],
   [
    20.0833,
-   98.45
+   154.25
   ]
  ],
  "ton": [
   [
    2.55,
-   18.169999999999998
+   18.17
   ],
   [
-   21.470000000000002,
-   98.45
+   21.47,
+   154.25
   ]
  ],
  "tonblende_s": 0.02,
- "hinweis": "J-Schnitt, 3,30 s heraus = genau 99 Bilder. Bildschnitt auf dem Kamerawechsel bei Clipzeit 17,5333, Tonschnitt in der Stille nach 'about'. Die Laenge MUSS ganzzahlig in Bildern sein, sonst fallen alle Einstellungsgrenzen dahinter zwischen zwei Bilder und der Renderer gibt dem Grenzbild den Ausschnitt der falschen Einstellung."
+ "hinweis": "Wie die abgenommene Fassung, nur laenger: Ende jetzt nach '...but I don't want to be acting it out unconsciously.' (Master 5745,96, geschnitten bei 5746,25 in der Pause davor). Der Binnenschnitt fuer das 'man having' bleibt 3,30 s = 99 Bilder."
 }
