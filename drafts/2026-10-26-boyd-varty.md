@@ -36,19 +36,19 @@ Im Text steht Cals Name trotzdem — aber als jemand, der Boyds Namen genannt ha
 
 ---
 
-## Die zweite offene Sache: kennt Rob Boyd persönlich?
+## Betreff — von ihm am 26.10. entschieden
 
-Rob Paddock hat Dir Boyd letzte Woche genannt. **Ob er ihn kennt oder nur von ihm
-weiß, sehe ich nicht** — und genau davon hängt der Betreff ab:
+**`[Via Rob Paddock] Cape Town, Austin, Londolozi: Man's Search for Meaning`**
 
-- **Rob kennt ihn** → `[Via Rob Paddock] From Austin to Londolozi: Man's Search for Meaning`
-- **Rob kennt ihn nicht** → `From Austin to Londolozi: Man's Search for Meaning`
-
-**Warum „From Austin to Londolozi":** Dein Muster setzt an die zweite Stelle den
-Ort des *Empfängers* („From Cape Town to Austin" an Leute in Austin). Boyd sitzt
-auf Londolozi im östlichen Südafrika, nicht in Kapstadt. Und die erste Stelle
-erzählt zufällig genau die wahre Geschichte: **In Austin hast Du zum ersten Mal
-von ihm gehört.**
+> **Die Klammer ist sauber:** *„Rob hat mir angeboten, mich mit Boyd zu
+> connecten."* Damit ist Rob ein echter Vermittler, nicht nur jemand, der einen
+> Namen genannt hat — und Cal bleibt aus dem Betreff draußen.
+>
+> **Drei Orte statt des Bogens aus zwei**, seine Vorgabe. Es ist auch die
+> Reihenfolge der Geschichte: wo er herkommt, wo er den Namen zum ersten Mal
+> hörte, wo Boyd sitzt. **Schreibweise:** das Reservat heißt *Londolozi* mit z.
+> Bei einem Mann der vierten Generation dort ist ein Tippfehler im Betreff das
+> Letzte, was man sich leisten will.
 
 ---
 
@@ -71,7 +71,7 @@ von ihm gehört.**
 > more or less the moment they heard I'm based in South Africa, whether I knew
 > you. Last week I sat down with my mentor Rob Paddock here in Cape Town and
 > asked him who else belonged on this show. He said your name before I'd finished
-> the sentence.
+> the sentence, and offered to put us in touch.
 >
 > In between I listened to the one you did with Cal, Greg and Chase. I ordered
 > your book that same evening.
