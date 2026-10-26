@@ -6,6 +6,42 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-26 — „How safe is AI", und der Tonschnitt auf den Kameraschnitt gelegt
+
+- **Es gab zwei Stuecke mit fast demselben Namen, und sie sind verschieden.**
+  Shorts I' `aaronson-01-is-ai-safe` beginnt mit **Aaronson** („The trouble
+  with AI right now is not that it doesn't work"); das Stueck auf
+  `claude/content-cinematic`, `aaronson-01-how-safe-is-ai.srt`, beginnt mit
+  **Yannicks Frage** „How safe is AI?" (Rohzeit **00:55:52**). Er meinte das
+  zweite — *„Stelle ich, glaube ich, die Frage"*, und das stimmte.
+  **Bei zwei Stuecken mit aehnlichem Namen entscheidet, wer den ersten Satz
+  spricht, nicht der Dateiname.**
+  → betrifft: content-*
+- **Der beste Platz fuer einen Innenschnitt ist ein Kameraschnitt des Studios
+  — und manchmal liegt er schon fast da.** Ich wollte Teil 1 nach „…other than
+  our own" enden lassen; das Wort endet bei Excerpt **26,12 s**, der
+  Studioschnitt auf die Totale liegt bei **26,16 s**. **0,04 s dazwischen.**
+  Also den Tonschnitt genau auf den Kameraschnitt gelegt, statt 0,2 s spaeter
+  mitten in der Einstellung. **Das erspart den J-Schnitt ganz** — es gibt nur
+  einen Schnitt, und der faellt auf einen Wechsel.
+  **Vor jedem Innenschnitt nachsehen, ob in 0,5 s Umkreis ein Kameraschnitt
+  liegt**, und den Schnitt dorthin ziehen, wenn das Wort es erlaubt.
+  → betrifft: content-*
+- **Drei Bilder Totale wegzuwerfen ist nicht noetig, sie bekommen einen
+  eigenen Kasten.** Nach dem Schnitt blieben **0,1 s = 3 Bilder** Totale
+  stehen. Mit dem Kasten der Nahaufnahme haette man dort Wand und Pflanze
+  gesehen; mit einem eigenen Kasten auf Aaronson (`1166:0:608:1080`) liest es
+  sich als kurzer Weitblick auf ihn. **Eine Einstellung unter einer halben
+  Sekunde ist kein Grund zum Wegschneiden, sondern eine Zeile mehr im Plan.**
+  → betrifft: content-*
+- **Defensiv geschnitten, und das Ergebnis ist nachrechenbar:** genau **eine**
+  Auslassung (die Apokalyptiker-Anekdote, 14 s). Ohne sie waere das Stueck
+  **71 s** lang gewesen, mit ihr sind es **58,0 s** — also innerhalb seines
+  Formats bei einer einzigen benannten Streichung statt der drei, die ich bei
+  „AI 2027" gebraucht hatte.
+  → betrifft: content-*
+
+
 ## 2026-10-26 — das Musikbett des Renderers hoert 6,2 s vor dem Ende auf
 
 - **`--musik` blendet 2 s vor dem Ende des *Hauptteils* aus — das Outro laeuft

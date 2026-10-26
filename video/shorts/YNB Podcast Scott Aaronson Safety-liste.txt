@@ -1,0 +1,49 @@
+# Scott Aaronson — How safe is AI? (58,0 s)
+#
+# Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
+# Was raus soll: Zeile loeschen oder die Nummer nennen.
+#
+  1  [00:00.00–00:01.68]  HOW SAFE IS AI?
+  2  [00:03.48–00:04.34]  I'M WORRIED
+  3  [00:04.74–00:07.50]  I'M VERY WORRIED ABOUT WHERE THIS I MEAN I MEAN I FEEL LIKE
+  4  [00:07.90–00:11.28]  YOU KNOW WE ARE YOU KNOW THIS IS NOT JUST SOME COOL CONSUMER PRODUCT RIGHT?
+  5  [00:11.52–00:15.52]  WE ARE YOU KNOW WE HAVE CREATED YOU KNOW THE FIRST EVER FORM OF
+  6  [00:15.52–00:20.64]  VERBAL INTELLIGENCE ON EARTH OTHER THAN OUR OWN THERE IS THERE IS NO OBVIOUS
+  7  [00:20.64–00:22.08]  STOPPING PRINCIPLE RIGHT?
+  8  [00:22.34–00:26.30]  WE ARE LIKE OH IT'S ABLE TO DO THESE JOBS BETTER THAN US BUT NOT
+  9  [00:26.30–00:27.44]  THOSE JOBS RIGHT?
+ 10  [00:27.44–00:32.30]  THERE IS THERE IS BASICALLY YOU KNOW LIKE LIKE IF WHAT I WOULD SAY IS THAT
+ 11  [00:32.30–00:36.06]  IF THERE IS A WALL THAT AI IS GOING TO HIT LIKE WHERE IT
+ 12  [00:36.06–00:41.04]  STOPS IMPROVING YOU KNOW WHERE LIKE LIKE SORT OF YOU KNOW WHERE IT LEAVES PLENTY
+ 13  [00:41.04–00:47.82]  FOR HUMANS TO STILL DO THAT'S ECONOMICALLY VALUABLE NO ONE HAS CONVINCINGLY ARTICULATED WHERE THAT
+ 14  [00:47.82–00:51.84]  WALL IS OKAY I WOULD SAY AT THIS POINT THE BURDEN IS ON THEM
+ 15  [00:51.84–00:53.72]  TO EXPLAIN WHERE THIS WALL IS
+
+# ══════════════════════════════════════════════════════════════════
+# MUSIK: keine. Gemessen, leisestes Prozent siehe Abnahme.
+#   Sag Bescheid, wenn "In This Shirt" auch hierunter soll.
+#
+# WAS ICH HERAUSGENOMMEN HABE — genau eine Stelle
+# ══════════════════════════════════════════════════════════════════
+
+### WEGGELASSEN — die Apokalyptiker-Anekdote
+### Rohzeit 1:00:12–1:00:26 der Folge · 0:14 Minuten
+### (Du fragst nach dem Ausdruck, er erklaert, woher er ihn hat.)
+
+  [0:56:15]  calling yourself an apocole optimist apocole optimist yeah that was the
+  [0:56:19]  phrase from this from this movie that was this documentary that that's all I made
+  [0:56:24]  but I mean yeah there is there is no obvious stopping principle right we are
+
+# Warum nur diese eine: nach Deiner Regel vom 22.10. schneide ich
+#   defensiv. Ohne sie waere das Short 71 s lang — mit ihr sind es 58,0 s
+#   und damit in Deinem Format. Willst Du sie drin haben, muss dafuer
+#   etwas anderes weichen; sag mir was, dann tausche ich.
+#
+# ZWEI DINGE, DIE ICH ANDERS GEMACHT HABE ALS BISHER
+#   1. Der Tonschnitt liegt **genau auf dem Kameraschnitt** des Studios
+#      (17,967 s). Das Wort "own" endet 0,04 s davor — der Schnitt ist
+#      damit unsichtbar, statt mitten in einer Einstellung zu sitzen.
+#   2. Die drei Bilder Totale danach sind nicht weggeworfen, sondern auf
+#      Aaronson zugeschnitten — sonst haettest Du dort Wand und Pflanze.
+#
+# Und: bei Deiner Frage am Anfang bist **Du** im Bild, nicht er.

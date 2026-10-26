@@ -1,0 +1,11 @@
+{
+ "quelle": "vorlage-safety.mov",
+ "groesse": [1920, 1080],
+ "notiz": "Short 'How safe is AI'. Aus dem Folgenmaster, Tempo 1,0 -> 1,12. Ein einziger Innenschnitt (die Apokalyptiker-Anekdote). Der Tonschnitt liegt genau auf dem Kameraschnitt des Studios bei 17,967 s. Ausschnitte an je vier Rasterbildern gemessen.",
+ "einstellungen": [
+  {"layout": "einzel", "kasten": "41:0:608:1080",   "lippe": 1100, "start": 0.000,  "ende": 1.900,  "tot": false, "wer": "Totale, Kasten auf Yannick — seine Frage"},
+  {"layout": "einzel", "kasten": "626:0:608:1080",  "lippe": 1280, "start": 1.900,  "ende": 17.967, "tot": false, "wer": "Aaronson, Nah"},
+  {"layout": "einzel", "kasten": "1166:0:608:1080", "lippe": 1130, "start": 17.967, "ende": 18.067, "tot": false, "wer": "Totale, 3 Bilder, Kasten auf Aaronson"},
+  {"layout": "einzel", "kasten": "606:0:608:1080",  "lippe": 1280, "start": 18.067, "ende": 53.833, "tot": false, "wer": "Aaronson, Nah — die Mauer"}
+ ]
+}
