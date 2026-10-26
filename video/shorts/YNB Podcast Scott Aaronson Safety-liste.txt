@@ -1,49 +1,97 @@
-# Scott Aaronson — How safe is AI? (58,0 s)
+# Scott Aaronson — How safe is AI? (55,8 s · Hauptteil 51,6 s + Outro 4,2 s)
+# Fassung 2 — mit "In This Shirt", Schluss auf "the burden is on them"
 #
 # Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
 # Was raus soll: Zeile loeschen oder die Nummer nennen.
 #
-  1  [00:00.00–00:01.68]  HOW SAFE IS AI?
-  2  [00:03.48–00:04.34]  I'M WORRIED
-  3  [00:04.74–00:07.50]  I'M VERY WORRIED ABOUT WHERE THIS I MEAN I MEAN I FEEL LIKE
-  4  [00:07.90–00:11.28]  YOU KNOW WE ARE YOU KNOW THIS IS NOT JUST SOME COOL CONSUMER PRODUCT RIGHT?
-  5  [00:11.52–00:15.52]  WE ARE YOU KNOW WE HAVE CREATED YOU KNOW THE FIRST EVER FORM OF
-  6  [00:15.52–00:20.64]  VERBAL INTELLIGENCE ON EARTH OTHER THAN OUR OWN THERE IS THERE IS NO OBVIOUS
-  7  [00:20.64–00:22.08]  STOPPING PRINCIPLE RIGHT?
-  8  [00:22.34–00:26.30]  WE ARE LIKE OH IT'S ABLE TO DO THESE JOBS BETTER THAN US BUT NOT
-  9  [00:26.30–00:27.44]  THOSE JOBS RIGHT?
- 10  [00:27.44–00:32.30]  THERE IS THERE IS BASICALLY YOU KNOW LIKE LIKE IF WHAT I WOULD SAY IS THAT
- 11  [00:32.30–00:36.06]  IF THERE IS A WALL THAT AI IS GOING TO HIT LIKE WHERE IT
- 12  [00:36.06–00:41.04]  STOPS IMPROVING YOU KNOW WHERE LIKE LIKE SORT OF YOU KNOW WHERE IT LEAVES PLENTY
- 13  [00:41.04–00:47.82]  FOR HUMANS TO STILL DO THAT'S ECONOMICALLY VALUABLE NO ONE HAS CONVINCINGLY ARTICULATED WHERE THAT
- 14  [00:47.82–00:51.84]  WALL IS OKAY I WOULD SAY AT THIS POINT THE BURDEN IS ON THEM
- 15  [00:51.84–00:53.72]  TO EXPLAIN WHERE THIS WALL IS
+  1  [00:00.00–00:01.70]  HOW SAFE IS AI?
+  2  [00:03.42–00:04.34]  I'M WORRIED
+  3  [00:04.74–00:09.20]  I'M VERY WORRIED ABOUT WHERE THIS I MEAN I FEEL LIKE WE ARE THIS IS NOT
+  4  [00:09.20–00:11.30]  JUST SOME COOL CONSUMER PRODUCT RIGHT?
+  5  [00:11.74–00:18.00]  WE HAVE CREATED THE FIRST EVER FORM OF VERBAL INTELLIGENCE ON EARTH OTHER THAN OUR OWN
+  6  [00:18.58–00:22.02]  THERE IS NO OBVIOUS STOPPING PRINCIPLE RIGHT?
+  7  [00:22.24–00:26.50]  WE ARE LIKE OH IT'S ABLE TO DO THESE JOBS BETTER THAN US BUT NOT THOSE
+  8  [00:26.50–00:27.32]  JOBS RIGHT?
+  9  [00:27.32–00:32.18]  THERE IS THERE IS BASICALLY YOU KNOW LIKE LIKE IF WHAT I WOULD SAY IS THAT
+ 10  [00:32.18–00:35.94]  IF THERE IS A WALL THAT AI IS GOING TO HIT LIKE WHERE IT
+ 11  [00:35.94–00:40.38]  STOPS IMPROVING YOU KNOW WHERE LIKE LIKE SORT OF YOU KNOW WHERE IT LEAVES
+ 12  [00:40.38–00:44.06]  PLENTY FOR HUMANS TO STILL DO THAT'S ECONOMICALLY VALUABLE
+ 13  [00:44.60–00:48.52]  NO ONE HAS CONVINCINGLY ARTICULATED WHERE THAT WALL IS
+ 14  [00:48.88–00:51.44]  OKAY I WOULD SAY AT THIS POINT THE BURDEN IS ON THEM
 
 # ══════════════════════════════════════════════════════════════════
-# MUSIK: keine. Gemessen, leisestes Prozent siehe Abnahme.
-#   Sag Bescheid, wenn "In This Shirt" auch hierunter soll.
+# DEINE DREI PUNKTE — was ich damit gemacht habe
+# ══════════════════════════════════════════════════════════════════
 #
-# WAS ICH HERAUSGENOMMEN HABE — genau eine Stelle
+# 1. "the burden is on them"
+#    Das Stueck endet jetzt genau dort — bei 51,44 s faellt das letzte Wort,
+#    bei 51,60 s beginnt das Outro. Der Nachsatz "to explain where this wall
+#    is" ist weg (war Zeile 15 der alten Liste, 2,1 s). Der Satz steht ohne
+#    ihn: die Beweislast liegt bei denen, die an die Mauer glauben.
+#
+# 2. Der Glitch zwischen 0:16 und 0:18
+#    Das waren drei Bilder Totale (17,967–18,067 s), die ich am 26.10. als
+#    "kurzer Weitblick" drin gelassen hatte. Du liest sie als Fehler — sie
+#    sind raus. Nachgeprueft: der Schnitt liegt jetzt exakt auf 17,9667 s
+#    (539 Bilder), danach kommt sofort die naechste Einstellung. Frame fuer
+#    Frame kontrolliert, kein Rest.
+#    Dabei aufgefallen und mitbehoben: ein Schnitt mit "-c:v copy" laesst
+#    zwei Bilder zu viel stehen, weil er auf den naechsten Keyframe geht.
+#    Das Stueck ist deshalb neu codiert, nicht kopiert.
+#
+# 3. "In This Shirt" darunter, aber vor dem Outro aufhoeren
+#    Das Bett laeuft von 0,00 s bis 51,60 s und ist ab da still. Geprueft
+#    nicht nach Gehoer, sondern durch Subtraktion (musikfreie Fassung von
+#    der Musikfassung abgezogen, was uebrig bleibt, IST das Bett):
+#      0,0–50,5 s   -40 bis -48 dB, durchgehend
+#      50,1–51,6 s  Ausblende
+#      ab 51,5 s    -80 dB und tiefer = Stille, das Outro laeuft allein
+#    Pegel: Stimme -32,9 dB, Bett -44,3 dB — 11 dB darunter, zusaetzlich
+#    per sidechaincompress von der Stimme weggedrueckt. Zu leise oder zu
+#    laut: sag eine Zahl in dB, ich schiebe nach.
+#    Benutzt sind die ersten 51,6 s des Songs.
+
+# ══════════════════════════════════════════════════════════════════
+# ZWEI FASSUNGEN
+# ══════════════════════════════════════════════════════════════════
+#   YNB Podcast Scott Aaronson Safety.mp4               mit Musik
+#   YNB Podcast Scott Aaronson Safety (ohne Musik).mp4  ohne
+# Bild, Schnitt und Untertitel sind identisch, nur die Tonspur unterscheidet
+# sich. Falls die Musik hinterher Aerger macht, ist die zweite Datei da.
+
+# ══════════════════════════════════════════════════════════════════
+# WAS ICH HERAUSGENOMMEN HABE — zwei Stellen
 # ══════════════════════════════════════════════════════════════════
 
-### WEGGELASSEN — die Apokalyptiker-Anekdote
-### Rohzeit 1:00:12–1:00:26 der Folge · 0:14 Minuten
+### 1 — WEGGELASSEN: die Apokalyptiker-Anekdote
+### Rohzeit 1:00:12–1:00:26 der Folge · 14 s
 ### (Du fragst nach dem Ausdruck, er erklaert, woher er ihn hat.)
 
   [0:56:15]  calling yourself an apocole optimist apocole optimist yeah that was the
   [0:56:19]  phrase from this from this movie that was this documentary that that's all I made
   [0:56:24]  but I mean yeah there is there is no obvious stopping principle right we are
 
-# Warum nur diese eine: nach Deiner Regel vom 22.10. schneide ich
-#   defensiv. Ohne sie waere das Short 71 s lang — mit ihr sind es 58,0 s
-#   und damit in Deinem Format. Willst Du sie drin haben, muss dafuer
-#   etwas anderes weichen; sag mir was, dann tausche ich.
-#
+### 2 — WEGGELASSEN: der Nachsatz am Schluss · 2,1 s
+### (Auf Deine Ansage, Punkt 1 oben.)
+
+  [nach "the burden is on them"]  to explain where this wall is
+
+# Warum nur diese zwei: nach Deiner Regel vom 22.10. schneide ich defensiv.
+#   Ohne die Anekdote waere das Short 71 s lang — mit ihr sind es 55,8 s.
+#   Willst Du sie drin haben, muss dafuer etwas anderes weichen; sag mir
+#   was, dann tausche ich.
+
+# ══════════════════════════════════════════════════════════════════
 # ZWEI DINGE, DIE ICH ANDERS GEMACHT HABE ALS BISHER
-#   1. Der Tonschnitt liegt **genau auf dem Kameraschnitt** des Studios
+#   1. Der Tonschnitt liegt genau auf dem Kameraschnitt des Studios
 #      (17,967 s). Das Wort "own" endet 0,04 s davor — der Schnitt ist
 #      damit unsichtbar, statt mitten in einer Einstellung zu sitzen.
-#   2. Die drei Bilder Totale danach sind nicht weggeworfen, sondern auf
-#      Aaronson zugeschnitten — sonst haettest Du dort Wand und Pflanze.
+#   2. Bei Deiner Frage am Anfang bist Du im Bild, nicht er.
 #
-# Und: bei Deiner Frage am Anfang bist **Du** im Bild, nicht er.
+# ABNAHME (gemessen, nicht geschaetzt)
+#   Format 1080x1920 · Ton 48 kHz · 55,8 s · Outro da · 62 Untertitel
+#   Ortscheck sauber · Musikbett: absichtlich da, die Pruefung meldet es
+#   deshalb korrekt als Fehler (-44,8 dB im leisesten Prozent).
+#   Die Fassung ohne Musik besteht alle Pruefungen.
+#
+# NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.

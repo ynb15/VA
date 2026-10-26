@@ -1,0 +1,10 @@
+{
+ "quelle": "vorlage-safety2.mov",
+ "groesse": [1920, 1080],
+ "notiz": "Short 'How safe is AI', Fassung 2. Schluss auf 'the burden is on them'. Die drei Bilder Totale bei 17,97 s sind raus — er sah sie als Glitch. Tempo 1,0 -> 1,12, ein Innenschnitt (Apokalyptiker-Anekdote), und der liegt genau auf dem Kameraschnitt des Studios.",
+ "einstellungen": [
+  {"layout": "einzel", "kasten": "41:0:608:1080",  "lippe": 1100, "start": 0.000,  "ende": 1.900,  "tot": false, "wer": "Totale, Kasten auf Yannick — seine Frage"},
+  {"layout": "einzel", "kasten": "626:0:608:1080", "lippe": 1280, "start": 1.900,  "ende": 17.967, "tot": false, "wer": "Aaronson, Nah"},
+  {"layout": "einzel", "kasten": "606:0:608:1080", "lippe": 1280, "start": 17.967, "ende": 51.600, "tot": false, "wer": "Aaronson, Nah — die Mauer, Schluss auf 'the burden is on them'"}
+ ]
+}

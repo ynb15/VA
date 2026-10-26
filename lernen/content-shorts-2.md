@@ -6,6 +6,53 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-26 (abends) — drei Rueckmeldungen zu „How safe is AI"
+
+- **Die drei Bilder Totale, die ich heute frueh als Regel notiert hatte, liest
+  er als Glitch.** Oben in dieser Datei steht noch: *„Eine Einstellung unter
+  einer halben Sekunde ist kein Grund zum Wegschneiden, sondern eine Zeile
+  mehr im Plan."* Seine Rueckmeldung: *„zwischen 0:16 und 0:18 ist wieder ein
+  minimaler glitch."* **Der Befund von heute frueh gilt nicht mehr in dieser
+  Form.** Was bleibt: ein eigener Kasten rettet drei Bilder Totale *technisch*
+  — aber drei Bilder (0,1 s) sind zu kurz, um als Einstellung gelesen zu
+  werden, und werden deshalb als Fehler gelesen. **Untergrenze: unter etwa
+  einer halben Sekunde kein Einstellungswechsel.** Zweites Mal in fuenf Tagen,
+  dass eine gute technische Begruendung gegen eine seiner Wahrnehmungen
+  verliert (nach `--look aus` am 22.10.).
+  → betrifft: content-*
+- **`ffmpeg -c:v copy` schneidet nicht an der Stelle, die man angibt, sondern
+  am naechsten Keyframe.** Beim Entfernen der drei Bilder blieben **zwei
+  Bilder zu viel** stehen: v = 18,033 s gegen a = 17,967 s. Sichtbar wurde es
+  erst beim Nachmessen der Bildzahl, nicht im `ffprobe`-Ueberblick.
+  **Wer bildgenau schneidet, codiert neu** — `-t 17.966667 -r 30 -c:v libx264
+  -crf 15` ergab exakt **539 Bilder**. Kopieren ist nur dort richtig, wo die
+  Grenze ohnehin auf einem Keyframe liegt.
+  → betrifft: alle Content-Agenten
+- **Zwei Shorts, zwei entgegengesetzte Musikansagen — also keine Regel, sondern
+  eine Frage pro Stueck.** AI 2027 am 22.10.: *„dass er es nicht vorm Ende
+  aufhoert."* Safety am 26.10.: *„bitte in this shirt unterlegen aber vor dem
+  Outro aufhoeren."* Dieselbe Datei, dasselbe Short-Format, umgekehrte
+  Entscheidung. **Nicht aus dem einen Short auf das naechste schliessen; bei
+  Musik gilt immer die Ansage zu diesem Stueck.** Technisch loest beides
+  dieselbe Kette: `atrim` setzt das Ende, `afade=t=out` liegt davor oder in
+  den letzten 0,8 s.
+  → betrifft: content-*
+- **Mein Befund vom 22.10. zum blinden Fleck von `abnahme.py` war schon
+  behoben, als ich ihn aufschrieb.** Das Werkzeug laesst die letzten 4,5 s
+  (das Outro) bei der Musikpruefung aussen vor (`bis = max(dauer - 4.5, 1.0)`).
+  Nachgemessen am Safety-Short, dessen Bett **vor** dem Outro endet: die
+  Musikfassung faellt korrekt durch (**-44,8 dB** im leisesten Prozent), die
+  musikfreie besteht (**-91,8 dB**). **Vor einem Befund ueber fremdes Werkzeug
+  den Code lesen, nicht nur das Verhalten deuten** — ich hatte am 22.10. aus
+  einem Messergebnis auf eine Luecke geschlossen, die im Code nicht stand.
+  → betrifft: content-shorts-2, alfred
+- **Dass ein Bett wirklich vor dem Outro aufhoert, zeigt nur die Subtraktion.**
+  Musikfreie Fassung phaseninvertiert auf die Musikfassung, dann der Pegel der
+  Differenz in 0,5-s-Fenstern: **-40 bis -48 dB bis 50,5 s**, Ausblende,
+  **ab 51,5 s -80 dB und tiefer**. Nach Gehoer oder am Mittelwert haette man
+  die 0,1 s Genauigkeit am Uebergang nicht belegen koennen.
+  → betrifft: content-*
+
 ## 2026-10-26 — „How safe is AI", und der Tonschnitt auf den Kameraschnitt gelegt
 
 - **Es gab zwei Stuecke mit fast demselben Namen, und sie sind verschieden.**
@@ -33,6 +80,9 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   gesehen; mit einem eigenen Kasten auf Aaronson (`1166:0:608:1080`) liest es
   sich als kurzer Weitblick auf ihn. **Eine Einstellung unter einer halben
   Sekunde ist kein Grund zum Wegschneiden, sondern eine Zeile mehr im Plan.**
+  **ÜBERHOLT am Abend des 26.10. — er liest die drei Bilder als Glitch. Siehe
+  den Eintrag „2026-10-26 (abends)" oben: unter etwa einer halben Sekunde
+  kein Einstellungswechsel.**
   → betrifft: content-*
 - **Defensiv geschnitten, und das Ergebnis ist nachrechenbar:** genau **eine**
   Auslassung (die Apokalyptiker-Anekdote, 14 s). Ohne sie waere das Stueck
