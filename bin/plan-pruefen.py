@@ -27,11 +27,17 @@ ENTFAELLT = {"Kyle Kingsbury": {5}}   # Thumbnail macht er selbst ueber ChatGPT,
 # Von ihm so entschieden. Fristen davor werden nicht als ueberfaellig gemeldet
 # — sie sind nicht verpasst, sie sind ausgesetzt. Die Zeile bleibt sichtbar,
 # damit ein Halt nicht aus dem Blick geraet.
-WARTET = {
-    "Kyle Kingsbury": (datetime.date(2026, 10, 26),
-                       "Endfassung seines menschlichen Cutters; er reviewt die "
-                       "Folge erst"),
-}
+WARTET = {}   # Kingsbury-Pause am 26.10. abgelaufen, siehe BEOBACHTEN unten
+
+# Dinge, die ich beobachte, weil ihr Eintreffen eine Frist freigibt. Steht hier,
+# damit ich es nicht im Kopf tragen muss — und damit es nicht aufhoert, nur
+# weil eine Pause ausgelaufen ist.
+BEOBACHTEN = [
+    ("Kingsburys Endfassung", "Drive-Ordner des Cutters "
+     "1MsT1Cnp_FdPRrgFkdiEPmr-SCCzBg42M. Dort liegt nur v1_LOW_RES "
+     "(1,29 GB, 05.10.). Eine v2 oder eine Fassung ohne LOW_RES heisst: "
+     "die Endfassung ist da, der Schnitt kann beginnen."),
+]
 
 # Wer eine Folge schneidet, entscheidet die Folge, nicht die Frist.
 # Seine Regel vom 21.10.: "alle Shorts zu Scott werden von ein und demselben
@@ -125,17 +131,17 @@ for folge, (frei, grund) in sorted(WARTET.items()):
     if heute < frei:
         print(f"\n  ANGEHALTEN: {folge} ruht bis {frei.strftime('%a %d.%m.')} "
               f"— wartet auf {grund}.")
-        if folge == "Kyle Kingsbury":
-            print("              BEOBACHTEN: Drive-Ordner des Cutters "
-                  "1MsT1Cnp_FdPRrgFkdiEPmr-SCCzBg42M.")
-            print("              Dort liegt nur v1_LOW_RES (1,29 GB, 05.10.). "
-                  "Eine v2 oder eine Fassung")
-            print("              ohne LOW_RES heisst: die Endfassung ist da.")
         rest_bis = (frei - heute).days
         print(f"              Das sind noch {rest_bis} Tg. Alles, was am Schnitt "
               f"haengt, ruht mit.")
 if not etwas:
     print("  keine in den naechsten drei Tagen")
+
+# 2b — was ich beobachte
+if BEOBACHTEN:
+    print("\nBEOBACHTEN:")
+    for was, wo in BEOBACHTEN:
+        print(f"  {was}: {wo}")
 
 # 3 — was heute entschieden werden muss
 if heute in ENTSCHEIDUNG:

@@ -50,3 +50,45 @@ der Pause**, der Aaronson-Clip steht im Kalender, Logan liegt bei ihm.
 Keine geplante Aufgabe, **kein Commit seit 00:50**, eigener Branch gefetcht (0/0).
 
 - **03:40** · alle neun · still, kein offener Auftrag · Maßnahme: keine
+
+---
+
+## 06:40 — Morgenlauf, Montag: die Pause ist abgelaufen, die Datei ist nicht da
+
+Keine geplante Aufgabe, **kein Commit auf keinem Branch seit 00:50**, eigener
+Branch gefetcht (0/0).
+
+- **06:40** · alle neun · still, kein offener Auftrag · Maßnahme: **zwei Aufträge ausgelöst, siehe unten**
+
+### Kingsbury: Pause beendet, nicht verlängert
+Im Ordner des Cutters liegt unverändert `…Kingsbury_v1_LOW_RES.mp4` vom
+**05.10.** — nichts Neues in 21 Tagen, auch nicht nach seinem Review gestern
+14:00–16:00.
+
+**Die Pause habe ich nicht verlängert, sondern beendet** und stattdessen das
+ausgelöst, was ohne die Endfassung geht. **Seine Regel bleibt unangetastet:**
+*„Vorher macht es halt keinen Sinn, da was rauszuschneiden."* Es wird nichts
+geschnitten.
+
+* **Shorts I:** Transkript aus der **`v1_LOW_RES`** (1,29 GB statt 17 GB, kein
+  Tageslimit-Problem) und die zehn Short-Kandidaten am Text belegen. **Jede
+  Zeit wird als `v1`-Zeit gekennzeichnet**, damit sie in drei Tagen nicht
+  fertig aussieht und falsch ist. 71:01–73:00 bleibt unangetastet.
+* **YouTube Manager:** T−6 ist seit gestern überfällig und hängt **nicht** an
+  der Endfassung — 15 Titel, 15 Thumbnail-Zeilen, Tags, Beschreibungstext.
+  **Laufzeitabhängiges als benannte Lücke stehen lassen.**
+
+**Damit bleiben nach Eingang der Endfassung nur Versatz messen und schneiden** —
+statt der ganzen Kette. Das ist der Unterschied zwischen knapp und nicht mehr
+machbar. **T−3 ist Mi 28.10., T−2 Do 29.10.**
+
+### Werkzeug: `WARTET` raus, `BEOBACHTEN` rein
+`bin/plan-pruefen.py` hat die Pause nicht mehr, aber **die Beobachtungsstelle
+bleibt** — als eigene Liste, nicht als Anhängsel der Pause. **Eine Pause läuft
+ab; eine Beobachtung hört nicht auf, nur weil die Pause endet.** Genau das wäre
+sonst passiert: mit dem Pausenblock wäre auch der Hinweis auf den
+Cutter-Ordner verschwunden.
+
+### Das Stück des Tages liegt schon draußen
+Der Aaronson-Clip „How safe is AI" steht für heute im Kalender — **er hat ihn
+am 24.10. veröffentlicht.** Vorrat **3**.
