@@ -52,7 +52,129 @@ Im Text steht Cals Name trotzdem — aber als jemand, der Boyds Namen genannt ha
 
 ---
 
-## Die Mail
+## SEINE FASSUNG — die gültige, 26.10.2026
+
+**Gesichert aus dem Outreach-Doc**, Abschnitt `### Boyd Varty`, von ihm dort um
+**15:47 Kapstadt** abgelegt. **Das ist der Text, der rausgeht** — meine Fassung
+steht darunter nur noch zum Vergleich.
+
+**Sein Weg:** erst an **Rob Paddock**, morgen, und parallel als Nachricht. Rob
+stellt die Verbindung her.
+
+> *A crocodile has your right leg and a man walks into the channel anyway,
+> knowing exactly what's in there. Everyone tells that story. The part I keep
+> coming back to is what happened months later, when you asked Solly why he came
+> in and he looked at you with something close to disdain: "My brother, you're in
+> trouble, I'm in trouble." It took you years to understand he wasn't being
+> modest. He meant it literally - and his psyche was built in a way that yours,
+> and mine, simply are not…*
+>
+> Howdy Boyd, my name is Yannick - host of [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m)
+> (inspired by Frankl), a podcast about humans who've walked through the fire and
+> came out different.
+>
+> Four people have put your name in front of me this year, on two continents. It
+> started in Austin:
+> Kyle Kingsbury, Cal Callahan and Chase Reeves each asked me, more or less the
+> moment they heard I'm based in SA, whether I knew you. Last week I reconnected
+> with my mentor Rob Paddock here in CT and asked him who else belonged on this
+> pod - he said your name before I'd finished the sentence, and offered to put us
+> in touch.
+>
+> In between I listened to the one you did with Cal, Greg and Chase. I ordered
+> your book that same evening.
+>
+> Here's my half of why they might all have said it: I'm a german kid that
+> emigrated to SA, and I went to the US this year on the last of my savings,
+> all-in on this mission - 4 months of podcasting, because what I'm trying to
+> build is a bridge between Europe-Africa-America, one conversation at a time.
+> The line of Renias's that everyone quotes gets read as encouragement. I've been
+> reading it as a description, because I'm in the position he's describing: he
+> says it when the track has gone cold.
+>
+> So I'm not after another tracking metaphor. What I'd want to sit in with you is
+> the deeper layer of your life:
+>
+> **What actually happened when you looked up the barrel of that gun at eighteen
+> – and whether you've made your peace with never fully understanding it. What it
+> costs to be the man other people come to when they've lost their own track.
+> Whether ubuntu survives contact with a world built around "I", or whether
+> you've had to watch it thin out in your own lifetime. And whether there's a
+> track in your own life you lost and never picked back up…**
+>
+> I know I don't have the biggest reach yet. But I've already had some wyld
+> characters on, such as…
+>
+>   - South African ManKindProject leader Craig Makhosi
+>   - Hollywood actor turned men's therapist David Sutcliffe
+>   - my 77 y/o psychedelic therapist, apartheid activist and techno icon Rob Bennett
+>   - Burning Man CEO Marian Goodell
+>   - and of course living legend Rob Paddock
+>
+> I committed to depth over quantity. In-person only. Every guest I invite is
+> meaningful to me. **You're one of them.**
+>
+> I just landed back home after a motorcycle accident in Colorado cut that trip
+> short. If you've got an hour or two for a conversation that matters across
+> borders - I'd love to make it happen.
+>
+> Dreaming Big,
+
+---
+
+## Was er an meiner Fassung geändert hat — und was daraus folgt
+
+**Unverändert geblieben:** der Cold Open **wörtlich**, die Anrede, die
+Denver-Mechanik, die vier Fragen **komplett**, Beat 6 wörtlich. Die
+Gun-Frage steht; die Frage, die den Preis berührt, hat getragen.
+
+**1. Die Gästeliste spiegelt nicht das Feld des Empfängers, sondern das, was
+ihn beeindruckt.** Ich hatte Rick Strassman und Kyle Kingsbury gesetzt. Beide
+raus. Dafür **Craig Makhosi (South African ManKindProject leader)** und
+**Rob Paddock**. Die Liste ist jetzt südafrikanisch grundiert — Makhosi,
+Bennett (Apartheid-Aktivist), Paddock. **Zum Vergleich:** Jon Savage, auch
+Südafrikaner, bekam vier Tage vorher eine rein amerikanische Liste
+(NFL, OpenAI, Navy Seal). **Der Unterschied ist nicht der Wohnort, sondern der
+Maßstab des Empfängers** — ein Podcast-Unternehmer will Reichweite sehen, ein
+Wildnis- und Männerarbeiter will Verwandtschaft sehen.
+
+**2. „And of course living legend Rob Paddock."** Derselbe Mechanismus wie
+Scott Aaronson bei Ilya: **der Vermittler steht zuletzt, mit „and of course",
+und wird nicht erklärt.** Keine Credentials, kein IronMan, kein $100M — bei
+jemandem, den der Empfänger kennt, ist die Erklärung die Beleidigung. **Das ist
+jetzt zweimal belegt und damit eine Regel.**
+
+**3. Er hat einen Sachfehler von mir gefangen.** Meine Einleitung lautete
+*„I just got back from that trip with some wyld characters in the bag"* — aber
+Makhosi, Bennett und Paddock sind **nicht von dieser Reise**. Seine Fassung:
+*„I've already had some wyld characters on, such as…"* **Die Einleitung muss zur
+Liste passen, nicht umgekehrt.**
+
+**4. Lokales Kürzel bei einem Landsmann:** *„based in SA"*, *„here in CT"*,
+*„back home"* statt „Cape Town". Bei Jon Savage schrieb er dagegen
+*„I'm originally from Germany, I live in Cape Town"* aus. **Je näher der
+Empfänger, desto kürzer der Ortsname.**
+
+**5. Die Selbstbeschreibung ist nicht fest.** Mein *„I'm German, I live in Cape
+Town"* wurde **„I'm a german kid that emigrated to SA"**. Bei Jon Savage am
+22.10. stand *„I'm originally from Germany, I live in Cape Town"*. **Gegenüber
+einem Mann aus der vierten Generation auf demselben Stück Land sagt
+„emigrated", dass er dieses Land gewählt hat.**
+
+**6. Kleinere Schärfungen:** *„sat down with"* → **„reconnected with"**;
+*„this show"* → **„this pod"**; *„the layer underneath"* → **„the deeper layer
+of your life"**; *„not after the tracking metaphor"* → **„not after another
+tracking metaphor"** (nimmt vorweg, dass er das tausendmal gehört hat);
+*„Europe, Africa and America"* → **„Europe-Africa-America"**, dieselbe
+Bindestrich-Trias wie im Jon-Savage-Betreff.
+
+**7. Die „AND:"-Zeile zu Burning Man ist weg**, Marian Goodell steht stattdessen
+im vierten Bullet. Bei Jon Savage blieb die AND-Zeile stehen. **Also kein festes
+Element, sondern ein Trumpf, der gespielt wird, wenn er beim Empfänger sticht.**
+
+---
+
+## Meine Fassung vom selben Tag, zum Vergleich
 
 > *A crocodile has your right leg and a man walks into the channel anyway,
 > knowing exactly what's in there. Everyone tells that story. The part I keep

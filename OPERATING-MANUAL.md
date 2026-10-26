@@ -8822,3 +8822,83 @@ machen müssen.
 **Die Grenze vom 21.10. bleibt unverändert:** Stadt ja, Wohnadresse nein.
 Als bei Martin Seligman im Suchergebnis das Haus und sein Vorbesitzer
 standen, ist beides nicht in die Zeile gewandert.
+
+───────────────────────────────────────────────────────────────────
+ZWEI GESENDETE FASSUNGEN NEBENEINANDER: JON SAVAGE (22.10.) UND
+BOYD VARTY (26.10.) — WAS ER AN AGENTEN-ENTWÜRFEN ÄNDERT
+───────────────────────────────────────────────────────────────────
+
+Zum ersten Mal liegen **zwei von ihm überarbeitete Fassungen desselben
+Entwurfstyps** vor, vier Tage auseinander, an zwei Südafrikaner. Der Vergleich
+ist aussagekräftiger als jede einzelne Korrektur.
+
+**Jon Savage**, raus am **22.10.2026, 17:53** an `info@jonsavage.com`,
+Betreff `[Via Denver Burgess] Germany-South Africa-America: Man's Search for Meaning`.
+**Boyd Varty**, von ihm am **26.10.** ins Outreach-Doc gelegt, geht morgen an
+**Rob Paddock**, der die Verbindung herstellt.
+
+**WAS ER IN BEIDEN FÄLLEN UNANGETASTET GELASSEN HAT:**
+Den Cold Open **wörtlich**. Die Anrede. Die Fragenblöcke **komplett**. Beat 6
+(*„I committed to depth over quantity…"*) wörtlich. **Wenn Beat 1 und Beat 4
+sitzen, fasst er sie nicht an.**
+
+**1. DIE GÄSTELISTE SPIEGELT DEN MASSSTAB DES EMPFÄNGERS, NICHT SEIN FELD.**
+Beide Empfänger sind Südafrikaner. Jon Savage, Podcast-Unternehmer mit Bühnen
+in New York und London, bekam eine **rein amerikanische** Liste: ex-NFL star
+Eben Britton · Quantum scientist and OpenAI insider Prof. Scott Aaronson ·
+America's #1 transgender surgeon Dr. Curtis Crane · NAVY Seal Logan Gonzalez ·
+Hollywood actor turned men's therapist David Sutcliffe. Boyd Varty,
+Wildnis- und Männerarbeiter, bekam eine **südafrikanisch grundierte**: Craig
+Makhosi · David Sutcliffe · Rob Bennett · Marian Goodell · Rob Paddock.
+**Der eine soll Reichweite sehen, der andere Verwandtschaft.**
+
+**2. ROLLE VOR NAME, DURCHGEHEND.** „ex-NFL star Eben Britton", „South African
+ManKindProject leader Craig Makhosi". **Dieselbe Grammatik wie seine
+Videotitel.**
+
+**3. DER VERMITTLER STEHT ZULETZT, MIT „AND OF COURSE", UND WIRD NICHT ERKLÄRT.**
+Bei Ilya: *„and of course our mutual connection, Professor Scott Aaronson"*.
+Bei Boyd: *„and of course living legend Rob Paddock"* — kein IronMan, kein
+$100M, obwohl beides in seinen anderen Pitches steht. **Bei jemandem, den der
+Empfänger kennt, ist die Erklärung die Beleidigung.** Zweimal belegt, damit
+Regel.
+
+**4. DIE EINLEITUNG ZUR LISTE MUSS ZUR LISTE PASSEN.** Mein Entwurf hatte
+*„I just got back from that trip with some wyld characters in the bag"* über
+einer Liste, in der drei Namen **nicht von dieser Reise** waren. Er hat es
+gefangen und zu *„I've already had some wyld characters on, such as…"*
+geändert. **Eine Reise-Behauptung über einer gemischten Liste ist ein
+Sachfehler.**
+
+**5. JE NÄHER DER EMPFÄNGER, DESTO KÜRZER DER ORTSNAME.** An Jon Savage:
+*„I'm originally from Germany, I live in Cape Town."* An Boyd: *„based in SA"*,
+*„here in CT"*, *„I just landed back home"*. **Lokales Kürzel ist ein
+Zugehörigkeitssignal, kein Platzsparen.**
+
+**6. DIE SELBSTBESCHREIBUNG IST BEWEGLICH.** Gegenüber Boyd — vierte Generation
+auf demselben Stück Land — wurde aus „I'm German, I live in Cape Town":
+**„I'm a german kid that emigrated to SA."** Das sagt: dieses Land ist gewählt,
+nicht geerbt.
+
+**7. DER BETREFF KANN EINE TRIAS SEIN, NICHT NUR EIN BOGEN AUS ZWEI.**
+`Germany-South Africa-America` (Jon Savage, von ihm) und
+`Cape Town, Austin, Londolozi` (Boyd, seine Ansage am 26.10.). **Neben
+„From ⟨Ort⟩ to ⟨Ort⟩" gibt es die Drei-Orte-Form**, und sie erzählt eine
+Reihenfolge: woher er kommt, wo er den Namen zum ersten Mal hörte, wo der
+Empfänger sitzt.
+
+**8. „(inspired by Frankl)" IST OPTIONAL.** Bei Jon Savage gestrichen, bei Boyd
+behalten.
+
+**9. DIE „AND:"-ZEILE IST EIN TRUMPF, KEIN BAUSTEIN.** Burning Man blieb bei
+Jon Savage als eigener Satz stehen und wanderte bei Boyd in die Bullets.
+
+**10. ER BELEGT DIE VERMITTLUNG MIT EINEM SCREENSHOT.** In der Jon-Savage-Mail
+steht nach *„Denver sent me your contact and said the two madmen of us had to
+come together."* ein **Bildanhang** — die Nachricht selbst. **Beweis statt
+Behauptung.**
+
+**11. ER TRACKT SEINE COLD PITCHES.** Der Playlist-Link in der Jon-Savage-Mail
+läuft über `streak-link.com`, also Öffnungs- und Klickmessung. **Er hat Daten
+über die Wirkung seiner Anfragen, die wir nicht sehen. Nie über Wirkung
+spekulieren — das ist eine Frage an ihn.**

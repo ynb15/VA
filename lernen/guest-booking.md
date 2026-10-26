@@ -361,3 +361,29 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   für Beat 3 und muss nicht erfunden werden.** `in:sent` ist die Quelle für sein
   Geständnis, nicht nur für seinen Ton.
   → betrifft: alle, die Entwürfe für ihn schreiben
+- **Zwei von ihm überarbeitete Pitches nebeneinander ergeben mehr als zehn
+  Einzelkorrekturen.** Jon Savage (raus 22.10.) und Boyd Varty (seine Fassung
+  26.10.), beide an Südafrikaner, vier Tage auseinander. Unangetastet blieben
+  in beiden Fällen **Cold Open, Anrede, Fragenblock und Beat 6**. Geändert hat
+  er jedes Mal **die Gästeliste** — und zwar nicht nach dem Feld des
+  Empfängers, sondern nach dessen Maßstab: der Podcast-Unternehmer bekam eine
+  rein amerikanische Liste (Reichweite), der Wildnis- und Männerarbeiter eine
+  südafrikanisch grundierte (Verwandtschaft). **Rolle vor Name, durchgehend.**
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Der Vermittler steht zuletzt, mit „and of course", und wird nicht
+  erklärt.** *„and of course our mutual connection, Professor Scott Aaronson"*
+  (Ilya) und *„and of course living legend Rob Paddock"* (Boyd) — bei Rob ohne
+  IronMan und ohne $100M, obwohl beides sonst seine Standardzeile ist. Zweimal
+  belegt, damit Regel.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Die Einleitung über der Gästeliste ist eine Tatsachenbehauptung.** Ich
+  hatte *„I just got back from that trip with some wyld characters in the
+  bag"* über eine Liste gesetzt, in der drei Namen nicht von dieser Reise
+  waren. Er hat es gefangen: *„I've already had some wyld characters on."*
+  **Erst die Liste bauen, dann den Satz darüber prüfen.**
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Er trackt seine Cold Pitches.** Der Link in der gesendeten Jon-Savage-Mail
+  läuft über `streak-link.com`. **Er sieht Öffnungen und Klicks, wir nicht.**
+  Über die Wirkung einer Anfrage wird nicht spekuliert; das ist eine Frage an
+  ihn.
+  → betrifft: alle Agenten
