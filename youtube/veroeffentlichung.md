@@ -194,3 +194,31 @@ In `YNB Podcast: In Progress`:
 Mail-Korrespondenz, kein Podcast-Ordner. Wenn Du „Kyle" sagst, frage ich
 einmal nach, wer gemeint ist — das ist der eine Fall, in dem Raten teurer wäre
 als die Frage.
+
+## Nachtrag 26.10. — Zeitmarken ab einer Stunde
+
+**`60:36` ist keine Kapitelmarke. YouTube erkennt sie nicht.** Ab 60 Minuten
+muss die Form `1:00:36` sein, sonst steht die Zeile als toter Text da: kein
+Link, kein Sprung, und sie zählt nicht für die Kapitelleiste.
+
+**Mir passiert bei Aaronson, und zwar fuer die letzten 15 von 39 Kapiteln** —
+alles ab `60:36`. Die Folge stand damit knapp zwei Tage online, waehrend die
+komplette zweite Haelfte nicht anspringbar war. **Er hat es gefunden, nicht
+ich.**
+
+**Die Regel, die daraus folgt:** jede Folge ueber 60 Minuten vor der Abgabe
+auf Zeilen pruefen, deren Minutenzahl 60 erreicht. Ein Einzeiler reicht:
+
+```
+grep -nE '^(6[0-9]|[7-9][0-9]|[1-9][0-9]{2}):[0-5][0-9] ' beschreibung.txt
+```
+
+**Kingsbury faellt mit 77 Minuten genau in diesen Bereich** — dort beginnt die
+Stunde etwa bei Kapitel zwei Drittel der Liste.
+
+**Und die allgemeinere Lehre:** ich hatte die Zeitmarken aus einem Transkript
+gerechnet, dessen Zeiten in Minuten:Sekunden stehen, und sie unveraendert
+uebernommen. **Ein Format, das im Werkzeug stimmt, stimmt nicht automatisch
+im Zielfeld.** Die Umrechnung gehoert an die Stelle, an der der Text das
+Werkzeug verlaesst.
+→ betrifft: alle Content-Agenten, head-of-content
