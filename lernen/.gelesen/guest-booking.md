@@ -340,3 +340,24 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   die Struktur seiner Datenbank** und wird vorgelegt. Notion lehnt einen
   unbekannten Select-Wert von sich aus ab, legt ihn also nicht still an.
   → betrifft: alle, die an der Databank arbeiten
+- **Vor einem Pitch wird der Faden des Vermittlers gelesen, nicht nur die
+  Databank-Zeile.** Beim Boyd-Varty-Auftrag lagen vier Empfehler auf dem Tisch,
+  einer davon Cal Callahan. Im Postfach steht aber, dass Yannick Cal am
+  **01.09.2026** genau darum gebeten hat — *„any chance you could also connect
+  me with Boyd?"* — und am **08.09.** zurückrudert: *„all good on Boyd, I get
+  it. No stress at all, whenever the timing feels right."* **Cal hat nicht
+  vermittelt.** Hätte ich nur die Databank gelesen (dort steht Cal als „der
+  produktivste Referrer im ganzen Netzwerk"), wäre `[Via Cal Callahan]` in den
+  Betreff gewandert — eine Empfehlung behauptet, die ausdrücklich nicht gegeben
+  wurde. **Regel: bevor ein Name in die eckige Klammer kommt, wird der Faden mit
+  diesem Menschen gelesen, ganz, mit `get_thread`.**
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Sein Postfach enthält die Begeisterung, die ein Pitch braucht — datiert und
+  wörtlich.** Zu Boyd lag seit 08.09. in einer Mail an Cal: *„listened to your
+  episode with Greg, Chase and Boyd… I swear I felt like I was right there in
+  the bush with you guys… Ordered Boyd's book right away."* Dazu seine eigene
+  Lage aus dem 20.08.-Pitch: *„that's exactly what brought me to the US on the
+  last of my savings, all-in on this podcast."* **Beides ist belegtes Material
+  für Beat 3 und muss nicht erfunden werden.** `in:sent` ist die Quelle für sein
+  Geständnis, nicht nur für seinen Ton.
+  → betrifft: alle, die Entwürfe für ihn schreiben

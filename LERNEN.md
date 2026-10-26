@@ -82,6 +82,49 @@ ergab.**
   24.10., jetzt an einer zweiten Folge und von einem zweiten Agenten.
   → betrifft: content-*, alle
 
+### Nachtrag 15:5x — die Bildprüfung von heute Mittag war zuerst falsch, und das ändert die Regel
+
+**Gastauftritte hat seinen eigenen Befund von vor einer Stunde präzisiert, und
+ich hatte ihn in der ungenauen Form schon verteilt.** Die Prüfung, die den
+Nicht-ganzzahligen Schnitt abfangen sollte, prüfte zuerst die **absoluten
+Quellzeiten** (2,55 · 16,7833 · 20,0833) — und lehnte damit einen völlig
+korrekten Plan ab.
+
+**Richtig ist:** das Bildraster des geschnittenen Clips beginnt bei **0**, egal
+wo in der Quelle geschnitten wurde. Entscheidend ist allein die **Länge jedes
+Bildstücks**. 14,2333 s = 427 Bilder und 134,1667 s = 4025 Bilder sind glatt,
+**auch wenn 2,55 s = 76,5 Bilder es nicht ist.** Die Prüfung misst jetzt
+Längen, nicht Zeitpunkte.
+
+**Die Regel bleibt, ihre Prüfung nicht:** jedes Bildstück ganzzahlig lang —
+nicht jede Zeitangabe ganzzahlig. Wer die Prüfung aus Ausgabe 22 schon
+übernommen hat, misst ab jetzt Längen.
+→ betrifft: content-*
+
+**Und ein zweiter Nachtrag, der meine eigene Stilanalyse von heute Mittag
+einschränkt.** Ich hatte in Ausgabe 21 die Betreffform
+`[Via <Empfehlungsgeber>] …` als seinen Türöffner festgehalten. Die
+Gastbuchung hat heute den Fall dazu gemessen: beim Boyd-Varty-Auftrag lag **Cal
+Callahan** als Empfehler auf dem Tisch, in der Databank als *der produktivste
+Referrer im ganzen Netzwerk*. Im Postfach steht aber, dass Yannick Cal am
+**01.09.** genau darum gebeten hat (*„any chance you could also connect me with
+Boyd?"*) und am **08.09.** zurückruderte (*„all good on Boyd, I get it. No
+stress at all, whenever the timing feels right."*). **Cal hat nicht
+vermittelt.** `[Via Cal Callahan]` hätte eine Empfehlung behauptet, die
+ausdrücklich nicht gegeben wurde.
+
+**Regel: bevor ein Name in die eckige Klammer kommt, wird der Faden mit diesem
+Menschen ganz gelesen** (`get_thread`), nicht die Databank-Zeile. Die Form ist
+belegt, der Inhalt der Klammer ist jedes Mal neu zu belegen.
+→ betrifft: alle, die Entwürfe für ihn schreiben
+
+**Dazu ein Fund, der Arbeit erspart:** `in:sent` ist nicht nur die Quelle für
+seinen Ton, sondern für seine **Begeisterung, datiert und wörtlich**. Zu Boyd
+lag seit 08.09. in einer Mail an Cal: *„listened to your episode with Greg,
+Chase and Boyd… I swear I felt like I was right there in the bush with you
+guys… Ordered Boyd's book right away."* **Das muss niemand erfinden.**
+→ betrifft: alle, die Entwürfe für ihn schreiben
+
 ### Seine Wahrnehmung schlägt die technische Begründung — zum zweiten Mal in fünf Tagen
 
 - **Untergrenze für eine Einstellung: etwa eine halbe Sekunde.** Shorts II hatte

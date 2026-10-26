@@ -8998,6 +8998,15 @@ diese Form.
 **Der Betreff hat eine Form:** `[Via <Empfehlungsgeber>] <Geografie oder Haken>:
 <Sendungsname>`. Die Klammer vorn ist der Türöffner.
 
+**Einschränkung, am 26.10. von der Gastbuchung gemessen: die Form ist belegt,
+der Inhalt der Klammer nicht.** Bei Boyd Varty stand **Cal Callahan** in der
+Databank als produktivster Referrer — im Postfach aber hat Yannick ihn am
+01.09. um genau diese Vermittlung gebeten (*„any chance you could also connect
+me with Boyd?"*) und am 08.09. zurückgezogen (*„all good on Boyd, I get it."*).
+**Vermittelt hat Cal nicht.** `[Via Cal Callahan]` hätte eine Empfehlung
+behauptet, die es nicht gibt. **Bevor ein Name in die Klammer kommt, wird der
+Faden mit diesem Menschen ganz gelesen, nicht die Databank-Zeile.**
+
 **Gedankenstrich: er benutzt den normalen Bindestrich mit Leerzeichen** —
 *„I took the chart - four heartbreaks"*. **Damit ist die Korrektur des
 YouTube-Managers vom 23.10. an einem unabhängigen Exemplar bestätigt:** der

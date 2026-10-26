@@ -69,6 +69,13 @@ RUECKKATALOG = {
 # naechste aehnliche gemeldet.
 ERLEDIGT = {
     "Scott Aaronson": {10, 8, 6, 5, 3, 2},   # veroeffentlicht 25.10., 2_CZfN2iOFk
+    # T-6 (Titel, Beschreibung, Tags) liegt seit 22.10. auf claude/youtube-manager,
+    # Commit 3704044: 15 Titel, 23 Tags, Beschreibung ohne Zeitstempel. Die
+    # Zeitmarken fehlen absichtlich -- sie haengen an der Endfassung des Cutters
+    # und waeren mit Rohzeiten gefuellt am Schnitttag falsch. Das Werkzeug hat es
+    # drei Tage lang als UEBERFAELLIG gemeldet, weil es "fertig mit benannter
+    # Luecke" nicht kennt: dasselbe Muster wie bei WARTET und beim Vorratszaehler.
+    "Kyle Kingsbury": {6},
 }
 
 # Entscheidungspunkte: Tag -> was an diesem Tag entschieden werden muss, und
