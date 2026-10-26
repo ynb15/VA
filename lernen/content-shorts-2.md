@@ -6,6 +6,44 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-26 — das Musikbett des Renderers hoert 6,2 s vor dem Ende auf
+
+- **`--musik` blendet 2 s vor dem Ende des *Hauptteils* aus — das Outro laeuft
+  danach ohne Bett.** Yannick hat es gehoert: *„denk bitte daran, dass das
+  nicht zu spaet startet, der Song. Und dass er es nicht vorm Ende aufhoert."*
+  Im Code (Zeile 1417): `atrim=0:<laenge>,afade=t=out:st=<laenge-2.0>:d=2.0`,
+  wobei `laenge` die Laenge **vor** dem Outro ist. Am AI-2027-Short gerechnet:
+  Hauptteil endet 54,367 s, Video endet 58,575 s — **das Bett ist ab 52,367 s
+  still, also 6,21 s vor dem letzten Bild.**
+  **Behoben ohne den Renderer anzufassen:** ohne `--musik` rendern und das Bett
+  danach ueber die fertige Datei mischen — `aloop`, `volume`, `afade in 0,4 s`,
+  `sidechaincompress` gegen die Stimme, `afade out` erst in den letzten 0,8 s.
+  → betrifft: alle Content-Agenten
+- **Ob ein Bett wirklich durchlaeuft, misst man durch Subtraktion, nicht nach
+  Gehoer.** Musikfreie Fassung von der Musikfassung abziehen — uebrig bleibt
+  genau das Bett, und sein Pegel ueber die Zeit sagt, wo es da ist. Gemessen:
+  **hoerbar von 0,00 s bis 58,55 s** bei einem 58,58-s-Video, Pegel −40 bis
+  −47 dB durchgehend, auch unter dem Outro (54,37–58,58).
+  → betrifft: content-*
+- **Nebeneffekt, der meinen Befund vom 22.10. aufhebt:** der blinde Fleck der
+  Musikpruefung (das Outro enthaelt digitale Stille und bestimmt das leiseste
+  Prozent) **verschwindet, sobald das Bett durchlaeuft**. `abnahme.py` erkennt
+  die Musikfassung jetzt korrekt (leisestes Prozent **−43,3 dB**, faellt
+  durch), waehrend sie bei der frueheren Fassung mit frueh endender Musik
+  durchgewunken haette. **Der Fehler im Werkzeug und der Fehler im Renderer
+  haben sich gegenseitig verdeckt.**
+  → betrifft: content-*, alle
+- **Und eine Lieferkritik an mir, von ihm:** *„warum du mir zweimal das gleiche
+  Short gegeben hast mit dem Zitat von Arthur Clarke."* `AIGod` und
+  `AIGod (ohne Schluss)` sind **dasselbe Stueck**, das zweite ist eine echte
+  Teilmenge des ersten. Es entstand nur, weil er erst die kurze Fassung
+  gewaehlt und dann den Schluss zurueckgeholt hat — ab da war die kurze
+  **ueberholt**, und ich habe sie trotzdem mitgeliefert.
+  **Regel: eine Fassung, die eine Teilmenge einer anderen ist, geht nicht als
+  zweites Stueck mit.** Entweder sie ersetzt die andere, oder sie faellt weg.
+  → betrifft: alle Content-Agenten
+
+
 ## 2026-10-23 — T−2 Aaronson: ausgeliefert, und was fuer die naechste Runde liegenbleibt
 
 - **Der J-Schnitt loest die Stelle, an der meine drei Fassungen hart schneiden

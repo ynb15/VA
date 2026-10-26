@@ -20,12 +20,16 @@
  15  [00:50.38–00:54.08]  LIKE THIS IS ONE OF THE MOST CONSEQUENTIAL MOMENTS IN HUMAN HISTORY
 
 # ══════════════════════════════════════════════════════════════════
-# MUSIK: KEINE. Am 22.10. sind vier veroeffentlichte Shorts weltweit
-#   gesperrt worden, drei verschiedene Titel — darunter um 15:21 genau
-#   der Titel, den dieses Stueck vorher trug (In This Shirt, FUGA).
-#   Auch ein Klaviercover wurde gesperrt, auf die Komposition.
-#   Gemessen: Anteil der Tonfenster unter -55 dB liegt bei 17,2 %
-#   (mit Bett waren es 0,0 %) — es liegt nachweislich nichts darunter.
+# MUSIK: The Irrepressibles — In This Shirt, auf Deine Bitte vom 26.10.
+#   Sie laeuft von Sekunde 0,00 bis 58,55 — also vom ersten Bild bis ins
+#   letzte, durch das Outro hindurch. Gemessen, indem ich die musikfreie
+#   Fassung abgezogen habe; uebrig bleibt genau das Bett.
+#   Pegel 8 dB unter der Stimme, per Sidechain weggedrueckt, wenn gesprochen
+#   wird. Der Song selbst faengt kraeftig an (-13,8 dB in den ersten zwei
+#   Sekunden), es gibt also keinen leisen Vorlauf.
+#   Eine Fassung ohne Musik liegt daneben: "… AI2027 (ohne Musik).mp4".
+#   Zur Erinnerung, ohne Dir reinreden zu wollen: dieser Titel ist am 22.10.
+#   um 15:21 selbst weltweit gesperrt worden.
 #
 # WAS ICH HERAUSGENOMMEN HABE — zum Gegenlesen
 # ══════════════════════════════════════════════════════════════════
