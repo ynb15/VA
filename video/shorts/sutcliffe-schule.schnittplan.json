@@ -1,17 +1,17 @@
 {
- "quelle": "Fenster Master 5465-5600 aus 1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT (master_schnitt.py); Datei beginnt bei Master 5464.98",
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/schule-roh.mp4",
  "bild": [
   [
    7.9,
-   129.7
+   121.36670000000001
   ]
  ],
  "ton": [
   [
    7.9,
-   129.7
+   121.36670000000001
   ]
  ],
  "tonblende_s": 0.02,
- "hinweis": "Ein Stueck, Bild und Ton gleich - auf seine Ansage hin ist innen nichts herausgeschnitten."
+ "hinweis": "Ein Stueck, innen nichts herausgeschnitten. Das Ende liegt jetzt nach 'but the ones who don't' (endet bei Clipzeit 113,36), in der Stille davor dem naechsten Wort bei 113,52. Laenge 3404 Bilder."
 }

@@ -1,5 +1,5 @@
 {
- "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/schule-clip.mp4",
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/schule2-clip.mp4",
  "groesse": [
   1920,
   1080
@@ -121,33 +121,11 @@
    "kasten": "616:0:608:1080",
    "lippe": 1267,
    "start": 89.7,
-   "ende": 115.7,
+   "ende": 113.4667,
    "tot": false,
    "bewegung_x": 0.487,
    "mitte": 0.57,
    "masse": 5.52
-  },
-  {
-   "layout": "einzel",
-   "kasten": "48:0:608:1080",
-   "lippe": 1267,
-   "start": 115.7,
-   "ende": 120.7,
-   "tot": false,
-   "bewegung_x": 0.356,
-   "mitte": 0.26,
-   "masse": 4.18
-  },
-  {
-   "layout": "einzel",
-   "kasten": "616:0:608:1080",
-   "lippe": 1267,
-   "start": 120.7,
-   "ende": 121.97,
-   "tot": false,
-   "bewegung_x": 0.5,
-   "mitte": 0.66,
-   "masse": 4.47
   }
  ]
 }

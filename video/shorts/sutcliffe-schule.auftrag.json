@@ -1,13 +1,16 @@
 {
  "name": "Sutcliffe-Folge - das deutsche Schulsystem und der Troll-Kommentar",
- "datei": "YNB Podcast David Sutcliffe School.mp4",
- "stand": "2026-10-24 - erste Fassung, ohne Musik, 2160x3840",
+ "datei": "YNB Podcast David Sutcliffe School (Moms Got Work).mp4",
+ "stand": "2026-10-26 - zweite Fassung: Tempo 1,15, frueheres Ende, Anfuehrungszeichen, Mom's Got Work",
  "wer_spricht": "Er erzaehlt die Auseinandersetzung mit dem Online-Troll; Sutcliffe wirft ein und erzaehlt von seinen zehn Jahren Supervision.",
  "seine_ansage": "'Und als naechstes auf jeden Fall auch, die Stelle, wo ich mich uebers deutsche Schulsystem aufrege. Und ueber den Kommentar und da bitte nichts eigenstaendig rauscutten.'",
  "nichts_rausgeschnitten": "Innen steht die Stelle vollstaendig, ohne einen einzigen Binnenschnitt - Bild und Ton sind EIN Stueck von 7,90 bis 129,70 im Fenster. Entschieden ist nur, wo sie anfaengt und aufhoert.",
  "quelle": {
   "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
-  "fenster_master_s": [5465.0, 5600.0],
+  "fenster_master_s": [
+   5465.0,
+   5600.0
+  ],
   "hinweis": "In EINEM Stueck geholt. Datei beginnt bei Master 5464.98, 360 MB ueber 45 Bereichsanfragen."
  },
  "fundstelle": {
@@ -15,13 +18,32 @@
   "liegt_direkt_vor": "dem Anger-Clip (veroeffentlicht 01:27:33) - die beiden grenzen aneinander, ohne Ueberschneidung."
  },
  "schnitt": {
-  "von_bis_src_s": [7.9, 129.7],
-  "von_bis_master_s": [5472.88, 5594.68],
+  "von_bis_src_s": [
+   7.9,
+   129.7
+  ],
+  "von_bis_master_s": [
+   5472.88,
+   5594.68
+  ],
   "dauer_roh_s": 121.8,
   "warum_anfang": "Der Satz davor ('that's the safe way to do it, right?') endet bei 7,38, 'it was just yesterday' beginnt bei 7,96 - geschnitten bei 7,90. Ein Kamerawechsel liegt bei Master 5472,6000, also 0,28 s davor; der Einstieg sitzt damit INNERHALB der neuen Einstellung. Bei 5474,1000 folgt der naechste Wechsel, die erste Einstellung ist also nur 1,22 s lang - das ist der Rhythmus des Masters, kein eigener Schnitt.",
   "warum_nicht_auf_dem_wechsel": "Genau auf 5472,6000 einzusteigen haette 'Yeah,' (7,68-7,82) mitgenommen, das zum Satz DAVOR gehoert.",
   "warum_ende": "'And our children.' endet bei 129,38, 'And I listened to your podcast' beginnt bei 129,94 - geschnitten bei 129,70 in der Luecke.",
-  "kamerawechsel_clipzeit_s": [1.2, 42.2, 43.7, 54.2, 60.7, 64.7, 71.7, 80.7, 87.7, 89.7, 115.7, 120.7],
+  "kamerawechsel_clipzeit_s": [
+   1.2,
+   42.2,
+   43.7,
+   54.2,
+   60.7,
+   64.7,
+   71.7,
+   80.7,
+   87.7,
+   89.7,
+   115.7,
+   120.7
+  ],
   "wie_gemessen": "video/schnittgrenzen.py - 11 der 12 Grenzen lagen 2 bis 6 Bilder neben der Schaetzung."
  },
  "bild": {
@@ -52,7 +74,27 @@
   "korrekturen_neu": "craig mccosey / mccosey / makuzi / makosi / markosi -> Makhosi (Whisper und YouTube buchstabieren ihn auf fuenf Arten), 'teachers in training', 'psychologists in training', 'with markosi -> with Craig Makhosi', 'have most touch -> have the most touch'.",
   "derbe_sprache": "'fuck ups in the school system', 'stay on top of shit', 'work on your shit', 'what the fuck', 'suppressing their shit', 'dumping their shit' - alles seine und Sutcliffes eigene Worte, steht so im Untertitel. Nichts davon ist eigenmaechtig entfernt."
  },
- "ton": {"laut": "aus", "dehnung": "atempo", "musik": "keine - nicht bestellt"},
+ "ton": {
+  "laut": "aus",
+  "dehnung": "atempo",
+  "musik": "keine - nicht bestellt"
+ },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
- "laenge_s": {"hauptteil": 101.5, "outro": 4.21, "gesamt": 105.7}
+ "laenge_s": {
+  "hauptteil": 98.7,
+  "outro": 4.21,
+  "gesamt": 102.95
+ },
+ "aenderungen_26_10": {
+  "seine_ansage": "'\"mentally ill\" in Anfuehrungszeichen bitte' / 'but those who don't - da sollte das teacher short enden' / Tempo 1,15 / Mom's Got Work beibehalten",
+  "anfuehrungszeichen": "An BEIDEN Stellen gesetzt - bei Ausgabezeit 0:30 ('judges them as being \"mentally ill\" and incapable of working with children') und bei 1:26 ('we shouldn't have our children to deal with \"mentally ill\" people'). Beide Male zitiert er das Urteil des Schulsystems, nicht seine eigene Meinung; darum beide.",
+  "neues_ende": {
+   "nach": "'but the ones who don't' - das Wort endet bei Clipzeit 113,36",
+   "geschnitten_bei": "113,4667 = Bild 3404. Das naechste Wort beginnt bei 113,52, der Schnitt liegt also in der Stille dazwischen (gemessen -60 dB).",
+   "was_wegfaellt": "'who keep suppressing their shit and keep dumping their shit on other people. Yeah. And our children.' - acht Einblendungen. Der Satz steht als Gedanke trotzdem ganz da: 'It's not the people who are going to therapy who are the danger, but the ones who don't.'"
+  },
+  "tempo": "1,15. 113,467 s Clip -> 98,70 s + 4,21 s Outro = 102,95 s.",
+  "musik": "Adam Taylor - Mom's Got Work, Bett ab Songsekunde 0, 0 dB unter der Stimme.",
+  "lowack_entfallen": "Die Fassung mit Yannick Lowack ist mit dieser Runde weggefallen - er hat ausdruecklich gesagt, Mom's Got Work bleibt. Der Titel liegt weiter im Drive-Ordner, falls er ihn doch will."
+ }
 }
