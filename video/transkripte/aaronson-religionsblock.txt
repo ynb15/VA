@@ -1,0 +1,189 @@
+# Scott Aaronson — der ganze Religionsblock, Rohzeit 1:10:43–1:19:43
+#
+# Das ist das ROHTRANSKRIPT der Folge, nicht der Schnitt.
+# Zeiten sind Rohzeit (Folge ungeschnitten), jede Zeile hat eine Nummer.
+#
+# Spalte vorne:
+#   >>  steht im Short "Belief", so wie es jetzt ist
+#   .   steht nicht drin
+#
+# SO SAGST DU MIR, WAS DU WILLST — such Dir eine Form aus:
+#   a) "nimm 011 bis 016 und 042 bis 044"   -> genau das wird das Short
+#   b) "wie jetzt, aber 027 bis 041 dazu"   -> ich ergaenze
+#   c) Datei bearbeiten und zurueckschicken -> loesch, was raus soll
+#
+# Laengenrechnung: bei Tempo 1,12 sind rund 2,6 Woerter eine Sekunde.
+# Unter 60 s heisst also rund 145 Woerter. Hinter jeder Zeile steht,
+# wieviele Woerter sie hat, und am Blockende die Summe.
+#
+# Zwei Dinge, auf die ich beim Zusammenstellen achte, damit Du sie
+# nicht mitdenken musst:
+#   - kein "he" ohne vorher genannten Namen, keine Frage ohne Antwort
+#   - einen Innenschnitt lege ich, wenn es geht, auf einen Kameraschnitt
+#
+# Ab 1:19:44 geht es um Oktober 7 und Gaza. Steht hier bewusst nicht
+# drin; sag es ausdruecklich, wenn Du daraus etwas willst.
+
+ . 001  [1:10:43]  Speaking of God, I was fascinated by the fact while prepping this                                 12
+ . 002  [1:10:48]  conversation, that to me, you are unique in the way that, you know,                               13
+ . 003  [1:10:56]  you are, you've been working in this space of science for decades.                                12
+ . 004  [1:11:03]  And at the same time, you write about spirituality, religion, even                                11
+ . 005  [1:11:10]  existentialism a lot.                                                                              3
+ . 006  [1:11:12]  I mean, a little bit.                                                                              5
+ . 007  [1:11:14]  I write about sort of whatever is interesting to me at the moment or                              14
+ . 008  [1:11:19]  whatever is helping me procrastinate from whatever else I should be                               11
+ . 009  [1:11:23]  doing, right?                                                                                      2
+ . 010  [1:11:24]  But I mean, you know, clearly, you know, religion, art, you know,                                 12
+ . 011  [1:11:31]  these are all parts of human experience.                                                           7
+ . 012  [1:11:34]  And, you know, if you're interested in everything, then of course you're                          12
+ . 013  [1:11:37]  going to be interested in them.                                                                    6
+>> 014  [1:11:38]  What do you believe in?                                                                            5
+>> 015  [1:11:40]  So, you know, I mean, I was, I was raised in a Jewish family and,                                 15
+>> 016  [1:11:46]  you know, I, at some point I, you know, actually around the time when I                           15
+>> 017  [1:11:53]  was reading Isaac Asimov and all, you know, and Carl Sagan and Richard                            13
+>> 018  [1:11:57]  Dawkins and other people, I, you know, around when I was 12 or so, I                              15
+>> 019  [1:12:02]  said, wow, like this is, this is really all a bunch of, you know,                                 14
+>> 020  [1:12:05]  Iron Age myths, isn't it?                                                                          5
+>> 021  [1:12:07]  Like, you know, none of that was actually true, right?                                            10
+>> 022  [1:12:11]  What I, you know, what I had learned about at my Hebrew Day                                       13
+>> 023  [1:12:15]  School, you know, and I became, you know, for a while, kind of,                                   13
+>> 024  [1:12:23]  you know, fairly militant atheist, I guess.                                                        7
+ . 025  [1:12:27]  And, you know, I thought, okay, the, you know, the, the, the, the progress                        14
+ . 026  [1:12:30]  of science has given sort of less and less room, you know, for, for God                           15
+ . 027  [1:12:35]  or for, for anything mystical.                                                                     5
+ . 028  [1:12:37]  And, you know, and that's just been the pattern for hundreds of years.                            13
+ . 029  [1:12:40]  And there's no reason to expect that that won't continue and that, you                            13
+ . 030  [1:12:45]  know, God will just get pushed into a tighter and tighter corner, you                             13
+ . 031  [1:12:48]  know, of maybe like setting the constants of the standard model                                   11
+ . 032  [1:12:52]  of elementary particles, but then, you know, you know, after that,                                11
+ . 033  [1:12:55]  you know, the laws of physics pretty much answer what is going to happen.                         14
+ . 034  [1:12:59]  Right.                                                                                             1
+ . 035  [1:13:00]  Um, and so, so that, so that was, that was kind of my view for a while.                           17
+ . 036  [1:13:06]  Um, you know, I, I remember, you know, when I was a student,                                      13
+ . 037  [1:13:10]  you know, like once, uh, you know, I was in, uh, computer science,                                13
+ . 038  [1:13:14]  you know, unfortunately, computer science tends to be like                                         9
+ . 039  [1:13:18]  more than 80% male, right.                                                                         5
+ . 040  [1:13:20]  And I thought, um, man, you know, I could, I could, you know,                                     13
+ . 041  [1:13:25]  if, if, if I, if I wanted to meet, uh, women, you know, probably like the                         16
+ . 042  [1:13:30]  best way would be to like, go to, go to the Hillel house, right.                                  14
+ . 043  [1:13:34]  Uh, but then I said, no, but it would be dishonest for me to do that                              16
+ . 044  [1:13:37]  because I don't really believe in it.                                                              7
+ . 045  [1:13:39]  And then I thought, but it's not really symmetric, is it?                                         11
+ . 046  [1:13:42]  Right.                                                                                             1
+ . 047  [1:13:42]  It's like, okay, if you believe in a personal God who really cares                                13
+ . 048  [1:13:46]  about you, then, you know, he might punish you for like going                                     12
+ . 049  [1:13:50]  to a secular humanist meetup, right.                                                               6
+ . 050  [1:13:53]  But there's no atheist God who will punish you for going to Hillel.                               13
+ . 051  [1:13:56]  Right.                                                                                             1
+ . 052  [1:13:57]  If, if you want to go there and have the social experience,                                       12
+ . 053  [1:14:00]  then you should just do that.                                                                      6
+ . 054  [1:14:01]  Right.                                                                                             1
+>> 055  [1:14:02]  And so, you know, I, I sort of evolved to have a more relaxed                                     14
+>> 056  [1:14:06]  attitude, you could say where, you know, this is just, you know,                                  12
+>> 057  [1:14:10]  part of, uh, uh, whatever my, my, my history, my culture, um,                                     12
+ . 058  [1:14:16]  you know, it's, um, and, um, what does it mean to you to be Jewish?                               15
+ . 059  [1:14:23]  Well, you know, it means that, you know, first of all, you know, every                            14
+ . 060  [1:14:29]  someone is going to try to kill you.                                                               8
+ . 061  [1:14:31]  So you should probably be aware of the rate.                                                       9
+ . 062  [1:14:35]  And like when I was a kid,                                                                         7
+ . 063  [1:14:36]  that was just kind of abstract knowledge, right?                                                   8
+ . 064  [1:14:39]  That was like something that I read,                                                               7
+ . 065  [1:14:41]  that I knew because I read it in books                                                             9
+ . 066  [1:14:43]  or because, you know, my grandparents said,                                                        7
+ . 067  [1:14:47]  you know, actually seen it, you know,                                                              7
+ . 068  [1:14:50]  but now, you know, I think we see that                                                             9
+ . 069  [1:14:55]  I think we see that in a much more concrete way.                                                  11
+ . 070  [1:14:57]  So it's first of all, it's that.                                                                   7
+ . 071  [1:15:01]  But it's also, you could say, I would                                                              8
+ . 072  [1:15:07]  say I evolved to a position where ethics is really hard.                                          11
+ . 073  [1:15:16]  We could answer all the questions                                                                  6
+ . 074  [1:15:18]  about what elementary particles are going                                                          6
+ . 075  [1:15:25]  to do when you put them in this state or in that state.                                           13
+ . 076  [1:15:28]  And it still wouldn't answer the questions about, OK,                                              9
+ . 077  [1:15:31]  how should we live?                                                                                4
+ . 078  [1:15:33]  Or which other entities should we even                                                             7
+ . 079  [1:15:39]  regard as having moral value at all?                                                               7
+ . 080  [1:15:43]  Hopefully we regard all other humans as having value.                                              9
+ . 081  [1:15:46]  What about fetuses?                                                                                3
+ . 082  [1:15:51]  What about non-human animals?                                                                      4
+ . 083  [1:15:54]  What about AIs?                                                                                    3
+ . 084  [1:15:56]  Who is in the charm circle of conscious beings                                                     9
+ . 085  [1:16:02]  that we care about?                                                                                4
+ . 086  [1:16:03]  And you could say, for all the progress in science,                                               10
+ . 087  [1:16:07]  there is still this hard problem of consciousness.                                                 8
+ . 088  [1:16:10]  There is still this explanatory gap                                                                6
+ . 089  [1:16:14]  in getting to, well, where do we actually                                                          8
+ . 090  [1:16:19]  enter the picture as agents?                                                                       5
+ . 091  [1:16:23]  And so you could set a charitable view toward religion                                            10
+ . 092  [1:16:30]  would be to say that people have been actually grappling                                          10
+ . 093  [1:16:32]  with these kinds of things for thousands of years                                                  9
+ . 094  [1:16:36]  with the concepts that were available to them at the time.                                        11
+ . 095  [1:16:42]  Their science was vastly more primitive than ours was.                                             9
+ . 096  [1:16:45]  And their morality was also much more primitive                                                    8
+ . 097  [1:16:49]  than ours was, and so they got a lot wrong.                                                       10
+ . 098  [1:16:52]  But if you look at the Buddhist tradition, for example,                                           10
+ . 099  [1:16:56]  there was a lot of really deep thought there.                                                      9
+ . 100  [1:16:59]  If you look at almost any of the major religious traditions,                                      11
+ . 101  [1:17:05]  there was a lot of thought there that was worth preserving.                                       11
+ . 102  [1:17:09]  And I would say the Jewish tradition in particular                                                 9
+ . 103  [1:17:15]  is notable for being maybe one of the first to say,                                               11
+ . 104  [1:17:22]  Just because, basically, might does not necessarily                                                7
+ . 105  [1:17:29]  make right.                                                                                        2
+ . 106  [1:17:33]  When the first temple was destroyed                                                                6
+ . 107  [1:17:37]  and the Jews were exiled to Babylon,                                                               7
+ . 108  [1:17:40]  the normal thing to say, according                                                                 6
+ . 109  [1:17:43]  to the Moors of the time, was our god has failed us.                                              12
+ . 110  [1:17:50]  The true God is the Babylonian God,                                                                7
+ . 111  [1:17:52]  because that's the one who defeated us in war.                                                     9
+ . 112  [1:17:56]  And you could say Judaism, as we know it today,                                                   10
+ . 113  [1:18:01]  started when they said, no.                                                                        5
+ . 114  [1:18:04]  We failed God.                                                                                     3
+ . 115  [1:18:05]  It wasn't that God failed us.                                                                      6
+ . 116  [1:18:08]  And you see in the Bible, there is one book                                                       10
+ . 117  [1:18:15]  that deals with these things way more brilliantly                                                  8
+ . 118  [1:18:18]  than anything else, which is Joke, of course, right?                                               9
+ . 119  [1:18:21]  But they're just sort of directly asking the question                                              9
+ . 120  [1:18:27]  of how can, if there is this God,                                                                  8
+ . 121  [1:18:33]  how can he allow so much injustice                                                                 7
+ . 122  [1:18:38]  or cause all of this injustice?                                                                    6
+ . 123  [1:18:41]  What's your response to that?                                                                      5
+ . 124  [1:18:44]  Well, I don't know.                                                                                4
+ . 125  [1:18:45]  I mean, famously, the answer of the book was, well,                                               10
+ . 126  [1:18:55]  puny human, what makes you think that you could dare                                              10
+ . 127  [1:19:00]  to try to understand the answer?                                                                   6
+ . 128  [1:19:03]  So it's sort of a very unsatisfying non-answer,                                                    8
+ . 129  [1:19:08]  I would say.                                                                                       3
+ . 130  [1:19:09]  But maybe one answer would be to say, well,                                                        9
+ . 131  [1:19:14]  We shouldn't accept the situation.                                                                 5
+ . 132  [1:19:16]  We should fight it.                                                                                4
+ . 133  [1:19:18]  And that, the whole project of creating an aligned AI                                             10
+ . 134  [1:19:23]  is, you could say, it's sort of like people saying,                                               10
+ . 135  [1:19:27]  well, you know what, screw this.                                                                   6
+ . 136  [1:19:32]  If God is going to allow all of this injustice,                                                   10
+ . 137  [1:19:36]  then we should be helping the really just God                                                      9
+ . 138  [1:19:43]  come into being.                                                                                   3
+
+# ====================================================================
+# Im jetzigen Short: 14 Zeilen, 163 Woerter -> 55,0 s Hauptteil + 4,2 s Outro.
+# Der ganze Block: 138 Zeilen, 1227 Woerter -> waeren rund 7 Minuten.
+#
+# Vier Stellen, die ich fuer tragfaehig halte, falls Du waehlen willst:
+#   * die Hillel-Geschichte                    1:13:06-1:14:02   ~56 s
+#       Er will Frauen kennenlernen, fast geht er in den juedischen
+#       Studentenclub, dann das Argument: es gibt keinen Atheistengott,
+#       der einen dafuer bestraft.
+#   * "What does it mean to you to be Jewish?" 1:14:19-1:15:01   ~42 s
+#       Deine Frage, seine harte kurze Antwort.
+#   * Babylon, "we failed God"                 1:17:09-1:18:08   ~59 s
+#       Laeuft am Stueck, braeuchte keinen Innenschnitt.
+#   * Hiob bis "helping the really just God come into being"
+#                                              1:18:08-1:19:43   ~95 s
+#       Verbindet Religion und KI-Alignment, passt zum "AI God"-Short.
+#
+# Zeile 057 ist nur bis "my culture" drin, das "um," danach nicht.
+#
+# Feine Zeilen bis 1:14:27 sind mein eigener Durchlauf am Master,
+# danach das Rohtranskript der Folge — deshalb werden die Zeilen ab
+# dort laenger. Fuer die Auswahl macht das keinen Unterschied.
+#
+# NICHT VEROEFFENTLICHT. Ich baue, Du laedst hoch.
