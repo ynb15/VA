@@ -59,18 +59,18 @@ def main():
     # und der Renderer gab dem Grenzbild den Ausschnitt der falschen
     # Einstellung - an vier Grenzen standen wieder zwei Bildspruenge statt
     # einem. Genau der Fehler, den er am 24.10. dreimal gemeldet hat.
+    # Geprueft wird die LAENGE jedes Bildstuecks, nicht die absolute Quellzeit:
+    # das Bildraster des geschnittenen Clips beginnt bei 0, egal wo in der
+    # Quelle geschnitten wurde. Entscheidend ist, dass jede Naht im Ergebnis
+    # auf ein Bild faellt - und das haengt nur an den Laengen.
     bilder = plan.get("bilder_je_sekunde", 30)
-    schief = []
-    for a, b in bild:
-        for t in (a, b):
-            if abs(t * bilder - round(t * bilder)) > 0.01:
-                schief.append(t)
-    if abs(db * bilder - round(db * bilder)) > 0.01:
-        schief.append(db)
+    schief = [(i, b - a) for i, (a, b) in enumerate(bild)
+              if abs((b - a) * bilder - round((b - a) * bilder)) > 0.01]
     if schief:
-        sys.exit("Diese Zeiten liegen nicht auf einem Bild (bei "
-                 f"{bilder} Bildern/s): "
-                 + ", ".join(f"{t:.4f} = Bild {t * bilder:.2f}" for t in schief)
+        sys.exit("Diese Bildstuecke sind keine ganze Zahl von Bildern lang "
+                 f"(bei {bilder} Bildern/s): "
+                 + ", ".join(f"Stueck {i + 1}: {d:.4f} s = {d * bilder:.2f} Bilder"
+                             for i, d in schief)
                  + "\nDas faellt am Schnitt selbst nicht auf, verschiebt aber "
                    "jede Einstellungsgrenze dahinter zwischen zwei Bilder. "
                    "Auf ein Vielfaches von 1/%d runden." % bilder)

@@ -993,3 +993,11 @@ der Meldung. Die Prüfung ist billiger als ein 25-Minuten-Lauf in 4K.
 umrechnen, dann schneiden** — und danach die Schnittprobe laufen lassen, an
 *allen* Grenzen, nicht nur an der neuen Naht. Der Fehler zeigt sich nicht
 dort, wo man geschnitten hat.
+
+**Nachtrag 26.10., gleicher Tag:** die Prüfung, die ich dafür eingebaut habe,
+war zuerst **falsch** — sie hat die *absoluten Quellzeiten* geprüft (2,55 ·
+16,7833 · 20,0833) und damit einen völlig korrekten Plan abgelehnt. Das
+Bildraster des geschnittenen Clips beginnt bei 0, egal wo in der Quelle
+geschnitten wurde; entscheidend ist allein die **Länge jedes Bildstücks**.
+14,2333 s = 427 Bilder und 134,1667 s = 4025 Bilder sind glatt, auch wenn
+2,55 s = 76,5 Bilder es nicht ist. Die Prüfung misst jetzt die Längen.
