@@ -105,11 +105,11 @@ stellt die Verbindung her.
 > I know I don't have the biggest reach yet. But I've already had some wyld
 > characters on, such as…
 >
->   - South African ManKindProject leader Craig Makhosi
->   - Hollywood actor turned men's therapist David Sutcliffe
->   - my 77 y/o psychedelic therapist, apartheid activist and techno icon Rob Bennett
+>   - South African ManKindProject leader [Craig Makhosi](https://www.youtube.com/watch?v=FF-eRPgZI2k)
+>   - Hollywood actor turned men's therapist [David Sutcliffe](https://www.youtube.com/watch?v=frNOUgxE0IM)
+>   - my 77 y/o psychedelic therapist, apartheid activist and techno icon [Rob Bennett](https://www.youtube.com/watch?v=o9lM8i6XUWo)
 >   - Burning Man CEO Marian Goodell
->   - and of course living legend Rob Paddock
+>   - and of course living legend [Rob Paddock](https://www.youtube.com/watch?v=ud5kr_LoqU4)
 >
 > I committed to depth over quantity. In-person only. Every guest I invite is
 > meaningful to me. **You're one of them.**
@@ -320,3 +320,26 @@ Town — er sitzt auf Londolozi im Osten), Approval *Yes*.
 *Quellen: Dein Dokument `YNB Podcast: Boyd Varty` (Drive) · Dein Faden mit Cal
 Callahan, 20.08.–20.09.2026 · [All American Speakers](https://allamericanspeakers.com/speakers/429527/Boyd-Varty) ·
 [Penguin Random House](https://penguinrandomhouse.com/authors/130249/boyd-varty)*
+
+---
+
+## Die Links unter der Gästeliste (26.10., auf seine Ansage)
+
+Aus der Kanalliste vom 21.10., jedes Video am 26.10. per oEmbed als öffentlich
+und auf seinem Kanal geprüft:
+
+| Name | Folge | Link |
+|---|---|---|
+| Craig Makhosi | „The SHOCKING Truth About The Crisis in South Africa: Segregation, Whiteness & Black Violence (4K)", 8.712 s | https://www.youtube.com/watch?v=FF-eRPgZI2k |
+| David Sutcliffe | „The Hollywood Star Who Quit Everything To Heal Men: Andrew Tate, The Manosphere & God (4K)", 6.993 s | https://www.youtube.com/watch?v=frNOUgxE0IM |
+| Rob Bennett | „The Craziest Therapist Alive: 77 y/o Techno DJ Rob Bennett on Apartheid, Psychedelics and Death", 7.115 s | https://www.youtube.com/watch?v=o9lM8i6XUWo |
+| Rob Paddock | „$100M Exit, Psychedelic Fatherhood & The Truth About Masculinity – Millionaire Rob Paddock (8K)", 5.533 s | https://www.youtube.com/watch?v=ud5kr_LoqU4 |
+
+> **Der eine Link, den er vor dem Senden einmal anklicken sollte: Craig
+> Makhosi.** Sein Name steht nicht im Titel. Die Zuordnung stützt sich auf drei
+> Dinge — die Länge (rund 2,5 Stunden), Alfreds Notiz *„He published a 2.5h
+> conversation with Craig Makhosi"* und dass es die einzige lange Folge ohne
+> Namen ist. Das ist eine starke Vermutung, kein Beleg.
+
+Marian Goodell bekommt keinen Link: die Burning-Man-Folge ist noch nicht
+veröffentlicht (Tonproblem, Mail an Walker Fisher vom 19.10.).
