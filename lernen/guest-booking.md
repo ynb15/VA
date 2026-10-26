@@ -321,3 +321,22 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   hat hier mehr gefunden als die Frage gekostet hätte; aber ohne seinen Text
   gibt es keine Analyse, und das sage ich in einer Zeile statt zu raten.
   → betrifft: alle Agenten
+- **Seine Ortsrecherche hat zwei Schritte, ich kannte nur den ersten.** Am
+  21.10. hatte er gesagt: *„Ich gebe oft bei Google ein, Scott Aronson, where
+  does he live?"* Am 26.10. kam der Rest: *„Und dann gucke ich gegebenenfalls
+  bei LinkedIn und oder bei Twitter, weil da oft auch die Locations stehen."*
+  **Ich war bei Jon Savage und bei Craig Mundie nach Schritt 1 stehen
+  geblieben** und habe das Ortsfeld leer gelassen; bei Mundie hat er die
+  Antwort dann selbst geliefert (Seattle, Washington). **Wichtig für alle:
+  `linkedin.com`, `x.com` und `instagram.com` sind aus dem Container gesperrt**
+  — Schritt 2 geht nur über ihn. Dann aber als konkrete Bitte („schau bei
+  LinkedIn"), nicht als Leerstelle im Feld.
+  → betrifft: alle, die für ihn recherchieren
+- **Ein fehlender Wert und ein fehlender Feldtyp sind zwei verschiedene
+  Blockaden.** Bei Craig Mundie war erst der Ort unbekannt; als er ihn
+  lieferte, stellte sich heraus, dass die `Location`-Auswahlliste **kein
+  „Washington" als Bundesstaat** kennt — nur „Washington DC", also die
+  Hauptstadt. Einen Wert eintragen ist Routine; **eine Option anlegen ändert
+  die Struktur seiner Datenbank** und wird vorgelegt. Notion lehnt einen
+  unbekannten Select-Wert von sich aus ab, legt ihn also nicht still an.
+  → betrifft: alle, die an der Databank arbeiten

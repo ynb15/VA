@@ -8784,3 +8784,41 @@ eine Quelle wegfällt, wird die nächste genommen — und bevor ein Spiegel aus
 Yannicks Biografie gebaut wird, muss belegt sein, dass das Thema beim
 Empfänger überhaupt vorkommt. **Ein Spiegel, der nur auf einer Seite liegt,
 ist keiner.**
+
+───────────────────────────────────────────────────────────────────
+SEINE ORTSRECHERCHE, VOLLSTÄNDIG — ZWEITER TEIL, 26.10.2026
+───────────────────────────────────────────────────────────────────
+
+Am 21.10. hat er den ersten Schritt genannt (oben, Abschnitt „SEIN
+BETREFF-TRICK"). Am 26.10. hat er die ganze Methode nachgeliefert, nachdem
+ich bei Craig Mundie mit „kein Wohnort belegt" stehen geblieben war:
+
+> "wenn ich herausfinden will, wo jemand wohnt, gebe ich einfach immer den
+> Namen bei Google ein plus die Frage, where does he live, where does she
+> live? Und dann gucke ich gegebenenfalls bei LinkedIn und oder bei Twitter,
+> weil da oft auch die Locations stehen."
+
+**Es sind also zwei Schritte, nicht einer:**
+
+1. `<Name> where does he live` / `where does she live` bei Google.
+2. **Wenn das dünn bleibt: LinkedIn und/oder Twitter/X.** Dort steht der Ort
+   oft im Profil selbst.
+
+**Warum ich den zweiten Schritt zweimal übersprungen habe:** bei Jon Savage
+und bei Craig Mundie bin ich nach dem ersten Schritt stehen geblieben und
+habe das Feld leer gelassen. Bei Mundie hat er die Antwort dann selbst
+geliefert — **Seattle, Washington**. Das ist Arbeit, die er nicht hätte
+machen müssen.
+
+**Die Einschränkung, die dazugehört, und sie ist technisch:** `linkedin.com`,
+`x.com` und `instagram.com` sind aus diesem Container **nicht erreichbar**
+(Proxy, 403 bzw. ENOTFOUND). Schritt 2 kann ich also nicht selbst gehen.
+**Daraus folgt nicht, dass das Feld leer bleibt**, sondern:
+- erst Websuche in die Breite ziehen (Konferenzprofile, Verlagsbios,
+  Institutsseiten nennen den Ort oft im Nebensatz),
+- und wenn das nichts hergibt, **ihm genau diesen einen Schritt vorlegen**:
+  „bei LinkedIn/X nachsehen" ist für ihn fünf Sekunden und für mich gesperrt.
+
+**Die Grenze vom 21.10. bleibt unverändert:** Stadt ja, Wohnadresse nein.
+Als bei Martin Seligman im Suchergebnis das Haus und sein Vorbesitzer
+standen, ist beides nicht in die Zeile gewandert.
