@@ -1,12 +1,15 @@
 {
  "name": "Sutcliffe-Folge - die Playmate-Ehe und die Trennung",
- "datei": "YNB Podcast David Sutcliffe Divorce.mp4",
- "stand": "2026-10-24 - erste Fassung, ohne Musik, 2160x3840",
+ "datei": "YNB Podcast David Sutcliffe Divorce (Moms Got Work).mp4",
+ "stand": "2026-10-26 - zweite Fassung: Tempo 1,15, Block herausgenommen, Mom's Got Work",
  "wer_spricht": "Er stellt die Frage mit dem Sokrates-Zitat, Sutcliffe erzaehlt.",
  "quelle": {
   "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
   "master_titel": "YNB Podcast: David Sutcliffe",
-  "fenster_master_s": [490.0, 642.0],
+  "fenster_master_s": [
+   490.0,
+   642.0
+  ],
   "hinweis": "In EINEM Stueck geholt. Datei beginnt bei Master 489.98, 400 MB ueber 50 Bereichsanfragen."
  },
  "fundstelle": {
@@ -14,13 +17,29 @@
   "wie_gefunden": "Erst im veroeffentlichten Transkript gesucht, dann den Versatz LOKAL gemessen - und genau das war noetig: aus dem Anker der Hypermaskulinitaets-Stelle (veroeffentlicht 4321 ↔ Master 4569) haette sich Master 302 ergeben, richtig sind 499. Der Versatz wandert ueber die Folge um fast 200 s. Gemessen an einer 26-Sekunden-Probe bei Master 290: 'kept in it' ↔ veroeffentlicht 00:04:12, 'didn't become truly disillusioned' ↔ 00:04:19 - daraus Master = 1,1 x veroeffentlicht + 12,75, aus beiden Wortpaaren derselbe Wert."
  },
  "schnitt": {
-  "von_bis_src_s": [4.9, 141.6],
-  "von_bis_master_s": [494.88, 631.58],
+  "von_bis_src_s": [
+   4.9,
+   141.6
+  ],
+  "von_bis_master_s": [
+   494.88,
+   631.58
+  ],
   "dauer_roh_s": 136.7,
   "werkzeug": "video/schnitt_bauen.py (ein Stueck, Bild und Ton gleich)",
   "warum_anfang": "Die Luecke zwischen 'dude.' (3,58) und 'We also' (5,24) ist 1,66 s lang; geschnitten wird bei 4,90, also 0,34 s vor dem ersten Wort. 0,28 s davor, bei Master 494,6000, liegt ein Kamerawechsel (Differenz 42,5 gegen Ruhepegel 1,71) - der Einstieg liegt also INNERHALB der neuen Einstellung und nicht auf ihrer Kante.",
   "warum_ende": "'other people.' endet bei 141,12; geschnitten bei 141,60. In 2,6 s um den Ausstieg herum liegt kein Kamerawechsel (groesster Unterschied 1,69 gegen Ruhepegel 1,20), der Schnitt faellt also in eine ruhige Einstellung.",
-  "kamerawechsel_clipzeit_s": [4.7, 6.2, 19.7, 39.3333, 46.2, 75.7, 77.7, 103.5, 110.7],
+  "kamerawechsel_clipzeit_s": [
+   4.7,
+   6.2,
+   19.7,
+   39.3333,
+   46.2,
+   75.7,
+   77.7,
+   103.5,
+   110.7
+  ],
   "wie_gemessen": "video/schnittgrenzen.py (neu). bildausschnitt.py schaetzt die Grenzen und lag bei ALLEN NEUN um 1 bis 6 Bilder daneben - genau der Fehler, der am 24.10. das Zittern am Schnitt verursacht hat."
  },
  "bild": {
@@ -49,7 +68,29 @@
   "john_peterson": "Steht NICHT in diesem Clip (das ist der Wut-Clip).",
   "shit": "'because I'd always kept my shit together' bei Clipzeit 108 - Sutcliffes Wort, steht so im Untertitel."
  },
- "ton": {"laut": "aus", "dehnung": "atempo", "musik": "keine - nicht bestellt"},
+ "ton": {
+  "laut": "aus",
+  "dehnung": "atempo",
+  "musik": "keine - nicht bestellt"
+ },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py",
- "offen": "Er entscheidet ueber die Laenge. video/sutcliffe-zwei-neue-clips.md nennt drei Stellen zum Kuerzen, mit Zeitmarken."
+ "offen": "Er entscheidet ueber die Laenge. video/sutcliffe-zwei-neue-clips.md nennt drei Stellen zum Kuerzen, mit Zeitmarken.",
+ "aenderungen_26_10": {
+  "seine_ansage": "'beim Playmate short bitte diesen Teil rausnehmen' - von 'I mean, we planned for it' bis 'So everybody knew that it was not a good idea.' Dazu Tempo 1,15 und Mom's Got Work drunter.",
+  "binnenschnitt": {
+   "heraus": "30,60 s = GENAU 918 Bilder",
+   "ton": "Clipzeit 64,85-95,45, also nach 'Las Vegas.' (endet 64,65) bis vor 'But I guess' (beginnt 95,57). Beide Schnitte liegen in einer Sprechpause.",
+   "bild": "Clipzeit 75,70-106,30. Der Bildschnitt liegt damit auf dem Kamerawechsel bei 75,70 und kommt in der Totale wieder herein - die Naht sieht aus wie ein Schnitt von Davids Nahaufnahme auf die Totale, also wie einer, den der Master selbst macht. Geprueft: genau ein Bildsprung, 35-facher Ruhepegel.",
+   "weggefallen": "36 von 153 Einblendungen; zwei Einstellungen (75,70-77,70 und 77,70-103,50) fallen ganz weg.",
+   "was_damit_fehlt": "Seine eigene Frage nach der Mutter und Davids Satz 'when I called her four months later and said we were splitting up, her response was: I think that's for the best.' Das war seine Entscheidung, nicht meine - ich hatte diesen Teil im Skript ausdruecklich NICHT zum Kuerzen vorgeschlagen."
+  },
+  "totalen": "Auf volle Bildhoehe, 1310:0:608:1080 statt 493x875. Davids Kopfmitte in der Totale dieses Clips bei 1614 gemessen; 1312 waere das aeusserste Moegliche (1920-608).",
+  "tempo": "1,15. 106,10 s Clip -> 92,30 s + 4,21 s Outro = 96,55 s.",
+  "musik": "Adam Taylor - Mom's Got Work, Bett ab Songsekunde 0, 0 dB unter der Stimme (der laute Pegel, den er beim Anger-Short gewaehlt hat)."
+ },
+ "laenge_s": {
+  "hauptteil": 92.3,
+  "outro": 4.21,
+  "gesamt": 96.55
+ }
 }

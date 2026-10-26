@@ -1,17 +1,25 @@
 {
- "quelle": "Fenster Master 490-642 aus 1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT (master_schnitt.py); Datei beginnt bei Master 489.98",
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/scheidung-roh.mp4",
  "bild": [
   [
    4.9,
+   80.60000000000001
+  ],
+  [
+   111.2,
    141.6
   ]
  ],
  "ton": [
   [
    4.9,
+   69.75
+  ],
+  [
+   100.35000000000001,
    141.6
   ]
  ],
  "tonblende_s": 0.02,
- "hinweis": "Ein Stueck, Bild und Ton gleich - kein J-Schnitt noetig, die Stelle laeuft durch. Zeiten relativ zum Dateianfang."
+ "hinweis": "J-Schnitt. Heraus sind 30,60 s = genau 918 Bilder: von 'I mean, we planned for it' bis 'So everybody knew that it was not a good idea.' Der Bildschnitt liegt auf dem Kamerawechsel bei Clipzeit 75,70, der Tonschnitt in der Pause nach 'Las Vegas.'"
 }
