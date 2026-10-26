@@ -176,6 +176,9 @@ FRAGE_BREITE = int(W * 0.84)
 # bei 82 px 1918 px — in einer Zeile undarstellbar, ausser man verkleinert
 # die Schrift, und das hat er ausdruecklich nicht gewollt.
 FRAGE_MAX = 2 * (W - 80)
+# Luft links und rechts neben dem Kopfzeilenfeld. Ohne sie steht das Feld
+# auf dem Bildrand und sieht aus wie ein Fehler.
+KOPF_RAND = 40
 
 
 def _anzeige(wort, gross):
@@ -1446,6 +1449,17 @@ def main():
                   f"{a.kopfzeile_dauer}s, "
                   + ("weiss auf schwarz" if not a.kopfzeile_hell
                      else "schwarz auf weiss"))
+            # Ein Feld, das breiter ist als das Bild, steht an beiden Seiten
+            # ueber den Rand: die runden Ecken sind weg und die Schrift
+            # klebt am Rand. Am 26.10. zweimal passiert (1098 und 1123 px
+            # bei 1080) und erst beim Nachlesen des Protokolls aufgefallen,
+            # nicht im Bild. Darum hier ein Abbruch mit der Groesse, die
+            # passt — Raten kostet einen ganzen Rendergang.
+            if kb > W - 2 * KOPF_RAND:
+                passt = int(a.kopfzeile_groesse * (W - 2 * KOPF_RAND) / kb)
+                raise SystemExit(
+                    f"  Kopfzeile zu breit: {kb} px bei {W - 2 * KOPF_RAND} px "
+                    f"Platz. --kopfzeile-groesse {passt} passt.")
             # Kopfzeile und Untertitel koennen sich treffen: das Feld sitzt
             # mittig auf 68 % der Hoehe, die Zeile ohne gemessene Lippe auf
             # 70 %. Das faellt am Code nicht auf, nur im Bild — also wird es

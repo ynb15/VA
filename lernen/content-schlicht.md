@@ -725,3 +725,16 @@ Einstellung — war schon erfüllt: `mindestdauer` steht auf 0,6 s, und die
 kürzeste Einstellung in meinen fünf Shorts ist 1,2 s. Geprüft, nicht
 angenommen.
 → betrifft: content-*
+
+**26.10. — Was im Protokoll steht, habe ich nicht gelesen.** Bei zwei der
+fünf Logan-Shorts war das Kopfzeilenfeld **breiter als das Bild**: 1098 und
+1123 px bei 1080. Der Renderer hatte die Zahl jedes Mal ausgegeben, ich hatte
+sie jedes Mal überlesen — und die Dateien sind so rausgegangen. Gefunden habe
+ich es erst beim dritten Rendergang, beim Nachlesen der Ausgabe.
+`shorts-render.py` bricht jetzt ab, wenn das Feld breiter ist als Bild minus
+Rand, **und nennt die Größe, die passt**. Eine Warnung hätte nichts geändert:
+ich hatte ja schon eine Zahl und habe sie nicht angesehen.
+**Regel: wenn ein Werkzeug eine Zahl ausgibt, die falsch sein kann, muss es
+die Prüfung selbst machen. Eine Ausgabe, die niemand liest, ist keine
+Prüfung.**
+→ betrifft: content-*, alle Content-Agenten
