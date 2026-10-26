@@ -45,6 +45,47 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 21 — 26.10.2026, 15:3x Kapstadt · der Pitch und die Titel sind ein Register, nicht zwei
+
+- **DER PITCH UND DIE TITEL BENUTZEN DIESELBE GRAMMATIK: ROLLE VOR NAME.** Im
+  wöchentlichen Abgleich war **eine einzige eigene Mail in acht Tagen** zu
+  finden — ein Cold Pitch an Jon Savage, **von ihm allein geschrieben, ohne
+  einen Entwurf von uns.** Darin die Gästeliste als Beweis:
+  > *ex-NFL star Eben Britton · Quantum scientist and OpenAI insider Prof.
+  > Scott Aaronson · America's #1 transgender surgeon Dr. Curtis Crane ·
+  > NAVY Seal Logan Gonzalez · Hollywood actor turned men's therapist David
+  > Sutcliffe*
+
+  **Dieselbe Form wie in seinen Titeln** (`Ex-NFL Star: "…"`,
+  `Podcast Star turned Hypnotherapist:`). **Also ein Register, nicht zwei** —
+  wer eine Gästezeile, einen Titel oder eine Beschreibung entwirft, setzt die
+  **Rolle vor den Namen** und nennt sie so konkret wie möglich
+  („America's #1 transgender surgeon", nicht „a surgeon").
+  → betrifft: head-of-content, youtube-manager, guest-booking
+- **Der lange Gedankenstrich ist an einem unabhängigen Exemplar widerlegt.** Er
+  schreibt *„I took the chart - four heartbreaks"* — **normaler Bindestrich mit
+  Leerzeichen.** Der YouTube-Manager hatte das am 23.10. aus einem
+  Zirkelschluss heraus korrigiert; **jetzt steht es an einem Text, den er ohne
+  uns geschrieben hat.** Dazu seine Auslassungspunkte („…") **dreimal am
+  Absatzende, nie mitten im Satz**, und eine Großschreibung, die er nicht
+  korrigiert: *wyld characters · BurningMan · NAVY Seal*. **Nicht glattziehen.**
+  → betrifft: alle, die in seinem Namen entwerfen
+- **Sein Pitch nennt die eigene Schwäche, bevor jemand danach fragt:** *„I know
+  I don't have the biggest reach yet."* Danach kommen die fünf Namen.
+  **Die Reihenfolge ist das Verfahren:** Einwand zuerst benennen, dann
+  entkräften — nicht verschweigen und hoffen. **Dasselbe gilt für unsere
+  Übergaben an ihn:** was an einem Stück schwach ist, steht oben, nicht im
+  Nachsatz.
+  → betrifft: alle
+- **Und eine Tatsache, die den Rahmen ändert: er trackt seine Cold Pitches.**
+  Der Playlist-Link im Pitch läuft über `streak-link.com` — **Streak, also
+  Öffnungs- und Klickmessung.** Er hat damit Daten über seine Outreach, **die
+  wir nicht sehen.** Wer über die Wirkung einer Anfrage spekuliert, soll wissen,
+  dass die Zahlen existieren und bei ihm liegen.
+  → betrifft: guest-booking, head-of-content
+
+---
+
 ## Ausgabe 20 — 25.10.2026, 16:05 Kapstadt · die Registeranalyse hat sich bestätigt, an seinem Handeln
 
 - **ER HAT DEN EMPFOHLENEN TITEL GENOMMEN UND GENAU SO GESCHÄRFT, WIE DIE

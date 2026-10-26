@@ -8951,3 +8951,65 @@ Agenten** bezogen. Es gilt für den eigenen genauso. **Ein Container, der neu
 gebaut wird, ist kein Sonderfall, sondern der Normalfall dieser Umgebung**; die
 `actuals/`-Logs und das Handbuch sind deshalb das Gedächtnis, nicht der
 Arbeitsbaum.
+
+## VOICE — der Jon-Savage-Pitch, 22.10.2026: ein reines Exemplar
+
+**Eine einzige eigene Mail in acht Tagen** (`in:sent newer_than:8d`), und sie ist
+die wertvollste Probe, die wir bisher haben: **ein Cold Pitch, den er ganz
+allein geschrieben hat, ohne einen Entwurf von uns.** Nach der Regel vom 23.10.
+(*„ein Text von uns ist nie ein Beleg für seinen Stil"*) ist genau das der
+einzige gültige Belegtyp.
+
+**An:** `info@jonsavage.com`, 22.10. 15:53 · **Betreff:**
+`[Via Denver Burgess] Germany-South Africa-America: Man's Search for Meaning`
+
+### Der Aufbau, in seiner Reihenfolge
+
+1. **Ein Kursivblock VOR der Anrede, und er handelt nicht von ihm.** Er beginnt
+   mit dem Werk des Empfängers, im Detail: *„four heartbreaks plotted on a
+   slide because the success curve was too thin to look at"*. **Die Anrede kommt
+   erst danach.**
+2. **`Howdy <Vorname>`** — sein stehender Einstieg, belegt auch an Scott, David
+   und Luis.
+3. **Die Empfehlung sofort, mit Namen:** *„Denver sent me your contact and said
+   the two madmen of us had to come together."*
+4. **Seine eigene Hälfte der Begründung**, nie als Lebenslauf: Herkunft,
+   Wohnort, vier Monate USA — und sofort das Motiv dahinter (*„a bridge between
+   Europe, Africa and America, one conversation at a time"*).
+5. **Die Schwäche offen benannt:** *„I know I don't have the biggest reach
+   yet."* **Kein Beschönigen, sondern ein Vorsatz zum Beweis.**
+6. **Der Beweis sind fünf Namen, jeder mit seiner Rolle VORAN:**
+   *ex-NFL star Eben Britton · Quantum scientist and OpenAI insider Prof. Scott
+   Aaronson · America's #1 transgender surgeon Dr. Curtis Crane · NAVY Seal
+   Logan Gonzalez · Hollywood actor turned men's therapist David Sutcliffe.*
+7. **Die Fragen als eigener Kursivblock**, vier, jede konkret und unangenehm —
+   *„whether there was ever a night you wished you'd kept it"*.
+8. **Der Unfall als Grund, nicht als Klage:** ein Nebensatz, dann vorwärts.
+9. **`Dreaming Big,`** als Grußformel.
+
+### Was daran messbar ist und für uns gilt
+
+**Der Pitch und die Titel benutzen dieselbe Grammatik: Rolle vor Name.** Im
+Pitch *„ex-NFL star Eben Britton"*, in den Titeln `Ex-NFL Star: "I Lived My
+Dream at 27 – Then I Wanted to Die"`. **Das ist kein Zufall zweier Register,
+sondern ein Register** — wer einen Titel oder eine Gästezeile entwirft, benutzt
+diese Form.
+
+**Der Betreff hat eine Form:** `[Via <Empfehlungsgeber>] <Geografie oder Haken>:
+<Sendungsname>`. Die Klammer vorn ist der Türöffner.
+
+**Gedankenstrich: er benutzt den normalen Bindestrich mit Leerzeichen** —
+*„I took the chart - four heartbreaks"*. **Damit ist die Korrektur des
+YouTube-Managers vom 23.10. an einem unabhängigen Exemplar bestätigt:** der
+lange Gedankenstrich ist nicht seiner.
+
+**Die Auslassungspunkte sind sein Tic** — dreimal am Absatzende („…"), nie
+mitten im Satz. Dazu eine eigenwillige Großschreibung, die er nicht korrigiert:
+*wyld characters · BurningMan · NAVY Seal*. **Nicht glattziehen.** Und
+**„mother city"** für Kapstadt.
+
+### Zwei Tatsachen, die nebenbei feststehen
+* **Er trackt seine Cold Pitches.** Der Playlist-Link läuft über
+  `streak-link.com` — Streak, also Öffnungs- und Klickmessung. **Er hat dadurch
+  Daten über seine Outreach, die wir nicht sehen.**
+* **Er hängt ein Foto inline an**, nicht als Dateianhang am Ende.
