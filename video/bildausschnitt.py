@@ -65,6 +65,15 @@ ZEILE_WEIT = 0.42           # Zeilenhoehe, wenn die Person klein im Bild steht
 KOPF_PROBEN = 25            # Proben (a 0,2 s) fuer die Messung der Kopfoberkante
 
 
+def bildrate(pfad):
+    """Bildrate der Datei (29,97 kommt als 30000/1001 zurueck)."""
+    c = av.open(pfad)
+    v = next(s for s in c.streams if s.type == "video")
+    r = v.average_rate or v.guessed_rate
+    c.close()
+    return float(r) if r else 25.0
+
+
 def _graustufen_folge(pfad, breite=160, abstand=0.2):
     """Alle `abstand` Sekunden ein kleines Graubild."""
     c = av.open(pfad)
@@ -369,6 +378,23 @@ def plan_bauen(pfad, mindestdauer=0.6, totanteil=0.28, lippe_versatz=0,
     while len(plan) > 1 and plan[-1]["ende"] - plan[-1]["start"] < mindestdauer:
         plan[-2]["ende"] = plan[-1]["ende"]
         plan.pop()
+
+    # **Jede Grenze liegt auf einem Bild.** Der Renderer schneidet je
+    # Einstellung mit `trim`, und `trim` nimmt alles *kleiner als* die
+    # Grenze. Liegt eine Grenze zwischen zwei Bildern, steht an der Naht ein
+    # Bild doppelt oder fehlt eines. Am 26.10. an den Logan-Shorts
+    # nachgemessen: Stuecklaengen mit 0,13 bis 0,96 Bildern Rest, und an zwei
+    # von drei Nahtstellen zwei Bildspruenge statt einem.
+    # Das Bildraster des Clips beginnt bei 0, also genuegt es, jede Grenze
+    # auf ein Vielfaches von 1/fps zu legen — die Laengen sind dann von
+    # selbst ganzzahlig. Entscheidend ist die LAENGE jedes Stuecks, nicht
+    # die absolute Quellzeit.
+    fps = bildrate(pfad)
+    for e in plan:
+        e["start"] = round(round(e["start"] * fps) / fps, 6)
+        e["ende"] = round(round(e["ende"] * fps) / fps, 6)
+    for a, b in zip(plan, plan[1:]):
+        b["start"] = a["ende"]          # keine Luecke, kein Ueberlapp
     return plan, (qb, qh), bezug
 
 
