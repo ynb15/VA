@@ -13,7 +13,7 @@ ersten Schnitt: Versatz an drei Stellen prüfen.
 
 ## Vorab: eine Stelle, die ich nicht anfasse
 
-**71:01–73:00 — die beiden Abtreibungen.** Yannick erzählt hier von sich
+**70:45–73:30 — die beiden Abtreibungen.** (Grenze am 26.10. korrigiert: notiert war 71:01, der eröffnende Satz steht aber schon bei **70:54**. Breiter gefasst als nötig, mit Absicht.) Yannick erzählt hier von sich
 und seiner Verlobten, als Gegenstück zu Kyles Geschichte über seine
 ungeborenen Kinder. Es ist die offenste Stelle der ganzen Folge und
 erzählerisch der Scharnierpunkt — und genau deshalb liegt die Entscheidung
