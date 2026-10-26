@@ -6,6 +6,170 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-10-26 (spaet) — Belief-Short, und zwei Dinge ueber Werkzeug
+
+- **Nur eine Fassung schicken, nicht zwei.** Ich hatte ihm Musik- und
+  musikfreie Fassung zusammen geschickt; seine Reaktion: *„Ich weiss nicht,
+  warum du mir jetzt nochmal einen Short ohne Musik geschickt hast."* Die
+  Sicherungsfassung gehoert ins Repo, nicht in die Lieferung. **Eine Datei
+  pro Short, die andere nur auf Nachfrage** — dasselbe Muster wie am 22.10.,
+  als ich ihm zweimal dasselbe AIGod-Short geschickt hatte.
+  → betrifft: alle Content-Agenten
+- **Das groessere Whisper-Modell ist nicht automatisch das bessere.**
+  `large-v3` glaettet Stotterer: aus *„like this is, this is really all a
+  bunch of"* macht es *„this is really all a bunch of"*. Fuer eingebrannte
+  Untertitel, die zu den Lippen passen muessen, ist das ein Nachteil.
+  **`medium` fuer den Durchgang, `large-v3` nur als Schiedsrichter fuer ein
+  einzelnes strittiges Wort** — und dann am *ungedehnten* Ton, weil die
+  Dehnung selbst Fehler erzeugt: bei Tempo 1,12 hoerte `medium` „well", wo
+  „wow" steht.
+  → betrifft: content-*
+- **Kameraschnitte misst man am fertigen Vorlagenband, nicht an der Quelle.**
+  Ich hatte die Schnitte in der Quelle gemessen und auf die Zeitachse
+  umgerechnet (Klipzeit−Start)/Tempo. Das stimmte zwar, aber ich konnte es
+  erst glauben, nachdem ich dieselbe Messung am Vorlagenband wiederholt
+  hatte: 1,167 · 35,667 · 40,900 gegen gerechnete 1,161 · 35,654 · 40,893.
+  **Eine Minute Nachmessen am fertigen Band ersetzt das Nachrechnen.**
+  → betrifft: content-*
+- **Ein Innenschnitt zwischen zwei aehnlichen Nahaufnahmen ist der Fall, bei
+  dem es glitchig aussieht.** Der Szenenwert an meiner Naht ist **0,064**,
+  an den Kameraschnitten des Studios **0,52–0,53**. Wo der Wert niedrig ist,
+  springt nur der Kopf, und genau das liest sich als Fehler statt als
+  Schnitt. **Niedriger Szenenwert an einer selbstgebauten Naht = Warnsignal**;
+  Gegenmittel ist ein merklich engerer Kasten auf der zweiten Seite, damit
+  der Schnitt gewollt wirkt.
+  → betrifft: alle Content-Agenten
+- **Rohzeit = Masterzeit + 12,6 s**, geprueft an „What do you believe in?"
+  (Master 4285,96 s → roh 1:11:38,6; Rohtranskript 1:11:38). Shorts I nennt
+  12,2 s, `video/aaronson-shorts.md` ebenfalls. **An dieser Stelle der Folge
+  sind es 12,6 s** — der Versatz ist also nicht ueber die ganze Folge
+  konstant, und wer bildgenau schneidet, misst ihn an seiner Stelle neu.
+  → betrifft: content-*, alle
+
+## 2026-10-26 (abends) — drei Rueckmeldungen zu „How safe is AI"
+
+- **Die drei Bilder Totale, die ich heute frueh als Regel notiert hatte, liest
+  er als Glitch.** Oben in dieser Datei steht noch: *„Eine Einstellung unter
+  einer halben Sekunde ist kein Grund zum Wegschneiden, sondern eine Zeile
+  mehr im Plan."* Seine Rueckmeldung: *„zwischen 0:16 und 0:18 ist wieder ein
+  minimaler glitch."* **Der Befund von heute frueh gilt nicht mehr in dieser
+  Form.** Was bleibt: ein eigener Kasten rettet drei Bilder Totale *technisch*
+  — aber drei Bilder (0,1 s) sind zu kurz, um als Einstellung gelesen zu
+  werden, und werden deshalb als Fehler gelesen. **Untergrenze: unter etwa
+  einer halben Sekunde kein Einstellungswechsel.** Zweites Mal in fuenf Tagen,
+  dass eine gute technische Begruendung gegen eine seiner Wahrnehmungen
+  verliert (nach `--look aus` am 22.10.).
+  → betrifft: content-*
+- **`ffmpeg -c:v copy` schneidet nicht an der Stelle, die man angibt, sondern
+  am naechsten Keyframe.** Beim Entfernen der drei Bilder blieben **zwei
+  Bilder zu viel** stehen: v = 18,033 s gegen a = 17,967 s. Sichtbar wurde es
+  erst beim Nachmessen der Bildzahl, nicht im `ffprobe`-Ueberblick.
+  **Wer bildgenau schneidet, codiert neu** — `-t 17.966667 -r 30 -c:v libx264
+  -crf 15` ergab exakt **539 Bilder**. Kopieren ist nur dort richtig, wo die
+  Grenze ohnehin auf einem Keyframe liegt.
+  → betrifft: alle Content-Agenten
+- **Zwei Shorts, zwei entgegengesetzte Musikansagen — also keine Regel, sondern
+  eine Frage pro Stueck.** AI 2027 am 22.10.: *„dass er es nicht vorm Ende
+  aufhoert."* Safety am 26.10.: *„bitte in this shirt unterlegen aber vor dem
+  Outro aufhoeren."* Dieselbe Datei, dasselbe Short-Format, umgekehrte
+  Entscheidung. **Nicht aus dem einen Short auf das naechste schliessen; bei
+  Musik gilt immer die Ansage zu diesem Stueck.** Technisch loest beides
+  dieselbe Kette: `atrim` setzt das Ende, `afade=t=out` liegt davor oder in
+  den letzten 0,8 s.
+  → betrifft: content-*
+- **Mein Befund vom 22.10. zum blinden Fleck von `abnahme.py` war schon
+  behoben, als ich ihn aufschrieb.** Das Werkzeug laesst die letzten 4,5 s
+  (das Outro) bei der Musikpruefung aussen vor (`bis = max(dauer - 4.5, 1.0)`).
+  Nachgemessen am Safety-Short, dessen Bett **vor** dem Outro endet: die
+  Musikfassung faellt korrekt durch (**-44,8 dB** im leisesten Prozent), die
+  musikfreie besteht (**-91,8 dB**). **Vor einem Befund ueber fremdes Werkzeug
+  den Code lesen, nicht nur das Verhalten deuten** — ich hatte am 22.10. aus
+  einem Messergebnis auf eine Luecke geschlossen, die im Code nicht stand.
+  → betrifft: content-shorts-2, alfred
+- **Dass ein Bett wirklich vor dem Outro aufhoert, zeigt nur die Subtraktion.**
+  Musikfreie Fassung phaseninvertiert auf die Musikfassung, dann der Pegel der
+  Differenz in 0,5-s-Fenstern: **-40 bis -48 dB bis 50,5 s**, Ausblende,
+  **ab 51,5 s -80 dB und tiefer**. Nach Gehoer oder am Mittelwert haette man
+  die 0,1 s Genauigkeit am Uebergang nicht belegen koennen.
+  → betrifft: content-*
+
+## 2026-10-26 — „How safe is AI", und der Tonschnitt auf den Kameraschnitt gelegt
+
+- **Es gab zwei Stuecke mit fast demselben Namen, und sie sind verschieden.**
+  Shorts I' `aaronson-01-is-ai-safe` beginnt mit **Aaronson** („The trouble
+  with AI right now is not that it doesn't work"); das Stueck auf
+  `claude/content-cinematic`, `aaronson-01-how-safe-is-ai.srt`, beginnt mit
+  **Yannicks Frage** „How safe is AI?" (Rohzeit **00:55:52**). Er meinte das
+  zweite — *„Stelle ich, glaube ich, die Frage"*, und das stimmte.
+  **Bei zwei Stuecken mit aehnlichem Namen entscheidet, wer den ersten Satz
+  spricht, nicht der Dateiname.**
+  → betrifft: content-*
+- **Der beste Platz fuer einen Innenschnitt ist ein Kameraschnitt des Studios
+  — und manchmal liegt er schon fast da.** Ich wollte Teil 1 nach „…other than
+  our own" enden lassen; das Wort endet bei Excerpt **26,12 s**, der
+  Studioschnitt auf die Totale liegt bei **26,16 s**. **0,04 s dazwischen.**
+  Also den Tonschnitt genau auf den Kameraschnitt gelegt, statt 0,2 s spaeter
+  mitten in der Einstellung. **Das erspart den J-Schnitt ganz** — es gibt nur
+  einen Schnitt, und der faellt auf einen Wechsel.
+  **Vor jedem Innenschnitt nachsehen, ob in 0,5 s Umkreis ein Kameraschnitt
+  liegt**, und den Schnitt dorthin ziehen, wenn das Wort es erlaubt.
+  → betrifft: content-*
+- **Drei Bilder Totale wegzuwerfen ist nicht noetig, sie bekommen einen
+  eigenen Kasten.** Nach dem Schnitt blieben **0,1 s = 3 Bilder** Totale
+  stehen. Mit dem Kasten der Nahaufnahme haette man dort Wand und Pflanze
+  gesehen; mit einem eigenen Kasten auf Aaronson (`1166:0:608:1080`) liest es
+  sich als kurzer Weitblick auf ihn. **Eine Einstellung unter einer halben
+  Sekunde ist kein Grund zum Wegschneiden, sondern eine Zeile mehr im Plan.**
+  **ÜBERHOLT am Abend des 26.10. — er liest die drei Bilder als Glitch. Siehe
+  den Eintrag „2026-10-26 (abends)" oben: unter etwa einer halben Sekunde
+  kein Einstellungswechsel.**
+  → betrifft: content-*
+- **Defensiv geschnitten, und das Ergebnis ist nachrechenbar:** genau **eine**
+  Auslassung (die Apokalyptiker-Anekdote, 14 s). Ohne sie waere das Stueck
+  **71 s** lang gewesen, mit ihr sind es **58,0 s** — also innerhalb seines
+  Formats bei einer einzigen benannten Streichung statt der drei, die ich bei
+  „AI 2027" gebraucht hatte.
+  → betrifft: content-*
+
+
+## 2026-10-26 — das Musikbett des Renderers hoert 6,2 s vor dem Ende auf
+
+- **`--musik` blendet 2 s vor dem Ende des *Hauptteils* aus — das Outro laeuft
+  danach ohne Bett.** Yannick hat es gehoert: *„denk bitte daran, dass das
+  nicht zu spaet startet, der Song. Und dass er es nicht vorm Ende aufhoert."*
+  Im Code (Zeile 1417): `atrim=0:<laenge>,afade=t=out:st=<laenge-2.0>:d=2.0`,
+  wobei `laenge` die Laenge **vor** dem Outro ist. Am AI-2027-Short gerechnet:
+  Hauptteil endet 54,367 s, Video endet 58,575 s — **das Bett ist ab 52,367 s
+  still, also 6,21 s vor dem letzten Bild.**
+  **Behoben ohne den Renderer anzufassen:** ohne `--musik` rendern und das Bett
+  danach ueber die fertige Datei mischen — `aloop`, `volume`, `afade in 0,4 s`,
+  `sidechaincompress` gegen die Stimme, `afade out` erst in den letzten 0,8 s.
+  → betrifft: alle Content-Agenten
+- **Ob ein Bett wirklich durchlaeuft, misst man durch Subtraktion, nicht nach
+  Gehoer.** Musikfreie Fassung von der Musikfassung abziehen — uebrig bleibt
+  genau das Bett, und sein Pegel ueber die Zeit sagt, wo es da ist. Gemessen:
+  **hoerbar von 0,00 s bis 58,55 s** bei einem 58,58-s-Video, Pegel −40 bis
+  −47 dB durchgehend, auch unter dem Outro (54,37–58,58).
+  → betrifft: content-*
+- **Nebeneffekt, der meinen Befund vom 22.10. aufhebt:** der blinde Fleck der
+  Musikpruefung (das Outro enthaelt digitale Stille und bestimmt das leiseste
+  Prozent) **verschwindet, sobald das Bett durchlaeuft**. `abnahme.py` erkennt
+  die Musikfassung jetzt korrekt (leisestes Prozent **−43,3 dB**, faellt
+  durch), waehrend sie bei der frueheren Fassung mit frueh endender Musik
+  durchgewunken haette. **Der Fehler im Werkzeug und der Fehler im Renderer
+  haben sich gegenseitig verdeckt.**
+  → betrifft: content-*, alle
+- **Und eine Lieferkritik an mir, von ihm:** *„warum du mir zweimal das gleiche
+  Short gegeben hast mit dem Zitat von Arthur Clarke."* `AIGod` und
+  `AIGod (ohne Schluss)` sind **dasselbe Stueck**, das zweite ist eine echte
+  Teilmenge des ersten. Es entstand nur, weil er erst die kurze Fassung
+  gewaehlt und dann den Schluss zurueckgeholt hat — ab da war die kurze
+  **ueberholt**, und ich habe sie trotzdem mitgeliefert.
+  **Regel: eine Fassung, die eine Teilmenge einer anderen ist, geht nicht als
+  zweites Stueck mit.** Entweder sie ersetzt die andere, oder sie faellt weg.
+  → betrifft: alle Content-Agenten
+
+
 ## 2026-10-23 — T−2 Aaronson: ausgeliefert, und was fuer die naechste Runde liegenbleibt
 
 - **Der J-Schnitt loest die Stelle, an der meine drei Fassungen hart schneiden

@@ -45,6 +45,137 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 22 — 26.10.2026, 16:10 Kapstadt · drei Agenten haben heute dasselbe gelernt: messen, nicht rechnen
+
+Einsammlung des Lernkanals. Drei Agenten haben geschrieben (Gastauftritte,
+Shorts II, Gastbuchung), und die Stärksten davon gehören zusammen: **jeder
+der drei Befunde entstand, weil eine korrekte Rechnung eine falsche Datei
+ergab.**
+
+### Bildgenauigkeit — drei Fallen hintereinander, alle heute gefunden
+
+- **Ein Binnenschnitt muss eine ganze Zahl von Bildern lang sein.**
+  (Gastauftritte, Anger-Short) Herausgenommen waren **3,29 s = 98,7 Bilder** —
+  kein ganzes Bild. Die Naht selbst war sauber, aber **vier andere**
+  Einstellungsgrenzen dahinter lagen danach zwischen zwei Bildern, und `trim`
+  nimmt alles *kleiner als* die Grenze; das Grenzbild fällt auf die falsche
+  Seite. Signatur im Ergebnis: an einer Grenze **zwei** Bildsprünge statt
+  einem. Mit **3,30 s = 99 Bildern** liegen alle Grenzen wieder glatt.
+  `schnitt_bauen.py` bricht jetzt ab, wenn eine Grenze oder die Gesamtlänge
+  nicht auf einem Bild liegt — **die Prüfung ist billiger als ein
+  25-Minuten-Lauf in 4K.**
+  → betrifft: content-*
+- **`ffmpeg -c:v copy` schneidet am nächsten Keyframe, nicht an der angegebenen
+  Stelle.** (Shorts II) Beim Entfernen von drei Bildern blieben **zwei Bilder zu
+  viel** stehen (v = 18,033 s gegen a = 17,967 s) — im `ffprobe`-Überblick
+  unsichtbar, erst beim Nachzählen der Bilder sichtbar. **Wer bildgenau
+  schneidet, codiert neu.** Kopieren ist nur richtig, wo die Grenze ohnehin auf
+  einem Keyframe liegt.
+  → betrifft: content-*
+- **Schnitte misst man am fertigen Band, nicht in der Quelle.** (Shorts II) Die
+  Umrechnung (Klipzeit−Start)/Tempo war richtig — 1,161 · 35,654 · 40,893
+  gegen nachgemessene 1,167 · 35,667 · 40,900 — **aber eine Minute Nachmessen
+  am fertigen Band ersetzt das Nachrechnen.** Dasselbe gilt für den Versatz:
+  Rohzeit = Masterzeit **+ 12,6 s** an der Stelle „What do you believe in?",
+  während `video/aaronson-shorts.md` 12,2 s nennt. **Der Versatz ist innerhalb
+  einer Folge nicht konstant** — unabhängige Bestätigung meines Befundes vom
+  24.10., jetzt an einer zweiten Folge und von einem zweiten Agenten.
+  → betrifft: content-*, alle
+
+### Seine Wahrnehmung schlägt die technische Begründung — zum zweiten Mal in fünf Tagen
+
+- **Untergrenze für eine Einstellung: etwa eine halbe Sekunde.** Shorts II hatte
+  heute früh notiert, drei Bilder Totale seien kein Grund zum Wegschneiden,
+  sondern eine Zeile mehr im Plan — mit eigenem Kasten technisch korrekt
+  gelöst. Seine Antwort am Abend: *„zwischen 0:16 und 0:18 ist wieder ein
+  minimaler glitch."* **Der Befund von heute früh gilt nicht mehr in dieser
+  Form.** 0,1 s wird nicht als Einstellung gelesen, sondern als Fehler.
+  Shorts II hat den eigenen Eintrag selbst als überholt markiert — **so
+  gehört es gemacht: den alten Eintrag stehen lassen und entwerten, nicht
+  löschen.**
+  → betrifft: content-*
+- **Niedriger Szenenwert an einer selbstgebauten Naht ist das Warnsignal.**
+  (Shorts II, gemessen) Eigene Naht zwischen zwei ähnlichen Nahaufnahmen:
+  **0,064**. Die Kameraschnitte des Studios: **0,52–0,53**. Wo der Wert niedrig
+  ist, springt nur der Kopf — und genau das liest sich als Fehler statt als
+  Schnitt. Gegenmittel: ein merklich engerer Kasten auf der zweiten Seite.
+  → betrifft: content-*
+- **Der beste Platz für einen Binnenschnitt ist ein Kameraschnitt des Studios —
+  und oft liegt er schon fast da.** Das Wort endete bei 26,12 s, der Studio­-
+  schnitt lag bei 26,16 s. **0,04 s dazwischen.** Tonschnitt auf den
+  Kameraschnitt gelegt statt 0,2 s später mitten in die Einstellung — **damit
+  erübrigt sich der J-Schnitt ganz.** Regel: **vor jedem Binnenschnitt im
+  Umkreis von 0,5 s nach einem Kameraschnitt sehen** und den Schnitt dorthin
+  ziehen, wenn das Wort es erlaubt.
+  → betrifft: content-*
+
+### Lieferung und Musik
+
+- **Eine Fassung pro Short. Eine Teilmenge ist kein zweites Stück.** (Shorts II,
+  von ihm) *„Ich weiß nicht, warum du mir jetzt nochmal einen Short ohne Musik
+  geschickt hast."* Und am 22.10. dasselbe Muster: *„warum du mir zweimal das
+  gleiche Short gegeben hast mit dem Zitat von Arthur Clarke."* Die
+  Sicherungsfassung gehört ins Repo, nicht in die Lieferung. Entweder eine
+  Fassung ersetzt die andere, oder sie fällt weg.
+  → betrifft: alle Content-Agenten
+- **Bei Musik gilt immer die Ansage zu diesem Stück — es gibt keine Regel.**
+  AI 2027 am 22.10.: *„dass er es nicht vorm Ende aufhört."* Safety am 26.10.:
+  *„bitte in this shirt unterlegen aber vor dem Outro aufhören."* Dieselbe
+  Datei, dasselbe Format, **umgekehrte Entscheidung.** Nicht vom einen Short auf
+  das nächste schließen.
+  → betrifft: content-*
+- **`--musik` lässt das Outro ohne Bett.** (Shorts II, im Code gefunden, Zeile
+  1417) `afade` liegt 2 s vor dem Ende des **Hauptteils** — am AI-2027-Short
+  ist das Bett **6,21 s vor dem letzten Bild still**. Behoben ohne den Renderer
+  anzufassen: ohne `--musik` rendern, Bett danach über die fertige Datei
+  mischen.
+  → betrifft: alle Content-Agenten
+- **Ob ein Bett wirklich durchläuft, zeigt nur die Subtraktion.** Musikfreie
+  Fassung phaseninvertiert auf die Musikfassung, Pegel der Differenz in
+  0,5-s-Fenstern. Am Safety-Short: **−40 bis −48 dB bis 50,5 s, ab 51,5 s
+  −80 dB und tiefer.** Nach Gehör oder am Mittelwert ist die Genauigkeit von
+  0,1 s am Übergang nicht belegbar.
+  → betrifft: content-*
+
+### Werkzeug, Register, Recherche
+
+- **Das größere Whisper-Modell ist nicht das bessere.** (Shorts II) `large-v3`
+  glättet Stotterer weg (*„like this is, this is really all a bunch of"* →
+  *„this is really all a bunch of"*) — für eingebrannte Untertitel, die zu den
+  Lippen passen müssen, ein Nachteil. **`medium` für den Durchgang, `large-v3`
+  nur als Schiedsrichter für ein einzelnes strittiges Wort — und dann am
+  ungedehnten Ton**, weil die Dehnung selbst Fehler erzeugt (bei Tempo 1,12
+  hörte `medium` „well", wo „wow" steht).
+  → betrifft: content-*
+- **Bei zwei Stücken mit ähnlichem Namen entscheidet der erste Satz, nicht der
+  Dateiname.** (Shorts II) `aaronson-01-is-ai-safe` beginnt mit Aaronson,
+  `aaronson-01-how-safe-is-ai` mit Yannicks Frage. Er meinte das zweite —
+  *„Stelle ich, glaube ich, die Frage"*, und das stimmte.
+  → betrifft: content-*
+- **Vor einem Befund über fremdes Werkzeug den Code lesen, nicht nur das
+  Verhalten deuten.** Shorts II hat heute den eigenen Befund vom 22.10. (der
+  blinde Fleck von `abnahme.py`) zurückgezogen: das Werkzeug lässt die letzten
+  4,5 s bei der Musikprüfung ohnehin aussen vor (`bis = max(dauer - 4.5, 1.0)`).
+  **Das ist genau mein eigener Fehler dieser Woche, dreimal** — über einen
+  Mechanismus geschlossen, ohne das Artefakt anzusehen.
+  → betrifft: alle
+- **Seine Ortsrecherche hat zwei Schritte, nicht einen.** (Gastbuchung) Am
+  21.10. nur Schritt 1 (*„Ich gebe oft bei Google ein, Scott Aronson, where does
+  he live?"*), am 26.10. der Rest: *„Und dann gucke ich gegebenenfalls bei
+  LinkedIn und oder bei Twitter, weil da oft auch die Locations stehen."*
+  **`linkedin.com`, `x.com` und `instagram.com` sind aus den Containern
+  gesperrt** — Schritt 2 geht nur über ihn, und dann als konkrete Bitte („schau
+  bei LinkedIn"), nicht als Leerstelle im Feld.
+  → betrifft: alle, die für ihn recherchieren
+- **Ein fehlender Wert und ein fehlender Feldtyp sind zwei verschiedene
+  Blockaden.** (Gastbuchung, Craig Mundie) Erst war der Ort unbekannt; als er
+  ihn lieferte, kannte die `Location`-Auswahlliste **kein „Washington" als
+  Bundesstaat**, nur „Washington DC". Einen Wert eintragen ist Routine — **eine
+  Option anlegen ändert die Struktur seiner Datenbank** und wird vorgelegt.
+  Notion lehnt einen unbekannten Select-Wert von sich aus ab, legt ihn also
+  nicht still an.
+  → betrifft: alle, die an der Datenbank arbeiten
+
 ## Ausgabe 21 — 26.10.2026, 15:3x Kapstadt · der Pitch und die Titel sind ein Register, nicht zwei
 
 - **DER PITCH UND DIE TITEL BENUTZEN DIESELBE GRAMMATIK: ROLLE VOR NAME.** Im
