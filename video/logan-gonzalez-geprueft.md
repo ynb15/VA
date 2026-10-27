@@ -1,3 +1,15 @@
+> ## Veröffentlichung: Januar, nicht Oktober
+> **Von Yannick selbst, 27.10.:** *„Den Pod mit Logan plane ich erst im Januar
+> oder so zu veröffentlichen."*
+>
+> Der Termin **Fr 30.10.**, unter dem diese fünf Shorts entstanden sind, stammt
+> aus dem Contentplan, nicht von ihm. **Für den 30.10. gibt es damit kein
+> Logan-Stück** — wer dort Vorrat gezählt hat, zählt eines zu viel.
+>
+> Die fünf Shorts sind fertig und liegen bei ihm; sie verfallen nicht, sie
+> warten bis Januar. Die fünf offenen Entscheidungen unten bleiben offen, haben
+> aber keine Eile mehr.
+
 # Logan Gonzalez — Kandidaten **nach dem Transkript**
 
 **Grundlage:** eigenes, wortgenaues Transkript der Tonspur aus
