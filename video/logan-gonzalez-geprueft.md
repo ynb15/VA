@@ -209,15 +209,34 @@ damit Du zeilenweise streichen kannst.
 
 ---
 
-## Was am 24.10. gebaut und geliefert ist
+## Stand 27.10. — was geliefert ist
 
-| Short | Fenster in der Folge | Länge | Datei |
-|---|---|---|---|
-| A · Elternhaus | 0:16–1:28 | 66,1 s | `YNB Podcast Logan Gonzalez Elternhaus.mp4` |
-| C · Egotod | 37:45–39:31 | 96,1 s | `YNB Podcast Logan Gonzalez Egotod.mp4` |
-| F · Meaningful | 82:26–83:29 | 58,2 s | `YNB Podcast Logan Gonzalez Meaningful.mp4` |
-| D · Schwiegermutter | 49:20–50:07 | im Bau | `YNB Podcast Logan Gonzalez Schwiegermutter.mp4` |
-| E · Sumo | 79:54–81:43 | im Bau | `YNB Podcast Logan Gonzalez Sumo.mp4` |
+| Short | Fenster in der Folge | Länge | Kopfzeilenfeld | Abnahme |
+|---|---|---|---|---|
+| A · Elternhaus | 0:16–1:28 | 66,1 s | 875 px | bestanden |
+| C · Egotod | 37:45–39:31 | 96,1 s | 775 px | bestanden |
+| F · Meaningful | 82:26–83:29 | 58,2 s | — | bestanden |
+| D · Schwiegermutter | 49:20–50:07 | 45,1 s | 991 px | **Musikbett offen** |
+| E · Sumo | 79:54–81:43 | 98,0 s | 985 px | bestanden |
+
+**Gültig ist die Lieferung vom 26.10.**, nicht die vom 24.10. Dazwischen
+liegen drei Korrekturen: Einstellungsgrenzen auf ganzen Bildern, Fragen als
+eine Einblendung mit Fragezeichen, und die Kopfzeile.
+
+**Die Kopfzeile war bei zwei Shorts breiter als das Bild** — Schwiegermutter
+1098 px und Sumo 1123 px bei 1080 px Bildbreite, also an beiden Seiten über
+den Rand. Das stand in jedem Protokoll und ist niemandem aufgefallen. Beide
+sind ersetzt; an den ausgelieferten Dateien nachgemessen (nicht aus dem
+Protokoll übernommen): **991 px und 985 px**, Stand 26.10. 14:40 und 14:44.
+`shorts-render.py` bricht seitdem ab, wenn das Feld nicht passt, und nennt
+die Größe, die passt.
+
+**Für die Planung:** wer ein Stück ohne offene Prüfung braucht, nimmt
+**Elternhaus, Egotod oder Sumo**. Schwiegermutter ist bei der
+Musikbett-Prüfung mit −64,7 dB gegen die Schwelle −65 hängengeblieben;
+gemessen ist es derselbe Raumton wie bei den sauberen Shorts (spektrale
+Flachheit 0,085 gegen 0,078 und 0,088), aber die Schwelle bleibt, wo sie
+ist, bis er einmal reingehört hat.
 
 Zu jedem Short liegt eine **Streichliste** in den Zeiten des fertigen Shorts.
 Alle haben die messbare Abnahme bestanden: 1080×1920, 48 kHz, kein Musikbett,
