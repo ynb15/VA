@@ -9046,3 +9046,33 @@ Schmuck.** Aus *„I just got back from that trip with some wyld characters in t
 bag"* wurde *„I've already had some wyld characters on."*, weil drei Namen der
 Liste nicht von dieser Reise waren. **Erst die Liste bauen, dann den Satz
 darüber prüfen.**
+
+## Ein Datum von mir sieht aus wie ein Datum von ihm — 27.10.2026
+
+**Shorts I hat fünf Logan-Shorts unter dem Termin Fr 30.10. gebaut. Diesen
+Termin hatte ich gesetzt, nicht er.** Heute hat er es Shorts I selbst gesagt:
+*„Den Pod mit Logan plane ich erst im Januar oder so zu veröffentlichen."*
+
+**Was es gekostet hat:** vier Slots im Plan standen auf einer Quelle, die es
+nicht gibt (30.10., 03.11., 04.11., 05.11.) — und die drei Stücke, die mein
+Vorratszähler heute noch als *fertig im Kasten* gemeldet hat, waren **genau
+diese drei**. Der Vorrat war nicht 3, sondern **0**, und zwar seit Tagen.
+
+**Die Ursache ist nicht der Agent.** Der Plan ist eine Tabelle, und in einer
+Tabelle sieht ein Datum, das ich zur Füllung des Takts gesetzt habe, genauso
+aus wie eines, das er zugesagt hat. Beide stehen in derselben Spalte, in
+derselben Schrift. **Ein Agent, der den Plan liest, kann die beiden nicht
+unterscheiden** — und baut dann in guter Absicht fünf Stücke auf einen Termin,
+den niemand versprochen hat.
+
+**REGEL: ein Veröffentlichungsdatum, das nicht von ihm kommt, wird im Plan als
+solches gekennzeichnet.** Die fünf Podcast-Termine hat er am 21.10. selbst
+gesetzt — die stehen. Jedes andere Datum ist meine Taktfüllung und trägt das
+ab jetzt in der Quellspalte. **Und bevor ein Auftrag mit einem Termin
+hinausgeht, steht in ihm, woher der Termin kommt.**
+
+**Zweiter Teil derselben Lehre:** der Vorratszähler zählt Zeilen, nicht
+Veröffentlichungen. Er hat drei fertige Dateien gezählt, die tatsächlich
+fertig sind — nur gehören sie zu einer Folge, die im Januar läuft.
+**Ein fertiges Stück ist nur Vorrat, wenn der Slot, in dem es steht, echt
+ist.**
