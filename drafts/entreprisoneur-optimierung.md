@@ -171,3 +171,124 @@ belegt (Theresienstadt, Auschwitz, Kaufering III, Türkheim). Die Zahl macht den
 härter — und sie stellt Deine Unternehmer-Unzufriedenheit für einen Moment neben den
 Holocaust. **Ich würde bei „the camps" bleiben** und die Zahl nicht holen. Aber das ist
 Dein Essay und Dein Risiko, nicht meines.
+
+---
+
+# Nachtrag 27.10. — Ressourcen und die fünf Schlussfragen
+
+## A. Die Ressourcenliste, durchgegangen
+
+### Geöffnet und brauchbar
+
+**`ybeeez.substack.com/p/entrepreneurship-nearly-killed-me`** — 9.424 Wörter, ein
+Musikmanager in Dubai (Tourneen über 15 Mio. Dollar Ticketumsatz). **Der stärkste
+Einzelfund der Liste**, weil er Deine These am Körper belegt statt sie zu behaupten:
+
+* *„Imagine eating takeaways and going to restaurants every day for three years, boarding
+  a plane on average every three days, doing the job of a ten man team yourself, bad sleep
+  & no time to prioritise your wellness."*
+* Zwei Bandscheibenvorfälle, einer endete im Rettungswagen: *„found myself in an ambulance
+  for the first time ever and then in a hospital for a few days."*
+* **Das Bild, das ich nehmen würde:** *„I used to sleep with my laptop in bed religiously
+  as if it was my wife. I'd wake up, roll over, open it and say good morning honey and
+  start working."*
+* *„Overtraining without recovery. Looks disciplined. Actually stresses the system."* —
+  eine Zeile, die Dein ganzes Argument in sieben Wörtern trägt.
+* *„Everybody talks about the hustle, but hardly anyone speaks on staying well whilst
+  chasing millions."*
+
+**Wo es hingehört:** Dein Essay ist stark in der Analyse und dünn an Körpern. Nach
+*„Founders who'd built empires and couldn't sleep at night"* fehlt genau ein konkreter
+Fall. Der Laptop-im-Bett ist er.
+
+**`youtube.com/shorts/1kNaZcEAP5E`** — *„Does It Get Lonely? | Elon Musk"*, Kanal
+KINGSTOIC, 67 Sekunden. Titel gezogen, **Transkript nicht** (s. unten). Thematisch sitzt
+es: der reichste Mann der Welt zur Einsamkeit. Das ist Deine Hormozi-Stelle, nur eine
+Etage höher.
+
+**McConaughey @ DOAC** — die Folge ist *„The Silent Crisis No One Is Talking About"*
+(18.09.2025). Was berichtet wird und zu Dir passt: er lehnte auf dem Gipfel seiner
+Rom-Com-Zeit **8 Mio. Dollar** für eine Action-Komödie ab, das Studio kam mit 10, dann 12,
+dann **14,5 Mio.** zurück — er blieb beim Nein und war danach fast zwei Jahre ohne große
+Rolle. **Das ist das Gegenstück zu Deinem Essay: einer, der die goldene Zelle verlassen
+hat, und was es gekostet hat.** Vorbehalt: das ist aus Berichterstattung
+(Fortune, Infobae), **kein verifiziertes Zitat aus der Folge** — vor dem Einbau die Folge
+selbst prüfen.
+
+**`The Artist's Way`, Kapitel 10** — das ist *„Recovering a Sense of Self-Protection"*,
+und Cameron behandelt dort **Workaholism als Blockade**, mit einem eigenen Fragebogen
+dazu. Das ist Deine Nachbarschaft und das älteste Beleg­stück Deiner These.
+**Vorbehalt: das ist mein Wissen, nicht nachgeschlagen** — ich habe das Buch nicht
+vorliegen.
+
+### Nicht geöffnet, und warum
+
+| Quelle | Grund |
+|---|---|
+| beide `chriswillx.com/3-minute-monday-…` | **Die Domain löst im Container gar nicht auf** (DNS). Websuche findet die beiden Ausgaben auch nicht. |
+| 4 der 5 YouTube-Links (`p5k9zYyv4dQ`, `0T8bJuH60qU`, `QoAoefT3VJc`, `zvJozTZo18o`) sowie `JBgwF8aHByI` bei 49:32 | YouTube antwortet mit *„Sign in to confirm you're not a bot"*. Es gibt Wege, das zu umgehen — **die gehe ich nicht**. |
+| Simon Sinek @ Modern Wisdom | ohne Link notiert, und die Modern-Wisdom-Seite ist dieselbe gesperrte Domain |
+| die Drive-B-Rolls | Videodateien, kein Text — das ist Material für den Schnitt, nicht für den Inhalt |
+
+**Wenn Du die fünf Videos inhaltlich drin haben willst**, ist der sauberste Weg: Du
+schickst mir die Stellen als Text oder sagst mir in einem Satz, was darin gesagt wird.
+Dann baue ich es ein.
+
+---
+
+## B. Die fünf Schlussfragen
+
+### Warum Deine zwei nicht punchen
+
+> *„When was the last time you felt truly alive?"*
+> *„What belief once protected you, but now confines you?"*
+
+Zwei Gründe, und beide sind reparierbar:
+
+1. **Sie sind beantwortbar mit einem Gefühl.** Ein Gefühl kann man wegschieben. **Eine
+   Zahl, ein Name oder ein Datum nicht.**
+2. **Sie benutzen nichts von dem, was der Essay gebaut hat.** Du hast 2.000 Wörter lang
+   Maschinerie aufgestellt — die Entreprison, *„Who am I without my work?"*, den Rachemotor
+   mit Esstisch, Spielplatz und Klassenzimmer, das Zahlenziel *„I'll rest when I've made
+   it"*. **Die Schlussfragen fangen bei null wieder an, statt diese Rechnung einzulösen.**
+
+Dazu: Deine eigene Mission ist, unangenehme Fragen zu stellen. **Diese zwei sind
+angenehm.**
+
+### Der Vorschlag
+
+> **What was the number you were going to stop at? And when did you last move it?**
+>
+> **Who did you lose while you were winning?**
+>
+> **Who are you still trying to prove wrong — and would they even remember your name?**
+>
+> **When was the last time you felt alive? Give the date.**
+>
+> **Who are you when nobody's buying?**
+
+### Was jede einzelne tut
+
+| | greift auf | und schlägt zu, weil |
+|---|---|---|
+| 1 | *„I'll rest when I've made it"* | **jeder hat die Zahl schon mal verschoben.** Die Frage ist nicht, ob — sondern wann zuletzt. |
+| 2 | Thoreau, *„the amount of life you exchange for it"* | verlangt **einen Namen**, keine Reflexion. |
+| 3 | Esstisch, Spielplatz, Klassenzimmer | der zweite Halbsatz ist der Punch: **die Leute, für die Du Dein Leben gebaut hast, wissen nichts davon.** |
+| 4 | Deine eigene Frage, aber mit Pflicht zur Antwort | **wer das Datum nicht nennen kann, hat geantwortet.** |
+| 5 | *„Who am I without my work?"* — die Frage, die Du im Essay als die unvermeidbare benennst | Du hast sie angekündigt. **Am Ende stellst Du sie.** Nicht philosophisch — als Marktfrage. |
+
+**Reihenfolge ist Absicht:** von außen nach innen. Geld, Menschen, Vergangenheit,
+Lebendigkeit, Identität. Die letzte lässt sich nicht beantworten und bleibt deshalb hängen.
+
+**Zur Form:** keine Gegensatzpaare, kein *„nicht X, sondern Y"* — das war der Fehler beim
+Frankl-Absatz. Fünf gerade Fragen. *„Give the date."* ist die eine harte Zäsur, wie
+*„Just a normal f\*cking coffee. Cheers."*
+
+### Zwei Dinge zur Platzierung
+
+1. **Die Fragen gehören ans Ende, nach dem Linkin-Park-Zitat.** Im Moment stehen sie
+   davor — dann ist der Songtext das Letzte, und ein geborgter Satz nimmt fünf eigenen
+   Fragen die Wirkung. Das ist derselbe Befund wie bei Deinen drei Essays, die mit einem
+   Fremdzitat schließen (`voice/substack-essays.md` §3.1).
+2. **`Chase the thing. Get the thing. Realize the thing wasn't the thing.`** ist die beste
+   Zeile im ganzen Outro. Die bleibt, wie sie ist.
