@@ -71,3 +71,56 @@ Stände identisch mit der 00:40-Kontrolle.
   · Maßnahme: **keine**
 
 Nichts im Chat.
+
+## 06:40 · Morgenlauf, Dienstag
+
+- **06:40** · alle neun Agenten · kein offener Auftrag · neue Commits: **keine
+  über Nacht** (letzte Bewegung 26.10. 14:38) · Maßnahme: **eine Rückfrage an
+  Shorts I**, siehe unten
+
+**Die Nacht war ruhig, weil niemand einen Nachtlauf hatte.** Kein Agent stand
+still im Sinne von blockiert — es lag einfach kein Auftrag offen.
+
+### Plan
+
+`plan-pruefen.py`: **heute raus** sind die drei Clips der Gastauftritte
+(Schulsystem dazu, am 24.10. mit ihm gebaut), Zustand *in Arbeit mit ihm*.
+Gastauftritte hat daran gestern von **12:57 bis 14:21** gearbeitet — Anger,
+Teacher und Playmate, Tempo festgelegt, musikfreie Fassung, Skript der
+Fortsetzung. **Ob eine Datei bei ihm liegt, kann ich nicht messen:** fertige
+`.mp4` liegen weder im Repo noch in Drive, der Ordner *Claude Creation* enthält
+nur vier `.txt`. Das bleibt die Lücke, die ich nicht durch eine Vermutung
+schließe.
+
+**Fristen:** Kingsbury T−3 greift **morgen**, T−2 am 29.10. Die Endfassung des
+Cutters ist um 06:40 **nicht da** — Ordner unverändert, nur `v1_LOW_RES` vom
+05.10. Deshalb heute keine Auslösung: T−3 hängt an der Datei, nicht am Agenten.
+
+**Vorrat: 3 — aber eines davon ist jetzt unsicher.** Aus dem Lernkanal: bei
+**zwei von fünf** Logan-Shorts war das Kopfzeilenfeld breiter als das Bild
+(1098 und 1123 px bei 1080), und *„die Dateien sind so rausgegangen"*. Im Plan
+steht **Logan Gonzalez 1 als Stück für Fr 30.10.**, Zustand *bei ihm*. Ich habe
+Shorts I gefragt, welche der fünf betroffen sind und ob die bei ihm liegenden
+Fassungen ersetzt wurden (Trigger `trig_01S9aE1dWx8FY2nnvdwUqW5U`), und zähle
+Logan 1 bis zur Antwort **als unsicher**. Lieber eine Zahl zu niedrig als ein
+Freitag ohne Stück.
+
+### Lernkanal, Ausgabe 23
+
+Zwei Agenten haben geschrieben, Shorts I **erstmals seit dem 24.10.** — mit
+vier Einträgen, nach der Erinnerung von 14:08. Der wertvollste macht meine
+eigene Weitergabe von gestern erst zum Befund: **Shorts I hat die Bildregel an
+seinen fünf Logan-Shorts nachgemessen, bevor es sie geglaubt hat** (Reste von
+0,13 bis 0,96 Bildern, an zwei von drei Nahtstellen zwei Bildsprünge). Die
+zweite Regel war schon erfüllt — *„Geprüft, nicht angenommen."*
+
+Dazu: *„Eine Ausgabe, die niemand liest, ist keine Prüfung"* · eine Sperre wird
+breiter gefasst, nicht knapper (70:45–73:30 statt 71:01) · eine notierte Zeit
+ist ein Hinweis, keine Fundstelle · und von Gastauftritte: **eine Totale sieht
+in der Bildmitte aus wie eine leere Einstellung.**
+
+Und ein Nachtrag, der den Belegtyp liefert, den der Wochenabgleich sucht: die
+Gastbuchung hat **zwei von ihm überarbeitete Pitches** nebeneinander gelegt.
+Unangetastet bleiben Cold Open, Anrede, Fragenblock, Beat 6 — **geändert wird
+jedes Mal die Gästeliste, nach dem Maßstab des Empfängers**, nicht nach seinem
+Fach. Steht auch im Handbuch unter VOICE.

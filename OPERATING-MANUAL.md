@@ -9022,3 +9022,27 @@ mitten im Satz. Dazu eine eigenwillige Großschreibung, die er nicht korrigiert:
   `streak-link.com` — Streak, also Öffnungs- und Klickmessung. **Er hat dadurch
   Daten über seine Outreach, die wir nicht sehen.**
 * **Er hängt ein Foto inline an**, nicht als Dateianhang am Ende.
+
+### Nachtrag 27.10. — zwei von ihm überarbeitete Pitches, nebeneinander gelegt
+
+Die Gastbuchung hat **Jon Savage (raus 22.10.)** und **Boyd Varty (seine Fassung
+26.10.)** verglichen — beide an Südafrikaner, vier Tage auseinander. Das ist
+genau der Belegtyp, den Teil 2 des Wochenabgleichs sucht: **das Delta zwischen
+unserem Entwurf und seiner Fassung.**
+
+**Unangetastet in beiden Fällen:** Cold Open, Anrede, Fragenblock, Beat 6.
+**Geändert in beiden Fällen: die Gästeliste** — und zwar nicht nach dem Fach
+des Empfängers, sondern **nach dessen Massstab**. Der Podcast-Unternehmer bekam
+eine rein amerikanische Liste (**Reichweite**), der Wildnis- und Männerarbeiter
+eine südafrikanisch grundierte (**Verwandtschaft**). Rolle vor Name durchgehend.
+
+**Der Vermittler steht zuletzt, mit „and of course", und wird nicht erklärt:**
+*„and of course our mutual connection, Professor Scott Aaronson"* · *„and of
+course living legend Rob Paddock"* — bei Rob **ohne** IronMan und **ohne**
+$100M, obwohl beides sonst seine Standardzeile ist.
+
+**Und die Einleitung über der Gästeliste ist eine Tatsachenbehauptung, kein
+Schmuck.** Aus *„I just got back from that trip with some wyld characters in the
+bag"* wurde *„I've already had some wyld characters on."*, weil drei Namen der
+Liste nicht von dieser Reise waren. **Erst die Liste bauen, dann den Satz
+darüber prüfen.**

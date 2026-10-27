@@ -691,3 +691,50 @@ Die Prüfung meldet die Flachheit jetzt zusätzlich — als Angabe, nicht als
 Freispruch. Eine Sicherheitsregel lockert man nicht, weil die eigene Messung
 das eigene Vorhaben stützt; sein Ohr entscheidet.
 → betrifft: content-*, alle Content-Agenten
+
+**26.10. — Zwei Befunde aus der Kingsbury-Prüfung, die für jeden gelten.**
+
+**Eine Sperre ist nur so gut wie ihre Grenze.** Die Stelle, die ohne sein Wort
+nicht angefasst wird, war mit **71:01** notiert. Nachgemessen am Transkript
+beginnt sie **70:54** — der Satz, mit dem er sie eröffnet, lag außerhalb der
+eigenen Sperre, und ein Clip, der bei 71:00 endet, hätte ihn angeschnitten.
+**Regel: wer eine Stelle sperrt, misst ihre Grenze am Text nach und fasst sie
+breiter, nicht knapper.** Jetzt 70:45–73:30.
+→ betrifft: alle Content-Agenten
+
+**Eine Zeitmarke aus einem Plan ist ein Hinweis, keine Fundstelle.** Neun der
+zehn Kingsbury-Short-Kandidaten sind wörtlich belegt — aber **teils 15 bis 30
+Sekunden später als notiert** (Flow 10:00→10:15, „Not yet" 15:48→15:53, Erbe
+36:34→37:13). Und ein Clip-Anfang lag im falschen Thema: Clip 3 war mit 53:16
+notiert, dort läuft aber noch die Ayahuasca-Passage; der Kampf beginnt 54:09.
+**Regel: jede notierte Zeit vor dem Schnitt am Transkript nachschlagen, auch
+wenn der Plan vom selben Agenten stammt.**
+→ betrifft: alle Content-Agenten
+
+**26.10. — Und eine aus dem Renderer, gemessen statt übernommen.** Aus dem
+Lernkanal kam: Bildstücke müssen ganzzahlig lang sein. An meinen fünf
+Logan-Shorts nachgemessen, bevor ich es geglaubt habe: die Stücklängen hatten
+bei 29,97 fps Reste von **0,13 bis 0,96 Bildern**, und an **zwei von drei**
+Nahtstellen standen zwei Bildsprünge statt einem. Der Fehler war also da.
+`bildausschnitt.py` legt jede Einstellungsgrenze jetzt auf ein Vielfaches von
+1/fps; weil das Bildraster des Clips bei 0 beginnt, sind die Längen damit von
+selbst ganzzahlig. **Entscheidend ist die Länge jedes Stücks, nicht die
+absolute Quellzeit.**
+Die zweite Regel von dort — unter etwa einer halben Sekunde keine eigene
+Einstellung — war schon erfüllt: `mindestdauer` steht auf 0,6 s, und die
+kürzeste Einstellung in meinen fünf Shorts ist 1,2 s. Geprüft, nicht
+angenommen.
+→ betrifft: content-*
+
+**26.10. — Was im Protokoll steht, habe ich nicht gelesen.** Bei zwei der
+fünf Logan-Shorts war das Kopfzeilenfeld **breiter als das Bild**: 1098 und
+1123 px bei 1080. Der Renderer hatte die Zahl jedes Mal ausgegeben, ich hatte
+sie jedes Mal überlesen — und die Dateien sind so rausgegangen. Gefunden habe
+ich es erst beim dritten Rendergang, beim Nachlesen der Ausgabe.
+`shorts-render.py` bricht jetzt ab, wenn das Feld breiter ist als Bild minus
+Rand, **und nennt die Größe, die passt**. Eine Warnung hätte nichts geändert:
+ich hatte ja schon eine Zahl und habe sie nicht angesehen.
+**Regel: wenn ein Werkzeug eine Zahl ausgibt, die falsch sein kann, muss es
+die Prüfung selbst machen. Eine Ausgabe, die niemand liest, ist keine
+Prüfung.**
+→ betrifft: content-*, alle Content-Agenten

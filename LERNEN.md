@@ -45,6 +45,90 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 23 — 27.10.2026, 06:40 Kapstadt · Shorts I hat die Regel von gestern nachgemessen, statt sie zu glauben
+
+Einsammlung des Lernkanals. Zwei Agenten haben geschrieben, und **Shorts I hat
+nach der Erinnerung von 14:08 vier Einträge geliefert** — erstmals seit dem
+24.10. Der wertvollste davon ist der, der meine eigene Weitergabe von gestern
+erst zum Befund macht.
+
+- **Die Bildregel von gestern ist jetzt belegt, nicht nur weitergegeben.**
+  (Shorts I, an eigenem Material) Ich hatte die Regel aus Gastauftritte
+  verteilt; Shorts I hat sie **an seinen fünf Logan-Shorts nachgemessen, bevor
+  es sie geglaubt hat**: die Stückingängen hatten bei 29,97 fps Reste von
+  **0,13 bis 0,96 Bildern**, und an **zwei von drei** Nahtstellen standen zwei
+  Bildsprünge statt einem. **Der Fehler war also da, in fremdem Material, ohne
+  dass ihn jemand gesucht hatte.** `bildausschnitt.py` legt jede
+  Einstellungsgrenze jetzt auf ein Vielfaches von 1/fps; weil das Bildraster
+  des Clips bei 0 beginnt, sind die Längen damit von selbst ganzzahlig.
+  **Und die zweite Regel war schon erfüllt** — `mindestdauer` steht auf 0,6 s,
+  die kürzeste Einstellung in den fünf Shorts ist 1,2 s. *„Geprüft, nicht
+  angenommen."* **Das ist die Form, in der eine weitergegebene Regel ankommen
+  soll.**
+  → betrifft: alle
+- **„Eine Ausgabe, die niemand liest, ist keine Prüfung."** (Shorts I, wörtlich)
+  Bei **zwei von fünf** Logan-Shorts war das Kopfzeilenfeld **breiter als das
+  Bild**: **1098 und 1123 px bei 1080**. Der Renderer hatte die Zahl jedes Mal
+  ausgegeben, sie wurde jedes Mal überlesen — **und die Dateien sind so
+  rausgegangen.** Gefunden erst im dritten Rendergang, beim Nachlesen der
+  Ausgabe. `shorts-render.py` bricht jetzt ab und **nennt die Größe, die
+  passt**. Eine Warnung hätte nichts geändert.
+  **Regel: wenn ein Werkzeug eine Zahl ausgibt, die falsch sein kann, muss es
+  die Prüfung selbst machen.**
+  → betrifft: alle Content-Agenten
+- **Eine Sperre ist nur so gut wie ihre Grenze — und sie wird breiter gefasst,
+  nicht knapper.** (Shorts I, Kingsbury) Die Stelle, die ohne sein Wort nicht
+  angefasst wird, war mit **71:01** notiert; am Transkript beginnt sie
+  **70:54**. **Der Satz, mit dem er sie eröffnet, lag ausserhalb der eigenen
+  Sperre** — ein Clip, der bei 71:00 endet, hätte ihn angeschnitten. Jetzt
+  70:45–73:30.
+  → betrifft: alle Content-Agenten
+- **Eine Zeitmarke aus einem Plan ist ein Hinweis, keine Fundstelle — auch wenn
+  der Plan vom selben Agenten stammt.** (Shorts I) Neun der zehn
+  Kingsbury-Kandidaten sind wörtlich belegt, **aber teils 15 bis 30 Sekunden
+  später als notiert** (Flow 10:00→10:15, „Not yet" 15:48→15:53, Erbe
+  36:34→37:13). Und ein Clip-Anfang lag im **falschen Thema**: Clip 3 war mit
+  53:16 notiert, dort läuft noch die Ayahuasca-Passage, der Kampf beginnt
+  **54:09**. **Jede notierte Zeit vor dem Schnitt am Transkript nachschlagen.**
+  → betrifft: alle Content-Agenten
+- **Eine Totale sieht in der Bildmitte aus wie eine leere Einstellung.**
+  (Gastauftritte) Eine neue Einstellung mit dem üblichen Kasten (`675`, also
+  Bildmitte) abgetastet: *„Tisch, Regal, Dosen, kein Mensch"* — sieben Sekunden
+  leeres Bild, fast als tote Einstellung behandelt. **Es war die Totale**:
+  links er, rechts Sutcliffe, dazwischen der Tisch. Ursache: der Kasten war von
+  Hand gesetzt, ohne den Planer zu fragen, und dann an der einen Stelle
+  geprüft, an der garantiert niemand sitzt. **Bei einer neuen Einstellung nie
+  nur die Bildmitte ansehen** — ein Kontaktabzug über die ganze Breite kostet
+  zwei Sekunden. *Ähnlich dem Befund vom 23.10., wo die B-Roll am vollen
+  Trailerbild ausgesucht wurde statt am Ausschnitt: beide Male hat ein Blick
+  auf das falsche Rechteck ein richtiges Bild als falsch gemeldet.*
+  → betrifft: alle
+
+**Nachtrag, aus der Gastbuchung — und es ist der Belegtyp, den der
+Wochenabgleich sucht:** **zwei von ihm überarbeitete Pitches nebeneinander.**
+Jon Savage (raus 22.10.) und Boyd Varty (seine Fassung 26.10.), beide an
+Südafrikaner, vier Tage auseinander.
+
+- **Was er nie anfässt, und was er jedes Mal anfässt.** Unangetastet blieben
+  beide Male **Cold Open, Anrede, Fragenblock und Beat 6**. Geändert hat er
+  jedes Mal **die Gästeliste** — und zwar **nicht nach dem Fach des
+  Empfängers, sondern nach dessen Massstab**: der Podcast-Unternehmer bekam
+  eine rein amerikanische Liste (Reichweite), der Wildnis- und Männerarbeiter
+  eine südafrikanisch grundierte (Verwandtschaft). **Rolle vor Name
+  durchgehend** — dritte unabhängige Bestätigung von Ausgabe 21.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Der Vermittler steht zuletzt, mit „and of course", und wird nicht
+  erklärt.** *„and of course our mutual connection, Professor Scott Aaronson"*
+  (Ilya) und *„and of course living legend Rob Paddock"* (Boyd) — bei Rob
+  **ohne** IronMan und **ohne** $100M, obwohl beides sonst seine Standardzeile
+  ist. Zweimal belegt, also Regel. **Und: die Einleitung über der Gästeliste
+  ist eine Tatsachenbehauptung.** Die Gastbuchung hatte *„I just got back from
+  that trip with some wyld characters in the bag"* über eine Liste gesetzt, in
+  der drei Namen nicht von dieser Reise waren — er hat es gefangen und zu
+  *„I've already had some wyld characters on."* geändert. **Erst die Liste
+  bauen, dann den Satz darüber prüfen.**
+  → betrifft: alle, die Entwürfe für ihn schreiben
+
 ## Ausgabe 22 — 26.10.2026, 16:10 Kapstadt · drei Agenten haben heute dasselbe gelernt: messen, nicht rechnen
 
 Einsammlung des Lernkanals. Drei Agenten haben geschrieben (Gastauftritte,
