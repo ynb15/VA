@@ -8902,3 +8902,43 @@ Behauptung.**
 läuft über `streak-link.com`, also Öffnungs- und Klickmessung. **Er hat Daten
 über die Wirkung seiner Anfragen, die wir nicht sehen. Nie über Wirkung
 spekulieren — das ist eine Frage an ihn.**
+
+───────────────────────────────────────────────────────────────────
+ERSTER SCHREIBZUGRIFF AUFS OUTREACH-DOKUMENT (27.10.2026)
+───────────────────────────────────────────────────────────────────
+
+**Die Regel war: Drive-Schreibrechte sind NICHT freigegeben, Änderungen am
+Outreach-Dokument werden ihm vorgelegt.** Am 27.10. hat er sie für diesen
+Vorgang selbst aufgehoben: *„Bitte pass mir die Links in meinem
+Outreach-Dokument an."*
+
+**So weit geht die Freigabe, und nicht weiter:** eine konkrete Änderung, die er
+benannt hat. **Die Grundregel bleibt** — ohne eine solche Ansage wird ihm
+weiterhin vorgelegt statt geschrieben.
+
+**Wie es gemacht wurde, als Vorlage für das nächste Mal:**
+1. `read_doc` → `revisionId`, `tabId` (`t.0`, das Doc hat genau einen Tab) und
+   die exakten Indizes.
+2. **Nur `updateTextStyle`, kein Einfügen und kein Löschen.** Ein Link ist in
+   Docs eine Textformatierung, keine neue Zeichenkette: damit verschiebt sich
+   kein einziger Index, und der Text bleibt zeichengleich.
+3. **`writeControl.requiredRevisionId` bei jedem Batch.** Ohne diesen Schutz
+   landet eine Änderung an falscher Stelle, wenn er gleichzeitig tippt.
+4. **Kein `replaceAllText`** — „David Sutcliffe" und „Rob Paddock" stehen in
+   einem Dutzend anderer Pitches im selben Dokument. Ein globales Ersetzen
+   hätte sie alle verlinkt.
+5. Danach **zweimal zurückgelesen** und Zeichen für Zeichen verglichen: Text
+   identisch, nur die vier gemeinten Bereiche verändert.
+
+**SEINE LINK-KONVENTION, aus dem Dokument abgelesen und übernommen:**
+- **Verlinkt wird die ganze Beschreibung samt Name**, nicht nur der Name. In
+  einem früheren Pitch steht *„77 y/o therapist and techno icon Rob Bennett"*
+  als ein durchgehender Link.
+- **Format `https://youtu.be/<id>?si=<token>`**, nicht `youtube.com/watch?v=`.
+  Für Rob Bennett und Rob Paddock standen seine eigenen URLs samt `si`-Token
+  schon im Dokument; die wurden wörtlich wiederverwendet statt neu gebaut.
+- **Farbe `rgb(0.067, 0.333, 0.8)` plus Unterstreichung.** Die Docs-API setzt
+  beim Verlinken keine Linkfarbe; ohne diese beiden Felder bleibt der Link
+  unsichtbar schwarz.
+- **Die Zeilenumbrüche am Bulletende bleiben ungefärbt.** Sonst schreibt er
+  hinter dem Bullet weiter und tippt in Blau und unterstrichen.
