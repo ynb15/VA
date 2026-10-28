@@ -113,34 +113,49 @@ der der Podcast heißt.
 3. Die Frage-Eröffnung, die Scharnierformel und der Abbinder sind **seine
    Formeln, nicht meine Erfindung** — ich setze sie wörtlich ein.
 
-## Nachtrag 28.10. — Obergrenze, weil zweimal sagen nicht gereicht hat
+## Nachtrag 28.10. — zweimal falsch, in beide Richtungen
 
-**Er hat es am 21.10. gesagt** („der dritte Absatz gehoert da nicht rein, der
-vierte auch nicht", „maximal 5 Bullet Points"), **am 26.10. hat er es durch
-Handeln wiederholt** — er strich bei der AI-Safety-Beschreibung zwei meiner
-Absaetze ersatzlos. **Am 28.10. habe ich ihm 350 Woerter geliefert.** Erst da
-wurde er deutlich. Ein Hinweis, den ich notiere, aber nicht befolge, ist kein
-Lerneffekt.
+**Erst zu lang.** Er hatte es am 21.10. gesagt („der dritte Absatz gehoert da
+nicht rein, der vierte auch nicht"), am 26.10. durch Handeln wiederholt — er
+strich zwei meiner Absaetze ersatzlos — und am 28.10. habe ich ihm 350 Woerter
+fuer einen Clip geliefert.
 
-**Harte Grenze fuer Clip-Beschreibungen, ab sofort:**
+**Dann zu kurz.** Auf seinen Einwand hin habe ich eine Obergrenze in Zahlen
+aufgeschrieben (120 Woerter, 4 Absaetze, 3 Punkte) und eine 50-Wort-Fassung
+nachgeschoben. **Das war derselbe Fehler in die andere Richtung**, und er hat
+ihn sofort benannt: aus einem Hinweis wird bei mir ein Anschlag, statt einer
+Abwaegung.
+
+**Die Zahlen sind hiermit gestrichen.** Laenge war nie das Problem.
+**Seine Folgenbeschreibung zu Aaronson ist lang** — fuenf Absaetze, fuenf
+Bullets, 39 Kapitel — **und er hat sie fast woertlich uebernommen.** Dieselbe
+Woche, derselbe Gast.
+
+## Der Test, der die Zahl ersetzt
+
+**Oeffnet die Zeile etwas, oder schliesst sie etwas?**
+
+Eine Zeile, die eine Frage *stellt*, verdient den Klick. Eine Zeile, die sie
+*beantwortet*, nimmt ihn weg. Meine 350 Woerter waren nicht zu lang, sie haben
+**nacherzaehlt**: jeder Beat in Reihenfolge, die Aufloesung inklusive. Wer das
+liest, muss den Clip nicht mehr sehen.
 
 | | |
 |---|---|
-| **Laenge** | hoechstens **120 Woerter**, lieber 80 |
-| **Absaetze** | hoechstens **4**, jeder 1-3 Saetze |
-| **Inhaltliche Punkte** | hoechstens **3** aus dem Clip, nicht mehr |
-| **Zitate** | hoechstens **eins**, und nur wenn es den Klick traegt |
+| **Folge** | laenger ist richtig — sie ist eine Nachschlageseite mit Kapiteln, Links, Suchbegriffen |
+| **Clip** | kuerzer — ihre einzige Aufgabe ist, dass jemand den Clip startet und danach die Folge sucht |
+| **Beides** | kein Beat, der seine eigene Aufloesung mitliefert |
 
-**Der Denkfehler dahinter, damit er nicht wiederkommt:** ich habe
-Vollstaendigkeit fuer Qualitaet gehalten. Je laenger der Clip, desto mehr
-wollte ich unterbringen — **bei 23 Minuten Material schrieb ich die laengste
-Beschreibung ueberhaupt, also genau falsch herum.** Die Beschreibung verkauft
-den Clip. Wer alles liest, muss ihn nicht mehr sehen.
-**Je mehr Material, desto strenger die Auswahl — nicht desto mehr Text.**
+**Und die Lehre, die ueber Beschreibungen hinausgeht:** eine Korrektur von ihm
+ist eine Richtungsangabe, kein Endpunkt. Wenn ich auf „zu lang" mit einer
+Zahlenregel antworte, habe ich die Abwaegung an einen Zaehler abgegeben,
+statt sie zu treffen. **Beim naechsten Mal: die Korrektur aufnehmen, die
+Mitte suchen, und die Begruendung nennen — nicht den Hebel bis zum Anschlag
+ziehen.**
 → betrifft: alle Content-Agenten, head-of-content
 
-**Und zur Einstiegsfrage:** seine eigenen funktionieren, weil die zweite
-Haelfte die erste umdreht und der Satz kurz bleibt (*„What if we're not here
-to worship God - but to build him?"*). Meine schwache vom 28.10. hatte einen
-Nebensatz und setzte voraus, dass der Leser weiss, was AI Alignment ist.
+**Zur Einstiegsfrage:** seine funktionieren, weil die zweite Haelfte die erste
+umdreht und der Satz kurz bleibt (*„What if we're not here to worship God -
+but to build him?"*). Meine schwache vom 28.10. hatte einen Nebensatz und
+setzte voraus, dass der Leser weiss, was AI Alignment ist.
 **Eine Einstiegsfrage mit Nebensatz ist keine Einstiegsfrage.**
