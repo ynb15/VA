@@ -121,3 +121,60 @@ in derselben Nacht aus demselben Grund wäre gegen die Regel und würde nichts
 lösen. Beides steht um 06:40 in seinem Bericht.
 
 Nichts im Chat.
+
+## 06:40 · Morgenlauf, Mittwoch — der Entscheidungstag
+
+- **06:40** · Cinematic · **BLOCKED / need_input**, unverändert seit 21:54 ·
+  Kontext **758k/1000k** · neue Commits: **keine** · Maßnahme: **gemeldet**
+- **06:40** · die übrigen acht · kein offener Auftrag · neue Commits: **keine
+  über Nacht** · Maßnahme: **keine**
+
+**Die Nacht war ohne Bewegung**, und das war richtig: der einzige offene Lauf
+wartet auf zwei Entscheidungen von ihm.
+
+### Kingsbury: die Endfassung ist um 06:40 nicht da
+
+Ordner des Cutters (`1MsT1Cnp_FdPRrgFkdiEPmr-SCCzBg42M`) nachgesehen: **eine
+Datei**, `2026_09_YNB_Podcast_Kyle_Kingsbury_v1_LOW_RES.mp4`, 1,29 GB,
+unverändert vom **05.10.** Keine v2, keine Fassung ohne `LOW_RES`.
+
+Er hat gestern zu Shorts I gesagt: *„Kingsbury kommt hoffentlich morgen."*
+Heute ist dieses Morgen. **T−3 greift heute** (Shorts gebaut) und hängt an
+dieser Datei, nicht am Agenten — Shorts I schneidet richtigerweise nicht und
+sieht ab heute früh täglich nach.
+
+**Heute abend ist der Entscheidungspunkt, den ich am 22.10. vorgelegt habe.**
+Liegt die Datei bis dahin nicht im Drive, hält der 31.10. nicht mehr. Die
+Entscheidung ist seine, und sie hat zwei Formen:
+
+1. **Die Folge wandert.** Strassman steht am 13.11. und hat Luft; Kingsbury
+   bekommt einen neuen Samstag, und die Vorlaufkette läuft von dort.
+2. **Der 31.10. bleibt stehen und kommt aus dem Rückkatalog.** Dann ist der
+   Samstag ein Clip oder Short statt eines Podcasts, und Kingsbury wandert
+   trotzdem — nur bleibt der Kanal an dem Tag bedient.
+
+**Was ich nicht tue:** den Termin von mir aus anfassen. Der 31.10. ist einer
+der fünf Termine, die **er** am 21.10. gesetzt hat — und genau das ist die
+Unterscheidung, die ich gestern gelernt habe.
+
+### Plan
+
+**Vorrat 0.** Das Stück für heute (Mi 28.10.) ist **Sutcliffe 01 ·
+„Therapeut"**, Zustand *gebaut, nicht abgenommen* — es liegt, es braucht seinen
+Blick. Dasselbe gilt für Do 29.10. (Sutcliffe 04).
+
+**Freitag hängt an Cinematics zwei Fragen.** Das Stück ist gemessen und
+beschrieben, aber nicht gebaut, weil zwei Entscheidungen fehlen, die nur er
+treffen kann:
+1. **1,8 s Überlappung** mit dem ersten Makhosi-Stück (116,7–118,5 s, *„And
+   Ubuntu, I am because we are"*). Ohne sie hat „that" keinen Bezug.
+2. **Musikbett ja/nein, und bei ja welcher Titel.** Hier steht seine Ansage vom
+   24.10. (*Musik soll künftig genutzt werden*) gegen die sechs Sperrmeldungen
+   vom 22.10. — **beides stimmt, und nur er kann es auflösen.**
+
+### Lernkanal
+
+**Nichts Neues.** Alle neun Zweige geprüft. Keine Ausgabe. Und keine
+Erinnerung: wer gearbeitet hat, hat seine Befunde gestern geschrieben, und seit
+gestern früh hat niemand neu gearbeitet außer Cinematic — das ist eine Messung,
+kein Befund für andere.
