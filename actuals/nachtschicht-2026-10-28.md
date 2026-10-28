@@ -70,3 +70,19 @@ auch wenn die Antwort jetzt käme: ohne Endfassung gibt es keine Schnittzeit.
 (Strassman 13.11. hat Luft), oder der 31.10. bleibt stehen und kommt aus dem
 Rückkatalog — dann braucht der Samstag ein Stück, und das wären zwei Tage
 Vorlauf. **Den Termin fasse ich nicht an.**
+
+## 00:40 · unverändert
+
+- **00:40** · Gastbuchung · **BLOCKED / need_input**, `updated_at` unverändert
+  28.10. 16:44 · Kontext **560k/1000k** · neue Commits: **keine** · Maßnahme:
+  **keine — er entscheidet**
+- **00:40** · Cinematic · **BLOCKED / need_input**, unverändert seit 27.10.
+  21:54 · neue Commits: **keine** · Maßnahme: **keine**
+- **00:40** · Gastauftritte · **COMPLETED**, Auftrag erledigt · Maßnahme:
+  **keine**
+- **00:40** · die übrigen sechs · kein offener Auftrag · neue Commits: **keine**
+  · Maßnahme: **keine**
+
+**Zwei Agenten warten, und beide auf ihn** — die Gastbuchung auf die
+Push-Entscheidung, Cinematic auf die Überlappung und das Musikbett. **Das ist
+kein Stillstand, den Aufsicht auflösen kann.** Nichts im Chat.
