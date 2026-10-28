@@ -112,3 +112,35 @@ der der Podcast heißt.
 2. **Kein Video hat Tags.** Dito.
 3. Die Frage-Eröffnung, die Scharnierformel und der Abbinder sind **seine
    Formeln, nicht meine Erfindung** — ich setze sie wörtlich ein.
+
+## Nachtrag 28.10. — Obergrenze, weil zweimal sagen nicht gereicht hat
+
+**Er hat es am 21.10. gesagt** („der dritte Absatz gehoert da nicht rein, der
+vierte auch nicht", „maximal 5 Bullet Points"), **am 26.10. hat er es durch
+Handeln wiederholt** — er strich bei der AI-Safety-Beschreibung zwei meiner
+Absaetze ersatzlos. **Am 28.10. habe ich ihm 350 Woerter geliefert.** Erst da
+wurde er deutlich. Ein Hinweis, den ich notiere, aber nicht befolge, ist kein
+Lerneffekt.
+
+**Harte Grenze fuer Clip-Beschreibungen, ab sofort:**
+
+| | |
+|---|---|
+| **Laenge** | hoechstens **120 Woerter**, lieber 80 |
+| **Absaetze** | hoechstens **4**, jeder 1-3 Saetze |
+| **Inhaltliche Punkte** | hoechstens **3** aus dem Clip, nicht mehr |
+| **Zitate** | hoechstens **eins**, und nur wenn es den Klick traegt |
+
+**Der Denkfehler dahinter, damit er nicht wiederkommt:** ich habe
+Vollstaendigkeit fuer Qualitaet gehalten. Je laenger der Clip, desto mehr
+wollte ich unterbringen — **bei 23 Minuten Material schrieb ich die laengste
+Beschreibung ueberhaupt, also genau falsch herum.** Die Beschreibung verkauft
+den Clip. Wer alles liest, muss ihn nicht mehr sehen.
+**Je mehr Material, desto strenger die Auswahl — nicht desto mehr Text.**
+→ betrifft: alle Content-Agenten, head-of-content
+
+**Und zur Einstiegsfrage:** seine eigenen funktionieren, weil die zweite
+Haelfte die erste umdreht und der Satz kurz bleibt (*„What if we're not here
+to worship God - but to build him?"*). Meine schwache vom 28.10. hatte einen
+Nebensatz und setzte voraus, dass der Leser weiss, was AI Alignment ist.
+**Eine Einstiegsfrage mit Nebensatz ist keine Einstiegsfrage.**
