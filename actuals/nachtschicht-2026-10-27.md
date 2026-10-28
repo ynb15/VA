@@ -106,3 +106,18 @@ Messung eine Regel gemacht, die sie nicht trägt.
 
 **Kein Anstupsen** — blockiert durch ihn, nicht durch Trägheit. **Nichts im
 Chat**, beides steht um 06:40 in seinem Bericht.
+
+## 03:40 · unverändert
+
+- **03:40** · Cinematic · **BLOCKED / need_input**, seit 21:54 unberührt
+  (`updated_at` 21:54:57, Kontext unverändert **758k/1000k**) · neue Commits:
+  **keine** · Maßnahme: **keine**
+- **03:40** · die übrigen acht · kein offener Auftrag · neue Commits: **keine**
+  · Maßnahme: **keine**
+
+**Begründet still.** Cinematic wartet auf zwei Entscheidungen, die nur er
+treffen kann — die 1,8 s Überlappung und das Musikbett. Ein zweites Anstupsen
+in derselben Nacht aus demselben Grund wäre gegen die Regel und würde nichts
+lösen. Beides steht um 06:40 in seinem Bericht.
+
+Nichts im Chat.
