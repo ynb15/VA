@@ -387,3 +387,23 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   Über die Wirkung einer Anfrage wird nicht spekuliert; das ist eine Frage an
   ihn.
   → betrifft: alle Agenten
+- **Eine Zusage kann an einem Vertrag sterben, nicht am Interesse.** Brendan
+  Kane hat am 09.07. zugesagt und am 28.10. bestätigt — aber inzwischen die
+  Firma verlassen und ein **Wettbewerbsverbot für Social Media**. Damit ist
+  genau das Thema weg, auf dem der Pitch stand (*„the untold stories behind
+  building the most famous people alive"*). **Vor jedem Nachfassen nach langer
+  Pause prüfen, ob die Grundlage des Pitches überhaupt noch existiert** — die
+  Firmenadresse antwortete bereits mit *„Hook Point is winding down its
+  business."*
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **„Let me give it some thought" heißt: nicht schreiben.** Wenn der Ball beim
+  Empfänger liegt, ist der nächste Entwurf kein Fortschritt, sondern Druck.
+  Und **kein Thema vorschlagen, solange kein Satz des Empfängers eines
+  belegt** — er hat selbst gesagt, dass er noch sucht.
+  → betrifft: alle, die Entwürfe für ihn schreiben
+- **Zwei Schreibweisen desselben Namens ergeben zwei Zeilen.** In der Databank
+  stehen „Brendan Kane" (Reached Out, der echte Faden) und „Brandon Kane"
+  (California, Not Started, leer). Dieselbe Verwechslung stand in Yannicks
+  Auftrag vom 27.10. **Beim Anlegen einer Zeile gegen Namensvarianten prüfen,
+  nicht nur gegen die exakte Schreibweise.**
+  → betrifft: alle, die an der Databank arbeiten
