@@ -496,3 +496,101 @@ Fassungen bauen, die den Bereich aufspannen, jede isoliert gemessen
 und die Zahlen dazuschreiben. Er wählt in fünf Minuten, was sonst vier
 Runden Hin und Her kostet.
 → betrifft: alle Agenten
+
+## 29.10. — `--end` war still wirkungslos, sobald ein zweiter Eingang dazukam
+
+Ein Probelauf sollte acht Sekunden lang sein und war vierundachtzig. Kein
+Fehler, keine Warnung, die Ausgabe sah richtig aus.
+
+Der Grund steht in der Reihenfolge der ffmpeg-Argumente: `-t` **vor** einem
+`-i` gilt fuer diesen Eingang, `-t` nach dem letzten `-i` gilt fuer die
+Ausgabe. Der Renderer hat `-t` direkt hinter `-i quelle.mp4` gesetzt. Solange
+nur die Quelle eingelesen wurde, landete es an der Ausgabe und schnitt wie
+gedacht. Sobald ein zweiter Eingang folgte — **Logo, B-Roll, Musik oder
+Outro** — begrenzte es dessen Laenge und die Quelle lief ungeschnitten durch.
+Mit Logo also immer. Gemerkt habe ich es nur, weil ich zufaellig die Dauer der
+Ausgabedatei gepruefte habe.
+
+Aufgefallen ist es erst jetzt, weil ich die Stelle bisher immer vorher mit
+ffmpeg herausgeschnitten und dann die ganze Datei gerendert habe. `--end` war
+nie tragend. Behoben: `-t` steht jetzt vor dem `-i` der Quelle.
+
+Was ich daraus mitnehme, ueber ffmpeg hinaus: **ein Schalter, der nichts tut,
+sieht aus wie ein Schalter, der tut, was er soll.** Bei allem, was eine Laenge,
+eine Anzahl oder eine Grenze setzt, ist die Nachmessung am Ergebnis Teil des
+Laufs, nicht die Kuer.
+
+## 29.10. — „halbe Aufloesung" war meine eigene Fehlrechnung
+
+Ich hatte notiert, die bisherigen Craig-Shorts seien in halber Aufloesung
+geliefert worden, weil die Quelle 3840×2160 ist und die Ausgabe 1080×1920.
+Das stimmt fuer die Pixelzahl der Datei und nicht fuer das, was im Bild ist.
+
+Aus einem 16:9-Bild von 2160 px Hoehe bleiben im 9:16-Fenster **1215 px
+Breite**. Von dort auf 1080 ist eine Verkleinerung um 11 %; auf 2160 waere
+eine Hochrechnung um 78 %. Der Weg nach „4K" fuegt kein Korn Schaerfe hinzu,
+kostet aber das Zehnfache an Rechenzeit und das Zehnfache an Dateigroesse.
+
+Dieselbe Falle wie beim Vollbild-B-Roll, nur andersherum: **die Aufloesung
+der Datei ist nicht die Aufloesung des Bildes.** Gerechnet wird am
+Ausschnitt, nicht am Rahmen.
+
+## 29.10. — dieselbe Datei, dasselbe Modell, drei verschiedene Saetze
+
+Craig sagt das Xhosa-Sprichwort und gleich danach einen Satz ueber Descartes.
+Whisper hat beides verhoert — erwartbar. Nicht erwartet habe ich, **wie
+verschieden es dieselbe Stelle von Lauf zu Lauf verhoert**:
+
+| Lauf | was dastand |
+|---|---|
+| Render (small) | „defined in **process**" + sieben Mal UBUNTU |
+| Einzellauf (small) | „defined in **Trosse** as otherwise, um-tum-gum-tum-gabanya-ubuntu" |
+| Einzellauf (medium) | „defined in **close** as um to um gum to Gabania Ubuntu" |
+
+Richtig ist „defined in **Xhosa** as *Umntu ngumntu ngabantu*".
+
+Daraus folgt etwas fuer `korrekturen.txt`: **eine Korrekturliste kann eine
+Stelle nicht retten, deren Wortlaut sich bei jedem Lauf aendert.** Die Liste
+taugt fuer stabile Fehler — ein Name, der immer gleich falsch geschrieben
+wird. Fuer eine Passage, die das Modell jedes Mal anders zerlegt, ist sie ein
+Spiel, das man nicht gewinnt: ich haette nach dem Rendern geprueft, eine
+Regel geschrieben, neu gerendert, und waere auf einen neuen Wortlaut
+gestossen.
+
+Der Weg, der haelt: die Zeilen **selbst setzen** und ueber `--srt` statt
+`--auto-captions` hineingeben. Die Zeiten aus dem ersten Lauf stimmen ja; nur
+der Text war falsch. `--srt-out` schreibt in Videozeit, `--srt` erwartet
+Clipzeit — der Faktor ist das Tempo.
+
+Und ein Fund nebenbei: an der Stelle „even Native America …" hoeren der
+Einzellauf mit small und der mit medium beide eine **Lakota-Formel** (*Aho
+Mitakuye Oyasin*), der Renderlauf dagegen deren **Uebersetzung** („all my
+relations"). Zwei von drei fuer das Original, und es passt zur Figur, die er
+zwei Saetze vorher gebaut hat (erst das Sprichwort, dann die Bedeutung).
+Gesetzt habe ich das Original — und ihm dazugeschrieben, dass ich es gesetzt
+und nicht gehoert habe. **Eine Zeile, die ich rekonstruiere, wird als solche
+geliefert.**
+
+## 29.10. — die Quelle hatte sein Logo schon im Bild
+
+Im gestapelten Ausschnitt stand das YNB-Zeichen **zweimal**: einmal mein
+Overlay unten, einmal mitten im Bild. Mein erster Gedanke war ein Fehler im
+Renderer. Er war es nicht.
+
+`craig-roh.mp4` ist kein Kameramaster, sondern ein **fertiger Export mit
+eingebranntem Logo** unten links (gemessen: x 108–398, y 1825–2066 im
+3840×2160-Bild). Im einzelnen 9:16-Ausschnitt faellt das nie auf, weil der
+die Mitte nimmt. Die Totale wird aber **gestapelt**, und der obere Kasten
+beginnt bei x = 0 — er nimmt die linke Bildkante mitsamt Logo.
+
+Behoben, indem der obere Kasten um 184 px nach oben rutscht (y 484 → 300,
+Unterkante damit 1812, das Logo beginnt bei 1825). Das kostet ein Stueck
+Tisch und keinen Kopf.
+
+Was ich mitnehme: **bevor ich aus fremdem Material einen Ausschnitt nehme,
+sehe ich mir das volle Bild an, nicht nur die Stelle, die ich brauche.** Was
+in den Ecken steht — Logo, Wasserzeichen, eingebrannter Untertitel — ist
+genau das, was ein verschobener Ausschnitt hereinholt. Dieselbe Lehre wie die
+43 Pixel beim Into-the-Wild-Trailer, nur andersherum: dort hat ein Schnitt
+einen eingebrannten Untertitel **entfernt**, hier hat einer ein Logo
+**hereingeholt**.

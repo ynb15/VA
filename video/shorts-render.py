@@ -143,7 +143,15 @@ def cues_als_srt(cues, pfad, tempo=1.0, gross=True):
     """
     zeilen = []
     for i, c in enumerate(cues, 1):
-        text = " ".join(_anzeige(w["t"], gross) for w in c["woerter"])
+        # Aus --auto-captions kommen Einblendungen mit Wortliste, aus --srt
+        # nur mit fertigem Text. build_ass kennt beide Formen, hier fehlte
+        # der zweite Fall: --srt zusammen mit --srt-out ist am 29.10. mit
+        # KeyError abgebrochen.
+        if c.get("woerter"):
+            text = " ".join(_anzeige(w["t"], gross) for w in c["woerter"])
+        else:
+            text = " ".join(_anzeige(t, gross)
+                            for t in (c.get("text") or "").split())
         zeilen.append(f"{i}\n{srt_time(c['start'] / tempo)} --> "
                       f"{srt_time(c['end'] / tempo)}\n{text}\n")
     Path(pfad).write_text("\n".join(zeilen), encoding="utf-8")
@@ -1084,9 +1092,12 @@ def main():
     ap.add_argument("--hoch", type=int, default=1920,
                     choices=[1920, 3840],
                     help="Bildhoehe des Ergebnisses. 1920 ist die Vorgabe "
-                         "(1080x1920). 3840 liefert 2160x3840 - sinnvoll nur, "
-                         "wenn die Quelle wirklich 4K ist; aus 1080p "
-                         "hochgerechnet bringt es nichts. Pixelmasse wie "
+                         "(1080x1920). 3840 liefert 2160x3840. Vorsicht: aus "
+                         "einem 16:9-Bild von 2160 px Hoehe bleiben im "
+                         "9:16-Fenster nur 1215 px Breite - 2160 ist dann "
+                         "eine Hochrechnung um 78 %%, 1080 eine Verkleinerung "
+                         "um 11 %%. Lohnt also erst bei einer Quelle, die "
+                         "hochkant gedreht ist. Pixelmasse wie "
                          "--schriftgroesse, --logo-breite und --lippe sind "
                          "dann ebenfalls zu verdoppeln, sie werden nicht "
                          "mitskaliert.")
@@ -1353,9 +1364,14 @@ def main():
         cmd = [FFMPEG, "-y"]
         if not a.plan:
             cmd += ["-ss", str(t0)]
+            # --end gehoert VOR das -i, sonst gilt es fuer die naechste
+            # Eingabe. Stand es dahinter, hat es beim ersten Eingang, der
+            # noch folgte (Logo, B-Roll, Musik, Outro), still dessen Laenge
+            # begrenzt und die Quelle lief ungeschnitten durch: der
+            # Probelauf vom 29.10. sollte 8 Sekunden lang sein und war 84.
+            if dur:
+                cmd += ["-t", str(dur)]
         cmd += ["-i", a.src]
-        if dur and not a.plan:
-            cmd += ["-t", str(dur)]
         naechste = 1
         for _, _, datei in broll:
             # Nur das Bild wird gebraucht; -an haelt den Ton der B-Roll
