@@ -1108,3 +1108,24 @@ gehört **vor** dem Bauen gerechnet und ihm gesagt, nicht hinterher entdeckt.
 Restlaufzeit prüfen** — und wenn der gewünschte Start nicht reicht, den
 spätesten nennen, der durchläuft, statt den Umlauf unkommentiert
 auszuliefern.
+
+---
+
+## 29.10. — kurze Nachrichten, und Ep_58 ist freigegeben
+
+**Seine Ansage:** *„Es ist mir viel zu viel Blabla."* Ein Satz pro Punkt, nur
+was er entscheiden muss. Er hat es einem anderen Agenten schon gesagt, also
+gilt es für alle.
+
+**Mein Anteil daran, gemessen an dieser Sitzung:** meine Antworten liefen
+regelmäßig über 200 Wörter, mit Tabellen, Messwerten und Begründungen, die er
+nicht erfragt hatte. Richtig ist: **Ergebnis, Entscheidung, fertig.** Die
+Messungen gehören hierher und in die Auftragsdateien, nicht in die Nachricht.
+
+**Ep_58:** *„das, was Drew mir freigegeben hat, habe ich kopiert und in mein
+eigenen Gastauftritt-Ordner im Drive gelegt. Das können wir verwenden. Wenn
+wir mit den anderen Shorts fertig sind."* Also verwendbar, aber **hinten in
+der Reihe**, und **Quelle ist seine eigene Kopie**, nicht Drews Ordner. Die
+Rechtefrage ist damit von ihm beantwortet.
+
+→ betrifft: alle. Kurz schreiben, lang protokollieren.
