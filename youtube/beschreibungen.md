@@ -1,4 +1,35 @@
-# Seine Beschreibungen, ausgemessen — alle 77 Videos, 21.10.2026
+# Beschreibungen
+
+> **VOR JEDER BESCHREIBUNG LESEN. Die vier Regeln, die er mir einzeln
+> beibringen musste — jede nach einem Entwurf, den er verworfen hat.**
+>
+> **1. Nicht nacherzaehlen. Umdrehen.**
+> Die Reihenfolge des Transkripts ist keine Dramaturgie. Erwartung aufbauen,
+> Erwartung brechen. *„Everyone is waiting to hear the moment AI broke
+> through. There wasn't one."* — nicht *„The idea is old. Neural nets go back
+> to the 1940s."*
+>
+> **2. Keine Zeile, die ihre eigene Aufloesung mitliefert.**
+> Oeffnet die Zeile etwas oder schliesst sie etwas? Wer alles liest, muss den
+> Clip nicht mehr sehen.
+>
+> **3. Paraphrasieren und mit der Botschaft spielen.**
+> Zitate sind erlaubt, aber ein Absatz aus aneinandergereihten Zitaten ist
+> Abschrift, keine Beschreibung. Kurze harte Saetze zwischen die langen.
+> *„The missing piece was never genius. It was a factor of a million."*
+>
+> **4. Der Pitch am Ende muss nennen, was drin ist.**
+> **`Full conversation with Scott 👉 Link` ist tot.** Daran klickt niemand.
+> Sein eigener Griff aus dem angepinnten Kommentar: *„95 minutes on quantum
+> computers, human extinction, the Book of Job and the one question OpenAI
+> actually paid him to answer…"* — Laufzeit, drei bis vier konkrete Dinge,
+> Auslassungspunkte.
+>
+> **Laenge: seine eigenen liegen bei 145 bis 190 Woertern.** Das ist der
+> Korridor, keine Obergrenze. Kuerzer war genauso falsch wie laenger.
+>
+> **Einstiegsfrage:** kurz, und die zweite Haelfte dreht die erste um. Eine
+> Frage mit Nebensatz ist keine Einstiegsfrage.
 
 Geholt mit `video/werkzeug/kommentare_holen.py`-Technik (`yt-dlp`,
 `ignore_no_formats_error`). **Keine Schätzung, kein Gedächtnis — gezählt.**
