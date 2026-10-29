@@ -1036,6 +1036,7 @@ def plan_graph(schnitte):
 
 
 def main():
+    global W, H          # --hoch 3840 setzt beide um
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", required=True)
     ap.add_argument("--start", default="0")
@@ -1080,6 +1081,15 @@ def main():
                          "endet (Satzgrenze ohne Satzzeichen)")
     ap.add_argument("--logo", default=None,
                     help="PNG mit Transparenz, wird unten mittig eingeblendet")
+    ap.add_argument("--hoch", type=int, default=1920,
+                    choices=[1920, 3840],
+                    help="Bildhoehe des Ergebnisses. 1920 ist die Vorgabe "
+                         "(1080x1920). 3840 liefert 2160x3840 - sinnvoll nur, "
+                         "wenn die Quelle wirklich 4K ist; aus 1080p "
+                         "hochgerechnet bringt es nichts. Pixelmasse wie "
+                         "--schriftgroesse, --logo-breite und --lippe sind "
+                         "dann ebenfalls zu verdoppeln, sie werden nicht "
+                         "mitskaliert.")
     ap.add_argument("--logo-breite", type=int, default=int(W * 0.28),
                     help="Vorgabe 28 %% der Bildbreite, aus seinem Preset")
     ap.add_argument("--logo-alpha", type=float, default=1.0)
@@ -1170,6 +1180,16 @@ def main():
                          "da, laeuft die Annaeherung und es steht in der "
                          "Ausgabe.")
     a = ap.parse_args()
+
+    if a.hoch != H:
+        # W und H sind Modulkonstanten und stecken in rund dreissig Stellen
+        # des Filtergraphen sowie in PlayResX/PlayResY der Untertitel. Sie
+        # hier zu setzen ist der einzige Griff, der alle davon trifft.
+        # Einzige Ausnahme ist die Voreinstellung von --logo-breite, die
+        # beim Einlesen schon berechnet wurde - wer --hoch 3840 nimmt, gibt
+        # die Pixelmasse ohnehin selbst an.
+        H = a.hoch
+        W = H * 9 // 16
 
     if not 0.5 <= a.tempo <= 2.0:
         raise SystemExit("--tempo muss zwischen 0.5 und 2.0 liegen (atempo).")
