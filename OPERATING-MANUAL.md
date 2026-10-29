@@ -8942,3 +8942,35 @@ weiterhin vorgelegt statt geschrieben.
   unsichtbar schwarz.
 - **Die Zeilenumbrüche am Bulletende bleiben ungefärbt.** Sonst schreibt er
   hinter dem Bullet weiter und tippt in Blau und unterstrichen.
+
+───────────────────────────────────────────────────────────────────
+SEINE VERBOTSLISTE UND DER KANONISCHE TREFFEN-SATZ (29.10.2026)
+───────────────────────────────────────────────────────────────────
+
+**NIE WIEDER SCHREIBEN**, wörtlich seine Ansage:
+- **„because that's the other thing"** — *„mag ich überhaupt gar nicht. Will
+  ich nie wieder hören, nie wieder lesen."*
+- **„no rush at all"** — *„so würde ich das niemals schreiben."*
+- **„whatever you land on"** — *„ich will natürlich nicht über whatever
+  sprechen, sondern ich habe schon Präferenzen."* **Er ist nie indifferent.**
+  Wenn das Thema offen ist, heißt das nicht „mir egal", sondern „ich sage Dir
+  meine Gedanken persönlich".
+
+**DER TREFFEN-SATZ IST KANONISCH, aus seiner Mail an David Sutcliffe vom
+15.08.2026, wörtlich zu übernehmen:**
+
+> *„One thing I like to do before every podcast: meet up briefly IRL sometime
+> in the days beforehand. In my experience it just makes the whole thing more
+> personal and sets us up for a better conversation."*
+
+**Nicht mit der Scott-Variante vom 04.08. mischen** (*„grab a quick coffee in
+person"*). Genau das hatte ich getan, und er hat es gemerkt: *„habe ich das
+wirklich genauso geschrieben in den anderen E-Mails?"* **Zwei echte Sätze zu
+einem dritten zu verschmelzen ist dasselbe wie erfinden.**
+
+**JEDE MAIL BRAUCHT EINEN CTA MIT EINEM KONKRETEN FENSTER.** Nicht „sag
+Bescheid, wenn es passt", sondern: *„What works for you in the week of the
+9th–13th?"* **Eine Frage, auf die man mit einem Tag antworten kann.**
+
+**WORTWIEDERHOLUNG IST EIN FEHLER.** „Coffee" stand dreimal in einer
+Vier-Zeilen-Mail. **Sein Wort dafür ist „Black Gold".**
