@@ -1062,3 +1062,49 @@ Dateien, er selbst hat sie — das ist die Sicherung, nicht git.**
 → betrifft: die Vorratsplanung. **Ein Stück, das geliefert ist, aber nicht
 abgenommen, ist kein Vorrat** — und es wird auch keiner, wenn man es noch
 einmal liefert.
+
+---
+
+## 29.10. — „Mom's Got Work" wurde NICHT gesperrt. Ich lag mit der Warnung daneben.
+
+Seine Messung: *„das Anger-Short … Moms Got Work darunter gelegt und
+festgestellt, dass sogar ich glaube, wenn man das bis 2 Minuten durchlaufen
+lässt, wird das nicht gesperrt."*
+
+**Ich habe diesen Titel viermal als Sperrkandidat gemeldet** — weil er im Tag
+als *The Handmaid's Tale (Deluxe Edition), Original Series Soundtrack, 2019*
+ausgewiesen ist und weil in der Woche vom 22.10. fünf Titel weltweit gesperrt
+wurden. **Das war eine Einschätzung, keine Messung.** Seine ist eine Messung,
+und sie zählt mehr.
+
+**Was daraus zu lernen ist, und es betrifft alle Agenten:** aus „kommerzielle
+Soundtrack-Veröffentlichung" folgt **nicht** „Content ID schlägt an". Die
+Sperren vom 22.10. waren gemessene Ergebnisse an *diesen* Titeln; die
+Verallgemeinerung auf einen anderen Titel desselben Katalogs war meine, nicht
+die Messung. Richtig formuliert heißt es: *„Ob dieser Titel durchgeht, weiß
+ich nicht — geprüft ist es erst nach dem Hochladen."* Nicht: *„das ist ein
+Sperrkandidat."*
+
+**Praktische Folge für heute:** `Adam Taylor - He's Alive` kommt aus
+**demselben Album und von demselben Komponisten** wie Mom's Got Work. Seine
+Messung spricht also eher dafür, dass auch dieser Titel durchgeht.
+
+### Dazu ein Befund zur Länge eines Musikbetts
+
+Er wollte He's Alive **ab 1:49** unter dem Teacher-Short. Der Song ist
+**143,31 s** lang, ab 1:49 bleiben **34,31 s** — der Hauptteil ist 98,70 s.
+`musik_drunter.py` loopt in so einem Fall stillschweigend: das Bett läuft
+knapp dreimal um. Gemessen am Ergebnis springt es bei **34,31 s** und
+**68,62 s** jeweils von **−41,7 auf −25,9 dB**, weil der Song zum Ende hin
+ausblendet und am Umlaufpunkt wieder voll einsetzt. **16 dB, zweimal, mitten
+im Short.**
+
+**Die Regel, die daraus folgt:** `Songlänge − Startpunkt` muss mindestens so
+groß sein wie der Hauptteil, sonst läuft das Bett um. Der späteste Start ohne
+Umlauf ist `Songlänge − Hauptteil`; hier 143,31 − 98,70 = **44,61 s**. Das
+gehört **vor** dem Bauen gerechnet und ihm gesagt, nicht hinterher entdeckt.
+
+→ betrifft: alle, die ein Bett unterlegen. **Startpunkt gegen die
+Restlaufzeit prüfen** — und wenn der gewünschte Start nicht reicht, den
+spätesten nennen, der durchläuft, statt den Umlauf unkommentiert
+auszuliefern.
