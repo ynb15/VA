@@ -1021,3 +1021,44 @@ der garantiert niemand sitzt.
 ansehen** — ein Kontaktabzug über die ganze Breite kostet zwei Sekunden und
 hätte die Verwechslung sofort ausgeschlossen. Der Kasten liegt jetzt rechts
 auf Sutcliffe, derselbe Wert wie bei der anderen Totale desselben Clips.
+
+---
+
+## 29.10., Antwort auf die Frage nach dem Lieferstand
+
+Gefragt war: ist eines der drei Stücke vom 26.10. (Anger, Teacher, Playmate)
+heute als fertige Datei lieferbar. **Die Prämisse stimmt nicht ganz, und das
+ist die wichtigere Antwort:** alle drei sind am 26.10. **als fertige Dateien
+an ihn gegangen**. Sie stehen nicht offen, weil an ihnen noch zu arbeiten
+wäre — es fehlt sein Urteil, nicht meine Arbeit.
+
+| Stück | Stand | offen |
+|---|---|---|
+| **Anger** | 131,11 s · Tempo 1,17 · **ohne Musik** · 2160×3840 · 26.10. 14:20 geliefert | nichts von mir, nichts von ihm |
+| **Teacher** | 102,95 s · Tempo 1,15 · Mom's Got Work · 26.10. 13:18 geliefert | er hat zur Musik nichts gesagt, und der Titel ist ein Sperrkandidat (siehe unten) |
+| **Playmate** | 96,55 s · Tempo 1,15 · Mom's Got Work · 26.10. 13:08 geliefert | **offener Punkt von IHM:** *„bei dem Playmate Marriage Short bin ich noch nicht ganz happy mit der Musik. Da muss ich mir noch überlegen, was wir stattdessen nehmen."* |
+
+**Wenn eines heute ohne weitere Entscheidung rausgehen kann, dann Anger.**
+Es trägt kein Bett, also hängt daran keine Content-ID-Frage, und es gibt
+keinen offenen Punkt — weder von ihm noch von mir. **Teacher** ist technisch
+genauso fertig, trägt aber Mom's Got Work, und der Titel ist im Tag als *The
+Handmaid's Tale (Deluxe Edition), Original Series Soundtrack, 2019*
+ausgewiesen: eine kommerzielle Soundtrack-Veröffentlichung, also genau die
+Sorte, die in der Woche vom 22.10. fünf Sperren ausgelöst hat. **Playmate ist
+nicht fertig**, solange er den Titel nicht gewählt hat.
+
+**Nichts davon ist „schnell fertig gemacht, damit eine Zahl stimmt".** Die
+drei liegen seit dem 26.10. bei ihm; dass der Vorrat auf null steht, ändert
+an ihrem Stand nichts.
+
+**Zum Committen, weil ausdrücklich danach gefragt wurde:** der Arbeitsbaum
+ist sauber, alles liegt bis `ac0471d`. Die **.mp4 selbst sind nach
+`.gitignore` NICHT in git** (Zeile 1: `video/shorts/*.mp4`) — drei Dateien
+zwischen 187 und 276 MB gehören da auch nicht hinein. Was committet ist,
+reicht zum Neubauen: Auftragsprotokolle, Einblendungsdateien,
+Ausschnittpläne, Schnittpläne und die Werkzeuge. **Der Container hält die
+Dateien, er selbst hat sie — das ist die Sicherung, nicht git.**
+
+→ betrifft: die Vorratsplanung. **Ein Stück, das geliefert ist, aber nicht
+abgenommen, ist kein Vorrat** — und es wird auch keiner, wenn man es noch
+einmal liefert.
