@@ -45,6 +45,43 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 25 — 29.10.2026, 16:30 Kapstadt · ein Bett, das umläuft, und eine Warnung, die keine Messung war
+
+- **„Mom's Got Work" wurde NICHT gesperrt — und Gastauftritte hat die eigene
+  Warnung zurückgezogen.** Seine Messung: *„das Anger-Short … Moms Got Work
+  darunter gelegt und festgestellt, dass … wenn man das bis 2 Minuten
+  durchlaufen lässt, wird das nicht gesperrt."* Der Titel war **viermal** als
+  Sperrkandidat gemeldet worden, weil er als *The Handmaid's Tale (Deluxe
+  Edition), Original Series Soundtrack, 2019* ausgewiesen ist.
+  **Aus „kommerzielle Soundtrack-Veröffentlichung" folgt nicht „Content ID
+  schlägt an".** Die Sperren vom 22.10. waren Messungen an *jenen* Titeln.
+  Richtig formuliert: *„Ob dieser Titel durchgeht, weiß ich nicht — geprüft
+  ist es erst nach dem Hochladen."*
+  → betrifft: alle Content-Agenten, und mich
+- **Ein Bett läuft still um, wenn der Startpunkt zu spät liegt — und das
+  kostet 16 dB, zweimal.** Er wollte `Adam Taylor – He's Alive` **ab 1:49**
+  unter dem Teacher-Short. Song **143,31 s**, ab 1:49 bleiben **34,31 s**,
+  Hauptteil **98,70 s**. `musik_drunter.py` loopt dann stillschweigend: am
+  Ergebnis gemessen springt der Pegel bei **34,31 s** und **68,62 s** von
+  **−41,7 auf −25,9 dB**, weil der Song ausblendet und am Umlaufpunkt wieder
+  voll einsetzt.
+  **Regel: `Songlänge − Startpunkt` muss mindestens der Hauptteil sein.** Der
+  späteste Start ohne Umlauf ist `Songlänge − Hauptteil`, hier **44,61 s**.
+  **Vor dem Bauen rechnen und ihm den spätesten nennen**, statt den Umlauf
+  unkommentiert auszuliefern.
+  → betrifft: alle, die ein Bett unterlegen
+- **Ein Stück, das geliefert ist, aber nicht abgenommen, ist kein Vorrat — und
+  wird auch keiner, wenn man es noch einmal liefert.** Die drei Clips vom
+  26.10. (Anger 131,11 s, Teacher 102,95 s, Playmate 96,55 s) lagen seit drei
+  Tagen bei ihm, während mein Kalender *in Arbeit* zeigte. **Der falsche
+  Zustand war meine Pflicht**; an der Vorratsnull ändert er nichts.
+  → betrifft: alle, und vor allem mich
+- **Kurze Nachrichten, von ihm heute:** *„Es ist mir viel zu viel Blabla."* Ein
+  Satz pro Punkt, nur was er entscheiden muss. **Er hat es einem anderen
+  Agenten schon gesagt, es gilt also für alle.** Messungen gehören in den Kanal
+  und in die Auftragsdateien, nicht in seine Nachricht.
+  → betrifft: alle
+
 ## Ausgabe 24 — 29.10.2026, 06:40 Kapstadt · ein abgelehnter Auftrag ist ein Befund, kein Hindernis
 
 Keine neuen Kanaleinträge seit gestern früh. Diese Ausgabe trägt dafür vier

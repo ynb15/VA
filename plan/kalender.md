@@ -70,7 +70,7 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Sa 24.10. | Short | **Sutcliffe · Tate** (Cinematic, mit 17 Einspielern) | **bei ihm** — 22.10. abends geliefert, Nutzung der Szenen seine Entscheidung |
 | So 25.10. | **PODCAST** | Scott Aaronson | **VERÖFFENTLICHT** — `2_CZfN2iOFk`, empfohlener Titel genommen |
 | Mo 26.10. | Clip | **Aaronson · „How safe is AI"** | **VERÖFFENTLICHT am 24.10.** als `YO_sGYH1dm8`, 7:34 |
-| Di 27.10. | Clip | **drei Clips** (Gastauftritte — Schulsystem dazu, am 24.10. mit ihm gebaut) | in Arbeit **mit ihm** |
+| Di 27.10. | Clip | **drei Clips** (Gastauftritte: Anger · Teacher · Playmate) | **bei ihm — alle drei am 26.10. als fertige Dateien geliefert**; Anger ohne offenen Punkt, Teacher und Playmate warten auf seine Musikwahl |
 | Mi 28.10. | Short | Sutcliffe 01 · „Therapeut" | gebaut, nicht abgenommen |
 | Do 29.10. | Short | Sutcliffe 04 · „Vulnerability is not weakness" | gebaut, nicht abgenommen |
 | Fr 30.10. | Short | — | **offen** — Logan herausgenommen, siehe Hinweis unten |
@@ -180,3 +180,19 @@ verwenden. Wenn wir mit den anderen Shorts fertig sind."*
 
 **Rechtefrage ist damit beantwortet: verwendbar.** Reihenfolge: **erst die
 laufenden Shorts fertig**, dann Ep_58. Liegt bei content-gastauftritte.
+
+## Korrektur 29.10.: der Zustand stand falsch, der Vorrat nicht
+
+Die drei Clips standen seit dem 27.10. auf *in Arbeit mit ihm*. **Sie sind am
+26.10. als fertige Dateien zu ihm gegangen** — Anger 14:20, Teacher 13:18,
+Playmate 13:08. **Der falsche Zustand war meine Pflicht, nicht die des
+Agenten.**
+
+**Am Vorrat ändert das nichts**, und das ist der Punkt: *ein Stück, das
+geliefert ist, aber nicht abgenommen, ist kein Vorrat* — und es wird auch
+keiner, wenn man es noch einmal liefert. Die Null bleibt richtig.
+
+**Lieferbar ohne weitere Entscheidung ist nur Anger** (131,11 s, Tempo 1,17,
+**ohne Bett**, 4K). Teacher und Playmate hängen an seiner Musikwahl — bei
+Playmate wörtlich: *„bei dem Playmate Marriage Short bin ich noch nicht ganz
+happy mit der Musik."*

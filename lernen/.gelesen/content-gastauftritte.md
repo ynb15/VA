@@ -1021,3 +1021,111 @@ der garantiert niemand sitzt.
 ansehen** — ein Kontaktabzug über die ganze Breite kostet zwei Sekunden und
 hätte die Verwechslung sofort ausgeschlossen. Der Kasten liegt jetzt rechts
 auf Sutcliffe, derselbe Wert wie bei der anderen Totale desselben Clips.
+
+---
+
+## 29.10., Antwort auf die Frage nach dem Lieferstand
+
+Gefragt war: ist eines der drei Stücke vom 26.10. (Anger, Teacher, Playmate)
+heute als fertige Datei lieferbar. **Die Prämisse stimmt nicht ganz, und das
+ist die wichtigere Antwort:** alle drei sind am 26.10. **als fertige Dateien
+an ihn gegangen**. Sie stehen nicht offen, weil an ihnen noch zu arbeiten
+wäre — es fehlt sein Urteil, nicht meine Arbeit.
+
+| Stück | Stand | offen |
+|---|---|---|
+| **Anger** | 131,11 s · Tempo 1,17 · **ohne Musik** · 2160×3840 · 26.10. 14:20 geliefert | nichts von mir, nichts von ihm |
+| **Teacher** | 102,95 s · Tempo 1,15 · Mom's Got Work · 26.10. 13:18 geliefert | er hat zur Musik nichts gesagt, und der Titel ist ein Sperrkandidat (siehe unten) |
+| **Playmate** | 96,55 s · Tempo 1,15 · Mom's Got Work · 26.10. 13:08 geliefert | **offener Punkt von IHM:** *„bei dem Playmate Marriage Short bin ich noch nicht ganz happy mit der Musik. Da muss ich mir noch überlegen, was wir stattdessen nehmen."* |
+
+**Wenn eines heute ohne weitere Entscheidung rausgehen kann, dann Anger.**
+Es trägt kein Bett, also hängt daran keine Content-ID-Frage, und es gibt
+keinen offenen Punkt — weder von ihm noch von mir. **Teacher** ist technisch
+genauso fertig, trägt aber Mom's Got Work, und der Titel ist im Tag als *The
+Handmaid's Tale (Deluxe Edition), Original Series Soundtrack, 2019*
+ausgewiesen: eine kommerzielle Soundtrack-Veröffentlichung, also genau die
+Sorte, die in der Woche vom 22.10. fünf Sperren ausgelöst hat. **Playmate ist
+nicht fertig**, solange er den Titel nicht gewählt hat.
+
+**Nichts davon ist „schnell fertig gemacht, damit eine Zahl stimmt".** Die
+drei liegen seit dem 26.10. bei ihm; dass der Vorrat auf null steht, ändert
+an ihrem Stand nichts.
+
+**Zum Committen, weil ausdrücklich danach gefragt wurde:** der Arbeitsbaum
+ist sauber, alles liegt bis `ac0471d`. Die **.mp4 selbst sind nach
+`.gitignore` NICHT in git** (Zeile 1: `video/shorts/*.mp4`) — drei Dateien
+zwischen 187 und 276 MB gehören da auch nicht hinein. Was committet ist,
+reicht zum Neubauen: Auftragsprotokolle, Einblendungsdateien,
+Ausschnittpläne, Schnittpläne und die Werkzeuge. **Der Container hält die
+Dateien, er selbst hat sie — das ist die Sicherung, nicht git.**
+
+→ betrifft: die Vorratsplanung. **Ein Stück, das geliefert ist, aber nicht
+abgenommen, ist kein Vorrat** — und es wird auch keiner, wenn man es noch
+einmal liefert.
+
+---
+
+## 29.10. — „Mom's Got Work" wurde NICHT gesperrt. Ich lag mit der Warnung daneben.
+
+Seine Messung: *„das Anger-Short … Moms Got Work darunter gelegt und
+festgestellt, dass sogar ich glaube, wenn man das bis 2 Minuten durchlaufen
+lässt, wird das nicht gesperrt."*
+
+**Ich habe diesen Titel viermal als Sperrkandidat gemeldet** — weil er im Tag
+als *The Handmaid's Tale (Deluxe Edition), Original Series Soundtrack, 2019*
+ausgewiesen ist und weil in der Woche vom 22.10. fünf Titel weltweit gesperrt
+wurden. **Das war eine Einschätzung, keine Messung.** Seine ist eine Messung,
+und sie zählt mehr.
+
+**Was daraus zu lernen ist, und es betrifft alle Agenten:** aus „kommerzielle
+Soundtrack-Veröffentlichung" folgt **nicht** „Content ID schlägt an". Die
+Sperren vom 22.10. waren gemessene Ergebnisse an *diesen* Titeln; die
+Verallgemeinerung auf einen anderen Titel desselben Katalogs war meine, nicht
+die Messung. Richtig formuliert heißt es: *„Ob dieser Titel durchgeht, weiß
+ich nicht — geprüft ist es erst nach dem Hochladen."* Nicht: *„das ist ein
+Sperrkandidat."*
+
+**Praktische Folge für heute:** `Adam Taylor - He's Alive` kommt aus
+**demselben Album und von demselben Komponisten** wie Mom's Got Work. Seine
+Messung spricht also eher dafür, dass auch dieser Titel durchgeht.
+
+### Dazu ein Befund zur Länge eines Musikbetts
+
+Er wollte He's Alive **ab 1:49** unter dem Teacher-Short. Der Song ist
+**143,31 s** lang, ab 1:49 bleiben **34,31 s** — der Hauptteil ist 98,70 s.
+`musik_drunter.py` loopt in so einem Fall stillschweigend: das Bett läuft
+knapp dreimal um. Gemessen am Ergebnis springt es bei **34,31 s** und
+**68,62 s** jeweils von **−41,7 auf −25,9 dB**, weil der Song zum Ende hin
+ausblendet und am Umlaufpunkt wieder voll einsetzt. **16 dB, zweimal, mitten
+im Short.**
+
+**Die Regel, die daraus folgt:** `Songlänge − Startpunkt` muss mindestens so
+groß sein wie der Hauptteil, sonst läuft das Bett um. Der späteste Start ohne
+Umlauf ist `Songlänge − Hauptteil`; hier 143,31 − 98,70 = **44,61 s**. Das
+gehört **vor** dem Bauen gerechnet und ihm gesagt, nicht hinterher entdeckt.
+
+→ betrifft: alle, die ein Bett unterlegen. **Startpunkt gegen die
+Restlaufzeit prüfen** — und wenn der gewünschte Start nicht reicht, den
+spätesten nennen, der durchläuft, statt den Umlauf unkommentiert
+auszuliefern.
+
+---
+
+## 29.10. — kurze Nachrichten, und Ep_58 ist freigegeben
+
+**Seine Ansage:** *„Es ist mir viel zu viel Blabla."* Ein Satz pro Punkt, nur
+was er entscheiden muss. Er hat es einem anderen Agenten schon gesagt, also
+gilt es für alle.
+
+**Mein Anteil daran, gemessen an dieser Sitzung:** meine Antworten liefen
+regelmäßig über 200 Wörter, mit Tabellen, Messwerten und Begründungen, die er
+nicht erfragt hatte. Richtig ist: **Ergebnis, Entscheidung, fertig.** Die
+Messungen gehören hierher und in die Auftragsdateien, nicht in die Nachricht.
+
+**Ep_58:** *„das, was Drew mir freigegeben hat, habe ich kopiert und in mein
+eigenen Gastauftritt-Ordner im Drive gelegt. Das können wir verwenden. Wenn
+wir mit den anderen Shorts fertig sind."* Also verwendbar, aber **hinten in
+der Reihe**, und **Quelle ist seine eigene Kopie**, nicht Drews Ordner. Die
+Rechtefrage ist damit von ihm beantwortet.
+
+→ betrifft: alle. Kurz schreiben, lang protokollieren.
