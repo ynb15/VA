@@ -73,7 +73,7 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Di 27.10. | Clip | **drei Clips** (Gastauftritte: Anger · Teacher · Playmate) | **bei ihm — alle drei am 26.10. als fertige Dateien geliefert**; Anger ohne offenen Punkt, Teacher und Playmate warten auf seine Musikwahl |
 | Mi 28.10. | Short | Sutcliffe 01 · „Therapeut" | gebaut, nicht abgenommen |
 | Do 29.10. | Short | Sutcliffe 04 · „Vulnerability is not weakness" | gebaut, nicht abgenommen |
-| Fr 30.10. | Short | — | **offen** — Logan herausgenommen, siehe Hinweis unten |
+| Fr 30.10. | Short | **Craig Makhosi · Ubuntu** (Cinematic, 2. Stelle) | **gebaut** 29.10. 17:59, Untertitel korrigiert — die 1,8 s Überlappung ist noch seine Entscheidung |
 | Sa 31.10. | **PODCAST** | Kyle Kingsbury | **angehalten bis Mo 26.10.** |
 
 ### November 2026
