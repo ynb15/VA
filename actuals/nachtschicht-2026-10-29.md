@@ -19,3 +19,11 @@ Rest steht. Kalenderzustand auf *gebaut* nachgezogen.
 Mittag als nicht haltbar gemeldet, die Entscheidung liegt bei ihm.
 
 Nichts im Chat.
+
+## 00:40 · still
+
+- **00:40** · alle neun · keine Bewegung seit 29.10. 17:59 · neue Commits:
+  **keine** · Maßnahme: **keine**
+
+Kein offener Nachtlauf. Das Freitagsstück ist gebaut, offen ist nur seine
+Entscheidung zur Überlappung. Nichts im Chat.
