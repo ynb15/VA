@@ -421,3 +421,11 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 - **Jede Mail braucht einen CTA mit konkretem Fenster**, auf den man mit einem
   Tag antworten kann: *„What works for you in the week of the 9th–13th?"*
   → betrifft: alle, die Entwürfe für ihn schreiben
+- **Nur Bindestriche: `-`, nie `–` oder `—`.** Von ihm am 29.10. zum zweiten
+  Mal gesagt, sichtbar genervt. Gilt für jeden Text, den wir für ihn
+  schreiben.
+  → betrifft: alle Agenten
+- **Wenn er einen Text zur Prüfung schickt, will er die Fehlerliste, keine
+  neue Fassung.** *„Ich weiß nicht, warum du manche Sachen einfach so
+  anpasst."* Ungefragtes Umformulieren nimmt ihm seine Stimme aus dem Text.
+  → betrifft: alle Agenten

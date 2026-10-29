@@ -8974,3 +8974,25 @@ Bescheid, wenn es passt", sondern: *„What works for you in the week of the
 
 **WORTWIEDERHOLUNG IST EIN FEHLER.** „Coffee" stand dreimal in einer
 Vier-Zeilen-Mail. **Sein Wort dafür ist „Black Gold".**
+
+───────────────────────────────────────────────────────────────────
+ZWEI REGELN, DIE ER ZWEIMAL SAGEN MUSSTE (29.10.2026)
+───────────────────────────────────────────────────────────────────
+
+**1. NUR BINDESTRICHE. `-`, niemals `–` oder `—`.**
+> *„Und nochmal, ich mache nur Bindestriche. Warum kannst du dir das nicht
+> merken?"*
+
+Gilt in **jedem** Text, den wir für ihn schreiben: Mail, DM, iMessage,
+Betreff. Keine Halbgeviertstriche, keine Geviertstriche.
+
+**2. NUR ÄNDERN, WAS ER GEFRAGT HAT.**
+> *„Ich weiß nicht, warum du manche Sachen einfach so anpasst."*
+
+Wenn er einen Text zur Prüfung schickt, ist die Antwort **eine Liste der
+Fehler**, nicht eine neu geschriebene Fassung. Umformulierungen, die er nicht
+erbeten hat, kosten ihn Zeit und nehmen ihm seine Stimme aus dem Text.
+
+**Dazu, aus demselben Vorgang:** er streicht gern den klugen Nebensatz und
+setzt dafür direkte Emotion. Aus *„I'll save them for when we're sitting
+down"* wurde **„I'm stoked"** und **„if you're keen"**.
