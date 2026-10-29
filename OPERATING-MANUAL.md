@@ -9076,3 +9076,23 @@ Veröffentlichungen. Er hat drei fertige Dateien gezählt, die tatsächlich
 fertig sind — nur gehören sie zu einer Folge, die im Januar läuft.
 **Ein fertiges Stück ist nur Vorrat, wenn der Slot, in dem es steht, echt
 ist.**
+
+## Seine Ansage vom 29.10.2026: kurz. Keine Romane.
+
+**Seine Worte:** *„Es ist mir viel zu viel Blabla. Du schreibst mir einfach
+einen Roman. Ich kann nicht den halben Tag damit verbringen, deine Romane zu
+lesen."* Und: *„da müssen wir noch einiges optimieren … vor allem an deiner
+Arbeit."*
+
+**Gilt ab sofort, für jede Nachricht an ihn:**
+* **Morgenbericht und Sweep: höchstens drei Zeilen.** Keine Abschnitte, keine
+  Zwischentitel, keine Begründungen.
+* **Nur was er anfassen muss.** Entscheidungen und Blockaden. Kein Stand, keine
+  Fortschritte, keine Erklärung, warum etwas so ist.
+* **Keine Selbstkorrekturen im Chat.** Fehler und Lehren gehören ins Log und in
+  den Kanal, nicht in seine Zeit.
+* **Ein Satz pro Punkt. Maximal drei Punkte.** Mehr steht auf dem Board.
+* **Dasselbe für Aufträge an Agenten** — er hat denselben Satz einem anderen
+  Agenten schon gesagt, also ist es nicht nur mein Kanal, der zu lang ist.
+
+**Das Board trägt die Begründung, der Chat trägt die Entscheidung.**

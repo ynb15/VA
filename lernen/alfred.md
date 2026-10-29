@@ -28,3 +28,14 @@ er zugesagt hat.
    Stücke verfallen nicht; auf einen falschen Termin gebaute Arbeit ist aber
    Arbeit, die anderswo gefehlt hat.
 → betrifft: alle
+
+## 29.10. — kurz. Keine Romane.
+
+**Seine Worte:** *„Es ist mir viel zu viel Blabla. Du schreibst mir einfach
+einen Roman."* Er hat es **einem anderen Agenten schon gesagt** — es betrifft
+also nicht nur mich.
+
+**Ein Satz pro Punkt, maximal drei Punkte, nur was er anfassen muss.** Keine
+Begründungen, keine Fortschrittsmeldungen, keine Selbstkorrekturen an ihn.
+Begründung gehört ins Repo, Entscheidung in den Chat.
+→ betrifft: alle

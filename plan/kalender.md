@@ -171,3 +171,12 @@ Veröffentlichungsdatum, das **ich** gesetzt habe, sieht in der Tabelle genauso
 aus wie eines, das **er** gesetzt hat. Shorts I hat fünf Shorts unter einem
 Termin gebaut, den niemand zugesagt hatte. **Ab jetzt steht in der Quellspalte,
 woher das Datum kommt**, wenn es nicht von ihm ist.
+
+## Ep_58 ist freigegeben — aber hinten in der Reihe (29.10.)
+
+**Seine Worte:** *„den Gastauftritt, das, was Drew mir freigegeben hat, habe ich
+kopiert und in mein eigenen Gastauftritt-Ordner im Drive gelegt. Das können wir
+verwenden. Wenn wir mit den anderen Shorts fertig sind."*
+
+**Rechtefrage ist damit beantwortet: verwendbar.** Reihenfolge: **erst die
+laufenden Shorts fertig**, dann Ep_58. Liegt bei content-gastauftritte.
