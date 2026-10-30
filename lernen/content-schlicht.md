@@ -748,3 +748,32 @@ nicht aus dem Ordner.
 **Regel: eine Abwesenheit wird über einen zweiten Weg bestätigt, bevor sie
 gemeldet wird.** Ein Treffer belegt sich selbst, ein Nicht-Treffer nie.
 → betrifft: alle Agenten, die Ordner überwachen
+
+**30.10. — Die Luft über dem Kopf war genau so groß wie der Messfehler
+darunter.** Bei der Kingsbury-Folge sitzen beide **nebeneinander im selben
+Bild**; der 9:16-Ausschnitt folgt dann der Bewegung. Ergebnis im
+Kontaktabzug: sobald Yannick spricht, ist sein Kopf oben angeschnitten.
+Gemessen: der Ausschnitt lässt `0,10 × 1600 px = 160 px` Luft über der
+erkannten Kopfoberkante — und die erkannte Kante lag **159 px zu tief**
+(576 statt 417 bei 2160 Höhe). Die Bewegungsmessung findet nicht den Kopf,
+sondern die stärkste Bewegung, und bei einem ruhig sitzenden Sprecher ist das
+der Mund, nicht die Stirn.
+`LUFT_OBEN` steht jetzt auf 0,22 — hergeleitet aus diesem gemessenen Fehler,
+nicht geraten.
+**Regel: ein Sicherheitsabstand, der genauso groß ist wie der typische Fehler
+der Messung, ist kein Sicherheitsabstand.** Er muss den Fehler überschreiten,
+und wie groß der ist, weiß man erst, wenn man ihn einmal an echtem Material
+nachmisst.
+Dass es bei Logan nie auffiel, liegt an der Quelle: dort sitzen die beiden
+nicht im selben Bild, und die Exportfassung war schon auf den Sprechenden
+geschnitten.
+→ betrifft: content-*, alle Content-Agenten
+
+**Und der Weg dorthin ist die eigentliche Lehre.** Die acht Shorts hatten alle
+die messbare Abnahme bestanden — Format, Ton, Outro, Untertitel, Ortscheck,
+Laufzeit auf die Zehntelsekunde. Gefunden habe ich den Fehler erst, als ich
+**von jedem Short vier Standbilder nebeneinandergelegt** und sie angesehen
+habe. Keine der automatischen Prüfungen kann einen angeschnittenen Kopf sehen.
+**Regel: vor der Übergabe ein Kontaktabzug über alle Stücke, und zwar
+angesehen.** Das kostet eine Minute und hat hier acht Dateien gerettet.
+→ betrifft: content-*, alle Content-Agenten

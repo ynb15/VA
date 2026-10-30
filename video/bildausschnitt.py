@@ -53,6 +53,15 @@ LIPPE_BAND = (0.56, 0.66)   # enges Band: an vier geprueften Nahaufnahmen
                             # zu tief gelesene Kopfoberkante schob die Zeile
                             # sonst an den Hals (Short 2: 0,72).
 STAPEL_H = 0.70             # Hoehe eines Stapelausschnitts, Anteil der Quelle
+# Luft ueber dem Kopf, Anteil der Ausschnitthoehe. Stand bis zum 30.10. auf
+# 0,10 — und genau das war die Luft, die die Messung verbraucht hat: an der
+# Kingsbury-Folge gemessen lag die erkannte Kopfoberkante **159 px zu tief**
+# (576 statt 417 bei 2160 Hoehe), also fast genau ein Zehntel der
+# Ausschnitthoehe. Der Ausschnitt setzte dadurch auf dem Scheitel auf und
+# schnitt den Kopf ab. Die Bewegungsmessung findet nicht den Kopf, sondern
+# den Bereich, der sich am staerksten bewegt — bei einem ruhig sitzenden
+# Sprecher ist das der Mund, nicht die Stirn.
+LUFT_OBEN = 0.22
 STAPEL_LIPPE = 0.70         # feste Zeilenhoehe im Stapel, Anteil der Haelfte
 ZEILE_FEST = 0.65           # Zeilenhoehe bei grossem Kopf, Anteil der Hoehe
 ZEILE_WEIT = 0.42           # Zeilenhoehe, wenn die Person klein im Bild steht
@@ -224,7 +233,7 @@ def _kasten(mitte_x, qb, qh, seitenverhaeltnis, zoom=1.0, kopf_oben=None):
     `zoom` > 1 zieht enger heran. Seine veroeffentlichten Shorts sind deutlich
     naeher dran als ein voller 1080er Ausschnitt: der Kopf fuellt dort rund
     zwei Drittel der Bildhoehe. `kopf_oben` (Anteil der Quellhoehe) setzt den
-    Ausschnitt so, dass ueber dem Kopf ein Zehntel Luft bleibt.
+    Ausschnitt so, dass ueber dem Kopf `LUFT_OBEN` Luft bleibt.
     """
     bh = int(round(qh / max(zoom, 1.0)))
     bb = int(round(bh * seitenverhaeltnis))
@@ -236,7 +245,7 @@ def _kasten(mitte_x, qb, qh, seitenverhaeltnis, zoom=1.0, kopf_oben=None):
     if kopf_oben is None:
         y = max(0, (qh - bh) // 3)      # Koepfe sitzen im oberen Drittel
     else:
-        y = int(round(kopf_oben * qh - 0.10 * bh))
+        y = int(round(kopf_oben * qh - LUFT_OBEN * bh))
     y = max(0, min(y, qh - bh))
     return x, y, bb, bh
 
