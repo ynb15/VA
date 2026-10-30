@@ -43,6 +43,18 @@ def bestaetigte_url(file_id):
     return m.group(1).replace("&amp;", "&") + "?" + urllib.parse.urlencode(felder)
 
 
+class AbrufGekuerzt(IOError):
+    """Drive hat zu wenige Bytes geliefert — Tageslimit oder gekuerzter Abruf.
+
+    Eigene Klasse, weil `except IOError` NICHT reicht: requests.RequestException
+    erbt selbst von IOError. Am 30.10.2026 fing das `except IOError: raise`
+    darum auch einen ChunkedEncodingError ab (Relay-Neustart, Code 1012) und
+    riss den Lauf nach 218 MB ab, statt den Block zu wiederholen.
+    Ein Verbindungsabbruch ist wiederholbar, ein erschoepftes Tageslimit nicht
+    — die beiden muessen unterscheidbar bleiben.
+    """
+
+
 class DriveDatei:
     """read/seek/tell auf einer entfernten Datei, blockweise zwischengespeichert."""
 
@@ -83,19 +95,19 @@ class DriveDatei:
                     break
                 kopf = r.content[:200].decode("utf-8", "replace")
                 if versuch == 3:
-                    raise IOError(
+                    raise AbrufGekuerzt(
                         f"Block {nr}: {len(r.content)} statt {erwartet} Bytes "
                         f"(HTTP {r.status_code}). Tageslimit des Eigentuemers "
                         f"erschoepft oder Abruf gekuerzt. Anfang: {kopf!r}")
                 time.sleep(2 ** versuch)
-            except IOError:
+            except AbrufGekuerzt:
                 raise
             except Exception:
                 if versuch == 3:
                     raise
                 time.sleep(2 ** versuch)
         if daten is None:
-            raise IOError(f"Block {nr}: nach vier Versuchen keine vollen Daten")
+            raise AbrufGekuerzt(f"Block {nr}: nach vier Versuchen keine vollen Daten")
         self.anfragen += 1
         self.gelesen += len(daten)
         self.blocks[nr] = daten

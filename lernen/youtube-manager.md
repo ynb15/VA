@@ -540,3 +540,36 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   **Die Lehre: „was geht beim Neuhochladen verloren" ist keine Rechtsfrage,
   sondern eine Messung — und sie fällt hier auf null.**
   → betrifft: ai-chief-of-staff, shorts
+
+### Nachtrag 30.10. — zwei Fehler, die beide „ich habe nicht nachgeprueft" heissen
+
+- **Mein Kingsbury-Transkript deckte 61 Prozent der Folge.** Ich habe eine
+  17-GB-Rohdatei transkribiert, 77:12 herausbekommen und das als *die Folge*
+  behandelt. **Die Schnittfassung ist mindestens 126 Minuten lang** — der
+  Vlog-Assistent arbeitet mit einer Zeitmarke bei 7476 s, und Kyles Kamera
+  `C0105.MP4` steht mit 133 min in der Materialanalyse des
+  Thumbnail-Assistenten. **Diese Zeile stand direkt neben meiner 77-Minuten-
+  Zeile, und ich habe sie gelesen, ohne sie zu verbinden.**
+  Darauf gebaut: 15 Titel, 15 Thumbnail-Zeilen, Tags und der Beschreibungstext,
+  und darueber stand das Wort „gemessen".
+  **Die Regel: eine Laufzeit ist erst gemessen, wenn sie gegen eine zweite
+  Quelle steht.** Eine Kamera, die frueher stoppt, sieht aus wie eine
+  vollstaendige Aufnahme. Bei mehreren Kameras ist die laengste Datei die
+  Untergrenze der Folge, nicht die, die man zufaellig zuerst zieht.
+  → betrifft: alle Content-Agenten, head-of-content
+
+- **`except IOError: raise` hat jeden Netzwerkabbruch zum Totalausfall
+  gemacht.** Die Zeile sollte verhindern, dass meine eigene Tageslimit-Pruefung
+  in der Wiederholschleife verschwindet. **Aber `requests.RequestException`
+  erbt von `IOError`** — also fing sie auch den ChunkedEncodingError ab, den
+  ein Relay-Neustart (Code 1012, `server_draining`) ausloest, und riss den Lauf
+  nach 218 von 1290 MB ab.
+  Behoben mit einer eigenen Klasse `AbrufGekuerzt`.
+  **Die allgemeine Lehre: wer eine Ausnahme zum Durchreichen markiert, muss
+  sie an ihrer Klasse erkennen, nicht an ihrer Oberklasse.** Eine Oberklasse,
+  die eine fremde Bibliothek mitbenutzt, ist kein Erkennungsmerkmal.
+  **Und: wiederholbar oder nicht ist die einzige Unterscheidung, die hier
+  zaehlt.** 403/407 sind Richtlinien und werden gemeldet; ein abgerissener
+  Tunnel wird wiederholt. Der Proxy sagt unter
+  `$HTTPS_PROXY/__agentproxy/status` selbst, welcher Fall vorliegt.
+  → betrifft: alle Content-Agenten, shorts, content-assistant
