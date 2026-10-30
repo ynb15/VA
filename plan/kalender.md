@@ -74,7 +74,7 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Mi 28.10. | Short | Sutcliffe 01 · „Therapeut" | gebaut, nicht abgenommen |
 | Do 29.10. | Short | Sutcliffe 04 · „Vulnerability is not weakness" | gebaut, nicht abgenommen |
 | Fr 30.10. | Short | **Craig Makhosi · Ubuntu** (Cinematic, 2. Stelle) | **gebaut** 29.10. 17:59, Untertitel korrigiert — die 1,8 s Überlappung ist noch seine Entscheidung |
-| Sa 31.10. | **PODCAST** | Kyle Kingsbury | **angehalten bis Mo 26.10.** |
+| Sa 31.10. | **PODCAST** | Kyle Kingsbury | **Endfassung ist da** (30.10., 39,25 GB, 129:50) — Shorts I schneidet seit 21:52; 55 Min der Folge ohne Transkript |
 
 ### November 2026
 
