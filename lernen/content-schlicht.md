@@ -738,3 +738,13 @@ ich hatte ja schon eine Zahl und habe sie nicht angesehen.
 die Prüfung selbst machen. Eine Ausgabe, die niemand liest, ist keine
 Prüfung.**
 → betrifft: content-*, alle Content-Agenten
+
+**30.10. — Eine leere Antwort ist kein leerer Ordner.** Die tägliche
+Kingsbury-Prüfung bekam auf `parentId = '1MsT1Cnp…'` plötzlich `{}` zurück —
+gestern lag dort noch die `v1_LOW_RES`. Das hätte als „der Cutter hat die
+Datei gelöscht" gemeldet werden können. Nachgefragt über die Datei-ID: sie
+liegt unverändert dort, Stand 05.10. Die leere Antwort kam von der Suche,
+nicht aus dem Ordner.
+**Regel: eine Abwesenheit wird über einen zweiten Weg bestätigt, bevor sie
+gemeldet wird.** Ein Treffer belegt sich selbst, ein Nicht-Treffer nie.
+→ betrifft: alle Agenten, die Ordner überwachen
