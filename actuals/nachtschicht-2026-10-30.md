@@ -27,3 +27,17 @@ entfernt.
 **Eine Zeile in den Chat**, obwohl es 21:40 ist: der 31.10. ist morgen, und
 wenn er die Folge will, muss heute Nacht geschnitten werden. Warten würde die
 Nacht kosten.
+
+## 00:40 · Shorts I arbeitet
+
+- **00:40** · Shorts I · **WORKING** · Kontext **559k/1000k** · neue Commits:
+  **1** (31.10. 00:36, *Mehr Luft ueber dem Kopf als die Messung danebenliegt*) ·
+  Maßnahme: **keine**
+- **00:40** · die übrigen acht · keine Bewegung · Maßnahme: **keine**
+
+Eigener Stand: *„nine shorts re-rendering with fixed headroom; contact-sheet
+check next."* **Neun Shorts im Rendergang.** Der Auftrag von 21:52 läuft also,
+und der Agent prüft hinterher am Kontaktabzug — genau die Form, die diese Woche
+zweimal Fehler gefunden hat.
+
+Nichts im Chat.
