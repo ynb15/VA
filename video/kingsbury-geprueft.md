@@ -76,3 +76,66 @@ hinten. **Achtung am Ausstieg:** die gesperrte Stelle beginnt 70:45, also
    solle nicht bei mir laufen, sondern im YouTube-Manager. Dieses Papier
    benutzt mein **vorhandenes** Transkript vom 22.10. und erzeugt kein neues.
    Wenn ein Transkript der Endfassung gebraucht wird, gehört es dorthin.
+
+---
+
+## 30.10. — Endfassung da, Zeiten gemessen
+
+**`2026_10_YNB_Podcast_Kyle_Kingsbury.mp4`**, 39,25 GB, 3840×2160, 29,97 fps,
+Ton 48 kHz. **Laufzeit 129:50.**
+
+### Zwei Befunde, bevor irgendetwas gebaut wird
+
+**1. Die Folge ist 130 Minuten lang, mein Rohton nur 77:12.** Ein Schnitt macht
+eine Folge nicht länger — es fehlt also Aufnahmematerial, nicht Schnitt. Bei
+100:00 der Endfassung läuft ein Carl-Jung-Zitat und eine Passage über Ketamin,
+bei 128:20 geht es um Onnit und Supplements; **keines dieser Wörter steht im
+Transkript.** Gesucht: in Drive existiert **keine zweite Aufnahmedatei** — weder
+im Folgenordner noch unter den Videodateien vom 31.08. bis 02.09. Es gibt nur
+die 17-GB-MOV (77:12) und einen BTS-Clip.
+**Mein Transkript deckt die Endfassung bis etwa 74:40 ab. Die restlichen rund
+55 Minuten sind unbekannt.**
+
+**2. Der Versatz ist nicht konstant, und er springt an einer Stelle.**
+An zehn Stellen über den Text bestimmt, nicht gerechnet:
+
+| Kandidat | Rohzeit | **in der Endfassung** | Versatz |
+|---|---|---|---|
+| Was macht einen Mann | 02:54 | **00:38** | 136 s |
+| Samurai im rosa Gewand | 04:29 | **02:12** | 137 s |
+| Disziplin ist Freiheit | 06:32 | **04:17** | 135 s |
+| Erster Flow / Straßenkampf | 10:15 | **08:00** | 135 s |
+| „Not yet" | 15:53 | **13:20** | **153 s** |
+| Das Erbe ist Deine Zeit | 36:59 | **34:23** | 156 s |
+| Gary Vee, Hormozi, Tate | 41:48 | **39:10** | 158 s |
+| Bewusstlos mit offenen Augen | 55:19 | **~52:45** | ~155 s |
+| Glück nicht an der Ziellinie | 61:03 | **58:28** | 155 s |
+| Kein Mut ohne Angst | 74:15 | **71:42** | 153 s |
+
+Der Versatz liegt bis Minute 10 bei **135 s** und ab Minute 13 bei **153–158 s**.
+Dazwischen hat der Cutter rund **18 Sekunden entfernt**. Wer den Versatz einmal
+am Anfang misst und auf die ganze Folge anwendet, liegt hinten um eine
+Viertelminute daneben — genau der Fehler, vor dem die Regel warnt.
+
+**Eine eigene Korrektur dazu:** meine erste Schätzung aus fünf groben
+Stichproben lautete „132 bis 150 s, wächst langsam". Das war falsch in der
+Form: es wächst nicht langsam, es springt einmal. Die groben Proben haben die
+Größenordnung getroffen und die Gestalt verfehlt. Erst die Ortung am Wortlaut
+hat es gezeigt.
+
+### Die gesperrte Stelle in der Endfassung
+
+Im Rohton 70:45–73:30. Mit dem Versatz von rund 153 s liegt sie etwa bei
+**68:10–70:55** der Endfassung — **das ist eine Rechnung, keine Messung.**
+Bevor dort irgendetwas geschnitten wird, wird die Grenze am Wortlaut geprüft,
+so wie die zehn Kandidaten oben.
+
+### Was fehlt
+
+Für die unbekannten 55 Minuten brauche ich den Ton. Aus der 39-GB-Datei kostet
+das nach der Messung vom 22.10. rund **80 GB gelesene Daten** — das tägliche
+Drive-Limit war schon einmal bei 31 GB erschöpft, der Lauf bräche also ab.
+**Günstig wäre eine Low-Res-Fassung der Endfassung vom Cutter**, so wie die
+`v1_LOW_RES` mit 1,29 GB. Damit wäre die ganze Folge in anderthalb Stunden
+transkribiert, und es bräuchte überhaupt keinen Versatz mehr: alle Zeiten
+wären direkt Schnittzeiten.
