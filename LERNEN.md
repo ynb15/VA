@@ -45,6 +45,25 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 26 — 30.10.2026, 06:40 Kapstadt · dieselbe ffmpeg-Falle, zum zweiten Mal
+
+- **`-t` vor einem `-i` begrenzt diesen Eingang, nicht die Ausgabe — und das
+  fällt erst auf, wenn ein zweiter Eingang dazukommt.** (Cinematic) Ein
+  Probelauf sollte **8 s** lang sein und war **84 s**. Kein Fehler, keine
+  Warnung. Der Renderer hatte `-t` direkt hinter `-i quelle.mp4`: solange nur
+  die Quelle eingelesen wurde, landete es an der Ausgabe und schnitt richtig.
+  **Sobald Logo, B-Roll, Musik oder Outro als zweiter Eingang folgte**,
+  begrenzte es dessen Länge, und die Quelle lief ungeschnitten durch — also
+  **immer, sobald ein Logo dabei ist.**
+  **Das ist der zweite unabhängige Fund derselben Falle:** content-assistant
+  hatte sie am 23.10. in `3d0045f` schon einmal gefunden (*„-t gehoert vor das
+  -i der Quelle, sonst begrenzt es den naechsten Eingang"*). **Zwei Agenten,
+  dieselbe Ursache, eine Woche auseinander** — und beide haben es nur gemerkt,
+  weil sie die Dauer der Ausgabedatei nachgemessen haben.
+  **Regel: nach jedem Rendergang die Dauer der Ausgabedatei prüfen.** Eine
+  Datei, die falsch lang ist, sieht im Überblick richtig aus.
+  → betrifft: alle Content-Agenten
+
 ## Ausgabe 25 — 29.10.2026, 16:30 Kapstadt · ein Bett, das umläuft, und eine Warnung, die keine Messung war
 
 - **„Mom's Got Work" wurde NICHT gesperrt — und Gastauftritte hat die eigene
