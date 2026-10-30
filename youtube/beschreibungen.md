@@ -25,6 +25,24 @@
 > actually paid him to answer…"* — Laufzeit, drei bis vier konkrete Dinge,
 > Auslassungspunkte.
 >
+> **5. SEO ist kein Extra, es war seine erste Anforderung.**
+> Ab dem 30.10. hatte ich es stillschweigend fallen lassen: Prosa ohne einen
+> gesetzten Suchbegriff, kein Keyword in Zeile eins, keine Hashtags, kein
+> Tag-Feld. Was dazugehoert, jedes Mal:
+> - **Das Suchwort in die erste Zeile**, moeglichst ins erste Drittel. Die
+>   ersten ein bis zwei Zeilen stehen im Suchergebnis und wiegen am meisten.
+> - **Den vollen Gastnamen in Zeile eins oder zwei** — nach ihm wird gesucht.
+> - **Die Begriffe, die Leute wirklich tippen**, im Flieestext unterbringen:
+>   `ketamine addiction`, `ayahuasca`, `UFC fighter`, nicht umschreiben.
+> - **Verwandte Namen**, nach denen gesucht wird (Joe Rogan, Aubrey Marcus,
+>   Onnit, Jamie Wheal) — wenn sie im Clip wirklich vorkommen.
+> - **Drei Hashtags am Ende**, mehr zaehlt YouTube nicht.
+> - **Das Tag-Feld in seinem Format**: CamelCase-Einzelwoerter, keine
+>   Mehrwortphrasen (siehe seine eigenen Tags unter `YO_sGYH1dm8`).
+>
+> **SEO und Dramaturgie sind kein Widerspruch.** Das Suchwort gehoert in den
+> Satz, der aufmacht — nicht in einen Anhang darunter.
+>
 > **Laenge: seine eigenen liegen bei 145 bis 190 Woertern.** Das ist der
 > Korridor, keine Obergrenze. Kuerzer war genauso falsch wie laenger.
 >
