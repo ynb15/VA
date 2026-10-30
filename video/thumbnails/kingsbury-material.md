@@ -122,3 +122,45 @@ Einen Freisteller, der aus einem fertigen Thumbnail kommt, darf man **nicht
 Anker greift ins Leere und der Kopf wird viel zu gross. Für solche Quellen
 über den **Pupillenabstand** rechnen:
 `box_h = 143 × gemessene_box_h / gemessener_pupillenabstand`.
+
+---
+
+## Nachtrag 30.10.: die 39-GB-Datei des Cutters vermessen
+
+Er hat die Folge noch einmal in besserer Qualitaet bekommen
+(`1RsATaaBMJO...`, 3840×2160, 129,8 min, 39,25 GB). Das ist **nicht** eine
+hoeher aufgeloeste Kameradatei, sondern der fertige Schnitt. Gemessen an
+455 Stichproben aus 29 Fenstern ueber die ganze Laenge:
+
+| Was im Schnitt vorkommt | Pupillenabstand |
+|---|---:|
+| Kyle, Nahaufnahme (eigene Kamera) | **150–183 px** |
+| Totale mit beiden, Kyle | 40–76 px |
+| Totale mit beiden, Yannick | 35–62 px |
+| Halbnahe auf Yannick (einmal in 455 Bildern) | 85 px |
+
+**Fuer Kyle ist das der grosse Gewinn.** Vorher kam er aus der DJI-Datei mit
+77 px und musste verdoppelt werden; jetzt liegt er nativ bei 165 px und wird
+**herunter**gerechnet. Kein Hochrechnen mehr.
+
+**Fuer Yannick aendert es nichts.** Im Schnitt gibt es keine Nahaufnahme von
+ihm — der Cutter hatte keine. Seine eigene Kamera bleibt die beste Quelle.
+
+### Seine eigene Kamera, diesmal dicht abgetastet
+
+195 Stichproben aus 12 Fenstern (vorher 12 Bilder): Pupillenabstand
+**65–96 px, Median 75**. Das vorher benutzte Bild lag bei 81 px, das
+jetzige bei 91 px — ein Achtel groesser, also 1,5× statt 1,9× Hochrechnung.
+Mehr gibt die Kamera nicht her: sie steht fest, er lehnt sich kaum vor.
+
+Dieselbe Lehre wie bei der DJI-Datei: **zwoelf Stichproben sind zu wenig.**
+
+### Was gebaut ist (30.10.)
+
+| | Quelle | Pupillenabstand roh → Bild |
+|---|---|---|
+| **Yannick** | eigene Kamera, 1510,97 s | 91 → 123 (1,4× hoch) |
+| **Kyle** | Schnittdatei, 6379,04 s | 165 → 125 (0,8× runter) |
+
+Hintergrund neu aus einem menschenfreien 4K-Einzelbild derselben Totalen
+(`_hintergrund-kingsbury-regal-4k.jpg`), 1:1 geschnitten statt hochgerechnet.
