@@ -445,7 +445,7 @@ def unten_abdunkeln(bild, staerke=0.45, hoehe=220):
     return bild
 
 
-def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
+def bauen(hg, links, rechts, zeilen=None, kasten=0, ziel=None, text_mitte=640,
           text_mitte_y=None, max_breite=None, max_hoehe=None, grad=None,
           hg_dunkel=0.08, hg_weich=6.0, ziel_links=None, ziel_rechts=None,
           mitte=None, mitte_kippung=4.0, mitte_rand=14, mitte_breite=None,
@@ -529,8 +529,13 @@ def bauen(hg, links, rechts, zeilen, kasten, ziel, text_mitte=640,
 
     unten_abdunkeln(bild, unten_dunkel, unten_hoehe)
 
-    _, grad = satz(bild, zeilen, kasten, text_mitte, text_mitte_y,
-                   max_breite, max_hoehe, grad, zeilenhoehe)
+    if zeilen:
+        _, grad = satz(bild, zeilen, kasten, text_mitte, text_mitte_y,
+                       max_breite, max_hoehe, grad, zeilenhoehe)
+    else:
+        # Ohne Copy: nur Hintergrund, Mittelmotiv und Koepfe. Fuer Fassungen,
+        # bei denen die Zeile spaeter in Canva gesetzt wird.
+        grad = 0
 
     if pfeil_von and pfeil_nach:
         pfeil(bild, tuple(pfeil_von), tuple(pfeil_nach), pfeil_bogen,

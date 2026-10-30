@@ -1,0 +1,23 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund-kingsbury-regal.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_kb4222_neu.png",
+  "rechts": "video/thumbnails/_freisteller/k_0042.png",
+  "ziel_links": {
+   "augen_x": 182,
+   "kinn_y": 596,
+   "box_h": 547,
+   "helligkeit": 0.9,
+   "kontrast": 1.04
+  },
+  "ziel_rechts": {
+   "augen_x": 1112,
+   "kinn_y": 564,
+   "box_h": 428,
+   "helligkeit": 0.97,
+   "kontrast": 1.1
+  },
+  "ziel": "video/thumbnails/kingsbury-ohne-copy.jpg"
+ }
+]
