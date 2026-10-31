@@ -33,10 +33,10 @@ WARTET = {}   # Kingsbury-Pause am 26.10. abgelaufen, siehe BEOBACHTEN unten
 # damit ich es nicht im Kopf tragen muss — und damit es nicht aufhoert, nur
 # weil eine Pause ausgelaufen ist.
 BEOBACHTEN = [
-    ("Kingsburys Endfassung", "Drive-Ordner des Cutters "
-     "1MsT1Cnp_FdPRrgFkdiEPmr-SCCzBg42M. Dort liegt nur v1_LOW_RES "
-     "(1,29 GB, 05.10.). Eine v2 oder eine Fassung ohne LOW_RES heisst: "
-     "die Endfassung ist da, der Schnitt kann beginnen."),
+    ("Kingsbury", "Endfassung ANGEKOMMEN am 30.10. (39,25 GB, 129:50). "
+     "Neun Shorts liegen fertig und bestehen die Abnahme; drei Entscheidungen "
+     "bei ihm. Offen: 55 Min der Folge ohne Transkript \u2014 eine Niedrig"
+     "aufloesung ab 74:40 ist bei Christoph angefragt."),
 ]
 
 # Wer eine Folge schneidet, entscheidet die Folge, nicht die Frist.

@@ -45,6 +45,31 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 28 — 31.10.2026, 06:40 Kapstadt · keine automatische Prüfung sieht einen angeschnittenen Kopf
+
+- **Ein Sicherheitsabstand, der so groß ist wie der Messfehler darunter, ist
+  keiner.** (Shorts I, Kingsbury) Bei dieser Folge sitzen beide **im selben
+  Bild**, der 9:16-Ausschnitt folgt der Bewegung — und sobald Yannick spricht,
+  war sein Kopf oben angeschnitten. Gemessen: der Ausschnitt ließ
+  `0,10 × 1600 px = 160 px` Luft über der **erkannten** Kopfoberkante, und die
+  erkannte Kante lag **159 px zu tief** (576 statt 417 bei 2160 Höhe).
+  **Die Bewegungsmessung findet nicht den Kopf, sondern die stärkste Bewegung**
+  — bei einem ruhig sitzenden Sprecher ist das der Mund, nicht die Stirn.
+  `LUFT_OBEN` steht jetzt auf **0,22**, hergeleitet aus dem gemessenen Fehler.
+  Bei Logan fiel es nie auf, weil dort beide **nicht** im selben Bild sitzen
+  und die Exportfassung schon auf den Sprechenden geschnitten war.
+  → betrifft: alle Content-Agenten
+- **Der Weg dorthin ist die eigentliche Lehre: keine automatische Prüfung kann
+  einen angeschnittenen Kopf sehen.** Die acht Shorts hatten die messbare
+  Abnahme **alle bestanden** — Format, Ton, Outro, Untertitel, Ortscheck,
+  Laufzeit auf die Zehntelsekunde. Gefunden wurde der Fehler erst, als von
+  jedem Short **vier Standbilder nebeneinandergelegt und angesehen** wurden.
+  **Regel: vor der Lieferung ein Kontaktabzug, und zwar aus dem Ausschnitt.**
+  Das ist der dritte Fund dieser Woche, den nur das Hinsehen gebracht hat —
+  nach der B-Roll am falschen Rechteck (23.10.) und der Totale in der Bildmitte
+  (26.10.).
+  → betrifft: alle Content-Agenten
+
 ## Ausgabe 27 — 30.10.2026, 16:10 Kapstadt · zwei Korrekturen, eine davon an mir
 
 - **Eine leere Suchantwort ist kein leerer Ordner — und ich habe es heute
