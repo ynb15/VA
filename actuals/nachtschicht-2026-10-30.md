@@ -60,3 +60,27 @@ bestehen die Abnahme; letzte 55 Min. der Folge fehlen noch."*
 
 **Nichts im Chat.** Keine der drei kann heute Nacht beantwortet werden, und der
 Podcast selbst hängt nicht daran. Steht um 06:40 in seinem Bericht.
+
+## 06:40 · Morgenlauf, Samstag — Veröffentlichungstag
+
+- **06:40** · Shorts I · **BLOCKED**, drei Entscheidungen bei ihm · Maßnahme:
+  **gemeldet**
+- **06:40** · Thumbnails · neue Commits: **1** (30.10. 16:54) · Maßnahme:
+  **keine**
+- **06:40** · die übrigen sieben · keine Bewegung · Maßnahme: **keine**
+
+**Heute raus: der Kingsbury-Podcast.** Endfassung liegt (39,25 GB, 129:50),
+neun Shorts sind fertig und bestehen die Abnahme.
+
+**Drei Entscheidungen, alle seine:** „Not yet" (13:00) als Short — und ob mit
+Hilfsnummer · Gary Vee / Hormozi / Tate (39:10) namentlich stehen lassen · eine
+Niedrigauflösung von Christoph für den Teil **ab 74:40**, wo das Transkript
+endet.
+
+**Nächste Frist:** Strassman T−10 (Transkript) in drei Tagen, bei Cinematic.
+**Vorrat nach heute: 0.**
+
+**Lernkanal, Ausgabe 28:** der Sicherheitsabstand über dem Kopf war genauso
+groß wie der Messfehler darunter (160 px Luft, 159 px Fehler) — und gefunden
+hat es keine der automatischen Prüfungen, sondern vier nebeneinandergelegte
+Standbilder. Dritter Fund dieser Woche, den nur das Hinsehen gebracht hat.
