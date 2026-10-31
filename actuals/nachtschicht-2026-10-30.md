@@ -41,3 +41,22 @@ und der Agent prüft hinterher am Kontaktabzug — genau die Form, die diese Woc
 zweimal Fehler gefunden hat.
 
 Nichts im Chat.
+
+## 03:40 · neun Shorts fertig, drei Entscheidungen offen
+
+- **03:40** · Shorts I · **BLOCKED / need_input** · Kontext **567k/1000k** ·
+  neue Commits: keine seit 00:36 · Maßnahme: **keine, gemeldet für 06:40**
+- **03:40** · die übrigen acht · keine Bewegung · Maßnahme: **keine**
+
+Eigener Stand: *„Neun Kingsbury-Shorts mit Streichlisten liegen bereit und
+bestehen die Abnahme; letzte 55 Min. der Folge fehlen noch."*
+
+**Drei Entscheidungen, alle seine:**
+1. **„Not yet" (13:00) als Short ja/nein** — und falls ja, ob eine Hilfsnummer
+   eingeblendet wird.
+2. **Gary Vee / Hormozi / Tate (39:10): die Namen stehen lassen?**
+3. **Eine Niedrigauflösung von Christoph für den Teil ab 74:40** — das ist die
+   Lücke, an der das Transkript endet.
+
+**Nichts im Chat.** Keine der drei kann heute Nacht beantwortet werden, und der
+Podcast selbst hängt nicht daran. Steht um 06:40 in seinem Bericht.
