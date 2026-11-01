@@ -80,7 +80,7 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 
 | Tag | Art | Quelle | Zustand |
 |---|---|---|---|
-| So 01.11. | Clip | 10–20 Min | offen |
+| So 01.11. | Clip | **Kingsbury · „Kampf“** (Shorts I, 48:11–58:43) | **bei ihm** — 01.11. 08:33 geliefert, 10:32, Schnitt auf ganzen Sätzen |
 | Mo 02.11. | Short | **Craig Makhosi · Into the Wild** (Cinematic, Fassung E) | gebaut, nicht abgenommen |
 | Di 03.11. | Short | — | **offen** — Logan herausgenommen |
 | Mi 04.11. | Short | — | **offen** — Logan herausgenommen |
