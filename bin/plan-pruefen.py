@@ -76,6 +76,9 @@ ERLEDIGT = {
     # drei Tage lang als UEBERFAELLIG gemeldet, weil es "fertig mit benannter
     # Luecke" nicht kennt: dasselbe Muster wie bei WARTET und beim Vorratszaehler.
     "Kyle Kingsbury": {6},
+    # T-10 am 02.11. erfuellt, einen Tag vor der Frist: Transkript liegt,
+    # 1641 Segmente ueber 120,9 Minuten (claude/content-cinematic).
+    "Rick Strassman": {10},
 }
 
 # Entscheidungspunkte: Tag -> was an diesem Tag entschieden werden muss, und
