@@ -124,16 +124,35 @@ def main():
         stand["sprache"] = sprache
         stand_pfad.write_text(json.dumps(stand, ensure_ascii=False, indent=1),
                               encoding="utf-8")
+        schreiben(out, stand, a)
         print(f"  Stueck {i + 1}/{len(grenzen) - 1} "
               f"({von / 60:.1f}-{bis / 60:.1f} min): "
               f"{len(stueck)} Segmente, gesichert", flush=True)
 
-    segmente = []
+    n, fehlend = schreiben(out, stand, a)
+    print(f"{out} — {n} Segmente, {stand['dauer'] / 60:.1f} min"
+          + (f", ABER {fehlend} Stuecke fehlen noch" if fehlend else ""))
+
+
+def schreiben(out, stand, a):
+    """Transkript aus dem Stand zusammensetzen — auch unfertig.
+
+    Wird nach JEDEM Stueck aufgerufen, nicht erst am Ende. Sonst liegt
+    waehrend der zweieinhalb Stunden Rechenzeit nur das Standfile da, und
+    wer hineinsehen will, muss JSON lesen. Fehlende Stuecke stehen als
+    Luecke drin, damit niemand ein halbes Transkript fuer ein ganzes haelt.
+    """
+    grenzen = stand["grenzen"]
+    segmente, luecken = [], []
     for i in range(len(grenzen) - 1):
-        segmente += stand["stuecke"].get(str(i), [])
+        if str(i) in stand["stuecke"]:
+            segmente += stand["stuecke"][str(i)]
+        else:
+            luecken.append((grenzen[i], grenzen[i + 1]))
     out.with_suffix(".json").write_text(
         json.dumps(segmente, ensure_ascii=False, indent=1), encoding="utf-8")
 
+    dauer = stand["dauer"]
     sprache = stand.get("sprache", a.lang)
     zeilen = [f"# {a.titel or out.stem}", "",
               f"**Dauer** {dauer:.0f} s ({int(dauer // 60)}:{int(dauer % 60):02d}) · "
@@ -141,7 +160,13 @@ def main():
               "Quelle: eigenes Transkript aus dem Rohton, Zeiten in "
               "**Rohzeit**.", "",
               f"In {len(grenzen) - 1} Stuecken gerechnet; die Grenzen liegen "
-              f"auf Sprechpausen.", "",
+              f"auf Sprechpausen.", ""]
+    if luecken:
+        zeilen += [f"**UNFERTIG — {len(luecken)} von {len(grenzen) - 1} "
+                   f"Stuecken fehlen noch:** "
+                   + ", ".join(f"{v / 60:.1f}–{b / 60:.1f} min"
+                               for v, b in luecken), ""]
+    zeilen += [
               "**Ohne Sprecherzuordnung.** Die Aufnahme liegt als eine "
               "Mischung vor, nicht als getrennte Spuren. Wer spricht, steht "
               "hier deshalb nicht; lieber keine Angabe als eine erfundene.",
@@ -152,7 +177,7 @@ def main():
                       f"{s['text']}")
         zeilen.append("")
     out.write_text("\n".join(zeilen), encoding="utf-8")
-    print(f"{out} — {len(segmente)} Segmente, {dauer / 60:.1f} min")
+    return len(segmente), len(luecken)
 
 
 if __name__ == "__main__":
