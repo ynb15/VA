@@ -26,3 +26,23 @@ Nichts im Chat.
   **keine**
 
 Nichts im Chat.
+
+## 06:40 · Morgenlauf, Montag
+
+- **06:40** · alle neun · keine Bewegung über Nacht · Maßnahme: **ein Auftrag
+  an Cinematic**
+
+**Heute raus:** Craig Makhosi · Into the Wild (Cinematic, Fassung E) — *gebaut,
+nicht abgenommen*. Liegt, braucht seinen Blick.
+
+**Strassman T−10 (Transkript) ist morgen** und heute ausgelöst
+(`trig_01KvHGMc2xT6GdMVhuK3FgwD`), damit die Frist nicht am Starttag beginnt.
+Cinematic war frei. Im Auftrag: Ordner `1OKUFDBDyeEqV7iwypV5Q-vyQi7WL9b_C`, die
+Länge gegen eine zweite Quelle prüfen (Kingsbury-Lehre), `medium` für den
+Durchgang, stückweise und wiederaufnehmbar — und **„Ende offen, seine
+Entscheidung"** bleibt unangetastet.
+
+**Vorrat 0.** Die neun Kingsbury-Shorts warten weiter auf seine drei
+Entscheidungen.
+
+**Lernkanal:** nichts Neues.
