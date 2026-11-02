@@ -9096,3 +9096,58 @@ Arbeit."*
   Agenten schon gesagt, also ist es nicht nur mein Kanal, der zu lang ist.
 
 **Das Board trägt die Begründung, der Chat trägt die Entscheidung.**
+
+## VOICE, Nachtrag 02.11.2026 — der Evan-Pitch, und vier Korrekturen an meinen eigenen Regeln
+
+Postausgang 27.10.–02.11.: **acht eigene Mails**, davon **zwei neue Cold
+Pitches** (Vivo als Sponsoring, Evan über Matt Dalley) und ein Pitch, der
+innerhalb von **53 Minuten** eine Vermittlung erzeugt hat.
+
+### Der Fund: an den Vermittler adressiert, an den Gast geschrieben — zum zweiten Mal, und es funktioniert
+
+Der Pitch vom **29.10. 13:48** ging an `mattjdalley@gmail.com`, die Anrede
+lautet **„Cheers Evan"**. Um **14:41**, 53 Minuten später, antwortet Matt:
+*„Hey Yannick, meet Evan! I'll let you take it from here!"* — mit
+`evan@fullmetal.fitness` im Verteiler.
+
+**Das ist derselbe Griff wie beim Boyd-Pitch zwei Tage vorher** (an Rob
+Paddocks Adresse, Anrede „Howdy Boyd"). **Zwei Belege, einer davon mit
+gemessenem Erfolg: das ist eine Form, kein Versehen.** Wer für ihn entwirft,
+darf den Text an den Gast richten und an den Vermittler adressieren — aber nur,
+wenn der Vermittler die Weiterleitung angeboten hat.
+
+### Vier Korrekturen an Regeln, die ich selbst aufgeschrieben hatte
+
+1. **„`Howdy <Vorname>` ist sein stehender Einstieg" — zu eng.** Belegt sind
+   beide: **„Howdy"** (Scott, Brendan, Boyd, Mathew) und **„Cheers"** (Evan
+   29.10., Brendan 09.07., Mathew 13.10.). **Nicht korrigieren, wenn ein
+   Entwurf das eine oder das andere nimmt.**
+2. **Die Betreffform ist dreifach belegt und lautet: Geografie, Doppelpunkt,
+   Sendungsname.** `Germany-South Africa-America: …` (22.10.) ·
+   `Austin, Londolozi, Cape Town: …` (27.10.) · `From Cape Town to Tulum: …`
+   (29.10.). **Die `[Via …]`-Klammer ist die Ausnahme, nicht die Regel** — sie
+   steht, wenn tatsächlich vermittelt wurde (Brendan, Vivo).
+3. **„Rob Paddock ohne IronMan und ohne $100M" — das war empfängerabhängig,
+   keine Regel.** Im Boyd-Pitch steht *„living legend Rob Paddock"*, im
+   Evan-Pitch *„my mentor, IronMan athlete and $100M founder Rob Paddock"*.
+   **Er wählt die Beschreibung nach dem Massstab des Empfängers** — dieselbe
+   Logik wie bei der Gästeliste selbst.
+4. **Die Gästeliste trägt hier einen Beleg mit:** *„Snippet: Forget The
+   Manosphere - This Is Real Men's Work"* als Link mitten im Text, **vor** der
+   Liste. Nicht nur Namen, sondern ein Stück zum Ansehen.
+
+### Was er über sich selbst sagt — wörtlich, für künftige Entwürfe
+
+* *„men's work has been the center of my life for years, with our Capetonian
+  brotherhood **Brothers Rising**, with **Sacred Sons** and
+  **ManKindProject**, and now on mic"*
+* *„I grew up without a dad and without any male role models, so the fatherless
+  boy underneath all of this isn't just theory to me."*
+* *„Tulum is where it all started; some 5 years ago when I quit my soccer
+  scholarship in NYC to build a life on my own terms"*
+* *„I'll be back on that side of the world in **2027** once I'm through rehab."*
+  — deckt sich mit seinem Satz an Ian Gardner (*„I won't be back in the US
+  until 2027"*).
+
+**Keiner dieser Sätze wird erfunden oder umformuliert.** Sie stehen hier, damit
+ein Entwurf sie zitieren kann statt sie zu konstruieren.
