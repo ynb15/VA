@@ -42,3 +42,8 @@ um to go to gabanto -> Umntu ngumntu ngabantu
 gabani a bantu -> ngabantu
 gabanto -> ngabantu
 toltuk -> Toltec
+# Strassman-Folge (18.09., transkribiert 02.11.): sein Name und seine Seite.
+strasman -> Strassman
+strassman -> Strassman
+rick strasman -> Rick Strassman
+sub stack -> Substack

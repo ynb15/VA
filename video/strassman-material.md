@@ -78,3 +78,48 @@ Sprechernamen, wie schon bei Aaronson.
 
 **Ende offen, seine Entscheidung.** Im Plan steht das ausdruecklich — es
 kommt also kein Vorschlag zum Schluss, bevor er danach gefragt hat.
+
+---
+
+## Transkript fertig — 02.11.2026
+
+`video/transkripte/strassman-roh.transkript.md` · 1641 Segmente · 120,9 min ·
+`medium` · in zwoelf Stuecken gerechnet.
+
+**Der Ton war vollstaendig:** 7251,76 s gegen 7251,77 s erwartet. Er kam in
+drei Anlaeufen (0–3490, 3490–5468, 5468–Ende), weil der Container zweimal
+dazwischenfuhr. Beide Nahtstellen im Transkript nachgesehen:
+
+| Naht | davor | danach |
+|---|---|---|
+| 58:10 | „There's some very old animal data …" (58:05) | „They looked at concentrations …" (58:15) |
+| 1:31:08 | „… the distinction between revenge and a grudge" (1:31:10) | „It's a small story …" (1:31:16) |
+
+Kein doppelter Satz, kein abgeschnittener. Das Verwerfen der zu frueh
+liegenden Rahmen in `--ab` arbeitet sauber.
+
+## Was in der Datei steht
+
+| Zeit | |
+|---|---|
+| 00:00 | Vorgespraech: das Kakao-Geschenk, Espresso, die Terminsucherei |
+| **03:42** | **erste vorbereitete Frage: „How did you become the DMT professor in the first place?"** |
+| 2:00:44 | Abmoderation: „Right, ladies and gentlemen, this was Professor Rick Strassman." |
+
+Die Datei traegt also die ganze Sitzung: knapp vier Minuten Anlauf, dann das
+Gespraech, bis zur Abmoderation. Eine gesprochene Eroeffnung („ladies and
+gentlemen") steht nur am Ende, nicht am Anfang.
+
+## Schiedsrichter
+
+`large-v3` lief an genau zwei Stellen, beide am ungedehnten Ton:
+
+* **02:00:45**, der Name: `medium` schrieb *Strasman*, `large-v3` hoert
+  *Strassman*. Entschieden.
+* **01:59:06**, die Netzadresse: `medium` schreibt *rickstrasbin.com*,
+  `large-v3` *rickstraspin.com*. Beides ist kein Wort. Zwei Modelle, zwei
+  Fehlschreibungen desselben gesprochenen Namens — gesetzt habe ich
+  **rickstrassman.com** und im Transkript dazugeschrieben, dass das
+  geschlossen und nicht gehoert ist.
+
+**Ende offen, seine Entscheidung** — dazu steht hier nichts.

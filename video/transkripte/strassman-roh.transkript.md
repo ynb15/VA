@@ -6,7 +6,23 @@ Quelle: eigenes Transkript aus dem Rohton, Zeiten in **Rohzeit**.
 
 In 12 Stuecken gerechnet; die Grenzen liegen auf Sprechpausen.
 
-**UNFERTIG — 2 von 12 Stuecken fehlen noch:** 100.5–110.6 min, 110.6–120.9 min
+**Drei Stellen nachgebessert**, alle mit `large-v3` am ungedehnten Ton
+nachgehoert und hier einzeln benannt — der Rest steht so, wie `medium` ihn
+geschrieben hat, und die `.json` daneben traegt die unkorrigierte Fassung.
+
+| Zeit | `medium` schrieb | hier steht |
+|---|---|---|
+| 01:59:06 | „rickstrasbin.com, my emails on my website" | „rickstrassman.com, my email is on my website" |
+| 01:59:16 | „a sub stack" | „a Substack" |
+| 02:00:45 | „Professor Rick Strasman" | „Professor Rick Strassman" |
+
+Zur ersten Zeile: den **Namen** am Ende hat `large-v3` eindeutig als
+*Strassman* gehoert, das ist entschieden. Die **Netzadresse** nicht — `medium`
+schreibt „rickstrasbin.com", `large-v3` „rickstraspin.com", und beides ist kein
+Wort. Zwei Modelle, zwei Fehlschreibungen desselben gesprochenen Namens: dass
+er seine eigene Seite nennt, ist sicher, die Buchstaben sind es nicht. Ich habe
+sie auf **rickstrassman.com** gesetzt und sage dazu, dass das geschlossen und
+nicht gehoert ist.
 
 **Ohne Sprecherzuordnung.** Die Aufnahme liegt als eine Mischung vor, nicht als getrennte Spuren. Wer spricht, steht hier deshalb nicht; lieber keine Angabe als eine erfundene.
 
@@ -2715,3 +2731,581 @@ In 12 Stuecken gerechnet; die Grenzen liegen auf Sprechpausen.
 **[01:40:25]** that's where the rubber meets the road.
 
 **[01:40:26]** How aware are you, in this case, of your own movement?
+
+**[01:40:31]** the way you've been shaped by Judaism.
+
+**[01:40:36]** Well, I mean, it's in my genes.
+
+**[01:40:39]** Yeah.
+
+**[01:40:40]** Yeah. And, you know, I was exposed to it as a child.
+
+**[01:40:44]** Yeah. And, you know, then when I was, you know, flailing around for,
+
+**[01:40:48]** you know, both another model for the psychedelic data,
+
+**[01:40:51]** which was the nature of the experiences my volunteers were undergoing,
+
+**[01:40:56]** which was interactive and relational and visions and voices and things,
+
+**[01:41:00]** Which didn't fit in with the Buddhist model and you spiritually like I was kind of bereft and you're looking for another
+
+**[01:41:08]** No place to land. Yeah, you know, so absolutely. Yeah
+
+**[01:41:12]** Yeah, I mean we it's hard to escape
+
+**[01:41:15]** ourselves
+
+**[01:41:22]** Yeah, what what do you believe in after all
+
+**[01:41:25]** Well, you know, I think there is a God who created and sustained cause and effect.
+
+**[01:41:34]** Like when I started reading the Hebrew Bible and learning biblical Hebrew again,
+
+**[01:41:39]** I had three giant lexicons. I'm open. I'm at all times as I was beginning to dig into it.
+
+**[01:41:51]** Yeah, you know, like I was struggling, like, you know, what is God? You know, who is God?
+
+**[01:41:58]** Yeah, is, you know, God like a male? Is God, you know, jealous? Is God, you know, petty?
+
+**[01:42:05]** You know, does God want, you know, people to suffer? You know, what's reward and punishment?
+
+**[01:42:11]** You know, all those things that are, you know, front and center in the text.
+
+**[01:42:15]** You know, so I used my understanding of karma, cause and effect, as a way to get a foothold
+
+**[01:42:25]** in an understanding of God.
+
+**[01:42:28]** So you know, one of the...
+
+**[01:42:30]** Good and karma, sorry, karma implies good and evil, right?
+
+**[01:42:35]** Well it implies cause and effect.
+
+**[01:42:37]** Things are the way now because of how things were before.
+
+**[01:42:40]** Things will be in the future because of how things are now.
+
+**[01:42:45]** you know there is cause and effect everything you do everything which
+
+**[01:42:48]** occurs has got causes you know multiple causes yeah you know but if you look at
+
+**[01:42:55]** you know cause and effect well you know one of the things you know that the
+
+**[01:42:58]** Buddha yes you said you shouldn't look into is you know what came at the
+
+**[01:43:04]** beginning you know like it's not useful it really doesn't help your
+
+**[01:43:08]** journey to enlightenment and I thought well you know if you're not supposed
+
+**[01:43:12]** to look at it, I think I will. Yeah, you know, so it's like,
+
+**[01:43:16]** you know, what created cause and effect if your cause and
+
+**[01:43:19]** effects, your teachers, everything is a beginning and
+
+**[01:43:22]** existence and an ending. You know, does that mean that
+
+**[01:43:26]** your cause and effect, you know, came from someplace and
+
+**[01:43:30]** exists and will have an ending? You know, so what
+
+**[01:43:33]** came before your cause and effect, you know, you know,
+
+**[01:43:36]** what existed before there was existence as such, which I
+
+**[01:43:41]** I suppose, you know, scientifically would be, you know, the big bang, you know,
+
+**[01:43:44]** what it was like around, you know, before the big bang, you know, but, um,
+
+**[01:43:49]** you know, if you look at, you know, cause and effect, um, it, it isn't,
+
+**[01:43:54]** you know, random, like if you're a, if you do bad things, you know,
+
+**[01:43:59]** chances are bad things will happen to you. Um, if you,
+
+**[01:44:02]** what are you talking about? If you say bad things, well, you know,
+
+**[01:44:06]** who judges what's good and bad. Well, that's just it.
+
+**[01:44:10]** you judge based on the impact.
+
+**[01:44:13]** Like one day, I was working on this in my mind,
+
+**[01:44:16]** and I was hiking behind towers where I lived for a while.
+
+**[01:44:20]** And I was thinking about somebody that I didn't like.
+
+**[01:44:25]** And I stubbed my toe.
+
+**[01:44:27]** I thought, I'm stubbing my toe because I'm
+
+**[01:44:29]** pissed off at this person.
+
+**[01:44:31]** And that seemed like cause and effect.
+
+**[01:44:33]** If you're angry, you stub your toe.
+
+**[01:44:35]** And I thought, well, that's interesting.
+
+**[01:44:37]** Who set things up that way?
+
+**[01:44:38]** why are things that way? You know, why isn't it the case that if I am angry at this person,
+
+**[01:44:44]** my wallet doesn't fill up $20 bills? Like it could happen, in which case you'd explain
+
+**[01:44:49]** you how that happened. Like there's this and there's that. But how do you prove that
+
+**[01:44:53]** correlation between being angry at someone and stepping your toe? Well, just by observation.
+
+**[01:44:59]** Like I was angry and the next moment I stubbed my toe. So it's like, okay,
+
+**[01:45:03]** there's cause and effect. I mean, there couldn't have been a more,
+
+**[01:45:06]** why is it not random can well it's not random like if you're angry you might
+
+**[01:45:14]** stub your toe I don't think that's there's random I could argue that while
+
+**[01:45:20]** you were being angry you just became more inattentive well exactly I was
+
+**[01:45:27]** more inattentive so being angry leads to being inattentive which is not a
+
+**[01:45:31]** good thing because you can stub your toe but then it's again correlation
+
+**[01:45:35]** versus cause well it's a pretty strong correlation yeah well I mean how would
+
+**[01:45:42]** you you know disabuse that notion ask the question in a different way yeah I
+
+**[01:45:50]** mean you know why let's see correlation versus causation well for
+
+**[01:45:58]** sure you can't well you know somebody you know we were having this you
+
+**[01:46:02]** know conversation the other day and you know we were talking about your
+
+**[01:46:05]** cause and effect and, you know, somebody said, well, you know,
+
+**[01:46:09]** how do you know it's cause and effect?
+
+**[01:46:11]** Don't you have to have special psychic powers?
+
+**[01:46:13]** Um, I said, no, all you need to do is observe your life.
+
+**[01:46:18]** Uh, so, you know, if you get angry, you become less attentive and
+
+**[01:46:23]** you stub your toe, you know, that for me, yeah, you know,
+
+**[01:46:27]** that's, you know, that's the proof, you know, for me, I mean,
+
+**[01:46:32]** like I was convinced, like, okay, you know, being angry is not a
+
+**[01:46:35]** good idea. And, you know, why is being angry not a good idea?
+
+**[01:46:39]** Well, because, you know, that is, you know, baked into cause and
+
+**[01:46:42]** effect. And, you know, so cause and effect is not random. It
+
+**[01:46:46]** seems to encourage certain beliefs and actions or conduct
+
+**[01:46:50]** and discourages certain beliefs and conduct. And I suppose it
+
+**[01:46:57]** could be, you know, the pleasure principle, you know,
+
+**[01:47:01]** Freud said we avoid pain and we seek pleasure. Yeah, you
+
+**[01:47:05]** So in a way, it's as simple as that.
+
+**[01:47:09]** Reward and punishment is how cause and effect
+
+**[01:47:14]** is constituted in order for certain things
+
+**[01:47:18]** to make you feel good and certain things
+
+**[01:47:19]** to make you feel bad.
+
+**[01:47:21]** So it isn't random.
+
+**[01:47:23]** It's created with a certain intentionality baked into it.
+
+**[01:47:28]** So when I first began or was thinking about who is God,
+
+**[01:47:34]** And I finally came to a definition which I was comfortable and still am comfortable with is that
+
+**[01:47:41]** you got you got created and sustains you know cause and effect. So from that perspective
+
+**[01:47:51]** the whole reward, punishment, you know jealousy, love of the deity becomes you know less
+
+**[01:48:01]** personal in a way is just the working of cause and effect, which is designed to encourage
+
+**[01:48:08]** certain behaviors and discourage others.
+
+**[01:48:11]** I would like to use this as a cliffhanger for round number two to go deeper into that.
+
+**[01:48:19]** But before time runs up, I would like to know your perspective on the future of psychedelics.
+
+**[01:48:30]** And I'm particularly thinking about one Terence McKenna quote, I see the psychedelic experience
+
+**[01:48:36]** as a birthright and we can't have a free society until people are free to explore their
+
+**[01:48:40]** own mind.
+
+**[01:48:41]** And especially in these days of psychedelic gold rush or the psychedelic renaissance
+
+**[01:48:49]** that turned into a hype, everyone's doing Ayahuasca by now with all the clinics
+
+**[01:48:55]** and retreats popping up everywhere.
+
+**[01:48:58]** Where do you think are we going with this and where do you see the risks?
+
+**[01:49:07]** Well, you know, if you give psychedelics in a controlled environment for depression, PTSD,
+
+**[01:49:15]** substance abuse, you have skilled clinicians, you have pure drug, you've got safety built
+
+**[01:49:21]** in, you know, to the environment. You screen people carefully, you prepare them carefully,
+
+**[01:49:27]** you supervise, you know, their sessions. You follow up, you intervene if there's any problems.
+
+**[01:49:33]** Yeah, they're very helpful. And the adverse effects are relatively low. They're not zero,
+
+**[01:49:39]** but they're relatively low. You know, all because they're, you know, all because the
+
+**[01:49:48]** Frequency is relatively low.
+
+**[01:49:50]** It doesn't mean that they're not serious.
+
+**[01:49:52]** There are some serious adverse effects
+
+**[01:49:53]** from taking psychedelics.
+
+**[01:49:55]** You can be very destabilized, even in a research setting.
+
+**[01:49:59]** Like a small number of our volunteers
+
+**[01:50:03]** got into some depression after their participation
+
+**[01:50:09]** and required some intervention.
+
+**[01:50:12]** One guy got back on antidepressants, felt better.
+
+**[01:50:15]** One guy got back into therapy, felt better.
+
+**[01:50:18]** But we were there.
+
+**[01:50:19]** And we said, you need some help after being destabilized.
+
+**[01:50:24]** So I think with pharma and these big trials,
+
+**[01:50:28]** they do tend to not report adverse effects very
+
+**[01:50:31]** faithfully.
+
+**[01:50:33]** Thanks for watching!
+
+**[01:50:33]** but relatively low incidence of adverse effects.
+
+**[01:50:39]** So these drug companies are buying up
+
+**[01:50:43]** these small psychedelic start-ups.
+
+**[01:50:46]** I don't think it's as much they're
+
+**[01:50:48]** convinced that they're going to be useful,
+
+**[01:50:50]** but they want to get a leg up on the market.
+
+**[01:50:53]** So if they do turn out to be scalable,
+
+**[01:50:57]** that they'll be there and can
+
+**[01:50:58]** take advantage of the scalability issue.
+
+**[01:51:01]** And, you know, so I think it's going to be, you know, multi-tiered.
+
+**[01:51:07]** There's going to be, you know, legitimate, you know, sanctioned FDA applications at
+
+**[01:51:13]** your specialized, you know, kinds of clinics, which will be, you know, which will be helpful
+
+**[01:51:20]** with, you know, not that many adverse effects.
+
+**[01:51:24]** And, you know, they'll still, you know, be, I mean, underground.
+
+**[01:51:29]** And then in between will be these clinics and retreat centers and increased access and
+
+**[01:51:34]** legalization initiatives, which will be, I suppose, hybrids in a way, you know, they
+
+**[01:51:42]** won't, you know, the practitioners won't be as well trained as, as, you know, though
+
+**[01:51:49]** as an FDA approved, you know, sites, you know, so they won't be working with as
+
+**[01:51:56]** disturbed a population. They might be working for meditation enhancement or creativity,
+
+**[01:52:03]** you know, marital problems, you know, things that aren't quite as severe as your treatment
+
+**[01:52:07]** resistant depression, you know, where you fail multiple antidepressant trials.
+
+**[01:52:14]** Yeah, you know, I think within, you know, with increased access, there are going to be
+
+**[01:52:20]** be an increased incidence of adverse effects, so we have to be prepared for that.
+
+**[01:52:30]** We don't want to gild the lily, psychedelics can be helpful but that doesn't mean they're
+
+**[01:52:35]** going to save the world and they're not horror drugs either, but we have to be level
+
+**[01:52:42]** headed about their pros and cons and the right way to use them.
+
+**[01:52:48]** all since we're on the man's search for meaning podcast as a well-traveled Jew
+
+**[01:52:56]** Buddhist Christian and Psychonaut what makes life meaningful to you Rick well
+
+**[01:53:04]** I would you know delete the Christian part you know like I've never read the
+
+**[01:53:08]** Christian Bible well you I would claim one could think of you as a cultural
+
+**[01:53:15]** Christian. Yeah. So how is that? Well, it's inevitable. You grew up in a
+
+**[01:53:21]** Christian country culture, you know, it's like Richard Dawkins talks a lot about
+
+**[01:53:25]** that. Like, no matter how much we resist people like you and me, we are
+
+**[01:53:32]** inevitably shaped by Christian values. Well, fundamentally, those Christian
+
+**[01:53:38]** values are Jewish values. Yeah. If you know, like if it weren't for Judaism,
+
+**[01:53:43]** There would be no Christianity. Yeah. Okay. Let's delete the Christian
+
+**[01:53:48]** Yeah, yeah, we got it. We're gonna go with that and then round two. Yeah. Yeah, I could go off on that tangent
+
+**[01:53:55]** That's a good cliffhanger. Yeah, so
+
+**[01:53:57]** What's your question? What is what makes life meaningful to you?
+
+**[01:54:01]** Well, you know a couple of things, you know my study
+
+**[01:54:05]** I've been working on this translation and trend and commentary on the book of Genesis for years
+
+**[01:54:11]** it's a it's almost a thousand pages so I'm on the hunt for a publisher now I don't know if I'll
+
+**[01:54:18]** find a publisher but anyway yeah you know I enjoy that that gives my life a lot of meaning like
+
+**[01:54:25]** understanding the text I love how it feels to understand the text it's it's like discovering
+
+**[01:54:30]** is something that was unconscious you previously and then becomes conscious like I remember in my
+
+**[01:54:37]** analysis, you know, one day, you know, my analyst, you know, made some, you know, relatively benign
+
+**[01:54:44]** comment. And I thought, I never thought of that. And it was completely obvious, you know, so it
+
+**[01:54:51]** was a case of the unconscious becoming conscious, you know, so I've, I think, you know, understanding,
+
+**[01:54:58]** you know, the text engenders a comparable feeling, like you understand, you know, something that
+
+**[01:55:04]** But you didn't understand before, but when you read the text very carefully, it becomes
+
+**[01:55:10]** crystal clear.
+
+**[01:55:12]** So I like that feeling.
+
+**[01:55:15]** It's a feeling of meaningfulness.
+
+**[01:55:17]** I've extracted meaning from something that I didn't understand before.
+
+**[01:55:24]** And I've only been married to my second wife for a couple years.
+
+**[01:55:29]** And that's meaningful.
+
+**[01:55:31]** That's important to me.
+
+**[01:55:32]** I am growing as a person in that marriage, which is surprising to me as much as anybody
+
+**[01:55:39]** because I was divorced for 25 years and went through the match.com purgatory and all of
+
+**[01:55:47]** that. But you know, finally met somebody, you know, not on match.com. Yeah. And you
+
+**[01:55:53]** know, we've been living together for a couple of years, but you've been married for
+
+**[01:55:57]** for a couple of years.
+
+**[01:55:58]** Yeah, so it's meaningful to be in a relationship with her.
+
+**[01:56:05]** Like changing some of my habits.
+
+**[01:56:12]** Like instead of getting mad, I'll walk out of the room.
+
+**[01:56:16]** You know, which for me is growth.
+
+**[01:56:19]** Yeah, and instead of wanting to change her,
+
+**[01:56:24]** it's accepting her for who she is.
+
+**[01:56:27]** And so that's new for me too.
+
+**[01:56:30]** Give me one last advice within one sentence
+
+**[01:56:34]** for a guy who's about to get married.
+
+**[01:56:40]** Is it your first marriage?
+
+**[01:56:41]** Yeah.
+
+**[01:56:43]** Hopefully the one and only.
+
+**[01:56:44]** What's my advice?
+
+**[01:56:48]** Well, you're gonna have to change.
+
+**[01:56:52]** You'll have to grow.
+
+**[01:56:55]** I think we're on a good path about that.
+
+**[01:56:59]** she changed my life in ways I could have never imagined.
+
+**[01:57:04]** And yeah, it's been much more powerful
+
+**[01:57:08]** than any psychedelic, any Vipassana,
+
+**[01:57:10]** any anything I really experienced.
+
+**[01:57:13]** Well, you know, like back in the day
+
+**[01:57:17]** when I was looking for spiritual teachers,
+
+**[01:57:19]** I wanted to make sure that they were married.
+
+**[01:57:23]** Otherwise they wouldn't really know
+
+**[01:57:24]** what they were talking about
+
+**[01:57:25]** when it came to interpersonal relations.
+
+**[01:57:28]** It just so happened that my teacher was a virgin,
+
+**[01:57:32]** never married, all that.
+
+**[01:57:34]** But still, at least conceptually, I would say,
+
+**[01:57:36]** they have to be married.
+
+**[01:57:38]** And I think overall that my Zen teacher would have been
+
+**[01:57:44]** a better teacher if she were married.
+
+**[01:57:51]** Somebody says, take out the garbage, honey.
+
+**[01:57:55]** And you're a big Zen teacher,
+
+**[01:57:56]** and you say, I don't take out the garbage.
+
+**[01:57:58]** And they say, they'll get angry at you
+
+**[01:58:02]** if you don't take out the garbage.
+
+**[01:58:04]** So I think it really keeps the feeling of pride at bay.
+
+**[01:58:13]** I think in any spiritual practice,
+
+**[01:58:16]** the last thing to go is pride.
+
+**[01:58:18]** Well, apparently, they didn't really get into enlightenment,
+
+**[01:58:23]** because there's this famous quote from Ram Dass
+
+**[01:58:25]** after the enlightenment, take out the trash.
+
+**[01:58:29]** Well, it's actually do the laundry,
+
+**[01:58:31]** or something like that.
+
+**[01:58:32]** But yeah, Rick, I'm devastated that we have
+
+**[01:58:35]** to wrap this up because we're running out of time.
+
+**[01:58:37]** I'm really, really, really hoping
+
+**[01:58:39]** that we'll get the chance to sit down
+
+**[01:58:41]** for round number two, hopefully,
+
+**[01:58:44]** in Cape Town, South Africa.
+
+**[01:58:45]** I'd love to have you there.
+
+**[01:58:47]** And book a podcast with you for like three or four hours.
+
+**[01:58:50]** Bring some hashish.
+
+**[01:58:52]** Yeah, continue to continue this chat.
+
+**[01:58:57]** How can people get in touch with you find you if you want them to find you at all?
+
+**[01:59:03]** Sure.
+
+**[01:59:04]** Yeah.
+
+**[01:59:05]** Yeah.
+
+**[01:59:06]** Well, they could contact me through my website rickstrassman.com, my email is on my website.
+
+**[01:59:16]** I started a Substack last year, last July, on the translation of Genesis.
+
+**[01:59:23]** Which you've been working on for like two decades now?
+
+**[01:59:26]** I've been working on it a long time, yeah, maybe even three decades now.
+
+**[01:59:30]** Damn.
+
+**[01:59:31]** Yeah, so I've been releasing a chapter per week.
+
+**[01:59:35]** Yeah, I actually have a couple of entries on psychedelic idolatry, like how does your
+
+**[01:59:40]** psychedelic use, you know, you know, kind of, you know, contact
+
+**[01:59:46]** idol worship. So yeah, I've got that. I release you know,
+
+**[01:59:52]** something every week on Substack. Yeah, I have a Facebook
+
+**[01:59:55]** presence, you know, not much on X or LinkedIn, you know,
+
+**[01:59:59]** mostly on my website. But you know, nowadays, it's my
+
+**[02:00:02]** Substack.
+
+**[02:00:02]** No, I can highly recommend checking out your Substack.
+
+**[02:00:05]** I've been reading it for a while. And it's, it's
+
+**[02:00:07]** mind-blowing, just like this conversation was mind-blowing.
+
+**[02:00:11]** Really appreciate you, Rick, appreciate the work
+
+**[02:00:13]** you've been doing since the 80s.
+
+**[02:00:17]** And yeah, it's been hugely inspirational.
+
+**[02:00:21]** Well, thanks.
+
+**[02:00:23]** Thank you so much for taking the time
+
+**[02:00:24]** and making it possible.
+
+**[02:00:25]** Sure, yeah.
+
+**[02:00:26]** Well, we were talking about what kind of things
+
+**[02:00:29]** would make this a more meaningful interview,
+
+**[02:00:32]** and yeah, like we were speaking about beforehand.
+
+**[02:00:36]** Let's talk about stuff that I normally don't talk about.
+
+**[02:00:39]** Yeah, and I think we did, so I'm grateful for that.
+
+**[02:00:43]** Cool.
+
+**[02:00:44]** Right, ladies and gentlemen,
+
+**[02:00:45]** this was Professor Rick Strassman.
+
+**[02:00:47]** Thank you so much.
+
+**[02:00:48]** Thank you.
+
+**[02:00:50]** Woo!
