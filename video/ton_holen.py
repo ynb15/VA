@@ -61,7 +61,18 @@ def ton_holen(file_id, ziel, groesse=None, rate=16000, melden=60.0):
         aus.mux(pkt)
     aus.close()
     ein.close()
-    return pos, quelle.gelesen, time.time() - t0
+
+    # Nachgezaehlt, bevor irgendwer darauf baut. Am 20.10.2026 endete der
+    # Tonabzug der Aaronson-Folge bei 74,6 von 101,4 Minuten, ohne eine
+    # einzige Fehlermeldung — der Blockleser hat eine kurze Antwort als
+    # Dateiende durchgereicht. Das ist dort behoben; hier steht die Probe
+    # aufs Exempel. Ein zu kurzer Tonabzug faellt sonst erst auf, wenn ein
+    # Transkript fehlt, das zwei Stunden gekostet hat.
+    if dauer and pos < dauer - 2.0:
+        raise IOError(
+            f"Tonabzug zu kurz: {pos / 60:.1f} von {dauer / 60:.1f} Minuten. "
+            f"{ziel} ist unvollstaendig und sollte nicht benutzt werden.")
+    return pos, dauer, quelle.gelesen, time.time() - t0
 
 
 if __name__ == "__main__":
@@ -72,6 +83,8 @@ if __name__ == "__main__":
     ap.add_argument("--rate", type=int, default=16000)
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
-    dauer, bytes_, sek = ton_holen(a.id, a.out, groesse=a.groesse, rate=a.rate)
-    print(f"{a.out} — {dauer / 60:.1f} min Ton, {bytes_ / 1e9:.2f} GB geholt, "
-          f"{sek / 60:.1f} min")
+    dauer, soll, bytes_, sek = ton_holen(a.id, a.out, groesse=a.groesse,
+                                         rate=a.rate)
+    print(f"{a.out} — {dauer / 60:.1f} min Ton"
+          + (f" von {soll / 60:.1f} erwarteten" if soll else "")
+          + f", {bytes_ / 1e9:.2f} GB geholt, {sek / 60:.1f} min")
