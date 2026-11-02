@@ -25,12 +25,28 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from drive_fernzugriff import DriveDatei, bestaetigte_url
 
 
-def ton_holen(file_id, ziel, groesse=None, rate=16000, melden=60.0):
+def ton_holen(file_id, ziel, groesse=None, rate=16000, melden=60.0, ab=0.0):
+    """`ab` setzt den Anfang in Sekunden — fuer die Wiederaufnahme.
+
+    Am 02.11.2026 gelernt: dieser Container wird zwischen zwei Zuegen
+    eingesammelt, und zwar samt aller Prozesse. `nohup` hilft nicht. Der
+    Tonabzug der Strassman-Folge stand bei 58 von 121 Minuten, als es
+    passierte, und ohne diesen Schalter waere die Stunde Arbeit weg
+    gewesen. Mit ihm wird nur der Rest geholt und hinterher
+    zusammengesetzt.
+    """
     quelle = DriveDatei(bestaetigte_url(file_id), groesse=groesse,
                         datei_id=file_id)
     ein = av.open(quelle)
     a_ein = next(s for s in ein.streams if s.type == "audio")
     dauer = float(ein.duration) / 1e6 if ein.duration else None
+    if ab > 0:
+        # Container-Suche landet auf einem Schluesselbild davor, nicht
+        # genau auf der Sekunde. Deshalb davor anspringen und die Rahmen
+        # verwerfen, die zu frueh liegen — sonst entsteht an der Nahtstelle
+        # eine Ueberlappung, die im Transkript als doppelter Satz steht.
+        ein.seek(int(max(0.0, ab - 5.0) / float(a_ein.time_base)),
+                 stream=a_ein)
 
     aus = av.open(str(ziel), "w")
     a_aus = aus.add_stream("flac", rate=rate)
@@ -42,6 +58,8 @@ def ton_holen(file_id, ziel, groesse=None, rate=16000, melden=60.0):
     for rahmen in ein.decode(a_ein):
         if rahmen.pts is not None:
             pos = float(rahmen.pts * rahmen.time_base)
+            if pos < ab:
+                continue
         for r in neu.resample(rahmen):
             r.pts = None
             for pkt in a_aus.encode(r):
@@ -81,10 +99,13 @@ if __name__ == "__main__":
     ap.add_argument("--groesse", type=int, default=None,
                     help="Dateigroesse in Bytes, spart eine HEAD-Anfrage")
     ap.add_argument("--rate", type=int, default=16000)
+    ap.add_argument("--ab", type=float, default=0.0,
+                    help="Anfang in Sekunden - fuer die Wiederaufnahme eines "
+                         "abgebrochenen Abzugs")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
     dauer, soll, bytes_, sek = ton_holen(a.id, a.out, groesse=a.groesse,
-                                         rate=a.rate)
+                                         rate=a.rate, ab=a.ab)
     print(f"{a.out} — {dauer / 60:.1f} min Ton"
           + (f" von {soll / 60:.1f} erwarteten" if soll else "")
           + f", {bytes_ / 1e9:.2f} GB geholt, {sek / 60:.1f} min")
