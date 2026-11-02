@@ -6,7 +6,7 @@ Quelle: eigenes Transkript aus dem Rohton, Zeiten in **Rohzeit**.
 
 In 12 Stuecken gerechnet; die Grenzen liegen auf Sprechpausen.
 
-**UNFERTIG — 6 von 12 Stuecken fehlen noch:** 60.6–70.3 min, 70.3–80.6 min, 80.6–90.3 min, 90.3–100.5 min, 100.5–110.6 min, 110.6–120.9 min
+**UNFERTIG — 2 von 12 Stuecken fehlen noch:** 100.5–110.6 min, 110.6–120.9 min
 
 **Ohne Sprecherzuordnung.** Die Aufnahme liegt als eine Mischung vor, nicht als getrennte Spuren. Wer spricht, steht hier deshalb nicht; lieber keine Angabe als eine erfundene.
 
@@ -1667,3 +1667,1051 @@ In 12 Stuecken gerechnet; die Grenzen liegen auf Sprechpausen.
 **[01:00:26]** that great. The assay may not have been as sensitive as it could be. So I think one study
 
 **[01:00:33]** kind of, you know, low key, you know, there needs to be.
+
+**[01:00:37]** um more concerted effort you know to look at you know dmt and you know cord blood and placenta in
+
+**[01:00:43]** the newborn you know you know compared you know and you compare levels if you know levels you know
+
+**[01:00:49]** can be measured um and you know uh you know caesareans you know versus you know normal
+
+**[01:00:54]** deliveries yeah one one of the there's one number from your book which hasn't left me
+
+**[01:01:03]** me, which I couldn't stop thinking about, which isn't the number 49.
+
+**[01:01:07]** I know 49.
+
+**[01:01:08]** Yeah.
+
+**[01:01:09]** Yeah.
+
+**[01:01:10]** That's a big number actually in quite a few traditions.
+
+**[01:01:12]** Talk to me about that.
+
+**[01:01:13]** Yeah.
+
+**[01:01:14]** Well, you know, 49 days is, you know, when the Tibetans think, you know, that
+
+**[01:01:20]** the soul of the departed enters a new body, you know, 49 days.
+
+**[01:01:27]** And when I was taking embryology...
+
+**[01:01:29]** What the fuck is going on outside, by the way?
+
+**[01:01:31]** Is that normal for Albuquerque?
+
+**[01:01:33]** Like all the fire and police cars?
+
+**[01:01:36]** Well, it's people overdosing on fentanyl.
+
+**[01:01:39]** Is Albuquerque a hotspot for that?
+
+**[01:01:41]** Yeah, very hotspot, especially just like a block or two away.
+
+**[01:01:44]** Oh, damn.
+
+**[01:01:44]** Yeah, yeah.
+
+**[01:01:45]** We have the highest fentanyl overdose.
+
+**[01:01:48]** I thought it's Cincinnati.
+
+**[01:01:50]** It could be, in which case we're close.
+
+**[01:01:53]** Yeah, yeah.
+
+**[01:01:56]** Well, you know, there's an interesting story
+
+**[01:01:58]** about fentanyl and Albuquerque.
+
+**[01:02:01]** The DEA has got this policy of of, you know, walking on your drugs
+
+**[01:02:08]** through a community.
+
+**[01:02:10]** You know, so, you know,
+
+**[01:02:14]** a number of years ago, you know, hundreds of thousands of fentanyl
+
+**[01:02:19]** pills were coming into town and and, you know, the DEA knew about it.
+
+**[01:02:24]** And they said, well, let's catch the big fish.
+
+**[01:02:28]** You know, so they let all these fentanyl pills just flood Apricot.
+
+**[01:02:31]** What were they referring to as the big fish?
+
+**[01:02:34]** Cocaine?
+
+**[01:02:35]** You know, like the big dealers as opposed to just the street corner dealers.
+
+**[01:02:39]** Yeah, yeah, so that's been exposed the last few months or so and it's kind of a, yeah,
+
+**[01:02:46]** so there's a lot of fentanyl overdoses here.
+
+**[01:02:49]** Maybe you should go out and give them some DMT.
+
+**[01:02:52]** Or some Ibogaine.
+
+**[01:02:53]** Yeah.
+
+**[01:02:54]** Yeah.
+
+**[01:02:55]** Well, you know, that's a long trip and you have to monitor people very carefully
+
+**[01:03:01]** And, you know, first of all, I mean, people want, you know, if you're going to, you know,
+
+**[01:03:08]** kind of improve or help, you know, drug addicts, they need to want to be helped.
+
+**[01:03:12]** Sure.
+
+**[01:03:13]** Yeah.
+
+**[01:03:14]** And a lot of these folks just really are, I wouldn't say, you know, beyond help,
+
+**[01:03:18]** but they don't think of themselves as being, you know, salvageable, you know,
+
+**[01:03:21]** so they just, you know, continue on their way.
+
+**[01:03:23]** I mean, I always question, like, how conscious are they, like, how much are they still
+
+**[01:03:29]** and power of themselves, you know, and how much have the drugs taken over?
+
+**[01:03:35]** Yeah, yeah, you know, the withdrawal is terrible and, you know, looking for your next dose
+
+**[01:03:42]** is, you know, pretty much that's all on your mind.
+
+**[01:03:45]** But going back to the notorious number 49.
+
+**[01:03:48]** Oh, yeah, yeah, yeah, you know, so 49, yeah, when I was, you know,
+
+**[01:03:53]** taking my embryology class in medical school, I also, you know, learned
+
+**[01:03:58]** that 49 days of fetal life is when the first appearance of pineal tissue makes its appearance,
+
+**[01:04:14]** as also when the differentiation of the gonads into female and male occurs.
+
+**[01:04:20]** you know, so, you know, when I, you know, when I read about that, I thought, well, you know,
+
+**[01:04:28]** maybe the soul comes into the fetus, you know, 49 days, you know, the conflict or the, you know,
+
+**[01:04:37]** the tension or the, you know, the synergy between spirituality, you know, sexuality.
+
+**[01:04:41]** It was a bit inchoate. And when you think about the specifics, you know,
+
+**[01:04:47]** 49 days from the, you know, death of one person, you know,
+
+**[01:04:51]** to the birth of another, um, it really, you know,
+
+**[01:04:54]** doesn't have anything to do with, you know,
+
+**[01:04:55]** 49 with, you know, 49 days in the fetus is, you know,
+
+**[01:04:59]** just a coincidence, you know, but, but, but still, you know,
+
+**[01:05:02]** 49, it seemed like a very cool number, you know,
+
+**[01:05:07]** later on, um, I learned, you know,
+
+**[01:05:08]** that between the time of the Exodus, you know, from Egypt, you know,
+
+**[01:05:12]** the Hebrews leaving Egypt, um, you know, 49, you know,
+
+**[01:05:15]** 49 days elapsed between the Exodus and the Revelation on Mount Sinai in 49, you know, 49 days.
+
+**[01:05:23]** So, you know, 49 is a big... I was fascinated while digging into your story, Rick. You, to me,
+
+**[01:05:33]** came across as the most quote-unquote spiritual scientist I've seen out there.
+
+**[01:05:39]** and I'm very curious to hear more about your own personal spiritual journey
+
+**[01:05:47]** bouncing between Judaism, Christianity, Buddhism and the psychedelic world and
+
+**[01:05:54]** back to the deep into the Hebrew Bible. Well this might be a good time for a
+
+**[01:06:01]** pee break. Yeah yeah yeah I heard you're notorious for that. Yeah yeah I like
+
+**[01:06:06]** pee breaks? Well I do drink a lot of coffee in the morning yeah and I have a
+
+**[01:06:14]** 74 year old bladder you know it you know calls out for attention so please feel
+
+**[01:06:22]** free. Where is the bathroom? Just around the corner. Yeah on the way from
+
+**[01:09:18]** Austin to Albuquerque that 13-hour journey I listened to your three
+
+**[01:09:22]** three hour podcast with Rogan and learned that you prioritize your pee
+
+**[01:09:29]** breaks yeah those were smoke breaks actually oh yeah yeah yeah each time I
+
+**[01:09:36]** have been on his show we've smoked yeah this last time I think I hope we can do
+
+**[01:09:45]** that for round number two when you come visit us in Cape Town sure well
+
+**[01:09:51]** Well South Africa almost always seemed like a very interesting place.
+
+**[01:09:55]** Oh yeah.
+
+**[01:10:02]** But yeah, we were talking about your own spiritual journey.
+
+**[01:10:08]** Well yeah, like as a kid I was raised in a conservative Jewish environment, which
+
+**[01:10:13]** is like in between the other reform which is quite liberal and the Orthodox which
+
+**[01:10:18]** which is you're quite conservative.
+
+**[01:10:19]** Yeah, you know, the conservative in quotes is, you know, the middle of the road in terms
+
+**[01:10:24]** of observance, your ritual, you know, following Jewish law and whatnot.
+
+**[01:10:33]** Yeah, you know, so I went to Hebrew school, you know, six hours a week, actually, from
+
+**[01:10:38]** five to 13 with Bar Mitzvah, went to a Jewish day camp when I was 12.
+
+**[01:10:45]** We spoke Hebrew all the time, or as much as we could.
+
+**[01:10:49]** We prayed, had kosher meals, all of that.
+
+**[01:10:55]** Yeah, but once I turned 13, 14, I got my braces off
+
+**[01:11:01]** and I got contact lenses, and I started running track.
+
+**[01:11:04]** So I kind of lost interest in being Jewish.
+
+**[01:11:07]** You became too cool for Judaism?
+
+**[01:11:10]** I guess I was, yeah.
+
+**[01:11:12]** And the kids who were studying Judaism
+
+**[01:11:14]** seemed kind of square. Yeah. And, you know, this was, you know,
+
+**[01:11:17]** Southern California, you know, the beach culture, you know,
+
+**[01:11:21]** Hollywood, all that. So I got, you know, swept up in that.
+
+**[01:11:26]** Yeah, you know, so you kind of, you know, dropped it, you
+
+**[01:11:30]** know, we, we didn't study spiritual things per se in
+
+**[01:11:35]** Hebrew school. It was, you know, the language, it was
+
+**[01:11:38]** the ritual, you know, the, you know, the holidays, you
+
+**[01:11:42]** know the folktales you know we learned a lot about Israel and you know the
+
+**[01:11:47]** Holocaust and all that you know this was the 1950s early 1960s you know so I
+
+**[01:11:53]** was born in 52 and World War two it just ended you know seven years before
+
+**[01:11:59]** yeah you know so how do you just real quick how do you look at what's
+
+**[01:12:04]** happening at the moment in Gaza well you know Gaza I think is you know
+
+**[01:12:10]** you're part of a larger picture, you know, what's the future of your Zionism, you know,
+
+**[01:12:16]** what's the future of, you know, the Jewish state? Yeah, so, yeah, and it's up in the air right now,
+
+**[01:12:27]** you know, what, well, yeah, you know, you need to distinguish, I think, between anti-Zionism
+
+**[01:12:34]** and anti-Semitism and then when it comes to anti-Semitism you need to distinguish between
+
+**[01:12:41]** you know anti-Judaism and you know Jew hatred you know so there's your Judaism hatred and
+
+**[01:12:48]** there's Jew hatred and there's you know hatred of Israel and you know they conflate you know
+
+**[01:12:55]** they're not the same but they do overlap and I think people you know are you've failed to
+
+**[01:13:01]** distinguish them in most conversations. How do you deal with being of Jewish
+
+**[01:13:11]** origin in these days? Well, you know, it is interesting, you know, with respect, you
+
+**[01:13:20]** know, to the psychedelic community. Like, you know, Bill Richards, who was the
+
+**[01:13:24]** lead therapist at Hopkins and at, you know, University of Maryland, the
+
+**[01:13:29]** the Spring Grove group, there is a move which began at the Spring Grove group and then migrated
+
+**[01:13:38]** over to Hopkins, which was mystical experiences heal.
+
+**[01:13:43]** And those mystical experiences, according to them, form the basis of all the major
+
+**[01:13:49]** world religions.
+
+**[01:13:50]** Like in other words, all of the religions are the same when you look carefully because
+
+**[01:13:55]** is they're all based on this generic universal spiritual
+
+**[01:13:59]** experience, which is scored on the mystical experience
+
+**[01:14:02]** questionnaire.
+
+**[01:14:05]** So in a way, it's a Trojan horse
+
+**[01:14:10]** for promoting a universal religious
+
+**[01:14:17]** or a universal religion.
+
+**[01:14:20]** But Judaism is not a universal religion.
+
+**[01:14:23]** it might be in the future.
+
+**[01:14:27]** But right now, it's quite particularistic.
+
+**[01:14:33]** There's the law, there's the Torah,
+
+**[01:14:36]** there's all of the precepts, which are called commandments,
+
+**[01:14:41]** but they're more like precepts.
+
+**[01:14:45]** Yeah, so there is an implicit bias
+
+**[01:14:51]** against traditional Judaism, I think,
+
+**[01:14:58]** within the psychedelic community.
+
+**[01:15:02]** Bill Richards wrote a book called Sacred Knowledge,
+
+**[01:15:07]** kind of the manifesto in a way of the psychedelic religion
+
+**[01:15:12]** of mystical consciousness.
+
+**[01:15:15]** And in it, there's a few pages, like in the middle of the book,
+
+**[01:15:20]** he trashes Judaism, the Bible and the prophets, scripture.
+
+**[01:15:25]** Yeah, it's really astonishing.
+
+**[01:15:28]** And his two most difficult patients that he describes
+
+**[01:15:32]** were both Jewish.
+
+**[01:15:34]** So I wrote to Bill and said, what gives?
+
+**[01:15:38]** And he said, well, I have an Israeli girlfriend.
+
+**[01:15:41]** How can I be anti-Semitic?
+
+**[01:15:44]** But I think in his case, he was responding to Judaism
+
+**[01:15:53]** as opposed to Jews themselves, the basis of the religion,
+
+**[01:15:59]** the message of the prophets.
+
+**[01:16:03]** Yeah, so a few years ago, I was part
+
+**[01:16:07]** of a panel on psychedelic Judaism, which is a thing.
+
+**[01:16:12]** What's psychedelic Judaism about?
+
+**[01:16:15]** It's about, well, that's a good question.
+
+**[01:16:18]** Is it Jewish people taking psychedelics?
+
+**[01:16:22]** Yeah, like it's the question of what's,
+
+**[01:16:26]** it's a comparable question to Jewish,
+
+**[01:16:37]** to defining Jewish literature.
+
+**[01:16:39]** Is it literature written by Jewish people?
+
+**[01:16:42]** Or is it literature about Jewish people and Jewish themes?
+
+**[01:16:48]** And I think it's the same thing with psychedelic Judaism.
+
+**[01:16:55]** Is it Jewish people taking psychedelics?
+
+**[01:16:59]** Or is it people taking psychedelics, Jewish or not,
+
+**[01:17:02]** within a Jewish framework.
+
+**[01:17:07]** Madison Margolin just published a book last year called Exile
+
+**[01:17:16]** and Ecstasy, and it's her anthropological exploration
+
+**[01:17:23]** of psychedelic Judaism.
+
+**[01:17:28]** So there's a lot of orthodox kids that are tripping now
+
+**[01:17:32]** days secular Jews who are you know tripping within your psychedelic or within within Jewish context
+
+**[01:17:42]** like you know synagogue your Friday night services you drink aliyah waska yeah so there is an
+
+**[01:17:48]** attempt to merge you know psychedelic you know drug use and Jewish practice um yeah you know
+
+**[01:18:01]** know, kind of like, you know, Buddhism is, you know, working with, you know,
+
+**[01:18:05]** combining psychedelics on Vipassana retreats.
+
+**[01:18:08]** Really?
+
+**[01:18:08]** You know, Zen retreats.
+
+**[01:18:10]** Yeah.
+
+**[01:18:10]** Yeah.
+
+**[01:18:11]** There've been some papers published, you know, there was a Spanish paper a
+
+**[01:18:17]** number of years ago, you know, describing Ayahuasca meditation,
+
+**[01:18:24]** enhancing effects on Vipassana retreat, you know, the retreations.
+
+**[01:18:29]** So those are modern day studies, like I know of the Vipassana culture that strictly prohibits
+
+**[01:18:37]** any kind of substance consumption, right?
+
+**[01:18:40]** Yeah, yeah.
+
+**[01:18:41]** Yeah, this was a Spanish paper, it came out, you know, not like recently, maybe within
+
+**[01:18:48]** the last 10 years.
+
+**[01:18:50]** And there was a Swiss paper that came out a few years ago in which Zen retreatants took
+
+**[01:19:07]** psilocybin before a Zen retreat.
+
+**[01:19:12]** And the meditation scores improved and people found that it was quite helpful.
+
+**[01:19:18]** There are, you know, these renegade, you know, Buddhist, you know, groups, you know, that
+
+**[01:19:23]** are using psychedelics in the other practices, which, you know, which, you know, makes a
+
+**[01:19:28]** lot of sense.
+
+**[01:19:29]** Yeah, sure.
+
+**[01:19:30]** I'm definitely curious to, I keep thinking about for my next Vipassana, maybe going
+
+**[01:19:36]** in with a little microdose and experiment with that.
+
+**[01:19:40]** Well, you know, it's, it's, it's interesting, you know, when I was going, you know, to
+
+**[01:19:46]** monastery. You know, I would spend, you know, like a weekend there, let's say. And, you know, one time,
+
+**[01:19:53]** you know, one time I was there, I just, you know, drunk ayahuasca, you know, three times with,
+
+**[01:20:00]** you know, with, you know, some friends in, you know, the Bay Area. And, like, I was,
+
+**[01:20:09]** you know, fairly, like, flushed out, you know, by then. And I went up to the temple,
+
+**[01:20:15]** and all the monks were saying, Rick, you look so good. I was thinking, yeah, you guys are putting
+
+**[01:20:21]** down on psychedelics and you like how I look after I've tripped you three times in a week.
+
+**[01:20:25]** Yeah, so it's kind of funny. Tell me about the moment you turned away from Buddhism
+
+**[01:20:32]** and back to the Hebrew Bible.
+
+**[01:20:36]** away from enlightenment to the prophecy.
+
+**[01:20:40]** The prophecy. Yeah.
+
+**[01:20:41]** Yeah. Which is a completely different kettle of fish.
+
+**[01:20:46]** Well, you know, it
+
+**[01:20:49]** it encompasses, you know, my growing up spiritually, I think.
+
+**[01:20:54]** Like I first went to the temple when I was 22 years old
+
+**[01:20:58]** and I was depressed and confused and all that.
+
+**[01:21:01]** And I really needed, you know, some kind of anchor,
+
+**[01:21:04]** both, you know, psychologically and spiritually and, you know,
+
+**[01:21:07]** society wise, you know, they were very cool monks, you know,
+
+**[01:21:11]** like friends. I like them. They like me.
+
+**[01:21:15]** Yeah. You know, but as I grew up, you know, got into psychoanalysis,
+
+**[01:21:21]** you know, you know, got my training, you got married,
+
+**[01:21:25]** you bought a house, all those things, you know, started growing up.
+
+**[01:21:29]** You know, the spirit of free questioning,
+
+**[01:21:34]** which I had been developing over the years really met some resistance as the monastic community
+
+**[01:21:42]** got older and more stratified, more rigidified. And for some reason, the bowing in particular
+
+**[01:21:50]** started bothering me. The bowing to the big golden Buddha in the meditation hall, the bowing
+
+**[01:21:57]** into the smaller Buddha statues in the cloister walkway,
+
+**[01:22:04]** the bowing to each other, the bowing to our cushion,
+
+**[01:22:06]** the bowing to our food, the bowing to the shower,
+
+**[01:22:09]** all this bowing.
+
+**[01:22:10]** And I was thinking, at a certain point,
+
+**[01:22:15]** I started thinking, well, if I'm going to be doing all of
+
+**[01:22:21]** this bowing, shouldn't I be bowing to the most high,
+
+**[01:22:24]** as opposed to a statue or a picture or a painting.
+
+**[01:22:29]** Yeah, so that was a bit in Kuwait.
+
+**[01:22:31]** I hadn't quite put, you know, like I was asking
+
+**[01:22:35]** that question, but I really wasn't able to come up
+
+**[01:22:38]** with any good answers.
+
+**[01:22:40]** Yeah, so-
+
+**[01:22:41]** It's very questionable if, you know,
+
+**[01:22:42]** the Buddha reincarnated today, whether he would be,
+
+**[01:22:49]** you know, whether he would encourage
+
+**[01:22:51]** that kind of behavior, or like, dogma, really.
+
+**[01:22:56]** Don't you think?
+
+**[01:22:58]** Well, if the Buddha was reborn, well,
+
+**[01:23:01]** would he be reborn in India?
+
+**[01:23:04]** Or, you know, Cleveland, Ohio?
+
+**[01:23:06]** Yeah, it would just depend, I guess, on the setting.
+
+**[01:23:09]** You know, if the culture is a bowing-oriented culture,
+
+**[01:23:14]** then I suppose he'd be fine with it,
+
+**[01:23:16]** or she'd be fine with it.
+
+**[01:23:20]** Yeah, you know, so I was beginning to feel uncomfortable with all the bowing.
+
+**[01:23:26]** Um, you know, the monastic community was getting kind of rigidified.
+
+**[01:23:33]** Our teacher went through a prolonged period of poor health.
+
+**[01:23:39]** And after she came through, she got, you're rather doctrinaire, uh, and, uh,
+
+**[01:23:46]** stained glass windows of her visions were inserted into the meditation hall.
+
+**[01:23:56]** It seemed like it was becoming a bit more cultish than just
+
+**[01:24:04]** a cool group of white guys and white girls meditating together.
+
+**[01:24:10]** So that was getting to be a bit uncomfortable as well.
+
+**[01:24:14]** You know, I think you know, the last straw is when I started your writing about the intersection of Buddhism and psychedelics
+
+**[01:24:21]** I you published a paper in the journal called
+
+**[01:24:25]** Your tricycle it is a special issue, you know dedicated to your psychedelics and Buddhism. This was in 1995 or so
+
+**[01:24:33]** and the shit hit the fan
+
+**[01:24:36]** You know, you can't say psychedelics and Zen Buddhism and associate with our community
+
+**[01:24:41]** Wait, Alan Watts used to do that, didn't he?
+
+**[01:24:44]** I'm sorry?
+
+**[01:24:45]** Alan Watts used to do that, didn't he?
+
+**[01:24:47]** Right, right.
+
+**[01:24:48]** He wasn't ostracized as far as I know.
+
+**[01:24:50]** Yeah, I don't think he belonged to a community as such.
+
+**[01:24:57]** He had his own cult?
+
+**[01:24:58]** Yeah, he basically had his own organization, his own fans and fan base.
+
+**[01:25:03]** Yeah, but I was embedded in the community.
+
+**[01:25:06]** Yeah, and once I began writing about these things, yeah, like I was, you know, subject
+
+**[01:25:14]** to an inquiry, like a board of inquisition, yeah.
+
+**[01:25:19]** And it was, you know, rather uncomfortable, you know, personal letters I'd written to
+
+**[01:25:23]** monks, you know, surfaced, which were kind of embarrassing, yeah.
+
+**[01:25:28]** And it was, you know, determined, you know, that I was selling the wine of delusion,
+
+**[01:25:33]** which is against, you know, the precepts.
+
+**[01:25:35]** So I said, well, maybe I should look elsewhere.
+
+**[01:25:41]** But it was quite painful because they had basically
+
+**[01:25:44]** saved my life and had anchored me for a long, long time.
+
+**[01:25:48]** I got married there.
+
+**[01:25:50]** I started an affiliated meditation group in Sacramento,
+
+**[01:25:54]** hosted the teacher.
+
+**[01:25:55]** Monks came down regularly to teach.
+
+**[01:25:57]** So it was part and parcel of my life for a long time.
+
+**[01:26:04]** So that happened around the mid-1990s.
+
+**[01:26:07]** I was separated from my wife at the time, too.
+
+**[01:26:11]** She started sleeping with her old high school boyfriend.
+
+**[01:26:14]** I couldn't work in Canada because I was an American.
+
+**[01:26:17]** So I found work in Washington state.
+
+**[01:26:21]** So I was going back and forth like every week on ferries
+
+**[01:26:24]** and storms and all that.
+
+**[01:26:27]** So I was really down and out.
+
+**[01:26:30]** Yeah, so there's the small town in Washington
+
+**[01:26:35]** I was working in is called Port Townsend.
+
+**[01:26:37]** And there's a really cool newish bookstore there
+
+**[01:26:41]** called Phoenix Rising.
+
+**[01:26:43]** So I walked into the bookstore one day
+
+**[01:26:44]** and you're looking at Eastern religion,
+
+**[01:26:47]** yoga, tantra, magic, alchemy,
+
+**[01:26:49]** and there's this small corner for Jewish books.
+
+**[01:26:53]** And I said, I've had it with Eastern religion
+
+**[01:26:57]** an alchemy, a cult, I don't know anything about that.
+
+**[01:27:00]** So I gravitated towards the small Jewish section
+
+**[01:27:06]** of the bookstore.
+
+**[01:27:08]** Yeah, and there was a small book there
+
+**[01:27:12]** called The Kabbalah of Envy by Milton Bondar.
+
+**[01:27:16]** It was a very small book.
+
+**[01:27:18]** And I thought, well, if anybody
+
+**[01:27:22]** is feeling envy and anger and rage and jealousy
+
+**[01:27:25]** and all that, it's me.
+
+**[01:27:27]** So I opened this book up and, you know, it looked pretty interesting, a small,
+
+**[01:27:31]** like another fentanyl overdose outside.
+
+**[01:27:33]** Yeah, yeah, yeah, probably.
+
+**[01:27:36]** So, yeah.
+
+**[01:27:37]** Yeah, you know, so I started reading it, you know, bought it, you know,
+
+**[01:27:41]** took it home and it was it was like a real light bulb went off.
+
+**[01:27:46]** Like this is a completely different way of looking at spirituality.
+
+**[01:27:50]** It's it's it's a bottom up view.
+
+**[01:27:53]** it's not something which is kind of described after the...
+
+**[01:28:01]** Well, if you have an enlightenment experience
+
+**[01:28:03]** just full of potential, it's not really specific.
+
+**[01:28:06]** There's no words that are attached to that experience.
+
+**[01:28:12]** You need to interpret it after you come down.
+
+**[01:28:16]** And so your interpretation is based
+
+**[01:28:19]** on your pre-existing structure.
+
+**[01:28:22]** So in the case of Buddhism, it was an Eastern religious
+
+**[01:28:30]** culture, Hinduism, Jainism, Advaita,
+
+**[01:28:37]** those kinds of things were occurring back then.
+
+**[01:28:41]** And then you would use that enlightened platform
+
+**[01:28:45]** to describe what you think that experience
+
+**[01:28:49]** meant and its implications.
+
+**[01:28:52]** In the view of the Kabbalah of envy,
+
+**[01:28:57]** he described the Jewish model of spirituality,
+
+**[01:29:01]** which is beginning with the most minute, the most everyday.
+
+**[01:29:07]** Like, for example, there's a story in the Talmud
+
+**[01:29:11]** that distinguishes between revenge and grudges.
+
+**[01:29:15]** And I never thought of the distinction
+
+**[01:29:17]** between revenge and a grudge.
+
+**[01:29:20]** What's the difference?
+
+**[01:29:21]** You know, what is the difference between anger?
+
+**[01:29:24]** I mean, between jealousy and envy.
+
+**[01:29:36]** I thought that they were of the same cloth.
+
+**[01:29:41]** How do you differentiate them nowadays?
+
+**[01:29:43]** Yeah, yeah.
+
+**[01:29:44]** Well, you know, the distinction between,
+
+**[01:29:48]** For example, jealousy, I'm an envy.
+
+**[01:29:52]** Jealousy is you want something that somebody has.
+
+**[01:29:56]** An envy is the wish to destroy that good thing
+
+**[01:30:02]** that somebody has.
+
+**[01:30:03]** It's along the lines, if I can't have it, nobody will,
+
+**[01:30:08]** as opposed to jealousy, which is I want that thing.
+
+**[01:30:11]** And once you've got that thing,
+
+**[01:30:12]** you're happy, or you're more or less happy.
+
+**[01:30:14]** And the rather focuses on.
+
+**[01:30:17]** Like dichotomy is like if you can have it this means I can't have it and jealousy is kind of it's it's funny
+
+**[01:30:26]** if I translate it into the German language jealousy means kind of something like
+
+**[01:30:34]** ambition addiction
+
+**[01:30:36]** Which I would translate into the in some kind of drive, you know, like if I'm jealous at you
+
+**[01:30:44]** it can give me the fuel to
+
+**[01:30:49]** pursue what you have achieved right right and and envy just as you said is a much more destructive
+
+**[01:30:57]** force right right it's a lot more destructive it's like a you know distillation of anger yeah
+
+**[01:31:03]** um yeah yeah you know so that was a very you know it was you know very impressive
+
+**[01:31:10]** you know like um and you know the distinction you know you know between revenge and a grudge
+
+**[01:31:16]** It's a small story, it's about two people, let's say you're Mr. A and Mr. B. Mr. A goes
+
+**[01:31:27]** to Mr. B and he says, can I borrow your chisel?
+
+**[01:31:36]** And Mr. B says no.
+
+**[01:31:39]** So Mr. A is upset, goes back home.
+
+**[01:31:43]** and Mr. B the next day goes to see Mr. A
+
+**[01:31:49]** and he requests a much more valuable tool,
+
+**[01:31:52]** you know, like a scythe.
+
+**[01:31:54]** And Mr. A says, okay, I'll lend it to you
+
+**[01:32:00]** because I'm not like you.
+
+**[01:32:03]** So that's a grudge, as opposed to revenge,
+
+**[01:32:06]** which would have been, I'm not loaning you my scythe.
+
+**[01:32:09]** So.
+
+**[01:32:10]** does resentment fall into that? Is it a subtle feeling between those two?
+
+**[01:32:16]** resentment well it would be the emotion I suppose that would fuel you know one
+
+**[01:32:21]** way of dealing with that interaction you know versus another and both
+
+**[01:32:26]** revenge as well as grudge is motivated by resentment in my and it's it's even
+
+**[01:32:36]** higher in the action of revenge?
+
+**[01:32:39]** Yeah, like in revenge, it's one and done.
+
+**[01:32:42]** You get back at the person.
+
+**[01:32:44]** If it's a grudge, it could persist for decades
+
+**[01:32:47]** or for millennia.
+
+**[01:32:49]** So if you look at those kinds of dynamics,
+
+**[01:32:52]** you can expand them into all kinds of fields,
+
+**[01:32:58]** like interpersonal, between you and your own body,
+
+**[01:33:02]** between you and your friends,
+
+**[01:33:04]** between you and your family,
+
+**[01:33:06]** between you and the market,
+
+**[01:33:08]** between you and the larger culture,
+
+**[01:33:09]** between you and God.
+
+**[01:33:11]** Yeah, you know, so it's a bottom-up view of spirituality.
+
+**[01:33:16]** You know, it's an ethical monotheism,
+
+**[01:33:19]** which isn't the case in Eastern religions.
+
+**[01:33:22]** So I found the whole structure of ethical monotheism
+
+**[01:33:28]** to be, you know, somehow reassuring.
+
+**[01:33:32]** like it's verbal, like what one experiences
+
+**[01:33:36]** in the prophetic state, which I'm describing or defining
+
+**[01:33:40]** as any spiritual experience in any figure in the text.
+
+**[01:33:44]** So it could be increased strength or inspiration
+
+**[01:33:48]** or teaching.
+
+**[01:33:50]** The canonical prophets like Isaiah and Ezekiel,
+
+**[01:33:54]** they had visions.
+
+**[01:33:56]** But even then, the visions were only the avenue
+
+**[01:34:01]** or the means of communicating the message.
+
+**[01:34:03]** And the message is verbal.
+
+**[01:34:06]** So you have words baked into the experience,
+
+**[01:34:08]** as opposed to words only coalescing around the experience
+
+**[01:34:13]** once you've come down, which would
+
+**[01:34:14]** be the case in a formless enlightenment state.
+
+**[01:34:18]** So it provided much more structure,
+
+**[01:34:21]** and a structure that was extremely sophisticated.
+
+**[01:34:27]** When I first discovered Buddhism as a college student,
+
+**[01:34:31]** it was like a hand in a glove.
+
+**[01:34:33]** This is great.
+
+**[01:34:35]** And I was insufferable for months and months.
+
+**[01:34:38]** I wanted everybody to learn about Buddhism.
+
+**[01:34:41]** So it was the same feeling like I
+
+**[01:34:45]** had discovered this goldmine of ethical and intellectual
+
+**[01:34:52]** richness.
+
+**[01:34:53]** So, whenever I read an interesting book,
+
+**[01:34:58]** I like to go to the original sources.
+
+**[01:35:01]** And for Bonder's book, the Kabbalah of Envy,
+
+**[01:35:05]** it's the Bible, the Talmud too,
+
+**[01:35:07]** but the Bible is much more accessible.
+
+**[01:35:10]** Coming full circle, what did you discover?
+
+**[01:35:16]** Where do all these philosophies,
+
+**[01:35:19]** Buddhism, Judaism, Christianity,
+
+**[01:35:22]** and in a wider sense, psychedelics,
+
+**[01:35:26]** where do they overlap?
+
+**[01:35:32]** I think each of them possesses tools.
+
+**[01:35:38]** You know, like in Judaism, it's your study and prayer,
+
+**[01:35:43]** you know, mostly.
+
+**[01:35:44]** In your Buddhism, your meditation and study,
+
+**[01:35:49]** your Christianity, prayer, not that much study.
+
+**[01:35:53]** Like if you're a Catholic, you don't really study, if you're a Christian, you might.
+
+**[01:36:04]** Well I think they all, well psychedelics are only a tool, they're not really a religion.
+
+**[01:36:10]** For some they are.
+
+**[01:36:12]** Well yeah, like I was mentioning this psychedelic religion of mystical consciousness, it's
+
+**[01:36:20]** It's a bit of a schmoz though, it's a combination of, you know, Vedanta, you know, New Age stuff,
+
+**[01:36:28]** you know, shamanism, you know, maybe some, you know, Christianity thrown in for good
+
+**[01:36:33]** measure.
+
+**[01:36:36]** But you know, when you have a universal religion, you have to ask, you know, whose universal
+
+**[01:36:42]** religion is it?
+
+**[01:36:44]** And you know, what if you don't believe it?
+
+**[01:36:45]** Are you a heretic?
+
+**[01:36:47]** Or have you not had the experience which would make you believe in that universal religion?
+
+**[01:36:54]** You know, so I don't think there really is a psychedelic, you know, religion that can
+
+**[01:36:58]** hold a candle to the, you know, to the traditional religions out there.
+
+**[01:37:03]** Like, you know, like, you know, where's this, the scripture emanating out of, you
+
+**[01:37:07]** know, the psychedelic religion?
+
+**[01:37:09]** There's not much.
+
+**[01:37:10]** more of an aesthetic, like the art and the music, but the verbal, intellectual, scriptural
+
+**[01:37:24]** production really is rather meager. There's Terence, but I don't think Terence's writings
+
+**[01:37:30]** would qualify as religious. They're more philosophical and fun.
+
+**[01:37:35]** Yeah, what I was trying to get to is something I've experienced over and over and over again
+
+**[01:37:43]** which is
+
+**[01:37:44]** the overlap in
+
+**[01:37:48]** the
+
+**[01:37:49]** How should I call it?
+
+**[01:37:53]** in in in the mantra of
+
+**[01:37:56]** everything we all want right like when I think about tantra or
+
+**[01:38:01]** or when I compare my experience in tantric philosophy as well as my psychedelic experiences,
+
+**[01:38:10]** there's this, how should I call it?
+
+**[01:38:16]** I mean, they both point into the same direction.
+
+**[01:38:21]** Which is?
+
+**[01:38:22]** That we are all one, that we are everyone part of God,
+
+**[01:38:29]** part of the universal consciousness,
+
+**[01:38:32]** whatever you want to call it.
+
+**[01:38:34]** Yeah, so where did you get that idea?
+
+**[01:38:39]** From tantric literature and experimental journeys
+
+**[01:38:47]** in the psychedelic realm.
+
+**[01:38:48]** Yeah, well, I think the main function
+
+**[01:38:51]** or the main effect of psychedelics
+
+**[01:38:54]** is to make what's already in your mind more meaningful.
+
+**[01:38:58]** You're more dedicated to it.
+
+**[01:39:01]** So if you had never heard of tantra.
+
+**[01:39:04]** which was like, I had my very first psychedelic experiences
+
+**[01:39:07]** years before I started digging into Tantra.
+
+**[01:39:13]** Yeah, well, do you think the seed
+
+**[01:39:15]** had already been planted somehow
+
+**[01:39:17]** or another in your upbringing,
+
+**[01:39:19]** in your parents' interests?
+
+**[01:39:22]** Potentially, but we all then,
+
+**[01:39:24]** I mean, when I look into reports of,
+
+**[01:39:29]** be it DMT or five MEO DMT
+
+**[01:39:31]** or like any other psychedelic really,
+
+**[01:39:32]** that's what we hear over and over again, isn't it?
+
+**[01:39:36]** Like, how do you explain that this phenomena
+
+**[01:39:38]** that we are all like biased and conditioned into?
+
+**[01:39:42]** I think so.
+
+**[01:39:43]** Yeah?
+
+**[01:39:44]** Yeah, I think so.
+
+**[01:39:45]** Yeah, it's a meme.
+
+**[01:39:46]** You know, there were all one.
+
+**[01:39:47]** That's not really true.
+
+**[01:39:50]** I'm not you, you're not me.
+
+**[01:39:51]** I mean, at a very abstract level,
+
+**[01:39:53]** that might be the case, you know, but, you know,
+
+**[01:39:57]** when I was going through all, you know,
+
+**[01:40:00]** like all of that terrible stuff in the mid-1990s,
+
+**[01:40:04]** I went to some Tibetan Buddhist teacher.
+
+**[01:40:06]** And I said, why can't I be more compassionate?
+
+**[01:40:09]** Why can't I be more enlightened?
+
+**[01:40:10]** Why can't everything be one?
+
+**[01:40:12]** And he said, 99.9% of the time, it's not.
+
+**[01:40:17]** There's the relative and there's the absolute.
+
+**[01:40:20]** Get into the relative because that's where you live
+
+**[01:40:22]** and that's where things,
+
+**[01:40:25]** that's where the rubber meets the road.
+
+**[01:40:26]** How aware are you, in this case, of your own movement?
