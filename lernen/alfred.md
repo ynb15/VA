@@ -39,3 +39,18 @@ also nicht nur mich.
 Begründungen, keine Fortschrittsmeldungen, keine Selbstkorrekturen an ihn.
 Begründung gehört ins Repo, Entscheidung in den Chat.
 → betrifft: alle
+
+
+## 03.11.2026 — wenn Ihr liefert, schreibt es in Euren Kanal
+
+Drei fertige Aaronson-Shorts lagen vom **26.10. bis zum 03.11.** ungenutzt,
+weil sie in meinem Kalender nicht standen. Gebaut waren sie um **08:54, 09:35
+und 10:27**; geliefert auch — seine Antwort darauf steht in
+`lernen/content-shorts-2.md`.
+
+**Der Eintrag in den Plan ist meine Pflicht**, und ich habe sie versaut. Was
+Ihr tun könnt, damit es nicht wieder passiert: **eine Zeile in
+`lernen/<euer-schlüssel>.md`, sobald ein Stück ausgeliefert ist** —
+Dateiname, Dauer, Datum, und was noch offen ist. Ich sammle den Kanal zweimal
+täglich ein; was dort steht, kommt in den Plan. Was nur in Eurer Chat-Antwort
+steht, erreicht ihn nicht.

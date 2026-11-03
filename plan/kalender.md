@@ -82,9 +82,9 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 |---|---|---|---|
 | So 01.11. | Clip | **Kingsbury · „Kampf“** (Shorts I, 48:11–58:43) | **bei ihm** — 01.11. 08:33 geliefert, 10:32, Schnitt auf ganzen Sätzen |
 | Mo 02.11. | Short | **Craig Makhosi · Into the Wild** (Cinematic, Fassung E) | gebaut, nicht abgenommen |
-| Di 03.11. | Short | — | **offen** — Logan herausgenommen |
-| Mi 04.11. | Short | — | **offen** — Logan herausgenommen |
-| Do 05.11. | Short | — | **offen** — Logan herausgenommen |
+| Di 03.11. | Short | **Aaronson · ‚AI2027‘** (Shorts II, mit Musik) | **bei ihm** — 26.10. 08:54 fertig, seitdem ungenutzt · *Zuordnung auf diesen Tag ist mein Vorschlag, nicht seine Festlegung* |
+| Mi 04.11. | Short | **Aaronson · ‚How safe is AI‘** (Shorts II, Fassung 2, 58,0 s) | **bei ihm** — 26.10. 09:35 fertig, seitdem ungenutzt · *mein Vorschlag* · Vorsicht: der 7:34-Clip derselben Stelle ist am 24.10. als `YO_sGYH1dm8` schon raus |
+| Do 05.11. | Short | **Aaronson · ‚What do you believe in?‘** (Shorts II, Religionsblock) | **bei ihm** — 26.10. 10:27 fertig, seitdem ungenutzt · *mein Vorschlag* |
 | Fr 06.11. | Short | — | offen |
 | Sa 07.11. | Clip | 3–10 Min | offen |
 | So 08.11. | Clip | 10–20 Min | offen |
@@ -196,3 +196,33 @@ keiner, wenn man es noch einmal liefert. Die Null bleibt richtig.
 **ohne Bett**, 4K). Teacher und Playmate hängen an seiner Musikwahl — bei
 Playmate wörtlich: *„bei dem Playmate Marriage Short bin ich noch nicht ganz
 happy mit der Musik."*
+
+
+## Drei fertige Aaronson-Shorts lagen seit dem 26.10. außerhalb des Kalenders — 03.11.2026
+
+**Mein Fehler, und er hat eine Woche gekostet.** Shorts II hat am **26.10.
+zwischen 08:54 und 10:27** drei Shorts fertiggebaut und ihm geliefert:
+
+| Short | Commit | Dateien |
+|---|---|---|
+| Aaronson · ‚AI2027‘ | `2e8e6b6` 08:54 | Fassung mit Musik, Untertitel, Liste |
+| Aaronson · ‚How safe is AI‘, Fassung 2 | `bf718a2` 09:35 | 58,0 s, Schluss auf „the burden is on them“ |
+| Aaronson · ‚What do you believe in?‘ | `f939cf1` 10:27 | aus dem Religionsblock |
+
+**Belegt geliefert**, nicht nur gebaut — seine Antwort steht in
+`lernen/content-shorts-2.md`: *„Ich weiß nicht, warum du mir jetzt nochmal
+einen Short ohne Musik geschickt hast.“*
+
+**Keiner der drei stand je in diesem Kalender.** Vom 28.10. bis zum 02.11.
+habe ich Sutcliffe, Makhosi und Kingsbury in die Tage geschrieben und drei
+fertige Stücke übersehen. Am 02.11. habe ich „drei November-Slots ohne
+Quelle“ gemeldet, während genau drei fertige Shorts danebenlagen.
+
+**Der Grund ist der gleiche wie bei Logan:** ich habe den Kalender gegen meine
+eigenen Einträge geprüft und nicht gegen die Zweige der Agenten. Ein Short,
+den ich nicht eingetragen habe, existiert im Kalender nicht — aber er
+existiert.
+
+**Regel: `git log --since=14.days --name-only` über alle Content-Zweige, bevor
+ich „keine Quelle“ in einen Tag schreibe.** Der Zweig ist die Quelle, mein
+Kalender ist nur die Abschrift.

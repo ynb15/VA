@@ -9151,3 +9151,41 @@ wenn der Vermittler die Weiterleitung angeboten hat.
 
 **Keiner dieser Sätze wird erfunden oder umformuliert.** Sie stehen hier, damit
 ein Entwurf sie zitieren kann statt sie zu konstruieren.
+
+
+## Der Zweig ist die Quelle, mein Kalender ist nur die Abschrift — 03.11.2026
+
+**Am 02.11. habe ich „drei November-Slots ohne Quelle“ gemeldet. Es lagen drei
+fertige Shorts daneben.** Shorts II hatte sie am **26.10. zwischen 08:54 und
+10:27** gebaut und geliefert — AI2027, ‚How safe is AI‘ Fassung 2 (58,0 s),
+‚What do you believe in?‘. Belegt ist die Lieferung durch seine eigene Antwort
+darauf, die in `lernen/content-shorts-2.md` steht: *„Ich weiß nicht, warum du
+mir jetzt nochmal einen Short ohne Musik geschickt hast.“*
+
+**Keiner der drei stand je in `plan/kalender.md`.** Sechs Tage lang habe ich
+Sutcliffe, Makhosi und Kingsbury in die Tage geschrieben und drei fertige
+Stücke übersehen, und am siebten Tag Alarm wegen leerer Slots geschlagen.
+
+**Es ist derselbe Fehler wie bei Logan**, nur in die andere Richtung. Bei Logan
+stand in vier Tagen eine Quelle, die es nicht gab, und der Vorrat sah zu gut
+aus. Hier stand in drei Tagen keine Quelle, obwohl es sie gab, und der Vorrat
+sah zu schlecht aus. **Beide Male war die Ursache, dass ich den Kalender gegen
+meine eigenen Einträge geprüft habe.** Ein Kalender, der sich selbst
+bestätigt, prüft nichts.
+
+**REGEL: bevor „keine Quelle“ oder „Vorrat 0“ in einen Tag oder in eine
+Meldung geht:**
+```
+git fetch origin
+git log --all --since=14.days --name-only --format='--- %h %cd %s' \
+  --date=format:'%d.%m. %H:%M' | grep -iE 'video/shorts|video/.*\.md|^---'
+```
+**Was auf einem Content-Zweig liegt, existiert — auch wenn ich es nicht
+eingetragen habe.** Der Eintrag ist meine Pflicht, nicht die des Agenten; aber
+die Prüfung läuft gegen den Zweig, nicht gegen die Abschrift.
+
+**Und die Folge für die Lage:** der Vorrat war nie 0. Er stand auf **3**. Was
+wirklich fehlt, ist nicht Produktion, sondern **Abnahme** — zwölf fertige
+Stücke (drei Aaronson, neun Kingsbury) warten auf seine Entscheidung. Das ist
+ein anderer Befund als „der Kasten ist leer“, und ich habe ihn eine Woche
+lang falsch gemeldet.

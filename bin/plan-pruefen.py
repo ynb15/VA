@@ -37,6 +37,11 @@ BEOBACHTEN = [
      "Neun Shorts liegen fertig und bestehen die Abnahme; drei Entscheidungen "
      "bei ihm. Offen: 55 Min der Folge ohne Transkript \u2014 eine Niedrig"
      "aufloesung ab 74:40 ist bei Christoph angefragt."),
+    ("Aaronson", "DREI fertige Shorts liegen seit dem 26.10. bei ihm und "
+     "waren bis zum 03.11. nicht im Kalender: AI2027 (08:54), How safe is AI "
+     "Fassung 2 (09:35, 58,0 s), What do you believe in? (10:27). Jetzt auf "
+     "03., 04. und 05.11. gelegt — das ist MEIN Vorschlag, nicht seine "
+     "Festlegung. Abnahme fehlt bei allen drei."),
 ]
 
 # Wer eine Folge schneidet, entscheidet die Folge, nicht die Frist.

@@ -45,6 +45,44 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 29 — 03.11.2026, 15:54 Kapstadt · ein geliefertes Stück, das in keinem Kalender steht, wird nicht veröffentlicht
+
+- **Drei fertige Shorts lagen eine Woche ungenutzt, weil ich sie nicht
+  eingetragen hatte.** Shorts II hat am 26.10. um **08:54, 09:35 und 10:27**
+  AI2027, ‚How safe is AI‘ (58,0 s) und ‚What do you believe in?‘ gebaut und
+  geliefert — belegt durch seine eigene Antwort darauf: *„Ich weiß nicht,
+  warum du mir jetzt nochmal einen Short ohne Musik geschickt hast.“* Keiner
+  der drei stand in `plan/kalender.md`. Am 02.11. habe ich **„drei
+  November-Slots ohne Quelle“** gemeldet, während drei fertige Shorts
+  danebenlagen. **Der Fehler ist meiner** — ich habe den Kalender gegen meine
+  eigenen Einträge geprüft statt gegen Eure Zweige. Was daraus für Euch folgt:
+  **wenn Ihr ein Stück abliefert, schreibt es in `lernen/<euer-schlüssel>.md`
+  mit Dateinamen und Dauer.** Eine Lieferung, die nur in Eurer Chat-Antwort
+  steht, erreicht den Plan nicht — und wird dann nicht veröffentlicht.
+  → betrifft: alle Content-Agenten
+- **Nur eine Fassung ausliefern, nicht zwei.** Seine Reaktion vom 26.10.,
+  wörtlich: *„Ich weiß nicht, warum du mir jetzt nochmal einen Short ohne
+  Musik geschickt hast.“* Die Sicherungsfassung gehört ins Repo, nicht in die
+  Lieferung — **eine Datei pro Short, die andere nur auf Nachfrage.** Zweites
+  Mal in vier Tagen (22.10. dasselbe mit dem AIGod-Short).
+  → betrifft: alle Content-Agenten
+- **`large-v3` ist nicht automatisch besser als `medium`.** Das größere
+  Whisper-Modell glättet Stotterer: aus *„like this is, this is really all a
+  bunch of“* macht es *„this is really all a bunch of“*. Für eingebrannte
+  Untertitel, die zu den Lippen passen müssen, ist das ein Nachteil.
+  **`medium` für den Durchgang, `large-v3` nur als Schiedsrichter für ein
+  einzelnes strittiges Wort** — und dann am **ungedähnten** Ton, weil die
+  Dehnung selbst Fehler erzeugt: bei Tempo 1,12 hörte `medium` „well“, wo
+  „wow“ steht.
+  → betrifft: content-*
+- **Der Rohzeit-Versatz ist nicht über die Folge konstant.** An der Stelle
+  „What do you believe in?“ sind es **12,6 s** (Master 4285,96 s → roh
+  1:11:38,6), während Shorts I und `video/aaronson-shorts.md` **12,2 s**
+  nennen. **Wer bildgenau schneidet, misst den Versatz an seiner Stelle neu**
+  — dasselbe Muster wie bei Kingsbury (135 s bis Minute 10, 153–158 s ab
+  Minute 13).
+  → betrifft: content-*
+
 ## Ausgabe 28 — 31.10.2026, 06:40 Kapstadt · keine automatische Prüfung sieht einen angeschnittenen Kopf
 
 - **Ein Sicherheitsabstand, der so groß ist wie der Messfehler darunter, ist
