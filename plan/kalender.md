@@ -226,3 +226,33 @@ existiert.
 **Regel: `git log --since=14.days --name-only` über alle Content-Zweige, bevor
 ich „keine Quelle“ in einen Tag schreibe.** Der Zweig ist die Quelle, mein
 Kalender ist nur die Abschrift.
+
+
+## Strassman T−8 am 04.11. erfüllt — und das Material sagt selbst, dass die Folge noch nicht da ist
+
+**Einen Tag vor der Frist**, wie schon bei T−10. Cinematic hat
+`video/strassman-auswahl.md` geliefert: **zwei lange Stücke mit je einem
+Ersatz, elf Short-Kandidaten**, jeder mit erstem und letztem Satz, damit in
+der Endfassung nach dem **Wortlaut** gesucht wird und nicht nach Minute
+gerechnet.
+
+| | Stelle | roh | Länge |
+|---|---|---|---|
+| Samstag (3–10 Min) | „Now do you see" — erste DMT-Erfahrung, McKenna | 23:56–27:20 | 3:24 |
+|  Ersatz | Wie er den War on Drugs dazu brachte, DMT zu finanzieren | 33:07–41:07 | 8:00 |
+| Sonntag (10–20 Min) | Weg von Buddhismus, hin zur hebräischen Bibel | 01:19:40–01:35:10 | 15:30 |
+|  Ersatz | Was 400 DMT-Dosen wirklich ergaben | 47:51–57:45 | 9:54 |
+
+**Der Befund, der für den Plan zählt:** zwischen **01:06:22 und 01:09:18**
+liegen zwei Minuten sechsundfünfzig Sekunden Stille — eine Pause im
+Gespräch. **Jede Schnittfassung wirft das heraus**, und damit ist es der
+einzige harte Hinweis im Material, dass eine Schnittfassung noch aussteht.
+Wer sie schneidet oder wann sie kommt, steht nicht im Ton.
+
+**Gerendert wird deshalb nicht.** Alle Zeiten sind Rohzeiten und ausdrücklich
+als vorläufig gekennzeichnet. **Die offene Frage ist seine:** kommt für
+Strassman noch eine Schnittfassung von seinem Cutter, wie bei Kingsbury, oder
+ist die 15,50-GB-Sitzung die Folge?
+
+**Nächste Frist:** T−6 (Titel, Beschreibung, Tags) am **07.11.** beim
+YouTube-Manager.

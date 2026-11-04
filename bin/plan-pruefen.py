@@ -83,7 +83,12 @@ ERLEDIGT = {
     "Kyle Kingsbury": {6},
     # T-10 am 02.11. erfuellt, einen Tag vor der Frist: Transkript liegt,
     # 1641 Segmente ueber 120,9 Minuten (claude/content-cinematic).
-    "Rick Strassman": {10},
+    # T-8 am 04.11. erfuellt, ebenfalls einen Tag vor der Frist:
+    # video/strassman-auswahl.md — zwei lange Stuecke mit Ersatz, elf Shorts,
+    # alle ueber den Wortlaut verortet statt ueber eine Rechnung. Rohzeiten
+    # ausdruecklich als vorlaeufig gekennzeichnet; gerendert wird nicht, weil
+    # die 15,50-GB-Datei die ganze Sitzung ist und nicht die Folge.
+    "Rick Strassman": {10, 8},
 }
 
 # Entscheidungspunkte: Tag -> was an diesem Tag entschieden werden muss, und

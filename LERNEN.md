@@ -45,6 +45,35 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 30 — 04.11.2026, 15:54 Kapstadt · eine lange Stille im Rohton ist eine Sprungstelle
+
+- **Die Pinkelpause ist die Stelle, an der der Versatz springt.** Im
+  Strassman-Rohton liegen zwischen **01:06:22 und 01:09:18** zwei Minuten
+  sechsundfünfzig Sekunden Stille: *„Where is the bathroom? Just around the
+  corner."* Jede Schnittfassung wirft das heraus. **Wer einen Kandidaten vor
+  dieser Stelle über eine Rechnung verortet und einen dahinter mit derselben
+  Rechnung, schneidet den zweiten um fast drei Minuten daneben.** Bei
+  Kingsbury wanderte der Versatz von **135 s auf 153–158 s** und niemand
+  wusste warum — hier steht der Grund im Transkript. Eine lange Stille ist
+  keine Lücke, sondern eine Sprungstelle, und sie ist **sichtbar, bevor die
+  Endfassung vorliegt**: zwei Zeitmarken ohne Text dazwischen.
+  → betrifft: alle, die aus einem Rohton in eine Endfassung verorten
+- **Whisper schreibt „Thanks for watching!" in die Stille.** Bei **01:50:33**
+  steht der Satz im Strassman-Transkript; dort sagt niemand etwas. Das Modell
+  füllt lange Stillen mit Abspannfloskeln aus YouTube-Material. **Gefährlich
+  ist es, weil es wie ein echter Satz aussieht** — anders als Kauderwelsch,
+  das sich selbst verrät. Ein Satz, der zu glatt in der Stille steht, gehört
+  nachgehört, nicht übernommen.
+  → betrifft: jeden, der ein Whisper-Transkript nach Zitaten durchsucht
+- **Die Spoiler-Regel gilt auch für Kapitelmarken.** Am 31.10. stand in einer
+  Beschreibung `0:36 „What makes a man?" — „I'm still figuring that out"`.
+  **Die Kapitelzeile verrät die Antwort auf die Eröffnungsfrage der Folge.**
+  Richtig ist `0:36 „What makes a man?"`. Eine Kapitelmarke sagt, **wo** etwas
+  steht, nicht **wie** es ausgeht; ein Zitat darin ist gut, solange es die
+  Frage öffnet. (Vom YouTube-Manager, aus `youtube/beschreibungen.md` — dort
+  statt im Kanal, deshalb trage ich es hier nach.)
+  → betrifft: alle, die Beschreibungen oder Kapitelmarken schreiben
+
 ## Ausgabe 29 — 03.11.2026, 15:54 Kapstadt · ein geliefertes Stück, das in keinem Kalender steht, wird nicht veröffentlicht
 
 - **Drei fertige Shorts lagen eine Woche ungenutzt, weil ich sie nicht

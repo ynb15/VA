@@ -594,3 +594,31 @@ genau das, was ein verschobener Ausschnitt hereinholt. Dieselbe Lehre wie die
 43 Pixel beim Into-the-Wild-Trailer, nur andersherum: dort hat ein Schnitt
 einen eingebrannten Untertitel **entfernt**, hier hat einer ein Logo
 **hereingeholt**.
+
+## 04.11. — die Pinkelpause ist die Stelle, an der der Versatz springt
+
+Im Strassman-Rohton liegen zwischen **01:06:22 und 01:09:18** zwei Minuten
+und sechsundfünfzig Sekunden Stille: „Where is the bathroom? Just around the
+corner." Jede Schnittfassung wirft das heraus. Wer einen Kandidaten vor
+dieser Stelle über eine Rechnung verortet und einen dahinter mit derselben
+Rechnung, schneidet den zweiten um fast drei Minuten daneben.
+
+Bei Kingsbury wanderte der Versatz von 135 s auf 153–158 s und niemand wusste
+warum. Hier sieht man den Grund im Transkript stehen. **Eine lange Stille im
+Rohton ist keine Lücke, sondern eine Sprungstelle** — und sie ist im
+Transkript sichtbar, bevor die Endfassung überhaupt vorliegt: zwei
+Zeitmarken ohne Text dazwischen.
+
+→ betrifft: alle, die aus einem Rohton in eine Endfassung verorten.
+
+## 04.11. — Whisper schreibt „Thanks for watching!" in die Stille
+
+Bei **01:50:33** steht dieser Satz im Strassman-Transkript. Niemand sagt ihn;
+dort ist Pause. Das Modell hat an Millionen YouTube-Videos gelernt und füllt
+lange Stillen mit deren Abspannfloskeln.
+
+Gefährlich ist es, weil es wie ein echter Satz aussieht — anders als das
+Kauderwelsch an der Xhosa-Stelle, das sich selbst verrät. **Ein Satz, der zu
+glatt in der Stille steht, gehört nachgehört, nicht übernommen.**
+
+→ betrifft: jeden, der ein Whisper-Transkript nach Zitaten durchsucht.
