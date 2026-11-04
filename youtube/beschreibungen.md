@@ -25,6 +25,15 @@
 > actually paid him to answer…"* — Laufzeit, drei bis vier konkrete Dinge,
 > Auslassungspunkte.
 >
+> **Die Regel gilt auch fuer Kapitelmarken.**
+> Am 31.10. stand bei mir `0:36 "What makes a man?" - "I'm still figuring that
+> out"`. **Die Kapitelzeile verraet die Antwort auf die Eroeffnungsfrage der
+> Folge.** Richtig ist `0:36 "What makes a man?"` — sonst weiss jemand, der nur
+> die Kapitel ueberfliegt, schon, wie sie ausgeht.
+> **Eine Kapitelmarke sagt, wo etwas steht, nicht wie es ausgeht.** Ein Zitat
+> darin ist gut, solange es die Frage oeffnet; die Antwort darin ist ein
+> Spoiler, den sich niemand wuenscht.
+>
 > **5. SEO ist kein Extra, es war seine erste Anforderung.**
 > Ab dem 30.10. hatte ich es stillschweigend fallen lassen: Prosa ohne einen
 > gesetzten Suchbegriff, kein Keyword in Zeile eins, keine Hashtags, kein
