@@ -1,13 +1,13 @@
 {
  "name": "Paddock-Folge - die ganze Stelle, zum Ansehen",
  "datei": "YNB Podcast Rob Paddock Son (ganze Stelle, In This Shirt).mp4",
- "stand": "2026-11-05 - dritte Fassung, auf seinen Wunsch zum Vergleich",
+ "stand": "2026-11-05 - vierte Fassung: Anfang bei 'I've certainly never spoken', Pilzsatz wieder drin",
  "seine_ansage": "'gib mir doch nochmal das Short mit dem Intro, wo ihr die Mushrooms erwaehnt, weil sonst macht das halt keinen Sinn. Und lass dann den Namen doch nochmal drin, damit ich einmal ganz sehen kann, wie das Ganze wirkt.'",
  "was_anders_ist": "Gegenueber der kurzen Fassung sind BEIDE Namensstellen wieder drin (Quelle 875,5-883,3 und 890,2667-906,8) und das Intro steht wieder davor (782,0333-825,6). Die beiden Stuecke C, D, E der ersten Fassung sind damit EIN durchlaufendes Stueck von 846,4 bis 918,0.",
  "schnitt": {
   "stuecke_quelle_s": [
    [
-    782.0333,
+    791.3,
     796.2
    ],
    [
@@ -15,16 +15,26 @@
     825.6
    ],
    [
+    838.1,
+    838.5
+   ],
+   [
+    838.9333,
+    841.0333
+   ],
+   [
     846.4,
     918.0
    ]
   ],
   "bilder_je_stueck": [
-   425,
+   147,
    762,
+   12,
+   63,
    2148
   ],
-  "dauer_roh_s": 111.1667,
+  "dauer_roh_s": 104.4,
   "heraus": {
    "796.2-800.2": "'Well, this is the only way to podcast.' - Zwischenruf",
    "825.6-846.4": "Fruchtbarkeits-Abschweifung ('more likely on Ash's side') und der Stotterer 'I think it was my first - was my second mushroom experience ever'"
@@ -67,9 +77,9 @@
  },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
  "laenge_s": {
-  "hauptteil": 96.7,
+  "hauptteil": 90.8,
   "outro": 4.21,
-  "gesamt": 100.95
+  "gesamt": 95.05
  },
  "zu_bedenken": {
   "f_wort": "Im wieder eingesetzten Block faellt 'Shut the fuck up' - im Bild steht es ungepiept.",
@@ -80,5 +90,19 @@
   "YNB Podcast Rob Paddock Son (ganze Stelle).mp4",
   "YNB Podcast Rob Paddock Son (ganze Stelle, In This Shirt).mp4"
  ],
- "warum_eigener_name": "Die kurze Fassung behaelt den Grundnamen 'YNB Podcast Rob Paddock Son.mp4'."
+ "warum_eigener_name": "Die kurze Fassung behaelt den Grundnamen 'YNB Podcast Rob Paddock Son.mp4'.",
+ "aenderungen_05_11_zwei": {
+  "seine_ansage": "'It was my second mushroom experience ever. muss eigentlich noch rein und dafuer one of my first psychedelic experiences was actually um and am Anfang raus'",
+  "neuer_anfang": {
+   "bei": "Quelle 791,3 = Bild 23739. Raus: 'one of my first psychedelic experiences was actually' UND das 'and' davor dem Satz.",
+   "wie_gemessen": "Zwischen 'and' und 'I've' liegt keine Luecke. An vier Startpunkten isoliert nachtranskribiert: ab 791,00 und 791,20 hoert das Modell 'And I've certainly never...', ab 791,30 und 791,40 nur noch 'I've certainly never...'. Geschnitten bei 791,30."
+  },
+  "pilzsatz": {
+   "wie_gebaut": "Zwei Stuecke: 838,1-838,5 ('it was my', 12 Bilder) + 838,9333-841,0333 ('second mushroom experience ever', 63 Bilder). Dazwischen faellt der Stotterer 'first was' weg (0,4333 s).",
+   "wie_gemessen": "Isoliert nachtranskribiert: 838,10-838,55 ergibt 'it wasn't my f-', 838,55-839,25 'first was my second', ab 838,95 'second mushroom experience ever', ab 838,85 schon 'my second...'. Die zusammengesetzte Naht ergibt im Test 'it was my second mushroom experience ever'.",
+   "warum_harter_schnitt": "Beide Stuecke liegen in derselben Einstellung (Quelle 801,3-865,1). Ein durchlaufendes Bild haette den Ton bis zum Ende des Stuecks 0,43 s gegen die Lippen verschoben - in der Nahaufnahme sichtbar. Ein Versatz von 0,43 s im Schnitt ist dagegen kaum zu sehen.",
+   "preis": "Zwei Nahtstellen 0,4 s auseinander (Clipzeit 30,30 und 30,70). Das ist die unruhigste Stelle des Shorts."
+  },
+  "einblendungen": "135. NICHT neu transkribiert: der zweite Durchlauf von Whisper medium war schlechter als der erste (er verschluckte 'had' in 'until I had transcended', machte aus 'gone through' ein 'through' und setzte ein 'Now' vor den Pilzsatz). Stattdessen die bereits geprueften Einblendungen der dritten Fassung verschoben - vorne um 9,2667 s, hinten um 6,7667 s - und drei fuer den Pilzsatz von Hand gesetzt."
+ }
 }
