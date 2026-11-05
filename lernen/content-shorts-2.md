@@ -6,6 +6,53 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-11-05 — Ubuntu-Short, Fremdsprache im Untertitel, und ein Fehlalarm
+
+- **Ein fremdsprachiges Wort braucht mindestens zwei Modelle und zwei
+  Geschwindigkeiten, sonst brennt man Unsinn ein.** Craig nennt das
+  Sprichwort auf isiXhosa. `medium` schrieb *„umtu ngumtu ngabania ubuntu ah
+  ngabania abantu"* — und **ueberhoerte die zweite, kuerzere Form komplett**
+  (2,2 s Luecke zwischen „otherwise" und „which"). `large-v3` bei normal,
+  0,7× und 0,6× dreimal wortgleich: **Umntu ngumntu ngabanye abantu** und
+  **Umntu ngumntu ngabantu**. **Regel: wo eine Sprache steht, die das Modell
+  nicht kann, wird jedes Wort mit einem zweiten Modell und verlangsamtem Ton
+  gegengeprueft, bevor es eingebrannt wird.**
+  → betrifft: alle Content-Agenten
+- **`korrekturen.txt` kann auch einfuegen, nicht nur ersetzen.** Fuer die
+  verschluckte Form steht jetzt `otherwise which -> otherwise Umntu ngumntu
+  ngabantu which` (2 Woerter → 5). `korrekturen_anwenden` erlaubt
+  n→m-Abbildungen und verteilt die Ersetzung gleichmaessig ueber die Zeit
+  der ersetzten Gruppe. Nachgemessen landen die eingefuegten Woerter **auf
+  0,05 s genau** auf dem gesprochenen Wort, weil die Luecke genau die
+  Sprechzeit ist. **Wer eine Luecke fuellen will, ersetzt die Klammer
+  drumherum.**
+  → betrifft: content-*, alle
+- **Die Musikpruefung in `abnahme.py` ist an einem einzigen Studio
+  kalibriert und meldet an anderem Material Fehlalarm.** Schwelle −65 dB,
+  gemessen am fertigen Ubuntu-Short **−62,4 dB** — ohne jede Musik. Der
+  **Rohausschnitt misst an derselben Stelle −62,5 dB**, am Anfang −61,7 dB:
+  es ist der Raumton des Craig-Studios. Aaronson liegt bei −85,3 dB, daher
+  die Schwelle. **Vorschlag an Shorts I: die Schwelle nicht fest setzen,
+  sondern gegen den Boden der Quelle pruefen** — ein Bett hebt den Boden um
+  15–20 dB, das ist der eigentliche Nachweis. **Nicht geaendert, das
+  Werkzeug gehoert Shorts I.**
+  → betrifft: content-assistant, alfred, content-*
+- **4K-Quellen drehen die Ausschnittsrechnung um.** Bei 1920×1080 kostet
+  9:16 eine Hochskalierung von **1,78×**; bei 3840×2160 ist der volle
+  Hoehenausschnitt **1215×2160** und wird auf 1080×1920 **herunter**gerechnet
+  (0,89×), und ein 1080×1920-Ausschnitt ist **exakt 1:1**. **Aus 4K darf man
+  deshalb enger schneiden als aus HD** — fuer die Totale habe ich das
+  genutzt und Craig 1:1 statt klein in der Weite stehen lassen.
+  → betrifft: alle Content-Agenten
+- **Wer im Bild ist, sagt die Folge, nicht ich.** Bei seiner Fehldefinition
+  schneidet die Folge selbst auf ihn (Quelle 116,40 → 118,60). Ich hatte das
+  erst nur als Beleg genommen, wer spricht; seine Ansage dazu: *„nein ich
+  kann da drin bleiben weil ich das doch da sage."* **Bei fertig
+  geschnittenem Quellmaterial sind die Kameraschnitte der Folge die
+  Vorgabe** — uebernehmen, nicht neu entscheiden. Ergebnis: vier Wechsel,
+  kein einziger von mir, keine Auslassung.
+  → betrifft: content-*
+
 ## 2026-10-26 (spaet) — Belief-Short, und zwei Dinge ueber Werkzeug
 
 - **Nur eine Fassung schicken, nicht zwei.** Ich hatte ihm Musik- und

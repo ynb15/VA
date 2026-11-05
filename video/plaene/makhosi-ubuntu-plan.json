@@ -1,0 +1,37 @@
+{
+  "quelle": "vorlage-ubuntu.mov",
+  "groesse": [
+    3840,
+    2160
+  ],
+  "einstellungen": [
+    {
+      "kasten": "1409:0:1215:2160",
+      "lippe": 1100,
+      "start": 0.0,
+      "ende": 2.2,
+      "wer": "Yannick — seine Fehldefinition 'I am because we are'"
+    },
+    {
+      "kasten": "1352:0:1215:2160",
+      "lippe": 1080,
+      "start": 2.2,
+      "ende": 20.233,
+      "wer": "Craig, Nah — 'that's a common misunderstanding'"
+    },
+    {
+      "kasten": "2404:200:1080:1920",
+      "lippe": 1020,
+      "start": 20.233,
+      "ende": 31.967,
+      "wer": "Totale, Kasten auf Craig — die isiXhosa-Woerter"
+    },
+    {
+      "kasten": "1352:0:1215:2160",
+      "lippe": 1080,
+      "start": 31.967,
+      "ende": 49.967,
+      "wer": "Craig, Nah — 'we are who we are through our relations'"
+    }
+  ]
+}
