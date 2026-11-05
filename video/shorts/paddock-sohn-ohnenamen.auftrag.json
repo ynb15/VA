@@ -1,7 +1,7 @@
 {
  "name": "Paddock-Folge - ohne Namen und ohne den Lacher",
  "datei": "YNB Podcast Rob Paddock Son (ohne Namen, In This Shirt).mp4",
- "stand": "2026-11-05 - fuenfte Fassung",
+ "stand": "2026-11-05 - sechste Fassung: 'So' und Lacher raus, J-Schnitt, eine Lippenhoehe",
  "seine_ansage": "'Okay, nimm das doch noch mal raus. Ich will es einfach nur noch mal sehen. Wie das rueberkommt, wenn da nicht halt dieser Witz, wenn nicht das Lachen drin ist. Dann noch ein bisschen epischer' - dazu die Zeilen 16 bis 24 des Skripts als Zitat.",
  "schnitt": {
   "stuecke_quelle_s": [
@@ -38,9 +38,61 @@
    873,
    336
   ],
-  "dauer_roh_s": 73.1,
+  "dauer_roh_s": 71.9667,
   "heraus_gegenueber_der_vierten_fassung": "875,5 bis 906,8 = 31,30 s: der Name ('Chadwick Graham Paddock'), 'I went over to my wife that night', die Reaktion seiner Frau samt F-Wort und die ganze Namenssuche bis 'Grey Kahn Paddock'.",
-  "die_naht_ist_unsichtbar": "875,5 liegt in der Totale (Einstellung 865,1333-901,10), 906,8 in der Nahaufnahme (ab 901,10). Der Bildsprung faellt damit auf einen echten Kamerawechsel. Mit schnittgrenzen.py nachgemessen: Unterschied 60,6 gegen Ruhepegel 0,46 - und keine der vier Grenzen musste bewegt werden."
+  "die_naht_ist_unsichtbar": "875,5 liegt in der Totale (Einstellung 865,1333-901,10), 906,8 in der Nahaufnahme (ab 901,10). Der Bildsprung faellt damit auf einen echten Kamerawechsel. Mit schnittgrenzen.py nachgemessen: Unterschied 60,6 gegen Ruhepegel 0,46 - und keine der vier Grenzen musste bewegt werden.",
+  "bild_stuecke_quelle_s": [
+   [
+    791.3,
+    794.4667
+   ],
+   [
+    799.6,
+    825.6
+   ],
+   [
+    838.1,
+    838.5
+   ],
+   [
+    838.9333,
+    841.0333
+   ],
+   [
+    846.4,
+    875.5
+   ],
+   [
+    906.8,
+    918.0
+   ]
+  ],
+  "ton_stuecke_quelle_s": [
+   [
+    791.3,
+    796.2
+   ],
+   [
+    801.3333,
+    825.6
+   ],
+   [
+    838.1,
+    838.5
+   ],
+   [
+    838.9333,
+    841.0333
+   ],
+   [
+    846.4,
+    875.5
+   ],
+   [
+    906.8,
+    918.0
+   ]
+  ]
  },
  "bild": {
   "ausgabe": "2160x3840",
@@ -73,9 +125,9 @@
  },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
  "laenge_s": {
-  "hauptteil": 63.6,
+  "hauptteil": 62.6,
   "outro": 4.21,
-  "gesamt": 67.85
+  "gesamt": 66.85
  },
  "dateien": [
   "YNB Podcast Rob Paddock Son (ohne Namen).mp4",
@@ -87,5 +139,17 @@
   "warum_das_falsch_war": "Episch ist bei diesem Titel der AUFBAU, nicht die Dichte. Wer im Hoehepunkt einsteigt, hat keine Entwicklung mehr uebrig - das Short steht 64 Sekunden auf einem Pegel. Die Messung oberhalb 2 kHz taugt dafuer, den LEISEN Anfang zu ueberspringen (dafuer war sie am 22.10. gedacht), nicht dafuer, den Einstieg zu waehlen.",
   "verzerrt_war_nichts": "Seine zweite Frage ('warum ist die Musik so verzogen') nachgemessen: Spitze -0,30 dBFS, null Samples am Anschlag. Gehoert hat er die fehlende Entwicklung, nicht eine Verzerrung.",
   "jetzt": "Zurueck auf 0:23,25 und 3 dB unter der Stimme - die Einstellung, die er beim Hypermaskulinitaets-Short abgenommen hat."
+ },
+ "aenderungen_05_11_drei": {
+  "seine_ansage": "'springt der Text einmal in der Hoehe hier an dieser Stelle bei 4 Sekunden, weil du umschaltest, und du kannst dieses \"So\" bevor \"i did\" raus cutten, weil dann ist auch mein stoerender Lacher nicht mit drin. ... das muessen wir generell einfach optimieren, dass du da bei den Uebergaengen akkurater bist.'",
+  "lippenhoehe": "Vorher je Einstellung 1186 / 1267 / 1207 / 1250 - genau so, wie bildausschnitt.py sie misst. Jetzt EIN Wert fuer den ganzen Short: 1207, der Wert der Einstellung, die 63 Prozent der Laufzeit traegt. Der Renderer meldet jetzt 'Hoehen [1207]' statt vier Werten.",
+  "so_und_lacher": "Im Ton faellt 800,22-800,98 weg: das 'So' und sein Lacher (Spitze -8,2 dB gegen -30 dB fuer das 'So'). Der Ton setzt bei 801,3333 wieder ein, 0,23 s vor 'I did it'.",
+  "j_schnitt": {
+   "warum": "Nur den Ton zu schneiden haette die Naht zwischen ZWEI AUFNAHMEN DERSELBEN KAMERA gelegt - gemessener Bildunterschied 10,3 gegen Ruhepegel 0,79. Das ist ein sichtbarer Sprung, kein Schnitt.",
+   "wie": "Das BILD schneidet schon bei 794,4667 (Clipzeit 3,20) auf die Totale ab 799,6 und laeuft durch den Kamerawechsel 801,3333 hindurch. Bild 95 + 780 Bilder gegen Ton 147 + 728 Bilder - die Summen sind gleich, und am Kamerawechsel sind beide wieder deckungsgleich.",
+   "warum_das_geht": "In der Totale sitzt er im Profil und greift nach dem Glas; die Lippen sind nicht zu lesen. Die 1,73 s Versatz fallen genau dort hin.",
+   "ergebnis": "Alle vier Nahtstellen liegen jetzt bei 59,4 bis 61,8 gegen einen Ruhepegel von 0,27 bis 0,58 - also auf dem Niveau echter Kamerawechsel."
+  },
+  "ein_bild_versatz": "Alle vier gerechneten Grenzen lagen ein Bild zu frueh; schnittgrenzen.py hat sie um +1 Bild verschoben. Gerechnete Plaene muessen immer durch schnittgrenzen.py."
  }
 }

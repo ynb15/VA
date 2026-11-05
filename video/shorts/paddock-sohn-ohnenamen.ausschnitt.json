@@ -1,5 +1,5 @@
 {
- "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/paddock/roh7.mp4",
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/paddock/roh9.mp4",
  "groesse": [
   1280,
   720
@@ -9,41 +9,41 @@
   {
    "layout": "einzel",
    "kasten": "334:0:405:720",
-   "lippe": 1186,
+   "lippe": 1207,
    "start": 0.0,
-   "ende": 4.9,
+   "ende": 3.2,
    "tot": false
   },
   {
    "layout": "einzel",
    "kasten": "0:0:405:720",
-   "lippe": 1267,
-   "start": 4.9,
-   "ende": 6.033333333333333,
+   "lippe": 1207,
+   "start": 3.2,
+   "ende": 4.933333333333334,
    "tot": false
   },
   {
    "layout": "einzel",
    "kasten": "350:0:405:720",
    "lippe": 1207,
-   "start": 6.033333333333333,
-   "ende": 51.53333333333333,
+   "start": 4.933333333333334,
+   "ende": 50.43333333333333,
    "tot": false
   },
   {
    "layout": "einzel",
    "kasten": "0:0:405:720",
-   "lippe": 1267,
-   "start": 51.53333333333333,
-   "ende": 61.9,
+   "lippe": 1207,
+   "start": 50.43333333333333,
+   "ende": 60.8,
    "tot": false
   },
   {
    "layout": "einzel",
    "kasten": "414:0:405:720",
-   "lippe": 1250,
-   "start": 61.9,
-   "ende": 73.1,
+   "lippe": 1207,
+   "start": 60.8,
+   "ende": 71.96666666666667,
    "tot": false
   }
  ]
