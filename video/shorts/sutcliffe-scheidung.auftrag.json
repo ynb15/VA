@@ -1,7 +1,7 @@
 {
  "name": "Sutcliffe-Folge - die Playmate-Ehe und die Trennung",
- "datei": "YNB Podcast David Sutcliffe Divorce (Moms Got Work).mp4",
- "stand": "2026-10-26 - zweite Fassung: Tempo 1,15, Block herausgenommen, Mom's Got Work",
+ "datei": "YNB Podcast David Sutcliffe Divorce (In The End).mp4",
+ "stand": "2026-11-05 - dritte Fassung: Einstieg auf 'your notorious marriage', 'a little bit' raus, In The End (Piano)",
  "wer_spricht": "Er stellt die Frage mit dem Sokrates-Zitat, Sutcliffe erzaehlt.",
  "quelle": {
   "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
@@ -18,14 +18,14 @@
  },
  "schnitt": {
   "von_bis_src_s": [
-   4.9,
+   6.8333,
    141.6
   ],
   "von_bis_master_s": [
    494.88,
    631.58
   ],
-  "dauer_roh_s": 136.7,
+  "dauer_roh_s": 103.6667,
   "werkzeug": "video/schnitt_bauen.py (ein Stueck, Bild und Ton gleich)",
   "warum_anfang": "Die Luecke zwischen 'dude.' (3,58) und 'We also' (5,24) ist 1,66 s lang; geschnitten wird bei 4,90, also 0,34 s vor dem ersten Wort. 0,28 s davor, bei Master 494,6000, liegt ein Kamerawechsel (Differenz 42,5 gegen Ruhepegel 1,71) - der Einstieg liegt also INNERHALB der neuen Einstellung und nicht auf ihrer Kante.",
   "warum_ende": "'other people.' endet bei 141,12; geschnitten bei 141,60. In 2,6 s um den Ausstieg herum liegt kein Kamerawechsel (groesster Unterschied 1,69 gegen Ruhepegel 1,20), der Schnitt faellt also in eine ruhige Einstellung.",
@@ -71,7 +71,7 @@
  "ton": {
   "laut": "aus",
   "dehnung": "atempo",
-  "musik": "keine - nicht bestellt"
+  "musik": "Linkin Park - In The End, Piano Cover by Pianella Piano, ab Songsekunde 7, 0 dB unter der Stimme"
  },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py",
  "offen": "Er entscheidet ueber die Laenge. video/sutcliffe-zwei-neue-clips.md nennt drei Stellen zum Kuerzen, mit Zeitmarken.",
@@ -89,8 +89,29 @@
   "musik": "Adam Taylor - Mom's Got Work, Bett ab Songsekunde 0, 0 dB unter der Stimme (der laute Pegel, den er beim Anger-Short gewaehlt hat)."
  },
  "laenge_s": {
-  "hauptteil": 92.3,
+  "hauptteil": 90.17,
   "outro": 4.21,
-  "gesamt": 96.55
+  "gesamt": 94.41
+ },
+ "aenderungen_05_11": {
+  "seine_ansage": "'we also talked --> rausschneiden / your notorious marriage --> drinbehalten / a little bit --> rausnehmen / in the end piano version unterlegen'",
+  "neuer_anfang": {
+   "bei": "Fenster 6,8333 = Bild 205. Davor faellt 'We also talked about' weg.",
+   "about_mit_weg": "'about' gehoert zu 'we also talked about' - ohne es anzufassen haette das Short mit dem Wort ABOUT begonnen. Das ist eine Entscheidung von mir, nicht von ihm; er kann es zurueckholen lassen.",
+   "wie_gemessen": "Am Pegel, nicht am Modell: zwischen 'about' und 'your' liegt eine Senke bei 6,80-6,86 (-50 bis -54 dB). Geschnitten bei 6,8333, 0,047 s vor dem Wort."
+  },
+  "a_little_bit_raus": {
+   "heraus": "Fenster 8,6333-9,1333 = 15 Bilder = 0,50 s",
+   "warum_harter_schnitt": "Beide Seiten liegen in derselben Einstellung (Fenster 4,9-9,6). Ein J-Schnitt haette den naechsten Kamerawechsel bei 9,6 gebraucht und dafuer Bild und Ton um 0,46 bis 0,98 s auseinandergezogen - bei sichtbaren Lippen. In einer halben Sekunde aendert sich seine Haltung kaum, der harte Schnitt ist hier der unauffaelligere.",
+   "sutcliffes_yeah": "Das 'Yeah' bei Fenster 9,59-9,83 bleibt drin - es faellt auf den Kamerawechsel bei 9,60, der Master schneidet dort selbst auf Sutcliffe."
+  },
+  "musik": {
+   "titel": "Linkin Park - In The End / Piano Cover by Pianella Piano (Drive 1prr_mdzn8MD6cBD7EyLiT9HRdm5LdnIX)",
+   "ab": "Songsekunde 7,0 - die ersten 7,0 s der Datei sind DIGITALE STILLE (-180 dB), ab 7,0 setzt das Klavier ein. Bei Start 0 waere der Anfang des Shorts ohne Musik gewesen.",
+   "pegel": "Stimme -27,9 dB, Bett -17,8 dB -> Bett auf -10,1 dB (0 dB unter der Stimme)",
+   "kein_loop": "Song 229,20 s, Hauptteil 90,17 s - spaetester schleifenfreier Start waere 139,0 s."
+  },
+  "einblendungen": "114 statt 119. Anfang von Hand: 'YOUR NOTORIOUS' / 'MARRIAGE'. Der Rest ist um genau 73 Bilder verschoben, darum weiter bildgenau; mit schnittgrenzen.py nachgemessen, keine Einstellungsgrenze musste bewegt werden.",
+  "zwei_fassungen": "'... Divorce.mp4' ohne Bett, '... Divorce (In The End).mp4' mit."
  }
 }

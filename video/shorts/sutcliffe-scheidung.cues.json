@@ -1,1 +1,2492 @@
-[{"start": 0.43, "end": 1.33, "text": "We also talked", "woerter": [{"t": "We", "start": 0.43, "end": 0.89, "seg": 0}, {"t": "also", "start": 0.89, "end": 1.07, "seg": 0}, {"t": "talked", "start": 1.07, "end": 1.33, "seg": 0}], "grund": "voll"}, {"start": 1.33, "end": 2.23, "text": "about your", "woerter": [{"t": "about", "start": 1.33, "end": 1.71, "seg": 0}, {"t": "your", "start": 1.71, "end": 2.23, "seg": 0}], "grund": "voll"}, {"start": 2.23, "end": 3.05, "text": "notorious", "woerter": [{"t": "notorious", "start": 2.23, "end": 3.05, "seg": 0}], "grund": "stille"}, {"start": 3.05, "end": 3.87, "text": "marriage a", "woerter": [{"t": "marriage", "start": 3.05, "end": 3.43, "seg": 0}, {"t": "a", "start": 3.43, "end": 3.87, "seg": 0}], "grund": "voll"}, {"start": 3.87, "end": 4.47, "text": "little bit.", "woerter": [{"t": "little", "start": 3.87, "end": 3.99, "seg": 0}, {"t": "bit.", "start": 3.99, "end": 4.47, "seg": 0}], "grund": "satz"}, {"start": 4.97, "end": 6.17, "text": "And it", "woerter": [{"t": "And", "start": 4.97, "end": 5.45, "seg": 1}, {"t": "it", "start": 5.45, "end": 6.17, "seg": 1}], "grund": "stille"}, {"start": 6.17, "end": 7.01, "text": "kind of reminded", "woerter": [{"t": "kind", "start": 6.17, "end": 6.57, "seg": 1}, {"t": "of", "start": 6.57, "end": 6.71, "seg": 1}, {"t": "reminded", "start": 6.71, "end": 7.01, "seg": 1}], "grund": "voll"}, {"start": 7.01, "end": 8.01, "text": "me of", "woerter": [{"t": "me", "start": 7.01, "end": 7.35, "seg": 1}, {"t": "of", "start": 7.35, "end": 8.01, "seg": 1}], "grund": "stille"}, {"start": 8.01, "end": 8.37, "text": "a quote", "woerter": [{"t": "a", "start": 8.01, "end": 8.11, "seg": 1}, {"t": "quote", "start": 8.11, "end": 8.37, "seg": 1}], "grund": "voll"}, {"start": 8.37, "end": 9.21, "text": "from Socrates.", "woerter": [{"t": "from", "start": 8.37, "end": 8.69, "seg": 1}, {"t": "Socrates.", "start": 8.69, "end": 9.21, "seg": 1}], "grund": "satz"}, {"start": 9.69, "end": 10.15, "text": "And I'm curious", "woerter": [{"t": "And", "start": 9.69, "end": 9.75, "seg": 2}, {"t": "I'm", "start": 9.75, "end": 9.87, "seg": 2}, {"t": "curious", "start": 9.87, "end": 10.15, "seg": 2}], "grund": "voll"}, {"start": 10.15, "end": 10.91, "text": "if you've heard", "woerter": [{"t": "if", "start": 10.15, "end": 10.55, "seg": 2}, {"t": "you've", "start": 10.55, "end": 10.75, "seg": 2}, {"t": "heard", "start": 10.75, "end": 10.91, "seg": 2}], "grund": "voll"}, {"start": 10.91, "end": 11.51, "text": "it before.", "woerter": [{"t": "it", "start": 10.91, "end": 11.03, "seg": 2}, {"t": "before.", "start": 11.03, "end": 11.45, "seg": 2}], "grund": "satz"}, {"start": 12.53, "end": 13.13, "text": "He said,", "woerter": [{"t": "He", "start": 12.53, "end": 12.63, "seg": 3}, {"t": "said,", "start": 12.63, "end": 12.81, "seg": 3}], "grund": "stille"}, {"start": 13.25, "end": 13.63, "text": "by all", "woerter": [{"t": "by", "start": 13.25, "end": 13.45, "seg": 3}, {"t": "all", "start": 13.45, "end": 13.63, "seg": 3}], "grund": "voll"}, {"start": 13.63, "end": 14.45, "text": "means, marry.", "woerter": [{"t": "means,", "start": 13.63, "end": 13.95, "seg": 3}, {"t": "marry.", "start": 14.27, "end": 14.45, "seg": 3}], "grund": "satz"}, {"start": 14.91, "end": 15.25, "text": "If you get", "woerter": [{"t": "If", "start": 14.91, "end": 15.03, "seg": 4}, {"t": "you", "start": 15.03, "end": 15.13, "seg": 4}, {"t": "get", "start": 15.13, "end": 15.25, "seg": 4}], "grund": "voll"}, {"start": 15.25, "end": 15.85, "text": "a good wife,", "woerter": [{"t": "a", "start": 15.25, "end": 15.35, "seg": 4}, {"t": "good", "start": 15.35, "end": 15.47, "seg": 4}, {"t": "wife,", "start": 15.47, "end": 15.81, "seg": 4}], "grund": "stille"}, {"start": 16.01, "end": 16.29, "text": "you will", "woerter": [{"t": "you", "start": 16.01, "end": 16.19, "seg": 4}, {"t": "will", "start": 16.19, "end": 16.29, "seg": 4}], "grund": "voll"}, {"start": 16.29, "end": 16.89, "text": "become happy.", "woerter": [{"t": "become", "start": 16.29, "end": 16.53, "seg": 4}, {"t": "happy.", "start": 16.53, "end": 16.81, "seg": 4}], "grund": "satz"}, {"start": 17.15, "end": 17.63, "text": "If you get", "woerter": [{"t": "If", "start": 17.15, "end": 17.39, "seg": 5}, {"t": "you", "start": 17.39, "end": 17.49, "seg": 5}, {"t": "get", "start": 17.49, "end": 17.63, "seg": 5}], "grund": "voll"}, {"start": 17.63, "end": 18.23, "text": "a bad one,", "woerter": [{"t": "a", "start": 17.63, "end": 17.71, "seg": 5}, {"t": "bad", "start": 17.71, "end": 17.95, "seg": 5}, {"t": "one,", "start": 17.95, "end": 18.19, "seg": 5}], "grund": "stille"}, {"start": 18.47, "end": 18.87, "text": "you'll become", "woerter": [{"t": "you'll", "start": 18.47, "end": 18.65, "seg": 5}, {"t": "become", "start": 18.65, "end": 18.87, "seg": 5}], "grund": "voll"}, {"start": 18.87, "end": 19.47, "text": "a philosopher.", "woerter": [{"t": "a", "start": 18.87, "end": 19.03, "seg": 5}, {"t": "philosopher.", "start": 19.03, "end": 19.39, "seg": 5}], "grund": "satz"}, {"start": 21.21, "end": 22.03, "text": "Maybe that's", "woerter": [{"t": "Maybe", "start": 21.21, "end": 21.71, "seg": 6}, {"t": "that's", "start": 21.71, "end": 22.03, "seg": 6}], "grund": "voll"}, {"start": 22.03, "end": 22.63, "text": "what happened.", "woerter": [{"t": "what", "start": 22.03, "end": 22.13, "seg": 6}, {"t": "happened.", "start": 22.13, "end": 22.41, "seg": 6}], "grund": "satz"}, {"start": 23.19, "end": 23.91, "text": "I do know", "woerter": [{"t": "I", "start": 23.19, "end": 23.53, "seg": 7}, {"t": "do", "start": 23.53, "end": 23.75, "seg": 7}, {"t": "know", "start": 23.75, "end": 23.91, "seg": 7}], "grund": "voll"}, {"start": 23.91, "end": 24.51, "text": "that quote.", "woerter": [{"t": "that", "start": 23.91, "end": 24.07, "seg": 7}, {"t": "quote.", "start": 24.07, "end": 24.49, "seg": 7}], "grund": "satz"}, {"start": 25.43, "end": 26.21, "text": "Because I think", "woerter": [{"t": "Because", "start": 25.43, "end": 25.93, "seg": 8}, {"t": "I", "start": 25.93, "end": 26.05, "seg": 8}, {"t": "think", "start": 26.05, "end": 26.21, "seg": 8}], "grund": "voll"}, {"start": 26.21, "end": 26.85, "text": "he married a", "woerter": [{"t": "he", "start": 26.21, "end": 26.39, "seg": 8}, {"t": "married", "start": 26.39, "end": 26.67, "seg": 8}, {"t": "a", "start": 26.67, "end": 26.85, "seg": 8}], "grund": "voll"}, {"start": 26.85, "end": 28.59, "text": "difficult lady.", "woerter": [{"t": "difficult", "start": 26.85, "end": 27.85, "seg": 8}, {"t": "lady.", "start": 27.85, "end": 28.31, "seg": 8}], "grund": "satz"}, {"start": 28.59, "end": 29.13, "text": "I think that's", "woerter": [{"t": "I", "start": 28.59, "end": 28.77, "seg": 10}, {"t": "think", "start": 28.77, "end": 28.85, "seg": 10}, {"t": "that's", "start": 28.85, "end": 29.13, "seg": 10}], "grund": "voll"}, {"start": 29.13, "end": 29.73, "text": "his story.", "woerter": [{"t": "his", "start": 29.13, "end": 29.23, "seg": 10}, {"t": "story.", "start": 29.23, "end": 29.67, "seg": 10}], "grund": "satz"}, {"start": 31.31, "end": 32.43, "text": "I got, yeah,", "woerter": [{"t": "I", "start": 31.31, "end": 31.75, "seg": 11}, {"t": "got,", "start": 31.75, "end": 32.19, "seg": 11}, {"t": "yeah,", "start": 32.27, "end": 32.39, "seg": 11}], "grund": "voll"}, {"start": 32.43, "end": 32.99, "text": "I got married", "woerter": [{"t": "I", "start": 32.43, "end": 32.51, "seg": 11}, {"t": "got", "start": 32.51, "end": 32.65, "seg": 11}, {"t": "married", "start": 32.65, "end": 32.99, "seg": 11}], "grund": "voll"}, {"start": 32.99, "end": 33.61, "text": "when I was", "woerter": [{"t": "when", "start": 32.99, "end": 33.21, "seg": 11}, {"t": "I", "start": 33.21, "end": 33.37, "seg": 11}, {"t": "was", "start": 33.37, "end": 33.61, "seg": 11}], "grund": "voll"}, {"start": 33.61, "end": 35.29, "text": "30 to", "woerter": [{"t": "30", "start": 33.61, "end": 34.43, "seg": 11}, {"t": "to", "start": 34.43, "end": 35.29, "seg": 11}], "grund": "stille"}, {"start": 35.29, "end": 35.87, "text": "a playboy", "woerter": [{"t": "a", "start": 35.29, "end": 35.53, "seg": 11}, {"t": "playboy", "start": 35.53, "end": 35.87, "seg": 11}], "grund": "voll"}, {"start": 35.87, "end": 36.47, "text": "playmate,", "woerter": [{"t": "playmate,", "start": 35.87, "end": 36.33, "seg": 11}], "grund": "abschnitt"}, {"start": 36.53, "end": 37.31, "text": "lovely woman,", "woerter": [{"t": "lovely", "start": 36.53, "end": 36.75, "seg": 12}, {"t": "woman,", "start": 36.75, "end": 37.31, "seg": 12}], "grund": "stille"}, {"start": 37.81, "end": 39.65, "text": "but not a", "woerter": [{"t": "but", "start": 37.81, "end": 39.03, "seg": 12}, {"t": "not", "start": 39.03, "end": 39.51, "seg": 12}, {"t": "a", "start": 39.51, "end": 39.65, "seg": 12}], "grund": "voll"}, {"start": 39.65, "end": 40.25, "text": "good fit.", "woerter": [{"t": "good", "start": 39.65, "end": 39.81, "seg": 12}, {"t": "fit.", "start": 39.81, "end": 40.09, "seg": 12}], "grund": "satz"}, {"start": 40.97, "end": 41.49, "text": "I think we", "woerter": [{"t": "I", "start": 40.97, "end": 41.21, "seg": 13}, {"t": "think", "start": 41.21, "end": 41.35, "seg": 13}, {"t": "we", "start": 41.35, "end": 41.49, "seg": 13}], "grund": "voll"}, {"start": 41.49, "end": 42.39, "text": "were both in", "woerter": [{"t": "were", "start": 41.49, "end": 41.59, "seg": 13}, {"t": "both", "start": 41.59, "end": 42.03, "seg": 13}, {"t": "in", "start": 42.03, "end": 42.39, "seg": 13}], "grund": "voll"}, {"start": 42.39, "end": 42.71, "text": "a kind", "woerter": [{"t": "a", "start": 42.39, "end": 42.51, "seg": 13}, {"t": "kind", "start": 42.51, "end": 42.71, "seg": 13}], "grund": "voll"}, {"start": 42.71, "end": 43.57, "text": "of delusion.", "woerter": [{"t": "of", "start": 42.71, "end": 42.83, "seg": 13}, {"t": "delusion.", "start": 42.83, "end": 43.57, "seg": 13}], "grund": "satz"}, {"start": 44.75, "end": 45.73, "text": "And it was", "woerter": [{"t": "And", "start": 44.75, "end": 45.19, "seg": 14}, {"t": "it", "start": 45.19, "end": 45.59, "seg": 14}, {"t": "was", "start": 45.59, "end": 45.73, "seg": 14}], "grund": "voll"}, {"start": 45.73, "end": 46.93, "text": "a tempestuous", "woerter": [{"t": "a", "start": 45.73, "end": 45.87, "seg": 14}, {"t": "tempestuous", "start": 45.87, "end": 46.93, "seg": 14}], "grund": "voll"}, {"start": 46.93, "end": 47.99, "text": "relationship on", "woerter": [{"t": "relationship", "start": 46.93, "end": 47.67, "seg": 14}, {"t": "on", "start": 47.67, "end": 47.99, "seg": 14}], "grund": "voll"}, {"start": 47.99, "end": 48.81, "text": "again, off again.", "woerter": [{"t": "again,", "start": 47.99, "end": 48.19, "seg": 14}, {"t": "off", "start": 48.35, "end": 48.47, "seg": 14}, {"t": "again.", "start": 48.47, "end": 48.81, "seg": 14}], "grund": "satz"}, {"start": 48.91, "end": 50.27, "text": "And we", "woerter": [{"t": "And", "start": 48.91, "end": 49.09, "seg": 15}, {"t": "we", "start": 49.09, "end": 50.27, "seg": 15}], "grund": "stille"}, {"start": 50.27, "end": 50.81, "text": "got back", "woerter": [{"t": "got", "start": 50.27, "end": 50.63, "seg": 15}, {"t": "back", "start": 50.63, "end": 50.81, "seg": 15}], "grund": "voll"}, {"start": 50.81, "end": 51.29, "text": "together at", "woerter": [{"t": "together", "start": 50.81, "end": 51.13, "seg": 15}, {"t": "at", "start": 51.13, "end": 51.29, "seg": 15}], "grund": "voll"}, {"start": 51.29, "end": 51.89, "text": "one point.", "woerter": [{"t": "one", "start": 51.29, "end": 51.37, "seg": 15}, {"t": "point.", "start": 51.37, "end": 51.65, "seg": 15}], "grund": "satz"}, {"start": 51.93, "end": 52.61, "text": "And she was", "woerter": [{"t": "And", "start": 51.93, "end": 52.09, "seg": 16}, {"t": "she", "start": 52.09, "end": 52.31, "seg": 16}, {"t": "was", "start": 52.31, "end": 52.61, "seg": 16}], "grund": "voll"}, {"start": 52.61, "end": 53.57, "text": "getting a little", "woerter": [{"t": "getting", "start": 52.61, "end": 53.27, "seg": 16}, {"t": "a", "start": 53.27, "end": 53.45, "seg": 16}, {"t": "little", "start": 53.45, "end": 53.57, "seg": 16}], "grund": "voll"}, {"start": 53.57, "end": 54.25, "text": "bit older and", "woerter": [{"t": "bit", "start": 53.57, "end": 53.71, "seg": 16}, {"t": "older", "start": 53.71, "end": 53.99, "seg": 16}, {"t": "and", "start": 53.99, "end": 54.25, "seg": 16}], "grund": "voll"}, {"start": 54.25, "end": 54.91, "text": "just said,", "woerter": [{"t": "just", "start": 54.25, "end": 54.47, "seg": 16}, {"t": "said,", "start": 54.47, "end": 54.75, "seg": 16}], "grund": "voll"}, {"start": 54.91, "end": 55.51, "text": "you know,", "woerter": [{"t": "you", "start": 54.91, "end": 55.33, "seg": 16}, {"t": "know,", "start": 55.33, "end": 55.47, "seg": 16}], "grund": "abschnitt"}, {"start": 55.55, "end": 55.79, "text": "I don't want", "woerter": [{"t": "I", "start": 55.55, "end": 55.63, "seg": 17}, {"t": "don't", "start": 55.63, "end": 55.71, "seg": 17}, {"t": "want", "start": 55.71, "end": 55.79, "seg": 17}], "grund": "voll"}, {"start": 55.79, "end": 56.11, "text": "to get back", "woerter": [{"t": "to", "start": 55.79, "end": 55.83, "seg": 17}, {"t": "get", "start": 55.83, "end": 55.93, "seg": 17}, {"t": "back", "start": 55.93, "end": 56.11, "seg": 17}], "grund": "voll"}, {"start": 56.11, "end": 56.61, "text": "together unless", "woerter": [{"t": "together", "start": 56.11, "end": 56.45, "seg": 17}, {"t": "unless", "start": 56.45, "end": 56.61, "seg": 17}], "grund": "voll"}, {"start": 56.61, "end": 56.97, "text": "we're going to", "woerter": [{"t": "we're", "start": 56.61, "end": 56.83, "seg": 17}, {"t": "going", "start": 56.83, "end": 56.91, "seg": 17}, {"t": "to", "start": 56.91, "end": 56.97, "seg": 17}], "grund": "voll"}, {"start": 56.97, "end": 57.41, "text": "get married.", "woerter": [{"t": "get", "start": 56.97, "end": 57.07, "seg": 17}, {"t": "married.", "start": 57.07, "end": 57.41, "seg": 17}], "grund": "satz"}, {"start": 57.41, "end": 58.75, "text": "And so I", "woerter": [{"t": "And", "start": 57.41, "end": 57.95, "seg": 18}, {"t": "so", "start": 57.95, "end": 58.65, "seg": 18}, {"t": "I", "start": 58.65, "end": 58.75, "seg": 18}], "grund": "voll"}, {"start": 58.75, "end": 59.35, "text": "agreed to that.", "woerter": [{"t": "agreed", "start": 58.75, "end": 58.95, "seg": 18}, {"t": "to", "start": 58.95, "end": 59.13, "seg": 18}, {"t": "that.", "start": 59.13, "end": 59.31, "seg": 18}], "grund": "satz"}, {"start": 59.51, "end": 59.91, "text": "So we ended", "woerter": [{"t": "So", "start": 59.51, "end": 59.55, "seg": 19}, {"t": "we", "start": 59.55, "end": 59.75, "seg": 19}, {"t": "ended", "start": 59.75, "end": 59.91, "seg": 19}], "grund": "voll"}, {"start": 59.91, "end": 60.61, "text": "up going to", "woerter": [{"t": "up", "start": 59.91, "end": 60.05, "seg": 19}, {"t": "going", "start": 60.05, "end": 60.29, "seg": 19}, {"t": "to", "start": 60.29, "end": 60.61, "seg": 19}], "grund": "voll"}, {"start": 60.61, "end": 61.65, "text": "Las Vegas.", "woerter": [{"t": "Las", "start": 60.61, "end": 61.25, "seg": 19}, {"t": "Vegas.", "start": 61.25, "end": 61.65, "seg": 19}], "grund": "satz"}, {"start": 61.65, "end": 62.19, "text": "We got married", "woerter": [{"t": "We", "start": 61.65, "end": 61.87, "seg": 20}, {"t": "got", "start": 61.87, "end": 62.01, "seg": 20}, {"t": "married", "start": 62.01, "end": 62.19, "seg": 20}], "grund": "voll"}, {"start": 62.19, "end": 62.89, "text": "at the Tropicana", "woerter": [{"t": "at", "start": 62.19, "end": 62.29, "seg": 20}, {"t": "the", "start": 62.29, "end": 62.37, "seg": 20}, {"t": "Tropicana", "start": 62.37, "end": 62.89, "seg": 20}], "grund": "voll"}, {"start": 62.89, "end": 63.91, "text": "Hotel in", "woerter": [{"t": "Hotel", "start": 62.89, "end": 63.23, "seg": 20}, {"t": "in", "start": 63.23, "end": 63.91, "seg": 20}], "grund": "voll"}, {"start": 63.91, "end": 64.65, "text": "Las Vegas.", "woerter": [{"t": "Las", "start": 63.91, "end": 64.21, "seg": 20}, {"t": "Vegas.", "start": 64.21, "end": 64.65, "seg": 20}], "grund": "satz"}, {"start": 64.97, "end": 66.55, "text": "But I", "woerter": [{"t": "But", "start": 64.97, "end": 65.19, "seg": 32}, {"t": "I", "start": 65.19, "end": 66.55, "seg": 32}], "grund": "stille"}, {"start": 66.55, "end": 66.95, "text": "guess it's", "woerter": [{"t": "guess", "start": 66.55, "end": 66.71, "seg": 32}, {"t": "it's", "start": 66.71, "end": 66.95, "seg": 32}], "grund": "voll"}, {"start": 66.95, "end": 67.47, "text": "something I had", "woerter": [{"t": "something", "start": 66.95, "end": 67.17, "seg": 32}, {"t": "I", "start": 67.17, "end": 67.35, "seg": 32}, {"t": "had", "start": 67.35, "end": 67.47, "seg": 32}], "grund": "voll"}, {"start": 67.47, "end": 68.07, "text": "to go through.", "woerter": [{"t": "to", "start": 67.47, "end": 67.59, "seg": 32}, {"t": "go", "start": 67.59, "end": 67.75, "seg": 32}, {"t": "through.", "start": 67.75, "end": 68.03, "seg": 32}], "grund": "satz"}, {"start": 68.25, "end": 68.97, "text": "I was exposed", "woerter": [{"t": "I", "start": 68.25, "end": 68.31, "seg": 33}, {"t": "was", "start": 68.31, "end": 68.45, "seg": 33}, {"t": "exposed", "start": 68.45, "end": 68.97, "seg": 33}], "grund": "voll"}, {"start": 68.97, "end": 70.05, "text": "in some way", "woerter": [{"t": "in", "start": 68.97, "end": 69.43, "seg": 33}, {"t": "some", "start": 69.43, "end": 69.79, "seg": 33}, {"t": "way", "start": 69.79, "end": 70.05, "seg": 33}], "grund": "voll"}, {"start": 70.05, "end": 71.95, "text": "as being out", "woerter": [{"t": "as", "start": 70.05, "end": 70.49, "seg": 33}, {"t": "being", "start": 70.49, "end": 70.85, "seg": 33}, {"t": "out", "start": 70.85, "end": 71.95, "seg": 33}], "grund": "voll"}, {"start": 71.95, "end": 72.91, "text": "of control and", "woerter": [{"t": "of", "start": 71.95, "end": 72.05, "seg": 33}, {"t": "control", "start": 72.05, "end": 72.43, "seg": 33}, {"t": "and", "start": 72.43, "end": 72.91, "seg": 33}], "grund": "voll"}, {"start": 72.91, "end": 73.23, "text": "out of", "woerter": [{"t": "out", "start": 72.91, "end": 73.15, "seg": 33}, {"t": "of", "start": 73.15, "end": 73.23, "seg": 33}], "grund": "voll"}, {"start": 73.23, "end": 73.89, "text": "my mind.", "woerter": [{"t": "my", "start": 73.23, "end": 73.33, "seg": 33}, {"t": "mind.", "start": 73.33, "end": 73.89, "seg": 33}], "grund": "satz"}, {"start": 74.25, "end": 75.39, "text": "And I'd never", "woerter": [{"t": "And", "start": 74.25, "end": 74.79, "seg": 34}, {"t": "I'd", "start": 74.79, "end": 75.03, "seg": 34}, {"t": "never", "start": 75.03, "end": 75.39, "seg": 34}], "grund": "voll"}, {"start": 75.39, "end": 76.17, "text": "had that", "woerter": [{"t": "had", "start": 75.39, "end": 76.01, "seg": 34}, {"t": "that", "start": 76.01, "end": 76.17, "seg": 34}], "grund": "voll"}, {"start": 76.17, "end": 76.61, "text": "experience", "woerter": [{"t": "experience", "start": 76.17, "end": 76.61, "seg": 34}], "grund": "voll"}, {"start": 76.61, "end": 77.17, "text": "before because", "woerter": [{"t": "before", "start": 76.61, "end": 76.99, "seg": 34}, {"t": "because", "start": 76.99, "end": 77.17, "seg": 34}], "grund": "voll"}, {"start": 77.17, "end": 77.75, "text": "I'd always", "woerter": [{"t": "I'd", "start": 77.17, "end": 77.41, "seg": 34}, {"t": "always", "start": 77.41, "end": 77.75, "seg": 34}], "grund": "voll"}, {"start": 77.75, "end": 79.71, "text": "kept my", "woerter": [{"t": "kept", "start": 77.75, "end": 79.43, "seg": 34}, {"t": "my", "start": 79.43, "end": 79.71, "seg": 34}], "grund": "abschnitt"}, {"start": 79.71, "end": 80.41, "text": "shit together", "woerter": [{"t": "shit", "start": 79.71, "end": 79.97, "seg": 35}, {"t": "together", "start": 79.97, "end": 80.41, "seg": 35}], "grund": "voll"}, {"start": 80.41, "end": 81.15, "text": "and", "woerter": [{"t": "and", "start": 80.41, "end": 81.15, "seg": 35}], "grund": "stille"}, {"start": 81.15, "end": 81.47, "text": "at least", "woerter": [{"t": "at", "start": 81.15, "end": 81.33, "seg": 35}, {"t": "least", "start": 81.33, "end": 81.47, "seg": 35}], "grund": "voll"}, {"start": 81.47, "end": 81.83, "text": "presented", "woerter": [{"t": "presented", "start": 81.47, "end": 81.83, "seg": 35}], "grund": "voll"}, {"start": 81.83, "end": 82.79, "text": "myself to the", "woerter": [{"t": "myself", "start": 81.83, "end": 82.25, "seg": 35}, {"t": "to", "start": 82.25, "end": 82.65, "seg": 35}, {"t": "the", "start": 82.65, "end": 82.79, "seg": 35}], "grund": "voll"}, {"start": 82.79, "end": 83.29, "text": "world as", "woerter": [{"t": "world", "start": 82.79, "end": 83.03, "seg": 35}, {"t": "as", "start": 83.03, "end": 83.29, "seg": 35}], "grund": "abschnitt"}, {"start": 83.29, "end": 84.07, "text": "somebody who", "woerter": [{"t": "somebody", "start": 83.29, "end": 83.63, "seg": 36}, {"t": "who", "start": 83.63, "end": 84.07, "seg": 36}], "grund": "voll"}, {"start": 84.07, "end": 86.09, "text": "was", "woerter": [{"t": "was", "start": 84.07, "end": 86.09, "seg": 36}], "grund": "stille"}, {"start": 86.09, "end": 87.55, "text": "reasonable and", "woerter": [{"t": "reasonable", "start": 86.09, "end": 86.59, "seg": 36}, {"t": "and", "start": 86.59, "end": 87.55, "seg": 36}], "grund": "voll"}, {"start": 87.55, "end": 88.15, "text": "disciplined.", "woerter": [{"t": "disciplined.", "start": 87.55, "end": 88.07, "seg": 36}], "grund": "satz"}, {"start": 89.15, "end": 90.49, "text": "And the", "woerter": [{"t": "And", "start": 89.15, "end": 90.49, "seg": 37}, {"t": "the", "start": 89.15, "end": 90.49, "seg": 37}], "grund": "stille"}, {"start": 90.49, "end": 90.89, "text": "truth is", "woerter": [{"t": "truth", "start": 90.49, "end": 90.69, "seg": 37}, {"t": "is", "start": 90.69, "end": 90.89, "seg": 37}], "grund": "voll"}, {"start": 90.89, "end": 91.67, "text": "underneath, I had", "woerter": [{"t": "underneath,", "start": 90.89, "end": 91.21, "seg": 37}, {"t": "I", "start": 91.45, "end": 91.51, "seg": 37}, {"t": "had", "start": 91.51, "end": 91.67, "seg": 37}], "grund": "voll"}, {"start": 91.67, "end": 92.27, "text": "a lot of", "woerter": [{"t": "a", "start": 91.67, "end": 91.73, "seg": 37}, {"t": "lot", "start": 91.73, "end": 91.95, "seg": 37}, {"t": "of", "start": 91.95, "end": 92.27, "seg": 37}], "grund": "stille"}, {"start": 92.27, "end": 93.93, "text": "sadness and pain", "woerter": [{"t": "sadness", "start": 92.27, "end": 93.17, "seg": 37}, {"t": "and", "start": 93.17, "end": 93.49, "seg": 37}, {"t": "pain", "start": 93.49, "end": 93.93, "seg": 37}], "grund": "stille"}, {"start": 95.89, "end": 96.53, "text": "and", "woerter": [{"t": "and", "start": 95.89, "end": 96.53, "seg": 38}], "grund": "voll"}, {"start": 96.53, "end": 97.17, "text": "disorganization", "woerter": [{"t": "disorganization", "start": 96.53, "end": 97.17, "seg": 38}], "grund": "voll"}, {"start": 97.17, "end": 98.05, "text": "and fear.", "woerter": [{"t": "and", "start": 97.17, "end": 97.65, "seg": 38}, {"t": "fear.", "start": 97.65, "end": 98.05, "seg": 38}], "grund": "satz"}, {"start": 98.79, "end": 99.37, "text": "And I just,", "woerter": [{"t": "And", "start": 98.79, "end": 99.05, "seg": 39}, {"t": "I", "start": 99.05, "end": 99.17, "seg": 39}, {"t": "just,", "start": 99.17, "end": 99.29, "seg": 39}], "grund": "voll"}, {"start": 99.37, "end": 100.05, "text": "I didn't", "woerter": [{"t": "I", "start": 99.37, "end": 99.53, "seg": 39}, {"t": "didn't", "start": 99.53, "end": 100.05, "seg": 39}], "grund": "stille"}, {"start": 100.05, "end": 101.25, "text": "feel safe,", "woerter": [{"t": "feel", "start": 100.05, "end": 100.49, "seg": 39}, {"t": "safe,", "start": 100.49, "end": 101.15, "seg": 39}], "grund": "voll"}, {"start": 101.25, "end": 101.85, "text": "I guess,", "woerter": [{"t": "I", "start": 101.25, "end": 101.33, "seg": 39}, {"t": "guess,", "start": 101.33, "end": 101.65, "seg": 39}], "grund": "abschnitt"}, {"start": 101.93, "end": 102.79, "text": "even really", "woerter": [{"t": "even", "start": 101.93, "end": 102.43, "seg": 40}, {"t": "really", "start": 102.43, "end": 102.79, "seg": 40}], "grund": "voll"}, {"start": 102.79, "end": 103.51, "text": "letting myself", "woerter": [{"t": "letting", "start": 102.79, "end": 103.01, "seg": 40}, {"t": "myself", "start": 103.01, "end": 103.51, "seg": 40}], "grund": "voll"}, {"start": 103.51, "end": 104.29, "text": "know the truth", "woerter": [{"t": "know", "start": 103.51, "end": 103.93, "seg": 40}, {"t": "the", "start": 103.93, "end": 104.09, "seg": 40}, {"t": "truth", "start": 104.09, "end": 104.29, "seg": 40}], "grund": "voll"}, {"start": 104.29, "end": 104.75, "text": "of that,", "woerter": [{"t": "of", "start": 104.29, "end": 104.47, "seg": 40}, {"t": "that,", "start": 104.47, "end": 104.65, "seg": 40}], "grund": "abschnitt"}, {"start": 104.75, "end": 105.11, "text": "never mind", "woerter": [{"t": "never", "start": 104.75, "end": 104.85, "seg": 41}, {"t": "mind", "start": 104.85, "end": 105.11, "seg": 41}], "grund": "voll"}, {"start": 105.11, "end": 105.71, "text": "other people.", "woerter": [{"t": "other", "start": 105.11, "end": 105.36, "seg": 41}, {"t": "people.", "start": 105.36, "end": 105.61, "seg": 41}], "grund": "satz"}]
+[
+ {
+  "start": 0.0,
+  "end": 1.1167,
+  "text": "your notorious",
+  "woerter": [
+   {
+    "t": "your",
+    "start": 0.0,
+    "end": 0.2967,
+    "seg": 0
+   },
+   {
+    "t": "notorious",
+    "start": 0.2967,
+    "end": 1.1167,
+    "seg": 0
+   }
+  ],
+  "grund": "hand"
+ },
+ {
+  "start": 1.1167,
+  "end": 1.8,
+  "text": "marriage",
+  "woerter": [
+   {
+    "t": "marriage",
+    "start": 1.1167,
+    "end": 1.8,
+    "seg": 0
+   }
+  ],
+  "grund": "hand"
+ },
+ {
+  "start": 2.5367,
+  "end": 3.7367,
+  "text": "And it",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 2.5367,
+    "end": 3.0167,
+    "seg": 1
+   },
+   {
+    "t": "it",
+    "start": 3.0167,
+    "end": 3.7367,
+    "seg": 1
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 3.7367,
+  "end": 4.5767,
+  "text": "kind of reminded",
+  "woerter": [
+   {
+    "t": "kind",
+    "start": 3.7367,
+    "end": 4.1367,
+    "seg": 1
+   },
+   {
+    "t": "of",
+    "start": 4.1367,
+    "end": 4.2767,
+    "seg": 1
+   },
+   {
+    "t": "reminded",
+    "start": 4.2767,
+    "end": 4.5767,
+    "seg": 1
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 4.5767,
+  "end": 5.5767,
+  "text": "me of",
+  "woerter": [
+   {
+    "t": "me",
+    "start": 4.5767,
+    "end": 4.9167,
+    "seg": 1
+   },
+   {
+    "t": "of",
+    "start": 4.9167,
+    "end": 5.5767,
+    "seg": 1
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 5.5767,
+  "end": 5.9367,
+  "text": "a quote",
+  "woerter": [
+   {
+    "t": "a",
+    "start": 5.5767,
+    "end": 5.6767,
+    "seg": 1
+   },
+   {
+    "t": "quote",
+    "start": 5.6767,
+    "end": 5.9367,
+    "seg": 1
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 5.9367,
+  "end": 6.7767,
+  "text": "from Socrates.",
+  "woerter": [
+   {
+    "t": "from",
+    "start": 5.9367,
+    "end": 6.2567,
+    "seg": 1
+   },
+   {
+    "t": "Socrates.",
+    "start": 6.2567,
+    "end": 6.7767,
+    "seg": 1
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 7.2567,
+  "end": 7.7167,
+  "text": "And I'm curious",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 7.2567,
+    "end": 7.3167,
+    "seg": 2
+   },
+   {
+    "t": "I'm",
+    "start": 7.3167,
+    "end": 7.4367,
+    "seg": 2
+   },
+   {
+    "t": "curious",
+    "start": 7.4367,
+    "end": 7.7167,
+    "seg": 2
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 7.7167,
+  "end": 8.4767,
+  "text": "if you've heard",
+  "woerter": [
+   {
+    "t": "if",
+    "start": 7.7167,
+    "end": 8.1167,
+    "seg": 2
+   },
+   {
+    "t": "you've",
+    "start": 8.1167,
+    "end": 8.3167,
+    "seg": 2
+   },
+   {
+    "t": "heard",
+    "start": 8.3167,
+    "end": 8.4767,
+    "seg": 2
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 8.4767,
+  "end": 9.0767,
+  "text": "it before.",
+  "woerter": [
+   {
+    "t": "it",
+    "start": 8.4767,
+    "end": 8.5967,
+    "seg": 2
+   },
+   {
+    "t": "before.",
+    "start": 8.5967,
+    "end": 9.0167,
+    "seg": 2
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 10.0967,
+  "end": 10.6967,
+  "text": "He said,",
+  "woerter": [
+   {
+    "t": "He",
+    "start": 10.0967,
+    "end": 10.1967,
+    "seg": 3
+   },
+   {
+    "t": "said,",
+    "start": 10.1967,
+    "end": 10.3767,
+    "seg": 3
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 10.8167,
+  "end": 11.1967,
+  "text": "by all",
+  "woerter": [
+   {
+    "t": "by",
+    "start": 10.8167,
+    "end": 11.0167,
+    "seg": 3
+   },
+   {
+    "t": "all",
+    "start": 11.0167,
+    "end": 11.1967,
+    "seg": 3
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 11.1967,
+  "end": 12.0167,
+  "text": "means, marry.",
+  "woerter": [
+   {
+    "t": "means,",
+    "start": 11.1967,
+    "end": 11.5167,
+    "seg": 3
+   },
+   {
+    "t": "marry.",
+    "start": 11.8367,
+    "end": 12.0167,
+    "seg": 3
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 12.4767,
+  "end": 12.8167,
+  "text": "If you get",
+  "woerter": [
+   {
+    "t": "If",
+    "start": 12.4767,
+    "end": 12.5967,
+    "seg": 4
+   },
+   {
+    "t": "you",
+    "start": 12.5967,
+    "end": 12.6967,
+    "seg": 4
+   },
+   {
+    "t": "get",
+    "start": 12.6967,
+    "end": 12.8167,
+    "seg": 4
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 12.8167,
+  "end": 13.4167,
+  "text": "a good wife,",
+  "woerter": [
+   {
+    "t": "a",
+    "start": 12.8167,
+    "end": 12.9167,
+    "seg": 4
+   },
+   {
+    "t": "good",
+    "start": 12.9167,
+    "end": 13.0367,
+    "seg": 4
+   },
+   {
+    "t": "wife,",
+    "start": 13.0367,
+    "end": 13.3767,
+    "seg": 4
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 13.5767,
+  "end": 13.8567,
+  "text": "you will",
+  "woerter": [
+   {
+    "t": "you",
+    "start": 13.5767,
+    "end": 13.7567,
+    "seg": 4
+   },
+   {
+    "t": "will",
+    "start": 13.7567,
+    "end": 13.8567,
+    "seg": 4
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 13.8567,
+  "end": 14.4567,
+  "text": "become happy.",
+  "woerter": [
+   {
+    "t": "become",
+    "start": 13.8567,
+    "end": 14.0967,
+    "seg": 4
+   },
+   {
+    "t": "happy.",
+    "start": 14.0967,
+    "end": 14.3767,
+    "seg": 4
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 14.7167,
+  "end": 15.1967,
+  "text": "If you get",
+  "woerter": [
+   {
+    "t": "If",
+    "start": 14.7167,
+    "end": 14.9567,
+    "seg": 5
+   },
+   {
+    "t": "you",
+    "start": 14.9567,
+    "end": 15.0567,
+    "seg": 5
+   },
+   {
+    "t": "get",
+    "start": 15.0567,
+    "end": 15.1967,
+    "seg": 5
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 15.1967,
+  "end": 15.7967,
+  "text": "a bad one,",
+  "woerter": [
+   {
+    "t": "a",
+    "start": 15.1967,
+    "end": 15.2767,
+    "seg": 5
+   },
+   {
+    "t": "bad",
+    "start": 15.2767,
+    "end": 15.5167,
+    "seg": 5
+   },
+   {
+    "t": "one,",
+    "start": 15.5167,
+    "end": 15.7567,
+    "seg": 5
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 16.0367,
+  "end": 16.4367,
+  "text": "you'll become",
+  "woerter": [
+   {
+    "t": "you'll",
+    "start": 16.0367,
+    "end": 16.2167,
+    "seg": 5
+   },
+   {
+    "t": "become",
+    "start": 16.2167,
+    "end": 16.4367,
+    "seg": 5
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 16.4367,
+  "end": 17.0367,
+  "text": "a philosopher.",
+  "woerter": [
+   {
+    "t": "a",
+    "start": 16.4367,
+    "end": 16.5967,
+    "seg": 5
+   },
+   {
+    "t": "philosopher.",
+    "start": 16.5967,
+    "end": 16.9567,
+    "seg": 5
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 18.7767,
+  "end": 19.5967,
+  "text": "Maybe that's",
+  "woerter": [
+   {
+    "t": "Maybe",
+    "start": 18.7767,
+    "end": 19.2767,
+    "seg": 6
+   },
+   {
+    "t": "that's",
+    "start": 19.2767,
+    "end": 19.5967,
+    "seg": 6
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 19.5967,
+  "end": 20.1967,
+  "text": "what happened.",
+  "woerter": [
+   {
+    "t": "what",
+    "start": 19.5967,
+    "end": 19.6967,
+    "seg": 6
+   },
+   {
+    "t": "happened.",
+    "start": 19.6967,
+    "end": 19.9767,
+    "seg": 6
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 20.7567,
+  "end": 21.4767,
+  "text": "I do know",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 20.7567,
+    "end": 21.0967,
+    "seg": 7
+   },
+   {
+    "t": "do",
+    "start": 21.0967,
+    "end": 21.3167,
+    "seg": 7
+   },
+   {
+    "t": "know",
+    "start": 21.3167,
+    "end": 21.4767,
+    "seg": 7
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 21.4767,
+  "end": 22.0767,
+  "text": "that quote.",
+  "woerter": [
+   {
+    "t": "that",
+    "start": 21.4767,
+    "end": 21.6367,
+    "seg": 7
+   },
+   {
+    "t": "quote.",
+    "start": 21.6367,
+    "end": 22.0567,
+    "seg": 7
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 22.9967,
+  "end": 23.7767,
+  "text": "Because I think",
+  "woerter": [
+   {
+    "t": "Because",
+    "start": 22.9967,
+    "end": 23.4967,
+    "seg": 8
+   },
+   {
+    "t": "I",
+    "start": 23.4967,
+    "end": 23.6167,
+    "seg": 8
+   },
+   {
+    "t": "think",
+    "start": 23.6167,
+    "end": 23.7767,
+    "seg": 8
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 23.7767,
+  "end": 24.4167,
+  "text": "he married a",
+  "woerter": [
+   {
+    "t": "he",
+    "start": 23.7767,
+    "end": 23.9567,
+    "seg": 8
+   },
+   {
+    "t": "married",
+    "start": 23.9567,
+    "end": 24.2367,
+    "seg": 8
+   },
+   {
+    "t": "a",
+    "start": 24.2367,
+    "end": 24.4167,
+    "seg": 8
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 24.4167,
+  "end": 26.1567,
+  "text": "difficult lady.",
+  "woerter": [
+   {
+    "t": "difficult",
+    "start": 24.4167,
+    "end": 25.4167,
+    "seg": 8
+   },
+   {
+    "t": "lady.",
+    "start": 25.4167,
+    "end": 25.8767,
+    "seg": 8
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 26.1567,
+  "end": 26.6967,
+  "text": "I think that's",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 26.1567,
+    "end": 26.3367,
+    "seg": 10
+   },
+   {
+    "t": "think",
+    "start": 26.3367,
+    "end": 26.4167,
+    "seg": 10
+   },
+   {
+    "t": "that's",
+    "start": 26.4167,
+    "end": 26.6967,
+    "seg": 10
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 26.6967,
+  "end": 27.2967,
+  "text": "his story.",
+  "woerter": [
+   {
+    "t": "his",
+    "start": 26.6967,
+    "end": 26.7967,
+    "seg": 10
+   },
+   {
+    "t": "story.",
+    "start": 26.7967,
+    "end": 27.2367,
+    "seg": 10
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 28.8767,
+  "end": 29.9967,
+  "text": "I got, yeah,",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 28.8767,
+    "end": 29.3167,
+    "seg": 11
+   },
+   {
+    "t": "got,",
+    "start": 29.3167,
+    "end": 29.7567,
+    "seg": 11
+   },
+   {
+    "t": "yeah,",
+    "start": 29.8367,
+    "end": 29.9567,
+    "seg": 11
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 29.9967,
+  "end": 30.5567,
+  "text": "I got married",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 29.9967,
+    "end": 30.0767,
+    "seg": 11
+   },
+   {
+    "t": "got",
+    "start": 30.0767,
+    "end": 30.2167,
+    "seg": 11
+   },
+   {
+    "t": "married",
+    "start": 30.2167,
+    "end": 30.5567,
+    "seg": 11
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 30.5567,
+  "end": 31.1767,
+  "text": "when I was",
+  "woerter": [
+   {
+    "t": "when",
+    "start": 30.5567,
+    "end": 30.7767,
+    "seg": 11
+   },
+   {
+    "t": "I",
+    "start": 30.7767,
+    "end": 30.9367,
+    "seg": 11
+   },
+   {
+    "t": "was",
+    "start": 30.9367,
+    "end": 31.1767,
+    "seg": 11
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 31.1767,
+  "end": 32.8567,
+  "text": "30 to",
+  "woerter": [
+   {
+    "t": "30",
+    "start": 31.1767,
+    "end": 31.9967,
+    "seg": 11
+   },
+   {
+    "t": "to",
+    "start": 31.9967,
+    "end": 32.8567,
+    "seg": 11
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 32.8567,
+  "end": 33.4367,
+  "text": "a playboy",
+  "woerter": [
+   {
+    "t": "a",
+    "start": 32.8567,
+    "end": 33.0967,
+    "seg": 11
+   },
+   {
+    "t": "playboy",
+    "start": 33.0967,
+    "end": 33.4367,
+    "seg": 11
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 33.4367,
+  "end": 34.0367,
+  "text": "playmate,",
+  "woerter": [
+   {
+    "t": "playmate,",
+    "start": 33.4367,
+    "end": 33.8967,
+    "seg": 11
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 34.0967,
+  "end": 34.8767,
+  "text": "lovely woman,",
+  "woerter": [
+   {
+    "t": "lovely",
+    "start": 34.0967,
+    "end": 34.3167,
+    "seg": 12
+   },
+   {
+    "t": "woman,",
+    "start": 34.3167,
+    "end": 34.8767,
+    "seg": 12
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 35.3767,
+  "end": 37.2167,
+  "text": "but not a",
+  "woerter": [
+   {
+    "t": "but",
+    "start": 35.3767,
+    "end": 36.5967,
+    "seg": 12
+   },
+   {
+    "t": "not",
+    "start": 36.5967,
+    "end": 37.0767,
+    "seg": 12
+   },
+   {
+    "t": "a",
+    "start": 37.0767,
+    "end": 37.2167,
+    "seg": 12
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 37.2167,
+  "end": 37.8167,
+  "text": "good fit.",
+  "woerter": [
+   {
+    "t": "good",
+    "start": 37.2167,
+    "end": 37.3767,
+    "seg": 12
+   },
+   {
+    "t": "fit.",
+    "start": 37.3767,
+    "end": 37.6567,
+    "seg": 12
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 38.5367,
+  "end": 39.0567,
+  "text": "I think we",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 38.5367,
+    "end": 38.7767,
+    "seg": 13
+   },
+   {
+    "t": "think",
+    "start": 38.7767,
+    "end": 38.9167,
+    "seg": 13
+   },
+   {
+    "t": "we",
+    "start": 38.9167,
+    "end": 39.0567,
+    "seg": 13
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 39.0567,
+  "end": 39.9567,
+  "text": "were both in",
+  "woerter": [
+   {
+    "t": "were",
+    "start": 39.0567,
+    "end": 39.1567,
+    "seg": 13
+   },
+   {
+    "t": "both",
+    "start": 39.1567,
+    "end": 39.5967,
+    "seg": 13
+   },
+   {
+    "t": "in",
+    "start": 39.5967,
+    "end": 39.9567,
+    "seg": 13
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 39.9567,
+  "end": 40.2767,
+  "text": "a kind",
+  "woerter": [
+   {
+    "t": "a",
+    "start": 39.9567,
+    "end": 40.0767,
+    "seg": 13
+   },
+   {
+    "t": "kind",
+    "start": 40.0767,
+    "end": 40.2767,
+    "seg": 13
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 40.2767,
+  "end": 41.1367,
+  "text": "of delusion.",
+  "woerter": [
+   {
+    "t": "of",
+    "start": 40.2767,
+    "end": 40.3967,
+    "seg": 13
+   },
+   {
+    "t": "delusion.",
+    "start": 40.3967,
+    "end": 41.1367,
+    "seg": 13
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 42.3167,
+  "end": 43.2967,
+  "text": "And it was",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 42.3167,
+    "end": 42.7567,
+    "seg": 14
+   },
+   {
+    "t": "it",
+    "start": 42.7567,
+    "end": 43.1567,
+    "seg": 14
+   },
+   {
+    "t": "was",
+    "start": 43.1567,
+    "end": 43.2967,
+    "seg": 14
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 43.2967,
+  "end": 44.4967,
+  "text": "a tempestuous",
+  "woerter": [
+   {
+    "t": "a",
+    "start": 43.2967,
+    "end": 43.4367,
+    "seg": 14
+   },
+   {
+    "t": "tempestuous",
+    "start": 43.4367,
+    "end": 44.4967,
+    "seg": 14
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 44.4967,
+  "end": 45.5567,
+  "text": "relationship on",
+  "woerter": [
+   {
+    "t": "relationship",
+    "start": 44.4967,
+    "end": 45.2367,
+    "seg": 14
+   },
+   {
+    "t": "on",
+    "start": 45.2367,
+    "end": 45.5567,
+    "seg": 14
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 45.5567,
+  "end": 46.3767,
+  "text": "again, off again.",
+  "woerter": [
+   {
+    "t": "again,",
+    "start": 45.5567,
+    "end": 45.7567,
+    "seg": 14
+   },
+   {
+    "t": "off",
+    "start": 45.9167,
+    "end": 46.0367,
+    "seg": 14
+   },
+   {
+    "t": "again.",
+    "start": 46.0367,
+    "end": 46.3767,
+    "seg": 14
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 46.4767,
+  "end": 47.8367,
+  "text": "And we",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 46.4767,
+    "end": 46.6567,
+    "seg": 15
+   },
+   {
+    "t": "we",
+    "start": 46.6567,
+    "end": 47.8367,
+    "seg": 15
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 47.8367,
+  "end": 48.3767,
+  "text": "got back",
+  "woerter": [
+   {
+    "t": "got",
+    "start": 47.8367,
+    "end": 48.1967,
+    "seg": 15
+   },
+   {
+    "t": "back",
+    "start": 48.1967,
+    "end": 48.3767,
+    "seg": 15
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 48.3767,
+  "end": 48.8567,
+  "text": "together at",
+  "woerter": [
+   {
+    "t": "together",
+    "start": 48.3767,
+    "end": 48.6967,
+    "seg": 15
+   },
+   {
+    "t": "at",
+    "start": 48.6967,
+    "end": 48.8567,
+    "seg": 15
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 48.8567,
+  "end": 49.4567,
+  "text": "one point.",
+  "woerter": [
+   {
+    "t": "one",
+    "start": 48.8567,
+    "end": 48.9367,
+    "seg": 15
+   },
+   {
+    "t": "point.",
+    "start": 48.9367,
+    "end": 49.2167,
+    "seg": 15
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 49.4967,
+  "end": 50.1767,
+  "text": "And she was",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 49.4967,
+    "end": 49.6567,
+    "seg": 16
+   },
+   {
+    "t": "she",
+    "start": 49.6567,
+    "end": 49.8767,
+    "seg": 16
+   },
+   {
+    "t": "was",
+    "start": 49.8767,
+    "end": 50.1767,
+    "seg": 16
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 50.1767,
+  "end": 51.1367,
+  "text": "getting a little",
+  "woerter": [
+   {
+    "t": "getting",
+    "start": 50.1767,
+    "end": 50.8367,
+    "seg": 16
+   },
+   {
+    "t": "a",
+    "start": 50.8367,
+    "end": 51.0167,
+    "seg": 16
+   },
+   {
+    "t": "little",
+    "start": 51.0167,
+    "end": 51.1367,
+    "seg": 16
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 51.1367,
+  "end": 51.8167,
+  "text": "bit older and",
+  "woerter": [
+   {
+    "t": "bit",
+    "start": 51.1367,
+    "end": 51.2767,
+    "seg": 16
+   },
+   {
+    "t": "older",
+    "start": 51.2767,
+    "end": 51.5567,
+    "seg": 16
+   },
+   {
+    "t": "and",
+    "start": 51.5567,
+    "end": 51.8167,
+    "seg": 16
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 51.8167,
+  "end": 52.4767,
+  "text": "just said,",
+  "woerter": [
+   {
+    "t": "just",
+    "start": 51.8167,
+    "end": 52.0367,
+    "seg": 16
+   },
+   {
+    "t": "said,",
+    "start": 52.0367,
+    "end": 52.3167,
+    "seg": 16
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 52.4767,
+  "end": 53.0767,
+  "text": "you know,",
+  "woerter": [
+   {
+    "t": "you",
+    "start": 52.4767,
+    "end": 52.8967,
+    "seg": 16
+   },
+   {
+    "t": "know,",
+    "start": 52.8967,
+    "end": 53.0367,
+    "seg": 16
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 53.1167,
+  "end": 53.3567,
+  "text": "I don't want",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 53.1167,
+    "end": 53.1967,
+    "seg": 17
+   },
+   {
+    "t": "don't",
+    "start": 53.1967,
+    "end": 53.2767,
+    "seg": 17
+   },
+   {
+    "t": "want",
+    "start": 53.2767,
+    "end": 53.3567,
+    "seg": 17
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 53.3567,
+  "end": 53.6767,
+  "text": "to get back",
+  "woerter": [
+   {
+    "t": "to",
+    "start": 53.3567,
+    "end": 53.3967,
+    "seg": 17
+   },
+   {
+    "t": "get",
+    "start": 53.3967,
+    "end": 53.4967,
+    "seg": 17
+   },
+   {
+    "t": "back",
+    "start": 53.4967,
+    "end": 53.6767,
+    "seg": 17
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 53.6767,
+  "end": 54.1767,
+  "text": "together unless",
+  "woerter": [
+   {
+    "t": "together",
+    "start": 53.6767,
+    "end": 54.0167,
+    "seg": 17
+   },
+   {
+    "t": "unless",
+    "start": 54.0167,
+    "end": 54.1767,
+    "seg": 17
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 54.1767,
+  "end": 54.5367,
+  "text": "we're going to",
+  "woerter": [
+   {
+    "t": "we're",
+    "start": 54.1767,
+    "end": 54.3967,
+    "seg": 17
+   },
+   {
+    "t": "going",
+    "start": 54.3967,
+    "end": 54.4767,
+    "seg": 17
+   },
+   {
+    "t": "to",
+    "start": 54.4767,
+    "end": 54.5367,
+    "seg": 17
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 54.5367,
+  "end": 54.9767,
+  "text": "get married.",
+  "woerter": [
+   {
+    "t": "get",
+    "start": 54.5367,
+    "end": 54.6367,
+    "seg": 17
+   },
+   {
+    "t": "married.",
+    "start": 54.6367,
+    "end": 54.9767,
+    "seg": 17
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 54.9767,
+  "end": 56.3167,
+  "text": "And so I",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 54.9767,
+    "end": 55.5167,
+    "seg": 18
+   },
+   {
+    "t": "so",
+    "start": 55.5167,
+    "end": 56.2167,
+    "seg": 18
+   },
+   {
+    "t": "I",
+    "start": 56.2167,
+    "end": 56.3167,
+    "seg": 18
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 56.3167,
+  "end": 56.9167,
+  "text": "agreed to that.",
+  "woerter": [
+   {
+    "t": "agreed",
+    "start": 56.3167,
+    "end": 56.5167,
+    "seg": 18
+   },
+   {
+    "t": "to",
+    "start": 56.5167,
+    "end": 56.6967,
+    "seg": 18
+   },
+   {
+    "t": "that.",
+    "start": 56.6967,
+    "end": 56.8767,
+    "seg": 18
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 57.0767,
+  "end": 57.4767,
+  "text": "So we ended",
+  "woerter": [
+   {
+    "t": "So",
+    "start": 57.0767,
+    "end": 57.1167,
+    "seg": 19
+   },
+   {
+    "t": "we",
+    "start": 57.1167,
+    "end": 57.3167,
+    "seg": 19
+   },
+   {
+    "t": "ended",
+    "start": 57.3167,
+    "end": 57.4767,
+    "seg": 19
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 57.4767,
+  "end": 58.1767,
+  "text": "up going to",
+  "woerter": [
+   {
+    "t": "up",
+    "start": 57.4767,
+    "end": 57.6167,
+    "seg": 19
+   },
+   {
+    "t": "going",
+    "start": 57.6167,
+    "end": 57.8567,
+    "seg": 19
+   },
+   {
+    "t": "to",
+    "start": 57.8567,
+    "end": 58.1767,
+    "seg": 19
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 58.1767,
+  "end": 59.2167,
+  "text": "Las Vegas.",
+  "woerter": [
+   {
+    "t": "Las",
+    "start": 58.1767,
+    "end": 58.8167,
+    "seg": 19
+   },
+   {
+    "t": "Vegas.",
+    "start": 58.8167,
+    "end": 59.2167,
+    "seg": 19
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 59.2167,
+  "end": 59.7567,
+  "text": "We got married",
+  "woerter": [
+   {
+    "t": "We",
+    "start": 59.2167,
+    "end": 59.4367,
+    "seg": 20
+   },
+   {
+    "t": "got",
+    "start": 59.4367,
+    "end": 59.5767,
+    "seg": 20
+   },
+   {
+    "t": "married",
+    "start": 59.5767,
+    "end": 59.7567,
+    "seg": 20
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 59.7567,
+  "end": 60.4567,
+  "text": "at the Tropicana",
+  "woerter": [
+   {
+    "t": "at",
+    "start": 59.7567,
+    "end": 59.8567,
+    "seg": 20
+   },
+   {
+    "t": "the",
+    "start": 59.8567,
+    "end": 59.9367,
+    "seg": 20
+   },
+   {
+    "t": "Tropicana",
+    "start": 59.9367,
+    "end": 60.4567,
+    "seg": 20
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 60.4567,
+  "end": 61.4767,
+  "text": "Hotel in",
+  "woerter": [
+   {
+    "t": "Hotel",
+    "start": 60.4567,
+    "end": 60.7967,
+    "seg": 20
+   },
+   {
+    "t": "in",
+    "start": 60.7967,
+    "end": 61.4767,
+    "seg": 20
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 61.4767,
+  "end": 62.2167,
+  "text": "Las Vegas.",
+  "woerter": [
+   {
+    "t": "Las",
+    "start": 61.4767,
+    "end": 61.7767,
+    "seg": 20
+   },
+   {
+    "t": "Vegas.",
+    "start": 61.7767,
+    "end": 62.2167,
+    "seg": 20
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 62.5367,
+  "end": 64.1167,
+  "text": "But I",
+  "woerter": [
+   {
+    "t": "But",
+    "start": 62.5367,
+    "end": 62.7567,
+    "seg": 32
+   },
+   {
+    "t": "I",
+    "start": 62.7567,
+    "end": 64.1167,
+    "seg": 32
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 64.1167,
+  "end": 64.5167,
+  "text": "guess it's",
+  "woerter": [
+   {
+    "t": "guess",
+    "start": 64.1167,
+    "end": 64.2767,
+    "seg": 32
+   },
+   {
+    "t": "it's",
+    "start": 64.2767,
+    "end": 64.5167,
+    "seg": 32
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 64.5167,
+  "end": 65.0367,
+  "text": "something I had",
+  "woerter": [
+   {
+    "t": "something",
+    "start": 64.5167,
+    "end": 64.7367,
+    "seg": 32
+   },
+   {
+    "t": "I",
+    "start": 64.7367,
+    "end": 64.9167,
+    "seg": 32
+   },
+   {
+    "t": "had",
+    "start": 64.9167,
+    "end": 65.0367,
+    "seg": 32
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 65.0367,
+  "end": 65.6367,
+  "text": "to go through.",
+  "woerter": [
+   {
+    "t": "to",
+    "start": 65.0367,
+    "end": 65.1567,
+    "seg": 32
+   },
+   {
+    "t": "go",
+    "start": 65.1567,
+    "end": 65.3167,
+    "seg": 32
+   },
+   {
+    "t": "through.",
+    "start": 65.3167,
+    "end": 65.5967,
+    "seg": 32
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 65.8167,
+  "end": 66.5367,
+  "text": "I was exposed",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 65.8167,
+    "end": 65.8767,
+    "seg": 33
+   },
+   {
+    "t": "was",
+    "start": 65.8767,
+    "end": 66.0167,
+    "seg": 33
+   },
+   {
+    "t": "exposed",
+    "start": 66.0167,
+    "end": 66.5367,
+    "seg": 33
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 66.5367,
+  "end": 67.6167,
+  "text": "in some way",
+  "woerter": [
+   {
+    "t": "in",
+    "start": 66.5367,
+    "end": 66.9967,
+    "seg": 33
+   },
+   {
+    "t": "some",
+    "start": 66.9967,
+    "end": 67.3567,
+    "seg": 33
+   },
+   {
+    "t": "way",
+    "start": 67.3567,
+    "end": 67.6167,
+    "seg": 33
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 67.6167,
+  "end": 69.5167,
+  "text": "as being out",
+  "woerter": [
+   {
+    "t": "as",
+    "start": 67.6167,
+    "end": 68.0567,
+    "seg": 33
+   },
+   {
+    "t": "being",
+    "start": 68.0567,
+    "end": 68.4167,
+    "seg": 33
+   },
+   {
+    "t": "out",
+    "start": 68.4167,
+    "end": 69.5167,
+    "seg": 33
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 69.5167,
+  "end": 70.4767,
+  "text": "of control and",
+  "woerter": [
+   {
+    "t": "of",
+    "start": 69.5167,
+    "end": 69.6167,
+    "seg": 33
+   },
+   {
+    "t": "control",
+    "start": 69.6167,
+    "end": 69.9967,
+    "seg": 33
+   },
+   {
+    "t": "and",
+    "start": 69.9967,
+    "end": 70.4767,
+    "seg": 33
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 70.4767,
+  "end": 70.7967,
+  "text": "out of",
+  "woerter": [
+   {
+    "t": "out",
+    "start": 70.4767,
+    "end": 70.7167,
+    "seg": 33
+   },
+   {
+    "t": "of",
+    "start": 70.7167,
+    "end": 70.7967,
+    "seg": 33
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 70.7967,
+  "end": 71.4567,
+  "text": "my mind.",
+  "woerter": [
+   {
+    "t": "my",
+    "start": 70.7967,
+    "end": 70.8967,
+    "seg": 33
+   },
+   {
+    "t": "mind.",
+    "start": 70.8967,
+    "end": 71.4567,
+    "seg": 33
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 71.8167,
+  "end": 72.9567,
+  "text": "And I'd never",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 71.8167,
+    "end": 72.3567,
+    "seg": 34
+   },
+   {
+    "t": "I'd",
+    "start": 72.3567,
+    "end": 72.5967,
+    "seg": 34
+   },
+   {
+    "t": "never",
+    "start": 72.5967,
+    "end": 72.9567,
+    "seg": 34
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 72.9567,
+  "end": 73.7367,
+  "text": "had that",
+  "woerter": [
+   {
+    "t": "had",
+    "start": 72.9567,
+    "end": 73.5767,
+    "seg": 34
+   },
+   {
+    "t": "that",
+    "start": 73.5767,
+    "end": 73.7367,
+    "seg": 34
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 73.7367,
+  "end": 74.1767,
+  "text": "experience",
+  "woerter": [
+   {
+    "t": "experience",
+    "start": 73.7367,
+    "end": 74.1767,
+    "seg": 34
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 74.1767,
+  "end": 74.7367,
+  "text": "before because",
+  "woerter": [
+   {
+    "t": "before",
+    "start": 74.1767,
+    "end": 74.5567,
+    "seg": 34
+   },
+   {
+    "t": "because",
+    "start": 74.5567,
+    "end": 74.7367,
+    "seg": 34
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 74.7367,
+  "end": 75.3167,
+  "text": "I'd always",
+  "woerter": [
+   {
+    "t": "I'd",
+    "start": 74.7367,
+    "end": 74.9767,
+    "seg": 34
+   },
+   {
+    "t": "always",
+    "start": 74.9767,
+    "end": 75.3167,
+    "seg": 34
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 75.3167,
+  "end": 77.2767,
+  "text": "kept my",
+  "woerter": [
+   {
+    "t": "kept",
+    "start": 75.3167,
+    "end": 76.9967,
+    "seg": 34
+   },
+   {
+    "t": "my",
+    "start": 76.9967,
+    "end": 77.2767,
+    "seg": 34
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 77.2767,
+  "end": 77.9767,
+  "text": "shit together",
+  "woerter": [
+   {
+    "t": "shit",
+    "start": 77.2767,
+    "end": 77.5367,
+    "seg": 35
+   },
+   {
+    "t": "together",
+    "start": 77.5367,
+    "end": 77.9767,
+    "seg": 35
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 77.9767,
+  "end": 78.7167,
+  "text": "and",
+  "woerter": [
+   {
+    "t": "and",
+    "start": 77.9767,
+    "end": 78.7167,
+    "seg": 35
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 78.7167,
+  "end": 79.0367,
+  "text": "at least",
+  "woerter": [
+   {
+    "t": "at",
+    "start": 78.7167,
+    "end": 78.8967,
+    "seg": 35
+   },
+   {
+    "t": "least",
+    "start": 78.8967,
+    "end": 79.0367,
+    "seg": 35
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 79.0367,
+  "end": 79.3967,
+  "text": "presented",
+  "woerter": [
+   {
+    "t": "presented",
+    "start": 79.0367,
+    "end": 79.3967,
+    "seg": 35
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 79.3967,
+  "end": 80.3567,
+  "text": "myself to the",
+  "woerter": [
+   {
+    "t": "myself",
+    "start": 79.3967,
+    "end": 79.8167,
+    "seg": 35
+   },
+   {
+    "t": "to",
+    "start": 79.8167,
+    "end": 80.2167,
+    "seg": 35
+   },
+   {
+    "t": "the",
+    "start": 80.2167,
+    "end": 80.3567,
+    "seg": 35
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 80.3567,
+  "end": 80.8567,
+  "text": "world as",
+  "woerter": [
+   {
+    "t": "world",
+    "start": 80.3567,
+    "end": 80.5967,
+    "seg": 35
+   },
+   {
+    "t": "as",
+    "start": 80.5967,
+    "end": 80.8567,
+    "seg": 35
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 80.8567,
+  "end": 81.6367,
+  "text": "somebody who",
+  "woerter": [
+   {
+    "t": "somebody",
+    "start": 80.8567,
+    "end": 81.1967,
+    "seg": 36
+   },
+   {
+    "t": "who",
+    "start": 81.1967,
+    "end": 81.6367,
+    "seg": 36
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 81.6367,
+  "end": 83.6567,
+  "text": "was",
+  "woerter": [
+   {
+    "t": "was",
+    "start": 81.6367,
+    "end": 83.6567,
+    "seg": 36
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 83.6567,
+  "end": 85.1167,
+  "text": "reasonable and",
+  "woerter": [
+   {
+    "t": "reasonable",
+    "start": 83.6567,
+    "end": 84.1567,
+    "seg": 36
+   },
+   {
+    "t": "and",
+    "start": 84.1567,
+    "end": 85.1167,
+    "seg": 36
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 85.1167,
+  "end": 85.7167,
+  "text": "disciplined.",
+  "woerter": [
+   {
+    "t": "disciplined.",
+    "start": 85.1167,
+    "end": 85.6367,
+    "seg": 36
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 86.7167,
+  "end": 88.0567,
+  "text": "And the",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 86.7167,
+    "end": 88.0567,
+    "seg": 37
+   },
+   {
+    "t": "the",
+    "start": 86.7167,
+    "end": 88.0567,
+    "seg": 37
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 88.0567,
+  "end": 88.4567,
+  "text": "truth is",
+  "woerter": [
+   {
+    "t": "truth",
+    "start": 88.0567,
+    "end": 88.2567,
+    "seg": 37
+   },
+   {
+    "t": "is",
+    "start": 88.2567,
+    "end": 88.4567,
+    "seg": 37
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 88.4567,
+  "end": 89.2367,
+  "text": "underneath, I had",
+  "woerter": [
+   {
+    "t": "underneath,",
+    "start": 88.4567,
+    "end": 88.7767,
+    "seg": 37
+   },
+   {
+    "t": "I",
+    "start": 89.0167,
+    "end": 89.0767,
+    "seg": 37
+   },
+   {
+    "t": "had",
+    "start": 89.0767,
+    "end": 89.2367,
+    "seg": 37
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 89.2367,
+  "end": 89.8367,
+  "text": "a lot of",
+  "woerter": [
+   {
+    "t": "a",
+    "start": 89.2367,
+    "end": 89.2967,
+    "seg": 37
+   },
+   {
+    "t": "lot",
+    "start": 89.2967,
+    "end": 89.5167,
+    "seg": 37
+   },
+   {
+    "t": "of",
+    "start": 89.5167,
+    "end": 89.8367,
+    "seg": 37
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 89.8367,
+  "end": 91.4967,
+  "text": "sadness and pain",
+  "woerter": [
+   {
+    "t": "sadness",
+    "start": 89.8367,
+    "end": 90.7367,
+    "seg": 37
+   },
+   {
+    "t": "and",
+    "start": 90.7367,
+    "end": 91.0567,
+    "seg": 37
+   },
+   {
+    "t": "pain",
+    "start": 91.0567,
+    "end": 91.4967,
+    "seg": 37
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 93.4567,
+  "end": 94.0967,
+  "text": "and",
+  "woerter": [
+   {
+    "t": "and",
+    "start": 93.4567,
+    "end": 94.0967,
+    "seg": 38
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 94.0967,
+  "end": 94.7367,
+  "text": "disorganization",
+  "woerter": [
+   {
+    "t": "disorganization",
+    "start": 94.0967,
+    "end": 94.7367,
+    "seg": 38
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 94.7367,
+  "end": 95.6167,
+  "text": "and fear.",
+  "woerter": [
+   {
+    "t": "and",
+    "start": 94.7367,
+    "end": 95.2167,
+    "seg": 38
+   },
+   {
+    "t": "fear.",
+    "start": 95.2167,
+    "end": 95.6167,
+    "seg": 38
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 96.3567,
+  "end": 96.9367,
+  "text": "And I just,",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 96.3567,
+    "end": 96.6167,
+    "seg": 39
+   },
+   {
+    "t": "I",
+    "start": 96.6167,
+    "end": 96.7367,
+    "seg": 39
+   },
+   {
+    "t": "just,",
+    "start": 96.7367,
+    "end": 96.8567,
+    "seg": 39
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 96.9367,
+  "end": 97.6167,
+  "text": "I didn't",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 96.9367,
+    "end": 97.0967,
+    "seg": 39
+   },
+   {
+    "t": "didn't",
+    "start": 97.0967,
+    "end": 97.6167,
+    "seg": 39
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 97.6167,
+  "end": 98.8167,
+  "text": "feel safe,",
+  "woerter": [
+   {
+    "t": "feel",
+    "start": 97.6167,
+    "end": 98.0567,
+    "seg": 39
+   },
+   {
+    "t": "safe,",
+    "start": 98.0567,
+    "end": 98.7167,
+    "seg": 39
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 98.8167,
+  "end": 99.4167,
+  "text": "I guess,",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 98.8167,
+    "end": 98.8967,
+    "seg": 39
+   },
+   {
+    "t": "guess,",
+    "start": 98.8967,
+    "end": 99.2167,
+    "seg": 39
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 99.4967,
+  "end": 100.3567,
+  "text": "even really",
+  "woerter": [
+   {
+    "t": "even",
+    "start": 99.4967,
+    "end": 99.9967,
+    "seg": 40
+   },
+   {
+    "t": "really",
+    "start": 99.9967,
+    "end": 100.3567,
+    "seg": 40
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 100.3567,
+  "end": 101.0767,
+  "text": "letting myself",
+  "woerter": [
+   {
+    "t": "letting",
+    "start": 100.3567,
+    "end": 100.5767,
+    "seg": 40
+   },
+   {
+    "t": "myself",
+    "start": 100.5767,
+    "end": 101.0767,
+    "seg": 40
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 101.0767,
+  "end": 101.8567,
+  "text": "know the truth",
+  "woerter": [
+   {
+    "t": "know",
+    "start": 101.0767,
+    "end": 101.4967,
+    "seg": 40
+   },
+   {
+    "t": "the",
+    "start": 101.4967,
+    "end": 101.6567,
+    "seg": 40
+   },
+   {
+    "t": "truth",
+    "start": 101.6567,
+    "end": 101.8567,
+    "seg": 40
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 101.8567,
+  "end": 102.3167,
+  "text": "of that,",
+  "woerter": [
+   {
+    "t": "of",
+    "start": 101.8567,
+    "end": 102.0367,
+    "seg": 40
+   },
+   {
+    "t": "that,",
+    "start": 102.0367,
+    "end": 102.2167,
+    "seg": 40
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 102.3167,
+  "end": 102.6767,
+  "text": "never mind",
+  "woerter": [
+   {
+    "t": "never",
+    "start": 102.3167,
+    "end": 102.4167,
+    "seg": 41
+   },
+   {
+    "t": "mind",
+    "start": 102.4167,
+    "end": 102.6767,
+    "seg": 41
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 102.6767,
+  "end": 103.2767,
+  "text": "other people.",
+  "woerter": [
+   {
+    "t": "other",
+    "start": 102.6767,
+    "end": 102.9267,
+    "seg": 41
+   },
+   {
+    "t": "people.",
+    "start": 102.9267,
+    "end": 103.1767,
+    "seg": 41
+   }
+  ],
+  "grund": "satz"
+ }
+]

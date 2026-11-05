@@ -2,8 +2,12 @@
  "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/scheidung-roh.mp4",
  "bild": [
   [
-   4.9,
-   80.60000000000001
+   6.833333333333333,
+   8.633333333333333
+  ],
+  [
+   9.133333333333333,
+   80.6
   ],
   [
    111.2,
@@ -12,14 +16,19 @@
  ],
  "ton": [
   [
-   4.9,
+   6.833333333333333,
+   8.633333333333333
+  ],
+  [
+   9.133333333333333,
    69.75
   ],
   [
-   100.35000000000001,
+   100.35,
    141.6
   ]
  ],
  "tonblende_s": 0.02,
- "hinweis": "J-Schnitt. Heraus sind 30,60 s = genau 918 Bilder: von 'I mean, we planned for it' bis 'So everybody knew that it was not a good idea.' Der Bildschnitt liegt auf dem Kamerawechsel bei Clipzeit 75,70, der Tonschnitt in der Pause nach 'Las Vegas.'"
+ "bilder_je_sekunde": 30,
+ "hinweis": "Anfang jetzt auf 'your notorious marriage' ('we also talked about' faellt weg), 'a little bit' herausgeschnitten (Fenster 8,6333-9,1333 = 15 Bilder, harter Schnitt innerhalb derselben Einstellung). Der grosse J-Schnitt von vorher bleibt unveraendert. 54 + 2144 + 912 = 3110 Bilder."
 }
