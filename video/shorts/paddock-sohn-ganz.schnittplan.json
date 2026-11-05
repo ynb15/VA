@@ -1,0 +1,34 @@
+{
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/paddock/master.mp4",
+ "bild": [
+  [
+   782.0333333333333,
+   796.2
+  ],
+  [
+   800.2,
+   825.6
+  ],
+  [
+   846.4,
+   918.0
+  ]
+ ],
+ "ton": [
+  [
+   782.0333333333333,
+   796.2
+  ],
+  [
+   800.2,
+   825.6
+  ],
+  [
+   846.4,
+   918.0
+  ]
+ ],
+ "tonblende_s": 0.02,
+ "bilder_je_sekunde": 30,
+ "hinweis": "Die ganze Stelle: Intro mit der Pilzreise IST drin, der Name IST drin. Heraus nur der Zwischenruf (796,2-800,2) und die Fruchtbarkeits-Abschweifung samt Stotterer (825,6-846,4). 425 + 762 + 2148 = 3335 Bilder."
+}
