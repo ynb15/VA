@@ -1,7 +1,7 @@
 {
  "name": "Sutcliffe-Folge - das deutsche Schulsystem und der Troll-Kommentar",
  "datei": "YNB Podcast David Sutcliffe School (Moms Got Work).mp4",
- "stand": "2026-11-05 - vierte Fassung: Tempo 1,2, Mom's Got Work statt He's Alive",
+ "stand": "2026-11-05 - fuenfte Fassung: spaeterer Anfang, 'hence' statt 'and', Mom's Got Work",
  "wer_spricht": "Er erzaehlt die Auseinandersetzung mit dem Online-Troll; Sutcliffe wirft ein und erzaehlt von seinen zehn Jahren Supervision.",
  "seine_ansage": "'Und als naechstes auf jeden Fall auch, die Stelle, wo ich mich uebers deutsche Schulsystem aufrege. Und ueber den Kommentar und da bitte nichts eigenstaendig rauscutten.'",
  "nichts_rausgeschnitten": "Innen steht die Stelle vollstaendig, ohne einen einzigen Binnenschnitt - Bild und Ton sind EIN Stueck von 7,90 bis 129,70 im Fenster. Entschieden ist nur, wo sie anfaengt und aufhoert.",
@@ -19,14 +19,14 @@
  },
  "schnitt": {
   "von_bis_src_s": [
-   7.9,
-   129.7
+   10.1333,
+   121.3667
   ],
   "von_bis_master_s": [
    5472.88,
    5594.68
   ],
-  "dauer_roh_s": 121.8,
+  "dauer_roh_s": 111.2333,
   "warum_anfang": "Der Satz davor ('that's the safe way to do it, right?') endet bei 7,38, 'it was just yesterday' beginnt bei 7,96 - geschnitten bei 7,90. Ein Kamerawechsel liegt bei Master 5472,6000, also 0,28 s davor; der Einstieg sitzt damit INNERHALB der neuen Einstellung. Bei 5474,1000 folgt der naechste Wechsel, die erste Einstellung ist also nur 1,22 s lang - das ist der Rhythmus des Masters, kein eigener Schnitt.",
   "warum_nicht_auf_dem_wechsel": "Genau auf 5472,6000 einzusteigen haette 'Yeah,' (7,68-7,82) mitgenommen, das zum Satz DAVOR gehoert.",
   "warum_ende": "'And our children.' endet bei 129,38, 'And I listened to your podcast' beginnt bei 129,94 - geschnitten bei 129,70 in der Luecke.",
@@ -81,9 +81,9 @@
  },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
  "laenge_s": {
-  "hauptteil": 94.57,
+  "hauptteil": 92.73,
   "outro": 4.21,
-  "gesamt": 98.82
+  "gesamt": 96.98
  },
  "aenderungen_26_10": {
   "seine_ansage": "'\"mentally ill\" in Anfuehrungszeichen bitte' / 'but those who don't - da sollte das teacher short enden' / Tempo 1,15 / Mom's Got Work beibehalten",
@@ -104,5 +104,18 @@
   "kein_loop": "Mom's Got Work ist 117,79 s lang, der Hauptteil 94,57 s - ab Songsekunde 0 laeuft das Bett ohne Schleife durch. Spaetester schleifenfreier Start waere 23,22 s.",
   "ausblende": "4 s, Vorgabe seit dem 24.10. Gemessen faellt der Pegel ab 90,5 s ab.",
   "ohne_musik_bleibt": "'YNB Podcast David Sutcliffe School.mp4' ist weiter die Fassung ohne Bett und traegt den Grundnamen."
+ },
+ "aenderungen_05_11_zwei": {
+  "seine_ansage": "'and --> hence incapable of working' / 'lass uns doch mal reinstarten, weil anfangs ist die Kamera noch auf David, aber ich rede ja die ganze Zeit. Deshalb lass uns einfach reinstarten mit I got into a discussion.'",
+  "neuer_anfang": {
+   "bei": "Clipzeit 2,2333 der alten Fassung = 10,1333 im Fenster = Bild 304. Neue Laenge 3337 Bilder = 111,2333 s.",
+   "warum_dort": "'yesterday' endet bei 9,72 im Fenster, 'I got into a' beginnt bei 10,18 - gemessen am Pegel, nicht am Modell: Whisper setzt das 'I' auf 9,68, also mitten in die Stille. Geschnitten bei 10,1333, 0,047 s vor dem Wort.",
+   "was_wegfaellt": "'It was just yesterday' - 2,23 s. Die erste Einstellung der alten Fassung (0 bis 1,2) zeigte David, waehrend YNB spricht; die faellt damit ganz weg, der Short beginnt in der Einstellung auf YNB.",
+   "geprueft": "Erstes Bild ist YNB (Kasten 616), erster Ton ist 'I got into a discussion with'."
+  },
+  "hence_statt_and": "Die Einblendung bei Ausgabezeit 0:28 heisst jetzt 'HENCE INCAPABLE OF'. Whisper medium hoert 'and' - auch auf dem isoliert geschnittenen Schnipsel -, das Wort dauert aber 0,54 s, was eher fuer 'hence' spricht. Er hat es entschieden, es ist sein eigener Satz.",
+  "einstellungen": "Die zehn Einstellungsgrenzen sind um GENAU 67 Bilder verschoben und darum weiter bildgenau; mit schnittgrenzen.py nachgemessen: 0 von 9 Grenzen mussten bewegt werden.",
+  "musik": "Mom's Got Work ab Songsekunde 0, 0 dB unter der Stimme. Stimme -29,7 dB, Bett -16,7 dB -> Bett auf -13,0 dB. Song 117,79 s gegen 92,73 s Hauptteil, also keine Schleife.",
+  "zwei_fassungen": "'YNB Podcast David Sutcliffe School.mp4' ohne Bett, '... (Moms Got Work).mp4' mit."
  }
 }

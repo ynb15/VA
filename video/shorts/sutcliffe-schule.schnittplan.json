@@ -2,16 +2,17 @@
  "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/neu/schule-roh.mp4",
  "bild": [
   [
-   7.9,
-   121.36670000000001
+   10.133333333333333,
+   121.36666666666666
   ]
  ],
  "ton": [
   [
-   7.9,
-   121.36670000000001
+   10.133333333333333,
+   121.36666666666666
   ]
  ],
  "tonblende_s": 0.02,
- "hinweis": "Ein Stueck, innen nichts herausgeschnitten. Das Ende liegt jetzt nach 'but the ones who don't' (endet bei Clipzeit 113,36), in der Stille davor dem naechsten Wort bei 113,52. Laenge 3404 Bilder."
+ "bilder_je_sekunde": 30,
+ "hinweis": "Ein Stueck, innen nichts herausgeschnitten. Anfang jetzt bei 'I got into a discussion' - die 2,2333 s davor ('It was just yesterday') liegen zur Haelfte noch auf der Kamera, die David zeigt, waehrend er spricht. 3337 Bilder."
 }
