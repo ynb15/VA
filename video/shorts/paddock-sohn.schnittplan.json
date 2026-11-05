@@ -1,0 +1,50 @@
+{
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/paddock/master.mp4",
+ "bild": [
+  [
+   782.0333333333333,
+   796.2
+  ],
+  [
+   800.2,
+   825.6
+  ],
+  [
+   846.4,
+   875.5
+  ],
+  [
+   883.3,
+   890.2666666666667
+  ],
+  [
+   906.8,
+   918.0
+  ]
+ ],
+ "ton": [
+  [
+   782.0333333333333,
+   796.2
+  ],
+  [
+   800.2,
+   825.6
+  ],
+  [
+   846.4,
+   875.5
+  ],
+  [
+   883.3,
+   890.2666666666667
+  ],
+  [
+   906.8,
+   918.0
+  ]
+ ],
+ "tonblende_s": 0.02,
+ "bilder_je_sekunde": 30,
+ "hinweis": "Paddock, er trifft seinen ungeborenen Sohn. Harte Schnitte, Bild=Ton. Die gesamte Stelle mit dem Namen ist raus (Master 875,5-883,3 und 890,27-906,8), dazu das Podcast-Gescherz (796,2-800,2) und die Fruchtbarkeits-Abschweifung samt Stotterer (825,6-846,4). Alle Stuecke sind ganze Bilder lang."
+}

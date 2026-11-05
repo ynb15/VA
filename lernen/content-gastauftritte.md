@@ -1163,3 +1163,41 @@ sobald der Master im Episodenordner liegt. Muster wie bei Ep_58: **die Datei
 kommt von ihm.**
 
 → betrifft: content-*, alfred
+
+---
+
+## 05.11. — die Datei mit „(4K)" im Namen ist 720p
+
+Er hat die Paddock-Folge aus dem Drive nachgeliefert
+(`1lGUE0j-2fFf5mC32CAMHq0e9qkpS7sv_`), Dateiname
+*„… Millionaire Rob Paddock **(4K)**.mp4"*. Gemessen: **1280×720, 0,96 Mbit/s,
+665 MB auf 92 Minuten**. Das „(4K)" ist der YouTube-Titel, nicht das Bild.
+
+Folgen für den Short: der 9:16-Ausschnitt ist **405×720** — volle Höhe, mehr
+geht ohne Ränder nicht —, hochgerechnet auf 2160×3840 sind das **5,3×**. Zum
+Vergleich: bei den Sutcliffe-Shorts waren es 608×1080 und 3,55×. **Die
+Bildrate des fertigen Shorts verrät es**: 8,30 Mbit/s statt der sonst 17–18
+bei gleichem CRF — der Encoder findet schlicht keine Details mehr.
+
+**Also: vor dem Schneiden `ffprobe` auf die Quelle, nicht dem Dateinamen
+glauben.** Und wenn die Auflösung nicht reicht, sagen, bevor man schneidet,
+nicht danach.
+
+→ betrifft: content-*, alle Short-Agenten
+
+## 05.11. — Whisper erfindet an der Schnittkante genau das Wort, das raus soll
+
+Er wollte die ganze Namensstelle raus. Die Naht liegt in einer 0,10 s kurzen
+Lücke zwischen *„beautiful"* und *„and his name's Chadwick"*. Der Ton endet
+davor — die **Einblendung** aber las **„IN HIS NAME"**.
+
+Gegengeprüft an drei Endpunkten (890,267 / 890,100 / 889,967): das Modell
+schreibt *„in his name"* **jedes Mal**, auch wenn der Ton schon mitten im Wort
+„beautiful" abbricht. Es ist die Sprachstatistik, nicht das Signal.
+
+**Daraus: wenn eine Stelle herausgeschnitten wird, weil sie nicht ins Bild
+darf, reicht der Tonschnitt nicht — die Einblendungen hinter der Naht muss man
+einzeln ansehen.** Hier wäre sonst genau der Hinweis stehen geblieben, den er
+weghaben wollte.
+
+→ betrifft: content-*, alle Short-Agenten

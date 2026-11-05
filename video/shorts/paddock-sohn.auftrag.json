@@ -1,0 +1,107 @@
+{
+ "name": "Paddock-Folge - er trifft seinen ungeborenen Sohn",
+ "datei": "YNB Podcast Rob Paddock Son.mp4",
+ "stand": "2026-11-05 - erste Fassung, Tempo 1,15, ohne Musik",
+ "seine_ansage": "'die gesamte Stelle mit dem namen raus' - dazu der Drive-Link auf die Folge, 'und denk dran mir das skript mitzuliefern'",
+ "wer_spricht": "YNB fragt, wie Psychedelika sein Verhaeltnis zu seinen Kindern veraendert haben; Paddock erzaehlt die ganze Geschichte.",
+ "quelle": {
+  "datei": "$100M Exit, Psychedelic Fatherhood & The Truth About Masculinity - Millionaire Rob Paddock (4K).mp4",
+  "drive_id": "1lGUE0j-2fFf5mC32CAMHq0e9qkpS7sv_",
+  "gemessen": "1280x720, 30 B/s, 0,96 Mbit/s, 5532,04 s - trotz '(4K)' im Namen eine 720p-Fassung",
+  "deckungsgleich_mit": "YouTube ud5kr_LoqU4 - die Zeiten des Drive-Transkripts passen 1:1"
+ },
+ "schnitt": {
+  "werkzeug": "video/schnitt_bauen.py, Bild = Ton (harte Schnitte)",
+  "stuecke_quelle_s": [
+   [
+    782.0333,
+    796.2
+   ],
+   [
+    800.2,
+    825.6
+   ],
+   [
+    846.4,
+    875.5
+   ],
+   [
+    883.3,
+    890.2667
+   ],
+   [
+    906.8,
+    918.0
+   ]
+  ],
+  "bilder_je_stueck": [
+   425,
+   762,
+   873,
+   209,
+   336
+  ],
+  "dauer_roh_s": 86.8333,
+  "heraus": {
+   "796.2-800.2": "'Well, this is the only way to podcast. Yeah, there we go.' - Zwischenruf",
+   "825.6-846.4": "Fruchtbarkeits-Abschweifung ('more likely on Ash's side, my wife's side') und der Stotterer 'I think it was my first - was my second mushroom experience ever'",
+   "875.5-883.3": "DER NAME: 'And the name he told me was Chadwick Graham Paddock.'",
+   "890.2667-906.8": "DER NAME, zweiter Teil: '...and his name's Chadwick', die Reaktion seiner Frau, 'We ended up calling him Grey Kahn Paddock.'"
+  },
+  "warum_die_grenzen_liegen_wo_sie_liegen": "Alle vier Nahtstellen liegen in gemessener Stille. Bei 846,4 und 918,0 steht im Master digitale Null (-180 dB), dort hat die Folge selbst einen Schnitt. Bei 890,2667 ist die Luecke nur 0,10 s lang ('beautiful' / 'and his name's'); drei Probeschnitte zeigen, dass Whisper dort 'in his name' auch dann erfindet, wenn der Ton schon mitten in 'beautiful' endet - die Halluzination steht im Modell, nicht im Ton."
+ },
+ "bild": {
+  "ausgabe": "2160x3840",
+  "quelle_ausschnitt": "405x720 - volle Hoehe, mehr geht bei 720p nicht ohne Raender",
+  "tempo": 1.15,
+  "look": "preset",
+  "worte_je_einblendung": 3,
+  "tiefer_px": 120,
+  "lippe": 1267,
+  "logo_breite_px": 1400,
+  "logo_hoehe": 0.877,
+  "kaesten": {
+   "ynb": "406:0:405:720",
+   "paddock_nah_1": "334:0:405:720",
+   "totale": "0:0:405:720",
+   "paddock_nah_2": "350:0:405:720",
+   "paddock_nah_3": "414:0:405:720"
+  },
+  "einstellungsgrenzen_clip_s": [
+   3.4333,
+   14.1667,
+   15.3,
+   58.3,
+   75.6667
+  ],
+  "wie_gemessen": "video/schnittgrenzen.py - alle fuenf Grenzen lagen 0 bis 6 Bilder neben der Schaetzung",
+  "zwei_sichtbare_spruenge": "Clipzeit 39,5667 und 68,6667. Von Quelle 801,3 bis 865,1 und von 865,1 bis 901,1 laeuft je EINE Einstellung durch; an diesen beiden Nahten gibt es keinen Kamerawechsel, hinter den sich der Bildschnitt legen liesse. Ein J-Schnitt haette den Ton 5,7 s gegen das Bild verschoben - das ist schlechter als ein sauberer Sprung."
+ },
+ "einblendungen": {
+  "quelle": "video/shorts/paddock-sohn.cues.json",
+  "anzahl": 112,
+  "modell": "whisper medium",
+  "von_hand": [
+   "Anfang: 'psychedelics' und das gedehnte 'your' fehlten - die erste Zeile haette mit 'IMPACT THE' angefangen.",
+   "'first' war als Einzelwort unter die Mindest-Standzeit gefallen; aus 'one of my first psychedelic experiences' waere 'one of my psychedelic experiences' geworden. Jetzt an 'psychedelic' angehaengt.",
+   "'IN HIS NAME' am Ende von Stueck 4 geloescht - Halluzination ueber die Schnittkante, und ausgerechnet der Hinweis auf den Namen."
+  ]
+ },
+ "ton": {
+  "laut": "aus",
+  "dehnung": "atempo",
+  "musik": "keine - nicht bestellt"
+ },
+ "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
+ "laenge_s": {
+  "hauptteil": 75.53,
+  "outro": 4.21,
+  "gesamt": 79.78
+ },
+ "geprueft": {
+  "ortscheck": "video/ortscheck.py auf dem SRT - sauber",
+  "name": "kommt im Ton und in den Einblendungen null Mal vor",
+  "bildrate": "8,30 Mbit/s statt der sonst 17-18 - das Quellbild gibt nicht mehr her"
+ },
+ "offen": "Wenn es den echten Master gibt (nicht die 720p-Fassung), schneide ich es daraus neu; der Plan oben gilt dann Bild fuer Bild unveraendert."
+}
