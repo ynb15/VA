@@ -1201,3 +1201,29 @@ einzeln ansehen.** Hier wäre sonst genau der Hinweis stehen geblieben, den er
 weghaben wollte.
 
 → betrifft: content-*, alle Short-Agenten
+
+---
+
+## 05.11. — „He's Alive" nicht unter Shorts über 90 Sekunden
+
+**Seine Ansage, wörtlich:** *„Das wurde nämlich mit dem Song He's Alive, wurde
+das geblockt. Also das ist ja über 90 Sekunden lang. … dass die wissen, dass
+wir He's Alive nicht für Shorts nehmen können, die über 90 Sekunden gehen.
+Und stattdessen nimm bitte Mom's Got Work als Hintergrundmusik."*
+
+Gemessen am betroffenen Short (deutsches Schulsystem): **Hauptteil 94,57 s,
+mit Outro 98,82 s** — also über 90. Gesperrt wurde die Fassung mit *He's
+Alive* ab Songsekunde 109 (1:49). **Ersetzt durch Adam Taylor — Mom's Got
+Work, ab Songsekunde 0, 0 dB unter der Stimme**, wie bei den anderen Shorts
+dieser Reihe.
+
+Dazu der Gegenbefund vom 29.10., der weiter gilt: **Mom's Got Work wurde
+NICHT gesperrt**, auch nicht bei einem Short, das bis 2 Minuten durchläuft
+(sein eigener Test). Die beiden Titel verhalten sich also verschieden.
+
+**Daraus für alle, die Shorts bauen:** *He's Alive* nur unter Shorts bis
+90 Sekunden. Darüber Mom's Got Work. Und weiterhin gilt: **zu jedem Short mit
+Bett gehört eine Fassung ohne Musik**, weil die Sperre erst beim Hochladen
+sichtbar wird.
+
+→ betrifft: youtube-manager, content-schlicht, content-cinematic, content-vlog
