@@ -777,3 +777,18 @@ habe. Keine der automatischen Prüfungen kann einen angeschnittenen Kopf sehen.
 **Regel: vor der Übergabe ein Kontaktabzug über alle Stücke, und zwar
 angesehen.** Das kostet eine Minute und hat hier acht Dateien gerettet.
 → betrifft: content-*, alle Content-Agenten
+
+**05.11. — Ein geklemmter Wert ist keine Messung.** Im Meaningful-Short der
+Kingsbury-Folge zeigte eine Einstellung Kyles **Knie statt seines Kopfes**.
+Im Plan stand dort `y = 560` — und 560 ist bei 2160 Quellhöhe und 1600
+Ausschnitthöhe exakt das Maximum, also der an den unteren Rand geklemmte
+Wert. Die erkannte Kopfoberkante lag so tief, dass der Ausschnitt unten
+anschlug: in der Totale bewegen sich die Hände im Schoß, nicht das Gesicht,
+und die Bewegungsmessung folgt der Bewegung.
+`bildausschnitt.py` erkennt diesen Fall jetzt und fällt auf die Regel
+zurück, die ohne Messung gilt — oberes Drittel.
+**Regel: wenn ein berechneter Wert an seine Grenze stößt, ist das kein
+gültiger Randfall, sondern der Hinweis, dass die Rechnung nicht trägt.**
+Dann ist der Rückfall auf die einfache Annahme besser als der geklemmte
+Wert, der plausibel aussieht und falsch ist.
+→ betrifft: content-*, alle Content-Agenten

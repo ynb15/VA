@@ -242,10 +242,19 @@ def _kasten(mitte_x, qb, qh, seitenverhaeltnis, zoom=1.0, kopf_oben=None):
         bh = int(round(bb / seitenverhaeltnis))
     x = int(round(mitte_x - bb / 2))
     x = max(0, min(x, qb - bb))
+    oben_drittel = max(0, (qh - bh) // 3)   # Koepfe sitzen im oberen Drittel
     if kopf_oben is None:
-        y = max(0, (qh - bh) // 3)      # Koepfe sitzen im oberen Drittel
+        y = oben_drittel
     else:
         y = int(round(kopf_oben * qh - LUFT_OBEN * bh))
+        # **Ein geklemmter Wert ist keine Messung.** Liegt die erkannte
+        # Kopfoberkante so tief, dass der Ausschnitt an den unteren Rand
+        # stossen wuerde, hat die Bewegungsmessung den Kopf nicht gefunden —
+        # in der Totale bewegen sich die Haende im Schoss, nicht das Gesicht.
+        # Am 05.11. zeigte der Short dort Kyles Knie statt seines Kopfes.
+        # Dann gilt wieder, was ohne Messung gilt: oberes Drittel.
+        if y > qh - bh:
+            y = oben_drittel
     y = max(0, min(y, qh - bh))
     return x, y, bb, bh
 
