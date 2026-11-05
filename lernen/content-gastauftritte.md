@@ -1129,3 +1129,37 @@ der Reihe**, und **Quelle ist seine eigene Kopie**, nicht Drews Ordner. Die
 Rechtefrage ist damit von ihm beantwortet.
 
 → betrifft: alle. Kurz schreiben, lang protokollieren.
+
+---
+
+## 05.11. — zur Rob-Paddock-Folge liegt im Drive kein Master
+
+Er will ein Short aus der Paddock-Folge (er trifft seinen ungeborenen Sohn auf
+einer Pilzreise). **Die Stelle ist belegt**, im Drive-Transkript der
+veröffentlichten Folge `ud5kr_LoqU4`: **12:58 bis 15:19**, Datei
+`03 YNB Podcast: Robert Paddock (Transcript)`
+(`1gwC-lKH2dqfMdZ-eA2ek2pxRMh84S2BIQJ3Yr2dN8P4`, 18.05.2026).
+
+**Das Bild fehlt.** Gemessen heute:
+
+- Der Episodenordner `03 YNB Podcast: Rob Paddock`
+  (`1B6M8coYd_OY_jXMZIlJOdyhqCSq0QBWm`) enthält **drei Dokumente und keine
+  einzige Videodatei**.
+- Eine drivebreite Suche `title contains 'Paddock'` findet **fünf Treffer**:
+  zwei Transkripte, ein Produktionsdoku, zwei Ordner (Feedback, Thumbnails).
+  **Kein Video.** Dasselbe für `mimeType contains 'video/'` quer über alle
+  `YNB Podcast`-Dateien — Burning Man, Aaronson, Makhosi, Whitney, Strassman,
+  Ken Stern, Kingsbury, Britton, Defina, Rob Bennet; **Paddock nicht**.
+- YouTube bleibt zu (IP-Sperre, 21.10.). Also: **ohne Datei kein Short.**
+
+**Nebenbefund, der andere betrifft:** der Sutcliffe-Master
+`1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT` steht inzwischen **im Papierkorb**
+(`trashed: true`). Wer dort noch einmal hinein muss, muss ihn vorher
+wiederherstellen lassen.
+
+**Also:** Skript und Schnittvorschlag liegen fertig in
+`video/shorts/YNB Podcast Rob Paddock Son - Skript.md`; der Schnitt beginnt,
+sobald der Master im Episodenordner liegt. Muster wie bei Ep_58: **die Datei
+kommt von ihm.**
+
+→ betrifft: content-*, alfred
