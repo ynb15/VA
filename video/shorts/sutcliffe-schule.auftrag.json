@@ -1,7 +1,7 @@
 {
  "name": "Sutcliffe-Folge - das deutsche Schulsystem und der Troll-Kommentar",
  "datei": "YNB Podcast David Sutcliffe School (Moms Got Work).mp4",
- "stand": "2026-10-26 - zweite Fassung: Tempo 1,15, frueheres Ende, Anfuehrungszeichen, Mom's Got Work",
+ "stand": "2026-11-05 - vierte Fassung: Tempo 1,2, Mom's Got Work statt He's Alive",
  "wer_spricht": "Er erzaehlt die Auseinandersetzung mit dem Online-Troll; Sutcliffe wirft ein und erzaehlt von seinen zehn Jahren Supervision.",
  "seine_ansage": "'Und als naechstes auf jeden Fall auch, die Stelle, wo ich mich uebers deutsche Schulsystem aufrege. Und ueber den Kommentar und da bitte nichts eigenstaendig rauscutten.'",
  "nichts_rausgeschnitten": "Innen steht die Stelle vollstaendig, ohne einen einzigen Binnenschnitt - Bild und Ton sind EIN Stueck von 7,90 bis 129,70 im Fenster. Entschieden ist nur, wo sie anfaengt und aufhoert.",
@@ -77,13 +77,13 @@
  "ton": {
   "laut": "aus",
   "dehnung": "atempo",
-  "musik": "keine - nicht bestellt"
+  "musik": "Adam Taylor - Mom's Got Work, ab Songsekunde 0, 0 dB unter der Stimme"
  },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
  "laenge_s": {
-  "hauptteil": 98.7,
+  "hauptteil": 94.57,
   "outro": 4.21,
-  "gesamt": 102.95
+  "gesamt": 98.82
  },
  "aenderungen_26_10": {
   "seine_ansage": "'\"mentally ill\" in Anfuehrungszeichen bitte' / 'but those who don't - da sollte das teacher short enden' / Tempo 1,15 / Mom's Got Work beibehalten",
@@ -96,5 +96,13 @@
   "tempo": "1,15. 113,467 s Clip -> 98,70 s + 4,21 s Outro = 102,95 s.",
   "musik": "Adam Taylor - Mom's Got Work, Bett ab Songsekunde 0, 0 dB unter der Stimme.",
   "lowack_entfallen": "Die Fassung mit Yannick Lowack ist mit dieser Runde weggefallen - er hat ausdruecklich gesagt, Mom's Got Work bleibt. Der Titel liegt weiter im Drive-Ordner, falls er ihn doch will."
+ },
+ "aenderungen_05_11": {
+  "seine_ansage": "'Das wurde naemlich mit dem Song He's Alive, wurde das geblockt. Also das ist ja ueber 90 Sekunden lang. ... dass wir He's Alive nicht fuer Shorts nehmen koennen, die ueber 90 Sekunden gehen. Und stattdessen nimm bitte Mom's Got Work als Hintergrundmusik.'",
+  "was_gemacht": "Dasselbe gerenderte 4K-Bild wie bei der He's-Alive-Fassung (schule12-4k.mp4, Tempo 1,2, 94,57 s) - nur das Bett ausgetauscht. Bild kopiert, nicht neu kodiert.",
+  "pegel": "Stimme -29,7 dB, Bett ab 0:00 -16,6 dB -> Bett auf -13,1 dB gelegt (0 dB unter der Stimme), wie bei den anderen Shorts dieser Reihe.",
+  "kein_loop": "Mom's Got Work ist 117,79 s lang, der Hauptteil 94,57 s - ab Songsekunde 0 laeuft das Bett ohne Schleife durch. Spaetester schleifenfreier Start waere 23,22 s.",
+  "ausblende": "4 s, Vorgabe seit dem 24.10. Gemessen faellt der Pegel ab 90,5 s ab.",
+  "ohne_musik_bleibt": "'YNB Podcast David Sutcliffe School.mp4' ist weiter die Fassung ohne Bett und traegt den Grundnamen."
  }
 }
