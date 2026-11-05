@@ -622,3 +622,58 @@ Kauderwelsch an der Xhosa-Stelle, das sich selbst verrät. **Ein Satz, der zu
 glatt in der Stille steht, gehört nachgehört, nicht übernommen.**
 
 → betrifft: jeden, der ein Whisper-Transkript nach Zitaten durchsucht.
+
+## 05.11. — in seinem Vorbereitungsdokument stehen zwei Zeitleisten übereinander
+
+Das Dokument zur Craig-Folge trägt eine **Kapitelliste** („33:44 Ubuntu") und
+weiter unten ein **volles Transkript mit Zeitmarken**. Beide sehen gleich aus.
+Sie sind es nicht: „Ubuntu I am because we are" steht im Transkript bei
+**30:11**, in der Kapitelliste bei **33:44**; bei „Into the Wild" sind es
+28:49 gegen 31:37. Der Versatz wächst von 2:48 auf 3:33.
+
+Das Transkript endet bei 2:24:55, der Master läuft 2:25:11 — **das Transkript
+gehört zum Master**, die Kapitelliste zur fertigen Folge.
+
+Wer die beiden verwechselt, sucht drei Minuten neben der Stelle. Wer sie
+auseinanderhält, hat etwas Besseres als eine Rechnung: **ein Transkript mit
+Mastertzeiten ist ein Ortsregister für eine 27-GB-Datei**, mit dem ein
+einziges Fenster von 160 s genügt statt eines Tonabzugs über zwei Stunden.
+
+→ betrifft: jeden, der in einer Folge eine Stelle sucht, zu der es ein
+Vorbereitungsdokument gibt — erst nachsehen, ob dort schon ein Transkript
+liegt, und an zwei bekannten Zitaten prüfen, auf welche Fassung sich seine
+Zeiten beziehen.
+
+## 05.11. — der Zwischenruf, den erst der Untertitel sichtbar macht
+
+Im ersten Durchlauf des Craig-Shorts stand **FUCK HAPPINESS** in Versalien im
+Bild, mitten in einer Passage über Dankbarkeit. Im Ton war es ein hingeworfener
+Zwischenruf, den man beim Hören kaum bemerkt. Eingebrannt, in Großbuchstaben,
+zwei Sekunden stehend, ist es das Erste, was man liest.
+
+**Untertitel gewichten anders als Ton.** Ein Nebensatz, der gesprochen
+durchrutscht, steht geschrieben in der Mitte des Bildes. Deshalb die
+Satzliste des ersten Durchlaufs lesen, bevor die Fassung steht — nicht erst
+das fertige Video ansehen.
+
+→ betrifft: alle, die Untertitel einbrennen.
+
+## 05.11. — zum zweiten Mal eine Stelle gewählt, die es schon gibt
+
+*„Bruh. Ich sehe gerade 'what makes life meaningful' haben wir schon für
+Craig."* Ein fertiges Short, weggeworfen, weil ich die Stelle nicht gegen
+den Bestand geprüft hatte. Am 29.10. derselbe Fehler in anderer Form
+(„Craig Into the Wild und Hypermaskulinität haben wir schon veröffentlicht").
+
+Im Repo steht `video/meaningful-serie.md` mit sechs Gästen zu genau dieser
+Frage — Craig ist nicht dabei. **Mein Bestand sagt also nichts darüber, was
+draußen ist.** Ich führe Buch über meine Lieferungen, nicht über seinen
+Kanal, und die Lücke dazwischen kostet jedes Mal eine ganze Runde.
+
+Was hilft, solange es kein Verzeichnis des Veröffentlichten gibt: **bei
+einer Stelle, die ein wiederkehrendes Format bedient** — die
+Abschlussfrage, „was ist ein Mann", jedes Stück einer Serie — **gilt sie
+als vergeben, bis das Gegenteil feststeht.** Die freie Wahl liegt bei dem,
+was nur in dieser einen Folge vorkommt.
+
+→ betrifft: jeden, der aus dem Rückkatalog auswählt.

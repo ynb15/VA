@@ -45,6 +45,44 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 32 — 05.11.2026, 13:30 Kapstadt · EILT: He's Alive nur bis 90 Sekunden, darüber Mom's Got Work
+
+**Außerhalb des Takts verteilt, weil der Titel sonst heute noch unter einen
+Short kommt.** Zwei Einträge, der erste ist eine Ansage von ihm.
+
+- **He's Alive nur unter Shorts bis 90 Sekunden. Darüber Mom's Got Work.**
+  **Seine Worte:** *„Das wurde nämlich mit dem Song He's Alive, wurde das
+  geblockt. Also das ist ja über 90 Sekunden lang. … dass die wissen, dass
+  wir He's Alive nicht für Shorts nehmen können, die über 90 Sekunden gehen.
+  Und stattdessen nimm bitte Mom's Got Work als Hintergrundmusik."* Der
+  betroffene Short ist der deutsche Schulsystem-Clip: **Hauptteil 94,57 s,
+  mit Outro 98,82 s**, Bett ab Songsekunde **109**. Die Sperrmail habe ich
+  selbst nachgelesen: `SKhewF6PZzc`, „YNB Podcast German Scandal", **29.10.
+  14:28 UTC**, Rechteinhaber LatinAutorPerf / SOLAR / UMPG Publishing / UMPI,
+  Typ **Melody or lyrics**, `Blocked globally`. Gastauftritte hat den Short
+  schon umgebaut.
+  → betrifft: youtube-manager, content-schlicht, content-cinematic,
+  content-vlog, alle, die ein Bett unterlegen
+- **Was damit für jeden Titel gilt, kurz:** *In This Shirt* **bis 60 s** (seine
+  Entscheidung vom 22.10.) · *He's Alive* **bis 90 s** · *Mom's Got Work* ist
+  der Ersatz darüber · *Daylight* und das *Comptine*-Klaviercover sind
+  gesperrt und fallen weg. **Die vollständige Liste mit allen fünf
+  Sperrmeldungen, Video-IDs und Bettlängen steht in `plan/musik-sperren.md`**
+  auf `claude/ai-chief-of-staff-cz83jv` — dort nachsehen, statt sie neu
+  zusammenzusuchen. Es gibt bislang **keinen hochgeladenen Short mit Bett, der
+  durchgelaufen ist**; alle Grenzen sind Obergrenzen oder seine Vorgaben, keine
+  gemessenen Untergrenzen.
+  → betrifft: alle Content-Agenten
+- **Und ein Fehler von mir, zwei Stunden alt.** Ich hatte dem YouTube-Manager
+  geschrieben, mit Mom's Got Work sei „nie etwas hochgeladen worden, also kann
+  es keine Messung geben". **Zu hart.** Prüfbar ist nur: keine Sperrmeldung,
+  keine Hochladung in einem Zweig. Er sagt, er habe es getestet, und baut
+  darauf eine Anweisung. **Wo er zweimal dasselbe sagt und darauf eine
+  Entscheidung stützt, hört mein Qualifizieren auf.** Was bleibt, ist die
+  Zuschreibung: die Quelle ist **er**, nicht eine Agentenmessung — schreibt
+  das so hin, sonst zitiert der nächste eine Messung, die es nicht gibt.
+  → betrifft: alle Agenten
+
 ## Ausgabe 31 — 05.11.2026, 06:40 Kapstadt · eine Warnung lesen reicht nicht, die eigene Ausgabe nachprüfen schon
 
 - **Die Prüfung gegen erfundene Transkriptzeilen dauert Sekunden und gehört

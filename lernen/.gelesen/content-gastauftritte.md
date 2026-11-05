@@ -1129,3 +1129,101 @@ der Reihe**, und **Quelle ist seine eigene Kopie**, nicht Drews Ordner. Die
 Rechtefrage ist damit von ihm beantwortet.
 
 → betrifft: alle. Kurz schreiben, lang protokollieren.
+
+---
+
+## 05.11. — zur Rob-Paddock-Folge liegt im Drive kein Master
+
+Er will ein Short aus der Paddock-Folge (er trifft seinen ungeborenen Sohn auf
+einer Pilzreise). **Die Stelle ist belegt**, im Drive-Transkript der
+veröffentlichten Folge `ud5kr_LoqU4`: **12:58 bis 15:19**, Datei
+`03 YNB Podcast: Robert Paddock (Transcript)`
+(`1gwC-lKH2dqfMdZ-eA2ek2pxRMh84S2BIQJ3Yr2dN8P4`, 18.05.2026).
+
+**Das Bild fehlt.** Gemessen heute:
+
+- Der Episodenordner `03 YNB Podcast: Rob Paddock`
+  (`1B6M8coYd_OY_jXMZIlJOdyhqCSq0QBWm`) enthält **drei Dokumente und keine
+  einzige Videodatei**.
+- Eine drivebreite Suche `title contains 'Paddock'` findet **fünf Treffer**:
+  zwei Transkripte, ein Produktionsdoku, zwei Ordner (Feedback, Thumbnails).
+  **Kein Video.** Dasselbe für `mimeType contains 'video/'` quer über alle
+  `YNB Podcast`-Dateien — Burning Man, Aaronson, Makhosi, Whitney, Strassman,
+  Ken Stern, Kingsbury, Britton, Defina, Rob Bennet; **Paddock nicht**.
+- YouTube bleibt zu (IP-Sperre, 21.10.). Also: **ohne Datei kein Short.**
+
+**Nebenbefund, der andere betrifft:** der Sutcliffe-Master
+`1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT` steht inzwischen **im Papierkorb**
+(`trashed: true`). Wer dort noch einmal hinein muss, muss ihn vorher
+wiederherstellen lassen.
+
+**Also:** Skript und Schnittvorschlag liegen fertig in
+`video/shorts/YNB Podcast Rob Paddock Son - Skript.md`; der Schnitt beginnt,
+sobald der Master im Episodenordner liegt. Muster wie bei Ep_58: **die Datei
+kommt von ihm.**
+
+→ betrifft: content-*, alfred
+
+---
+
+## 05.11. — die Datei mit „(4K)" im Namen ist 720p
+
+Er hat die Paddock-Folge aus dem Drive nachgeliefert
+(`1lGUE0j-2fFf5mC32CAMHq0e9qkpS7sv_`), Dateiname
+*„… Millionaire Rob Paddock **(4K)**.mp4"*. Gemessen: **1280×720, 0,96 Mbit/s,
+665 MB auf 92 Minuten**. Das „(4K)" ist der YouTube-Titel, nicht das Bild.
+
+Folgen für den Short: der 9:16-Ausschnitt ist **405×720** — volle Höhe, mehr
+geht ohne Ränder nicht —, hochgerechnet auf 2160×3840 sind das **5,3×**. Zum
+Vergleich: bei den Sutcliffe-Shorts waren es 608×1080 und 3,55×. **Die
+Bildrate des fertigen Shorts verrät es**: 8,30 Mbit/s statt der sonst 17–18
+bei gleichem CRF — der Encoder findet schlicht keine Details mehr.
+
+**Also: vor dem Schneiden `ffprobe` auf die Quelle, nicht dem Dateinamen
+glauben.** Und wenn die Auflösung nicht reicht, sagen, bevor man schneidet,
+nicht danach.
+
+→ betrifft: content-*, alle Short-Agenten
+
+## 05.11. — Whisper erfindet an der Schnittkante genau das Wort, das raus soll
+
+Er wollte die ganze Namensstelle raus. Die Naht liegt in einer 0,10 s kurzen
+Lücke zwischen *„beautiful"* und *„and his name's Chadwick"*. Der Ton endet
+davor — die **Einblendung** aber las **„IN HIS NAME"**.
+
+Gegengeprüft an drei Endpunkten (890,267 / 890,100 / 889,967): das Modell
+schreibt *„in his name"* **jedes Mal**, auch wenn der Ton schon mitten im Wort
+„beautiful" abbricht. Es ist die Sprachstatistik, nicht das Signal.
+
+**Daraus: wenn eine Stelle herausgeschnitten wird, weil sie nicht ins Bild
+darf, reicht der Tonschnitt nicht — die Einblendungen hinter der Naht muss man
+einzeln ansehen.** Hier wäre sonst genau der Hinweis stehen geblieben, den er
+weghaben wollte.
+
+→ betrifft: content-*, alle Short-Agenten
+
+---
+
+## 05.11. — „He's Alive" nicht unter Shorts über 90 Sekunden
+
+**Seine Ansage, wörtlich:** *„Das wurde nämlich mit dem Song He's Alive, wurde
+das geblockt. Also das ist ja über 90 Sekunden lang. … dass die wissen, dass
+wir He's Alive nicht für Shorts nehmen können, die über 90 Sekunden gehen.
+Und stattdessen nimm bitte Mom's Got Work als Hintergrundmusik."*
+
+Gemessen am betroffenen Short (deutsches Schulsystem): **Hauptteil 94,57 s,
+mit Outro 98,82 s** — also über 90. Gesperrt wurde die Fassung mit *He's
+Alive* ab Songsekunde 109 (1:49). **Ersetzt durch Adam Taylor — Mom's Got
+Work, ab Songsekunde 0, 0 dB unter der Stimme**, wie bei den anderen Shorts
+dieser Reihe.
+
+Dazu der Gegenbefund vom 29.10., der weiter gilt: **Mom's Got Work wurde
+NICHT gesperrt**, auch nicht bei einem Short, das bis 2 Minuten durchläuft
+(sein eigener Test). Die beiden Titel verhalten sich also verschieden.
+
+**Daraus für alle, die Shorts bauen:** *He's Alive* nur unter Shorts bis
+90 Sekunden. Darüber Mom's Got Work. Und weiterhin gilt: **zu jedem Short mit
+Bett gehört eine Fassung ohne Musik**, weil die Sperre erst beim Hochladen
+sichtbar wird.
+
+→ betrifft: youtube-manager, content-schlicht, content-cinematic, content-vlog

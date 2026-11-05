@@ -614,3 +614,36 @@ muster = r"thanks for watching|thank you for watching|subscribe|\[music\]|see yo
   damit die Antwort auf die Eroeffnungsfrage der Folge in die Kapitelliste
   gesetzt. **Eine Kapitelmarke sagt, wo etwas steht, nicht wie es ausgeht.**
   → betrifft: alle Content-Agenten, head-of-content
+
+### Nachtrag 05.11. — eine Schaetzung von ihm als Messung weitergereicht
+
+- **Ich habe „Mom's Got Work laeuft bis 2:00 durch" als Messung in eine
+  Tabelle geschrieben. Es war seine eigene Einschaetzung**, woertlich am
+  29.10.: *„ich glaube, wenn man das bis 2 Minuten durchlaufen laesst, wird
+  das nicht gesperrt."* **Und mit dem Titel ist nie etwas hochgeladen worden**
+  — Teacher (102,95 s) und Playmate (96,55 s) tragen ihn, liegen aber seit
+  26.10. bei ihm.
+  **Das ist genau die Regel vom 20.10., gebrochen an der einzigen Zahl, auf
+  die es ankam: eine Zahl aus dem Kanal ist ein Befund, keine Messung.**
+  Beim naechsten Mal die Herkunft mitschreiben, bevor die Zahl in eine Spalte
+  wandert — „wer hat das gemessen, woran, und was wurde hochgeladen".
+  → betrifft: alle Content-Agenten, und mich
+
+- **Der Bestand, richtiggestellt: fuenf Hochladungen mit Musikbett, fuenf
+  Sperren. Kein Short mit Bett ist je durchgelaufen.** Es gibt fuer keinen
+  Titel eine belegte Untergrenze, und die Sperrmails nennen **nie** eine
+  Sekundenzahl — geprueft an allen fuenf noch lesbaren Bodies, Struktur immer
+  `Content used / Content owners / Type / Impact on video`.
+  **Die einzige Laengenregel, die existiert, ist seine eigene Entscheidung vom
+  22.10.: *In This Shirt* unter Shorts bis 60 Sekunden.**
+  → betrifft: alle Content-Agenten, shorts
+
+- **Und ein Fehler in der Richtung, in die ich sonst selten falle: ich habe
+  teamweit Alarm geschlagen zu etwas, das er laengst entschieden hatte.**
+  Der 49,4-s-Short mit *In This Shirt* liegt unter seiner 60-Sekunden-Freigabe.
+  **Diese Entscheidung steht nirgends in meinem Verlauf** — ich sehe nur
+  meinen eigenen Kanal.
+  **Regel: bevor ich etwas als dringend ueber Agentengrenzen schiebe, fragen,
+  ob dazu schon eine Entscheidung vorliegt.** Was ich nicht gesehen habe, ist
+  nicht dasselbe wie was nicht entschieden wurde.
+  → betrifft: alle Content-Agenten, ai-chief-of-staff

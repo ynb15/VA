@@ -25,7 +25,7 @@ die He's-Alive-Mail nachgelesen: keine Zahl.
 | 22.10. 09:57 | `9iRza-eDKcc` | Daylight — David Kushner | Virgin Music Group | Audio | dito |
 | 22.10. 13:21 | `5nl--61ZBBI` | In This Shirt (Røyksopp Remix) — The Irrepressibles | FUGA | Audio | Sutcliffe · Meaning, knapp 60 s |
 | 22.10. 14:21 | `nHQIvWANN04` | Comptine d'un autre été, **Klaviercover** | LatinAutor-UMPG u. a. | **Melody or lyrics** | dito |
-| **29.10. 14:28** | `SKhewF6PZzc` · „YNB Podcast German Scandal" | **HE'S ALIVE — Adam Taylor** | LatinAutorPerf, SOLAR, UMPG Publishing, UMPI | **Melody or lyrics** | **nicht belegt** |
+| **29.10. 14:28** | `SKhewF6PZzc` · „YNB Podcast German Scandal" | **HE'S ALIVE — Adam Taylor** | LatinAutorPerf, SOLAR, UMPG Publishing, UMPI | **Melody or lyrics** | **98,82 s** (Hauptteil 94,57 s + Outro), Bett ab Songsekunde **109** |
 | 16.10. | „YNB Podcast David Sutcliffe Hollywood" | unbekannt | — | — | Mail im Papierkorb |
 
 **Alle: `Blocked globally`.** Vier davon hatte Cinematic am 22.10. im Volltext
@@ -92,3 +92,41 @@ Entscheidung, nicht von uns eine Messung — und die billigste wäre ein Stück,
 das ohnehin raus soll, mit **Mom's Got Work** unter 2:00, weil das der Titel
 ist, bei dem seine eigene Erwartung positiv ist. **Mehr sage ich dazu nicht;
 die Musikfrage ist seine.**
+
+
+---
+
+# Nachtrag 05.11., 13:24 Kapstadt — er hat die Frage selbst entschieden
+
+**Seine Ansage, wörtlich**, über den Gastauftritte-Agenten weitergegeben
+(`claude/content-gastauftritte`, `e34abc5`):
+
+> *„Das wurde nämlich mit dem Song He's Alive, wurde das geblockt. Also das
+> ist ja über 90 Sekunden lang. … dass die wissen, dass wir He's Alive nicht
+> für Shorts nehmen können, die über 90 Sekunden gehen. Und stattdessen nimm
+> bitte Mom's Got Work als Hintergrundmusik."*
+
+**Damit steht die erste Obergrenze mit einer Zahl daran:**
+
+| Titel | Grenze | Herkunft |
+|---|---|---|
+| **He's Alive** | gesperrt bei **98,82 s** → nur unter Shorts **bis 90 s** | Sperrmail 29.10. + seine Ansage 05.11. |
+| **In This Shirt** | **bis 60 s** | seine Entscheidung 22.10. |
+| **Mom's Got Work** | der **Ersatz** über 90 s | seine Vorgabe 05.11. |
+
+**Und eine Korrektur an meiner eigenen Korrektur von vor zwei Stunden.** Ich
+hatte oben geschrieben, mit „Mom's Got Work" sei nie etwas hochgeladen worden,
+also könne es keine Messung geben. **Der Satz war zu hart.** Was ich prüfen
+kann, ist nur: es liegt **keine Sperrmeldung** zu diesem Titel vor, und in
+keinem Zweig steht eine Hochladung. Er sagt, er habe es am Anger-Short
+getestet, und wiederholt es am 05.11. als Grundlage einer Anweisung. **Zwei
+Aussagen von ihm, die zweite trägt eine Entscheidung** — das ist mehr als eine
+Vermutung, und es ist sein Kanal. Ich höre auf, den Punkt zu qualifizieren.
+
+Was von meiner Korrektur bleibt, ist nur die Zuschreibung: die Quelle ist
+**er**, nicht eine Messung von Gastauftritte. Das ist kein Einwand gegen die
+Sache — es zählt, weil der nächste Agent sonst eine Agentenmessung zitiert, wo
+eine Entscheidung von ihm steht.
+
+**Der Schul-Short ist schon umgebaut**, Mom's Got Work ab Songsekunde 0
+(`748bcb1`).

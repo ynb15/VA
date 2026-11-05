@@ -777,3 +777,54 @@ habe. Keine der automatischen Prüfungen kann einen angeschnittenen Kopf sehen.
 **Regel: vor der Übergabe ein Kontaktabzug über alle Stücke, und zwar
 angesehen.** Das kostet eine Minute und hat hier acht Dateien gerettet.
 → betrifft: content-*, alle Content-Agenten
+
+**05.11. — Ein geklemmter Wert ist keine Messung.** Im Meaningful-Short der
+Kingsbury-Folge zeigte eine Einstellung Kyles **Knie statt seines Kopfes**.
+Im Plan stand dort `y = 560` — und 560 ist bei 2160 Quellhöhe und 1600
+Ausschnitthöhe exakt das Maximum, also der an den unteren Rand geklemmte
+Wert. Die erkannte Kopfoberkante lag so tief, dass der Ausschnitt unten
+anschlug: in der Totale bewegen sich die Hände im Schoß, nicht das Gesicht,
+und die Bewegungsmessung folgt der Bewegung.
+`bildausschnitt.py` erkennt diesen Fall jetzt und fällt auf die Regel
+zurück, die ohne Messung gilt — oberes Drittel.
+**Regel: wenn ein berechneter Wert an seine Grenze stößt, ist das kein
+gültiger Randfall, sondern der Hinweis, dass die Rechnung nicht trägt.**
+Dann ist der Rückfall auf die einfache Annahme besser als der geklemmte
+Wert, der plausibel aussieht und falsch ist.
+→ betrifft: content-*, alle Content-Agenten
+
+**05.11. — Eine Ausnahme, die zu weit greift, bricht die Regel, die sie
+schützen sollte.** Für seine Schlussfrage hatte ich eingebaut, dass eine
+**Frage** als eine Einblendung stehen bleibt. Im Englischen endet aber auch
+jedes beiläufige „…you know?" auf ein Fragezeichen — im Kingsbury-Short stand
+deshalb `I MEAN THAT'S REALLY IT YOU KNOW?` in einer Einblendung, gegen seine
+Drei-Wort-Regel. Sein Einwand: „ich weiß nicht, was mit der Regel passiert
+ist, dass maximal 3 Worte eingeblendet werden."
+Die Ausnahme hängt jetzt am Muster der **Schlussfrage** selbst (dasselbe wie
+in `frage_am_ende.py`), nicht am Satzzeichen.
+**Regel: eine Ausnahme wird an dem festgemacht, wofür sie gedacht ist, nicht
+an einem Merkmal, das zufällig mitläuft.** Das Fragezeichen war das
+Merkmal, die Schlussfrage war der Zweck.
+→ betrifft: content-*
+
+**Und daneben: ein Parameter, den ich nach einer Änderung nicht nachgemessen
+habe.** Nachdem ich die Ausschnitte von Hand gesetzt hatte, stand die
+Untertitelhöhe weiter auf dem Wert aus dem alten Plan — die Schrift landete
+auf der Brust statt am Kinn. Wer den Ausschnitt ändert, ändert damit, wo das
+Kinn im Bild liegt.
+→ betrifft: content-*
+
+**05.11. — Was ein Agent lernt, bleibt auf seinem Branch liegen.** Er wollte
+„In This Shirt" unter einen Short gelegt haben und fragte: *„Warum
+funktioniert das Briefing untereinander nicht?"* Zu Recht. Das Werkzeug dafür
+— `musik_drunter.py`, mit seinen Rückmeldungen vom 21., 22. und 24.10. im
+Code — lag seit Tagen auf `claude/content-gastauftritte`, und die Song-Datei
+war in einem Papier auf `claude/content-shorts-2` mit Drive-ID vermerkt.
+Gefunden habe ich beides erst, als ich **alle Branches durchsucht** habe.
+Niemand hat es weitergegeben, und ich habe nie nachgesehen.
+**Regel: bevor man etwas baut, einmal `git grep` über alle Branches.** Die
+anderen Agenten arbeiten im selben Repo; was man sucht, existiert oft schon
+samt seiner Fehlerkorrekturen. Dasselbe gilt rückwärts: wer etwas baut, das
+für andere gilt, schreibt es dorthin, wo andere es finden — in den Lernkanal,
+nicht nur in den eigenen Branch.
+→ betrifft: alle Agenten
