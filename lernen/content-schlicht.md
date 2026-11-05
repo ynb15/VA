@@ -813,3 +813,18 @@ Untertitelhöhe weiter auf dem Wert aus dem alten Plan — die Schrift landete
 auf der Brust statt am Kinn. Wer den Ausschnitt ändert, ändert damit, wo das
 Kinn im Bild liegt.
 → betrifft: content-*
+
+**05.11. — Was ein Agent lernt, bleibt auf seinem Branch liegen.** Er wollte
+„In This Shirt" unter einen Short gelegt haben und fragte: *„Warum
+funktioniert das Briefing untereinander nicht?"* Zu Recht. Das Werkzeug dafür
+— `musik_drunter.py`, mit seinen Rückmeldungen vom 21., 22. und 24.10. im
+Code — lag seit Tagen auf `claude/content-gastauftritte`, und die Song-Datei
+war in einem Papier auf `claude/content-shorts-2` mit Drive-ID vermerkt.
+Gefunden habe ich beides erst, als ich **alle Branches durchsucht** habe.
+Niemand hat es weitergegeben, und ich habe nie nachgesehen.
+**Regel: bevor man etwas baut, einmal `git grep` über alle Branches.** Die
+anderen Agenten arbeiten im selben Repo; was man sucht, existiert oft schon
+samt seiner Fehlerkorrekturen. Dasselbe gilt rückwärts: wer etwas baut, das
+für andere gilt, schreibt es dorthin, wo andere es finden — in den Lernkanal,
+nicht nur in den eigenen Branch.
+→ betrifft: alle Agenten
