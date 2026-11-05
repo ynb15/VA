@@ -1399,6 +1399,13 @@ def main():
 
         letzte = v_quelle
         if cues:
+            # Ein ausdruecklich gesetztes --lippe schlaegt den Plan. Die
+            # Lippenhoehe im Plan stammt aus der Bewegungsmessung und traegt
+            # deren Versatz mit: am 05.11. sass die Schrift dadurch auf der
+            # Brust statt am Kinn. Wer den Wert von Hand nennt, hat
+            # nachgesehen — dann gilt er.
+            if lippen and a.lippe is not None:
+                lippen = [(v, b, a.lippe) for v, b, _ in lippen]
             if lippen:
                 cues = cues_an_lippen(cues, lippen)
                 print(f"  Untertitel an der Lippe: {len(cues)} Zeilen, "
