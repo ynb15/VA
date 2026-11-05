@@ -657,3 +657,23 @@ Satzliste des ersten Durchlaufs lesen, bevor die Fassung steht — nicht erst
 das fertige Video ansehen.
 
 → betrifft: alle, die Untertitel einbrennen.
+
+## 05.11. — zum zweiten Mal eine Stelle gewählt, die es schon gibt
+
+*„Bruh. Ich sehe gerade 'what makes life meaningful' haben wir schon für
+Craig."* Ein fertiges Short, weggeworfen, weil ich die Stelle nicht gegen
+den Bestand geprüft hatte. Am 29.10. derselbe Fehler in anderer Form
+(„Craig Into the Wild und Hypermaskulinität haben wir schon veröffentlicht").
+
+Im Repo steht `video/meaningful-serie.md` mit sechs Gästen zu genau dieser
+Frage — Craig ist nicht dabei. **Mein Bestand sagt also nichts darüber, was
+draußen ist.** Ich führe Buch über meine Lieferungen, nicht über seinen
+Kanal, und die Lücke dazwischen kostet jedes Mal eine ganze Runde.
+
+Was hilft, solange es kein Verzeichnis des Veröffentlichten gibt: **bei
+einer Stelle, die ein wiederkehrendes Format bedient** — die
+Abschlussfrage, „was ist ein Mann", jedes Stück einer Serie — **gilt sie
+als vergeben, bis das Gegenteil feststeht.** Die freie Wahl liegt bei dem,
+was nur in dieser einen Folge vorkommt.
+
+→ betrifft: jeden, der aus dem Rückkatalog auswählt.
