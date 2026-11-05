@@ -1251,3 +1251,59 @@ sauberer Pegel heiße, der Ton sei in Ordnung.**
 
 → betrifft: content-*, alle Short-Agenten
 
+
+---
+
+## 05.11. — eine Lippenhöhe je Short, nicht eine je Einstellung
+
+**Sein Befund:** *„springt der Text einmal in der Höhe hier an dieser Stelle
+bei 4 Sekunden, weil du umschaltest."* Mit Screenshot.
+
+**Die Ursache:** `bildausschnitt.py` misst die Lippenhöhe **je Einstellung**,
+und ich hatte die gemessenen Werte unverändert in den Plan übernommen —
+**1186 / 1267 / 1207 / 1250**. Der Renderer setzt die Zeile dann je
+Einstellung anders, und bei jedem Kamerawechsel springt sie. 81 px auf 1920
+sind 4 % der Bildhöhe; das sieht man.
+
+**Die Regel: ein Short, eine Höhe.** Genommen wird der Wert der Einstellung,
+die den größten Teil des Shorts trägt (hier 1207 für 63 % der Laufzeit). Die
+abgenommenen Sutcliffe-Shorts hatten alle **einen** Wert (1267) — nicht, weil
+das geprüft worden wäre, sondern weil dort alle Einstellungen gleich gemessen
+hatten. **Der Zufall hat den Fehler bisher verdeckt.**
+
+→ betrifft: content-*, alle Short-Agenten
+
+## 05.11. — Einstellungsgrenzen aus Bildarithmetik liegen ein Bild zu früh
+
+Wenn ich eine Einstellungsgrenze aus Bildzahlen **rechne** (etwa „Stück 1 hat
+147 Bilder, also beginnt die zweite Einstellung bei 147/30"), liegt sie
+**verlässlich ein Bild zu früh**: `schnittgrenzen.py` hat heute **4 von 4**
+gerechneten Grenzen um **genau +1 Bild** verschoben. Grenzen, die ich aus
+einem schon korrigierten Plan übernommen hatte, lagen dagegen alle richtig
+(0 von 5 und 0 von 4 verschoben).
+
+**Also: `schnittgrenzen.py` läuft nach JEDEM neu gerechneten Plan, nicht nur
+nach `bildausschnitt.py`.** Ein Bild daneben ist genau das Zittern, das er am
+24.10. dreimal gemeldet hat.
+
+→ betrifft: content-*, alle Short-Agenten
+
+## 05.11. — „bei den Übergängen akkurater" — seine stehende Ansage
+
+*„Da, das müssen wir generell einfach optimieren, dass du da bei den
+Übergängen akkurater bist."*
+
+Dazu der Messwert, an dem man es prüfen kann: `schnittgrenzen.py` nennt zu
+jeder Grenze den **Bildunterschied gegen den Ruhepegel**. Ein echter
+Kamerawechsel liegt bei **59 bis 62 gegen 0,3 bis 0,6**. Eine Naht, bei der
+beide Seiten dieselbe Kamera zeigen, liegt bei **10,3** — sichtbar, aber kein
+Schnitt. **Jede Naht eines Shorts muss über 50 liegen; tut sie es nicht, ist
+es ein Sprung und keine Montage.**
+
+Heute am Paddock-Short angewandt: die Naht nach dem herausgeschnittenen „So"
+lag bei 10,3, weil davor und danach dieselbe Nahaufnahme steht. Mit einem
+J-Schnitt über die Totale (Bild schneidet 1,73 s früher, Ton bleibt) liegt
+dieselbe Naht bei **59,5** — und Bild und Ton sind am Kamerawechsel wieder
+deckungsgleich.
+
+→ betrifft: content-*, alle Short-Agenten
