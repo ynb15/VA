@@ -1,5 +1,5 @@
 {
- "quelle": "roh.mp4",
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/paddock/roh2.mp4",
  "groesse": [
   1280,
   720
@@ -8,69 +8,27 @@
  "einstellungen": [
   {
    "layout": "einzel",
-   "kasten": "406:0:405:720",
-   "lippe": 1229,
-   "start": 0.0,
-   "ende": 3.433333333333333,
-   "tot": false,
-   "bewegung_x": 0.475,
-   "mitte": 0.62,
-   "masse": 2.17
-  },
-  {
-   "layout": "einzel",
-   "kasten": "334:0:405:720",
-   "lippe": 1186,
-   "start": 3.433333333333333,
-   "ende": 14.166666666666666,
-   "tot": false,
-   "bewegung_x": 0.419,
-   "mitte": 0.68,
-   "masse": 1.73
-  },
-  {
-   "layout": "einzel",
-   "kasten": "0:0:405:720",
-   "lippe": 1267,
-   "start": 14.166666666666666,
-   "ende": 15.3,
-   "tot": false,
-   "bewegung_x": 0.144,
-   "mitte": 0.04,
-   "masse": 2.81
-  },
-  {
-   "layout": "einzel",
    "kasten": "350:0:405:720",
    "lippe": 1207,
-   "start": 15.3,
-   "ende": 58.3,
-   "tot": false,
-   "bewegung_x": 0.431,
-   "mitte": 0.72,
-   "masse": 2.86
+   "start": 0.0,
+   "ende": 35.13333333333333,
+   "tot": false
   },
   {
    "layout": "einzel",
    "kasten": "0:0:405:720",
    "lippe": 1267,
-   "start": 58.3,
-   "ende": 75.66666666666667,
-   "tot": false,
-   "bewegung_x": 0.138,
-   "mitte": 0.06,
-   "masse": 1.56
+   "start": 35.13333333333333,
+   "ende": 52.5,
+   "tot": false
   },
   {
    "layout": "einzel",
    "kasten": "414:0:405:720",
    "lippe": 1250,
-   "start": 75.66666666666667,
-   "ende": 86.83,
-   "tot": false,
-   "bewegung_x": 0.481,
-   "mitte": 0.78,
-   "masse": 1.84
+   "start": 52.5,
+   "ende": 63.666666666666664,
+   "tot": false
   }
  ]
 }
