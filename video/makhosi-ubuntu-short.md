@@ -123,3 +123,46 @@ geändert — `abnahme.py` gehört Shorts I.
 Keine. Nicht angesagt, und nach der Regel vom 26.10. („bei Musik gilt immer
 die Ansage zu diesem Stück") wird hier nicht geraten. Die Kette aus dem
 Safety-Short liegt bereit, falls er sie will.
+
+---
+
+## Nachtrag 05.11.: zwei Musikfassungen
+
+Auf seine Ansage: je eine Fassung mit *In This Shirt* und mit *On The Nature
+Of Daylight*, Letztere **nicht am Songanfang** — *„denk dran, dass On The
+Nature Of Daylight vorgespielt werden muss."*
+
+Die Regel dahinter stand beim Gastauftritte-Agenten
+(`lernen/content-gastauftritte.md`, 22.10.): die `ab_sekunde` gehört auf den
+Sprung in den Höhen, nicht auf die erste Sekunde mit vollem Pegel.
+
+| Titel | ab | erste 2 s gegen Schnitt | Pegel des Betts |
+|---|---|---|---|
+| In This Shirt | **0:23,25** | −0,2 dB (bei 0:00: −4,1 dB) | −14,4 dB |
+| On The Nature Of Daylight | **0:24,50** | −2,8 dB (bei 0:00: −12,8 dB) | −3,6 dB |
+
+Bei *In This Shirt* ist der Einsatz ein Sprung (19 dB über 2 kHz in einer
+Zehntelsekunde), bei Richter eine **Steigerung über 1,2 s** (23,3 → 24,5) —
+deshalb liegt der Start an ihrem Ende. Maßstab ist dabei nicht die absolute
+Abweichung, sondern die **Streuung des Stücks selbst**: sie beträgt hier
+2,3 dB, die Startabweichung 2,8 dB.
+
+Beide Betten: Einblende 0,2 s · 0,00–49,97 s · Ausblende 4 s (46,0–50,0) ·
+Outro allein. `sidechaincompress` ratio 4, release 250 (seine Ansage vom
+21.10., sanfter wegdrücken). Durch Subtraktion geprüft: hörbar ab der
+ersten Sekunde, ab 50,0 s unter −75 dB.
+
+**Nebenbefund, der die Schwellenfrage von oben entscheidet:** dasselbe Short
+misst ohne Musik −62,4 dB, mit In This Shirt −35,0 dB, mit Richter
+−38,1 dB. Ein Bett hebt den Boden um **24 bis 27 dB** — die Prüfung gegen
+den Boden der Quelle trennt beide Fälle sauber, eine feste Schwelle nicht.
+
+**Rechte:** *On The Nature Of Daylight* ist der einzige nie getestete Titel
+im Ordner und zugleich der heikelste (Handelsaufnahme, „Arrival",
+„Shutter Island"). Aus demselben Ordner hat *Daylight* am 22.10. zwei
+veröffentlichte Shorts weltweit gesperrt. Geliefert mit dem Hinweis, ihn
+vorher an einem ungelisteten Testupload zu prüfen.
+
+**Offen aus diesem Lauf:** AI 2027, Safety und Belief tragen *In This Shirt*
+noch **ab 0:00**, also gegen diese Regel. Je eine Minute Arbeit, wenn er sie
+neu gemischt haben will.

@@ -1,0 +1,120 @@
+# Craig Makhosi — „There is no I in Ubuntu" · Fassung mit The Irrepressibles — In This Shirt (54,2 s · Hauptteil 50,0 s + Outro 4,2 s)
+#
+# Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
+# Was raus soll: Zeile loeschen oder die Nummer nennen.
+#
+  1  [00:00.57–00:02.29]  UBUNTU I AM BECAUSE WE ARE                                    <- Du
+  2  [00:02.95–00:08.07]  SO THAT'S A COMMON MISUNDERSTANDING IN MY IN MY JUDGMENT AND AND IT'S IT'S WRITTEN
+  3  [00:08.07–00:10.43]  A LOT I AM BECAUSE WE ARE THE THING IS THERE IS NO I IN
+  4  [00:10.43–00:15.15]  UBUNTU IT'S IT'S IT'S LITERALLY BECAUSE OF COURSE PEOPLE LIKE DESCARTES I THINK THEREFORE
+  5  [00:15.15–00:19.13]  I AM AND THEN THEY'RE LIKE OH UBUNTU I AM BECAUSE WE ARE BUT IT'S LIKE
+  6  [00:19.13–00:20.77]  FOR ME THAT'S NOT NOT NOT RIGHT
+  7  [00:21.61–00:27.93]  SO UBUNTU IS IS DEFINED IN XHOSA AS UMNTU NGUMNTU NGABANYE ABANTU OKAY OTHERWISE
+  8  [00:27.93–00:34.23]  UMNTU NGUMNTU NGABANTU WHICH MEANS A PERSON IS A PERSON THROUGH OR BY MEANS OF PEOPLE
+  9  [00:35.79–00:39.03]  SO FOR ME THE WAY I WOULD TRANSLATE THAT IF I WAS GOING TO MAKE
+ 10  [00:39.03–00:42.39]  IT A BIT MORE WHATEVER IS THAT WE ARE WHO WE ARE THROUGH OUR
+ 11  [00:42.39–00:42.77]  RELATIONS
+ 12  [00:43.59–00:45.77]  SO IT'S NOT I AM BECAUSE WE ARE
+ 13  [00:46.29–00:47.05]  THERE'S NO I
+ 14  [00:47.63–00:49.93]  IT'S WE ARE WHO WE ARE THROUGH OUR RELATIONS
+
+# ══════════════════════════════════════════════════════════════════
+# WAS ICH HERAUSGENOMMEN HABE: NICHTS
+# ══════════════════════════════════════════════════════════════════
+# Das Stueck laeuft von 1:56,4 bis 2:46,4 des Ausschnitts in einem Zug
+# durch — 50,0 s, kein Innenschnitt, keine Auslassung. Deine Fehldefinition
+# steht am Anfang, „we are who we are through our relations" am Ende,
+# genau wie angesagt.
+#
+# Und Du bleibst dabei im Bild: bei „Ubuntu, I am because we are" schneidet
+# schon die Folge selbst auf Dich, ich habe diesen Schnitt uebernommen.
+# Alle vier Einstellungswechsel sind die der Folge, keiner ist meiner.
+
+# ══════════════════════════════════════════════════════════════════
+# DIE ISIXHOSA-WOERTER — das war die eigentliche Arbeit
+# ══════════════════════════════════════════════════════════════════
+#
+# Craig nennt das Sprichwort zweimal, erst lang, dann kurz:
+#
+#   UMNTU NGUMNTU NGABANYE ABANTU     (Zeile 7)
+#   UMNTU NGUMNTU NGABANTU            (Zeile 8)
+#
+# „a person is a person through or by means of people" — seine eigene
+# Uebersetzung, direkt danach.
+#
+# Schreibweise: isiXhosa, nicht isiZulu. Zulu waere „umuntu ngumuntu
+# ngabantu" mit u nach dem m; Xhosa laesst es weg: „umntu". Craig sagt
+# selbst „defined in Xhosa", also die Xhosa-Schreibweise.
+#
+# Wie ich es abgesichert habe — vier unabhaengige Durchlaeufe:
+#   whisper medium, normal     -> "umtu ngumtu ngabania ubuntu ah ngabania
+#                                 abantu" und die kurze Form GAR NICHT
+#   whisper large-v3, normal   -> "umtu ngumtu ngabanya abantu /
+#                                 otherwise umtu ngumtu ngabantu"
+#   whisper large-v3, 0,7-fach -> wortgleich
+#   whisper large-v3, 0,6-fach -> wortgleich
+# Dazu die Schreibweise gegen Quellen geprueft (BU African Studies,
+# SA Ubuntu Foundation, Wikipedia „Ubuntu philosophy"): beide Formen sind
+# belegt, die kurze ist die bekanntere.
+#
+# Das heisst auch: haette ich nur einmal transkribiert, stuende auf Deinem
+# Short „NGABANIA UBUNTU AH NGABANIA ABANTU" — und die kurze Form gar nicht,
+# weil das Modell sie ueberhoert hat. Beides eingebrannt und nicht mehr zu
+# retten.
+
+# ══════════════════════════════════════════════════════════════════
+# DREI WEITERE KORREKTUREN
+# ══════════════════════════════════════════════════════════════════
+#   Zeile 4   DESCARTES — das Modell schrieb „the day car"
+#   Zeile 3   THERE IS NO I IN UBUNTU — es schrieb „I and Ubuntu"
+#   Zeile 7   IN XHOSA — es schrieb „in cross"
+#
+# Seine Stotterer („it's it's it's", „not not not") stehen bewusst drin.
+# Sollen sie glattgezogen werden, sag es — dann nehme ich sie raus.
+
+# ══════════════════════════════════════════════════════════════════
+# MUSIK: The Irrepressibles — In This Shirt
+# ══════════════════════════════════════════════════════════════════
+# Das Bett setzt NICHT bei 0:00 des Titels ein, sondern bei 0:23,25 —
+# dort, wo der Titel arrangiert losgeht. Deine Regel vom 22.10., an den
+# Gastauftritte-Agenten: „Ich wollte, dass du den Inhalt des Songs
+# vorziehst. Die ersten 20 Sekunden des Songs, da passiert nichts."
+#
+# Nachgemessen (RMS und Energie ueber 2 kHz, in Zehntelsekunden):
+#   ab 0:00     erste 2 s -13,8 dB gegen -9,7 dB im Schnitt  (4,1 dB zu leise)
+#   ab 0:23,25  erste 2 s -10,1 dB gegen -9,9 dB im Schnitt  (eben)
+# Die 0:23,25 stammen vom Gastauftritte-Agenten, von mir unabhaengig
+# nachgemessen und bestaetigt.
+#
+# Bett laeuft 0,00–49,97 s, Einblende 0,2 s, Ausblende 4 s (46,0–50,0),
+# danach laeuft das Outro allein. Durch Subtraktion geprueft: hoerbar
+# ab der ersten Sekunde, ab 50,0 s unter -75 dB.
+# Pegel: Stimme -16,2 dB, Bett -14,4 dB -> 10 dB unter der Stimme,
+# dazu per sidechaincompress weggedrueckt (ratio 4, release 250 —
+# Deine Ansage vom 21.10.: sanfter wegdruecken).
+#
+# ACHTUNG RECHTE: Du hast den Titel am 22.10. freigegeben. Er ist aber eine
+#   kommerzielle Veroeffentlichung aus demselben Ordner, aus dem
+#   „Daylight" am 22.10. zwei Deiner Shorts weltweit gesperrt hat.
+
+# ══════════════════════════════════════════════════════════════════
+# AUFBAU
+#   0:00.0–0:02.2  Du — Deine Fehldefinition
+#   0:02.2–0:20.2  Craig, Nah
+#   0:20.2–0:32.0  Totale, Kasten auf Craig — die isiXhosa-Woerter
+#   0:32.0–0:50.0  Craig, Nah — bis „through our relations"
+#
+# Quelle ist Dein 4K-Ausschnitt „YNB Podcast - Craig Makhosi - Ubuntu(1)"
+# (3:58,65, 3840x2160). Weil er 4K ist, wird hier nichts hochskaliert:
+# die Totale ist sogar 1:1 geschnitten, ohne jede Skalierung.
+# Tempo unveraendert gelassen — der Ausschnitt ist schon ein Export Deines
+# Schnitts, also bereits auf Endgeschwindigkeit.
+#
+# ABNAHME (gemessen)
+#   1080x1920 · 48 kHz · 54,2 s · Outro da · 66 Untertitel · Ortscheck sauber
+#   „Kein Musikbett" meldet FEHLER bei -62,4 dB — das ist ein Fehlalarm des
+#   Pruefwerkzeugs, nicht Musik: der Rohausschnitt misst an derselben Stelle
+#   -62,5 dB, also ist es der Raumton dieses Studios. Zum Vergleich liegt
+#   das Aaronson-Studio bei -85 dB. Ich habe nichts untergelegt.
+#
+# NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.
