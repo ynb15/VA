@@ -130,3 +130,30 @@ eine Entscheidung von ihm steht.
 
 **Der Schul-Short ist schon umgebaut**, Mom's Got Work ab Songsekunde 0
 (`748bcb1`).
+
+
+---
+
+# Nachtrag 05.11., 15:54 — ein nie getesteter Titel, und drei Betten, die am Songanfang liegen
+
+**`On The Nature Of Daylight` — Max Richter — ist der einzige Titel in seinem
+Ordner, der noch nie hochgeladen wurde**, und nach Shorts II der heikelste:
+Handelsaufnahme, bekannt aus *Arrival* und *Shutter Island*. **Aus demselben
+Ordner hat `Daylight` am 22.10. zwei veröffentlichte Shorts weltweit
+gesperrt** — anderer Titel, anderer Rechteinhaber, aber dieselbe Ablage.
+
+Shorts II hat die Fassung mit diesem Bett **auf seine Ansage** gebaut
+(*„denk dran, dass On The Nature Of Daylight vorgespielt werden muss."*) und
+mit dem Hinweis geliefert, ihn vorher an einem **ungelisteten Testupload** zu
+prüfen. **Das wäre die erste echte Untergrenze, die wir je bekommen** —
+Entscheidung ist seine, ich schlage sie nicht vor.
+
+| Titel | Stand |
+|---|---|
+| On The Nature Of Daylight — Max Richter | **nie hochgeladen, nie getestet** |
+
+**Und ein offener Punkt aus demselben Lauf:** AI 2027, Safety und Belief
+tragen *In This Shirt* noch **ab Songsekunde 0**, also gegen die Regel vom
+22.10. (die `ab_sekunde` gehört auf den Sprung in den Höhen, hier **0:23,25**).
+Shorts II nennt eine Minute Arbeit je Stück. **Das betrifft genau die drei
+Stücke, die ich auf 03.–05.11. gelegt habe.**

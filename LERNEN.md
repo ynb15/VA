@@ -45,6 +45,59 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 33 — 05.11.2026, 15:54 Kapstadt · dieselbe Stelle, zweimal geschnitten — und eine Regel, die im falschen Zweig lag
+
+- **Die Ubuntu-Stelle liegt jetzt zweimal, und die beiden Fenster beginnen auf
+  0,3 Sekunden gleich.** Cinematic hat am **29.10. 17:59** das Fenster
+  **116,7–238,65 s** gebaut (84,1 s, Tempo 1,45, Ende auf der
+  Dankbarkeitsübung). Shorts II hat heute **12:12** das Fenster
+  **116,40–166,37 s** gebaut (50,0 s, Tempo 1,0, Ende auf *„we are through
+  our relations"*). **Das kurze liegt vollständig im langen.** Beide Quellen
+  sind Exporte desselben Schnitts, beide **3:58,65** — es ist die
+  `(1)`-Datei. Keiner von Euch hat einen Fehler gemacht: die Zuweisung kam
+  direkt von ihm, und die Prüfung „wer sitzt schon an der Stelle" ist nach
+  Regel 9a **meine** Pflicht. **Was daraus für Euch folgt: wenn Ihr ein
+  Stück in einer Folge baut, die schon einen Agenten hat, schreibt die
+  Startsekunde Eures Fensters in Euren Kanal.** „Ubuntu" und „There is no I
+  in Ubuntu" sehen wie zwei Stellen aus; 116,7 gegen 116,40 nicht.
+  → betrifft: alle Content-Agenten, und zuerst mich
+- **Eine Regel, die im Lernzweig eines anderen Agenten liegt, gilt trotzdem
+  für Dich.** Shorts II hat drei Shorts — AI 2027, Safety, Belief — mit
+  *In This Shirt* **ab Songsekunde 0** gebaut, obwohl Gastauftritte am 22.10.
+  gemessen und notiert hatte, dass der Einsatz auf den Sprung in den Höhen
+  gehört: **0:23,25**. Unabhängig nachgemessen: ab 0:00 liegen die ersten
+  zwei Sekunden **4,1 dB** unter dem laufenden Pegel, ab 0:23,25 nur noch
+  **0,2 dB**. Seine Worte damals: *„Ich wollte, dass du den Inhalt des Songs
+  vorziehst. Die ersten 20 Sekunden des Songs, da passiert nichts."*
+  **Lehre von Shorts II selbst: bevor Du etwas zum zweiten Mal baust, lies die
+  Lerndatei des Agenten, der es zuerst gebaut hat** — `git grep` über alle
+  Zweige kostet fünf Sekunden. **Die drei Stücke sind je in einer Minute neu
+  gemischt**, und es sind genau die, die auf 03.–05.11. stehen.
+  → betrifft: alle Content-Agenten
+- **`On The Nature Of Daylight` ist der einzige nie hochgeladene Titel in
+  seinem Ordner — und der heikelste.** Handelsaufnahme, bekannt aus *Arrival*
+  und *Shutter Island*. Aus **demselben Ordner** hat *Daylight* am 22.10. zwei
+  veröffentlichte Shorts weltweit gesperrt. Shorts II hat die Fassung auf
+  seine Ansage gebaut und mit dem Hinweis geliefert, ihn vorher an einem
+  **ungelisteten Testupload** zu prüfen. **Niemand von uns lädt etwas hoch** —
+  das ist ein Vorschlag an ihn, keine Maßnahme.
+  → betrifft: alle, die ein Bett unterlegen
+- **Ein Bett hebt den Grundboden um 24 bis 27 dB — damit ist „liegt da Musik
+  drunter?" messbar, ohne eine feste Schwelle.** Dasselbe Short ohne Musik:
+  **−62,4 dB**; mit In This Shirt **−35,0**; mit Richter **−38,1**. Gemessen
+  wird also **gegen den Boden derselben Quelle**, nicht gegen eine Zahl — eine
+  feste Schwelle trennt die Fälle nicht, der Vergleich schon.
+  → betrifft: alle Content-Agenten, shorts
+- **Und eine Prüfung, die die erste Untergrenze bringen könnte.** Der
+  veröffentlichte Short *The Biggest Scandal in the German School System*
+  (**24.08.**, 45 s, 2766 Abrufe) ist **nicht gesperrt** — Befund des
+  YouTube-Managers. **Trägt er ein Bett, wäre das der erste Beleg, dass ein
+  Titel bei einer bestimmten Länge durchläuft.** Ungeprüft. *Meine Lesart,
+  nicht gemessen:* der 24.08. liegt zwei Monate vor den ersten
+  Musikversuchen, also wahrscheinlich ohne Bett — wer die Datei hat, mißt es
+  mit dem Bodenvergleich oben in einer Minute nach.
+  → betrifft: youtube-manager, shorts
+
 ## Ausgabe 32 — 05.11.2026, 13:30 Kapstadt · EILT: He's Alive nur bis 90 Sekunden, darüber Mom's Got Work
 
 **Außerhalb des Takts verteilt, weil der Titel sonst heute noch unter einen

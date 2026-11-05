@@ -6,6 +6,95 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-11-05 (nachmittags) — die ab-Sekunde des Betts, und ein Beleg fuer die Musikschwelle
+
+- **Seine Regel „den Inhalt des Songs vorziehen" stand seit dem 22.10. beim
+  Gastauftritte-Agenten, nicht bei mir — und ich habe drei Shorts dagegen
+  gebaut.** AI 2027, Safety und Belief tragen „In This Shirt" **ab 0:00**,
+  also mit den 23 Sekunden Vorspann unter dem Anfang. Richtig ist **ab
+  0:23,25**. Unabhaengig nachgemessen: ab 0:00 liegen die ersten zwei
+  Sekunden **4,1 dB** unter dem laufenden Pegel (ueber 2 kHz 2,6 dB), ab
+  0:23,25 nur noch **0,2 dB**. Seine Worte damals: *„Ich wollte, dass du den
+  Inhalt des Songs vorziehst. Die ersten 20 Sekunden des Songs, da passiert
+  nichts."* **Lehre: bevor ich etwas zum zweiten Mal baue, lese ich die
+  Lerndatei des Agenten, der es zuerst gebaut hat** — `git grep` ueber alle
+  Zweige kostet fuenf Sekunden. Die drei Shorts sind in einer Minute je neu
+  gemischt, wenn er es will.
+  → betrifft: content-shorts-2, alle Content-Agenten
+- **Der Einsatz eines Titels ist nicht immer ein Sprung, manchmal eine
+  Steigerung — dann gehoert die ab-Sekunde an ihr ENDE.** Bei „In This
+  Shirt" springt die Energie ueber 2 kHz in einer Zehntelsekunde um 19 dB.
+  Bei „On The Nature Of Daylight" steigt sie ueber **1,2 s** (23,3 → 24,5).
+  Der Start bei 23,3 laege 5,3 dB unter dem laufenden Pegel, bei 24,5 nur
+  2,8 dB — und die **natuerliche Schwankung des Stuecks betraegt selbst
+  2,3 dB**. **Die Pruefgroesse ist nicht die absolute Abweichung, sondern
+  die Abweichung gegen die Streuung des Titels.** Ohne diesen Vergleich
+  haette ich 24,5 fuer zu leise gehalten und waere auf 1:01 ausgewichen.
+  → betrifft: alle Content-Agenten
+- **Die Musikschwelle von `abnahme.py` ist am selben Material belegbar — und
+  bestaetigt meinen Vorschlag von heute frueh.** Dasselbe Short, dreimal
+  gemessen: **ohne Musik -62,4 dB** (Raumton des Craig-Studios), **mit In
+  This Shirt -35,0 dB**, **mit On The Nature Of Daylight -38,1 dB**. Ein
+  Bett hebt den Boden also um **24 bis 27 dB**. Eine feste Schwelle bei
+  -65 dB wirft dieses Studio faelschlich raus; **die Pruefung gegen den
+  Boden der Quelle (Hub > 15 dB) trennt beide Faelle sauber.** Zahlen an
+  Shorts I, Werkzeug nicht angefasst.
+  → betrifft: content-assistant, alfred
+- **Max Richter — „On The Nature Of Daylight" ist der ungetestete Titel im
+  Ordner, und der heikelste.** Handelsaufnahme, bekannt aus „Arrival" und
+  „Shutter Island". Aus demselben Ordner hat „Daylight" am 22.10. zwei
+  veroeffentlichte Shorts **weltweit gesperrt**. Gebaut, weil er es
+  ausdruecklich bestellt hat; mit dem Hinweis geliefert, ihn vor einer
+  Veroeffentlichung an einem ungelisteten Testupload zu pruefen.
+  → betrifft: alle
+
+## 2026-11-05 — Ubuntu-Short, Fremdsprache im Untertitel, und ein Fehlalarm
+
+- **Ein fremdsprachiges Wort braucht mindestens zwei Modelle und zwei
+  Geschwindigkeiten, sonst brennt man Unsinn ein.** Craig nennt das
+  Sprichwort auf isiXhosa. `medium` schrieb *„umtu ngumtu ngabania ubuntu ah
+  ngabania abantu"* — und **ueberhoerte die zweite, kuerzere Form komplett**
+  (2,2 s Luecke zwischen „otherwise" und „which"). `large-v3` bei normal,
+  0,7× und 0,6× dreimal wortgleich: **Umntu ngumntu ngabanye abantu** und
+  **Umntu ngumntu ngabantu**. **Regel: wo eine Sprache steht, die das Modell
+  nicht kann, wird jedes Wort mit einem zweiten Modell und verlangsamtem Ton
+  gegengeprueft, bevor es eingebrannt wird.**
+  → betrifft: alle Content-Agenten
+- **`korrekturen.txt` kann auch einfuegen, nicht nur ersetzen.** Fuer die
+  verschluckte Form steht jetzt `otherwise which -> otherwise Umntu ngumntu
+  ngabantu which` (2 Woerter → 5). `korrekturen_anwenden` erlaubt
+  n→m-Abbildungen und verteilt die Ersetzung gleichmaessig ueber die Zeit
+  der ersetzten Gruppe. Nachgemessen landen die eingefuegten Woerter **auf
+  0,05 s genau** auf dem gesprochenen Wort, weil die Luecke genau die
+  Sprechzeit ist. **Wer eine Luecke fuellen will, ersetzt die Klammer
+  drumherum.**
+  → betrifft: content-*, alle
+- **Die Musikpruefung in `abnahme.py` ist an einem einzigen Studio
+  kalibriert und meldet an anderem Material Fehlalarm.** Schwelle −65 dB,
+  gemessen am fertigen Ubuntu-Short **−62,4 dB** — ohne jede Musik. Der
+  **Rohausschnitt misst an derselben Stelle −62,5 dB**, am Anfang −61,7 dB:
+  es ist der Raumton des Craig-Studios. Aaronson liegt bei −85,3 dB, daher
+  die Schwelle. **Vorschlag an Shorts I: die Schwelle nicht fest setzen,
+  sondern gegen den Boden der Quelle pruefen** — ein Bett hebt den Boden um
+  15–20 dB, das ist der eigentliche Nachweis. **Nicht geaendert, das
+  Werkzeug gehoert Shorts I.**
+  → betrifft: content-assistant, alfred, content-*
+- **4K-Quellen drehen die Ausschnittsrechnung um.** Bei 1920×1080 kostet
+  9:16 eine Hochskalierung von **1,78×**; bei 3840×2160 ist der volle
+  Hoehenausschnitt **1215×2160** und wird auf 1080×1920 **herunter**gerechnet
+  (0,89×), und ein 1080×1920-Ausschnitt ist **exakt 1:1**. **Aus 4K darf man
+  deshalb enger schneiden als aus HD** — fuer die Totale habe ich das
+  genutzt und Craig 1:1 statt klein in der Weite stehen lassen.
+  → betrifft: alle Content-Agenten
+- **Wer im Bild ist, sagt die Folge, nicht ich.** Bei seiner Fehldefinition
+  schneidet die Folge selbst auf ihn (Quelle 116,40 → 118,60). Ich hatte das
+  erst nur als Beleg genommen, wer spricht; seine Ansage dazu: *„nein ich
+  kann da drin bleiben weil ich das doch da sage."* **Bei fertig
+  geschnittenem Quellmaterial sind die Kameraschnitte der Folge die
+  Vorgabe** — uebernehmen, nicht neu entscheiden. Ergebnis: vier Wechsel,
+  kein einziger von mir, keine Auslassung.
+  → betrifft: content-*
+
 ## 2026-10-26 (spaet) — Belief-Short, und zwei Dinge ueber Werkzeug
 
 - **Nur eine Fassung schicken, nicht zwei.** Ich hatte ihm Musik- und

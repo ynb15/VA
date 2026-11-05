@@ -256,3 +256,41 @@ ist die 15,50-GB-Sitzung die Folge?
 
 **Nächste Frist:** T−6 (Titel, Beschreibung, Tags) am **07.11.** beim
 YouTube-Manager.
+
+
+## Die Ubuntu-Stelle liegt jetzt zweimal — 05.11.2026
+
+**Dieselbe Passage, zwei Agenten, derselbe Startpunkt.** Nicht durch eine
+Zuweisung von mir, sondern weil er Shorts II heute direkt beauftragt hat.
+
+| | Cinematic | Shorts II |
+|---|---|---|
+| gebaut | **29.10. 17:59** | **05.11. 12:12** |
+| Quelle | `Craig Makhosi - Ubuntu.mp4`, 1,03 GB, 3:58,65 | `… Ubuntu(1).mp4`, 1,04 GB, 3:58,65, **4K** |
+| Fenster | **116,7–238,65 s** | **116,40–166,37 s** |
+| Länge | 84,1 s + Outro, Tempo 1,45 | 50,0 s + Outro, Tempo 1,0 |
+| Ende | die Dankbarkeitsübung, *„it's just a waste"* | *„we are through our relations"* |
+| Stand | **bei ihm seit 29.10.**, hängt an seiner 1,8-s-Überlappung | **bei ihm seit heute**, zwei Musikfassungen |
+
+**Die beiden Fenster beginnen auf 0,3 Sekunden gleich**, und das kurze liegt
+vollständig im langen. Es sind die gleichen Zeitachsen: beide Dateien sind
+Exporte desselben Schnitts, 3:58,65 lang — es ist die `(1)`-Datei, vor der
+ich Cinematic noch heute morgen gewarnt habe.
+
+**Seine Ansage an Shorts II ist frisch und genau**, wörtlich: *„fangen da
+gerne an mit meiner Fehldefinition, wo ich sage, Ubuntu, I am because we are,
+und dann erklärt Craig, warum das falsch ist. und es sollte enden bei: we are
+through our relations."* Er wollte also genau diesen kurzen Schnitt.
+
+**Was offen ist, und es ist seine Frage, nicht meine:** ob Cinematics
+84-Sekunden-Fassung damit erledigt ist. Sie wartet seit dem 29.10. auf seine
+1,8-s-Entscheidung. **Ich fasse keine der beiden an.**
+
+**Und was mir dabei zuzuschreiben ist:** Regel 9a sagt, die Prüfung
+„wer sitzt schon an der Stelle" ist meine Pflicht — auch bei einer Zuweisung,
+die nicht von mir kommt. Mir war Cinematics Ubuntu-Fenster bekannt; ich habe
+es nicht gegen Shorts II gelegt, weil ich dessen Auftrag nicht kannte. **Was
+daraus folgt: bei jedem neuen Stück in einer Folge, die schon einen Agenten
+hat, wird das Fenster gegen die bestehenden gelegt** — Startsekunde gegen
+Startsekunde, nicht Titel gegen Titel. „Ubuntu" und „There is no I in Ubuntu"
+sehen wie zwei Stellen aus.
