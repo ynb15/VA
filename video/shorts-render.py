@@ -1407,7 +1407,20 @@ def main():
             if lippen and a.lippe is not None:
                 lippen = [(v, b, a.lippe) for v, b, _ in lippen]
             if lippen:
-                cues = cues_an_lippen(cues, lippen)
+                # Die Lippenliste steht in Clipzeit. Einblendungen aus
+                # `--srt` stehen in der Zeit des fertigen Videos (so kommen
+                # sie aus `--srt-out` zurueck), die aus `--auto-captions` in
+                # Clipzeit. Wer beides ungerechnet vergleicht, laesst den
+                # Hoehenwechsel um den Faktor Tempo zu spaet greifen: am
+                # 05.11. sprang die Schrift bei einem Schnitt bei 19,0 s erst
+                # bei 20,9 s mit, und eine Einstellung lang stand sie neben
+                # dem Mund. Derselbe Fehler wie am 20.10. bei der
+                # Stummschaltung.
+                in_fertigzeit = any(c.get("fertigzeit") for c in cues)
+                lippen_cue = ([(v / a.tempo, b / a.tempo, l)
+                               for v, b, l in lippen]
+                              if in_fertigzeit else lippen)
+                cues = cues_an_lippen(cues, lippen_cue)
                 print(f"  Untertitel an der Lippe: {len(cues)} Zeilen, "
                       f"Hoehen {sorted({l for _,_,l in lippen if l})}")
             elif a.lippe is not None:

@@ -862,3 +862,25 @@ nichtssagenden Flächen. Richtig ist, jedes Stück **vorher** als fertiges
 Einstellung, in der sich das Motiv durchs Bild bewegt, mit einem Schwenk
 (`crop=…:x='x0+(x1-x0)*min(t/d,1)'`).
 → betrifft: content-*
+
+**05.11. — Die Schrifthöhe sprang eine Einstellung zu spät mit.** In
+`shorts-render.py` steht die Lippenliste aus dem Plan in **Clipzeit**, die
+Einblendungen aus `--srt` dagegen in der **Zeit des fertigen Videos** (so
+kommen sie aus `--srt-out` zurück). Beides wurde ungerechnet verglichen: bei
+Tempo 1,1 und einem Kameraschnitt bei 18,9 s griff der Höhenwechsel erst bei
+20,8 s — fast zwei Sekunden lang stand die Schrift neben dem Mund statt am
+Kinn. Derselbe Fehler wie am 20.10. bei der Stummschaltung. Gefixt: wer in
+Fertigzeit rechnet, bekommt die Lippenliste durch das Tempo geteilt.
+Mit `--auto-captions` war es immer richtig — deshalb ist es erst aufgefallen,
+als ich eine `.srt` wiederverwendet habe, um den Whisper-Lauf zu sparen.
+→ betrifft: content-*
+
+**05.11. — Die Schnittgrenze aus `bildausschnitt.py` ist nicht der Schnitt.**
+Sie lag 0,13 s bzw. 0,07 s hinter dem echten Kameraschnitt. In dieser Lücke
+liegt der Ausschnitt der alten Einstellung über dem neuen Bild — ein Bild
+lang sah man ein leeres Bücherregal, weil der Kasten auf einen Menschen
+gesetzt war, der da nicht mehr steht. **Regel: die Grenzen aus dem Plan
+gegen `select='gt(scene,0.12)'` nachmessen und auf das Bildraster der Quelle
+runden** (hier 30000/1001, nicht 30 — sonst sind die Längen keine ganzen
+Bilder).
+→ betrifft: content-*
