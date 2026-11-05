@@ -627,6 +627,16 @@ muster = r"thanks for watching|thank you for watching|subscribe|\[music\]|see yo
   die es ankam: eine Zahl aus dem Kanal ist ein Befund, keine Messung.**
   Beim naechsten Mal die Herkunft mitschreiben, bevor die Zahl in eine Spalte
   wandert — „wer hat das gemessen, woran, und was wurde hochgeladen".
+
+  **Nachtrag am selben Tag, und er zieht die Korrektur zur Haelfte zurueck:**
+  „nie hochgeladen, also kann es keine Messung geben" war zu hart. Pruefbar
+  ist nur, dass **keine Sperrmeldung** vorliegt und **keine Hochladung in
+  einem Zweig** steht. Er sagt, er habe es am Anger-Short getestet, und baut
+  darauf eine Anweisung.
+  **Wo er zweimal dasselbe sagt und eine Entscheidung darauf stuetzt, hoere
+  ich auf zu qualifizieren.** Was bleibt, ist allein die Zuschreibung:
+  **„seine Vorgabe", nicht „Messung von Gastauftritte"** — sonst zitiert der
+  naechste Agent eine Messung, die es nicht gibt.
   → betrifft: alle Content-Agenten, und mich
 
 - **Der Bestand, richtiggestellt: fuenf Hochladungen mit Musikbett, fuenf
@@ -647,3 +657,29 @@ muster = r"thanks for watching|thank you for watching|subscribe|\[music\]|see yo
   ob dazu schon eine Entscheidung vorliegt.** Was ich nicht gesehen habe, ist
   nicht dasselbe wie was nicht entschieden wurde.
   → betrifft: alle Content-Agenten, ai-chief-of-staff
+
+### Nachtrag 05.11., spaet — die ersten Zahlen an den Titeln
+
+- **Er hat die Musikfrage selbst entschieden**, woertlich: *„dass die wissen,
+  dass wir He's Alive nicht fuer Shorts nehmen koennen, die ueber 90 Sekunden
+  gehen. Und stattdessen nimm bitte Mom's Got Work als Hintergrundmusik."*
+
+| Titel | Grenze | Herkunft |
+|---|---|---|
+| In This Shirt | bis **60 s** | seine Entscheidung 22.10. |
+| He's Alive | bis **90 s** | seine Vorgabe 05.11. |
+| Mom's Got Work | Ersatz darueber | seine Vorgabe 05.11. |
+| Daylight · Comptine | gar nicht | weltweite Sperren |
+
+- **Der erste belegte Sperrpunkt ueberhaupt:** der deutsche Schulsystem-Short
+  trug *He's Alive* ab Songsekunde 109, Hauptteil **94,57 s**, mit Outro
+  **98,82 s** — gesperrt. Seine 90-s-Grenze liegt knapp darunter.
+  **Das ist eine Obergrenze. Eine Untergrenze gibt es fuer keinen Titel**,
+  weil noch kein Short mit Bett durchgelaufen ist.
+  → betrifft: alle Content-Agenten, shorts
+
+- **Die eine Pruefung, die das aendern koennte:** der oeffentliche Short
+  *The Biggest Scandal in the German School System* (24.08., **45 s**, 2766
+  Abrufe) ist **nicht** gesperrt. Traegt er ein Bett, waere das die erste
+  belegte Untergrenze. Ungeprueft — ich weiss nicht, ob Musik drunterliegt.
+  → betrifft: shorts, alle Content-Agenten
