@@ -85,7 +85,7 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Di 03.11. | Short | **Aaronson · ‚AI2027‘** (Shorts II, mit Musik) | **bei ihm** — 26.10. 08:54 fertig, seitdem ungenutzt · *Zuordnung auf diesen Tag ist mein Vorschlag, nicht seine Festlegung* |
 | Mi 04.11. | Short | **Aaronson · ‚How safe is AI‘** (Shorts II, Fassung 2, 58,0 s) | **bei ihm** — 26.10. 09:35 fertig, seitdem ungenutzt · *mein Vorschlag* · Vorsicht: der 7:34-Clip derselben Stelle ist am 24.10. als `YO_sGYH1dm8` schon raus |
 | Do 05.11. | Short | **Aaronson · ‚What do you believe in?‘** (Shorts II, Religionsblock) | **bei ihm** — 26.10. 10:27 fertig, seitdem ungenutzt · *mein Vorschlag* |
-| Fr 06.11. | Short | — | offen |
+| Fr 06.11. | Short | **Craig Makhosi** · drittes Stück (Cinematic, Stelle wählt es selbst) | **in Arbeit** — Auftrag 05.11. 06:42, `trig_01QYHo7E7TUU382gtCYKcgTU` · *mein Takt, nicht sein Termin* |
 | Sa 07.11. | Clip | 3–10 Min | offen |
 | So 08.11. | Clip | 10–20 Min | offen |
 | Mo 09.11. | Short | — | offen |
