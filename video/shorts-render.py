@@ -605,6 +605,17 @@ def stillen_finden(clip, mindest=0.24, schwelle=-45.0):
     return stillen
 
 
+# Nur die Schlussfrage der Sendung bleibt als eine Einblendung stehen.
+# Die Ausnahme galt bis zum 05.11. fuer JEDE Zeile mit Fragezeichen — und im
+# Englischen endet auch ein beilaeufiges „…you know?" so. Im Kingsbury-Short
+# stand deshalb „I MEAN THAT'S REALLY IT YOU KNOW?" in einer Einblendung,
+# gegen seine Drei-Wort-Regel. Dasselbe Muster wie in frage_am_ende.py.
+SCHLUSSFRAGE = re.compile(r"(?i)(makes?\s+(a\s+)?(human\s+)?life\s+meaningful"
+                          r"|what\s+makes\s+life\s+meaning"
+                          r"|life\s+meaningful\s+(for|to)\s+you"
+                          r"|makes\s+your\s+life\s+meaningful)")
+
+
 def _ganze_frage(woerter, i):
     """Laenge einer Frage ab `i`, wenn sie ganz in eine Zeile passt.
 
@@ -616,7 +627,7 @@ def _ganze_frage(woerter, i):
         text = " ".join(_anzeige(x["t"], True) for x in woerter[i:j + 1])
         if _breite_px(text) > FRAGE_MAX:
             return 0
-        if _ist_frage(woerter[j:j + 1]):
+        if _ist_frage(woerter[j:j + 1]) and SCHLUSSFRAGE.search(text):
             return j - i + 1
     return 0
 

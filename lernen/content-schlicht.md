@@ -792,3 +792,24 @@ gültiger Randfall, sondern der Hinweis, dass die Rechnung nicht trägt.**
 Dann ist der Rückfall auf die einfache Annahme besser als der geklemmte
 Wert, der plausibel aussieht und falsch ist.
 → betrifft: content-*, alle Content-Agenten
+
+**05.11. — Eine Ausnahme, die zu weit greift, bricht die Regel, die sie
+schützen sollte.** Für seine Schlussfrage hatte ich eingebaut, dass eine
+**Frage** als eine Einblendung stehen bleibt. Im Englischen endet aber auch
+jedes beiläufige „…you know?" auf ein Fragezeichen — im Kingsbury-Short stand
+deshalb `I MEAN THAT'S REALLY IT YOU KNOW?` in einer Einblendung, gegen seine
+Drei-Wort-Regel. Sein Einwand: „ich weiß nicht, was mit der Regel passiert
+ist, dass maximal 3 Worte eingeblendet werden."
+Die Ausnahme hängt jetzt am Muster der **Schlussfrage** selbst (dasselbe wie
+in `frage_am_ende.py`), nicht am Satzzeichen.
+**Regel: eine Ausnahme wird an dem festgemacht, wofür sie gedacht ist, nicht
+an einem Merkmal, das zufällig mitläuft.** Das Fragezeichen war das
+Merkmal, die Schlussfrage war der Zweck.
+→ betrifft: content-*
+
+**Und daneben: ein Parameter, den ich nach einer Änderung nicht nachgemessen
+habe.** Nachdem ich die Ausschnitte von Hand gesetzt hatte, stand die
+Untertitelhöhe weiter auf dem Wert aus dem alten Plan — die Schrift landete
+auf der Brust statt am Kinn. Wer den Ausschnitt ändert, ändert damit, wo das
+Kinn im Bild liegt.
+→ betrifft: content-*
