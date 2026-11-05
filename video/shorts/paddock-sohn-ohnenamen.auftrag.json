@@ -1,0 +1,86 @@
+{
+ "name": "Paddock-Folge - ohne Namen und ohne den Lacher",
+ "datei": "YNB Podcast Rob Paddock Son (ohne Namen, In This Shirt).mp4",
+ "stand": "2026-11-05 - fuenfte Fassung",
+ "seine_ansage": "'Okay, nimm das doch noch mal raus. Ich will es einfach nur noch mal sehen. Wie das rueberkommt, wenn da nicht halt dieser Witz, wenn nicht das Lachen drin ist. Dann noch ein bisschen epischer' - dazu die Zeilen 16 bis 24 des Skripts als Zitat.",
+ "schnitt": {
+  "stuecke_quelle_s": [
+   [
+    791.3,
+    796.2
+   ],
+   [
+    800.2,
+    825.6
+   ],
+   [
+    838.1,
+    838.5
+   ],
+   [
+    838.9333,
+    841.0333
+   ],
+   [
+    846.4,
+    875.5
+   ],
+   [
+    906.8,
+    918.0
+   ]
+  ],
+  "bilder_je_stueck": [
+   147,
+   762,
+   12,
+   63,
+   873,
+   336
+  ],
+  "dauer_roh_s": 73.1,
+  "heraus_gegenueber_der_vierten_fassung": "875,5 bis 906,8 = 31,30 s: der Name ('Chadwick Graham Paddock'), 'I went over to my wife that night', die Reaktion seiner Frau samt F-Wort und die ganze Namenssuche bis 'Grey Kahn Paddock'.",
+  "die_naht_ist_unsichtbar": "875,5 liegt in der Totale (Einstellung 865,1333-901,10), 906,8 in der Nahaufnahme (ab 901,10). Der Bildsprung faellt damit auf einen echten Kamerawechsel. Mit schnittgrenzen.py nachgemessen: Unterschied 60,6 gegen Ruhepegel 0,46 - und keine der vier Grenzen musste bewegt werden."
+ },
+ "bild": {
+  "ausgabe": "2160x3840",
+  "tempo": 1.15,
+  "look": "preset",
+  "worte_je_einblendung": 3,
+  "tiefer_px": 120,
+  "lippe": 1267,
+  "logo_breite_px": 1400,
+  "logo_hoehe": 0.877,
+  "einstellungsgrenzen_clip_s": [
+   4.9,
+   6.0333,
+   51.5333,
+   61.9
+  ]
+ },
+ "einblendungen": {
+  "quelle": "video/shorts/paddock-sohn-ohnenamen.cues.json",
+  "anzahl": 97,
+  "herkunft": "Die geprueften Zeilen der vierten Fassung; alles zwischen Clipzeit 61,90 und 93,20 entfaellt, der Rest ist um 31,30 s verschoben.",
+  "geprueft": "'Chadwick' und 'Grey Kahn' kommen im SRT null Mal vor (gezaehlt)."
+ },
+ "ton": {
+  "laut": "aus",
+  "dehnung": "atempo",
+  "musik": "The Irrepressibles - In This Shirt, ab 3:05, 0 dB unter der Stimme",
+  "warum_3_05": "Seine Ansage 'noch ein bisschen epischer'. Gemessen ueber die Energie oberhalb 2 kHz - das ist das Mass fuer die Dichte des Arrangements, nicht das RMS: bei 0:23 liegt sie bei 1,3 dB, bei 3:05 bei 25,3 dB. Von 3:00 bis 4:25 steht der Titel durchgehend im vollen Arrangement, bei 4:30 bricht er ab. Der Short endet bei Songzeit 4:09, die Ausblende liegt also noch im dichten Teil.",
+  "warum_0_db": "Vorher 3 dB unter der Stimme. Stimme -22,6 dB, Bett -9,4 dB -> Bett auf -13,2 dB. Falls der Gesang gegen die Stimme laeuft, zurueck auf 3.",
+  "kein_loop": "Song 335,02 s, Start 185 s, Hauptteil 63,60 s - Ende bei 248,6 s."
+ },
+ "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
+ "laenge_s": {
+  "hauptteil": 63.6,
+  "outro": 4.21,
+  "gesamt": 67.85
+ },
+ "dateien": [
+  "YNB Podcast Rob Paddock Son (ohne Namen).mp4",
+  "YNB Podcast Rob Paddock Son (ohne Namen, In This Shirt).mp4"
+ ],
+ "offen": "Er vergleicht drei Fassungen: die kurze (59,65 s, Start bei 'my wife'), die ganze (95,05 s, mit Namen und Lacher) und diese. Entschieden ist noch nichts."
+}
