@@ -34,3 +34,5 @@ ubuntu -> Ubuntu
 makhosi -> Makhosi
 Manawah -> Manuwa
 Alexa Mosley -> Hormozi
+# Kingsbury-Folge (05.11.): Whisper schreibt die taoistische Wendung als Zahl.
+10,000 -> ten thousand

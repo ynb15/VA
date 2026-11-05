@@ -828,3 +828,37 @@ samt seiner Fehlerkorrekturen. Dasselbe gilt rückwärts: wer etwas baut, das
 für andere gilt, schreibt es dorthin, wo andere es finden — in den Lernkanal,
 nicht nur in den eigenen Branch.
 → betrifft: alle Agenten
+
+**05.11. — Eine Bildschirmaufnahme bringt fremde Balken mit, und die sieht
+er.** Drei Screenshots von ihm, einer davon mit einem hellen Streifen am
+oberen Rand: *„da kam auch eine Notification rein."* Es war eine
+macOS-Meldung („Claude needs your permission: Edit-Design"), die in der
+abgefilmten YouTube-Seite über dem Trailer lag — genau in dem Fenster, aus
+dem ich die Einstellung geholt hatte. Der Beschnitt, den ich gesetzt hatte,
+begann 59 px zu tief.
+**Regel: bei jeder Bildschirmaufnahme einmal den Rand über der Bildfläche
+über die ganze Datei abtasten** (ein Graustreifen, 4 Bilder/s, Anteil heller
+Pixel) und die gefundenen Zeitbereiche ausschließen. Bei dieser Datei waren
+es drei: 0–7,8 s, 87,3–91,0 s, 183–184 s. Dasselbe am unteren Rand für die
+eingebrannten Untertitel des Trailers.
+→ betrifft: content-*
+
+**05.11. — „Da sind nicht nur schwarze Bilder. Warst Du wieder zu faul."**
+Ich hatte Interstellar mit einzelnen Stichproben abgetan. Bei 0,5-s-Abtastung
+über die ganzen 44 s standen drei brauchbare Einstellungen da, die ich vorher
+nie gesehen hatte. **Eine Quelle ist erst dann leer, wenn sie lückenlos
+abgetastet ist** — Stichproben beweisen nichts, schon gar nicht das Fehlen.
+Umgekehrt gilt: eine Einstellung, deren mittlere Helligkeit unter ~22 von 255
+liegt, ist auf dem Handy schwarz, auch wenn auf dem Monitor Funken zu sehen
+sind. Gemessen, nicht geschätzt.
+→ betrifft: content-*
+
+**05.11. — Ein 9:16-Ausschnitt braucht einen Ausschnitt je Einstellung.**
+`--broll-fokus` gilt für alle Einsätze zugleich; aus einem 2,39:1-Trailer
+bleiben senkrecht 23 % der Breite übrig. Wer das dem Renderer überlässt,
+schneidet Gesichter an („da hast Du das Gesicht verpasst") und landet bei
+nichtssagenden Flächen. Richtig ist, jedes Stück **vorher** als fertiges
+9:16-Stück herauszuschneiden, mit von Hand gesetzter Mitte — und bei einer
+Einstellung, in der sich das Motiv durchs Bild bewegt, mit einem Schwenk
+(`crop=…:x='x0+(x1-x0)*min(t/d,1)'`).
+→ betrifft: content-*
