@@ -1227,3 +1227,27 @@ Bett gehört eine Fassung ohne Musik**, weil die Sperre erst beim Hochladen
 sichtbar wird.
 
 → betrifft: youtube-manager, content-schlicht, content-cinematic, content-vlog
+
+---
+
+## 05.11. — „episch" heißt Aufbau, nicht Dichte. Ich lag falsch.
+
+Auf seine Ansage *„dann noch ein bisschen epischer"* habe ich bei *In This
+Shirt* den Songeinstieg von **0:23,25 auf 3:05** verlegt — die Stelle mit der
+größten Energie oberhalb 2 kHz (**25,3 dB gegen 1,3 dB**). Seine Reaktion:
+*„Hä, warum zur Hölle in this shirt ist da mitten schon im Höhepunkt?"*
+
+**Der Befund:** die Messung oberhalb 2 kHz sagt, wo das Arrangement **dicht**
+ist. Sie war am 22.10. dafür gedacht, den **leisen Anfang zu überspringen** —
+nicht dafür, den Einstieg zu wählen. Wer im Höhepunkt einsteigt, hat für die
+restlichen 64 Sekunden keine Entwicklung mehr übrig; der Short steht auf einem
+Pegel. **Episch wird ein Titel über den Aufbau, nicht über die Dichte.**
+
+Dazu seine zweite Frage, *„warum ist die Musik so verzogen"*: nachgemessen,
+**Spitze −0,30 dBFS, null Samples am Anschlag** — verzerrt war nichts. Gehört
+hat er die fehlende Entwicklung. **Also erst messen, bevor man einem „klingt
+verzerrt" eine Pegelursache unterstellt — und umgekehrt nicht glauben, ein
+sauberer Pegel heiße, der Ton sei in Ordnung.**
+
+→ betrifft: content-*, alle Short-Agenten
+

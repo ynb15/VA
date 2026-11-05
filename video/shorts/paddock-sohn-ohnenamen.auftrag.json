@@ -67,10 +67,9 @@
  "ton": {
   "laut": "aus",
   "dehnung": "atempo",
-  "musik": "The Irrepressibles - In This Shirt, ab 3:05, 0 dB unter der Stimme",
-  "warum_3_05": "Seine Ansage 'noch ein bisschen epischer'. Gemessen ueber die Energie oberhalb 2 kHz - das ist das Mass fuer die Dichte des Arrangements, nicht das RMS: bei 0:23 liegt sie bei 1,3 dB, bei 3:05 bei 25,3 dB. Von 3:00 bis 4:25 steht der Titel durchgehend im vollen Arrangement, bei 4:30 bricht er ab. Der Short endet bei Songzeit 4:09, die Ausblende liegt also noch im dichten Teil.",
-  "warum_0_db": "Vorher 3 dB unter der Stimme. Stimme -22,6 dB, Bett -9,4 dB -> Bett auf -13,2 dB. Falls der Gesang gegen die Stimme laeuft, zurueck auf 3.",
-  "kein_loop": "Song 335,02 s, Start 185 s, Hauptteil 63,60 s - Ende bei 248,6 s."
+  "musik": "The Irrepressibles - In This Shirt, ab 0:23,25, 3 dB unter der Stimme",
+  "pegel": "Stimme -22,6 dB, Bett -11,6 dB -> Bett auf -14,0 dB. Spitze des Mixes -0,49 dBFS, kein Sample am Anschlag.",
+  "kein_loop": "Song 335,02 s, Start 23,25 s, Hauptteil 63,60 s."
  },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
  "laenge_s": {
@@ -82,5 +81,11 @@
   "YNB Podcast Rob Paddock Son (ohne Namen).mp4",
   "YNB Podcast Rob Paddock Son (ohne Namen, In This Shirt).mp4"
  ],
- "offen": "Er vergleicht drei Fassungen: die kurze (59,65 s, Start bei 'my wife'), die ganze (95,05 s, mit Namen und Lacher) und diese. Entschieden ist noch nichts."
+ "offen": "Er vergleicht drei Fassungen: die kurze (59,65 s, Start bei 'my wife'), die ganze (95,05 s, mit Namen und Lacher) und diese. Entschieden ist noch nichts.",
+ "korrektur_an_mir_selbst": {
+  "was_ich_falsch_gemacht_habe": "Auf 'noch ein bisschen epischer' habe ich den Songanfang auf 3:05 gelegt, die Stelle mit der groessten Energie oberhalb 2 kHz (25,3 gegen 1,3 dB bei 0:23). Seine Reaktion: 'Haeh, warum zur Hoelle in this shirt ist da mitten schon im Hoehepunkt?'",
+  "warum_das_falsch_war": "Episch ist bei diesem Titel der AUFBAU, nicht die Dichte. Wer im Hoehepunkt einsteigt, hat keine Entwicklung mehr uebrig - das Short steht 64 Sekunden auf einem Pegel. Die Messung oberhalb 2 kHz taugt dafuer, den LEISEN Anfang zu ueberspringen (dafuer war sie am 22.10. gedacht), nicht dafuer, den Einstieg zu waehlen.",
+  "verzerrt_war_nichts": "Seine zweite Frage ('warum ist die Musik so verzogen') nachgemessen: Spitze -0,30 dBFS, null Samples am Anschlag. Gehoert hat er die fehlende Entwicklung, nicht eine Verzerrung.",
+  "jetzt": "Zurueck auf 0:23,25 und 3 dB unter der Stimme - die Einstellung, die er beim Hypermaskulinitaets-Short abgenommen hat."
+ }
 }
