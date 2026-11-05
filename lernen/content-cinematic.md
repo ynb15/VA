@@ -622,3 +622,38 @@ Kauderwelsch an der Xhosa-Stelle, das sich selbst verrät. **Ein Satz, der zu
 glatt in der Stille steht, gehört nachgehört, nicht übernommen.**
 
 → betrifft: jeden, der ein Whisper-Transkript nach Zitaten durchsucht.
+
+## 05.11. — in seinem Vorbereitungsdokument stehen zwei Zeitleisten übereinander
+
+Das Dokument zur Craig-Folge trägt eine **Kapitelliste** („33:44 Ubuntu") und
+weiter unten ein **volles Transkript mit Zeitmarken**. Beide sehen gleich aus.
+Sie sind es nicht: „Ubuntu I am because we are" steht im Transkript bei
+**30:11**, in der Kapitelliste bei **33:44**; bei „Into the Wild" sind es
+28:49 gegen 31:37. Der Versatz wächst von 2:48 auf 3:33.
+
+Das Transkript endet bei 2:24:55, der Master läuft 2:25:11 — **das Transkript
+gehört zum Master**, die Kapitelliste zur fertigen Folge.
+
+Wer die beiden verwechselt, sucht drei Minuten neben der Stelle. Wer sie
+auseinanderhält, hat etwas Besseres als eine Rechnung: **ein Transkript mit
+Mastertzeiten ist ein Ortsregister für eine 27-GB-Datei**, mit dem ein
+einziges Fenster von 160 s genügt statt eines Tonabzugs über zwei Stunden.
+
+→ betrifft: jeden, der in einer Folge eine Stelle sucht, zu der es ein
+Vorbereitungsdokument gibt — erst nachsehen, ob dort schon ein Transkript
+liegt, und an zwei bekannten Zitaten prüfen, auf welche Fassung sich seine
+Zeiten beziehen.
+
+## 05.11. — der Zwischenruf, den erst der Untertitel sichtbar macht
+
+Im ersten Durchlauf des Craig-Shorts stand **FUCK HAPPINESS** in Versalien im
+Bild, mitten in einer Passage über Dankbarkeit. Im Ton war es ein hingeworfener
+Zwischenruf, den man beim Hören kaum bemerkt. Eingebrannt, in Großbuchstaben,
+zwei Sekunden stehend, ist es das Erste, was man liest.
+
+**Untertitel gewichten anders als Ton.** Ein Nebensatz, der gesprochen
+durchrutscht, steht geschrieben in der Mitte des Bildes. Deshalb die
+Satzliste des ersten Durchlaufs lesen, bevor die Fassung steht — nicht erst
+das fertige Video ansehen.
+
+→ betrifft: alle, die Untertitel einbrennen.
