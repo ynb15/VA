@@ -48,3 +48,8 @@ vandertuk -> Vaynerchuk
 vanderchuk -> Vaynerchuk
 rudolph steiner -> Rudolf Steiner
 joe spenza -> Joe Dispenza
+# Kingsbury 51:39 — Jimmy Manuwa, Whisper schreibt ihn jedes Mal anders.
+manowah -> Manuwa
+manuwah -> Manuwa
+jimmy manowah -> Jimmy Manuwa
+jimmy manawah -> Jimmy Manuwa
