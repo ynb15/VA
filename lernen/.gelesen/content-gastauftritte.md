@@ -1227,3 +1227,83 @@ Bett gehört eine Fassung ohne Musik**, weil die Sperre erst beim Hochladen
 sichtbar wird.
 
 → betrifft: youtube-manager, content-schlicht, content-cinematic, content-vlog
+
+---
+
+## 05.11. — „episch" heißt Aufbau, nicht Dichte. Ich lag falsch.
+
+Auf seine Ansage *„dann noch ein bisschen epischer"* habe ich bei *In This
+Shirt* den Songeinstieg von **0:23,25 auf 3:05** verlegt — die Stelle mit der
+größten Energie oberhalb 2 kHz (**25,3 dB gegen 1,3 dB**). Seine Reaktion:
+*„Hä, warum zur Hölle in this shirt ist da mitten schon im Höhepunkt?"*
+
+**Der Befund:** die Messung oberhalb 2 kHz sagt, wo das Arrangement **dicht**
+ist. Sie war am 22.10. dafür gedacht, den **leisen Anfang zu überspringen** —
+nicht dafür, den Einstieg zu wählen. Wer im Höhepunkt einsteigt, hat für die
+restlichen 64 Sekunden keine Entwicklung mehr übrig; der Short steht auf einem
+Pegel. **Episch wird ein Titel über den Aufbau, nicht über die Dichte.**
+
+Dazu seine zweite Frage, *„warum ist die Musik so verzogen"*: nachgemessen,
+**Spitze −0,30 dBFS, null Samples am Anschlag** — verzerrt war nichts. Gehört
+hat er die fehlende Entwicklung. **Also erst messen, bevor man einem „klingt
+verzerrt" eine Pegelursache unterstellt — und umgekehrt nicht glauben, ein
+sauberer Pegel heiße, der Ton sei in Ordnung.**
+
+→ betrifft: content-*, alle Short-Agenten
+
+
+---
+
+## 05.11. — eine Lippenhöhe je Short, nicht eine je Einstellung
+
+**Sein Befund:** *„springt der Text einmal in der Höhe hier an dieser Stelle
+bei 4 Sekunden, weil du umschaltest."* Mit Screenshot.
+
+**Die Ursache:** `bildausschnitt.py` misst die Lippenhöhe **je Einstellung**,
+und ich hatte die gemessenen Werte unverändert in den Plan übernommen —
+**1186 / 1267 / 1207 / 1250**. Der Renderer setzt die Zeile dann je
+Einstellung anders, und bei jedem Kamerawechsel springt sie. 81 px auf 1920
+sind 4 % der Bildhöhe; das sieht man.
+
+**Die Regel: ein Short, eine Höhe.** Genommen wird der Wert der Einstellung,
+die den größten Teil des Shorts trägt (hier 1207 für 63 % der Laufzeit). Die
+abgenommenen Sutcliffe-Shorts hatten alle **einen** Wert (1267) — nicht, weil
+das geprüft worden wäre, sondern weil dort alle Einstellungen gleich gemessen
+hatten. **Der Zufall hat den Fehler bisher verdeckt.**
+
+→ betrifft: content-*, alle Short-Agenten
+
+## 05.11. — Einstellungsgrenzen aus Bildarithmetik liegen ein Bild zu früh
+
+Wenn ich eine Einstellungsgrenze aus Bildzahlen **rechne** (etwa „Stück 1 hat
+147 Bilder, also beginnt die zweite Einstellung bei 147/30"), liegt sie
+**verlässlich ein Bild zu früh**: `schnittgrenzen.py` hat heute **4 von 4**
+gerechneten Grenzen um **genau +1 Bild** verschoben. Grenzen, die ich aus
+einem schon korrigierten Plan übernommen hatte, lagen dagegen alle richtig
+(0 von 5 und 0 von 4 verschoben).
+
+**Also: `schnittgrenzen.py` läuft nach JEDEM neu gerechneten Plan, nicht nur
+nach `bildausschnitt.py`.** Ein Bild daneben ist genau das Zittern, das er am
+24.10. dreimal gemeldet hat.
+
+→ betrifft: content-*, alle Short-Agenten
+
+## 05.11. — „bei den Übergängen akkurater" — seine stehende Ansage
+
+*„Da, das müssen wir generell einfach optimieren, dass du da bei den
+Übergängen akkurater bist."*
+
+Dazu der Messwert, an dem man es prüfen kann: `schnittgrenzen.py` nennt zu
+jeder Grenze den **Bildunterschied gegen den Ruhepegel**. Ein echter
+Kamerawechsel liegt bei **59 bis 62 gegen 0,3 bis 0,6**. Eine Naht, bei der
+beide Seiten dieselbe Kamera zeigen, liegt bei **10,3** — sichtbar, aber kein
+Schnitt. **Jede Naht eines Shorts muss über 50 liegen; tut sie es nicht, ist
+es ein Sprung und keine Montage.**
+
+Heute am Paddock-Short angewandt: die Naht nach dem herausgeschnittenen „So"
+lag bei 10,3, weil davor und danach dieselbe Nahaufnahme steht. Mit einem
+J-Schnitt über die Totale (Bild schneidet 1,73 s früher, Ton bleibt) liegt
+dieselbe Naht bei **59,5** — und Bild und Ton sind am Kamerawechsel wieder
+deckungsgleich.
+
+→ betrifft: content-*, alle Short-Agenten

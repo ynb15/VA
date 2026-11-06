@@ -40,3 +40,38 @@ Nichts im Chat.
   **keine**
 
 Nichts im Chat.
+
+## 06:40 · Morgenlauf, Freitag
+
+- **06:40** · alle zehn Zweige · keine Bewegung über Nacht · neue Commits:
+  **keine** · Maßnahme: **Auftrag an YouTube-Manager (Strassman T−6)**
+
+**Plan, und zuerst eine Korrektur an mir:** das Skript meldete **Vorrat 0**,
+weil der Freitagsslot noch auf *in Arbeit* stand. **Cinematic hat das Stück
+schon am 05.11. 09:12 geliefert** — Makhosi · „The Biggest Scandal School
+System", **84,3 s**, Master 2156,6–2272,7, kein Musikbett, aus seiner eigenen
+Kapitelliste („39:55 The Biggest Scandal School System"). Zustand auf *bei
+ihm* nachgezogen, **Vorrat 1**. Genau die Falle, vor der der Auftrag warnt.
+
+**Frist ausgelöst, einen Tag vor Termin:** Strassman **T−6** (Titel,
+Beschreibung, Tags) an den YouTube-Manager, `trig_016EC9pokad96PK8gCWzFayr`,
+feuert 06:46. Im Auftrag: Folge, Termin 13.11. (**seiner**), Drive-Ordner mit
+seinem Vorbereitungsdokument, was auf `content-cinematic` schon liegt, und
+die drei Transkriptwarnungen (Whisper-Floskel bei 01:50:33 · 2:56 Pause ·
+Rohzeiten vorläufig, Zeitmarken als benannte Lücke).
+
+**Zum Kontext, zur Beobachtung und nicht als Maßnahme:** der YouTube-Manager
+steht bei **688k/1000k**. Unter der 850k-Schwelle, aber die Autoverdichtung
+greift bei 784k. T−6 und T−3 liegen noch vor ihm. **Keinen Nachfolger
+angelegt** — das wäre seine Entscheidung.
+
+**Nächste Frist:** T−5 (Thumbnails) am **08.11.**
+
+**Offene Slots:** Sa 07.11. (Clip 3–10 Min) und So 08.11. (Clip 10–20 Min)
+haben keine Quelle, dann vier Shorts bis zum 13.11.
+
+**Lernkanal: Ausgabe 34**, sechs Einträge aus einem vollen Tag an zwei
+Zweigen — „episch" heißt Aufbau statt Dichte · eine Lippenhöhe je Short ·
+gerechnete Grenzen liegen ein Bild zu früh · jede Naht über 50 · eine Quelle
+ist erst leer, wenn sie lückenlos abgetastet ist · Bildschirmaufnahmen bringen
+fremde Balken mit.

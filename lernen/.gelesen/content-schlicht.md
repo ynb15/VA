@@ -828,3 +828,59 @@ samt seiner Fehlerkorrekturen. Dasselbe gilt rückwärts: wer etwas baut, das
 für andere gilt, schreibt es dorthin, wo andere es finden — in den Lernkanal,
 nicht nur in den eigenen Branch.
 → betrifft: alle Agenten
+
+**05.11. — Eine Bildschirmaufnahme bringt fremde Balken mit, und die sieht
+er.** Drei Screenshots von ihm, einer davon mit einem hellen Streifen am
+oberen Rand: *„da kam auch eine Notification rein."* Es war eine
+macOS-Meldung („Claude needs your permission: Edit-Design"), die in der
+abgefilmten YouTube-Seite über dem Trailer lag — genau in dem Fenster, aus
+dem ich die Einstellung geholt hatte. Der Beschnitt, den ich gesetzt hatte,
+begann 59 px zu tief.
+**Regel: bei jeder Bildschirmaufnahme einmal den Rand über der Bildfläche
+über die ganze Datei abtasten** (ein Graustreifen, 4 Bilder/s, Anteil heller
+Pixel) und die gefundenen Zeitbereiche ausschließen. Bei dieser Datei waren
+es drei: 0–7,8 s, 87,3–91,0 s, 183–184 s. Dasselbe am unteren Rand für die
+eingebrannten Untertitel des Trailers.
+→ betrifft: content-*
+
+**05.11. — „Da sind nicht nur schwarze Bilder. Warst Du wieder zu faul."**
+Ich hatte Interstellar mit einzelnen Stichproben abgetan. Bei 0,5-s-Abtastung
+über die ganzen 44 s standen drei brauchbare Einstellungen da, die ich vorher
+nie gesehen hatte. **Eine Quelle ist erst dann leer, wenn sie lückenlos
+abgetastet ist** — Stichproben beweisen nichts, schon gar nicht das Fehlen.
+Umgekehrt gilt: eine Einstellung, deren mittlere Helligkeit unter ~22 von 255
+liegt, ist auf dem Handy schwarz, auch wenn auf dem Monitor Funken zu sehen
+sind. Gemessen, nicht geschätzt.
+→ betrifft: content-*
+
+**05.11. — Ein 9:16-Ausschnitt braucht einen Ausschnitt je Einstellung.**
+`--broll-fokus` gilt für alle Einsätze zugleich; aus einem 2,39:1-Trailer
+bleiben senkrecht 23 % der Breite übrig. Wer das dem Renderer überlässt,
+schneidet Gesichter an („da hast Du das Gesicht verpasst") und landet bei
+nichtssagenden Flächen. Richtig ist, jedes Stück **vorher** als fertiges
+9:16-Stück herauszuschneiden, mit von Hand gesetzter Mitte — und bei einer
+Einstellung, in der sich das Motiv durchs Bild bewegt, mit einem Schwenk
+(`crop=…:x='x0+(x1-x0)*min(t/d,1)'`).
+→ betrifft: content-*
+
+**05.11. — Die Schrifthöhe sprang eine Einstellung zu spät mit.** In
+`shorts-render.py` steht die Lippenliste aus dem Plan in **Clipzeit**, die
+Einblendungen aus `--srt` dagegen in der **Zeit des fertigen Videos** (so
+kommen sie aus `--srt-out` zurück). Beides wurde ungerechnet verglichen: bei
+Tempo 1,1 und einem Kameraschnitt bei 18,9 s griff der Höhenwechsel erst bei
+20,8 s — fast zwei Sekunden lang stand die Schrift neben dem Mund statt am
+Kinn. Derselbe Fehler wie am 20.10. bei der Stummschaltung. Gefixt: wer in
+Fertigzeit rechnet, bekommt die Lippenliste durch das Tempo geteilt.
+Mit `--auto-captions` war es immer richtig — deshalb ist es erst aufgefallen,
+als ich eine `.srt` wiederverwendet habe, um den Whisper-Lauf zu sparen.
+→ betrifft: content-*
+
+**05.11. — Die Schnittgrenze aus `bildausschnitt.py` ist nicht der Schnitt.**
+Sie lag 0,13 s bzw. 0,07 s hinter dem echten Kameraschnitt. In dieser Lücke
+liegt der Ausschnitt der alten Einstellung über dem neuen Bild — ein Bild
+lang sah man ein leeres Bücherregal, weil der Kasten auf einen Menschen
+gesetzt war, der da nicht mehr steht. **Regel: die Grenzen aus dem Plan
+gegen `select='gt(scene,0.12)'` nachmessen und auf das Bildraster der Quelle
+runden** (hier 30000/1001, nicht 30 — sonst sind die Längen keine ganzen
+Bilder).
+→ betrifft: content-*

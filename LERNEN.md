@@ -45,6 +45,68 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 34 — 06.11.2026, 06:40 Kapstadt · „episch" heißt Aufbau, nicht Dichte — und vier Messungen, die ein Zittern erklären
+
+Ein voller Tag an zwei Zweigen. Sechs Einträge, jeder mit einer Zahl oder
+einem Zitat von ihm.
+
+- **„Episch" heißt Aufbau, nicht Dichte — und damit ist die 2-kHz-Regel enger,
+  als sie aussah.** Gastauftritte hat auf sein *„dann noch ein bisschen
+  epischer"* den Einstieg von *In This Shirt* von 0:23,25 auf **3:05** gelegt,
+  die Stelle mit der größten Energie über 2 kHz (**25,3 gegen 1,3 dB**). Seine
+  Reaktion: *„Hä, warum zur Hölle in this shirt ist da mitten schon im
+  Höhepunkt?"* **Die Messung über 2 kHz war dafür gedacht, den leisen Anfang
+  zu überspringen — nicht dafür, den Einstieg zu wählen.** Wer im Höhepunkt
+  einsteigt, hat für die restlichen 64 Sekunden keine Entwicklung mehr. Dazu
+  seine zweite Frage, *„warum ist die Musik so verzogen"*: nachgemessen
+  **−0,30 dBFS, null Samples am Anschlag** — verzerrt war nichts, gehört hat er
+  die fehlende Entwicklung. **Ein sauberer Pegel heißt nicht, der Ton sei in
+  Ordnung.**
+  → betrifft: alle Short-Agenten
+- **Eine Lippenhöhe je Short, nicht eine je Einstellung.** Sein Befund, mit
+  Screenshot: *„springt der Text einmal in der Höhe hier an dieser Stelle bei
+  4 Sekunden, weil du umschaltest."* Ursache: `bildausschnitt.py` mißt je
+  Einstellung, und die Werte gingen unverändert in den Plan — **1186 / 1267 /
+  1207 / 1250**. **81 px auf 1920 sind 4 % der Bildhöhe, und das sieht man.**
+  Genommen wird der Wert der Einstellung, die den größten Teil des Shorts
+  trägt. Die abgenommenen Sutcliffe-Shorts hatten alle **einen** Wert — nicht
+  aus Prüfung, sondern weil dort zufällig alle Einstellungen gleich gemessen
+  hatten. **Der Zufall hat den Fehler bisher verdeckt.**
+  → betrifft: alle Short-Agenten
+- **Eine gerechnete Einstellungsgrenze liegt verlässlich ein Bild zu früh.**
+  `schnittgrenzen.py` hat **4 von 4** gerechneten Grenzen um **genau +1 Bild**
+  verschoben; Grenzen aus einem schon korrigierten Plan lagen alle richtig
+  (0 von 5 und 0 von 4). **Also läuft `schnittgrenzen.py` nach JEDEM neu
+  gerechneten Plan**, nicht nur nach `bildausschnitt.py`. Ein Bild daneben ist
+  genau das Zittern, das er am 24.10. dreimal gemeldet hat.
+  → betrifft: alle Short-Agenten
+- **Jede Naht eines Shorts muß über 50 liegen — sonst ist es ein Sprung und
+  keine Montage.** Seine stehende Ansage: *„Da, das müssen wir generell
+  einfach optimieren, dass du da bei den Übergängen akkurater bist."* Der
+  Maßstab: ein echter Kamerawechsel liegt bei **59–62** gegen einen Ruhepegel
+  von 0,3–0,6; eine Naht mit derselben Kamera auf beiden Seiten bei **10,3**.
+  Heute am Paddock-Short: die Naht nach dem gestrichenen „So" lag bei 10,3 —
+  mit einem **J-Schnitt über die Totale** (Bild 1,73 s früher, Ton bleibt) bei
+  **59,5**.
+  → betrifft: alle Short-Agenten
+- **Eine Quelle ist erst leer, wenn sie lückenlos abgetastet ist.** Seine
+  Worte: *„Da sind nicht nur schwarze Bilder. Warst Du wieder zu faul."*
+  Shorts I hatte Interstellar mit Stichproben abgetan; bei **0,5-s-Abtastung
+  über 44 s** standen drei brauchbare Einstellungen da. **Stichproben beweisen
+  nichts, am wenigsten eine Abwesenheit.** Umgekehrt: eine Einstellung unter
+  **~22 von 255** mittlerer Helligkeit ist auf dem Handy schwarz, auch wenn am
+  Monitor Funken zu sehen sind.
+  → betrifft: content-*
+- **Eine Bildschirmaufnahme bringt fremde Balken mit, und er sieht sie.** Drei
+  Screenshots von ihm, einer mit hellem Streifen oben: *„da kam auch eine
+  Notification rein."* Eine macOS-Meldung lag über dem abgefilmten Trailer,
+  genau im Fenster, aus dem die Einstellung kam; der Beschnitt begann **59 px
+  zu tief**. **Regel: bei jeder Bildschirmaufnahme einmal den Rand über der
+  Bildfläche über die ganze Datei abtasten** (Graustreifen, 4 Bilder/s,
+  Anteil heller Pixel) und die Fundstellen ausschließen — hier drei: 0–7,8 s,
+  87,3–91,0 s, 183–184 s. Dasselbe unten für eingebrannte Untertitel.
+  → betrifft: content-*
+
 ## Ausgabe 33 — 05.11.2026, 15:54 Kapstadt · dieselbe Stelle, zweimal geschnitten — und eine Regel, die im falschen Zweig lag
 
 - **Die Ubuntu-Stelle liegt jetzt zweimal, und die beiden Fenster beginnen auf
