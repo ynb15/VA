@@ -1374,3 +1374,27 @@ Standzeit.** Der Renderer meldet jedes weggelassene Wort auf der Konsole.
 die Nachbar-Einblendung angehängt statt weggeworfen.
 
 → betrifft: content-*, alle Short-Agenten
+
+---
+
+## 06.11. — bei fremdem Material steht ein zweites Logo im Bild
+
+**Sein Befund:** *„das Logo von The Garden ist die ganze Zeit da auch mit
+drin. Also da sind plötzlich zwei Logos drin."*
+
+Eine fremde Produktion brennt ihr eigenes Wasserzeichen ins Bild. Bei The
+Garden steht es **unten links bei Quelle x 90–330, y 840–1000** und wechselt
+zwischen dem Schriftzug und einem kleinen „g". Der 9:16-Ausschnitt der
+**Totale** (`152:0:608:1080`) enthielt es; die **Nahaufnahmen** (Kasten ab
+x = 404) nicht.
+
+**Also: bei fremdem Material vor dem Rendern prüfen, ob ein Wasserzeichen im
+Ausschnitt liegt** — und wenn ja, enger schneiden, bis es draußen ist. Hier
+`253:120:405:720`: oben bei y = 120 angesetzt, bei y = 840 beendet, also
+oberhalb des Logos.
+
+**Der Preis gehört dazugesagt:** die Totale wird dann aus 405×720 auf
+2160×3840 gerechnet, 5,3-fach statt 3,6-fach — sie ist sichtbar weicher als
+die Nahaufnahmen daneben.
+
+→ betrifft: content-*, alle Short-Agenten, youtube-manager

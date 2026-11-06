@@ -1,7 +1,7 @@
 {
  "name": "Gastauftritt The Garden - Workaholism wird sozial belohnt",
  "datei": "YNB @ The Garden Workaholism.mp4",
- "stand": "2026-11-06 - erste Fassung, Tempo 1,15, ohne Musik",
+ "stand": "2026-11-06 - Tempo 1,1, Totale enger auf ihn",
  "seine_ansage": "'Naechster Short:' - dazu die Stelle im Wortlaut, von 'And I came to realize as of right now' bis 'the more praise you get.'",
  "wer_spricht": "Erst er, dann Drews lange Frage (rund 40 s), dann wieder er.",
  "quelle": {
@@ -36,14 +36,22 @@
  },
  "bild": {
   "ausgabe": "2160x3840",
-  "tempo": 1.15,
+  "tempo": 1.1,
   "look": "preset",
   "worte_je_einblendung": 3,
   "tiefer_px": 120,
   "lippe": 1267,
   "logo_breite_px": 1400,
   "logo_hoehe": 0.877,
-  "eine_lippenhoehe": "Gemessen 1165 / 1207 / 1267; auf 1267 vereinheitlicht (8 von 12 Einstellungen)."
+  "eine_lippenhoehe": "Gemessen 1165 / 1207 / 1267; auf 1267 vereinheitlicht (8 von 12 Einstellungen).",
+  "totale_enger": {
+   "kasten": "253:120:405:720",
+   "warum": "Seine Ansage vom 06.11.: 'die totale auf jeden Fall auch weiter an mich ranzoomen, weil du siehst ja, dass Logo von The Garden die ganze Zeit da auch mit drin ist. Also da sind ploetzlich zwei Logos drin.'",
+   "gemessen": "The Gardens Wasserzeichen steht unten links bei Quelle x 90-330, y 840-1000 - es wechselt zwischen dem Schriftzug 'the GARDEN' (y 910-1000) und dem kleinen 'g' (y 840-920). Der alte Kasten 152:0:608:1080 enthielt beides.",
+   "warum_dieser_kasten": "Oben bei y=120 angesetzt und bei y=840 beendet, also oberhalb des Logos; Breite 405 = 9:16 zu 720. An acht Stellen ueber beide Totalen geprueft, kein Rest des Logos.",
+   "preis": "Die Totale wird aus 405x720 auf 2160x3840 gerechnet - 5,3-fach statt 3,6-fach bei den Nahaufnahmen. Sie ist sichtbar weicher.",
+   "nur_die_totale": "Die Nahaufnahmen (Kasten ab x=404) enthalten das Logo ohnehin nicht und bleiben unveraendert."
+  }
  },
  "einblendungen": {
   "quelle": "video/shorts/garden-workaholism.cues.json",
@@ -62,9 +70,15 @@
  },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
  "laenge_s": {
-  "hauptteil": 109.73,
+  "hauptteil": 67.37,
   "outro": 4.21,
-  "gesamt": 113.98
+  "gesamt": 71.61
  },
- "zu_bedenken": "113,98 s sind knapp zwei Minuten, davon rund 40 s Drews Frage. Bei Tempo 1,25 waeren es 105 s. Ihm gemeldet."
+ "zu_bedenken": "113,98 s sind knapp zwei Minuten, davon rund 40 s Drews Frage. Bei Tempo 1,25 waeren es 105 s. Ihm gemeldet.",
+ "aenderungen_06_11_zwei": {
+  "seine_kuerzung": "Heraus: 'For sure. Yeah.' (Fenster 52,0-53,9667) und Drews ganze Frage samt 'Yeah, to touch on what you said previously' (69,6-119,7). Von 3784 auf 2222 Bilder.",
+  "beide_naehte_unsichtbar": "41,8667 (Unterschied 64,4) und 57,4667 (72,1), beide gegen Ruhepegel 0,6 - der Master setzt dort selbst einen Kamerawechsel.",
+  "eine_einblendung_von_hand_geloescht": "'LIKE YOU,' stand noch im Bild, obwohl der Ton an der Naht schon weg war.",
+  "nicht_geschnitten": "'You said that' - er hat es in seiner Fassung weggelassen, aber den Stotterer 'You uh you wrote' stehen gelassen. Als Tippkuerzung gelesen, nicht als Ansage; raus waere es ein 0,6-s-Sprung in der Nahaufnahme. Ihm gemeldet."
+ }
 }

@@ -1,5 +1,5 @@
 {
- "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/garden2/clip.mp4",
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/garden2/clip3.mp4",
  "groesse": [
   1920,
   1080
@@ -8,81 +8,53 @@
  "einstellungen": [
   {
    "layout": "einzel",
-   "kasten": "740:0:608:1080",
-   "lippe": 1267,
-   "start": 0.0,
-   "ende": 0.7666666666666667,
-   "tot": false,
-   "bewegung_x": 0.544,
-   "mitte": 0.54,
-   "masse": 4.56
-  },
-  {
-   "layout": "einzel",
    "kasten": "464:0:608:1080",
    "lippe": 1267,
-   "start": 0.7666666666666667,
-   "ende": 20.733333333333334,
-   "tot": false,
-   "bewegung_x": 0.4,
-   "mitte": 0.5,
-   "masse": 2.82
+   "start": 0.0,
+   "ende": 2.433333333333333,
+   "tot": false
   },
   {
    "layout": "einzel",
-   "kasten": "152:0:608:1080",
+   "kasten": "253:120:405:720",
    "lippe": 1267,
-   "start": 20.733333333333334,
-   "ende": 32.266666666666666,
+   "start": 2.433333333333333,
+   "ende": 13.966666666666667,
    "tot": false,
-   "bewegung_x": 0.237,
-   "mitte": 0.25,
-   "masse": 1.62
+   "hinweis": "Totale, enger auf ihn - sonst steht The Gardens Logo mit im Bild (seine Ansage 06.11.)"
   },
   {
    "layout": "einzel",
    "kasten": "764:0:608:1080",
    "lippe": 1267,
-   "start": 32.266666666666666,
-   "ende": 33.766666666666666,
-   "tot": false,
-   "bewegung_x": 0.556,
-   "mitte": 0.53,
-   "masse": 1.2
+   "start": 13.966666666666667,
+   "ende": 15.466666666666667,
+   "tot": false
   },
   {
    "layout": "einzel",
    "kasten": "404:0:608:1080",
    "lippe": 1267,
-   "start": 33.766666666666666,
-   "ende": 53.766666666666666,
-   "tot": false,
-   "bewegung_x": 0.369,
-   "mitte": 0.48,
-   "masse": 2.58
+   "start": 15.466666666666667,
+   "ende": 35.46666666666667,
+   "tot": false
   },
   {
    "layout": "einzel",
-   "kasten": "152:0:608:1080",
+   "kasten": "253:120:405:720",
    "lippe": 1267,
-   "start": 53.766666666666666,
-   "ende": 65.73333333333333,
+   "start": 35.46666666666667,
+   "ende": 47.43333333333333,
    "tot": false,
-   "bewegung_x": 0.719,
-   "mitte": 0.22,
-   "masse": 1.95,
-   "hinweis": "Totale, Ausschnitt auf IHN statt auf Drew - seine Ansage vom 06.11."
+   "hinweis": "Totale, enger auf ihn - sonst steht The Gardens Logo mit im Bild (seine Ansage 06.11.)"
   },
   {
    "layout": "einzel",
    "kasten": "452:0:608:1080",
    "lippe": 1267,
-   "start": 65.73333333333333,
-   "ende": 85.97,
-   "tot": false,
-   "bewegung_x": 0.394,
-   "mitte": 0.49,
-   "masse": 1.71
+   "start": 47.43333333333333,
+   "ende": 67.5,
+   "tot": false
   }
  ]
 }

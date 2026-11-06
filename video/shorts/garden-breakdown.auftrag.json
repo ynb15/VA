@@ -1,7 +1,7 @@
 {
  "name": "Gastauftritt The Garden - das Jahr, in dem alles zusammenbrach",
  "datei": "YNB @ The Garden Breakdown (Moms Got Work).mp4",
- "stand": "2026-11-06 - zweite Fassung: Totale auf ihn, Mom's Got Work drunter",
+ "stand": "2026-11-06 - Tempo 1,1, Totale enger auf ihn",
  "seine_ansage": "'jetzt lass uns zurueckgehen zu dem Podcast, den ich gemacht habe mit The Garden. Ich habe dir jetzt hier mal eine Stelle rausgeschrieben, mit der du einen Short schneiden kannst' - dazu die Stelle im Wortlaut.",
  "wer_spricht": "Er selbst, durchgehend. Er ist hier der GAST, Drew Korf ist der Gastgeber.",
  "quelle": {
@@ -37,7 +37,7 @@
  },
  "bild": {
   "ausgabe": "2160x3840",
-  "tempo": 1.15,
+  "tempo": 1.1,
   "look": "preset",
   "worte_je_einblendung": 3,
   "tiefer_px": 120,
@@ -54,7 +54,15 @@
    "drew_seite": "1076:0:608:1080",
    "ynb_nah_3": "452:0:608:1080"
   },
-  "zwoelf_sekunden_auf_drew": "Von Clipzeit 53,77 bis 65,73 zeigt der Master DREW, waehrend er 'I lost everything ... suicidal for days, weeks, months' spricht. Das ist deren Schnitt, nicht meiner. Ihm gemeldet; auf Wunsch lege ich den Ausschnitt dort auf ihn um."
+  "zwoelf_sekunden_auf_drew": "Von Clipzeit 53,77 bis 65,73 zeigt der Master DREW, waehrend er 'I lost everything ... suicidal for days, weeks, months' spricht. Das ist deren Schnitt, nicht meiner. Ihm gemeldet; auf Wunsch lege ich den Ausschnitt dort auf ihn um.",
+  "totale_enger": {
+   "kasten": "253:120:405:720",
+   "warum": "Seine Ansage vom 06.11.: 'die totale auf jeden Fall auch weiter an mich ranzoomen, weil du siehst ja, dass Logo von The Garden die ganze Zeit da auch mit drin ist. Also da sind ploetzlich zwei Logos drin.'",
+   "gemessen": "The Gardens Wasserzeichen steht unten links bei Quelle x 90-330, y 840-1000 - es wechselt zwischen dem Schriftzug 'the GARDEN' (y 910-1000) und dem kleinen 'g' (y 840-920). Der alte Kasten 152:0:608:1080 enthielt beides.",
+   "warum_dieser_kasten": "Oben bei y=120 angesetzt und bei y=840 beendet, also oberhalb des Logos; Breite 405 = 9:16 zu 720. An acht Stellen ueber beide Totalen geprueft, kein Rest des Logos.",
+   "preis": "Die Totale wird aus 405x720 auf 2160x3840 gerechnet - 5,3-fach statt 3,6-fach bei den Nahaufnahmen. Sie ist sichtbar weicher.",
+   "nur_die_totale": "Die Nahaufnahmen (Kasten ab x=404) enthalten das Logo ohnehin nicht und bleiben unveraendert."
+  }
  },
  "einblendungen": {
   "quelle": "video/shorts/garden-breakdown.cues.json",
@@ -73,9 +81,9 @@
  },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
  "laenge_s": {
-  "hauptteil": 74.63,
+  "hauptteil": 61.4,
   "outro": 4.21,
-  "gesamt": 78.88
+  "gesamt": 65.65
  },
  "geprueft": {
   "ortscheck": "sauber",
@@ -87,5 +95,9 @@
   "totale_auf_ihn": "Clipzeit 53,7667-65,7333 (11,97 s) ist eine TOTALE, in der beide sitzen - Drews Cutter hatte nur den Ausschnitt rechts auf Drew. Kasten von 1076:0:608:1080 auf 152:0:608:1080 geschoben, derselbe Ausschnitt wie in der anderen Totale des Shorts (20,73-32,27). Er ist dort jetzt durchgehend im Bild, waehrend er 'that train wreckage ... forced me to stop entirely' spricht.",
   "was_nicht_geht": "Clipzeit 0-0,7667 und 32,2667-33,7667 sind NAHAUFNAHMEN VON DREW ALLEIN - er ist in diesen Bildern nicht drin, es gibt keinen Ausschnitt, auf den man gehen koennte. Spaeter anzufangen kostet 'And you know, that'; die 1,5 s in der Mitte liegen auf '...that we had created'. Ihm gemeldet, mit dem Angebot, das Bild dort aus der Totale zu ueberbruecken (Lippen passen dann 1,5 s nicht).",
   "zusammen": "Drew ist jetzt noch 2,27 s von 85,8 s im Bild statt 14,24 s."
+ },
+ "aenderungen_06_11_zwei": {
+  "neuer_anfang": "Fenster 39,4 = Bild 1182, bei \"there's so much shit that happened after the Vipassana\". Der Schnitt liegt in digitaler Stille der fremden Produktion (39,32-39,58). 2025 Bilder.",
+  "seine_ansage_dazu": "Er hatte das Skript ab dieser Zeile eingefuegt; ich hatte das als Zitat gelesen statt als Ansage und nur die zwei Saetze danach umgesetzt. Sein Einwand: 'Ich habe dir doch just gerade vorhin gesagt ... Es sollte anfangen mit There's so much shit that happened after.'"
  }
 }
