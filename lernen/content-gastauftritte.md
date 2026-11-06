@@ -1398,3 +1398,29 @@ oberhalb des Logos.
 die Nahaufnahmen daneben.
 
 → betrifft: content-*, alle Short-Agenten, youtube-manager
+
+---
+
+## 06.11. — „suicidal" wird in der Einblendung entschärft, der Ton bleibt
+
+**Seine Ansage, ausdrücklich zum Weitergeben:** *„wir müssen einmal suicidal
+zensieren, zumindest im Text. Und das kannst du gerne auch an die anderen
+Agenten weitergeben."*
+
+**Umgesetzt, wo es automatisch greift:** in `video/korrekturen.txt` stehen
+jetzt `suicidal -> suic*dal` und `suicide -> suic*de`. Die Datei wird von
+`shorts-render.py` bei jedem Lauf auf die Whisper-Wörter angewandt — damit
+gilt es ab sofort für **jeden** Short, ohne dass jemand daran denken muss.
+Wer mit `--cues-in` eine fertige Einblendungsdatei übergibt, umgeht die
+Korrekturliste und muss es von Hand setzen.
+
+**Nur der Text.** Der Ton bleibt unverändert; er hat „zumindest im Text"
+gesagt. Wenn später auch der Ton gepiept werden soll, ist das eine zweite
+Ansage.
+
+Zur Einordnung: die Kraftausdrücke in denselben Shorts („fucking", „shit")
+stehen weiter ungepiept im Bild — er hat sie nie beanstandet. Es geht hier
+nicht um Anstand, sondern um ein Wort, an dem YouTube die Reichweite
+beschneidet.
+
+→ betrifft: content-*, alle Short-Agenten, youtube-manager, thumbnails

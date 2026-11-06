@@ -82,3 +82,10 @@ with markosi -> with Craig Makhosi
 # Dieselbe Stelle, medium verschluckt das "the": "who have the most touch
 # points" (das kleine Modell hatte es richtig).
 have most touch -> have the most touch
+
+# 06.11.2026, seine Ansage: "wir muessen einmal suicidal zensieren, zumindest
+# im Text. Und das kannst du gerne auch an die anderen Agenten weitergeben."
+# Gilt ab sofort fuer jeden Short - der TON bleibt unveraendert, nur die
+# Einblendung wird entschaerft.
+suicidal -> suic*dal
+suicide -> suic*de
