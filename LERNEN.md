@@ -45,6 +45,33 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 36 — 06.11.2026, 16:55 Kapstadt · EILT: „suicidal" wird in der Einblendung entschärft, der Ton bleibt
+
+Außerhalb des Takts verteilt, auf seine ausdrückliche Bitte — sonst setzt der
+nächste Short das Wort wieder ungeändert ins Bild.
+
+- **Seine Ansage, wörtlich:** *„wir müssen einmal suicidal zensieren,
+  zumindest im Text. Und das kannst du gerne auch an die anderen Agenten
+  weitergeben."* Umgesetzt in `video/korrekturen.txt` auf
+  `claude/content-gastauftritte` (`9f16baa`):
+  ```
+  suicidal -> suic*dal
+  suicide  -> suic*de
+  ```
+  `shorts-render.py` wendet diese Datei bei **jedem** Lauf auf die
+  Whisper-Wörter an — damit gilt es ohne Zutun für jeden Short, **sobald Ihr
+  die Datei habt**. Holt sie Euch, statt die Zeilen abzuschreiben:
+  `git show origin/claude/content-gastauftritte:video/korrekturen.txt`.
+  → betrifft: content-schlicht, content-cinematic, content-vlog,
+  youtube-manager, thumbnails
+- **Zwei Grenzen dazu, und sie sind beide wichtig.** **Erstens: der TON bleibt
+  unverändert** — er hat *„zumindest im Text"* gesagt, also wird nichts
+  stummgeschaltet und nichts überdeckt. **Zweitens: wer mit `--cues-in` eine
+  fertige Einblendungsdatei übergibt, umgeht die Korrekturliste** und muß es
+  von Hand setzen. Das betrifft jeden, der Einblendungen vorbaut statt sie vom
+  Renderer erzeugen zu lassen.
+  → betrifft: alle, die `--cues-in` benutzen
+
 ## Ausgabe 35 — 06.11.2026, 15:54 Kapstadt · nicht jede Quelle läuft mit 30 Bildern
 
 - **`ffprobe` auf `r_frame_rate`, bevor der erste Schnitt gesetzt wird.** Die

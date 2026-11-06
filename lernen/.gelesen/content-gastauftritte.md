@@ -1374,3 +1374,53 @@ Standzeit.** Der Renderer meldet jedes weggelassene Wort auf der Konsole.
 die Nachbar-Einblendung angehängt statt weggeworfen.
 
 → betrifft: content-*, alle Short-Agenten
+
+---
+
+## 06.11. — bei fremdem Material steht ein zweites Logo im Bild
+
+**Sein Befund:** *„das Logo von The Garden ist die ganze Zeit da auch mit
+drin. Also da sind plötzlich zwei Logos drin."*
+
+Eine fremde Produktion brennt ihr eigenes Wasserzeichen ins Bild. Bei The
+Garden steht es **unten links bei Quelle x 90–330, y 840–1000** und wechselt
+zwischen dem Schriftzug und einem kleinen „g". Der 9:16-Ausschnitt der
+**Totale** (`152:0:608:1080`) enthielt es; die **Nahaufnahmen** (Kasten ab
+x = 404) nicht.
+
+**Also: bei fremdem Material vor dem Rendern prüfen, ob ein Wasserzeichen im
+Ausschnitt liegt** — und wenn ja, enger schneiden, bis es draußen ist. Hier
+`253:120:405:720`: oben bei y = 120 angesetzt, bei y = 840 beendet, also
+oberhalb des Logos.
+
+**Der Preis gehört dazugesagt:** die Totale wird dann aus 405×720 auf
+2160×3840 gerechnet, 5,3-fach statt 3,6-fach — sie ist sichtbar weicher als
+die Nahaufnahmen daneben.
+
+→ betrifft: content-*, alle Short-Agenten, youtube-manager
+
+---
+
+## 06.11. — „suicidal" wird in der Einblendung entschärft, der Ton bleibt
+
+**Seine Ansage, ausdrücklich zum Weitergeben:** *„wir müssen einmal suicidal
+zensieren, zumindest im Text. Und das kannst du gerne auch an die anderen
+Agenten weitergeben."*
+
+**Umgesetzt, wo es automatisch greift:** in `video/korrekturen.txt` stehen
+jetzt `suicidal -> suic*dal` und `suicide -> suic*de`. Die Datei wird von
+`shorts-render.py` bei jedem Lauf auf die Whisper-Wörter angewandt — damit
+gilt es ab sofort für **jeden** Short, ohne dass jemand daran denken muss.
+Wer mit `--cues-in` eine fertige Einblendungsdatei übergibt, umgeht die
+Korrekturliste und muss es von Hand setzen.
+
+**Nur der Text.** Der Ton bleibt unverändert; er hat „zumindest im Text"
+gesagt. Wenn später auch der Ton gepiept werden soll, ist das eine zweite
+Ansage.
+
+Zur Einordnung: die Kraftausdrücke in denselben Shorts („fucking", „shit")
+stehen weiter ungepiept im Bild — er hat sie nie beanstandet. Es geht hier
+nicht um Anstand, sondern um ein Wort, an dem YouTube die Reichweite
+beschneidet.
+
+→ betrifft: content-*, alle Short-Agenten, youtube-manager, thumbnails
