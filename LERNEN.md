@@ -45,6 +45,56 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 35 — 06.11.2026, 15:54 Kapstadt · nicht jede Quelle läuft mit 30 Bildern
+
+- **`ffprobe` auf `r_frame_rate`, bevor der erste Schnitt gesetzt wird.** Die
+  Garden-Folge (seine Kopie von Ep_58) läuft mit **24000/1001 = 23,976
+  Bildern/s**; Sutcliffe, Aaronson und Paddock hatten alle 30. **Das bricht
+  die ganze Kette** — `schnitt_bauen.py`, `schnittgrenzen.py` und der Renderer
+  rechnen mit 30, bei 23,976 läge jede Einstellungsgrenze zwischen zwei
+  Bildern. Weicht die Rate ab, das Fenster **einmal** sauber auf 30 bringen
+  (`-r 30 -c:v libx264 -crf 14 -preset medium`) und ab da normal
+  weiterarbeiten: eine Generation mehr, dafür keine halben Bilder. Als Beleg
+  für die Regel von heute morgen: **alle sechs** Grenzen dieses Shorts lagen
+  **2 bis 5 Bilder** neben der Schätzung.
+  → betrifft: alle Short-Agenten
+- **Bevor Du meldest, eine Stelle liege auf dem Falschen: sieh nach, ob es
+  eine Totale ist.** Seine Ansage zum Garden-Short: *„stell sicher, dass die
+  Kamera wirklich auf mir bleibt."* Von **14,24 von 85,8 s** auf dem Gastgeber
+  waren **11,97 s gar kein Kameraproblem, sondern ein Ausschnittsproblem** —
+  eine Totale mit beiden am Tisch, und `bildausschnitt.py` hatte den
+  608-px-Kasten dorthin gelegt, wo die meiste Bewegung war. Kasten von 1076
+  auf **152** geschoben, und er ist durchgehend im Bild. Nur **2,27 s** waren
+  echte Nahaufnahmen des Gastgebers und nicht zu retten. **In der Totale ist
+  es eine Ausschnittsfrage, in der Nahaufnahme eine Materialfrage** — zwei
+  verschiedene Antworten an ihn.
+  → betrifft: alle Short-Agenten
+- **Die Weglass-Regel für Einzelwörter wirft Inhalt weg — lies die Meldungen
+  des Renderers.** `shorts-render.py` läßt eine Einblendung aus **einem** Wort
+  weg, wenn sie unter 0,25 s steht, und unterscheidet dabei nicht zwischen
+  Füller und Inhalt. In einem Lauf heute nahm sie drei Wörter: `Yeah.`
+  (harmlos), **`runs`** und **`personal`** — im Bild stand dann *„a machine
+  that successfully"* statt *„a machine that **runs** successfully"*. Im
+  Paddock-Short war es `first` aus *„one of my **first** psychedelic
+  experiences"*. **Das weggelassene Wort gehört an die Nachbar-Einblendung
+  angehängt, nicht weggeworfen.**
+  → betrifft: alle Short-Agenten
+- **`lippe` ist eine Zeile im FERTIGEN Bild, nicht im Ausschnitt.** Der
+  Renderer setzt den Wert direkt ins 1080×1920-Bild. Bei einem 900×1600-
+  Ausschnitt ist der Faktor 1,2 und ein im Ausschnitt gemessenes Kinn plus 200
+  paßte **zufällig**; bei einer Quelle, die schon **2160×3840** ist — seine
+  eigene Schnittfassung, in doppelter Größe zurückgeliefert — ist der Faktor
+  0,5, und dieselbe Rechnung schob die Schrift an den unteren Bildrand oder
+  ganz heraus. **Regel: Kinn im fertigen Bild messen** (Quellhöhe mal
+  1920/Kastenhöhe), **dann rund 45 px dazu**. An der von ihm abgenommenen
+  Fassung nachgerechnet: „Meaningful" lag bei Kinn + 38 px.
+  → betrifft: content-*
+- **Eine zurückgelieferte Schnittfassung ist schon fertig gegraded.** Wer sie
+  noch einmal durch den Renderer schickt, legt den Look ein zweites Mal drauf.
+  **`--look aus`**, und Logo und Outro nicht noch einmal mitgeben — die stecken
+  schon im Bild.
+  → betrifft: content-*
+
 ## Ausgabe 34 — 06.11.2026, 06:40 Kapstadt · „episch" heißt Aufbau, nicht Dichte — und vier Messungen, die ein Zittern erklären
 
 Ein voller Tag an zwei Zweigen. Sechs Einträge, jeder mit einer Zahl oder
