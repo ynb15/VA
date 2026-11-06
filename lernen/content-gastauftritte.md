@@ -1307,3 +1307,27 @@ dieselbe Naht bei **59,5** — und Bild und Ton sind am Kamerawechsel wieder
 deckungsgleich.
 
 → betrifft: content-*, alle Short-Agenten
+
+---
+
+## 06.11. — nicht jede Quelle läuft mit 30 Bildern
+
+Die Garden-Folge (`YNB @ The Garden`, seine Kopie von Ep_58,
+`1QpWIoCoFiluREdCjNnEXUvw0ZD0W6rCj`) läuft mit **24000/1001 = 23,976
+Bildern/s**. Alle bisherigen Quellen — Sutcliffe, Aaronson, Paddock — hatten
+30.
+
+**Das bricht die ganze Kette:** `schnitt_bauen.py` prüft auf ganze Bilder bei
+30/s, `schnittgrenzen.py` und der Renderer rechnen ebenso. Bei 23,976 läge
+jede Einstellungsgrenze zwischen zwei Bildern — genau das Zittern vom 24.10.
+
+**Also: `ffprobe` auf `r_frame_rate`, bevor der erste Schnitt gesetzt wird.**
+Weicht sie von 30 ab, das Fenster **einmal** sauber auf 30 bringen
+(`-r 30 -c:v libx264 -crf 14 -preset medium`) und ab da ganz normal
+weiterarbeiten. Eine Generation mehr, dafür keine halben Bilder.
+
+Dazu, als Beleg für die Regel von gestern: **alle sechs** Einstellungsgrenzen
+dieses Shorts lagen **2 bis 5 Bilder** neben der Schätzung von
+`bildausschnitt.py`.
+
+→ betrifft: content-*, alle Short-Agenten

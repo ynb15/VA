@@ -1,0 +1,1556 @@
+[
+ {
+  "start": 0.0,
+  "end": 0.52,
+  "text": "And, you know,",
+  "woerter": [
+   {
+    "t": "And,",
+    "start": 0.0,
+    "end": 0.22,
+    "seg": 0
+   },
+   {
+    "t": "you",
+    "start": 0.34,
+    "end": 0.34,
+    "seg": 0
+   },
+   {
+    "t": "know,",
+    "start": 0.34,
+    "end": 0.42,
+    "seg": 0
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 0.52,
+  "end": 1.08,
+  "text": "that experience",
+  "woerter": [
+   {
+    "t": "that",
+    "start": 0.52,
+    "end": 0.72,
+    "seg": 0
+   },
+   {
+    "t": "experience",
+    "start": 0.72,
+    "end": 1.08,
+    "seg": 0
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 1.08,
+  "end": 1.7,
+  "text": "really,",
+  "woerter": [
+   {
+    "t": "really,",
+    "start": 1.08,
+    "end": 1.7,
+    "seg": 0
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 2.28,
+  "end": 4.6,
+  "text": "instead of just",
+  "woerter": [
+   {
+    "t": "instead",
+    "start": 2.28,
+    "end": 2.56,
+    "seg": 0
+   },
+   {
+    "t": "of",
+    "start": 2.56,
+    "end": 3.38,
+    "seg": 0
+   },
+   {
+    "t": "just",
+    "start": 3.38,
+    "end": 4.6,
+    "seg": 0
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 4.6,
+  "end": 6.34,
+  "text": "taking a break",
+  "woerter": [
+   {
+    "t": "taking",
+    "start": 4.6,
+    "end": 5.96,
+    "seg": 0
+   },
+   {
+    "t": "a",
+    "start": 5.96,
+    "end": 6.18,
+    "seg": 0
+   },
+   {
+    "t": "break",
+    "start": 6.18,
+    "end": 6.34,
+    "seg": 0
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 6.34,
+  "end": 6.76,
+  "text": "for like",
+  "woerter": [
+   {
+    "t": "for",
+    "start": 6.34,
+    "end": 6.52,
+    "seg": 0
+   },
+   {
+    "t": "like",
+    "start": 6.52,
+    "end": 6.76,
+    "seg": 0
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 6.76,
+  "end": 7.04,
+  "text": "one or",
+  "woerter": [
+   {
+    "t": "one",
+    "start": 6.76,
+    "end": 6.9,
+    "seg": 1
+   },
+   {
+    "t": "or",
+    "start": 6.9,
+    "end": 7.04,
+    "seg": 1
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 7.04,
+  "end": 7.64,
+  "text": "two weeks,",
+  "woerter": [
+   {
+    "t": "two",
+    "start": 7.04,
+    "end": 7.18,
+    "seg": 1
+   },
+   {
+    "t": "weeks,",
+    "start": 7.18,
+    "end": 7.56,
+    "seg": 1
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 7.78,
+  "end": 8.58,
+  "text": "I ended up",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 7.78,
+    "end": 8.02,
+    "seg": 1
+   },
+   {
+    "t": "ended",
+    "start": 8.02,
+    "end": 8.26,
+    "seg": 1
+   },
+   {
+    "t": "up",
+    "start": 8.26,
+    "end": 8.58,
+    "seg": 1
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 8.58,
+  "end": 9.64,
+  "text": "taking a break,",
+  "woerter": [
+   {
+    "t": "taking",
+    "start": 8.58,
+    "end": 8.94,
+    "seg": 1
+   },
+   {
+    "t": "a",
+    "start": 8.94,
+    "end": 9.24,
+    "seg": 1
+   },
+   {
+    "t": "break,",
+    "start": 9.24,
+    "end": 9.64,
+    "seg": 1
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 10.26,
+  "end": 11.06,
+  "text": "not only from",
+  "woerter": [
+   {
+    "t": "not",
+    "start": 10.26,
+    "end": 10.54,
+    "seg": 1
+   },
+   {
+    "t": "only",
+    "start": 10.54,
+    "end": 10.76,
+    "seg": 1
+   },
+   {
+    "t": "from",
+    "start": 10.76,
+    "end": 11.06,
+    "seg": 1
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 11.06,
+  "end": 11.92,
+  "text": "business, but",
+  "woerter": [
+   {
+    "t": "business,",
+    "start": 11.06,
+    "end": 11.58,
+    "seg": 1
+   },
+   {
+    "t": "but",
+    "start": 11.72,
+    "end": 11.92,
+    "seg": 1
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 11.92,
+  "end": 12.18,
+  "text": "from",
+  "woerter": [
+   {
+    "t": "from",
+    "start": 11.92,
+    "end": 12.18,
+    "seg": 1
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 12.18,
+  "end": 12.92,
+  "text": "life for a",
+  "woerter": [
+   {
+    "t": "life",
+    "start": 12.18,
+    "end": 12.5,
+    "seg": 2
+   },
+   {
+    "t": "for",
+    "start": 12.5,
+    "end": 12.8,
+    "seg": 2
+   },
+   {
+    "t": "a",
+    "start": 12.8,
+    "end": 12.92,
+    "seg": 2
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 12.92,
+  "end": 13.64,
+  "text": "whole fucking",
+  "woerter": [
+   {
+    "t": "whole",
+    "start": 12.92,
+    "end": 13.22,
+    "seg": 2
+   },
+   {
+    "t": "fucking",
+    "start": 13.22,
+    "end": 13.64,
+    "seg": 2
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 13.64,
+  "end": 14.24,
+  "text": "year,",
+  "woerter": [
+   {
+    "t": "year,",
+    "start": 13.64,
+    "end": 14.06,
+    "seg": 2
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 14.48,
+  "end": 15.22,
+  "text": "like the whole",
+  "woerter": [
+   {
+    "t": "like",
+    "start": 14.48,
+    "end": 14.68,
+    "seg": 2
+   },
+   {
+    "t": "the",
+    "start": 14.68,
+    "end": 14.9,
+    "seg": 2
+   },
+   {
+    "t": "whole",
+    "start": 14.9,
+    "end": 15.22,
+    "seg": 2
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 15.22,
+  "end": 16.36,
+  "text": "year, 2023,",
+  "woerter": [
+   {
+    "t": "year,",
+    "start": 15.22,
+    "end": 15.56,
+    "seg": 2
+   },
+   {
+    "t": "2023,",
+    "start": 15.7,
+    "end": 16.36,
+    "seg": 2
+   }
+  ],
+  "grund": "pause"
+ },
+ {
+  "start": 16.98,
+  "end": 17.14,
+  "text": "I mean,",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 16.98,
+    "end": 17.0,
+    "seg": 2
+   },
+   {
+    "t": "mean,",
+    "start": 17.0,
+    "end": 17.14,
+    "seg": 2
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 17.14,
+  "end": 17.4,
+  "text": "like there",
+  "woerter": [
+   {
+    "t": "like",
+    "start": 17.14,
+    "end": 17.28,
+    "seg": 2
+   },
+   {
+    "t": "there",
+    "start": 17.28,
+    "end": 17.4,
+    "seg": 2
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 17.4,
+  "end": 18.3,
+  "text": "was like,",
+  "woerter": [
+   {
+    "t": "was",
+    "start": 17.4,
+    "end": 17.54,
+    "seg": 3
+   },
+   {
+    "t": "like,",
+    "start": 17.54,
+    "end": 18.3,
+    "seg": 3
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 18.58,
+  "end": 19.2,
+  "text": "there's so much",
+  "woerter": [
+   {
+    "t": "there's",
+    "start": 18.58,
+    "end": 18.74,
+    "seg": 3
+   },
+   {
+    "t": "so",
+    "start": 18.74,
+    "end": 18.92,
+    "seg": 3
+   },
+   {
+    "t": "much",
+    "start": 18.92,
+    "end": 19.2,
+    "seg": 3
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 19.2,
+  "end": 19.76,
+  "text": "shit that",
+  "woerter": [
+   {
+    "t": "shit",
+    "start": 19.2,
+    "end": 19.4,
+    "seg": 3
+   },
+   {
+    "t": "that",
+    "start": 19.4,
+    "end": 19.76,
+    "seg": 3
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 19.76,
+  "end": 20.48,
+  "text": "happened after",
+  "woerter": [
+   {
+    "t": "happened",
+    "start": 19.76,
+    "end": 19.96,
+    "seg": 3
+   },
+   {
+    "t": "after",
+    "start": 19.96,
+    "end": 20.48,
+    "seg": 3
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 20.48,
+  "end": 21.12,
+  "text": "the Vipassana",
+  "woerter": [
+   {
+    "t": "the",
+    "start": 20.48,
+    "end": 20.64,
+    "seg": 3
+   },
+   {
+    "t": "Vipassana",
+    "start": 20.64,
+    "end": 21.12,
+    "seg": 3
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 21.12,
+  "end": 22.22,
+  "text": "due to",
+  "woerter": [
+   {
+    "t": "due",
+    "start": 21.12,
+    "end": 21.92,
+    "seg": 3
+   },
+   {
+    "t": "to",
+    "start": 21.92,
+    "end": 22.22,
+    "seg": 3
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 22.22,
+  "end": 24.46,
+  "text": "my inability",
+  "woerter": [
+   {
+    "t": "my",
+    "start": 22.22,
+    "end": 23.76,
+    "seg": 4
+   },
+   {
+    "t": "inability",
+    "start": 23.76,
+    "end": 24.46,
+    "seg": 4
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 24.46,
+  "end": 26.62,
+  "text": "really to",
+  "woerter": [
+   {
+    "t": "really",
+    "start": 24.46,
+    "end": 25.34,
+    "seg": 4
+   },
+   {
+    "t": "to",
+    "start": 25.34,
+    "end": 26.62,
+    "seg": 4
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 26.62,
+  "end": 28.12,
+  "text": "function in",
+  "woerter": [
+   {
+    "t": "function",
+    "start": 26.62,
+    "end": 27.44,
+    "seg": 4
+   },
+   {
+    "t": "in",
+    "start": 27.44,
+    "end": 28.12,
+    "seg": 4
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 28.12,
+  "end": 29.2,
+  "text": "society, in",
+  "woerter": [
+   {
+    "t": "society,",
+    "start": 28.12,
+    "end": 28.72,
+    "seg": 4
+   },
+   {
+    "t": "in",
+    "start": 29.02,
+    "end": 29.2,
+    "seg": 4
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 29.2,
+  "end": 30.82,
+  "text": "our Western",
+  "woerter": [
+   {
+    "t": "our",
+    "start": 29.2,
+    "end": 30.04,
+    "seg": 4
+   },
+   {
+    "t": "Western",
+    "start": 30.04,
+    "end": 30.82,
+    "seg": 4
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 30.82,
+  "end": 31.4,
+  "text": "world that we",
+  "woerter": [
+   {
+    "t": "world",
+    "start": 30.82,
+    "end": 31.1,
+    "seg": 4
+   },
+   {
+    "t": "that",
+    "start": 31.1,
+    "end": 31.26,
+    "seg": 4
+   },
+   {
+    "t": "we",
+    "start": 31.26,
+    "end": 31.4,
+    "seg": 4
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 31.4,
+  "end": 32.0,
+  "text": "had created.",
+  "woerter": [
+   {
+    "t": "had",
+    "start": 31.4,
+    "end": 31.56,
+    "seg": 4
+   },
+   {
+    "t": "created.",
+    "start": 31.56,
+    "end": 32.0,
+    "seg": 4
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 33.68,
+  "end": 34.34,
+  "text": "I lost everything.",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 33.68,
+    "end": 33.68,
+    "seg": 5
+   },
+   {
+    "t": "lost",
+    "start": 33.68,
+    "end": 33.9,
+    "seg": 5
+   },
+   {
+    "t": "everything.",
+    "start": 33.9,
+    "end": 34.34,
+    "seg": 5
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 34.74,
+  "end": 35.44,
+  "text": "I literally lost",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 34.74,
+    "end": 34.74,
+    "seg": 6
+   },
+   {
+    "t": "literally",
+    "start": 34.74,
+    "end": 35.06,
+    "seg": 6
+   },
+   {
+    "t": "lost",
+    "start": 35.06,
+    "end": 35.44,
+    "seg": 6
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 35.44,
+  "end": 36.78,
+  "text": "everything in a",
+  "woerter": [
+   {
+    "t": "everything",
+    "start": 35.44,
+    "end": 36.3,
+    "seg": 6
+   },
+   {
+    "t": "in",
+    "start": 36.3,
+    "end": 36.62,
+    "seg": 6
+   },
+   {
+    "t": "a",
+    "start": 36.62,
+    "end": 36.78,
+    "seg": 6
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 36.78,
+  "end": 37.66,
+  "text": "matter of weeks,",
+  "woerter": [
+   {
+    "t": "matter",
+    "start": 36.78,
+    "end": 36.96,
+    "seg": 6
+   },
+   {
+    "t": "of",
+    "start": 36.96,
+    "end": 37.2,
+    "seg": 6
+   },
+   {
+    "t": "weeks,",
+    "start": 37.2,
+    "end": 37.48,
+    "seg": 6
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 37.66,
+  "end": 38.92,
+  "text": "businesses,",
+  "woerter": [
+   {
+    "t": "businesses,",
+    "start": 37.66,
+    "end": 38.18,
+    "seg": 6
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 38.92,
+  "end": 40.04,
+  "text": "money,",
+  "woerter": [
+   {
+    "t": "money,",
+    "start": 38.92,
+    "end": 39.22,
+    "seg": 7
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 40.04,
+  "end": 41.12,
+  "text": "relationships,",
+  "woerter": [
+   {
+    "t": "relationships,",
+    "start": 40.04,
+    "end": 40.44,
+    "seg": 7
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 41.12,
+  "end": 41.72,
+  "text": "everything.",
+  "woerter": [
+   {
+    "t": "everything.",
+    "start": 41.12,
+    "end": 41.48,
+    "seg": 7
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 42.16,
+  "end": 43.38,
+  "text": "My whole life",
+  "woerter": [
+   {
+    "t": "My",
+    "start": 42.16,
+    "end": 42.34,
+    "seg": 8
+   },
+   {
+    "t": "whole",
+    "start": 42.34,
+    "end": 42.8,
+    "seg": 8
+   },
+   {
+    "t": "life",
+    "start": 42.8,
+    "end": 43.38,
+    "seg": 8
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 43.38,
+  "end": 44.64,
+  "text": "broke apart",
+  "woerter": [
+   {
+    "t": "broke",
+    "start": 43.38,
+    "end": 43.78,
+    "seg": 8
+   },
+   {
+    "t": "apart",
+    "start": 43.78,
+    "end": 44.64,
+    "seg": 8
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 44.64,
+  "end": 45.52,
+  "text": "to the",
+  "woerter": [
+   {
+    "t": "to",
+    "start": 44.64,
+    "end": 45.28,
+    "seg": 8
+   },
+   {
+    "t": "the",
+    "start": 45.28,
+    "end": 45.52,
+    "seg": 8
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 45.52,
+  "end": 46.64,
+  "text": "point where",
+  "woerter": [
+   {
+    "t": "point",
+    "start": 45.52,
+    "end": 45.78,
+    "seg": 8
+   },
+   {
+    "t": "where",
+    "start": 45.78,
+    "end": 46.64,
+    "seg": 8
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 46.64,
+  "end": 48.1,
+  "text": "I was suicidal",
+  "woerter": [
+   {
+    "t": "I",
+    "start": 46.64,
+    "end": 47.36,
+    "seg": 8
+   },
+   {
+    "t": "was",
+    "start": 47.36,
+    "end": 47.64,
+    "seg": 8
+   },
+   {
+    "t": "suicidal",
+    "start": 47.64,
+    "end": 48.1,
+    "seg": 8
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 48.1,
+  "end": 51.64,
+  "text": "for days,",
+  "woerter": [
+   {
+    "t": "for",
+    "start": 48.1,
+    "end": 51.02,
+    "seg": 8
+   },
+   {
+    "t": "days,",
+    "start": 51.02,
+    "end": 51.64,
+    "seg": 8
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 51.64,
+  "end": 52.64,
+  "text": "weeks, months.",
+  "woerter": [
+   {
+    "t": "weeks,",
+    "start": 51.64,
+    "end": 52.18,
+    "seg": 9
+   },
+   {
+    "t": "months.",
+    "start": 52.18,
+    "end": 52.64,
+    "seg": 9
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 56.01,
+  "end": 56.99,
+  "text": "And so that",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 56.01,
+    "end": 56.15,
+    "seg": 10
+   },
+   {
+    "t": "so",
+    "start": 56.15,
+    "end": 56.31,
+    "seg": 10
+   },
+   {
+    "t": "that",
+    "start": 56.31,
+    "end": 56.99,
+    "seg": 10
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 56.99,
+  "end": 58.41,
+  "text": "train wreckage,",
+  "woerter": [
+   {
+    "t": "train",
+    "start": 56.99,
+    "end": 57.17,
+    "seg": 10
+   },
+   {
+    "t": "wreckage,",
+    "start": 57.17,
+    "end": 57.75,
+    "seg": 10
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 58.41,
+  "end": 59.29,
+  "text": "that",
+  "woerter": [
+   {
+    "t": "that",
+    "start": 58.41,
+    "end": 59.29,
+    "seg": 10
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 61.69,
+  "end": 63.53,
+  "text": "experience of",
+  "woerter": [
+   {
+    "t": "experience",
+    "start": 61.69,
+    "end": 62.67,
+    "seg": 10
+   },
+   {
+    "t": "of",
+    "start": 62.67,
+    "end": 63.53,
+    "seg": 10
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 63.53,
+  "end": 64.81,
+  "text": "taking a, like",
+  "woerter": [
+   {
+    "t": "taking",
+    "start": 63.53,
+    "end": 64.11,
+    "seg": 10
+   },
+   {
+    "t": "a,",
+    "start": 64.11,
+    "end": 64.49,
+    "seg": 10
+   },
+   {
+    "t": "like",
+    "start": 64.49,
+    "end": 64.81,
+    "seg": 10
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 64.81,
+  "end": 65.67,
+  "text": "taking a",
+  "woerter": [
+   {
+    "t": "taking",
+    "start": 64.81,
+    "end": 65.41,
+    "seg": 10
+   },
+   {
+    "t": "a",
+    "start": 65.41,
+    "end": 65.67,
+    "seg": 10
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 65.67,
+  "end": 66.15,
+  "text": "break for the",
+  "woerter": [
+   {
+    "t": "break",
+    "start": 65.67,
+    "end": 65.79,
+    "seg": 11
+   },
+   {
+    "t": "for",
+    "start": 65.79,
+    "end": 65.99,
+    "seg": 11
+   },
+   {
+    "t": "the",
+    "start": 65.99,
+    "end": 66.15,
+    "seg": 11
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 66.15,
+  "end": 66.91,
+  "text": "very first time",
+  "woerter": [
+   {
+    "t": "very",
+    "start": 66.15,
+    "end": 66.39,
+    "seg": 11
+   },
+   {
+    "t": "first",
+    "start": 66.39,
+    "end": 66.67,
+    "seg": 11
+   },
+   {
+    "t": "time",
+    "start": 66.67,
+    "end": 66.91,
+    "seg": 11
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 66.91,
+  "end": 67.65,
+  "text": "in life,",
+  "woerter": [
+   {
+    "t": "in",
+    "start": 66.91,
+    "end": 67.09,
+    "seg": 11
+   },
+   {
+    "t": "life,",
+    "start": 67.09,
+    "end": 67.65,
+    "seg": 11
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 69.53,
+  "end": 70.77,
+  "text": "forced me to",
+  "woerter": [
+   {
+    "t": "forced",
+    "start": 69.53,
+    "end": 69.73,
+    "seg": 11
+   },
+   {
+    "t": "me",
+    "start": 69.73,
+    "end": 70.23,
+    "seg": 11
+   },
+   {
+    "t": "to",
+    "start": 70.23,
+    "end": 70.77,
+    "seg": 11
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 70.77,
+  "end": 72.19,
+  "text": "stop entirely.",
+  "woerter": [
+   {
+    "t": "stop",
+    "start": 70.77,
+    "end": 71.25,
+    "seg": 11
+   },
+   {
+    "t": "entirely.",
+    "start": 71.25,
+    "end": 72.19,
+    "seg": 11
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 74.47,
+  "end": 74.81,
+  "text": "And as I",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 74.47,
+    "end": 74.53,
+    "seg": 12
+   },
+   {
+    "t": "as",
+    "start": 74.53,
+    "end": 74.71,
+    "seg": 12
+   },
+   {
+    "t": "I",
+    "start": 74.71,
+    "end": 74.81,
+    "seg": 12
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 74.81,
+  "end": 75.31,
+  "text": "said, I needed",
+  "woerter": [
+   {
+    "t": "said,",
+    "start": 74.81,
+    "end": 74.93,
+    "seg": 12
+   },
+   {
+    "t": "I",
+    "start": 75.07,
+    "end": 75.13,
+    "seg": 12
+   },
+   {
+    "t": "needed",
+    "start": 75.13,
+    "end": 75.31,
+    "seg": 12
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 75.31,
+  "end": 76.19,
+  "text": "a whole fucking",
+  "woerter": [
+   {
+    "t": "a",
+    "start": 75.31,
+    "end": 75.59,
+    "seg": 12
+   },
+   {
+    "t": "whole",
+    "start": 75.59,
+    "end": 75.83,
+    "seg": 12
+   },
+   {
+    "t": "fucking",
+    "start": 75.83,
+    "end": 76.19,
+    "seg": 12
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 76.19,
+  "end": 76.85,
+  "text": "year, dude,",
+  "woerter": [
+   {
+    "t": "year,",
+    "start": 76.19,
+    "end": 76.57,
+    "seg": 12
+   },
+   {
+    "t": "dude,",
+    "start": 76.77,
+    "end": 76.85,
+    "seg": 12
+   }
+  ],
+  "grund": "stille"
+ },
+ {
+  "start": 77.33,
+  "end": 78.49,
+  "text": "to recover,",
+  "woerter": [
+   {
+    "t": "to",
+    "start": 77.33,
+    "end": 77.71,
+    "seg": 12
+   },
+   {
+    "t": "recover,",
+    "start": 77.71,
+    "end": 78.49,
+    "seg": 12
+   }
+  ],
+  "grund": "pause"
+ },
+ {
+  "start": 79.03,
+  "end": 79.63,
+  "text": "to process,",
+  "woerter": [
+   {
+    "t": "to",
+    "start": 79.03,
+    "end": 79.03,
+    "seg": 12
+   },
+   {
+    "t": "process,",
+    "start": 79.03,
+    "end": 79.61,
+    "seg": 12
+   }
+  ],
+  "grund": "abschnitt"
+ },
+ {
+  "start": 79.89,
+  "end": 80.87,
+  "text": "to integrate, to",
+  "woerter": [
+   {
+    "t": "to",
+    "start": 79.89,
+    "end": 79.99,
+    "seg": 13
+   },
+   {
+    "t": "integrate,",
+    "start": 79.99,
+    "end": 80.37,
+    "seg": 13
+   },
+   {
+    "t": "to",
+    "start": 80.55,
+    "end": 80.87,
+    "seg": 13
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 80.87,
+  "end": 81.79,
+  "text": "really get back",
+  "woerter": [
+   {
+    "t": "really",
+    "start": 80.87,
+    "end": 81.15,
+    "seg": 13
+   },
+   {
+    "t": "get",
+    "start": 81.15,
+    "end": 81.43,
+    "seg": 13
+   },
+   {
+    "t": "back",
+    "start": 81.43,
+    "end": 81.79,
+    "seg": 13
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 81.79,
+  "end": 82.57,
+  "text": "into life.",
+  "woerter": [
+   {
+    "t": "into",
+    "start": 81.79,
+    "end": 82.11,
+    "seg": 13
+   },
+   {
+    "t": "life.",
+    "start": 82.11,
+    "end": 82.57,
+    "seg": 13
+   }
+  ],
+  "grund": "satz"
+ },
+ {
+  "start": 82.85,
+  "end": 83.59,
+  "text": "And there were",
+  "woerter": [
+   {
+    "t": "And",
+    "start": 82.85,
+    "end": 83.13,
+    "seg": 14
+   },
+   {
+    "t": "there",
+    "start": 83.13,
+    "end": 83.33,
+    "seg": 14
+   },
+   {
+    "t": "were",
+    "start": 83.33,
+    "end": 83.59,
+    "seg": 14
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 83.59,
+  "end": 84.41,
+  "text": "a lot of",
+  "woerter": [
+   {
+    "t": "a",
+    "start": 83.59,
+    "end": 83.67,
+    "seg": 14
+   },
+   {
+    "t": "lot",
+    "start": 83.67,
+    "end": 84.11,
+    "seg": 14
+   },
+   {
+    "t": "of",
+    "start": 84.11,
+    "end": 84.41,
+    "seg": 14
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 84.41,
+  "end": 85.11,
+  "text": "days without",
+  "woerter": [
+   {
+    "t": "days",
+    "start": 84.41,
+    "end": 84.69,
+    "seg": 14
+   },
+   {
+    "t": "without",
+    "start": 84.69,
+    "end": 85.11,
+    "seg": 14
+   }
+  ],
+  "grund": "voll"
+ },
+ {
+  "start": 85.11,
+  "end": 85.71,
+  "text": "light.",
+  "woerter": [
+   {
+    "t": "light.",
+    "start": 85.11,
+    "end": 85.45,
+    "seg": 14
+   }
+  ],
+  "grund": "satz"
+ }
+]

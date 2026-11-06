@@ -1,0 +1,82 @@
+{
+ "name": "Gastauftritt The Garden - das Jahr, in dem alles zusammenbrach",
+ "datei": "YNB @ The Garden Breakdown.mp4",
+ "stand": "2026-11-06 - erste Fassung, Tempo 1,15, ohne Musik",
+ "seine_ansage": "'jetzt lass uns zurueckgehen zu dem Podcast, den ich gemacht habe mit The Garden. Ich habe dir jetzt hier mal eine Stelle rausgeschrieben, mit der du einen Short schneiden kannst' - dazu die Stelle im Wortlaut.",
+ "wer_spricht": "Er selbst, durchgehend. Er ist hier der GAST, Drew Korf ist der Gastgeber.",
+ "quelle": {
+  "datei": "YNB @ The Garden (seine eigene Kopie von Ep_58 im Gastauftritt-Ordner)",
+  "drive_id": "1QpWIoCoFiluREdCjNnEXUvw0ZD0W6rCj",
+  "groesse": "5,77 GB, 1920x1080, 23,976 Bilder/s, 8,86 Mbit/s",
+  "freigabe": "Am 29.10. von ihm erteilt: 'das, was Drew mir freigegeben hat, habe ich kopiert und in mein eigenen Gastauftritt-Ordner im Drive gelegt. Das koennen wir verwenden.'",
+  "fenster": "Master 2693,23-2824,92 ueber master_schnitt.py geholt - 19 Bereichsanfragen, 152 MB statt 5,77 GB."
+ },
+ "bildrate": {
+  "befund": "Die Quelle laeuft mit 24000/1001 = 23,976 Bildern/s, nicht mit 30 wie alle bisherigen Quellen.",
+  "was_ich_getan_habe": "Das Fenster EINMAL sauber auf 30 Bilder gebracht (libx264, CRF 14, preset medium), bevor irgendetwas geschnitten wurde. Danach gilt die ganze Kette unveraendert.",
+  "warum": "schnitt_bauen.py prueft auf ganze Bilder bei 30/s, schnittgrenzen.py und der Renderer rechnen ebenso. Bei 23,976 laege jede Grenze zwischen zwei Bildern - genau der Fehler, der am 24.10. das Zittern verursacht hat."
+ },
+ "schnitt": {
+  "stueck_fenster_s": [
+   21.1,
+   106.9
+  ],
+  "bilder": 2574,
+  "dauer_roh_s": 85.8,
+  "innen_nichts_heraus": "Die Stelle steht so, wie er sie aufgeschrieben hat.",
+  "warum_die_grenzen": "BEIDE Schnitte liegen in digitaler Stille, die die fremde Produktion selbst gesetzt hat: 21,08-21,16 vor 'And you know' und 106,68-107,04 nach 'days without light' (-180 dB, gemessen). Danach faellt Drews 'Yeah.' bei 107,06 - das ist draussen.",
+  "einstellungsgrenzen_clip_s": [
+   0.7667,
+   20.7333,
+   32.2667,
+   33.7667,
+   53.7667,
+   65.7333
+  ],
+  "wie_gemessen": "schnittgrenzen.py - ALLE SECHS lagen 2 bis 5 Bilder neben der Schaetzung von bildausschnitt.py. Unterschiede 62,7 bis 72,4 gegen Ruhepegel 0,35 bis 1,27, also durchweg echte Kamerawechsel."
+ },
+ "bild": {
+  "ausgabe": "2160x3840",
+  "tempo": 1.15,
+  "look": "preset",
+  "worte_je_einblendung": 3,
+  "tiefer_px": 120,
+  "lippe": 1267,
+  "logo_breite_px": 1400,
+  "logo_hoehe": 0.877,
+  "eine_lippenhoehe": "bildausschnitt.py hatte 1186 / 1267 / 1250 gemessen; auf 1267 vereinheitlicht (5 von 7 Einstellungen, 84 von 85,8 s). Der Renderer meldet 'Hoehen [1267]'.",
+  "kaesten": {
+   "drew_nah": "740:0:608:1080",
+   "ynb_nah_1": "464:0:608:1080",
+   "ynb_halbtotale": "152:0:608:1080",
+   "drew_nah_2": "764:0:608:1080",
+   "ynb_nah_2": "404:0:608:1080",
+   "drew_seite": "1076:0:608:1080",
+   "ynb_nah_3": "452:0:608:1080"
+  },
+  "zwoelf_sekunden_auf_drew": "Von Clipzeit 53,77 bis 65,73 zeigt der Master DREW, waehrend er 'I lost everything ... suicidal for days, weeks, months' spricht. Das ist deren Schnitt, nicht meiner. Ihm gemeldet; auf Wunsch lege ich den Ausschnitt dort auf ihn um."
+ },
+ "einblendungen": {
+  "quelle": "video/shorts/garden-breakdown.cues.json",
+  "anzahl": 72,
+  "modell": "whisper medium",
+  "von_hand": "'month.' -> 'months.' - sein eigener Wortlaut liest 'months'.",
+  "kraftausdruecke": "'fucking' (zweimal) und 'shit' stehen ungepiept im Bild, so wie er sie sagt."
+ },
+ "ton": {
+  "laut": "aus",
+  "dehnung": "atempo",
+  "musik": "keine - nicht bestellt"
+ },
+ "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
+ "laenge_s": {
+  "hauptteil": 74.63,
+  "outro": 4.21,
+  "gesamt": 78.88
+ },
+ "geprueft": {
+  "ortscheck": "sauber",
+  "lippenhoehen": "eine einzige (1267)"
+ },
+ "offen": "Der Dateiname ist mein Vorschlag: 'YNB @ The Garden Breakdown.mp4'. Die Namensregel vom 22.10. ist fuer SEINEN Podcast gedacht ('YNB Podcast <Gastname> <Stichwort>'); hier ist er der Gast, darum die Form des Drive-Dateinamens plus Stichwort."
+}
