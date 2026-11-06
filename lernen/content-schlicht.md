@@ -903,3 +903,23 @@ Wer sie noch einmal durch den Renderer schickt, legt den Look ein zweites
 Mal drauf. `--look aus`, und Logo und Outro nicht noch einmal mitgeben: die
 stecken schon im Bild.
 → betrifft: content-*
+
+**06.11. — Eine Schrifthöhe pro Short, nicht eine pro Einstellung.** Seine
+Worte: *„stell bitte sicher, dass die Schrift auf derselben Höhe bleibt. Ich
+weiß nicht, warum ich das immer wieder sagen muss."* Der Renderer kann die
+Höhe je Einstellung mitführen, und bei einem Gast, der zwischen Halbnah und
+Totale wechselt, sieht das gemessen richtiger aus — es ist trotzdem falsch.
+Die Schrift soll stehen. **Regel: `--lippe` setzen, einen Wert, 1010 px, und
+die Höhen aus dem Plan damit überschreiben.** Der Renderer meldet dann
+`Hoehen [1010]` — eine Zahl in der Klammer ist die Prüfung.
+Das ist Geschmack, nicht Mechanik: nicht nachmessen, sondern machen.
+→ betrifft: content-*
+
+**06.11. — Für fremdes Bildmaterial zuerst nach CC0 suchen.** Für die
+Einblendung von Gary Vaynerchuk lag auf Wikimedia Commons ein Bild, das
+**Vaynermedia selbst** unter CC0 1.0 freigegeben hat — die eigene Firma des
+Abgebildeten, keine Namensnennung nötig. Das ist eine andere Klasse als ein
+Trailer-Ausschnitt oder ein Pressefoto. Die beiden Hosts
+(`commons.wikimedia.org`, `upload.wikimedia.org`) stehen jetzt in der
+Netzfreigabe der Umgebung.
+→ betrifft: content-*
