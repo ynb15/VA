@@ -884,3 +884,22 @@ gegen `select='gt(scene,0.12)'` nachmessen und auf das Bildraster der Quelle
 runden** (hier 30000/1001, nicht 30 — sonst sind die Längen keine ganzen
 Bilder).
 → betrifft: content-*
+
+**06.11. — `lippe` ist eine Zeile im FERTIGEN Bild, nicht im Ausschnitt.**
+`shorts-render.py:397` setzt den Wert direkt als `\pos(…, lippe)` ins
+1080x1920-Bild. Solange der Ausschnitt 900x1600 war, fiel das nie auf: der
+Faktor 1,2 ist klein genug, dass ein im Ausschnitt gemessenes Kinn plus 200
+zufaellig passte. Bei einer Quelle, die schon 2160x3840 ist — seine eigene
+Schnittfassung, zurueckgeliefert in doppelter Groesse — ist der Faktor 0,5,
+und dieselbe Rechnung schob die Schrift an den unteren Bildrand oder ganz
+aus dem Bild.
+**Regel: Kinn im fertigen Bild messen (Quellhoehe mal 1920/Kastenhoehe),
+dann rund 45 px dazu.** Nachgerechnet an der Fassung, die er abgenommen hat:
+„Meaningful" lag bei Kinn + 38 px.
+→ betrifft: content-*
+
+**06.11. — Eine zurueckgelieferte Schnittfassung ist schon fertig gegraded.**
+Wer sie noch einmal durch den Renderer schickt, legt den Look ein zweites
+Mal drauf. `--look aus`, und Logo und Outro nicht noch einmal mitgeben: die
+stecken schon im Bild.
+→ betrifft: content-*
