@@ -1331,3 +1331,46 @@ dieses Shorts lagen **2 bis 5 Bilder** neben der Schätzung von
 `bildausschnitt.py`.
 
 → betrifft: content-*, alle Short-Agenten
+
+---
+
+## 06.11. — in einer Totale entscheidet der Ausschnitt, wer im Bild ist
+
+**Seine Ansage:** *„stell sicher, dass die Kamera wirklich auf mir bleibt."*
+
+Im Garden-Short standen **14,24 von 85,8 s** auf dem Gastgeber. Nachgesehen,
+Einstellung für Einstellung:
+
+* **11,97 s davon waren gar kein Problem der Kamera, sondern meines
+  Ausschnitts.** Die Stelle ist eine **Totale**, in der beide am Tisch sitzen;
+  `bildausschnitt.py` hatte den 608-px-Kasten dorthin gelegt, wo die meiste
+  Bewegung war — auf den Gastgeber. Kasten von `1076` auf `152` geschoben, und
+  er ist durchgehend im Bild. **Das Material gab es her, die Messung hat nur
+  den Falschen gewählt.**
+* **2,27 s sind nicht zu retten:** zwei echte Nahaufnahmen des Gastgebers
+  allein. Wo er nicht im Bild ist, hilft kein Ausschnitt.
+
+**Daraus die Regel: bevor man meldet, eine Stelle liege auf dem Falschen,
+nachsehen, ob es eine Totale ist.** In der Totale ist es eine
+Ausschnittsfrage, in der Nahaufnahme eine Materialfrage — zwei verschiedene
+Antworten an ihn.
+
+→ betrifft: content-*, alle Short-Agenten
+
+## 06.11. — die Weglass-Regel für Einzelwörter wirft Inhalt weg
+
+`shorts-render.py` lässt eine Einblendung aus **einem** Wort weg, wenn sie
+unter `MIN_HART` (0,25 s) steht. Heute hat sie in einem Lauf **drei** Wörter
+genommen: `Yeah.` (harmlos), **`runs`** und **`personal`**.
+
+Im Bild hätte gestanden: *„a machine that successfully"* und *„the development
+thing"* — gesagt sind *„a machine that **runs** successfully"* und *„the
+**personal** development thing"*. Im Paddock-Short war es `first` aus
+*„one of my **first** psychedelic experiences"*.
+
+**Die Regel unterscheidet nicht zwischen Füller und Inhalt — sie sieht nur die
+Standzeit.** Der Renderer meldet jedes weggelassene Wort auf der Konsole.
+**Diese Meldungen gehören gelesen, nicht überscrollt**, und das Wort gehört an
+die Nachbar-Einblendung angehängt statt weggeworfen.
+
+→ betrifft: content-*, alle Short-Agenten

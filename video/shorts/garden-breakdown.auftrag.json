@@ -1,7 +1,7 @@
 {
  "name": "Gastauftritt The Garden - das Jahr, in dem alles zusammenbrach",
- "datei": "YNB @ The Garden Breakdown.mp4",
- "stand": "2026-11-06 - erste Fassung, Tempo 1,15, ohne Musik",
+ "datei": "YNB @ The Garden Breakdown (Moms Got Work).mp4",
+ "stand": "2026-11-06 - zweite Fassung: Totale auf ihn, Mom's Got Work drunter",
  "seine_ansage": "'jetzt lass uns zurueckgehen zu dem Podcast, den ich gemacht habe mit The Garden. Ich habe dir jetzt hier mal eine Stelle rausgeschrieben, mit der du einen Short schneiden kannst' - dazu die Stelle im Wortlaut.",
  "wer_spricht": "Er selbst, durchgehend. Er ist hier der GAST, Drew Korf ist der Gastgeber.",
  "quelle": {
@@ -66,7 +66,10 @@
  "ton": {
   "laut": "aus",
   "dehnung": "atempo",
-  "musik": "keine - nicht bestellt"
+  "musik": "Adam Taylor - Mom's Got Work, ab Songsekunde 0, 0 dB unter der Stimme",
+  "pegel": "Stimme -22,6 dB, Bett -17,4 dB -> Bett auf -5,2 dB angehoben. Spitze des Mixes -2,43 dBFS, kein Sample am Anschlag.",
+  "warum_dieser_titel": "Seine Ansage war nur 'mit musik bitte', ohne Titel. Mom's Got Work ist der einzige Titel, der bei ihm noch nie gesperrt wurde - auch nicht bei zwei Minuten (sein eigener Test vom 29.10.). Alternative genannt: In The End (Piano) oder Lowack Passacaglia.",
+  "kein_loop": "Song 117,79 s, Hauptteil 74,63 s."
  },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
  "laenge_s": {
@@ -78,5 +81,11 @@
   "ortscheck": "sauber",
   "lippenhoehen": "eine einzige (1267)"
  },
- "offen": "Der Dateiname ist mein Vorschlag: 'YNB @ The Garden Breakdown.mp4'. Die Namensregel vom 22.10. ist fuer SEINEN Podcast gedacht ('YNB Podcast <Gastname> <Stichwort>'); hier ist er der Gast, darum die Form des Drive-Dateinamens plus Stichwort."
+ "offen": "Der Dateiname ist mein Vorschlag: 'YNB @ The Garden Breakdown.mp4'. Die Namensregel vom 22.10. ist fuer SEINEN Podcast gedacht ('YNB Podcast <Gastname> <Stichwort>'); hier ist er der Gast, darum die Form des Drive-Dateinamens plus Stichwort.",
+ "aenderungen_06_11": {
+  "seine_ansage": "'lass uns das erste Short nochmal anpassen. Und stell sicher, dass die Kamera wirklich auf mir bleibt. und mit musik bitte'",
+  "totale_auf_ihn": "Clipzeit 53,7667-65,7333 (11,97 s) ist eine TOTALE, in der beide sitzen - Drews Cutter hatte nur den Ausschnitt rechts auf Drew. Kasten von 1076:0:608:1080 auf 152:0:608:1080 geschoben, derselbe Ausschnitt wie in der anderen Totale des Shorts (20,73-32,27). Er ist dort jetzt durchgehend im Bild, waehrend er 'that train wreckage ... forced me to stop entirely' spricht.",
+  "was_nicht_geht": "Clipzeit 0-0,7667 und 32,2667-33,7667 sind NAHAUFNAHMEN VON DREW ALLEIN - er ist in diesen Bildern nicht drin, es gibt keinen Ausschnitt, auf den man gehen koennte. Spaeter anzufangen kostet 'And you know, that'; die 1,5 s in der Mitte liegen auf '...that we had created'. Ihm gemeldet, mit dem Angebot, das Bild dort aus der Totale zu ueberbruecken (Lippen passen dann 1,5 s nicht).",
+  "zusammen": "Drew ist jetzt noch 2,27 s von 85,8 s im Bild statt 14,24 s."
+ }
 }

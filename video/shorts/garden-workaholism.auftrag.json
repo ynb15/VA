@@ -1,0 +1,70 @@
+{
+ "name": "Gastauftritt The Garden - Workaholism wird sozial belohnt",
+ "datei": "YNB @ The Garden Workaholism.mp4",
+ "stand": "2026-11-06 - erste Fassung, Tempo 1,15, ohne Musik",
+ "seine_ansage": "'Naechster Short:' - dazu die Stelle im Wortlaut, von 'And I came to realize as of right now' bis 'the more praise you get.'",
+ "wer_spricht": "Erst er, dann Drews lange Frage (rund 40 s), dann wieder er.",
+ "quelle": {
+  "datei": "YNB @ The Garden",
+  "drive_id": "1QpWIoCoFiluREdCjNnEXUvw0ZD0W6rCj",
+  "fenster": "Master 2499,90-2648 ueber master_schnitt.py - 21 Bereichsanfragen, 168 MB.",
+  "bildrate": "Quelle 23,976 B/s, Fenster einmal auf 30 gebracht (CRF 14, preset medium)."
+ },
+ "schnitt": {
+  "stueck_fenster_s": [
+   10.1333,
+   136.2667
+  ],
+  "bilder": 3784,
+  "dauer_roh_s": 126.1333,
+  "innen_nichts_heraus": "Die Stelle steht so, wie er sie aufgeschrieben hat.",
+  "warum_die_grenzen": "Beide Schnitte liegen in digitaler Stille, die die fremde Produktion selbst gesetzt hat: 10,08-10,18 (-180 dB) vor 'And I came to realize' und 136,14-136,42 nach 'the more praise you get'. Direkt danach faellt 'I mean, nobody fucking praises you or me' - das ist draussen.",
+  "einstellungsgrenzen_clip_s": [
+   0.5667,
+   12.5333,
+   14.0333,
+   31.5333,
+   42.0667,
+   59.5333,
+   71.5333,
+   93.0333,
+   105.0333,
+   116.5333,
+   118.0333
+  ],
+  "wie_gemessen": "schnittgrenzen.py - ALLE ELF lagen 1 bis 6 Bilder neben der Schaetzung. Unterschiede 63,5 bis 73,5 gegen Ruhepegel 0,30 bis 0,66."
+ },
+ "bild": {
+  "ausgabe": "2160x3840",
+  "tempo": 1.15,
+  "look": "preset",
+  "worte_je_einblendung": 3,
+  "tiefer_px": 120,
+  "lippe": 1267,
+  "logo_breite_px": 1400,
+  "logo_hoehe": 0.877,
+  "eine_lippenhoehe": "Gemessen 1165 / 1207 / 1267; auf 1267 vereinheitlicht (8 von 12 Einstellungen)."
+ },
+ "einblendungen": {
+  "quelle": "video/shorts/garden-workaholism.cues.json",
+  "anzahl": 127,
+  "modell": "whisper medium",
+  "von_hand": [
+   "'runs' war als Einzelwort unter die Mindest-Standzeit gefallen - aus 'a machine that runs successfully' waere 'a machine that successfully' geworden.",
+   "'personal' ebenso - aus 'the personal development thing' waere 'the development thing' geworden."
+  ],
+  "regel": "Die Weglass-Regel fuer Einzelwoerter wirft INHALT weg, nicht nur Fueller. Nach jedem Lauf pruefen, welche Woerter sie genommen hat."
+ },
+ "ton": {
+  "laut": "aus",
+  "dehnung": "atempo",
+  "musik": "keine - nicht bestellt"
+ },
+ "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
+ "laenge_s": {
+  "hauptteil": 109.73,
+  "outro": 4.21,
+  "gesamt": 113.98
+ },
+ "zu_bedenken": "113,98 s sind knapp zwei Minuten, davon rund 40 s Drews Frage. Bei Tempo 1,25 waeren es 105 s. Ihm gemeldet."
+}

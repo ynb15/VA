@@ -63,14 +63,15 @@
   },
   {
    "layout": "einzel",
-   "kasten": "1076:0:608:1080",
+   "kasten": "152:0:608:1080",
    "lippe": 1267,
    "start": 53.766666666666666,
    "ende": 65.73333333333333,
    "tot": false,
    "bewegung_x": 0.719,
    "mitte": 0.22,
-   "masse": 1.95
+   "masse": 1.95,
+   "hinweis": "Totale, Ausschnitt auf IHN statt auf Drew - seine Ansage vom 06.11."
   },
   {
    "layout": "einzel",
