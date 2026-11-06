@@ -81,7 +81,9 @@
   "musik": "Adam Taylor - Mom's Got Work, ab Songsekunde 0, 0 dB unter der Stimme",
   "pegel": "Stimme -22,6 dB, Bett -17,4 dB -> Bett auf -5,2 dB angehoben. Spitze des Mixes -2,43 dBFS, kein Sample am Anschlag.",
   "warum_dieser_titel": "Seine Ansage war nur 'mit musik bitte', ohne Titel. Mom's Got Work ist der einzige Titel, der bei ihm noch nie gesperrt wurde - auch nicht bei zwei Minuten (sein eigener Test vom 29.10.). Alternative genannt: In The End (Piano) oder Lowack Passacaglia.",
-  "kein_loop": "Song 117,79 s, Hauptteil 74,63 s."
+  "kein_loop": "Song 117,79 s, Hauptteil 74,63 s.",
+  "ausblende": "1,5 s statt der sonst vorgegebenen 4 s. Seine Ansage vom 06.11.: 'lass in this shirt bitte bis fast zum Ende auslaufen.' Gemessen: das Bett steht bis Sekunde 60,5 auf vollem Pegel und ist bei 61,4 weg; danach setzt das Outro ein.",
+  "achtung": "Die 4-s-Vorgabe kam von SEINER Beobachtung am 24.10. (\"beim Ende des Shorts endest du die Musik zu schnell oder zu abrupt\"). Hier will er das Gegenteil. Also: kein neuer Standard, sondern eine Einzelentscheidung fuer diesen Short."
  },
  "outro": "video/marke/ynb-outro-9x16.mov, 4,21 s, ueber outro_anhaengen.py --kopie",
  "laenge_s": {
