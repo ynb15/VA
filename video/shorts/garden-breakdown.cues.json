@@ -500,7 +500,7 @@
  {
   "start": 28.34,
   "end": 29.8,
-  "text": "I was suicidal",
+  "text": "I was suic*dal",
   "woerter": [
    {
     "t": "I",
@@ -515,7 +515,7 @@
     "seg": 8
    },
    {
-    "t": "suicidal",
+    "t": "suic*dal",
     "start": 29.34,
     "end": 29.8,
     "seg": 8
@@ -744,22 +744,28 @@
  {
   "start": 48.61,
   "end": 49.35,
-  "text": "in life,",
+  "text": "in my life,",
   "woerter": [
    {
     "t": "in",
     "start": 48.61,
     "end": 48.79,
-    "seg": 11
+    "seg": 0
+   },
+   {
+    "t": "my",
+    "start": 48.79,
+    "end": 48.97,
+    "seg": 0
    },
    {
     "t": "life,",
-    "start": 48.79,
+    "start": 48.97,
     "end": 49.35,
-    "seg": 11
+    "seg": 0
    }
   ],
-  "grund": "stille"
+  "grund": "hand"
  },
  {
   "start": 51.23,

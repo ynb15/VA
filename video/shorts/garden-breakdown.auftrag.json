@@ -1,7 +1,7 @@
 {
  "name": "Gastauftritt The Garden - das Jahr, in dem alles zusammenbrach",
  "datei": "YNB @ The Garden Breakdown (Moms Got Work).mp4",
- "stand": "2026-11-06 - Tempo 1,1, Totale enger auf ihn",
+ "stand": "2026-11-06 - suicidal in der Einblendung entschaerft, in my life",
  "seine_ansage": "'jetzt lass uns zurueckgehen zu dem Podcast, den ich gemacht habe mit The Garden. Ich habe dir jetzt hier mal eine Stelle rausgeschrieben, mit der du einen Short schneiden kannst' - dazu die Stelle im Wortlaut.",
  "wer_spricht": "Er selbst, durchgehend. Er ist hier der GAST, Drew Korf ist der Gastgeber.",
  "quelle": {
@@ -68,7 +68,11 @@
   "quelle": "video/shorts/garden-breakdown.cues.json",
   "anzahl": 72,
   "modell": "whisper medium",
-  "von_hand": "'month.' -> 'months.' - sein eigener Wortlaut liest 'months'.",
+  "von_hand": [
+   "'month.' -> 'months.' - sein eigener Wortlaut liest 'months'.",
+   "'suicidal' -> 'suic*dal'. Seine Ansage: 'wir muessen einmal suicidal zensieren, zumindest im Text.' Der Ton bleibt unveraendert. Steht jetzt auch in video/korrekturen.txt, damit es ohne Zutun fuer jeden Short gilt.",
+   "'in life' -> 'in my life'. Whisper hoert auf dem ganzen Clip 'in life', isoliert 'alive' - die Stelle ist genuschelt. Er hat es als 'in my life' aufgeschrieben, es sind seine Worte."
+  ],
   "kraftausdruecke": "'fucking' (zweimal) und 'shit' stehen ungepiept im Bild, so wie er sie sagt."
  },
  "ton": {
