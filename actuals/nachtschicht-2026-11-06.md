@@ -43,3 +43,32 @@ Nichts im Chat.
   **keine**
 
 Nichts im Chat.
+
+## 06:40 · Morgenlauf, Samstag
+
+- **06:40** · alle zehn Zweige · keine Bewegung über Nacht · neue Commits:
+  **keine** · Maßnahme: **YouTube-Manager gefragt (T−6 ist heute fällig)**
+
+**Zum zweiten Mal in fünf Tagen lagen fertige Stücke außerhalb des
+Kalenders** — diesmal in der Nacht gefunden, nicht nach einer Woche.
+Gastauftritte hat am 06.11. **zwei Ep_58-Shorts** gebaut: `YNB @ The Garden
+Breakdown` (14:53, mit `suic*dal`) und `YNB @ The Garden Workaholism`. **Beide
+Stellen stehen in seiner eigenen Slack-Liste vom 15.09.** („44:00
+Workaholism"). Auf Mo 09.11. und Di 10.11. gelegt, als mein Vorschlag.
+**Vorrat damit 2** statt der gemeldeten 0.
+
+**Heute ist ein Clip-Tag (3–10 Min) und hat keine Quelle.** Ich habe nichts
+beauftragt: es ist Samstag, dreizehn fertige Stücke warten auf Abnahme, und
+die beiden Zweige, die einen Clip schneiden könnten, arbeiten an seinen
+eigenen Aufträgen. **Mehr bauen löst das nicht.**
+
+**T−6 ist heute fällig und nicht geliefert.** Gefragt statt gemahnt
+(`trig_01L6xWiyX8QdXn6X95B3yhVd`, 06:46): kommt es heute, rutscht es — und
+wenn ja, auf welchen Tag —, oder fehlt etwas? **Den Termin fasse ich nicht von
+mir aus an.** Mitgeschickt: die Kontextzahl (742k/1000k, Autoverdichtung bei
+784k) mit der Bitte, jetzt zu sagen, falls T−3 nicht mehr zu schaffen ist, und
+die Entschärfungsregel.
+
+**Nächste Frist:** T−5 (Thumbnails) **morgen, 08.11.**
+
+**Lernkanal:** nichts Neues.

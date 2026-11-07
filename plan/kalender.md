@@ -88,8 +88,8 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Fr 06.11. | Short | **Craig Makhosi · ‚The Biggest Scandal School System‘** (Cinematic, aus seiner eigenen Kapitelliste) | **bei ihm** — 05.11. 09:12 fertig, **84,3 s**, Master 2156,6–2272,7, kein Bett · *mein Takt, nicht sein Termin* |
 | Sa 07.11. | Clip | 3–10 Min | offen |
 | So 08.11. | Clip | 10–20 Min | offen |
-| Mo 09.11. | Short | — | offen |
-| Di 10.11. | Short | — | offen |
+| Mo 09.11. | Short | **Ep_58 · ‚Breakdown‘** (Gastauftritte, The Garden) | **bei ihm** — 06.11. 14:53 fertig, mit entschärfter Einblendung (`suic*dal`) · *mein Vorschlag* |
+| Di 10.11. | Short | **Ep_58 · ‚Workaholism‘** (Gastauftritte, The Garden) | **bei ihm** — 06.11. gebaut, aus seiner eigenen Slack-Liste („44:00 Workaholism“) · *mein Vorschlag* |
 | Mi 11.11. | Short | — | offen |
 | Do 12.11. | Short | — | offen |
 | Fr 13.11. | **PODCAST** | Rick Strassman | offen |
@@ -294,3 +294,29 @@ daraus folgt: bei jedem neuen Stück in einer Folge, die schon einen Agenten
 hat, wird das Fenster gegen die bestehenden gelegt** — Startsekunde gegen
 Startsekunde, nicht Titel gegen Titel. „Ubuntu" und „There is no I in Ubuntu"
 sehen wie zwei Stellen aus.
+
+
+## Zwei Ep_58-Shorts lagen seit dem 06.11. außerhalb des Kalenders — 07.11.2026
+
+**Zweites Mal in fünf Tagen derselbe Fehler**, und diesmal habe ich ihn in der
+Nacht gefunden statt nach einer Woche. Gastauftritte hat am **06.11.** zwei
+Shorts aus **Ep_58** gebaut — dem Gastauftritt bei *The Garden* (Drew Korf,
+`q3_kLgYIXGQ`), den er in seinen eigenen Ordner kopiert hat:
+
+| Short | Stand |
+|---|---|
+| `YNB @ The Garden Breakdown` | 06.11. 14:53, **mit entschärfter Einblendung** (`suic*dal`) |
+| `YNB @ The Garden Workaholism` | 06.11., aus seiner eigenen Slack-Liste „44:00 Workaholism“ |
+
+**Beide Stellen stehen in seiner eigenen Liste**, die er am 15.09. an Isabelle
+geschickt hat (16:00 Movie · 40:40 Joe Hudson · 41:00 Integration · 44:00
+Workaholism · 1:00:23 Hormozi). Die Auswahl ist also seine, nicht unsere.
+
+**Auf Mo 09.11. und Di 10.11. gelegt — als mein Vorschlag.** Er hatte Ep_58 am
+29.10. freigegeben mit *„Das können wir verwenden. Wenn wir mit den anderen
+Shorts fertig sind."* **Ob „fertig" jetzt gilt, entscheidet er**, nicht ich;
+die Stelle im Kalender ist nur ein Platz, keine Freigabe.
+
+**Was ich daraus wieder lerne, zum zweiten Mal:** die Prüfung gegen die Zweige
+gehört in **jeden** Lauf, nicht nur dann, wenn das Skript Alarm schlägt. Heute
+hat es Alarm geschlagen (Vorrat 0) — und wieder lagen fertige Stücke daneben.
