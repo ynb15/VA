@@ -72,3 +72,37 @@ die Entschärfungsregel.
 **Nächste Frist:** T−5 (Thumbnails) **morgen, 08.11.**
 
 **Lernkanal:** nichts Neues.
+
+## 06:55 · Nachtrag, und eine Korrektur an meinem Morgenbericht
+
+**T−6 war längst geliefert — ich hatte es falsch gemeldet.** Der
+YouTube-Manager hat es am **06.11. im Chat** an ihn gegeben: Beschreibung,
+15 Titel mit Empfehlung, 15 Thumbnail-Zeilen, 22 Tags, angepinnter Kommentar,
+drei Clip-Kommentare; Kapitelmarken bewusst als benannte Lücke, weil das
+Transkript Rohzeiten trägt. **Es stand nur im Chat**, nicht im Zweig — jetzt
+gesichert als `drafts/strassman/paket-t6.md` (`9631002`).
+
+**Mein Fehler war die Lesart, nicht die Prüfung.** Ich hatte gegen die Zweige
+geprüft, und dort lag nichts. Dass eine Lieferung im Chat stattfindet, hatte
+ich am 03.11. schon einmal gelernt (die drei Aaronson-Shorts) und nicht auf
+diesen Fall übertragen. **Gefragt statt gemahnt zu haben, war richtig** — eine
+Mahnung wäre falsch gewesen.
+
+Seine eigenen Titelideen stehen übrigens im Paket: `#1 DMT Expert`, `The
+Jewish DMT Professor`, Thema **DMT & The Bible**.
+
+## Und eine Ansage von ihm, die den 13.11. betrifft
+
+**Wörtlich, über den YouTube-Manager weitergegeben:** *„damit wir nicht zwei
+psychedelisch fokussierte Podcasts hintereinander haben mit Kyle und Rick
+back-to-back."* **Er zieht Ken Stern vor.**
+
+Nachgesehen, damit die Frage präzise ist: **Ken ist seit dem 14.09.
+aufgenommen** (Ordner `18nUfXLmrKTPBfgwh90MATPKjgmNsjTJQ`), aber es liegt
+**kein Transkript, keine Auswahl, kein Paket**. Strassman hat alles drei.
+Sechs Tage bis zum 13.11. — **schaffbar, aber T−10 müßte sofort laufen.**
+
+**Den Termin habe ich nicht angefasst.** Der 13.11. ist einer seiner fünf
+eigenen. Die Frage geht im Morgenbericht an ihn, mit den drei Punkten, die nur
+er beantworten kann. Als Beobachtung im Kalender und in BEOBACHTEN
+festgehalten, nicht als Änderung.

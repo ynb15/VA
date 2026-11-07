@@ -42,6 +42,13 @@ BEOBACHTEN = [
      "Fassung 2 (09:35, 58,0 s), What do you believe in? (10:27). Jetzt auf "
      "03., 04. und 05.11. gelegt — das ist MEIN Vorschlag, nicht seine "
      "Festlegung. Abnahme fehlt bei allen drei."),
+    ("Ken Stern", "SEINE ANSAGE vom 06.11., ueber den YouTube-Manager "
+     "weitergegeben: er zieht Ken Stern VOR, \u201edamit wir nicht zwei "
+     "psychedelisch fokussierte Podcasts hintereinander haben mit Kyle und "
+     "Rick back-to-back\u201c. Aufnahme liegt: 14.09.2026, Ordner "
+     "18nUfXLmrKTPBfgwh90MATPKjgmNsjTJQ. Noch KEIN Transkript, KEINE Auswahl, "
+     "KEIN Paket. Den Termin 13.11. fasse ich nicht an -- das ist einer seiner "
+     "fuenf eigenen. Wird der 13.11. Ken, braucht es T-10 sofort."),
 ]
 
 # Wer eine Folge schneidet, entscheidet die Folge, nicht die Frist.
@@ -88,7 +95,13 @@ ERLEDIGT = {
     # alle ueber den Wortlaut verortet statt ueber eine Rechnung. Rohzeiten
     # ausdruecklich als vorlaeufig gekennzeichnet; gerendert wird nicht, weil
     # die 15,50-GB-Datei die ganze Sitzung ist und nicht die Folge.
-    "Rick Strassman": {10, 8},
+    # T-6 am 06.11. erfuellt, aber nur im Chat geliefert; am 07.11. 04:47
+    # nachgesichert als drafts/strassman/paket-t6.md (9631002, youtube-manager).
+    # Beschreibung, 15 Titel, 15 Thumbnail-Zeilen, 22 Tags, Pinned Comment,
+    # drei Clip-Kommentare; Kapitelmarken bewusst als benannte Luecke, weil das
+    # Transkript Rohzeiten traegt. Ich hatte T-6 am Morgen als "nicht da"
+    # gemeldet -- es lag im Chat, nicht im Zweig. Deshalb gefragt statt gemahnt.
+    "Rick Strassman": {10, 8, 6},
 }
 
 # Entscheidungspunkte: Tag -> was an diesem Tag entschieden werden muss, und

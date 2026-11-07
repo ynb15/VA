@@ -320,3 +320,44 @@ die Stelle im Kalender ist nur ein Platz, keine Freigabe.
 **Was ich daraus wieder lerne, zum zweiten Mal:** die Prüfung gegen die Zweige
 gehört in **jeden** Lauf, nicht nur dann, wenn das Skript Alarm schlägt. Heute
 hat es Alarm geschlagen (Vorrat 0) — und wieder lagen fertige Stücke daneben.
+
+
+## Er zieht Ken Stern vor — was das für den 13.11. heißt, 07.11.2026
+
+**Seine Ansage vom 06.11.**, über den YouTube-Manager weitergegeben, wörtlich:
+
+> *„damit wir nicht zwei psychedelisch fokussierte Podcasts hintereinander
+> haben mit Kyle und Rick back-to-back"*
+
+**Das ist seine Entscheidung, nicht meine Schlußfolgerung** — und sie
+betrifft den **Fr 13.11.**, einen seiner fünf eigenen Termine vom 21.10.
+**Den Termin fasse ich nicht an.** Was ich tun kann, ist nachsehen, ob es
+überhaupt geht:
+
+| | Rick Strassman | Ken Stern |
+|---|---|---|
+| Aufnahme | 18.09.2026 | **14.09.2026** |
+| Drive-Ordner | `1OKUFDBDyeEqV7iwypV5Q-vyQi7WL9b_C` | `18nUfXLmrKTPBfgwh90MATPKjgmNsjTJQ` |
+| Transkript | **liegt**, 1641 Segmente / 120,9 min | **keins** |
+| Clip- und Short-Auswahl | **liegt** (T−8, 04.11.) | **keine** |
+| Titel/Beschreibung/Tags | **liegt** (T−6, 06.11.) | **keins** |
+| Thumbnails | T−5 greift morgen | — |
+
+**Es geht, aber es ist eng.** Ken ist seit dem 14.09. aufgenommen, es liegt
+nur noch nichts darauf. Bis zum 13.11. sind es sechs Tage; bei Kingsbury
+wurden neun Shorts in einer Nacht geschnitten, die Kette ist also schaffbar —
+**aber T−10 (Transkript) müßte sofort laufen.**
+
+**Was für Strassman gilt, wenn Ken vorgezogen wird:** T−10, T−8 und T−6
+sind **nicht verloren**, sie warten auf ein neues Datum. Verloren wäre nur die
+Reihenfolge.
+
+**Drei Dinge, die nur er beantworten kann:**
+1. Wird der **13.11. Ken Stern** — oder bleibt Rick und Ken kommt am 27.11.
+   statt Matt Defina?
+2. Wenn Ken: **löst ich T−10 heute aus?** Ohne Transkript fängt niemand an.
+3. Wer schneidet Ken? Nach Regel 9 ein Name für die ganze Folge. Cinematic
+   hält Strassman; Shorts II ist seit dem 05.11. frei.
+
+**Nicht angefasst:** `bin/kalender-bauen.py` trägt weiter Strassman am 13.11.
+Ich ändere das Datum, wenn er es sagt, und nicht vorher.
