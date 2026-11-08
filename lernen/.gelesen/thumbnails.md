@@ -518,3 +518,55 @@ Alle vier traten bei langen Durchläufen auf und sind in
   humanoider Roboterkopf, links mit synthetischer Haut, rechts blankgelegtes
   Chrom".
   → betrifft: alle, die Canva benutzen
+
+## 08.11.2026 — Rick Strassman
+
+### Der Schriftgrad hängt an der Tinte, nicht an der Zeichenzahl
+
+- **Dieselben Köpfe, 689 px Lücke, sechs Zeilen gemessen:**
+  `#1 DMT` (6 Zeichen) → Grad **171** · `DO YOU` (6) → **160** ·
+  `& THE BIBLE` (11) → **112** · `PROFESSOR` (9) → **110** ·
+  `THE ANSWER` (10) → **99** · `PSYCHEDELICS` (12) → **87**.
+- **Zehn Zeichen sind ein Näherungsmaß, keine Grenze.** `THE ANSWER` hat zehn
+  Zeichen und kommt auf 99, `& THE BIBLE` hat elf und kommt auf 112 — W, N
+  und A sind breit, I und L schmal. Wer eine Zeile vorschlägt, schätzt besser
+  die Breite als die Länge.
+- **`PSYCHEDELICS` liest sich bei 320×180 nicht mehr.** Bei Grad 87 nachgesehen,
+  nicht geraten.
+  → betrifft: youtube-manager, head-of-content, thumbnails
+
+### Eine Thumbnail-Zeile soll den Titel nicht wiederholen
+
+- Der empfohlene Titel heißt `The DMT Professor: "Psychedelics Are Not The
+  Answer"`. Zwei der fünfzehn Thumbnail-Zeilen — `NOT / THE ANSWER` und
+  `THE DMT / PROFESSOR` — stehen wörtlich darin. Nebeneinander im Feed sagen
+  Titel und Bild dann dasselbe.
+  → betrifft: youtube-manager, thumbnails
+
+### Das Gesicht des Gastgebers scheitert an der Hand, nicht am Ausdruck
+
+- **Von 111 Nahaufnahmen auf Yannick liegt in der Mehrzahl die Hand am Kinn.**
+  Ein Freisteller nimmt sie mit, und sie steht dann mitten im Thumbnail. Die
+  Auswahl entscheidet sich an „Hand im Bild oder nicht", bevor sie sich am
+  Ausdruck entscheidet.
+  → betrifft: thumbnails, content-cinematic
+
+### Ein Foto vom Drehtag ist zweimal hintereinander die falsche Quelle gewesen
+
+- Kingsbury-Selfie: 2316×2264, Pupillenabstand 289 px — **beide lachen breit.**
+- Strassman-Foto: 4032×3024, Pupillenabstand 115 px — **beide lachen breit,
+  er trägt einen Hut, beide schauen in die Kamera.**
+- **Auflösung ist nicht das Kriterium, das Register ist es.** Ein Foto vom
+  Drehtag entsteht nach dem Gespräch, und dann sind alle gut gelaunt.
+  → betrifft: thumbnails, head-of-content
+
+### Eine geschnittene Datei kann besser sein als die Rohdateien — oder schlechter
+
+- **Strassman:** die 15,50-GB-Datei ist bereits geschnitten und wechselt
+  zwischen zwei Nahaufnahmen. Beide Gesichter liegen bei 86–97 px, beide
+  werden um 1,4× hochgerechnet, beide sehen gleich aus.
+- **Kingsbury:** die 39-GB-Schnittdatei hat Kyle bei 150–183 px, von Yannick
+  aber **in 455 Stichproben genau eine Halbnahe.** Der Cutter hatte keine.
+- **Die Frage an eine neue Datei lautet nicht „wie groß", sondern „von wem".**
+  Vor dem Messen erst feststellen, welche Einstellungen überhaupt vorkommen.
+  → betrifft: thumbnails, content-cinematic, shorts

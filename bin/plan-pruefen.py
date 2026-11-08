@@ -101,7 +101,9 @@ ERLEDIGT = {
     # drei Clip-Kommentare; Kapitelmarken bewusst als benannte Luecke, weil das
     # Transkript Rohzeiten traegt. Ich hatte T-6 am Morgen als "nicht da"
     # gemeldet -- es lag im Chat, nicht im Zweig. Deshalb gefragt statt gemahnt.
-    "Rick Strassman": {10, 8, 6},
+    # T-5 am 08.11. erfuellt, 16 Minuten nach dem Auftrag: sechs Thumbnails
+    # aus gemessenen Gesichtern (b12512d, claude/thumbnails), 1280x720.
+    "Rick Strassman": {10, 8, 6, 5},
 }
 
 # Entscheidungspunkte: Tag -> was an diesem Tag entschieden werden muss, und

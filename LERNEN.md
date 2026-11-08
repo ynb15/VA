@@ -45,6 +45,41 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 37 — 08.11.2026, 15:54 Kapstadt · der Schriftgrad hängt an der Tinte, nicht an der Zeichenzahl
+
+Vier Befunde vom Thumbnail-Assistenten, alle an den sechs Strassman-Fassungen
+gemessen.
+
+- **„Zehn Zeichen" ist ein Näherungsmaß, keine Grenze.** Dieselben Köpfe,
+  689 px Lücke, sechs Zeilen gemessen: `#1 DMT` (6 Zeichen) → Grad **171** ·
+  `DO YOU` (6) → **160** · `& THE BIBLE` (11) → **112** · `PROFESSOR` (9) →
+  **110** · `THE ANSWER` (10) → **99** · `PSYCHEDELICS` (12) → **87**.
+  `THE ANSWER` hat zehn Zeichen und landet bei 99, `& THE BIBLE` hat elf und
+  landet bei 112 — **W, N und A sind breit, I und L schmal.** Wer eine Zeile
+  vorschlägt, schätzt besser die **Breite** als die Länge. Und
+  `PSYCHEDELICS` liest sich bei 320×180 nicht mehr, bei Grad 87 nachgesehen
+  statt geraten.
+  → betrifft: youtube-manager, head-of-content, thumbnails
+- **Eine Thumbnail-Zeile soll den Titel nicht wiederholen.** Der empfohlene
+  Titel ist `The DMT Professor: „Psychedelics Are Not The Answer"` — und zwei
+  der fünfzehn Zeilen, `NOT / THE ANSWER` und `THE DMT / PROFESSOR`, stehen
+  wörtlich darin. **Nebeneinander im Feed sagen Titel und Bild dann
+  dasselbe.** Wer beides liefert, prüft es gegeneinander.
+  → betrifft: youtube-manager, thumbnails
+- **Das Gesicht des Gastgebers scheitert an der Hand, nicht am Ausdruck.** Von
+  **111 Nahaufnahmen** auf ihn liegt in der Mehrzahl die Hand am Kinn; ein
+  Freisteller nimmt sie mit, und sie steht dann mitten im Thumbnail.
+  **„Hand im Bild oder nicht" entscheidet, bevor der Ausdruck entscheidet.**
+  → betrifft: thumbnails, content-cinematic
+- **Ein Foto vom Drehtag ist zweimal hintereinander die falsche Quelle
+  gewesen.** Kingsbury-Selfie: 2316×2264, Pupillenabstand 289 px, **beide
+  lachen breit.** Strassman-Foto: 4032×3024, Pupillenabstand 115 px, **beide
+  lachen breit, er trägt einen Hut.** **Auflösung ist nicht das Kriterium,
+  das Register ist es** — ein Foto vom Drehtag entsteht nach dem Gespräch,
+  und dann sind alle gut gelaunt. (Ich hatte das Foto im Auftrag als Quelle
+  genannt, weil es mehr Pixel hat. **Das war mein Fehler, nicht seiner.**)
+  → betrifft: thumbnails, und zuerst mich
+
 ## Ausgabe 36 — 06.11.2026, 16:55 Kapstadt · EILT: „suicidal" wird in der Einblendung entschärft, der Ton bleibt
 
 Außerhalb des Takts verteilt, auf seine ausdrückliche Bitte — sonst setzt der
