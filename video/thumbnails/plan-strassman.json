@@ -1,0 +1,171 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund-strassman.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_strass1659.png",
+  "rechts": "video/thumbnails/_freisteller/s_strass1373.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 401,
+   "helligkeit": 0.92,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 389,
+   "helligkeit": 1.0,
+   "kontrast": 1.1
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "NOT",
+   "THE ANSWER"
+  ],
+  "kasten": 1,
+  "ziel": "video/thumbnails/strassman-A-not-the-answer.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund-strassman.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_strass1659.png",
+  "rechts": "video/thumbnails/_freisteller/s_strass1373.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 401,
+   "helligkeit": 0.92,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 389,
+   "helligkeit": 1.0,
+   "kontrast": 1.1
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "PSYCHEDELICS",
+   "AREN'T IT"
+  ],
+  "kasten": 1,
+  "ziel": "video/thumbnails/strassman-B-psychedelics-arent-it.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund-strassman.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_strass1659.png",
+  "rechts": "video/thumbnails/_freisteller/s_strass1373.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 401,
+   "helligkeit": 0.92,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 389,
+   "helligkeit": 1.0,
+   "kontrast": 1.1
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "DMT",
+   "& THE BIBLE"
+  ],
+  "kasten": 0,
+  "ziel": "video/thumbnails/strassman-C-dmt-und-bibel.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund-strassman.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_strass1659.png",
+  "rechts": "video/thumbnails/_freisteller/s_strass1373.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 401,
+   "helligkeit": 0.92,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 389,
+   "helligkeit": 1.0,
+   "kontrast": 1.1
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "THE DMT",
+   "PROFESSOR"
+  ],
+  "kasten": 1,
+  "ziel": "video/thumbnails/strassman-D-dmt-professor.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund-strassman.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_strass1659.png",
+  "rechts": "video/thumbnails/_freisteller/s_strass1373.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 401,
+   "helligkeit": 0.92,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 389,
+   "helligkeit": 1.0,
+   "kontrast": 1.1
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "NOW",
+   "DO YOU",
+   "SEE?"
+  ],
+  "kasten": 2,
+  "ziel": "video/thumbnails/strassman-E-now-do-you-see.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund-strassman.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_strass1659.png",
+  "rechts": "video/thumbnails/_freisteller/s_strass1373.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 401,
+   "helligkeit": 0.92,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 389,
+   "helligkeit": 1.0,
+   "kontrast": 1.1
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "#1 DMT",
+   "EXPERT"
+  ],
+  "kasten": 0,
+  "ziel": "video/thumbnails/strassman-F-nr1-dmt-expert.jpg"
+ }
+]
