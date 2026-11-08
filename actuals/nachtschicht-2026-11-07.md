@@ -38,3 +38,36 @@ Nichts im Chat.
   **keine**
 
 Nichts im Chat.
+
+## 06:40 · Morgenlauf, Sonntag
+
+- **06:40** · alle zehn Zweige · keine Bewegung seit 07.11. 04:47 · neue
+  Commits: **keine** · Maßnahme: **Auftrag an Thumbnails (Strassman T−5)**
+
+**Frist ausgelöst, heute fällig:** Strassman **T−5** (Thumbnails) an den
+Thumbnail-Assistenten, `trig_01QthqNsnrdodgpHJ7vq3gCE`, feuert 06:46.
+
+Im Auftrag: Folge, Termin 13.11., Drive-Ordner (samt dem 2,4-MB-Foto, das mehr
+Auflösung hat als ein Standbild), die **15 Thumbnail-Zeilen aus dem
+T−6-Paket** mit der Empfehlung `NOT` / `THE ANSWER`, und seine eigenen
+Titelideen (`#1 DMT Expert`, `The Jewish DMT Professor`).
+
+**Die Ken-Frage steht im Auftrag ausdrücklich drin** — mit dem Zusatz, daß sie
+die Arbeit nicht hinfällig macht, weil Thumbnails an der Folge hängen und
+nicht am Termin. **So ist der 21.10. nicht noch einmal möglich**, als drei
+Thumbnails umsonst gebaut wurden, weil ich einen Auftrag als seinen ausgegeben
+hatte.
+
+**Dazu habe ich ihn gebeten, einen alten Blocker zu melden statt ihn
+hinzunehmen:** auf seiner Liste `WAS-ICH-BRAUCHE.md` vom 20.10. stehen sieben
+gesperrte Hosts, darunter `export-download.canva.com` — ohne den liefert er
+mit einer 600-px-Vorschau statt 1080 px. **Die Netzwerkregel fasse ich nicht
+an**; wenn es ihn wieder einschränkt, soll er es sagen, dann lege ich es ihm
+vor.
+
+**Heute raus:** Clip 10–20 Min, **keine Quelle**. Unverändert seit gestern:
+nichts beauftragt, solange dreizehn Stücke auf Abnahme warten. **Vorrat 2.**
+
+**Nächste Frist:** T−3 (Shorts gebaut) am **10.11.** bei Cinematic.
+
+**Lernkanal:** nichts Neues, zweiter Lauf in Folge.
