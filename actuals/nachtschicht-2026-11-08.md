@@ -37,3 +37,39 @@ Nichts im Chat.
   **keine**
 
 Nichts im Chat.
+
+## 06:40 · Morgenlauf, Montag
+
+- **06:40** · alle zehn Zweige · keine Bewegung seit 08.11. 05:02 · neue
+  Commits: **keine** · Maßnahme: **keine**
+
+**Heute raus:** **Ep_58 · „Breakdown"** (The Garden), seit 06.11. 14:53 fertig,
+mit entschärfter Einblendung. *Mein Vorschlag auf diesen Tag, nicht seine
+Freigabe* — Ep_58 hatte er am 29.10. mit *„wenn wir mit den anderen Shorts
+fertig sind"* freigegeben. **Vorrat 2.**
+
+**Morgen greift T−3 (Shorts gebaut) bei Cinematic — und morgen ist der Tag, an
+dem die beiden offenen Fragen wirklich beißen.** Deshalb habe ich **nicht**
+vorgezogen, obwohl Cinematic frei ist:
+
+1. **Cinematic darf nicht rendern, solange nicht klar ist, welche Fassung die
+   Folge ist.** Das ist seine eigene Feststellung aus T−8 vom 04.11.: die
+   15,50-GB-Datei ist die ganze Sitzung, und die **2:56 Gesprächspause bei
+   01:06:22** ist der Beleg, daß eine Schnittfassung noch aussteht. Rendert er
+   aus der Rohdatei und kommt danach ein Schnitt, ist jede Zeitmarke daneben.
+2. **Die Ken-Stern-Frage**, dritter Tag offen.
+
+**Was Thumbnails und Shorts gemeinsam haben, und warum nur eins davon
+blockiert:** beide hängen an der **Folge**, nicht am Termin — Ken statt Rick
+macht sie also nicht hinfällig. **Shorts hängen zusätzlich an der Fassung**,
+und die ist offen. Deshalb lief T−5 problemlos und T−3 nicht.
+
+**Zwei Zeilen von ihm lösen beides:**
+- *Kommt für Strassman noch eine Schnittfassung vom Cutter?* → dann kann
+  Cinematic T−3 bauen.
+- *13.11. Ken oder Rick?* → bei Ken braucht Ken T−10 sofort, vier Tage vorher.
+
+**T−2 am 11.11. ist meiner** (Paket vollständig bei ihm) — das kann ich
+unabhängig vorbereiten, es fehlen darin nur die Shorts.
+
+**Lernkanal:** nichts Neues, dritter Lauf in Folge.
