@@ -8996,3 +8996,36 @@ erbeten hat, kosten ihn Zeit und nehmen ihm seine Stimme aus dem Text.
 **Dazu, aus demselben Vorgang:** er streicht gern den klugen Nebensatz und
 setzt dafür direkte Emotion. Aus *„I'll save them for when we're sitting
 down"* wurde **„I'm stoked"** und **„if you're keen"**.
+
+───────────────────────────────────────────────────────────────────
+DER LEBENSZYKLUS EINES GASTES HAT MEHR SCHRITTE ALS GEDACHT (09.11.2026)
+───────────────────────────────────────────────────────────────────
+
+**1. JEDER GAST BRAUCHT ZWEI TERMINE, NICHT EINEN.** Seine Worte, 29.10.:
+
+> *„One thing I like to do before every podcast: meet up briefly IRL sometime
+> in the days beforehand. In my experience it just makes the whole thing more
+> personal and sets us up for a deeper, better conversation."*
+
+**„Before every podcast"** — das Vorgespräch ist kein Sonderfall, es ist Teil
+der Buchung. Wer einen Gast in Kapstadt plant, plant **Vorgespräch plus
+Aufnahme**. Eine Databank-Zeile auf *Confirmed* mit einem Datum ist
+unvollständig, solange das Vorgespräch nicht steht.
+
+**2. NACH DER VERÖFFENTLICHUNG KOMMT NOCH ETWAS.** Er schickt Gästen
+Collab-Einladungen und einen Drive-Ordner mit den Shorts — *„grab whatever you
+like"*, so am 06.11. an Kyle. **Der Faden endet also nicht mit der
+Veröffentlichung.**
+
+**3. ZWEI REGELN FÜR DEN TON, aus seinen Korrekturen an einem
+Terminvorschlag:**
+
+- **Nichts darüber behaupten, was für den Empfänger leicht ist.**
+  *„Would be easy for both of us ist total grenzüberschreitend. Ich weiß nicht,
+  was easy für ihn ist."* Zulässig ist nur die eigene Seite: `on my end`,
+  `would fit right in`.
+- **Einfühlung als Vorspann ist kriecherisch, nicht höflich.**
+  Zu *„Fires first, always — no rush on this at all"* plus drei Zeilen
+  Rückversicherung: *„viel zu ja, argkriecherisch."* Wenn der andere schreibt,
+  dass er im Stress ist, behandelt er das als **Terminfrage**: ein Satz, eine
+  Entscheidung, weiter.
