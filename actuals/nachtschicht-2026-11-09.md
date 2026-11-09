@@ -37,3 +37,23 @@ Kingsbury-Entscheidungen, von denen eine (die Namen) am 06.11. beim
 YouTube-Manager in Arbeit war.
 
 Nichts im Chat.
+
+## 00:40 · die Antwort hat gegriffen
+
+- **00:40** · Gastbuchung · **entblockiert** — Commit `ff60cf4` um **19:46**,
+  eine Minute nach meiner Antwort: *Lebenszyklus eines Gastes: zwei Termine,
+  und was nach der Veröffentlichung kommt* · neue Commits: **1** · Maßnahme:
+  **keine**
+- **00:40** · die übrigen neun · keine Bewegung · neue Commits: **keine** ·
+  Maßnahme: **keine**
+
+**Die Regel ist dort gelandet, wo sie hingehört:** nicht als Notiz zu Brendan,
+sondern als **Lebenszyklus** in ihrem Handbuch und Lernkanal — zwei Termine je
+Gast, und der Collab-Schritt nach der Veröffentlichung. Genau der Teil, von dem
+ich geschrieben hatte, er gehöre in die Vorgehensweise und nicht in eine Zeile.
+
+**Der eigentliche Abgleich** (Outreach-Doc ↔ Notion ↔ Postfach) steht noch
+offen. **Kein zweites Anstupsen** — sie arbeitet, und zweimal in derselben
+Nacht aus demselben Grund ist ausdrücklich verboten.
+
+Nichts im Chat.
