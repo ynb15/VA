@@ -9189,3 +9189,61 @@ wirklich fehlt, ist nicht Produktion, sondern **Abnahme** — zwölf fertige
 Stücke (drei Aaronson, neun Kingsbury) warten auf seine Entscheidung. Das ist
 ein anderer Befund als „der Kasten ist leer“, und ich habe ihn eine Woche
 lang falsch gemeldet.
+
+
+## VOICE — DREI BEFUNDE AUS DER WOCHE 02.–09.11.2026
+
+Drei gesendete Threads, alle englisch. Zwei davon tragen etwas, das keine
+Stilnotiz ist, sondern eine Arbeitsregel.
+
+### 1. Das Vorgespräch vor der Aufnahme ist eine stehende Gewohnheit von ihm
+
+**Seine Worte an Brendan Kane, 29.10. 11:24:**
+
+> *„One thing I like to do before every podcast: meet up briefly IRL sometime
+> in the days beforehand. In my experience it just makes the whole thing more
+> personal and sets us up for a deeper, better conversation."*
+
+**„Before every podcast"** — das ist kein Einzelfall, das ist sein Verfahren.
+**Für die Gastbuchung heißt das: ein Gast in Kapstadt braucht zwei Termine,
+nicht einen.** Das Vorgespräch gehört in die Buchung, nicht als Zusatz dazu.
+
+Dazu seine Form, wie er es anbietet: **zwei konkrete Vorschläge, nicht eine
+offene Frage** — am 08.11. ein Abendspaziergang oder ein Kaffee am Morgen,
+beides in Kapstadt, beides mit Ortsangabe. Und er bezahlt (*„lunch or some
+black gold on me"*).
+
+### 2. Er schickt Gästen nach der Veröffentlichung Collab-Einladungen
+
+**Mail an Kyle Kingsbury, 06.11. 15:08**, Anrede *„Howdy Kyle"*, Abschied
+*„Cheers, YNB"*:
+
+> *„Here are the promised collab invites so the content gets some extra reach
+> for your channel too"*
+
+Darin: eine Einladung für den **Hauptpodcast**, fünf für **Clips** (Ketamine ·
+Crisis · Fatherhood · Masculinity · Mushroom), drei für **Shorts** (Meaning ·
+Ceremony · Fatherhood) — und ein geteilter **Drive-Ordner**
+(`1bmIi6TYK_yhrvt9V4S2rEE9DW4wMzY_H`) mit dem Satz *„grab whatever you like"*,
+damit der Gast die Shorts für Instagram nehmen kann.
+
+**Das ist ein Arbeitsschritt, den ich nicht kannte**, und er kommt **nach** der
+Veröffentlichung. Er gehört in die Folgenkette — als Schritt nach T+0, nicht
+als Einfall.
+
+**Und ein Fehler darin, den ich nur melden kann:** **alle neun Links sind
+identisch.** Es ist neunmal dieselbe Collaboration-URL
+(`…/UCr1SCZOfJJzdM5nT8i-I-XA/collaboration/UC5r4pxlAtt2alIOIGjdn4Qw`).
+Klickt Kyle sie durch, bekommt er **eine** Einladung, nicht neun. Die Mail ist
+raus; ich kann daran nichts tun außer es ihm zu sagen.
+
+### 3. Der Gruß fällt weg, wenn der Faden warm ist
+
+`Dreaming Big, / Yannick` steht unter der Kaltansprache (27.10.) und unter der
+ersten Antwort (29.10.) — **unter der dritten Mail im selben Faden (08.11.)
+steht gar nichts mehr.** Bei Kyle, einem alten Faden, steht `Cheers, / YNB`.
+
+**Die Lehre für Entwürfe: der Gruß ist eine Funktion der Fadentemperatur,
+nicht des Empfängers.** Kalt: voller Gruß und voller Name. Warm: Kurzform oder
+nichts. Ein `Dreaming Big` unter die fünfte Mail eines Fadens zu setzen ist
+genauso falsch wie es unter der ersten weglassen.

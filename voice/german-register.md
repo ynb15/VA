@@ -623,3 +623,16 @@ und das wäre der falsche Schluss.
 
 Die vier englischen Regeln der Woche stehen in der VOICE-Sektion der Manual
 (Abschnitt *„DAS ENGLISCHE REGISTER, VIER REGELN AUS DER WOCHE 27.09.–05.10."*).
+
+
+---
+
+## 09.11. — Wochenabgleich 02.–09.11.: wieder keine deutsche Mail
+
+`in:sent newer_than:8d` → **drei Threads, alle drei englisch.** Keine deutsche
+Arbeitsmail, keine Eskalation, kein Entwurf von mir, den er umgeschrieben
+hätte. **Geprüft und leer**, wie am 05.10. — das steht hier, damit die Lücke
+nicht als „nicht nachgesehen" gelesen wird.
+
+Die englischen Befunde der Woche stehen in der VOICE-Sektion der Manual unter
+*„DREI BEFUNDE AUS DER WOCHE 02.–09.11."*

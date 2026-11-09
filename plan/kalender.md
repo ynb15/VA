@@ -361,3 +361,46 @@ Reihenfolge.
 
 **Nicht angefasst:** `bin/kalender-bauen.py` trägt weiter Strassman am 13.11.
 Ich ändere das Datum, wenn er es sagt, und nicht vorher.
+
+
+## Meine Zahl „dreizehn Stücke warten auf Abnahme" war falsch — 09.11.2026
+
+**Gefunden im Wöchentlichen Abgleich, in seiner eigenen Mail an Kyle
+Kingsbury vom 06.11. 15:08.** Er schickt Collab-Einladungen und schreibt:
+
+> *„Here are the promised collab invites so the content gets some extra reach
+> for your channel too"*
+
+**Und listet, was draußen ist:**
+
+| Art | Stücke |
+|---|---|
+| Hauptpodcast | 1 |
+| **Clips** | Ketamine · Crisis · Fatherhood · Masculinity · Mushroom |
+| **Shorts** | Meaning · Ceremony · Fatherhood |
+
+**Acht Kingsbury-Stücke sind also veröffentlicht**, nicht neun fertige, die
+auf eine Abnahme warten. Dazu hat er Kyle einen Drive-Ordner freigegeben
+(`1bmIi6TYK_yhrvt9V4S2rEE9DW4wMzY_H`, *„grab whatever you like"*); darin
+liegen drei Shorts, angelegt am **05. und 06.11.**: `… Fatherhood.mp4`
+(60,8 MB), `… Son.mp4` (41,1 MB), `… Meaningful.mp4` (24,9 MB).
+
+**Ich habe sechs Tage lang „dreizehn Stücke warten auf Deine Abnahme" in
+jeden Bericht und auf jedes Board geschrieben.** Das war falsch, und es war
+die zentrale Aussage meiner Woche — ich habe daraus sogar begründet, warum
+ich nichts Neues beauftrage.
+
+**Warum es passiert ist, und es ist dasselbe wie am 03. und 07.11.:** ich habe
+den Zustand gegen die **Zweige** geprüft, und seine Veröffentlichungen
+hinterlassen dort keine Spur. Ein Agent liefert eine Datei; **ob sie
+veröffentlicht wird, steht nur auf YouTube und in seinem Postausgang.**
+
+**Was ich nicht weiß und nicht behaupte:** die Video-IDs. **Alle neun Links in
+seiner Mail sind identisch** — neunmal dieselbe Collaboration-URL. Ich kann
+daraus also nicht ablesen, welches Video welche ID hat, nur dass er diese neun
+Stücke als draußen bezeichnet.
+
+**Regel, die daraus folgt: der Postausgang ist eine Quelle für den
+Veröffentlichungsstand, nicht nur für das Register.** Beim täglichen Sweep
+gehört `in:sent newer_than:2d` dazu, wenn der Kalender behauptet, etwas liege
+noch bei ihm.
