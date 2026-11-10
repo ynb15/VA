@@ -47,3 +47,11 @@ strasman -> Strassman
 strassman -> Strassman
 rick strasman -> Rick Strassman
 sub stack -> Substack
+# Ken-Stern-Folge (14.09., transkribiert 10.11.): Namen aus seinem Vorbereitungsdoku.
+ken stern -> Ken Stern
+kern stern -> Ken Stern
+npr -> NPR
+bill clinton -> Bill Clinton
+tucker carlson -> Tucker Carlson
+steve bannon -> Steve Bannon
+republican like me -> Republican Like Me
