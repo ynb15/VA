@@ -6,7 +6,7 @@ Quelle: eigenes Transkript aus dem Rohton, Zeiten in **Rohzeit**.
 
 In 11 Stuecken gerechnet; die Grenzen liegen auf Sprechpausen.
 
-**UNFERTIG — 5 von 11 Stuecken fehlen noch:** 59.2–69.3 min, 69.3–79.5 min, 79.5–89.1 min, 89.1–99.1 min, 99.1–105.6 min
+**UNFERTIG — 2 von 11 Stuecken fehlen noch:** 89.1–99.1 min, 99.1–105.6 min
 
 **Ohne Sprecherzuordnung.** Die Aufnahme liegt als eine Mischung vor, nicht als getrennte Spuren. Wer spricht, steht hier deshalb nicht; lieber keine Angabe als eine erfundene.
 
@@ -1953,3 +1953,1019 @@ In 11 Stuecken gerechnet; die Grenzen liegen auf Sprechpausen.
 **[00:59:03]** is what makes a civilization strive.
 
 **[00:59:06]** Political leaders think all of this is a mental health problem or to make it even more profane
+
+**[00:59:12]** a chemical imbalance problem. 47 million Americans are on antidepressants. No country on this planet
+
+**[00:59:21]** medicates its people more aggressively in the name of mental health than the United States.
+
+**[00:59:27]** Basically, the health system keeps trying to treat it like a broken car engine.
+
+**[00:59:33]** Simply prescribe some pills, adjust this chemical, tweak that neurotransmitter. But
+
+**[00:59:39]** Big pharma won't heal this disease, because the truth is, it's a meaning deficiency problem,
+
+**[00:59:46]** a disease of the soul. A pill that adjusts serotonin levels can take the edge off,
+
+**[00:59:53]** useful in an acute psychological crisis, sure, but they don't help you process grief,
+
+**[00:59:59]** reconnect with your values or find meaning again after losing someone you love. They don't
+
+**[01:00:05]** Give you a reason to live and nobody is asking the only question that actually matters
+
+**[01:00:11]** What's your reason to live?
+
+**[01:00:14]** Yeah, love that so, um
+
+**[01:00:20]** Let's talk about some pieces that first of all
+
+**[01:00:24]** Where'd you write that on subsec on my sub? Yeah. Yeah. Um, what kind of reactions you get to it?
+
+**[01:00:31]** Not many
+
+**[01:00:33]** but the one I
+
+**[01:00:34]** got were
+
+**[01:00:36]** Damn, this is on point
+
+**[01:00:38]** Yeah.
+
+**[01:00:39]** So let me just react to a few pieces of it,
+
+**[01:00:43]** because I think a lot of that's really well said.
+
+**[01:00:46]** Let's talk about that fact that being lonely
+
+**[01:00:49]** is equivalent to smoking 15 cigarettes a day,
+
+**[01:00:55]** a number we contribute to research
+
+**[01:00:56]** from Julia Holt-Lonstadt, who's a professor at BYU.
+
+**[01:01:02]** And I say her name, and I give her credentials,
+
+**[01:01:04]** because it's not just a thing that people says.
+
+**[01:01:09]** It's actually rooted in hundreds of studies
+
+**[01:01:12]** about the impact of loneliness on our health.
+
+**[01:01:18]** And I talk about this a lot, and people
+
+**[01:01:22]** ask me about why that could possibly be true.
+
+**[01:01:25]** We understand the absence of health care
+
+**[01:01:27]** and the impact of our health.
+
+**[01:01:28]** We understand smoking or being obese
+
+**[01:01:33]** or not getting enough exercise or eating poorly.
+
+**[01:01:36]** We all understand that.
+
+**[01:01:37]** We've been trained to think about those things that
+
+**[01:01:39]** make us healthy.
+
+**[01:01:43]** But we're actually humans, because as a function
+
+**[01:01:46]** of evolution and biology, are very social creatures.
+
+**[01:01:50]** Because being social was a means of survival.
+
+**[01:01:54]** And being cut off from the herd meant danger.
+
+**[01:01:59]** And our bodies know that.
+
+**[01:02:01]** And being chronically lonely, your body
+
+**[01:02:06]** warns you about that through chronic inflammation.
+
+**[01:02:09]** And chronic inflammation leads to cognitive decline,
+
+**[01:02:15]** it leads to heart disease, it leads to cancers,
+
+**[01:02:17]** it leads to all the things that
+
+**[01:02:20]** create all-cause mortality.
+
+**[01:02:22]** So it's really a very high-risk thing
+
+**[01:02:25]** because we have been built to be social creatures.
+
+**[01:02:30]** And when we lose those connections to other people,
+
+**[01:02:34]** our body gives us danger signals and hurts us because of it.
+
+**[01:02:39]** And it's increasingly hard to be social creatures in this age.
+
+**[01:02:42]** I think that's the challenge.
+
+**[01:02:43]** And that's the public health crisis, right?
+
+**[01:02:48]** It's the loss of connection with other people.
+
+**[01:02:50]** It's the loss of purpose goes with it,
+
+**[01:02:53]** because purpose generally comes from things
+
+**[01:02:56]** you do with other people, whether it's work
+
+**[01:02:59]** volunteering or be with your family those things that give us purpose are
+
+**[01:03:02]** almost almost entirely social I mean there are things you do by yourself of
+
+**[01:03:06]** course but by and large you can't have true meaning of life if you're just by
+
+**[01:03:12]** yourself and that's the challenge and the time we my son's generation spends
+
+**[01:03:18]** an hour less day with friends than my generation did and that puts them at
+
+**[01:03:25]** at all sorts of risk.
+
+**[01:03:27]** And that's a crisis of technology
+
+**[01:03:32]** that drives us to be out by ourselves.
+
+**[01:03:35]** And so the parallel to that, the companion of that,
+
+**[01:03:38]** is the decline of institutions that bring us together.
+
+**[01:03:41]** People ask me a lot about, how do you get out there
+
+**[01:03:43]** being socially connected?
+
+**[01:03:44]** So that's what I'm trying to do.
+
+**[01:03:45]** I'm trying to be an introvert,
+
+**[01:03:46]** trying to be socially connected.
+
+**[01:03:49]** The challenges is the third space is the public squares
+
+**[01:03:52]** that brought us together without thinking a lot about it
+
+**[01:03:56]** are just in long-term decline.
+
+**[01:03:58]** So you have to work harder.
+
+**[01:04:01]** You have to want it more.
+
+**[01:04:02]** You have to be intentional about social connection now,
+
+**[01:04:07]** social connection and purpose.
+
+**[01:04:08]** And I largely think about the second half of life
+
+**[01:04:10]** of how, as you hit retirement,
+
+**[01:04:11]** as you become an empty nester,
+
+**[01:04:13]** as you lose the connections of lifetime just because
+
+**[01:04:17]** of life's transitions, how do you
+
+**[01:04:21]** Find and being communion with other other humans and it's hard. I mean and now I sorry when people ask me I said it's like
+
+**[01:04:27]** It's like look diets are hard exercise routines are hard social connections hard
+
+**[01:04:32]** But you got to want it and do it because of yourself what it means to your community
+
+**[01:04:37]** Yeah, it's been striking for me Ken like ever since I started this podcast
+
+**[01:04:41]** I've done maybe like a few dozen episodes on four different continents and
+
+**[01:04:47]** one thing that keeps overlapping is
+
+**[01:04:51]** It's people that gives us meaning, right?
+
+**[01:04:57]** And we see it time and again, the Blue Zones, your longevity project.
+
+**[01:05:05]** Community is an essential, maybe the most essential part of human nature.
+
+**[01:05:12]** We got someone like Ram Dass saying, hey, if you look for the key to life, it's be
+
+**[01:05:19]** of service right and we talked about that on your show briefly if you remember I threw in the African
+
+**[01:05:27]** proverb Ubuntu yes remember yeah the definition I don't remember this but I remember liking when
+
+**[01:05:32]** you said it yeah and I find it beautiful so most people misinterpreted most westerners
+
+**[01:05:40]** misinterpreted as I am because we are but in fact there's no I in Ubuntu technically
+
+**[01:05:49]** it actually means a person is a person through other people or as I like to translate it
+
+**[01:05:59]** we are who we are through our relationships and with me living in South Africa and getting time
+
+**[01:06:11]** getting to spend time with indigenous tribes like the Zulus, the Khoi, the
+
+**[01:06:16]** the Sun tribes, it's exactly that.
+
+**[01:06:21]** Like the elders from these tribes keep saying,
+
+**[01:06:25]** this is what they see, what we are missing and losing
+
+**[01:06:30]** more and more in our Western world, the connection to others.
+
+**[01:06:37]** And I think that's beautiful.
+
+**[01:06:40]** I've written it down, and I think
+
+**[01:06:42]** I wrote it down last time, and then promptly forgot it,
+
+**[01:06:44]** and I'll probably forget again.
+
+**[01:06:45]** But I think it's a really important concept.
+
+**[01:06:48]** And I think more and more people are recognizing that
+
+**[01:06:51]** and recognizing that technology is the enemy
+
+**[01:06:56]** of that human connection.
+
+**[01:06:58]** The challenge is we don't know how to wean ourselves off it.
+
+**[01:07:02]** I'll tell you a story.
+
+**[01:07:04]** It's probably four or five months ago now.
+
+**[01:07:08]** I was at National Airport waiting for a delayed flight
+
+**[01:07:12]** to Phoenix.
+
+**[01:07:14]** And I'm a guy who in sort of a crowd like that at a time
+
+**[01:07:19]** like that would bury myself in a book or put on my headphones.
+
+**[01:07:23]** And I've been challenging myself not to do that.
+
+**[01:07:25]** And this day, I happened to start
+
+**[01:07:27]** chatting with some guy who was also on the flight.
+
+**[01:07:29]** He was also delayed.
+
+**[01:07:31]** And he told me a story that made me really glad
+
+**[01:07:34]** that I hadn't done what I normally would do.
+
+**[01:07:37]** And he was going to Phoenix to do a weekend retreat
+
+**[01:07:45]** for children of soldiers killed in action,
+
+**[01:07:52]** so a group of very specific, at-risk kids
+
+**[01:07:55]** who've gone through very traumatic life experiences.
+
+**[01:07:59]** And he told me a story that when they first started doing it,
+
+**[01:08:03]** so obviously a very hard job and a very important job,
+
+**[01:08:06]** when they were designing these weekend
+
+**[01:08:10]** retreats for these kids, one of the things they decided early
+
+**[01:08:14]** on is they were going to make the kids give up
+
+**[01:08:16]** their phones for the entire weekend.
+
+**[01:08:19]** And they were very nervous about this
+
+**[01:08:20]** for obvious reasons.
+
+**[01:08:21]** This is a group of kids, and you're trying to help them.
+
+**[01:08:24]** And the first thing you do is give up your companion.
+
+**[01:08:27]** And they didn't know how that would be received
+
+**[01:08:29]** and whether they'd be able to hold the line
+
+**[01:08:31]** or whether it was the right thing to do.
+
+**[01:08:34]** And what they learned immediately
+
+**[01:08:35]** was the enormous relief that those kids had
+
+**[01:08:38]** that they were going to give up their phones,
+
+**[01:08:41]** that they were permissioned to and required to,
+
+**[01:08:43]** because they wanted to but didn't know how,
+
+**[01:08:45]** and that the idea that they were forced
+
+**[01:08:47]** to give up their phones was like a burden being
+
+**[01:08:51]** take off of them.
+
+**[01:08:52]** And in a very small way, I saw it with my own son
+
+**[01:08:55]** last year when he was a senior in high school.
+
+**[01:08:57]** That school decided they didn't require all these kids
+
+**[01:08:59]** to put their phones in these things called yonder pouches
+
+**[01:09:02]** and not use them during the school day.
+
+**[01:09:04]** and all the kids were angry about what was happening.
+
+**[01:09:07]** And as soon as they gave up the phones,
+
+**[01:09:09]** it was like, they forgot about them.
+
+**[01:09:11]** And a big issue became a non-issue immediately.
+
+**[01:09:15]** And I think there's a whole thing out there is that.
+
+**[01:09:20]** We want to be human. We know we need to be human. We know we got to act differently before we don't know how to do it
+
+**[01:09:27]** And when others swoop in and make it easier and make it possible, that's great
+
+**[01:09:32]** but that doesn't happen most of the time and you know these algorithms we've described which are
+
+**[01:09:37]** addictive and
+
+**[01:09:39]** Once you start scrolling I experienced myself hard to get off
+
+**[01:09:44]** Is a real danger to how we need to live our lives and to that moral society described
+
+**[01:09:50]** yeah totally and I can't I couldn't resonate more I do digital detoxes on a
+
+**[01:09:58]** regular basis I can like up to two weeks and whenever I do this it's such like I
+
+**[01:10:05]** I just feel so much resistance getting back onto my devices and time and
+
+**[01:10:12]** again I just push it back for like just one more day just two more days
+
+**[01:10:16]** Right. And I even experienced it like on a micro level, I do one rest slash offline day a week.
+
+**[01:10:23]** Sometimes I get to grant myself like two or even three days. And then it's like, it's,
+
+**[01:10:30]** I don't want to get back into getting sucked in, into the devices, right. But
+
+**[01:10:38]** just as you said, like even people like you and me who are aware of these issues,
+
+**[01:10:46]** and really keen to foster human connection,
+
+**[01:10:49]** I get sucked in.
+
+**[01:10:51]** Like, it's inevitable.
+
+**[01:10:52]** You know, with me, I'm not on social media.
+
+**[01:10:55]** I deleted my Instagram like five years ago
+
+**[01:10:58]** as an experiment for a whole year.
+
+**[01:11:01]** Never went back.
+
+**[01:11:02]** Like I knew after four weeks that I would never go back.
+
+**[01:11:05]** I used TikTok once, I told you that anecdote,
+
+**[01:11:09]** used TikTok once during in the midst of the pandemic,
+
+**[01:11:14]** pandemic 2020 some 2020 downloaded it got sucked into the platform two hours
+
+**[01:11:22]** straight and I was like oh shit this yeah this is not good deleted right away
+
+**[01:11:28]** and told myself I would never go back yeah I came back just for you I don't
+
+**[01:11:35]** want that burden you should go back off the the it's one of the things I
+
+**[01:11:42]** think about a lot which is when the devices seem to be indispensable like how
+
+**[01:11:48]** can I live without texting or email or being a moment's availability I'm old
+
+**[01:11:55]** enough that I can remember the before times somehow humans seem to survive
+
+**[01:11:59]** and even flourish more than we are now at a time with a lot less
+
+**[01:12:03]** technology so it's not you can't blame it all on technology and there
+
+**[01:12:08]** obviously a lot of really good use cases for technology,
+
+**[01:12:12]** but we did okay without a lot of these things.
+
+**[01:12:14]** And we would do better if we had a more measured view
+
+**[01:12:19]** of technology and they weren't so designed
+
+**[01:12:21]** to be as addictive and all in companies as they are.
+
+**[01:12:25]** But it's hard.
+
+**[01:12:25]** I mean, you know, it requires in this age
+
+**[01:12:29]** for people to take personal responsibility,
+
+**[01:12:32]** you know, and you describe how you did.
+
+**[01:12:34]** You made some choices, you went off some platforms,
+
+**[01:12:36]** You put away your phone for two weeks.
+
+**[01:12:40]** I'm not committed to doing that.
+
+**[01:12:42]** But I have committed to changing the patterns
+
+**[01:12:45]** that I developed over the last 40 years, essentially
+
+**[01:12:52]** my entire adulthood.
+
+**[01:12:53]** One of the things that brought me
+
+**[01:12:55]** to this topic of social connection
+
+**[01:12:56]** is we can talk about how I got interested in social connection.
+
+**[01:13:01]** But I'll tell you about the beginning
+
+**[01:13:03]** of the year of living socially.
+
+**[01:13:06]** Yeah, I was actually about to ask you,
+
+**[01:13:07]** because I'm still trying to fill the gap
+
+**[01:13:11]** between publishing Republicans like me
+
+**[01:13:15]** and you getting into social connection.
+
+**[01:13:18]** So two answers to that question, which is one,
+
+**[01:13:22]** this is a through line, right?
+
+**[01:13:23]** Because a lot of this is about,
+
+**[01:13:25]** so my book after Republican like me
+
+**[01:13:27]** was called Healthy to 100,
+
+**[01:13:28]** which was about the role of social connection
+
+**[01:13:30]** and healthy aging.
+
+**[01:13:33]** There's sort of two answers to that question.
+
+**[01:13:39]** One is the through line I think has to do with us being eye to eye with other humans
+
+**[01:13:46]** and treating them not as fixed stick figures about what other people tell us they are
+
+**[01:13:51]** and talking and connecting with people.
+
+**[01:13:54]** And Republican like me is sort of about the social costs of that disconnection and
+
+**[01:13:59]** Healthy 100 is sort of about the personal costs of that disconnection
+
+**[01:14:03]** the others like I'm a guy with a short attention span and I jump from thing to thing and
+
+**[01:14:07]** Find I find you get energy and value about learning new things. And so I got interested in
+
+**[01:14:14]** Interested in political polarization. I also got interested in healthy aging and the difference between longevity and aging
+
+**[01:14:20]** and actually got I'll tell the story of introduced the
+
+**[01:14:24]** the story of
+
+**[01:14:26]** why I got interested in sort of this topic of longevity,
+
+**[01:14:29]** mostly, as have been many things in my career by accident.
+
+**[01:14:32]** I just got introduced to this woman named Laura Carstensen
+
+**[01:14:34]** who's a professor at Stanford
+
+**[01:14:37]** and the founder of the Stanford Center on Longevity.
+
+**[01:14:39]** She actually just retired from that this past week.
+
+**[01:14:43]** And Laura's a sort of the amazing scholar
+
+**[01:14:45]** and communicator and just wanted to meet her.
+
+**[01:14:48]** And I got introduced to her, we talked,
+
+**[01:14:50]** I thought we were gonna talk about aging,
+
+**[01:14:52]** which was an interest to me because I was getting older
+
+**[01:14:54]** and to me aging meant what are we gonna do
+
+**[01:14:56]** with all these old people, because the country's getting
+
+**[01:14:58]** older, the world's getting older.
+
+**[01:14:59]** And she wanted to talk about longevity,
+
+**[01:15:01]** and how do you rethink society so that more people can
+
+**[01:15:04]** have longer, healthier life, beginning at birth.
+
+**[01:15:08]** And that was sort of an aha moment.
+
+**[01:15:11]** Got me really interested in the topic of healthy aging
+
+**[01:15:15]** and sort of my interest in connection
+
+**[01:15:20]** and listening to others sort of brought me into,
+
+**[01:15:22]** eventually brought me to the topic of social connection
+
+**[01:15:25]** and the role that plays in healthy communities
+
+**[01:15:28]** and healthy lives.
+
+**[01:15:29]** How do you differentiate between aging and longevity?
+
+**[01:15:32]** So aging is really about the problem of older societies,
+
+**[01:15:35]** right?
+
+**[01:15:36]** 10,000 people are turning 65 every day.
+
+**[01:15:38]** Holy crap, that's a silver-sue nominee.
+
+**[01:15:40]** How do we handle this crisis?
+
+**[01:15:43]** Longevity begins with the notion
+
+**[01:15:45]** that the doubling lifespan over the last 150 years
+
+**[01:15:49]** is one of the greatest achievements of modern life,
+
+**[01:15:52]** but that we still act as if life
+
+**[01:15:55]** expectancy is 45 in terms of how we set the norms of life
+
+**[01:15:58]** and our expectations of what we do and when we do it.
+
+**[01:16:01]** And that creates problems, but also opportunities
+
+**[01:16:04]** to rethink the life course.
+
+**[01:16:06]** And just an example of that, the retirement age of 65
+
+**[01:16:11]** can be traced back to what Bismarck did in 1888,
+
+**[01:16:14]** I think, in terms of setting the first retirement
+
+**[01:16:16]** age for workers in Germany, when the life expectancy was
+
+**[01:16:19]** like 42.
+
+**[01:16:20]** to.
+
+**[01:16:23]** And he did it largely to evade fiscal responsibility.
+
+**[01:16:27]** But somehow we've inherited that rule,
+
+**[01:16:30]** and it's become a social norm as well as a pension plan.
+
+**[01:16:33]** And we think, oh, we're supposed to work
+
+**[01:16:35]** and stop working at 60 or 65.
+
+**[01:16:37]** And that's built into the ethics of companies
+
+**[01:16:39]** and that's built in the ethics of how
+
+**[01:16:41]** we plan our lives.
+
+**[01:16:43]** And that doesn't work for a lot of people
+
+**[01:16:45]** because work is a source of purpose and meaning
+
+**[01:16:48]** and social connection for a lot of people.
+
+**[01:16:50]** And if you retire at 63, because you're
+
+**[01:16:53]** supposed to retire at 63, I think you'll live to 93.
+
+**[01:16:57]** You have 30 years to fill.
+
+**[01:17:00]** And often, that's a recipe for loneliness and disconnection.
+
+**[01:17:04]** It reminds me of one of my favorite quotes
+
+**[01:17:07]** from Viktor Frankl, which really
+
+**[01:17:15]** made me reflect on my ideas of aging.
+
+**[01:17:22]** Franco said, what you have experienced,
+
+**[01:17:26]** no power on earth can take from you.
+
+**[01:17:29]** Not only our experiences, but all we have done,
+
+**[01:17:32]** whatever great thoughts we may have had,
+
+**[01:17:35]** and all we have suffered, all this is not lost.
+
+**[01:17:38]** So it is past.
+
+**[01:17:40]** We have brought into being, having been
+
+**[01:17:43]** a kind of being and perhaps the surest kind. And it made me write a little mini essay about
+
+**[01:17:56]** the art of aging. Aging is not a slow surrender to time, but a powerful journey into the
+
+**[01:18:03]** fullest expression of who we are meant to become. Sorry, I'll read that again. Aging
+
+**[01:18:10]** is not a slow surrender to time, but a powerful journey into the fullest expression
+
+**[01:18:15]** of who we are meant to become.
+
+**[01:18:17]** It is not the dimming of the light, but the deepening of its glow.
+
+**[01:18:21]** With each passing year we gain layers of insight, empathy and resilience.
+
+**[01:18:27]** The rush of youth gives way to the richness of perspective.
+
+**[01:18:31]** The urgency of ambition softens into the quiet confidence of knowing what truly matters.
+
+**[01:18:37]** To grow older is not to fade.
+
+**[01:18:39]** It is to become more rooted, more radiant, more whole.
+
+**[01:18:44]** It is a privilege, a transformation, and a quiet triumph that many are not granted,
+
+**[01:18:49]** and for that it should be honored, not feared.
+
+**[01:18:52]** Yeah, that sounds right, in large part.
+
+**[01:18:56]** In large part?
+
+**[01:18:57]** Yeah, well, and it is a little bit, to my ears, an airbrushed version of aging.
+
+**[01:19:05]** So the part I think is a well-crafted statement of what's called the U-curve
+
+**[01:19:10]** shape of happiness and that's a reflection of social science data that
+
+**[01:19:16]** shows we're actually happiest when we're young and when we're old and it's the
+
+**[01:19:19]** middle ages when we're often crushed by responsibility they're often the
+
+**[01:19:23]** toughest and you make me look forward to my future
+
+**[01:19:29]** at a time of, you know, people who have made it through good times and bad are often more resilient and
+
+**[01:19:37]** to your point, wise and have learned lessons of life and can deal with the ups and downs and vicissitudes of life.
+
+**[01:19:44]** So I think that's a
+
+**[01:19:48]** noble statement of that.
+
+**[01:19:50]** I do think we also have clear, you know, every stage of life comes with its challenges and
+
+**[01:19:56]** you know, I don't think we can say
+
+**[01:19:58]** the later, you know, later quartile of life for many, let's be clear on it, it
+
+**[01:20:06]** comes with a lot of challenges, comes with the challenges of Asian, comes out
+
+**[01:20:09]** often with the challenges of physical decline, it comes with the challenge
+
+**[01:20:12]** sometimes of cognitive decline, and we tend to see that very clearly. So I
+
+**[01:20:18]** want to acknowledge that, right, those are real challenges of that time
+
+**[01:20:20]** of life, but there are challenges
+
+**[01:20:23]** at every stage of life.
+
+**[01:20:24]** And the balance of the second half,
+
+**[01:20:30]** we would be better off, I would say,
+
+**[01:20:33]** both acknowledging those challenges,
+
+**[01:20:37]** but also the values that you just described
+
+**[01:20:39]** and understanding why people actually
+
+**[01:20:41]** tend to be happier in the second half of life,
+
+**[01:20:43]** because they're better off.
+
+**[01:20:46]** It's not that things are perfect,
+
+**[01:20:48]** but they're better off managing those challenges
+
+**[01:20:50]** because they've been through various fires of life.
+
+**[01:20:53]** And have realized that most of the struggles they had,
+
+**[01:21:01]** they thought they were going through,
+
+**[01:21:03]** didn't really matter after all.
+
+**[01:21:07]** I think that's right, but again, I mean,
+
+**[01:21:10]** my dad had a stroke at 81 in his last two years of life
+
+**[01:21:14]** were very painful.
+
+**[01:21:19]** So I think we all have to be sort of clear-eyed
+
+**[01:21:21]** about some of the physical challenges and the risks
+
+**[01:21:23]** of decline.
+
+**[01:21:24]** I know healthy and happy 100-year-olds,
+
+**[01:21:28]** but the risks of the latter half of life that we all see.
+
+**[01:21:32]** So I don't want to sort of say everything
+
+**[01:21:34]** is fantastic in the second half of life,
+
+**[01:21:37]** because that's unrealistic and won't register with people.
+
+**[01:21:40]** Those challenges are real, but the upsides
+
+**[01:21:42]** of learning wisdom and ability to be resilient
+
+**[01:21:45]** in the second half of life.
+
+**[01:21:47]** The challenge, I think, that I see for myself
+
+**[01:21:49]** and for a lot of people like me, is at 63, life is telling me
+
+**[01:21:54]** I should retire and step back and get ready
+
+**[01:21:57]** for that inevitable decline.
+
+**[01:22:00]** And I look at it and say, I'm 63.
+
+**[01:22:03]** I got a lot of years good and bad in front of me.
+
+**[01:22:06]** How am I going to have meaning, purpose,
+
+**[01:22:08]** and value in those years?
+
+**[01:22:09]** How do I maximize those years?
+
+**[01:22:11]** And that's, I think, the question, not to say,
+
+**[01:22:13]** it's all horrible, as Americans tend to think,
+
+**[01:22:16]** or it's all fantastic, because that's not
+
+**[01:22:18]** what life is like, but it's like,
+
+**[01:22:20]** how to make the most of it,
+
+**[01:22:21]** how to have that meaning that you described,
+
+**[01:22:23]** how to make the second half of life
+
+**[01:22:25]** as purposeful and meaningful,
+
+**[01:22:27]** and connected as the first.
+
+**[01:22:32]** And a lot of things, as Americans,
+
+**[01:22:35]** we tend to really look at the bad parts
+
+**[01:22:37]** and sort of blow them up.
+
+**[01:22:40]** I can't tell you how many of my friends at 63
+
+**[01:22:44]** forget something and imagine that
+
+**[01:22:47]** is the beginning of cognitive decline, which is very rare
+
+**[01:22:50]** at 63, or 60, or 65.
+
+**[01:22:54]** And I forget things, and I tell myself,
+
+**[01:22:57]** I've forgotten things all my life,
+
+**[01:22:59]** but I never thought of them as age-related.
+
+**[01:23:02]** And I'm a very smart 18-year-old,
+
+**[01:23:04]** and that kid can't remember what I told him 20 seconds
+
+**[01:23:08]** ago.
+
+**[01:23:08]** So it happens all the time, and it's not related to age.
+
+**[01:23:12]** It's not related to cognitive decline.
+
+**[01:23:15]** But we're kind of told to start worrying about that
+
+**[01:23:17]** and think about those ages of the second half of life
+
+**[01:23:21]** as part of an inevitable climb.
+
+**[01:23:24]** It's just a different stage of life.
+
+**[01:23:26]** On your journey of aging,
+
+**[01:23:30]** while going from Democrat to Republican to Independent,
+
+**[01:23:38]** what have you learned about people?
+
+**[01:23:42]** What's been standing out throughout all these years?
+
+**[01:23:45]** So I think what always strikes me about people, people as stick figures in social media and
+
+**[01:24:02]** as sort of tools of social media are intensely dislikable.
+
+**[01:24:07]** People face-to-face are interesting and likable and relatable and grateful for conversation
+
+**[01:24:18]** and be heard.
+
+**[01:24:19]** And we all kind of want the same things at some level.
+
+**[01:24:22]** And if you pause and don't walk down the street
+
+**[01:24:27]** and categorize people and shove them in some box
+
+**[01:24:32]** and talk to them, I like almost all of them.
+
+**[01:24:37]** And respect almost all of them and know
+
+**[01:24:40]** that they kind of want the same thing for themselves
+
+**[01:24:42]** and their family as I want for me and my family.
+
+**[01:24:44]** And we're all better off of seeing
+
+**[01:24:46]** the humanist in others.
+
+**[01:24:47]** I said this to you before we got on air.
+
+**[01:24:49]** I'll just tell you about the little,
+
+**[01:24:51]** if it's okay if I can tell this to you.
+
+**[01:24:53]** Please.
+
+**[01:24:53]** Yeah, yeah.
+
+**[01:24:54]** So, you know, the year of living socially
+
+**[01:24:57]** is me as an introvert, you know,
+
+**[01:24:58]** so let me give you sort of the background
+
+**[01:25:00]** if I could about the year of living socially.
+
+**[01:25:02]** So, I wrote the book Healthy to 100
+
+**[01:25:04]** really about sort of social infrastructure.
+
+**[01:25:06]** Like, how do we create the conditions?
+
+**[01:25:08]** So I've been talking about decline of churches
+
+**[01:25:09]** and unions and other things.
+
+**[01:25:11]** How do we create sort of social infrastructure
+
+**[01:25:13]** for people to be connected,
+
+**[01:25:15]** especially in the second half of life
+
+**[01:25:16]** because that's sort of my focus.
+
+**[01:25:19]** And after my book came out, I would start talking to folks about it and giving talks and, you know, podcasting us.
+
+**[01:25:26]** And inevitably, the reaction was like, that's really interesting, this thing about social infrastructure.
+
+**[01:25:31]** But what am I supposed to do?
+
+**[01:25:33]** Like, I don't have time to wait around for that, you know, people to build this social infrastructure.
+
+**[01:25:36]** What should I do?
+
+**[01:25:38]** And so I started giving people advice based on what I learned in my research.
+
+**[01:25:41]** And it's, you know, pretty solid advice, I like to think.
+
+**[01:25:45]** And it gradually dawned on me that I would become a sort of a do-as-I-say-not-as-I-do kind of guy when I came to it.
+
+**[01:25:51]** Like most of my friends, or if I ranked my friends, which I'm not going to do,
+
+**[01:25:57]** I know they'd be mostly from 40 years ago, from sort of those formative experiences, school or early work.
+
+**[01:26:06]** And I was approaching this transition period, we're at 63, my son, my only kid, is going off to college, which he did last week.
+
+**[01:26:15]** And how was the goodbye?
+
+**[01:26:19]** I'll tell you about that.
+
+**[01:26:20]** Yeah, because it was not nearly as picturesque as I thought it would be.
+
+**[01:26:24]** So but I'll come back to that because I like telling the story.
+
+**[01:26:27]** So the so the idea.
+
+**[01:26:28]** So I gradually sort of like, hey, I'm at this transition period
+
+**[01:26:31]** where people are at risk for social isolation and loneliness.
+
+**[01:26:35]** Let me give other people advice by doing not a saying.
+
+**[01:26:38]** And so I've committed this year of looking socially
+
+**[01:26:41]** and trying to join things and volunteer and reconnect with old friends
+
+**[01:26:45]** all the things I sort of talked about. What's the day-to-day mission of this
+
+**[01:26:49]** living socially? Well it's the day-to-day mission is to tell stories that inspires
+
+**[01:26:56]** others to do, because if a clown like me can be socially connected, someone who has
+
+**[01:27:00]** not been very good at 40 years, can build social connections, so can you.
+
+**[01:27:05]** Whoever you are, you're probably as good or better than I am. And inspire I
+
+**[01:27:11]** I think people to see that it's important to them, not just for health reasons, but
+
+**[01:27:19]** for them as as as human beings.
+
+**[01:27:20]** So with this podcast, you accomplished your mission for today.
+
+**[01:27:24]** I'm trying. I'm trying to do that.
+
+**[01:27:28]** So so the story from yesterday.
+
+**[01:27:35]** So a couple of weeks ago, I was walking down and I know, you know, that's about
+
+**[01:27:39]** sort of building close friendships,
+
+**[01:27:41]** but social connection is also about a broader ecosystem
+
+**[01:27:45]** of often what's called weak ties
+
+**[01:27:46]** and people you run into and engage with
+
+**[01:27:51]** on an occasional basis.
+
+**[01:27:52]** You may not know their names, but you have contact them.
+
+**[01:27:56]** And it often makes, the research shows,
+
+**[01:27:57]** often makes you and them feel better
+
+**[01:27:59]** and be better just by that human contact.
+
+**[01:28:01]** So I was walking to the gym the other day
+
+**[01:28:03]** and anyone's watching me sees I'm sort of like
+
+**[01:28:06]** I'm an older guy.
+
+**[01:28:07]** I'm not very fashionable.
+
+**[01:28:10]** I don't really care that much about how I dress.
+
+**[01:28:12]** Some kid walking down the street the other way
+
+**[01:28:15]** looked at me, a kid probably 15,
+
+**[01:28:18]** and said, nice fit, as I was walking by to the gym.
+
+**[01:28:21]** I was wearing this old University of Buffalo
+
+**[01:28:23]** sweatshirt.
+
+**[01:28:24]** And first, I didn't understand what nice fit meant.
+
+**[01:28:27]** So nice outfit, right?
+
+**[01:28:29]** And 100 times out of 100, I think
+
+**[01:28:31]** a kid saying something like that to me on the street
+
+**[01:28:34]** would be mocking me.
+
+**[01:28:35]** For whatever reason, I actually thought he was being honest.
+
+**[01:28:37]** It made me feel good just for that type of thing.
+
+**[01:28:39]** So it made me research the value of compliments
+
+**[01:28:44]** and how people feel and think about themselves.
+
+**[01:28:47]** And there's actually research on the value of compliments.
+
+**[01:28:50]** So I decided, as yesterday's social experiment,
+
+**[01:28:52]** to just go out and give people compliments
+
+**[01:28:54]** on the streets of Austin.
+
+**[01:28:56]** And first, it was really hard.
+
+**[01:28:58]** It was hard to do, to think about what
+
+**[01:29:01]** to say to people that seemed appropriate.
+
+**[01:29:03]** and then sort of push through that and do that.
