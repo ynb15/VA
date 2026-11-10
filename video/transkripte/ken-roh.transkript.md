@@ -6,7 +6,7 @@ Quelle: eigenes Transkript aus dem Rohton, Zeiten in **Rohzeit**.
 
 In 11 Stuecken gerechnet; die Grenzen liegen auf Sprechpausen.
 
-**UNFERTIG — 8 von 11 Stuecken fehlen noch:** 29.6–39.6 min, 39.6–49.2 min, 49.2–59.2 min, 59.2–69.3 min, 69.3–79.5 min, 79.5–89.1 min, 89.1–99.1 min, 99.1–105.6 min
+**UNFERTIG — 5 von 11 Stuecken fehlen noch:** 59.2–69.3 min, 69.3–79.5 min, 79.5–89.1 min, 89.1–99.1 min, 99.1–105.6 min
 
 **Ohne Sprecherzuordnung.** Die Aufnahme liegt als eine Mischung vor, nicht als getrennte Spuren. Wer spricht, steht hier deshalb nicht; lieber keine Angabe als eine erfundene.
 
@@ -993,3 +993,963 @@ In 11 Stuecken gerechnet; die Grenzen liegen auf Sprechpausen.
 **[00:29:28]** to changing political and critical environments.
 
 **[00:29:34]** But what do you respond to the people?
+
+**[00:29:37]** accusing NPRU as becoming more and more,
+
+**[00:29:44]** as having become more and more politically biased,
+
+**[00:29:47]** like leaning significantly towards the left.
+
+**[00:29:50]** Well, I think it's not true in the sense
+
+**[00:29:54]** I don't think that organizations like NPR
+
+**[00:29:56]** has probably changed that much over time.
+
+**[00:29:58]** What it is, it's also a bubble, right?
+
+**[00:30:02]** I mean, I sort of started off with leaving the liberal bubble.
+
+**[00:30:05]** It is a journalistic bubble, and it is a self-replicating bubble.
+
+**[00:30:08]** People inside tend to hire people of similar views
+
+**[00:30:11]** and similar outlooks.
+
+**[00:30:13]** And they're very conscious about what
+
+**[00:30:18]** you might call progressive diversity views of racial
+
+**[00:30:26]** diversity, gender diversity, background diversity.
+
+**[00:30:30]** They're less sensitive, I think,
+
+**[00:30:32]** to the ideas of political diversity and the need to,
+
+**[00:30:34]** and the impact that lack of political diversity has on,
+
+**[00:30:37]** not on reporting, per se, but on story selection, attitudes,
+
+**[00:30:41]** ideas of what's important, who to trust and who not to trust.
+
+**[00:30:44]** And that's hard.
+
+**[00:30:45]** Other people have criticized NPR and the New York Times
+
+**[00:30:48]** and the Washington Post and the LA Times of that,
+
+**[00:30:50]** people on the inside and the outside.
+
+**[00:30:52]** And I think it's just proven to be
+
+**[00:30:54]** very hard for self-replicating institutions
+
+**[00:30:58]** to think differently about how to have different voices,
+
+**[00:31:02]** especially when the people there are people
+
+**[00:31:06]** like everyone else in America.
+
+**[00:31:07]** They're distrusting of people of other views increasingly.
+
+**[00:31:11]** And that's, I say that not having talked to people
+
+**[00:31:15]** at NPR about that over almost 20 years that I've been gone,
+
+**[00:31:19]** but just the nature of human beings
+
+**[00:31:20]** in a society that's increasingly polarized.
+
+**[00:31:24]** And I think that's a very hard thing
+
+**[00:31:26]** for institutions to change.
+
+**[00:31:30]** But would you say how aware are generalists,
+
+**[00:31:36]** journalists generally, or the journalists
+
+**[00:31:39]** you've worked with of their personal political bias?
+
+**[00:31:46]** I don't know if I'm in the best.
+
+**[00:31:48]** First of all, I have to say, Janik,
+
+**[00:31:50]** I've been gone from public radio for almost two decades.
+
+**[00:31:53]** So I think if I was going to, one thing I learned
+
+**[00:31:58]** Which is, by the way, I think, I just want to say,
+
+**[00:32:00]** a great institution filled with really good reporters who
+
+**[00:32:03]** are committed to fact-based reporting.
+
+**[00:32:05]** And all the prisons that people level at it,
+
+**[00:32:08]** and I level at it from time to time,
+
+**[00:32:11]** should be understanding the context
+
+**[00:32:12]** that these are critical institutions that we need even
+
+**[00:32:15]** more today than we did 20 years ago in there.
+
+**[00:32:21]** In terms of how aware are people,
+
+**[00:32:23]** so when you ask me how aware are reporters of their biases,
+
+**[00:32:27]** I can't answer that.
+
+**[00:32:28]** I'm not there.
+
+**[00:32:29]** It's been a long time.
+
+**[00:32:30]** I'll just say, it's very hard for human beings, myself
+
+**[00:32:34]** included, to step outside their body and say,
+
+**[00:32:43]** are my thoughts biased by the institutions I live in,
+
+**[00:32:46]** the people I'm surrounded by?
+
+**[00:32:48]** Of course they are.
+
+**[00:32:48]** That's the nature of humans.
+
+**[00:32:50]** And it's a very hard thing to consciously deal with that,
+
+**[00:32:55]** especially when you're super busy every day
+
+**[00:32:57]** and trying to do your job.
+
+**[00:32:58]** And that's the nature of humans in tribal societies.
+
+**[00:33:03]** And you were one of the very few people that actually
+
+**[00:33:06]** made that step to leave your bubble, which is, to me,
+
+**[00:33:12]** just very unique.
+
+**[00:33:14]** And especially for me as a foreigner,
+
+**[00:33:21]** similar to what I experience or observe in South Africa,
+
+**[00:33:26]** probably the most socially-injust place on this planet still.
+
+**[00:33:33]** It's extremely hard for me to, or challenging,
+
+**[00:33:38]** to understand America's socio-political dynamics,
+
+**[00:33:44]** just like it's in South Africa,
+
+**[00:33:46]** and it's the perfect example of the Dunning-Kruger effect.
+
+**[00:33:50]** The more I study, the more I try to understand,
+
+**[00:33:54]** the more confused I get really or at least realize that there's still so much
+
+**[00:34:01]** more to learn and to understand and to study right but you're you've become
+
+**[00:34:09]** this like I want to say social cultural bridge because you've lived in both
+
+**[00:34:15]** worlds and I thought if there's one guy to ask the question it's you like
+
+**[00:34:21]** What's the single biggest misconception you you've experienced the left has about the right and vice versa?
+
+**[00:34:31]** So
+
+**[00:34:34]** So I think
+
+**[00:34:44]** So let's step back for a second
+
+**[00:34:46]** Yeah, I think sort of you know, you sort of talk about my journey
+
+**[00:34:49]** So my journey since I left NPR now almost about 18 years ago
+
+**[00:34:54]** has really been to
+
+**[00:34:58]** Challenge myself to do things that I would not ordinarily do. So I think society and technology is pushing us to be
+
+**[00:35:06]** More isolated and you're asking me the questions. You're asking me about political isolation
+
+**[00:35:13]** But my through line is it's also pushing us to be
+
+**[00:35:17]** Personally isolated from other humans and
+
+**[00:35:21]** It's easy in this world to
+
+**[00:35:25]** Increasingly easy fall into the trap of
+
+**[00:35:28]** Being only with people you agree with or being by yourself and being lonely and it takes work and
+
+**[00:35:36]** Focus and commitment to say I'm gonna step outside
+
+**[00:35:40]** Either my bubble or my house
+
+**[00:35:43]** You know the number of people have no close friends has gone way up the number of people who are socially isolated has gone way up
+
+**[00:35:51]** And we can talk about those I hope we can talk about those and so my and
+
+**[00:35:59]** Being a person who's not necessarily
+
+**[00:36:02]** terribly outgoing or inclined to seek out
+
+**[00:36:07]** other people of different views, my journey
+
+**[00:36:12]** has been, in my reporting and my storytelling,
+
+**[00:36:15]** has been focused on how can I force myself to do that?
+
+**[00:36:17]** How can I do things that society used to make easy,
+
+**[00:36:21]** but now makes exceptionally hard?
+
+**[00:36:23]** And in doing that, you end up talking with people
+
+**[00:36:26]** and getting appreciation for other people,
+
+**[00:36:30]** and seeing people on eye-to-eye levels,
+
+**[00:36:36]** and understanding that what makes them tick
+
+**[00:36:40]** often is really quite admirable and laudable and likable,
+
+**[00:36:43]** but you don't see it unless, if you don't see it,
+
+**[00:36:45]** if all you do is listen to what other people are saying
+
+**[00:36:48]** about them.
+
+**[00:36:49]** And I think, I don't know there's one myth.
+
+**[00:36:53]** I'm also 10 years past writing Republican, like me,
+
+**[00:36:55]** So I'm not sure what the current myth is.
+
+**[00:36:57]** I'm not going to say this is one thing you guys know
+
+**[00:37:00]** about the other.
+
+**[00:37:02]** But I think there is a view on both the increasingly loud,
+
+**[00:37:11]** hard left and increasingly loud hard right
+
+**[00:37:14]** that others are lesser.
+
+**[00:37:16]** They have wrong values, wrong morals.
+
+**[00:37:19]** They're bad people.
+
+**[00:37:22]** They're racist or hate America or whatever the thing is.
+
+**[00:37:26]** And there's proof for that, right?
+
+**[00:37:30]** Because you can see some of those people on social media,
+
+**[00:37:32]** and they're loud, and they're awful.
+
+**[00:37:35]** But that's not most people.
+
+**[00:37:37]** Most people are decent.
+
+**[00:37:39]** Just as they were in 1970, when we liked the other side,
+
+**[00:37:42]** or at least respected the other side,
+
+**[00:37:43]** most of the people on that side are, A,
+
+**[00:37:49]** don't care that much about politics.
+
+**[00:37:50]** That's not what motivated them.
+
+**[00:37:51]** You talked about your mentor, and he's all about family.
+
+**[00:37:55]** Most people are.
+
+**[00:37:56]** Most people are about their jobs, and their families,
+
+**[00:37:59]** and their close-knit communities, the people nearby.
+
+**[00:38:02]** And they're just trying to find the best thing for that circle.
+
+**[00:38:08]** They're not paying that much attention
+
+**[00:38:10]** to all this craziness that's going on in politics.
+
+**[00:38:15]** I think if more people spent time with other people,
+
+**[00:38:19]** whether it's people they agree with or not,
+
+**[00:38:22]** we'd all be better off.
+
+**[00:38:23]** because we would not be judging the people
+
+**[00:38:27]** by the worst in us.
+
+**[00:38:29]** We'd be more inclined to judge people
+
+**[00:38:30]** by what we see in front of us,
+
+**[00:38:32]** which is often a mix of good and bad.
+
+**[00:38:34]** Yet, we still have to get people
+
+**[00:38:37]** to the table in the first place, right?
+
+**[00:38:39]** And that's exactly what we lost,
+
+**[00:38:41]** and that's why we are on the mission we are on,
+
+**[00:38:46]** which is trying to,
+
+**[00:38:49]** instead of trying to bring people back together
+
+**[00:38:53]** and talk to each other, with each other, instead of about each other, which the algorithm,
+
+**[00:39:01]** like, what the algorithm, what the algorithms go against, essentially, because they favor
+
+**[00:39:10]** the extremes, right, the extreme figures. And I...
+
+**[00:39:14]** Right, so this is an intention society, right? And that's, you know, what gets
+
+**[00:39:19]** attention is being loud and crass and antagonistic. And that does, so these
+
+**[00:39:27]** sentences are wrong, but also gives a warped view of the world. Because most
+
+**[00:39:30]** people aren't like that. Yeah, totally, totally. What's the word? A kind of...
+
+**[00:39:38]** not disrupt it, screwed view of the world. Yeah, skewed. I think skewed view. Skewed. Exactly.
+
+**[00:39:49]** But I actually like screwed view. Because that's both. I would just really like the
+
+**[00:39:56]** to use the opportunity to maybe make people on either sides make reflect and bring them back
+
+**[00:40:05]** to the point that hey most likely you guys all want the same essentially you
+
+**[00:40:11]** know for example for example feeling safe making your family feel safe right
+
+**[00:40:18]** one of the most foundational desires and needs really of human beings and I
+
+**[00:40:26]** like one of the themes the most provocative themes I came across was the
+
+**[00:40:37]** gun rights or the conflict the debate about guns and I would actually like to
+
+**[00:40:43]** know in the first place what's some what's America's what's the American
+
+**[00:40:51]** an obsession with guns about?
+
+**[00:40:54]** Well, that's actually an interesting question.
+
+**[00:40:58]** And I'm probably, as a guy who's fired a gun twice, probably
+
+**[00:41:01]** not the right guy to tell you.
+
+**[00:41:03]** But let's actually start off, if I
+
+**[00:41:04]** could take a step back for a second,
+
+**[00:41:06]** which is one of the most interesting things that
+
+**[00:41:08]** has always, which actually got me into a Republican like me.
+
+**[00:41:14]** And again, I'm kind of 10 years out on the data.
+
+**[00:41:16]** So this is take this for what it's worth.
+
+**[00:41:19]** When I was writing the book in 2016, one of the things that
+
+**[00:41:23]** really interested me was how much political polarization,
+
+**[00:41:28]** how much we disliked the other side
+
+**[00:41:30]** and increased over the last 50 years,
+
+**[00:41:32]** but how little issue polarization had changed.
+
+**[00:41:35]** We actually didn't disagree any more than we used to.
+
+**[00:41:38]** There were obviously important political disagreements
+
+**[00:41:41]** in any society.
+
+**[00:41:43]** But it largely been the same.
+
+**[00:41:44]** I mean, we largely agreed on a lot of things
+
+**[00:41:48]** and disagree on some of the details.
+
+**[00:41:52]** So even though we didn't disagree on the substance
+
+**[00:41:55]** any more than we did, we disagreed
+
+**[00:41:56]** on what we thought of each other had changed.
+
+**[00:41:58]** And that, to me, is sort of the fundamental riddle
+
+**[00:42:02]** of our time.
+
+**[00:42:04]** I'm not, again, familiar with sort of, I think,
+
+**[00:42:07]** actually, issue polarization has sort of increased
+
+**[00:42:10]** over the last 10 years, driven, I think,
+
+**[00:42:12]** by political polarization, not the other way around.
+
+**[00:42:15]** But fundamentally, we don't disagree nearly on the issues
+
+**[00:42:19]** nearly as much as we think we do.
+
+**[00:42:22]** So guns, we think of as a fundamental disagreement
+
+**[00:42:25]** between the Second Amendment rights people
+
+**[00:42:27]** and other people.
+
+**[00:42:31]** And of course, there are people who hold very abstract,
+
+**[00:42:35]** hardline views on get rid of all the guns
+
+**[00:42:38]** or can't touch any gun, I should be able to own
+
+**[00:42:41]** a tank and a machine gun.
+
+**[00:42:42]** I mean, there are people who hold those views.
+
+**[00:42:44]** But most people actually sort of gravitate towards the middle
+
+**[00:42:48]** and believe that they're sort of responsible decision choices
+
+**[00:42:53]** that can be made about between around registration
+
+**[00:42:58]** and limitations, certain types of guns.
+
+**[00:43:03]** But as always, the extremes hold the high ground
+
+**[00:43:07]** in terms of the public conversation,
+
+**[00:43:08]** because they care the most.
+
+**[00:43:10]** So politicians are scared of them
+
+**[00:43:12]** because they vote and spend on it,
+
+**[00:43:14]** even though it's a relatively small number of people.
+
+**[00:43:17]** And they set the terms of the debate,
+
+**[00:43:21]** at least the public sense about it.
+
+**[00:43:23]** So I think to your question about what
+
+**[00:43:29]** is it about Americans with guns,
+
+**[00:43:31]** I didn't grow up around guns.
+
+**[00:43:32]** I mean, I only shot one twice and quite poorly both times.
+
+**[00:43:38]** So I'm not the person to talk about gun culture.
+
+**[00:43:41]** But guns are a part of culture, and that's part of the country.
+
+**[00:43:45]** And a lot of people think of themselves
+
+**[00:43:47]** as responsible gun owners and don't
+
+**[00:43:50]** know why their culture, their use of guns
+
+**[00:43:54]** either for sporting or protection,
+
+**[00:43:55]** should be constrained by the fact that there
+
+**[00:43:57]** are bad actors out there.
+
+**[00:43:59]** And I think that's the fundamental challenge,
+
+**[00:44:03]** which is tens of millions of Americans own guns
+
+**[00:44:07]** and use them safely on a regular basis.
+
+**[00:44:15]** And then there are tens of millions of Americans
+
+**[00:44:17]** who never have owned a gun
+
+**[00:44:18]** and think that's a strange thing to do.
+
+**[00:44:22]** And that's actually, I think,
+
+**[00:44:23]** also in a big sprawling country, a cultural divide,
+
+**[00:44:26]** those of you as part of sort of the normal way of life
+
+**[00:44:29]** and those who mostly who live in a city
+
+**[00:44:32]** who just think of them as the sort of sources of danger.
+
+**[00:44:35]** Do you recall the numbers?
+
+**[00:44:37]** Because the argument pro-gun rights
+
+**[00:44:41]** is often that places where guns are allowed
+
+**[00:44:44]** are generally safer than places where they are not allowed,
+
+**[00:44:50]** backed up by the quote, the gun in your hand
+
+**[00:44:52]** is better than the cop on the phone.
+
+**[00:44:54]** Yeah, yeah, so that's a famous line
+
+**[00:44:57]** that's used by gun proponents.
+
+**[00:45:00]** So this guy named John Lott, who used to teach at law
+
+**[00:45:04]** school, and a bunch of other law schools,
+
+**[00:45:08]** got driven out because he was pro-gun, who has done a lot of,
+
+**[00:45:12]** is an economist, has done a lot of research
+
+**[00:45:14]** on the impact of gun and gun regulation on safety,
+
+**[00:45:18]** and has some views.
+
+**[00:45:19]** And I think that sort of sounds like John Lott.
+
+**[00:45:22]** I think there are others who have done research who
+
+**[00:45:24]** says that gun restrictions lead to greater public safety.
+
+**[00:45:31]** I'm not current on those things,
+
+**[00:45:34]** And it's been a long time, so I'm not
+
+**[00:45:35]** going to say which is right and which is wrong.
+
+**[00:45:37]** But there's a different view from people
+
+**[00:45:40]** who study the issue.
+
+**[00:45:41]** And you might say cynically, people
+
+**[00:45:46]** who have been pro-gun tend to produce pro-gun research,
+
+**[00:45:49]** and people who are anti-gun tend
+
+**[00:45:50]** to produce anti-gun research.
+
+**[00:45:54]** My view on this has always been a society without guns
+
+**[00:45:58]** is probably going to be a lot safer.
+
+**[00:46:00]** and look at England, where more people
+
+**[00:46:04]** die from falling off buildings than are shot.
+
+**[00:46:11]** But there are, I think, now hundreds of millions of guns
+
+**[00:46:14]** out there, and we're not going to be a no-gun society, just
+
+**[00:46:18]** not a feasible thing.
+
+**[00:46:20]** How do you create a reasonable structure around that
+
+**[00:46:23]** that allows, takes into account the vastness of guns
+
+**[00:46:29]** this country and it has sort of a public safety minded view of appropriate gun ownership.
+
+**[00:46:37]** Another one of those hot disagreement topics is around religion, I found out.
+
+**[00:46:45]** Like the Uber driver I was talking to this morning was very, very passionate about
+
+**[00:46:53]** claiming that Democrats have lost their faith, really, which makes them be pro,
+
+**[00:47:04]** for example, pro-abortion, pro-gay rights, and that Republicans are generally the
+
+**[00:47:14]** one still holding on to their Christian values. What's your take on that?
+
+**[00:47:20]** Well, you're asking an atheist Jew about Christian values,
+
+**[00:47:24]** going to church and going, although I went to church
+
+**[00:47:26]** yesterday, and I went to church because it's important
+
+**[00:47:29]** as a social institution, not as a religious institution.
+
+**[00:47:33]** I don't know what your Uber driver was talking about.
+
+**[00:47:37]** It may be that there may be more pro-religious attitudes
+
+**[00:47:40]** among Republicans, or that might be a geographic thing
+
+**[00:47:45]** or a cultural thing.
+
+**[00:47:48]** I certainly don't think that changes in religiosity
+
+**[00:47:51]** are necessarily associated with loss of values,
+
+**[00:47:54]** as the Uber driver is suggesting.
+
+**[00:47:57]** I mean, there are faith communities
+
+**[00:47:58]** that are more conservative, and there are actually
+
+**[00:48:01]** faith communities that are more liberal.
+
+**[00:48:04]** When I think about religion, and I'm no longer
+
+**[00:48:08]** in a position to take on the data around who goes to church
+
+**[00:48:12]** and who doesn't, but my views of church
+
+**[00:48:14]** have changed over the last, certainly
+
+**[00:48:17]** the last over 30 years, being raised as a Jewish family
+
+**[00:48:25]** that, for reasons I won't go back to the Holocaust,
+
+**[00:48:31]** isn't terribly interested in religious gatherings.
+
+**[00:48:38]** I sort of grew up being wary of the role
+
+**[00:48:41]** of religion in public life.
+
+**[00:48:44]** But when I wrote Republican, like me, I spent time in, you know, to sort of your retribe
+
+**[00:48:51]** point, I'd say, where do I find conservatives?
+
+**[00:48:53]** Well, let me go to some evangelical churches.
+
+**[00:48:56]** So I spent time in evangelical churches.
+
+**[00:48:59]** And now as I think about human polarization, the difference, the distance that we're putting
+
+**[00:49:05]** in places between each other, I think about religious institutions as a way of bringing
+
+**[00:49:12]** people together.
+
+**[00:49:14]** So one of the challenges we have in a society in which people
+
+**[00:49:17]** are less connected, have less friends, are more lonely
+
+**[00:49:21]** is because the institutions that have historically
+
+**[00:49:25]** brought people together in American life
+
+**[00:49:28]** are all in long-term decline.
+
+**[00:49:29]** And that starts with churches, but it's also unions,
+
+**[00:49:32]** and sewing circles, and health clubs, and PTAs,
+
+**[00:49:34]** and just about anything you think
+
+**[00:49:36]** they're all in long-term decline since roughly 1980.
+
+**[00:49:42]** And so when I think about church now,
+
+**[00:49:45]** I don't think about the political views of churchgoers.
+
+**[00:49:49]** I think of them as human organizations
+
+**[00:49:53]** that create community and bring people together.
+
+**[00:49:56]** And oddly enough, I went here in Austin.
+
+**[00:49:59]** I was visiting my friends, Ryan and Abby.
+
+**[00:50:01]** And on Sunday morning, they go to church.
+
+**[00:50:04]** And so I'm now interested in sort
+
+**[00:50:06]** of the communal aspects of church.
+
+**[00:50:08]** And the pastor gave a, actually,
+
+**[00:50:15]** it's an Anglican church, so it's a rector.
+
+**[00:50:16]** So the assistant rector actually gave a lovely sermon
+
+**[00:50:19]** on forgiveness.
+
+**[00:50:22]** And it turned out to be really a sermon
+
+**[00:50:26]** about social connection and being with people.
+
+**[00:50:30]** And it made me sort of love that guy
+
+**[00:50:33]** for giving that sermon and continues
+
+**[00:50:37]** understanding less of that I think the more that churches and institutions be
+
+**[00:50:42]** less focused on politics and more focused on human connection, creating community
+
+**[00:50:47]** and helping humans be with each other more the more important they'll be in
+
+**[00:50:52]** human in American society. By the way have you ever been to Scientology Church
+
+**[00:50:56]** or is that where your curiosity ends? I've never been to Scientology Church
+
+**[00:51:01]** so I will tell you though the Scientologists will not agree with that
+
+**[00:51:05]** statement because apparently there was a Ken Stern who was a member of
+
+**[00:51:10]** Scientology who left and they don't like it when people leave and they track you
+
+**[00:51:13]** down. So they tracked me down even though I'm not that Ken Stern and they
+
+**[00:51:17]** have, for a while I think they may have even called me, but they continue to send
+
+**[00:51:23]** me mail as if I'm a wayward member of the Scientology Church. So I feel
+
+**[00:51:28]** like I've been to a Scientologist. Would you join me for a little
+
+**[00:51:32]** experiment? That seems like a loaded question so maybe I won't say yes or no
+
+**[00:51:38]** but I'm also also interested in going outside my comfort zone so I'm a little
+
+**[00:51:42]** bit wary of the question but sure hit me up what is it? Yeah I just I'm just
+
+**[00:51:46]** really curious to experience a Scientology service Sunday service if
+
+**[00:51:53]** they do something like that. Why are you interested what what what makes you
+
+**[00:51:57]** curious about Scientology in particular just like nothing theme-based just like
+
+**[00:52:03]** really the experience like I want to I want to know I want to see what's like
+
+**[00:52:07]** what's actually going on inside yeah well I would I join you I don't know
+
+**[00:52:14]** maybe I'm generally like to be curious about what makes other people tick
+
+**[00:52:18]** I'm not sure Scientology would be on top of my list of experience that but
+
+**[00:52:24]** Who knows? Maybe on your next awesome visit. Maybe. If it overlaps.
+
+**[00:52:28]** I heard you saying that you learned to listen and hold good faith with the other side.
+
+**[00:52:35]** That made me wonder, what's your relationship like nowadays with your very liberal parents
+
+**[00:52:44]** or like your DC environment in general? Have you become demonized or are you still...
+
+**[00:52:50]** So, well, my parents are long since deceased, so that's not the issue.
+
+**[00:53:03]** So I continue to live in a liberal house in a liberal community.
+
+**[00:53:06]** I don't spend a lot of times, other than my wife, drooling about politics, other than
+
+**[00:53:16]** being sort of true to myself and my own personal views about issues.
+
+**[00:53:20]** I think a lot of my views today are colored by the fact
+
+**[00:53:23]** that we're led by a guy.
+
+**[00:53:24]** We're led, it's not the right term.
+
+**[00:53:26]** The president is a guy who is the embodiment
+
+**[00:53:30]** of political polarization, who lives to demonize others,
+
+**[00:53:33]** who gets value and strength and energy from everything
+
+**[00:53:37]** I detest about American politics,
+
+**[00:53:40]** not listening and demonizing the other side.
+
+**[00:53:44]** So my views are now, I thought
+
+**[00:53:48]** we were sort of, when I wrote the book in 2016,
+
+**[00:53:50]** And I thought we were reaching sort of the peak
+
+**[00:53:52]** of polarization.
+
+**[00:53:53]** And little did I know that everything had gotten worse
+
+**[00:53:58]** and worse and spiraled.
+
+**[00:54:00]** So I think my concerns, when I talk about politics,
+
+**[00:54:05]** I talk about what polarization and demonization is doing
+
+**[00:54:11]** to us and what it is wrecked on American society
+
+**[00:54:17]** and how to think about putting that back.
+
+**[00:54:21]** And hopefully, hopefully, elections
+
+**[00:54:26]** will step us away from, I think, a precipice
+
+**[00:54:29]** that it's very dangerous.
+
+**[00:54:31]** In a country living in bubbles with thicker and thicker
+
+**[00:54:34]** walls, what still gives you hope
+
+**[00:54:38]** and what actually scares you at the moment?
+
+**[00:54:42]** Well, there's a lot that scares me, everything from AI
+
+**[00:54:44]** to undermining democracy and the rule of law,
+
+**[00:54:51]** demonizing the others, all those things
+
+**[00:54:54]** scare me about what our society has become and could become.
+
+**[00:55:04]** What gives me hope is that despite the sound, two things,
+
+**[00:55:14]** despite what is going on in American politics,
+
+**[00:55:17]** I think most people still would like to step back
+
+**[00:55:20]** from the brink, still have faith in others,
+
+**[00:55:23]** in their families, in their communities.
+
+**[00:55:26]** And if we can expand the definition of communities,
+
+**[00:55:29]** we can step back from that brink.
+
+**[00:55:32]** And the second thing which is related,
+
+**[00:55:34]** and I think if we could talk about my current project,
+
+**[00:55:39]** in an increasingly lonely society,
+
+**[00:55:43]** I think more and more people understanding
+
+**[00:55:45]** the risk of loneliness and the challenges of technology
+
+**[00:55:51]** and desire to put aside some of the technologies
+
+**[00:55:56]** and the trappings of hate and be with people
+
+**[00:56:01]** sort of on what I think of sort of a human level.
+
+**[00:56:04]** And that's why I don't know that more people are going
+
+**[00:56:06]** to church than they used to.
+
+**[00:56:08]** And certainly, I don't think people are more religious
+
+**[00:56:11]** than they used to be, but I think
+
+**[00:56:13]** more people are interested in churches as places
+
+**[00:56:17]** to be with other people, and to be
+
+**[00:56:19]** at points of community and social connection.
+
+**[00:56:21]** And I don't think the numbers have increased in churchgoers,
+
+**[00:56:26]** but the decline, I think, has been
+
+**[00:56:28]** arrested to a certain degree.
+
+**[00:56:29]** And that, to me, is sort of a signal
+
+**[00:56:31]** that people are starting to get the idea that things need
+
+**[00:56:34]** to change in how we live our lives.
+
+**[00:56:35]** And that's not just for society's sake,
+
+**[00:56:37]** for our own personal sake, for our own personal health
+
+**[00:56:39]** and well-being that we need to be with humans,
+
+**[00:56:43]** not technology, not alone,
+
+**[00:56:45]** listening to social media out there,
+
+**[00:56:47]** talking to other people not by yourselves
+
+**[00:56:52]** and chained to your iPhone.
+
+**[00:56:56]** Yeah, speaking of which,
+
+**[00:56:57]** I recently published an essay about the meaning crisis,
+
+**[00:57:04]** which touches on our both missions.
+
+**[00:57:08]** and I would like to read an excerpt of it.
+
+**[00:57:13]** America's Deeper Crisis.
+
+**[00:57:14]** We are the wealthiest generation
+
+**[00:57:16]** in the history of humanity, yet the unhappiest.
+
+**[00:57:19]** We are more connected than ever and lonelier than ever.
+
+**[00:57:24]** The numbers are nothing but terrifying.
+
+**[00:57:26]** Half of all American adults report feeling lonely,
+
+**[00:57:29]** a condition with health risks
+
+**[00:57:31]** comparable to smoking 15 cigarettes a day.
+
+**[00:57:34]** 81% of adults who reported loneliness
+
+**[00:57:38]** also suffered from anxiety or depression.
+
+**[00:57:42]** Statistics so shocking that in May 2023,
+
+**[00:57:45]** US Surgeon General Dr. Vivek Murthy
+
+**[00:57:48]** declared loneliness a nationwide epidemic.
+
+**[00:57:52]** But loneliness is just the tip of the iceberg.
+
+**[00:57:55]** Americans are more disconnected from meaning and community
+
+**[00:57:58]** than at any point in history.
+
+**[00:58:00]** Church attendance has created,
+
+**[00:58:03]** marriage rates are falling,
+
+**[00:58:05]** social organizations are dying.
+
+**[00:58:07]** Today, the average American spends more time scrolling
+
+**[00:58:11]** than in face-to-face interactions.
+
+**[00:58:13]** The results?
+
+**[00:58:14]** Nearly one in four adults experience
+
+**[00:58:16]** mental illness every year.
+
+**[00:58:18]** Deaths from suicide and drug overdose
+
+**[00:58:21]** have reached an all-time high.
+
+**[00:58:24]** But underneath these numbers is something deeper
+
+**[00:58:27]** that almost nobody seems to realize, a meaning crisis.
+
+**[00:58:31]** Frankel had a term for this.
+
+**[00:58:33]** He called it the existential vacuum,
+
+**[00:58:36]** that when people lose their sense of meaning,
+
+**[00:58:38]** three things follow, aggression, addiction, and oppression.
+
+**[00:58:43]** He wrote that in 1946, and it reads like a prediction of 2026.
+
+**[00:58:49]** And yet, American society doesn't
+
+**[00:58:51]** seem to see the root of this virus,
+
+**[00:58:53]** or maybe they don't want to see it, presumably
+
+**[00:58:56]** because it's profitable for a capitalistic system that's
+
+**[00:59:00]** built on the belief that the pursuit of infinite growth
+
+**[00:59:03]** is what makes a civilization strive.
+
+**[00:59:06]** Political leaders think all of this is a mental health problem or to make it even more profane
