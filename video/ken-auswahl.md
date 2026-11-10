@@ -95,20 +95,43 @@ daran.
 | 9 | 00:50:52–00:51:28 | 0:36 | *„By the way, have you ever been to a Scientology church, or is that where your curiosity ends?"* → *„So I feel like I've been to a Scientologist."* | Es gibt einen zweiten Ken Stern, der Scientology verlassen hat — und sie schreiben seit Jahren dem falschen. Leicht, kurz, völlig ungefährlich. |
 | 10 | 01:28:39–01:30:16 | 1:37 | *„So it made me research the value of compliments and how people feel and think about themselves."* → *„…the value of these small moments seems actually really powerful in an alienated society."* | Er geht los und macht Fremden Komplimente, findet es erst furchtbar, und die meisten freuen sich. **Vorbehalt:** darin der Einschub *„in the post Epstein time"* — der muss raus, sonst kippt der Ton des Stücks. |
 
-## Einer mit Bedingung, nicht in der Liste
+## Kandidat 0 — „Everyone but Republicans", mit Stummschaltung
 
-**„Everyone but Republicans"**, roh **00:07:13–00:08:23** (1:10). Der Nachbar-
-schaftsschwur, der jedes Jahr vorgetragen wird, endet in dem Jahr mit
-*„everyone but Republicans"* — als Witz gemeint, aber nicht wirklich. Der
-Satz danach ist der eigentliche: *„Because 50 years ago, no one even would
-have thought of that as a joke."*
+Roh **00:07:13–00:08:23** (1:10).
+Von: *„Anyway, the Porchfest always begins with what's called the [—]
+Pledge, which goes a little bit different each year."*
+Bis: *„Because 50 years ago, no one even would have thought of that as a
+joke."*
 
-**Warum er nicht in der Liste steht:** der Schwur heißt nach der Straße, in
-der Ken wohnt, und der Name fällt dreimal. Ortsangaben gehen nur bis Stadt
-und Land, in Bild, Ton und Untertitel. Entweder der Straßenname wird
-stummgeschaltet und im Untertitel ersetzt — dann ist es ein sehr starker
-Short — oder die Stelle bleibt liegen. **Das ist keine Entscheidung, die
-ich treffe.**
+Der stärkste kurze Kandidat der Folge: ein Nachbarschaftsschwur, der jedes
+Jahr vorgetragen wird, endet in dem Jahr mit *„everyone but Republicans"* —
+als Witz gemeint, aber nicht wirklich. Und der Satz danach ist der
+eigentliche.
+
+**Der Schwur heißt nach der Straße, in der Ken wohnt.** Entschieden ist:
+**stummschalten und im Untertitel ersetzen, die Stelle bleibt.** Die beiden
+Ausnahmen, in denen gestrichen würde, treffen beide nicht zu — die
+Stummschaltung zerreißt keinen Satz (der Name steht jedes Mal als eigenes
+Wort vor „Street"), und der Witz hängt nicht am Namen, sondern an
+„everyone but Republicans".
+
+**Die drei Stellen im Short, wortgenau gemessen** (nicht aus den
+Segmentzeiten des Transkripts geschätzt — die liegen hier bis zu drei
+Sekunden daneben):
+
+| Rohzeit des Wortes | im Satz | Untertitel statt dessen |
+|---|---|---|
+| **437,32–437,66 s** | „what's called the **Hobart** Street Pledge" | WHAT'S CALLED THE STREET PLEDGE |
+| **448,14–448,38 s** | „we'd recite the **Hobart** Street Pledge" | WE'D RECITE THE STREET PLEDGE |
+| **468,96–469,36 s** | „everyone's welcome on **Hobart** Street" | EVERYONE'S WELCOME ON OUR STREET |
+
+Stumm wird **nur das eine Wort**, mit etwa 0,06 s Rand auf jeder Seite —
+drei Zehntelsekunden, die Sprachmelodie bricht dabei nicht ein. „Street"
+bleibt stehen; wer zuhört, hört eine geschwärzte Stelle und keinen Aussetzer.
+
+**Beide Spuren prüfen.** Die Stummschaltung nützt nichts, wenn der Name in
+der SRT stehen bleibt — der Untertitel ist die zweite Spur, nicht die Kopie
+der ersten.
 
 ## Bewusst nicht vorgeschlagen
 
@@ -118,3 +141,42 @@ Beide sind inhaltlich gut und beide sind so geschnitten in dreißig Sekunden
 missverständlich — Ken sagt bei den Waffen ausdrücklich zweimal, er sei
 nicht der Richtige dafür und nicht auf dem Stand der Forschung. Lieber zu
 defensiv.
+
+## Namen dieser Klasse im ganzen Transkript
+
+Einmal durchgelaufen, damit es beim Rendern nicht noch einmal gesucht
+werden muss. Wortgenau gemessen, wo es gebraucht wird.
+
+### Muss weg, wenn die Stelle verwendet wird
+
+| Rohzeit | Wort | Was es ist | in welchem Vorschlag |
+|---|---|---|---|
+| 379,94–380,46 | **Mount Pleasant** | Viertel | in keinem — nur wenn jemand die ganze Herkunftsgeschichte ab 00:06:03 schneidet |
+| 387,92–388,24 | **Hobart** („a street called …") | Straße | dito |
+| 437,32–437,66 | **Hobart** | Straße | **Kandidat 0** |
+| 448,14–448,38 | **Hobart** | Straße | **Kandidat 0** |
+| 468,96–469,36 | **Hobart** | Straße | **Kandidat 0** |
+| 5550,32–5550,80 · 5551,28–5551,64 | **Wesleyan** ×2 | Hochschule seines Sohnes | in keinem |
+| 01:33:12 · 01:33:26 · 01:34:28 · 01:35:00 | **Wesleyan** ×4 | dito, Segmentzeiten | in keinem |
+
+Die Geschichte vom Abschied am College (01:31:14–01:35:14) trägt den Namen
+der Hochschule **sechsmal** und dazu den Ort (Middletown). Sie steht in
+keinem Vorschlag. Wer sie später will, braucht einen eigenen Durchgang;
+sechs Stummstellen in vier Minuten sind an der Grenze dessen, was man einer
+Tonspur zumuten kann.
+
+### Geprüft und bleibt, mit Grund
+
+* **„a professor at BYU"** (01:00:56, in Short 1) — die Hochschul­zugehörigkeit
+  einer Forscherin in einer Quellenangabe. Sie pinnt niemanden fest; ohne
+  sie wäre die Zahl eine Behauptung.
+* **„this old University of Buffalo sweatshirt"** (01:28:21, in Short 6) —
+  ein Aufdruck auf einem Pullover, kein Ort in seinem Leben.
+* **„National Airport"** (01:07:08, im Sonntagsstück) — ein öffentlicher
+  Verkehrsknoten in der Stadt, die ohnehin genannt werden darf.
+* **Carhenge, Alliance (Nebraska)** (00:01:07) und **Lancaster, PA**
+  (01:29:47) — eine öffentliche Attraktion und die Herkunftsstadt zweier
+  Fremder. Stadt ist erlaubt.
+* **Die anglikanische Kirche in Austin** (00:50:16) wird nicht benannt, und
+  seine Freunde dort nur mit Vornamen. Nichts stummzuschalten; der Vollständig-
+  keit halber notiert.
