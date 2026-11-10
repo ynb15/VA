@@ -55,3 +55,5 @@ bill clinton -> Bill Clinton
 tucker carlson -> Tucker Carlson
 steve bannon -> Steve Bannon
 republican like me -> Republican Like Me
+# Ken Stern: Whisper schreibt NPR in 11 von 27 Faellen als "N.P.R.".
+n.p.r -> NPR

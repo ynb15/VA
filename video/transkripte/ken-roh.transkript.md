@@ -6,8 +6,6 @@ Quelle: eigenes Transkript aus dem Rohton, Zeiten in **Rohzeit**.
 
 In 11 Stuecken gerechnet; die Grenzen liegen auf Sprechpausen.
 
-**UNFERTIG — 2 von 11 Stuecken fehlen noch:** 89.1–99.1 min, 99.1–105.6 min
-
 **Ohne Sprecherzuordnung.** Die Aufnahme liegt als eine Mischung vor, nicht als getrennte Spuren. Wer spricht, steht hier deshalb nicht; lieber keine Angabe als eine erfundene.
 
 ---
@@ -2969,3 +2967,565 @@ In 11 Stuecken gerechnet; die Grenzen liegen auf Sprechpausen.
 **[01:29:01]** to say to people that seemed appropriate.
 
 **[01:29:03]** and then sort of push through that and do that.
+
+**[01:29:06]** I really didn't know how people react with the puzzle by this old guy sort of randomly complimenting them creeping up
+
+**[01:29:14]** Why is he doing this?
+
+**[01:29:15]** Why is he saying, you know, I you know, that's the cutest baby ever seen or I really like that or man
+
+**[01:29:21]** You know, I'm really you know, you seem like a cool guy or a nice couple in the post Epstein time with my
+
+**[01:29:29]** I'm very wary of sort of the creepiness of of this
+
+**[01:29:32]** And I've got to tell you, some people were like, OK, thanks.
+
+**[01:29:39]** But most people seemed really excited to be engaged in that.
+
+**[01:29:43]** And some stopped and talked.
+
+**[01:29:45]** And I had some really great conversations with people.
+
+**[01:29:47]** A pair of tattoo artists from Lancaster, PA,
+
+**[01:29:51]** who were in town.
+
+**[01:29:53]** We talked for a while.
+
+**[01:29:55]** A guy who stood up for a business meeting
+
+**[01:29:58]** just sitting there on his laptop on a Sunday afternoon
+
+**[01:30:01]** really seem very excited to have sort of a human connection. And I'm not
+
+**[01:30:06]** forgetting why I'm telling the story, but just like the idea of the value of these
+
+**[01:30:10]** small moments seems actually really powerful in an alienated society.
+
+**[01:30:16]** 100%. I mean that's the essence of Ubuntu. If I may give you a
+
+**[01:30:22]** suggestion, so you were like on day 12 of this experiment, right? Yeah,
+
+**[01:30:27]** for one year. Yeah, I was thinking giving a gift is one of the 10
+
+**[01:30:35]** principles at Burning Man and I guess Burning Man is like the ultimate social
+
+**[01:30:39]** experiment and the best place to, I would say, finish off your experiment and
+
+**[01:30:46]** it's gonna happen again, it just happened. So yeah, maybe give it a
+
+**[01:30:52]** thought, going to your first Burning Man.
+
+**[01:30:55]** So Burning Man, sort of the culmination of my name is?
+
+**[01:30:57]** Oh, 100%, yeah.
+
+**[01:30:58]** OK, I will give that a thought.
+
+**[01:30:59]** Oh, you come down to South Africa
+
+**[01:31:01]** and we'll take you to the South African version
+
+**[01:31:03]** of Burning Man.
+
+**[01:31:04]** Right.
+
+**[01:31:05]** That's a generous idea.
+
+**[01:31:06]** I like that.
+
+**[01:31:09]** You had asked me another question,
+
+**[01:31:11]** which I said I would tell you the story,
+
+**[01:31:12]** and now I've forgotten what that was.
+
+**[01:31:14]** About when your son left for college.
+
+**[01:31:16]** Oh, yeah, it was.
+
+**[01:31:17]** So, yeah, it was not the sentimental moment, I thought.
+
+**[01:31:23]** So I'll tell you, so.
+
+**[01:31:24]** It was just, it was rather, hell yeah, finally.
+
+**[01:31:27]** No, it wasn't, no, it wasn't that.
+
+**[01:31:28]** It was actually an irritation at the institution.
+
+**[01:31:31]** So, so I, you know, this was the kickoff for my,
+
+**[01:31:35]** so it was kickoff for his year, his period, his life,
+
+**[01:31:38]** his next stage of life.
+
+**[01:31:40]** So a big moment transition for an only child,
+
+**[01:31:43]** our only child, who's been sort of the organizing
+
+**[01:31:45]** principle over my life for the last 18 years.
+
+**[01:31:48]** So excited for him, nervous for him,
+
+**[01:31:52]** but also really sentimental.
+
+**[01:31:54]** And Facebook kept feeding me these pictures of him
+
+**[01:31:57]** as a baby, for whatever reason, like the week leading up to it.
+
+**[01:32:00]** And I would sort of break down in tears as I looked at it.
+
+**[01:32:05]** So I really imagine this kind of sentimental goodbye.
+
+**[01:32:09]** And a lot of my friends, especially,
+
+**[01:32:11]** I'm talking the last of my immediate friends
+
+**[01:32:13]** to become an empty duster, because I'm an older father.
+
+**[01:32:17]** And so a lot of them were texting me about this
+
+**[01:32:20]** and talking about their own experiences
+
+**[01:32:22]** and asking me whether I would sit on a bench
+
+**[01:32:24]** and cry afterwards, or predicting I would.
+
+**[01:32:28]** But what happened was, so he's at Wesleyan College,
+
+**[01:32:31]** Wesleyan University in Connecticut,
+
+**[01:32:33]** which I will say up front is a wonderful institution
+
+**[01:32:35]** and fine school, a great school.
+
+**[01:32:38]** But they've been bringing in first year students for 195
+
+**[01:32:41]** years, and they just still don't have it right.
+
+**[01:32:44]** So Texas, they give us sort of these rules.
+
+**[01:32:47]** You have to show up your slot at 1030,
+
+**[01:32:49]** and the football team will be there
+
+**[01:32:51]** to help you move your kids' stuff to their room.
+
+**[01:32:54]** And then you have this period to help them move in,
+
+**[01:32:56]** and they run off to orientation and things.
+
+**[01:33:01]** And all seem very well managed,
+
+**[01:33:03]** but they're quite insistent that you show up on time.
+
+**[01:33:05]** So we're driving there, we're on time,
+
+**[01:33:07]** and we get to the road that his dorm is on
+
+**[01:33:12]** and it's blocked by the Wesleyan police.
+
+**[01:33:15]** And I'm like, okay, we're supposed to go there.
+
+**[01:33:19]** Waze is telling me to go there.
+
+**[01:33:21]** I'm supposed to be there in seven minutes.
+
+**[01:33:24]** What the heck?
+
+**[01:33:25]** And so I got out of the car,
+
+**[01:33:26]** I went over to the Wesleyan cop and said,
+
+**[01:33:30]** hey, what's the deal?
+
+**[01:33:31]** He said, oh, well, we've reordered as a road,
+
+**[01:33:33]** so it's only one way to keep the traffic flowing.
+
+**[01:33:35]** I'm like, okay, well, how do I get from here
+
+**[01:33:38]** where Wade's is telling me to go
+
+**[01:33:39]** to the other side of the road?
+
+**[01:33:42]** And he must've been asked that question
+
+**[01:33:44]** like a hundred times that day.
+
+**[01:33:45]** And he acted as if this was the first time
+
+**[01:33:47]** anyone had asked him this question.
+
+**[01:33:49]** And he's like, oh, I don't know.
+
+**[01:33:52]** Go over there, take a left,
+
+**[01:33:54]** and just make your way back there.
+
+**[01:33:56]** Like, okay, it must be like one road.
+
+**[01:33:58]** So we go there, and of course we get lost,
+
+**[01:33:59]** and we're on these tiny little streets
+
+**[01:34:01]** in Middletown, Connecticut,
+
+**[01:34:02]** and we're late, and Nate's all nervous
+
+**[01:34:05]** about this because I've been sissy we gotta be there on time so finally we get
+
+**[01:34:11]** there and we're late and we dump his stuff out and then we have to go move
+
+**[01:34:14]** the car again to someplace and then come back and help him get set up and
+
+**[01:34:20]** they give you a QR code to find this this lot you're required to go to it
+
+**[01:34:25]** doesn't work of course and you know we're driving all around we're doing
+
+**[01:34:28]** the the circumnavigation of Wesleyan University trying to find the
+
+**[01:34:32]** right lot and we eventually just abandoned our car in some random lot and
+
+**[01:34:37]** run back to the dorm. Now we're way behind schedule and he's like
+
+**[01:34:40]** frantically trying to get his room set up before he goes off to orientation so
+
+**[01:34:44]** we sort of you know set it up badly and then he's like I gotta run and you
+
+**[01:34:50]** know we do this sort of brief hug and then he runs away and that's that's
+
+**[01:34:55]** the big farewell so mostly my recollection of this big departure is
+
+**[01:35:00]** irritation at Wesleyan University and sweat because we've been running all
+
+**[01:35:04]** over the place so you know life is life puts us you know life is not always its
+
+**[01:35:09]** Kodak moments I guess to give a dated phrase one more anecdote yeah I in
+
+**[01:35:15]** preparation for this podcast I asked some of our mutual friends about some
+
+**[01:35:24]** some typical Ken stories and I was asked to ask you the question about the time
+
+**[01:35:31]** when you were left abandoned at a wedding reception. Abandoned at a wedding reception? Is that the
+
+**[01:35:41]** table 23 story? I don't know. I was just given that that prompt. Maybe. Go ahead.
+
+**[01:35:48]** I don't know. Can I ask you who gave that story? Because I who get was that?
+
+**[01:35:55]** yeah I'm sorry I have no idea what that means well I always promise to give no
+
+**[01:36:03]** names okay well maybe maybe um maybe it's connected to another one I was
+
+**[01:36:08]** just given in quotation marks big lake fish oh big lake fish oh okay well this
+
+**[01:36:17]** is a story of I'll take the big lakes fish story but it's not connected with
+
+**[01:36:22]** the wedding reception no it's also not connected with anything that we've been
+
+**[01:36:26]** talking about and I'm now curious about about this but okay you want me to tell
+
+**[01:36:32]** you the big leg fish story okay I tell the story for years and you've obviously
+
+**[01:36:41]** done some deep deep background investigation really not tied to any
+
+**[01:36:46]** my books are work. So this is a travel story, maybe it's sort of a life story. So
+
+**[01:36:57]** probably 20 years ago I went to visit a friend of mine in Indonesia who was
+
+**[01:37:02]** living there, a college classmate of mine, John, his name. And he'd been living in
+
+**[01:37:10]** Jakarta and I called him up and said hey I want to come visit. He said
+
+**[01:37:13]** fantastic we're going to Sumatra and I said fantastic and then hung up and said
+
+**[01:37:17]** where the hell is Sumatra anyway so we spent I mean really glorious like 10
+
+**[01:37:22]** days hiking the highlands of Sumatra and had some adventures along the way as
+
+**[01:37:29]** you do but one of the things we learned I learned about Sumatran
+
+**[01:37:33]** culture or food was that much of it was built around the water buffalo and
+
+**[01:37:42]** and that you go to a restaurant in large parts of Sumatran.
+
+**[01:37:50]** I hope this is as a modicum of accuracy
+
+**[01:37:54]** from my recollection of 20 years ago.
+
+**[01:37:57]** You go to a Sumatran restaurant,
+
+**[01:37:58]** and you basically be offered one of the things
+
+**[01:38:01]** you'd be offered is every part of the water buffalo
+
+**[01:38:05]** in a very spicy sauce.
+
+**[01:38:07]** And so for like 10 days straight,
+
+**[01:38:11]** all we did was eat some versions of water buffalo
+
+**[01:38:16]** for most of the day.
+
+**[01:38:17]** And it was good, I really liked it.
+
+**[01:38:19]** But after a while, being aware on you.
+
+**[01:38:21]** And you began to think about alternatives to water buffalo.
+
+**[01:38:25]** And we had a destination where,
+
+**[01:38:26]** I don't, this is long ago,
+
+**[01:38:27]** I don't remember the name of the place.
+
+**[01:38:29]** One of the things we were gonna do on this journey,
+
+**[01:38:32]** backpacking journey across Sumatra was,
+
+**[01:38:34]** we were going to hike to a volcanic lake.
+
+**[01:38:38]** And one of the reasons, John said, that we would do there
+
+**[01:38:43]** is because we could get food that was not water buffalo,
+
+**[01:38:45]** because they had fish in the lake, and we'd get fresh fish,
+
+**[01:38:48]** and it'd be fantastic.
+
+**[01:38:49]** So we took this long, I think it was like 18 mile hike
+
+**[01:38:53]** in which you would hike up at Sumatra.
+
+**[01:38:56]** It's hot.
+
+**[01:38:58]** Hike up the side of the volcanic cone
+
+**[01:39:01]** and then down to the crater where the lake was,
+
+**[01:39:03]** and there were these lovely little towns right along the...
+
+**[01:39:07]** along the lakeside. And so we spent, you know, much of this long, sweaty hike
+
+**[01:39:14]** talking about how we were gonna, you know, what we're gonna eat when we got down
+
+**[01:39:17]** there. We would get down, we would take a dip in the lake, and we would get
+
+**[01:39:21]** fresh fish. And that was sort of like the goal of the day. So we did this
+
+**[01:39:28]** long hike talking a lot about fish. And we got down to a town and we
+
+**[01:39:33]** found this little guest house which, I mean, the water from the lake
+
+**[01:39:36]** literally lapped on to the steps. It was lovely. We ditched our
+
+**[01:39:42]** backpacks and basically fell into the lake and it was wonderfully cool and I
+
+**[01:39:46]** was in love with this town, this lake, and this idea, the whole place we had
+
+**[01:39:50]** traveled long and far to get to. And conveniently right next door was a
+
+**[01:39:55]** little restaurant and we cleaned up and went to the
+
+**[01:40:02]** to the restaurant and the waiter came over
+
+**[01:40:07]** and my friend John spoke a little Indonesian,
+
+**[01:40:09]** I spoke none, and he offered us sort of a range of food,
+
+**[01:40:16]** including water buffalo, and we were like,
+
+**[01:40:17]** no, we want fish, and he's like, fantastic,
+
+**[01:40:20]** we'll get you fish.
+
+**[01:40:22]** And so he goes off, I think we may have been
+
+**[01:40:25]** the only people in the restaurant,
+
+**[01:40:26]** it's a little place, and time passed,
+
+**[01:40:30]** and John's like, what's taking so long?
+
+**[01:40:31]** I'm like, ah, good food takes a long time.
+
+**[01:40:34]** This was something my dad used to take.
+
+**[01:40:35]** I'm just happy to be there.
+
+**[01:40:38]** And eventually the waiter comes back, and he's not carrying
+
+**[01:40:41]** food, and he starts talking to us in Indonesian.
+
+**[01:40:43]** John's not quite getting the story.
+
+**[01:40:49]** Oh, I'm sorry.
+
+**[01:40:49]** I forgot one little detail, which is when we ordered,
+
+**[01:40:52]** he sort of gave a choice of big lake fish or small lake
+
+**[01:40:54]** fish.
+
+**[01:40:55]** And we're like, we want big lake fish.
+
+**[01:40:56]** Of course we are.
+
+**[01:40:57]** So anyway, he's gesturing.
+
+**[01:40:59]** So we're sitting there talking about,
+
+**[01:41:00]** can't wait for big lake fish to show up.
+
+**[01:41:03]** And eventually the waiter comes back
+
+**[01:41:05]** and he's sort of gesturing and talking,
+
+**[01:41:06]** and John's not quite getting what he says,
+
+**[01:41:08]** and he's pointing towards the lake.
+
+**[01:41:10]** And I'm like, what's going on?
+
+**[01:41:13]** Where's our dinner?
+
+**[01:41:15]** And finally, John bursts out laughing and turns to me
+
+**[01:41:19]** and says, here's the problem.
+
+**[01:41:25]** They can't catch our dinner.
+
+**[01:41:26]** and
+
+**[01:41:29]** So apparently like the fresher the fish was like you order it and they go out and catch it
+
+**[01:41:36]** And we're like, well, that's fresh but not very helpful so we end up getting water buffalo
+
+**[01:41:41]** and the next day we go to a different restaurant and
+
+**[01:41:46]** Basically have a replica of the conversation and the guy says you've got big lake fish or small lake fish and we're like
+
+**[01:41:51]** we've heard this before are you sure you can get it he's like oh yes come with us
+
+**[01:41:57]** and he walks by and there's a little retaining pond behind the restaurant and
+
+**[01:42:01]** fished him around he said you know which one do you want and it was
+
+**[01:42:05]** fabulous have you ever eaten water buffalo again or are you like
+
+**[01:42:10]** traumatized for life you know I I would but you know you know water
+
+**[01:42:13]** buffalo is not really offered very much in the in the states if I over
+
+**[01:42:16]** back just about try to be perfectly happy to eat water buffalo again it
+
+**[01:42:19]** was just it wasn't anything wrong with the water buffalo is sort of the
+
+**[01:42:21]** intensity of it being offered day after day, meal after meal. You know, we all
+
+**[01:42:26]** like a little variety in our life. After all, Ken, since we're on the Man's Search
+
+**[01:42:30]** for Meaning podcast, what makes life meaningful? So, not having to eat water
+
+**[01:42:35]** buffalo for 10 days straight? You know, I've gotten so much mileage over the years from
+
+**[01:42:41]** that story, I wouldn't have it any other way. You know, I think of us, I
+
+**[01:42:48]** I mean, I think sort of the hackneyed answer, which I'll
+
+**[01:42:54]** give because I'm hackneyed in what I talk about,
+
+**[01:42:58]** having a purpose, having a reason
+
+**[01:42:59]** for getting up in the morning.
+
+**[01:43:01]** But ultimately, I think we get meaning from others,
+
+**[01:43:05]** helping others, being with others,
+
+**[01:43:07]** being surrounded by others.
+
+**[01:43:09]** We all have our interior lives,
+
+**[01:43:12]** but I think it's our exterior life that gives most
+
+**[01:43:14]** of its purpose and meaning.
+
+**[01:43:16]** We are, I mean, I get meaning
+
+**[01:43:18]** from being a father in relation to my son,
+
+**[01:43:20]** a husband in relation to my wife, a friend to my friends,
+
+**[01:43:24]** someone who brings service.
+
+**[01:43:25]** That's what gives me meaning.
+
+**[01:43:29]** All of it is in relation to others.
+
+**[01:43:31]** And part of my journey now, the one I'm excited to try,
+
+**[01:43:37]** the one I'm a little fearful to try,
+
+**[01:43:39]** it's hard talking to strangers, hard joining others,
+
+**[01:43:42]** is to be on a journey to get meaning through others
+
+**[01:43:47]** and with others, and encourage other people
+
+**[01:43:49]** to inspire others to do the same.
+
+**[01:43:52]** Beautiful.
+
+**[01:43:53]** Break it down to a CDA, a call to action,
+
+**[01:43:57]** for the people listening.
+
+**[01:43:59]** Well, so the easy part of that is follow my journey,
+
+**[01:44:01]** you know, on TikTok, Instagram, in my newsletters.
+
+**[01:44:04]** I'm starting to write a monthly column
+
+**[01:44:07]** about it for USA Today.
+
+**[01:44:08]** We'll link everything in the description.
+
+**[01:44:10]** What's that?
+
+**[01:44:11]** We'll link everything in the description.
+
+**[01:44:12]** Yeah, yeah, good, thank you.
+
+**[01:44:13]** But I think my call to action is, if this guy can do it, so can you.
+
+**[01:44:24]** I think one of the victims of modern culture is the notion that it's harder and harder
+
+**[01:44:33]** to be socially enacted, to be with other humans.
+
+**[01:44:37]** And that's true, but it's possible to do.
+
+**[01:44:40]** And I think the call to action is for others to try to begin their own years of living
+
+**[01:44:45]** socially on their own terms, in their own way, at their own pace, but to believe in
+
+**[01:44:51]** the power of being humans with other humans.
+
+**[01:44:57]** I can say terima kasih.
+
+**[01:45:01]** Which means?
+
+**[01:45:02]** Thank you in Indonesian.
+
+**[01:45:03]** Well, you should be offered a word at the restaurant for us.
+
+**[01:45:09]** very enriching conversation and I really mean it. I admire the socio-cultural
+
+**[01:45:16]** bridge you're trying to be and that's a big inspiration for me. So thank you for
+
+**[01:45:21]** your doing and thank you for your being. Thank you and thank you for
+
+**[01:45:25]** having me on the show. It was a fun conversation. Thank you. Let's get a
+
+**[01:45:28]** fist bump in. All right, there we go. Human-human.
