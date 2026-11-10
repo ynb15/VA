@@ -711,3 +711,21 @@ Lautheitsangleichung, die er abgelehnt hat, sondern ein fester Faktor, der
 Dynamik und Rauschabstand unverändert lässt?
 
 → betrifft: alle, die aus Rohsitzungen schneiden statt aus fertigen Exporten.
+
+## 10.11. — offene Frage an ihn: der Straßenname im stärksten Ken-Stern-Short
+
+Die stärkste kurze Stelle der Ken-Stern-Folge (00:07:13–00:08:23) ist ein
+Nachbarschaftsschwur, der jedes Jahr vorgetragen wird und in dem Jahr mit
+*„everyone but Republicans"* endete. Der Schwur **heißt nach der Straße, in
+der Ken wohnt**, und der Name fällt dreimal — in Ton und Untertitel.
+
+Die Regel sagt: Ortsangaben höchstens Stadt und Land. Der Straßenname eines
+Gastes ist deutlich darunter.
+
+**Die Frage, die nur er beantworten kann:** soll der Straßenname
+stummgeschaltet und im Untertitel ersetzt werden, womit der Short
+entsteht — oder bleibt die Stelle liegen? Ich habe sie nicht in die Liste
+genommen, sondern separat mit der Bedingung hingeschrieben.
+
+→ betrifft: jeden, der aus Gesprächen schneidet, in denen Gäste über ihr
+eigenes Zuhause erzählen — die Ortsregel trifft nicht nur Drehorte.
