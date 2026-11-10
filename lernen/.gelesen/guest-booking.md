@@ -429,3 +429,20 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   neue Fassung.** *„Ich weiß nicht, warum du manche Sachen einfach so
   anpasst."* Ungefragtes Umformulieren nimmt ihm seine Stimme aus dem Text.
   → betrifft: alle Agenten
+- **Ein Gast in Kapstadt braucht zwei Termine.** Seine stehende Gewohnheit,
+  29.10.: *„One thing I like to do before every podcast: meet up briefly IRL
+  sometime in the days beforehand."* **Before EVERY podcast** — das
+  Vorgespräch gehört in die Buchung und in die Databank-Zeile, nicht nur in
+  den Einzelfall. Eine Zeile auf *Confirmed* mit nur einem Datum ist
+  unvollständig.
+  → betrifft: alle, die Termine für ihn planen
+- **Der Faden endet nicht mit der Veröffentlichung.** Danach gehen
+  Collab-Einladungen und ein Drive-Ordner mit den Shorts an den Gast
+  (*„grab whatever you like"*, 06.11. an Kyle).
+  → betrifft: alle, die den Gästestatus führen
+- **Über die Lage des Empfängers wird nichts behauptet.** *„Would be easy for
+  both of us ist total grenzüberschreitend. Ich weiß nicht, was easy für ihn
+  ist."* Nur die eigene Seite: `on my end`, `would fit right in`. Und wenn der
+  andere schreibt, dass er im Stress ist: **ein Satz, eine Entscheidung** —
+  drei Zeilen Einfühlung davor sind *„viel zu argkriecherisch."*
+  → betrifft: alle, die Entwürfe für ihn schreiben

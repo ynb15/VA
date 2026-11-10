@@ -64,3 +64,44 @@ Nichts im Chat.
   Maßnahme: **keine**
 
 Nichts im Chat.
+
+## 06:40 · T−3 ist Arbeit, nicht Warten
+
+- **06:40** · alle zehn Zweige · keine Bewegung seit **19:46** (`ff60cf4`,
+  Gastbuchung) · neue Commits in der Nacht: **keine** · Maßnahme: **ein
+  Auftrag**
+
+**Plankontrolle 10.11.:** heute raus geht **Ep_58 · „Workaholism"**
+(Gastauftritte, The Garden) — **bei ihm**, am 06.11. gebaut aus seiner eigenen
+Slack-Liste („44:00 Workaholism"). Der Tag im Kalender ist *mein Vorschlag*.
+**Vorrat: 1** — unter drei Tagen Vorlauf.
+
+**Strassman T−3 („Shorts gebaut") war fällig heute und ich hatte sie gestern
+als blockiert gemeldet.** Das war zu bequem. Der Drive-Ordner
+`1OKUFDBDyeEqV7iwypV5Q-vyQi7WL9b_C` enthält heute 06:50 nachgesehen: das
+Vorbereitungsdoku, die Rohsitzung (15,50 GB), `IMG_3451.MOV`, ein jpeg —
+**keine Schnittfassung.** Aber die Fassungsfrage betrifft nicht alle Stücke
+gleich: die Pause von 2:56 bei Rohzeit **01:06:22–01:09:18** ist der einzige
+Punkt, an dem ein Versatz springt. Kandidaten, deren Passage **vollständig**
+außerhalb dieser Zone liegt, sind in der Rohsitzung ganz enthalten — ein
+Versatz verschiebt sie, ohne sie zu verändern.
+
+**Auftrag an content-cinematic um 04:57 UTC** (`trig_01FBgT4b5Xxy89KiwPdgB9Vj`):
+bau die Kandidaten, die von der Fassungsfrage nicht betroffen sind, entscheide
+selbst welche das sind, schreib hin was du nicht baust und warum. Die eigene
+Grenze des Agenten vom T−8 — *„Gerendert wird erst, wenn feststeht, welche
+Fassung die Folge ist"* — habe ich **nicht aufgehoben, sondern zugeschnitten**:
+sie gilt für die beiden Langstücke und für alles in der Nähe der Schnittstelle.
+Mitgegeben: `ffprobe r_frame_rate` vor dem ersten Schnitt, die Musikgrenzen
+(60/90/Mom's Got Work), das Bett **nicht** bei Songsekunde 0, der Dateiname,
+die Zensur von „suicidal", die Whisper-Halluzination bei 01:50:33, und die
+Regel, über den Wortlaut zu verorten statt über Versatz-Arithmetik.
+
+**Lernen Ausgabe 38** geschrieben, drei Befunde aus der Gastbuchung: ein Gast
+in Kapstadt braucht **zwei** Termine · der Faden endet nicht mit der
+Veröffentlichung · über die Lage des Empfängers wird nichts behauptet (seine
+Korrektur vom 09.11., wörtlich).
+
+**Zwei Fragen bleiben seine:** kommt für Strassman noch eine Schnittfassung vom
+Cutter? Und wird der 13.11. Ken oder Rick? Beide stehen seit Tagen; ich stupse
+nicht nach.

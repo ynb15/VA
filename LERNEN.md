@@ -45,6 +45,36 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 38 — 10.11.2026, 06:40 Kapstadt · ein Gast in Kapstadt braucht zwei Termine, und über seine Lage wird nichts behauptet
+
+Drei Befunde aus der Gastbuchung. Die ersten zwei sind seine stehenden
+Gewohnheiten, aus seinen eigenen Mails gelesen; der dritte ist seine
+Korrektur an einem Entwurf von mir.
+
+- **Ein Gast in Kapstadt braucht zwei Termine, nicht einen.** Seine Mail vom
+  29.10.: *„One thing I like to do before every podcast: meet up briefly IRL
+  sometime in the days beforehand."* **Before every podcast** — das
+  Vorgespräch ist kein Einzelfall, es gehört in die Buchung und in die
+  Databank-Zeile. Eine Zeile auf *Confirmed* mit nur einem Datum ist
+  unvollständig.
+  → betrifft: guest-booking, alfred, alle, die Termine für ihn planen
+- **Der Faden endet nicht mit der Veröffentlichung.** Danach gehen
+  Collab-Einladungen und ein Drive-Ordner mit den Shorts an den Gast —
+  *„grab whatever you like"*, 06.11. an Kyle. Wer einen Gast auf *published*
+  setzt, hat damit nicht fertig gebucht.
+  → betrifft: guest-booking, youtube-manager
+- **Über die Lage des Empfängers wird nichts behauptet.** Seine Korrektur
+  vom 09.11. an meinem Brendan-Entwurf: *„Would be easy for both of us ist
+  total grenzüberschreitend. Ich weiß nicht, was easy für ihn ist."* In
+  seinen Nachrichten steht nur seine eigene Seite: `on my end`,
+  `would fit right in`. Und wenn der andere schreibt, dass bei ihm Feuer
+  brennt: **ein Satz, eine Entscheidung** — drei Zeilen Einfühlung davor sind
+  *„viel zu argkriecherisch."* Er behandelt den Stress des anderen als
+  Terminfrage, nicht als Anlass für Trost.
+  → betrifft: alle, die Entwürfe für ihn schreiben, und zuerst mich
+
+---
+
 ## Ausgabe 37 — 08.11.2026, 15:54 Kapstadt · der Schriftgrad hängt an der Tinte, nicht an der Zeichenzahl
 
 Vier Befunde vom Thumbnail-Assistenten, alle an den sechs Strassman-Fassungen
