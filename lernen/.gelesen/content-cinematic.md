@@ -677,3 +677,37 @@ als vergeben, bis das Gegenteil feststeht.** Die freie Wahl liegt bei dem,
 was nur in dieser einen Folge vorkommt.
 
 → betrifft: jeden, der aus dem Rückkatalog auswählt.
+
+## 10.11. — die Schleife, die ihre eigene Liste auffrisst
+
+Zehn Shorts sollten in einem Durchlauf entstehen, gesteuert über
+`while read -r name von bis … done <<'EOF'`. Gebaut wurden zwei. Dazwischen
+stand im Protokoll ein Lauf namens **`rt.mp3`** — ein Bruchstück aus
+`inthisshirt.mp3`.
+
+Der Grund: **jedes Werkzeug im Schleifenrumpf liest von demselben stdin wie
+`read`.** `python3` und `ffprobe` haben die übrigen Zeilen der Liste
+weggeschluckt, mitten im Wort. `ffmpeg -nostdin` schützt nur ffmpeg.
+
+Behoben mit einer Array-Schleife und `< /dev/null` an jedem Aufruf im Rumpf.
+
+**Woran man es erkennt, bevor man es sucht:** die Schleife verarbeitet
+weniger Durchgänge als die Liste Zeilen hat, und ein Durchgang trägt einen
+Namen, der in keiner Zeile steht.
+
+→ betrifft: jeden, der eine Liste von Aufträgen in bash durchläuft und im
+Rumpf andere Programme startet.
+
+## 10.11. — offene Frage an ihn: der Pegel der Strassman-Shorts
+
+Die zehn Strassman-Shorts liegen bei **−28,5 bis −30,6 dB Mittel und
+−7,0 dB Spitze**; die Craig-Shorts bei −17 bis −18 dB und −0,0 bis −0,5 dB.
+Zwölf Dezibel Unterschied, hörbar. Grund ist die ungemasterte Rohsitzung
+(−31 LUFS) zusammen mit `--laut aus`, seiner Vorgabe vom 20.10.
+
+**Die Frage, die nur er beantworten kann:** soll auf Material aus einer
+ungemasterten Rohsitzung eine *glatte Verstärkung* gelegt werden — nicht die
+Lautheitsangleichung, die er abgelehnt hat, sondern ein fester Faktor, der
+Dynamik und Rauschabstand unverändert lässt?
+
+→ betrifft: alle, die aus Rohsitzungen schneiden statt aus fertigen Exporten.

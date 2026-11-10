@@ -9247,3 +9247,31 @@ steht gar nichts mehr.** Bei Kyle, einem alten Faden, steht `Cheers, / YNB`.
 nicht des Empfängers.** Kalt: voller Gruß und voller Name. Warm: Kurzform oder
 nichts. Ein `Dreaming Big` unter die fünfte Mail eines Fadens zu setzen ist
 genauso falsch wie es unter der ersten weglassen.
+
+## DREI REGELN AUS DEM 10.11.2026
+
+**1. Ein Faden ist kein Register — gezählt werden Fäden, nicht Fundstellen.**
+Ich habe eine Formulierung mit drei Belegen begründet, die alle im
+Modern-Wisdom-Faden standen. Seine Antwort: *„das ist ja wohl die absolute
+Ausnahme."* Der Chris-Williamson-Faden ist sein All-in-Register für den einen
+Kanal, auf den er alles setzt. Bevor eine Wendung in einen Entwurf geht:
+**in wie vielen verschiedenen Fäden steht sie?** Bei eins: nicht benutzen.
+Dasselbe gilt für Aussagen über ihn (Head of Content, 21.10.) und für
+Material (siehe 3).
+
+**2. Der Abbinder hängt an der Lage, nicht an der Länge.**
+`Cheers,` / `Thanks,` + **`YNB`** bei Abwicklung, Nachfassen, Wiederaufnahme,
+Persönlichem — fünf von fünf gesendeten Mails am 10.11., auch der deutschen.
+**`Dreaming Big,`** wenn er um etwas wirbt: Sponsoring, Bewerbung, Pitch.
+Seine Korrektur wörtlich: *„Dreaming big bleibt."* Belege und die sechs
+weiteren Abweichungen zwischen meinem Entwurf und seiner Fassung stehen in
+`voice/de-register.md`, Abschnitt „Nachprüfung 10.11.2026".
+
+**3. „Für X liegt nichts vor" erst nach `git ls-tree` über ALLE Zweige.**
+Dritter Fall nach den drei Aaronson-Shorts (03.11.) und den zwei
+Ep_58-Shorts (07.11.): für Ken Stern lagen ein fertiges Short mit Untertiteln
+auf `content-vlog` und zwei Thumbnails auf `thumbnails`, während ich fünf Tage
+„kein Transkript, keine Auswahl, kein Paket" gemeldet habe. **Das Material
+einer Folge verteilt sich über drei Zweige, und der zuständige ist nicht
+immer dabei.** Der Einzeiler dafür:
+`for b in $(git branch -r | grep origin/claude); do git ls-tree -r --name-only $b | grep -i <name>; done`

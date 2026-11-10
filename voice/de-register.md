@@ -260,3 +260,90 @@ den einen Satz, auf den es ankommt — **höchstens einer pro Mail.**
 `Hey Männer,` an die zwei Brandlift-Gründer zusammen (28.08.) ·
 `Howdy <Vorname>,` an einen einzelnen · `Besten Dank, <Vorname>!` wenn die Mail
 nur eine Quittung ist (26.08., ohne Grußformel am Ende).
+
+---
+
+## Nachprüfung 10.11.2026 — sechs Abweichungen zwischen meinem Entwurf und seiner Fassung
+
+**Material:** an diesem Tag habe ich fünf Entwürfe geliefert, zwei davon hat er
+gesendet und einen in einen Gmail-Entwurf überführt. Die Fassungen stehen
+nebeneinander, das ist der erste direkte Vergleich, den es gibt.
+**Gesendet 11:46–12:02:** Codi (Rechnung), Mathew Glass (Nachfassen), Kyle
+Kingsbury (Einzeiler), Zac Solomon (aus meinem Entwurf), Benny Adrion (aus
+meinem Entwurf). **Entwurf 12:54:** Evan Bryce.
+
+### Die Benny-Mail, seine Fassung, vollständig
+
+> Howdy Benni,
+>
+> Lang ist's her und das hat einen Grund: ein paar Tage nach deiner Mail hatte
+> ich einen Motorradunfall in den USA… ergo die lange Antwortzeit.
+>
+> Aber: ich hab überlebt - was wahrlich ein Wunder ist - und was einen nicht
+> umbringt…
+>
+> Anyways, ich bin zurück in der Mother City und hab nach wie vor Bock, dich
+> auf dem *Man's Search for Meaning* Podcast einzuladen (just 100k+ Views
+> geknackt) - wie schaut's bei dir aus? Biste in den nächsten Wochen in CT und
+> hast Bock?
+>
+> Cheers,
+> YNB
+
+### Was dagegen falsch war
+
+| Meine Fassung | Seine | Die Regel dahinter |
+|---|---|---|
+| `Benji du alte Legende,` (aus seiner Mail vom 04.08. recycelt) | `Howdy Benni,` | **Ein Spitzname aus einem früheren Brief ist keine Anrede für den nächsten.** Und die Schreibweise ist **Benni**. |
+| ein Block | **vier Absätze** | **§1.3 gilt nur für Abwicklung.** Eine warme Wiederaufnahme hat seinen Absatzrhythmus: Lücke · Witz · Sache · Frage. |
+| `Noted.` zuerst | nichts dazu | **„Sache zuerst" setzt voraus, dass der andere etwas gesagt hat.** Bennys „downscaling, Lets See" bekommt kein Wort; er fängt mit der Lücke an: *„Lang ist's her und das hat einen Grund:"* |
+| Unfall „in Colonel/Colorado", Monat genannt | *„in den USA…"*, *„ein paar Tage nach deiner Mail"* | **Grob verorten, relativ datieren.** Es waren sechs Wochen. Die Ungenauigkeit ist Teil des Registers. |
+| — | *„Aber: ich hab überlebt - was wahrlich ein Wunder ist - und was einen nicht umbringt…"* | **Der Witz steht direkt hinter der schlechten Nachricht, als eigener Absatz**, und das Sprichwort bleibt unvollendet. Das ist der Zug, den ich ausgelassen hatte. |
+| „Der Job hat sich damit eh erledigt" | kein Wort zum Job | **Keine Zugeständnisse erfinden, die er nicht macht.** |
+| `Gg,` + Yannick | **`Cheers,` + `YNB`** | siehe unten |
+
+### Der Abbinder — die Tabelle in §3 war zu eng
+
+**Fünf von fünf gesendeten Mails am 10.11. enden mit `Cheers,` oder `Thanks,`
+plus `YNB`** — auch die deutsche an Benny. `Gg,` kam nicht vor.
+
+**Aber `Dreaming Big,` ist nicht veraltet, sondern fadengebunden.** Seine
+Korrektur an mir, wörtlich: *„Dreaming big bleibt."* Er hat sie in den
+Evan-Entwurf gesetzt, in dem er um Sponsoring wirbt. Die Unterscheidung ist
+also **nicht kurz/lang, sondern Abwicklung/Werbung:**
+
+| Lage | Abbinder |
+|---|---|
+| Abwicklung, Nachfassen, Wiederaufnahme, persönlich | `Cheers,` / `Thanks,` + **`YNB`** |
+| er wirbt um etwas (Sponsoring, Bewerbung, Pitch) | `Dreaming Big,` + `YNB` oder `Yannick` |
+
+### Zwei weitere Befunde aus dem Evan-Entwurf
+
+**Die Fettung sitzt auf der Schlusszeile, nicht mitten im Text.** Ich hatte
+*„Some things you don't move."* fett gesetzt; er hat die Fettung
+heruntergezogen auf seinen stehenden Schlusssatz *„If there's any chance to
+make this happen, I'd be deeply grateful, Evan."* — derselbe Satz steht
+wörtlich in der Seek-Discomfort-Mail vom 02.09. mit vier Namen darin.
+
+**Er ersetzt jede vage Steigerung durch Zahlen.** Aus meinem „the biggest one
+yet" wurde: *„just set a new record (13k in the first week), the channel
+cracked 100k+ views and I just launched another one with ex-Bill Clinton
+lawyer Ken Stern. Wyld times…"*
+
+### Und der Fehlgriff, der zweimal in derselben Mail passiert ist
+
+Zum Schluss einer Bewerbung schrieb ich erst *„Hättest du 20 Minuten für einen
+Call?"*, dann *„20 Minuten reichen mir - nenn mir einen Slot, ich richte mich
+danach."* Beides falsch, das zweite schlimmer: **alle drei Belege für „20
+minutes" stehen im Modern-Wisdom-Faden**, also bei Chris Williamson.
+
+> **Der Chris-Faden ist kein Register, sondern eine Ausnahme.** Dort setzt er
+> alles auf eine Karte: *„Point me at a time and I'll be there."* · *„I'll bend
+> my whole schedule around whatever slot works - and if necessary, I'll cancel
+> the trip."* · *„I'm willing to do whatever it takes to earn my seat at the
+> table."* Wer daraus eine Regel macht, schreibt in jede Mail das Register
+> seines größten Einsatzes. Seine Worte dazu: *„das ist ja wohl die absolute
+> Ausnahme."*
+
+Derselbe methodische Fehler wie beim Head of Content am 21.10.: **eine Quelle
+gemessen, über die Person geschlossen.**

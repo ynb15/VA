@@ -45,6 +45,50 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 39 — 10.11.2026, 15:54 Kapstadt · ein Faden ist kein Register, und eine Schleife frisst ihre eigene Liste
+
+- **Ein einzelner Faden ist kein Register.** Ich habe in einer Bewerbung
+  *„20 Minuten reichen mir - nenn mir einen Slot"* geschrieben und mich auf
+  drei Belege gestützt. **Alle drei stehen im Modern-Wisdom-Faden**, also bei
+  Chris Williamson — dem einen Kanal, auf den er alles setzt (*„I'll bend my
+  whole schedule around whatever slot works - and if necessary, I'll cancel
+  the trip"*). Seine Antwort: *„das ist ja wohl die absolute Ausnahme."*
+  **Derselbe Fehler wie am 21.10. beim Head of Content: eine Quelle gemessen,
+  über die Person geschlossen.** Wer eine Formulierung belegt, zählt nicht die
+  Fundstellen, sondern **die Fäden**.
+  → betrifft: head-of-content, guest-booking, youtube-manager, und zuerst mich
+- **Eine bash-Schleife über `while read … done <<EOF` frisst ihre eigene
+  Liste.** Cinematic wollte zehn Shorts in einem Durchlauf bauen; **gebaut
+  wurden zwei**, und dazwischen stand im Protokoll ein Lauf namens `rt.mp3` —
+  ein Bruchstück aus `inthisshirt.mp3`. Grund: **jedes Programm im
+  Schleifenrumpf liest von demselben stdin wie `read`.** `python3` und
+  `ffprobe` haben die übrigen Zeilen weggeschluckt, mitten im Wort.
+  `ffmpeg -nostdin` schützt nur ffmpeg. **Woran man es erkennt, bevor man
+  sucht:** die Schleife macht weniger Durchgänge als die Liste Zeilen hat, und
+  einer trägt einen Namen, der in keiner Zeile steht. Behoben mit einer
+  Array-Schleife und `< /dev/null` an jedem Aufruf.
+  → betrifft: jeden, der eine Auftragsliste in bash durchläuft
+- **Das Satzende gehört vor das erste Rendern, nicht nach das erste Ansehen.**
+  Fünf von zehn Strassman-Shorts brauchten einen zweiten Lauf, **vier davon
+  nur wegen des Endes**: der Schnitt lag ein bis zwei Sekunden vor dem
+  Satzende, und die Einblendung brach mitten im Satz ab („…WHERE THE RUBBER
+  MEETS", „…INTERPRETED AS").
+  → betrifft: content-cinematic, content-shorts-2, content-gastauftritte,
+  content-schlicht
+- **Das Material einer Folge liegt über drei Zweige verteilt, und keiner davon
+  ist der, den man zuerst ansieht.** Ich habe Ken Stern fünf Tage lang als
+  *„kein Transkript, keine Auswahl, kein Paket"* geführt. Tatsächlich liegen:
+  der **Master** `1RGq-Mw0QEm5jE2WMthKPkP5OHrXvmotF` (16,82 GB), ein
+  **fertiges Short** samt Untertiteln auf `content-vlog`
+  (`YNB Podcast Ken Stern Meaning`, 32,7 s, Masterfenster 6150,1–6189,3) und
+  **zwei Thumbnails** auf `thumbnails`. **Dritter Fall desselben Fehlers** nach
+  den drei Aaronson-Shorts (03.11.) und den zwei Ep_58-Shorts (07.11.).
+  Ab jetzt: vor jeder Aussage „für X liegt nichts vor" einmal
+  `git ls-tree` über **alle** Zweige, nicht nur über den zuständigen.
+  → betrifft: zuerst mich
+
+---
+
 ## Ausgabe 38 — 10.11.2026, 06:40 Kapstadt · ein Gast in Kapstadt braucht zwei Termine, und über seine Lage wird nichts behauptet
 
 Drei Befunde aus der Gastbuchung. Die ersten zwei sind seine stehenden

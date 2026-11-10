@@ -404,3 +404,63 @@ Stücke als draußen bezeichnet.
 Veröffentlichungsstand, nicht nur für das Register.** Beim täglichen Sweep
 gehört `in:sent newer_than:2d` dazu, wenn der Kalender behauptet, etwas liege
 noch bei ihm.
+
+## Strassman T−3 erfüllt, und Ken Stern war nie bei null — 10.11.2026
+
+**T−3 (Shorts gebaut) kam am Tag der Frist**, Auftrag 06:57, Lieferung im
+Commit `15ee82d` auf `claude/content-cinematic`: **zehn Shorts** aus der
+Rohsitzung, Bildrate vorher gemessen (30/1, kein 24000/1001-Fall), jedes
+Bildstück über die Länge auf ganze Frames gerechnet.
+
+| Datei | Länge | Rohzeit | Musik |
+|---|---|---|---|
+| Shoulders | 32,5 s | 12:48–13:26 | In This Shirt ab 0:10 |
+| Grays | 77,3 s | 25:52–27:20 | Mom's Got Work ab 0:20 |
+| Dying | 37,3 s | 35:48–36:28 | In This Shirt ab 0:10 |
+| Banal | 38,6 s | 50:36–51:17 | In This Shirt ab 0:10 |
+| Answer | 36,7 s | 55:37–56:16 | In This Shirt ab 0:10 |
+| Death | 49,8 s | 58:43–59:38 | In This Shirt ab 0:10 |
+| Bowing | 38,1 s | 81:47–82:28 | In This Shirt ab 0:10 |
+| Envy | 29,7 s | 89:44–90:15 | In This Shirt ab 0:10 |
+| Meme | 38,7 s | 99:45–100:26 | In This Shirt ab 0:10 |
+| Pride | 37,4 s | 117:39–118:19 | In This Shirt ab 0:10 |
+
+**Nicht gebaut, mit Grund:** „Die Zahl 49" (1:03:48–1:05:23) endet 59 s vor der
+Gesprächspause und liegt damit nah genug, dass die Fassungsfrage greift · die
+beiden Langstücke (Samstag, Sonntag) liegen auf beiden Seiten der Pause.
+**Der Drive-Ordner hatte am 10.11. um 05:00 weiterhin keine Schnittfassung.**
+
+**Zwei Dinge gehen an ihn:**
+1. **Der Pegel.** Die zehn liegen bei −28,5 bis −30,6 dB Mittel und −7,0 dB
+   Spitze; die Craig-Shorts bei −17 bis −18 dB und −0,0 bis −0,5 dB.
+   **Zwölf Dezibel, hörbar.** Ursache ist die ungemasterte Rohsitzung
+   (−31 LUFS) plus `--laut aus`, seine Vorgabe vom 20.10. YouTube
+   normalisiert nur nach unten. Die Frage: eine **glatte Verstärkung** (fester
+   Faktor, Dynamik und Rauschabstand unverändert) — nicht die
+   Lautheitsangleichung, die er abgelehnt hat.
+2. **He's Alive liegt nicht im Container.** Nach seiner 90-s-Regel wäre es für
+   *Grays* (77 s) der richtige Titel; Cinematic hat Mom's Got Work genommen,
+   weil es da ist. Kommt die Datei, ist *Grays* der eine Short, der neu
+   gerechnet werden muss.
+
+### Ken Stern: der dritte Fall desselben Fehlers
+
+Ich habe fünf Tage lang gemeldet, für Ken liege **kein Transkript, keine
+Auswahl, kein Paket** vor. Über alle Zweige geprüft liegen:
+
+- **Master `1RGq-Mw0QEm5jE2WMthKPkP5OHrXvmotF`**, 16,82 GB (nicht nur der
+  Ordner `18nUfXLmrKTPBfgwh90MATPKjgmNsjTJQ` aus meinen Notizen)
+- **ein fertiges Short mit Untertiteln** auf `claude/content-vlog`:
+  `YNB Podcast Ken Stern Meaning`, 32,7 s, Masterfenster **6150,1–6189,3 s**,
+  aus der Meaningful-Reihe — und damit ein **geeichter Anker** im Master
+- **zwei Thumbnails** auf `claude/thumbnails`: `ken-meaning.jpg`
+  („Meaning / From Others") und `ken-reason.jpg`
+
+Es fehlt: **Transkript, Clip- und Short-Auswahl, Paket.** T−10 ist am 10.11.
+um 16:04 an content-cinematic ausgelöst (`trig_012Ca41J1YxhdncvBRfEaqt6`).
+
+**Anlass, und das ist seine Aussage:** er will die Ken-Stern-Folge **nächste
+Woche veröffentlichen** — gesagt am 10.11. als Begründung dafür, zwei Mails um
+eine Woche zu verschieben. **Meine Lesart, nicht seine:** damit bleibt der
+13.11. Rick, und Ken fällt in die Woche vom 16.11. **Den Termin fasse ich
+nicht an.**
