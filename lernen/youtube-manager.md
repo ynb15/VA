@@ -683,3 +683,25 @@ muster = r"thanks for watching|thank you for watching|subscribe|\[music\]|see yo
   Abrufe) ist **nicht** gesperrt. Traegt er ein Bett, waere das die erste
   belegte Untergrenze. Ungeprueft — ich weiss nicht, ob Musik drunterliegt.
   → betrifft: shorts, alle Content-Agenten
+
+### Nachtrag 11.11. — Ken Stern T−6, und der schwaechste Begriff, den ich je gemessen habe
+
+- **Nur er kann entscheiden:** ob die Ken-Folge wie bei Kyle auf 1,1
+  beschleunigt und mit Fundraiser hochgeht — **davon haengen alle 26
+  Kapitelmarken ab**, die ich auf Rohzeiten gesetzt habe. Dazu: Kens Links
+  (TikTok, Instagram, Newsletter, USA-Today-Kolumne) und die Spotify-/
+  Apple-Adressen; ob der Titel Eigenart (NPR) oder Reichweite (Einsamkeit)
+  bedient; und ob die Thumbnail-Zeile `Everyone But Republicans` ins Bild
+  darf.
+- **`polarization` hat einen Median von 153 Abrufen** bei 50 Titeln in 341
+  gesprochenen Langformaten — ein Neunzehntel des Medians. `divided` (318),
+  `America` (285) und Zahlen im Titel (221) liegen kaum besser, waehrend die
+  Spitze der Liste fast nur aus Einsamkeits-Titeln besteht. **Das Thema,
+  das die erste Haelfte der Folge traegt, ist die schlechteste Verpackung
+  fuer sie.** Die Messung ist verrauschter als die zu Pilzen und zur UFC
+  (Musik, TED, Nachrichten im Suchfeld, per Filter entfernt, nicht von Hand
+  geprueft) — aber bei diesen vier Begriffen ist die Stichprobe gross genug.
+- **Kapitelmarken gehoeren gemessen, nicht geschaetzt.** Alle 26 sind per
+  Teilstring ueber einen Zeichenindex auf ihr Segment zurueckgefuehrt.
+  Alfred hatte zwei Stichproben verlangt; alle 26 zu pruefen kostete ein
+  Skript und zwei Minuten. **Die Stichprobe war nie die billigere Variante.**
