@@ -114,3 +114,82 @@ kein Musikbett (−80,2 dB). **Alle Prüfungen bestanden.**
 
 Keine. Nicht angesagt. Falls gewünscht, mit vorgezogenem Einsatz:
 *In This Shirt* ab 0:23,25, *On The Nature Of Daylight* ab 0:24,50.
+
+
+---
+
+## Fassung 2 (11.11., nach seiner Rückmeldung)
+
+*„du hast genau die falschen Sachen rausgeschnitten"* — vier Ansagen, alle
+umgesetzt:
+
+| | |
+|---|---|
+| Tempo **1,15** statt 1,12 | erledigt |
+| Anfang auf **„the African proverb Ubuntu"** | erledigt |
+| Alles dazwischen raus bis **„so most people misinterpret it"** | erledigt |
+| Ende auf **„the connection to others"** | erledigt |
+
+**57,6 s** (53,4 + Outro). Zwei Stücke: Rohzeit 1:05:26,65–1:05:28,57 und
+1:05:36,11–1:06:35,57, mit dem concat-Filter verbunden (v = a = 53,3667 s,
+1601 Bilder).
+
+Raus ist genau **ein** Stück, 7,5 s bei 00:01,5 — der Wortwechsel mit Ken
+(„Yes." · „Remember. Yeah, the definition." · „I don't remember this, but I
+remember liking when you said it." · „Yeah, and I find it beautiful."). Dazu
+der Anlauf vorne, den er nicht mehr wollte. **Dazugekommen ist der ganze
+Südafrika-Teil**, 30 s, der in Fassung 1 fehlte.
+
+### Der Fehler, den ich dabei gefunden und behoben habe
+
+**`select='gt(scene,…)'` auf einem gesuchten Eingang (`-ss` vor `-i`) meldet
+die Schnittkante ein Bild zu spät.** Gemeldet 3928,60 und 3995,60 — die
+Bilder bei **3928,5667** und **3995,5667** gehören bereits zur nächsten
+Kamera.
+
+Beide Male hätte das genau einen Fehler ergeben, den er schon einmal
+reklamiert hat: das letzte Bild von Stück 1 war die **Totale, mit dem
+Kasten der Nahaufnahme beschnitten** — also Tisch, Laptop und Dosen, kein
+Mensch. Ein Bild lang, mitten im Short.
+
+Gefunden, weil ich nach jedem Schnitt Einzelbilder über die Naht ansehe, und
+nicht, weil eine Messung Alarm geschlagen hätte. **Konsequenz: eine mit
+`-ss` gemessene Schnittkante wird vor Gebrauch an Einzelbildern geprüft, und
+die Stücklänge wird mit `-frames:v` auf die Bildzahl festgenagelt statt mit
+`-t` auf eine Sekundenzahl.**
+
+### Drei Stellen am Ton nachgeprüft
+
+**Khoi** und **San** — das Modell schreibt „Koi" und „Sun tribes", weil es
+genau so klingt. Er nennt die beiden Völker einzeln, nicht als „Khoisan";
+das ist auch die bessere Form, der Sammelbegriff stammt aus der Kolonialzeit
+und wurde 2001 in Windhoek von San-Vertretern ausdrücklich abgelehnt.
+
+**„misinterpret it"** — wie in Fassung 1, bei Sprechtempo hören beide
+Modelle „misinterpreted".
+
+**„relationships"** — in der ersten Schnittfassung verschluckte `medium` das
+Wort ganz; ich hatte es über eine Korrekturklammer eingesetzt. **An der
+endgültigen Schnittfassung schreibt dasselbe Modell es von selbst**, und die
+Korrektur stand plötzlich doppelt im Bild. Wieder entfernt.
+**Lehre: eine Korrektur, die eine Modellschwäche ausgleicht, gilt nur für
+genau die Schnittfassung, an der sie gemessen wurde** — nach jedem Neuschnitt
+gehört sie nachgeprüft.
+
+### Eine Einstellung, 51,7 Sekunden
+
+Zwischen 1,7 s und dem Ende schneidet die **Aufnahme nicht um**: der nächste
+Kameraschnitt kommt erst, als er mit „the connection to others" fertig ist.
+Nichts dazuerfunden. In der Liste als Angebot vermerkt, in der Mitte langsam
+enger zu ziehen, falls es ihm zu statisch ist.
+
+### Ortsprüfung
+
+„with me living in South Africa" steht jetzt im Short. Nach seiner Regel vom
+21.10. ist das Land erlaubt, genauer wird es nirgends. `ortscheck.py` läuft
+sauber durch.
+
+### Abnahme
+
+1080×1920 · 48 kHz · 57,6 s · Outro da · 52 Untertitel · Ortscheck sauber ·
+kein Musikbett. **Alle Prüfungen bestanden.**

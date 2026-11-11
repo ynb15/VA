@@ -1,10 +1,16 @@
 {
-  "quelle": "vorlage-ken.mov",
-  "groesse": [1920, 1080],
+  "quelle": "vorlage-ken2.mov",
+  "groesse": [
+    1920,
+    1080
+  ],
   "einstellungen": [
-    {"kasten": "396:0:608:1080",  "lippe": 940,  "start": 0.000,  "ende": 6.786,  "wer": "Yannick, Nah — 'I threw in the African proverb Ubuntu'"},
-    {"kasten": "1312:0:608:1080", "lippe": 980,  "start": 6.786,  "ende": 11.446, "wer": "Totale, Kasten auf Ken — seine Antwort"},
-    {"kasten": "0:0:608:1080",    "lippe": 1040, "start": 11.446, "ende": 13.330, "wer": "Totale, Kasten auf Yannick — 'I find it beautiful'"},
-    {"kasten": "396:0:608:1080",  "lippe": 940,  "start": 13.330, "ende": 38.033, "wer": "Yannick, Nah — die Definition bis 'through our relationships'"}
+    {
+      "kasten": "396:0:608:1080",
+      "lippe": 940,
+      "start": 0.0,
+      "ende": 53.367,
+      "wer": "Yannick, Nah — durchgehend; der einzige Schnitt liegt bei 1,667 s im Ton"
+    }
   ]
 }

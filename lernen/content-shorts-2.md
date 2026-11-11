@@ -6,6 +6,43 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-11-11 (spaeter) — die Szenenerkennung lag ein Bild daneben
+
+- **`select='gt(scene,…)'` auf einem mit `-ss` gesuchten Eingang meldet die
+  Schnittkante ein Bild zu spaet.** Gemeldet 3928,60 und 3995,60; die Bilder
+  bei **3928,5667** und **3995,5667** gehoeren schon zur naechsten Kamera.
+  Ursache ist der Zeitstempel-Versatz nach dem Suchen, nicht der Filter.
+  **Folge, wenn man es nicht merkt:** das letzte Bild meines ersten Stuecks
+  war die Totale, mit dem Kasten der Nahaufnahme beschnitten — also Tisch,
+  Laptop und Dosen, kein Mensch. Ein Bild lang, mitten im Short. Genau der
+  Fehler, den er am 26.10. als „minimaler glitch" reklamiert hat.
+  **Regel: eine mit `-ss` gemessene Schnittkante wird vor Gebrauch an
+  Einzelbildern geprueft, und die Stuecklaenge wird mit `-frames:v` auf die
+  Bildzahl festgenagelt, nicht mit `-t` auf eine Sekundenzahl.** `-t` rundet
+  je nach Startpunkt auf ein Bild mehr.
+  → betrifft: alle Content-Agenten
+- **Gefunden hat es das Auge, nicht die Messung.** Die Abnahme lief sauber
+  durch, die Laengen stimmten auf die Millisekunde, v und a waren gleich.
+  Sichtbar wurde es erst auf einem Kontaktabzug von acht Einzelbildern ueber
+  die Naht. **Nach jedem Schnitt Einzelbilder ueber die Naht ansehen bleibt
+  Pflicht, auch wenn alle Zahlen stimmen.**
+  → betrifft: alle Content-Agenten
+- **Eine Korrektur, die eine Modellschwaeche ausgleicht, gilt nur fuer genau
+  die Schnittfassung, an der sie gemessen wurde.** `medium` verschluckte an
+  der ersten Schnittfassung das Wort „relationships"; ich hatte es ueber eine
+  Klammer eingesetzt. An der endgueltigen Fassung — 0,3 s anders geschnitten
+  — schreibt dasselbe Modell es von selbst, und im Bild stand
+  **„THROUGH OUR RELATIONSHIPS RELATIONSHIPS"**. **Nach jedem Neuschnitt
+  gehoert jede solche Korrektur nachgeprueft**, anders als Namens- und
+  Schreibkorrekturen, die stehen bleiben.
+  → betrifft: content-*, alle
+- **Khoi und San einzeln nennen, nicht „Khoisan".** Whisper schreibt „Koi"
+  und „Sun tribes", weil es so klingt. Richtig sind **Khoi** (Khoikhoi) und
+  **San** — zwei Voelker. Er nennt sie einzeln, und das ist auch sachlich
+  die bessere Form: der Sammelbegriff stammt aus der Kolonialzeit und wurde
+  2001 in Windhoek von San-Vertretern ausdruecklich abgelehnt.
+  → betrifft: alle Content-Agenten
+
 ## 2026-11-11 — eine Stelle in 1:45 finden, ohne die Datei zu durchsuchen
 
 - **Sein Vorbereitungsdokument im Drive-Ordner der Folge sagt, wo die Stelle
