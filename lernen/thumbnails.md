@@ -570,3 +570,59 @@ Alle vier traten bei langen Durchläufen auf und sind in
 - **Die Frage an eine neue Datei lautet nicht „wie groß", sondern „von wem".**
   Vor dem Messen erst feststellen, welche Einstellungen überhaupt vorkommen.
   → betrifft: thumbnails, content-cinematic, shorts
+
+## 11.11.2026 — Ken Stern
+
+### Wenn Licht und Hintergrund gleich sind, trennt der Blick die beiden
+
+- Bei Kingsbury und Strassman ließen sich die Nahaufnahmen über Haar- oder
+  Rumpfhelligkeit auseinanderhalten. Bei Ken nicht: **beide sitzen vor
+  derselben Blattwand im selben warmen Seitenlicht.**
+- **Was trägt, ist das Vorzeichen des Kopfdrehs.** Yannick sitzt links und
+  schaut nach rechts (yaw +0,08 bis +0,47), der Gast sitzt rechts und schaut
+  nach links (−0,05 bis −0,69). Von **516 Nahaufnahmen fallen fünf** in die
+  Mitte.
+- **Nebenbefund, der Arbeit spart:** damit stimmen die Blickrichtungen von
+  sich aus für den Aufbau. Bei Kingsbury musste ich dafür suchen.
+  → betrifft: thumbnails, content-cinematic
+
+### Zwei meiner eigenen Maße tragen nicht bei jedem Gesicht
+
+- **Augenweiß bei tief liegenden Augen:** bei Ken liegt der Wert für fast
+  alle 330 Bilder bei 0,00–0,003. Nach dem Maß wäre kein einziges Bild
+  brauchbar; am Bild sind es viele. **Ein Maß, das für alle Bilder dasselbe
+  sagt, misst nichts.**
+- **Schärfe ist hier die Kamera, nicht das Einzelbild:** Ken 34–47 über alle
+  Bilder, Yannick 100–137. Das schärfste Ken-Bild dieser Aufnahme ist immer
+  noch weicher als das weichste von Yannick. Eine Auswahl nach Schärfe
+  verbessert da nichts.
+  → betrifft: thumbnails
+
+### Eine verworfene Fassung heißt: die Quelle neu suchen, nicht die Copy tauschen
+
+- Er hat die erste Ken-Fassung verworfen — *„weder die Copy noch unsere Mimik
+  ist provokant"*. Der Auftrag von heute schlug vor, die vorhandenen
+  Freisteller wiederzuverwenden, um den halben Lauf zu sparen. **Genau in
+  diesen Freistellern steckt die Mimik, die er abgelehnt hat.**
+- Eine abgelehnte Lieferung spart keinen Schritt, sie kostet einen.
+  → betrifft: thumbnails, head-of-content, ai-chief-of-staff
+
+### Materiallage der drei Folgen, zum Vergleich
+
+| Folge | Gastgeber | Gast | Hochrechnung |
+|---|---:|---:|---|
+| Kingsbury | 81–96 px | 150–183 px | **1,9× / 0,8×** — ungleich |
+| Strassman | 88–97 px | 86–96 px | 1,4× / 1,4× |
+| **Ken Stern** | 100–120 px | 110–146 px | **1,2× / 1,0×** — beste Lage |
+
+- **Die beste Lage ist nicht die höchste Auflösung, sondern die gleichmäßige.**
+  Bei Kingsbury sind beide Gesichter aus 4K und sehen trotzdem ungleich aus,
+  weil einer verdoppelt werden musste.
+  → betrifft: thumbnails, content-cinematic
+
+### Ein Farbcode im T−6-Paket ist falsch
+
+- Dort steht `#DF2C00` als Kastenfarbe. Die Quelle ist sein Canva-File und
+  sagt **`#DF2D00`** — er hat den Wert am 22.10. selbst genannt. Meine alte
+  Schätzung aus den JPEGs war dieselbe falsche Ziffer.
+  → betrifft: youtube-manager, head-of-content
