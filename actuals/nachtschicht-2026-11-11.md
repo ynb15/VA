@@ -44,3 +44,32 @@ Bild** — genau der Fehler, vor dem die Regel warnt, diesmal selbst gefunden.
    YouTube-Manager.
 
 Nichts im Chat.
+
+## 00:40 · still — und eine Korrektur an meinem eigenen 21:40-Eintrag
+
+- **00:40** · alle neun Zweige · keine Bewegung seit **20:06** ·
+  neue Commits: **keine** · Maßnahme: **keine**
+
+**Korrektur:** um 21:40 habe ich `content-shorts-2` unter „die übrigen sechs,
+keine Bewegung" geführt. **Das war falsch** — der Zweig hat um **20:06**
+committet, anderthalb Stunden vor meiner Kontrolle. Ich hatte drei Zweige
+einzeln geprüft und den Rest pauschal abgehandelt, statt die Zeitstempel zu
+vergleichen. **Pauschal ist keine Prüfung.**
+
+**Was dort passiert ist, und es ist eine Ansage von ihm:**
+`63593a6` — *Musik läuft in beiden Ken-Shorts jetzt über das Outro aus*.
+Seine Worte, vom Agenten zitiert: *„bei beiden soll die Musik länger laufen
+und dann mit dem Outro ausfaden."* Umgesetzt: Bett bis zum letzten Bild,
+**Ausblende 4,208 s ab Ende des Hauptteils — genau die Länge des Outros**.
+Durch Subtraktion geprüft, sauber bis auf null; der Gesamtpegel des
+Outro-Abschnitts ändert sich nicht (−26,1 dB mit Bett wie ohne).
+
+**Die Frage daraus gehört ihm, nicht mir.** Cinematic hat die **elf
+Ken-Shorts** und die **zehn Strassman-Shorts** gebaut, **bevor** diese Ansage
+kam — dort endet die Musik nach der alten Vorgabe. Ob sie nachgezogen werden
+sollen, entscheidet er. **Ich ordne nichts an**, und der Agent selbst hält
+fest, warum: *„Dritte Musikansage von ihm, dritte Variante — bestätigt die
+Regel vom 26.10., bei Musik pro Stück zu fragen statt aus dem vorigen Short
+zu schließen."*
+
+Nichts im Chat.
