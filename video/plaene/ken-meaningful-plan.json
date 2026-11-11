@@ -1,0 +1,44 @@
+{
+  "quelle": "vorlage-mean.mov",
+  "groesse": [
+    1920,
+    1080
+  ],
+  "einstellungen": [
+    {
+      "kasten": "396:0:608:1080",
+      "lippe": 1060,
+      "start": 0.0,
+      "ende": 3.8333,
+      "wer": "Yannick, Nah — seine Frage"
+    },
+    {
+      "kasten": "1312:0:608:1080",
+      "lippe": 1080,
+      "start": 3.8333,
+      "ende": 8.6,
+      "wer": "Totale, Kasten auf Ken — der Wasserbueffel-Witz"
+    },
+    {
+      "kasten": "836:0:608:1080",
+      "lippe": 1200,
+      "start": 8.6,
+      "ende": 31.7333,
+      "wer": "Ken, Nah — die Antwort"
+    },
+    {
+      "kasten": "1312:0:608:1080",
+      "lippe": 1080,
+      "start": 31.7333,
+      "ende": 38.6,
+      "wer": "Totale, Kasten auf Ken"
+    },
+    {
+      "kasten": "836:0:608:1080",
+      "lippe": 1200,
+      "start": 38.6,
+      "ende": 54.2667,
+      "wer": "Ken, Nah — bis 'all of it is in relation to others'"
+    }
+  ]
+}

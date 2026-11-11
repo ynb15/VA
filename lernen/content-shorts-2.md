@@ -6,6 +6,47 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-11-11 (abends) — `-ss` taugt nicht fuer ein einzelnes Bild
+
+- **Ich habe heute frueh aus einer unzuverlaessigen Pruefung eine Regel
+  abgeleitet, und die Regel war falsch.** Aus `ffmpeg -ss <zeit>
+  -frames:v 1` hatte ich geschlossen, `select='gt(scene,…)'` melde die
+  Schnittkante ein Bild zu spaet, und alle Grenzen vorgezogen. Nachgezaehlt
+  **nach Bildnummer** liegen die vier Kanten des Meaningful-Shorts bei Bild
+  115 · 258 · 952 · 1158 — **genau** den Werten, die die Erkennung ohne
+  `-ss` gemeldet hatte. **Die Erkennung war exakt; die Stichprobe war es
+  nicht.** `-ss` trifft beim Einzelbildgriff nicht verlaesslich das
+  angeforderte Bild.
+  **Richtig:** `-vf "select='between(n,A,B)'" -vsync 0` und nach Bildnummer
+  zaehlen. Und: Szenenerkennung **am Vorlagenband ohne `-ss`** laufen lassen,
+  dann stimmen die Zeiten.
+  → betrifft: alle Content-Agenten
+- **Und die Lehre ueber den Fall hinaus: eine Messung, die eine andere
+  Messung widerlegt, ist erst dann die bessere, wenn ihr Verfahren selbst
+  geprueft ist.** Ich hatte die Szenenerkennung fuer falsch erklaert, weil
+  eine zweite Methode etwas anderes sagte — ohne zu pruefen, ob die zweite
+  Methode ueberhaupt taugt. Das hat drei Durchlaeufe gekostet und haette
+  einen Fehler ins Short gebracht, den es ohne mich nicht gegeben haette.
+  **Das Ubuntu-Short vom selben Tag ist nach der verlaesslichen Methode
+  nachgeprueft** (Bilder 46–53 ueber die Naht): sauber.
+  → betrifft: content-*, alle
+- **Ein Gast hat in der Totale und in seiner eigenen Kamera verschiedene
+  x-Positionen, und zwar weit auseinander.** Ken steht in der Totale bei
+  **x ≈ 1660**, in seiner Nahaufnahme bei **x ≈ 1140** — 520 px Unterschied.
+  Der uebernommene Totale-Kasten zeigte in der Nahaufnahme nur seinen
+  Hinterkopf. **Jede Kamera bekommt ihre eigene Messung, auch wenn dieselbe
+  Person darin steht.**
+  → betrifft: alle Content-Agenten
+- **Die Meaningful-Antwort von Ken Stern ist 22 s laenger als dokumentiert.**
+  `video/meaningful-serie.md` fuehrt sie als 32,7 s (Master 6150,1–6189,3),
+  Ende auf „being surrounded by others" — das ist mitten im Gedanken.
+  Tatsaechlich laeuft sie bis **6211,3** und endet auf **„All of it is in
+  relation to others."** Danach noch 20 s bis zur naechsten Frage.
+  **Ein dokumentierter Endpunkt ersetzt nicht das Hoeren bis zur naechsten
+  Frage** — die Regel aus `meaningful-serie.md` („bis zur naechsten Frage,
+  dort auf dem letzten Satzende") war richtig, nur nicht angewandt.
+  → betrifft: content-vlog, content-*, alle
+
 ## 2026-11-11 (spaeter) — die Szenenerkennung lag ein Bild daneben
 
 - **`select='gt(scene,…)'` auf einem mit `-ss` gesuchten Eingang meldet die

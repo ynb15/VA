@@ -1,0 +1,88 @@
+# Ken Stern — „There's no I in Ubuntu" · Fassung 2 (57,6 s · Hauptteil 53,4 s + Outro 4,2 s)
+# Rohzeit 1:05:26,65 + 1:05:36,11–1:06:35,57 · Tempo 1,15
+#
+# Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
+# Was raus soll: Zeile loeschen oder die Nummer nennen.
+#
+  1  [00:00.00–00:01.52]  THE AFRICAN PROVERB UBUNTU
+  2  [00:02.80–00:09.30]  MOST PEOPLE MISINTERPRET IT MOST WESTERNERS MISINTERPRET IT AS I AM BECAUSE WE ARE BUT
+  3  [00:09.30–00:13.04]  IN FACT THERE'S NO I IN UBUNTU TECHNICALLY
+  4  [00:13.48–00:20.14]  IT ACTUALLY MEANS A PERSON IS A PERSON THROUGH OTHER PEOPLE OR AS I
+  5  [00:20.14–00:24.88]  LIKE TO TRANSLATE IT WE ARE WHO WE ARE THROUGH OUR RELATIONSHIPS
+  6  [00:26.90–00:34.56]  AND WITH ME LIVING IN SOUTH AFRICA AND GETTING TO SPEND TIME WITH INDIGENOUS
+  7  [00:34.56–00:41.14]  TRIBES LIKE THE ZULUS THE KHOI THE SAN TRIBES IT'S EXACTLY THAT
+  8  [00:41.80–00:47.34]  THE ELDERS FROM THESE TRIBES KEEP SAYING THIS IS WHAT THEY SEE WHAT WE ARE
+  9  [00:47.34–00:51.44]  MISSING AND LOSING MORE AND MORE IN OUR WESTERN WORLD
+ 10  [00:51.90–00:53.22]  THE CONNECTION TO OTHERS
+
+# ══════════════════════════════════════════════════════════════════
+# DEINE VIER ANSAGEN
+# ══════════════════════════════════════════════════════════════════
+#   Tempo 1,15 statt 1,12                                        erledigt
+#   Anfang auf „the African proverb Ubuntu"                      erledigt
+#   Alles dazwischen raus bis „so most people misinterpret it"   erledigt
+#   Ende auf „the connection to others"                          erledigt
+#
+# Raus ist damit genau EIN Stueck, bei 00:01.5: Rohzeit 1:05:28,57–1:05:36,11,
+# 7,5 s. Woertlich:
+#
+#   [1:05:28.90]  Yes.
+#   [1:05:29.22]  Remember. Yeah, the definition.
+#   [1:05:31.04]  I don't remember this, but I remember liking when you said it.
+#   [1:05:33.82]  Yeah, and I find it beautiful.
+#
+# Und vorne weg der Anlauf, den Du nicht mehr wolltest: „And we talked about
+# that on your show briefly, if you remember, I threw in..." (5,5 s).
+#
+# Dazugekommen ist der ganze Suedafrika-Teil, 30 s, der vorher fehlte —
+# Zeilen 6 bis 10.
+
+# ══════════════════════════════════════════════════════════════════
+# DREI STELLEN, DIE ICH AM TON NACHGEPRUEFT HABE
+# ══════════════════════════════════════════════════════════════════
+# KHOI und SAN — das Modell schreibt „Koi" und „Sun tribes", weil es genau
+#   so klingt. Es sind die Khoi (Khoikhoi) und die San, zwei Voelker.
+#   Du nennst sie einzeln, nicht als „Khoisan" — das ist auch die bessere
+#   Form, der Sammelbegriff stammt aus der Kolonialzeit und wird von San-
+#   Vertretern abgelehnt (Windhoek 2001).
+# MISINTERPRET IT, nicht „misinterpreted". Bei Sprechtempo hoeren beide
+#   Modelle das Falsche; erst bei 0,7- und 0,55-facher Geschwindigkeit wird
+#   es eindeutig.
+# RELATIONSHIPS — in der ersten Schnittfassung hatte das Modell das Wort
+#   ganz verschluckt. In dieser Fassung schreibt es das Modell selbst.
+#
+# ORTSPRUEFUNG: „with me living in South Africa" steht jetzt drin. Nach
+#   Deiner Regel vom 21.10. ist das Land erlaubt; genauer wird es nirgends.
+#   Die Pruefung laeuft sauber durch.
+
+# ══════════════════════════════════════════════════════════════════
+# EINS, DAS ICH DIR SAGEN MUSS
+# ══════════════════════════════════════════════════════════════════
+# Zwischen 00:01.7 und dem Ende laeuft EINE einzige Kameraeinstellung,
+# 51,7 Sekunden lang. Die Aufnahme schneidet dort schlicht nicht um — der
+# naechste Kameraschnitt kommt erst, als Du mit „the connection to others"
+# fertig bist. Ich habe nichts dazuerfunden; das ist, was da ist.
+# Wenn es Dir zu statisch ist, kann ich in der Mitte langsam enger ziehen.
+# Sag Bescheid, dann baue ich das.
+
+# ══════════════════════════════════════════════════════════════════
+# AUFBAU
+#   0:00.0–0:01.7  Du, Nah — „the African proverb Ubuntu"
+#   0:01.7–0:53.4  Du, Nah — eine Einstellung bis zum Schluss
+# Tempo 1,15. Der Tonschnitt bei 1,7 s liegt auf dem Kameraschnitt der
+# Aufnahme, ist also auch im Bild ein Schnitt und kein Sprung.
+#
+# MUSIK: „In This Shirt" liegt jetzt drunter (eigene Datei, „(In This
+#   Shirt)" im Namen). Bett ab 0:23,25 des Titels — dort, wo er arrangiert
+#   losgeht, nicht am Songanfang. Laeuft 0,00–53,37 s, Einblende 0,2 s,
+#   Ausblende 4 s, danach das Outro allein. Durch Subtraktion geprueft:
+#   hoerbar ab der ersten Sekunde, ab 54 s unter -74 dB.
+#   Pegel: Stimme -33,5 dB, Bett -31,8 dB -> 10 dB unter der Stimme.
+#   ACHTUNG RECHTE: kommerzielle Veroeffentlichung aus demselben Ordner,
+#   aus dem „Daylight" am 22.10. zwei Deiner Shorts weltweit gesperrt hat.
+#   Die Fassung ohne Musik bleibt im Repo.
+#
+# ABNAHME (gemessen, alles sauber)
+#   1080x1920 · 48 kHz · 57,6 s · Outro da · 52 Untertitel · Ortscheck sauber
+#
+# NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.
