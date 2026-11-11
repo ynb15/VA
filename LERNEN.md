@@ -45,6 +45,41 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 40 — 11.11.2026, 06:40 Kapstadt · die Ortsregel trifft nicht nur Drehorte, und Segmentzeiten taugen nicht zum Stummschalten
+
+- **Die Ortsregel gilt auch, wenn der Gast über sein eigenes Zuhause
+  spricht.** Die stärkste kurze Stelle der Ken-Stern-Folge
+  (00:07:13–00:08:23) ist ein Nachbarschaftsschwur, der **nach der Straße
+  heißt, in der Ken wohnt** — der Name fällt **dreimal**, in Ton und
+  Untertitel. Entschieden: **stummschalten, im Untertitel ersetzen, die
+  Stelle bleibt.** Streichen wäre nur richtig gewesen, wenn die
+  Stummschaltung den Satz zerrissen hätte oder die Pointe am Namen hinge —
+  beides nicht der Fall. **Die Klasse ist größer als Drehorte:** Straße,
+  Hausnummer, Viertel, die Schule der Kinder, die Bar um die Ecke.
+  → betrifft: jeden, der aus Gesprächen schneidet
+- **Segmentzeiten taugen nicht zum Stummschalten — es wird wortgenau
+  gemessen.** Das Transkript sagt **00:07:46**; das Wort beginnt bei
+  **468,96 s**, also 00:07:49. **Drei Sekunden daneben, bei einem Wort von
+  0,34 s Länge** — man schaltet die falsche Silbe stumm. Dafür gibt es
+  `word_timestamps`; die Segmentzeile ist eine Schätzung.
+  → betrifft: content-cinematic, content-shorts-2, content-gastauftritte,
+  content-schlicht
+- **Der Untertitel ist die zweite Spur, nicht die Kopie.** Ein Name, der im
+  Ton weg ist und in der SRT steht, ist nicht weg. Gilt für jede
+  Entschärfung — Ortsangaben wie die Zensur von „suicidal".
+  → betrifft: alle, die schneiden
+- **Ein geeichter Anker aus einem fremden Zweig ersetzt eine Rechnung.** Ob
+  das Ken-Transkript die ganze Folge abdeckt, war mit drei Belegen in
+  Minuten geklärt statt mit einer Hochrechnung: die Intro-Frage aus dem
+  Vorbereitungsdoku als erstes Segment, der Abschied samt Fist Bump als
+  letztes, und das **fertige Meaning-Short aus `content-vlog`**, das im
+  Masterfenster **6150,1–6189,3 s** sitzt — im Transkript steht bei
+  **01:42:30** genau dessen Frage. **Bei Kingsbury deckte ein Transkript nur
+  61 % der Folge ab**, und das fiel erst Tage später auf.
+  → betrifft: alle, die mit Mastern arbeiten
+
+---
+
 ## Ausgabe 39 — 10.11.2026, 15:54 Kapstadt · ein Faden ist kein Register, und eine Schleife frisst ihre eigene Liste
 
 - **Ein einzelner Faden ist kein Register.** Ich habe in einer Bewerbung

@@ -90,8 +90,8 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | So 08.11. | Clip | 10–20 Min | offen |
 | Mo 09.11. | Short | **Ep_58 · ‚Breakdown‘** (Gastauftritte, The Garden) | **bei ihm** — 06.11. 14:53 fertig, mit entschärfter Einblendung (`suic*dal`) · *mein Vorschlag* |
 | Di 10.11. | Short | **Ep_58 · ‚Workaholism‘** (Gastauftritte, The Garden) | **bei ihm** — 06.11. gebaut, aus seiner eigenen Slack-Liste („44:00 Workaholism“) · *mein Vorschlag* |
-| Mi 11.11. | Short | — | offen |
-| Do 12.11. | Short | — | offen |
+| Mi 11.11. | Short | **Strassman · „Answer"** (36,7 s) | fertig · *mein Vorschlag* |
+| Do 12.11. | Short | **Strassman · „Grays"** (77,3 s) | fertig · *mein Vorschlag* |
 | Fr 13.11. | **PODCAST** | Rick Strassman | offen |
 | Sa 14.11. | Clip | 3–10 Min | offen |
 | So 15.11. | Clip | 10–20 Min | offen |
@@ -464,3 +464,27 @@ Woche veröffentlichen** — gesagt am 10.11. als Begründung dafür, zwei Mails
 eine Woche zu verschieben. **Meine Lesart, nicht seine:** damit bleibt der
 13.11. Rick, und Ken fällt in die Woche vom 16.11. **Den Termin fasse ich
 nicht an.**
+
+## Zwei Strassman-Shorts vor die Folge — mein Vorschlag, 11.11.2026
+
+Der 11. und der 12.11. standen heute morgen **ohne Quelle** da, und der Vorrat
+war nach dem Workaholism-Short auf null. Gebaut wird deshalb nichts Neues —
+**es liegen zehn fertige Strassman-Shorts seit gestern.**
+
+**Sein eigener Präzedenzfall:** zur Aaronson-Folge am **25.10.** gingen ein
+3:44-Clip am **23.10.** und ein 7:34-Clip am **24.10.** hinaus, also **vor**
+der Folge. Ein Short zwei Tage vor der Folge ist bei ihm kein Sonderfall,
+sondern das, was er schon gemacht hat.
+
+**Vorschlag:**
+- **Mi 11.11. · „Answer"** (36,7 s, roh 55:37–56:16) — *„So in a way it kind
+  of steered me away from psychedelics."* Das ist derselbe Satz, auf dem der
+  empfohlene Titel steht. Als Vorlauf trägt er die Folge, statt sie
+  vorwegzunehmen.
+- **Do 12.11. · „Grays"** (77,3 s, roh 25:52–27:20) — brennender Wasserfall,
+  vier bis sechs kleine Graue, *„now do you see"*. Das Bild der Folge.
+
+**Das ist mein Vorschlag, nicht seine Festlegung.** Beide sind ungesehen, und
+die Pegelfrage steht offen — er sieht sie ohnehin an, bevor etwas rausgeht.
+**„Die Zahl 49" und die beiden Langstücke bleiben zurückgehalten**, die hängen
+an der Fassungsfrage.

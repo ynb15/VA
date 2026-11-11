@@ -42,13 +42,7 @@ BEOBACHTEN = [
      "Fassung 2 (09:35, 58,0 s), What do you believe in? (10:27). Jetzt auf "
      "03., 04. und 05.11. gelegt — das ist MEIN Vorschlag, nicht seine "
      "Festlegung. Abnahme fehlt bei allen drei."),
-    ("Ken Stern", "SEINE ANSAGE vom 06.11., ueber den YouTube-Manager "
-     "weitergegeben: er zieht Ken Stern VOR, \u201edamit wir nicht zwei "
-     "psychedelisch fokussierte Podcasts hintereinander haben mit Kyle und "
-     "Rick back-to-back\u201c. Aufnahme liegt: 14.09.2026, Ordner "
-     "18nUfXLmrKTPBfgwh90MATPKjgmNsjTJQ. Noch KEIN Transkript, KEINE Auswahl, "
-     "KEIN Paket. Den Termin 13.11. fasse ich nicht an -- das ist einer seiner "
-     "fuenf eigenen. Wird der 13.11. Ken, braucht es T-10 sofort."),
+    ("Ken Stern", "Lauft. Transkript am 10.11. fertig (1760 Segmente, 105,6 Min, ueber drei Anker belegt), Auswahl am 10.11. nachts, Strassenname an drei Stellen stumm. Master 1RGq-Mw0QEm5jE2WMthKPkP5OHrXvmotF, dazu ein fertiges Meaning-Short (6150,1-6189,3) und zwei Thumbnails, die schon vorher dalagen. OFFEN: T-6 Paket, T-5 Thumbnails, T-3 Shorts. SEINE ANSAGE vom 10.11.: er will Ken NAECHSTE WOCHE veroeffentlichen. MEINE LESART, nicht seine: der 13.11. bleibt Rick. Ein Datum fasse ich nicht an."),
 ]
 
 # Wer eine Folge schneidet, entscheidet die Folge, nicht die Frist.
@@ -103,7 +97,7 @@ ERLEDIGT = {
     # gemeldet -- es lag im Chat, nicht im Zweig. Deshalb gefragt statt gemahnt.
     # T-5 am 08.11. erfuellt, 16 Minuten nach dem Auftrag: sechs Thumbnails
     # aus gemessenen Gesichtern (b12512d, claude/thumbnails), 1280x720.
-    "Rick Strassman": {10, 8, 6, 5},
+    "Rick Strassman": {10, 8, 6, 5, 3},
 }
 
 # Entscheidungspunkte: Tag -> was an diesem Tag entschieden werden muss, und

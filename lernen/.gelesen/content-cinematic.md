@@ -711,3 +711,36 @@ Lautheitsangleichung, die er abgelehnt hat, sondern ein fester Faktor, der
 Dynamik und Rauschabstand unverändert lässt?
 
 → betrifft: alle, die aus Rohsitzungen schneiden statt aus fertigen Exporten.
+
+## 10.11. — entschieden: der Straßenname wird stumm, die Stelle bleibt
+
+Die stärkste kurze Stelle der Ken-Stern-Folge (00:07:13–00:08:23) ist ein
+Nachbarschaftsschwur, der jedes Jahr vorgetragen wird und in dem Jahr mit
+*„everyone but Republicans"* endete. Der Schwur **heißt nach der Straße, in
+der Ken wohnt**, und der Name fällt dreimal — in Ton und Untertitel.
+
+Die Regel sagt: Ortsangaben höchstens Stadt und Land. Der Straßenname eines
+Gastes ist deutlich darunter.
+
+**Entschieden ist: stummschalten, im Untertitel ersetzen, die Stelle
+bleibt.** Streichen wäre nur richtig, wenn die Stummschaltung den Satz
+zerrisse oder der Witz am Namen hinge — beides trifft nicht zu: der Name
+steht jedes Mal als eigenes Wort vor „Street", und die Pointe ist
+„everyone but Republicans".
+
+Zwei Dinge, die ich dabei gelernt habe und die beim nächsten Gast wieder
+kommen:
+
+**Die Segmentzeiten taugen für die Stummschaltung nicht.** Das Transkript
+sagt 00:07:46 für den dritten Namen; das Wort beginnt bei **468,96 s**,
+also 00:07:49. Drei Sekunden daneben — bei einem Wort von 0,34 s Länge
+hieße das, man schaltet die falsche Silbe stumm. Für so etwas wird
+**wortgenau** gemessen (`word_timestamps`), nicht aus der Segmentzeile
+geschätzt.
+
+**Und der Untertitel ist die zweite Spur, nicht die Kopie.** Ein Name, der
+im Ton weg ist und in der SRT steht, ist nicht weg.
+
+→ betrifft: jeden, der aus Gesprächen schneidet, in denen Gäste über ihr
+eigenes Zuhause, die Schule ihrer Kinder oder die Bar um die Ecke erzählen
+— die Ortsregel trifft nicht nur Drehorte.

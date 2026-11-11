@@ -92,3 +92,31 @@ Handlungsbedarf, aber bei Ken stehen T−6, T−5, T−3 und T−2 noch aus — 
 nenne die Zahl im Morgenbericht, ohne eigenmächtig einen Nachfolger anzulegen.
 
 Nichts im Chat.
+
+## 06:40 · T−2 übergeben, und der Tag hatte keine Quelle
+
+- **06:40** · alle neun Zweige · keine Bewegung seit **00:53** · neue
+  Commits: **keine** · Maßnahme: **keine**
+- content-cinematic steht bei **721k/1000k** Kontext (Autoverdichtung bei
+  784k). Bei Ken stehen T−6, T−5, T−3 und T−2 noch aus. **Kein Nachfolger
+  angelegt** — das wäre seine Entscheidung.
+
+**T−2 Strassman ist meine Frist und ist erfüllt:** `drafts/strassman/paket-t2.md`
+führt alles zusammen — Beschreibung, 15 Titel, 15 Thumbnail-Zeilen, sechs
+Thumbnails, zehn Shorts mit Längen und Musik — und benennt die vier Lücken
+(Kapitelmarken, die beiden Langstücke, das elfte Short, He's Alive) statt sie
+wegzulassen. **Keine der drei offenen Fragen blockiert den 13.11.**
+
+**Ein Fund beim Zusammenstellen:** zwei der fünfzehn Thumbnail-Zeilen stehen
+**wörtlich im empfohlenen Titel**. Thumbnail A passt damit zu Titel Nr. 5,
+nicht zu Nr. 1 — sonst sagen Titel und Bild im Feed dasselbe.
+
+**Der 11. und der 12.11. standen ohne Quelle da**, Vorrat null nach dem
+Workaholism-Short. Nichts Neues gebaut: zehn fertige Strassman-Shorts liegen
+seit gestern. Vorgeschlagen sind **„Answer" (36,7 s) heute** und
+**„Grays" (77,3 s) morgen**, als Vorlauf auf die Folge — sein eigener
+Präzedenzfall ist Aaronson, wo ein 3:44- und ein 7:34-Clip am 23. und 24.10.
+**vor** der Folge vom 25.10. hinausgingen. **Mein Vorschlag, nicht seine
+Festlegung.**
+
+**Lernen Ausgabe 40** geschrieben, vier Befunde aus der Ortsentscheidung.
