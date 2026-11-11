@@ -1,0 +1,140 @@
+# Ken Stern — Ubuntu. Der ganze Block, Rohzeit 1:04:38–1:07:00
+#
+# Das ist das ROHTRANSKRIPT des Masters, nicht der Schnitt.
+# Zeiten sind Rohzeit der Aufnahme (Master 1:45:33), jede Zeile nummeriert.
+#
+# Spalte vorne:
+#   >>  steht im Short, so wie er jetzt ist
+#   .   steht nicht drin
+#
+# Du hast gesagt, da muss was geschnitten werden. Deshalb steht hier der
+# ganze Block und nicht nur mein Ausschnitt — sag mir Nummern:
+#   a) "raus mit 10 bis 12"           -> ich kuerze
+#   b) "nimm 28 bis 36 noch dazu"     -> ich verlaengere, Tempo passe ich an
+#   c) Datei bearbeiten, zurueckschicken
+#
+# Laengenrechnung: bei Tempo 1,12 sind rund 2,45 Woerter eine Sekunde.
+# Der jetzige Short hat 92 Woerter -> 38,0 s + 4,2 s Outro = 42,2 s.
+# Unter 60 s passen rund 136 Woerter, also rund 44 mehr als jetzt.
+
+ . 001  [1:04:38.12]  Yeah, it's been striking for me, Ken.                                         7
+ . 002  [1:04:40.26]  Ever since I started this podcast,                                            6
+ . 003  [1:04:42.08]  I've done maybe a few dozen episodes                                          7
+ . 004  [1:04:45.16]  on four different continents.                                                 4
+ . 005  [1:04:47.18]  And one thing that keeps overlapping                                          6
+ . 006  [1:04:50.94]  is that it's people that gives us meaning, right?                             9
+ . 007  [1:04:57.26]  And we see it time and again,                                                 7
+ . 008  [1:05:01.44]  the blue zones, your longevity project.                                       6
+ . 009  [1:05:05.34]  Community is an essential,                                                    4
+ . 010  [1:05:08.08]  maybe the most essential part of human nature.                                8
+ . 011  [1:05:12.04]  We got someone like Ram Dass saying,                                          7
+ . 012  [1:05:14.24]  hey, if you look for the key to life,                                         9
+ . 013  [1:05:19.04]  it's be of service, right?                                                    5
+>> 014  [1:05:21.08]  And we talked about that on your show briefly,                                9
+>> 015  [1:05:24.24]  if you remember, I threw in the African proverb Ubuntu.                      10
+>> 016  [1:05:28.90]  Yes.                                                                          1
+>> 017  [1:05:29.22]  Remember the definition?                                                      3
+>> 018  [1:05:31.04]  I don't remember this,                                                        4
+>> 019  [1:05:31.90]  but I remember liking when you said it.                                       8
+>> 020  [1:05:33.82]  Yeah, and I find it beautiful.                                                6
+>> 021  [1:05:36.26]  So most people misinterpret it,                                               5
+>> 022  [1:05:39.84]  most Westerners misinterpret it                                               4
+>> 023  [1:05:41.66]  as I am because we are.                                                       6
+>> 024  [1:05:44.24]  But in fact, there's no I in Ubuntu, technically.                             9
+>> 025  [1:05:49.72]  It actually means a person is a person                                        8
+>> 026  [1:05:52.82]  through other people.                                                         3
+>> 027  [1:05:56.70]  Or as I like to translate it,                                                 7
+>> 028  [1:05:59.42]  we are who we are through our relationships.                                  8
+ . 029  [1:06:05.04]  And with me living in South Africa                                            7
+ . 030  [1:06:09.48]  and getting to spend time with indigenous tribes                              8
+ . 031  [1:06:14.46]  like the Zulus, the Khoi, the Sun tribes,                                     8
+ . 032  [1:06:19.92]  it's exactly that,                                                            3
+ . 033  [1:06:21.74]  like the elders from these tribes                                             6
+ . 034  [1:06:24.36]  keep saying this is what they see,                                            7
+ . 035  [1:06:27.26]  what we are missing and losing more and more                                  9
+ . 036  [1:06:31.44]  in our Western world, the connection to others.                               8
+ . 037  [1:06:37.28]  And I think that's beautiful.                                                 5
+ . 038  [1:06:40.90]  I've written it down and I think I wrote it down last time                   13
+ . 039  [1:06:43.28]  and then promptly forgot it                                                   5
+ . 040  [1:06:44.26]  and I'll probably forget it again.                                            6
+ . 041  [1:06:45.44]  But I think it's a really important concept.                                  8
+ . 042  [1:06:48.70]  And I think more and more people are recognizing that                        10
+ . 043  [1:06:51.88]  and recognizing that technology                                               4
+ . 044  [1:06:53.72]  is the enemy of that human connection.                                        7
+ . 045  [1:06:58.72]  The challenge is we don't know                                                6
+
+# ==================================================================
+# Im Short: 15 Zeilen, 92 Woerter. Platz waere fuer rund 44 mehr.
+#
+# ==================================================================
+# WO ICH DIE GRENZEN GESETZT HABE, UND WARUM
+# ==================================================================
+#
+# ANFANG bei 014. Davor (001-013) ist Dein Anlauf: Podcastzahl, vier
+#   Kontinente, Blue Zones, Ram Dass. 43 s, und Ubuntu kommt darin nicht
+#   vor. Deshalb draussen.
+#
+# ENDE bei 028, auf "through our relationships" — genau wie beim Craig-
+#   Short, den Du so bestellt hattest.
+#
+# ==================================================================
+# DREI SACHEN, DIE ICH ZUM SCHNEIDEN VORSCHLAGE
+# ==================================================================
+#
+# 1. Zeile 014 — "And we talked about that on your show briefly"
+#    3,2 s. "Your show" ist Kens eigener Podcast. Wer das Short sieht,
+#    weiss das nicht, und es klingt, als fehle davor etwas. Raus damit
+#    faengt das Short auf "if you remember, I threw in the African
+#    proverb Ubuntu" an — oder, noch straffer, auf 015 ohne "if you
+#    remember". Das ist die Stelle, die ich an Deiner Stelle streichen
+#    wuerde.
+#
+# 2. Zeilen 016-019 — der Wortwechsel mit Ken, 4,9 s
+#    "Yes. Remember the definition? I don't remember this, but I
+#    remember liking when you said it." Schoen, weil zwei Stimmen
+#    vorkommen und Ken im Bild ist. Aber er bringt die Sache nicht
+#    weiter. Raus waere das Short 33,1 s statt 42,2 s.
+#
+# 3. Zeile 020 — "Yeah, and I find it beautiful." 2,4 s
+#    Reine Ueberleitung.
+#
+# Alle drei raus: 27,6 s + Outro = 31,8 s, und es beginnt direkt auf
+# "So most people misinterpret it". Hart, aber es traegt.
+#
+# ==================================================================
+# WAS ICH DAZUNEHMEN KOENNTE, WENN DU WILLST
+# ==================================================================
+#
+# Zeilen 029-037 — Suedafrika und die Aeltesten, 32 s
+#   "And with me living in South Africa and getting to spend time with
+#   indigenous tribes like the Zulus, the Khoi, the San tribes, it's
+#   exactly that — the elders from these tribes keep saying this is what
+#   they see, what we are missing and losing more and more in our Western
+#   world, the connection to others. And I think that's beautiful."
+#
+#   Das erdet die Definition: nicht Theorie, sondern von Aeltesten
+#   gehoert. Mit 014-028 zusammen waeren das 124 Woerter — passt unter
+#   60 s, ohne das Tempo anzuheben.
+#   ORTSPRUEFUNG: darin steht "living in South Africa". Nach Deiner Regel
+#   vom 21.10. ist das Land erlaubt ("Cape Town oder South Africa — ich
+#   moechte es halt nur nicht genauer veroeffentlichen"), genauer wird es
+#   an keiner Stelle. Der jetzige Short enthaelt die Zeile nicht.
+#
+# Zeilen 038-044 — Kens Antwort, 18 s
+#   "I've written it down and I think I wrote it down last time and then
+#   promptly forgot it and I'll probably forget it again. But I think
+#   it's a really important concept." Selbstironisch, gibt Ken das letzte
+#   Wort. Dafuer endet das Short dann nicht auf Deinem Satz.
+#
+# ==================================================================
+# ZWEI STELLEN, DIE ICH AM TON NACHGEPRUEFT HABE
+# ==================================================================
+# 021/022  "misinterpret it", nicht "misinterpreted". Bei normalem Tempo
+#   hoeren beide Modelle "misinterpreted"; auf 0,7- und 0,55-facher
+#   Geschwindigkeit hoert large-v3 zweimal eindeutig "misinterpret it" —
+#   und nur das ergibt den Satz.
+# 018/019  Kens Antwort heisst "I don't remember this, but I remember
+#   liking when you said it" — nicht "...the definition... liking it...".
+#   Vier Durchlaeufe stimmen darin ueberein, nur mein erster wich ab.
+#
+# NICHT VEROEFFENTLICHT. Ich baue, Du laedst hoch.

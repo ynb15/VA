@@ -1,0 +1,71 @@
+# Ken Stern — „There's no I in Ubuntu" (42,2 s · Hauptteil 38,0 s + Outro 4,2 s)
+# Rohzeit 1:05:21–1:06:04 des Masters
+#
+# Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
+# Was raus soll: Zeile loeschen oder die Nummer nennen.
+#
+  1  [00:00.00–00:05.06]  AND WE TALKED ABOUT THAT ON YOUR SHOW BRIEFLY IF YOU REMEMBER I THREW IN
+  2  [00:05.06–00:10.02]  THE AFRICAN PROVERB UBUNTU YES REMEMBER YEAH THE DEFINITION I DON'T REMEMBER THIS BUT I
+  3  [00:10.02–00:15.54]  REMEMBER LIKING WHEN YOU SAID IT YEAH AND I FIND IT BEAUTIFUL SO MOST PEOPLE
+  4  [00:16.16–00:22.06]  MISINTERPRET IT MOST WESTERNERS MISINTERPRET IT AS I AM BECAUSE WE ARE BUT IN FACT
+  5  [00:22.06–00:28.26]  THERE'S NO I IN UBUNTU TECHNICALLY IT ACTUALLY MEANS A PERSON IS A PERSON
+  6  [00:28.26–00:34.02]  THROUGH OTHER PEOPLE OR AS I LIKE TO TRANSLATE IT
+  7  [00:34.40–00:37.24]  WE ARE WHO WE ARE THROUGH OUR RELATIONSHIPS
+
+# ══════════════════════════════════════════════════════════════════
+# DAS SKRIPT LIEGT DANEBEN — darin steht mehr
+# ══════════════════════════════════════════════════════════════════
+# `ken-stern-ubuntu-block.txt`: der ganze Block 1:04:38–1:07:00,
+# 45 Zeilen durchnummeriert, mit Wortzahl, und markiert was drin ist.
+# Darin auch drei konkrete Streichvorschlaege und zwei Bloecke, die ich
+# dazunehmen koennte. Sag Nummern, ich baue um.
+#
+# Kurzfassung meiner drei Vorschlaege:
+#   Zeile 1 im Short ("AND WE TALKED ABOUT THAT ON YOUR SHOW BRIEFLY")
+#     — "your show" ist Kens eigener Podcast, das weiss der Zuschauer
+#     nicht. Das wuerde ich an Deiner Stelle streichen. 3,2 s.
+#   Der Wortwechsel mit Ken (Zeilen 2-3, bis "WHEN YOU SAID IT") — 4,9 s.
+#     Schoen wegen der zwei Stimmen, bringt die Sache aber nicht weiter.
+#   "YEAH AND I FIND IT BEAUTIFUL" — reine Ueberleitung, 2,4 s.
+# Alle drei raus: 31,8 s, und es beginnt direkt auf „SO MOST PEOPLE
+# MISINTERPRET IT".
+#
+# Und Platz ist da: unter 60 s passen rund 136 Woerter, der Short hat 92.
+# Der Block danach (Suedafrika, die Aeltesten der Zulu, Khoi und San,
+# 32 s) wuerde zusammen mit allem Jetzigen immer noch unter 60 s passen.
+
+# ══════════════════════════════════════════════════════════════════
+# WAS ICH HERAUSGENOMMEN HABE: NICHTS
+# ══════════════════════════════════════════════════════════════════
+# Eine Stelle am Stueck, kein Innenschnitt. Die drei
+# Einstellungswechsel sind die Kameraschnitte der Aufnahme, nicht meine.
+
+# ══════════════════════════════════════════════════════════════════
+# ZWEI STELLEN, DIE ICH AM TON NACHGEPRUEFT HABE
+# ══════════════════════════════════════════════════════════════════
+# „MISINTERPRET IT", nicht „misinterpreted". Bei normalem Tempo hoeren
+#   beide Modelle „misinterpreted"; auf 0,7- und 0,55-facher
+#   Geschwindigkeit hoert large-v3 zweimal eindeutig „misinterpret it" —
+#   und nur das ergibt den Satz. Gleiche Methode wie bei den
+#   isiXhosa-Woertern im Craig-Short.
+# Kens Antwort heisst „I DON'T REMEMBER THIS, BUT I REMEMBER LIKING WHEN
+#   YOU SAID IT" — nicht „...the definition... liking it...". Vier
+#   Durchlaeufe stimmen ueberein, nur mein erster wich ab.
+
+# ══════════════════════════════════════════════════════════════════
+# AUFBAU
+#   0:00.0–0:06.8  Du, Nah
+#   0:06.8–0:11.4  Totale, Kasten auf Ken — seine Antwort
+#   0:11.4–0:13.3  Totale, Kasten auf Dich
+#   0:13.3–0:38.0  Du, Nah — die Definition bis „through our relationships"
+# Tempo 1,12 (Rohmaster, wie bei den Aaronson-Shorts).
+#
+# MUSIK: keine. Nicht angesagt, und bei Musik frage ich pro Stueck.
+#   Sag den Titel, dann liegt er drunter — mit vorgezogenem Einsatz,
+#   In This Shirt ab 0:23,25, On The Nature Of Daylight ab 0:24,50.
+#
+# ABNAHME (gemessen, alles sauber)
+#   1080x1920 · 48 kHz · 42,2 s · Outro da · 43 Untertitel
+#   Ortscheck sauber · kein Musikbett (-80,2 dB)
+#
+# NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.

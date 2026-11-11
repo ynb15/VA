@@ -6,6 +6,47 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-11-11 — eine Stelle in 1:45 finden, ohne die Datei zu durchsuchen
+
+- **Sein Vorbereitungsdokument im Drive-Ordner der Folge sagt, wo die Stelle
+  liegt — das ist der billigste Sucheinstieg, den es gibt.** Im Doc
+  `00 YNB Podcast: Ken Stern` steht unter *Timestamps* woertlich
+  **„1:05:00 Short: Ubuntu"**, daneben Dinge wie „5:14: edit out" und
+  „57:12 - 1:06:00 raeuspern edit". Gefunden ohne das 823-KB-Dokument zu
+  oeffnen: `search_files` mit
+  `fullText contains 'Ubuntu' and parentId = '<Ordner>'` liefert einen
+  Ausschnitt, der das ganze Kapitel enthaelt. **Vor jedem Blindflug durch
+  einen Master gehoert diese eine Suche.** Danach reichte ein Byte-Fenster
+  von **1141 MB statt 16,8 GB**.
+  → betrifft: alle Content-Agenten
+- **Ein langes Transkriptionsfenster hoert eine kurze, leise Stelle
+  schlechter als ein Ausschnitt von sechs Sekunden.** `medium` ueber 280 s
+  schrieb Kens Antwort als *„I don't remember the definition, but I remember
+  liking it when you said it"*. Vier andere Durchlaeufe — `medium` am
+  gedehnten Schnitt, `large-v3` bei 1,0 · 0,7 · 0,55 am 6-Sekunden-Ausschnitt
+  — sagen uebereinstimmend *„I don't remember this, but I remember liking
+  when you said it"*. **Der Ueberblickslauf taugt zum Finden, nicht zum
+  Zitieren; wer woertlich wiedergibt, schneidet die Stelle heraus und
+  transkribiert sie einzeln.**
+  → betrifft: content-*, alle
+- **Das Verlangsamen hat zum zweiten Mal eine eingebrannte Zeile gerettet,
+  diesmal bei ganz normalem Englisch.** „most people misinterpret it" klingt
+  bei Sprechtempo wie „misinterpreted", und **beide** Modelle schrieben das
+  auch — erst bei 0,7- und 0,55-facher Geschwindigkeit hoert `large-v3`
+  zweimal „misinterpret it", und nur das ergibt den Satz. **Die Regel vom
+  05.11. galt fuer Fremdsprachiges; sie gilt auch fuer verschliffene
+  englische Endungen.** Pruefzeichen: wenn die Transkription grammatisch
+  schief ist, ist meist sie falsch und nicht der Sprecher.
+  → betrifft: alle Content-Agenten
+- **Wenn in einer Totale zwei Sprecher 1400 px auseinandersitzen, folgt der
+  Kasten dem Sprecher.** Ein 9:16-Ausschnitt ist 608 px breit, die beiden
+  stehen bei x 260 und x 1660 — einer von beiden ist immer draussen. Statt
+  die Totale wegzuwerfen oder einen stumm im Bild zu lassen: zwei Kaesten
+  innerhalb derselben Einstellung, geschnitten am Sprecherwechsel
+  (4,7 s auf Ken, 1,9 s auf ihn). **Beide ueber der Halbsekundengrenze vom
+  26.10., sonst gilt die wieder.**
+  → betrifft: alle Content-Agenten
+
 ## 2026-11-05 (nachmittags) — die ab-Sekunde des Betts, und ein Beleg fuer die Musikschwelle
 
 - **Seine Regel „den Inhalt des Songs vorziehen" stand seit dem 22.10. beim
