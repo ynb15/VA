@@ -69,3 +69,26 @@ Lehre vom 09.11. (Gastbuchung, sechs Stunden blockiert): **wenn Material wie
 ein Auftrag aussieht, muss darin stehen, was davon der Auftrag ist.**
 
 Nichts im Chat.
+
+## 03:40 · die Antwort hat gegriffen, drei Stellen stumm
+
+- **03:40** · content-cinematic · **erledigt** — `1cfd3cc` um **00:53**, sechs
+  Minuten nach meiner Antwort: *Ken Stern: Straßenname wird stumm, die Stelle
+  bleibt* · Kontext **721k/1000k** · neue Commits: **1** ·
+  Maßnahme: **keine**
+- **03:40** · die übrigen acht · keine offene Aufgabe, keine Bewegung ·
+  Maßnahme: **keine**
+
+**Der Name ist an drei Stellen stumm**, mit Untertitel-Ersatz an jeder — also
+beide Spuren, wie mitgegeben. Die Stelle bleibt erhalten. Nicht gerendert, wie
+angewiesen.
+
+*(Den Straßennamen schreibe ich hier nicht hin. Er steht in der Zusammenfassung
+des Agenten, und genau das ist der Punkt der Regel: ein Ort unterhalb der
+Stadt gehört nirgendwo hin, auch nicht in ein Protokoll.)*
+
+**Kontext bei 721k von 1000k.** Die Autoverdichtung greift bei 784k. Noch kein
+Handlungsbedarf, aber bei Ken stehen T−6, T−5, T−3 und T−2 noch aus — ich
+nenne die Zahl im Morgenbericht, ohne eigenmächtig einen Nachfolger anzulegen.
+
+Nichts im Chat.
