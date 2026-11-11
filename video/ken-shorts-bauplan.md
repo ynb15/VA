@@ -49,3 +49,43 @@ keinem der elf Fenster — das nächste beginnt bei 3645,8 s. Die
 Entschärfungsregel kommt hier nicht zum Tragen.
 
 `--laut aus` wie bei Strassman; die Pegelfrage liegt bei ihm.
+
+---
+
+## Gebaut, 11.11.2026
+
+Elf Shorts, Längen wie geplant (34,0 bis 87,8 s). `--laut aus`.
+
+**Die Satzenden hielten.** Von elf Stücken brach **kein einziges** mitten im
+Satz ab — bei Strassman war das vier von fünf Nachläufen. Der Unterschied
+ist nur, dass die Enden diesmal **vor** dem ersten Schnitt wortgenau
+gemessen wurden, auf dem Tonabzug, ohne ein einziges Bild zu holen.
+
+**Nachgebessert wurden Untertitel, nicht Schnitte** — acht von elf, alles
+verhörte Wörter. Die schlimmste Stelle war inhaltlich entscheidend:
+„Fit" schrieb *„AND FIRST I UNDERSTAND WHAT NICE FIT MEANT"*, gesagt ist
+*„I DIDN'T understand"*. Die Verneinung war verschwunden und mit ihr die
+ganze Pointe.
+
+In „Cigarettes" mussten fünfzehn Stellen heran: das kleine Modell schreibt
+die Füllwörter („um", „uh") mit, die das mittlere weglässt, und verhörte
+dazu *„it leaves cancers"* statt *„it leads to cancers"* und
+*„the fact that our health"* statt *„the impact on our health"*.
+
+## Pledge: beide Spuren geprüft
+
+**Ton:** an den drei Stummstellen misst die fertige Datei −35,8 · −34,6 ·
+−36,4 dB. Das ist das Musikbett, nicht die Stimme — rund 20 dB unter dem
+umgebenden Sprechpegel. Kein Loch, kein Name.
+
+**Untertitel:** „Hobart" kommt in der fertigen SRT **null Mal** vor.
+
+Dass beides nötig war, hat der erste Durchlauf bewiesen: der Ton war still,
+und im Bild stand der Name trotzdem dreimal. `--stumm` wirkt auf die
+Tonspur, die Einblendung kommt aus dem Transkript der **ungedämpften**
+Quelle.
+
+**Eine Einschätzung, keine Entscheidung:** im selben Short fällt der
+Vorname seines Sohnes („when my son Nate was young"). Das ist kein Ort und
+fällt nicht unter die Regel; ich habe ihn stehen lassen. Wenn das anders
+gesehen wird, ist es eine vierte Stummstelle.
