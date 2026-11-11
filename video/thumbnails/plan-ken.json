@@ -1,0 +1,177 @@
+[
+ {
+  "hg": "video/thumbnails/_hintergrund-ken-regal.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_ken1011.png",
+  "rechts": "video/thumbnails/_freisteller/k_ken0321.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 444,
+   "helligkeit": 0.95,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 413,
+   "helligkeit": 0.95,
+   "kontrast": 1.08
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "15",
+   "CIGARETTES",
+   "A DAY"
+  ],
+  "kasten": 1,
+  "ziel": "video/thumbnails/ken-A-15-cigarettes.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund-ken-regal.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_ken1011.png",
+  "rechts": "video/thumbnails/_freisteller/k_ken0321.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 444,
+   "helligkeit": 0.95,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 413,
+   "helligkeit": 0.95,
+   "kontrast": 1.08
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "CUT FROM",
+   "THE HERD"
+  ],
+  "kasten": [
+   1,
+   "HERD"
+  ],
+  "ziel": "video/thumbnails/ken-B-cut-from-the-herd.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund-ken-regal.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_ken1011.png",
+  "rechts": "video/thumbnails/_freisteller/k_ken0321.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 444,
+   "helligkeit": 0.95,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 413,
+   "helligkeit": 0.95,
+   "kontrast": 1.08
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "ALONE",
+   "BY DESIGN"
+  ],
+  "kasten": 0,
+  "ziel": "video/thumbnails/ken-C-alone-by-design.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund-ken-regal.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_ken1011.png",
+  "rechts": "video/thumbnails/_freisteller/k_ken0321.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 444,
+   "helligkeit": 0.95,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 413,
+   "helligkeit": 0.95,
+   "kontrast": 1.08
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "RICHEST AND",
+   "LONELIEST"
+  ],
+  "kasten": 1,
+  "ziel": "video/thumbnails/ken-D-richest-and-loneliest.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund-ken-regal.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_ken1011.png",
+  "rechts": "video/thumbnails/_freisteller/k_ken0321.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 444,
+   "helligkeit": 0.95,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 413,
+   "helligkeit": 0.95,
+   "kontrast": 1.08
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "TALK TO",
+   "STRANGERS"
+  ],
+  "kasten": 1,
+  "ziel": "video/thumbnails/ken-E-talk-to-strangers.jpg"
+ },
+ {
+  "hg": "video/thumbnails/_hintergrund-ken-regal.jpg",
+  "hg_dunkel": 0.07,
+  "links": "video/thumbnails/_freisteller/y_ken1011.png",
+  "rechts": "video/thumbnails/_freisteller/k_ken0321.png",
+  "ziel_links": {
+   "augen_x": 175,
+   "kinn_y": 575,
+   "box_h": 444,
+   "helligkeit": 0.95,
+   "kontrast": 1.06
+  },
+  "ziel_rechts": {
+   "augen_x": 1110,
+   "kinn_y": 575,
+   "box_h": 413,
+   "helligkeit": 0.95,
+   "kontrast": 1.08
+  },
+  "max_breite": 640,
+  "max_hoehe": 470,
+  "zeilen": [
+   "THIS ENDS",
+   "AMERICA"
+  ],
+  "kasten": [
+   0,
+   "ENDS"
+  ],
+  "ziel": "video/thumbnails/ken-F-this-ends-america.jpg"
+ }
+]
