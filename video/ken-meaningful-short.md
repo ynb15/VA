@@ -173,3 +173,29 @@ erkennen — solche Prüfungen gehören auf mindestens 240 px.**
 „In This Shirt" ab 0:23,25, Bett 0,00–53,07 s, Ausblende 4 s, Outro allein.
 Stimme −37,0 dB, Bett −35,3 dB. 1080×1920 · 48 kHz · 57,3 s · Outro da ·
 71 Untertitel · Ortscheck sauber.
+
+---
+
+## Nachtrag 11.11.: das Bett läuft jetzt über das Outro
+
+*„bei beiden soll die Musik länger laufen und dann mit dem Outro ausfaden."*
+
+In beiden Ken-Shorts läuft „In This Shirt" jetzt **bis zum letzten Bild**
+und blendet über dem Outro aus — Ausblende **4,208 s**, also genau die
+Länge des Outros, beginnend am Ende des Hauptteils.
+
+| | Bett | Ausblende ab | Ende |
+|---|---|---|---|
+| Ubuntu | 0,00–57,575 s | 53,367 s | 57,575 s |
+| Meaningful | 0,00–57,275 s | 53,067 s | 57,275 s |
+
+Durch Subtraktion geprüft (Ubuntu): −45 dB bei 53 s · −48 bei 54 ·
+−56 bei 56 · −65 bei 57. Sauber bis auf null.
+
+**Der Gesamtpegel des Outro-Abschnitts ändert sich dadurch nicht:**
+−26,1 dB mit Bett wie ohne. Der eigene Ton des Outros bestimmt den Pegel,
+das Bett liegt darunter.
+
+**Das ist seine dritte Ansage zum Bettende, und wieder eine andere:**
+AI 2027 „nicht vorm Ende aufhören" · Safety „vor dem Outro aufhören" ·
+Ken „mit dem Outro ausfaden". Bestätigt die Regel: pro Stück fragen.

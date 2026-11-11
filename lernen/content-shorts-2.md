@@ -6,6 +6,31 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-11-11 (nachts) — dritte Musikansage, dritte Variante
+
+- **Er hat jetzt dreimal etwas anderes zum Ende des Betts gesagt, und jedes
+  Mal war es fuer genau dieses Stueck gemeint.**
+  22.10., AI 2027: *„dass er es nicht vorm Ende aufhoert."*
+  26.10., Safety: *„bitte in this shirt unterlegen aber vor dem Outro
+  aufhoeren."*
+  11.11., beide Ken-Shorts: *„bei beiden soll die Musik laenger laufen und
+  dann mit dem Outro ausfaden."*
+  **Das ist die dritte Variante, und sie bestaetigt die Regel vom 26.10.:
+  bei Musik wird nicht aus dem vorigen Short geschlossen, sondern gefragt.**
+  Technisch sind es drei Zeilen derselben Kette: `atrim` setzt das Ende,
+  `afade=t=out` liegt davor, am Hauptteil-Ende oder ueber dem Outro.
+  Fuer „mit dem Outro ausfaden": `atrim=0:<gesamt>` und
+  `afade=t=out:st=<hauptteil-ende>:d=<outrolaenge>`.
+  → betrifft: alle Content-Agenten
+- **Ein Bett unter dem Outro aendert dessen Gesamtpegel nicht.** Gemessen am
+  Outro-Abschnitt beider Shorts: **-26,1 dB mit Bett wie ohne**. Der eigene
+  Ton des Outros bestimmt den Pegel, das Bett liegt klar darunter und wird
+  vom `sidechaincompress` zusaetzlich weggedrueckt. **Die Sorge, das Bett
+  koenne mit dem Outro kollidieren, ist messbar unbegruendet** — hoerbar
+  bleibt es trotzdem, die Subtraktion zeigt es durchgehend bis zum letzten
+  Bild.
+  → betrifft: content-*
+
 ## 2026-11-11 (spaet) — Blickrichtung bekommt den Platz, nicht der Hinterkopf
 
 - **„Passt der Kopf in den Kasten" ist die falsche Frage; richtig ist, auf

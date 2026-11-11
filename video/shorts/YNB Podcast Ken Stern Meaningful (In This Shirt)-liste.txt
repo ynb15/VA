@@ -73,9 +73,14 @@
 # ══════════════════════════════════════════════════════════════════
 # MUSIK: The Irrepressibles — In This Shirt
 # ══════════════════════════════════════════════════════════════════
-# Bett ab 0:23,25 des Titels, laeuft 0,00–53,07 s, Ausblende 4 s, danach
-# das Outro allein. Durch Subtraktion geprueft: hoerbar ab der ersten
-# Sekunde, ab 53 s unter -93 dB.
+# Bett ab 0:23,25 des Titels, laeuft jetzt DURCH bis zum letzten Bild
+# (0,00–57,28 s) und blendet ueber dem Outro aus — Ausblende 4,2 s ab
+# 53,07 s, also genau die Laenge des Outros. Deine Ansage vom 11.11.:
+# „bei beiden soll die Musik laenger laufen und dann mit dem Outro
+# ausfaden." Durch Subtraktion geprueft: -50 dB bei 53 s, -51 bei 54,
+# -60 bei 56, -66 bei 56,5 — also sauber bis auf null.
+# Der Gesamtpegel des Outro-Abschnitts aendert sich dadurch nicht
+# (-26,1 dB mit wie ohne Bett): das Bett liegt klar darunter.
 # Pegel: Stimme -37,0 dB, Bett -35,3 dB -> 10 dB unter der Stimme.
 # ACHTUNG RECHTE: kommerzielle Veroeffentlichung aus demselben Ordner,
 #   aus dem „Daylight" am 22.10. zwei Deiner Shorts weltweit gesperrt hat.

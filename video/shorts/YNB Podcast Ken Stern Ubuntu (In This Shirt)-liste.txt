@@ -74,9 +74,12 @@
 #
 # MUSIK: „In This Shirt" liegt jetzt drunter (eigene Datei, „(In This
 #   Shirt)" im Namen). Bett ab 0:23,25 des Titels — dort, wo er arrangiert
-#   losgeht, nicht am Songanfang. Laeuft 0,00–53,37 s, Einblende 0,2 s,
-#   Ausblende 4 s, danach das Outro allein. Durch Subtraktion geprueft:
-#   hoerbar ab der ersten Sekunde, ab 54 s unter -74 dB.
+#   losgeht, nicht am Songanfang. Laeuft jetzt DURCH bis zum letzten Bild
+#   (0,00–57,58 s) und blendet ueber dem Outro aus — Ausblende 4,2 s ab
+#   53,37 s, also genau die Laenge des Outros. Deine Ansage vom 11.11.:
+#   „bei beiden soll die Musik laenger laufen und dann mit dem Outro
+#   ausfaden." Durch Subtraktion geprueft: -45 dB bei 53 s, -48 bei 54,
+#   -56 bei 56, -65 bei 57 — also sauber bis auf null.
 #   Pegel: Stimme -33,5 dB, Bett -31,8 dB -> 10 dB unter der Stimme.
 #   ACHTUNG RECHTE: kommerzielle Veroeffentlichung aus demselben Ordner,
 #   aus dem „Daylight" am 22.10. zwei Deiner Shorts weltweit gesperrt hat.
