@@ -104,3 +104,72 @@ Durch Subtraktion geprüft, hörbar ab der ersten Sekunde, ab 54,3 s unter
 1080×1920 · 48 kHz · 58,5 s · Outro da · 74 Untertitel · Ortscheck sauber.
 „Kein Musikbett" schlägt bei der Musikfassung erwartungsgemäß fehl
 (−46,8 dB); die Fassung ohne Musik besteht alle Prüfungen (−80,1 dB).
+
+
+---
+
+## Fassung 2 (11.11., nach seiner Rückmeldung)
+
+*„Das Meaning Short ist absolut katastrophal geschnitten. Du lässt diese
+Buffalo-Szene drin, die überhaupt gar keine Substanz hat."* Fünf Ansagen,
+alle umgesetzt.
+
+**57,3 s** (53,1 + Outro), **Tempo 1,1**. Zwei Stücke:
+Rohzeit 1:42:29,18–1:42:33,10 (seine Frage) und 1:42:58,15–1:43:52,60.
+
+**Raus ist ein Stück von 25,1 s:** der Wasserbüffel-Witz, die
+Mileage-Bemerkung und der Anlauf („I think sort of the hackneyed answer,
+which I'll give because it's kind of hackneyed…"). Das Short setzt direkt
+auf *„having a purpose, having a reason for getting up in the morning"* an.
+
+**Der Schluss ist 21 s länger als in Fassung 1** und reicht jetzt bis
+*„…and encourage other people to do, and inspire others to do the same."*
+Das ist alles bis zu seiner nächsten Frage; weiter geht die Antwort nicht.
+
+| # | Kasten | von–bis | wer |
+|---|---|---|---|
+| 1 | `396:0:608:1080` | 0,0000–3,5667 | Yannick, Nah — seine Frage |
+| 2 | `700:0:608:1080` | 3,5667–10,4333 | Ken, Nah |
+| 3 | `1312:0:608:1080` | 10,4333–17,6000 | Totale, Kasten auf Ken |
+| 4 | `700:0:608:1080` | 17,6000–53,0667 | Ken, Nah |
+
+### Der Kasten auf Ken — er hatte recht, und die Zahl erklärt es
+
+*„Sein Kopf ist viel zu weit links. Der ist gar nicht voll drin im Bild."*
+
+Gemessen an 13 Bildern über die ganze Strecke: Kens Kopf reicht von
+**x 853 bis 1267**. Der Kasten stand bei **x 836**, also **17 Pixel Luft
+links** — und er schaut nach links. Technisch war nichts angeschnitten;
+der Eindruck „nicht voll drin" kommt von diesen 17 Pixeln.
+
+Jetzt **x 700**: 153 px links, 41 px rechts, Gesicht bei 0,56 der
+Kastenbreite. **Lehre: bei einem Gesicht im Profil zählt nicht, ob der Kopf
+hineinpasst, sondern auf welcher Seite die Luft liegt.** Blickrichtung
+bekommt den Platz, der Hinterkopf darf eng sitzen.
+
+### Drei Korrekturen am Ton
+
+`having reason -> having a reason` · `interior lies -> interior lives` ·
+`do inspire -> do and inspire` (er stolpert: „encourage other people to do,
+and inspire others…"). Alle drei mit `large-v3` bei 1,0 und 0,6 am
+ungedehnten Ton geprüft.
+
+**Nicht geändert:** er sagt „having a purpose, having a **reason** for
+getting up in the morning", nicht „having a meaning". So steht es im Bild.
+
+### Schnittkanten
+
+Am Vorlagenband gemessen (ohne `-ss`) und **jede Kante an den Bildnummern
+nachgezählt**: Bild 107 · 313 · 528. Die drei Übergänge im fertigen Short
+einzeln geprüft, keine Fremdbilder.
+
+Dabei noch eine Lehre über mich selbst: ich hatte die Kante bei Bild 313
+zuerst auf 314 gelesen, weil ich den Kontaktabzug mit 150-px-Feldern
+angesehen hatte. **Bei 150 px ist ein Kamerawechsel nicht sicher zu
+erkennen — solche Prüfungen gehören auf mindestens 240 px.**
+
+### Musik und Abnahme
+
+„In This Shirt" ab 0:23,25, Bett 0,00–53,07 s, Ausblende 4 s, Outro allein.
+Stimme −37,0 dB, Bett −35,3 dB. 1080×1920 · 48 kHz · 57,3 s · Outro da ·
+71 Untertitel · Ortscheck sauber.

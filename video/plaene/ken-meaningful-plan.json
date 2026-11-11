@@ -1,44 +1,10 @@
 {
-  "quelle": "vorlage-mean.mov",
-  "groesse": [
-    1920,
-    1080
-  ],
+  "quelle": "vorlage-mean2.mov",
+  "groesse": [1920, 1080],
   "einstellungen": [
-    {
-      "kasten": "396:0:608:1080",
-      "lippe": 1060,
-      "start": 0.0,
-      "ende": 3.8333,
-      "wer": "Yannick, Nah — seine Frage"
-    },
-    {
-      "kasten": "1312:0:608:1080",
-      "lippe": 1080,
-      "start": 3.8333,
-      "ende": 8.6,
-      "wer": "Totale, Kasten auf Ken — der Wasserbueffel-Witz"
-    },
-    {
-      "kasten": "836:0:608:1080",
-      "lippe": 1200,
-      "start": 8.6,
-      "ende": 31.7333,
-      "wer": "Ken, Nah — die Antwort"
-    },
-    {
-      "kasten": "1312:0:608:1080",
-      "lippe": 1080,
-      "start": 31.7333,
-      "ende": 38.6,
-      "wer": "Totale, Kasten auf Ken"
-    },
-    {
-      "kasten": "836:0:608:1080",
-      "lippe": 1200,
-      "start": 38.6,
-      "ende": 54.2667,
-      "wer": "Ken, Nah — bis 'all of it is in relation to others'"
-    }
+    {"kasten": "396:0:608:1080",  "lippe": 1060, "start": 0.0000,  "ende": 3.5667,  "wer": "Yannick, Nah — seine Frage"},
+    {"kasten": "700:0:608:1080",  "lippe": 1200, "start": 3.5667,  "ende": 10.4333, "wer": "Ken, Nah — 'having a purpose'"},
+    {"kasten": "1312:0:608:1080", "lippe": 1080, "start": 10.4333, "ende": 17.6000, "wer": "Totale, Kasten auf Ken"},
+    {"kasten": "700:0:608:1080",  "lippe": 1200, "start": 17.6000, "ende": 53.0667, "wer": "Ken, Nah — bis 'inspire others to do the same'"}
   ]
 }

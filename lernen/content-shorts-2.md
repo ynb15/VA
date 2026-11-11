@@ -6,6 +6,43 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-11-11 (spaet) — Blickrichtung bekommt den Platz, nicht der Hinterkopf
+
+- **„Passt der Kopf in den Kasten" ist die falsche Frage; richtig ist, auf
+  welcher Seite die Luft liegt.** Sein Befund: *„Sein Kopf ist viel zu weit
+  links. Der ist gar nicht voll drin im Bild."* Gemessen an 13 Bildern:
+  Kens Kopf reicht von **x 853 bis 1267**, der Kasten stand bei **x 836** —
+  also **17 Pixel links**, 177 rechts. Technisch war nichts angeschnitten.
+  Aber er schaut nach links, und 17 px Blickraum lesen sich als
+  angeschnitten. Neu x 700: 153 links, 41 rechts.
+  **Regel: bei einem Profil bekommt die Blickrichtung den Platz, der
+  Hinterkopf darf eng sitzen. Mindestens ein Viertel der Kastenbreite vor
+  dem Gesicht.**
+  → betrifft: alle Content-Agenten
+- **Eine Anekdote, die im Gespraech traegt, traegt im Short nicht.** Der
+  Wasserbueffel-Witz am Anfang von Kens Antwort ist im Podcast ein
+  Rueckbezug auf etwas Frueheres und funktioniert dort; im Short steht er
+  ohne das Frueher und kostet 25 s. Sein Wort: *„die ueberhaupt gar keine
+  Substanz hat in einem Short."* **Rueckbezuege auf frueher in derselben
+  Folge gehoeren in einem Short zu den ersten Streichkandidaten** — genau
+  wie „on your show" im Ubuntu-Short zwei Stunden vorher. Zweimal
+  derselbe Fehler an einem Tag.
+  → betrifft: content-*, alle
+- **Zweimal hintereinander habe ich den Schluss seiner Antwort zu frueh
+  gesetzt.** Fassung 1 endete auf „all of it is in relation to others",
+  Fassung 2 geht 21 s weiter bis „inspire others to do the same" — und
+  erst dort kommt seine naechste Frage. **Der Endpunkt ist nicht das erste
+  gute Satzende, sondern das letzte vor der naechsten Frage.** Die Regel
+  steht seit dem 22.10. in `meaningful-serie.md`; ich habe sie zweimal
+  nicht angewandt.
+  → betrifft: content-*, alle
+- **Ein Kontaktabzug mit 150-px-Feldern taugt nicht, um einen Kamerawechsel
+  zu erkennen.** Ich hatte die Schnittkante dadurch erst auf Bild 314
+  gelesen, bei 240 px war klar: Bild 313. **Solche Pruefungen auf
+  mindestens 240 px, lieber in Gruppen von vier bis sechs Bildern statt
+  zwoelf.**
+  → betrifft: content-shorts-2
+
 ## 2026-11-11 (abends) — `-ss` taugt nicht fuer ein einzelnes Bild
 
 - **Ich habe heute frueh aus einer unzuverlaessigen Pruefung eine Regel

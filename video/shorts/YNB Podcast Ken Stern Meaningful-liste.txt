@@ -1,88 +1,99 @@
-# Ken Stern — „What makes life meaningful?" (58,5 s · Hauptteil 54,3 s + Outro 4,2 s)
-# Rohzeit 1:42:29,19–1:43:31,60 · Tempo 1,15 · mit „In This Shirt"
+# Ken Stern — „What makes life meaningful?" · Fassung 2 (57,3 s · Hauptteil 53,1 s + Outro 4,2 s)
+# Rohzeit 1:42:29,18–1:42:33,10 + 1:42:58,15–1:43:52,60 · Tempo 1,1
 #
 # Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
 # Was raus soll: Zeile loeschen oder die Nummer nennen.
 #
-  1  [00:00.00–00:03.24]  SINCE WE'RE ON THE MAN'S SEARCH FOR MEANING PODCAST WHAT MAKES LIFE MEANINGFUL?
-  2  [00:04.06–00:06.86]  SO NOT HAVING TO EAT WATER BUFFALO FOR 10 DAYS
-  3  [00:07.84–00:11.04]  YOU KNOW I'VE GOTTEN SO MUCH MILEAGE OVER THE YEARS FROM THAT STORY I WOULDN'T HAVE
-  4  [00:11.04–00:11.98]  IT ANY OTHER WAY
-  5  [00:13.56–00:21.45]  YOU KNOW I THINK OF US I MEAN I THINK SORT OF THE HACKNEYED
-  6  [00:21.45–00:25.47]  ANSWER WHICH I'LL GIVE BECAUSE KIND OF HACKNEYED AND WHAT I TALK ABOUT YOU KNOW HAVING
-  7  [00:25.47–00:29.13]  A PURPOSE HAVING A REASON FOR GETTING UP IN THE MORNING BUT ULTIMATELY I THINK
-  8  [00:29.87–00:31.29]  WE GET MEANING FROM OTHERS
-  9  [00:31.69–00:34.39]  HELPING OTHERS BEING WITH OTHERS BEING SURROUNDED BY OTHERS
- 10  [00:35.45–00:38.29]  WE ARE WE ALL HAVE OUR INTERIOR LIVES BUT I THINK IT'S OUR EXTERIOR
- 11  [00:38.29–00:40.07]  LIFE THAT GIVES MOST OF US PURPOSE AND MEANING
- 12  [00:40.81–00:44.21]  WE ARE I MEAN I GET MEANING FROM BEING A FATHER IN RELATION TO
- 13  [00:44.21–00:47.07]  MY SON A HUSBAND IN RELATION TO MY WIFE A FRIEND TO MY FRIENDS
- 14  [00:47.99–00:50.61]  SOMEONE WHO BRINGS SERVICE THAT'S WHAT GIVES ME MEANING
- 15  [00:52.37–00:53.77]  ALL OF IT IS IN RELATION TO OTHERS
+  1  [00:00.00–00:04.34]  SINCE WE'RE ON THE MAN'S SEARCH FOR MEANING PODCAST WHAT MAKES LIFE MEANINGFUL HAVING A PURPOSE
+  2  [00:04.34–00:09.10]  HAVING A REASON FOR GETTING UP IN THE MORNING BUT ULTIMATELY I THINK WE GET
+  3  [00:09.10–00:15.14]  MEANING FROM OTHERS HELPING OTHERS BEING WITH OTHERS BEING SURROUNDED BY OTHERS WE ARE WE
+  4  [00:15.14–00:17.90]  ALL HAVE OUR INTERIOR LIVES BUT I THINK IT'S OUR EXTERIOR LIFE THAT GIVES
+  5  [00:17.90–00:19.18]  MOST OF US PURPOSE AND MEANING
+  6  [00:19.74–00:23.64]  WE ARE I MEAN I GET MEANING FROM BEING A FATHER IN RELATION TO MY
+  7  [00:23.64–00:27.88]  SON A HUSBAND IN RELATION TO MY WIFE A FRIEND TO MY FRIENDS SOMEONE WHO
+  8  [00:27.88–00:30.10]  BRINGS SERVICE THAT'S WHAT GIVES ME MEANING
+  9  [00:31.84–00:33.46]  ALL OF IT IS IN RELATION TO OTHERS
+ 10  [00:35.06–00:37.48]  AND YOU KNOW PART OF MY JOURNEY NOW
+ 11  [00:38.26–00:40.66]  THE ONE I'M EXCITED TO TRY THE ONE I'M A LITTLE FEARFUL TO TRY
+ 12  [00:41.28–00:43.10]  IT'S HARD TALKING TO STRANGERS HARD JOINING OTHERS
+ 13  [00:43.98–00:49.28]  IS TO BE ON A JOURNEY TO GET MEANING THROUGH OTHERS AND WITH OTHERS
+ 14  [00:49.66–00:53.04]  AND ENCOURAGE OTHER PEOPLE TO DO AND INSPIRE OTHERS TO DO THE SAME
 
 # ══════════════════════════════════════════════════════════════════
-# WAS ICH HERAUSGENOMMEN HABE: NICHTS
+# DEINE VIER ANSAGEN
 # ══════════════════════════════════════════════════════════════════
-# Eine Stelle am Stueck, 62,4 s roh, kein Innenschnitt, keine Auslassung.
-# Die vier Einstellungswechsel sind die Kameraschnitte der Aufnahme.
+#   Bueffel-Szene raus                                  erledigt
+#   Start auf Deiner Frage, dann „having a purpose"     erledigt
+#   Tempo auf 1,1 runter                                erledigt
+#   Seine Antwort geht weiter — Schluss verlaengert     erledigt
+#   Kens Kasten nachjustiert                            erledigt
 #
-# ABER: die Fassung vom 22.10. (`03-ken-meaningful.srt`) endete bei
-# „being surrounded by others" — mitten im Gedanken. Danach kommt noch:
+# Raus ist genau EIN Stueck, bei 00:02.4: Rohzeit 1:42:33,10–1:42:58,15,
+# 25,1 s. Woertlich:
 #
-#   „We all have our interior lives, but I think it's our exterior life
-#    that gives most of us purpose and meaning. I get meaning from being
-#    a father in relation to my son, a husband in relation to my wife,
-#    a friend to my friends, someone who brings service. That's what
-#    gives me meaning. All of it is in relation to others."
+#   [1:42:33]  So, not having to eat water buffalo for 10 days.
+#   [1:42:36]  You know, I've gotten so much mileage over the years from
+#              that story, I wouldn't have it any other way.
+#   [1:42:41]  You know, I think of us — I mean, I think sort of the
+#              hackneyed answer, which I'll give because it's kind of
+#              hackneyed, and what I talk about, you know…
 #
-# Das sind 22 s mehr, und sie sind der eigentliche Schluss. Deshalb endet
-# dieses Short auf „ALL OF IT IS IN RELATION TO OTHERS" — und damit auf
-# demselben Gedanken wie das Ubuntu-Short („we are who we are through our
-# relationships"). Die beiden passen hintereinander.
-#
-# Danach geht es noch 20 s weiter („part of my journey now…"), bis Deine
-# naechste Frage. Dann waere das Short 76 s lang. Willst Du es, muss
-# vorne etwas weichen — sag was.
+# Der Schluss ist jetzt 21 s laenger als in Fassung 1. Dazugekommen:
+#   „And you know, part of my journey now — the one I'm excited to try,
+#    the one I'm a little fearful to try, it's hard talking to strangers,
+#    hard joining others — is to be on a journey to get meaning through
+#    others and with others, and encourage other people to do, and inspire
+#    others to do the same."
+# Das ist alles, was bis zu Deiner naechsten Frage („Beautiful. Break it
+# down to a CTA…") kommt. Weiter geht es nicht.
 
 # ══════════════════════════════════════════════════════════════════
-# EINE KORREKTUR AM TON
+# DER KASTEN AUF KEN
 # ══════════════════════════════════════════════════════════════════
-# MAN'S SEARCH FOR MEANING — das Genitiv-s verschleift sich, „medium"
-#   schrieb „man search for meaning". Es ist der Name Deines eigenen
-#   Podcasts, nach Frankls Buch. large-v3 hoert bei 1,0 und 0,6
-#   zweimal „man's search for meaning podcast".
-# Nicht korrigiert: Dein „Ken," vor „since we're on…" faellt in der
-#   Einblendung weg. Im Ton ist es da; fuer den Zuschauer traegt der Name
-#   nichts. Sag Bescheid, wenn er stehen soll.
+# Du hattest recht. In Fassung 1 stand der Kasten bei x 836, sein Kopf
+# reicht von x 853 bis 1267 — also **17 Pixel Luft links**, und genau
+# dorthin schaut er. Jetzt x 700: 153 Pixel links, 41 rechts. Gemessen an
+# 13 Bildern ueber die ganze Strecke, sein Kopf wandert dabei kaum.
+# Dass er „gar nicht voll drin" wirkte, kam von diesen 17 Pixeln, nicht
+# von einem echten Anschnitt.
+
+# ══════════════════════════════════════════════════════════════════
+# DREI KORREKTUREN AM TON
+# ══════════════════════════════════════════════════════════════════
+# HAVING A REASON — das unbetonte „a" faellt bei „medium" weg.
+# OUR INTERIOR LIVES — es schrieb „lies".
+# …TO DO AND INSPIRE — er stolpert dort („encourage other people to do,
+#   and inspire others to do the same"); das „and" fiel weg.
+# Alle drei mit large-v3 bei 1,0 und 0,6 am ungedehnten Ton geprueft.
+#
+# Nicht geaendert: Du sagst „having a purpose, having a REASON for getting
+#   up in the morning" — nicht „having a meaning". Ich habe es so stehen
+#   lassen, wie er es sagt.
 
 # ══════════════════════════════════════════════════════════════════
 # MUSIK: The Irrepressibles — In This Shirt
 # ══════════════════════════════════════════════════════════════════
-# Bett ab 0:23,25 des Titels — dort, wo er arrangiert losgeht, nicht am
-# Songanfang. Laeuft 0,00–54,27 s, Einblende 0,2 s, Ausblende 4 s,
-# danach das Outro allein. Durch Subtraktion geprueft: hoerbar ab der
-# ersten Sekunde, ab 54,3 s unter -77 dB.
-# Pegel: Stimme -33,5 dB, Bett -31,8 dB -> 10 dB unter der Stimme.
-#
+# Bett ab 0:23,25 des Titels, laeuft 0,00–53,07 s, Ausblende 4 s, danach
+# das Outro allein. Durch Subtraktion geprueft: hoerbar ab der ersten
+# Sekunde, ab 53 s unter -93 dB.
+# Pegel: Stimme -37,0 dB, Bett -35,3 dB -> 10 dB unter der Stimme.
 # ACHTUNG RECHTE: kommerzielle Veroeffentlichung aus demselben Ordner,
 #   aus dem „Daylight" am 22.10. zwei Deiner Shorts weltweit gesperrt hat.
-#
-# Ohne Musik liegt die Fassung „YNB Podcast Ken Stern Meaningful.mp4"
-# im Repo.
+# Ohne Musik: „YNB Podcast Ken Stern Meaningful.mp4" im Repo.
 
 # ══════════════════════════════════════════════════════════════════
 # AUFBAU
-#   0:00.0–0:03.8  Du, Nah — Deine Frage
-#   0:03.8–0:08.6  Totale, Kasten auf Ken — der Wasserbueffel-Witz
-#   0:08.6–0:31.7  Ken, Nah
-#   0:31.7–0:38.6  Totale, Kasten auf Ken
-#   0:38.6–0:54.3  Ken, Nah — bis „all of it is in relation to others"
-# Alle vier Wechsel sind die der Aufnahme. Jede Kante einzeln an den
-# Bildnummern geprueft, nicht an Sekunden — siehe Kommentar unten.
+#   0:00.0–0:03.6  Du, Nah — Deine Frage
+#   0:03.6–0:10.4  Ken, Nah
+#   0:10.4–0:17.6  Totale, Kasten auf Ken
+#   0:17.6–0:53.1  Ken, Nah — bis „inspire others to do the same"
+# Die beiden Einstellungswechsel bei 10,4 und 17,6 sind die Kameraschnitte
+# der Aufnahme. Meiner ist nur der bei 3,6 s, und der liegt auf dem
+# Kameraschnitt der Aufnahme. Jede Kante an den Bildnummern geprueft.
 #
 # ABNAHME (gemessen)
-#   1080x1920 · 48 kHz · 58,5 s · Outro da · 74 Untertitel · Ortscheck sauber
-#   „Kein Musikbett" meldet FEHLER bei -46,8 dB — das ist die Musik,
-#   also gewollt. Die Fassung ohne Musik besteht alle Pruefungen (-80,1 dB).
+#   1080x1920 · 48 kHz · 57,3 s · Outro da · 71 Untertitel · Ortscheck sauber
+#   „Kein Musikbett" meldet FEHLER bei -49,9 dB — das ist die Musik.
+#   Die Fassung ohne Musik besteht alle Pruefungen (-77,6 dB).
 #
 # NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.
