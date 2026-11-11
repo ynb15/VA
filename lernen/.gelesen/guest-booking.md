@@ -446,3 +446,76 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
   andere schreibt, dass er im Stress ist: **ein Satz, eine Entscheidung** —
   drei Zeilen Einfühlung davor sind *„viel zu argkriecherisch."*
   → betrifft: alle, die Entwürfe für ihn schreiben
+
+---
+
+## 11.11.2026 - Alte Kaltmails sind Material, keine Altlast
+
+Beide Erstanschreiben von März 2026 lagen unbeantwortet im Postfach: Platō
+(17.03., `stephan@plato.coffee`) und Wide Awake (18.03., `joshwideawake@gmail.com`),
+je **eine** Nachricht, **null** Antworten. Beide beginnen mit der Anrede in Zeile 1,
+beide beschreiben den Podcast statt den Empfänger, und **keine der beiden stellt eine
+einzige konkrete Frage aus dem Leben des Empfängers.** Sein eigenes Urteil dazu:
+*"Damals noch mit einem sehr dilettantischen Outreach."*
+
+Trotzdem steht in der Wide-Awake-Mail der stärkste Satz, den er je an Josh Rubin
+geschrieben hat: *"what this country does to you when you keep stepping into its
+tension and contradictions instead of looking away"*. Der geht wörtlich in die neue
+Fassung.
+
+**Regel:** Vor einem Neuanlauf die alte Mail lesen und **in zwei Listen zerlegen** -
+was raus muss und was wörtlich bleibt. Eine gescheiterte Mail ist fast nie ganz
+schlecht; sie ist meistens ein guter Satz in einer falschen Architektur.
+
+→ betrifft: jeden zweiten Anlauf nach einem unbeantworteten Erstanschreiben
+
+## 11.11.2026 - Zwei abgebrochene Entwürfe erzählen, wie er arbeitet
+
+Drei unfertige Entwürfe im Postfach: **03.10.** zwei leere an Stephan und Josh
+(Betreff gesetzt, Rumpf nur Signatur), **27.10.** einer an Milton Schorr mit Betreff
+`Germany, Hollywood, Cape Town: Man's Search for Meaning`, anderthalb eigenen Zeilen
+und **darunter der komplette Text der Josh-Mail als Rohling**. Er bricht mitten im
+Satz ab: *"this guy would be an"*.
+
+**Zwei Befunde:** Er setzt zuerst den Betreff und schreibt dann hinein. Und er
+kopiert sich eine bestehende Mail als Gerüst darunter - genau die Stelle, an der
+fremde Absätze stehen bleiben, die nicht zum Empfänger gehören (hier stand *"building
+Wide Awake into one of the most influential brands in SA"* in einer Mail an Milton).
+
+**Regel:** Angefangene Entwürfe vor dem Schreiben prüfen. Betreff und die wenigen
+selbst getippten Zeilen sind seine Entscheidung und bleiben; alles, was erkennbar aus
+einer anderen Mail kopiert ist, ist Gerüst und fliegt raus.
+
+→ betrifft: jede Mail, zu der schon ein Entwurf existiert
+
+## 11.11.2026 - Der AfrikaBurn-Absatz ist belegt wirksam
+
+Seine Kaltmail an Marian Goodell (28.07., Betreff *"Man's Search for Meaning,
+AfrikaBurn & BurningMan"*) enthält den Absatz: *"I came to my first AfrikaBurn for
+the craziest party of my life. One week in the Tankwa dust turned it into a rite of
+passage: I let go of my business, dropped the mask and started this podcast."* plus
+den Link `https://ynbernard.substack.com/p/10-life-lessons-i-learned-at-afrikaburn`.
+
+Ihre Antwort kam nach **2 Stunden 40 Minuten**: *"That's a lovely 'cold call' email
+with all sorts of interesting things to get my attention. (...) I am interested."*
+
+Das ist der einzige Cold Open im Dokument, zu dem eine wörtliche Lobreaktion der
+Empfängerin aktenkundig ist.
+
+→ betrifft: jeden Pitch ins Burn-/Festival-/Gegenkultur-Umfeld
+
+## 11.11.2026 - Zwei Quellenklassen, zwei Behandlungen
+
+Bei Joshua Rubin steht die interessanteste Behauptung (Filme als Teenager, Abbruch
+wegen Drogensucht, Entzug als Ursprung des Podcasts) auf **einer** redaktionsfreien
+Sammelseite. Bei Stephan Bredell stehen die Zitate in Presseartikeln, nicht in
+Originalen, die ich selbst lesen konnte - Wikipedia, Jacaranda FM, MyBroadband,
+miltonschorr.com und afrikaburn.com sind aus diesem Container gesperrt.
+
+**Regel, die ich mir setze:** Eine Tatsache aus einer einzigen schwachen Quelle geht
+**nie** in den Fließtext einer Kaltmail. Sie geht als eingeklammerter Einschub in die
+Begleitnotiz, mit der Ansage, dass er sie selbst bestätigen muss. Ein falscher
+Suchtbezug in einer Kaltmail ist nicht peinlich, der ist tödlich.
+
+→ betrifft: jede Recherche, bei der die beste Geschichte die am schlechtesten
+belegte ist

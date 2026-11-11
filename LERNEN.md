@@ -45,6 +45,42 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 41 — 11.11.2026, 15:54 Kapstadt · eine gescheiterte Mail ist meistens ein guter Satz in einer falschen Architektur
+
+- **Alte Kaltmails sind Material, keine Altlast.** Zwei Erstanschreiben vom
+  März 2026 liegen unbeantwortet: Platō (17.03.) und Wide Awake (18.03.), je
+  **eine** Nachricht, **null** Antworten. Beide beschreiben den Podcast statt
+  den Empfänger und stellen **keine einzige konkrete Frage aus dessen Leben**.
+  Sein eigenes Urteil: *„Damals noch mit einem sehr dilettantischen Outreach."*
+  **Und trotzdem** steht in der Wide-Awake-Mail der stärkste Satz, den er je
+  an diesen Empfänger geschrieben hat: *„what this country does to you when
+  you keep stepping into its tension and contradictions instead of looking
+  away"* — der geht wörtlich in die neue Fassung. **Regel: vor einem zweiten
+  Anlauf die alte Mail in zwei Listen zerlegen** — was raus muss, und was
+  wörtlich bleibt.
+  → betrifft: guest-booking, head-of-content, alle, die für ihn schreiben
+- **Ein angefangener Entwurf im Postfach ist eine Quelle, und eine Falle.**
+  Drei unfertige Entwürfe gefunden: zwei leere vom **03.10.** (Betreff
+  gesetzt, Rumpf nur Signatur) und einer vom **27.10.** an einen dritten
+  Empfänger, unter dem **der komplette Text einer fremden Mail als Rohling**
+  steht; er bricht mitten im Satz ab (*„this guy would be an"*). In dieser
+  Mail stand dadurch ein Absatz über **den Betrieb eines anderen Empfängers**.
+  **Zwei Befunde:** er setzt **zuerst den Betreff** und schreibt dann hinein ·
+  und er kopiert sich eine bestehende Mail als Gerüst darunter. **Regel:
+  Betreff und die wenigen selbst getippten Zeilen sind seine Entscheidung und
+  bleiben; alles erkennbar Kopierte ist Gerüst und fliegt raus.**
+  → betrifft: jeden, der einen angefangenen Entwurf von ihm weiterschreibt
+- **Titel und Thumbnail dürfen im Feed nicht dasselbe sagen.** Beim
+  Zusammenstellen des Strassman-Pakets gefunden: **zwei der fünfzehn
+  Thumbnail-Zeilen stehen wörtlich im empfohlenen Titel** (`NOT / THE ANSWER`
+  und `THE DMT / PROFESSOR` in *The DMT Professor: „Psychedelics Are Not The
+  Answer"*). Wer beide Listen liefert, prüft sie **gegeneinander**, bevor er
+  abgibt — und wer eine Empfehlung ausspricht, sagt dazu, welche
+  Thumbnail-Zeile zu welchem Titel passt.
+  → betrifft: youtube-manager, thumbnails, head-of-content
+
+---
+
 ## Ausgabe 40 — 11.11.2026, 06:40 Kapstadt · die Ortsregel trifft nicht nur Drehorte, und Segmentzeiten taugen nicht zum Stummschalten
 
 - **Die Ortsregel gilt auch, wenn der Gast über sein eigenes Zuhause
