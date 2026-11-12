@@ -199,3 +199,67 @@ das Bett liegt darunter.
 **Das ist seine dritte Ansage zum Bettende, und wieder eine andere:**
 AI 2027 „nicht vorm Ende aufhören" · Safety „vor dem Outro aufhören" ·
 Ken „mit dem Outro ausfaden". Bestätigt die Regel: pro Stück fragen.
+
+---
+
+## Fassung 3 (12.11.): Pegel, Einstieg, springende Schrift
+
+Drei Punkte von ihm, alle drei messbar.
+
+### 1. Der Ton war 4 dB zu leise — und der Grund ist, wer spricht
+
+| Short (Hauptteil) | Lautheit |
+|---|---|
+| Ubuntu | −29,7 LUFS |
+| Meaningful, Fassung 2 | **−33,7 LUFS** |
+| Aging | −27,5 LUFS |
+
+**Nicht der Schnitt, sondern die Stimme.** Im Ubuntu-Short redet fast
+durchgehend Yannick, hier fast durchgehend Ken — und Kens Mikro liegt im
+Master leiser. Weil wir nach seiner Ansage vom 20.10. **ohne**
+Lautheitsangleichung arbeiten (`--laut aus`), schlägt das eins zu eins
+durch.
+
+Behoben mit **+4,0 dB auf die Sprachspur der Vorlage**, also vor dem Outro —
+reine Pegelanhebung, keine Kompression, und das Outro behält seinen Pegel.
+Spitze vorher −12,6 dB, also reichlich Reserve. Jetzt **−29,7 LUFS**, exakt
+wie Ubuntu.
+
+**Die Lehre: `--laut aus` heißt nicht, dass nichts zu tun ist.** Es heißt,
+dass der Pegelunterschied zwischen zwei Gästen am Ende im Short steht. Bei
+einem Short, in dem überwiegend der Gast spricht, gehört der Hauptteil
+gegen das zuletzt abgenommene Short gemessen und per Festverstärkung
+angeglichen.
+
+### 2. Einstieg auf der Frage
+
+„Since we're on the Man's Search for Meaning podcast" ist raus; das Short
+beginnt auf **„What makes life meaningful?"** (Rohzeit 1:42:31,73). Der
+Einstieg liegt in der Sprechpause zwischen „podcast" und „what", am
+Tonverlauf gemessen (Lücke 6151,60–6151,88).
+
+### 3. Die springende Schrift
+
+**Gefunden:** zwei Einblendungen liefen über einen Kameraschnitt —
+„HELPING OTHERS" bei 8,07 s und „THAT GIVES MOST" bei 15,23 s.
+`cues_an_lippen` teilt so eine Einblendung in zwei Teile und gibt jedem die
+Zeilenhöhe seiner Einstellung. Die waren verschieden (1200 bei Ken nah,
+1080 in der Totale) — **derselbe Text sprang mitten im Wort um 120 Pixel.**
+
+**Behoben, indem alle vier Einstellungen dieselbe Zeilenhöhe bekommen:
+1140.** An allen drei Bildausschnitten nachgemessen: 95 bis 220 px unter
+dem Kinn, überall lesbar.
+
+**Regel: unterschiedliche Zeilenhöhen sind nur dann gefahrlos, wenn keine
+Einblendung über einen Einstellungswechsel läuft.** Vor dem Rendern prüfen:
+kreuzt ein Cue eine Grenze, bekommen beide Einstellungen dieselbe Höhe —
+oder gleich das ganze Short eine.
+
+### Stand
+
+54,9 s (50,7 + Outro), Tempo 1,1, 64 Untertitel, Ortscheck sauber,
+alle drei Übergänge bildweise geprüft. „In This Shirt" wie bei den anderen
+Ken-Shorts, Bett bis zum letzten Bild, Ausblende über dem Outro.
+
+**Offen:** das Aging-Short liegt mit −27,5 LUFS 2,2 dB über den beiden
+anderen. Angeboten, alle drei auf einen Wert zu ziehen.

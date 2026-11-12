@@ -1,10 +1,37 @@
 {
-  "quelle": "vorlage-mean2.mov",
-  "groesse": [1920, 1080],
+  "quelle": "vorlage-mean3.mov",
+  "groesse": [
+    1920,
+    1080
+  ],
   "einstellungen": [
-    {"kasten": "396:0:608:1080",  "lippe": 1060, "start": 0.0000,  "ende": 3.5667,  "wer": "Yannick, Nah — seine Frage"},
-    {"kasten": "700:0:608:1080",  "lippe": 1200, "start": 3.5667,  "ende": 10.4333, "wer": "Ken, Nah — 'having a purpose'"},
-    {"kasten": "1312:0:608:1080", "lippe": 1080, "start": 10.4333, "ende": 17.6000, "wer": "Totale, Kasten auf Ken"},
-    {"kasten": "700:0:608:1080",  "lippe": 1200, "start": 17.6000, "ende": 53.0667, "wer": "Ken, Nah — bis 'inspire others to do the same'"}
+    {
+      "kasten": "396:0:608:1080",
+      "lippe": 1140,
+      "start": 0.0,
+      "ende": 1.2,
+      "wer": "Yannick, Nah — seine Frage"
+    },
+    {
+      "kasten": "700:0:608:1080",
+      "lippe": 1140,
+      "start": 1.2,
+      "ende": 8.0666,
+      "wer": "Ken, Nah"
+    },
+    {
+      "kasten": "1312:0:608:1080",
+      "lippe": 1140,
+      "start": 8.0666,
+      "ende": 15.2333,
+      "wer": "Totale, Kasten auf Ken"
+    },
+    {
+      "kasten": "700:0:608:1080",
+      "lippe": 1140,
+      "start": 15.2333,
+      "ende": 50.7001,
+      "wer": "Ken, Nah"
+    }
   ]
 }

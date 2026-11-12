@@ -6,6 +6,42 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-11-12 (spaeter) — zwei Fehler, die nur im Vergleich zweier Shorts auffallen
+
+- **„--laut aus" heisst nicht, dass am Pegel nichts zu tun ist.** Sein
+  Befund: *„bei dem Meaning Short ist der Ton deutlich leiser als in dem
+  Ubuntu-Short."* Gemessen am Hauptteil: **Ubuntu -29,7 LUFS, Meaningful
+  -33,7 LUFS, Aging -27,5 LUFS.** Die Ursache ist nicht der Schnitt,
+  sondern **wer spricht**: im Ubuntu-Short redet fast durchgehend er, im
+  Meaningful-Short fast durchgehend Ken, und Kens Mikro liegt im Master
+  leiser. Ohne Lautheitsangleichung steht dieser Unterschied am Ende im
+  Short.
+  **Regel: bei einem Short, in dem ueberwiegend der Gast spricht, den
+  Hauptteil gegen das zuletzt abgenommene Short messen und per
+  Festverstaerkung angleichen** — reine Verstaerkung auf die Vorlage, vor
+  dem Outro, damit das Outro seinen Pegel behaelt. Hier +4,0 dB, Spitze
+  vorher -12,6 dB.
+  → betrifft: alle Content-Agenten
+- **Unterschiedliche Zeilenhoehen sind nur gefahrlos, solange keine
+  Einblendung ueber einen Einstellungswechsel laeuft.** Sein Befund: *„da
+  gibt's nochmal einen kleinen Fehler, wo die Schrift sich bewegt."*
+  Gefunden: zwei Cues kreuzten einen Kameraschnitt („HELPING OTHERS" bei
+  8,07 s, „THAT GIVES MOST" bei 15,23 s). `cues_an_lippen` teilt so einen
+  Cue in zwei Teile und gibt jedem die Hoehe seiner Einstellung — 1200 und
+  1080. **Derselbe Text springt dann mitten im Wort um 120 Pixel.**
+  **Vor dem Rendern pruefen, ob ein Cue eine Grenze kreuzt** (SRT gegen die
+  Grenzen der Einstellungen); wenn ja, bekommen beide dieselbe Hoehe, im
+  Zweifel das ganze Short eine. Hier 1140 fuer alle vier — an allen drei
+  Ausschnitten 95 bis 220 px unter dem Kinn.
+  → betrifft: alle Content-Agenten
+- **Beide Fehler waren im einzelnen Short unsichtbar und fielen erst im
+  Vergleich zweier Shorts auf.** Der Pegel klingt fuer sich in Ordnung, die
+  Schrift springt nur an zwei von 64 Einblendungen. **Vor der Auslieferung
+  gehoert ein Short gegen das zuletzt abgenommene gehalten — Lautheit
+  messen, und die Cues gegen die Einstellungsgrenzen pruefen.** Beides sind
+  zwei Befehle, keine zwei Minuten.
+  → betrifft: content-*, alle
+
 ## 2026-11-12 — ein Suchausschnitt ist kein Inhaltsverzeichnis
 
 - **Ich habe ihm eine Frage gestellt, deren Antwort im Dokument stand, das

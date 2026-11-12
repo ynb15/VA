@@ -1,104 +1,93 @@
-# Ken Stern — „What makes life meaningful?" · Fassung 2 (57,3 s · Hauptteil 53,1 s + Outro 4,2 s)
-# Rohzeit 1:42:29,18–1:42:33,10 + 1:42:58,15–1:43:52,60 · Tempo 1,1
+# Ken Stern — „What makes life meaningful?" · Fassung 3 (54,9 s · Hauptteil 50,7 s + Outro 4,2 s)
+# Rohzeit 1:42:31,73–1:42:33,05 + 1:42:58,15–1:43:52,60 · Tempo 1,1 · mit „In This Shirt"
 #
 # Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
 # Was raus soll: Zeile loeschen oder die Nummer nennen.
 #
-  1  [00:00.00–00:04.34]  SINCE WE'RE ON THE MAN'S SEARCH FOR MEANING PODCAST WHAT MAKES LIFE MEANINGFUL HAVING A PURPOSE
-  2  [00:04.34–00:09.10]  HAVING A REASON FOR GETTING UP IN THE MORNING BUT ULTIMATELY I THINK WE GET
-  3  [00:09.10–00:15.14]  MEANING FROM OTHERS HELPING OTHERS BEING WITH OTHERS BEING SURROUNDED BY OTHERS WE ARE WE
-  4  [00:15.14–00:17.90]  ALL HAVE OUR INTERIOR LIVES BUT I THINK IT'S OUR EXTERIOR LIFE THAT GIVES
-  5  [00:17.90–00:19.18]  MOST OF US PURPOSE AND MEANING
-  6  [00:19.74–00:23.64]  WE ARE I MEAN I GET MEANING FROM BEING A FATHER IN RELATION TO MY
-  7  [00:23.64–00:27.88]  SON A HUSBAND IN RELATION TO MY WIFE A FRIEND TO MY FRIENDS SOMEONE WHO
-  8  [00:27.88–00:30.10]  BRINGS SERVICE THAT'S WHAT GIVES ME MEANING
-  9  [00:31.84–00:33.46]  ALL OF IT IS IN RELATION TO OTHERS
- 10  [00:35.06–00:37.48]  AND YOU KNOW PART OF MY JOURNEY NOW
- 11  [00:38.26–00:40.66]  THE ONE I'M EXCITED TO TRY THE ONE I'M A LITTLE FEARFUL TO TRY
- 12  [00:41.28–00:43.10]  IT'S HARD TALKING TO STRANGERS HARD JOINING OTHERS
- 13  [00:43.98–00:49.28]  IS TO BE ON A JOURNEY TO GET MEANING THROUGH OTHERS AND WITH OTHERS
- 14  [00:49.66–00:53.04]  AND ENCOURAGE OTHER PEOPLE TO DO AND INSPIRE OTHERS TO DO THE SAME
+  1  [00:00.00–00:01.10]  WHAT MAKES LIFE MEANINGFUL?
+  2  [00:01.38–00:03.62]  HAVING A PURPOSE HAVING A REASON FOR GETTING UP IN THE MORNING
+  3  [00:04.10–00:07.52]  BUT ULTIMATELY I THINK WE GET MEANING FROM OTHERS
+  4  [00:07.90–00:10.82]  HELPING OTHERS BEING WITH OTHERS BEING SURROUNDED BY OTHERS
+  5  [00:12.02–00:15.84]  WE ALL HAVE OUR INTERIOR LIVES BUT I THINK IT'S OUR EXTERIOR LIFE THAT GIVES MOST
+  6  [00:15.84–00:16.82]  OF US PURPOSE AND MEANING
+  7  [00:17.56–00:21.10]  WE ARE I MEAN I GET MEANING FROM BEING A FATHER IN RELATION TO
+  8  [00:21.10–00:24.10]  MY SON A HUSBAND IN RELATION TO MY WIFE A FRIEND TO MY FRIENDS
+  9  [00:25.04–00:27.74]  SOMEONE WHO BRINGS SERVICE THAT'S WHAT GIVES ME MEANING
+ 10  [00:29.52–00:31.12]  ALL OF IT IS IN RELATION TO OTHERS
+ 11  [00:32.98–00:35.14]  AND PART OF MY JOURNEY NOW
+ 12  [00:35.88–00:38.34]  THE ONE I'M EXCITED TO TRY THE ONE I'M A LITTLE FEARFUL TO TRY
+ 13  [00:38.76–00:40.74]  IT'S HARD TALKING TO STRANGERS HARD JOINING OTHERS
+ 14  [00:41.70–00:46.86]  IS TO BE ON A JOURNEY TO GET MEANING THROUGH OTHERS AND WITH OTHERS
+ 15  [00:46.86–00:50.68]  AND ENCOURAGE OTHER PEOPLE TO DO IT AND INSPIRE OTHERS TO DO THE SAME
 
 # ══════════════════════════════════════════════════════════════════
-# DEINE VIER ANSAGEN
+# DEINE DREI PUNKTE
 # ══════════════════════════════════════════════════════════════════
-#   Bueffel-Szene raus                                  erledigt
-#   Start auf Deiner Frage, dann „having a purpose"     erledigt
-#   Tempo auf 1,1 runter                                erledigt
-#   Seine Antwort geht weiter — Schluss verlaengert     erledigt
-#   Kens Kasten nachjustiert                            erledigt
 #
-# Raus ist genau EIN Stueck, bei 00:02.4: Rohzeit 1:42:33,10–1:42:58,15,
-# 25,1 s. Woertlich:
+# 1. DER TON WAR 4 dB ZU LEISE — und ich kann Dir sagen, woran es lag.
+#    Gemessen am Hauptteil:
+#      Ubuntu      -29,7 LUFS
+#      Meaningful  -33,7 LUFS   <- 4,0 dB leiser
+#    Der Grund ist nicht der Schnitt, sondern wer spricht: im Ubuntu-Short
+#    redest fast durchgehend Du, hier fast durchgehend Ken — und sein
+#    Mikro liegt im Master leiser. Weil wir ohne Lautheitsangleichung
+#    arbeiten (Deine Ansage vom 20.10.), schlaegt das eins zu eins durch.
+#    Behoben mit genau +4,0 dB auf die Sprachspur, bevor das Outro
+#    drankommt. Reine Pegelanhebung, keine Kompression. Spitze vorher
+#    -12,6 dB, also reichlich Reserve.
+#    Jetzt: Meaningful -29,7 LUFS, Ubuntu -29,7 LUFS. Gleich.
+#    ZUM VERGLEICH: das Aging-Short liegt bei -27,5 LUFS, also 2,2 dB
+#    ueber den beiden. Sag Bescheid, dann ziehe ich alle drei auf
+#    denselben Wert.
 #
-#   [1:42:33]  So, not having to eat water buffalo for 10 days.
-#   [1:42:36]  You know, I've gotten so much mileage over the years from
-#              that story, I wouldn't have it any other way.
-#   [1:42:41]  You know, I think of us — I mean, I think sort of the
-#              hackneyed answer, which I'll give because it's kind of
-#              hackneyed, and what I talk about, you know…
+# 2. EINSTIEG JETZT AUF DEINER FRAGE.
+#    „Since we're on the Man's Search for Meaning podcast" ist raus,
+#    das Short beginnt auf „WHAT MAKES LIFE MEANINGFUL?" — Rohzeit
+#    1:42:31,73. Das sind 2,6 s weniger als vorher.
 #
-# Der Schluss ist jetzt 21 s laenger als in Fassung 1. Dazugekommen:
-#   „And you know, part of my journey now — the one I'm excited to try,
-#    the one I'm a little fearful to try, it's hard talking to strangers,
-#    hard joining others — is to be on a journey to get meaning through
-#    others and with others, and encourage other people to do, and inspire
-#    others to do the same."
-# Das ist alles, was bis zu Deiner naechsten Frage („Beautiful. Break it
-# down to a CTA…") kommt. Weiter geht es nicht.
+# 3. DIE SCHRIFT HAT SICH BEWEGT — gefunden und behoben.
+#    Zwei Einblendungen liefen ueber einen Kameraschnitt: „HELPING
+#    OTHERS" bei 8,07 s und „THAT GIVES MOST" bei 15,23 s. Der Renderer
+#    teilt so eine Einblendung in zwei Teile und setzt sie auf die
+#    jeweilige Zeilenhoehe der Einstellung — und die waren verschieden
+#    (1200 bei Ken nah, 1080 in der Totale). Ergebnis: derselbe Text
+#    springt mitten im Wort um 120 Pixel.
+#    Behoben, indem alle vier Einstellungen jetzt DIESELBE Zeilenhoehe
+#    haben: 1140. An allen drei Bildausschnitten nachgemessen — 95 bis
+#    220 Pixel unter dem Kinn, ueberall lesbar. Damit kann die Schrift
+#    gar nicht mehr springen. Beide Stellen bildweise geprueft.
 
 # ══════════════════════════════════════════════════════════════════
-# DER KASTEN AUF KEN
+# WAS HERAUSGENOMMEN IST
 # ══════════════════════════════════════════════════════════════════
-# Du hattest recht. In Fassung 1 stand der Kasten bei x 836, sein Kopf
-# reicht von x 853 bis 1267 — also **17 Pixel Luft links**, und genau
-# dorthin schaut er. Jetzt x 700: 153 Pixel links, 41 rechts. Gemessen an
-# 13 Bildern ueber die ganze Strecke, sein Kopf wandert dabei kaum.
-# Dass er „gar nicht voll drin" wirkte, kam von diesen 17 Pixeln, nicht
-# von einem echten Anschnitt.
+# Ein Stueck, 25,1 s bei 00:01.2: die Bueffel-Szene und der Anlauf
+#   („I think sort of the hackneyed answer, which I'll give because it's
+#    kind of hackneyed…"). Wie beim letzten Mal.
+# Neu dazu: Deine Anmoderation „since we're on the Man's Search for
+#   Meaning podcast" (2,6 s), auf Deine Ansage.
+# Der Schluss laeuft bis „inspire others to do the same" — alles bis zu
+#   Deiner naechsten Frage.
 
 # ══════════════════════════════════════════════════════════════════
-# DREI KORREKTUREN AM TON
+# MUSIK: In This Shirt, ab 0:23,25 des Titels
 # ══════════════════════════════════════════════════════════════════
-# HAVING A REASON — das unbetonte „a" faellt bei „medium" weg.
-# OUR INTERIOR LIVES — es schrieb „lies".
-# …TO DO AND INSPIRE — er stolpert dort („encourage other people to do,
-#   and inspire others to do the same"); das „and" fiel weg.
-# Alle drei mit large-v3 bei 1,0 und 0,6 am ungedehnten Ton geprueft.
-#
-# Nicht geaendert: Du sagst „having a purpose, having a REASON for getting
-#   up in the morning" — nicht „having a meaning". Ich habe es so stehen
-#   lassen, wie er es sagt.
-
-# ══════════════════════════════════════════════════════════════════
-# MUSIK: The Irrepressibles — In This Shirt
-# ══════════════════════════════════════════════════════════════════
-# Bett ab 0:23,25 des Titels, laeuft jetzt DURCH bis zum letzten Bild
-# (0,00–57,28 s) und blendet ueber dem Outro aus — Ausblende 4,2 s ab
-# 53,07 s, also genau die Laenge des Outros. Deine Ansage vom 11.11.:
-# „bei beiden soll die Musik laenger laufen und dann mit dem Outro
-# ausfaden." Durch Subtraktion geprueft: -50 dB bei 53 s, -51 bei 54,
-# -60 bei 56, -66 bei 56,5 — also sauber bis auf null.
-# Der Gesamtpegel des Outro-Abschnitts aendert sich dadurch nicht
-# (-26,1 dB mit wie ohne Bett): das Bett liegt klar darunter.
-# Pegel: Stimme -37,0 dB, Bett -35,3 dB -> 10 dB unter der Stimme.
-# ACHTUNG RECHTE: kommerzielle Veroeffentlichung aus demselben Ordner,
-#   aus dem „Daylight" am 22.10. zwei Deiner Shorts weltweit gesperrt hat.
+# Bett 0,00–54,91 s, laeuft bis zum letzten Bild und blendet ueber dem
+# Outro aus (4,208 s ab 50,70 s). Durch Subtraktion geprueft.
+# Pegel: Stimme -33,0 dB, Bett -31,3 dB -> 10 dB darunter.
 # Ohne Musik: „YNB Podcast Ken Stern Meaningful.mp4" im Repo.
 
 # ══════════════════════════════════════════════════════════════════
 # AUFBAU
-#   0:00.0–0:03.6  Du, Nah — Deine Frage
-#   0:03.6–0:10.4  Ken, Nah
-#   0:10.4–0:17.6  Totale, Kasten auf Ken
-#   0:17.6–0:53.1  Ken, Nah — bis „inspire others to do the same"
-# Die beiden Einstellungswechsel bei 10,4 und 17,6 sind die Kameraschnitte
-# der Aufnahme. Meiner ist nur der bei 3,6 s, und der liegt auf dem
-# Kameraschnitt der Aufnahme. Jede Kante an den Bildnummern geprueft.
+#   0:00.0–0:01.2  Du, Nah — Deine Frage
+#   0:01.2–0:08.1  Ken, Nah
+#   0:08.1–0:15.2  Totale, Kasten auf Ken
+#   0:15.2–0:50.7  Ken, Nah
+# Die zwei Wechsel bei 8,1 und 15,2 sind Kameraschnitte der Aufnahme,
+# meiner ist der bei 1,2 s und faellt mit einem zusammen.
 #
 # ABNAHME (gemessen)
-#   1080x1920 · 48 kHz · 57,3 s · Outro da · 71 Untertitel · Ortscheck sauber
-#   „Kein Musikbett" meldet FEHLER bei -49,9 dB — das ist die Musik.
-#   Die Fassung ohne Musik besteht alle Pruefungen (-77,6 dB).
+#   1080x1920 · 48 kHz · 54,9 s · Outro da · 64 Untertitel · Ortscheck sauber
+#   „Kein Musikbett" meldet FEHLER bei -43,9 dB — das ist die Musik.
+#   Ohne Musik: alle Pruefungen bestanden (-73,2 dB).
 #
 # NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.
