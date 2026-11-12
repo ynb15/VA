@@ -6,6 +6,92 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Das Kinn misst man am fertigen Ausschnitt, nicht am Vollbild (12.11.)
+
+Für das Trump-Short habe ich Kens Kinn im 960-px-Vollbild auf Quell-y 675
+geschätzt und daraus Ausgabe-y **1199** gerechnet — also „Zeilenhöhe 1140
+deckt sein Kinn ab, ich brauche 1290". Gerendert lag das Kinn bei **1012
+bis 1065**. Ich lag um 135 px daneben, in die falsche Richtung, und hätte
+die Schrift ohne Not 150 px zu tief gesetzt.
+
+Der Fehler: im Vollbild schätzt man die Kinnhöhe als Anteil eines
+540-px-Panels und multipliziert mit 1080/608 = 1,776. Zwei Schätzungen
+hintereinander, beide mit Vorzeichen.
+
+→ betrifft: jede Zeilenhöhe. **Den Kasten rendern, eine Linie auf der
+geplanten Höhe einzeichnen, hinsehen.** `crop=b:h:x:y,scale=1080:1920,
+drawbox=y=<lippe>` kostet drei Sekunden und ersetzt die Rechnung.
+
+Nachtrag: 1200 statt 1140 war dann doch richtig — aber wegen der ZWEITEN
+Kamera, wo das Kinn bis 1124 reicht. Bei 1140 wären das 16 px Abstand
+gewesen. Auch das stand erst im gerenderten Bild.
+
+## Zwei Nahaufnahmen desselben Gastes sind nicht derselbe Kasten (12.11.)
+
+Im Trump-Block schneidet die Regie zwischen zwei Ken-Kameras. Kopfmitte an
+je fünf Stellen gemessen: **Quell-x ≈ 1000** in der einen, **≈ 900** in der
+anderen. 100 px Unterschied — mit einem Kasten für beide säße er in einer
+davon schief, und genau das war sein Einwand vom Meaningful-Short
+(*„Sein Kopf ist viel zu weit links"*).
+
+→ betrifft: jeden Plan. **Nach jedem Kameraschnitt die Kopfmitte neu
+messen, auch wenn dieselbe Person im Bild bleibt.** Gleiche Person heißt
+nicht gleiche Kamera.
+
+## Ein Tonschnitt, der auf einem Kameraschnitt liegt, ist unsichtbar (12.11.)
+
+Von meinen drei Schnitten im Trump-Short fiel einer (Bild 97179 =
+3239,300) genau auf einen Kameraschnitt der Aufnahme. Die Sprechpause nach
+„spiraled" und der Schnitt Totale→Nah liegen übereinander. Ergebnis: ein
+5,1-s-Schnitt, den man nicht sieht.
+
+Das war kein Zufall, sondern Reihenfolge: ich hatte die Kameraschnitte
+gemessen, **bevor** ich die Schnittgrenzen festlegte, und konnte die
+Grenze auf den Kameraschnitt ziehen statt 0,6 s daneben.
+
+→ betrifft: jeden Schnitt. **Erst Kameraschnitte messen, dann Tonschnitte
+wählen.** Liegt eine Sprechpause innerhalb von ~1 s eines Kameraschnitts,
+die Schnittgrenze auf den Kameraschnitt legen.
+
+## Das Satzzeichen hängt am letzten Wort der Gruppe — darum geht es weg (12.11.)
+
+Whisper schrieb „AND ENERGY FROM?" mitten in den Satz. Eine Korrektur
+`from -> from` ändert nichts: `korrekturen_anwenden` übernimmt das
+Satzzeichen des Originals. Aber es übernimmt es **nur für das letzte Wort
+der ersetzten Gruppe**. `from everything -> from everything` — identische
+Wörter, zwei statt einem — schreibt „from" neu und lässt das „?" fallen,
+weil „everything" jetzt das letzte Wort ist.
+
+→ betrifft: jedes falsche Satzzeichen. **Die Gruppe ein Wort weiter
+fassen, dann fällt das Zeichen am vorletzten Wort weg.** Preis: die Gruppe
+wird gleichmäßig über ihre Zeitspanne verteilt, bei einer Pause darin
+verschiebt sich die Hervorhebung um bis zu einer halben Sekunde.
+
+## `--laut aus` + Musikbett heißt zweimal messen (12.11.)
+
+Vorlage auf exakt −29,7 LUFS gezogen, Renderer mit `--laut aus`: Hauptteil
+−29,8. Dann das Bett druntergelegt — und der Mix maß **−30,2**, also
+leiser, obwohl nur Energie dazukam. Grund ist die Gatterung des ebur128:
+ein leises Bett hebt die stillen Blöcke, das hebt die relative Schwelle,
+und Blöcke fallen aus der Wertung.
+
+→ betrifft: jede Musikfassung. **Die Lautheit nach dem Mischen noch einmal
+messen und gegen die zuletzt abgenommene Musikfassung angleichen**, nicht
+gegen die eigene Fassung ohne Musik. Hier +0,4 dB auf den fertigen Mix.
+
+## ProRes geht nicht durch den Transkriptionsschritt (12.11.)
+
+`shorts-render.py` legt für `--auto-captions` ein Zwischenstück an:
+`ffmpeg -ss … -i <src> -c copy clip.mp4`. Eine ProRes-Vorlage bricht dort
+ab — *„Could not find tag for codec prores … in mp4"*. Der eigentliche
+Durchlauf hätte ProRes verkraftet, nur dieser eine Schritt nicht.
+
+→ betrifft: jede Vorlage. **Vorlage als H.264 in `.mp4` bauen** (hier crf
+12, visuell verlustfrei), nicht als ProRes-`.mov`. Und: nicht die fertige
+ProRes-Datei umkodieren, sondern den Concat direkt nach H.264 ausgeben —
+spart eine Generation.
+
+
 ## 2026-11-12 (spaeter) — zwei Fehler, die nur im Vergleich zweier Shorts auffallen
 
 - **„--laut aus" heisst nicht, dass am Pegel nichts zu tun ist.** Sein

@@ -1,0 +1,101 @@
+# Korrekturen für eingebrannte Untertitel.
+# Eine Zeile je Paar: falsch -> richtig. Links darf eine Wortfolge stehen.
+# Vergleich ohne Rücksicht auf Groß- und Kleinschreibung, nur ganze Wörter.
+# Zeilen mit # sind Notizen.
+#
+# Warum es die Liste gibt: ein falsch verstandenes Wort ist nach dem
+# Einbrennen nicht mehr zu retten. Gesammelt aus dem, was faster-whisper am
+# Studiomaterial verhört hat — von ihm selbst gemeldet, wo es mir entging.
+for short -> fall short
+tenancy -> tendency
+endate -> Andrew Tates
+endotades -> Andrew Tates
+andretates -> Andrew Tates
+andretate -> Andrew Tate
+substack -> Substack
+afrikaburn -> AfrikaBurn
+burningman -> Burning Man
+gilmore -> Gilmore
+yannick -> Yannick
+sutcliffe -> Sutcliffe
+hyper masculinity -> hypermasculinity
+~^endo.?t[ae]d?t?e?s?$ -> Andrew Tates
+# Aaronson-Folge (20.10.): Whisper schreibt den Namen durchgaengig einfach.
+aronson -> Aaronson
+aaronson -> Aaronson
+scott aronson -> Scott Aaronson
+shtetl optimized -> Shtetl-Optimized
+# 20.10.: Whisper setzt das Fragezeichen hinter "how safe is AI" mal, mal
+# nicht — von Lauf zu Lauf verschieden. Seine Frage soll eines haben.
+how safe is ai -> how safe is AI?
+# Und Whisper zerlegt "AI" mal in "A I" — auch das abfangen.
+how safe is a i -> how safe is AI?
+# Craig-Makhosi-Folge (20.10.): Into the Wild und Ubuntu.
+mccandless -> McCandless
+krakauer -> Krakauer
+supertramp -> Supertramp
+super tramp -> Supertramp
+ubuntu -> Ubuntu
+makhosi -> Makhosi
+# --- Zusatz fuer das Ubuntu-Short mit Ken Stern (11.11.2026, Shorts II) ---
+# "misinterpret it" verschleift sich zu "misinterpreted". Bei normalem Tempo
+# hoeren medium UND large-v3 "misinterpreted"; auf 0,7- und 0,55-facher
+# Geschwindigkeit hoert large-v3 zweimal eindeutig "misinterpret it" — und
+# nur das ergibt den Satz: "most people misinterpret it as I am because we
+# are". Kommt zweimal vor.
+misinterpreted -> misinterpret it
+# Die beiden Voelker, die er neben den Zulu nennt: Khoi und San. Whisper
+# schreibt, was es hoert ("Koi", "Sun"). Beide Laeufe (large-v3 bei 1,0 und
+# 0,6) hoeren dasselbe; die Schreibweise ist gegen Quellen geprueft.
+koi -> Khoi
+sun tribes -> San tribes
+# Hinweis: an der vorherigen Schnittfassung verschluckte "medium" hier das
+# Wort "relationships"; an dieser Fassung schreibt es das Modell selbst.
+# Die Korrektur dafuer ist deshalb WIEDER RAUS — sonst stuende es zweimal da.
+# Der Artikel am Anfang: er sagt "the African proverb Ubuntu", das Modell
+# faengt die Einblendung erst bei "African" an.
+african proverb -> the African proverb
+# Der Name seines eigenen Podcasts, nach Frankls Buch: "Man's Search for
+# Meaning". Das Genitiv-s verschleift sich, "medium" schreibt "man search".
+# large-v3 hoert bei 1,0 und 0,6 zweimal "man's search for meaning podcast".
+man search for meaning -> Man's Search for Meaning
+# --- Meaningful-Short, Fassung 2 (11.11.) ---
+# Alle drei am ungedehnten Ton mit large-v3 bei 1,0 und 0,6 gegengeprueft.
+# "having a reason" — das unbetonte "a" faellt bei "medium" weg.
+having reason -> having a reason
+# "our interior lives", nicht "lies".
+interior lies -> interior lives
+# Er stolpert: "encourage other people to do, and inspire others to do the
+# same". Das "and" vor "inspire" faellt bei "medium" weg.
+do inspire -> do and inspire
+# --- Aging-Short (12.11.) ---
+# Viktor Frankl, nach dem sein Podcast benannt ist. "medium" schreibt den
+# Namen je nach Lauf "Frenkel", "Frankle" oder "Frankel".
+frenkel -> Frankl
+frankle -> Frankl
+frankel -> Frankl
+# --- Trump-Short (12.11.) ---
+# ACHTUNG: diese sechs gelten fuer DIESE Schnittfassung und das Modell
+# "medium". An einem anderen Schnitt koennen sie doppelt greifen.
+# Das unbetonte "I" am Satzanfang faellt bei "medium" weg. large-v3 hoert es
+# bei 1,0 und 0,6 zweimal eindeutig, und im Pegelverlauf der Vorlage setzt
+# die Sprache bei 0,34 s ein — also vor "think".
+think a lot of -> I think a lot of
+# "who lives to demonize others" — das Plural-s faellt weg. large-v3 bei 1,0
+# und 0,6 zweimal "others".
+demonize other who -> demonize others who
+# Whisper setzt mitten im Satz ein Fragezeichen hinter "from". Die Ersetzung
+# baut die Gruppe neu auf; der Satzzeichenschwanz bleibt nur am letzten Wort
+# der Gruppe, damit faellt das Fragezeichen weg.
+from everything -> from everything
+# Er zoegert: "not listening — uh — and demonizing the other side". "medium"
+# macht aus dem Zoegern ein Wort: "demon and demonizing those". large-v3 bei
+# 1,0 eindeutig: "not listening and demonizing the other side."
+listening demon and demonizing those -> listening and demonizing the other side
+# Fehlstart: "little did we ha— little did I know that we haven't, that
+# everything ...". "medium" hoert den Fehlstart als "loaded we haven't" und
+# wiederholt ihn. large-v3 bei 0,6 hoert den Fehlstart, bei 1,0 den
+# bereinigten Satz: "And little did I know that everything has gotten worse
+# and worse and spiraled." Die zwei Korrekturen lassen den Fehlstart weg.
+and loaded we haven't little -> and little
+know we haven't that everything -> know that everything
