@@ -1,0 +1,114 @@
+# Ken Stern — Frankl-Zitat und Dein Essay über das Altern
+# 75,4 s (Hauptteil 71,2 s + Outro 4,2 s) · Rohzeit 1:17:22,41–1:17:58,01
+# und 1:18:09,94–1:18:52,69 · Tempo 1,1 · mit „In This Shirt"
+#
+# Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
+# Was raus soll: Zeile loeschen oder die Nummer nennen.
+#
+  1  [00:00.00–00:01.60]  FRANKL SAID
+  2  [00:02.66–00:03.68]  WHAT YOU HAVE EXPERIENCED
+  3  [00:04.08–00:06.20]  NO POWER ON EARTH CAN TAKE FROM YOU
+  4  [00:06.60–00:11.00]  NOT ONLY OUR EXPERIENCES BUT ALL WE HAVE DONE WHATEVER GREAT THOUGHTS WE MAY HAVE
+  5  [00:11.00–00:12.68]  HAD AND ALL WE HAVE SUFFERED
+  6  [00:13.22–00:16.40]  ALL THIS IS NOT LOST THOUGH IT IS PAST
+  7  [00:16.78–00:18.24]  WE HAVE BROUGHT INTO BEING
+  8  [00:18.70–00:24.00]  HAVING BEEN IS A KIND OF BEING AND PERHAPS THE SUREST KIND AND IT MADE
+  9  [00:24.00–00:31.80]  ME WRITE A LITTLE MINI-ESSAY ABOUT THE ART OF AGING
+ 10  [00:32.40–00:36.18]  AGING IS NOT A SLOW SURRENDER TO TIME BUT A POWERFUL JOURNEY INTO THE
+ 11  [00:36.18–00:38.46]  FULLEST EXPRESSION OF WHO WE ARE MEANT TO BECOME
+ 12  [00:39.04–00:42.28]  IT IS NOT THE DIMMING OF THE LIGHT BUT THE DEEPENING OF ITS GLOW
+ 13  [00:42.84–00:47.32]  WITH EACH PASSING YEAR WE GAIN LAYERS OF INSIGHT EMPATHY AND RESILIENCE
+ 14  [00:47.90–00:52.46]  THE RUSH OF YOUTH GIVES WAY TO THE RICHNESS OF PERSPECTIVE THE URGENCY OF
+ 15  [00:52.46–00:56.52]  AMBITION SOFTENS INTO THE QUIET CONFIDENCE OF KNOWING WHAT TRULY MATTERS
+ 16  [00:57.20–00:58.88]  TO GROW OLDER IS NOT TO FADE
+ 17  [00:59.28–01:00.64]  IT IS TO BECOME MORE ROOTED
+ 18  [01:01.04–01:02.44]  MORE RADIANT MORE WHOLE
+ 19  [01:03.32–01:04.14]  IT IS A PRIVILEGE
+ 20  [01:04.74–01:08.94]  A TRANSFORMATION AND A QUIET TRIUMPH THAT MANY ARE NOT GRANTED AND FOR THAT
+ 21  [01:08.94–01:10.84]  IT SHOULD BE HONOURED NOT FEARED
+
+# ══════════════════════════════════════════════════════════════════
+# ZUERST DAS, WAS DU WISSEN MUSST: ES PASST NICHT UNTER 60 SEKUNDEN
+# ══════════════════════════════════════════════════════════════════
+# Der Essay allein ist 42,7 s roh, das Frankl-Zitat 25,3 s. Zusammen mit
+# der Ueberleitung und dem Outro sind das 75,4 s — und das ist schon bei
+# Tempo 1,1 und ohne jedes Fuellwort gerechnet.
+#
+# Drei Wege, falls Du kuerzer willst. Sag eine Zahl, ich baue um:
+#
+#   1. Den Mittelsatz des Zitats raus (Zeilen 4-6, 9,8 s):
+#      „Not only our experiences, but all we have done, whatever great
+#       thoughts we may have had and all we have suffered, all this is
+#       not lost, though it is past."
+#      -> 65,6 s. Das Zitat bleibt verstaendlich: „What you have
+#      experienced, no power on earth can take from you … having been is
+#      a kind of being, and perhaps the surest kind."
+#
+#   2. Zusaetzlich die Ueberleitung raus („And it made me write a little
+#      mini essay about the art of aging", 7,8 s) -> 57,8 s.
+#      Dann faengt der Essay aber ohne Ansage an.
+#
+#   3. Nur der Essay, ohne Zitat -> rund 47 s. Dann fehlt der Anlass.
+#
+# Mein Rat: Weg 1. Alles andere kostet mehr, als es bringt.
+# Und: YouTube laesst Shorts seit Oktober 2024 bis drei Minuten zu — 75 s
+# sind also kein Formatproblem, nur laenger als Deine bisherigen.
+
+# ══════════════════════════════════════════════════════════════════
+# WAS ICH HERAUSGENOMMEN HABE — zwei Stellen
+# ══════════════════════════════════════════════════════════════════
+#
+# 1. DEIN FEHLSTART beim Vorlesen, 11,0 s — Rohzeit 1:17:58,01–1:18:09,94.
+#    Genau das, was in Deinem Dokument als „1:17:55 edit" steht:
+#      „Aging is not a slow surrender to time, but a powerful journey into
+#       the fullest expression of who we are meant to become."
+#      „Sorry, I'll read that again."
+#    Der Short nimmt den zweiten, sauberen Durchlauf.
+#
+# 2. DIE ANMODERATION davor, 12,6 s — Rohzeit 1:17:04,54–1:17:20,60:
+#      „It reminds me of one of my favorite quotes from Viktor Frankl,
+#       which really was — which really made me reflect on my ideas of
+#       aging."
+#    Draussen, weil Du gesagt hast, das Short sei das, wo Du das Zitat
+#    liest, und weil „Frankl said" den Namen ohnehin nennt. Darin steckt
+#    auch ein Verhaspler („which really was"). Willst Du die Anmoderation
+#    drin haben, sag es — dann sind es 88 s.
+
+# ══════════════════════════════════════════════════════════════════
+# EINE KORREKTUR AM TON
+# ══════════════════════════════════════════════════════════════════
+# FRANKL — „medium" schreibt den Namen je nach Lauf „Frenkel", „Frankle"
+#   oder „Frankel". Alle drei Schreibweisen fangen jetzt in der
+#   Korrekturliste ab. Es ist der Name, nach dem Dein Podcast heisst.
+# Nicht korrigiert, weil es von selbst stimmte: HONOURED, RESILIENCE,
+#   die ganze Essay-Passage steht wortgleich.
+
+# ══════════════════════════════════════════════════════════════════
+# MUSIK — eine Annahme von mir
+# ══════════════════════════════════════════════════════════════════
+# Du hast zu diesem Short nichts gesagt. Ich habe „In This Shirt"
+# daruntergelegt und wie bei den anderen beiden Ken-Shorts behandelt:
+# Bett ab 0:23,25 des Titels, laeuft bis zum letzten Bild (0,00–75,44 s)
+# und blendet ueber dem Outro aus, Ausblende 4,208 s ab 71,23 s.
+# Durch Subtraktion geprueft: -43 dB am Anfang, -42 bei 70 s, -56 bei 74.
+# Pegel: Stimme -30,9 dB, Bett -29,4 dB -> 10 dB unter der Stimme.
+# ACHTUNG RECHTE: kommerzielle Veroeffentlichung aus demselben Ordner,
+#   aus dem „Daylight" am 22.10. zwei Deiner Shorts weltweit gesperrt hat.
+# Ohne Musik: „YNB Podcast Ken Stern Aging.mp4" im Repo.
+
+# ══════════════════════════════════════════════════════════════════
+# AUFBAU
+#   0:00.0–0:07.7  Du, Nah — das Zitat beginnt
+#   0:07.7–0:13.8  Totale, Kasten auf Dich
+#   0:13.8–0:32.4  Du, Nah
+#   0:32.4–0:36.1  Totale, Kasten auf Dich — der Essay beginnt
+#   0:36.1–1:11.2  Du, Nah — der Essay bis „not feared"
+# Alle vier Wechsel sind die Kameraschnitte der Aufnahme. Mein einziger
+# Schnitt liegt bei 0:32.4 und faellt mit einem Kameraschnitt zusammen.
+#
+# ABNAHME (gemessen)
+#   1080x1920 · 48 kHz · 75,4 s · Outro da · 87 Untertitel · Ortscheck sauber
+#   „Kein Musikbett" meldet FEHLER bei -42,1 dB — das ist die Musik.
+#   Die Fassung ohne Musik besteht alle Pruefungen (-76,1 dB).
+#
+# NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.

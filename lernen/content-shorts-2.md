@@ -6,6 +6,43 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-11-12 — ein Suchausschnitt ist kein Inhaltsverzeichnis
+
+- **Ich habe ihm eine Frage gestellt, deren Antwort im Dokument stand, das
+  ich schon in der Hand hatte.** Die Drive-Volltextsuche liefert einen
+  Ausschnitt **vom Dateianfang**, nicht um den Treffer herum. Bei seinem
+  Vorbereitungsdokument zu Ken Stern brach der Ausschnitt genau **eine
+  Zeile** vor `1:17:55 edit & Short: Aging` ab — nach `1:05:00 Short:
+  Ubuntu`. Daraus hatte ich geschlossen, es gebe keine Marke, und gefragt.
+  Seine Antwort: *„Willst du mich verarschen? Schau ins Transkript du
+  trottel."* Berechtigt.
+  **Regel: wenn eine Datei die Antwort haben koennte, wird sie gelesen
+  (`read_file_content`), nicht nach dem Suchausschnitt beurteilt.** Das
+  ganze Dokument sind 7 kB Text — ein einziger Aufruf. Der Ausschnitt hatte
+  90 % gezeigt und genau die fehlende Zeile verschluckt.
+  → betrifft: alle Agenten
+- **Eine Einstellungsgrenze wird auf die Bildzeit ABGERUNDET, nie
+  aufgerundet.** Ich hatte **32,3667** geschrieben; Bild 971 liegt bei
+  **32,366667**. Der Renderer prueft `t < ende`, und 32,366666 < 32,3667 ist
+  wahr — Bild 971 bekam den Kasten der vorigen Einstellung. In der Totale
+  zeigt dieser Kasten den **leeren Tisch**, ein Bild lang, mitten im Short.
+  **0,4 Millisekunden Rundungsfehler, ein sichtbarer Fehler.** Schreibweise
+  ab jetzt: Bildnummer durch 30, abgeschnitten statt gerundet.
+  → betrifft: alle Content-Agenten
+- **Manches Material passt nicht unter 60 Sekunden, und das ist kein
+  Schnittfehler.** Frankl-Zitat 25,3 s plus sein Essay 42,7 s plus
+  Ueberleitung und Outro = 75,4 s bei Tempo 1,1, ohne ein einziges
+  Fuellwort. **Statt heimlich zu kuerzen: die Zahl nennen, drei Wege mit
+  Laengen anbieten und ihn entscheiden lassen.** YouTube laesst Shorts seit
+  Oktober 2024 bis drei Minuten zu, das Format ist also nicht das Problem.
+  → betrifft: content-*, alle
+- **Sein Vorbereitungsdokument markiert die Schnittstellen selbst.** Neben
+  `1:17:55 edit & Short: Aging` steht an anderer Stelle `5:14: edit out` und
+  `57:12 - 1:06:00 raeuspern edit`. **„edit" heisst: dort ist etwas, das
+  raus muss.** Hier war es sein Fehlstart beim Vorlesen („Sorry, I'll read
+  that again", 11 s). Wer das Dokument liest, weiss die Auslassung vorher.
+  → betrifft: content-*
+
 ## 2026-11-11 (nachts) — dritte Musikansage, dritte Variante
 
 - **Er hat jetzt dreimal etwas anderes zum Ende des Betts gesagt, und jedes
