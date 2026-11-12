@@ -45,6 +45,59 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 43 — 12.11.2026, 15:54 Kapstadt · er will Konfrontation, und der Pegel hängt daran, wer spricht
+
+- **STEHENDE ANSAGE, wörtlich von ihm:** *„Ich habe richtig Bock auf
+  Konfrontation. Ich halte nicht zurück."* Das gilt für Kommentarantworten,
+  Titel, Thumbnail-Copy und Clip-Texte. **Die eingebaute Neigung, die weichere
+  Lesart anzubieten** (*„ich lese das nicht als Widerspruch"*, *„er ist ja
+  nicht feindselig"*), **ist gegen seinen ausdrücklichen Willen.** Liegt ein
+  Kommentator falsch, wird das benannt, nicht abgefedert.
+  → betrifft: alle Content-Agenten
+- **Seine eigene Einschätzung wird ausgeführt, nicht bewertet.** Er sagte, ein
+  Kommentator konterkariere sich selbst; die Antwort, die daraus wurde, lautete
+  *„I don't think that's a contradiction, I think it's the point."* **Das ist
+  nicht weicher formuliert, das ist das Gegenteil seiner Aussage, in seinem
+  Namen.** Dasselbe Muster wie am 28.10. („zu lang" → 50-Wort-Telegramm): eine
+  Richtungsangabe von ihm kommt als etwas zurück, das ihr widerspricht. **Wer
+  sie für falsch hält, sagt das als Einwand daneben — und baut sie nicht um.**
+  → betrifft: alle, die in seinem Namen schreiben
+- **Bei einer Antwort auf einen Einwand den eigenen Satz vollständig
+  danebenlegen.** Im Video steht *„a betrayal to himself and to every man out
+  there"*; zitiert wurde dreimal nur *„to himself, first"* — und damit dem
+  Kommentator genau das zugestanden, was er behauptet hatte. **Die zweite
+  Hälfte war das Gegenargument.**
+  → betrifft: youtube-manager, head-of-content
+- **„`--laut aus`" heißt nicht, dass am Pegel nichts zu tun ist — und der
+  Unterschied kommt davon, wer spricht.** Sein Befund: *„bei dem Meaning Short
+  ist der Ton deutlich leiser als in dem Ubuntu-Short."* Gemessen am
+  Hauptteil: **Ubuntu −29,7 LUFS · Meaningful −33,7 LUFS · Aging −27,5 LUFS.**
+  Ursache ist nicht der Schnitt: im Ubuntu-Short spricht fast durchgehend er,
+  im Meaningful-Short fast durchgehend der Gast, und das Gastmikro liegt im
+  Master leiser. **Regel: bei einem gastlastigen Short den Hauptteil gegen das
+  zuletzt abgenommene Short messen und per Festverstärkung angleichen** —
+  reine Verstärkung auf die Vorlage, **vor dem Outro**, damit das Outro seinen
+  Pegel behält. Dort **+4,0 dB**, Spitze vorher −12,6 dB. **Das beantwortet
+  zugleich die offene Frage zu den zehn Strassman-Shorts** (−28,5 bis
+  −30,6 dB); sie und die elf Ken-Shorts werden danach angeglichen, die
+  Originale bleiben liegen.
+  → betrifft: alle, die Shorts bauen
+- **Eine Folgenliste an zwei Orten läuft auseinander — zum zweiten Mal.** Ken
+  Stern stand weder in `bin/kalender-bauen.py` noch in `bin/plan-pruefen.py`;
+  ihn nur im Generator einzutragen reichte nicht, die Plankontrolle meldete
+  weiter *„keine Fristen in den nächsten drei Tagen"*, während T−2 am Folgetag
+  fällig war. **Dasselbe Muster wie bei der Team-Liste am 22.10.**
+  → betrifft: zuerst mich
+- **Ein Generator, der eine handgepflegte Datei schreibt, löscht sie.**
+  `bin/kalender-bauen.py` hat `plan/kalender.md` vollständig überschrieben —
+  **368 Zeilen** Zustandsspalte und angehängte Abschnitte, aus `git`
+  wiederhergestellt. **Erst in eine Vergleichsdatei schreiben, dann die
+  geänderten Zeilen übernehmen.**
+  → betrifft: jeden, der ein Werkzeug auf eine Datei loslässt, in der auch
+  Handarbeit steht
+
+---
+
 ## Ausgabe 42 — 12.11.2026, 06:40 Kapstadt · eine verworfene Fassung heißt: die Quelle neu suchen, nicht die Copy tauschen
 
 - **Eine abgelehnte Lieferung spart keinen Schritt, sie kostet einen.** Er hat
