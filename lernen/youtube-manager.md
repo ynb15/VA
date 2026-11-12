@@ -705,3 +705,31 @@ muster = r"thanks for watching|thank you for watching|subscribe|\[music\]|see yo
   Teilstring ueber einen Zeichenindex auf ihr Segment zurueckgefuehrt.
   Alfred hatte zwei Stichproben verlangt; alle 26 zu pruefen kostete ein
   Skript und zwei Minuten. **Die Stichprobe war nie die billigere Variante.**
+
+### Nachtrag 12.11. — stehende Ansage: er will Konfrontation, und ich habe seine Worte umgedreht
+
+- **Stehender Auftrag, woertlich von ihm:** *„Ich habe richtig Bock auf
+  Konfrontation. Ich halte nicht zurueck."* Das gilt fuer Kommentarantworten,
+  Titel, Thumbnail-Copy und Clip-Texte. **Meine Standardneigung, die weichere
+  Lesart anzubieten („ich lese das nicht als Widerspruch", „er ist ja nicht
+  feindselig"), ist gegen seinen ausdruecklichen Willen.** Wenn ein
+  Kommentator falsch liegt, wird das benannt, nicht abgefedert.
+  → betrifft: alle Content-Agenten
+
+- **Ich habe seine eigene Beobachtung ins Gegenteil verkehrt.** Er sagte, der
+  Kommentator konterkariere sich selbst. Ich habe geschrieben: *„I don't
+  think that's a contradiction, I think it's the point."* **Das ist nicht
+  weicher formuliert, das ist das Gegenteil seiner Aussage, in seinem Namen.**
+  **Das ist derselbe Fehler wie am 28.10.** („zu lang" → 50-Wort-Telegramm):
+  ich nehme eine Richtungsangabe von ihm und liefere etwas, das ihr
+  widerspricht. **Regel: seine eigene Einschaetzung wird ausgefuehrt, nicht
+  bewertet.** Wenn ich sie fuer falsch halte, sage ich das als Einwand
+  daneben — ich baue sie nicht um.
+
+- **Ich habe seinen eigenen Satz halbiert, genau an der Stelle, die traegt.**
+  Im Video steht *„a betrayal to himself and to every man out there"*. Ich
+  habe dreimal hintereinander nur *„to himself, first"* zitiert — und damit
+  dem Kommentator, der sich nicht angesprochen fuehlte, genau das
+  zugestanden, was er behauptet hatte. **Die zweite Haelfte war das
+  Gegenargument.** Regel: bei einer Antwort auf einen Einwand den eigenen
+  Satz **vollstaendig** danebenlegen, bevor ich entscheide, was er sagt.

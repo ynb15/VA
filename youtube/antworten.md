@@ -116,3 +116,20 @@ vom 8. Mai 1793; der moderne Wortlaut stammt aus *Amazing Fantasy* #15
 (1962) — aus der Schlusscaption, **nicht** von Onkel Ben. Die
 Voltaire-Zuschreibung ist unbelegt. **Also unzugeschrieben verwenden**: eine
 falsche Quellenangabe ist in einem Kommentarstrang eine Steilvorlage.
+
+## Nachtrag 12.11. — das Register ist konfrontativ, nicht ausgleichend
+
+**Woertlich von ihm am 12.11.:** *„Ich habe richtig Bock auf Konfrontation.
+Ich halte nicht zurueck."*
+
+Die Tabelle oben misst Laengen und Formen. **Sie misst nicht den Ton, und
+ich habe den Ton falsch gesetzt** — dreimal hintereinander habe ich dem
+Kommentator Brücken gebaut, die er nicht wollte und die Yannick nicht baut.
+Der Zweischritt mit dem zurueckzitierten Wort ist kein hoeflicher Zug, er ist
+ein Angriff auf die schwaechste Stelle des anderen.
+
+**Konkret falsch war:** „ich lese das nicht als Widerspruch" (er hatte den
+Widerspruch gerade benannt), „er ist ja nicht feindselig, nur abweisend" als
+Begruendung, etwas wegzulassen, und das Zurueckhalten eines Arguments, das
+ich fuer zu hart hielt. **Was ich fuer zu hart halte, ist nicht mein Urteil.
+Ich liefere es und sage dazu, dass es hart ist.**
