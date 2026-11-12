@@ -83,3 +83,36 @@ dort gegen jemanden, der sichtbar nicht geschaut hat. **Gegen jemanden, der
 sich auf eine konkrete Stelle bezieht, ist derselbe Satz ein Eigentor** — er
 behauptet Unwissen, das nachweislich nicht vorliegt.
 → betrifft: alle Content-Agenten
+
+## Nachtrag 12.11. — die Gegenfrage ist eine Form, kein Ersatz fuer ein Argument
+
+**Zu einem Kommentar unter „The Video Alex Hormozi Doesn't Want You to See"
+habe ich zweimal hintereinander leere Fragen geliefert**, und er hat beide
+Male abgeraeumt: *„Jetzt schreibst du nur irgendwas, um irgendeine Frage zu
+stellen."* Die erste (`Why was it free?`) unterstellte etwas, das ich nicht
+belegen konnte und das der Kommentator mit einem Satz erledigt haette.
+
+**Die Ursache:** ich hatte das Video nicht gelesen. Ohne die Behauptung,
+gegen die jemand argumentiert, kann ich nur die *Logik* seines Kommentars
+angreifen — und das ergibt Fragen, die unter jeden beliebigen Kommentar
+passen. **Genau das ist das Kennzeichen einer leeren Gegenfrage: sie
+funktioniert auch woanders.**
+
+**Erst mit dem Quelldokument lag der Punkt offen:** der Kommentator
+argumentierte gegen „er schuldet Dir was" und „Du hattest ihn auf einem
+Podest" — **beides steht nicht im Video.** Dessen erster Satz ist *„This is
+a betrayal - to himself and every man out there."* Zwei seiner drei
+Argumente stimmten sogar woertlich mit dem Video ueberein.
+
+**Die Regel: vor jeder Antwort auf einen inhaltlichen Kommentar erst die
+Behauptung des eigenen Videos nachlesen, dann die Frage bauen.** Eine
+Gegenfrage, die ich formulieren kann, ohne die Quelle zu kennen, ist keine.
+→ betrifft: alle Content-Agenten
+
+**Nebenbefund, weil er nach dem Zitat gefragt hat:** *„With great power comes
+great responsibility"* hat **keinen belegten Urheber**. Die frueheste
+dokumentierte Fassung steht im Dekret des franzoesischen Nationalkonvents
+vom 8. Mai 1793; der moderne Wortlaut stammt aus *Amazing Fantasy* #15
+(1962) — aus der Schlusscaption, **nicht** von Onkel Ben. Die
+Voltaire-Zuschreibung ist unbelegt. **Also unzugeschrieben verwenden**: eine
+falsche Quellenangabe ist in einem Kommentarstrang eine Steilvorlage.
