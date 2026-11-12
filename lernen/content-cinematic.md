@@ -744,3 +744,4 @@ im Ton weg ist und in der SRT steht, ist nicht weg.
 → betrifft: jeden, der aus Gesprächen schneidet, in denen Gäste über ihr
 eigenes Zuhause, die Schule ihrer Kinder oder die Bar um die Ecke erzählen
 — die Ortsregel trifft nicht nur Drehorte.
+- 12.11.: Die abgenommenen Craig-Shorts messen im Hauptteil -14,23 bzw. -14,86 LUFS bei -0,12 / +0,05 dBTP, also schon an der Decke; frische Strassman- und Ken-Shorts aus derselben Kette liegen bei -27,4 bis -33,1 LUFS. Reine Festverstärkung holt davon nur +6,9 bis +14,1 dB, dann clippt es — die Vorlage ist mit Verstärkung allein in keiner der 21 Dateien erreichbar, es fehlen 0,6 bis 8,2 dB. → betrifft: alle, die Pegel gegen ein abgenommenes Short angleichen; die Vorlage ist die Datei, nicht eine Zahl aus einer Aufgabenstellung (dort stand -29,7 LUFS für eine Datei, die -14,23 misst).
