@@ -39,7 +39,9 @@ die er beim Veröffentlichen kombiniert.** Das hat er selbst so gesagt
 **B1, der Themen-Dreier mit `&`:**
 > `ChatGPT/Judaism, God & The End of Humanity` *(Aaronson)*
 > `Andrew Tate, Manosphere & God` · `Feminism, Manosphere & Andrew Tate` *(Sutcliffe)*
-> `Segregation, Whiteness & Male Violence` *(Makhosi)*
+> `Segregation, Whiteness & Black Violence` *(Makhosi)*  
+> *(12.11. am veroeffentlichten Titel `FF-eRPgZI2k` nachgelesen — bei mir stand
+> `Male Violence`, das war falsch abgeschrieben.)*
 
 **Damit ist die Sache mit dem Dreier erledigt:** er steht in **drei von vier**
 Dokumenten, die eine B-Spalte haben. **Es ist seine Signatur**, nicht eine
