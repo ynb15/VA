@@ -20,6 +20,7 @@ seine Worte: „und ab dann schauen wir da nochmal.“
 | **Scott Aaronson** | So 25.10. | 15.10. | 17.10. | 19.10. | 20.10. | 22.10. | 23.10. |
 | **Kyle Kingsbury** | Sa 31.10. | ✓ steht | ✓ steht | ab 26.10. | entfällt | **28.10.** | **29.10.** |
 | **Rick Strassman** | Fr 13.11. | 03.11. | 05.11. | 07.11. | 08.11. | 10.11. | 11.11. |
+| **Ken Stern** | So 15.11. | 05.11. | 07.11. | 09.11. | 10.11. | 12.11. | 13.11. |
 | **Matt Defina** | Fr 27.11. | 17.11. | 19.11. | 21.11. | 22.11. | 24.11. | 25.11. |
 | **Marian Goodell** | Fr 04.12. | 24.11. | 26.11. | 28.11. | 29.11. | 01.12. | 02.12. |
 
@@ -94,7 +95,7 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Do 12.11. | Short | **Strassman · „Grays"** (77,3 s) | fertig · *mein Vorschlag* |
 | Fr 13.11. | **PODCAST** | Rick Strassman | offen |
 | Sa 14.11. | Clip | 3–10 Min | offen |
-| So 15.11. | Clip | 10–20 Min | offen |
+| So 15.11. | **PODCAST** | Ken Stern | T−3 fertig, T−2 am 13.11. |
 | Mo 16.11. | Short | — | offen |
 | Di 17.11. | Short | — | offen |
 | Mi 18.11. | Short | — | offen |
@@ -488,3 +489,32 @@ sondern das, was er schon gemacht hat.
 die Pegelfrage steht offen — er sieht sie ohnehin an, bevor etwas rausgeht.
 **„Die Zahl 49" und die beiden Langstücke bleiben zurückgehalten**, die hängen
 an der Fassungsfrage.
+
+## Ken Stern steht jetzt im Generator — und der Generator ist gefährlich, 12.11.2026
+
+**Eingetragen:** `bin/kalender-bauen.py` kennt jetzt **Ken Stern, So 15.11.,
+Aufnahme 14.09.2026.** Damit rechnet die Plankontrolle seine Fristen selbst
+aus, statt dass ich sie im Kopf führe — genau der Fehler, der am 10./11.11.
+dazu geführt hat, dass T−5 und T−3 vier Tage zu spät ausgelöst wurden.
+
+**Die Herkunft des Datums, ehrlich benannt:** er hat „der Launch ist Sonntag"
+dem **YouTube-Manager** gesagt, und der hat es mir weitergereicht. **Mir liegt
+es nicht aus erster Hand vor.** Es steht hier, weil ein Plan ohne dieses Datum
+nachweislich falsche Fristen produziert — nicht, weil ich den Termin gesetzt
+hätte.
+
+**Und ein Befund über das Werkzeug selbst:** `bin/kalender-bauen.py`
+**überschreibt `plan/kalender.md` vollständig.** Beim Lauf heute morgen sind
+**368 Zeilen** verschwunden — die ganze handgepflegte Zustandsspalte und jeder
+angehängte Abschnitt (die Aaronson-Nachträge, die Musik-Sperrgeschichte, der
+Ubuntu-Doppelschnitt, die Ken-Befunde, die T−3-Tabelle). Aus `git` sofort
+wiederhergestellt, nichts verloren.
+
+**Die Regel im Auftrag — „den Kalender nie von Hand ändern, er wird erzeugt" —
+ist damit unvollständig.** Richtig ist:
+1. **Termine** gehören in den Generator, nie in die Datei.
+2. **Der Generator darf nicht blind laufen.** Seine Ausgabe in eine
+   Vergleichsdatei schreiben, die beiden Tagestabellen gegeneinander halten
+   und **nur die geänderten Zeilen** übernehmen.
+3. **Zustandsspalte und angehängte Abschnitte sind Handarbeit** und überleben
+   keinen Generatorlauf.

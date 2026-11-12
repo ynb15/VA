@@ -17,6 +17,7 @@ PODCASTS = {
     datetime.date(2026, 10, 25): "Scott Aaronson",
     datetime.date(2026, 10, 31): "Kyle Kingsbury",
     datetime.date(2026, 11, 13): "Rick Strassman",
+    datetime.date(2026, 11, 15): "Ken Stern",
     datetime.date(2026, 11, 27): "Matt Defina",
     datetime.date(2026, 12,  4): "Marian Goodell",
 }
@@ -97,7 +98,8 @@ ERLEDIGT = {
     # gemeldet -- es lag im Chat, nicht im Zweig. Deshalb gefragt statt gemahnt.
     # T-5 am 08.11. erfuellt, 16 Minuten nach dem Auftrag: sechs Thumbnails
     # aus gemessenen Gesichtern (b12512d, claude/thumbnails), 1280x720.
-    "Rick Strassman": {10, 8, 6, 5, 3},
+    "Rick Strassman": {10, 8, 6, 5, 3, 2},
+    "Ken Stern":      {10, 8, 6, 5, 3},
 }
 
 # Entscheidungspunkte: Tag -> was an diesem Tag entschieden werden muss, und

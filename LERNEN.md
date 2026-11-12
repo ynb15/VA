@@ -45,6 +45,52 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 42 — 12.11.2026, 06:40 Kapstadt · eine verworfene Fassung heißt: die Quelle neu suchen, nicht die Copy tauschen
+
+- **Eine abgelehnte Lieferung spart keinen Schritt, sie kostet einen.** Er hat
+  die erste Ken-Thumbnail-Fassung verworfen: *„weder die Copy noch unsere
+  Mimik ist provokant"*. **In meinem Folgeauftrag stand, der Assistent solle
+  die vorhandenen Freisteller wiederverwenden, um den halben Lauf zu sparen —
+  und genau in diesen Freistellern steckt die Mimik, die er abgelehnt hat.**
+  Wenn er die Mimik beanstandet, ist die Quelle verworfen, nicht die Zeile.
+  → betrifft: thumbnails, head-of-content, und zuerst mich
+- **Ein Maß, das für alle Bilder dasselbe sagt, misst nichts.** Der
+  Augenweiß-Wert liegt bei Ken für fast alle **330 Bilder** zwischen 0,00 und
+  0,003 — nach dem Maß wäre kein einziges brauchbar, am Bild sind es viele.
+  Dasselbe bei der Schärfe: **Ken 34–47, Yannick 100–137 über alle Bilder** —
+  das schärfste Ken-Bild dieser Aufnahme ist weicher als das weichste von
+  Yannick. **Das ist die Kamera, nicht das Einzelbild**, und eine Auswahl nach
+  Schärfe verbessert dort nichts.
+  → betrifft: thumbnails, content-cinematic, content-shorts-2
+- **Wenn Licht und Hintergrund gleich sind, trennt der Blick die beiden.** Bei
+  Kingsbury und Strassman ging die Trennung über Haar- oder Rumpfhelligkeit;
+  bei Ken sitzen beide vor derselben Blattwand im selben Seitenlicht. Was
+  trägt, ist **das Vorzeichen des Kopfdrehs**: Yannick links, Blick nach
+  rechts (yaw +0,08 bis +0,47), der Gast rechts, Blick nach links (−0,05 bis
+  −0,69). **Von 516 Nahaufnahmen fallen fünf in die Mitte.**
+  → betrifft: thumbnails, content-cinematic
+- **Die beste Materiallage ist die gleichmäßige, nicht die höchste
+  Auflösung.** Pupillenabstände: Kingsbury 81–96 px gegen 150–183 px
+  (Hochrechnung **1,9× / 0,8×**), Strassman 88–97 gegen 86–96 (1,4× / 1,4×),
+  **Ken 100–120 gegen 110–146 (1,2× / 1,0×)**. Bei Kingsbury sind beide
+  Gesichter aus 4K und sehen trotzdem ungleich aus, weil eines verdoppelt
+  werden musste.
+  → betrifft: thumbnails, content-cinematic
+- **Die Kastenfarbe ist `#DF2D00`, nicht `#DF2C00`.** Im Ken-T−6-Paket steht
+  die falsche Ziffer; die Quelle ist sein Canva-File, er hat den Wert am
+  22.10. selbst genannt.
+  → betrifft: youtube-manager, head-of-content, thumbnails
+- **Dritte Musikansage von ihm, dritte Variante — also pro Stück fragen, nicht
+  aus dem vorigen Short schließen.** Neu, seine Worte: *„bei beiden soll die
+  Musik länger laufen und dann mit dem Outro ausfaden."* Umgesetzt: Bett bis
+  zum letzten Bild, **Ausblende 4,208 s ab Ende des Hauptteils, genau die
+  Länge des Outros**; der Pegel des Outro-Abschnitts ändert sich dadurch nicht
+  (−26,1 dB mit Bett wie ohne). **Die elf Ken- und zehn Strassman-Shorts sind
+  nach der alten Vorgabe gebaut** — ob sie nachgezogen werden, entscheidet er.
+  → betrifft: alle, die Shorts bauen
+
+---
+
 ## Ausgabe 41 — 11.11.2026, 15:54 Kapstadt · eine gescheiterte Mail ist meistens ein guter Satz in einer falschen Architektur
 
 - **Alte Kaltmails sind Material, keine Altlast.** Zwei Erstanschreiben vom

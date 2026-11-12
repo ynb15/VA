@@ -6,6 +6,187 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 2026-11-11 (nachts) — dritte Musikansage, dritte Variante
+
+- **Er hat jetzt dreimal etwas anderes zum Ende des Betts gesagt, und jedes
+  Mal war es fuer genau dieses Stueck gemeint.**
+  22.10., AI 2027: *„dass er es nicht vorm Ende aufhoert."*
+  26.10., Safety: *„bitte in this shirt unterlegen aber vor dem Outro
+  aufhoeren."*
+  11.11., beide Ken-Shorts: *„bei beiden soll die Musik laenger laufen und
+  dann mit dem Outro ausfaden."*
+  **Das ist die dritte Variante, und sie bestaetigt die Regel vom 26.10.:
+  bei Musik wird nicht aus dem vorigen Short geschlossen, sondern gefragt.**
+  Technisch sind es drei Zeilen derselben Kette: `atrim` setzt das Ende,
+  `afade=t=out` liegt davor, am Hauptteil-Ende oder ueber dem Outro.
+  Fuer „mit dem Outro ausfaden": `atrim=0:<gesamt>` und
+  `afade=t=out:st=<hauptteil-ende>:d=<outrolaenge>`.
+  → betrifft: alle Content-Agenten
+- **Ein Bett unter dem Outro aendert dessen Gesamtpegel nicht.** Gemessen am
+  Outro-Abschnitt beider Shorts: **-26,1 dB mit Bett wie ohne**. Der eigene
+  Ton des Outros bestimmt den Pegel, das Bett liegt klar darunter und wird
+  vom `sidechaincompress` zusaetzlich weggedrueckt. **Die Sorge, das Bett
+  koenne mit dem Outro kollidieren, ist messbar unbegruendet** — hoerbar
+  bleibt es trotzdem, die Subtraktion zeigt es durchgehend bis zum letzten
+  Bild.
+  → betrifft: content-*
+
+## 2026-11-11 (spaet) — Blickrichtung bekommt den Platz, nicht der Hinterkopf
+
+- **„Passt der Kopf in den Kasten" ist die falsche Frage; richtig ist, auf
+  welcher Seite die Luft liegt.** Sein Befund: *„Sein Kopf ist viel zu weit
+  links. Der ist gar nicht voll drin im Bild."* Gemessen an 13 Bildern:
+  Kens Kopf reicht von **x 853 bis 1267**, der Kasten stand bei **x 836** —
+  also **17 Pixel links**, 177 rechts. Technisch war nichts angeschnitten.
+  Aber er schaut nach links, und 17 px Blickraum lesen sich als
+  angeschnitten. Neu x 700: 153 links, 41 rechts.
+  **Regel: bei einem Profil bekommt die Blickrichtung den Platz, der
+  Hinterkopf darf eng sitzen. Mindestens ein Viertel der Kastenbreite vor
+  dem Gesicht.**
+  → betrifft: alle Content-Agenten
+- **Eine Anekdote, die im Gespraech traegt, traegt im Short nicht.** Der
+  Wasserbueffel-Witz am Anfang von Kens Antwort ist im Podcast ein
+  Rueckbezug auf etwas Frueheres und funktioniert dort; im Short steht er
+  ohne das Frueher und kostet 25 s. Sein Wort: *„die ueberhaupt gar keine
+  Substanz hat in einem Short."* **Rueckbezuege auf frueher in derselben
+  Folge gehoeren in einem Short zu den ersten Streichkandidaten** — genau
+  wie „on your show" im Ubuntu-Short zwei Stunden vorher. Zweimal
+  derselbe Fehler an einem Tag.
+  → betrifft: content-*, alle
+- **Zweimal hintereinander habe ich den Schluss seiner Antwort zu frueh
+  gesetzt.** Fassung 1 endete auf „all of it is in relation to others",
+  Fassung 2 geht 21 s weiter bis „inspire others to do the same" — und
+  erst dort kommt seine naechste Frage. **Der Endpunkt ist nicht das erste
+  gute Satzende, sondern das letzte vor der naechsten Frage.** Die Regel
+  steht seit dem 22.10. in `meaningful-serie.md`; ich habe sie zweimal
+  nicht angewandt.
+  → betrifft: content-*, alle
+- **Ein Kontaktabzug mit 150-px-Feldern taugt nicht, um einen Kamerawechsel
+  zu erkennen.** Ich hatte die Schnittkante dadurch erst auf Bild 314
+  gelesen, bei 240 px war klar: Bild 313. **Solche Pruefungen auf
+  mindestens 240 px, lieber in Gruppen von vier bis sechs Bildern statt
+  zwoelf.**
+  → betrifft: content-shorts-2
+
+## 2026-11-11 (abends) — `-ss` taugt nicht fuer ein einzelnes Bild
+
+- **Ich habe heute frueh aus einer unzuverlaessigen Pruefung eine Regel
+  abgeleitet, und die Regel war falsch.** Aus `ffmpeg -ss <zeit>
+  -frames:v 1` hatte ich geschlossen, `select='gt(scene,…)'` melde die
+  Schnittkante ein Bild zu spaet, und alle Grenzen vorgezogen. Nachgezaehlt
+  **nach Bildnummer** liegen die vier Kanten des Meaningful-Shorts bei Bild
+  115 · 258 · 952 · 1158 — **genau** den Werten, die die Erkennung ohne
+  `-ss` gemeldet hatte. **Die Erkennung war exakt; die Stichprobe war es
+  nicht.** `-ss` trifft beim Einzelbildgriff nicht verlaesslich das
+  angeforderte Bild.
+  **Richtig:** `-vf "select='between(n,A,B)'" -vsync 0` und nach Bildnummer
+  zaehlen. Und: Szenenerkennung **am Vorlagenband ohne `-ss`** laufen lassen,
+  dann stimmen die Zeiten.
+  → betrifft: alle Content-Agenten
+- **Und die Lehre ueber den Fall hinaus: eine Messung, die eine andere
+  Messung widerlegt, ist erst dann die bessere, wenn ihr Verfahren selbst
+  geprueft ist.** Ich hatte die Szenenerkennung fuer falsch erklaert, weil
+  eine zweite Methode etwas anderes sagte — ohne zu pruefen, ob die zweite
+  Methode ueberhaupt taugt. Das hat drei Durchlaeufe gekostet und haette
+  einen Fehler ins Short gebracht, den es ohne mich nicht gegeben haette.
+  **Das Ubuntu-Short vom selben Tag ist nach der verlaesslichen Methode
+  nachgeprueft** (Bilder 46–53 ueber die Naht): sauber.
+  → betrifft: content-*, alle
+- **Ein Gast hat in der Totale und in seiner eigenen Kamera verschiedene
+  x-Positionen, und zwar weit auseinander.** Ken steht in der Totale bei
+  **x ≈ 1660**, in seiner Nahaufnahme bei **x ≈ 1140** — 520 px Unterschied.
+  Der uebernommene Totale-Kasten zeigte in der Nahaufnahme nur seinen
+  Hinterkopf. **Jede Kamera bekommt ihre eigene Messung, auch wenn dieselbe
+  Person darin steht.**
+  → betrifft: alle Content-Agenten
+- **Die Meaningful-Antwort von Ken Stern ist 22 s laenger als dokumentiert.**
+  `video/meaningful-serie.md` fuehrt sie als 32,7 s (Master 6150,1–6189,3),
+  Ende auf „being surrounded by others" — das ist mitten im Gedanken.
+  Tatsaechlich laeuft sie bis **6211,3** und endet auf **„All of it is in
+  relation to others."** Danach noch 20 s bis zur naechsten Frage.
+  **Ein dokumentierter Endpunkt ersetzt nicht das Hoeren bis zur naechsten
+  Frage** — die Regel aus `meaningful-serie.md` („bis zur naechsten Frage,
+  dort auf dem letzten Satzende") war richtig, nur nicht angewandt.
+  → betrifft: content-vlog, content-*, alle
+
+## 2026-11-11 (spaeter) — die Szenenerkennung lag ein Bild daneben
+
+- **`select='gt(scene,…)'` auf einem mit `-ss` gesuchten Eingang meldet die
+  Schnittkante ein Bild zu spaet.** Gemeldet 3928,60 und 3995,60; die Bilder
+  bei **3928,5667** und **3995,5667** gehoeren schon zur naechsten Kamera.
+  Ursache ist der Zeitstempel-Versatz nach dem Suchen, nicht der Filter.
+  **Folge, wenn man es nicht merkt:** das letzte Bild meines ersten Stuecks
+  war die Totale, mit dem Kasten der Nahaufnahme beschnitten — also Tisch,
+  Laptop und Dosen, kein Mensch. Ein Bild lang, mitten im Short. Genau der
+  Fehler, den er am 26.10. als „minimaler glitch" reklamiert hat.
+  **Regel: eine mit `-ss` gemessene Schnittkante wird vor Gebrauch an
+  Einzelbildern geprueft, und die Stuecklaenge wird mit `-frames:v` auf die
+  Bildzahl festgenagelt, nicht mit `-t` auf eine Sekundenzahl.** `-t` rundet
+  je nach Startpunkt auf ein Bild mehr.
+  → betrifft: alle Content-Agenten
+- **Gefunden hat es das Auge, nicht die Messung.** Die Abnahme lief sauber
+  durch, die Laengen stimmten auf die Millisekunde, v und a waren gleich.
+  Sichtbar wurde es erst auf einem Kontaktabzug von acht Einzelbildern ueber
+  die Naht. **Nach jedem Schnitt Einzelbilder ueber die Naht ansehen bleibt
+  Pflicht, auch wenn alle Zahlen stimmen.**
+  → betrifft: alle Content-Agenten
+- **Eine Korrektur, die eine Modellschwaeche ausgleicht, gilt nur fuer genau
+  die Schnittfassung, an der sie gemessen wurde.** `medium` verschluckte an
+  der ersten Schnittfassung das Wort „relationships"; ich hatte es ueber eine
+  Klammer eingesetzt. An der endgueltigen Fassung — 0,3 s anders geschnitten
+  — schreibt dasselbe Modell es von selbst, und im Bild stand
+  **„THROUGH OUR RELATIONSHIPS RELATIONSHIPS"**. **Nach jedem Neuschnitt
+  gehoert jede solche Korrektur nachgeprueft**, anders als Namens- und
+  Schreibkorrekturen, die stehen bleiben.
+  → betrifft: content-*, alle
+- **Khoi und San einzeln nennen, nicht „Khoisan".** Whisper schreibt „Koi"
+  und „Sun tribes", weil es so klingt. Richtig sind **Khoi** (Khoikhoi) und
+  **San** — zwei Voelker. Er nennt sie einzeln, und das ist auch sachlich
+  die bessere Form: der Sammelbegriff stammt aus der Kolonialzeit und wurde
+  2001 in Windhoek von San-Vertretern ausdruecklich abgelehnt.
+  → betrifft: alle Content-Agenten
+
+## 2026-11-11 — eine Stelle in 1:45 finden, ohne die Datei zu durchsuchen
+
+- **Sein Vorbereitungsdokument im Drive-Ordner der Folge sagt, wo die Stelle
+  liegt — das ist der billigste Sucheinstieg, den es gibt.** Im Doc
+  `00 YNB Podcast: Ken Stern` steht unter *Timestamps* woertlich
+  **„1:05:00 Short: Ubuntu"**, daneben Dinge wie „5:14: edit out" und
+  „57:12 - 1:06:00 raeuspern edit". Gefunden ohne das 823-KB-Dokument zu
+  oeffnen: `search_files` mit
+  `fullText contains 'Ubuntu' and parentId = '<Ordner>'` liefert einen
+  Ausschnitt, der das ganze Kapitel enthaelt. **Vor jedem Blindflug durch
+  einen Master gehoert diese eine Suche.** Danach reichte ein Byte-Fenster
+  von **1141 MB statt 16,8 GB**.
+  → betrifft: alle Content-Agenten
+- **Ein langes Transkriptionsfenster hoert eine kurze, leise Stelle
+  schlechter als ein Ausschnitt von sechs Sekunden.** `medium` ueber 280 s
+  schrieb Kens Antwort als *„I don't remember the definition, but I remember
+  liking it when you said it"*. Vier andere Durchlaeufe — `medium` am
+  gedehnten Schnitt, `large-v3` bei 1,0 · 0,7 · 0,55 am 6-Sekunden-Ausschnitt
+  — sagen uebereinstimmend *„I don't remember this, but I remember liking
+  when you said it"*. **Der Ueberblickslauf taugt zum Finden, nicht zum
+  Zitieren; wer woertlich wiedergibt, schneidet die Stelle heraus und
+  transkribiert sie einzeln.**
+  → betrifft: content-*, alle
+- **Das Verlangsamen hat zum zweiten Mal eine eingebrannte Zeile gerettet,
+  diesmal bei ganz normalem Englisch.** „most people misinterpret it" klingt
+  bei Sprechtempo wie „misinterpreted", und **beide** Modelle schrieben das
+  auch — erst bei 0,7- und 0,55-facher Geschwindigkeit hoert `large-v3`
+  zweimal „misinterpret it", und nur das ergibt den Satz. **Die Regel vom
+  05.11. galt fuer Fremdsprachiges; sie gilt auch fuer verschliffene
+  englische Endungen.** Pruefzeichen: wenn die Transkription grammatisch
+  schief ist, ist meist sie falsch und nicht der Sprecher.
+  → betrifft: alle Content-Agenten
+- **Wenn in einer Totale zwei Sprecher 1400 px auseinandersitzen, folgt der
+  Kasten dem Sprecher.** Ein 9:16-Ausschnitt ist 608 px breit, die beiden
+  stehen bei x 260 und x 1660 — einer von beiden ist immer draussen. Statt
+  die Totale wegzuwerfen oder einen stumm im Bild zu lassen: zwei Kaesten
+  innerhalb derselben Einstellung, geschnitten am Sprecherwechsel
+  (4,7 s auf Ken, 1,9 s auf ihn). **Beide ueber der Halbsekundengrenze vom
+  26.10., sonst gilt die wieder.**
+  → betrifft: alle Content-Agenten
+
 ## 2026-11-05 (nachmittags) — die ab-Sekunde des Betts, und ein Beleg fuer die Musikschwelle
 
 - **Seine Regel „den Inhalt des Songs vorziehen" stand seit dem 22.10. beim

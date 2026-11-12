@@ -9275,3 +9275,25 @@ auf `content-vlog` und zwei Thumbnails auf `thumbnails`, während ich fünf Tage
 einer Folge verteilt sich über drei Zweige, und der zuständige ist nicht
 immer dabei.** Der Einzeiler dafür:
 `for b in $(git branch -r | grep origin/claude); do git ls-tree -r --name-only $b | grep -i <name>; done`
+
+## DER GENERATOR IST GEFÄHRLICH — 12.11.2026
+
+`bin/kalender-bauen.py` **überschreibt `plan/kalender.md` vollständig.** Beim
+Lauf am 12.11. sind **368 Zeilen** verschwunden: die ganze handgepflegte
+Zustandsspalte und jeder angehängte Abschnitt. Aus `git` sofort
+wiederhergestellt, nichts verloren.
+
+**Die Regel „den Kalender nie von Hand ändern, er wird erzeugt" ist
+unvollständig.** Richtig ist:
+1. **Termine** gehören in den Generator, nie in die Datei.
+2. **Der Generator läuft nie blind in die Datei.** Ausgabe in eine
+   Vergleichsdatei, Tagestabellen gegeneinander halten, **nur die geänderten
+   Zeilen** übernehmen.
+3. **Zustandsspalte und angehängte Abschnitte sind Handarbeit** und überleben
+   keinen Generatorlauf.
+
+**Dazu: die Folgenliste stand an zwei Orten** — in `bin/kalender-bauen.py` und
+noch einmal in `bin/plan-pruefen.py`. Ken Stern im einen einzutragen reichte
+nicht; die Plankontrolle meldete „keine Fristen in den nächsten drei Tagen",
+während T−2 am Folgetag fällig war. **Beim Eintragen einer Folge immer beide
+Dateien.** (Dasselbe Muster wie bei der Team-Liste am 22.10.)

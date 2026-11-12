@@ -15,6 +15,7 @@ PODCASTS = {
     datetime.date(2026, 10, 25): ("Scott Aaronson",  "21.08.2026"),
     datetime.date(2026, 10, 31): ("Kyle Kingsbury",  "31.08.2026"),
     datetime.date(2026, 11, 13): ("Rick Strassman",  "18.09.2026"),
+    datetime.date(2026, 11, 15): ("Ken Stern",       "14.09.2026"),
     datetime.date(2026, 11, 27): ("Matt Defina",     "04.09.2026"),
     datetime.date(2026, 12,  4): ("Marian Goodell",  "06.10.2026"),
 }
