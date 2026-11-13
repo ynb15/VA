@@ -1,0 +1,137 @@
+# Ken Stern — seine ehrliche Meinung zu Trump · Fassung 6 (51,9 s · Hauptteil 48,1 s + Outro 3,8 s)
+# Rohzeit 0:53:23,30–0:54:30,40, abzueglich drei Stuecke · Tempo 1,1 · mit „Mom's Got Work"
+#
+# Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
+# Was raus soll: Zeile loeschen oder die Nummer nennen.
+#
+  1  [00:00.00–00:03.44]  WE'RE LED BY A GUY WE'RE LED IT'S NOT THE RIGHT TERM THE PRESIDENT IS
+  2  [00:03.44–00:04.96]  A GUY WHO
+  3  [00:05.60–00:09.69]  IS THE EMBODIMENT OF POLITICAL POLARIZATION WHO LIVES TO DEMONIZE OTHERS WHO GETS VALUE
+  4  [00:09.69–00:15.14]  AND STRENGTH AND ENERGY FROM EVERYTHING I SORT OF DETEST ABOUT AMERICAN POLITICS
+  5  [00:15.62–00:20.67]  NOT LISTENING AND DEMONIZING THE OTHER SIDE WHEN I WROTE THE BOOK IN 2016
+  6  [00:20.67–00:25.62]  I THOUGHT WE WERE REACHING SORT OF THE PEAK OF POLARIZATION AND LITTLE DID
+  7  [00:25.62–00:29.09]  I KNOW THAT EVERYTHING HAS GOTTEN WORSE AND WORSE AND SPIRALED WHEN I TALK
+  8  [00:29.09–00:29.60]  ABOUT POLITICS
+  9  [00:30.04–00:33.34]  I TALK ABOUT WHAT POLARIZATION
+ 10  [00:33.95–00:40.20]  AND DEMONIZATION IS DOING TO US AND WHAT IT IS WRECKED ON AMERICAN SOCIETY
+ 11  [00:40.47–00:42.73]  AND HOW TO THINK ABOUT PUTTING THAT BACK
+ 12  [00:43.49–00:47.33]  HOPEFULLY ELECTIONS WILL STEP US AWAY FROM I THINK A PRECIPICE THAT IS VERY
+ 13  [00:47.33–00:47.73]  DANGEROUS
+
+# ══════════════════════════════════════════════════════════════════
+# DIE SCHRIFT — gefunden, und der Grund ist peinlich
+# ══════════════════════════════════════════════════════════════════
+# Du hattest dreimal recht und ich habe dreimal am falschen Ende gesucht.
+#
+# Die Information lag genau da, wo Du gesagt hast. Auf dem Zweig
+# `claude/content-assistant` liegt `video/preset-ynb.md`: Isabelles
+# Preset-Ordner, den Du am 21.10. uebergeben hast — „ist jetzt der Filter
+# und die Schrift, die wir bisher fuer meine Shorts verwendet haben".
+# Und in `claude/content-gastauftritte/LERNEN.md` Zeile 54 steht seit dem
+# 21.10. woertlich: „Schrift Inter Black (nicht DejaVu Sans Bold) ·
+# Groesse 82 · Gelb #F9F13A · Logo 28 % breit auf Hoehe 0,87 ·
+# Gradation entsaettigt-kuehl (nicht warm)".
+#
+# WARUM ICH ES NICHT HATTE: mein Zweig trug eine Kopie von
+# `shorts-render.py` vom Stand VOR dem 21.10. — 1271 Zeilen statt 1608.
+# Die aktuelle Fassung hat das Preset fest eingebaut: den Ordner
+# `video/fonts/` mit Inter-Black.otf, Groesse 82, Dein Gelb, Logo 28 %,
+# und `--look preset`. Meine alte Kopie kannte nichts davon und hatte
+# DejaVu Sans als Festwert.
+#
+# Und — das ist der eigentliche Fehler — ich habe drei Runden lang an
+# Deinen fertigen Shorts GEMESSEN, statt nach der Quelldatei zu suchen.
+# In genau dem LERNEN-Eintrag, den ich nicht gelesen habe, steht die
+# Regel dazu: „an Ausgabebildern abgelesene Stilwerte sind ein Notbehelf,
+# bis die Quelldatei da ist. Erst nach der Vorlage fragen, dann messen."
+#
+# WAS DIE SCHRIFT SO SCHWER MACHT, und warum keine installierte Schrift
+# gepasst hat: das Preset nimmt Inter Black als Ersatz fuer Eveleth (die
+# CapCut-Schrift, die sich nicht exportieren laesst) und zieht sie auf
+# 112 % Breite plus 2 px Strich in der Textfarbe, um auf Eveleth-Gewicht
+# zu kommen. Das bekommt man durch Nachmessen nie heraus.
+#
+# JETZT GEMESSEN, Wort „OTHERS", das in beiden Shorts vorkommt:
+#                     Kasten    Strichstaerke   Gelbton          Zeile
+#   Meaningful (gut)  313x54    0,667           RGB(248,240,57)  1154
+#   Fassung 2 (DejaVu) 318x54   0,458           RGB(253,211,46)  1154
+#   Fassung 3 (Inter)  290x52   0,562           RGB(246,239,56)  1158
+#   FASSUNG 4         312x54    0,665           RGB(248,240,57)  1154
+#   Uebereinstimmung der Buchstabenmaske: 0,945. Logo 267 px wie Meaningful.
+#
+# Dazu: der Look laeuft jetzt auf `--look preset` (entsaettigt-kuehl),
+# nicht mehr auf dem warmen. Auch das stand im Preset und war bei mir
+# falsch.
+#
+# OFFEN, und nur von Dir zu loesen: `luts/ynb_look.png` fehlt weiter. Der
+# Renderer schreibt das selbst in die Ausgabe („Look: Annaeherung, LUT
+# fehlt") und nimmt die Annaeherung aus Deinem Preset. In
+# `video/preset-ynb.md` steht die 5-Minuten-Anleitung, wie Du sie in
+# CapCut erzeugst. Mit Eveleth als Datei in `video/fonts/` entfaellt
+# ausserdem das Nachziehen und die Schrift waere exakt Deine.
+
+# ══════════════════════════════════════════════════════════════════
+# DIE MUSIK — vierter Anlauf, und jetzt weiss ich, warum
+# ══════════════════════════════════════════════════════════════════
+# Fassung 5 war breitbandig LAUTER als Fassung 4 (-42,2 statt -44,1 dB) und
+# klang trotzdem leiser. Grund: ich habe den falschen Pegel gemessen.
+# „Mom's Got Work" ist ein basslastiger Titel, „In This Shirt" nicht. Mein
+# Angleich ueber den Breitbandpegel hat die ganze Energie in den Bass
+# gesteckt — und Bass hoert man unter einer Stimme nicht, auf einem
+# Telefonlautsprecher schon gar nicht.
+#
+# Bett nach Frequenzbaendern, Hauptteil:
+#                    <300 Hz   300 Hz-2 kHz   2-8 kHz
+#   Ubuntu              22,8       19,8          4,5
+#   Meaningful          23,4       20,4          4,4
+#   Aging               24,6       21,6          7,2
+#   Fassung 4           24,5       14,9         -1,6
+#   Fassung 5           27,3       16,2         -2,7   <- im Bass lauter,
+#                                                         oben 10 dB leiser
+#   FASSUNG 6           24,5       23,0          7,8
+#
+# Im Bass war mein Bett die ganze Zeit lauter als Deine. In den beiden
+# Baendern, die man hoert, lag es 5 bis 10 dB darunter. Das ist, was Du
+# gehoert hast, und meine Messung hat es verdeckt statt gezeigt.
+#
+# WAS ICH GEMACHT HABE: das Bett klingt jetzt wie ein Bett und nicht wie
+# ein Subwoofer — Hochpass bei 80 Hz, Bass ab 300 Hz um 12 dB abgesenkt,
+# Hoehen ab 3 kHz um 7 dB angehoben, dann der Pegel so gesetzt, dass alle
+# drei Baender auf dem Wert von „Aging" liegen, Deinem lautesten
+# abgenommenen Short. Im hoerbaren Band sind das +6,8 dB (300 Hz-2 kHz)
+# und +9,9 dB (2-8 kHz) gegenueber Fassung 5.
+#
+# Verlauf im Band 2-8 kHz, je 4 s:
+#   Aging      5  4 -1  5  6 -1  7  5  6  7  9
+#   FASSUNG 6  7  2  6 10  5  6 10  6  8 15  7
+# Kein Loch, nirgends unter Aging.
+#
+# Bett ab 0:03,0 des Titels (gleichmaessigstes 52-s-Fenster, Spanne 3,0 dB),
+# endet bei 0:54,9 — vor der ruhigen Stelle und weit vor dem Song-Outro ab
+# 1:41. Ausblende 3,8 s ab 48,13 s ueber dem Outro, Absenkung unter der
+# Stimme mit Deiner Einstellung vom 21.10. (ratio 4, release 250).
+# Spitze -4,8 dB, Lautheit Hauptteil -29,8 LUFS.
+# Ohne Musik: „YNB Podcast Ken Stern Trump.mp4" im Repo.
+
+# ══════════════════════════════════════════════════════════════════
+# UNVERAENDERT
+# ══════════════════════════════════════════════════════════════════
+# Einstieg auf „WE'RE LED BY A GUY" (roh 0:53:23,30). Zeilenhoehe 1140.
+# Drei Stuecke raus, zusammen 14,2 s:
+#   1) bei 00:18.9 — 4,4 s  „So I'm, you know, my views are now, …"
+#   2) bei 00:28.7 — 5,1 s  „So I think my concerns," + 3,2 s Pause
+#   3) bei 00:43.4 — 4,6 s  „And hopefully," + 3,4 s Pause
+# Holperer in Zeile 10 steht noch drin: „and what it is wrecked on
+#   American society" — so gesagt, mit zwei Denkpausen.
+# Aufbau: 0:00-0:22.7 Ken Nah (Kamera 1) · 0:22.7-0:28.7 Totale ·
+#   0:28.7-0:48.1 Ken Nah (Kamera 2). Zwei Kaesten, 648 und 548.
+# 13 statt 11 Zeilen, weil das Preset die Zeile auf 72 % der Bildbreite
+#   begrenzt (777 px statt 1000) und laengere Dreier darum teilt.
+#
+# ABNAHME (gemessen)
+#   1080x1920 · 48 kHz · 51,9 s · Outro da · 62 Untertitel · Ortscheck sauber
+#   Hauptteil -29,8 LUFS — gleich mit Ubuntu und Meaningful. Spitze -4,8 dB.
+#   „Kein Musikbett" meldet FEHLER bei -44,2 dB — das ist die Musik.
+#   Ohne Musik: alle Pruefungen bestanden (-77,2 dB).
+#
+# NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.
