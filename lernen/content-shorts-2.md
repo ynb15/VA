@@ -6,6 +6,47 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Ein Musikbett wird in Bändern gemessen, nicht breitbandig (13.11.)
+
+Fassung 5 war breitbandig **lauter** als Fassung 4 (−42,2 statt −44,1 dB)
+und klang trotzdem leiser. *„Jetzt ist die Musik noch leiser?!"*
+
+Bett nach Frequenzbändern, Hauptteil:
+
+| | <300 Hz | 300 Hz–2 kHz | 2–8 kHz |
+|---|---|---|---|
+| Ubuntu | 22,8 | 19,8 | 4,5 |
+| Meaningful | 23,4 | 20,4 | 4,4 |
+| Aging | 24,6 | 21,6 | 7,2 |
+| Fassung 4 | 24,5 | 14,9 | −1,6 |
+| Fassung 5 | **27,3** | 16,2 | **−2,7** |
+| Fassung 6 | 24,5 | 23,0 | 7,8 |
+
+**Im Bass war mein Bett lauter als seine, in den hörbaren Bändern 5 bis
+10 dB leiser.** „Mom's Got Work" ist basslastig, „In This Shirt" nicht —
+mein Angleich über den Breitbandpegel hat die ganze Energie dorthin
+gesteckt, wo man sie unter einer Stimme nicht hört und ein
+Telefonlautsprecher sie gar nicht wiedergibt. Jede meiner drei Messungen
+war richtig und jede hat am Ohr vorbeigemessen.
+
+Behoben, indem das Bett wie ein Bett behandelt wird statt wie eine Kopie
+des Titels: Hochpass 80 Hz, Bass ab 300 Hz −12 dB, Höhen ab 3 kHz +7 dB,
+dann der Pegel so, dass **alle drei Bänder** auf dem Wert des lautesten
+abgenommenen Shorts liegen.
+
+→ betrifft: jedes Musikbett. **Den Bettpegel in drei Bändern messen
+(<300 Hz, 300 Hz–2 kHz, 2–8 kHz) und jedes einzeln gegen das zuletzt
+abgenommene Short halten.** Ein Breitbandwert sagt nichts, sobald zwei
+Stücke verschieden spektral sind. Und ein Bett darf entzerrt werden —
+Bass raus, Höhen rauf — statt es nur lauter zu drehen.
+
+→ **Und das Muster dahinter, viertes Mal heute:** ich habe viermal
+nachgemessen und viermal die falsche Größe gemessen. Logobreite statt
+Schriftart. Einsatzpunkt statt Fensterende. Mittelwert statt Verlauf.
+Breitband statt Bänder. **Vor der nächsten Messung zuerst die Frage: ist
+das die Größe, die er hört?**
+
+
 ## Bettpegel: am abgenommenen Short messen, nicht aus einer Formel rechnen (13.11.)
 
 *„Musik wieder mal viel zu leise, shaking my head."*

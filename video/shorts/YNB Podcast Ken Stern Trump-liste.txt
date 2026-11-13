@@ -1,4 +1,4 @@
-# Ken Stern — seine ehrliche Meinung zu Trump · Fassung 5 (51,9 s · Hauptteil 48,1 s + Outro 3,8 s)
+# Ken Stern — seine ehrliche Meinung zu Trump · Fassung 6 (51,9 s · Hauptteil 48,1 s + Outro 3,8 s)
 # Rohzeit 0:53:23,30–0:54:30,40, abzueglich drei Stuecke · Tempo 1,1 · mit „Mom's Got Work"
 #
 # Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
@@ -71,48 +71,46 @@
 # ausserdem das Nachziehen und die Schrift waere exakt Deine.
 
 # ══════════════════════════════════════════════════════════════════
-# DIE MUSIK — jetzt am Verlauf gemessen, nicht an einer Formel
+# DIE MUSIK — vierter Anlauf, und jetzt weiss ich, warum
 # ══════════════════════════════════════════════════════════════════
-# Dritter Anlauf. Was diesmal anders ist: ich habe das Bett in Deinen
-# ABGENOMMENEN Shorts freigelegt (Musikfassung minus musikfreie Fassung,
-# beide liegen im Repo) und meines dagegen gehalten. Das haette ich beim
-# ersten Mal tun sollen, statt mit „Stimme minus Bett minus 10 dB" zu
-# rechnen.
+# Fassung 5 war breitbandig LAUTER als Fassung 4 (-42,2 statt -44,1 dB) und
+# klang trotzdem leiser. Grund: ich habe den falschen Pegel gemessen.
+# „Mom's Got Work" ist ein basslastiger Titel, „In This Shirt" nicht. Mein
+# Angleich ueber den Breitbandpegel hat die ganze Energie in den Bass
+# gesteckt — und Bass hoert man unter einer Stimme nicht, auf einem
+# Telefonlautsprecher schon gar nicht.
 #
-# Bett-Pegel im fertigen Short, Hauptteil:
-#   Ubuntu           -45,4 dB
-#   Meaningful       -44,8 dB
-#   Aging            -43,4 dB
-#   Fassung 4        -44,1 dB  <- im Schnitt richtig, aber:
-#   FASSUNG 5        -42,2 dB
+# Bett nach Frequenzbaendern, Hauptteil:
+#                    <300 Hz   300 Hz-2 kHz   2-8 kHz
+#   Ubuntu              22,8       19,8          4,5
+#   Meaningful          23,4       20,4          4,4
+#   Aging               24,6       21,6          7,2
+#   Fassung 4           24,5       14,9         -1,6
+#   Fassung 5           27,3       16,2         -2,7   <- im Bass lauter,
+#                                                         oben 10 dB leiser
+#   FASSUNG 6           24,5       23,0          7,8
 #
-# Der Schnitt war nie das Problem. DER VERLAUF war es:
-#   Fassung 4, je 2 s:  -48 -48 -48 -51 -53 -53 -43 -42 -43 -42 -44 ...
-#   Fassung 5, je 2 s:  -45 -44 -42 -44 -43 -43 -43 -41 -43 -42 -43 ...
-# Die ersten zwoelf Sekunden lagen 8 bis 10 dB unter dem Rest — genau da,
-# wo Du auf Play drueckst. Das war die ruhige Stelle des Titels (0:55-1:00),
-# die ich sehenden Auges an den Anfang gelegt und in der Liste als „ein
-# Atmen, kein Loch" verharmlost hatte. War ein Loch.
+# Im Bass war mein Bett die ganze Zeit lauter als Deine. In den beiden
+# Baendern, die man hoert, lag es 5 bis 10 dB darunter. Das ist, was Du
+# gehoert hast, und meine Messung hat es verdeckt statt gezeigt.
 #
-# WAS ICH GEMACHT HABE: jedes moegliche 52-s-Fenster des Titels auf
-# Gleichmaessigkeit gemessen (RMS je Sekunde, Spanne zwischen leisestem und
-# mittlerem Punkt):
-#   ab 0:03  Spanne  3,0 dB   <- gewaehlt
-#   ab 0:48  Spanne 11,4 dB   <- Fassung 4
-# Das gleichmaessigste Fenster ist der ANFANG des Titels. Dass er dort
-# dunkler klingt (weniger Energie ueber 2 kHz), faellt bei einem Bett 42 dB
-# unter der Stimme nicht ins Gewicht — sein PEGEL faellt ins Gewicht.
-# Bett jetzt ab 0:03,0, endet bei 0:54,9, also vor der ruhigen Stelle und
-# weit vor dem Song-Outro ab 1:41.
+# WAS ICH GEMACHT HABE: das Bett klingt jetzt wie ein Bett und nicht wie
+# ein Subwoofer — Hochpass bei 80 Hz, Bass ab 300 Hz um 12 dB abgesenkt,
+# Hoehen ab 3 kHz um 7 dB angehoben, dann der Pegel so gesetzt, dass alle
+# drei Baender auf dem Wert von „Aging" liegen, Deinem lautesten
+# abgenommenen Short. Im hoerbaren Band sind das +6,8 dB (300 Hz-2 kHz)
+# und +9,9 dB (2-8 kHz) gegenueber Fassung 5.
 #
-# Und der Pegel liegt jetzt 1,2 dB ueber dem lautesten Deiner bisherigen
-# Shorts (Aging) und 3,2 dB ueber Ubuntu. Wenn es immer noch zu leise ist,
-# sag eine Zahl oder „nochmal 3 dB lauter" — das ist ein Durchlauf von
-# zwei Minuten, ohne neues Rendern.
+# Verlauf im Band 2-8 kHz, je 4 s:
+#   Aging      5  4 -1  5  6 -1  7  5  6  7  9
+#   FASSUNG 6  7  2  6 10  5  6 10  6  8 15  7
+# Kein Loch, nirgends unter Aging.
 #
-# Unveraendert: Ausblende 3,8 s ab 48,13 s, also ueber dem Outro, wie am
-# 11.11. angesagt. Absenkung unter der Stimme mit Deiner Einstellung vom
-# 21.10. (ratio 4, release 250).
+# Bett ab 0:03,0 des Titels (gleichmaessigstes 52-s-Fenster, Spanne 3,0 dB),
+# endet bei 0:54,9 — vor der ruhigen Stelle und weit vor dem Song-Outro ab
+# 1:41. Ausblende 3,8 s ab 48,13 s ueber dem Outro, Absenkung unter der
+# Stimme mit Deiner Einstellung vom 21.10. (ratio 4, release 250).
+# Spitze -4,8 dB, Lautheit Hauptteil -29,8 LUFS.
 # Ohne Musik: „YNB Podcast Ken Stern Trump.mp4" im Repo.
 
 # ══════════════════════════════════════════════════════════════════
@@ -133,7 +131,7 @@
 # ABNAHME (gemessen)
 #   1080x1920 · 48 kHz · 51,9 s · Outro da · 62 Untertitel · Ortscheck sauber
 #   Hauptteil -29,8 LUFS — gleich mit Ubuntu und Meaningful. Spitze -4,8 dB.
-#   „Kein Musikbett" meldet FEHLER bei -44,3 dB — das ist die Musik.
+#   „Kein Musikbett" meldet FEHLER bei -44,2 dB — das ist die Musik.
 #   Ohne Musik: alle Pruefungen bestanden (-77,2 dB).
 #
 # NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.
