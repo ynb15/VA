@@ -6,6 +6,437 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Ein Musikbett wird in Bändern gemessen, nicht breitbandig (13.11.)
+
+Fassung 5 war breitbandig **lauter** als Fassung 4 (−42,2 statt −44,1 dB)
+und klang trotzdem leiser. *„Jetzt ist die Musik noch leiser?!"*
+
+Bett nach Frequenzbändern, Hauptteil:
+
+| | <300 Hz | 300 Hz–2 kHz | 2–8 kHz |
+|---|---|---|---|
+| Ubuntu | 22,8 | 19,8 | 4,5 |
+| Meaningful | 23,4 | 20,4 | 4,4 |
+| Aging | 24,6 | 21,6 | 7,2 |
+| Fassung 4 | 24,5 | 14,9 | −1,6 |
+| Fassung 5 | **27,3** | 16,2 | **−2,7** |
+| Fassung 6 | 24,5 | 23,0 | 7,8 |
+
+**Im Bass war mein Bett lauter als seine, in den hörbaren Bändern 5 bis
+10 dB leiser.** „Mom's Got Work" ist basslastig, „In This Shirt" nicht —
+mein Angleich über den Breitbandpegel hat die ganze Energie dorthin
+gesteckt, wo man sie unter einer Stimme nicht hört und ein
+Telefonlautsprecher sie gar nicht wiedergibt. Jede meiner drei Messungen
+war richtig und jede hat am Ohr vorbeigemessen.
+
+Behoben, indem das Bett wie ein Bett behandelt wird statt wie eine Kopie
+des Titels: Hochpass 80 Hz, Bass ab 300 Hz −12 dB, Höhen ab 3 kHz +7 dB,
+dann der Pegel so, dass **alle drei Bänder** auf dem Wert des lautesten
+abgenommenen Shorts liegen.
+
+→ betrifft: jedes Musikbett. **Den Bettpegel in drei Bändern messen
+(<300 Hz, 300 Hz–2 kHz, 2–8 kHz) und jedes einzeln gegen das zuletzt
+abgenommene Short halten.** Ein Breitbandwert sagt nichts, sobald zwei
+Stücke verschieden spektral sind. Und ein Bett darf entzerrt werden —
+Bass raus, Höhen rauf — statt es nur lauter zu drehen.
+
+→ **Und das Muster dahinter, viertes Mal heute:** ich habe viermal
+nachgemessen und viermal die falsche Größe gemessen. Logobreite statt
+Schriftart. Einsatzpunkt statt Fensterende. Mittelwert statt Verlauf.
+Breitband statt Bänder. **Vor der nächsten Messung zuerst die Frage: ist
+das die Größe, die er hört?**
+
+
+## Bettpegel: am abgenommenen Short messen, nicht aus einer Formel rechnen (13.11.)
+
+*„Musik wieder mal viel zu leise, shaking my head."*
+
+Ich hatte den Bettpegel dreimal aus derselben Formel genommen — `G = Stimme
+− Bett − 10 dB`, seine Ansage vom 21.10. Was ich nie getan habe: das Bett in
+seinen **abgenommenen** Shorts freilegen und meines dagegenhalten. Das geht
+in zwei Minuten, weil Musikfassung und musikfreie Fassung beide im Repo
+liegen: `Musikfassung − musikfreie Fassung` ergibt das Bett allein.
+
+| Bett im Hauptteil | |
+|---|---|
+| Ubuntu | −45,4 dB |
+| Meaningful | −44,8 dB |
+| Aging | −43,4 dB |
+| Fassung 4 | −44,1 dB |
+
+Der Mittelwert war die ganze Zeit richtig. **Der Verlauf war es nicht:**
+
+| je 2 s | | | | | | | | | | | |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Fassung 4 | −48 | −48 | −48 | −51 | −53 | −53 | −43 | −42 | −43 | −42 | −44 |
+| Fassung 5 | −45 | −44 | −42 | −44 | −43 | −43 | −43 | −41 | −43 | −42 | −43 |
+
+Die ersten zwölf Sekunden lagen 8 bis 10 dB unter dem Rest — genau dort, wo
+man auf Play drückt. **Und ich hatte es gewusst**: ich hatte die ruhige
+Stelle des Titels bewusst an den Anfang gelegt und in der Übergabeliste als
+*„ein Atmen, kein Loch"* verharmlost, statt sie zu messen.
+
+→ betrifft: jedes Musikbett. **Ein Mittelwert über 50 Sekunden verbirgt ein
+Loch von zwölf.** Nach dem Mischen den Bettpegel in 2-s-Schritten ausgeben
+und gegen das zuletzt abgenommene Short derselben Reihe halten — Verlauf
+gegen Verlauf, nicht Zahl gegen Zahl. Und: **wenn ich in einer Übergabe
+einen Nachteil kleinrede statt ihn zu messen, ist das die Stelle, an der die
+nächste Beanstandung kommt.**
+
+## Für ein Bett unter Sprache schlägt Gleichmäßigkeit die Brillanz (13.11.)
+
+Ich hatte den Einsatzpunkt zweimal nach der 2-kHz-Regel gewählt (wo das
+Stück „aufmacht") und beide Male ein Fenster erwischt, dessen Pegel
+schwankt. Gegenprobe: jedes mögliche 52-s-Fenster von „Mom's Got Work" auf
+Gleichmäßigkeit gemessen, RMS je Sekunde, Spanne zwischen leisestem und
+mittlerem Punkt:
+
+| Fenster | Spanne |
+|---|---|
+| ab 0:03 | **3,0 dB** |
+| ab 0:06 | 8,2 dB |
+| ab 0:48 | 11,4 dB |
+
+**Das gleichmäßigste Fenster ist der Anfang des Stücks** — genau der, den
+die 2-kHz-Regel ausschließt. Dass er dunkler klingt, fällt bei einem Bett
+42 dB unter der Stimme nicht ins Gewicht; sein Pegel fällt ins Gewicht.
+
+→ betrifft: jedes Musikbett. **Die 2-kHz-Regel gilt für die Wahl des
+Stücks, nicht für die Wahl des Fensters.** Das Fenster wird nach drei
+Schranken gewählt, in dieser Reihenfolge: (1) ganz im Körper des Stücks,
+(2) kleinste Pegelspanne, (3) dann erst Timbre.
+
+
+## Mein Zweig trug eine veraltete Kopie des geteilten Werkzeugs (13.11.)
+
+Drei Fassungen lang habe ich die falsche Schrift geliefert und zweimal
+behauptet, sie sei jetzt richtig. Seine Antwort: *„Frag die anderen
+Agenten. Die Information liegt schon lange überall."*
+
+Sie lag tatsächlich überall:
+
+- `claude/content-assistant:video/preset-ynb.md` — **Isabelles Preset**, das
+  er am 21.10. übergeben hat, mit allen sechs Stilwerten.
+- `claude/content-gastauftritte:LERNEN.md` Zeile 54 — seit dem 21.10.:
+  *„Schrift **Inter Black** (nicht DejaVu Sans Bold) · Größe **82** · Gelb
+  **#F9F13A** · Zeilenbreite 72 % · Logo 28 % auf Höhe 0,87 · Gradation
+  entsättigt-kühl (nicht warm)."*
+
+**Die Ursache: `video/shorts-render.py` auf meinem Zweig hatte 1271 Zeilen,
+die aktuelle Fassung auf `claude/content-assistant` hat 1608.** Meine Kopie
+war der Stand vor dem 21.10. Die aktuelle hat das Preset fest eingebaut —
+`video/fonts/Inter-Black.otf`, Größe 82, sein Gelb, Logo 28 %, `--look
+preset`. Meine alte Kopie hatte `FONT = "DejaVu Sans"` als Festwert und
+kannte `--look preset` nicht einmal.
+
+Und warum keine installierte Schrift gepasst hat: das Preset nimmt Inter
+Black als Ersatz für Eveleth und zieht sie auf **112 % Breite plus 2 px
+Strich** in der Textfarbe (`SCALE_X = 112`, `FETTER = 2`). Deshalb maß ich
+Füllgrad 0,667, den keine reine Schrift erreicht. **Durch Nachmessen ist das
+nicht zu finden.**
+
+Ergebnis nach dem Abgleich: Kasten 312 × 54 gegen 313 × 54, Füllgrad 0,665
+gegen 0,667, Gelb RGB(248,240,57) identisch, Übereinstimmung der
+Buchstabenmaske **0,945** (vorher 0,65).
+
+→ betrifft: alle Content-Agenten. **Ein geteiltes Werkzeug, das in meinem
+Zweig als Kopie liegt, ist kein geteiltes Werkzeug — es ist ein Abzug mit
+Verfallsdatum.** Vor jedem Lauf gegen den Besitzerzweig prüfen:
+`git log --oneline -1 origin/claude/content-assistant -- video/shorts-render.py`
+gegen den eigenen Stand, und bei Abweichung
+`git checkout origin/claude/content-assistant -- video/shorts-render.py`.
+Das gilt genauso für `fonts/`, `luts/` und `korrekturen.txt`.
+
+## „Erst nach der Vorlage fragen, dann messen" — die Regel stand da, ich habe gemessen (13.11.)
+
+Im selben LERNEN-Eintrag vom 21.10., den ich nicht gelesen habe, steht die
+Regel, die mir drei Fassungen erspart hätte:
+
+> *„An Ausgabebildern abgelesene Stilwerte sind ein **Notbehelf, bis die
+> Quelldatei da ist**. Erst nach der Vorlage fragen, dann messen — nicht
+> umgekehrt. Eine Messung am Ergebnis trifft das Ergebnis, nicht die
+> Absicht."*
+
+Ich habe genau das Gegenteil getan, und zwar immer gründlicher: Logobreite
+über weiße Pixel, Schriftgröße über die Versalhöhe, dann Strichstärke und
+Gelbton, dann 17 Schriftfamilien gegen eine Buchstabenmaske. Jede Messung
+war richtig. Alle zusammen haben die Absicht verfehlt, weil die Absicht in
+einer Datei stand.
+
+→ betrifft: alle. **Bevor ein Stilwert gemessen wird: `git grep` über alle
+Zweige nach der Quelle.** Ich hatte mir diese Regel nach dem
+ab_sekunde-Fehler selbst notiert (*„git grep über alle Zweige kostet fünf
+Sekunden"*) und sie beim zweiten Mal wieder nicht angewendet. Eine Regel,
+die man zweimal bricht, gehört nicht ins Lernfile, sondern in den ersten
+Handgriff jedes Auftrags.
+
+## Ein Musikbett braucht zwei Grenzen, nicht eine (13.11.)
+
+*„Man hört die letzten 10 Sekunden gefühlt gar nichts mehr von dem Song."*
+
+Ich hatte den **Einsatz** sauber gemessen (2-kHz-Sprung bei 1:00,75) und nie
+geprüft, wo das Fenster **endet**. 1:00,75 + 51,9 s = 1:52,68 — und „Mom's
+Got Work" hat ab **1:41** sein eigenes Outro, −19 dB auf −47 dB. Die letzten
+11 Sekunden lagen darauf, darüber noch meine eigene Ausblende.
+
+| Bettpegel im Short | 38 s | 42 s | 44 s | 46 s | 48 s | 50 s |
+|---|---|---|---|---|---|---|
+| ab 1:00,75 | −44 | −49 | −56 | −62 | −58 | −65 |
+| ab 0:48,50 | −42 | −44 | −44 | −41 | −45 | −49 |
+
+→ betrifft: jedes Musikbett. **Erst den Körper des Stücks bestimmen (Ende
+des Intros bis Anfang des Outros, am RMS über die ganze Länge), dann den
+Einsatz darin wählen — so, dass `Einsatz + Shortlänge` vor dem Outro
+liegt.** Eine ruhige Stelle des Stücks gehört an den Anfang des Shorts, die
+dichteste unter den Schluss.
+
+
+## Groesse gemessen, Schriftart nicht geprueft — und genau die war falsch (13.11.)
+
+Gestern hatte ich ihm geschrieben, die Schrift sei wieder richtig, weil
+Groesse (54 px Versalhoehe) und Zeilenhoehe (1140) am ausgelieferten
+Meaningful-Short nachgemessen waren. Seine Antwort: *„Und die Schrift ist
+immer noch die falsche. Was zur Hölle passiert hier?"*
+
+Am Wort „OTHERS", das in beiden Shorts vorkommt, auf die Pixel gemessen:
+
+| | Kasten | Strichstärke | Gelbton |
+|---|---|---|---|
+| Meaningful (akzeptiert) | 313 × 54 | **0,667** | RGB(248,240,57) |
+| Trump Fassung 2 | 318 × 54 | **0,458** | RGB(253,211,46) |
+
+**Gleiche Höhe, gleiche Breite, 43 % dünnere Striche.** Eine andere
+Schriftart. Ich hatte zwei Kennzahlen geprüft und die dritte — die Form —
+gar nicht angesehen, obwohl ein Blick auf die vergrößerte Maske sie sofort
+gezeigt hätte.
+
+→ betrifft: jeden Stilvergleich. **Zwei übereinstimmende Kennzahlen sind
+kein Beweis für Übereinstimmung.** Bei Schrift gehören drei Dinge geprüft:
+Versalhöhe, Strichstärke (Füllgrad der Maske) und Farbe. Und zwar an der
+vergrößerten Maske, nicht an Zahlen allein — `(R>205)&(G>160)&(B<100)` im
+Untertitelband, Bounding Box, Füllgrad, Median-RGB.
+
+## Der Look haengt an der Maschine, nicht am Code (13.11.)
+
+Im Renderer steht `FONT = "DejaVu Sans"`, seit dem ersten Commit am 19.10.
+unverändert. Trotzdem zeigen **alle** Shorts vor dem Trump-Short (Ubuntu,
+Meaningful, Aging, Craig, Aaronson) dieselbe schwere Grotesk mit Gelbton
+RGB(248,240,57) — und meine beiden Trump-Fassungen DejaVu Sans Bold mit
+RGB(253,211,46), dem **reinen Stilwert** der ASS-Datei.
+
+Erklärung: auf der alten Maschine war DejaVu Sans nicht installiert, libass
+hat auf eine schwere Grotesk ausgewichen, und **dieser Fallback ist der
+Look, den er abgenommen hat.** Mein Container wurde zwischen dem 11. und
+12.11. neu gebaut; seitdem ist DejaVu Sans da und der Renderer bekommt, was
+er anfordert. Der Look hat sich geändert, ohne dass jemand eine Einstellung
+geändert hat.
+
+Alle 17 installierten Familien gegen die Maske geprüft: bester Treffer
+**Inter Display Black** (IoU 0,78 gegen 0,65 für DejaVu). Kein Font auf
+dieser Maschine erreicht 0,667 Füllgrad — die Schrift der akzeptierten
+Shorts ist hier nicht mehr vorhanden.
+
+→ betrifft: alle Content-Agenten. **Ein Stilwert, der von installierten
+Schriften abhängt, ist nicht reproduzierbar, solange er nicht gepinnt ist.**
+Zwei Dinge gehören getan, beide bei Shorts I, dem das Werkzeug gehört:
+ein Schalter `--font`, und die Schriftdatei mit ins Repo statt auf die
+Maschine. Beschrieben, nicht gebaut — Fremdwerkzeug.
+Bis dahin: **vor jedem Rendern einen Probesatz gegen das zuletzt
+abgenommene Short desselben Kanals messen**, Form inbegriffen.
+
+## Ein Musikbett braucht zwei Grenzen, nicht eine (13.11.)
+
+*„du hast Mom's Got Work an der völlig falschen Stelle eingesetzt. Man hört
+die letzten 10 Sekunden gefühlt gar nichts mehr von dem Song."*
+
+Ich hatte den **Einsatz** sauber gemessen (Sprung der Energie über 2 kHz bei
+1:00,75) und nie geprüft, wo das Bettfenster **endet**. 1:00,75 + 51,9 s =
+1:52,68 — und „Mom's Got Work" hat ab **1:41** sein eigenes Outro, einen
+Abfall von −19 dB auf −47 dB. Die letzten 11 Sekunden lagen auf dem
+Ausklang des Songs, darüber noch meine eigene Ausblende. Doppelt leise.
+
+Bettpegel im fertigen Short, durch Subtraktion gemessen:
+
+| | 38 s | 42 s | 44 s | 46 s | 48 s | 50 s |
+|---|---|---|---|---|---|---|
+| ab 1:00,75 | −44 | −49 | −56 | −62 | −58 | −65 |
+| ab 0:48,50 | −42 | −45 | −44 | −41 | −45 | −50 |
+
+→ betrifft: jedes Musikbett. **Erst den Körper des Stücks bestimmen (Ende
+des Intros bis Anfang des Outros, am RMS über die ganze Länge), dann den
+Einsatz darin wählen — so, dass `Einsatz + Shortlänge` vor dem Outro
+liegt.** Und wenn das Stück eine ruhige Stelle hat: die gehört an den
+Anfang des Shorts, nie ans Ende. Die dichteste Stelle gehört unter den
+Schluss.
+
+
+## Die Standardwerte des Renderers sind nicht die Werte des Kanals (13.11.)
+
+Seine erste Reaktion auf das Trump-Short: *„ich bin schockiert darüber, wie
+groß plötzlich das Logo ist und wie du einfach die Schrift verändert hast.
+Das checke ich gar nicht."*
+
+Nachgemessen an den ausgelieferten Dateien:
+
+| | Logo sichtbar | „OTHERS" | Zeilenhöhe |
+|---|---|---|---|
+| Ubuntu | 281 px | 313 × 54 px | 1140 |
+| Meaningful | 267 px | 313 × 54 px | 1140 |
+| Aging | 281 px | — | 1140 |
+| **Trump, Fassung 1** | **481 px** | **294 × 49 px** | **1200** |
+
+Ursache: `shorts-render.py` hat `--logo-breite` **520** und
+`--schriftgroesse` **78** als Standard. Der Kanal läuft auf **300** und
+**84**. Bei den drei vorherigen Ken-Shorts hatte ich beide gesetzt. Beim
+Trump-Short habe ich den Aufruf aus der Dokumentation neu zusammengebaut —
+und **genau diese zwei Werte stehen in keiner Doku im Repo.** Sie lebten
+nur in der Befehlszeile, und die ist nirgends festgehalten.
+
+Das Logo war damit 1,7-mal so breit. Die Schrift war dabei nicht größer,
+sondern 7 % **kleiner** — was ihm auffiel, war das Logo; die Schrift wirkte
+durch das Logo und die 60 px tiefere Zeile mit verändert.
+
+→ betrifft: jedes Short. **Was in keiner Datei steht, existiert nicht —
+auch ein Schalter nicht.** Der vollständige Aufruf gehört in die
+Short-Dokumentation, nicht nur Tempo und Bettpegel. Ab sofort steht er in
+`video/ken-trump-short.md`, und vor jedem Rendern wird gegen das zuletzt
+abgenommene Short des Gastes **gemessen**, nicht erinnert: Logobreite über
+die weißen Pixel, Schriftgröße über die Höhe eines gelben Worts.
+
+Nebenbefund, der 84 bestätigt: die Umbruchgrenze des Renderers ist
+`max_em=11.8`, und 11,8 × 84 = 991 px füllt die nutzbare Zeilenbreite von
+1000 px (1080 − 2 × 40 Rand) genau aus. Bei 78 blieben 80 px leer. **Die
+Konstante ist auf 84 gerechnet.**
+
+## Eine Korrektur gilt nur für genau den Schnitt, an dem sie gemessen wurde — zum zweiten Mal (13.11.)
+
+Beim neuen Einstieg („we're led by a guy", 3,1 s später) hat `medium` am
+sonst identischen Ton **anders gehört**: aus „demon and demonizing those"
+wurde „demonizing others", aus „has gotten" wurde „had gotten". Zwei
+Korrekturen aus Fassung 1 griffen nicht mehr, zwei neue Fehler standen da.
+
+Der Grund ist nicht Zufall: Whisper arbeitet in Kontextfenstern, und ein um
+3,1 s verschobener Anfang verschiebt jedes Fenster.
+
+→ betrifft: jede Schnittänderung. **Nach JEDER Änderung am Schnitt den
+ganzen Untertiteltext neu lesen, nicht nur die geänderte Stelle.** Alte
+Korrekturen stehen lassen (sie greifen ins Leere) und die neuen danebenstellen,
+damit ein erneuter Lauf in beiden Varianten trifft.
+
+## Der Einsatzpunkt eines Musikstücks: an einem bekannten Stück eichen (13.11.)
+
+Für „Mom's Got Work" war der 2-kHz-Sprung nicht eindeutig — das Stück hat
+mehrere helle Fills (0:14, 0:26, 0:36), die jedes Mal wieder abfallen.
+
+Gelöst, indem ich **dieselbe Messung an „In This Shirt" gemacht habe**, wo
+der abgenommene Wert (0:23,25) bekannt ist. Dort zeigt sich die Form: eine
+Senke, dann ein Sprung, und danach ein Niveau, das **hält**. Dieselbe Form
+in „Mom's Got Work" liegt bei **1:00,75** — von 4,3 auf 13,8 dB in einem
+Schritt, danach 25–35 dB bis 1:50.
+
+→ betrifft: jedes neue Musikstück. **Nicht den größten Sprung nehmen,
+sondern den ersten, nach dem das Niveau hält — und die Schwelle dafür am
+zuletzt abgenommenen Stück eichen**, statt sie zu setzen.
+
+## Zeilenhöhe: ich habe mich in beide Richtungen verschätzt (13.11.)
+
+Gestern notiert: Kinn am Vollbild geschätzt → 135 px zu tief. Heute das
+Gegenstück: ich hatte das Kinn in Kamera 2 auf Ausgabe-y 1124 geschätzt und
+die Zeile deshalb auf 1200 gesetzt. **Am gerenderten Bild mit eingezeichneter
+Linie liegt es bei 1115**, und 1140 sitzt an der engsten Stelle 25 px darunter,
+auf dem Hals — wie bei allen anderen Ken-Shorts.
+
+→ betrifft: jede Zeilenhöhe. **Die Kanalhöhe gilt, bis das gerenderte Bild
+mit eingezeichneter Linie das Gegenteil zeigt.** Eine Abweichung vom
+Kanalstandard braucht einen Beleg, keine Schätzung — sie fällt ihm auf.
+
+
+## Das Kinn misst man am fertigen Ausschnitt, nicht am Vollbild (12.11.)
+
+Für das Trump-Short habe ich Kens Kinn im 960-px-Vollbild auf Quell-y 675
+geschätzt und daraus Ausgabe-y **1199** gerechnet — also „Zeilenhöhe 1140
+deckt sein Kinn ab, ich brauche 1290". Gerendert lag das Kinn bei **1012
+bis 1065**. Ich lag um 135 px daneben, in die falsche Richtung, und hätte
+die Schrift ohne Not 150 px zu tief gesetzt.
+
+Der Fehler: im Vollbild schätzt man die Kinnhöhe als Anteil eines
+540-px-Panels und multipliziert mit 1080/608 = 1,776. Zwei Schätzungen
+hintereinander, beide mit Vorzeichen.
+
+→ betrifft: jede Zeilenhöhe. **Den Kasten rendern, eine Linie auf der
+geplanten Höhe einzeichnen, hinsehen.** `crop=b:h:x:y,scale=1080:1920,
+drawbox=y=<lippe>` kostet drei Sekunden und ersetzt die Rechnung.
+
+Nachtrag: 1200 statt 1140 war dann doch richtig — aber wegen der ZWEITEN
+Kamera, wo das Kinn bis 1124 reicht. Bei 1140 wären das 16 px Abstand
+gewesen. Auch das stand erst im gerenderten Bild.
+
+## Zwei Nahaufnahmen desselben Gastes sind nicht derselbe Kasten (12.11.)
+
+Im Trump-Block schneidet die Regie zwischen zwei Ken-Kameras. Kopfmitte an
+je fünf Stellen gemessen: **Quell-x ≈ 1000** in der einen, **≈ 900** in der
+anderen. 100 px Unterschied — mit einem Kasten für beide säße er in einer
+davon schief, und genau das war sein Einwand vom Meaningful-Short
+(*„Sein Kopf ist viel zu weit links"*).
+
+→ betrifft: jeden Plan. **Nach jedem Kameraschnitt die Kopfmitte neu
+messen, auch wenn dieselbe Person im Bild bleibt.** Gleiche Person heißt
+nicht gleiche Kamera.
+
+## Ein Tonschnitt, der auf einem Kameraschnitt liegt, ist unsichtbar (12.11.)
+
+Von meinen drei Schnitten im Trump-Short fiel einer (Bild 97179 =
+3239,300) genau auf einen Kameraschnitt der Aufnahme. Die Sprechpause nach
+„spiraled" und der Schnitt Totale→Nah liegen übereinander. Ergebnis: ein
+5,1-s-Schnitt, den man nicht sieht.
+
+Das war kein Zufall, sondern Reihenfolge: ich hatte die Kameraschnitte
+gemessen, **bevor** ich die Schnittgrenzen festlegte, und konnte die
+Grenze auf den Kameraschnitt ziehen statt 0,6 s daneben.
+
+→ betrifft: jeden Schnitt. **Erst Kameraschnitte messen, dann Tonschnitte
+wählen.** Liegt eine Sprechpause innerhalb von ~1 s eines Kameraschnitts,
+die Schnittgrenze auf den Kameraschnitt legen.
+
+## Das Satzzeichen hängt am letzten Wort der Gruppe — darum geht es weg (12.11.)
+
+Whisper schrieb „AND ENERGY FROM?" mitten in den Satz. Eine Korrektur
+`from -> from` ändert nichts: `korrekturen_anwenden` übernimmt das
+Satzzeichen des Originals. Aber es übernimmt es **nur für das letzte Wort
+der ersetzten Gruppe**. `from everything -> from everything` — identische
+Wörter, zwei statt einem — schreibt „from" neu und lässt das „?" fallen,
+weil „everything" jetzt das letzte Wort ist.
+
+→ betrifft: jedes falsche Satzzeichen. **Die Gruppe ein Wort weiter
+fassen, dann fällt das Zeichen am vorletzten Wort weg.** Preis: die Gruppe
+wird gleichmäßig über ihre Zeitspanne verteilt, bei einer Pause darin
+verschiebt sich die Hervorhebung um bis zu einer halben Sekunde.
+
+## `--laut aus` + Musikbett heißt zweimal messen (12.11.)
+
+Vorlage auf exakt −29,7 LUFS gezogen, Renderer mit `--laut aus`: Hauptteil
+−29,8. Dann das Bett druntergelegt — und der Mix maß **−30,2**, also
+leiser, obwohl nur Energie dazukam. Grund ist die Gatterung des ebur128:
+ein leises Bett hebt die stillen Blöcke, das hebt die relative Schwelle,
+und Blöcke fallen aus der Wertung.
+
+→ betrifft: jede Musikfassung. **Die Lautheit nach dem Mischen noch einmal
+messen und gegen die zuletzt abgenommene Musikfassung angleichen**, nicht
+gegen die eigene Fassung ohne Musik. Hier +0,4 dB auf den fertigen Mix.
+
+## ProRes geht nicht durch den Transkriptionsschritt (12.11.)
+
+`shorts-render.py` legt für `--auto-captions` ein Zwischenstück an:
+`ffmpeg -ss … -i <src> -c copy clip.mp4`. Eine ProRes-Vorlage bricht dort
+ab — *„Could not find tag for codec prores … in mp4"*. Der eigentliche
+Durchlauf hätte ProRes verkraftet, nur dieser eine Schritt nicht.
+
+→ betrifft: jede Vorlage. **Vorlage als H.264 in `.mp4` bauen** (hier crf
+12, visuell verlustfrei), nicht als ProRes-`.mov`. Und: nicht die fertige
+ProRes-Datei umkodieren, sondern den Concat direkt nach H.264 ausgeben —
+spart eine Generation.
+
+
 ## 2026-11-12 (spaeter) — zwei Fehler, die nur im Vergleich zweier Shorts auffallen
 
 - **„--laut aus" heisst nicht, dass am Pegel nichts zu tun ist.** Sein

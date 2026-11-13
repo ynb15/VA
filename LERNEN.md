@@ -45,6 +45,63 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 44 — 13.11.2026, 15:54 Kapstadt · ein Musikbett wird in Bändern gemessen, und viermal die falsche Größe
+
+- **Ein Musikbett wird in Frequenzbändern gemessen, nicht breitbandig.**
+  Fassung 5 war breitbandig **lauter** als Fassung 4 (−42,2 statt −44,1 dB)
+  und klang trotzdem leiser. Sein Urteil: *„Jetzt ist die Musik noch
+  leiser?!"* In Bändern gemessen (Hauptteil, dB):
+
+  | | <300 Hz | 300 Hz–2 kHz | 2–8 kHz |
+  |---|---|---|---|
+  | Ubuntu (abgenommen) | 22,8 | 19,8 | 4,5 |
+  | Aging (abgenommen) | 24,6 | 21,6 | 7,2 |
+  | Fassung 5 | **27,3** | 16,2 | **−2,7** |
+  | Fassung 6 | 24,5 | 23,0 | 7,8 |
+
+  **Im Bass lauter als seine, in den hörbaren Bändern 5 bis 10 dB leiser.**
+  „Mom's Got Work" ist basslastig, „In This Shirt" nicht — ein Angleich über
+  den Breitbandpegel steckt die Energie dorthin, wo man sie unter einer
+  Stimme nicht hört und ein Telefonlautsprecher sie gar nicht wiedergibt.
+  **Behoben, indem das Bett wie ein Bett behandelt wird statt wie eine Kopie
+  des Titels:** Hochpass 80 Hz, Bass ab 300 Hz −12 dB, Höhen ab 3 kHz +7 dB,
+  dann der Pegel so, dass **alle drei Bänder** auf dem Wert des lautesten
+  abgenommenen Shorts liegen.
+  → betrifft: jedes Musikbett, alle Content-Agenten
+- **Den Bettpegel am abgenommenen Short messen, nicht aus einer Formel
+  rechnen.** *„Musik wieder mal viel zu leise, shaking my head."* Der Pegel
+  kam dreimal aus derselben Formel (`G = Stimme − Bett − 10 dB`, seine Ansage
+  vom 21.10.). **Was nie getan wurde: das Bett in seinen abgenommenen Shorts
+  freilegen.** Das kostet zwei Minuten, weil Musikfassung und musikfreie
+  Fassung beide im Repo liegen: **Musikfassung minus musikfreie Fassung
+  ergibt das Bett allein.**
+  → betrifft: alle, die Musik unterlegen
+- **Vor der nächsten Messung zuerst die Frage: ist das die Größe, die er
+  hört?** Shorts II hat an einem Tag **viermal nachgemessen und viermal die
+  falsche Größe gemessen**: Logobreite statt Schriftart · Einsatzpunkt statt
+  Fensterende · Mittelwert statt Verlauf · Breitband statt Bänder. **Jede
+  Messung war für sich richtig und jede ging am Ohr vorbei.**
+  → betrifft: alle, und zuerst mich
+- **Eine Prüfung, die auf den letzten Fehler zugeschnitten ist, fängt den
+  nächsten nicht.** Der Kapitelmarken-grep vom 26.10. suchte nur nach
+  `60:36` **ohne** Stundenfeld und konnte `0:05:30` **mit zu viel**
+  Stundenfeld nicht sehen. Der neue Prüfer prüft **beide Richtungen**.
+  → betrifft: jeden, der eine Prüfung nach einem Fehler schreibt
+- **Kapitelmarken umrechnen ist jetzt eine Messung, keine Hochrechnung.** Der
+  YouTube-Manager holt mit Bereichsanfragen **nur die Bytes des jeweiligen
+  Zeitfensters** aus einer Drive-Datei und transkribiert sie — die
+  Ken-Endfassung hat **26,2 GB**, ein 75-Sekunden-Fenster kostet **40
+  Bereichsanfragen und 315,7 MB**. Damit ließ sich die Endfassung an **neun
+  Punkten quer durch die Folge** gegenprüfen: **5968,3 s, Tempo 1,1,
+  Fundraiser 174,5 s, eingeschoben nach Rohsekunde 3605.**
+  → betrifft: alle, die mit zu großen Dateien arbeiten
+- **Ein nicht gequoteter Heredoc wird von der Shell zerlegt.** Ein Commit
+  enthielt Regeldatei und Prüfer, aber **nicht die Paketdatei** — der Heredoc
+  dafür war ungequotet. Erst der Folgecommit hat sie nachgereicht.
+  → betrifft: jeden, der Dateien per Heredoc schreibt
+
+---
+
 ## Ausgabe 43 — 12.11.2026, 15:54 Kapstadt · er will Konfrontation, und der Pegel hängt daran, wer spricht
 
 - **STEHENDE ANSAGE, wörtlich von ihm:** *„Ich habe richtig Bock auf

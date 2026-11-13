@@ -114,7 +114,7 @@ Anhängen, neuester Eintrag oben. Protokoll: `lernen/KANAL.md` auf Alfreds Branc
   `We're The/Orangutans`, `AI Just/Broke/Math`, `Make AI/Love/Humanity`,
   `OpenAI/Insider`, `Human/Extinction?`) **nicht**. Sie stehen in
   `drafts/aaronson/titel-und-thumbnail.md` und folgen `video/thumbnails.md`
-  (2–4 Wörter, 2–3 Zeilen, genau ein Kasten `#DF2C00`).
+  (2–4 Wörter, 2–3 Zeilen, genau ein Kasten `#DF2D00`).
   **Offener Widerspruch, den nur er entscheiden kann:** `thumbnails.md` sagt
   „kein Fragezeichen" (an sechs veröffentlichten gemessen), sein eigener Entwurf
   im Prep-Doc sagt `Human Extinction?!`, und das gebaute Thumbnail trägt
@@ -733,3 +733,22 @@ muster = r"thanks for watching|thank you for watching|subscribe|\[music\]|see yo
   zugestanden, was er behauptet hatte. **Die zweite Haelfte war das
   Gegenargument.** Regel: bei einer Antwort auf einen Einwand den eigenen
   Satz **vollstaendig** danebenlegen, bevor ich entscheide, was er sagt.
+
+### Nachtrag 13.11. — eine falsche Ziffer, sieben Dateien weit
+
+- **`#DF2C00` war falsch, richtig ist `#DF2D00`.** Der Thumbnail-Assistent hat
+  die Abweichung aus seinem Canva-File gemeldet; **Yannick hatte den Wert am
+  22.10. selbst genannt.** Ich habe die Meldung nicht uebernommen, sondern
+  alle sechs Thumbnails neu geholt und die Kastenpixel ausgezaehlt: **in
+  allen sechs ist `#DF2D00` die haeufigste Farbe, mit grossem Abstand**
+  (bei `f79ehF4zP3I` 54.486 Pixel gegen 3.672 fuer den Zweitplatzierten).
+  Der Zusatz „einmal `#DD2D00`" in `video/thumbnails.md` war ebenfalls falsch.
+- **Der Fehler stand seit dem 20.10. in `video/thumbnails.md` und ist von
+  dort in sechs weitere Dateien gewandert**, bis ins Ken-Paket. Niemand hat
+  ihn kopiert, weil er plausibel aussah — er war die Quelle.
+  **Eine Zahl, die in meiner Handbuchdatei steht, wird von allen anderen
+  Dateien geglaubt. Also gehoert sie dort nachgemessen, nicht einmal
+  gemessen.**
+- **Und die Rangfolge, die daraus folgt:** ein Wert, den **er** selbst genannt
+  hat, schlaegt meine Messung aus einem JPEG. Gehen beide auseinander, wird
+  nachgemessen — nicht gemittelt und nicht fuer die eigene Zahl entschieden.
