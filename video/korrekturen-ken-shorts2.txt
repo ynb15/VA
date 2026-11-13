@@ -99,3 +99,16 @@ listening demon and demonizing those -> listening and demonizing the other side
 # and worse and spiraled." Die zwei Korrekturen lassen den Fehlstart weg.
 and loaded we haven't little -> and little
 know we haven't that everything -> know that everything
+# --- Trump-Short, Fassung 2 (13.11.), neuer Einstieg bei "we're led by a guy" ---
+# Der Schnitt liegt in der Luecke zwischen "that" und "we're"; vom "that"
+# bleiben 0,05 s Ausklang bei -45 dB stehen, unhoerbar. "medium" schreibt
+# das Wort trotzdem hin. Raus.
+that we're -> we're
+# "not listening and demonizing the other side" — an der Fassung 1 hoerte
+# "medium" hier "demon and demonizing those", an Fassung 2 "demonizing
+# others". large-v3 bei 1,0 eindeutig: "the other side". Beide Varianten
+# stehen in der Liste, damit ein erneuter Lauf in jedem Fall greift.
+demonizing others when -> demonizing the other side when
+# "everything has gotten worse" — an Fassung 2 schreibt "medium" "had".
+# large-v3 bei 1,0: "has".
+everything had gotten -> everything has gotten

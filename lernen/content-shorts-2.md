@@ -6,6 +6,87 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Die Standardwerte des Renderers sind nicht die Werte des Kanals (13.11.)
+
+Seine erste Reaktion auf das Trump-Short: *„ich bin schockiert darüber, wie
+groß plötzlich das Logo ist und wie du einfach die Schrift verändert hast.
+Das checke ich gar nicht."*
+
+Nachgemessen an den ausgelieferten Dateien:
+
+| | Logo sichtbar | „OTHERS" | Zeilenhöhe |
+|---|---|---|---|
+| Ubuntu | 281 px | 313 × 54 px | 1140 |
+| Meaningful | 267 px | 313 × 54 px | 1140 |
+| Aging | 281 px | — | 1140 |
+| **Trump, Fassung 1** | **481 px** | **294 × 49 px** | **1200** |
+
+Ursache: `shorts-render.py` hat `--logo-breite` **520** und
+`--schriftgroesse` **78** als Standard. Der Kanal läuft auf **300** und
+**84**. Bei den drei vorherigen Ken-Shorts hatte ich beide gesetzt. Beim
+Trump-Short habe ich den Aufruf aus der Dokumentation neu zusammengebaut —
+und **genau diese zwei Werte stehen in keiner Doku im Repo.** Sie lebten
+nur in der Befehlszeile, und die ist nirgends festgehalten.
+
+Das Logo war damit 1,7-mal so breit. Die Schrift war dabei nicht größer,
+sondern 7 % **kleiner** — was ihm auffiel, war das Logo; die Schrift wirkte
+durch das Logo und die 60 px tiefere Zeile mit verändert.
+
+→ betrifft: jedes Short. **Was in keiner Datei steht, existiert nicht —
+auch ein Schalter nicht.** Der vollständige Aufruf gehört in die
+Short-Dokumentation, nicht nur Tempo und Bettpegel. Ab sofort steht er in
+`video/ken-trump-short.md`, und vor jedem Rendern wird gegen das zuletzt
+abgenommene Short des Gastes **gemessen**, nicht erinnert: Logobreite über
+die weißen Pixel, Schriftgröße über die Höhe eines gelben Worts.
+
+Nebenbefund, der 84 bestätigt: die Umbruchgrenze des Renderers ist
+`max_em=11.8`, und 11,8 × 84 = 991 px füllt die nutzbare Zeilenbreite von
+1000 px (1080 − 2 × 40 Rand) genau aus. Bei 78 blieben 80 px leer. **Die
+Konstante ist auf 84 gerechnet.**
+
+## Eine Korrektur gilt nur für genau den Schnitt, an dem sie gemessen wurde — zum zweiten Mal (13.11.)
+
+Beim neuen Einstieg („we're led by a guy", 3,1 s später) hat `medium` am
+sonst identischen Ton **anders gehört**: aus „demon and demonizing those"
+wurde „demonizing others", aus „has gotten" wurde „had gotten". Zwei
+Korrekturen aus Fassung 1 griffen nicht mehr, zwei neue Fehler standen da.
+
+Der Grund ist nicht Zufall: Whisper arbeitet in Kontextfenstern, und ein um
+3,1 s verschobener Anfang verschiebt jedes Fenster.
+
+→ betrifft: jede Schnittänderung. **Nach JEDER Änderung am Schnitt den
+ganzen Untertiteltext neu lesen, nicht nur die geänderte Stelle.** Alte
+Korrekturen stehen lassen (sie greifen ins Leere) und die neuen danebenstellen,
+damit ein erneuter Lauf in beiden Varianten trifft.
+
+## Der Einsatzpunkt eines Musikstücks: an einem bekannten Stück eichen (13.11.)
+
+Für „Mom's Got Work" war der 2-kHz-Sprung nicht eindeutig — das Stück hat
+mehrere helle Fills (0:14, 0:26, 0:36), die jedes Mal wieder abfallen.
+
+Gelöst, indem ich **dieselbe Messung an „In This Shirt" gemacht habe**, wo
+der abgenommene Wert (0:23,25) bekannt ist. Dort zeigt sich die Form: eine
+Senke, dann ein Sprung, und danach ein Niveau, das **hält**. Dieselbe Form
+in „Mom's Got Work" liegt bei **1:00,75** — von 4,3 auf 13,8 dB in einem
+Schritt, danach 25–35 dB bis 1:50.
+
+→ betrifft: jedes neue Musikstück. **Nicht den größten Sprung nehmen,
+sondern den ersten, nach dem das Niveau hält — und die Schwelle dafür am
+zuletzt abgenommenen Stück eichen**, statt sie zu setzen.
+
+## Zeilenhöhe: ich habe mich in beide Richtungen verschätzt (13.11.)
+
+Gestern notiert: Kinn am Vollbild geschätzt → 135 px zu tief. Heute das
+Gegenstück: ich hatte das Kinn in Kamera 2 auf Ausgabe-y 1124 geschätzt und
+die Zeile deshalb auf 1200 gesetzt. **Am gerenderten Bild mit eingezeichneter
+Linie liegt es bei 1115**, und 1140 sitzt an der engsten Stelle 25 px darunter,
+auf dem Hals — wie bei allen anderen Ken-Shorts.
+
+→ betrifft: jede Zeilenhöhe. **Die Kanalhöhe gilt, bis das gerenderte Bild
+mit eingezeichneter Linie das Gegenteil zeigt.** Eine Abweichung vom
+Kanalstandard braucht einen Beleg, keine Schätzung — sie fällt ihm auf.
+
+
 ## Das Kinn misst man am fertigen Ausschnitt, nicht am Vollbild (12.11.)
 
 Für das Trump-Short habe ich Kens Kinn im 960-px-Vollbild auf Quell-y 675

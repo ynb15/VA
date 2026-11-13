@@ -1,0 +1,120 @@
+# Ken Stern — seine ehrliche Meinung zu Trump · Fassung 2 (51,9 s · Hauptteil 48,1 s + Outro 3,8 s)
+# Rohzeit 0:53:23,30–0:54:30,40, abzueglich drei Stuecke · Tempo 1,1 · mit „Mom's Got Work"
+#
+# Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
+# Was raus soll: Zeile loeschen oder die Nummer nennen.
+#
+  1  [00:00.00–00:03.44]  WE'RE LED BY A GUY WE'RE LED IT'S NOT THE RIGHT TERM THE PRESIDENT IS
+  2  [00:03.44–00:04.96]  A GUY WHO
+  3  [00:05.60–00:09.69]  IS THE EMBODIMENT OF POLITICAL POLARIZATION WHO LIVES TO DEMONIZE OTHERS WHO GETS VALUE
+  4  [00:09.69–00:15.14]  AND STRENGTH AND ENERGY FROM EVERYTHING I SORT OF DETEST ABOUT AMERICAN POLITICS
+  5  [00:15.62–00:20.67]  NOT LISTENING AND DEMONIZING THE OTHER SIDE WHEN I WROTE THE BOOK IN 2016
+  6  [00:20.67–00:25.62]  I THOUGHT WE WERE REACHING SORT OF THE PEAK OF POLARIZATION AND LITTLE DID
+  7  [00:25.62–00:29.09]  I KNOW THAT EVERYTHING HAS GOTTEN WORSE AND WORSE AND SPIRALED WHEN I TALK
+  8  [00:29.09–00:29.60]  ABOUT POLITICS
+  9  [00:30.04–00:37.56]  I TALK ABOUT WHAT POLARIZATION AND DEMONIZATION IS DOING TO US AND WHAT IT IS
+ 10  [00:37.56–00:42.73]  WRECKED ON AMERICAN SOCIETY AND HOW TO THINK ABOUT PUTTING THAT BACK
+ 11  [00:43.49–00:47.73]  HOPEFULLY ELECTIONS WILL STEP US AWAY FROM I THINK A PRECIPICE THAT IS VERY DANGEROUS
+
+# ══════════════════════════════════════════════════════════════════
+# LOGO UND SCHRIFT — mein Fehler, gemessen und behoben
+# ══════════════════════════════════════════════════════════════════
+# Du hattest recht, und zwar genauer als Du denkst. Nachgemessen an den
+# ausgelieferten Dateien:
+#
+#                        Logo           Schrift („OTHERS")   Zeilenhoehe
+#   Ubuntu              281 px          313 x 54 px          1140
+#   Meaningful          267 px          313 x 54 px          1140
+#   Aging               281 px          —                    1140
+#   Trump Fassung 1     481 px  <--     294 x 49 px  <--     1200  <--
+#   Trump Fassung 2     279 px          317 x 54 px          1140
+#
+# WAS PASSIERT IST: der Renderer hat Standardwerte, und die sind NICHT
+# die des Kanals. Logo 520 statt 300, Schrift 78 statt 84. Bei den drei
+# anderen Ken-Shorts hatte ich beide Schalter gesetzt; beim Trump-Short
+# habe ich den Aufruf neu zusammengebaut und nur das genommen, was in der
+# Dokumentation steht — und genau diese zwei Werte standen dort nicht.
+# Das Logo war damit 1,7-mal so breit.
+#
+# Die Schrift war uebrigens nicht groesser, sondern 7 % KLEINER (78 statt
+# 84). Was ins Auge gesprungen ist, war das Logo; die Schrift sah dadurch
+# und durch die 60 px tiefere Zeile anders aus. Beides ist jetzt wieder
+# auf den Werten der anderen drei.
+#
+# Dass 84 der richtige Wert ist, bestaetigt der Renderer selbst: seine
+# Zeilenumbruchgrenze ist 11,8 em, und 11,8 x 84 = 991 px — das fuellt die
+# nutzbare Zeilenbreite von 1000 px genau aus. Bei 78 blieben 80 px leer.
+#
+# ZEILENHOEHE ZURUECK AUF 1140. Meine 1200 waren unnoetig: ich hatte sein
+# Kinn in der zweiten Kamera auf 1124 geschaetzt. Am gerenderten Bild
+# nachgemessen liegt es bei 1115, und die Zeile sitzt an der engsten
+# Stelle 25 px darunter, auf dem Hals — genau wie bei den anderen dreien.
+
+# ══════════════════════════════════════════════════════════════════
+# NEUER EINSTIEG: „WE'RE LED BY A GUY"
+# ══════════════════════════════════════════════════════════════════
+# Ich habe das so gelesen, dass das SHORT dort anfangen soll. Vorne sind
+# damit 3,1 s weg („I think a lot of my views today are colored by the
+# fact that"), und die 0,8 s Totale am Anfang entfallen mit — das Short
+# oeffnet direkt auf seiner Nahaufnahme.
+# Der Schnitt liegt in der Sprechpause zwischen „that" und „we're"
+# (Rohzeit 0:53:23,30). Vom „that" bleiben 0,05 s Ausklang bei -45 dB
+# stehen, unhoerbar; in der Schrift ist das Wort raus.
+# FALLS DU DIE MUSIK GEMEINT HAST und nicht den Bildanfang: sag es, dann
+# setze ich das Bett dort ein statt bei 0,00. Ist ein Durchlauf.
+
+# ══════════════════════════════════════════════════════════════════
+# MUSIK: Mom's Got Work (Adam Taylor), ab 1:00,75 des Titels
+# ══════════════════════════════════════════════════════════════════
+# Der Einsatzpunkt ist gemessen, nicht geraten. Regel: das Bett faengt
+# dort an, wo die Energie ueber 2 kHz springt — nicht bei Sekunde 0, wo
+# der Titel zwar schon vollen Pegel, aber noch keine Textur hat.
+# Zur Eichung dieselbe Messung an „In This Shirt": dort liegt der von Dir
+# abgenommene Einsatz (0:23,25) exakt auf so einem Sprung aus einer Senke
+# in ein Niveau, das haelt.
+# „Mom's Got Work" hat mehrere helle Fills (0:14, 0:26, 0:36), die aber
+# jedes Mal wieder abfallen. Der eine Sprung, der HAELT, liegt bei
+# 1:00,75: von 4,3 auf 13,8 dB in einem Schritt, danach 25-35 dB bis
+# 1:50. Bett 0,00-51,93 s, laeuft bis zum letzten Bild und blendet ueber
+# dem Outro aus (3,8 s ab 48,13 s). Keine Schleife noetig.
+# Durch Subtraktion geprueft: -42 dB waehrend der Rede, -58 bei 48 s,
+# -65 bei 50 s, -79,8 bei 51,6 s.
+# Pegel: Stimme -33,5 dB, Bett -15,4 dB -> 10 dB unter der Stimme.
+# Ohne Musik: „YNB Podcast Ken Stern Trump.mp4" im Repo.
+# Dateiname ohne Apostroph („Moms Got Work"), damit er in Skripten nicht
+# stolpert — sag Bescheid, wenn Du ihn mit haben willst.
+
+# ══════════════════════════════════════════════════════════════════
+# WAS HERAUSGENOMMEN IST — drei Stuecke, zusammen 14,2 s
+# ══════════════════════════════════════════════════════════════════
+# 1) bei 00:18.9 — 4,4 s  (roh 0:53:44,10–0:53:48,53)
+#    „So I'm, you know, my views are now, I thought we were sort of,"
+# 2) bei 00:28.7 — 5,1 s  (roh 0:53:59,30–0:54:04,43)
+#    „So I think my concerns," + 3,2 s Pause
+# 3) bei 00:43.4 — 4,6 s  (roh 0:54:20,60–0:54:25,20)
+#    „And hopefully," + 3,4 s Pause
+# Alle drei reiner Anlauf. Schnitt 2 liegt genau auf einem Kameraschnitt
+# und ist unsichtbar; 1 und 3 sind Sprungschnitte auf einer Satzgrenze.
+#
+# EIN HOLPERER IST STEHENGEBLIEBEN, Zeile 9/10:
+#   „and what it is wrecked on American society". Er sagt woertlich
+#   „and what it is — uh — wrecked on — um — American society".
+#   Geglaettet hiesse: ihm Worte in den Mund legen. Zwei Auswege, wenn es
+#   Dich stoert: „what it HAS wrecked" schreiben, oder den halben Satz
+#   raus (dann 5,6 s kuerzer).
+
+# ══════════════════════════════════════════════════════════════════
+# AUFBAU
+#   0:00.0–0:22.7  Ken, Nah (Kamera 1)
+#   0:22.7–0:28.7  Totale, Kasten auf Ken
+#   0:28.7–0:48.1  Ken, Nah (Kamera 2)
+# Zwei Ken-Kameras mit verschiedener Kopfposition (Quell-x 1000 bzw. 900),
+# darum zwei Kaesten: 648 und 548.
+#
+# ABNAHME (gemessen)
+#   1080x1920 · 48 kHz · 51,9 s · Outro da · 52 Untertitel · Ortscheck sauber
+#   Hauptteil -29,8 LUFS — gleich mit Ubuntu und Meaningful. Spitze -4,8 dB.
+#   „Kein Musikbett" meldet FEHLER bei -51,1 dB — das ist die Musik.
+#   Ohne Musik: alle Pruefungen bestanden (-77,2 dB).
+#
+# NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.

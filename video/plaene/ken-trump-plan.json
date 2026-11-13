@@ -1,36 +1,29 @@
 {
-  "quelle": "vorlage-trump.mp4",
+  "quelle": "vorlage-trump2.mp4",
   "groesse": [
     1920,
     1080
   ],
   "einstellungen": [
     {
-      "kasten": "1312:0:608:1080",
-      "lippe": 1200,
-      "start": 0.0,
-      "ende": 0.8,
-      "wer": "Totale, Kasten auf Ken"
-    },
-    {
       "kasten": "648:0:608:1080",
-      "lippe": 1200,
-      "start": 0.8,
-      "ende": 27.9333,
+      "lippe": 1140,
+      "start": 0.0,
+      "ende": 24.9333,
       "wer": "Ken, Nah (Kamera 1)"
     },
     {
       "kasten": "1312:0:608:1080",
-      "lippe": 1200,
-      "start": 27.9333,
-      "ende": 34.5666,
+      "lippe": 1140,
+      "start": 24.9333,
+      "ende": 31.5666,
       "wer": "Totale, Kasten auf Ken"
     },
     {
       "kasten": "548:0:608:1080",
-      "lippe": 1200,
-      "start": 34.5666,
-      "ende": 55.9333,
+      "lippe": 1140,
+      "start": 31.5666,
+      "ende": 52.9333,
       "wer": "Ken, Nah (Kamera 2)"
     }
   ]

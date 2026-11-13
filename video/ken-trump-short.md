@@ -1,14 +1,108 @@
-# Ken Stern — seine ehrliche Meinung zu Trump (12.11.)
+# Ken Stern — seine ehrliche Meinung zu Trump (13.11., Fassung 2)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme, Yannick lädt hoch.
 
 | Datei | Länge | Ton |
 |---|---|---|
-| `YNB Podcast Ken Stern Trump (In This Shirt).mp4` | 54,7 s | Stimme + Bett bis zum letzten Bild |
-| `YNB Podcast Ken Stern Trump.mp4` | 54,7 s | nur Stimme |
+| `YNB Podcast Ken Stern Trump (Moms Got Work).mp4` | 51,9 s | Stimme + Bett bis zum letzten Bild |
+| `YNB Podcast Ken Stern Trump.mp4` | 51,9 s | nur Stimme |
 
 Plan: `video/plaene/ken-trump-plan.json`.
 Korrekturen: `video/korrekturen-ken-shorts2.txt`.
+
+## Der vollständige Aufruf
+
+**Das Wichtigste an dieser Datei.** Die beiden Schalter `--logo-breite 300`
+und `--schriftgroesse 84` sind die Werte des Kanals; die Standardwerte des
+Renderers (520 und 78) sind es nicht. Sie standen bis heute in keiner Datei
+im Repo, und genau daran ist Fassung 1 gescheitert.
+
+```
+python3 -I video/shorts-render.py \
+  --src vorlage-trump2-laut.mp4 \
+  --plan video/plaene/ken-trump-plan.json \
+  --out "YNB Podcast Ken Stern Trump.mp4" \
+  --tempo 1.1 --look warm --laut aus \
+  --logo video/marke/ynb-logo-weiss-beschnitten.png --logo-breite 300 \
+  --schriftgroesse 84 \
+  --outro marke/ynb-outro-9-16.mp4 \
+  --auto-captions --model medium --lang en \
+  --korrekturen video/korrekturen-ken-shorts2.txt \
+  --srt-out "YNB Podcast Ken Stern Trump.srt"
+```
+
+## Fassung 2 (13.11.) — was sich geändert hat
+
+Seine Ansage: *„ich bin schockiert darüber, wie groß plötzlich das Logo ist
+und wie du einfach die Schrift verändert hast … leg doch noch einen anderen
+Song unter, und zwar Mom's Got Work. Und dann Intro starten bei ‚we're led
+by a guy'."*
+
+### 1. Logo und Schrift — gemessen, nicht geschätzt
+
+| | Logo sichtbar | „OTHERS" | Zeilenhöhe |
+|---|---|---|---|
+| Ubuntu | 281 px | 313 × 54 px | 1140 |
+| Meaningful | 267 px | 313 × 54 px | 1140 |
+| Aging | 281 px | — | 1140 |
+| **Trump, Fassung 1** | **481 px** | **294 × 49 px** | **1200** |
+| Trump, Fassung 2 | 279 px | 317 × 54 px | 1140 |
+
+Das Logo war 1,7-mal so breit, weil `--logo-breite` fehlte (Standard 520
+statt 300). Die Schrift war **nicht größer, sondern 7 % kleiner** (78 statt
+84) — was ins Auge sprang, war das Logo.
+
+Gemessen wurde die Logobreite über weiße Pixel (`min(RGB) ≥ 250`) im Band
+y 1540–1840, die Schriftgröße über die Höhe eines gelben Worts, gegen
+Testsätze derselben ASS-Stilzeile auf Schwarz. Zwei unabhängige Wörter
+(„OTHERS", „HELPING") ergeben beide **84**.
+
+Bestätigung aus dem Code: die Umbruchgrenze ist `max_em=11.8`, und
+11,8 × 84 = 991 px füllt die nutzbare Zeilenbreite von 1000 px genau aus.
+
+### 2. Zeilenhöhe zurück auf 1140
+
+Fassung 1 lag auf 1200, weil ich Kens Kinn in Kamera 2 auf Ausgabe-y 1124
+geschätzt hatte. Am gerenderten Bild mit eingezeichneter Linie liegt es bei
+**1115**; 1140 sitzt an der engsten Stelle 25 px darunter, auf dem Hals.
+
+### 3. Neuer Einstieg bei „we're led by a guy"
+
+Schnitt in der Sprechpause zwischen „that" und „we're", Rohzeit
+**0:53:23,30** (Bild 96099). „we're" setzt bei 3203,36 ein; vom „that"
+bleiben 0,05 s Ausklang bei −45 dB, unhörbar. Vorne fallen damit 3,1 s weg
+und die 0,8 s Totale am Anfang entfallen mit — das Short öffnet direkt auf
+der Nahaufnahme. Drei statt vier Einstellungen.
+
+**Gelesen als: das Short beginnt dort.** Falls er den Musikeinsatz meinte,
+ist das ein Durchlauf — in der Liste vermerkt.
+
+### 4. Neue Musik: Mom's Got Work (Adam Taylor), ab 1:00,75
+
+Drive `1z01tjaFm_tjUNelau9l9DTc3sjHbmsYo`, 117,8 s.
+
+Der Einsatzpunkt war nicht eindeutig: das Stück hat helle Fills bei 0:14,
+0:26 und 0:36, die jedes Mal abfallen. Geeicht an „In This Shirt", wo der
+abgenommene Wert (0:23,25) bekannt ist — dort zeigt sich die Form: Senke,
+Sprung, dann ein Niveau, das **hält**. Dieselbe Form liegt hier bei
+**1:00,75**: von 4,3 auf 13,8 dB in einem Schritt, danach 25–35 dB bis
+1:50. Kein Looping nötig.
+
+Bett 0,00–51,93 s, Ausblende 3,8 s ab 48,13 s. Pegel: Stimme −33,5 dB,
+Bett −15,4 dB, Verstärkung −28,1 dB. Hauptteil **−29,8 LUFS**, Spitze
+−4,8 dB.
+
+### 5. Zwei Untertitel-Korrekturen mussten nachgezogen werden
+
+Am 3,1 s später beginnenden Ton hat `medium` anders gehört: „demonizing
+others" statt „demon and demonizing those", „had gotten" statt „has
+gotten". Whisper arbeitet in Kontextfenstern, ein verschobener Anfang
+verschiebt jedes Fenster. Beide Varianten stehen jetzt in der
+Korrekturliste.
+
+---
+
+## Fassung 1 (12.11.) — Grundlagen, weiter gültig
 
 ---
 
@@ -35,7 +129,7 @@ erste Satz trägt sich allein.
 
 ## Der Schnitt
 
-Rohzeit **0:53:20,30–0:54:30,40** = 70,1 s. Davon sind rund 20 s reine
+Rohzeit **0:53:20,30–0:54:30,40** = 70,1 s (Fassung 2: ab 0:53:23,30). Davon sind rund 20 s reine
 Denkpause; die Rede selbst ist knapp 45 s. Drei Stücke raus, zusammen 14,2 s:
 
 | # | im Short | roh | was | s |
@@ -75,14 +169,15 @@ Stellen gemessen: Kamera 1 bei Quell-x ≈ 1000, Kamera 2 bei ≈ 900. Mit
 einem Kasten für beide säße er in einer der beiden schief — genau sein
 Einwand vom Meaningful-Short. Darum **648** und **548**.
 
+Fassung 2, drei Einstellungen (Vorlage 1588 Bilder = 52,9333 s):
+
 | # | Kasten | von–bis (Vorlage) | wer |
 |---|---|---|---|
-| 1 | `1312:0:608:1080` | 0,0000–0,8000 | Totale, Kasten auf Ken |
-| 2 | `648:0:608:1080` | 0,8000–27,9333 | Ken, Nah (Kamera 1) |
-| 3 | `1312:0:608:1080` | 27,9333–34,5666 | Totale |
-| 4 | `548:0:608:1080` | 34,5666–55,9333 | Ken, Nah (Kamera 2) |
+| 1 | `648:0:608:1080` | 0,0000–24,9333 | Ken, Nah (Kamera 1) |
+| 2 | `1312:0:608:1080` | 24,9333–31,5666 | Totale, Kasten auf Ken |
+| 3 | `548:0:608:1080` | 31,5666–52,9333 | Ken, Nah (Kamera 2) |
 
-## Zeilenhöhe 1200, nicht 1140
+## Zeilenhöhe 1200, nicht 1140 — **in Fassung 2 zurückgenommen**
 
 Beim Meaningful-Short war 1140 richtig. Hier nicht: in Kamera 2 reicht sein
 Kinn bis Ausgabe-y **1124**, das wären 16 px Abstand gewesen. Nachgemessen
@@ -91,6 +186,11 @@ Kinn erst auf 1199 geschätzt und lag um 135 px daneben.
 
 **1200 für alle vier Einstellungen.** Der Renderer meldet
 `Hoehen [1200]` — damit kann die Schrift nicht springen.
+
+**Nachtrag 13.11.: falsch.** Auch 1124 war noch geschätzt. Am gerenderten
+Bild mit eingezeichneter Linie liegt das Kinn bei 1115, und 1140 sitzt
+25 px darunter, auf dem Hals. Fassung 2 läuft auf 1140 wie die anderen
+drei Ken-Shorts.
 
 ## Sechs Korrekturen an den Untertiteln
 
