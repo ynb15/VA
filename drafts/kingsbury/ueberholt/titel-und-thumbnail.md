@@ -101,7 +101,7 @@ schreibst Du `su*cide` — **im Titel habe ich keinen Beleg**, wie Du es hältst
 
 ## 15 Thumbnail-Zeilen
 
-`**fett**` = Kasten `#DF2C00`. **Die drei Paare vom Head of Content**
+`**fett**` = Kasten `#DF2D00`. **Die drei Paare vom Head of Content**
 (`CAGE FIGHTER to MYSTIC`, `WARRIOR & MYSTIC`, `THE FIGHTER WHO QUIT FIGHTING`)
 sind hier **nicht** wiederholt.
 

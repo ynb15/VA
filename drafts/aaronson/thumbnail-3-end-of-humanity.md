@@ -25,7 +25,7 @@ Baugleich mit `plan-extinction.json` — **das ist die Form ohne Grafik**
 ```
 
 - **Vier Zeilen, je ein Wort**, untereinander — so bestellt.
-- **`kasten`-Index 1 = `End`.** Genau ein Kasten, `#DF2C00`, wie in allen sechs
+- **`kasten`-Index 1 = `End`.** Genau ein Kasten, `#DF2D00`, wie in allen sechs
   veröffentlichten.
 - **Keine Mittelgrafik.** Nur der abgesoffene Hintergrund und die zwei
   Freisteller links und rechts. Damit greifen die Standard-Zielmaße für die

@@ -147,7 +147,7 @@ hänge ich ihn an, und die Titel bleiben unter 70 Zeichen.
 
 **Die Regeln, aus `video/thumbnails.md` (an sechs veröffentlichten gemessen):**
 zwei bis vier Wörter · zwei bis drei Zeilen · **genau ein Wort oder eine Zeile
-im orangeroten Kasten `#DF2C00`** · geometrischer Grotesk, sehr fett, weiß ·
+im orangeroten Kasten `#DF2D00`** · geometrischer Grotesk, sehr fett, weiß ·
 kein Satz, kein Punkt.
 
 `**fett**` = die Zeile im Kasten. `/` = Zeilenumbruch.

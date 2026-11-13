@@ -41,7 +41,7 @@ hat, in Deiner `&`-Form statt mit Gedankenstrich.
 
 ## 15 Thumbnail-Zeilen
 
-Nach Deinen drei belegten Formen. `**fett**` = Kasten `#DF2C00`.
+Nach Deinen drei belegten Formen. `**fett**` = Kasten `#DF2D00`.
 
 ### Das „Nobody"-Motiv — Deine häufigste Bewegung, in vier von vier Dokumenten
 

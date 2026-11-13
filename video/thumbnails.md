@@ -25,7 +25,20 @@ wechseln bewusst innerhalb der Zeile: ein kleineres Wort oben
 („THIS", „F*ck"), darunter das große.
 
 **Genau ein Wort oder eine Zeile liegt auf einem orangeroten Kasten.**
-Gemessen über sechs Thumbnails: **`#DF2C00`** (einmal `#DD2D00`). Der Kasten
+Gemessen über sechs Thumbnails: **`#DF2D00`** — in allen sechs, als häufigste
+Farbe des Kastens und jeweils mit großem Abstand (bei `f79ehF4zP3I` 54.486
+Pixel gegen 3.672 für den Zweitplatzierten).
+
+> **Nachgemessen am 13.11.2026.** Hier stand vorher `#DF2C00`, mit dem Zusatz
+> „einmal `#DD2D00`". **Beides war falsch.** Der Thumbnail-Assistent hat die
+> Abweichung aus seinem Canva-File gemeldet — Yannick hatte den richtigen Wert
+> am 22.10. selbst genannt. Ich habe daraufhin alle sechs JPEGs neu geholt und
+> die Kastenpixel ausgezählt statt die Meldung zu übernehmen: sie bestätigt
+> sich. Die alte Ziffer stand seit dem 20.10. in dieser Datei und ist von hier
+> in sieben weitere Stellen gewandert, bis in das Ken-Paket.
+> **Lehre: ein Farbwert, den er selbst genannt hat, schlägt meine Messung aus
+> einem JPEG — und wenn beide auseinandergehen, wird nachgemessen, nicht
+> gemittelt.** Der Kasten
 ist rechteckig, ohne Rundung, und sitzt satt um die Schrift. Immer nur
 einer. Das ist der Blickanker.
 

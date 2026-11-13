@@ -212,7 +212,7 @@ holt auch dieses Publikum.
 
 Format nach `video/thumbnails.md`: **zwei bis vier Woerter**, zwei bis drei
 Zeilen, kein Satzzeichen, **genau ein Wort auf dem orangeroten Kasten**
-(`#DF2C00`) — hier **fett** markiert.
+(`#DF2D00`) — hier **fett** markiert.
 
 | # | Zeile |
 |---:|---|
