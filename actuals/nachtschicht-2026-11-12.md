@@ -90,3 +90,28 @@ Heute ist **Freitag, der 13.11.** — Rick Strassman geht raus, und **Ken T−2
 ist meine Frist.** Beides steht im Morgenbericht.
 
 Nichts im Chat.
+
+## 06:40 · Ken T−2 übergeben, zwei Tage vor dem Launch
+
+- **06:40** · alle neun Zweige · keine Bewegung seit **16:19** am 12.11. ·
+  neue Commits: **keine** · Maßnahme: **eine** (Farbcode an den
+  YouTube-Manager, `trig_01LFvdijvdagYKkgYgKEVhVi`)
+
+**T−2 ist erfüllt:** `drafts/ken/paket-t2.md`. Alles an einer Stelle —
+Beschreibung, 15 Titel, 15 Thumbnail-Zeilen, 22 Tags, angepinnter Kommentar,
+drei Clip-Kommentare, 26 Kapitelmarken, sechs Thumbnails, elf Shorts mit
+Längen und Musik, dazu die pegelangeglichenen Zweitfassungen — und **vier
+benannte Lücken** statt Auslassungen.
+
+**Beide Empfehlungen tragen ihr Gegenargument neben sich**, weil beide
+Abwägungen sind und keine Rechnungen: **Titel 1** (Eigenart) gegen **4/7**
+(gemessene Reichweite im Einsamkeits-Thema), und **Thumbnail B**, zu dem
+gehört, dass Zeile 15 dasselbe sagen würde wie der Titel.
+
+**Der Doppelschnitt-Check ist im Paket dokumentiert:** der Trump-Short von
+Shorts II liegt bei 3200,3–3270,4, Cinematics nächste Fenster enden bei
+3089,9 und beginnen bei 3645,8. **Kein Überlapp.**
+
+**Nur eine Frage blockiert den Sonntag:** Tempo 1,1 plus Fundraiser, ja oder
+nein. Daran hängen alle 26 Kapitelmarken, und das Nachrechnen kostet eine
+Stunde und braucht das fertige Video — **vor** dem Upload.

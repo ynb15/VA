@@ -99,7 +99,7 @@ ERLEDIGT = {
     # T-5 am 08.11. erfuellt, 16 Minuten nach dem Auftrag: sechs Thumbnails
     # aus gemessenen Gesichtern (b12512d, claude/thumbnails), 1280x720.
     "Rick Strassman": {10, 8, 6, 5, 3, 2},
-    "Ken Stern":      {10, 8, 6, 5, 3},
+    "Ken Stern":      {10, 8, 6, 5, 3, 2},
 }
 
 # Entscheidungspunkte: Tag -> was an diesem Tag entschieden werden muss, und
