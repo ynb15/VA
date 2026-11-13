@@ -217,3 +217,24 @@ umdreht und der Satz kurz bleibt (*„What if we're not here to worship God -
 but to build him?"*). Meine schwache vom 28.10. hatte einen Nebensatz und
 setzte voraus, dass der Leser weiss, was AI Alignment ist.
 **Eine Einstiegsfrage mit Nebensatz ist keine Einstiegsfrage.**
+
+## Nachtrag 13.11. — zwei Formeln, die er zurueckgezogen hat
+
+**1. `we go far past the highlight reel` ist gestrichen.** Woertlich von ihm:
+*„Ich will nie wieder die Formulierung lesen. Das ist so eine generische
+AI-Scheisse."* Sie stand oben im Bauplan als **4× belegte eigene Formel** —
+und genau das war die Falle: **vier Belege machen eine Formel zu seiner,
+nicht zu einer guten.** Was er viermal geschrieben hat, kann er trotzdem satt
+haben, und eine Wendung, die beim vierten Mal nach Schablone klingt, ist
+verbraucht, egal wer sie erfunden hat.
+Die Scharnierformel bleibt, die Variante wechselt: **`In this episode we
+explore:`** ist belegt und unverbraucht.
+→ betrifft: alle Content-Agenten
+
+**2. `👉 vor jedem Link, ausnahmslos` war falsch gemessen.** Woertlich von
+ihm: *„Das Finger-Emoji wird nur verwendet, wenn wir Clips veroeffentlichen
+und zur Main-Folge verlinken."*
+**In einer Folgenbeschreibung stehen die Links mit `→`** — so wie seine
+Spotify- und Apple-Zeilen es ohnehin immer getan haben. Dass die Zeilen
+direkt untereinander standen und verschiedene Zeichen trugen, haette mir
+auffallen muessen: **das `ausnahmslos` war mein Wort, nicht seins.**

@@ -40,14 +40,19 @@ Arbeit, keine Schaetzung.
 
 ## Beschreibung
 
+**Fassung 2, 13.11.** — vier Aenderungen von ihm: `issues` war unklar und die
+zweite Haelfte der Einstiegsfrage trug nicht; statt des Buchtitels steht jetzt
+die Konversion; `we go far past the highlight reel` ist gestrichen; und das
+`👉` faellt weg, es gehoert nur unter Clips, die auf die Folge verlinken.
+
 ```
-What if America isn't actually divided over the issues – and the man who ran NPR for nine years went looking for the proof?
+What if Americans don't disagree any more than they did fifty years ago – and just hate each other a lot more?
 
-Ken Stern ran NPR for nine years, after working as campaign counsel for Bill Clinton. Then he did the thing almost nobody in his world does: he left his own bubble on purpose. He went pig hunting in Texas because Tucker Carlson told him to, sat in evangelical churches, and wrote Republican Like Me about it. He is now 63, an introvert, and twelve days into a year of talking to strangers.
+Ken Stern ran NPR for nine years, after working as campaign counsel for Bill Clinton. Then he did the thing almost nobody in his world does: he left his own bubble on purpose. He went pig hunting in Texas because Tucker Carlson told him to, sat in evangelical churches, and spent a year inside conservative America. He came out of that year a Republican. He is now 63, an introvert, and twelve days into a year of deliberately talking to strangers.
 
-In this episode of Man's Search for Meaning, we go far past the highlight reel:
+In this episode we explore:
 
-• Why the gap between the two sides is not about the issues at all
+• Why the gap between the two sides is not about policy at all
 • What chronic loneliness quietly does to the human body
 • The joke his neighbours told every summer that stopped being funny
 • Why the decline of churches, unions and PTAs may cost us more than politics
@@ -56,7 +61,11 @@ In this episode of Man's Search for Meaning, we go far past the highlight reel:
 An unfiltered, deeply human conversation about belonging, trust, aging and the cost of living apart.
 
 Get in touch with Ken:
-👉 LINKS FEHLEN MIR
+→ His book, Healthy to 100: How Strong Social Ties Lead to Long Lives
+→ The Longevity Project: https://www.longevity-project.com
+→ Century Lives, his podcast with the Stanford Center on Longevity: https://www.longevity-project.com/centurylives
+→ His column on social connection at USA Today
+→ Instagram and TikTok: @HANDLE
 
 Here's the timestamps:
 <Kapitelmarken, siehe unten>
@@ -68,12 +77,26 @@ Prefer listening on the go? You can find this episode on:
 #KenStern #Loneliness #MansSearchForMeaning
 ```
 
-**Rumpf 186 Woerter**, im Korridor 145–190.
+**Rumpf 182 Woerter**, im Korridor 145–190.
 
-**Was mir fehlt:** Kens Links. Er nennt im Gespraech TikTok, Instagram,
-seinen Newsletter und eine **monatliche Kolumne fuer USA Today**
-(ab 1:43:52) — die Adressen stehen nirgends im Material. Dazu die
-Spotify- und Apple-Links der Folge.
+**Zur Einstiegsfrage:** `issues` war Fachsprache aus Kens Mund (*issue
+polarization*). Was er meint, steht bei **00:41:21** — die Meinungs-
+verschiedenheiten haben sich in fuenfzig Jahren kaum veraendert, die Abneigung
+gegeneinander hat sich mehr als verdoppelt. Die neue Fassung sagt das in
+Alltagssprache und die zweite Haelfte dreht die erste wirklich um.
+
+**Zur Konversion:** belegt aus seinem eigenen Mund im Gespraech
+(**01:23:30**, Yannicks Frage *„while going from Democrat to Republican to
+Independent"*, der er nicht widerspricht) und aus dem oeffentlichen Bestand.
+**Er ist heute Independent, nicht mehr Republikaner** — wenn das mitsoll,
+haengt hinter dem Satz: *„He came out of that year a Republican. He is an
+Independent today."* Kostet sieben Woerter und ist genauer.
+
+**Was mir fehlt:** Kens Instagram- und TikTok-Handle. Dass es beide gibt, ist
+belegt (Autorenzeile unter einem seiner Artikel: *„You can follow his year of
+living socially on Instagram and TikTok"*), die Handles stehen in keiner
+Quelle, die diese Session erreichen darf. Dazu die Spotify- und
+Apple-Adressen der Folge. Alles andere steht.
 
 ---
 
