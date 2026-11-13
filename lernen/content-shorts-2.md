@@ -6,6 +6,85 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Groesse gemessen, Schriftart nicht geprueft — und genau die war falsch (13.11.)
+
+Gestern hatte ich ihm geschrieben, die Schrift sei wieder richtig, weil
+Groesse (54 px Versalhoehe) und Zeilenhoehe (1140) am ausgelieferten
+Meaningful-Short nachgemessen waren. Seine Antwort: *„Und die Schrift ist
+immer noch die falsche. Was zur Hölle passiert hier?"*
+
+Am Wort „OTHERS", das in beiden Shorts vorkommt, auf die Pixel gemessen:
+
+| | Kasten | Strichstärke | Gelbton |
+|---|---|---|---|
+| Meaningful (akzeptiert) | 313 × 54 | **0,667** | RGB(248,240,57) |
+| Trump Fassung 2 | 318 × 54 | **0,458** | RGB(253,211,46) |
+
+**Gleiche Höhe, gleiche Breite, 43 % dünnere Striche.** Eine andere
+Schriftart. Ich hatte zwei Kennzahlen geprüft und die dritte — die Form —
+gar nicht angesehen, obwohl ein Blick auf die vergrößerte Maske sie sofort
+gezeigt hätte.
+
+→ betrifft: jeden Stilvergleich. **Zwei übereinstimmende Kennzahlen sind
+kein Beweis für Übereinstimmung.** Bei Schrift gehören drei Dinge geprüft:
+Versalhöhe, Strichstärke (Füllgrad der Maske) und Farbe. Und zwar an der
+vergrößerten Maske, nicht an Zahlen allein — `(R>205)&(G>160)&(B<100)` im
+Untertitelband, Bounding Box, Füllgrad, Median-RGB.
+
+## Der Look haengt an der Maschine, nicht am Code (13.11.)
+
+Im Renderer steht `FONT = "DejaVu Sans"`, seit dem ersten Commit am 19.10.
+unverändert. Trotzdem zeigen **alle** Shorts vor dem Trump-Short (Ubuntu,
+Meaningful, Aging, Craig, Aaronson) dieselbe schwere Grotesk mit Gelbton
+RGB(248,240,57) — und meine beiden Trump-Fassungen DejaVu Sans Bold mit
+RGB(253,211,46), dem **reinen Stilwert** der ASS-Datei.
+
+Erklärung: auf der alten Maschine war DejaVu Sans nicht installiert, libass
+hat auf eine schwere Grotesk ausgewichen, und **dieser Fallback ist der
+Look, den er abgenommen hat.** Mein Container wurde zwischen dem 11. und
+12.11. neu gebaut; seitdem ist DejaVu Sans da und der Renderer bekommt, was
+er anfordert. Der Look hat sich geändert, ohne dass jemand eine Einstellung
+geändert hat.
+
+Alle 17 installierten Familien gegen die Maske geprüft: bester Treffer
+**Inter Display Black** (IoU 0,78 gegen 0,65 für DejaVu). Kein Font auf
+dieser Maschine erreicht 0,667 Füllgrad — die Schrift der akzeptierten
+Shorts ist hier nicht mehr vorhanden.
+
+→ betrifft: alle Content-Agenten. **Ein Stilwert, der von installierten
+Schriften abhängt, ist nicht reproduzierbar, solange er nicht gepinnt ist.**
+Zwei Dinge gehören getan, beide bei Shorts I, dem das Werkzeug gehört:
+ein Schalter `--font`, und die Schriftdatei mit ins Repo statt auf die
+Maschine. Beschrieben, nicht gebaut — Fremdwerkzeug.
+Bis dahin: **vor jedem Rendern einen Probesatz gegen das zuletzt
+abgenommene Short desselben Kanals messen**, Form inbegriffen.
+
+## Ein Musikbett braucht zwei Grenzen, nicht eine (13.11.)
+
+*„du hast Mom's Got Work an der völlig falschen Stelle eingesetzt. Man hört
+die letzten 10 Sekunden gefühlt gar nichts mehr von dem Song."*
+
+Ich hatte den **Einsatz** sauber gemessen (Sprung der Energie über 2 kHz bei
+1:00,75) und nie geprüft, wo das Bettfenster **endet**. 1:00,75 + 51,9 s =
+1:52,68 — und „Mom's Got Work" hat ab **1:41** sein eigenes Outro, einen
+Abfall von −19 dB auf −47 dB. Die letzten 11 Sekunden lagen auf dem
+Ausklang des Songs, darüber noch meine eigene Ausblende. Doppelt leise.
+
+Bettpegel im fertigen Short, durch Subtraktion gemessen:
+
+| | 38 s | 42 s | 44 s | 46 s | 48 s | 50 s |
+|---|---|---|---|---|---|---|
+| ab 1:00,75 | −44 | −49 | −56 | −62 | −58 | −65 |
+| ab 0:48,50 | −42 | −45 | −44 | −41 | −45 | −50 |
+
+→ betrifft: jedes Musikbett. **Erst den Körper des Stücks bestimmen (Ende
+des Intros bis Anfang des Outros, am RMS über die ganze Länge), dann den
+Einsatz darin wählen — so, dass `Einsatz + Shortlänge` vor dem Outro
+liegt.** Und wenn das Stück eine ruhige Stelle hat: die gehört an den
+Anfang des Shorts, nie ans Ende. Die dichteste Stelle gehört unter den
+Schluss.
+
+
 ## Die Standardwerte des Renderers sind nicht die Werte des Kanals (13.11.)
 
 Seine erste Reaktion auf das Trump-Short: *„ich bin schockiert darüber, wie

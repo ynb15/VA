@@ -1,4 +1,4 @@
-# Ken Stern — seine ehrliche Meinung zu Trump (13.11., Fassung 2)
+# Ken Stern — seine ehrliche Meinung zu Trump (13.11., Fassung 3)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme, Yannick lädt hoch.
 
@@ -6,6 +6,78 @@
 |---|---|---|
 | `YNB Podcast Ken Stern Trump (Moms Got Work).mp4` | 51,9 s | Stimme + Bett bis zum letzten Bild |
 | `YNB Podcast Ken Stern Trump.mp4` | 51,9 s | nur Stimme |
+
+## Fassung 3 (13.11.) — Schriftart und Musikfenster
+
+*„du hast Mom's Got Work an der völlig falschen Stelle eingesetzt. Man hört
+die letzten 10 Sekunden gefühlt gar nichts mehr von dem Song. Und die
+Schrift ist immer noch die falsche."*
+
+### Die Musik: ein Bett braucht zwei Grenzen, nicht eine
+
+„Mom's Got Work" hat ab **1:41** sein eigenes Outro — Abfall von −19 dB auf
+−47 dB bis 1:52. Mein Bett lief von 1:00,75 bis **1:52,68**, die letzten
+11 Sekunden also auf dem Ausklang des Songs, darüber noch meine eigene
+Ausblende.
+
+Mein Fehler war die Methode: der **Einsatz** war sauber gemessen (2-kHz-
+Sprung), das **Ende** des Fensters nie geprüft.
+
+Jetzt **ab 0:48,50**: das Bett endet bei 1:40,4, noch im vollen Teil, und
+die dichteste Stelle des Titels (1:30–1:40) liegt unter dem Schluss des
+Shorts. Bettpegel im fertigen Short, durch Subtraktion:
+
+| | 38 s | 42 s | 44 s | 46 s | 48 s | 50 s |
+|---|---|---|---|---|---|---|
+| ab 1:00,75 | −44 | −49 | −56 | −62 | −58 | −65 |
+| **ab 0:48,50** | −42 | −45 | −44 | −41 | −45 | −50 |
+
+Preis: die ruhige Stelle des Titels (0:55–1:00) liegt jetzt bei Sekunde
+7–12 des Shorts. Kein 52-s-Fenster vermeidet beides.
+
+### Die Schriftart — nicht die Größe
+
+Fassung 2 hatte die richtige Größe und die falsche Schrift. Am Wort
+„OTHERS", das in beiden Shorts vorkommt:
+
+| | Kasten | Strichstärke | Gelbton |
+|---|---|---|---|
+| Meaningful (akzeptiert) | 313 × 54 | 0,667 | RGB(248,240,57) |
+| Trump Fassung 2 | 318 × 54 | 0,458 | RGB(253,211,46) |
+| **Trump Fassung 3** | 290 × 52 | 0,562 | RGB(246,239,56) |
+
+Gleiche Höhe, gleiche Breite, **43 % dünnere Striche** — eine andere
+Schriftart. Ich hatte zwei Kennzahlen geprüft und die Form nicht angesehen.
+
+**Ursache:** `FONT = "DejaVu Sans"` steht seit dem ersten Commit (19.10.)
+unverändert im Renderer. Auf der Maschine, auf der Ubuntu, Meaningful,
+Aging, Craig und die Aaronson-Shorts entstanden, war DejaVu Sans **nicht
+installiert**; libass wich auf eine schwere Grotesk aus — und das ist der
+abgenommene Look. Der Container wurde zwischen 11. und 12.11. neu gebaut,
+seitdem ist DejaVu Sans da. Dass alle älteren Shorts RGB(248,240,57) zeigen
+und nur die Trump-Fassungen RGB(253,211,46), den **reinen Stilwert** der
+ASS-Datei, bestätigt es.
+
+Alle 17 installierten Familien gegen die Buchstabenmaske geprüft:
+
+| Familie | IoU |
+|---|---|
+| **Inter Display Black** | **0,794** |
+| Inter Black | 0,774 |
+| Inter Display ExtraBold | 0,745 |
+| DejaVu Sans | 0,658 |
+
+Fassung 3 läuft auf **Inter Display Black, Größe 87**, plus dem gemessenen
+Gelbton. Es ist die nächstbeste, nicht dieselbe: Striche noch 16 % dünner,
+Wort 7 % schmaler. Die Schrift der akzeptierten Shorts ist auf dieser
+Maschine nicht mehr vorhanden.
+
+**Gerendert mit einer eigenen Kopie:** `video/render-inter-shorts2.py`,
+zwei Zeilen anders als `video/shorts-render.py` (FONT, GELB). Der geteilte
+Renderer gehört Shorts I und ist unangetastet. Der dauerhafte Weg ist ein
+Schalter `--font` dort plus die Schriftdatei im Repo statt auf der
+Maschine — **Shorts I beschrieben, nicht gebaut.**
+
 
 Plan: `video/plaene/ken-trump-plan.json`.
 Korrekturen: `video/korrekturen-ken-shorts2.txt`.
@@ -31,7 +103,7 @@ python3 -I video/shorts-render.py \
   --srt-out "YNB Podcast Ken Stern Trump.srt"
 ```
 
-## Fassung 2 (13.11.) — was sich geändert hat
+## Fassung 2 (13.11.) — Logo, Einstieg, erster Musikversuch
 
 Seine Ansage: *„ich bin schockiert darüber, wie groß plötzlich das Logo ist
 und wie du einfach die Schrift verändert hast … leg doch noch einen anderen

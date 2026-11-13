@@ -1,4 +1,4 @@
-# Ken Stern — seine ehrliche Meinung zu Trump · Fassung 2 (51,9 s · Hauptteil 48,1 s + Outro 3,8 s)
+# Ken Stern — seine ehrliche Meinung zu Trump · Fassung 3 (51,9 s · Hauptteil 48,1 s + Outro 3,8 s)
 # Rohzeit 0:53:23,30–0:54:30,40, abzueglich drei Stuecke · Tempo 1,1 · mit „Mom's Got Work"
 #
 # Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
@@ -17,104 +17,103 @@
  11  [00:43.49–00:47.73]  HOPEFULLY ELECTIONS WILL STEP US AWAY FROM I THINK A PRECIPICE THAT IS VERY DANGEROUS
 
 # ══════════════════════════════════════════════════════════════════
-# LOGO UND SCHRIFT — mein Fehler, gemessen und behoben
+# 1. DIE MUSIK — Du hast genau richtig gehoert, und ich weiss warum
 # ══════════════════════════════════════════════════════════════════
-# Du hattest recht, und zwar genauer als Du denkst. Nachgemessen an den
-# ausgelieferten Dateien:
+# „Mom's Got Work" hat ab 1:41 sein EIGENES Outro. Der Titel faellt dort
+# von -19 dB auf -47 dB bis 1:52.
 #
-#                        Logo           Schrift („OTHERS")   Zeilenhoehe
-#   Ubuntu              281 px          313 x 54 px          1140
-#   Meaningful          267 px          313 x 54 px          1140
-#   Aging               281 px          —                    1140
-#   Trump Fassung 1     481 px  <--     294 x 49 px  <--     1200  <--
-#   Trump Fassung 2     279 px          317 x 54 px          1140
+# Mein Bett lief von 1:00,75 bis 1:52,68 — die letzten 11 Sekunden lagen
+# also auf dem Ausklang des Songs, und darueber lief noch meine eigene
+# Ausblende. Doppelt leise. Genau das, was Du gehoert hast.
 #
-# WAS PASSIERT IST: der Renderer hat Standardwerte, und die sind NICHT
-# die des Kanals. Logo 520 statt 300, Schrift 78 statt 84. Bei den drei
-# anderen Ken-Shorts hatte ich beide Schalter gesetzt; beim Trump-Short
-# habe ich den Aufruf neu zusammengebaut und nur das genommen, was in der
-# Dokumentation steht — und genau diese zwei Werte standen dort nicht.
-# Das Logo war damit 1,7-mal so breit.
+# Mein Fehler war die Methode: ich habe den EINSATZ gemessen (Sprung der
+# Energie ueber 2 kHz) und nie geprueft, ob das Bettfenster noch ganz im
+# Koerper des Stuecks liegt. 1:00,75 + 51,9 s = 1:52,68, also 11 s hinter
+# dem Anfang des Song-Outros.
 #
-# Die Schrift war uebrigens nicht groesser, sondern 7 % KLEINER (78 statt
-# 84). Was ins Auge gesprungen ist, war das Logo; die Schrift sah dadurch
-# und durch die 60 px tiefere Zeile anders aus. Beides ist jetzt wieder
-# auf den Werten der anderen drei.
+# JETZT: Bett ab 0:48,50. Damit endet es bei 1:40,4 — noch im vollen Teil,
+# und die dichteste Stelle des Titels (1:30-1:40) liegt unter dem Schluss
+# des Shorts.
 #
-# Dass 84 der richtige Wert ist, bestaetigt der Renderer selbst: seine
-# Zeilenumbruchgrenze ist 11,8 em, und 11,8 x 84 = 991 px — das fuellt die
-# nutzbare Zeilenbreite von 1000 px genau aus. Bei 78 blieben 80 px leer.
+# Durch Subtraktion gemessen, Bettpegel im fertigen Short:
+#          38 s   42 s   44 s   46 s   48 s   50 s
+#   ALT    -44    -49    -56    -62    -58    -65   <- bricht weg
+#   NEU    -42    -45    -44    -41    -45    -50   <- haelt bis zur Ausblende
 #
-# ZEILENHOEHE ZURUECK AUF 1140. Meine 1200 waren unnoetig: ich hatte sein
-# Kinn in der zweiten Kamera auf 1124 geschaetzt. Am gerenderten Bild
-# nachgemessen liegt es bei 1115, und die Zeile sitzt an der engsten
-# Stelle 25 px darunter, auf dem Hals — genau wie bei den anderen dreien.
+# Preis: der Titel hat bei 0:55-1:00 eine ruhige Stelle, die jetzt bei
+# Sekunde 7-12 des Shorts liegt. Das ist ein Atmen, kein Loch — und mir
+# lieber als ein totes Ende. Kein anderes 52-s-Fenster vermeidet beides.
 
 # ══════════════════════════════════════════════════════════════════
-# NEUER EINSTIEG: „WE'RE LED BY A GUY"
+# 2. DIE SCHRIFT — Du hattest recht, und es ist nicht die Groesse
 # ══════════════════════════════════════════════════════════════════
-# Ich habe das so gelesen, dass das SHORT dort anfangen soll. Vorne sind
-# damit 3,1 s weg („I think a lot of my views today are colored by the
-# fact that"), und die 0,8 s Totale am Anfang entfallen mit — das Short
-# oeffnet direkt auf seiner Nahaufnahme.
-# Der Schnitt liegt in der Sprechpause zwischen „that" und „we're"
-# (Rohzeit 0:53:23,30). Vom „that" bleiben 0,05 s Ausklang bei -45 dB
-# stehen, unhoerbar; in der Schrift ist das Wort raus.
-# FALLS DU DIE MUSIK GEMEINT HAST und nicht den Bildanfang: sag es, dann
-# setze ich das Bett dort ein statt bei 0,00. Ist ein Durchlauf.
-
-# ══════════════════════════════════════════════════════════════════
-# MUSIK: Mom's Got Work (Adam Taylor), ab 1:00,75 des Titels
-# ══════════════════════════════════════════════════════════════════
-# Der Einsatzpunkt ist gemessen, nicht geraten. Regel: das Bett faengt
-# dort an, wo die Energie ueber 2 kHz springt — nicht bei Sekunde 0, wo
-# der Titel zwar schon vollen Pegel, aber noch keine Textur hat.
-# Zur Eichung dieselbe Messung an „In This Shirt": dort liegt der von Dir
-# abgenommene Einsatz (0:23,25) exakt auf so einem Sprung aus einer Senke
-# in ein Niveau, das haelt.
-# „Mom's Got Work" hat mehrere helle Fills (0:14, 0:26, 0:36), die aber
-# jedes Mal wieder abfallen. Der eine Sprung, der HAELT, liegt bei
-# 1:00,75: von 4,3 auf 13,8 dB in einem Schritt, danach 25-35 dB bis
-# 1:50. Bett 0,00-51,93 s, laeuft bis zum letzten Bild und blendet ueber
-# dem Outro aus (3,8 s ab 48,13 s). Keine Schleife noetig.
-# Durch Subtraktion geprueft: -42 dB waehrend der Rede, -58 bei 48 s,
-# -65 bei 50 s, -79,8 bei 51,6 s.
-# Pegel: Stimme -33,5 dB, Bett -15,4 dB -> 10 dB unter der Stimme.
-# Ohne Musik: „YNB Podcast Ken Stern Trump.mp4" im Repo.
-# Dateiname ohne Apostroph („Moms Got Work"), damit er in Skripten nicht
-# stolpert — sag Bescheid, wenn Du ihn mit haben willst.
-
-# ══════════════════════════════════════════════════════════════════
-# WAS HERAUSGENOMMEN IST — drei Stuecke, zusammen 14,2 s
-# ══════════════════════════════════════════════════════════════════
-# 1) bei 00:18.9 — 4,4 s  (roh 0:53:44,10–0:53:48,53)
-#    „So I'm, you know, my views are now, I thought we were sort of,"
-# 2) bei 00:28.7 — 5,1 s  (roh 0:53:59,30–0:54:04,43)
-#    „So I think my concerns," + 3,2 s Pause
-# 3) bei 00:43.4 — 4,6 s  (roh 0:54:20,60–0:54:25,20)
-#    „And hopefully," + 3,4 s Pause
-# Alle drei reiner Anlauf. Schnitt 2 liegt genau auf einem Kameraschnitt
-# und ist unsichtbar; 1 und 3 sind Sprungschnitte auf einer Satzgrenze.
+# Ich hatte Dir letztes Mal geschrieben, die Schrift sei jetzt richtig,
+# weil ich Groesse und Hoehe gemessen hatte. Beides stimmte. Es war
+# trotzdem die falsche Schrift — ich hatte die SCHRIFTART nicht geprueft.
 #
-# EIN HOLPERER IST STEHENGEBLIEBEN, Zeile 9/10:
-#   „and what it is wrecked on American society". Er sagt woertlich
-#   „and what it is — uh — wrecked on — um — American society".
-#   Geglaettet hiesse: ihm Worte in den Mund legen. Zwei Auswege, wenn es
-#   Dich stoert: „what it HAS wrecked" schreiben, oder den halben Satz
-#   raus (dann 5,6 s kuerzer).
+# Am Wort „OTHERS", das in beiden Shorts vorkommt, auf die Pixel gemessen:
+#
+#                        Kasten    Strichstaerke   Gelbton
+#   Meaningful (gut)     313x54    0,667           RGB(248,240,57)
+#   Trump Fassung 2      318x54    0,458           RGB(253,211,46)
+#   Trump Fassung 3      290x52    0,562           RGB(246,239,56)
+#
+# Gleiche Hoehe, gleiche Breite — aber Fassung 2 hatte 43 % duennere
+# Striche. Es war eine komplett andere Schriftart.
+#
+# WAS PASSIERT IST: im Renderer steht `FONT = "DejaVu Sans"`, seit dem
+# ersten Commit am 19.10. unveraendert. Auf der Maschine, auf der Ubuntu,
+# Meaningful, Aging, Craig und die Aaronson-Shorts entstanden sind, war
+# diese Schrift gar nicht installiert — es wurde eine schwere Grotesk
+# eingesetzt, und DAS ist der Look, den Du abgenommen hast. Mein Container
+# wurde zwischen dem 11. und 12.11. neu gebaut, seitdem IST DejaVu Sans da,
+# und seitdem bekommt der Renderer, was er anfordert. Der Look hat sich
+# geaendert, ohne dass jemand eine Einstellung geaendert hat.
+#
+# Dass alle aelteren Shorts denselben Gelbton RGB(248,240,57) haben und nur
+# meine beiden Trump-Fassungen RGB(253,211,46) — den reinen Stilwert —
+# bestaetigt das: auch die Farbe kam aus derselben anderen Umgebung.
+#
+# WAS ICH GEMACHT HABE: Ich habe alle 17 installierten Schriftfamilien
+# gegen die Buchstabenmaske von Meaningful geprueft. Bester Treffer:
+# Inter Display Black (Uebereinstimmung 0,78 gegen 0,65 fuer DejaVu).
+# Damit ist Fassung 3 gesetzt, Groesse 87, plus der gemessene Gelbton.
+#
+# EHRLICH BLEIBT: es ist die naechstbeste, nicht dieselbe. Die Striche sind
+# noch 16 % duenner als bei Meaningful, das Wort 7 % schmaler. Die Schrift,
+# mit der Deine akzeptierten Shorts gesetzt sind, ist auf dieser Maschine
+# nicht mehr da, und ich kann sie nicht benennen — ich kann nur sagen, dass
+# es keine der 17 hier installierten ist.
+#
+# WAS ICH VON DIR BRAUCHE, um es endgueltig zu loesen: den Namen oder die
+# Datei der Schrift, die Deine Shorts benutzen. Dann ist es ein Durchlauf.
+# Falls Du das nicht hast, ist Inter Display Black mein Vorschlag als neuer
+# Festwert fuer alle kommenden Shorts — dann sind wenigstens alle gleich.
+#
+# UND: ich habe dafuer eine EIGENE KOPIE des Renderers benutzt
+# (scratchpad/ken/render-inter.py, zwei Zeilen anders). Der geteilte
+# `video/shorts-render.py` gehoert Shorts I und ist unangetastet. Der
+# dauerhafte Weg waere ein Schalter `--font` dort — das beschreibe ich
+# Shorts I, baue es aber nicht in sein Werkzeug.
 
 # ══════════════════════════════════════════════════════════════════
-# AUFBAU
-#   0:00.0–0:22.7  Ken, Nah (Kamera 1)
-#   0:22.7–0:28.7  Totale, Kasten auf Ken
-#   0:28.7–0:48.1  Ken, Nah (Kamera 2)
-# Zwei Ken-Kameras mit verschiedener Kopfposition (Quell-x 1000 bzw. 900),
-# darum zwei Kaesten: 648 und 548.
+# UNVERAENDERT GEGENUEBER FASSUNG 2
+# ══════════════════════════════════════════════════════════════════
+# Einstieg auf „WE'RE LED BY A GUY" (roh 0:53:23,30).
+# Logo 279 px (Ubuntu 281, Meaningful 267). Zeilenhoehe 1140.
+# Drei Stuecke raus, zusammen 14,2 s:
+#   1) bei 00:18.9 — 4,4 s  „So I'm, you know, my views are now, …"
+#   2) bei 00:28.7 — 5,1 s  „So I think my concerns," + 3,2 s Pause
+#   3) bei 00:43.4 — 4,6 s  „And hopefully," + 3,4 s Pause
+# Holperer in Zeile 9/10 steht noch drin: „and what it is wrecked on
+#   American society" — so gesagt, mit zwei Denkpausen.
+# Aufbau: 0:00-0:22.7 Ken Nah (Kamera 1) · 0:22.7-0:28.7 Totale ·
+#   0:28.7-0:48.1 Ken Nah (Kamera 2). Zwei Kaesten, 648 und 548.
 #
 # ABNAHME (gemessen)
 #   1080x1920 · 48 kHz · 51,9 s · Outro da · 52 Untertitel · Ortscheck sauber
-#   Hauptteil -29,8 LUFS — gleich mit Ubuntu und Meaningful. Spitze -4,8 dB.
-#   „Kein Musikbett" meldet FEHLER bei -51,1 dB — das ist die Musik.
+#   Hauptteil -29,8 LUFS — gleich mit Ubuntu und Meaningful. Spitze -4,7 dB.
+#   „Kein Musikbett" meldet FEHLER bei -51,3 dB — das ist die Musik.
 #   Ohne Musik: alle Pruefungen bestanden (-77,2 dB).
 #
 # NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.
