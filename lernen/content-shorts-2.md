@@ -6,6 +6,90 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Mein Zweig trug eine veraltete Kopie des geteilten Werkzeugs (13.11.)
+
+Drei Fassungen lang habe ich die falsche Schrift geliefert und zweimal
+behauptet, sie sei jetzt richtig. Seine Antwort: *„Frag die anderen
+Agenten. Die Information liegt schon lange überall."*
+
+Sie lag tatsächlich überall:
+
+- `claude/content-assistant:video/preset-ynb.md` — **Isabelles Preset**, das
+  er am 21.10. übergeben hat, mit allen sechs Stilwerten.
+- `claude/content-gastauftritte:LERNEN.md` Zeile 54 — seit dem 21.10.:
+  *„Schrift **Inter Black** (nicht DejaVu Sans Bold) · Größe **82** · Gelb
+  **#F9F13A** · Zeilenbreite 72 % · Logo 28 % auf Höhe 0,87 · Gradation
+  entsättigt-kühl (nicht warm)."*
+
+**Die Ursache: `video/shorts-render.py` auf meinem Zweig hatte 1271 Zeilen,
+die aktuelle Fassung auf `claude/content-assistant` hat 1608.** Meine Kopie
+war der Stand vor dem 21.10. Die aktuelle hat das Preset fest eingebaut —
+`video/fonts/Inter-Black.otf`, Größe 82, sein Gelb, Logo 28 %, `--look
+preset`. Meine alte Kopie hatte `FONT = "DejaVu Sans"` als Festwert und
+kannte `--look preset` nicht einmal.
+
+Und warum keine installierte Schrift gepasst hat: das Preset nimmt Inter
+Black als Ersatz für Eveleth und zieht sie auf **112 % Breite plus 2 px
+Strich** in der Textfarbe (`SCALE_X = 112`, `FETTER = 2`). Deshalb maß ich
+Füllgrad 0,667, den keine reine Schrift erreicht. **Durch Nachmessen ist das
+nicht zu finden.**
+
+Ergebnis nach dem Abgleich: Kasten 312 × 54 gegen 313 × 54, Füllgrad 0,665
+gegen 0,667, Gelb RGB(248,240,57) identisch, Übereinstimmung der
+Buchstabenmaske **0,945** (vorher 0,65).
+
+→ betrifft: alle Content-Agenten. **Ein geteiltes Werkzeug, das in meinem
+Zweig als Kopie liegt, ist kein geteiltes Werkzeug — es ist ein Abzug mit
+Verfallsdatum.** Vor jedem Lauf gegen den Besitzerzweig prüfen:
+`git log --oneline -1 origin/claude/content-assistant -- video/shorts-render.py`
+gegen den eigenen Stand, und bei Abweichung
+`git checkout origin/claude/content-assistant -- video/shorts-render.py`.
+Das gilt genauso für `fonts/`, `luts/` und `korrekturen.txt`.
+
+## „Erst nach der Vorlage fragen, dann messen" — die Regel stand da, ich habe gemessen (13.11.)
+
+Im selben LERNEN-Eintrag vom 21.10., den ich nicht gelesen habe, steht die
+Regel, die mir drei Fassungen erspart hätte:
+
+> *„An Ausgabebildern abgelesene Stilwerte sind ein **Notbehelf, bis die
+> Quelldatei da ist**. Erst nach der Vorlage fragen, dann messen — nicht
+> umgekehrt. Eine Messung am Ergebnis trifft das Ergebnis, nicht die
+> Absicht."*
+
+Ich habe genau das Gegenteil getan, und zwar immer gründlicher: Logobreite
+über weiße Pixel, Schriftgröße über die Versalhöhe, dann Strichstärke und
+Gelbton, dann 17 Schriftfamilien gegen eine Buchstabenmaske. Jede Messung
+war richtig. Alle zusammen haben die Absicht verfehlt, weil die Absicht in
+einer Datei stand.
+
+→ betrifft: alle. **Bevor ein Stilwert gemessen wird: `git grep` über alle
+Zweige nach der Quelle.** Ich hatte mir diese Regel nach dem
+ab_sekunde-Fehler selbst notiert (*„git grep über alle Zweige kostet fünf
+Sekunden"*) und sie beim zweiten Mal wieder nicht angewendet. Eine Regel,
+die man zweimal bricht, gehört nicht ins Lernfile, sondern in den ersten
+Handgriff jedes Auftrags.
+
+## Ein Musikbett braucht zwei Grenzen, nicht eine (13.11.)
+
+*„Man hört die letzten 10 Sekunden gefühlt gar nichts mehr von dem Song."*
+
+Ich hatte den **Einsatz** sauber gemessen (2-kHz-Sprung bei 1:00,75) und nie
+geprüft, wo das Fenster **endet**. 1:00,75 + 51,9 s = 1:52,68 — und „Mom's
+Got Work" hat ab **1:41** sein eigenes Outro, −19 dB auf −47 dB. Die letzten
+11 Sekunden lagen darauf, darüber noch meine eigene Ausblende.
+
+| Bettpegel im Short | 38 s | 42 s | 44 s | 46 s | 48 s | 50 s |
+|---|---|---|---|---|---|---|
+| ab 1:00,75 | −44 | −49 | −56 | −62 | −58 | −65 |
+| ab 0:48,50 | −42 | −44 | −44 | −41 | −45 | −49 |
+
+→ betrifft: jedes Musikbett. **Erst den Körper des Stücks bestimmen (Ende
+des Intros bis Anfang des Outros, am RMS über die ganze Länge), dann den
+Einsatz darin wählen — so, dass `Einsatz + Shortlänge` vor dem Outro
+liegt.** Eine ruhige Stelle des Stücks gehört an den Anfang des Shorts, die
+dichteste unter den Schluss.
+
+
 ## Groesse gemessen, Schriftart nicht geprueft — und genau die war falsch (13.11.)
 
 Gestern hatte ich ihm geschrieben, die Schrift sei wieder richtig, weil

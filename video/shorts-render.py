@@ -47,12 +47,61 @@ import imageio_ffmpeg
 
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 W, H = 1080, 1920
-FONT = "DejaVu Sans"
-GELB = "&H0030D5FF&"       # das Gelb seines Kanals, als Stilfarbe (ABGR)
+HIER = Path(__file__).resolve().parent
+
+# --- Sein Preset ----------------------------------------------------------
+# Alles unter dieser Linie kommt aus dem Ordner "YNB Shorts Preset", den er
+# am 21.10.2026 uebergeben hat: „ist jetzt der Filter und die Schrift, die
+# wir bisher fuer meine Shorts verwendet haben". Das sind seine Werte, nicht
+# meine Messung — wo sie sich unterscheiden, gelten seine.
+FONT_ORDNER = HIER / "fonts"
+LUT_VORGABE = HIER / "luts" / "ynb_look.png"
+
+
+def _schrift_waehlen():
+    """Eveleth, wenn sie in fonts/ liegt, sonst Inter Black als Ersatz.
+
+    Eveleth ist das Original aus CapCut und laesst sich nicht aus dem
+    Programm holen. Legt er die Datei in fonts/, wird sie genommen und das
+    Nachziehen unten entfaellt.
+    """
+    try:
+        dateien = sorted(d for d in FONT_ORDNER.iterdir()
+                         if d.suffix.lower() in (".otf", ".ttf"))
+    except OSError:
+        dateien = []
+    if not dateien:
+        return None, "DejaVu Sans", False
+    d = (next((x for x in dateien if "eveleth" in x.name.lower()), None)
+         or next((x for x in dateien if "inter" in x.name.lower()), dateien[0]))
+    name = d.stem.replace("-", " ")
+    try:
+        from PIL import ImageFont
+        fam, stil = ImageFont.truetype(str(d), 40).getname()
+        name = fam if stil.lower() in ("regular", "normal") else f"{fam} {stil}"
+    except Exception:
+        pass
+    return d, name, "eveleth" not in d.name.lower()
+
+
+FONT_DATEI, FONT, FONT_ERSATZ = _schrift_waehlen()
+# Inter Black ist schmaler und leichter als Eveleth. Sein Preset zieht den
+# Ersatz darum auf 112 % Breite und legt 2 px Strich in der Textfarbe nach.
+SCALE_X = 112 if FONT_ERSATZ else 100
+FETTER = 2 if FONT_ERSATZ else 0
+GROESSE = 82               # seine Schriftgroesse (vorher hier 78)
+KONTUR = 8                 # schwarze Kontur ringsum
+MAX_BREITE = int(W * 0.72)  # die Zeile wird nie breiter, Rand bleibt frei
+LIPPE_VORGABE = int(H * 0.70)   # Mitte der Zeile, wenn die Lippe nicht feststeht
+GELB = "&H003AF1F9&"       # #F9F13A, sein Gelb aus dem Preset (ABGR)
 WEISS = "&H00FFFFFF&"
-GELB_I, WEISS_I = "&H30D5FF&", "&HFFFFFF&"   # dieselben Farben als \\c im Text
-# Sein Look, abgelesen an den eigenen Shorts (Vorschaubilder, 20.10.2026):
-# warm, kontrastreich, Hintergrund abgesoffen, deutliche Vignette.
+GELB_I, WEISS_I = "&H3AF1F9&", "&HFFFFFF&"   # dieselben Farben als \\c im Text
+# Ohne LUT: die Annaeherung aus seinem Preset (dunkel, entsaettigt, kuehl —
+# der Oppenheimer-Filter). `--look warm` haelt die aeltere Annaeherung
+# bereit, die ich an seinen Vorschaubildern abgelesen hatte.
+LOOK_PRESET = ("eq=contrast=1.12:saturation=0.78:gamma=0.92:brightness=-0.03,"
+               "colorbalance=rs=-0.04:gs=0.02:bs=0.06:rm=0.03:gm=0.0:bm=-0.02,"
+               "vignette=PI/4.2")
 LOOK = ("eq=contrast=1.14:brightness=-0.02:saturation=1.16,"
         "colorbalance=rs=0.04:gs=0.01:bs=-0.05:rm=0.03:bm=-0.03,"
         "vignette=PI/4.5")
@@ -94,43 +143,112 @@ def cues_als_srt(cues, pfad, tempo=1.0, gross=True):
     """
     zeilen = []
     for i, c in enumerate(cues, 1):
-        text = " ".join(_anzeige(w["t"], gross) for w in c["woerter"])
-        zeilen.append(f"{i}\n{srt_time(c['start'] / tempo)} --> "
-                      f"{srt_time(c['end'] / tempo)}\n{text}\n")
+        # Einblendungen aus --srt haben keine Wortzeiten. Vorher griff diese
+        # Zeile blind auf c["woerter"] zu, und `--srt` zusammen mit
+        # `--srt-out` brach mit einem KeyError ab.
+        if c.get("woerter"):
+            text = " ".join(_anzeige(w["t"], gross) for w in c["woerter"])
+        else:
+            text = " ".join(_anzeige(t, gross) for t in (c.get("text") or "").split())
+        # Wer schon in der Zeit des fertigen Videos steht, wird nicht noch
+        # einmal durch das Tempo geteilt.
+        teiler = 1.0 if c.get("fertigzeit") else tempo
+        zeilen.append(f"{i}\n{srt_time(c['start'] / teiler)} --> "
+                      f"{srt_time(c['end'] / teiler)}\n{text}\n")
     Path(pfad).write_text("\n".join(zeilen), encoding="utf-8")
     return len(cues)
 
 
-SATZZEICHEN = ".,!?;:\u2026"
-# Was im Bild wegfaellt: alles, was nur Satzbau ist. `?` und `!` bleiben.
-STUMME_ZEICHEN = ".,;:\u2026"
+SATZZEICHEN = ".,!;:\u2026"
+# Das Fragezeichen bleibt stehen — seine Ansage vom 21.10.: die Frage soll
+# „in einer Einblendung mit einem Fragezeichen" stehen. Am 20.10. hatte er
+# das Gegenteil gesagt („wirkt total fehl am Platz"); die juengere Ansage
+# gilt. Punkt, Komma und Ausrufezeichen fallen weiter weg.
+# Eine Einblendung, die auf ein Fragezeichen endet, darf breiter werden als
+# die uebrigen: `MEANINGFUL TO YOU?` misst bei 82 px 884 px und passt nicht
+# in die 72 Prozent des Presets. Lieber diese eine Zeile 84 Prozent breit
+# als sie zu teilen oder kleiner zu setzen — dass eine Einblendung kleiner
+# gesetzt ist als die davor, war sein Einwand vom 20.10.
+FRAGE_BREITE = int(W * 0.84)
+# Eine Frage darf ueber zwei Zeilen laufen, ohne geteilt zu werden: libass
+# bricht selbst um (WrapStyle 0, Rand 40), und sie bleibt EINE Einblendung
+# mit dem Fragezeichen. „What makes life meaningful to you, Logan?" misst
+# bei 82 px 1918 px — in einer Zeile undarstellbar, ausser man verkleinert
+# die Schrift, und das hat er ausdruecklich nicht gewollt.
+FRAGE_MAX = 2 * (W - 80)
+# Luft links und rechts neben dem Kopfzeilenfeld. Ohne sie steht das Feld
+# auf dem Bildrand und sieht aus wie ein Fehler.
+KOPF_RAND = 40
 
 
 def _anzeige(wort, gross):
-    """Wort, wie es im Bild steht: ohne Punkt, aber mit Fragezeichen.
+    """Wort, wie es im Bild steht: ohne schliessendes Satzzeichen.
 
     Sein Einwand vom 20.10.: „du hast an zwei, drei Stellen noch einen Punkt
-    gemacht und ein Fragezeichen, das wirkt total fehl am Platz." Also fielen
-    erst alle Satzzeichen weg. Am selben Abend, am Aaronson-Short: „da wo ich
-    die Frage stelle, how safe is AI, danach sollte ein Fragezeichen kommen."
-
-    Beides stimmt, und es ist kein Widerspruch: **gestoert hat ihn ein
-    Fragezeichen, das keine Frage war** — eines, das Whisper an eine Aussage
-    gehaengt hatte. Ein echtes Fragezeichen traegt. Also faellt weiterhin
-    alles weg, was nur Satzbau ist (`. , ; : …`), und `?` und `!` bleiben
-    stehen. Sitzt eines falsch, ist das ein Hoerfehler und gehoert in
-    `korrekturen.txt`, nicht in eine Regel, die alle Fragezeichen abraeumt.
-
-    Fuer die TRENNUNG braucht das Werkzeug den Punkt weiterhin, deshalb
-    faellt er erst hier weg und nicht schon im Transkript. Apostrophe
-    bleiben: IT'S, THERE'S.
+    gemacht und ein Fragezeichen, das wirkt total fehl am Platz." Stimmt —
+    in Shorts steht kein Satzzeichen. Fuer die TRENNUNG braucht das Werkzeug
+    den Punkt aber weiterhin, deshalb faellt er erst hier weg und nicht
+    schon im Transkript. Apostrophe bleiben: IT'S, THERE'S.
     """
-    w = wort.rstrip(STUMME_ZEICHEN)
+    w = wort.rstrip(SATZZEICHEN)
     return w.upper() if gross else w
 
 
+def _ist_frage(woerter):
+    """Endet die Einblendung auf einem Fragezeichen?"""
+    return bool(woerter) and str(woerter[-1].get("t", "")).rstrip().endswith("?")
+
+
+_FONT_CACHE = {}
+
+
+def _font(groesse=None):
+    from PIL import ImageFont
+    g = int(groesse or GROESSE)
+    if g not in _FONT_CACHE:
+        _FONT_CACHE[g] = ImageFont.truetype(str(FONT_DATEI), g)
+    return _FONT_CACHE[g]
+
+
+def _libass_faktor(groesse=None):
+    """Wieviel kleiner libass setzt, als die Schriftgroesse vermuten laesst.
+
+    libass legt die Schriftgroesse nicht auf das Geviert, sondern auf
+    Oberlaenge plus Unterlaenge der Schrift. Inter Black meldet zusammen
+    1,21 Geviert, also steht die Zeile nur auf 0,826 der Groesse, mit der
+    PIL rechnet. Nachgemessen am gerenderten Bild: `WHAT MAKES LIFE` ist
+    bei 82 px 643 px breit, PIL sagt 776 — Verhaeltnis 0,829, der Wert aus
+    den Metriken 0,826. Ohne diese Korrektur misst der Umbruch 21 % zu
+    breit und teilt Dreier, die laengst passen.
+    """
+    g = int(groesse or GROESSE)
+    try:
+        auf, ab = _font(g).getmetrics()
+        return g / (auf + ab) if auf + ab else 1.0
+    except Exception:
+        return 1.0
+
+
+def _breite_px(text, groesse=None, kontur=True):
+    """Textbreite im Ausgabebild, in Pixel.
+
+    Seit die Schriftdatei selbst in fonts/ liegt, wird mit ihr gemessen:
+    Vorschub aus der Datei, der libass-Faktor oben, die Dehnung auf
+    SCALE_X Prozent und die Kontur ringsum. Fehlt die Datei oder PIL,
+    bleibt die alte Schaetzung in Geviert als Notnagel — die war an
+    DejaVu Sans Bold ausgezaehlt und passt zu einer anderen Schrift nur
+    ungefaehr.
+    """
+    g = int(groesse or GROESSE)
+    try:
+        roh = _font(g).getlength(text) * _libass_faktor(g)
+    except Exception:
+        roh = _breite_em(text) * g
+    return roh * SCALE_X / 100 + (2 * (KONTUR + FETTER) if kontur else 0)
+
+
 def _breite_em(text):
-    """Textbreite in Geviert — an DejaVu Sans Bold ausgemessen, nicht geraten.
+    """Notnagel: Textbreite in Geviert, an DejaVu Sans Bold ausgezaehlt.
 
     Gemessen wurde, indem Probezeilen in genau dem Stil gerendert und die
     weissen Pixel gezaehlt wurden: `COMPLETELY SUPPRESS` ist 11,59 Geviert
@@ -178,10 +296,11 @@ def kopfzeile_ass(text, pfad, dauer, groesse=96, hoehe_anteil=0.68,
     umgekehrt bestellt** — schwarzes Feld, weisse Schrift. `dunkel=False`
     dreht es auf das Original.
 
-    Die Feldbreite kommt aus der **gemessenen** Textbreite (`_breite_em`, an
-    echten Renderbildern kalibriert), nicht aus einer Schaetzung. `|` im Text
-    trennt Zeilen; ohne Trenner wird nicht umbrochen, weil eine Kopfzeile,
-    die von selbst umbricht, unvorhersehbar aussieht.
+    Die Feldbreite kommt aus der **gemessenen** Textbreite, mit derselben
+    Schrift und demselben libass-Faktor wie die Untertitel, aber ohne die
+    Kontur — das Feld traegt keine. `|` im Text trennt Zeilen; ohne Trenner
+    wird nicht umbrochen, weil eine Kopfzeile, die von selbst umbricht,
+    unvorhersehbar aussieht.
 
     Rueckgabe: (Feldbreite, Feldhoehe) — nur zum Berichten.
     """
@@ -189,7 +308,8 @@ def kopfzeile_ass(text, pfad, dauer, groesse=96, hoehe_anteil=0.68,
     if not zeilen:
         raise SystemExit("--kopfzeile ist leer")
     px, py = polster
-    breite = int(round(max(_breite_em(z) for z in zeilen) * groesse + 2 * px))
+    breite = int(round(max(_breite_px(z, groesse, kontur=False)
+                           for z in zeilen) + 2 * px))
     hoehe = int(round(len(zeilen) * groesse * zeilenabstand + 2 * py))
 
     mitte_y = hoehe_anteil * H
@@ -208,9 +328,9 @@ WrapStyle: 2
 ScaledBorderAndShadow: yes
 
 [V4+ Styles]
-Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Feld,{FONT},{groesse},{feld},&H00000000,&H00000000,0,0,1,0,0,7,0,0,0,1
-Style: Kopf,{FONT},{groesse},{schrift},&H00000000,&H00000000,-1,0,1,0,0,5,0,0,0,1
+Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, ScaleX, ScaleY, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Feld,{FONT},{groesse},{feld},&H00000000,&H00000000,0,0,100,100,1,0,0,7,0,0,0,1
+Style: Kopf,{FONT},{groesse},{schrift},&H00000000,&H00000000,0,0,{SCALE_X},100,1,0,0,5,0,0,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -234,7 +354,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 
 def build_ass(cues, path, marginv=320, tempo=1.0, tiefer=0, gross=True,
-              groesse=78, rand=40):
+              groesse=GROESSE, rand=40):
     """cues -> ASS mit wortweiser Hervorhebung.
 
     Abgelesen an seinen veroeffentlichten Shorts: GROSSBUCHSTABEN, fetter
@@ -255,8 +375,8 @@ WrapStyle: 0
 ScaledBorderAndShadow: yes
 
 [V4+ Styles]
-Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{FONT},{groesse},{WEISS},&H00000000,&H00000000,-1,0,1,8,3,2,{rand},{rand},{marginv},1
+Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, ScaleX, ScaleY, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,{FONT},{groesse},{WEISS},&H00000000,&H00000000,0,0,{SCALE_X},100,1,{KONTUR},3,2,{rand},{rand},{marginv},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -264,14 +384,26 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     lines = []
     nutzbar = W - 2 * rand
 
-    def zeile(von, bis, text, lippe, fs):
+    def zeile(von, bis, bauen, lippe, fs, fertig_zeit=False):
+        """Eine Einblendung ausgeben.
+
+        Layer 0 ist die Zeile mit schwarzer Kontur. Solange Inter Black als
+        Ersatz fuer Eveleth laeuft, kommt Layer 1 darueber und zieht jeden
+        Buchstaben in seiner eigenen Farbe nach — so holt sein Preset das
+        fehlende Gewicht. Mit der echten Eveleth faellt der Layer weg.
+        """
         kopf = ""
         if lippe is not None:
             kopf = f"{{\\an8\\pos({W // 2},{int(lippe) + tiefer})}}"
         if fs != groesse:
             kopf += f"{{\\fs{fs}}}"
-        lines.append(f"Dialogue: 0,{ass_time(von / tempo)},{ass_time(bis / tempo)},"
-                     f"Cap,,0,0,0,,{kopf}{text}")
+        t = 1.0 if fertig_zeit else tempo
+        von_s, bis_s = ass_time(von / t), ass_time(bis / t)
+        lines.append(f"Dialogue: 0,{von_s},{bis_s},Cap,,0,0,0,,"
+                     f"{kopf}{bauen(False)}")
+        if FETTER:
+            lines.append(f"Dialogue: 1,{von_s},{bis_s},Cap,,0,0,0,,"
+                         f"{kopf}{{\\bord{FETTER}}}{bauen(True)}")
 
     for c in cues:
         woerter = [w for w in (c.get("woerter") or [])
@@ -289,17 +421,26 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             if not roh:
                 continue
         fs = groesse
+
+        def bauen(kontur, hell=None):
+            teile = []
+            for k, t in enumerate(roh):
+                f = GELB_I if k == hell else WEISS_I
+                nach = f"\\3c{f}" if kontur else ""
+                teile.append(f"{{\\c{f}{nach}}}{t}")
+            return " ".join(teile)
+
         if not woerter:
-            zeile(c["start"], c["end"], " ".join(roh), c.get("lippe"), fs)
+            zeile(c["start"], c["end"], bauen, c.get("lippe"), fs,
+                  c.get("fertigzeit", False))
             continue
         for i, w in enumerate(woerter):
             von = max(w["start"], c["start"]) if i else c["start"]
             bis = min(woerter[i + 1]["start"], c["end"]) if i + 1 < len(woerter) else c["end"]
             if bis - von <= 0.02:
                 continue
-            teile = [f"{{\\c{GELB_I if k == i else WEISS_I}}}{t}"
-                     for k, t in enumerate(roh)]
-            zeile(von, bis, " ".join(teile), c.get("lippe"), fs)
+            zeile(von, bis, lambda kontur, i=i: bauen(kontur, i),
+                  c.get("lippe"), fs, c.get("fertigzeit", False))
 
     Path(path).write_text(head + "\n".join(lines) + "\n", encoding="utf-8")
 
@@ -371,14 +512,7 @@ def korrekturen_anwenden(woerter, paare):
             continue
         n, ersatz = treffer
         gruppe = woerter[i:i + n]
-        # Satzzeichen des Originals uebernehmen — ausser die Korrektur bringt
-        # selbst eines mit. Sonst stuende dort "AI??", sobald Whisper das
-        # Fragezeichen auch gesetzt hat, und ohne diese Regel haengt es davon
-        # ab, wie der Lauf gerade ausgegangen ist.
-        if ersatz and ersatz[-1][-1:] in ".,!?;:":
-            schwanz = ""
-        else:
-            schwanz = gruppe[-1]["t"][len(gruppe[-1]["t"].rstrip(".,!?;:")):]
+        schwanz = gruppe[-1]["t"][len(gruppe[-1]["t"].rstrip(".,!?;:")):]
         von, bis = gruppe[0]["start"], gruppe[-1]["end"]
         schritt = (bis - von) / max(len(ersatz), 1)
         for k, t in enumerate(ersatz):
@@ -409,7 +543,14 @@ def cues_an_lippen(cues, lippen):
     return raus
 
 
-def srt_to_cues(srt_path, offset=0.0):
+def srt_to_cues(srt_path, offset=0.0, fertigzeit=True):
+    """Eine .srt einlesen.
+
+    `fertigzeit=True`: die Zeiten stehen schon in der Zeit des fertigen
+    Videos — so kommen sie aus `--srt-out` zurueck. Dann darf das Tempo
+    nicht noch einmal hineingerechnet werden. Eine .srt, die zur
+    ungeschnittenen Quelle gehoert, wird mit `fertigzeit=False` gelesen.
+    """
     cues, block = [], []
     for raw in Path(srt_path).read_text(encoding="utf-8").splitlines() + [""]:
         if raw.strip():
@@ -419,7 +560,8 @@ def srt_to_cues(srt_path, offset=0.0):
             times = next(l for l in block if "-->" in l)
             a, b = [t.strip().replace(",", ".") for t in times.split("-->")]
             text = " ".join(block[block.index(times) + 1:])
-            cues.append({"start": tc(a) - offset, "end": tc(b) - offset, "text": text})
+            cues.append({"start": tc(a) - offset, "end": tc(b) - offset,
+                         "text": text, "fertigzeit": fertigzeit})
         block = []
     return cues
 
@@ -463,7 +605,34 @@ def stillen_finden(clip, mindest=0.24, schwelle=-45.0):
     return stillen
 
 
-def _packen(woerter, worte, max_em):
+# Nur die Schlussfrage der Sendung bleibt als eine Einblendung stehen.
+# Die Ausnahme galt bis zum 05.11. fuer JEDE Zeile mit Fragezeichen — und im
+# Englischen endet auch ein beilaeufiges „…you know?" so. Im Kingsbury-Short
+# stand deshalb „I MEAN THAT'S REALLY IT YOU KNOW?" in einer Einblendung,
+# gegen seine Drei-Wort-Regel. Dasselbe Muster wie in frage_am_ende.py.
+SCHLUSSFRAGE = re.compile(r"(?i)(makes?\s+(a\s+)?(human\s+)?life\s+meaningful"
+                          r"|what\s+makes\s+life\s+meaning"
+                          r"|life\s+meaningful\s+(for|to)\s+you"
+                          r"|makes\s+your\s+life\s+meaningful)")
+
+
+def _ganze_frage(woerter, i):
+    """Laenge einer Frage ab `i`, wenn sie ganz in eine Zeile passt.
+
+    Null, wenn vor dem naechsten Fragezeichen auch zwei Zeilen nicht mehr
+    reichen oder gar keines mehr kommt. Nur so weit gesucht, wie eine
+    Einblendung tragen kann — eine Frage ueber drei Saetze ist keine.
+    """
+    for j in range(i, min(len(woerter), i + 14)):
+        text = " ".join(_anzeige(x["t"], True) for x in woerter[i:j + 1])
+        if _breite_px(text) > FRAGE_MAX:
+            return 0
+        if _ist_frage(woerter[j:j + 1]) and SCHLUSSFRAGE.search(text):
+            return j - i + 1
+    return 0
+
+
+def _packen(woerter, worte, max_px):
     """Woerter einer Strecke zu Einblendungen packen.
 
     Zwei Schranken: hoechstens `worte` Woerter, und die Zeile muss bei
@@ -473,14 +642,33 @@ def _packen(woerter, worte, max_em):
     `CALLED THE` und `HYPERMASCULINITY` stehen beide gross da.
     """
     gruppen, akt = [], []
-    for w in woerter:
+    i = 0
+    while i < len(woerter):
+        # **Eine Frage bleibt ganz.** Sein Wunsch vom 22.10. zur
+        # Schlussfrage: „in einer Zeile, in einer Einblendung, mit einem
+        # Fragezeichen". Die Drei-Wort-Grenze hat das am 24.10. wieder
+        # zerlegt — „WHAT MAKES / LIFE MEANINGFUL / TO YOU LOGAN?" stand in
+        # drei Einblendungen, obwohl die Zeile ganz gepasst haette. Hier
+        # entscheidet die Breite, nicht die Wortzahl.
+        laenge = _ganze_frage(woerter, i) if not akt else 0
+        if laenge:
+            gruppen.append(woerter[i:i + laenge])
+            i += laenge
+            continue
+        w = woerter[i]
         kand = akt + [w]
         text = " ".join(_anzeige(x["t"], True) for x in kand)
-        if akt and (len(kand) > worte or _breite_em(text) > max_em):
+        schranke = FRAGE_BREITE if _ist_frage(kand) else max_px
+        if akt and (len(kand) > worte or _breite_px(text) > schranke):
+            # Nicht gleich uebernehmen: das Wort faengt eine neue Einblendung
+            # an und muss darum noch einmal als Anfang betrachtet werden —
+            # sonst kaeme die Frage-Ausnahme nach der ersten Einblendung nie
+            # wieder zum Zug.
             gruppen.append(akt)
-            akt = [w]
-        else:
-            akt = kand
+            akt = []
+            continue
+        akt = kand
+        i += 1
     if akt:
         gruppen.append(akt)
     # Ein einzelnes Wort am Ende holt sich eines vom Vorgaenger, solange der
@@ -488,14 +676,14 @@ def _packen(woerter, worte, max_em):
     if len(gruppen) >= 2 and len(gruppen[-1]) == 1 and len(gruppen[-2]) >= 3:
         kand = gruppen[-2][-1:] + gruppen[-1]
         text = " ".join(_anzeige(x["t"], True) for x in kand)
-        if _breite_em(text) <= max_em:
+        if _breite_px(text) <= (FRAGE_BREITE if _ist_frage(kand) else max_px):
             gruppen[-2] = gruppen[-2][:-1]
             gruppen[-1] = kand
     return gruppen
 
 
 def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
-                 pause=0.45, max_em=11.8):
+                 pause=0.45, max_px=MAX_BREITE):
     """Wortgenaue Zeiten fuer den bereits geschnittenen Clip.
 
     `worte` ist die Zahl der Woerter je Einblendung — drei, sein Wunsch vom
@@ -520,8 +708,15 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
                          capture_output=True, check=True).stdout
     ton = np.frombuffer(roh, dtype=np.float32)
     m = WhisperModel(model_size, device="cpu", compute_type="int8")
+    # condition_on_previous_text=False: der Decoder nimmt sonst den vorher
+    # erkannten Text als Vorlage und unterdrueckt Wiederholungen. Rick sagt
+    # „you know" im Sekundentakt — gemessen am selben 80-s-Fenster von
+    # rick5_mit: mit Vorlage 170 Woerter und 0x „you know", ohne Vorlage 188
+    # Woerter und 7x. Eine ganze Fassung verlor so 90 Woerter, und die
+    # Untertitel waren lueckenhaft, ohne dass irgendetwas davon meldete.
     segments, info = m.transcribe(ton, language=lang, word_timestamps=True,
-                                  vad_filter=True)
+                                  vad_filter=True,
+                                  condition_on_previous_text=False)
     # Der Abschnitt, aus dem ein Wort stammt, wird mitgefuehrt: Whisper
     # trennt Saetze zuverlaessiger ueber seine eigenen Abschnitte als ueber
     # die Satzzeichen, die es setzt. `too afraid to touch.` und `This is why`
@@ -620,9 +815,30 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
             geglaettet.append(lauf)
     laeufe = geglaettet
 
+    # **Eine Frage ueberlebt die Sprechpause.** Das Packen haelt eine Frage
+    # zusammen — nur kommt sie dort gar nicht ganz an: eine Frage, die in
+    # Portionen gesprochen wird („What makes … life meaningful … to you,
+    # Logan?"), ist vorher schon an den Pausen in drei Strecken zerfallen,
+    # und der Packer sah am 24.10. nur noch `to you, Logan?`. Darum hier,
+    # eine Ebene frueher: Strecken, die zusammen eine Frage ergeben und in
+    # eine Einblendung passen, werden wieder zusammengelegt. Ueber ein
+    # Satzende hinweg nicht — nur ueber Pausen.
+    verbunden = []
+    for lauf in laeufe:
+        if verbunden:
+            vor = verbunden[-1]
+            woerter = [w for c in vor + lauf for w in c["woerter"]]
+            if (vor[-1]["grund"] in ("pause", "stille")
+                    and not _ist_frage([w for c in vor for w in c["woerter"]])
+                    and _ganze_frage(woerter, 0) == len(woerter)):
+                verbunden[-1] = vor + lauf
+                continue
+        verbunden.append(lauf)
+    laeufe = verbunden
+
     zusammen = []
     for lauf in laeufe:
-        teile = _packen([w for c in lauf for w in c["woerter"]], worte, max_em)
+        teile = _packen([w for c in lauf for w in c["woerter"]], worte, max_px)
         for k, teil in enumerate(teile):
             # Innerhalb einer Strecke steht die naechste Einblendung sofort da,
             # damit es nicht zwischen jedem Dreier kurz schwarz wird.
@@ -695,6 +911,26 @@ def lautheit_kette(ziel):
             "acompressor=threshold=-26dB:ratio=3:attack=5:release=150:makeup=1,"
             f"loudnorm=I={ziel}:TP=-1.5:LRA=9,"
             "alimiter=limit=-1dB:level=disabled")
+
+
+def _logo_kasten(pfad):
+    """(x, y, breite, hoehe) des sichtbaren Teils eines PNG mit Alphakanal.
+
+    Rueckgabe None, wenn die Datei randlos ist oder sich nicht lesen laesst —
+    dann wird nicht zugeschnitten.
+    """
+    try:
+        from PIL import Image
+        im = Image.open(pfad).convert("RGBA")
+        bb = im.getchannel("A").getbbox()
+    except Exception:
+        return None
+    if not bb:
+        return None
+    x0, y0, x1, y1 = bb
+    if (x1 - x0) >= im.size[0] * 0.98 and (y1 - y0) >= im.size[1] * 0.98:
+        return None
+    return x0, y0, x1 - x0, y1 - y0
 
 
 def probe_size(src):
@@ -934,7 +1170,10 @@ def main():
     ap.add_argument("--lippe", type=int, default=None,
                     help="Feste Untertitelhoehe im Ausgabebild (0..1920), "
                          "Oberkante der Zeile. Schlaegt --marginv.")
-    ap.add_argument("--tempo", type=float, default=1.0,
+    # 1,15 ist seine Ansage vom 21.10.: „dass wir die Shorts allesamt auf
+    # 1,15-facher Geschwindigkeit laufen lassen". Davor war 1,2 von Hand
+    # mitgegeben; seine Folgen selbst laufen auf 1,1.
+    ap.add_argument("--tempo", type=float, default=1.15,
                     help="Beschleunigung. Seine Folgen laufen auf 1.1, fuer "
                          "Shorts will er 1.2. 1.0 = unveraendert.")
     ap.add_argument("--worte", type=int, default=3,
@@ -942,7 +1181,8 @@ def main():
     ap.add_argument("--tiefer", type=int, default=0,
                     help="Pixel, um die die Zeile zusaetzlich nach unten "
                          "rueckt; der Plan setzt die Hoehe schon unter die Lippe")
-    ap.add_argument("--schriftgroesse", type=int, default=78)
+    ap.add_argument("--schriftgroesse", type=int, default=GROESSE,
+                    help=f"Vorgabe {GROESSE} aus seinem Preset")
     ap.add_argument("--korrekturen", default="video/korrekturen.txt",
                     help="Liste falsch -> richtig fuer die Untertitel")
     ap.add_argument("--pause", type=float, default=0.45,
@@ -950,18 +1190,12 @@ def main():
                          "endet (Satzgrenze ohne Satzzeichen)")
     ap.add_argument("--logo", default=None,
                     help="PNG mit Transparenz, wird unten mittig eingeblendet")
-    ap.add_argument("--logo-breite", type=int, default=520)
+    ap.add_argument("--logo-breite", type=int, default=int(W * 0.28),
+                    help="Vorgabe 28 %% der Bildbreite, aus seinem Preset")
     ap.add_argument("--logo-alpha", type=float, default=1.0)
-    ap.add_argument("--logo-hoehe", type=float, default=0.845,
-                    help="Anteil der Bildhoehe, auf dem das Logo sitzt")
-    ap.add_argument("--musik", default=None,
-                    help="Musikbett; wird geloopt, ein- und ausgeblendet und "
-                         "unter der Stimme abgesenkt")
-    ap.add_argument("--musik-db", type=float, default=None,
-                    help="fester Pegel des Betts; ohne Angabe wird er aus "
-                         "Stimme und Bett gemessen")
-    ap.add_argument("--musik-unter", type=float, default=8.0,
-                    help="dB, die das Bett unter der Stimme liegt")
+    ap.add_argument("--logo-hoehe", type=float, default=0.87,
+                    help="Anteil der Bildhoehe, auf dem das Logo sitzt "
+                         "(Vorgabe 0.87 aus seinem Preset)")
     ap.add_argument("--kopfzeile", default=None,
                     help="Schlagzeile ueber die ersten Sekunden, wie bei "
                          "Modern Wisdom. `|` trennt Zeilen. Beispiel: "
@@ -975,6 +1209,14 @@ def main():
                     help="weisses Feld mit schwarzer Schrift, wie bei Modern "
                          "Wisdom. Vorgabe ist umgekehrt: schwarzes Feld, "
                          "weisse Schrift — so hat er es am 21.10. bestellt.")
+    ap.add_argument("--musik", default=None,
+                    help="Musikbett; wird geloopt, ein- und ausgeblendet und "
+                         "unter der Stimme abgesenkt")
+    ap.add_argument("--musik-db", type=float, default=None,
+                    help="fester Pegel des Betts; ohne Angabe wird er aus "
+                         "Stimme und Bett gemessen")
+    ap.add_argument("--musik-unter", type=float, default=8.0,
+                    help="dB, die das Bett unter der Stimme liegt")
     ap.add_argument("--srt-out", default=None,
                     help="Einblendungen zusaetzlich als .srt ablegen, in der "
                          "Zeit des fertigen Videos. Fuer den Weg ueber einen "
@@ -1020,9 +1262,15 @@ def main():
     ap.add_argument("--broll-radius", type=int, default=BROLL_RADIUS,
                     help=f"nur bei --broll-modus karte: Eckradius "
                          f"(Vorgabe {BROLL_RADIUS})")
-    ap.add_argument("--look", choices=["warm", "aus"], default="warm",
-                    help="warm = der Grading seiner Shorts (Kontrast, warmer "
-                         "Stich, Vignette), abgelesen an den Vorschaubildern")
+    ap.add_argument("--look", choices=["preset", "warm", "aus"],
+                    default="preset",
+                    help="preset = sein CapCut-Filter als LUT (--lut), sonst "
+                         "die Annaeherung aus seinem Preset. warm = die "
+                         "aeltere Annaeherung von seinen Vorschaubildern.")
+    ap.add_argument("--lut", default=str(LUT_VORGABE),
+                    help="Hald-CLUT-PNG mit seinem Filter. Liegt sie nicht "
+                         "da, laeuft die Annaeherung und es steht in der "
+                         "Ausgabe.")
     a = ap.parse_args()
 
     if not 0.5 <= a.tempo <= 2.0:
@@ -1091,8 +1339,21 @@ def main():
         a_quelle = "[at]"
         print(f"  Tempo {a.tempo}x ueber {a.dehnung}")
 
-    if a.look == "warm":
-        graph.append(f"{v_quelle}{LOOK}[vlook]")
+    if a.look != "aus":
+        lut = a.lut if (a.look == "preset" and a.lut
+                        and os.path.exists(a.lut)) else None
+        if lut:
+            # haldclut traegt seinen CapCut-Filter Pixel fuer Pixel auf,
+            # die Vignette kommt wie im Preset hinterher.
+            graph.append(f"movie={lut}[clut]")
+            graph.append(f"{v_quelle}[clut]haldclut,vignette=PI/6[vlook]")
+            print(f"  Look: LUT {lut}")
+        else:
+            graph.append(f"{v_quelle}"
+                         f"{LOOK_PRESET if a.look == 'preset' else LOOK}"
+                         f"[vlook]")
+            print("  Look: Annaeherung"
+                  + (f" (LUT {a.lut} fehlt)" if a.look == "preset" else " warm"))
         v_quelle = "[vlook]"
 
     # B-Roll kommt HINTER den Look und VOR die Untertitel: der Film soll
@@ -1138,12 +1399,39 @@ def main():
 
         letzte = v_quelle
         if cues:
+            # Ein ausdruecklich gesetztes --lippe schlaegt den Plan. Die
+            # Lippenhoehe im Plan stammt aus der Bewegungsmessung und traegt
+            # deren Versatz mit: am 05.11. sass die Schrift dadurch auf der
+            # Brust statt am Kinn. Wer den Wert von Hand nennt, hat
+            # nachgesehen — dann gilt er.
+            if lippen and a.lippe is not None:
+                lippen = [(v, b, a.lippe) for v, b, _ in lippen]
             if lippen:
-                cues = cues_an_lippen(cues, lippen)
+                # Die Lippenliste steht in Clipzeit. Einblendungen aus
+                # `--srt` stehen in der Zeit des fertigen Videos (so kommen
+                # sie aus `--srt-out` zurueck), die aus `--auto-captions` in
+                # Clipzeit. Wer beides ungerechnet vergleicht, laesst den
+                # Hoehenwechsel um den Faktor Tempo zu spaet greifen: am
+                # 05.11. sprang die Schrift bei einem Schnitt bei 19,0 s erst
+                # bei 20,9 s mit, und eine Einstellung lang stand sie neben
+                # dem Mund. Derselbe Fehler wie am 20.10. bei der
+                # Stummschaltung.
+                in_fertigzeit = any(c.get("fertigzeit") for c in cues)
+                lippen_cue = ([(v / a.tempo, b / a.tempo, l)
+                               for v, b, l in lippen]
+                              if in_fertigzeit else lippen)
+                cues = cues_an_lippen(cues, lippen_cue)
                 print(f"  Untertitel an der Lippe: {len(cues)} Zeilen, "
                       f"Hoehen {sorted({l for _,_,l in lippen if l})}")
             elif a.lippe is not None:
                 cues = [{**c, "lippe": a.lippe} for c in cues]
+            elif a.marginv is None:
+                # Steht die Lippe nicht fest, sitzt die Zeilenmitte auf
+                # 70 % der Bildhoehe — der Wert aus seinem Preset. \an8
+                # haengt die Zeile an der Oberkante auf, darum die halbe
+                # Schriftgroesse abziehen. --marginv schlaegt das.
+                oben = LIPPE_VORGABE - a.schriftgroesse // 2
+                cues = [{**c, "lippe": oben} for c in cues]
             ass = os.path.join(td, "cap.ass")
             build_ass(cues, ass, marginv=marginv, tempo=a.tempo,
                       tiefer=a.tiefer, gross=not a.klein,
@@ -1151,16 +1439,24 @@ def main():
             print(f"  {a.worte} Woerter je Einblendung, "
                   f"{'VERSALIEN' if not a.klein else 'gemischt'}, "
                   f"{a.tiefer} px unter der Lippe, Look: {a.look}")
-            graph.append(f"{v_quelle}subtitles="
-                         + ass.replace(":", r"\:") + "[vout]")
+            filt = "subtitles=" + ass.replace(":", r"\:")
+            if FONT_DATEI:
+                filt += ":fontsdir=" + str(FONT_ORDNER).replace(":", r"\:")
+            graph.append(f"{v_quelle}{filt}[vout]")
             letzte = "[vout]"
 
         cmd = [FFMPEG, "-y"]
         if not a.plan:
             cmd += ["-ss", str(t0)]
+            # `-t` MUSS vor das `-i` der Quelle. ffmpeg ordnet Optionen der
+            # naechsten Datei zu: stand es dahinter und folgte noch ein
+            # Eingang (Logo, B-Roll), band es an DESSEN Eingang und
+            # begrenzte gar nichts. Am 22.10. kam so ein Short heraus, der
+            # bis zum Ende der Quelle lief — 54 s statt 45 s — und am
+            # Standbild nichts davon zeigte.
+            if dur:
+                cmd += ["-t", str(dur)]
         cmd += ["-i", a.src]
-        if dur and not a.plan:
-            cmd += ["-t", str(dur)]
         naechste = 1
         for _, _, datei in broll:
             # Nur das Bild wird gebraucht; -an haelt den Ton der B-Roll
@@ -1175,17 +1471,58 @@ def main():
                 groesse=a.kopfzeile_groesse,
                 hoehe_anteil=a.kopfzeile_hoehe,
                 dunkel=not a.kopfzeile_hell)
-            graph.append(f"{letzte}subtitles="
-                         + kopf_ass.replace(":", r"\:") + "[vkopf]")
+            filt = "subtitles=" + kopf_ass.replace(":", r"\:")
+            if FONT_DATEI:
+                filt += ":fontsdir=" + str(FONT_ORDNER).replace(":", r"\:")
+            graph.append(f"{letzte}{filt}[vkopf]")
             letzte = "[vkopf]"
             print(f"  Kopfzeile {a.kopfzeile!r}: Feld {kb}x{kh} px, "
                   f"{a.kopfzeile_dauer}s, "
                   + ("weiss auf schwarz" if not a.kopfzeile_hell
                      else "schwarz auf weiss"))
+            # Ein Feld, das breiter ist als das Bild, steht an beiden Seiten
+            # ueber den Rand: die runden Ecken sind weg und die Schrift
+            # klebt am Rand. Am 26.10. zweimal passiert (1098 und 1123 px
+            # bei 1080) und erst beim Nachlesen des Protokolls aufgefallen,
+            # nicht im Bild. Darum hier ein Abbruch mit der Groesse, die
+            # passt — Raten kostet einen ganzen Rendergang.
+            if kb > W - 2 * KOPF_RAND:
+                passt = int(a.kopfzeile_groesse * (W - 2 * KOPF_RAND) / kb)
+                raise SystemExit(
+                    f"  Kopfzeile zu breit: {kb} px bei {W - 2 * KOPF_RAND} px "
+                    f"Platz. --kopfzeile-groesse {passt} passt.")
+            # Kopfzeile und Untertitel koennen sich treffen: das Feld sitzt
+            # mittig auf 68 % der Hoehe, die Zeile ohne gemessene Lippe auf
+            # 70 %. Das faellt am Code nicht auf, nur im Bild — also wird es
+            # ausgerechnet und gesagt, statt es zu riskieren.
+            feld_oben = a.kopfzeile_hoehe * H - kh / 2
+            feld_unten = feld_oben + kh
+            band = [(c["lippe"] + a.tiefer, c["lippe"] + a.tiefer + a.schriftgroesse)
+                    for c in (cues or [])
+                    if c.get("lippe") is not None
+                    and c["start"] / a.tempo < a.kopfzeile_dauer]
+            stoss = [b for b in band if b[0] < feld_unten and b[1] > feld_oben]
+            if stoss:
+                print(f"  ACHTUNG: Kopfzeile ({feld_oben:.0f}-{feld_unten:.0f} px) "
+                      f"und Untertitel ({min(b[0] for b in stoss):.0f}-"
+                      f"{max(b[1] for b in stoss):.0f} px) ueberlappen in den "
+                      f"ersten {a.kopfzeile_dauer}s. --kopfzeile-hoehe "
+                      f"verschieben oder die Kopfzeile kuerzer halten.")
 
         if a.logo:
+            # Auf den sichtbaren Teil zuschneiden, BEVOR skaliert wird.
+            # `marke/ynb-logo-weiss.png` ist 5224x2947 gross, die Marke darin
+            # aber nur 1924 px breit — 36,8 Prozent. Wer die Datei auf 28
+            # Prozent der Bildbreite skaliert, bekommt eine Marke von 111 px
+            # statt der gemeinten 302. Genau das war sein Einwand vom 22.10.
+            # („das Logo ist wieder mal zu klein"). `--logo-breite` meint ab
+            # jetzt die Breite der MARKE, nicht die der Datei.
+            kasten = _logo_kasten(a.logo)
             cmd += ["-i", a.logo]
-            graph.append(f"[{naechste}:v]scale={a.logo_breite}:-1,format=rgba,"
+            zuschnitt = (f"crop={kasten[2]}:{kasten[3]}:{kasten[0]}:{kasten[1]},"
+                         if kasten else "")
+            graph.append(f"[{naechste}:v]{zuschnitt}"
+                         f"scale={a.logo_breite}:-1,format=rgba,"
                          f"colorchannelmixer=aa={a.logo_alpha}[lg]")
             graph.append(f"{letzte}[lg]overlay=(W-w)/2:"
                          f"H*{a.logo_hoehe}-h/2[vlogo]")

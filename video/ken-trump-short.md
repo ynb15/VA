@@ -1,4 +1,4 @@
-# Ken Stern — seine ehrliche Meinung zu Trump (13.11., Fassung 3)
+# Ken Stern — seine ehrliche Meinung zu Trump (13.11., Fassung 4)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme, Yannick lädt hoch.
 
@@ -7,7 +7,82 @@
 | `YNB Podcast Ken Stern Trump (Moms Got Work).mp4` | 51,9 s | Stimme + Bett bis zum letzten Bild |
 | `YNB Podcast Ken Stern Trump.mp4` | 51,9 s | nur Stimme |
 
-## Fassung 3 (13.11.) — Schriftart und Musikfenster
+## Fassung 4 (13.11.) — sein Preset, statt meiner Messungen
+
+*„Frag die anderen Agenten. Die Information liegt schon lange überall."*
+
+Sie lag überall. Drei Fassungen lang habe ich an seinen fertigen Shorts
+gemessen, statt die Quelle zu suchen.
+
+**Die Quelle:** `claude/content-assistant:video/preset-ynb.md` — Isabelles
+Preset-Ordner, den er am 21.10. übergeben hat. Und
+`claude/content-gastauftritte:LERNEN.md` Zeile 54, seit dem 21.10.:
+*„Schrift Inter Black (nicht DejaVu Sans Bold) · Größe 82 · Gelb #F9F13A ·
+Zeilenbreite 72 % · Logo 28 % auf Höhe 0,87 · Gradation entsättigt-kühl."*
+
+**Die Ursache:** `video/shorts-render.py` auf diesem Zweig hatte **1271
+Zeilen**, die aktuelle Fassung auf `claude/content-assistant` hat **1608**.
+Mein Abzug war der Stand vor dem 21.10. Die aktuelle Fassung trägt das
+Preset als Vorgabewerte: `video/fonts/Inter-Black.otf`, Größe 82, sein
+Gelb, Logo 28 %, Zeilenbreite 72 %, und `--look preset`. Mit ihr braucht
+der Aufruf keinen einzigen Handwert mehr.
+
+Geholt mit:
+```
+git checkout origin/claude/content-assistant -- \
+  video/shorts-render.py video/fonts/Inter-Black.otf \
+  video/luts/hald_identity_1080.png
+```
+
+**Warum keine installierte Schrift gepasst hat:** das Preset nimmt Inter
+Black als Ersatz für Eveleth (CapCut, nicht exportierbar) und zieht sie auf
+**112 % Breite plus 2 px Strich** in der Textfarbe (`SCALE_X = 112`,
+`FETTER = 2`). Deshalb maß ich Füllgrad 0,667, den keine reine Schrift
+erreicht. Durch Nachmessen ist das nicht zu finden.
+
+Am Wort „OTHERS", das in beiden Shorts vorkommt:
+
+| | Kasten | Strichstärke | Gelbton | Zeile | IoU |
+|---|---|---|---|---|---|
+| Meaningful (akzeptiert) | 313 × 54 | 0,667 | RGB(248,240,57) | 1154 | — |
+| Fassung 2 (DejaVu 84) | 318 × 54 | 0,458 | RGB(253,211,46) | 1154 | 0,651 |
+| Fassung 3 (Inter Display Black 87) | 290 × 52 | 0,562 | RGB(246,239,56) | 1158 | 0,783 |
+| **Fassung 4 (Preset)** | **312 × 54** | **0,665** | **RGB(248,240,57)** | **1154** | **0,945** |
+
+Logo 267 px auf Mitte y 1669 — wie Meaningful. Look jetzt `preset`
+(entsättigt-kühl), nicht `warm`.
+
+Die Fassungen 2 und 3 lieferten dadurch 52 Untertitel, Fassung 4 liefert
+**62**: das Preset begrenzt die Zeile auf 72 % der Bildbreite (777 px statt
+1000) und teilt längere Dreier.
+
+**Weiter offen, nur von ihm zu lösen:** `luts/ynb_look.png` fehlt; der
+Renderer meldet das selbst und nimmt die Annäherung aus dem Preset. Die
+5-Minuten-Anleitung steht in `video/preset-ynb.md`. Liegt Eveleth als
+Datei in `video/fonts/`, entfällt das Nachziehen und die Schrift ist exakt
+seine.
+
+### Die Musik, aus Fassung 3 übernommen
+
+„Mom's Got Work" hat ab **1:41** sein eigenes Outro (−19 auf −47 dB). Das
+erste Bett lief 1:00,75–1:52,68 und lag die letzten 11 s darauf, darüber
+noch die eigene Ausblende. Jetzt **ab 0:48,50**, Bett endet bei 1:40,4.
+
+| Bettpegel im Short | 38 s | 42 s | 44 s | 46 s | 48 s | 50 s |
+|---|---|---|---|---|---|---|
+| ab 1:00,75 | −44 | −49 | −56 | −62 | −58 | −65 |
+| **ab 0:48,50** | −42 | −44 | −44 | −41 | −45 | −49 |
+
+### Der Irrweg, zur Warnung
+
+Fassung 3 lief auf einer **eigenen Kopie** des Renderers mit
+Inter Display Black und handgesetztem Gelb. Die Datei
+(`video/render-inter-shorts2.py`) ist gelöscht — sie war der Versuch, durch
+Messen zu rekonstruieren, was in einer Datei stand.
+
+---
+
+## Fassung 3 (13.11.) — Schriftart und Musikfenster (Irrweg)
 
 *„du hast Mom's Got Work an der völlig falschen Stelle eingesetzt. Man hört
 die letzten 10 Sekunden gefühlt gar nichts mehr von dem Song. Und die
@@ -84,10 +159,10 @@ Korrekturen: `video/korrekturen-ken-shorts2.txt`.
 
 ## Der vollständige Aufruf
 
-**Das Wichtigste an dieser Datei.** Die beiden Schalter `--logo-breite 300`
-und `--schriftgroesse 84` sind die Werte des Kanals; die Standardwerte des
-Renderers (520 und 78) sind es nicht. Sie standen bis heute in keiner Datei
-im Repo, und genau daran ist Fassung 1 gescheitert.
+**Keine Handwerte mehr.** Mit dem aktuellen Renderer von
+`claude/content-assistant` sind Schriftgröße 82, Logo 28 %, Gelb und
+Zeilenbreite bereits die Vorgaben aus seinem Preset. Was bleibt, ist
+`--look preset` statt `warm`.
 
 ```
 python3 -I video/shorts-render.py \

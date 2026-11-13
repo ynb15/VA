@@ -1,4 +1,4 @@
-# Ken Stern — seine ehrliche Meinung zu Trump · Fassung 3 (51,9 s · Hauptteil 48,1 s + Outro 3,8 s)
+# Ken Stern — seine ehrliche Meinung zu Trump · Fassung 4 (51,9 s · Hauptteil 48,1 s + Outro 3,8 s)
 # Rohzeit 0:53:23,30–0:54:30,40, abzueglich drei Stuecke · Tempo 1,1 · mit „Mom's Got Work"
 #
 # Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
@@ -12,106 +12,96 @@
   6  [00:20.67–00:25.62]  I THOUGHT WE WERE REACHING SORT OF THE PEAK OF POLARIZATION AND LITTLE DID
   7  [00:25.62–00:29.09]  I KNOW THAT EVERYTHING HAS GOTTEN WORSE AND WORSE AND SPIRALED WHEN I TALK
   8  [00:29.09–00:29.60]  ABOUT POLITICS
-  9  [00:30.04–00:37.56]  I TALK ABOUT WHAT POLARIZATION AND DEMONIZATION IS DOING TO US AND WHAT IT IS
- 10  [00:37.56–00:42.73]  WRECKED ON AMERICAN SOCIETY AND HOW TO THINK ABOUT PUTTING THAT BACK
- 11  [00:43.49–00:47.73]  HOPEFULLY ELECTIONS WILL STEP US AWAY FROM I THINK A PRECIPICE THAT IS VERY DANGEROUS
+  9  [00:30.04–00:33.34]  I TALK ABOUT WHAT POLARIZATION
+ 10  [00:33.95–00:40.20]  AND DEMONIZATION IS DOING TO US AND WHAT IT IS WRECKED ON AMERICAN SOCIETY
+ 11  [00:40.47–00:42.73]  AND HOW TO THINK ABOUT PUTTING THAT BACK
+ 12  [00:43.49–00:47.33]  HOPEFULLY ELECTIONS WILL STEP US AWAY FROM I THINK A PRECIPICE THAT IS VERY
+ 13  [00:47.33–00:47.73]  DANGEROUS
 
 # ══════════════════════════════════════════════════════════════════
-# 1. DIE MUSIK — Du hast genau richtig gehoert, und ich weiss warum
+# DIE SCHRIFT — gefunden, und der Grund ist peinlich
 # ══════════════════════════════════════════════════════════════════
-# „Mom's Got Work" hat ab 1:41 sein EIGENES Outro. Der Titel faellt dort
-# von -19 dB auf -47 dB bis 1:52.
+# Du hattest dreimal recht und ich habe dreimal am falschen Ende gesucht.
 #
-# Mein Bett lief von 1:00,75 bis 1:52,68 — die letzten 11 Sekunden lagen
-# also auf dem Ausklang des Songs, und darueber lief noch meine eigene
-# Ausblende. Doppelt leise. Genau das, was Du gehoert hast.
+# Die Information lag genau da, wo Du gesagt hast. Auf dem Zweig
+# `claude/content-assistant` liegt `video/preset-ynb.md`: Isabelles
+# Preset-Ordner, den Du am 21.10. uebergeben hast — „ist jetzt der Filter
+# und die Schrift, die wir bisher fuer meine Shorts verwendet haben".
+# Und in `claude/content-gastauftritte/LERNEN.md` Zeile 54 steht seit dem
+# 21.10. woertlich: „Schrift Inter Black (nicht DejaVu Sans Bold) ·
+# Groesse 82 · Gelb #F9F13A · Logo 28 % breit auf Hoehe 0,87 ·
+# Gradation entsaettigt-kuehl (nicht warm)".
 #
-# Mein Fehler war die Methode: ich habe den EINSATZ gemessen (Sprung der
-# Energie ueber 2 kHz) und nie geprueft, ob das Bettfenster noch ganz im
-# Koerper des Stuecks liegt. 1:00,75 + 51,9 s = 1:52,68, also 11 s hinter
-# dem Anfang des Song-Outros.
+# WARUM ICH ES NICHT HATTE: mein Zweig trug eine Kopie von
+# `shorts-render.py` vom Stand VOR dem 21.10. — 1271 Zeilen statt 1608.
+# Die aktuelle Fassung hat das Preset fest eingebaut: den Ordner
+# `video/fonts/` mit Inter-Black.otf, Groesse 82, Dein Gelb, Logo 28 %,
+# und `--look preset`. Meine alte Kopie kannte nichts davon und hatte
+# DejaVu Sans als Festwert.
 #
-# JETZT: Bett ab 0:48,50. Damit endet es bei 1:40,4 — noch im vollen Teil,
-# und die dichteste Stelle des Titels (1:30-1:40) liegt unter dem Schluss
-# des Shorts.
+# Und — das ist der eigentliche Fehler — ich habe drei Runden lang an
+# Deinen fertigen Shorts GEMESSEN, statt nach der Quelldatei zu suchen.
+# In genau dem LERNEN-Eintrag, den ich nicht gelesen habe, steht die
+# Regel dazu: „an Ausgabebildern abgelesene Stilwerte sind ein Notbehelf,
+# bis die Quelldatei da ist. Erst nach der Vorlage fragen, dann messen."
 #
-# Durch Subtraktion gemessen, Bettpegel im fertigen Short:
+# WAS DIE SCHRIFT SO SCHWER MACHT, und warum keine installierte Schrift
+# gepasst hat: das Preset nimmt Inter Black als Ersatz fuer Eveleth (die
+# CapCut-Schrift, die sich nicht exportieren laesst) und zieht sie auf
+# 112 % Breite plus 2 px Strich in der Textfarbe, um auf Eveleth-Gewicht
+# zu kommen. Das bekommt man durch Nachmessen nie heraus.
+#
+# JETZT GEMESSEN, Wort „OTHERS", das in beiden Shorts vorkommt:
+#                     Kasten    Strichstaerke   Gelbton          Zeile
+#   Meaningful (gut)  313x54    0,667           RGB(248,240,57)  1154
+#   Fassung 2 (DejaVu) 318x54   0,458           RGB(253,211,46)  1154
+#   Fassung 3 (Inter)  290x52   0,562           RGB(246,239,56)  1158
+#   FASSUNG 4         312x54    0,665           RGB(248,240,57)  1154
+#   Uebereinstimmung der Buchstabenmaske: 0,945. Logo 267 px wie Meaningful.
+#
+# Dazu: der Look laeuft jetzt auf `--look preset` (entsaettigt-kuehl),
+# nicht mehr auf dem warmen. Auch das stand im Preset und war bei mir
+# falsch.
+#
+# OFFEN, und nur von Dir zu loesen: `luts/ynb_look.png` fehlt weiter. Der
+# Renderer schreibt das selbst in die Ausgabe („Look: Annaeherung, LUT
+# fehlt") und nimmt die Annaeherung aus Deinem Preset. In
+# `video/preset-ynb.md` steht die 5-Minuten-Anleitung, wie Du sie in
+# CapCut erzeugst. Mit Eveleth als Datei in `video/fonts/` entfaellt
+# ausserdem das Nachziehen und die Schrift waere exakt Deine.
+
+# ══════════════════════════════════════════════════════════════════
+# DIE MUSIK — aus Fassung 3 uebernommen
+# ══════════════════════════════════════════════════════════════════
+# „Mom's Got Work" hat ab 1:41 sein eigenes Outro (-19 dB auf -47 dB).
+# Mein erstes Bett lief 1:00,75-1:52,68 und lag die letzten 11 Sekunden
+# genau darauf, darueber noch meine eigene Ausblende. Doppelt leise.
+# Jetzt ab 0:48,50: Bett endet bei 1:40,4, noch im vollen Teil, und die
+# dichteste Stelle des Titels liegt unter dem Schluss.
+# Bettpegel im fertigen Short, durch Subtraktion:
 #          38 s   42 s   44 s   46 s   48 s   50 s
-#   ALT    -44    -49    -56    -62    -58    -65   <- bricht weg
-#   NEU    -42    -45    -44    -41    -45    -50   <- haelt bis zur Ausblende
-#
-# Preis: der Titel hat bei 0:55-1:00 eine ruhige Stelle, die jetzt bei
-# Sekunde 7-12 des Shorts liegt. Das ist ein Atmen, kein Loch — und mir
-# lieber als ein totes Ende. Kein anderes 52-s-Fenster vermeidet beides.
+#   ALT    -44    -49    -56    -62    -58    -65
+#   NEU    -42    -44    -44    -41    -45    -49
+# Pegel: Stimme -33,5 dB, Bett 10 dB darunter.
+# Ohne Musik: „YNB Podcast Ken Stern Trump.mp4" im Repo.
 
 # ══════════════════════════════════════════════════════════════════
-# 2. DIE SCHRIFT — Du hattest recht, und es ist nicht die Groesse
+# UNVERAENDERT
 # ══════════════════════════════════════════════════════════════════
-# Ich hatte Dir letztes Mal geschrieben, die Schrift sei jetzt richtig,
-# weil ich Groesse und Hoehe gemessen hatte. Beides stimmte. Es war
-# trotzdem die falsche Schrift — ich hatte die SCHRIFTART nicht geprueft.
-#
-# Am Wort „OTHERS", das in beiden Shorts vorkommt, auf die Pixel gemessen:
-#
-#                        Kasten    Strichstaerke   Gelbton
-#   Meaningful (gut)     313x54    0,667           RGB(248,240,57)
-#   Trump Fassung 2      318x54    0,458           RGB(253,211,46)
-#   Trump Fassung 3      290x52    0,562           RGB(246,239,56)
-#
-# Gleiche Hoehe, gleiche Breite — aber Fassung 2 hatte 43 % duennere
-# Striche. Es war eine komplett andere Schriftart.
-#
-# WAS PASSIERT IST: im Renderer steht `FONT = "DejaVu Sans"`, seit dem
-# ersten Commit am 19.10. unveraendert. Auf der Maschine, auf der Ubuntu,
-# Meaningful, Aging, Craig und die Aaronson-Shorts entstanden sind, war
-# diese Schrift gar nicht installiert — es wurde eine schwere Grotesk
-# eingesetzt, und DAS ist der Look, den Du abgenommen hast. Mein Container
-# wurde zwischen dem 11. und 12.11. neu gebaut, seitdem IST DejaVu Sans da,
-# und seitdem bekommt der Renderer, was er anfordert. Der Look hat sich
-# geaendert, ohne dass jemand eine Einstellung geaendert hat.
-#
-# Dass alle aelteren Shorts denselben Gelbton RGB(248,240,57) haben und nur
-# meine beiden Trump-Fassungen RGB(253,211,46) — den reinen Stilwert —
-# bestaetigt das: auch die Farbe kam aus derselben anderen Umgebung.
-#
-# WAS ICH GEMACHT HABE: Ich habe alle 17 installierten Schriftfamilien
-# gegen die Buchstabenmaske von Meaningful geprueft. Bester Treffer:
-# Inter Display Black (Uebereinstimmung 0,78 gegen 0,65 fuer DejaVu).
-# Damit ist Fassung 3 gesetzt, Groesse 87, plus der gemessene Gelbton.
-#
-# EHRLICH BLEIBT: es ist die naechstbeste, nicht dieselbe. Die Striche sind
-# noch 16 % duenner als bei Meaningful, das Wort 7 % schmaler. Die Schrift,
-# mit der Deine akzeptierten Shorts gesetzt sind, ist auf dieser Maschine
-# nicht mehr da, und ich kann sie nicht benennen — ich kann nur sagen, dass
-# es keine der 17 hier installierten ist.
-#
-# WAS ICH VON DIR BRAUCHE, um es endgueltig zu loesen: den Namen oder die
-# Datei der Schrift, die Deine Shorts benutzen. Dann ist es ein Durchlauf.
-# Falls Du das nicht hast, ist Inter Display Black mein Vorschlag als neuer
-# Festwert fuer alle kommenden Shorts — dann sind wenigstens alle gleich.
-#
-# UND: ich habe dafuer eine EIGENE KOPIE des Renderers benutzt
-# (scratchpad/ken/render-inter.py, zwei Zeilen anders). Der geteilte
-# `video/shorts-render.py` gehoert Shorts I und ist unangetastet. Der
-# dauerhafte Weg waere ein Schalter `--font` dort — das beschreibe ich
-# Shorts I, baue es aber nicht in sein Werkzeug.
-
-# ══════════════════════════════════════════════════════════════════
-# UNVERAENDERT GEGENUEBER FASSUNG 2
-# ══════════════════════════════════════════════════════════════════
-# Einstieg auf „WE'RE LED BY A GUY" (roh 0:53:23,30).
-# Logo 279 px (Ubuntu 281, Meaningful 267). Zeilenhoehe 1140.
+# Einstieg auf „WE'RE LED BY A GUY" (roh 0:53:23,30). Zeilenhoehe 1140.
 # Drei Stuecke raus, zusammen 14,2 s:
 #   1) bei 00:18.9 — 4,4 s  „So I'm, you know, my views are now, …"
 #   2) bei 00:28.7 — 5,1 s  „So I think my concerns," + 3,2 s Pause
 #   3) bei 00:43.4 — 4,6 s  „And hopefully," + 3,4 s Pause
-# Holperer in Zeile 9/10 steht noch drin: „and what it is wrecked on
+# Holperer in Zeile 10 steht noch drin: „and what it is wrecked on
 #   American society" — so gesagt, mit zwei Denkpausen.
 # Aufbau: 0:00-0:22.7 Ken Nah (Kamera 1) · 0:22.7-0:28.7 Totale ·
 #   0:28.7-0:48.1 Ken Nah (Kamera 2). Zwei Kaesten, 648 und 548.
+# 13 statt 11 Zeilen, weil das Preset die Zeile auf 72 % der Bildbreite
+#   begrenzt (777 px statt 1000) und laengere Dreier darum teilt.
 #
 # ABNAHME (gemessen)
-#   1080x1920 · 48 kHz · 51,9 s · Outro da · 52 Untertitel · Ortscheck sauber
+#   1080x1920 · 48 kHz · 51,9 s · Outro da · 62 Untertitel · Ortscheck sauber
 #   Hauptteil -29,8 LUFS — gleich mit Ubuntu und Meaningful. Spitze -4,7 dB.
 #   „Kein Musikbett" meldet FEHLER bei -51,3 dB — das ist die Musik.
 #   Ohne Musik: alle Pruefungen bestanden (-77,2 dB).
