@@ -28,3 +28,18 @@ kein Gegenbeleg**, nur eine fehlende Spur; er veröffentlicht ohne Spur im
 Repo, und eine Mail an den Gast kann auch später kommen.
 
 Nichts im Chat.
+
+## 00:40 · still
+
+- **00:40** · alle neun Zweige · keine Bewegung seit **14:38** · neue
+  Commits: **keine** · Maßnahme: **keine**
+- Kein Agent hat eine offene Aufgabe.
+
+Morgen ist Samstag. Im Kalender steht ein **Clip, 3–10 Min, ohne Quelle** —
+das ist die Meldung für den Morgenbericht, zusammen mit der Frage, ob eines
+der beiden Strassman-Langstücke dafür in Frage kommt. Beide sind nicht
+gebaut, weil sie auf beiden Seiten der Gesprächspause liegen; **ob das nach
+der Veröffentlichung noch gilt, hängt daran, welche Fassung die Folge
+geworden ist.**
+
+Nichts im Chat.
