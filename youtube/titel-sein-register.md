@@ -102,3 +102,33 @@ was durchgekommen ist, nicht was er will.
    an.
 5. **Das „Nobody"-Motiv ist seine stärkste Karte.** Nicht in jeder Folge, aber
    es ist der Ton, auf den er selbst immer wieder kommt.
+
+## Nachtrag 13.11. — mein Median schlaegt sein Register nicht
+
+**Fuer den Einsamkeits-Clip habe ich 13 Titel aus der generischen Messung
+gebaut** (341 fremde Langformate) **und diese Datei nicht aufgemacht.**
+Heraus kamen Zeilen wie `Why Loneliness Shows Up In Your Bloodwork` — korrekt
+gemessen und auf seinem Kanal trotzdem falsch. Sein Urteil: *„die
+langweiligsten, unattraktivsten, die ich jemals gesehen habe."*
+
+**Die Rangfolge, die daraus folgt:** die Messung sagt, was auf fremden
+Kanaelen zieht. **Diese Datei sagt, was nach ihm klingt.** Bei Konflikt
+gewinnt die Datei, und die Messung liefert nur noch das Veto gegen einzelne
+Woerter (Fragezeichen, `men`, `polarization`).
+**Der Doppelpunkt ist der Beleg:** in meiner Messung liegt er bei 3.346
+Abrufen, fast unten — und **seine ganze Spalte A besteht daraus**, bis in den
+veroeffentlichten Makhosi-Titel. Haette ich den Median entscheiden lassen,
+haette ich ihm seine eigene Signatur wegmessen wollen.
+
+### Eine fuenfte Form, von ihm am 13.11. nachgereicht
+
+`America's Secret Crisis` · `Antidepressants Won't Fix America's Hidden
+Crisis` · `Longevity Expert: The … Cause`
+
+**Das Land im Genitiv plus ein Verbergungs-Adjektiv** — *Secret*, *Hidden* —
+und ein zurueckgehaltenes Substantiv (`The … Cause`). Leiser als `NOBODY …!`,
+aber mit derselben Bewegung: es gibt etwas, das Du nicht weisst.
+**Und er waehlt die Rolle nach dem Clip, nicht nach dem Gast:** fuer den
+Einsamkeits-Clip `Longevity Expert:`, nicht `Former NPR CEO:`. Belegt ist die
+Rolle ueber das Longevity Project mit Stanford, den Podcast *Century Lives*
+und *Healthy to 100*.
