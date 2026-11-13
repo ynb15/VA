@@ -11,8 +11,9 @@ und `video/ken-material.md` auf `claude/content-cinematic`
 
 ## ⚠ Die eine Sache, die vor dem Upload geklaert sein muss
 
-**Alle Kapitelmarken unten sind Rohzeiten.** Sie stimmen genau dann, wenn
-die Folge **in Originalgeschwindigkeit und ohne Einschub** hochgeht.
+**~~Alle Kapitelmarken unten sind Rohzeiten.~~ Erledigt am 13.11.:** die
+Endfassung liegt vor, die Marken sind an ihr gemessen und stehen unten in
+veroeffentlichter Zeit.
 
 Bei Kyle hat er auf **1,1** beschleunigt und einen **2:57-Fundraiser**
 eingebaut. Beides zusammen hier gerechnet: 6333 s ⁄ 1,1 = 1:35:57, plus
@@ -102,39 +103,64 @@ Apple-Adressen der Folge. Alles andere steht.
 
 ## 26 Kapitelmarken — Endfassung, 13.11.
 
-**Zeiten der veroeffentlichten Fassung** (,
-26,2 GB, 5968,3 s = 1:39:28). Die Rohzeiten stehen nicht mehr hier, sie
-gelten nicht mehr.
+**Zeiten der veroeffentlichten Fassung** (26,2 GB, 5968,3 s = 1:39:28).
+Die Rohzeiten stehen nicht mehr hier, sie gelten nicht mehr.
 
+```
+0:00 "What's the most American thing you've ever done?"
+1:44 The advice he got from Tucker Carlson - and took
+2:42 Clinton campaign counsel, then nine years running NPR
+5:30 The street party where Republican Like Me began
+7:11 The line in the pledge that was offered as a joke
+9:08 The big sort: how we moved away from each other
+10:00 "Humans are inherently tribal"
+13:32 Two hours with Ken against thirty seconds of Andrew Tate
+17:38 "90 seconds is also too long"
+22:19 "That liberal media platform" - and trust at 28%
+27:20 Why a newsroom becomes a bubble that replicates itself
+31:13 The biggest misconception each side has about the other
+34:11 "Most people are decent"
+37:00 Guns, from a man who has fired one twice
+43:01 An atheist Jew on why he went to church on Sunday
+46:14 The other Ken Stern, and the letters that keep coming
+51:46 America's deeper crisis - I read him my essay
+58:11 Lonely as 15 cigarettes a day
+1:02:17 Ubuntu
+1:04:56 The kids who had to hand in their phones
+1:12:05 Where the retirement age actually comes from
+1:14:40 "An airbrushed version of aging"
+1:20:05 An introvert's year of living socially
+1:23:10 "Nice fit"
+1:30:18 Big lake fish
+1:36:05 What makes life meaningful?
+```
 
-
-**Optional:**  Fundraiser (gemessen, endet ) ·  Outro.
+**Optional:** `54:41` Fundraiser (gemessen, endet `57:31`) · `1:38:52` Outro.
 
 ### Worauf das steht
 
 | | |
 |---|---|
-| Laufzeit | 5968,3 s, aus dem -Atom |
+| Laufzeit | 5968,3 s, aus dem `mvhd`-Atom |
 | Tempo | **1,1** |
 | Einschub | **nach Rohsekunde 3605** (1:00:05), direkt hinter *„What's your reason to live?"* |
 | Fundraiser | **174,5 s** |
 | Intro davor | keins |
 
- vor dem Einschub,  danach.
+`neu = roh / 1,1` vor dem Einschub, `neu = roh / 1,1 + 174,5 s` danach.
 **An neun Punkten quer durch die Folge gegengeprueft** mit
-: vier im ersten Fenster mit Versatz 0, einer bei
-roh 0:28:45 mit Versatz 0, das Essay-Ende mit Versatz 0, der Fundraiser-
-Anfang selbst (gemessen 3281,9 s), und vier am Ende mit 174,4 bis 175,0.
-Die Rechnung schliesst: Gespraech endet 1:38:52, Laufzeit 1:39:28, Rest
-36,2 s Outro.
+`video/werkzeug/fenster.py`: vier im ersten Fenster mit Versatz 0, einer bei
+roh 0:28:45 mit Versatz 0, das Essay-Ende mit Versatz 0, der
+Fundraiser-Anfang selbst (gemessen 3281,9 s), und vier am Ende mit 174,4 bis
+175,0. Die Rechnung schliesst: Gespraech endet 1:38:52, Laufzeit 1:39:28,
+Rest 36,2 s Outro.
 
 **Genauigkeit der einzelnen Marke: ±3 s**, aus den Segmentgrenzen des
-Rohtranskripts. Faellt in die richtige Richtung — eine Segmentgrenze liegt
-am oder kurz vor dem Satz, also startet ein Kapitel eher zu frueh als zu
-spaet.
+Rohtranskripts. Faellt in die richtige Richtung — eine Segmentgrenze liegt am
+oder kurz vor dem Satz, also startet ein Kapitel eher zu frueh als zu spaet.
 
-**Format geprueft** mit : 26 Marken,
-0 Fehler. **Unter einer Stunde ohne Stundenfeld** — , nicht ,
+**Format geprueft** mit `video/werkzeug/kapitel_pruefen.py`: 26 Marken,
+0 Fehler. **Unter einer Stunde ohne Stundenfeld** — `5:30`, nicht `0:05:30`,
 sonst erkennt YouTube die Marke nicht.
 
 ## 15 Titel
