@@ -6,6 +6,66 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Bettpegel: am abgenommenen Short messen, nicht aus einer Formel rechnen (13.11.)
+
+*„Musik wieder mal viel zu leise, shaking my head."*
+
+Ich hatte den Bettpegel dreimal aus derselben Formel genommen — `G = Stimme
+− Bett − 10 dB`, seine Ansage vom 21.10. Was ich nie getan habe: das Bett in
+seinen **abgenommenen** Shorts freilegen und meines dagegenhalten. Das geht
+in zwei Minuten, weil Musikfassung und musikfreie Fassung beide im Repo
+liegen: `Musikfassung − musikfreie Fassung` ergibt das Bett allein.
+
+| Bett im Hauptteil | |
+|---|---|
+| Ubuntu | −45,4 dB |
+| Meaningful | −44,8 dB |
+| Aging | −43,4 dB |
+| Fassung 4 | −44,1 dB |
+
+Der Mittelwert war die ganze Zeit richtig. **Der Verlauf war es nicht:**
+
+| je 2 s | | | | | | | | | | | |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Fassung 4 | −48 | −48 | −48 | −51 | −53 | −53 | −43 | −42 | −43 | −42 | −44 |
+| Fassung 5 | −45 | −44 | −42 | −44 | −43 | −43 | −43 | −41 | −43 | −42 | −43 |
+
+Die ersten zwölf Sekunden lagen 8 bis 10 dB unter dem Rest — genau dort, wo
+man auf Play drückt. **Und ich hatte es gewusst**: ich hatte die ruhige
+Stelle des Titels bewusst an den Anfang gelegt und in der Übergabeliste als
+*„ein Atmen, kein Loch"* verharmlost, statt sie zu messen.
+
+→ betrifft: jedes Musikbett. **Ein Mittelwert über 50 Sekunden verbirgt ein
+Loch von zwölf.** Nach dem Mischen den Bettpegel in 2-s-Schritten ausgeben
+und gegen das zuletzt abgenommene Short derselben Reihe halten — Verlauf
+gegen Verlauf, nicht Zahl gegen Zahl. Und: **wenn ich in einer Übergabe
+einen Nachteil kleinrede statt ihn zu messen, ist das die Stelle, an der die
+nächste Beanstandung kommt.**
+
+## Für ein Bett unter Sprache schlägt Gleichmäßigkeit die Brillanz (13.11.)
+
+Ich hatte den Einsatzpunkt zweimal nach der 2-kHz-Regel gewählt (wo das
+Stück „aufmacht") und beide Male ein Fenster erwischt, dessen Pegel
+schwankt. Gegenprobe: jedes mögliche 52-s-Fenster von „Mom's Got Work" auf
+Gleichmäßigkeit gemessen, RMS je Sekunde, Spanne zwischen leisestem und
+mittlerem Punkt:
+
+| Fenster | Spanne |
+|---|---|
+| ab 0:03 | **3,0 dB** |
+| ab 0:06 | 8,2 dB |
+| ab 0:48 | 11,4 dB |
+
+**Das gleichmäßigste Fenster ist der Anfang des Stücks** — genau der, den
+die 2-kHz-Regel ausschließt. Dass er dunkler klingt, fällt bei einem Bett
+42 dB unter der Stimme nicht ins Gewicht; sein Pegel fällt ins Gewicht.
+
+→ betrifft: jedes Musikbett. **Die 2-kHz-Regel gilt für die Wahl des
+Stücks, nicht für die Wahl des Fensters.** Das Fenster wird nach drei
+Schranken gewählt, in dieser Reihenfolge: (1) ganz im Körper des Stücks,
+(2) kleinste Pegelspanne, (3) dann erst Timbre.
+
+
 ## Mein Zweig trug eine veraltete Kopie des geteilten Werkzeugs (13.11.)
 
 Drei Fassungen lang habe ich die falsche Schrift geliefert und zweimal

@@ -1,4 +1,4 @@
-# Ken Stern — seine ehrliche Meinung zu Trump · Fassung 4 (51,9 s · Hauptteil 48,1 s + Outro 3,8 s)
+# Ken Stern — seine ehrliche Meinung zu Trump · Fassung 5 (51,9 s · Hauptteil 48,1 s + Outro 3,8 s)
 # Rohzeit 0:53:23,30–0:54:30,40, abzueglich drei Stuecke · Tempo 1,1 · mit „Mom's Got Work"
 #
 # Zeiten sind die im FERTIGEN Short — das, was Du im Player siehst.
@@ -71,18 +71,48 @@
 # ausserdem das Nachziehen und die Schrift waere exakt Deine.
 
 # ══════════════════════════════════════════════════════════════════
-# DIE MUSIK — aus Fassung 3 uebernommen
+# DIE MUSIK — jetzt am Verlauf gemessen, nicht an einer Formel
 # ══════════════════════════════════════════════════════════════════
-# „Mom's Got Work" hat ab 1:41 sein eigenes Outro (-19 dB auf -47 dB).
-# Mein erstes Bett lief 1:00,75-1:52,68 und lag die letzten 11 Sekunden
-# genau darauf, darueber noch meine eigene Ausblende. Doppelt leise.
-# Jetzt ab 0:48,50: Bett endet bei 1:40,4, noch im vollen Teil, und die
-# dichteste Stelle des Titels liegt unter dem Schluss.
-# Bettpegel im fertigen Short, durch Subtraktion:
-#          38 s   42 s   44 s   46 s   48 s   50 s
-#   ALT    -44    -49    -56    -62    -58    -65
-#   NEU    -42    -44    -44    -41    -45    -49
-# Pegel: Stimme -33,5 dB, Bett 10 dB darunter.
+# Dritter Anlauf. Was diesmal anders ist: ich habe das Bett in Deinen
+# ABGENOMMENEN Shorts freigelegt (Musikfassung minus musikfreie Fassung,
+# beide liegen im Repo) und meines dagegen gehalten. Das haette ich beim
+# ersten Mal tun sollen, statt mit „Stimme minus Bett minus 10 dB" zu
+# rechnen.
+#
+# Bett-Pegel im fertigen Short, Hauptteil:
+#   Ubuntu           -45,4 dB
+#   Meaningful       -44,8 dB
+#   Aging            -43,4 dB
+#   Fassung 4        -44,1 dB  <- im Schnitt richtig, aber:
+#   FASSUNG 5        -42,2 dB
+#
+# Der Schnitt war nie das Problem. DER VERLAUF war es:
+#   Fassung 4, je 2 s:  -48 -48 -48 -51 -53 -53 -43 -42 -43 -42 -44 ...
+#   Fassung 5, je 2 s:  -45 -44 -42 -44 -43 -43 -43 -41 -43 -42 -43 ...
+# Die ersten zwoelf Sekunden lagen 8 bis 10 dB unter dem Rest — genau da,
+# wo Du auf Play drueckst. Das war die ruhige Stelle des Titels (0:55-1:00),
+# die ich sehenden Auges an den Anfang gelegt und in der Liste als „ein
+# Atmen, kein Loch" verharmlost hatte. War ein Loch.
+#
+# WAS ICH GEMACHT HABE: jedes moegliche 52-s-Fenster des Titels auf
+# Gleichmaessigkeit gemessen (RMS je Sekunde, Spanne zwischen leisestem und
+# mittlerem Punkt):
+#   ab 0:03  Spanne  3,0 dB   <- gewaehlt
+#   ab 0:48  Spanne 11,4 dB   <- Fassung 4
+# Das gleichmaessigste Fenster ist der ANFANG des Titels. Dass er dort
+# dunkler klingt (weniger Energie ueber 2 kHz), faellt bei einem Bett 42 dB
+# unter der Stimme nicht ins Gewicht — sein PEGEL faellt ins Gewicht.
+# Bett jetzt ab 0:03,0, endet bei 0:54,9, also vor der ruhigen Stelle und
+# weit vor dem Song-Outro ab 1:41.
+#
+# Und der Pegel liegt jetzt 1,2 dB ueber dem lautesten Deiner bisherigen
+# Shorts (Aging) und 3,2 dB ueber Ubuntu. Wenn es immer noch zu leise ist,
+# sag eine Zahl oder „nochmal 3 dB lauter" — das ist ein Durchlauf von
+# zwei Minuten, ohne neues Rendern.
+#
+# Unveraendert: Ausblende 3,8 s ab 48,13 s, also ueber dem Outro, wie am
+# 11.11. angesagt. Absenkung unter der Stimme mit Deiner Einstellung vom
+# 21.10. (ratio 4, release 250).
 # Ohne Musik: „YNB Podcast Ken Stern Trump.mp4" im Repo.
 
 # ══════════════════════════════════════════════════════════════════
@@ -102,8 +132,8 @@
 #
 # ABNAHME (gemessen)
 #   1080x1920 · 48 kHz · 51,9 s · Outro da · 62 Untertitel · Ortscheck sauber
-#   Hauptteil -29,8 LUFS — gleich mit Ubuntu und Meaningful. Spitze -4,7 dB.
-#   „Kein Musikbett" meldet FEHLER bei -51,3 dB — das ist die Musik.
+#   Hauptteil -29,8 LUFS — gleich mit Ubuntu und Meaningful. Spitze -4,8 dB.
+#   „Kein Musikbett" meldet FEHLER bei -44,3 dB — das ist die Musik.
 #   Ohne Musik: alle Pruefungen bestanden (-77,2 dB).
 #
 # NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.

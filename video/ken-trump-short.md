@@ -1,11 +1,59 @@
-# Ken Stern — seine ehrliche Meinung zu Trump (13.11., Fassung 4)
+# Ken Stern — seine ehrliche Meinung zu Trump (13.11., Fassung 5)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme, Yannick lädt hoch.
 
 | Datei | Länge | Ton |
 |---|---|---|
-| `YNB Podcast Ken Stern Trump (Moms Got Work).mp4` | 51,9 s | Stimme + Bett bis zum letzten Bild |
+| `YNB Podcast Ken Stern Trump (Moms Got Work).mp4` | 51,9 s | Stimme + Bett ab 0:03,0 des Titels, bis zum letzten Bild |
 | `YNB Podcast Ken Stern Trump.mp4` | 51,9 s | nur Stimme |
+
+## Fassung 5 (13.11.) — Bettpegel am abgenommenen Short gemessen
+
+*„Musik wieder mal viel zu leise, shaking my head."*
+
+Ich hatte den Pegel dreimal aus der Formel `G = Stimme − Bett − 10 dB`
+genommen und nie das Bett in den **abgenommenen** Shorts freigelegt. Das
+geht in zwei Minuten: Musikfassung minus musikfreie Fassung, beide liegen
+im Repo.
+
+| Bett im Hauptteil | |
+|---|---|
+| Ubuntu | −45,4 dB |
+| Meaningful | −44,8 dB |
+| Aging | −43,4 dB |
+| Fassung 4 | −44,1 dB |
+| **Fassung 5** | **−42,2 dB** |
+
+Der Mittelwert war richtig. **Der Verlauf nicht:**
+
+| je 2 s | | | | | | | | | | | |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Fassung 4 | −48 | −48 | −48 | −51 | −53 | −53 | −43 | −42 | −43 | −42 | −44 |
+| Fassung 5 | −45 | −44 | −42 | −44 | −43 | −43 | −43 | −41 | −43 | −42 | −43 |
+
+Die ersten zwölf Sekunden lagen 8–10 dB unter dem Rest: die ruhige Stelle
+des Titels (0:55–1:00), die ich in Fassung 3 bewusst an den Anfang gelegt
+und in der Übergabe als „ein Atmen, kein Loch" verharmlost hatte.
+
+**Fenster neu gewählt.** Jedes mögliche 52-s-Fenster auf Gleichmäßigkeit
+gemessen (RMS je Sekunde, Spanne zwischen leisestem und mittlerem Punkt):
+
+| Fenster | min | Spanne |
+|---|---|---|
+| **ab 0:03** | −21,5 dB | **3,0 dB** |
+| ab 0:06 | −26,9 dB | 8,2 dB |
+| ab 0:48 (Fassung 4) | −27,9 dB | 11,4 dB |
+
+Das gleichmäßigste Fenster ist der **Anfang** des Stücks — genau der, den
+die 2-kHz-Regel ausschließt. Für ein Bett 42 dB unter der Stimme zählt der
+Pegel, nicht das Timbre. Bett jetzt **ab 0:03,0**, endet bei 0:54,9, also
+vor der ruhigen Stelle und weit vor dem Song-Outro ab 1:41.
+
+Verstärkung −23,8 dB. Ausblende unverändert 3,8 s ab 48,13 s über dem
+Outro; Absenkung unverändert mit seiner Einstellung vom 21.10. (ratio 4,
+release 250). Hauptteil −29,8 LUFS, Spitze −4,8 dB.
+
+---
 
 ## Fassung 4 (13.11.) — sein Preset, statt meiner Messungen
 
