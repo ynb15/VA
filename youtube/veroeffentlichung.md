@@ -206,12 +206,26 @@ alles ab `60:36`. Die Folge stand damit knapp zwei Tage online, waehrend die
 komplette zweite Haelfte nicht anspringbar war. **Er hat es gefunden, nicht
 ich.**
 
-**Die Regel, die daraus folgt:** jede Folge ueber 60 Minuten vor der Abgabe
-auf Zeilen pruefen, deren Minutenzahl 60 erreicht. Ein Einzeiler reicht:
+**Die Regel, die daraus folgt:** jeden Kapitelblock vor der Abgabe pruefen.
 
 ```
-grep -nE '^(6[0-9]|[7-9][0-9]|[1-9][0-9]{2}):[0-5][0-9] ' beschreibung.txt
+python3 -I video/werkzeug/kapitel_pruefen.py kapitel.txt
 ```
+
+**Nachtrag 13.11. — derselbe Fehler andersherum, und warum der grep nicht
+reichte.** Fuer die Ken-Endfassung habe ich `0:05:30` geschrieben statt
+`5:30`. **Unter einer Stunde darf kein Stundenfeld davor stehen, sonst
+erkennt YouTube die Marke genauso wenig** wie `60:36` darueber. Er hat auch
+das gefunden, nicht ich.
+
+Der Einzeiler von oben konnte das nicht sehen: **er suchte nur nach der
+Fassung, die mir schon einmal passiert war.** Eine Pruefung, die auf den
+letzten Fehler zugeschnitten ist, faengt den naechsten nicht. Deshalb steht
+jetzt ein Skript da, das **beide Richtungen** prueft, dazu erste Marke 0:00,
+aufsteigende Reihenfolge, Mindestabstand 10 s und Mindestanzahl 3.
+Gegenprobe am Tag der Entstehung: die falsche Ken-Fassung meldet 18 Fehler,
+die richtige null.
+→ betrifft: alle Content-Agenten, head-of-content
 
 **Kingsbury faellt mit 77 Minuten genau in diesen Bereich** — dort beginnt die
 Stunde etwa bei Kapitel zwei Drittel der Liste.

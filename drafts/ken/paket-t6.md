@@ -100,54 +100,42 @@ Apple-Adressen der Folge. Alles andere steht.
 
 ---
 
-## 26 Kapitelmarken
+## 26 Kapitelmarken — Endfassung, 13.11.
 
-**Worauf sie sich stuetzen:** jede einzelne ist per Teilstring im Transkript
-gesucht und auf das Segment zurueckgefuehrt, in dem die Phrase faellt — mit
-einem Zeichenindex ueber den ganzen Text, nicht ueber die Blockzeiten
-geschaetzt. Nicht zwei Stichproben, sondern alle 26. Dass Roh- und
-Masterzeit dieselbe Leiste sind, ist **Cinematics Befund** (geeichter Anker
-bei 6150 s), nicht meiner.
+**Zeiten der veroeffentlichten Fassung** (,
+26,2 GB, 5968,3 s = 1:39:28). Die Rohzeiten stehen nicht mehr hier, sie
+gelten nicht mehr.
 
-```
-0:00:00 "What's the most American thing you've ever done?"
-0:01:55 The advice he got from Tucker Carlson – and took
-0:02:59 Clinton campaign counsel, then nine years running NPR
-0:06:03 The street party where Republican Like Me began
-0:07:55 The line in the pledge that was offered as a joke
-0:10:03 The big sort: how we moved away from each other
-0:11:01 "Humans are inherently tribal"
-0:14:54 Two hours with Ken against thirty seconds of Andrew Tate
-0:19:24 "90 seconds is also too long"
-0:24:33 "That liberal media platform" – and trust at 28%
-0:30:05 Why a newsroom becomes a bubble that replicates itself
-0:34:21 The biggest misconception each side has about the other
-0:37:37 "Most people are decent"
-0:40:43 Guns, from a man who has fired one twice
-0:47:20 An atheist Jew on why he went to church on Sunday
-0:50:52 The other Ken Stern, and the letters that keep coming
-0:56:57 America's deeper crisis – I read him my essay
-1:00:49 Lonely as 15 cigarettes a day
-1:05:19 Ubuntu
-1:08:14 The kids who had to hand in their phones
-1:16:06 Where the retirement age actually comes from
-1:18:57 "An airbrushed version of aging"
-1:24:54 An introvert's year of living socially
-1:28:18 "Nice fit"
-1:36:08 Big lake fish
-1:42:30 What makes life meaningful?
-```
 
-Das sind 26 — zwei ueber seinem gemessenen Korridor (17–24). **Die beiden,
-die ich zuerst streichen wuerde**, wenn er kuerzer will: `0:11:01` (geht in
-`0:10:03` auf) und `0:30:05` (geht in `0:24:33` auf).
 
-**Spoilerprobe bestanden:** keine Marke nennt ihre eigene Aufloesung.
-`0:07:55` sagt, dass ein Satz ein Witz war, nicht welcher. `1:16:06` sagt
-nicht, dass es Bismarck war. `0:50:52` nennt den zweiten Ken Stern, nicht
-wer ihm schreibt.
+**Optional:**  Fundraiser (gemessen, endet ) ·  Outro.
 
----
+### Worauf das steht
+
+| | |
+|---|---|
+| Laufzeit | 5968,3 s, aus dem -Atom |
+| Tempo | **1,1** |
+| Einschub | **nach Rohsekunde 3605** (1:00:05), direkt hinter *„What's your reason to live?"* |
+| Fundraiser | **174,5 s** |
+| Intro davor | keins |
+
+ vor dem Einschub,  danach.
+**An neun Punkten quer durch die Folge gegengeprueft** mit
+: vier im ersten Fenster mit Versatz 0, einer bei
+roh 0:28:45 mit Versatz 0, das Essay-Ende mit Versatz 0, der Fundraiser-
+Anfang selbst (gemessen 3281,9 s), und vier am Ende mit 174,4 bis 175,0.
+Die Rechnung schliesst: Gespraech endet 1:38:52, Laufzeit 1:39:28, Rest
+36,2 s Outro.
+
+**Genauigkeit der einzelnen Marke: ±3 s**, aus den Segmentgrenzen des
+Rohtranskripts. Faellt in die richtige Richtung — eine Segmentgrenze liegt
+am oder kurz vor dem Satz, also startet ein Kapitel eher zu frueh als zu
+spaet.
+
+**Format geprueft** mit : 26 Marken,
+0 Fehler. **Unter einer Stunde ohne Stundenfeld** — , nicht ,
+sonst erkennt YouTube die Marke nicht.
 
 ## 15 Titel
 
