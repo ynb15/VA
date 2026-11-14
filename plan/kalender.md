@@ -94,7 +94,7 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Mi 11.11. | Short | **Strassman · „Answer"** (36,7 s) | fertig · *mein Vorschlag* |
 | Do 12.11. | Short | **Strassman · „Grays"** (77,3 s) | fertig · *mein Vorschlag* |
 | Fr 13.11. | **PODCAST** | Rick Strassman | offen |
-| Sa 14.11. | Clip | 3–10 Min | offen |
+| Sa 14.11. | Clip | **Strassman · McKenna** (3:16) | fertig · *mein Vorschlag* |
 | So 15.11. | **PODCAST** | Ken Stern | T−3 fertig, T−2 am 13.11. |
 | Mo 16.11. | Short | — | offen |
 | Di 17.11. | Short | — | offen |

@@ -45,6 +45,35 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 45 — 14.11.2026, 15:54 Kapstadt · ein Zitat ist kein Satzende, und eine Short-Regel gilt nicht für einen Clip
+
+- **Ein Zitat als Schnittmarke ist kein Satzende.** In der Strassman-Auswahl
+  stand *„Bis: ‚I think it still is a question'"*. **Der Satz läuft aber
+  weiter** bis *„…interpreted as a statement of fact"* (**1639,56 s**). Nur
+  die mitnotierte Zeitmarke 27:20 hat den Schnitt gerettet — **das Zitat
+  allein hätte 5,3 Sekunden zu früh geschnitten.** Gleiches am Anfang: die
+  notierte Marke 23:56 beginnt mitten im Gedanken, gebaut wurde ab
+  **1429,60 s**, 6,7 s früher.
+  → betrifft: alle, die Fenster aus einer Auswahlliste bauen — **das Satzende
+  am Ton messen, nicht aus dem notierten Zitat ableiten**
+- **Eine Pegelregel, die an Shorts gemessen ist, ist auf Clips wirkungslos.**
+  Der Samstagsclip (3:16) misst **−30,24 LUFS bei Spitze −2,29 dBFS**. Die
+  Decke −0,5 dBTP lässt damit **+1,79 dB** zu, nötig wären **+16,01** — das
+  Ergebnis läge **14,2 dB unter der Vorlage** und hübe nur den Rauschboden
+  (−51,6 → −49,9 dBFS). **Ein Stück von Minuten trägt Lacher und Plosive, ein
+  Short von 30 s nicht.**
+  → betrifft: alle, die Pegel angleichen
+- **Clip ist nicht Short, und mein Auftrag hat das verwechselt.** Ich hatte
+  Musik, Untertitel und Festverstärkung in den Clip-Auftrag geschrieben —
+  alles drei sind Short-Vorgaben. **Ein Clip ist 16:9, ohne Toneingriff, ohne
+  Bett, ohne Einblendungen** (`video/clip_bauen.py`). Cinematic hat sie zu
+  Recht nicht angewandt und den Grund hingeschrieben, statt sie auszuführen.
+  **Eine Vorgabe trägt das Format, für das sie gemessen wurde, und keines
+  darüber hinaus.**
+  → betrifft: zuerst mich, und jeden, der Aufträge über zwei Formate schreibt
+
+---
+
 ## Ausgabe 44 — 13.11.2026, 15:54 Kapstadt · ein Musikbett wird in Bändern gemessen, und viermal die falsche Größe
 
 - **Ein Musikbett wird in Frequenzbändern gemessen, nicht breitbandig.**

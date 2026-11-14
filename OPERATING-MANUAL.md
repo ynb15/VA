@@ -9297,3 +9297,20 @@ noch einmal in `bin/plan-pruefen.py`. Ken Stern im einen einzutragen reichte
 nicht; die Plankontrolle meldete „keine Fristen in den nächsten drei Tagen",
 während T−2 am Folgetag fällig war. **Beim Eintragen einer Folge immer beide
 Dateien.** (Dasselbe Muster wie bei der Team-Liste am 22.10.)
+
+## CLIP IST NICHT SHORT — 14.11.2026
+
+In meinem Auftrag für das Strassman-Samstagsstück standen **Musik, Untertitel
+und Festverstärkung**. Alle drei sind **Short**-Vorgaben. Ein **Clip** ist
+16:9, läuft **ohne Toneingriff**, ohne Bett und ohne Einblendungen
+(`video/clip_bauen.py`). Cinematic hat sie nicht angewandt und den Grund
+hingeschrieben — richtig so.
+
+**Und die Pegelregel war dort ohnehin wirkungslos:** bei −30,24 LUFS und
+Spitze −2,29 dBFS lässt die Decke nur **+1,79 dB** zu statt der nötigen
++16,01; das Ergebnis läge 14,2 dB unter der Vorlage und höbe nur den
+Rauschboden.
+
+**Die Regel:** eine Vorgabe trägt **das Format, an dem sie gemessen wurde**,
+und keines darüber hinaus. Vor jedem Auftrag: ist das ein Short, ein Clip oder
+eine Folge — und welche meiner Vorgaben sind an diesem Format gemessen?
