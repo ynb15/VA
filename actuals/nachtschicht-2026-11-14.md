@@ -29,3 +29,23 @@ Nichts im Chat.
   neue Commits: **keine** · Maßnahme: **keine**
 
 Nichts im Chat.
+
+## 06:40 · Ken-Launchtag, und Defina ist vorab geprüft
+
+- **06:40** · alle neun Zweige · keine Bewegung seit **07:07** am 14.11. ·
+  neue Commits: **keine** · Maßnahme: **keine**
+- Lernkanal: **nichts Neues** seit gestern.
+
+**Heute raus: Ken Stern** — sein Termin, sein Upload. Das Paket liegt seit
+Freitag vollständig bei ihm, die 26 Kapitelmarken stehen auf der
+**veröffentlichten** Zeit. **Von mir ist heute nichts zu tun.**
+
+**Nächste Frist: Matt Defina T−10 am 17.11.** Zwei Tage vorher nachgesehen,
+damit der Auftrag am Dienstag vollständig ist (Einzelheiten in
+`plan/kalender.md`): Ordner und **Master 17,45 GB** liegen, **keine
+Schnittfassung**, ein **geeichter Anker** aus dem fertigen Meaning-Short
+(6474,7–6513,1 s) ist vorhanden — und das Vorbereitungsdoku hat **529.889
+Zeichen**, zwei Größenordnungen mehr als bei Ken. **Meine Lesart: da steht
+wahrscheinlich ein Transkript drin.**
+
+**Shorts I nicht angestupst** — die Frist greift erst am 17.11.

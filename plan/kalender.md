@@ -518,3 +518,28 @@ ist damit unvollständig.** Richtig ist:
    und **nur die geänderten Zeilen** übernehmen.
 3. **Zustandsspalte und angehängte Abschnitte sind Handarbeit** und überleben
    keinen Generatorlauf.
+
+## Matt Defina: Material steht, T−10 am 17.11. — vorab geprüft, 15.11.2026
+
+Zwei Tage vor der Frist nachgesehen, damit der Auftrag am Dienstag vollständig
+ist statt eine Rückfrage in Verkleidung:
+
+- **Ordner `1K2cpLvNJ6mrR8Xg7qyhRzgjqSNZCmAIw`** („00 YNB Podcast: Matt
+  Defina"), letzter Stand 20.10.
+- **Master `1ubW-gMYb6_g0ZO-cOVyEFGQoKvIyGivj`, 17,45 GB**, vom 10.09.2026.
+- **Vorbereitungsdoku `1Q8mzrrTzBKBUSgjcvJdY-Mlwii88aX_2Os2wt6Z0qo0`,
+  529.889 Zeichen** — das ist **zwei Größenordnungen** mehr als bei Ken
+  (dessen Doku trug weder Transkript noch Kapitelliste). **Meine Lesart, nicht
+  geprüft:** bei dieser Größe steht dort wahrscheinlich ein Transkript drin,
+  wie bei Craig. **Das gehört als Erstes aufgeschlagen** — es kann den halben
+  T−10-Lauf sparen.
+- **Keine Schnittfassung**, wie bei Ken und Strassman.
+- **Ein geeichter Anker liegt bereits:** das fertige Short
+  `YNB Podcast Matt Defina Meaning` auf `claude/content-vlog`, Masterfenster
+  **6474,7–6513,1 s** (32,0 s), Zitat *„it's experiences… finding the joy in
+  the mundane"*. Damit lässt sich am Dienstag in Minuten belegen, ob ein
+  Transkript die ganze Folge abdeckt — statt es hochzurechnen.
+
+**Zuständig ist Shorts I** (`claude/content-assistant`), der seit dem 06.11.
+nichts committet hat und auf Kingsbury sitzt. **Nicht angestupst** — die Frist
+greift erst am 17.11., und Stillstand ohne offenen Auftrag ist kein Befund.
