@@ -28,7 +28,13 @@ ENTFAELLT = {"Kyle Kingsbury": {5}}   # Thumbnail macht er selbst ueber ChatGPT,
 # Von ihm so entschieden. Fristen davor werden nicht als ueberfaellig gemeldet
 # — sie sind nicht verpasst, sie sind ausgesetzt. Die Zeile bleibt sichtbar,
 # damit ein Halt nicht aus dem Blick geraet.
-WARTET = {}   # Kingsbury-Pause am 26.10. abgelaufen, siehe BEOBACHTEN unten
+WARTET = {
+    # Seine Ansage vom 16.11.2026, woertlich: "Nein morgen noch kein Defina".
+    # Kein Enddatum genannt -- die Kette laeuft erst wieder an, wenn ER es sagt.
+    # Deshalb ein Datum weit voraus statt einer stillen Freigabe in drei Tagen.
+    "Matt Defina": (datetime.date(2026, 12, 31),
+                    "seine Ansage vom 16.11.: noch nicht anfangen"),
+}   # Kingsbury-Pause am 26.10. abgelaufen, siehe BEOBACHTEN unten
 
 # Dinge, die ich beobachte, weil ihr Eintreffen eine Frist freigibt. Steht hier,
 # damit ich es nicht im Kopf tragen muss — und damit es nicht aufhoert, nur

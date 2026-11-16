@@ -610,3 +610,16 @@ sauber ist — Frames ganz, Satzenden gemessen, Pegel angeglichen, Straßenname
 stumm — ist deshalb noch kein Stück, das trägt. **Alles, was wir bisher
 gemessen haben, war Handwerk. Keine einzige Messung hat je geprüft, ob ein
 Short einen Anfang, eine Wendung und ein Ende hat.**
+
+## Defina ist angehalten — 16.11.2026
+
+**Seine Ansage, wörtlich:** *„Nein morgen noch kein Defina"*. **Kein
+Enddatum genannt** — die Kette läuft erst wieder an, wenn er es sagt, nicht
+nach Ablauf einer Frist. In `bin/plan-pruefen.py` steht die Pause deshalb mit
+einem Datum weit voraus (31.12.), damit sie **nicht still ausläuft** und T−10
+in drei Tagen von allein wieder als überfällig erscheint.
+
+Das Material bleibt geprüft und liegt bereit (Master 17,45 GB, geeichter
+Anker aus dem Meaning-Short, Vorbereitungsdoku mit 529.889 Zeichen) — siehe
+den Abschnitt vom 15.11. **Wenn er es freigibt, ist der Auftrag in Minuten
+geschrieben.**
