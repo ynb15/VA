@@ -23,3 +23,15 @@ Nichts im Chat.
   neue Commits: **keine** · Maßnahme: **keine**
 
 Nichts im Chat.
+
+## 03:40 · still
+
+- **03:40** · alle neun Zweige · keine Bewegung seit **07:07** am 14.11. ·
+  neue Commits: **keine** · Maßnahme: **keine**
+
+Heute ist Montag: um **15:05** läuft der wöchentliche Abgleich (Gäste,
+Sent-Mail-Register, Wochendokument im Drive). **Ken ist seit gestern
+veröffentlicht** — der Collab-Schritt und die Databank-Zeile gehören dort
+hinein, nicht in die Nachtschicht.
+
+Nichts im Chat.
