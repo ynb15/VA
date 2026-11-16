@@ -36,7 +36,19 @@ for K in "${!ZWEIG[@]}"; do
     continue
   fi
   SPITZE=$(git rev-parse --short "origin/$Z")
-  COMMITS=$(git rev-list --count "origin/claude/ai-chief-of-staff-cz83jv..origin/$Z" 2>/dev/null || echo 0)
+
+  # Commits ZAEHLEN SEIT DEM LETZTEN EINSAMMELN, nicht seit der Abzweigung.
+  # Vorher stand hier rev-list gegen den Alfred-Zweig: ein Agentenzweig wird
+  # nie zurueckgefuehrt, also war diese Zahl nie 0 und die Meldung
+  # "gearbeitet, aber nichts geschrieben" ging bei jedem Lauf an jeden Agenten.
+  TIPF="lernen/.gelesen/$K.tip"
+  VOR=$(cat "$TIPF" 2>/dev/null || true)
+  if [ -n "$VOR" ] && git cat-file -e "$VOR^{commit}" 2>/dev/null; then
+    BASIS="$VOR"
+  else
+    BASIS="origin/claude/ai-chief-of-staff-cz83jv"
+  fi
+  COMMITS=$(git rev-list --count "$BASIS..origin/$Z" 2>/dev/null || echo 0)
 
   if git cat-file -e "origin/$Z:lernen/$K.md" 2>/dev/null; then
     git show "origin/$Z:lernen/$K.md" > "lernen/.frisch/$K.md"
@@ -54,12 +66,16 @@ for K in "${!ZWEIG[@]}"; do
     echo "$DIFF"
     echo
   elif [ "$COMMITS" != "0" ]; then
-    echo "### $K  ($Z @ $SPITZE, $COMMITS eigene Commits) — gearbeitet, aber nichts in den Kanal geschrieben"
-    git log --oneline "origin/claude/ai-chief-of-staff-cz83jv..origin/$Z" | sed 's/^/    /'
+    echo "### $K  ($Z @ $SPITZE, $COMMITS Commits seit dem letzten Einsammeln) — gearbeitet, aber nichts in den Kanal geschrieben"
+    git log --oneline "$BASIS..origin/$Z" | head -12 | sed 's/^/    /'
+    [ "$COMMITS" -gt 12 ] && echo "    … und $((COMMITS - 12)) weitere"
     echo
   fi
 
-  [ "$QUITTIEREN" = "1" ] && cp "lernen/.frisch/$K.md" "$ALT"
+  if [ "$QUITTIEREN" = "1" ]; then
+    cp "lernen/.frisch/$K.md" "$ALT"
+    git rev-parse "origin/$Z" > "lernen/.gelesen/$K.tip"
+  fi
 done
 
 [ "$NEUES" = "0" ] && echo "Nichts Neues im Kanal."

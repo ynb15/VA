@@ -1,0 +1,1 @@
+- **21:40** · kein Agent · kein Nachtlauf offen — `list_triggers` zeigt keine geplante Aufgabe auf eine Agenten-Session · Maßnahme: keine

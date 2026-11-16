@@ -293,3 +293,57 @@ credential: *"former IronMan athlete and $100M EdTech-founder Rob Paddock"*,
 (upcoming)"*. **When the parenthesis holds a bare number with no word after it,
 it is not reach** — that was the „(8K)" lesson of 17.10., and the pitch proves
 the rule: when he means views, he writes „views".
+
+## Nachprüfung 16.11.2026 — Eamon: sechs Abweichungen, und ein fünfter Abbinder
+
+Mein Entwurf lag seit dem 10.11. im Scratchpad, seine Fassung ging am
+**10.11. um 16:37 Kapstadt** raus. Beide Texte nebeneinander:
+
+| Mein Entwurf | Seine Fassung | Die Regel dahinter |
+|---|---|---|
+| „a motorcycle accident **in the US**" | „a motorcycle accident **in Colorado**" | **Ich habe die Ortsregel über ihren Zweck hinaus angewandt.** Sie schützt, wo er *jetzt* ist und wo gedreht wird — nicht, wo der Unfall war. Colorado steht so auch in seiner Ken-Mail vom 03.10. **Was er selbst routiniert nennt, wird nicht unscharf gemacht.** |
+| „Just about made it to the HQ to sit down with Marian" | „**But: I survived - wich is a miracle -** and made it to the HQ to **record a pod** with Marian couple weeks later, then **managed** to fly back" | **Mein Entwurf hatte den Einsatz weggelassen.** Er benennt die Größenordnung in sechs Worten und geht sofort weiter. Und zweimal die Anstrengung: „made it", „managed to". Ich hatte daraus Logistik gemacht. |
+| „reading **Many-Minded Man**" | „reading **your memoir**" | **Kein Vorzeigen von Recherche in der Antwortmail.** Der Titel stand im Pitch; in der Antwort reicht „your memoir". |
+| „And I still very much **want** to do this one with you, **whenever it works**." | „**So yeah,** still very **keen** to do this one with you, **whenever things align**." | Zwei Dinge: „So yeah" als Scharnier statt „And". Und **„align" ist Eamons eigenes Wort** — er hatte geschrieben „If there's alignment I'd love to come on your show." Dasselbe Verfahren, das er mir am 10.11. zu Rob ausdrücklich angesagt hatte: *„nutzt doch aber bitte sein eigenes Wording."* **Zweimal in einer Woche ist kein Zufall, sondern Methode.** |
+| „it would be epic to have you down here." | „it would be epic to have you down here**!**" | — |
+| `Cheers,` / `YNB` | **`Stay lekker,`** / `YNB` | **Ein fünfter Abbinder, in meiner Tabelle nicht vorhanden.** |
+
+### Die Abbinder-Tabelle, jetzt fünf
+
+| Abbinder | Lage |
+|---|---|
+| `Dreaming Big,` | er wirbt um etwas, **oder markiert etwas** — siehe Ken-Startmail unten |
+| `Gg,` | Abwicklung, deutsch |
+| `Cheers,` / `Thanks,` | Abwicklung, englisch, Zweizeiler |
+| **`Stay lekker,`** | **warmer Gleichrangiger, englisch, südafrikanisch gefärbt — Peer, kein Geschäft** |
+| bespoke, aus der Welt des Empfängers gebaut | ein Meilenstein mit Leuten, deren Welt eine eigene Sprache hat |
+
+### Die Startmail zur Veröffentlichung — ein eigenes Format
+
+Ken, 15.11. um 10:11 Kapstadt, vollständig:
+
+> Howzit Ken,
+> Today is the day! It took a while post-accident to catch up with all the
+> podcasts - yours finally goes live in a few hours:
+> YouTube: … Spotify: … Apple: …
+> I've also uploaded a short in case you want to throw it up on Instagram or TikTok: …
+> Genuinely excited to get this one out into the world. And I still laugh out
+> loud every time I think about the big lake fish. Hope to see you at Burning
+> Man next year ;-)
+> Dreaming Big,
+> YNB
+
+**Der Bau, fünf Teile:** Gruß mit Ortsfärbung („Howzit") · **„Today is the
+day!"** · die drei Links nackt untereinander, kein Fließtext · **das Short als
+Drive-Link mitgeliefert, mit dem Grund** („in case you want to throw it up") ·
+und erst dann **ein persönlicher Rückruf aus der Aufnahme** („the big lake
+fish") plus eine Zukunftszeile.
+
+**Was er nicht tut:** um Teilen bitten. Er liefert das Short und die Links und
+hört auf. **Ken hat elf Stunden später von sich aus geteilt** („Just shared the
+episode on linked in and will post it on my tiktok and or Instagram tomorrow").
+→ **Das Material mitschicken ersetzt die Bitte.**
+
+**Und ein Abbinder, der meine Regel korrigiert:** `Dreaming Big,` steht hier zu
+einem Gast, der längst aufgenommen ist — da wird um nichts mehr geworben. Also
+nicht „wenn er etwas will", sondern **„wenn der Anlass etwas markiert"**.

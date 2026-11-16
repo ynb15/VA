@@ -9344,3 +9344,59 @@ der nur Handwerk vorgibt, bekommt Handwerk zurück.
 **die Wendung** — wo das Stück anfängt, wo es kippt, worauf es endet — oder er
 wird nicht geschrieben. Eine Zeitmarke mit erstem und letztem Satz ist eine
 Fundstelle, keine Dramaturgie.
+
+## DAS OUTREACH-DOC IST EIN PITCH-ARCHIV, KEIN STATUSTRACKER — 16.11.2026
+
+**Beim Wochenabgleich zum ersten Mal vollständig ausgelesen:** 1.648 Absätze,
+**90 „### Name"-Abschnitte**, und unter jedem Namen steht **ausschließlich der
+Text des Cold Pitch** — kein Status, kein Datum, keine Antwort. Für Ken Stern,
+Brendan Kane, Eamon Armstrong und Rick Strassman nebeneinander geprüft: bei
+allen vieren endet der Abschnitt mit dem Schlusssatz des Pitches, obwohl drei
+davon längst aufgenommen oder im Gespräch sind.
+
+**Was das für den Abgleich heißt:**
+- Die Frage ist **nicht** „ist der Status im Doc aktuell" — das Doc führt keinen.
+  Status führt die Notion-Databank, und nur die.
+- Die Frage ist: **hat jeder Cold Pitch seinen Text im Archiv.**
+- **Wer nie kalt angeschrieben wurde, fehlt zu Recht.** Die Kapstädter
+  Aufnahmen — Craig Makhosi, Nathan Maingard, Bridget Woods, Curtis Crane,
+  Whitney Wheelock, Robert Paddock — haben keinen Abschnitt, weil es keinen
+  Pitch gab. Das ist **keine Lücke**, und sie als eine zu melden war bisher
+  mein Fehlschluss.
+- Die Lücke vom 31.08. ist geschlossen: **Lance Armstrong und Cal Callahan
+  stehen beide im Doc.**
+
+**Echte Kandidaten für fehlende Pitch-Texte** (angeschrieben laut Databank, kein
+Abschnitt im Doc): Jon Savage, T.D. Jakes, Dean Karnazes, Staffan Taylor, TD
+(Yes Theory), Francisco Medina, Maverick Maltin, Tommy Caldwell, Timothy Olson,
+Jim Collins, Mikhaila Peterson, Chris Taylor (Red Fridge Society).
+**Nicht nachgetragen:** Drive-Schreibrechte gelten nur für das Wochendokument.
+Liegt als Liste bereit, falls er es will.
+
+## EIN SIGNAL, DAS JEDES MAL FEUERT, IST KEIN SIGNAL — 16.11.2026
+
+`bin/lernen-sammeln.sh` meldete „gearbeitet, aber nichts in den Kanal
+geschrieben" bei **acht von neun Agenten**, jedes Mal, seit Wochen — mit 102,
+73, 59, 54, 49 Commits und dem kompletten Zweigverlauf darunter. Die acht hatten
+geschrieben; ihr Kanalstand war nur identisch mit dem letzten Einsammeln.
+
+**Ursache:** gezählt wurde
+`rev-list origin/claude/ai-chief-of-staff-cz83jv..origin/<zweig>` — **ein
+Agentenzweig wird nie zurückgeführt, diese Zahl kann also nie 0 werden.**
+
+**Behoben:** beim Quittieren wandert die Zweigspitze nach
+`lernen/.gelesen/<schlüssel>.tip`; gezählt wird ab dort; die Commit-Liste ist
+auf zwölf Zeilen gedeckelt. **Eine Zählung gegen einen Festpunkt misst
+Divergenz, nicht Fortschritt.**
+
+## WAS ER SELBST ROUTINIERT NENNT, WIRD NICHT UNSCHARF GEMACHT — 16.11.2026
+
+In meinem Eamon-Entwurf stand „a motorcycle accident **in the US**". Seine
+Fassung: „in **Colorado**" — so wie schon in seiner Ken-Mail vom 03.10.
+
+**Die Ortsregel schützt, wo er jetzt ist und wo gedreht wird — nicht, wo der
+Unfall war.** Eine Schutzregel überdehnen kostet genauso viel wie sie zu
+verletzen: hier hat sie einen Satz entkernt, den er selbst dreimal mit dem
+Ortsnamen geschrieben hat. Der volle Abgleich samt fünftem Abbinder
+(**`Stay lekker,`**) und dem Bau seiner Veröffentlichungs-Startmail steht in
+`voice/en-podcast-outreach.md`.

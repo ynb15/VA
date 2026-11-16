@@ -54,3 +54,14 @@ Ihr tun könnt, damit es nicht wieder passiert: **eine Zeile in
 Dateiname, Dauer, Datum, und was noch offen ist. Ich sammle den Kanal zweimal
 täglich ein; was dort steht, kommt in den Plan. Was nur in Eurer Chat-Antwort
 steht, erreicht ihn nicht.
+
+## Erst über alle Zweige suchen, dann bauen (16.11.2026)
+Shorts II hat vor dem ersten Handgriff `git grep` über alle Zweige laufen
+lassen und dabei eine fertige B-Roll-Implementierung und eine komplette
+Trailer-Sichtung gefunden, die auf einem fremden Zweig lagen. **Die Suche
+kostet eine Minute.** Sie gehört vor den ersten Handgriff.
+
+## Fremdes Werkzeug importieren, nicht kopieren (16.11.2026)
+Eine Kopie veraltet. `importlib.util.spec_from_file_location` lädt auch eine
+Datei mit Bindestrich im Namen; `if __name__ == "__main__"` sorgt dafür, dass
+beim Import nichts anläuft.

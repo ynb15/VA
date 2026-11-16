@@ -623,3 +623,22 @@ Das Material bleibt geprüft und liegt bereit (Master 17,45 GB, geeichter
 Anker aus dem Meaning-Short, Vorbereitungsdoku mit 529.889 Zeichen) — siehe
 den Abschnitt vom 15.11. **Wenn er es freigibt, ist der Auftrag in Minuten
 geschrieben.**
+
+## Wochenabgleich 16.11.2026 — was sich an den Gästen bewegt hat
+
+**Ken Stern ist raus** (So 15.11., YouTube `YlJyuNE1qrM`). Die Kette lief von
+T−10 am 10.11. bis zur Veröffentlichung in **fünf Tagen** durch. Ken hat am
+selben Abend von sich aus auf LinkedIn geteilt.
+
+**Zur Strassman-Folge vom 13.11. finde ich weder eine Video-ID im Repo noch eine
+Startmail im Postfach.** *Meine Beobachtung, nicht seine Festlegung* — seit dem
+16.11. sagt er an, was wann rausgeht.
+
+**Ein Termin, der eine Antwort braucht:** Brendan Kane hat am 14.11. gefragt
+*„Can you do Friday at 9:00 or 12:00 in Llandundo?"* — **Freitag ist der 20.11.**
+Die Mail ist ungelesen. Es geht um das Treffen *vor* der Aufnahme; ein
+Aufnahmetermin existiert weiterhin nicht.
+
+**Die Plankontrolle meldet ab heute keinen Vorrat mehr** — nur noch die Zahl.
+Seine Ansage vom 16.11. hat die Meldung erledigt, das Skript hinkte einen
+halben Tag hinterher.

@@ -6,6 +6,82 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Diesmal zuerst gesucht — und die halbe Arbeit lag schon da (16.11.)
+
+Auftrag: das Aging-Short „richtig cinematisch", mit B-Roll, bewegter Schrift
+und Fotoblitzen, *„und wenn du diese Skills noch nicht hast, dann lege sie
+dir an."*
+
+Erster Handgriff war diesmal `git grep` über alle Zweige. Ergebnis:
+
+- **B-Roll war fertig gebaut.** `--broll --broll-modus karte`, 980×980 auf
+  Schwarz, Ecken 40 — die am 20.10. an drei Williamson-Shorts gemessene
+  Referenz, im Renderer implementiert.
+- **Der Into-the-Wild-Trailer war schon durchgearbeitet.**
+  `video/broll-referenz.md` auf `claude/content-assistant` listet alle neun
+  Schrifttafeln mit Sekunden und nennt die Regel: *„durchgehende Strecken
+  nehmen, mitsamt den Schnitten des Trailers. Nicht eine Einstellung,
+  sondern ein Block."* Diese Liste hat mir eine komplette Sichtung erspart.
+- Neu zu bauen waren nur zwei Dinge: bewegte Schrift und Blitze.
+
+→ betrifft: alle. **Die Suche über alle Zweige kostet eine Minute und hat
+hier mehrere Stunden gespart.** Sie gehört vor den ersten Handgriff, nicht
+nach der ersten Beanstandung.
+
+## Ein Fremdwerkzeug erweitert man durch Importieren, nicht durch Kopieren (16.11.)
+
+Für die bewegte Schrift brauchte ich die Untertitel-Logik des Renderers —
+Whisper, Korrekturen, Packen, Lippen, Stilzeile, den Zwei-Ebenen-Nachzug,
+mit dem das Preset Inter Black auf Eveleth-Gewicht bringt.
+
+Am 13.11. hatte ich in derselben Lage eine **Kopie** angelegt und zwei
+Konstanten geändert. Das war falsch: eine Kopie veraltet, und genau daran
+war der Trump-Short dreimal gescheitert.
+
+Diesmal: `video/kino-shorts2.py` lädt `shorts-render.py` per
+`importlib.util.spec_from_file_location` (der Bindestrich im Dateinamen
+verbietet `import`) und benutzt seine Funktionen und Konstanten. Der
+Renderer hat `if __name__ == "__main__"`, also läuft beim Import nichts an.
+
+→ betrifft: alle Content-Agenten. **Fremdes Werkzeug erweitern heißt
+importieren.** Ändert der Besitzer den Stil, ändert er sich mit. Eine Kopie
+ist nur dann richtig, wenn sie nie wieder mitlaufen soll.
+
+## `inf * 0 = NaN`: ein Blitz am Ende färbt den ganzen Short (16.11.)
+
+Die Fotoblitze liefen als `eq=brightness='0.95*exp(-(t-T)/0.055)*between(t,T,T+0.2)'`.
+Für Zeiten weit **vor** einem Blitz wird der Exponent groß positiv — bei
+einem Blitz 64 s später ist das `exp(1164)`, also `inf`, und `inf*0` ist
+`NaN`. Der erste Durchlauf war über weite Strecken schwarzrot.
+
+Behoben mit `exp(-max(0,t-T)/0.055)`.
+
+**Wie es auffiel:** ich hatte Einzelbilder aus drei verschiedenen Stellen
+geprüft. An der mittleren war der letzte Blitz 22,8 s entfernt, der Exponent
+also noch endlich, und dort sah alles richtig aus. Hätte ich nur dort
+geprüft, wäre es rausgegangen.
+
+→ betrifft: jeden Filterausdruck mit `exp`, `log` oder einer Division über
+die Zeit. **Den Exponenten klammern, und die Sichtprüfung an mindestens
+drei weit auseinanderliegenden Stellen machen** — nicht an einer.
+
+## Was die Automatik nicht findet, findet der Kontaktabzug (16.11.)
+
+Drei der fünf Clips tragen eingebrannte Fremdschrift: Alan Watts eine
+Werbeeinblendung von 0:42–0:53 und „Please SUBSCRIBE", Mandela die
+Rivonia-Rede von 3:16–3:52, Into The Wild neun Trailertafeln. Kein
+Schwellenwert trennt das vom Bild — das stand schon im Into-the-Wild-Lauf
+vom 20.10.
+
+Gelöst wie dort: ein Kontaktabzug je Clip, ein Bild je 2 bis 8 Sekunden,
+und hinsehen. Vier Abzüge, vier Minuten, alle Fundstellen sicher.
+
+→ betrifft: jede fremde B-Roll. **Vor dem ersten Schnitt ein Kontaktabzug
+über die ganze Länge.** Und die Drehmatrix prüfen: alle fünf Dateien sind
+1206×2622 kodiert und zeigen 2622×1206 quer. Wer das übersieht, plant mit
+der falschen Bildform.
+
+
 ## Ein Musikbett wird in Bändern gemessen, nicht breitbandig (13.11.)
 
 Fassung 5 war breitbandig **lauter** als Fassung 4 (−42,2 statt −44,1 dB)

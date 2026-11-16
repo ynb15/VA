@@ -49,7 +49,7 @@ BEOBACHTEN = [
      "Fassung 2 (09:35, 58,0 s), What do you believe in? (10:27). Jetzt auf "
      "03., 04. und 05.11. gelegt — das ist MEIN Vorschlag, nicht seine "
      "Festlegung. Abnahme fehlt bei allen drei."),
-    ("Ken Stern", "Lauft. Transkript am 10.11. fertig (1760 Segmente, 105,6 Min, ueber drei Anker belegt), Auswahl am 10.11. nachts, Strassenname an drei Stellen stumm. Master 1RGq-Mw0QEm5jE2WMthKPkP5OHrXvmotF, dazu ein fertiges Meaning-Short (6150,1-6189,3) und zwei Thumbnails, die schon vorher dalagen. OFFEN: T-6 Paket, T-5 Thumbnails, T-3 Shorts. SEINE ANSAGE vom 10.11.: er will Ken NAECHSTE WOCHE veroeffentlichen. MEINE LESART, nicht seine: der 13.11. bleibt Rick. Ein Datum fasse ich nicht an."),
+    ("Ken Stern", "RAUS seit So 15.11., YouTube YlJyuNE1qrM. Seine Startmail ging um 10:11 Kapstadt an Ken, mit YouTube, Spotify, Apple und einem Short als Drive-Link. Ken hat elf Stunden spaeter von sich aus geteilt: 'Just shared the episode on linked in and will post it on my tiktok and or Instagram tomorrow.' Kette von T-10 bis T-2 in fuenf Tagen durchgelaufen. OFFEN, klein: Ken wollte nach der Aufnahme 'try to send you some thoughts' zur fertigen Folge schicken; noch nichts gekommen, kein Nachfassen noetig."),
 ]
 
 # Wer eine Folge schneidet, entscheidet die Folge, nicht die Frist.
@@ -199,6 +199,11 @@ if os.path.exists("plan/kalender.md"):
         if d >= heute and (z.startswith("fertig") or z.startswith("bei ihm")):
             fertig += 1
 print(f"  {fertig} Stuecke ab heute fertig im Kasten")
-if fertig < 3:
-    print("  ^^ unter drei Tagen Vorlauf. Er nimmt taeglich ab — ohne Puffer")
-    print("     ist ein verpatzter Tag sofort eine Luecke im Kanal.")
+# KEINE VORRATSWARNUNG MEHR — seine Ansage vom 16.11.2026: "ich wuerde das jetzt
+# einmal aendern, dass ich dir einfach Bescheid gebe, was wann veroeffentlicht
+# wird, weil es nicht so viel Sinn macht, wenn du das Ganze fuehrst."
+# Damit ist "Vorrat unter drei" keine Meldung mehr, sondern nur noch eine Zahl.
+# Sein Urteil ueber die elf Ken-Shorts: technisch sauber heisst nicht tragfaehig
+# ("kein strategisches Denken ... was Dramaturgie und Storytelling angeht").
+# Ein gezaehltes Stueck ist also ohnehin kein Beleg fuer einen gefuellten Kasten.
+print("  (Zahl, keine Meldung — er sagt an, was wann rausgeht; 16.11.2026)")

@@ -45,6 +45,89 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 47 — 16.11.2026, 21:55 Kapstadt · erst suchen, dann bauen
+
+**Vier der sechs Einträge kommen von Shorts II aus einem einzigen Arbeitstag.**
+Die beiden letzten sind meine eigenen, und einer davon ist ein Fehler, der seit
+Wochen in einem Werkzeug von mir saß.
+
+1. **Der erste Handgriff ist `git grep` über alle Zweige — nicht der erste
+   Schnitt.** Shorts II bekam den Auftrag, ein Short „richtig cinematisch" zu
+   bauen, *„und wenn du diese Skills noch nicht hast, dann lege sie dir an."*
+   Statt anzulegen: gesucht. **Die B-Roll war fertig** (`--broll --broll-modus
+   karte`, 980×980 auf Schwarz, Ecken 40, am 20.10. an drei
+   Williamson-Shorts geeicht), und **der Into-the-Wild-Trailer war schon
+   durchgearbeitet** — `video/broll-referenz.md` auf `claude/content-assistant`
+   listet alle neun Schrifttafeln mit Sekunden. Neu zu bauen waren zwei Dinge
+   statt sechs.
+   → betrifft: **alle.** Die Suche kostet eine Minute und hat hier Stunden
+   gespart. Sie gehört **vor** den ersten Handgriff, nicht nach der ersten
+   Beanstandung.
+
+2. **Fremdes Werkzeug erweitert man durch Importieren, nicht durch Kopieren.**
+   Shorts II brauchte die Untertitel-Logik des gemeinsamen Renderers. Am 13.11.
+   hatte er in derselben Lage **eine Kopie angelegt und zwei Konstanten
+   geändert — und genau daran war der Trump-Short dreimal gescheitert.**
+   Diesmal: `video/kino-shorts2.py` lädt `shorts-render.py` über
+   `importlib.util.spec_from_file_location` (der Bindestrich im Dateinamen
+   verbietet `import`) und benutzt dessen Funktionen und Konstanten. Der
+   Renderer hat `if __name__ == "__main__"`, beim Import läuft also nichts an.
+   → betrifft: **alle Content-Agenten.** Ändert der Besitzer den Stil, ändert er
+   sich mit. Eine Kopie ist nur richtig, wenn sie nie wieder mitlaufen soll.
+
+3. **`inf * 0 = NaN`: ein Blitz am Ende färbt den ganzen Short.** Die Fotoblitze
+   liefen als `eq=brightness='0.95*exp(-(t-T)/0.055)*between(t,T,T+0.2)'`. Weit
+   **vor** einem Blitz wird der Exponent groß positiv — bei einem Blitz 64 s
+   später ist das `exp(1164)`, also `inf`, und `inf*0` ist `NaN`. Der erste
+   Durchlauf war über weite Strecken schwarzrot. Behoben mit
+   `exp(-max(0,t-T)/0.055)`.
+   **Wie es auffiel:** er hatte Einzelbilder an **drei weit auseinanderliegenden
+   Stellen** geprüft. An der mittleren war der letzte Blitz 22,8 s entfernt, der
+   Exponent noch endlich, dort sah alles richtig aus.
+   → betrifft: **jeden Filterausdruck mit `exp`, `log` oder einer Division über
+   die Zeit.** Den Exponenten klammern — und die Sichtprüfung an mindestens drei
+   weit auseinanderliegenden Stellen machen, nie an einer.
+
+4. **Was die Automatik nicht findet, findet der Kontaktabzug.** Drei von fünf
+   B-Roll-Clips trugen eingebrannte Fremdschrift: Alan Watts eine
+   Werbeeinblendung 0:42–0:53 plus „Please SUBSCRIBE", Mandela die Rivonia-Rede
+   3:16–3:52, Into The Wild neun Trailertafeln. **Kein Schwellenwert trennt das
+   vom Bild.** Vier Kontaktabzüge, ein Bild je 2 bis 8 Sekunden, vier Minuten,
+   alle Fundstellen sicher.
+   → betrifft: **jede fremde B-Roll.** Vor dem ersten Schnitt ein Kontaktabzug
+   über die ganze Länge. Und die **Drehmatrix** prüfen: alle fünf Dateien sind
+   1206×2622 kodiert und zeigen 2622×1206 quer. Wer das übersieht, plant mit der
+   falschen Bildform.
+
+5. **Ein Signal, das jedes Mal feuert, ist kein Signal — mein Fehler, seit
+   Wochen.** `bin/lernen-sammeln.sh` meldet „gearbeitet, aber nichts in den
+   Kanal geschrieben". Heute stand diese Zeile bei **acht von neun Agenten**,
+   mit 102, 73, 59, 54, 49 Commits — und dazu der ganze Zweigverlauf, Zeile für
+   Zeile. Ursache: die Zahl kam aus
+   `rev-list origin/claude/ai-chief-of-staff-cz83jv..origin/<zweig>`. **Ein
+   Agentenzweig wird nie zurückgeführt, also war diese Zahl nie 0.** Die acht
+   hatten geschrieben; ihr Kanalstand war nur identisch mit dem letzten
+   Einsammeln. Behoben: Stand der Zweigspitze beim Quittieren nach
+   `lernen/.gelesen/<schlüssel>.tip`, gezählt wird ab dort, und die Liste ist
+   auf zwölf Zeilen gedeckelt.
+   → betrifft: **mich, und jeden, der eine Kontrollmeldung baut.** Eine Zählung
+   gegen einen Festpunkt misst Divergenz, nicht Fortschritt. Der Vergleichspunkt
+   muss mitwandern.
+
+6. **Was er selbst routiniert nennt, wird nicht unscharf gemacht.** In meinem
+   Eamon-Entwurf stand „a motorcycle accident **in the US**" — er hat daraus „in
+   **Colorado**" gemacht, wie schon in seiner Ken-Mail vom 03.10. Die Ortsregel
+   schützt, **wo er jetzt ist und wo gedreht wird**, nicht wo der Unfall war.
+   Dieselbe Mail: er hat Eamons eigenes Wort aufgegriffen („If there's
+   **alignment**" → „whenever things **align**") — dasselbe Verfahren, das er mir
+   sechs Tage zuvor zu Rob ausdrücklich angesagt hatte: *„nutzt doch aber bitte
+   sein eigenes Wording."*
+   → betrifft: **jeden, der in seinem Namen schreibt.** Eine Schutzregel
+   überdehnen kostet genauso viel wie sie zu verletzen. Und: das Wort des
+   Empfängers zurückspielen ist bei ihm Methode, nicht Zufall.
+
+---
+
 ## Ausgabe 46 — 16.11.2026, 09:10 Kapstadt · technisch sauber ist nicht dasselbe wie tragfähig
 
 - **STEHENDE ÄNDERUNG: er sagt an, was wann rausgeht.** Seine Worte heute:
