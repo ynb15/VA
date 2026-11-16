@@ -1,0 +1,119 @@
+# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG (75,0 s · 71,2 s + Outro 3,8 s)
+# Sechs Einspieler, bewegte Schrift, sieben Fotoblitze · mit „In This Shirt"
+#
+# Zeiten sind die im FERTIGEN Short.
+# Was raus soll: Zeile loeschen oder die Nummer nennen.
+#
+  1  [00:00.00–00:01.60]  FRANKL SAID
+  2  [00:02.66–00:03.68]  WHAT YOU HAVE EXPERIENCED
+  3  [00:04.08–00:06.20]  NO POWER ON EARTH CAN TAKE FROM YOU
+  4  [00:06.60–00:11.00]  NOT ONLY OUR EXPERIENCES BUT ALL WE HAVE DONE WHATEVER GREAT THOUGHTS WE MAY HAVE
+  5  [00:11.00–00:12.68]  HAD AND ALL WE HAVE SUFFERED
+  6  [00:13.22–00:16.40]  ALL THIS IS NOT LOST THOUGH IT IS PAST
+  7  [00:16.78–00:18.24]  WE HAVE BROUGHT INTO BEING
+  8  [00:18.70–00:24.00]  HAVING BEEN IS A KIND OF BEING AND PERHAPS THE SUREST KIND AND IT MADE
+  9  [00:24.00–00:31.80]  ME WRITE A LITTLE MINI-ESSAY ABOUT THE ART OF AGING
+ 10  [00:32.40–00:36.18]  AGING IS NOT A SLOW SURRENDER TO TIME BUT A POWERFUL JOURNEY INTO THE
+ 11  [00:36.18–00:38.46]  FULLEST EXPRESSION OF WHO WE ARE MEANT TO BECOME
+ 12  [00:39.04–00:42.28]  IT IS NOT THE DIMMING OF THE LIGHT BUT THE DEEPENING OF ITS GLOW
+ 13  [00:42.84–00:47.32]  WITH EACH PASSING YEAR WE GAIN LAYERS OF INSIGHT EMPATHY AND RESILIENCE
+ 14  [00:47.90–00:52.46]  THE RUSH OF YOUTH GIVES WAY TO THE RICHNESS OF PERSPECTIVE THE URGENCY OF
+ 15  [00:52.46–00:56.52]  AMBITION SOFTENS INTO THE QUIET CONFIDENCE OF KNOWING WHAT TRULY MATTERS
+ 16  [00:57.20–00:58.88]  TO GROW OLDER IS NOT TO FADE
+ 17  [00:59.28–01:00.64]  IT IS TO BECOME MORE ROOTED
+ 18  [01:01.04–01:02.44]  MORE RADIANT MORE WHOLE
+ 19  [01:03.32–01:04.14]  IT IS A PRIVILEGE
+ 20  [01:04.74–01:08.94]  A TRANSFORMATION AND A QUIET TRIUMPH THAT MANY ARE NOT GRANTED AND FOR THAT
+ 21  [01:08.94–01:10.84]  IT SHOULD BE HONOURED NOT FEARED
+
+# ══════════════════════════════════════════════════════════════════
+# ZUERST: DIE FUENF DATEIEN SIND NICHT GANZ DIE, DIE DU GENANNT HAST
+# ══════════════════════════════════════════════════════════════════
+# Du hast Alan Watts, Nelson Mandela, die Beerdigung aus Batman und
+# Steve Jobs angesagt. In den fuenf Links liegen:
+#   Scenes: Batman (Funeral)      ✓
+#   Scenes: Alan Watts            ✓
+#   Scenes: Mandela               ✓
+#   Scenes: Good Will Hunting     <- statt Steve Jobs
+#   Scenes: Into The Wild         <- hattest Du nicht genannt
+# Einen Steve-Jobs-Clip gibt es in dem Ordner nicht. Ich habe mit dem
+# gearbeitet, was da ist. Wenn Du Jobs willst, leg ihn in denselben
+# Ordner, dann tausche ich ihn gegen einen der beiden.
+
+# ══════════════════════════════════════════════════════════════════
+# DIE SECHS EINSPIELER — nach dem Satz gewaehlt, nicht nach Optik
+# ══════════════════════════════════════════════════════════════════
+# | im Short | Dauer | Clip | ab | worauf |
+# | 06,40–13,10 | 6,7 s | Batman (Funeral) | 1:05,0 | „all we have SUFFERED" — Alfred am Grab |
+# | 16,60–22,60 | 6,0 s | Mandela | 2:08,0 | „having been is a kind of being" — er erzaehlt sein Leben |
+# | 32,30–38,90 | 6,6 s | Alan Watts | 1:10,0 | „aging is not a slow surrender to time" |
+# | 42,70–47,60 | 4,9 s | Good Will Hunting | 1:28,0 | „layers of insight, empathy" — Sean und Will |
+# | 47,60–51,10 | 3,5 s | Into The Wild | 1:38,8 | „the RUSH OF YOUTH" |
+# | 57,10–63,20 | 6,1 s | Mandela | 8:10,0 | „more rooted, more radiant, more WHOLE" |
+#
+# Zusammen 33,8 s von 71,2 s, also 47 %. Du bist beim Hook, bei der
+# Wendung zum Essay, bei zwei Nachdenk-Stellen und bei der Landung im
+# Bild — dazwischen laeuft Film.
+#
+# DARSTELLUNG: quadratische Karte 980x980 auf Schwarz, Ecken 40 px.
+# Das ist Deine eigene gemessene Referenz (die drei Williamson-Shorts
+# vom 20.10.), nicht meine Erfindung. Alle fuenf Clips sind echte
+# Breitwand (2,17:1, Batman 2,6:1) — randlos ins Hochformat gezwungen
+# blieben davon 31 % der Breite uebrig.
+#
+# WAS ICH AUS DEM MATERIAL HERAUSGEHALTEN HABE:
+#   Alan Watts hat von 0:42 bis 0:53 eine eingebrannte Werbeeinblendung
+#     und oben „Please SUBSCRIBE" — mein Stueck liegt bei 1:10.
+#   Into The Wild ist ein Trailer mit neun Schrifttafeln; die Liste dazu
+#     stand schon im Repo (broll-referenz.md), mein Stueck liegt in der
+#     freien Strecke zwischen 1:30,6 und 1:53,6.
+#   Mandela hat von 3:16 bis 3:52 die Rivonia-Rede als Schrift im Bild.
+#   Das Wasserzeichen unten rechts schneidet die Karte ohnehin weg.
+
+# ══════════════════════════════════════════════════════════════════
+# DIE SCHRIFT BEWEGT SICH
+# ══════════════════════════════════════════════════════════════════
+# Jede Einblendung setzt vergroessert ein und faellt in 90 ms auf ihre
+# Groesse zurueck. Auf neun Schlagwoertern ist der Sprung groesser
+# (130 %) und dauert 140 ms: SUFFERED · SUREST · AGING · GLOW ·
+# RESILIENCE · YOUTH · WHOLE · HONOURED · FEARED.
+# Nachgemessen am fertigen Bild: „SUFFERED" steht beim Einsetzen 509 px
+# breit und 140 ms spaeter 391 px.
+# Die Animation sitzt nur auf dem EINSATZ der Einblendung, nicht auf
+# jedem Wort — sonst zuckte die Zeile bei jedem Wortwechsel.
+
+# ══════════════════════════════════════════════════════════════════
+# SIEBEN FOTOBLITZE
+# ══════════════════════════════════════════════════════════════════
+# Bei 6,40 · 16,60 · 32,30 · 42,70 · 47,60 · 57,10 — das sind genau die
+# sechs Schnitte in die B-Roll, der Blitz deckt den Schnitt. Und einer
+# bei 70,38 auf „NOT FEARED", dem letzten Satz.
+# Ein Bild fast weiss, danach exponentieller Abfall ueber 0,2 s.
+
+# ══════════════════════════════════════════════════════════════════
+# TON
+# ══════════════════════════════════════════════════════════════════
+# „In This Shirt" ab 0:23,25 wie bei Deinen anderen Ken-Shorts.
+# Bett nach Baendern, gegen die abgenommene Aging-Fassung:
+#                     <300 Hz   300 Hz-2 kHz   2-8 kHz
+#   bisher               24,6       21,6          7,2
+#   KINO-FASSUNG         31,2       28,1         12,6
+# Also rund 6 dB lauter als bisher, nach Deiner Ansage zur Musik.
+# Sag eine Zahl, wenn es mehr oder weniger sein soll — zwei Minuten,
+# ohne neu zu rendern.
+# Ausblende 3,8 s ab 71,23 s, also ueber dem Outro.
+
+# ══════════════════════════════════════════════════════════════════
+# ZWEI DINGE, DIE ICH NICHT LOESEN KANN
+# ══════════════════════════════════════════════════════════════════
+# 1. `luts/ynb_look.png` fehlt weiter — der Renderer laeuft auf der
+#    Annaeherung aus Deinem Preset und schreibt das selbst in die
+#    Ausgabe. Anleitung steht in video/preset-ynb.md (5 Minuten CapCut).
+# 2. Eveleth als .otf in video/fonts/ — dann faellt das Nachziehen weg,
+#    mit dem Inter Black auf Eveleth-Gewicht gebracht wird.
+#
+# ABNAHME (gemessen)
+#   1080x1920 · 48 kHz · 75,0 s · Outro da · 87 Untertitel · Ortscheck sauber
+#   Hauptteil -27,2 LUFS, Spitze -9,2 dB.
+#
+# NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.

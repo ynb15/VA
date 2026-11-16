@@ -1,0 +1,244 @@
+#!/usr/bin/env python3
+"""Kino-Schicht fuer Shorts II — bewegte Schrift und Fotoblitze.
+
+Seine Ansage vom 16.11.: *„ich moechte, dass sich die Schrift veraendert,
+dass da Fotoblitze mit drin sind. Das soll eines der besten Shorts auf
+YouTube sein."*
+
+Zwei Dinge, die `shorts-render.py` nicht kann:
+
+  * **Schrift, die sich bewegt.** Jede Einblendung setzt vergroessert ein
+    und faellt in 90 ms auf ihre Groesse zurueck. Auf gesetzten
+    Schlagwoertern ist der Sprung groesser und dauert laenger.
+  * **Fotoblitze.** Ein bis zwei Bilder nahezu weiss, danach ein kurzer
+    Abfall — gesetzt auf die Schnitte in die B-Roll und auf Schlagwoerter.
+
+**`shorts-render.py` gehoert Shorts I und wird nicht angefasst.** Die
+Untertitel-Logik (Whisper, Korrekturen, Packen, Lippen, Stilzeile,
+Zwei-Ebenen-Gewicht) wird aus ihm IMPORTIERT, damit beide Werkzeuge
+dieselben Einblendungen erzeugen. Aendert Shorts I den Stil, aendert er
+sich hier mit.
+
+Ablauf:
+  1. `shorts-render.py` baut das Bild OHNE Untertitel (Plan, B-Roll,
+     Look, Logo, Outro, Tempo).
+  2. Dieses Werkzeug rechnet die Einblendungen auf der Vorlage (Tempo 1,0),
+     schreibt sie als bewegte ASS und brennt sie zusammen mit den Blitzen
+     auf das fertige Bild.
+"""
+
+import argparse, importlib.util, json, os, subprocess, sys
+from pathlib import Path
+
+HIER = Path(__file__).resolve().parent
+
+
+def renderer_laden():
+    """shorts-render.py als Bibliothek — der Bindestrich verbietet `import`."""
+    pfad = HIER / "shorts-render.py"
+    if not pfad.exists():
+        raise SystemExit(f"{pfad} fehlt — ohne den Renderer geht es nicht.")
+    spec = importlib.util.spec_from_file_location("shorts_render", pfad)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+SR = renderer_laden()
+
+
+# ---------------------------------------------------------------- Blitze
+
+def blitz_kette(zeiten, hoehe=0.95, abfall=0.055, dauer=0.20):
+    """Fotoblitze als Helligkeitsausdruck fuer `eq`.
+
+    Ein echter Blitz ist kein Rechteck: er steigt in einem Bild an und
+    faellt exponentiell. `exp(-(t-T)/abfall)` gibt bei 30 Bildern/s nach
+    einem Bild noch 55 %, nach zweien 30 %, nach dreien 17 % — das liest
+    sich als Blitz und nicht als Fehler im Band.
+
+    `eval=frame` ist noetig, sonst wertet ffmpeg den Ausdruck einmal aus
+    und der Blitz steht das ganze Short ueber im Bild.
+    """
+    if not zeiten:
+        return None
+    # `max(0,t-T)` ist nicht Kosmetik: ohne die Klammer rechnet ffmpeg fuer
+    # Zeiten WEIT VOR einem Blitz `exp(+1164)`, das ist inf, und inf*0 ist
+    # NaN. Ein einziger Blitz am Ende des Shorts faerbt damit alles davor
+    # schwarzrot. Gefunden am 16.11. an genau diesem Bild.
+    teile = [f"{hoehe}*exp(-max(0\,t-{t:.4f})/{abfall})"
+             f"*between(t,{t:.4f},{t + dauer:.4f})"
+             for t in sorted(zeiten)]
+    return "eq=brightness='" + "+".join(teile) + "':eval=frame"
+
+
+# ------------------------------------------------------------ bewegte ASS
+
+def ass_kino(cues, pfad, tempo=1.0, schlagworte=(), pop=1.16, pop_stark=1.30,
+             zeit_pop=90, zeit_stark=140, tiefer=0, gross=True,
+             groesse=None, rand=40):
+    """Wie `SR.build_ass`, aber die erste Zeile je Einblendung poppt auf.
+
+    Warum nur die erste: der Renderer gibt JE WORT eine eigene Dialogzeile
+    aus, damit das gesprochene Wort gelb wird. Bekaeme jede dieser Zeilen
+    die Animation, zuckte die Schrift bei jedem Wort. Die Animation gehoert
+    an den Einsatz der Einblendung, die Hervorhebung wandert danach ruhig
+    durch.
+
+    Beide Ebenen (Kontur und Gewichts-Nachzug) bekommen denselben
+    Animationskopf — sonst laufen sie auseinander und die Schrift franst.
+    """
+    groesse = SR.GROESSE if groesse is None else groesse
+    W, H = SR.W, SR.H
+    head = f"""[Script Info]
+ScriptType: v4.00+
+PlayResX: {W}
+PlayResY: {H}
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, ScaleX, ScaleY, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,{SR.FONT},{groesse},{SR.WEISS},&H00000000,&H00000000,0,0,{SR.SCALE_X},100,1,{SR.KONTUR},3,2,{rand},{rand},{marginv_fix(rand)},1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    lines = []
+    sw = {s.strip().upper() for s in schlagworte if s.strip()}
+
+    def anim(stark):
+        """Der Kopf, der die Zeile aufpoppen laesst.
+
+        Zielwerte sind die der Stilzeile (ScaleX = SCALE_X, ScaleY = 100),
+        NICHT 100/100 — sonst zoege die Animation die Schrift auf eine
+        andere Breite als der Rest des Kanals.
+        """
+        f = pop_stark if stark else pop
+        ms = zeit_stark if stark else zeit_pop
+        return (f"{{\\fscx{SR.SCALE_X * f:.0f}\\fscy{100 * f:.0f}"
+                f"\\t(0,{ms},\\fscx{SR.SCALE_X}\\fscy100)}}")
+
+    for c in cues:
+        woerter = [w for w in (c.get("woerter") or [])
+                   if w["t"].strip() and w["end"] > c["start"] and w["start"] < c["end"]]
+        roh = [SR._anzeige(w["t"], gross) for w in woerter]
+        roh = [w for w in roh if w]
+        if not roh:
+            roh = [SR._anzeige(t, gross) for t in (c.get("text") or "").split()]
+            roh = [t for t in roh if t]
+            if not roh:
+                continue
+        lippe = c.get("lippe")
+        kopf_pos = (f"{{\\an8\\pos({W // 2},{int(lippe) + tiefer})}}"
+                    if lippe is not None else "")
+        stark = any(w in sw for w in roh)
+
+        def bauen(kontur, hell=None):
+            teile = []
+            for k, t in enumerate(roh):
+                f = SR.GELB_I if k == hell else SR.WEISS_I
+                nach = f"\\3c{f}" if kontur else ""
+                teile.append(f"{{\\c{f}{nach}}}{t}")
+            return " ".join(teile)
+
+        def zeile(von, bis, hell, mit_anim):
+            t = 1.0 if c.get("fertigzeit") else tempo
+            v, b = SR.ass_time(von / t), SR.ass_time(bis / t)
+            kopf = kopf_pos + (anim(stark) if mit_anim else "")
+            lines.append(f"Dialogue: 0,{v},{b},Cap,,0,0,0,,{kopf}{bauen(False, hell)}")
+            if SR.FETTER:
+                lines.append(f"Dialogue: 1,{v},{b},Cap,,0,0,0,,"
+                             f"{kopf}{{\\bord{SR.FETTER}}}{bauen(True, hell)}")
+
+        if not woerter:
+            zeile(c["start"], c["end"], None, True)
+            continue
+        for i, w in enumerate(woerter):
+            von = max(w["start"], c["start"]) if i else c["start"]
+            bis = (min(woerter[i + 1]["start"], c["end"])
+                   if i + 1 < len(woerter) else c["end"])
+            if bis - von <= 0.02:
+                continue
+            zeile(von, bis, i, i == 0)
+
+    Path(pfad).write_text(head + "\n".join(lines) + "\n", encoding="utf-8")
+    return len(lines)
+
+
+def marginv_fix(rand):
+    """Die Lippe im Kopf schlaegt MarginV; der Wert steht nur der Form halber."""
+    return 320
+
+
+# ------------------------------------------------------------------ Lauf
+
+def main():
+    ap = argparse.ArgumentParser(
+        description="Bewegte Schrift und Fotoblitze auf ein fertiges Short.")
+    ap.add_argument("--bild", required=True,
+                    help="Ausgabe von shorts-render.py OHNE Untertitel")
+    ap.add_argument("--vorlage", required=True,
+                    help="die geschnittene Vorlage (Tempo 1,0), fuer die Wortzeiten")
+    ap.add_argument("--plan", required=True, help="derselbe Plan wie beim Rendern")
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--tempo", type=float, default=1.0)
+    ap.add_argument("--model", default="medium")
+    ap.add_argument("--lang", default=None)
+    ap.add_argument("--worte", type=int, default=3)
+    ap.add_argument("--pause", type=float, default=0.45)
+    ap.add_argument("--korrekturen", default=None)
+    ap.add_argument("--schlagworte", default="",
+                    help="Woerter, auf denen die Schrift staerker aufpoppt, "
+                         "mit Komma getrennt")
+    ap.add_argument("--blitze", default="",
+                    help="Zeitpunkte im FERTIGEN Bild, Sekunden, mit Komma")
+    ap.add_argument("--blitz-hoehe", type=float, default=0.95)
+    ap.add_argument("--blitz-abfall", type=float, default=0.055)
+    ap.add_argument("--srt-out", default=None)
+    ap.add_argument("--crf", type=int, default=20)
+    a = ap.parse_args()
+
+    plan = json.loads(Path(a.plan).read_text(encoding="utf-8"))
+    schnitte = plan["einstellungen"] if isinstance(plan, dict) else plan
+    _, lippen = SR.plan_graph(schnitte)
+
+    paare = SR.korrekturen_lesen(a.korrekturen)
+    cues, lang = SR.whisper_cues(a.vorlage, a.model, a.lang, worte=a.worte,
+                                 paare=paare, pause=a.pause)
+    print(f"  Transkript: {len(cues)} Einblendungen, Sprache {lang}")
+    # Die SRT wird VOR dem Lippen-Teiler geschrieben. `cues_an_lippen`
+    # teilt eine Einblendung, die ueber einen Einstellungswechsel laeuft,
+    # in zwei Teile mit demselben Text — im Bild richtig, in der Strichliste
+    # steht der Text dann zweimal ("EXPERIENCES BUT EXPERIENCES BUT").
+    if a.srt_out:
+        n = SR.cues_als_srt(cues, a.srt_out, tempo=a.tempo)
+        print(f"  {n} Zeilen nach {a.srt_out}")
+
+    if lippen:
+        cues = SR.cues_an_lippen(cues, lippen)
+        print(f"  Lippen {sorted({l for _, _, l in lippen if l})}")
+
+    ass = str(Path(a.out).with_suffix(".kino.ass"))
+    sw = [s for s in a.schlagworte.split(",") if s.strip()]
+    n = ass_kino(cues, ass, tempo=a.tempo, schlagworte=sw)
+    print(f"  {n} Dialogzeilen, {len(sw)} Schlagwoerter: {', '.join(sw) or '—'}")
+
+    zeiten = [float(x) for x in a.blitze.split(",") if x.strip()]
+    kette = [f"subtitles={ass}"]
+    bl = blitz_kette(zeiten, a.blitz_hoehe, a.blitz_abfall)
+    if bl:
+        kette.append(bl)
+        print(f"  {len(zeiten)} Fotoblitze bei {', '.join('%.2f' % t for t in zeiten)}")
+
+    cmd = [SR.FFMPEG, "-y", "-i", a.bild, "-vf", ",".join(kette),
+           "-r", "30", "-c:v", "libx264", "-preset", "medium",
+           "-crf", str(a.crf), "-pix_fmt", "yuv420p", "-profile:v", "high",
+           "-c:a", "copy", "-movflags", "+faststart", a.out]
+    SR.run(cmd)
+    mb = os.path.getsize(a.out) / 1e6
+    print(f"  {a.out} — {SR.W}x{SR.H}, {mb:.1f} MB")
+
+
+if __name__ == "__main__":
+    main()
