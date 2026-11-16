@@ -9314,3 +9314,33 @@ Rauschboden.
 **Die Regel:** eine Vorgabe trägt **das Format, an dem sie gemessen wurde**,
 und keines darüber hinaus. Vor jedem Auftrag: ist das ein Short, ein Clip oder
 eine Folge — und welche meiner Vorgaben sind an diesem Format gemessen?
+
+## ER SAGT AN, WAS WANN RAUSGEHT — 16.11.2026
+
+**Seine Worte:** *„ich würde das jetzt einmal ändern, dass ich dir einfach
+Bescheid gebe, was wann veröffentlicht wird, weil es nicht so viel Sinn macht,
+wenn du das Ganze führst."*
+
+**Ab sofort:**
+1. **Keine Vorschläge für leere Tage.** Zustandsspalte **„er sagt an"**. Nennt
+   er etwas, trage ich es ein — mehr nicht.
+2. **Keine Vorratsmeldung.** Die Zahl war nie das Problem.
+3. **Fristen bleiben meine.** Die T-Kette (T−10 bis T−2) für eine Folge löse
+   ich weiter aus, bis er etwas anderes sagt — sie bereitet eine Folge vor und
+   legt keinen Veröffentlichungstag fest. **Wenn er auch das selbst steuern
+   will, sagt er es; bis dahin frage ich nicht jedes Mal nach.**
+
+**Und der Maßstab, der dahintersteht** — sein Urteil über die elf Ken-Shorts:
+
+> *„völlig nutzlos, weil da einfach kein strategisches Denken dahinter steckt,
+> was Dramaturgie und Storytelling angeht."*
+
+**Das trifft auch mich, nicht nur den Agenten.** Ich habe monatelang Aufträge
+geschrieben, in denen Bildrate, Satzende, Pegel, Musikbett und Dateiname
+standen — **und kein einziges Mal, was das Stück erzählen soll.** Ein Auftrag,
+der nur Handwerk vorgibt, bekommt Handwerk zurück.
+
+**Für jeden künftigen Short- oder Clip-Auftrag gilt deshalb:** er nennt
+**die Wendung** — wo das Stück anfängt, wo es kippt, worauf es endet — oder er
+wird nicht geschrieben. Eine Zeitmarke mit erstem und letztem Satz ist eine
+Fundstelle, keine Dramaturgie.

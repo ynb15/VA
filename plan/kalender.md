@@ -96,11 +96,11 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Fr 13.11. | **PODCAST** | Rick Strassman | offen |
 | Sa 14.11. | Clip | **Strassman · McKenna** (3:16) | fertig · *mein Vorschlag* |
 | So 15.11. | **PODCAST** | Ken Stern | **raus** — `YlJyuNE1qrM` |
-| Mo 16.11. | Short | **Ken · „Cigarettes"** (87,7 s) | fertig · *mein Vorschlag* |
-| Di 17.11. | Short | **Ken · „Pledge"** (62,5 s) | fertig · *mein Vorschlag* |
-| Mi 18.11. | Short | **Ken · „Phones"** (61,6 s) | fertig · *mein Vorschlag* |
-| Do 19.11. | Short | **Ken · „Decent"** (80,8 s) | fertig · *mein Vorschlag* |
-| Fr 20.11. | Short | **Ken · „Alone"** (38,6 s) | fertig · *mein Vorschlag* |
+| Mo 16.11. | Short | — | **er sagt an** |
+| Di 17.11. | Short | — | **er sagt an** |
+| Mi 18.11. | Short | — | **er sagt an** |
+| Do 19.11. | Short | — | **er sagt an** |
+| Fr 20.11. | Short | — | **er sagt an** |
 | Sa 21.11. | Clip | 3–10 Min | offen |
 | So 22.11. | Clip | 10–20 Min | offen |
 | Mo 23.11. | Short | — | offen |
@@ -544,7 +544,11 @@ ist statt eine Rückfrage in Verkleidung:
 nichts committet hat und auf Kingsbury sitzt. **Nicht angestupst** — die Frist
 greift erst am 17.11., und Stillstand ohne offenen Auftrag ist kein Befund.
 
-## Die Woche vom 16.11. aus den Ken-Shorts gefüllt — mein Vorschlag, 16.11.2026
+## ÜBERHOLT — Die Woche vom 16.11. aus den Ken-Shorts gefüllt (Vorschlag 06:40)
+
+> **Zurückgenommen am 16.11.** Er sagt ab jetzt selbst an, was wann rausgeht,
+> und die elf Ken-Shorts sind kein Vorrat. Der Abschnitt bleibt als Beleg
+> stehen; die Tageszeilen stehen wieder auf *er sagt an*.
 
 Montag bis Freitag standen **ohne Quelle** da. Gebaut wird nichts Neues: **elf
 fertige Ken-Shorts** liegen seit dem 11.11., und **die Folge ist seit gestern
@@ -579,3 +583,30 @@ beiden **Ken-Langstücke** aus der T−8-Auswahl (Samstag: *„Warum Amerika
 auseinanderfällt"*, roh 00:09:50–00:14:30, 4:40) und das **zurückgehaltene
 Strassman-Sonntagsstück** (01:19:40–01:35:10). **Nichts davon ist gebaut** —
 das wäre ein Auftrag für diese Woche, kein Vorrat.
+
+## Er sagt an, was wann rausgeht — 16.11.2026
+
+**Seine Entscheidung, heute:** *„ich würde das jetzt einmal ändern, dass ich
+dir einfach Bescheid gebe, was wann veröffentlicht wird, weil es nicht so viel
+Sinn macht, wenn du das Ganze führst."*
+
+**Was sich ändert:**
+- **Keine Vorschläge mehr für leere Tage.** Die Zustandsspalte steht auf
+  **„er sagt an"**, bis er etwas nennt; dann trage ich es ein.
+- **„Vorrat" ist als Meldung erledigt.** Ein technisch fertiges Stück ist kein
+  Stück im Kasten.
+- Die Plankontrolle meldet weiter **Fristen**, aber keinen Tagesvorschlag und
+  keine Vorratswarnung.
+
+**Der Grund wiegt schwerer als die Zuständigkeit** — sein Urteil über die elf
+Ken-Shorts, die ich heute morgen auf die Woche verteilt hatte:
+
+> *„die Shorts, die er geschnitten hatte, sind völlig nutzlos, weil da einfach
+> kein strategisches Denken dahinter steckt, was Dramaturgie und Storytelling
+> angeht."*
+
+**Das ist kein Terminproblem, sondern ein Maßstab.** Ein Short, das technisch
+sauber ist — Frames ganz, Satzenden gemessen, Pegel angeglichen, Straßenname
+stumm — ist deshalb noch kein Stück, das trägt. **Alles, was wir bisher
+gemessen haben, war Handwerk. Keine einzige Messung hat je geprüft, ob ein
+Short einen Anfang, eine Wendung und ein Ende hat.**

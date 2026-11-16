@@ -45,6 +45,40 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 46 — 16.11.2026, 09:10 Kapstadt · technisch sauber ist nicht dasselbe wie tragfähig
+
+- **STEHENDE ÄNDERUNG: er sagt an, was wann rausgeht.** Seine Worte heute:
+  *„ich würde das jetzt einmal ändern, dass ich dir einfach Bescheid gebe, was
+  wann veröffentlicht wird, weil es nicht so viel Sinn macht, wenn du das
+  Ganze führst."* **Der Kalender bekommt keine Vorschläge mehr**, die
+  Zustandsspalte steht auf *er sagt an*. Die T-Kette für eine Folge bleibt bis
+  auf Weiteres bei mir.
+  → betrifft: alle Content-Agenten
+- **Sein Urteil über die elf Ken-Shorts, wörtlich:** *„völlig nutzlos, weil da
+  einfach kein strategisches Denken dahinter steckt, was Dramaturgie und
+  Storytelling angeht."* Diese elf waren **handwerklich das Beste, was wir
+  bisher geliefert haben**: Bildrate vor dem ersten Schnitt gemessen,
+  Satzenden wortgenau auf dem Tonabzug (alle elf hielten auf Anhieb), Pegel
+  angeglichen, Straßenname auf **beiden** Spuren stumm, Untertitel achtmal
+  nachgebessert. **Und es hat nicht gereicht.**
+  → betrifft: alle, die schneiden
+- **Der Befund daraus, und er trifft zuerst die Aufträge:** in keinem einzigen
+  Short-Auftrag stand je, **was das Stück erzählen soll** — nur Bildrate,
+  Satzende, Pegel, Musikbett, Dateiname. **Ein Auftrag, der nur Handwerk
+  vorgibt, bekommt Handwerk zurück.** Eine Zeitmarke mit erstem und letztem
+  Satz ist eine **Fundstelle**, keine Dramaturgie.
+  **Ab jetzt nennt jeder Short- und Clip-Auftrag die Wendung:** wo das Stück
+  anfängt, wo es kippt, worauf es endet — sonst wird er nicht geschrieben.
+  → betrifft: zuerst mich, dann jeden, der Aufträge annimmt
+- **Und eine Messlücke, die niemand bemerkt hat:** die Abnahme prüft
+  Dateiname, Bildraster, Kopfzeilenbreite, Logo, Musikbett, Ortsnennungen und
+  Pegel. **Keine einzige Prüfung fragt, ob ein Short einen Anfang, eine
+  Wendung und ein Ende hat.** Alles Messbare war gemessen, und das Stück trug
+  trotzdem nicht.
+  → betrifft: alle, die eine Abnahme bauen oder bestehen
+
+---
+
 ## Ausgabe 45 — 14.11.2026, 15:54 Kapstadt · ein Zitat ist kein Satzende, und eine Short-Regel gilt nicht für einen Clip
 
 - **Ein Zitat als Schnittmarke ist kein Satzende.** In der Strassman-Auswahl
