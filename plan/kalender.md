@@ -96,11 +96,11 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Fr 13.11. | **PODCAST** | Rick Strassman | offen |
 | Sa 14.11. | Clip | **Strassman · McKenna** (3:16) | fertig · *mein Vorschlag* |
 | So 15.11. | **PODCAST** | Ken Stern | **raus** — `YlJyuNE1qrM` |
-| Mo 16.11. | Short | — | offen |
-| Di 17.11. | Short | — | offen |
-| Mi 18.11. | Short | — | offen |
-| Do 19.11. | Short | — | offen |
-| Fr 20.11. | Short | — | offen |
+| Mo 16.11. | Short | **Ken · „Cigarettes"** (87,7 s) | fertig · *mein Vorschlag* |
+| Di 17.11. | Short | **Ken · „Pledge"** (62,5 s) | fertig · *mein Vorschlag* |
+| Mi 18.11. | Short | **Ken · „Phones"** (61,6 s) | fertig · *mein Vorschlag* |
+| Do 19.11. | Short | **Ken · „Decent"** (80,8 s) | fertig · *mein Vorschlag* |
+| Fr 20.11. | Short | **Ken · „Alone"** (38,6 s) | fertig · *mein Vorschlag* |
 | Sa 21.11. | Clip | 3–10 Min | offen |
 | So 22.11. | Clip | 10–20 Min | offen |
 | Mo 23.11. | Short | — | offen |
@@ -543,3 +543,39 @@ ist statt eine Rückfrage in Verkleidung:
 **Zuständig ist Shorts I** (`claude/content-assistant`), der seit dem 06.11.
 nichts committet hat und auf Kingsbury sitzt. **Nicht angestupst** — die Frist
 greift erst am 17.11., und Stillstand ohne offenen Auftrag ist kein Befund.
+
+## Die Woche vom 16.11. aus den Ken-Shorts gefüllt — mein Vorschlag, 16.11.2026
+
+Montag bis Freitag standen **ohne Quelle** da. Gebaut wird nichts Neues: **elf
+fertige Ken-Shorts** liegen seit dem 11.11., und **die Folge ist seit gestern
+draußen** — das ist der übliche Lauf, Shorts folgen der Folge.
+
+| Tag | Stück | fertig | Rohzeit |
+|---|---|---|---|
+| Mo 16.11. | **Cigarettes** | 87,7 s | 3645,8–3758,5 |
+| Di 17.11. | **Pledge** | 62,5 s | 433,0–502,9 |
+| Mi 18.11. | **Phones** | 61,6 s | 4086,3–4155,2 |
+| Do 19.11. | **Decent** | 80,8 s | 2222,2–2314,1 |
+| Fr 20.11. | **Alone** | 38,6 s | 3765,9–3807,2 |
+
+**Die Reihenfolge ist meine.** Cigarettes zuerst, weil es dasselbe Thema trägt
+wie der empfohlene Titel und die Thumbnail-Empfehlung (Einsamkeit, nicht
+NPR). Pledge danach, weil es die stärkste kurze Stelle der Folge ist — **der
+Straßenname ist dort an drei Stellen stumm und im Untertitel ersetzt**,
+geprüft auf beiden Spuren.
+
+**Von jedem liegen zwei Fassungen:** das Original und eine
+**pegelangeglichene** (Festverstärkung auf den Hauptteil des zuletzt
+abgenommenen Shorts). **Alle sind von der Spitze gekappt** — es fehlen noch
+0,6 bis 8,2 dB zur Vorlage, und mehr ginge nur mit einem zweiten Eingriff am
+Ton. **Welche Fassung läuft, entscheidet er.**
+
+**Sechs bleiben übrig** (Hunting, Compliments, Bismarck, Aging, Fit,
+Scientology), dazu das **Trump-Short** von Shorts II (54,7 s, 3200,3–3270,4) —
+**kein Doppelschnitt**, geprüft.
+
+**Sa 21.11. und So 22.11. haben weiter keine Quelle.** In Frage kämen die
+beiden **Ken-Langstücke** aus der T−8-Auswahl (Samstag: *„Warum Amerika
+auseinanderfällt"*, roh 00:09:50–00:14:30, 4:40) und das **zurückgehaltene
+Strassman-Sonntagsstück** (01:19:40–01:35:10). **Nichts davon ist gebaut** —
+das wäre ein Auftrag für diese Woche, kein Vorrat.
