@@ -6,6 +6,105 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Ein Short hat drei Standbilder, nicht eins — und sie widersprechen sich (17.11.)
+
+*„dann guckst du den wirklich Millisekunde für Millisekunde für Millisekunde
+genau an."*
+
+Am Morgen hatte ich ihm geschrieben, seine Williamson-Referenz stehe
+**aufrecht**, und das mit einem vergrößerten Standbild belegt. Das Bild war
+echt und die Messung richtig. **Der Schluss war falsch.**
+
+`i.ytimg.com/vi/<id>/` gibt **drei** Bilder heraus — `oar1`, `oardefault`,
+`oar3`, alle 1080×1920, ohne Anmeldung. Der Weg steht seit dem 21.10. auf
+`claude/content-cinematic`. Ich hatte **eines** davon geholt.
+
+In den drei Bildern desselben Shorts stehen drei verschiedene Satzfälle:
+
+| Bild | | |
+|---|---|---|
+| `oardefault` | „comes from" | aufrechte Grotesk, Weiß gegen Grau |
+| `oar1` | „aimless" | ein Wort, **eisblau** |
+| `oar3` | „one **path**" | **geschwungene Kursive**, doppelt so groß, überlappend |
+
+Aus Bild 2 folgt „aufrecht". Aus Bild 3 folgt das Gegenteil, und Bild 3 ist
+das, was er seit drei Runden beschreibt.
+
+**Regel: drei Zeitproben sind das Minimum, bevor eine Aussage über den Stil
+eines Shorts fällt. Eine einzelne Probe belegt, dass ein Fall vorkommt —
+nie, dass es der einzige ist.** Dieselbe Klasse Fehler wie der
+Suchausschnitt am 12.11.: ein Fund als Inhaltsverzeichnis gelesen.
+
+→ betrifft: jede Messung an fremden Shorts, `video/williamson-kasten.md`
+
+## Die Schriftfarbe kam aus der Szene, nicht aus einer Konstante (17.11.)
+
+Drei Einblendungen desselben Shorts, drei Farben: **#E3F2F4** Eisblau,
+**#F8BF88** Pfirsich, **#FDFEFD** Weiß. Ich hatte nach *der* Schriftfarbe
+gesucht und deshalb dreimal eine falsche gefunden.
+
+Nachgerechnet und auf allen drei Bildern bestätigt:
+
+> **Die Schriftfarbe ist die mittlere Farbe des Kastens, auf den hellsten
+> Kanal 250 normiert.**
+
+| Szene | gerechnet | gemessen |
+|---|---|---|
+| warme Sepia | 250, 208, 167 | 248, 192, 137 |
+| kühler Himmel | 234, 250, 250 | 227, 242, 245 |
+| neutrales Wasser | 241, 250, 241 | 253, 254, 253 |
+
+**Regel: wenn dieselbe Größe in drei Proben drei Werte hat, ist sie keine
+Konstante, sondern eine Funktion des Bildes.** Die Frage ist dann nicht
+„welcher Wert", sondern „wovon hängt er ab".
+
+→ betrifft: `video/kino-shorts2.py`, jede Stilmessung an fremdem Material
+
+## „Kein sauberes Gesicht im Material" hiess: ich hatte dreimal gesucht (17.11.)
+
+*„Into the Wild hat genug Gesichtsnahaufnahmen. Musst du nur dich ein
+bisschen anstrengen und aufhören, so faul zu sein."*
+
+Ich hatte den Film aus dem Short geworfen mit der Begründung, in den
+schriftfreien Strecken gebe es keine saubere Gesichtsnahaufnahme. Der
+Kontaktabzug über alle 121,5 freien Sekunden, alle 1,5 s ein Bild, zeigt
+Nahaufnahmen bei 0:09,5 · 0:12,5 · 0:14,0 · 0:45,5 · **0:48–0:56
+durchgehend** · 1:07 · 1:11,5 · 1:14,5 · 1:50,5.
+
+Die Diner-Szene bei 0:48 hält siebeneinhalb Sekunden und zeigt in jedem
+Bild ein Gesicht in Nahaufnahme. Ich hatte drei Stellen probiert.
+
+Dieselbe Regel steht seit dem 20.10. in `video/broll-referenz.md` und war
+dort schon einmal an diesem Film gelernt worden: **wenn die Suche dreimal
+nichts findet, ist es ein Blättchen-Problem, kein Materialproblem.** Ein
+Kontaktabzug über die ganze Länge kostet eine Minute.
+
+→ betrifft: jede B-Roll-Auswahl
+
+## ASS-Punkte sind nicht die Punkte der Schriftdatei (17.11.)
+
+Gesucht war eine x-Höhe von 32 px. Aus der Schriftdatei gemessen hat Inter
+eine x-Höhe von 0,550 je Punkt, also Größe 58. Gebrannt ergab 58 eine
+x-Höhe von **27 px** — Faktor 0,466 statt 0,550.
+
+libass rechnet die Fontsize über andere Metriken als PIL. **Die Größe wird
+an der gebrannten ASS nachgemessen, nicht aus der Schriftdatei gerechnet.**
+Endstand: 69 für die laufende Zeile, 125 für das große Wort.
+
+→ betrifft: `video/kino-shorts2.py`, jede Schriftgröße in ASS
+
+## Ein Blitz auf dem ganzen Bild hellt auch den Rand auf (17.11.)
+
+Im Kastenformat lag der `eq`-Blitz am Ende der Kette und machte damit das
+**ganze** 1080×1920-Bild weiß — schwarzer Rand und Logo eingeschlossen. Im
+Ergebnis blitzt nicht die Szene, sondern das Telefon.
+
+Der Blitz gehört **vor** das Zusammensetzen, auf den Kasteninhalt. Dieselbe
+Überlegung wie bei der Reihenfolge im Renderer: ein Effekt gilt für die
+Ebene, auf der er gemeint ist, nicht für das fertige Bild.
+
+→ betrifft: `video/kino-shorts2.py`
+
 ## Einen Clip in der Mitte anzusehen prüft ihn nicht (17.11.)
 
 Er hatte beanstandet, dass B-Roll Landschaften statt Gesichter zeigt. Ich

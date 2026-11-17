@@ -1,30 +1,20 @@
 #!/usr/bin/env python3
-"""Kino-Schicht fuer Shorts II — bewegte Schrift und Fotoblitze.
-
-Seine Ansage vom 16.11.: *„ich moechte, dass sich die Schrift veraendert,
-dass da Fotoblitze mit drin sind. Das soll eines der besten Shorts auf
-YouTube sein."*
-
-Zwei Dinge, die `shorts-render.py` nicht kann:
-
-  * **Schrift, die sich bewegt.** Jede Einblendung setzt vergroessert ein
-    und faellt in 90 ms auf ihre Groesse zurueck. Auf gesetzten
-    Schlagwoertern ist der Sprung groesser und dauert laenger.
-  * **Fotoblitze.** Ein bis zwei Bilder nahezu weiss, danach ein kurzer
-    Abfall — gesetzt auf die Schnitte in die B-Roll und auf Schlagwoerter.
+"""Kino-Schicht fuer Shorts II — Williamson-Kasten, zweischriftiger Satz,
+bewegte Schrift und Fotoblitze.
 
 **`shorts-render.py` gehoert Shorts I und wird nicht angefasst.** Die
-Untertitel-Logik (Whisper, Korrekturen, Packen, Lippen, Stilzeile,
-Zwei-Ebenen-Gewicht) wird aus ihm IMPORTIERT, damit beide Werkzeuge
-dieselben Einblendungen erzeugen. Aendert Shorts I den Stil, aendert er
-sich hier mit.
+Untertitel-Logik (Whisper, Korrekturen, Packen, Lippen) wird aus ihm
+IMPORTIERT; dieses Werkzeug schreibt nur die ASS und baut das Bild um.
 
 Ablauf:
-  1. `shorts-render.py` baut das Bild OHNE Untertitel (Plan, B-Roll,
-     Look, Logo, Outro, Tempo).
-  2. Dieses Werkzeug rechnet die Einblendungen auf der Vorlage (Tempo 1,0),
-     schreibt sie als bewegte ASS und brennt sie zusammen mit den Blitzen
-     auf das fertige Bild.
+  1. `shorts-render.py` baut das Bild OHNE Untertitel, OHNE Logo und
+     OHNE Outro (Plan, B-Roll, Look, Tempo).
+  2. Dieses Werkzeug schneidet daraus den Kasten, setzt Logo, Schrift
+     und Blitze darauf.
+  3. Das Outro wird danach angehaengt.
+
+Alles, was hier an Zahlen steht, ist am Williamson-Short QjmWNrq4mBU
+gemessen (17.11.), Datei fuer Datei in `video/williamson-kasten.md`.
 """
 
 import argparse, importlib.util, json, os, subprocess, sys
@@ -46,60 +36,94 @@ def renderer_laden():
 
 SR = renderer_laden()
 
+# ---------------------------------------------------- gemessene Vorlage
+# QjmWNrq4mBU, drei Zeitproben, 1080x1920:
+#   Kasten 980x980 bei x=50 y=470, Eckenradius 40 (Aussenraum Helligkeit 0)
+#   Schriftzeile: Mitte des KASTENS, nicht des Bildes (0,493 / 0,499 / 0,494)
+#   x-Hoehe der laufenden Zeile 32 px, des grossen Wortes 60 px
+#   matt gegen aktiv: #CECBC3 gegen #FDFEFD  -> Faktor 0,81
+KASTEN_SEITE, KASTEN_X, KASTEN_OBEN, KASTEN_RADIUS = 980, 50, 470, 40
+XH_INTER, XH_SKRIPT = 0.550, 0.600          # x-Hoehe je Punkt, gemessen
+MATT_FAKTOR = 0.81
+
 
 # ---------------------------------------------------------------- Blitze
 
 def blitz_kette(zeiten, hoehe=0.95, abfall=0.055, dauer=0.20):
     """Fotoblitze als Helligkeitsausdruck fuer `eq`.
 
-    Ein echter Blitz ist kein Rechteck: er steigt in einem Bild an und
-    faellt exponentiell. `exp(-(t-T)/abfall)` gibt bei 30 Bildern/s nach
-    einem Bild noch 55 %, nach zweien 30 %, nach dreien 17 % — das liest
-    sich als Blitz und nicht als Fehler im Band.
-
-    `eval=frame` ist noetig, sonst wertet ffmpeg den Ausdruck einmal aus
-    und der Blitz steht das ganze Short ueber im Bild.
+    `max(0,t-T)` ist noetig: ohne ihn ueberlaeuft `exp` weit VOR einem
+    Blitz, `inf * 0` wird NaN und das ganze Band kippt.
     """
     if not zeiten:
         return None
-    # `max(0,t-T)` ist nicht Kosmetik: ohne die Klammer rechnet ffmpeg fuer
-    # Zeiten WEIT VOR einem Blitz `exp(+1164)`, das ist inf, und inf*0 ist
-    # NaN. Ein einziger Blitz am Ende des Shorts faerbt damit alles davor
-    # schwarzrot. Gefunden am 16.11. an genau diesem Bild.
     teile = [f"{hoehe}*exp(-max(0" + chr(92) + f",t-{t:.4f})/{abfall})"
-             f"*between(t,{t:.4f},{t + dauer:.4f})"
-             for t in sorted(zeiten)]
+             f"*between(t,{t:.4f},{t + dauer:.4f})" for t in sorted(zeiten)]
     return "eq=brightness='" + "+".join(teile) + "':eval=frame"
 
 
-# ------------------------------------------------------------ bewegte ASS
+# ------------------------------------------------------------- Toenung
 
-def ass_kino(cues, pfad, tempo=1.0, schlagworte=(), pop=1.14, pop_stark=1.28,
-             zeit_pop=150, zeit_stark=190, tiefer=0, gross=False,
-             groesse=92, rand=40, schrift="Inter Display Black", kursiv=True,
-             kontur=0, schatten=2, matt="&HB4B4B4&", hell_bord=2):
-    """Wie `SR.build_ass`, aber die erste Zeile je Einblendung poppt auf.
+def kasten_toene(bild, y_off, seite=1080, takt=4):
+    """Mittlere Farbe des Kastens je Zeitpunkt — die Grundlage der Toenung.
 
-    Warum nur die erste: der Renderer gibt JE WORT eine eigene Dialogzeile
-    aus, damit das gesprochene Wort gelb wird. Bekaeme jede dieser Zeilen
-    die Animation, zuckte die Schrift bei jedem Wort. Die Animation gehoert
-    an den Einsatz der Einblendung, die Hervorhebung wandert danach ruhig
-    durch.
-
-    Beide Ebenen (Kontur und Gewichts-Nachzug) bekommen denselben
-    Animationskopf — sonst laufen sie auseinander und die Schrift franst.
+    Gemessen am Original: die Schriftfarbe IST die mittlere Farbe der
+    Szene, auf den hellsten Kanal 250 normiert.
+      warme Sepia-Szene  -> gemessen #F8BF88, gerechnet (250,208,167)
+      kuehle Himmel-Szene-> gemessen #E3F2F4, gerechnet (234,250,250)
+      neutrales Wasser   -> gemessen #FDFEFD, gerechnet (241,250,241)
     """
-    """Williamson-Stil, an seinen drei Referenz-Shorts ausgemessen (20.10.):
-    Kleinschreibung, KEINE schwarze Kontur, kein Gelb, zwei Woerter je
-    Einblendung, und das gesprochene Wort wird ueber HELLIGKEIT UND
-    STRICHSTAERKE markiert, nicht ueber Farbe (gemessen: 245,3 gegen 187,5
-    mittlere Helligkeit, 24,6 gegen 18,0 Pixel je Spalte).
+    cmd = [SR.FFMPEG, "-nostdin", "-v", "error", "-i", bild,
+           "-vf", f"crop={seite}:{seite}:0:{y_off},scale=8:8,fps={takt}",
+           "-f", "rawvideo", "-pix_fmt", "rgb24", "-"]
+    roh = subprocess.run(cmd, capture_output=True).stdout
+    n = len(roh) // (8 * 8 * 3)
+    toene = []
+    for i in range(n):
+        b = roh[i * 192:(i + 1) * 192]
+        r = sum(b[0::3]) / 64; g = sum(b[1::3]) / 64; bl = sum(b[2::3]) / 64
+        m = max(r, g, bl, 1)
+        toene.append((min(255, r * 250 / m), min(255, g * 250 / m),
+                      min(255, bl * 250 / m)))
+    return toene, takt
 
-    Kursiv auf seine Ansage vom 17.11.: *„eine viel artistischere Schrift.
-    Geschwungen, kursiv."* Die gemessene Referenz steht aufrecht — das
-    gehoert in die Uebergabe, nicht in eine stille Entscheidung.
+
+def ass_farbe(rgb):
+    r, g, b = (int(max(0, min(255, round(v)))) for v in rgb)
+    return f"&H00{b:02X}{g:02X}{r:02X}&"
+
+
+# ---------------------------------------------------------------- Satz
+
+RICHTUNGEN = [(-46, 20), (46, 20), (0, 38), (-34, -27), (34, -27), (0, -36)]
+
+
+def ass_kino(cues, pfad, tempo=1.0, schlagworte=(), toene=None, takt=4,
+             groesse=69, groesse_stark=125, schrift="Inter Black",
+             schrift_matt="Inter SemiBold", schrift_stark="Petit Formal Script",
+             mitte_x=None, mitte_y=None, pop=1.12, pop_stark=1.22,
+             zeit_pop=150, zeit_stark=200):
+    """Der gemessene Williamson-Satz, Wort fuer Wort.
+
+    Zwei Faelle:
+
+    * **gewoehnliche Einblendung** — eine Zeile in der Mitte des Kastens,
+      Kleinschreibung, keine Kontur. Das gesprochene Wort steht in
+      `Inter Black` und voller Toenung, die uebrigen in `Inter SemiBold`
+      und auf 81 % abgedunkelt (gemessen #FDFEFD gegen #CECBC3).
+    * **Einblendung mit Schlagwort** — zwei Zeilen uebereinander, wie
+      „one path" im Original: die gewoehnlichen Woerter klein und nach
+      rechts oben versetzt, das Schlagwort gross in der geschwungenen
+      Kursiven nach links unten, beide ueberlappend.
+
+    Die Farbe kommt NICHT aus einer Konstante, sondern aus dem Bild: der
+    Kasten wird vier Mal je Sekunde abgetastet, und die Schrift nimmt
+    seine mittlere Farbe an. Genau das steht im Original — dieselbe
+    Zeile ist in einer Szene eisblau und in der naechsten pfirsich.
     """
     W, H = SR.W, SR.H
+    mitte_x = mitte_x if mitte_x is not None else KASTEN_X + KASTEN_SEITE // 2
+    mitte_y = mitte_y if mitte_y is not None else KASTEN_OBEN + KASTEN_SEITE // 2
     head = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
@@ -109,7 +133,8 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, ScaleX, ScaleY, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{schrift},{groesse},{SR.WEISS},&H00000000,&H80000000,0,{1 if kursiv else 0},100,100,1,{kontur},{schatten},2,{rand},{rand},{marginv_fix(rand)},1
+Style: Cap,{schrift},{groesse},&H00FFFFFF,&H00000000,&H64000000,0,0,100,100,1,0,2,5,30,30,30,1
+Style: Gross,{schrift_stark},{groesse_stark},&H00FFFFFF,&H00000000,&H64000000,0,0,100,100,1,0,2,5,30,30,30,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -117,70 +142,80 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     lines = []
     sw = {s.strip().upper() for s in schlagworte if s.strip()}
 
-    # Die Einflugrichtungen wechseln reihum. Dass sie wechseln ist der
-    # Punkt — seine Ansage vom 17.11.: „bei Chris fliegt die Schrift
-    # herum, die ist nicht statisch." Eine Einblendung, die immer aus
-    # derselben Ecke kommt, liest sich nach zwei Wiederholungen wieder
-    # als statisch.
-    RICHTUNGEN = [(-78, 34), (78, 34), (0, 66), (-58, -46), (58, -46), (0, -62)]
+    def ton(t_aus):
+        if not toene:
+            return (250, 250, 250)
+        i = min(len(toene) - 1, max(0, int(t_aus * takt)))
+        return toene[i]
 
-    def anim(i, stark, x, y):
+    def anim(i, stark, x, y, ms, f):
         """Einflug: Versatz, Drehung und Groesse laufen zusammen auf null.
 
         `\\move` ersetzt `\\pos` — beide zugleich ignoriert libass
         stillschweigend, und die Zeile stuende dann fest.
         """
         dx, dy = RICHTUNGEN[i % len(RICHTUNGEN)]
-        ms = zeit_stark if stark else zeit_pop
-        f = pop_stark if stark else pop
-        rz = (6 if i % 2 == 0 else -6) * (1.6 if stark else 1.0)
-        return (f"{{\\an8\\move({x + dx},{y + dy},{x},{y},0,{ms})"
+        rz = (5 if i % 2 == 0 else -5) * (1.8 if stark else 1.0)
+        return (f"\\move({x + dx},{y + dy},{x},{y},0,{ms})"
                 f"\\fscx{100 * f:.0f}\\fscy{100 * f:.0f}\\frz{rz:.1f}"
-                f"\\alpha&HA0&"
-                f"\\t(0,{ms},\\fscx100\\fscy100\\frz0\\alpha&H00&)}}")
+                f"\\alpha&HB0&"
+                f"\\t(0,{ms},\\fscx100\\fscy100\\frz0\\alpha&H00&)")
+
+    def zeit(x):
+        return SR.ass_time(x / tempo)
 
     for nr, c in enumerate(cues):
         woerter = [w for w in (c.get("woerter") or [])
                    if w["t"].strip() and w["end"] > c["start"] and w["start"] < c["end"]]
-        roh = [SR._anzeige(w["t"], gross) for w in woerter]
+        roh = [SR._anzeige(w["t"], False) for w in woerter]
         roh = [w for w in roh if w]
         if not roh:
-            roh = [SR._anzeige(t, gross) for t in (c.get("text") or "").split()]
+            roh = [SR._anzeige(t, False) for t in (c.get("text") or "").split()]
             roh = [t for t in roh if t]
             if not roh:
                 continue
-        lippe = c.get("lippe")
-        px, py = W // 2, (int(lippe) + tiefer) if lippe is not None else H // 2
-        kopf_pos = f"{{\\an8\\pos({px},{py})}}"
-        # Vergleich in Grossbuchstaben: seit dem Williamson-Stil steht der
-        # Text klein im Bild, die Schlagwortliste kommt aber gross.
-        stark = any(w.upper() in sw for w in roh)
+            woerter = []
+        k_index = next((i for i, w in enumerate(roh) if w.upper() in sw), None)
+        rgb = ton(c["start"] / tempo)
+        voll = ass_farbe(rgb)
+        matt = ass_farbe([v * MATT_FAKTOR for v in rgb])
 
-        def bauen(hell=None):
-            """Aktivwort weiss und dicker, die anderen abgedunkelt.
-
-            Das Dickerwerden kommt ueber `\\bord` in der TEXTFARBE, nicht
-            ueber eine zweite Schriftschnitt-Groesse: so bleibt die Zeile
-            auf einer Grundlinie und nur die Strichstaerke aendert sich,
-            genau wie in der Referenz gemessen.
-            """
+        def satz(hell):
+            """Eine Zeile, das aktive Wort heller und fetter."""
             teile = []
             for k, t in enumerate(roh):
                 if k == hell:
-                    teile.append(f"{{\\c{SR.WEISS_I}\\3c{SR.WEISS_I}"
-                                 f"\\bord{hell_bord}}}{t}")
+                    teile.append(f"{{\\fn{schrift}\\c{voll}}}{t}")
                 else:
-                    teile.append(f"{{\\c{matt}\\3c{matt}\\bord0}}{t}")
+                    teile.append(f"{{\\fn{schrift_matt}\\c{matt}}}{t}")
             return " ".join(teile)
 
-        def zeile(von, bis, hell, mit_anim):
-            t = 1.0 if c.get("fertigzeit") else tempo
-            v, b = SR.ass_time(von / t), SR.ass_time(bis / t)
-            kopf = anim(nr, stark, px, py) if mit_anim else kopf_pos
-            lines.append(f"Dialogue: 0,{v},{b},Cap,,0,0,0,,{kopf}{bauen(hell)}")
+        def ausgeben(von, bis, hell, mit_anim):
+            v, b = zeit(von), zeit(bis)
+            if k_index is None:
+                kopf = ("{\\an5" + (anim(nr, False, mitte_x, mitte_y, zeit_pop, pop)
+                                    if mit_anim else f"\\pos({mitte_x},{mitte_y})") + "}")
+                lines.append(f"Dialogue: 0,{v},{b},Cap,,0,0,0,,{kopf}{satz(hell)}")
+                return
+            # Schlagwort-Fall: zwei Zeilen, wie „one path" im Original
+            rest = " ".join(t for i, t in enumerate(roh) if i != k_index)
+            ox, oy = mitte_x + 52, mitte_y - 46
+            gx, gy = mitte_x - 32, mitte_y + 38
+            if rest:
+                hell_rest = (hell is not None and hell != k_index)
+                f_rest = voll if hell_rest else matt
+                s_rest = schrift if hell_rest else schrift_matt
+                kopf = ("{\\an5" + (anim(nr, False, ox, oy, zeit_pop, pop)
+                                    if mit_anim else f"\\pos({ox},{oy})") + "}")
+                lines.append(f"Dialogue: 0,{v},{b},Cap,,0,0,0,,"
+                             f"{kopf}{{\\fn{s_rest}\\c{f_rest}}}{rest}")
+            kopf = ("{\\an5" + (anim(nr, True, gx, gy, zeit_stark, pop_stark)
+                                if mit_anim else f"\\pos({gx},{gy})") + "}")
+            lines.append(f"Dialogue: 1,{v},{b},Gross,,0,0,0,,"
+                         f"{kopf}{{\\c{voll}}}{roh[k_index]}")
 
         if not woerter:
-            zeile(c["start"], c["end"], None, True)
+            ausgeben(c["start"], c["end"], None, True)
             continue
         for i, w in enumerate(woerter):
             von = max(w["start"], c["start"]) if i else c["start"]
@@ -188,24 +223,30 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                    if i + 1 < len(woerter) else c["end"])
             if bis - von <= 0.02:
                 continue
-            zeile(von, bis, i, i == 0)
+            ausgeben(von, bis, i, i == 0)
 
     Path(pfad).write_text(head + "\n".join(lines) + "\n", encoding="utf-8")
     return len(lines)
 
 
-def marginv_fix(rand):
-    """Die Lippe im Kopf schlaegt MarginV; der Wert steht nur der Form halber."""
-    return 320
+# ------------------------------------------------------------ Kastenmaske
+
+def maske_bauen(pfad, seite=KASTEN_SEITE, radius=KASTEN_RADIUS):
+    from PIL import Image, ImageDraw
+    m = Image.new("L", (seite, seite), 0)
+    ImageDraw.Draw(m).rounded_rectangle([0, 0, seite - 1, seite - 1],
+                                        radius=radius, fill=255)
+    m.save(pfad)
+    return pfad
 
 
 # ------------------------------------------------------------------ Lauf
 
 def main():
     ap = argparse.ArgumentParser(
-        description="Bewegte Schrift und Fotoblitze auf ein fertiges Short.")
+        description="Williamson-Kasten, bewegte Schrift und Fotoblitze.")
     ap.add_argument("--bild", required=True,
-                    help="Ausgabe von shorts-render.py OHNE Untertitel")
+                    help="Ausgabe von shorts-render.py OHNE Untertitel/Logo/Outro")
     ap.add_argument("--vorlage", required=True,
                     help="die geschnittene Vorlage (Tempo 1,0), fuer die Wortzeiten")
     ap.add_argument("--plan", required=True, help="derselbe Plan wie beim Rendern")
@@ -213,65 +254,87 @@ def main():
     ap.add_argument("--tempo", type=float, default=1.0)
     ap.add_argument("--model", default="medium")
     ap.add_argument("--lang", default=None)
-    ap.add_argument("--worte", type=int, default=2,
-                    help="Williamson setzt ZWEI Woerter je Einblendung")
+    ap.add_argument("--worte", type=int, default=2)
     ap.add_argument("--pause", type=float, default=0.45)
     ap.add_argument("--korrekturen", default=None)
-    ap.add_argument("--schlagworte", default="",
-                    help="Woerter, auf denen die Schrift staerker aufpoppt, "
-                         "mit Komma getrennt")
-    ap.add_argument("--blitze", default="",
-                    help="Zeitpunkte im FERTIGEN Bild, Sekunden, mit Komma")
+    ap.add_argument("--schlagworte", default="")
+    ap.add_argument("--blitze", default="")
     ap.add_argument("--blitz-hoehe", type=float, default=0.95)
     ap.add_argument("--blitz-abfall", type=float, default=0.055)
     ap.add_argument("--srt-out", default=None)
     ap.add_argument("--crf", type=int, default=20)
-    ap.add_argument("--schrift", default="Inter Display Black")
-    ap.add_argument("--schriftgroesse", type=int, default=92)
-    ap.add_argument("--aufrecht", action="store_true",
-                    help="nicht kursiv setzen (die gemessene Referenz steht aufrecht)")
-    ap.add_argument("--versalien", action="store_true",
-                    help="GROSSBUCHSTABEN statt der gemessenen Kleinschreibung")
+    ap.add_argument("--kasten-y", type=int, default=380,
+                    help="welche 1080er Zeile des Vollbildes in den Kasten kommt")
+    ap.add_argument("--logo", default=None)
+    ap.add_argument("--logo-breite", type=int, default=300)
+    ap.add_argument("--logo-oben", type=int, default=1520)
+    # Nachgemessen an der gebrannten ASS, nicht gerechnet: ASS-Punkte sind
+    # NICHT die Punkte der Schriftdatei. 58 ergab 27 px x-Hoehe, gebraucht
+    # sind die gemessenen 32 -> 69. Beim grossen Wort 100 -> 48 px, noetig
+    # sind 60 -> 125.
+    ap.add_argument("--groesse", type=int, default=69)
+    ap.add_argument("--groesse-stark", type=int, default=125)
     a = ap.parse_args()
 
     plan = json.loads(Path(a.plan).read_text(encoding="utf-8"))
     schnitte = plan["einstellungen"] if isinstance(plan, dict) else plan
-    _, lippen = SR.plan_graph(schnitte)
 
     paare = SR.korrekturen_lesen(a.korrekturen)
     cues, lang = SR.whisper_cues(a.vorlage, a.model, a.lang, worte=a.worte,
                                  paare=paare, pause=a.pause)
     print(f"  Transkript: {len(cues)} Einblendungen, Sprache {lang}")
-    # Die SRT wird VOR dem Lippen-Teiler geschrieben. `cues_an_lippen`
-    # teilt eine Einblendung, die ueber einen Einstellungswechsel laeuft,
-    # in zwei Teile mit demselben Text — im Bild richtig, in der Strichliste
-    # steht der Text dann zweimal ("EXPERIENCES BUT EXPERIENCES BUT").
     if a.srt_out:
         n = SR.cues_als_srt(cues, a.srt_out, tempo=a.tempo)
         print(f"  {n} Zeilen nach {a.srt_out}")
+    # Die Lippen des Plans gelten im Vollbild. Im Kasten steht die Zeile
+    # IMMER in der Kastenmitte — gemessen 0,493 / 0,499 / 0,494.
 
-    if lippen:
-        cues = SR.cues_an_lippen(cues, lippen)
-        print(f"  Lippen {sorted({l for _, _, l in lippen if l})}")
+    toene, takt = kasten_toene(a.bild, a.kasten_y)
+    print(f"  Toenung: {len(toene)} Proben ({takt}/s), erste "
+          f"{tuple(round(v) for v in toene[0]) if toene else '—'}")
 
     ass = str(Path(a.out).with_suffix(".kino.ass"))
     sw = [s for s in a.schlagworte.split(",") if s.strip()]
-    n = ass_kino(cues, ass, tempo=a.tempo, schlagworte=sw,
-                 schrift=a.schrift, groesse=a.schriftgroesse,
-                 kursiv=not a.aufrecht, gross=a.versalien)
+    n = ass_kino(cues, ass, tempo=a.tempo, schlagworte=sw, toene=toene, takt=takt,
+                 groesse=a.groesse, groesse_stark=a.groesse_stark)
     print(f"  {n} Dialogzeilen, {len(sw)} Schlagwoerter: {', '.join(sw) or '—'}")
 
-    zeiten = [float(x) for x in a.blitze.split(",") if x.strip()]
-    kette = [f"subtitles={ass}"]
-    bl = blitz_kette(zeiten, a.blitz_hoehe, a.blitz_abfall)
-    if bl:
-        kette.append(bl)
-        print(f"  {len(zeiten)} Fotoblitze bei {', '.join('%.2f' % t for t in zeiten)}")
+    maske = str(Path(a.out).with_suffix(".maske.png"))
+    maske_bauen(maske)
 
-    cmd = [SR.FFMPEG, "-y", "-i", a.bild, "-vf", ",".join(kette),
-           "-r", "30", "-c:v", "libx264", "-preset", "medium",
-           "-crf", str(a.crf), "-pix_fmt", "yuv420p", "-profile:v", "high",
-           "-c:a", "copy", "-movflags", "+faststart", a.out]
+    zeiten = [float(x) for x in a.blitze.split(",") if x.strip()]
+    bl = blitz_kette(zeiten, a.blitz_hoehe, a.blitz_abfall)
+
+    eing = ["-i", a.bild, "-i", maske]
+    # Der Blitz gehoert IN den Kasten. Auf das ganze Bild gelegt hellt er
+    # auch den schwarzen Rand auf — dann blitzt nicht die Szene, sondern
+    # das Telefon. Deshalb sitzt er vor dem Zusammensetzen.
+    kasten = (f"crop={SR.W}:{SR.W}:0:{a.kasten_y},"
+              f"scale={KASTEN_SEITE}:{KASTEN_SEITE}:flags=lanczos")
+    if bl:
+        kasten += "," + bl
+        print(f"  {len(zeiten)} Fotoblitze im Kasten bei "
+              f"{', '.join('%.2f' % t for t in zeiten)}")
+    g = ["[0:v]split=2[src][bgq]",
+         "[bgq]drawbox=x=0:y=0:w=iw:h=ih:color=black:t=fill[bg]",
+         f"[src]{kasten}[k]",
+         "[1:v]format=gray[m]",
+         "[k][m]alphamerge[ka]",
+         f"[bg][ka]overlay={KASTEN_X}:{KASTEN_OBEN}[c1]"]
+    letzte = "c1"
+    if a.logo:
+        eing += ["-i", a.logo]
+        g.append(f"[2:v]scale={a.logo_breite}:-1[lg]")
+        g.append(f"[{letzte}][lg]overlay=(W-w)/2:{a.logo_oben}[c2]")
+        letzte = "c2"
+    g.append(f"[{letzte}]subtitles={ass}[c3]")
+    letzte = "c3"
+
+    cmd = [SR.FFMPEG, "-y"] + eing + [
+        "-filter_complex", ";".join(g), "-map", f"[{letzte}]", "-map", "0:a?",
+        "-r", "30", "-c:v", "libx264", "-preset", "medium",
+        "-crf", str(a.crf), "-pix_fmt", "yuv420p", "-profile:v", "high",
+        "-c:a", "copy", "-movflags", "+faststart", a.out]
     SR.run(cmd)
     mb = os.path.getsize(a.out) / 1e6
     print(f"  {a.out} — {SR.W}x{SR.H}, {mb:.1f} MB")

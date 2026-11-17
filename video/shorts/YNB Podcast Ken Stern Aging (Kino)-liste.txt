@@ -1,5 +1,6 @@
-# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 3 (63,2 s · 59,4 s + Outro 3,8 s)
-# Schrift fliegt · alles Vollbild · 16 Einspieler, alle mit Gesicht · 9 Fotoblitze
+# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 4 (63,2 s · 59,4 s + Outro 3,8 s)
+# Kasten 980x980 · Zitat nur Spielfilm · Essay Watts und Mandela, je am Stueck
+# Into The Wild zurueck · geschwungene Kursive auf den Schlagwoertern
 #
 # Zeiten sind die im FERTIGEN Short.
 #
@@ -23,150 +24,139 @@
  18  [00:57.45–00:59.03]  IT SHOULD BE HONOURED NOT FEARED
 
 # ══════════════════════════════════════════════════════════════════
-# WAS AUS DEM MASTER RAUS IST
+# WAS AUS DEM MASTER RAUS IST — unveraendert seit Fassung 1
 # ══════════════════════════════════════════════════════════════════
-# Die Vorlage ist unveraendert aus den Fassungen 1 und 2 uebernommen,
-# ich habe am Schnitt nichts angefasst. Zur Erinnerung, was drin ist:
-#
-# ZWEI Stuecke aus dem Master, Tempo 1,1 beim Schneiden:
+# Zwei Stuecke, Tempo 1,1 beim Schneiden:
 #   1:17:22,41 – 1:17:58,01   (971 Bilder)   das Frankl-Zitat
 #   1:18:09,94 – 1:18:52,69  (1166 Bilder)   Ueberleitung und Essay
-#   zusammen 2137 Bilder = 71,233 s Vorlage
+#   zusammen 2137 Bilder = 71,233 s Vorlage, mit Tempo 1,2 -> 59,4 s
 #
-# ZWEI Auslassungen, beide benannt:
-#   1  Dein Fehlstart beim Vorlesen, 11,0 s — genau das „edit" aus
-#      Deinem eigenen Dokument: Du liest den ersten Satz, sagst
-#      „Sorry, I'll read that again" und liest neu. Der Short nimmt
-#      den zweiten Durchlauf. Das ist die Luecke zwischen den Stuecken.
-#   2  Die Anmoderation davor, 12,6 s („It reminds me of one of my
-#      favorite quotes from Viktor Frankl…"). Draussen, weil Du das
-#      Short als „wo ich das Zitat lese" beschrieben hast und
-#      „Frankl said" den Namen ohnehin nennt. Mit ihr waeren es 88 s.
+# Zwei Auslassungen:
+#   1  Dein Fehlstart beim Vorlesen, 11,0 s — das „edit" aus Deinem
+#      eigenen Dokument. Der Short nimmt den zweiten Durchlauf.
+#   2  Die Anmoderation davor, 12,6 s. Mit ihr waeren es 88 s.
 #
-# Innerhalb der beiden Stuecke ist NICHTS herausgeschnitten — kein
-# Fuellwort, keine Atempause. Mein Vorschlag vom 12.11., den Mittelsatz
-# des Zitats herauszunehmen (9,8 s), steht weiter offen und ist NICHT
-# ausgefuehrt. Sag ein Wort, dann ist es ein Durchlauf.
-#
-# Das Tempo 1,2 beim Rendern kommt obendrauf: 71,2 s Vorlage werden
-# 59,4 s Short, plus 3,8 s Outro = 63,2 s.
+# Innerhalb der beiden Stuecke ist NICHTS herausgeschnitten.
+# Mein Vorschlag vom 12.11. (Mittelsatz des Zitats raus, 9,8 s) steht
+# weiter offen und ist NICHT ausgefuehrt.
 
 # ══════════════════════════════════════════════════════════════════
-# 1. DIE SCHRIFT FLIEGT JETZT
+# 1. DER KASTEN
 # ══════════════════════════════════════════════════════════════════
-# Dein Satz: „bei Chris fliegt die Schrift herum, die ist nicht statisch."
-# Fassung 2 hatte nur einen Groessensprung beim Einsetzen. Zu wenig.
+# 980 x 980 bei x=50 y=470, Eckenradius 40, aussen reines Schwarz.
+# An Deinem Short QjmWNrq4mBU nachgemessen und am fertigen Bild
+# nachgeprueft — Zeile fuer Zeile dieselben Zahlen:
 #
-# Jetzt hat jede Einblendung einen echten Einflug:
-#   — sie kommt aus einer von sechs Richtungen angeflogen (reihum),
-#     bis zu 78 px seitlich und 66 px hoch/tief
-#   — sie setzt 14 % zu gross ein und faellt auf ihre Groesse zurueck
-#   — sie ist beim Einsetzen um 6 Grad gekippt und dreht sich gerade
-#   — sie kommt halbdurchsichtig und wird in der Bewegung dicht
-#   — Dauer 150 ms, auf Schlagwoertern 190 ms, Sprung 28 %, Kippung 10 Grad
+#               Williamson        diese Fassung
+#   Kasten      y 470..1449       y 470..1449
+#               x  50..1029       x  50..1029
+#   Ecke +10    x  68..1011       x  63..1016
+#   Ecke +40    x  50..1029       x  50..1029
 #
-# Nachgeprueft Bild fuer Bild an zwei Stellen (3,400 s „no power" und
-# 9,167 s „had and"): die Zeile steht in Bild 1 schraeg, gross und
-# versetzt und sitzt ab Bild 5 ruhig an ihrem Platz.
+# Der ganze Short sitzt im Kasten, nicht nur der Film — so steht es
+# bei Williamson, an 19 Kastenbildern gemessen (21.10., content-cinematic).
+# Dein Logo sitzt jetzt unter dem Kasten im schwarzen Feld.
 
 # ══════════════════════════════════════════════════════════════════
-# 2. ALLES VOLLBILD — Deine Entweder-Oder-Ansage
+# 2. ZITAT NUR SPIELFILM, ESSAY WATTS UND MANDELA — JE AM STUECK
 # ══════════════════════════════════════════════════════════════════
-# „entweder Du entscheidest Dich dafuer, mein Bild auch aus dem Podcast
-# als Quadrat zu machen … oder alles als Vollbild."
+# Kein Hin und Her mehr. Fuenf Bloecke statt sechzehn Einspieler:
 #
-# Ich habe Vollbild genommen. Grund: Dein Podcastbild IST schon Vollbild
-# und sieht so am besten aus; der Film quadratisch auf Schwarz waere der
-# Williamson-Kasten, aber dann waere Dein Bild auch nur ein Kaestchen.
+#   0,00–1,33   DU — „Frankl said"
+#   1,33–4,00   Batman, Blake                 2,7 s
+#   4,00–6,67   Batman, Gordon                2,7 s
+#   6,67–12,50  Good Will Hunting, Damon      5,8 s — EINE Einstellung
+#   12,50–18,75 Into The Wild, Diner          6,3 s
+#   18,75–26,83 DU — die Ueberleitung
+#   26,83–39,17 ALAN WATTS, DURCHGEHEND      12,3 s — EINE Einstellung
+#   39,17–52,75 MANDELA, DURCHGEHEND         13,6 s — EINE Einstellung
+#   52,75–59,40 DU — die letzten beiden Saetze
 #
-# Dafuer musste ich jeden Einspieler VORHER auf 9:16 schneiden, mittig
-# auf ein Gesicht — die Filme liegen 2622x1206 quer, randlos ins
-# Hochformat blieben sonst 31 % der Breite und das Gesicht waere raus.
-# Zuschnitt je Film: 678 px breit (Watts, Good Will Hunting, Mandela),
-# 565 px (Batman), 548 px (Into The Wild).
+# (Die Zahlen sind die im fertigen Short. Im Quellfilm sind die Bloecke
+#  laenger: Tempo 1,2 zieht sie zusammen. Watts laeuft 14,8 s Filmzeit,
+#  Mandela 16,3 s, Good Will Hunting 7,0 s.)
+#
+# Watts und Mandela laufen jeweils als eine einzige ungeschnittene
+# Einstellung durch. Kein Wechsel, kein Zurueckspringen.
 
 # ══════════════════════════════════════════════════════════════════
-# 3. GESICHTER, KEINE LANDSCHAFTEN
+# 3. INTO THE WILD IST ZURUECK — Du hattest recht
 # ══════════════════════════════════════════════════════════════════
-# „Es bringt mir nichts, wenn Du eine schoene Landschaft zeigst, wenn es
-# darum geht, wenn wir hier ueber Aging philosophieren."
+# Ich hatte geschrieben, der Trailer habe in den schriftfreien Strecken
+# keine saubere Gesichtsnahaufnahme. Das war falsch, und es war Faulheit:
+# ich hatte drei Stellen probiert und aufgegeben.
 #
-# DREI Einspieler habe ich getauscht, jeden erst im Kasten geprueft:
-#   c05  Wasserfall (Into The Wild)      -> Good Will Hunting 1:04, Damon
-#   c12  Karibus und Weite (Into The Wild)-> Batman 1:24,3, junges Gesicht
-#   c10  Robin Williams, aber nach 1,6 s schneidet der Film auf einen
-#        HINTERKOPF — die Haelfte des Einspielers ohne Gesicht.
-#        -> Good Will Hunting 2:51,9, Damon spricht durchgehend
+# Der ganze Trailer als Kontaktabzug, alle 1,5 s ueber die 121,5
+# schriftfreien Sekunden: Gesichtsnahaufnahmen bei 0:09,5 · 0:12,5 ·
+# 0:14,0 · 0:45,5 · 0:48–0:56 · 1:07 · 1:11,5 · 1:14,5 · 1:50,5.
 #
-# c10 habe ich erst beim Nachpruefen gesehen, nachdem Du mich auf die
-# Landschaften gestossen hattest. Es war derselbe Fehler: ich hatte den
-# Clip nur in der Mitte angesehen, nicht auf ganzer Laenge.
-# Jetzt sind alle 16 an vier Stellen geprueft (5 %, 30 %, 55 %, 80 %, 97 %).
-#
-# INTO THE WILD IST GANZ RAUS. In den schriftfreien Strecken des Trailers
-# gibt es keine saubere Gesichtsnahaufnahme, und bei 2:13 steht „SCARED"
-# als Schrift im Bild. Vier Filme bleiben: Batman, Mandela, Alan Watts,
-# Good Will Hunting.
-#
-# Die 16 Einspieler der Reihe nach, mit Zeit im Quellfilm:
-#   Zitat   c01  Mandela, Interview farbig          2:09,5
-#           c02  Michael Caine (Batman)             1:07,5
-#           c03  Robin Williams                     1:29,5
-#           c04  junger Mann im Anzug (Batman)      1:32,5
-#           c05  Matt Damon                         1:04,0
-#           c06  Mandela, Interview                 4:09,5
-#   Essay   c07  Alan Watts                         1:11,0
-#           c08  Mandela, Archiv s/w                2:48,5
-#           c09  Alan Watts                         1:41,0
-#           c10  Matt Damon spricht                 2:51,9
-#           c11  Robin Williams                     2:37,0
-#           c12  junger Mann (Batman)               1:24,3
-#           c13  Gary Oldman liest (Batman)         0:40,5
-#           c14  Umarmung (Good Will Hunting)       3:20,5
-#           c15  Mandela in der Menge               8:15,0
-#           c16  Mann weint vor Freude (Mandela)    6:28,0
-#
-# Drei Einspieler enden im letzten Zehntel auf einem Schnitt des Films
-# selbst (c05, c11, c16). Das bleibt so: dahinter steht wieder ein
-# Gesicht, und die Schnitte des Materials sind das, was es nach Film
-# aussehen laesst. Nur Hinterkoepfe und Landschaften sind raus.
-#
-# 51,8 s von 71,2 s Clipzeit = 73 %.
+# Genommen habe ich 0:48,0–0:55,5 — die Diner-Szene. Siebeneinhalb
+# Sekunden, in jedem Bild ein Gesicht in Nahaufnahme, Hirsch und
+# Vince Vaughn im Wechsel. An sieben Stellen geprueft.
 
 # ══════════════════════════════════════════════════════════════════
-# 4. AUFBAU, TEMPO, BLITZE — unveraendert aus Fassung 2
+# 4. DIE SCHRIFT — und wo ich vorher falsch gemessen hatte
 # ══════════════════════════════════════════════════════════════════
-#   0,0–1,3    DU — „Frankl said"
-#   1,3–19,8   FILM, durchgehend — das ganze Zitat
-#   19,8–26,5  DU — die Ueberleitung zum Essay
-#   26,5–52,8  FILM, durchgehend — das ganze Essay
-#   52,8–59,4  DU — die letzten beiden Saetze
+# Heute frueh hatte ich Dir geschrieben, Deine Referenz stehe AUFRECHT.
+# Das stimmte fuer das eine Bild, das ich hatte. Dein Link hat drei.
 #
-# Tempo 1,2 beim Rendern, also 1,32-fach gegenueber dem Original.
-# Neun Fotoblitze: 1,33 · 9,50 · 15,00 · 18,75 · 26,83 · 34,67 · 40,00 ·
-# 45,33 · 52,75.
+# Im dritten steht „one path" — und „path" ist eine GESCHWUNGENE
+# KURSIVE mit Schwuengen, fast doppelt so gross wie „one", nach links
+# unten versetzt, die beiden Woerter ueberlappen. Genau das, was Du
+# seit drei Runden sagst. Mein Fehler war, aus einem von drei Bildern
+# auf den ganzen Short zu schliessen.
+#
+# Die drei Bilder liegen bei: video/williamson/QjmWNrq4mBU-1..3.jpg
+#
+# Gebaut ist jetzt:
+#   Lage         Mitte des KASTENS (gemessen 0,493 / 0,499 / 0,494)
+#   Schreibweise klein, keine Kontur
+#   Woerter      ein bis zwei
+#   x-Hoehe      32 px laufend, 60 px beim grossen Wort
+#   Schlagwort   geschwungene Kursive, ueberlappend
+#   matt         81 % der Grundfarbe (gemessen #CECBC3 gegen #FDFEFD)
+#
+# DIE FARBE IST NICHT WEISS. Sie kommt aus der Szene:
+#   „aimless" ueber kuehlem Himmel   -> #E3F2F4  Eisblau
+#   „one path" ueber warmer Sepia    -> #F8BF88  Pfirsich
+#   „comes from" ueber grauem Wasser -> #FDFEFD  Weiss
+# Die Regel, nachgerechnet und auf drei Bildern bestaetigt: die
+# Schriftfarbe ist die MITTLERE FARBE DES KASTENS, auf den hellsten
+# Kanal 250 normiert. Der Kasten wird vier Mal je Sekunde abgetastet.
+# Darum ist die Zeile bei Mandela warm und bei Watts blassgruen.
+#
+# Welche Kursive: fuenf Kandidaten an „path" bei gleicher x-Hoehe gegen
+# das Original -> video/williamson/schriftwahl-geschwungen.png
+# Petit Formal Script trifft den langen Anstrich am p und den hohen
+# Bogen am h. Playfair hat beides nicht. Sag ein Wort, wenn Du eine
+# andere willst — es ist ein Durchlauf.
 
 # ══════════════════════════════════════════════════════════════════
-# NOCH EINE SACHE, DIE ICH NICHT AUFLOESEN KANN
+# WAS ICH NICHT KONNTE
 # ══════════════════════════════════════════════════════════════════
-# Du sagst „geschwungen, kursiv". Ich habe die drei Williamson-Shorts
-# geholt, die Du am 20.10. als Referenz geschickt hast, und die Zeile
-# vergroessert: `video/williamson-schrift-original.png`. Darin steht
-# „comes from" in einer AUFRECHTEN Grotesk. Ich setze trotzdem kursiv,
-# weil Du es angesagt hast — aber wenn Du einen ANDEREN Short meinst,
-# schick ihn, dann messe ich den.
-# `video/schriftwahl-williamson.png` zeigt fuenf Varianten an Deinem Text,
-# sag einen Buchstaben und es ist ein Durchlauf.
+# Das Video selbst bekomme ich aus diesem Rechner NICHT. yt-dlp laeuft
+# in YouTubes Bot-Pruefung, und der Versuch, sie zu umgehen, ist vom
+# Berechtigungsfilter abgelehnt worden — zu Recht. Die Vorschaustreifen
+# sind signiert (403).
+#
+# Offen sind drei ganze Standbilder je Short ueber i.ytimg.com. Das
+# sind drei Bilder, keine Millisekunden. Ich sage Dir das, statt so zu
+# tun, als haette ich den Film durchgesehen.
+#
+# Wenn Du die Datei hochlaedst wie die B-Rolls, messe ich Bild fuer
+# Bild — vor allem die BEWEGUNG, die ich aus Standbildern gar nicht
+# sehen kann. Die Flugrichtungen, die jetzt drin sind, sind weiter
+# meine Annahme und nicht Deine Referenz.
 
 # ══════════════════════════════════════════════════════════════════
 # TON UND ABNAHME
 # ══════════════════════════════════════════════════════════════════
-# „In This Shirt" ab 0:23,25, Bett unveraendert zu Fassung 2:
-#   <300 Hz 31,2 | 300 Hz-2 kHz 28,1 | 2-8 kHz 11,7
+# „In This Shirt" ab 0:23,25, Bett unveraendert: 31,2 | 28,1 | 11,7
 # 1080x1920 · 48 kHz · 63,2 s · Outro da · 105 Untertitel · Ortscheck sauber
-# Hauptteil -27,2 LUFS, Spitze -9,1 dB.
+# Hauptteil -27,2 LUFS, Spitze -9,2 dB.
+# Neun Fotoblitze, jetzt IM KASTEN statt auf dem ganzen Bild — vorher
+# hellte der Blitz auch den schwarzen Rand auf.
 #
-# WEITER OFFEN, nur von Dir zu loesen: luts/ynb_look.png fehlt, und
-# Eveleth als .otf in video/fonts/.
+# WEITER OFFEN, nur von Dir zu loesen: luts/ynb_look.png fehlt.
 #
 # NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.

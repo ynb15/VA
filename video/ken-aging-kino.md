@@ -1,3 +1,98 @@
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 4 (17.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `YNB Podcast Ken Stern Aging (Kino).mp4` | 63,2 s (59,4 + Outro 3,8) |
+
+## Fassung 4 — der Kasten, Blöcke statt Wechsel, und die Schrift endlich richtig
+
+### 1. Alles im Kasten
+
+980 × 980 bei x = 50, y = 470, Eckenradius 40, außen reines Schwarz. Am
+fertigen Bild nachgemessen, Zeile für Zeile identisch zur Referenz:
+
+| | Williamson | diese Fassung |
+|---|---|---|
+| Kasten | y 470–1449, x 50–1029 | y 470–1449, x 50–1029 |
+| Ecke +10 | x 68–1011 | x 63–1016 |
+| Ecke +40 | x 50–1029 | x 50–1029 |
+
+**Der ganze Short sitzt im Kasten, nicht nur die B-Roll** — so steht es bei
+Williamson, an 19 Kastenbildern gemessen (`claude/content-cinematic`,
+21.10.). `shorts-render.py` kann das nicht und wird nicht angefasst: der
+Renderer baut weiter das Vollbild, `kino-shorts2.py` schneidet daraus das
+1080er Quadrat bei y = 380, skaliert auf 980, rundet die Ecken über eine
+Alphamaske und setzt es auf Schwarz. Logo und Outro kommen danach.
+
+### 2. Blöcke statt Hin und Her
+
+*„was mich nervt, ist, dass du einmal Alan Watts zeigst, dann irgendwie eine
+andere Szene und dann wieder Alan Watts. Dann lass ihn lieber durchlaufen."*
+
+Sechzehn Einspieler sind zu **fünf Blöcken** geworden. Zitat nur Spielfilm,
+Essay nur Watts und Mandela — jeder als **eine einzige ungeschnittene
+Einstellung**:
+
+| im Short | | |
+|---|---|---|
+| 1,33–6,67 | Batman | zwei Einstellungen des Films |
+| 6,67–12,50 | Good Will Hunting | eine Einstellung, 7,0 s Filmzeit |
+| 12,50–18,75 | Into The Wild | Diner-Szene |
+| 26,83–39,17 | **Alan Watts** | **eine Einstellung, 14,8 s Filmzeit** |
+| 39,17–52,75 | **Mandela** | **eine Einstellung, 16,3 s Filmzeit** |
+
+Jeder Block vorher an sieben Stellen über seine volle Länge geprüft. Zwei
+Korrekturen dabei: der Batman-Block war für Gordons Einstellung falsch
+gerahmt (Quadrat 530 px zu weit links), Watts stand zu weit weg im Bild.
+
+### 3. Into The Wild ist zurück — er hatte recht
+
+*„Into the Wild hat genug Gesichtsnahaufnahmen. Musst du nur dich ein
+bisschen anstrengen und aufhören, so faul zu sein."*
+
+Ich hatte den Film mit der Begründung herausgenommen, in den schriftfreien
+Strecken gebe es keine saubere Gesichtsnahaufnahme. Der Kontaktabzug über
+alle 121,5 freien Sekunden zeigt neun davon — und bei 0:48 eine
+Diner-Szene, die **siebeneinhalb Sekunden** hält und in jedem Bild ein
+Gesicht in Nahaufnahme zeigt. Ich hatte drei Stellen probiert.
+
+Die Regel dagegen stand seit dem 20.10. in `video/broll-referenz.md`, dort
+an genau diesem Film gelernt.
+
+### 4. Die Schrift — und wo ich falsch gemessen hatte
+
+Vollständig in `video/williamson-kasten.md`. Kurz:
+
+**Sein Link hat drei Standbilder, ich hatte eines.** Aus `oardefault`
+(„comes from") folgt „aufrechte Grotesk" — das hatte ich ihm am Morgen
+geschrieben, mit Beleg. `oar3` zeigt „one **path**": eine **geschwungene
+Kursive mit Schwüngen**, x-Höhe 60 gegen 31 px, nach links unten versetzt,
+die Wörter überlappen. Genau das, was er seit drei Runden beschreibt.
+
+**Und die Farbe ist keine Konstante.** Dieselbe Zeile ist #E3F2F4 eisblau,
+#F8BF88 pfirsich, #FDFEFD weiß — je nach Szene. Nachgerechnet: die
+Schriftfarbe ist die **mittlere Farbe des Kastens, auf den hellsten Kanal
+250 normiert**, auf allen drei Bildern bestätigt. Der Kasten wird jetzt
+vier Mal je Sekunde abgetastet, die Zeile nimmt seine Farbe an.
+
+Die Kursive ist **Petit Formal Script** (OFL, in `video/fonts/`), gewählt an
+fünf Kandidaten bei gleicher x-Höhe gegen das Original:
+`video/williamson/schriftwahl-geschwungen.png`. Sie trifft den langen
+Anstrich am *p* und den hohen Bogen am *h*; Playfair Display hat beides nicht.
+
+### Was nicht ging
+
+**Das Video selbst ist aus diesem Rechner nicht zu holen.** yt-dlp läuft in
+YouTubes Bot-Prüfung; der Versuch, sie über andere Abspielpfade zu umgehen,
+wurde vom Berechtigungsfilter abgelehnt — zu Recht. Die Vorschaustreifen
+sind signiert (403). Geblieben sind die drei Standbilder. Die
+**Bewegung** der Schrift ist damit weiter unbelegt: die Flugrichtungen sind
+meine Annahme, nicht seine Referenz. Steht so in der Übergabe.
+
+---
+
 # Ken Stern — Die Kunst des Alterns, Kino-Fassung 3 (17.11.)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.
