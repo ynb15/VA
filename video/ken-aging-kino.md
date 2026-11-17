@@ -1,3 +1,69 @@
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 6 (17.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `YNB Podcast Ken Stern Aging (Kino).mp4` | 63,2 s (59,4 + Outro 3,8) |
+
+## Fassung 6 — vier Punkte
+
+### 1. Die Schrift stand auf seiner Brille
+
+Die Zeile saß auf der Kastenmitte, weil sie bei Williamson dort sitzt
+(0,493 / 0,499 / 0,494). Nachgemessen an vier **seiner eigenen**
+Einstellungen: sein Gesicht liegt im Kasten bei x 0,35–0,85 und
+y 0,05–0,60 — die Kastenmitte ist bei ihm das Auge.
+
+Williamsons Proben sind Spielfilmszenen; dort ist die Mitte frei. Die
+Messung war richtig, die Übertragung nicht.
+
+| | Fassung 5 | Fassung 6 |
+|---|---|---|
+| Lage im Kasten | x 0,50 / y 0,50 | **x 0,24 / y 0,70** |
+| Satz | mittig | **linksbündig (`\an4`)** |
+| Wanderung | ±150 / ±125 px | **±48 / ±62 px** |
+| linke Kante | 88–460 px | **88–198 px** |
+
+Alle 105 Einblendungen einzeln auf schwarzem Grund gerendert und
+nachgemessen: keine berührt sein Gesicht, keine verlässt den Kasten.
+
+Neu ist außerdem ein **Breitenmesser**: vor dem Setzen wird die Zeile mit
+PIL in der umgerechneten Größe gemessen und der Anker so weit nach links
+gerückt, dass sie in den Kasten passt. Ein langes Schlagwort in der
+Kursiven ist schnell 600 px breit.
+
+### 2. Der Einflug — zwei Ursachen, nicht eine
+
+Seine Ansage war „weniger chaotisch", ohne Präzisierung. Im Bild waren es
+zwei Dinge:
+
+* der Einflug kam aus **sechs Richtungen reihum** und kippte dabei um bis
+  zu 10 Grad → jetzt **eine Richtung, von unten, keine Drehung**, Versatz
+  26 px statt 46
+* **mittiger Satz** verschiebt bei jedem längeren Wort die ganze Zeile →
+  linksbündig bleibt die Kante stehen
+
+Der zweite Punkt war der größere und stand nicht in seiner Ansage.
+
+### 3. Das Essay startet mit Mandela
+
+| im Short | | |
+|---|---|---|
+| 26,83–31,67 | Mandela bei den Leuten, **in Farbe** | 5:51,0, 5,8 s ungeschnitten |
+| 31,67–45,75 | Mandela in der Menge, die Faust | 8:10,0, 16,9 s ungeschnitten |
+| 45,75–52,75 | Alan Watts | 1:02,0 |
+
+Watts steht jetzt am Schluss des Essays, auf „to grow older is not to
+fade — more rooted, more radiant, more whole", und läuft einmal durch.
+
+### 4. Das Schwarzweiß ist raus
+
+Das Archivmaterial des jungen Mandela ist ersetzt. Der neue Einstieg bei
+5:51 ist in Farbe, sein Gesicht durchgehend, 5,8 s ohne Schnitt.
+
+---
+
 # Ken Stern — Die Kunst des Alterns, Kino-Fassung 5 (17.11.)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.

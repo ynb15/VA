@@ -6,6 +6,50 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Die gemessene Lage war richtig und trotzdem falsch — sie lag auf seiner Brille (17.11.)
+
+*„die Schrift geht teilweise halt in mein Gesicht oder vor allem in mein
+Auge … wir haben halt mehr Platz links unten im Quadrat."*
+
+Die Zeile stand auf der Kastenmitte, weil sie bei Williamson dort steht
+(0,493 / 0,499 / 0,494, drei Proben). Nachgemessen an **vier seiner eigenen
+Einstellungen**: sein Gesicht sitzt im Kasten bei **x 0,35–0,85 und
+y 0,05–0,60**. Die Kastenmitte ist bei ihm die Brille.
+
+Williamsons Referenzbilder sind Spielfilmszenen — dort ist die Mitte frei.
+**Eine Lage, die an fremdem Material gemessen wurde, gilt nicht für ein
+Bild mit anderer Komposition.** Die Messung war richtig, die Übertragung
+war es nicht.
+
+Jetzt x 0,24 / y 0,70, linksbündig. Alle 105 Einblendungen einzeln
+nachgemessen.
+
+**Regel: eine Stilgröße aus fremdem Material wird gegen das eigene Bild
+geprüft, bevor sie übernommen wird.** Ein Kontaktabzug der eigenen
+Einstellungen mit Drittel-Raster kostet eine Minute.
+
+→ betrifft: `video/kino-shorts2.py`, jede Übertragung einer Referenzmessung
+
+## Linksbündig ist ruhiger als mittig — ohne dass man die Bewegung wegnimmt (17.11.)
+
+*„vielleicht ein bisschen weniger chaotisch. Ich weiß nicht, wie ich es
+präzisieren sollte."*
+
+Zwei Ursachen, nicht eine:
+
+1. **Der Einflug** kam aus sechs Richtungen reihum und drehte sich dabei um
+   bis zu 10 Grad. Jetzt: eine Richtung, von unten, keine Drehung.
+2. **Mittiger Satz** verschiebt die ganze Zeile, sobald ein Wort länger ist.
+   Bei zwei Wörtern je Einblendung springt die linke Kante damit bei jeder
+   Einblendung. Linksbündig an einer festen Kante bleibt sie stehen —
+   die Zeile wandert, ohne zu springen.
+
+Der zweite Punkt war der größere, und er stand nicht in seiner Ansage.
+**Wenn jemand „zu chaotisch" sagt und es nicht präzisieren kann, ist meist
+mehr als eine Ursache im Bild.**
+
+→ betrifft: `video/kino-shorts2.py`
+
 ## Einen Ausschnitt zweimal halbiert — und es fiel erst im fertigen Bild auf (17.11.)
 
 Beim Prüfen der Quadrate hatte ich die Mitte `cx` angegeben, das Werkzeug

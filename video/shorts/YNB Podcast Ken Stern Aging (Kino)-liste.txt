@@ -1,5 +1,5 @@
-# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 5 (63,2 s · 59,4 s + Outro 3,8 s)
-# Into The Wild oeffnet · Alfred am Grab · Silber · die Schrift wandert
+# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 6 (63,2 s · 59,4 s + Outro 3,8 s)
+# Schrift links unten · ruhiger Einflug · Essay startet mit Mandela · kein Schwarzweiss
 #
 # Zeiten sind die im FERTIGEN Short.
 #
@@ -72,20 +72,22 @@
 # Die Umarmung sitzt auf „having been is a kind of being".
 
 # ══════════════════════════════════════════════════════════════════
-# 4. WATTS KUERZER, MANDELA EPISCHER
+# 4. DAS ESSAY STARTET MIT MANDELA — und das Schwarzweiss ist raus
 # ══════════════════════════════════════════════════════════════════
-# „die Alan Watts-Szene, die geht viel zu lange. Und auch Mandela … jetzt
-#  hast du einfach nur die Szene, wo er da im Anzug sitzt, die ist halt
-#  ziemlich langweilig."
+# „wenn ich das Essay vorlese, wuerde ich nicht mit Alan Watts starten,
+#  sondern eben mit Nelson Mandela. Und auch das graue Bild, das
+#  Schwarz-Weiss, der schwarz-weisse Content von Mandela um einen
+#  anderen nutzen."
 #
-#   26,83–33,33  ALAN WATTS      6,5 s statt 12,3 s — fast halbiert
-#   33,33–39,17  junger Mandela, Archiv schwarzweiss          (2:44,5)
-#   39,17–52,75  Mandela in der Menge, die Faust, das Winken  (8:10,0)
+#   26,83–31,67  MANDELA, in Farbe, bei den Leuten              (5:51,0)
+#   31,67–45,75  MANDELA in der Menge, die Faust, das Winken    (8:10,0)
+#   45,75–52,75  ALAN WATTS                                     (1:02,0)
 #
-# Die Interviewszene im Anzug ist raus. Die neue Mandela-Strecke laeuft
-# 16,3 s Filmzeit UNGESCHNITTEN: er geht durch eine riesige Menge, hebt
-# die Faust, winkt. Davor der junge Mandela im Archivmaterial — damit
-# steht der Bogen jung/alt genau auf „to grow older is not to fade".
+# Das Archivmaterial in Schwarzweiss ist ganz raus. Der neue Einstieg
+# bei 5:51 laeuft 5,8 s ungeschnitten, in Farbe, sein Gesicht durchgehend.
+# Watts steht jetzt am Schluss des Essays, auf „to grow older is not to
+# fade — more rooted, more radiant, more whole". Er laeuft einmal durch,
+# kein Zurueckspringen.
 #
 # Der ganze Aufbau:
 #   0,00–1,33    DU — „Frankl said"
@@ -93,39 +95,52 @@
 #   5,71–11,58   BATMAN — Alfred am Grab
 #   11,58–18,75  GOOD WILL HUNTING — Damon, die Umarmung
 #   18,75–26,83  DU — die Ueberleitung
-#   26,83–33,33  ALAN WATTS
-#   33,33–52,75  MANDELA — jung, dann die Menge
+#   26,83–45,75  MANDELA — bei den Leuten, dann die Menge
+#   45,75–52,75  ALAN WATTS
 #   52,75–59,40  DU — die letzten beiden Saetze
 
 # ══════════════════════════════════════════════════════════════════
-# 5. DIE SCHRIFT — Silber, mehr Kursive, und sie wandert
+# 5. DIE SCHRIFT STEHT JETZT LINKS UNTEN IM QUADRAT
 # ══════════════════════════════════════════════════════════════════
-# SILBER. Gemessen am fertigen Bild: RGB 237,239,241 — kein warmer Stich
-# mehr. Die Szenenfarbe mischt noch mit 26 % mit, damit die Zeile nicht
-# tot wirkt, aber Silber ist jetzt die Grundfarbe.
+# „die Schrift geht teilweise halt in mein Gesicht oder vor allem in mein
+#  Auge … wir haben halt mehr Platz links unten im Quadrat."
 #
-# ACHTUNG, das ist eine Abweichung von der Messung: bei Williamson IST
-# die Zeile die Farbe der Szene (eisblau, pfirsich, weiss). Deine Ansage
-# schlaegt die Messung, aber ich sage Dir, dass sie es tut.
+# Nachgemessen an vier Deiner eigenen Einstellungen: Dein Gesicht sitzt
+# im Kasten bei x 0,35–0,85 und y 0,05–0,60. Die Zeile stand vorher bei
+# x 0,50 / y 0,50 — also mitten auf der Brille. Stimmt.
 #
-# MEHR KURSIVE. 32 Schlagwoerter statt 9 — ungefaehr jede dritte
-# Einblendung traegt jetzt das grosse geschwungene Wort:
-#   Frankl · experienced · power · earth · thoughts · suffered · lost ·
-#   past · being · surest · aging · surrender · journey · become ·
-#   light · glow · insight · empathy · resilience · youth · perspective ·
-#   ambition · confidence · older · fade · rooted · radiant · whole ·
-#   privilege · triumph · honoured · feared
+# Jetzt steht sie LINKSBUENDIG an einer festen linken Kante:
+#   Lage im Kasten   x 0,24   y 0,70   (vorher 0,50 / 0,50)
+#   linke Kante      88 bis 198 px     (Kasten faengt bei 50 an)
+#   rechte Kante     nie weiter als 767 (Kasten endet bei 1030)
 #
-# DIE SCHRIFT WANDERT. „bitte auch die Position der Schrift variieren …
-# dadurch, dass du jetzt immer noch zentral beibehaeltst, float das
-# Ganze nicht mehr."
-# Jede Einblendung bekommt ihren eigenen Platz: bis 150 px seitlich und
-# 125 px hoch oder tief um die Kastenmitte. Die Schrittweite ist der
-# goldene Schnitt — dadurch landen zwei aufeinanderfolgende Zeilen weit
-# auseinander statt nebeneinander zu kriechen.
+# Alle 105 Einblendungen einzeln nachgemessen. Keine beruehrt Dein
+# Gesicht, keine verlaesst den Kasten.
 #
-# Alle 105 Einblendungen einzeln nachgemessen: KEINE verlaesst den
-# Kasten, mit mindestens 20 px Luft zum Rand.
+# Linksbuendig ist zugleich die Antwort auf „weniger chaotisch": wenn
+# jede Zeile an derselben Kante anfaengt, wandert sie, ohne zu springen.
+# Mittig gesetzt verschiebt schon ein laengeres Wort die ganze Zeile.
+# Die Wanderung selbst ist von 150/125 px auf 48/62 px heruntergesetzt.
+#
+# Falls eine Zeile mit dem grossen Schlagwort zu breit wuerde, rueckt sie
+# automatisch so weit nach links, dass sie passt — die Breite wird vorher
+# gemessen, nicht geschaetzt.
+
+# ══════════════════════════════════════════════════════════════════
+# 6. DER EINFLUG IST RUHIGER
+# ══════════════════════════════════════════════════════════════════
+# „so wie die Schrift einfliegt, das ist mir noch ein bisschen zu …
+#  vielleicht ein bisschen weniger chaotisch."
+#
+#                          Fassung 5        Fassung 6
+#   Richtungen             sechs, reihum    EINE, von unten
+#   Drehung                +/- 5 bis 10 Grad  KEINE
+#   Versatz                bis 46 px        26 px (Schlagwort 34)
+#   Groessensprung         1,12 / 1,22      unveraendert
+#
+# Die Zeile steigt jetzt nur noch auf und wird dicht. Kein Kippen, kein
+# Wechsel der Richtung. Wenn das noch zu viel ist, sag eine Zahl — 26 px
+# auf 14 px ist ein Durchlauf.
 
 # ══════════════════════════════════════════════════════════════════
 # TON UND ABNAHME

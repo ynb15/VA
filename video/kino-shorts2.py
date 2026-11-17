@@ -58,8 +58,22 @@ SZENE_ANTEIL = 0.26
 # dafuer, dass zwei aufeinanderfolgende Einblendungen weit auseinander
 # landen statt zu benachbarten Plaetzen zu kriechen.
 GOLDEN = 0.6180339887498949
-WANDER_X, WANDER_Y = 150, 125
-WANDER_X_STARK = 112          # das grosse Wort ist breiter, also enger gefuehrt
+
+# Seine Ansage vom 17.11. spaet: *„die Schrift moechte ich halt auch ein
+# bisschen verschieben, weil die teilweise halt in mein Gesicht geht oder
+# vor allem in mein Auge … wir haben halt mehr Platz links unten im
+# Quadrat."* Nachgeprueft an vier seiner eigenen Einstellungen: sein
+# Gesicht sitzt im Kasten bei x 0,35–0,85 und y 0,05–0,60. Frei ist die
+# linke Spalte und das untere Drittel.
+#
+# Darum steht die Zeile jetzt LINKSBUENDIG (`\an4`) an einer festen
+# linken Kante statt mittig. Das ist zugleich die Antwort auf
+# *„ein bisschen weniger chaotisch"*: wenn jede Zeile an derselben Kante
+# beginnt, wandert sie, ohne zu springen — mittig gesetzt verschiebt
+# schon ein laengeres Wort die ganze Zeile.
+ANKER_X, ANKER_Y = 150, 1150          # Kasten 50..1030 / 470..1450
+WANDER_X, WANDER_Y = 48, 62           # vorher 150/125 — deutlich ruhiger
+RAND_IM_KASTEN = 30
 
 
 # ---------------------------------------------------------------- Blitze
@@ -112,7 +126,47 @@ def ass_farbe(rgb):
 
 # ---------------------------------------------------------------- Satz
 
-RICHTUNGEN = [(-46, 20), (46, 20), (0, 38), (-34, -27), (34, -27), (0, -36)]
+# ASS-Punkte sind NICHT die Punkte der Schriftdatei (siehe unten). Um eine
+# Zeilenbreite vorher zu kennen, wird sie mit PIL in der umgerechneten
+# Groesse gemessen. Die Faktoren stehen aus der Messung an der gebrannten
+# ASS: Inter 69 ASS-Punkte ergaben 32 px x-Hoehe, PIL braucht dafuer 58,2;
+# beim Skript 125 -> 60 px, PIL 100.
+PIL_JE_ASS = {"inter": 0.844, "skript": 0.800}
+_SCHRIFTCACHE = {}
+
+
+def textbreite(text, ass_groesse, art="inter", schrift=None):
+    """Breite einer Zeile in Bildpunkten, gemessen statt geschaetzt."""
+    from PIL import ImageFont
+    import subprocess
+    if not text:
+        return 0
+    gr = max(8, int(round(ass_groesse * PIL_JE_ASS[art])))
+    schl = (art, gr, schrift)
+    if schl not in _SCHRIFTCACHE:
+        if art == "skript":
+            pfad = str(FONT_SKRIPT)
+        else:
+            pfad = subprocess.run(["fc-match", "-f", "%{file}", schrift or "Inter Black"],
+                                  capture_output=True, text=True).stdout.strip()
+        _SCHRIFTCACHE[schl] = ImageFont.truetype(pfad, gr)
+    f = _SCHRIFTCACHE[schl]
+    a, _, b, _ = f.getbbox(text)
+    return b - a
+
+
+FONT_SKRIPT = Path("/usr/share/fonts/truetype/ynb/PetitFormalScript-Regular.ttf")
+if not FONT_SKRIPT.exists():
+    FONT_SKRIPT = HIER / "fonts" / "PetitFormalScript-Regular.ttf"
+
+
+# Der Einflug kam vorher aus sechs Richtungen reihum und drehte sich dabei.
+# Seine Ansage: *„so wie die Schrift einfliegt, das ist mir noch ein
+# bisschen zu … vielleicht ein bisschen weniger chaotisch."* Jetzt steigt
+# jede Zeile aus derselben Richtung auf — von unten, minimal aus dem
+# Zeilenlauf heraus. Keine Drehung mehr.
+EINFLUG_Y, EINFLUG_Y_STARK = 26, 34
+EINFLUG_X = 14
 
 
 def ass_kino(cues, pfad, tempo=1.0, schlagworte=(), toene=None, takt=4,
@@ -166,17 +220,17 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         return toene[i]
 
     def anim(i, stark, x, y, ms, f):
-        """Einflug: Versatz, Drehung und Groesse laufen zusammen auf null.
+        """Einflug: die Zeile steigt von unten auf und wird dicht.
 
         `\\move` ersetzt `\\pos` — beide zugleich ignoriert libass
         stillschweigend, und die Zeile stuende dann fest.
         """
-        dx, dy = RICHTUNGEN[i % len(RICHTUNGEN)]
-        rz = (5 if i % 2 == 0 else -5) * (1.8 if stark else 1.0)
+        dy = EINFLUG_Y_STARK if stark else EINFLUG_Y
+        dx = -EINFLUG_X if stark else -EINFLUG_X // 2
         return (f"\\move({x + dx},{y + dy},{x},{y},0,{ms})"
-                f"\\fscx{100 * f:.0f}\\fscy{100 * f:.0f}\\frz{rz:.1f}"
-                f"\\alpha&HB0&"
-                f"\\t(0,{ms},\\fscx100\\fscy100\\frz0\\alpha&H00&)")
+                f"\\fscx{100 * f:.0f}\\fscy{100 * f:.0f}"
+                f"\\alpha&HB4&"
+                f"\\t(0,{ms},\\fscx100\\fscy100\\alpha&H00&)")
 
     def zeit(x):
         return SR.ass_time(x / tempo)
@@ -195,10 +249,29 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         k_index = next((i for i, w in enumerate(roh) if w.upper() in sw), None)
         # Zwei unabhaengige Folgen, damit die Zeile nicht auf einer Diagonalen
         # wandert: x laeuft mit dem goldenen Schnitt, y mit seinem Quadrat.
-        wx = WANDER_X_STARK if k_index is not None else WANDER_X
-        px = mitte_x + int(round((((nr + 1) * GOLDEN) % 1.0 - 0.5) * 2 * wx))
-        py = mitte_y + int(round((((nr + 1) * GOLDEN * GOLDEN) % 1.0 - 0.5)
+        px = ANKER_X + int(round((((nr + 1) * GOLDEN) % 1.0 - 0.5) * 2 * WANDER_X))
+        py = ANKER_Y + int(round((((nr + 1) * GOLDEN * GOLDEN) % 1.0 - 0.5)
                                  * 2 * WANDER_Y))
+        # Die breiteste Zeile dieser Einblendung bestimmt, wie weit links
+        # sie stehen muss, damit sie im Kasten bleibt. Gemessen, nicht
+        # geschaetzt — ein langes Schlagwort in der Kursiven ist schnell
+        # 600 px breit.
+        if k_index is None:
+            breit = textbreite(" ".join(roh), groesse, "inter", schrift)
+            links = px
+        else:
+            b_gross = textbreite(roh[k_index], groesse_stark, "skript")
+            b_rest = textbreite(" ".join(t for i, t in enumerate(roh)
+                                         if i != k_index), groesse, "inter", schrift)
+            breit = max(b_gross, b_rest + 34)
+            links = px
+        rechts_max = KASTEN_X + KASTEN_SEITE - RAND_IM_KASTEN
+        if links + breit > rechts_max:
+            px = rechts_max - breit
+        px = max(KASTEN_X + RAND_IM_KASTEN, px)
+        hoch_min = KASTEN_OBEN + RAND_IM_KASTEN + groesse_stark // 2
+        hoch_max = KASTEN_OBEN + KASTEN_SEITE - RAND_IM_KASTEN - groesse_stark // 2
+        py = max(hoch_min, min(hoch_max, py))
         rgb = ton(c["start"] / tempo)
         voll = ass_farbe(rgb)
         matt = ass_farbe([v * MATT_FAKTOR for v in rgb])
@@ -216,23 +289,23 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         def ausgeben(von, bis, hell, mit_anim):
             v, b = zeit(von), zeit(bis)
             if k_index is None:
-                kopf = ("{\\an5" + (anim(nr, False, px, py, zeit_pop, pop)
+                kopf = ("{\\an4" + (anim(nr, False, px, py, zeit_pop, pop)
                                     if mit_anim else f"\\pos({px},{py})") + "}")
                 lines.append(f"Dialogue: 0,{v},{b},Cap,,0,0,0,,{kopf}{satz(hell)}")
                 return
             # Schlagwort-Fall: zwei Zeilen, wie „one path" im Original
             rest = " ".join(t for i, t in enumerate(roh) if i != k_index)
-            ox, oy = px + 52, py - 46
-            gx, gy = px - 32, py + 38
+            ox, oy = px + 34, py - 50
+            gx, gy = px, py + 34
             if rest:
                 hell_rest = (hell is not None and hell != k_index)
                 f_rest = voll if hell_rest else matt
                 s_rest = schrift if hell_rest else schrift_matt
-                kopf = ("{\\an5" + (anim(nr, False, ox, oy, zeit_pop, pop)
+                kopf = ("{\\an4" + (anim(nr, False, ox, oy, zeit_pop, pop)
                                     if mit_anim else f"\\pos({ox},{oy})") + "}")
                 lines.append(f"Dialogue: 0,{v},{b},Cap,,0,0,0,,"
                              f"{kopf}{{\\fn{s_rest}\\c{f_rest}}}{rest}")
-            kopf = ("{\\an5" + (anim(nr, True, gx, gy, zeit_stark, pop_stark)
+            kopf = ("{\\an4" + (anim(nr, True, gx, gy, zeit_stark, pop_stark)
                                 if mit_anim else f"\\pos({gx},{gy})") + "}")
             lines.append(f"Dialogue: 1,{v},{b},Gross,,0,0,0,,"
                          f"{kopf}{{\\c{voll}}}{roh[k_index]}")
