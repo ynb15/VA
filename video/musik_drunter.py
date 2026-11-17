@@ -3,6 +3,7 @@
 
     python3 musik_drunter.py <video.mp4> <musik.mp3> <stamm> <ab-sekunde> <dB-unter> ...
                              [--blende-ein SEKUNDEN] [--blende-aus SEKUNDEN]
+                             [--outro SEKUNDEN]
 
 Je angegebenem Abstand entsteht eine Fassung. Der Pegel wird nicht geraten,
 sondern aus Stimme und Bett gerechnet, genauso wie in `shorts-render.py`:
@@ -62,6 +63,20 @@ def main():
         i = argv.index("--blende-aus")
         blende_aus = float(argv[i + 1])
         del argv[i:i + 2]
+    # Seine Ansage vom 17.11.2026, ausdruecklich als Wiederholung: "dann sage
+    # ich dir immer wieder, dass die Musik ausfaden soll ins Outro hinein."
+    # Dafuer reicht es NICHT, das Bett ueber die ganze Datei zu legen: der
+    # Sidechain-Kompressor drueckt es auch unter dem Outro weg, weil dessen
+    # eigener Ton (Mittel -23,5 dB, Spitze -7 dB) ueber der Schwelle liegt.
+    # Gemessen am 17.11.: mit Bett war das Outro 0,1 dB lauter als ohne - das
+    # Bett war also faktisch nicht da. Mit --outro SEKUNDEN wird der
+    # Steuerton fuer die letzten N Sekunden stummgeschaltet; das Bett steht
+    # dort frei und faellt ueber die Ausblende ins Outro hinein.
+    outro_s = 0.0
+    if "--outro" in argv:
+        i = argv.index("--outro")
+        outro_s = float(argv[i + 1])
+        del argv[i:i + 2]
     video, musik, stamm = argv[1], argv[2], argv[3]
     ab_s = float(argv[4])          # wo im Song das Bett anfaengt
     abstaende = [float(x) for x in argv[5:]]
@@ -92,8 +107,15 @@ def main():
                 f"afade=t=in:st=0:d={blende_ein},atrim=0:{laenge:.2f},"
                 f"afade=t=out:st={max(laenge - blende_aus, 0):.2f}:"
                 f"d={min(blende_aus, laenge):.2f}[bett]")
-        graph = ("[0:a]asplit=2[st1][st2];" + bett +
-                 f";[bett][st2]sidechaincompress=threshold=0.04:ratio={ratio}:"
+        if outro_s > 0:
+            schluessel = (f"[st2]volume=0:enable='gte(t,{max(laenge - outro_s, 0):.2f})'"
+                          "[key];")
+            quelle_key = "[key]"
+        else:
+            schluessel = ""
+            quelle_key = "[st2]"
+        graph = ("[0:a]asplit=2[st1][st2];" + schluessel + bett +
+                 f";[bett]{quelle_key}sidechaincompress=threshold=0.04:ratio={ratio}:"
                  "attack=15:release=250[duck];"
                  "[st1][duck]amix=inputs=2:normalize=0:dropout_transition=0[amix]")
         subprocess.run([FF, "-nostdin", "-y", "-hide_banner", "-loglevel", "error",

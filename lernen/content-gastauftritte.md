@@ -1447,3 +1447,44 @@ der Normalfall: nur dort ist der Kasten breit genug, um eine Ecke zu
 erwischen.
 
 → betrifft: content-*, alle Short-Agenten
+
+## 17.11. — die Musik soll ins Outro hinein ausfaden, und warum sie das bisher nicht tat
+
+**Seine Ansage, ausdrücklich als Wiederholung:** *„dann sage ich dir immer
+wieder, dass die Musik ausfaden soll ins Outro hinein."*
+
+Es reichte nicht, das Bett über die ganze Datei zu legen. `musik_drunter.py`
+drückt das Bett per `sidechaincompress` unter dem Ton des Videos weg — und
+das Outro hat **eigenen Ton** (Mittel −23,8 dB, Spitze −7,0 dB). Der liegt
+über der Schwelle, also wurde das Bett genau dort weggedrückt, wo es stehen
+bleiben soll. Gemessen am fertigen Short: mit Bett war der Outro-Bereich
+**0,1 dB** lauter als ohne — das Bett war faktisch nicht da.
+
+**Behoben im Werkzeug, nicht im Einzelfall:** `musik_drunter.py` hat jetzt
+`--outro SEKUNDEN`. Der Schalter schaltet den *Steuerton* des Kompressors
+für die letzten N Sekunden stumm; das Bett steht dort frei und fällt über
+die Ausblende ins Outro. Gemessen: Bett im Outro −40,2 dB ohne Schalter,
+−37,5 dB mit.
+
+**Die Reihenfolge dreht sich damit um.** Bisher galt: rendern → Bett drunter
+→ Outro anhängen. Für „ins Outro hinein" muss es heißen: rendern → **Outro
+anhängen** → Bett über die ganze Datei, mit `--outro 4.21` und
+`--blende-aus 4.21`.
+
+**Zweiter Befund am selben Short: die Einsatzstelle.** Sein Urteil zu
+In This Shirt ab 23,25: *„irgendwie harmoniert das nicht."* Nachgemessen
+sitzt 23,25 sauber auf einem Taktanfang (Raster 2,8–3,1 s), ist also nicht
+„verrutscht". Der Unterschied ist die Dichte: im Hochband liegt der Song
+dort bei −26 dB, im vollen Teil ab Sekunde 58 bei −17 dB. Unter einem harten
+Einstieg wie „The three lines every man wants to hear" trägt der dünne
+Aufbau nicht. **Die 23,25 sind damit kein Automatismus mehr**, sondern die
+Stelle für Shorts, die leise anfangen; fängt ein Short mit einer Ansage an,
+gehört das Bett in den vollen Teil (gemessene Einsätze: 59,68 und 110,62).
+
+**Drittens, eigener Fehler:** das Short lief auf Tempo 1,15 — dem
+Vorgabewert des Renderers. Seine Rückfrage: *„Was ist das für eine
+Geschwindigkeit?"* Alle fünf übrigen Sutcliffe-Shorts laufen auf **1,2**.
+Das Tempo gehört zur Reihe, nicht zum einzelnen Short, und ist vor jedem
+Lauf aus den Auftragsdateien derselben Folge zu übernehmen.
+
+→ betrifft: content-*, alle Short-Agenten

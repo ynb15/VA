@@ -1,7 +1,7 @@
 {
  "name": "Sutcliffe-Folge - die drei Zeilen, die jeder Mann hoeren will",
- "datei": "YNB Podcast David Sutcliffe Lines.mp4 (ohne Musik) / ... (In This Shirt).mp4",
- "stand": "2026-11-17 - zweite Fassung: Anfang weggeschnitten, Einstieg auf 'the three lines every man wants to hear', In This Shirt drunter",
+ "datei": "YNB Podcast David Sutcliffe Lines.mp4 (ohne Musik), dazu zwei Musikfassungen 'ab 0-59' und 'ab 1-50'",
+ "stand": "2026-11-17 - dritte Fassung: Tempo 1,2, Musik faedet ins Outro hinein, zwei Einsatzstellen zur Wahl",
  "wer_spricht": "Er erzaehlt die Stelle (von Chris Williamson uebernommen), Sutcliffe hakt nach und ordnet sie ein.",
  "quelle": {
   "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
@@ -42,7 +42,7 @@
  },
  "bild": {
   "ausgabe": "2160x3840",
-  "tempo": 1.15,
+  "tempo": 1.2,
   "look": "preset",
   "worte_je_einblendung": 3,
   "tiefer_px": 120,
@@ -55,7 +55,8 @@
    "totale_auf_sutcliffe": "1296:0:608:1080"
   },
   "warum_die_totalen_verschoben_sind": "Der Master traegt das YNB-Logo selbst eingebrannt, links unten bei x 10-190, y 900-1060. Der Planer schlug fuer die erste Totale 8:0:608:1080 vor - darin steht das eingebrannte Logo mit im Bild, und der Renderer legt sein eigenes darunter: zwei Logos. Der Kasten wurde auf 42:0:495:880 enger gezogen, er endet oberhalb des Logos. Die zweite Totale schlug der Planer bei 0:0:608:1080 vor, also auf IHN - dort spricht aber Sutcliffe; verschoben auf 1296:0:608:1080, was zugleich vom Logo weg ist.",
-  "pruefung": "Kontaktbogen ueber 8 Bilder: ein Logo je Bild, Sprecher jeweils im Kasten."
+  "pruefung": "Kontaktbogen ueber 8 Bilder: ein Logo je Bild, Sprecher jeweils im Kasten.",
+  "warum_tempo": "Zweite Fassung lief auf 1,15 - dem Vorgabewert des Renderers. Seine Rueckfrage: 'Was ist das fuer eine Geschwindigkeit?'. Alle fuenf uebrigen Sutcliffe-Shorts laufen auf 1,2; das ist der Wert der Reihe."
  },
  "text": {
   "einblendungen": 84,
@@ -68,17 +69,18 @@
   ]
  },
  "ton": {
-  "musik": "The Irrepressibles - In This Shirt, ab 0:23,25, 3 dB unter der Stimme (Stimme -32,3 dB, Bett -11,6 dB -> Bett auf -23,7 dB). Song 335,02 s gegen 67,57 s, keine Schleife.",
-  "ausblende_s": 4.0,
-  "warum_4_s": "Der Vorgabewert, aus seiner Beobachtung vom 24.10. Die 1,5 s vom Paddock-Short waren eine Einzelentscheidung fuer jenen Short, kein neuer Standard.",
-  "pegel_mix": "Spitze -4,9 dBFS, Mittel -30,4 dB. Kein Sample am Anschlag.",
-  "sperrvorgeschichte": "In This Shirt hat am 22.10. eine weltweite Sperre ausgeloest (Video 5nl--61ZBBI, Rechteinhaber FUGA). Darum liegt die Fassung ohne Musik daneben und traegt den Grundnamen.",
-  "outro": "video/outro_anhaengen.py --kopie, 4,21 s"
+  "musik": "The Irrepressibles - In This Shirt, 3 dB unter der Stimme (Stimme -31,6 dB). Zwei Einsatzstellen zur Wahl.",
+  "einsatz_a": "0:59,68 - gemessener Einsatz (+16,5 dB im Hochband in 60 ms). Bett -11,0 dB -> Pegel -23,6 dB.",
+  "einsatz_b": "1:50,62 - gemessener Einsatz (+16,8 dB). Bett -10,7 dB -> Pegel -23,9 dB.",
+  "warum_nicht_mehr_23_25": "Seine Rueckmeldung: 'irgendwie harmoniert das nicht'. 23,25 ist seine eigene Vorgabe vom 22.10. und sitzt sauber auf einem Taktanfang (Raster 2,8-3,1 s), aber dort baut der Song erst auf: das Hochband liegt bei -26 dB gegen -17 dB im vollen Teil ab Sekunde 58. Unter einem harten Einstieg wie 'The three lines' klingt das duenn. Die beiden neuen Stellen liegen im vollen Teil.",
+  "ausblende_s": 4.21,
+  "ins_outro_hinein": "Seine Ansage: 'dann sage ich dir immer wieder, dass die Musik ausfaden soll ins Outro hinein.' Dafuer wird das Bett jetzt erst NACH dem Outro-Anhaengen unter die ganze Datei gelegt, und musik_drunter.py hat einen neuen Schalter --outro SEKUNDEN: er schaltet den Steuerton des Sidechain-Kompressors fuer die letzten N Sekunden stumm. Ohne ihn drueckt der eigene Ton des Outros (Mittel -23,8 dB, Spitze -7,0 dB) das Bett weg - gemessen 2,7 dB Unterschied: Bett im Outro -40,2 dB ohne Schalter, -37,5 dB mit.",
+  "sperrvorgeschichte": "In This Shirt hat am 22.10. eine weltweite Sperre ausgeloest (Video 5nl--61ZBBI, Rechteinhaber FUGA). Die Fassung ohne Musik traegt darum den Grundnamen.",
+  "outro": "video/outro_anhaengen.py --kopie, 4,21 s - diesmal VOR der Musik."
  },
  "laenge": {
-  "ohne_outro_s": 67.57,
-  "mit_outro_s": 71.81,
-  "hinweis": "Deutlich unter 90 s."
+  "ohne_outro_s": 64.77,
+  "mit_outro_s": 68.98
  },
  "ortscheck": "video/ortscheck.py sauber - kein Hinweis auf den Wohnort.",
  "offen": [
