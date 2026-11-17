@@ -1424,3 +1424,26 @@ nicht um Anstand, sondern um ein Wort, an dem YouTube die Reichweite
 beschneidet.
 
 → betrifft: content-*, alle Short-Agenten, youtube-manager, thumbnails
+
+## 17.11. — unsere eigenen Master tragen das Logo schon eingebrannt
+
+Beim Short „die drei Zeilen" aus der Sutcliffe-Folge schlug
+`bildausschnitt.py` für die erste Totale den Kasten `8:0:608:1080` vor. Darin
+steht das **YNB-Logo, das im Master selbst eingebrannt ist**, bei
+x 10–190, y 900–1060 — und der Renderer legt sein eigenes Logo noch darunter.
+Zwei Logos im selben Bild, genau der Fehler, den er am 10.11. beim
+Garden-Short beanstandet hat (*„da sind plötzlich zwei Logos drin"*), nur
+diesmal mit unserem eigenen.
+
+Behoben, indem der Kasten auf `42:0:495:880` enger gezogen wurde: er endet
+oberhalb des Logos. Die zweite Totale wanderte ohnehin auf `1296:…`, weil
+dort Sutcliffe spricht — und ist damit auch vom Logo weg.
+
+**Die Regel ist also größer als „fremde Wasserzeichen":** vor jedem Short
+einmal die untere linke und rechte Ecke des Masters ansehen. Ein Logo im
+Quellbild ist kein Grund, den Ausschnitt zu behalten — bei 1080p Quelle und
+608 px Kasten ist genug Rand da, um daran vorbeizuschneiden. Totalen sind
+der Normalfall: nur dort ist der Kasten breit genug, um eine Ecke zu
+erwischen.
+
+→ betrifft: content-*, alle Short-Agenten

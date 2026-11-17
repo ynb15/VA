@@ -1,0 +1,78 @@
+{
+ "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/dreizeilen/clip.mp4",
+ "groesse": [
+  1920,
+  1080
+ ],
+ "bezugsbewegung": 2.748,
+ "einstellungen": [
+  {
+   "layout": "einzel",
+   "kasten": "656:0:608:1080",
+   "lippe": 1267,
+   "start": 0.0,
+   "ende": 19.2,
+   "tot": false,
+   "bewegung_x": 0.5,
+   "mitte": 0.68,
+   "masse": 2.75
+  },
+  {
+   "layout": "einzel",
+   "kasten": "42:0:495:880",
+   "lippe": 1267,
+   "start": 19.2,
+   "ende": 26.2,
+   "tot": false,
+   "bewegung_x": 0.163,
+   "mitte": 0.29,
+   "masse": 2.02,
+   "hinweis": "Totale auf ihn, enger - sonst steht das eingebrannte YNB-Logo des Masters mit im Bild"
+  },
+  {
+   "layout": "einzel",
+   "kasten": "644:0:608:1080",
+   "lippe": 1267,
+   "start": 26.2,
+   "ende": 45.7,
+   "tot": false,
+   "bewegung_x": 0.494,
+   "mitte": 0.65,
+   "masse": 2.46
+  },
+  {
+   "layout": "einzel",
+   "kasten": "680:0:608:1080",
+   "lippe": 1267,
+   "start": 45.7,
+   "ende": 67.33333333333333,
+   "tot": false,
+   "bewegung_x": 0.512,
+   "mitte": 0.75,
+   "masse": 3.56
+  },
+  {
+   "layout": "einzel",
+   "kasten": "1296:0:608:1080",
+   "lippe": 1267,
+   "start": 67.33333333333333,
+   "ende": 72.2,
+   "tot": false,
+   "bewegung_x": 0.131,
+   "mitte": 0.23,
+   "masse": 2.74,
+   "hinweis": "Totale auf Sutcliffe - er spricht hier; der alte Kasten lag links auf YNB und ueber dem Logo"
+  },
+  {
+   "layout": "einzel",
+   "kasten": "644:0:608:1080",
+   "lippe": 1267,
+   "start": 72.2,
+   "ende": 88.33,
+   "tot": false,
+   "bewegung_x": 0.494,
+   "mitte": 0.69,
+   "masse": 5.67
+  }
+ ]
+}
