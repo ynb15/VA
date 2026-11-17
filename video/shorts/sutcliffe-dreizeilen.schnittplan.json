@@ -1,18 +1,8 @@
 {
  "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/dreizeilen/fenster.mp4",
- "bild": [
-  [
-   18.4,
-   106.6
-  ]
- ],
- "ton": [
-  [
-   18.4,
-   106.6
-  ]
- ],
+ "bild": [[28.9333, 106.6]],
+ "ton": [[28.9333, 106.6]],
  "tonblende_s": 0.02,
  "bilder_je_sekunde": 30,
- "hinweis": "Ein Stueck, innen nichts heraus. Anfang bei 'inspired by ... Chris Williamson' (Fenster 18,4, in der Luecke 18,02-18,74 nach 'And I wonder'), Ende nach 'humans are not capable of that' (106,6, in der Luecke 106,16-107,02 vor 'How did you get to this conclusion'). 2646 Bilder. Fenster beginnt bei Master 6404,99."
+ "hinweis": "Zweite Fassung, seine Ansage vom 17.11.: 'Anfang rauscutten und dann mit The Three Lines every man starten'. Anfang jetzt bei Fenster 28,9333 (= alter Clip 10,5333), in der gemessenen Stille 10,51-10,66 zwischen 'are' und 'the'; 0,13 s Vorlauf vor dem ersten Wort. Ende unveraendert 106,6. 2882 Bilder."
 }

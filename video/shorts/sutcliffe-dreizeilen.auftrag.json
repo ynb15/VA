@@ -1,13 +1,16 @@
 {
  "name": "Sutcliffe-Folge - die drei Zeilen, die jeder Mann hoeren will",
- "datei": "YNB Podcast David Sutcliffe Lines.mp4",
- "stand": "2026-11-17 - erste Fassung, ohne Musik (nicht bestellt)",
+ "datei": "YNB Podcast David Sutcliffe Lines.mp4 (ohne Musik) / ... (In This Shirt).mp4",
+ "stand": "2026-11-17 - zweite Fassung: Anfang weggeschnitten, Einstieg auf 'the three lines every man wants to hear', In This Shirt drunter",
  "wer_spricht": "Er erzaehlt die Stelle (von Chris Williamson uebernommen), Sutcliffe hakt nach und ordnet sie ein.",
  "quelle": {
   "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
   "master_titel": "YNB Podcast: David Sutcliffe",
   "hinweis_papierkorb": "Die Datei liegt im Drive-Papierkorb, beantwortet aber weiter Bereichsanfragen (HTTP 206). video/drive_fernzugriff.py kommt damit zurecht.",
-  "fenster_master_s": [6404.99, 6545.0],
+  "fenster_master_s": [
+   6404.99,
+   6545.0
+  ],
   "hinweis": "In einem Stueck geholt, 368 MB ueber 46 Bereichsanfragen. 1920x1080, 30 fps."
  },
  "fundstelle": {
@@ -15,15 +18,27 @@
   "wie_gefunden": "Erst im veroeffentlichten Transkript, dann mit einer Probe bei Master 6350-6420 lokal nachgemessen."
  },
  "schnitt": {
-  "von_bis_fenster_s": [18.4, 106.6],
-  "von_bis_master_s": [6423.39, 6511.59],
-  "dauer_roh_s": 88.2,
-  "bilder": 2646,
+  "von_bis_fenster_s": [
+   28.9333,
+   106.6
+  ],
+  "von_bis_master_s": [
+   6433.92,
+   6511.59
+  ],
+  "dauer_roh_s": 77.6667,
+  "bilder": 2330,
   "werkzeug": "video/schnitt_bauen.py (ein Stueck, Bild und Ton gleich)",
-  "warum_anfang": "Die Luecke nach 'And I wonder' liegt bei 18,02-18,74; geschnitten bei 18,40, also mitten in der gemessenen Stille und 0,3 s vor 'inspired by'.",
+  "warum_anfang": "Seine Ansage: 'Anfang rauscutten und dann mit The Three Lines every man starten'. Weg sind 'inspired by Chris Williamson, he once shared something that I just can't stop thinking about, which are'. Zwischen 'are' und 'the' liegt eine gemessene Luecke von 10,31 bis 10,66 (alte Clipzeit), der Boden bei -80 dB; geschnitten bei 10,5333, also 0,13 s vor dem ersten Laut von 'the'. Whisper hatte 'the' auf 10,06 gesetzt - 0,6 s zu frueh; ein Schnitt auf den Whisper-Wert haette das 'are' davor stehen lassen.",
   "warum_ende": "Nach 'humans are not capable of that' liegt die Luecke bei 106,16-107,02, vor Sutcliffes 'How did you get to this conclusion'; geschnitten bei 106,60.",
-  "kamerawechsel_clipzeit_s": [19.2, 26.2, 45.7, 67.3333, 72.2],
-  "wie_gemessen": "video/schnittgrenzen.py - 4 der 5 Grenzen lagen um ein Bild daneben und wurden verschoben. Unterschiede 40,6 bis 43,1 gegen Ruhepegel 0,96 bis 1,55, also echte Kamerawechsel."
+  "kamerawechsel_clipzeit_s": [
+   8.6667,
+   15.6667,
+   35.1667,
+   56.8,
+   61.6667
+  ],
+  "wie_gemessen": "video/schnittgrenzen.py am NEUEN Clip nachgemessen: alle fuenf Grenzen sitzen auf dem Bild genau (0 Bilder Versatz), Unterschiede 40,6 bis 43,1 gegen Ruhepegel 1,03 bis 1,55."
  },
  "bild": {
   "ausgabe": "2160x3840",
@@ -43,8 +58,8 @@
   "pruefung": "Kontaktbogen ueber 8 Bilder: ein Logo je Bild, Sprecher jeweils im Kasten."
  },
  "text": {
-  "einblendungen": 94,
-  "quelle": "whisper medium ueber den fertigen Schnitt",
+  "einblendungen": 84,
+  "quelle": "whisper medium ueber den ersten Schnitt, danach um 10,5333 s verschoben und die ersten zehn Einblendungen verworfen. Die erste Einblendung steht ab 0,0.",
   "handkorrekturen": [
    "'Mr. X,' ganz aus der Einblendung genommen - zwei Durchlaeufe widersprechen sich ('Mr. X' / 'Mr. Axe') und keiner ist sicher. Lieber kein Wort als ein falscher Name.",
    "'sad best' -> 'said best'",
@@ -53,18 +68,21 @@
   ]
  },
  "ton": {
-  "musik": "keine - nicht bestellt",
+  "musik": "The Irrepressibles - In This Shirt, ab 0:23,25, 3 dB unter der Stimme (Stimme -32,3 dB, Bett -11,6 dB -> Bett auf -23,7 dB). Song 335,02 s gegen 67,57 s, keine Schleife.",
+  "ausblende_s": 4.0,
+  "warum_4_s": "Der Vorgabewert, aus seiner Beobachtung vom 24.10. Die 1,5 s vom Paddock-Short waren eine Einzelentscheidung fuer jenen Short, kein neuer Standard.",
+  "pegel_mix": "Spitze -4,9 dBFS, Mittel -30,4 dB. Kein Sample am Anschlag.",
+  "sperrvorgeschichte": "In This Shirt hat am 22.10. eine weltweite Sperre ausgeloest (Video 5nl--61ZBBI, Rechteinhaber FUGA). Darum liegt die Fassung ohne Musik daneben und traegt den Grundnamen.",
   "outro": "video/outro_anhaengen.py --kopie, 4,21 s"
  },
  "laenge": {
-  "ohne_outro_s": 76.73,
-  "mit_outro_s": 80.98,
-  "hinweis": "Unter 90 s, He's Alive waere also erlaubt, falls er Musik will."
+  "ohne_outro_s": 67.57,
+  "mit_outro_s": 71.81,
+  "hinweis": "Deutlich unter 90 s."
  },
  "ortscheck": "video/ortscheck.py sauber - kein Hinweis auf den Wohnort.",
  "offen": [
   "Dateiname: Stichwort 'Lines' oder 'Enough'?",
-  "Musik gewuenscht? Bisher keine drunter.",
-  "'Mr. X' fehlt in der Einblendung - soll der Name rein, und wie schreibt er sich?"
+  "'Mr. X' fehlt weiter in der Einblendung - soll der Name rein, und wie schreibt er sich?"
  ]
 }
