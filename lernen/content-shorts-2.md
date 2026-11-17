@@ -6,6 +6,66 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Einen Ausschnitt zweimal halbiert — und es fiel erst im fertigen Bild auf (17.11.)
+
+Beim Prüfen der Quadrate hatte ich die Mitte `cx` angegeben, das Werkzeug
+rechnete `x = cx - Seite/2`. Beim Schneiden habe ich dann **die bereits
+gerechnete Linke** nochmal um `Seite/2` nach links geschoben. Fünf von zehn
+Einspielern saßen **487 Pixel zu weit links**.
+
+Bei vier davon fiel es nicht auf, weil es Landschaften waren und der falsche
+Ausschnitt auch nach Bild aussah. Beim fünften stand statt *Alfred am Grab*
+die **leere Wiese daneben** — der Mann, den er ausdrücklich bestellt hatte,
+war nicht im Bild.
+
+**Regel: ein Ausschnitt wird in derselben Größe geprüft und geschnitten.**
+Prüfbild und Schnittbefehl nehmen dasselbe Feld — entweder beide die Mitte
+oder beide die Kante, nie das eine und dann das andere.
+
+Gefunden nur, weil ich den fertigen Kontaktabzug angesehen habe statt nach
+dem Rendern zu liefern.
+
+→ betrifft: jede B-Roll-Auswahl, `video/kino-shorts2.py`
+
+## Seine Ansage schlägt die Messung — aber die Abweichung wird benannt (17.11.)
+
+*„die Schrift möchte ich auch eher so ein Silber haben, so ein bisschen so
+ein was Edleres verkörpern."*
+
+Am selben Tag hatte ich belegt, dass die Schriftfarbe bei Williamson **die
+mittlere Farbe der Szene** ist — eisblau, pfirsich, weiß. Silber ist damit
+nachweislich **nicht** das, was die Referenz macht.
+
+Das ist kein Grund zu widersprechen. Es ist sein Kanal. Gebaut ist Silber
+(RGB 237,239,241 am Ergebnis gemessen), die Szenenfarbe mischt noch mit
+26 % mit. **Und in der Übergabe steht in zwei Sätzen, dass das von der
+Referenz abweicht und warum.**
+
+**Regel: wo seine Ansage der Messung widerspricht, gilt seine Ansage — und
+die Abweichung steht in der Übergabe, nicht nur im Kopf.**
+
+→ betrifft: jede Stilentscheidung gegen eine gemessene Referenz
+
+## „Zentral" ist der Grund, warum es nicht floatet (17.11.)
+
+*„dadurch, dass du jetzt immer noch zentral beibehältst, float das Ganze
+nicht mehr. Das ist irgendwie so strikt."*
+
+Die Zeile stand auf der Kastenmitte, weil ich sie dort **gemessen** hatte
+(0,493 / 0,499 / 0,494 in drei Proben). Drei Proben aus drei verschiedenen
+Shorts sagen aber nur, wo die Zeile im Mittel steht — nicht, dass sie
+immer dort steht.
+
+Jetzt wandert sie: bis 150 px seitlich, 125 px hoch oder tief, Schrittweite
+goldener Schnitt, damit aufeinanderfolgende Zeilen weit auseinander landen
+statt nebeneinander zu kriechen. **Alle 105 Einblendungen einzeln auf
+schwarzem Grund gerendert und nachgemessen: keine verlässt den Kasten**,
+mit mindestens 20 px Luft.
+
+**Regel: ein Mittelwert aus drei Proben ist eine Lage, keine Vorschrift.**
+
+→ betrifft: `video/kino-shorts2.py`, jede Stilmessung aus wenigen Proben
+
 ## Ein Short hat drei Standbilder, nicht eins — und sie widersprechen sich (17.11.)
 
 *„dann guckst du den wirklich Millisekunde für Millisekunde für Millisekunde

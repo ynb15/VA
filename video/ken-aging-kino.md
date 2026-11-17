@@ -1,3 +1,62 @@
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 5 (17.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `YNB Podcast Ken Stern Aging (Kino).mp4` | 63,2 s (59,4 + Outro 3,8) |
+
+## Fassung 5 — seine sieben Punkte
+
+| | | |
+|---|---|---|
+| 1 | Batman-Einstieg raus | Into The Wild öffnet: Silhouette, Wasserfall, sein Gesicht, **die Pferde** |
+| 2 | Alfred am Grab | Michael Caine, 5,9 s im Short, **eine Einstellung** |
+| 3 | Good Will Hunting | Damon 5,5 s plus die Umarmung 1,7 s |
+| 4 | mehr Kursive | 32 Schlagwörter statt 9 |
+| 5 | Position variieren | die Zeile wandert, ±150 / ±125 px |
+| 6 | Silber | RGB 237,239,241 gemessen |
+| 7 | Watts kürzer, Mandela epischer | 6,5 s statt 12,3 s · junger Mandela + die Menge |
+
+### Die Pferde sind 27 Bilder lang
+
+Der Trailer schneidet die Sequenz in Stücke: Schnitte bei 141,21 · 141,41 ·
+141,79 · 141,88. Die Einstellung, in der er mit den Pferden ins Gegenlicht
+läuft, ist **0,65 Sekunden**. Mehr gibt das Material nicht her. Sie liegt
+jetzt genau auf „no power on earth can take from you".
+
+### Mandela: zwei Strecken statt der Interviewszene
+
+Die Interviewszene im Anzug (4:06) ist raus. Stattdessen der Bogen:
+
+* **2:44,5–2:51,5** junger Mandela im Archivmaterial, schwarzweiß
+* **8:10,0–8:26,3** die Menge, die Faust, das Winken — **16,3 s
+  ungeschnitten**, nachgeprüft
+
+Damit steht jung/alt genau auf „to grow older is not to fade — it is to
+become more rooted, more radiant, more whole".
+
+Zu meiden war 3:26–3:50: dort trägt die Rivonia-Rede eingebrannte
+Untertitel.
+
+### Silber steht gegen die eigene Messung
+
+Am Morgen hatte ich belegt: bei Williamson **ist** die Schriftfarbe die
+mittlere Farbe der Szene. Silber ist nachweislich nicht das, was die
+Referenz macht. Seine Ansage gilt trotzdem — Silber ist Grundfarbe, die
+Szene mischt mit 26 % mit, und die Abweichung steht in der Übergabe.
+
+### Ein Fehler, der fast durchgegangen wäre
+
+Fünf von zehn Einspielern waren **487 px zu weit links** geschnitten: beim
+Prüfen hatte ich die Mitte angegeben, beim Schneiden die schon gerechnete
+Kante nochmal halbiert. Bei vier Landschaften fiel das nicht auf. Beim
+fünften stand statt **Alfred am Grab** die leere Wiese daneben.
+
+Gefunden nur am Kontaktabzug des fertigen Bildes.
+
+---
+
 # Ken Stern — Die Kunst des Alterns, Kino-Fassung 4 (17.11.)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.

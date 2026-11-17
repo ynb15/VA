@@ -46,6 +46,21 @@ KASTEN_SEITE, KASTEN_X, KASTEN_OBEN, KASTEN_RADIUS = 980, 50, 470, 40
 XH_INTER, XH_SKRIPT = 0.550, 0.600          # x-Hoehe je Punkt, gemessen
 MATT_FAKTOR = 0.81
 
+# Seine Ansage vom 17.11. abends: die Schrift soll SILBER sein, "was
+# Edleres". Das schlaegt die Messung: bei Williamson ist die Zeile die
+# mittlere Farbe der Szene. Silber bleibt Grundfarbe, die Szene mischt nur
+# noch mit — sonst stuende die Zeile ueber warmem Material wieder pfirsich.
+SILBER = (231, 238, 246)
+SZENE_ANTEIL = 0.26
+
+# Die Zeile wandert. Seine Ansage: die Position soll variieren, zentral
+# "floatet das Ganze nicht". Der goldene Schnitt als Schrittweite sorgt
+# dafuer, dass zwei aufeinanderfolgende Einblendungen weit auseinander
+# landen statt zu benachbarten Plaetzen zu kriechen.
+GOLDEN = 0.6180339887498949
+WANDER_X, WANDER_Y = 150, 125
+WANDER_X_STARK = 112          # das grosse Wort ist breiter, also enger gefuehrt
+
 
 # ---------------------------------------------------------------- Blitze
 
@@ -83,8 +98,10 @@ def kasten_toene(bild, y_off, seite=1080, takt=4):
         b = roh[i * 192:(i + 1) * 192]
         r = sum(b[0::3]) / 64; g = sum(b[1::3]) / 64; bl = sum(b[2::3]) / 64
         m = max(r, g, bl, 1)
-        toene.append((min(255, r * 250 / m), min(255, g * 250 / m),
-                      min(255, bl * 250 / m)))
+        szene = (r * 250 / m, g * 250 / m, bl * 250 / m)
+        toene.append(tuple(
+            min(255, SILBER[i] * (1 - SZENE_ANTEIL) + szene[i] * SZENE_ANTEIL)
+            for i in range(3)))
     return toene, takt
 
 
@@ -176,6 +193,12 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                 continue
             woerter = []
         k_index = next((i for i, w in enumerate(roh) if w.upper() in sw), None)
+        # Zwei unabhaengige Folgen, damit die Zeile nicht auf einer Diagonalen
+        # wandert: x laeuft mit dem goldenen Schnitt, y mit seinem Quadrat.
+        wx = WANDER_X_STARK if k_index is not None else WANDER_X
+        px = mitte_x + int(round((((nr + 1) * GOLDEN) % 1.0 - 0.5) * 2 * wx))
+        py = mitte_y + int(round((((nr + 1) * GOLDEN * GOLDEN) % 1.0 - 0.5)
+                                 * 2 * WANDER_Y))
         rgb = ton(c["start"] / tempo)
         voll = ass_farbe(rgb)
         matt = ass_farbe([v * MATT_FAKTOR for v in rgb])
@@ -193,14 +216,14 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         def ausgeben(von, bis, hell, mit_anim):
             v, b = zeit(von), zeit(bis)
             if k_index is None:
-                kopf = ("{\\an5" + (anim(nr, False, mitte_x, mitte_y, zeit_pop, pop)
-                                    if mit_anim else f"\\pos({mitte_x},{mitte_y})") + "}")
+                kopf = ("{\\an5" + (anim(nr, False, px, py, zeit_pop, pop)
+                                    if mit_anim else f"\\pos({px},{py})") + "}")
                 lines.append(f"Dialogue: 0,{v},{b},Cap,,0,0,0,,{kopf}{satz(hell)}")
                 return
             # Schlagwort-Fall: zwei Zeilen, wie „one path" im Original
             rest = " ".join(t for i, t in enumerate(roh) if i != k_index)
-            ox, oy = mitte_x + 52, mitte_y - 46
-            gx, gy = mitte_x - 32, mitte_y + 38
+            ox, oy = px + 52, py - 46
+            gx, gy = px - 32, py + 38
             if rest:
                 hell_rest = (hell is not None and hell != k_index)
                 f_rest = voll if hell_rest else matt
