@@ -1,3 +1,77 @@
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 3 (17.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `YNB Podcast Ken Stern Aging (Kino).mp4` | 63,2 s (59,4 + Outro 3,8) |
+
+## Fassung 3 — seine vier Punkte
+
+### 1. „Bei Chris fliegt die Schrift herum, die ist nicht statisch."
+
+Fassung 2 hatte nur einen Größensprung beim Einsetzen — zu wenig, um
+„fliegen" zu heißen. Jede Einblendung hat jetzt einen echten Einflug:
+
+| | Fassung 2 | Fassung 3 |
+|---|---|---|
+| Versatz | keiner | bis 78 px seitlich, 66 px hoch/tief, 6 Richtungen reihum |
+| Größe | 1,14× → 1,0 | 1,14× → 1,0 (Schlagwort 1,28×) |
+| Drehung | keine | ±6° → 0° (Schlagwort ±10°) |
+| Deckkraft | voll | `\alpha&HA0&` → voll |
+| Dauer | 90 ms | 150 ms, Schlagwort 190 ms |
+
+In libass ist `\move(x0,y0,x1,y1,0,ms)` der Träger. **`\pos` und `\move`
+zusammen werden stillschweigend ignoriert** — die Zeile steht dann
+irgendwo. Deshalb ersetzt `\move` das `\pos` vollständig, die Lippe geht
+als Zielwert hinein.
+
+Nachgeprüft Bild für Bild an 3,400 s („no power") und 9,167 s („had and"):
+Bild 1 schräg, groß, versetzt, halbdurchsichtig — ab Bild 5 ruhig am Platz.
+
+### 2. „Entweder alles Quadrat oder alles Vollbild."
+
+Vollbild. Sein Podcastbild ist schon Vollbild und sieht so am besten aus;
+der Film im Williamson-Kasten hätte sein Bild auch zum Kästchen gemacht.
+
+Dafür wird **jeder Einspieler vorher auf 9:16 geschnitten, mittig auf ein
+Gesicht**, damit `--broll-modus vollbild` nur noch durchreicht. Die Filme
+liegen 1206×2622 mit Drehmatrix, zeigen also 2622×1206 quer — randlos ins
+Hochformat blieben 31 % der Breite, das Gesicht wäre raus.
+Zuschnitt: 678 px (Watts, Good Will Hunting, Mandela), 565 px (Batman).
+
+### 3. „Achte darauf, dass da Gesichter mit drin sind."
+
+Drei Einspieler getauscht, jeder vorher im Kasten geprüft:
+
+| | war | ist |
+|---|---|---|
+| c05 | Wasserfall (Into The Wild) | Good Will Hunting 1:04, Damon |
+| c12 | Karibus und Weite (Into The Wild) | Batman 1:24,3 |
+| c10 | Robin Williams, **ab 1,6 s Hinterkopf** | Good Will Hunting 2:51,9 |
+
+**c10 war mein eigener Fehler, nicht seiner.** Ich hatte den Clip nur in
+der Mitte angesehen. Der Film schneidet nach 1,6 s auf einen Hinterkopf —
+die halbe Strecke ohne Gesicht, genau der Mangel, den er benannt hatte.
+Gefunden erst, als ich nach seiner Ansage alle 16 an fünf Stellen prüfte
+(5 % / 30 % / 55 % / 80 % / 97 %) statt nur in der Mitte.
+
+**Into The Wild ist ganz raus.** In den schriftfreien Strecken des Trailers
+gibt es keine saubere Gesichtsnahaufnahme, und bei 2:13 steht „SCARED" im
+Bild. Vier Filme bleiben.
+
+Drei Einspieler (c05, c11, c16) enden im letzten Zehntel auf einem Schnitt
+des Films selbst. Das bleibt: dahinter steht wieder ein Gesicht, und die
+Schnitte des Materials sind das, was es nach Film aussehen lässt.
+
+### 4. Tempo, Aufbau, Blitze, Ton
+
+Unverändert aus Fassung 2: Tempo 1,2 · neun Blitze · „In This Shirt" ab
+0:23,25 mit Bett 31,2 / 28,1 / 11,7 · −27,2 LUFS · Spitze −9,1 dB ·
+Ortscheck sauber · 105 Untertitel.
+
+---
+
 # Ken Stern — Die Kunst des Alterns, Kino-Fassung 2 (17.11.)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.

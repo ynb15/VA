@@ -6,6 +6,45 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Einen Clip in der Mitte anzusehen prüft ihn nicht (17.11.)
+
+Er hatte beanstandet, dass B-Roll Landschaften statt Gesichter zeigt. Ich
+habe daraufhin zwei Einspieler getauscht — und beim Nachprüfen **einen
+dritten gefunden, den er gar nicht benannt hatte**: c10, Good Will Hunting
+ab 2:01, schneidet nach **1,6 von 3,2 Sekunden** auf einen Hinterkopf. Die
+halbe Strecke ohne Gesicht, derselbe Mangel.
+
+Mein Kontaktabzug hatte jeden Clip bei **50 % der Laufzeit** abgetastet —
+genau dort, wo c10 noch gut aussah. Ein Einspieler von drei Sekunden hält
+oft keine drei Sekunden durch: die Filme schneiden darin weiter.
+
+**Regel: einen Einspieler an mindestens fünf Stellen abtasten
+(5 / 30 / 55 / 80 / 97 %), nie nur in der Mitte.** Der Abzug bei 50 % sagt
+nur, dass eine einzige Stelle in Ordnung ist.
+
+Nebenbefund derselben Prüfung: drei Clips (c05, c11, c16) enden im letzten
+Zehntel auf einem Schnitt des Films. Die bleiben — dahinter steht wieder
+ein Gesicht. Der Unterschied ist **was nach dem Schnitt kommt**, nicht dass
+geschnitten wird.
+
+→ betrifft: alle Shorts mit B-Roll, `video/broll-referenz.md`
+
+## `\pos` und `\move` zusammen werden in libass stillschweigend ignoriert (17.11.)
+
+*„bei Chris fliegt die Schrift herum, die ist nicht statisch."*
+
+Für den Einflug der Schrift braucht es `\move(x0,y0,x1,y1,0,ms)`. Steht in
+derselben Zeile noch das `\pos`, das die Lippe setzt, **verwirft libass
+beides ohne Fehlermeldung** und die Zeile landet an der Vorgabestelle des
+Stils. Kein Hinweis im Log, nichts in der ASS, die Datei ist gültig.
+
+`\move` muss `\pos` **ersetzen**; die Lippe geht als Zielwert `(x1,y1)`
+hinein. Zusammen mit `\frz` (Drehung), `\fscx/\fscy` (Größe) und
+`\alpha`, alle animiert über `\t(0,ms,...)`, ergibt das den Williamson-
+Einflug: sechs Richtungen reihum, 150 ms, auf Schlagwörtern 190 ms.
+
+→ betrifft: `video/kino-shorts2.py`, jede bewegte Schrift in ASS
+
 ## Die Schrift stand ausgemessen im Repo — ich hatte den Abschnitt übersprungen (17.11.)
 
 *„Ich weiß nicht, ob du blind bist oder ignorant, aber die Schrift bei Chris

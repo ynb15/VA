@@ -66,7 +66,7 @@ def blitz_kette(zeiten, hoehe=0.95, abfall=0.055, dauer=0.20):
     # Zeiten WEIT VOR einem Blitz `exp(+1164)`, das ist inf, und inf*0 ist
     # NaN. Ein einziger Blitz am Ende des Shorts faerbt damit alles davor
     # schwarzrot. Gefunden am 16.11. an genau diesem Bild.
-    teile = [f"{hoehe}*exp(-max(0\,t-{t:.4f})/{abfall})"
+    teile = [f"{hoehe}*exp(-max(0" + chr(92) + f",t-{t:.4f})/{abfall})"
              f"*between(t,{t:.4f},{t + dauer:.4f})"
              for t in sorted(zeiten)]
     return "eq=brightness='" + "+".join(teile) + "':eval=frame"
@@ -74,8 +74,8 @@ def blitz_kette(zeiten, hoehe=0.95, abfall=0.055, dauer=0.20):
 
 # ------------------------------------------------------------ bewegte ASS
 
-def ass_kino(cues, pfad, tempo=1.0, schlagworte=(), pop=1.12, pop_stark=1.22,
-             zeit_pop=90, zeit_stark=140, tiefer=0, gross=False,
+def ass_kino(cues, pfad, tempo=1.0, schlagworte=(), pop=1.14, pop_stark=1.28,
+             zeit_pop=150, zeit_stark=190, tiefer=0, gross=False,
              groesse=92, rand=40, schrift="Inter Display Black", kursiv=True,
              kontur=0, schatten=2, matt="&HB4B4B4&", hell_bord=2):
     """Wie `SR.build_ass`, aber die erste Zeile je Einblendung poppt auf.
@@ -117,19 +117,29 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     lines = []
     sw = {s.strip().upper() for s in schlagworte if s.strip()}
 
-    def anim(stark):
-        """Der Kopf, der die Zeile aufpoppen laesst.
+    # Die Einflugrichtungen wechseln reihum. Dass sie wechseln ist der
+    # Punkt — seine Ansage vom 17.11.: „bei Chris fliegt die Schrift
+    # herum, die ist nicht statisch." Eine Einblendung, die immer aus
+    # derselben Ecke kommt, liest sich nach zwei Wiederholungen wieder
+    # als statisch.
+    RICHTUNGEN = [(-78, 34), (78, 34), (0, 66), (-58, -46), (58, -46), (0, -62)]
 
-        Zielwerte sind die der Stilzeile (ScaleX = SCALE_X, ScaleY = 100),
-        NICHT 100/100 — sonst zoege die Animation die Schrift auf eine
-        andere Breite als der Rest des Kanals.
+    def anim(i, stark, x, y):
+        """Einflug: Versatz, Drehung und Groesse laufen zusammen auf null.
+
+        `\\move` ersetzt `\\pos` — beide zugleich ignoriert libass
+        stillschweigend, und die Zeile stuende dann fest.
         """
-        f = pop_stark if stark else pop
+        dx, dy = RICHTUNGEN[i % len(RICHTUNGEN)]
         ms = zeit_stark if stark else zeit_pop
-        return (f"{{\\fscx{100 * f:.0f}\\fscy{100 * f:.0f}"
-                f"\\t(0,{ms},\\fscx100\\fscy100)}}")
+        f = pop_stark if stark else pop
+        rz = (6 if i % 2 == 0 else -6) * (1.6 if stark else 1.0)
+        return (f"{{\\an8\\move({x + dx},{y + dy},{x},{y},0,{ms})"
+                f"\\fscx{100 * f:.0f}\\fscy{100 * f:.0f}\\frz{rz:.1f}"
+                f"\\alpha&HA0&"
+                f"\\t(0,{ms},\\fscx100\\fscy100\\frz0\\alpha&H00&)}}")
 
-    for c in cues:
+    for nr, c in enumerate(cues):
         woerter = [w for w in (c.get("woerter") or [])
                    if w["t"].strip() and w["end"] > c["start"] and w["start"] < c["end"]]
         roh = [SR._anzeige(w["t"], gross) for w in woerter]
@@ -140,8 +150,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             if not roh:
                 continue
         lippe = c.get("lippe")
-        kopf_pos = (f"{{\\an8\\pos({W // 2},{int(lippe) + tiefer})}}"
-                    if lippe is not None else "")
+        px, py = W // 2, (int(lippe) + tiefer) if lippe is not None else H // 2
+        kopf_pos = f"{{\\an8\\pos({px},{py})}}"
         # Vergleich in Grossbuchstaben: seit dem Williamson-Stil steht der
         # Text klein im Bild, die Schlagwortliste kommt aber gross.
         stark = any(w.upper() in sw for w in roh)
@@ -166,7 +176,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         def zeile(von, bis, hell, mit_anim):
             t = 1.0 if c.get("fertigzeit") else tempo
             v, b = SR.ass_time(von / t), SR.ass_time(bis / t)
-            kopf = kopf_pos + (anim(stark) if mit_anim else "")
+            kopf = anim(nr, stark, px, py) if mit_anim else kopf_pos
             lines.append(f"Dialogue: 0,{v},{b},Cap,,0,0,0,,{kopf}{bauen(hell)}")
 
         if not woerter:
