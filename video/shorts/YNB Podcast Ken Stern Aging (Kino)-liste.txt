@@ -1,5 +1,5 @@
-# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 7 (63,2 s · 59,4 s + Outro 3,8 s)
-# Das Grab ist drin · die stehende Mandela-Stelle ist raus · Leserichtung berichtigt
+# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 8 (63,2 s · 59,4 s + Outro 3,8 s)
+# Alan Watts raus · Beerdigung am Schluss · Schrift groesser, mit Kontur und Schatten
 #
 # Zeiten sind die im FERTIGEN Short.
 #
@@ -70,6 +70,59 @@
 #   11,58–17,08  Damon, eine Einstellung                     (2:51,8)
 #   17,08–18,75  die Umarmung                                (3:06,6)
 # Die Umarmung sitzt auf „having been is a kind of being".
+
+# ══════════════════════════════════════════════════════════════════
+# I. ALAN WATTS IST RAUS, DIE BEERDIGUNG STEHT AM SCHLUSS
+# ══════════════════════════════════════════════════════════════════
+# „die Alan Watts-Szene mit der Beerdigungsszene austauschen."
+#
+#   41,08–45,75  das Grab, die Trauernden gehen weg     (1:00,0)
+#   45,75–48,08  Gordon am Mahnmal, nah                 (1:39,0)
+#   48,08–52,75  die Totenwache, der Saal voller Leute  (1:49,6)
+#
+# Damit laeuft die Beerdigung von 41,1 bis 52,8 s durch — knapp zwoelf
+# Sekunden, drei Einstellungen aus derselben Szene, alle ungeschnitten.
+# Sie endet auf „it should be honoured, not feared".
+#
+# Der ganze Aufbau:
+#   0,00–1,33    DU — „Frankl said"
+#   1,33–5,71    INTO THE WILD — Natur, sein Gesicht, die Pferde
+#   5,71–11,58   BATMAN — Alfred, nah
+#   11,58–18,75  GOOD WILL HUNTING — Damon, die Umarmung
+#   18,75–26,83  DU — die Ueberleitung
+#   26,83–41,08  MANDELA — bei den Leuten, dann die Menge
+#   41,08–52,75  DIE BEERDIGUNG — Grab, Gordon, Totenwache
+#   52,75–59,40  DU — die letzten beiden Saetze
+#
+# Nebenbefund: die Stelle bei Watts, die ich Dir als grenzwertig gemeldet
+# hatte (2,8 s bei Bewegung 0,84), ist damit ohnehin weg. Die mittlere
+# Bewegung im ganzen Short ist von 3,13 auf 3,67 gestiegen.
+
+# ══════════════════════════════════════════════════════════════════
+# II. DIE SCHRIFT IST GROESSER UND HAT JETZT EINE KANTE
+# ══════════════════════════════════════════════════════════════════
+# „dadurch, dass ich ein weisses T-Shirt trage, ist die halt nicht
+#  optimal lesbar manchmal."
+#
+#                       Fassung 7      Fassung 8
+#   Groesse, Zeile      69             76      (x-Hoehe 32 -> 35 px)
+#   Groesse, Schlagwort 125            136     (x-Hoehe 60 -> 65 px)
+#   Kontur              KEINE          1,8 px halbdurchsichtig schwarz
+#   Kontur, Schlagwort  KEINE          2,3 px  (Haarlinien, braucht mehr)
+#   Schatten            2,0            3,5
+#
+# Gemessen an vier Bildern mit Deinem weissen T-Shirt hinter der Schrift,
+# Helligkeitsabstand Schrift gegen Umgebung:
+#   24,5 s   78 -> 86
+#   56,0 s   71 -> 93
+#   58,0 s   65 -> 80
+# Am schlechtesten Bild also von 65 auf 80.
+#
+# ACHTUNG, zweite Abweichung von der Messung: Williamson setzt OHNE
+# Kontur, das steht so in video/williamson-kasten.md. Die hier ist
+# halbdurchsichtig und faellt auf dunklem Grund nicht auf — aber sie ist
+# da. Wenn Du sie auf Deinem Bildschirm siehst, sag es, dann gehe ich auf
+# 1,2 px zurueck und mache stattdessen den Schatten staerker.
 
 # ══════════════════════════════════════════════════════════════════
 # A. ALFRED WAR DRIN — was fehlte, war DAS GRAB

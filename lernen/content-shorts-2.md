@@ -6,6 +6,38 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Lesbarkeit ist messbar — und die zweite Abweichung von der Referenz (18.11.)
+
+*„dadurch, dass ich ein weißes T-Shirt trage, ist die halt nicht optimal
+lesbar manchmal."*
+
+Williamson setzt **ohne Kontur**; das steht ausgemessen in
+`video/williamson-kasten.md`. Seine Referenzbilder sind Filmszenen mit
+dunklen Flächen. Der Podcast hat ein **weißes T-Shirt** im unteren Drittel —
+genau dort, wo die Zeile seit Fassung 6 steht.
+
+Gebaut: Schrift 69 → 76 (x-Höhe 32 → 35 px), halbdurchsichtige Kontur
+1,8 px (2,3 px auf der Kursiven, die Haarlinien hat), Schatten 2,0 → 3,5.
+
+Gemessen an vier Bildern mit dem weißen T-Shirt hinter der Schrift,
+Helligkeitsabstand Schrift gegen Umgebung:
+
+| | vorher | nachher |
+|---|---:|---:|
+| 24,5 s | 78 | 86 |
+| 56,0 s | 71 | 93 |
+| 58,0 s | 65 | 80 |
+
+**Das ist die zweite Stelle, an der sein Bild die Referenz schlägt** — nach
+dem Silber. Beide stehen in der Übergabe, mit der Zahl, auf die ich
+zurückgehe, wenn er die Kontur sieht.
+
+**Regel: eine Referenzmessung gilt für das Material, an dem sie gemacht
+wurde.** Williamsons „keine Kontur" ist richtig für Filmbilder und falsch
+für ein weißes T-Shirt.
+
+→ betrifft: `video/kino-shorts2.py`, `video/williamson-kasten.md`
+
 ## Eine Anordnung, die aus EINEM Beispiel abgeleitet ist, trägt nur dessen Fall (17.11.)
 
 *„wo ich sage Frankl said, steht das said über Frankel. Also es liest sich

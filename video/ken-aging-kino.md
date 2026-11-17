@@ -1,3 +1,52 @@
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 8 (18.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `YNB Podcast Ken Stern Aging (Kino).mp4` | 63,2 s (59,4 + Outro 3,8) |
+
+## Fassung 8 — zwei Punkte, einer wartet
+
+### 1. Alan Watts raus, die Beerdigung ans Ende
+
+| im Short | | |
+|---|---|---|
+| 41,08–45,75 | das Grab, die Trauernden gehen weg | 1:00,0 |
+| 45,75–48,08 | Gordon am Mahnmal, nah | 1:39,0 |
+| 48,08–52,75 | die Totenwache, der Saal voller Leute | 1:49,6 |
+
+Zwölf Sekunden Beerdigung am Stück, drei Einstellungen derselben Szene,
+alle ungeschnitten. Sie endet auf „it should be honoured, not feared".
+
+Nebenbefund: die Watts-Stelle, die als grenzwertig gemeldet war (2,8 s bei
+Bewegung 0,84), ist damit weg. Die mittlere Bewegung im Short steigt von
+3,13 auf 3,67.
+
+### 2. Die Schrift trägt jetzt auf Weiß
+
+| | Fassung 7 | Fassung 8 |
+|---|---|---|
+| Größe, Zeile | 69 | **76** (x-Höhe 32 → 35 px) |
+| Größe, Schlagwort | 125 | **136** (x-Höhe 60 → 65 px) |
+| Kontur | keine | **1,8 px halbdurchsichtig** |
+| Kontur, Kursive | keine | **2,3 px** (Haarlinien) |
+| Schatten | 2,0 | **3,5** |
+
+Helligkeitsabstand Schrift gegen Umgebung, gemessen über dem weißen
+T-Shirt: 24,5 s **78 → 86** · 56,0 s **71 → 93** · 58,0 s **65 → 80**.
+
+**Zweite Abweichung von der Referenz.** Williamson setzt ohne Kontur — seine
+Proben sind Filmbilder mit dunklen Flächen. Der Podcast hat ein weißes
+T-Shirt genau dort, wo die Zeile steht. Steht in der Übergabe, mit dem
+Rückweg (1,2 px und mehr Schatten), falls er die Kontur sieht.
+
+### 3. Ram Dass — wartet auf Material
+
+Er schickt morgen Szenen. Eingebaut wird, sobald sie da sind.
+
+---
+
 # Ken Stern — Die Kunst des Alterns, Kino-Fassung 7 (17.11.)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.

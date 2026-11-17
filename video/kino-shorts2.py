@@ -173,7 +173,9 @@ def ass_kino(cues, pfad, tempo=1.0, schlagworte=(), toene=None, takt=4,
              groesse=69, groesse_stark=125, schrift="Inter Black",
              schrift_matt="Inter SemiBold", schrift_stark="Petit Formal Script",
              mitte_x=None, mitte_y=None, pop=1.12, pop_stark=1.22,
-             zeit_pop=150, zeit_stark=200):
+             zeit_pop=150, zeit_stark=200,
+             kontur=1.8, kontur_stark=2.3, schatten=3.5,
+             kontur_farbe="&H50000000", schatten_farbe="&H30000000"):
     """Der gemessene Williamson-Satz, Wort fuer Wort.
 
     Zwei Faelle:
@@ -204,8 +206,8 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, ScaleX, ScaleY, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{schrift},{groesse},&H00FFFFFF,&H00000000,&H64000000,0,0,100,100,1,0,2,5,30,30,30,1
-Style: Gross,{schrift_stark},{groesse_stark},&H00FFFFFF,&H00000000,&H64000000,0,0,100,100,1,0,2,5,30,30,30,1
+Style: Cap,{schrift},{groesse},&H00FFFFFF,{kontur_farbe},{schatten_farbe},0,0,100,100,1,{kontur},{schatten},5,30,30,30,1
+Style: Gross,{schrift_stark},{groesse_stark},&H00FFFFFF,{kontur_farbe},{schatten_farbe},0,0,100,100,1,{kontur_stark},{schatten},5,30,30,30,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -383,8 +385,17 @@ def main():
     # NICHT die Punkte der Schriftdatei. 58 ergab 27 px x-Hoehe, gebraucht
     # sind die gemessenen 32 -> 69. Beim grossen Wort 100 -> 48 px, noetig
     # sind 60 -> 125.
-    ap.add_argument("--groesse", type=int, default=69)
-    ap.add_argument("--groesse-stark", type=int, default=125)
+    ap.add_argument("--groesse", type=int, default=76)
+    ap.add_argument("--groesse-stark", type=int, default=136)
+    # Lesbarkeit auf hellem Grund. Seine Ansage vom 18.11.: *„dadurch, dass
+    # ich ein weisses T-Shirt trage, ist die halt nicht optimal lesbar."*
+    # Williamson setzt OHNE Kontur — hier steht eine halbdurchsichtige, die
+    # auf dunklem Grund nicht auffaellt und auf hellem traegt.
+    # Die geschwungene Kursive hat Haarlinien und verschwindet auf Weiss
+    # eher als die Grotesk — darum traegt sie eine Spur mehr.
+    ap.add_argument("--kontur", type=float, default=1.8)
+    ap.add_argument("--kontur-stark", type=float, default=2.3)
+    ap.add_argument("--schatten", type=float, default=3.5)
     a = ap.parse_args()
 
     plan = json.loads(Path(a.plan).read_text(encoding="utf-8"))
@@ -407,7 +418,9 @@ def main():
     ass = str(Path(a.out).with_suffix(".kino.ass"))
     sw = [s for s in a.schlagworte.split(",") if s.strip()]
     n = ass_kino(cues, ass, tempo=a.tempo, schlagworte=sw, toene=toene, takt=takt,
-                 groesse=a.groesse, groesse_stark=a.groesse_stark)
+                 groesse=a.groesse, groesse_stark=a.groesse_stark,
+                 kontur=a.kontur, kontur_stark=a.kontur_stark,
+                 schatten=a.schatten)
     print(f"  {n} Dialogzeilen, {len(sw)} Schlagwoerter: {', '.join(sw) or '—'}")
 
     maske = str(Path(a.out).with_suffix(".maske.png"))
