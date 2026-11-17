@@ -1424,3 +1424,67 @@ nicht um Anstand, sondern um ein Wort, an dem YouTube die Reichweite
 beschneidet.
 
 → betrifft: content-*, alle Short-Agenten, youtube-manager, thumbnails
+
+## 17.11. — unsere eigenen Master tragen das Logo schon eingebrannt
+
+Beim Short „die drei Zeilen" aus der Sutcliffe-Folge schlug
+`bildausschnitt.py` für die erste Totale den Kasten `8:0:608:1080` vor. Darin
+steht das **YNB-Logo, das im Master selbst eingebrannt ist**, bei
+x 10–190, y 900–1060 — und der Renderer legt sein eigenes Logo noch darunter.
+Zwei Logos im selben Bild, genau der Fehler, den er am 10.11. beim
+Garden-Short beanstandet hat (*„da sind plötzlich zwei Logos drin"*), nur
+diesmal mit unserem eigenen.
+
+Behoben, indem der Kasten auf `42:0:495:880` enger gezogen wurde: er endet
+oberhalb des Logos. Die zweite Totale wanderte ohnehin auf `1296:…`, weil
+dort Sutcliffe spricht — und ist damit auch vom Logo weg.
+
+**Die Regel ist also größer als „fremde Wasserzeichen":** vor jedem Short
+einmal die untere linke und rechte Ecke des Masters ansehen. Ein Logo im
+Quellbild ist kein Grund, den Ausschnitt zu behalten — bei 1080p Quelle und
+608 px Kasten ist genug Rand da, um daran vorbeizuschneiden. Totalen sind
+der Normalfall: nur dort ist der Kasten breit genug, um eine Ecke zu
+erwischen.
+
+→ betrifft: content-*, alle Short-Agenten
+
+## 17.11. — die Musik soll ins Outro hinein ausfaden, und warum sie das bisher nicht tat
+
+**Seine Ansage, ausdrücklich als Wiederholung:** *„dann sage ich dir immer
+wieder, dass die Musik ausfaden soll ins Outro hinein."*
+
+Es reichte nicht, das Bett über die ganze Datei zu legen. `musik_drunter.py`
+drückt das Bett per `sidechaincompress` unter dem Ton des Videos weg — und
+das Outro hat **eigenen Ton** (Mittel −23,8 dB, Spitze −7,0 dB). Der liegt
+über der Schwelle, also wurde das Bett genau dort weggedrückt, wo es stehen
+bleiben soll. Gemessen am fertigen Short: mit Bett war der Outro-Bereich
+**0,1 dB** lauter als ohne — das Bett war faktisch nicht da.
+
+**Behoben im Werkzeug, nicht im Einzelfall:** `musik_drunter.py` hat jetzt
+`--outro SEKUNDEN`. Der Schalter schaltet den *Steuerton* des Kompressors
+für die letzten N Sekunden stumm; das Bett steht dort frei und fällt über
+die Ausblende ins Outro. Gemessen: Bett im Outro −40,2 dB ohne Schalter,
+−37,5 dB mit.
+
+**Die Reihenfolge dreht sich damit um.** Bisher galt: rendern → Bett drunter
+→ Outro anhängen. Für „ins Outro hinein" muss es heißen: rendern → **Outro
+anhängen** → Bett über die ganze Datei, mit `--outro 4.21` und
+`--blende-aus 4.21`.
+
+**Zweiter Befund am selben Short: die Einsatzstelle.** Sein Urteil zu
+In This Shirt ab 23,25: *„irgendwie harmoniert das nicht."* Nachgemessen
+sitzt 23,25 sauber auf einem Taktanfang (Raster 2,8–3,1 s), ist also nicht
+„verrutscht". Der Unterschied ist die Dichte: im Hochband liegt der Song
+dort bei −26 dB, im vollen Teil ab Sekunde 58 bei −17 dB. Unter einem harten
+Einstieg wie „The three lines every man wants to hear" trägt der dünne
+Aufbau nicht. **Die 23,25 sind damit kein Automatismus mehr**, sondern die
+Stelle für Shorts, die leise anfangen; fängt ein Short mit einer Ansage an,
+gehört das Bett in den vollen Teil (gemessene Einsätze: 59,68 und 110,62).
+
+**Drittens, eigener Fehler:** das Short lief auf Tempo 1,15 — dem
+Vorgabewert des Renderers. Seine Rückfrage: *„Was ist das für eine
+Geschwindigkeit?"* Alle fünf übrigen Sutcliffe-Shorts laufen auf **1,2**.
+Das Tempo gehört zur Reihe, nicht zum einzelnen Short, und ist vor jedem
+Lauf aus den Auftragsdateien derselben Folge zu übernehmen.
+
+→ betrifft: content-*, alle Short-Agenten

@@ -72,3 +72,10 @@ einen Teil davon geliefert." Alle 31 Dateien waren gebaut und committet — es
 lag an der Übergabe. **Mehr als etwa acht Dateien: mehrere `SendUserFile`-
 Aufrufe, je sechs, Bildunterschrift „x von y" mit den enthaltenen Nummern.**
 So sieht er selbst, ob etwas fehlt, statt es zählen zu müssen.
+
+## Eine Probe ist keine Stichprobe (17.11.2026)
+Shorts II hat diesen Fehler an einem Tag viermal an sich selbst gefunden: ein
+Standbild statt drei (`i.ytimg.com/vi/<id>/` gibt `oar1`, `oardefault`, `oar3`),
+eine Schriftfarbe statt einer Funktion, drei Suchstellen statt eines
+Kontaktabzugs, ein Abtastpunkt bei 50 % statt fünf. **Eine einzelne Probe
+belegt, dass ein Fall vorkommt — nie, dass es der einzige ist.**

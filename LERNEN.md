@@ -45,6 +45,97 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 48 — 17.11.2026, 16:05 Kapstadt · eine Probe ist keine Stichprobe
+
+**Vier der sieben Einträge sind derselbe Fehler in vier Gewändern:** einmal
+messen, und das Ergebnis für den Normalfall halten. Shorts II hat ihn heute
+viermal an sich selbst gefunden und jedes Mal die Gegenregel mitgeliefert. Die
+Kurzform, die über allen vieren steht: **eine einzelne Probe belegt, dass ein
+Fall vorkommt — nie, dass es der einzige ist.**
+
+1. **Drei Zeitproben sind das Minimum, bevor eine Aussage über fremden Stil
+   fällt.** Shorts II hatte ihm morgens belegt, die Williamson-Referenz stehe
+   **aufrecht** — mit einem echten, richtig vermessenen Standbild.
+   `i.ytimg.com/vi/<id>/` gibt aber **drei** Bilder heraus (`oar1`,
+   `oardefault`, `oar3`, je 1080×1920, ohne Anmeldung), und in denen stehen
+   drei verschiedene Satzfälle: aufrechte Grotesk, ein eisblaues Einzelwort,
+   und eine **geschwungene Kursive in doppelter Größe**. Das dritte ist das,
+   was Yannick seit drei Runden beschreibt.
+   → betrifft: **jede Messung an fremdem Material.** Der Weg zu allen drei
+   Bildern steht seit dem 21.10. auf `claude/content-cinematic`.
+
+2. **Hat dieselbe Größe in drei Proben drei Werte, ist sie keine Konstante,
+   sondern eine Funktion.** Drei Einblendungen desselben Shorts, drei
+   Schriftfarben: **#E3F2F4**, **#F8BF88**, **#FDFEFD**. Die Suche nach *der*
+   Schriftfarbe fand dreimal eine falsche. Die Regel dahinter, an allen drei
+   Bildern bestätigt: **die Schriftfarbe ist die mittlere Farbe des Kastens,
+   auf den hellsten Kanal 250 normiert** (gerechnet 250/208/167 gegen gemessen
+   248/192/137).
+   → betrifft: jede Stilmessung. Die Frage ist nicht „welcher Wert", sondern
+   **„wovon hängt er ab"**.
+
+3. **Dreimal nichts gefunden ist ein Blättchen-Problem, kein Materialproblem.**
+   Seine Ansage, wörtlich: *„Into the Wild hat genug Gesichtsnahaufnahmen.
+   Musst du nur dich ein bisschen anstrengen und aufhören, so faul zu sein."*
+   Der Kontaktabzug über alle 121,5 freien Sekunden, alle 1,5 s ein Bild,
+   findet Nahaufnahmen bei 0:09,5 · 0:12,5 · 0:14,0 · 0:45,5 · **0:48–0:56
+   durchgehend** · 1:07 · 1:11,5 · 1:14,5 · 1:50,5. Shorts II hatte drei
+   Stellen probiert und den Film dann verworfen.
+   → betrifft: jede B-Roll-Auswahl. **Ein Kontaktabzug über die ganze Länge
+   kostet eine Minute.** Stand seit dem 20.10. in `video/broll-referenz.md`,
+   an genau diesem Film.
+
+4. **Einen Einspieler an fünf Stellen abtasten (5/30/55/80/97 %), nie nur in
+   der Mitte.** Beim Nachprüfen von zwei beanstandeten Clips fand sich ein
+   dritter, den er gar nicht benannt hatte: c10, Good Will Hunting ab 2:01,
+   schneidet nach **1,6 von 3,2 Sekunden** auf einen Hinterkopf. Der
+   Kontaktabzug hatte bei 50 % abgetastet — genau dort, wo der Clip noch gut
+   aussah. **Ein Dreisekünder hält oft keine drei Sekunden durch.**
+   → betrifft: alle Shorts mit B-Roll. Nebenbefund: drei Clips enden im letzten
+   Zehntel auf einem Filmschnitt und bleiben trotzdem — **entscheidend ist, was
+   nach dem Schnitt kommt**, nicht dass geschnitten wird.
+
+5. **Unsere eigenen Master tragen das Logo eingebrannt — und der Renderer legt
+   seins darunter.** Bei einem Sutcliffe-Short schlug `bildausschnitt.py` für
+   die Totale `8:0:608:1080` vor; darin steht das **YNB-Logo aus dem Master
+   selbst**, x 10–190, y 900–1060. Zwei Logos im Bild — genau sein Befund vom
+   10.11.: *„da sind plötzlich zwei Logos drin"*, nur diesmal mit unserem
+   eigenen. Behoben durch einen engeren Kasten, `42:0:495:880`, der oberhalb
+   des Logos endet.
+   → betrifft: **alle Short-Agenten.** Die Regel ist größer als „fremde
+   Wasserzeichen": vor jedem Short die **untere linke und rechte Ecke des
+   Masters** ansehen. Bei 1080p Quelle und 608 px Kasten ist genug Rand, um
+   vorbeizuschneiden. **Totalen sind der Normalfall** — nur dort ist der Kasten
+   breit genug, eine Ecke zu erwischen.
+
+6. **Die Musik faded nicht ins Outro, weil der Kompressor sie genau dort
+   wegdrückt.** Seine Ansage, ausdrücklich als Wiederholung: *„dann sage ich
+   dir immer wieder, dass die Musik ausfaden soll ins Outro hinein."* Das Bett
+   über die ganze Datei zu legen reichte nicht: `musik_drunter.py` drückt es
+   per `sidechaincompress` unter dem Videoton weg, und **das Outro hat eigenen
+   Ton** (Mittel −23,8 dB, Spitze −7,0 dB) — also über der Schwelle. Gemessen
+   war der Outro-Bereich mit Bett **0,1 dB** lauter als ohne; das Bett war
+   faktisch nicht da. Behoben im Werkzeug: `--outro SEKUNDEN` schaltet den
+   *Steuerton* für die letzten N Sekunden stumm (Bett im Outro −40,2 dB ohne,
+   **−37,5 dB** mit).
+   → betrifft: jeden Short mit Bett. **Die Reihenfolge dreht sich um:** nicht
+   rendern → Bett → Outro, sondern rendern → **Outro anhängen** → Bett über die
+   ganze Datei mit `--outro` und `--blende-aus` auf die Outro-Länge.
+   Zusatz aus derselben Messung: die Einsatzstelle 23,25 in *In This Shirt* ist
+   **kein Automatismus** mehr — dort liegt der Song im Hochband bei −26 dB, ab
+   Sekunde 58 bei −17 dB. Unter einen harten Einstieg gehört der volle Teil
+   (gemessene Einsätze 59,68 und 110,62); 23,25 ist für Shorts, die leise
+   anfangen.
+
+7. **Das Tempo gehört zur Reihe, nicht zum einzelnen Short.** Ein
+   Sutcliffe-Short lief auf **1,15** — dem Vorgabewert des Renderers — während
+   die anderen fünf derselben Folge auf **1,2** laufen. Seine Rückfrage: *„Was
+   ist das für eine Geschwindigkeit?"*
+   → betrifft: alle Short-Agenten. Vor jedem Lauf das Tempo aus den
+   Auftragsdateien **derselben Folge** übernehmen, nie den Vorgabewert nehmen.
+
+---
+
 ## Ausgabe 47 — 16.11.2026, 21:55 Kapstadt · erst suchen, dann bauen
 
 **Vier der sechs Einträge kommen von Shorts II aus einem einzigen Arbeitstag.**

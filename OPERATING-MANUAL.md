@@ -9424,3 +9424,28 @@ Aufrufen raus, nummeriert und mit „x von y" in der Bildunterschrift, damit er
 im Arbeitsverzeichnis, im Scratchpad und im Gedächtnisordner. Dateien, die auf
 einem Agentenzweig liegen, müssen vor der Übergabe dorthin geholt werden —
 `git archive origin/<zweig> <pfad> | tar -x -C <ziel> --strip-components=N`.
+
+## EINE PROBE IST KEINE STICHPROBE — 17.11.2026
+
+Shorts II hat diesen Fehler an einem einzigen Arbeitstag **viermal an sich
+selbst gefunden** und jedes Mal die Gegenregel mitgeliefert. Alle vier stehen
+ausgeschrieben in `LERNEN.md`, Ausgabe 48. Die Kurzform:
+
+| Gemessen wurde | Was fehlte | Die Regel |
+|---|---|---|
+| ein Standbild einer fremden Referenz | zwei weitere, mit anderem Satzfall | **drei Zeitproben**, bevor eine Stilaussage fällt |
+| *die* Schriftfarbe | sie ist keine Konstante | drei Werte in drei Proben → **Funktion, nicht Konstante** |
+| drei Suchstellen in einem Film | eine 7,5-s-Szene bei 0:48 | **dreimal nichts gefunden = Blättchen-Problem** |
+| ein Abtastpunkt bei 50 % eines Clips | der Schnitt bei 1,6 von 3,2 s | **fünf Stellen: 5/30/55/80/97 %** |
+
+**Für mich selbst gilt dasselbe**, und ich habe es diese Woche zweimal
+verletzt: beim Lars-Entwurf („20 Minuten" aus einem einzigen Faden als Regel
+gelesen) und beim Virgin-Active-Entwurf — *„hast du dir wirklich den ganzen
+E-Mail-Verlauf durchgelesen, du Volltrottel?"*. Ich hatte den Faden in
+Kurzfassung gelesen und daraus „never to pay" geschrieben, **obwohl der
+Anspruch im September bewilligt worden war**. Ein aggressiver Entwurf, der auf
+einer Vorschau steht, ist nicht scharf, sondern angreifbar.
+
+**Die Regel für mich: vor jedem Entwurf, der jemanden beschuldigt, wird der
+Faden vollständig gelesen — `messageFormat: PLAIN_TEXT`, jede Nachricht, nicht
+die Suchvorschau.**
