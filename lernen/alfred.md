@@ -65,3 +65,10 @@ kostet eine Minute.** Sie gehört vor den ersten Handgriff.
 Eine Kopie veraltet. `importlib.util.spec_from_file_location` lädt auch eine
 Datei mit Bindestrich im Namen; `if __name__ == "__main__"` sorgt dafür, dass
 beim Import nichts anläuft.
+
+## Viele Dateien gehen in Blöcken raus (17.11.2026)
+Seine Beanstandung: „Ich habe gesagt 25 Screenshots und ich kriege immer nur
+einen Teil davon geliefert." Alle 31 Dateien waren gebaut und committet — es
+lag an der Übergabe. **Mehr als etwa acht Dateien: mehrere `SendUserFile`-
+Aufrufe, je sechs, Bildunterschrift „x von y" mit den enthaltenen Nummern.**
+So sieht er selbst, ob etwas fehlt, statt es zählen zu müssen.

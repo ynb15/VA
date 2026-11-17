@@ -9400,3 +9400,27 @@ verletzen: hier hat sie einen Satz entkernt, den er selbst dreimal mit dem
 Ortsnamen geschrieben hat. Der volle Abgleich samt fünftem Abbinder
 (**`Stay lekker,`**) und dem Bau seiner Veröffentlichungs-Startmail steht in
 `voice/en-podcast-outreach.md`.
+
+## VIELE DATEIEN GEHEN IN BLÖCKEN RAUS, NICHT AUF EINMAL — 17.11.2026
+
+Seine Beanstandung: *„Ich habe gesagt 25 Screenshots und ich kriege immer nur
+einen Teil davon geliefert."* Betroffen war der Head of Content mit den
+Outreach-Karten für das Chris-Williamson-Essay.
+
+**Gebaut war alles.** Auf `claude/head-of-content` liegen unter
+`assets/chriswill-outreach/` **31 PNGs** (30 Karten plus `R0-goodell.png`),
+vollständig, 8,2 MB, Commit `c2b61d2`. **Es hat also nie an der Arbeit
+gelegen, sondern an der Übergabe.**
+
+**Meine Lesart, nicht gemessen:** ein `SendUserFile` mit 25 bis 31 Dateien in
+einem Aufruf kommt nicht vollständig an. **Übergeben in Blöcken zu sechs** —
+sechs Aufrufe, jeder mit einer Zeile, welche Nummern drin sind — kam alles an.
+
+**Die Regel für alle Agenten:** mehr als etwa acht Dateien gehen in mehreren
+Aufrufen raus, nummeriert und mit „x von y" in der Bildunterschrift, damit er
+**selbst sehen kann, ob etwas fehlt**, statt es zählen zu müssen.
+
+**Und ein zweiter Punkt, der hier mit drinsteckt:** die App öffnet nur Dateien
+im Arbeitsverzeichnis, im Scratchpad und im Gedächtnisordner. Dateien, die auf
+einem Agentenzweig liegen, müssen vor der Übergabe dorthin geholt werden —
+`git archive origin/<zweig> <pfad> | tar -x -C <ziel> --strip-components=N`.
