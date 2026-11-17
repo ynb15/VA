@@ -1,3 +1,54 @@
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 7 (17.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `YNB Podcast Ken Stern Aging (Kino).mp4` | 63,2 s (59,4 + Outro 3,8) |
+
+## Fassung 7 — drei Punkte
+
+### 1. Alfred war drin — das Grab nicht
+
+Michael Caine läuft seit Fassung 5 von 5,71 bis 11,58 s. Nachgeprüft, bevor
+etwas gebaut wurde. Was fehlte, ist **das Grab**: die Nahaufnahme zeigt nur
+sein Gesicht vor einer Wiese, die Szene ist darin nicht zu erkennen.
+
+Für ihn war die Stelle damit nicht drin — und das ist die richtige Sicht.
+Was im Bild nicht zu sehen ist, ist nicht im Short.
+
+Jetzt zusätzlich die Weite: **41,08–45,75 s**, Alfred im Vordergrund, die
+Trauernden gehen weg, die Grabsteine, Wayne Manor dahinter. Ausschnitt so
+gelegt, dass der Name auf dem Stein nicht lesbar ist.
+
+### 2. Die stehende Stelle — gemessen
+
+Bild-zu-Bild-Differenz im Kasten, geglättet über eine Sekunde:
+
+| | |
+|---|---|
+| gefunden | **41,27–45,33 s, 4,07 s** |
+| Bewegung | **0,25** gegen Median **2,79** |
+
+Ein Sechzehntel der üblichen Bewegung. Genau dort steht jetzt das Grab.
+Nachgemessen: außer dem Outro keine Strecke mehr unter der Schwelle. Eine
+zweite (Watts, 2,8 s bei 0,84) steht in der Übergabe.
+
+### 3. Die Leserichtung war sieben Mal falsch
+
+Der zweizeilige Satz stammt von „one **path**" — kleines Wort oben, großes
+unten. Dort ist das große Wort das **zweite**. Steht das Schlagwort vorne
+(„Frankl said"), dreht dieselbe Anordnung die Folge um.
+
+Betroffen: `FRANKL SAID` · `THOUGHTS WE` · `LOST THOUGH` · `AGING IS` ·
+`JOURNEY INTO` · `INSIGHT EMPATHY` · `OLDER IS`.
+
+Die Regel ist nicht „groß gehört nach unten", sondern **„oben steht, was
+zuerst gesprochen wird"**. Das eine Beispiel erfüllte beide; erst ein
+zweiter Fall trennt sie. Alle sieben einzeln nachgesehen.
+
+---
+
 # Ken Stern — Die Kunst des Alterns, Kino-Fassung 6 (17.11.)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.

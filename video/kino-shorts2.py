@@ -293,10 +293,25 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                                     if mit_anim else f"\\pos({px},{py})") + "}")
                 lines.append(f"Dialogue: 0,{v},{b},Cap,,0,0,0,,{kopf}{satz(hell)}")
                 return
-            # Schlagwort-Fall: zwei Zeilen, wie „one path" im Original
+            # Schlagwort-Fall: zwei Zeilen, wie „one path" im Original.
+            #
+            # ENTSCHEIDEND IST DIE LESERICHTUNG. Im Original ist „one" das
+            # erste und „path" das zweite Wort — das kleine steht oben, das
+            # grosse unten, von oben nach unten gelesen stimmt die Folge.
+            # Steht das Schlagwort aber VORNE („Frankl said"), dann liest
+            # sich dieselbe Anordnung als „said Frankl". Sein Befund vom
+            # 17.11.: *„wo ich sage Frankl said, steht das said ueber
+            # Frankel. Also es liest sich said Frankel."* Sieben
+            # Einblendungen waren betroffen.
+            #
+            # Also: oben steht immer das Wort, das zuerst gesprochen wird.
             rest = " ".join(t for i, t in enumerate(roh) if i != k_index)
-            ox, oy = px + 34, py - 50
-            gx, gy = px, py + 34
+            if k_index == 0:
+                gx, gy = px, py - 34           # Schlagwort oben
+                ox, oy = px + 34, py + 48      # der Rest darunter
+            else:
+                ox, oy = px + 34, py - 50      # der Rest oben
+                gx, gy = px, py + 34           # Schlagwort darunter
             if rest:
                 hell_rest = (hell is not None and hell != k_index)
                 f_rest = voll if hell_rest else matt

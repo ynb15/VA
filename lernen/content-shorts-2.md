@@ -6,6 +6,77 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Eine Anordnung, die aus EINEM Beispiel abgeleitet ist, trägt nur dessen Fall (17.11.)
+
+*„wo ich sage Frankl said, steht das said über Frankel. Also es liest sich
+said Frankel."*
+
+Der zweizeilige Satz stammt von „one **path**" bei Williamson: kleines Wort
+oben, großes Wort unten. In dem Beispiel ist das große Wort das **zweite** —
+von oben nach unten gelesen stimmt die Folge.
+
+Ich habe daraus „Schlagwort gehört nach unten" gemacht. Steht das Schlagwort
+aber **vorne** („Frankl said"), dreht dieselbe Anordnung die Wortfolge um.
+**Sieben von 25 zweizeiligen Einblendungen lasen sich rückwärts**, und ich
+hatte sie alle gerendert und angesehen, ohne es zu bemerken — ich hatte auf
+Schrift und Farbe geachtet, nicht auf den Satz.
+
+Die Regel dahinter ist nicht „groß gehört nach unten", sondern **„oben steht,
+was zuerst gesprochen wird"**. Das eine Beispiel erfüllte beide Regeln; erst
+ein zweiter Fall trennt sie.
+
+**Regel: aus einem Beispiel wird keine Anordnung abgeleitet, ohne zu fragen,
+welche Eigenschaft das Beispiel zufällig mitbringt.** Und: eine Liste wie
+„welche Einblendungen haben das Schlagwort an Position 0" ist in drei Zeilen
+geschrieben und hätte den Fehler sofort gezeigt.
+
+→ betrifft: `video/kino-shorts2.py`
+
+## „Das Bild steht still" ist messbar (17.11.)
+
+*„es gibt so eine Stelle von Mandela, da bleibt das Bild einfach über mehrere
+Sekunden stehen. Das ist auf jeden Fall ein Conversion Killer."*
+
+Statt zu suchen: Bild-zu-Bild-Differenz im Kasten über den ganzen Short,
+geglättet über eine Sekunde, dann die Strecken unter dem 12. Perzentil.
+
+| | |
+|---|---|
+| gefunden | **41,27–45,33 s, 4,07 s lang** |
+| Bewegung dort | **0,25** |
+| Median im Short | 2,79 |
+
+Ein Sechzehntel der üblichen Bewegung, vier Sekunden lang. Nach dem Tausch:
+außer dem Outro keine Strecke mehr unter der Schwelle. Eine zweite Stelle
+(Watts, 2,8 s bei 0,84) steht in der Übergabe, statt sie stillschweigend zu
+lassen.
+
+**Regel: „es wirkt zu statisch" ist keine Geschmacksfrage, sondern eine
+Zahl.** Die Messung kostet einen Befehl und findet die Stelle auf das
+Zehntel genau.
+
+→ betrifft: jede Abnahme — gehört in `abnahme.py` (Shorts I)
+
+## Nachgefragt statt angenommen: er sah das Grab, nicht den Schauspieler (17.11.)
+
+*„hast du jetzt doch meine Lieblingsstelle mit Alfred am Grab rausgenommen."*
+
+War sie nicht — Michael Caine läuft seit Fassung 5 von 5,71 bis 11,58 s, in
+Nahaufnahme. Nachgeprüft, bevor ich etwas gebaut habe.
+
+Was fehlte, war **das Grab**. Die Nahaufnahme zeigt nur sein Gesicht vor
+einer Wiese; die Szene ist darin nicht zu erkennen. Für ihn war die Stelle
+damit nicht drin, und das ist die richtige Sicht: **was im Bild nicht zu
+sehen ist, ist nicht im Short**, egal welcher Schnitt in der Liste steht.
+
+Gebaut: die Weite mit den Grabsteinen zusätzlich, genau an der Stelle, die
+er vorgeschlagen hatte.
+
+**Regel: wenn er sagt, etwas sei raus, und es ist drin, dann fehlt nicht das
+Material, sondern das, woran man es erkennt.**
+
+→ betrifft: jede B-Roll-Auswahl
+
 ## Die gemessene Lage war richtig und trotzdem falsch — sie lag auf seiner Brille (17.11.)
 
 *„die Schrift geht teilweise halt in mein Gesicht oder vor allem in mein

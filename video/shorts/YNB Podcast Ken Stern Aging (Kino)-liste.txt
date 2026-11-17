@@ -1,5 +1,5 @@
-# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 6 (63,2 s · 59,4 s + Outro 3,8 s)
-# Schrift links unten · ruhiger Einflug · Essay startet mit Mandela · kein Schwarzweiss
+# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 7 (63,2 s · 59,4 s + Outro 3,8 s)
+# Das Grab ist drin · die stehende Mandela-Stelle ist raus · Leserichtung berichtigt
 #
 # Zeiten sind die im FERTIGEN Short.
 #
@@ -70,6 +70,64 @@
 #   11,58–17,08  Damon, eine Einstellung                     (2:51,8)
 #   17,08–18,75  die Umarmung                                (3:06,6)
 # Die Umarmung sitzt auf „having been is a kind of being".
+
+# ══════════════════════════════════════════════════════════════════
+# A. ALFRED WAR DRIN — was fehlte, war DAS GRAB
+# ══════════════════════════════════════════════════════════════════
+# Michael Caine laeuft seit Fassung 5 von 5,71 bis 11,58 s. Du siehst ihn
+# bei 6,2 · 7,2 · 8,4 · 9,4 · 10,4 · 11,3 s in Nahaufnahme. Herausgenommen
+# war er nicht.
+#
+# Was gefehlt hat, ist das GRAB selbst: die Nahaufnahme zeigt nur sein
+# Gesicht vor der Wiese, von der Szene ist nichts zu sehen. Deshalb liest
+# sie sich nicht als „Alfred am Grab".
+#
+# Jetzt steht die Grabszene zusaetzlich drin — genau an der Stelle, die
+# Du vorgeschlagen hast:
+#   41,08–45,75  Alfred im Vordergrund, die Trauernden gehen weg,
+#                die Grabsteine, Wayne Manor dahinter      (1:00,0  4,7 s)
+#
+# Ausschnitt so gelegt, dass der Grabstein-Text nicht lesbar ist — der
+# Name darauf haette im Bild nichts zu suchen.
+
+# ══════════════════════════════════════════════════════════════════
+# B. DIE STEHENDE STELLE — gemessen, nicht geschaetzt
+# ══════════════════════════════════════════════════════════════════
+# „es gibt so eine Stelle von Mandela, da bleibt das Bild einfach ueber
+#  mehrere Sekunden stehen. Das ist auf jeden Fall ein Conversion Killer."
+#
+# Gefunden: Bild-zu-Bild-Bewegung ueber den ganzen Short gerechnet.
+#   41,27–45,33 s   4,07 s   Bewegung 0,25   (Median im Short: 2,79)
+# Also ein Sechzehntel der ueblichen Bewegung, vier Sekunden lang. Das war
+# Mandela ab Quelle 8:21,5 — er steht und laechelt, sonst passiert nichts.
+#
+# Diese vier Sekunden sind jetzt das Grab. Nachgemessen am neuen Short:
+# ausser dem Outro gibt es KEINE Strecke mehr unter der Schwelle.
+#
+# Eine Stelle bleibt grenzwertig und sage ich Dir lieber:
+#   45,80–48,57 s   2,8 s   Bewegung 0,84   — der Einstieg bei Alan Watts
+# Das ist mehr als dreimal so viel Bewegung wie die alte Stelle, aber es
+# ist ein Mann, der sitzt und redet. Wenn es Dich stoert, sag es, dann
+# tausche ich auch die.
+
+# ══════════════════════════════════════════════════════════════════
+# C. DIE LESERICHTUNG WAR FALSCH — sieben Mal
+# ══════════════════════════════════════════════════════════════════
+# „wo ich sage Frankl said, steht das said ueber Frankel. Also es liest
+#  sich said Frankel."
+#
+# Richtig erkannt, und es war ein echter Fehler im Werkzeug. Die
+# zweizeilige Anordnung stammt von „one path" bei Williamson: kleines
+# Wort oben, grosses Wort unten. Dort ist das grosse Wort das ZWEITE.
+# Steht das Schlagwort aber VORNE, dreht dieselbe Anordnung die Folge um.
+#
+# Betroffen waren sieben Einblendungen:
+#   0,00 FRANKL SAID · 8,37 THOUGHTS WE · 11,72 LOST THOUGH ·
+#   27,00 AGING IS · 29,33 JOURNEY INTO · 37,93 INSIGHT EMPATHY ·
+#   47,92 OLDER IS
+#
+# Jetzt gilt: oben steht immer das Wort, das zuerst gesprochen wird.
+# Alle sieben einzeln nachgesehen, Bild fuer Bild.
 
 # ══════════════════════════════════════════════════════════════════
 # 4. DAS ESSAY STARTET MIT MANDELA — und das Schwarzweiss ist raus
