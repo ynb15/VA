@@ -74,9 +74,10 @@ def blitz_kette(zeiten, hoehe=0.95, abfall=0.055, dauer=0.20):
 
 # ------------------------------------------------------------ bewegte ASS
 
-def ass_kino(cues, pfad, tempo=1.0, schlagworte=(), pop=1.16, pop_stark=1.30,
-             zeit_pop=90, zeit_stark=140, tiefer=0, gross=True,
-             groesse=None, rand=40):
+def ass_kino(cues, pfad, tempo=1.0, schlagworte=(), pop=1.12, pop_stark=1.22,
+             zeit_pop=90, zeit_stark=140, tiefer=0, gross=False,
+             groesse=92, rand=40, schrift="Inter Display Black", kursiv=True,
+             kontur=0, schatten=2, matt="&HB4B4B4&", hell_bord=2):
     """Wie `SR.build_ass`, aber die erste Zeile je Einblendung poppt auf.
 
     Warum nur die erste: der Renderer gibt JE WORT eine eigene Dialogzeile
@@ -88,7 +89,16 @@ def ass_kino(cues, pfad, tempo=1.0, schlagworte=(), pop=1.16, pop_stark=1.30,
     Beide Ebenen (Kontur und Gewichts-Nachzug) bekommen denselben
     Animationskopf — sonst laufen sie auseinander und die Schrift franst.
     """
-    groesse = SR.GROESSE if groesse is None else groesse
+    """Williamson-Stil, an seinen drei Referenz-Shorts ausgemessen (20.10.):
+    Kleinschreibung, KEINE schwarze Kontur, kein Gelb, zwei Woerter je
+    Einblendung, und das gesprochene Wort wird ueber HELLIGKEIT UND
+    STRICHSTAERKE markiert, nicht ueber Farbe (gemessen: 245,3 gegen 187,5
+    mittlere Helligkeit, 24,6 gegen 18,0 Pixel je Spalte).
+
+    Kursiv auf seine Ansage vom 17.11.: *„eine viel artistischere Schrift.
+    Geschwungen, kursiv."* Die gemessene Referenz steht aufrecht — das
+    gehoert in die Uebergabe, nicht in eine stille Entscheidung.
+    """
     W, H = SR.W, SR.H
     head = f"""[Script Info]
 ScriptType: v4.00+
@@ -99,7 +109,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, ScaleX, ScaleY, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{SR.FONT},{groesse},{SR.WEISS},&H00000000,&H00000000,0,0,{SR.SCALE_X},100,1,{SR.KONTUR},3,2,{rand},{rand},{marginv_fix(rand)},1
+Style: Cap,{schrift},{groesse},{SR.WEISS},&H00000000,&H80000000,0,{1 if kursiv else 0},100,100,1,{kontur},{schatten},2,{rand},{rand},{marginv_fix(rand)},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -116,8 +126,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         """
         f = pop_stark if stark else pop
         ms = zeit_stark if stark else zeit_pop
-        return (f"{{\\fscx{SR.SCALE_X * f:.0f}\\fscy{100 * f:.0f}"
-                f"\\t(0,{ms},\\fscx{SR.SCALE_X}\\fscy100)}}")
+        return (f"{{\\fscx{100 * f:.0f}\\fscy{100 * f:.0f}"
+                f"\\t(0,{ms},\\fscx100\\fscy100)}}")
 
     for c in cues:
         woerter = [w for w in (c.get("woerter") or [])
@@ -132,24 +142,32 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         lippe = c.get("lippe")
         kopf_pos = (f"{{\\an8\\pos({W // 2},{int(lippe) + tiefer})}}"
                     if lippe is not None else "")
-        stark = any(w in sw for w in roh)
+        # Vergleich in Grossbuchstaben: seit dem Williamson-Stil steht der
+        # Text klein im Bild, die Schlagwortliste kommt aber gross.
+        stark = any(w.upper() in sw for w in roh)
 
-        def bauen(kontur, hell=None):
+        def bauen(hell=None):
+            """Aktivwort weiss und dicker, die anderen abgedunkelt.
+
+            Das Dickerwerden kommt ueber `\\bord` in der TEXTFARBE, nicht
+            ueber eine zweite Schriftschnitt-Groesse: so bleibt die Zeile
+            auf einer Grundlinie und nur die Strichstaerke aendert sich,
+            genau wie in der Referenz gemessen.
+            """
             teile = []
             for k, t in enumerate(roh):
-                f = SR.GELB_I if k == hell else SR.WEISS_I
-                nach = f"\\3c{f}" if kontur else ""
-                teile.append(f"{{\\c{f}{nach}}}{t}")
+                if k == hell:
+                    teile.append(f"{{\\c{SR.WEISS_I}\\3c{SR.WEISS_I}"
+                                 f"\\bord{hell_bord}}}{t}")
+                else:
+                    teile.append(f"{{\\c{matt}\\3c{matt}\\bord0}}{t}")
             return " ".join(teile)
 
         def zeile(von, bis, hell, mit_anim):
             t = 1.0 if c.get("fertigzeit") else tempo
             v, b = SR.ass_time(von / t), SR.ass_time(bis / t)
             kopf = kopf_pos + (anim(stark) if mit_anim else "")
-            lines.append(f"Dialogue: 0,{v},{b},Cap,,0,0,0,,{kopf}{bauen(False, hell)}")
-            if SR.FETTER:
-                lines.append(f"Dialogue: 1,{v},{b},Cap,,0,0,0,,"
-                             f"{kopf}{{\\bord{SR.FETTER}}}{bauen(True, hell)}")
+            lines.append(f"Dialogue: 0,{v},{b},Cap,,0,0,0,,{kopf}{bauen(hell)}")
 
         if not woerter:
             zeile(c["start"], c["end"], None, True)
@@ -185,7 +203,8 @@ def main():
     ap.add_argument("--tempo", type=float, default=1.0)
     ap.add_argument("--model", default="medium")
     ap.add_argument("--lang", default=None)
-    ap.add_argument("--worte", type=int, default=3)
+    ap.add_argument("--worte", type=int, default=2,
+                    help="Williamson setzt ZWEI Woerter je Einblendung")
     ap.add_argument("--pause", type=float, default=0.45)
     ap.add_argument("--korrekturen", default=None)
     ap.add_argument("--schlagworte", default="",
@@ -197,6 +216,12 @@ def main():
     ap.add_argument("--blitz-abfall", type=float, default=0.055)
     ap.add_argument("--srt-out", default=None)
     ap.add_argument("--crf", type=int, default=20)
+    ap.add_argument("--schrift", default="Inter Display Black")
+    ap.add_argument("--schriftgroesse", type=int, default=92)
+    ap.add_argument("--aufrecht", action="store_true",
+                    help="nicht kursiv setzen (die gemessene Referenz steht aufrecht)")
+    ap.add_argument("--versalien", action="store_true",
+                    help="GROSSBUCHSTABEN statt der gemessenen Kleinschreibung")
     a = ap.parse_args()
 
     plan = json.loads(Path(a.plan).read_text(encoding="utf-8"))
@@ -221,7 +246,9 @@ def main():
 
     ass = str(Path(a.out).with_suffix(".kino.ass"))
     sw = [s for s in a.schlagworte.split(",") if s.strip()]
-    n = ass_kino(cues, ass, tempo=a.tempo, schlagworte=sw)
+    n = ass_kino(cues, ass, tempo=a.tempo, schlagworte=sw,
+                 schrift=a.schrift, groesse=a.schriftgroesse,
+                 kursiv=not a.aufrecht, gross=a.versalien)
     print(f"  {n} Dialogzeilen, {len(sw)} Schlagwoerter: {', '.join(sw) or '—'}")
 
     zeiten = [float(x) for x in a.blitze.split(",") if x.strip()]

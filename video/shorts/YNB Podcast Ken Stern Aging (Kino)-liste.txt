@@ -1,119 +1,126 @@
-# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG (75,0 s · 71,2 s + Outro 3,8 s)
-# Sechs Einspieler, bewegte Schrift, sieben Fotoblitze · mit „In This Shirt"
+# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 2 (63,2 s · 59,4 s + Outro 3,8 s)
+# 16 Einspieler · neue Schrift · 9 Fotoblitze · Tempo 1,2 · mit „In This Shirt"
 #
 # Zeiten sind die im FERTIGEN Short.
-# Was raus soll: Zeile loeschen oder die Nummer nennen.
 #
-  1  [00:00.00–00:01.60]  FRANKL SAID
-  2  [00:02.66–00:03.68]  WHAT YOU HAVE EXPERIENCED
-  3  [00:04.08–00:06.20]  NO POWER ON EARTH CAN TAKE FROM YOU
-  4  [00:06.60–00:11.00]  NOT ONLY OUR EXPERIENCES BUT ALL WE HAVE DONE WHATEVER GREAT THOUGHTS WE MAY HAVE
-  5  [00:11.00–00:12.68]  HAD AND ALL WE HAVE SUFFERED
-  6  [00:13.22–00:16.40]  ALL THIS IS NOT LOST THOUGH IT IS PAST
-  7  [00:16.78–00:18.24]  WE HAVE BROUGHT INTO BEING
-  8  [00:18.70–00:24.00]  HAVING BEEN IS A KIND OF BEING AND PERHAPS THE SUREST KIND AND IT MADE
-  9  [00:24.00–00:31.80]  ME WRITE A LITTLE MINI-ESSAY ABOUT THE ART OF AGING
- 10  [00:32.40–00:36.18]  AGING IS NOT A SLOW SURRENDER TO TIME BUT A POWERFUL JOURNEY INTO THE
- 11  [00:36.18–00:38.46]  FULLEST EXPRESSION OF WHO WE ARE MEANT TO BECOME
- 12  [00:39.04–00:42.28]  IT IS NOT THE DIMMING OF THE LIGHT BUT THE DEEPENING OF ITS GLOW
- 13  [00:42.84–00:47.32]  WITH EACH PASSING YEAR WE GAIN LAYERS OF INSIGHT EMPATHY AND RESILIENCE
- 14  [00:47.90–00:52.46]  THE RUSH OF YOUTH GIVES WAY TO THE RICHNESS OF PERSPECTIVE THE URGENCY OF
- 15  [00:52.46–00:56.52]  AMBITION SOFTENS INTO THE QUIET CONFIDENCE OF KNOWING WHAT TRULY MATTERS
- 16  [00:57.20–00:58.88]  TO GROW OLDER IS NOT TO FADE
- 17  [00:59.28–01:00.64]  IT IS TO BECOME MORE ROOTED
- 18  [01:01.04–01:02.44]  MORE RADIANT MORE WHOLE
- 19  [01:03.32–01:04.14]  IT IS A PRIVILEGE
- 20  [01:04.74–01:08.94]  A TRANSFORMATION AND A QUIET TRIUMPH THAT MANY ARE NOT GRANTED AND FOR THAT
- 21  [01:08.94–01:10.84]  IT SHOULD BE HONOURED NOT FEARED
+  1  [00:00.00–00:01.33]  FRANKL SAID
+  2  [00:02.22–00:05.83]  WHAT YOU HAVE EXPERIENCED NO POWER ON EARTH CAN TAKE FROM YOU NOT ONLY
+  3  [00:05.83–00:09.80]  OUR EXPERIENCES BUT ALL WE HAVE DONE WHATEVER GREAT THOUGHTS WE MAY HAVE HAD AND
+  4  [00:09.80–00:10.57]  ALL WE HAVE SUFFERED
+  5  [00:11.02–00:15.20]  ALL THIS IS NOT LOST THOUGH IT IS PAST WE HAVE BROUGHT INTO BEING
+  6  [00:15.58–00:19.83]  HAVING BEEN IS A KIND OF BEING AND PERHAPS THE SUREST KIND AND IT
+  7  [00:19.83–00:26.50]  MADE ME WRITE A LITTLE MINI-ESSAY ABOUT THE ART OF AGING
+  8  [00:27.00–00:30.33]  AGING IS NOT A SLOW SURRENDER TO TIME BUT A POWERFUL JOURNEY INTO THE FULLEST
+  9  [00:30.33–00:32.05]  EXPRESSION OF WHO WE ARE MEANT TO BECOME
+ 10  [00:32.53–00:35.23]  IT IS NOT THE DIMMING OF THE LIGHT BUT THE DEEPENING OF ITS GLOW
+ 11  [00:35.70–00:39.43]  WITH EACH PASSING YEAR WE GAIN LAYERS OF INSIGHT EMPATHY AND RESILIENCE
+ 12  [00:39.92–00:44.08]  THE RUSH OF YOUTH GIVES WAY TO THE RICHNESS OF PERSPECTIVE THE URGENCY OF AMBITION
+ 13  [00:44.08–00:47.10]  SOFTENS INTO THE QUIET CONFIDENCE OF KNOWING WHAT TRULY MATTERS
+ 14  [00:47.67–00:51.38]  TO GROW OLDER IS NOT TO FADE IT IS TO BECOME MORE ROOTED MORE RADIANT
+ 15  [00:51.67–00:52.03]  MORE WHOLE
+ 16  [00:52.77–00:53.45]  IT IS A PRIVILEGE
+ 17  [00:53.95–00:57.45]  A TRANSFORMATION AND A QUIET TRIUMPH THAT MANY ARE NOT GRANTED AND FOR THAT
+ 18  [00:57.45–00:59.03]  IT SHOULD BE HONOURED NOT FEARED
 
 # ══════════════════════════════════════════════════════════════════
-# ZUERST: DIE FUENF DATEIEN SIND NICHT GANZ DIE, DIE DU GENANNT HAST
+# 1. DIE SCHRIFT — und ein Befund, der Deiner Beschreibung widerspricht
 # ══════════════════════════════════════════════════════════════════
-# Du hast Alan Watts, Nelson Mandela, die Beerdigung aus Batman und
-# Steve Jobs angesagt. In den fuenf Links liegen:
-#   Scenes: Batman (Funeral)      ✓
-#   Scenes: Alan Watts            ✓
-#   Scenes: Mandela               ✓
-#   Scenes: Good Will Hunting     <- statt Steve Jobs
-#   Scenes: Into The Wild         <- hattest Du nicht genannt
-# Einen Steve-Jobs-Clip gibt es in dem Ordner nicht. Ich habe mit dem
-# gearbeitet, was da ist. Wenn Du Jobs willst, leg ihn in denselben
-# Ordner, dann tausche ich ihn gegen einen der beiden.
-
-# ══════════════════════════════════════════════════════════════════
-# DIE SECHS EINSPIELER — nach dem Satz gewaehlt, nicht nach Optik
-# ══════════════════════════════════════════════════════════════════
-# | im Short | Dauer | Clip | ab | worauf |
-# | 06,40–13,10 | 6,7 s | Batman (Funeral) | 1:05,0 | „all we have SUFFERED" — Alfred am Grab |
-# | 16,60–22,60 | 6,0 s | Mandela | 2:08,0 | „having been is a kind of being" — er erzaehlt sein Leben |
-# | 32,30–38,90 | 6,6 s | Alan Watts | 1:10,0 | „aging is not a slow surrender to time" |
-# | 42,70–47,60 | 4,9 s | Good Will Hunting | 1:28,0 | „layers of insight, empathy" — Sean und Will |
-# | 47,60–51,10 | 3,5 s | Into The Wild | 1:38,8 | „the RUSH OF YOUTH" |
-# | 57,10–63,20 | 6,1 s | Mandela | 8:10,0 | „more rooted, more radiant, more WHOLE" |
+# Du hattest recht, dass meine Schrift falsch war. Sie war sogar in SECHS
+# Punkten falsch, und das stand seit dem 20.10. ausgemessen im Repo
+# (video/broll-referenz.md), ich hatte es nur nicht gelesen:
 #
-# Zusammen 33,8 s von 71,2 s, also 47 %. Du bist beim Hook, bei der
-# Wendung zum Essay, bei zwei Nachdenk-Stellen und bei der Landung im
-# Bild — dazwischen laeuft Film.
+#                   Williamson (gemessen)   was ich gebaut hatte
+#   Schreibweise    Kleinschreibung         GROSSBUCHSTABEN
+#   Kontur          keine sichtbare         8 px schwarz
+#   Farbe           weiss                   weiss + Gelb
+#   Aktivwort       heller UND fetter       gelb eingefaerbt
+#   Woerter         zwei                    drei
+#   Helligkeit      245 aktiv / 188 matt    255 / 255
 #
-# DARSTELLUNG: quadratische Karte 980x980 auf Schwarz, Ecken 40 px.
-# Das ist Deine eigene gemessene Referenz (die drei Williamson-Shorts
-# vom 20.10.), nicht meine Erfindung. Alle fuenf Clips sind echte
-# Breitwand (2,17:1, Batman 2,6:1) — randlos ins Hochformat gezwungen
-# blieben davon 31 % der Breite uebrig.
+# Alle sechs sind jetzt umgestellt. Das allein macht den groessten Teil
+# dessen aus, was Du „mehr Aesthetik" nennst.
 #
-# WAS ICH AUS DEM MATERIAL HERAUSGEHALTEN HABE:
-#   Alan Watts hat von 0:42 bis 0:53 eine eingebrannte Werbeeinblendung
-#     und oben „Please SUBSCRIBE" — mein Stueck liegt bei 1:10.
-#   Into The Wild ist ein Trailer mit neun Schrifttafeln; die Liste dazu
-#     stand schon im Repo (broll-referenz.md), mein Stueck liegt in der
-#     freien Strecke zwischen 1:30,6 und 1:53,6.
-#   Mandela hat von 3:16 bis 3:52 die Rivonia-Rede als Schrift im Bild.
-#   Das Wasserzeichen unten rechts schneidet die Karte ohnehin weg.
-
-# ══════════════════════════════════════════════════════════════════
-# DIE SCHRIFT BEWEGT SICH
-# ══════════════════════════════════════════════════════════════════
-# Jede Einblendung setzt vergroessert ein und faellt in 90 ms auf ihre
-# Groesse zurueck. Auf neun Schlagwoertern ist der Sprung groesser
-# (130 %) und dauert 140 ms: SUFFERED · SUREST · AGING · GLOW ·
-# RESILIENCE · YOUTH · WHOLE · HONOURED · FEARED.
-# Nachgemessen am fertigen Bild: „SUFFERED" steht beim Einsetzen 509 px
-# breit und 140 ms spaeter 391 px.
-# Die Animation sitzt nur auf dem EINSATZ der Einblendung, nicht auf
-# jedem Wort — sonst zuckte die Zeile bei jedem Wortwechsel.
-
-# ══════════════════════════════════════════════════════════════════
-# SIEBEN FOTOBLITZE
-# ══════════════════════════════════════════════════════════════════
-# Bei 6,40 · 16,60 · 32,30 · 42,70 · 47,60 · 57,10 — das sind genau die
-# sechs Schnitte in die B-Roll, der Blitz deckt den Schnitt. Und einer
-# bei 70,38 auf „NOT FEARED", dem letzten Satz.
-# Ein Bild fast weiss, danach exponentieller Abfall ueber 0,2 s.
-
-# ══════════════════════════════════════════════════════════════════
-# TON
-# ══════════════════════════════════════════════════════════════════
-# „In This Shirt" ab 0:23,25 wie bei Deinen anderen Ken-Shorts.
-# Bett nach Baendern, gegen die abgenommene Aging-Fassung:
-#                     <300 Hz   300 Hz-2 kHz   2-8 kHz
-#   bisher               24,6       21,6          7,2
-#   KINO-FASSUNG         31,2       28,1         12,6
-# Also rund 6 dB lauter als bisher, nach Deiner Ansage zur Musik.
-# Sag eine Zahl, wenn es mehr oder weniger sein soll — zwei Minuten,
-# ohne neu zu rendern.
-# Ausblende 3,8 s ab 71,23 s, also ueber dem Outro.
-
-# ══════════════════════════════════════════════════════════════════
-# ZWEI DINGE, DIE ICH NICHT LOESEN KANN
-# ══════════════════════════════════════════════════════════════════
-# 1. `luts/ynb_look.png` fehlt weiter — der Renderer laeuft auf der
-#    Annaeherung aus Deinem Preset und schreibt das selbst in die
-#    Ausgabe. Anleitung steht in video/preset-ynb.md (5 Minuten CapCut).
-# 2. Eveleth als .otf in video/fonts/ — dann faellt das Nachziehen weg,
-#    mit dem Inter Black auf Eveleth-Gewicht gebracht wird.
+# ABER: Du sagst „geschwungen, kursiv". Ich habe die drei Shorts geholt,
+# die Du am 20.10. als Referenz geschickt hast, und die Schriftzeile
+# vergroessert — liegt bei als `video/williamson-schrift-original.png`.
+# Darin steht „comes from" in einer AUFRECHTEN Grotesk. Kein Kursiv,
+# keine Schwünge.
 #
-# ABNAHME (gemessen)
-#   1080x1920 · 48 kHz · 75,0 s · Outro da · 87 Untertitel · Ortscheck sauber
-#   Hauptteil -27,2 LUFS, Spitze -9,2 dB.
+# Ich habe trotzdem kursiv gesetzt, weil Du es so angesagt hast. Aber
+# sag mir, welchen Short Du meinst, falls es ein anderer ist.
+#
+# `video/schriftwahl-williamson.png` zeigt fuenf Varianten mit Deinem
+# eigenen Text. Sag einen Buchstaben, dann ist es ein Durchlauf:
+#   A  die alte Fassung (Versalien, Gelb, Kontur)
+#   B  Williamson wie gemessen — aufrecht
+#   C  wie B, aber kursiv            <- DIESE FASSUNG
+#   D  kursive Serifenschrift (Charter)
+#   E  kursive Serifenschrift (Caladea)
+# D und E sehen am „artistischsten" aus, gibt es hier aber nur in
+# normaler Strichstaerke — ueber bewegtem Film waeren sie kaum lesbar.
+# Wenn Du die willst, brauche ich eine fette kursive Serifenschrift als
+# Datei in `video/fonts/`.
+
+# ══════════════════════════════════════════════════════════════════
+# 2. DER AUFBAU — genau wie angesagt
+# ══════════════════════════════════════════════════════════════════
+#   0,0–1,3    DU — „Frankl said"
+#   1,3–19,8   FILM, durchgehend — das ganze Zitat
+#   19,8–26,5  DU — die Ueberleitung zum Essay
+#   26,5–52,8  FILM, durchgehend — das ganze Essay
+#   52,8–59,4  DU — die letzten beiden Saetze
+#
+# „bis zum vorletzten Satz" habe ich so gelesen: der Film endet, WENN der
+# vorletzte Satz anfaengt („it is a privilege"). Damit landest Du die
+# letzten beiden Saetze im Bild. Soll der Film noch ueber den vorletzten
+# Satz laufen, sag es — ein Durchlauf.
+
+# ══════════════════════════════════════════════════════════════════
+# 3. SECHZEHN EINSPIELER STATT SECHS
+# ══════════════════════════════════════════════════════════════════
+# 51,8 s von 71,2 s Clipzeit = 73 % (vorher 47 %). Schnitt alle 3 bis
+# 4,5 Sekunden, zwischen fuenf Filmen hin und her.
+#
+# Zitat:  Mandela (Land) · Batman (Bruecke) · Good Will Hunting ·
+#         Batman (Grab) · Batman (Alfred) · Mandela (Interview)
+# Essay:  Watts · Into The Wild (Wasserfall) · Watts · Mandela (Parlament) ·
+#         Good Will Hunting (Will) · Into The Wild (Voegel) ·
+#         Batman (Gordon) · Good Will Hunting (Umarmung) ·
+#         Mandela (Menge) · Mandela (jubelnd)
+#
+# ZWEI STUECKE MUSSTE ICH TAUSCHEN, nachdem ich sie im Kasten geprueft
+# hatte: bei Mandela 1:28 steht „TREASON TRIAL" als Schrift im Archivbild,
+# und Mandela 8:00 war eine Hand am Fenster statt eines Gesichts.
+
+# ══════════════════════════════════════════════════════════════════
+# 4. DIE GESCHWINDIGKEIT
+# ══════════════════════════════════════════════════════════════════
+# Du hattest recht. Das Short lief auf Tempo 1,0 — die Vorlage war zwar
+# schon mit 1,1 aus dem Master geschnitten, aber beim Rendern kam nichts
+# dazu. Alle anderen Ken-Shorts laufen auf 1,1 bis 1,15.
+# Jetzt Tempo 1,2 obendrauf, also 1,32-fach gegenueber dem Original.
+# 63,2 s statt 75,4 s — zwoelf Sekunden kuerzer bei gleichem Inhalt.
+# Wenn es noch schneller soll: sag eine Zahl, 1,3 waere 59,3 s.
+
+# ══════════════════════════════════════════════════════════════════
+# 5. NEUN FOTOBLITZE
+# ══════════════════════════════════════════════════════════════════
+# Nicht mehr auf jeden Schnitt — bei 16 Einspielern waere das ein
+# Stroboskop. Jetzt auf die Blockwechsel und starke Beats, etwa alle
+# sechs Sekunden: 1,33 · 9,50 · 15,00 · 18,75 · 26,83 · 34,67 · 40,00 ·
+# 45,33 · 52,75. Gemessen: Helligkeit springt von 76 auf 254 und faellt
+# in 0,3 s zurueck.
+
+# ══════════════════════════════════════════════════════════════════
+# TON UND ABNAHME
+# ══════════════════════════════════════════════════════════════════
+# „In This Shirt" ab 0:23,25, Bett wie in der letzten Fassung:
+#   <300 Hz 31,2 | 300 Hz-2 kHz 28,1 | 2-8 kHz 11,7
+# Das liegt rund 6 dB ueber der urspruenglich abgenommenen Aging-Fassung.
+# 1080x1920 · 48 kHz · 63,2 s · Outro da · 105 Untertitel · Ortscheck sauber
+# Hauptteil -27,2 LUFS, Spitze -9,1 dB.
+#
+# WEITER OFFEN, nur von Dir zu loesen: luts/ynb_look.png fehlt, und
+# Eveleth als .otf in video/fonts/.
 #
 # NICHT VEROEFFENTLICHT. Liegt bei Dir, Du laedst hoch.

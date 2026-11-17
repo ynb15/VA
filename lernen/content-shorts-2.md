@@ -6,6 +6,60 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Die Schrift stand ausgemessen im Repo — ich hatte den Abschnitt übersprungen (17.11.)
+
+*„Ich weiß nicht, ob du blind bist oder ignorant, aber die Schrift bei Chris
+Williamson, das ist eine viel artistischere Schrift."*
+
+In `video/broll-referenz.md` steht seit dem 20.10. ein Abschnitt
+**„### Die Schrift"**, an denselben drei Shorts ausgemessen, aus denen ich
+tags zuvor die B-Roll-Geometrie übernommen hatte. Ich habe die Geometrie
+gelesen und die Schrift überblättert:
+
+| | Williamson (gemessen) | was ich gebaut hatte |
+|---|---|---|
+| Schreibweise | Kleinschreibung | GROSSBUCHSTABEN |
+| Kontur | keine sichtbare | 8 px schwarz |
+| Farbe | weiß | weiß + Gelb |
+| Aktivwort | **heller und fetter** (245 gegen 188) | gelb eingefärbt |
+| Wörter | zwei | drei |
+
+→ betrifft: alle. **Eine Referenzdatei wird ganz gelesen, nicht bis zu dem
+Abschnitt, den man gerade braucht.** Ich hatte dieselbe Datei am Vortag
+offen und die Antwort auf die nächste Beanstandung darin stehen lassen.
+
+## Die Messung widerspricht seiner Beschreibung — beides gehört in die Übergabe (17.11.)
+
+Er sagt „geschwungen, kursiv". Die drei Shorts, die er selbst als Referenz
+geschickt hat, zeigen **„comes from" in einer aufrechten Grotesk** — kein
+Kursiv, keine Schwünge. Geprüft, indem ich die Vorschaubilder neu geholt
+(`i.ytimg.com/vi/<id>/oardefault.jpg`, HTTP 200 ohne Anmeldung) und die
+Schriftzeile an den dokumentierten Koordinaten vergrößert habe.
+
+Gebaut habe ich, was er gesagt hat (kursiv). Mitgeliefert: das vergrößerte
+Original und ein Blatt mit fünf Varianten an seinem eigenen Text, damit er
+mit einem Buchstaben umentscheiden kann.
+
+→ betrifft: alle. **Wenn die Messung der Ansage widerspricht: die Ansage
+bauen, die Messung beilegen.** Nicht stillschweigend das eine oder das
+andere — und schon gar nicht ihm widersprechen, ohne das Bild zu zeigen.
+
+## Zwei Dinge, die ich hätte messen können, statt sie zu lassen (17.11.)
+
+*„Und ich frage mich, was ist das für eine Geschwindigkeit? Das ist so
+langsam."* — Das Aging-Short lief beim Rendern auf **Tempo 1,0**. Alle
+anderen Ken-Shorts laufen auf 1,1 bis 1,15. Die Vorlage war zwar schon mit
+1,1 aus dem Master geschnitten, aber das wusste nur ich; im Ergebnis war es
+das langsamste Short der Reihe. **Ein Wert, der bei vier Geschwistern
+gleich ist und bei einem abweicht, ist eine Frage wert** — auch ohne
+Beanstandung.
+
+Und: 6 Einspieler auf 47 % waren mir „in der Größenordnung" des
+dokumentierten Into-the-Wild-Laufs (44 %). Er wollte 73 % und 16 Stücke.
+**Eine dokumentierte Zahl ist ein Anhaltspunkt, keine Zielvorgabe** —
+zumal der Auftrag „richtig cinematisch" lautete und nicht „wie letztes Mal".
+
+
 ## Diesmal zuerst gesucht — und die halbe Arbeit lag schon da (16.11.)
 
 Auftrag: das Aging-Short „richtig cinematisch", mit B-Roll, bewegter Schrift

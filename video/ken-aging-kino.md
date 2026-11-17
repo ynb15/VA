@@ -1,4 +1,66 @@
-# Ken Stern — Die Kunst des Alterns, Kino-Fassung (16.11.)
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 2 (17.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `YNB Podcast Ken Stern Aging (Kino).mp4` | 63,2 s (59,4 + Outro 3,8) |
+
+## Fassung 2 — fünf Beanstandungen
+
+### 1. Die Schrift stand ausgemessen im Repo
+
+`video/broll-referenz.md`, Abschnitt „Die Schrift", seit 20.10. — an
+denselben drei Williamson-Shorts gemessen, aus denen ich die B-Roll-
+Geometrie übernommen hatte. Sechs Punkte, alle falsch gebaut:
+
+| | Williamson | Fassung 1 | Fassung 2 |
+|---|---|---|---|
+| Schreibweise | Kleinschreibung | VERSALIEN | Kleinschreibung |
+| Kontur | keine | 8 px schwarz | keine |
+| Farbe | weiß | weiß + Gelb | weiß |
+| Aktivwort | heller **und fetter** | gelb | heller + `\bord2` in Textfarbe |
+| Wörter | zwei | drei | zwei |
+| Schrift | aufrecht | aufrecht | **kursiv, auf seine Ansage** |
+
+**Die Messung widerspricht seiner Beschreibung.** Er sagt „geschwungen,
+kursiv"; die Vorschaubilder seiner eigenen drei Referenzen zeigen
+„comes from" aufrecht. Beides liegt bei:
+`video/williamson-schrift-original.png` (vergrößerte Originalzeile) und
+`video/schriftwahl-williamson.png` (fünf Varianten an seinem Text).
+
+### 2.–4. Aufbau, Dichte, Tempo
+
+| | Fassung 1 | Fassung 2 |
+|---|---|---|
+| Einspieler | 6 | **16** |
+| B-Roll-Anteil | 47 % | **73 %** |
+| Tempo beim Rendern | 1,0 | **1,2** |
+| Länge | 75,4 s | **63,2 s** |
+
+Aufbau nach seiner Ansage: „Frankl said" auf ihm · Film durchgehend über
+das Zitat · er bei der Überleitung · Film durchgehend über das Essay · er
+für die letzten beiden Sätze.
+
+Beim Tempo war der Befund unangenehm: Fassung 1 lief auf **1,0**, während
+alle anderen Ken-Shorts auf 1,1 bis 1,15 laufen. Die Vorlage war zwar schon
+mit 1,1 geschnitten, im Ergebnis war es trotzdem das langsamste der Reihe.
+
+### 5. Neun Blitze statt siebzehn
+
+Bei 16 Einspielern ist ein Blitz je Schnitt ein Stroboskop. Jetzt auf
+Blockwechsel und starke Beats, etwa alle sechs Sekunden. Gemessen:
+Helligkeit 76 → 254 → 92 in 0,3 s.
+
+### Zwei Einspieler nach der Sichtprüfung getauscht
+
+Mandela 1:28 trägt „TREASON TRIAL" als Schrift im Archivbild, Mandela 8:00
+zeigte eine Hand am Fenster statt eines Gesichts. Beide im Kasten geprüft,
+bevor gerendert wurde.
+
+---
+
+# Fassung 1 (16.11.) — der erste Bau
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.
 
