@@ -6,6 +6,213 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Lesbarkeit ist messbar — und die zweite Abweichung von der Referenz (18.11.)
+
+*„dadurch, dass ich ein weißes T-Shirt trage, ist die halt nicht optimal
+lesbar manchmal."*
+
+Williamson setzt **ohne Kontur**; das steht ausgemessen in
+`video/williamson-kasten.md`. Seine Referenzbilder sind Filmszenen mit
+dunklen Flächen. Der Podcast hat ein **weißes T-Shirt** im unteren Drittel —
+genau dort, wo die Zeile seit Fassung 6 steht.
+
+Gebaut: Schrift 69 → 76 (x-Höhe 32 → 35 px), halbdurchsichtige Kontur
+1,8 px (2,3 px auf der Kursiven, die Haarlinien hat), Schatten 2,0 → 3,5.
+
+Gemessen an vier Bildern mit dem weißen T-Shirt hinter der Schrift,
+Helligkeitsabstand Schrift gegen Umgebung:
+
+| | vorher | nachher |
+|---|---:|---:|
+| 24,5 s | 78 | 86 |
+| 56,0 s | 71 | 93 |
+| 58,0 s | 65 | 80 |
+
+**Das ist die zweite Stelle, an der sein Bild die Referenz schlägt** — nach
+dem Silber. Beide stehen in der Übergabe, mit der Zahl, auf die ich
+zurückgehe, wenn er die Kontur sieht.
+
+**Regel: eine Referenzmessung gilt für das Material, an dem sie gemacht
+wurde.** Williamsons „keine Kontur" ist richtig für Filmbilder und falsch
+für ein weißes T-Shirt.
+
+→ betrifft: `video/kino-shorts2.py`, `video/williamson-kasten.md`
+
+## Eine Anordnung, die aus EINEM Beispiel abgeleitet ist, trägt nur dessen Fall (17.11.)
+
+*„wo ich sage Frankl said, steht das said über Frankel. Also es liest sich
+said Frankel."*
+
+Der zweizeilige Satz stammt von „one **path**" bei Williamson: kleines Wort
+oben, großes Wort unten. In dem Beispiel ist das große Wort das **zweite** —
+von oben nach unten gelesen stimmt die Folge.
+
+Ich habe daraus „Schlagwort gehört nach unten" gemacht. Steht das Schlagwort
+aber **vorne** („Frankl said"), dreht dieselbe Anordnung die Wortfolge um.
+**Sieben von 25 zweizeiligen Einblendungen lasen sich rückwärts**, und ich
+hatte sie alle gerendert und angesehen, ohne es zu bemerken — ich hatte auf
+Schrift und Farbe geachtet, nicht auf den Satz.
+
+Die Regel dahinter ist nicht „groß gehört nach unten", sondern **„oben steht,
+was zuerst gesprochen wird"**. Das eine Beispiel erfüllte beide Regeln; erst
+ein zweiter Fall trennt sie.
+
+**Regel: aus einem Beispiel wird keine Anordnung abgeleitet, ohne zu fragen,
+welche Eigenschaft das Beispiel zufällig mitbringt.** Und: eine Liste wie
+„welche Einblendungen haben das Schlagwort an Position 0" ist in drei Zeilen
+geschrieben und hätte den Fehler sofort gezeigt.
+
+→ betrifft: `video/kino-shorts2.py`
+
+## „Das Bild steht still" ist messbar (17.11.)
+
+*„es gibt so eine Stelle von Mandela, da bleibt das Bild einfach über mehrere
+Sekunden stehen. Das ist auf jeden Fall ein Conversion Killer."*
+
+Statt zu suchen: Bild-zu-Bild-Differenz im Kasten über den ganzen Short,
+geglättet über eine Sekunde, dann die Strecken unter dem 12. Perzentil.
+
+| | |
+|---|---|
+| gefunden | **41,27–45,33 s, 4,07 s lang** |
+| Bewegung dort | **0,25** |
+| Median im Short | 2,79 |
+
+Ein Sechzehntel der üblichen Bewegung, vier Sekunden lang. Nach dem Tausch:
+außer dem Outro keine Strecke mehr unter der Schwelle. Eine zweite Stelle
+(Watts, 2,8 s bei 0,84) steht in der Übergabe, statt sie stillschweigend zu
+lassen.
+
+**Regel: „es wirkt zu statisch" ist keine Geschmacksfrage, sondern eine
+Zahl.** Die Messung kostet einen Befehl und findet die Stelle auf das
+Zehntel genau.
+
+→ betrifft: jede Abnahme — gehört in `abnahme.py` (Shorts I)
+
+## Nachgefragt statt angenommen: er sah das Grab, nicht den Schauspieler (17.11.)
+
+*„hast du jetzt doch meine Lieblingsstelle mit Alfred am Grab rausgenommen."*
+
+War sie nicht — Michael Caine läuft seit Fassung 5 von 5,71 bis 11,58 s, in
+Nahaufnahme. Nachgeprüft, bevor ich etwas gebaut habe.
+
+Was fehlte, war **das Grab**. Die Nahaufnahme zeigt nur sein Gesicht vor
+einer Wiese; die Szene ist darin nicht zu erkennen. Für ihn war die Stelle
+damit nicht drin, und das ist die richtige Sicht: **was im Bild nicht zu
+sehen ist, ist nicht im Short**, egal welcher Schnitt in der Liste steht.
+
+Gebaut: die Weite mit den Grabsteinen zusätzlich, genau an der Stelle, die
+er vorgeschlagen hatte.
+
+**Regel: wenn er sagt, etwas sei raus, und es ist drin, dann fehlt nicht das
+Material, sondern das, woran man es erkennt.**
+
+→ betrifft: jede B-Roll-Auswahl
+
+## Die gemessene Lage war richtig und trotzdem falsch — sie lag auf seiner Brille (17.11.)
+
+*„die Schrift geht teilweise halt in mein Gesicht oder vor allem in mein
+Auge … wir haben halt mehr Platz links unten im Quadrat."*
+
+Die Zeile stand auf der Kastenmitte, weil sie bei Williamson dort steht
+(0,493 / 0,499 / 0,494, drei Proben). Nachgemessen an **vier seiner eigenen
+Einstellungen**: sein Gesicht sitzt im Kasten bei **x 0,35–0,85 und
+y 0,05–0,60**. Die Kastenmitte ist bei ihm die Brille.
+
+Williamsons Referenzbilder sind Spielfilmszenen — dort ist die Mitte frei.
+**Eine Lage, die an fremdem Material gemessen wurde, gilt nicht für ein
+Bild mit anderer Komposition.** Die Messung war richtig, die Übertragung
+war es nicht.
+
+Jetzt x 0,24 / y 0,70, linksbündig. Alle 105 Einblendungen einzeln
+nachgemessen.
+
+**Regel: eine Stilgröße aus fremdem Material wird gegen das eigene Bild
+geprüft, bevor sie übernommen wird.** Ein Kontaktabzug der eigenen
+Einstellungen mit Drittel-Raster kostet eine Minute.
+
+→ betrifft: `video/kino-shorts2.py`, jede Übertragung einer Referenzmessung
+
+## Linksbündig ist ruhiger als mittig — ohne dass man die Bewegung wegnimmt (17.11.)
+
+*„vielleicht ein bisschen weniger chaotisch. Ich weiß nicht, wie ich es
+präzisieren sollte."*
+
+Zwei Ursachen, nicht eine:
+
+1. **Der Einflug** kam aus sechs Richtungen reihum und drehte sich dabei um
+   bis zu 10 Grad. Jetzt: eine Richtung, von unten, keine Drehung.
+2. **Mittiger Satz** verschiebt die ganze Zeile, sobald ein Wort länger ist.
+   Bei zwei Wörtern je Einblendung springt die linke Kante damit bei jeder
+   Einblendung. Linksbündig an einer festen Kante bleibt sie stehen —
+   die Zeile wandert, ohne zu springen.
+
+Der zweite Punkt war der größere, und er stand nicht in seiner Ansage.
+**Wenn jemand „zu chaotisch" sagt und es nicht präzisieren kann, ist meist
+mehr als eine Ursache im Bild.**
+
+→ betrifft: `video/kino-shorts2.py`
+
+## Einen Ausschnitt zweimal halbiert — und es fiel erst im fertigen Bild auf (17.11.)
+
+Beim Prüfen der Quadrate hatte ich die Mitte `cx` angegeben, das Werkzeug
+rechnete `x = cx - Seite/2`. Beim Schneiden habe ich dann **die bereits
+gerechnete Linke** nochmal um `Seite/2` nach links geschoben. Fünf von zehn
+Einspielern saßen **487 Pixel zu weit links**.
+
+Bei vier davon fiel es nicht auf, weil es Landschaften waren und der falsche
+Ausschnitt auch nach Bild aussah. Beim fünften stand statt *Alfred am Grab*
+die **leere Wiese daneben** — der Mann, den er ausdrücklich bestellt hatte,
+war nicht im Bild.
+
+**Regel: ein Ausschnitt wird in derselben Größe geprüft und geschnitten.**
+Prüfbild und Schnittbefehl nehmen dasselbe Feld — entweder beide die Mitte
+oder beide die Kante, nie das eine und dann das andere.
+
+Gefunden nur, weil ich den fertigen Kontaktabzug angesehen habe statt nach
+dem Rendern zu liefern.
+
+→ betrifft: jede B-Roll-Auswahl, `video/kino-shorts2.py`
+
+## Seine Ansage schlägt die Messung — aber die Abweichung wird benannt (17.11.)
+
+*„die Schrift möchte ich auch eher so ein Silber haben, so ein bisschen so
+ein was Edleres verkörpern."*
+
+Am selben Tag hatte ich belegt, dass die Schriftfarbe bei Williamson **die
+mittlere Farbe der Szene** ist — eisblau, pfirsich, weiß. Silber ist damit
+nachweislich **nicht** das, was die Referenz macht.
+
+Das ist kein Grund zu widersprechen. Es ist sein Kanal. Gebaut ist Silber
+(RGB 237,239,241 am Ergebnis gemessen), die Szenenfarbe mischt noch mit
+26 % mit. **Und in der Übergabe steht in zwei Sätzen, dass das von der
+Referenz abweicht und warum.**
+
+**Regel: wo seine Ansage der Messung widerspricht, gilt seine Ansage — und
+die Abweichung steht in der Übergabe, nicht nur im Kopf.**
+
+→ betrifft: jede Stilentscheidung gegen eine gemessene Referenz
+
+## „Zentral" ist der Grund, warum es nicht floatet (17.11.)
+
+*„dadurch, dass du jetzt immer noch zentral beibehältst, float das Ganze
+nicht mehr. Das ist irgendwie so strikt."*
+
+Die Zeile stand auf der Kastenmitte, weil ich sie dort **gemessen** hatte
+(0,493 / 0,499 / 0,494 in drei Proben). Drei Proben aus drei verschiedenen
+Shorts sagen aber nur, wo die Zeile im Mittel steht — nicht, dass sie
+immer dort steht.
+
+Jetzt wandert sie: bis 150 px seitlich, 125 px hoch oder tief, Schrittweite
+goldener Schnitt, damit aufeinanderfolgende Zeilen weit auseinander landen
+statt nebeneinander zu kriechen. **Alle 105 Einblendungen einzeln auf
+schwarzem Grund gerendert und nachgemessen: keine verlässt den Kasten**,
+mit mindestens 20 px Luft.
+
+**Regel: ein Mittelwert aus drei Proben ist eine Lage, keine Vorschrift.**
+
+→ betrifft: `video/kino-shorts2.py`, jede Stilmessung aus wenigen Proben
+
 ## Ein Short hat drei Standbilder, nicht eins — und sie widersprechen sich (17.11.)
 
 *„dann guckst du den wirklich Millisekunde für Millisekunde für Millisekunde

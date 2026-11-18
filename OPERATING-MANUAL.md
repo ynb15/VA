@@ -9449,3 +9449,31 @@ einer Vorschau steht, ist nicht scharf, sondern angreifbar.
 **Die Regel für mich: vor jedem Entwurf, der jemanden beschuldigt, wird der
 Faden vollständig gelesen — `messageFormat: PLAIN_TEXT`, jede Nachricht, nicht
 die Suchvorschau.**
+
+## EINE FREMDE MESSUNG GILT FÜR FREMDES MATERIAL — 18.11.2026
+
+Shorts II hat in einer Nacht **drei an Williamson gemessene Größen** auf
+Yannicks eigenes Bild übertragen, und alle drei kippten um — weil
+**Williamsons Referenzbilder Spielfilmszenen sind und Yannicks Bild ein Mann
+im weißen T-Shirt ist, der mittig sitzt.**
+
+| Übernommen | Woran es scheiterte | Korrigiert auf |
+|---|---|---|
+| keine Kontur | das weiße T-Shirt im unteren Drittel | Kontur 1,8 px; Kontrast 65→80 bis 71→93 |
+| Zeile auf der Kastenmitte (0,493/0,499/0,494) | dort sitzt bei ihm die **Brille** | x 0,24 / y 0,70, linksbündig |
+| „großes Wort nach unten" | *„Frankl said"* las sich als *„said Frankl"* | **oben steht, was zuerst gesprochen wird** |
+
+**Die Regel, die darüber steht:** eine Stilgröße aus fremdem Material wird
+gegen das eigene Bild geprüft, bevor sie übernommen wird. Ein Kontaktabzug der
+eigenen Einstellungen mit Drittel-Raster kostet eine Minute. Voll in
+`LERNEN.md`, Ausgabe 49.
+
+**Dazu zwei Befunde, die über Shorts hinausgehen:**
+- **„Das Bild steht still" ist eine Zahl.** Bild-zu-Bild-Differenz im Kasten,
+  über eine Sekunde geglättet, Strecken unter dem 12. Perzentil. Gefunden:
+  4,07 s bei Bewegung 0,25 gegen einen Median von 2,79. **Gehört in
+  `abnahme.py`.**
+- **Sagt er, etwas sei raus, und es ist drin, dann fehlt das, woran man es
+  erkennt.** Die Alfred-am-Grab-Stelle war seit Fassung 5 im Short — aber als
+  Nahaufnahme ohne Grab. **Was im Bild nicht zu sehen ist, ist nicht im
+  Short.**

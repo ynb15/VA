@@ -45,6 +45,86 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 49 — 18.11.2026, 06:50 Kapstadt · eine fremde Messung gilt für fremdes Material
+
+**Alle sechs Einträge kommen von Shorts II aus einer Nacht am selben Short**,
+und drei davon sind derselbe Bruch: eine an Williamson gemessene Größe auf
+Yannicks eigenes Bild übertragen, ohne zu prüfen, ob das Bild dieselbe
+Voraussetzung mitbringt. **Williamsons Referenzbilder sind Spielfilmszenen.
+Yannicks Bild ist ein Mann im weißen T-Shirt, der mittig sitzt.** Das reicht,
+um drei übernommene Werte umzukippen.
+
+1. **Keine Kontur ist richtig für Filmbilder und falsch für ein weißes
+   T-Shirt.** Seine Ansage: *„dadurch, dass ich ein weißes T-Shirt trage, ist
+   die halt nicht optimal lesbar manchmal."* Williamson setzt ohne Kontur —
+   ausgemessen und in `video/williamson-kasten.md` festgehalten. Bei Yannick
+   steht die Zeile im unteren Drittel, genau vor dem T-Shirt. Gebaut: Schrift
+   **69 → 76** (x-Höhe 32 → 35 px), halbdurchsichtige Kontur **1,8 px**
+   (2,3 px auf der Kursiven wegen der Haarlinien), Schatten 2,0 → 3,5.
+   Helligkeitsabstand Schrift gegen Umgebung an vier Bildern mit T-Shirt
+   dahinter: **78 → 86**, **71 → 93**, **65 → 80**.
+   → betrifft: jede Übernahme einer Referenzmessung. **Eine Referenzmessung
+   gilt für das Material, an dem sie gemacht wurde.**
+
+2. **Die Kastenmitte ist bei ihm die Brille.** *„die Schrift geht teilweise
+   halt in mein Gesicht oder vor allem in mein Auge … wir haben halt mehr
+   Platz links unten im Quadrat."* Die Zeile stand mittig, weil sie bei
+   Williamson mittig steht — **0,493 / 0,499 / 0,494**, drei Proben, sauber
+   gemessen. An **vier von Yannicks eigenen Einstellungen** nachgemessen sitzt
+   sein Gesicht im Kasten bei **x 0,35–0,85, y 0,05–0,60**. Jetzt x 0,24 /
+   y 0,70, linksbündig; alle **105 Einblendungen** einzeln nachgemessen.
+   → betrifft: dasselbe wie 1, eine Dimension weiter. **Die Messung war
+   richtig, die Übertragung war es nicht.** Ein Kontaktabzug der eigenen
+   Einstellungen mit Drittel-Raster kostet eine Minute.
+
+3. **Aus einem Beispiel wird keine Anordnung abgeleitet.** Seine Beanstandung:
+   *„wo ich sage Frankl said, steht das said über Frankel. Also es liest sich
+   said Frankel."* Der zweizeilige Satz kam von „one **path**" bei Williamson:
+   kleines Wort oben, großes unten. Dort ist das große Wort zufällig auch das
+   **zweite**. Shorts II hatte daraus „Schlagwort nach unten" gemacht — steht
+   das Schlagwort vorne, dreht dieselbe Anordnung die Wortfolge um.
+   **Sieben von 25 zweizeiligen Einblendungen lasen sich rückwärts**, alle
+   gerendert und angesehen, ohne dass es auffiel: geprüft wurden Schrift und
+   Farbe, nicht der Satz. Die Regel heißt nicht „groß nach unten", sondern
+   **„oben steht, was zuerst gesprochen wird"**.
+   → betrifft: alle. **Das eine Beispiel erfüllte beide Regeln; erst ein
+   zweiter Fall trennt sie.** Und: eine Liste „welche Einblendungen haben das
+   Schlagwort an Position 0" ist in drei Zeilen geschrieben.
+
+4. **„Das Bild steht still" ist eine Zahl, keine Geschmacksfrage.** Seine
+   Ansage: *„es gibt so eine Stelle von Mandela, da bleibt das Bild einfach
+   über mehrere Sekunden stehen. Das ist auf jeden Fall ein Conversion
+   Killer."* Statt zu suchen: Bild-zu-Bild-Differenz im Kasten über den ganzen
+   Short, über eine Sekunde geglättet, Strecken unter dem 12. Perzentil.
+   Gefunden: **41,27–45,33 s, 4,07 s lang, Bewegung 0,25 gegen einen Median
+   von 2,79** — ein Sechzehntel des Üblichen. Nach dem Tausch liegt außer dem
+   Outro nichts mehr unter der Schwelle.
+   → betrifft: **jede Abnahme.** Gehört in `abnahme.py` bei Shorts I. Die
+   Messung kostet einen Befehl und findet die Stelle auf das Zehntel genau.
+
+5. **Sagt er, etwas sei raus, und es ist drin, dann fehlt das, woran man es
+   erkennt.** *„hast du jetzt doch meine Lieblingsstelle mit Alfred am Grab
+   rausgenommen."* War sie nicht — Michael Caine läuft seit Fassung 5 von
+   **5,71 bis 11,58 s**, in Nahaufnahme. Was fehlte, war **das Grab**: die
+   Nahaufnahme zeigt nur sein Gesicht vor einer Wiese, die Szene ist darin
+   nicht zu erkennen. Gebaut wurde die Weite mit den Grabsteinen dazu.
+   → betrifft: jede B-Roll-Auswahl. **Was im Bild nicht zu sehen ist, ist
+   nicht im Short** — egal, welcher Schnitt in der Liste steht. Und: erst
+   nachgeprüft, dann gebaut.
+
+6. **„Zu chaotisch" hat meist mehr als eine Ursache.** *„vielleicht ein
+   bisschen weniger chaotisch. Ich weiß nicht, wie ich es präzisieren
+   sollte."* Zwei Ursachen: der Einflug kam **aus sechs Richtungen reihum**
+   und drehte dabei bis zu **10 Grad** — jetzt eine Richtung, von unten, ohne
+   Drehung. Und: **mittiger Satz verschiebt die ganze Zeile**, sobald ein Wort
+   länger ist; bei zwei Wörtern je Einblendung springt die linke Kante jedes
+   Mal. Linksbündig an fester Kante bleibt sie stehen.
+   → betrifft: alle. **Der zweite Punkt war der größere und stand nicht in
+   seiner Ansage.** Wenn er etwas nicht präzisieren kann, ist selten nur eine
+   Sache im Bild.
+
+---
+
 ## Ausgabe 48 — 17.11.2026, 16:05 Kapstadt · eine Probe ist keine Stichprobe
 
 **Vier der sieben Einträge sind derselbe Fehler in vier Gewändern:** einmal
