@@ -1,3 +1,54 @@
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 13 (18.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `… Aging (Kino, See You Again).mp4` | 59,47 s |
+| `… Aging (Kino, Another Love).mp4` | 59,47 s |
+| `… Aging (Kino, Daylight).mp4` | 59,47 s |
+
+## Fassung 13 — drei Musikfassungen
+
+Unter 60 Sekunden hat nicht gereicht: gesperrt wurde auch die gekürzte
+Fassung. Der zweite Grund ist **Content-ID auf „In This Shirt" selbst** —
+ein Anspruch sperrt unabhängig von der Laufzeit.
+
+Bild, Schnitt, Schrift und Blitze sind in allen drei Fassungen identisch.
+
+| | ab | Pegel | Bett `<300 / 300–2k / 2k–8k` |
+|---|---|---|---|
+| See You Again | 1:49,0 | −19,1 dB | 23,9 / **27,8** / 6,3 |
+| Another Love | 2:53,0 | −21,8 dB | 24,1 / **27,8** / 6,1 |
+| Daylight | 2:11,0 | −21,5 dB | 28,4 / **27,8** / 14,5 |
+| *In This Shirt* | *0:23,25* | *−22,8 dB* | *30,9 / 27,8 / 10,9* |
+
+Alle auf dasselbe **Mittelband** eingemessen — dort sitzt die gefühlte
+Lautstärke gegen die Stimme. Die Randbänder laufen auseinander, das ist der
+Charakter des Titels: ein Klavier hat weniger Bass als eine Produktion mit
+Streichern.
+
+### Jedes Bett vorher ausgeglichen
+
+„See You Again" fällt ab 2:24 um 15 dB ab — ungebremst der
+Mom's-Got-Work-Fehler vom 16.11. `dynaudnorm=f=200:g=11:m=6:p=0.72` vor dem
+Pegel löst das grundsätzlich, statt nur ein günstiges Fenster zu suchen.
+Über die drei Drittel: 27,6/28,9/27,0 · 26,9/28,0/28,5 · 25,7/27,9/29,7.
+Keins fällt mehr ab.
+
+### Was zu den Songs zu sagen ist
+
+See You Again und Another Love sind **Klavier-Cover**, Daylight ist die
+**Originalaufnahme** aus dem offiziellen Video. Ein Cover umgeht den
+Anspruch auf die Aufnahme, nicht den auf die Komposition — die ist in allen
+drei Fällen angemeldet. Bei Daylight kommt der Anspruch auf die Aufnahme
+dazu; das ist der wahrscheinlichste Treffer.
+
+Keiner der drei ist lizenzierte Musik. Steht in der Übergabe, mit dem
+sicheren Weg (Audio-Bibliothek / Lizenzbibliothek) als Angebot.
+
+---
+
 # Ken Stern — Die Kunst des Alterns, Kino-Fassung 12 (18.11.)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.

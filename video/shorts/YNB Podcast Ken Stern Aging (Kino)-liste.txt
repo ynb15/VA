@@ -1,5 +1,10 @@
-# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 12 (59,5 s · 55,7 s + Outro 3,8 s)
-# UNTER 60 SEKUNDEN · Ueberleitung abgepact, Pausen gekuerzt
+# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 13 (59,5 s · 55,7 s + Outro 3,8 s)
+# DREI MUSIKFASSUNGEN zum Ausprobieren — Bild und Schnitt identisch
+#
+# Diese Liste gilt fuer alle drei Dateien:
+#   YNB Podcast Ken Stern Aging (Kino, See You Again).mp4
+#   YNB Podcast Ken Stern Aging (Kino, Another Love).mp4
+#   YNB Podcast Ken Stern Aging (Kino, Daylight).mp4
 #
 # Zeiten sind die im FERTIGEN Short.
 #
@@ -70,6 +75,54 @@
 #   11,58–17,08  Damon, eine Einstellung                     (2:51,8)
 #   17,08–18,75  die Umarmung                                (3:06,6)
 # Die Umarmung sitzt auf „having been is a kind of being".
+
+# ══════════════════════════════════════════════════════════════════
+# 0. DREI MUSIKFASSUNGEN
+# ══════════════════════════════════════════════════════════════════
+# Bild, Schnitt, Schrift und Blitze sind in allen dreien IDENTISCH.
+# Nur das Bett ist anders. In This Shirt ist raus — damit wurde gesperrt.
+#
+#                    ab Sekunde   Pegel     Bett gemessen
+#                    im Song      im Mix    <300 / 300-2k / 2k-8k
+#   See You Again      1:49,0     -19,1 dB   23,9 / 27,8 /  6,3
+#   Another Love       2:53,0     -21,8 dB   24,1 / 27,8 /  6,1
+#   Daylight           2:11,0     -21,5 dB   28,4 / 27,8 / 14,5
+#   (In This Shirt, zum Vergleich)           30,9 / 27,8 / 10,9
+#
+# Alle drei sind auf dasselbe MITTELBAND eingemessen (300 Hz–2 kHz,
+# 27,8) — dort sitzt die gefuehlte Lautstaerke gegen Deine Stimme. Die
+# beiden Klavierfassungen haben naturgemaess weniger Bass und weniger
+# Hoehen, Daylight liegt nah an In This Shirt.
+#
+# JEDES BETT IST VORHER AUSGEGLICHEN. See You Again faellt ab Sekunde
+# 144 um 15 dB ab — ungebremst waere das genau der Mom's-Got-Work-Fehler
+# vom 16.11. (Bett stirbt in der zweiten Haelfte). Gemessen ueber die
+# drei Drittel des Shorts:
+#   See You Again   27,6 / 28,9 / 27,0
+#   Another Love    26,9 / 28,0 / 28,5
+#   Daylight        25,7 / 27,9 / 29,7
+# Keins faellt mehr ab.
+#
+# Abnahme alle drei: 59,5 s · 1080x1920 · 48 kHz · Outro da ·
+# 105 Untertitel · Ortscheck sauber.
+# Hauptteil -27,3 / -27,6 / -27,3 LUFS, Spitze -9,4 / -9,2 / -9,2 dB.
+#
+# ── WAS ICH ZU DEN DREI SONGS SEHE ────────────────────────────────
+# Das solltest Du wissen, bevor Du Zeit ins Ausprobieren steckst:
+#
+#   See You Again   Klavier-Cover (Y2Mate-Mitschnitt)
+#   Another Love    Klavier-Cover
+#   Daylight        die ORIGINALAUFNAHME aus dem offiziellen Video
+#
+# Ein Cover umgeht den Anspruch auf die AUFNAHME, nicht den auf die
+# KOMPOSITION — die ist in allen drei Faellen angemeldet. Bei Daylight
+# kommt der Anspruch auf die Aufnahme noch dazu; das ist von den dreien
+# der wahrscheinlichste Treffer.
+#
+# Keiner der drei ist lizenzierte Musik. Wenn alle drei gesperrt werden,
+# ist der sichere Weg ein Titel aus YouTubes eigener Audio-Bibliothek
+# oder aus einer Lizenzbibliothek (Epidemic, Artlist). Sag Bescheid,
+# dann baue ich eine vierte Fassung damit — es ist ein Durchlauf.
 
 # ══════════════════════════════════════════════════════════════════
 # A. UNTER 60 SEKUNDEN — 59,47 s

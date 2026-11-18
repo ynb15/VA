@@ -6,6 +6,76 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Unter 60 Sekunden hat nicht gereicht — es lag am Song selbst (18.11.)
+
+*„Okay, das wurde jetzt auch unter 60 Sekunden trotzdem noch gesperrt."*
+
+Die Länge war also nur die halbe Antwort. Der zweite Grund ist **Content-ID
+auf dem Titel selbst** — „In This Shirt" ist angemeldet, und ein Anspruch
+sperrt unabhängig von der Laufzeit.
+
+Damit stehen **zwei** Gründe nebeneinander, und beide müssen stimmen:
+
+| | |
+|---|---|
+| Laufzeit | ≤ 60 s, sobald Musik im Short ist |
+| Titel | darf keinen Anspruch auslösen |
+
+**Regel: bevor ein Short mit Musik gebaut wird, steht die Frage nach dem
+Titel am Anfang, nicht am Ende.** Ein Cover umgeht den Anspruch auf die
+*Aufnahme*, nicht den auf die *Komposition*; nur Material aus einer
+Lizenzbibliothek oder YouTubes Audio-Bibliothek ist sicher.
+
+Das gehört in die Übergabe jedes Shorts mit Musik, nicht erst nach der
+zweiten Sperre.
+
+→ betrifft: jeden Short mit Musik — **gehört an Shorts I weitergegeben**
+
+## Drei Songs auf ein Maß bringen: das Mittelband ist der Anker (18.11.)
+
+Drei Fassungen, drei völlig verschiedene Titel — zwei Klavier-Cover und eine
+Produktion mit vollem Arrangement. Alle auf **dasselbe Mittelband (300 Hz–
+2 kHz, 27,8)** eingemessen, weil dort die gefühlte Lautstärke gegen die
+Stimme sitzt.
+
+| | <300 | 300–2k | 2k–8k |
+|---|---:|---:|---:|
+| See You Again | 23,9 | **27,8** | 6,3 |
+| Another Love | 24,1 | **27,8** | 6,1 |
+| Daylight | 28,4 | **27,8** | 14,5 |
+| In This Shirt | 30,9 | **27,8** | 10,9 |
+
+Die Randbänder dürfen auseinanderlaufen — das ist der Charakter des Titels,
+nicht ein Fehler. Ein Klavier hat weniger Bass als eine Produktion mit
+Streichern. **Hätte ich auf das Bassband angeglichen, wären die Klavier-
+fassungen in den Mitten viel zu laut geworden.**
+
+→ betrifft: jede Musikfassung
+
+## `dynaudnorm` löst das Mom's-Got-Work-Problem grundsätzlich (18.11.)
+
+„See You Again" fällt ab Sekunde 144 um **15 dB** ab. Ungebremst wäre das
+genau der Fehler vom 16.11.: das Bett stirbt in der zweiten Hälfte.
+
+Bisher habe ich das durch **Fensterwahl** gelöst — eine Stelle im Song
+suchen, die durchhält. Das schränkt stark ein und geht bei kurzen Titeln gar
+nicht auf.
+
+`dynaudnorm=f=200:g=11:m=6:p=0.72` vor dem Pegel gleicht das Bett aus, ohne
+zu pumpen. Gemessen über die drei Drittel des Shorts:
+
+| | 1. Drittel | 2. | 3. |
+|---|---:|---:|---:|
+| See You Again | 27,6 | 28,9 | 27,0 |
+| Another Love | 26,9 | 28,0 | 28,5 |
+| Daylight | 25,7 | 27,9 | 29,7 |
+
+Keins fällt mehr ab. **Die Fensterwahl bleibt trotzdem wichtig** — gegen
+Intros und Ausklänge hilft kein Normalizer, nur gegen Dynamik innerhalb
+einer laufenden Strecke.
+
+→ betrifft: jede Musikfassung — gehört in die Bettkette
+
 ## 60 Sekunden ist eine harte Grenze, sobald Musik im Short ist (18.11.)
 
 *„Leider hat YouTube das Video gesperrt. Scheinbar muss es unter 60 Sekunden
