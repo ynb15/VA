@@ -1,3 +1,58 @@
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 11 (18.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `YNB Podcast Ken Stern Aging (Kino).mp4` | 63,2 s (59,4 + Outro 3,8) |
+
+## Fassung 11 — zwei Punkte
+
+### 1. Die Gesichter, gemessen statt geschätzt
+
+Gesichtserkennung über alle elf Einspieler, je neun Bilder, waagerechte Lage
+im Kasten (0,5 = Mitte):
+
+| | vorher | jetzt |
+|---|---:|---:|
+| Batman Alfred | **0,865** | 0,549 |
+| GWH Umarmung | **0,810** | 0,540 |
+| Wild Gesicht | **0,721** | 0,532 |
+| Steve Jobs | **0,333** | 0,549 |
+| Wild Natur | **0,229** | 0,501 |
+| GWH Damon | 0,581 | 0,497 |
+| Watts weit / nah | 0,572 / 0,599 | 0,497 / 0,537 |
+| Mandela Leute | 0,409 | 0,483 |
+
+**Fünf lagen weiter als ein Zehntel daneben**, und ich hatte jeden einzeln
+angesehen. Beim Hinsehen prüft man, ob das Gesicht drin ist — nicht, ob es
+mittig ist.
+
+Senkrecht geht wenig: bei Watts, Jobs und Mandela sitzt das Gesicht bei 0,25
+der Kastenhöhe, weil es im Quellbild schon dort sitzt. Materialgrenze.
+
+### 2. Watts und Jobs gleich lang
+
+Es waren 9,4 s gegen 2,25 s. Die Ungleichheit kam daher, dass beim Tausch
+die **Plätze** getauscht wurden, die **Längen** aber beim Platz blieben — der
+lange war für Jobs gebaut, der kurze für die 2,7 s Ram-Dass-Material.
+
+| im Short | | Quelle |
+|---|---|---|
+| 41,08–44,00 | Alan Watts, weit | 1:02,0 · 3,5 s |
+| 44,00–46,92 | Alan Watts, näher | 1:05,5 · 3,5 s |
+| 46,92–49,83 | Steve Jobs, weit | 0:00,6 · 3,5 s |
+| 49,83–52,75 | Steve Jobs, näher | 0:44,6 · 3,5 s |
+
+5,83 s für jeden, beide mit einem Ausschnittwechsel gegen die Starre
+(Einzelbewegung 0,84 und 0,82). Am fertigen Short keine Strecke unter 0,90
+ausser dem Outro.
+
+Blitze entsprechend nachgezogen: `1,33 · 5,71 · 11,58 · 18,75 · 26,83 ·
+31,67 · 41,08 · 46,92 · 52,75` — jeder wieder am fertigen Bild gegengemessen.
+
+---
+
 # Ken Stern — Die Kunst des Alterns, Kino-Fassung 10 (18.11.)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.

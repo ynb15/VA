@@ -1,5 +1,5 @@
-# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 10 (63,2 s · 59,4 s + Outro 3,8 s)
-# Alan Watts, dann Steve Jobs · Blitze nur noch auf Szenenwechseln
+# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 11 (63,2 s · 59,4 s + Outro 3,8 s)
+# Gesichter gemessen und zentriert · Watts und Jobs gleich lang
 #
 # Zeiten sind die im FERTIGEN Short.
 #
@@ -72,33 +72,57 @@
 # Die Umarmung sitzt auf „having been is a kind of being".
 
 # ══════════════════════════════════════════════════════════════════
-# I. GETAUSCHT: ALAN WATTS, DANN STEVE JOBS
+# I. DIE GESICHTER — gemessen, nicht geschaetzt
 # ══════════════════════════════════════════════════════════════════
-# „Lass uns Ram Dass mit Steve Jobs tauschen und Ram Dass dann mit Alan
-#  Watts austauschen."
+# „du zentrierst die Gesichter nicht wirklich. Alfreds Gesicht ist viel
+#  zu weit rechts. Dann die Good Will Hunting Scene koennte auch
+#  zentriert werden."
 #
-# Also: die beiden Plaetze getauscht, und auf dem langen steht jetzt
-# Watts statt Ram Dass.
+# Du hattest recht, und es waren mehr als die beiden. Ich habe eine
+# Gesichtserkennung ueber ALLE Einspieler laufen lassen, je neun Bilder,
+# und die waagerechte Lage im Kasten gemessen (0,5 = Mitte):
 #
-#   41,08–46,08  ALAN WATTS, weit                     (1:02,0  6,0 s)
-#   46,08–50,50  ALAN WATTS, naeher angeschnitten     (1:08,0  5,3 s)
-#   50,50–52,75  STEVE JOBS, Stanford                 (0:44,6  2,7 s)
+#                     vorher   jetzt
+#   Batman Alfred      0,865   0,549    <- Deiner
+#   GWH Umarmung       0,810   0,540
+#   Wild Gesicht       0,721   0,532
+#   GWH Damon          0,581   0,497    <- Deiner
+#   Steve Jobs         0,333   0,549    (war zu weit LINKS)
+#   Watts weit         0,572   0,497
+#   Watts nah          0,599   0,537
+#   Mandela Leute      0,409   0,483
+#   Wild Natur         0,229   0,501
+#   Mandela Menge      0,522   0,522    unveraendert
+#   Wild Wasserfall    0,440   0,440    unveraendert
 #
-# Ram Dass ist damit raus. Die Datei liegt im Repo, falls Du ihn
-# woanders haben willst.
+# Alle liegen jetzt zwischen 0,44 und 0,55. Vorher lagen fuenf davon
+# weiter als ein Zehntel der Kastenbreite daneben.
 #
-# ZWEI EINSTELLUNGEN STATT EINER, und zwar aus einem Grund: Watts sitzt
-# still und redet, seine Einzelbewegung liegt bei 0,84 — das ist der Wert,
-# den ich Dir schon zweimal als grenzwertig gemeldet habe. Neuneinhalb
-# Sekunden davon am Stueck waeren wieder die stehende Stelle gewesen.
-# Deshalb laeuft die erste Haelfte weit und die zweite deutlich naeher am
-# Gesicht, mit einem Schnitt dazwischen. Nachgemessen am fertigen Short:
-# keine Strecke unter 0,90 ausser dem Outro.
+# SENKRECHT geht wenig: bei Watts sitzt das Gesicht bei 0,25 der
+# Kastenhoehe, weil es im Quellbild schon dort sitzt und oben kein Bild
+# mehr ist, das ich dazunehmen koennte. Dasselbe bei Jobs und Mandela.
+# Das ist eine Grenze des Materials, keine Entscheidung.
+
+# ══════════════════════════════════════════════════════════════════
+# II. WATTS UND JOBS SIND JETZT GLEICH LANG
+# ══════════════════════════════════════════════════════════════════
+# „die Alan Watts-Szene laeuft jetzt so lange und Steve Jobs nur
+#  irgendwie 1 Sekunde."
 #
-# EINE ZAHL, DIE DU WISSEN SOLLTEST: Watts laeuft jetzt 9,4 s. In
-# Fassung 3 hattest Du 12,3 s als „viel zu lange" beanstandet. Wenn 9,4
-# immer noch zu lang ist, sag eine Zahl — ich kann Mandela davor
-# verlaengern und Watts kuerzen, das ist ein Durchlauf.
+# Es waren 9,4 s gegen 2,25 s. Jetzt:
+#
+#   41,08–44,00  ALAN WATTS, weit                (1:02,0  3,5 s)
+#   44,00–46,92  ALAN WATTS, naeher              (1:05,5  3,5 s)
+#   46,92–49,83  STEVE JOBS, Stanford, weit      (0:00,6  3,5 s)
+#   49,83–52,75  STEVE JOBS, naeher              (0:44,6  3,5 s)
+#
+# Also 5,83 s fuer jeden. Beide bekommen zwei Einstellungen — weit und
+# naeher — aus demselben Grund wie vorher: beide sitzen und reden,
+# Einzelbewegung 0,84 und 0,82. Nachgemessen am fertigen Short: keine
+# Strecke unter 0,90 ausser dem Outro.
+#
+# Watts laeuft damit nur noch 5,8 s statt der 12,3 s, die Du in
+# Fassung 3 beanstandet hattest.
 #
 # Der ganze Aufbau:
 #   0,00–1,33    DU — „Frankl said"
@@ -107,8 +131,8 @@
 #   11,58–18,75  GOOD WILL HUNTING — Damon, die Umarmung
 #   18,75–26,83  DU — die Ueberleitung
 #   26,83–41,08  MANDELA — bei den Leuten, dann die Menge
-#   41,08–50,50  ALAN WATTS
-#   50,50–52,75  STEVE JOBS
+#   41,08–46,92  ALAN WATTS
+#   46,92–52,75  STEVE JOBS
 #   52,75–59,40  DU — die letzten beiden Saetze
 
 # ══════════════════════════════════════════════════════════════════
@@ -130,7 +154,7 @@
 #   26,83  DU -> Mandela
 #   31,67  Mandela Saal -> Mandela Menge
 #   41,08  Mandela -> Alan Watts
-#   50,50  Alan Watts -> Steve Jobs
+#   46,92  Alan Watts -> Steve Jobs
 #   52,75  Steve Jobs -> DU
 #
 # Nachgemessen am fertigen Bild (Bild-zu-Bild-Sprung, Untertitel
@@ -140,15 +164,15 @@
 # FUENF SCHNITTE HABEN ABSICHTLICH KEINEN BLITZ:
 #   1,90 · 3,50 · 4,37 · 5,20   die vier Schnitte INNERHALB von
 #                               Into The Wild
-#   36,13                       ein Schnitt innerhalb des Mandela-Bands
+#   49,83                       der Wechsel weit/nah bei Steve Jobs —
+#                               dieselbe Person, kein Szenenwechsel
 # Das sind Schnitte im selben Film, kein Szenenwechsel. Fuenf Blitze in
 # den ersten fuenf Sekunden waeren ein Stroboskop — genau das hatte ich
 # in Fassung 2 schon einmal zurueckgebaut. Wenn Du sie trotzdem willst,
 # sag es.
 #
-# Der Anschnitt bei Watts (46,08) bekommt auch keinen: selbe Person,
-# selbe Einstellung, nur naeher. Der Sprungmesser erkennt ihn nicht
-# einmal als Schnitt.
+# Der Anschnitt bei Watts (44,00) bekommt auch keinen: selbe Person,
+# nur naeher. Der Sprungmesser erkennt ihn nicht einmal als Schnitt.
 
 # ══════════════════════════════════════════════════════════════════
 # II. DIE SCHRIFT IST GROESSER UND HAT JETZT EINE KANTE

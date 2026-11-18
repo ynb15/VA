@@ -6,6 +6,56 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## „Mittig" nach Augenmaß war fünfmal daneben (18.11.)
+
+*„du zentrierst die Gesichter nicht wirklich. Alfreds Gesicht ist viel zu
+weit rechts."*
+
+Ich hatte jeden Ausschnitt an sieben Stellen angesehen und für gut befunden.
+Eine Gesichtserkennung über alle elf Einspieler, je neun Bilder, sagt etwas
+anderes — waagerechte Lage im Kasten, 0,5 ist die Mitte:
+
+| | vorher | jetzt |
+|---|---:|---:|
+| Batman Alfred | **0,865** | 0,549 |
+| GWH Umarmung | **0,810** | 0,540 |
+| Wild Gesicht | **0,721** | 0,532 |
+| Steve Jobs | **0,333** | 0,549 |
+| Wild Natur | **0,229** | 0,501 |
+| GWH Damon | 0,581 | 0,497 |
+
+**Fünf lagen weiter als ein Zehntel der Kastenbreite daneben**, und ich habe
+sie alle einzeln angesehen, ohne es zu merken. Beim Hinsehen prüft man, ob
+das Gesicht *drin* ist — nicht, ob es *mittig* ist.
+
+Die Korrektur ist eine Zeile: Verschiebung = (gemessen − 0,5) × Quadratseite.
+
+**Regel: Lage ist eine Zahl, kein Eindruck.** Ein Detektor über neun Bilder
+je Clip kostet eine Minute und ersetzt sieben Kontaktabzüge.
+
+Senkrecht bleibt eine Materialgrenze: bei Watts, Jobs und Mandela sitzt das
+Gesicht bei 0,25 der Kastenhöhe, weil es im Quellbild schon dort sitzt und
+oben nichts mehr ist, was man dazunehmen könnte. Steht in der Übergabe.
+
+→ betrifft: jede B-Roll-Auswahl, `video/kino-shorts2.py`
+
+## Zwei Blöcke gleich lang zu machen ist eine Zeile — es zu bemerken nicht (18.11.)
+
+*„die Alan Watts-Szene läuft jetzt so lange und Steve Jobs nur irgendwie
+1 Sekunde oder so gefühlt. So, das kannst du ja wohl ausbalancieren."*
+
+Es waren 9,4 s gegen 2,25 s. Die Ungleichheit kam daher, dass ich beim
+Tausch die **Plätze** vertauscht und ihre **Längen** behalten hatte — der
+lange Platz war für Jobs gebaut worden, der kurze für die 2,7 s, die das
+Ram-Dass-Material hergab. Nach dem Tausch passte die Länge zu keinem der
+beiden mehr.
+
+**Regel: wenn zwei Blöcke die Plätze tauschen, tauschen die Längen nicht
+automatisch mit — ihre Begründung bleibt beim alten Inhalt.** Nach jedem
+Tausch die Längen gegen den neuen Inhalt prüfen.
+
+→ betrifft: jede Umstellung im Schnitt
+
 ## Die Blitzzeiten standen seit Fassung 2 fest — der Schnitt darunter nicht (18.11.)
 
 *„die Fotoblitze sollen natürlich nur passieren, wenn du die Szene wechselst.
