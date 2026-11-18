@@ -9477,3 +9477,48 @@ eigenen Einstellungen mit Drittel-Raster kostet eine Minute. Voll in
   erkennt.** Die Alfred-am-Grab-Stelle war seit Fassung 5 im Short — aber als
   Nahaufnahme ohne Grab. **Was im Bild nicht zu sehen ist, ist nicht im
   Short.**
+
+## EIN MELDUNGSTEXT IST KEINE MESSUNG — 18.11.2026
+
+**Zweites Short mit „In This Shirt" global gesperrt.** `jcCd7KDcPlk` am 17.11.,
+nach `5nl--61ZBBI` am 22.10. Rechteinhaber FUGA. YouTubes Begründung: *„exceeds
+the length limits set by the copyright holder."*
+
+**Ich habe daraus eine Mechanik gemacht** — „FUGA erlaubt eine gewisse Länge,
+darüber wird gesperrt" — und content-gastauftritte beauftragt, die Schwelle zu
+messen. **Falsch, und der Agent hat es belegt:** derselbe Satz stand am 22.10.
+unter **drei Titeln mit drei verschiedenen Rechteinhabern**. Es ist YouTubes
+Standardtext. Und es gibt **keine Klammer**: zwei Uploads, zwei Sperren, null
+Freigaben — eine Schwelle wäre erfunden.
+
+**Zwei Regeln daraus, beide für mich:**
+1. **Ein Meldungstext ist keine Messung.** Eine Formulierung in einer
+   automatischen Mail belegt nicht die Mechanik dahinter.
+2. **Ein Auftrag, der eine Hypothese als Tatsache mitliefert, bekommt sie
+   bestätigt zurück.** Die Frage gehört in den Auftrag, nicht die Antwort.
+
+**Was unverändert gilt:** die Regel vom 22.10. — *kein Musikbett, nicht
+Original, nicht Cover, nicht leiser; die Fassung ohne Musik ist die Fassung.*
+Seine Freigabe vom 23.10. war ausdrücklich ein Versuch (*„dann teste ich, ob
+eines davon auf YouTube durchgeht"*). **Das Ergebnis liegt vor.**
+
+**Offen und nur von ihm oder dem youtube-manager zu klären:** welcher Short
+`jcCd7KDcPlk` („Real Love") überhaupt ist — **kein Zweig trägt eine Datei mit
+diesem Namen.** Von YouTubes vier Optionen bleibt praktisch eine: die Fassung
+ohne Musik neu hochladen und die gesperrte zurücknehmen; Trimmen und
+Stummschalten scheiden aus, weil Bett und Stimme bei uns eine Spur sind.
+
+## ER LANDET DEN SCHLAG UND HÖRT AUF — 18.11.2026
+
+**Er hat meinen Virgin-Active-Entwurf am 17.11. um 13:25 verschickt. Nach 55
+Minuten kam die Antwort**, nach sechs Monaten Stillstand: Tyron Daniels,
+Customer Service Team Leader, über Mathew — *„This refund was only submitted
+this morning… I'm currently waiting for proof of payment to be provided."*
+
+**Seine Kürzungen sind die Lehre, nicht der Erfolg.** Viermal in einer Mail hat
+er denselben Griff gemacht: **den Vorwurf stehen lassen, den deutenden zweiten
+Satz streichen.** Dazu „Six months." → **„6 months!"**, und **die Forderung
+ersatzlos weg**. Eine Eskalationsmail von ihm hat **keine Forderung und keinen
+Abbinder** — der Zorn ist die Forderung, ein Ultimatum daneben macht sie
+verhandelbar. Vollständiger Abgleich in `voice/en-podcast-outreach.md`; die
+Abbinder-Tabelle steht jetzt auf sechs Lagen.

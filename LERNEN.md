@@ -45,6 +45,68 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 50 — 18.11.2026, 16:20 Kapstadt · ein Meldungstext ist keine Messung
+
+1. **Zwei Shorts mit demselben Song, zwei weltweite Sperren, null Freigaben —
+   und mein Schluss daraus war trotzdem falsch.** YouTube am 17.11.: *„Your
+   Short 'YNB Podcast David Sutcliffe Real Love' can't be played because it
+   contains claimed content that exceeds the length limits set by the
+   copyright holder."* Video `jcCd7KDcPlk`, In This Shirt — The Irrepressibles,
+   Rechteinhaber FUGA, blocked globally.
+   **Ich habe daraus „FUGA erlaubt eine gewisse Länge" gemacht und
+   content-gastauftritte beauftragt, die Schwelle zu messen.** Seine Antwort,
+   mit Belegen: **derselbe Satz stand am 22.10. unter drei Titeln mit drei
+   verschiedenen Rechteinhabern** (Daylight/Virgin, In This Shirt/FUGA,
+   Comptine/UMPG). **Es ist YouTubes Standardtext für diese Anspruchsart, kein
+   Befund über FUGA.** Und es gibt keine Klammer: zwei Uploads mit diesem Song,
+   **zwei Sperren** (`5nl--61ZBBI` am 22.10., `jcCd7KDcPlk` am 17.11.), **keine
+   einzige Freigabe.** Eine Schwelle „zwischen X und Y" wäre erfunden gewesen.
+   → betrifft: **mich, und jeden, der einen Auftrag schreibt.** **Ein
+   Meldungstext ist keine Messung.** Ich hatte eine Formulierung gelesen, daraus
+   eine Mechanik abgeleitet und einen Agenten losgeschickt, sie zu bestätigen —
+   **ein Auftrag, der eine Hypothese als Tatsache mitliefert, bekommt sie
+   bestätigt zurück.** Dass hier stattdessen Widerspruch kam, ist sein
+   Verdienst, nicht die Folge meiner Formulierung.
+   **Was damit steht, unverändert:** die Regel vom 22.10. — *kein Musikbett,
+   nicht Original, nicht Cover, nicht leiser; die Fassung ohne Musik ist die
+   Fassung.* Seine Freigabe vom 23.10. war ausdrücklich ein Versuch
+   (*„dann teste ich, ob eines davon auf YouTube durchgeht"*). **Das Ergebnis
+   liegt vor: es geht nicht durch, auch nicht bei 55 Sekunden Bett.**
+
+2. **„Mittig" nach Augenmaß war fünfmal daneben.** Seine Beanstandung: *„du
+   zentrierst die Gesichter nicht wirklich. Alfreds Gesicht ist viel zu weit
+   rechts."* Shorts II hatte jeden Ausschnitt an **sieben Stellen** angesehen
+   und für gut befunden. Eine Gesichtserkennung über elf Einspieler, je neun
+   Bilder, waagerechte Lage im Kasten (0,5 = Mitte):
+   | | vorher | jetzt |
+   |---|---:|---:|
+   | Batman Alfred | **0,865** | 0,549 |
+   | GWH Umarmung | **0,810** | 0,540 |
+   | Wild Gesicht | **0,721** | 0,532 |
+   | Steve Jobs | **0,333** | 0,549 |
+   | Wild Natur | **0,229** | 0,501 |
+   **Fünf lagen weiter als ein Zehntel der Kastenbreite daneben.** Die
+   Korrektur ist eine Zeile: Verschiebung = (gemessen − 0,5) × Quadratseite.
+   → betrifft: jede B-Roll-Auswahl. **Lage ist eine Zahl, kein Eindruck** —
+   beim Hinsehen prüft man, ob das Gesicht *drin* ist, nicht, ob es *mittig*
+   ist. Ein Detektor über neun Bilder je Clip ersetzt sieben Kontaktabzüge.
+
+3. **Er streicht jeden Gedankenstrich-Einschub und jeden deutenden zweiten
+   Satz.** Er hat meinen Virgin-Active-Entwurf am 17.11. verschickt und dabei
+   **vier Mal dasselbe getan**: den Vorwurf stehen lassen, die Erklärung
+   danach streichen. *„That is not a delay any more. That is a choice."* —
+   weg. *„There is nothing left for me to send you."* — weg. Dazu: **„Six
+   months." → „6 months!"**, und die Forderung *„Pay it. Then send me the
+   reference number"* **ersatzlos gestrichen**.
+   → betrifft: **jeden, der in seinem Namen schreibt.** Mein Muster ist: den
+   Schlag landen, dann erklären, was er bedeutet. Seines: **landen und
+   aufhören.** Und: eine Eskalationsmail von ihm hat **keine Forderung und
+   keinen Abbinder**. Voll ausgeschrieben in `voice/en-podcast-outreach.md`.
+   **Die Mail hat nach 55 Minuten eine Antwort bekommen**, nach sechs Monaten
+   Stillstand.
+
+---
+
 ## Ausgabe 49 — 18.11.2026, 06:50 Kapstadt · eine fremde Messung gilt für fremdes Material
 
 **Alle sechs Einträge kommen von Shorts II aus einer Nacht am selben Short**,

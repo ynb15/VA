@@ -6,6 +6,151 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## „Mittig" nach Augenmaß war fünfmal daneben (18.11.)
+
+*„du zentrierst die Gesichter nicht wirklich. Alfreds Gesicht ist viel zu
+weit rechts."*
+
+Ich hatte jeden Ausschnitt an sieben Stellen angesehen und für gut befunden.
+Eine Gesichtserkennung über alle elf Einspieler, je neun Bilder, sagt etwas
+anderes — waagerechte Lage im Kasten, 0,5 ist die Mitte:
+
+| | vorher | jetzt |
+|---|---:|---:|
+| Batman Alfred | **0,865** | 0,549 |
+| GWH Umarmung | **0,810** | 0,540 |
+| Wild Gesicht | **0,721** | 0,532 |
+| Steve Jobs | **0,333** | 0,549 |
+| Wild Natur | **0,229** | 0,501 |
+| GWH Damon | 0,581 | 0,497 |
+
+**Fünf lagen weiter als ein Zehntel der Kastenbreite daneben**, und ich habe
+sie alle einzeln angesehen, ohne es zu merken. Beim Hinsehen prüft man, ob
+das Gesicht *drin* ist — nicht, ob es *mittig* ist.
+
+Die Korrektur ist eine Zeile: Verschiebung = (gemessen − 0,5) × Quadratseite.
+
+**Regel: Lage ist eine Zahl, kein Eindruck.** Ein Detektor über neun Bilder
+je Clip kostet eine Minute und ersetzt sieben Kontaktabzüge.
+
+Senkrecht bleibt eine Materialgrenze: bei Watts, Jobs und Mandela sitzt das
+Gesicht bei 0,25 der Kastenhöhe, weil es im Quellbild schon dort sitzt und
+oben nichts mehr ist, was man dazunehmen könnte. Steht in der Übergabe.
+
+→ betrifft: jede B-Roll-Auswahl, `video/kino-shorts2.py`
+
+## Zwei Blöcke gleich lang zu machen ist eine Zeile — es zu bemerken nicht (18.11.)
+
+*„die Alan Watts-Szene läuft jetzt so lange und Steve Jobs nur irgendwie
+1 Sekunde oder so gefühlt. So, das kannst du ja wohl ausbalancieren."*
+
+Es waren 9,4 s gegen 2,25 s. Die Ungleichheit kam daher, dass ich beim
+Tausch die **Plätze** vertauscht und ihre **Längen** behalten hatte — der
+lange Platz war für Jobs gebaut worden, der kurze für die 2,7 s, die das
+Ram-Dass-Material hergab. Nach dem Tausch passte die Länge zu keinem der
+beiden mehr.
+
+**Regel: wenn zwei Blöcke die Plätze tauschen, tauschen die Längen nicht
+automatisch mit — ihre Begründung bleibt beim alten Inhalt.** Nach jedem
+Tausch die Längen gegen den neuen Inhalt prüfen.
+
+→ betrifft: jede Umstellung im Schnitt
+
+## Die Blitzzeiten standen seit Fassung 2 fest — der Schnitt darunter nicht (18.11.)
+
+*„die Fotoblitze sollen natürlich nur passieren, wenn du die Szene wechselst.
+Nicht einfach random so zwischendrin, du Clown."*
+
+Die neun Zeiten (1,33 · 9,50 · 15,00 · 18,75 · 26,83 · 34,67 · 40,00 · 45,33 ·
+52,75) hatte ich am **16.11. für Fassung 2** gewählt, als sie auf
+Blockwechseln lagen. Danach wurde der Schnitt **siebenmal umgebaut** — und
+die Zeiten standen jedes Mal unverändert in derselben Befehlszeile.
+
+Nachgemessen: **sechs von neun lagen mitten in einer laufenden
+Einstellung.** Ich habe sie bei jedem Durchlauf mitkopiert, ohne sie je
+gegen das Bild zu prüfen.
+
+Jetzt kommen sie aus den Blockgrenzen, die der Renderer selbst ausgibt, und
+werden am fertigen Bild gegengemessen (Bild-zu-Bild-Sprung, Untertitel
+ausgeblendet): jeder Blitz liegt auf einem echten Schnitt, Abstand höchstens
+ein Bild.
+
+**Regel: ein Parameter, der sich auf Zeiten im Schnitt bezieht, wird aus dem
+Schnitt abgeleitet, nicht als Zahl mitgeschleppt.** Was von Hand in der
+Befehlszeile steht, überlebt jeden Umbau unbemerkt.
+
+Und: **fünf Schnitte bekommen bewusst keinen Blitz** — die vier innerhalb
+des Into-the-Wild-Bands und einer innerhalb des Mandela-Bands. Das sind
+Schnitte im selben Film, kein Szenenwechsel; fünf Blitze in fünf Sekunden
+wären das Stroboskop, das ich in Fassung 2 schon einmal zurückgebaut hatte.
+Steht so in der Übergabe, damit er es umentscheiden kann.
+
+→ betrifft: `video/kino-shorts2.py` — die Blitzzeiten gehören berechnet,
+nicht übergeben
+
+## Zum dritten Mal derselbe Wert: 0,84 (18.11.)
+
+Alan Watts kam auf den langen Platz zurück. Seine Einzelbewegung: **0,84** —
+derselbe Wert, den ich zweimal zuvor als grenzwertig gemeldet und bei Steve
+Jobs (0,82) schon vorher berücksichtigt hatte.
+
+Neuneinhalb Sekunden davon am Stück wären wieder die stehende Stelle
+gewesen. Gelöst ohne zweites Material: **derselbe Take, zwei verschiedene
+Ausschnitte** — die erste Hälfte weit (Quadrat 900), die zweite deutlich
+näher am Gesicht (Quadrat 640). Der Schnitt dazwischen bricht die Starre,
+ohne dass neues Material nötig ist.
+
+Am fertigen Short: keine Strecke unter 0,90 ausser dem Outro.
+
+**Regel: statisches Material wird nicht durch Kürzen gerettet, sondern durch
+einen Ausschnittwechsel.** Ein Anschnitt aus demselben Take kostet nichts
+und liest sich als Schnitt.
+
+→ betrifft: jede B-Roll-Auswahl mit sitzenden Sprechern
+
+## Zwölf Sekunden Material, 2,7 davon brauchbar — und das gehört gesagt (18.11.)
+
+Die Ram-Dass-Datei ist 12,3 s lang. Aufgeschlüsselt:
+
+| | |
+|---|---|
+| 0,07–1,87 | Gegenlicht, Silhouetten, kein Gesicht |
+| **1,87–2,93** | **Ram Dass, blaues Hemd, nah** |
+| 2,93–5,43 | Gegenlicht und Handstand, kein Gesicht |
+| **5,43–9,40** | **NETFLIX eingebrannt, unten rechts** |
+| **9,73–11,70** | **bärtiger Mann, lachend** |
+| 11,70–12,30 | Überblendung auf eine andere Person |
+
+**2,7 s von 12,3 s.** Der Netflix-Schriftzug liegt unten rechts und wandert
+bei einem Zuschnitt auf eine Person mitten ins Bild — nicht wegzuschneiden.
+
+Das in der Übergabe aufzulisten kostet zehn Zeilen und beantwortet die
+Frage, die er sonst stellt („warum ist da so wenig Ram Dass"). **Eine
+Materialgrenze, die man nicht benennt, sieht aus wie Faulheit** — genau das
+ist mir bei *Into the Wild* passiert, nur umgekehrt: dort war das Material
+da und ich hatte zu wenig gesucht.
+
+→ betrifft: jede Übergabe mit fremdem Material
+
+## Den bekannten Fehler vorher messen, nicht hinterher (18.11.)
+
+Steve Jobs steht am Rednerpult und liest. Einzelbewegung der Nahaufnahme:
+**0,82** — genau der Wert, den ich ihm zwei Runden vorher bei Alan Watts als
+grenzwertig gemeldet hatte, und der Nachbar des Wertes, den er als
+„Conversion Killer" beanstandet hat.
+
+Gemessen **bevor** gebaut wurde, nicht danach. Konsequenz: nicht eine
+Einstellung von 11,3 s, sondern zwei von 6,45 und 4,85 s mit einem Schnitt
+dazwischen.
+
+Am fertigen Short nachgemessen: keine Strecke unter 0,90 ausser dem Outro,
+Median 3,54.
+
+**Regel: ein Fehler, den er einmal beanstandet hat, wird beim nächsten
+Material VORHER gemessen.** Die Messung kostet einen Befehl.
+
+→ betrifft: jede B-Roll-Auswahl
+
 ## Lesbarkeit ist messbar — und die zweite Abweichung von der Referenz (18.11.)
 
 *„dadurch, dass ich ein weißes T-Shirt trage, ist die halt nicht optimal
