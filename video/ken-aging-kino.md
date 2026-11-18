@@ -1,3 +1,47 @@
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 9 (18.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `YNB Podcast Ken Stern Aging (Kino).mp4` | 63,2 s (59,4 + Outro 3,8) |
+
+## Fassung 9 — Steve Jobs und Ram Dass nach Mandela
+
+| im Short | | Quelle |
+|---|---|---|
+| 41,08–46,46 | Steve Jobs, Stanford, nah | 0:00,6 · 6,45 s |
+| 46,46–50,50 | Steve Jobs, zweite Nahaufnahme | 0:44,6 · 4,85 s |
+| 50,50–51,33 | Ram Dass, blaues Hemd | 0:01,9 · 1,0 s |
+| 51,33–52,75 | Ram Dass, bärtig, lachend | 0:09,8 · 1,7 s |
+
+Die drei Batman-Einstellungen im Essay (Grab, Gordon, Totenwache) sind raus.
+**Alfred bleibt im Zitat** bei 5,71–11,58 s — seine Lieblingsstelle, nicht
+angefasst.
+
+Jobs sitzt auf „softens into the quiet confidence of knowing what truly
+matters", Ram Dass auf „more radiant" und „more whole".
+
+### Was das Material hergab
+
+**Ram Dass: 2,7 s von 12,3 s.** 5,43–9,40 trägt einen eingebrannten
+NETFLIX-Schriftzug unten rechts, der bei einem Zuschnitt auf eine Person
+mitten ins Bild wandert. Der Rest ist Gegenlicht ohne Gesicht. Die
+Aufschlüsselung steht in der Übergabe.
+
+**Steve Jobs: 49,5 s, davon nah 0:00–0:12,5 und ab 0:44,5.** Dazwischen
+steht die Kamera weit weg am Rednerpult.
+
+### Der bekannte Fehler, vorher gemessen
+
+Jobs steht am Pult und liest — Einzelbewegung **0,82**, derselbe Wert, den
+ich bei Alan Watts als grenzwertig gemeldet hatte. **Vor** dem Bauen
+gemessen, deshalb zwei Einstellungen mit Schnitt statt einer langen.
+
+Am fertigen Short: keine Strecke unter 0,90 ausser dem Outro, Median 3,54.
+
+---
+
 # Ken Stern — Die Kunst des Alterns, Kino-Fassung 8 (18.11.)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.

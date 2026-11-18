@@ -6,6 +6,49 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Zwölf Sekunden Material, 2,7 davon brauchbar — und das gehört gesagt (18.11.)
+
+Die Ram-Dass-Datei ist 12,3 s lang. Aufgeschlüsselt:
+
+| | |
+|---|---|
+| 0,07–1,87 | Gegenlicht, Silhouetten, kein Gesicht |
+| **1,87–2,93** | **Ram Dass, blaues Hemd, nah** |
+| 2,93–5,43 | Gegenlicht und Handstand, kein Gesicht |
+| **5,43–9,40** | **NETFLIX eingebrannt, unten rechts** |
+| **9,73–11,70** | **bärtiger Mann, lachend** |
+| 11,70–12,30 | Überblendung auf eine andere Person |
+
+**2,7 s von 12,3 s.** Der Netflix-Schriftzug liegt unten rechts und wandert
+bei einem Zuschnitt auf eine Person mitten ins Bild — nicht wegzuschneiden.
+
+Das in der Übergabe aufzulisten kostet zehn Zeilen und beantwortet die
+Frage, die er sonst stellt („warum ist da so wenig Ram Dass"). **Eine
+Materialgrenze, die man nicht benennt, sieht aus wie Faulheit** — genau das
+ist mir bei *Into the Wild* passiert, nur umgekehrt: dort war das Material
+da und ich hatte zu wenig gesucht.
+
+→ betrifft: jede Übergabe mit fremdem Material
+
+## Den bekannten Fehler vorher messen, nicht hinterher (18.11.)
+
+Steve Jobs steht am Rednerpult und liest. Einzelbewegung der Nahaufnahme:
+**0,82** — genau der Wert, den ich ihm zwei Runden vorher bei Alan Watts als
+grenzwertig gemeldet hatte, und der Nachbar des Wertes, den er als
+„Conversion Killer" beanstandet hat.
+
+Gemessen **bevor** gebaut wurde, nicht danach. Konsequenz: nicht eine
+Einstellung von 11,3 s, sondern zwei von 6,45 und 4,85 s mit einem Schnitt
+dazwischen.
+
+Am fertigen Short nachgemessen: keine Strecke unter 0,90 ausser dem Outro,
+Median 3,54.
+
+**Regel: ein Fehler, den er einmal beanstandet hat, wird beim nächsten
+Material VORHER gemessen.** Die Messung kostet einen Befehl.
+
+→ betrifft: jede B-Roll-Auswahl
+
 ## Lesbarkeit ist messbar — und die zweite Abweichung von der Referenz (18.11.)
 
 *„dadurch, dass ich ein weißes T-Shirt trage, ist die halt nicht optimal
