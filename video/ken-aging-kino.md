@@ -1,3 +1,47 @@
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 10 (18.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `YNB Podcast Ken Stern Aging (Kino).mp4` | 63,2 s (59,4 + Outro 3,8) |
+
+## Fassung 10 — zwei Punkte
+
+### 1. Getauscht: Alan Watts, dann Steve Jobs
+
+| im Short | | Quelle |
+|---|---|---|
+| 41,08–46,08 | Alan Watts, weit | 1:02,0 · 6,0 s |
+| 46,08–50,50 | Alan Watts, näher angeschnitten | 1:08,0 · 5,3 s |
+| 50,50–52,75 | Steve Jobs, Stanford | 0:44,6 · 2,7 s |
+
+Ram Dass ist raus. **Zwei Watts-Einstellungen statt einer**, weil seine
+Einzelbewegung bei 0,84 liegt — zum dritten Mal derselbe Wert. Gelöst ohne
+neues Material: derselbe Take, zwei Ausschnitte (Quadrat 900 weit, 640 nah).
+Am fertigen Short keine Strecke unter 0,90 ausser dem Outro.
+
+**Watts läuft jetzt 9,4 s.** In Fassung 3 waren 12,3 s „viel zu lange" —
+steht in der Übergabe, mit dem Rückweg.
+
+### 2. Die Blitze lagen seit Fassung 2 auf alten Zeiten
+
+Die neun Zeitpunkte stammten vom 16.11. und waren über **sieben Umbauten**
+unverändert mitkopiert worden. Nachgemessen: **sechs von neun lagen mitten
+in einer laufenden Einstellung.**
+
+Jetzt aus den Blockgrenzen abgeleitet und am fertigen Bild gegengemessen —
+jeder Blitz auf einem echten Schnitt, Abstand höchstens ein Bild:
+
+`1,33 · 5,71 · 11,58 · 18,75 · 26,83 · 31,67 · 41,08 · 50,50 · 52,75`
+
+Fünf Schnitte bekommen bewusst keinen: die vier innerhalb des
+Into-the-Wild-Bands und einer im Mandela-Band. Schnitte im selben Film sind
+kein Szenenwechsel, und fünf Blitze in fünf Sekunden wären das Stroboskop
+aus Fassung 2.
+
+---
+
 # Ken Stern — Die Kunst des Alterns, Kino-Fassung 9 (18.11.)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.

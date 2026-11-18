@@ -1,5 +1,5 @@
-# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 9 (63,2 s · 59,4 s + Outro 3,8 s)
-# Steve Jobs und Ram Dass nach Mandela · Batman im Essay raus
+# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 10 (63,2 s · 59,4 s + Outro 3,8 s)
+# Alan Watts, dann Steve Jobs · Blitze nur noch auf Szenenwechseln
 #
 # Zeiten sind die im FERTIGEN Short.
 #
@@ -72,50 +72,33 @@
 # Die Umarmung sitzt auf „having been is a kind of being".
 
 # ══════════════════════════════════════════════════════════════════
-# I. STEVE JOBS UND RAM DASS NACH MANDELA — BATMAN IST DA RAUS
+# I. GETAUSCHT: ALAN WATTS, DANN STEVE JOBS
 # ══════════════════════════════════════════════════════════════════
-#   41,08–46,46  STEVE JOBS, Stanford, nah                 (0:00,6  6,45 s)
-#   46,46–50,50  STEVE JOBS, zweite Nahaufnahme            (0:44,6  4,85 s)
-#   50,50–51,33  RAM DASS, blaues Hemd, nah                (0:01,9  1,0 s)
-#   51,33–52,75  RAM DASS, bärtig, lachend                 (0:09,8  1,7 s)
+# „Lass uns Ram Dass mit Steve Jobs tauschen und Ram Dass dann mit Alan
+#  Watts austauschen."
 #
-# Die drei Batman-Einstellungen (Grab, Gordon, Totenwache) sind aus dem
-# Essay raus. Alfred bleibt im ZITAT, bei 5,71–11,58 s — die hattest Du
-# als Lieblingsstelle benannt, die habe ich nicht angefasst.
+# Also: die beiden Plaetze getauscht, und auf dem langen steht jetzt
+# Watts statt Ram Dass.
 #
-# Jobs sitzt auf „softens into the quiet confidence of knowing what truly
-# matters", Ram Dass auf „more radiant" und „more whole". Letzteres ist
-# das lachende Gesicht als letztes Bild vor Dir.
-
-# ══════════════════════════════════════════════════════════════════
-# II. WAS BEIM RAM-DASS-MATERIAL NICHT GING
-# ══════════════════════════════════════════════════════════════════
-# Die Datei ist 12,3 s lang. Davon brauchbar: 2,7 s.
+#   41,08–46,08  ALAN WATTS, weit                     (1:02,0  6,0 s)
+#   46,08–50,50  ALAN WATTS, naeher angeschnitten     (1:08,0  5,3 s)
+#   50,50–52,75  STEVE JOBS, Stanford                 (0:44,6  2,7 s)
 #
-#   0,07–1,87   Gegenlicht, Silhouetten, kein Gesicht
-#   1,87–2,93   RAM DASS, blaues Hemd, nah          <- genommen
-#   2,93–4,60   Gegenlicht, kein Gesicht
-#   4,60–5,43   Handstand am Strand, kein Gesicht
-#   5,43–9,40   NETFLIX-SCHRIFTZUG im Bild, unten rechts
-#   9,73–11,70  bärtiger Mann, lachend              <- genommen
-#   11,70–12,30 Ueberblendung auf eine andere Person
+# Ram Dass ist damit raus. Die Datei liegt im Repo, falls Du ihn
+# woanders haben willst.
 #
-# Der Netflix-Schriftzug ist eingebrannt, nicht wegzuschneiden: er steht
-# unten rechts im Bild und liegt mitten im Gesichtsbereich, sobald man
-# auf eine Person zuschneidet. Ich habe die Strecke ausgelassen.
+# ZWEI EINSTELLUNGEN STATT EINER, und zwar aus einem Grund: Watts sitzt
+# still und redet, seine Einzelbewegung liegt bei 0,84 — das ist der Wert,
+# den ich Dir schon zweimal als grenzwertig gemeldet habe. Neuneinhalb
+# Sekunden davon am Stueck waeren wieder die stehende Stelle gewesen.
+# Deshalb laeuft die erste Haelfte weit und die zweite deutlich naeher am
+# Gesicht, mit einem Schnitt dazwischen. Nachgemessen am fertigen Short:
+# keine Strecke unter 0,90 ausser dem Outro.
 #
-# Wenn Du mehr Ram Dass willst, brauche ich entweder eine Fassung ohne
-# den Schriftzug oder weitere Szenen. Sag Bescheid, dann baue ich um.
-#
-# Bei Steve Jobs war es einfacher: die Stanford-Rede ist nah von 0:00 bis
-# 0:12,5 und wieder ab 0:44,5. Dazwischen steht die Kamera weit weg am
-# Rednerpult, da ist er briefmarkengross — die Strecke ist draussen.
-#
-# ZUR STEHENDEN STELLE: Jobs steht am Pult und liest, seine Einzelbewegung
-# liegt bei 0,82 — das ist der Wert, den ich Dir bei Alan Watts als
-# grenzwertig gemeldet hatte. Deshalb zwei Einstellungen statt einer, mit
-# Schnitt dazwischen. Am fertigen Short nachgemessen: KEINE Strecke mehr
-# unter 0,90 ausser dem Outro. Median im Short 3,54.
+# EINE ZAHL, DIE DU WISSEN SOLLTEST: Watts laeuft jetzt 9,4 s. In
+# Fassung 3 hattest Du 12,3 s als „viel zu lange" beanstandet. Wenn 9,4
+# immer noch zu lang ist, sag eine Zahl — ich kann Mandela davor
+# verlaengern und Watts kuerzen, das ist ein Durchlauf.
 #
 # Der ganze Aufbau:
 #   0,00–1,33    DU — „Frankl said"
@@ -124,9 +107,48 @@
 #   11,58–18,75  GOOD WILL HUNTING — Damon, die Umarmung
 #   18,75–26,83  DU — die Ueberleitung
 #   26,83–41,08  MANDELA — bei den Leuten, dann die Menge
-#   41,08–50,50  STEVE JOBS — Stanford
-#   50,50–52,75  RAM DASS
+#   41,08–50,50  ALAN WATTS
+#   50,50–52,75  STEVE JOBS
 #   52,75–59,40  DU — die letzten beiden Saetze
+
+# ══════════════════════════════════════════════════════════════════
+# II. DIE BLITZE SITZEN JETZT AUF SCHNITTEN — nachgemessen
+# ══════════════════════════════════════════════════════════════════
+# „die Fotoblitze sollen natuerlich nur passieren, wenn du die Szene
+#  wechselst. Nicht einfach random so zwischendrin."
+#
+# Berechtigt. Die alten Zeiten (1,33 · 9,50 · 15,00 · 18,75 · 26,83 ·
+# 34,67 · 40,00 · 45,33 · 52,75) stammten aus Fassung 2 und waren seitdem
+# nicht mitgezogen worden — nach sieben Umbauten lagen sechs davon
+# mitten in einer laufenden Einstellung.
+#
+# Jetzt kommen sie aus den Blockgrenzen selbst:
+#    1,33  DU -> Into The Wild
+#    5,71  Into The Wild -> Batman
+#   11,58  Batman -> Good Will Hunting
+#   18,75  Good Will Hunting -> DU
+#   26,83  DU -> Mandela
+#   31,67  Mandela Saal -> Mandela Menge
+#   41,08  Mandela -> Alan Watts
+#   50,50  Alan Watts -> Steve Jobs
+#   52,75  Steve Jobs -> DU
+#
+# Nachgemessen am fertigen Bild (Bild-zu-Bild-Sprung, Untertitel
+# ausgeblendet): jeder Blitz liegt auf einem echten Schnitt, Abstand
+# hoechstens ein Bild (0,033 s).
+#
+# FUENF SCHNITTE HABEN ABSICHTLICH KEINEN BLITZ:
+#   1,90 · 3,50 · 4,37 · 5,20   die vier Schnitte INNERHALB von
+#                               Into The Wild
+#   36,13                       ein Schnitt innerhalb des Mandela-Bands
+# Das sind Schnitte im selben Film, kein Szenenwechsel. Fuenf Blitze in
+# den ersten fuenf Sekunden waeren ein Stroboskop — genau das hatte ich
+# in Fassung 2 schon einmal zurueckgebaut. Wenn Du sie trotzdem willst,
+# sag es.
+#
+# Der Anschnitt bei Watts (46,08) bekommt auch keinen: selbe Person,
+# selbe Einstellung, nur naeher. Der Sprungmesser erkennt ihn nicht
+# einmal als Schnitt.
 
 # ══════════════════════════════════════════════════════════════════
 # II. DIE SCHRIFT IST GROESSER UND HAT JETZT EINE KANTE

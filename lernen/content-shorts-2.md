@@ -6,6 +6,58 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Die Blitzzeiten standen seit Fassung 2 fest — der Schnitt darunter nicht (18.11.)
+
+*„die Fotoblitze sollen natürlich nur passieren, wenn du die Szene wechselst.
+Nicht einfach random so zwischendrin, du Clown."*
+
+Die neun Zeiten (1,33 · 9,50 · 15,00 · 18,75 · 26,83 · 34,67 · 40,00 · 45,33 ·
+52,75) hatte ich am **16.11. für Fassung 2** gewählt, als sie auf
+Blockwechseln lagen. Danach wurde der Schnitt **siebenmal umgebaut** — und
+die Zeiten standen jedes Mal unverändert in derselben Befehlszeile.
+
+Nachgemessen: **sechs von neun lagen mitten in einer laufenden
+Einstellung.** Ich habe sie bei jedem Durchlauf mitkopiert, ohne sie je
+gegen das Bild zu prüfen.
+
+Jetzt kommen sie aus den Blockgrenzen, die der Renderer selbst ausgibt, und
+werden am fertigen Bild gegengemessen (Bild-zu-Bild-Sprung, Untertitel
+ausgeblendet): jeder Blitz liegt auf einem echten Schnitt, Abstand höchstens
+ein Bild.
+
+**Regel: ein Parameter, der sich auf Zeiten im Schnitt bezieht, wird aus dem
+Schnitt abgeleitet, nicht als Zahl mitgeschleppt.** Was von Hand in der
+Befehlszeile steht, überlebt jeden Umbau unbemerkt.
+
+Und: **fünf Schnitte bekommen bewusst keinen Blitz** — die vier innerhalb
+des Into-the-Wild-Bands und einer innerhalb des Mandela-Bands. Das sind
+Schnitte im selben Film, kein Szenenwechsel; fünf Blitze in fünf Sekunden
+wären das Stroboskop, das ich in Fassung 2 schon einmal zurückgebaut hatte.
+Steht so in der Übergabe, damit er es umentscheiden kann.
+
+→ betrifft: `video/kino-shorts2.py` — die Blitzzeiten gehören berechnet,
+nicht übergeben
+
+## Zum dritten Mal derselbe Wert: 0,84 (18.11.)
+
+Alan Watts kam auf den langen Platz zurück. Seine Einzelbewegung: **0,84** —
+derselbe Wert, den ich zweimal zuvor als grenzwertig gemeldet und bei Steve
+Jobs (0,82) schon vorher berücksichtigt hatte.
+
+Neuneinhalb Sekunden davon am Stück wären wieder die stehende Stelle
+gewesen. Gelöst ohne zweites Material: **derselbe Take, zwei verschiedene
+Ausschnitte** — die erste Hälfte weit (Quadrat 900), die zweite deutlich
+näher am Gesicht (Quadrat 640). Der Schnitt dazwischen bricht die Starre,
+ohne dass neues Material nötig ist.
+
+Am fertigen Short: keine Strecke unter 0,90 ausser dem Outro.
+
+**Regel: statisches Material wird nicht durch Kürzen gerettet, sondern durch
+einen Ausschnittwechsel.** Ein Anschnitt aus demselben Take kostet nichts
+und liest sich als Schnitt.
+
+→ betrifft: jede B-Roll-Auswahl mit sitzenden Sprechern
+
 ## Zwölf Sekunden Material, 2,7 davon brauchbar — und das gehört gesagt (18.11.)
 
 Die Ram-Dass-Datei ist 12,3 s lang. Aufgeschlüsselt:
