@@ -1,0 +1,44 @@
+{
+  "quelle": "vorlage-aging-kurz.mov",
+  "groesse": [
+    1920,
+    1080
+  ],
+  "einstellungen": [
+    {
+      "kasten": "396:0:608:1080",
+      "lippe": 1000,
+      "start": 0.0,
+      "ende": 7.01,
+      "wer": "Yannick, Nah — das Frankl-Zitat"
+    },
+    {
+      "kasten": "0:0:608:1080",
+      "lippe": 1000,
+      "start": 7.01,
+      "ende": 13.11,
+      "wer": "Totale, Kasten auf Yannick"
+    },
+    {
+      "kasten": "396:0:608:1080",
+      "lippe": 1000,
+      "start": 13.11,
+      "ende": 28.4952,
+      "wer": "Yannick, Nah — Zitat zu Ende, dann die Ueberleitung"
+    },
+    {
+      "kasten": "0:0:608:1080",
+      "lippe": 1000,
+      "start": 28.4952,
+      "ende": 32.2619,
+      "wer": "Totale, Kasten auf Yannick — Essay beginnt"
+    },
+    {
+      "kasten": "396:0:608:1080",
+      "lippe": 1000,
+      "start": 32.2619,
+      "ende": 66.742,
+      "wer": "Yannick, Nah — der Essay bis 'not feared'"
+    }
+  ]
+}

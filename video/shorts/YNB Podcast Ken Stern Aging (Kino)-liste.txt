@@ -1,5 +1,5 @@
-# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 11 (63,2 s · 59,4 s + Outro 3,8 s)
-# Gesichter gemessen und zentriert · Watts und Jobs gleich lang
+# Ken Stern — Die Kunst des Alterns · KINO-FASSUNG 12 (59,5 s · 55,7 s + Outro 3,8 s)
+# UNTER 60 SEKUNDEN · Ueberleitung abgepact, Pausen gekuerzt
 #
 # Zeiten sind die im FERTIGEN Short.
 #
@@ -70,6 +70,62 @@
 #   11,58–17,08  Damon, eine Einstellung                     (2:51,8)
 #   17,08–18,75  die Umarmung                                (3:06,6)
 # Die Umarmung sitzt auf „having been is a kind of being".
+
+# ══════════════════════════════════════════════════════════════════
+# A. UNTER 60 SEKUNDEN — 59,47 s
+# ══════════════════════════════════════════════════════════════════
+# YouTube sperrt Shorts mit lizenzierter Musik ueber 60 Sekunden. Das
+# betrifft nicht nur diesen Short, sondern jeden mit Musik.
+#
+#   vorher   63,20 s  (59,40 + Outro 3,80)
+#   jetzt    59,47 s  (55,67 + Outro 3,80)
+#   Luft     0,53 s
+#
+# Herausgenommen sind 4,49 s Vorlagenzeit, und zwar an zwei Sorten von
+# Stellen:
+#
+# 1. DIE UEBERLEITUNG, BESCHLEUNIGT (nicht geschnitten)
+#    Du hattest recht: dort sprichst Du am langsamsten im ganzen Short.
+#    Gemessen:
+#      Ueberleitung   1,70 Woerter/s     Essay   4,55 Woerter/s
+#    In 9,7 Sekunden stecken 3,88 Sekunden Pause.
+#    Sie laeuft jetzt 1,40-fach. GESCHNITTEN wird dort NICHT — Du bist
+#    im Bild, jeder Schnitt waere ein Sprung im Gesicht. `atempo` haelt
+#    die Tonhoehe, es klingt nicht nach Chipmunk.
+#    Danach:
+#      Ueberleitung   2,65 Woerter/s     Essay   4,20 Woerter/s
+#    Sie bleibt also die langsamste Stelle, aber sie steht nicht mehr.
+#    Ersparnis 2,77 s.
+#
+# 2. SECHS PAUSEN GEKUERZT (geschnitten, aber unsichtbar)
+#    Jede auf 0,15 s zusammengezogen:
+#      1,76–2,60 · 14,60–15,02 · 20,60–20,82 · 21,56–21,78 ·
+#      47,60–47,86 · 62,48–63,14
+#    ALLE SECHS LIEGEN UNTER B-ROLL. Im Bild laeuft an diesen Stellen
+#    Film, nicht Dein Gesicht — der Schnitt ist nicht zu sehen.
+#    Einzeln nachgeprueft, alle sechs. Ersparnis 1,72 s.
+#
+# Was NICHT angefasst wurde: kein Wort ist weg, das Tempo beim Rendern
+# bleibt 1,2, der Aufbau ist unveraendert.
+#
+# ALLE GRENZEN MITGERECHNET. Plan, B-Roll-Fenster und Blitzzeiten liegen
+# in Vorlagenzeit und verschieben sich alle. Das rechnet jetzt ein
+# Werkzeug (`video/abpacen-shorts2.py`), nicht mein Kopf — genau diese
+# Sorte Umrechnung ist hier schon zweimal schiefgegangen.
+# Nachgemessen am fertigen Bild: alle neun Blitze liegen weiter auf
+# einem echten Schnitt, Abstand hoechstens ein Bild.
+#
+# Neue Zeiten im Short:
+#   0,00–1,33    DU — „Frankl said"
+#   1,33–5,13    INTO THE WILD
+#   5,13–11,01   BATMAN — Alfred
+#   11,01–17,83  GOOD WILL HUNTING
+#   17,83–23,61  DU — die Ueberleitung (abgepact)
+#   23,61–37,77  MANDELA
+#   37,77–43,60  ALAN WATTS
+#   43,60–49,01  STEVE JOBS
+#   49,01–55,67  DU — die letzten beiden Saetze
+#   55,67–59,47  Outro
 
 # ══════════════════════════════════════════════════════════════════
 # I. DIE GESICHTER — gemessen, nicht geschaetzt

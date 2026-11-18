@@ -6,6 +6,75 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## 60 Sekunden ist eine harte Grenze, sobald Musik im Short ist (18.11.)
+
+*„Leider hat YouTube das Video gesperrt. Scheinbar muss es unter 60 Sekunden
+sein. Warum auch immer, mit dem Song."*
+
+**YouTube sperrt Shorts mit lizenzierter Musik über 60 Sekunden.** Elf
+Fassungen lang lag die Länge bei 63,2 s, und niemand hat gefragt, ob das
+durchgeht — ich auch nicht, obwohl in `ken-aging-short.md` seit dem 12.11.
+sogar steht: *„YouTube lässt Shorts seit Oktober 2024 bis drei Minuten zu."*
+Das stimmt **ohne** Musik. Mit Musik sind es 60.
+
+**Das betrifft jeden Short dieses Kanals mit Musik**, nicht nur diesen.
+
+**Regel: ein Short mit Musik wird auf ≤ 59,5 s gebaut, nicht auf „passt
+schon".** Die Prüfung gehört in `abnahme.py` (Shorts I): Laufzeit über 60 s
+plus durchlaufendes Musikbett = Fehler, nicht Hinweis.
+
+→ betrifft: `abnahme.py`, jeden Short mit Musik — **gehört an Shorts I
+weitergegeben**
+
+## Kürzen: wo geschnitten werden darf und wo nicht (18.11.)
+
+4,49 s mussten raus. Zwei Mittel, und die Wahl hängt daran, **was im Bild
+läuft**:
+
+| | Mittel | warum |
+|---|---|---|
+| unter B-Roll | **Pause hart schneiden** | im Bild läuft Film, der Schnitt ist nicht zu sehen |
+| Sprecher im Bild | **Strecke beschleunigen** | jeder Schnitt wäre ein Sprung im Gesicht |
+
+Sechs Pausen lagen unter B-Roll — einzeln nachgeprüft, alle sechs. 1,72 s
+geschenkt. Die Überleitung dagegen ist sein Gesicht, dort wurde mit
+`atempo` 1,40 beschleunigt (hält die Tonhöhe), 2,77 s.
+
+Die Beschleunigung war auch inhaltlich richtig, und das ist messbar:
+
+| | vorher | jetzt |
+|---|---:|---:|
+| Überleitung | **1,70 W/s** | 2,65 W/s |
+| Essay | 4,55 W/s | 4,20 W/s |
+
+Sie bleibt die langsamste Stelle — sie steht nur nicht mehr.
+
+**Regel: ein Sprecher im Bild wird beschleunigt, nicht geschnitten. Unter
+B-Roll ist Schneiden umsonst.**
+
+→ betrifft: `video/abpacen-shorts2.py`
+
+## Beim Kürzen verschiebt sich ALLES danach — das rechnet ein Werkzeug (18.11.)
+
+Plan-Grenzen, B-Roll-Fenster und Blitzzeiten liegen in Vorlagenzeit. Wird in
+der Mitte Zeit herausgenommen, verschiebt sich jede davon — hier 5 Plan-
+Grenzen, 13 B-Roll-Fenster und 9 Blitzzeiten.
+
+Genau diese Sorte Umrechnung ist auf diesem Kanal schon **zweimal**
+schiefgegangen: die Blitzzeiten standen sieben Umbauten lang falsch, und die
+Quadratmitten waren zweimal um die halbe Seitenlänge verschoben. Beides, weil
+ich Zahlen von Hand mitgeschleppt habe.
+
+Deshalb macht es jetzt `video/abpacen-shorts2.py`: es nimmt die Schnittliste,
+baut die Abbildung alt→neu und gibt Plan, `--broll` und `--blitze` fertig
+aus. Es warnt auch, wenn ein Clip für sein neues Fenster zu kurz geworden
+ist.
+
+**Regel: jede Zahl, die von einer anderen abhängt, wird gerechnet — nie
+abgeschrieben.**
+
+→ betrifft: `video/abpacen-shorts2.py`, `video/kino-shorts2.py`
+
 ## „Mittig" nach Augenmaß war fünfmal daneben (18.11.)
 
 *„du zentrierst die Gesichter nicht wirklich. Alfreds Gesicht ist viel zu

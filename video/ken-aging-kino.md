@@ -1,3 +1,58 @@
+# Ken Stern — Die Kunst des Alterns, Kino-Fassung 12 (18.11.)
+
+**Nicht veröffentlicht.** Liegt zur Abnahme.
+
+| Datei | Länge |
+|---|---|
+| `YNB Podcast Ken Stern Aging (Kino).mp4` | **59,47 s** (55,67 + Outro 3,8) |
+
+## Fassung 12 — unter 60 Sekunden
+
+YouTube hat Fassung 11 gesperrt: **Shorts mit lizenzierter Musik dürfen
+60 Sekunden nicht überschreiten.** 63,2 s waren zu viel. Das betrifft jeden
+Short dieses Kanals mit Musik.
+
+| | |
+|---|---|
+| vorher | 63,20 s |
+| jetzt | **59,47 s** |
+| Luft | 0,53 s |
+
+### Wie die 4,49 s herausgekommen sind
+
+**1. Die Überleitung beschleunigt, nicht geschnitten** — 2,77 s
+
+Er hatte recht: dort spricht er am langsamsten im ganzen Short.
+
+| | vorher | jetzt |
+|---|---:|---:|
+| Überleitung | **1,70 W/s** | 2,65 W/s |
+| Essay | 4,55 W/s | 4,20 W/s |
+
+In 9,7 s stecken 3,88 s Pause. Sie läuft jetzt 1,40-fach (`atempo`, hält die
+Tonhöhe). **Geschnitten wird dort nicht** — er ist im Bild, jeder Schnitt
+wäre ein Sprung im Gesicht.
+
+**2. Sechs Pausen gekürzt** — 1,72 s
+
+Je auf 0,15 s: 1,76–2,60 · 14,60–15,02 · 20,60–20,82 · 21,56–21,78 ·
+47,60–47,86 · 62,48–63,14. **Alle sechs liegen unter B-Roll**, einzeln
+nachgeprüft — im Bild läuft dort Film, der Schnitt ist unsichtbar.
+
+Kein Wort ist weg, das Rendertempo bleibt 1,2, der Aufbau ist unverändert.
+
+### Alle Grenzen gerechnet, nicht abgeschrieben
+
+5 Plan-Grenzen, 13 B-Roll-Fenster und 9 Blitzzeiten liegen in Vorlagenzeit
+und verschieben sich alle. Das macht jetzt **`video/abpacen-shorts2.py`** —
+diese Sorte Umrechnung ist hier schon zweimal schiefgegangen (Blitzzeiten,
+Quadratmitten), beide Male weil ich Zahlen mitgeschleppt habe.
+
+Nachgemessen am fertigen Bild: alle neun Blitze weiter auf einem echten
+Schnitt, Abstand höchstens ein Bild.
+
+---
+
 # Ken Stern — Die Kunst des Alterns, Kino-Fassung 11 (18.11.)
 
 **Nicht veröffentlicht.** Liegt zur Abnahme.
