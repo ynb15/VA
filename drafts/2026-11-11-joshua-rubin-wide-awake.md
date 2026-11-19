@@ -42,13 +42,19 @@ und der Umstand, dass die Mail fast nur von Dir handelt.
 
 > **Zwei Befunde mit Warnhinweis, beide meine Einschätzung, nicht belegt:**
 >
-> **(1) Die Sendung scheint zu schlafen.** Podchaser führt als jüngste Folge
-> **05.03.2025**. Danach finde ich nichts außer einem Feed-Datum vom Oktober 2025, das
-> auch nur eine technische Änderung sein kann. **Ich kann nicht ausschließen, dass er
-> weiterläuft und nur schlecht indexiert ist.** Deshalb steht im Text **kein Satz, der
-> voraussetzt, dass die Sendung läuft oder nicht läuft.** Wenn Du weißt, dass er
-> aufgehört hat, ist das der stärkste Aufhänger überhaupt - sag Bescheid, dann baue
-> ich die Mail darauf um.
+> **(1) Die Sendung schläft nicht - sie läuft auf YouTube.** ~~Podchaser führt als
+> jüngste Folge 05.03.2025, danach finde ich nichts.~~ **Korrigiert am 19.11.2026:**
+> Die Audio-Feeds (Podchaser, Simplecast, Apple) hören im März 2025 auf, **der
+> YouTube-Kanal `@wideawakepodcast` nicht.** Belegt: die Folge **"Rob Hersov Gets
+> Heated: Charlie Kirk, Elon Musk, Mkhwanazi & South Africa's Collapse"** liegt dort,
+> und Charlie Kirk datiert sie frühestens auf Herbst 2025. **Mein Schluss, nicht
+> belegt:** er hat den Schwerpunkt auf Video verlegt und pflegt die Audio-Feeds nicht
+> mehr. Im Mailtext steht trotzdem kein Satz, der von einer Frequenz ausgeht.
+>
+> **Und ein Fund, der an Dich geht:** Josh hat **Rob Hersov** interviewt - den Mann,
+> den Du vorgestern in die Databank aufgenommen hast. Das geht in beide Richtungen:
+> es ist ein echtes Detail für die Josh-Mail, und Josh ist der plausibelste warme Weg
+> zu Hersov, für den es keine öffentliche Mailadresse gibt.
 >
 > **(2) Eine Biografie-Seite schreibt, er habe als Teenager Filme gemacht, damit wegen
 > einer Drogensucht aufgehört, und der Entzug habe ihn zu Wide Awake gebracht.**
