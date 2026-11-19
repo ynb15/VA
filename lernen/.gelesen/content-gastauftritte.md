@@ -1488,3 +1488,54 @@ Das Tempo gehört zur Reihe, nicht zum einzelnen Short, und ist vor jedem
 Lauf aus den Auftragsdateien derselben Folge zu übernehmen.
 
 → betrifft: content-*, alle Short-Agenten
+
+## 18.11. — zweite Sperre für In This Shirt, und warum sich daraus KEINE Längenschwelle ableiten lässt
+
+**Der Anlass:** YouTube hat am 17.11. um 15:50 Kapstadt `jcCd7KDcPlk`
+(„YNB Podcast David Sutcliffe Real Love") weltweit gesperrt — *„contains
+claimed content that exceeds the length limits set by the copyright
+holder"*, beanstandet als **In This Shirt – The Irrepressibles**,
+Rechteinhaber **FUGA**, Typ Audio.
+
+**Erster Befund: dieses Short gibt es hier nicht.** Kein Zweig trägt einen
+Short mit „Real Love" im Namen — weder meiner noch einer der neun anderen
+(geprüft über `git ls-tree` auf allen `origin/claude/*`). Die Sutcliffe-Shorts
+auf meinem Zweig heißen Meaning, Hypermaskulinität, Scheidung, Wut, Schule,
+Lines. **Welche Datei hochgeladen wurde, ist von hier nicht zu sehen**, und
+damit auch nicht, wie lange der Song in `jcCd7KDcPlk` läuft.
+
+**Zweiter Befund: die Längen, die ich messen kann.** Bett isoliert, indem die
+Fassung ohne Musik von der Fassung mit Musik abgezogen wurde; „hörbar" heißt
+über −55 dB:
+
+| Short | Gesamt | Bett hörbar |
+|---|---|---|
+| Rob Paddock Son | 59,65 s | **55 s** |
+| Sutcliffe Hypermaskulinität | 60,08 s | ~56 s (keine Gegenfassung zum Abziehen) |
+| YNB @ The Garden Breakdown | 65,65 s | **65 s** (läuft übers Outro) |
+| Sutcliffe Lines (neu) | 68,98 s | **69 s** (läuft übers Outro) |
+| Sutcliffe Meaning | 89,01 s | **85 s** |
+
+**Dritter Befund, und der widerspricht der naheliegenden Lesart:** *„FUGA
+erlaubt eine gewisse Länge"* ist keine Messung, sondern eine Lesart des
+Meldungstextes. Derselbe Satz — *„exceeds the length limits set by the
+copyright holder"* — stand am 22.10. unter **drei verschiedenen Titeln mit
+drei verschiedenen Rechteinhabern** (Daylight/Virgin, In This Shirt/FUGA,
+Comptine/UMPG). Er ist YouTubes Standardtext für diese Anspruchsart, kein
+FUGA-spezifisches Zugeständnis.
+
+**Und ohne einen einzigen nicht gesperrten Upload mit diesem Song gibt es
+keine Klammer.** Gemessen sind zwei Uploads mit In This Shirt und **zwei**
+weltweite Sperren (`5nl--61ZBBI` am 22.10., `jcCd7KDcPlk` am 17.11.), keine
+einzige Freigabe. Eine Schwelle „zwischen X und Y" wäre erfunden. Wer sie
+braucht, muss beim youtube-manager fragen, welche Uploads mit diesem Song
+**nicht** beanstandet wurden — dort liegen die Video-IDs, hier nicht.
+
+**Was damit steht:** die Regel vom 22.10. (*„kein Musikbett — nicht Original,
+nicht Cover, nicht leiser; die Fassung ohne Musik ist nicht die Nebenfassung,
+sie ist die Fassung"*) ist durch diese zweite Sperre bestätigt, nicht
+aufgeweicht. Seine Freigabe vom 23.10. war ausdrücklich ein Test
+(*„dann teste ich, ob eines davon auf YouTube durchgeht"*) — das Ergebnis des
+Tests liegt jetzt vor: es geht nicht durch, auch nicht bei 55 s.
+
+→ betrifft: alle Content-Agenten, youtube-manager, thumbnails

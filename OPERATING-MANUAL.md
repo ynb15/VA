@@ -9502,6 +9502,17 @@ Original, nicht Cover, nicht leiser; die Fassung ohne Musik ist die Fassung.*
 Seine Freigabe vom 23.10. war ausdrücklich ein Versuch (*„dann teste ich, ob
 eines davon auf YouTube durchgeht"*). **Das Ergebnis liegt vor.**
 
+**NACHTRAG 19.11.2026 — DIE DRITTE SPERRE, UND DER REMIX IST MITGEMEINT.**
+`xl9P9IjTWiw` („YNB Podcast Ken Stern The Art of Aging"), gesperrt am 18.11.
+um 16:11 Kapstadt. Beanstandet: **„In This Shirt (Röyksopp Remix)"** — The
+Irrepressibles, derselbe Rechteinhaber FUGA, wieder weltweit.
+**Damit steht es bei drei Uploads mit diesem Song und drei weltweiten Sperren,
+Original wie Remix, und keiner einzigen Freigabe.** Die Notiz vom 22.10.
+(„auch die Coverversion wird gesperrt") ist damit belegt und gilt auch für
+Remixe. Offene Frage an den youtube-manager, am 19.11. gestellt: **welche
+weiteren veröffentlichten Shorts tragen diesen Song** — drei sind tot, und
+niemand weiß, ob dahinter noch sieben warten.
+
 **Offen und nur von ihm oder dem youtube-manager zu klären:** welcher Short
 `jcCd7KDcPlk` („Real Love") überhaupt ist — **kein Zweig trägt eine Datei mit
 diesem Namen.** Von YouTubes vier Optionen bleibt praktisch eine: die Fassung

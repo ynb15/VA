@@ -6,6 +6,145 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Unter 60 Sekunden hat nicht gereicht — es lag am Song selbst (18.11.)
+
+*„Okay, das wurde jetzt auch unter 60 Sekunden trotzdem noch gesperrt."*
+
+Die Länge war also nur die halbe Antwort. Der zweite Grund ist **Content-ID
+auf dem Titel selbst** — „In This Shirt" ist angemeldet, und ein Anspruch
+sperrt unabhängig von der Laufzeit.
+
+Damit stehen **zwei** Gründe nebeneinander, und beide müssen stimmen:
+
+| | |
+|---|---|
+| Laufzeit | ≤ 60 s, sobald Musik im Short ist |
+| Titel | darf keinen Anspruch auslösen |
+
+**Regel: bevor ein Short mit Musik gebaut wird, steht die Frage nach dem
+Titel am Anfang, nicht am Ende.** Ein Cover umgeht den Anspruch auf die
+*Aufnahme*, nicht den auf die *Komposition*; nur Material aus einer
+Lizenzbibliothek oder YouTubes Audio-Bibliothek ist sicher.
+
+Das gehört in die Übergabe jedes Shorts mit Musik, nicht erst nach der
+zweiten Sperre.
+
+→ betrifft: jeden Short mit Musik — **gehört an Shorts I weitergegeben**
+
+## Drei Songs auf ein Maß bringen: das Mittelband ist der Anker (18.11.)
+
+Drei Fassungen, drei völlig verschiedene Titel — zwei Klavier-Cover und eine
+Produktion mit vollem Arrangement. Alle auf **dasselbe Mittelband (300 Hz–
+2 kHz, 27,8)** eingemessen, weil dort die gefühlte Lautstärke gegen die
+Stimme sitzt.
+
+| | <300 | 300–2k | 2k–8k |
+|---|---:|---:|---:|
+| See You Again | 23,9 | **27,8** | 6,3 |
+| Another Love | 24,1 | **27,8** | 6,1 |
+| Daylight | 28,4 | **27,8** | 14,5 |
+| In This Shirt | 30,9 | **27,8** | 10,9 |
+
+Die Randbänder dürfen auseinanderlaufen — das ist der Charakter des Titels,
+nicht ein Fehler. Ein Klavier hat weniger Bass als eine Produktion mit
+Streichern. **Hätte ich auf das Bassband angeglichen, wären die Klavier-
+fassungen in den Mitten viel zu laut geworden.**
+
+→ betrifft: jede Musikfassung
+
+## `dynaudnorm` löst das Mom's-Got-Work-Problem grundsätzlich (18.11.)
+
+„See You Again" fällt ab Sekunde 144 um **15 dB** ab. Ungebremst wäre das
+genau der Fehler vom 16.11.: das Bett stirbt in der zweiten Hälfte.
+
+Bisher habe ich das durch **Fensterwahl** gelöst — eine Stelle im Song
+suchen, die durchhält. Das schränkt stark ein und geht bei kurzen Titeln gar
+nicht auf.
+
+`dynaudnorm=f=200:g=11:m=6:p=0.72` vor dem Pegel gleicht das Bett aus, ohne
+zu pumpen. Gemessen über die drei Drittel des Shorts:
+
+| | 1. Drittel | 2. | 3. |
+|---|---:|---:|---:|
+| See You Again | 27,6 | 28,9 | 27,0 |
+| Another Love | 26,9 | 28,0 | 28,5 |
+| Daylight | 25,7 | 27,9 | 29,7 |
+
+Keins fällt mehr ab. **Die Fensterwahl bleibt trotzdem wichtig** — gegen
+Intros und Ausklänge hilft kein Normalizer, nur gegen Dynamik innerhalb
+einer laufenden Strecke.
+
+→ betrifft: jede Musikfassung — gehört in die Bettkette
+
+## 60 Sekunden ist eine harte Grenze, sobald Musik im Short ist (18.11.)
+
+*„Leider hat YouTube das Video gesperrt. Scheinbar muss es unter 60 Sekunden
+sein. Warum auch immer, mit dem Song."*
+
+**YouTube sperrt Shorts mit lizenzierter Musik über 60 Sekunden.** Elf
+Fassungen lang lag die Länge bei 63,2 s, und niemand hat gefragt, ob das
+durchgeht — ich auch nicht, obwohl in `ken-aging-short.md` seit dem 12.11.
+sogar steht: *„YouTube lässt Shorts seit Oktober 2024 bis drei Minuten zu."*
+Das stimmt **ohne** Musik. Mit Musik sind es 60.
+
+**Das betrifft jeden Short dieses Kanals mit Musik**, nicht nur diesen.
+
+**Regel: ein Short mit Musik wird auf ≤ 59,5 s gebaut, nicht auf „passt
+schon".** Die Prüfung gehört in `abnahme.py` (Shorts I): Laufzeit über 60 s
+plus durchlaufendes Musikbett = Fehler, nicht Hinweis.
+
+→ betrifft: `abnahme.py`, jeden Short mit Musik — **gehört an Shorts I
+weitergegeben**
+
+## Kürzen: wo geschnitten werden darf und wo nicht (18.11.)
+
+4,49 s mussten raus. Zwei Mittel, und die Wahl hängt daran, **was im Bild
+läuft**:
+
+| | Mittel | warum |
+|---|---|---|
+| unter B-Roll | **Pause hart schneiden** | im Bild läuft Film, der Schnitt ist nicht zu sehen |
+| Sprecher im Bild | **Strecke beschleunigen** | jeder Schnitt wäre ein Sprung im Gesicht |
+
+Sechs Pausen lagen unter B-Roll — einzeln nachgeprüft, alle sechs. 1,72 s
+geschenkt. Die Überleitung dagegen ist sein Gesicht, dort wurde mit
+`atempo` 1,40 beschleunigt (hält die Tonhöhe), 2,77 s.
+
+Die Beschleunigung war auch inhaltlich richtig, und das ist messbar:
+
+| | vorher | jetzt |
+|---|---:|---:|
+| Überleitung | **1,70 W/s** | 2,65 W/s |
+| Essay | 4,55 W/s | 4,20 W/s |
+
+Sie bleibt die langsamste Stelle — sie steht nur nicht mehr.
+
+**Regel: ein Sprecher im Bild wird beschleunigt, nicht geschnitten. Unter
+B-Roll ist Schneiden umsonst.**
+
+→ betrifft: `video/abpacen-shorts2.py`
+
+## Beim Kürzen verschiebt sich ALLES danach — das rechnet ein Werkzeug (18.11.)
+
+Plan-Grenzen, B-Roll-Fenster und Blitzzeiten liegen in Vorlagenzeit. Wird in
+der Mitte Zeit herausgenommen, verschiebt sich jede davon — hier 5 Plan-
+Grenzen, 13 B-Roll-Fenster und 9 Blitzzeiten.
+
+Genau diese Sorte Umrechnung ist auf diesem Kanal schon **zweimal**
+schiefgegangen: die Blitzzeiten standen sieben Umbauten lang falsch, und die
+Quadratmitten waren zweimal um die halbe Seitenlänge verschoben. Beides, weil
+ich Zahlen von Hand mitgeschleppt habe.
+
+Deshalb macht es jetzt `video/abpacen-shorts2.py`: es nimmt die Schnittliste,
+baut die Abbildung alt→neu und gibt Plan, `--broll` und `--blitze` fertig
+aus. Es warnt auch, wenn ein Clip für sein neues Fenster zu kurz geworden
+ist.
+
+**Regel: jede Zahl, die von einer anderen abhängt, wird gerechnet — nie
+abgeschrieben.**
+
+→ betrifft: `video/abpacen-shorts2.py`, `video/kino-shorts2.py`
+
 ## „Mittig" nach Augenmaß war fünfmal daneben (18.11.)
 
 *„du zentrierst die Gesichter nicht wirklich. Alfreds Gesicht ist viel zu
