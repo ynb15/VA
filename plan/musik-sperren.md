@@ -23,7 +23,7 @@ die He's-Alive-Mail nachgelesen: keine Zahl.
 |---|---|---|---|---|---|
 | 22.10. 08:57 | `jnAHk2_xWBI` | Daylight — David Kushner | Virgin Music Group | Audio | **~53 s durchlaufend** |
 | 22.10. 09:57 | `9iRza-eDKcc` | Daylight — David Kushner | Virgin Music Group | Audio | dito |
-| 22.10. 13:21 | `5nl--61ZBBI` | In This Shirt (Røyksopp Remix) — The Irrepressibles | FUGA | Audio | Sutcliffe · Meaning, knapp 60 s |
+| 22.10. 13:21 | `5nl--61ZBBI` | In This Shirt (Røyksopp Remix) — The Irrepressibles | FUGA | Audio | **Bett ~53 s** in einem **~59-s-Short** — die Neuhochladung von `jnAHk2_xWBI` |
 | 22.10. 14:21 | `nHQIvWANN04` | Comptine d'un autre été, **Klaviercover** | LatinAutor-UMPG u. a. | **Melody or lyrics** | dito |
 | **29.10. 14:28** | `SKhewF6PZzc` · „YNB Podcast German Scandal" | **HE'S ALIVE — Adam Taylor** | LatinAutorPerf, SOLAR, UMPG Publishing, UMPI | **Melody or lyrics** | **98,82 s** (Hauptteil 94,57 s + Outro), Bett ab Songsekunde **109** |
 | 16.10. | „YNB Podcast David Sutcliffe Hollywood" | unbekannt | — | — | Mail im Papierkorb |
@@ -157,3 +157,49 @@ tragen *In This Shirt* noch **ab Songsekunde 0**, also gegen die Regel vom
 22.10. (die `ab_sekunde` gehört auf den Sprung in den Höhen, hier **0:23,25**).
 Shorts II nennt eine Minute Arbeit je Stück. **Das betrifft genau die drei
 Stücke, die ich auf 03.–05.11. gelegt habe.**
+
+
+---
+
+## NACHTRAG 19.11.2026 — die Spalte mischte zwei Größen, und die 60 s stehen schief
+
+**Der YouTube-Manager hat am 19.11. einen Widerspruch in dieser Datei gemeldet:**
+diese Tabelle führte `5nl--61ZBBI` als *„Sutcliffe · Meaning, knapp 60 s"*, während
+`lernen/content-gastauftritte.md` dasselbe Stück mit **89,01 s gesamt und 85 s
+hörbarem Bett** misst. Aufgelöst, aus meinen eigenen Akten:
+
+**1. Es sind zwei verschiedene Schnitte unter einem Arbeitsnamen.** `plan/folgen.md`
+hält fest, was `5nl--61ZBBI` war: **die Neuhochladung von `jnAHk2_xWBI`**,
+*„What makes life meaningful? (Ex-Hollywood Therapist David Sutcliffe)"* —
+**ein ~59-s-Short mit einem durchlaufenden Bett von 53 s**, von Cinematic am
+22.10. gemessen. Die 89,01 s von Gastauftritte sind ein **späterer Neubau**
+desselben Stoffs. Beide Zahlen stimmen; sie beschreiben verschiedene Fassungen.
+
+**2. Der echte Fehler lag in dieser Spalte.** Sie heißt „Bett im Short", und in
+der Zeile darüber steht auch eines (~53 s durchlaufend) — in der `5nl`-Zeile stand
+dagegen die **Länge des Shorts**. Zwei Größen in einer Spalte. Korrigiert.
+
+**3. Die Zeiten widersprechen sich nicht.** Diese Datei zählt UTC, `plan/folgen.md`
+zählt Kapstadt. 13:21 UTC = 15:21 Kapstadt.
+
+## Was dabei auffällt, und ich sage es einmal
+
+**Die 60-Sekunden-Linie ist durch keinen Beleg gedeckt — und der Fall, aus dem sie
+stammt, lag selbst darunter.** `5nl--61ZBBI` war ein **~59-s-Short mit 53 s Bett**
+und wurde weltweit gesperrt. *Das ist meine Lesart meiner eigenen Akten, keine
+neue Messung* — die Kette „die Neuhochladung war so lang wie das Original" ist
+geschlossen, aber nicht gemessen.
+
+**Seitdem sind zwei weitere Sperren dazugekommen**, beide mit In This Shirt:
+`jcCd7KDcPlk` am 17.11. (laut YouTube-Manager sehr wahrscheinlich
+`sutcliffe-03-love-me.mp4`, **53 s** — mit Vorbehalt, die Zuordnung läuft über den
+Inhalt) und `xl9P9IjTWiw` am 18.11., **75,4 s**, beanstandet als **Røyksopp-Remix**.
+**Damit: drei Uploads mit diesem Titel, drei weltweite Sperren, null Freigaben.**
+
+**Was daran hängt:** der Kingsbury-Short mit **49,4 s** ist auf der 60-s-Regel
+gebaut.
+
+**Cinematic hat am 22.10. dreimal widersprochen, und die Regel aus dem Handbuch
+gilt: nach seiner Bestätigung wird gebaut, nicht nachgefasst.** Das hier ist
+kein vierter Anlauf derselben Argumente, sondern zwei Sperren, die es am 22.10.
+noch nicht gab. **Einmal gesagt, dann liegt es bei ihm.**
