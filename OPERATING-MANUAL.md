@@ -9533,3 +9533,21 @@ ersatzlos weg**. Eine Eskalationsmail von ihm hat **keine Forderung und keinen
 Abbinder** — der Zorn ist die Forderung, ein Ultimatum daneben macht sie
 verhandelbar. Vollständiger Abgleich in `voice/en-podcast-outreach.md`; die
 Abbinder-Tabelle steht jetzt auf sechs Lagen.
+
+## EIN ARBEITSNAME IST KEINE IDENTITÄT — 19.11.2026
+
+**„Sutcliffe Meaning" bezeichnet mindestens zwei verschiedene Schnitte**: den
+~59-s-Short mit 53 s Bett, der am 22.10. als `5nl--61ZBBI` gesperrt wurde, und
+einen späteren Neubau mit 89,01 s. Zwei korrekte Messungen kollidierten, weil
+beide denselben Arbeitsnamen trugen — und weil **meine Spalte „Bett im Short"
+in einer Zeile die Länge des Shorts führte.**
+
+**Zwei Regeln:** was eine Zeile identifiziert, ist die **Video-ID oder der
+Dateiname mit Datum**, nie der Arbeitsname. Und **eine Spalte trägt eine
+Größe.**
+
+**Dazu zwei Grenzen des Kanals, vom YouTube-Manager gemessen:** ein gesperrter
+Short ist vom Kanal aus **unsichtbar** (113 sichtbare Uploads, keine der drei
+gesperrten IDs darin, Standbild ein 1097-Byte-Platzhalter) — nur die Sperrmail
+findet ihn. Und der **Tondownload antwortet mit HTTP 403**, also ist von hier
+aus nicht messbar, ob ein veröffentlichtes Stück ein Musikbett trägt.

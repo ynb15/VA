@@ -752,3 +752,69 @@ muster = r"thanks for watching|thank you for watching|subscribe|\[music\]|see yo
 - **Und die Rangfolge, die daraus folgt:** ein Wert, den **er** selbst genannt
   hat, schlaegt meine Messung aus einem JPEG. Gehen beide auseinander, wird
   nachgemessen — nicht gemittelt und nicht fuer die eigene Zahl entschieden.
+
+### Nachtrag 19.11. — In This Shirt: was der Kanal hergibt, und was nicht
+
+Auf Alfreds Frage nach weiteren Uploads mit dem Song. **Nur Gemessenes.**
+
+**Kanalbestand:** 113 sichtbare Uploads (58 Shorts, 55 lange), geholt mit
+`yt-dlp --flat-playlist`. **Keine der drei gesperrten IDs ist darin**, und die
+Direktabfrage liefert bei allen dreien `youtube video #<id>` ohne Titel, ohne
+Formate. Auch das Standbild ist weg (1097 Bytes Platzhalter).
+**Ein gesperrter Short ist vom Kanal aus unsichtbar** — er ist nur über die
+Mail auffindbar. Eine Liste „alle Uploads mit diesem Song" kann es von hier
+aus also nicht geben, solange die Sperrmail fehlt.
+
+**Was ich NICHT messen konnte:** ob ein veroeffentlichter Short den Song
+traegt. Der Tondownload antwortet mit **HTTP 403**. Das ist eine
+Policy-Entscheidung, nicht wiederholt. Damit faellt die Methode von Shorts II
+(Grundpegel −62 dB ohne Bett, −35 dB mit) fuer veroeffentlichte Stuecke aus.
+**Welche Fassung er hochgeladen hat, steht in keinem Zweig** — es ist seine
+Handlung, und sie ist nirgends protokolliert.
+
+**`jcCd7KDcPlk` („Real Love") ist sehr wahrscheinlich
+`shorts/sutcliffe-03-love-me.mp4`**, 53 s, Master 5143–5201,
+*„I just needed you to love me"* — Sutcliffe bricht mit 35 in einem Workshop
+zusammen. Steht in `video/sutcliffe-shorts.md` auf `content-gastauftritte`
+und `content-shorts-2`, zweite Fassung vom 19.10., Tempo 1,1.
+**Gastauftritte hat ihn nicht gefunden, weil sie nach „Real Love" gesucht
+haben und die Datei `love-me` heisst.** Der veroeffentlichte Titel ist der
+Arbeitstitel beim Upload.
+**Vorbehalt:** die Zuordnung ist ueber den Inhalt, nicht ueber den Namen. Und
+die Fassung stammt vom **19.10.**, also von **vor** seiner Freigabe fuer In
+This Shirt am 22.10. Ob die hochgeladene Fassung den Song ueberhaupt trug und
+wie lange, steht nicht fest.
+
+**Ein Widerspruch zwischen zwei Agentendateien, der die 60-Sekunden-Regel
+betrifft.** `plan/musik-sperren.md` (Alfred) fuehrt `5nl--61ZBBI` als
+*„Sutcliffe · Meaning, knapp 60 s"*. `lernen/content-gastauftritte.md`
+misst **Sutcliffe Meaning: 89,01 s gesamt, Bett 85 s hoerbar**. Beides kann
+nicht stimmen. Ich loese es nicht auf — dafuer braucht es die Mail oder die
+Datei, beides habe ich nicht. **Es zaehlt, weil seine Entscheidung vom 22.10.
+(In This Shirt bis 60 s) auf der Annahme steht, der gesperrte Fall habe
+knapp an 60 s gelegen.**
+
+**Gebaute Fassungen mit dem Song, mit Laenge** (aus den Zweigen, nicht vom
+Kanal):
+
+| Stueck | Gesamt | Bett | Zweig |
+|---|---|---|---|
+| Sutcliffe Meaning | 89,01 s | 85 s | gastauftritte |
+| Ken Aging (In This Shirt) | **75,4 s** | bis zum letzten Bild | shorts-2 · **gesperrt `xl9P9IjTWiw`** |
+| Sutcliffe Lines | 68,98 s | 69 s | gastauftritte |
+| Garden Breakdown | 65,65 s | 65 s | gastauftritte |
+| Sutcliffe Hypermaskulinitaet | 60,08 s | ~56 s | gastauftritte |
+| Rob Paddock Son | 59,65 s | 55 s | gastauftritte |
+| Aaronson Belief | 59,2 s | 54,97 s | shorts-2 |
+| Ken Meaningful (In This Shirt) | 58,5 s | 54,3 s | shorts-2 |
+| Aaronson Safety | 55,8 s | 51,6 s | shorts-2 |
+| Sutcliffe Love Me | **53 s** | unbekannt | gastauftritte · **Kandidat fuer `jcCd7KDcPlk`** |
+| Ken Ubuntu, Ken Trump, Makhosi Ubuntu, Aaronson AI God, AI 2027 | — | ab 0:23,25 | shorts-2 |
+
+**Zur Frage nach einem nicht beanstandeten Upload: nein.** Es ist kein
+einziger bekannt. Drei Sperren bei drei dokumentierten Uploads mit diesem
+Song, und nach `plan/musik-sperren.md` fuenf Sperren bei fuenf Uploads mit
+Musikbett ueberhaupt. **Eine Untergrenze gibt es damit weiterhin nicht**, und
+eine Laengenschwelle fuer FUGA laesst sich aus dem Meldungstext nicht ableiten
+— das hat Gastauftritte am 18.11. belegt und ich habe es nicht nachgeprueft,
+sondern uebernommen.

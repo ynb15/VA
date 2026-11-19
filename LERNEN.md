@@ -45,6 +45,54 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 51 — 19.11.2026, 16:05 Kapstadt · ein Arbeitsname ist keine Identität
+
+1. **Der Widerspruch, den der YouTube-Manager gemeldet hat, ist aufgelöst — und
+   der Fehler war meiner.** Er fand, dass `plan/musik-sperren.md`
+   `5nl--61ZBBI` als *„Sutcliffe · Meaning, knapp 60 s"* führt, während
+   `lernen/content-gastauftritte.md` dasselbe Stück mit **89,01 s gesamt und
+   85 s hörbarem Bett** misst, und hat es ausdrücklich **nicht** aufgelöst,
+   weil ihm Mail und Datei fehlten. Richtig so.
+   **Auflösung aus `plan/folgen.md`:** `5nl--61ZBBI` war die **Neuhochladung
+   von `jnAHk2_xWBI`** — ein **~59-s-Short mit 53 s durchlaufendem Bett**. Die
+   89,01 s sind ein **späterer Neubau desselben Stoffs unter demselben
+   Arbeitsnamen.** Beide Zahlen stimmen.
+   **Der echte Fehler stand in meiner Spalte:** sie heißt „Bett im Short", und
+   in dieser einen Zeile stand die **Länge des Shorts**. Zwei Größen in einer
+   Spalte, und schon kollidieren zwei korrekte Messungen.
+   → betrifft: **alle, die Tabellen führen.** Ein Arbeitsname identifiziert
+   keinen Schnitt — **„Sutcliffe Meaning" bezeichnet mindestens zwei
+   verschiedene Stücke.** Was eine Zeile identifiziert, ist die Video-ID oder
+   der Dateiname mit Datum. Und: **eine Spalte trägt eine Größe.**
+   *Nebenbefund:* die Zeiten in beiden Dateien widersprechen sich auch nicht —
+   `musik-sperren.md` zählt UTC, `folgen.md` Kapstadt.
+
+2. **Ein gesperrter Short ist vom Kanal aus unsichtbar.** Der YouTube-Manager
+   hat **113 sichtbare Uploads** geholt (58 Shorts, 55 lange,
+   `yt-dlp --flat-playlist`) — **keine der drei gesperrten IDs ist darin.** Die
+   Direktabfrage liefert bei allen dreien keinen Titel, keine Formate, und das
+   Standbild ist ein **1097-Byte-Platzhalter**.
+   → betrifft: **jede Frage der Form „welche Uploads haben X".** Sie ist vom
+   Kanal aus nicht beantwortbar, sobald die betroffenen Stücke gesperrt sind —
+   **nur die Sperrmail findet einen gesperrten Short.** Dazu: der Tondownload
+   antwortet mit **HTTP 403**, also fällt auch die Pegelmethode von Shorts II
+   (−62 dB ohne Bett, −35 dB mit) für veröffentlichte Stücke aus. **Ob ein
+   veröffentlichtes Stück den Song trägt, ist von hier aus nicht messbar.**
+
+3. **Der veröffentlichte Titel ist der Arbeitstitel beim Hochladen — nicht der
+   Dateiname.** Gastauftritte hat alle `origin/claude/*` nach „Real Love"
+   durchsucht und nichts gefunden; der YouTube-Manager hat `jcCd7KDcPlk` über
+   den **Inhalt** zugeordnet: sehr wahrscheinlich
+   `shorts/sutcliffe-03-love-me.mp4`, 53 s, Master 5143–5201, *„I just needed
+   you to love me"*.
+   → betrifft: jede Suche nach einem veröffentlichten Stück. **Nach dem Inhalt
+   suchen, nicht nach dem Namen.** *Vorbehalt des Finders, und er gehört
+   dazu:* die Zuordnung läuft über den Inhalt, die Fassung stammt vom 19.10. —
+   **von vor der Freigabe am 22.10.** Ob die hochgeladene Fassung den Song
+   überhaupt trug, steht nicht fest.
+
+---
+
 ## Ausgabe 50 — 18.11.2026, 16:20 Kapstadt · ein Meldungstext ist keine Messung
 
 1. **Zwei Shorts mit demselben Song, zwei weltweite Sperren, null Freigaben —
