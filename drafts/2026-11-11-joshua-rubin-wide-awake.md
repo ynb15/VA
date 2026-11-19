@@ -1,6 +1,12 @@
 # Joshua Rubin (Wide Awake Podcast) - Neuanlauf
 
-**Stand:** Mi 11.11.2026, Kapstadt. **Erste Fassung. Entwurf, nicht gesendet.**
+**Stand:** Do 19.11.2026, Kapstadt. **Zweite Fassung. Entwurf, nicht gesendet.**
+
+> **Was sich gegenüber dem 11.11. geändert hat, und warum:** Die Sendung läuft, sie
+> läuft nur auf YouTube (siehe Befund (1) unten). Damit kann der Cold Open **aktuelle**
+> Folgen nennen statt nur 2024er, und das ist der ganze Unterschied zwischen "ich habe
+> Deine Sendung mal gegoogelt" und "ich schaue sie". Außerdem korrigiert: er macht
+> das seit **fünf** Jahren, nicht vier (Start 16.09.2021).
 
 ## Was im Postfach steht
 
@@ -78,12 +84,12 @@ anfragt.
 
 ## Die Mail
 
-> You've sat across from a woman who was taken from Groote Schuur as a two-day-old
-> baby. From ex-gangsters. From the people who used to run the Satanic Church. From a
-> politician most journalists handle with gloves on.
+> Rob Hersov telling you the country is finished. Duduzane Zuma. The man who used to
+> run the Satanic Church. A woman who was taken from Groote Schuur as a two-day-old
+> baby. Ex-gangsters, and a politician most journalists handle with gloves on.
 >
-> Everybody asks you about the guests. Almost nobody asks what sitting in that chair
-> for four years does to the man holding the mic…
+> Everybody asks you about the guests. Almost nobody asks what five years in that
+> chair has done to the man holding the mic…
 >
 > Cheers Josh, my name is Yannick - host of *Man's Search for Meaning*, a podcast about
 > humans who've walked through the fire and came out different.
@@ -101,7 +107,7 @@ anfragt.
 > So I'm not after a how-we-make-podcasts episode. What interests me more is the
 > deeper layer of your life:
 >
-> **What carrying other people's worst chapters for four years has done to you, and
+> **What carrying other people's worst chapters for five years has done to you, and
 > where you put it afterwards. Whether you still believe the promise your own show is
 > built on - that there's something behind the mask worth finding - after sixty-odd
 > attempts. What this country does to you when you keep stepping into its tension and
@@ -159,6 +165,28 @@ in einer Stadt: "the easiest yes you'll give all week" ist wahr und selbstbewuss
 >
 > **Nur einsetzen, wenn Du es weißt.** Eine falsche Suchtanspielung in einer Kaltmail
 > ist nicht peinlich, die ist tödlich.
+
+---
+
+## Der Hersov-Faden, und warum er in dieser Mail nichts zu suchen hat
+
+Josh hat **Rob Hersov** interviewt, und für Hersov gibt es keine öffentliche
+Mailadresse. Die naheliegende Idee ist, Josh in derselben Mail um die Verbindung zu
+bitten. **Tu das nicht.**
+
+Der Grund steht in Deinem eigenen Postfach: Am 09.07. hat Brendan Kane Deinem Podcast
+zugesagt, 21 Stunden später kam von Dir eine Bewerbung hinterher, und danach war der
+Faden **drei Monate** still. Eine Einladung, an der noch eine zweite Bitte hängt, ist
+keine Einladung mehr, sondern ein Tausch - und der Empfänger merkt das in dem Moment,
+in dem er die zweite Bitte liest.
+
+**Die Reihenfolge, die funktioniert:** Josh einladen. Wenn er zusagt, trefft Ihr Euch
+ohnehin. Dann fragst Du ihn mündlich nach Hersov, und zwar als Kollege, der gerade
+mit ihm im Studio sitzt, nicht als Fremder per Mail. **Erst wenn Josh es anbietet**,
+wird aus `[Via Joshua Rubin]` eine belegte Klammer - die Cal-Callahan-Regel vom
+27.10. gilt hier genauso.
+
+Hersov steht in der Databank, er läuft Dir nicht weg.
 
 ---
 
