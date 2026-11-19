@@ -32,12 +32,19 @@ body{background:var(--paper);color:var(--ink);font-family:var(--body);
 .flagline .sender{font-family:var(--display);font-weight:600;font-size:.86rem;
   letter-spacing:.04em;color:var(--muted);margin-left:auto}
 
-h1{font-family:var(--display);font-weight:800;line-height:1.04;
-  font-size:clamp(2.1rem,7.2vw,3.5rem);letter-spacing:-.025em;
-  text-wrap:balance;margin:1.4rem 0 0}
-.deck{font-size:clamp(1.08rem,2.6vw,1.3rem);line-height:1.45;color:var(--muted);
-  font-style:italic;margin:.85rem 0 0;text-wrap:balance}
-.rule{border:0;border-top:1px solid var(--rule);margin:1.8rem 0}
+.recipient{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap;
+  border-bottom:1px solid var(--rule);padding:.8rem 0 .9rem}
+.recipient .to{font-family:var(--display);font-weight:700;font-size:.72rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.recipient .logo{height:46px;width:auto;max-width:190px;object-fit:contain;display:block}
+.recipient .org{font-family:var(--display);font-size:.88rem;color:var(--muted)}
+
+.dach{font-family:var(--display);font-weight:700;font-size:.92rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accent);margin:1.5rem 0 .45rem}
+h1{font-family:var(--display);font-weight:800;line-height:1.06;
+  font-size:clamp(1.8rem,5.6vw,2.9rem);letter-spacing:-.022em;
+  text-wrap:balance;margin:0}
+.rule{border:0;border-top:1px solid var(--rule);margin:1.7rem 0}
 
 p{margin:0 0 1.05rem}
 .lead{font-size:1.14rem}
@@ -47,11 +54,19 @@ h2{font-family:var(--display);font-weight:700;font-size:1.06rem;letter-spacing:.
   text-transform:uppercase;color:var(--accent);margin:2.2rem 0 .7rem}
 
 .quote{border-left:4px solid var(--accent);background:var(--accent-soft);
-  padding:1.1rem 1.3rem;margin:1.8rem 0;font-size:1.14rem;line-height:1.5}
-.quote p:last-child{margin:0}
+  padding:1.2rem 1.4rem;margin:1.8rem 0;font-size:1.16rem;line-height:1.52}
+.quote p{margin:0 0 .8rem}
+.quote p:last-of-type{margin:0}
+.quote .tight{font-family:var(--display);font-weight:700;font-size:1.02rem;line-height:1.45}
 .quote cite{display:block;font-family:var(--display);font-style:normal;
   font-weight:600;font-size:.84rem;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--muted);margin-top:.7rem}
+  color:var(--muted);margin-top:.9rem}
+
+ul.guests{list-style:none;margin:1.1rem 0 1.3rem;padding:0;
+  display:grid;gap:.5rem}
+ul.guests li{padding-left:1.4rem;position:relative;line-height:1.45}
+ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
+  width:.42rem;height:.42rem;background:var(--accent);border-radius:50%}
 
 .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0}
 @media(max-width:560px){.strip{grid-template-columns:1fr}}
@@ -81,7 +96,7 @@ figcaption b{color:var(--ink);font-weight:700}
   :root{--paper:#fff;--ink:#000}
   body{font-size:10.5pt}
   .sheet{max-width:none;padding:0}
-  .strip{break-inside:avoid}
+  .strip,.quote,.facts{break-inside:avoid}
 }
 </style>
 
@@ -92,27 +107,41 @@ figcaption b{color:var(--ink);font-weight:700}
     <span class="sender">Yannick N. Bernard &middot; Kapstadt</span>
   </div>
 
-  <h1>Bernard bewirbt sich bei Viva con Agua</h1>
-  <p class="deck">Marketingstratege und Podcast-Host reicht Unterlagen für die Stelle als Senior PR Manager ein &ndash; in der Form, in der er die Arbeit auch machen würde.</p>
+  <div class="recipient">
+    <span class="to">An</span>
+    <img class="logo" src="bilder/vca-logo.png" alt="Viva con Agua">
+    <span class="org">Viva con Agua de Sankt Pauli e.&nbsp;V. &middot; z.&nbsp;Hd. Jana Bier</span>
+  </div>
 
-  <hr class="rule">
-
-  <p class="lead"><span class="dateline">Kapstadt, 19. November 2026 &ndash;</span> Yannick N. Bernard, 28, bewirbt sich auf die ausgeschriebene Position des Senior PR Managers bei Viva con Agua de Sankt Pauli e.&nbsp;V. Bernard hat sieben Jahre lang Marken und Personen vermarktet, führte eine eigene Copywriting-Agentur mit über hundert Kunden und produziert seit 2025 den Interview-Podcast <em>Man&rsquo;s Search for Meaning</em>. Die Bewerbung liegt als Pressemitteilung vor.</p>
-
-  <h2>Die Entscheidung fiel auf dem AfrikaBurn</h2>
-
-  <p>Im April 2025 verbrachte Bernard eine Woche im Kaggen Camp auf dem AfrikaBurn in der Tankwa-Karoo. Dort, sagt er, sei ihm klargeworden, dass er seit Jahren Geschichten erzähle, an die er selbst nicht mehr glaube. Drei Tage nach seiner Rückkehr schloss er die Agentur, zog nach Kapstadt und nahm sich ein Jahr.</p>
+  <p class="dach">Bernard bewirbt sich bei Viva con Agua</p>
+  <h1>April 2025, AfrikaBurn, Kaggen Camp. Danach war nichts mehr wie vorher.</h1>
 
   <div class="quote">
-    <p>&bdquo;Auf dem Papier hatte ich alles richtig gemacht. Sechsstellig, hundert zufriedene Kunden, eigenes Team. Innerlich war nichts mehr da.&ldquo;</p>
+    <p>&bdquo;Auf dem Burn begriff ich, dass ich seit Jahren Geschichten erzähle, an die ich selbst nicht mehr glaube&hellip;</p>
+    <p>Dabei hatte ich auf dem Papier vermeintlich alles richtig gemacht: Sieben Jahre lang hab ich das Marketing-Game gespielt. Sechsstellige Copywriting-Agentur. 100+ zufriedene Kunden.</p>
+    <p class="tight">Aber innerlich: leer.&ldquo;</p>
     <cite>Yannick N. Bernard</cite>
   </div>
 
-  <h2>Vierhundert Mails, kein Budget, kein Netzwerk</h2>
+  <hr class="rule">
 
-  <p>Statt eines neuen Unternehmens baute Bernard einen Podcast auf, den er ausschließlich persönlich aufnimmt. Um die Gäste dafür zu gewinnen, flog er 2026 mit einem One-Way-Ticket in die Vereinigten Staaten und schrieb über vierhundert Kaltakquise-Mails &ndash; ohne Reichweite, ohne Etat und ohne Kontakte vor Ort.</p>
+  <p class="lead"><span class="dateline">Kapstadt, 19. November 2026 &ndash;</span> Yannick N. Bernard, 28, bewirbt sich auf die ausgeschriebene Position des Senior PR Managers bei Viva con Agua de Sankt Pauli e.&nbsp;V. Drei Tage nach seiner Rückkehr vom AfrikaBurn schloss Bernard seine Agentur, zog nach Kapstadt und nahm sich ein Jahr. Die Bewerbung liegt als Pressemitteilung vor.</p>
 
-  <p>Zugesagt haben unter anderem Marian Goodell, CEO des Burning Man Project, der frühere NPR-Chef Ken Stern, der Quantenphysiker und OpenAI-Insider Scott Aaronson, NFL-Profi Eben Britton und der weltweit führende DMT-Forscher Rick Strassman. Im Januar 2027 folgt Viva-con-Agua-Gründer Benjamin Adrion.</p>
+  <h2>Statt eines neuen Unternehmens ein Podcast</h2>
+
+  <p>Während der Pause baute Bernard seinen eigenen Podcast auf: <em>Man&rsquo;s Search for Meaning</em>, benannt nach Viktor Frankls Buch, über Menschen, die durchs Feuer gegangen sind. Aufgenommen wird ausschließlich persönlich. Zu Gast waren bislang unter anderem:</p>
+
+  <ul class="guests">
+    <li>sein Mentor, IronMan-Athlet und 100-Millionen-Dollar-EdTech-Gründer Rob Paddock</li>
+    <li>BurningMan-CEO Marian Goodell</li>
+    <li>NFL-Star Eben Britton</li>
+    <li>Quantenphysiker Prof. Scott Aaronson</li>
+    <li>Hollywood-Star David Sutcliffe</li>
+    <li>Ex-NPR-Chef Ken Stern</li>
+    <li>und im Januar AfrikaBurn-Legende Benjamin Adrion</li>
+  </ul>
+
+  <p>Um diese Gäste zu gewinnen, flog Bernard 2026 mit einem One-Way-Ticket in die Vereinigten Staaten und schrieb über vierhundert Kaltakquise-Mails &ndash; ohne Reichweite, ohne Etat, ohne Kontakte vor Ort.</p>
 
   <div class="strip">
     <figure>
@@ -140,9 +169,14 @@ figcaption b{color:var(--ink);font-weight:700}
 
   <h2>Woran er anknüpfen würde</h2>
 
-  <p>Die Positionierung von Personenmarken, bei Viva con Agua unter Aufgabe eins geführt, war Bernards Geschäft: Er betreute unter anderem Veit Lindau, <em>Greator</em>, <em>Ungeskriptet</em> und Deutschlands bekanntesten Psychologen. Presse- und PR-Texte, Interviews und Storytelling-Formate sind sein Handwerk; beim Podcast liegen Recherche, Interview, Redaktion und Vermarktung in einer Hand.</p>
+  <p>Die Positionierung von Personenmarken, bei Viva con Agua unter Aufgabe eins geführt, war Bernards Geschäft: Er hat Startups zu Marktführern etabliert, globale Communities aufgebaut und mit Namen wie <em>Ungeskriptet</em>, Veit Lindau und <em>Greator</em> gearbeitet. Presse- und PR-Texte, Interviews und Storytelling-Formate sind sein Handwerk; beim Podcast liegen Recherche, Interview, Redaktion und Vermarktung in einer Hand.</p>
 
   <p>Kultur, Musik und Kunst bezeichnet Bernard nicht als Interessengebiet, sondern als Umgebung: Burn-Kultur seit Jahren, Kapstadt und Hamburg, ein &bdquo;All in for Water&ldquo;-Trikot seit dem Sommer im Schrank.</p>
+
+  <div class="quote">
+    <p>&bdquo;Nach meinem Sabbatical will ich nicht noch ein Business skalieren. Ich will meine Erfahrung nur noch für etwas einsetzen, hinter dem ich menschlich zu hundert Prozent stehe.&ldquo;</p>
+    <cite>Yannick N. Bernard</cite>
+  </div>
 
   <div class="facts">
     <dl>
@@ -155,7 +189,7 @@ figcaption b{color:var(--ink);font-weight:700}
 
   <div class="boiler">
     <h2>Über Yannick N. Bernard</h2>
-    <p>Yannick N. Bernard, geboren 1998, ist Marketingstratege, Texter und Host des Interview-Podcasts <em>Man&rsquo;s Search for Meaning</em>, benannt nach Viktor Frankls Buch. Vor seinem Sabbatical führte er sieben Jahre lang eine Copywriting-Agentur mit Kunden auf drei Kontinenten und baute unter anderem Deutschlands führendes Unternehmen für psychedelische Therapie mit auf. Er hat 35 Länder bereist, in New York, Medellín, Berlin, Bali und Kapstadt gelebt und seit 2020 Retreats, Masterminds und Workations auf vier Kontinenten organisiert. Er lebt in Kapstadt.</p>
+    <p>Yannick N. Bernard, geboren 1998, ist Marketingstratege, Texter und Host des Interview-Podcasts <em>Man&rsquo;s Search for Meaning</em>. Vor seinem Sabbatical führte er sieben Jahre lang eine Copywriting-Agentur mit Kunden auf drei Kontinenten und baute unter anderem Deutschlands führendes Unternehmen für psychedelische Therapie mit auf. Er hat 35 Länder bereist, in New York, Medellín, Berlin, Bali und Kapstadt gelebt und seit 2020 Retreats, Masterminds und Workations auf vier Kontinenten organisiert. Er lebt in Kapstadt.</p>
   </div>
 
   <div class="boiler">

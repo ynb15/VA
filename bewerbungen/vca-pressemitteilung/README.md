@@ -5,15 +5,17 @@ Upload als PDF über das Portal, Ansprechpartnerin Jana Bier.
 
 ## Bilder einsetzen
 
-Drei JPEGs aus Drive in `bilder/` ablegen, exakt so benannt:
+Vier Bilddateien in `bilder/` ablegen, exakt so benannt:
 
 | Datei | Foto in Drive | Drive-ID |
 |---|---|---|
 | `goodell.jpg` | YNB & Marian Goodell | 1Ch3uw-YbvGa7aQb5Lg3SwrKnes7Ia_9R |
 | `stern.jpg` | YNB & Ken Stern | 1oJyZcOpYCg1lZFwlr0FrQhrsNoAj0bDw |
 | `strassman.jpg` | YNB & Rick Strassman | 1hYRqBrHOXgAUZXrUU2xiS9eNEq1Trtzd |
+| `vca-logo.png` | Viva con Agua Logo | von vivaconagua.org, PNG mit transparentem Grund |
 
-Hochformat schneidet am besten, die Rahmen stehen auf 4:5.
+Bei den Fotos schneidet Hochformat am besten, die Rahmen stehen auf 4:5.
+Das Logo läuft auf 46 px Höhe und sitzt im Empfänger-Block unter dem Absenderkopf.
 
 ## PDF erzeugen
 
