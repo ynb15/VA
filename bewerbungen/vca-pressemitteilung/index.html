@@ -74,8 +74,10 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
 @media(max-width:560px){.grid{grid-template-columns:1fr}}
 .grid img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;
   border:1px solid var(--rule)}
+.grid figure{margin:0;min-width:0}
 .plate figcaption{font-family:var(--display);font-size:.8rem;line-height:1.4;
-  color:var(--muted);margin-top:.55rem}
+  color:var(--muted);margin-top:.5rem}
+.plate figcaption b{color:var(--ink);font-weight:700}
 
 .facts{border-top:2px solid var(--deep);border-bottom:2px solid var(--deep);
   padding:1rem 0;margin:2.2rem 0}
@@ -92,10 +94,14 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
 @media(max-width:480px){.bio img{width:100%;aspect-ratio:16/9;margin-bottom:.8rem}}
 .bio p{margin:0}
 .boiler h2{color:var(--muted)}
-.contact{font-family:var(--display);font-size:.95rem;line-height:1.7}
-.ends{font-family:var(--display);font-weight:700;letter-spacing:.3em;text-align:center;
-  color:var(--muted);margin:2.4rem 0 1.4rem}
-.note{font-size:.88rem;color:var(--muted);border:1px dashed var(--rule);padding:.9rem 1.1rem}
+.footer{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;
+  flex-wrap:wrap;margin-top:2.2rem}
+.ftlabel{display:block;font-family:var(--display);font-weight:700;font-size:.7rem;
+  letter-spacing:.17em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+.contact{font-family:var(--display);font-size:.95rem;line-height:1.55;margin:0}
+.ends{font-family:var(--display);font-weight:700;font-size:.72rem;letter-spacing:.3em;
+  color:var(--muted)}
+.note{font-size:.88rem;color:var(--muted);font-style:italic;margin:1.5rem 0 0}
 
 @media print{
   :root{--paper:#fff;--ink:#000}
@@ -139,7 +145,8 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
   <p>Drei Tage nach seiner Rückkehr vom AfrikaBurn schloss Bernard seine Agentur, zog nach Kapstadt und ging in ein einjähriges Sabbatical. Währenddessen baute er seinen eigenen Podcast auf: <em>Man&rsquo;s Search for Meaning</em>, benannt nach Viktor Frankls Buch, über Menschen, die durchs Feuer gegangen sind. Aufgenommen wird ausschließlich persönlich. Zu Gast waren bisher u.&nbsp;a.</p>
 
   <ul class="guests">
-    <li>sein Mentor, IronMan-Athlet und $100M-Gründer Rob Paddock</li>
+    <li>sein Mentor, IronMan-Athlet und EdTech-Millionär Robert Paddock</li>
+    <li>UFC-Star Kyle Kingsbury</li>
     <li>BurningMan-CEO Marian Goodell</li>
     <li>NFL-Star Eben Britton</li>
     <li>Quantenphysiker und OpenAI-Insider Prof. Scott Aaronson</li>
@@ -148,20 +155,24 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
     <li>und im Januar AfrikaBurn-Legende Benjamin Adrion</li>
   </ul>
 
-  <p>Um diese Gäste zu gewinnen, flog Bernard 2026 mit einem One-Way-Ticket in die Vereinigten Staaten und schrieb über 400 Kaltakquise-Mails&nbsp;(!).</p>
+  <p>Um diese Gäste zu gewinnen, flog Bernard im Sommer 2026 mit einem One-Way-Ticket in die Vereinigten Staaten und schrieb über 400 Kaltakquise-Mails&nbsp;(!).</p>
 
-  <figure class="plate">
+  <div class="plate">
     <div class="grid">
-      <img src="bilder/pod-sofa.jpg" alt="Aufzeichnung von Man&rsquo;s Search for Meaning">
-      <img src="bilder/pod-green.jpg" alt="Aufzeichnung von Man&rsquo;s Search for Meaning">
-      <img src="bilder/pod-cap.jpg" alt="Aufzeichnung von Man&rsquo;s Search for Meaning">
+      <figure>
+        <img src="bilder/pod-paddock.jpg" alt="Bernard mit Robert Paddock">
+        <figcaption>Bernard mit EdTech-Millionär <b>Robert Paddock</b>.</figcaption>
+      </figure>
+      <figure>
+        <img src="bilder/pod-green.jpg" alt="Bernard mit Kyle Kingsbury">
+        <figcaption>Bernard mit UFC-Star <b>Kyle Kingsbury</b>.</figcaption>
+      </figure>
     </div>
-    <figcaption><em>Man&rsquo;s Search for Meaning</em> wird ausschließlich persönlich aufgenommen &ndash; unter anderem in Austin, Albuquerque, San Francisco und Kapstadt.</figcaption>
-  </figure>
+  </div>
 
   <h2>Sieben Jahre Personenmarken</h2>
 
-  <p>Wenngleich Bernard kein klassischer Pressesprecher ist, deckt seine Arbeit der vergangenen sieben Jahre einen Großteil der ausgeschriebenen Aufgaben ab. Er hat Startups zu Marktführern etabliert, globale Communities aufgebaut und Personenmarken wie <em>Ungeskriptet</em>, Veit Lindau und <em>Greator</em> positioniert. Presse- und PR-Texte, Interviews und Storytelling-Formate sind sein Handwerk; beim Podcast liegen Recherche, Interview, Redaktion und Vermarktung in einer Hand.</p>
+  <p>Bernard ist kein klassischer Pressesprecher. Die Arbeit, die in der Ausschreibung steht, macht er allerdings seit sieben Jahren &ndash; sie hieß nur anders. Er hat Startups zu Marktführern etabliert, globale Communities aufgebaut und Personenmarken wie <em>Ungeskriptet</em>, Veit Lindau und <em>Greator</em> positioniert. Presse- und PR-Texte, Interviews und Storytelling-Formate sind sein Handwerk; beim Podcast liegen Recherche, Interview, Redaktion und Vermarktung in einer Hand.</p>
 
   <div class="quote">
     <p>&bdquo;Nach meinem Sabbatical will ich nicht noch ein Business skalieren. Ich will meine Erfahrung nur noch für etwas einsetzen, hinter dem ich menschlich zu 100% stehe.&ldquo;</p>
@@ -184,16 +195,15 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
     </div>
   </div>
 
-  <div class="boiler">
-    <h2>Pressekontakt</h2>
-    <p class="contact">
-      Yannick N. Bernard<br>
-      ynb@yannick-noah.com<br>
-      yannick-noah.com
-    </p>
-  </div>
+  <hr class="rule">
 
-  <p class="ends">&ndash; ENDE &ndash;</p>
+  <div class="footer">
+    <div>
+      <span class="ftlabel">Pressekontakt</span>
+      <p class="contact">Yannick N. Bernard<br>ynb@yannick-noah.com &middot; yannick-noah.com</p>
+    </div>
+    <span class="ends">ENDE</span>
+  </div>
 
   <p class="note"><b>Hinweis an die Redaktion:</b> Diese Mitteilung ist das Bewerbungsschreiben. Wer wissen will, ob der Absender Pressetexte schreiben kann, hält die Antwort bereits in der Hand.</p>
 
