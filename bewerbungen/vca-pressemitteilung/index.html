@@ -113,9 +113,30 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
 @media print{
   :root{--paper:#fff;--ink:#000}
   .cv-page{display:none}
-  body{font-size:10.5pt}
+  body{font-size:10.15pt;line-height:1.51}
   .sheet{max-width:none;padding:0}
-  .plate,.quote,.facts{break-inside:avoid}
+  .plate,.quote,.facts,.bio{break-inside:avoid}
+  /* Auf zwei Seiten verdichtet: kleinere Abstaende, gleiche Hierarchie */
+  .recipient{padding:1rem 0 1.05rem}
+  .recipient .logo{height:66px}
+  .dach{margin:1.15rem 0 .4rem}
+  h1{font-size:2.3rem}
+  .rule{margin:1.15rem 0}
+  p{margin:0 0 .76rem}
+  .lead{font-size:1.07rem}
+  h2{margin:1.55rem 0 .52rem}
+  h2.scene{font-size:1.14rem;margin-bottom:.6rem}
+  .quote{padding:.95rem 1.2rem;margin:1.3rem 0;font-size:1.11rem;line-height:1.44}
+  .quote p{margin:0 0 .55rem}
+  .quote .tight{font-size:1.16rem}
+  .quote cite{margin-top:.6rem}
+  ul.guests{margin:.8rem 0 .9rem;gap:.32rem}
+  ul.guests li{line-height:1.38}
+  .plate{margin:1.35rem 0}
+  .plate figcaption{margin-top:.35rem}
+  .facts{padding:.78rem 0;margin:1.55rem 0}
+  .facts dl{gap:.45rem 1.6rem}
+  .bio img{flex-basis:132px;width:132px;min-height:132px}
 }
 </style>
 

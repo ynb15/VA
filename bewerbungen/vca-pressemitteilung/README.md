@@ -10,8 +10,8 @@ Live: https://claude.ai/artifact/T9hVuH1Nyq56q4yTGwMgH8
 | Datei | Zweck |
 |---|---|
 | `index.html` | Quelle |
-| `VcA-Bewerbung-YNB.pdf` | fertiges A4-PDF, 4 Seiten (3 Seiten Pressemitteilung + Lebenslauf) |
-| `a4-seite-1…4.png` | dieselben Seiten als A4-PNG, 200 dpi, 1654×2342 |
+| `VcA-Bewerbung-YNB.pdf` | fertiges A4-PDF, 3 Seiten (2 Seiten Pressemitteilung + Lebenslauf) |
+| `a4-seite-1…3.png` | dieselben Seiten als A4-PNG, 200 dpi, 1654×2342 |
 | `build.sh`, `a4.js` | Build-Kette |
 
 ## Neu erzeugen nach Textänderungen
@@ -19,11 +19,14 @@ Live: https://claude.ai/artifact/T9hVuH1Nyq56q4yTGwMgH8
     bash build.sh      # HTML -> A4-PDF, Lebenslauf anhängen, PNGs rendern
 
 Seitenränder: oben 16 mm, unten 14 mm, seitlich je 18 mm.
+Der `@media print`-Block verdichtet Schriftgrad und Abstände so, dass die
+Mitteilung auf zwei Seiten läuft — am Bildschirm bleibt das Layout luftig.
+Wer dort Text ergänzt, muss die Seitenzahl neu prüfen.
 
 ## Bilder
 
 `pod-stern.jpg` (Ken Stern), `pod-goodell.jpg` (Marian Goodell),
-`pod-portrait.jpg` (Porträt YNB), `lebenslauf.pdf` (CV, Seite 4 — als
+`pod-portrait.jpg` (Porträt YNB), `lebenslauf.pdf` (CV, Seite 3 — als
 Original-PDF angehängt, damit YouTube- und Substack-Link klickbar bleiben;
 `lebenslauf.jpg` ist nur die Bildschirmvorschau in `index.html`),
 `vca-logo.png` (freigestellt).
