@@ -107,6 +107,14 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
   color:var(--muted)}
 .note{font-size:.88rem;color:var(--muted);font-style:italic;margin:1.5rem 0 0}
 
+.dl{display:flex;justify-content:flex-end;margin:0 0 1rem}
+.dl[hidden]{display:none}
+.dl button{font-family:var(--display);font-weight:700;font-size:.78rem;letter-spacing:.1em;
+  text-transform:uppercase;color:#fff;background:var(--deep);border:0;cursor:pointer;
+  padding:.65rem 1.15rem;border-radius:2px}
+.dl button:hover{background:var(--accent)}
+.dl button[disabled]{opacity:.6;cursor:default}
+
 .cv-page{margin-top:2.5rem}
 .cv-page img{width:100%;display:block;border:1px solid var(--rule)}
 
@@ -137,10 +145,12 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
   .facts{padding:.78rem 0;margin:1.55rem 0}
   .facts dl{gap:.45rem 1.6rem}
   .bio img{flex-basis:132px;width:132px;min-height:132px}
+  .dl{display:none}
 }
 </style>
 
 <div class="sheet">
+  <div class="dl" hidden><button type="button" id="dlbtn">PDF herunterladen &middot; 3 Seiten</button></div>
 
   <div class="flagline">
     <span class="pm">Pressemitteilung</span>
@@ -228,3 +238,30 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
   </div>
 
 </div>
+
+<script>
+(async () => {
+  const dl = await (window.claude && window.claude.use ? window.claude.use("downloads") : null);
+  if (!dl) return;                                  // Ansicht kann nicht speichern: Knopf bleibt weg
+  const bar = document.querySelector(".dl");
+  const btn = document.getElementById("dlbtn");
+  if (!bar || !btn) return;
+  bar.hidden = false;
+  const label = btn.textContent;
+  const reset = (ms) => setTimeout(() => { btn.innerHTML = label; btn.disabled = false; }, ms);
+  btn.addEventListener("click", async () => {
+    btn.disabled = true;
+    btn.textContent = "Wird vorbereitet \u2026";
+    try {
+      const res = await fetch("VcA-Bewerbung-YNB.pdf");
+      if (!res.ok) throw { code: "fetch_failed" };
+      await dl.save({ filename: "VcA-Bewerbung-YNB.pdf", data: await res.blob() });
+      btn.textContent = "Gespeichert";
+      reset(2500);
+    } catch (err) {
+      btn.textContent = (err && err.code === "declined") ? label : "Download nicht m\u00f6glich";
+      reset(err && err.code === "declined" ? 0 : 3000);
+    }
+  });
+})();
+</script>
