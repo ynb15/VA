@@ -23,7 +23,9 @@ Seitenränder: oben 16 mm, unten 14 mm, seitlich je 18 mm.
 ## Bilder
 
 `pod-stern.jpg` (Ken Stern), `pod-goodell.jpg` (Marian Goodell),
-`pod-portrait.jpg` (Porträt YNB), `lebenslauf.jpg` (CV, Seite 4),
+`pod-portrait.jpg` (Porträt YNB), `lebenslauf.pdf` (CV, Seite 4 — als
+Original-PDF angehängt, damit YouTube- und Substack-Link klickbar bleiben;
+`lebenslauf.jpg` ist nur die Bildschirmvorschau in `index.html`),
 `vca-logo.png` (freigestellt).
 
 ## Farben
