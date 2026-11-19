@@ -32,12 +32,14 @@ body{background:var(--paper);color:var(--ink);font-family:var(--body);
 .flagline .sender{font-family:var(--display);font-weight:600;font-size:.86rem;
   letter-spacing:.04em;color:var(--muted);margin-left:auto}
 
-.recipient{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap;
-  border-bottom:1px solid var(--rule);padding:.8rem 0 .9rem}
-.recipient .to{font-family:var(--display);font-weight:700;font-size:.72rem;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.recipient .logo{height:58px;width:auto;max-width:210px;object-fit:contain;display:block}
-.recipient .org{font-family:var(--display);font-size:.88rem;color:var(--muted)}
+.recipient{display:flex;align-items:center;justify-content:space-between;gap:1.4rem;
+  flex-wrap:wrap;border-bottom:1px solid var(--rule);padding:1.3rem 0 1.4rem}
+.to-block{display:flex;flex-direction:column;gap:.35rem;min-width:0}
+.recipient .to{font-family:var(--display);font-weight:700;font-size:.7rem;
+  letter-spacing:.17em;text-transform:uppercase;color:var(--muted)}
+.recipient .org{font-family:var(--display);font-size:1rem;line-height:1.45;color:var(--ink)}
+.recipient .logo{height:78px;width:auto;object-fit:contain;display:block;flex:0 0 auto}
+@media(max-width:480px){.recipient .logo{height:62px}}
 
 .dach{font-family:var(--body);font-style:italic;font-size:clamp(1rem,2.5vw,1.2rem);
   line-height:1.4;color:var(--accent);margin:1.6rem 0 .55rem;text-wrap:balance}
@@ -83,10 +85,10 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
 .facts dd{margin:0;font-variant-numeric:tabular-nums}
 
 .boiler{font-size:.95rem;color:var(--muted)}
-.bio{display:flex;flex-direction:row-reverse;gap:1.1rem;align-items:flex-start}
+.bio{display:flex;flex-direction:row-reverse;gap:1.1rem;align-items:stretch}
 @media(max-width:480px){.bio{display:block}}
-.bio img{flex:0 0 150px;width:150px;aspect-ratio:1;object-fit:cover;object-position:50% 30%;
-  border:1px solid var(--rule);display:block}
+.bio img{flex:0 0 150px;width:150px;align-self:stretch;min-height:150px;
+  object-fit:cover;object-position:50% 28%;border:1px solid var(--rule);display:block}
 @media(max-width:480px){.bio img{width:100%;aspect-ratio:16/9;margin-bottom:.8rem}}
 .bio p{margin:0}
 .boiler h2{color:var(--muted)}
@@ -111,9 +113,11 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
   </div>
 
   <div class="recipient">
-    <span class="to">An</span>
+    <div class="to-block">
+      <span class="to">An</span>
+      <span class="org">Viva con Agua de Sankt Pauli e.&nbsp;V.<br>z.&nbsp;Hd. Jana Bier</span>
+    </div>
     <img class="logo" src="bilder/vca-logo.png" alt="Viva con Agua">
-    <span class="org">Viva con Agua de Sankt Pauli e.&nbsp;V. &middot; z.&nbsp;Hd. Jana Bier</span>
   </div>
 
   <p class="dach">April 2025, AfrikaBurn, Kaggen Camp. Danach war nichts mehr wie vorher&hellip;</p>
@@ -121,9 +125,7 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
 
   <hr class="rule">
 
-  <p class="lead"><span class="dateline">Kapstadt, 19. November 2026 &ndash;</span> Yannick N. Bernard, 28, bewirbt sich auf die ausgeschriebene Position des Senior PR Managers bei Viva con Agua de Sankt Pauli e.&nbsp;V.</p>
-
-  <p class="lead">Die Bewerbung liegt als Pressemitteilung vor.</p>
+  <p class="lead"><span class="dateline">Kapstadt, 19. November 2026 &ndash;</span> Yannick N. Bernard, 28, bewirbt sich auf die ausgeschriebene Position des Senior PR Managers bei Viva con Agua de Sankt Pauli e.&nbsp;V. Die Bewerbung liegt als Pressemitteilung vor.</p>
 
   <div class="quote">
     <p>&bdquo;Auf dem Burn begriff ich, dass ich seit Jahren Geschichten erzähle, an die ich selbst nicht mehr glaube&hellip;</p>
@@ -159,7 +161,7 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
 
   <h2>Sieben Jahre Personenmarken</h2>
 
-  <p>Wenngleich Bernard kein klassischer Pressesprecher ist, hat er über sieben Jahre genau die Arbeit gemacht, die bei Viva con Agua unter Aufgabe eins steht: die Positionierung von Personenmarken. Er hat Startups zu Marktführern etabliert, globale Communities aufgebaut und mit Namen wie <em>Ungeskriptet</em>, Veit Lindau und <em>Greator</em> gearbeitet. Presse- und PR-Texte, Interviews und Storytelling-Formate sind sein Handwerk; beim Podcast liegen Recherche, Interview, Redaktion und Vermarktung in einer Hand.</p>
+  <p>Wenngleich Bernard kein klassischer Pressesprecher ist, deckt seine Arbeit der vergangenen sieben Jahre einen Großteil der ausgeschriebenen Aufgaben ab. Er hat Startups zu Marktführern etabliert, globale Communities aufgebaut und Personenmarken wie <em>Ungeskriptet</em>, Veit Lindau und <em>Greator</em> positioniert. Presse- und PR-Texte, Interviews und Storytelling-Formate sind sein Handwerk; beim Podcast liegen Recherche, Interview, Redaktion und Vermarktung in einer Hand.</p>
 
   <div class="quote">
     <p>&bdquo;Nach meinem Sabbatical will ich nicht noch ein Business skalieren. Ich will meine Erfahrung nur noch für etwas einsetzen, hinter dem ich menschlich zu 100% stehe.&ldquo;</p>
@@ -169,7 +171,7 @@ ul.guests li::before{content:"";position:absolute;left:.15rem;top:.62em;
   <div class="facts">
     <dl>
       <dt>Position</dt><dd>Senior PR Manager*in (m/w/d)</dd>
-      <dt>Gehalt</dt><dd>55.000 € brutto p.&nbsp;a., bei der Einordnung ins Gefüge flexibel</dd>
+      <dt>Gehalt</dt><dd>Je nach Umfang und Verantwortung 55.000 € brutto p.&nbsp;a.</dd>
       <dt>Verfügbar</dt><dd>[DATUM]</dd>
     </dl>
   </div>
