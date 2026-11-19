@@ -1,0 +1,174 @@
+<title>Bernard bewirbt sich</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: single measured column, press-kit furniture top and bottom, photo strip at the fold */
+:root{
+  --paper:#fbfaf7; --ink:#15181d; --muted:#5d6670; --rule:#ddd8cf;
+  --accent:#0a5f8a; --accent-soft:#e8f1f6; --flag:#c8372d;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#14161a; --ink:#eceae5; --muted:#9aa3ad; --rule:#2d323a;
+  --accent:#6ab6dd; --accent-soft:#16242d; --flag:#e4756a; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --paper:#14161a; --ink:#eceae5; --muted:#9aa3ad; --rule:#2d323a;
+  --accent:#6ab6dd; --accent-soft:#16242d; --flag:#e4756a; color-scheme:dark;}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.62;margin:0}
+.sheet{max-width:46rem;margin:0 auto;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:clamp(28px,5vw,56px)}
+
+.flagline{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem 1rem;
+  border-bottom:3px solid var(--ink);padding-bottom:.6rem}
+.flagline .pm{font-family:var(--display);font-weight:800;font-size:.86rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--flag)}
+.flagline .sender{font-family:var(--display);font-weight:600;font-size:.86rem;
+  letter-spacing:.04em;color:var(--muted);margin-left:auto}
+
+h1{font-family:var(--display);font-weight:800;line-height:1.04;
+  font-size:clamp(2.1rem,7.2vw,3.5rem);letter-spacing:-.025em;
+  text-wrap:balance;margin:1.4rem 0 0}
+.deck{font-size:clamp(1.08rem,2.6vw,1.3rem);line-height:1.45;color:var(--muted);
+  font-style:italic;margin:.85rem 0 0;text-wrap:balance}
+.rule{border:0;border-top:1px solid var(--rule);margin:1.8rem 0}
+
+p{margin:0 0 1.05rem}
+.lead{font-size:1.14rem}
+.lead .dateline{font-family:var(--display);font-weight:700;font-size:.95rem;
+  letter-spacing:.02em;text-transform:uppercase}
+h2{font-family:var(--display);font-weight:700;font-size:1.06rem;letter-spacing:.03em;
+  text-transform:uppercase;color:var(--accent);margin:2.2rem 0 .7rem}
+
+.quote{border-left:4px solid var(--accent);background:var(--accent-soft);
+  padding:1.1rem 1.3rem;margin:1.8rem 0;font-size:1.14rem;line-height:1.5}
+.quote p:last-child{margin:0}
+.quote cite{display:block;font-family:var(--display);font-style:normal;
+  font-weight:600;font-size:.84rem;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--muted);margin-top:.7rem}
+
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0}
+@media(max-width:560px){.strip{grid-template-columns:1fr}}
+figure{margin:0;min-width:0}
+figure .frame{aspect-ratio:4/5;background:var(--accent-soft);border:1px solid var(--rule);
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+figure img{width:100%;height:100%;object-fit:cover;display:block}
+figcaption{font-family:var(--display);font-size:.78rem;line-height:1.35;color:var(--muted);
+  margin-top:.45rem}
+figcaption b{color:var(--ink);font-weight:700}
+
+.facts{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);
+  padding:1rem 0;margin:2.2rem 0}
+.facts dl{display:grid;grid-template-columns:auto 1fr;gap:.45rem 1.4rem;margin:0}
+.facts dt{font-family:var(--display);font-weight:700;font-size:.78rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted);align-self:baseline}
+.facts dd{margin:0;font-variant-numeric:tabular-nums}
+
+.boiler{font-size:.95rem;color:var(--muted)}
+.boiler h2{color:var(--muted)}
+.contact{font-family:var(--display);font-size:.95rem;line-height:1.7}
+.ends{font-family:var(--display);font-weight:700;letter-spacing:.3em;text-align:center;
+  color:var(--muted);margin:2.4rem 0 1.4rem}
+.note{font-size:.88rem;color:var(--muted);border:1px dashed var(--rule);padding:.9rem 1.1rem}
+
+@media print{
+  :root{--paper:#fff;--ink:#000}
+  body{font-size:10.5pt}
+  .sheet{max-width:none;padding:0}
+  .strip{break-inside:avoid}
+}
+</style>
+
+<div class="sheet">
+
+  <div class="flagline">
+    <span class="pm">Pressemitteilung</span>
+    <span class="sender">Yannick N. Bernard &middot; Kapstadt</span>
+  </div>
+
+  <h1>Bernard bewirbt sich bei Viva con Agua</h1>
+  <p class="deck">Marketingstratege und Podcast-Host reicht Unterlagen für die Stelle als Senior PR Manager ein &ndash; in der Form, in der er die Arbeit auch machen würde.</p>
+
+  <hr class="rule">
+
+  <p class="lead"><span class="dateline">Kapstadt, 19. November 2026 &ndash;</span> Yannick N. Bernard, 28, bewirbt sich auf die ausgeschriebene Position des Senior PR Managers bei Viva con Agua de Sankt Pauli e.&nbsp;V. Bernard hat sieben Jahre lang Marken und Personen vermarktet, führte eine eigene Copywriting-Agentur mit über hundert Kunden und produziert seit 2025 den Interview-Podcast <em>Man&rsquo;s Search for Meaning</em>. Die Bewerbung liegt als Pressemitteilung vor.</p>
+
+  <h2>Die Entscheidung fiel auf dem AfrikaBurn</h2>
+
+  <p>Im April 2025 verbrachte Bernard eine Woche im Kaggen Camp auf dem AfrikaBurn in der Tankwa-Karoo. Dort, sagt er, sei ihm klargeworden, dass er seit Jahren Geschichten erzähle, an die er selbst nicht mehr glaube. Drei Tage nach seiner Rückkehr schloss er die Agentur, zog nach Kapstadt und nahm sich ein Jahr.</p>
+
+  <div class="quote">
+    <p>&bdquo;Auf dem Papier hatte ich alles richtig gemacht. Sechsstellig, hundert zufriedene Kunden, eigenes Team. Innerlich war nichts mehr da.&ldquo;</p>
+    <cite>Yannick N. Bernard</cite>
+  </div>
+
+  <h2>Vierhundert Mails, kein Budget, kein Netzwerk</h2>
+
+  <p>Statt eines neuen Unternehmens baute Bernard einen Podcast auf, den er ausschließlich persönlich aufnimmt. Um die Gäste dafür zu gewinnen, flog er 2026 mit einem One-Way-Ticket in die Vereinigten Staaten und schrieb über vierhundert Kaltakquise-Mails &ndash; ohne Reichweite, ohne Etat und ohne Kontakte vor Ort.</p>
+
+  <p>Zugesagt haben unter anderem Marian Goodell, CEO des Burning Man Project, der frühere NPR-Chef Ken Stern, der Quantenphysiker und OpenAI-Insider Scott Aaronson, NFL-Profi Eben Britton und der weltweit führende DMT-Forscher Rick Strassman. Im Januar 2027 folgt Viva-con-Agua-Gründer Benjamin Adrion.</p>
+
+  <div class="strip">
+    <figure>
+      <div class="frame"><img src="bilder/goodell.jpg" alt="Yannick N. Bernard mit Marian Goodell"></div>
+      <figcaption><b>Marian Goodell</b><br>CEO, Burning Man Project. San Francisco, Oktober 2026.</figcaption>
+    </figure>
+    <figure>
+      <div class="frame"><img src="bilder/stern.jpg" alt="Yannick N. Bernard mit Ken Stern"></div>
+      <figcaption><b>Ken Stern</b><br>Ehem. CEO, National Public Radio. Austin, September 2026.</figcaption>
+    </figure>
+    <figure>
+      <div class="frame"><img src="bilder/strassman.jpg" alt="Yannick N. Bernard mit Rick Strassman"></div>
+      <figcaption><b>Prof. Rick Strassman</b><br>DMT-Forscher, dreifacher Rogan-Gast. Albuquerque, September 2026.</figcaption>
+    </figure>
+  </div>
+
+  <div class="quote">
+    <p>&bdquo;Keiner dieser Leute schuldete mir irgendwas. Sie haben trotzdem ja gesagt. Genau das ist der Job, den ihr ausgeschrieben habt.&ldquo;</p>
+    <cite>Yannick N. Bernard</cite>
+  </div>
+
+  <h2>Was Bernard nicht mitbringt</h2>
+
+  <p>Bernard hat weder Kommunikationswissenschaften studiert noch ein Volontariat absolviert. Er verfügt über keinen gewachsenen deutschen Presseverteiler und hat nie in einer Pressestelle gearbeitet. Was auf der Anforderungsliste steht, hat er sich stattdessen über sieben Jahre selbst beigebracht &ndash; unter der Bedingung, dass Kunden dafür bezahlten, dass es funktioniert.</p>
+
+  <h2>Woran er anknüpfen würde</h2>
+
+  <p>Die Positionierung von Personenmarken, bei Viva con Agua unter Aufgabe eins geführt, war Bernards Geschäft: Er betreute unter anderem Veit Lindau, <em>Greator</em>, <em>Ungeskriptet</em> und Deutschlands bekanntesten Psychologen. Presse- und PR-Texte, Interviews und Storytelling-Formate sind sein Handwerk; beim Podcast liegen Recherche, Interview, Redaktion und Vermarktung in einer Hand.</p>
+
+  <p>Kultur, Musik und Kunst bezeichnet Bernard nicht als Interessengebiet, sondern als Umgebung: Burn-Kultur seit Jahren, Kapstadt und Hamburg, ein &bdquo;All in for Water&ldquo;-Trikot seit dem Sommer im Schrank.</p>
+
+  <div class="facts">
+    <dl>
+      <dt>Position</dt><dd>Senior PR Manager*in (m/w/d)</dd>
+      <dt>Gehalt</dt><dd>55.000 € brutto p.&nbsp;a., bei der Einordnung ins Gefüge flexibel</dd>
+      <dt>Verfügbar</dt><dd>[DATUM]</dd>
+      <dt>Referenz</dt><dd>Benjamin Adrion, Gründer</dd>
+    </dl>
+  </div>
+
+  <div class="boiler">
+    <h2>Über Yannick N. Bernard</h2>
+    <p>Yannick N. Bernard, geboren 1998, ist Marketingstratege, Texter und Host des Interview-Podcasts <em>Man&rsquo;s Search for Meaning</em>, benannt nach Viktor Frankls Buch. Vor seinem Sabbatical führte er sieben Jahre lang eine Copywriting-Agentur mit Kunden auf drei Kontinenten und baute unter anderem Deutschlands führendes Unternehmen für psychedelische Therapie mit auf. Er hat 35 Länder bereist, in New York, Medellín, Berlin, Bali und Kapstadt gelebt und seit 2020 Retreats, Masterminds und Workations auf vier Kontinenten organisiert. Er lebt in Kapstadt.</p>
+  </div>
+
+  <div class="boiler">
+    <h2>Pressekontakt</h2>
+    <p class="contact">
+      Yannick N. Bernard<br>
+      ynb@yannick-noah.com<br>
+      yannick-noah.com
+    </p>
+  </div>
+
+  <p class="ends">&ndash; ENDE &ndash;</p>
+
+  <p class="note"><b>Hinweis an die Redaktion:</b> Diese Mitteilung ist das Bewerbungsschreiben. Wer wissen will, ob der Absender Pressetexte schreiben kann, hält die Antwort bereits in der Hand.</p>
+
+</div>
