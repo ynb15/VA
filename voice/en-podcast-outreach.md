@@ -440,3 +440,29 @@ er es schließt**, sondern durch eine Tatsache, die es überflüssig macht — h
 dass andere Kanzleien auf ihn zugekommen sind, er mit ihnen gesprochen hat und
 sich trotzdem für diesen Anwalt entscheidet. **Der Verzicht steht im Handeln,
 nicht in der Ankündigung.**
+
+## Sein Satz zum Vorabtreffen — wörtlich, nicht neu erfinden
+
+**Er erklärt bei jedem Gast, warum er sich vorher persönlich trifft.** Am
+20.11. musste er mich darauf hinweisen (*„da fehlt eine Erklärung. Ich schreibe
+ja immer in der Mail, warum ich gerne vorher in Person treffe."*) — ich hatte
+nur *„One thing I do before every recording: meet up first"* geschrieben und
+den Grund weggelassen.
+
+**Der Baustein, aus seiner Mail an Brendan Kane vom 29.10.2026:**
+
+> One thing I like to do before every podcast: meet up briefly IRL sometime in
+> the days beforehand. In my experience it just makes the whole thing more
+> personal and sets us up for a deeper, better conversation.
+
+**Nicht umformulieren.** Daran hängt die Einladung, die bei ihm konkret wird
+und einen Scherz trägt — Brendan: *„lunch or some black gold on me at one of
+Cape Town's finest (I've done quite some extensive „research")"*.
+
+Und die lange Fassung desselben Gedankens, an Ken Stern, 08.09., wenn jemand
+Zoom vorschlägt:
+
+> I only ever record in-person - for the exact reason your work points to, that
+> real human connection happens face to face. I've just experienced it time and
+> again, that IRL podcasts turned out to be the most powerful and the deepest
+> of all.
