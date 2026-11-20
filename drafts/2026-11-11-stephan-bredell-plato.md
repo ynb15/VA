@@ -1,9 +1,10 @@
 # Stephan Bredell (Platō Coffee) - Neuanlauf
 
-**Stand:** Fr 20.11.2026, Kapstadt. **Elfte Fassung. Entwurf, nicht gesendet.**
+**Stand:** Fr 20.11.2026, Kapstadt. **Zwölfte Fassung, final. Entwurf, nicht gesendet.**
 
-> **Auf seine Ansage:** Black Gold steht im Marktplatz-Absatz, der erfundene Witz ist
-> raus und *"just without the coffee"* war falsch. Begründung unter Punkt 1b.
+> **Keine Varianten mehr.** Jede offene Entscheidung ist getroffen und begründet: Black
+> Gold steht im Marktplatz-Absatz, der Schlusssatz bleibt sauber, Rob Bennett bleibt in
+> der Liste, *"fifteen years"* bleibt stehen.
 
 ## Was im Postfach steht
 
@@ -232,10 +233,6 @@ ihn zu stellen und ohne eine Pointe auf Deine Kosten.**
 Und für seinen Markt ist die Zeile nebenbei ein Signal: ein Kapstädter, der die guten
 Läden kennt, ist genau der Kunde, um den er sich in dieser Stadt bemüht.
 
-**Falls Du den Rückruf am Ende doch willst**, hängt an den Schlusssatz:
-*"Black Gold on you, the conversation on me."* Ich habe ihn weggelassen, weil das Wort
-dann zweimal in einer kurzen Mail steht.
-
 **2. Raus:** *"I don't think that was an accident."* Deine Ansage. Der Satz legt ihm
 eine Bedeutung in den Mund, die er nie behauptet hat, und er klingt nach Deutung von
 außen.
@@ -280,11 +277,12 @@ Jahre, über die er sonst nur in Pleitenzahlen spricht.
 > **Prüfen vor dem Senden:** *"fifteen years"* im Einstieg. Er sagt mal 15, mal
 > *"15 or 20"*. Wenn er inzwischen anders rechnet, nimm *"all those years"*.
 
-> **Eine Entscheidung, die ich Dir überlasse: Rob Bennett in der Liste.**
-> *"my 77 y/o psychedelic therapist"* ist Deine stärkste Formulierung. **Der Empfänger
-> ist bekennender Christ und Vater von vier Jungs.** Ich habe ihn drin gelassen, weil
-> ich Dir Deine Zeilen nicht ungefragt rausnehme - **wenn Du tauschen willst, nimm
-> Ex-Hollywood actor David Sutcliffe.**
+> **Rob Bennett bleibt in der Liste.** Der Empfänger ist bekennender Christ und Vater
+> von vier Jungs, und ich habe überlegt, ihn gegen David Sutcliffe zu tauschen.
+> **Dagegen spricht mehr:** Rob ist Kapstädter, Anti-Apartheid-Aktivist und 77 - für
+> einen Südafrikaner ist das Gewicht, nicht Provokation. Und Deine Sendung heißt
+> *Man's Search for Meaning*, nicht *Founder Stories*; wer Dich einlädt, soll wissen,
+> in welchem Raum er landet.
 
 ---
 
