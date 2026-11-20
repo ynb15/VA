@@ -9579,3 +9579,25 @@ Suchvorschau statt des Fadens, bei der Sperrmail der Meldungstext statt einer
 Messung, hier das Postfach statt der Kalender. **Dreimal in zehn Tagen
 derselbe Griff.** Was ich melde, muss aus der Quelle kommen, die die Frage
 beantwortet — nicht aus der, die gerade offen ist.
+
+## SEINE EICHUNG FÜR BEKANNTHEIT — 20.11.2026
+
+Ich hatte die 30 Outreach-Karten nach Bekanntheit sortiert. **Seine Korrektur:**
+*„Kornfield Mycoskie Price Watson Thrun gehören ganz nach unten"*.
+
+**Was die fünf gemeinsam haben:** ihre Bekanntheit hängt an einer Institution,
+einem Fach oder einem Ort, nicht am Namen.
+
+| | hatte ich auf | seine Lesart |
+|---|---|---|
+| Jack Kornfield | 16 | groß im Buddhismus, draußen unbekannt |
+| Blake Mycoskie | 15 | **TOMS** ist bekannt, er nicht |
+| MacKenzie Price | 30 | — |
+| Kirk Watson | 29 | Bürgermeister, also lokal |
+| Sebastian Thrun | 14 | groß in der Technik, draußen unbekannt |
+
+**Die Regel:** **der Name muss außerhalb seines Felds tragen.** Fachgröße,
+akademischer Rang, Gründerstatus und ein lokales Amt zählen bei ihm **nicht**
+als Bekanntheit — ich hatte Thrun und Mycoskie genau dafür nach oben gesetzt.
+Bei Marian Goodell hatte ich es selbst richtig gemacht (Burning Man ist
+berühmt, sie nicht) und bei den anderen vier nicht angewandt.
