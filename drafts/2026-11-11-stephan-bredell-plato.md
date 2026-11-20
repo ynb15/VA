@@ -1,10 +1,10 @@
 # Stephan Bredell (Platō Coffee) - Neuanlauf
 
-**Stand:** Fr 20.11.2026, Kapstadt. **Vierte Fassung. Entwurf, nicht gesendet.**
+**Stand:** Fr 20.11.2026, Kapstadt. **Fünfte Fassung. Entwurf, nicht gesendet.**
 
-> **Gegenüber der dritten Fassung ist nur der Cold Open getauscht**, auf seine Ansage
-> hin: die acht Pleiten tragen keinen Einstieg mehr, weil er sie selbst erzählt hat.
-> Begründung unter Punkt 5.
+> **Der Einstieg steht jetzt auf "collecting dots"**, auf seinen Hinweis hin. Die acht
+> Pleiten tragen keinen Aufhänger mehr, weil er sie selbst erzählt hat. Begründung
+> unter Punkt 1 und 6.
 
 ## Was im Postfach steht
 
@@ -125,13 +125,14 @@ die Marke geht.
 
 ## Die Mail
 
-> "Still, in the back of your mind, it's like: are we there yet? Are we out of the
-> woods?"
+> "Steve Jobs said you can't connect the dots looking forward. That's been the story
+> of my life."
 >
-> You said that six years in, with the stores already past a hundred. The next question
-> took you straight back to the old businesses, and the sentence went by. Every
-> interview walks you through the eight failures and the container, because that's the
-> good story. I'm only interested in the man who still doesn't feel safe…
+> But connecting them backwards only works if the story ends well. Eight failures
+> became an education because Platō happened - if it hadn't, they'd have stayed eight
+> failures. So which is it: were the dots always there, or did winning hand them their
+> meaning afterwards? That question is the one my whole show is built on, and you're
+> one of the few people alive who's actually qualified to answer it…
 >
 > Cheers Stephan, my name is Yannick - host of [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m),
 > a podcast about humans who've walked through the fire and came out different.
@@ -139,12 +140,13 @@ die Marke geht.
 > I wrote to you back in March. That email wasn't good enough and it didn't deserve an
 > answer, so this is me doing it properly.
 >
-> You named a company after the man whose marketplace was where people worked out how
-> to live. I've spent the last two years building the same thing without the coffee -
-> so when you said that's what Platō is for, it landed differently with me than it
-> does with most people who hear it.
+> The show is named after Viktor Frankl's book. His whole argument was that meaning
+> isn't sitting inside the suffering waiting to be found - you make it out of the
+> suffering, afterwards, and you have to choose to. That's your dots, in another
+> language. And then you went and named the company after the marketplace where people
+> worked out how to live. I don't think we're in different businesses.
 >
-> And I know the shape of your story from the inside, just at a much smaller scale: I
+> I know the shape of your story from the inside too, just at a much smaller scale: I
 > built a marketing agency alongside spiritual teachers and coaches, scaled Germany's
 > #1 psychedelic therapy company as its CMO, was certain I'd found the meaningful
 > thing, and still ended up standing there empty. I have my own pile of things that
@@ -154,13 +156,13 @@ die Marke geht.
 > deeper layer of your life:
 >
 > **What it actually costs to believe you shouldn't store up treasures on earth while
-> building something this size - and where that line sits for you now, with London
-> opening in March. What losing that much money that young did to the way you see it;
-> you called money air, and I believe you, but I want to know what it took to get
-> there. Four boys, homeschooled, thirteen stores opened in one month: which of the
-> glass balls has come closest to the floor, and what did you change afterwards. And
-> the question your own brand name asks - whether the marketplace conversations you
-> named it after survive being scaled, or whether scale is exactly what kills them.**
+> building something this size - and where that line sits now, with London opening in
+> March. What losing that much money that young did to the way you see it; you called
+> money air, and I believe you, but I want to know what it took to get there. Four
+> boys, homeschooled, thirteen stores opened in one month: which of the glass balls
+> has come closest to the floor. And the sentence nobody picked up on - six years in
+> and past a hundred stores, you still catch yourself asking whether you're out of the
+> woods. What would actually have to happen for that to stop?**
 >
 > I know I don't have the biggest reach yet. But I've already had some extraordinary
 > people on the show, such as…
@@ -186,28 +188,65 @@ die Marke geht.
 
 ## Die Entscheidungen darin
 
-**1. Der Name steht im Fließtext, nicht im Fragenblock.** Das ist die wichtigste
-Änderung. Er hat erklärt, warum die Marke Platō heißt - **also fragst Du ihn nicht
-danach, Du antwortest darauf.** *"I've spent the last two years building the same
-thing without the coffee"* ist der Satz, an dem er merkt, dass das hier kein
-Serienanschreiben ist.
+**1. Der Cold Open nimmt seinen eigenen Satz und stellt ihn auf die Probe.**
 
-**2. Die Glaubensfrage ist die, die ihm niemand stellt.** Er sagt von sich aus, dass
-er keine Schätze auf Erden sammeln will - und baut gleichzeitig eine Gruppe mit
-Holding, Rösterei, Bäckerei, Burgermarke und London-Expansion. **Das ist kein
-Vorwurf, das ist die Spannung, in der er lebt**, und er spricht offen genug darüber,
-dass die Frage ihn nicht in die Defensive drängt. *"with London opening in March"*
-macht sie konkret statt theologisch.
+Er sagt über Jobs' Zeile: *"I think that has been like the story of my life."* Und an
+anderer Stelle: *"one of the best dots to collect is a failing dot."*
 
-**3. Der Schlusssatz zitiert ihn zurück.** *"You said if someone really wants to meet
-you, they can fly out to George."* Er hat das halb im Scherz gesagt. Dass Du es
-aufgegriffen hast, beweist in zwölf Wörtern, dass Du das ganze Gespräch gesehen hast -
-und *"I'm in Cape Town, so I'd just drive"* ist eine ehrliche Zusage in der richtigen
-Größe. Keine Weltreise, eine Autofahrt in derselben Provinz.
+**Der Haken darin, den er selbst nie ausspricht: Punkte rückwärts zu verbinden
+funktioniert nur, wenn die Geschichte gut ausgeht.** Hätte Platō nicht funktioniert,
+wären die acht Pleiten keine Ausbildung, sondern acht Pleiten. Dieselben Punkte,
+keine Linie.
 
-**4. Der Fragenblock nimmt nichts, was er schon dreißigmal erzählt hat.** Kein
-Container, kein Load Shedding, kein Franchise-Modell, kein "collecting dots". Das
-steht alles in beiden Transkripten und steht in jedem Artikel über ihn.
+**Das ist keine Spitzfindigkeit, das ist die Frage.** Entweder die Bedeutung war die
+ganze Zeit da - dann hatte sie auch der Mann im zwölften Jahr, mitten in den
+Schulden, der noch kein Muster sehen konnte. Oder der Erfolg hat sie nachträglich
+geliefert, und dann ist "collecting dots" eine Geschichte, die nur Gewinner erzählen
+können.
+
+**Und genau deshalb ist er der Richtige für Deine Sendung**, nicht irgendein Gründer.
+Er hat beide Seiten gelebt: fünfzehn Jahre ohne Linie, sechs mit.
+
+**2. Frankl steht da, weil er die Antwort auf dieselbe Frage ist.** Frankls These ist
+nicht, dass Leiden einen Sinn hat - sie ist, dass man ihn daraus macht, danach, und
+dass es eine Entscheidung ist. **Das ist Stephans Punktesammeln in anderer Sprache.**
+Ein Satz, kein Vortrag, und er erklärt nebenbei Deinen Sendungstitel, ohne dass Du ihn
+erklären musst.
+
+*"I don't think we're in different businesses"* ist der Schlusssatz des Absatzes und
+macht aus dem Ganzen eine Begegnung auf Augenhöhe statt einer Anfrage.
+
+**3. Der Name steht im selben Absatz, nicht im Fragenblock.** Er hat erklärt, warum
+die Marke Platō heißt - der Marktplatz, auf dem Menschen besprachen, wie man lebt.
+**Also fragst Du ihn nicht danach, Du baust darauf.**
+
+**4. Die Glaubensfrage ist die, die ihm niemand stellt.** Er sagt von sich aus, dass
+er keine Schätze auf Erden sammeln will - und baut gleichzeitig Holding, Rösterei,
+Bäckerei, Burgermarke und London. **Das ist kein Vorwurf, das ist die Spannung, in
+der er lebt.** *"with London opening in March"* macht sie konkret statt theologisch.
+
+**5. "Are we out of the woods" ist aus dem Einstieg in den Fragenblock gewandert.**
+Dort gehört es hin: als vierte Frage trägt es, als Aufhänger war es zu leise neben
+den Punkten.
+
+**6. Warum die acht Pleiten nicht mehr den Einstieg machen.** Die erste Fassung
+öffnete mit *"eight big business failures that nobody knows about"* und der Pointe,
+dass keiner danach fragt. **Das war ab dem Moment tot, in dem er den Satz in ein
+Mikrofon gesagt und danach eine Stunde lang die Geschichte erzählt hat.** Das zweite
+Video heißt sogar danach. Die Pleiten sind inzwischen genau die Geschichte, nach der
+ihn jeder fragt.
+
+> **Zur Genauigkeit:** Beide Zitate stammen aus **automatischen Transkriptionen**.
+> Im Rohtext steht *"I think Steve Jobs used to say you can't connect dots looking
+> forward and I think that has been like the story of my life"* und
+> *"but still in your back of your mind it's like are we there yet you know are we
+> out of the woods"*. Ich habe Füllwörter weggenommen und Satzzeichen gesetzt.
+> **Hör beide Stellen einmal nach, bevor Du sie in Anführungszeichen schickst.**
+> Wenn Du dem Wortlaut nicht traust, geht der Einstieg auch ohne:
+>
+> > You've said the Steve Jobs line about not being able to connect the dots looking
+> > forward is basically the story of your life. But connecting them backwards only
+> > works if the story ends well…
 
 > **Eine Entscheidung, die ich Dir überlasse: Rob Bennett in der Liste.**
 > *"my 77 y/o psychedelic therapist"* ist Deine stärkste Formulierung und steht in
@@ -216,34 +255,6 @@ steht alles in beiden Transkripten und steht in jedem Artikel über ihn.
 > Deine Zeilen nicht ungefragt rausnehme - aber **wenn Du tauschen willst, nimm
 > Ex-Hollywood actor David Sutcliffe.** Das ist meine Einschätzung über diesen einen
 > Leser, kein Urteil über Rob.
-
-**5. Warum der Cold Open nicht mehr auf den acht Pleiten steht.**
-
-Die erste Fassung öffnete mit *"eight big business failures that nobody knows about"*
-und der Pointe, dass niemand danach fragt. **Das war ab dem Moment tot, in dem er den
-Satz in ein Mikrofon gesagt und danach eine Stunde lang die ganze Geschichte erzählt
-hat.** Beide Transkripte handeln von nichts anderem. Das zweite Video heißt
-*"From 8 Failed Businesses to 130+ Stores"*. **Die Pleiten sind inzwischen genau die
-Geschichte, nach der ihn jeder fragt** - ihm zu schreiben, dass sie keiner kennt,
-hätte ihn den Rest der Mail nicht mehr ernst nehmen lassen.
-
-**Der neue Open dreht es um und benutzt dasselbe Material ehrlich:** ja, jeder fragt
-nach den Pleiten. Der Satz, den keiner aufgreift, ist ein anderer. Und das ist nicht
-meine Behauptung, das steht im Transkript: Er sagt
-*"are we there yet, are we out of the woods"*, schiebt nach, dass ihn ein zweites
-Corona umhauen würde - und **die nächste Frage des Hosts geht zurück zu den alten
-Firmen.** Der Satz fällt durch.
-
-> **Zur Genauigkeit:** Das Zitat kommt aus einer **automatischen Transkription**, im
-> Rohtext steht *"but still in your back of your mind it's like are we there yet you
-> know are we out of the woods"*. Ich habe Füllwörter weggenommen und Satzzeichen
-> gesetzt. **Hör die Stelle einmal nach, bevor Du sie in Anführungszeichen schickst**
-> (zweites Video, kurz nach 05:30). Wenn Du dem Wortlaut nicht traust, geht es auch
-> ohne Anführungszeichen:
->
-> > Six years in, past a hundred stores, and you still catch yourself asking whether
-> > you're out of the woods yet. The next question took you straight back to the old
-> > businesses, and the sentence went by…
 
 ---
 
