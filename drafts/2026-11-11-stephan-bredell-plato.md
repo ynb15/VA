@@ -1,10 +1,9 @@
 # Stephan Bredell (Platō Coffee) - Neuanlauf
 
-**Stand:** Fr 20.11.2026, Kapstadt. **Achte Fassung. Entwurf, nicht gesendet.**
+**Stand:** Fr 20.11.2026, Kapstadt. **Neunte Fassung. Entwurf, nicht gesendet.**
 
-> **Auf seine Ansage:** die Selbstdisqualifizierung ist strategisch gedreht, *"I don't
-> think that was an accident"* und der Frankl-Absatz sind raus, die vier Jungs und die
-> dreizehn Läden sind zurück, und London steht als Tatsache statt als Datum.
+> **Auf seine Ansage:** Black Gold ist drin, und der zweite Anlauf nennt jetzt die
+> US-Tour als Grund, warum die Sendung abgehoben ist. Begründung unter Punkt 1 und 1b.
 
 ## Was im Postfach steht
 
@@ -135,12 +134,15 @@ die Marke geht.
 > Cheers Stephan, my name is Yannick - host of [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m),
 > a podcast about humans who've walked through the fire and came out different.
 >
-> I wrote to you back in March, when the show was a handful of episodes old. It's a
-> different show now - and you're still the one I keep coming back to. So: second
-> attempt.
+> I wrote to you back in March, when the show was a handful of episodes old. Then came
+> a three-month recording run across the US and the thing properly took off - and
+> you're still the one I keep coming back to. So: second attempt.
 >
 > You named the company after the marketplace where people stood around working out how
-> to live. That's the room I've been building for two years, just without the coffee.
+> to live. That's the room I've been building for two years, minus the one thing you're
+> actually good at: I call coffee Black Gold and drink it accordingly, but what comes
+> out of my own kitchen wouldn't survive one of your baristas.
+>
 > And I know the shape of your story from much further down the scale: I built a
 > marketing agency with spiritual teachers and coaches, scaled Germany's #1 psychedelic
 > therapy company as its CMO, was sure I'd found the meaningful thing, and still ended
@@ -182,19 +184,42 @@ die Marke geht.
 
 ## Die Entscheidungen darin
 
-**1. Der zweite Anlauf wird nicht mehr mit Dir bezahlt.**
+**1. Der zweite Anlauf wird nicht mehr mit Dir bezahlt - und er nennt jetzt den Grund.**
 
 Vorher: *"That email wasn't good enough and it didn't deserve an answer, so this is me
 doing it properly."* **Das ist ein Geständnis, und es kostet Dich etwas, bevor er die
 erste Frage gelesen hat.**
 
 Jetzt: *"I wrote to you back in March, when the show was a handful of episodes old.
-It's a different show now - and you're still the one I keep coming back to."*
+Then came a three-month recording run across the US and the thing properly took off -
+and you're still the one I keep coming back to. So: second attempt."*
 
-**Dasselbe Faktum, umgekehrte Richtung.** Es erklärt die Lücke von acht Monaten, aber
-der Grund ist Wachstum statt Scham - und der Schlusssatz macht aus der Wiederholung ein
-Kompliment: **er ist nicht der Nächste auf einer Liste, er ist der, zu dem Du
-zurückkommst.** *"So: second attempt"* ist trocken genug, dass es nicht schleimt.
+**Dasselbe Faktum, umgekehrte Richtung.** Die acht Monate sind erklärt, aber der Grund
+ist Wachstum statt Scham. Und wie in Deiner Josh-Fassung steht der Beleg daneben: dort
+waren es die 300 Anschreiben, hier ist es die **US-Tour**, und die ist das bessere
+Argument - sie ist konkret, sie ist eine Leistung, und sie widerspricht nicht Deinem
+eigenen *"depth over quantity"* weiter unten.
+
+Der Schlusssatz macht aus der Wiederholung ein Kompliment: **er ist nicht der Nächste
+auf einer Liste, er ist der, zu dem Du zurückkommst.** *"So: second attempt"* ist
+trocken genug, dass es nicht schleimt.
+
+**1b. Black Gold steht an der einzigen Stelle, an der es arbeitet.**
+
+Vorher hieß es *"just without the coffee"* - eine Floskel. Jetzt:
+
+> *"That's the room I've been building for two years, minus the one thing you're
+> actually good at: I call coffee Black Gold and drink it accordingly, but what comes
+> out of my own kitchen wouldn't survive one of your baristas."*
+
+**Drei Dinge auf einmal:** Dein Wort für Kaffee kommt rein und erklärt sich von selbst,
+der Platō-Satz davor verliert seinen Predigtton, und **das Kompliment geht an sein
+Produkt statt an seine Firma** - bei einem Mann, der sagt *"I'm an entrepreneur, coffee
+was just the vehicle"*, ist das Lob für die Baristas genau das, was er seinem Bruder
+weitergibt.
+
+Es ist der einzige Witz in der Mail. **Einer reicht**, und er steht vor dem
+Fragenblock, also bevor es ernst wird.
 
 **2. Raus:** *"I don't think that was an accident."* Deine Ansage. Der Satz legt ihm
 eine Bedeutung in den Mund, die er nie behauptet hat, und er klingt nach Deutung von
