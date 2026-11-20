@@ -1,10 +1,10 @@
 # Stephan Bredell (Platō Coffee) - Neuanlauf
 
-**Stand:** Fr 20.11.2026, Kapstadt. **Fünfte Fassung. Entwurf, nicht gesendet.**
+**Stand:** Fr 20.11.2026, Kapstadt. **Sechste Fassung. Entwurf, nicht gesendet.**
 
-> **Der Einstieg steht jetzt auf "collecting dots"**, auf seinen Hinweis hin. Die acht
-> Pleiten tragen keinen Aufhänger mehr, weil er sie selbst erzählt hat. Begründung
-> unter Punkt 1 und 6.
+> **Drei Änderungen auf seine Ansage:** der Einstieg staunt statt zu konfrontieren,
+> der Frankl-Satz war bei mir falsch herum und ist korrigiert, und *"I don't think
+> we're in different businesses"* ist raus. Begründung unter Punkt 1 und 2.
 
 ## Was im Postfach steht
 
@@ -128,11 +128,10 @@ die Marke geht.
 > "Steve Jobs said you can't connect the dots looking forward. That's been the story
 > of my life."
 >
-> But connecting them backwards only works if the story ends well. Eight failures
-> became an education because Platō happened - if it hadn't, they'd have stayed eight
-> failures. So which is it: were the dots always there, or did winning hand them their
-> meaning afterwards? That question is the one my whole show is built on, and you're
-> one of the few people alive who's actually qualified to answer it…
+> I keep turning that line over. The pattern only shows itself once the story has
+> turned out - and for fifteen years yours hadn't. Something in you kept collecting
+> them anyway, with no way of knowing. That's the part I find beautiful, and it's the
+> part nobody asks you about…
 >
 > Cheers Stephan, my name is Yannick - host of [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m),
 > a podcast about humans who've walked through the fire and came out different.
@@ -140,11 +139,12 @@ die Marke geht.
 > I wrote to you back in March. That email wasn't good enough and it didn't deserve an
 > answer, so this is me doing it properly.
 >
-> The show is named after Viktor Frankl's book. His whole argument was that meaning
-> isn't sitting inside the suffering waiting to be found - you make it out of the
-> suffering, afterwards, and you have to choose to. That's your dots, in another
-> language. And then you went and named the company after the marketplace where people
-> worked out how to live. I don't think we're in different businesses.
+> The show is named after Viktor Frankl's book, and he spent it arguing something
+> quietly stubborn: that the meaning is already there while you're still inside it,
+> long before you can see the shape of it, and that what's left to us is what we make
+> of what happens. Your dots and his sentence are circling the same thing from
+> opposite sides. And then you named the company after the marketplace where people
+> stood around working out how to live. I don't think that was an accident.
 >
 > I know the shape of your story from the inside too, just at a much smaller scale: I
 > built a marketing agency alongside spiritual teachers and coaches, scaled Germany's
@@ -188,33 +188,36 @@ die Marke geht.
 
 ## Die Entscheidungen darin
 
-**1. Der Cold Open nimmt seinen eigenen Satz und stellt ihn auf die Probe.**
+**1. Der Cold Open fragt nicht, er staunt.**
 
-Er sagt über Jobs' Zeile: *"I think that has been like the story of my life."* Und an
-anderer Stelle: *"one of the best dots to collect is a failing dot."*
+Die vorige Fassung stellte ihn vor ein Entweder-oder: *"So which is it - were the dots
+always there, or did winning hand them their meaning?"* **Das ist ein Kreuzverhör, und
+in Zeile drei einer Kaltmail ist das zu viel.** Jetzt steht dort die Beobachtung statt
+der Forderung: der Mann hat fünfzehn Jahre lang Punkte gesammelt, **ohne dass es
+irgendeinen Beweis gab, dass daraus je eine Linie wird.**
 
-**Der Haken darin, den er selbst nie ausspricht: Punkte rückwärts zu verbinden
-funktioniert nur, wenn die Geschichte gut ausgeht.** Hätte Platō nicht funktioniert,
-wären die acht Pleiten keine Ausbildung, sondern acht Pleiten. Dieselben Punkte,
-keine Linie.
+Das ist dieselbe Tiefe, aber sie lässt ihm die Tür offen statt ihn an den Tisch zu
+zwingen. *"That's the part I find beautiful"* sagt, dass Du staunst - nicht, dass Du
+einen Widerspruch gefunden hast.
 
-**Das ist keine Spitzfindigkeit, das ist die Frage.** Entweder die Bedeutung war die
-ganze Zeit da - dann hatte sie auch der Mann im zwölften Jahr, mitten in den
-Schulden, der noch kein Muster sehen konnte. Oder der Erfolg hat sie nachträglich
-geliefert, und dann ist "collecting dots" eine Geschichte, die nur Gewinner erzählen
-können.
+**2. Frankl war bei mir falsch herum, und Du hast zu Recht nachgehakt.**
 
-**Und genau deshalb ist er der Richtige für Deine Sendung**, nicht irgendein Gründer.
-Er hat beide Seiten gelebt: fünfzehn Jahre ohne Linie, sechs mit.
+Ich hatte geschrieben, Frankls Argument sei, man **mache** den Sinn nachträglich aus
+dem Leiden. **Das ist fast das Gegenteil seiner Position.** Frankl bestand darauf, dass
+Sinn **gefunden und nicht gegeben** wird - er ist schon da, auch mitten drin, auch
+bevor man die Form erkennt. Frei ist der Mensch bei ihm nur in einem: in der Haltung
+zu dem, was ihm zustößt.
 
-**2. Frankl steht da, weil er die Antwort auf dieselbe Frage ist.** Frankls These ist
-nicht, dass Leiden einen Sinn hat - sie ist, dass man ihn daraus macht, danach, und
-dass es eine Entscheidung ist. **Das ist Stephans Punktesammeln in anderer Sprache.**
-Ein Satz, kein Vortrag, und er erklärt nebenbei Deinen Sendungstitel, ohne dass Du ihn
-erklären musst.
+**Und so herum ist es für die Mail sogar besser.** Denn jetzt stehen die beiden Sätze
+nicht mehr parallel, sondern **über Kreuz**: Stephan sagt, man sieht die Linie erst
+hinterher. Frankl sagt, sie war die ganze Zeit da. *"circling the same thing from
+opposite sides"* benennt genau das - und lässt offen, wer recht hat. **Das ist der
+Stoff für die Aufnahme, nicht für die Mail.**
 
-*"I don't think we're in different businesses"* ist der Schlusssatz des Absatzes und
-macht aus dem Ganzen eine Begegnung auf Augenhöhe statt einer Anfrage.
+**Was ich rausgenommen habe:** *"I don't think we're in different businesses."* Deine
+Ansage, und sie ist richtig - der Satz stellt Dich neben ihn, und das entscheidet nicht
+der Absender. An derselben Stelle steht jetzt *"I don't think that was an accident"*:
+derselbe Gedanke, aber er zeigt auf ihn statt auf Dich.
 
 **3. Der Name steht im selben Absatz, nicht im Fragenblock.** Er hat erklärt, warum
 die Marke Platō heißt - der Marktplatz, auf dem Menschen besprachen, wie man lebt.
