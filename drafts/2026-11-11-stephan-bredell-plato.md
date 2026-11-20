@@ -1,9 +1,9 @@
 # Stephan Bredell (Platō Coffee) - Neuanlauf
 
-**Stand:** Fr 20.11.2026, Kapstadt. **Zehnte Fassung. Entwurf, nicht gesendet.**
+**Stand:** Fr 20.11.2026, Kapstadt. **Elfte Fassung. Entwurf, nicht gesendet.**
 
-> **Auf seine Ansage:** der erfundene Kaffee-Witz ist raus, Black Gold steht jetzt im
-> Schlusssatz. Begründung unter Punkt 1b.
+> **Auf seine Ansage:** Black Gold steht im Marktplatz-Absatz, der erfundene Witz ist
+> raus und *"just without the coffee"* war falsch. Begründung unter Punkt 1b.
 
 ## Was im Postfach steht
 
@@ -139,7 +139,9 @@ die Marke geht.
 > you're still the one I keep coming back to. So: second attempt.
 >
 > You named the company after the marketplace where people stood around working out how
-> to live. That's the room I've been building for two years, just without the coffee.
+> to live. That's the room I've been building for two years - mine just runs on Black
+> Gold, and I've done some fairly extensive research into where Cape Town hides the
+> good stuff.
 >
 > And I know the shape of your story from much further down the scale: I built a
 > marketing agency with spiritual teachers and coaches, scaled Germany's #1 psychedelic
@@ -174,7 +176,7 @@ die Marke geht.
 >
 > You said if someone really wants to meet you, they can fly out to George. I'm in Cape
 > Town, so I'd just drive. If you've got an hour or two for a conversation that matters
-> - I'd love to make it happen. Black Gold on you, the conversation on me.
+> - I'd love to make it happen.
 >
 > Dreaming Big,
 
@@ -202,30 +204,37 @@ Der Schlusssatz macht aus der Wiederholung ein Kompliment: **er ist nicht der N�
 auf einer Liste, er ist der, zu dem Du zurückkommst.** *"So: second attempt"* ist
 trocken genug, dass es nicht schleimt.
 
-**1b. Black Gold steht jetzt zum Schluss, und der Versuch davor war ein Fehler.**
+**1b. Black Gold steht im Marktplatz-Absatz, und davor habe ich es zweimal verbockt.**
 
-Ich hatte geschrieben: *"minus the one thing you're actually good at: I call coffee
-Black Gold and drink it accordingly, but what comes out of my own kitchen wouldn't
-survive one of your baristas."*
+**Erster Fehler:** *"minus the one thing you're actually good at: I call coffee Black
+Gold and drink it accordingly, but what comes out of my own kitchen wouldn't survive
+one of your baristas."* **Der Charakterzug war erfunden.** Du machst zu Hause keinen
+schlechten Kaffee - Du bist der, der über Kapstadts beste Läden *"quite some extensive
+research"* geschrieben hat. Ich habe Dir eine Eigenschaft angedichtet, damit ein Wort
+unterkommt; derselbe Fehler wie mit dem Auto in der Codi-Mail.
 
-**Das war erfunden.** Nicht das Wort - das ist Deins -, sondern der Charakterzug
-drumherum. Du bist nicht der Typ, der zu Hause schlechten Kaffee macht; Du bist der,
-der über Kapstadts beste Läden *"quite some extensive research"* geschrieben hat.
-**Ich habe Dir eine Eigenschaft angedichtet, damit ein Wort irgendwo unterkommt** -
-derselbe Fehler wie mit dem Auto in der Codi-Mail.
+**Zweiter Fehler, und der war dümmer:** beim Rausnehmen des Witzes habe ich auf
+*"just without the coffee"* zurückgesetzt. **Das ist schlicht falsch** - und zwar in
+einer Mail an einen Kaffeegründer, zwei Nachrichten nachdem Du mir gesagt hast, dass
+Kaffee Deine Passion ist.
 
-**Dazu kam ein zweiter Schaden:** der Satz stand direkt hinter der Marktplatz-Zeile,
-also hinter dem ernstesten Gedanken der ganzen Mail, und hat ihn zu einem Witz über
-Deine Küche gemacht. *"minus the one thing you're actually good at"* ist außerdem ein
-Kompliment mit Widerhaken.
+**Jetzt:**
 
-**Jetzt steht es im Schlusssatz:** *"Black Gold on you, the conversation on me."*
-Dort behauptet es nichts über Dich, es verteilt nur die Rollen - **er bringt das, was
-er den ganzen Tag macht, Du bringst das, was Du den ganzen Tag machst** - und es
-beschreibt nebenbei genau das Treffen, um das Du bittest.
+> *"That's the room I've been building for two years - mine just runs on Black Gold,
+> and I've done some fairly extensive research into where Cape Town hides the good
+> stuff."*
 
-**Wenn Du es ganz draußen haben willst**, endet die Mail auf
-*"I'd love to make it happen."* und verliert nichts Wesentliches.
+**Nichts daran ist erfunden.** *"extensive research"* ist Deine eigene Formulierung aus
+der Brendan-Mail vom 29.10., und sie trägt denselben Augenzwinkerton. Der Satz sagt,
+dass der Raum, den Du baust, auf demselben Stoff läuft wie seiner - **ohne Dich neben
+ihn zu stellen und ohne eine Pointe auf Deine Kosten.**
+
+Und für seinen Markt ist die Zeile nebenbei ein Signal: ein Kapstädter, der die guten
+Läden kennt, ist genau der Kunde, um den er sich in dieser Stadt bemüht.
+
+**Falls Du den Rückruf am Ende doch willst**, hängt an den Schlusssatz:
+*"Black Gold on you, the conversation on me."* Ich habe ihn weggelassen, weil das Wort
+dann zweimal in einer kurzen Mail steht.
 
 **2. Raus:** *"I don't think that was an accident."* Deine Ansage. Der Satz legt ihm
 eine Bedeutung in den Mund, die er nie behauptet hat, und er klingt nach Deutung von
