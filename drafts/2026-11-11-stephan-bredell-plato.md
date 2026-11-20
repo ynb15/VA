@@ -1,10 +1,10 @@
 # Stephan Bredell (Platō Coffee) - Neuanlauf
 
-**Stand:** Fr 20.11.2026, Kapstadt. **Sechste Fassung. Entwurf, nicht gesendet.**
+**Stand:** Fr 20.11.2026, Kapstadt. **Siebte Fassung. Entwurf, nicht gesendet.**
 
-> **Drei Änderungen auf seine Ansage:** der Einstieg staunt statt zu konfrontieren,
-> der Frankl-Satz war bei mir falsch herum und ist korrigiert, und *"I don't think
-> we're in different businesses"* ist raus. Begründung unter Punkt 1 und 2.
+> **Auf seine Ansage:** Einstieg jetzt mit dem Jobs-Zitat im Original, Fragenblock und
+> Fließtext gekürzt, und **alles Zeitabhängige raus** - die Transkripte sind ein bis
+> zwei Jahre alt, London ist längst offen. Begründung unter Punkt 1 bis 3.
 
 ## Was im Postfach steht
 
@@ -125,13 +125,12 @@ die Marke geht.
 
 ## Die Mail
 
-> "Steve Jobs said you can't connect the dots looking forward. That's been the story
-> of my life."
+> "You can't connect the dots looking forward; you can only connect them looking
+> backwards. So you have to trust that the dots will somehow connect in your future."
 >
-> I keep turning that line over. The pattern only shows itself once the story has
-> turned out - and for fifteen years yours hadn't. Something in you kept collecting
-> them anyway, with no way of knowing. That's the part I find beautiful, and it's the
-> part nobody asks you about…
+> You've said that line is basically the story of your life. The part I can't get past
+> is the trust - fifteen years of collecting dots with nothing yet to show they'd ever
+> make a line…
 >
 > Cheers Stephan, my name is Yannick - host of [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m),
 > a podcast about humans who've walked through the fire and came out different.
@@ -139,30 +138,26 @@ die Marke geht.
 > I wrote to you back in March. That email wasn't good enough and it didn't deserve an
 > answer, so this is me doing it properly.
 >
-> The show is named after Viktor Frankl's book, and he spent it arguing something
-> quietly stubborn: that the meaning is already there while you're still inside it,
-> long before you can see the shape of it, and that what's left to us is what we make
-> of what happens. Your dots and his sentence are circling the same thing from
-> opposite sides. And then you named the company after the marketplace where people
-> stood around working out how to live. I don't think that was an accident.
+> The show is named after Viktor Frankl's book, and he argued it the other way round:
+> that the meaning is already there while you're still inside it, long before you can
+> see its shape. You're circling the same thing from opposite sides. And then you named
+> your company after the marketplace where people stood around working out how to live
+> - I don't think that was an accident.
 >
-> I know the shape of your story from the inside too, just at a much smaller scale: I
-> built a marketing agency alongside spiritual teachers and coaches, scaled Germany's
-> #1 psychedelic therapy company as its CMO, was certain I'd found the meaningful
-> thing, and still ended up standing there empty. I have my own pile of things that
-> didn't work. Mine just never ended in 130 stores.
+> I know the shape of your story from much further down the scale: I built a marketing
+> agency with spiritual teachers and coaches, scaled Germany's #1 psychedelic therapy
+> company as its CMO, was sure I'd found the meaningful thing, and still ended up
+> empty. I've got my own pile of things that didn't work. Mine just never turned into
+> Platō.
 >
 > So I'm not after another founder-journey episode. What interests me more is the
 > deeper layer of your life:
 >
-> **What it actually costs to believe you shouldn't store up treasures on earth while
-> building something this size - and where that line sits now, with London opening in
-> March. What losing that much money that young did to the way you see it; you called
-> money air, and I believe you, but I want to know what it took to get there. Four
-> boys, homeschooled, thirteen stores opened in one month: which of the glass balls
-> has come closest to the floor. And the sentence nobody picked up on - six years in
-> and past a hundred stores, you still catch yourself asking whether you're out of the
-> woods. What would actually have to happen for that to stop?**
+> **What it costs to believe you shouldn't store up treasures on earth while building
+> something this size. What losing that much money that young did to you - you called
+> it air, and I believe you, but I want to know what it took to get there. And the
+> sentence nobody picks up on: you still catch yourself asking whether you're out of
+> the woods. What would have to happen for that to stop?**
 >
 > I know I don't have the biggest reach yet. But I've already had some extraordinary
 > people on the show, such as…
@@ -178,9 +173,9 @@ die Marke geht.
 > I committed to depth over quantity. In-person only. Every guest I invite is
 > meaningful to me. You're one of them.
 >
-> You said if someone really wants to meet you, they can fly out to George. I'm in
-> Cape Town, so I'd just drive. If you've got an hour or two for a conversation that
-> matters - I'd love to make it happen.
+> You said if someone really wants to meet you, they can fly out to George. I'm in Cape
+> Town, so I'd just drive. If you've got an hour or two for a conversation that matters
+> - I'd love to make it happen.
 >
 > Dreaming Big,
 
@@ -188,76 +183,74 @@ die Marke geht.
 
 ## Die Entscheidungen darin
 
-**1. Der Cold Open fragt nicht, er staunt.**
+**1. Der Einstieg ist jetzt Jobs im Original, und das letzte Drittel ist der Grund.**
 
-Die vorige Fassung stellte ihn vor ein Entweder-oder: *"So which is it - were the dots
-always there, or did winning hand them their meaning?"* **Das ist ein Kreuzverhör, und
-in Zeile drei einer Kaltmail ist das zu viel.** Jetzt steht dort die Beobachtung statt
-der Forderung: der Mann hat fünfzehn Jahre lang Punkte gesammelt, **ohne dass es
-irgendeinen Beweis gab, dass daraus je eine Linie wird.**
+Stanford, 2005, vollständig: *"You can't connect the dots looking forward; you can
+only connect them looking backwards. So you have to trust that the dots will somehow
+connect in your future."*
 
-Das ist dieselbe Tiefe, aber sie lässt ihm die Tür offen statt ihn an den Tisch zu
-zwingen. *"That's the part I find beautiful"* sagt, dass Du staunst - nicht, dass Du
-einen Widerspruch gefunden hast.
+**Stephan zitiert in beiden Gesprächen nur die erste Hälfte.** Der Satz, den er
+weglässt, ist der über das **Vertrauen** - und genau der beschreibt die fünfzehn Jahre,
+über die er sonst nur in Pleitenzahlen spricht. Du steigst also mit seinem eigenen
+Lieblingszitat ein und zeigst in zwei Zeilen, dass Du den Teil gelesen hast, den er
+selbst nicht mitnimmt.
+
+Dazu kommt: ein Originalzitat von Jobs ist belastbar. Die Auto-Transkription seiner
+Paraphrase war es nicht.
 
 **2. Frankl war bei mir falsch herum, und Du hast zu Recht nachgehakt.**
 
 Ich hatte geschrieben, Frankls Argument sei, man **mache** den Sinn nachträglich aus
 dem Leiden. **Das ist fast das Gegenteil seiner Position.** Frankl bestand darauf, dass
 Sinn **gefunden und nicht gegeben** wird - er ist schon da, auch mitten drin, auch
-bevor man die Form erkennt. Frei ist der Mensch bei ihm nur in einem: in der Haltung
-zu dem, was ihm zustößt.
+bevor man die Form erkennt. Frei ist der Mensch bei ihm nur in der Haltung zu dem, was
+ihm zustößt.
 
-**Und so herum ist es für die Mail sogar besser.** Denn jetzt stehen die beiden Sätze
-nicht mehr parallel, sondern **über Kreuz**: Stephan sagt, man sieht die Linie erst
-hinterher. Frankl sagt, sie war die ganze Zeit da. *"circling the same thing from
-opposite sides"* benennt genau das - und lässt offen, wer recht hat. **Das ist der
-Stoff für die Aufnahme, nicht für die Mail.**
+**So herum ist es für die Mail besser.** Die beiden Sätze stehen jetzt nicht parallel,
+sondern **über Kreuz**: Stephan sagt, man sieht die Linie erst hinterher. Frankl sagt,
+sie war die ganze Zeit da. *"circling the same thing from opposite sides"* benennt das
+und lässt offen, wer recht hat. **Das ist Stoff für die Aufnahme, nicht für die Mail.**
 
-**Was ich rausgenommen habe:** *"I don't think we're in different businesses."* Deine
-Ansage, und sie ist richtig - der Satz stellt Dich neben ihn, und das entscheidet nicht
-der Absender. An derselben Stelle steht jetzt *"I don't think that was an accident"*:
-derselbe Gedanke, aber er zeigt auf ihn statt auf Dich.
+**Raus ist** *"I don't think we're in different businesses."* Deine Ansage, und sie ist
+richtig: der Satz stellt Dich neben ihn, und das entscheidet nicht der Absender. An
+derselben Stelle steht jetzt *"I don't think that was an accident"* - derselbe Gedanke,
+aber er zeigt auf ihn statt auf Dich.
 
-**3. Der Name steht im selben Absatz, nicht im Fragenblock.** Er hat erklärt, warum
-die Marke Platō heißt - der Marktplatz, auf dem Menschen besprachen, wie man lebt.
-**Also fragst Du ihn nicht danach, Du baust darauf.**
+**3. Gekürzt, und wo.**
 
-**4. Die Glaubensfrage ist die, die ihm niemand stellt.** Er sagt von sich aus, dass
-er keine Schätze auf Erden sammeln will - und baut gleichzeitig Holding, Rösterei,
-Bäckerei, Burgermarke und London. **Das ist kein Vorwurf, das ist die Spannung, in
-der er lebt.** *"with London opening in March"* macht sie konkret statt theologisch.
+| Weg | Warum |
+|---|---|
+| **Die vierte Frage** (vier Jungs, Homeschooling, Glaskugeln) | Über Familie und die Glas-und-Gummibälle spricht er in beiden Gesprächen von sich aus. Es ist nicht die Frage, die keiner stellt. |
+| **"with London opening in March"** | Deine Ansage: London ist längst offen. Siehe unten. |
+| **"thirteen stores opened in one month"** | Zahl aus einem alten Transkript, nicht überprüfbar. |
+| **"130 stores"** | Ersetzt durch *"Mine just never turned into Platō."* - braucht keine Zahl und trifft härter. |
+| **Der Fragenblock** | Von vier Fragen auf drei, und jede um ein paar Wörter kürzer. |
+| **Dein eigener Absatz** | Von fünf Zeilen auf drei. |
 
-**5. "Are we out of the woods" ist aus dem Einstieg in den Fragenblock gewandert.**
-Dort gehört es hin: als vierte Frage trägt es, als Aufhänger war es zu leise neben
-den Punkten.
+**4. Die Glaubensfrage bleibt, weil sie die ist, die ihm niemand stellt.** Er sagt von
+sich aus, dass er keine Schätze auf Erden sammeln will - und baut gleichzeitig Holding,
+Rösterei, Bäckerei, Burgermarke und Auslandsexpansion. **Das ist kein Vorwurf, das ist
+die Spannung, in der er lebt.** *"something this size"* statt eines Datums, damit die
+Frage nicht veraltet.
 
-**6. Warum die acht Pleiten nicht mehr den Einstieg machen.** Die erste Fassung
-öffnete mit *"eight big business failures that nobody knows about"* und der Pointe,
-dass keiner danach fragt. **Das war ab dem Moment tot, in dem er den Satz in ein
-Mikrofon gesagt und danach eine Stunde lang die Geschichte erzählt hat.** Das zweite
-Video heißt sogar danach. Die Pleiten sind inzwischen genau die Geschichte, nach der
-ihn jeder fragt.
-
-> **Zur Genauigkeit:** Beide Zitate stammen aus **automatischen Transkriptionen**.
-> Im Rohtext steht *"I think Steve Jobs used to say you can't connect dots looking
-> forward and I think that has been like the story of my life"* und
-> *"but still in your back of your mind it's like are we there yet you know are we
-> out of the woods"*. Ich habe Füllwörter weggenommen und Satzzeichen gesetzt.
-> **Hör beide Stellen einmal nach, bevor Du sie in Anführungszeichen schickst.**
-> Wenn Du dem Wortlaut nicht traust, geht der Einstieg auch ohne:
+> **Alles Zeitabhängige aus den Transkripten ist jetzt draußen.** Deine Ansage, dass
+> die beiden Aufnahmen ein bis zwei Jahre alt sind, macht jede Zahl darin zu einem
+> Risiko: London war dort *"probably early March"* und ist längst offen, die
+> Kapstädter Academy war *"launching"* und läuft, die Jungs waren 8, 6, 4 und 1 und
+> sind es nicht mehr, und die Ladenzahl wandert jeden Monat. **Im Text steht deshalb
+> keine einzige Zahl und kein einziges Datum mehr** - nur Dinge, die in zwei Jahren
+> noch stimmen: der Jobs-Satz, Platōs Name, sein Satz über Geld, sein Satz über die
+> Schätze, und *"are we out of the woods"*.
 >
-> > You've said the Steve Jobs line about not being able to connect the dots looking
-> > forward is basically the story of your life. But connecting them backwards only
-> > works if the story ends well…
+> **Die eine Stelle, die Du trotzdem prüfen solltest:** *"fifteen years"* im Einstieg.
+> Er sagt in beiden Gesprächen *"it's a 15-year story"*, teilweise auch *"15 or 20"*.
+> Wenn er inzwischen anders rechnet, nimm *"all those years"*.
 
 > **Eine Entscheidung, die ich Dir überlasse: Rob Bennett in der Liste.**
-> *"my 77 y/o psychedelic therapist"* ist Deine stärkste Formulierung und steht in
-> fast jedem Deiner Pitches. **Der Empfänger ist bekennender Christ, Vater von vier
-> Jungs, die zu Hause unterrichtet werden.** Ich habe ihn drin gelassen, weil ich Dir
-> Deine Zeilen nicht ungefragt rausnehme - aber **wenn Du tauschen willst, nimm
-> Ex-Hollywood actor David Sutcliffe.** Das ist meine Einschätzung über diesen einen
-> Leser, kein Urteil über Rob.
+> *"my 77 y/o psychedelic therapist"* ist Deine stärkste Formulierung und steht in fast
+> jedem Deiner Pitches. **Der Empfänger ist bekennender Christ und Vater von vier
+> Jungs.** Ich habe ihn drin gelassen, weil ich Dir Deine Zeilen nicht ungefragt
+> rausnehme - **wenn Du tauschen willst, nimm Ex-Hollywood actor David Sutcliffe.**
 
 ---
 
