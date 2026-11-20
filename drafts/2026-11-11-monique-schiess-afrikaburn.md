@@ -1,6 +1,12 @@
 # Monique Schiess (AfrikaBurn) - Erstanschreiben
 
-**Stand:** Mi 11.11.2026, Kapstadt. **Erste Fassung. Entwurf, nicht gesendet.**
+**Stand:** Fr 20.11.2026, Kapstadt. **Zweite Fassung. Entwurf, nicht gesendet.**
+
+> **Geändert gegenüber dem 11.11., drei Dinge:** der Showtitel ist jetzt verlinkt
+> (`https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m`, aus Deiner
+> gesendeten Marian-Mail gezogen); Marian ist auf **Oktober** datiert statt "earlier
+> this year"; und **Die Antwoord steht statt Rob Paddock** in der Liste. Begründung
+> unten.
 
 ## Vorweg: der Kanal
 
@@ -86,10 +92,10 @@ härteste Währung, die Du besitzt.
 >
 > **[10 Life Lessons I Learned at AfrikaBurn](https://ynbernard.substack.com/p/10-life-lessons-i-learned-at-afrikaburn)**
 >
-> Cheers Monique, my name is Yannick - host of *Man's Search for Meaning*, a podcast
-> about humans who've walked through the fire and came out different.
+> Cheers Monique, my name is Yannick - host of [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m),
+> a podcast about humans who've walked through the fire and came out different.
 >
-> Earlier this year I sat down with Marian Goodell for two hours on exactly this:
+> In October I sat down with Marian Goodell for two hours on exactly this:
 > what it takes to keep a culture alive once it outgrows the people who dreamed it.
 > She answered for Black Rock City. The half of that conversation I couldn't have
 > with her is the one that happened out here, in the dust, nineteen years after you
@@ -109,7 +115,7 @@ härteste Währung, die Du besitzt.
 > people on the show, such as…
 >
 > - Burning Man CEO Marian Goodell
-> - my mentor, former IronMan athlete and $100M EdTech-founder Rob Paddock
+> - Die Antwoord
 > - my 77 y/o psychedelic therapist, apartheid activist and techno icon Rob Bennett
 > - the world's leading DMT and consciousness researcher, Professor Rick Strassman
 > - South African ManKindProject leader Craig Makhosi
@@ -144,6 +150,17 @@ Gründerin"* wäre falsch gewesen und sie hätte es gemerkt.
 **4. Der Substack-Link steht oben, nicht unten.** So wie in der Marian-Mail: er ist
 der Beweis für den Absatz darüber, und sie kann in zehn Sekunden sehen, was eine
 Woche in ihrer Wüste mit Dir gemacht hat.
+
+**5. Die Liste ist für sie umgebaut.** Rob Paddock ist raus, **Die Antwoord** ist
+drin. Bei Josh habe ich Dir von der Band abgeraten - **bei ihr ist sie der zweitbeste
+Name auf der Liste.** Kapstädter Gegenkultur, Kunst, Krawall: das ist ihr Milieu, nicht
+ein Fremdkörper darin. Rob Paddock dagegen ist EdTech, und EdTech ist für eine Frau,
+die zwanzig Jahre in der Tankwa verbracht hat, der schwächste Name, den Du hast.
+
+**Dieselbe offene Frage wie bei Josh:** ist die Folge aufgenommen? Wenn nicht, gehört
+nach Deiner Konvention **`(upcoming)`** dahinter. Und sie ist der einzige Eintrag ohne
+Rolle davor - bei einem Bandnamen in ihrem Milieu ist das vertretbar, bei den anderen
+sechs wäre es ein Bruch.
 
 **Eine Zeile, die Du streichen kannst**, wenn Dir Marian an der Stelle zu groß wird:
 der ganze Absatz *"Earlier this year I sat down with Marian Goodell…"*. Die Mail
