@@ -1,7 +1,10 @@
 # Stephan Bredell (Platō Coffee) - Neuanlauf
 
-**Stand:** Fr 20.11.2026, Kapstadt. **Dritte Fassung, neu gebaut auf zwei
-Transkripten. Entwurf, nicht gesendet.**
+**Stand:** Fr 20.11.2026, Kapstadt. **Vierte Fassung. Entwurf, nicht gesendet.**
+
+> **Gegenüber der dritten Fassung ist nur der Cold Open getauscht**, auf seine Ansage
+> hin: die acht Pleiten tragen keinen Einstieg mehr, weil er sie selbst erzählt hat.
+> Begründung unter Punkt 5.
 
 ## Was im Postfach steht
 
@@ -122,11 +125,13 @@ die Marke geht.
 
 ## Die Mail
 
-> "There's probably eight big business failures that nobody knows about."
+> "Still, in the back of your mind, it's like: are we there yet? Are we out of the
+> woods?"
 >
-> Everybody repeats the container in Irene. Almost nobody asks what fifteen years of
-> being the guy whose things keep dying does to a man - or what it's like to come back
-> from your honeymoon and find out there's nothing left to come back to…
+> You said that six years in, with the stores already past a hundred. The next question
+> took you straight back to the old businesses, and the sentence went by. Every
+> interview walks you through the eight failures and the container, because that's the
+> good story. I'm only interested in the man who still doesn't feel safe…
 >
 > Cheers Stephan, my name is Yannick - host of [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m),
 > a podcast about humans who've walked through the fire and came out different.
@@ -212,8 +217,33 @@ steht alles in beiden Transkripten und steht in jedem Artikel über ihn.
 > Ex-Hollywood actor David Sutcliffe.** Das ist meine Einschätzung über diesen einen
 > Leser, kein Urteil über Rob.
 
-**Variante ohne das Eingangszitat** brauchst Du nicht mehr: **es ist jetzt erster
-Hand.** Erstes Transkript bei 00:00 und noch einmal im zweiten bei 04:33.
+**5. Warum der Cold Open nicht mehr auf den acht Pleiten steht.**
+
+Die erste Fassung öffnete mit *"eight big business failures that nobody knows about"*
+und der Pointe, dass niemand danach fragt. **Das war ab dem Moment tot, in dem er den
+Satz in ein Mikrofon gesagt und danach eine Stunde lang die ganze Geschichte erzählt
+hat.** Beide Transkripte handeln von nichts anderem. Das zweite Video heißt
+*"From 8 Failed Businesses to 130+ Stores"*. **Die Pleiten sind inzwischen genau die
+Geschichte, nach der ihn jeder fragt** - ihm zu schreiben, dass sie keiner kennt,
+hätte ihn den Rest der Mail nicht mehr ernst nehmen lassen.
+
+**Der neue Open dreht es um und benutzt dasselbe Material ehrlich:** ja, jeder fragt
+nach den Pleiten. Der Satz, den keiner aufgreift, ist ein anderer. Und das ist nicht
+meine Behauptung, das steht im Transkript: Er sagt
+*"are we there yet, are we out of the woods"*, schiebt nach, dass ihn ein zweites
+Corona umhauen würde - und **die nächste Frage des Hosts geht zurück zu den alten
+Firmen.** Der Satz fällt durch.
+
+> **Zur Genauigkeit:** Das Zitat kommt aus einer **automatischen Transkription**, im
+> Rohtext steht *"but still in your back of your mind it's like are we there yet you
+> know are we out of the woods"*. Ich habe Füllwörter weggenommen und Satzzeichen
+> gesetzt. **Hör die Stelle einmal nach, bevor Du sie in Anführungszeichen schickst**
+> (zweites Video, kurz nach 05:30). Wenn Du dem Wortlaut nicht traust, geht es auch
+> ohne Anführungszeichen:
+>
+> > Six years in, past a hundred stores, and you still catch yourself asking whether
+> > you're out of the woods yet. The next question took you straight back to the old
+> > businesses, and the sentence went by…
 
 ---
 
