@@ -466,3 +466,42 @@ Zoom vorschlägt:
 > real human connection happens face to face. I've just experienced it time and
 > again, that IRL podcasts turned out to be the most powerful and the deepest
 > of all.
+
+## DIE GÄSTELISTE IST COPY, KEINE RECHERCHE — 20.11.2026
+
+**Seine Ansage, wörtlich:** *„Warum schreibst du plötzlich irgendeine eigene
+Scheiße über Eben und mit Craig? Die Formulierungen, die wir seit jeher nutzen,
+stehen in den ganzen Outreaches."*
+
+Ich hatte für die Gästeliste in Formulierungen gegriffen, die ich aus der
+**Notion-Databank** gebaut habe — „Cape Town sangoma Craig Makhosi", „ex-NFL
+lineman and Hotboxin' with Mike Tyson co-host Eben Britton".
+
+**Der Fehler hat einen Namen: die Databank ist Recherche, die Outreach-Mails
+sind Copy.** Das Feld `Why` in Notion sagt, *warum* jemand interessant ist. Wie
+der Mensch in einer Mail **benannt** wird, steht ausschließlich in den
+versendeten Pitches — und das ist eine Formulierung, die er über Monate
+geschliffen hat.
+
+**Der kanonische Block, aus seinem Monique-Pitch vom 20.11.2026, 09:59:**
+
+> - Burning Man CEO Marian Goodell
+> - South African ManKindProject leader Craig Makhosi
+> - Ex-Bill Clinton lawyer Ken Stern
+> - my 77 y/o psychedelic therapist, apartheid activist and techno icon Rob Bennett
+> - EdTech-millionaire, GetSmarter founder and Ironman athlete Rob Paddock
+> - Capetonian actor and director Francis Chouler
+> - Die Antwoord
+
+Dazu aus anderen Pitches: **Quantum scientist and OpenAI insider Prof. Scott
+Aaronson** (Jon Savage, 22.10. — **„Prof." steht immer dabei**) ·
+**ex-Federal Reserve banker turned Indian Tantra teacher Whitney Wheelock** ·
+**the world's leading DMT researcher Rick Strassman** (seine Ansage 20.11.) ·
+**NFL star Eben Britton** (sein Wort, 20.11.).
+
+**Die Rahmung gehört dazu und wird nicht gekürzt:** *„I know I don't have the
+biggest reach yet. But I've already had some extraordinary people on the show,
+such as…"* und danach *„I committed to depth over quantity. In-person only."*
+
+**Regel: vor jeder Gästeliste den letzten versendeten Pitch öffnen und
+abschreiben.** Nie aus der Databank bauen, nie aus dem Gedächtnis.
