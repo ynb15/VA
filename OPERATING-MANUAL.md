@@ -9631,3 +9631,26 @@ korrekt ausgeführt ist nicht dasselbe wie tragfähig.
 Neubau liegt beim Head of Content (`trig_01MGyDkredwbBJBabuNzkKFE`), mit der
 Auflage, die acht Fälle als Prüfung gegen die Regel zu rechnen und zu
 widersprechen, falls sie einen davon nicht reproduziert.
+
+## DAS WHATSAPP-REGISTER LIEGT AUF EINEM FREMDEN ZWEIG — 20.11.2026
+
+`voice/whatsapp.md` liegt auf **`claude/head-of-content`**, nicht auf meinem.
+Ich habe es heute zum ersten Mal benutzt und wäre fast ohne geschrieben.
+
+```
+git show origin/claude/head-of-content:voice/whatsapp.md
+```
+
+**Es ist die wichtigste Registerdatei für Nachrichten, und sie sagt gleich im
+ersten Satz, warum:** sein Nachrichten-Register ist **nicht** sein
+Essay-Register. Wer `substack-register.md` auf eine WhatsApp anwendet, erzeugt
+genau das, was er *„Stock im Arsch"* nennt.
+
+Die harten Regeln daraus, die ich sonst verletze: **höchstens drei Absätze, einer
+je Thema** · **keine Begrüßungsfloskel** — er fängt im Inhalt an · **kein warmer
+Abschlussbeat**, die Nachricht endet auf der Sache · **zwei Fakten nicht
+verbinden, nebeneinanderstellen** · **jeden Nebensatz streichen, der nur da ist,
+damit der Empfänger folgen kann.**
+
+**Vor jeder Nachricht lesen**, nicht aus einem allgemeinen
+Freundlichkeitsmuster schreiben.
