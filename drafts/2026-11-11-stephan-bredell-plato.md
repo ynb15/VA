@@ -1,10 +1,10 @@
 # Stephan Bredell (Platō Coffee) - Neuanlauf
 
-**Stand:** Fr 20.11.2026, Kapstadt. **Siebte Fassung. Entwurf, nicht gesendet.**
+**Stand:** Fr 20.11.2026, Kapstadt. **Achte Fassung. Entwurf, nicht gesendet.**
 
-> **Auf seine Ansage:** Einstieg jetzt mit dem Jobs-Zitat im Original, Fragenblock und
-> Fließtext gekürzt, und **alles Zeitabhängige raus** - die Transkripte sind ein bis
-> zwei Jahre alt, London ist längst offen. Begründung unter Punkt 1 bis 3.
+> **Auf seine Ansage:** die Selbstdisqualifizierung ist strategisch gedreht, *"I don't
+> think that was an accident"* und der Frankl-Absatz sind raus, die vier Jungs und die
+> dreizehn Läden sind zurück, und London steht als Tatsache statt als Datum.
 
 ## Was im Postfach steht
 
@@ -135,28 +135,27 @@ die Marke geht.
 > Cheers Stephan, my name is Yannick - host of [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m),
 > a podcast about humans who've walked through the fire and came out different.
 >
-> I wrote to you back in March. That email wasn't good enough and it didn't deserve an
-> answer, so this is me doing it properly.
+> I wrote to you back in March, when the show was a handful of episodes old. It's a
+> different show now - and you're still the one I keep coming back to. So: second
+> attempt.
 >
-> The show is named after Viktor Frankl's book, and he argued it the other way round:
-> that the meaning is already there while you're still inside it, long before you can
-> see its shape. You're circling the same thing from opposite sides. And then you named
-> your company after the marketplace where people stood around working out how to live
-> - I don't think that was an accident.
->
-> I know the shape of your story from much further down the scale: I built a marketing
-> agency with spiritual teachers and coaches, scaled Germany's #1 psychedelic therapy
-> company as its CMO, was sure I'd found the meaningful thing, and still ended up
-> empty. I've got my own pile of things that didn't work. Mine just never turned into
-> Platō.
+> You named the company after the marketplace where people stood around working out how
+> to live. That's the room I've been building for two years, just without the coffee.
+> And I know the shape of your story from much further down the scale: I built a
+> marketing agency with spiritual teachers and coaches, scaled Germany's #1 psychedelic
+> therapy company as its CMO, was sure I'd found the meaningful thing, and still ended
+> up empty. I've got my own pile of things that didn't work. Mine just never turned
+> into Platō.
 >
 > So I'm not after another founder-journey episode. What interests me more is the
 > deeper layer of your life:
 >
-> **What it costs to believe you shouldn't store up treasures on earth while building
-> something this size. What losing that much money that young did to you - you called
-> it air, and I believe you, but I want to know what it took to get there. And the
-> sentence nobody picks up on: you still catch yourself asking whether you're out of
+> **What it costs to believe you shouldn't store up treasures on earth while building a
+> company that now has a shop by Liverpool Street. What losing that much money that
+> young did to you - you called it air, and I believe you, but I want to know what it
+> took to get there. Four boys, all homeschooled, and thirteen stores opened in a
+> single month: which of the glass balls has come closest to the floor. And the
+> sentence nobody picks up on - you still catch yourself asking whether you're out of
 > the woods. What would have to happen for that to stop?**
 >
 > I know I don't have the biggest reach yet. But I've already had some extraordinary
@@ -183,74 +182,69 @@ die Marke geht.
 
 ## Die Entscheidungen darin
 
-**1. Der Einstieg ist jetzt Jobs im Original, und das letzte Drittel ist der Grund.**
+**1. Der zweite Anlauf wird nicht mehr mit Dir bezahlt.**
 
-Stanford, 2005, vollständig: *"You can't connect the dots looking forward; you can
-only connect them looking backwards. So you have to trust that the dots will somehow
-connect in your future."*
+Vorher: *"That email wasn't good enough and it didn't deserve an answer, so this is me
+doing it properly."* **Das ist ein Geständnis, und es kostet Dich etwas, bevor er die
+erste Frage gelesen hat.**
 
-**Stephan zitiert in beiden Gesprächen nur die erste Hälfte.** Der Satz, den er
-weglässt, ist der über das **Vertrauen** - und genau der beschreibt die fünfzehn Jahre,
-über die er sonst nur in Pleitenzahlen spricht. Du steigst also mit seinem eigenen
-Lieblingszitat ein und zeigst in zwei Zeilen, dass Du den Teil gelesen hast, den er
-selbst nicht mitnimmt.
+Jetzt: *"I wrote to you back in March, when the show was a handful of episodes old.
+It's a different show now - and you're still the one I keep coming back to."*
 
-Dazu kommt: ein Originalzitat von Jobs ist belastbar. Die Auto-Transkription seiner
-Paraphrase war es nicht.
+**Dasselbe Faktum, umgekehrte Richtung.** Es erklärt die Lücke von acht Monaten, aber
+der Grund ist Wachstum statt Scham - und der Schlusssatz macht aus der Wiederholung ein
+Kompliment: **er ist nicht der Nächste auf einer Liste, er ist der, zu dem Du
+zurückkommst.** *"So: second attempt"* ist trocken genug, dass es nicht schleimt.
 
-**2. Frankl war bei mir falsch herum, und Du hast zu Recht nachgehakt.**
+**2. Raus:** *"I don't think that was an accident."* Deine Ansage. Der Satz legt ihm
+eine Bedeutung in den Mund, die er nie behauptet hat, und er klingt nach Deutung von
+außen.
 
-Ich hatte geschrieben, Frankls Argument sei, man **mache** den Sinn nachträglich aus
-dem Leiden. **Das ist fast das Gegenteil seiner Position.** Frankl bestand darauf, dass
-Sinn **gefunden und nicht gegeben** wird - er ist schon da, auch mitten drin, auch
-bevor man die Form erkennt. Frei ist der Mensch bei ihm nur in der Haltung zu dem, was
-ihm zustößt.
+**Der Gedanke bleibt trotzdem drin, nur gedreht:** *"You named the company after the
+marketplace where people stood around working out how to live. That's the room I've
+been building for two years, just without the coffee."* **Jetzt sagt der Satz etwas
+über Dich statt über ihn** - und genau deshalb funktioniert er. Du behauptest nichts
+über seine Absichten, Du erkennst den Raum wieder.
 
-**So herum ist es für die Mail besser.** Die beiden Sätze stehen jetzt nicht parallel,
-sondern **über Kreuz**: Stephan sagt, man sieht die Linie erst hinterher. Frankl sagt,
-sie war die ganze Zeit da. *"circling the same thing from opposite sides"* benennt das
-und lässt offen, wer recht hat. **Das ist Stoff für die Aufnahme, nicht für die Mail.**
+**3. Frankl ist raus.** Deine Ansage, und beim Kürzen ist er der richtige Kandidat: Der
+Absatz war die längste Stelle der Mail, er erklärte Deinen eigenen Sendungstitel, und
+**der Gedanke dahinter lebt sowieso schon im Einstieg** - die Frage nach dem Vertrauen
+ist dieselbe Frage. **Für die Aufnahme bleibt er der beste Gesprächsfaden**, nur eben
+nicht als Vorlesung in einer Kaltmail.
 
-**Raus ist** *"I don't think we're in different businesses."* Deine Ansage, und sie ist
-richtig: der Satz stellt Dich neben ihn, und das entscheidet nicht der Absender. An
-derselben Stelle steht jetzt *"I don't think that was an accident"* - derselbe Gedanke,
-aber er zeigt auf ihn statt auf Dich.
+**4. Vier Jungs, Homeschooling, dreizehn Läden in einem Monat - zurück im Fragenblock.**
 
-**3. Gekürzt, und wo.**
+Du hast recht, und ich hatte beim Kürzen am falschen Ende gespart. **Das ist die
+einzige Stelle in der ganzen Mail, an der man das Leben dieses Mannes sieht statt es zu
+besprechen.** Zwei konkrete Bilder nebeneinander, und die Spannung dazwischen muss
+niemand erklären.
 
-| Weg | Warum |
-|---|---|
-| **Die vierte Frage** (vier Jungs, Homeschooling, Glaskugeln) | Über Familie und die Glas-und-Gummibälle spricht er in beiden Gesprächen von sich aus. Es ist nicht die Frage, die keiner stellt. |
-| **"with London opening in March"** | Deine Ansage: London ist längst offen. Siehe unten. |
-| **"thirteen stores opened in one month"** | Zahl aus einem alten Transkript, nicht überprüfbar. |
-| **"130 stores"** | Ersetzt durch *"Mine just never turned into Platō."* - braucht keine Zahl und trifft härter. |
-| **Der Fragenblock** | Von vier Fragen auf drei, und jede um ein paar Wörter kürzer. |
-| **Dein eigener Absatz** | Von fünf Zeilen auf drei. |
+**5. London steht jetzt als Tatsache im Fragenblock, nicht als Datum.**
 
-**4. Die Glaubensfrage bleibt, weil sie die ist, die ihm niemand stellt.** Er sagt von
-sich aus, dass er keine Schätze auf Erden sammeln will - und baut gleichzeitig Holding,
-Rösterei, Bäckerei, Burgermarke und Auslandsexpansion. **Das ist kein Vorwurf, das ist
-die Spannung, in der er lebt.** *"something this size"* statt eines Datums, damit die
-Frage nicht veraltet.
+Vorher *"with London opening in March"*, was seit einem halben Jahr falsch ist. Jetzt:
+*"while building a company that now has a shop by Liverpool Street."* **Das ist
+stärker, weil es die Glaubensfrage sofort konkret macht** - keine abstrakte Größe,
+sondern eine Adresse in London.
 
-> **Alles Zeitabhängige aus den Transkripten ist jetzt draußen.** Deine Ansage, dass
-> die beiden Aufnahmen ein bis zwei Jahre alt sind, macht jede Zahl darin zu einem
-> Risiko: London war dort *"probably early March"* und ist längst offen, die
-> Kapstädter Academy war *"launching"* und läuft, die Jungs waren 8, 6, 4 und 1 und
-> sind es nicht mehr, und die Ladenzahl wandert jeden Monat. **Im Text steht deshalb
-> keine einzige Zahl und kein einziges Datum mehr** - nur Dinge, die in zwei Jahren
-> noch stimmen: der Jobs-Satz, Platōs Name, sein Satz über Geld, sein Satz über die
-> Schätze, und *"are we out of the woods"*.
+**6. Jobs im Original, und das letzte Drittel ist der Grund.** Stanford 2005,
+vollständig. **Stephan zitiert in beiden Gesprächen nur die erste Hälfte.** Der Satz,
+den er weglässt, ist der über das **Vertrauen** - und genau der beschreibt die fünfzehn
+Jahre, über die er sonst nur in Pleitenzahlen spricht.
+
+> **Was noch aus altem Material stammt und deshalb als Vergangenheit formuliert ist:**
+> die **dreizehn Läden in einem Monat** (er erzählt das von einem November) und die
+> **vier Jungs** - deren Alter steht bewusst nicht mehr da, weil 8, 6, 4 und 1 nicht
+> mehr stimmen kann. Die Formulierung behauptet beides als etwas, das passiert ist,
+> nicht als Zustand von heute.
 >
-> **Die eine Stelle, die Du trotzdem prüfen solltest:** *"fifteen years"* im Einstieg.
-> Er sagt in beiden Gesprächen *"it's a 15-year story"*, teilweise auch *"15 or 20"*.
-> Wenn er inzwischen anders rechnet, nimm *"all those years"*.
+> **Prüfen vor dem Senden:** *"fifteen years"* im Einstieg. Er sagt mal 15, mal
+> *"15 or 20"*. Wenn er inzwischen anders rechnet, nimm *"all those years"*.
 
 > **Eine Entscheidung, die ich Dir überlasse: Rob Bennett in der Liste.**
-> *"my 77 y/o psychedelic therapist"* ist Deine stärkste Formulierung und steht in fast
-> jedem Deiner Pitches. **Der Empfänger ist bekennender Christ und Vater von vier
-> Jungs.** Ich habe ihn drin gelassen, weil ich Dir Deine Zeilen nicht ungefragt
-> rausnehme - **wenn Du tauschen willst, nimm Ex-Hollywood actor David Sutcliffe.**
+> *"my 77 y/o psychedelic therapist"* ist Deine stärkste Formulierung. **Der Empfänger
+> ist bekennender Christ und Vater von vier Jungs.** Ich habe ihn drin gelassen, weil
+> ich Dir Deine Zeilen nicht ungefragt rausnehme - **wenn Du tauschen willst, nimm
+> Ex-Hollywood actor David Sutcliffe.**
 
 ---
 
