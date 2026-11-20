@@ -1,74 +1,122 @@
 # Stephan Bredell (Platō Coffee) - Neuanlauf
 
-**Stand:** Fr 20.11.2026, Kapstadt. **Zweite Fassung. Entwurf, nicht gesendet.**
-
-> **Geändert gegenüber dem 11.11., zwei Dinge:** der Showtitel ist verlinkt
-> (`https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m`, aus Deiner
-> gesendeten Marian-Mail gezogen), und Rob Paddock steht jetzt in Deiner neuen
-> Formulierung mit **GetSmarter** im Namen. Begründung unten.
+**Stand:** Fr 20.11.2026, Kapstadt. **Dritte Fassung, neu gebaut auf zwei
+Transkripten. Entwurf, nicht gesendet.**
 
 ## Was im Postfach steht
 
 **17.03.2026, 09:54** an `stephan@plato.coffee`, Betreff *"Your story deserves an even
-deeper conversation"*. **Eine Nachricht, keine Antwort, kein weiterer Kontakt.**
-Dazu liegt ein **leerer Entwurf** vom 03.10. an dieselbe Adresse (Betreff *"Plato"*,
-Inhalt nur Deine Signatur) - der Neuanlauf war also schon mal angefangen.
+deeper conversation"*. **Eine Nachricht, keine Antwort.** Dazu ein **leerer Entwurf**
+vom 03.10. an dieselbe Adresse (Betreff *"Plato"*, Inhalt nur Deine Signatur).
 
-Was die alte Mail falsch gemacht hat, in drei Punkten: sie beginnt mit der Anrede,
-sie beschreibt den Podcast statt ihn, und sie stellt **keine einzige konkrete Frage**.
-"Was es gekostet hat, was Dich geprägt hat" steht da - aber ohne ein einziges Detail
-aus seinem Leben. Das liest sich wie eine Vorlage, und genau das war es.
-
-**Adresse ist belegt und bleibt:** `stephan@plato.coffee`.
+**Adresse bleibt:** `stephan@plato.coffee`.
 
 ---
 
-## Recherche: Stephan Bredell
+## Was die Transkripte an meinem Entwurf kaputt gemacht haben
 
-**Belegt** (Mehrfachquellen: BusinessTech, Daily Investor, MyBroadband, EWN,
-World Coffee Portal, Enterprise Africa):
+**Drei Dinge, die ich am 11.11. falsch oder zu vage hatte. Alle drei waren im Text.**
 
-- **CEO und Mitgründer von Platō Coffee**, zusammen mit seinem **Bruder Petrus**.
-  Arbeitsteilung laut Podcast-Beschreibung: Stephan Marke und Skalierung, Petrus
-  Kaffee und Rösterei.
-- **Start: Dezember 2019, ein Schiffscontainer in Centurion, Gauteng.** Anfangs lief
-  Petrus den Betrieb, Stephan war noch im Konzern.
-- Heute **über 130 Filialen**, eigene Rösterei, Bäckerei, eigene Academy, Expansion
-  nach **Simbabwe und UK/London** geplant.
-- **Platō Academy Kapstadt**, Canterbury Street, District Six, eröffnet seit
-  September 2025 - für Franchisepartner und Baristas, auch öffentlich zugänglich.
-- **Essen wurde aus der Karte genommen**, weil die Marge auf Kaffee deutlich besser war.
-- Slogan: *"coffee sculpted; community included"*.
-- **Die Misserfolge.** Je nach Quelle acht oder zehn. Genannt werden: **Liteswitch**
-  (Energieeffizienz, kollabierte 2015, weil Eskom seine Policy änderte), Krypto,
-  Webdesign, ein Chesanyama-Franchise, eine Sonnenbrillenmarke.
-- **Der Satz, auf dem der ganze Aufhänger steht:** *"There's probably eight big
-  business failures that nobody knows about."* Dazu: *"my 20s to 30s were my failure
-  years - I had a lot of business failures, but without them, I would have never
-  learned what I needed to."*
-- **Die Honeymoon-Sache:** eine Podcast-Beschreibung (Company Culture Podcast,
-  "Plato Coffee: The Origin Story") nennt *"the one that killed Stephan's first
-  business a month after his honeymoon"*.
+### 1. Er wohnt nicht in Centurion. Er wohnt in George.
 
-> **Was ich nicht belegen konnte, und was deshalb nicht als Behauptung im Text steht:**
-> wo er **wohnt** (Firmensitz ist Centurion, aber kein Beleg für seinen Wohnort),
-> **warum die Marke Platō heißt** - keine Quelle erklärt den Namen, auch die Folge
-> *"The philosophy behind Platō Coffee"* nicht - und **irgendetwas zu Glauben oder
-> Familie** außer der Honeymoon-Erwähnung.
->
-> **Die beiden Zitate oben stammen aus Presseartikeln, nicht aus einem Original, das
-> ich selbst gelesen habe.** Wikipedia, Jacaranda FM, MyBroadband und seine eigene
-> Seite sind aus diesem Container gesperrt. Wenn Du das Zitat nicht wörtlich
-> wiederfindest, nimm die Variante ohne Anführungszeichen (unten).
+> *"I stay in George - if you really want to have a meeting with me you can fly out
+> to George, otherwise let's just have a Zoom call."*
+
+**Das ist Westkap. Dieselbe Provinz wie Du.** Garden Route, knapp fünf Stunden mit dem
+Auto, eine Stunde im Flieger. Mein alter Schlusssatz (*"if your days are in Centurion,
+I'm happy to make the trip up"*) war falsch und hätte ihm in der ersten Sekunde
+gezeigt, dass ich nur Presseartikel gelesen habe.
+
+**Und der Satz oben ist ein Geschenk:** er sagt selbst, dass man zu ihm fliegen soll,
+wenn man ihn wirklich treffen will. Deine Sendung ist in-person only. Das passt
+aufeinander.
+
+### 2. Die Namensfrage ist beantwortet - und die Antwort ist Dein Pitch
+
+Ich hatte in den Fragenblock geschrieben, *"whether you named it after a philosopher
+for a reason"*. **Er erklärt es selbst:**
+
+> *"Plato was obviously a philosopher, and in ancient Greek times people go to the
+> market place and do philosophy around life and like deep meaningful conversations -
+> and now we do it around a cup of coffee."*
+
+**Hätte ich die Frage so stehen lassen, hättest Du ihn nach etwas gefragt, das er
+öffentlich erklärt hat.** Das ist genau der Fehler, den Deine ganze Schablone
+vermeidet.
+
+**Viel wichtiger:** Der Mann hat seine Firma nach dem Ort benannt, an dem Menschen die
+Gespräche führten, auf die es ankam. **Du machst eine Sendung über genau diese
+Gespräche.** Das ist die beste Brücke, die es zwischen Euch gibt, und sie steht jetzt
+im Fließtext statt als Frage.
+
+### 3. Der Honeymoon-Satz war zweiter Hand, jetzt ist er erster
+
+Ich hatte aus einer Podcast-Beschreibung *"the business that died a month after his
+honeymoon"*. **Seine eigenen Worte:**
+
+> *"Escom said: listen, the rebates are over - two weeks' notice. So I'm coming back
+> from my honeymoon. I literally don't have a job."*
+
+**Nicht einen Monat danach - er kommt von den Flitterwochen zurück und es ist weg.**
+Die Lichter waren schon auf dem Schiff aus China.
+
+---
+
+## Was neu ist und was es wert ist
+
+**Belegt, beides wörtlich aus den Transkripten:**
+
+- **Das Eingangszitat ist jetzt erster Hand.** Wörtlich: *"There's probably eight big
+  business failures that nobody knows about. Very in debt, you know, had to hustle at
+  a corporate job, working late at night."* **Du kannst es ohne Bauchschmerzen in
+  Anführungszeichen setzen.**
+- **Er ist Christ, und er sagt es unaufgefordert:** *"I'm a Christian, so my views are
+  to not build up treasures on earth for yourself."* Dazu: *"I'm not willing to lose
+  my soul because I'm busy chasing earthly wealth or whatever."*
+- **"I'm a full-time dad and part-time entrepreneur."** Vier Jungs: 8, 6, 4, 1.
+  **Sie werden zu Hause unterrichtet.** Morgens bewusst Zeit mit ihnen, erst nach acht
+  ins Büro.
+- **Die Glas- und Gummibälle.** Er bezieht sich auf die Rede des Coca-Cola-CEOs:
+  Familie, Glaube, Gesundheit sind Glaskugeln. *"Success means nothing if you lose the
+  people who call you dad."* Und: *"I'd rather give it up now."*
+- **Geld.** *"It hurt a lot to lose that amount of money as young as I did. That gave
+  me a different outlook on money. It's like it's air."* Und zum Vater:
+  *"I just told my dad: you could have paid for an MBA at Oxford, that would have cost
+  you three and a half million rand. I'm just taking this as my MBA."*
+- **"Collecting dots"**, von Steve Jobs. *"One of the best dots to collect is a failing
+  dot."* Er nennt Jobs als den Unternehmer, den er am meisten bewundert, *"not
+  necessarily the same value system as me"*.
+- **Er ist kein Kaffeemensch.** *"I'm an entrepreneur - coffee was just the vehicle.
+  That's Petrus."* Sein Bruder macht das Produkt, er die Marke.
+- **Der Auslöser:** seine schwangere Frau bestellt in einem Specialty-Laden in Pretoria
+  einen Entkoffeinierten und wird behandelt, als solle sie gehen. *"Imagine you can do
+  specialty coffee at scale without being snobbish."*
+- **Der erste Container stand in Irene**, neben einem Gedenkgarten, der auf dem Gelände
+  eines Konzentrationslagers aus dem Burenkrieg liegt. Eröffnet **07.12.2019**.
+- **Im Lockdown** waren sie mit ihrer Spaza-Lizenz der einzige offene Kaffeeladen in
+  Pretoria. Nachbarn, die vier Jahre nicht geredet hatten, kamen in der Schlange ins
+  Gespräch. *"That became Plato's DNA."*
+- **Mentor:** Omry Thomas, Fondsmanager. Sonst keiner.
+- **Jetzt:** über 130 Läden, 13 Eröffnungen allein im November, rund 110 in der
+  Pipeline, 22 Tonnen Kaffee im Monat, etwa 700 Leute. Harare seit November letzten
+  Jahres, **London ab etwa März, 300 Meter von Liverpool Street Station.** Holding
+  heißt **Slingshot**, dazu Prima Burgers und eine Gelato-Marke.
+- **Sein Zweck, in seinen Worten:** *"to be a springboard for people to succeed."*
+
+> **Eine Unsicherheit, die ich nicht auflösen kann:** Der Vorname des Bruders wird in
+> den beiden Transkripten als *Petus*, *Pet*, *Beatric* und *Pier* ausgeworfen - das
+> ist die Spracherkennung. **In der Presse steht Petrus.** Ich schreibe Petrus,
+> **aber prüf das, bevor Du sendest.** Ein falscher Bruder-Vorname wiegt in dieser
+> Mail schwerer als alles andere.
 
 ---
 
 ## Betreff
 
-`Cape Town, Centurion, London: Man's Search for Meaning`
+`George, Cape Town, London: Man's Search for Meaning`
 
-Die Dreier-Ortsreihe wie bei Boyd Varty, hier aber **seine** Achse: wo Du sitzt, wo
-er gestartet ist, wohin er geht.
+Die Dreier-Ortsreihe, jetzt mit seinen echten Orten: wo er sitzt, wo Du sitzt, wohin
+die Marke geht.
 
 ---
 
@@ -76,32 +124,38 @@ er gestartet ist, wohin er geht.
 
 > "There's probably eight big business failures that nobody knows about."
 >
-> You said that after Platō passed a hundred stores. Everybody repeats the container
-> in Centurion. Almost nobody asks what fifteen years of being the guy whose things
-> keep dying does to a man - or whether winning ever actually fixes it…
+> Everybody repeats the container in Irene. Almost nobody asks what fifteen years of
+> being the guy whose things keep dying does to a man - or what it's like to come back
+> from your honeymoon and find out there's nothing left to come back to…
 >
 > Cheers Stephan, my name is Yannick - host of [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m),
 > a podcast about humans who've walked through the fire and came out different.
 >
-> I wrote to you back in March. That email wasn't good enough and it didn't deserve
-> an answer, so this is me doing it properly.
+> I wrote to you back in March. That email wasn't good enough and it didn't deserve an
+> answer, so this is me doing it properly.
 >
-> I know the shape of your story from the inside, just at a much smaller scale: I
+> You named a company after the man whose marketplace was where people worked out how
+> to live. I've spent the last two years building the same thing without the coffee -
+> so when you said that's what Platō is for, it landed differently with me than it
+> does with most people who hear it.
+>
+> And I know the shape of your story from the inside, just at a much smaller scale: I
 > built a marketing agency alongside spiritual teachers and coaches, scaled Germany's
 > #1 psychedelic therapy company as its CMO, was certain I'd found the meaningful
-> thing - and still ended up standing there empty. I've got my own pile of things
-> that didn't work. Mine just never ended in 130 stores.
+> thing, and still ended up standing there empty. I have my own pile of things that
+> didn't work. Mine just never ended in 130 stores.
 >
 > So I'm not after another founder-journey episode. What interests me more is the
 > deeper layer of your life:
 >
-> **What eight failures in a row do to a marriage, and to the man who has to come
-> home and say it again - starting with the business that died a month after your
-> honeymoon. What it's like to build the one that finally works with your own
-> brother: what that gives you, and what it costs. The moment the success actually
-> arrives and some part of you doesn't trust it, because your identity was built in
-> the failure years. And whether you named it after a philosopher for a reason, or
-> whether the name only became true afterwards.**
+> **What it actually costs to believe you shouldn't store up treasures on earth while
+> building something this size - and where that line sits for you now, with London
+> opening in March. What losing that much money that young did to the way you see it;
+> you called money air, and I believe you, but I want to know what it took to get
+> there. Four boys, homeschooled, thirteen stores opened in one month: which of the
+> glass balls has come closest to the floor, and what did you change afterwards. And
+> the question your own brand name asks - whether the marketplace conversations you
+> named it after survive being scaled, or whether scale is exactly what kills them.**
 >
 > I know I don't have the biggest reach yet. But I've already had some extraordinary
 > people on the show, such as…
@@ -117,9 +171,9 @@ er gestartet ist, wohin er geht.
 > I committed to depth over quantity. In-person only. Every guest I invite is
 > meaningful to me. You're one of them.
 >
-> I'm based in Cape Town, where your Academy opened in District Six - and if your
-> days are in Centurion, I'm happy to make the trip up. If you've got an hour or two
-> for a conversation that matters - I'd love to make it happen.
+> You said if someone really wants to meet you, they can fly out to George. I'm in
+> Cape Town, so I'd just drive. If you've got an hour or two for a conversation that
+> matters - I'd love to make it happen.
 >
 > Dreaming Big,
 
@@ -127,45 +181,47 @@ er gestartet ist, wohin er geht.
 
 ## Die Entscheidungen darin
 
-**1. Der Cold Open ist sein eigener Satz, und die Pointe kommt danach.** Nicht
-"Du bist beeindruckend", sondern: alle erzählen den Container, keiner fragt nach dem,
-was fünfzehn Jahre Scheitern mit einem Mann machen. Das ist exakt die Lücke, die
-Deine Sendung füllt - und sie steht in Zeile drei statt in Absatz sechs.
+**1. Der Name steht im Fließtext, nicht im Fragenblock.** Das ist die wichtigste
+Änderung. Er hat erklärt, warum die Marke Platō heißt - **also fragst Du ihn nicht
+danach, Du antwortest darauf.** *"I've spent the last two years building the same
+thing without the coffee"* ist der Satz, an dem er merkt, dass das hier kein
+Serienanschreiben ist.
 
-**2. Der Satz über die alte Mail steht bewusst drin.** Er erklärt, warum nach acht
-Monaten nochmal etwas kommt, ohne nachzufassen, und er ist trocken statt
-entschuldigend. **Wenn Du ihn nicht willst, streich ihn** - dann beginnt Dein Teil
-direkt mit "I know the shape of your story from the inside".
+**2. Die Glaubensfrage ist die, die ihm niemand stellt.** Er sagt von sich aus, dass
+er keine Schätze auf Erden sammeln will - und baut gleichzeitig eine Gruppe mit
+Holding, Rösterei, Bäckerei, Burgermarke und London-Expansion. **Das ist kein
+Vorwurf, das ist die Spannung, in der er lebt**, und er spricht offen genug darüber,
+dass die Frage ihn nicht in die Defensive drängt. *"with London opening in March"*
+macht sie konkret statt theologisch.
 
-**3. Deine Hälfte ist diesmal ein echter Spiegel.** Er hat acht gescheiterte
-Geschäfte, Du hast ein gescheitertes Sinnversprechen. Das ist die Formulierung aus
-Deinem Blake-Mykoskie-Pitch, auf Deine Zahlen heruntergezogen: *"I can't compare what
-I built to what you did"* in anderer Form.
+**3. Der Schlusssatz zitiert ihn zurück.** *"You said if someone really wants to meet
+you, they can fly out to George."* Er hat das halb im Scherz gesagt. Dass Du es
+aufgegriffen hast, beweist in zwölf Wörtern, dass Du das ganze Gespräch gesehen hast -
+und *"I'm in Cape Town, so I'd just drive"* ist eine ehrliche Zusage in der richtigen
+Größe. Keine Weltreise, eine Autofahrt in derselben Provinz.
 
-**4. Die Namensfrage ist als Frage formuliert, nicht als Behauptung.** Keine Quelle
-erklärt, warum die Marke Platō heißt. Deshalb steht da "whether you named it after a
-philosopher for a reason" und nicht "du hast sie nach Platon benannt, weil…".
+**4. Der Fragenblock nimmt nichts, was er schon dreißigmal erzählt hat.** Kein
+Container, kein Load Shedding, kein Franchise-Modell, kein "collecting dots". Das
+steht alles in beiden Transkripten und steht in jedem Artikel über ihn.
 
-**5. Rob Paddock steht jetzt mit GetSmarter drin, und das ist für ihn der wichtigste
-Name auf der Liste.** Bredell ist südafrikanischer Gründer. **GetSmarter sagt ihm
-sofort etwas** - Kapstädter Firma, großer Exit -, wo "$100M EdTech-founder" eine
-abstrakte Zahl bleibt. Deine neue Formulierung ist hier die bessere, deshalb habe ich
-sie übernommen. *"my mentor"* bleibt davor stehen: das ist die Wärme, und sie kostet
-zwei Wörter.
+> **Eine Entscheidung, die ich Dir überlasse: Rob Bennett in der Liste.**
+> *"my 77 y/o psychedelic therapist"* ist Deine stärkste Formulierung und steht in
+> fast jedem Deiner Pitches. **Der Empfänger ist bekennender Christ, Vater von vier
+> Jungs, die zu Hause unterrichtet werden.** Ich habe ihn drin gelassen, weil ich Dir
+> Deine Zeilen nicht ungefragt rausnehme - aber **wenn Du tauschen willst, nimm
+> Ex-Hollywood actor David Sutcliffe.** Das ist meine Einschätzung über diesen einen
+> Leser, kein Urteil über Rob.
 
-**Variante ohne das Zitat**, falls Du es nicht wörtlich bestätigt bekommst:
-
-> Eight business failures before the one that worked. Everybody repeats the container
-> in Centurion. Almost nobody asks what fifteen years of being the guy whose things
-> keep dying does to a man - or whether winning ever actually fixes it…
+**Variante ohne das Eingangszitat** brauchst Du nicht mehr: **es ist jetzt erster
+Hand.** Erstes Transkript bei 00:00 und noch einmal im zweiten bei 04:33.
 
 ---
 
 ## Databank
 
-**Es gibt keine Zeile für Stephan Bredell oder Platō.** Vorschlag, wenn Du grünes
-Licht gibst: Name *Stephan Bredell*, Location *South Africa*, Contact
-`stephan@plato.coffee`, Outreach Status *Not Started*, Why: Platō-Gründer, acht
-gescheiterte Firmen vor dem Durchbruch, Erstanschreiben 17.03.2026 ohne Antwort.
-**Nicht angelegt, weil "South Africa" und "Cape Town" bei Dir getrennte Optionen sind
-und sein Wohnort nicht belegt ist.**
+**Es gibt keine Zeile für Stephan Bredell.** Jetzt kann ich sie sauber anlegen:
+Name *Stephan Bredell*, **Location *South Africa*** (George liegt im Westkap, aber
+*Cape Town* wäre falsch), Contact `stephan@plato.coffee`, Outreach Status
+*Not Started*, Why: Platō-Gründer, acht gescheiterte Firmen davor, Christ, vier Söhne,
+sitzt in George, Erstanschreiben 17.03.2026 ohne Antwort. **Sag ein Wort, dann steht
+sie.**
