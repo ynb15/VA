@@ -397,3 +397,30 @@ morning, as we were awaiting feedback from the bank regarding the requirements
 for a foreign exchange (forex) refund. All the required documentation has since
 been received and submitted. I'm currently waiting for proof of payment to be
 provided."*
+
+## Korrektur 20.11.2026 — die Mitleidszeile
+
+**Seine Ansage, wörtlich:** *„bitte schreib nicht sowas wie that's rough, shakes
+it off quickly - das ist überhaupt nicht mein Vibe"*.
+
+Gestrichen hatte ich ihm geschrieben: *„Ah, that's rough — hope Aimee shakes it
+off quickly."* Als jemand bei seiner Physiotherapie krank ausfiel.
+
+**Was daran falsch ist:** das sind **amerikanische Trostfloskeln**, die
+Anteilnahme *vorführen*. Er nimmt Anteil, aber flach und in einem Halbsatz.
+Belege aus seinen eigenen Mails:
+
+| Anlass | seine Zeile |
+|---|---|
+| Benny meldet ein Missverständnis | *„Hoppla. Gut dass alles gut ist."* |
+| sein eigener Motorradunfall | *„But: I survived - wich is a miracle"* |
+| Brendan steckt in Problemen | *„Fires first, I gotcha."* |
+
+**Die Regel:** **keine Adjektive für fremdes Leid, keine Besserungswünsche mit
+Bildsprache.** Entweder ein nüchterner Dreiwortsatz — *„Thanks for the
+heads-up."*, *„Noted."*, *„Gotcha."* — oder gar nichts und direkt zur Sache.
+**Mitgefühl zeigt er durch Handeln und Kürze, nicht durch Wortwahl.**
+
+Dieselbe Familie wie der Befund vom 09.11. (*„viel zu ja, argkriecherisch"*) und
+vom 17.11. (er streicht jeden deutenden zweiten Satz): **was den Ton
+ausschmückt, fliegt raus.**
