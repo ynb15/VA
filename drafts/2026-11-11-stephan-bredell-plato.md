@@ -1,9 +1,9 @@
 # Stephan Bredell (Platō Coffee) - Neuanlauf
 
-**Stand:** Fr 20.11.2026, Kapstadt. **Neunte Fassung. Entwurf, nicht gesendet.**
+**Stand:** Fr 20.11.2026, Kapstadt. **Zehnte Fassung. Entwurf, nicht gesendet.**
 
-> **Auf seine Ansage:** Black Gold ist drin, und der zweite Anlauf nennt jetzt die
-> US-Tour als Grund, warum die Sendung abgehoben ist. Begründung unter Punkt 1 und 1b.
+> **Auf seine Ansage:** der erfundene Kaffee-Witz ist raus, Black Gold steht jetzt im
+> Schlusssatz. Begründung unter Punkt 1b.
 
 ## Was im Postfach steht
 
@@ -139,9 +139,7 @@ die Marke geht.
 > you're still the one I keep coming back to. So: second attempt.
 >
 > You named the company after the marketplace where people stood around working out how
-> to live. That's the room I've been building for two years, minus the one thing you're
-> actually good at: I call coffee Black Gold and drink it accordingly, but what comes
-> out of my own kitchen wouldn't survive one of your baristas.
+> to live. That's the room I've been building for two years, just without the coffee.
 >
 > And I know the shape of your story from much further down the scale: I built a
 > marketing agency with spiritual teachers and coaches, scaled Germany's #1 psychedelic
@@ -176,7 +174,7 @@ die Marke geht.
 >
 > You said if someone really wants to meet you, they can fly out to George. I'm in Cape
 > Town, so I'd just drive. If you've got an hour or two for a conversation that matters
-> - I'd love to make it happen.
+> - I'd love to make it happen. Black Gold on you, the conversation on me.
 >
 > Dreaming Big,
 
@@ -204,22 +202,30 @@ Der Schlusssatz macht aus der Wiederholung ein Kompliment: **er ist nicht der N�
 auf einer Liste, er ist der, zu dem Du zurückkommst.** *"So: second attempt"* ist
 trocken genug, dass es nicht schleimt.
 
-**1b. Black Gold steht an der einzigen Stelle, an der es arbeitet.**
+**1b. Black Gold steht jetzt zum Schluss, und der Versuch davor war ein Fehler.**
 
-Vorher hieß es *"just without the coffee"* - eine Floskel. Jetzt:
+Ich hatte geschrieben: *"minus the one thing you're actually good at: I call coffee
+Black Gold and drink it accordingly, but what comes out of my own kitchen wouldn't
+survive one of your baristas."*
 
-> *"That's the room I've been building for two years, minus the one thing you're
-> actually good at: I call coffee Black Gold and drink it accordingly, but what comes
-> out of my own kitchen wouldn't survive one of your baristas."*
+**Das war erfunden.** Nicht das Wort - das ist Deins -, sondern der Charakterzug
+drumherum. Du bist nicht der Typ, der zu Hause schlechten Kaffee macht; Du bist der,
+der über Kapstadts beste Läden *"quite some extensive research"* geschrieben hat.
+**Ich habe Dir eine Eigenschaft angedichtet, damit ein Wort irgendwo unterkommt** -
+derselbe Fehler wie mit dem Auto in der Codi-Mail.
 
-**Drei Dinge auf einmal:** Dein Wort für Kaffee kommt rein und erklärt sich von selbst,
-der Platō-Satz davor verliert seinen Predigtton, und **das Kompliment geht an sein
-Produkt statt an seine Firma** - bei einem Mann, der sagt *"I'm an entrepreneur, coffee
-was just the vehicle"*, ist das Lob für die Baristas genau das, was er seinem Bruder
-weitergibt.
+**Dazu kam ein zweiter Schaden:** der Satz stand direkt hinter der Marktplatz-Zeile,
+also hinter dem ernstesten Gedanken der ganzen Mail, und hat ihn zu einem Witz über
+Deine Küche gemacht. *"minus the one thing you're actually good at"* ist außerdem ein
+Kompliment mit Widerhaken.
 
-Es ist der einzige Witz in der Mail. **Einer reicht**, und er steht vor dem
-Fragenblock, also bevor es ernst wird.
+**Jetzt steht es im Schlusssatz:** *"Black Gold on you, the conversation on me."*
+Dort behauptet es nichts über Dich, es verteilt nur die Rollen - **er bringt das, was
+er den ganzen Tag macht, Du bringst das, was Du den ganzen Tag machst** - und es
+beschreibt nebenbei genau das Treffen, um das Du bittest.
+
+**Wenn Du es ganz draußen haben willst**, endet die Mail auf
+*"I'd love to make it happen."* und verliert nichts Wesentliches.
 
 **2. Raus:** *"I don't think that was an accident."* Deine Ansage. Der Satz legt ihm
 eine Bedeutung in den Mund, die er nie behauptet hat, und er klingt nach Deutung von
