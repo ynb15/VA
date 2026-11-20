@@ -9601,3 +9601,33 @@ akademischer Rang, Gründerstatus und ein lokales Amt zählen bei ihm **nicht**
 als Bekanntheit — ich hatte Thrun und Mycoskie genau dafür nach oben gesetzt.
 Bei Marian Goodell hatte ich es selbst richtig gemacht (Burning Man ist
 berühmt, sie nicht) und bei den anderen vier nicht angewandt.
+
+## EINE KARTE TRÄGT GLEICH VIEL TEXT — 20.11.2026
+
+**Seine Beanstandung an den 30 Outreach-Karten:** *„hast du jetzt überall zwei
+Absätze genommen. Manchmal sind die zwei Absätze aber viel zu lang."* Dazu acht
+Einzelentscheidungen, die die Regel belegen.
+
+**Die Regel, aus seinen acht Fällen gelesen** — *meine Lesart, nicht sein
+Wortlaut:*
+
+| Absatz 1 ist… | dann |
+|---|---|
+| ein **ganzes Stück** — ab etwa drei gerenderten Zeilen, geschlossener Gedanke, **seine eigene Stimme steht schon drin** | **er allein.** Absatz 2 verdoppelt die Karte, ohne etwas hinzuzufügen |
+| nur ein **Aufschlag** — ein Zitat, ein Blogtitel, ein Einzeiler, ein bis zwei Zeilen | **beide.** Allein wäre die Karte leer |
+
+Belegt an: McConaughey (5 Z., *„your words kicked my ass"*) · Pollan (6 Z.,
+*„I keep wondering"*) · Brown (4 Z.) · Huberman (4 Z.) → **einer**.
+Ferriss (1 Z., zitierter Blogtitel) · Manson (2 Z., Zitat aus seinem Buch) ·
+Fridman (1 Z.) → **zwei**.
+
+**Das Allgemeine daran, und es gilt über die Karten hinaus:** die Vorgabe war
+„die ersten zwei inhaltlichen Absätze" — eine **Zählregel**. Er misst aber
+**das Ergebnis**, nicht die Zählung: alle Karten sollen gleich viel tragen.
+**Eine Zählregel blind angewandt erzeugt genau diesen Fehler**, und dasselbe
+stand schon am 16.11. hinter seinem Urteil über die elf Ken-Shorts: technisch
+korrekt ausgeführt ist nicht dasselbe wie tragfähig.
+
+Neubau liegt beim Head of Content (`trig_01MGyDkredwbBJBabuNzkKFE`), mit der
+Auflage, die acht Fälle als Prüfung gegen die Regel zu rechnen und zu
+widersprechen, falls sie einen davon nicht reproduziert.
