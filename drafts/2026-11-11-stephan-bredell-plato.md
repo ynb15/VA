@@ -1,6 +1,11 @@
 # Stephan Bredell (Platō Coffee) - Neuanlauf
 
-**Stand:** Mi 11.11.2026, Kapstadt. **Erste Fassung. Entwurf, nicht gesendet.**
+**Stand:** Fr 20.11.2026, Kapstadt. **Zweite Fassung. Entwurf, nicht gesendet.**
+
+> **Geändert gegenüber dem 11.11., zwei Dinge:** der Showtitel ist verlinkt
+> (`https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m`, aus Deiner
+> gesendeten Marian-Mail gezogen), und Rob Paddock steht jetzt in Deiner neuen
+> Formulierung mit **GetSmarter** im Namen. Begründung unten.
 
 ## Was im Postfach steht
 
@@ -75,8 +80,8 @@ er gestartet ist, wohin er geht.
 > in Centurion. Almost nobody asks what fifteen years of being the guy whose things
 > keep dying does to a man - or whether winning ever actually fixes it…
 >
-> Cheers Stephan, my name is Yannick - host of *Man's Search for Meaning*, a podcast
-> about humans who've walked through the fire and came out different.
+> Cheers Stephan, my name is Yannick - host of [*Man's Search for Meaning*](https://youtube.com/playlist?list=PLVod_EadS51L-3NIOqw8dtrxodqy6ro2m),
+> a podcast about humans who've walked through the fire and came out different.
 >
 > I wrote to you back in March. That email wasn't good enough and it didn't deserve
 > an answer, so this is me doing it properly.
@@ -101,7 +106,7 @@ er gestartet ist, wohin er geht.
 > I know I don't have the biggest reach yet. But I've already had some extraordinary
 > people on the show, such as…
 >
-> - my mentor, former IronMan athlete and $100M EdTech-founder Rob Paddock
+> - my mentor, EdTech-millionaire, GetSmarter founder and Ironman athlete Rob Paddock
 > - Burning Man CEO Marian Goodell
 > - quantum physicist, UT professor and OpenAI insider Scott Aaronson
 > - my 77 y/o psychedelic therapist, apartheid activist and techno icon Rob Bennett
@@ -140,6 +145,13 @@ I built to what you did"* in anderer Form.
 **4. Die Namensfrage ist als Frage formuliert, nicht als Behauptung.** Keine Quelle
 erklärt, warum die Marke Platō heißt. Deshalb steht da "whether you named it after a
 philosopher for a reason" und nicht "du hast sie nach Platon benannt, weil…".
+
+**5. Rob Paddock steht jetzt mit GetSmarter drin, und das ist für ihn der wichtigste
+Name auf der Liste.** Bredell ist südafrikanischer Gründer. **GetSmarter sagt ihm
+sofort etwas** - Kapstädter Firma, großer Exit -, wo "$100M EdTech-founder" eine
+abstrakte Zahl bleibt. Deine neue Formulierung ist hier die bessere, deshalb habe ich
+sie übernommen. *"my mentor"* bleibt davor stehen: das ist die Wärme, und sie kostet
+zwei Wörter.
 
 **Variante ohne das Zitat**, falls Du es nicht wörtlich bestätigt bekommst:
 
