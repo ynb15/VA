@@ -9551,3 +9551,31 @@ Short ist vom Kanal aus **unsichtbar** (113 sichtbare Uploads, keine der drei
 gesperrten IDs darin, Standbild ein 1097-Byte-Platzhalter) — nur die Sperrmail
 findet ihn. Und der **Tondownload antwortet mit HTTP 403**, also ist von hier
 aus nicht messbar, ob ein veröffentlichtes Stück ein Musikbett trägt.
+
+## EIN POSTFACH IST KEIN TERMINSTAND — 20.11.2026
+
+**Seine Korrektur, wörtlich:** *„Digga mit Brendan ist schon lange alles
+abgemacht?!"*
+
+Ich habe **sechs Tage lang gemeldet**, Brendans Frage vom 14.11. (*„Can you do
+Friday at 9:00 or 12:00 in Llandundo?"*) sei unbeantwortet — zuletzt heute
+früh als erste Zeile des Morgenberichts. **Im privaten Kalender steht
+`Brendan?` am Fr 20.11. von 12:00 bis 13:00, angelegt am 05.11.**, zuletzt
+geändert am 19.11. Es ist der zweite der beiden Slots, die Brendan angeboten
+hatte.
+
+**Ich hatte nur den Mailfaden gelesen.** Ein fehlendes „Ja" im Postfach
+bedeutet nicht, dass nichts vereinbart ist — er regelt Termine auch per
+WhatsApp, am Telefon und persönlich, und trägt sie dann selbst ein.
+
+**Die Regel:** **bevor ich einen Termin als offen melde, steht er in beiden
+Kalendern nicht drin.** Der Nachtschicht-Auftrag sagt das seit dem 20.10.
+ausdrücklich — *„Read both calendars"* — und ich habe es beim Morgenbericht
+nicht getan.
+
+**Und der größere Punkt, derselbe wie in `LERNEN.md` Ausgabe 48:** eine Quelle
+gemessen, über die Lage geschlossen. Beim Virgin-Active-Entwurf war es die
+Suchvorschau statt des Fadens, bei der Sperrmail der Meldungstext statt einer
+Messung, hier das Postfach statt der Kalender. **Dreimal in zehn Tagen
+derselbe Griff.** Was ich melde, muss aus der Quelle kommen, die die Frage
+beantwortet — nicht aus der, die gerade offen ist.
