@@ -233,6 +233,25 @@ ihn zu stellen und ohne eine Pointe auf Deine Kosten.**
 Und für seinen Markt ist die Zeile nebenbei ein Signal: ein Kapstädter, der die guten
 Läden kennt, ist genau der Kunde, um den er sich in dieser Stadt bemüht.
 
+**1c. Fünf Varianten für den Kaffeepart.** Jeweils die zweite Hälfte von
+*"That's the room I've been building for two years - …"*. **Im Mailtext oben steht
+Variante 1, bis Du wählst.**
+
+1. *mine just runs on Black Gold, and I've done some fairly extensive research into
+   where Cape Town hides the good stuff.* - Insider-Ton, nimmt Deine eigene
+   Formulierung aus der Brendan-Mail auf. Signalisiert ihm nebenbei: ein Kapstädter,
+   der die guten Läden kennt, also genau sein Kunde.
+2. *mine runs on Black Gold - I don't start a conversation that matters without it.* -
+   Ritual statt Geschmack. Bindet den Kaffee direkt an das, worum Du bittest.
+3. *every conversation I've recorded started with Black Gold in both cups.* - Die
+   konkreteste. Kein Bekenntnis, eine Tatsache über die Sendung, und *"both cups"*
+   setzt ihn schon in den Stuhl.
+4. *Black Gold is the one habit I've never tried to quit.* - Die kürzeste, trockenste.
+   Passt, wenn Dir der Absatz insgesamt zu lang wird.
+5. *mine runs on Black Gold too - you built the rooms, I just bring the microphone.* -
+   Greift den Marktplatz von davor auf und verteilt die Rollen, ohne Dich neben ihn zu
+   stellen.
+
 **2. Raus:** *"I don't think that was an accident."* Deine Ansage. Der Satz legt ihm
 eine Bedeutung in den Mund, die er nie behauptet hat, und er klingt nach Deutung von
 außen.
