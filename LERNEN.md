@@ -45,6 +45,51 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 52 — 20.11.2026, 16:10 Kapstadt · eine Regel, die man messen kann, ist nachprüfbar
+
+1. **Aus einer Ansage wurde ein Maß — und das Maß reproduziert alle acht
+   Fälle.** Yannick hatte beanstandet, dass alle 30 Outreach-Karten zwei
+   Absätze tragen (*„Manchmal sind die zwei Absätze aber viel zu lang"*) und
+   acht davon selbst entschieden. Head of Content hat daraus keine
+   Schätzung gemacht, sondern eine Messung: `render.js` legt einen Range um
+   Absatz 1 und **zählt dessen ClientRects im Browser**.
+   **Schwelle: ab drei gerenderten Zeilen steht Absatz 1 allein, bei zwei oder
+   weniger kommen beide.** Ergebnis: **alle acht seiner Entscheidungen
+   reproduziert**, und die Kartenhöhen laufen jetzt von **812 bis 1218** statt
+   von 948 bis 1582.
+   **Lance Armstrong ist der Grenzfall** — genau drei Zeilen, und er hatte
+   „ein Absatz" gesagt. Damit liegt der Schnitt belegt zwischen zwei und drei.
+   → betrifft: alle. **Eine Regel, die aus Beispielen gelesen wurde, wird gegen
+   genau diese Beispiele gerechnet, bevor sie angewandt wird.** Stimmt sie bei
+   einem nicht, ist die Regel falsch — nicht das Beispiel.
+
+2. **Und die Messung hat ihre eigene Grenze gefunden.** Karte 10, Jon
+   Krakauer: drei Zeilen, also nach der Regel ein Absatz — **aber dieser
+   Absatz ist ein Zitat aus seinem Buch, ohne Yannick darin.** Genau die
+   Form, die bei Ferriss und Manson zwei Absätze bekommt, nur länger gesetzt.
+   Der Agent hat die Karte gebaut **und den Fall im README vermerkt**, statt
+   ihn stillschweigend durchzuwinken.
+   → betrifft: jede Messung, die für ein Urteil einsteht. **Die Zeilenzahl ist
+   ein Stellvertreter für „trägt der Absatz allein", nicht dasselbe.** Wo der
+   Stellvertreter und die Sache auseinanderlaufen, wird der Fall benannt, nicht
+   gebogen.
+
+3. **Die Gästeliste ist Copy, keine Recherche — mein Fehler.** Ich hatte für
+   einen Pitch die Beschreibungen der Gäste aus den **Notion-Recherchefeldern**
+   gebaut: *„Cape Town sangoma Craig Makhosi"*, *„ex-NFL lineman and Hotboxin'
+   with Mike Tyson co-host Eben Britton"*. Seine Reaktion: *„Warum schreibst du
+   plötzlich irgendeine eigene Scheiße über Eben und mit Craig? Die
+   Formulierungen, die wir seit jeher nutzen, stehen in den ganzen
+   Outreaches."* Richtig ist **„South African ManKindProject leader Craig
+   Makhosi"**, aus seinem eigenen Pitch vom selben Morgen.
+   → betrifft: **jeden, der in seinem Namen schreibt.** Das Feld `Why` in der
+   Databank sagt, *warum* jemand interessant ist. Wie ein Mensch **benannt**
+   wird, steht ausschließlich in den versendeten Pitches. Der kanonische Block
+   liegt jetzt in `voice/en-podcast-outreach.md`. **Vor jeder Gästeliste den
+   letzten versendeten Pitch öffnen und abschreiben.**
+
+---
+
 ## Ausgabe 51 — 19.11.2026, 16:05 Kapstadt · ein Arbeitsname ist keine Identität
 
 1. **Der Widerspruch, den der YouTube-Manager gemeldet hat, ist aufgelöst — und
