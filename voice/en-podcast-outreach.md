@@ -424,3 +424,19 @@ heads-up."*, *„Noted."*, *„Gotcha."* — oder gar nichts und direkt zur Sach
 Dieselbe Familie wie der Befund vom 09.11. (*„viel zu ja, argkriecherisch"*) und
 vom 17.11. (er streicht jeden deutenden zweiten Satz): **was den Ton
 ausschmückt, fliegt raus.**
+
+## Zwei Kleinigkeiten, 20.11.2026
+
+**1. Entwürfe im Chat ohne Markdown.** *„kannst du mir die Nachricht bitte ohne
+die Scheißformatierung geben?"* — kein Zitatblock, keine Fettung, keine
+Aufzählungszeichen im Nachrichtentext. **Er kopiert das direkt in sein
+Mailfenster.** Die Einordnung drumherum darf formatiert sein, der Text selbst
+nicht.
+
+**2. „I won't come back to it" ist nicht sein Ton.** Ich hatte es geschrieben,
+um die Honorarfrage sichtbar zu schließen. Seine Ansage: *„Das hört sich für
+mich das nicht an."* Er schließt ein Thema **nicht durch eine Erklärung, dass
+er es schließt**, sondern durch eine Tatsache, die es überflüssig macht — hier:
+dass andere Kanzleien auf ihn zugekommen sind, er mit ihnen gesprochen hat und
+sich trotzdem für diesen Anwalt entscheidet. **Der Verzicht steht im Handeln,
+nicht in der Ankündigung.**
