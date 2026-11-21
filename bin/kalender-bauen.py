@@ -83,6 +83,15 @@ for d, a, zusatz in zeilen:
         aus.append("| Tag | Art | Quelle | Zustand |")
         aus.append("|---|---|---|---|")
     q = zusatz if zusatz else "—"
-    aus.append(f"| {WOCHENTAG[d.weekday()]} {d.strftime('%d.%m.')} | {a} | {q} | offen |")
+    # Zustand "er sagt an" statt "offen" — seine Ansage vom 16.11.2026:
+    # "ich wuerde das jetzt einmal aendern, dass ich dir einfach Bescheid gebe,
+    # was wann veroeffentlicht wird, weil es nicht so viel Sinn macht, wenn du
+    # das Ganze fuehrst." Ein Tag ohne seine Ansage ist nicht offen, sondern
+    # seiner. "offen" hat die Plankontrolle taeglich fragen lassen, ob die Zeile
+    # wirklich bei ihm liegt — die Frage ist seit dem 16.11. beantwortet.
+    # Podcast-Zeilen behalten "offen": ihr Datum hat er am 21.10. selbst gesetzt,
+    # offen ist dort nur, ob die Folge schon draussen ist.
+    zustand = "offen" if "PODCAST" in a else "**er sagt an**"
+    aus.append(f"| {WOCHENTAG[d.weekday()]} {d.strftime('%d.%m.')} | {a} | {q} | {zustand} |")
 open("plan/kalender.md","w").write("\n".join(aus) + "\n")
 print(f"{len(zeilen)} Tage · {n_pod} Podcasts · {n_clip} Clips · {n_short} Shorts")

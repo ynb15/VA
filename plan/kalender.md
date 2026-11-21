@@ -101,52 +101,52 @@ und ein Ort für fertige Dateien ist ihm vorgeschlagen.
 | Mi 18.11. | Short | — | **er sagt an** |
 | Do 19.11. | Short | — | **er sagt an** |
 | Fr 20.11. | Short | — | **er sagt an** |
-| Sa 21.11. | Clip | 3–10 Min | offen |
-| So 22.11. | Clip | 10–20 Min | offen |
-| Mo 23.11. | Short | — | offen |
-| Di 24.11. | Short | — | offen |
-| Mi 25.11. | Short | — | offen |
-| Do 26.11. | Short | — | offen |
+| Sa 21.11. | Clip | 3–10 Min | **er sagt an** |
+| So 22.11. | Clip | 10–20 Min | **er sagt an** |
+| Mo 23.11. | Short | — | **er sagt an** |
+| Di 24.11. | Short | — | **er sagt an** |
+| Mi 25.11. | Short | — | **er sagt an** |
+| Do 26.11. | Short | — | **er sagt an** |
 | Fr 27.11. | **PODCAST** | Matt Defina | offen |
-| Sa 28.11. | Clip | 3–10 Min | offen |
-| So 29.11. | Clip | 10–20 Min | offen |
-| Mo 30.11. | Short | — | offen |
+| Sa 28.11. | Clip | 3–10 Min | **er sagt an** |
+| So 29.11. | Clip | 10–20 Min | **er sagt an** |
+| Mo 30.11. | Short | — | **er sagt an** |
 
 ### Dezember 2026
 
 | Tag | Art | Quelle | Zustand |
 |---|---|---|---|
-| Di 01.12. | Short | — | offen |
-| Mi 02.12. | Short | — | offen |
-| Do 03.12. | Short | — | offen |
+| Di 01.12. | Short | — | **er sagt an** |
+| Mi 02.12. | Short | — | **er sagt an** |
+| Do 03.12. | Short | — | **er sagt an** |
 | Fr 04.12. | **PODCAST** | Marian Goodell | offen |
-| Sa 05.12. | Clip | 3–10 Min | offen |
-| So 06.12. | Clip | 10–20 Min | offen |
-| Mo 07.12. | Short | — | offen |
-| Di 08.12. | Short | — | offen |
-| Mi 09.12. | Short | — | offen |
-| Do 10.12. | Short | — | offen |
-| Fr 11.12. | Short | — | offen |
-| Sa 12.12. | Clip | 3–10 Min | offen |
-| So 13.12. | Clip | 10–20 Min | offen |
-| Mo 14.12. | Short | — | offen |
-| Di 15.12. | Short | — | offen |
-| Mi 16.12. | Short | — | offen |
-| Do 17.12. | Short | — | offen |
-| Fr 18.12. | Short | — | offen |
-| Sa 19.12. | Clip | 3–10 Min | offen |
-| So 20.12. | Clip | 10–20 Min | offen |
-| Mo 21.12. | Short | — | offen |
-| Di 22.12. | Short | — | offen |
-| Mi 23.12. | Short | — | offen |
-| Do 24.12. | Short | — | offen |
-| Fr 25.12. | Short | — | offen |
-| Sa 26.12. | Clip | 3–10 Min | offen |
-| So 27.12. | Clip | 10–20 Min | offen |
-| Mo 28.12. | Short | — | offen |
-| Di 29.12. | Short | — | offen |
-| Mi 30.12. | Short | — | offen |
-| Do 31.12. | Short | — | offen |
+| Sa 05.12. | Clip | 3–10 Min | **er sagt an** |
+| So 06.12. | Clip | 10–20 Min | **er sagt an** |
+| Mo 07.12. | Short | — | **er sagt an** |
+| Di 08.12. | Short | — | **er sagt an** |
+| Mi 09.12. | Short | — | **er sagt an** |
+| Do 10.12. | Short | — | **er sagt an** |
+| Fr 11.12. | Short | — | **er sagt an** |
+| Sa 12.12. | Clip | 3–10 Min | **er sagt an** |
+| So 13.12. | Clip | 10–20 Min | **er sagt an** |
+| Mo 14.12. | Short | — | **er sagt an** |
+| Di 15.12. | Short | — | **er sagt an** |
+| Mi 16.12. | Short | — | **er sagt an** |
+| Do 17.12. | Short | — | **er sagt an** |
+| Fr 18.12. | Short | — | **er sagt an** |
+| Sa 19.12. | Clip | 3–10 Min | **er sagt an** |
+| So 20.12. | Clip | 10–20 Min | **er sagt an** |
+| Mo 21.12. | Short | — | **er sagt an** |
+| Di 22.12. | Short | — | **er sagt an** |
+| Mi 23.12. | Short | — | **er sagt an** |
+| Do 24.12. | Short | — | **er sagt an** |
+| Fr 25.12. | Short | — | **er sagt an** |
+| Sa 26.12. | Clip | 3–10 Min | **er sagt an** |
+| So 27.12. | Clip | 10–20 Min | **er sagt an** |
+| Mo 28.12. | Short | — | **er sagt an** |
+| Di 29.12. | Short | — | **er sagt an** |
+| Mi 30.12. | Short | — | **er sagt an** |
+| Do 31.12. | Short | — | **er sagt an** |
 
 ---
 
