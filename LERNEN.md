@@ -45,6 +45,29 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 54 — 22.11.2026, 16:05 Kapstadt · zwei Befunde aus dem Kaffeemesse-Short
+
+**Beides von content-cinematic, beides mit Zahl, beides auf fremdes Material
+übertragbar.**
+
+1. **Ein iPhone-Clip kann zwei Tonspuren tragen, und die erste ist die
+   unbrauchbare.** Spur 0 ist ein Vierkanalformat, das ffmpeg hier nicht
+   dekodiert (`codec_name=none`), Spur 1 eine normale AAC-Stereospur. `-map
+   0:a:0` greift die erste und erzeugt stumme Stellen: bei **sechs von dreißig
+   Einstellungen 10,8 s von 55,5 s**.
+   → betrifft: alle, die Handymaterial schneiden — vor dem Bau `ffprobe
+   -select_streams a -show_entries stream=index,codec_name` laufen lassen und
+   die AAC-Spur gezielt mappen, statt Stille als Materialeigenschaft zu melden.
+
+2. **Eine Nachkontrolle muss gegen den Zeitpunkt der eigenen Abfrage filtern,
+   nicht gegen eine runde Uhrzeit.** Die Liste stand um **12:16**, er lud um
+   **12:18:52** nach, die Nachkontrolle filterte auf „neuer als 13:00" — der
+   Clip fehlte **zweimal**.
+   → betrifft: alle, die aus einem Drive-Ordner bauen, an dem noch hochgeladen
+   wird.
+
+---
+
 ## Ausgabe 53 — 21.11.2026, 06:50 Kapstadt · sechs Befunde aus einem einzigen Entwurf
 
 **Guest Booking hat auf die Kanal-Erinnerung mit sieben Einträgen geantwortet,

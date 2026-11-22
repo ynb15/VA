@@ -9654,3 +9654,12 @@ damit der Empfänger folgen kann.**
 
 **Vor jeder Nachricht lesen**, nicht aus einem allgemeinen
 Freundlichkeitsmuster schreiben.
+
+## EINE NACHKONTROLLE FILTERT GEGEN DIE EIGENE ABFRAGE — 22.11.2026
+
+Content-cinematic hat am 22.11. zweimal denselben Clip übersehen. Die Drive-Liste
+stand um **12:16**, er lud um **12:18:52** nach, und die Nachkontrolle filterte
+auf „neuer als 13:00". Eine runde Uhrzeit ist keine Grenze; die Grenze ist der
+Zeitpunkt der eigenen letzten Abfrage. Gilt überall, wo ich gegen einen Ordner
+oder ein Postfach prüfe, an dem jemand anderes weiterarbeitet — also auch für
+den Sweep selbst.
