@@ -69,7 +69,29 @@ Gemessen am fertigen Stück: **0,0 s digitale Stille**, Umgebungston im Median
 +0,5 dBFS, also über der Decke; **ein flaches −1,0 dB auf die Summe**, sonst
 nichts — keine Kompression, kein Limiter.
 
-**Ohne Musik.** Du wählst das Stück, dann wird es unterlegt; das Bett beginnt
-nicht bei Songsekunde 0.
+## Musik, dritte Fassung (23.11.)
+
+**Frank Sinatra — „The Coffee Song"** (Ring-A-Ding-Ding!, 1961), von ihm
+geschickt. MP3 320 kbit/s, 171,15 s, −14,3 LUFS, Spitze +0,8 dBFS.
+
+**Bett ab Songsekunde 12,75**, nicht bei 0 — seine stehende Regel, und seine
+eigenen Werte liegen im selben Bereich (In This Shirt ab 0:10, Mom's Got Work
+ab 0:20). Der Versatz ist nicht beliebig gewählt: der Song hat bei **66,25 s**
+seinen lautesten Abschnitt (−12,5 bis −14,6 dBFS im Viertelsekundenraster,
+sonst −18 bis −24). Bei diesem Versatz fällt genau dieser Abschnitt auf die
+Schlusseinstellung. **Gemessen: die letzten 2,2 s liegen bei −9,2 LUFS gegen
+−15,8 LUFS im Mittel** — die Tüten knallen auf den lautesten Takt.
+
+| | |
+|---|---|
+| Musik | +1,0 dB, Einblendung 1,0 s |
+| Ausblendung | 0,25 s, damit die Pointe nicht weggezogen wird |
+| Messe-Atmo | **13 dB unter der Musik** — Maschinen und Stimmen bleiben hörbar, drängen sich aber nicht vor |
+| Summe | **−15,8 LUFS**, Spitze **−1,0 dBFS**, LRA 5,4 LU |
+
+**Die abgenommenen Shorts liegen bei −14,2 LUFS.** Die fehlenden 1,6 dB gehen
+mit einer flachen Verstärkung nicht mehr: die Spitze steht schon bei −1,0. Dafür
+bräuchte es einen Limiter, und das ist der Eingriff, den er am 20.10. abgelehnt
+hat. Liegt bei ihm.
 
 **Nichts geht raus.**
