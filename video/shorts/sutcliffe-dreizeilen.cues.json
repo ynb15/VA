@@ -1186,716 +1186,218 @@
   "grund": "hand"
  },
  {
-  "start": 48.7667,
-  "end": 49.3867,
-  "text": "If you have",
-  "woerter": [
-   {
-    "t": "If",
-    "start": 48.7667,
-    "end": 49.0467,
-    "seg": 14
-   },
-   {
-    "t": "you",
-    "start": 49.0467,
-    "end": 49.2267,
-    "seg": 14
-   },
-   {
-    "t": "have",
-    "start": 49.2267,
-    "end": 49.3867,
-    "seg": 14
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 49.3867,
-  "end": 49.8067,
-  "text": "kids, you're",
-  "woerter": [
-   {
-    "t": "kids,",
-    "start": 49.3867,
-    "end": 49.6267,
-    "seg": 14
-   },
-   {
-    "t": "you're",
-    "start": 49.6667,
-    "end": 49.8067,
-    "seg": 14
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 49.8067,
-  "end": 50.1067,
-  "text": "going to want",
-  "woerter": [
-   {
-    "t": "going",
-    "start": 49.8067,
-    "end": 49.8867,
-    "seg": 14
-   },
-   {
-    "t": "to",
-    "start": 49.8867,
-    "end": 50.0067,
-    "seg": 14
-   },
-   {
-    "t": "want",
-    "start": 50.0067,
-    "end": 50.1067,
-    "seg": 14
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 50.1067,
-  "end": 50.5267,
-  "text": "your kid to",
-  "woerter": [
-   {
-    "t": "your",
-    "start": 50.1067,
-    "end": 50.3267,
-    "seg": 14
-   },
-   {
-    "t": "kid",
-    "start": 50.3267,
-    "end": 50.4067,
-    "seg": 14
-   },
-   {
-    "t": "to",
-    "start": 50.4067,
-    "end": 50.5267,
-    "seg": 14
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 50.5267,
-  "end": 51.1867,
-  "text": "be successful.",
-  "woerter": [
-   {
-    "t": "be",
-    "start": 50.5267,
-    "end": 50.6467,
-    "seg": 14
-   },
-   {
-    "t": "successful.",
-    "start": 50.6467,
-    "end": 51.1867,
-    "seg": 14
-   }
-  ],
-  "grund": "satz"
- },
- {
-  "start": 51.6067,
-  "end": 52.6067,
-  "text": "And you can",
-  "woerter": [
-   {
-    "t": "And",
-    "start": 51.6067,
-    "end": 51.6267,
-    "seg": 15
-   },
-   {
-    "t": "you",
-    "start": 51.6267,
-    "end": 52.3467,
-    "seg": 15
-   },
-   {
-    "t": "can",
-    "start": 52.3467,
-    "end": 52.6067,
-    "seg": 15
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 52.6067,
-  "end": 54.0067,
-  "text": "do your best",
-  "woerter": [
-   {
-    "t": "do",
-    "start": 52.6067,
-    "end": 52.9867,
-    "seg": 15
-   },
-   {
-    "t": "your",
-    "start": 52.9867,
-    "end": 53.4067,
-    "seg": 15
-   },
-   {
-    "t": "best",
-    "start": 53.4067,
-    "end": 54.0067,
-    "seg": 15
-   }
-  ],
-  "grund": "stille"
- },
- {
-  "start": 54.0067,
-  "end": 55.3467,
-  "text": "to eliminate the",
-  "woerter": [
-   {
-    "t": "to",
-    "start": 54.0067,
-    "end": 54.6667,
-    "seg": 15
-   },
-   {
-    "t": "eliminate",
-    "start": 54.6667,
-    "end": 55.0867,
-    "seg": 15
-   },
-   {
-    "t": "the",
-    "start": 55.0867,
-    "end": 55.3467,
-    "seg": 15
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 55.3467,
-  "end": 56.2067,
-  "text": "demand, but you",
-  "woerter": [
-   {
-    "t": "demand,",
-    "start": 55.3467,
-    "end": 55.6267,
-    "seg": 15
-   },
-   {
-    "t": "but",
-    "start": 55.6867,
-    "end": 55.9067,
-    "seg": 15
-   },
-   {
-    "t": "you",
-    "start": 55.9067,
-    "end": 56.2067,
-    "seg": 15
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 56.2067,
-  "end": 56.9267,
-  "text": "have an ego.",
-  "woerter": [
-   {
-    "t": "have",
-    "start": 56.2067,
-    "end": 56.4267,
-    "seg": 15
-   },
-   {
-    "t": "an",
-    "start": 56.4267,
-    "end": 56.6467,
-    "seg": 15
-   },
-   {
-    "t": "ego.",
-    "start": 56.6467,
-    "end": 56.9267,
-    "seg": 15
-   }
-  ],
-  "grund": "satz"
- },
- {
-  "start": 57.7867,
-  "end": 58.6667,
-  "text": "You're human.",
-  "woerter": [
-   {
-    "t": "You're",
-    "start": 57.7867,
-    "end": 58.2467,
-    "seg": 16
-   },
-   {
-    "t": "human.",
-    "start": 58.2467,
-    "end": 58.6667,
-    "seg": 16
-   }
-  ],
-  "grund": "satz"
- },
- {
-  "start": 59.1867,
-  "end": 59.8467,
-  "text": "It's going",
-  "woerter": [
-   {
-    "t": "It's",
-    "start": 59.1867,
-    "end": 59.7067,
-    "seg": 16
-   },
-   {
-    "t": "going",
-    "start": 59.7067,
-    "end": 59.8467,
-    "seg": 16
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 59.8467,
-  "end": 60.4467,
-  "text": "to exist.",
-  "woerter": [
-   {
-    "t": "to",
-    "start": 59.8467,
-    "end": 60.1267,
-    "seg": 16
-   },
-   {
-    "t": "exist.",
-    "start": 60.1267,
-    "end": 60.4467,
-    "seg": 16
-   }
-  ],
-  "grund": "satz"
- },
- {
-  "start": 60.5667,
-  "end": 61.1467,
-  "text": "So the only",
-  "woerter": [
-   {
-    "t": "So",
-    "start": 60.5667,
-    "end": 60.6667,
-    "seg": 17
-   },
-   {
-    "t": "the",
-    "start": 60.6667,
-    "end": 60.8067,
-    "seg": 17
-   },
-   {
-    "t": "only",
-    "start": 60.8067,
-    "end": 61.1467,
-    "seg": 17
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 61.1467,
-  "end": 61.5267,
-  "text": "place you're",
-  "woerter": [
-   {
-    "t": "place",
-    "start": 61.1467,
-    "end": 61.3667,
-    "seg": 17
-   },
-   {
-    "t": "you're",
-    "start": 61.3667,
-    "end": 61.5267,
-    "seg": 17
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 61.5267,
-  "end": 61.9067,
-  "text": "going to find",
-  "woerter": [
-   {
-    "t": "going",
-    "start": 61.5267,
-    "end": 61.5867,
-    "seg": 17
-   },
-   {
-    "t": "to",
-    "start": 61.5867,
-    "end": 61.7667,
-    "seg": 17
-   },
-   {
-    "t": "find",
-    "start": 61.7667,
-    "end": 61.9067,
-    "seg": 17
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 61.9067,
-  "end": 63.9867,
-  "text": "that is",
-  "woerter": [
-   {
-    "t": "that",
-    "start": 61.9067,
-    "end": 62.3467,
-    "seg": 17
-   },
-   {
-    "t": "is",
-    "start": 62.3467,
-    "end": 63.9867,
-    "seg": 17
-   }
-  ],
-  "grund": "stille"
- },
- {
-  "start": 63.9867,
-  "end": 65.4267,
-  "text": "you could say",
-  "woerter": [
-   {
-    "t": "you",
-    "start": 63.9867,
-    "end": 64.9267,
-    "seg": 17
-   },
-   {
-    "t": "could",
-    "start": 64.9267,
-    "end": 65.1867,
-    "seg": 17
-   },
-   {
-    "t": "say",
-    "start": 65.1867,
-    "end": 65.4267,
-    "seg": 17
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 65.4267,
-  "end": 66.1667,
-  "text": "from within,",
-  "woerter": [
-   {
-    "t": "from",
-    "start": 65.4267,
-    "end": 65.7667,
-    "seg": 17
-   },
-   {
-    "t": "within,",
-    "start": 65.7667,
-    "end": 66.1667,
-    "seg": 17
-   }
-  ],
-  "grund": "abschnitt"
- },
- {
-  "start": 66.2867,
-  "end": 66.7067,
-  "text": "that you give",
-  "woerter": [
-   {
-    "t": "that",
-    "start": 66.2867,
-    "end": 66.3467,
-    "seg": 18
-   },
-   {
-    "t": "you",
-    "start": 66.3467,
-    "end": 66.5467,
-    "seg": 18
-   },
-   {
-    "t": "give",
-    "start": 66.5467,
-    "end": 66.7067,
-    "seg": 18
-   }
-  ],
-  "grund": "voll"
- },
- {
-  "start": 66.7067,
-  "end": 67.7267,
-  "text": "it to yourself,",
-  "woerter": [
-   {
-    "t": "it",
-    "start": 66.7067,
-    "end": 66.8267,
-    "seg": 18
-   },
-   {
-    "t": "to",
-    "start": 66.8267,
-    "end": 67.1067,
-    "seg": 18
-   },
-   {
-    "t": "yourself,",
-    "start": 67.1067,
-    "end": 67.7267,
-    "seg": 18
-   }
-  ],
-  "grund": "stille"
- },
- {
-  "start": 67.9867,
-  "end": 69.3467,
+  "start": 48.8667,
+  "end": 50.2134,
   "text": "but you're only",
   "woerter": [
    {
     "t": "but",
-    "start": 67.9867,
-    "end": 68.8067,
+    "start": 48.8667,
+    "end": 49.6734,
     "seg": 18
    },
    {
     "t": "you're",
-    "start": 68.8067,
-    "end": 69.1667,
+    "start": 49.6734,
+    "end": 50.0334,
     "seg": 18
    },
    {
     "t": "only",
-    "start": 69.1667,
-    "end": 69.3467,
+    "start": 50.0334,
+    "end": 50.2134,
     "seg": 18
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 69.3467,
-  "end": 69.7067,
+  "start": 50.2134,
+  "end": 50.5734,
   "text": "going to get",
   "woerter": [
    {
     "t": "going",
-    "start": 69.3467,
-    "end": 69.4667,
+    "start": 50.2134,
+    "end": 50.3334,
     "seg": 18
    },
    {
     "t": "to",
-    "start": 69.4667,
-    "end": 69.5867,
+    "start": 50.3334,
+    "end": 50.4534,
     "seg": 18
    },
    {
     "t": "get",
-    "start": 69.5867,
-    "end": 69.7067,
+    "start": 50.4534,
+    "end": 50.5734,
     "seg": 18
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 69.7067,
-  "end": 70.6667,
+  "start": 50.5734,
+  "end": 51.5334,
   "text": "that from God,",
   "woerter": [
    {
     "t": "that",
-    "start": 69.7067,
-    "end": 70.1267,
+    "start": 50.5734,
+    "end": 50.9934,
     "seg": 18
    },
    {
     "t": "from",
-    "start": 70.1267,
-    "end": 70.3267,
+    "start": 50.9934,
+    "end": 51.1934,
     "seg": 18
    },
    {
     "t": "God,",
-    "start": 70.3267,
-    "end": 70.6667,
+    "start": 51.1934,
+    "end": 51.5334,
     "seg": 18
    }
   ],
   "grund": "abschnitt"
  },
  {
-  "start": 70.6667,
-  "end": 71.7467,
+  "start": 51.5334,
+  "end": 52.6134,
   "text": "because that's",
   "woerter": [
    {
     "t": "because",
-    "start": 70.6667,
-    "end": 70.9667,
+    "start": 51.5334,
+    "end": 51.8334,
     "seg": 19
    },
    {
     "t": "that's",
-    "start": 70.9667,
-    "end": 71.7467,
+    "start": 51.8334,
+    "end": 52.6134,
     "seg": 19
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 71.7467,
-  "end": 72.4267,
+  "start": 52.6134,
+  "end": 53.2934,
   "text": "the cleanest",
   "woerter": [
    {
     "t": "the",
-    "start": 71.7467,
-    "end": 72.0067,
+    "start": 52.6134,
+    "end": 52.8734,
     "seg": 19
    },
    {
     "t": "cleanest",
-    "start": 72.0067,
-    "end": 72.4267,
+    "start": 52.8734,
+    "end": 53.2934,
     "seg": 19
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 72.4267,
-  "end": 73.7867,
+  "start": 53.2934,
+  "end": 54.6534,
   "text": "expression of",
   "woerter": [
    {
     "t": "expression",
-    "start": 72.4267,
-    "end": 72.9867,
+    "start": 53.2934,
+    "end": 53.8534,
     "seg": 19
    },
    {
     "t": "of",
-    "start": 72.9867,
-    "end": 73.7867,
+    "start": 53.8534,
+    "end": 54.6534,
     "seg": 19
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 73.7867,
-  "end": 74.3867,
+  "start": 54.6534,
+  "end": 55.2534,
   "text": "love.",
   "woerter": [
    {
     "t": "love.",
-    "start": 73.7867,
-    "end": 74.2267,
+    "start": 54.6534,
+    "end": 55.0934,
     "seg": 19
    }
   ],
   "grund": "satz"
  },
  {
-  "start": 75.4467,
-  "end": 76.1667,
+  "start": 56.3134,
+  "end": 57.0334,
   "text": "And humans are",
   "woerter": [
    {
     "t": "And",
-    "start": 75.4467,
-    "end": 75.6067,
+    "start": 56.3134,
+    "end": 56.4734,
     "seg": 20
    },
    {
     "t": "humans",
-    "start": 75.6067,
-    "end": 75.8467,
+    "start": 56.4734,
+    "end": 56.7134,
     "seg": 20
    },
    {
     "t": "are",
-    "start": 75.8467,
-    "end": 76.1667,
+    "start": 56.7134,
+    "end": 57.0334,
     "seg": 20
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 76.1667,
-  "end": 76.8667,
+  "start": 57.0334,
+  "end": 57.7334,
   "text": "not capable",
   "woerter": [
    {
     "t": "not",
-    "start": 76.1667,
-    "end": 76.5067,
+    "start": 57.0334,
+    "end": 57.3734,
     "seg": 20
    },
    {
     "t": "capable",
-    "start": 76.5067,
-    "end": 76.8667,
+    "start": 57.3734,
+    "end": 57.7334,
     "seg": 20
    }
   ],
   "grund": "voll"
  },
  {
-  "start": 76.8667,
-  "end": 77.4667,
+  "start": 57.7334,
+  "end": 58.3334,
   "text": "of that.",
   "woerter": [
    {
     "t": "of",
-    "start": 76.8667,
-    "end": 77.1067,
+    "start": 57.7334,
+    "end": 57.9734,
     "seg": 20
    },
    {
     "t": "that.",
-    "start": 77.1067,
-    "end": 77.3067,
+    "start": 57.9734,
+    "end": 58.1734,
     "seg": 20
    }
   ],

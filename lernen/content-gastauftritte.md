@@ -1539,3 +1539,43 @@ aufgeweicht. Seine Freigabe vom 23.10. war ausdrücklich ein Test
 Tests liegt jetzt vor: es geht nicht durch, auch nicht bei 55 s.
 
 → betrifft: alle Content-Agenten, youtube-manager, thumbnails
+
+## 23.11. — zwei Fallen beim Wiederaufsetzen: der leere Container und das wandernde Fenster
+
+**Der Container war neu.** Nach ein paar Tagen Pause fehlten: alle Python-Pakete
+(`av`, `imageio-ffmpeg`, `numpy`), **alle `video/shorts/*.mp4`**, das Outro
+`video/marke/ynb-outro-9x16.mov` und die Musikdatei im Scratchpad — alles
+gitignoriert oder im Scratchpad, also nicht im Repo. Drei Läufe sind daran
+gescheitert, bevor es auffiel.
+
+**Die Reihenfolge, die das abfängt**, bevor der erste Renderlauf startet:
+`pip install av imageio-ffmpeg numpy`, Outro aus Drive
+`1kLsW8GjTWR-X4_02r7yqWuRUtCa6h5aX` (steht in `video/marke/HERKUNFT.md`),
+Musik aus Drive `19SBTcagOyPMb7gVwAYm250aF0wjKHQ21` („Kopie von The
+Irrepressibles - In This Shirt.mp3", 335,02 s) — **die Drive-ID der Musik
+stand nirgends**, ich musste sie über die Drive-Suche wiederfinden. Sie steht
+jetzt in `video/shorts/sutcliffe-dreizeilen.auftrag.json`.
+
+**Und der Befund, der Schnitte unbrauchbar macht, wenn man ihn übersieht:
+`master_schnitt.py` liefert nicht zweimal dasselbe Fenster.** Derselbe Aufruf
+(`--start 6404.99`) gab am 17.11. eine Datei ab Master **6404,99**, am 23.11.
+eine ab Master **6403,99** — der Schnitt beginnt am letzten Schlüsselbild vor
+dem gewünschten Start, und welches das ist, hängt davon ab, wo der Decoder
+aufsetzt. **Alle Fensterzeiten aus einem alten Protokoll liegen damit um
+1,00 s daneben.** Nachgemessen an der Stille vor „the three lines": 29,92–30,05
+statt 28,92–29,05.
+
+**Regel: nach jedem neuen Fensterlauf den Versatz an einem Wort nachmessen,
+bevor irgendeine alte Zeit übernommen wird.** Die Zeile, die
+`master_schnitt.py` ausgibt („Datei beginnt bei Master …"), sagt es auch —
+sie gehört gelesen, nicht überscrollt.
+
+**Zweitens zum Sprungschnitt:** die neue Naht bei 48,87 s liegt mitten in
+einer Einstellung. `schnittgrenzen.py` misst dort **8,9 gegen Ruhepegel 1,94**
+— echte Kamerawechsel liegen in diesem Material bei **40,6–43,1**. Die Zahl
+ist damit brauchbar als Maß für *Sichtbarkeit einer Naht*: unter 10 ein
+Sprung innerhalb derselben Kamera, über 40 ein Wechsel. Ein Zwischenschnitt
+hätte es verdeckt, geht aber nicht: Bild- und Tonlänge müssen gleich bleiben,
+sonst läuft die Lippensynchronität auseinander.
+
+→ betrifft: alle Content-Agenten

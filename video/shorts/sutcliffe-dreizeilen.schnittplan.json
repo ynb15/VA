@@ -1,8 +1,8 @@
 {
  "quelle": "/tmp/claude-0/-home-user-VA/65c8907a-4673-5364-9c95-524390774a4e/scratchpad/dreizeilen/fenster.mp4",
- "bild": [[28.9333, 106.6]],
- "ton": [[28.9333, 106.6]],
+ "bild": [[29.9333, 78.8], [97.9333, 107.6]],
+ "ton":  [[29.9333, 78.8], [97.9333, 107.6]],
  "tonblende_s": 0.02,
  "bilder_je_sekunde": 30,
- "hinweis": "Zweite Fassung, seine Ansage vom 17.11.: 'Anfang rauscutten und dann mit The Three Lines every man starten'. Anfang jetzt bei Fenster 28,9333 (= alter Clip 10,5333), in der gemessenen Stille 10,51-10,66 zwischen 'are' und 'the'; 0,13 s Vorlauf vor dem ersten Wort. Ende unveraendert 106,6. 2882 Bilder."
+ "hinweis": "Vierte Fassung, seine Ansage vom 23.11.: unter 60 Sekunden, sonst sperrt In This Shirt. Herausgeschnitten ist Clip2 48,87-68,00 ('If you have kids ... that you give it to yourself'). Beide Schnittpunkte in gemessener Stille: Fenster 78,68-78,86 nach '100% clean.', Fenster 97,56-98,40 vor 'but you're only going to get that from God'. 1466 + 290 = 1756 Bilder = 58,5333 s. ACHTUNG Versatz: dieses Fenster beginnt bei Master 6403,99, das vom 17.11. bei 6404,99 - alle Fensterzeiten liegen also 1,00 s spaeter als in den alten Protokollen."
 }

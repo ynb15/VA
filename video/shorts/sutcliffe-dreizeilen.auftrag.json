@@ -1,44 +1,49 @@
 {
  "name": "Sutcliffe-Folge - die drei Zeilen, die jeder Mann hoeren will",
  "datei": "YNB Podcast David Sutcliffe Lines.mp4 (ohne Musik), dazu zwei Musikfassungen 'ab 0-59' und 'ab 1-50'",
- "stand": "2026-11-17 - dritte Fassung: Tempo 1,2, Musik faedet ins Outro hinein, zwei Einsatzstellen zur Wahl",
+ "stand": "2026-11-23 - vierte Fassung: unter 60 Sekunden gekuerzt, 53,06 s",
  "wer_spricht": "Er erzaehlt die Stelle (von Chris Williamson uebernommen), Sutcliffe hakt nach und ordnet sie ein.",
  "quelle": {
   "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
   "master_titel": "YNB Podcast: David Sutcliffe",
   "hinweis_papierkorb": "Die Datei liegt im Drive-Papierkorb, beantwortet aber weiter Bereichsanfragen (HTTP 206). video/drive_fernzugriff.py kommt damit zurecht.",
   "fenster_master_s": [
-   6404.99,
+   6403.99,
    6545.0
   ],
-  "hinweis": "In einem Stueck geholt, 368 MB ueber 46 Bereichsanfragen. 1920x1080, 30 fps."
+  "hinweis": "In einem Stueck geholt, 368 MB ueber 46 Bereichsanfragen. 1920x1080, 30 fps.",
+  "versatz_warnung": "Dieses Fenster beginnt bei Master 6403,99, das vom 17.11. bei 6404,99. master_schnitt.py setzt den Anfang auf das letzte Schluesselbild vor dem gewuenschten Start, und das faellt nicht bei jedem Lauf gleich aus. Alle Fensterzeiten dieser Fassung liegen also 1,00 s spaeter als in den Protokollen vom 17.11. Nachgemessen an der Stille vor 'the three lines': 29,92-30,05 statt 28,92-29,05."
  },
  "fundstelle": {
   "veroeffentlicht": "01:39:55-01:41:18 (Video frNOUgxE0IM, Transkript video/transkripte/frNOUgxE0IM.transkript.md, Stelle bei [01:40:08])",
   "wie_gefunden": "Erst im veroeffentlichten Transkript, dann mit einer Probe bei Master 6350-6420 lokal nachgemessen."
  },
  "schnitt": {
-  "von_bis_fenster_s": [
-   28.9333,
-   106.6
+  "stuecke_fenster_s": [
+   [
+    29.9333,
+    78.8
+   ],
+   [
+    97.9333,
+    107.6
+   ]
   ],
-  "von_bis_master_s": [
-   6433.92,
-   6511.59
+  "bilder": [
+   1466,
+   290
   ],
-  "dauer_roh_s": 77.6667,
-  "bilder": 2330,
-  "werkzeug": "video/schnitt_bauen.py (ein Stueck, Bild und Ton gleich)",
-  "warum_anfang": "Seine Ansage: 'Anfang rauscutten und dann mit The Three Lines every man starten'. Weg sind 'inspired by Chris Williamson, he once shared something that I just can't stop thinking about, which are'. Zwischen 'are' und 'the' liegt eine gemessene Luecke von 10,31 bis 10,66 (alte Clipzeit), der Boden bei -80 dB; geschnitten bei 10,5333, also 0,13 s vor dem ersten Laut von 'the'. Whisper hatte 'the' auf 10,06 gesetzt - 0,6 s zu frueh; ein Schnitt auf den Whisper-Wert haette das 'are' davor stehen lassen.",
-  "warum_ende": "Nach 'humans are not capable of that' liegt die Luecke bei 106,16-107,02, vor Sutcliffes 'How did you get to this conclusion'; geschnitten bei 106,60.",
+  "dauer_roh_s": 58.5333,
+  "werkzeug": "video/schnitt_bauen.py (zwei Stuecke, Bild und Ton gleich)",
+  "heraus": "Clip2 48,87-68,00: 'If you have kids, you're going to want your kid to be successful. And you can do your best to eliminate the demand, but you have an ego. You're human. It's going to exist. So the only place you're going to find that is, you could say, from within, that you give it to yourself,' - 19,13 s.",
+  "warum_diese_stelle": "Der Satz davor endet auf '100% clean.', der danach faengt mit 'but you're only going to get that from God' an - das liest sich als ein Satz. Beide Schnittpunkte liegen in gemessener Stille: Fenster 78,68-78,86 (0,18 s) und 97,56-98,40 (0,84 s).",
   "kamerawechsel_clipzeit_s": [
    8.6667,
    15.6667,
-   35.1667,
-   56.8,
-   61.6667
+   35.1667
   ],
-  "wie_gemessen": "video/schnittgrenzen.py am NEUEN Clip nachgemessen: alle fuenf Grenzen sitzen auf dem Bild genau (0 Bilder Versatz), Unterschiede 40,6 bis 43,1 gegen Ruhepegel 1,03 bis 1,55."
+  "naht": "Die Naht bei 48,8667 ist KEIN Kamerawechsel: schnittgrenzen.py misst dort Unterschied 8,9 gegen Ruhepegel 1,94, echte Wechsel liegen bei 40,6-43,1. Es ist also ein Sprungschnitt innerhalb derselben Kamera - Kopfhaltung und Haende springen, Hintergrund und Rahmen bleiben. Dazu kommen 36 px Kastenunterschied (680 vs 644). Sichtbar, aber ohne Ausweichbild nicht zu vermeiden: ein Zwischenschnitt wuerde die Lippensynchronitaet brechen.",
+  "wie_gemessen": "video/schnittgrenzen.py: alle drei geerbten Grenzen bestaetigt, 0 Bilder Versatz."
  },
  "bild": {
   "ausgabe": "2160x3840",
@@ -59,32 +64,28 @@
   "warum_tempo": "Zweite Fassung lief auf 1,15 - dem Vorgabewert des Renderers. Seine Rueckfrage: 'Was ist das fuer eine Geschwindigkeit?'. Alle fuenf uebrigen Sutcliffe-Shorts laufen auf 1,2; das ist der Wert der Reihe."
  },
  "text": {
-  "einblendungen": 84,
-  "quelle": "whisper medium ueber den ersten Schnitt, danach um 10,5333 s verschoben und die ersten zehn Einblendungen verworfen. Die erste Einblendung steht ab 0,0.",
-  "handkorrekturen": [
-   "'Mr. X,' ganz aus der Einblendung genommen - zwei Durchlaeufe widersprechen sich ('Mr. X' / 'Mr. Axe') und keiner ist sicher. Lieber kein Wort als ein falscher Name.",
-   "'sad best' -> 'said best'",
-   "'anything like this.' - das 'this.' hatte die MIN_HART-Regel verworfen, von Hand wieder angehaengt",
-   "'100 %' -> '100%'"
-  ]
+  "einblendungen": 63,
+  "quelle": "aus den 84 der dritten Fassung uebernommen: 21 verworfen, der Rest um 19,1333 s verschoben."
  },
  "ton": {
-  "musik": "The Irrepressibles - In This Shirt, 3 dB unter der Stimme (Stimme -31,6 dB). Zwei Einsatzstellen zur Wahl.",
+  "musik": "The Irrepressibles - In This Shirt, 3 dB unter der Stimme (Stimme -32,1 dB). Zwei Einsatzstellen zur Wahl: 0:59,68 (Bett -24,1 dB) und 1:50,62 (Bett -24,2 dB).",
   "einsatz_a": "0:59,68 - gemessener Einsatz (+16,5 dB im Hochband in 60 ms). Bett -11,0 dB -> Pegel -23,6 dB.",
   "einsatz_b": "1:50,62 - gemessener Einsatz (+16,8 dB). Bett -10,7 dB -> Pegel -23,9 dB.",
   "warum_nicht_mehr_23_25": "Seine Rueckmeldung: 'irgendwie harmoniert das nicht'. 23,25 ist seine eigene Vorgabe vom 22.10. und sitzt sauber auf einem Taktanfang (Raster 2,8-3,1 s), aber dort baut der Song erst auf: das Hochband liegt bei -26 dB gegen -17 dB im vollen Teil ab Sekunde 58. Unter einem harten Einstieg wie 'The three lines' klingt das duenn. Die beiden neuen Stellen liegen im vollen Teil.",
   "ausblende_s": 4.21,
   "ins_outro_hinein": "Seine Ansage: 'dann sage ich dir immer wieder, dass die Musik ausfaden soll ins Outro hinein.' Dafuer wird das Bett jetzt erst NACH dem Outro-Anhaengen unter die ganze Datei gelegt, und musik_drunter.py hat einen neuen Schalter --outro SEKUNDEN: er schaltet den Steuerton des Sidechain-Kompressors fuer die letzten N Sekunden stumm. Ohne ihn drueckt der eigene Ton des Outros (Mittel -23,8 dB, Spitze -7,0 dB) das Bett weg - gemessen 2,7 dB Unterschied: Bett im Outro -40,2 dB ohne Schalter, -37,5 dB mit.",
   "sperrvorgeschichte": "In This Shirt hat am 22.10. eine weltweite Sperre ausgeloest (Video 5nl--61ZBBI, Rechteinhaber FUGA). Die Fassung ohne Musik traegt darum den Grundnamen.",
-  "outro": "video/outro_anhaengen.py --kopie, 4,21 s - diesmal VOR der Musik."
+  "outro": "video/outro_anhaengen.py --kopie, 4,21 s - diesmal VOR der Musik.",
+  "musik_drive_id": "19SBTcagOyPMb7gVwAYm250aF0wjKHQ21 ('Kopie von The Irrepressibles - In This Shirt.mp3', 335,02 s) - am 23.11. neu geholt, weil der Container geleert war."
  },
  "laenge": {
-  "ohne_outro_s": 64.77,
-  "mit_outro_s": 68.98
+  "ohne_outro_s": 48.78,
+  "mit_outro_s": 53.06
  },
  "ortscheck": "video/ortscheck.py sauber - kein Hinweis auf den Wohnort.",
  "offen": [
   "Dateiname: Stichwort 'Lines' oder 'Enough'?",
   "'Mr. X' fehlt weiter in der Einblendung - soll der Name rein, und wie schreibt er sich?"
- ]
+ ],
+ "warum_unter_60": "Seine Ansage vom 23.11.: 'wir muessen das Ganze doch noch mal unter 60 Sekunden bekommen, weil sonst wird der Song In This Shirt gesperrt.' Anlass ist die Sperre von jcCd7KDcPlk am 17.11. ACHTUNG, gemessener Widerspruch: der Rob-Paddock-Short mit demselben Song laeuft 59,65 s und das Bett 55 s - unter 60 also, und eine Freigabe ist fuer ihn trotzdem nicht belegt. Belegt sind zwei Uploads mit In This Shirt und zwei weltweite Sperren. Die 60 Sekunden sind seine Entscheidung, keine gemessene Schwelle."
 }
