@@ -9675,3 +9675,21 @@ aus meiner eigenen Merkliste vorgelesen habe.
 gemeldet wird, wird der Faden angesehen. Eine Merkliste ist ein Gedächtnis, kein
 Zustand. Das ist derselbe Griff wie Suchvorschau statt Faden und Postfach statt
 Kalender — nur eine Stufe weiter innen.
+
+## FRISTEN AUSLÖSEN IST VERÖFFENTLICHEN FÜHREN — 24.11.2026
+
+Am 16.11. hat er gesagt: *„ich würde das jetzt einmal ändern, dass ich dir
+einfach Bescheid gebe, was wann veröffentlicht wird, weil es nicht so viel Sinn
+macht, wenn du das Ganze führst."* Ich habe darauf die **Vorratsmeldung**
+abgeschaltet und das **Auslösen der Fristen weiterlaufen lassen** — als wäre das
+zweierlei. Ist es nicht: wer T−10 auslöst, hat entschieden, dass die Folge am
+04.12. läuft.
+
+Am 23.11. habe ich Goodell T−10 an content-cinematic gegeben, der Agent hat sich
+geweigert und zurückgeschrieben: *„Goodell freigeben, oder Alfred sagen, dass er
+nichts mehr schickt."* **Der Agent hatte recht.**
+
+**Regel:** Eine Frist aus dem Plan wird nur ausgelöst, wenn **er** die Folge
+angesagt hat. Ohne seine Ansage legt die Plankontrolle die Frist vor — als Zahl,
+im Morgenbericht, mit der Frage. Sie löst nicht aus. Das gilt für jede Folge,
+nicht nur für Defina.

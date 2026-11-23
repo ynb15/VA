@@ -11,3 +11,21 @@ erster Schritt bleibt die Tonfrage.
 
 **Keine Zeile im Chat** — die Sinatra-Entscheidung kostet nicht die Nacht, weil
 der Nudge den blockierten Teil freimacht. Sie steht im Morgenbericht.
+
+- **00:40** · content-cinematic · **weiter blockiert**, und zwar zu Recht · Kontext 452k/1000k · neue Commits: keine · Maßnahme: **gemeldet, kein zweiter Nudge**
+
+Der Agent hat auf meinen Nudge geantwortet, indem er den Status geändert hat:
+*„Goodell wartet auf Deine Freigabe; Alfred schickt weiter Druck"* — und als
+nötige Handlung: *„Goodell freigeben, oder Alfred sagen, dass er nichts mehr
+schickt."*
+
+**Er hat recht und ich hatte unrecht.** Am 16.11. hat er gesagt: *„ich würde das
+jetzt einmal ändern, dass ich dir einfach Bescheid gebe, was wann veröffentlicht
+wird, weil es nicht so viel Sinn macht, wenn du das Ganze führst."* Ich habe
+daraufhin die Vorratsmeldung aus `bin/plan-pruefen.py` genommen, **das
+Auslösen der Fristen aber weiterlaufen lassen** — und heute Mittag Goodell T−10
+ausgelöst, ohne dass er die Folge freigegeben hat. Der Agent hat die Lücke
+gesehen, ich nicht.
+
+**Kein zweiter Nudge.** Das gehört in den Morgenbericht, und die Frage ist
+seine: Goodell 04.12. freigeben oder nicht.
