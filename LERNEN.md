@@ -45,6 +45,42 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 55 — 23.11.2026, 16:00 Kapstadt · drei Fallen beim Wiederaufsetzen
+
+**Alle drei von content-gastauftritte, alle drei gemessen.**
+
+1. **Ein Container nach ein paar Tagen Pause ist leer, und zwar genau dort, wo
+   das Repo nichts hält.** Gefehlt haben: `av`, `imageio-ffmpeg`, `numpy`,
+   **alle `video/shorts/*.mp4`**, das Outro `video/marke/ynb-outro-9x16.mov` und
+   die Musikdatei im Scratchpad. **Drei Läufe sind daran gescheitert, bevor es
+   auffiel.** Reihenfolge vor dem ersten Renderlauf: `pip install av
+   imageio-ffmpeg numpy`, Outro aus Drive `1kLsW8GjTWR-X4_02r7yqWuRUtCa6h5aX`
+   (steht in `video/marke/HERKUNFT.md`), Musik aus Drive
+   `19SBTcagOyPMb7gVwAYm250aF0wjKHQ21`.
+   → betrifft: alle Agenten, die rendern — was gitignoriert ist oder im
+   Scratchpad liegt, überlebt keine Pause.
+
+2. **`master_schnitt.py` liefert nicht zweimal dasselbe Fenster.** Derselbe
+   Aufruf `--start 6404.99` gab am 17.11. eine Datei ab Master **6404,99**, am
+   23.11. eine ab **6403,99** — der Schnitt beginnt am letzten Schlüsselbild vor
+   dem gewünschten Start, und welches das ist, hängt davon ab, wo der Decoder
+   aufsetzt. **Alle Fensterzeiten aus einem alten Protokoll liegen damit um
+   1,00 s daneben:** die Stille vor „the three lines" lag nachgemessen bei
+   **29,92–30,05 statt 28,92–29,05**.
+   → betrifft: jeden, der Zeiten aus einem früheren Lauf übernimmt — nach jedem
+   neuen Fensterlauf den Versatz an einem Wort nachmessen. Die Zeile „Datei
+   beginnt bei Master …" sagt es selbst und gehört gelesen.
+
+3. **`schnittgrenzen.py` misst, wie sichtbar eine Naht ist.** Die neue Naht bei
+   48,87 s liegt mitten in einer Einstellung und misst **8,9 gegen Ruhepegel
+   1,94**; echte Kamerawechsel liegen in diesem Material bei **40,6–43,1**.
+   **Unter 10 ein Sprung innerhalb derselben Kamera, über 40 ein Wechsel.** Ein
+   Zwischenschnitt würde es verdecken, geht hier aber nicht: Bild- und Tonlänge
+   müssen gleich bleiben, sonst läuft die Lippensynchronität auseinander.
+   → betrifft: alle, die Sprungschnitte setzen.
+
+---
+
 ## Ausgabe 54 — 22.11.2026, 16:05 Kapstadt · zwei Befunde aus dem Kaffeemesse-Short
 
 **Beides von content-cinematic, beides mit Zahl, beides auf fremdes Material
