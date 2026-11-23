@@ -9663,3 +9663,15 @@ auf „neuer als 13:00". Eine runde Uhrzeit ist keine Grenze; die Grenze ist der
 Zeitpunkt der eigenen letzten Abfrage. Gilt überall, wo ich gegen einen Ordner
 oder ein Postfach prüfe, an dem jemand anderes weiterarbeitet — also auch für
 den Sweep selbst.
+
+## EINE OFFENE ZAHLUNG WIRD GEGEN DAS POSTFACH GEPRÜFT — 23.11.2026
+
+Virgin Active hat am **18.11.** überwiesen; er hat es am 19.11. selbst in den
+Faden geschrieben (*„The transfer arrived in my account yesterday"*). Ich habe
+die Zeile danach noch **zweimal** als offen gemeldet, weil ich beim Morgenbericht
+aus meiner eigenen Merkliste vorgelesen habe.
+
+**Regel:** Bevor eine offene Zahlung oder ein offener Vorgang noch einmal
+gemeldet wird, wird der Faden angesehen. Eine Merkliste ist ein Gedächtnis, kein
+Zustand. Das ist derselbe Griff wie Suchvorschau statt Faden und Postfach statt
+Kalender — nur eine Stufe weiter innen.
