@@ -29,3 +29,4 @@ gesehen, ich nicht.
 
 **Kein zweiter Nudge.** Das gehört in den Morgenbericht, und die Frage ist
 seine: Goodell 04.12. freigeben oder nicht.
+- **03:40** · content-cinematic · weiter blockiert, wartet auf seine Freigabe · neue Commits: keine · Maßnahme: keine (kein zweiter Nudge aus demselben Grund)
