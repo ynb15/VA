@@ -1,10 +1,20 @@
 # Kaffeemesse Kapstadt, 21.11. — Short
 
-**Geliefert:** `YNB Kapstadt Kaffeemesse.mp4` · 57,67 s · 1080×1920 · 30 fps.
+**Geliefert:** `YNB Kapstadt Kaffeemesse.mp4` · 63,07 s · 1080×1920 · 30 fps.
 
 **Stand 22.11., zweite Fassung:** Logo-Outro raus, `IMG_4179.MOV` komplett
 als Schlusseinstellung. Das Wasserzeichen bleibt — seine Ansage galt dem
 Outro-Abspann.
+
+**Stand 24.11., vierte Fassung:** Eröffnung vorangestellt und Einblendung.
+`1h2H7sbofWgCPUy9eGk2UiTHmhq5EoFT6` (8,01 s, Kaffeetisch im Freien vor dem
+Berg) läuft komplett als erste Einstellung, auf Tempo 1,5 also **5,37 s**.
+Darüber die Kopfzeile **„CAPE TOWN | COFFEE | CONVENTION"**, drei Zeilen,
+4,5 s mit Ein- und Ausblendung — schwarzes Feld mit runden Ecken, weiße
+Schrift, also die Form, die er am 21.10. bestellt hat. Erzeugt mit
+`kopfzeile_ass()` aus `video/shorts-render.py`, Feld 705×396 px, Mitte bei
+68 % der Höhe. Schrift ist **Inter Black**; Eveleth liegt nicht im Container
+und hat, anders als die Outros, keine Drive-Kennung in `.gitignore`.
 
 Dateiname ist geraten — das Schema `YNB Podcast <Gast> <Stichwort>` passt hier
 nicht, weil es keine Folge ist.
@@ -25,7 +35,7 @@ einmal verwendet.
 
 ## Schnitt
 
-**31 Einstellungen, Tempo 1,5** wie angesagt. Aus 86,4 s Rohmaterial werden
+**32 Einstellungen, Tempo 1,5** wie angesagt. Aus 86,4 s Rohmaterial werden
 57,4 s. Jede Einstellung ist über die Länge auf ganze Frames gerechnet, das
 Fenster liegt mittig im Clip, damit der Ruck beim Start und beim Stopp der
 Aufnahme draußen bleibt. Kürzeste Einstellung 1,1 s, längste 2,3 s — über der
@@ -74,23 +84,27 @@ nichts — keine Kompression, kein Limiter.
 **Frank Sinatra — „The Coffee Song"** (Ring-A-Ding-Ding!, 1961), von ihm
 geschickt. MP3 320 kbit/s, 171,15 s, −14,3 LUFS, Spitze +0,8 dBFS.
 
-**Bett ab Songsekunde 12,75**, nicht bei 0 — seine stehende Regel, und seine
+**Bett ab Songsekunde 7,37**, nicht bei 0 — seine stehende Regel, und seine
 eigenen Werte liegen im selben Bereich (In This Shirt ab 0:10, Mom's Got Work
 ab 0:20). Der Versatz ist nicht beliebig gewählt: der Song hat bei **66,25 s**
 seinen lautesten Abschnitt (−12,5 bis −14,6 dBFS im Viertelsekundenraster,
 sonst −18 bis −24). Bei diesem Versatz fällt genau dieser Abschnitt auf die
 Schlusseinstellung. **Gemessen: die letzten 2,2 s liegen bei −9,2 LUFS gegen
-−15,8 LUFS im Mittel** — die Tüten knallen auf den lautesten Takt.
+−16,0 LUFS im Mittel** — die Tüten knallen auf den lautesten Takt.
+
+In der dritten Fassung lag der Versatz bei 12,75 s. Durch die 5,37 s
+Eröffnung ist er um genau diesen Betrag nach vorn gewandert, damit das Ende
+auf derselben Songstelle liegt.
 
 | | |
 |---|---|
 | Musik | +1,0 dB, Einblendung 1,0 s |
 | Ausblendung | 0,25 s, damit die Pointe nicht weggezogen wird |
 | Messe-Atmo | **13 dB unter der Musik** — Maschinen und Stimmen bleiben hörbar, drängen sich aber nicht vor |
-| Summe | **−15,8 LUFS**, Spitze **−1,0 dBFS**, LRA 5,4 LU |
+| Summe | **−16,0 LUFS**, Spitze **−0,7 dBFS** |
 
-**Die abgenommenen Shorts liegen bei −14,2 LUFS.** Die fehlenden 1,6 dB gehen
-mit einer flachen Verstärkung nicht mehr: die Spitze steht schon bei −1,0. Dafür
+**Die abgenommenen Shorts liegen bei −14,2 LUFS.** Die fehlenden 1,8 dB gehen
+mit einer flachen Verstärkung nicht mehr: die Spitze steht schon bei −0,7. Dafür
 bräuchte es einen Limiter, und das ist der Eingriff, den er am 20.10. abgelehnt
 hat. Liegt bei ihm.
 
