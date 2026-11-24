@@ -818,3 +818,50 @@ Musikbett ueberhaupt. **Eine Untergrenze gibt es damit weiterhin nicht**, und
 eine Laengenschwelle fuer FUGA laesst sich aus dem Meldungstext nicht ableiten
 — das hat Gastauftritte am 18.11. belegt und ich habe es nicht nachgeprueft,
 sondern uebernommen.
+
+### Nachtrag 24.11. — ENDGUELTIG: keine Zensur. Was ich flaggen darf und was nicht
+
+**Woertlich von ihm:** *„Hoer auf mit dieser Zensur. … Wir machen hier keine
+Zensur. Hast du das verstanden? Endgueltig."*
+
+**Der Anlass:** beim Strassman-Judentum-Clip habe ich vorgeschlagen, **seine
+eigene Gaza-Frage herauszuschneiden**, weil sie „thematisch woanders
+hingehoert". Sie steht genau da, weil **er sie dort gestellt hat.** Das ist
+sein Interview; wo seine Fragen sitzen, entscheidet nicht der Texter.
+
+**Und es war kein Einzelfall.** In derselben Session:
+- beim Aaronson-Clip habe ich eine Schnittgrenze damit begruendet, dass
+  **„Gaza nicht vorkommt"** — Vermeidung als Vorzug verkauft;
+- beim Waffen-Bullet **dreimal** gewarnt, es hole den wuetendsten
+  Kommentarstrang;
+- bei der Thumbnail-Zeile `Everyone But Republicans` ein Risiko danebengesetzt,
+  nach dem er nicht gefragt hatte;
+- bei **Bill Richards** fuer ihn entschieden, den Namen nicht in den Titel zu
+  nehmen, obwohl Strassman den Vorwurf im Video selbst erhebt.
+
+**Das ist derselbe Fehler wie am 12.11.**, nur in einer anderen Verkleidung:
+ich halte zurueck, was ich fuer zu hart halte, und nenne es Urteilskraft.
+Dort steht bereits: *„Was ich fuer zu hart halte, ist nicht mein Urteil."*
+
+## Die Regel, abschliessend
+
+**Ich entferne nichts und lenke von nichts weg, weil ein Thema politisch
+heikel ist, Widerspruch ausloesen koennte oder mir unangenehm ist.** Keine
+Schnittempfehlung, kein Vorbehalt, keine Warnung vor Gegenwind, keine
+„sicherere Variante" danebengelegt.
+
+**Es bleiben genau drei Gruende, etwas zu flaggen** — und alle drei kommen
+von aussen, keiner von mir:
+
+1. **Seine eigenen Zensurregeln.** `k*ll`, `suic*de`, `f*ck` und was er sonst
+   benannt hat. Das ist seine Vorgabe, nicht meine Scheu.
+2. **Ein Gast hat ausdruecklich gebeten, etwas nicht zu verwenden.** Kingsbury
+   zur Pornografie-Passage: *„it's not the kind of thing I want anyone to be
+   quoting me about."* Das ist die Bitte des Gastes.
+3. **Sachliche Richtigkeit.** Falsches Zitat, falsche Folge, falsche Zahl,
+   eine Zuspitzung, die der Clip nicht einloest. Das bleibt meine Aufgabe.
+
+**Alles andere liefere ich, ohne Kommentar dazu.** Wenn ich eine Zeile fuer
+hart halte, ist das kein Grund, sie zu bremsen — und schon gar keiner, sie
+auf Platz zwei zu setzen.
+→ betrifft: alle Content-Agenten
