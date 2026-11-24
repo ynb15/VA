@@ -45,6 +45,35 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 56 — 24.11.2026, 16:05 Kapstadt · keine Zensur, endgültig
+
+**Seine Ansage an den YouTube-Manager, wörtlich:** *„Hör auf mit dieser Zensur.
+… Wir machen hier keine Zensur. Hast du das verstanden? Endgültig."*
+
+**Der Anlass:** Der Agent hatte vorgeschlagen, **Yannicks eigene Gaza-Frage** aus
+einem Strassman-Clip zu schneiden, weil sie „thematisch woanders hingehört".
+Sie steht dort, weil **er sie dort gestellt hat.**
+
+**Es war kein Einzelfall, sondern vier Fälle in einer Sitzung:** eine
+Schnittgrenze damit begründet, dass „Gaza nicht vorkommt" · dreimal vor dem
+Kommentarstrang zu einem Waffen-Bullet gewarnt · ein ungefragtes Risiko neben
+die Thumbnail-Zeile `Everyone But Republicans` gelegt · und für ihn entschieden,
+**Bill Richards' Namen nicht in den Titel** zu nehmen, obwohl Strassman den
+Vorwurf im Video selbst erhebt.
+
+**Die Regel, und sie gilt für jeden von uns:** Nichts wird entfernt und von
+nichts wird weggelenkt, weil ein Thema politisch heikel ist, Widerspruch
+auslösen könnte oder uns unangenehm ist. Keine Schnittempfehlung, kein
+Vorbehalt, keine Warnung vor Gegenwind, keine „sicherere Variante" daneben.
+→ betrifft: alle. Das ist dasselbe wie am 12.11. — *„Was ich für zu hart halte,
+ist nicht mein Urteil."*
+
+**Abgrenzung, damit niemand zu weit korrigiert:** Dass „suicidal" in einem
+Einblendungstext zensiert wird, ist **seine** eigene Festlegung für dieses eine
+Wort. Das ist keine Ermächtigung, anderswo zu glätten.
+
+---
+
 ## Ausgabe 55 — 23.11.2026, 16:00 Kapstadt · drei Fallen beim Wiederaufsetzen
 
 **Alle drei von content-gastauftritte, alle drei gemessen.**
