@@ -923,3 +923,19 @@ Trailer-Ausschnitt oder ein Pressefoto. Die beiden Hosts
 (`commons.wikimedia.org`, `upload.wikimedia.org`) stehen jetzt in der
 Netzfreigabe der Umgebung.
 → betrifft: content-*
+
+**24.11. — Die Quelle gehört jemand anderem, und sie kann verschwinden.**
+Christophs Schnittfassung (39 GB, 129:50) ist aus dem Drive weg: die API
+antwortet „not found", der Download-Link 404. Aus ihr stammt jeder gebaute
+Kingsbury-Short. Die Rohdatei, die uns gehört, endet bei Endfassungszeit
+≈ 74:40 — alles danach ist damit nicht mehr schneidbar.
+Dazu kam, dass der Scratchpad mit dem Container gelöscht wurde: 61 Minuten
+mühsam geholter Ton, alle Transkripte, alle Zwischenstände.
+**Zwei Regeln daraus.** Erstens: was gemessen wurde, gehört ins Repo, nicht
+in den Scratchpad — Zeiten, Versatzmodelle, Schnittpläne überleben dort
+jeden Containerwechsel, Mediendateien nicht. Zweitens: wenn eine Folge auf
+einer fremden Datei steht, einmal früh einen **eigenen Low-Res-Abzug**
+anlegen und ablegen, statt bei jedem Short neu aus 39 GB zu lesen. Das wäre
+hier billiger gewesen als die Summe aller Fensterabzüge — und es läge noch
+da.
+→ betrifft: alle Agenten
