@@ -1,10 +1,34 @@
 # Kaffeemesse Kapstadt, 21.11. — Short
 
-**Geliefert:** `YNB Kapstadt Kaffeemesse.mp4` · 57,77 s · 1080×1920 · 30 fps.
+**Geliefert:** `YNB Kapstadt Kaffeemesse.mp4` · 55,09 s · 1080×1920 · 30 fps.
 
 **Stand 22.11., zweite Fassung:** Logo-Outro raus, `IMG_4179.MOV` komplett
 als Schlusseinstellung. Das Wasserzeichen bleibt — seine Ansage galt dem
 Outro-Abspann.
+
+**Stand 24.11., siebte Fassung:**
+
+**Die Kopfzeile ist raus.** Drei Anläufe, dreimal zu kantig — seine Worte:
+*„Die ist immer noch so Stock im Arsch, so kantig, so eckig."* Inter Black,
+dann Inter Display SemiBold, dann Inter Display Light mit Sperrung und
+durchscheinendem Feld; alle drei blieben eine Grotesk, und darum ging es.
+**Ohne ausdrückliche Bitte kommt keine Schrift zurück.**
+
+**Neuer Einstieg, drei Einstellungen:**
+
+| | Einstellung | roh | fertig |
+|---|---|---|---|
+| 1 | Eiskaffee am Tisch, er trinkt | 4,00 s | **2,47 s** |
+| 2 | **Espresso läuft aus der Maschine** (`IMG_4170`) | 2,80 s | **1,73 s** |
+| 3 | **Ticketschild, „CAPE TOWN COFFEE SHOW"** (`IMG_4143`) | 2,30 s | **1,43 s** |
+
+Die Eingangsszene war 5,17 s und ist jetzt 2,47 s: von 6,40 s roh auf 4,00 s
+gekürzt **und** vom Sondertempo 1,25 auf die 1,65 der übrigen Einstellungen
+gezogen. Damit läuft das ganze Stück auf einem Tempo, es gibt keinen
+Sonderfall mehr am Anfang.
+
+`4170` und `4143` sind aus ihren alten Plätzen (12 und 2) herausgenommen und
+stehen nur noch vorn — keine Einstellung läuft doppelt.
 
 **Stand 24.11., sechste Fassung — auf seine vier Ansagen:**
 
@@ -115,7 +139,7 @@ nichts — keine Kompression, kein Limiter.
 **Frank Sinatra — „The Coffee Song"** (Ring-A-Ding-Ding!, 1961), von ihm
 geschickt. MP3 320 kbit/s, 171,15 s, −14,3 LUFS, Spitze +0,8 dBFS.
 
-**Bett ab Songsekunde 12,67**, nicht bei 0 — seine stehende Regel, und seine
+**Bett ab Songsekunde 15,33**, nicht bei 0 — seine stehende Regel, und seine
 eigenen Werte liegen im selben Bereich (In This Shirt ab 0:10, Mom's Got Work
 ab 0:20). Der Versatz ist nicht beliebig gewählt: der Song hat bei **66,25 s**
 seinen lautesten Abschnitt (−12,5 bis −14,6 dBFS im Viertelsekundenraster,
@@ -125,15 +149,16 @@ Schlusseinstellung. **Gemessen: die letzten 2,2 s liegen bei −9,2 LUFS gegen
 
 Der Versatz wird bei jeder Fassung neu gesetzt, damit das Ende immer auf
 derselben Songstelle liegt (70,4 s): 12,75 s bei 57,7 s Länge, 7,37 s bei
-63,1 s, 16,43 s bei 54,0 s, jetzt **12,67 s bei 57,8 s**. Gemessen: letzte
-2 s bei **−9,2 LUFS** gegen **−15,8 LUFS** im Mittel, Spitze −1,1 dBFS.
+63,1 s, 16,43 s bei 54,0 s, 12,67 s bei 57,8 s, jetzt **15,33 s bei 55,1 s**.
+Gemessen: letzte 2 s bei **−9,3 LUFS** gegen **−15,6 LUFS** im Mittel,
+Spitze −0,7 dBFS.
 
 | | |
 |---|---|
 | Musik | +1,0 dB, Einblendung 1,0 s |
 | Ausblendung | 0,25 s, damit die Pointe nicht weggezogen wird |
 | Messe-Atmo | **13 dB unter der Musik** — Maschinen und Stimmen bleiben hörbar, drängen sich aber nicht vor |
-| Summe | **−15,8 LUFS**, Spitze **−1,1 dBFS** |
+| Summe | **−15,6 LUFS**, Spitze **−0,7 dBFS** |
 
 **Die abgenommenen Shorts liegen bei −14,2 LUFS.** Die fehlenden 1,8 dB gehen
 mit einer flachen Verstärkung nicht mehr: die Spitze steht schon bei −0,7. Dafür
