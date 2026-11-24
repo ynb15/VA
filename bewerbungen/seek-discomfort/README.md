@@ -13,10 +13,8 @@ wir ueber denselben Text reden koennen. Nach groesseren Runden neu ziehen.
 
 ## Offene Punkte (Stand 24.11.2026)
 
-- Zahl der Kaltakquise-Mails: WANTED sagt 300, der Essay sagt „three
-  hundred", die VcA-Pressemitteilung sagt ueber 400, `assets/chriswill-outreach`
-  zaehlt 402 Threads. Eine Zahl festlegen.
-- „the world's leading quantum scientist" fuer Scott Aaronson ist im
-  WANTED-Block eine Stufe zu gross; der Essay selbst schreibt sauber
-  „quantum scientist & OpenAI insider".
+- ~~Zahl der Kaltakquise-Mails~~ — am 24.11. von ihm entschieden: **300**,
+  ueberall. Die VcA-Pressemitteilung ist nachgezogen.
+- ~~„the world's leading quantum scientist" fuer Scott Aaronson~~ — von ihm
+  am 24.11. bestaetigt, bleibt so stehen.
 - Das Eingangszitat von Neale D. Walsch kursiert in mehreren Zuschreibungen.
