@@ -13,9 +13,9 @@ just wasn't sitting right.
 
 Then one day I stumbled upon four lads on YouTube. Approaching strangers. Talking
 them into skydiving. Getting dropped blindfolded in a country they hadn't picked,
-with no money in their pockets. Somehow convincing Will Smith to bungee jump out
-of a helicopter over the Grand Canyon for his 50th birthday. Four guys actually
-living their dreams, in a way I had never seen anybody do it.
+with no money in their pockets. Will Smith's 50th birthday turning into a bungee
+jump out of a helicopter over the Grand Canyon. Four guys actually living their
+dreams, in a way I had never seen anybody do it.
 
 The more I watched their content, the thinner my own "dream" looked.
 
