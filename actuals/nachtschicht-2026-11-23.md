@@ -30,3 +30,12 @@ gesehen, ich nicht.
 **Kein zweiter Nudge.** Das gehört in den Morgenbericht, und die Frage ist
 seine: Goodell 04.12. freigeben oder nicht.
 - **03:40** · content-cinematic · weiter blockiert, wartet auf seine Freigabe · neue Commits: keine · Maßnahme: keine (kein zweiter Nudge aus demselben Grund)
+- **06:40** · content-cinematic · blockiert, wartet auf seine Freigabe · neue Commits: keine · Maßnahme: keine
+
+## Morgen 24.11.
+
+**Goodell T−10 greift heute** und wird nicht angefangen, weil der Agent auf seine
+Freigabe wartet — zu Recht, siehe die Regel im Handbuch vom 24.11. Zwei
+Entscheidungen liegen bei ihm: Goodell für den 04.12. freigeben oder nicht, und
+was mit dem Kaffeemesse-Short passiert, unter dem Sinatra liegt.
+Lernkanal: nichts Neues. Vorrat 0.
