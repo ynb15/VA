@@ -9712,3 +9712,54 @@ Variante" daneben. Das ist derselbe Fehler wie am 12.11. in anderer Verkleidung.
 
 **Abgrenzung:** „suicidal" im Einblendungstext ist **seine** Festlegung für
 dieses eine Wort und keine Lizenz, anderswo zu glätten.
+
+## EINE VORSCHAU IST KEIN THREAD
+
+Am 25.11. hat er mich dreimal zurückgeschickt, bis ich den Verlauf mit Diary of a
+CEO wirklich gelesen hatte. Seine Worte: *„Hast du wirklich den ganzen Verlauf mit
+Louis gelesen?"* und danach *„Ich habe dir gesagt, du sollst alle Diary of a CEO
+E-Mails lesen. Wenn ich dir sage, du sollst das machen, dann sollst du das machen.
+Warum machst du es dann nicht?"*
+
+**Die Mechanik, die mich dreimal getäuscht hat.** `search_threads` liefert je Thread
+nur die ungefähr fünf ältesten Nachrichten und markiert nicht, dass etwas fehlt. Die
+Stichwortsuche fand 11 der 13 Threads im Label; die beiden fehlenden hat erst
+`label:"Bewerbungen/DOAC"` gezeigt. Und `list_labels` nennt die wahre Zahl:
+13 Threads, 25 Nachrichten.
+
+**Was daraus folgt.** „Lies alles" heißt: Label über `list_labels` identifizieren,
+mit `label:"<Name>"` alle Thread-IDs holen, `get_thread` auf jeden einzelnen. Eine
+Stichwortsuche ist eine Stichprobe, keine Lesung.
+
+**Was mir dadurch entgangen war, bis ich es richtig gemacht habe:** sein
+Retreat-Konzept heißt „The Cape Town Pages – Behind The Diary Retreat"; Christiana
+Brenton ist CRO und Co-Founder von FlightStory, nicht Recruiting; es gibt zwei
+getrennte Bewerbungen (03.03. Senior Guest Strategist, 22.05. Head of Community);
+und Sam hat ihn über LinkedIn zuerst angeschrieben.
+
+## EIN SATZ WIRD GEGEN DIE GANZE MAIL GEPRÜFT
+
+Am 25.11.: *„Hey, du schmeißt mir jetzt hier irgendwas hin, was überhaupt nicht in
+die E-Mail als Ganzes passt."* Ich hatte fünf einzelne Sätze geliefert, ohne sie
+gegen den Takt des Entwurfs zu halten. Seine DOAC-Mails laufen auf **Fragmentläufen**
+(„A formal application in May. A 90-second video a week later."); meine Vorschläge
+waren Prosasätze mit Nebensätzen. Wer eine Zeile ersetzt, schreibt sie in der Form
+der Nachbarzeilen.
+
+## EIN SATZ ÜBER IHN BRAUCHT EINE ZAHL ODER EINEN NAMEN
+
+Am 25.11. zu fünf Vorschlägen: *„Alles kein Value."* Jeder war eine Behauptung über
+ihn. Was trägt, steht in seinem eigenen Postfach: „7+ years scaling mission driven
+brands", „6-figure copywriting agency with clients across 3 continents", „50+ 5-star
+reviews on Trustpilot" (an salt-escapes, 15.09.), „Nomading, Facilitating & Building
+Communities since 2020" (Standardzeile an Wifi Tribe, The Nomad Escape, Noma
+Collective, Hacker Paradise). Erst im Postfach nachsehen, dann formulieren.
+
+## KEINE SIGNATUR IN EINER ANTWORT, KEIN NAME ALLEIN ALS ANREDE
+
+Am 25.11.: *„bitte hör auf, diese komische Signatur da immer mit reinzunehmen. Hast
+du jemals gesehen, dass ich eine E-Mail öffne nur mit dem Namen? Nee, mache ich
+nicht."* Er eröffnet mit „Cheers Winnie," oder webt den Namen in den ersten Satz
+(„Louis, third time reaching out:"). In einer Antwort im laufenden Thread steht am
+Ende nichts — seine Mail an Winnie vom 18.08. endet ohne Sign-off. In einer neuen
+Mail nutzt er „Dreaming Big," und den Block.
