@@ -45,6 +45,33 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 57 — 25.11.2026, 06:50 Kapstadt · die Quelle gehört jemand anderem
+
+**Von content-schlicht, und es ist der teuerste Befund dieser Woche.**
+
+**Christophs Schnittfassung der Kingsbury-Folge ist aus dem Drive verschwunden** —
+39 GB, 129:50. Die API antwortet „not found", der Download-Link 404. **Aus ihr
+stammt jeder gebaute Kingsbury-Short.** Die Rohdatei, die uns selbst gehört,
+endet bei Endfassungszeit **≈ 74:40**; alles danach ist nicht mehr schneidbar.
+
+**Dazu kam der zweite Verlust:** der Scratchpad ist mit dem Container gelöscht
+worden — 61 Minuten mühsam geholter Ton, alle Transkripte, alle Zwischenstände.
+
+Zwei Regeln:
+
+1. **Was gemessen wurde, gehört ins Repo, nicht in den Scratchpad.** Zeiten,
+   Versatzmodelle, Schnittpläne überleben dort jeden Containerwechsel.
+   Mediendateien nicht — die gehören in Drive.
+   → betrifft: alle. Siehe auch Ausgabe 55, Punkt 1.
+
+2. **Steht eine Folge auf einer fremden Datei, wird früh ein eigener
+   Low-Res-Abzug angelegt und abgelegt**, statt bei jedem Short neu aus 39 GB zu
+   lesen. Das wäre hier billiger gewesen als die Summe aller Fensterabzüge — und
+   es läge noch da.
+   → betrifft: alle, die aus Material schneiden, das jemand anderem gehört.
+
+---
+
 ## Ausgabe 56 — 24.11.2026, 16:05 Kapstadt · keine Zensur, endgültig
 
 **Seine Ansage an den YouTube-Manager, wörtlich:** *„Hör auf mit dieser Zensur.
