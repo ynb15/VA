@@ -1,4 +1,15 @@
-# Kyle Kingsbury — Quellenlage, Stand 24.11.2026
+# Kyle Kingsbury — Quellenlage, Stand 25.11.2026
+
+> **25.11.: gelöst — aber mit einer anderen Datei.** Er hat
+> `YNB Podcast Kyle Kingsbury.mp4` (`13HW41TtPXYmmNIs8XZfxZ-GL2GHTXsOE`,
+> 32,0 GB) freigegeben. **Sie ist 121:27 lang, nicht 129:50** — eine
+> andere Fassung, 8:22 kürzer, die der veröffentlichten entspricht.
+> **Jede Zeit aus den alten Papieren ist darin falsch.** Gemessener
+> Versatz an einer Stelle: "30 grams" liegt alt bei 84:53, neu bei
+> 80:06,2 — 287 s. Das gilt dort und nirgends sonst automatisch; der
+> Versatz wandert, wie schon zwischen Roh und Schnitt. Vor jedem Schnitt
+> die Stelle einzeln anpeilen: kurzes Tonfenster holen, transkribieren,
+> Wortlaut vergleichen.
 
 **Die Schnittfassung von Christoph ist aus dem Drive verschwunden.**
 
@@ -28,8 +39,8 @@ Ketamin-Passage, die Eier-Geschichte und das Schlusswort.
 
 ## Offen und blockiert
 
-* **Pilz-Short (30 Gramm)** — 84:53–88:05 der Endfassung. Geplanter
-  Schnitt steht unten, es fehlt nur die Datei.
+* ~~**Pilz-Short (30 Gramm)**~~ — am 25.11. gebaut, aus der neuen Datei:
+  80:05,4–80:38,1 und 82:18,9–82:58,5, zusammen 1:09,6.
 * **Rülpser-Liste** — die 61 Minuten Ton, die am 12.11. geprüft waren,
   lagen im Scratchpad und sind mit dem Container weg. Die Hörprobe
   (40 Kandidaten) hat er; nachziehen geht erst wieder mit einer Quelle.
