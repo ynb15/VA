@@ -1489,14 +1489,6 @@ def main():
     # die rechnen in AW/AH und werden von libass hochskaliert.
     global W, H
     W, H = (2160, 3840) if a.ausgabe == 2160 else (1080, 1920)
-    if a.vorschau:
-        # Halbe Kante. Entscheidend ist, dass das HIER steht und nicht erst
-        # am Ende der Kette: dann laufen Look, Untertitel, Logo und Encode
-        # schon auf dem kleinen Bild. Gemessen am Pilze-Short kostete die
-        # Vorschau mit der Skalierung am Schluss 113 s - also fast so viel
-        # wie eine ganze Runde. Die Lippenhoehe bleibt richtig, weil die
-        # Untertitel in AW/AH entworfen und von libass skaliert werden.
-        W, H = W // 2, H // 2
     skala = W / AW
     if a.logo_breite is None:
         a.logo_breite = int(W * 0.28)
@@ -1701,6 +1693,26 @@ def main():
                 print(f"  Stufe A aus dem Zwischenspeicher: {zwischen.name} "
                       f"({os.path.getsize(zwischen)/1e6:.0f} MB) — das 4K-"
                       f"Master wird nicht angefasst")
+
+        if a.vorschau:
+            # Halbiert wird ERST HIER, nach Stufe A. Stufe A hat mit der
+            # vollen Groesse gerechnet und liegt unter einem Schluessel, der
+            # die Vorschau gar nicht kennt - Vorschau und Endfassung teilen
+            # sich also dieselbe Zwischendatei.
+            #
+            # Stand die Halbierung weiter oben, bei --ausgabe, dann rechnete
+            # Stufe A SELBST auf 540x960 und legte das unter demselben Namen
+            # ab. Die naechste Endfassung haette eine verkleinerte
+            # Zwischendatei gelesen. Beim ersten Versuch ist genau das
+            # passiert; gerettet hat nur, dass der Lauf abbrach, weil Logo
+            # und Outro nicht mehr zur Bildgroesse passten. Ein
+            # Zwischenspeicher, der unter demselben Schluessel
+            # Verschiedenes ablegt, ist schlimmer als keiner.
+            W, H = W // 2, H // 2
+            a.logo_breite = max(1, a.logo_breite // 2)
+            a.broll_seite = max(2, a.broll_seite // 2)
+            a.broll_radius = max(1, a.broll_radius // 2)
+            print(f"  Vorschau: Stufe B rechnet auf {W}x{H}")
 
         # ------------------------------------------------------------------
         # Untertitel: Transkript, Korrekturen, Lippenhoehe.
