@@ -972,3 +972,20 @@ kurzer zweiter Durchlauf ueber die ersten Sekunden kostet nichts und
 entscheidet. Derselbe Durchlauf hat nebenbei "I thought it was dead" als
 "I thought I was dead" entlarvt - der Satz war im Bild verdreht. Zwei
 Durchlaeufe, die sich widersprechen, heissen: der laengere hat geraten.
+
+## Eine Schrifthoehe heisst: notfalls einen kuerzeren Ausschnitt (26.11.)
+
+Die Hoehe stand auf einem Wert, und sie sprang trotzdem - weil Kyles Kinn in
+einer der vier Einstellungen 80 px hoeher sass als in den anderen. Der uebliche
+Griff, den Ausschnitt nach oben zu ziehen, ging nicht: y lag schon auf 0.
+
+Dann wird der Ausschnitt kuerzer, nicht verschoben. Das Kinn landet im
+fertigen Bild bei kinn_quelle * 1920 / hoehe - also loest man nach der Hoehe
+auf: 741 * 1920 / 969 = 1468, Breite 1468 * 9/16 = 826. Der Kopf rutscht
+dabei nach unten statt aus dem Bild, der Ausschnitt wird nur enger. Die
+Alternative - alle vier auf die niedrigste erreichbare Hoehe ziehen - haette
+drei gute Einstellungen angefasst und oben am Kopf beschnitten.
+
+Und: nach so einer Rechnung einen Ruler-Streifen rendern, Kinn-Ziel und
+Schriftoberkante als Linien ins fertige Bildmass gelegt. Vier Standbilder,
+zwanzig Sekunden - und man sieht vor dem Render, ob es stimmt, statt danach.
