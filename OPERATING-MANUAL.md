@@ -8728,7 +8728,7 @@ innerhalb von vierundzwanzig Stunden nachzutragen.
 | Content — Shorts II | `session_013ucmJDg1VJscd8fwpxegnH` | `claude/content-shorts-2` | Zweite Warteschlange · aktuell **Aaronson** |
 | Content — Cinematic | `session_01XqVYzN3ZsciLLfqS5GxYNV` | `claude/content-cinematic` | Filmische Shorts, Rückkatalog, B-Roll |
 | Content — Vlog | `session_01AFYkJ3TqgbC5x3hkcuUdE2` | `claude/content-vlog` | Meaningful-Archiv, Stimmabdruck |
-| Content — Gastauftritte | `session_01YTs5D1g2jbQmSNEd2Fcg7h` | `claude/content-gastauftritte` | Seine Auftritte in **fremden** Podcasts |
+| Content — Shorts III | `session_01YTs5D1g2jbQmSNEd2Fcg7h` | `claude/content-gastauftritte` | Titel der Session: **„YNB Shorts III (alt / David Sutcliffe)"** — baut Shorts, nicht Gastauftritte. Am 26.11. am Sutcliffe-Short. |
 | Thumbnail Assistant | `session_01Qng36it9JR8kntKEjVEjXS` | `claude/thumbnails` | Thumbnails, Bauplan, Freisteller |
 | Head of Content | `session_017XwQh9PcSRWDQwDkCxAnKx` | `claude/head-of-content` | Substack, Register, Titelregeln |
 | YouTube Manager | `session_01AcQ6iCiXdnDbp7uxixXydg` | `claude/youtube-manager` | Beschreibungen, Titel, Tags, Kommentare |
@@ -9794,3 +9794,33 @@ naechsten Mail, und ohne vollstaendiges Lesen findet man ihn nicht.
 `git show origin/claude/youtube-manager:video/youtube-kanal.md` fuehrt die
 veroeffentlichten Videos samt Aufrufen. Am 26.11. habe ich geschrieben, ich
 koenne David Sutcliffe nicht belegen — er stand als `frNOUgxE0IM` laengst drin.
+
+## WER DAS SHORTS-BRIEFING BEKOMMEN HAT — 26.11.2026
+
+Seine Ansage: *„stell bitte sicher, dass wirklich alle Agenten, die an Shorts
+arbeiten, dieses Briefing bekommen und sofort umsetzen. Ich will es dir nicht
+nochmal sagen müssen. Ich will nicht jetzt später mit einem der Agenten arbeiten
+und der sagt mir dann danach, dass er das Briefing nicht bekommen hat."*
+
+**Der Verteiler wurde nicht aus dem Handbuch genommen, sondern gemessen:**
+`list_sessions` fuer die Titel, und `git ls-tree` ueber jeden Content-Branch nach
+`video/shorts-render.py`. Ergebnis: die Datei liegt auf **fuenf** Branches, einer
+davon der Vlog-Agent, den er nicht genannt hatte.
+
+| Agent | Session | geplante Aufgabe | fuer |
+|---|---|---|---|
+| Shorts I (Kingsbury) | `session_01UiDavSH3jThmLktN7Wvzxs` | `trig_01HmYpmxUu3xwLz6Yq6pbCMe` | **baut es** |
+| Shorts II (Strassman) | `session_013ucmJDg1VJscd8fwpxegnH` | `trig_01UAjjzoQeu7TRQSgiByNqAN` | uebernimmt |
+| Shorts III (Sutcliffe) | `session_01YTs5D1g2jbQmSNEd2Fcg7h` | `trig_0133LxHUKS96N1eRPHb3tANN` | uebernimmt + meldet eigene Renderer-Aenderung |
+| Cinema | `session_01XqVYzN3ZsciLLfqS5GxYNV` | `trig_01FsiyaGZdCxFg1SpRU5gYUD` | uebernimmt + prueft eigene Stufe |
+| Vlogs | `session_01AFYkJ3TqgbC5x3hkcuUdE2` | `trig_01BvHHCyeuNPUABu4sqzMk2D` | sagt, ob er den Renderer ueberhaupt benutzt |
+
+**Die Regel, die daraus folgt:** ein Verteiler wird gemessen, nicht erinnert. Wer
+ein gemeinsames Werkzeug im Branch hat, steht drin — auch wenn er in der
+Teamtabelle unter einem anderen Fach gefuehrt wird. Die Tabelle war beim
+Sutcliffe-Agenten falsch, und genau der arbeitet am Renderer.
+
+**Das offene Risiko:** Shorts III hat nach eigener Meldung „die
+Untertitel-Ueberlappung im Renderer behoben" — es gibt also bereits eine zweite
+Fassung des gemeinsamen Werkzeugs. Sie muss eingesammelt werden, bevor der Umbau
+sie ueberschreibt.
