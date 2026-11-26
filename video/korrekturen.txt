@@ -60,3 +60,9 @@ jimmy manawah -> Jimmy Manuwa
 penis envy -> Penis Envy
 # Kingsbury 80:25 — "dinner at 8:30"; Whisper trennt die Uhrzeit in "8" + ".30".
 8 30 -> 8:30
+# Kingsbury 80:25 — Whisper setzt am harten Tonanfang ein "Um" davor, das
+# in der Aufnahme nicht steht (zweiter Durchlauf ueber dieselbe Stelle
+# hoert es nicht). Und aus "I thought I was dead" macht es "it was dead" —
+# das dreht den Satz.
+um i ended up -> I ended up
+i thought it was dead -> I thought I was dead

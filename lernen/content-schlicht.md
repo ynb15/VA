@@ -958,3 +958,17 @@ Fenster, dessen Ende auf ein Wort fällt, ist das kein Detail.
 Schnittkante auf ein Wort fällt, zählt die **Hüllkurve** — 20-ms-Fenster,
 Pegel in dB —, nicht das Transkript.
 → betrifft: content-*
+
+## Whisper erfindet am Tonanfang ein Fuellwort (26.11., Pilze)
+
+Das Fenster fing hart auf dem ersten Laut an. Der Durchlauf ueber den ganzen
+Clip schrieb davor ein "Um", das in der Aufnahme nicht steht: die Huellkurve
+zeigt bei 0,04 s den sauberen Einsatz von "I", und ein zweiter Durchlauf
+ueber dieselben sechs Sekunden hoert kein "Um". Das ist kein Hoerfehler,
+sondern das Modell, das einen Anfang glattbuegelt.
+
+Also: das erste Wort eines Fensters nie ungeprueft ins Bild lassen. Ein
+kurzer zweiter Durchlauf ueber die ersten Sekunden kostet nichts und
+entscheidet. Derselbe Durchlauf hat nebenbei "I thought it was dead" als
+"I thought I was dead" entlarvt - der Satz war im Bild verdreht. Zwei
+Durchlaeufe, die sich widersprechen, heissen: der laengere hat geraten.
