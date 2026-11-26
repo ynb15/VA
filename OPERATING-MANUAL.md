@@ -9763,3 +9763,34 @@ nicht."* Er eröffnet mit „Cheers Winnie," oder webt den Namen in den ersten S
 („Louis, third time reaching out:"). In einer Antwort im laufenden Thread steht am
 Ende nichts — seine Mail an Winnie vom 18.08. endet ohne Sign-off. In einer neuen
 Mail nutzt er „Dreaming Big," und den Block.
+
+## „FOLLOW-UP" HEISST: DEN GANZEN VERLAUF VORHER LESEN
+
+Seine Ansage vom 26.11.2026, woertlich: *„Wenn ich sage, ich möchte ein Follow-up
+schreiben, dann heißt es, dass du die vorherigen Threads ganz genau studieren
+sollst."* Davor am selben Tag: *„Hast du wirklich den ganzen Verlauf mit Louis
+gelesen?"* und *„Ich habe dir gesagt, du sollst alle Diary of a CEO E-Mails lesen."*
+
+**Der Ablauf, bevor eine einzige Zeile entsteht:**
+1. `list_labels` — gibt die wahre Zahl der Threads und Nachrichten.
+2. `search_threads` mit `label:"<Name>"` **und** mit der Domain des Empfaengers —
+   die Stichwortsuche allein fand am 25.11. 11 von 13 Threads.
+3. `get_thread` auf **jeden** Thread. Eine Vorschau zeigt nur die etwa fuenf
+   aeltesten Nachrichten und markiert nicht, dass etwas fehlt.
+
+**Und dann die Dopplungspruefung, die am 26.11. gefehlt hat.** Alles, was in der
+neuen Mail als Neuigkeit steht, wird gegen die alten Mails geprueft: Namen,
+Gaeste, Referenzen, Argumente. Rob Paddock stand schon in seiner Man-Cave-Mail
+vom 03.08., zusammen mit Eben Britton, Francis Chouler, Whitney Wheelock und
+Rob Bennett — ich habe ihn als Neuigkeit wieder hingeschrieben. Eine Liste in
+einem Follow-up enthaelt nur, was der Empfaenger noch nicht von ihm gehoert hat.
+
+**Was ein Verlauf oft selbst enthaelt:** den Auftrag fuer das Follow-up. Al Green
+schrieb am 10.08.: *„the best thing to do would be keeping an eye on our socials
+or periodically reaching out to stay connected."* Das ist der erste Satz der
+naechsten Mail, und ohne vollstaendiges Lesen findet man ihn nicht.
+
+**Gaeste werden am Kanal geprueft, nicht aus dem Gedaechtnis.**
+`git show origin/claude/youtube-manager:video/youtube-kanal.md` fuehrt die
+veroeffentlichten Videos samt Aufrufen. Am 26.11. habe ich geschrieben, ich
+koenne David Sutcliffe nicht belegen — er stand als `frNOUgxE0IM` laengst drin.
