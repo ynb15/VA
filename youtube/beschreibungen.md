@@ -238,3 +238,113 @@ und zur Main-Folge verlinken."*
 Spotify- und Apple-Zeilen es ohnehin immer getan haben. Dass die Zeilen
 direkt untereinander standen und verschiedene Zeichen trugen, haette mir
 auffallen muessen: **das `ausnahmslos` war mein Wort, nicht seins.**
+
+---
+
+# Nachtrag 26.11. — jede Beschreibung durchgegangen, die ich je geschrieben habe
+
+Auftrag nach dem Strassman-Entwurf: *„gehst du jetzt jeden einzelnen Clip, jede
+einzelne Beschreibung, Wort fuer Wort, Buchstabe fuer Buchstabe durch."*
+Durchgegangen sind alle sechs Clip-Beschreibungen in `drafts/` plus die vom
+26.11. Gegengeprueft mit `video/werkzeug/beschreibung_pruefen.py`, das in
+diesem Durchgang entstanden ist.
+
+## Der Fehler hat einen Namen und eine Grammatik
+
+**Leeres Kopfnomen plus ein Nebensatz, der es bewertet statt es zu fuellen.**
+
+Jede Fundstelle, woertlich aus meinen eigenen Entwuerfen:
+
+| Entwurf | Stelle |
+|---|---|
+| Kingsbury / Ruecktritt | *„one honest sentence about Jon Jones that closed the door for good"* |
+| Kingsbury / Vaterschaft | *„He said one thing about timing that I have carried around ever since"* |
+| Kingsbury / Vaterschaft | *„whether it is the kindest thing anyone has said to me or the hardest"* |
+| Kingsbury / Vaterschaft | *„There is a line in here about courage and fear that is worth the clip on its own"* |
+| Makhosi | *„he ends somewhere I did not see coming - with the thing none of us want to look at"* |
+| Makhosi | *„the sentence about white guilt he had to brace himself to say"* |
+| Ken | *„the one thing missing from their version"* |
+| Strassman 26.11. | *„What the FDA official said to him there is the hardest sentence in this story"* |
+| Strassman 26.11. | *„a man most people in psychedelics would recognise"* |
+
+Die leeren Kopfnomen: **sentence · thing · line · word · answer · moment ·
+question · part · reason · piece · somewhere · something · man**.
+Die Bewertungen: **worth the clip on its own · I have carried around ever since ·
+the hardest · the kindest · I did not see coming · that closed the door ·
+nobody says out loud · most people would recognise**.
+
+## Der Test, der das abfaengt
+
+**Streiche den Nebensatz. Bleibt ein Fakt stehen?**
+
+- *„one honest sentence about Jon Jones"* ohne *„that closed the door"* → nichts.
+- *„the woman who spent five years living with him in his mother's garage"* ohne
+  alles Weitere → ein ganzer Mensch.
+
+Beide Zeilen stehen in **derselben** Beschreibung. Der Unterschied ist nicht
+Zurueckhaltung, der Unterschied ist, ob ueberhaupt etwas genannt wird.
+
+**Die Regel in einem Satz: die Folge zurueckhalten, nie den Gegenstand.**
+Nenne die Sache. Lass offen, was sie angerichtet hat.
+
+## Warum es immer wieder passiert
+
+**Ich habe „zurueckhalten" mit „nicht nennen" verwechselt.** Jedes Mal, wenn er
+mich zum Cliffhanger geschoben hat, habe ich mit Loeschen geantwortet statt mit
+Umbauen. Deshalb sitzt der Fehler am dichtesten in den **spaetesten**
+Entwuerfen, nicht in den fruehesten: je mehr ich mich bemueht habe, desto
+leerer wurde der Haken.
+
+## Was der Durchgang sonst gefunden hat
+
+Treffer je Entwurf:
+
+| Entwurf | Treffer | Eroeffnung |
+|---|---:|---|
+| Kingsbury / Ruecktritt | 4 | `What if …` |
+| Kingsbury / Vaterschaft | 7 | `What happens when …` |
+| Makhosi / Praesident | 3 | `What happens when …` |
+| **Ken / Loneliness** | **0** | **Aussagesatz** |
+| Sutcliffe | 4 | `What if …` |
+| Aaronson | 3 | `What if …` |
+
+**Fuenf von sechs oeffnen mit einer Form, die er gestrichen hat. Die einzige
+ohne Treffer ist die einzige, die mit einem Aussagesatz oeffnet** (*„I read Ken
+Stern an essay I had just published about the loneliness epidemic."*).
+
+**Das ist meine Schlussfolgerung, keine Messung:** die beiden Fehler haengen
+zusammen. Wer mit *„What happens when …"* oeffnet, muss die Frage ueber den
+ganzen Absatz offen halten, und der billigste Weg, eine Frage offen zu halten,
+ist, nichts zu beantworten. **Die Eroeffnungsform erzeugt den leeren Haken.**
+
+Dazu, dreimal gefunden: **Selbstbewertung des Materials** — *„the part that
+stopped me"*, *„further than I expected"*, *„the thing almost nobody will say
+out loud"*, *„why this clip exists"*. In seinen eigenen 38 Beschreibungen steht
+keine einzige Zeile, die dem Leser sagt, wie gut etwas ist. Er stellt Fakten
+hin. **`He walked away from all of it.`** Kein Adjektiv davor.
+
+Und zweimal **`in this clip`**, das er am 24.11. ausdruecklich beanstandet hat.
+
+## Das Werkzeug
+
+`video/werkzeug/beschreibung_pruefen.py` — laeuft ueber einen Entwurf und
+meldet: leeres Kopfnomen mit Bewertung, Selbstlob, verbotene Eroeffnung,
+`in this clip`, gestrichene Formeln, em dash, Wortzahl, fehlende Laufzeit und
+fehlende Auslassungspunkte im Abbinder.
+
+```
+python3 -I video/werkzeug/beschreibung_pruefen.py entwurf.txt
+```
+
+**Es laeuft ab jetzt ueber jeden Entwurf, bevor er ihm vorgelegt wird.** Nicht
+weil ich sorgfaeltiger werde, sondern weil Sorgfalt die vier Male davor nicht
+gereicht hat.
+
+**Was das Werkzeug nicht kann:** die ersten 30 Sekunden des Clips pruefen und
+beurteilen, ob eine genannte Sache auch wirklich im Clip vorkommt. Beides
+bleibt Handarbeit und beides hat schon einmal danebengelegen.
+
+**Eine Korrektur am Werkzeug selbst:** die erste Fassung hat den en dash
+angemeckert. Der ist in Beschreibungen **seiner** (gemessen, oben in dieser
+Datei) — die Bindestrich-Regel gilt fuer Kommentare und Mails. Geprueft wird
+nur noch der em dash.
