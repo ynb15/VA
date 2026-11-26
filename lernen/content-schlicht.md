@@ -1055,3 +1055,25 @@ Und: dass eine Planaenderung im Bild ankommt, ist nachzurechnen, nicht zu
 glauben - zwei Bilder derselben Sekunde aus alter und neuer Fassung
 gegeneinander verschoben, Minimum der Differenz. Hier kamen exakt die
 erwarteten 60 px heraus.
+
+## Ein einziges Bild im falschen Ausschnitt sieht man (26.11.)
+
+Er hat zwei Stellen gefunden, "so Millisekunden", und beide waren genau ein
+Bild: die Einstellungsgrenze lag nicht auf dem ersten Bild der neuen Kamera,
+also bekam ein Bild der alten Kamera schon den neuen Ausschnitt. Bei 1/30 s
+ist das ein Zucken, das jeder sieht und niemand benennen kann.
+
+Zwei Ursachen, beide vermeidbar:
+* Die Bildzahl von Teil a war 936, gerechnet hatte ich 935 (31,1667 s statt
+  31,2). Bei aneinandergehaengten Teilen wird nachgezaehlt, nicht gerechnet.
+  Am Stoss fehlte im Zeitraster sogar ein Bild - die Luecke sieht man nur,
+  wenn man die pts ausliest.
+* `select=gt(scene,0.12)` meldet die Stelle um Zehntelsekunden daneben.
+  Verlaesslich ist die Differenz zweier aufeinanderfolgender Bilder: am
+  Schnitt Faktor 60 ueber dem Grundrauschen, eindeutig. Dafuer liegt jetzt
+  `video/schnittgrenze.py` im Repo.
+
+Und die stille Falle dahinter: rohe pts und das, was ffmpeg im Filtergraph
+sieht, unterscheiden sich hier um 21 ms (start_time 328 Ticks). Die Grenze
+muss in beiden Lesarten zwischen dem letzten alten und dem ersten neuen Bild
+liegen, sonst verschiebt sich der Fehler nur um einen Film.
