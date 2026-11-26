@@ -55,9 +55,9 @@ jimmy manowah -> Jimmy Manuwa
 jimmy manawah -> Jimmy Manuwa
 # Kingsbury 80:05 — die Sorte heisst Penis Envy; Whisper macht daraus
 # "penicillin" und "peanuts".
-30 grams of penicillin -> 30 grams of Penis Envy
-30 grams of peanuts -> 30 grams of Penis Envy
-penis envy -> Penis Envy
+30 grams of penicillin -> 30 grams of Pen*s Envy
+30 grams of peanuts -> 30 grams of Pen*s Envy
+penis envy -> Pen*s Envy
 # Kingsbury 80:25 — "dinner at 8:30"; Whisper trennt die Uhrzeit in "8" + ".30".
 8 30 -> 8:30
 # Kingsbury 80:25 — Whisper setzt am harten Tonanfang ein "Um" davor, das
@@ -70,3 +70,30 @@ i thought it was dead -> I thought I was dead
 # touching myself". Der Lauf ueber den ganzen Clip macht daraus "and then
 # feel anything" - ein Satz, der nichts mehr heisst.
 though and then feel anything -> though and I didn't feel anything
+
+# ---------------------------------------------------------------------------
+# Seine Ansage vom 26.11.: "Pen*s, Vag*na, S*x, F*ck, Sh*t immer so".
+# Gilt ab sofort fuer JEDEN Short, nicht nur fuer diesen. Steht hier und
+# nicht im Renderer, damit die Liste dieselbe bleibt, die er lesen kann.
+penis -> Pen*s
+~penis-?in(dy|die|dee) -> Pen*s Envy
+vagina -> Vag*na
+sex -> S*x
+fuck -> F*ck
+fucks -> F*cks
+fucked -> F*cked
+fucking -> F*cking
+fucker -> F*cker
+shit -> Sh*t
+shitty -> Sh*tty
+bullshit -> Bullsh*t
+
+# Fuellwoerter stehen nicht im Bild. Seine Ansage vom 26.11.: "seit wann
+# bauen wir 'uh' mit ein!?". Leere rechte Seite = Wort faellt aus der
+# Einblendung; der Ton bleibt unangetastet.
+uh ->
+uhh ->
+uhhh ->
+um ->
+umm ->
+erm ->

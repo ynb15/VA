@@ -989,3 +989,27 @@ drei gute Einstellungen angefasst und oben am Kopf beschnitten.
 Und: nach so einer Rechnung einen Ruler-Streifen rendern, Kinn-Ziel und
 Schriftoberkante als Linien ins fertige Bildmass gelegt. Vier Standbilder,
 zwanzig Sekunden - und man sieht vor dem Render, ob es stimmt, statt danach.
+
+## Kinn messen heisst: im fertigen Bild messen, mehrfach, gross genug (26.11.)
+
+Dritte Runde an derselben Beschwerde, und die ersten beiden Male habe ich die
+falsche Zahl verrechnet. `kinn.py` zeichnet seinen Lineal in KASTENRELATIVEN
+Quellpixeln - ich habe die abgelesenen Werte als absolute Quellpixel
+weiterverrechnet. Ergebnis: vier Ausschnitte, die rechnerisch auf einer Hoehe
+lagen und im Bild um 295 px auseinander (E1 790, E2 1005, E3 1085, E4 945 im
+fertigen Bild). In E3 lief die Schrift ueber sein Kinn.
+
+Was jetzt gilt:
+* Gemessen wird im FERTIGEN Bildmass, nach crop UND scale - in derselben
+  Zahl, in der auch `lippe` steht. Alles andere ist eine Umrechnung zu viel.
+* Mehrere Proben je Einstellung, nicht eine. Er lehnt sich; eine Probe aus
+  der Mitte der Einstellung sagt nichts ueber ihre Raender.
+* Gross genug zum Ablesen: 270x480 pro Probe reicht nicht, da schaetzt man
+  um 100 px daneben. Ein Fensterausschnitt (600-1250) auf 540 px Breite mit
+  Lineal alle 25 px laesst sich auf etwa 10 px genau lesen (`kinn3.py`).
+* Und danach GEGENMESSEN: `schriftlage.py` liest die Oberkante der Schrift
+  Bild fuer Bild aus der fertigen Datei. Damit ist "springt die Schrift?"
+  keine Meinung mehr. In der Fassung vom 26.11. stand sie auf 1024-1036 -
+  die Schrift stand also still, Kyle nicht. Die Beschwerde galt dem Abstand
+  zum Kinn, nicht der absoluten Hoehe. Beschwerde und Messung muessen auf
+  dieselbe Groesse zeigen, sonst misst man an der Beschwerde vorbei.
