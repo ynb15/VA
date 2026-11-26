@@ -9029,3 +9029,33 @@ Terminvorschlag:**
   Rückversicherung: *„viel zu ja, argkriecherisch."* Wenn der andere schreibt,
   dass er im Stress ist, behandelt er das als **Terminfrage**: ein Satz, eine
   Entscheidung, weiter.
+
+---
+
+## SEINE DREI SCHLUSSFRAGEN IM GESPRÄCH (26.11.2026)
+
+**Ansage von ihm:** *"Ich möchte, dass du abspeicherst, wenn du mir das nächste Mal
+Fragen für einen Gast gibst, dass ich am Ende nicht nur die Frage stelle, what makes
+life meaningful und where can people find you, get in touch with you und zusätzlich
+auch who would you nominate for Man's Search for Meaning."*
+
+**Jede Fragenliste für eine Aufnahme endet ab sofort mit diesen drei, in dieser
+Reihenfolge:**
+
+1. **What makes life meaningful?**
+2. **Where can people find you and get in touch with you?**
+3. **Who would you nominate for *Man's Search for Meaning*?**
+
+**Das ist nicht der Fragenblock aus dem Outreach.** Nicht verwechseln:
+
+| | |
+|---|---|
+| **Der fette Block in der Kaltmail** | drei bis vier Fragen *"about the deeper layer of your life"*, für jeden Gast neu gebaut, soll ihn zum Zusagen bringen |
+| **Diese drei** | stehen am **Ende der Aufnahme**, immer gleich, für jeden Gast |
+
+**Warum die dritte zählt, und zwar für meine eigene Arbeit:** Jede Folge produziert
+damit einen belegten Gastvorschlag aus dem Mund eines Menschen, der schon in der
+Sendung war. **Das ist die Klammer `[Via <Name>]` an ihrer Quelle** - und nach der
+Cal-Callahan-Regel vom 27.10. die einzige Form, in der sie überhaupt belegt ist.
+Die Antwort gehört in die Databank, Notes des Nominierenden plus eigene Zeile für den
+Genannten.
