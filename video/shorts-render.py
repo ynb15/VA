@@ -134,6 +134,31 @@ def tc(s):
     return sum(float(p) * 60 ** i for i, p in enumerate(reversed(parts)))
 
 
+def ohne_ueberlappung(cues):
+    """Zwei Einblendungen duerfen sich NIE ueberlappen.
+
+    ASS zeichnet beide an dieselbe Stelle, und im Bild steht
+    Buchstabensalat. Er hat es am 26.11.2026 im Dreizeilen-Short gefunden:
+    "ANYTHING LIKE THIS" und "WELL, YOU'RE ONLY" lagen 0,40 s uebereinander,
+    weil Sutcliffe schon redet, waehrend er seinen Satz beendet. Whisper gibt
+    solchen Stellen ueberlappende Zeiten, und im Gespraech ist das der
+    Normalfall, kein Ausreisser. Sein Urteil: *"Das sieht richtig
+    amateurhaft aus, das kann halt nicht sein."*
+
+    Die spaetere Einblendung gewinnt, die fruehere endet, wo jene anfaengt —
+    sonst muesste der zweite Sprecher auf seine Zeile warten, und die liefe
+    dann aus der Lippensynchronitaet.
+    """
+    cues = [dict(c) for c in cues]
+    for a, b in zip(cues, cues[1:]):
+        if b["start"] < a["end"] - 1e-6:
+            print(f"  Einblendung gekuerzt: {a.get('text', '')!r} lag "
+                  f"{a['end'] - b['start']:.2f} s ueber dem Beginn von "
+                  f"{b.get('text', '')!r}")
+            a["end"] = max(b["start"], a["start"] + 0.001)
+    return cues
+
+
 def ass_time(t):
     h, rem = divmod(max(t, 0), 3600)
     m, sec = divmod(rem, 60)
@@ -1391,6 +1416,9 @@ def main():
             print(f"  {len(cues)} Einblendungen nach {a.cues_out}")
         elif a.srt:
             cues = srt_to_cues(a.srt)
+
+        if cues:
+            cues = ohne_ueberlappung(cues)
 
         if cues and a.srt_out:
             n = cues_als_srt(cues, a.srt_out, tempo=a.tempo, gross=not a.klein)
