@@ -97,3 +97,7 @@ uhhh ->
 um ->
 umm ->
 erm ->
+# Dieselbe Stelle, 80:33: Whisper schreibt "three and a half hours" mal als
+# Ziffern - "3 and 1 half hours" stand im Bild.
+3 and 1 half hours -> three and a half hours
+3 and a half hours -> three and a half hours
