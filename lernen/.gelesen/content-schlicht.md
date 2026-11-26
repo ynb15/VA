@@ -958,3 +958,128 @@ Fenster, dessen Ende auf ein Wort fällt, ist das kein Detail.
 Schnittkante auf ein Wort fällt, zählt die **Hüllkurve** — 20-ms-Fenster,
 Pegel in dB —, nicht das Transkript.
 → betrifft: content-*
+
+## Whisper erfindet am Tonanfang ein Fuellwort (26.11., Pilze)
+
+Das Fenster fing hart auf dem ersten Laut an. Der Durchlauf ueber den ganzen
+Clip schrieb davor ein "Um", das in der Aufnahme nicht steht: die Huellkurve
+zeigt bei 0,04 s den sauberen Einsatz von "I", und ein zweiter Durchlauf
+ueber dieselben sechs Sekunden hoert kein "Um". Das ist kein Hoerfehler,
+sondern das Modell, das einen Anfang glattbuegelt.
+
+Also: das erste Wort eines Fensters nie ungeprueft ins Bild lassen. Ein
+kurzer zweiter Durchlauf ueber die ersten Sekunden kostet nichts und
+entscheidet. Derselbe Durchlauf hat nebenbei "I thought it was dead" als
+"I thought I was dead" entlarvt - der Satz war im Bild verdreht. Zwei
+Durchlaeufe, die sich widersprechen, heissen: der laengere hat geraten.
+
+## Eine Schrifthoehe heisst: notfalls einen kuerzeren Ausschnitt (26.11.)
+
+Die Hoehe stand auf einem Wert, und sie sprang trotzdem - weil Kyles Kinn in
+einer der vier Einstellungen 80 px hoeher sass als in den anderen. Der uebliche
+Griff, den Ausschnitt nach oben zu ziehen, ging nicht: y lag schon auf 0.
+
+Dann wird der Ausschnitt kuerzer, nicht verschoben. Das Kinn landet im
+fertigen Bild bei kinn_quelle * 1920 / hoehe - also loest man nach der Hoehe
+auf: 741 * 1920 / 969 = 1468, Breite 1468 * 9/16 = 826. Der Kopf rutscht
+dabei nach unten statt aus dem Bild, der Ausschnitt wird nur enger. Die
+Alternative - alle vier auf die niedrigste erreichbare Hoehe ziehen - haette
+drei gute Einstellungen angefasst und oben am Kopf beschnitten.
+
+Und: nach so einer Rechnung einen Ruler-Streifen rendern, Kinn-Ziel und
+Schriftoberkante als Linien ins fertige Bildmass gelegt. Vier Standbilder,
+zwanzig Sekunden - und man sieht vor dem Render, ob es stimmt, statt danach.
+
+## Kinn messen heisst: im fertigen Bild messen, mehrfach, gross genug (26.11.)
+
+Dritte Runde an derselben Beschwerde, und die ersten beiden Male habe ich die
+falsche Zahl verrechnet. `kinn.py` zeichnet seinen Lineal in KASTENRELATIVEN
+Quellpixeln - ich habe die abgelesenen Werte als absolute Quellpixel
+weiterverrechnet. Ergebnis: vier Ausschnitte, die rechnerisch auf einer Hoehe
+lagen und im Bild um 295 px auseinander (E1 790, E2 1005, E3 1085, E4 945 im
+fertigen Bild). In E3 lief die Schrift ueber sein Kinn.
+
+Was jetzt gilt:
+* Gemessen wird im FERTIGEN Bildmass, nach crop UND scale - in derselben
+  Zahl, in der auch `lippe` steht. Alles andere ist eine Umrechnung zu viel.
+* Mehrere Proben je Einstellung, nicht eine. Er lehnt sich; eine Probe aus
+  der Mitte der Einstellung sagt nichts ueber ihre Raender.
+* Gross genug zum Ablesen: 270x480 pro Probe reicht nicht, da schaetzt man
+  um 100 px daneben. Ein Fensterausschnitt (600-1250) auf 540 px Breite mit
+  Lineal alle 25 px laesst sich auf etwa 10 px genau lesen (`kinn3.py`).
+* Und danach GEGENMESSEN: `schriftlage.py` liest die Oberkante der Schrift
+  Bild fuer Bild aus der fertigen Datei. Damit ist "springt die Schrift?"
+  keine Meinung mehr. In der Fassung vom 26.11. stand sie auf 1024-1036 -
+  die Schrift stand also still, Kyle nicht. Die Beschwerde galt dem Abstand
+  zum Kinn, nicht der absoluten Hoehe. Beschwerde und Messung muessen auf
+  dieselbe Groesse zeigen, sonst misst man an der Beschwerde vorbei.
+
+## Nicht ablesen. Rechnen lassen. (26.11., dritter Anlauf)
+
+Zweimal habe ich die Kinnhoehe von einem Kontaktblatt ABGELESEN und mich um
+120-150 px vertan - beide Male, weil die Linealbeschriftung ueber hellem
+Buecherregal stand und ich die Zuordnung Label->Zeile geschaetzt habe. Beide
+Male war die Rechnung danach in sich stimmig und das Bild trotzdem falsch.
+Eine falsche Eingangszahl macht jede saubere Rechnung dahinter wertlos, und
+sie faellt nicht auf, weil nichts widerspricht.
+
+Was stattdessen traegt:
+* Die Kopfoberkante laesst sich maschinell holen und ist stabil: Hauttest
+  (R>110, R-B>45, R-G>18) auf das fertige Bild, oberste Zeile mit genug
+  Treffern. In E1 lag sie ueber 19 Sekunden bei 730-747, in E3 bei 586 -
+  gleiche Kamera, also 149 px Versatz, und genau diese 149 px waren der
+  Fehler. Eine Maschine, die stumpf dasselbe misst, schlaegt mein Auge.
+* Wo ich doch hinsehen muss, gehoert eine LINIE ins Bild, keine Zahl: eine
+  durchgezogene Linie auf der Schrift-Oberkante. Dann ist die Frage binaer
+  ("liegt die Linie auf dem Kiefer oder darunter") statt eine Schaetzung.
+* Und die Probe gehoert in die Einstellung mit dem TIEFSTEN Kinn, nicht in
+  ihre Mitte. Er lehnt sich; der schlechteste Moment entscheidet.
+
+## Nachtrag: das Kontrollblatt hatte selbst einen Fehler (26.11.)
+
+Die rote Linie auf 1010 war mit `if v in (1010,1075)` innerhalb einer
+`range(820,1180,25)` gezeichnet - und 1010 liegt nicht auf diesem Raster.
+Also wurde sie nie gezeichnet, und ich habe auf dem Kontrollblatt wieder
+geschaetzt, genau wie vorher. Ein Pruefwerkzeug, das stillschweigend nichts
+prueft, ist schlimmer als keins: es gibt Sicherheit, ohne sie zu belegen.
+Deshalb wird die Linie jetzt unabhaengig vom Raster gezeichnet, und das
+Werkzeug liegt als `video/schriftband.py` im Repo.
+
+Dazu eine zweite Lehre: auch der Hauttest (R>110, R-B>45) taugt NICHT als
+Richter darueber, ob Schrift auf Haut liegt - an der Stelle, die er
+beanstandet hat, lag Kinn und Hals im Schatten, und der Test meldete 0,0 %.
+Ein Mass, das den bekannten Fehlerfall nicht findet, ist kein Mass. Vor dem
+Einsatz an der bekannten schlechten Stelle eichen.
+
+Und: dass eine Planaenderung im Bild ankommt, ist nachzurechnen, nicht zu
+glauben - zwei Bilder derselben Sekunde aus alter und neuer Fassung
+gegeneinander verschoben, Minimum der Differenz. Hier kamen exakt die
+erwarteten 60 px heraus.
+
+## Ein einziges Bild im falschen Ausschnitt sieht man (26.11.)
+
+Er hat zwei Stellen gefunden, "so Millisekunden", und beide waren genau ein
+Bild: die Einstellungsgrenze lag nicht auf dem ersten Bild der neuen Kamera,
+also bekam ein Bild der alten Kamera schon den neuen Ausschnitt. Bei 1/30 s
+ist das ein Zucken, das jeder sieht und niemand benennen kann.
+
+Zwei Ursachen, beide vermeidbar:
+* Die Bildzahl von Teil a war 936, gerechnet hatte ich 935 (31,1667 s statt
+  31,2). Bei aneinandergehaengten Teilen wird nachgezaehlt, nicht gerechnet.
+  Am Stoss fehlte im Zeitraster sogar ein Bild - die Luecke sieht man nur,
+  wenn man die pts ausliest.
+* `select=gt(scene,0.12)` meldet die Stelle um Zehntelsekunden daneben.
+  Verlaesslich ist die Differenz zweier aufeinanderfolgender Bilder: am
+  Schnitt Faktor 60 ueber dem Grundrauschen, eindeutig. Dafuer liegt jetzt
+  `video/schnittgrenze.py` im Repo.
+
+Und die stille Falle dahinter: rohe pts und das, was ffmpeg im Filtergraph
+sieht, unterscheiden sich hier um 21 ms (start_time 328 Ticks). Die Grenze
+muss in beiden Lesarten zwischen dem letzten alten und dem ersten neuen Bild
+liegen, sonst verschiebt sich der Fehler nur um einen Film.
+
+Nachtrag dazu: der Test, der das findet, heisst `video/nahtprobe.py` - zwei
+dicht aufeinanderfolgende Spruenge statt einem. Geeicht an der kaputten
+Fassung: dort zwei Spruenge an genau den beiden Grenzen, die er genannt hat,
+und einer an der dritten, die er nicht genannt hat. Erst damit ist der Test
+ein Beleg und nicht nur eine Zahl.

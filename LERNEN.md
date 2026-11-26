@@ -45,6 +45,52 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 59 — 26.11.2026, 16:10 Kapstadt · in den Pausen, nicht im Pegel
+
+**Der 3-dB-Abstand unter der Stimme gilt nur fuer durchgesprochene Shorts.**
+Seine Beschwerde zur Musik war richtig, der Pegel aber nicht die Ursache: ueber
+die ganze Datei lag die Fassung mit Musik **+0,2 LU** ueber der ohne, Spitze
+−6,6 dBFS. Der Schnitt besteht zu **24 %** aus digitaler Stille (257 von 1060
+Rahmen unter −60 dB), und in den Pausen steht das Bett **34 bis 37 dB** ueber dem
+Raumton. `musik_drunter.py` rechnet gegen den **Mittelwert** der Stimme, der bei
+so viel Stille 4,7 dB unter dem echten Sprechpegel liegt. Vor dem Mischen den
+Stilleanteil messen; ueber etwa 15 % ist der Mittelwert als Bezug unbrauchbar
+und der Abstand gehoert auf 6 bis 9 dB.
+→ betrifft: alle Content-Agenten
+
+**0:23,25 bei „In This Shirt" ist kein Ritual, sondern der Abschnitt mit der
+geringsten Energie im Sprachband.** Ab 0:59 liegen **3,4 dB mehr** in 2,5–5 kHz
+und ebenso in 5–8 kHz — genau dort, wo die Konsonanten sitzen. Wirkt ein
+Einstieg zu duenn, ist die Antwort ein anderer Titel oder mehr Abstand, nicht
+ein dichterer Abschnitt desselben Titels.
+→ betrifft: alle Content-Agenten
+
+**Ueberlappende Einblendungen sind der Normalfall an jeder Sprecherkante.**
+Gemessen **0,40 s** Ueberlappung, ASS zeichnet beide an dieselbe Position, das
+Ergebnis ist Buchstabensalat. Behoben im gemeinsamen Werkzeug statt im
+Einzelfall: `shorts-render.py` hat jetzt `ohne_ueberlappung()` — die spaetere
+Einblendung gewinnt, die fruehere endet, wo jene anfaengt, und der Lauf schreibt
+die Kuerzung hin. Gilt fuer Bild und `.srt`.
+→ betrifft: alle Content-Agenten
+
+**Whisper erfindet am Fensteranfang ein Fuellwort.** Ein Durchlauf ueber den
+ganzen Clip schrieb ein „Um" vor den ersten Laut, das in der Aufnahme nicht
+steht — die Huellkurve zeigt bei **0,04 s** den sauberen Einsatz. Ein zweiter
+Durchlauf ueber dieselben sechs Sekunden hoert es nicht und entlarvte nebenbei
+„I thought it was dead" als „I thought I was dead". Widersprechen sich zwei
+Durchlaeufe, hat der laengere geraten.
+→ betrifft: alle Content-Agenten
+
+**Ein Pruefwerkzeug, das stillschweigend nichts prueft, ist schlimmer als
+keins.** Die Kontrolllinie auf 1010 wurde ueber `if v in (1010,1075)` innerhalb
+eines 25er-Rasters gezeichnet, auf dem 1010 nicht liegt — sie erschien nie, und
+auf dem Kontrollblatt wurde wieder geschaetzt. Ebenso taugte der Hauttest
+(R>110, R−B>45) nicht als Richter: an der beanstandeten Stelle lagen Kinn und
+Hals im Schatten, der Test meldete **0,0 %**. Ein Mass, das den bekannten
+Fehlerfall nicht findet, ist kein Mass — vor dem Einsatz an genau dieser Stelle
+eichen.
+→ betrifft: alle
+
 ## Ausgabe 58 — 26.11.2026, 06:45 Kapstadt · gemessene Zeiten, nicht geschätzte
 
 **`-vn` vor dem Tonabzug, sonst dekodiert ffmpeg das ganze Bild mit.**
