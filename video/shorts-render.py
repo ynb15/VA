@@ -683,7 +683,7 @@ def _packen(woerter, worte, max_px):
 
 
 def whisper_woerter(clip, model_size="small", lang=None, cache=None,
-                    schluessel=None):
+                    schluessel=None, frisch=False):
     """Die rohe Wortliste aus Whisper — der teure Teil, und der einzige hier,
     der sich ueberhaupt zwischenspeichern laesst.
 
@@ -700,11 +700,11 @@ def whisper_woerter(clip, model_size="small", lang=None, cache=None,
     """
     if cache and schluessel:
         p = Path(cache) / f"woerter-{schluessel}.json"
-        if p.exists():
+        if p.exists() and not frisch:
             d = json.loads(p.read_text(encoding="utf-8"))
             print(f"  Transkript aus dem Zwischenspeicher: "
                   f"{len(d['woerter'])} Woerter, Sprache {d['sprache']}")
-            return d["woerter"], d["sprache"]
+            return d["woerter"], d["sprache"], [tuple(x) for x in d["stillen"]]
     from faster_whisper import WhisperModel
     import numpy as np
     # Den Ton selbst dekodieren statt faster-whisper die Datei geben:
@@ -734,16 +734,24 @@ def whisper_woerter(clip, model_size="small", lang=None, cache=None,
     flach = [{"t": w.word.strip(), "start": w.start, "end": w.end, "seg": i}
              for i, s in enumerate(segments) for w in (s.words or [])
              if w.word.strip()]
+    # Die Sprechpausen kommen aus derselben Tonspur und haengen von nichts
+    # ab, was sich zwischen zwei Runden aendert — also in denselben
+    # Zwischenspeicher. Sonst muesste fuer sie allein die Rohdatei noch
+    # einmal geschnitten werden, und genau daran ist der erste Versuch
+    # gescheitert.
+    stillen = stillen_finden(clip)
     if cache and schluessel:
         Path(cache).mkdir(parents=True, exist_ok=True)
         (Path(cache) / f"woerter-{schluessel}.json").write_text(
-            json.dumps({"woerter": flach, "sprache": info.language}),
+            json.dumps({"woerter": flach, "sprache": info.language,
+                        "stillen": stillen}),
             encoding="utf-8")
-    return flach, info.language
+    return flach, info.language, stillen
 
 
 def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
-                 pause=0.45, max_px=MAX_BREITE, cache=None, schluessel=None):
+                 pause=0.45, max_px=MAX_BREITE, cache=None, schluessel=None,
+                 frisch=False):
     """Wortgenaue Zeiten fuer den bereits geschnittenen Clip.
 
     `worte` ist die Zahl der Woerter je Einblendung — drei, sein Wunsch vom
@@ -756,8 +764,9 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
     **Sprechpause ueber `pause` Sekunden**, weil die Zeichensetzung des
     Modells unzuverlaessig ist, die Pause aber nicht.
     """
-    flach, sprache = whisper_woerter(clip, model_size, lang,
-                                     cache=cache, schluessel=schluessel)
+    flach, sprache, stillen = whisper_woerter(
+        clip, model_size, lang, cache=cache, schluessel=schluessel,
+        frisch=frisch)
     # Whisper liefert eine Nachsilbe mit Bindestrich als eigenes Wort:
     # `self` + `-initiation`. Zusammengesetzt mit Leerzeichen steht dann
     # `SELF -INITIATION` im Bild. Derselbe Fallstrick wie bei
@@ -777,7 +786,7 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
     # verschluckt. Jede Stille schliesst das Wort ab, das vor ihr beginnt.
     nach_stille = set()
     stillen_vorn = None
-    for von, bis in stillen_finden(clip):
+    for von, bis in stillen:
         if von <= 0.02:
             stillen_vorn = (von, bis)
         kandidaten = [i for i, w in enumerate(flach) if w["start"] < von]
@@ -1642,7 +1651,10 @@ def main():
                 ("transkript-v1|" + _quellmarke(a.src)
                  + f"|{t0}|{dur}|{a.model}|{a.lang}").encode("utf-8")
             ).hexdigest()[:16]
-            t_cache = None if a.kein_cache else str(cache_ordner)
+            # --kein-cache heisst: neu rechnen. NICHT: nicht ablegen.
+            # Sonst zahlt die naechste Runde denselben Preis noch einmal —
+            # genau der Fehler, der hier abgestellt werden soll.
+            t_cache = str(cache_ordner)
             raw = os.path.join(td, "clip.mp4")
             if a.kein_cache or not (cache_ordner / f"woerter-{t_schluessel}.json").exists():
                 cut = [FFMPEG, "-y", "-ss", str(t0), "-i", a.src]
@@ -1652,7 +1664,8 @@ def main():
             cues, lang = whisper_cues(raw, a.model, a.lang, worte=a.worte,
                                       paare=korrekturen_lesen(a.korrekturen),
                                       pause=a.pause, cache=t_cache,
-                                      schluessel=t_schluessel)
+                                      schluessel=t_schluessel,
+                                      frisch=a.kein_cache)
             print(f"  Transkript: {len(cues)} Einblendungen, Sprache {lang}")
         elif a.srt:
             cues = srt_to_cues(a.srt)
