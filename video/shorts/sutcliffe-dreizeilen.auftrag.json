@@ -1,7 +1,7 @@
 {
  "name": "Sutcliffe-Folge - die drei Zeilen, die jeder Mann hoeren will",
  "datei": "YNB Podcast David Sutcliffe Lines.mp4 (ohne Musik), dazu zwei Musikfassungen 'ab 0-59' und 'ab 1-50'",
- "stand": "2026-11-26 - 53,06 s, Bett auf 6 bzw. 9 dB unter der Stimme zur Wahl",
+ "stand": "2026-11-26 - 53,06 s, Doppeltext behoben, Bett wieder ab 0:23,25 und 6 dB unter der Stimme",
  "wer_spricht": "Er erzaehlt die Stelle (von Chris Williamson uebernommen), Sutcliffe hakt nach und ordnet sie ein.",
  "quelle": {
   "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
@@ -65,12 +65,11 @@
  },
  "text": {
   "einblendungen": 63,
-  "quelle": "aus den 84 der dritten Fassung uebernommen: 21 verworfen, der Rest um 19,1333 s verschoben."
+  "quelle": "aus den 84 der dritten Fassung uebernommen: 21 verworfen, der Rest um 19,1333 s verschoben.",
+  "doppeltext": "Sein Befund vom 26.11.: 'anything like this.' (34,89-36,03) und 'Well, you're only' (35,63-36,13) lagen 0,40 s uebereinander, ASS zeichnete beide an dieselbe Stelle. Behoben ueber die neue Funktion ohne_ueberlappung() in shorts-render.py - gilt ab jetzt fuer jeden Short, nicht nur fuer diesen."
  },
  "ton": {
-  "musik": "The Irrepressibles - In This Shirt, 3 dB unter der Stimme (Stimme -32,1 dB). Zwei Einsatzstellen zur Wahl: 0:59,68 (Bett -24,1 dB) und 1:50,62 (Bett -24,2 dB).",
-  "einsatz_a": "0:59,68 - gemessener Einsatz (+16,5 dB im Hochband in 60 ms). Bett -11,0 dB -> Pegel -23,6 dB.",
-  "einsatz_b": "1:50,62 - gemessener Einsatz (+16,8 dB). Bett -10,7 dB -> Pegel -23,9 dB.",
+  "musik": "The Irrepressibles - In This Shirt, ab 0:23,25, 6 dB unter der Stimme (Stimme -32,1 dB, Bett -11,7 dB -> Bett -26,4 dB).",
   "warum_nicht_mehr_23_25": "Seine Rueckmeldung: 'irgendwie harmoniert das nicht'. 23,25 ist seine eigene Vorgabe vom 22.10. und sitzt sauber auf einem Taktanfang (Raster 2,8-3,1 s), aber dort baut der Song erst auf: das Hochband liegt bei -26 dB gegen -17 dB im vollen Teil ab Sekunde 58. Unter einem harten Einstieg wie 'The three lines' klingt das duenn. Die beiden neuen Stellen liegen im vollen Teil.",
   "ausblende_s": 4.21,
   "ins_outro_hinein": "Seine Ansage: 'dann sage ich dir immer wieder, dass die Musik ausfaden soll ins Outro hinein.' Dafuer wird das Bett jetzt erst NACH dem Outro-Anhaengen unter die ganze Datei gelegt, und musik_drunter.py hat einen neuen Schalter --outro SEKUNDEN: er schaltet den Steuerton des Sidechain-Kompressors fuer die letzten N Sekunden stumm. Ohne ihn drueckt der eigene Ton des Outros (Mittel -23,8 dB, Spitze -7,0 dB) das Bett weg - gemessen 2,7 dB Unterschied: Bett im Outro -40,2 dB ohne Schalter, -37,5 dB mit.",
@@ -78,7 +77,7 @@
   "outro": "video/outro_anhaengen.py --kopie, 4,21 s - diesmal VOR der Musik.",
   "musik_drive_id": "19SBTcagOyPMb7gVwAYm250aF0wjKHQ21 ('Kopie von The Irrepressibles - In This Shirt.mp3', 335,02 s) - am 23.11. neu geholt, weil der Container geleert war.",
   "pegelbefund": "Seine Rueckmeldung vom 26.11.: 'Warum zur Hoelle ist die Musik ploetzlich so ueberlaut?' Gemessen ist nichts lauter: Bett -37,3 dB gegen Datei -32,7 dB, +0,2 LU gegenueber der Fassung ohne Musik, Spitze -6,6 dBFS. Ursache ist die Stille: 24 % der Datei liegen unter -60 dB, und dort steht das Bett 34 bis 37 dB ueber dem Raumton, waehrend es unter der Sprache nur 0,1 bis 0,5 dB beitraegt. Die Formel bezieht sich auf den Mittelwert ueber die ganze Datei (-32,7 dB), der hier 4,7 dB unter dem Sprechpegel (-28,0 dB) liegt.",
-  "abstaende_geliefert": "6 dB unter (Bett -27,1 dB, -29,1 LUFS) und 9 dB unter (Bett -30,1 dB, -29,4 LUFS). Die 3-dB-Fassung bleibt als Vergleich daneben."
+  "warum_wieder_23_25": "Sein Befund vom 26.11.: 'da sind so die Lyrics, stoeren so richtig das Gesagte. Mir scheint es so, als spielst du den Song ein an einer Stelle, wo wir den sonst nie einspielen.' Beides zutrifft. Gemessen traegt der Abschnitt ab 0:59 3,4 dB mehr in 2,5-5 kHz und 3,4 dB mehr in 5-8 kHz als der ab 0:23 - genau das Konsonantenband. Die 23,25 sind damit nicht Gewohnheit, sondern der Abschnitt mit der geringsten Energie im Sprachband."
  },
  "laenge": {
   "ohne_outro_s": 48.78,

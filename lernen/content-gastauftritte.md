@@ -1625,3 +1625,56 @@ größer — hier 6 bis 9 dB. Vor dem Mischen die Stille messen: Anteil der Rahm
 unter −60 dB. Über etwa 15 % ist der Mittelwert als Bezug unbrauchbar.
 
 → betrifft: alle Content-Agenten
+
+## 26.11. — Doppeltext an der Sprecherkante, und der Songabschnitt, der mit der Stimme kämpft
+
+**Zwei Befunde von ihm am selben Short, beide zutreffend.**
+
+### 1. Zwei Einblendungen gleichzeitig im Bild
+
+*„Ich rede meinen Satz zu Ende und dann spricht David rein und der Text, das
+ist dann Doppeltext und man sieht gar nicht, was da passiert. Das sieht
+richtig amateurhaft aus, das kann halt nicht sein."*
+
+Nachgemessen: „anything like this." lief 34,89–36,03, „Well, you're only"
+35,63–36,13 — **0,40 s Überlappung**. ASS zeichnet beide an dieselbe
+Position, das Ergebnis ist Buchstabensalat.
+
+**Das ist kein Ausreißer, sondern der Normalfall an jeder Sprecherkante:** im
+Gespräch setzt der zweite ein, bevor der erste fertig ist, und Whisper gibt
+genau dafür überlappende Zeiten. Jeder Short mit zwei Sprechern kann das
+treffen.
+
+**Im Werkzeug behoben, nicht im Einzelfall:** `shorts-render.py` hat jetzt
+`ohne_ueberlappung()`. Die spätere Einblendung gewinnt, die frühere endet,
+wo jene anfängt, und der Lauf schreibt die Kürzung hin
+(*„Einblendung gekuerzt: 'anything like this.' lag 0.40 s ueber dem Beginn
+von …"*). Greift für das Bild **und** für die `.srt`, also für jeden Short
+und jeden Agenten. Die spätere darf nicht warten — sie liefe sonst aus der
+Lippensynchronität.
+
+### 2. Der Songabschnitt ab 0:59 kämpft mit der Stimme
+
+*„der Song ist plötzlich, da sind so die Lyrics, stören so richtig das
+Gesagte. Mir scheint es so, als spielst du den Song ein an einer Stelle, wo
+wir den sonst nie einspielen."* — **Beides richtig.** Ich hatte am 17.11. von
+0:23,25 auf 0:59,68 verlegt, weil ihm der dünne Aufbau nicht harmonierte.
+
+Spektrum von „In This Shirt", Bandanteile an der Gesamtenergie:
+
+| Abschnitt | 80–250 | 250–600 | 600–1,2k | 1,2–2,5k | 2,5–5k | 5–8k |
+|---|---|---|---|---|---|---|
+| 23–55 s | −4,1 | −3,7 | −9,0 | −13,4 | **−21,2** | **−27,7** |
+| 59–91 s | −4,2 | −4,2 | −8,7 | −11,4 | **−17,8** | **−24,3** |
+| 110–142 s | −4,3 | −4,6 | −7,7 | −12,6 | −17,3 | −19,5 |
+
+Ab 0:59 liegen **3,4 dB mehr** in 2,5–5 kHz und **3,4 dB mehr** in 5–8 kHz —
+genau das Band, in dem die Konsonanten der Sprache sitzen. Der Abschnitt
+konkurriert also messbar mit der Verständlichkeit, nicht nur gefühlt.
+
+**Regel: 0:23,25 ist nicht nur Gewohnheit, sondern der Abschnitt mit der
+geringsten Energie im Sprachband.** Wenn ein Einstieg zu dünn wirkt, ist die
+Antwort ein anderer Titel oder ein größerer Abstand — **nicht** ein dichterer
+Abschnitt desselben Titels. Hier jetzt: 0:23,25, 6 dB unter der Stimme.
+
+→ betrifft: alle Content-Agenten
