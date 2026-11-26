@@ -66,3 +66,7 @@ penis envy -> Penis Envy
 # das dreht den Satz.
 um i ended up -> I ended up
 i thought it was dead -> I thought I was dead
+# Dieselbe Stelle, 80:40: "I can touch it though and I didn't feel anything
+# touching myself". Der Lauf ueber den ganzen Clip macht daraus "and then
+# feel anything" - ein Satz, der nichts mehr heisst.
+though and then feel anything -> though and I didn't feel anything
