@@ -1077,3 +1077,9 @@ Und die stille Falle dahinter: rohe pts und das, was ffmpeg im Filtergraph
 sieht, unterscheiden sich hier um 21 ms (start_time 328 Ticks). Die Grenze
 muss in beiden Lesarten zwischen dem letzten alten und dem ersten neuen Bild
 liegen, sonst verschiebt sich der Fehler nur um einen Film.
+
+Nachtrag dazu: der Test, der das findet, heisst `video/nahtprobe.py` - zwei
+dicht aufeinanderfolgende Spruenge statt einem. Geeicht an der kaputten
+Fassung: dort zwei Spruenge an genau den beiden Grenzen, die er genannt hat,
+und einer an der dritten, die er nicht genannt hat. Erst damit ist der Test
+ein Beleg und nicht nur eine Zahl.
