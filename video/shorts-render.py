@@ -1235,7 +1235,7 @@ def zwischen_schluessel(a, t0, dur, broll):
         f"stumm={a.stumm}",
         f"musik={_quellmarke(a.musik)}|{a.musik_db}|{a.musik_unter}",
         f"laut={a.laut}",
-        f"zwischencrf={a.zwischen_crf}",
+        f"zwischen={a.zwischen_codec}|{a.zwischen_crf}",
     ]
     return hashlib.sha1("\n".join(teile).encode("utf-8")).hexdigest()[:16]
 
@@ -1403,6 +1403,11 @@ def main():
     ap.add_argument("--zwischen-crf", type=int, default=12,
                     help="crf der Zwischendatei (Vorgabe 12, sichtbar "
                          "verlustfrei). Hoeher spart Platz und kostet Bild.")
+    ap.add_argument("--zwischen-codec", choices=["ffv1", "h264"],
+                    default="ffv1",
+                    help="Codec der Zwischendatei. ffv1 ist verlustfrei "
+                         "(Vorgabe, damit die Endfassung der einstufigen "
+                         "Kette gleicht), h264 spart Platz und kostet Bild.")
     ap.add_argument("--kein-cache", action="store_true",
                     help="Zwischendatei und Transkript neu rechnen, auch "
                          "wenn sie daliegen.")
@@ -1590,14 +1595,19 @@ def main():
                 cmd_a += ["-filter_complex", ";".join(graph),
                           "-map", v_quelle, "-map", a_quelle,
                           "-r", "30",
-                          # crf 12 ist sichtbar verlustfrei; der Ton geht
-                          # als FLAC durch, damit nicht zweimal AAC
-                          # uebereinander liegt.
-                          "-c:v", "libx264", "-preset", "veryfast",
-                          "-crf", str(a.zwischen_crf),
-                          "-pix_fmt", "yuv420p", "-profile:v", "high",
-                          "-c:a", "flac", "-ar", "48000",
-                          str(zwischen)]
+                          "-pix_fmt", "yuv420p"]
+                if a.zwischen_codec == "ffv1":
+                    # Verlustfrei. Nur so gleicht die Endfassung der
+                    # einstufigen Kette; jedes h264 dazwischen kostet
+                    # messbar Bild, auch bei sehr niedrigem crf.
+                    cmd_a += ["-c:v", "ffv1", "-level", "3", "-g", "1"]
+                else:
+                    cmd_a += ["-c:v", "libx264", "-preset", "veryfast",
+                              "-crf", str(a.zwischen_crf),
+                              "-profile:v", "high"]
+                # Der Ton geht verlustfrei durch, damit nicht zweimal AAC
+                # uebereinanderliegt.
+                cmd_a += ["-c:a", "flac", "-ar", "48000", str(zwischen)]
                 t_a = time.time()
                 run(cmd_a)
                 print(f"  Stufe A gerechnet: {zwischen.name}, "
