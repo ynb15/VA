@@ -1013,3 +1013,24 @@ Was jetzt gilt:
   die Schrift stand also still, Kyle nicht. Die Beschwerde galt dem Abstand
   zum Kinn, nicht der absoluten Hoehe. Beschwerde und Messung muessen auf
   dieselbe Groesse zeigen, sonst misst man an der Beschwerde vorbei.
+
+## Nicht ablesen. Rechnen lassen. (26.11., dritter Anlauf)
+
+Zweimal habe ich die Kinnhoehe von einem Kontaktblatt ABGELESEN und mich um
+120-150 px vertan - beide Male, weil die Linealbeschriftung ueber hellem
+Buecherregal stand und ich die Zuordnung Label->Zeile geschaetzt habe. Beide
+Male war die Rechnung danach in sich stimmig und das Bild trotzdem falsch.
+Eine falsche Eingangszahl macht jede saubere Rechnung dahinter wertlos, und
+sie faellt nicht auf, weil nichts widerspricht.
+
+Was stattdessen traegt:
+* Die Kopfoberkante laesst sich maschinell holen und ist stabil: Hauttest
+  (R>110, R-B>45, R-G>18) auf das fertige Bild, oberste Zeile mit genug
+  Treffern. In E1 lag sie ueber 19 Sekunden bei 730-747, in E3 bei 586 -
+  gleiche Kamera, also 149 px Versatz, und genau diese 149 px waren der
+  Fehler. Eine Maschine, die stumpf dasselbe misst, schlaegt mein Auge.
+* Wo ich doch hinsehen muss, gehoert eine LINIE ins Bild, keine Zahl: eine
+  durchgezogene Linie auf der Schrift-Oberkante. Dann ist die Frage binaer
+  ("liegt die Linie auf dem Kiefer oder darunter") statt eine Schaetzung.
+* Und die Probe gehoert in die Einstellung mit dem TIEFSTEN Kinn, nicht in
+  ihre Mitte. Er lehnt sich; der schlechteste Moment entscheidet.
