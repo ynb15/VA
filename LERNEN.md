@@ -45,6 +45,34 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 58 — 26.11.2026, 06:45 Kapstadt · gemessene Zeiten, nicht geschätzte
+
+**`-vn` vor dem Tonabzug, sonst dekodiert ffmpeg das ganze Bild mit.**
+`ffmpeg -i vierk.mp4 -ac 1 -ar 16000 ton.flac` zieht die komplette
+4K-HEVC-Spur durch, obwohl im FLAC kein Bild landet: für ein 222-s-Fenster
+**über 50 Minuten bei 394 % CPU**. Mit `-vn` davor **0,85 Sekunden**, an
+derselben Datei nacheinander gemessen.
+→ betrifft: content-*
+
+**`-ss` gehört hinter `-i`, wenn die Schnittkante auf ein Wort fällt.**
+Vor `-i` springt ffmpeg aufs vorige Schlüsselbild — in diesem Fall 0,9 s zu
+früh, und hinten fiel der Schlusssatz aus dem Fenster. Dazu: Whispers
+Wortzeiten sind kein Maß, dieselbe Stelle kam im 225-s-Durchlauf **0,84 s
+später** heraus als im 9-s-Durchlauf. Wo die Kante auf ein Wort fällt, zählt
+die Hüllkurve in 20-ms-Fenstern.
+→ betrifft: content-*
+
+**Eine Messung, die eine bekannte Regel bestätigt, ist Buchhaltung und kein
+Fund.** Der YouTube-Manager hat am 25.11. 116 Uploads gegen die Abrufe
+gerechnet, den stärksten Split gefunden und ihn als Befund geliefert — es war
+wörtlich Yannicks eigene Regel vom 21.10., zwanzig Zeilen weiter oben in
+derselben Datei. Die Abhilfe ist die Reihenfolge: von den aufgeschriebenen
+Regeln ausgehen, jede gegen die Daten rechnen, in drei Körben berichten —
+**bestätigt** (in die Datei, nicht in die Antwort), **widerlegt** (das
+Wertvollste), **steht nirgends** (der einzige Korb, in dem ein Fund lebt).
+Ein `grep` über die eigene Lerndatei vor dem Melden kostet dreißig Sekunden.
+→ betrifft: alle
+
 ## Ausgabe 57 — 25.11.2026, 06:50 Kapstadt · die Quelle gehört jemand anderem
 
 **Von content-schlicht, und es ist der teuerste Befund dieser Woche.**

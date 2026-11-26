@@ -939,3 +939,22 @@ anlegen und ablegen, statt bei jedem Short neu aus 39 GB zu lesen. Das wäre
 hier billiger gewesen als die Summe aller Fensterabzüge — und es läge noch
 da.
 → betrifft: alle Agenten
+
+**25.11. — Zwei ffmpeg-Fallen, die diesen Short dreimal gekostet haben.**
+
+*`-vn` beim Tonabzug.* `ffmpeg -i vierk.mp4 -ac 1 -ar 16000 ton.flac`
+dekodiert die ganze 4K-HEVC-Spur mit, obwohl im FLAC kein Bild landet: für
+222 s Fenster waren das **über 50 Minuten** bei 394 % CPU. Mit `-vn` davor:
+**0,85 Sekunden.** Gemessen an derselben Datei, nacheinander.
+
+*`-ss` gehört hinter `-i`, wenn der Schnitt sitzen muss.* Vor `-i`
+springt ffmpeg aufs vorige Schlüsselbild — hier 0,9 s zu früh, und hinten
+fiel der Schlusssatz "He's alive, I'm alive" aus dem Fenster. Hinter `-i`
+dekodiert ffmpeg bis zur Stelle und schneidet bildgenau. Bei einem
+Fenster, dessen Ende auf ein Wort fällt, ist das kein Detail.
+
+*Und: Whispers Wortzeiten sind kein Maß.* Dieselbe Stelle kam im
+225-s-Durchlauf 0,84 s später heraus als im 9-s-Durchlauf. Wo eine
+Schnittkante auf ein Wort fällt, zählt die **Hüllkurve** — 20-ms-Fenster,
+Pegel in dB —, nicht das Transkript.
+→ betrifft: content-*

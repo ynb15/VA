@@ -865,3 +865,55 @@ von aussen, keiner von mir:
 hart halte, ist das kein Grund, sie zu bremsen — und schon gar keiner, sie
 auf Platz zwei zu setzen.
 → betrifft: alle Content-Agenten
+
+### Nachtrag 25.11. — Ich habe ihm seine eigene Regel als Fund verkauft
+
+Auftrag am 24.11.: *„analysiere die Titel und Thumbnails und schau mal, ob du
+ein Muster findest, das mir noch nicht aufgefallen ist."* Ich habe 116 Uploads
+gegen die Abrufe gerechnet, den staerksten Split gefunden — geliehene
+Eigennamen im Titel ziehen zwei- bis dreifach — und ihn als Befund geliefert.
+
+**Das ist woertlich seine Regel vom 21.10., die zwanzig Zeilen weiter oben in
+dieser Datei steht.** Er hat sie mir selbst gegeben, mit Begruendung und
+Beispielen. Ich habe sie gemessen und ihm zurueckgereicht.
+
+**Die Ursache, genau:** Der Auftrag hat zwei Haelften. Ist das Muster da — das
+steht in den Daten. Ist es ihm neu — das steht in dieser Datei. Ich habe nur
+die Haelfte bearbeitet, die die Daten beantworten koennen, und die andere
+umsonst behauptet. Eine fehlende Pruefung wirft keinen Fehler; sie erzeugt
+Sicherheit. Die Messung war sauber, also sah die Ausgabe nach Arbeit aus.
+
+**Warum das wiederkommt, wenn nichts sich aendert:** Die Auswertung liest
+`daten.json`. Seine Regeln stehen als Prosa in einer Datei, die kein Skript
+liest. Zwei getrennte Welten. Die Verbindung entsteht nur von Hand, und von
+Hand faellt sie aus.
+
+**Die Abhilfe ist die Reihenfolge, nicht mehr Sorgfalt.** Nicht erst Muster
+suchen und dann pruefen, ob sie bekannt sind. Umgekehrt: von seinen
+aufgeschriebenen Regeln ausgehen, jede gegen die Daten rechnen, und in drei
+Koerben berichten —
+
+1. **bestaetigt** — Buchhaltung, gehoert in die Datei, nicht in die Antwort
+2. **widerlegt** — das Wertvollste, was eine Messung liefern kann
+3. **steht nirgends** — der einzige Korb, in dem ein neuer Fund leben kann
+
+Korb 3 ist die Antwort auf *„ein Muster, das mir noch nicht aufgefallen ist"*.
+Alles andere ist Buchhaltung und wird so benannt.
+
+**Harte Vorbedingung:** Kein Muster geht als Fund raus, bevor
+`lernen/youtube-manager.md` und `youtube/*.md` nach seinem Stichwort
+durchsucht sind. Ein `grep`. Dreissig Sekunden.
+
+**Derselbe Fehler, kleiner, im selben Zug:** Ich habe ihm danach
+*„Rollen-Label weg vom Titelanfang"* als naechsten Schritt gegeben. Seine
+Regel sagt, die Rolle ist das, was zieht — `America's #1 Transgender Doctor`
+statt `Curtis Crane`. Meine Zahl und seine Regel sind nicht dieselbe Aussage,
+aber nah genug, dass ich haette sagen muessen: **das reibt sich mit deiner
+Regel.** Ein Widerspruch ist brauchbar. Ich habe ihn als Tipp getarnt.
+
+**Was in den Daten wirklich gegen seine Regel steht, und das Einzige:** Trump.
+Er fuehrt ihn selbst als erlaubten globalen Namen. Auf dem Kanal steht Trump
+bei 479 / 146 / 125 / 74 / 58, RFK bei 30. Ausgereift sind davon nur zwei
+(73 d → 70, 88 d → 30). Zwei Datenpunkte, kein Befund — aber Korb 2, und
+dahin gehoert die Aufmerksamkeit.
+→ betrifft: alle
