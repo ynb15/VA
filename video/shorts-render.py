@@ -743,10 +743,26 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
     # Pausen aus dem Ton: sie markieren die Satzgrenzen, die Whisper
     # verschluckt. Jede Stille schliesst das Wort ab, das vor ihr beginnt.
     nach_stille = set()
+    stillen_vorn = None
     for von, bis in stillen_finden(clip):
+        if von <= 0.02:
+            stillen_vorn = (von, bis)
         kandidaten = [i for i, w in enumerate(flach) if w["start"] < von]
         if kandidaten:
             nach_stille.add(kandidaten[-1])
+
+    # Whisper setzt den Anfang des ersten Wortes zu spaet, wenn der Clip hart
+    # auf dem ersten Laut beginnt. Im Pilze-Short sagte es 0,40 s, waehrend
+    # die Huellkurve den Einsatz bei 0,04 s zeigt — eine knappe halbe
+    # Sekunde, in der Kyle sichtbar spricht und nichts im Bild steht. Der
+    # Pegel weiss es besser als das Modell: die fuehrende Stille endet dort,
+    # wo gesprochen wird. Nur dieser eine Fall wird gezogen, und nur ueber
+    # hoechstens 0,8 s — ein Clip, der wirklich mit Stille anfaengt, behaelt
+    # seinen Vorlauf.
+    if flach:
+        vorlauf = stillen_vorn[1] if stillen_vorn else 0.0
+        if vorlauf < flach[0]["start"] <= vorlauf + 0.8:
+            flach[0] = {**flach[0], "start": vorlauf}
 
     cues, buf = [], []
 

@@ -6,6 +6,71 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Zum Render-Briefing: Shorts II hat die Zwischendatei schon, die Zahlen dazu (26.11.)
+
+**Antwort auf Punkt 2 des Briefings — eigene Änderungen am Renderer: keine.**
+`video/shorts-render.py` war auf diesem Zweig nur **älter** als auf
+`claude/content-assistant` (es fehlte deren Korrektur am Wortanfang, die den
+Einsatz des ersten Wortes aus der Hüllkurve zieht). Abgeglichen, jetzt
+gleichstand. Die beiden Werkzeuge dieses Zweigs — `kino-shorts2.py` und
+`abpacen-shorts2.py` — fassen den Renderer nicht an, sie importieren ihn.
+
+**Der Zwei-Stufen-Aufbau existiert hier seit dem 17.11.**, weil die
+Kino-Schicht ohnehin eine zweite Stufe braucht:
+
+| Stufe | was | gemessen |
+|---|---|---|
+| A | `shorts-render.py`: schneiden, Hochformat, Look, Tempo, B-Roll, **ohne Untertitel** → 1080×1920-Zwischendatei | **1:51 / 1:55 / 2:06** |
+| B | `kino-shorts2.py`: Whisper, ASS, Kasten, Logo, Blitze auf die Zwischendatei | **1:30 / 1:43** |
+| C | Outro ansetzen, Musik mischen, Bänder messen | ≈ 1 min |
+
+Gemessen am Ken-Aging-Short, 66,7 s Vorlage, 13 B-Roll-Einspieler.
+
+**Eine reine Untertitel-Änderung kostet hier also schon nur Stufe B** (≈ 1:35
+statt ≈ 4:30 für den ganzen Weg). Das ist der Beleg, dass die Zwischendatei
+trägt — sie ist auf diesem Zweig neunmal hintereinander benutzt worden
+(Fassung 4 bis 13).
+
+**Was in Stufe B trotzdem jedes Mal neu läuft: Whisper über die ganze
+Vorlage.** Das ist der größte verbleibende Posten und genau der
+Transkript-Cache aus Punkt 3 des Briefings. **Den Anteil kann ich gerade
+nicht beziffern** — der Arbeitsordner ist beim Containerneubau geleert
+worden, die Vorlage müsste aus dem 15,5-GB-Master neu gebaut werden. Wird
+beim ersten Strassman-Render mitgemessen, vorher und nachher.
+
+→ betrifft: content-*, Shorts I (Kingsbury)
+
+## Der Container wird neu gebaut und nimmt Whisper, ffmpeg und die Schriften mit (26.11.)
+
+Zwischen zwei Zügen wurde der Container ersetzt. Weg waren:
+
+| | |
+|---|---|
+| `imageio_ffmpeg` | **`shorts-render.py` bricht beim Import ab** (Zeile 46) |
+| `faster_whisper` | keine Untertitel |
+| `opencv` | keine Gesichtsmessung |
+| Petit Formal Script in `/usr/share/fonts` | libass fällt stillschweigend auf eine andere Schrift zurück |
+| der ganze Arbeitsordner | Vorlagen, B-Roll-Zuschnitte, Masters, fertige MP4s |
+
+Das Repo hat alles überlebt. **Was die Schrift gerettet hat, war die
+Entscheidung vom 17.11., sie als Datei in `video/fonts/` zu committen** —
+sonst wäre die Kursive jetzt stillschweigend eine andere gewesen, und das
+fällt im fertigen Bild kaum auf.
+
+**Die Umgebung hatte kein Einrichtungsskript.** Jetzt eins im Default
+hinterlegt: die drei pip-Pakete plus die Schriften aus `video/fonts/` nach
+`/usr/share/fonts/truetype/ynb`. Jeder Schritt vorher hier ausgeführt und
+geprüft, aus dem Verzeichnis, in dem das Skript startet. **Ungeprüft bleibt,
+ob es beim nächsten frischen Start wirklich durchläuft** — das zeigt sich
+erst dann.
+
+**Regel: was ein Werkzeug zum Laufen braucht, gehört ins
+Einrichtungsskript, und was ein Werkzeug stillschweigend ersetzt (Schriften,
+LUTs), gehört ins Repo.** Ein fehlendes Paket meldet sich; eine fehlende
+Schrift nicht.
+
+→ betrifft: content-*, YNB Cinema, EA, alle Agenten mit Renderwerkzeugen
+
 ## Unter 60 Sekunden hat nicht gereicht — es lag am Song selbst (18.11.)
 
 *„Okay, das wurde jetzt auch unter 60 Sekunden trotzdem noch gesperrt."*
