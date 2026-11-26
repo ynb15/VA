@@ -40,13 +40,26 @@ Aus der sechsten Runde (20.10.2026, „der Ton ist irgendwie anders“):
   11 % — das ist die Rauhheit, die WSOLA beim Zusammensetzen erzeugt.
   `rubberband` bleibt darunter.
 """
-import argparse, hashlib, json, os, re, subprocess, sys, tempfile, time
+import argparse, hashlib, json, os, re, shutil, subprocess, sys, tempfile, time
 from pathlib import Path
 
 import imageio_ffmpeg
 
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
+# Ausgabegroesse in Pixeln, von --ausgabe gesetzt. Shorts III rendert seit
+# dem 24.10.2026 auf 2160x3840, weil seine eigenen Exporte in dieser Groesse
+# liegen (an vier Exporten gemessen: 2160x3840, HEVC, 20 Mbit/s). Ob das so
+# bleiben soll, liegt bei ihm; bis zu seiner Antwort ist 1080x1920 die
+# Vorgabe, also das Format, in dem er bisher alles abgenommen hat.
 W, H = 1080, 1920
+# Entwurfsraster der Untertitel. Das bleibt bei 1080x1920, auch wenn die
+# Ausgabe groesser ist: libass rechnet von PlayRes auf die Bildgroesse hoch
+# und zeichnet die Schrift dabei vektoriell. Darum sitzt jede einmal
+# abgenommene Lippenhoehe weiter genau da, wo sie gemessen wurde - nur mit
+# mehr Pixeln gezeichnet. Alle Werte, die er je in Pixeln abgenommen hat
+# (Lippe, --tiefer, Schriftgroesse), gelten in diesem Raster.
+# Uebernommen von Shorts III (claude/content-gastauftritte).
+AW, AH = 1080, 1920
 HIER = Path(__file__).resolve().parent
 
 # --- Sein Preset ----------------------------------------------------------
@@ -91,8 +104,8 @@ SCALE_X = 112 if FONT_ERSATZ else 100
 FETTER = 2 if FONT_ERSATZ else 0
 GROESSE = 82               # seine Schriftgroesse (vorher hier 78)
 KONTUR = 8                 # schwarze Kontur ringsum
-MAX_BREITE = int(W * 0.72)  # die Zeile wird nie breiter, Rand bleibt frei
-LIPPE_VORGABE = int(H * 0.70)   # Mitte der Zeile, wenn die Lippe nicht feststeht
+MAX_BREITE = int(AW * 0.72)  # die Zeile wird nie breiter, Rand bleibt frei
+LIPPE_VORGABE = int(AH * 0.70)   # Mitte der Zeile, wenn die Lippe nicht feststeht
 GELB = "&H003AF1F9&"       # #F9F13A, sein Gelb aus dem Preset (ABGR)
 WEISS = "&H00FFFFFF&"
 GELB_I, WEISS_I = "&H3AF1F9&", "&HFFFFFF&"   # dieselben Farben als \\c im Text
@@ -118,6 +131,33 @@ def tc(s):
         return float(s)
     parts = str(s).split(":")
     return sum(float(p) * 60 ** i for i, p in enumerate(reversed(parts)))
+
+
+def ohne_ueberlappung(cues):
+    """Zwei Einblendungen duerfen sich NIE ueberlappen.
+
+    ASS zeichnet beide an dieselbe Stelle, und im Bild steht
+    Buchstabensalat. Er hat es am 26.11.2026 im Dreizeilen-Short gefunden:
+    "ANYTHING LIKE THIS" und "WELL, YOU'RE ONLY" lagen 0,40 s uebereinander,
+    weil Sutcliffe schon redet, waehrend er seinen Satz beendet. Whisper gibt
+    solchen Stellen ueberlappende Zeiten, und im Gespraech ist das der
+    Normalfall, kein Ausreisser. Sein Urteil: *"Das sieht richtig
+    amateurhaft aus, das kann halt nicht sein."*
+
+    Die spaetere Einblendung gewinnt, die fruehere endet, wo jene anfaengt -
+    sonst muesste der zweite Sprecher auf seine Zeile warten, und die liefe
+    dann aus der Lippensynchronitaet.
+
+    Von Shorts III (claude/content-gastauftritte, 3456d0e) uebernommen.
+    """
+    cues = [dict(c) for c in cues]
+    for a, b in zip(cues, cues[1:]):
+        if b["start"] < a["end"] - 1e-6:
+            print(f"  Einblendung gekuerzt: {a.get('text', '')!r} lag "
+                  f"{a['end'] - b['start']:.2f} s ueber dem Beginn von "
+                  f"{b.get('text', '')!r}")
+            a["end"] = max(b["start"], a["start"] + 0.001)
+    return cues
 
 
 def ass_time(t):
@@ -312,8 +352,8 @@ def kopfzeile_ass(text, pfad, dauer, groesse=96, hoehe_anteil=0.68,
                            for z in zeilen) + 2 * px))
     hoehe = int(round(len(zeilen) * groesse * zeilenabstand + 2 * py))
 
-    mitte_y = hoehe_anteil * H
-    x0 = int(round((W - breite) / 2))
+    mitte_y = hoehe_anteil * AH
+    x0 = int(round((AW - breite) / 2))
     y0 = int(round(mitte_y - hoehe / 2))
 
     feld = "&H00000000" if dunkel else "&H00FFFFFF"
@@ -322,8 +362,8 @@ def kopfzeile_ass(text, pfad, dauer, groesse=96, hoehe_anteil=0.68,
 
     kopf = f"""[Script Info]
 ScriptType: v4.00+
-PlayResX: {W}
-PlayResY: {H}
+PlayResX: {AW}
+PlayResY: {AH}
 WrapStyle: 2
 ScaledBorderAndShadow: yes
 
@@ -347,7 +387,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         y = int(round(erste + i * abstand))
         zeilen_aus.append(
             f"Dialogue: 1,{ass_time(0)},{bis},Kopf,,0,0,0,,"
-            f"{{\\an5\\pos({W // 2},{y})\\bord0\\shad0"
+            f"{{\\an5\\pos({AW // 2},{y})\\bord0\\shad0"
             f"\\fad({ein},{aus})}}{z}")
     Path(pfad).write_text(kopf + "\n".join(zeilen_aus) + "\n", encoding="utf-8")
     return breite, hoehe
@@ -369,8 +409,8 @@ def build_ass(cues, path, marginv=320, tempo=1.0, tiefer=0, gross=True,
     """
     head = f"""[Script Info]
 ScriptType: v4.00+
-PlayResX: {W}
-PlayResY: {H}
+PlayResX: {AW}
+PlayResY: {AH}
 WrapStyle: 0
 ScaledBorderAndShadow: yes
 
@@ -382,7 +422,7 @@ Style: Cap,{FONT},{groesse},{WEISS},&H00000000,&H00000000,0,0,{SCALE_X},100,1,{K
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lines = []
-    nutzbar = W - 2 * rand
+    nutzbar = AW - 2 * rand
 
     def zeile(von, bis, bauen, lippe, fs, fertig_zeit=False):
         """Eine Einblendung ausgeben.
@@ -394,7 +434,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         """
         kopf = ""
         if lippe is not None:
-            kopf = f"{{\\an8\\pos({W // 2},{int(lippe) + tiefer})}}"
+            kopf = f"{{\\an8\\pos({AW // 2},{int(lippe) + tiefer})}}"
         if fs != groesse:
             kopf += f"{{\\fs{fs}}}"
         t = 1.0 if fertig_zeit else tempo
@@ -1228,6 +1268,7 @@ def zwischen_schluessel(a, t0, dur, broll):
     teile = [
         "stufe-a-v1",
         _quellmarke(a.src), f"start={t0}", f"dauer={dur}",
+        f"ausgabe={a.ausgabe}",
         f"layout={a.layout}", f"oben={a.oben}", f"unten={a.unten}",
         f"focus={a.focus}",
         "plan=" + (Path(a.plan).read_text(encoding="utf-8") if a.plan else "-"),
@@ -1250,8 +1291,8 @@ def vorschau_ass(pfad, text="VORSCHAU – NICHT ZUR ABNAHME"):
     """
     kopf = f"""[Script Info]
 ScriptType: v4.00+
-PlayResX: {W}
-PlayResY: {H}
+PlayResX: {AW}
+PlayResY: {AH}
 WrapStyle: 0
 ScaledBorderAndShadow: yes
 
@@ -1311,7 +1352,7 @@ def main():
                          "endet (Satzgrenze ohne Satzzeichen)")
     ap.add_argument("--logo", default=None,
                     help="PNG mit Transparenz, wird unten mittig eingeblendet")
-    ap.add_argument("--logo-breite", type=int, default=int(W * 0.28),
+    ap.add_argument("--logo-breite", type=int, default=None,
                     help="Vorgabe 28 %% der Bildbreite, aus seinem Preset")
     ap.add_argument("--logo-alpha", type=float, default=1.0)
     ap.add_argument("--logo-hoehe", type=float, default=0.87,
@@ -1338,6 +1379,28 @@ def main():
                          "Stimme und Bett gemessen")
     ap.add_argument("--musik-unter", type=float, default=8.0,
                     help="dB, die das Bett unter der Stimme liegt")
+    ap.add_argument("--cues-out", default=None,
+                    help="Die fertigen Einblendungen samt Wortzeiten als "
+                         "JSON ablegen. Das ist die Fassung, aus der das Bild "
+                         "entsteht - nicht die .srt, die nur eine Ausgabe "
+                         "davon ist. (Von Shorts III.)")
+    ap.add_argument("--cues-in", default=None,
+                    help="Statt zu transkribieren diese JSON-Datei nehmen. "
+                         "Damit bleibt eine einmal abgenommene Einblendung "
+                         "ueber jeden weiteren Lauf erhalten: Whisper ist "
+                         "nicht deterministisch, eine abgelegte Datei schon. "
+                         "(Von Shorts III.)")
+    ap.add_argument("--ass-out", default=None,
+                    help="Die erzeugte ASS zusaetzlich hierhin kopieren. "
+                         "Zum Nachsehen, was wirklich ins Bild geht. "
+                         "(Von Shorts III.)")
+    ap.add_argument("--ausgabe", type=int, choices=(1080, 2160), default=1080,
+                    help="Bildbreite der Ausgabe: 1080 (= 1080x1920, Vorgabe) "
+                         "oder 2160. Shorts III rendert auf 2160x3840, weil "
+                         "seine eigenen Exporte so liegen. Mehr echtes "
+                         "Bilddetail bringt das nicht - Schrift, Logo und "
+                         "Outro werden aber vierfach so fein gezeichnet. "
+                         "Was gelten soll, entscheidet er.")
     ap.add_argument("--srt-out", default=None,
                     help="Einblendungen zusaetzlich als .srt ablegen, in der "
                          "Zeit des fertigen Videos. Fuer den Weg ueber einen "
@@ -1377,10 +1440,10 @@ def main():
     ap.add_argument("--broll-fokus", type=float, default=0.5,
                     help="0..1 schiebt das 9:16-Fenster waagrecht durch die "
                          "B-Roll — aus 16:9 bleiben nur 31,6 %% der Breite")
-    ap.add_argument("--broll-seite", type=int, default=BROLL_SEITE,
+    ap.add_argument("--broll-seite", type=int, default=None,
                     help=f"nur bei --broll-modus karte: Kantenlaenge "
                          f"(Vorgabe {BROLL_SEITE}, an der Referenz gemessen)")
-    ap.add_argument("--broll-radius", type=int, default=BROLL_RADIUS,
+    ap.add_argument("--broll-radius", type=int, default=None,
                     help=f"nur bei --broll-modus karte: Eckradius "
                          f"(Vorgabe {BROLL_RADIUS})")
     ap.add_argument("--look", choices=["preset", "warm", "aus"],
@@ -1421,6 +1484,27 @@ def main():
                          "mit der vollen Kette. Ob die Schrift auf der "
                          "Lippe sitzt, beantworten drei Bilder.")
     a = ap.parse_args()
+    # Die Ausgabegroesse steht erst jetzt fest; alle Vorgaben, die in Pixeln
+    # des AUSGABEBILDES gemessen sind, haengen daran. Die Untertitel nicht -
+    # die rechnen in AW/AH und werden von libass hochskaliert.
+    global W, H
+    W, H = (2160, 3840) if a.ausgabe == 2160 else (1080, 1920)
+    if a.vorschau:
+        # Halbe Kante. Entscheidend ist, dass das HIER steht und nicht erst
+        # am Ende der Kette: dann laufen Look, Untertitel, Logo und Encode
+        # schon auf dem kleinen Bild. Gemessen am Pilze-Short kostete die
+        # Vorschau mit der Skalierung am Schluss 113 s - also fast so viel
+        # wie eine ganze Runde. Die Lippenhoehe bleibt richtig, weil die
+        # Untertitel in AW/AH entworfen und von libass skaliert werden.
+        W, H = W // 2, H // 2
+    skala = W / AW
+    if a.logo_breite is None:
+        a.logo_breite = int(W * 0.28)
+    if a.broll_seite is None:
+        a.broll_seite = round(BROLL_SEITE * skala)
+    if a.broll_radius is None:
+        a.broll_radius = round(BROLL_RADIUS * skala)
+
     if not 0.5 <= a.tempo <= 2.0:
         raise SystemExit("--tempo muss zwischen 0.5 und 2.0 liegen (atempo).")
     if a.standbild and a.vorschau:
@@ -1622,7 +1706,13 @@ def main():
         # Untertitel: Transkript, Korrekturen, Lippenhoehe.
         # ------------------------------------------------------------------
         cues = None
-        if a.auto_captions:
+        if a.cues_in:
+            # Eine abgenommene Einblendungsliste schlaegt jedes Modell:
+            # Whisper ist nicht deterministisch, eine abgelegte Datei schon.
+            cues = json.loads(Path(a.cues_in).read_text(encoding="utf-8"))
+            print(f"  Einblendungen aus {a.cues_in}: {len(cues)} - nicht neu "
+                  f"transkribiert")
+        elif a.auto_captions:
             t_schluessel = hashlib.sha1(
                 ("transkript-v1|" + _quellmarke(a.src)
                  + f"|{t0}|{dur}|{a.model}|{a.lang}").encode("utf-8")
@@ -1646,6 +1736,18 @@ def main():
         elif a.srt:
             cues = srt_to_cues(a.srt)
 
+        # VOR jeder Ausgabe: die Ueberlappung raus. Sonst traegt die .srt
+        # den Doppeltext weiter, den das Bild nicht mehr hat - und beim
+        # naechsten Lauf ueber --cues-in kaeme er zurueck.
+        if cues:
+            cues = ohne_ueberlappung(cues)
+
+        if cues and a.cues_out:
+            Path(a.cues_out).write_text(
+                json.dumps(cues, ensure_ascii=False, indent=1),
+                encoding="utf-8")
+            print(f"  {len(cues)} Einblendungen nach {a.cues_out}")
+
         if cues and a.srt_out:
             n = cues_als_srt(cues, a.srt_out, tempo=a.tempo, gross=not a.klein)
             print(f"  {n} Zeilen nach {a.srt_out}")
@@ -1662,6 +1764,13 @@ def main():
             graph_b, v_b, a_b = [], "[0:v]", "[0:a]"
             eingaenge_b = [([], str(zwischen))]
             naechste = 1
+            if a.vorschau:
+                # Vor dem Look, nicht nach dem Logo: alles dahinter rechnet
+                # dann auf dem kleinen Bild. Die Zwischendatei bleibt die
+                # grosse - Vorschau und Endfassung teilen sich also denselben
+                # Zwischenspeicher.
+                graph_b.append(f"{v_b}scale={W}:{H}[vklein]")
+                v_b = "[vklein]"
 
         if a.look != "aus":
             lut = a.lut if (a.look == "preset" and a.lut
@@ -1753,6 +1862,9 @@ def main():
             build_ass(cues, ass, marginv=marginv, tempo=a.tempo,
                       tiefer=a.tiefer, gross=not a.klein,
                       groesse=a.schriftgroesse)
+            if a.ass_out:
+                shutil.copy(ass, a.ass_out)
+                print(f"  ASS nach {a.ass_out}")
             print(f"  {a.worte} Woerter je Einblendung, "
                   f"{'VERSALIEN' if not a.klein else 'gemischt'}, "
                   f"{a.tiefer} px unter der Lippe, Look: {a.look}")
@@ -1793,7 +1905,7 @@ def main():
             # mittig auf 68 % der Hoehe, die Zeile ohne gemessene Lippe auf
             # 70 %. Das faellt am Code nicht auf, nur im Bild — also wird es
             # ausgerechnet und gesagt, statt es zu riskieren.
-            feld_oben = a.kopfzeile_hoehe * H - kh / 2
+            feld_oben = a.kopfzeile_hoehe * AH - kh / 2
             feld_unten = feld_oben + kh
             band = [(c["lippe"] + a.tiefer, c["lippe"] + a.tiefer + a.schriftgroesse)
                     for c in (cues or [])
@@ -1883,12 +1995,6 @@ def main():
             letzte, a_b = "[vend]", "[aend]"
             naechste += 1
 
-        if a.vorschau:
-            # Halbe Kante, ultrafast, hohes crf. Zum Hinsehen, nicht zum
-            # Abnehmen.
-            graph_b.append(f"{letzte}scale={W // 2}:{H // 2}[vklein]")
-            letzte = "[vklein]"
-
         cmd = [FFMPEG, "-y"]
         for optionen, datei in eingaenge_b:
             cmd += optionen + ["-i", datei]
@@ -1907,9 +2013,7 @@ def main():
             print(f"  Stufe B: {time.time()-t_b:.0f}s")
 
     mb = os.path.getsize(a.out) / 1e6
-    breite = W // 2 if a.vorschau else W
-    hoehe = H // 2 if a.vorschau else H
-    print(f"  {a.out} — {breite}x{hoehe}, {mb:.1f} MB"
+    print(f"  {a.out} — {W}x{H}, {mb:.1f} MB"
           + ("  [VORSCHAU, nicht zur Abnahme]" if a.vorschau else ""))
 
 
