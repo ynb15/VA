@@ -1034,3 +1034,24 @@ Was stattdessen traegt:
   ("liegt die Linie auf dem Kiefer oder darunter") statt eine Schaetzung.
 * Und die Probe gehoert in die Einstellung mit dem TIEFSTEN Kinn, nicht in
   ihre Mitte. Er lehnt sich; der schlechteste Moment entscheidet.
+
+## Nachtrag: das Kontrollblatt hatte selbst einen Fehler (26.11.)
+
+Die rote Linie auf 1010 war mit `if v in (1010,1075)` innerhalb einer
+`range(820,1180,25)` gezeichnet - und 1010 liegt nicht auf diesem Raster.
+Also wurde sie nie gezeichnet, und ich habe auf dem Kontrollblatt wieder
+geschaetzt, genau wie vorher. Ein Pruefwerkzeug, das stillschweigend nichts
+prueft, ist schlimmer als keins: es gibt Sicherheit, ohne sie zu belegen.
+Deshalb wird die Linie jetzt unabhaengig vom Raster gezeichnet, und das
+Werkzeug liegt als `video/schriftband.py` im Repo.
+
+Dazu eine zweite Lehre: auch der Hauttest (R>110, R-B>45) taugt NICHT als
+Richter darueber, ob Schrift auf Haut liegt - an der Stelle, die er
+beanstandet hat, lag Kinn und Hals im Schatten, und der Test meldete 0,0 %.
+Ein Mass, das den bekannten Fehlerfall nicht findet, ist kein Mass. Vor dem
+Einsatz an der bekannten schlechten Stelle eichen.
+
+Und: dass eine Planaenderung im Bild ankommt, ist nachzurechnen, nicht zu
+glauben - zwei Bilder derselben Sekunde aus alter und neuer Fassung
+gegeneinander verschoben, Minimum der Differenz. Hier kamen exakt die
+erwarteten 60 px heraus.
