@@ -58,3 +58,5 @@ jimmy manawah -> Jimmy Manuwa
 30 grams of penicillin -> 30 grams of Penis Envy
 30 grams of peanuts -> 30 grams of Penis Envy
 penis envy -> Penis Envy
+# Kingsbury 80:25 — "dinner at 8:30"; Whisper trennt die Uhrzeit in "8" + ".30".
+8 30 -> 8:30
