@@ -40,7 +40,7 @@ Aus der sechsten Runde (20.10.2026, „der Ton ist irgendwie anders“):
   11 % — das ist die Rauhheit, die WSOLA beim Zusammensetzen erzeugt.
   `rubberband` bleibt darunter.
 """
-import argparse, json, os, re, subprocess, sys, tempfile
+import argparse, hashlib, json, os, re, subprocess, sys, tempfile, time
 from pathlib import Path
 
 import imageio_ffmpeg
@@ -682,20 +682,29 @@ def _packen(woerter, worte, max_px):
     return gruppen
 
 
-def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
-                 pause=0.45, max_px=MAX_BREITE):
-    """Wortgenaue Zeiten fuer den bereits geschnittenen Clip.
+def whisper_woerter(clip, model_size="small", lang=None, cache=None,
+                    schluessel=None):
+    """Die rohe Wortliste aus Whisper — der teure Teil, und der einzige hier,
+    der sich ueberhaupt zwischenspeichern laesst.
 
-    `worte` ist die Zahl der Woerter je Einblendung — drei, sein Wunsch vom
-    20.10. Eine Einblendung aus einem einzigen Wort wandert zum Nachbarn.
+    NICHT zwischengespeichert werden Korrekturen, Gruppierung, Satzgrenzen
+    und Lippenhoehe: genau die aendern sich zwischen zwei Runden. Am
+    26.11.2026 wurde derselbe Short viermal gerendert, dreimal davon nur
+    wegen eines Wortes in `korrekturen.txt` — und jedes Mal lief das Modell
+    ueber dieselben siebzig Sekunden neu. Sein Einwand dazu, woertlich:
+    „Das kann nicht sein, dass ich mit jeder Verbesserung, dass jedes Mal
+    das Ding neu gerendert werden muss."
 
-    **Eine Einblendung laeuft nie ueber eine Satzgrenze.** Das war sein
-    zweiter Einwand: wenn der letzte Satz endet und der naechste anfaengt,
-    standen beide Teile in derselben Zeile und der Schnitt war im Bild nicht
-    zu sehen. Getrennt wird an zwei Stellen: am Satzzeichen — und an einer
-    **Sprechpause ueber `pause` Sekunden**, weil die Zeichensetzung des
-    Modells unzuverlaessig ist, die Pause aber nicht.
+    Der Schluessel kommt von aussen und beschreibt Quelle, Fenster, Modell
+    und Sprache. Was das Modell hoert, haengt von nichts anderem ab.
     """
+    if cache and schluessel:
+        p = Path(cache) / f"woerter-{schluessel}.json"
+        if p.exists():
+            d = json.loads(p.read_text(encoding="utf-8"))
+            print(f"  Transkript aus dem Zwischenspeicher: "
+                  f"{len(d['woerter'])} Woerter, Sprache {d['sprache']}")
+            return d["woerter"], d["sprache"]
     from faster_whisper import WhisperModel
     import numpy as np
     # Den Ton selbst dekodieren statt faster-whisper die Datei geben:
@@ -725,6 +734,30 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
     flach = [{"t": w.word.strip(), "start": w.start, "end": w.end, "seg": i}
              for i, s in enumerate(segments) for w in (s.words or [])
              if w.word.strip()]
+    if cache and schluessel:
+        Path(cache).mkdir(parents=True, exist_ok=True)
+        (Path(cache) / f"woerter-{schluessel}.json").write_text(
+            json.dumps({"woerter": flach, "sprache": info.language}),
+            encoding="utf-8")
+    return flach, info.language
+
+
+def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
+                 pause=0.45, max_px=MAX_BREITE, cache=None, schluessel=None):
+    """Wortgenaue Zeiten fuer den bereits geschnittenen Clip.
+
+    `worte` ist die Zahl der Woerter je Einblendung — drei, sein Wunsch vom
+    20.10. Eine Einblendung aus einem einzigen Wort wandert zum Nachbarn.
+
+    **Eine Einblendung laeuft nie ueber eine Satzgrenze.** Das war sein
+    zweiter Einwand: wenn der letzte Satz endet und der naechste anfaengt,
+    standen beide Teile in derselben Zeile und der Schnitt war im Bild nicht
+    zu sehen. Getrennt wird an zwei Stellen: am Satzzeichen — und an einer
+    **Sprechpause ueber `pause` Sekunden**, weil die Zeichensetzung des
+    Modells unzuverlaessig ist, die Pause aber nicht.
+    """
+    flach, sprache = whisper_woerter(clip, model_size, lang,
+                                     cache=cache, schluessel=schluessel)
     # Whisper liefert eine Nachsilbe mit Bindestrich als eigenes Wort:
     # `self` + `-initiation`. Zusammengesetzt mit Leerzeichen steht dann
     # `SELF -INITIATION` im Bild. Derselbe Fallstrick wie bei
@@ -863,7 +896,7 @@ def whisper_cues(clip, model_size="small", lang=None, worte=3, paare=None,
                              "text": " ".join(w["t"] for w in teil),
                              "woerter": teil,
                              "grund": lauf[-1]["grund"] if k + 1 == len(teile) else "voll"})
-    return zusammen, info.language
+    return zusammen, sprache
 
 
 def run(cmd):
@@ -1161,6 +1194,71 @@ def plan_graph(schnitte):
     return teile, lippen
 
 
+def _quellmarke(pfad):
+    """Datei eindeutig genug beschreiben, ohne sie zu lesen: Pfad, Groesse,
+    Aenderungszeit. Ein Hash ueber 32 GB kostet mehr als der Rendergang."""
+    if not pfad or not os.path.exists(pfad):
+        return f"-{pfad}-"
+    st = os.stat(pfad)
+    return f"{os.path.abspath(pfad)}|{st.st_size}|{int(st.st_mtime)}"
+
+
+def zwischen_schluessel(a, t0, dur, broll):
+    """Schluessel der Zwischendatei: ALLES, was Stufe A beeinflusst.
+
+    Steht ein Wert nicht drin, liefert der Zwischenspeicher eine Datei, die
+    nicht zu den Parametern passt — und das faellt erst im fertigen Short
+    auf. Lieber einen Wert zu viel: ein Fehlschlag des Schluessels kostet
+    einen Rendergang, ein falscher Treffer kostet Vertrauen.
+
+    Was NICHT hineingehoert, weil es erst in Stufe B wirkt: Untertitel,
+    Korrekturliste, Lippenhoehe, Schriftgroesse, Logo, Kopfzeile, Outro,
+    crf der Endfassung.
+    """
+    teile = [
+        "stufe-a-v1",
+        _quellmarke(a.src), f"start={t0}", f"dauer={dur}",
+        f"layout={a.layout}", f"oben={a.oben}", f"unten={a.unten}",
+        f"focus={a.focus}",
+        "plan=" + (Path(a.plan).read_text(encoding="utf-8") if a.plan else "-"),
+        f"tempo={a.tempo}", f"dehnung={a.dehnung}",
+        f"look={a.look}", "lut=" + (_quellmarke(a.lut) if a.look == "preset" else "-"),
+        f"stumm={a.stumm}",
+        f"broll={a.broll}|{a.broll_modus}|{a.broll_seite}|{a.broll_radius}|{a.broll_fokus}",
+        "brolldateien=" + "|".join(_quellmarke(d) for _, _, d in broll),
+        f"musik={_quellmarke(a.musik)}|{a.musik_db}|{a.musik_unter}",
+        f"laut={a.laut}",
+        f"zwischencrf={a.zwischen_crf}",
+    ]
+    return hashlib.sha1("\n".join(teile).encode("utf-8")).hexdigest()[:16]
+
+
+def vorschau_ass(pfad, text="VORSCHAU – NICHT ZUR ABNAHME"):
+    """Ein Band, das in jedem Bild der Vorschau steht.
+
+    Eine Vorschau, die aussieht wie eine Endfassung, landet irgendwann als
+    Endfassung bei ihm. Darum steht es IM BILD und nicht nur im Dateinamen —
+    beides zusammen, weil der Dateiname beim Weiterschicken verloren geht
+    und das Bild nicht.
+    """
+    kopf = f"""[Script Info]
+ScriptType: v4.00+
+PlayResX: {W}
+PlayResY: {H}
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, ScaleX, ScaleY, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Vorschau,{FONT},54,&H0000D7FF,&H00000000,&H80000000,0,0,100,100,3,4,0,8,20,20,40,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 9,0:00:00.00,9:59:59.00,Vorschau,,0,0,0,,{text}
+"""
+    Path(pfad).write_text(kopf, encoding="utf-8")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", required=True)
@@ -1287,16 +1385,57 @@ def main():
                     help="Hald-CLUT-PNG mit seinem Filter. Liegt sie nicht "
                          "da, laeuft die Annaeherung und es steht in der "
                          "Ausgabe.")
+    ap.add_argument("--einstufig", action="store_true",
+                    help="die alte Kette in einem einzigen ffmpeg-Durchlauf. "
+                         "Nur noch zum Gegenpruefen gedacht: sie liest fuer "
+                         "jede Textkorrektur das 4K-Master neu.")
+    ap.add_argument("--zwischen", default=None,
+                    help="Pfad der Zwischendatei (Stufe A). Ohne Angabe "
+                         "landet sie in .zwischen/ neben der Ausgabe, "
+                         "benannt nach Quelle, Fenster und Parametern.")
+    ap.add_argument("--zwischen-crf", type=int, default=12,
+                    help="crf der Zwischendatei (Vorgabe 12, sichtbar "
+                         "verlustfrei). Hoeher spart Platz und kostet Bild.")
+    ap.add_argument("--kein-cache", action="store_true",
+                    help="Zwischendatei und Transkript neu rechnen, auch "
+                         "wenn sie daliegen.")
+    ap.add_argument("--vorschau", action="store_true",
+                    help="schnelle Kontrollfassung: 540x960, ultrafast, "
+                         "crf 30, mit Vorschau-Band im Bild und VORSCHAU im "
+                         "Dateinamen. Nie zur Abnahme.")
+    ap.add_argument("--standbild", default=None,
+                    help="Sekunden im fertigen Video, komma-getrennt: statt "
+                         "eines Videos werden nur diese Bilder gerechnet, "
+                         "mit der vollen Kette. Ob die Schrift auf der "
+                         "Lippe sitzt, beantworten drei Bilder.")
     a = ap.parse_args()
-
     if not 0.5 <= a.tempo <= 2.0:
         raise SystemExit("--tempo muss zwischen 0.5 und 2.0 liegen (atempo).")
+    if a.standbild and a.vorschau:
+        raise SystemExit("--standbild und --vorschau zusammen ergeben nichts.")
+    if a.einstufig and (a.vorschau or a.standbild):
+        raise SystemExit("--vorschau und --standbild brauchen die "
+                         "zweistufige Kette, nicht --einstufig.")
+
+    if a.vorschau:
+        # Der Dateiname sagt es, und das Band im Bild sagt es auch. Eine
+        # Vorschau, die aussieht wie eine Endfassung, landet irgendwann als
+        # Endfassung bei ihm — und das darf nicht an einem Dateinamen haengen.
+        zp = Path(a.out)
+        if "vorschau" not in zp.stem.lower():
+            a.out = str(zp.with_name(zp.stem + "-VORSCHAU" + zp.suffix))
+            print(f"  Vorschau: Ausgabe heisst {os.path.basename(a.out)}")
 
     t0 = tc(a.start)
     dur = (tc(a.end) - t0) if a.end else None
     sw, sh = probe_size(a.src)
     lippen = None
 
+    # ======================================================================
+    # STUFE A — alles, was sich zwischen zwei Textrunden NICHT aendert:
+    # Fenster, Hochformat, Look, Tempo, Stummschaltung, B-Roll, Musik,
+    # Lautheit. Und damit alles, was das 4K-Master anfassen muss.
+    # ======================================================================
     if a.plan:
         daten = json.loads(Path(a.plan).read_text(encoding="utf-8"))
         schnitte = daten["einstellungen"]
@@ -1375,13 +1514,13 @@ def main():
     # B-Roll kommt HINTER den Look und VOR die Untertitel: der Film soll
     # nicht durch seine warme Gradation laufen (in der Referenz sieht die
     # B-Roll aus wie Film, nicht wie sein Studio), die Einblendungen sollen
-    # aber darauf stehen.
+    # aber darauf stehen. Genau an dieser Naht trennen die beiden Stufen.
     broll = broll_lesen(a.broll) if a.broll else []
     if broll:
-        graph_b, v_quelle, fenster_b = broll_graph(
+        graph_b_roll, v_quelle, fenster_b = broll_graph(
             broll, v_quelle, a.tempo, a.broll_modus, a.broll_seite,
             a.broll_radius, a.broll_fokus, 1)
-        graph += graph_b
+        graph += graph_b_roll
         for (von, bis, datei), (fa, fb) in zip(broll, fenster_b):
             print(f"  B-Roll {von:.2f}-{bis:.2f} Clipzeit "
                   f"-> {fa:.2f}-{fb:.2f} im Bild ({fb - fa:.2f}s): "
@@ -1394,17 +1533,126 @@ def main():
         else:
             print(f"  randlos {W}x{H}, Fokus {a.broll_fokus:.2f}")
 
+    # Eingaenge der Stufe A. Die Reihenfolge legt die Nummern im Graphen
+    # fest: 0 = Quelle, dann die B-Roll, dann die Musik.
+    eingaenge_a = []
+    vorn = []
+    if not a.plan:
+        vorn += ["-ss", str(t0)]
+        # `-t` MUSS vor das `-i` der Quelle. ffmpeg ordnet Optionen der
+        # naechsten Datei zu: stand es dahinter und folgte noch ein Eingang
+        # (Logo, B-Roll), band es an DESSEN Eingang und begrenzte gar nichts.
+        # Am 22.10. kam so ein Short heraus, der bis zum Ende der Quelle
+        # lief — 54 s statt 45 s — und am Standbild nichts davon zeigte.
+        if dur:
+            vorn += ["-t", str(dur)]
+    eingaenge_a.append((vorn, a.src))
+    for _, _, datei in broll:
+        # Nur das Bild wird gebraucht; -an haelt den Ton der B-Roll von
+        # vornherein draussen, damit nie zwei Stimmen laufen.
+        eingaenge_a.append((["-an"], datei))
+    naechste_a = 1 + len(broll)
+
+    if a.musik:
+        # Das Bett laeuft unter der Stimme und wird von ihr weggedrueckt
+        # (sidechaincompress). Ohne das Wegdruecken frisst eine epische
+        # Flaeche die Konsonanten.
+        eingaenge_a.append(([], a.musik))
+        laenge = (clip_laenge / a.tempo) if clip_laenge else None
+        db = a.musik_db
+        if db is None:
+            stimme_db = mittlerer_pegel(a.src, dauer=clip_laenge)
+            bett_db = mittlerer_pegel(a.musik, dauer=laenge)
+            if stimme_db is not None and bett_db is not None:
+                db = round(stimme_db - bett_db - a.musik_unter, 1)
+                print(f"  Musik: Stimme {stimme_db:.1f} dB, Bett "
+                      f"{bett_db:.1f} dB -> {db:+.1f} dB "
+                      f"({a.musik_unter:.0f} dB darunter)")
+            else:
+                db = -16.0
+        stimme = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
+        graph.append(f"{stimme}asplit=2[st1][st2]")
+        bett = (f"[{naechste_a}:a]aloop=loop=-1:size=2000000000,"
+                f"volume={db}dB,afade=t=in:st=0:d=1.5")
+        if laenge:
+            bett += f",atrim=0:{laenge:.2f},afade=t=out:st={max(laenge-2.0,0):.2f}:d=2.0"
+        graph.append(bett + "[bett]")
+        graph.append("[bett][st2]sidechaincompress=threshold=0.04:ratio=8:"
+                     "attack=15:release=350[duck]")
+        graph.append("[st1][duck]amix=inputs=2:normalize=0:"
+                     "dropout_transition=0[amix]")
+        a_quelle = "[amix]"
+        naechste_a += 1
+
+    ziel = None if a.laut.strip().lower() == "aus" else float(a.laut)
+    if ziel is not None:
+        gemessen, spitze = lautheit(a.src, dauer=clip_laenge)
+        if gemessen is not None:
+            print(f"  Quelle {gemessen:.1f} LUFS, Spitze {spitze:.1f} dBFS"
+                  f" -> {ziel:.1f} LUFS")
+        stimme = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
+        graph.append(f"{stimme}{lautheit_kette(ziel)}[alaut]")
+        a_quelle = "[alaut]"
+
     with tempfile.TemporaryDirectory() as td:
+        # ------------------------------------------------------------------
+        # Zwischendatei: einmal je Fenster, nicht je Textrunde.
+        # ------------------------------------------------------------------
+        cache_ordner = Path(a.out).resolve().parent / ".zwischen"
+        zwischen = None
+        if not a.einstufig:
+            if a.zwischen:
+                zwischen = Path(a.zwischen)
+            else:
+                schluessel = zwischen_schluessel(a, t0, dur, broll)
+                zwischen = cache_ordner / f"stufe-a-{schluessel}.mkv"
+            zwischen.parent.mkdir(parents=True, exist_ok=True)
+            frisch = a.kein_cache or not zwischen.exists()
+            if frisch:
+                cmd_a = [FFMPEG, "-y"]
+                for optionen, datei in eingaenge_a:
+                    cmd_a += optionen + ["-i", datei]
+                cmd_a += ["-filter_complex", ";".join(graph),
+                          "-map", v_quelle, "-map", a_quelle,
+                          "-r", "30",
+                          # crf 12 ist sichtbar verlustfrei; der Ton geht
+                          # als FLAC durch, damit nicht zweimal AAC
+                          # uebereinander liegt.
+                          "-c:v", "libx264", "-preset", "veryfast",
+                          "-crf", str(a.zwischen_crf),
+                          "-pix_fmt", "yuv420p", "-profile:v", "high",
+                          "-c:a", "flac", "-ar", "48000",
+                          str(zwischen)]
+                t_a = time.time()
+                run(cmd_a)
+                print(f"  Stufe A gerechnet: {zwischen.name}, "
+                      f"{os.path.getsize(zwischen)/1e6:.0f} MB, "
+                      f"{time.time()-t_a:.0f}s")
+            else:
+                print(f"  Stufe A aus dem Zwischenspeicher: {zwischen.name} "
+                      f"({os.path.getsize(zwischen)/1e6:.0f} MB) — das 4K-"
+                      f"Master wird nicht angefasst")
+
+        # ------------------------------------------------------------------
+        # Untertitel: Transkript, Korrekturen, Lippenhoehe.
+        # ------------------------------------------------------------------
         cues = None
         if a.auto_captions:
+            t_schluessel = hashlib.sha1(
+                ("transkript-v1|" + _quellmarke(a.src)
+                 + f"|{t0}|{dur}|{a.model}|{a.lang}").encode("utf-8")
+            ).hexdigest()[:16]
+            t_cache = None if a.kein_cache else str(cache_ordner)
             raw = os.path.join(td, "clip.mp4")
-            cut = [FFMPEG, "-y", "-ss", str(t0), "-i", a.src]
-            if dur:
-                cut += ["-t", str(dur)]
-            run(cut + ["-c", "copy", raw])
+            if a.kein_cache or not (cache_ordner / f"woerter-{t_schluessel}.json").exists():
+                cut = [FFMPEG, "-y", "-ss", str(t0), "-i", a.src]
+                if dur:
+                    cut += ["-t", str(dur)]
+                run(cut + ["-c", "copy", raw])
             cues, lang = whisper_cues(raw, a.model, a.lang, worte=a.worte,
                                       paare=korrekturen_lesen(a.korrekturen),
-                                      pause=a.pause)
+                                      pause=a.pause, cache=t_cache,
+                                      schluessel=t_schluessel)
             print(f"  Transkript: {len(cues)} Einblendungen, Sprache {lang}")
         elif a.srt:
             cues = srt_to_cues(a.srt)
@@ -1413,7 +1661,20 @@ def main():
             n = cues_als_srt(cues, a.srt_out, tempo=a.tempo, gross=not a.klein)
             print(f"  {n} Zeilen nach {a.srt_out}")
 
-        letzte = v_quelle
+        # ==================================================================
+        # STUFE B — Untertitel, Kopfzeile, Logo, Outro, Encode. Alles, was
+        # je Runde neu ist, und nichts davon fasst das Master an.
+        # ==================================================================
+        if a.einstufig:
+            graph_b, v_b, a_b = list(graph), v_quelle, a_quelle
+            eingaenge_b = list(eingaenge_a)
+            naechste = naechste_a
+        else:
+            graph_b, v_b, a_b = [], "[0:v]", "[0:a]"
+            eingaenge_b = [([], str(zwischen))]
+            naechste = 1
+
+        letzte = v_b
         if cues:
             # Ein ausdruecklich gesetztes --lippe schlaegt den Plan. Die
             # Lippenhoehe im Plan stammt aus der Bewegungsmessung und traegt
@@ -1449,6 +1710,13 @@ def main():
                 oben = LIPPE_VORGABE - a.schriftgroesse // 2
                 cues = [{**c, "lippe": oben} for c in cues]
             ass = os.path.join(td, "cap.ass")
+            # In der zweistufigen Kette ist das Bild schon gedehnt; die
+            # Zeiten der Einblendungen muessen dann in der Zeit des fertigen
+            # Videos stehen, nicht in Clipzeit. build_ass rechnet das mit
+            # `tempo` — derselbe Wert wie in der einstufigen Kette, nur dass
+            # dort das Bild erst NACH dem Brennen gedehnt wuerde. Darum steht
+            # setpts in Stufe A und nicht hier: sonst waeren Bild und Schrift
+            # um den Faktor Tempo gegeneinander verschoben.
             build_ass(cues, ass, marginv=marginv, tempo=a.tempo,
                       tiefer=a.tiefer, gross=not a.klein,
                       groesse=a.schriftgroesse)
@@ -1458,27 +1726,8 @@ def main():
             filt = "subtitles=" + ass.replace(":", r"\:")
             if FONT_DATEI:
                 filt += ":fontsdir=" + str(FONT_ORDNER).replace(":", r"\:")
-            graph.append(f"{v_quelle}{filt}[vout]")
+            graph_b.append(f"{letzte}{filt}[vout]")
             letzte = "[vout]"
-
-        cmd = [FFMPEG, "-y"]
-        if not a.plan:
-            cmd += ["-ss", str(t0)]
-            # `-t` MUSS vor das `-i` der Quelle. ffmpeg ordnet Optionen der
-            # naechsten Datei zu: stand es dahinter und folgte noch ein
-            # Eingang (Logo, B-Roll), band es an DESSEN Eingang und
-            # begrenzte gar nichts. Am 22.10. kam so ein Short heraus, der
-            # bis zum Ende der Quelle lief — 54 s statt 45 s — und am
-            # Standbild nichts davon zeigte.
-            if dur:
-                cmd += ["-t", str(dur)]
-        cmd += ["-i", a.src]
-        naechste = 1
-        for _, _, datei in broll:
-            # Nur das Bild wird gebraucht; -an haelt den Ton der B-Roll
-            # von vornherein draussen, damit nie zwei Stimmen laufen.
-            cmd += ["-an", "-i", datei]
-            naechste += 1
 
         if a.kopfzeile:
             kopf_ass = os.path.join(td, "kopf.ass")
@@ -1490,7 +1739,7 @@ def main():
             filt = "subtitles=" + kopf_ass.replace(":", r"\:")
             if FONT_DATEI:
                 filt += ":fontsdir=" + str(FONT_ORDNER).replace(":", r"\:")
-            graph.append(f"{letzte}{filt}[vkopf]")
+            graph_b.append(f"{letzte}{filt}[vkopf]")
             letzte = "[vkopf]"
             print(f"  Kopfzeile {a.kopfzeile!r}: Feld {kb}x{kh} px, "
                   f"{a.kopfzeile_dauer}s, "
@@ -1534,90 +1783,101 @@ def main():
             # („das Logo ist wieder mal zu klein"). `--logo-breite` meint ab
             # jetzt die Breite der MARKE, nicht die der Datei.
             kasten = _logo_kasten(a.logo)
-            cmd += ["-i", a.logo]
+            eingaenge_b.append(([], a.logo))
             zuschnitt = (f"crop={kasten[2]}:{kasten[3]}:{kasten[0]}:{kasten[1]},"
                          if kasten else "")
-            graph.append(f"[{naechste}:v]{zuschnitt}"
-                         f"scale={a.logo_breite}:-1,format=rgba,"
-                         f"colorchannelmixer=aa={a.logo_alpha}[lg]")
-            graph.append(f"{letzte}[lg]overlay=(W-w)/2:"
-                         f"H*{a.logo_hoehe}-h/2[vlogo]")
+            graph_b.append(f"[{naechste}:v]{zuschnitt}"
+                           f"scale={a.logo_breite}:-1,format=rgba,"
+                           f"colorchannelmixer=aa={a.logo_alpha}[lg]")
+            graph_b.append(f"{letzte}[lg]overlay=(W-w)/2:"
+                           f"H*{a.logo_hoehe}-h/2[vlogo]")
             letzte = "[vlogo]"
             naechste += 1
 
-        if a.musik:
-            # Das Bett laeuft unter der Stimme und wird von ihr weggedrueckt
-            # (sidechaincompress). Ohne das Wegdruecken frisst eine epische
-            # Flaeche die Konsonanten.
-            cmd += ["-i", a.musik]
-            laenge = (clip_laenge / a.tempo) if clip_laenge else None
-            db = a.musik_db
-            if db is None:
-                stimme_db = mittlerer_pegel(a.src, dauer=clip_laenge)
-                bett_db = mittlerer_pegel(a.musik, dauer=laenge)
-                if stimme_db is not None and bett_db is not None:
-                    db = round(stimme_db - bett_db - a.musik_unter, 1)
-                    print(f"  Musik: Stimme {stimme_db:.1f} dB, Bett "
-                          f"{bett_db:.1f} dB -> {db:+.1f} dB "
-                          f"({a.musik_unter:.0f} dB darunter)")
-                else:
-                    db = -16.0
-            stimme = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
-            graph.append(f"{stimme}asplit=2[st1][st2]")
-            bett = (f"[{naechste}:a]aloop=loop=-1:size=2000000000,"
-                    f"volume={db}dB,afade=t=in:st=0:d=1.5")
-            if laenge:
-                bett += f",atrim=0:{laenge:.2f},afade=t=out:st={max(laenge-2.0,0):.2f}:d=2.0"
-            graph.append(bett + "[bett]")
-            graph.append("[bett][st2]sidechaincompress=threshold=0.04:ratio=8:"
-                         "attack=15:release=350[duck]")
-            graph.append("[st1][duck]amix=inputs=2:normalize=0:"
-                         "dropout_transition=0[amix]")
-            a_quelle = "[amix]"
-            naechste += 1
+        if a.vorschau:
+            v_ass = os.path.join(td, "vorschau.ass")
+            vorschau_ass(v_ass)
+            filt = "subtitles=" + v_ass.replace(":", r"\:")
+            if FONT_DATEI:
+                filt += ":fontsdir=" + str(FONT_ORDNER).replace(":", r"\:")
+            graph_b.append(f"{letzte}{filt}[vvor]")
+            letzte = "[vvor]"
 
-        ziel = None if a.laut.strip().lower() == "aus" else float(a.laut)
-        if ziel is not None:
-            gemessen, spitze = lautheit(a.src, dauer=clip_laenge)
-            if gemessen is not None:
-                print(f"  Quelle {gemessen:.1f} LUFS, Spitze {spitze:.1f} dBFS"
-                      f" -> {ziel:.1f} LUFS")
-            stimme = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
-            graph.append(f"{stimme}{lautheit_kette(ziel)}[alaut]")
-            a_quelle = "[alaut]"
+        # ------------------------------------------------------------------
+        # Standbilder statt Video: die volle Kette, aber nur fuer die
+        # genannten Sekunden. Ob die Schrift auf der Lippe sitzt, beantworten
+        # drei Bilder und kein 75-Sekunden-Video.
+        # ------------------------------------------------------------------
+        if a.standbild:
+            zeiten = [float(x) for x in a.standbild.split(",") if x.strip()]
+            stamm = Path(a.out)
+            raus = []
+            for zeit in zeiten:
+                ziel_png = stamm.with_name(f"{stamm.stem}-{zeit:06.2f}s.png")
+                # -copyts, damit die Untertitel nach dem Sprung noch auf
+                # ihrer eigenen Zeit liegen. Ohne das faengt die Zeitachse
+                # im Filter bei 0 an und es steht die falsche Zeile im Bild.
+                cmd_s = [FFMPEG, "-y", "-copyts", "-ss", f"{zeit:.3f}"]
+                for optionen, datei in eingaenge_b:
+                    cmd_s += optionen + ["-i", datei]
+                cmd_s += ["-filter_complex", ";".join(graph_b),
+                          "-map", letzte, "-frames:v", "1",
+                          "-update", "1", str(ziel_png)]
+                run(cmd_s)
+                raus.append(ziel_png)
+            for r in raus:
+                print(f"  Standbild {r}")
+            return
 
         if a.outro:
-            cmd += ["-i", a.outro]
-            graph.append(f"[{naechste}:v]scale={W}:{H}:"
-                         f"force_original_aspect_ratio=decrease,"
-                         f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30,"
-                         f"format=yuv420p[ov]")
+            eingaenge_b.append(([], a.outro))
+            graph_b.append(f"[{naechste}:v]scale={W}:{H}:"
+                           f"force_original_aspect_ratio=decrease,"
+                           f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30,"
+                           f"format=yuv420p[ov]")
             outro_ton = (f"[{naechste}:a]aformat=sample_fmts=fltp:"
                          f"sample_rates=48000:channel_layouts=stereo")
             if ziel is not None:
                 # Das Outro liegt bei -24,9 LUFS, der angeglichene Hauptteil
                 # bei -14. Ohne diesen Schritt springt der Ton am Uebergang.
                 outro_ton += "," + lautheit_kette(ziel)
-            graph.append(outro_ton + "[oa]")
-            stimme = a_quelle if a_quelle.startswith("[") else f"[{a_quelle.rstrip('?')}]"
-            graph.append(f"{letzte}format=yuv420p[vm]")
-            graph.append(f"{stimme}aformat=sample_fmts=fltp:sample_rates=48000:"
-                         f"channel_layouts=stereo[am]")
-            graph.append("[vm][am][ov][oa]concat=n=2:v=1:a=1[vend][aend]")
-            letzte, a_quelle = "[vend]", "[aend]"
+            graph_b.append(outro_ton + "[oa]")
+            stimme = a_b if a_b.startswith("[") else f"[{a_b.rstrip('?')}]"
+            graph_b.append(f"{letzte}format=yuv420p[vm]")
+            graph_b.append(f"{stimme}aformat=sample_fmts=fltp:sample_rates=48000:"
+                           f"channel_layouts=stereo[am]")
+            graph_b.append("[vm][am][ov][oa]concat=n=2:v=1:a=1[vend][aend]")
+            letzte, a_b = "[vend]", "[aend]"
             naechste += 1
 
-        cmd += ["-filter_complex", ";".join(graph),
-                "-map", letzte, "-map", a_quelle,
+        if a.vorschau:
+            # Halbe Kante, ultrafast, hohes crf. Zum Hinsehen, nicht zum
+            # Abnehmen.
+            graph_b.append(f"{letzte}scale={W // 2}:{H // 2}[vklein]")
+            letzte = "[vklein]"
+
+        cmd = [FFMPEG, "-y"]
+        for optionen, datei in eingaenge_b:
+            cmd += optionen + ["-i", datei]
+        cmd += ["-filter_complex", ";".join(graph_b),
+                "-map", letzte, "-map", a_b,
                 "-r", "30",
-                "-c:v", "libx264", "-preset", "medium", "-crf", str(a.crf),
+                "-c:v", "libx264",
+                "-preset", "ultrafast" if a.vorschau else "medium",
+                "-crf", str(30 if a.vorschau else a.crf),
                 "-pix_fmt", "yuv420p", "-profile:v", "high",
                 "-c:a", "aac", "-b:a", "160k", "-ar", "48000",
                 "-movflags", "+faststart", a.out]
+        t_b = time.time()
         run(cmd)
+        if not a.einstufig:
+            print(f"  Stufe B: {time.time()-t_b:.0f}s")
 
     mb = os.path.getsize(a.out) / 1e6
-    print(f"  {a.out} — {W}x{H}, {mb:.1f} MB")
+    breite = W // 2 if a.vorschau else W
+    hoehe = H // 2 if a.vorschau else H
+    print(f"  {a.out} — {breite}x{hoehe}, {mb:.1f} MB"
+          + ("  [VORSCHAU, nicht zur Abnahme]" if a.vorschau else ""))
 
 
 if __name__ == "__main__":
