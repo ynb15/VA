@@ -1,7 +1,7 @@
 {
  "name": "Sutcliffe-Folge - die drei Zeilen, die jeder Mann hoeren will",
  "datei": "YNB Podcast David Sutcliffe Lines.mp4 (ohne Musik), dazu zwei Musikfassungen 'ab 0-59' und 'ab 1-50'",
- "stand": "2026-11-23 - vierte Fassung: unter 60 Sekunden gekuerzt, 53,06 s",
+ "stand": "2026-11-26 - 53,06 s, Bett auf 6 bzw. 9 dB unter der Stimme zur Wahl",
  "wer_spricht": "Er erzaehlt die Stelle (von Chris Williamson uebernommen), Sutcliffe hakt nach und ordnet sie ein.",
  "quelle": {
   "master_drive_id": "1oJjeQXjfIYtYph0gxfe8V1dhv17BBlPT",
@@ -76,7 +76,9 @@
   "ins_outro_hinein": "Seine Ansage: 'dann sage ich dir immer wieder, dass die Musik ausfaden soll ins Outro hinein.' Dafuer wird das Bett jetzt erst NACH dem Outro-Anhaengen unter die ganze Datei gelegt, und musik_drunter.py hat einen neuen Schalter --outro SEKUNDEN: er schaltet den Steuerton des Sidechain-Kompressors fuer die letzten N Sekunden stumm. Ohne ihn drueckt der eigene Ton des Outros (Mittel -23,8 dB, Spitze -7,0 dB) das Bett weg - gemessen 2,7 dB Unterschied: Bett im Outro -40,2 dB ohne Schalter, -37,5 dB mit.",
   "sperrvorgeschichte": "In This Shirt hat am 22.10. eine weltweite Sperre ausgeloest (Video 5nl--61ZBBI, Rechteinhaber FUGA). Die Fassung ohne Musik traegt darum den Grundnamen.",
   "outro": "video/outro_anhaengen.py --kopie, 4,21 s - diesmal VOR der Musik.",
-  "musik_drive_id": "19SBTcagOyPMb7gVwAYm250aF0wjKHQ21 ('Kopie von The Irrepressibles - In This Shirt.mp3', 335,02 s) - am 23.11. neu geholt, weil der Container geleert war."
+  "musik_drive_id": "19SBTcagOyPMb7gVwAYm250aF0wjKHQ21 ('Kopie von The Irrepressibles - In This Shirt.mp3', 335,02 s) - am 23.11. neu geholt, weil der Container geleert war.",
+  "pegelbefund": "Seine Rueckmeldung vom 26.11.: 'Warum zur Hoelle ist die Musik ploetzlich so ueberlaut?' Gemessen ist nichts lauter: Bett -37,3 dB gegen Datei -32,7 dB, +0,2 LU gegenueber der Fassung ohne Musik, Spitze -6,6 dBFS. Ursache ist die Stille: 24 % der Datei liegen unter -60 dB, und dort steht das Bett 34 bis 37 dB ueber dem Raumton, waehrend es unter der Sprache nur 0,1 bis 0,5 dB beitraegt. Die Formel bezieht sich auf den Mittelwert ueber die ganze Datei (-32,7 dB), der hier 4,7 dB unter dem Sprechpegel (-28,0 dB) liegt.",
+  "abstaende_geliefert": "6 dB unter (Bett -27,1 dB, -29,1 LUFS) und 9 dB unter (Bett -30,1 dB, -29,4 LUFS). Die 3-dB-Fassung bleibt als Vergleich daneben."
  },
  "laenge": {
   "ohne_outro_s": 48.78,

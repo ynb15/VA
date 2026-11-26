@@ -1579,3 +1579,49 @@ hätte es verdeckt, geht aber nicht: Bild- und Tonlänge müssen gleich bleiben,
 sonst läuft die Lippensynchronität auseinander.
 
 → betrifft: alle Content-Agenten
+
+## 26.11. — „warum ist die Musik plötzlich so überlaut?" — der Pegel war es nicht, die Stille war es
+
+**Sein Befund:** *„Warum zur Hölle ist die Musik plötzlich so überlaut?!"* zum
+Dreizeilen-Short mit In This Shirt, 3 dB unter der Stimme.
+
+**Nachgemessen: lauter ist nichts.** Bett −37,3 dB, Datei ohne Musik
+−32,7 dB, also 4,7 dB darunter. Über die ganze Datei **+0,2 LU** gegenüber der
+Fassung ohne Musik (−28,4 gegen −28,6 LUFS). Spitze −6,6 dBFS, kein Sample am
+Anschlag. Gegenüber der vorigen Fassung war das Bett sogar **0,5 dB leiser**.
+
+**Was es wirklich ist:** dieser Schnitt besteht zu **24 %** aus digitaler
+Stille (257 von 1060 Rahmen unter −60 dB) — er liest die drei Zeilen langsam
+und mit Pausen dazwischen. Sekunde für Sekunde gemessen:
+
+| Sekunde | ohne Musik | mit Musik | Bett | Differenz |
+|---|---|---|---|---|
+| 10 (Pause) | −71,6 dB | −37,2 dB | −37,2 dB | **+34,4 dB** |
+| 33 (Pause) | −72,8 dB | −36,1 dB | −36,1 dB | **+36,7 dB** |
+| 29 (Sprache) | −25,4 dB | −25,2 dB | −37,9 dB | +0,2 dB |
+| 49 (Sprache) | −22,8 dB | −22,7 dB | −38,5 dB | +0,1 dB |
+
+**Unter der Sprache ist das Bett praktisch nicht da, in den Pausen springt es
+35 dB über den Raumton.** Dieser Wechsel ist, was man als „überlaut" hört —
+nicht der Absolutwert.
+
+**Die Ursache steckt in der Formel.** `musik_drunter.py` rechnet
+`db = stimme_db − bett_db − abstand`, und `stimme_db` ist der **Mittelwert
+über die ganze Datei**. Bei 24 % Stille liegt dieser Mittelwert 4,7 dB unter
+dem tatsächlichen Sprechpegel (gemessen: Mittel −32,7 dB, Sprechpegel mit Tor
+20 dB unter der Spitze −28,0 dB). Das Bett wird also relativ zu den Pausen zu
+hoch gesetzt. **Je mehr Stille ein Short enthält, desto lauter steht das Bett
+in den Pausen** — bei gleichem „3 dB unter der Stimme".
+
+**Zweiter Beitrag: der dichte Songabschnitt.** Seit dem 17.11. liegt der
+Einsatz bei 0:59,68 statt 23,25, weil der dünne Aufbau nicht harmonierte. Bei
+gleichem RMS trägt der volle Teil **1,8 dB mehr Hochband** (−47,3 gegen
+−49,1 dB). In einer Pause steht damit ein volles Arrangement frei statt eines
+einzelnen Instruments.
+
+**Regel: der Abstand von 3 dB ist kein Standard, sondern gilt für Shorts, die
+durchgesprochen sind.** Bei einem Short mit langen Pausen gehört der Abstand
+größer — hier 6 bis 9 dB. Vor dem Mischen die Stille messen: Anteil der Rahmen
+unter −60 dB. Über etwa 15 % ist der Mittelwert als Bezug unbrauchbar.
+
+→ betrifft: alle Content-Agenten
