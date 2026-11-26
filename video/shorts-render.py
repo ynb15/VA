@@ -1221,8 +1221,9 @@ def zwischen_schluessel(a, t0, dur, broll):
     einen Rendergang, ein falscher Treffer kostet Vertrauen.
 
     Was NICHT hineingehoert, weil es erst in Stufe B wirkt: Untertitel,
-    Korrekturliste, Lippenhoehe, Schriftgroesse, Logo, Kopfzeile, Outro,
-    crf der Endfassung.
+    Korrekturliste, Lippenhoehe, Schriftgroesse, Look und LUT, B-Roll, Logo,
+    Kopfzeile, Outro, crf der Endfassung. Ein geaenderter Look kostet damit
+    keinen neuen Durchlauf durch das Master.
     """
     teile = [
         "stufe-a-v1",
@@ -1231,10 +1232,7 @@ def zwischen_schluessel(a, t0, dur, broll):
         f"focus={a.focus}",
         "plan=" + (Path(a.plan).read_text(encoding="utf-8") if a.plan else "-"),
         f"tempo={a.tempo}", f"dehnung={a.dehnung}",
-        f"look={a.look}", "lut=" + (_quellmarke(a.lut) if a.look == "preset" else "-"),
         f"stumm={a.stumm}",
-        f"broll={a.broll}|{a.broll_modus}|{a.broll_seite}|{a.broll_radius}|{a.broll_fokus}",
-        "brolldateien=" + "|".join(_quellmarke(d) for _, _, d in broll),
         f"musik={_quellmarke(a.musik)}|{a.musik_db}|{a.musik_unter}",
         f"laut={a.laut}",
         f"zwischencrf={a.zwischen_crf}",
@@ -1503,44 +1501,16 @@ def main():
         a_quelle = "[at]"
         print(f"  Tempo {a.tempo}x ueber {a.dehnung}")
 
-    if a.look != "aus":
-        lut = a.lut if (a.look == "preset" and a.lut
-                        and os.path.exists(a.lut)) else None
-        if lut:
-            # haldclut traegt seinen CapCut-Filter Pixel fuer Pixel auf,
-            # die Vignette kommt wie im Preset hinterher.
-            graph.append(f"movie={lut}[clut]")
-            graph.append(f"{v_quelle}[clut]haldclut,vignette=PI/6[vlook]")
-            print(f"  Look: LUT {lut}")
-        else:
-            graph.append(f"{v_quelle}"
-                         f"{LOOK_PRESET if a.look == 'preset' else LOOK}"
-                         f"[vlook]")
-            print("  Look: Annaeherung"
-                  + (f" (LUT {a.lut} fehlt)" if a.look == "preset" else " warm"))
-        v_quelle = "[vlook]"
-
-    # B-Roll kommt HINTER den Look und VOR die Untertitel: der Film soll
-    # nicht durch seine warme Gradation laufen (in der Referenz sieht die
-    # B-Roll aus wie Film, nicht wie sein Studio), die Einblendungen sollen
-    # aber darauf stehen. Genau an dieser Naht trennen die beiden Stufen.
+    # Look und B-Roll stehen in STUFE B, nicht hier. Gemessen am
+    # Sechs-Sekunden-Fenster: liegen sie in Stufe A, verliert die
+    # Endfassung gegenueber der einstufigen Kette 8,7 dB PSNR — und zwar
+    # unabhaengig vom crf der Zwischendatei (crf 6 und crf 12 ergaben
+    # 40,08 und 40,07 dB). Der Verlust kommt also nicht aus der
+    # Quantisierung, sondern aus einem Farbraum-Umweg: `colorbalance` und
+    # libass rechnen in RGB, und mit einer Zwischendatei laeuft das Bild
+    # einmal mehr durch yuv420p und zurueck. Steht der Look in Stufe B,
+    # macht die neue Kette dieselben Umrechnungen wie die alte.
     broll = broll_lesen(a.broll) if a.broll else []
-    if broll:
-        graph_b_roll, v_quelle, fenster_b = broll_graph(
-            broll, v_quelle, a.tempo, a.broll_modus, a.broll_seite,
-            a.broll_radius, a.broll_fokus, 1)
-        graph += graph_b_roll
-        for (von, bis, datei), (fa, fb) in zip(broll, fenster_b):
-            print(f"  B-Roll {von:.2f}-{bis:.2f} Clipzeit "
-                  f"-> {fa:.2f}-{fb:.2f} im Bild ({fb - fa:.2f}s): "
-                  f"{os.path.basename(datei)}")
-        if a.broll_modus == "karte":
-            print(f"  Karte {a.broll_seite}x{a.broll_seite} auf "
-                  f"x={(W - a.broll_seite) // 2}/"
-                  f"y={(H - a.broll_seite) // 2}, "
-                  f"Radius {a.broll_radius}, Grund schwarz")
-        else:
-            print(f"  randlos {W}x{H}, Fokus {a.broll_fokus:.2f}")
 
     # Eingaenge der Stufe A. Die Reihenfolge legt die Nummern im Graphen
     # fest: 0 = Quelle, dann die B-Roll, dann die Musik.
@@ -1556,11 +1526,7 @@ def main():
         if dur:
             vorn += ["-t", str(dur)]
     eingaenge_a.append((vorn, a.src))
-    for _, _, datei in broll:
-        # Nur das Bild wird gebraucht; -an haelt den Ton der B-Roll von
-        # vornherein draussen, damit nie zwei Stimmen laufen.
-        eingaenge_a.append((["-an"], datei))
-    naechste_a = 1 + len(broll)
+    naechste_a = 1
 
     if a.musik:
         # Das Bett laeuft unter der Stimme und wird von ihr weggedrueckt
@@ -1686,6 +1652,50 @@ def main():
             graph_b, v_b, a_b = [], "[0:v]", "[0:a]"
             eingaenge_b = [([], str(zwischen))]
             naechste = 1
+
+        if a.look != "aus":
+            lut = a.lut if (a.look == "preset" and a.lut
+                            and os.path.exists(a.lut)) else None
+            if lut:
+                # haldclut traegt seinen CapCut-Filter Pixel fuer Pixel auf,
+                # die Vignette kommt wie im Preset hinterher.
+                graph_b.append(f"movie={lut}[clut]")
+                graph_b.append(f"{v_b}[clut]haldclut,vignette=PI/6[vlook]")
+                print(f"  Look: LUT {lut}")
+            else:
+                graph_b.append(f"{v_b}"
+                               f"{LOOK_PRESET if a.look == 'preset' else LOOK}"
+                               f"[vlook]")
+                print("  Look: Annaeherung"
+                      + (f" (LUT {a.lut} fehlt)" if a.look == "preset"
+                         else " warm"))
+            v_b = "[vlook]"
+
+        # B-Roll kommt HINTER den Look und VOR die Untertitel: der Film soll
+        # nicht durch seine warme Gradation laufen (in der Referenz sieht die
+        # B-Roll aus wie Film, nicht wie sein Studio), die Einblendungen
+        # sollen aber darauf stehen.
+        if broll:
+            for _, _, datei in broll:
+                # Nur das Bild wird gebraucht; -an haelt den Ton der B-Roll
+                # von vornherein draussen, damit nie zwei Stimmen laufen.
+                eingaenge_b.append((["-an"], datei))
+            graph_b_roll, v_b, fenster_b = broll_graph(
+                broll, v_b, a.tempo, a.broll_modus, a.broll_seite,
+                a.broll_radius, a.broll_fokus, naechste)
+            graph_b += graph_b_roll
+            naechste += len(broll)
+            for (von, bis, datei), (fa, fb) in zip(broll, fenster_b):
+                print(f"  B-Roll {von:.2f}-{bis:.2f} Clipzeit "
+                      f"-> {fa:.2f}-{fb:.2f} im Bild ({fb - fa:.2f}s): "
+                      f"{os.path.basename(datei)}")
+            if a.broll_modus == "karte":
+                print(f"  Karte {a.broll_seite}x{a.broll_seite} auf "
+                      f"x={(W - a.broll_seite) // 2}/"
+                      f"y={(H - a.broll_seite) // 2}, "
+                      f"Radius {a.broll_radius}, Grund schwarz")
+            else:
+                print(f"  randlos {W}x{H}, Fokus {a.broll_fokus:.2f}")
 
         letzte = v_b
         if cues:
