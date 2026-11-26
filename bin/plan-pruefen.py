@@ -34,6 +34,17 @@ WARTET = {
     # Deshalb ein Datum weit voraus statt einer stillen Freigabe in drei Tagen.
     "Matt Defina": (datetime.date(2026, 12, 31),
                     "seine Ansage vom 16.11.: noch nicht anfangen"),
+    # Seine Ansage vom 26.11.2026, woertlich: "Ich ueberlege gerade, dass wir
+    # Marianne Godell in den Januar schieben, weil ich noch die Freigabe halt
+    # von Burning Man brauche und noch ein Intro vorbereiten will und alles.
+    # Deshalb, du kannst diese Control mal ausschalten, weil ich habe das im
+    # Kopf und mache das alles."
+    # Januar ist seine Ueberlegung, kein festgelegtes Datum -- deshalb bleibt
+    # der 04.12. im Kalender stehen und die Kette ist nur angehalten. Das Datum
+    # hier ist weit voraus, damit nichts still wieder anlaeuft; er sagt an.
+    "Marian Goodell": (datetime.date(2027, 12, 31),
+                       "seine Ansage vom 26.11.: er macht das selbst, "
+                       "Freigabe von Burning Man und Intro offen"),
 }   # Kingsbury-Pause am 26.10. abgelaufen, siehe BEOBACHTEN unten
 
 # Dinge, die ich beobachte, weil ihr Eintreffen eine Frist freigibt. Steht hier,
