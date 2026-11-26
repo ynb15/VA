@@ -1773,7 +1773,12 @@ def main():
             eingaenge_b = list(eingaenge_a)
             naechste = naechste_a
         else:
-            graph_b, v_b, a_b = [], "[0:v]", "[0:a]"
+            # `0:a` OHNE Klammern: mit Klammern meint ffmpeg einen
+            # Filterausgang, und wenn gar kein Tonfilter laeuft, gibt es den
+            # nicht - `-map "[0:a]"` bricht dann mit "Invalid argument" ab,
+            # ohne zu sagen warum. Die Stellen, die den Ton als FiltereinGANG
+            # brauchen, setzen die Klammern selbst.
+            graph_b, v_b, a_b = [], "[0:v]", "0:a"
             eingaenge_b = [([], str(zwischen))]
             naechste = 1
             if a.vorschau:
@@ -1966,6 +1971,9 @@ def main():
         # drei Bilder und kein 75-Sekunden-Video.
         # ------------------------------------------------------------------
         if a.standbild:
+            if not graph_b:
+                graph_b.append(f"{letzte}null[vdurch]")
+                letzte = "[vdurch]"
             zeiten = [float(x) for x in a.standbild.split(",") if x.strip()]
             stamm = Path(a.out)
             raus = []
@@ -2006,6 +2014,14 @@ def main():
             graph_b.append("[vm][am][ov][oa]concat=n=2:v=1:a=1[vend][aend]")
             letzte, a_b = "[vend]", "[aend]"
             naechste += 1
+
+        if not graph_b:
+            # Nichts anzuhaengen - kein Look, keine Schrift, kein Logo, kein
+            # Outro. Dann ist `-filter_complex ""` ungueltig und ffmpeg bricht
+            # mit 234 ab, ohne zu sagen warum. Aufgelaufen beim Messen, als
+            # ich Stufe B ohne alles zeitnehmen wollte.
+            graph_b.append(f"{letzte}null[vdurch]")
+            letzte = "[vdurch]"
 
         cmd = [FFMPEG, "-y"]
         for optionen, datei in eingaenge_b:
