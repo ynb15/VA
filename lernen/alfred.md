@@ -79,3 +79,16 @@ Standbild statt drei (`i.ytimg.com/vi/<id>/` gibt `oar1`, `oardefault`, `oar3`),
 eine Schriftfarbe statt einer Funktion, drei Suchstellen statt eines
 Kontaktabzugs, ein Abtastpunkt bei 50 % statt fünf. **Eine einzelne Probe
 belegt, dass ein Fall vorkommt — nie, dass es der einzige ist.**
+
+## Ein Stück gilt erst als liegengeblieben, wenn der Kanal es nicht zeigt (27.11.)
+**Ich habe heute früh fünf Stücke als „geliefert, keine Reaktion" gemeldet.
+Drei standen schon auf YouTube** — Kaffeemesse (`vp4vGpvveks`, 253 Aufrufe),
+Ken Aging (`t1A6uQdYzqw`, 719 Aufrufe), Aaronson *„How safe is AI"*
+(`K130E38uvMA`). Gelesen hatte ich nur die Zweige, und **eine Veröffentlichung
+hinterlässt im Zweig keine Spur**. Seine Rückfrage war *„hast du auch wirklich
+den YouTube-Kanal gegengecheckt?"* — die Antwort war nein.
+**Der Abruf kostet zwei Minuten:** `pip install yt-dlp`, dann
+`yt-dlp --flat-playlist --print "%(id)s|%(title)s" ".../@yannick-noah/shorts"`
+(61 Zeilen, neueste zuerst). **Uploaddaten gehen nicht** — der Einzelabruf je
+Video läuft über `www.google.com`, den der Ausgangs-Proxy mit HTTP 403 ablehnt.
+→ betrifft: alle Agenten, die „wartet auf seine Abnahme" schreiben

@@ -9824,3 +9824,31 @@ Sutcliffe-Agenten falsch, und genau der arbeitet am Renderer.
 Untertitel-Ueberlappung im Renderer behoben" — es gibt also bereits eine zweite
 Fassung des gemeinsamen Werkzeugs. Sie muss eingesammelt werden, bevor der Umbau
 sie ueberschreibt.
+
+## „LIEGT BEI IHM" WIRD AUF DEM KANAL GEPRÜFT, NICHT IM ZWEIG — 27.11.2026
+
+Seine Rückfrage: *„hast du auch wirklich den YouTube-Kanal gegengecheckt?"*
+**Nein.** Ich hatte neun Zweige gelesen und fünf Stücke als „geliefert, keine
+Reaktion" gemeldet. **Drei davon standen zu dem Zeitpunkt schon auf dem
+Kanal** — der Kaffeemesse-Short (`vp4vGpvveks`, 253 Aufrufe), der Ken-Aging-
+Short (`t1A6uQdYzqw`, 719 Aufrufe) und mindestens ein Aaronson-Short
+(`K130E38uvMA`).
+
+**Das ist der vierte Lauf desselben Fehlers** (03., 07., 09.11., heute). Der
+Satz steht seit dem 09.11. in `plan/kalender.md`: *„ob sie veröffentlicht
+wird, steht nur auf YouTube und in seinem Postausgang."* Ich habe ihn
+aufgeschrieben und bin ihm nicht gefolgt.
+
+**REGEL: bevor ich irgendwo „liegt bei ihm", „wartet auf Abnahme" oder „ohne
+Reaktion" schreibe, hole ich die Kanalliste.**
+```
+yt-dlp --flat-playlist --print "%(id)s|%(title)s" \
+  "https://www.youtube.com/@yannick-noah/shorts"
+```
+`yt-dlp` ist nicht vorinstalliert (`pip install yt-dlp`). Die Liste ist
+**neueste zuerst**. **Uploaddaten gehen nicht**: der Einzelabruf je Video läuft
+über `www.google.com`, und der Ausgangs-Proxy lehnt den Host ab (HTTP 403).
+Für „draußen oder nicht" reicht die Liste, für „seit wann" nicht.
+
+Die Listen vom 27.11. liegen in `video/kanal-shorts-2026-11-27.txt` und
+`video/kanal-videos-2026-11-27.txt`.
