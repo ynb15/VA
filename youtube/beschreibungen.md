@@ -348,3 +348,32 @@ bleibt Handarbeit und beides hat schon einmal danebengelegen.
 angemeckert. Der ist in Beschreibungen **seiner** (gemessen, oben in dieser
 Datei) — die Bindestrich-Regel gilt fuer Kommentare und Mails. Geprueft wird
 nur noch der em dash.
+
+## Nachtrag 27.11. — Folgenbeschreibungen sind nicht Clipbeschreibungen
+
+Der Hintergrund-Abruf seiner eigenen Beschreibungen ist durchgelaufen:
+33 Dateien, davon 12 mit Text. Gemessen, nicht geschaetzt:
+
+| | Folgen | Clips |
+|---|---|---|
+| Bullets | **exakt 5**, beide Male | **0**, alle zehn |
+| Bullet-Laenge | 10–17 Woerter | — |
+| Woerter gesamt | 766 / 878 | 119–204 |
+| Eroeffnung | `What if …` | nicht `What if` |
+
+Zwei Fehler von mir, beide am selben Tag:
+
+1. **Ich habe zehn Bullets geliefert.** Sein Maximum ist fuenf. Beim Zaehlen
+   hatte ich zuerst „sieben" gesagt — ein schlampiges `grep -cE`, das
+   Nicht-Bullet-Zeilen mitzaehlte. Erst `re.findall(r'(?m)^\s*[•…]')`
+   gab die richtige Zahl. **Eine Zahl, die ich ihm nenne, kommt aus einem
+   Zaehler, den ich vorher gegen einen bekannten Fall geprueft habe.**
+2. **Ich habe den Clip-Pruefer auf eine Folge losgelassen** und seine eigene
+   Eroeffnungsform als Fehler gemeldet. Ein Pruefer, der seine
+   veroeffentlichten Texte durchfallen laesst, ist kaputt — nicht der Text.
+
+`beschreibung_pruefen.py` hat jetzt `--folge`: Korridor 700–900,
+Bullet-Pflicht (5 Stueck, 10–17 Woerter), keine Laufzeitpflicht, und die
+Eroeffnungszeile ist ausgenommen wie der Abbinder. **Gegenprobe ist Teil des
+Werkzeugs: beide veroeffentlichten Folgen laufen ohne Treffer durch, der
+bekannte Clip-Fehler wird weiter gefunden.**
