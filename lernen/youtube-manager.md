@@ -917,3 +917,27 @@ bei 479 / 146 / 125 / 74 / 58, RFK bei 30. Ausgereift sind davon nur zwei
 (73 d → 70, 88 d → 30). Zwei Datenpunkte, kein Befund — aber Korb 2, und
 dahin gehoert die Aufmerksamkeit.
 → betrifft: alle
+
+### Eine 28-GB-Datei durchstreamen kostet sein Drive-Tageslimit
+
+- **27.11.: nach 1:19:41 von 1:47:00 kam `Quota exceeded` als HTTP 200.** Das
+  Werkzeug hat es erkannt, weil es die Blocklänge prüft und nicht den
+  Statuscode — aber die Tonspur war weg, und das Limit ist **seins**, nicht
+  meins. Für 70 Minuten Ton hatte ich **41 GB** gelesen: der Demuxer muss
+  die Videopakete mitlesen, weil Ton und Bild verschachtelt liegen.
+  → betrifft: alle
+- **Der Fehler ist, die Datei als Datei zu lesen.** Im `moov`-Atom stehen die
+  Byteoffsets der Tonsamples (`stco`/`stsz`). Wer die liest, holt für eine
+  zweistündige Folge **rund 100 MB statt 28 GB** — Faktor 280 weniger
+  Kontingent. Das ist noch nicht gebaut und auch nicht prüfbar, solange das
+  Limit steht. **Vorher: ihn um einen Tonexport bitten, nicht die Videodatei
+  durchziehen.**
+  → betrifft: alle
+- **Was trotzdem trug:** die Marken bis 1:19:32 sind gemessen, und die 15
+  danach aus den 13 Marken hinter dem Fundraiser gefittet (Tempo 1,1493,
+  Versatz +70,5 s, Reste −4,2 bis +3,4 s). Zwei unabhängige Gegenproben:
+  das Modell legt das Gesprächsende auf 1:46:20, und dort beginnt gemessen
+  das Outro; die Sonde bei 1:43:20 trifft die gerechnete Marke 1:43:15.
+  **Ein Fit über 44 Minuten ist nur dann zulässig, wenn ein gemessener
+  Endpunkt ihn bestätigt.**
+  → betrifft: content-*, head-of-content
