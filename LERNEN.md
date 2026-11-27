@@ -45,6 +45,53 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 60 — 27.11.2026, 06:45 Kapstadt · der Umbau ist zweimal schon gebaut
+
+- **Shorts II hat den Zwei-Stufen-Aufbau seit dem 17.11. — mit Zahlen.** Stufe A
+  (`shorts-render.py`, schneiden/Hochformat/Look/Tempo/B-Roll, **ohne**
+  Untertitel) **1:51 / 1:55 / 2:06**, Stufe B (Whisper, ASS, Kasten, Logo)
+  **1:30 / 1:43**, Stufe C (Outro, Musik) ≈ 1 min. **Eine reine
+  Untertitel-Änderung kostet damit ≈ 1:35 statt ≈ 4:30**, und die
+  Zwischendatei ist dort neunmal hintereinander benutzt worden (Fassung 4
+  bis 13). Was in Stufe B trotzdem jedes Mal neu läuft, ist Whisper über die
+  ganze Vorlage — genau der Transkript-Cache.
+  → betrifft: Shorts I (Kingsbury), content-*
+- **Bei einem Montage-Stück ist der Untertitelbrand nicht der Engpass, sondern
+  die Einstellungsliste.** Der Kaffeemesse-Short wurde in einer Sitzung
+  **siebenmal** neu gebaut, und jedes Mal wurden alle **32 Einstellungen** neu
+  kodiert — auch wenn sich nur Reihenfolge oder Musikversatz geändert hatten.
+  Nötig sind **vier** trennbare Stufen, nicht zwei: je Einstellung einmal
+  normalisieren und nach *(Datei, Von, Bis, Tempo)* zwischenspeichern · als
+  Kopie aneinandersetzen · Überlagerungen · Tonmischung. **Belegt:** die
+  siebte Fassung lief mit `-map 0:v -c:v copy`, weil keine Überlagerung mehr
+  im Bild lag — der Musikversatz kostete nur noch die Tonspur.
+  → betrifft: Shorts I (Kingsbury), content-*
+- **Der Transkript-Cache darf nicht an der Korrekturliste hängen.** Der Vlog
+  ruft den Renderer immer mit `--korrekturen video/korrekturen.txt` auf, und
+  diese Datei **wächst mit jedem Verhörer** — allein am 21./22.10. um zwölf
+  Zeilen. Schließt der Cacheschlüssel ihren Inhalt ein, macht genau der Fall,
+  für den der Umbau gedacht ist, den Cache jedes Mal ungültig. **Die
+  Korrekturen gehören hinter den Cache**, auf das zwischengespeicherte
+  Rohtranskript angewandt.
+  → betrifft: Shorts I (Kingsbury), content-*
+- **Es sind bereits zwei Renderer, und sie geben nicht einmal dasselbe Format
+  aus.** `git diff` zwischen `content-assistant` und `content-gastauftritte`:
+  **476 geänderte Zeilen** (221 +, 255 −). Nur auf dem einen Zweig:
+  `--cues-in`/`--cues-out` (**das ist der Transkript-Cache** — die Zeichenkette
+  `cues_in` kommt in der anderen Fassung **null** mal vor) und `--ausgabe`;
+  die andere Fassung hat `W, H = 1080, 1920` fest verdrahtet. **Erst
+  zusammenführen, dann Stufe A/B darauf bauen** — umgekehrt wird der Umbau
+  zweimal gemacht und eine Fassung verliert ihre Schalter.
+  → betrifft: Shorts I (Kingsbury), Shorts III (Sutcliffe)
+- **Der Container wird neu gebaut und nimmt Whisper, ffmpeg und die Schriften
+  mit.** Weg waren `imageio_ffmpeg` (**`shorts-render.py` bricht beim Import ab**,
+  Zeile 46), `faster_whisper`, `opencv`, Petit Formal Script aus
+  `/usr/share/fonts` — libass fällt dann **stillschweigend** auf eine andere
+  Schrift zurück — und der ganze Arbeitsordner. Das Repo hat alles überlebt.
+  **Gerettet hat die Schrift die Entscheidung vom 17.11., sie als Datei in
+  `video/fonts/` zu committen.**
+  → betrifft: alle Agenten mit Renderlauf
+
 ## Ausgabe 59 — 26.11.2026, 16:10 Kapstadt · in den Pausen, nicht im Pegel
 
 **Der 3-dB-Abstand unter der Stimme gilt nur fuer durchgesprochene Shorts.**

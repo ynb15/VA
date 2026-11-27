@@ -1678,3 +1678,54 @@ Antwort ein anderer Titel oder ein größerer Abstand — **nicht** ein dichtere
 Abschnitt desselben Titels. Hier jetzt: 0:23,25, 6 dB unter der Stimme.
 
 → betrifft: alle Content-Agenten
+
+## 26.11. — gemessen: eine Untertitel-Iteration kostet 5 min 27 s, und es gibt schon zwei Renderer
+
+**Zum Render-Briefing.** Seine Ansage: *„Das kann nicht sein, dass ich mit
+jeder Verbesserung, dass jedes Mal das Ding neu gerendert werden muss. Also
+das frisst ja Stunden."*
+
+**Der Vorher-Wert, gemessen, nicht geschätzt.** Ein Lauf am laufenden Short,
+bei dem sich **nur die Untertitel ändern** (`--cues-in`, also ohne
+Neutranskription), Quelle 58,53 s / 1920×1080 / 12,9 Mbit/s, Ausgabe
+2160×3840:
+
+| | |
+|---|---|
+| Wanduhr | **5 min 27 s** |
+| CPU | 18 min 56 s (4 Kerne) |
+| Verhältnis zur Laufzeit | **5,6 ×** Echtzeit |
+
+Für 63 Einblendungen, von denen sich eine geändert hat. In dieser Sitzung
+sind damit allein für diesen einen Short vier volle Durchläufe angefallen.
+
+**Und der Befund, der vor dem Umbau geklärt gehört: es sind bereits zwei
+Renderer.** `git diff` zwischen `origin/claude/content-assistant:video/shorts-render.py`
+und meinem Stand: **476 geänderte Zeilen** (221 +, 255 −). Ein Kopieren in
+eine Richtung wirft in beiden Fällen Arbeit weg.
+
+| | nur auf meinem Zweig | nur auf content-assistant |
+|---|---|---|
+| Funktionen | `ohne_ueberlappung` | `_ist_frage`, `_ganze_frage`, `_logo_kasten` |
+| Schalter | `--ausgabe`, `--cues-in`, `--cues-out`, `--ass-out` | — |
+
+**Zwei davon sind genau das, was der Umbau bauen will:**
+`--cues-in`/`--cues-out` **ist** der Transkript-Cache — die Zeichenkette
+`cues_in` kommt in der anderen Fassung **null** mal vor. Und `--ausgabe`
+schaltet zwischen 2160×3840 und 1080×1920; die andere Fassung hat
+`W, H = 1080, 1920` fest verdrahtet, **die beiden geben also nicht einmal
+dasselbe Format aus**. `-preset medium` steht in beiden fest (meine Zeile
+1579, ihre 1613) — die Diagnose trifft auf beide zu.
+
+**Daraus folgt für die Reihenfolge:** erst zusammenführen, dann Stufe A/B und
+`--vorschau` darauf bauen. Umgekehrt wird der Umbau zweimal gemacht und eine
+der beiden Fassungen verliert ihre Schalter.
+
+**Was ich geändert habe, zum Übernehmen** (nichts selbst nachgebaut, keine
+Parallelfassung): `ohne_ueberlappung()` in `shorts-render.py` (28 Zeilen,
+Commit `3456d0e`) — die Funktion steht vor `ass_time()`, der Aufruf in
+`main()` direkt vor dem `srt_out`-Block, damit die Kürzung für Bild **und**
+`.srt` greift. Dazu `--outro SEKUNDEN` in `musik_drunter.py` (Commit
+`0887f97`).
+
+→ betrifft: content-*
