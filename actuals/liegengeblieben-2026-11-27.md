@@ -1,66 +1,70 @@
-# Durchgang durch alle neun Agenten — was liegengeblieben ist, 27.11.2026
+# Durchgang durch alle neun Agenten — korrigiert gegen den YouTube-Kanal, 27.11.2026
 
-**Sein Auftrag:** *„schau, wo ich vielleicht was übersehen habe, wo ich einen
-Austausch hatte und dann nichts damit gemacht habe."*
+**Seine Rückfrage:** *„hast du auch wirklich den YouTube-Kanal gegengecheckt?"*
+**Nein, hatte ich nicht.** Ich hatte die Zweige gelesen und die Kanalmessung
+des YouTube-Managers vom 24.11. überflogen, aber die veröffentlichte Liste nie
+gegen die gelieferten Stücke gehalten. Jetzt nachgeholt: 61 Shorts und 58
+Langstücke über `yt-dlp` vom Kanal `@yannick-noah` geholt, abgelegt in
+`video/kanal-shorts-2026-11-27.txt` und `video/kanal-videos-2026-11-27.txt`.
 
-**Verfahren:** alle neun Branches geholt, die letzten acht Commits je Branch
-gelesen, und bei jedem Agenten die Arbeitsdatei auf den Stand „geliefert, keine
-Reaktion" geprüft. Die Outreach-Entwürfe zusätzlich gegen `in:sent` geprüft,
-statt dem Entwurf zu glauben.
-
----
-
-## 1. Aaronson — drei fertige Shorts, seit 32 Tagen ohne Abnahme
-
-Seit **26.10.** bei ihm: *AI2027* (08:54), *How safe is AI* Fassung 2 (09:35,
-58,0 s), *What do you believe in?* (10:27). Die Termine 03./04./05.11. waren
-**mein** Vorschlag, nicht seine Festlegung — und sind längst verstrichen.
-
-## 2. Vlog — sechs Meaningful-Stücke existieren nur noch als Tabelle
-
-Geschnitten in der Nacht vom **20./21.10.**: Sutcliffe, Aaronson, Ken Stern,
-Gonzalez, Defina, Strassman. **Die sechs MP4s sind mit dem Container weg**,
-Untertitel und Zeitmarken liegen im Repo. Die geplante Aufgabe steht seit
-21.10. auf `enabled=false`. Fünf von sechs Antworten laufen auf denselben Kern
-hinaus — andere Menschen; nur Strassman bricht damit.
-
-## 3. Shorts II — drei Musikfassungen warten seit dem 18.11.
-
-Letzte Lieferung **18.11., 18:23**: *„Ken Aging Kino, Fassung 13: drei
-Musikfassungen zum Ausprobieren."* Seitdem hat der Agent nichts getan außer
-heute das Render-Briefing zu beantworten. Zwei Dinge fehlen ihm, die nur von
-ihm kommen können: `luts/ynb_look.png` und Eveleth als `.otf`.
-
-## 4. Cinematic — Kaffeemesse-Short fertig seit dem 24.11., eine Frage offen
-
-55,1 s aus 30 Einstellungen, Sinatra *„The Coffee Song"*, Summe **−15,6 LUFS**.
-Die abgenommenen Shorts liegen bei **−14,2 LUFS**; die fehlenden 1,8 dB gehen
-nur mit einem Limiter, und den hat er am **20.10. abgelehnt**. Der Agent hat es
-hingeschrieben und steht seitdem still.
-
-## 5. Kingsbury — drei Entscheidungen, und ein Transkript, das nie kam
-
-Neun Shorts fertig und durch die Abnahme, **drei Entscheidungen bei ihm**.
-Dazu: **55 Minuten der Folge ohne Transkript**; eine Niedrigauflösung ab 74:40
-wurde bei Christoph angefragt und ist nie angekommen.
+**Drei meiner fünf Befunde von heute früh waren falsch.**
 
 ---
 
-## Was KEIN Befund ist — gegen das Postfach geprüft
+## Was der Kanal widerlegt
 
-**Guest Booking ist sauber.** Die beiden Entwürfe (Stephan Bredell / Platō
-Coffee, Joshua Rubin / Wide Awake) tragen im Repo noch *„Entwurf, nicht
-gesendet"* — **beide sind am 20.11. um 08:22 und 08:25 rausgegangen**. Der
-Agent weiß es nur nicht. Seit sieben Tagen keine Antwort von beiden.
+| mein Befund von heute früh | was auf dem Kanal steht |
+|---|---|
+| „Cinematic — Kaffeemesse-Short fertig seit 24.11., wartet" | **veröffentlicht**: `vp4vGpvveks` *„Only for Coffee Connoisseurs"*, 253 Aufrufe, zweitneuester Short |
+| „Shorts II — drei Musikfassungen warten seit dem 18.11." | **veröffentlicht**: `t1A6uQdYzqw` *„The Art Of Growing Old"*, 719 Aufrufe, drittneuester Short. Er hat eine Fassung gewählt und rausgegeben |
+| „Aaronson — drei fertige Shorts seit 32 Tagen ohne Abnahme" | mindestens **`K130E38uvMA`** *„How safe is AI, Prof. Aaronson?"* ist draußen, dazu `cxTqr90ckSY` *„Is this the end of humanity"* und `hgi25v-7bNc` *„OpenAI Insider: We created God"* |
 
-**Thumbnails** steht seit dem 11.11. still, hat aber nichts offen: die sechs
-Ken-Stern-Thumbnails waren die letzte Lieferung, die Folge ging am 15.11. raus.
+**Und der Short von heute steht schon oben:** `Jd2-xPvLdO0`
+*„He Took 30 GRAMS Of Magic Mushrooms"* — seine eigene Ansage von heute früh.
 
 ---
 
-## Mein eigener Fehler, der daraus sichtbar wird
+## Was übrig bleibt, und jetzt gegen den Kanal belegt ist
 
-`plan-pruefen.py` meldet heute **„0 Stücke fertig im Kasten"**, während
-mindestens der Kaffeemesse-Short, neun Kingsbury-Shorts und drei
-Aaronson-Shorts fertig daliegen. **Der Zustand im Kalender ist meine Pflicht,
-nicht die der Agenten** — und er hängt an den fehlenden Abnahmen oben.
+**Die Meaningful-Serie läuft — zehn Stücke stehen auf dem Kanal:** Kingsbury,
+Aaronson, Ken Stern, Sutcliffe, Eben Britton, Danny Miranda, Craig Makhosi,
+Curtis Crane, **Rob Paddock**, Francis Michael.
+
+**Von den sechs aus der Nacht vom 20./21.10. fehlen drei:**
+
+| | geschnitten | auf dem Kanal |
+|---|---|---|
+| David Sutcliffe | ✓ | `56HbZFEIh2g` |
+| Scott Aaronson | ✓ | `_hDOK_TxtBQ` |
+| Ken Stern | ✓ | `vxedk2RcHcY` |
+| **Logan Gonzalez** | ✓ | **fehlt** |
+| **Matt Defina** | ✓ | **fehlt** |
+| **Rick Strassman** | ✓ | **fehlt** |
+
+Dazu unverändert, weil es keine Veröffentlichungsfrage ist: **Kingsbury —
+drei Entscheidungen bei ihm**, und die **55 Minuten ohne Transkript**, für die
+eine Niedrigauflösung ab 74:40 bei Christoph angefragt wurde und nie kam.
+
+---
+
+## Was ich nicht habe
+
+**Die Uploaddaten.** Der Einzelabruf je Video läuft über `www.google.com`
+(Einwilligungs-Umleitung), und der Ausgangs-Proxy lehnt diesen Host ab —
+68 Verbindungen, HTTP 403. Die Reihenfolge der Kanalliste ist dennoch
+belastbar: sie ist neueste zuerst, und der 30-Gramm-Short von heute steht an
+Position 1. Für „ist es draußen oder nicht" reicht das; für „seit wann"
+nicht.
+
+---
+
+## Die Ursache, und sie ist meine
+
+**Ich baue den Planzustand aus den Zweigen, und seine Veröffentlichungen
+hinterlassen dort keine Spur.** Das steht seit dem 09.11. wörtlich in
+`plan/kalender.md` — *„ob sie veröffentlicht wird, steht nur auf YouTube und
+in seinem Postausgang"* — und ich habe heute früh trotzdem wieder nur die
+Zweige gelesen. Das ist derselbe Fehler wie am 03., 07. und 09.11.
+
+**Die Konsequenz:** der Kanal gehört in die Plankontrolle, nicht in meinen
+Kopf. Die beiden Listen liegen ab heute im Repo.
