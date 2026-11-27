@@ -48,11 +48,28 @@ nicht gestaltet. Der Unterschied liegt nicht im Bild.
 Drei Prozent sind zwei Titel von 59, und beide sind `77 y/o` und `70s` — keine
 echten Zahlen.
 
-**Und das steht auch in seinen eigenen Daten:** Clips mit einer Zahl im Titel
-haben Median 925 (n=15), ohne Zahl 233 (n=42). Faktor vier.
+**Zurueckgezogen am 27.11.2026: in seinen eigenen Daten steht es nicht.**
+Die Zahl, die hier bis heute stand — Median 925 mit Zahl gegen 233 ohne,
+"Faktor vier" — war ein Median ueber Clips und Folgen zusammen. Acht der
+fuenfzehn Titel mit Zahl sind Folgen, und die Folge ist auf seinem Kanal die
+Klasse mit dem besten Median. Dazu waren die Stuecke mit Zahl im Median 93
+Tage alt, die ohne 31. Der Faktor war die Klassenmischung und der
+Altersunterschied, nicht die Zahl.
 
-Das ist der einzige Punkt, der in beiden Referenzkanaelen **und** in seiner
-eigenen Messung steht.
+Im Altersband 60-200 Tage, getrennt nach Klasse:
+
+| | mit Zahl | ohne |
+|---|---|---|
+| Clips | n=4, Median 184 | n=13, Median 143 |
+| Folgen | n=3, Median 538 | n=2, Median 455 |
+
+Faktor 1,3 und 1,2 bei n=3 bis n=4 — das ist Rauschen. Zusammengeworfen zeigt
+dasselbe Altersband 476 gegen 172, und der Unterschied zwischen den beiden
+Gruppen sind die Folgen: drei von sieben mit Zahl, zwei von fuenfzehn ohne.
+
+**Was bleibt:** der Unterschied zwischen den Kanaelen ist gemessen (54 % und
+52 % gegen 26 %). Ein Hebel auf seinem Kanal ist er nicht — dafuer hat er
+praktisch keine Titel mit Zahl, aus denen man einen messen koennte.
 
 ### 3. Kein Gastname in Short-Titeln
 
