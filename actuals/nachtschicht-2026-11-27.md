@@ -12,4 +12,4 @@
 - Plan: heute **Clip, „er sagt an"**. Vorrat 0, unverändert. **Keine Frist ausgelöst** — die einzige offene (Goodell T−6) ruht auf seine Ansage bis 31.12.
 - Lernkanal: **Ausgabe 62**, drei Einträge, **Korrektur zu Ausgabe 61** — das Drive-Problem ist kein Tageslimit, sondern eine zeitabhängige Drosselung des ganzen Kontos (Shorts II hat es gemessen). Quittiert.
 - youtube-manager hat gearbeitet und nichts in den Kanal geschrieben — **erste** Einsammlung ohne Eintrag, nach Regel 6 noch keine Erinnerung.
-- **Nichts im Chat.** Ihm wurde heute in seiner Wohnung Kamera- und Rechnerausrüstung gestohlen; der Contentplan hat heute nichts, was er anfassen muss. Board nicht neu veröffentlicht, weil sich im Plan nichts bewegt hat.
+- **Nichts im Chat.** Der Contentplan hatte heute nichts, was er anfassen muss. **(Korrektur vom 28.11.: der Diebstahl, um den es im Chat ging, betraf einen Freund von ihm, nicht ihn — ich hatte ihn hier falsch als seinen notiert.)** Board nicht neu veröffentlicht, weil sich im Plan nichts bewegt hat.
