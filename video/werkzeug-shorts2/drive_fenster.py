@@ -25,6 +25,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 import urllib.parse
 
 import requests
@@ -32,7 +33,12 @@ import requests
 SITZUNG = requests.Session()
 KOPF_MB = 24
 PUFFER_S = 90          # Sicherheitsabstand in Sekunden je Seite
-STUECK = 16 * 1024 * 1024
+# 1 MB, nicht 16. Am Strassman-Master gemessen (28.11.): Drive bedient
+# 64 KB und 1 MB zuverlaessig (3/3), 4 MB nur noch 1/3 und 16 MB gar
+# nicht (0/3) — die Drosselung haengt an der Stueckgroesse, nicht an
+# der Zahl der Anfragen. Mit 16 MB bricht ein Lauf ab, der mit 1 MB
+# durchlaeuft.
+STUECK = 1 * 1024 * 1024
 
 
 def bestaetigte_url(file_id):
@@ -56,15 +62,32 @@ def hole(url, von, bis, ziel, offset):
         pos = von
         while pos <= bis:
             ende = min(pos + STUECK - 1, bis)
-            r = SITZUNG.get(url, headers={"Range": f"bytes={pos}-{ende}"},
-                            timeout=300)
             erwartet = ende - pos + 1
             # Bei Drive ist die Laenge die Wahrheit, nicht der Statuscode:
             # "Quota exceeded" kommt als HTTP 200 mit ~2 kB HTML.
-            if len(r.content) != erwartet:
+            #
+            # UND SIE KOMMT STOSSWEISE, nicht endgueltig. Am Strassman-Master
+            # gemessen (28.11.): von sieben Stichproben ueber die Datei
+            # wurden drei abgelehnt und vier sofort bedient, in wechselnder
+            # Verteilung — dasselbe Byte beim naechsten Versuch sauber.
+            # Ein harter Abbruch beim ersten schlechten Stueck wirft also
+            # einen Lauf weg, der nach ein paar Sekunden weiterlaufen wuerde.
+            r = None
+            for versuch in range(8):
+                r = SITZUNG.get(url, headers={"Range": f"bytes={pos}-{ende}"},
+                                timeout=300)
+                if len(r.content) == erwartet:
+                    break
+                warte = min(60, 2 ** versuch)
+                print(f"  Drosselung bei Byte {pos} "
+                      f"({len(r.content)} statt {erwartet}), "
+                      f"Versuch {versuch + 1}/8, warte {warte}s", flush=True)
+                time.sleep(warte)
+            if r is None or len(r.content) != erwartet:
                 raise IOError(
                     f"{len(r.content)} statt {erwartet} Bytes bei {pos} "
-                    f"(HTTP {r.status_code}) — Tageslimit oder keine Freigabe")
+                    f"(HTTP {r.status_code}) — auch nach acht Versuchen. "
+                    f"Tageslimit erschoepft oder keine Freigabe")
             f.seek(offset + (pos - von))
             f.write(r.content)
             geholt += len(r.content)
