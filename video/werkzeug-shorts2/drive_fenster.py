@@ -38,7 +38,7 @@ PUFFER_S = 90          # Sicherheitsabstand in Sekunden je Seite
 # nicht (0/3) — die Drosselung haengt an der Stueckgroesse, nicht an
 # der Zahl der Anfragen. Mit 16 MB bricht ein Lauf ab, der mit 1 MB
 # durchlaeuft.
-STUECK = 1 * 1024 * 1024
+STUECK = 64 * 1024
 
 
 def bestaetigte_url(file_id):
@@ -53,6 +53,9 @@ def bestaetigte_url(file_id):
         raise RuntimeError("Warnseite ohne Formular — Link-Freigabe pruefen")
     felder = dict(re.findall(r'name="([^"]+)"\s+value="([^"]*)"', m.group(2)))
     return m.group(1).replace("&amp;", "&") + "?" + urllib.parse.urlencode(felder)
+
+
+T0 = time.time()
 
 
 def hole(url, von, bis, ziel, offset):
@@ -92,6 +95,12 @@ def hole(url, von, bis, ziel, offset):
             f.write(r.content)
             geholt += len(r.content)
             pos = ende + 1
+            if geholt % (4 * 1024 * 1024) < STUECK:
+                verstrichen = time.time() - T0
+                rate = geholt / verstrichen / 1e6 if verstrichen else 0
+                rest = (bis - pos) / 1e6 / rate / 60 if rate else 0
+                print(f"  {geholt/1e6:7.1f} MB von {(bis-von)/1e6:.0f} MB, "
+                      f"{rate:.2f} MB/s, noch ~{rest:.0f} min", flush=True)
     return geholt
 
 
