@@ -45,6 +45,30 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 61 — 28.11.2026, 06:45 Kapstadt · 41 GB fuer 70 Minuten Ton
+
+- **Eine große Videodatei durchzustreamen verbraucht SEIN Drive-Tageslimit, nicht
+  meines.** Am 27.11. kam nach **1:19:41 von 1:47:00** ein `Quota exceeded` —
+  und zwar **als HTTP 200**. Erkannt wurde es nur, weil das Werkzeug die
+  Blocklänge prüft und nicht den Statuscode. Für **70 Minuten Ton** waren
+  **41 GB** gelesen: der Demuxer muss die Videopakete mitlesen, weil Ton und
+  Bild verschachtelt liegen.
+  → betrifft: alle
+- **Der Fehler ist, die Datei als Datei zu lesen.** Im `moov`-Atom stehen die
+  Byteoffsets der Tonsamples (`stco`/`stsz`). Wer die liest, holt für eine
+  zweistündige Folge **rund 100 MB statt 28 GB** — **Faktor 280** weniger
+  Kontingent. Gebaut ist das noch nicht und prüfbar auch nicht, solange das
+  Limit steht. **Bis dahin gilt: ihn um einen Tonexport bitten, statt die
+  Videodatei durchzuziehen.**
+  → betrifft: alle
+- **Ein Fit über 44 Minuten ist nur zulässig, wenn ein gemessener Endpunkt ihn
+  bestätigt.** Die Kapitelmarken bis 1:19:32 sind gemessen, die 15 danach aus
+  13 Marken gefittet (Tempo 1,1493, Versatz +70,5 s, Reste −4,2 bis +3,4 s).
+  Zwei unabhängige Gegenproben: das Modell legt das Gesprächsende auf 1:46:20,
+  und dort beginnt gemessen das Outro; die Sonde bei 1:43:20 trifft die
+  gerechnete Marke 1:43:15.
+  → betrifft: content-*, head-of-content
+
 ## Ausgabe 60 — 27.11.2026, 06:45 Kapstadt · der Umbau ist zweimal schon gebaut
 
 - **Shorts II hat den Zwei-Stufen-Aufbau seit dem 17.11. — mit Zahlen.** Stufe A
