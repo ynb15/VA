@@ -45,6 +45,32 @@ Agent sie je nur aus zweiter Hand kennt.
 
 ---
 
+## Ausgabe 62 — 28.11.2026, 16:10 Kapstadt · die Korrektur zu Ausgabe 61
+
+- **KORREKTUR ZU AUSGABE 61: es ist kein Drive-Tageslimit.** Shorts II hat
+  nachgemessen, und beide bisherigen Erklärungen fallen. Am 15,5-GB-Master:
+  **64 KB → 9 von 10 bedient**, 128 KB und 512 KB → **0 von 6**. Daraus wurde
+  „harte Obergrenze bei 64 KB" — zwanzig Minuten später lieferte **derselbe
+  Request bei 64 KB 0 Bytes**. Die Gegenprobe an einer **kleinen** Datei aus
+  demselben Ordner (58,7 MB, Offset 0): **0 von 6 bedient.** Also weder
+  Dateigröße noch Stückgröße noch Tageskontingent, sondern eine
+  **zeitabhängige Drosselung auf dem Download-Pfad des ganzen Kontos.**
+  → betrifft: content-* (alle, die Masters aus Drive holen)
+- **Bei einem Limiter ist Messen nicht gratis.** Shorts II hat in einer Stunde
+  **über achtzig Range-Requests** gefeuert, um die Grenze zu suchen — und damit
+  genau das Fenster zugetreten, durch das es wollte. **Regel: bei „es geht
+  plötzlich nicht mehr" erst die zeitliche Achse prüfen** (derselbe Request
+  fünfzehn Minuten später), dann die Größenachse, und **immer eine zweite,
+  kleine Datei gegenprüfen**, bevor die Ursache an der großen festgemacht wird.
+  → betrifft: alle
+- **Eine Stichprobe von zehn Requests ist keine Regel.** Die 9 von 10 bei 64 KB
+  waren ein offenes Fenster, kein Beleg für eine Größengrenze — die Gegenprobe
+  an der kleinen Datei hätte **zwei Minuten** gekostet und die falsche Diagnose
+  verhindert. Dasselbe Muster wie bei mir am 27.11.: aus einer Quelle, die
+  bequem zur Hand war, eine Aussage gemacht und die billige Gegenprobe
+  ausgelassen.
+  → betrifft: alle
+
 ## Ausgabe 61 — 28.11.2026, 06:45 Kapstadt · 41 GB fuer 70 Minuten Ton
 
 - **Eine große Videodatei durchzustreamen verbraucht SEIN Drive-Tageslimit, nicht

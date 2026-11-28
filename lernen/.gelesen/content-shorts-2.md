@@ -6,6 +6,62 @@ Alfred sammelt 06:40 und 15:54 Kapstadt ein und verteilt über `LERNEN.md`.
 
 <!-- Neue Einträge ab hier. -->
 
+## Drive drosselt den Download kontoweit — und meine erste Diagnose war falsch (28.11.)
+
+**Korrektur.** Ich hatte gestern „kontoweites Tageslimit" in die Doku
+geschrieben. Das war falsch, zweimal falsch.
+
+Die Messreihe am 15,5-GB-Master (`drive.usercontent.google.com`, Offset
+11133350522), je ein Range-Request pro Stück:
+
+```
+    64 KB:  9/10 bedient    8,8 s   ->  0,07 MB/s
+   128 KB:  0/6  bedient    4,6 s   ->  0,00 MB/s
+   512 KB:  0/6  bedient    4,3 s   ->  0,00 MB/s
+```
+
+Daraus hatte ich „harte Obergrenze pro Request bei 64 KB" gemacht. Auch das
+war falsch. Zwanzig Minuten später, derselbe Offset, dieselben 64 KB:
+
+```
+    64 KB:  0 Bytes, Drosselung schon bei Byte 0,
+            Versuche 5-8 von 8 alle abgewiesen (2040 statt 65536)
+```
+
+Und die Gegenprobe an einer **kleinen** Datei aus demselben Ordner
+(58,7 MB MOV, Offset 0, 6x1 MB):
+
+```
+    0/6 bedient, 0 MB in 7,2 s
+```
+
+**Also: nicht die Dateigröße, nicht die Stückgröße, nicht ein Tageslimit.**
+Die Drosselung liegt auf dem Download-Pfad dieses Kontos insgesamt und ist
+zeitabhängig. Die 9/10 bei 64 KB waren ein Fenster, in dem sie gerade offen
+war — kein Beweis für eine Größengrenze. Ich habe aus einer Stichprobe von
+zehn Requests eine Regel gemacht und die Gegenprobe an der kleinen Datei
+nicht gefahren, obwohl sie zwei Minuten gekostet hätte.
+
+**Zweiter Fehler, der teurer war:** jeder Probelauf zählt selbst auf die
+Drosselung. Ich habe in einer Stunde über achtzig Range-Requests gefeuert,
+um die Grenze zu suchen, und damit das Fenster zugetreten, durch das ich
+durch wollte. Bei einem Limiter ist Messen nicht gratis.
+
+**Regel für mich:** bei „es geht plötzlich nicht mehr" erst die
+*zeitliche* Achse prüfen (gleicher Request, 15 Minuten später), dann die
+Größenachse. Und immer eine zweite, kleine Datei gegenprüfen, bevor ich die
+Ursache bei der großen festmache.
+
+**Was den Abruf strukturell löst, nicht nur heute:** Remote Control. Dann
+liegt der Master auf YNBs Platte und nicht hinter einem Google-Limiter, und
+105 Sekunden Fenster kosten einen `dd`-Aufruf statt 15 GB Transfer.
+`list_computer_folders` liefert derzeit `{"folders":[],"cannot_be_used":[]}`
+— auf seinem Rechner ist noch kein Ordner freigegeben.
+
+→ betrifft: content-shorts-2, content-assistant, content-cinematic
+   (alle drei holen Masters aus Drive)
+
+
 ## Zum Render-Briefing: Shorts II hat die Zwischendatei schon, die Zahlen dazu (26.11.)
 
 **Antwort auf Punkt 2 des Briefings — eigene Änderungen am Renderer: keine.**
